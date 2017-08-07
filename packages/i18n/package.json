@@ -1,0 +1,27 @@
+{
+  "name": "@bufferapp/analyze-i18n",
+  "version": "0.0.1",
+  "description": "Analyze i18n package",
+  "main": "index.js",
+  "scripts": {
+    "start": "start-storybook -p 9001",
+    "lint": "eslint . --ignore-pattern coverage node_modules",
+    "test": "npm run lint && sh ../../package_test.sh",
+    "test-watch": "jest --watch",
+    "test-update": "jest -u"
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!@bufferapp/*)"
+    ],
+    "verbose": true,
+    "moduleNameMapper": {
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
+  },
+  "author": "mike@msanroman.io",
+  "devDependencies": {
+    "eslint": "3.19.0",
+    "jest": "19.0.2"
+  }
+}
