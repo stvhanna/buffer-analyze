@@ -1,0 +1,39 @@
+{
+  "name": "@bufferapp/server-analyze",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "start": "micro",
+    "lint": "eslint . --ignore-pattern coverage node_modules",
+    "test": "npm run lint && sh ../../package_test.sh",
+    "test-watch": "jest --watch"
+  },
+  "jest": {
+    "verbose": true,
+    "transformIgnorePatterns": [
+      "node_modules/(?!@bufferapp/*)"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
+  },
+  "author": "mike@msanroman.io",
+  "dependencies": {
+    "@bufferapp/logger": "0.7.0",
+    "@bufferapp/micro-rpc": "0.1.6",
+    "@bufferapp/shutdown-helper": "0.2.0",
+    "bugsnag": "1.11.0",
+    "express": "4.15.3",
+    "jsonwebtoken": "7.4.1",
+    "micro": "7.3.3",
+    "micro-rpc-client": "0.1.1",
+    "microrouter": "2.1.1",
+    "moment-timezone": "0.5.12",
+    "request": "2.81.0",
+    "request-promise": "4.2.1"
+  },
+  "devDependencies": {
+    "eslint": "3.19.0",
+    "jest": "19.0.2"
+  }
+}
