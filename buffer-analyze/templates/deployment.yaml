@@ -43,12 +43,12 @@ spec:
           valueFrom:
             secretKeyRef:
               key: client-id
-              name: buffer-analyze-buffer-api-client
+              name: buffer-publish-buffer-api-client
         - name: CLIENT_SECRET
           valueFrom:
             secretKeyRef:
               key: client-secret
-              name: buffer-analyze-buffer-api-client
+              name: buffer-publish-buffer-api-client
         - name: API_ADDR
           value: https://api.bufferapp.com
         - name: BUGSNAG_KEY
