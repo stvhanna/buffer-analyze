@@ -5,7 +5,10 @@ import {
 } from 'redux';
 import { routerMiddleware } from 'react-router-redux';
 import createHistory from 'history/createHashHistory';
-import { middleware as exampleMiddleware } from '@bufferapp/example';
+import { middleware as loginMiddleware } from '@bufferapp/login';
+import { middleware as appSidebarMiddleware } from '@bufferapp/app-sidebar';
+import { middleware as i18nMiddleware } from '@bufferapp/analyze-i18n';
+import { middleware as asyncDataFetchMiddleware } from '@bufferapp/async-data-fetch';
 import reducers from './reducers';
 
 export const history = createHistory();
@@ -22,7 +25,10 @@ const configureStore = (initialstate) => {
     composeEnhancers(
       applyMiddleware(
         routerMiddleware(history),
-        exampleMiddleware,
+        asyncDataFetchMiddleware,
+        loginMiddleware,
+        i18nMiddleware,
+        appSidebarMiddleware,
       ),
     ),
   );
