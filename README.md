@@ -2,6 +2,8 @@
 
 A better way to measure performance on social media 📈📉
 
+[![Build Status](https://travis-ci.org/bufferapp/buffer-analyze.svg?branch=master)](https://travis-ci.org/bufferapp/buffer-analyze)
+
 ## Table of contents
 
 - [Quick Start](#quick-start)
