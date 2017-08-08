@@ -5,9 +5,9 @@ import AppSidebar from './components/AppSidebar';
 
 export default connect(
   state => ({
-      translations: state.i18n.translations.example, // all package translations
-      user: state.appSidebar.user,
-  })
+    translations: state.i18n.translations.example, // all package translations
+    user: state.appSidebar.user,
+  }),
 )(AppSidebar);
 
 // export reducer, actions and action types

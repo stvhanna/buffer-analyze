@@ -12,5 +12,5 @@ export default combineReducers({
   example: exampleReducer,
   appSidebar: appSidebarReducer,
   asyncDataFetch: asyncDataFetchReducer,
-  i18n: i18nReducer
+  i18n: i18nReducer,
 });
