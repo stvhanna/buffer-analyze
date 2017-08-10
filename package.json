@@ -5,10 +5,10 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean",
-    "test": "if [ -n \"$CI\" ]; then npm run init; fi && lerna run test",
+    "test": "if [ -n \"$CI\" ]; then yarn run init; fi && lerna run test",
     "test-update": "lerna run test-update",
-    "init": "npm install && lerna bootstrap",
-    "start": "cd ./packages/server/ && npm start",
+    "init": "yarn install && lerna bootstrap",
+    "start": "cd ./packages/server/ && yarn start",
     "publish": "echo \"will eventually run: lerna publish\"",
     "build": "webpack  --config ./packages/server/webpack.config.js --output-path=`pwd`"
   },
@@ -35,6 +35,7 @@
     "css-loader": "0.27.3",
     "deep-freeze": "0.0.1",
     "enzyme": "2.8.2",
+    "eslint": "^4.4.1",
     "eslint-config-airbnb": "14.1.0",
     "eslint-plugin-import": "2.2.0",
     "eslint-plugin-jsx-a11y": "4.0.0",

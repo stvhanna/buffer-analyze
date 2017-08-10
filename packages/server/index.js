@@ -66,7 +66,6 @@ app.get('/health-check', controller.healthCheck);
 
 app.use(apiError);
 
-server.listen(80, () => console.log('listening on port 80'));
+server.listen(80, () => console.log('listening on port 80')); // eslint-disable-line no-console
 
 shutdownHelper.init({ server });
-
