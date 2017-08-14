@@ -20,11 +20,11 @@
     "verbose": true
   },
   "dependencies": {
-    "@bufferapp/components": "0.5.22",
+    "@bufferapp/components": "0.5.22-rc.1",
     "@bufferapp/store": "0.0.1",
     "@bufferapp/example": "0.0.1",
     "@bufferapp/async-data-fetch": "0.0.1",
-    "@bufferapp/app-sidebar": "0.0.1"
+    "@bufferapp/app-sidebar": "0.0.1-rc.3"
   },
   "author": "Mike San Román <mike@msanroman.io> (http://msanroman.io)",
   "devDependencies": {
