@@ -13,7 +13,6 @@ import {
 
 import Label from './Label';
 import Item from './Item';
-import InsightsItem from './InsightsItem';
 
 const settingsDivider = {
   marginTop: 'auto',
@@ -39,6 +38,10 @@ const sidebarItemWrapperStyle = {
   padding: '.75rem 1rem .5rem',
 };
 
+const serviceIsAvailable = (service, profiles) => (
+  profiles.find(profile => profile.service === service)
+);
+
 const NavSidebar = props => (
   <div style={sidebarStyle}>
     <div style={sidebarItemWrapperStyle}>
@@ -46,28 +49,30 @@ const NavSidebar = props => (
     </div>
     <Divider marginTop="0" marginBottom="1rem" />
 
-    <Item active={props.activeLink === 'dashboard'}>Dashboard</Item>
+    <Item id="dashboard" {...props}>Dashboard</Item>
 
     <Label>Insights</Label>
-    <InsightsItem {...props} service="facebook" />
-    <InsightsItem {...props} service="twitter" />
-    <InsightsItem {...props} service="instagram" />
+    { serviceIsAvailable('facebook', props.profiles) && <Item id="facebook" {...props}>Facebook</Item>}
+    { serviceIsAvailable('twitter', props.profiles) && <Item id="twitter" {...props}>Twitter</Item>}
+    { serviceIsAvailable('instagram', props.profiles) && <Item id="instagram" {...props}>Instagram</Item>}
 
     <Label>Tools</Label>
-    <Item>Comparisons</Item>
-    <Item>Reports</Item>
+    <Item id="comparisons" {...props}>Comparisons</Item>
+    <Item id="reports" {...props}>Reports</Item>
 
     <div style={settingsDivider}>
       <Divider marginTop="0" marginBottom="0" />
     </div>
     <div style={settingsWrapper}>
-      <Item>Settings</Item>
+      <Item id="settings" {...props}>Settings</Item>
     </div>
   </div>
 );
 
 NavSidebar.propTypes = {
-  activeLink: PropTypes.string.isRequired,
+  profiles: PropTypes.arrayOf(PropTypes.shape({
+    service: PropTypes.string,
+  })).isRequired,
 };
 
 export default NavSidebar;

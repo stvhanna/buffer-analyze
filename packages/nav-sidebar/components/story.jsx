@@ -36,7 +36,7 @@ storiesOf('NavSidebar')
   .add('should show nav sidebar with Dashboard as active link', () => (
     <div style={{ width: '260px', height: '100%', display: 'flex' }}>
       <NavSidebar
-        activeLink="dashboard"
+        selectedItem="dashboard"
         profiles={mockProfiles}
       />
     </div>
@@ -44,7 +44,7 @@ storiesOf('NavSidebar')
   .add('should show only services for which the user has profiles', () => (
     <div style={{ width: '260px', height: '100%', display: 'flex' }}>
       <NavSidebar
-        activeLink="dashboard"
+        selectedItem="dashboard"
         profiles={[...twitterProfiles, ...instagramProfiles]}
       />
     </div>

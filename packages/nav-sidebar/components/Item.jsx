@@ -14,7 +14,8 @@ import {
   calculateStyles,
 } from '@bufferapp/components/lib/utils';
 
-const Item = ({ active, children }) => {
+const Item = ({ id, selectedItem, children }) => {
+  const active = id === selectedItem;
   const style = calculateStyles({
     default: {
       display: 'block',
@@ -37,7 +38,8 @@ const Item = ({ active, children }) => {
 
 Item.propTypes = {
   children: PropTypes.node.isRequired,
-  active: PropTypes.bool,
+  id: PropTypes.string.isRequired,
+  selectedItem: PropTypes.string.isRequired,
 };
 
 Item.defaultProps = {
