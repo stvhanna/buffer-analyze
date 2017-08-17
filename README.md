@@ -64,9 +64,9 @@ This makes `some-cool-package` available to all packages
 
 ### Creating A Dependency To Another Local Package
 
-To create a dependency to the login package from the example package:
+To create a dependency to the login package from the a package:
 
-In the `example` package add the following entry in the `packages/example/package.json` file under the dependencies key:
+In the `foo` package add the following entry in the `packages/foo/package.json` file under the dependencies key:
 
 ```js
 {
@@ -88,7 +88,7 @@ The version number must be exact to link local packages, otherwise it will (try 
 An example of this would be `eslint` or `jest`. These should be added to the individual package:
 
 ```sh
-cd packages/example/
+cd packages/foo/
 npm run -SDE jest
 ```
 
@@ -107,7 +107,7 @@ If you need to listen to another packages events, import the actionTypes into th
 
 
 ```js
-//reducer.js - in @bufferapp/example package
+//reducer.js - in @bufferapp/foo package
 import { actionTypes, loginActionTypes } from '@bufferapp/login';
 
 // handle login event
