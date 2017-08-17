@@ -9,6 +9,7 @@ import { middleware as loginMiddleware } from '@bufferapp/login';
 import { middleware as appSidebarMiddleware } from '@bufferapp/app-sidebar';
 import { middleware as i18nMiddleware } from '@bufferapp/analyze-i18n';
 import { middleware as asyncDataFetchMiddleware } from '@bufferapp/async-data-fetch';
+import { middleware as navSidebarMiddleware } from '@bufferapp/nav-sidebar';
 import reducers from './reducers';
 
 export const history = createHistory();
@@ -29,6 +30,7 @@ const configureStore = (initialstate) => {
         loginMiddleware,
         i18nMiddleware,
         appSidebarMiddleware,
+        navSidebarMiddleware,
       ),
     ),
   );
