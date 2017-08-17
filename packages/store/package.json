@@ -22,8 +22,8 @@
     "@bufferapp/login": "0.0.1",
     "@bufferapp/example": "0.0.1",
     "@bufferapp/analyze-i18n": "0.0.1",
-    "@bufferapp/async-data-fetch": "0.0.1",
-    "@bufferapp/app-sidebar": "0.0.1",
+    "@bufferapp/async-data-fetch": "0.5.25",
+    "@bufferapp/app-sidebar": "0.5.28",
     "@bufferapp/nav-sidebar": "0.0.1"
   },
   "devDependencies": {

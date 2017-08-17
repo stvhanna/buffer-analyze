@@ -36,7 +36,7 @@ module.exports = {
       },
       {
         test: /\.jsx?$/,
-        exclude: /node_modules(?!\/@bufferapp\/components)(?!\/@bufferapp\/web-components)/,
+        exclude: /node_modules(?!\/@bufferapp\/*)/,
         use: {
           loader: 'babel-loader',
         },

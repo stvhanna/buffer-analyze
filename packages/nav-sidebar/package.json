@@ -21,8 +21,8 @@
   },
   "author": "mike@msanroman.io",
   "dependencies": {
-    "@bufferapp/components": "0.5.22",
-    "@bufferapp/async-data-fetch": "0.0.1"
+    "@bufferapp/components": "0.5.28",
+    "@bufferapp/async-data-fetch": "0.5.25"
   },
   "devDependencies": {
     "@storybook/addon-storyshots": "3.1.4",
