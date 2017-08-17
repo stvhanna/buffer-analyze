@@ -63,8 +63,10 @@ exports[`Snapshots App should render application 1`] = `
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
+        onKeyDown={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
+        role="button"
         style={
           Object {
             "background": "none",
@@ -77,6 +79,7 @@ exports[`Snapshots App should render application 1`] = `
             "position": "relative",
           }
         }
+        tabIndex="0"
       >
         <div
           id=""
@@ -170,8 +173,10 @@ exports[`Snapshots App should render application 1`] = `
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
+        onKeyDown={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
+        role="button"
         style={
           Object {
             "background": "none",
@@ -184,6 +189,7 @@ exports[`Snapshots App should render application 1`] = `
             "position": "relative",
           }
         }
+        tabIndex="0"
       >
         <div
           id=""
@@ -284,8 +290,10 @@ exports[`Snapshots App should render application 1`] = `
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
+        onKeyDown={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
+        role="button"
         style={
           Object {
             "background": "#168eea",
@@ -299,6 +307,7 @@ exports[`Snapshots App should render application 1`] = `
             "position": "relative",
           }
         }
+        tabIndex="0"
       >
         <div
           id=""
@@ -399,15 +408,17 @@ exports[`Snapshots App should render application 1`] = `
           }
         }
       >
-        <button
+        <div
           aria-expanded={false}
           aria-haspopup="true"
           aria-label="Help and Support"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
+          onKeyDown={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
+          role="submenu"
           style={
             Object {
               "background": "none",
@@ -420,6 +431,7 @@ exports[`Snapshots App should render application 1`] = `
               "position": "relative",
             }
           }
+          tabIndex="0"
         >
           <div
             id=""
@@ -515,7 +527,6 @@ exports[`Snapshots App should render application 1`] = `
                 </div>
                 <ul
                   aria-label="Help & Support"
-                  role="menu"
                   style={
                     Object {
                       "listStyle": "none",
@@ -647,7 +658,7 @@ exports[`Snapshots App should render application 1`] = `
               </g>
             </svg>
           </div>
-        </button>
+        </div>
       </div>
     </nav>
     <div
