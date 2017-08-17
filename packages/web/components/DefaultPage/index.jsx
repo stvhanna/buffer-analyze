@@ -3,12 +3,19 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 import { Text, Divider } from '@bufferapp/components';
+import NavSidebar from '@bufferapp/nav-sidebar';
+
+const pageStyle = {
+  display: 'flex',
+  flexGrow: 1,
+  height: '100%',
+};
 
 const defaultPageStyle = {
   padding: '1rem',
 };
 
-const DefaultPage = ({ loggedIn, loggingIn, checkedCookie }) => {
+const DefaultPage = ({ match, loggedIn, loggingIn, checkedCookie }) => {
   let message = 'You are not logged in!';
   if (loggedIn) {
     message = 'You are logged in!';
@@ -17,10 +24,13 @@ const DefaultPage = ({ loggedIn, loggingIn, checkedCookie }) => {
     message = 'Please wait...';
   }
   return (
-    checkedCookie && <div style={defaultPageStyle}>
-      <Text size="large">Welcome to Buffer Analyze 🎉</Text>
-      <Divider />
-      <Text>{message}</Text>
+    <div style={pageStyle}>
+      <NavSidebar route={match.path}/>
+      {checkedCookie && <div style={defaultPageStyle}>
+        <Text size="large">Welcome to Buffer Analyze 🎉</Text>
+        <Divider />
+        <Text>{message}</Text>
+      </div>}
     </div>
   );
 };
