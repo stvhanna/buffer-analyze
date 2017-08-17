@@ -2,23 +2,28 @@
 # yarn lockfile v1
 
 
-"@bufferapp/app-sidebar@0.0.1-rc.3":
-  version "0.0.1-rc.3"
-  resolved "https://registry.yarnpkg.com/@bufferapp/app-sidebar/-/app-sidebar-0.0.1-rc.3.tgz#a4cffcdc2cf18f61a0063622195f2be04ce4e0b7"
+"@bufferapp/app-sidebar@0.5.28":
+  version "0.5.28"
+  resolved "https://registry.yarnpkg.com/@bufferapp/app-sidebar/-/app-sidebar-0.5.28.tgz#b52be8c9af56dca2bb14dd3f52ad72c7f1ea8b08"
   dependencies:
-    "@bufferapp/async-data-fetch" "0.0.1"
-    "@bufferapp/components" "0.5.22-rc.1"
+    "@bufferapp/async-data-fetch" "0.5.25"
+    "@bufferapp/components" "0.5.28"
 
-"@bufferapp/async-data-fetch@0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@bufferapp/async-data-fetch/-/async-data-fetch-0.0.1.tgz#0447f4ab7aa934fb8f9650bc1617c2764b64654e"
+"@bufferapp/async-data-fetch@0.5.25":
+  version "0.5.25"
+  resolved "https://registry.yarnpkg.com/@bufferapp/async-data-fetch/-/async-data-fetch-0.5.25.tgz#1fb30f21a83c25fa93e2f84d8220a6824b9820da"
 
-"@bufferapp/components@0.5.22-rc.1":
-  version "0.5.22-rc.1"
-  resolved "https://registry.yarnpkg.com/@bufferapp/components/-/components-0.5.22-rc.1.tgz#6c0378cbeb28703bb2ea757afad0755a6f631e6e"
+"@bufferapp/components@0.5.28":
+  version "0.5.28"
+  resolved "https://registry.yarnpkg.com/@bufferapp/components/-/components-0.5.28.tgz#fdc43e4bbd8415615f4bdea50c9fd73d530d87f5"
   dependencies:
+    "@bufferapp/react-keyframes" "0.2.5"
     react-autocomplete "1.5.9"
     react-day-picker "5.5.1"
+
+"@bufferapp/react-keyframes@0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@bufferapp/react-keyframes/-/react-keyframes-0.2.5.tgz#fed847849f170c440ad6ea683224352e4b882b92"
 
 "@storybook/addon-actions@^3.1.2", "@storybook/addon-actions@^3.2.0":
   version "3.2.0"
