@@ -20,14 +20,14 @@ describe('NavSidebar', () => {
         profiles: [
           {
             id: 2,
-            service: 'instagram'
-          }
-        ]
+            service: 'instagram',
+          },
+        ],
       },
     });
     const wrapper = mount(
       <Provider store={store}>
-        <NavSidebar selectedItem="dashboard"/>
+        <NavSidebar route="/" />
       </Provider>,
     );
     expect(wrapper.find(NavSidebar).length)
