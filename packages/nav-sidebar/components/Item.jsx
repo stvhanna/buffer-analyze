@@ -14,8 +14,8 @@ import {
   calculateStyles,
 } from '@bufferapp/components/lib/utils';
 
-const Item = ({ id, selectedItem, children }) => {
-  const active = id === selectedItem;
+const Item = ({ href, route, children }) => {
+  const active = href === route;
   const style = calculateStyles({
     default: {
       display: 'block',
@@ -28,7 +28,7 @@ const Item = ({ id, selectedItem, children }) => {
     active,
   });
   return (
-    <Link href="#" unstyled>
+    <Link href={href} unstyled>
       <span style={style}>
         <Text color="shuttleGray" weight={active ? 'bold' : null} size="mini">{children}</Text>
       </span>
@@ -38,8 +38,8 @@ const Item = ({ id, selectedItem, children }) => {
 
 Item.propTypes = {
   children: PropTypes.node.isRequired,
-  id: PropTypes.string.isRequired,
-  selectedItem: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired,
+  route: PropTypes.string.isRequired,
 };
 
 Item.defaultProps = {

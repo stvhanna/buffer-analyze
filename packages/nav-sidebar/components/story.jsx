@@ -36,7 +36,7 @@ storiesOf('NavSidebar')
   .add('should show nav sidebar with Dashboard as active link', () => (
     <div style={{ width: '260px', height: '100%', display: 'flex' }}>
       <NavSidebar
-        selectedItem="dashboard"
+        route="/"
         profiles={mockProfiles}
       />
     </div>
@@ -44,7 +44,7 @@ storiesOf('NavSidebar')
   .add('should show only services for which the user has profiles', () => (
     <div style={{ width: '260px', height: '100%', display: 'flex' }}>
       <NavSidebar
-        selectedItem="dashboard"
+        route="/insights/twitter"
         profiles={[...twitterProfiles, ...instagramProfiles]}
       />
     </div>
@@ -54,11 +54,11 @@ storiesOf('Item')
   .addDecorator(checkA11y)
   .add('normal state', () => (
     <div style={{ width: '260px', height: '100%', display: 'flex' }}>
-      <Item>Dashboard</Item>
+      <Item href="/">Dashboard</Item>
     </div>
   ))
   .add('active state', () => (
     <div style={{ width: '260px', height: '100%', display: 'flex' }}>
-      <Item active>Dashboard</Item>
+      <Item href="/" route="/">Dashboard</Item>
     </div>
   ));

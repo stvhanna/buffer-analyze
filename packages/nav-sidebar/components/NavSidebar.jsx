@@ -49,22 +49,22 @@ const NavSidebar = props => (
     </div>
     <Divider marginTop="0" marginBottom="1rem" />
 
-    <Item id="dashboard" {...props}>Dashboard</Item>
+    <Item href="/" {...props}>Dashboard</Item>
 
     <Label>Insights</Label>
-    { serviceIsAvailable('facebook', props.profiles) && <Item id="facebook" {...props}>Facebook</Item>}
-    { serviceIsAvailable('twitter', props.profiles) && <Item id="twitter" {...props}>Twitter</Item>}
-    { serviceIsAvailable('instagram', props.profiles) && <Item id="instagram" {...props}>Instagram</Item>}
+    { serviceIsAvailable('facebook', props.profiles) && <Item href="/insights/facebook" {...props}>Facebook</Item>}
+    { serviceIsAvailable('twitter', props.profiles) && <Item href="/insights/twitter" {...props}>Twitter</Item>}
+    { serviceIsAvailable('instagram', props.profiles) && <Item href="/insights/instagram" {...props}>Instagram</Item>}
 
     <Label>Tools</Label>
-    <Item id="comparisons" {...props}>Comparisons</Item>
-    <Item id="reports" {...props}>Reports</Item>
+    <Item href="/comparisons" {...props}>Comparisons</Item>
+    <Item href="/reports" {...props}>Reports</Item>
 
     <div style={settingsDivider}>
       <Divider marginTop="0" marginBottom="0" />
     </div>
     <div style={settingsWrapper}>
-      <Item id="settings" {...props}>Settings</Item>
+      <Item href="/settings" {...props}>Settings</Item>
     </div>
   </div>
 );
