@@ -7,8 +7,8 @@ import {
 } from 'react-router-redux';
 import createStore, { history } from '@bufferapp/store';
 import { actions as dataActions } from '@bufferapp/async-data-fetch';
+import { actions as performanceActions } from '@bufferapp/performance-tracking';
 import App from './components/App';
-
 
 const store = createStore();
 
@@ -35,6 +35,8 @@ window.logout = () => store.dispatch(dataActions.fetch({
 store.dispatch({
   type: 'APP_INIT',
 });
+
+store.dispatch(performanceActions.measureFromNavigationStart({ name: 'init' }));
 
 const renderApp = (AppComponent) => {
   render(

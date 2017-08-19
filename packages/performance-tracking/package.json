@@ -1,5 +1,5 @@
 {
-  "name": "@bufferapp/store",
+  "name": "@bufferapp/performance-tracking",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -12,19 +12,12 @@
     "verbose": true,
     "transformIgnorePatterns": [
       "node_modules/(?!@bufferapp/*)"
-    ],
-    "moduleNameMapper": {
-      "\\.(css|less)$": "identity-obj-proxy"
-    }
+    ]
   },
-  "author": "hharnisc@gmail.com",
+  "author": "federicoweber@gmail.com",
   "dependencies": {
-    "@bufferapp/login": "0.0.1",
-    "@bufferapp/analyze-i18n": "0.0.1",
     "@bufferapp/async-data-fetch": "0.5.25",
-    "@bufferapp/app-sidebar": "0.5.28",
-    "@bufferapp/nav-sidebar": "0.0.1",
-    "@bufferapp/performance-tracking": "0.0.1"
+    "@bufferapp/chronos": "0.6.1"
   },
   "devDependencies": {
     "eslint": "3.19.0",
