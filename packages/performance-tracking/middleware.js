@@ -40,22 +40,18 @@ export default ({ dispatch }) => next => (action) => {
     },
   });
 
-  const data = Object.assign({}, action.measureData);
-  if (!data.tags) data.tags = [];
-  data.tags.push('product:analyze');
-
   switch (action.type) {
     case actionTypes.PERFORMANCE_START_MEASURE:
-      thisChronos.startMeasure(action.measureName, data);
+      thisChronos.startMeasure(action.measureName, action.measureData);
       break;
     case actionTypes.PERFORMANCE_STOP_MEASURE:
       thisChronos.stopMeasure(action.measureName);
       break;
     case actionTypes.PERFORMANCE_MEASURE_FROM_EVENT:
-      thisChronos.measureFromSpecialEvent(action.measureName, data);
+      thisChronos.measureFromSpecialEvent(action.measureName, action.measureData);
       break;
     case actionTypes.PERFORMANCE_MEASURE_FROM_NAVIGATION_START:
-      thisChronos.measureFromNavigationStart(action.measureName, data);
+      thisChronos.measureFromNavigationStart(action.measureName, action.measureData);
       break;
     default:
       break;
