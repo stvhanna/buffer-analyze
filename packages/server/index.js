@@ -64,6 +64,8 @@ app.post('/rpc', (req, res, next) => {
 
 app.get('/health-check', controller.healthCheck);
 
+app.get('/*', (req, res) => res.send(html));
+
 app.use(apiError);
 
 server.listen(80, () => console.log('listening on port 80')); // eslint-disable-line no-console
