@@ -18,9 +18,7 @@ const ReportsPage = ({ location }) => (
   <div style={pageStyle}>
     <NavSidebar route={location.pathname} />
     <div style={reportsPageStyle}>
-      <Text size="large">Welcome to Buffer Analyze 🎉</Text>
-      <Divider />
-      <Text>This is the reports page!</Text>
+      <Text size="large">This is where the Reports will go.</Text>
     </div>
   </div>
 );
