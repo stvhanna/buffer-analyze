@@ -30,14 +30,16 @@ export const actions = {
   }),
 };
 
+export const storeMeasure = dispatch => (data) => {
+  dispatch(fetchActions.fetch({
+    name: 'performance',
+    args: { data },
+  }));
+};
+
 export default ({ dispatch }) => next => (action) => {
   const thisChronos = chronos({
-    store: (data) => {
-      dispatch(fetchActions.fetch({
-        name: 'performance',
-        args: { data },
-      }));
-    },
+    store: storeMeasure(dispatch),
   });
 
   switch (action.type) {
