@@ -4,7 +4,7 @@ import {
   compose,
 } from 'redux';
 import { routerMiddleware } from 'react-router-redux';
-import createHistory from 'history/createHashHistory';
+import createHistory from 'history/createBrowserHistory';
 import { middleware as loginMiddleware } from '@bufferapp/login';
 import { middleware as appSidebarMiddleware } from '@bufferapp/app-sidebar';
 import { middleware as i18nMiddleware } from '@bufferapp/analyze-i18n';
