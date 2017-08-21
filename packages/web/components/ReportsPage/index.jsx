@@ -10,10 +10,14 @@ const pageStyle = {
   height: '100%',
 };
 
+const reportsPageStyle = {
+  padding: '1rem',
+};
+
 const ReportsPage = ({ location }) => (
   <div style={pageStyle}>
-    <NavSidebar route={location.path} />
-    <div>
+    <NavSidebar route={location.pathname} />
+    <div style={reportsPageStyle}>
       <Text size="large">Welcome to Buffer Analyze 🎉</Text>
       <Divider />
       <Text>This is the reports page!</Text>
@@ -23,7 +27,7 @@ const ReportsPage = ({ location }) => (
 
 ReportsPage.propTypes = {
   location: PropTypes.shape({
-    path: PropTypes.string.isRequired,
+    pathname: PropTypes.string.isRequired,
   }).isRequired,
 };
 
