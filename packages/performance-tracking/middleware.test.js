@@ -12,16 +12,11 @@ describe('middleware', () => {
   let storeMethod;
   const middlewareOptions = {};
   let next;
-  let action;
 
   beforeEach(() => {
     storeMethod = jest.fn();
     middlewareOptions.store = storeMethod;
     next = jest.fn();
-    action = {
-      measureName: 'testMeasure',
-      measureData: {},
-    };
   });
 
   test('should call next when running', () => {
