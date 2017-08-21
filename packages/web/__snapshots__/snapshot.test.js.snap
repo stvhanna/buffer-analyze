@@ -1010,7 +1010,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
       <a
         href="/"
         onBlur={[Function]}
-        onClick={undefined}
+        onClick={[Function]}
         onFocus={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
@@ -1081,7 +1081,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
       <a
         href="/comparisons"
         onBlur={[Function]}
-        onClick={undefined}
+        onClick={[Function]}
         onFocus={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
@@ -1120,7 +1120,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
       <a
         href="/reports"
         onBlur={[Function]}
-        onClick={undefined}
+        onClick={[Function]}
         onFocus={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
@@ -1189,7 +1189,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
         <a
           href="/settings"
           onBlur={[Function]}
-          onClick={undefined}
+          onClick={[Function]}
           onFocus={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1227,32 +1227,13 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
         </a>
       </div>
     </div>
-    <div>
-      <span
-        style={
-          Object {
-            "color": "#59626a",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
-            "fontSize": "1.25rem",
-            "fontWeight": 400,
-          }
+    <div
+      style={
+        Object {
+          "padding": "1rem",
         }
-      >
-        Welcome to Buffer Analyze 🎉
-      </span>
-      <hr
-        style={
-          Object {
-            "background": "#e6ebef",
-            "border": "none",
-            "boxSizing": "border-box",
-            "height": "0.063rem",
-            "marginBottom": "0.5rem",
-            "marginTop": "0.5rem",
-            "width": "100%",
-          }
-        }
-      />
+      }
+    >
       <span
         style={
           Object {
@@ -1263,7 +1244,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
           }
         }
       >
-        This is the reports page!
+        This is where the Reports will go.
       </span>
     </div>
   </div>
