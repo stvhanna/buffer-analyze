@@ -18,7 +18,7 @@ const ReportsPage = ({ location }) => (
   <div style={pageStyle}>
     <NavSidebar route={location.pathname} />
     <div style={reportsPageStyle}>
-      <Text size="large">This is where the Reports will go.</Text>
+      <Text>This is where the Reports will go.</Text>
     </div>
   </div>
 );
