@@ -727,7 +727,7 @@ exports[`Snapshots App should render application 1`] = `
           <a
             href="/"
             onBlur={[Function]}
-            onClick={undefined}
+            onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
@@ -799,7 +799,7 @@ exports[`Snapshots App should render application 1`] = `
           <a
             href="/comparisons"
             onBlur={[Function]}
-            onClick={undefined}
+            onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
@@ -838,7 +838,7 @@ exports[`Snapshots App should render application 1`] = `
           <a
             href="/reports"
             onBlur={[Function]}
-            onClick={undefined}
+            onClick={[Function]}
             onFocus={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
@@ -906,7 +906,7 @@ exports[`Snapshots App should render application 1`] = `
             <a
               href="/settings"
               onBlur={[Function]}
-              onClick={undefined}
+              onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
