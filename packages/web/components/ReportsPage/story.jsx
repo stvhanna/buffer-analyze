@@ -22,7 +22,7 @@ storiesOf('ReportsPage')
   .add('should render reports page', () => (
     <ReportsPage
       location={{
-        path: '/reports',
+        pathname: '/reports',
       }}
     />
   ));
