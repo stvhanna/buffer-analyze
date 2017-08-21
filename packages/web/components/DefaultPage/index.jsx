@@ -15,7 +15,7 @@ const defaultPageStyle = {
   padding: '1rem',
 };
 
-const DefaultPage = ({ match, loggedIn, loggingIn, checkedCookie }) => {
+const DefaultPage = ({ location, loggedIn, loggingIn, checkedCookie }) => {
   let message = 'You are not logged in!';
   if (loggedIn) {
     message = 'You are logged in!';
@@ -25,7 +25,7 @@ const DefaultPage = ({ match, loggedIn, loggingIn, checkedCookie }) => {
   }
   return (
     <div style={pageStyle}>
-      <NavSidebar route={match.path}/>
+      <NavSidebar route={location.pathname} />
       {checkedCookie && <div style={defaultPageStyle}>
         <Text size="large">Welcome to Buffer Analyze 🎉</Text>
         <Divider />
@@ -39,6 +39,9 @@ DefaultPage.propTypes = {
   loggedIn: PropTypes.bool.isRequired,
   loggingIn: PropTypes.bool.isRequired,
   checkedCookie: PropTypes.bool.isRequired,
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 const mapStateToProps = ({ login }) => login;
