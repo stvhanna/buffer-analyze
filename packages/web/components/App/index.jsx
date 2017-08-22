@@ -3,6 +3,8 @@ import { Route, Switch } from 'react-router';
 import AppSidebar from '@bufferapp/app-sidebar';
 import DefaultPage from '../DefaultPage';
 import ReportsPage from '../ReportsPage';
+import InsightsPage from '../InsightsPage';
+import ComparisonsPage from '../ComparisonsPage';
 
 const appStyle = {
   display: 'flex',
@@ -14,7 +16,7 @@ const contentStyle = {
 };
 
 export default () =>
-  <div style={appStyle}>
+  (<div style={appStyle}>
     <AppSidebar activeProduct="analyze" />
     <div style={contentStyle}>
       <Switch>
@@ -22,7 +24,15 @@ export default () =>
           path="/reports"
           component={ReportsPage}
         />
+        <Route
+          path="/insights/*"
+          component={InsightsPage}
+        />
+        <Route
+          path="/comparisons"
+          component={ComparisonsPage}
+        />
         <Route component={DefaultPage} />
       </Switch>
     </div>
-  </div>;
+  </div>);
