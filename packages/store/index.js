@@ -10,6 +10,7 @@ import { middleware as appSidebarMiddleware } from '@bufferapp/app-sidebar';
 import { middleware as i18nMiddleware } from '@bufferapp/analyze-i18n';
 import { middleware as asyncDataFetchMiddleware } from '@bufferapp/async-data-fetch';
 import { middleware as navSidebarMiddleware } from '@bufferapp/nav-sidebar';
+import { middleware as performanceMiddleware } from '@bufferapp/performance-tracking';
 import reducers from './reducers';
 
 export const history = createHistory();
@@ -31,6 +32,7 @@ const configureStore = (initialstate) => {
         i18nMiddleware,
         appSidebarMiddleware,
         navSidebarMiddleware,
+        performanceMiddleware,
       ),
     ),
   );
