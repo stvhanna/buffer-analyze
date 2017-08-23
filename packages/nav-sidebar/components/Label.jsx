@@ -1,13 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {
-  geyser,
-} from '@bufferapp/components/style/color';
-
-import {
-  fontFamily,
-} from '@bufferapp/components/style/font';
+import Text from '@bufferapp/components/Text';
 
 const labelStyle = {
   display: 'block',
@@ -15,14 +9,11 @@ const labelStyle = {
   padding: '.5rem 1rem 0',
   textTransform: 'uppercase',
   letterSpacing: '.075rem',
-  fontSize: '.6rem',
-  color: geyser,
-  fontFamily,
 };
 
 const Label = ({ children }) => (
   <span style={labelStyle}>
-    {children}
+    <Text size="extra-small" color="geyser">{children}</Text>
   </span>
 );
 

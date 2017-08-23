@@ -39,7 +39,7 @@ const Item = ({ href, route, children, onClick }) => {
       }}
     >
       <span style={style}>
-        <Text color="shuttleGray" weight={active ? 'bold' : null} size="mini">{children}</Text>
+        <Text color="shuttleGray" weight={active ? 'bold' : null}>{children}</Text>
       </span>
     </Link>
   );
