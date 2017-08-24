@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import {
+  Button,
   CircleFacebookIcon,
   CircleInstagramIcon,
   CircleLinkedInIcon,
@@ -79,10 +80,21 @@ ProfileBadge.propTypes = {
   avatarUrl: PropTypes.string.isRequired,
 };
 
-const DropdownItem = ({ profile }) => (
-  <li className={dropdownListItem} key={profile.id}>
-    <ProfileBadge avatarUrl={profile.avatarUrl} service={profile.service} />
-    <Text weight="bold" size="small">{profile.handle}</Text>
+const DropdownItem = ({ profile, handleClick }) => (
+  <li className={dropdownListItem}>
+    <Button noStyle onClick={handleClick} >
+      <span
+        style={{
+          alignItems: 'center',
+          display: 'flex',
+          position: 'relative',
+          width: '100%',
+        }}
+      >
+        <ProfileBadge avatarUrl={profile.avatarUrl} service={profile.service} />
+        <Text weight="bold" size="small">{profile.handle}</Text>
+      </span>
+    </Button>
   </li>
 );
 
@@ -93,6 +105,7 @@ DropdownItem.propTypes = {
     handle: PropTypes.string.isRequired,
     avatarUrl: PropTypes.string.isRequired,
   }).isRequired,
+  handleClick: PropTypes.func.isRequired,
 };
 
 export default DropdownItem;

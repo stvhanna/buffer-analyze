@@ -11,6 +11,7 @@ storiesOf('Dropdown Item')
     <div style={{ width: '260px', display: 'flex' }}>
       <DropdownItem
         profile={mockProfiles[0]}
+        handleClick={() => {}}
       />
     </div>
   ));

@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 import Dropdown, {
   DropdownTrigger,
   DropdownContent,
-} from  'react-simple-dropdown';
+} from 'react-simple-dropdown';
 import {
   ArrowDownIcon,
   Text,
-} from  '@bufferapp/components';
+} from '@bufferapp/components';
 import {
   dropdownContainer,
   dropdownContent,
@@ -19,25 +19,33 @@ import {
 
 import DropdownItem, { ProfileBadge } from './components/DropdownItem';
 
-function renderDropdownItems(profiles) {
-  const items = [];
+function renderDropdownItem(profile, selectProfile, toggleDropdown) {
+  const onClick = () => {
+    toggleDropdown();
+    selectProfile({ id: profile.id });
+  };
 
-  for (const profile of profiles) {
-    const handleClick = () => {
-      // TODO
-    };
-
-    if(!profile.selected) items.push(<DropdownItem profile={profile} />);
+  if (!profile.selected) {
+    return (<DropdownItem
+      key={profile.id}
+      profile={profile}
+      handleClick={onClick}
+    />);
   }
 
-  return items;
+  return null;
 }
 
-const ProfileSelectorDropdown = ({ profiles, open }) => {
+const ProfileSelectorDropdown = ({
+  profiles,
+  isDropdownOpen,
+  selectProfile,
+  toggleDropdown,
+}) => {
   const selectedProfile = profiles.find(p => p.selected);
 
   const contentClasses = classNames(dropdownContent, {
-    [dropdownContentActive]: open,
+    [dropdownContentActive]: isDropdownOpen,
   });
 
   return (<Dropdown className={dropdownContainer} >
@@ -50,7 +58,7 @@ const ProfileSelectorDropdown = ({ profiles, open }) => {
     </DropdownTrigger>
     <DropdownContent className={contentClasses}>
       <ul className={dropdownList}>
-        {renderDropdownItems(profiles)}
+        {profiles.map(p => renderDropdownItem(p, selectProfile, toggleDropdown))}
       </ul>
     </DropdownContent>
   </Dropdown>);
@@ -63,6 +71,13 @@ ProfileSelectorDropdown.propTypes = {
     handle: PropTypes.string.isRequired,
     avatarUrl: PropTypes.string.isRequired,
   })).isRequired,
+  isDropdownOpen: PropTypes.bool,
+  selectProfile: PropTypes.func.isRequired,
+  toggleDropdown: PropTypes.func.isRequired,
+};
+
+ProfileSelectorDropdown.defaultProps = {
+  isDropdownOpen: false,
 };
 
 export default ProfileSelectorDropdown;
