@@ -1,11 +1,11 @@
 /* eslint-disable import/first */
 import moment from 'moment';
+
 jest.mock('micro-rpc-client');
 jest.mock('request-promise');
 import rp from 'request-promise';
-import RPCClient from 'micro-rpc-client';
 import summary from './';
-import { CURRENT_PERIOD_RESPONSE, PAST_PERIOD_RESPONSE } from './mockResponses.js';
+import { CURRENT_PERIOD_RESPONSE, PAST_PERIOD_RESPONSE } from './mockResponses';
 
 describe('rpc/summary', () => {
   const profileId = '123159ad';
@@ -28,8 +28,8 @@ describe('rpc/summary', () => {
       },
     });
 
-    const start_date = moment().subtract(1, 'days').format('MM/DD/YYYY');
-    const end_date = moment().subtract(7, 'days').format('MM/DD/YYYY');
+    const end = moment().subtract(1, 'days').format('MM/DD/YYYY');
+    const start = moment().subtract(7, 'days').format('MM/DD/YYYY');
 
     expect(rp.mock.calls[0])
       .toEqual([{
@@ -38,8 +38,8 @@ describe('rpc/summary', () => {
         strictSSL: false,
         qs: {
           access_token: token,
-          start_date,
-          end_date,
+          start_date: start,
+          end_date: end,
         },
         json: true,
       }]);
@@ -52,8 +52,8 @@ describe('rpc/summary', () => {
       },
     });
 
-    const prev_period_start_date = moment().subtract(8, 'days').format('MM/DD/YYYY');
-    const prev_period_end_date = moment().subtract(14, 'days').format('MM/DD/YYYY');
+    const end = moment().subtract(8, 'days').format('MM/DD/YYYY');
+    const start = moment().subtract(14, 'days').format('MM/DD/YYYY');
 
     expect(rp.mock.calls[1])
       .toEqual([{
@@ -62,8 +62,8 @@ describe('rpc/summary', () => {
         strictSSL: false,
         qs: {
           access_token: token,
-          start_date: prev_period_start_date,
-          end_date: prev_period_end_date,
+          start_date: start,
+          end_date: end,
         },
         json: true,
       }]);
@@ -111,7 +111,7 @@ describe('rpc/summary', () => {
       label: 'Posts',
       value: 3,
       diff: -40,
-    }
+    },
     ]);
   });
 });
