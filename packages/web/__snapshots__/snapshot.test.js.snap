@@ -1578,22 +1578,10 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
     <div
       style={
         Object {
-          "padding": "1rem",
+          "padding": "1rem 0",
         }
       }
     >
-      <span
-        style={
-          Object {
-            "color": "#59626a",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
-            "fontSize": "1rem",
-            "fontWeight": 400,
-          }
-        }
-      >
-        This is where the Insights will go.
-      </span>
       <div
         style={
           Object {
