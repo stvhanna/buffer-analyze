@@ -17,10 +17,10 @@ const Diff = ({ diff }) => {
   let color = '#8D969E';
   if (diff > 0) {
     containerClassName += ` ${styles.gridSummaryItemDiffContainerPositive}`;
-    color = '#2FD566';
+    color = 'shamrock';
   } else if (diff < 0) {
     containerClassName += ` ${styles.gridSummaryItemDiffContainerNegative}`;
-    color = '#FF1E1E';
+    color = 'torchRed';
   }
 
   return (

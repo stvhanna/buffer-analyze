@@ -1,4 +1,5 @@
 import { actions } from '@bufferapp/async-data-fetch';
+import { actionTypes } from '@bufferapp/nav-sidebar';
 import middleware from './middleware';
 
 describe('middleware', () => {
@@ -19,7 +20,7 @@ describe('middleware', () => {
 
   it('shoud dispatch a data fetch for summary once a profile has been selected', () => {
     const action = {
-      type: 'PROFILE_SELECTED',
+      type: actionTypes.SELECT_PROFILE,
       id: '1235519asd',
     };
     middleware(store)(next)(action);

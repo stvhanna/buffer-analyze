@@ -7,12 +7,13 @@ import ArrowLongDownIcon from '@bufferapp/components/Icon/Icons/ArrowLongDownIco
 
 const ArrowIcon = ({ diff }) => {
   if (diff > 0) {
-    return <ArrowLongUpIcon color="#2FD566" />;
+    return <ArrowLongUpIcon color="shamrock" />;
   } else if (diff === 0) {
     return <ArrowLongRightIcon color="#8D969E" />;
   } else if (diff < 0) {
-    return <ArrowLongDownIcon color="#FF1E1E" />;
-  } else return null;
+    return <ArrowLongDownIcon color="torchRed" />;
+  }
+  return null;
 };
 
 ArrowIcon.propTypes = {
