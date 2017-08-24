@@ -10,3 +10,5 @@ export default connect(
     profiles: state.navSidebar.profiles,
   }),
 )(ProfileSelector);
+
+export reducer, { actionTypes, actions } from './reducer';
