@@ -24,5 +24,11 @@ storiesOf('InsightsPage')
       location={{
         pathname: '/insights/twitter',
       }}
+      match={{
+        params: {
+          service: 'twitter',
+          id: null,
+        },
+      }}
     />
   ));
