@@ -5,6 +5,7 @@ const logoutMethod = require('./logout');
 const profilesMethod = require('./profiles');
 const userMethod = require('./user');
 const performanceTrackingMethod = require('./performanceTracking');
+const summary = require('./summary');
 
 module.exports = checkToken(rpc(
   loginMethod,
@@ -12,4 +13,5 @@ module.exports = checkToken(rpc(
   profilesMethod,
   userMethod,
   performanceTrackingMethod,
+  summary,
 ));
