@@ -9,6 +9,8 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
+    case `summary_${asyncDataFetchActionTypes.FETCH_START}`:
+      return initialState;
     case `summary_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
       return {
         ...state,

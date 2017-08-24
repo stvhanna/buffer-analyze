@@ -1,15 +1,19 @@
 import { push } from 'react-router-redux';
 import { connect } from 'react-redux';
 import NavSidebar from './components/NavSidebar';
+import { actions } from './reducer';
 
 export default connect(
   state => ({
     profiles: state.navSidebar.profiles,
   }),
   dispatch => ({
-    onClick: path => dispatch(push(path)),
+    onClick: (path, profileId) => {
+      dispatch(push(path));
+      dispatch(actions.selectProfile(profileId));
+    },
   }),
 )(NavSidebar);
 
-export reducer from './reducer';
+export reducer, { actions, actionTypes } from './reducer';
 export middleware from './middleware';
