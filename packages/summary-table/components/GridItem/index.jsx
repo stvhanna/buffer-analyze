@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import styles from '../../styles.less';
 
 import Diff from '../Diff';
-import ArrowIcon from '../ArrowIcon';
 import Label from '../Label';
 import Value from '../Value';
 
@@ -20,9 +19,6 @@ const GridItem = ({ metric, tooltip }) =>
 
     <div className={styles.gridSummaryItemValueWrapper}>
       <Value>{metric.value}</Value>
-      <span className={styles.gridSummaryItemIcon}>
-        <ArrowIcon diff={metric.diff} />
-      </span>
       <Diff diff={metric.diff} />
     </div>
   </li>;

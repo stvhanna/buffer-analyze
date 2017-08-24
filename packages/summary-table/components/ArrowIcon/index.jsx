@@ -12,7 +12,7 @@ const ArrowIcon = ({ diff }) => {
     return <ArrowLongRightIcon color="#8D969E" />;
   } else if (diff < 0) {
     return <ArrowLongDownIcon color="#FF1E1E" />;
-  }
+  } else return null;
 };
 
 ArrowIcon.propTypes = {
