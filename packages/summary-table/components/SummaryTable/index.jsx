@@ -33,7 +33,7 @@ const gridContainer = {
 const SummaryTable = ({ metrics, loading, profileService }) => {
   let content = null;
   if (loading) {
-    content = <Loading active text="Summary table loading" />;
+    content = <Loading active text="Summary loading..." />;
   } else if (metrics.length === 0) {
     content = <NoData />;
   } else {
