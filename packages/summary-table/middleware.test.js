@@ -1,5 +1,5 @@
 import { actions } from '@bufferapp/async-data-fetch';
-import { actionTypes } from '@bufferapp/nav-sidebar';
+import { actionTypes } from '@bufferapp/analyze-profile-selector';
 import middleware from './middleware';
 
 describe('middleware', () => {

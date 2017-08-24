@@ -38,7 +38,7 @@ export default (state = initialState, action) => {
       });
     case actionTypes.SELECT_PROFILE:
       return Object.assign({}, state, {
-        profiles: updateSelectedProfile(state.profiles.slice(0), action.selectedProfileId),
+        profiles: updateSelectedProfile(state.profiles.slice(0), action.id),
       });
     case actionTypes.TOGGLE_DROPDOWN:
       return Object.assign({}, state, {
@@ -50,10 +50,10 @@ export default (state = initialState, action) => {
 };
 
 export const actions = {
-  selectedProfile({ id }) {
+  selectProfile(id) {
     return {
       type: actionTypes.SELECT_PROFILE,
-      selectedProfileId: id,
+      id,
     };
   },
   toggleDropdown() {

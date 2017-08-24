@@ -29,7 +29,7 @@ describe('reducer', () => {
   it('should update the selected profile', () => {
     const action = {
       type: actionTypes.SELECT_PROFILE,
-      selectedProfileId: 2,
+      id: 2,
     };
     const state = {
       isDropdownOpen: false,
@@ -52,7 +52,7 @@ describe('reducer', () => {
   it('should update profiles only if the new one exist', () => {
     const action = {
       type: actionTypes.SELECT_PROFILE,
-      selectedProfileId: 42,
+      id: 42,
     };
 
     const state = {
@@ -94,10 +94,10 @@ describe('reducer', () => {
 
 describe('actions', () => {
   it('should select a profile', () => {
-    expect(actions.selectedProfile({ id: 42 }))
+    expect(actions.selectProfile(42))
       .toEqual({
         type: actionTypes.SELECT_PROFILE,
-        selectedProfileId: 42,
+        id: 42,
       });
   });
 

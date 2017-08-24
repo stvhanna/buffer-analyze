@@ -1,5 +1,5 @@
 import { actionTypes, actions as asyncDataFetchActions } from '@bufferapp/async-data-fetch';
-import { actions } from './reducer';
+import { actions as profilesActions } from '@bufferapp/analyze-profile-selector';
 
 const getProfileIdFromRoute = (state) => {
   const currentRoute = state.router.location.pathname;
@@ -22,7 +22,7 @@ export default ({ dispatch, getState }) => next => (action) => {
       break;
     case `profiles_${actionTypes.FETCH_SUCCESS}`:
       if (getProfileIdFromRoute(getState())) {
-        dispatch(actions.selectProfile(getProfileIdFromRoute(getState())));
+        dispatch(profilesActions.selectProfile(getProfileIdFromRoute(getState())));
       }
       break;
     default:

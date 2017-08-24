@@ -1,5 +1,5 @@
 import { actions } from '@bufferapp/async-data-fetch';
-import { actionTypes as profileActionTypes } from '@bufferapp/nav-sidebar';
+import { actionTypes as profileActionTypes } from '@bufferapp/analyze-profile-selector';
 
 export default ({ dispatch }) => next => (action) => { // eslint-disable-line no-unused-vars
   switch (action.type) {
