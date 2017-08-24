@@ -64,6 +64,9 @@ app.post('/rpc', (req, res, next) => {
 
 app.get('/health-check', controller.healthCheck);
 
+const favicon = fs.readFileSync(join(__dirname, 'favicon.ico'));
+app.get('/favicon.ico', (req, res) => res.send(favicon));
+
 app.get('/*', (req, res) => res.send(html));
 
 app.use(apiError);
