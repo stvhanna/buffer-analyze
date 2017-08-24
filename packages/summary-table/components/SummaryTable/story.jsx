@@ -64,7 +64,7 @@ storiesOf('SummaryTable')
         width: '750px',
       }}
     >
-      <SummaryTable loading metrics={[]} />
+      <SummaryTable profileService="facebook" loading metrics={[]} />
     </div>
   ))
   .add('should render a "no data" state', () => (
@@ -73,6 +73,6 @@ storiesOf('SummaryTable')
         width: '750px',
       }}
     >
-      <SummaryTable metrics={[]} />
+      <SummaryTable profileService="twitter" metrics={[]} />
     </div>
   ));
