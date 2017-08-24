@@ -39,7 +39,7 @@ const SummaryTable = ({ metrics, loading, profileService }) => {
   } else {
     content = (
       <ul style={gridStyle}>
-        {metrics.map(metric => <GridItem metric={metric} />)}
+        {metrics.map(metric => <GridItem key={metric.label} metric={metric} />)}
       </ul>
     );
   }
