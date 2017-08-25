@@ -1,5 +1,5 @@
 import { actionTypes, actions } from '@bufferapp/async-data-fetch';
-import { 
+import {
   actionTypes as profileActionTypes,
   actions as profileActions,
 } from '@bufferapp/analyze-profile-selector';
