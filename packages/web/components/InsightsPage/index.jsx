@@ -19,7 +19,7 @@ const InsightsPage = ({ match, location }) => (
   <div style={pageStyle}>
     <NavSidebar route={location.pathname} />
     <div style={pageContentStyle}>
-      <ProfileSelector route={location.pathname} />
+      <ProfileSelector profileService={match.params.service} selectedProfileId={match.params.id} />
       <SummaryTable profileService={match.params.service} />
     </div>
   </div>
