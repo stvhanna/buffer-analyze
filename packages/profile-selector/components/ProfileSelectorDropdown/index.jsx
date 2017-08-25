@@ -22,6 +22,7 @@ import DropdownItem, { ProfileBadge } from './components/DropdownItem';
 function renderDropdownItem(profile, selectProfile, toggleDropdown) {
   const onClick = () => {
     selectProfile({ id: profile.id });
+    toggleDropdown();
   };
 
   if (!profile.selected) {
@@ -76,12 +77,12 @@ const ProfileSelectorDropdown = ({
 ProfileSelectorDropdown.propTypes = {
   profiles: PropTypes.arrayOf(PropTypes.shape({
     service: PropTypes.string.isRequired,
-    selected: PropTypes.bool.isRequired,
     username: PropTypes.string.isRequired,
     avatarUrl: PropTypes.string.isRequired,
     id: PropTypes.string.isRequired,
   })).isRequired,
   isDropdownOpen: PropTypes.bool,
+  selectedProfileId: PropTypes.string.isRequired,
   selectProfile: PropTypes.func.isRequired,
   toggleDropdown: PropTypes.func.isRequired,
 };

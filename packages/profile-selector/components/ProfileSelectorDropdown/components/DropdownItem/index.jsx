@@ -113,7 +113,6 @@ const DropdownItem = ({ profile, handleClick }) => (
 DropdownItem.propTypes = {
   profile: PropTypes.shape({
     service: PropTypes.string.isRequired,
-    selected: PropTypes.bool.isRequired,
     username: PropTypes.string.isRequired,
     avatarUrl: PropTypes.string.isRequired,
     id: PropTypes.string.isRequired,
