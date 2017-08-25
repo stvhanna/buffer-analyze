@@ -4,14 +4,14 @@ const twitterProfiles = [
   {
     avatarUrl,
     username: 'Buffer',
-    id: 1,
+    id: '1',
     selected: false,
     service: 'twitter',
   },
   {
     avatarUrl,
     username: 'Joel Gascoigne',
-    id: 2,
+    id: '2',
     selected: true,
     service: 'twitter',
   },
@@ -21,7 +21,7 @@ const facebookProfiles = [
   {
     avatarUrl,
     username: 'Buffer',
-    id: 3,
+    id: '3',
     selected: false,
     service: 'facebook',
   },
@@ -31,7 +31,7 @@ const instagramProfiles = [
   {
     avatarUrl,
     username: 'Buffer',
-    id: 4,
+    id: '4',
     selected: false,
     service: 'instagram',
   },

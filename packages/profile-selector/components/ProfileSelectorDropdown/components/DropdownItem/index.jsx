@@ -116,6 +116,7 @@ DropdownItem.propTypes = {
     selected: PropTypes.bool.isRequired,
     username: PropTypes.string.isRequired,
     avatarUrl: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
   }).isRequired,
   handleClick: PropTypes.func.isRequired,
 };

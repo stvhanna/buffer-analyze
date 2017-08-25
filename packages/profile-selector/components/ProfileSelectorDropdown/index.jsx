@@ -78,6 +78,7 @@ ProfileSelectorDropdown.propTypes = {
     selected: PropTypes.bool.isRequired,
     username: PropTypes.string.isRequired,
     avatarUrl: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
   })).isRequired,
   isDropdownOpen: PropTypes.bool,
   selectProfile: PropTypes.func.isRequired,

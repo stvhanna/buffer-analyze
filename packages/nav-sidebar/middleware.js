@@ -22,9 +22,8 @@ export default ({ dispatch, getState }) => next => (action) => {
       break;
     case `profiles_${actionTypes.FETCH_SUCCESS}`:
       if (getProfileIdFromRoute(getState())) {
-        // needed to avoid select profile from beeing called before we have the 
-        // profiles colleaction ready in ProfileSelector
-        // Probably we should move all the fetch to ProfileSelector
+        // this is needed cause of a racing condition with ProfileSelector on fetch
+        // that causes ProfileSelector profiles collection to be empty
         setTimeout(() => {
           dispatch(profilesActions.selectProfile(getProfileIdFromRoute(getState())));
         }, 10);
