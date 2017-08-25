@@ -6,7 +6,7 @@
   "scripts": {
     "start": "start-storybook -p 9001",
     "lint": "eslint . --ignore-pattern coverage node_modules",
-    "test": "yarn run lint && sh ../../package_test.sh",
+    "test": "sh ../../package_test.sh",
     "test-update": "jest -u",
     "test-watch": "jest --watch"
   },
