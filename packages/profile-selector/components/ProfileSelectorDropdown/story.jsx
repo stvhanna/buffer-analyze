@@ -9,7 +9,7 @@ import mockProfiles from '../../mocks/profiles';
 storiesOf('ProfileSelectorDropdown')
   .addDecorator(checkA11y)
   .add('should render the dropdown', () => (
-    <div style={{ width: '260px', display: 'flex' }}>
+    <div style={{ display: 'flex' }}>
       <ProfileSelectorDropdown
         profiles={mockProfiles}
         selectProfile={() => {}}
@@ -18,7 +18,7 @@ storiesOf('ProfileSelectorDropdown')
     </div>
   ))
   .add('should open the dropdown', () => (
-    <div style={{ width: '260px', display: 'flex' }}>
+    <div style={{ display: 'flex' }}>
       <ProfileSelectorDropdown
         profiles={mockProfiles}
         isDropdownOpen

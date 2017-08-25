@@ -14,4 +14,15 @@ storiesOf('Dropdown Item')
         handleClick={() => {}}
       />
     </div>
-  ));
+  ))
+  .add('should render properly with an empty avatarUrl', () => {
+    const profile = Object.assign({}, mockProfiles[0]);
+    profile.avatarUrl = '';
+    return (
+      <div style={{ width: '260px', display: 'flex' }}>
+        <DropdownItem
+          profile={profile}
+          handleClick={() => {}}
+        />
+      </div>);
+  });

@@ -12,6 +12,10 @@ import {
 } from '@bufferapp/components';
 
 import {
+  outerSpaceUltraLight,
+} from '@bufferapp/components/style/color';
+
+import {
   dropdownListItem,
 } from '../../style.less';
 
@@ -63,7 +67,15 @@ SocialIcon.propTypes = {
 export const ProfileBadge = ({ avatarUrl, service }) => {
   const avatarPixelSize = `${avatarSize}px`;
   return (
-    <div style={{ position: 'relative', marginRight: '10px' }} >
+    <div style={{
+      position: 'relative',
+      marginRight: '10px',
+      width: avatarPixelSize,
+      height: avatarPixelSize,
+      background: outerSpaceUltraLight,
+      borderRadius: '50%',
+    }}
+    >
       <Image
         border={'circle'}
         src={avatarUrl}
@@ -88,7 +100,7 @@ const DropdownItem = ({ profile, handleClick }) => (
           alignItems: 'center',
           display: 'flex',
           position: 'relative',
-          width: '100%',
+          width: '262px',
         }}
       >
         <ProfileBadge avatarUrl={profile.avatarUrl} service={profile.service} />
