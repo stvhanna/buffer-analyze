@@ -22,7 +22,12 @@ export default ({ dispatch, getState }) => next => (action) => {
       break;
     case `profiles_${actionTypes.FETCH_SUCCESS}`:
       if (getProfileIdFromRoute(getState())) {
-        dispatch(profilesActions.selectProfile(getProfileIdFromRoute(getState())));
+        // needed to avoid select profile from beeing called before we have the 
+        // profiles colleaction ready in ProfileSelector
+        // Probably we should move all the fetch to ProfileSelector
+        setTimeout(() => {
+          dispatch(profilesActions.selectProfile(getProfileIdFromRoute(getState())));
+        }, 10);
       }
       break;
     default:

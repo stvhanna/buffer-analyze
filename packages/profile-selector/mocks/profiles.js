@@ -3,14 +3,14 @@ const avatarUrl = 'https://buffer-uploads.s3.amazonaws.com/503a5c8ffc99f72a7f000
 const twitterProfiles = [
   {
     avatarUrl,
-    handle: 'Buffer',
+    username: 'Buffer',
     id: 1,
     selected: false,
     service: 'twitter',
   },
   {
     avatarUrl,
-    handle: 'Joel Gascoigne',
+    username: 'Joel Gascoigne',
     id: 2,
     selected: true,
     service: 'twitter',
@@ -20,7 +20,7 @@ const twitterProfiles = [
 const facebookProfiles = [
   {
     avatarUrl,
-    handle: 'Buffer',
+    username: 'Buffer',
     id: 3,
     selected: false,
     service: 'facebook',
@@ -30,7 +30,7 @@ const facebookProfiles = [
 const instagramProfiles = [
   {
     avatarUrl,
-    handle: 'Buffer',
+    username: 'Buffer',
     id: 4,
     selected: false,
     service: 'instagram',

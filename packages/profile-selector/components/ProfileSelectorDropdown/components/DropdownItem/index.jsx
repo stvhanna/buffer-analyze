@@ -92,7 +92,7 @@ const DropdownItem = ({ profile, handleClick }) => (
         }}
       >
         <ProfileBadge avatarUrl={profile.avatarUrl} service={profile.service} />
-        <Text weight="bold" size="small">{profile.handle}</Text>
+        <Text weight="bold" size="small">{profile.username}</Text>
       </span>
     </Button>
   </li>
@@ -102,7 +102,7 @@ DropdownItem.propTypes = {
   profile: PropTypes.shape({
     service: PropTypes.string.isRequired,
     selected: PropTypes.bool.isRequired,
-    handle: PropTypes.string.isRequired,
+    username: PropTypes.string.isRequired,
     avatarUrl: PropTypes.string.isRequired,
   }).isRequired,
   handleClick: PropTypes.func.isRequired,

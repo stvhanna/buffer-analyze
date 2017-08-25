@@ -21,7 +21,6 @@ import DropdownItem, { ProfileBadge } from './components/DropdownItem';
 
 function renderDropdownItem(profile, selectProfile, toggleDropdown) {
   const onClick = () => {
-    toggleDropdown();
     selectProfile({ id: profile.id });
   };
 
@@ -48,27 +47,36 @@ const ProfileSelectorDropdown = ({
     [dropdownContentActive]: isDropdownOpen,
   });
 
-  return (<Dropdown className={dropdownContainer} >
-    <DropdownTrigger className={dropdownTrigger} style={{ display: 'flex' }} >
-      <ProfileBadge avatarUrl={selectedProfile.avatarUrl} service={selectedProfile.service} />
-      <Text weight="bold" size="small">{selectedProfile.handle}</Text>
-      <span style={{ marginLeft: 'auto' }} >
-        <ArrowDownIcon />
-      </span>
-    </DropdownTrigger>
-    <DropdownContent className={contentClasses}>
-      <ul className={dropdownList}>
-        {profiles.map(p => renderDropdownItem(p, selectProfile, toggleDropdown))}
-      </ul>
-    </DropdownContent>
-  </Dropdown>);
+  if (profiles.length) {
+    return (
+      <Dropdown
+        className={dropdownContainer}
+        onShow={toggleDropdown}
+        onHide={toggleDropdown}
+      >
+        <DropdownTrigger className={dropdownTrigger} style={{ display: 'flex' }} >
+          <ProfileBadge avatarUrl={selectedProfile.avatarUrl} service={selectedProfile.service} />
+          <Text weight="bold" size="small">{selectedProfile.username}</Text>
+          <span style={{ marginLeft: 'auto' }} >
+            <ArrowDownIcon />
+          </span>
+        </DropdownTrigger>
+        <DropdownContent className={contentClasses}>
+          <ul className={dropdownList}>
+            {profiles.map(p => renderDropdownItem(p, selectProfile, toggleDropdown))}
+          </ul>
+        </DropdownContent>
+      </Dropdown>);
+  }
+
+  return null;
 };
 
 ProfileSelectorDropdown.propTypes = {
   profiles: PropTypes.arrayOf(PropTypes.shape({
     service: PropTypes.string.isRequired,
     selected: PropTypes.bool.isRequired,
-    handle: PropTypes.string.isRequired,
+    username: PropTypes.string.isRequired,
     avatarUrl: PropTypes.string.isRequired,
   })).isRequired,
   isDropdownOpen: PropTypes.bool,

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import NavSidebar from '@bufferapp/nav-sidebar';
 import SummaryTable from '@bufferapp/summary-table';
+import ProfileSelector from '@bufferapp/analyze-profile-selector';
 
 const pageStyle = {
   display: 'flex',
@@ -18,6 +19,7 @@ const InsightsPage = ({ match, location }) => (
   <div style={pageStyle}>
     <NavSidebar route={location.pathname} />
     <div style={pageContentStyle}>
+      <ProfileSelector />
       <SummaryTable profileService={match.params.service} />
     </div>
   </div>
