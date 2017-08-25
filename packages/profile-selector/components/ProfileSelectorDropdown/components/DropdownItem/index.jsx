@@ -101,6 +101,7 @@ const DropdownItem = ({ profile, handleClick }) => (
           display: 'flex',
           position: 'relative',
           width: '262px',
+          padding: '10px',
         }}
       >
         <ProfileBadge avatarUrl={profile.avatarUrl} service={profile.service} />

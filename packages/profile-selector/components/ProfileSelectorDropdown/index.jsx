@@ -7,6 +7,7 @@ import Dropdown, {
 } from 'react-simple-dropdown';
 import {
   ArrowDownIcon,
+  ArrowUpIcon,
   Text,
 } from '@bufferapp/components';
 import {
@@ -19,13 +20,12 @@ import {
 
 import DropdownItem, { ProfileBadge } from './components/DropdownItem';
 
-function renderDropdownItem(profile, selectProfile, toggleDropdown) {
+function renderDropdownItem(profile, selectedProfileId, selectProfile) {
   const onClick = () => {
     selectProfile({ id: profile.id });
-    toggleDropdown();
   };
 
-  if (!profile.selected) {
+  if (profile.id !== selectedProfileId) {
     return (<DropdownItem
       key={profile.id}
       profile={profile}
@@ -60,12 +60,13 @@ const ProfileSelectorDropdown = ({
           <ProfileBadge avatarUrl={selectedProfile.avatarUrl} service={selectedProfile.service} />
           <Text weight="bold" size="small">{selectedProfile.username}</Text>
           <span style={{ marginLeft: 'auto' }} >
-            <ArrowDownIcon />
+            { isDropdownOpen && <ArrowUpIcon /> }
+            { !isDropdownOpen && <ArrowDownIcon /> }
           </span>
         </DropdownTrigger>
         <DropdownContent className={contentClasses}>
           <ul className={dropdownList}>
-            {profiles.map(p => renderDropdownItem(p, selectProfile, toggleDropdown))}
+            {profiles.map(p => renderDropdownItem(p, selectedProfileId, selectProfile))}
           </ul>
         </DropdownContent>
       </Dropdown>);
