@@ -19,7 +19,7 @@ ProfileSelector.propTypes = {
   isDropdownOpen: PropTypes.bool.isRequired,
   selectProfile: PropTypes.func.isRequired,
   toggleDropdown: PropTypes.func.isRequired,
-  route: PropTypes.string.isRequired,
+  selectedProfileId: PropTypes.string.isRequired,
 };
 
 export const filterProfilesByService = (profiles, service) => (
@@ -27,12 +27,9 @@ export const filterProfilesByService = (profiles, service) => (
 );
 
 const mapStateToProps = (state, ownProps) => {
-  const routeMatch = ownProps.route.match(/^\/[a-z]+\/([a-z]+)\/?/);
-  const service = routeMatch[1];
-
   return {
     isDropdownOpen: state.profiles.isDropdownOpen,
-    profiles: filterProfilesByService(state.profiles.profiles, service),
+    profiles: filterProfilesByService(state.profiles.profiles, ownProps.profileService),
   };
 };
 

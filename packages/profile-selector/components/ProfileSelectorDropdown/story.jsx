@@ -12,6 +12,7 @@ storiesOf('ProfileSelectorDropdown')
     <div style={{ display: 'flex' }}>
       <ProfileSelectorDropdown
         profiles={mockProfiles}
+        selectedProfileId={mockProfiles[0].id}
         selectProfile={() => {}}
         toggleDropdown={() => {}}
       />
@@ -21,6 +22,7 @@ storiesOf('ProfileSelectorDropdown')
     <div style={{ display: 'flex' }}>
       <ProfileSelectorDropdown
         profiles={mockProfiles}
+        selectedProfileId={mockProfiles[0].id}
         isDropdownOpen
         selectProfile={() => {}}
         toggleDropdown={() => {}}

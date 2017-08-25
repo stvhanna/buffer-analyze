@@ -40,8 +40,9 @@ const ProfileSelectorDropdown = ({
   isDropdownOpen,
   selectProfile,
   toggleDropdown,
+  selectedProfileId,
 }) => {
-  const selectedProfile = profiles.find(p => p.selected);
+  const selectedProfile = profiles.find(p => p.id === selectedProfileId);
 
   const contentClasses = classNames(dropdownContent, {
     [dropdownContentActive]: isDropdownOpen,

@@ -26,53 +26,6 @@ describe('reducer', () => {
       });
   });
 
-  it('should update the selected profile', () => {
-    const action = {
-      type: actionTypes.SELECT_PROFILE,
-      id: 2,
-    };
-    const state = {
-      isDropdownOpen: false,
-      profiles: [
-        { id: 1, selected: true },
-        { id: 2, selected: false },
-      ],
-    };
-
-    expect(reducer(state, action))
-      .toEqual({
-        isDropdownOpen: false,
-        profiles: [
-          { id: 1, selected: false },
-          { id: 2, selected: true },
-        ],
-      });
-  });
-
-  it('should update profiles only if the new one exist', () => {
-    const action = {
-      type: actionTypes.SELECT_PROFILE,
-      id: 42,
-    };
-
-    const state = {
-      isDropdownOpen: false,
-      profiles: [
-        { id: 1, selected: true },
-        { id: 2, selected: false },
-      ],
-    };
-    expect(reducer(state, action))
-      .toEqual({
-        isDropdownOpen: false,
-        profiles: [
-          { id: 1, selected: true },
-          { id: 2, selected: false },
-        ],
-
-      });
-  });
-
   it('should open the dropdown', () => {
     expect(reducer({
       isDropdownOpen: false,
