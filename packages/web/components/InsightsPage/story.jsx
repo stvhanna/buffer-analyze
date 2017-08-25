@@ -27,7 +27,7 @@ storiesOf('InsightsPage')
       match={{
         params: {
           service: 'twitter',
-          id: null,
+          id: '12358asd9213',
         },
       }}
     />

@@ -1,7 +1,7 @@
 import { push } from 'react-router-redux';
 import { connect } from 'react-redux';
+import { actions as profilesActions } from '@bufferapp/analyze-profile-selector';
 import NavSidebar from './components/NavSidebar';
-import { actions } from './reducer';
 
 export default connect(
   state => ({
@@ -10,7 +10,7 @@ export default connect(
   dispatch => ({
     onClick: (path, profileId) => {
       dispatch(push(path));
-      dispatch(actions.selectProfile(profileId));
+      dispatch(profilesActions.selectProfile(profileId));
     },
   }),
 )(NavSidebar);

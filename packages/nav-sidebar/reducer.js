@@ -14,14 +14,3 @@ export default (state = initialState, action) => {
       return state;
   }
 };
-
-export const actionTypes = {
-  SELECT_PROFILE: 'SELECT_PROFILE',
-};
-
-export const actions = {
-  selectProfile: profileId => ({
-    type: actionTypes.SELECT_PROFILE,
-    id: profileId,
-  }),
-};

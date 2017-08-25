@@ -19,7 +19,7 @@ describe('NavSidebar', () => {
       navSidebar: {
         profiles: [
           {
-            id: 2,
+            id: '2',
             service: 'instagram',
           },
         ],
