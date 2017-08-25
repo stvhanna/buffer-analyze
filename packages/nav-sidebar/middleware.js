@@ -1,5 +1,6 @@
+import { push } from 'react-router-redux';
 import { actionTypes, actions as asyncDataFetchActions } from '@bufferapp/async-data-fetch';
-import { actions as profilesActions } from '@bufferapp/analyze-profile-selector';
+import { actions as profilesActions, actionTypes as profileActionTypes } from '@bufferapp/analyze-profile-selector';
 
 const getProfileIdFromRoute = (state) => {
   const currentRoute = state.router.location.pathname;
@@ -13,6 +14,20 @@ const getProfileIdFromRoute = (state) => {
   return profileId;
 };
 
+const getRouteParams = (path) => {
+  const [route, service, profileId] = path.match(/insights\/(\w+)\/(\w+)/); // eslint-disable-line no-unused-vars
+  return {
+    service,
+    profileId,
+  };
+};
+
+
+const getProfileRoute = (state, id) => {
+  const { service } = getRouteParams(state.router.location.pathname);
+  return `/insights/${service}/${id}`;
+};
+
 export default ({ dispatch, getState }) => next => (action) => {
   switch (action.type) {
     case `login_${actionTypes.FETCH_SUCCESS}`:
@@ -22,12 +37,11 @@ export default ({ dispatch, getState }) => next => (action) => {
       break;
     case `profiles_${actionTypes.FETCH_SUCCESS}`:
       if (getProfileIdFromRoute(getState())) {
-        // this is needed cause of a racing condition with ProfileSelector on fetch
-        // that causes ProfileSelector profiles collection to be empty
-        setTimeout(() => {
-          dispatch(profilesActions.selectProfile(getProfileIdFromRoute(getState())));
-        }, 10);
+        dispatch(profilesActions.selectProfile(getProfileIdFromRoute(getState())));
       }
+      break;
+    case profileActionTypes.SELECT_PROFILE:
+      dispatch(push(getProfileRoute(getState(), action.id)));
       break;
     default:
       break;
