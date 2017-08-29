@@ -2,12 +2,14 @@ import { actionTypes as fetchActions } from '@bufferapp/async-data-fetch';
 
 export const actionTypes = {
   SELECT_PROFILE: 'SELECT_PROFILE',
+  FILTER_PROFILES: 'FILTER_PROFILE',
   TOGGLE_DROPDOWN: 'TOGGLE_DROPDOWN',
 };
 
 const initialState = {
   profiles: [],
   isDropdownOpen: false,
+  profilesFilterString: '',
 };
 
 export default (state = initialState, action) => {
@@ -15,6 +17,10 @@ export default (state = initialState, action) => {
     case `profiles_${fetchActions.FETCH_SUCCESS}`:
       return Object.assign({}, state, {
         profiles: action.result,
+      });
+    case actionTypes.FILTER_PROFILES:
+      return Object.assign({}, state, {
+        profilesFilterString: action.filterString,
       });
     case actionTypes.TOGGLE_DROPDOWN:
       return Object.assign({}, state, {
@@ -35,6 +41,12 @@ export const actions = {
   toggleDropdown() {
     return {
       type: actionTypes.TOGGLE_DROPDOWN,
+    };
+  },
+  filterProfilesByUsername({ target }) {
+    return {
+      type: actionTypes.FILTER_PROFILES,
+      filterString: target ? target.value : '',
     };
   },
 };

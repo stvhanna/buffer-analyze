@@ -54,6 +54,7 @@ const ProfileSelectorDropdown = ({
   selectProfile,
   toggleDropdown,
   selectedProfileId,
+  onSearchChange,
 }) => {
   const selectedProfile = profiles.find(p => p.id === selectedProfileId);
 
@@ -100,12 +101,16 @@ const ProfileSelectorDropdown = ({
           </span>
         </DropdownTrigger>
         <DropdownContent className={contentClasses} >
-          <div className={dropdownContentInputHolder}
+          <div
+            className={dropdownContentInputHolder}
             style={{
               padding: '10px',
             }}
           >
-            <Input placeholder={'Search'} />
+            <Input
+              placeholder={'Search'}
+              input={{ onChange: onSearchChange }}
+            />
           </div>
           <ul className={dropdownList}>
             {profiles.map(p => renderDropdownItem(p, selectedProfileId, selectProfile))}
@@ -135,6 +140,7 @@ ProfileSelectorDropdown.propTypes = {
   isDropdownOpen: PropTypes.bool,
   selectedProfileId: PropTypes.string.isRequired,
   selectProfile: PropTypes.func.isRequired,
+  onSearchChange: PropTypes.func.isRequired,
   toggleDropdown: PropTypes.func.isRequired,
 };
 

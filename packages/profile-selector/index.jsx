@@ -19,26 +19,40 @@ ProfileSelector.propTypes = {
   selectProfile: PropTypes.func.isRequired,
   selectedProfileId: PropTypes.string.isRequired,
   toggleDropdown: PropTypes.func.isRequired,
+  onSearchChange: PropTypes.func.isRequired,
 };
 
-export const filterProfilesByService = (profiles, service) => (
+export const __filterProfilesByService = (profiles, service) => (
   profiles.filter(p => p.service === service)
 );
 
-const mapStateToProps = (state, ownProps) => (
-  {
-    isDropdownOpen: state.profiles.isDropdownOpen,
-    profiles: filterProfilesByService(state.profiles.profiles, ownProps.profileService),
-  }
+export const __filterProfilesByUsername = (profiles, filterString) => (
+  profiles.filter(p => p.username.match(filterString))
 );
+
+export const __mapStateToProps = (state, ownProps) => {
+  let filteredProfiles = __filterProfilesByUsername(
+    state.profiles.profiles,
+    state.profiles.profilesFilterString,
+  );
+  filteredProfiles = __filterProfilesByService(
+    filteredProfiles,
+    ownProps.profileService,
+  );
+  return {
+    isDropdownOpen: state.profiles.isDropdownOpen,
+    profiles: filteredProfiles,
+  };
+};
 
 const mapDispatchToProps = dispatch => ({
   selectProfile: ({ id }) => dispatch(actions.selectProfile(id)),
   toggleDropdown: () => dispatch(actions.toggleDropdown()),
+  onSearchChange: event => dispatch(actions.filterProfilesByUsername(event)),
 });
 
 export default connect(
-  mapStateToProps,
+  __mapStateToProps,
   mapDispatchToProps,
 )(ProfileSelector);
 

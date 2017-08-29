@@ -15,6 +15,7 @@ storiesOf('ProfileSelectorDropdown')
         selectedProfileId={mockProfiles[0].id}
         selectProfile={() => {}}
         toggleDropdown={() => {}}
+        onSearchChange={() => {}}
       />
     </div>
   ))
@@ -26,6 +27,9 @@ storiesOf('ProfileSelectorDropdown')
         isDropdownOpen
         selectProfile={() => {}}
         toggleDropdown={() => {}}
+        onSearchChange={
+          (e) => { console.log(e.target.value); }
+        }
       />
     </div>
   ));
