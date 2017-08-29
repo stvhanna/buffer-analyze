@@ -8,14 +8,29 @@ import Dropdown, {
 import {
   ArrowDownIcon,
   ArrowUpIcon,
+  Input,
   Text,
 } from '@bufferapp/components';
+import {
+  white,
+  curiousBlue,
+} from '@bufferapp/components/style/color';
+import {
+  fontFamily,
+} from '@bufferapp/components/style/font';
+import {
+  transitionAnimationTime,
+  transitionAnimationType,
+} from '@bufferapp/components/style/animation';
+
 import {
   dropdownContainer,
   dropdownContent,
   dropdownContentActive,
+  dropdownContentInputHolder,
   dropdownList,
   dropdownTrigger,
+  dropdownTriggerActive,
 } from './style.less';
 
 import DropdownItem, { ProfileBadge } from './components/DropdownItem';
@@ -25,15 +40,12 @@ function renderDropdownItem(profile, selectedProfileId, selectProfile) {
     selectProfile({ id: profile.id });
   };
 
-  if (profile.id !== selectedProfileId) {
-    return (<DropdownItem
-      key={profile.id}
-      profile={profile}
-      handleClick={onClick}
-    />);
-  }
-
-  return null;
+  return (<DropdownItem
+    key={profile.id}
+    profile={profile}
+    handleClick={onClick}
+    selected={profile.id === selectedProfileId}
+  />);
 }
 
 const ProfileSelectorDropdown = ({
@@ -49,6 +61,29 @@ const ProfileSelectorDropdown = ({
     [dropdownContentActive]: isDropdownOpen,
   });
 
+  const triggerClasses = classNames(dropdownTrigger, {
+    [dropdownTriggerActive]: isDropdownOpen,
+  });
+
+  const manageAccountsStyle = {
+    display: 'inline-block',
+    margin: '0',
+    padding: '0.4rem 0',
+    fontFamily,
+    fontSize: '0.8rem',
+    color: curiousBlue,
+    backgroundColor: 'transparent',
+    border: 'solid 1px',
+    boxSizing: 'border-box',
+    borderRadius: '3px',
+    cursor: 'pointer',
+    outline: 'none',
+    width: '100%',
+    transition: `background-color ${transitionAnimationTime} ${transitionAnimationType}`,
+    textAlign: 'center',
+    textDecoration: 'none',
+  };
+
   if (profiles.length) {
     return (
       <Dropdown
@@ -56,7 +91,7 @@ const ProfileSelectorDropdown = ({
         onShow={toggleDropdown}
         onHide={toggleDropdown}
       >
-        <DropdownTrigger className={dropdownTrigger} style={{ display: 'flex' }} >
+        <DropdownTrigger className={triggerClasses} style={{ display: 'flex' }} >
           <ProfileBadge avatarUrl={selectedProfile.avatarUrl} service={selectedProfile.service} />
           <Text weight="bold" size="small">{selectedProfile.username}</Text>
           <span style={{ marginLeft: 'auto' }} >
@@ -64,10 +99,25 @@ const ProfileSelectorDropdown = ({
             { !isDropdownOpen && <ArrowDownIcon /> }
           </span>
         </DropdownTrigger>
-        <DropdownContent className={contentClasses}>
+        <DropdownContent className={contentClasses} >
+          <div className={dropdownContentInputHolder}
+            style={{
+              padding: '10px',
+            }}
+          >
+            <Input placeholder={'Search'} />
+          </div>
           <ul className={dropdownList}>
             {profiles.map(p => renderDropdownItem(p, selectedProfileId, selectProfile))}
           </ul>
+          <div
+            style={{
+              marginTop: '10px',
+              padding: '10px',
+            }}
+          >
+            <a href={'//buffer.com/manage'} style={manageAccountsStyle} >Manage accounts</a>
+          </div>
         </DropdownContent>
       </Dropdown>);
   }
