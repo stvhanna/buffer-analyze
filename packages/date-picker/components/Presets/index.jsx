@@ -82,12 +82,16 @@ const Presets = ({ selectPreset, minStartDate, startDate, endDate }) => {
   );
 };
 
+Presets.defaultProps = {
+  startDate: null,
+  endDate: null,
+};
 
 Presets.propTypes = {
   selectPreset: PropTypes.func.isRequired,
   minStartDate: PropTypes.number.isRequired,
-  startDate: PropTypes.number.isRequired,
-  endDate: PropTypes.number.isRequired,
+  startDate: PropTypes.number,
+  endDate: PropTypes.number,
 };
 
 export default Presets;

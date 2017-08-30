@@ -112,10 +112,15 @@ class Calendar extends Component {
   }
 }
 
+Calendar.defaultProps = {
+  startDate: null,
+  endDate: null,
+};
+
 Calendar.propTypes = {
   isOpen: PropTypes.bool.isRequired,
-  startDate: PropTypes.number.isRequired,
-  endDate: PropTypes.number.isRequired,
+  startDate: PropTypes.number,
+  endDate: PropTypes.number,
   focusStartDate: PropTypes.bool.isRequired,
   focusEndDate: PropTypes.bool.isRequired,
   currentMonth: PropTypes.number.isRequired,

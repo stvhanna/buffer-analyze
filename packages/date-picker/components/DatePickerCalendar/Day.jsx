@@ -73,6 +73,11 @@ const Day = (props) => {
   );
 };
 
+Day.defaultProps = {
+  startDate: null,
+  endDate: null,
+};
+
 Day.propTypes = {
   day: PropTypes.number.isRequired,
   today: PropTypes.bool.isRequired,
@@ -83,8 +88,8 @@ Day.propTypes = {
   isDisabled: PropTypes.bool.isRequired,
   disabledText: PropTypes.string.isRequired,
   handleClick: PropTypes.func.isRequired,
-  startDate: PropTypes.number.isRequired,
-  endDate: PropTypes.number.isRequired,
+  startDate: PropTypes.number,
+  endDate: PropTypes.number,
   timestamp: PropTypes.number.isRequired,
 };
 

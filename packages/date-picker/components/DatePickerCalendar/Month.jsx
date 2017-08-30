@@ -155,10 +155,15 @@ class Month extends Component {
   }
 }
 
+Month.defaultProps = {
+  startDate: null,
+  endDate: null,
+};
+
 Month.propTypes = {
   currentMonth: PropTypes.number.isRequired,
-  startDate: PropTypes.number.isRequired,
-  endDate: PropTypes.number.isRequired,
+  startDate: PropTypes.number,
+  endDate: PropTypes.number,
   maxStartDate: PropTypes.number.isRequired,
   maxEndDate: PropTypes.number.isRequired,
   // Actions
