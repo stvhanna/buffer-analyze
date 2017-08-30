@@ -79,8 +79,8 @@ class DatePickerCalendarMonth extends Component {
     let m = moment.unix(unixTimestamp);
 
     // start date should always be inclusive
-    let mMaxStartDate = moment.unix(maxStartDate).subtract(1, 'days');
-    let mMaxEndDate   = moment.unix(maxEndDate);
+    let mMaxStartDate = moment(maxStartDate).subtract(1, 'days');
+    let mMaxEndDate = moment(maxEndDate);
 
     return m.isBetween(mMaxStartDate, mMaxEndDate);
   }
@@ -104,7 +104,7 @@ class DatePickerCalendarMonth extends Component {
 
     var time = moment().unix();
 
-    let mMaxStartDate = moment.unix(maxStartDate);
+    let mMaxStartDate = moment(maxStartDate);
 
     while (!endOfMonthGrid) {
       var weekIndex = grid.length - 1;

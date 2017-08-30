@@ -43,7 +43,7 @@ const isRangeSelected = (range, start, end) => {
   return (rangesMatch || range === Infinity);
 };
 
-const DatePickerPresets = ({ selectPreset, minStartDate, startDate, endDate }) => {
+const Presets = ({ selectPreset, minStartDate, startDate, endDate }) => {
   const presets = PRESETS.map((preset) => {
     const disabled = minStartDate > moment().subtract(preset.range, 'days');
     const selectedRange = PRESETS.find(({ range }) => isRangeSelected(range, startDate, endDate));
@@ -81,4 +81,4 @@ const DatePickerPresets = ({ selectPreset, minStartDate, startDate, endDate }) =
   );
 };
 
-export default DatePickerPresets;
+export default Presets;

@@ -39,37 +39,33 @@ class DatePickerForm extends Component {
 
   updateSelectedDateRange() {
     const {
-      profileId,
       startDate,
       endDate,
       // Actions
-      setAnalyticsDateRange,
-      closeDatePicker
+      setDateRange,
+      close,
     } = this.props;
 
-    if (startDate !== -1 && endDate !== -1) {
+    if (startDate !== null && endDate !== null) {
       // set the analytics start and end date to the date pickers start and end date
-      setAnalyticsDateRange(profileId, startDate, endDate);
-      closeDatePicker( );
+      setDateRange(startDate, endDate);
+      close();
     }
   }
 
   handleApplyCustomDateRangeButtonClick (event) {
     const {
-      profileId,
       startDate,
       endDate,
       // Actions
-      setAnalyticsDateRange,
-      setDatePickerDateRange,
-      closeDatePicker
+      setDateRange,
+      close,
     } = this.props;
 
-    if (startDate !== -1 && endDate !== -1) {
+    if (startDate !== null && endDate !== null) {
       // set the analytics start and end date to the date pickers start and end date
-      setAnalyticsDateRange(profileId, startDate, endDate);
-      setDatePickerDateRange(startDate, endDate);
-      closeDatePicker( );
+      setDateRange(startDate, endDate);
+      close();
     }
   }
 
@@ -86,9 +82,7 @@ class DatePickerForm extends Component {
   render () {
     // State
     const {
-      startDateFocus,
-      endDateFocus,
-      customFormOpen,
+      calendarOpen,
       startDate,
       endDate,
       customMonth,
@@ -99,8 +93,8 @@ class DatePickerForm extends Component {
     const {
       focusStartDate,
       focusEndDate,
-      selectCustomStartDate,
-      selectCustomEndDate,
+      setStartDate,
+      setEndDate,
       selectPreset,
       setCustomMonth,
       clearCustomStartDate,
@@ -108,6 +102,9 @@ class DatePickerForm extends Component {
       maxDate,
       minDate,
     } = this.props;
+
+    const startDateFocus = startDate === null;
+    const endDateFocus = startDate !== null && endDate === null;
 
     const dateFormat = 'MM/DD/YY';
 
@@ -128,12 +125,17 @@ class DatePickerForm extends Component {
     });
 
     const customDateRangeContainerClass = classNames(styles.customDateRangeContainer, {
-      [styles.customDateRangeContainerOpen]: customFormOpen,
+      [styles.customDateRangeContainerOpen]: calendarOpen,
     });
 
     return (
       <div>
-        <Presets selectPreset={selectPreset} minStartDate={minStartDate} startDate={startDate} endDate={endDate} />
+        <Presets
+          selectPreset={selectPreset}
+          minStartDate={minStartDate}
+          startDate={startDate}
+          endDate={endDate}
+        />
         <div className={customDateRangeContainerClass}>
           <h4 className={styles.title}>Select a custom date range</h4>
 
@@ -168,8 +170,8 @@ class DatePickerForm extends Component {
 
             maxStartDate={minDate}
             maxEndDate={maxDate}
-            selectStartDate={selectCustomStartDate}
-            selectEndDate={selectCustomEndDate}
+            selectStartDate={setStartDate}
+            selectEndDate={setEndDate}
             selectMonth={setCustomMonth}
           />
           <button
