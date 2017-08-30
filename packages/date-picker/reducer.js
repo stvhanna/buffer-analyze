@@ -5,7 +5,6 @@ import { actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-
 export const actionTypes = {
   OPEN_DATE_PICKER: 'OPEN_DATE_PICKER',
   CLOSE_DATE_PICKER: 'CLOSE_DATE_PICKER',
-  SET_MIN_DATE: 'SET_MIN_DATE',
   SET_DATE_RANGE: 'SET_DATE_RANGE',
 };
 
@@ -25,7 +24,12 @@ export default (state = initialState, action) => {
         startDate: action.startDate,
         endDate: action.endDate,
       };
-    case actionTypes.SET_MIN_DATE:
+    case `analytics_date_range_${asyncDataFetchActionTypes.FETCH_START}`:
+      return {
+        ...state,
+        loading: true,
+      };
+    case `analytics_date_range_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
       return {
         ...state,
         loading: false,
@@ -52,10 +56,6 @@ export const actions = {
   }),
   close: () => ({
     type: actionTypes.CLOSE_DATE_PICKER,
-  }),
-  setMinDate: date => ({
-    type: actionTypes.SET_MIN_DATE,
-    date,
   }),
   setDateRange: (startDate, endDate) => ({
     type: actionTypes.SET_DATE_RANGE,

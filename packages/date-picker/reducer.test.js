@@ -48,18 +48,28 @@ describe('reducer', () => {
     });
   });
 
-  describe(`${actionTypes.SET_MIN_DATE}`, () => {
-    it(`stops loading state when receiving ${actionTypes.SET_MIN_DATE}`, () => {
+  describe('set start date', () => {
+    it(`stops loading state when receiving analytics_date_range_${asyncDataFetchActions.FETCH_SUCCESS}`, () => {
       const state = reducer(undefined, {
-        type: actionTypes.SET_MIN_DATE,
+        type: `analytics_date_range_${asyncDataFetchActions.FETCH_SUCCESS}`,
       });
       expect(state.loading).toBe(false);
+    });
+
+    it(`starts loading state when receiving analytics_date_range_${asyncDataFetchActions.FETCH_START}`, () => {
+      const state = reducer(undefined, {
+        type: `analytics_date_range_${asyncDataFetchActions.FETCH_SUCCESS}`,
+      });
+      const newState = reducer(state, {
+        type: `analytics_date_range_${asyncDataFetchActions.FETCH_START}`,
+      });
+      expect(newState.loading).toBe(true);
     });
 
     it('sets the minimum date available', () => {
       const date = moment().subtract(34, 'days').unix();
       const state = reducer(undefined, {
-        type: actionTypes.SET_MIN_DATE,
+        type: `analytics_date_range_${asyncDataFetchActions.FETCH_SUCCESS}`,
         date,
       });
       expect(state.minDate).toBe(date);
@@ -90,14 +100,6 @@ describe('actions', () => {
       expect(actions.close()).toEqual({
         type: actionTypes.CLOSE_DATE_PICKER,
       });
-    });
-  });
-
-  it(`setMinDate triggers ${actionTypes.SET_MIN_DATE}`, () => {
-    const minDate = moment().subtract(64, 'days').unix();
-    expect(actions.setMinDate(minDate)).toEqual({
-      type: actionTypes.SET_MIN_DATE,
-      date: minDate,
     });
   });
 
