@@ -85,7 +85,7 @@ class DatePickerForm extends Component {
       calendarOpen,
       startDate,
       endDate,
-      customMonth,
+      month,
       minStartDate,
     } = this.props;
 
@@ -96,7 +96,7 @@ class DatePickerForm extends Component {
       setStartDate,
       setEndDate,
       selectPreset,
-      setCustomMonth,
+      setMonth,
       clearCustomStartDate,
       clearCustomEndDate,
       maxDate,
@@ -166,13 +166,13 @@ class DatePickerForm extends Component {
             endDate={endDate}
             focusStartDate={startDateFocus}
             focusEndDate={endDateFocus}
-            currentMonth={customMonth}
+            currentMonth={month}
 
             maxStartDate={minDate}
             maxEndDate={maxDate}
             selectStartDate={setStartDate}
             selectEndDate={setEndDate}
-            selectMonth={setCustomMonth}
+            selectMonth={setMonth}
           />
           <button
             className={buttonClass}

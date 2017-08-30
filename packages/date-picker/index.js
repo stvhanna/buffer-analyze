@@ -13,11 +13,13 @@ export default connect(
     calendarOpen: state.date.calendarOpen,
     minDate: state.date.minDate,
     maxDate: state.date.maxDate,
+    month: state.date.month,
     // add state here
   }),
   dispatch => ({
     open: () => dispatch(actions.open()),
     close: () => dispatch(actions.close()),
+    setMonth: timestamp => dispatch(actions.setMonth(timestamp)),
     setStartDate: date => dispatch(actions.setStartDate(date)),
     setEndDate: date => dispatch(actions.setEndDate(date)),
     setDateRange: (start, end) => dispatch(actions.setDateRange(start, end)),

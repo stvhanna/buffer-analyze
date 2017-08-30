@@ -30,11 +30,11 @@ const Day = (props) => {
   const isSelected = selectedStart || selectedEnd || selectedBetween;
 
   const showStartConnector = (selectedStart || selectedBetween) &&
-                            (endDate !== -1 && startDate !== -1) &&
+                            (endDate !== null && startDate !== null) &&
                             (startDate !== endDate);
 
   const showEndConnector = (selectedEnd || selectedBetween) &&
-                            (startDate !== -1) &&
+                            (startDate !== null) &&
                             (endDate !== startDate);
 
   const showRoundEndConnector = isEndOfWeek && selectedBetween;
@@ -65,7 +65,7 @@ const Day = (props) => {
   return (
     <div className={dayClass} data-tip={disabledText}>
       <span className={startMarkerConnectorClass} />
-      <Button noStyle onClick={() => handleClick(props)}>
+      <Button noStyle onClick={() => (isDisabled ? null : handleClick(timestamp))}>
         <span className={markerClass}>{day}</span>
       </Button>
       <span className={endMarkerConnectorClass} />

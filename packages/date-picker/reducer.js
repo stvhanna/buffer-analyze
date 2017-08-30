@@ -5,6 +5,7 @@ import { actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-
 export const actionTypes = {
   OPEN_DATE_PICKER: 'OPEN_DATE_PICKER',
   CLOSE_DATE_PICKER: 'CLOSE_DATE_PICKER',
+  SET_MONTH: 'SET_MONTH',
   SET_DATE_RANGE: 'SET_DATE_RANGE',
   SET_START_DATE: 'SET_START_DATE',
   SET_END_DATE: 'SET_END_DATE',
@@ -20,10 +21,16 @@ const initialState = {
   calendarOpen: false,
   minDate: null,
   maxDate: moment().valueOf(),
+  month: moment().startOf('month').unix(),
 };
 
 export default (state = initialState, action) => {
   switch (action.type) {
+    case actionTypes.SET_MONTH:
+      return {
+        ...state,
+        month: action.date,
+      };
     case actionTypes.SET_START_DATE:
       return {
         ...state,
@@ -102,5 +109,9 @@ export const actions = {
     type: actionTypes.SET_DATE_RANGE,
     startDate,
     endDate,
+  }),
+  setMonth: date => ({
+    type: actionTypes.SET_MONTH,
+    date,
   }),
 };

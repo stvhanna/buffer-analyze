@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
+import { action } from '@storybook/addon-actions';
 import moment from 'moment';
 
 import DatePicker from './index';
@@ -11,13 +12,16 @@ storiesOf('DatePicker')
     <DatePicker
       startDate={moment().subtract(1, 'days').unix()}
       endDate={moment().subtract(1, 'days').unix()}
+      open={action('open')}
     />
   ))
   .add('should be able to open', () => (
     <DatePicker
       startDate={moment().subtract(7, 'days').unix()}
       endDate={moment().subtract(1, 'day').unix()}
+      close={action('close')}
       isOpen
+      selectPreset={action('select preset')}
     />
   ))
   .add('should display some options as disabled', () => (
@@ -25,7 +29,9 @@ storiesOf('DatePicker')
       minStartDate={moment().subtract(28, 'days')}
       startDate={moment().subtract(7, 'days').unix()}
       endDate={moment().subtract(1, 'day').unix()}
+      close={action('close')}
       isOpen
+      selectPreset={action('select preset')}
     />
   ))
   .add('should be able to have a custom date range selected', () => (
@@ -38,20 +44,22 @@ storiesOf('DatePicker')
   ))
   .add('should display a calendar without a selected date range', () => (
     <DatePicker
-      minDate={moment().subtract(90, 'days').unix()}
-      maxDate={moment().unix()}
+      minDate={moment().subtract(90, 'days').valueOf()}
+      maxDate={moment().valueOf()}
       isOpen
-      customFormOpen
+      calendarOpen
+      setStartDate={action('set start date')}
+      setEndDate={action('set end date')}
     />
   ))
   .add('should display a calendar', () => (
     <DatePicker
-      minDate={moment().subtract(90, 'days').unix()}
-      maxDate={moment().unix()}
+      minDate={moment().subtract(90, 'days').valueOf()}
+      maxDate={moment().valueOf()}
       startDate={moment().subtract(10, 'days').unix()}
       endDate={moment().subtract(1, 'day').unix()}
       isOpen
-      customFormOpen
+      calendarOpen
     />
   ))
   .add('should have past 7 days selected', () => (

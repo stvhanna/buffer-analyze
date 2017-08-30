@@ -224,7 +224,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector"
                   />
                   <span
-                    className="marker hoverMarker"
+                    className="marker"
                   >
                     31
                   </span>
@@ -233,7 +233,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   />
                 </div>
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -241,7 +241,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector"
                   />
                   <span
-                    className="marker hoverMarker"
+                    className="marker"
                   >
                     1
                   </span>
@@ -250,7 +250,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   />
                 </div>
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -258,7 +258,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector"
                   />
                   <span
-                    className="marker hoverMarker"
+                    className="marker"
                   >
                     2
                   </span>
@@ -267,7 +267,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   />
                 </div>
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -275,7 +275,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector"
                   />
                   <span
-                    className="marker hoverMarker"
+                    className="marker"
                   >
                     3
                   </span>
@@ -284,7 +284,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   />
                 </div>
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -292,7 +292,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector"
                   />
                   <span
-                    className="marker hoverMarker"
+                    className="marker"
                   >
                     4
                   </span>
@@ -301,7 +301,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   />
                 </div>
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -309,7 +309,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector"
                   />
                   <span
-                    className="marker hoverMarker"
+                    className="marker"
                   >
                     5
                   </span>
@@ -318,7 +318,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   />
                 </div>
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -326,7 +326,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector"
                   />
                   <span
-                    className="marker hoverMarker"
+                    className="marker"
                   >
                     6
                   </span>
@@ -339,7 +339,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                 className="week"
               >
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -347,7 +347,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector"
                   />
                   <span
-                    className="marker hoverMarker"
+                    className="marker"
                   >
                     7
                   </span>
@@ -356,7 +356,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   />
                 </div>
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -364,7 +364,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector"
                   />
                   <span
-                    className="marker hoverMarker"
+                    className="marker"
                   >
                     8
                   </span>
@@ -373,7 +373,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   />
                 </div>
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -381,7 +381,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector"
                   />
                   <span
-                    className="marker hoverMarker"
+                    className="marker"
                   >
                     9
                   </span>
@@ -390,7 +390,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   />
                 </div>
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -398,7 +398,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector"
                   />
                   <span
-                    className="marker hoverMarker"
+                    className="marker"
                   >
                     10
                   </span>
@@ -407,7 +407,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   />
                 </div>
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -415,7 +415,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector"
                   />
                   <span
-                    className="marker hoverMarker"
+                    className="marker"
                   >
                     11
                   </span>
@@ -424,7 +424,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   />
                 </div>
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -432,7 +432,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector"
                   />
                   <span
-                    className="marker hoverMarker"
+                    className="marker"
                   >
                     12
                   </span>
@@ -441,7 +441,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   />
                 </div>
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -449,7 +449,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector"
                   />
                   <span
-                    className="marker hoverMarker"
+                    className="marker"
                   >
                     13
                   </span>
@@ -462,7 +462,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                 className="week"
               >
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -470,7 +470,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector"
                   />
                   <span
-                    className="marker hoverMarker"
+                    className="marker"
                   >
                     14
                   </span>
@@ -479,7 +479,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   />
                 </div>
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -487,7 +487,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector"
                   />
                   <span
-                    className="marker hoverMarker"
+                    className="marker"
                   >
                     15
                   </span>
@@ -496,7 +496,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   />
                 </div>
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -504,7 +504,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector"
                   />
                   <span
-                    className="marker hoverMarker"
+                    className="marker"
                   >
                     16
                   </span>
@@ -513,7 +513,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   />
                 </div>
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -521,7 +521,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector"
                   />
                   <span
-                    className="marker hoverMarker"
+                    className="marker"
                   >
                     17
                   </span>
@@ -530,7 +530,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   />
                 </div>
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -538,7 +538,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector"
                   />
                   <span
-                    className="marker hoverMarker"
+                    className="marker"
                   >
                     18
                   </span>
@@ -547,7 +547,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   />
                 </div>
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -555,7 +555,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector"
                   />
                   <span
-                    className="marker hoverMarker"
+                    className="marker"
                   >
                     19
                   </span>
@@ -564,7 +564,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   />
                 </div>
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -572,7 +572,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector"
                   />
                   <span
-                    className="marker hoverMarker selectedMarker startMarker"
+                    className="marker selectedMarker startMarker"
                   >
                     20
                   </span>
@@ -585,7 +585,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                 className="week"
               >
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -593,7 +593,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector markerConectorActive roundStartMarker"
                   />
                   <span
-                    className="marker hoverMarker selectedMarker startMarker endMarker"
+                    className="marker selectedMarker startMarker endMarker"
                   >
                     21
                   </span>
@@ -602,7 +602,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   />
                 </div>
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -610,7 +610,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector markerConectorActive"
                   />
                   <span
-                    className="marker hoverMarker selectedMarker startMarker endMarker"
+                    className="marker selectedMarker startMarker endMarker"
                   >
                     22
                   </span>
@@ -619,7 +619,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   />
                 </div>
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -627,7 +627,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector markerConectorActive"
                   />
                   <span
-                    className="marker hoverMarker selectedMarker startMarker endMarker"
+                    className="marker selectedMarker startMarker endMarker"
                   >
                     23
                   </span>
@@ -636,7 +636,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   />
                 </div>
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -644,7 +644,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector markerConectorActive"
                   />
                   <span
-                    className="marker hoverMarker selectedMarker startMarker endMarker"
+                    className="marker selectedMarker startMarker endMarker"
                   >
                     24
                   </span>
@@ -653,7 +653,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   />
                 </div>
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -661,7 +661,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector markerConectorActive"
                   />
                   <span
-                    className="marker hoverMarker selectedMarker startMarker endMarker"
+                    className="marker selectedMarker startMarker endMarker"
                   >
                     25
                   </span>
@@ -670,7 +670,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   />
                 </div>
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -678,7 +678,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector markerConectorActive"
                   />
                   <span
-                    className="marker hoverMarker selectedMarker startMarker endMarker"
+                    className="marker selectedMarker startMarker endMarker"
                   >
                     26
                   </span>
@@ -687,7 +687,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   />
                 </div>
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -695,7 +695,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector markerConectorActive"
                   />
                   <span
-                    className="marker hoverMarker selectedMarker startMarker endMarker"
+                    className="marker selectedMarker startMarker endMarker"
                   >
                     27
                   </span>
@@ -708,7 +708,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                 className="week"
               >
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -716,7 +716,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector markerConectorActive roundStartMarker"
                   />
                   <span
-                    className="marker hoverMarker selectedMarker startMarker endMarker"
+                    className="marker selectedMarker startMarker endMarker"
                   >
                     28
                   </span>
@@ -725,7 +725,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   />
                 </div>
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -733,7 +733,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector markerConectorActive"
                   />
                   <span
-                    className="marker hoverMarker selectedMarker startMarker endMarker"
+                    className="marker selectedMarker startMarker endMarker"
                   >
                     29
                   </span>
@@ -742,7 +742,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   />
                 </div>
                 <div
-                  className="day"
+                  className="day inactiveDay"
                   data-tip=""
                   onClick={[Function]}
                 >
@@ -750,7 +750,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                     className="markerConnector"
                   />
                   <span
-                    className="marker hoverMarker todayMarker"
+                    className="marker todayMarker"
                   >
                     30
                   </span>
@@ -1065,7 +1065,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
               >
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1082,7 +1082,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1099,7 +1099,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1116,7 +1116,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1133,7 +1133,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1150,7 +1150,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1167,7 +1167,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1188,7 +1188,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
               >
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1205,7 +1205,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1222,7 +1222,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1239,7 +1239,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1256,7 +1256,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1273,7 +1273,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1290,7 +1290,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1311,7 +1311,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
               >
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1328,7 +1328,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1345,7 +1345,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1362,7 +1362,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1379,7 +1379,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1396,7 +1396,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1413,7 +1413,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1434,7 +1434,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
               >
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1451,7 +1451,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1468,7 +1468,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1485,7 +1485,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1502,7 +1502,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1519,7 +1519,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1536,7 +1536,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1557,7 +1557,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
               >
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1574,7 +1574,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -1590,15 +1590,15 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                   />
                 </div>
                 <div
-                  className="day inactiveDay"
-                  data-tip=""
+                  className="day"
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
                     className="markerConnector"
                   />
                   <span
-                    className="marker todayMarker"
+                    className="marker hoverMarker todayMarker"
                   >
                     30
                   </span>
@@ -1688,7 +1688,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
     </div>
     <div
       className="clickCatcher clickCatcherActive"
-      onClick={undefined}
+      onClick={[Function]}
       role="button"
       tabIndex="0"
     />
@@ -2670,7 +2670,7 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
             className="form"
           >
             <input
-              className="startInput"
+              className="startInput inputFocus"
               name="start"
               onFocus={undefined}
               placeholder="Date from:"
@@ -3609,7 +3609,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
               >
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -3626,7 +3626,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -3643,7 +3643,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -3660,7 +3660,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -3677,7 +3677,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -3694,7 +3694,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -3711,7 +3711,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -3732,7 +3732,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
               >
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -3749,7 +3749,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -3766,7 +3766,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -3783,7 +3783,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -3800,7 +3800,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -3817,7 +3817,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -3834,7 +3834,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -3855,7 +3855,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
               >
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -3872,7 +3872,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -3889,7 +3889,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -3906,7 +3906,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -3923,7 +3923,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -3940,7 +3940,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -3957,7 +3957,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -3978,7 +3978,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
               >
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -3995,7 +3995,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4012,7 +4012,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4029,7 +4029,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4046,7 +4046,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4063,7 +4063,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4080,7 +4080,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4101,7 +4101,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
               >
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4118,7 +4118,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4134,15 +4134,15 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                   />
                 </div>
                 <div
-                  className="day inactiveDay"
-                  data-tip=""
+                  className="day"
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
                     className="markerConnector"
                   />
                   <span
-                    className="marker todayMarker"
+                    className="marker hoverMarker todayMarker"
                   >
                     30
                   </span>
@@ -4232,7 +4232,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
     </div>
     <div
       className="clickCatcher clickCatcherActive"
-      onClick={undefined}
+      onClick={[Function]}
       role="button"
       tabIndex="0"
     />
@@ -4457,7 +4457,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
               >
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4474,7 +4474,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4491,7 +4491,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4508,7 +4508,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4525,7 +4525,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4542,7 +4542,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4559,7 +4559,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4580,7 +4580,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
               >
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4597,7 +4597,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4614,7 +4614,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4631,7 +4631,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4648,7 +4648,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4665,7 +4665,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4682,7 +4682,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4703,7 +4703,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
               >
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4720,7 +4720,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4737,7 +4737,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4754,7 +4754,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4771,7 +4771,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4788,7 +4788,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4805,7 +4805,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4826,7 +4826,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
               >
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4843,7 +4843,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4860,7 +4860,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4877,7 +4877,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4894,7 +4894,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4911,7 +4911,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4928,7 +4928,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4949,7 +4949,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
               >
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4966,7 +4966,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -4982,15 +4982,15 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                   />
                 </div>
                 <div
-                  className="day inactiveDay"
-                  data-tip=""
+                  className="day"
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
                     className="markerConnector"
                   />
                   <span
-                    className="marker todayMarker"
+                    className="marker hoverMarker todayMarker"
                   >
                     30
                   </span>
@@ -5214,7 +5214,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
             className="form"
           >
             <input
-              className="startInput"
+              className="startInput inputFocus"
               name="start"
               onFocus={undefined}
               placeholder="Date from:"
@@ -5305,7 +5305,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
               >
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5322,7 +5322,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5339,7 +5339,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5356,7 +5356,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5373,7 +5373,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5390,7 +5390,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5407,7 +5407,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5428,7 +5428,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
               >
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5445,7 +5445,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5462,7 +5462,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5479,7 +5479,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5496,7 +5496,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5513,7 +5513,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5530,7 +5530,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5551,7 +5551,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
               >
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5568,7 +5568,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5585,7 +5585,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5602,7 +5602,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5619,7 +5619,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5636,7 +5636,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5653,7 +5653,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5674,7 +5674,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
               >
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5691,7 +5691,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5708,7 +5708,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5725,7 +5725,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5742,7 +5742,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5759,7 +5759,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5776,7 +5776,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5797,7 +5797,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
               >
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5814,7 +5814,7 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -5830,15 +5830,15 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
                   />
                 </div>
                 <div
-                  className="day inactiveDay"
-                  data-tip=""
+                  className="day"
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
                     className="markerConnector"
                   />
                   <span
-                    className="marker todayMarker"
+                    className="marker hoverMarker todayMarker"
                   >
                     30
                   </span>
@@ -6153,7 +6153,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
               >
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6170,7 +6170,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6187,7 +6187,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6204,7 +6204,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6221,7 +6221,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6238,7 +6238,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6255,7 +6255,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6276,7 +6276,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
               >
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6293,7 +6293,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6310,7 +6310,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6327,7 +6327,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6344,7 +6344,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6361,7 +6361,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6378,7 +6378,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6399,7 +6399,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
               >
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6416,7 +6416,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6433,7 +6433,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6450,7 +6450,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6467,7 +6467,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6484,7 +6484,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6501,7 +6501,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6522,7 +6522,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
               >
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6539,7 +6539,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6556,7 +6556,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6573,7 +6573,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6590,7 +6590,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6607,7 +6607,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6624,7 +6624,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6645,7 +6645,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
               >
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6662,7 +6662,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                 </div>
                 <div
                   className="day inactiveDay"
-                  data-tip=""
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
@@ -6678,15 +6678,15 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                   />
                 </div>
                 <div
-                  className="day inactiveDay"
-                  data-tip=""
+                  className="day"
+                  data-tip="We don't have data prior to 08/30/17"
                   onClick={[Function]}
                 >
                   <span
                     className="markerConnector"
                   />
                   <span
-                    className="marker todayMarker"
+                    className="marker hoverMarker todayMarker"
                   >
                     30
                   </span>

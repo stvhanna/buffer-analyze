@@ -1,131 +1,133 @@
 import React, {
   Component,
-  PropTypes
 } from 'react';
-
+import PropTypes from 'prop-types';
 import ReactTooltip from 'react-tooltip';
-
 import moment from 'moment';
 
 import styles from './date-picker-calendar.less';
 import Day from './Day';
 
-class DatePickerCalendarMonth extends Component {
-  static propTypes = {
-    currentMonth: PropTypes.number.isRequired,
-    startDate: PropTypes.number.isRequired,
-    endDate: PropTypes.number.isRequired,
-    maxStartDate: PropTypes.number.isRequired,
-    maxEndDate: PropTypes.number.isRequired,
-    // Actions
-    handleDayClick: PropTypes.func,
+const getFirstDayOfWeek = (timestamp) => {
+  const startOfMonth = moment.unix(timestamp).startOf('month');
+  const dayOfWeek = startOfMonth.day();
+
+  if (dayOfWeek !== 1) {
+    const daysFromMonday = dayOfWeek - 1;
+    startOfMonth.subtract(daysFromMonday, 'days');
   }
 
-  getFirstDayOfWeek (unixTimestamp) {
-    var m = moment.unix(unixTimestamp).startOf('month');
-    var dayOfWeek = m.day();
+  return startOfMonth.unix();
+};
 
-    // If the start of the month is not a monday
-    // subtract days until last monday
-    if (dayOfWeek !== 1) {
-      var daysFromMonday = (dayOfWeek-1);
-      m.subtract(daysFromMonday, 'days');
+const isInValidRange = (start, end, timestamp) => {
+  const date = moment.unix(timestamp);
+
+  // start date should always be inclusive
+  const maxStartDate = moment(start).subtract(1, 'days');
+  const maxEndDate = moment(end);
+
+  return date.isBetween(maxStartDate, maxEndDate);
+};
+
+const isInRange = (start, end, timestamp) => {
+  const startDate = moment.unix(start);
+  const endDate = moment.unix(end);
+  const date = moment.unix(timestamp);
+
+  if (startDate.isSame(date, 'day')) {
+    return -1;
+  } else if (date.isBetween(startDate, endDate) && startDate !== null && endDate !== null) {
+    return 0;
+  } else if (endDate.isSame(date, 'day')) {
+    return 1;
+  }
+
+  return false;
+};
+
+const isSelectedBetween = (start, end, timestamp) => isInRange(start, end, timestamp) === 0;
+const isSelectedStart = (start, end, timestamp) => isInRange(start, end, timestamp) === -1;
+const isSelectedEnd = (start, end, timestamp) => isInRange(start, end, timestamp) === 1;
+
+class Month extends Component {
+  componentDidUpdate(nextProps) {
+    if (this.props.currentMonth !== nextProps.currentMonth) {
+      ReactTooltip.rebuild();
     }
-
-    return m.unix();
   }
 
-  isInRange(unixTimestamp) {
+  getDays(weekList) {
+    const handleDayClick = this.props.handleDayClick;
 
+    return weekList.map(day => (
+      <Day
+        {...day}
+        key={day.timestamp}
+        handleClick={handleDayClick}
+      />
+    ));
+  }
+
+  getMonth (unixTimestamp) {
     const {
       startDate,
-      endDate
-    } = this.props;
-
-    let mStartDate = moment.unix(startDate);
-    let mEndDate   = moment.unix(endDate);
-
-    let mTestDate = moment.unix(unixTimestamp);
-
-    if (mStartDate.isSame(mTestDate, 'day')) {
-      return -1;
-    } else if (mTestDate.isBetween(mStartDate, mEndDate) && startDate !== -1 && endDate !== -1) {
-      return 0;
-    } else if (mEndDate.isSame(mTestDate, 'day')){
-      return 1;
-    }
-
-    return false;
-  }
-
-  isSelectedBetween (unixTimestamp) {
-    return this.isInRange(unixTimestamp) === 0;
-  }
-
-  isSelectedStart (unixTimestamp) {
-    return this.isInRange(unixTimestamp) === -1;
-  }
-
-  isSelectedEnd (unixTimestamp) {
-    return this.isInRange(unixTimestamp) === 1;
-  }
-
-  isInValidRange(unixTimestamp) {
-    const {
+      endDate,
       maxStartDate,
-      maxEndDate
+      maxEndDate,
     } = this.props;
 
-    let m = moment.unix(unixTimestamp);
+    const monthGrid = this.formatMonth(unixTimestamp, startDate, endDate, maxStartDate, maxEndDate);
 
-    // start date should always be inclusive
-    let mMaxStartDate = moment(maxStartDate).subtract(1, 'days');
-    let mMaxEndDate = moment(maxEndDate);
-
-    return m.isBetween(mMaxStartDate, mMaxEndDate);
+    return monthGrid.map((weekList) => {
+      const days = this.getDays(weekList);
+      return (
+        <div className={styles.week} key={weekList[0].timestamp}>
+          {days}
+        </div>
+      );
+    });
   }
 
   formatMonth(unixTimestamp) {
-    let month = moment.unix(unixTimestamp).startOf('month').month();
-    let year = moment.unix(unixTimestamp).year();
-    let m = moment.unix(this.getFirstDayOfWeek(unixTimestamp));
-    let grid = [[]];
+    const month = moment.unix(unixTimestamp).startOf('month').month();
+    const year = moment.unix(unixTimestamp).year();
+    const m = moment.unix(getFirstDayOfWeek(unixTimestamp));
+    const grid = [[]];
 
     const {
       startDate,
       endDate,
       maxStartDate,
-      maxEndDate
+      maxEndDate,
     } = this.props;
 
     let endOfMonthGrid = false;
-    let endOfWeek  = false;
+    let endOfWeek = false;
     let endOfMonth = false;
 
-    var time = moment().unix();
-
-    let mMaxStartDate = moment(maxStartDate);
+    const mMaxStartDate = moment(maxStartDate);
 
     while (!endOfMonthGrid) {
-      var weekIndex = grid.length - 1;
+      const weekIndex = grid.length - 1;
 
-      let showTooltip = m.isBefore(mMaxStartDate);
+      const showTooltip = m.isBefore(mMaxStartDate);
 
       grid[weekIndex].push({
         timestamp: m.unix(),
         day: m.date(),
         today: m.isSame(moment(), 'day'),
         inMonth: m.month() === month,
-        selectedBetween: this.isSelectedBetween(m.unix()),
-        selectedStart: this.isSelectedStart(m.unix()),
-        selectedEnd: this.isSelectedEnd(m.unix()),
-        isDisabled: !this.isInValidRange(m.unix()),
-        disabledText: showTooltip ? `We don't have data prior to ${mMaxStartDate.format('MM/DD/YY')}`: '',
-        startDate: startDate,
-        endDate: endDate
+        selectedBetween: isSelectedBetween(startDate, endDate, m.unix()),
+        selectedStart: isSelectedStart(startDate, endDate, m.unix()),
+        selectedEnd: isSelectedEnd(startDate, endDate, m.unix()),
+        isDisabled: !isInValidRange(maxStartDate, maxEndDate, m.unix()),
+        disabledText: showTooltip ? `We don't have data prior to ${mMaxStartDate.format('MM/DD/YY')}` : '',
+        startDate,
+        endDate,
       });
 
-      endOfWeek  = m.day() === 0;
+      endOfWeek = m.day() === 0;
       endOfMonth = m.month() > month || m.year() > year;
 
       if (endOfWeek && endOfMonth) {
@@ -140,54 +142,27 @@ class DatePickerCalendarMonth extends Component {
     return grid;
   }
 
-  getDays(weekList) {
-    var handleDayClick = this.props.handleDayClick;
-    var _this = this;
-
-    return weekList.map((day, index) => {
-      return (<Day {...day}
-                   key={index}
-                   handleClick={handleDayClick.bind(_this, day)} />);
-    });
-  }
-
-  getMonth (unixTimestamp) {
-    const {
-      startDate,
-      endDate,
-      maxStartDate,
-      maxEndDate
-    } = this.props;
-
-    let monthGrid = this.formatMonth(unixTimestamp, startDate, endDate, maxStartDate, maxEndDate);
-
-    return monthGrid.map((weekList, index) => {
-      let days = this.getDays(weekList);
-      return (
-        <div className={styles.week} key={index}>
-          {days}
-        </div>
-      );
-    });
-  }
-
-  componentDidUpdate(nextProps) {
-    if (this.props.currentMonth !== nextProps.currentMonth) {
-      ReactTooltip.rebuild();
-    }
-  }
-
   render () {
     const {
-      currentMonth
+      currentMonth,
     } = this.props;
 
     return (
       <div>
         {this.getMonth(currentMonth)}
       </div>
-    )
+    );
   }
 }
 
-export default DatePickerCalendarMonth;
+Month.propTypes = {
+  currentMonth: PropTypes.number.isRequired,
+  startDate: PropTypes.number.isRequired,
+  endDate: PropTypes.number.isRequired,
+  maxStartDate: PropTypes.number.isRequired,
+  maxEndDate: PropTypes.number.isRequired,
+  // Actions
+  handleDayClick: PropTypes.func.isRequired,
+};
+
+export default Month;

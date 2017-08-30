@@ -1,31 +1,54 @@
 import React, {
   Component,
-  PropTypes
 } from 'react';
+
+import PropTypes from 'prop-types';
+
+import { Button } from '@bufferapp/components';
 
 import moment from 'moment';
 import classNames from 'classnames';
+
+import ArrowLeftIcon from '@bufferapp/components/Icon/Icons/ArrowLeftIcon';
+import ArrowRightIcon from '@bufferapp/components/Icon/Icons/ArrowRightIcon';
 
 import Month from './Month';
 
 import styles from './date-picker-calendar.less';
 
-class DatePickerCalendar extends Component {
-  static propTypes = {
-    isOpen: PropTypes.bool.isRequired,
-    startDate: PropTypes.number.isRequired,
-    endDate: PropTypes.number.isRequired,
-    focusStartDate: PropTypes.bool.isRequired,
-    focusEndDate: PropTypes.bool.isRequired,
-    currentMonth: PropTypes.number.isRequired,
-    maxStartDate: PropTypes.number,
-    maxEndDate: PropTypes.number,
+const MonthHeader = () => {
+  const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'].map(day => (
+    <li className={styles.dayHeaderListItem} key={day}>
+      {day.charAt(0)}
+    </li>
+  ));
 
-    // Actions
-    selectStartDate: PropTypes.func.isRequired,
-    selectEndDate: PropTypes.func.isRequired,
-    selectMonth: PropTypes.func.isRequired
-  };
+  return (
+    <ul className={styles.dayHeaderList}>
+      {days}
+    </ul>
+  );
+};
+
+class Calendar extends Component {
+  getHeader(unixTimestamp) {
+    const currentMonth = moment.unix(unixTimestamp).format('MMMM YYYY');
+
+    const arrowLeftClass = classNames('bi-arrow-left', styles.arrowLeft);
+    const arrowRightClass = classNames('bi-arrow-right', styles.arrowRight);
+
+    return (
+      <header className={styles.header}>
+        <Button noStyle onClick={() => this.previousMonth(unixTimestamp)}>
+          <i className={arrowLeftClass}><ArrowLeftIcon /></i>
+        </Button>
+        {currentMonth}
+        <Button noStyle onClick={() => this.nextMonth(unixTimestamp)}>
+          <i className={arrowRightClass}><ArrowRightIcon /></i>
+        </Button>
+      </header>
+    );
+  }
 
   previousMonth (unixTimestamp) {
     const m = moment.unix(unixTimestamp);
@@ -39,58 +62,23 @@ class DatePickerCalendar extends Component {
     this.props.selectMonth(m.unix());
   }
 
-  getHeader(unixTimestamp) {
-    let m = moment.unix(unixTimestamp);
-    let currentMonth = m.format('MMMM YYYY');
-
-    let arrowLeftClass = classNames('bi-arrow-left', styles.arrowLeft);
-    let arrowRightClass = classNames('bi-arrow-right', styles.arrowRight);
-
-    return (
-      <header className={styles.header}>
-        <i onClick={this.previousMonth.bind(this, unixTimestamp)} className={arrowLeftClass}></i>
-        {currentMonth}
-        <i onClick={this.nextMonth.bind(this, unixTimestamp)} className={arrowRightClass}></i>
-      </header>
-    )
-  }
-
-  getMonthHeader ( ){
-    let days = ['M', 'T', 'W', 'T', 'F', 'S', 'S'].map((day, index) => {
-      return (
-        <li className={styles.dayHeaderListItem}
-            key={index}>
-          {day}
-        </li>
-      );
-    });
-
-    return (
-      <ul className={styles.dayHeaderList}>
-        {days}
-      </ul>
-    );
-  }
-
-  handleDayClick (day) {
+  handleDayClick (timestamp) {
     const {
       startDate,
-      endDate,
       focusStartDate,
       focusEndDate,
       // Actions
       selectStartDate,
-      selectEndDate
+      selectEndDate,
     } = this.props;
 
-    let m = moment.unix(day.timestamp);
-    let mEndDate = moment.unix(endDate);
-    let mStartDate = moment.unix(startDate);
+    const m = moment.unix(timestamp);
+    const mStartDate = moment.unix(startDate);
 
-    if (focusStartDate){
-      selectStartDate(day.timestamp);
-    } else if (focusEndDate && (startDate === -1 || m.isAfter(mStartDate)) ){
-      selectEndDate(day.timestamp);
+    if (focusStartDate) {
+      selectStartDate(timestamp);
+    } else if (focusEndDate && (startDate === -1 || m.isAfter(mStartDate))) {
+      selectEndDate(timestamp);
     }
   }
 
@@ -101,29 +89,46 @@ class DatePickerCalendar extends Component {
       maxStartDate,
       maxEndDate,
       isOpen,
-      currentMonth
-    } = this.props ;
+      currentMonth,
+    } = this.props;
 
-    let header = this.getHeader(currentMonth)
-    let monthHeader = this.getMonthHeader();
+    const header = this.getHeader(currentMonth);
 
-    var calendarClass = classNames(styles.calendar, {
-      [styles.calendarOpen]: isOpen
+    const calendarClass = classNames(styles.calendar, {
+      [styles.calendarOpen]: isOpen,
     });
 
     return (
       <aside className={calendarClass}>
         {header}
-        {monthHeader}
-        <Month handleDayClick={this.handleDayClick.bind(this)}
-               currentMonth={currentMonth}
-               startDate={startDate}
-               endDate={endDate}
-               maxStartDate={maxStartDate}
-               maxEndDate={maxEndDate} />
+        <MonthHeader />
+        <Month
+          handleDayClick={timestamp => this.handleDayClick(timestamp)}
+          currentMonth={currentMonth}
+          startDate={startDate}
+          endDate={endDate}
+          maxStartDate={maxStartDate}
+          maxEndDate={maxEndDate}
+        />
       </aside>
-    )
+    );
   }
 }
 
-export default DatePickerCalendar;
+Calendar.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  startDate: PropTypes.number.isRequired,
+  endDate: PropTypes.number.isRequired,
+  focusStartDate: PropTypes.bool.isRequired,
+  focusEndDate: PropTypes.bool.isRequired,
+  currentMonth: PropTypes.number.isRequired,
+  maxStartDate: PropTypes.number,
+  maxEndDate: PropTypes.number,
+
+  // Actions
+  selectStartDate: PropTypes.func.isRequired,
+  selectEndDate: PropTypes.func.isRequired,
+  selectMonth: PropTypes.func.isRequired,
+};
+
+export default Calendar;
