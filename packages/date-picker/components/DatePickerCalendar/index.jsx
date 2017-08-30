@@ -34,17 +34,14 @@ class Calendar extends Component {
   getHeader(unixTimestamp) {
     const currentMonth = moment.unix(unixTimestamp).format('MMMM YYYY');
 
-    const arrowLeftClass = classNames('bi-arrow-left', styles.arrowLeft);
-    const arrowRightClass = classNames('bi-arrow-right', styles.arrowRight);
-
     return (
       <header className={styles.header}>
         <Button noStyle onClick={() => this.previousMonth(unixTimestamp)}>
-          <i className={arrowLeftClass}><ArrowLeftIcon /></i>
+          <i className={styles.arrowLeft}><ArrowLeftIcon /></i>
         </Button>
         {currentMonth}
         <Button noStyle onClick={() => this.nextMonth(unixTimestamp)}>
-          <i className={arrowRightClass}><ArrowRightIcon /></i>
+          <i className={styles.arrowRight}><ArrowRightIcon /></i>
         </Button>
       </header>
     );
