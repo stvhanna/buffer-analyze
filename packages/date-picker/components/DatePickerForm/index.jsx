@@ -11,7 +11,7 @@ import Presets from '../Presets/';
 
 class Form extends Component {
   componentWillUpdate (nextProps) {
-    if (nextProps.startDate === null) {
+    if (nextProps.startDate === null && this._startDate) {
       this._startDate.focus();
     }
   }
@@ -101,65 +101,69 @@ class Form extends Component {
           endDate={endDate}
         />
         <div className={customDateRangeContainerClass}>
-          <h4 className={styles.title}>Select a custom date range</h4>
+          { calendarOpen &&
+          <div>
+            <h4 className={styles.title}>Select a custom date range</h4>
 
-          <form className={styles.form}>
-            <input
-              ref={(node) => { this._startDate = node; }}
-              type="text"
-              name="start"
-              value={startDateFormat}
-              placeholder="Date from:"
-              className={startDateInputClass}
-              readOnly
-            />
-            <Button
-              noStyle
-              onClick={(e) => {
-                e.preventDefault();
-                clearStartDate();
-              }}
-            >
-              <span className={styles.inputClear}>x</span>
-            </Button>
-            <input
-              type="text"
-              name="end"
-              value={endDateFormat}
-              placeholder="Date to:"
-              className={endDateInputClass}
-              readOnly
-            />
-            <Button
-              noStyle
-              onClick={(e) => {
-                e.preventDefault();
-                clearEndDate();
-              }}
-            >
-              <span className={styles.inputClear}>x</span>
-            </Button>
-          </form>
-          <DatePickerCalendar
-            isOpen
-            startDate={startDate}
-            endDate={endDate}
-            focusStartDate={startDateFocus}
-            focusEndDate={endDateFocus}
-            currentMonth={month}
+            <form className={styles.form}>
+              <input
+                ref={(node) => { this._startDate = node; }}
+                type="text"
+                name="start"
+                value={startDateFormat}
+                placeholder="Date from:"
+                className={startDateInputClass}
+                readOnly
+              />
+              <Button
+                noStyle
+                onClick={(e) => {
+                  e.preventDefault();
+                  clearStartDate();
+                }}
+              >
+                <span className={styles.inputClear}>x</span>
+              </Button>
+              <input
+                type="text"
+                name="end"
+                value={endDateFormat}
+                placeholder="Date to:"
+                className={endDateInputClass}
+                readOnly
+              />
+              <Button
+                noStyle
+                onClick={(e) => {
+                  e.preventDefault();
+                  clearEndDate();
+                }}
+              >
+                <span className={styles.inputClear}>x</span>
+              </Button>
+            </form>
+            <DatePickerCalendar
+              isOpen
+              startDate={startDate}
+              endDate={endDate}
+              focusStartDate={startDateFocus}
+              focusEndDate={endDateFocus}
+              currentMonth={month}
 
-            maxStartDate={minDate}
-            maxEndDate={maxDate}
-            selectStartDate={setStartDate}
-            selectEndDate={setEndDate}
-            selectMonth={setMonth}
-          />
-          <button
-            className={buttonClass}
-            onClick={() => this.applyCustomDateRange()}
-          >
-            Apply This Date Range
-          </button>
+              maxStartDate={minDate}
+              maxEndDate={maxDate}
+              selectStartDate={setStartDate}
+              selectEndDate={setEndDate}
+              selectMonth={setMonth}
+            />
+            <button
+              className={buttonClass}
+              onClick={() => this.applyCustomDateRange()}
+            >
+              Apply This Date Range
+            </button>
+          </div>
+          }
         </div>
       </div>
     );
