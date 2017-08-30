@@ -25,6 +25,7 @@ export default (state = initialState, action) => {
     case actionTypes.SELECT_PROFILE:
       return Object.assign({}, state, {
         profilesFilterString: '',
+        isDropdownOpen: false,
       });
     case actionTypes.TOGGLE_DROPDOWN:
       return Object.assign({}, state, {

@@ -50,6 +50,14 @@ describe('reducer', () => {
       .toBe('');
   });
 
+  it('should close dropdown on SELECT_PROFILE', () => {
+    const state = reducer(Object.assign({}, initialState, { isDropdownOpen: true }), {
+      type: actionTypes.SELECT_PROFILE,
+    });
+    expect(state.isDropdownOpen)
+      .toBeFalsy();
+  });
+
   it('should open the dropdown', () => {
     expect(reducer({
       isDropdownOpen: false,
