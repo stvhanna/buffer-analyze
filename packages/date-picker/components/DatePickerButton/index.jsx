@@ -10,16 +10,9 @@ import {
   button,
 } from '../styleGuide/components/ButtonSquareSecondary/button-square-secondary.less';
 
-const Title = ({ loading, options }) => {
-  if (loading) {
-    return 'Loading...';
-  } else {
-    const selectedRange = options.find(range => range.selected);
-    return selectedRange.label;
-  }
-};
+import { Title, Subtitle } from './Titles';
 
-const DatePickerButton = ({ isOpen, loading, title, subtitle, handleClick }) => {
+const DatePickerButton = ({ isOpen, loading, startDate, endDate, handleClick }) => {
   const buttonClass = classNames(button, styles.button, {
     [styles.disabled]: loading,
   });
@@ -31,10 +24,10 @@ const DatePickerButton = ({ isOpen, loading, title, subtitle, handleClick }) => 
       onClick={handleClick}
     >
       <i className="bi-calendar" />
-      <span>{title}</span>
+      <Title loading={loading} startDate={startDate} endDate={endDate} />
       <span className={styles.rightSide}>
-        <span className={styles.dateRange}>{subtitle}</span>
-        <span style={{marginLeft: '5px'}}>
+        <Subtitle startDate={startDate} endDate={endDate} />
+        <span style={{ marginLeft: '5px' }}>
           { isOpen ?
             <ArrowUpIcon size="small" /> :
             <ArrowDownIcon size="small" /> }
@@ -45,15 +38,17 @@ const DatePickerButton = ({ isOpen, loading, title, subtitle, handleClick }) => 
 };
 
 DatePickerButton.defaultProps = {
+  startDate: 0,
+  endDate: 0,
   loading: false,
 };
 
 DatePickerButton.propTypes = {
   isOpen: PropTypes.bool.isRequired,
-  title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
   handleClick: PropTypes.func.isRequired,
   loading: PropTypes.bool,
+  startDate: PropTypes.number,
+  endDate: PropTypes.number,
 };
 
 export default DatePickerButton;

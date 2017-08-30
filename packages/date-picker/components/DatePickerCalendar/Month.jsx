@@ -5,12 +5,10 @@ import React, {
 
 import ReactTooltip from 'react-tooltip';
 
-
 import moment from 'moment';
-import classNames from 'classnames';
 
 import styles from './date-picker-calendar.less';
-import Day from './DatePickerCalendarDay';
+import Day from './Day';
 
 class DatePickerCalendarMonth extends Component {
   static propTypes = {
@@ -160,7 +158,6 @@ class DatePickerCalendarMonth extends Component {
       maxStartDate,
       maxEndDate
     } = this.props;
-    console.log(this.props);
 
     let monthGrid = this.formatMonth(unixTimestamp, startDate, endDate, maxStartDate, maxEndDate);
 

@@ -5,7 +5,6 @@ import moment from 'moment';
 
 import DatePicker from './index';
 
-
 storiesOf('DatePicker')
   .addDecorator(checkA11y)
   .add('there is no date if a single day is selected', () => (
@@ -16,7 +15,7 @@ storiesOf('DatePicker')
   ))
   .add('should be able to open', () => (
     <DatePicker
-      startDate={moment().subtract(8, 'days').unix()}
+      startDate={moment().subtract(7, 'days').unix()}
       endDate={moment().subtract(1, 'day').unix()}
       isOpen
     />
@@ -24,7 +23,7 @@ storiesOf('DatePicker')
   .add('should display some options as disabled', () => (
     <DatePicker
       minStartDate={moment().subtract(28, 'days')}
-      startDate={moment().subtract(8, 'days').unix()}
+      startDate={moment().subtract(7, 'days').unix()}
       endDate={moment().subtract(1, 'day').unix()}
       isOpen
     />
@@ -57,7 +56,7 @@ storiesOf('DatePicker')
   ))
   .add('should have past 7 days selected', () => (
     <DatePicker
-      startDate={moment().subtract(8, 'days').unix()}
+      startDate={moment().subtract(7, 'days').unix()}
       endDate={moment().subtract(1, 'day').unix()}
     />
   ))

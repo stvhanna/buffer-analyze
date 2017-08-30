@@ -6,7 +6,7 @@ import React, {
 import moment from 'moment';
 import classNames from 'classnames';
 
-import Month from './DatePickerCalendarMonth';
+import Month from './Month';
 
 import styles from './date-picker-calendar.less';
 

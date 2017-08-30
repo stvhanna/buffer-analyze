@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import { Provider } from 'react-redux';
-import DatePicker, {
+import DatePickerContainer, {
   reducer,
   actions,
   actionTypes,
@@ -22,7 +22,7 @@ describe('DatePicker', () => {
     });
     const wrapper = mount(
       <Provider store={store}>
-        <DatePicker />
+        <DatePickerContainer />
       </Provider>,
     );
     expect(wrapper.find(DatePicker).length)

@@ -1,10 +1,10 @@
-import React, {Component, PropTypes} from 'react';
+import React, { Component, PropTypes } from 'react';
 import classNames from 'classnames';
 import moment from 'moment';
 
 import styles from './date-picker-form.less';
 
-import DatePickerCalendar from '../DatePickerCalendar/DatePickerCalendar';
+import DatePickerCalendar from '../DatePickerCalendar/';
 import Presets from '../Presets/';
 
 
@@ -22,7 +22,6 @@ class DatePickerForm extends Component {
     endDate: PropTypes.number.isRequired,
     customMonth: PropTypes.number.isRequired,
     customFormOpen: PropTypes.bool.isRequired,
-    disabledPresets: PropTypes.array.isRequired,
     minDate: PropTypes.number.isRequired,
     maxDate: PropTypes.number.isRequired,
 
@@ -87,10 +86,6 @@ class DatePickerForm extends Component {
   render () {
     // State
     const {
-      options,
-      presetOptions,
-      selectedPreset,
-      disabledPresets,
       startDateFocus,
       endDateFocus,
       customFormOpen,
@@ -111,7 +106,7 @@ class DatePickerForm extends Component {
       clearCustomStartDate,
       clearCustomEndDate,
       maxDate,
-      minDate
+      minDate,
     } = this.props;
 
     const dateFormat = 'MM/DD/YY';
@@ -152,7 +147,7 @@ class DatePickerForm extends Component {
               onFocus={focusStartDate}
               className={startDateInputClass}
             />
-            <span className={styles.inputClear} onClick={clearCustomStartDate}>x</span>
+            <span role="button" className={styles.inputClear} onClick={clearCustomStartDate}>x</span>
             <input
               type="text"
               name="end"
@@ -161,7 +156,7 @@ class DatePickerForm extends Component {
               onFocus={focusEndDate}
               className={endDateInputClass}
             />
-            <span className={styles.inputClear} onClick={clearCustomEndDate}>x</span>
+            <span role="button" className={styles.inputClear} onClick={clearCustomEndDate}>x</span>
           </form>
           <DatePickerCalendar
             isOpen
