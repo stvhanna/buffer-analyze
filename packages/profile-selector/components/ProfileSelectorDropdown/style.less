@@ -59,7 +59,7 @@
   box-sizing: border-box;
 
   margin: 0;
-  padding: @base;
+  padding: (@base / 2) @base;
 
   font-family: @baseFontFamily;
   color: darken(@bodyColor, 15%);
@@ -101,7 +101,6 @@
   }
 
   box-sizing: content-box;
-  height: 12px;
 }
 
 .dropdownContainer {
@@ -114,21 +113,60 @@
 
 .dropdownContent {
   background: white;
-  // border: solid 1px @borderColor;
+  border: solid 1px @borderColor;
   box-shadow: @box-shadow-level-1;
   border-radius: 3px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top: 0px;
   display: none;
+  box-sizing:border-box;
   position: absolute;
-  top: 110%;
+  top: 90%;
+  min-width: 100%;
 }
 
 .dropdownContentActive {
   display: block;
 }
 
+.dropdownContentInputHolder{
+  &::before {
+    content: '';
+    display: block;
+    border-top: 1px dotted @borderColor;
+    margin-bottom: 10px;
+  }
+
+  input {
+    font-size: 0.8rem !important;
+  }
+}
+
+.dropdownTriggerActive {
+  box-shadow: @box-shadow-level-1;
+  border-bottom-radius: 0px;
+  border-bottom: 0px;
+  
+  &:hover {
+    border: 1px solid @borderColor;
+  }
+}
+
+
 .dropdownList {
   margin: 0;
   padding: 0;
+}
+
+.dropdownListScrollable {
+  max-height: 240px;
+  width: 280px;
+  overflow-y: scroll;
+
+  .dropdownListItem > button > span {
+    max-width: 260px;
+  }
 }
 
 .dropdownListItem {
@@ -136,8 +174,8 @@
   align-items: center;
   margin: 0;
   list-style-type: none;
-  line-height: 1em;
-  font-size: 12px;
+  line-height: 1rem;
+  font-size: 0.8rem;
 
   &:hover {
     background-color: @aqua-haze;
