@@ -3,10 +3,20 @@ import { actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-
 export const actionTypes = {};
 
 const initialState = {
+  followersCount: 0,
 };
 
 export default (state = initialState, action) => {
-  return state;
+  switch (action.type) {
+    case `profile_header_${asyncDataFetchActionTypes.FETCH_START}`:
+      return initialState;
+    case `profile_header_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
+      return {
+        followersCount: action.result,
+      };
+    default:
+      return state;
+  }
 };
 
 export const actions = {};
