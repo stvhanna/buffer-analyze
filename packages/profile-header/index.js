@@ -4,7 +4,7 @@ import ProfileHeader from './components/ProfileHeader';
 // default export = container
 export default connect(
   state => ({
-    // add state here
+    followersCount: state.followersCount,
   }),
 )(ProfileHeader);
 

@@ -8,9 +8,9 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case `profile_header_${asyncDataFetchActionTypes.FETCH_START}`:
+    case `followers_${asyncDataFetchActionTypes.FETCH_START}`:
       return initialState;
-    case `profile_header_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
+    case `followers_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
       return {
         followersCount: action.result,
       };
