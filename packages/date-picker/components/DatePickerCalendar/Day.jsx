@@ -1,94 +1,91 @@
-import React, {
-  Component,
-  PropTypes
-} from 'react';
-
-import moment     from 'moment';
+import React from 'react';
+import PropTypes from 'prop-types';
+import moment from 'moment';
 import classNames from 'classnames';
+
+import { Button } from '@bufferapp/components';
+
 import styles from './date-picker-calendar.less';
 
-class DatePickerCalendarDay extends Component {
-  static propTypes = {
-    day: PropTypes.number.isRequired,
-    today: PropTypes.bool.isRequired,
-    inMonth: PropTypes.bool.isRequired,
-    selectedBetween: PropTypes.bool,
-    selectedEnd: PropTypes.bool,
-    selectedStart: PropTypes.bool,
-    isDisabled: PropTypes.bool,
-    disabledText: PropTypes.string,
+const Day = (props) => {
+  const {
+    timestamp,
+    day,
+    inMonth,
+    today,
+    selectedBetween,
+    selectedStart,
+    selectedEnd,
+    isDisabled,
+    startDate,
+    endDate,
+    disabledText,
+    handleClick,
+  } = props;
 
-    handleClick: PropTypes.func,
-  }
+  const m = moment.unix(timestamp);
+  const isEndOfWeek = m.day() === 0;
+  const isStartOfWeek = m.day() === 1;
 
-  handleClick (day) {
-    if (!this.props.isDisabled) {
-      this.props.handleClick(this.props);
-    }
-  }
+  const isSelected = selectedStart || selectedEnd || selectedBetween;
 
-  render () {
-    const {
-      timestamp,
-      day,
-      inMonth,
-      today,
-      selectedBetween,
-      selectedStart,
-      selectedEnd,
-      isDisabled,
-      startDate,
-      endDate,
-      disabledText
-    } = this.props;
+  const showStartConnector = (selectedStart || selectedBetween) &&
+                            (endDate !== -1 && startDate !== -1) &&
+                            (startDate !== endDate);
 
-    const m = moment.unix(timestamp);
-    const isEndOfWeek = m.day() === 0;
-    const isStartOfWeek = m.day() === 1;
+  const showEndConnector = (selectedEnd || selectedBetween) &&
+                            (startDate !== -1) &&
+                            (endDate !== startDate);
 
-    const isSelected = selectedStart || selectedEnd || selectedBetween;
+  const showRoundEndConnector = isEndOfWeek && selectedBetween;
+  const showRoundStartConnector = isStartOfWeek && selectedBetween;
 
-    const showStartConnector = (selectedStart || selectedBetween) &&
-                             (endDate !== -1 && startDate !== -1) &&
-                             (startDate !== endDate);
+  const dayClass = classNames(styles.day, {
+    [styles.inactiveDay]: !inMonth || isDisabled,
+  });
 
-    const showEndConnector = (selectedEnd || selectedBetween) &&
-                             (startDate !== -1) &&
-                             (endDate !== startDate);
+  const markerClass = classNames(styles.marker, {
+    [styles.hoverMarker]: !isDisabled,
+    [styles.todayMarker]: today,
+    [styles.selectedMarker]: isSelected,
+    [styles.startMarker]: showStartConnector,
+    [styles.endMarker]: showEndConnector,
+  });
 
-    const showRoundEndConnector = isEndOfWeek && selectedBetween;
-    const showRoundStartConnector = isStartOfWeek && selectedBetween;
+  const startMarkerConnectorClass = classNames(styles.markerConnector, {
+    [styles.markerConectorActive]: showEndConnector || showRoundStartConnector,
+    [styles.roundStartMarker]: showRoundStartConnector,
+  });
 
-    const dayClass = classNames(styles.day, {
-      [styles.inactiveDay]: !inMonth || isDisabled,
-    });
+  const endMarkerConnectorClass = classNames(styles.markerConnector, {
+    [styles.markerConectorActive]: showStartConnector || showRoundEndConnector,
+    [styles.roundEndMarker]: showRoundEndConnector,
+  });
 
-    const markerClass = classNames(styles.marker, {
-      [styles.hoverMarker]: !isDisabled,
-      [styles.todayMarker]: today,
-      [styles.selectedMarker]: isSelected,
-      [styles.startMarker]: showStartConnector,
-      [styles.endMarker]: showEndConnector,
-    });
-
-    const startMarkerConnectorClass = classNames(styles.markerConnector, {
-      [styles.markerConectorActive]: showEndConnector || showRoundStartConnector,
-      [styles.roundStartMarker]: showRoundStartConnector,
-    });
-
-    const endMarkerConnectorClass = classNames(styles.markerConnector, {
-      [styles.markerConectorActive]: showStartConnector || showRoundEndConnector,
-      [styles.roundEndMarker]: showRoundEndConnector,
-    });
-
-    return (
-      <div className={dayClass} onClick={this.handleClick.bind(this)} data-tip={disabledText}>
-        <span className={startMarkerConnectorClass}></span>
+  return (
+    <div className={dayClass} data-tip={disabledText}>
+      <span className={startMarkerConnectorClass} />
+      <Button noStyle onClick={() => handleClick(props)}>
         <span className={markerClass}>{day}</span>
-        <span className={endMarkerConnectorClass}></span>
-      </div>
-    );
-  }
-}
+      </Button>
+      <span className={endMarkerConnectorClass} />
+    </div>
+  );
+};
 
-export default DatePickerCalendarDay;
+Day.propTypes = {
+  day: PropTypes.number.isRequired,
+  today: PropTypes.bool.isRequired,
+  inMonth: PropTypes.bool.isRequired,
+  selectedBetween: PropTypes.bool.isRequired,
+  selectedEnd: PropTypes.bool.isRequired,
+  selectedStart: PropTypes.bool.isRequired,
+  isDisabled: PropTypes.bool.isRequired,
+  disabledText: PropTypes.string.isRequired,
+  handleClick: PropTypes.func.isRequired,
+  startDate: PropTypes.number.isRequired,
+  endDate: PropTypes.number.isRequired,
+  timestamp: PropTypes.number.isRequired,
+};
+
+export default Day;
