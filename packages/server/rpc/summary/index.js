@@ -53,9 +53,9 @@ const summarize = (metric, currentPeriod, pastPeriod) => {
 module.exports = method(
   'summary',
   'fetch analytics summary for profiles and pages',
-  ({ profileId }, { session }) => {
-    const end = moment().subtract(1, 'days').format('MM/DD/YYYY');
-    const start = moment().subtract(7, 'days').format('MM/DD/YYYY');
+  ({ profileId, startDate, endDate }, { session }) => {
+    const end = moment.unix(endDate).format('MM/DD/YYYY');
+    const start = moment.unix(startDate).format('MM/DD/YYYY');
     const dateRange = new DateRange(start, end);
     const previousDateRange = dateRange.getPreviousDateRange();
 

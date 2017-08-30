@@ -8,8 +8,8 @@
     "test": "if [ -n \"$CI\" ]; then yarn run init; fi && yarn run lint && lerna run test",
     "test-update": "lerna run test-update",
     "init": "yarn install && lerna bootstrap --loglevel verbose --hoist",
-    "lint-branch": "git diff --name-only master... |  grep .jsx*$ | xargs --no-run-if-empty eslint -c .eslintrc.json --stdin --quiet -f table",
-    "lint-head": "git diff --name-only |  grep .jsx*$ | xargs --no-run-if-empty eslint -c .eslintrc.json --stdin --quiet -f table",
+    "lint-branch": "git diff --name-only master... |  grep .jsx*$ | xargs eslint -c .eslintrc.json --stdin --quiet -f table",
+    "lint-head": "git diff --name-only |  grep .jsx*$ | xargs eslint -c .eslintrc.json --stdin --quiet -f table",
     "lint": "yarn run lint-branch && yarn run lint-head",
     "start": "cd ./packages/server/ && yarn start",
     "publish": "echo \"will eventually run: lerna publish\"",
@@ -38,10 +38,10 @@
     "css-loader": "0.27.3",
     "deep-freeze": "0.0.1",
     "enzyme": "2.8.2",
-    "eslint": "^4.4.1",
+    "eslint": "^4.5.0",
     "eslint-config-airbnb": "14.1.0",
     "eslint-plugin-import": "2.2.0",
-    "eslint-plugin-jsx-a11y": "4.0.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "6.10.3",
     "identity-obj-proxy": "3.0.0",
     "js-cookie": "2.1.4",
@@ -70,5 +70,8 @@
     "webpack": "2.6.1",
     "webpack-dev-middleware": "1.10.2",
     "webpack-hot-middleware": "2.18.0"
+  },
+  "dependencies": {
+    "global": "^4.3.2"
   }
 }

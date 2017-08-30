@@ -22,14 +22,18 @@ describe('rpc/summary', () => {
   });
 
   it('should request for the past week', () => {
-    summary.fn({ profileId }, {
+    const end = moment().subtract(1, 'days').unix();
+    const start = moment().subtract(7, 'days').unix();
+
+    summary.fn({
+      startDate: start,
+      endDate: end,
+      profileId,
+    }, {
       session: {
         accessToken: token,
       },
     });
-
-    const end = moment().subtract(1, 'days').format('MM/DD/YYYY');
-    const start = moment().subtract(7, 'days').format('MM/DD/YYYY');
 
     expect(rp.mock.calls[0])
       .toEqual([{
@@ -38,15 +42,22 @@ describe('rpc/summary', () => {
         strictSSL: false,
         qs: {
           access_token: token,
-          start_date: start,
-          end_date: end,
+          start_date: moment.unix(start).format('MM/DD/YYYY'),
+          end_date: moment.unix(end).format('MM/DD/YYYY'),
         },
         json: true,
       }]);
   });
 
   it('should request for the week before that', () => {
-    summary.fn({ profileId }, {
+    const endDate = moment().subtract(1, 'days').unix();
+    const startDate = moment().subtract(7, 'days').unix();
+
+    summary.fn({
+      startDate,
+      endDate,
+      profileId,
+    }, {
       session: {
         accessToken: token,
       },
