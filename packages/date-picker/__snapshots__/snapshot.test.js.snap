@@ -69,21 +69,21 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               90 Days
             </li>
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               30 Days
             </li>
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               28 Days
             </li>
@@ -94,21 +94,21 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               7 Days
             </li>
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               Yesterday
             </li>
             <li
               className="headerListItem headerListItemActive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               Custom
             </li>
@@ -860,7 +860,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
         className="bi-calendar"
       />
       <span>
-        From: 08/23/17 - To: 08/29/17
+        Past 7 Days
       </span>
       <span
         className="rightSide"
@@ -868,7 +868,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
         <span
           className="dateRange"
         >
-          
+          08/23/17 to 08/29/17
         </span>
         <span
           style={
@@ -917,21 +917,21 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               90 Days
             </li>
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               30 Days
             </li>
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               28 Days
             </li>
@@ -942,21 +942,21 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
             <li
               className="headerListItem headerListItemActive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               7 Days
             </li>
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               Yesterday
             </li>
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               Custom
             </li>
@@ -1765,21 +1765,21 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               90 Days
             </li>
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               30 Days
             </li>
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               28 Days
             </li>
@@ -1790,21 +1790,21 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               7 Days
             </li>
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               Yesterday
             </li>
             <li
               className="headerListItem headerListItemActive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               Custom
             </li>
@@ -2613,21 +2613,21 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               90 Days
             </li>
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               30 Days
             </li>
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               28 Days
             </li>
@@ -2638,21 +2638,21 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               7 Days
             </li>
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               Yesterday
             </li>
             <li
               className="headerListItem headerListItemActive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               Custom
             </li>
@@ -3404,7 +3404,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
         className="bi-calendar"
       />
       <span>
-        From: 08/23/17 - To: 08/29/17
+        Past 7 Days
       </span>
       <span
         className="rightSide"
@@ -3412,7 +3412,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
         <span
           className="dateRange"
         >
-          
+          08/23/17 to 08/29/17
         </span>
         <span
           style={
@@ -3475,7 +3475,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               28 Days
             </li>
@@ -3486,21 +3486,21 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
             <li
               className="headerListItem headerListItemActive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               7 Days
             </li>
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               Yesterday
             </li>
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               Custom
             </li>
@@ -4252,7 +4252,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
         className="bi-calendar"
       />
       <span>
-        From: 08/23/17 - To: 08/29/17
+        Past 7 Days
       </span>
       <span
         className="rightSide"
@@ -4260,7 +4260,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
         <span
           className="dateRange"
         >
-          
+          08/23/17 to 08/29/17
         </span>
         <span
           style={
@@ -4309,21 +4309,21 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               90 Days
             </li>
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               30 Days
             </li>
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               28 Days
             </li>
@@ -4334,21 +4334,21 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
             <li
               className="headerListItem headerListItemActive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               7 Days
             </li>
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               Yesterday
             </li>
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               Custom
             </li>
@@ -5157,21 +5157,21 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               90 Days
             </li>
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               30 Days
             </li>
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               28 Days
             </li>
@@ -5182,21 +5182,21 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               7 Days
             </li>
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               Yesterday
             </li>
             <li
               className="headerListItem headerListItemActive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               Custom
             </li>
@@ -6005,21 +6005,21 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               90 Days
             </li>
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               30 Days
             </li>
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               28 Days
             </li>
@@ -6030,21 +6030,21 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               7 Days
             </li>
             <li
               className="headerListItem headerListItemActive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               Yesterday
             </li>
             <li
               className="headerListItem headerListItemInactive"
               data-tip={null}
-              onClick={null}
+              onClick={[Function]}
             >
               Custom
             </li>

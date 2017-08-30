@@ -1,6 +1,6 @@
 import moment from 'moment';
 import { actionTypes as asyncDataFetchActions } from '@bufferapp/async-data-fetch';
-import reducer, { actions, actionTypes } from './reducer';
+import reducer, { actions, actionTypes } from './reducer';
 
 describe('reducer', () => {
   describe('initial state', () => {
@@ -49,19 +49,19 @@ describe('reducer', () => {
   });
 
   describe('set start date', () => {
-    it(`stops loading state when receiving analytics_date_range_${asyncDataFetchActions.FETCH_SUCCESS}`, () => {
+    it(`stops loading state when receiving analytics_start_date_${asyncDataFetchActions.FETCH_SUCCESS}`, () => {
       const state = reducer(undefined, {
-        type: `analytics_date_range_${asyncDataFetchActions.FETCH_SUCCESS}`,
+        type: `analytics_start_date_${asyncDataFetchActions.FETCH_SUCCESS}`,
       });
       expect(state.loading).toBe(false);
     });
 
-    it(`starts loading state when receiving analytics_date_range_${asyncDataFetchActions.FETCH_START}`, () => {
+    it(`starts loading state when receiving analytics_start_date_${asyncDataFetchActions.FETCH_START}`, () => {
       const state = reducer(undefined, {
-        type: `analytics_date_range_${asyncDataFetchActions.FETCH_SUCCESS}`,
+        type: `analytics_start_date_${asyncDataFetchActions.FETCH_SUCCESS}`,
       });
       const newState = reducer(state, {
-        type: `analytics_date_range_${asyncDataFetchActions.FETCH_START}`,
+        type: `analytics_start_date_${asyncDataFetchActions.FETCH_START}`,
       });
       expect(newState.loading).toBe(true);
     });
@@ -69,8 +69,8 @@ describe('reducer', () => {
     it('sets the minimum date available', () => {
       const date = moment().subtract(34, 'days').unix();
       const state = reducer(undefined, {
-        type: `analytics_date_range_${asyncDataFetchActions.FETCH_SUCCESS}`,
-        date,
+        type: `analytics_start_date_${asyncDataFetchActions.FETCH_SUCCESS}`,
+        result: date,
       });
       expect(state.minDate).toBe(date);
     });

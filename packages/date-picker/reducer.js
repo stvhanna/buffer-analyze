@@ -24,16 +24,16 @@ export default (state = initialState, action) => {
         startDate: action.startDate,
         endDate: action.endDate,
       };
-    case `analytics_date_range_${asyncDataFetchActionTypes.FETCH_START}`:
+    case `analytics_start_date_${asyncDataFetchActionTypes.FETCH_START}`:
       return {
         ...state,
         loading: true,
       };
-    case `analytics_date_range_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
+    case `analytics_start_date_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
       return {
         ...state,
         loading: false,
-        minDate: action.date,
+        minDate: action.result,
       };
     case actionTypes.OPEN_DATE_PICKER:
       return {

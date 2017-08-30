@@ -133,7 +133,7 @@ class DatePickerForm extends Component {
 
     return (
       <div>
-        <Presets minStartDate={minStartDate} startDate={startDate} endDate={endDate} />
+        <Presets selectPreset={selectPreset} minStartDate={minStartDate} startDate={startDate} endDate={endDate} />
         <div className={customDateRangeContainerClass}>
           <h4 className={styles.title}>Select a custom date range</h4>
 

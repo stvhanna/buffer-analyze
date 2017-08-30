@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import NavSidebar from '@bufferapp/nav-sidebar';
 import SummaryTable from '@bufferapp/summary-table';
 import ProfileSelector from '@bufferapp/analyze-profile-selector';
+import DatePicker from '@bufferapp/analyze-date-picker';
 
 const pageStyle = {
   display: 'flex',
@@ -20,6 +21,7 @@ const InsightsPage = ({ match, location }) => (
     <NavSidebar route={location.pathname} />
     <div style={pageContentStyle}>
       <ProfileSelector profileService={match.params.service} selectedProfileId={match.params.id} />
+      <DatePicker/>
       <SummaryTable profileService={match.params.service} />
     </div>
   </div>

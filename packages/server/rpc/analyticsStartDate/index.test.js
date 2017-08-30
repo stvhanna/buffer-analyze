@@ -17,8 +17,11 @@ describe('rpc/analytics_start_date', () => {
       .toBe('fetch analytics start date for profiles and pages');
   });
 
-  it('should request the analytics start date for the profile', () => {
-    analyticsStartDate.fn({ profileId }, {
+  it('should request the analytics start date for the profile', async () => {
+    rp.mockReturnValueOnce(Promise.resolve({
+      response: ['start_date_for_this_profile'],
+    }));
+    const startDate = await analyticsStartDate.fn({ profileId }, {
       session: { accessToken },
     });
 
@@ -32,6 +35,8 @@ describe('rpc/analytics_start_date', () => {
         },
         json: true,
       }]);
+
+    expect(startDate).toBe('start_date_for_this_profile');
   });
 });
 

@@ -43,7 +43,7 @@ const isRangeSelected = (range, start, end) => {
   return (rangesMatch || range === Infinity);
 };
 
-const DatePickerPresets = ({ minStartDate, startDate, endDate }) => {
+const DatePickerPresets = ({ selectPreset, minStartDate, startDate, endDate }) => {
   const presets = PRESETS.map((preset) => {
     const disabled = minStartDate > moment().subtract(preset.range, 'days');
     const selectedRange = PRESETS.find(({ range }) => isRangeSelected(range, startDate, endDate));
@@ -56,8 +56,7 @@ const DatePickerPresets = ({ minStartDate, startDate, endDate }) => {
     });
 
     const dataTip = disabled ? 'We don\'t have complete data for this range.' : null;
-    const handleClick = null;
-    // const handleClick = disabled ? null : this.handleHeaderItemClick.bind(this, i, option, selectPreset);
+    const handleClick = disabled ? null : (() => selectPreset(preset.range));
     return (
       <li
         key={preset.name.toLowerCase().replace(' ', '-')}
