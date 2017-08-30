@@ -37,7 +37,7 @@ const isInRange = (start, end, timestamp) => {
 
   if (startDate.isSame(date, 'day')) {
     return -1;
-  } else if (date.isBetween(startDate, endDate) && startDate !== null && endDate !== null) {
+  } else if (date.isBetween(startDate, endDate) && start !== null && end !== null) {
     return 0;
   } else if (endDate.isSame(date, 'day')) {
     return 1;

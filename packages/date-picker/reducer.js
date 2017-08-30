@@ -8,7 +8,9 @@ export const actionTypes = {
   SET_MONTH: 'SET_MONTH',
   SET_DATE_RANGE: 'SET_DATE_RANGE',
   SET_START_DATE: 'SET_START_DATE',
+  CLEAR_START_DATE: 'CLEAR_START_DATE',
   SET_END_DATE: 'SET_END_DATE',
+  CLEAR_END_DATE: 'CLEAR_END_DATE',
   OPEN_CALENDAR: 'OPEN_CALENDAR',
   CLOSE_CALENDAR: 'CLOSE_CALENDAR',
 };
@@ -31,10 +33,20 @@ export default (state = initialState, action) => {
         ...state,
         month: action.date,
       };
+    case actionTypes.CLEAR_START_DATE:
+      return {
+        ...state,
+        startDate: null,
+      };
     case actionTypes.SET_START_DATE:
       return {
         ...state,
         startDate: action.date,
+      };
+    case actionTypes.CLEAR_END_DATE:
+      return {
+        ...state,
+        endDate: null,
       };
     case actionTypes.SET_END_DATE:
       return {
@@ -101,9 +113,15 @@ export const actions = {
     type: actionTypes.SET_START_DATE,
     date,
   }),
+  clearStartDate: () => ({
+    type: actionTypes.CLEAR_START_DATE,
+  }),
   setEndDate: date => ({
     type: actionTypes.SET_END_DATE,
     date,
+  }),
+  clearEndDate: () => ({
+    type: actionTypes.CLEAR_END_DATE,
   }),
   setDateRange: (startDate, endDate) => ({
     type: actionTypes.SET_DATE_RANGE,

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import styles from './date-picker-dropdown.less';
 
-const Dropdown = (isOpen, children) => {
+const Dropdown = ({ isOpen, children }) => {
   const dropDownClass = classNames(styles.dropDown, {
     [styles.open]: isOpen,
   });

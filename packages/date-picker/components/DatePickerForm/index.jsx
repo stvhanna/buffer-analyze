@@ -1,41 +1,20 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import moment from 'moment';
+import { Button } from '@bufferapp/components';
 
 import styles from './date-picker-form.less';
 
 import DatePickerCalendar from '../DatePickerCalendar/';
 import Presets from '../Presets/';
 
-
-class DatePickerForm extends Component {
-
-  static propTypes = {
-    profileId: PropTypes.string.isRequired,
-    presetOptions: PropTypes.array.isRequired,
-    selectPreset: PropTypes.number.isRequired,
-    startDateFocus: PropTypes.bool.isRequired,
-    endDateFocus: PropTypes.bool.isRequired,
-    customStartDate: PropTypes.number.isRequired,
-    customEndDate: PropTypes.number.isRequired,
-    startDate: PropTypes.number.isRequired,
-    endDate: PropTypes.number.isRequired,
-    customMonth: PropTypes.number.isRequired,
-    customFormOpen: PropTypes.bool.isRequired,
-    minDate: PropTypes.number.isRequired,
-    maxDate: PropTypes.number.isRequired,
-
-    // Actions
-    selectPreset: PropTypes.func.isRequired,
-    focusEndDate: PropTypes.func.isRequired,
-    focusStartDate: PropTypes.func.isRequired,
-    selectCustomStartDate: PropTypes.func.isRequired,
-    selectCustomEndDate: PropTypes.func.isRequired,
-    setAnalyticsDateRange: PropTypes.func.isRequired,
-    setDatePickerDateRange: PropTypes.func.isRequired,
-    closeDatePicker: PropTypes.func.isRequired,
-    setCustomMonth: PropTypes.func.isRequired
-  };
+class Form extends Component {
+  componentWillUpdate (nextProps) {
+    if (nextProps.startDateFocus) {
+      this._startDate.focus();
+    }
+  }
 
   updateSelectedDateRange() {
     const {
@@ -47,13 +26,12 @@ class DatePickerForm extends Component {
     } = this.props;
 
     if (startDate !== null && endDate !== null) {
-      // set the analytics start and end date to the date pickers start and end date
       setDateRange(startDate, endDate);
       close();
     }
   }
 
-  handleApplyCustomDateRangeButtonClick (event) {
+  applyCustomDateRange() {
     const {
       startDate,
       endDate,
@@ -63,19 +41,8 @@ class DatePickerForm extends Component {
     } = this.props;
 
     if (startDate !== null && endDate !== null) {
-      // set the analytics start and end date to the date pickers start and end date
       setDateRange(startDate, endDate);
       close();
-    }
-  }
-
-  handleHeaderItemClick(index, option, selectPreset) {
-    selectPreset(index, option.range);
-  }
-
-  componentWillUpdate (nextProps) {
-    if (nextProps.startDateFocus) {
-      this._startDate.focus();
     }
   }
 
@@ -86,7 +53,6 @@ class DatePickerForm extends Component {
       startDate,
       endDate,
       month,
-      minStartDate,
     } = this.props;
 
     // Actions
@@ -97,8 +63,8 @@ class DatePickerForm extends Component {
       setEndDate,
       selectPreset,
       setMonth,
-      clearCustomStartDate,
-      clearCustomEndDate,
+      clearStartDate,
+      clearEndDate,
       maxDate,
       minDate,
     } = this.props;
@@ -120,8 +86,8 @@ class DatePickerForm extends Component {
     });
 
     const buttonClass = classNames({
-      [styles.submitButton]: (startDate !== -1) && (endDate !== -1),
-      [styles.submitButtonDisabled]: (startDate === -1) || (endDate === -1),
+      [styles.submitButton]: (startDate !== null) && (endDate !== null),
+      [styles.submitButtonDisabled]: (startDate === null) || (endDate === null),
     });
 
     const customDateRangeContainerClass = classNames(styles.customDateRangeContainer, {
@@ -132,7 +98,7 @@ class DatePickerForm extends Component {
       <div>
         <Presets
           selectPreset={selectPreset}
-          minStartDate={minStartDate}
+          minStartDate={minDate}
           startDate={startDate}
           endDate={endDate}
         />
@@ -149,7 +115,15 @@ class DatePickerForm extends Component {
               onFocus={focusStartDate}
               className={startDateInputClass}
             />
-            <span role="button" className={styles.inputClear} onClick={clearCustomStartDate}>x</span>
+            <Button
+              noStyle
+              onClick={(e) => {
+                e.preventDefault();
+                clearStartDate();
+              }}
+            >
+              <span className={styles.inputClear}>x</span>
+            </Button>
             <input
               type="text"
               name="end"
@@ -158,7 +132,15 @@ class DatePickerForm extends Component {
               onFocus={focusEndDate}
               className={endDateInputClass}
             />
-            <span role="button" className={styles.inputClear} onClick={clearCustomEndDate}>x</span>
+            <Button
+              noStyle
+              onClick={(e) => {
+                e.preventDefault();
+                clearEndDate();
+              }}
+            >
+              <span className={styles.inputClear}>x</span>
+            </Button>
           </form>
           <DatePickerCalendar
             isOpen
@@ -176,7 +158,7 @@ class DatePickerForm extends Component {
           />
           <button
             className={buttonClass}
-            onClick={this.handleApplyCustomDateRangeButtonClick.bind(this)}
+            onClick={() => this.applyCustomDateRange()}
           >
             Apply This Date Range
           </button>
@@ -186,4 +168,25 @@ class DatePickerForm extends Component {
   }
 }
 
-export default DatePickerForm;
+Form.propTypes = {
+  startDate: PropTypes.number.isRequired,
+  endDate: PropTypes.number.isRequired,
+  month: PropTypes.number.isRequired,
+  calendarOpen: PropTypes.bool.isRequired,
+  minDate: PropTypes.number.isRequired,
+  maxDate: PropTypes.number.isRequired,
+
+  // Actions
+  selectPreset: PropTypes.func.isRequired,
+  focusEndDate: PropTypes.func.isRequired,
+  focusStartDate: PropTypes.func.isRequired,
+  setStartDate: PropTypes.func.isRequired,
+  clearStartDate: PropTypes.func.isRequired,
+  setEndDate: PropTypes.func.isRequired,
+  clearEndDate: PropTypes.func.isRequired,
+  setDateRange: PropTypes.func.isRequired,
+  close: PropTypes.func.isRequired,
+  setMonth: PropTypes.func.isRequired,
+};
+
+export default Form;

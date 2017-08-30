@@ -21,6 +21,8 @@ export default connect(
     close: () => dispatch(actions.close()),
     setMonth: timestamp => dispatch(actions.setMonth(timestamp)),
     setStartDate: date => dispatch(actions.setStartDate(date)),
+    clearStartDate: () => dispatch(actions.clearStartDate()),
+    clearEndDate: () => dispatch(actions.clearEndDate()),
     setEndDate: date => dispatch(actions.setEndDate(date)),
     setDateRange: (start, end) => dispatch(actions.setDateRange(start, end)),
     selectPreset: (range) => {
