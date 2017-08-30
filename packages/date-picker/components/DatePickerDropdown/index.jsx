@@ -1,32 +1,24 @@
-import React, {
-  Component,
-  PropTypes
-} from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 import classNames from 'classnames';
-import styles     from './date-picker-dropdown.less';
+import styles from './date-picker-dropdown.less';
 
-class DatePickerDropdown extends Component {
-  static propTypes = {
-    isOpen: PropTypes.bool.isRequired,
-    children: PropTypes.any
-  }
+const Dropdown = (isOpen, children) => {
+  const dropDownClass = classNames(styles.dropDown, {
+    [styles.open]: isOpen,
+  });
 
-  render () {
-    const {
-      isOpen
-    } = this.props;
+  return (
+    <div className={dropDownClass}>
+      {children}
+    </div>
+  );
+};
 
-    var dropDownClass = classNames(styles.dropDown, {
-      [styles.open]: isOpen
-    });
+Dropdown.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  children: PropTypes.node.isRequired,
+};
 
-    return (
-      <div className={dropDownClass}>
-        {this.props.children}
-      </div>
-    );
-  }
-}
-
-export default DatePickerDropdown;
+export default Dropdown;
