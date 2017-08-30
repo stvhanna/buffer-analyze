@@ -1,0 +1,83 @@
+@base: 10px;
+
+.sectionProfileAvatar {
+  margin: 2*@base 0;
+  margin-left: 3*@base;
+}
+
+.sectionProfileAvatarDetails {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: @base;
+}
+
+.profileAvatarWrapper {
+  display: inline-flex;
+  align-items: center;
+}
+
+.profileAvatar {
+  @avatarWidth: 32px;
+
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  height: @avatarWidth;
+  width: @avatarWidth;
+  margin: 0;
+
+  background: #eee;
+  background-size: 100%;
+  background-position: center;
+  border-radius: 50%;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+
+  opacity: 1.0;
+  transition: opacity .15s;
+}
+
+.profileAvatarIcon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  font-size: 16px;
+
+  &::before {
+    background-color: #fff;
+    border-radius: 50%;
+  }
+}
+
+.profileAvatarDetailHeader {
+  display: block;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #323b43;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.profileAvatarDetailHeader a {
+  color: #323b43;
+  text-decoration: none;
+}
+
+.profileAvatarDetailSubHeader {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 600;
+  color: #323b43;
+}
+
+.profileAvatarDetailNote {
+  float:right;
+  color: #666C72;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
