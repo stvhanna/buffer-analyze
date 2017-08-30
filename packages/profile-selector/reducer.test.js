@@ -42,7 +42,13 @@ describe('reducer', () => {
       .toBe('foo');
   });
 
-  it('should clear profilesFilterString on SELECT_PROFILE');
+  it('should clear profilesFilterString on SELECT_PROFILE', () => {
+    const state = reducer(Object.assign({}, initialState, { profilesFilterString: 'foo' }), {
+      type: actionTypes.SELECT_PROFILE,
+    });
+    expect(state.profilesFilterString)
+      .toBe('');
+  });
 
   it('should open the dropdown', () => {
     expect(reducer({
