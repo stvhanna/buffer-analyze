@@ -2,10 +2,25 @@ import { actions } from '@bufferapp/async-data-fetch';
 import { actionTypes } from '@bufferapp/analyze-profile-selector';
 import middleware from './middleware';
 
+const profileId = '12359182129asd';
+
+const state = {
+  router: {
+    location: {
+      pathname: `/insights/twitter/${profileId}`,
+    },
+  },
+  date: {
+    startDate: '10/10/2016',
+    endDate: '30/10/2016',
+  },
+};
+
 describe('middleware', () => {
   const next = jest.fn();
   const store = {
     dispatch: jest.fn(),
+    getState: jest.fn(() => state),
   };
   it('should exist', () => {
     expect(middleware).toBeDefined();
@@ -28,6 +43,8 @@ describe('middleware', () => {
       name: 'summary',
       args: {
         profileId: '1235519asd',
+        startDate: state.date.startDate,
+        endDate: state.date.endDate,
       },
     }));
     expect(next).toHaveBeenCalledWith(action);
