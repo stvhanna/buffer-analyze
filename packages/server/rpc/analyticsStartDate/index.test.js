@@ -1,3 +1,4 @@
+/* eslint-disable import/first */
 jest.mock('micro-rpc-client');
 jest.mock('request-promise');
 import rp from 'request-promise';
