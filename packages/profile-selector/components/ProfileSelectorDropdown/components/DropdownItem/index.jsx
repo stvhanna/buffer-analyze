@@ -101,9 +101,10 @@ const DropdownItem = ({ profile, handleClick, selected }) => (
       <span
         style={{
           alignItems: 'center',
+          boxSizing: 'border-box',
           display: 'flex',
           position: 'relative',
-          width: '262px',
+          width: '280px',
           padding: '5px 10px',
         }}
       >

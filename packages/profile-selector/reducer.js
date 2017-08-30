@@ -46,7 +46,7 @@ export const actions = {
   filterProfilesByUsername({ target }) {
     return {
       type: actionTypes.FILTER_PROFILES,
-      filterString: target ? target.value : '',
+      filterString: target ? target.value.toLowerCase() : '',
     };
   },
 };

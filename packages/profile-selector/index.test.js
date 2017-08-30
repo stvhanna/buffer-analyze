@@ -58,20 +58,7 @@ describe('ProfileSelector', () => {
       });
   });
 
-  it('should update the profilesFilterString', () => {
-    expect(__filterProfilesByUsername(profiles, 'foo'))
-      .not.toContain({
-        id: 2,
-        service: 'twitter',
-        selected: false,
-        username: 'bar',
-      });
-  });
-
-  it('should use case insensitive match to filter by username');
-  it('should not filter out the selectedProfile');
-
-  it('expect mapStateToProps to filter by service and username', () => {
+  it('expect mapStateToProps to filter by service', () => {
     const state = {
       profiles: {
         profiles,
@@ -81,8 +68,6 @@ describe('ProfileSelector', () => {
     };
     const props = __mapStateToProps(state, { profileService: 'twitter' });
     expect(props.profiles)
-      .toHaveLength(1);
-    expect(props.profiles[0].username)
-      .toBe('fooBar');
+      .toHaveLength(2);
   });
 });

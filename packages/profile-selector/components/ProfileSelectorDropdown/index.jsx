@@ -12,7 +12,6 @@ import {
   Text,
 } from '@bufferapp/components';
 import {
-  white,
   curiousBlue,
 } from '@bufferapp/components/style/color';
 import {
@@ -29,6 +28,7 @@ import {
   dropdownContentActive,
   dropdownContentInputHolder,
   dropdownList,
+  dropdownListScrollable,
   dropdownTrigger,
   dropdownTriggerActive,
 } from './style.less';
@@ -49,12 +49,13 @@ function renderDropdownItem(profile, selectedProfileId, selectProfile) {
 }
 
 const ProfileSelectorDropdown = ({
-  profiles,
   isDropdownOpen,
-  selectProfile,
-  toggleDropdown,
-  selectedProfileId,
   onSearchChange,
+  profiles,
+  profilesFilterString,
+  selectProfile,
+  selectedProfileId,
+  toggleDropdown,
 }) => {
   const selectedProfile = profiles.find(p => p.id === selectedProfileId);
 
@@ -86,6 +87,15 @@ const ProfileSelectorDropdown = ({
   };
 
   if (profiles.length) {
+    const filteredProfiles = profiles.filter(
+      p => p.username.toLowerCase().match(profilesFilterString),
+    );
+
+    const dropdownListClasses = classNames(
+      dropdownList,
+      { [`${dropdownListScrollable}`]: filteredProfiles.length > 7 },
+    );
+
     return (
       <Dropdown
         className={dropdownContainer}
@@ -111,10 +121,17 @@ const ProfileSelectorDropdown = ({
               placeholder={'Search'}
               input={{ onChange: onSearchChange }}
             />
+            { filteredProfiles.length === 0 &&
+              <div style={{ marginTop: '10px' }}>
+                <Text weight="bold" size="small">No Results</Text>
+              </div>
+            }
           </div>
-          <ul className={dropdownList}>
-            {profiles.map(p => renderDropdownItem(p, selectedProfileId, selectProfile))}
-          </ul>
+          { filteredProfiles.length > 0 &&
+            <ul className={dropdownListClasses} >
+              { filteredProfiles.map(p => renderDropdownItem(p, selectedProfileId, selectProfile)) }
+            </ul>
+          }
           <div
             style={{
               marginTop: '10px',
@@ -138,14 +155,16 @@ ProfileSelectorDropdown.propTypes = {
     id: PropTypes.string.isRequired,
   })).isRequired,
   isDropdownOpen: PropTypes.bool,
-  selectedProfileId: PropTypes.string.isRequired,
-  selectProfile: PropTypes.func.isRequired,
   onSearchChange: PropTypes.func.isRequired,
+  profilesFilterString: PropTypes.string,
+  selectProfile: PropTypes.func.isRequired,
+  selectedProfileId: PropTypes.string.isRequired,
   toggleDropdown: PropTypes.func.isRequired,
 };
 
 ProfileSelectorDropdown.defaultProps = {
   isDropdownOpen: false,
+  profilesFilterString: '',
 };
 
 export default ProfileSelectorDropdown;

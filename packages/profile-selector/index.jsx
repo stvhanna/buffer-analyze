@@ -26,22 +26,15 @@ export const __filterProfilesByService = (profiles, service) => (
   profiles.filter(p => p.service === service)
 );
 
-export const __filterProfilesByUsername = (profiles, filterString) => (
-  profiles.filter(p => p.username.match(filterString))
-);
-
 export const __mapStateToProps = (state, ownProps) => {
-  let filteredProfiles = __filterProfilesByUsername(
+  const filteredProfiles = __filterProfilesByService(
     state.profiles.profiles,
-    state.profiles.profilesFilterString,
-  );
-  filteredProfiles = __filterProfilesByService(
-    filteredProfiles,
     ownProps.profileService,
   );
   return {
     isDropdownOpen: state.profiles.isDropdownOpen,
     profiles: filteredProfiles,
+    profilesFilterString: state.profiles.profilesFilterString,
   };
 };
 

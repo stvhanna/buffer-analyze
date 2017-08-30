@@ -42,6 +42,8 @@ describe('reducer', () => {
       .toBe('foo');
   });
 
+  it('should clear profilesFilterString on SELECT_PROFILE');
+
   it('should open the dropdown', () => {
     expect(reducer({
       isDropdownOpen: false,
@@ -78,10 +80,18 @@ describe('actions', () => {
   });
 
   it('should filter by profile username', () => {
-    expect(actions.filterProfilesByUsername({target: {value: 'buf'}}))
+    expect(actions.filterProfilesByUsername({ target: { value: 'buf' } }))
       .toEqual({
         type: actionTypes.FILTER_PROFILES,
-        filterString: 'buf'
+        filterString: 'buf',
+      });
+  });
+
+  it('profilesFilterString should always be lowercase', () => {
+    expect(actions.filterProfilesByUsername({ target: { value: 'Buf' } }))
+      .toEqual({
+        type: actionTypes.FILTER_PROFILES,
+        filterString: 'buf',
       });
   });
 });
