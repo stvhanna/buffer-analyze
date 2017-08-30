@@ -419,7 +419,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                 }
               >
                 <i
-                  className="bi-arrow-left arrowLeft"
+                  className="arrowLeft"
                 >
                   <svg
                     height="100%"
@@ -477,7 +477,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                 }
               >
                 <i
-                  className="bi-arrow-right arrowRight"
+                  className="arrowRight"
                 >
                   <svg
                     height="100%"
@@ -2580,7 +2580,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                 }
               >
                 <i
-                  className="bi-arrow-left arrowLeft"
+                  className="arrowLeft"
                 >
                   <svg
                     height="100%"
@@ -2638,7 +2638,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                 }
               >
                 <i
-                  className="bi-arrow-right arrowRight"
+                  className="arrowRight"
                 >
                   <svg
                     height="100%"
@@ -4741,7 +4741,7 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                 }
               >
                 <i
-                  className="bi-arrow-left arrowLeft"
+                  className="arrowLeft"
                 >
                   <svg
                     height="100%"
@@ -4799,7 +4799,7 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                 }
               >
                 <i
-                  className="bi-arrow-right arrowRight"
+                  className="arrowRight"
                 >
                   <svg
                     height="100%"
@@ -6902,7 +6902,7 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                 }
               >
                 <i
-                  className="bi-arrow-left arrowLeft"
+                  className="arrowLeft"
                 >
                   <svg
                     height="100%"
@@ -6960,7 +6960,7 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                 }
               >
                 <i
-                  className="bi-arrow-right arrowRight"
+                  className="arrowRight"
                 >
                   <svg
                     height="100%"
@@ -9063,7 +9063,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                 }
               >
                 <i
-                  className="bi-arrow-left arrowLeft"
+                  className="arrowLeft"
                 >
                   <svg
                     height="100%"
@@ -9121,7 +9121,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                 }
               >
                 <i
-                  className="bi-arrow-right arrowRight"
+                  className="arrowRight"
                 >
                   <svg
                     height="100%"
@@ -11224,7 +11224,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                 }
               >
                 <i
-                  className="bi-arrow-left arrowLeft"
+                  className="arrowLeft"
                 >
                   <svg
                     height="100%"
@@ -11282,7 +11282,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                 }
               >
                 <i
-                  className="bi-arrow-right arrowRight"
+                  className="arrowRight"
                 >
                   <svg
                     height="100%"
@@ -13457,7 +13457,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                 }
               >
                 <i
-                  className="bi-arrow-left arrowLeft"
+                  className="arrowLeft"
                 >
                   <svg
                     height="100%"
@@ -13515,7 +13515,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                 }
               >
                 <i
-                  className="bi-arrow-right arrowRight"
+                  className="arrowRight"
                 >
                   <svg
                     height="100%"
