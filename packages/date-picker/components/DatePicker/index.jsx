@@ -26,7 +26,7 @@ const DatePicker = (props) => {
   });
 
   return (
-    <div>
+    <div style={{'position': 'relative'}}>
       <DatePickerButton
         isOpen={isOpen}
         loading={loading}
