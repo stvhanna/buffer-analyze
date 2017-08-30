@@ -302,8 +302,8 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
             <input
               className="startInput"
               name="start"
-              onFocus={undefined}
               placeholder="Date from:"
+              readOnly={true}
               type="text"
               value="Date from: 08/20/17"
             />
@@ -344,8 +344,8 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
             <input
               className="endInput"
               name="end"
-              onFocus={undefined}
               placeholder="Date to:"
+              readOnly={true}
               type="text"
               value="Date to: 08/29/17"
             />
@@ -2463,8 +2463,8 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
             <input
               className="startInput"
               name="start"
-              onFocus={undefined}
               placeholder="Date from:"
+              readOnly={true}
               type="text"
               value="Date from: 08/23/17"
             />
@@ -2505,8 +2505,8 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
             <input
               className="endInput"
               name="end"
-              onFocus={undefined}
               placeholder="Date to:"
+              readOnly={true}
               type="text"
               value="Date to: 08/29/17"
             />
@@ -4624,8 +4624,8 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
             <input
               className="startInput"
               name="start"
-              onFocus={undefined}
               placeholder="Date from:"
+              readOnly={true}
               type="text"
               value="Date from: 08/20/17"
             />
@@ -4666,8 +4666,8 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
             <input
               className="endInput"
               name="end"
-              onFocus={undefined}
               placeholder="Date to:"
+              readOnly={true}
               type="text"
               value="Date to: 08/29/17"
             />
@@ -6785,8 +6785,8 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
             <input
               className="startInput inputFocus"
               name="start"
-              onFocus={undefined}
               placeholder="Date from:"
+              readOnly={true}
               type="text"
               value=""
             />
@@ -6827,8 +6827,8 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
             <input
               className="endInput"
               name="end"
-              onFocus={undefined}
               placeholder="Date to:"
+              readOnly={true}
               type="text"
               value=""
             />
@@ -8946,8 +8946,8 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
             <input
               className="startInput"
               name="start"
-              onFocus={undefined}
               placeholder="Date from:"
+              readOnly={true}
               type="text"
               value="Date from: 08/23/17"
             />
@@ -8988,8 +8988,8 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
             <input
               className="endInput"
               name="end"
-              onFocus={undefined}
               placeholder="Date to:"
+              readOnly={true}
               type="text"
               value="Date to: 08/29/17"
             />
@@ -11107,8 +11107,8 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
             <input
               className="startInput"
               name="start"
-              onFocus={undefined}
               placeholder="Date from:"
+              readOnly={true}
               type="text"
               value="Date from: 08/23/17"
             />
@@ -11149,8 +11149,8 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
             <input
               className="endInput"
               name="end"
-              onFocus={undefined}
               placeholder="Date to:"
+              readOnly={true}
               type="text"
               value="Date to: 08/29/17"
             />
@@ -13340,8 +13340,8 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
             <input
               className="startInput"
               name="start"
-              onFocus={undefined}
               placeholder="Date from:"
+              readOnly={true}
               type="text"
               value="Date from: 08/29/17"
             />
@@ -13382,8 +13382,8 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
             <input
               className="endInput"
               name="end"
-              onFocus={undefined}
               placeholder="Date to:"
+              readOnly={true}
               type="text"
               value="Date to: 08/29/17"
             />
