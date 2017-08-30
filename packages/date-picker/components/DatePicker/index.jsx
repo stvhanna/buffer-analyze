@@ -26,7 +26,7 @@ const DatePicker = (props) => {
   });
 
   return (
-    <div style={{'position': 'relative'}}>
+    <div style={{ position: 'relative' }}>
       <DatePickerButton
         isOpen={isOpen}
         loading={loading}
@@ -34,10 +34,11 @@ const DatePicker = (props) => {
         endDate={endDate}
         handleClick={() => (isOpen ? close() : open())}
       />
-
-      <DatePickerDropdown isOpen={isOpen}>
-        <DatePickerForm {...props} />
-      </DatePickerDropdown>
+      { !loading &&
+        <DatePickerDropdown isOpen={isOpen}>
+          <DatePickerForm {...props} />
+        </DatePickerDropdown>
+      }
 
       <div tabIndex="0" role="button" onClick={close} className={clickCatcherClass} />
     </div>

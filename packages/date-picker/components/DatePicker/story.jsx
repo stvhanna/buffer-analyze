@@ -13,6 +13,10 @@ storiesOf('DatePicker')
       startDate={moment().subtract(1, 'days').unix()}
       endDate={moment().subtract(1, 'days').unix()}
       open={action('open')}
+      isOpen
+      month={moment().startOf('month').unix()}
+      minDate={moment().subtract(15, 'days').valueOf()}
+      maxDate={moment().valueOf()}
     />
   ))
   .add('should be able to open', () => (
@@ -20,6 +24,7 @@ storiesOf('DatePicker')
       startDate={moment().subtract(7, 'days').unix()}
       endDate={moment().subtract(1, 'day').unix()}
       close={action('close')}
+      month={moment().startOf('month').unix()}
       isOpen
       selectPreset={action('select preset')}
     />
@@ -30,6 +35,7 @@ storiesOf('DatePicker')
       startDate={moment().subtract(7, 'days').unix()}
       endDate={moment().subtract(1, 'day').unix()}
       close={action('close')}
+      month={moment().startOf('month').unix()}
       isOpen
       selectPreset={action('select preset')}
     />
@@ -40,6 +46,7 @@ storiesOf('DatePicker')
       maxDate={moment().unix()}
       startDate={moment().subtract(10, 'days').unix()}
       endDate={moment().subtract(1, 'day').unix()}
+      month={moment().startOf('month').unix()}
     />
   ))
   .add('should display a calendar without a selected date range', () => (
@@ -50,6 +57,7 @@ storiesOf('DatePicker')
       calendarOpen
       setStartDate={action('set start date')}
       setEndDate={action('set end date')}
+      month={moment().startOf('month').unix()}
     />
   ))
   .add('should display a calendar', () => (
@@ -60,12 +68,14 @@ storiesOf('DatePicker')
       endDate={moment().subtract(1, 'day').unix()}
       isOpen
       calendarOpen
+      month={moment().startOf('month').unix()}
     />
   ))
   .add('should have past 7 days selected', () => (
     <DatePicker
       startDate={moment().subtract(7, 'days').unix()}
       endDate={moment().subtract(1, 'day').unix()}
+      month={moment().startOf('month').unix()}
     />
   ))
   .add('should render a loading datepicker', () => (

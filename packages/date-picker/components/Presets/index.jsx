@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import moment from 'moment';
-import { Button } from '@bufferapp/components';
+import Button from '@bufferapp/components/Button';
 
 import styles from '../DatePickerForm/date-picker-form.less';
 

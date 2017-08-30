@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import moment from 'moment';
 import classNames from 'classnames';
 
-import { Button } from '@bufferapp/components';
+import Button from '@bufferapp/components/Button';
 
 import styles from './date-picker-calendar.less';
 

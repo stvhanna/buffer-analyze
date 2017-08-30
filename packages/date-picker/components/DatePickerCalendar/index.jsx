@@ -4,7 +4,7 @@ import React, {
 
 import PropTypes from 'prop-types';
 
-import { Button } from '@bufferapp/components';
+import Button from '@bufferapp/components/Button';
 
 import moment from 'moment';
 import classNames from 'classnames';

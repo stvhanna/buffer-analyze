@@ -19,7 +19,9 @@ const storeFake = state => ({
 describe('DatePicker', () => {
   it('should render', () => {
     const store = storeFake({
-      date: {},
+      date: {
+        loading: true,
+      },
     });
     const wrapper = mount(
       <Provider store={store}>
