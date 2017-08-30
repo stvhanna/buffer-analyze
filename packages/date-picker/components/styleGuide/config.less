@@ -145,136 +145,13 @@
 
 /* Overlay */
 
-@sidebarWidth: 				85px;
-@overlayWidth: 				518px;
-@overlayHeight: 			380px;
-@sectionWidth: 				@overlayWidth - @sidebarWidth - 1;
-@sectionInner: 				@sectionWidth - 40;
-@rolledHeight: 				@overlayHeight - 66;
-@pickerHeight: 				80px;
-
 @depthMessage: 				100;
 @depthProfiles: 			4;
 @depthCount: 				3;
 @depthPicture: 				2;
 @depthPicker: 				1;
 
-// Body
-body {
-  font-size: @font-size;
-  line-height: @line-height;
-  color: @shuttle-gray;
-}
-
-// Code
-code,
-p code,
-pre {
-  padding: 2px 4px;
-  color: @torch-red;
-  background-color: fade(@torch-red, 10%);
-  border-radius: @border-radius;
-}
-
-// Headings
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: normal;
-  color: @outer-space;
-}
-
-h1,
-h2,
-h3 {
-  margin: 0 0 32px 0;
-  font-weight: 300;
-}
-
-h1 {
-  font-size: 48px;
-  line-height: 72px;
-}
-
-h2 {
-  font-size: 40px;
-  line-height: 60px;
-}
-
-h3 {
-  font-size: 24px;
-  line-height: 36px;
-}
-
-h4,
-h5,
-h6 {
-  margin: 0 0 16px 0;
-  font-size: @font-size;
-  line-height: @line-height;
-}
-
-.HeadingCouple h1,
-.HeadingCouple h2,
-.HeadingCouple h3,
-.HeadingCouple h4,
-.HeadingCouple h5,
-.HeadingCouple h6 {
-  margin-bottom: 0;
-}
-
-// Links
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-// Ordered/Unordered Lists
-ol,
-ul {
-  margin: 32px 16px 32px 34px;
-}
-
-li {
-  margin-bottom: 8px;
-}
-
-.List--style-none {
-  list-style: none;
-}
-
-.List--style-margin-0 {
-  margin: 0;
-}
-
-.List--style-margin-bottom-0 {
-  margin-bottom: 0;
-}
-
-// Paragraphs
-p {
-  margin: 16px 0;
-}
-
-.Paragraph--order-first {
-  margin-top: 0;
-}
-
-.Paragraph--order-last {
-  margin-bottom: 0;
-}
-
-// Testing that this doesn't clash with other styles!
-input[type="text"],
-input[type="search"],
-input[type="email"],
-textarea {
+input[type="text"] {
 	padding: 10px;
 	border-radius: 3px;
 	border: 1px solid @borderColor;
@@ -282,16 +159,6 @@ textarea {
 	width: 465px;
 	font-size: 14px;
 	color: @bodyColor;
-
-	&:focus {
-		border: 1px solid @blue;
-		outline: 0;
-	}
 }
 
-
 @base: 10px;
-
-// Variables used
-//@primaryButton
-//@primaryButtonBorder

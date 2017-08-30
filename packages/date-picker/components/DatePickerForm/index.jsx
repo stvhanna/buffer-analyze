@@ -11,7 +11,7 @@ import Presets from '../Presets/';
 
 class Form extends Component {
   componentWillUpdate (nextProps) {
-    if (nextProps.startDateFocus) {
+    if (nextProps.startDate === null) {
       this._startDate.focus();
     }
   }
@@ -57,8 +57,6 @@ class Form extends Component {
 
     // Actions
     const {
-      focusStartDate,
-      focusEndDate,
       setStartDate,
       setEndDate,
       selectPreset,
@@ -112,8 +110,8 @@ class Form extends Component {
               name="start"
               value={startDateFormat}
               placeholder="Date from:"
-              onFocus={focusStartDate}
               className={startDateInputClass}
+              readOnly
             />
             <Button
               noStyle
@@ -129,8 +127,8 @@ class Form extends Component {
               name="end"
               value={endDateFormat}
               placeholder="Date to:"
-              onFocus={focusEndDate}
               className={endDateInputClass}
+              readOnly
             />
             <Button
               noStyle
@@ -183,8 +181,6 @@ Form.propTypes = {
 
   // Actions
   selectPreset: PropTypes.func.isRequired,
-  focusEndDate: PropTypes.func.isRequired,
-  focusStartDate: PropTypes.func.isRequired,
   setStartDate: PropTypes.func.isRequired,
   clearStartDate: PropTypes.func.isRequired,
   setEndDate: PropTypes.func.isRequired,
