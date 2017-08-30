@@ -22,12 +22,12 @@ ProfileSelector.propTypes = {
   onSearchChange: PropTypes.func.isRequired,
 };
 
-export const __filterProfilesByService = (profiles, service) => (
+const filterProfilesByService = (profiles, service) => (
   profiles.filter(p => p.service === service)
 );
 
-export const __mapStateToProps = (state, ownProps) => {
-  const filteredProfiles = __filterProfilesByService(
+const mapStateToProps = (state, ownProps) => {
+  const filteredProfiles = filterProfilesByService(
     state.profiles.profiles,
     ownProps.profileService,
   );
@@ -45,7 +45,7 @@ const mapDispatchToProps = dispatch => ({
 });
 
 export default connect(
-  __mapStateToProps,
+  mapStateToProps,
   mapDispatchToProps,
 )(ProfileSelector);
 

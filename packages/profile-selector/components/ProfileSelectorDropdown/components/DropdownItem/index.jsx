@@ -110,7 +110,7 @@ const DropdownItem = ({ profile, handleClick, selected }) => (
       >
         <ProfileBadge avatarUrl={profile.avatarUrl} service={profile.service} />
         <Text weight="bold" size="small">{profile.username}</Text>
-        { selected && <div style={{ marginLeft: 'auto'}}>
+        { selected && <div style={{ marginLeft: 'auto' }}>
           <CheckmarkIcon color={'curiousBlue'} />
         </div>}
       </span>
