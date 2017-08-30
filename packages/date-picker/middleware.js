@@ -1,8 +1,18 @@
-export default store => next => (action) => { // eslint-disable-line no-unused-vars
-  /* eslint-disable no-console */
-  console.group();
-  console.log('action', action);
-  console.groupEnd();
-  /* eslint-enable no-console */
+import { actions } from '@bufferapp/async-data-fetch';
+import { actionTypes as profileActionTypes } from '@bufferapp/analyze-profile-selector';
+
+export default ({ dispatch }) => next => (action) => {
+  switch (action.type) {
+    case profileActionTypes.SELECT_PROFILE:
+      dispatch(actions.fetch({
+        name: 'analytics_start_date',
+        args: {
+          profileId: action.id,
+        },
+      }));
+      break;
+    default:
+      break;
+  }
   return next(action);
 };
