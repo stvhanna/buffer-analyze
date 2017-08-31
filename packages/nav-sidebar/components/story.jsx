@@ -43,6 +43,15 @@ storiesOf('NavSidebar')
       />
     </div>
   ))
+  .add('if there are no profiles it should not show the Insights section', () => (
+    <div style={{ width: '260px', height: '100%', display: 'flex' }}>
+      <NavSidebar
+        route="/insights/twitter"
+        profiles={[]}
+        onClick={action('click item')}
+      />
+    </div>
+  ))
   .add('should show only services for which the user has profiles', () => (
     <div style={{ width: '260px', height: '100%', display: 'flex' }}>
       <NavSidebar

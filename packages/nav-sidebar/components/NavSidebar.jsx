@@ -42,37 +42,53 @@ const getFirstProfileForService = (service, profiles) => (
   profiles.find(profile => profile.service === service)
 );
 
-const NavSidebar = (props) => {
-  const facebookProfile = getFirstProfileForService('facebook', props.profiles);
-  const twitterProfile = getFirstProfileForService('twitter', props.profiles);
-  const instagramProfile = getFirstProfileForService('instagram', props.profiles);
-  return (
-    <div style={sidebarStyle}>
-      <div style={sidebarItemWrapperStyle}>
-        <Text color="curiousBlue" weight="bold" size="large">Analyze</Text>
+const Insights = ({ profiles, ...props }) => {
+  const facebookProfile = getFirstProfileForService('facebook', profiles);
+  const twitterProfile = getFirstProfileForService('twitter', profiles);
+  const instagramProfile = getFirstProfileForService('instagram', profiles);
+  const shouldShowInsights = facebookProfile || twitterProfile || instagramProfile;
+  if (shouldShowInsights) {
+    return (
+      <div>
+        <Label>Insights</Label>
+        { facebookProfile && <Item profileId={facebookProfile.id} href={`/insights/facebook/${facebookProfile.id}`} {...props}>Facebook</Item>}
+        { twitterProfile && <Item profileId={twitterProfile.id} href={`/insights/twitter/${twitterProfile.id}`} {...props}>Twitter</Item>}
+        { instagramProfile && <Item profileId={instagramProfile.id} href={`/insights/instagram/${instagramProfile.id}`} {...props}>Instagram</Item>}
       </div>
-      <Divider marginTop="0" marginBottom="1rem" />
-
-      <Item href="/" {...props}>Dashboard</Item>
-
-      <Label>Insights</Label>
-      { facebookProfile && <Item profileId={facebookProfile.id} href={`/insights/facebook/${facebookProfile.id}`} {...props}>Facebook</Item>}
-      { twitterProfile && <Item profileId={twitterProfile.id} href={`/insights/twitter/${twitterProfile.id}`} {...props}>Twitter</Item>}
-      { instagramProfile && <Item profileId={instagramProfile.id} href={`/insights/instagram/${instagramProfile.id}`} {...props}>Instagram</Item>}
-
-      <Label>Tools</Label>
-      <Item href="/comparisons" {...props}>Comparisons</Item>
-      <Item href="/reports" {...props}>Reports</Item>
-
-      <div style={settingsDivider}>
-        <Divider marginTop="0" marginBottom="0" />
-      </div>
-      <div style={settingsWrapper}>
-        <Item href="/settings" {...props}>Settings</Item>
-      </div>
-    </div>
-  );
+    );
+  }
+  return null;
 };
+
+Insights.propTypes = {
+  profiles: PropTypes.arrayOf({
+    service: PropTypes.string,
+  }).isRequired,
+};
+
+const NavSidebar = props => (
+  <div style={sidebarStyle}>
+    <div style={sidebarItemWrapperStyle}>
+      <Text color="curiousBlue" weight="bold" size="large">Analyze</Text>
+    </div>
+    <Divider marginTop="0" marginBottom="1rem" />
+
+    <Item href="/" {...props}>Dashboard</Item>
+
+    <Insights {...props} />
+
+    <Label>Tools</Label>
+    <Item href="/comparisons" {...props}>Comparisons</Item>
+    <Item href="/reports" {...props}>Reports</Item>
+
+    <div style={settingsDivider}>
+      <Divider marginTop="0" marginBottom="0" />
+    </div>
+    <div style={settingsWrapper}>
+      <Item href="/settings" {...props}>Settings</Item>
+    </div>
+  </div>
+);
 
 NavSidebar.propTypes = {
   profiles: PropTypes.arrayOf(PropTypes.shape({
