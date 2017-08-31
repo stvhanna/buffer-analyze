@@ -7,6 +7,7 @@ const userMethod = require('./user');
 const performanceTrackingMethod = require('./performanceTracking');
 const summary = require('./summary');
 const followers = require('./followers');
+const analyticsStartDate = require('./analyticsStartDate');
 
 module.exports = checkToken(rpc(
   loginMethod,
@@ -16,4 +17,5 @@ module.exports = checkToken(rpc(
   performanceTrackingMethod,
   summary,
   followers,
+  analyticsStartDate,
 ));

@@ -23,6 +23,7 @@ describe('SummaryTable', () => {
         loading: false,
         metrics: [],
       },
+      date: {},
     });
     const wrapper = mount(
       <Provider store={store}>

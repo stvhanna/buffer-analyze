@@ -8,6 +8,7 @@ import { reducer as navSidebarReducer } from '@bufferapp/nav-sidebar';
 import { reducer as summaryReducer } from '@bufferapp/summary-table';
 import { reducer as profileReducer } from '@bufferapp/analyze-profile-selector';
 import { reducer as profileHeaderReducer } from '@bufferapp/profile-header';
+import { reducer as datePickerReducer } from '@bufferapp/analyze-date-picker';
 
 export default combineReducers({
   login: loginReducer,
@@ -19,4 +20,5 @@ export default combineReducers({
   summary: summaryReducer,
   profiles: profileReducer,
   profileHeader: profileHeaderReducer,
+  date: datePickerReducer,
 });

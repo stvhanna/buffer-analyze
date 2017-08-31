@@ -3,6 +3,7 @@
 A better way to measure performance on social media 📈📉
 
 [![Build Status](https://travis-ci.org/bufferapp/buffer-analyze.svg?branch=master)](https://travis-ci.org/bufferapp/buffer-analyze)
+[![codecov](https://codecov.io/gh/bufferapp/buffer-analyze/branch/master/graph/badge.svg)](https://codecov.io/gh/bufferapp/buffer-analyze)
 
 ## Table of contents
 

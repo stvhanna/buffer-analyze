@@ -20,17 +20,13 @@ const gridStyle = {
   borderRadius: '2px',
 };
 
-const sectionContainer = {
-  marginLeft: '2rem',
-};
-
 const gridContainer = {
   minHeight: '12rem',
   position: 'relative',
   margin: '1rem 0 1.5rem',
 };
 
-const SummaryTable = ({ metrics, loading, profileService }) => {
+const SummaryTable = ({ metrics, loading, profileService, startDate, endDate }) => {
   let content = null;
   if (loading) {
     content = <Loading active text="Summary loading..." />;
@@ -45,8 +41,8 @@ const SummaryTable = ({ metrics, loading, profileService }) => {
   }
 
   return (
-    <div style={sectionContainer}>
-      <Title profileService={profileService} />
+    <div>
+      <Title profileService={profileService} startDate={startDate} endDate={endDate} />
       <div style={gridContainer}>
         {content}
       </div>
@@ -56,6 +52,8 @@ const SummaryTable = ({ metrics, loading, profileService }) => {
 
 SummaryTable.defaultProps = {
   loading: false,
+  startDate: null,
+  endDate: null,
 };
 
 SummaryTable.propTypes = {
@@ -66,6 +64,8 @@ SummaryTable.propTypes = {
     value: PropTypes.number,
     diff: PropTypes.number,
   })).isRequired,
+  startDate: PropTypes.number,
+  endDate: PropTypes.number,
 };
 
 export default SummaryTable;

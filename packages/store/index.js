@@ -13,6 +13,7 @@ import { middleware as navSidebarMiddleware } from '@bufferapp/nav-sidebar';
 import { middleware as performanceMiddleware } from '@bufferapp/performance-tracking';
 import { middleware as summaryMiddleware } from '@bufferapp/summary-table';
 import { middleware as profileHeaderMiddleware } from '@bufferapp/profile-header';
+import { middleware as datePickerMiddleware } from '@bufferapp/analyze-date-picker';
 import reducers from './reducers';
 
 export const history = createHistory();
@@ -37,6 +38,7 @@ const configureStore = (initialstate) => {
         performanceMiddleware,
         summaryMiddleware,
         profileHeaderMiddleware,
+        datePickerMiddleware,
       ),
     ),
   );
