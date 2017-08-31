@@ -9,6 +9,15 @@
     "test": "yarn run lint && sh ../../package_test.sh",
     "test-update": "jest -u "
   },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!@bufferapp/*)"
+    ],
+    "verbose": true,
+    "moduleNameMapper": {
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
+  },
   "author": "mike@msanroman.io",
   "dependencies": {
     "moment": "^2.18.1",
