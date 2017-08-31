@@ -5,6 +5,8 @@ export default connect(
   state => ({
     loading: state.summary.loading,
     metrics: state.summary.metrics,
+    startDate: state.date.startDate,
+    endDate: state.date.endDate,
   }),
 )(SummaryTable);
 
