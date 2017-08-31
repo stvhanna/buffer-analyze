@@ -82,8 +82,8 @@ export default (state = initialState, action) => {
         ...state,
         open: false,
         calendarOpen: false,
-        startDate: state.previousStartDate !== null ? state.previousStartDate : state.startDate,
-        endDate: state.previousEndDate !== null ? state.previousEndDate : state.endDate,
+        startDate: state.previousStartDate ? state.previousStartDate : state.startDate,
+        endDate: state.previousEndDate ? state.previousEndDate : state.endDate,
       };
     case actionTypes.OPEN_CALENDAR:
       return {

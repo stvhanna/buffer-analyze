@@ -46,9 +46,35 @@ describe('reducer', () => {
       });
       expect(state.open).toBe(false);
     });
+
+    it('should bring back the previous start and end dates if no custom date range has been selected', () => {
+      const state = reducer(undefined, {
+        type: actionTypes.OPEN_CALENDAR,
+      });
+      const closedDatePickerState = reducer(state, {
+        type: actionTypes.CLOSE_DATE_PICKER,
+      });
+
+      expect(closedDatePickerState.calendarOpen).toBe(false);
+      expect(closedDatePickerState.startDate).toBe(state.previousStartDate);
+      expect(closedDatePickerState.endDate).toBe(state.previousEndDate);
+    });
+
+    it('should keep the selected start and end dates if no previous date range was selected', () => {
+      const state = reducer(undefined, {
+        type: actionTypes.OPEN_DATE_PICKER,
+      });
+      const closedDatePickerState = reducer(state, {
+        type: actionTypes.CLOSE_DATE_PICKER,
+      });
+
+      console.log(closedDatePickerState);
+      expect(closedDatePickerState.startDate).toBe(state.startDate);
+      expect(closedDatePickerState.endDate).toBe(state.endDate);
+    });
   });
 
-  describe('set start date', () => {
+  describe('set minimum start date', () => {
     it(`stops loading state when receiving analytics_start_date_${asyncDataFetchActions.FETCH_SUCCESS}`, () => {
       const state = reducer(undefined, {
         type: `analytics_start_date_${asyncDataFetchActions.FETCH_SUCCESS}`,
@@ -75,6 +101,48 @@ describe('reducer', () => {
       expect(state.minDate).toBe(date);
     });
   });
+  describe('clear start and end dates', () => {
+    it('CLEAR_START_DATE updates the start date', () => {
+      const state = reducer(undefined, {
+        type: actionTypes.CLEAR_START_DATE,
+      });
+      expect(state.startDate).toBe(null);
+    });
+    it('CLEAR_END_DATE updates the start date', () => {
+      const state = reducer(undefined, {
+        type: actionTypes.CLEAR_END_DATE,
+      });
+      expect(state.endDate).toBe(null);
+    });
+  });
+
+  describe('set start and end dates', () => {
+    it('SET_START_DATE updates the start date', () => {
+      const startDate = moment().subtract(4, 'days').unix();
+      const state = reducer(undefined, {
+        type: actionTypes.SET_START_DATE,
+        date: startDate,
+      });
+      expect(state.startDate).toBe(startDate);
+    });
+    it('SET_END_DATE updates the start date', () => {
+      const endDate = moment.unix();
+      const state = reducer(undefined, {
+        type: actionTypes.SET_END_DATE,
+        date: endDate,
+      });
+      expect(state.endDate).toBe(endDate);
+    });
+  });
+
+  it('SET_MONTH updates the current month', () => {
+    const month = moment().subtract(4, 'months').startOf('month').unix();
+    const state = reducer(undefined, {
+      type: actionTypes.SET_MONTH,
+      date: month,
+    });
+    expect(state.month).toBe(month);
+  });
 
   it(`changes the date range when receiving ${actionTypes.SET_DATE_RANGE}`, () => {
     const startDate = moment().subtract(4, 'days').unix();
@@ -86,6 +154,25 @@ describe('reducer', () => {
     });
     expect(state.startDate).toBe(startDate);
     expect(state.endDate).toBe(endDate);
+  });
+
+  describe('OPEN CALENDAR', () => {
+    it('clears start and end dates', () => {
+      const state = reducer(undefined, {
+        type: actionTypes.OPEN_CALENDAR,
+      });
+      expect(state.startDate).toBe(null);
+      expect(state.endDate).toBe(null);
+    });
+
+    it('stores temporally start and end dates', () => {
+      const previousState = reducer(undefined, {});
+      const state = reducer(undefined, {
+        type: actionTypes.OPEN_CALENDAR,
+      });
+      expect(state.previousStartDate).toBe(previousState.startDate);
+      expect(state.previousEndDate).toBe(previousState.endDate);
+    });
   });
 });
 
@@ -103,6 +190,42 @@ describe('actions', () => {
     });
   });
 
+  describe('set dates', () => {
+    it(`setStartDate triggers ${actionTypes.SET_START_DATE}`, () => {
+      const start = moment().subtract(30, 'days').unix();
+      expect(actions.setStartDate(start)).toEqual({
+        type: actionTypes.SET_START_DATE,
+        date: start,
+      });
+    });
+    it(`setEndDate triggers ${actionTypes.SET_END_DATE}`, () => {
+      const end = moment().subtract(1, 'days').unix();
+      expect(actions.setEndDate(end)).toEqual({
+        type: actionTypes.SET_END_DATE,
+        date: end,
+      });
+    });
+  });
+
+  describe('clear dates', () => {
+    it(`clearStartDate triggers ${actionTypes.CLEAR_START_DATE}`, () => {
+      expect(actions.clearStartDate()).toEqual({
+        type: actionTypes.CLEAR_START_DATE,
+      });
+    });
+    it(`clearEndDate triggers ${actionTypes.CLEAR_END_DATE}`, () => {
+      expect(actions.clearEndDate()).toEqual({
+        type: actionTypes.CLEAR_END_DATE,
+      });
+    });
+  });
+
+  it(`openCalendar triggers ${actionTypes.OPEN_CALENDAR}`, () => {
+    expect(actions.openCalendar()).toEqual({
+      type: actionTypes.OPEN_CALENDAR,
+    });
+  });
+
   it(`setDateRange triggers ${actionTypes.SET_DATE_RANGE}`, () => {
     const start = moment().subtract(30, 'days').unix();
     const end = moment().subtract(1, 'days').unix();
@@ -110,6 +233,14 @@ describe('actions', () => {
       type: actionTypes.SET_DATE_RANGE,
       startDate: start,
       endDate: end,
+    });
+  });
+
+  it(`setMonth triggers ${actionTypes.SET_MONTH}`, () => {
+    const date = moment().startOf('month').unix();
+    expect(actions.setMonth(date)).toEqual({
+      type: actionTypes.SET_MONTH,
+      date,
     });
   });
 });
