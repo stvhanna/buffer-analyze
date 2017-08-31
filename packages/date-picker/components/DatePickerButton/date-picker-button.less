@@ -1,0 +1,44 @@
+@import '../styleGuide/config.less';
+
+.button {
+  min-width: 300px;
+  text-align: left;
+  padding-top:9px !important;
+
+  display: flex !important;
+  align-items: baseline;
+
+  > i {
+    font-size: 1.2em;
+
+    &:first-of-type {
+      margin-right: @base;
+    }
+
+    &:last-of-type {
+      margin-left: @base;
+    }
+  }
+}
+.iconOpen::before {
+  transform: rotate(180deg);
+}
+
+.disabled {
+  color: darken(@bodyColor, 15%) !important;
+  opacity: .3 !important;
+  background: transparent !important;
+  cursor: default;
+}
+
+.buttonIconArrow {
+  margin-left: @base/2;
+}
+
+.rightSide {
+  margin-left: auto;
+}
+
+.dateRange {
+  color: #666C72;
+}

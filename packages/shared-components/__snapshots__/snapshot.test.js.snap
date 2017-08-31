@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshots PeriodPhrase should render 1`] = `
+<span>
+  <span>
+    the selected 
+    7 days
+  </span>
+</span>
+`;

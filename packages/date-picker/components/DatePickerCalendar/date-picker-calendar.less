@@ -1,0 +1,142 @@
+@import '../styleGuide/config.less';
+
+@gridSpaceHeight: 45px;
+@gridSpaceWidth: 100%/7;
+
+@inactiveColor: @darkGray;
+
+@headerHeight: 45px;
+
+.calendar {
+  margin-top: 2*@base;
+  display: none;
+  border: solid 1px @borderColor;
+  border-radius: 3px;
+}
+
+.calendarOpen {
+  display: block;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 1.25em;
+  font-family: @baseFontFamily;
+
+  height: @headerHeight;
+
+  border-bottom: solid 1px @borderColor;
+
+  text-align: center;
+  background: #FAFBFB;
+
+  > i {
+    cursor: pointer;
+  }
+}
+
+.arrowLeft {
+  margin-left: @base;
+}
+
+.arrowRight {
+  margin-right: @base;
+}
+
+.dayHeaderList {
+  padding: 0;
+  margin: 0 2*@base;
+}
+
+.dayHeaderListItem {
+  display: inline-block;
+  text-decoration: none;
+  width: @gridSpaceWidth;
+  font-family: @baseFontFamily;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: @darkGray;
+  border-bottom: solid 1px @borderColor;
+}
+
+.week {
+  margin: 0 2*@base;
+
+  &:last-of-type {
+    margin-bottom: @base;
+  }
+}
+
+.inactiveDay {
+  color: @darkGray;
+  &:hover {
+    cursor: disabled;
+  }
+}
+
+.day {
+  font-family: @baseFontFamily;
+  text-align: center;
+  display: inline-flex;
+  width: @gridSpaceWidth;
+  height: @gridSpaceHeight;
+  justify-content: center;
+  align-items: center;
+}
+
+.marker {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 35px;
+}
+
+.hoverMarker:hover {
+  cursor: pointer;
+  background: @primaryColor;
+  color: #fff;
+}
+
+.todayMarker {
+  background: @borderColor;
+}
+
+.selectedMarker {
+  background: @primaryColor;
+  color: #fff;
+}
+
+.startMarker {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.endMarker {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.markerConnector {
+  height: 35px;
+  flex-grow: 1;
+}
+
+.markerConectorActive {
+  background: @primaryColor;
+}
+
+.roundEndMarker {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.roundStartMarker {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}

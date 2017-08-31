@@ -42,7 +42,7 @@ const getFirstProfileForService = (service, profiles) => (
   profiles.find(profile => profile.service === service)
 );
 
-const NavSidebar = props => {
+const NavSidebar = (props) => {
   const facebookProfile = getFirstProfileForService('facebook', props.profiles);
   const twitterProfile = getFirstProfileForService('twitter', props.profiles);
   const instagramProfile = getFirstProfileForService('instagram', props.profiles);
