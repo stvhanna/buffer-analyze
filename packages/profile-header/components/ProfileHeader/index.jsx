@@ -140,4 +140,8 @@ ProfileHeader.propTypes = {
   followersCount: PropTypes.number.isRequired,
 };
 
+ProfileHeader.defaultProps = {
+  profile: null,
+};
+
 export default ProfileHeader;
