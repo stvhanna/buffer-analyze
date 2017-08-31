@@ -1,51 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import numeral from 'numeral';
-
-import {
-  Image,
-  Text,
-} from '@bufferapp/components';
-
-import { SocialIcon } from '@bufferapp/analyze-shared-components';
-
-import {
-  outerSpaceUltraLight,
-} from '@bufferapp/components/style/color';
-
+import { Text } from '@bufferapp/components';
+import { ProfileBadge } from '@bufferapp/analyze-shared-components';
 import styles from '../../styles.less';
-
-
-const avatarSize = 32;
-
-
-export const ProfileBadge = ({ avatarUrl, service }) => {
-  const avatarPixelSize = `${avatarSize}px`;
-  return (
-    <div style={{
-      position: 'relative',
-      marginRight: '10px',
-      width: avatarPixelSize,
-      height: avatarPixelSize,
-      background: outerSpaceUltraLight,
-      borderRadius: '50%',
-    }}
-    >
-      <Image
-        border={'circle'}
-        src={avatarUrl}
-        height={avatarPixelSize}
-        width={avatarPixelSize}
-      />
-      <SocialIcon service={service} socialIconSize={16} avatarSize={32} />
-    </div>
-  );
-};
-
-ProfileBadge.propTypes = {
-  service: PropTypes.string.isRequired,
-  avatarUrl: PropTypes.string.isRequired,
-};
 
 const ProfileHeader = ({ profile, followersCount }) => {
   if (!profile) return null;
@@ -68,7 +26,12 @@ const ProfileHeader = ({ profile, followersCount }) => {
   return (
     <div className={styles.sectionProfileAvatar}>
       <div className={styles.profileAvatarWrapper}>
-        <ProfileBadge avatarUrl={profile.avatarUrl} service={profile.service} />
+        <ProfileBadge
+          avatarUrl={profile.avatarUrl}
+          service={profile.service}
+          avatarSize={32}
+          socialIconSize={16}
+        />
         <div className={styles.sectionProfileAvatarDetails}>
           <span className={styles.profileAvatarDetailHeader}>
             <a href={profile.service_link} rel="noopener noreferrer" target="_blank">

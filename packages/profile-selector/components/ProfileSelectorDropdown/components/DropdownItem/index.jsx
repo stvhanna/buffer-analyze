@@ -4,50 +4,13 @@ import PropTypes from 'prop-types';
 import {
   Button,
   CheckmarkIcon,
-  Image,
   Text,
 } from '@bufferapp/components';
 
-import { SocialIcon } from '@bufferapp/analyze-shared-components';
-
-import {
-  outerSpaceUltraLight,
-} from '@bufferapp/components/style/color';
-
+import { ProfileBadge } from '@bufferapp/analyze-shared-components';
 import {
   dropdownListItem,
 } from '../../style.less';
-
-const avatarSize = 24;
-
-export const ProfileBadge = ({ avatarUrl, service }) => {
-  const avatarPixelSize = `${avatarSize}px`;
-  return (
-    <div
-      style={{
-        position: 'relative',
-        marginRight: '10px',
-        width: avatarPixelSize,
-        height: avatarPixelSize,
-        background: outerSpaceUltraLight,
-        borderRadius: '50%',
-      }}
-    >
-      <Image
-        border={'circle'}
-        src={avatarUrl}
-        height={avatarPixelSize}
-        width={avatarPixelSize}
-      />
-      <SocialIcon service={service} socialIconSize={11} avatarSize={24} />
-    </div>
-  );
-};
-
-ProfileBadge.propTypes = {
-  service: PropTypes.string.isRequired,
-  avatarUrl: PropTypes.string.isRequired,
-};
 
 const DropdownItem = ({ profile, handleClick, selected }) => (
   <li className={dropdownListItem}>
@@ -62,7 +25,12 @@ const DropdownItem = ({ profile, handleClick, selected }) => (
           padding: '5px 10px',
         }}
       >
-        <ProfileBadge avatarUrl={profile.avatarUrl} service={profile.service} />
+        <ProfileBadge
+          avatarUrl={profile.avatarUrl}
+          service={profile.service}
+          avatarSize={24}
+          socialIconSize={11}
+        />
         <Text weight="bold" size="small">{profile.username}</Text>
         { selected && <div style={{ marginLeft: 'auto' }}>
           <CheckmarkIcon color={'curiousBlue'} />
