@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import {
   Button,
+  CheckmarkIcon,
   CircleFacebookIcon,
   CircleInstagramIcon,
   CircleLinkedInIcon,
@@ -45,15 +46,16 @@ export const SocialIcon = ({ service }) => {
   }
 
   return (
-    <div style={{
-      background: '#fff',
-      position: 'absolute',
-      width: `${socialIconSize}px`,
-      height: `${socialIconSize}px`,
-      top: `${avatarSize - socialIconSize}px`,
-      left: `${avatarSize - socialIconSize}px`,
-      borderRadius: '50%',
-    }}
+    <div
+      style={{
+        background: '#fff',
+        position: 'absolute',
+        width: `${socialIconSize}px`,
+        height: `${socialIconSize}px`,
+        top: `${avatarSize - socialIconSize}px`,
+        left: `${avatarSize - socialIconSize}px`,
+        borderRadius: '50%',
+      }}
     >
       {icon}
     </div>
@@ -67,14 +69,15 @@ SocialIcon.propTypes = {
 export const ProfileBadge = ({ avatarUrl, service }) => {
   const avatarPixelSize = `${avatarSize}px`;
   return (
-    <div style={{
-      position: 'relative',
-      marginRight: '10px',
-      width: avatarPixelSize,
-      height: avatarPixelSize,
-      background: outerSpaceUltraLight,
-      borderRadius: '50%',
-    }}
+    <div
+      style={{
+        position: 'relative',
+        marginRight: '10px',
+        width: avatarPixelSize,
+        height: avatarPixelSize,
+        background: outerSpaceUltraLight,
+        borderRadius: '50%',
+      }}
     >
       <Image
         border={'circle'}
@@ -92,20 +95,24 @@ ProfileBadge.propTypes = {
   avatarUrl: PropTypes.string.isRequired,
 };
 
-const DropdownItem = ({ profile, handleClick }) => (
+const DropdownItem = ({ profile, handleClick, selected }) => (
   <li className={dropdownListItem}>
     <Button noStyle onClick={handleClick} >
       <span
         style={{
           alignItems: 'center',
+          boxSizing: 'border-box',
           display: 'flex',
           position: 'relative',
-          width: '262px',
-          padding: '10px',
+          width: '280px',
+          padding: '5px 10px',
         }}
       >
         <ProfileBadge avatarUrl={profile.avatarUrl} service={profile.service} />
         <Text weight="bold" size="small">{profile.username}</Text>
+        { selected && <div style={{ marginLeft: 'auto' }}>
+          <CheckmarkIcon color={'curiousBlue'} />
+        </div>}
       </span>
     </Button>
   </li>
@@ -119,6 +126,11 @@ DropdownItem.propTypes = {
     id: PropTypes.string.isRequired,
   }).isRequired,
   handleClick: PropTypes.func.isRequired,
+  selected: PropTypes.bool,
+};
+
+DropdownItem.defaultProps = {
+  selected: false,
 };
 
 export default DropdownItem;
