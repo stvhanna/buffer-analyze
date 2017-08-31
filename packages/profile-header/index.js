@@ -1,7 +1,6 @@
 import { connect } from 'react-redux';
 import ProfileHeader from './components/ProfileHeader';
 
-// this one gets the state and converts to props
 // default export = container
 export default connect(
   (state, props) => ({
