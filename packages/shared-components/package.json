@@ -11,7 +11,8 @@
   },
   "author": "mike@msanroman.io",
   "dependencies": {
-    "moment": "^2.18.1"
+    "moment": "^2.18.1",
+    "@bufferapp/components": "0.5.28"
   },
   "devDependencies": {
     "@storybook/addon-storyshots": "3.1.4",

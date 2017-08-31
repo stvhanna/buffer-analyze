@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@bufferapp/components": "0.5.28",
+    "@bufferapp/analyze-shared-components": "0.0.1",
     "react-simple-dropdown": "3.0.0"
   },
   "author": "Federico Weber <federicoweber@gmail.com>",

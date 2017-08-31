@@ -3,12 +3,11 @@ import PropTypes from 'prop-types';
 import numeral from 'numeral';
 
 import {
-  CircleFacebookIcon,
-  CircleInstagramIcon,
-  CircleTwitterIcon,
   Image,
   Text,
 } from '@bufferapp/components';
+
+import { SocialIcon } from '@bufferapp/analyze-shared-components';
 
 import {
   outerSpaceUltraLight,
@@ -17,48 +16,8 @@ import {
 import styles from '../../styles.less';
 
 
-const socialIconSize = 16;
 const avatarSize = 32;
 
-export const SocialIcon = ({ service }) => {
-  let icon;
-  switch (service) {
-    case 'twitter':
-      icon = <CircleTwitterIcon color={service} size={{ width: '100%', height: '100%' }} />;
-      break;
-    case 'facebook':
-      icon = <CircleFacebookIcon color={service} size={{ width: '100%', height: '100%' }} />;
-      break;
-    case 'instagram':
-      // TODO using this as it's the only red we have
-      // but we need to change it to match instagram color
-      icon = <CircleInstagramIcon color={'torchRed'} size={{ width: '100%', height: '100%' }} />;
-      break;
-    default:
-      icon = null;
-      break;
-  }
-
-  return (
-    <div
-      style={{
-        background: '#fff',
-        position: 'absolute',
-        width: `${socialIconSize}px`,
-        height: `${socialIconSize}px`,
-        top: `${avatarSize - socialIconSize}px`,
-        left: `${avatarSize - socialIconSize}px`,
-        borderRadius: '50%',
-      }}
-    >
-      {icon}
-    </div>
-  );
-};
-
-SocialIcon.propTypes = {
-  service: PropTypes.oneOf(['twitter', 'facebook', 'instagram']).isRequired,
-};
 
 export const ProfileBadge = ({ avatarUrl, service }) => {
   const avatarPixelSize = `${avatarSize}px`;
@@ -78,7 +37,7 @@ export const ProfileBadge = ({ avatarUrl, service }) => {
         height={avatarPixelSize}
         width={avatarPixelSize}
       />
-      <SocialIcon service={service} />
+      <SocialIcon service={service} socialIconSize={16} avatarSize={32} />
     </div>
   );
 };
