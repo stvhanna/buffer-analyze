@@ -386,14 +386,14 @@ exports[`Snapshots SummaryTable should render a "no data" state 1`] = `
       }
     }
   >
-    <div
-      style={
-        Object {
-          "marginLeft": "2rem",
+    <div>
+      <h2
+        style={
+          Object {
+            "margin": "2rem 0 1rem",
+          }
         }
-      }
-    >
-      <h2>
+      >
         <span
           style={
             Object {
@@ -405,7 +405,11 @@ exports[`Snapshots SummaryTable should render a "no data" state 1`] = `
           }
         >
           Tweet performance 
-          for the selected 7 days compared to the previous period
+          for 
+          <span>
+            yesterday
+          </span>
+           compared to the previous period
         </span>
       </h2>
       <div
@@ -501,14 +505,14 @@ exports[`Snapshots SummaryTable should render a loading state 1`] = `
       }
     }
   >
-    <div
-      style={
-        Object {
-          "marginLeft": "2rem",
+    <div>
+      <h2
+        style={
+          Object {
+            "margin": "2rem 0 1rem",
+          }
         }
-      }
-    >
-      <h2>
+      >
         <span
           style={
             Object {
@@ -520,7 +524,11 @@ exports[`Snapshots SummaryTable should render a loading state 1`] = `
           }
         >
           Performance 
-          for the selected 7 days compared to the previous period
+          for 
+          <span>
+            yesterday
+          </span>
+           compared to the previous period
         </span>
       </h2>
       <div
@@ -650,14 +658,14 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
       }
     }
   >
-    <div
-      style={
-        Object {
-          "marginLeft": "2rem",
+    <div>
+      <h2
+        style={
+          Object {
+            "margin": "2rem 0 1rem",
+          }
         }
-      }
-    >
-      <h2>
+      >
         <span
           style={
             Object {
@@ -669,7 +677,11 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
           }
         >
           Tweet performance 
-          for the selected 7 days compared to the previous period
+          for 
+          <span>
+            yesterday
+          </span>
+           compared to the previous period
         </span>
       </h2>
       <div

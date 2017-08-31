@@ -18,7 +18,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
         className="bi-calendar"
       />
       <span>
-        From: 08/20/17 - To: 08/29/17
+        From: 08/21/17 - To: 08/30/17
       </span>
       <span
         className="rightSide"
@@ -329,7 +329,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
         <span
           className="dateRange"
         >
-          08/23/17 to 08/29/17
+          08/24/17 to 08/30/17
         </span>
         <span
           style={
@@ -624,7 +624,7 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
         className="bi-calendar"
       />
       <span>
-        From: 08/20/17 - To: 08/29/17
+        From: 08/21/17 - To: 08/30/17
       </span>
       <span
         className="rightSide"
@@ -912,7 +912,7 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                 placeholder="Date from:"
                 readOnly={true}
                 type="text"
-                value="Date from: 08/20/17"
+                value="Date from: 08/21/17"
               />
               <button
                 aria-label={null}
@@ -954,7 +954,7 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                 placeholder="Date to:"
                 readOnly={true}
                 type="text"
-                value="Date to: 08/29/17"
+                value="Date to: 08/30/17"
               />
               <button
                 aria-label={null}
@@ -2099,13 +2099,13 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker selectedMarker startMarker"
+                        className="marker hoverMarker"
                       >
                         20
                       </span>
                     </button>
                     <span
-                      className="markerConnector markerConectorActive"
+                      className="markerConnector"
                     />
                   </div>
                 </div>
@@ -2117,7 +2117,7 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                     data-tip=""
                   >
                     <span
-                      className="markerConnector markerConectorActive roundStartMarker"
+                      className="markerConnector"
                     />
                     <button
                       aria-label={null}
@@ -2148,7 +2148,7 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker selectedMarker startMarker endMarker"
+                        className="marker hoverMarker selectedMarker startMarker"
                       >
                         21
                       </span>
@@ -2526,7 +2526,7 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="markerConnector markerConectorActive"
                     />
                     <button
                       aria-label={null}
@@ -2557,17 +2557,17 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker todayMarker"
+                        className="marker hoverMarker selectedMarker startMarker endMarker"
                       >
                         30
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="markerConnector markerConectorActive"
                     />
                   </div>
                   <div
-                    className="day inactiveDay"
+                    className="day"
                     data-tip=""
                   >
                     <span
@@ -2602,7 +2602,7 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker"
+                        className="marker hoverMarker todayMarker"
                       >
                         31
                       </span>
@@ -4720,7 +4720,7 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker todayMarker"
+                        className="marker hoverMarker"
                       >
                         30
                       </span>
@@ -4730,7 +4730,7 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                     />
                   </div>
                   <div
-                    className="day inactiveDay"
+                    className="day"
                     data-tip=""
                   >
                     <span
@@ -4765,7 +4765,7 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker"
+                        className="marker hoverMarker todayMarker"
                       >
                         31
                       </span>
@@ -4958,7 +4958,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
         <span
           className="dateRange"
         >
-          08/23/17 to 08/29/17
+          08/24/17 to 08/30/17
         </span>
         <span
           style={
@@ -5261,7 +5261,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
         <span
           className="dateRange"
         >
-          08/23/17 to 08/29/17
+          08/24/17 to 08/30/17
         </span>
         <span
           style={
