@@ -5,6 +5,7 @@ import NavSidebar from '@bufferapp/nav-sidebar';
 import SummaryTable from '@bufferapp/summary-table';
 import ProfileSelector from '@bufferapp/analyze-profile-selector';
 import DatePicker from '@bufferapp/analyze-date-picker';
+import ProfileLoader from '@bufferapp/profile-loader';
 import Divider from '@bufferapp/components/Divider';
 import { offWhite, mystic } from '@bufferapp/components/style/color';
 
@@ -32,17 +33,19 @@ const InsightsPage = ({ match, location }) => (
   <div style={pageStyle}>
     <NavSidebar route={location.pathname} />
     <div style={pageContentStyle}>
-      <div style={profileSelectorContainer}>
-        <ProfileSelector
-          profileService={match.params.service}
-          selectedProfileId={match.params.id}
-        />
-      </div>
-      <div style={datePickerContainer}>
-        <DatePicker />
-      </div>
-      <Divider marginTop="1rem" marginBottom="1rem" />
-      <SummaryTable profileService={match.params.service} />
+      <ProfileLoader>
+        <div style={profileSelectorContainer}>
+          <ProfileSelector
+            profileService={match.params.service}
+            selectedProfileId={match.params.id}
+          />
+        </div>
+        <div style={datePickerContainer}>
+          <DatePicker />
+        </div>
+        <Divider marginTop="1rem" marginBottom="1rem" />
+        <SummaryTable profileService={match.params.service} />
+      </ProfileLoader>
     </div>
   </div>
 );

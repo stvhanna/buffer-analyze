@@ -1585,240 +1585,72 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
       <div
         style={
           Object {
-            "background": "#fcfcfc",
-            "border": "1px solid #e6ebef",
-            "padding": "1rem",
-          }
-        }
-      />
-      <div
-        style={
-          Object {
-            "padding": "2rem 0",
+            "textAlign": "center",
           }
         }
       >
         <div
           style={
             Object {
+              "height": "1rem",
+              "margin": "0 auto 1rem auto",
               "position": "relative",
+              "width": "1rem",
             }
           }
         >
-          <button
-            className="button button disabled"
-            disabled={true}
-            onClick={[Function]}
-          >
-            <i
-              className="bi-calendar"
-            />
-            <span>
-              Loading...
-            </span>
-            <span
-              className="rightSide"
-            >
-              <span
-                className="dateRange"
-              >
-                08/24/17 to 08/30/17
-              </span>
-              <span
-                style={
-                  Object {
-                    "marginLeft": "5px",
-                  }
-                }
-              >
-                <svg
-                  height="100%"
-                  style={
-                    Object {
-                      "fill": "#59626a",
-                      "height": "0.75rem",
-                      "width": "0.75rem",
-                    }
-                  }
-                  version="1.1"
-                  viewBox="0 0 16 16"
-                  width="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                >
-                  <g
-                    className="shuttleGray"
-                  >
-                    <path
-                      d="M4.90573685,4.61438297 C4.5159485,4.22537555 4.51510793,3.59709045 4.90996552,3.20500565 L4.90996552,3.20500565 C5.30208929,2.81563546 5.93536183,2.81786315 6.32490003,3.21046581 L11.2750374,8.19954548 C11.6643604,8.59193123 11.6645756,9.22591178 11.2750374,9.61606213 L6.32490003,14.5739785 C5.93557705,14.9639132 5.3048231,14.9648641 4.90996552,14.5699959 L4.90996552,14.5699959 C4.51784174,14.1778616 4.51273549,13.5497061 4.9163418,13.1493324 L8.84038203,9.25672113 C9.03897712,9.05971665 9.04484713,8.74520064 8.84038203,8.54114518 L4.90573685,4.61438297 Z"
-                      transform="translate(8.089966, 8.890003) scale(-1, 1) rotate(-270.000000) translate(-8.089966, -8.890003) "
-                    />
-                  </g>
-                </svg>
-              </span>
-            </span>
-          </button>
-          <div
-            className="clickCatcher"
-            onClick={[Function]}
-            role="button"
-            tabIndex="0"
-          />
-        </div>
-      </div>
-      <hr
-        style={
-          Object {
-            "background": "#e6ebef",
-            "border": "none",
-            "boxSizing": "border-box",
-            "height": "0.063rem",
-            "marginBottom": "1rem",
-            "marginTop": "1rem",
-            "width": "100%",
-          }
-        }
-      />
-      <div>
-        <h2
-          style={
-            Object {
-              "margin": "2rem 0 1rem",
-            }
-          }
-        >
-          <span
-            style={
-              Object {
-                "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "1rem",
-                "fontWeight": 400,
-              }
-            }
-          >
-            Tweet performance 
-            for 
-            <span>
-              the selected 
-              7 days
-            </span>
-             compared to the previous period
-          </span>
-        </h2>
-        <div
-          style={
-            Object {
-              "margin": "1rem 0 1.5rem",
-              "minHeight": "12rem",
-              "position": "relative",
-            }
-          }
-        >
-          <div
-            style={
-              Object {
-                "alignItems": "center",
-                "background": "rgba(255,255,255,.95)",
-                "border": "solid 1px #ced7df",
-                "bottom": 0,
-                "display": "flex",
-                "justifyContent": "center",
-                "left": 0,
-                "maxHeight": "none",
-                "opacity": 1,
-                "position": "absolute",
-                "right": 0,
-                "textAlign": "center",
-                "top": 0,
-                "transition": "opacity 350ms ease-in-out",
-                "zIndex": 2,
-              }
-            }
-          >
+          <span>
             <div
               style={
                 Object {
-                  "background": "white",
-                  "borderRadius": "2px",
-                  "flex": 1,
-                  "flexDirection": "row",
+                  "height": "1rem",
+                  "left": 0,
+                  "opacity": 0,
+                  "position": "absolute",
+                  "top": 0,
+                  "transition": "all 1000ms ease-in-out",
+                  "width": "1rem",
                 }
               }
             >
-              <div
+              <svg
+                height="100%"
                 style={
                   Object {
-                    "textAlign": "center",
+                    "fill": "#59626a",
+                    "height": "1rem",
+                    "width": "1rem",
                   }
                 }
+                version="1.1"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
               >
-                <div
-                  style={
-                    Object {
-                      "height": "1rem",
-                      "margin": "0 auto 1rem auto",
-                      "position": "relative",
-                      "width": "1rem",
-                    }
-                  }
+                <g
+                  className="shuttleGray"
                 >
-                  <span>
-                    <div
-                      style={
-                        Object {
-                          "height": "1rem",
-                          "left": 0,
-                          "opacity": 0,
-                          "position": "absolute",
-                          "top": 0,
-                          "transition": "all 1000ms ease-in-out",
-                          "width": "1rem",
-                        }
-                      }
-                    >
-                      <svg
-                        height="100%"
-                        style={
-                          Object {
-                            "fill": "#59626a",
-                            "height": "1rem",
-                            "width": "1rem",
-                          }
-                        }
-                        version="1.1"
-                        viewBox="0 0 16 16"
-                        width="100%"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlnsXlink="http://www.w3.org/1999/xlink"
-                      >
-                        <g
-                          className="shuttleGray"
-                        >
-                          <path
-                            d="M1.10241622,4.34038738 L7.75166358,7.40469806 C7.88821853,7.46764349 8.11178147,7.46764349 8.24833642,7.40469806 L14.8975838,4.34038738 C15.0341387,4.27744195 15.0341387,4.17446518 14.8975838,4.11151975 L8.24833642,1.04720908 C8.11178147,0.984263641 7.88821853,0.984263641 7.75166358,1.04720908 L1.10241622,4.11151975 C0.965861261,4.17446518 0.965861261,4.27744195 1.10241622,4.34038738"
-                          />
-                        </g>
-                      </svg>
-                    </div>
-                  </span>
-                </div>
-                <span
-                  style={
-                    Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "1rem",
-                      "fontWeight": 400,
-                    }
-                  }
-                >
-                  Summary loading...
-                </span>
-              </div>
+                  <path
+                    d="M1.10241622,4.34038738 L7.75166358,7.40469806 C7.88821853,7.46764349 8.11178147,7.46764349 8.24833642,7.40469806 L14.8975838,4.34038738 C15.0341387,4.27744195 15.0341387,4.17446518 14.8975838,4.11151975 L8.24833642,1.04720908 C8.11178147,0.984263641 7.88821853,0.984263641 7.75166358,1.04720908 L1.10241622,4.11151975 C0.965861261,4.17446518 0.965861261,4.27744195 1.10241622,4.34038738"
+                  />
+                </g>
+              </svg>
             </div>
-          </div>
+          </span>
         </div>
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Loading...
+        </span>
       </div>
     </div>
   </div>
