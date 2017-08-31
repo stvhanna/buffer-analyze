@@ -19,6 +19,7 @@ exports[`Snapshots GridItem should render a summary grid item with a neutral dif
       className="gridSummaryItem"
       style={
         Object {
+          "flexGrow": 1,
           "width": "25%",
         }
       }
@@ -145,6 +146,7 @@ exports[`Snapshots GridItem should render a summary grid item with negative diff
       className="gridSummaryItem"
       style={
         Object {
+          "flexGrow": 1,
           "width": "25%",
         }
       }
@@ -271,6 +273,7 @@ exports[`Snapshots GridItem should render a summary grid item with positive diff
       className="gridSummaryItem"
       style={
         Object {
+          "flexGrow": 1,
           "width": "25%",
         }
       }
@@ -710,6 +713,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
             className="gridSummaryItem"
             style={
               Object {
+                "flexGrow": 1,
                 "width": "25%",
               }
             }
@@ -816,6 +820,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
             className="gridSummaryItem"
             style={
               Object {
+                "flexGrow": 1,
                 "width": "25%",
               }
             }
@@ -923,6 +928,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
             className="gridSummaryItem"
             style={
               Object {
+                "flexGrow": 1,
                 "width": "25%",
               }
             }
@@ -1030,6 +1036,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
             className="gridSummaryItem"
             style={
               Object {
+                "flexGrow": 1,
                 "width": "25%",
               }
             }
@@ -1137,6 +1144,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
             className="gridSummaryItem"
             style={
               Object {
+                "flexGrow": 1,
                 "width": "25%",
               }
             }
@@ -1244,6 +1252,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
             className="gridSummaryItem"
             style={
               Object {
+                "flexGrow": 1,
                 "width": "25%",
               }
             }
@@ -1351,6 +1360,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
             className="gridSummaryItem"
             style={
               Object {
+                "flexGrow": 1,
                 "width": "25%",
               }
             }
@@ -1458,6 +1468,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
             className="gridSummaryItem"
             style={
               Object {
+                "flexGrow": 1,
                 "width": "25%",
               }
             }

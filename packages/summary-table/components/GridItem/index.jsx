@@ -11,6 +11,7 @@ const GridItem = ({ metric, tooltip }) =>
   <li
     className={styles.gridSummaryItem}
     style={{
+      flexGrow: 1,
       width: '25%',
     }}
     key={metric.label}

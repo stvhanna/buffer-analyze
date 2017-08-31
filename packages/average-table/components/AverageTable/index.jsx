@@ -1,8 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  Text,
-} from '@bufferapp/components';
 
 import {
   geyser,
@@ -38,7 +35,7 @@ const gridContainer = {
 const AverageTable = ({ metrics, loading, profileService }) => {
   let content = null;
   if (loading) {
-    content = <Loading active text="Summary loading..." />;
+    content = <Loading active text="Average loading..." />;
   } else if (metrics.length === 0) {
     content = <NoData />;
   } else {
