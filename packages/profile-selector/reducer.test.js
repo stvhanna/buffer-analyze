@@ -3,10 +3,16 @@ import reducer, { actions, actionTypes } from './reducer';
 import mockProfiles from './mocks/profiles';
 
 describe('reducer', () => {
-  const initialState = {
-    profiles: [],
-    isDropdownOpen: false,
-  };
+  let initialState = {};
+
+  beforeEach(() => {
+    initialState = {
+      profiles: [],
+      isDropdownOpen: false,
+      profilesFilterString: '',
+    };
+  });
+
 
   it('should initialize default state', () => {
     expect(reducer(undefined, { type: 'INIT' }))
@@ -23,7 +29,33 @@ describe('reducer', () => {
       .toEqual({
         profiles: mockProfiles,
         isDropdownOpen: false,
+        profilesFilterString: '',
       });
+  });
+
+  it('should update the profilesFilterString', () => {
+    const state = reducer(initialState, {
+      type: actionTypes.FILTER_PROFILES,
+      filterString: 'foo',
+    });
+    expect(state.profilesFilterString)
+      .toBe('foo');
+  });
+
+  it('should clear profilesFilterString on SELECT_PROFILE', () => {
+    const state = reducer(Object.assign({}, initialState, { profilesFilterString: 'foo' }), {
+      type: actionTypes.SELECT_PROFILE,
+    });
+    expect(state.profilesFilterString)
+      .toBe('');
+  });
+
+  it('should close dropdown on SELECT_PROFILE', () => {
+    const state = reducer(Object.assign({}, initialState, { isDropdownOpen: true }), {
+      type: actionTypes.SELECT_PROFILE,
+    });
+    expect(state.isDropdownOpen)
+      .toBeFalsy();
   });
 
   it('should open the dropdown', () => {
@@ -58,6 +90,22 @@ describe('actions', () => {
     expect(actions.toggleDropdown())
       .toEqual({
         type: actionTypes.TOGGLE_DROPDOWN,
+      });
+  });
+
+  it('should filter by profile username', () => {
+    expect(actions.filterProfilesByUsername({ target: { value: 'buf' } }))
+      .toEqual({
+        type: actionTypes.FILTER_PROFILES,
+        filterString: 'buf',
+      });
+  });
+
+  it('profilesFilterString should always be lowercase', () => {
+    expect(actions.filterProfilesByUsername({ target: { value: 'Buf' } }))
+      .toEqual({
+        type: actionTypes.FILTER_PROFILES,
+        filterString: 'buf',
       });
   });
 });
