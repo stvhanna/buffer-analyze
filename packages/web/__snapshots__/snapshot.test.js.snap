@@ -784,30 +784,6 @@ exports[`Snapshots App should render application 1`] = `
                 }
               }
             >
-              Insights
-            </span>
-          </span>
-          <span
-            style={
-              Object {
-                "display": "block",
-                "letterSpacing": ".075rem",
-                "marginTop": "1rem",
-                "padding": ".5rem 1rem 0",
-                "textTransform": "uppercase",
-              }
-            }
-          >
-            <span
-              style={
-                Object {
-                  "color": "#ced7df",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "fontSize": "0.7rem",
-                  "fontWeight": 400,
-                }
-              }
-            >
               Tools
             </span>
           </span>
@@ -1062,30 +1038,6 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
           </span>
         </span>
       </a>
-      <span
-        style={
-          Object {
-            "display": "block",
-            "letterSpacing": ".075rem",
-            "marginTop": "1rem",
-            "padding": ".5rem 1rem 0",
-            "textTransform": "uppercase",
-          }
-        }
-      >
-        <span
-          style={
-            Object {
-              "color": "#ced7df",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.7rem",
-              "fontWeight": 400,
-            }
-          }
-        >
-          Insights
-        </span>
-      </span>
       <span
         style={
           Object {
@@ -1379,30 +1331,6 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
           </span>
         </span>
       </a>
-      <span
-        style={
-          Object {
-            "display": "block",
-            "letterSpacing": ".075rem",
-            "marginTop": "1rem",
-            "padding": ".5rem 1rem 0",
-            "textTransform": "uppercase",
-          }
-        }
-      >
-        <span
-          style={
-            Object {
-              "color": "#ced7df",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.7rem",
-              "fontWeight": 400,
-            }
-          }
-        >
-          Insights
-        </span>
-      </span>
       <span
         style={
           Object {
@@ -1754,30 +1682,6 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
           </span>
         </span>
       </a>
-      <span
-        style={
-          Object {
-            "display": "block",
-            "letterSpacing": ".075rem",
-            "marginTop": "1rem",
-            "padding": ".5rem 1rem 0",
-            "textTransform": "uppercase",
-          }
-        }
-      >
-        <span
-          style={
-            Object {
-              "color": "#ced7df",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.7rem",
-              "fontWeight": 400,
-            }
-          }
-        >
-          Insights
-        </span>
-      </span>
       <span
         style={
           Object {
