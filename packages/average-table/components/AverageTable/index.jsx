@@ -1,16 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Text from '@bufferapp/components/Text';
 import {
   geyser,
 } from '@bufferapp/components/style/color';
 
 import {
-  Title,
   GridItem,
   Loading,
   NoData,
 } from '@bufferapp/summary-table';
+
 
 const gridStyle = {
   display: 'flex',
@@ -32,7 +33,7 @@ const gridContainer = {
   margin: '1rem 0 1.5rem',
 };
 
-const AverageTable = ({ metrics, loading, profileService }) => {
+const AverageTable = ({ metrics, loading }) => {
   let content = null;
   if (loading) {
     content = <Loading active text="Average loading..." />;
@@ -48,7 +49,9 @@ const AverageTable = ({ metrics, loading, profileService }) => {
 
   return (
     <div style={sectionContainer}>
-      <Title profileService={profileService} />
+      <h2 style={{ margin: '2rem 0 1rem' }}>
+        <Text> Average post performance </Text>
+      </h2>
       <div style={gridContainer}>
         {content}
       </div>
@@ -62,7 +65,6 @@ AverageTable.defaultProps = {
 
 AverageTable.propTypes = {
   loading: PropTypes.bool,
-  profileService: PropTypes.string.isRequired,
   metrics: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string,
     value: PropTypes.number,

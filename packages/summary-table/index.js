@@ -13,7 +13,6 @@ export default connect(
 export reducer, { actions, actionTypes } from './reducer';
 export middleware from './middleware';
 
-export Title from './components/Title';
 export GridItem from './components/GridItem';
 export Loading from './components/Loading';
 export NoData from './components/NoData';
