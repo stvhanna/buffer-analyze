@@ -47,23 +47,23 @@ const Insights = ({ profiles, ...props }) => {
   const twitterProfile = getFirstProfileForService('twitter', profiles);
   const instagramProfile = getFirstProfileForService('instagram', profiles);
   const shouldShowInsights = facebookProfile || twitterProfile || instagramProfile;
-  if (shouldShowInsights) {
-    return (
-      <div>
-        <Label>Insights</Label>
-        { facebookProfile && <Item profileId={facebookProfile.id} href={`/insights/facebook/${facebookProfile.id}`} {...props}>Facebook</Item>}
-        { twitterProfile && <Item profileId={twitterProfile.id} href={`/insights/twitter/${twitterProfile.id}`} {...props}>Twitter</Item>}
-        { instagramProfile && <Item profileId={instagramProfile.id} href={`/insights/instagram/${instagramProfile.id}`} {...props}>Instagram</Item>}
-      </div>
-    );
+  if (!shouldShowInsights) {
+    return null;
   }
-  return null;
+  return (
+    <div>
+      <Label>Insights</Label>
+      { facebookProfile && <Item profileId={facebookProfile.id} href={`/insights/facebook/${facebookProfile.id}`} {...props}>Facebook</Item>}
+      { twitterProfile && <Item profileId={twitterProfile.id} href={`/insights/twitter/${twitterProfile.id}`} {...props}>Twitter</Item>}
+      { instagramProfile && <Item profileId={instagramProfile.id} href={`/insights/instagram/${instagramProfile.id}`} {...props}>Instagram</Item>}
+    </div>
+  );
 };
 
 Insights.propTypes = {
-  profiles: PropTypes.arrayOf({
-    service: PropTypes.string,
-  }).isRequired,
+  profiles: PropTypes.arrayOf(PropTypes.shape({
+    service: PropTypes.String,
+  })).isRequired,
 };
 
 const NavSidebar = props => (

@@ -14,8 +14,7 @@ const twitterProfiles = [
     id: 2,
     service: 'twitter',
   },
-];
-
+]; 
 const facebookProfiles = [
   {
     id: 3,
@@ -46,7 +45,7 @@ storiesOf('NavSidebar')
   .add('if there are no profiles it should not show the Insights section', () => (
     <div style={{ width: '260px', height: '100%', display: 'flex' }}>
       <NavSidebar
-        route="/insights/twitter"
+        route="/"
         profiles={[]}
         onClick={action('click item')}
       />
