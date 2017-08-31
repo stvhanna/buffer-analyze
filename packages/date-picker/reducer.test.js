@@ -68,7 +68,6 @@ describe('reducer', () => {
         type: actionTypes.CLOSE_DATE_PICKER,
       });
 
-      console.log(closedDatePickerState);
       expect(closedDatePickerState.startDate).toBe(state.startDate);
       expect(closedDatePickerState.endDate).toBe(state.endDate);
     });
