@@ -20,10 +20,6 @@ const gridStyle = {
   borderRadius: '2px',
 };
 
-const sectionContainer = {
-  marginLeft: '2rem',
-};
-
 const gridContainer = {
   minHeight: '12rem',
   position: 'relative',
@@ -45,7 +41,7 @@ const SummaryTable = ({ metrics, loading, profileService }) => {
   }
 
   return (
-    <div style={sectionContainer}>
+    <div>
       <Title profileService={profileService} />
       <div style={gridContainer}>
         {content}
