@@ -89,6 +89,7 @@ ProfileBadge.propTypes = {
 };
 
 const ProfileHeader = ({ profile, followersCount }) => {
+  if (!profile) return null;
 
   let helpLinkUrl = 'https://buffer.com/twitter-overview-analytics-help#getting-your-data';
   let followersWording = 'followers';
@@ -135,7 +136,7 @@ ProfileHeader.propTypes = {
     username: PropTypes.string.isRequired,
     avatarUrl: PropTypes.string.isRequired,
     id: PropTypes.string.isRequired,
-  }).isRequired,
+  }),
   followersCount: PropTypes.number.isRequired,
 };
 

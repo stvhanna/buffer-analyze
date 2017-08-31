@@ -21,7 +21,7 @@ const InsightsPage = ({ match, location }) => (
     <NavSidebar route={location.pathname} />
     <div style={pageContentStyle}>
       <ProfileSelector profileService={match.params.service} selectedProfileId={match.params.id} />
-      <ProfileHeader />
+      <ProfileHeader selectedProfileId={match.params.id} />
       <SummaryTable profileService={match.params.service} />
     </div>
   </div>

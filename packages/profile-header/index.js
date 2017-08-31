@@ -1,10 +1,12 @@
 import { connect } from 'react-redux';
 import ProfileHeader from './components/ProfileHeader';
 
+// this one gets the state and converts to props
 // default export = container
 export default connect(
-  state => ({
-    followersCount: state.followersCount,
+  (state, props) => ({
+    profile: state.profiles.profiles.find(profile => profile.id === props.selectedProfileId),
+    followersCount: Number(state.profileHeader.followersCount),
   }),
 )(ProfileHeader);
 

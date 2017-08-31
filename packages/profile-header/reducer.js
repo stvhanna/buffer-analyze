@@ -12,7 +12,8 @@ export default (state = initialState, action) => {
       return initialState;
     case `followers_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
       return {
-        followersCount: action.result,
+        ...state,
+        followersCount: action.result.currentFollowerCount,
       };
     default:
       return state;

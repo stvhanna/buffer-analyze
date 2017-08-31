@@ -14,5 +14,5 @@ module.exports = method(
       },
       json: true,
     })
-      .then(result => JSON.parse(result)),
+      .then(result => result.response),
 );
