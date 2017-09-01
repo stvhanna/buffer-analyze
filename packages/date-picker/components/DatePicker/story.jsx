@@ -6,7 +6,8 @@ import moment from 'moment';
 
 import DatePicker from './index';
 
-Date.now = () => new Date(Date.UTC(2017, 7, 31)).valueOf();
+const mockTimestamp = moment('2017-08-31').valueOf();
+Date.now = () => mockTimestamp;
 
 storiesOf('DatePicker')
   .addDecorator(checkA11y)
