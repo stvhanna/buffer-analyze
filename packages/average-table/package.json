@@ -10,7 +10,17 @@
     "test-update": "jest -u --config=../../.jestrc.json"
   },
   "author": "federicoweber@gmail.com",
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!@bufferapp/*)"
+    ],
+    "verbose": true,
+    "moduleNameMapper": {
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
+  },
   "dependencies": {
+    "@bufferapp/async-data-fetch": "0.5.25",
     "@bufferapp/summary-table": "0.0.1"
   },
   "devDependencies": {
