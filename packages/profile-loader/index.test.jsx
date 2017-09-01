@@ -5,6 +5,7 @@ import ProfileLoaderContainer, {
   reducer,
   actions,
   actionTypes,
+  middleware,
 } from './index';
 import ProfileLoader from './components/ProfileLoader';
 
@@ -43,6 +44,11 @@ describe('ProfileLoaderContainer', () => {
 
   it('should export actionTypes', () => {
     expect(actionTypes)
+      .toBeDefined();
+  });
+
+  it('should export middleware', () => {
+    expect(middleware)
       .toBeDefined();
   });
 });

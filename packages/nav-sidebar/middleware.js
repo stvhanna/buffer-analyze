@@ -1,5 +1,5 @@
 import { push } from 'react-router-redux';
-import { actionTypes, actions as asyncDataFetchActions } from '@bufferapp/async-data-fetch';
+import { actionTypes } from '@bufferapp/async-data-fetch';
 import { actions as profilesActions, actionTypes as profileActionTypes } from '@bufferapp/analyze-profile-selector';
 
 const getProfileIdFromRoute = (state) => {
@@ -30,11 +30,6 @@ const getProfileRoute = (state, id) => {
 
 export default ({ dispatch, getState }) => next => (action) => {
   switch (action.type) {
-    case `login_${actionTypes.FETCH_SUCCESS}`:
-      dispatch(asyncDataFetchActions.fetch({
-        name: 'profiles',
-      }));
-      break;
     case `profiles_${actionTypes.FETCH_SUCCESS}`:
       if (getProfileIdFromRoute(getState())) {
         dispatch(profilesActions.selectProfile(getProfileIdFromRoute(getState())));
