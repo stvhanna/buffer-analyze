@@ -14,6 +14,7 @@ import { middleware as performanceMiddleware } from '@bufferapp/performance-trac
 import { middleware as summaryMiddleware } from '@bufferapp/summary-table';
 import { middleware as profileHeaderMiddleware } from '@bufferapp/profile-header';
 import { middleware as datePickerMiddleware } from '@bufferapp/analyze-date-picker';
+import { middleware as profileLoaderMiddleware } from '@bufferapp/profile-loader';
 import reducers from './reducers';
 
 export const history = createHistory();
@@ -39,6 +40,7 @@ const configureStore = (initialstate) => {
         summaryMiddleware,
         profileHeaderMiddleware,
         datePickerMiddleware,
+        profileLoaderMiddleware,
       ),
     ),
   );
