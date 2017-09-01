@@ -6,6 +6,8 @@ import moment from 'moment';
 
 import DatePicker from './index';
 
+Date.now = () => new Date(Date.UTC(2017, 7, 31)).valueOf();
+
 storiesOf('DatePicker')
   .addDecorator(checkA11y)
   .add('there is no date if a single day is selected', () => (

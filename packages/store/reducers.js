@@ -7,6 +7,7 @@ import { reducer as asyncDataFetchReducer } from '@bufferapp/async-data-fetch';
 import { reducer as navSidebarReducer } from '@bufferapp/nav-sidebar';
 import { reducer as summaryReducer } from '@bufferapp/summary-table';
 import { reducer as profileReducer } from '@bufferapp/analyze-profile-selector';
+import { reducer as profileHeaderReducer } from '@bufferapp/profile-header';
 import { reducer as datePickerReducer } from '@bufferapp/analyze-date-picker';
 import { reducer as profileLoaderReducer } from '@bufferapp/profile-loader';
 
@@ -19,6 +20,7 @@ export default combineReducers({
   navSidebar: navSidebarReducer,
   summary: summaryReducer,
   profiles: profileReducer,
+  profileHeader: profileHeaderReducer,
   date: datePickerReducer,
   profileLoader: profileLoaderReducer,
 });

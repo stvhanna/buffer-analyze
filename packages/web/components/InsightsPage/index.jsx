@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import NavSidebar from '@bufferapp/nav-sidebar';
 import SummaryTable from '@bufferapp/summary-table';
 import ProfileSelector from '@bufferapp/analyze-profile-selector';
+import ProfileHeader from '@bufferapp/profile-header';
 import DatePicker from '@bufferapp/analyze-date-picker';
 import ProfileLoader from '@bufferapp/profile-loader';
 import Divider from '@bufferapp/components/Divider';
@@ -44,6 +45,7 @@ const InsightsPage = ({ match, location }) => (
           <DatePicker />
         </div>
         <Divider marginTop="1rem" marginBottom="1rem" />
+        <ProfileHeader selectedProfileId={match.params.id} />
         <SummaryTable profileService={match.params.service} />
       </ProfileLoader>
     </div>

@@ -1,13 +1,14 @@
 {
-  "name": "@bufferapp/analyze-shared-components",
+  "name": "@bufferapp/profile-header",
   "version": "0.0.1",
-  "description": "Shared components for Analyze",
+  "description": "The profile header for Insights",
   "main": "index.js",
   "scripts": {
     "start": "start-storybook -p 9001",
     "lint": "eslint . --ignore-pattern coverage node_modules",
-    "test": "yarn run lint && sh ../../package_test.sh",
-    "test-update": "jest -u "
+    "test": "sh ../../package_test.sh",
+    "test-update": "jest -u",
+    "test-watch": "jest --watch"
   },
   "jest": {
     "transformIgnorePatterns": [
@@ -18,10 +19,14 @@
       "\\.(css|less)$": "identity-obj-proxy"
     }
   },
-  "author": "mike@msanroman.io",
+  "author": "tik.hakobyan@gmail.com",
   "dependencies": {
-    "moment": "^2.18.1",
-    "@bufferapp/components": "0.5.28"
+    "numeral": "2.0.6",
+    "@bufferapp/components": "0.5.28",
+    "@bufferapp/async-data-fetch": "0.5.25",
+    "@bufferapp/nav-sidebar": "0.0.1",
+    "@bufferapp/analyze-profile-selector": "0.0.1",
+    "@bufferapp/analyze-shared-components": "0.0.1"
   },
   "devDependencies": {
     "@storybook/addon-storyshots": "3.1.4",

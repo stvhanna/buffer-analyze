@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import React from 'react';
 import PropTypes from 'prop-types';
+import { ProfileBadge } from '@bufferapp/analyze-shared-components';
 import Dropdown, {
   DropdownTrigger,
   DropdownContent,
@@ -33,7 +34,8 @@ import {
   dropdownTriggerActive,
 } from './style.less';
 
-import DropdownItem, { ProfileBadge } from './components/DropdownItem';
+
+import DropdownItem from './components/DropdownItem';
 
 function renderDropdownItem(profile, selectedProfileId, selectProfile) {
   const onClick = () => {
@@ -103,7 +105,12 @@ const ProfileSelectorDropdown = ({
         onHide={toggleDropdown}
       >
         <DropdownTrigger className={triggerClasses} style={{ display: 'flex' }} >
-          <ProfileBadge avatarUrl={selectedProfile.avatarUrl} service={selectedProfile.service} />
+          <ProfileBadge
+            avatarUrl={selectedProfile.avatarUrl}
+            service={selectedProfile.service}
+            avatarSize={24}
+            socialIconSize={11}
+          />
           <Text weight="bold" size="small">{selectedProfile.username}</Text>
           <span style={{ marginLeft: 'auto' }} >
             { isDropdownOpen && <ArrowUpIcon /> }
