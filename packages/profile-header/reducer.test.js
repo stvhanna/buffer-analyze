@@ -8,6 +8,12 @@ describe('reducer', () => {
     }).followersCount;
     expect(followersCount).toEqual(0);
   });
+  it('has followers count as 0 upon receiving FETCH_START', () => {
+    const followersCount = reducer(undefined, {
+      type: `followers_${asyncDataFetchActions.FETCH_START}`,
+    }).followersCount;
+    expect(followersCount).toEqual(0);
+  });
   it('updates the state with the followers count received on fetch_success', () => {
     const state = reducer(undefined, {
       type: `followers_${asyncDataFetchActions.FETCH_SUCCESS}`,
