@@ -10,14 +10,15 @@ import SocialIcon from '../SocialIcon';
 const ProfileBadge = ({ avatarUrl, service, avatarSize, socialIconSize }) => {
   const avatarPixelSize = `${avatarSize}px`;
   return (
-    <div style={{
-      position: 'relative',
-      marginRight: '10px',
-      width: avatarPixelSize,
-      height: avatarPixelSize,
-      background: outerSpaceUltraLight,
-      borderRadius: '50%',
-    }}
+    <div
+      style={{
+        position: 'relative',
+        marginRight: '10px',
+        width: avatarPixelSize,
+        height: avatarPixelSize,
+        background: outerSpaceUltraLight,
+        borderRadius: '50%',
+      }}
     >
       <Image
         border={'circle'}
