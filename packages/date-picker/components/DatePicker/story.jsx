@@ -6,7 +6,7 @@ import moment from 'moment';
 
 import DatePicker from './index';
 
-Date.now = jest.fn(() => new Date(Date.UTC(2017, 7, 31)).valueOf());
+Date.now = () => new Date(Date.UTC(2017, 7, 31)).valueOf();
 
 storiesOf('DatePicker')
   .addDecorator(checkA11y)
