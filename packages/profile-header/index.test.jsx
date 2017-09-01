@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import { Provider } from 'react-redux';
-import {
+import Header, {
   reducer,
   actions,
   actionTypes,
@@ -18,14 +18,23 @@ const storeFake = state => ({
 
 describe('ProfileHeader', () => {
   it('should render', () => {
+    const profile = {
+      id: '4e88a092512f7e1556000000',
+      avatarUrl: 'testurl',
+      service: 'facebook',
+      username: 'Buffer',
+    };
     const store = storeFake({
+      profiles: {
+        profiles: [profile],
+      },
       profileHeader: {
         followersCount: 22,
       },
     });
     const wrapper = mount(
       <Provider store={store}>
-        <ProfileHeader followersCount={22} />
+        <Header followersCount={22} profile={profile} />
       </Provider>,
     );
     expect(wrapper.find(ProfileHeader).length)
