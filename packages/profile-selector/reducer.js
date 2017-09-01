@@ -10,6 +10,7 @@ const initialState = {
   profiles: [],
   isDropdownOpen: false,
   profilesFilterString: '',
+  selectedProfileId: '',
 };
 
 export default (state = initialState, action) => {
@@ -26,6 +27,7 @@ export default (state = initialState, action) => {
       return Object.assign({}, state, {
         profilesFilterString: '',
         isDropdownOpen: false,
+        selectedProfileId: action.id,
       });
     case actionTypes.TOGGLE_DROPDOWN:
       return Object.assign({}, state, {

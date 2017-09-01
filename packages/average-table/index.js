@@ -2,11 +2,15 @@ import { connect } from 'react-redux';
 import AverageTable from './components/AverageTable';
 
 // default export = container
+function mapStateToProps (state) {
+  console.log(state);
+  return {
+    loading: state.average.loading,
+    metrics: state.average.metrics,
+  };
+}
 export default connect(
-  state => ({
-    loading: state.summary.loading,
-    metrics: state.summary.metrics,
-  }),
+  mapStateToProps,
 )(AverageTable);
 
 // export reducer, actions and action types

@@ -1,14 +1,32 @@
 import React from 'react';
-import { mount } from 'enzyme';
-import { Provider } from 'react-redux';
-import AverageTable, {
+import { shallow } from 'enzyme';
+import configureMockStore from 'redux-mock-store';
+import AverageTableContainer, {
   reducer,
   actions,
   actionTypes,
   middleware,
 } from './index';
+import AverageTable from './components/AverageTable';
 
 describe('AverageTable', () => {
+  it('should render', () => {
+    const mockStore = configureMockStore();
+    const state = {
+      average: {
+        loading: true,
+        metrics: [],
+      },
+    };
+    const store = mockStore(state);
+
+    const component = shallow(<AverageTableContainer
+      store={store}
+    />);
+    expect(component.find(AverageTable).length)
+      .toBe(1);
+  });
+
   it('should export reducer', () => {
     expect(reducer)
       .toBeDefined();

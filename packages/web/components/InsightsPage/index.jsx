@@ -38,7 +38,6 @@ const InsightsPage = ({ match, location }) => (
         <div style={profileSelectorContainer}>
           <ProfileSelector
             profileService={match.params.service}
-            selectedProfileId={match.params.id}
           />
         </div>
         <div style={datePickerContainer}>
