@@ -19,10 +19,13 @@ const storeFake = state => ({
 describe('ProfileHeader', () => {
   it('should render', () => {
     const store = storeFake({
+      profileHeader: {
+        followersCount: 22,
+      },
     });
     const wrapper = mount(
       <Provider store={store}>
-        <ProfileHeader />
+        <ProfileHeader followersCount={22} />
       </Provider>,
     );
     expect(wrapper.find(ProfileHeader).length)
