@@ -2557,17 +2557,17 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker selectedMarker startMarker endMarker"
+                        className="marker hoverMarker selectedMarker endMarker"
                       >
                         30
                       </span>
                     </button>
                     <span
-                      className="markerConnector markerConectorActive"
+                      className="markerConnector"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="day inactiveDay"
                     data-tip=""
                   >
                     <span
@@ -2602,7 +2602,7 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker todayMarker"
+                        className="marker todayMarker"
                       >
                         31
                       </span>
@@ -4730,7 +4730,7 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                     />
                   </div>
                   <div
-                    className="day"
+                    className="day inactiveDay"
                     data-tip=""
                   >
                     <span
@@ -4765,7 +4765,7 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker todayMarker"
+                        className="marker todayMarker"
                       >
                         31
                       </span>
@@ -5005,14 +5005,14 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
             className="headerList"
           >
             <li
-              className="headerListItem headerListItemInactive"
-              data-tip={null}
+              className="headerListItem headerListItemInactive headerListItemDisabled"
+              data-tip="We don't have complete data for this range."
             >
               <button
                 aria-label={null}
                 disabled={undefined}
                 onBlur={[Function]}
-                onClick={[Function]}
+                onClick={null}
                 onFocus={[Function]}
                 onMouseEnter={[Function]}
                 onMouseLeave={[Function]}
@@ -5040,14 +5040,14 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive"
-              data-tip={null}
+              className="headerListItem headerListItemInactive headerListItemDisabled"
+              data-tip="We don't have complete data for this range."
             >
               <button
                 aria-label={null}
                 disabled={undefined}
                 onBlur={[Function]}
-                onClick={[Function]}
+                onClick={null}
                 onFocus={[Function]}
                 onMouseEnter={[Function]}
                 onMouseLeave={[Function]}

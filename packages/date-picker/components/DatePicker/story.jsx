@@ -6,7 +6,8 @@ import moment from 'moment';
 
 import DatePicker from './index';
 
-Date.now = () => new Date(Date.UTC(2017, 7, 31)).valueOf();
+const mockTimestamp = moment('2017-08-31').valueOf();
+Date.now = () => mockTimestamp;
 
 storiesOf('DatePicker')
   .addDecorator(checkA11y)
@@ -29,11 +30,13 @@ storiesOf('DatePicker')
       month={moment().startOf('month').unix()}
       isOpen
       selectPreset={action('select preset')}
+      maxDate={moment().valueOf()}
     />
   ))
   .add('should display some options as disabled', () => (
     <DatePicker
-      minStartDate={moment().subtract(28, 'days')}
+      minDate={moment().subtract(28, 'days').valueOf()}
+      maxDate={moment().valueOf()}
       startDate={moment().subtract(7, 'days').unix()}
       endDate={moment().subtract(1, 'day').unix()}
       close={action('close')}
@@ -44,8 +47,8 @@ storiesOf('DatePicker')
   ))
   .add('should be able to have a custom date range selected', () => (
     <DatePicker
-      minDate={moment().subtract(90, 'days').unix()}
-      maxDate={moment().unix()}
+      minDate={moment().subtract(90, 'days').valueOf()}
+      maxDate={moment().valueOf()}
       startDate={moment().subtract(10, 'days').unix()}
       endDate={moment().subtract(1, 'day').unix()}
       month={moment().startOf('month').unix()}
