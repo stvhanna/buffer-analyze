@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import AverageTable from '@bufferapp/average-table';
 import NavSidebar from '@bufferapp/nav-sidebar';
 import SummaryTable from '@bufferapp/summary-table';
 import ProfileSelector from '@bufferapp/analyze-profile-selector';
@@ -46,6 +47,8 @@ const InsightsPage = ({ match, location }) => (
         <Divider marginTop="1rem" marginBottom="1rem" />
         <ProfileHeader selectedProfileId={match.params.id} />
         <SummaryTable profileService={match.params.service} />
+        <Divider marginTop="1rem" marginBottom="1rem" />
+        <AverageTable />
       </ProfileLoader>
     </div>
   </div>

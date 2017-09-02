@@ -3,7 +3,6 @@ import AverageTable from './components/AverageTable';
 
 // default export = container
 function mapStateToProps (state) {
-  console.log(state);
   return {
     loading: state.average.loading,
     metrics: state.average.metrics,

@@ -3,21 +3,16 @@ const rp = require('request-promise');
 const moment = require('moment');
 const DateRange = require('../utils/DateRange');
 
+// We are using this to filter down the metrics we want
 const LABELS = {
-  engaged_users: 'Engaged Users',
-  post_impressions: 'Post Impressions',
-  reactions: 'Reactions',
-  post_reach: 'Post Reach',
-  page_engagements: 'Page & Post Engagements',
-  post_clicks: 'Post Clicks',
-  new_followers: 'New Fans',
-  posts_count: 'Posts',
-  favorites: 'Likes',
-  impressions: 'Impressions',
-  replies: 'Replies',
-  retweets: 'Retweets',
-  url_clicks: 'Clicks',
-  engagements: 'Engagements',
+  // Facebook metrics
+  post_impressions: 'Impression average',
+  page_engagements: 'Engagement average',
+  post_clicks: 'Click average',
+  // Twitter metrics
+  impressions: 'Impression average',
+  engagements: 'Engagement Average',
+  url_clicks: 'Click average',
 };
 
 const requestTotals = (profileId, dateRange, accessToken) =>
@@ -33,26 +28,38 @@ const requestTotals = (profileId, dateRange, accessToken) =>
     json: true,
   });
 
-const excludeFollowerCount = metrics => metrics.filter(metric => metric !== 'followers');
-
-const percentageDifference = (value, pastValue) => {
+function percentageDifference (value, pastValue) {
   const difference = value - pastValue;
   return Math.ceil((difference / pastValue) * 100);
-};
+}
 
-const summarize = (metric, currentPeriod, pastPeriod) => {
-  const pastValue = pastPeriod[metric];
-  const value = currentPeriod[metric];
-  return {
-    value,
-    diff: percentageDifference(value, pastValue),
-    label: LABELS[metric],
-  };
+function averageValue(value, quantity) {
+  return Math.round(value / quantity);
+}
+
+const summarize = (
+  metric,
+  currentPeriod,
+  currentPeriodPostCount,
+  pastPeriod,
+  pastPeriodPostCount,
+) => {
+  const pastValue = averageValue(pastPeriod[metric], pastPeriodPostCount);
+  const value = averageValue(currentPeriod[metric], currentPeriodPostCount);
+  const label = LABELS[metric];
+  if (label) {
+    return {
+      diff: percentageDifference(value, pastValue),
+      label: LABELS[metric],
+      value,
+    };
+  }
+  return null;
 };
 
 module.exports = method(
-  'summary',
-  'fetch analytics summary for profiles and pages',
+  'average',
+  'fetch analytics average for profiles and pages',
   ({ profileId, startDate, endDate }, { session }) => {
     const end = moment.unix(endDate).format('MM/DD/YYYY');
     const start = moment.unix(startDate).format('MM/DD/YYYY');
@@ -67,10 +74,20 @@ module.exports = method(
       .then((response) => {
         const currentPeriodResult = response[0].response;
         const pastPeriodResult = response[1].response;
+        const currentPeriodPostCount = currentPeriodResult.posts_count;
+        const pastPeriodPostCount = pastPeriodResult.posts_count;
         const metrics = Object.keys(currentPeriodResult);
-        return excludeFollowerCount(metrics).map(metric =>
-          summarize(metric, currentPeriodResult, pastPeriodResult),
-        );
+        return metrics
+          .map(metric =>
+            summarize(
+              metric,
+              currentPeriodResult,
+              currentPeriodPostCount,
+              pastPeriodResult,
+              pastPeriodPostCount,
+            ),
+          )
+          .filter(metric => metric !== null);
       })
       .catch(() => []);
   },

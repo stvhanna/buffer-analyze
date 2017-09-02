@@ -23,10 +23,6 @@ const gridStyle = {
   borderRadius: '2px',
 };
 
-const sectionContainer = {
-  marginLeft: '2rem',
-};
-
 const gridContainer = {
   minHeight: '12rem',
   position: 'relative',
@@ -48,7 +44,7 @@ const AverageTable = ({ metrics, loading }) => {
   }
 
   return (
-    <div style={sectionContainer}>
+    <div>
       <h2 style={{ margin: '2rem 0 1rem' }}>
         <Text> Average post performance </Text>
       </h2>
