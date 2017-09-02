@@ -9,13 +9,7 @@ exports[`Snapshots AverageTable should render a "no data" state 1`] = `
       }
     }
   >
-    <div
-      style={
-        Object {
-          "marginLeft": "2rem",
-        }
-      }
-    >
+    <div>
       <h2
         style={
           Object {
@@ -129,13 +123,7 @@ exports[`Snapshots AverageTable should render a loading state 1`] = `
       }
     }
   >
-    <div
-      style={
-        Object {
-          "marginLeft": "2rem",
-        }
-      }
-    >
+    <div>
       <h2
         style={
           Object {
@@ -283,13 +271,7 @@ exports[`Snapshots AverageTable should render the average table 1`] = `
       }
     }
   >
-    <div
-      style={
-        Object {
-          "marginLeft": "2rem",
-        }
-      }
-    >
+    <div>
       <h2
         style={
           Object {
