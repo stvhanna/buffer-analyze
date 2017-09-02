@@ -19,7 +19,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
       dispatch(actions.fetch({
         name: 'average',
         args: {
-          profileId: getState().profile.selectedProfileId,
+          profileId: getState().profiles.selectedProfileId,
           startDate: action.startDate,
           endDate: action.endDate,
         },
