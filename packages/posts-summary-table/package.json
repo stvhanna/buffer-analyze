@@ -11,6 +11,14 @@
   },
   "author": "tik.hakobyan@gmail.com",
   "dependencies": {
+    "numeral": "2.0.6",
+    "@bufferapp/components": "0.5.28",
+    "@bufferapp/async-data-fetch": "0.5.25",
+    "@bufferapp/nav-sidebar": "0.0.1",
+    "@bufferapp/analyze-profile-selector": "0.0.1",
+    "@bufferapp/analyze-date-picker": "0.0.1",
+    "@bufferapp/analyze-shared-components": "0.0.1",
+    "@bufferapp/summary-table": "0.0.1"
   },
   "devDependencies": {
     "@storybook/addon-storyshots": "3.1.4",
