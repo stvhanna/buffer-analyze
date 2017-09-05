@@ -10,7 +10,7 @@ const LABELS = {
   post_impressions: 'Post Impressions',
   post_reach: 'Post Reach',
   reactions: 'Reactions',
-  comments: 'comments',
+  comments: 'Comments',
   shares: 'Shares',
   // twitter
   retweets: 'Retweets',
