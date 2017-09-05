@@ -35,6 +35,7 @@ const mapStateToProps = (state, ownProps) => {
     isDropdownOpen: state.profiles.isDropdownOpen,
     profiles: filteredProfiles,
     profilesFilterString: state.profiles.profilesFilterString,
+    selectedProfileId: state.profiles.selectedProfileId,
   };
 };
 

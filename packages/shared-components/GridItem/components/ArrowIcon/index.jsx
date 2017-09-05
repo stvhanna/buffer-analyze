@@ -9,7 +9,7 @@ const ArrowIcon = ({ diff }) => {
   if (diff > 0) {
     return <ArrowLongUpIcon color="shamrock" />;
   } else if (diff === 0) {
-    return <ArrowLongRightIcon color="#8D969E" />;
+    return <ArrowLongRightIcon />; // Missing 8D969E color in buffer components
   } else if (diff < 0) {
     return <ArrowLongDownIcon color="torchRed" />;
   }

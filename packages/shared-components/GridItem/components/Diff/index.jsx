@@ -5,31 +5,44 @@ import {
   fontSizeLarge,
 } from '@bufferapp/components/style/font';
 
-import styles from '../../styles.less';
 import ArrowIcon from '../ArrowIcon';
 import TruncatedNumber from '../TruncatedNumber';
+
+const baseMargin = 10;
+const gridSummaryItemDiffContainer = {
+  color: '#8D969E',
+  display: 'inline-block',
+  fontSize: '18px',
+  fontWeight: 600,
+  marginLeft: `${0.5 * baseMargin}px`,
+};
+const gridSummaryItemIcon = {
+  display: 'inline-block',
+  marginLeft: `${baseMargin}px`,
+  height: '1rem',
+};
+
 
 const Diff = ({ diff }) => {
   if (diff === null) {
     return null;
   }
-  let containerClassName = styles.gridSummaryItemDiffContainer;
   let color = '#8D969E';
   if (diff > 0) {
-    containerClassName += ` ${styles.gridSummaryItemDiffContainerPositive}`;
+    gridSummaryItemDiffContainer.color = '#2FD566';
     color = 'shamrock';
   } else if (diff < 0) {
-    containerClassName += ` ${styles.gridSummaryItemDiffContainerNegative}`;
+    gridSummaryItemDiffContainer.color = '#FF1E1E';
     color = 'torchRed';
   }
 
   return (
     <div>
-      <span className={styles.gridSummaryItemIcon}>
+      <span style={gridSummaryItemIcon}>
         <ArrowIcon diff={diff} />
       </span>
-      <div className={containerClassName}>
-        <span className={styles.gridSummaryItemDiff}>
+      <div style={gridSummaryItemDiffContainer}>
+        <span>
           <span
             style={{
               fontSize: fontSizeLarge,

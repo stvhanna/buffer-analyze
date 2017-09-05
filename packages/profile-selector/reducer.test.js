@@ -10,6 +10,7 @@ describe('reducer', () => {
       profiles: [],
       isDropdownOpen: false,
       profilesFilterString: '',
+      selectedProfileId: '',
     };
   });
 
@@ -30,6 +31,7 @@ describe('reducer', () => {
         profiles: mockProfiles,
         isDropdownOpen: false,
         profilesFilterString: '',
+        selectedProfileId: '',
       });
   });
 
@@ -56,6 +58,16 @@ describe('reducer', () => {
     });
     expect(state.isDropdownOpen)
       .toBeFalsy();
+  });
+
+  it('should update selectedProfileId on SELECT_PROFILE', () => {
+    const selectedProfileId = '1234foo';
+    const state = reducer(Object.assign({}, initialState, { isDropdownOpen: true }), {
+      type: actionTypes.SELECT_PROFILE,
+      id: selectedProfileId,
+    });
+    expect(state.selectedProfileId)
+      .toBe(selectedProfileId);
   });
 
   it('should open the dropdown', () => {
