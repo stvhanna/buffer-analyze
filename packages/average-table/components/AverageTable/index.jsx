@@ -7,11 +7,10 @@ import {
 } from '@bufferapp/components/style/color';
 
 import {
+  ChartStateNoData as NoData,
+  ChartStateLoading as Loading,
   GridItem,
-  Loading,
-  NoData,
-} from '@bufferapp/summary-table';
-
+} from '@bufferapp/analyze-shared-components';
 
 const gridStyle = {
   display: 'flex',

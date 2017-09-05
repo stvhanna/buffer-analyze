@@ -315,16 +315,29 @@ exports[`Snapshots AverageTable should render the average table 1`] = `
           }
         >
           <li
-            className="gridSummaryItem"
             style={
               Object {
+                "borderBottom": "solid 1px #CED7DF",
+                "borderRight": "solid 1px #CED7DF",
+                "boxSizing": "border-box",
+                "display": "inline-block",
                 "flexGrow": 1,
+                "listStyle": "none",
+                "paddingBottom": "15px",
                 "width": "25%",
               }
             }
           >
             <span
-              className="gridSummaryItemLabel"
+              style={
+                Object {
+                  "display": "block",
+                  "fontSize": "12px",
+                  "fontWeight": 600,
+                  "marginLeft": "15px",
+                  "marginTop": "15px",
+                }
+              }
             >
               <span
                 data-tip={null}
@@ -344,13 +357,31 @@ exports[`Snapshots AverageTable should render the average table 1`] = `
               </span>
             </span>
             <div
-              className="gridSummaryItemValueWrapper"
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "flex": 1,
+                  "flexDirection": "row",
+                }
+              }
             >
               <div
-                className="gridSummaryItemValueContainer"
+                style={
+                  Object {
+                    "display": "inline-block",
+                  }
+                }
               >
                 <span
-                  className="gridSummaryItemValue"
+                  style={
+                    Object {
+                      "color": "#323b43",
+                      "fontSize": "2em",
+                      "fontWeight": 600,
+                      "marginLeft": "15px",
+                    }
+                  }
                 >
                   <span
                     style={
@@ -370,7 +401,13 @@ exports[`Snapshots AverageTable should render the average table 1`] = `
               </div>
               <div>
                 <span
-                  className="gridSummaryItemIcon"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "height": "1rem",
+                      "marginLeft": "10px",
+                    }
+                  }
                 >
                   <svg
                     height="100%"
@@ -397,11 +434,17 @@ exports[`Snapshots AverageTable should render the average table 1`] = `
                   </svg>
                 </span>
                 <div
-                  className="gridSummaryItemDiffContainer gridSummaryItemDiffContainerPositive"
+                  style={
+                    Object {
+                      "color": "#FF1E1E",
+                      "display": "inline-block",
+                      "fontSize": "18px",
+                      "fontWeight": 600,
+                      "marginLeft": "5px",
+                    }
+                  }
                 >
-                  <span
-                    className="gridSummaryItemDiff"
-                  >
+                  <span>
                     <span
                       style={
                         Object {
@@ -422,16 +465,29 @@ exports[`Snapshots AverageTable should render the average table 1`] = `
             </div>
           </li>
           <li
-            className="gridSummaryItem"
             style={
               Object {
+                "borderBottom": "solid 1px #CED7DF",
+                "borderRight": "solid 1px #CED7DF",
+                "boxSizing": "border-box",
+                "display": "inline-block",
                 "flexGrow": 1,
+                "listStyle": "none",
+                "paddingBottom": "15px",
                 "width": "25%",
               }
             }
           >
             <span
-              className="gridSummaryItemLabel"
+              style={
+                Object {
+                  "display": "block",
+                  "fontSize": "12px",
+                  "fontWeight": 600,
+                  "marginLeft": "15px",
+                  "marginTop": "15px",
+                }
+              }
             >
               <span
                 data-tip={null}
@@ -451,13 +507,31 @@ exports[`Snapshots AverageTable should render the average table 1`] = `
               </span>
             </span>
             <div
-              className="gridSummaryItemValueWrapper"
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "flex": 1,
+                  "flexDirection": "row",
+                }
+              }
             >
               <div
-                className="gridSummaryItemValueContainer"
+                style={
+                  Object {
+                    "display": "inline-block",
+                  }
+                }
               >
                 <span
-                  className="gridSummaryItemValue"
+                  style={
+                    Object {
+                      "color": "#323b43",
+                      "fontSize": "2em",
+                      "fontWeight": 600,
+                      "marginLeft": "15px",
+                    }
+                  }
                 >
                   <span
                     style={
@@ -477,7 +551,13 @@ exports[`Snapshots AverageTable should render the average table 1`] = `
               </div>
               <div>
                 <span
-                  className="gridSummaryItemIcon"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "height": "1rem",
+                      "marginLeft": "10px",
+                    }
+                  }
                 >
                   <svg
                     height="100%"
@@ -505,11 +585,17 @@ exports[`Snapshots AverageTable should render the average table 1`] = `
                   </svg>
                 </span>
                 <div
-                  className="gridSummaryItemDiffContainer gridSummaryItemDiffContainerNegative"
+                  style={
+                    Object {
+                      "color": "#FF1E1E",
+                      "display": "inline-block",
+                      "fontSize": "18px",
+                      "fontWeight": 600,
+                      "marginLeft": "5px",
+                    }
+                  }
                 >
-                  <span
-                    className="gridSummaryItemDiff"
-                  >
+                  <span>
                     <span
                       style={
                         Object {
@@ -530,16 +616,29 @@ exports[`Snapshots AverageTable should render the average table 1`] = `
             </div>
           </li>
           <li
-            className="gridSummaryItem"
             style={
               Object {
+                "borderBottom": "solid 1px #CED7DF",
+                "borderRight": "solid 1px #CED7DF",
+                "boxSizing": "border-box",
+                "display": "inline-block",
                 "flexGrow": 1,
+                "listStyle": "none",
+                "paddingBottom": "15px",
                 "width": "25%",
               }
             }
           >
             <span
-              className="gridSummaryItemLabel"
+              style={
+                Object {
+                  "display": "block",
+                  "fontSize": "12px",
+                  "fontWeight": 600,
+                  "marginLeft": "15px",
+                  "marginTop": "15px",
+                }
+              }
             >
               <span
                 data-tip={null}
@@ -559,13 +658,31 @@ exports[`Snapshots AverageTable should render the average table 1`] = `
               </span>
             </span>
             <div
-              className="gridSummaryItemValueWrapper"
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "flex": 1,
+                  "flexDirection": "row",
+                }
+              }
             >
               <div
-                className="gridSummaryItemValueContainer"
+                style={
+                  Object {
+                    "display": "inline-block",
+                  }
+                }
               >
                 <span
-                  className="gridSummaryItemValue"
+                  style={
+                    Object {
+                      "color": "#323b43",
+                      "fontSize": "2em",
+                      "fontWeight": 600,
+                      "marginLeft": "15px",
+                    }
+                  }
                 >
                   <span
                     style={
@@ -585,7 +702,13 @@ exports[`Snapshots AverageTable should render the average table 1`] = `
               </div>
               <div>
                 <span
-                  className="gridSummaryItemIcon"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "height": "1rem",
+                      "marginLeft": "10px",
+                    }
+                  }
                 >
                   <svg
                     height="100%"
@@ -613,11 +736,17 @@ exports[`Snapshots AverageTable should render the average table 1`] = `
                   </svg>
                 </span>
                 <div
-                  className="gridSummaryItemDiffContainer gridSummaryItemDiffContainerNegative"
+                  style={
+                    Object {
+                      "color": "#FF1E1E",
+                      "display": "inline-block",
+                      "fontSize": "18px",
+                      "fontWeight": 600,
+                      "marginLeft": "5px",
+                    }
+                  }
                 >
-                  <span
-                    className="gridSummaryItemDiff"
-                  >
+                  <span>
                     <span
                       style={
                         Object {

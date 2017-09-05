@@ -5,10 +5,13 @@ import {
   geyser,
 } from '@bufferapp/components/style/color';
 
+import {
+  ChartStateNoData as NoData,
+  ChartStateLoading as Loading,
+  GridItem,
+} from '@bufferapp/analyze-shared-components';
+
 import Title from '../Title';
-import GridItem from '../GridItem';
-import Loading from '../Loading';
-import NoData from '../NoData';
 
 const gridStyle = {
   display: 'flex',

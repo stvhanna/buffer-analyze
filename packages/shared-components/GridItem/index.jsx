@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Diff from '../Diff';
-import Label from '../Label';
-import Value from '../Value';
+import Diff from './components/Diff';
+import Label from './components/Label';
+import Value from './components/Value';
 
 const baseMargin = 10;
 const borderColor = '#CED7DF';
