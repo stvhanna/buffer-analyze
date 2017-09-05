@@ -24,5 +24,5 @@ export default combineReducers({
   profileHeader: profileHeaderReducer,
   date: datePickerReducer,
   profileLoader: profileLoaderReducer,
-  postsSummary: postsSummaryReducer
+  postsSummary: postsSummaryReducer,
 });
