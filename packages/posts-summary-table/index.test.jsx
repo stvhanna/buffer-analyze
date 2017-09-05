@@ -19,10 +19,15 @@ const storeFake = state => ({
 describe('PostsSummaryTable', () => {
   it('should render', () => {
     const store = storeFake({
+      postsSummary: {
+        loading: false,
+        metrics: [],
+      },
+      date: {},
     });
     const wrapper = mount(
       <Provider store={store}>
-        <PostsSummary />
+        <PostsSummary profileService="facebook" />
       </Provider>,
     );
     expect(wrapper.find(PostsSummaryTable).length)
