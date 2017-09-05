@@ -5,7 +5,11 @@ jest.mock('micro-rpc-client');
 jest.mock('request-promise');
 import rp from 'request-promise';
 import average from './';
-import { CURRENT_PERIOD_RESPONSE, PAST_PERIOD_RESPONSE } from './mockResponses';
+import {
+  CURRENT_PERIOD_RESPONSE,
+  PAST_PERIOD_RESPONSE,
+  EMPTY_RESPONSE,
+} from './mockResponses';
 
 describe('rpc/average', () => {
   const profileId = '123159ad';
@@ -116,6 +120,64 @@ describe('rpc/average', () => {
       },
       {
         diff: 355,
+        label: 'Click average',
+        value: 19996,
+      },
+    ]);
+  });
+
+  it('should return a valid response if all data is 0', async() => {
+    rp.mockReturnValueOnce(Promise.resolve(EMPTY_RESPONSE));
+    rp.mockReturnValueOnce(Promise.resolve(EMPTY_RESPONSE));
+
+    const data = await average.fn({ profileId }, {
+      session: {
+        accessToken: token,
+      },
+    });
+
+    expect(data).toEqual([
+      {
+        diff: 0,
+        label: 'Impression average',
+        value: 0,
+      },
+      {
+        diff: 0,
+        label: 'Engagement average',
+        value: 0,
+      },
+      {
+        diff: 0,
+        label: 'Click average',
+        value: 0,
+      },
+    ]);
+  });
+
+  it('should return a valid response if previous data is 0', async() => {
+    rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_RESPONSE));
+    rp.mockReturnValueOnce(Promise.resolve(EMPTY_RESPONSE));
+
+    const data = await average.fn({ profileId }, {
+      session: {
+        accessToken: token,
+      },
+    });
+
+    expect(data).toEqual([
+      {
+        diff: 39367700,
+        label: 'Impression average',
+        value: 393677,
+      },
+      {
+        diff: 427700,
+        label: 'Engagement average',
+        value: 4277,
+      },
+      {
+        diff: 1999600,
         label: 'Click average',
         value: 19996,
       },

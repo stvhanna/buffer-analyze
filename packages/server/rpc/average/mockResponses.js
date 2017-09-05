@@ -26,3 +26,17 @@ export const PAST_PERIOD_RESPONSE = {
   },
   success: true,
 };
+export const EMPTY_RESPONSE = {
+  response: {
+    engaged_users: 0,
+    post_impressions: 0,
+    reactions: 0,
+    post_reach: 0,
+    page_engagements: 0,
+    post_clicks: 0,
+    new_followers: 0,
+    followers: 0,
+    posts_count: 0,
+  },
+  success: true,
+};

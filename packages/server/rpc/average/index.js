@@ -29,11 +29,14 @@ const requestTotals = (profileId, dateRange, accessToken) =>
   });
 
 function percentageDifference (value, pastValue) {
+  if (pastValue === 0 && value === 0) return 0;
   const difference = value - pastValue;
+  if (pastValue === 0) pastValue = 1; // can't divide by 0
   return Math.ceil((difference / pastValue) * 100);
 }
 
 function averageValue(value, quantity) {
+  if (value === 0) return 0;
   return Math.round(value / quantity);
 }
 
