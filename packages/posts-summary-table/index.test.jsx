@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import { Provider } from 'react-redux';
-import PostsSummaryTable, {
+import PostsSummary, {
   reducer,
   actions,
   actionTypes,
@@ -22,7 +22,7 @@ describe('PostsSummaryTable', () => {
     });
     const wrapper = mount(
       <Provider store={store}>
-        <PostsSummaryTable />
+        <PostsSummary />
       </Provider>,
     );
     expect(wrapper.find(PostsSummaryTable).length)

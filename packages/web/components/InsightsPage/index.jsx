@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import NavSidebar from '@bufferapp/nav-sidebar';
 import SummaryTable from '@bufferapp/summary-table';
+import PostsSummaryTable from '@bufferapp/posts-summary-table';
 import ProfileSelector from '@bufferapp/analyze-profile-selector';
 import ProfileHeader from '@bufferapp/profile-header';
 import DatePicker from '@bufferapp/analyze-date-picker';
@@ -47,6 +48,8 @@ const InsightsPage = ({ match, location }) => (
         <Divider marginTop="1rem" marginBottom="1rem" />
         <ProfileHeader selectedProfileId={match.params.id} />
         <SummaryTable profileService={match.params.service} />
+        <PostsSummaryTable profileService={match.params.service} />
+
       </ProfileLoader>
     </div>
   </div>

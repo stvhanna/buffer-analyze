@@ -3,10 +3,23 @@ import { actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-
 export const actionTypes = {};
 
 const initialState = {
+  metrics: [],
+  loading: true,
 };
 
 export default (state = initialState, action) => {
-  return state;
+  switch (action.type) {
+    case `posts_summary_${asyncDataFetchActionTypes.FETCH_START}`:
+      return initialState;
+    case `posts_summary_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
+      return {
+        ...state,
+        loading: false,
+        metrics: action.result,
+      };
+    default:
+      return state;
+  }
 };
 
 export const actions = {};

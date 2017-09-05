@@ -1,16 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  Text,
-} from '@bufferapp/components';
-import {
   geyser,
 } from '@bufferapp/components/style/color';
 
 import NoData from '@bufferapp/summary-table/components/NoData';
-import Title from '@bufferapp/summary-table/components/Title';
 import GridItem from '@bufferapp/summary-table/components/GridItem';
 import Loading from '@bufferapp/summary-table/components/Loading';
+
+import Title from '../Title';
 
 const gridStyle = {
   display: 'flex',

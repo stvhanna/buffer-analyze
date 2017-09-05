@@ -4,7 +4,10 @@ import PostsSummaryTable from './components/PostsSummaryTable';
 // default export = container
 export default connect(
   state => ({
-    // add state here
+    loading: state.summary.loading,
+    metrics: state.summary.metrics,
+    startDate: state.date.startDate,
+    endDate: state.date.endDate,
   }),
 )(PostsSummaryTable);
 
