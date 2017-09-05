@@ -4,25 +4,25 @@ const moment = require('moment');
 const DateRange = require('../summary/DateRange');
 
 const LABELS = {
+  // common metric labels
+  posts_count: 'Posts',
   // facebook
-  shares: 'Shares',
-  reactions: 'Reactions',
-  comments: 'comments',
   post_impressions: 'Post Impressions',
   post_reach: 'Post Reach',
+  reactions: 'Reactions',
+  comments: 'comments',
+  shares: 'Shares',
   // twitter
   retweets: 'Retweets',
   impressions: 'Impressions',
-  favorites: 'Favorites',
+  favorites: 'Likes',
   replies: 'Replies',
   url_clicks: 'Clicks',
-  // common metric labels
-  posts_count: 'Posts',
 };
 
 const requestPostsSummary = (profileId, dateRange, accessToken) =>
   rp({
-    uri: `${process.env.API_ADDR}/1/profiles/${profileId}/analytics/postsSummary.json`,
+    uri: `${process.env.API_ADDR}/1/profiles/${profileId}/analytics/posts_summary.json`,
     method: 'GET',
     strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
     qs: {
