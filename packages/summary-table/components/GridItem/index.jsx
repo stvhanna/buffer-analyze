@@ -1,24 +1,37 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from '../../styles.less';
-
 import Diff from '../Diff';
 import Label from '../Label';
 import Value from '../Value';
 
+const baseMargin = 10;
+const borderColor = '#CED7DF';
+const gridSummaryItem = {
+  display: 'inline-block',
+  listStyle: 'none',
+  borderRight: `solid 1px ${borderColor}`,
+  borderBottom: `solid 1px ${borderColor}`,
+  boxSizing: 'border-box',
+  paddingBottom: `${1.5 * baseMargin}px`,
+  flexGrow: 1,
+  width: '25%',
+};
+const gridSummaryItemValueWrapper = {
+  display: 'flex',
+  flexDirection: 'row',
+  flex: 1,
+  alignItems: 'center',
+};
+
 const GridItem = ({ metric, tooltip }) =>
   <li
-    className={styles.gridSummaryItem}
-    style={{
-      flexGrow: 1,
-      width: '25%',
-    }}
+    style={gridSummaryItem}
     key={metric.label}
   >
     <Label tooltip={tooltip}>{metric.label}</Label>
 
-    <div className={styles.gridSummaryItemValueWrapper}>
+    <div style={gridSummaryItemValueWrapper}>
       <Value>{metric.value}</Value>
       <Diff diff={metric.diff} />
     </div>

@@ -2,10 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Text from '@bufferapp/components/Text';
 
-import styles from '../../styles.less';
+const baseMargin = 10;
+const gridSummaryItemLabel = {
+  display: 'block',
+  fontSize: '12px',
+  fontWeight: 600,
+  marginTop: `${1.5 * baseMargin}px`,
+  marginLeft: `${1.5 * baseMargin}px`,
+};
 
 const Label = ({ tooltip, children }) =>
-  <span className={styles.gridSummaryItemLabel}>
+  <span style={gridSummaryItemLabel}>
     <span data-tip={tooltip}>
       <Text color="shuttleGray" size="small">{children}</Text>
     </span>
