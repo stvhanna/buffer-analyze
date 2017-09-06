@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Switch } from 'react-router';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import AverageTable from '@bufferapp/average-table';
@@ -10,7 +11,10 @@ import ProfileHeader from '@bufferapp/profile-header';
 import DatePicker from '@bufferapp/analyze-date-picker';
 import ProfileLoader from '@bufferapp/profile-loader';
 import Divider from '@bufferapp/components/Divider';
+import TabNavigation from '@bufferapp/tabs';
 import { offWhite, mystic } from '@bufferapp/components/style/color';
+import PostsTab from '../PostsTab';
+import OverviewTab from '../OverviewTab';
 
 const pageStyle = {
   display: 'flex',
@@ -36,6 +40,11 @@ const InsightsPage = ({ match, location }) => (
   <div style={pageStyle}>
     <NavSidebar route={location.pathname} />
     <div style={pageContentStyle}>
+      <TabNavigation
+        profileId={match.params.id}
+        selectedTabId={'overview'}
+        tabId={match.params.id}
+      />
       <ProfileLoader>
         <div style={profileSelectorContainer}>
           <ProfileSelector
@@ -47,11 +56,18 @@ const InsightsPage = ({ match, location }) => (
         </div>
         <Divider marginTop="1rem" marginBottom="1rem" />
         <ProfileHeader selectedProfileId={match.params.id} />
-        <SummaryTable profileService={match.params.service} />
-        <Divider marginTop="1rem" marginBottom="1rem" />
-        <AverageTable />
-        <Divider marginTop="1rem" marginBottom="1rem" />
-        <PostsSummaryTable profileService={match.params.service} />
+        <Switch>
+          <Route
+            path="/insights/:service/:id/tab/overview"
+            component={OverviewTab}
+          />
+          <Route
+            path="/insights/:service/:id/tab/posts"
+            component={PostsTab}
+          />
+          <Route component={OverviewTab} />
+        </Switch>
+
       </ProfileLoader>
     </div>
   </div>

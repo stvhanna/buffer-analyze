@@ -32,7 +32,9 @@
     "@bufferapp/analyze-date-picker": "0.0.1",
     "@bufferapp/profile-loader": "0.0.1",
     "@bufferapp/profile-header": "0.0.1",
-    "@bufferapp/posts-summary-table": "0.0.1"
+    "@bufferapp/posts-summary-table": "0.0.1",
+    "@bufferapp/tabs" : "0.0.1",
+    "@bufferapp/publish-routes" : "0.0.1"
   },
   "author": "Mike San Román <mike@msanroman.io> (http://msanroman.io)",
   "devDependencies": {
