@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Text from '@bufferapp/components/Text';
 import {
   geyser,
 } from '@bufferapp/components/style/color';
@@ -10,8 +11,6 @@ import {
   ChartStateLoading as Loading,
   GridItem,
 } from '@bufferapp/analyze-shared-components';
-
-import Title from '../Title';
 
 const gridStyle = {
   display: 'flex',
@@ -29,10 +28,10 @@ const gridContainer = {
   margin: '1rem 0 1.5rem',
 };
 
-const SummaryTable = ({ metrics, loading, profileService, startDate, endDate }) => {
+const AverageTable = ({ metrics, loading }) => {
   let content = null;
   if (loading) {
-    content = <Loading active text="Summary loading..." />;
+    content = <Loading active text="Average loading..." />;
   } else if (metrics.length === 0) {
     content = <NoData />;
   } else {
@@ -45,7 +44,9 @@ const SummaryTable = ({ metrics, loading, profileService, startDate, endDate }) 
 
   return (
     <div>
-      <Title profileService={profileService} startDate={startDate} endDate={endDate} />
+      <h2 style={{ margin: '2rem 0 1rem' }}>
+        <Text> Average post performance </Text>
+      </h2>
       <div style={gridContainer}>
         {content}
       </div>
@@ -53,22 +54,18 @@ const SummaryTable = ({ metrics, loading, profileService, startDate, endDate }) 
   );
 };
 
-SummaryTable.defaultProps = {
+AverageTable.defaultProps = {
   loading: false,
-  startDate: null,
-  endDate: null,
 };
 
-SummaryTable.propTypes = {
+AverageTable.propTypes = {
   loading: PropTypes.bool,
-  profileService: PropTypes.string.isRequired,
   metrics: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string,
     value: PropTypes.number,
     diff: PropTypes.number,
   })).isRequired,
-  startDate: PropTypes.number,
-  endDate: PropTypes.number,
 };
 
-export default SummaryTable;
+export default AverageTable;
+

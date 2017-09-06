@@ -16,6 +16,7 @@ import { middleware as profileHeaderMiddleware } from '@bufferapp/profile-header
 import { middleware as datePickerMiddleware } from '@bufferapp/analyze-date-picker';
 import { middleware as profileLoaderMiddleware } from '@bufferapp/profile-loader';
 import { middleware as postsSummaryMiddleware } from '@bufferapp/posts-summary-table';
+import { middleware as averageMiddleware } from '@bufferapp/average-table';
 import reducers from './reducers';
 
 export const history = createHistory();
@@ -42,7 +43,11 @@ const configureStore = (initialstate) => {
         profileHeaderMiddleware,
         datePickerMiddleware,
         profileLoaderMiddleware,
+<<<<<<< HEAD
         postsSummaryMiddleware,
+=======
+        averageMiddleware,
+>>>>>>> master
       ),
     ),
   );

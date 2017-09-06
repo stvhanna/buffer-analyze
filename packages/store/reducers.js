@@ -11,12 +11,14 @@ import { reducer as profileHeaderReducer } from '@bufferapp/profile-header';
 import { reducer as datePickerReducer } from '@bufferapp/analyze-date-picker';
 import { reducer as profileLoaderReducer } from '@bufferapp/profile-loader';
 import { reducer as postsSummaryReducer } from '@bufferapp/posts-summary-table';
+import { reducer as averageReducer } from '@bufferapp/average-table';
 
 export default combineReducers({
   login: loginReducer,
   router: routerReducer,
   appSidebar: appSidebarReducer,
   asyncDataFetch: asyncDataFetchReducer,
+  average: averageReducer,
   i18n: i18nReducer,
   navSidebar: navSidebarReducer,
   summary: summaryReducer,

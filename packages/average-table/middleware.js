@@ -7,7 +7,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
   switch (action.type) {
     case profileActionTypes.SELECT_PROFILE:
       dispatch(actions.fetch({
-        name: 'summary',
+        name: 'average',
         args: {
           profileId: action.id,
           startDate: getState().date.startDate,
@@ -17,7 +17,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
       break;
     case dateActionTypes.SET_DATE_RANGE:
       dispatch(actions.fetch({
-        name: 'summary',
+        name: 'average',
         args: {
           profileId: getState().profiles.selectedProfileId,
           startDate: action.startDate,
@@ -30,3 +30,4 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
   }
   return next(action);
 };
+

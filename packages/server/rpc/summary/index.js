@@ -1,7 +1,7 @@
 const { method } = require('@bufferapp/micro-rpc');
 const rp = require('request-promise');
 const moment = require('moment');
-const DateRange = require('./DateRange');
+const DateRange = require('../utils/DateRange');
 
 const LABELS = {
   engaged_users: 'Engaged Users',

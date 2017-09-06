@@ -65,7 +65,6 @@ describe('ProfileSelector', () => {
     const component = shallow(<ProfileSelector
       store={store}
       profileService={'twitter'}
-      selectedProfileId={'0'}
     />);
 
     expect(component.props().profiles)
