@@ -48,9 +48,10 @@ const InsightsPage = ({ match, location }) => (
         <Divider marginTop="1rem" marginBottom="1rem" />
         <ProfileHeader selectedProfileId={match.params.id} />
         <SummaryTable profileService={match.params.service} />
-        <PostsSummaryTable profileService={match.params.service} />
         <Divider marginTop="1rem" marginBottom="1rem" />
         <AverageTable />
+        <Divider marginTop="1rem" marginBottom="1rem" />
+        <PostsSummaryTable profileService={match.params.service} />
       </ProfileLoader>
     </div>
   </div>

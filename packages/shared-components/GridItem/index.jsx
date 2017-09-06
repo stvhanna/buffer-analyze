@@ -24,21 +24,26 @@ const gridSummaryItemValueWrapper = {
   alignItems: 'center',
 };
 
-const GridItem = ({ metric, tooltip }) =>
-  <li
-    style={gridSummaryItem}
-    key={metric.label}
-  >
-    <Label tooltip={tooltip}>{metric.label}</Label>
+const GridItem = ({ metric, tooltip, gridWidth }) => {
+  gridSummaryItem.width = gridWidth;
+  return (
+    <li
+      style={gridSummaryItem}
+      key={metric.label}
+    >
+      <Label tooltip={tooltip}>{metric.label}</Label>
 
-    <div style={gridSummaryItemValueWrapper}>
-      <Value>{metric.value}</Value>
-      <Diff diff={metric.diff} />
-    </div>
-  </li>;
+      <div style={gridSummaryItemValueWrapper}>
+        <Value>{metric.value}</Value>
+        <Diff diff={metric.diff} />
+      </div>
+    </li>
+  );
+};
 
 GridItem.defaultProps = {
   tooltip: null,
+  gridWidth: '25%',
 };
 
 GridItem.propTypes = {
@@ -48,6 +53,7 @@ GridItem.propTypes = {
     diff: PropTypes.number,
   }).isRequired,
   tooltip: PropTypes.string,
+  gridWidth: PropTypes.string,
 };
 
 export default GridItem;

@@ -4,9 +4,11 @@ import {
   geyser,
 } from '@bufferapp/components/style/color';
 
-import NoData from '@bufferapp/summary-table/components/NoData';
-import GridItem from '@bufferapp/summary-table/components/GridItem';
-import Loading from '@bufferapp/summary-table/components/Loading';
+import {
+  NoData,
+  Loading,
+  GridItem,
+} from '@bufferapp/analyze-shared-components';
 
 import Title from '../Title';
 

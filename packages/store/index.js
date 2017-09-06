@@ -43,11 +43,8 @@ const configureStore = (initialstate) => {
         profileHeaderMiddleware,
         datePickerMiddleware,
         profileLoaderMiddleware,
-<<<<<<< HEAD
         postsSummaryMiddleware,
-=======
         averageMiddleware,
->>>>>>> master
       ),
     ),
   );
