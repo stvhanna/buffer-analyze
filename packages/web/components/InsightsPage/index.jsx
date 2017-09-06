@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import AverageTable from '@bufferapp/average-table';
 import NavSidebar from '@bufferapp/nav-sidebar';
 import SummaryTable from '@bufferapp/summary-table';
+import PostsSummaryTable from '@bufferapp/posts-summary-table';
 import ProfileSelector from '@bufferapp/analyze-profile-selector';
 import ProfileHeader from '@bufferapp/profile-header';
 import DatePicker from '@bufferapp/analyze-date-picker';
@@ -49,6 +50,8 @@ const InsightsPage = ({ match, location }) => (
         <SummaryTable profileService={match.params.service} />
         <Divider marginTop="1rem" marginBottom="1rem" />
         <AverageTable />
+        <Divider marginTop="1rem" marginBottom="1rem" />
+        <PostsSummaryTable profileService={match.params.service} />
       </ProfileLoader>
     </div>
   </div>
