@@ -327,15 +327,29 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
           }
         >
           <li
-            className="gridSummaryItem"
             style={
               Object {
+                "borderBottom": "solid 1px #CED7DF",
+                "borderRight": "solid 1px #CED7DF",
+                "boxSizing": "border-box",
+                "display": "inline-block",
+                "flexGrow": 1,
+                "listStyle": "none",
+                "paddingBottom": "15px",
                 "width": "33.33%",
               }
             }
           >
             <span
-              className="gridSummaryItemLabel"
+              style={
+                Object {
+                  "display": "block",
+                  "fontSize": "12px",
+                  "fontWeight": 600,
+                  "marginLeft": "15px",
+                  "marginTop": "15px",
+                }
+              }
             >
               <span
                 data-tip={null}
@@ -355,13 +369,31 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
               </span>
             </span>
             <div
-              className="gridSummaryItemValueWrapper"
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "flex": 1,
+                  "flexDirection": "row",
+                }
+              }
             >
               <div
-                className="gridSummaryItemValueContainer"
+                style={
+                  Object {
+                    "display": "inline-block",
+                  }
+                }
               >
                 <span
-                  className="gridSummaryItemValue"
+                  style={
+                    Object {
+                      "color": "#323b43",
+                      "fontSize": "2em",
+                      "fontWeight": 600,
+                      "marginLeft": "15px",
+                    }
+                  }
                 >
                   <span
                     style={
@@ -381,7 +413,13 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
               </div>
               <div>
                 <span
-                  className="gridSummaryItemIcon"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "height": "1rem",
+                      "marginLeft": "10px",
+                    }
+                  }
                 >
                   <svg
                     height="100%"
@@ -408,11 +446,17 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                   </svg>
                 </span>
                 <div
-                  className="gridSummaryItemDiffContainer gridSummaryItemDiffContainerPositive"
+                  style={
+                    Object {
+                      "color": "#FF1E1E",
+                      "display": "inline-block",
+                      "fontSize": "18px",
+                      "fontWeight": 600,
+                      "marginLeft": "5px",
+                    }
+                  }
                 >
-                  <span
-                    className="gridSummaryItemDiff"
-                  >
+                  <span>
                     <span
                       style={
                         Object {
@@ -433,15 +477,29 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
             </div>
           </li>
           <li
-            className="gridSummaryItem"
             style={
               Object {
+                "borderBottom": "solid 1px #CED7DF",
+                "borderRight": "solid 1px #CED7DF",
+                "boxSizing": "border-box",
+                "display": "inline-block",
+                "flexGrow": 1,
+                "listStyle": "none",
+                "paddingBottom": "15px",
                 "width": "33.33%",
               }
             }
           >
             <span
-              className="gridSummaryItemLabel"
+              style={
+                Object {
+                  "display": "block",
+                  "fontSize": "12px",
+                  "fontWeight": 600,
+                  "marginLeft": "15px",
+                  "marginTop": "15px",
+                }
+              }
             >
               <span
                 data-tip={null}
@@ -461,13 +519,31 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
               </span>
             </span>
             <div
-              className="gridSummaryItemValueWrapper"
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "flex": 1,
+                  "flexDirection": "row",
+                }
+              }
             >
               <div
-                className="gridSummaryItemValueContainer"
+                style={
+                  Object {
+                    "display": "inline-block",
+                  }
+                }
               >
                 <span
-                  className="gridSummaryItemValue"
+                  style={
+                    Object {
+                      "color": "#323b43",
+                      "fontSize": "2em",
+                      "fontWeight": 600,
+                      "marginLeft": "15px",
+                    }
+                  }
                 >
                   <span
                     style={
@@ -487,7 +563,13 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
               </div>
               <div>
                 <span
-                  className="gridSummaryItemIcon"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "height": "1rem",
+                      "marginLeft": "10px",
+                    }
+                  }
                 >
                   <svg
                     height="100%"
@@ -515,11 +597,17 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                   </svg>
                 </span>
                 <div
-                  className="gridSummaryItemDiffContainer gridSummaryItemDiffContainerNegative"
+                  style={
+                    Object {
+                      "color": "#FF1E1E",
+                      "display": "inline-block",
+                      "fontSize": "18px",
+                      "fontWeight": 600,
+                      "marginLeft": "5px",
+                    }
+                  }
                 >
-                  <span
-                    className="gridSummaryItemDiff"
-                  >
+                  <span>
                     <span
                       style={
                         Object {
@@ -540,15 +628,29 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
             </div>
           </li>
           <li
-            className="gridSummaryItem"
             style={
               Object {
+                "borderBottom": "solid 1px #CED7DF",
+                "borderRight": "solid 1px #CED7DF",
+                "boxSizing": "border-box",
+                "display": "inline-block",
+                "flexGrow": 1,
+                "listStyle": "none",
+                "paddingBottom": "15px",
                 "width": "33.33%",
               }
             }
           >
             <span
-              className="gridSummaryItemLabel"
+              style={
+                Object {
+                  "display": "block",
+                  "fontSize": "12px",
+                  "fontWeight": 600,
+                  "marginLeft": "15px",
+                  "marginTop": "15px",
+                }
+              }
             >
               <span
                 data-tip={null}
@@ -568,13 +670,31 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
               </span>
             </span>
             <div
-              className="gridSummaryItemValueWrapper"
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "flex": 1,
+                  "flexDirection": "row",
+                }
+              }
             >
               <div
-                className="gridSummaryItemValueContainer"
+                style={
+                  Object {
+                    "display": "inline-block",
+                  }
+                }
               >
                 <span
-                  className="gridSummaryItemValue"
+                  style={
+                    Object {
+                      "color": "#323b43",
+                      "fontSize": "2em",
+                      "fontWeight": 600,
+                      "marginLeft": "15px",
+                    }
+                  }
                 >
                   <span
                     style={
@@ -594,7 +714,13 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
               </div>
               <div>
                 <span
-                  className="gridSummaryItemIcon"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "height": "1rem",
+                      "marginLeft": "10px",
+                    }
+                  }
                 >
                   <svg
                     height="100%"
@@ -621,11 +747,17 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                   </svg>
                 </span>
                 <div
-                  className="gridSummaryItemDiffContainer gridSummaryItemDiffContainerPositive"
+                  style={
+                    Object {
+                      "color": "#FF1E1E",
+                      "display": "inline-block",
+                      "fontSize": "18px",
+                      "fontWeight": 600,
+                      "marginLeft": "5px",
+                    }
+                  }
                 >
-                  <span
-                    className="gridSummaryItemDiff"
-                  >
+                  <span>
                     <span
                       style={
                         Object {
@@ -646,15 +778,29 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
             </div>
           </li>
           <li
-            className="gridSummaryItem"
             style={
               Object {
+                "borderBottom": "solid 1px #CED7DF",
+                "borderRight": "solid 1px #CED7DF",
+                "boxSizing": "border-box",
+                "display": "inline-block",
+                "flexGrow": 1,
+                "listStyle": "none",
+                "paddingBottom": "15px",
                 "width": "33.33%",
               }
             }
           >
             <span
-              className="gridSummaryItemLabel"
+              style={
+                Object {
+                  "display": "block",
+                  "fontSize": "12px",
+                  "fontWeight": 600,
+                  "marginLeft": "15px",
+                  "marginTop": "15px",
+                }
+              }
             >
               <span
                 data-tip={null}
@@ -674,13 +820,31 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
               </span>
             </span>
             <div
-              className="gridSummaryItemValueWrapper"
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "flex": 1,
+                  "flexDirection": "row",
+                }
+              }
             >
               <div
-                className="gridSummaryItemValueContainer"
+                style={
+                  Object {
+                    "display": "inline-block",
+                  }
+                }
               >
                 <span
-                  className="gridSummaryItemValue"
+                  style={
+                    Object {
+                      "color": "#323b43",
+                      "fontSize": "2em",
+                      "fontWeight": 600,
+                      "marginLeft": "15px",
+                    }
+                  }
                 >
                   <span
                     style={
@@ -700,7 +864,13 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
               </div>
               <div>
                 <span
-                  className="gridSummaryItemIcon"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "height": "1rem",
+                      "marginLeft": "10px",
+                    }
+                  }
                 >
                   <svg
                     height="100%"
@@ -728,11 +898,17 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                   </svg>
                 </span>
                 <div
-                  className="gridSummaryItemDiffContainer gridSummaryItemDiffContainerNegative"
+                  style={
+                    Object {
+                      "color": "#FF1E1E",
+                      "display": "inline-block",
+                      "fontSize": "18px",
+                      "fontWeight": 600,
+                      "marginLeft": "5px",
+                    }
+                  }
                 >
-                  <span
-                    className="gridSummaryItemDiff"
-                  >
+                  <span>
                     <span
                       style={
                         Object {
@@ -753,15 +929,29 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
             </div>
           </li>
           <li
-            className="gridSummaryItem"
             style={
               Object {
+                "borderBottom": "solid 1px #CED7DF",
+                "borderRight": "solid 1px #CED7DF",
+                "boxSizing": "border-box",
+                "display": "inline-block",
+                "flexGrow": 1,
+                "listStyle": "none",
+                "paddingBottom": "15px",
                 "width": "33.33%",
               }
             }
           >
             <span
-              className="gridSummaryItemLabel"
+              style={
+                Object {
+                  "display": "block",
+                  "fontSize": "12px",
+                  "fontWeight": 600,
+                  "marginLeft": "15px",
+                  "marginTop": "15px",
+                }
+              }
             >
               <span
                 data-tip={null}
@@ -781,13 +971,31 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
               </span>
             </span>
             <div
-              className="gridSummaryItemValueWrapper"
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "flex": 1,
+                  "flexDirection": "row",
+                }
+              }
             >
               <div
-                className="gridSummaryItemValueContainer"
+                style={
+                  Object {
+                    "display": "inline-block",
+                  }
+                }
               >
                 <span
-                  className="gridSummaryItemValue"
+                  style={
+                    Object {
+                      "color": "#323b43",
+                      "fontSize": "2em",
+                      "fontWeight": 600,
+                      "marginLeft": "15px",
+                    }
+                  }
                 >
                   <span
                     style={
@@ -807,13 +1015,19 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
               </div>
               <div>
                 <span
-                  className="gridSummaryItemIcon"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "height": "1rem",
+                      "marginLeft": "10px",
+                    }
+                  }
                 >
                   <svg
                     height="100%"
                     style={
                       Object {
-                        "fill": "#8D969E",
+                        "fill": "#59626a",
                         "height": "1rem",
                         "width": "1rem",
                       }
@@ -825,7 +1039,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                     xmlnsXlink="http://www.w3.org/1999/xlink"
                   >
                     <g
-                      className="#8D969E"
+                      className="shuttleGray"
                     >
                       <path
                         d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
@@ -835,11 +1049,17 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                   </svg>
                 </span>
                 <div
-                  className="gridSummaryItemDiffContainer"
+                  style={
+                    Object {
+                      "color": "#FF1E1E",
+                      "display": "inline-block",
+                      "fontSize": "18px",
+                      "fontWeight": 600,
+                      "marginLeft": "5px",
+                    }
+                  }
                 >
-                  <span
-                    className="gridSummaryItemDiff"
-                  >
+                  <span>
                     <span
                       style={
                         Object {
@@ -860,15 +1080,29 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
             </div>
           </li>
           <li
-            className="gridSummaryItem"
             style={
               Object {
+                "borderBottom": "solid 1px #CED7DF",
+                "borderRight": "solid 1px #CED7DF",
+                "boxSizing": "border-box",
+                "display": "inline-block",
+                "flexGrow": 1,
+                "listStyle": "none",
+                "paddingBottom": "15px",
                 "width": "33.33%",
               }
             }
           >
             <span
-              className="gridSummaryItemLabel"
+              style={
+                Object {
+                  "display": "block",
+                  "fontSize": "12px",
+                  "fontWeight": 600,
+                  "marginLeft": "15px",
+                  "marginTop": "15px",
+                }
+              }
             >
               <span
                 data-tip={null}
@@ -888,13 +1122,31 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
               </span>
             </span>
             <div
-              className="gridSummaryItemValueWrapper"
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "flex": 1,
+                  "flexDirection": "row",
+                }
+              }
             >
               <div
-                className="gridSummaryItemValueContainer"
+                style={
+                  Object {
+                    "display": "inline-block",
+                  }
+                }
               >
                 <span
-                  className="gridSummaryItemValue"
+                  style={
+                    Object {
+                      "color": "#323b43",
+                      "fontSize": "2em",
+                      "fontWeight": 600,
+                      "marginLeft": "15px",
+                    }
+                  }
                 >
                   <span
                     style={
@@ -914,7 +1166,13 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
               </div>
               <div>
                 <span
-                  className="gridSummaryItemIcon"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "height": "1rem",
+                      "marginLeft": "10px",
+                    }
+                  }
                 >
                   <svg
                     height="100%"
@@ -942,11 +1200,17 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                   </svg>
                 </span>
                 <div
-                  className="gridSummaryItemDiffContainer gridSummaryItemDiffContainerNegative"
+                  style={
+                    Object {
+                      "color": "#FF1E1E",
+                      "display": "inline-block",
+                      "fontSize": "18px",
+                      "fontWeight": 600,
+                      "marginLeft": "5px",
+                    }
+                  }
                 >
-                  <span
-                    className="gridSummaryItemDiff"
-                  >
+                  <span>
                     <span
                       style={
                         Object {

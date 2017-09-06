@@ -15,6 +15,9 @@ const state = {
     startDate: '10/10/2016',
     endDate: '30/10/2016',
   },
+  profiles: {
+    selectedProfileId: '12359182129asd',
+  },
 };
 
 describe('middleware', () => {
