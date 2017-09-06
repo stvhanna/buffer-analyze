@@ -5,8 +5,8 @@ import {
 } from '@bufferapp/components/style/color';
 
 import {
-  NoData,
-  Loading,
+  ChartStateNoData as NoData,
+  ChartStateLoading as Loading,
   GridItem,
 } from '@bufferapp/analyze-shared-components';
 
