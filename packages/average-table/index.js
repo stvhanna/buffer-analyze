@@ -5,7 +5,7 @@ import AverageTable from './components/AverageTable';
 function mapStateToProps (state) {
   return {
     loading: state.average.loading,
-    metrics: state.average.metrics,
+    totals: state.average.metrics.totals,
   };
 }
 export default connect(

@@ -15,7 +15,7 @@ describe('AverageTable', () => {
     const state = {
       average: {
         loading: true,
-        metrics: [],
+        metrics: { totals: [], daily: [] },
       },
     };
     const store = mockStore(state);

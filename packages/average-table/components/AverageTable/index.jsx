@@ -28,16 +28,16 @@ const gridContainer = {
   margin: '1rem 0 1.5rem',
 };
 
-const AverageTable = ({ metrics, loading }) => {
+const AverageTable = ({ totals, loading }) => {
   let content = null;
   if (loading) {
     content = <Loading active text="Average loading..." />;
-  } else if (metrics.length === 0) {
+  } else if (totals.length === 0) {
     content = <NoData />;
   } else {
     content = (
       <ul style={gridStyle}>
-        {metrics.map(metric => <GridItem key={metric.label} metric={metric} />)}
+        {totals.map(metric => <GridItem key={metric.label} metric={metric} />)}
       </ul>
     );
   }
@@ -60,7 +60,7 @@ AverageTable.defaultProps = {
 
 AverageTable.propTypes = {
   loading: PropTypes.bool,
-  metrics: PropTypes.arrayOf(PropTypes.shape({
+  totals: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string,
     value: PropTypes.number,
     diff: PropTypes.number,

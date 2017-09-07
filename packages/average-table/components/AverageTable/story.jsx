@@ -12,7 +12,7 @@ storiesOf('AverageTable')
       }}
     >
       <AverageTable
-        metrics={[
+        totals={[
           {
             label: 'Impressions average',
             value: 150,
@@ -39,7 +39,7 @@ storiesOf('AverageTable')
         width: '750px',
       }}
     >
-      <AverageTable profileService="facebook" loading metrics={[]} />
+      <AverageTable profileService="facebook" loading totals={[]} />
     </div>
   ))
   .add('should render a "no data" state', () => (
@@ -48,6 +48,6 @@ storiesOf('AverageTable')
         width: '750px',
       }}
     >
-      <AverageTable profileService="twitter" metrics={[]} />
+      <AverageTable profileService="twitter" totals={[]} />
     </div>
   ));

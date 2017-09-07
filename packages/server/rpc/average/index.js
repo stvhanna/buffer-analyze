@@ -41,24 +41,49 @@ function averageValue(value, quantity) {
 }
 
 const summarize = (
-  metric,
+  metriKey,
   currentPeriod,
   currentPeriodPostCount,
   pastPeriod,
   pastPeriodPostCount,
 ) => {
-  const pastValue = averageValue(pastPeriod[metric], pastPeriodPostCount);
-  const value = averageValue(currentPeriod[metric], currentPeriodPostCount);
-  const label = LABELS[metric];
+  const pastValue = averageValue(pastPeriod[metriKey], pastPeriodPostCount);
+  const value = averageValue(currentPeriod[metriKey], currentPeriodPostCount);
+  const label = LABELS[metriKey];
   if (label) {
     return {
       diff: percentageDifference(value, pastValue),
-      label: LABELS[metric],
+      label: LABELS[metriKey],
       value,
     };
   }
   return null;
 };
+
+function formatData(
+  currentPeriodResult,
+  currentPeriodPostCount,
+  pastPeriodResult,
+  pastPeriodPostCount,
+) {
+  let totals = Object.keys(currentPeriodResult);
+  totals = totals
+    .map(metriKey =>
+      summarize(
+        metriKey,
+        currentPeriodResult,
+        currentPeriodPostCount,
+        pastPeriodResult,
+        pastPeriodPostCount,
+      ),
+    )
+    .filter(metric => metric !== null);
+
+  return {
+    totals,
+    daily: [],
+  };
+}
 
 module.exports = method(
   'average',
@@ -79,19 +104,17 @@ module.exports = method(
         const pastPeriodResult = response[1].response;
         const currentPeriodPostCount = currentPeriodResult.posts_count;
         const pastPeriodPostCount = pastPeriodResult.posts_count;
-        const metrics = Object.keys(currentPeriodResult);
-        return metrics
-          .map(metric =>
-            summarize(
-              metric,
-              currentPeriodResult,
-              currentPeriodPostCount,
-              pastPeriodResult,
-              pastPeriodPostCount,
-            ),
-          )
-          .filter(metric => metric !== null);
+
+        return formatData(
+          currentPeriodResult,
+          currentPeriodPostCount,
+          pastPeriodResult,
+          pastPeriodPostCount,
+        );
       })
-      .catch(() => []);
+      .catch(() => ({
+        totals: [],
+        daily: [],
+      }));
   },
 );

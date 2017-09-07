@@ -84,6 +84,20 @@ describe('rpc/average', () => {
       }]);
   });
 
+  it('it should return both total and daily averages', async() => {
+    rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_RESPONSE));
+    rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_RESPONSE));
+
+    const data = await average.fn({ profileId }, {
+      session: {
+        accessToken: token,
+      },
+    });
+
+    expect(data.daily).toBeDefined();
+    expect(data.totals).toBeDefined();
+  });
+
   it('should return only the average metrics', async() => {
     rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_RESPONSE));
     rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_RESPONSE));
@@ -94,7 +108,7 @@ describe('rpc/average', () => {
       },
     });
 
-    expect(data.length).toEqual(3);
+    expect(data.totals.length).toEqual(3);
   });
 
   it('should return the metrics value and diff, averaged by total updates sent in the period', async() => {
@@ -107,7 +121,7 @@ describe('rpc/average', () => {
       },
     });
 
-    expect(data).toEqual([
+    expect(data.totals).toEqual([
       {
         diff: 403,
         label: 'Impression average',
@@ -136,7 +150,7 @@ describe('rpc/average', () => {
       },
     });
 
-    expect(data).toEqual([
+    expect(data.totals).toEqual([
       {
         diff: 0,
         label: 'Impression average',
@@ -165,7 +179,7 @@ describe('rpc/average', () => {
       },
     });
 
-    expect(data).toEqual([
+    expect(data.totals).toEqual([
       {
         diff: 39367700,
         label: 'Impression average',
@@ -182,6 +196,19 @@ describe('rpc/average', () => {
         value: 19996,
       },
     ]);
+  });
+
+  it('should return the daily averages', async() => {
+    rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_RESPONSE));
+    rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_RESPONSE));
+
+    const data = await average.fn({ profileId }, {
+      session: {
+        accessToken: token,
+      },
+    });
+
+    expect(data.daily).toBe([]);
   });
 });
 
