@@ -11,7 +11,7 @@
   },
   "author": "tik.hakobyan@gmail.com",
   "dependencies": {
-    "@bufferapp/analyze-shared-components": "0.0.1"
+    "@bufferapp/publish-shared-components": "0.5.33"
   },
   "devDependencies": {
     "@storybook/addon-storyshots": "3.1.4",

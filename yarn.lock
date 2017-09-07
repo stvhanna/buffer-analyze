@@ -29,9 +29,9 @@
     react-autocomplete "1.5.9"
     react-day-picker "5.5.1"
 
-"@bufferapp/components@0.5.32":
-  version "0.5.32"
-  resolved "https://registry.yarnpkg.com/@bufferapp/components/-/components-0.5.32.tgz#a26b48fd0e024efa13271596a6b786899f759ae6"
+"@bufferapp/components@0.5.33":
+  version "0.5.33"
+  resolved "https://registry.yarnpkg.com/@bufferapp/components/-/components-0.5.33.tgz#7e6fc90e2fa92139cf84f12f269e8494d833b4c7"
   dependencies:
     "@bufferapp/react-keyframes" "0.2.5"
     react-autocomplete "1.5.9"
@@ -55,15 +55,11 @@
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/@bufferapp/micro-rpc/-/micro-rpc-0.1.6.tgz#104417af8c4940c92d45164cc097d5d38fd7d957"
 
-"@bufferapp/publish-routes@0.0.1":
-  version "0.5.25"
-  resolved "https://registry.yarnpkg.com/@bufferapp/publish-routes/-/publish-routes-0.5.25.tgz#9fa88726311ff98b11b91c8f80a3b5be95080f6e"
-
-"@bufferapp/publish-shared-components@0.5.32":
-  version "0.5.32"
-  resolved "https://registry.yarnpkg.com/@bufferapp/publish-shared-components/-/publish-shared-components-0.5.32.tgz#980e6486296ba7f6fd4746ef3577cacddfaabadc"
+"@bufferapp/publish-shared-components@0.5.33":
+  version "0.5.33"
+  resolved "https://registry.yarnpkg.com/@bufferapp/publish-shared-components/-/publish-shared-components-0.5.33.tgz#c4d58809e8fa84289e0cf4bfbf4d8eeff60ffdb6"
   dependencies:
-    "@bufferapp/components" "0.5.32"
+    "@bufferapp/components" "0.5.33"
 
 "@bufferapp/react-keyframes@0.2.4":
   version "0.2.4"

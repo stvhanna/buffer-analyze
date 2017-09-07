@@ -38,7 +38,8 @@ const profileSelectorContainer = {
 };
 
 const InsightsPage = ({ match, location }) => {
-  console.log(location);
+
+
   return (
     <div style={pageStyle}>
       <NavSidebar route={location.pathname} />

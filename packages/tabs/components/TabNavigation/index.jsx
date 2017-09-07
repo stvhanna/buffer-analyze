@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {
   Tabs,
   Tab,
-} from '@bufferapp/analyze-shared-components';
+} from '@bufferapp/publish-shared-components';
 
 const TabNavigation = ({ selectedTabId, onTabClick }) => {
   console.log(selectedTabId);
