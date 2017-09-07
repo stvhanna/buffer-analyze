@@ -1,12 +1,10 @@
-import { actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-fetch';
-
-export const actionTypes = {};
-
-const initialState = {
-};
+const initialState = {};
 
 export default (state = initialState, action) => {
-  return state;
+  switch (action.type) {
+    default:
+      return state;
+  }
 };
 
 export const actions = {};

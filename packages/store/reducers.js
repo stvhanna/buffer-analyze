@@ -12,6 +12,7 @@ import { reducer as datePickerReducer } from '@bufferapp/analyze-date-picker';
 import { reducer as profileLoaderReducer } from '@bufferapp/profile-loader';
 import { reducer as postsSummaryReducer } from '@bufferapp/posts-summary-table';
 import { reducer as averageReducer } from '@bufferapp/average-table';
+import { reducer as tabsReducer } from '@bufferapp/tabs';
 
 export default combineReducers({
   login: loginReducer,
@@ -27,4 +28,5 @@ export default combineReducers({
   date: datePickerReducer,
   profileLoader: profileLoaderReducer,
   postsSummary: postsSummaryReducer,
+  tabs: tabsReducer,
 });

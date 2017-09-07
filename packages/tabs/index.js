@@ -1,14 +1,6 @@
 import { connect } from 'react-redux';
 import { push } from 'react-router-redux';
 import TabNavigation from './components/TabNavigation';
-// import { generateProfilePageRoute } from '@bufferapp/publish-routes';
-
-// default export = container
-// export default connect(
-//   state => ({
-//     // add state here
-//   }),
-// )(TabNavigation);
 
 const profileRouteRegex = /insights\/facebook\/(\w+)\/tab\/(\w+)/;
 export const getProfilePageParams = ({ path }) => {
@@ -22,10 +14,10 @@ export const getProfilePageParams = ({ path }) => {
   };
 };
 
-export const generateProfilePageRoute = ({ profileId, tabId }) =>
+export const generateInsightsTabRoute = ({ profileId, tabId }) =>
   `/insights/facebook/${profileId}/tab/${tabId}`;
 
-export const profilePageRoute = generateProfilePageRoute({
+export const profilePageRoute = generateInsightsTabRoute({
   profileId: ':profileId',
   tabId: ':tabId',
 });
@@ -36,7 +28,7 @@ export default connect(
     selectedTabId: ownProps.tabId,
   }),
   (dispatch, ownProps) => ({
-    onTabClick: tabId => dispatch(push(generateProfilePageRoute({
+    onTabClick: tabId => dispatch(push(generateInsightsTabRoute({
       tabId,
       profileId: ownProps.profileId,
     }))),

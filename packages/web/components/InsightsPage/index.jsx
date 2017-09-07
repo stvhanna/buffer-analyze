@@ -34,44 +34,47 @@ const profileSelectorContainer = {
   background: offWhite,
   border: `1px solid ${mystic}`,
   padding: '1rem',
+  marginTop: '10px',
 };
 
-const InsightsPage = ({ match, location }) => (
-  <div style={pageStyle}>
-    <NavSidebar route={location.pathname} />
-    <div style={pageContentStyle}>
-      <TabNavigation
-        profileId={match.params.id}
-        selectedTabId={'overview'}
-        tabId={match.params.id}
-      />
-      <ProfileLoader>
-        <div style={profileSelectorContainer}>
-          <ProfileSelector
-            profileService={match.params.service}
-          />
-        </div>
-        <div style={datePickerContainer}>
-          <DatePicker />
-        </div>
-        <Divider marginTop="1rem" marginBottom="1rem" />
-        <ProfileHeader selectedProfileId={match.params.id} />
-        <Switch>
-          <Route
-            path="/insights/:service/:id/tab/overview"
-            component={OverviewTab}
-          />
-          <Route
-            path="/insights/:service/:id/tab/posts"
-            component={PostsTab}
-          />
-          <Route component={OverviewTab} />
-        </Switch>
+const InsightsPage = ({ match, location }) => {
+  console.log(location);
+  return (
+    <div style={pageStyle}>
+      <NavSidebar route={location.pathname} />
+      <div style={pageContentStyle}>
+        <TabNavigation
+          profileId={match.params.id}
+          tabId={'overview'}
+        />
+        <ProfileLoader>
+          <div style={profileSelectorContainer}>
+            <ProfileSelector
+              profileService={match.params.service}
+            />
+          </div>
+          <div style={datePickerContainer}>
+            <DatePicker />
+          </div>
+          <Divider marginTop="1rem" marginBottom="1rem" />
+          <ProfileHeader selectedProfileId={match.params.id} />
+          <Switch>
+            <Route
+              path="/insights/:service/:id/tab/overview"
+              component={OverviewTab}
+            />
+            <Route
+              path="/insights/:service/:id/tab/posts"
+              component={PostsTab}
+            />
+            <Route component={OverviewTab} />
+          </Switch>
 
-      </ProfileLoader>
+        </ProfileLoader>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 InsightsPage.propTypes = {
   location: PropTypes.shape({
