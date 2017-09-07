@@ -37,28 +37,34 @@ const profileSelectorContainer = {
   marginTop: '10px',
 };
 
-const InsightsPage = ({ match, location }) => {
-
-
-  return (
+const InsightsPage = ({
+  match: {
+      params: {
+        service,
+        id,
+        tabId,
+      },
+    },
+    location,
+  }) => (
     <div style={pageStyle}>
       <NavSidebar route={location.pathname} />
       <div style={pageContentStyle}>
         <TabNavigation
-          profileId={match.params.id}
-          tabId={'overview'}
+          profileId={id}
+          tabId={tabId}
         />
         <ProfileLoader>
           <div style={profileSelectorContainer}>
             <ProfileSelector
-              profileService={match.params.service}
+              profileService={service}
             />
           </div>
           <div style={datePickerContainer}>
             <DatePicker />
           </div>
           <Divider marginTop="1rem" marginBottom="1rem" />
-          <ProfileHeader selectedProfileId={match.params.id} />
+          <ProfileHeader selectedProfileId={id} />
           <Switch>
             <Route
               path="/insights/:service/:id/tab/overview"
@@ -75,7 +81,6 @@ const InsightsPage = ({ match, location }) => {
       </div>
     </div>
   );
-};
 
 InsightsPage.propTypes = {
   location: PropTypes.shape({
@@ -84,6 +89,8 @@ InsightsPage.propTypes = {
   match: PropTypes.shape({
     params: PropTypes.shape({
       service: PropTypes.string,
+      id: PropTypes.string,
+      tabId: PropTypes.string,
     }),
   }).isRequired,
 };

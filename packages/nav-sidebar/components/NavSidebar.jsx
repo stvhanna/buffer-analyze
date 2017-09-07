@@ -53,9 +53,9 @@ const Insights = ({ profiles, ...props }) => {
   return (
     <div>
       <Label>Insights</Label>
-      { facebookProfile && <Item profileId={facebookProfile.id} href={`/insights/facebook/${facebookProfile.id}`} {...props}>Facebook</Item>}
-      { twitterProfile && <Item profileId={twitterProfile.id} href={`/insights/twitter/${twitterProfile.id}`} {...props}>Twitter</Item>}
-      { instagramProfile && <Item profileId={instagramProfile.id} href={`/insights/instagram/${instagramProfile.id}`} {...props}>Instagram</Item>}
+      { facebookProfile && <Item profileId={facebookProfile.id} href={`/insights/facebook/${facebookProfile.id}tab/overview`} {...props}>Facebook</Item>}
+      { twitterProfile && <Item profileId={twitterProfile.id} href={`/insights/twitter/${twitterProfile.id}tab/overview`} {...props}>Twitter</Item>}
+      { instagramProfile && <Item profileId={instagramProfile.id} href={`/insights/instagram/${instagramProfile.id}tab/overview`} {...props}>Instagram</Item>}
     </div>
   );
 };

@@ -25,7 +25,7 @@ export default () =>
           component={ReportsPage}
         />
         <Route
-          path="/insights/:service/:id"
+          path="/insights/:service/:id/tab/:tabId"
           component={InsightsPage}
         />
         <Route
