@@ -1,7 +1,18 @@
 /* globals jest describe test beforeEach expect */
 import { actionTypes as asyncActionTypes } from '@bufferapp/async-data-fetch';
-import { middleware, actionTypes, actions } from './index';
-import { storeMeasure } from './middleware';
+import { actionTypes } from './reducer';
+import middleware, { storeMeasure } from './middleware';
+
+const mockChronos = {
+  startMeasure: jest.fn(),
+  stopMeasure: jest.fn(),
+  measureFromSpecialEvent: jest.fn(),
+  measureFromNavigationStart: jest.fn(),
+};
+
+jest.mock('@bufferapp/chronos', () => (
+  { chronos: () => mockChronos }
+));
 
 describe('middleware', () => {
   const next = jest.fn();
@@ -24,49 +35,90 @@ describe('middleware', () => {
       args: { data: {} }, name: 'performance', type: asyncActionTypes.FETCH,
     });
   });
-});
 
-describe('actions', () => {
-  test('should dispatch PERFORMANCE_START_MEASURE', () => {
-    expect(actions.startMeasure({
-      name: 'test',
-      data: {},
-    })).toMatchObject({
-      measureName: 'test',
-      measureData: {},
+  test('should start a measure', () => {
+    middleware(mockReduxStore)(next)({
       type: actionTypes.PERFORMANCE_START_MEASURE,
-    });
-  });
-
-  test('should dispatch PERFORMANCE_MEASURE_FROM_EVENT', () => {
-    expect(actions.measureFromSpecialEvent({
-      name: 'test',
-      data: {},
-    })).toMatchObject({
       measureName: 'test',
       measureData: {},
+    });
+    expect(mockChronos.startMeasure)
+      .toHaveBeenCalledTimes(1);
+    expect(mockChronos.startMeasure)
+      .toBeCalledWith('test', {});
+  });
+
+  test('should measure from special event', () => {
+    middleware(mockReduxStore)(next)({
       type: actionTypes.PERFORMANCE_MEASURE_FROM_EVENT,
-    });
-  });
-
-  test('should dispatch PERFORMANCE_MEASURE_FROM_NAVIGATION_START', () => {
-    expect(actions.measureFromNavigationStart({
-      name: 'test',
-      data: {},
-    })).toMatchObject({
       measureName: 'test',
       measureData: {},
-      type: actionTypes.PERFORMANCE_MEASURE_FROM_NAVIGATION_START,
     });
+    expect(mockChronos.measureFromSpecialEvent)
+      .toHaveBeenCalledTimes(1);
+    expect(mockChronos.measureFromSpecialEvent)
+      .toBeCalledWith('test', {});
   });
 
-  test('should dispatch PERFORMANCE_STOP_MEASURE', () => {
-    expect(actions.stopMeasure({
-      name: 'test',
-    })).toMatchObject({
+  test('should measure from navigation start', () => {
+    middleware(mockReduxStore)(next)({
+      type: actionTypes.PERFORMANCE_MEASURE_FROM_NAVIGATION_START,
       measureName: 'test',
-      type: actionTypes.PERFORMANCE_STOP_MEASURE,
+      measureData: {},
     });
+    expect(mockChronos.measureFromNavigationStart)
+      .toHaveBeenCalledTimes(1);
+    expect(mockChronos.measureFromNavigationStart)
+      .toBeCalledWith('test', {});
+  });
+
+  test('should stop a measure', () => {
+    middleware(mockReduxStore)(next)({
+      type: actionTypes.PERFORMANCE_STOP_MEASURE,
+      measureName: 'test',
+    });
+    expect(mockChronos.stopMeasure)
+      .toHaveBeenCalledTimes(1);
+    expect(mockChronos.stopMeasure)
+      .toBeCalledWith('test');
+  });
+
+  test('should start a measure on FETCH_START', () => {
+    middleware(mockReduxStore)(next)({
+      type: `test_${asyncActionTypes.FETCH_START}`,
+    });
+    expect(mockReduxStore.dispatch)
+      .toHaveBeenCalledTimes(1);
+    expect(mockReduxStore.dispatch)
+      .toHaveBeenCalledWith({
+        type: actionTypes.PERFORMANCE_START_MEASURE,
+        measureName: 'testFetch',
+      });
+  });
+
+  test('should stop a measure on FETCH_SUCCESS', () => {
+    middleware(mockReduxStore)(next)({
+      type: `test_${asyncActionTypes.FETCH_SUCCESS}`,
+    });
+    expect(mockReduxStore.dispatch)
+      .toHaveBeenCalledTimes(1);
+    expect(mockReduxStore.dispatch)
+      .toHaveBeenCalledWith({
+        type: actionTypes.PERFORMANCE_STOP_MEASURE,
+        measureName: 'testFetch',
+      });
+  });
+
+  test('should stop a measure on FETCH_FAIL', () => {
+    middleware(mockReduxStore)(next)({
+      type: `test_${asyncActionTypes.FETCH_FAIL}`,
+    });
+    expect(mockReduxStore.dispatch)
+      .toHaveBeenCalledTimes(1);
+    expect(mockReduxStore.dispatch)
+      .toHaveBeenCalledWith({
+        type: actionTypes.PERFORMANCE_STOP_MEASURE,
+        measureName: 'testFetch',
+      });
   });
 });
-
