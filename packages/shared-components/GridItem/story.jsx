@@ -5,6 +5,7 @@ import {
   geyser,
 } from '@bufferapp/components/style/color';
 import GridItem from './index';
+import mockDailyData from './mock/dailyData';
 
 
 storiesOf('GridItem')
@@ -69,6 +70,28 @@ storiesOf('GridItem')
           value: 10,
           diff: -60,
         }}
+      />
+    </ul>
+  ))
+  .add('should render a grid item with a Chart if dailyData is provided', () => (
+    <ul
+      style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        padding: '0',
+        margin: '0 auto',
+        borderTop: `solid 1px ${geyser}`,
+        borderLeft: `solid 1px ${geyser}`,
+        borderRadius: '2px',
+      }}
+    >
+      <GridItem
+        metric={{
+          label: 'Engagement average',
+          value: 42,
+          diff: 60,
+        }}
+        dailyData={mockDailyData}
       />
     </ul>
   ));
