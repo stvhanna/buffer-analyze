@@ -6,6 +6,7 @@ function mapStateToProps (state) {
   return {
     loading: state.average.loading,
     totals: state.average.metrics.totals,
+    dailyData: state.average.metrics.daily,
   };
 }
 export default connect(

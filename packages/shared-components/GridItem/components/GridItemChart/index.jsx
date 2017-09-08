@@ -8,9 +8,8 @@ import chartConfig from './chartConfig';
 function prepareSeries(dailyMetric) {
   const seriesData = Array.from(dailyMetric, day => ({
     x: moment(Number(day.day)).endOf('day').valueOf(),
-    // TODO select the correct metric
-    y: day.metrics[0].value,
-    label: day.metrics[0].label,
+    y: day.metric.value,
+    label: day.metric.label,
     color: {
       linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
       stops: [
@@ -59,11 +58,11 @@ const GridItemChart = ({ dailyData }) => {
 GridItemChart.propTypes = {
   dailyData: PropTypes.arrayOf(PropTypes.shape({
     day: PropTypes.string.isRequired,
-    metrics: PropTypes.arrayOf(PropTypes.shape({
+    metric: PropTypes.shape({
       diff: PropTypes.number.isRequired,
       label: PropTypes.string.isRequired,
       value: PropTypes.number.isRequired,
-    })),
+    }).isRequired,
   })).isRequired,
 };
 

@@ -28,7 +28,7 @@ const gridContainer = {
   margin: '1rem 0 1.5rem',
 };
 
-const AverageTable = ({ totals, loading }) => {
+const AverageTable = ({ totals, loading, dailyData }) => {
   let content = null;
   if (loading) {
     content = <Loading active text="Average loading..." />;
@@ -37,7 +37,11 @@ const AverageTable = ({ totals, loading }) => {
   } else {
     content = (
       <ul style={gridStyle}>
-        {totals.map(metric => <GridItem key={metric.label} metric={metric} />)}
+        {totals.map(metric => <GridItem
+          key={metric.label}
+          metric={metric}
+          dailyData={dailyData}
+        />)}
       </ul>
     );
   }
@@ -60,6 +64,14 @@ AverageTable.defaultProps = {
 
 AverageTable.propTypes = {
   loading: PropTypes.bool,
+  dailyData: PropTypes.arrayOf(PropTypes.shape({
+    day: PropTypes.string.isRequired,
+    metrics: PropTypes.arrayOf(PropTypes.shape({
+      diff: PropTypes.number.isRequired,
+      label: PropTypes.string.isRequired,
+      value: PropTypes.number.isRequired,
+    })),
+  })).isRequired,
   totals: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string,
     value: PropTypes.number,

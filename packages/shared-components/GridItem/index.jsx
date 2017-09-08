@@ -25,14 +25,24 @@ const gridSummaryItemValueWrapper = {
   alignItems: 'center',
 };
 
+function filterDailyDataMetrics(dailyData, metricLabel) {
+  return dailyData.map(day => ({
+    day: day.day,
+    metric: day.metrics.filter(metric => metric.label === metricLabel).shift(),
+  }));
+}
+
 const GridItem = ({ metric, tooltip, gridWidth, dailyData }) => {
   gridSummaryItem.width = gridWidth;
+  const dailyMetricData = filterDailyDataMetrics(dailyData, metric.label);
   return (
     <li
       style={gridSummaryItem}
       key={metric.label}
     >
-      {dailyData.length > 0 && <GridItemChart dailyData={dailyData} />}
+      {dailyData.length > 0 &&
+        <GridItemChart dailyData={dailyMetricData} />
+      }
       <Label tooltip={tooltip}>{metric.label}</Label>
       <div style={gridSummaryItemValueWrapper}>
         <Value>{metric.value}</Value>
