@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
 import AverageTable from './index';
+import mockDailyData from './mock/dailyData';
 
 storiesOf('AverageTable')
   .addDecorator(checkA11y)
@@ -14,7 +15,7 @@ storiesOf('AverageTable')
       <AverageTable
         totals={[
           {
-            label: 'Impressions average',
+            label: 'Impression average',
             value: 150,
             diff: 25,
           },
@@ -29,7 +30,7 @@ storiesOf('AverageTable')
             diff: -39,
           },
         ]}
-        profileService="twitter"
+        dailyData={mockDailyData}
       />
     </div>
   ))
@@ -39,7 +40,7 @@ storiesOf('AverageTable')
         width: '750px',
       }}
     >
-      <AverageTable profileService="facebook" loading totals={[]} />
+      <AverageTable loading totals={[]} />
     </div>
   ))
   .add('should render a "no data" state', () => (
@@ -48,6 +49,6 @@ storiesOf('AverageTable')
         width: '750px',
       }}
     >
-      <AverageTable profileService="twitter" totals={[]} />
+      <AverageTable totals={[]} />
     </div>
   ));
