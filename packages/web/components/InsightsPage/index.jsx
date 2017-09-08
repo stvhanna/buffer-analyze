@@ -50,11 +50,11 @@ const InsightsPage = ({
     <div style={pageStyle}>
       <NavSidebar route={location.pathname} />
       <div style={pageContentStyle}>
-        <TabNavigation
-          profileId={id}
-          tabId={tabId}
-        />
         <ProfileLoader>
+          <TabNavigation
+            profileId={id}
+            tabId={tabId}
+          />
           <div style={profileSelectorContainer}>
             <ProfileSelector
               profileService={service}
@@ -67,11 +67,11 @@ const InsightsPage = ({
           <ProfileHeader selectedProfileId={id} />
           <Switch>
             <Route
-              path="/insights/:service/:id/tab/overview"
+              path="/insights/:service/:id/overview"
               component={OverviewTab}
             />
             <Route
-              path="/insights/:service/:id/tab/posts"
+              path="/insights/:service/:id/posts"
               component={PostsTab}
             />
             <Route component={OverviewTab} />

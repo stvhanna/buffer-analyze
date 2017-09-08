@@ -2,26 +2,8 @@ import { connect } from 'react-redux';
 import { push } from 'react-router-redux';
 import TabNavigation from './components/TabNavigation';
 
-const profileRouteRegex = /insights\/facebook\/(\w+)\/tab\/(\w+)/;
-export const getProfilePageParams = ({ path }) => {
-  const match = profileRouteRegex.exec(path);
-  if (!match) {
-    return null;
-  }
-  return {
-    profileId: match[1],
-    tabId: match[2],
-  };
-};
-
 export const generateInsightsTabRoute = ({ profileId, tabId }) =>
-  `/insights/facebook/${profileId}/tab/${tabId}`;
-
-export const profilePageRoute = generateInsightsTabRoute({
-  profileId: ':profileId',
-  tabId: ':tabId',
-});
-
+  `/insights/facebook/${profileId}/${tabId}`;
 
 export default connect(
   (state, ownProps) => ({
@@ -34,6 +16,3 @@ export default connect(
     }))),
   }),
 )(TabNavigation);
-
-// export reducer, actions and action types
-export reducer, { actions, actionTypes } from './reducer';

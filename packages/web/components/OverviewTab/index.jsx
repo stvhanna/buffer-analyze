@@ -7,11 +7,11 @@ import Divider from '@bufferapp/components/Divider';
 import AverageTable from '@bufferapp/average-table';
 
 const OverviewTab = ({ match }) => (
-  <span>
+  <div>
     <SummaryTable profileService={match.params.service} />
     <Divider marginTop="1rem" marginBottom="1rem" />
     <AverageTable />
-  </span>
+  </div>
 );
 
 OverviewTab.propTypes = {

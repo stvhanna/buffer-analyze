@@ -15,18 +15,18 @@ const getProfileIdFromRoute = (state) => {
 };
 
 const getRouteParams = (path) => {
-  const [route, service, profileId, tabId] = path.match(/insights\/(\w+)\/(\w+)\/(\w+)/); // eslint-disable-line no-unused-vars
+  const [route, service, profileId, pageRoute] = path.match(/insights\/(\w+)\/(\w+)\/(.*)$/); // eslint-disable-line no-unused-vars
   return {
     service,
     profileId,
-    tabId,
+    pageRoute,
   };
 };
 
 
 const getProfileRoute = (state, id) => {
-  const { service, tabId } = getRouteParams(state.router.location.pathname);
-  return `/insights/${service}/${id}/tab/${tabId}`;
+  const { service, pageRoute } = getRouteParams(state.router.location.pathname);
+  return `/insights/${service}/${id}/${pageRoute}`;
 };
 
 export default ({ dispatch, getState }) => next => (action) => {
