@@ -9,9 +9,18 @@
     "test": "yarn run lint && sh ../../package_test.sh",
     "test-update": "jest -u --config=../../.jestrc.json"
   },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!@bufferapp/*)"
+    ],
+    "verbose": true,
+    "moduleNameMapper": {
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
+  },
   "author": "tik.hakobyan@gmail.com",
   "dependencies": {
-    "@bufferapp/publish-shared-components": "0.5.33"
+    "@bufferapp/publish-shared-components": "0.5.34"
   },
   "devDependencies": {
     "@storybook/addon-storyshots": "3.1.4",

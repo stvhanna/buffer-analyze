@@ -1,13 +1,8 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import { Provider } from 'react-redux';
-import Tabs, {
-  reducer,
-  actions,
-  actionTypes,
-  middleware,
-} from './index';
-import Tabs from './components/Tabs';
+import Tabs from './index';
+import TabNavigation from './components/TabNavigation';
 
 const storeFake = state => ({
   default: () => {},
@@ -22,30 +17,10 @@ describe('Tabs', () => {
     });
     const wrapper = mount(
       <Provider store={store}>
-        <Tabs />
+        <Tabs selectedTabId={'posts'} />
       </Provider>,
     );
-    expect(wrapper.find(Tabs).length)
+    expect(wrapper.find(TabNavigation).length)
       .toBe(1);
-  });
-
-  it('should export reducer', () => {
-    expect(reducer)
-      .toBeDefined();
-  });
-
-  it('should export actions', () => {
-    expect(actions)
-      .toBeDefined();
-  });
-
-  it('should export actionTypes', () => {
-    expect(actionTypes)
-      .toBeDefined();
-  });
-
-  it('should export middleware', () => {
-    expect(middleware)
-      .toBeDefined();
   });
 });
