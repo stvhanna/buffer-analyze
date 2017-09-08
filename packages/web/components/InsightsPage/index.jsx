@@ -50,6 +50,7 @@ const InsightsPage = ({
       <ProfileLoader>
         <TabNavigation
           profileId={id}
+          service={service}
           tabId={tabId}
         />
         <div style={profileSelectorContainer}>
@@ -71,7 +72,6 @@ const InsightsPage = ({
             path="/insights/:service/:id/posts"
             component={PostsTab}
           />
-          <Route component={OverviewTab} />
         </Switch>
 
       </ProfileLoader>
