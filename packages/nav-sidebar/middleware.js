@@ -4,7 +4,7 @@ import { actions as profilesActions, actionTypes as profileActionTypes } from '@
 
 const getProfileIdFromRoute = (state) => {
   const currentRoute = state.router.location.pathname;
-  const routeMatch = currentRoute.match(/\/insights\/.*\/(.*)/);
+  const routeMatch = currentRoute.match(/\/insights\/.*\/(.*)\/(.*)/);
   let profileId;
   if (routeMatch) {
     profileId = routeMatch[1];

@@ -43,6 +43,7 @@ const getFirstProfileForService = (service, profiles) => (
 );
 
 const Insights = ({ profiles, ...props }) => {
+  const tabId = props.tabId;
   const facebookProfile = getFirstProfileForService('facebook', profiles);
   const twitterProfile = getFirstProfileForService('twitter', profiles);
   const instagramProfile = getFirstProfileForService('instagram', profiles);
@@ -53,9 +54,9 @@ const Insights = ({ profiles, ...props }) => {
   return (
     <div>
       <Label>Insights</Label>
-      { facebookProfile && <Item profileId={facebookProfile.id} href={`/insights/facebook/${facebookProfile.id}/overview`} {...props}>Facebook</Item>}
-      { twitterProfile && <Item profileId={twitterProfile.id} href={`/insights/twitter/${twitterProfile.id}/overview`} {...props}>Twitter</Item>}
-      { instagramProfile && <Item profileId={instagramProfile.id} href={`/insights/instagram/${instagramProfile.id}/overview`} {...props}>Instagram</Item>}
+      { facebookProfile && <Item profileId={facebookProfile.id} href={`/insights/facebook/${facebookProfile.id}/${tabId}`} {...props}>Facebook</Item>}
+      { twitterProfile && <Item profileId={twitterProfile.id} href={`/insights/twitter/${twitterProfile.id}/${tabId}`} {...props}>Twitter</Item>}
+      { instagramProfile && <Item profileId={instagramProfile.id} href={`/insights/instagram/${instagramProfile.id}/${tabId}`} {...props}>Instagram</Item>}
     </div>
   );
 };
@@ -64,6 +65,11 @@ Insights.propTypes = {
   profiles: PropTypes.arrayOf(PropTypes.shape({
     service: PropTypes.String,
   })).isRequired,
+  tabId: PropTypes.string.isRequired,
+};
+
+Insights.defaultProps = {
+  tabId: 'overview',
 };
 
 const NavSidebar = props => (

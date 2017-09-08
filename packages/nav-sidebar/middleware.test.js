@@ -11,7 +11,7 @@ const profileId = '120351988a';
 const stateWithProfileRoute = {
   router: {
     location: {
-      pathname: `/insights/twitter/${profileId}`,
+      pathname: `/insights/twitter/${profileId}/overview`,
     },
   },
 };
@@ -77,7 +77,7 @@ describe('middleware', () => {
       id: profileId,
     };
     invoke(action);
-    expect(store.dispatch).toHaveBeenCalledWith(push(`/insights/twitter/${profileId}`));
+    expect(store.dispatch).toHaveBeenCalledWith(push(`/insights/twitter/${profileId}/overview`));
     expect(next).toHaveBeenCalledWith(action);
   });
 });

@@ -2,10 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import AverageTable from '@bufferapp/average-table';
 import NavSidebar from '@bufferapp/nav-sidebar';
-import SummaryTable from '@bufferapp/summary-table';
-import PostsSummaryTable from '@bufferapp/posts-summary-table';
 import ProfileSelector from '@bufferapp/analyze-profile-selector';
 import ProfileHeader from '@bufferapp/profile-header';
 import DatePicker from '@bufferapp/analyze-date-picker';
@@ -39,48 +36,48 @@ const profileSelectorContainer = {
 
 const InsightsPage = ({
   match: {
-      params: {
-        service,
-        id,
-        tabId,
-      },
+    params: {
+      service,
+      id,
+      tabId,
     },
-    location,
-  }) => (
-    <div style={pageStyle}>
-      <NavSidebar route={location.pathname} />
-      <div style={pageContentStyle}>
-        <ProfileLoader>
-          <TabNavigation
-            profileId={id}
-            tabId={tabId}
+  },
+  location,
+}) => (
+  <div style={pageStyle}>
+    <NavSidebar route={location.pathname} tabId={tabId} />
+    <div style={pageContentStyle}>
+      <ProfileLoader>
+        <TabNavigation
+          profileId={id}
+          tabId={tabId}
+        />
+        <div style={profileSelectorContainer}>
+          <ProfileSelector
+            profileService={service}
           />
-          <div style={profileSelectorContainer}>
-            <ProfileSelector
-              profileService={service}
-            />
-          </div>
-          <div style={datePickerContainer}>
-            <DatePicker />
-          </div>
-          <Divider marginTop="1rem" marginBottom="1rem" />
-          <ProfileHeader selectedProfileId={id} />
-          <Switch>
-            <Route
-              path="/insights/:service/:id/overview"
-              component={OverviewTab}
-            />
-            <Route
-              path="/insights/:service/:id/posts"
-              component={PostsTab}
-            />
-            <Route component={OverviewTab} />
-          </Switch>
+        </div>
+        <div style={datePickerContainer}>
+          <DatePicker />
+        </div>
+        <Divider marginTop="1rem" marginBottom="1rem" />
+        <ProfileHeader selectedProfileId={id} />
+        <Switch>
+          <Route
+            path="/insights/:service/:id/overview"
+            component={OverviewTab}
+          />
+          <Route
+            path="/insights/:service/:id/posts"
+            component={PostsTab}
+          />
+          <Route component={OverviewTab} />
+        </Switch>
 
-        </ProfileLoader>
-      </div>
+      </ProfileLoader>
     </div>
-  );
+  </div>
+);
 
 InsightsPage.propTypes = {
   location: PropTypes.shape({
