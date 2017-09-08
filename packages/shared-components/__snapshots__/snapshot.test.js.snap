@@ -1,5 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Snapshots GridItem Should render the chart tolltip 1`] = `
+<span>
+  <span
+    style={
+      Object {
+        "marginLeft": "7px",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "color": "#59626a",
+          "fontFamily": "\\"Open Sans\\", sans-serif",
+          "fontSize": "0.8rem",
+          "fontWeight": 400,
+        }
+      }
+    >
+      30 August
+      ,
+    </span>
+    <span
+      style={
+        Object {
+          "color": "#000",
+          "fontFamily": "\\"Open Sans\\", sans-serif",
+          "fontSize": "0.8rem",
+          "fontWeight": 600,
+        }
+      }
+    >
+       
+      <span>
+        42
+      </span>
+    </span>
+    <span
+      style={
+        Object {
+          "color": "#59626a",
+          "fontFamily": "\\"Open Sans\\", sans-serif",
+          "fontSize": "0.8rem",
+          "fontWeight": 400,
+        }
+      }
+    >
+       
+      engagements
+    </span>
+  </span>
+</span>
+`;
+
 exports[`Snapshots GridItem should render a summary grid item with a neutral diff 1`] = `
 <span>
   <ul

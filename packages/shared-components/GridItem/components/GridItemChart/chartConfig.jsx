@@ -1,3 +1,8 @@
+import React from 'react';
+import reactDOM from 'react-dom/server';
+
+import ChartTooltip from '../ChartTooltip';
+
 export default {
   title: null,
   chart: {
@@ -39,5 +44,20 @@ export default {
       borderColor: 'transparent',
     },
   },
+  tooltip: {
+    shared: true,
+    backgroundColor: 'transparent',
+    borderRadius: 0,
+    borderWidth: 0,
+    formatter() {
+      const point = this.points[0].point;
+      return reactDOM.renderToStaticMarkup(<ChartTooltip point={point} />);
+    },
+    shadow: false,
+    useHTML: true,
+    positioner: () => ({ x: 0, y: 0 }),
+    style: {
+      pointerEvents: 'none',
+    },
+  },
 };
-

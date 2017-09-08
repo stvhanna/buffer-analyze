@@ -1,5 +1,5 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 import ReactHighcharts from 'react-highcharts';
 import moment from 'moment';
 
@@ -20,7 +20,12 @@ function prepareSeries(dailyMetric) {
     },
     states: {
       hover: {
-        color: '#FFC880',
+        color: {
+          linearGradient: { x1: 0, y1: 0 },
+          stops: [
+            [0, '#FFc880'],
+          ],
+        },
         brightness: 0.0,
       },
     },

@@ -5,6 +5,7 @@ import {
   geyser,
 } from '@bufferapp/components/style/color';
 import GridItem from './index';
+import ChartTooltip from './components/ChartTooltip';
 import mockDailyData from './mock/dailyData';
 
 
@@ -94,5 +95,14 @@ storiesOf('GridItem')
         dailyData={mockDailyData}
       />
     </ul>
+  ))
+  .add('Should render the chart tolltip', () => (
+    <ChartTooltip
+      point={{
+        label: 'Engagement average',
+        x: 1504137600000,
+        y: 42,
+      }}
+      dailyData={mockDailyData}
+    />
   ));
-
