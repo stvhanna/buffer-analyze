@@ -13,6 +13,7 @@ storiesOf('AverageTable')
       }}
     >
       <AverageTable
+        dailyData={mockDailyData}
         totals={[
           {
             label: 'Impression average',
@@ -30,7 +31,6 @@ storiesOf('AverageTable')
             diff: -39,
           },
         ]}
-        dailyData={mockDailyData}
       />
     </div>
   ))
