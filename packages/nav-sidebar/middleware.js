@@ -4,7 +4,7 @@ import { actions as profilesActions, actionTypes as profileActionTypes } from '@
 
 const getProfileIdFromRoute = (state) => {
   const currentRoute = state.router.location.pathname;
-  const routeMatch = currentRoute.match(/\/insights\/.*\/(.*)/);
+  const routeMatch = currentRoute.match(/\/insights\/.*\/(.*)\/(.*)/);
   let profileId;
   if (routeMatch) {
     profileId = routeMatch[1];
@@ -15,17 +15,18 @@ const getProfileIdFromRoute = (state) => {
 };
 
 const getRouteParams = (path) => {
-  const [route, service, profileId] = path.match(/insights\/(\w+)\/(\w+)/); // eslint-disable-line no-unused-vars
+  const [route, service, profileId, pageRoute] = path.match(/insights\/(\w+)\/(\w+)\/(.*)$/); // eslint-disable-line no-unused-vars
   return {
     service,
     profileId,
+    pageRoute,
   };
 };
 
 
 const getProfileRoute = (state, id) => {
-  const { service } = getRouteParams(state.router.location.pathname);
-  return `/insights/${service}/${id}`;
+  const { service, pageRoute } = getRouteParams(state.router.location.pathname);
+  return `/insights/${service}/${id}/${pageRoute}`;
 };
 
 export default ({ dispatch, getState }) => next => (action) => {

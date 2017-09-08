@@ -29,6 +29,14 @@
     react-autocomplete "1.5.9"
     react-day-picker "5.5.1"
 
+"@bufferapp/components@0.5.34":
+  version "0.5.34"
+  resolved "https://registry.yarnpkg.com/@bufferapp/components/-/components-0.5.34.tgz#7f9a7cef1ab7c54b9314fc99702fba931e81f89b"
+  dependencies:
+    "@bufferapp/react-keyframes" "0.2.5"
+    react-autocomplete "1.5.9"
+    react-day-picker "5.5.1"
+
 "@bufferapp/logger@0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@bufferapp/logger/-/logger-0.7.0.tgz#623b519e39bda4c20201fca16f0943c89b42a0b9"
@@ -46,6 +54,12 @@
 "@bufferapp/micro-rpc@0.1.6":
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/@bufferapp/micro-rpc/-/micro-rpc-0.1.6.tgz#104417af8c4940c92d45164cc097d5d38fd7d957"
+
+"@bufferapp/publish-shared-components@0.5.34":
+  version "0.5.34"
+  resolved "https://registry.yarnpkg.com/@bufferapp/publish-shared-components/-/publish-shared-components-0.5.34.tgz#c051c93e1f11ab8ee9bdbdf0c6a09ce194ac2331"
+  dependencies:
+    "@bufferapp/components" "0.5.34"
 
 "@bufferapp/react-keyframes@0.2.4":
   version "0.2.4"
