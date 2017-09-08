@@ -1,7 +1,8 @@
 import React from 'react';
 import { mount } from 'enzyme';
+import { push } from 'react-router-redux';
 import { Provider } from 'react-redux';
-import Tabs from './index';
+import Tabs, { generateInsightsTabRoute } from './index';
 import TabNavigation from './components/TabNavigation';
 
 const storeFake = state => ({
@@ -22,5 +23,16 @@ describe('Tabs', () => {
     );
     expect(wrapper.find(TabNavigation).length)
       .toBe(1);
+  });
+  it('should generate profile insights tab route', () => {
+    const profileId = '1234adf';
+    const tabId = 'overview';
+    const service = 'facebook';
+    expect(generateInsightsTabRoute({
+      profileId,
+      tabId,
+      service,
+    }))
+      .toBe(`/insights/${service}/${profileId}/${tabId}`);
   });
 });
