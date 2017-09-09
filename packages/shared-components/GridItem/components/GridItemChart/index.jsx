@@ -30,17 +30,8 @@ function prepareSeries(dailyMetric) {
     },
   }));
 
-  let pointWidth = 30;
-  if (dailyMetric.length >= 90) {
-    pointWidth = 1;
-  } else if (dailyMetric.length >= 30) {
-    pointWidth = 5;
-  } else if (dailyMetric.length >= 28) {
-    pointWidth = 6;
-  }
   return [{
     data: seriesData,
-    pointWidth,
   }];
 }
 

@@ -158,6 +158,60 @@ exports[`Snapshots GridItem Should render the chart tolltip 1`] = `
 </span>
 `;
 
+exports[`Snapshots GridItem should not render the chart if we have only one day of data 1`] = `
+<span>
+  <ul
+    style={
+      Object {
+        "borderLeft": "solid 1px #ced7df",
+        "borderRadius": "2px",
+        "borderTop": "solid 1px #ced7df",
+        "display": "flex",
+        "flexWrap": "wrap",
+        "margin": "0 auto",
+        "padding": "0",
+      }
+    }
+  >
+    <GridItem
+      dailyData={
+        Array [
+          Object {
+            "day": "1504137600000",
+            "metrics": Array [
+              Object {
+                "diff": 179,
+                "label": "Engagement average",
+                "value": 1374,
+              },
+              Object {
+                "diff": 43,
+                "label": "Impression average",
+                "value": 91133,
+              },
+              Object {
+                "diff": 4,
+                "label": "Click average",
+                "value": 2679,
+              },
+            ],
+          },
+        ]
+      }
+      gridWidth="25%"
+      metric={
+        Object {
+          "diff": 60,
+          "label": "Engagement average",
+          "value": 42,
+        }
+      }
+      tooltip={null}
+    />
+  </ul>
+</span>
+`;
+
 exports[`Snapshots GridItem should render a grid item with a Chart if dailyData is provided 1`] = `
 <span>
   <ul

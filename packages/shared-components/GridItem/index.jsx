@@ -40,7 +40,7 @@ const GridItem = ({ metric, tooltip, gridWidth, dailyData }) => {
       style={gridSummaryItem}
       key={metric.label}
     >
-      {dailyData.length > 0 &&
+      {dailyData.length > 1 &&
         <GridItemChart dailyData={dailyMetricData} />
       }
       <Label tooltip={tooltip}>{metric.label}</Label>
