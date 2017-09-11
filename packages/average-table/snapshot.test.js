@@ -1,8 +1,9 @@
 // use story.js files as snapshots
-import initStoryshots, { shallowSnapshot } from '@storybook/addon-storyshots';
+import initStoryshots from '@storybook/addon-storyshots';
+
+// highcharts won't play that nice with snapshoot testing
+jest.mock('react-highcharts');
 
 initStoryshots({
   suit: 'Snapshots',
-  // Shallow is needed or Highchart test will fail with error 13
-  test: shallowSnapshot,
 });

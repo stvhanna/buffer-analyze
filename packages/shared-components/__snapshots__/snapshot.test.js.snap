@@ -2,159 +2,55 @@
 
 exports[`Snapshots GridItem Should render the chart tolltip 1`] = `
 <span>
-  <ChartTooltip
-    dailyData={
-      Array [
-        Object {
-          "day": "1504137600000",
-          "metrics": Array [
-            Object {
-              "diff": 179,
-              "label": "Engagement average",
-              "value": 1374,
-            },
-            Object {
-              "diff": 43,
-              "label": "Impression average",
-              "value": 91133,
-            },
-            Object {
-              "diff": 4,
-              "label": "Click average",
-              "value": 2679,
-            },
-          ],
-        },
-        Object {
-          "day": "1504224000000",
-          "metrics": Array [
-            Object {
-              "diff": -36,
-              "label": "Engagement average",
-              "value": 803,
-            },
-            Object {
-              "diff": -7,
-              "label": "Impression average",
-              "value": 85118,
-            },
-            Object {
-              "diff": -69,
-              "label": "Click average",
-              "value": 2582,
-            },
-          ],
-        },
-        Object {
-          "day": "1504310400000",
-          "metrics": Array [
-            Object {
-              "diff": -86,
-              "label": "Engagement average",
-              "value": 414,
-            },
-            Object {
-              "diff": -42,
-              "label": "Impression average",
-              "value": 75936,
-            },
-            Object {
-              "diff": -74,
-              "label": "Click average",
-              "value": 1846,
-            },
-          ],
-        },
-        Object {
-          "day": "1504396800000",
-          "metrics": Array [
-            Object {
-              "diff": -59,
-              "label": "Engagement average",
-              "value": 340,
-            },
-            Object {
-              "diff": -18,
-              "label": "Impression average",
-              "value": 86410,
-            },
-            Object {
-              "diff": -48,
-              "label": "Click average",
-              "value": 2755,
-            },
-          ],
-        },
-        Object {
-          "day": "1504483200000",
-          "metrics": Array [
-            Object {
-              "diff": -48,
-              "label": "Engagement average",
-              "value": 439,
-            },
-            Object {
-              "diff": -12,
-              "label": "Impression average",
-              "value": 87669,
-            },
-            Object {
-              "diff": -30,
-              "label": "Click average",
-              "value": 3041,
-            },
-          ],
-        },
-        Object {
-          "day": "1504569600000",
-          "metrics": Array [
-            Object {
-              "diff": -89,
-              "label": "Engagement average",
-              "value": 299,
-            },
-            Object {
-              "diff": -22,
-              "label": "Impression average",
-              "value": 74969,
-            },
-            Object {
-              "diff": -5,
-              "label": "Click average",
-              "value": 2516,
-            },
-          ],
-        },
-        Object {
-          "day": "1504656000000",
-          "metrics": Array [
-            Object {
-              "diff": -41,
-              "label": "Engagement average",
-              "value": 1824,
-            },
-            Object {
-              "diff": 51,
-              "label": "Impression average",
-              "value": 118827,
-            },
-            Object {
-              "diff": 49,
-              "label": "Click average",
-              "value": 3933,
-            },
-          ],
-        },
-      ]
-    }
-    point={
+  <span
+    style={
       Object {
-        "label": "Engagement average",
-        "x": 1504137600000,
-        "y": 42,
+        "marginLeft": "7px",
       }
     }
-  />
+  >
+    <span
+      style={
+        Object {
+          "color": "#59626a",
+          "fontFamily": "\\"Open Sans\\", sans-serif",
+          "fontSize": "0.8rem",
+          "fontWeight": 400,
+        }
+      }
+    >
+      30 August
+      ,
+    </span>
+    <span
+      style={
+        Object {
+          "color": "#000",
+          "fontFamily": "\\"Open Sans\\", sans-serif",
+          "fontSize": "0.8rem",
+          "fontWeight": 600,
+        }
+      }
+    >
+       
+      <span>
+        42
+      </span>
+    </span>
+    <span
+      style={
+        Object {
+          "color": "#59626a",
+          "fontFamily": "\\"Open Sans\\", sans-serif",
+          "fontSize": "0.8rem",
+          "fontWeight": 400,
+        }
+      }
+    >
+       
+      engagements
+    </span>
+  </span>
 </span>
 `;
 
@@ -173,41 +69,156 @@ exports[`Snapshots GridItem should not render the chart if we have only one day 
       }
     }
   >
-    <GridItem
-      dailyData={
-        Array [
-          Object {
-            "day": "1504137600000",
-            "metrics": Array [
-              Object {
-                "diff": 179,
-                "label": "Engagement average",
-                "value": 1374,
-              },
-              Object {
-                "diff": 43,
-                "label": "Impression average",
-                "value": 91133,
-              },
-              Object {
-                "diff": 4,
-                "label": "Click average",
-                "value": 2679,
-              },
-            ],
-          },
-        ]
-      }
-      gridWidth="25%"
-      metric={
+    <li
+      style={
         Object {
-          "diff": 60,
-          "label": "Engagement average",
-          "value": 42,
+          "borderBottom": "solid 1px #CED7DF",
+          "borderRight": "solid 1px #CED7DF",
+          "boxSizing": "border-box",
+          "display": "inline-block",
+          "flexGrow": 1,
+          "listStyle": "none",
+          "paddingBottom": "15px",
+          "width": "25%",
         }
       }
-      tooltip={null}
-    />
+    >
+      <span
+        style={
+          Object {
+            "display": "block",
+            "fontSize": "12px",
+            "fontWeight": 600,
+            "marginLeft": "15px",
+            "marginTop": "15px",
+          }
+        }
+      >
+        <span
+          data-tip={null}
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Engagement average
+          </span>
+        </span>
+      </span>
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flex": 1,
+            "flexDirection": "row",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "display": "inline-block",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#323b43",
+                "fontSize": "2em",
+                "fontWeight": 600,
+                "marginLeft": "15px",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#323b43",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontSize": "2rem",
+                  "fontWeight": 600,
+                }
+              }
+            >
+              <span>
+                42
+              </span>
+            </span>
+          </span>
+        </div>
+        <div>
+          <span
+            style={
+              Object {
+                "display": "inline-block",
+                "height": "1rem",
+                "marginLeft": "10px",
+              }
+            }
+          >
+            <svg
+              height="100%"
+              style={
+                Object {
+                  "fill": "#2fd566",
+                  "height": "1rem",
+                  "width": "1rem",
+                }
+              }
+              version="1.1"
+              viewBox="0 0 16 16"
+              width="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            >
+              <g
+                className="shamrock"
+              >
+                <path
+                  d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                />
+              </g>
+            </svg>
+          </span>
+          <div
+            style={
+              Object {
+                "color": "#2FD566",
+                "display": "inline-block",
+                "fontSize": "18px",
+                "fontWeight": 600,
+                "marginLeft": "5px",
+              }
+            }
+          >
+            <span>
+              <span
+                style={
+                  Object {
+                    "color": "shamrock",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "1.25rem",
+                  }
+                }
+              >
+                <span>
+                  60
+                </span>
+                %
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </li>
   </ul>
 </span>
 `;
@@ -227,161 +238,156 @@ exports[`Snapshots GridItem should render a grid item with a Chart if dailyData 
       }
     }
   >
-    <GridItem
-      dailyData={
-        Array [
-          Object {
-            "day": "1504137600000",
-            "metrics": Array [
-              Object {
-                "diff": 179,
-                "label": "Engagement average",
-                "value": 1374,
-              },
-              Object {
-                "diff": 43,
-                "label": "Impression average",
-                "value": 91133,
-              },
-              Object {
-                "diff": 4,
-                "label": "Click average",
-                "value": 2679,
-              },
-            ],
-          },
-          Object {
-            "day": "1504224000000",
-            "metrics": Array [
-              Object {
-                "diff": -36,
-                "label": "Engagement average",
-                "value": 803,
-              },
-              Object {
-                "diff": -7,
-                "label": "Impression average",
-                "value": 85118,
-              },
-              Object {
-                "diff": -69,
-                "label": "Click average",
-                "value": 2582,
-              },
-            ],
-          },
-          Object {
-            "day": "1504310400000",
-            "metrics": Array [
-              Object {
-                "diff": -86,
-                "label": "Engagement average",
-                "value": 414,
-              },
-              Object {
-                "diff": -42,
-                "label": "Impression average",
-                "value": 75936,
-              },
-              Object {
-                "diff": -74,
-                "label": "Click average",
-                "value": 1846,
-              },
-            ],
-          },
-          Object {
-            "day": "1504396800000",
-            "metrics": Array [
-              Object {
-                "diff": -59,
-                "label": "Engagement average",
-                "value": 340,
-              },
-              Object {
-                "diff": -18,
-                "label": "Impression average",
-                "value": 86410,
-              },
-              Object {
-                "diff": -48,
-                "label": "Click average",
-                "value": 2755,
-              },
-            ],
-          },
-          Object {
-            "day": "1504483200000",
-            "metrics": Array [
-              Object {
-                "diff": -48,
-                "label": "Engagement average",
-                "value": 439,
-              },
-              Object {
-                "diff": -12,
-                "label": "Impression average",
-                "value": 87669,
-              },
-              Object {
-                "diff": -30,
-                "label": "Click average",
-                "value": 3041,
-              },
-            ],
-          },
-          Object {
-            "day": "1504569600000",
-            "metrics": Array [
-              Object {
-                "diff": -89,
-                "label": "Engagement average",
-                "value": 299,
-              },
-              Object {
-                "diff": -22,
-                "label": "Impression average",
-                "value": 74969,
-              },
-              Object {
-                "diff": -5,
-                "label": "Click average",
-                "value": 2516,
-              },
-            ],
-          },
-          Object {
-            "day": "1504656000000",
-            "metrics": Array [
-              Object {
-                "diff": -41,
-                "label": "Engagement average",
-                "value": 1824,
-              },
-              Object {
-                "diff": 51,
-                "label": "Impression average",
-                "value": 118827,
-              },
-              Object {
-                "diff": 49,
-                "label": "Click average",
-                "value": 3933,
-              },
-            ],
-          },
-        ]
-      }
-      gridWidth="25%"
-      metric={
+    <li
+      style={
         Object {
-          "diff": 60,
-          "label": "Engagement average",
-          "value": 42,
+          "borderBottom": "solid 1px #CED7DF",
+          "borderRight": "solid 1px #CED7DF",
+          "boxSizing": "border-box",
+          "display": "inline-block",
+          "flexGrow": 1,
+          "listStyle": "none",
+          "paddingBottom": "15px",
+          "width": "25%",
         }
       }
-      tooltip={null}
-    />
+    >
+      <span
+        style={
+          Object {
+            "display": "block",
+            "fontSize": "12px",
+            "fontWeight": 600,
+            "marginLeft": "15px",
+            "marginTop": "15px",
+          }
+        }
+      >
+        <span
+          data-tip={null}
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Engagement average
+          </span>
+        </span>
+      </span>
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flex": 1,
+            "flexDirection": "row",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "display": "inline-block",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#323b43",
+                "fontSize": "2em",
+                "fontWeight": 600,
+                "marginLeft": "15px",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#323b43",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontSize": "2rem",
+                  "fontWeight": 600,
+                }
+              }
+            >
+              <span>
+                42
+              </span>
+            </span>
+          </span>
+        </div>
+        <div>
+          <span
+            style={
+              Object {
+                "display": "inline-block",
+                "height": "1rem",
+                "marginLeft": "10px",
+              }
+            }
+          >
+            <svg
+              height="100%"
+              style={
+                Object {
+                  "fill": "#2fd566",
+                  "height": "1rem",
+                  "width": "1rem",
+                }
+              }
+              version="1.1"
+              viewBox="0 0 16 16"
+              width="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            >
+              <g
+                className="shamrock"
+              >
+                <path
+                  d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                />
+              </g>
+            </svg>
+          </span>
+          <div
+            style={
+              Object {
+                "color": "#2FD566",
+                "display": "inline-block",
+                "fontSize": "18px",
+                "fontWeight": 600,
+                "marginLeft": "5px",
+              }
+            }
+          >
+            <span>
+              <span
+                style={
+                  Object {
+                    "color": "shamrock",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "1.25rem",
+                  }
+                }
+              >
+                <span>
+                  60
+                </span>
+                %
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </li>
   </ul>
 </span>
 `;
@@ -401,18 +407,157 @@ exports[`Snapshots GridItem should render a summary grid item with a neutral dif
       }
     }
   >
-    <GridItem
-      dailyData={Array []}
-      gridWidth="25%"
-      metric={
+    <li
+      style={
         Object {
-          "diff": 0,
-          "label": "Tweets",
-          "value": 0,
+          "borderBottom": "solid 1px #CED7DF",
+          "borderRight": "solid 1px #CED7DF",
+          "boxSizing": "border-box",
+          "display": "inline-block",
+          "flexGrow": 1,
+          "listStyle": "none",
+          "paddingBottom": "15px",
+          "width": "25%",
         }
       }
-      tooltip={null}
-    />
+    >
+      <span
+        style={
+          Object {
+            "display": "block",
+            "fontSize": "12px",
+            "fontWeight": 600,
+            "marginLeft": "15px",
+            "marginTop": "15px",
+          }
+        }
+      >
+        <span
+          data-tip={null}
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Tweets
+          </span>
+        </span>
+      </span>
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flex": 1,
+            "flexDirection": "row",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "display": "inline-block",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#323b43",
+                "fontSize": "2em",
+                "fontWeight": 600,
+                "marginLeft": "15px",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#323b43",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontSize": "2rem",
+                  "fontWeight": 600,
+                }
+              }
+            >
+              <span>
+                0
+              </span>
+            </span>
+          </span>
+        </div>
+        <div>
+          <span
+            style={
+              Object {
+                "display": "inline-block",
+                "height": "1rem",
+                "marginLeft": "10px",
+              }
+            }
+          >
+            <svg
+              height="100%"
+              style={
+                Object {
+                  "fill": "#59626a",
+                  "height": "1rem",
+                  "width": "1rem",
+                }
+              }
+              version="1.1"
+              viewBox="0 0 16 16"
+              width="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            >
+              <g
+                className="shuttleGray"
+              >
+                <path
+                  d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                  transform="translate(8.118778, 7.993958) scale(1, -1) rotate(90.000000) translate(-8.118778, -7.993958) "
+                />
+              </g>
+            </svg>
+          </span>
+          <div
+            style={
+              Object {
+                "color": "#2FD566",
+                "display": "inline-block",
+                "fontSize": "18px",
+                "fontWeight": 600,
+                "marginLeft": "5px",
+              }
+            }
+          >
+            <span>
+              <span
+                style={
+                  Object {
+                    "color": "#8D969E",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "1.25rem",
+                  }
+                }
+              >
+                <span>
+                  0
+                </span>
+                %
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </li>
   </ul>
 </span>
 `;
@@ -432,18 +577,157 @@ exports[`Snapshots GridItem should render a summary grid item with negative diff
       }
     }
   >
-    <GridItem
-      dailyData={Array []}
-      gridWidth="25%"
-      metric={
+    <li
+      style={
         Object {
-          "diff": -60,
-          "label": "Tweets",
-          "value": 10,
+          "borderBottom": "solid 1px #CED7DF",
+          "borderRight": "solid 1px #CED7DF",
+          "boxSizing": "border-box",
+          "display": "inline-block",
+          "flexGrow": 1,
+          "listStyle": "none",
+          "paddingBottom": "15px",
+          "width": "25%",
         }
       }
-      tooltip={null}
-    />
+    >
+      <span
+        style={
+          Object {
+            "display": "block",
+            "fontSize": "12px",
+            "fontWeight": 600,
+            "marginLeft": "15px",
+            "marginTop": "15px",
+          }
+        }
+      >
+        <span
+          data-tip={null}
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Tweets
+          </span>
+        </span>
+      </span>
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flex": 1,
+            "flexDirection": "row",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "display": "inline-block",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#323b43",
+                "fontSize": "2em",
+                "fontWeight": 600,
+                "marginLeft": "15px",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#323b43",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontSize": "2rem",
+                  "fontWeight": 600,
+                }
+              }
+            >
+              <span>
+                10
+              </span>
+            </span>
+          </span>
+        </div>
+        <div>
+          <span
+            style={
+              Object {
+                "display": "inline-block",
+                "height": "1rem",
+                "marginLeft": "10px",
+              }
+            }
+          >
+            <svg
+              height="100%"
+              style={
+                Object {
+                  "fill": "#ff1e1e",
+                  "height": "1rem",
+                  "width": "1rem",
+                }
+              }
+              version="1.1"
+              viewBox="0 0 16 16"
+              width="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            >
+              <g
+                className="torchRed"
+              >
+                <path
+                  d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                  transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
+                />
+              </g>
+            </svg>
+          </span>
+          <div
+            style={
+              Object {
+                "color": "#FF1E1E",
+                "display": "inline-block",
+                "fontSize": "18px",
+                "fontWeight": 600,
+                "marginLeft": "5px",
+              }
+            }
+          >
+            <span>
+              <span
+                style={
+                  Object {
+                    "color": "torchRed",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "1.25rem",
+                  }
+                }
+              >
+                <span>
+                  60
+                </span>
+                %
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </li>
   </ul>
 </span>
 `;
@@ -463,48 +747,288 @@ exports[`Snapshots GridItem should render a summary grid item with positive diff
       }
     }
   >
-    <GridItem
-      dailyData={Array []}
-      gridWidth="25%"
-      metric={
+    <li
+      style={
         Object {
-          "diff": 50,
-          "label": "Tweets",
-          "value": 150,
+          "borderBottom": "solid 1px #CED7DF",
+          "borderRight": "solid 1px #CED7DF",
+          "boxSizing": "border-box",
+          "display": "inline-block",
+          "flexGrow": 1,
+          "listStyle": "none",
+          "paddingBottom": "15px",
+          "width": "25%",
         }
       }
-      tooltip={null}
-    />
+    >
+      <span
+        style={
+          Object {
+            "display": "block",
+            "fontSize": "12px",
+            "fontWeight": 600,
+            "marginLeft": "15px",
+            "marginTop": "15px",
+          }
+        }
+      >
+        <span
+          data-tip={null}
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Tweets
+          </span>
+        </span>
+      </span>
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flex": 1,
+            "flexDirection": "row",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "display": "inline-block",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#323b43",
+                "fontSize": "2em",
+                "fontWeight": 600,
+                "marginLeft": "15px",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#323b43",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontSize": "2rem",
+                  "fontWeight": 600,
+                }
+              }
+            >
+              <span>
+                150
+              </span>
+            </span>
+          </span>
+        </div>
+        <div>
+          <span
+            style={
+              Object {
+                "display": "inline-block",
+                "height": "1rem",
+                "marginLeft": "10px",
+              }
+            }
+          >
+            <svg
+              height="100%"
+              style={
+                Object {
+                  "fill": "#2fd566",
+                  "height": "1rem",
+                  "width": "1rem",
+                }
+              }
+              version="1.1"
+              viewBox="0 0 16 16"
+              width="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            >
+              <g
+                className="shamrock"
+              >
+                <path
+                  d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                />
+              </g>
+            </svg>
+          </span>
+          <div
+            style={
+              Object {
+                "color": "#2FD566",
+                "display": "inline-block",
+                "fontSize": "18px",
+                "fontWeight": 600,
+                "marginLeft": "5px",
+              }
+            }
+          >
+            <span>
+              <span
+                style={
+                  Object {
+                    "color": "shamrock",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "1.25rem",
+                  }
+                }
+              >
+                <span>
+                  50
+                </span>
+                %
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </li>
   </ul>
 </span>
 `;
 
 exports[`Snapshots PeriodPhrase should render 1`] = `
 <span>
-  <PeriodPhrase
-    endDate={1504826680}
-    startDate={1504308280}
-  />
+  <span>
+    the selected 
+    7 days
+  </span>
 </span>
 `;
 
 exports[`Snapshots ProfileBadge should render 1`] = `
 <span>
-  <ProfileBadge
-    avatarSize={32}
-    avatarUrl="https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/10403026_1055367724535674_7855796462569708170_n.png?oh=2915a2a2325889aae802fd762d081f27&oe=5A2C3281"
-    service="facebook"
-    socialIconSize={16}
-  />
+  <div
+    style={
+      Object {
+        "background": "rgba(50, 59, 67, 0.1)",
+        "borderRadius": "50%",
+        "height": "32px",
+        "marginRight": "10px",
+        "position": "relative",
+        "width": "32px",
+      }
+    }
+  >
+    <img
+      alt=""
+      src="https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/10403026_1055367724535674_7855796462569708170_n.png?oh=2915a2a2325889aae802fd762d081f27&oe=5A2C3281"
+      style={
+        Object {
+          "borderRadius": "50%",
+          "height": "32px",
+          "marginBottom": undefined,
+          "marginTop": undefined,
+          "maxHeight": undefined,
+          "maxWidth": undefined,
+          "minHeight": undefined,
+          "minWidth": undefined,
+          "objectFit": undefined,
+          "width": "32px",
+        }
+      }
+    />
+    <div
+      style={
+        Object {
+          "background": "#fff",
+          "borderRadius": "50%",
+          "height": "16px",
+          "left": "16px",
+          "position": "absolute",
+          "top": "16px",
+          "width": "16px",
+        }
+      }
+    >
+      <svg
+        height="100%"
+        style={
+          Object {
+            "fill": "#3b5998",
+            "height": "100%",
+            "width": "100%",
+          }
+        }
+        version="1.1"
+        viewBox="0 0 16 16"
+        width="100%"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      >
+        <g
+          className="facebook"
+        >
+          <g
+            fillRule="evenodd"
+          >
+            <path
+              d="M0,8 C0,3.581722 3.59071231,0 8,0 L8,0 C12.418278,0 16,3.59071231 16,8 L16,8 C16,12.418278 12.4092877,16 8,16 L8,16 C3.581722,16 0,12.4092877 0,8 L0,8 Z M7.18233349,12 L7.18233349,8.3508456 L6,8.3508456 L6,6.92867987 L7.18233349,6.92867987 L7.18233349,5.87988561 C7.18233349,4.66274759 7.89803602,4 8.94344305,4 C9.44416966,4 9.8745294,4.03873177 10,4.0560322 L10,5.32800198 L9.27491523,5.32835505 C8.70640526,5.32835505 8.59633378,5.60893973 8.59633378,6.0206899 L8.59633378,6.92867987 L9.95220491,6.92867987 L9.77564184,8.3508456 L8.59633378,8.3508456 L8.59633378,12 L7.18233349,12 Z"
+            />
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div>
 </span>
 `;
 
 exports[`Snapshots SocialIcon should render 1`] = `
 <span>
-  <SocialIcon
-    avatarSize={32}
-    service="facebook"
-    socialIconSize={16}
-  />
+  <div
+    style={
+      Object {
+        "background": "#fff",
+        "borderRadius": "50%",
+        "height": "16px",
+        "left": "16px",
+        "position": "absolute",
+        "top": "16px",
+        "width": "16px",
+      }
+    }
+  >
+    <svg
+      height="100%"
+      style={
+        Object {
+          "fill": "#3b5998",
+          "height": "100%",
+          "width": "100%",
+        }
+      }
+      version="1.1"
+      viewBox="0 0 16 16"
+      width="100%"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+    >
+      <g
+        className="facebook"
+      >
+        <g
+          fillRule="evenodd"
+        >
+          <path
+            d="M0,8 C0,3.581722 3.59071231,0 8,0 L8,0 C12.418278,0 16,3.59071231 16,8 L16,8 C16,12.418278 12.4092877,16 8,16 L8,16 C3.581722,16 0,12.4092877 0,8 L0,8 Z M7.18233349,12 L7.18233349,8.3508456 L6,8.3508456 L6,6.92867987 L7.18233349,6.92867987 L7.18233349,5.87988561 C7.18233349,4.66274759 7.89803602,4 8.94344305,4 C9.44416966,4 9.8745294,4.03873177 10,4.0560322 L10,5.32800198 L9.27491523,5.32835505 C8.70640526,5.32835505 8.59633378,5.60893973 8.59633378,6.0206899 L8.59633378,6.92867987 L9.95220491,6.92867987 L9.77564184,8.3508456 L8.59633378,8.3508456 L8.59633378,12 L7.18233349,12 Z"
+          />
+        </g>
+      </g>
+    </svg>
+  </div>
 </span>
 `;
