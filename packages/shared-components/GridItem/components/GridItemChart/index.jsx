@@ -5,11 +5,12 @@ import moment from 'moment';
 
 import chartConfig from './chartConfig';
 
-function prepareSeries(dailyMetric) {
+function prepareSeries(dailyMetric, timezone) {
   const seriesData = Array.from(dailyMetric, day => ({
     x: moment(Number(day.day)).endOf('day').valueOf(),
     y: day.metric.value,
     label: day.metric.label,
+    timezone,
     color: {
       linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
       stops: [
@@ -35,15 +36,15 @@ function prepareSeries(dailyMetric) {
   }];
 }
 
-function prepareChartOptions(dailyMetric) {
+function prepareChartOptions(dailyMetric, timezone) {
   const config = Object.assign({}, chartConfig);
-  config.series = prepareSeries(dailyMetric);
+  config.series = prepareSeries(dailyMetric, timezone);
   return config;
 }
 
-const GridItemChart = ({ dailyData }) => {
+const GridItemChart = ({ dailyData, timezone }) => {
   const charOptions = prepareChartOptions(dailyData);
-  return (<ReactHighcharts config={charOptions} />);
+  return (<ReactHighcharts config={charOptions} timezone={timezone} />);
 };
 
 GridItemChart.propTypes = {
@@ -55,6 +56,7 @@ GridItemChart.propTypes = {
       value: PropTypes.number.isRequired,
     }).isRequired,
   })).isRequired,
+  timezone: PropTypes.string.isRequired,
 };
 
 export default GridItemChart;

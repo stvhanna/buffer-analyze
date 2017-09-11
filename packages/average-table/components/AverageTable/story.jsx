@@ -14,6 +14,7 @@ storiesOf('AverageTable')
     >
       <AverageTable
         dailyData={mockDailyData}
+        timezone="America/Los_Angeles"
         totals={[
           {
             label: 'Impression average',

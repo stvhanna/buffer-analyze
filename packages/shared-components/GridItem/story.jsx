@@ -124,6 +124,7 @@ storiesOf('GridItem')
         label: 'Engagement average',
         x: 1504137600000,
         y: 42,
+        timezone: 'Etc/UTC',
       }}
       dailyData={mockDailyData}
     />

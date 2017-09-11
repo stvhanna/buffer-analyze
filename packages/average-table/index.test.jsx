@@ -8,6 +8,7 @@ import AverageTableContainer, {
   middleware,
 } from './index';
 import AverageTable from './components/AverageTable';
+import mockProfiles from './mocks/profiles';
 
 describe('AverageTable', () => {
   it('should render', () => {
@@ -16,6 +17,10 @@ describe('AverageTable', () => {
       average: {
         loading: true,
         metrics: { totals: [], daily: [] },
+      },
+      profiles: {
+        profiles: mockProfiles,
+        selectedProfileId: mockProfiles[0].id,
       },
     };
     const store = mockStore(state);

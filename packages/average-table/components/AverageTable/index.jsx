@@ -28,7 +28,7 @@ const gridContainer = {
   margin: '1rem 0 1.5rem',
 };
 
-const AverageTable = ({ totals, loading, dailyData }) => {
+const AverageTable = ({ totals, loading, dailyData, timezone }) => {
   let content = null;
   if (loading) {
     content = <Loading active text="Average loading..." />;
@@ -41,6 +41,7 @@ const AverageTable = ({ totals, loading, dailyData }) => {
           key={metric.label}
           metric={metric}
           dailyData={dailyData}
+          timezone={timezone}
         />)}
       </ul>
     );
@@ -72,6 +73,7 @@ AverageTable.propTypes = {
       value: PropTypes.number.isRequired,
     })),
   })).isRequired,
+  timezone: PropTypes.string.isRequired,
   totals: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string,
     value: PropTypes.number,
