@@ -68,6 +68,40 @@ const topPosts = [
     text: '📌 UPDATED for 2017:<br />\nThe official guide to Facebook Video requirements 📹<br />\n<br />\nvia Matt Navarra',
     type: 'picture',
   },
+  {
+    date: 1504868484000,
+    id: '108311429241313_1681434551928985',
+    media: {
+      description: 'Creating great social media content takes time. Here are 18 powerful social media content tools (and tips for creating great content in just minutes).',
+      expanded_link: 'https://blog.bufferapp.com/social-media-content-tools',
+      link: 'https://buff.ly/2j3pxeD',
+      preview: 'https://buffer-media-uploads.s3.amazonaws.com/56c20bd3bd3816f63c94c73f/ca5ecfa64e06c5e419eade3dfa369bfd.jpg',
+      title: '19 Tools for Creating Engaging Social Media Videos, Images and GIFs in Minutes',
+    },
+    serviceLink: 'https://facebook.com/108311429241313/posts/1681434551928985',
+    statistics: {
+      comments: {
+        value: 6,
+      },
+      postClicks: {
+        value: 534,
+      },
+      postImpressions: {
+        value: 14997,
+      },
+      postReach: {
+        value: 6095,
+      },
+      reactions: {
+        value: 107,
+      },
+      shares: {
+        value: 30,
+      },
+    },
+    text: 'Creating social media content takes time... And creating great social media content takes even longer!<br />\n<br />\n19 tools to help take your content to the next level in less time ⏰',
+    type: 'link',
+  },
 ];
 
 storiesOf('TopPostsTable')

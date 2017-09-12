@@ -44,10 +44,7 @@ const MetricColumn = ({ metrics }) => {
 };
 
 MetricColumn.propTypes = {
-  metrics: PropTypes.arrayOf(PropTypes.shape({
-    thumbnail: PropTypes.String,
-    picture: PropTypes.String,
-  })).isRequired,
+  metrics: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 const PostItem = ({
