@@ -324,8 +324,25 @@ storiesOf('TopPostsTable')
             value: 122,
           },
         ]}
-        profileService={'facebook'}
         profileTimezone={'America/Los_Angeles'}
       />
+    </div>
+  ))
+  .add('should render a loading state', () => (
+    <div
+      style={{
+        width: '750px',
+      }}
+    >
+      <TopPostsTable loading topPosts={[]} />
+    </div>
+  ))
+  .add('should render a "no data" state', () => (
+    <div
+      style={{
+        width: '750px',
+      }}
+    >
+      <TopPostsTable topPosts={[]} />
     </div>
   ));
