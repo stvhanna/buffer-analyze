@@ -8,8 +8,8 @@ import chartConfig from './chartConfig';
 function prepareSeries(dailyMetric, timezone) {
   const seriesData = Array.from(dailyMetric, day => ({
     x: moment(Number(day.day)).endOf('day').valueOf(),
-    y: day.metric.value,
-    label: day.metric.label,
+    y: day.metric ? day.metric.value : 0,
+    label: day.metric ? day.metric.label : '',
     timezone,
     color: {
       linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
@@ -54,7 +54,7 @@ GridItemChart.propTypes = {
       diff: PropTypes.number.isRequired,
       label: PropTypes.string.isRequired,
       value: PropTypes.number.isRequired,
-    }).isRequired,
+    }),
   })).isRequired,
   timezone: PropTypes.string.isRequired,
 };

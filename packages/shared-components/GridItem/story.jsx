@@ -128,4 +128,15 @@ storiesOf('GridItem')
       }}
       dailyData={mockDailyData}
     />
+  ))
+  .add('should render a no data tolltip', () => (
+    <ChartTooltip
+      point={{
+        label: '',
+        x: 1504137600000,
+        y: 0,
+        timezone: 'Etc/UTC',
+      }}
+      dailyData={mockDailyData}
+    />
   ));
