@@ -1,0 +1,140 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import moment from 'moment-timezone';
+
+import MetricGraph from '../MetricGraph';
+
+import {
+  columnContainer,
+  metricColumn,
+  contentColumn,
+  contentDate,
+  contentContainer,
+  tweetServiceLinkClass,
+  mediaThumbnail,
+  postMeta,
+  postContent,
+  contentLink,
+} from '../../styles.less';
+
+const Attachment = ({ type, media }) => {
+  if (['picture', 'photo', 'video', 'image'].includes(type) && media) {
+    return <img alt="" className={mediaThumbnail} src={media.thumbnail} />;
+  }
+  return null;
+};
+
+Attachment.propTypes = {
+  type: PropTypes.string.isRequired,
+  media: PropTypes.shape({
+    thumbnail: PropTypes.String,
+    picture: PropTypes.String,
+  }).isRequired,
+};
+
+const MetricColumn = ({ metrics }) => {
+  if (metrics.length === 0) {
+    return null;
+  }
+  return (
+    <div className={metricColumn}>
+      {metrics.map(metric => <MetricGraph key={metric.key} metric={metric} />)}
+    </div>
+  );
+};
+
+MetricColumn.propTypes = {
+  metrics: PropTypes.arrayOf(PropTypes.shape({
+    thumbnail: PropTypes.String,
+    picture: PropTypes.String,
+  })).isRequired,
+};
+
+const PostItem = ({
+      post,
+      engagementMetrics,
+      audienceMetrics,
+      maxEngagementValue,
+      maxAudienceValue,
+      profileTimezone,
+}) => {
+  const secondaryPostColumnMetrics = audienceMetrics.map((metric) => {
+    metric.maxValue = maxAudienceValue;
+    metric.value = post.statistics[metric.key].value;
+    return metric;
+  });
+
+  const primaryPostColumnMetrics = engagementMetrics.map((metric) => {
+    metric.maxValue = maxEngagementValue;
+    metric.value = post.statistics[metric.key].value;
+    return metric;
+  });
+
+  const dateFormat = 'D MMMM hh:mm a';
+  return (
+    <li className={columnContainer}>
+      <div className={contentColumn}>
+        <div className={postMeta}>
+          <div className={contentDate}>
+            <a href={post.serviceLink} target="_blank" rel="noopener noreferrer" className={tweetServiceLinkClass}>
+              {moment(post.date).tz(profileTimezone).format(dateFormat)}
+            </a>
+          </div>
+          <div className={contentLink}>
+            <a className="js-viewPostDetailsLink" href={post.serviceLink} rel="noopener noreferrer" target="_blank">
+              <i className="bi-click" />
+              VIEW POST
+            </a>
+          </div>
+        </div>
+        <div className={postContent}>
+          <Attachment type={post.type} media={post.media} />
+          <div className={contentContainer} dangerouslySetInnerHTML={{ __html: post.text }} />
+        </div>
+      </div>
+      <MetricColumn metrics={primaryPostColumnMetrics} />
+      <MetricColumn metrics={secondaryPostColumnMetrics} />
+    </li>
+  );
+};
+
+PostItem.propTypes = {
+  post: PropTypes.shape({
+    date: PropTypes.number,
+    id: PropTypes.string,
+    media: PropTypes.shape({
+      picture: PropTypes.string,
+      thumbnail: PropTypes.string,
+    }),
+    serviceLink: PropTypes.string,
+    statistics: PropTypes.shape({
+      comments: PropTypes.shape({
+        value: PropTypes.number,
+      }),
+      postClicks: PropTypes.shape({
+        value: PropTypes.number,
+      }),
+      postImpressions: PropTypes.shape({
+        value: PropTypes.number,
+      }),
+      postReach: PropTypes.shape({
+        value: PropTypes.number,
+      }),
+      reactions: PropTypes.shape({
+        value: PropTypes.number,
+      }),
+      shares: PropTypes.shape({
+        value: PropTypes.number,
+      }),
+    }),
+    text: PropTypes.string,
+    type: PropTypes.string,
+  }).isRequired,
+  engagementMetrics: PropTypes.arrayOf(PropTypes.object).isRequired,
+  audienceMetrics: PropTypes.arrayOf(PropTypes.object).isRequired,
+  maxEngagementValue: PropTypes.number.isRequired,
+  maxAudienceValue: PropTypes.number.isRequired,
+  profileTimezone: PropTypes.string.isRequired,
+};
+
+export default PostItem;
