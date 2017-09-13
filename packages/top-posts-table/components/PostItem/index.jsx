@@ -57,13 +57,13 @@ const PostItem = ({
 }) => {
   const secondaryPostColumnMetrics = audienceMetrics.map((metric) => {
     metric.maxValue = maxAudienceValue;
-    metric.value = post.statistics[metric.key].value;
+    metric.value = post.statistics[metric.key];
     return metric;
   });
 
   const primaryPostColumnMetrics = engagementMetrics.map((metric) => {
     metric.maxValue = maxEngagementValue;
-    metric.value = post.statistics[metric.key].value;
+    metric.value = post.statistics[metric.key];
     return metric;
   });
 
@@ -105,24 +105,12 @@ PostItem.propTypes = {
     }),
     serviceLink: PropTypes.string,
     statistics: PropTypes.shape({
-      comments: PropTypes.shape({
-        value: PropTypes.number,
-      }),
-      postClicks: PropTypes.shape({
-        value: PropTypes.number,
-      }),
-      postImpressions: PropTypes.shape({
-        value: PropTypes.number,
-      }),
-      postReach: PropTypes.shape({
-        value: PropTypes.number,
-      }),
-      reactions: PropTypes.shape({
-        value: PropTypes.number,
-      }),
-      shares: PropTypes.shape({
-        value: PropTypes.number,
-      }),
+      comments: PropTypes.number,
+      postClicks: PropTypes.number,
+      postImpressions: PropTypes.number,
+      postReach: PropTypes.number,
+      reactions: PropTypes.number,
+      shares: PropTypes.number,
     }),
     text: PropTypes.string,
     type: PropTypes.string,

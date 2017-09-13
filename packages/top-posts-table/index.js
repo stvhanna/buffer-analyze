@@ -4,7 +4,10 @@ import TopPostsTable from './components/TopPostsTable';
 // default export = container
 export default connect(
   state => ({
-    // add state here
+    loading: state.topPosts.loading,
+    topPosts: state.topPosts.topPosts,
+    startDate: state.date.startDate,
+    endDate: state.date.endDate,
   }),
 )(TopPostsTable);
 

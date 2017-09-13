@@ -18,11 +18,14 @@ import {
   contentColumn,
 } from '../../styles.less';
 
+import { metricsConfig } from '../../metrics';
+
 const gridContainer = {
   minHeight: '12rem',
   position: 'relative',
   margin: '1rem 0 1.5rem',
 };
+
 
 function mergePostMetrics(post, postMetrics) {
   const postStatistics = post.statistics;
@@ -43,7 +46,7 @@ function getMaxMetricValue(posts, metrics) {
   let max = 0;
   posts.forEach((post) => {
     metrics.forEach((metric) => {
-      const value = post.statistics[metric.key].value;
+      const value = post.statistics[metric.key];
       if (value > max) {
         max = value;
       }
@@ -55,19 +58,21 @@ function getMaxMetricValue(posts, metrics) {
 const TopPostsTable = (props) => {
   const {
     topPosts,
-    postMetrics,
-    firstColumnMetrics,
-    secondColumnMetrics,
+    profileService,
     loading,
     profileTimezone,
     startDate,
     endDate,
   } = props;
 
-  const posts = topPosts.map(post => mergePostMetrics(post, postMetrics));
+  const allPostMetrics = metricsConfig[profileService].postMetrics;
+  const engagementMetrics = metricsConfig[profileService].topPostsEngagementMetrics;
+  const audienceMetrics = metricsConfig[profileService].topPostsAudienceMetrics;
 
-  const maxEngagementValue = getMaxMetricValue(posts, firstColumnMetrics);
-  const maxAudienceValue = getMaxMetricValue(posts, secondColumnMetrics);
+  const posts = topPosts.map(post => mergePostMetrics(post, allPostMetrics));
+
+  const maxEngagementValue = getMaxMetricValue(posts, engagementMetrics);
+  const maxAudienceValue = getMaxMetricValue(posts, audienceMetrics);
 
   const slicedPosts = posts.slice(0, 10);
 
@@ -94,8 +99,8 @@ const TopPostsTable = (props) => {
               post={post}
               maxEngagementValue={maxEngagementValue}
               maxAudienceValue={maxAudienceValue}
-              engagementMetrics={firstColumnMetrics}
-              audienceMetrics={secondColumnMetrics}
+              engagementMetrics={engagementMetrics}
+              audienceMetrics={audienceMetrics}
             />,
           )}
         </ul>
@@ -122,6 +127,7 @@ TopPostsTable.defaultProps = {
 TopPostsTable.propTypes = {
   loading: PropTypes.bool,
   profileTimezone: PropTypes.string.isRequired,
+  profileService: PropTypes.string.isRequired,
   startDate: PropTypes.number,
   endDate: PropTypes.number,
   topPosts: PropTypes.arrayOf(PropTypes.shape({
@@ -133,31 +139,16 @@ TopPostsTable.propTypes = {
     }),
     serviceLink: PropTypes.string,
     statistics: PropTypes.shape({
-      comments: PropTypes.shape({
-        value: PropTypes.number,
-      }),
-      postClicks: PropTypes.shape({
-        value: PropTypes.number,
-      }),
-      postImpressions: PropTypes.shape({
-        value: PropTypes.number,
-      }),
-      postReach: PropTypes.shape({
-        value: PropTypes.number,
-      }),
-      reactions: PropTypes.shape({
-        value: PropTypes.number,
-      }),
-      shares: PropTypes.shape({
-        value: PropTypes.number,
-      }),
+      comments: PropTypes.number,
+      postClicks: PropTypes.number,
+      postImpressions: PropTypes.number,
+      postReach: PropTypes.number,
+      reactions: PropTypes.number,
+      shares: PropTypes.number,
     }),
     text: PropTypes.string,
     type: PropTypes.string,
   })).isRequired,
-  postMetrics: PropTypes.arrayOf(PropTypes.object).isRequired,
-  firstColumnMetrics: PropTypes.arrayOf(PropTypes.object).isRequired,
-  secondColumnMetrics: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default TopPostsTable;
