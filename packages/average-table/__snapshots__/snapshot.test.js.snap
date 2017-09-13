@@ -31,6 +31,7 @@ exports[`Snapshots AverageTable should render a "no data" state 1`] = `
         </span>
       </h2>
       <div
+        id="js-dom-to-png-average"
         style={
           Object {
             "margin": "1rem 0 1.5rem",
@@ -145,6 +146,7 @@ exports[`Snapshots AverageTable should render a loading state 1`] = `
         </span>
       </h2>
       <div
+        id="js-dom-to-png-average"
         style={
           Object {
             "margin": "1rem 0 1.5rem",
@@ -293,6 +295,7 @@ exports[`Snapshots AverageTable should render the average table 1`] = `
         </span>
       </h2>
       <div
+        id="js-dom-to-png-average"
         style={
           Object {
             "margin": "1rem 0 1.5rem",

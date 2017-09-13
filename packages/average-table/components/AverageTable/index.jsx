@@ -47,7 +47,7 @@ const AverageTable = ({ metrics, loading }) => {
       <h2 style={{ margin: '2rem 0 1rem' }}>
         <Text> Average post performance </Text>
       </h2>
-      <div style={gridContainer}>
+      <div id="js-dom-to-png-average" style={gridContainer}>
         {content}
       </div>
     </div>
