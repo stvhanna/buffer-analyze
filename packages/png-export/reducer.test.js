@@ -13,7 +13,7 @@ describe('reducer', () => {
       const state = reducer(undefined, {
         type: 'TEST',
       });
-      expect(state.chartsToExport).toHaveLength(0);
+      expect(state.charts).toHaveLength(0);
     });
   });
 
@@ -40,7 +40,7 @@ describe('reducer', () => {
       filename: 'averages',
       id: 'average-container',
     });
-    expect(state.chartsToExport[0]).toEqual({
+    expect(state.charts[0]).toEqual({
       filename: 'averages',
       id: 'average-container',
     });
@@ -57,7 +57,7 @@ describe('reducer', () => {
       expect(state.exporting).toBeFalsy();
     });
 
-    it('chartsToExport is empty', () => {
+    it('charts is empty', () => {
       const exportingState = reducer(undefined, {
         type: actionTypes.EXPORT_CHART,
         filename: 'averages',
@@ -66,7 +66,7 @@ describe('reducer', () => {
       const state = reducer(exportingState, {
         type: actionTypes.EXPORT_TO_PNG_END,
       });
-      expect(state.chartsToExport).toHaveLength(0);
+      expect(state.charts).toHaveLength(0);
     });
 
     it('zipFilename is null', () => {

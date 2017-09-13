@@ -8,7 +8,7 @@ export const actionTypes = {
 const initialState = {
   exporting: false,
   zipFilename: null,
-  chartsToExport: [],
+  charts: [],
 };
 
 export default (state = initialState, action) => {
@@ -22,7 +22,7 @@ export default (state = initialState, action) => {
     case actionTypes.EXPORT_CHART:
       return {
         ...state,
-        chartsToExport: state.chartsToExport.concat([{
+        charts: state.charts.concat([{
           filename: action.filename,
           id: action.id,
         }]),
@@ -30,7 +30,7 @@ export default (state = initialState, action) => {
     case actionTypes.EXPORT_TO_PNG_END:
       return {
         ...state,
-        chartsToExport: [],
+        charts: [],
         exporting: false,
         zipFilename: null,
       };

@@ -9,6 +9,7 @@ import DatePicker from '@bufferapp/analyze-date-picker';
 import ProfileLoader from '@bufferapp/profile-loader';
 import Divider from '@bufferapp/components/Divider';
 import TabNavigation from '@bufferapp/tabs';
+import ExportButton from '@bufferapp/analyze-png-export';
 import { offWhite, mystic } from '@bufferapp/components/style/color';
 import PostsTab from '../PostsTab';
 import OverviewTab from '../OverviewTab';
@@ -25,6 +26,8 @@ const pageContentStyle = {
 
 const datePickerContainer = {
   padding: '2rem 0',
+  display: 'flex',
+  justifyContent: 'space-between',
 };
 
 const profileSelectorContainer = {
@@ -60,6 +63,7 @@ const InsightsPage = ({
         </div>
         <div style={datePickerContainer}>
           <DatePicker />
+          <ExportButton filename={`buffer-${tabId === 'overview' ? 'overview' : 'posts'}-analytics`} />
         </div>
         <Divider marginTop="1rem" marginBottom="1rem" />
         <ProfileHeader selectedProfileId={id} />
