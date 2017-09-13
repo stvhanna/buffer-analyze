@@ -45,7 +45,7 @@ const PostsSummaryTable = ({ metrics, loading, profileService, startDate, endDat
   return (
     <div>
       <Title profileService={profileService} startDate={startDate} endDate={endDate} />
-      <div style={gridContainer}>
+      <div id="js-dom-to-png-posts-summary" style={gridContainer}>
         {content}
       </div>
     </div>
