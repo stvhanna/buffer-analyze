@@ -121,7 +121,7 @@ const TopPostsTable = (props) => {
   return (
     <div>
       <Title startDate={startDate} endDate={endDate} />
-      <div style={gridContainer}>
+      <div id="js-dom-to-png-top-posts" style={gridContainer}>
         {content}
       </div>
     </div>
