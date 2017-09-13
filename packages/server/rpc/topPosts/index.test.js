@@ -6,6 +6,67 @@ jest.mock('request-promise');
 import rp from 'request-promise';
 import topPosts from './';
 
+const topPostsReponse = {
+  total: 12,
+  stats: {
+    '108311429241313_1685419118197195': {
+      shares: 13,
+      post_impressions: 18406,
+      reactions: 57,
+      comments: 23,
+      post_clicks: 699,
+      post_reach: 8995,
+    },
+  },
+  updates: {
+    '108311429241313_1685419118197195': {
+      _id: '59b81c26883fce89588b4567',
+      clicks_caveat: false,
+      created_at: 1505238054,
+      day: 'Tuesday 12th September',
+      due_at: 1505217660,
+      due_time: '5:01 am',
+      id: '59b81c26883fce89588b4567',
+      is_video_processing: false,
+      media: {
+        video: {
+          details: {
+            transcoded_location: 'https://video.xx.fbcdn.net/v/t42.1790-2/21626650_117103448973483_1496062419162628096_n.mp4?efg=eyJybHIiOjMwMCwicmxhIjo5MTgsInZlbmNvZGVfdGFnIjoic3ZlX3NkIn0%3D&rl=300&vabr=143&oh=61aa9d0bb4bf5436d7f4399f406aa9c3&oe=59BAE50C',
+            location: 'https://video.xx.fbcdn.net/v/t42.1790-2/21626650_117103448973483_1496062419162628096_n.mp4?efg=eyJybHIiOjMwMCwicmxhIjo5MTgsInZlbmNvZGVfdGFnIjoic3ZlX3NkIn0%3D&rl=300&vabr=143&oh=61aa9d0bb4bf5436d7f4399f406aa9c3&oe=59BAE50C',
+            width: 720,
+            height: 405,
+          },
+          thumbnails: [
+            'https://scontent.xx.fbcdn.net/v/t15.0-10/s720x720/21683895_1685422951530145_6935886671346925568_n.jpg?oh=97686e2171ace823c83f83ca1024ecc2&oe=5A50084F',
+          ],
+        },
+        thumbnail: 'https://scontent.xx.fbcdn.net/v/t15.0-10/s720x720/21683895_1685422951530145_6935886671346925568_n.jpg?oh=97686e2171ace823c83f83ca1024ecc2&oe=5A50084F',
+      },
+      needs_approval: false,
+      profile_id: '4e88a092512f7e1556000000',
+      profile_service: 'facebook',
+      sent_at: 1505217660,
+      service_link: 'https://facebook.com/108311429241313/posts/1685419118197195',
+      service_update_id: '108311429241313_1685419118197195',
+      statistics: {
+        comments: 27,
+        likes: 54,
+        reach: 0,
+        shares: 15,
+        clicks: 0,
+      },
+      status: 'service',
+      text: 'Today is a good day',
+      text_formatted: 'Today is a good day',
+      type: 'video',
+      updated_at: 1505283283,
+      user_id: '56c20bd3bd3816f63c94c73f',
+      via: 'facebook',
+    },
+  },
+  success: true,
+};
+
 describe('rpc/top_posts', () => {
   const profileId = '123159ad';
   const token = 'some token';
@@ -46,6 +107,46 @@ describe('rpc/top_posts', () => {
         },
         json: true,
       }]);
+  });
+
+  it('should merge stats with updates when posts are received', async () => {
+    rp.mockReturnValueOnce(Promise.resolve(topPostsReponse));
+
+    const topPostsData = await topPosts.fn({ profileId }, {
+      session: {
+        accessToken: token,
+      },
+    });
+
+    expect(topPostsData).toEqual([{
+      date: 1505217660000,
+      id: '108311429241313_1685419118197195',
+      media: {
+        thumbnail: 'https://scontent.xx.fbcdn.net/v/t15.0-10/s720x720/21683895_1685422951530145_6935886671346925568_n.jpg?oh=97686e2171ace823c83f83ca1024ecc2&oe=5A50084F',
+        video: {
+          details: {
+            height: 405,
+            location: 'https://video.xx.fbcdn.net/v/t42.1790-2/21626650_117103448973483_1496062419162628096_n.mp4?efg=eyJybHIiOjMwMCwicmxhIjo5MTgsInZlbmNvZGVfdGFnIjoic3ZlX3NkIn0%3D&rl=300&vabr=143&oh=61aa9d0bb4bf5436d7f4399f406aa9c3&oe=59BAE50C',
+            transcoded_location: 'https://video.xx.fbcdn.net/v/t42.1790-2/21626650_117103448973483_1496062419162628096_n.mp4?efg=eyJybHIiOjMwMCwicmxhIjo5MTgsInZlbmNvZGVfdGFnIjoic3ZlX3NkIn0%3D&rl=300&vabr=143&oh=61aa9d0bb4bf5436d7f4399f406aa9c3&oe=59BAE50C',
+            width: 720,
+          },
+          thumbnails: [
+            'https://scontent.xx.fbcdn.net/v/t15.0-10/s720x720/21683895_1685422951530145_6935886671346925568_n.jpg?oh=97686e2171ace823c83f83ca1024ecc2&oe=5A50084F',
+          ],
+        },
+      },
+      serviceLink: 'https://facebook.com/108311429241313/posts/1685419118197195',
+      statistics: {
+        comments: 23,
+        post_clicks: 699,
+        post_impressions: 18406,
+        post_reach: 8995,
+        reactions: 57,
+        shares: 13,
+      },
+      text: 'Today is a good day',
+      type: 'video',
+    }]);
   });
 });
 
