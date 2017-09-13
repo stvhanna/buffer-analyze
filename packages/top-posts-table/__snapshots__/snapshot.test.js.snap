@@ -45,7 +45,7 @@ exports[`Snapshots PostItem should render the top posts table 1`] = `
             className="contentLink"
           >
             <a
-              className="js-viewPostDetailsLink"
+              className="viewPostLinkClass"
               href="https://facebook.com/108311429241313/posts/1678040122268428"
               rel="noopener noreferrer"
               target="_blank"
@@ -776,7 +776,7 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                     className="contentLink"
                   >
                     <a
-                      className="js-viewPostDetailsLink"
+                      className="viewPostLinkClass"
                       href="https://facebook.com/108311429241313/posts/1678040122268428"
                       rel="noopener noreferrer"
                       target="_blank"
@@ -1133,7 +1133,7 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                     className="contentLink"
                   >
                     <a
-                      className="js-viewPostDetailsLink"
+                      className="viewPostLinkClass"
                       href="https://facebook.com/108311429241313/posts/1678667888872318"
                       rel="noopener noreferrer"
                       target="_blank"
@@ -1493,7 +1493,7 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                     className="contentLink"
                   >
                     <a
-                      className="js-viewPostDetailsLink"
+                      className="viewPostLinkClass"
                       href="https://facebook.com/108311429241313/posts/1681434551928985"
                       rel="noopener noreferrer"
                       target="_blank"
