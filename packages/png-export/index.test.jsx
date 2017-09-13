@@ -1,5 +1,5 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 import { Provider } from 'react-redux';
 import PngExport, {
   reducer,
@@ -50,5 +50,18 @@ describe('PngExport', () => {
   it('should export middleware', () => {
     expect(middleware)
       .toBeDefined();
+  });
+
+  it('exportToPNG should call the exportToPNG action with the filename prop', () => {
+    const store = {
+      dispatch: jest.fn(),
+      getState: jest.fn(() => ({
+        exportToPNG: {},
+      })),
+    };
+    const component = shallow(<PngExport filename="overview" store={store} />);
+
+    component.props().exportToPNG();
+    expect(store.dispatch).toHaveBeenCalledWith(actions.exportToPNG('overview'));
   });
 });
