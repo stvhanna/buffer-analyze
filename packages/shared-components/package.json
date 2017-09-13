@@ -20,8 +20,9 @@
   },
   "author": "mike@msanroman.io",
   "dependencies": {
+    "@bufferapp/components": "0.5.28",
     "moment": "^2.18.1",
-    "@bufferapp/components": "0.5.28"
+    "react-highcharts": "^12.0.0"
   },
   "devDependencies": {
     "@storybook/addon-storyshots": "3.1.4",

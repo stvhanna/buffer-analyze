@@ -28,6 +28,19 @@ const requestTotals = (profileId, dateRange, accessToken) =>
     json: true,
   });
 
+const requestDailyTotals = (profileId, dateRange, accessToken) =>
+  rp({
+    uri: `${process.env.API_ADDR}/1/profiles/${profileId}/analytics/daily_totals.json`,
+    method: 'GET',
+    strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
+    qs: {
+      access_token: accessToken,
+      start_date: dateRange.start,
+      end_date: dateRange.end,
+    },
+    json: true,
+  });
+
 function percentageDifference (value, pastValue) {
   if (pastValue === 0 && value === 0) return 0;
   const difference = value - pastValue;
@@ -37,28 +50,105 @@ function percentageDifference (value, pastValue) {
 
 function averageValue(value, quantity) {
   if (value === 0) return 0;
+  if (quantity === 0) quantity = 1; // can't divide by 0
   return Math.round(value / quantity);
 }
 
 const summarize = (
-  metric,
+  metriKey,
   currentPeriod,
   currentPeriodPostCount,
   pastPeriod,
   pastPeriodPostCount,
 ) => {
-  const pastValue = averageValue(pastPeriod[metric], pastPeriodPostCount);
-  const value = averageValue(currentPeriod[metric], currentPeriodPostCount);
-  const label = LABELS[metric];
+  const pastValue = averageValue(pastPeriod[metriKey], pastPeriodPostCount);
+  const value = averageValue(currentPeriod[metriKey], currentPeriodPostCount);
+  const label = LABELS[metriKey];
   if (label) {
     return {
       diff: percentageDifference(value, pastValue),
-      label: LABELS[metric],
+      label: LABELS[metriKey],
       value,
     };
   }
   return null;
 };
+
+function formatTotals(
+  currentPeriodResult,
+  currentPeriodPostCount,
+  pastPeriodResult,
+  pastPeriodPostCount,
+) {
+  return Object
+    .keys(currentPeriodResult)
+    .map(metriKey =>
+      summarize(
+        metriKey,
+        currentPeriodResult,
+        currentPeriodPostCount,
+        pastPeriodResult,
+        pastPeriodPostCount,
+      ),
+    )
+    .filter(metric => metric !== null);
+}
+
+function formatDaily(
+  currentPeriodDailyTotalsResult,
+  pastPeriodDailyTotalsResult,
+) {
+  const currentPeriodDays = Object.keys(currentPeriodDailyTotalsResult);
+  const pastPeriodDays = Object.keys(pastPeriodDailyTotalsResult);
+  const daily = Array.from(currentPeriodDays, (day, index) => ({
+    day,
+    currentPeriodMetrics: currentPeriodDailyTotalsResult[day],
+    pastPeriodMetrics: pastPeriodDailyTotalsResult[pastPeriodDays[index]],
+    currentPeriodPostCount: currentPeriodDailyTotalsResult[day].posts_count,
+    pastPeriodPostCount: pastPeriodDailyTotalsResult[pastPeriodDays[index]].posts_count,
+  })).map((data) => {
+    const dailyMetrics = Object.keys(data.currentPeriodMetrics);
+    return {
+      day: data.day,
+      metrics: dailyMetrics.map(metriKey =>
+        summarize(
+          metriKey,
+          data.currentPeriodMetrics,
+          data.currentPeriodPostCount,
+          data.pastPeriodMetrics,
+          data.pastPeriodPostCount,
+        ),
+      ).filter(metric => metric !== null),
+    };
+  });
+  return daily;
+}
+
+function formatData(
+  currentPeriodResult,
+  currentPeriodPostCount,
+  pastPeriodResult,
+  pastPeriodPostCount,
+  currentPeriodDailyTotalsResult,
+  pastPeriodDailyTotalsResult,
+) {
+  const totals = formatTotals(
+    currentPeriodResult,
+    currentPeriodPostCount,
+    pastPeriodResult,
+    pastPeriodPostCount,
+  );
+
+  const daily = formatDaily(
+    currentPeriodDailyTotalsResult,
+    pastPeriodDailyTotalsResult,
+  );
+
+  return {
+    totals,
+    daily,
+  };
+}
 
 module.exports = method(
   'average',
@@ -67,31 +157,37 @@ module.exports = method(
     const end = moment.unix(endDate).format('MM/DD/YYYY');
     const start = moment.unix(startDate).format('MM/DD/YYYY');
     const dateRange = new DateRange(start, end);
-    const previousDateRange = dateRange.getPreviousDateRange();
+    const pastDateRange = dateRange.getPreviousDateRange();
 
-    const currentPeriod = requestTotals(profileId, dateRange, session.accessToken);
-    const previousPeriod = requestTotals(profileId, previousDateRange, session.accessToken);
+    const currentPeriodTotals = requestTotals(profileId, dateRange, session.accessToken);
+    const pastPeriodTotals = requestTotals(profileId, pastDateRange, session.accessToken);
+
+    const currentPeriodDailyTotals = requestDailyTotals(profileId, dateRange, session.accessToken);
+    const pastPeriodDailyTotals = requestDailyTotals(profileId, pastDateRange, session.accessToken);
 
     return Promise
-      .all([currentPeriod, previousPeriod])
+      .all([currentPeriodTotals, pastPeriodTotals, currentPeriodDailyTotals, pastPeriodDailyTotals])
       .then((response) => {
-        const currentPeriodResult = response[0].response;
-        const pastPeriodResult = response[1].response;
-        const currentPeriodPostCount = currentPeriodResult.posts_count;
-        const pastPeriodPostCount = pastPeriodResult.posts_count;
-        const metrics = Object.keys(currentPeriodResult);
-        return metrics
-          .map(metric =>
-            summarize(
-              metric,
-              currentPeriodResult,
-              currentPeriodPostCount,
-              pastPeriodResult,
-              pastPeriodPostCount,
-            ),
-          )
-          .filter(metric => metric !== null);
+        const currentPeriodTotalsResult = response[0].response;
+        const pastPeriodTotalsResult = response[1].response;
+        const currentPeriodTotalsPostCount = currentPeriodTotalsResult.posts_count;
+        const pastPeriodTotalsPostCount = pastPeriodTotalsResult.posts_count;
+
+        const currentPeriodDailyTotalsResult = response[2].response;
+        const pastPeriodDailyTotalsResult = response[3].response;
+
+        return formatData(
+          currentPeriodTotalsResult,
+          currentPeriodTotalsPostCount,
+          pastPeriodTotalsResult,
+          pastPeriodTotalsPostCount,
+          currentPeriodDailyTotalsResult,
+          pastPeriodDailyTotalsResult,
+        );
       })
-      .catch(() => []);
+      .catch(() => ({
+        totals: [],
+        daily: [],
+      }));
   },
 );

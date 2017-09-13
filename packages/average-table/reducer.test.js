@@ -6,7 +6,7 @@ describe('reducer', () => {
     const metrics = reducer(undefined, {
       type: 'TEST_ACTION',
     }).metrics;
-    expect(metrics).toEqual([]);
+    expect(metrics).toEqual({ totals: [], daily: [] });
   });
   it('initial state is loading', () => {
     const loading = reducer(undefined, {

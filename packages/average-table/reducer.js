@@ -3,7 +3,7 @@ import { actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-
 export const actionTypes = {};
 
 const initialState = {
-  metrics: [],
+  metrics: { totals: [], daily: [] },
   loading: true,
 };
 
