@@ -12,6 +12,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
         .then((pngs) => {
           downloadAsZip(exportToPNG.zipFilename, pngs);
           store.dispatch(actions.endExportToPNG());
+          next(action);
         });
     case actionTypes.EXPORT_CHART:
       if (timeoutID) {
