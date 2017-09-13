@@ -14,14 +14,15 @@ import { offWhite, mystic } from '@bufferapp/components/style/color';
 import PostsTab from '../PostsTab';
 import OverviewTab from '../OverviewTab';
 
+const contentStyle = {
+  overflowY: 'auto',
+  flexGrow: 1,
+};
+
 const pageStyle = {
   display: 'flex',
   flexGrow: 1,
   height: '100%',
-};
-
-const pageContentStyle = {
-  padding: '1rem 2rem',
 };
 
 const datePickerContainer = {
@@ -49,13 +50,13 @@ const InsightsPage = ({
 }) => (
   <div style={pageStyle}>
     <NavSidebar route={location.pathname} tabId={tabId} />
-    <div style={pageContentStyle}>
-      <ProfileLoader>
-        <TabNavigation
-          profileId={id}
-          service={service}
-          tabId={tabId}
-        />
+    <ProfileLoader>
+      <TabNavigation
+        profileId={id}
+        service={service}
+        tabId={tabId}
+      />
+      <div style={contentStyle}>
         <div style={profileSelectorContainer}>
           <ProfileSelector
             profileService={service}
@@ -77,9 +78,8 @@ const InsightsPage = ({
             component={PostsTab}
           />
         </Switch>
-
-      </ProfileLoader>
-    </div>
+      </div>
+    </ProfileLoader>
   </div>
 );
 

@@ -13,6 +13,7 @@ import { reducer as profileLoaderReducer } from '@bufferapp/profile-loader';
 import { reducer as postsSummaryReducer } from '@bufferapp/posts-summary-table';
 import { reducer as averageReducer } from '@bufferapp/average-table';
 import { reducer as exportToPNGReducer } from '@bufferapp/analyze-png-export';
+import { reducer as topPostsReducer } from '@bufferapp/top-posts-table';
 
 export default combineReducers({
   login: loginReducer,
@@ -29,4 +30,5 @@ export default combineReducers({
   profileLoader: profileLoaderReducer,
   postsSummary: postsSummaryReducer,
   exportToPNG: exportToPNGReducer,
+  topPosts: topPostsReducer,
 });
