@@ -36,6 +36,7 @@ exports[`Snapshots SummaryTable should render a "no data" state 1`] = `
         </span>
       </h2>
       <div
+        id="js-dom-to-png-summary"
         style={
           Object {
             "margin": "1rem 0 1.5rem",
@@ -155,6 +156,7 @@ exports[`Snapshots SummaryTable should render a loading state 1`] = `
         </span>
       </h2>
       <div
+        id="js-dom-to-png-summary"
         style={
           Object {
             "margin": "1rem 0 1.5rem",
@@ -308,6 +310,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
         </span>
       </h2>
       <div
+        id="js-dom-to-png-summary"
         style={
           Object {
             "margin": "1rem 0 1.5rem",
