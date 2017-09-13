@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import { Provider } from 'react-redux';
-import TopPostsTable, {
+import TopPosts, {
   reducer,
   actions,
   actionTypes,
@@ -18,11 +18,26 @@ const storeFake = state => ({
 
 describe('TopPostsTable', () => {
   it('should render', () => {
+    const profile = {
+      id: '4e88a092512f7e1556000000',
+      avatarUrl: 'testurl',
+      service: 'facebook',
+      username: 'Buffer',
+      timezone: 'America/Los Angeles',
+    };
     const store = storeFake({
+      profiles: {
+        profiles: [profile],
+      },
+      topPosts: {
+        loading: false,
+        topPosts: [],
+      },
+      date: {},
     });
     const wrapper = mount(
       <Provider store={store}>
-        <TopPostsTable />
+        <TopPosts profileService="facebook" selectedProfileId="4e88a092512f7e1556000000" />
       </Provider>,
     );
     expect(wrapper.find(TopPostsTable).length)
