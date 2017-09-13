@@ -12,7 +12,7 @@ const OverviewTab = ({ match }) => (
     <SummaryTable profileService={match.params.service} />
     <Divider marginTop="1rem" marginBottom="1rem" />
     <AverageTable />
-    <TopPostsTable profileService={match.params.service} profileTimezone={'America/Los_Angeles'} />
+    <TopPostsTable selectedProfileId={match.params.id} profileService={match.params.service} />
   </div>
 );
 
