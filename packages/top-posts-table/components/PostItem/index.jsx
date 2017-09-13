@@ -2,6 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment-timezone';
 
+import {
+  Text,
+} from '@bufferapp/components';
+
+
 import MetricGraph from '../MetricGraph';
 
 import {
@@ -78,7 +83,7 @@ const PostItem = ({
         <div className={postMeta}>
           <div className={contentDate}>
             <a href={post.serviceLink} target="_blank" rel="noopener noreferrer" className={tweetServiceLinkClass}>
-              {moment(post.date).tz(profileTimezone).format(dateFormat)}
+              <Text size="small">{moment(post.date).tz(profileTimezone).format(dateFormat)}</Text>
             </a>
           </div>
           <div className={contentLink}>
