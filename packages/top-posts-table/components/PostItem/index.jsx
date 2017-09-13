@@ -20,6 +20,7 @@ import {
   postMeta,
   postContent,
   contentLink,
+  viewPostLinkClass,
 } from '../../styles.less';
 
 const Attachment = ({ type, media }) => {
@@ -87,7 +88,7 @@ const PostItem = ({
             </a>
           </div>
           <div className={contentLink}>
-            <a className="js-viewPostDetailsLink" href={post.serviceLink} rel="noopener noreferrer" target="_blank">
+            <a className={viewPostLinkClass} href={post.serviceLink} rel="noopener noreferrer" target="_blank">
               <i className="bi-click" />
               VIEW POST
             </a>
