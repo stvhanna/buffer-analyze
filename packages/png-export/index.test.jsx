@@ -19,6 +19,9 @@ const storeFake = state => ({
 describe('PngExport', () => {
   it('should render', () => {
     const store = storeFake({
+      exportToPNG: {
+        exporting: false,
+      },
     });
     const wrapper = mount(
       <Provider store={store}>
