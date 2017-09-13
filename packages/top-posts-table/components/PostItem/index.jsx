@@ -24,12 +24,16 @@ const Attachment = ({ type, media }) => {
   return null;
 };
 
+Attachment.defaultProps = {
+  media: null,
+};
+
 Attachment.propTypes = {
   type: PropTypes.string.isRequired,
   media: PropTypes.shape({
     thumbnail: PropTypes.String,
     picture: PropTypes.String,
-  }).isRequired,
+  }),
 };
 
 const MetricColumn = ({ metrics }) => {
@@ -60,8 +64,6 @@ const PostItem = ({
     metric.value = post.statistics[metric.key];
     return metric;
   });
-
-  console.log()
 
   const primaryPostColumnMetrics = engagementMetrics.map((metric) => {
     metric.maxValue = maxEngagementValue;
