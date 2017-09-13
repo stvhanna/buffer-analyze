@@ -28,12 +28,7 @@ export default (state = initialState, action) => {
         }]),
       };
     case actionTypes.EXPORT_TO_PNG_END:
-      return {
-        ...state,
-        charts: [],
-        exporting: false,
-        zipFilename: null,
-      };
+      return initialState;
     default:
       return state;
   }
