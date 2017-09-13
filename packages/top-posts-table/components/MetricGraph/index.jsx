@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import TruncatedNumber from '@bufferapp/analyze-shared-components/GridItem/components/TruncatedNumber';
+import Text from '@bufferapp/components/Text';
 
 import {
   metricBarGraph,
@@ -27,7 +28,8 @@ const MetricGraph = ({ metric }) => {
     <div key={key}>
       <div className={metricBarGraphContainer}>
         <span className={metricBarLabel}>
-          <strong><TruncatedNumber>{value}</TruncatedNumber></strong> {label.toLowerCase()}
+          <Text size="small" weight="bold"><TruncatedNumber>{value}</TruncatedNumber></Text>
+          <Text size="small"> {label.toLowerCase()}</Text>
         </span>
         <span data-tip={label} className={metricBarGraph} style={metricStyle} />
       </div>

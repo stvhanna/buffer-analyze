@@ -15,24 +15,12 @@ const topPosts = [
     },
     serviceLink: 'https://facebook.com/108311429241313/posts/1678040122268428',
     statistics: {
-      comments: {
-        value: 10,
-      },
-      postClicks: {
-        value: 122,
-      },
-      postImpressions: {
-        value: 1333,
-      },
-      postReach: {
-        value: 12122,
-      },
-      reactions: {
-        value: 222,
-      },
-      shares: {
-        value: 233,
-      },
+      comments: 35,
+      postClicks: 3067,
+      postImpressions: 118807,
+      postReach: 15934,
+      reactions: 222,
+      shares: 233,
     },
     text: 'Procaffeinating (n): the tendency to not start anything until you\'ve had a coffee',
     type: 'picture',
@@ -46,24 +34,12 @@ const topPosts = [
     },
     serviceLink: 'https://facebook.com/108311429241313/posts/1678667888872318',
     statistics: {
-      comments: {
-        value: 15,
-      },
-      postClicks: {
-        value: 1666,
-      },
-      postImpressions: {
-        value: 23297,
-      },
-      postReach: {
-        value: 8582,
-      },
-      reactions: {
-        value: 196,
-      },
-      shares: {
-        value: 54,
-      },
+      comments: 15,
+      postClicks: 1666,
+      postImpressions: 23297,
+      postReach: 8582,
+      reactions: 196,
+      shares: 54,
     },
     text: '📌 UPDATED for 2017:<br />\nThe official guide to Facebook Video requirements 📹<br />\n<br />\nvia Matt Navarra',
     type: 'picture',
@@ -80,24 +56,12 @@ const topPosts = [
     },
     serviceLink: 'https://facebook.com/108311429241313/posts/1681434551928985',
     statistics: {
-      comments: {
-        value: 6,
-      },
-      postClicks: {
-        value: 534,
-      },
-      postImpressions: {
-        value: 14997,
-      },
-      postReach: {
-        value: 6095,
-      },
-      reactions: {
-        value: 107,
-      },
-      shares: {
-        value: 30,
-      },
+      comments: 6,
+      postClicks: 534,
+      postImpressions: 14997,
+      postReach: 6095,
+      reactions: 107,
+      shares: 30,
     },
     text: 'Creating social media content takes time... And creating great social media content takes even longer!<br />\n<br />\n19 tools to help take your content to the next level in less time ⏰',
     type: 'link',
@@ -113,218 +77,9 @@ storiesOf('TopPostsTable')
       }}
     >
       <TopPostsTable
-        postMetrics={[
-          {
-            apiKey: 'postImpressions',
-            average: 0,
-            averageDiff: 0,
-            averageLabel: 'Impressions averages',
-            averageLowerCaseLabel: 'impressions',
-            color: '#8AC6DE',
-            diff: 0,
-            key: 'postImpressions',
-            label: 'Post Impressions',
-            lowerCaseLabel: 'post impressions',
-            maxValue: 253867,
-            previousAverage: 0,
-            previousValue: 0,
-            supportsPeriodTotal: true,
-            value: 14997,
-          },
-          {
-            apiKey: 'postReach',
-            average: 0,
-            averageDiff: 0,
-            averageLabel: 'Post Reach',
-            averageLowerCaseLabel: 'post reach',
-            color: '#FFC880',
-            diff: 0,
-            key: 'postReach',
-            label: 'Post Reach',
-            lowerCaseLabel: 'post reach',
-            maxValue: 0,
-            previousAverage: 0,
-            previousValue: 0,
-            supportsPeriodTotal: true,
-            value: 122,
-          },
-          {
-            apiKey: 'postClicks',
-            average: 0,
-            averageDiff: 0,
-            averageLabel: 'Clicks average',
-            averageLowerCaseLabel: 'clicks',
-            color: '#98E8B2',
-            diff: 0,
-            key: 'postClicks',
-            label: 'Post Clicks',
-            lowerCaseLabel: 'post clicks',
-            maxValue: 0,
-            previousAverage: 0,
-            previousValue: 0,
-            supportsPeriodTotal: true,
-            value: 33,
-          },
-          {
-            apiKey: 'reactions',
-            average: 0,
-            averageDiff: 0,
-            averageLabel: 'Reactions',
-            averageLowerCaseLabel: 'reactions',
-            color: '#FD8F90',
-            diff: 0,
-            key: 'reactions',
-            label: 'Reactions',
-            lowerCaseLabel: 'reactions',
-            maxValue: 0,
-            previousAverage: 0,
-            previousValue: 0,
-            supportsPeriodTotal: true,
-            value: 3000,
-          },
-          {
-            apiKey: 'comments',
-            average: 0,
-            averageDiff: 0,
-            averageLabel: 'Comments',
-            averageLowerCaseLabel: 'comments',
-            color: '#EFDF00',
-            diff: 0,
-            key: 'comments',
-            label: 'Comments',
-            lowerCaseLabel: 'comments',
-            maxValue: 0,
-            previousAverage: 0,
-            previousValue: 0,
-            supportsPeriodTotal: true,
-            value: 120,
-          },
-          {
-            apiKey: 'shares',
-            average: 0,
-            averageDiff: 0,
-            averageLabel: 'Shares',
-            averageLowerCaseLabel: 'Shares',
-            color: '#D2C3AB',
-            diff: 0,
-            key: 'shares',
-            label: 'Shares',
-            lowerCaseLabel: 'shares',
-            maxValue: 0,
-            previousAverage: 0,
-            previousValue: 0,
-            supportsPeriodTotal: true,
-            value: 804,
-          },
-        ]}
-        topPosts={topPosts}
-        firstColumnMetrics={[
-          {
-            apiKey: 'post_clicks',
-            average: 0,
-            averageDiff: 0,
-            averageLabel: 'Clicks average',
-            averageLowerCaseLabel: 'clicks',
-            color: '#98E8B2',
-            diff: 0,
-            key: 'postClicks',
-            label: 'Post Clicks',
-            lowerCaseLabel: 'post clicks',
-            maxValue: 0,
-            previousAverage: 0,
-            previousValue: 0,
-            supportsPeriodTotal: true,
-            value: 0,
-          },
-          {
-            apiKey: 'reactions',
-            average: 0,
-            averageDiff: 0,
-            averageLabel: 'Reactions',
-            averageLowerCaseLabel: 'reactions',
-            color: '#FD8F90',
-            diff: 0,
-            key: 'reactions',
-            label: 'Reactions',
-            lowerCaseLabel: 'reactions',
-            maxValue: 0,
-            previousAverage: 0,
-            previousValue: 0,
-            supportsPeriodTotal: true,
-            value: 3000,
-          },
-          {
-            apiKey: 'comments',
-            average: 0,
-            averageDiff: 0,
-            averageLabel: 'Comments',
-            averageLowerCaseLabel: 'comments',
-            color: '#EFDF00',
-            diff: 0,
-            key: 'comments',
-            label: 'Comments',
-            lowerCaseLabel: 'comments',
-            maxValue: 0,
-            previousAverage: 0,
-            previousValue: 0,
-            supportsPeriodTotal: true,
-            value: 120,
-          },
-          {
-            apiKey: 'shares',
-            average: 0,
-            averageDiff: 0,
-            averageLabel: 'Shares',
-            averageLowerCaseLabel: 'Shares',
-            color: '#D2C3AB',
-            diff: 0,
-            key: 'shares',
-            label: 'Shares',
-            lowerCaseLabel: 'shares',
-            maxValue: 0,
-            previousAverage: 0,
-            previousValue: 0,
-            supportsPeriodTotal: true,
-            value: 804,
-          },
-        ]}
-        secondColumnMetrics={[
-          {
-            apiKey: 'post_impressions',
-            average: 0,
-            averageDiff: 0,
-            averageLabel: 'Impressions averages',
-            averageLowerCaseLabel: 'impressions',
-            color: '#8AC6DE',
-            diff: 0,
-            key: 'postImpressions',
-            label: 'Post Impressions',
-            lowerCaseLabel: 'post impressions',
-            maxValue: 253867,
-            previousAverage: 0,
-            previousValue: 0,
-            supportsPeriodTotal: true,
-            value: 14997,
-          },
-          {
-            apiKey: 'post_reach',
-            average: 0,
-            averageDiff: 0,
-            averageLabel: 'Post Reach',
-            averageLowerCaseLabel: 'post reach',
-            color: '#FFC880',
-            diff: 0,
-            key: 'postReach',
-            label: 'Post Reach',
-            lowerCaseLabel: 'post reach',
-            maxValue: 0,
-            previousAverage: 0,
-            previousValue: 0,
-            supportsPeriodTotal: true,
-            value: 122,
-          },
-        ]}
         profileTimezone={'America/Los_Angeles'}
+        profileService={'facebook'}
+        topPosts={topPosts}
       />
     </div>
   ))
@@ -334,7 +89,12 @@ storiesOf('TopPostsTable')
         width: '750px',
       }}
     >
-      <TopPostsTable loading topPosts={[]} />
+      <TopPostsTable
+        profileTimezone={'America/Los_Angeles'}
+        profileService={'facebook'}
+        loading
+        topPosts={[]}
+      />
     </div>
   ))
   .add('should render a "no data" state', () => (
@@ -343,6 +103,10 @@ storiesOf('TopPostsTable')
         width: '750px',
       }}
     >
-      <TopPostsTable topPosts={[]} />
+      <TopPostsTable
+        profileTimezone={'America/Los_Angeles'}
+        profileService={'facebook'}
+        topPosts={[]}
+      />
     </div>
   ));

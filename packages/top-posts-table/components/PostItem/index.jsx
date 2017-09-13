@@ -61,6 +61,8 @@ const PostItem = ({
     return metric;
   });
 
+  console.log()
+
   const primaryPostColumnMetrics = engagementMetrics.map((metric) => {
     metric.maxValue = maxEngagementValue;
     metric.value = post.statistics[metric.key];

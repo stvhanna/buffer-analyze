@@ -16,6 +16,7 @@ import {
   chartColumnHeader,
   metricColumn,
   contentColumn,
+  chartContainer,
 } from '../../styles.less';
 
 import { metricsConfig } from '../../metrics';
@@ -83,10 +84,12 @@ const TopPostsTable = (props) => {
     content = <NoData />;
   } else {
     content = (
-      <div>
+      <aside className={chartContainer}>
         <header>
           <ul className={chartColumnHeader}>
-            <li className={contentColumn}>Posts and Stories</li>
+            <li className={contentColumn}>
+              Posts and Stories
+            </li>
             <li className={metricColumn}>Engagements</li>
             <li className={metricColumn}>Audience</li>
           </ul>
@@ -104,7 +107,7 @@ const TopPostsTable = (props) => {
             />,
           )}
         </ul>
-      </div>
+      </aside>
     );
   }
 
@@ -133,10 +136,6 @@ TopPostsTable.propTypes = {
   topPosts: PropTypes.arrayOf(PropTypes.shape({
     date: PropTypes.number,
     id: PropTypes.string,
-    media: PropTypes.shape({
-      picture: PropTypes.string,
-      thumbnail: PropTypes.string,
-    }),
     serviceLink: PropTypes.string,
     statistics: PropTypes.shape({
       comments: PropTypes.number,

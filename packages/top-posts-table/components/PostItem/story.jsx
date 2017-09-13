@@ -14,24 +14,12 @@ const post = {
   },
   serviceLink: 'https://facebook.com/108311429241313/posts/1678040122268428',
   statistics: {
-    comments: {
-      value: 10,
-    },
-    postClicks: {
-      value: 122,
-    },
-    postImpressions: {
-      value: 1333,
-    },
-    postReach: {
-      value: 12122,
-    },
-    reactions: {
-      value: 222,
-    },
-    shares: {
-      value: 233,
-    },
+    comments: 10,
+    postClicks: 122,
+    postImpressions: 123333,
+    postReach: 12122,
+    reactions: 123,
+    shares: 233,
   },
   text: 'Procaffeinating (n): the tendency to not start anything until you\'ve had a coffee',
   type: 'picture',
@@ -48,8 +36,8 @@ storiesOf('PostItem')
       <PostItem
         post={post}
         index={122}
-        maxEngagementValue={222}
-        maxAudienceValue={0}
+        maxEngagementValue={500}
+        maxAudienceValue={200000}
         engagementMetrics={[
           {
             apiKey: 'post_clicks',
