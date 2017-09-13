@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshots ExportButton default 1`] = `
+<span>
+  <button
+    aria-label={null}
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "border": "0.063rem solid transparent",
+        "borderColor": "#168eea",
+        "borderRadius": "2rem",
+        "color": "#168eea",
+        "cursor": "pointer",
+        "display": "inline-block",
+        "fontFamily": "\\"Open Sans\\", sans-serif",
+        "fontSize": "0.8rem",
+        "fontWeight": 400,
+        "margin": "0",
+        "outline": "none",
+        "padding": "0.5rem 2rem",
+        "transition": "background-color 0.1s linear",
+      }
+    }
+  >
+    Export as Images
+  </button>
+</span>
+`;
+
+exports[`Snapshots ExportButton exporting 1`] = `
+<span>
+  <button
+    aria-label={null}
+    disabled={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "border": "0.063rem solid transparent",
+        "borderColor": "#168eea",
+        "borderRadius": "2rem",
+        "color": "#168eea",
+        "cursor": "pointer",
+        "display": "inline-block",
+        "fontFamily": "\\"Open Sans\\", sans-serif",
+        "fontSize": "0.8rem",
+        "fontWeight": 400,
+        "margin": "0",
+        "opacity": 0.3,
+        "outline": "none",
+        "padding": "0.5rem 2rem",
+        "transition": "background-color 0.1s linear",
+      }
+    }
+  >
+    Exporting...
+  </button>
+</span>
+`;
+
+exports[`Snapshots ExportButton onClick works when not exporting 1`] = `
+<span>
+  <div>
+    <div>
+      <button
+        aria-label={null}
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "border": "0.063rem solid transparent",
+            "borderColor": "#168eea",
+            "borderRadius": "2rem",
+            "color": "#168eea",
+            "cursor": "pointer",
+            "display": "inline-block",
+            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontSize": "0.8rem",
+            "fontWeight": 400,
+            "margin": "0",
+            "outline": "none",
+            "padding": "0.5rem 2rem",
+            "transition": "background-color 0.1s linear",
+          }
+        }
+      >
+        Export as Images
+      </button>
+    </div>
+    <div>
+      <button
+        aria-label={null}
+        disabled={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "border": "0.063rem solid transparent",
+            "borderColor": "#168eea",
+            "borderRadius": "2rem",
+            "color": "#168eea",
+            "cursor": "pointer",
+            "display": "inline-block",
+            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontSize": "0.8rem",
+            "fontWeight": 400,
+            "margin": "0",
+            "opacity": 0.3,
+            "outline": "none",
+            "padding": "0.5rem 2rem",
+            "transition": "background-color 0.1s linear",
+          }
+        }
+      >
+        Exporting...
+      </button>
+    </div>
+  </div>
+</span>
+`;
