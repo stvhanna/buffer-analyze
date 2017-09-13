@@ -2,6 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import cloneDeep from 'lodash.clonedeep';
 
+import {
+  Text,
+} from '@bufferapp/components';
 
 import {
   ChartStateNoData as NoData,
@@ -88,10 +91,14 @@ const TopPostsTable = (props) => {
         <header>
           <ul className={chartColumnHeader}>
             <li className={contentColumn}>
-              Posts and Stories
+              <Text size="mini">Posts and Stories</Text>
             </li>
-            <li className={metricColumn}>Engagements</li>
-            <li className={metricColumn}>Audience</li>
+            <li className={metricColumn}>
+              <Text size="mini">Engagements</Text>
+            </li>
+            <li className={metricColumn}>
+              <Text size="mini">Audience</Text>
+            </li>
           </ul>
         </header>
         <ul className={postsContainer}>
