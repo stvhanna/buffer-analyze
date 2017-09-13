@@ -1,0 +1,1820 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshots PostItem should render the top posts table 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "750px",
+      }
+    }
+  >
+    <li
+      className="columnContainer"
+    >
+      <div
+        className="contentColumn"
+      >
+        <div
+          className="postMeta"
+        >
+          <div
+            className="contentDate"
+          >
+            <a
+              className="tweetServiceLinkClass"
+              href="https://facebook.com/108311429241313/posts/1678040122268428"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                5 September 04:01 am
+              </span>
+            </a>
+          </div>
+          <div
+            className="contentLink"
+          >
+            <a
+              className="viewPostLinkClass"
+              href="https://facebook.com/108311429241313/posts/1678040122268428"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <i
+                className="bi-click"
+              />
+              VIEW POST
+            </a>
+          </div>
+        </div>
+        <div
+          className="postContent"
+        >
+          <img
+            alt=""
+            className="mediaThumbnail"
+            src="https://buffer-media-uploads.s3.amazonaws.com/59a4711d7cbc83d309960116/5ed19955e0c4785b990ec752ff6df55c367f9808_dc779030b683e4f41ffa863f5c88795128de1d58_thumbnail"
+          />
+          <div
+            className="contentContainer"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Procaffeinating (n): the tendency to not start anything until you've had a coffee",
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        className="metricColumn"
+      >
+        <div>
+          <div
+            className="metricBarGraphContainer"
+          >
+            <span
+              className="metricBarLabel"
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 600,
+                  }
+                }
+              >
+                <span>
+                  122
+                </span>
+              </span>
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                 
+                post clicks
+              </span>
+            </span>
+            <span
+              className="metricBarGraph"
+              data-tip="Post Clicks"
+              style={
+                Object {
+                  "backgroundColor": "#98E8B2",
+                  "width": "24.4%",
+                }
+              }
+            />
+          </div>
+        </div>
+        <div>
+          <div
+            className="metricBarGraphContainer"
+          >
+            <span
+              className="metricBarLabel"
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 600,
+                  }
+                }
+              >
+                <span>
+                  123
+                </span>
+              </span>
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                 
+                reactions
+              </span>
+            </span>
+            <span
+              className="metricBarGraph"
+              data-tip="Reactions"
+              style={
+                Object {
+                  "backgroundColor": "#FD8F90",
+                  "width": "24.6%",
+                }
+              }
+            />
+          </div>
+        </div>
+        <div>
+          <div
+            className="metricBarGraphContainer"
+          >
+            <span
+              className="metricBarLabel"
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 600,
+                  }
+                }
+              >
+                <span>
+                  10
+                </span>
+              </span>
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                 
+                comments
+              </span>
+            </span>
+            <span
+              className="metricBarGraph"
+              data-tip="Comments"
+              style={
+                Object {
+                  "backgroundColor": "#EFDF00",
+                  "width": "2%",
+                }
+              }
+            />
+          </div>
+        </div>
+        <div>
+          <div
+            className="metricBarGraphContainer"
+          >
+            <span
+              className="metricBarLabel"
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 600,
+                  }
+                }
+              >
+                <span>
+                  233
+                </span>
+              </span>
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                 
+                shares
+              </span>
+            </span>
+            <span
+              className="metricBarGraph"
+              data-tip="Shares"
+              style={
+                Object {
+                  "backgroundColor": "#D2C3AB",
+                  "width": "46.6%",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="metricColumn"
+      >
+        <div>
+          <div
+            className="metricBarGraphContainer"
+          >
+            <span
+              className="metricBarLabel"
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 600,
+                  }
+                }
+              >
+                <span>
+                  123.3k
+                </span>
+              </span>
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                 
+                post impressions
+              </span>
+            </span>
+            <span
+              className="metricBarGraph"
+              data-tip="Post Impressions"
+              style={
+                Object {
+                  "backgroundColor": "#8AC6DE",
+                  "width": "61.6665%",
+                }
+              }
+            />
+          </div>
+        </div>
+        <div>
+          <div
+            className="metricBarGraphContainer"
+          >
+            <span
+              className="metricBarLabel"
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 600,
+                  }
+                }
+              >
+                <span>
+                  12.1k
+                </span>
+              </span>
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                 
+                post reach
+              </span>
+            </span>
+            <span
+              className="metricBarGraph"
+              data-tip="Post Reach"
+              style={
+                Object {
+                  "backgroundColor": "#FFC880",
+                  "width": "6.061%",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+    </li>
+  </div>
+</span>
+`;
+
+exports[`Snapshots TopPostsTable should render a "no data" state 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "750px",
+      }
+    }
+  >
+    <div>
+      <h2
+        style={
+          Object {
+            "margin": "2rem 0 1rem",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Your top posts for 
+          <span>
+            yesterday
+          </span>
+        </span>
+      </h2>
+      <div
+        style={
+          Object {
+            "margin": "1rem 0 1.5rem",
+            "minHeight": "12rem",
+            "position": "relative",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "background": "rgba(255, 255, 255, 1)",
+              "bottom": 0,
+              "display": "flex",
+              "justifyContent": "center",
+              "left": 0,
+              "opacity": 1,
+              "position": "absolute",
+              "right": 0,
+              "textAlign": "center",
+              "top": 0,
+              "transition": "opacity 350ms ease-in-out",
+              "zIndex": 2,
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "background": "white",
+                "border": "solid 1px #ced7df",
+                "borderRadius": "2px",
+                "boxSizing": "border-box",
+                "flex": 1,
+                "flexDirection": "row",
+                "marginLeft": 30,
+                "marginRight": 30,
+              }
+            }
+          >
+            <h1>
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "1.25rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                We couldn't find any analytics for this date range.
+              </span>
+            </h1>
+            <p
+              style={
+                Object {
+                  "marginBottom": 30,
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "1rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                Try selecting a longer date range, or share something and check back tomorrow :)
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots TopPostsTable should render a loading state 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "750px",
+      }
+    }
+  >
+    <div>
+      <h2
+        style={
+          Object {
+            "margin": "2rem 0 1rem",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Your top posts for 
+          <span>
+            yesterday
+          </span>
+        </span>
+      </h2>
+      <div
+        style={
+          Object {
+            "margin": "1rem 0 1.5rem",
+            "minHeight": "12rem",
+            "position": "relative",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "background": "rgba(255,255,255,.95)",
+              "border": "solid 1px #ced7df",
+              "bottom": 0,
+              "display": "flex",
+              "justifyContent": "center",
+              "left": 0,
+              "maxHeight": "none",
+              "opacity": 1,
+              "position": "absolute",
+              "right": 0,
+              "textAlign": "center",
+              "top": 0,
+              "transition": "opacity 350ms ease-in-out",
+              "zIndex": 2,
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "background": "white",
+                "borderRadius": "2px",
+                "flex": 1,
+                "flexDirection": "row",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "textAlign": "center",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "height": "1rem",
+                    "margin": "0 auto 1rem auto",
+                    "position": "relative",
+                    "width": "1rem",
+                  }
+                }
+              >
+                <span>
+                  <div
+                    style={
+                      Object {
+                        "height": "1rem",
+                        "left": 0,
+                        "opacity": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "transition": "all 1000ms ease-in-out",
+                        "width": "1rem",
+                      }
+                    }
+                  >
+                    <svg
+                      height="100%"
+                      style={
+                        Object {
+                          "fill": "#59626a",
+                          "height": "1rem",
+                          "width": "1rem",
+                        }
+                      }
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="100%"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlnsXlink="http://www.w3.org/1999/xlink"
+                    >
+                      <g
+                        className="shuttleGray"
+                      >
+                        <path
+                          d="M1.10241622,4.34038738 L7.75166358,7.40469806 C7.88821853,7.46764349 8.11178147,7.46764349 8.24833642,7.40469806 L14.8975838,4.34038738 C15.0341387,4.27744195 15.0341387,4.17446518 14.8975838,4.11151975 L8.24833642,1.04720908 C8.11178147,0.984263641 7.88821853,0.984263641 7.75166358,1.04720908 L1.10241622,4.11151975 C0.965861261,4.17446518 0.965861261,4.27744195 1.10241622,4.34038738"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                </span>
+              </div>
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "1rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                Top Posts Loading...
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "750px",
+      }
+    }
+  >
+    <div>
+      <h2
+        style={
+          Object {
+            "margin": "2rem 0 1rem",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Your top posts for 
+          <span>
+            yesterday
+          </span>
+        </span>
+      </h2>
+      <div
+        style={
+          Object {
+            "margin": "1rem 0 1.5rem",
+            "minHeight": "12rem",
+            "position": "relative",
+          }
+        }
+      >
+        <aside
+          className="chartContainer"
+        >
+          <header>
+            <ul
+              className="chartColumnHeader"
+            >
+              <li
+                className="contentColumn"
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.9rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Posts and Stories
+                </span>
+              </li>
+              <li
+                className="metricColumn"
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.9rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Engagements
+                </span>
+              </li>
+              <li
+                className="metricColumn"
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.9rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Audience
+                </span>
+              </li>
+            </ul>
+          </header>
+          <ul
+            className="postsContainer"
+          >
+            <li
+              className="columnContainer"
+            >
+              <div
+                className="contentColumn"
+              >
+                <div
+                  className="postMeta"
+                >
+                  <div
+                    className="contentDate"
+                  >
+                    <a
+                      className="tweetServiceLinkClass"
+                      href="https://facebook.com/108311429241313/posts/1678040122268428"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        5 September 04:01 am
+                      </span>
+                    </a>
+                  </div>
+                  <div
+                    className="contentLink"
+                  >
+                    <a
+                      className="viewPostLinkClass"
+                      href="https://facebook.com/108311429241313/posts/1678040122268428"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <i
+                        className="bi-click"
+                      />
+                      VIEW POST
+                    </a>
+                  </div>
+                </div>
+                <div
+                  className="postContent"
+                >
+                  <img
+                    alt=""
+                    className="mediaThumbnail"
+                    src="https://buffer-media-uploads.s3.amazonaws.com/59a4711d7cbc83d309960116/5ed19955e0c4785b990ec752ff6df55c367f9808_dc779030b683e4f41ffa863f5c88795128de1d58_thumbnail"
+                  />
+                  <div
+                    className="contentContainer"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "Procaffeinating (n): the tendency to not start anything until you've had a coffee",
+                      }
+                    }
+                  />
+                </div>
+              </div>
+              <div
+                className="metricColumn"
+              >
+                <div>
+                  <div
+                    className="metricBarGraphContainer"
+                  >
+                    <span
+                      className="metricBarLabel"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 600,
+                          }
+                        }
+                      >
+                        <span>
+                          3,067
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                         
+                        post clicks
+                      </span>
+                    </span>
+                    <span
+                      className="metricBarGraph"
+                      data-tip="Post Clicks"
+                      style={
+                        Object {
+                          "backgroundColor": "#98E8B2",
+                          "width": "100%",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div
+                    className="metricBarGraphContainer"
+                  >
+                    <span
+                      className="metricBarLabel"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 600,
+                          }
+                        }
+                      >
+                        <span>
+                          222
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                         
+                        reactions
+                      </span>
+                    </span>
+                    <span
+                      className="metricBarGraph"
+                      data-tip="Reactions"
+                      style={
+                        Object {
+                          "backgroundColor": "#FD8F90",
+                          "width": "7.23834365829801%",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div
+                    className="metricBarGraphContainer"
+                  >
+                    <span
+                      className="metricBarLabel"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 600,
+                          }
+                        }
+                      >
+                        <span>
+                          35
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                         
+                        comments
+                      </span>
+                    </span>
+                    <span
+                      className="metricBarGraph"
+                      data-tip="Comments"
+                      style={
+                        Object {
+                          "backgroundColor": "#EFDF00",
+                          "width": "1.1411803064884252%",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div
+                    className="metricBarGraphContainer"
+                  >
+                    <span
+                      className="metricBarLabel"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 600,
+                          }
+                        }
+                      >
+                        <span>
+                          233
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                         
+                        shares
+                      </span>
+                    </span>
+                    <span
+                      className="metricBarGraph"
+                      data-tip="Shares"
+                      style={
+                        Object {
+                          "backgroundColor": "#D2C3AB",
+                          "width": "7.597000326051516%",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="metricColumn"
+              >
+                <div>
+                  <div
+                    className="metricBarGraphContainer"
+                  >
+                    <span
+                      className="metricBarLabel"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 600,
+                          }
+                        }
+                      >
+                        <span>
+                          118.8k
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                         
+                        post impressions
+                      </span>
+                    </span>
+                    <span
+                      className="metricBarGraph"
+                      data-tip="Post Impressions"
+                      style={
+                        Object {
+                          "backgroundColor": "#8AC6DE",
+                          "width": "100%",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div
+                    className="metricBarGraphContainer"
+                  >
+                    <span
+                      className="metricBarLabel"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 600,
+                          }
+                        }
+                      >
+                        <span>
+                          15.9k
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                         
+                        post reach
+                      </span>
+                    </span>
+                    <span
+                      className="metricBarGraph"
+                      data-tip="Post Reach"
+                      style={
+                        Object {
+                          "backgroundColor": "#FFC880",
+                          "width": "13.411667662679807%",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              className="columnContainer"
+            >
+              <div
+                className="contentColumn"
+              >
+                <div
+                  className="postMeta"
+                >
+                  <div
+                    className="contentDate"
+                  >
+                    <a
+                      className="tweetServiceLinkClass"
+                      href="https://facebook.com/108311429241313/posts/1678667888872318"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        6 September 06:01 am
+                      </span>
+                    </a>
+                  </div>
+                  <div
+                    className="contentLink"
+                  >
+                    <a
+                      className="viewPostLinkClass"
+                      href="https://facebook.com/108311429241313/posts/1678667888872318"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <i
+                        className="bi-click"
+                      />
+                      VIEW POST
+                    </a>
+                  </div>
+                </div>
+                <div
+                  className="postContent"
+                >
+                  <img
+                    alt=""
+                    className="mediaThumbnail"
+                    src="https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/21314332_1678667648872342_5837561331042406631_n.jpg?oh=739aa8ab3fb7ca5dd00d11c369bde453&oe=5A153FC6"
+                  />
+                  <div
+                    className="contentContainer"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "📌 UPDATED for 2017:<br />
+                      The official guide to Facebook Video requirements 📹<br />
+                      <br />
+                      via Matt Navarra",
+                      }
+                    }
+                  />
+                </div>
+              </div>
+              <div
+                className="metricColumn"
+              >
+                <div>
+                  <div
+                    className="metricBarGraphContainer"
+                  >
+                    <span
+                      className="metricBarLabel"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 600,
+                          }
+                        }
+                      >
+                        <span>
+                          1,666
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                         
+                        post clicks
+                      </span>
+                    </span>
+                    <span
+                      className="metricBarGraph"
+                      data-tip="Post Clicks"
+                      style={
+                        Object {
+                          "backgroundColor": "#98E8B2",
+                          "width": "54.32018258884904%",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div
+                    className="metricBarGraphContainer"
+                  >
+                    <span
+                      className="metricBarLabel"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 600,
+                          }
+                        }
+                      >
+                        <span>
+                          196
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                         
+                        reactions
+                      </span>
+                    </span>
+                    <span
+                      className="metricBarGraph"
+                      data-tip="Reactions"
+                      style={
+                        Object {
+                          "backgroundColor": "#FD8F90",
+                          "width": "6.390609716335181%",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div
+                    className="metricBarGraphContainer"
+                  >
+                    <span
+                      className="metricBarLabel"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 600,
+                          }
+                        }
+                      >
+                        <span>
+                          15
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                         
+                        comments
+                      </span>
+                    </span>
+                    <span
+                      className="metricBarGraph"
+                      data-tip="Comments"
+                      style={
+                        Object {
+                          "backgroundColor": "#EFDF00",
+                          "width": "0.48907727420932506%",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div
+                    className="metricBarGraphContainer"
+                  >
+                    <span
+                      className="metricBarLabel"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 600,
+                          }
+                        }
+                      >
+                        <span>
+                          54
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                         
+                        shares
+                      </span>
+                    </span>
+                    <span
+                      className="metricBarGraph"
+                      data-tip="Shares"
+                      style={
+                        Object {
+                          "backgroundColor": "#D2C3AB",
+                          "width": "1.7606781871535704%",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="metricColumn"
+              >
+                <div>
+                  <div
+                    className="metricBarGraphContainer"
+                  >
+                    <span
+                      className="metricBarLabel"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 600,
+                          }
+                        }
+                      >
+                        <span>
+                          23.3k
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                         
+                        post impressions
+                      </span>
+                    </span>
+                    <span
+                      className="metricBarGraph"
+                      data-tip="Post Impressions"
+                      style={
+                        Object {
+                          "backgroundColor": "#8AC6DE",
+                          "width": "19.609113941097746%",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div
+                    className="metricBarGraphContainer"
+                  >
+                    <span
+                      className="metricBarLabel"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 600,
+                          }
+                        }
+                      >
+                        <span>
+                          8,582
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                         
+                        post reach
+                      </span>
+                    </span>
+                    <span
+                      className="metricBarGraph"
+                      data-tip="Post Reach"
+                      style={
+                        Object {
+                          "backgroundColor": "#FFC880",
+                          "width": "7.223480097974025%",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              className="columnContainer"
+            >
+              <div
+                className="contentColumn"
+              >
+                <div
+                  className="postMeta"
+                >
+                  <div
+                    className="contentDate"
+                  >
+                    <a
+                      className="tweetServiceLinkClass"
+                      href="https://facebook.com/108311429241313/posts/1681434551928985"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        8 September 04:01 am
+                      </span>
+                    </a>
+                  </div>
+                  <div
+                    className="contentLink"
+                  >
+                    <a
+                      className="viewPostLinkClass"
+                      href="https://facebook.com/108311429241313/posts/1681434551928985"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <i
+                        className="bi-click"
+                      />
+                      VIEW POST
+                    </a>
+                  </div>
+                </div>
+                <div
+                  className="postContent"
+                >
+                  <div
+                    className="contentContainer"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "Creating social media content takes time... And creating great social media content takes even longer!<br />
+                      <br />
+                      19 tools to help take your content to the next level in less time ⏰",
+                      }
+                    }
+                  />
+                </div>
+              </div>
+              <div
+                className="metricColumn"
+              >
+                <div>
+                  <div
+                    className="metricBarGraphContainer"
+                  >
+                    <span
+                      className="metricBarLabel"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 600,
+                          }
+                        }
+                      >
+                        <span>
+                          534
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                         
+                        post clicks
+                      </span>
+                    </span>
+                    <span
+                      className="metricBarGraph"
+                      data-tip="Post Clicks"
+                      style={
+                        Object {
+                          "backgroundColor": "#98E8B2",
+                          "width": "17.411150961851973%",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div
+                    className="metricBarGraphContainer"
+                  >
+                    <span
+                      className="metricBarLabel"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 600,
+                          }
+                        }
+                      >
+                        <span>
+                          107
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                         
+                        reactions
+                      </span>
+                    </span>
+                    <span
+                      className="metricBarGraph"
+                      data-tip="Reactions"
+                      style={
+                        Object {
+                          "backgroundColor": "#FD8F90",
+                          "width": "3.488751222693186%",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div
+                    className="metricBarGraphContainer"
+                  >
+                    <span
+                      className="metricBarLabel"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 600,
+                          }
+                        }
+                      >
+                        <span>
+                          6
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                         
+                        comments
+                      </span>
+                    </span>
+                    <span
+                      className="metricBarGraph"
+                      data-tip="Comments"
+                      style={
+                        Object {
+                          "backgroundColor": "#EFDF00",
+                          "width": "0.19563090968373%",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div
+                    className="metricBarGraphContainer"
+                  >
+                    <span
+                      className="metricBarLabel"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 600,
+                          }
+                        }
+                      >
+                        <span>
+                          30
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                         
+                        shares
+                      </span>
+                    </span>
+                    <span
+                      className="metricBarGraph"
+                      data-tip="Shares"
+                      style={
+                        Object {
+                          "backgroundColor": "#D2C3AB",
+                          "width": "0.9781545484186501%",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="metricColumn"
+              >
+                <div>
+                  <div
+                    className="metricBarGraphContainer"
+                  >
+                    <span
+                      className="metricBarLabel"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 600,
+                          }
+                        }
+                      >
+                        <span>
+                          15.0k
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                         
+                        post impressions
+                      </span>
+                    </span>
+                    <span
+                      className="metricBarGraph"
+                      data-tip="Post Impressions"
+                      style={
+                        Object {
+                          "backgroundColor": "#8AC6DE",
+                          "width": "12.622993594653515%",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div
+                    className="metricBarGraphContainer"
+                  >
+                    <span
+                      className="metricBarLabel"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 600,
+                          }
+                        }
+                      >
+                        <span>
+                          6,095
+                        </span>
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                         
+                        post reach
+                      </span>
+                    </span>
+                    <span
+                      className="metricBarGraph"
+                      data-tip="Post Reach"
+                      style={
+                        Object {
+                          "backgroundColor": "#FFC880",
+                          "width": "5.130169097780434%",
+                        }
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </div>
+</span>
+`;

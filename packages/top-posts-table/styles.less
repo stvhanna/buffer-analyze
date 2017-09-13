@@ -1,0 +1,341 @@
+
+@base: 10px;
+@gray: #CED7DF;
+@outer-space: #323b43;
+@curious-blue: #168eea;
+@nevada: #666c72;
+@bodyColor: #59626a;
+@borderColor: @gray;
+@headingColor: #323b43;
+
+.chartContainer {
+  position: relative;
+  border: solid 1px @borderColor;
+  border-radius: 2px;
+  font-size: 12px;
+  min-height: 177px;
+}
+
+.chartContainerEmpty {
+  min-height: 50px;
+}
+
+.emptyText p {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.chartHeader {
+  padding: @base;
+  font-size: 12px;
+  border-bottom: solid 1px @borderColor;
+  justify-content: space-between;
+  display: flex;
+}
+
+.chartHeaderMetricList {
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.chartHeaderMetricItem {
+  font-size: 12px;
+  color: @outer-space;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-right: @base;
+  margin-left: @base;
+}
+
+.postsContainer {
+  padding: 0;
+  margin: 0;
+}
+
+.chartColumnHeader {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border-bottom: solid 1px @borderColor;
+}
+
+.columnContainer {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border-bottom: solid 1px @borderColor;
+}
+
+.contentDate {
+  color: @nevada;
+  margin-bottom: @base;
+  text-decoration: none;
+}
+
+.typeColumn,
+.contentColumn,
+.metricColumn {
+  display: inline-block;
+  text-decoration: none;
+  color: @outer-space;
+  padding: @base;
+  padding-left: 2*@base;
+  border-right: solid 1px @borderColor;
+
+  &:last-of-type {
+    border-right: none;
+  }
+}
+
+.typeColumn {
+  width: 10%;
+  text-align: center;
+}
+
+.contentColumn {
+  width: 50%;
+}
+
+.metricColumn {
+  width: 25%;
+}
+
+.metricBarLabel {
+  display: block;
+  font-size: 11px;
+  line-height: 1;
+}
+
+.metricBarGraph {
+  background-color: @nevada;
+  display: block;
+  height: 7px;
+  border-radius: 2px;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-top: 4px;
+  padding-left: 5px;
+
+  &:hover {
+    cursor: default;
+  }
+}
+
+.metricBarGraphContainer {
+  position: relative;
+  display: inline-block;
+  // This is the max width for each bar graph
+  width: 80%;
+  margin-bottom: 7px;
+}
+
+.typeIconContainer {
+  font-size: 1.4em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typeIcon {
+  display: inline-block;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+.morePostsContainer {
+  padding: @base;
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+.morePostsIcon {
+  margin-left: @base;
+  color: @curious-blue;
+}
+
+.contentContainer {
+  overflow: hidden;
+  color: @outer-space;
+  font-size: 13px;
+  font-family: Open Sans,Helvetica,Arial,sans-serif;
+}
+
+.chartLoadingContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 450px;
+  text-align: center;
+  background: white;
+  z-index: 1;
+}
+
+.tweetServiceLinkClass {
+  color:@bodyColor;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color:@headingColor;
+    text-decoration: none;
+  }
+}
+
+.mediaThumbnail {
+  width: 66px;
+  min-width: 66px;
+  border-radius: 2px;
+  margin: 4px 15px 0 0;
+}
+
+.postContent {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 5px;
+}
+
+.postMeta {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+
+.contentLink {
+  font-size: 10px;
+}
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.dropdownWrapper {
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+}
+.sortByLabel {
+  font-size: 12px;
+  color: #343E46;
+  margin-right: 11px;
+}
+.dropdown {
+  padding: 0;
+  margin: 0;
+  margin-top: 4px;
+  border-radius: 2px;
+  box-shadow: rgba(0,0,0,.5) 0px 1px 2px;
+  position: absolute;
+  z-index: 1;
+  width: 148px;
+  right: 1px;
+  background: white;
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.dropdownItem {
+  list-style: none;
+
+  &:hover {
+    background-color: rgba(242, 242, 242, .36);
+  }
+  &:first-child {
+    margin-top: 4px;
+  }
+  &:last-child {
+    margin-bottom: 4px;
+  }
+}
+.dropdownItemButton {
+  border: none;
+  font-size: 12px;
+  font-family: Open Sans;
+  font-size: 12px;
+  background: none;
+  max-height: 34px;
+  font-weight: 400;
+  line-height: 1em;
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px 16px;
+  font-family: Open Sans,Helvetica,Arial,sans-serif;
+  text-shadow: none;
+  border-radius: 2px;
+  color: #343E46;
+  box-shadow: none;
+  text-align: left;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+  }
+}
+.dropdownButton {
+  font-size: 12px;
+  background: white;
+  max-height: 34px;
+  font-weight: 400;
+  line-height: 1em;
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px;
+  font-family: Open Sans,Helvetica,Arial,sans-serif;
+  text-shadow: none;
+  border-radius: 2px;
+  color: #343E46;
+  border: 1px solid #ced7df;
+  box-shadow: none;
+  width: 150px;
+  position: relative;
+  text-align: left;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.dropdownArrow {
+  position: absolute;
+  top: 9px;
+  right: 11px;
+  font-size: 14px;
+}
+
+.clickCatcher {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.viewPostLinkClass {
+  color: #168eea;
+  text-decoration: none;
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
