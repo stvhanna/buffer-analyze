@@ -1,5 +1,6 @@
 import { actions } from '@bufferapp/async-data-fetch';
 import { actionTypes } from '@bufferapp/analyze-profile-selector';
+import { actions as exportActions, actionTypes as exportActionTypes } from '@bufferapp/analyze-png-export';
 import middleware from './middleware';
 
 const profileId = '12359182129asd';
@@ -48,5 +49,13 @@ describe('middleware', () => {
       },
     }));
     expect(next).toHaveBeenCalledWith(action);
+  });
+
+  it('should listen to EXPORT_TO_PNG_START and trigger a exportChart action', () => {
+    const action = {
+      type: exportActionTypes.EXPORT_TO_PNG_START,
+    };
+    middleware(store)(next)(action);
+    expect(store.dispatch).toHaveBeenCalledWith(exportActions.exportChart('js-dom-to-png-summary', 'performance-statistics'));
   });
 });
