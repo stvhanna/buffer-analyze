@@ -35,7 +35,9 @@ describe('middleware', () => {
     };
     middleware(store)(next)(action);
     expect(store.dispatch).not.toHaveBeenCalledWith(actions.processCharts());
-    jest.runAllTimers();
+    middleware(store)(next)(action);
+    expect(store.dispatch).not.toHaveBeenCalledWith(actions.processCharts());
+    jest.runTimersToTime(200);
     expect(store.dispatch).toHaveBeenCalledWith(actions.processCharts());
   });
 
