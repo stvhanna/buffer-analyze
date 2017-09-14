@@ -46,7 +46,7 @@ const SummaryTable = ({ metrics, loading, profileService, startDate, endDate }) 
   return (
     <div>
       <Title profileService={profileService} startDate={startDate} endDate={endDate} />
-      <div style={gridContainer}>
+      <div id="js-dom-to-png-summary" style={gridContainer}>
         {content}
       </div>
     </div>

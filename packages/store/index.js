@@ -17,6 +17,7 @@ import { middleware as datePickerMiddleware } from '@bufferapp/analyze-date-pick
 import { middleware as profileLoaderMiddleware } from '@bufferapp/profile-loader';
 import { middleware as postsSummaryMiddleware } from '@bufferapp/posts-summary-table';
 import { middleware as averageMiddleware } from '@bufferapp/average-table';
+import { middleware as exportToPNGMiddleware } from '@bufferapp/analyze-png-export';
 import { middleware as topPostsMiddleware } from '@bufferapp/top-posts-table';
 import reducers from './reducers';
 
@@ -47,6 +48,7 @@ const configureStore = (initialstate) => {
         postsSummaryMiddleware,
         averageMiddleware,
         topPostsMiddleware,
+        exportToPNGMiddleware,
       ),
     ),
   );
