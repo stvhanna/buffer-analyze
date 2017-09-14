@@ -11,6 +11,7 @@ import {
 } from '@bufferapp/analyze-shared-components';
 
 import Title from '../Title';
+import Footer from '../Footer';
 import MetricsDropdown from '../MetricsDropdown';
 
 function getStartDate(dailyData) {
@@ -30,7 +31,7 @@ const containerStyle = {
   borderRadius: '2px',
 };
 
-const CompareChart = ({ dailyData, loading, timezone }) => {
+const CompareChart = ({ dailyData, selectedMetricLabel, loading, totals, timezone }) => {
   let content = null;
   if (loading) {
     content = <Loading active text="Compare chart loading..." />;
@@ -38,14 +39,15 @@ const CompareChart = ({ dailyData, loading, timezone }) => {
     content = <NoData />;
   } else {
     content = (
-      <MetricsDropdown
-        // TODO get this from props
-        metrics={dailyData[0].metrics}
-        selectedMetricLabel={dailyData[0].metrics[0].label}
-        isDropdownOpen={false}
-        selectMetric={() => {}}
-        toggleDropdown={() => {}}
-      />
+      <div style={{ padding: '20px' }} >
+        <MetricsDropdown
+          metrics={totals}
+          selectedMetricLabel={selectedMetricLabel}
+          isDropdownOpen={false}
+          selectMetric={() => {}}
+          toggleDropdown={() => {}}
+        />
+      </div>
     );
   }
 
@@ -58,6 +60,13 @@ const CompareChart = ({ dailyData, loading, timezone }) => {
       <div style={containerStyle}>
         {content}
       </div>
+      {!loading && dailyData.length > 0 &&
+      <Footer
+        startDate={getStartDate(dailyData)}
+        endDate={getEndDate(dailyData)}
+        selectedMetricLabel={selectedMetricLabel}
+        totals={totals}
+      />}
     </div>
   );
 };
@@ -78,6 +87,13 @@ CompareChart.propTypes = {
       previous_value: PropTypes.number.isRequired,
       posts_count: PropTypes.number.isRequired,
     })),
+  })).isRequired,
+  selectedMetricLabel: PropTypes.string.isRequired,
+  totals: PropTypes.arrayOf(PropTypes.shape({
+    diff: PropTypes.number,
+    label: PropTypes.string,
+    previous_value: PropTypes.number.isRequired,
+    value: PropTypes.number,
   })).isRequired,
   timezone: PropTypes.string.isRequired,
 };

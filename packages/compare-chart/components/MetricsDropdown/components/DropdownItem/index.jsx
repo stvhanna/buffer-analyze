@@ -8,10 +8,12 @@ import {
 } from '@bufferapp/components';
 
 import {
+  MetricIcon,
+} from '@bufferapp/analyze-shared-components';
+
+import {
   dropdownListItem,
 } from '../../style.less';
-
-import MetricIcon from '../../../MetricIcon';
 
 const DropdownItem = ({ metric, handleClick, selected }) => (
   <li className={dropdownListItem}>
@@ -22,7 +24,7 @@ const DropdownItem = ({ metric, handleClick, selected }) => (
           boxSizing: 'border-box',
           display: 'flex',
           position: 'relative',
-          width: '280px',
+          width: '200px',
           padding: '5px 10px',
         }}
       >

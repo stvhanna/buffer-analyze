@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
 import CompareChart from './index';
 import mockDailyData from '../../mocks/dailyData';
+import mockTotals from '../../mocks/totals';
 
 storiesOf('CompareChart')
   .addDecorator(checkA11y)
@@ -14,6 +15,8 @@ storiesOf('CompareChart')
     >
       <CompareChart
         dailyData={mockDailyData}
+        totals={mockTotals}
+        selectedMetricLabel="Click"
       />
     </div>
   ))

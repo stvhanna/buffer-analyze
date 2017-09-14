@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const iconSize = 7;
 const base = 10;
 const style = {
-  display: 'inlineBlock',
+  display: 'inline-block',
   verticalAlign: 'baseline',
   width: `${iconSize}px`,
   height: `${iconSize}px`,

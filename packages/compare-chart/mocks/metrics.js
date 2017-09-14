@@ -1,14 +1,14 @@
 export default [
   {
-    label: 'Engagement average',
-    color: '#CCCCCC',
+    label: 'Engagement',
+    color: '#fda3f3',
   },
   {
-    label: 'Impression average',
-    color: '#CCCCCC',
+    label: 'Impression',
+    color: '#fda3f3',
   },
   {
-    label: 'Click average',
-    color: '#CCCCCC',
+    label: 'Click',
+    color: '#fda3f3',
   },
 ];
