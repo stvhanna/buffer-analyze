@@ -47,8 +47,8 @@ const configureStore = (initialstate) => {
         profileLoaderMiddleware,
         postsSummaryMiddleware,
         averageMiddleware,
-        exportToPNGMiddleware,
         topPostsMiddleware,
+        exportToPNGMiddleware,
       ),
     ),
   );

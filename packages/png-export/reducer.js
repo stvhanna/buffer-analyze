@@ -2,26 +2,19 @@ export const actionTypes = {
   EXPORT_TO_PNG_START: 'EXPORT_TO_PNG_START',
   EXPORT_TO_PNG_END: 'EXPORT_TO_PNG_END',
   EXPORT_CHART: 'EXPORT_CHART',
-  PROCESS_CHARTS: 'PROCESS_CHARTS',
 };
 
 const initialState = {
   exporting: false,
-  zipFilename: null,
   charts: [],
 };
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case actionTypes.EXPORT_TO_PNG_START:
-      return {
-        ...state,
-        exporting: true,
-        zipFilename: action.filename,
-      };
     case actionTypes.EXPORT_CHART:
       return {
         ...state,
+        exporting: true,
         charts: state.charts.concat([{
           filename: action.filename,
           id: action.id,
@@ -35,9 +28,6 @@ export default (state = initialState, action) => {
 };
 
 export const actions = {
-  processCharts: () => ({
-    type: actionTypes.PROCESS_CHARTS,
-  }),
   endExportToPNG: () => ({
     type: actionTypes.EXPORT_TO_PNG_END,
   }),

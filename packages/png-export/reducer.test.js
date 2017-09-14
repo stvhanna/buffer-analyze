@@ -17,23 +17,6 @@ describe('reducer', () => {
     });
   });
 
-  describe('EXPORT_TO_PNG_START', () => {
-    it('exporting is true', () => {
-      const state = reducer(undefined, {
-        type: actionTypes.EXPORT_TO_PNG_START,
-      });
-      expect(state.exporting).toBeTruthy();
-    });
-
-    it('zipFilename is set', () => {
-      const state = reducer(undefined, {
-        type: actionTypes.EXPORT_TO_PNG_START,
-        filename: 'overview',
-      });
-      expect(state.zipFilename).toBe('overview');
-    });
-  });
-
   it('EXPORT_CHART stores a filename and DOM node id', () => {
     const state = reducer(undefined, {
       type: actionTypes.EXPORT_CHART,
@@ -44,6 +27,15 @@ describe('reducer', () => {
       filename: 'averages',
       id: 'average-container',
     });
+  });
+
+  it('EXPORT_CHART sets exporting=true', () => {
+    const state = reducer(undefined, {
+      type: actionTypes.EXPORT_CHART,
+      filename: 'averages',
+      id: 'average-container',
+    });
+    expect(state.exporting).toBeTruthy();
   });
 
   describe('EXPORT_TO_PNG_END', () => {
@@ -68,22 +60,10 @@ describe('reducer', () => {
       });
       expect(state.charts).toHaveLength(0);
     });
-
-    it('zipFilename is null', () => {
-      const state = reducer(undefined, {
-        type: actionTypes.EXPORT_TO_PNG_END,
-      });
-      expect(state.zipFilename).toBe(null);
-    });
   });
 });
 
 describe('actions', () => {
-  it('processCharts triggers PROCESS_CHARTS', () => {
-    expect(actions.processCharts()).toEqual({
-      type: actionTypes.PROCESS_CHARTS,
-    });
-  });
   it('endExportToPNG triggers EXPORT_TO_PNG_END', () => {
     expect(actions.endExportToPNG()).toEqual({
       type: actionTypes.EXPORT_TO_PNG_END,

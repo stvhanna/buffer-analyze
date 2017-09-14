@@ -28,23 +28,10 @@ describe('middleware', () => {
     expect(next).toHaveBeenCalledWith(action);
   });
 
-  it('should dispatch processCharts 100ms after the last EXPORT_CHART call', () => {
-    jest.useFakeTimers();
-    const action = {
-      type: actionTypes.EXPORT_CHART,
-    };
-    middleware(store)(next)(action);
-    expect(store.dispatch).not.toHaveBeenCalledWith(actions.processCharts());
-    middleware(store)(next)(action);
-    expect(store.dispatch).not.toHaveBeenCalledWith(actions.processCharts());
-    jest.runTimersToTime(200);
-    expect(store.dispatch).toHaveBeenCalledWith(actions.processCharts());
-  });
-
-  describe('PROCESS_CHARTS', () => {
+  describe('EXPORT_TO_PNG_START', () => {
     it('should generate a PNG for every chart', () => {
       const action = {
-        type: actionTypes.PROCESS_CHARTS,
+        type: actionTypes.EXPORT_TO_PNG_START,
       };
       const state = {
         exportToPNG: {
@@ -67,12 +54,11 @@ describe('middleware', () => {
 
     it('should create a zip with the PNGs once they have been generated', (done) => {
       const action = {
-        type: actionTypes.PROCESS_CHARTS,
+        type: actionTypes.EXPORT_TO_PNG_START,
+        filename: 'buffer-overview-analytics',
       };
       const state = {
-        exportToPNG: {
-          zipFilename: 'buffer-overview-analytics',
-        },
+        exportToPNG: {},
       };
       const pngs = ['a png', 'another png'];
       generatePNGFromChart.mockReturnValue(Promise.resolve(pngs));
@@ -83,14 +69,14 @@ describe('middleware', () => {
       })(next)(action);
       promise.then(() => {
         expect(generatePNGFromChart).toHaveBeenCalled();
-        expect(downloadAsZip).toHaveBeenCalledWith(state.exportToPNG.zipFilename, pngs);
+        expect(downloadAsZip).toHaveBeenCalledWith('buffer-overview-analytics', pngs);
         done();
       });
     });
 
     it('should trigger endExportToPNG when downloadAsZip is done', (done) => {
       const action = {
-        type: actionTypes.PROCESS_CHARTS,
+        type: actionTypes.EXPORT_TO_PNG_START,
       };
       generatePNGFromChart.mockReturnValue(Promise.resolve());
 
