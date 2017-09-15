@@ -15,8 +15,9 @@ storiesOf('CompareChart')
     >
       <CompareChart
         dailyData={mockDailyData}
-        totals={mockTotals}
         selectedMetricLabel="Click"
+        totals={mockTotals}
+        timezone="America/Los_Angeles"
       />
     </div>
   ))
@@ -26,7 +27,12 @@ storiesOf('CompareChart')
         width: '750px',
       }}
     >
-      <CompareChart loading dailyData={[]} />
+      <CompareChart
+        dailyData={[]}
+        totals={[]}
+        timezone="America/Los_Angeles"
+        loading
+      />
     </div>
   ))
   .add('should render a "no data" state', () => (
@@ -35,6 +41,10 @@ storiesOf('CompareChart')
         width: '750px',
       }}
     >
-      <CompareChart dailyData={[]} />
+      <CompareChart
+        dailyData={[]}
+        totals={[]}
+        timezone="America/Los_Angeles"
+      />
     </div>
   ));

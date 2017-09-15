@@ -21,7 +21,8 @@
   "author": "federicoweber@gmail.com",
   "dependencies": {
     "@bufferapp/analyze-shared-components": "0.0.1",
-    "react-simple-dropdown": "3.0.0"
+    "react-simple-dropdown": "3.0.0",
+    "react-highcharts": "^12.0.0"
   },
   "devDependencies": {
     "@storybook/addon-storyshots": "3.1.4",

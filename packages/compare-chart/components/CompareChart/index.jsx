@@ -10,6 +10,7 @@ import {
   ChartStateLoading as Loading,
 } from '@bufferapp/analyze-shared-components';
 
+import Chart from '../Chart';
 import Title from '../Title';
 import Footer from '../Footer';
 import MetricsDropdown from '../MetricsDropdown';
@@ -22,9 +23,14 @@ function getEndDate(dailyData) {
   return dailyData.length ? dailyData[dailyData.length - 1].day / 1000 : null;
 }
 
+function filterDailyDataMetrics(dailyData, metricLabel) {
+  return dailyData.map(day => ({
+    day: day.day,
+    metric: day.metrics.filter(metric => metric.label === metricLabel).shift(),
+  }));
+}
+
 const containerStyle = {
-  display: 'flex',
-  flexWrap: 'wrap',
   padding: '0',
   margin: '0 auto',
   border: `solid 1px ${geyser}`,
@@ -39,13 +45,19 @@ const CompareChart = ({ dailyData, selectedMetricLabel, loading, totals, timezon
     content = <NoData />;
   } else {
     content = (
-      <div style={{ padding: '20px' }} >
-        <MetricsDropdown
-          metrics={totals}
-          selectedMetricLabel={selectedMetricLabel}
-          isDropdownOpen={false}
-          selectMetric={() => {}}
-          toggleDropdown={() => {}}
+      <div>
+        <div style={{ padding: '20px' }} >
+          <MetricsDropdown
+            metrics={totals}
+            selectedMetricLabel={selectedMetricLabel}
+            isDropdownOpen={false}
+            selectMetric={() => {}}
+            toggleDropdown={() => {}}
+          />
+        </div>
+        <Chart
+          dailyData={filterDailyDataMetrics(dailyData, selectedMetricLabel)}
+          timezone={timezone}
         />
       </div>
     );
@@ -73,6 +85,7 @@ const CompareChart = ({ dailyData, selectedMetricLabel, loading, totals, timezon
 
 CompareChart.defaultProps = {
   loading: false,
+  selectedMetricLabel: '',
 };
 
 CompareChart.propTypes = {
@@ -88,11 +101,11 @@ CompareChart.propTypes = {
       posts_count: PropTypes.number.isRequired,
     })),
   })).isRequired,
-  selectedMetricLabel: PropTypes.string.isRequired,
+  selectedMetricLabel: PropTypes.string,
   totals: PropTypes.arrayOf(PropTypes.shape({
     diff: PropTypes.number,
     label: PropTypes.string,
-    previous_value: PropTypes.number.isRequired,
+    previous_value: PropTypes.number,
     value: PropTypes.number,
   })).isRequired,
   timezone: PropTypes.string.isRequired,
