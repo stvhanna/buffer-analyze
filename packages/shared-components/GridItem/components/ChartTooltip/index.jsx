@@ -3,7 +3,7 @@ import React from 'react';
 import Text from '@bufferapp/components/Text';
 import moment from 'moment-timezone';
 
-import TruncatedNumber from '../TruncatedNumber';
+import TruncatedNumber from '../../../TruncatedNumber';
 
 function transformLabelForTooltip(label) {
   return `${label.split(/\s/)[0].toLowerCase()}s`;
