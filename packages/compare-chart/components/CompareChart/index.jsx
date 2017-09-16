@@ -36,6 +36,8 @@ const containerStyle = {
   margin: '0 auto',
   border: `solid 1px ${geyser}`,
   borderRadius: '2px',
+  minHeight: '12rem',
+  position: 'relative',
 };
 
 const CompareChart = ({
@@ -77,7 +79,7 @@ const CompareChart = ({
   }
 
   return (
-    <div>
+    <div style={{ margin: '0 0 1.5rem' }}>
       <Title
         startDate={getStartDate(dailyData)}
         endDate={getEndDate(dailyData)}

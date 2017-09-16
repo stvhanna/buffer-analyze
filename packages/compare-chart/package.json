@@ -20,6 +20,9 @@
   },
   "author": "federicoweber@gmail.com",
   "dependencies": {
+    "@bufferapp/async-data-fetch": "0.5.25",
+    "@bufferapp/analyze-date-picker": "0.0.1",
+    "@bufferapp/analyze-profile-selector": "0.0.1",
     "@bufferapp/analyze-shared-components": "0.0.1",
     "react-simple-dropdown": "3.0.0",
     "react-highcharts": "^12.0.0"
