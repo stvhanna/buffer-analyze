@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import TruncatedNumber from '@bufferapp/analyze-shared-components/GridItem/components/TruncatedNumber';
+import { TruncatedNumber } from '@bufferapp/analyze-shared-components';
 import Text from '@bufferapp/components/Text';
 
 import {
