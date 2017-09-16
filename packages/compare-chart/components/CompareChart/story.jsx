@@ -18,6 +18,23 @@ storiesOf('CompareChart')
         selectedMetricLabel="Click"
         totals={mockTotals}
         timezone="America/Los_Angeles"
+        onPeriodToggle={() => {}}
+      />
+    </div>
+  ))
+  .add('should render the compare chart with previous period', () => (
+    <div
+      style={{
+        width: '750px',
+      }}
+    >
+      <CompareChart
+        dailyData={mockDailyData}
+        selectedMetricLabel="Click"
+        totals={mockTotals}
+        timezone="America/Los_Angeles"
+        onPeriodToggle={() => {}}
+        visualizePreviousPeriod
       />
     </div>
   ))
@@ -31,6 +48,7 @@ storiesOf('CompareChart')
         dailyData={[]}
         totals={[]}
         timezone="America/Los_Angeles"
+        onPeriodToggle={() => {}}
         loading
       />
     </div>
@@ -45,6 +63,7 @@ storiesOf('CompareChart')
         dailyData={[]}
         totals={[]}
         timezone="America/Los_Angeles"
+        onPeriodToggle={() => {}}
       />
     </div>
   ));

@@ -14,6 +14,7 @@ import Chart from '../Chart';
 import Title from '../Title';
 import Footer from '../Footer';
 import MetricsDropdown from '../MetricsDropdown';
+import PeriodToggle from '../PeriodToggle';
 
 function getStartDate(dailyData) {
   return dailyData.length ? dailyData[0].day / 1000 : null;
@@ -37,7 +38,15 @@ const containerStyle = {
   borderRadius: '2px',
 };
 
-const CompareChart = ({ dailyData, selectedMetricLabel, loading, totals, timezone }) => {
+const CompareChart = ({
+  dailyData,
+  selectedMetricLabel,
+  loading,
+  totals,
+  timezone,
+  onPeriodToggle,
+  visualizePreviousPeriod,
+}) => {
   let content = null;
   if (loading) {
     content = <Loading active text="Compare chart loading..." />;
@@ -46,7 +55,7 @@ const CompareChart = ({ dailyData, selectedMetricLabel, loading, totals, timezon
   } else {
     content = (
       <div>
-        <div style={{ padding: '20px' }} >
+        <div style={{ padding: '20px', display: 'flex' }} >
           <MetricsDropdown
             metrics={totals}
             selectedMetricLabel={selectedMetricLabel}
@@ -54,10 +63,12 @@ const CompareChart = ({ dailyData, selectedMetricLabel, loading, totals, timezon
             selectMetric={() => {}}
             toggleDropdown={() => {}}
           />
+          <PeriodToggle handleClick={onPeriodToggle} active={visualizePreviousPeriod} />
         </div>
         <Chart
           dailyData={filterDailyDataMetrics(dailyData, selectedMetricLabel)}
           timezone={timezone}
+          visualizePreviousPeriod={visualizePreviousPeriod}
         />
       </div>
     );
@@ -86,6 +97,7 @@ const CompareChart = ({ dailyData, selectedMetricLabel, loading, totals, timezon
 CompareChart.defaultProps = {
   loading: false,
   selectedMetricLabel: '',
+  visualizePreviousPeriod: false,
 };
 
 CompareChart.propTypes = {
@@ -109,6 +121,8 @@ CompareChart.propTypes = {
     value: PropTypes.number,
   })).isRequired,
   timezone: PropTypes.string.isRequired,
+  onPeriodToggle: PropTypes.func.isRequired,
+  visualizePreviousPeriod: PropTypes.bool,
 };
 
 export default CompareChart;

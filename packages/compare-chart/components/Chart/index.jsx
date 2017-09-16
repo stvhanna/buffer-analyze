@@ -45,17 +45,17 @@ function prepareSeries(dailyMetric, timezone, isPreviousPeriod = false) {
   return seriesConfig;
 }
 
-function prepareChartOptions(dailyMetric, timezone) {
+function prepareChartOptions(dailyMetric, timezone, visualizePreviousPeriod) {
   const config = Object.assign({}, chartConfig);
   config.series = [
     prepareSeries(dailyMetric, timezone),
-    prepareSeries(dailyMetric, timezone, true),
-  ];
+    (visualizePreviousPeriod ? prepareSeries(dailyMetric, timezone, true) : null),
+  ].filter(e => e !== null);
   return config;
 }
 
-const Chart = ({ dailyData, timezone }) => {
-  const charOptions = prepareChartOptions(dailyData);
+const Chart = ({ dailyData, timezone, visualizePreviousPeriod }) => {
+  const charOptions = prepareChartOptions(dailyData, timezone, visualizePreviousPeriod);
   return (<ReactHighcharts config={charOptions} timezone={timezone} />);
 };
 
@@ -72,6 +72,11 @@ Chart.propTypes = {
     }),
   })).isRequired,
   timezone: PropTypes.string.isRequired,
+  visualizePreviousPeriod: PropTypes.bool,
+};
+
+Chart.defaultProps = {
+  visualizePreviousPeriod: false,
 };
 
 export default Chart;

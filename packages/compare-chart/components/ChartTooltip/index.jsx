@@ -29,7 +29,7 @@ ChartTooltip.propTypes = {
     value: PropTypes.number.isRequired,
     previous_value: PropTypes.number.isRequired,
     posts_count: PropTypes.number.isRequired,
-  }),
+  }).isRequired,
 };
 
 ChartTooltip.defaultProps = {
