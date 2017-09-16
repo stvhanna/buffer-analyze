@@ -44,8 +44,10 @@ const CompareChart = ({
   loading,
   totals,
   timezone,
-  onPeriodToggle,
   visualizePreviousPeriod,
+  selectMetric,
+  togglePreviousPeriod,
+  toggleDropdown,
 }) => {
   let content = null;
   if (loading) {
@@ -60,10 +62,10 @@ const CompareChart = ({
             metrics={totals}
             selectedMetricLabel={selectedMetricLabel}
             isDropdownOpen={false}
-            selectMetric={() => {}}
-            toggleDropdown={() => {}}
+            selectMetric={selectMetric}
+            toggleDropdown={toggleDropdown}
           />
-          <PeriodToggle handleClick={onPeriodToggle} active={visualizePreviousPeriod} />
+          <PeriodToggle handleClick={togglePreviousPeriod} active={visualizePreviousPeriod} />
         </div>
         <Chart
           dailyData={filterDailyDataMetrics(dailyData, selectedMetricLabel)}
@@ -121,8 +123,11 @@ CompareChart.propTypes = {
     value: PropTypes.number,
   })).isRequired,
   timezone: PropTypes.string.isRequired,
-  onPeriodToggle: PropTypes.func.isRequired,
   visualizePreviousPeriod: PropTypes.bool,
+  // actions
+  selectMetric: PropTypes.func.isRequired,
+  togglePreviousPeriod: PropTypes.func.isRequired,
+  toggleDropdown: PropTypes.func.isRequired,
 };
 
 export default CompareChart;

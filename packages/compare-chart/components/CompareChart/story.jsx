@@ -18,7 +18,9 @@ storiesOf('CompareChart')
         selectedMetricLabel="Click"
         totals={mockTotals}
         timezone="America/Los_Angeles"
-        onPeriodToggle={() => {}}
+        selectMetric={() => {}}
+        togglePreviousPeriod={() => {}}
+        toggleDropdown={() => {}}
       />
     </div>
   ))
@@ -33,7 +35,9 @@ storiesOf('CompareChart')
         selectedMetricLabel="Click"
         totals={mockTotals}
         timezone="America/Los_Angeles"
-        onPeriodToggle={() => {}}
+        selectMetric={() => {}}
+        togglePreviousPeriod={() => {}}
+        toggleDropdown={() => {}}
         visualizePreviousPeriod
       />
     </div>
@@ -48,7 +52,9 @@ storiesOf('CompareChart')
         dailyData={[]}
         totals={[]}
         timezone="America/Los_Angeles"
-        onPeriodToggle={() => {}}
+        selectMetric={() => {}}
+        togglePreviousPeriod={() => {}}
+        toggleDropdown={() => {}}
         loading
       />
     </div>
@@ -63,7 +69,9 @@ storiesOf('CompareChart')
         dailyData={[]}
         totals={[]}
         timezone="America/Los_Angeles"
-        onPeriodToggle={() => {}}
+        selectMetric={() => {}}
+        togglePreviousPeriod={() => {}}
+        toggleDropdown={() => {}}
       />
     </div>
   ));

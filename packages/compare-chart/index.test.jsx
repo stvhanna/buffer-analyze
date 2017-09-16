@@ -1,6 +1,6 @@
 import React from 'react';
-import { mount } from 'enzyme';
-import { Provider } from 'react-redux';
+import { shallow } from 'enzyme';
+import configureMockStore from 'redux-mock-store';
 import CompareChartContainer, {
   reducer,
   actions,
@@ -8,24 +8,29 @@ import CompareChartContainer, {
   middleware,
 } from './index';
 import CompareChart from './components/CompareChart';
-
-const storeFake = state => ({
-  default: () => {},
-  subscribe: () => {},
-  dispatch: () => {},
-  getState: () => ({ ...state }),
-});
+import mockProfiles from './mocks/profiles';
 
 describe('CompareChartContainer', () => {
   it('should render', () => {
-    const store = storeFake({
-    });
-    const wrapper = mount(
-      <Provider store={store}>
-        <CompareChart />
-      </Provider>,
-    );
-    expect(wrapper.find(CompareChart).length)
+    const mockStore = configureMockStore();
+    const state = {
+      compare: {
+        loading: true,
+        metrics: { totals: [], daily: [] },
+        selectedMetricLabel: '',
+        visualizePreviousPeriod: false,
+      },
+      profiles: {
+        profiles: mockProfiles,
+        selectedProfileId: mockProfiles[0].id,
+      },
+    };
+    const store = mockStore(state);
+
+    const component = shallow(<CompareChartContainer
+      store={store}
+    />);
+    expect(component.find(CompareChart).length)
       .toBe(1);
   });
 
