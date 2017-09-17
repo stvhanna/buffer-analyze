@@ -4,7 +4,7 @@
   "description": "Profile selector dropdown",
   "main": "index.jsx",
   "scripts": {
-    "start": "start-storybook -p 9003",
+    "start": "start-storybook -p 9001",
     "lint": "eslint . --ignore-pattern coverage .storybook node_modules",
     "test": "sh ../../package_test.sh",
     "test-watch": "jest --watch",

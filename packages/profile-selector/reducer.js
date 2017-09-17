@@ -10,6 +10,7 @@ const initialState = {
   profiles: [],
   isDropdownOpen: false,
   profilesFilterString: '',
+  selectedProfileService: '',
   selectedProfileId: '',
 };
 
@@ -28,6 +29,7 @@ export default (state = initialState, action) => {
         profilesFilterString: '',
         isDropdownOpen: false,
         selectedProfileId: action.id,
+        selectedProfileService: action.profileService || state.selectedProfileService,
       });
     case actionTypes.TOGGLE_DROPDOWN:
       return Object.assign({}, state, {
@@ -39,10 +41,11 @@ export default (state = initialState, action) => {
 };
 
 export const actions = {
-  selectProfile(id) {
+  selectProfile(id, profileService = null) {
     return {
       type: actionTypes.SELECT_PROFILE,
       id,
+      profileService,
     };
   },
   toggleDropdown() {

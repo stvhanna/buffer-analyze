@@ -11,6 +11,7 @@ describe('reducer', () => {
       isDropdownOpen: false,
       profilesFilterString: '',
       selectedProfileId: '',
+      selectedProfileService: '',
     };
   });
 
@@ -32,6 +33,7 @@ describe('reducer', () => {
         isDropdownOpen: false,
         profilesFilterString: '',
         selectedProfileId: '',
+        selectedProfileService: '',
       });
   });
 
@@ -60,14 +62,29 @@ describe('reducer', () => {
       .toBeFalsy();
   });
 
-  it('should update selectedProfileId on SELECT_PROFILE', () => {
+  it('should update selected Profile info on SELECT_PROFILE', () => {
     const selectedProfileId = '1234foo';
-    const state = reducer(Object.assign({}, initialState, { isDropdownOpen: true }), {
+    const state = reducer(Object.assign({}, initialState), {
+      type: actionTypes.SELECT_PROFILE,
+      id: selectedProfileId,
+      profileService: 'foo',
+    });
+    expect(state.selectedProfileId)
+      .toBe(selectedProfileId);
+    expect(state.selectedProfileService)
+      .toBe('foo');
+  });
+
+  it('should not update the profileService if not provided', () => {
+    const selectedProfileId = '1234foo';
+    const state = reducer(Object.assign({}, initialState, { selectedProfileService: 'bar' }), {
       type: actionTypes.SELECT_PROFILE,
       id: selectedProfileId,
     });
     expect(state.selectedProfileId)
       .toBe(selectedProfileId);
+    expect(state.selectedProfileService)
+      .toBe('bar');
   });
 
   it('should open the dropdown', () => {
@@ -91,10 +108,11 @@ describe('reducer', () => {
 
 describe('actions', () => {
   it('should select a profile', () => {
-    expect(actions.selectProfile(42))
+    expect(actions.selectProfile(42, 'foo'))
       .toEqual({
         type: actionTypes.SELECT_PROFILE,
         id: 42,
+        profileService: 'foo',
       });
   });
 

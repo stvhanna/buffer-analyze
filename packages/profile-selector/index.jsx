@@ -26,10 +26,10 @@ const filterProfilesByService = (profiles, service) => (
   profiles.filter(p => p.service === service)
 );
 
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = (state) => {
   const filteredProfiles = filterProfilesByService(
     state.profiles.profiles,
-    ownProps.profileService,
+    state.profiles.selectedProfileService,
   );
   return {
     isDropdownOpen: state.profiles.isDropdownOpen,
@@ -40,7 +40,7 @@ const mapStateToProps = (state, ownProps) => {
 };
 
 const mapDispatchToProps = dispatch => ({
-  selectProfile: ({ id }) => dispatch(actions.selectProfile(id)),
+  selectProfile: ({ id, service }) => dispatch(actions.selectProfile(id, service)),
   toggleDropdown: () => dispatch(actions.toggleDropdown()),
   onSearchChange: event => dispatch(actions.filterProfilesByUsername(event)),
 });

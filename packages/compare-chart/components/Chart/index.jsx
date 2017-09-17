@@ -5,6 +5,20 @@ import moment from 'moment';
 
 import chartConfig, { highChartsSeriesPrimaryConfig } from './chartConfig';
 
+function getMarkerFillColor(color) {
+  const highchartColor = ReactHighcharts.Highcharts.Color(color);
+  return highchartColor ?
+    highchartColor.brighten(0.1).get('rgba') :
+    color;
+}
+
+function fadeColor(color, opacity) {
+  const highchartColor = ReactHighcharts.Highcharts.Color(color);
+  return highchartColor ?
+    highchartColor.setOpacity(opacity).get('rgba') :
+    color;
+}
+
 function prepareSeries(dailyMetric, timezone, isPreviousPeriod = false) {
   let color = '#9B9FA3';
   const seriesData = Array.from(dailyMetric, (day) => {
@@ -28,14 +42,14 @@ function prepareSeries(dailyMetric, timezone, isPreviousPeriod = false) {
 
   const seriesConfig = Object.assign({}, highChartsSeriesPrimaryConfig, {
     marker: {
-      fillColor: ReactHighcharts.Highcharts.Color(color).brighten(0.1).get('rgba'),
+      fillColor: getMarkerFillColor(color),
       lineColor: color,
     },
     fillColor: {
       linearGradient: [0, 0, 0, 300],
       stops: [
-        [0, ReactHighcharts.Highcharts.Color(color).setOpacity(0.3).get('rgba')],
-        [1, ReactHighcharts.Highcharts.Color(color).setOpacity(0).get('rgba')],
+        [0, fadeColor(color, 0.3)],
+        [1, fadeColor(color, 0)],
       ],
     },
     lineColor: color,

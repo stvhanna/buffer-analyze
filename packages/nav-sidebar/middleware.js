@@ -2,20 +2,31 @@ import { push } from 'react-router-redux';
 import { actionTypes } from '@bufferapp/async-data-fetch';
 import { actions as profilesActions, actionTypes as profileActionTypes } from '@bufferapp/analyze-profile-selector';
 
-const getProfileIdFromRoute = (state) => {
+const INSIGHTS_PATH_REGEX = /insights\/(\w+)\/(\w+)\/(.*)$/;
+const getProfileIdAndServiceFromRoute = (state) => {
   const currentRoute = state.router.location.pathname;
-  const routeMatch = currentRoute.match(/\/insights\/.*\/(.*)\/(.*)/);
-  let profileId;
+  const routeMatch = currentRoute.match(INSIGHTS_PATH_REGEX);
+  let data;
   if (routeMatch) {
-    profileId = routeMatch[1];
+    const [
+      route, // eslint-disable-line no-unused-vars
+      service,
+      profileId,
+    ] = routeMatch;
+    data = [profileId, service];
   } else {
-    profileId = null;
+    data = false;
   }
-  return profileId;
+  return data;
 };
 
 const getRouteParams = (path) => {
-  const [route, service, profileId, pageRoute] = path.match(/insights\/(\w+)\/(\w+)\/(.*)$/); // eslint-disable-line no-unused-vars
+  const [
+    route, // eslint-disable-line no-unused-vars
+    service,
+    profileId,
+    pageRoute,
+  ] = path.match(INSIGHTS_PATH_REGEX);
   return {
     service,
     profileId,
@@ -32,8 +43,8 @@ const getProfileRoute = (state, id) => {
 export default ({ dispatch, getState }) => next => (action) => {
   switch (action.type) {
     case `profiles_${actionTypes.FETCH_SUCCESS}`:
-      if (getProfileIdFromRoute(getState())) {
-        dispatch(profilesActions.selectProfile(getProfileIdFromRoute(getState())));
+      if (getProfileIdAndServiceFromRoute(getState())) {
+        dispatch(profilesActions.selectProfile(...getProfileIdAndServiceFromRoute(getState())));
       }
       break;
     case profileActionTypes.SELECT_PROFILE:

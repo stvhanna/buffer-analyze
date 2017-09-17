@@ -14,21 +14,21 @@ describe('ProfileSelector', () => {
   beforeEach(() => {
     profiles = [
       {
-        id: 1,
+        id: '1',
         avatarUrl: '',
         service: 'twitter',
         selected: false,
         username: 'fooBar',
       },
       {
-        id: 2,
+        id: '2',
         avatarUrl: '',
         service: 'twitter',
         selected: false,
         username: 'bar',
       },
       {
-        id: 3,
+        id: '3',
         avatarUrl: '',
         service: 'facebook',
         selected: false,
@@ -58,13 +58,14 @@ describe('ProfileSelector', () => {
       profiles: {
         profiles,
         isDropdownOpen: false,
+        selectedProfileId: '1',
+        selectedProfileService: 'twitter',
       },
     };
     const store = mockStore(state);
 
     const component = shallow(<ProfileSelector
       store={store}
-      profileService={'twitter'}
     />);
 
     expect(component.props().profiles)
