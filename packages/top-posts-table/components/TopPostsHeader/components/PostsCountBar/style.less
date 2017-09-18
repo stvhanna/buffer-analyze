@@ -1,0 +1,52 @@
+@gray: #CED7DF;
+@headingColor: #323b43;
+@borderColor: @gray;
+@curious-blue: #168eea;
+
+.container {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.buttonItem {
+  .button;
+  border-radius: 0;
+  border-right: none;
+  color: @borderColor;
+  margin: 0;
+
+  &:hover {
+    position: relative;
+    //background: #F8F8F8;
+    box-shadow: none;
+    margin-right: -1px;
+    z-index: 1;
+  }
+}
+
+.buttonActive {
+  background: #F8F8F8;
+  color: @headingColor;
+
+  &:hover {
+    background: #F8F8F8;
+    color: @headingColor;
+  }
+}
+
+.buttonItem:first-of-type {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.buttonItem:last-of-type {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-right: solid 1px @borderColor;
+
+  &:hover {
+    margin-right: 0px;
+    border-right: solid 1px @curious-blue;
+  }
+}

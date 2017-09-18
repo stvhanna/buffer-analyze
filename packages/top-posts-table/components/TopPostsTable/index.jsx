@@ -13,6 +13,7 @@ import {
 
 import Title from '../Title';
 import PostItem from '../PostItem';
+import TopPostsHeader from '../TopPostsHeader';
 
 import {
   postsContainer,
@@ -87,34 +88,40 @@ const TopPostsTable = (props) => {
     content = <NoData />;
   } else {
     content = (
-      <aside className={chartContainer}>
-        <header>
-          <ul className={chartColumnHeader}>
-            <li className={contentColumn}>
-              <Text size="mini">Posts and Stories</Text>
-            </li>
-            <li className={metricColumn}>
-              <Text size="mini">Engagements</Text>
-            </li>
-            <li className={metricColumn}>
-              <Text size="mini">Audience</Text>
-            </li>
+      <div>
+        <TopPostsHeader
+          metrics={allPostMetrics}
+          selectedMetric={allPostMetrics[0]}
+        />
+        <aside className={chartContainer}>
+          <header>
+            <ul className={chartColumnHeader}>
+              <li className={contentColumn}>
+                <Text size="mini">Posts and Stories</Text>
+              </li>
+              <li className={metricColumn}>
+                <Text size="mini">Engagements</Text>
+              </li>
+              <li className={metricColumn}>
+                <Text size="mini">Audience</Text>
+              </li>
+            </ul>
+          </header>
+          <ul className={postsContainer}>
+            {slicedPosts.map(post =>
+              <PostItem
+                key={post.id}
+                profileTimezone={profileTimezone}
+                post={post}
+                maxEngagementValue={maxEngagementValue}
+                maxAudienceValue={maxAudienceValue}
+                engagementMetrics={engagementMetrics}
+                audienceMetrics={audienceMetrics}
+              />,
+            )}
           </ul>
-        </header>
-        <ul className={postsContainer}>
-          {slicedPosts.map(post =>
-            <PostItem
-              key={post.id}
-              profileTimezone={profileTimezone}
-              post={post}
-              maxEngagementValue={maxEngagementValue}
-              maxAudienceValue={maxAudienceValue}
-              engagementMetrics={engagementMetrics}
-              audienceMetrics={audienceMetrics}
-            />,
-          )}
-        </ul>
-      </aside>
+        </aside>
+      </div>
     );
   }
 
