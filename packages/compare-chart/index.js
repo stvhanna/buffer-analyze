@@ -13,11 +13,14 @@ function mapStateToProps (state) {
     loading: state.compare.loading,
     timezone: getSelectedProfileTimezone(state.profiles),
     totals: state.compare.metrics.totals,
+    selectedMetricLabel: state.compare.selectedMetricLabel,
+    isDropdownOpen: state.compare.isDropdownOpen,
+    visualizePreviousPeriod: state.compare.visualizePreviousPeriod,
   };
 }
 
 const mapDispatchToProps = dispatch => ({
-  selectMetric: () => dispatch(actions.selectMetric()),
+  selectMetric: label => dispatch(actions.selectMetric(label)),
   toggleDropdown: () => dispatch(actions.toggleDropdown()),
   togglePreviousPeriod: () => dispatch(actions.togglePreviousPeriod()),
 });

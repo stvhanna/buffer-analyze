@@ -118,13 +118,13 @@ describe('rpc/compare', () => {
     });
 
     expect(data.totals[0]).toEqual({
-      diff: 0,
-      label: 'Impression',
-      color: '',
-      value: 0,
-      previous_value: 0,
-      posts_count: 0,
-      previous_posts_count: 0,
+      diff: 271,
+      label: 'Engaged Users',
+      color: '#FEC78B',
+      value: 56755,
+      previous_value: 15327,
+      posts_count: 3,
+      previous_posts_count: 5,
     });
   });
 
@@ -143,8 +143,8 @@ describe('rpc/compare', () => {
     expect(data.totals.length).toBe(9);
     expect(data.totals[0]).toEqual({
       diff: 0,
-      label: 'Impression',
-      color: '',
+      label: 'Engaged Users',
+      color: '#FEC78B',
       value: 0,
       previous_value: 0,
       posts_count: 0,
@@ -166,12 +166,12 @@ describe('rpc/compare', () => {
 
     expect(data.totals.length).toBe(9);
     expect(data.totals[0]).toEqual({
-      diff: 0,
-      label: 'Impression',
-      color: '',
-      value: 0,
+      diff: 5675500,
+      label: 'Engaged Users',
+      color: '#FEC78B',
+      value: 56755,
       previous_value: 0,
-      posts_count: 0,
+      posts_count: 3,
       previous_posts_count: 0,
     });
   });

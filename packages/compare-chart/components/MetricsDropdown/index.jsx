@@ -25,7 +25,7 @@ import DropdownItem from './components/DropdownItem';
 
 function renderDropdownItem(metric, selectedMetricLabel, selectMetric) {
   const onClick = () => {
-    selectMetric({ label: metric.label });
+    selectMetric(metric.label);
   };
 
   return (<DropdownItem
@@ -44,7 +44,6 @@ const MetricsDropdown = ({
   toggleDropdown,
 }) => {
   const selectedMetric = metrics.find(m => m.label === selectedMetricLabel);
-
   const contentClasses = classNames(dropdownContent, {
     [dropdownContentActive]: isDropdownOpen,
   });

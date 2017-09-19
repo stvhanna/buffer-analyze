@@ -23,15 +23,22 @@ export default (state = initialState, action) => {
         ...state,
         loading: false,
         metrics: action.result,
+        selectedMetricLabel: state.selectedMetricLabel !== '' ?
+          state.selectedMetricLabel :
+          action.result.totals[0].label,
       };
-    case actionTypes.SELECT_METRIC:
+    case `compare_${actionTypes.SELECT_METRIC}`:
       return Object.assign({}, state, {
         isDropdownOpen: false,
         selectedMetricLabel: action.metricLabel,
       });
-    case actionTypes.TOGGLE_DROPDOWN:
+    case `compare_${actionTypes.TOGGLE_DROPDOWN}`:
       return Object.assign({}, state, {
         isDropdownOpen: !state.isDropdownOpen,
+      });
+    case `compare_${actionTypes.TOGGLE_PREVIOUS_PERIOD}`:
+      return Object.assign({}, state, {
+        visualizePreviousPeriod: !state.visualizePreviousPeriod,
       });
     default:
       return state;
@@ -41,17 +48,17 @@ export default (state = initialState, action) => {
 export const actions = {
   togglePreviousPeriod() {
     return {
-      type: actionTypes.TOGGLE_DROPDOWN,
+      type: `compare_${actionTypes.TOGGLE_PREVIOUS_PERIOD}`,
     };
   },
   toggleDropdown() {
     return {
-      type: actionTypes.TOGGLE_DROPDOWN,
+      type: `compare_${actionTypes.TOGGLE_DROPDOWN}`,
     };
   },
-  selectMetric({ metricLabel }) {
+  selectMetric(metricLabel) {
     return {
-      type: actionTypes.SELECT_METRIC,
+      type: `compare_${actionTypes.SELECT_METRIC}`,
       metricLabel,
     };
   },

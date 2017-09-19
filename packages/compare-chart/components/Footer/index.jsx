@@ -46,7 +46,7 @@ const Footer = ({ totals, selectedMetricLabel, startDate, endDate }) => {
           customLabel={
             <span>
               <MetricIcon metric={currentMetric} />
-              {metric.label}s over <PeriodPhrase startDate={startDate} endDate={endDate} />
+              {metric.label} over <PeriodPhrase startDate={startDate} endDate={endDate} />
             </span>
           }
         />
@@ -56,7 +56,7 @@ const Footer = ({ totals, selectedMetricLabel, startDate, endDate }) => {
           customLabel={
             <span>
               <MetricIcon metric={pastMetric} />
-              {metric.label}s over <PeriodPhrase previous startDate={startDate} endDate={endDate} />
+              {metric.label} over <PeriodPhrase previous startDate={startDate} endDate={endDate} />
             </span>
           }
         />

@@ -50,6 +50,7 @@ const CompareChart = ({
   selectMetric,
   togglePreviousPeriod,
   toggleDropdown,
+  isDropdownOpen,
 }) => {
   let content = null;
   if (loading) {
@@ -63,7 +64,7 @@ const CompareChart = ({
           <MetricsDropdown
             metrics={totals}
             selectedMetricLabel={selectedMetricLabel}
-            isDropdownOpen={false}
+            isDropdownOpen={isDropdownOpen}
             selectMetric={selectMetric}
             toggleDropdown={toggleDropdown}
           />
@@ -102,6 +103,7 @@ CompareChart.defaultProps = {
   loading: false,
   selectedMetricLabel: '',
   visualizePreviousPeriod: false,
+  isDropdownOpen: false,
 };
 
 CompareChart.propTypes = {
@@ -126,6 +128,7 @@ CompareChart.propTypes = {
   })).isRequired,
   timezone: PropTypes.string.isRequired,
   visualizePreviousPeriod: PropTypes.bool,
+  isDropdownOpen: PropTypes.bool,
   // actions
   selectMetric: PropTypes.func.isRequired,
   togglePreviousPeriod: PropTypes.func.isRequired,

@@ -1,4 +1,3 @@
-import { actionTypes as asyncDataFetchActions } from '@bufferapp/async-data-fetch';
 import reducer, { actions, actionTypes } from './reducer';
 
 describe('reducer', () => {
@@ -6,7 +5,6 @@ describe('reducer', () => {
 
   beforeEach(() => {
     initialState = {
-      isDropdownOpen: false,
       isDropdownOpen: false,
       loading: true,
       metrics: { totals: [], daily: [] },
@@ -24,7 +22,7 @@ describe('reducer', () => {
     expect(reducer({
       isDropdownOpen: false,
     }, {
-      type: actionTypes.TOGGLE_DROPDOWN,
+      type: `compare_${actionTypes.TOGGLE_DROPDOWN}`,
     }))
       .toEqual({ isDropdownOpen: true });
   });
@@ -33,9 +31,29 @@ describe('reducer', () => {
     expect(reducer({
       isDropdownOpen: true,
     }, {
-      type: actionTypes.TOGGLE_DROPDOWN,
+      type: `compare_${actionTypes.TOGGLE_DROPDOWN}`,
     }))
       .toEqual({ isDropdownOpen: false });
+  });
+  it('should togglePreviousPeriod', () => {
+    expect(reducer({
+      visualizePreviousPeriod: false,
+    }, {
+      type: `compare_${actionTypes.TOGGLE_PREVIOUS_PERIOD}`,
+    }))
+      .toEqual({ visualizePreviousPeriod: true });
+  });
+  it('should update selectedMetricLabel', () => {
+    expect(reducer({
+      selectedMetricLabel: 'foo',
+    }, {
+      type: `compare_${actionTypes.SELECT_METRIC}`,
+      metricLabel: 'bar',
+    }))
+      .toEqual({
+        selectedMetricLabel: 'bar',
+        isDropdownOpen: false,
+      });
   });
 });
 
@@ -43,7 +61,20 @@ describe('actions', () => {
   it('should toggle the dropdown', () => {
     expect(actions.toggleDropdown())
       .toEqual({
-        type: actionTypes.TOGGLE_DROPDOWN,
+        type: `compare_${actionTypes.TOGGLE_DROPDOWN}`,
+      });
+  });
+  it('should toggle previousPeriod', () => {
+    expect(actions.togglePreviousPeriod())
+      .toEqual({
+        type: `compare_${actionTypes.TOGGLE_PREVIOUS_PERIOD}`,
+      });
+  });
+  it('should select metric', () => {
+    expect(actions.selectMetric('foo'))
+      .toEqual({
+        type: `compare_${actionTypes.SELECT_METRIC}`,
+        metricLabel: 'foo',
       });
   });
 });

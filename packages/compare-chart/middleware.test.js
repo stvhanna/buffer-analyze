@@ -19,7 +19,6 @@ const state = {
   },
   profiles: {
     profiles: mockProfiles,
-    selectedProfileId: mockProfiles[0].id,
   },
 };
 
@@ -44,6 +43,7 @@ describe('middleware', () => {
     const action = {
       type: actionTypes.SELECT_PROFILE,
       id: mockProfiles[0].id,
+      profileService: 'twitter',
     };
     middleware(store)(next)(action);
     expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
@@ -63,6 +63,8 @@ describe('middleware', () => {
       type: dateActionTypes.SET_DATE_RANGE,
       startDate: state.date.startDate,
       endDate: state.date.endDate,
+      id: mockProfiles[0].id,
+      profileService: 'twitter',
     };
     middleware(store)(next)(action);
     expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
