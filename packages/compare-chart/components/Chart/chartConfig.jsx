@@ -122,7 +122,8 @@ export default {
     formatter() {
       const point = this.points[0].point;
       return reactDOM.renderToStaticMarkup(
-        <ChartTooltip day={point.x} metric={point.metric_data} />,
+        ''
+        // <ChartTooltip day={point.x} metric={point.metric_data} />,
       );
     },
     dateTimeLabelFormats: {

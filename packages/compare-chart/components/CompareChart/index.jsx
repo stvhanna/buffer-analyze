@@ -34,7 +34,6 @@ function filterDailyDataMetrics(dailyData, metricLabel) {
 const containerStyle = {
   padding: '0',
   margin: '0 auto',
-  border: `solid 1px ${geyser}`,
   borderRadius: '2px',
   minHeight: '12rem',
   position: 'relative',
@@ -78,6 +77,8 @@ const CompareChart = ({
       </div>
     );
   }
+
+  if (!loading && dailyData.length !== 0) containerStyle.border = `solid 1px ${geyser}`;
 
   return (
     <div style={{ margin: '0 0 1.5rem' }}>
