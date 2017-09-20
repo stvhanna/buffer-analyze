@@ -16,9 +16,9 @@ const topPosts = [
     serviceLink: 'https://facebook.com/108311429241313/posts/1678040122268428',
     statistics: {
       comments: 35,
-      post_clicks: 3067,
-      post_impressions: 118807,
-      post_reach: 15934,
+      postClicks: 3067,
+      postImpressions: 118807,
+      postReach: 15934,
       reactions: 222,
       shares: 233,
     },
@@ -35,9 +35,9 @@ const topPosts = [
     serviceLink: 'https://facebook.com/108311429241313/posts/1678667888872318',
     statistics: {
       comments: 15,
-      post_clicks: 1666,
-      post_impressions: 23297,
-      post_reach: 8582,
+      postClicks: 1666,
+      postImpressions: 23297,
+      postReach: 8582,
       reactions: 196,
       shares: 54,
     },
@@ -57,9 +57,9 @@ const topPosts = [
     serviceLink: 'https://facebook.com/108311429241313/posts/1681434551928985',
     statistics: {
       comments: 6,
-      post_clicks: 534,
-      post_impressions: 14997,
-      post_reach: 6095,
+      postClicks: 534,
+      postImpressions: 14997,
+      postReach: 6095,
       reactions: 107,
       shares: 30,
     },
@@ -80,6 +80,12 @@ storiesOf('TopPostsTable')
         profileTimezone={'America/Los_Angeles'}
         profileService={'facebook'}
         topPosts={topPosts}
+        selectMetric={() => {}}
+        selectedMetric={{
+          key: 'postImpressions',
+          label: 'Post Impressions',
+        }}
+        toggleDropdown={() => {}}
       />
     </div>
   ))
@@ -94,6 +100,12 @@ storiesOf('TopPostsTable')
         profileService={'facebook'}
         loading
         topPosts={[]}
+        selectMetric={() => {}}
+        selectedMetric={{
+          key: 'postImpressions',
+          label: 'Post Impressions',
+        }}
+        toggleDropdown={() => {}}
       />
     </div>
   ))
@@ -107,6 +119,12 @@ storiesOf('TopPostsTable')
         profileTimezone={'America/Los_Angeles'}
         profileService={'facebook'}
         topPosts={[]}
+        selectMetric={() => {}}
+        selectedMetric={{
+          key: 'postImpressions',
+          label: 'Post Impressions',
+        }}
+        toggleDropdown={() => {}}
       />
     </div>
   ));

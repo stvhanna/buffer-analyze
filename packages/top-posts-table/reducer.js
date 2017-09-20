@@ -1,25 +1,77 @@
 import { actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-fetch';
 
-export const actionTypes = {};
+export const actionTypes = {
+  SELECT_TOP_POSTS_METRIC: 'SELECT_TOP_POSTS_METRIC',
+  TOGGLE_TOP_POSTS_DROPDOWN: 'TOGGLE_TOP_POSTS_DROPDOWN',
+  SELECT_TOP_POSTS_COUNT: 'SELECT_TOP_POSTS_COUNT',
+};
 
 const initialState = {
   topPosts: [],
   loading: true,
+  metrics: [],
+  isDropdownOpen: false,
+  isDescendingSelected: true,
+  selectedMetric: {},
+  activePostsCount: 10,
 };
 
 export default (state = initialState, action) => {
   switch (action.type) {
     case `top_posts_${asyncDataFetchActionTypes.FETCH_START}`:
-      return initialState;
+      return {
+        ...initialState,
+        activePostsCount: state.activePostsCount,
+        selectedMetric: state.selectedMetric,
+        isDescendingSelected: state.isDescendingSelected,
+      };
     case `top_posts_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
       return {
         ...state,
         loading: false,
         topPosts: action.result,
+        selectedMetric: state.selectedMetric.key === undefined ? {
+          key: 'postImpressions',
+          label: 'Post Impressions',
+        } : state.selectedMetric,
+        activePostsCount: state.activePostsCount,
       };
+    case actionTypes.SELECT_TOP_POSTS_METRIC:
+      return Object.assign({}, state, {
+        isDropdownOpen: false,
+        selectedMetric: action.metric,
+        isDescendingSelected: action.descending,
+      });
+    case actionTypes.SELECT_TOP_POSTS_COUNT:
+      return Object.assign({}, state, {
+        activePostsCount: action.postsCount,
+      });
+    case actionTypes.TOGGLE_TOP_POSTS_DROPDOWN:
+      return Object.assign({}, state, {
+        isDropdownOpen: !state.isDropdownOpen,
+      });
     default:
       return state;
   }
 };
 
-export const actions = {};
+export const actions = {
+  selectMetric(metric, descending) {
+    return {
+      type: actionTypes.SELECT_TOP_POSTS_METRIC,
+      metric,
+      descending,
+    };
+  },
+  toggleDropdown() {
+    return {
+      type: actionTypes.TOGGLE_TOP_POSTS_DROPDOWN,
+    };
+  },
+  handlePostsCountClick(postsCount) {
+    return {
+      type: actionTypes.SELECT_TOP_POSTS_COUNT,
+      postsCount,
+    };
+  },
+};

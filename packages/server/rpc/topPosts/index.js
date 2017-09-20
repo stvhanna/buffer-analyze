@@ -25,7 +25,7 @@ const mergeStatsWithUpdates = (stats, updates) => {
   return updateList;
 };
 
-const fetchTopPosts = (profileId, dateRange, accessToken) =>
+const fetchTopPosts = (profileId, dateRange, sortBy, descending, limit, accessToken) =>
   rp({
     uri: `${process.env.API_ADDR}/1/profiles/${profileId}/analytics/top_posts.json`,
     method: 'GET',
@@ -34,6 +34,9 @@ const fetchTopPosts = (profileId, dateRange, accessToken) =>
       access_token: accessToken,
       start_date: dateRange.start,
       end_date: dateRange.end,
+      sort_by: sortBy,
+      descending,
+      limit,
     },
     json: true,
   });
@@ -41,12 +44,23 @@ const fetchTopPosts = (profileId, dateRange, accessToken) =>
 module.exports = method(
   'top_posts',
   'fetch analytics top posts for profiles and pages',
-  ({ profileId, startDate, endDate }, { session }) => {
+  ({ profileId, startDate, endDate, sortBy, descending, limit }, { session }) => {
+    console.log('I am here in the RPC endpoint...');
     const end = moment.unix(endDate).format('MM/DD/YYYY');
     const start = moment.unix(startDate).format('MM/DD/YYYY');
     const dateRange = new DateRange(start, end);
 
-    const topPosts = fetchTopPosts(profileId, dateRange, session.accessToken);
+    console.log(sortBy);
+    console.log(descending);
+    console.log(limit);
+    const topPosts = fetchTopPosts(
+      profileId,
+      dateRange,
+      sortBy,
+      descending,
+      limit,
+      session.accessToken,
+    );
 
     return Promise
       .all([topPosts])

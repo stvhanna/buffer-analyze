@@ -1,10 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Text } from '@bufferapp/components';
-// import styles from '../../styles.less';
 
-import Dropdown from './components/Dropdown';
-// import PostsCountBar from './components/PostsCountBar';
+import TopPostsDropdown from './components/TopPostsDropdown';
+import PostsCountBar from './components/PostsCountBar';
 
 const topPostsHeaderContainer = {
   padding: '2rem 0',
@@ -12,11 +10,28 @@ const topPostsHeaderContainer = {
   justifyContent: 'space-between',
 };
 
-const TopPostsHeader = ({ metrics, selectedMetric }) =>
-  <div className={topPostsHeaderContainer}>
-    <Dropdown
+const TopPostsHeader = ({
+  metrics,
+  selectedMetric,
+  isDropdownOpen,
+  isDescendingSelected,
+  selectMetric,
+  toggleDropdown,
+  handlePostsCountClick,
+  activePostsCount,
+}) =>
+  <div style={topPostsHeaderContainer}>
+    <PostsCountBar
+      handlePostsCountClick={handlePostsCountClick}
+      activePostsCount={activePostsCount}
+    />
+    <TopPostsDropdown
       metrics={metrics}
       selectedMetric={selectedMetric}
+      isDropdownOpen={isDropdownOpen}
+      isDescendingSelected={isDescendingSelected}
+      selectMetric={selectMetric}
+      toggleDropdown={toggleDropdown}
     />
   </div>
 ;
@@ -27,9 +42,15 @@ TopPostsHeader.propTypes = {
     label: PropTypes.string.isRequired,
   })).isRequired,
   selectedMetric: PropTypes.shape({
-    key: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired,
+    key: PropTypes.string,
+    label: PropTypes.string,
   }).isRequired,
+  isDropdownOpen: PropTypes.bool.isRequired,
+  isDescendingSelected: PropTypes.bool.isRequired,
+  selectMetric: PropTypes.func.isRequired,
+  toggleDropdown: PropTypes.func.isRequired,
+  handlePostsCountClick: PropTypes.func.isRequired,
+  activePostsCount: PropTypes.number.isRequired,
 };
 
 export default TopPostsHeader;

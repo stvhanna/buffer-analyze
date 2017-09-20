@@ -11,7 +11,7 @@ import {
   dropdownListItem,
 } from '../../style.less';
 
-const DropdownItem = ({ metric, handleClick, selected }) => (
+const DropdownItem = ({ metric, handleClick, selected, sortDirectionLabel }) => (
   <li className={dropdownListItem}>
     <Button noStyle onClick={handleClick} >
       <span
@@ -26,6 +26,8 @@ const DropdownItem = ({ metric, handleClick, selected }) => (
         }}
       >
         <Text weight="bold" size="small">{metric.label}</Text>
+        <span>&nbsp;</span>
+        <Text size="small" color="shuttleGray">{sortDirectionLabel}</Text>
         { selected && <div style={{ marginLeft: 'auto' }}>
           <CheckmarkIcon color={'curiousBlue'} />
         </div>}
@@ -41,6 +43,7 @@ DropdownItem.propTypes = {
   }).isRequired,
   handleClick: PropTypes.func.isRequired,
   selected: PropTypes.bool,
+  sortDirectionLabel: PropTypes.string.isRequired,
 };
 
 DropdownItem.defaultProps = {

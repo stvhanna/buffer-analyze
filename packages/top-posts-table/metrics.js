@@ -36,6 +36,7 @@ twitter.retweetsMetric = {
   key: 'retweets',
   apiKey: 'retweets',
   color: '#FD8F90',
+  value: 0,
 };
 
 twitter.clicksMetric = {

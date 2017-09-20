@@ -68,6 +68,13 @@ const TopPostsTable = (props) => {
     profileTimezone,
     startDate,
     endDate,
+    isDropdownOpen,
+    isDescendingSelected,
+    selectedMetric,
+    selectMetric,
+    toggleDropdown,
+    handlePostsCountClick,
+    activePostsCount,
   } = props;
 
   const allPostMetrics = metricsConfig[profileService].postMetrics;
@@ -91,7 +98,13 @@ const TopPostsTable = (props) => {
       <div>
         <TopPostsHeader
           metrics={allPostMetrics}
-          selectedMetric={allPostMetrics[0]}
+          selectedMetric={selectedMetric}
+          isDescendingSelected={isDescendingSelected}
+          selectMetric={selectMetric}
+          toggleDropdown={toggleDropdown}
+          isDropdownOpen={isDropdownOpen}
+          handlePostsCountClick={handlePostsCountClick}
+          activePostsCount={activePostsCount}
         />
         <aside className={chartContainer}>
           <header>
@@ -139,6 +152,7 @@ TopPostsTable.defaultProps = {
   loading: false,
   startDate: null,
   endDate: null,
+  isDropdownOpen: false,
 };
 
 TopPostsTable.propTypes = {
@@ -162,6 +176,16 @@ TopPostsTable.propTypes = {
     text: PropTypes.string,
     type: PropTypes.string,
   })).isRequired,
+  isDropdownOpen: PropTypes.bool,
+  isDescendingSelected: PropTypes.bool.isRequired,
+  selectedMetric: PropTypes.shape({
+    key: PropTypes.string,
+    label: PropTypes.string,
+  }).isRequired,
+  toggleDropdown: PropTypes.func.isRequired,
+  selectMetric: PropTypes.func.isRequired,
+  handlePostsCountClick: PropTypes.func.isRequired,
+  activePostsCount: PropTypes.number.isRequired,
 };
 
 export default TopPostsTable;
