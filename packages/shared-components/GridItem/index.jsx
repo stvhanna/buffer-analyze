@@ -32,7 +32,7 @@ function filterDailyDataMetrics(dailyData, metricLabel) {
   }));
 }
 
-const GridItem = ({ metric, tooltip, gridWidth, dailyData, timezone, customLabel }) => {
+const GridItem = ({ metric, tooltip, gridWidth, dailyData, timezone, customLabel, hideDiff }) => {
   gridSummaryItem.width = gridWidth;
   const dailyMetricData = filterDailyDataMetrics(dailyData, metric.label);
   return (
@@ -49,7 +49,7 @@ const GridItem = ({ metric, tooltip, gridWidth, dailyData, timezone, customLabel
       </Label>
       <div style={gridSummaryItemValueWrapper}>
         <Value>{metric.value}</Value>
-        <Diff diff={metric.diff} />
+        {!hideDiff && <Diff diff={metric.diff} />}
       </div>
     </li>
   );
@@ -61,6 +61,7 @@ GridItem.defaultProps = {
   timezone: 'Etc/UTC',
   tooltip: null,
   customLabel: null,
+  hideDiff: false,
 };
 
 GridItem.propTypes = {
@@ -81,6 +82,7 @@ GridItem.propTypes = {
   tooltip: PropTypes.string,
   timezone: PropTypes.string,
   gridWidth: PropTypes.string,
+  hideDiff: PropTypes.bool,
 };
 
 export default GridItem;

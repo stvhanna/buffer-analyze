@@ -75,6 +75,28 @@ storiesOf('GridItem')
       />
     </ul>
   ))
+  .add('should render a summary grid item with no diff', () => (
+    <ul
+      style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        padding: '0',
+        margin: '0 auto',
+        borderTop: `solid 1px ${geyser}`,
+        borderLeft: `solid 1px ${geyser}`,
+        borderRadius: '2px',
+      }}
+    >
+      <GridItem
+        metric={{
+          label: 'Tweets',
+          value: 10,
+          diff: -60,
+        }}
+        hideDiff
+      />
+    </ul>
+  ))
   .add('should render a grid item with a custom Label', () => {
     const CustomLabel = ({ labelCopy }) => (
       <span>{labelCopy}</span>

@@ -2,11 +2,16 @@
 
 exports[`Snapshots ChartTooltip should render a no update published message 1`] = `
 <span>
-  <div>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#343E46",
+      }
+    }
+  >
     <div
       style={
         Object {
-          "backgroundColor": "#343E46",
           "color": "#fff",
           "cursor": "default",
           "fontFamily": "Open Sans, Helvetica Neue, Helvetica, Arial, sans serif",
@@ -43,7 +48,9 @@ exports[`Snapshots ChartTooltip should render a no update published message 1`] 
             }
           }
         >
-          There was no update published at this time
+          There was no 
+          post
+          s published at this time
         </span>
       </span>
     </div>
@@ -53,11 +60,16 @@ exports[`Snapshots ChartTooltip should render a no update published message 1`] 
 
 exports[`Snapshots ChartTooltip should render the tooltip 1`] = `
 <span>
-  <div>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#343E46",
+      }
+    }
+  >
     <div
       style={
         Object {
-          "backgroundColor": "#343E46",
           "color": "#fff",
           "cursor": "default",
           "fontFamily": "Open Sans, Helvetica Neue, Helvetica, Arial, sans serif",
@@ -121,8 +133,8 @@ exports[`Snapshots ChartTooltip should render the tooltip 1`] = `
               }
             }
           >
-             update
-            s
+             
+            posts
              published
           </span>
           <span
@@ -135,7 +147,8 @@ exports[`Snapshots ChartTooltip should render the tooltip 1`] = `
               }
             }
           >
-             that generated:
+            , and you earned
+            :
           </span>
           <br />
           <br />
@@ -194,11 +207,16 @@ exports[`Snapshots ChartTooltip should render the tooltip 1`] = `
 
 exports[`Snapshots ChartTooltip should render the tooltip with the previous data 1`] = `
 <span>
-  <div>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#343E46",
+      }
+    }
+  >
     <div
       style={
         Object {
-          "backgroundColor": "#343E46",
           "color": "#fff",
           "cursor": "default",
           "fontFamily": "Open Sans, Helvetica Neue, Helvetica, Arial, sans serif",
@@ -262,8 +280,8 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
               }
             }
           >
-             update
-            s
+             
+            posts
              published
           </span>
           <span>
@@ -316,7 +334,8 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
               }
             }
           >
-             that generated:
+            , and you earned
+            :
           </span>
           <br />
           <br />
@@ -420,13 +439,18 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
 </span>
 `;
 
-exports[`Snapshots ChartTooltip should render updates measure tooltip 1`] = `
+exports[`Snapshots ChartTooltip should render the tooltip with twitter specific copy 1`] = `
 <span>
-  <div>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#343E46",
+      }
+    }
+  >
     <div
       style={
         Object {
-          "backgroundColor": "#343E46",
           "color": "#fff",
           "cursor": "default",
           "fontFamily": "Open Sans, Helvetica Neue, Helvetica, Arial, sans serif",
@@ -490,8 +514,155 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip 1`] = `
               }
             }
           >
-             update
-            s
+             
+            tweets
+             published
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+             that generated
+            :
+          </span>
+          <br />
+          <br />
+          <span>
+            <span
+              style={
+                Object {
+                  "color": "#fff",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontSize": "0.8rem",
+                  "fontWeight": 600,
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "background": "#fda3f3",
+                    "borderColor": "#df85d5",
+                    "borderRadius": "10px",
+                    "borderStyle": "solid",
+                    "borderWidth": "1px",
+                    "display": "inline-block",
+                    "height": "7px",
+                    "marginRight": "5px",
+                    "verticalAlign": "baseline",
+                    "width": "7px",
+                  }
+                }
+              />
+               
+              <span>
+                42
+              </span>
+            </span>
+            <span
+              style={
+                Object {
+                  "color": "#fff",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontSize": "0.8rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+               
+              engagements
+            </span>
+          </span>
+        </span>
+      </span>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots ChartTooltip should render updates measure tooltip 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#343E46",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "color": "#fff",
+          "cursor": "default",
+          "fontFamily": "Open Sans, Helvetica Neue, Helvetica, Arial, sans serif",
+          "fontSize": "9pt",
+          "padding": "10px",
+          "pointerEvents": "none",
+          "whiteSpace": "normal",
+          "width": "185px",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "#fcfcfc",
+            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontSize": "0.7rem",
+            "fontWeight": 400,
+          }
+        }
+      >
+        12 September
+      </span>
+      <br />
+      <br />
+      <span>
+        <span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            There were a total of 
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 600,
+              }
+            }
+          >
+            <span>
+              5
+            </span>
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+             
+            posts
              published
           </span>
           <span
@@ -515,11 +686,16 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip 1`] = `
 
 exports[`Snapshots ChartTooltip should render updates measure tooltip with previous comparison 1`] = `
 <span>
-  <div>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#343E46",
+      }
+    }
+  >
     <div
       style={
         Object {
-          "backgroundColor": "#343E46",
           "color": "#fff",
           "cursor": "default",
           "fontFamily": "Open Sans, Helvetica Neue, Helvetica, Arial, sans serif",
@@ -583,8 +759,8 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip with previ
               }
             }
           >
-             update
-            s
+             
+            posts
              published
           </span>
           <span>
@@ -1676,74 +1852,10 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                     }
                   >
                     <span>
-                      1,010
+                      100
                     </span>
                   </span>
                 </span>
-              </div>
-              <div>
-                <span
-                  style={
-                    Object {
-                      "display": "inline-block",
-                      "height": "1rem",
-                      "marginLeft": "10px",
-                    }
-                  }
-                >
-                  <svg
-                    height="100%"
-                    style={
-                      Object {
-                        "fill": "#ff1e1e",
-                        "height": "1rem",
-                        "width": "1rem",
-                      }
-                    }
-                    version="1.1"
-                    viewBox="0 0 16 16"
-                    width="100%"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                  >
-                    <g
-                      className="torchRed"
-                    >
-                      <path
-                        d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                        transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                      />
-                    </g>
-                  </svg>
-                </span>
-                <div
-                  style={
-                    Object {
-                      "color": "#FF1E1E",
-                      "display": "inline-block",
-                      "fontSize": "18px",
-                      "fontWeight": 600,
-                      "marginLeft": "5px",
-                    }
-                  }
-                >
-                  <span>
-                    <span
-                      style={
-                        Object {
-                          "color": "torchRed",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "1.25rem",
-                        }
-                      }
-                    >
-                      <span>
-                        55
-                      </span>
-                      %
-                    </span>
-                  </span>
-                </div>
               </div>
             </div>
           </li>
@@ -2510,74 +2622,10 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                     }
                   >
                     <span>
-                      1,010
+                      100
                     </span>
                   </span>
                 </span>
-              </div>
-              <div>
-                <span
-                  style={
-                    Object {
-                      "display": "inline-block",
-                      "height": "1rem",
-                      "marginLeft": "10px",
-                    }
-                  }
-                >
-                  <svg
-                    height="100%"
-                    style={
-                      Object {
-                        "fill": "#ff1e1e",
-                        "height": "1rem",
-                        "width": "1rem",
-                      }
-                    }
-                    version="1.1"
-                    viewBox="0 0 16 16"
-                    width="100%"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                  >
-                    <g
-                      className="torchRed"
-                    >
-                      <path
-                        d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                        transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                      />
-                    </g>
-                  </svg>
-                </span>
-                <div
-                  style={
-                    Object {
-                      "color": "#FF1E1E",
-                      "display": "inline-block",
-                      "fontSize": "18px",
-                      "fontWeight": 600,
-                      "marginLeft": "5px",
-                    }
-                  }
-                >
-                  <span>
-                    <span
-                      style={
-                        Object {
-                          "color": "torchRed",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "1.25rem",
-                        }
-                      }
-                    >
-                      <span>
-                        55
-                      </span>
-                      %
-                    </span>
-                  </span>
-                </div>
               </div>
             </div>
           </li>
@@ -3106,73 +3154,10 @@ exports[`Snapshots Footer should render the table 1`] = `
                   }
                 >
                   <span>
-                    150
+                    100
                   </span>
                 </span>
               </span>
-            </div>
-            <div>
-              <span
-                style={
-                  Object {
-                    "display": "inline-block",
-                    "height": "1rem",
-                    "marginLeft": "10px",
-                  }
-                }
-              >
-                <svg
-                  height="100%"
-                  style={
-                    Object {
-                      "fill": "#2fd566",
-                      "height": "1rem",
-                      "width": "1rem",
-                    }
-                  }
-                  version="1.1"
-                  viewBox="0 0 16 16"
-                  width="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                >
-                  <g
-                    className="shamrock"
-                  >
-                    <path
-                      d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                    />
-                  </g>
-                </svg>
-              </span>
-              <div
-                style={
-                  Object {
-                    "color": "#2FD566",
-                    "display": "inline-block",
-                    "fontSize": "18px",
-                    "fontWeight": 600,
-                    "marginLeft": "5px",
-                  }
-                }
-              >
-                <span>
-                  <span
-                    style={
-                      Object {
-                        "color": "shamrock",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
-                        "fontSize": "1.25rem",
-                      }
-                    }
-                  >
-                    <span>
-                      25
-                    </span>
-                    %
-                  </span>
-                </span>
-              </div>
             </div>
           </div>
         </li>

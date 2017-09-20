@@ -51,6 +51,7 @@ const CompareChart = ({
   openDropdown,
   closeDropdown,
   isDropdownOpen,
+  profileService,
 }) => {
   let content = null;
   if (loading) {
@@ -75,6 +76,7 @@ const CompareChart = ({
           dailyData={filterDailyDataMetrics(dailyData, selectedMetricLabel)}
           timezone={timezone}
           visualizePreviousPeriod={visualizePreviousPeriod}
+          profileService={profileService}
         />
       </div>
     );
@@ -132,6 +134,7 @@ CompareChart.propTypes = {
   timezone: PropTypes.string.isRequired,
   visualizePreviousPeriod: PropTypes.bool,
   isDropdownOpen: PropTypes.bool,
+  profileService: PropTypes.string.isRequired,
   // actions
   selectMetric: PropTypes.func.isRequired,
   togglePreviousPeriod: PropTypes.func.isRequired,

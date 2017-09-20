@@ -12,6 +12,28 @@ function isUpdatesMetric(label) {
   return Boolean(label.match(/post|tweet/i));
 }
 
+function postsWording(profileService, count = 1) {
+  let wording = '';
+  switch (profileService) {
+    case 'twitter':
+      wording = 'tweet';
+      break;
+    default:
+      wording = 'post';
+      break;
+  }
+  return `${wording}${count > 1 ? 's' : ''}`;
+}
+
+function rewardWording(profileService) {
+  switch (profileService) {
+    case 'twitter':
+      return ' that generated';
+    default:
+      return ', and you earned';
+  }
+}
+
 const StandardTolltip = ({
   label,
   value,
@@ -20,13 +42,14 @@ const StandardTolltip = ({
   previousPostsCount,
   color,
   visualizePreviousPeriod,
+  profileService,
 }) => (
   <span>
     <Text color="white" size="small" >There were a total of </Text>
     <Text color="white" size="small" weight="bold" >
       <TruncatedNumber>{postsCount}</TruncatedNumber>
     </Text>
-    <Text color="white" size="small" > update{postsCount > 1 ? 's' : ''} published</Text>
+    <Text color="white" size="small" > {postsWording(profileService, postsCount)} published</Text>
 
     {visualizePreviousPeriod && <span>
       <Text color="white" size="small" >, compared with </Text>
@@ -36,7 +59,7 @@ const StandardTolltip = ({
       <Text color="white" size="small" > previously,</Text>
     </span>}
 
-    <Text color="white" size="small" > that generated:</Text>
+    <Text color="white" size="small" >{rewardWording(profileService)}:</Text>
     <br />
     <br />
     <span>
@@ -64,6 +87,7 @@ StandardTolltip.propTypes = {
   value: PropTypes.number,
   previousValue: PropTypes.number,
   visualizePreviousPeriod: PropTypes.bool,
+  profileService: PropTypes.string.isRequired,
 };
 
 StandardTolltip.defaultProps = {
@@ -80,13 +104,14 @@ const UpdatesTooltip = ({
   postsCount,
   previousPostsCount,
   visualizePreviousPeriod,
+  profileService,
 }) => (
   <span>
     <Text color="white" size="small" >There were a total of </Text>
     <Text color="white" size="small" weight="bold" >
       <TruncatedNumber>{postsCount}</TruncatedNumber>
     </Text>
-    <Text color="white" size="small" > update{postsCount > 1 ? 's' : ''} published</Text>
+    <Text color="white" size="small" > {postsWording(profileService, postsCount)} published</Text>
 
     {visualizePreviousPeriod && <span>
       <Text color="white" size="small" >, compared with </Text>
@@ -103,6 +128,7 @@ UpdatesTooltip.propTypes = {
   postsCount: PropTypes.number,
   previousPostsCount: PropTypes.number,
   visualizePreviousPeriod: PropTypes.bool,
+  profileService: PropTypes.string.isRequired,
 };
 
 UpdatesTooltip.defaultProps = {
@@ -119,11 +145,11 @@ const ChartTooltip = ({
   day,
   label,
   timezone,
+  profileService,
   ...extraProps
 }) => (
   <div
     style={{
-      backgroundColor: '#343E46',
       width: '185px',
       padding: '10px',
       color: '#fff',
@@ -138,11 +164,13 @@ const ChartTooltip = ({
     <br />
     <br />
     {label && <span>
-      {!isUpdatesMetric(label) && <StandardTolltip label={label} {...extraProps} />}
-      {isUpdatesMetric(label) && <UpdatesTooltip label={label} {...extraProps} />}
+      {!isUpdatesMetric(label) &&
+        <StandardTolltip profileService={profileService} label={label} {...extraProps} />}
+      {isUpdatesMetric(label) &&
+        <UpdatesTooltip profileService={profileService}label={label} {...extraProps} />}
     </span>}
     {!label && <span>
-      <Text color="white" size="small" >There was no update published at this time</Text>
+      <Text color="white" size="small" >There was no {postsWording(profileService)}s published at this time</Text>
     </span> }
   </div>
 );
@@ -151,6 +179,7 @@ ChartTooltip.propTypes = {
   day: PropTypes.number.isRequired,
   label: PropTypes.string,
   timezone: PropTypes.string,
+  profileService: PropTypes.string.isRequired,
 };
 
 ChartTooltip.defaultProps = {

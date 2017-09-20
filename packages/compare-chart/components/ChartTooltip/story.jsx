@@ -6,18 +6,43 @@ import ChartTooltip from './index';
 storiesOf('ChartTooltip')
   .addDecorator(checkA11y)
   .add('should render the tooltip', () => (
-    <div>
+    <div
+      style={{
+        backgroundColor: '#343E46',
+      }}
+    >
       <ChartTooltip
         color="#fda3f3"
         day={1505174400000}
         label="Engagements"
         postsCount={5}
         value={42}
+        profileService="facebook"
+      />
+    </div>
+  ))
+  .add('should render the tooltip with twitter specific copy', () => (
+    <div
+      style={{
+        backgroundColor: '#343E46',
+      }}
+    >
+      <ChartTooltip
+        color="#fda3f3"
+        day={1505174400000}
+        label="Engagements"
+        postsCount={5}
+        value={42}
+        profileService="twitter"
       />
     </div>
   ))
   .add('should render the tooltip with the previous data', () => (
-    <div>
+    <div
+      style={{
+        backgroundColor: '#343E46',
+      }}
+    >
       <ChartTooltip
         color="#fda3f3"
         day={1505174400000}
@@ -27,22 +52,32 @@ storiesOf('ChartTooltip')
         value={42}
         previousValue={100}
         visualizePreviousPeriod
+        profileService="facebook"
       />
     </div>
   ))
   .add('should render updates measure tooltip', () => (
-    <div>
+    <div
+      style={{
+        backgroundColor: '#343E46',
+      }}
+    >
       <ChartTooltip
         color="#fda3f3"
         day={1505174400000}
         label="Posts"
         postsCount={5}
         value={42}
+        profileService="facebook"
       />
     </div>
   ))
   .add('should render updates measure tooltip with previous comparison', () => (
-    <div>
+    <div
+      style={{
+        backgroundColor: '#343E46',
+      }}
+    >
       <ChartTooltip
         color="#fda3f3"
         day={1505174400000}
@@ -51,13 +86,19 @@ storiesOf('ChartTooltip')
         previousPostsCount={10}
         value={42}
         visualizePreviousPeriod
+        profileService="facebook"
       />
     </div>
   ))
   .add('should render a no update published message', () => (
-    <div>
+    <div
+      style={{
+        backgroundColor: '#343E46',
+      }}
+    >
       <ChartTooltip
         day={1505174400000}
+        profileService="facebook"
       />
     </div>
   ));

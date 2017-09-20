@@ -14,6 +14,7 @@ storiesOf('CompareChart')
       }}
     >
       <CompareChart
+        profileService="facebbok"
         dailyData={mockDailyData}
         selectedMetricLabel="Click"
         totals={mockTotals}
@@ -32,6 +33,7 @@ storiesOf('CompareChart')
       }}
     >
       <CompareChart
+        profileService="facebbok"
         dailyData={mockDailyData}
         selectedMetricLabel="Click"
         totals={mockTotals}
@@ -51,6 +53,7 @@ storiesOf('CompareChart')
       }}
     >
       <CompareChart
+        profileService="facebbok"
         dailyData={[]}
         totals={[]}
         timezone="America/Los_Angeles"
@@ -69,6 +72,7 @@ storiesOf('CompareChart')
       }}
     >
       <CompareChart
+        profileService="facebbok"
         dailyData={[]}
         totals={[]}
         timezone="America/Los_Angeles"

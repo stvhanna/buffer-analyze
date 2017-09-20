@@ -16,6 +16,7 @@ function mapStateToProps (state) {
     selectedMetricLabel: state.compare.selectedMetricLabel,
     isDropdownOpen: state.compare.isDropdownOpen,
     visualizePreviousPeriod: state.compare.visualizePreviousPeriod,
+    profileService: state.profiles.selectedProfileService,
   };
 }
 

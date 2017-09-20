@@ -4,19 +4,18 @@ import reactDOM from 'react-dom/server';
 import ChartTooltip from '../ChartTooltip';
 
 export const highChartsConfigXAxis = {
-  title: { text: null },
-  type: 'datetime',
-  gridLineWidth: 1,
   gridLineColor: '#F3F5F7',
+  gridLineWidth: 1,
   lineColor: '#E6EBEF',
-  minorGridLineWidth: 1,
-  minorGridLineColor: '#F3F5F7',
-  endOnTick: false,
-  startOnTick: false,
   maxPadding: 0.05,
   minPadding: 0.05,
+  minorGridLineColor: '#F3F5F7',
+  minorGridLineWidth: 1,
+  title: { text: null },
+  type: 'datetime',
   labels: {
     align: 'left',
+    format: '{value:%e %b}',
     x: 5,
     y: 25,
     style: {

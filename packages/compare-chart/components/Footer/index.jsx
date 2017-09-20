@@ -35,6 +35,8 @@ const Footer = ({ totals, selectedMetricLabel, startDate, endDate }) => {
   const pastMetric = Object.assign({}, metric, {
     key: `${metric.label}_past`,
     color: '#9B9FA3',
+    value: metric.previousValue,
+    diff: 0,
   });
 
   return (
@@ -53,6 +55,7 @@ const Footer = ({ totals, selectedMetricLabel, startDate, endDate }) => {
         <GridItem
           key={pastMetric.key}
           metric={pastMetric}
+          hideDiff
           customLabel={
             <span>
               <MetricIcon metric={pastMetric} />

@@ -930,6 +930,112 @@ exports[`Snapshots GridItem should render a summary grid item with negative diff
 </span>
 `;
 
+exports[`Snapshots GridItem should render a summary grid item with no diff 1`] = `
+<span>
+  <ul
+    style={
+      Object {
+        "borderLeft": "solid 1px #ced7df",
+        "borderRadius": "2px",
+        "borderTop": "solid 1px #ced7df",
+        "display": "flex",
+        "flexWrap": "wrap",
+        "margin": "0 auto",
+        "padding": "0",
+      }
+    }
+  >
+    <li
+      style={
+        Object {
+          "borderBottom": "solid 1px #CED7DF",
+          "borderRight": "solid 1px #CED7DF",
+          "boxSizing": "border-box",
+          "display": "inline-block",
+          "flexGrow": 1,
+          "listStyle": "none",
+          "paddingBottom": "15px",
+          "width": "25%",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "display": "block",
+            "fontSize": "12px",
+            "fontWeight": 600,
+            "marginLeft": "15px",
+            "marginTop": "15px",
+          }
+        }
+      >
+        <span
+          data-tip={null}
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Tweets
+          </span>
+        </span>
+      </span>
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flex": 1,
+            "flexDirection": "row",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "display": "inline-block",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#323b43",
+                "fontSize": "2em",
+                "fontWeight": 600,
+                "marginLeft": "15px",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#323b43",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontSize": "2rem",
+                  "fontWeight": 600,
+                }
+              }
+            >
+              <span>
+                10
+              </span>
+            </span>
+          </span>
+        </div>
+      </div>
+    </li>
+  </ul>
+</span>
+`;
+
 exports[`Snapshots GridItem should render a summary grid item with positive diff 1`] = `
 <span>
   <ul

@@ -19,7 +19,23 @@ function fadeColor(color, opacity) {
     color;
 }
 
-function prepareSeries(dailyMetric, timezone, visualizePreviousPeriod, isPreviousPeriod = false) {
+function getTickInterval(dailyMetric) {
+  const oneDayMS = 24 * 3600 * 1000;
+  const sevenDaysMS = 7 * oneDayMS;
+  const isMoreThenSevenDays = dailyMetric[0].length > 7;
+
+  return isMoreThenSevenDays ?
+    sevenDaysMS :
+    oneDayMS;
+}
+
+function prepareSeries(
+  dailyMetric,
+  timezone,
+  visualizePreviousPeriod,
+  profileService,
+  isPreviousPeriod = false,
+) {
   let color = '#9B9FA3';
   const seriesData = Array.from(dailyMetric, (day) => {
     let value = 0;
@@ -32,13 +48,15 @@ function prepareSeries(dailyMetric, timezone, visualizePreviousPeriod, isPreviou
       }
     }
     return {
-      x: moment(Number(day.day)).endOf('day').valueOf(),
+      x: moment(Number(day.day)).endOf('day').utc().valueOf(),
       y: value,
       metricData: Object.assign({}, day.metric, {
+        profileService,
+        timezone,
         visualizePreviousPeriod,
       }),
       timezone,
-      pointPlacement: 24 * 3600 * 1000,
+      pointPlacement: getTickInterval(dailyMetric),
     };
   });
 
@@ -61,22 +79,29 @@ function prepareSeries(dailyMetric, timezone, visualizePreviousPeriod, isPreviou
   return seriesConfig;
 }
 
-function prepareChartOptions(dailyMetric, timezone, visualizePreviousPeriod) {
+function prepareChartOptions(dailyMetric, timezone, visualizePreviousPeriod, profileService) {
   const config = Object.assign({}, chartConfig);
+  config.xAxis.minorTickInterval = getTickInterval(dailyMetric);
   config.series = [
-    prepareSeries(dailyMetric, timezone, visualizePreviousPeriod),
+    prepareSeries(dailyMetric, timezone, visualizePreviousPeriod, profileService),
     (visualizePreviousPeriod ? prepareSeries(
       dailyMetric,
       timezone,
       visualizePreviousPeriod,
+      profileService,
       true,
     ) : null),
   ].filter(e => e !== null);
   return config;
 }
 
-const Chart = ({ dailyData, timezone, visualizePreviousPeriod }) => {
-  const charOptions = prepareChartOptions(dailyData, timezone, visualizePreviousPeriod);
+const Chart = ({ dailyData, timezone, visualizePreviousPeriod, profileService }) => {
+  const charOptions = prepareChartOptions(
+    dailyData,
+    timezone,
+    visualizePreviousPeriod,
+    profileService,
+  );
   return (<ReactHighcharts config={charOptions} timezone={timezone} />);
 };
 
@@ -92,6 +117,7 @@ Chart.propTypes = {
       postsCount: PropTypes.number.isRequired,
     }),
   })).isRequired,
+  profileService: PropTypes.string.isRequired,
   timezone: PropTypes.string.isRequired,
   visualizePreviousPeriod: PropTypes.bool,
 };
