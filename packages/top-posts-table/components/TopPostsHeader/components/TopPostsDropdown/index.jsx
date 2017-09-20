@@ -79,7 +79,7 @@ const TopPostsDropdown = ({
                       />
                     </span>
                   ))
-              };
+              }
             </ul>
           </DropdownContent>
         </Dropdown>

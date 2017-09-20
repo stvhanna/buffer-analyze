@@ -45,14 +45,9 @@ module.exports = method(
   'top_posts',
   'fetch analytics top posts for profiles and pages',
   ({ profileId, startDate, endDate, sortBy, descending, limit }, { session }) => {
-    console.log('I am here in the RPC endpoint...');
     const end = moment.unix(endDate).format('MM/DD/YYYY');
     const start = moment.unix(startDate).format('MM/DD/YYYY');
     const dateRange = new DateRange(start, end);
-
-    console.log(sortBy);
-    console.log(descending);
-    console.log(limit);
     const topPosts = fetchTopPosts(
       profileId,
       dateRange,

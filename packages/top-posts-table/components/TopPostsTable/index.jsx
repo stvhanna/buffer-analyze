@@ -31,6 +31,20 @@ const gridContainer = {
   margin: '1rem 0 1.5rem',
 };
 
+const defaultSortMetrics = {
+  facebook: {
+    key: 'postImpressions',
+    label: 'Post Impressions',
+  },
+  twitter: {
+    key: 'impressions',
+    label: 'Impressions',
+  },
+  instagram: {
+    key: 'likes',
+    label: 'Likes',
+  },
+};
 
 function mergePostMetrics(post, postMetrics) {
   const postStatistics = post.statistics;
@@ -81,6 +95,9 @@ const TopPostsTable = (props) => {
   const engagementMetrics = metricsConfig[profileService].topPostsEngagementMetrics;
   const audienceMetrics = metricsConfig[profileService].topPostsAudienceMetrics;
 
+  const initialSelectedMetric = Object.keys(selectedMetric).length === 0 ?
+    defaultSortMetrics[profileService] : selectedMetric;
+
   const posts = topPosts.map(post => mergePostMetrics(post, allPostMetrics));
 
   const maxEngagementValue = getMaxMetricValue(posts, engagementMetrics);
@@ -98,7 +115,7 @@ const TopPostsTable = (props) => {
       <div>
         <TopPostsHeader
           metrics={allPostMetrics}
-          selectedMetric={selectedMetric}
+          selectedMetric={initialSelectedMetric}
           isDescendingSelected={isDescendingSelected}
           selectMetric={selectMetric}
           toggleDropdown={toggleDropdown}

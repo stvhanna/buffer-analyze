@@ -30,18 +30,14 @@ export default (state = initialState, action) => {
         ...state,
         loading: false,
         topPosts: action.result,
-        selectedMetric: state.selectedMetric.key === undefined ? {
-          key: 'postImpressions',
-          label: 'Post Impressions',
-        } : state.selectedMetric,
-        activePostsCount: state.activePostsCount,
       };
     case actionTypes.SELECT_TOP_POSTS_METRIC:
-      return Object.assign({}, state, {
+      return {
+        ...state,
         isDropdownOpen: false,
         selectedMetric: action.metric,
         isDescendingSelected: action.descending,
-      });
+      };
     case actionTypes.SELECT_TOP_POSTS_COUNT:
       return Object.assign({}, state, {
         activePostsCount: action.postsCount,
