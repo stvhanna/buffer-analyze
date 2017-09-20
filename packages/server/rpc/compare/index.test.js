@@ -122,9 +122,9 @@ describe('rpc/compare', () => {
       label: 'Engaged Users',
       color: '#FEC78B',
       value: 56755,
-      previous_value: 15327,
-      posts_count: 3,
-      previous_posts_count: 5,
+      previousValue: 15327,
+      postsCount: 3,
+      previousPostsCount: 5,
     });
   });
 
@@ -146,9 +146,9 @@ describe('rpc/compare', () => {
       label: 'Engaged Users',
       color: '#FEC78B',
       value: 0,
-      previous_value: 0,
-      posts_count: 0,
-      previous_posts_count: 0,
+      previousValue: 0,
+      postsCount: 0,
+      previousPostsCount: 0,
     });
   });
 
@@ -170,9 +170,9 @@ describe('rpc/compare', () => {
       label: 'Engaged Users',
       color: '#FEC78B',
       value: 56755,
-      previous_value: 0,
-      posts_count: 3,
-      previous_posts_count: 0,
+      previousValue: 0,
+      postsCount: 3,
+      previousPostsCount: 0,
     });
   });
 

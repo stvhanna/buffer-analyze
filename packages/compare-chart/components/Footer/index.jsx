@@ -74,7 +74,7 @@ Footer.propTypes = {
   totals: PropTypes.arrayOf(PropTypes.shape({
     diff: PropTypes.number,
     label: PropTypes.string,
-    previous_value: PropTypes.number.isRequired,
+    previousValue: PropTypes.number.isRequired,
     value: PropTypes.number,
   })).isRequired,
   startDate: PropTypes.number.isRequired,

@@ -19,13 +19,13 @@ function fadeColor(color, opacity) {
     color;
 }
 
-function prepareSeries(dailyMetric, timezone, isPreviousPeriod = false) {
+function prepareSeries(dailyMetric, timezone, visualizePreviousPeriod, isPreviousPeriod = false) {
   let color = '#9B9FA3';
   const seriesData = Array.from(dailyMetric, (day) => {
     let value = 0;
     if (day.metric) {
       if (isPreviousPeriod) {
-        value = day.metric.previous_value;
+        value = day.metric.previousValue;
       } else {
         value = day.metric.value;
         color = day.metric.color;
@@ -34,7 +34,9 @@ function prepareSeries(dailyMetric, timezone, isPreviousPeriod = false) {
     return {
       x: moment(Number(day.day)).endOf('day').valueOf(),
       y: value,
-      metric_data: day.metric,
+      metricData: Object.assign({}, day.metric, {
+        visualizePreviousPeriod,
+      }),
       timezone,
       pointPlacement: 24 * 3600 * 1000,
     };
@@ -62,8 +64,13 @@ function prepareSeries(dailyMetric, timezone, isPreviousPeriod = false) {
 function prepareChartOptions(dailyMetric, timezone, visualizePreviousPeriod) {
   const config = Object.assign({}, chartConfig);
   config.series = [
-    prepareSeries(dailyMetric, timezone),
-    (visualizePreviousPeriod ? prepareSeries(dailyMetric, timezone, true) : null),
+    prepareSeries(dailyMetric, timezone, visualizePreviousPeriod),
+    (visualizePreviousPeriod ? prepareSeries(
+      dailyMetric,
+      timezone,
+      visualizePreviousPeriod,
+      true,
+    ) : null),
   ].filter(e => e !== null);
   return config;
 }
@@ -81,8 +88,8 @@ Chart.propTypes = {
       diff: PropTypes.number.isRequired,
       label: PropTypes.string.isRequired,
       value: PropTypes.number.isRequired,
-      previous_value: PropTypes.number.isRequired,
-      posts_count: PropTypes.number.isRequired,
+      previousValue: PropTypes.number.isRequired,
+      postsCount: PropTypes.number.isRequired,
     }),
   })).isRequired,
   timezone: PropTypes.string.isRequired,

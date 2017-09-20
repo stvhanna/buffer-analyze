@@ -122,19 +122,8 @@ export default {
     formatter() {
       const point = this.points[0].point;
       return reactDOM.renderToStaticMarkup(
-        ''
-        // <ChartTooltip day={point.x} metric={point.metric_data} />,
+        <ChartTooltip day={point.x} {...point.metricData} />,
       );
-    },
-    dateTimeLabelFormats: {
-      millisecond: '%A, %b %e, %H:%M:%S.%L',
-      second: '%A, %b %e, %H:%M:%S',
-      minute: '%A, %b %e, %H:%M',
-      hour: '%A, %B %e',
-      day: '%A, %B %e',
-      week: 'Week from %A, %b %e, %Y',
-      month: '%B %Y',
-      year: '%Y',
     },
     backgroundColor: '#343E46',
     borderRadius: 4,
@@ -142,17 +131,6 @@ export default {
     pointFormatter: () => `${this.series.name}: <b>${this.y}</b><br/>`,
     shadow: false,
     useHTML: true,
-    style: {
-      maxWidth: '175px',
-      width: '175px',
-      padding: 18,
-      color: '#fff',
-      cursor: 'default',
-      fontSize: '9pt',
-      fontFamily: 'Open Sans, Helvetica Neue, Helvetica, Arial, sans serif',
-      pointerEvents: 'none',
-      whiteSpace: 'normal',
-    },
   },
   series: [],
 };

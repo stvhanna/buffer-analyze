@@ -50,7 +50,6 @@ const MetricIcon = ({ metric }) => (<span style={getIconStyle(metric)} />);
 
 MetricIcon.propTypes = {
   metric: PropTypes.shape({
-    label: PropTypes.string.isRequired,
     color: PropTypes.string.isRequired,
   }).isRequired,
 };

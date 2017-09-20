@@ -1,5 +1,639 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Snapshots ChartTooltip should render a no update published message 1`] = `
+<span>
+  <div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#343E46",
+          "color": "#fff",
+          "cursor": "default",
+          "fontFamily": "Open Sans, Helvetica Neue, Helvetica, Arial, sans serif",
+          "fontSize": "9pt",
+          "padding": "10px",
+          "pointerEvents": "none",
+          "whiteSpace": "normal",
+          "width": "185px",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "#fcfcfc",
+            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontSize": "0.7rem",
+            "fontWeight": 400,
+          }
+        }
+      >
+        12 September
+      </span>
+      <br />
+      <br />
+      <span>
+        <span
+          style={
+            Object {
+              "color": "#fff",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "0.8rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          There was no update published at this time
+        </span>
+      </span>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots ChartTooltip should render the tooltip 1`] = `
+<span>
+  <div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#343E46",
+          "color": "#fff",
+          "cursor": "default",
+          "fontFamily": "Open Sans, Helvetica Neue, Helvetica, Arial, sans serif",
+          "fontSize": "9pt",
+          "padding": "10px",
+          "pointerEvents": "none",
+          "whiteSpace": "normal",
+          "width": "185px",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "#fcfcfc",
+            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontSize": "0.7rem",
+            "fontWeight": 400,
+          }
+        }
+      >
+        12 September
+      </span>
+      <br />
+      <br />
+      <span>
+        <span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            There were a total of 
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 600,
+              }
+            }
+          >
+            <span>
+              5
+            </span>
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+             update
+            s
+             published
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+             that generated:
+          </span>
+          <br />
+          <br />
+          <span>
+            <span
+              style={
+                Object {
+                  "color": "#fff",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontSize": "0.8rem",
+                  "fontWeight": 600,
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "background": "#fda3f3",
+                    "borderColor": "#df85d5",
+                    "borderRadius": "10px",
+                    "borderStyle": "solid",
+                    "borderWidth": "1px",
+                    "display": "inline-block",
+                    "height": "7px",
+                    "marginRight": "5px",
+                    "verticalAlign": "baseline",
+                    "width": "7px",
+                  }
+                }
+              />
+               
+              <span>
+                42
+              </span>
+            </span>
+            <span
+              style={
+                Object {
+                  "color": "#fff",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontSize": "0.8rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+               
+              engagements
+            </span>
+          </span>
+        </span>
+      </span>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots ChartTooltip should render the tooltip with the previous data 1`] = `
+<span>
+  <div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#343E46",
+          "color": "#fff",
+          "cursor": "default",
+          "fontFamily": "Open Sans, Helvetica Neue, Helvetica, Arial, sans serif",
+          "fontSize": "9pt",
+          "padding": "10px",
+          "pointerEvents": "none",
+          "whiteSpace": "normal",
+          "width": "185px",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "#fcfcfc",
+            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontSize": "0.7rem",
+            "fontWeight": 400,
+          }
+        }
+      >
+        12 September
+      </span>
+      <br />
+      <br />
+      <span>
+        <span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            There were a total of 
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 600,
+              }
+            }
+          >
+            <span>
+              5
+            </span>
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+             update
+            s
+             published
+          </span>
+          <span>
+            <span
+              style={
+                Object {
+                  "color": "#fff",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontSize": "0.8rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              , compared with 
+            </span>
+            <span
+              style={
+                Object {
+                  "color": "#fff",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontSize": "0.8rem",
+                  "fontWeight": 600,
+                }
+              }
+            >
+              <span>
+                10
+              </span>
+            </span>
+            <span
+              style={
+                Object {
+                  "color": "#fff",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontSize": "0.8rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+               previously,
+            </span>
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+             that generated:
+          </span>
+          <br />
+          <br />
+          <span>
+            <span
+              style={
+                Object {
+                  "color": "#fff",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontSize": "0.8rem",
+                  "fontWeight": 600,
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "background": "#fda3f3",
+                    "borderColor": "#df85d5",
+                    "borderRadius": "10px",
+                    "borderStyle": "solid",
+                    "borderWidth": "1px",
+                    "display": "inline-block",
+                    "height": "7px",
+                    "marginRight": "5px",
+                    "verticalAlign": "baseline",
+                    "width": "7px",
+                  }
+                }
+              />
+               
+              <span>
+                42
+              </span>
+            </span>
+            <span
+              style={
+                Object {
+                  "color": "#fff",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontSize": "0.8rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+               
+              engagements
+            </span>
+          </span>
+          <span>
+            <br />
+            <span
+              style={
+                Object {
+                  "color": "#fff",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontSize": "0.8rem",
+                  "fontWeight": 600,
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "background": "#9B9FA3",
+                    "borderColor": "#7d8185",
+                    "borderRadius": "10px",
+                    "borderStyle": "solid",
+                    "borderWidth": "1px",
+                    "display": "inline-block",
+                    "height": "7px",
+                    "marginRight": "5px",
+                    "verticalAlign": "baseline",
+                    "width": "7px",
+                  }
+                }
+              />
+               
+              <span>
+                100
+              </span>
+            </span>
+            <span
+              style={
+                Object {
+                  "color": "#fff",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontSize": "0.8rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+               Previous 
+              engagements
+            </span>
+          </span>
+        </span>
+      </span>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots ChartTooltip should render updates measure tooltip 1`] = `
+<span>
+  <div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#343E46",
+          "color": "#fff",
+          "cursor": "default",
+          "fontFamily": "Open Sans, Helvetica Neue, Helvetica, Arial, sans serif",
+          "fontSize": "9pt",
+          "padding": "10px",
+          "pointerEvents": "none",
+          "whiteSpace": "normal",
+          "width": "185px",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "#fcfcfc",
+            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontSize": "0.7rem",
+            "fontWeight": 400,
+          }
+        }
+      >
+        12 September
+      </span>
+      <br />
+      <br />
+      <span>
+        <span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            There were a total of 
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 600,
+              }
+            }
+          >
+            <span>
+              5
+            </span>
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+             update
+            s
+             published
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            .
+          </span>
+        </span>
+      </span>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots ChartTooltip should render updates measure tooltip with previous comparison 1`] = `
+<span>
+  <div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#343E46",
+          "color": "#fff",
+          "cursor": "default",
+          "fontFamily": "Open Sans, Helvetica Neue, Helvetica, Arial, sans serif",
+          "fontSize": "9pt",
+          "padding": "10px",
+          "pointerEvents": "none",
+          "whiteSpace": "normal",
+          "width": "185px",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "#fcfcfc",
+            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontSize": "0.7rem",
+            "fontWeight": 400,
+          }
+        }
+      >
+        12 September
+      </span>
+      <br />
+      <br />
+      <span>
+        <span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            There were a total of 
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 600,
+              }
+            }
+          >
+            <span>
+              5
+            </span>
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+             update
+            s
+             published
+          </span>
+          <span>
+            <span
+              style={
+                Object {
+                  "color": "#fff",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontSize": "0.8rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              , compared with 
+            </span>
+            <span
+              style={
+                Object {
+                  "color": "#fff",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontSize": "0.8rem",
+                  "fontWeight": 600,
+                }
+              }
+            >
+              <span>
+                10
+              </span>
+            </span>
+            <span
+              style={
+                Object {
+                  "color": "#fff",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontSize": "0.8rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+               previously.
+            </span>
+          </span>
+        </span>
+      </span>
+    </div>
+  </div>
+</span>
+`;
+
 exports[`Snapshots CompareChart should render a "no data" state 1`] = `
 <span>
   <div

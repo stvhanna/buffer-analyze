@@ -39,25 +39,25 @@ function percentageDifference (value, previousValue) {
 }
 
 const summarize = (
-  metriKey,
+  metricKey,
   currentPeriod,
   currentPeriodPostCount,
   previousPeriod,
   previousPeriodPostCount,
   profileService,
 ) => {
-  const previousValue = previousPeriod[metriKey];
-  const value = currentPeriod[metriKey];
-  const label = METRICS_CONFIG[profileService][metriKey].label;
+  const previousValue = previousPeriod[metricKey];
+  const value = currentPeriod[metricKey];
+  const label = METRICS_CONFIG[profileService][metricKey].label;
   if (label) {
     return {
       diff: percentageDifference(value, previousValue),
       label,
-      color: METRICS_CONFIG[profileService][metriKey].color,
+      color: METRICS_CONFIG[profileService][metricKey].color,
       value,
-      previous_value: previousValue,
-      posts_count: currentPeriodPostCount,
-      previous_posts_count: previousPeriodPostCount,
+      previousValue,
+      postsCount: currentPeriodPostCount,
+      previousPostsCount: previousPeriodPostCount,
     };
   }
   return null;
@@ -72,9 +72,9 @@ function formatTotals(
 ) {
   return Object
     .keys(currentPeriodResult)
-    .map(metriKey =>
+    .map(metricKey =>
       summarize(
-        metriKey,
+        metricKey,
         currentPeriodResult,
         currentPeriodPostCount,
         previousPeriodResult,
@@ -102,9 +102,9 @@ function formatDaily(
     const dailyMetrics = Object.keys(data.currentPeriodMetrics);
     return {
       day: data.day,
-      metrics: dailyMetrics.map(metriKey =>
+      metrics: dailyMetrics.map(metricKey =>
         summarize(
-          metriKey,
+          metricKey,
           data.currentPeriodMetrics,
           data.currentPeriodPostCount,
           data.previousPeriodMetrics,
