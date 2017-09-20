@@ -116,6 +116,16 @@ describe('actions', () => {
       });
   });
 
+  it('should select a profile without changing the service', () => {
+    expect(actions.selectProfile(42))
+      .toEqual({
+        type: actionTypes.SELECT_PROFILE,
+        id: 42,
+        profileService: null,
+      });
+  });
+
+
   it('should toggle the dropdown', () => {
     expect(actions.toggleDropdown())
       .toEqual({
