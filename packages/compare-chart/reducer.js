@@ -2,8 +2,9 @@ import { actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-
 
 export const actionTypes = {
   SELECT_METRIC: 'SELECT_METRIC',
-  TOGGLE_DROPDOWN: 'TOGGLE_DROPDOWN',
   TOGGLE_PREVIOUS_PERIOD: 'TOGGLE_PREVIOUS_PERIOD',
+  OPEN_DROPDOWN: 'OPEN_DROPDOWN',
+  CLOSE_DROPDOWN: 'CLOSE_DROPDOWN',
 };
 
 const initialState = {
@@ -32,9 +33,13 @@ export default (state = initialState, action) => {
         isDropdownOpen: false,
         selectedMetricLabel: action.metricLabel,
       });
-    case `compare_${actionTypes.TOGGLE_DROPDOWN}`:
+    case `compare_${actionTypes.OPEN_DROPDOWN}`:
       return Object.assign({}, state, {
-        isDropdownOpen: !state.isDropdownOpen,
+        isDropdownOpen: true,
+      });
+    case `compare_${actionTypes.CLOSE_DROPDOWN}`:
+      return Object.assign({}, state, {
+        isDropdownOpen: false,
       });
     case `compare_${actionTypes.TOGGLE_PREVIOUS_PERIOD}`:
       return Object.assign({}, state, {
@@ -51,9 +56,14 @@ export const actions = {
       type: `compare_${actionTypes.TOGGLE_PREVIOUS_PERIOD}`,
     };
   },
-  toggleDropdown() {
+  openDropdown() {
     return {
-      type: `compare_${actionTypes.TOGGLE_DROPDOWN}`,
+      type: `compare_${actionTypes.OPEN_DROPDOWN}`,
+    };
+  },
+  closeDropdown() {
+    return {
+      type: `compare_${actionTypes.CLOSE_DROPDOWN}`,
     };
   },
   selectMetric(metricLabel) {

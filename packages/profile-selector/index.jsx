@@ -18,7 +18,8 @@ ProfileSelector.propTypes = {
   isDropdownOpen: PropTypes.bool.isRequired,
   selectProfile: PropTypes.func.isRequired,
   selectedProfileId: PropTypes.string.isRequired,
-  toggleDropdown: PropTypes.func.isRequired,
+  openDropdown: PropTypes.func.isRequired,
+  closeDropdown: PropTypes.func.isRequired,
   onSearchChange: PropTypes.func.isRequired,
 };
 
@@ -41,7 +42,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => ({
   selectProfile: ({ id, service }) => dispatch(actions.selectProfile(id, service)),
-  toggleDropdown: () => dispatch(actions.toggleDropdown()),
+  openDropdown: () => dispatch(actions.openDropdown()),
+  closeDropdown: () => dispatch(actions.closeDropdown()),
   onSearchChange: event => dispatch(actions.filterProfilesByUsername(event)),
 });
 

@@ -41,7 +41,8 @@ const MetricsDropdown = ({
   metrics,
   selectedMetricLabel,
   selectMetric,
-  toggleDropdown,
+  openDropdown,
+  closeDropdown,
 }) => {
   const selectedMetric = metrics.find(m => m.label === selectedMetricLabel);
   const contentClasses = classNames(dropdownContent, {
@@ -59,8 +60,8 @@ const MetricsDropdown = ({
     return (
       <Dropdown
         className={dropdownContainer}
-        onShow={toggleDropdown}
-        onHide={toggleDropdown}
+        onShow={openDropdown}
+        onHide={closeDropdown}
       >
         <DropdownTrigger className={triggerClasses} style={{ display: 'flex' }} >
           <Text weight="bold" size="small">{selectedMetric.label}</Text>
@@ -88,7 +89,8 @@ MetricsDropdown.propTypes = {
   isDropdownOpen: PropTypes.bool,
   selectedMetricLabel: PropTypes.string.isRequired,
   selectMetric: PropTypes.func.isRequired,
-  toggleDropdown: PropTypes.func.isRequired,
+  openDropdown: PropTypes.func.isRequired,
+  closeDropdown: PropTypes.func.isRequired,
 };
 
 MetricsDropdown.defaultProps = {

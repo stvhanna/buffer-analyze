@@ -10,6 +10,7 @@ import ProfileSelector, {
 
 describe('ProfileSelector', () => {
   let profiles = [];
+  let state = {};
 
   beforeEach(() => {
     profiles = [
@@ -35,6 +36,14 @@ describe('ProfileSelector', () => {
         username: 'foo',
       },
     ];
+    state = {
+      profiles: {
+        profiles,
+        isDropdownOpen: false,
+        selectedProfileId: '1',
+        selectedProfileService: 'twitter',
+      },
+    };
   });
 
   it('should export reducer', () => {
@@ -54,14 +63,6 @@ describe('ProfileSelector', () => {
 
   it('should filter profiles by service', () => {
     const mockStore = configureMockStore();
-    const state = {
-      profiles: {
-        profiles,
-        isDropdownOpen: false,
-        selectedProfileId: '1',
-        selectedProfileService: 'twitter',
-      },
-    };
     const store = mockStore(state);
 
     const component = shallow(<ProfileSelector
@@ -70,5 +71,39 @@ describe('ProfileSelector', () => {
 
     expect(component.props().profiles)
       .toHaveLength(2);
+  });
+
+  it('should dispatch', () => {
+    const mockStore = configureMockStore();
+    const store = mockStore(state);
+
+    const component = shallow(<ProfileSelector
+      store={store}
+    />);
+
+    expect(component.props().selectProfile({
+      id: 'foo',
+      service: 'bar',
+    })).toEqual({
+      id: 'foo',
+      profileService: 'bar',
+      type: actionTypes.SELECT_PROFILE,
+    });
+
+    expect(component.props().openDropdown({
+    })).toEqual({
+      type: `profiles_${actionTypes.OPEN_DROPDOWN}`,
+    });
+
+    expect(component.props().closeDropdown({
+    })).toEqual({
+      type: `profiles_${actionTypes.CLOSE_DROPDOWN}`,
+    });
+
+    expect(component.props().onSearchChange({
+    })).toEqual({
+      type: actionTypes.FILTER_PROFILES,
+      filterString: '',
+    });
   });
 });

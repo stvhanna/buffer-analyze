@@ -57,7 +57,8 @@ const ProfileSelectorDropdown = ({
   profilesFilterString,
   selectProfile,
   selectedProfileId,
-  toggleDropdown,
+  openDropdown,
+  closeDropdown,
 }) => {
   const selectedProfile = profiles.find(p => p.id === selectedProfileId);
 
@@ -101,8 +102,8 @@ const ProfileSelectorDropdown = ({
     return (
       <Dropdown
         className={dropdownContainer}
-        onShow={toggleDropdown}
-        onHide={toggleDropdown}
+        onShow={openDropdown}
+        onHide={closeDropdown}
       >
         <DropdownTrigger className={triggerClasses} style={{ display: 'flex' }} >
           <ProfileBadge
@@ -166,7 +167,8 @@ ProfileSelectorDropdown.propTypes = {
   profilesFilterString: PropTypes.string,
   selectProfile: PropTypes.func.isRequired,
   selectedProfileId: PropTypes.string.isRequired,
-  toggleDropdown: PropTypes.func.isRequired,
+  openDropdown: PropTypes.func.isRequired,
+  closeDropdown: PropTypes.func.isRequired,
 };
 
 ProfileSelectorDropdown.defaultProps = {

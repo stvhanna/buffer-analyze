@@ -48,7 +48,8 @@ const CompareChart = ({
   visualizePreviousPeriod,
   selectMetric,
   togglePreviousPeriod,
-  toggleDropdown,
+  openDropdown,
+  closeDropdown,
   isDropdownOpen,
 }) => {
   let content = null;
@@ -65,7 +66,8 @@ const CompareChart = ({
             selectedMetricLabel={selectedMetricLabel}
             isDropdownOpen={isDropdownOpen}
             selectMetric={selectMetric}
-            toggleDropdown={toggleDropdown}
+            openDropdown={openDropdown}
+            closeDropdown={closeDropdown}
           />
           <PeriodToggle handleClick={togglePreviousPeriod} active={visualizePreviousPeriod} />
         </div>
@@ -133,7 +135,8 @@ CompareChart.propTypes = {
   // actions
   selectMetric: PropTypes.func.isRequired,
   togglePreviousPeriod: PropTypes.func.isRequired,
-  toggleDropdown: PropTypes.func.isRequired,
+  openDropdown: PropTypes.func.isRequired,
+  closeDropdown: PropTypes.func.isRequired,
 };
 
 export default CompareChart;

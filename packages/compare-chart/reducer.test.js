@@ -19,30 +19,19 @@ describe('reducer', () => {
   });
 
   it('should open the dropdown', () => {
-    expect(reducer({
-      isDropdownOpen: false,
-    }, {
-      type: `compare_${actionTypes.TOGGLE_DROPDOWN}`,
-    }))
-      .toEqual({ isDropdownOpen: true });
+    expect(actions.openDropdown())
+      .toEqual({
+        type: `compare_${actionTypes.OPEN_DROPDOWN}`,
+      });
   });
 
   it('should close the dropdown', () => {
-    expect(reducer({
-      isDropdownOpen: true,
-    }, {
-      type: `compare_${actionTypes.TOGGLE_DROPDOWN}`,
-    }))
-      .toEqual({ isDropdownOpen: false });
+    expect(actions.closeDropdown())
+      .toEqual({
+        type: `compare_${actionTypes.CLOSE_DROPDOWN}`,
+      });
   });
-  it('should togglePreviousPeriod', () => {
-    expect(reducer({
-      visualizePreviousPeriod: false,
-    }, {
-      type: `compare_${actionTypes.TOGGLE_PREVIOUS_PERIOD}`,
-    }))
-      .toEqual({ visualizePreviousPeriod: true });
-  });
+
   it('should update selectedMetricLabel', () => {
     expect(reducer({
       selectedMetricLabel: 'foo',
@@ -58,18 +47,27 @@ describe('reducer', () => {
 });
 
 describe('actions', () => {
-  it('should toggle the dropdown', () => {
-    expect(actions.toggleDropdown())
+  it('should open the dropdown', () => {
+    expect(actions.openDropdown())
       .toEqual({
-        type: `compare_${actionTypes.TOGGLE_DROPDOWN}`,
+        type: `compare_${actionTypes.OPEN_DROPDOWN}`,
       });
   });
+
+  it('should close the dropdown', () => {
+    expect(actions.closeDropdown())
+      .toEqual({
+        type: `compare_${actionTypes.CLOSE_DROPDOWN}`,
+      });
+  });
+
   it('should toggle previousPeriod', () => {
     expect(actions.togglePreviousPeriod())
       .toEqual({
         type: `compare_${actionTypes.TOGGLE_PREVIOUS_PERIOD}`,
       });
   });
+
   it('should select metric', () => {
     expect(actions.selectMetric('foo'))
       .toEqual({

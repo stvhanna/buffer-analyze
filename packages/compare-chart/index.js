@@ -21,8 +21,9 @@ function mapStateToProps (state) {
 
 const mapDispatchToProps = dispatch => ({
   selectMetric: label => dispatch(actions.selectMetric(label)),
-  toggleDropdown: () => dispatch(actions.toggleDropdown()),
   togglePreviousPeriod: () => dispatch(actions.togglePreviousPeriod()),
+  openDropdown: () => dispatch(actions.openDropdown()),
+  closeDropdown: () => dispatch(actions.closeDropdown()),
 });
 
 export default connect(

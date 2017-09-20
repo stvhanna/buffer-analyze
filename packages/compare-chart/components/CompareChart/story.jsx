@@ -20,7 +20,8 @@ storiesOf('CompareChart')
         timezone="America/Los_Angeles"
         selectMetric={() => {}}
         togglePreviousPeriod={() => {}}
-        toggleDropdown={() => {}}
+        openDropdown={() => {}}
+        closeDropdown={() => {}}
       />
     </div>
   ))
@@ -37,7 +38,8 @@ storiesOf('CompareChart')
         timezone="America/Los_Angeles"
         selectMetric={() => {}}
         togglePreviousPeriod={() => {}}
-        toggleDropdown={() => {}}
+        openDropdown={() => {}}
+        closeDropdown={() => {}}
         visualizePreviousPeriod
       />
     </div>
@@ -54,7 +56,8 @@ storiesOf('CompareChart')
         timezone="America/Los_Angeles"
         selectMetric={() => {}}
         togglePreviousPeriod={() => {}}
-        toggleDropdown={() => {}}
+        openDropdown={() => {}}
+        closeDropdown={() => {}}
         loading
       />
     </div>
@@ -71,7 +74,8 @@ storiesOf('CompareChart')
         timezone="America/Los_Angeles"
         selectMetric={() => {}}
         togglePreviousPeriod={() => {}}
-        toggleDropdown={() => {}}
+        openDropdown={() => {}}
+        closeDropdown={() => {}}
       />
     </div>
   ));

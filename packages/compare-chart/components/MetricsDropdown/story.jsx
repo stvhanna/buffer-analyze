@@ -13,7 +13,8 @@ storiesOf('MetricsDropdown')
         metrics={mockMetrics}
         selectedMetricLabel={mockMetrics[0].label}
         selectMetric={() => {}}
-        toggleDropdown={() => {}}
+        openDropdown={() => {}}
+        closeDropdown={() => {}}
       />
     </div>
   ))
@@ -24,7 +25,8 @@ storiesOf('MetricsDropdown')
         selectedMetricLabel={mockMetrics[0].label}
         isDropdownOpen
         selectMetric={() => {}}
-        toggleDropdown={() => {}}
+        openDropdown={() => {}}
+        closeDropdown={() => {}}
       />
     </div>
   ));

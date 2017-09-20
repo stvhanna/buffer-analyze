@@ -91,7 +91,7 @@ describe('reducer', () => {
     expect(reducer({
       isDropdownOpen: false,
     }, {
-      type: actionTypes.TOGGLE_DROPDOWN,
+      type: `profiles_${actionTypes.OPEN_DROPDOWN}`,
     }))
       .toEqual({ isDropdownOpen: true });
   });
@@ -100,7 +100,7 @@ describe('reducer', () => {
     expect(reducer({
       isDropdownOpen: true,
     }, {
-      type: actionTypes.TOGGLE_DROPDOWN,
+      type: `profiles_${actionTypes.CLOSE_DROPDOWN}`,
     }))
       .toEqual({ isDropdownOpen: false });
   });
@@ -125,11 +125,17 @@ describe('actions', () => {
       });
   });
 
-
-  it('should toggle the dropdown', () => {
-    expect(actions.toggleDropdown())
+  it('should open the dropdown', () => {
+    expect(actions.openDropdown())
       .toEqual({
-        type: actionTypes.TOGGLE_DROPDOWN,
+        type: `profiles_${actionTypes.OPEN_DROPDOWN}`,
+      });
+  });
+
+  it('should close the dropdown', () => {
+    expect(actions.closeDropdown())
+      .toEqual({
+        type: `profiles_${actionTypes.CLOSE_DROPDOWN}`,
       });
   });
 

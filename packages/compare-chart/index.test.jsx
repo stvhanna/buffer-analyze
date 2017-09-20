@@ -11,9 +11,10 @@ import CompareChart from './components/CompareChart';
 import mockProfiles from './mocks/profiles';
 
 describe('CompareChartContainer', () => {
-  it('should render', () => {
-    const mockStore = configureMockStore();
-    const state = {
+  let state = {};
+
+  beforeEach(() => {
+    state = {
       compare: {
         loading: true,
         metrics: { totals: [], daily: [] },
@@ -25,6 +26,9 @@ describe('CompareChartContainer', () => {
         selectedProfileId: mockProfiles[0].id,
       },
     };
+  });
+  it('should render', () => {
+    const mockStore = configureMockStore();
     const store = mockStore(state);
 
     const component = shallow(<CompareChartContainer
@@ -52,5 +56,34 @@ describe('CompareChartContainer', () => {
   it('should export middleware', () => {
     expect(middleware)
       .toBeDefined();
+  });
+
+  it('should dispatch', () => {
+    const mockStore = configureMockStore();
+    const store = mockStore(state);
+
+    const component = shallow(<CompareChartContainer
+      store={store}
+    />);
+
+    expect(component.props().selectMetric('foo')).toEqual({
+      metricLabel: 'foo',
+      type: `compare_${actionTypes.SELECT_METRIC}`,
+    });
+
+    expect(component.props().openDropdown({
+    })).toEqual({
+      type: `compare_${actionTypes.OPEN_DROPDOWN}`,
+    });
+
+    expect(component.props().closeDropdown({
+    })).toEqual({
+      type: `compare_${actionTypes.CLOSE_DROPDOWN}`,
+    });
+
+    expect(component.props().togglePreviousPeriod({
+    })).toEqual({
+      type: `compare_${actionTypes.TOGGLE_PREVIOUS_PERIOD}`,
+    });
   });
 });
