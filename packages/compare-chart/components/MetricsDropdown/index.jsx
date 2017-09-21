@@ -65,7 +65,7 @@ const MetricsDropdown = ({
       >
         <DropdownTrigger className={triggerClasses} style={{ display: 'flex' }} >
           <Text weight="bold" size="small">{selectedMetric.label}</Text>
-          <span style={{ marginLeft: 'auto' }} >
+          <span style={{ pointerEvents: 'none', marginLeft: 'auto' }} >
             { isDropdownOpen && <ArrowUpIcon /> }
             { !isDropdownOpen && <ArrowDownIcon /> }
           </span>

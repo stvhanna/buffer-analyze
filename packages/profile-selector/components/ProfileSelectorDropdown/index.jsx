@@ -116,7 +116,7 @@ const ProfileSelectorDropdown = ({
             socialIconSize={11}
           />
           <Text weight="bold" size="small">{selectedProfile.username}</Text>
-          <span style={{ marginLeft: 'auto' }} >
+          <span style={{ pointerEvents: 'none', marginLeft: 'auto' }} >
             { isDropdownOpen && <ArrowUpIcon /> }
             { !isDropdownOpen && <ArrowDownIcon /> }
           </span>
