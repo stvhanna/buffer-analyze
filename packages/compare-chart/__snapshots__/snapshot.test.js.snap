@@ -111,7 +111,9 @@ exports[`Snapshots ChartTooltip should render the tooltip 1`] = `
               }
             }
           >
-            There were a total of 
+            There 
+            were
+             a total of 
           </span>
           <span
             style={
@@ -287,7 +289,9 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
               }
             }
           >
-            There were a total of 
+            There 
+            were
+             a total of 
           </span>
           <span
             style={
@@ -523,7 +527,9 @@ exports[`Snapshots ChartTooltip should render the tooltip with twitter specific 
               }
             }
           >
-            There were a total of 
+            There 
+            were
+             a total of 
           </span>
           <span
             style={
@@ -672,7 +678,9 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip 1`] = `
               }
             }
           >
-            There were a total of 
+            There 
+            were
+             a total of 
           </span>
           <span
             style={
@@ -799,7 +807,9 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip with previ
               }
             }
           >
-            There were a total of 
+            There 
+            were
+             a total of 
           </span>
           <span
             style={

@@ -22,7 +22,11 @@ function postsWording(profileService, count = 1) {
       wording = 'post';
       break;
   }
-  return `${wording}${count > 1 ? 's' : ''}`;
+  return `${wording}${count === 1 ? '' : 's'}`;
+}
+
+function wasOrWere(count) {
+  return count === 1 ? 'was' : 'were';
 }
 
 function rewardWording(profileService) {
@@ -45,7 +49,7 @@ const StandardTolltip = ({
   profileService,
 }) => (
   <span>
-    <Text color="white" size="small" >There were a total of </Text>
+    <Text color="white" size="small" >There {wasOrWere(postsCount)} a total of </Text>
     <Text color="white" size="small" weight="bold" >
       <TruncatedNumber>{postsCount}</TruncatedNumber>
     </Text>
@@ -107,7 +111,7 @@ const UpdatesTooltip = ({
   profileService,
 }) => (
   <span>
-    <Text color="white" size="small" >There were a total of </Text>
+    <Text color="white" size="small" >There {wasOrWere(postsCount)} a total of </Text>
     <Text color="white" size="small" weight="bold" >
       <TruncatedNumber>{postsCount}</TruncatedNumber>
     </Text>
