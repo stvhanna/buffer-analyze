@@ -118,11 +118,11 @@ describe('rpc/compare', () => {
     });
 
     expect(data.totals[0]).toEqual({
-      diff: 271,
-      label: 'Engaged Users',
-      color: '#FEC78B',
-      value: 56755,
-      previousValue: 15327,
+      diff: -40,
+      label: 'Posts',
+      color: '#3A92D3',
+      value: 3,
+      previousValue: 5,
       postsCount: 3,
       previousPostsCount: 5,
     });
@@ -143,8 +143,8 @@ describe('rpc/compare', () => {
     expect(data.totals.length).toBe(9);
     expect(data.totals[0]).toEqual({
       diff: 0,
-      label: 'Engaged Users',
-      color: '#FEC78B',
+      label: 'Posts',
+      color: '#3A92D3',
       value: 0,
       previousValue: 0,
       postsCount: 0,
@@ -166,10 +166,10 @@ describe('rpc/compare', () => {
 
     expect(data.totals.length).toBe(9);
     expect(data.totals[0]).toEqual({
-      diff: 5675500,
-      label: 'Engaged Users',
-      color: '#FEC78B',
-      value: 56755,
+      diff: 300,
+      label: 'Posts',
+      color: '#3A92D3',
+      value: 3,
       previousValue: 0,
       postsCount: 3,
       previousPostsCount: 0,

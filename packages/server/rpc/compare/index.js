@@ -48,12 +48,12 @@ const summarize = (
 ) => {
   const previousValue = previousPeriod[metricKey];
   const value = currentPeriod[metricKey];
-  const label = METRICS_CONFIG[profileService][metricKey].label;
+  const label = METRICS_CONFIG[profileService].config[metricKey].label;
   if (label) {
     return {
       diff: percentageDifference(value, previousValue),
       label,
-      color: METRICS_CONFIG[profileService][metricKey].color,
+      color: METRICS_CONFIG[profileService].config[metricKey].color,
       value,
       previousValue,
       postsCount: currentPeriodPostCount,
@@ -70,8 +70,7 @@ function formatTotals(
   previousPeriodPostCount,
   profileService,
 ) {
-  return Object
-    .keys(currentPeriodResult)
+  return METRICS_CONFIG[profileService].orderedKeys
     .map(metricKey =>
       summarize(
         metricKey,
@@ -100,11 +99,11 @@ function formatDaily(
     currentPeriodPostCount: currentPeriodDailyTotalsResult[day].posts_count,
     previousPeriodPostCount: previousPeriodDailyTotalsResult[previousPeriodDays[index]].posts_count,
   })).map((data) => {
-    const dailyMetrics = Object.keys(data.currentPeriodMetrics);
+    const metricKeys = METRICS_CONFIG[profileService].orderedKeys;
     return {
       day: data.day,
       previousPeriodDay: data.previousPeriodDay,
-      metrics: dailyMetrics.map(metricKey =>
+      metrics: metricKeys.map(metricKey =>
         summarize(
           metricKey,
           data.currentPeriodMetrics,

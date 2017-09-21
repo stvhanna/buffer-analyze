@@ -4,39 +4,9 @@ const twitterConfig = {
     color: '#ced7df',
   },
 
-  retweets: {
-    label: 'Retweets',
-    color: '#FD8F90',
-  },
-
-  url_clicks: {
-    label: 'Clicks',
-    color: '#98E8B2',
-  },
-
   impressions: {
     label: 'Impressions',
     color: '#FEC78B',
-  },
-
-  new_followers: {
-    label: 'New Followers',
-    color: '#D7B5FD',
-  },
-
-  followers: {
-    label: 'Total Followers',
-    color: '#FDA3F3',
-  },
-
-  favorites: {
-    label: 'Likes',
-    color: '#8FC6DB',
-  },
-
-  replies: {
-    label: 'Replies',
-    color: '#D2C3AB',
   },
 
   engagements: {
@@ -44,27 +14,55 @@ const twitterConfig = {
     color: '#3A92D3',
   },
 
+  retweets: {
+    label: 'Retweets',
+    color: '#FD8F90',
+  },
+
+  favorites: {
+    label: 'Likes',
+    color: '#8FC6DB',
+  },
+
+  url_clicks: {
+    label: 'Clicks',
+    color: '#98E8B2',
+  },
+
+  replies: {
+    label: 'Replies',
+    color: '#D2C3AB',
+  },
+
+  followers: {
+    label: 'Total Followers',
+    color: '#FDA3F3',
+  },
+  new_followers: {
+    label: 'New Followers',
+    color: '#D7B5FD',
+  },
 };
 
 const facebookConfig = {
-  comments: {
-    label: 'Comments',
-    color: '#EFDF00',
+  posts_count: {
+    label: 'Posts',
+    color: '#3A92D3',
   },
 
-  page_engagements: {
-    label: 'Page & Post Engagements',
-    color: '#D7B5FD',
-  },
-
-  post_clicks: {
-    label: 'Post Clicks',
-    color: '#98E8B2',
+  post_reach: {
+    label: 'Engagement',
+    color: '#FDA3F3',
   },
 
   post_impressions: {
     label: 'Post Impressions',
     color: '#8AC6DE',
+  },
+
+  post_clicks: {
+    label: 'Post Clicks',
+    color: '#98E8B2',
   },
 
   reactions: {
@@ -77,14 +75,9 @@ const facebookConfig = {
     color: '#D2C3AB',
   },
 
-  engaged_users: {
-    label: 'Engaged Users',
-    color: '#FEC78B',
-  },
-
-  posts_count: {
-    label: 'Posts',
-    color: '#3A92D3',
+  comments: {
+    label: 'Comments',
+    color: '#EFDF00',
   },
 
   followers: {
@@ -96,14 +89,35 @@ const facebookConfig = {
     label: 'New Fans',
     color: '#D7B5FD',
   },
-
-  post_reach: {
-    label: 'Engagement',
-    color: '#FDA3F3',
-  },
 };
 
 module.exports = {
-  twitter: twitterConfig,
-  facebook: facebookConfig,
+  twitter: {
+    config: twitterConfig,
+    orderedKeys: [
+      'posts_count',
+      'impressions',
+      'engagements',
+      'retweets',
+      'favorites',
+      'url_clicks',
+      'replies',
+      'new_followers',
+      'followers',
+    ],
+  },
+  facebook: {
+    config: facebookConfig,
+    orderedKeys: [
+      'posts_count',
+      'post_reach',
+      'post_impressions',
+      'post_clicks',
+      'reactions',
+      'shares',
+      'comments',
+      'followers',
+      'new_followers',
+    ],
+  },
 };
