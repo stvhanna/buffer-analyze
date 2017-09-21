@@ -31,14 +31,6 @@ function filterDailyDataMetrics(dailyData, metricLabel) {
   }));
 }
 
-const containerStyle = {
-  padding: '0',
-  margin: '0 auto',
-  borderRadius: '2px',
-  minHeight: '12rem',
-  position: 'relative',
-};
-
 const CompareChart = ({
   dailyData,
   selectedMetricLabel,
@@ -54,24 +46,15 @@ const CompareChart = ({
   profileService,
 }) => {
   let content = null;
+  let header = null;
+  let footer = null;
   if (loading) {
     content = <Loading active text="Compare chart loading..." />;
   } else if (dailyData.length === 0) {
     content = <NoData />;
   } else {
     content = (
-      <div>
-        <div style={{ padding: '20px', display: 'flex' }} >
-          <MetricsDropdown
-            metrics={totals}
-            selectedMetricLabel={selectedMetricLabel}
-            isDropdownOpen={isDropdownOpen}
-            selectMetric={selectMetric}
-            openDropdown={openDropdown}
-            closeDropdown={closeDropdown}
-          />
-          <PeriodToggle handleClick={togglePreviousPeriod} active={visualizePreviousPeriod} />
-        </div>
+      <div id="js-dom-to-png-compare">
         <Chart
           dailyData={filterDailyDataMetrics(dailyData, selectedMetricLabel)}
           timezone={timezone}
@@ -80,9 +63,39 @@ const CompareChart = ({
         />
       </div>
     );
+    header = (
+      <div style={{ padding: '20px', display: 'flex' }} >
+        <MetricsDropdown
+          metrics={totals}
+          selectedMetricLabel={selectedMetricLabel}
+          isDropdownOpen={isDropdownOpen}
+          selectMetric={selectMetric}
+          openDropdown={openDropdown}
+          closeDropdown={closeDropdown}
+        />
+        <PeriodToggle handleClick={togglePreviousPeriod} active={visualizePreviousPeriod} />
+      </div>
+    );
+    footer = (
+      <Footer
+        startDate={getStartDate(dailyData)}
+        endDate={getEndDate(dailyData)}
+        selectedMetricLabel={selectedMetricLabel}
+        totals={totals}
+      />
+    );
   }
 
-  if (!loading && dailyData.length !== 0) containerStyle.border = `solid 1px ${geyser}`;
+  const containerStyle = {
+    padding: '0',
+    margin: '0 auto',
+    borderRadius: '2px',
+    border: `solid 1px ${geyser}`,
+    minHeight: '12rem',
+    position: 'relative',
+  };
+
+  if (loading || dailyData.length === 0) delete containerStyle.border;
 
   return (
     <div style={{ margin: '0 0 1.5rem' }}>
@@ -91,15 +104,10 @@ const CompareChart = ({
         endDate={getEndDate(dailyData)}
       />
       <div style={containerStyle}>
+        {header}
         {content}
       </div>
-      {!loading && dailyData.length > 0 &&
-      <Footer
-        startDate={getStartDate(dailyData)}
-        endDate={getEndDate(dailyData)}
-        selectedMetricLabel={selectedMetricLabel}
-        totals={totals}
-      />}
+      {footer}
     </div>
   );
 };

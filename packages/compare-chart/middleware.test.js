@@ -1,6 +1,7 @@
 import { actions } from '@bufferapp/async-data-fetch';
 import { actionTypes } from '@bufferapp/analyze-profile-selector';
 import { actionTypes as dateActionTypes } from '@bufferapp/analyze-date-picker';
+import { actions as exportActions, actionTypes as exportActionTypes } from '@bufferapp/analyze-png-export';
 import middleware from './middleware';
 
 import mockProfiles from './mocks/profiles';
@@ -78,5 +79,13 @@ describe('middleware', () => {
       },
     }));
     expect(next).toHaveBeenCalledWith(action);
+  });
+
+  it('should listen to EXPORT_TO_PNG_START and trigger a exportChart action', () => {
+    const action = {
+      type: exportActionTypes.EXPORT_TO_PNG_START,
+    };
+    middleware(store)(next)(action);
+    expect(store.dispatch).toHaveBeenCalledWith(exportActions.exportChart('js-dom-to-png-compare', 'metrics-breakdown'));
   });
 });

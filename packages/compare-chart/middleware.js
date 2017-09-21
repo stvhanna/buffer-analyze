@@ -1,6 +1,16 @@
 import { actions } from '@bufferapp/async-data-fetch';
 import { actionTypes as profileActionTypes } from '@bufferapp/analyze-profile-selector';
 import { actionTypes as dateActionTypes } from '@bufferapp/analyze-date-picker';
+import { actionTypes as exportActionTypes, actions as exportActions } from '@bufferapp/analyze-png-export';
+
+function getPngTitle(service) {
+  switch (service) {
+    case 'twitter':
+      return 'engagements-audience';
+    default:
+      return 'metrics-breakdown';
+  }
+}
 
 export default store => next => (action) => { // eslint-disable-line no-unused-vars
   const { dispatch, getState } = store;
@@ -26,6 +36,12 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
           endDate: action.endDate,
         },
       }));
+      break;
+    case exportActionTypes.EXPORT_TO_PNG_START:
+      dispatch(exportActions.exportChart(
+        'js-dom-to-png-compare',
+        getPngTitle(getState().profiles.selectedProfileService),
+      ));
       break;
     default:
       break;
