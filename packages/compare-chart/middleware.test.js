@@ -8,29 +8,35 @@ import mockProfiles from './mocks/profiles';
 
 const profileId = '12359182129asd';
 
-const state = {
-  router: {
-    location: {
-      pathname: `/insights/twitter/${profileId}`,
-    },
-  },
-  date: {
-    startDate: '10/10/2016',
-    endDate: '30/10/2016',
-  },
-  profiles: {
-    profiles: mockProfiles,
-    selectedProfileService: 'facebook',
-    selectedProfileId: 'foo42',
-  },
-};
+let state = {};
+let store = {};
+const next = jest.fn();
 
 describe('middleware', () => {
-  const next = jest.fn();
-  const store = {
-    dispatch: jest.fn(),
-    getState: jest.fn(() => state),
-  };
+  beforeEach(() => {
+    state = {
+      router: {
+        location: {
+          pathname: `/insights/twitter/${profileId}`,
+        },
+      },
+      date: {
+        startDate: '10/10/2016',
+        endDate: '30/10/2016',
+      },
+      profiles: {
+        profiles: mockProfiles,
+        selectedProfileService: 'facebook',
+        selectedProfileId: 'foo42',
+      },
+    };
+
+    store = {
+      dispatch: jest.fn(),
+      getState: jest.fn(() => state),
+    };
+  });
+
   it('should exist', () => {
     expect(middleware).toBeDefined();
   });
@@ -87,5 +93,14 @@ describe('middleware', () => {
     };
     middleware(store)(next)(action);
     expect(store.dispatch).toHaveBeenCalledWith(exportActions.exportChart('js-dom-to-png-compare', 'metrics-breakdown'));
+  });
+
+  it('should listen to EXPORT_TO_PNG_START and trigger a exportChart action for twitter', () => {
+    const action = {
+      type: exportActionTypes.EXPORT_TO_PNG_START,
+    };
+    state.profiles.selectedProfileService = 'twitter';
+    middleware(store)(next)(action);
+    expect(store.dispatch).toHaveBeenCalledWith(exportActions.exportChart('js-dom-to-png-compare', 'engagements-audience'));
   });
 });
