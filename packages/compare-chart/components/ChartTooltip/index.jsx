@@ -9,7 +9,7 @@ function transformLabelForTooltip(label) {
 }
 
 function isUpdatesMetric(label) {
-  return Boolean(label.match(/post|tweet/i));
+  return Boolean(label.match(/^(posts|tweets)$/i));
 }
 
 function postsWording(profileService, count = 1) {
@@ -141,10 +141,38 @@ UpdatesTooltip.defaultProps = {
   visualizePreviousPeriod: false,
 };
 
+const Header = ({
+  day,
+  timezone,
+  previousPeriodDay,
+  visualizePreviousPeriod,
+}) => (
+  <span>
+    <Text color="mystic" size="extra-small" >{moment.tz(day, timezone).startOf('day').format('D MMMM')}</Text>
+    {visualizePreviousPeriod && <span>
+      <br />
+      <Text color="mystic" size="extra-small" >comparing to </Text>
+      <Text color="mystic" size="extra-small" >{moment.tz(previousPeriodDay, timezone).startOf('day').format('D MMMM')}</Text>
+    </span>}
+    <br />
+    <br />
+  </span>
+);
+
+Header.propTypes = {
+  visualizePreviousPeriod: PropTypes.bool,
+  day: PropTypes.number.isRequired,
+  previousPeriodDay: PropTypes.number.isRequired,
+  timezone: PropTypes.string,
+};
+
+Header.defaultProps = {
+  visualizePreviousPeriod: false,
+  timezone: 'Etc/UTC',
+};
 const ChartTooltip = ({
   day,
   label,
-  timezone,
   profileService,
   ...extraProps
 }) => (
@@ -160,9 +188,7 @@ const ChartTooltip = ({
       whiteSpace: 'normal',
     }}
   >
-    <Text color="offWhite" size="extra-small" >{moment.tz(day, timezone).startOf('day').format('D MMMM')}</Text>
-    <br />
-    <br />
+    <Header day={day} {...extraProps} />
     {label && <span>
       {!isUpdatesMetric(label) &&
         <StandardTolltip profileService={profileService} label={label} {...extraProps} />}
@@ -178,13 +204,11 @@ const ChartTooltip = ({
 ChartTooltip.propTypes = {
   day: PropTypes.number.isRequired,
   label: PropTypes.string,
-  timezone: PropTypes.string,
   profileService: PropTypes.string.isRequired,
 };
 
 ChartTooltip.defaultProps = {
   label: null,
-  timezone: 'Etc/UTC',
 };
 
 export default ChartTooltip;

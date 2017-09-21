@@ -51,6 +51,7 @@ function prepareSeries(
       x: moment(Number(day.day)).endOf('day').utc().valueOf(),
       y: value,
       metricData: Object.assign({}, day.metric, {
+        previousPeriodDay: moment(Number(day.previousPeriodDay)).endOf('day').utc().valueOf(),
         profileService,
         timezone,
         visualizePreviousPeriod,
@@ -108,6 +109,7 @@ const Chart = ({ dailyData, timezone, visualizePreviousPeriod, profileService })
 Chart.propTypes = {
   dailyData: PropTypes.arrayOf(PropTypes.shape({
     day: PropTypes.string.isRequired,
+    previousPeriodDay: PropTypes.string.isRequired,
     metric: PropTypes.shape({
       color: PropTypes.string.isRequired,
       diff: PropTypes.number.isRequired,

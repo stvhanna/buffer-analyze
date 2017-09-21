@@ -94,6 +94,7 @@ function formatDaily(
   const previousPeriodDays = Object.keys(previousPeriodDailyTotalsResult);
   const daily = Array.from(currentPeriodDays, (day, index) => ({
     day,
+    previousPeriodDay: previousPeriodDays[index],
     currentPeriodMetrics: currentPeriodDailyTotalsResult[day],
     previousPeriodMetrics: previousPeriodDailyTotalsResult[previousPeriodDays[index]],
     currentPeriodPostCount: currentPeriodDailyTotalsResult[day].posts_count,
@@ -102,6 +103,7 @@ function formatDaily(
     const dailyMetrics = Object.keys(data.currentPeriodMetrics);
     return {
       day: data.day,
+      previousPeriodDay: data.previousPeriodDay,
       metrics: dailyMetrics.map(metricKey =>
         summarize(
           metricKey,

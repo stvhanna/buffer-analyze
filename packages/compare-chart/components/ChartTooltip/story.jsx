@@ -14,6 +14,7 @@ storiesOf('ChartTooltip')
       <ChartTooltip
         color="#fda3f3"
         day={1505174400000}
+        previousPeriodDay={1503446400000}
         label="Engagements"
         postsCount={5}
         value={42}
@@ -30,6 +31,7 @@ storiesOf('ChartTooltip')
       <ChartTooltip
         color="#fda3f3"
         day={1505174400000}
+        previousPeriodDay={1503446400000}
         label="Engagements"
         postsCount={5}
         value={42}
@@ -46,6 +48,7 @@ storiesOf('ChartTooltip')
       <ChartTooltip
         color="#fda3f3"
         day={1505174400000}
+        previousPeriodDay={1503446400000}
         label="Engagements"
         postsCount={5}
         previousPostsCount={10}
@@ -65,6 +68,7 @@ storiesOf('ChartTooltip')
       <ChartTooltip
         color="#fda3f3"
         day={1505174400000}
+        previousPeriodDay={1503446400000}
         label="Posts"
         postsCount={5}
         value={42}
@@ -81,6 +85,7 @@ storiesOf('ChartTooltip')
       <ChartTooltip
         color="#fda3f3"
         day={1505174400000}
+        previousPeriodDay={1503446400000}
         label="Posts"
         postsCount={5}
         previousPostsCount={10}
@@ -98,6 +103,7 @@ storiesOf('ChartTooltip')
     >
       <ChartTooltip
         day={1505174400000}
+        previousPeriodDay={1503446400000}
         profileService="facebook"
       />
     </div>

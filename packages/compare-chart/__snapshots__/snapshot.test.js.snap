@@ -23,20 +23,22 @@ exports[`Snapshots ChartTooltip should render a no update published message 1`] 
         }
       }
     >
-      <span
-        style={
-          Object {
-            "color": "#fcfcfc",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
-            "fontSize": "0.7rem",
-            "fontWeight": 400,
+      <span>
+        <span
+          style={
+            Object {
+              "color": "#e6ebef",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "0.7rem",
+              "fontWeight": 400,
+            }
           }
-        }
-      >
-        12 September
+        >
+          12 September
+        </span>
+        <br />
+        <br />
       </span>
-      <br />
-      <br />
       <span>
         <span
           style={
@@ -81,20 +83,22 @@ exports[`Snapshots ChartTooltip should render the tooltip 1`] = `
         }
       }
     >
-      <span
-        style={
-          Object {
-            "color": "#fcfcfc",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
-            "fontSize": "0.7rem",
-            "fontWeight": 400,
+      <span>
+        <span
+          style={
+            Object {
+              "color": "#e6ebef",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "0.7rem",
+              "fontWeight": 400,
+            }
           }
-        }
-      >
-        12 September
+        >
+          12 September
+        </span>
+        <br />
+        <br />
       </span>
-      <br />
-      <br />
       <span>
         <span>
           <span
@@ -228,20 +232,49 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
         }
       }
     >
-      <span
-        style={
-          Object {
-            "color": "#fcfcfc",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
-            "fontSize": "0.7rem",
-            "fontWeight": 400,
+      <span>
+        <span
+          style={
+            Object {
+              "color": "#e6ebef",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "0.7rem",
+              "fontWeight": 400,
+            }
           }
-        }
-      >
-        12 September
+        >
+          12 September
+        </span>
+        <span>
+          <br />
+          <span
+            style={
+              Object {
+                "color": "#e6ebef",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.7rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            comparing to 
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#e6ebef",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.7rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            23 August
+          </span>
+        </span>
+        <br />
+        <br />
       </span>
-      <br />
-      <br />
       <span>
         <span>
           <span
@@ -462,20 +495,22 @@ exports[`Snapshots ChartTooltip should render the tooltip with twitter specific 
         }
       }
     >
-      <span
-        style={
-          Object {
-            "color": "#fcfcfc",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
-            "fontSize": "0.7rem",
-            "fontWeight": 400,
+      <span>
+        <span
+          style={
+            Object {
+              "color": "#e6ebef",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "0.7rem",
+              "fontWeight": 400,
+            }
           }
-        }
-      >
-        12 September
+        >
+          12 September
+        </span>
+        <br />
+        <br />
       </span>
-      <br />
-      <br />
       <span>
         <span>
           <span
@@ -609,20 +644,22 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip 1`] = `
         }
       }
     >
-      <span
-        style={
-          Object {
-            "color": "#fcfcfc",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
-            "fontSize": "0.7rem",
-            "fontWeight": 400,
+      <span>
+        <span
+          style={
+            Object {
+              "color": "#e6ebef",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "0.7rem",
+              "fontWeight": 400,
+            }
           }
-        }
-      >
-        12 September
+        >
+          12 September
+        </span>
+        <br />
+        <br />
       </span>
-      <br />
-      <br />
       <span>
         <span>
           <span
@@ -707,20 +744,49 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip with previ
         }
       }
     >
-      <span
-        style={
-          Object {
-            "color": "#fcfcfc",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
-            "fontSize": "0.7rem",
-            "fontWeight": 400,
+      <span>
+        <span
+          style={
+            Object {
+              "color": "#e6ebef",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "0.7rem",
+              "fontWeight": 400,
+            }
           }
-        }
-      >
-        12 September
+        >
+          12 September
+        </span>
+        <span>
+          <br />
+          <span
+            style={
+              Object {
+                "color": "#e6ebef",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.7rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            comparing to 
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#e6ebef",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.7rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            23 August
+          </span>
+        </span>
+        <br />
+        <br />
       </span>
-      <br />
-      <br />
       <span>
         <span>
           <span

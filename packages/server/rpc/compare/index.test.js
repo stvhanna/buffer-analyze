@@ -189,6 +189,10 @@ describe('rpc/compare', () => {
     });
 
     expect(data.daily.length).toBe(7);
+    expect(data.daily[0]).toMatchObject({
+      day: '1504051200000',
+      previousPeriodDay: '1503446400000',
+    });
   });
 });
 

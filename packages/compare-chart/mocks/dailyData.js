@@ -1,6 +1,7 @@
 export default [
   {
     day: '1504137600000',
+    previousPeriodDay: '1503446400000',
     metrics: [
       {
         diff: 179,
@@ -33,6 +34,7 @@ export default [
   },
   {
     day: '1504224000000',
+    previousPeriodDay: '1503446400000',
     metrics: [
       {
         diff: -36,
@@ -65,6 +67,7 @@ export default [
   },
   {
     day: '1504310400000',
+    previousPeriodDay: '1503446400000',
     metrics: [
       {
         diff: -86,
@@ -97,6 +100,7 @@ export default [
   },
   {
     day: '1504396800000',
+    previousPeriodDay: '1503446400000',
     metrics: [
       {
         diff: -59,
@@ -129,6 +133,7 @@ export default [
   },
   {
     day: '1504483200000',
+    previousPeriodDay: '1503446400000',
     metrics: [
       {
         diff: -48,
@@ -161,6 +166,7 @@ export default [
   },
   {
     day: '1504569600000',
+    previousPeriodDay: '1503446400000',
     metrics: [
       {
         diff: -89,
@@ -193,6 +199,7 @@ export default [
   },
   {
     day: '1504656000000',
+    previousPeriodDay: '1503446400000',
     metrics: [
       {
         diff: -41,

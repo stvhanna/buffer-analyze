@@ -27,6 +27,7 @@ function getEndDate(dailyData) {
 function filterDailyDataMetrics(dailyData, metricLabel) {
   return dailyData.map(day => ({
     day: day.day,
+    previousPeriodDay: day.previousPeriodDay,
     metric: day.metrics.filter(metric => metric.label === metricLabel).shift(),
   }));
 }
