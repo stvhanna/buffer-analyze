@@ -1,3 +1,4 @@
+import { actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-fetch';
 import reducer, { actions, actionTypes } from './reducer';
 
 describe('reducer', () => {
@@ -43,6 +44,75 @@ describe('reducer', () => {
         selectedMetricLabel: 'bar',
         isDropdownOpen: false,
       });
+  });
+
+  it('should update metric on fetch success', () => {
+    const result = {
+      totals: [
+        { label: 'foo' },
+        { label: 'bar' },
+      ],
+      daily: [
+        { day: '12345' },
+        { day: '12345' },
+      ],
+    };
+
+    expect(reducer({
+      selectedMetricLabel: '',
+    }, {
+      type: `compare_${asyncDataFetchActionTypes.FETCH_SUCCESS}`,
+      result,
+    }))
+      .toEqual(Object.assign({}, {
+        metrics: result,
+        loading: false,
+        selectedMetricLabel: 'foo',
+      }));
+  });
+
+  it('should reset selectedMetricLabel on fetch success if got empty data', () => {
+    const result = {
+      totals: [],
+      daily: [],
+    };
+
+    expect(reducer({
+      selectedMetricLabel: 'foo',
+    }, {
+      type: `compare_${asyncDataFetchActionTypes.FETCH_SUCCESS}`,
+      result,
+    }))
+      .toEqual(Object.assign({}, {
+        metrics: result,
+        loading: false,
+        selectedMetricLabel: '',
+      }));
+  });
+
+  it('should select first valid metric on fetch success if previous metric does not exist anymore', () => {
+    const result = {
+      totals: [
+        { label: 'foo' },
+        { label: 'bar' },
+      ],
+      daily: [
+        { day: '12345' },
+        { day: '12345' },
+      ],
+    };
+
+    expect(reducer({
+      selectedMetricLabel: 'fooBar',
+    }, {
+      type: `compare_${asyncDataFetchActionTypes.FETCH_SUCCESS}`,
+      result,
+    }))
+      .toEqual(Object.assign({}, {
+        metrics: result,
+        loading: false,
+        selectedMetricLabel: 'foo',
+      }));
   });
 });
 

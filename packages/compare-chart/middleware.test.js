@@ -19,6 +19,8 @@ const state = {
   },
   profiles: {
     profiles: mockProfiles,
+    selectedProfileService: 'facebook',
+    selectedProfileId: 'foo42',
   },
 };
 
@@ -64,14 +66,13 @@ describe('middleware', () => {
       startDate: state.date.startDate,
       endDate: state.date.endDate,
       id: mockProfiles[0].id,
-      profileService: 'twitter',
     };
     middleware(store)(next)(action);
     expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
       name: 'compare',
       args: {
-        profileId: mockProfiles[0].id,
-        profileService: 'twitter',
+        profileService: 'facebook',
+        profileId: 'foo42',
         startDate: state.date.startDate,
         endDate: state.date.endDate,
       },

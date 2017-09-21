@@ -39,7 +39,10 @@ import DropdownItem from './components/DropdownItem';
 
 function renderDropdownItem(profile, selectedProfileId, selectProfile) {
   const onClick = () => {
-    selectProfile({ id: profile.id });
+    selectProfile({
+      id: profile.id,
+      service: profile.service,
+    });
   };
 
   return (<DropdownItem

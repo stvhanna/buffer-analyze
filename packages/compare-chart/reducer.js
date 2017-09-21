@@ -15,6 +15,22 @@ const initialState = {
   visualizePreviousPeriod: false,
 };
 
+function isMetricValid(totals, metricLabel) {
+  const metrics = totals.map(m => m.label);
+  return metrics.indexOf(metricLabel) !== -1;
+}
+
+function getSelectedMetricLabelOnFetch(state, result) {
+  const totals = result.totals;
+  if (totals.length > 0) {
+    if (state.selectedMetricLabel !== '' && isMetricValid(totals, state.selectedMetricLabel)) {
+      return state.selectedMetricLabel;
+    }
+    return totals[0].label;
+  }
+  return '';
+}
+
 export default (state = initialState, action) => {
   switch (action.type) {
     case `compare_${asyncDataFetchActionTypes.FETCH_START}`:
@@ -24,9 +40,7 @@ export default (state = initialState, action) => {
         ...state,
         loading: false,
         metrics: action.result,
-        selectedMetricLabel: state.selectedMetricLabel !== '' ?
-          state.selectedMetricLabel :
-          action.result.totals[0].label,
+        selectedMetricLabel: getSelectedMetricLabelOnFetch(state, action.result),
       };
     case `compare_${actionTypes.SELECT_METRIC}`:
       return Object.assign({}, state, {

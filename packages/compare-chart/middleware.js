@@ -20,8 +20,8 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
       dispatch(actions.fetch({
         name: 'compare',
         args: {
-          profileId: action.id,
-          profileService: action.profileService,
+          profileId: getState().profiles.selectedProfileId,
+          profileService: getState().profiles.selectedProfileService,
           startDate: action.startDate,
           endDate: action.endDate,
         },
