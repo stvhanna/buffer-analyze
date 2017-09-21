@@ -19,6 +19,14 @@ const state = {
   profiles: {
     selectedProfileId: '12359182129asd',
   },
+  topPosts: {
+    selectedMetric: {
+      key: 'reactions',
+      label: 'Reactions',
+    },
+    descending: false,
+    limit: 10,
+  },
 };
 
 describe('middleware', () => {

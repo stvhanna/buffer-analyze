@@ -14,6 +14,7 @@ export default connect(
     startDate: state.date.startDate,
     endDate: state.date.endDate,
     isDropdownOpen: state.topPosts.isDropdownOpen,
+
     isDescendingSelected: state.topPosts.isDescendingSelected,
     selectedMetric: state.topPosts.selectedMetric,
     activePostsCount: state.topPosts.activePostsCount,

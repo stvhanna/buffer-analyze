@@ -12,6 +12,9 @@ storiesOf('TopPostsHeader')
       <TopPostsHeader
         metrics={mockMetrics}
         selectedMetric={mockMetrics[3]}
+        isDescendingSelected
+        handlePostsCountClick={() => {}}
+        activePostsCount={10}
         isDropdownOpen={false}
         selectMetric={() => {}}
         toggleDropdown={() => {}}

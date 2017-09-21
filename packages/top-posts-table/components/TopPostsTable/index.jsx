@@ -33,7 +33,7 @@ const gridContainer = {
 
 const defaultSortMetrics = {
   facebook: {
-    key: 'postImpressions',
+    key: 'post_impressions',
     label: 'Post Impressions',
   },
   twitter: {
@@ -45,21 +45,6 @@ const defaultSortMetrics = {
     label: 'Likes',
   },
 };
-
-function mergePostMetrics(post, postMetrics) {
-  const postStatistics = post.statistics;
-
-  post.statistics = {};
-
-  postMetrics.forEach((postMetricConfig) => {
-    const postMetric = cloneDeep(postMetricConfig);
-
-    postMetric.value = postStatistics[postMetric.apiKey];
-    post.statistics[postMetricConfig.key] = postStatistics[postMetric.apiKey];
-  });
-
-  return post;
-}
 
 function getMaxMetricValue(posts, metrics) {
   let max = 0;
@@ -91,24 +76,22 @@ const TopPostsTable = (props) => {
     activePostsCount,
   } = props;
 
+  // TODO: Move this to RPC endpoint and pass it as a prop to TopPostTable components
   const allPostMetrics = metricsConfig[profileService].postMetrics;
   const engagementMetrics = metricsConfig[profileService].topPostsEngagementMetrics;
   const audienceMetrics = metricsConfig[profileService].topPostsAudienceMetrics;
 
+
   const initialSelectedMetric = Object.keys(selectedMetric).length === 0 ?
     defaultSortMetrics[profileService] : selectedMetric;
 
-  const posts = topPosts.map(post => mergePostMetrics(post, allPostMetrics));
-
-  const maxEngagementValue = getMaxMetricValue(posts, engagementMetrics);
-  const maxAudienceValue = getMaxMetricValue(posts, audienceMetrics);
-
-  const slicedPosts = posts.slice(0, 10);
+  const maxEngagementValue = getMaxMetricValue(topPosts, engagementMetrics);
+  const maxAudienceValue = getMaxMetricValue(topPosts, audienceMetrics);
 
   let content = null;
   if (loading) {
     content = <Loading active text="Top Posts Loading..." />;
-  } else if (slicedPosts.length === 0) {
+  } else if (topPosts.length === 0) {
     content = <NoData />;
   } else {
     content = (
@@ -138,7 +121,7 @@ const TopPostsTable = (props) => {
             </ul>
           </header>
           <ul className={postsContainer}>
-            {slicedPosts.map(post =>
+            {topPosts.map(post =>
               <PostItem
                 key={post.id}
                 profileTimezone={profileTimezone}

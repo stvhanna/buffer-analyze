@@ -15,6 +15,7 @@ storiesOf('TopPostsDropdown')
         selectedMetric={mockMetrics[0]}
         selectMetric={() => {}}
         toggleDropdown={() => {}}
+        isDescendingSelected
       />
     </div>
   ))

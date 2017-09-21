@@ -66,15 +66,19 @@ const PostItem = ({
       profileTimezone,
 }) => {
   const secondaryPostColumnMetrics = audienceMetrics.map((metric) => {
-    metric.maxValue = maxAudienceValue;
-    metric.value = post.statistics[metric.key];
-    return metric;
+    return {
+      ...metric,
+      maxValue: maxAudienceValue,
+      value: post.statistics[metric.key],
+    };
   });
 
   const primaryPostColumnMetrics = engagementMetrics.map((metric) => {
-    metric.maxValue = maxEngagementValue;
-    metric.value = post.statistics[metric.key];
-    return metric;
+    return {
+      ...metric,
+      maxValue: maxEngagementValue,
+      value: post.statistics[metric.key],
+    };
   });
 
   const dateFormat = 'D MMMM hh:mm a';
