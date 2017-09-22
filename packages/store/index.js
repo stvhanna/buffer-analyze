@@ -19,6 +19,7 @@ import { middleware as postsSummaryMiddleware } from '@bufferapp/posts-summary-t
 import { middleware as averageMiddleware } from '@bufferapp/average-table';
 import { middleware as exportToPNGMiddleware } from '@bufferapp/analyze-png-export';
 import { middleware as topPostsMiddleware } from '@bufferapp/top-posts-table';
+import { middleware as hourly } from '@bufferapp/hourly-chart';
 import reducers from './reducers';
 
 export const history = createHistory();
