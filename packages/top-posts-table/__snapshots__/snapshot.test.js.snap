@@ -190,7 +190,209 @@ exports[`Snapshots Dropdown Item should render selected item 1`] = `
 </span>
 `;
 
-exports[`Snapshots PostItem should render the top posts table 1`] = `
+exports[`Snapshots MetricGraph should render MetricGraph with maxValue greater than 0 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "width": "260px",
+      }
+    }
+  >
+    <div>
+      <div
+        className="metricBarGraphContainer"
+      >
+        <span
+          className="metricBarLabel"
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 600,
+              }
+            }
+          >
+            <span>
+              30
+            </span>
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+             
+            reactions
+          </span>
+        </span>
+        <span
+          className="metricBarGraph"
+          data-tip="Reactions"
+          style={
+            Object {
+              "backgroundColor": "#FD8F90",
+              "width": "30%",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots MetricGraph should render MetricGraph with maxValue less than 0 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "width": "260px",
+      }
+    }
+  >
+    <div>
+      <div
+        className="metricBarGraphContainer"
+      >
+        <span
+          className="metricBarLabel"
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 600,
+              }
+            }
+          >
+            <span>
+              30
+            </span>
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+             
+            reactions
+          </span>
+        </span>
+        <span
+          className="metricBarGraph"
+          data-tip="Reactions"
+          style={
+            Object {
+              "backgroundColor": "#FD8F90",
+              "width": "0%",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots PostItem should not render the top posts item when no metrics 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "750px",
+      }
+    }
+  >
+    <li
+      className="columnContainer"
+    >
+      <div
+        className="contentColumn"
+      >
+        <div
+          className="postMeta"
+        >
+          <div
+            className="contentDate"
+          >
+            <a
+              className="tweetServiceLinkClass"
+              href="https://facebook.com/108311429241313/posts/1678040122268428"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                5 September 04:01 am
+              </span>
+            </a>
+          </div>
+          <div
+            className="contentLink"
+          >
+            <a
+              className="viewPostLinkClass"
+              href="https://facebook.com/108311429241313/posts/1678040122268428"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <i
+                className="bi-click"
+              />
+              VIEW POST
+            </a>
+          </div>
+        </div>
+        <div
+          className="postContent"
+        >
+          <img
+            alt=""
+            className="mediaThumbnail"
+            src="https://buffer-media-uploads.s3.amazonaws.com/59a4711d7cbc83d309960116/5ed19955e0c4785b990ec752ff6df55c367f9808_dc779030b683e4f41ffa863f5c88795128de1d58_thumbnail"
+          />
+          <div
+            className="contentContainer"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Procaffeinating (n): the tendency to not start anything until you've had a coffee",
+              }
+            }
+          />
+        </div>
+      </div>
+    </li>
+  </div>
+</span>
+`;
+
+exports[`Snapshots PostItem should render the top posts item 1`] = `
 <span>
   <div
     style={

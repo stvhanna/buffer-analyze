@@ -1,4 +1,5 @@
 import { actionTypes as asyncDataFetchActions } from '@bufferapp/async-data-fetch';
+import { actionTypes as profileActionTypes } from '@bufferapp/analyze-profile-selector';
 import reducer, { actions as topPostsActions, actionTypes as topPostsActionTypes } from './reducer';
 
 describe('reducer', () => {
@@ -33,6 +34,12 @@ describe('reducer', () => {
       result: topPosts,
     });
     expect(state.topPosts).toEqual(topPosts);
+  });
+  it('returns the initial state of top posts when a new profile is selected', () => {
+    const newState = reducer(undefined, {
+      type: `${profileActionTypes.SELECT_PROFILE}`,
+    });
+    expect(newState.topPosts).toEqual([]);
   });
   it('updates the state when the dropdown is toggled', () => {
     const initialState = {

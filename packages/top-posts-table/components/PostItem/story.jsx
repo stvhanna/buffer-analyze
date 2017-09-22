@@ -27,7 +27,7 @@ const post = {
 
 storiesOf('PostItem')
   .addDecorator(checkA11y)
-  .add('should render the top posts table', () => (
+  .add('should render the top posts item', () => (
     <div
       style={{
         width: '750px',
@@ -144,6 +144,23 @@ storiesOf('PostItem')
             value: 0,
           },
         ]}
+        profileTimezone={'America/Los_Angeles'}
+      />
+    </div>
+  ))
+  .add('should not render the top posts item when no metrics', () => (
+    <div
+      style={{
+        width: '750px',
+      }}
+    >
+      <PostItem
+        post={post}
+        index={122}
+        maxEngagementValue={500}
+        maxAudienceValue={200000}
+        engagementMetrics={[]}
+        audienceMetrics={[]}
         profileTimezone={'America/Los_Angeles'}
       />
     </div>

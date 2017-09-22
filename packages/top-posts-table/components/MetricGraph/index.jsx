@@ -23,7 +23,6 @@ const MetricGraph = ({ metric }) => {
     backgroundColor: color,
     width: `${percentage}%`,
   };
-
   return (
     <div key={key}>
       <div className={metricBarGraphContainer}>
