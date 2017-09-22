@@ -46,7 +46,7 @@ export const EMPTY_TOTALS_RESPONSE = {
 export const CURRENT_PERIOD_DAILY_RESPONSE = {
   response: {
     1504051200000: {
-      posts_count: 1,
+      posts_count: 4,
       shares: 79,
       comments: 25,
       followers: 99866,
@@ -58,7 +58,7 @@ export const CURRENT_PERIOD_DAILY_RESPONSE = {
       reactions: 2863,
     },
     1504137600000: {
-      posts_count: 0,
+      posts_count: 2,
       shares: 0,
       comments: 0,
       followers: 100000,
@@ -148,7 +148,7 @@ export const PAST_PERIOD_DAILY_RESPONSE = {
       reactions: 181,
     },
     1503532800000: {
-      posts_count: 0,
+      posts_count: 3,
       shares: 0,
       comments: 0,
       followers: 99444,

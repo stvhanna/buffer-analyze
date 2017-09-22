@@ -189,9 +189,38 @@ describe('rpc/compare', () => {
     });
 
     expect(data.daily.length).toBe(7);
+
+    expect(data.totalPeriodDaily.length).toBe(0);
+
     expect(data.daily[0]).toMatchObject({
       day: '1504051200000',
       previousPeriodDay: '1503446400000',
+    });
+  });
+
+  it('should return Period Total data for Twitter', async() => {
+    rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_TOTALS_RESPONSE));
+    rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_TOTALS_RESPONSE));
+    rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
+    rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_DAILY_RESPONSE));
+
+    const data = await compare.fn({ profileId, profileService: 'twitter' }, {
+      session: {
+        accessToken: token,
+      },
+    });
+
+    const firstDayMetric = data.daily[0].metrics[0];
+    const secondDayMetric = data.daily[1].metrics[0];
+    expect(data.totalPeriodDaily.length).toBe(7);
+
+    expect(data.totalPeriodDaily[1].metrics[0])
+      .not.toMatchObject(data.daily[1].metrics[0]);
+
+    expect(data.totalPeriodDaily[1].metrics[0]).toMatchObject({
+      label: 'Tweets',
+      value: firstDayMetric.value + secondDayMetric.value,
+      previousValue: firstDayMetric.previousValue + secondDayMetric.previousValue,
     });
   });
 });

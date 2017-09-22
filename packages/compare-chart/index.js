@@ -8,8 +8,11 @@ function getSelectedProfileTimezone({ profiles, selectedProfileId }) {
 }
 
 function mapStateToProps (state) {
+  const visualizeTotalPeriodDaily = state.compare.dailyMode === 1;
   return {
-    dailyData: state.compare.metrics.daily,
+    dailyData: visualizeTotalPeriodDaily ?
+      state.compare.metrics.totalPeriodDaily :
+      state.compare.metrics.daily,
     dailyMode: state.compare.dailyMode,
     isDropdownOpen: state.compare.isDropdownOpen,
     loading: state.compare.loading,

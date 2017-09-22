@@ -46,8 +46,8 @@ const summarize = (
   previousPeriodPostCount,
   profileService,
 ) => {
-  const previousValue = previousPeriod[metricKey];
-  const value = currentPeriod[metricKey];
+  const previousValue = previousPeriod[metricKey] || 0;
+  const value = currentPeriod[metricKey] || 0;
   const label = METRICS_CONFIG[profileService].config[metricKey].label;
   if (label) {
     return {
@@ -118,6 +118,32 @@ function formatDaily(
   return daily;
 }
 
+function formatTotalPeriodDaily(formattedDailyData) {
+  const totalPeriodDaily = [];
+  let dayClone = {};
+  let metricClone = {};
+  formattedDailyData.forEach((day, dayIndex) => {
+    dayClone = Object.assign({}, day, {
+      metrics: [],
+    });
+
+    day.metrics.forEach((metric, metricIndex) => {
+      metricClone = Object.assign({}, metric, {
+        value: dayIndex === 0 ? metric.value :
+          metric.value + totalPeriodDaily[dayIndex - 1].metrics[metricIndex].value,
+        previousValue: dayIndex === 0 ? metric.previousValue :
+          metric.previousValue + totalPeriodDaily[dayIndex - 1].metrics[metricIndex].previousValue,
+      });
+      delete metricClone.diff;
+      dayClone.metrics.push(metricClone);
+    });
+
+    totalPeriodDaily.push(dayClone);
+  });
+
+  return totalPeriodDaily;
+}
+
 function formatData(
   currentPeriodResult,
   currentPeriodPostCount,
@@ -141,9 +167,12 @@ function formatData(
     profileService,
   );
 
+  const totalPeriodDaily = profileService === 'twitter' ? formatTotalPeriodDaily(daily) : [];
+
   return {
     totals,
     daily,
+    totalPeriodDaily,
   };
 }
 

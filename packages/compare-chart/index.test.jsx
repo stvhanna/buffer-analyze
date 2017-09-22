@@ -9,15 +9,33 @@ import CompareChartContainer, {
 } from './index';
 import CompareChart from './components/CompareChart';
 import mockProfiles from './mocks/profiles';
+import dailyData from './mocks/dailyData';
 
 describe('CompareChartContainer', () => {
   let state = {};
+  const totalPeriodDaily = [
+    {
+      day: '1504137600000',
+      previousPeriodDay: '1503446400000',
+      metrics: [
+        {
+          diff: 4,
+          label: 'Click',
+          value: 2679,
+          postsCount: 100,
+          previousPostsCount: 50,
+          previousValue: 1100,
+          color: '#fda3f3',
+        },
+      ],
+    },
+  ];
 
   beforeEach(() => {
     state = {
       compare: {
         loading: true,
-        metrics: { totals: [], daily: [] },
+        metrics: { totals: [], daily: [], totalPeriodDaily: [] },
         selectedMetricLabel: '',
         visualizePreviousPeriod: false,
         dailyMode: 0,
@@ -25,6 +43,7 @@ describe('CompareChartContainer', () => {
       profiles: {
         profiles: mockProfiles,
         selectedProfileId: mockProfiles[0].id,
+        selectedProfileService: 'twitter',
       },
     };
   });
@@ -91,5 +110,31 @@ describe('CompareChartContainer', () => {
     })).toEqual({
       type: `compare_${actionTypes.TOGGLE_PREVIOUS_PERIOD}`,
     });
+  });
+
+  it('should use daily if daily mode = 0', () => {
+    const mockStore = configureMockStore();
+    state.compare.dailyMode = 0;
+    state.compare.metrics.daily = dailyData;
+    state.compare.metrics.totalPeriodDaily = totalPeriodDaily;
+    const store = mockStore(state);
+    const component = shallow(<CompareChartContainer
+      store={store}
+    />);
+
+    expect(component.props().dailyData).toBe(dailyData);
+  });
+
+  it('should use totalPeriodDaily instead od daily if daily mode = 1', () => {
+    const mockStore = configureMockStore();
+    state.compare.dailyMode = 1;
+    state.compare.metrics.daily = dailyData;
+    state.compare.metrics.totalPeriodDaily = totalPeriodDaily;
+    const store = mockStore(state);
+    const component = shallow(<CompareChartContainer
+      store={store}
+    />);
+
+    expect(component.props().dailyData).toBe(totalPeriodDaily);
   });
 });
