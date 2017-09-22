@@ -62,9 +62,6 @@ describe('middleware', () => {
         profileId: '12359182129asd',
         startDate: state.date.startDate,
         endDate: state.date.endDate,
-        sortBy: state.topPosts.selectedMetric.apiKey,
-        descending: state.topPosts.isDescendingSelected,
-        limit: state.topPosts.activePostsCount,
       },
     }));
     expect(next).toHaveBeenCalledWith(action);
@@ -77,6 +74,7 @@ describe('middleware', () => {
       metric: {
         apiKey: 'reactions',
       },
+      descending: false,
     };
     middleware(store)(next)(action);
     expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({

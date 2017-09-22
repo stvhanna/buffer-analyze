@@ -1,4 +1,4 @@
-const instagram = {};
+export const instagram = {};
 
 instagram.commentsMetric = {
   label: 'Comments',
@@ -41,7 +41,7 @@ twitter.retweetsMetric = {
 
 twitter.clicksMetric = {
   label: 'Clicks',
-  key: 'clicks',
+  key: 'url_clicks',
   apiKey: 'url_clicks',
   color: '#98E8B2',
   value: 0,
@@ -57,7 +57,7 @@ twitter.impressionsMetric = {
 
 twitter.likesMetric = {
   label: 'Likes',
-  key: 'likes',
+  key: 'favorites',
   apiKey: 'favorites',
   color: '#8FC6DB',
   value: 0,
@@ -70,10 +70,10 @@ twitter.topPostsEngagementMetrics = [
 ];
 
 twitter.postMetrics = [
+  twitter.impressionsMetric,
   twitter.clicksMetric,
   twitter.retweetsMetric,
   twitter.likesMetric,
-  twitter.impressionsMetric,
 ];
 
 twitter.topPostsAudienceMetrics = [

@@ -43,6 +43,9 @@ describe('TopPostsTable', () => {
         <TopPosts
           profileService="facebook"
           selectedProfileId="4e88a092512f7e1556000000"
+          selectMetric={() => {}}
+          toggleDropdown={() => {}}
+          handlePostsCountClick={() => {}}
         />
       </Provider>,
     );

@@ -58,12 +58,12 @@ MetricColumn.propTypes = {
 };
 
 const PostItem = ({
-      post,
-      engagementMetrics,
-      audienceMetrics,
-      maxEngagementValue,
-      maxAudienceValue,
-      profileTimezone,
+  post,
+  engagementMetrics,
+  audienceMetrics,
+  maxEngagementValue,
+  maxAudienceValue,
+  profileTimezone,
 }) => {
   const secondaryPostColumnMetrics = audienceMetrics.map((metric) => {
     return {

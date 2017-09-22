@@ -1,4 +1,5 @@
 import { actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-fetch';
+import { actionTypes as profileActionTypes } from '@bufferapp/analyze-profile-selector';
 
 export const actionTypes = {
   SELECT_TOP_POSTS_METRIC: 'SELECT_TOP_POSTS_METRIC',
@@ -47,6 +48,10 @@ export default (state = initialState, action) => {
       return {
         ...state,
         isDropdownOpen: !state.isDropdownOpen,
+      };
+    case profileActionTypes.SELECT_PROFILE:
+      return {
+        ...initialState,
       };
     default:
       return state;

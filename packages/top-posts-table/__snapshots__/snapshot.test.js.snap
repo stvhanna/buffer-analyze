@@ -616,6 +616,18 @@ exports[`Snapshots PostsCountBar should render 1`] = `
 </span>
 `;
 
+exports[`Snapshots TopPostsDropdown should not render when no metrics 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  />
+</span>
+`;
+
 exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
 <span>
   <div

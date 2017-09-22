@@ -43,9 +43,6 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
           profileId: action.id,
           startDate: getState().date.startDate,
           endDate: getState().date.endDate,
-          sortBy: getState().topPosts.selectedMetric.apiKey,
-          descending: getState().topPosts.isDescendingSelected,
-          limit: getState().topPosts.activePostsCount,
         },
       }));
       break;

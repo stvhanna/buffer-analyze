@@ -30,4 +30,15 @@ storiesOf('TopPostsDropdown')
         toggleDropdown={() => {}}
       />
     </div>
+  ))
+  .add('should not render when no metrics', () => (
+    <div style={{ display: 'flex' }}>
+      <TopPostsDropdown
+        metrics={[]}
+        selectedMetric={mockMetrics[0]}
+        selectMetric={() => {}}
+        toggleDropdown={() => {}}
+        isDescendingSelected
+      />
+    </div>
   ));
