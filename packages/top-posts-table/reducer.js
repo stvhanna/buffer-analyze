@@ -39,13 +39,15 @@ export default (state = initialState, action) => {
         isDescendingSelected: action.descending,
       };
     case actionTypes.SELECT_TOP_POSTS_COUNT:
-      return Object.assign({}, state, {
+      return {
+        ...state,
         activePostsCount: action.postsCount,
-      });
+      };
     case actionTypes.TOGGLE_TOP_POSTS_DROPDOWN:
-      return Object.assign({}, state, {
+      return {
+        ...state,
         isDropdownOpen: !state.isDropdownOpen,
-      });
+      };
     default:
       return state;
   }

@@ -17,7 +17,7 @@ const storeFake = state => ({
 });
 
 describe('TopPostsTable', () => {
-  it('should render', () => {
+  it('should render TopPostsTable component', () => {
     const profile = {
       id: '4e88a092512f7e1556000000',
       avatarUrl: 'testurl',
@@ -32,6 +32,9 @@ describe('TopPostsTable', () => {
       topPosts: {
         loading: false,
         topPosts: [],
+        selectedMetric: {},
+        isDescendingSelected: true,
+        activePostsCount: 10,
       },
       date: {},
     });

@@ -81,7 +81,6 @@ const TopPostsTable = (props) => {
   const engagementMetrics = metricsConfig[profileService].topPostsEngagementMetrics;
   const audienceMetrics = metricsConfig[profileService].topPostsAudienceMetrics;
 
-
   const initialSelectedMetric = Object.keys(selectedMetric).length === 0 ?
     defaultSortMetrics[profileService] : selectedMetric;
 
