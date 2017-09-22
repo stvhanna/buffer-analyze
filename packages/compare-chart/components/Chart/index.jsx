@@ -48,10 +48,10 @@ function prepareSeries(
       }
     }
     return {
-      x: moment(Number(day.day)).endOf('day').utc().valueOf(),
+      x: moment.utc(Number(day.day)).endOf('day').valueOf(),
       y: value,
       metricData: Object.assign({}, day.metric, {
-        previousPeriodDay: moment(Number(day.previousPeriodDay)).endOf('day').utc().valueOf(),
+        previousPeriodDay: moment.utc(Number(day.previousPeriodDay)).endOf('day').valueOf(),
         profileService,
         timezone,
         visualizePreviousPeriod,
