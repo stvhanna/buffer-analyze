@@ -4,6 +4,7 @@ import HourlyChart from './components/HourlyChart';
 // default export = container
 export default connect(
   state => ({
+    metrics: state.hourly.metrics,
     // add state here
   }),
 )(HourlyChart);

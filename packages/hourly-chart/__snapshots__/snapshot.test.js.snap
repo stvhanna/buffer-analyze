@@ -1,0 +1,1561 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshots Dropdown closed dropdown 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+        "width": "10rem",
+      }
+    }
+  >
+    <div
+      className="dropdown dropdownContainer"
+    >
+      <a
+        className="dropdown__trigger dropdownTrigger"
+        style={
+          Object {
+            "display": "flex",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+              "padding": "5px 0",
+              "width": "100%",
+            }
+          }
+        >
+          <i
+            style={
+              Object {
+                "background": "#3a92d3",
+                "borderRadius": null,
+                "display": "inline-block",
+                "height": "10px",
+                "marginRight": "5px",
+                "verticalAlign": "baseline",
+                "width": "10px",
+              }
+            }
+          />
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Engagements
+          </span>
+          <span
+            style={
+              Object {
+                "marginLeft": "auto",
+              }
+            }
+          >
+            <svg
+              height="100%"
+              style={
+                Object {
+                  "fill": "#59626a",
+                  "height": "0.75rem",
+                  "width": "0.75rem",
+                }
+              }
+              version="1.1"
+              viewBox="0 0 16 16"
+              width="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            >
+              <g
+                className="shuttleGray"
+              >
+                <path
+                  d="M4.90573685,4.61438297 C4.5159485,4.22537555 4.51510793,3.59709045 4.90996552,3.20500565 L4.90996552,3.20500565 C5.30208929,2.81563546 5.93536183,2.81786315 6.32490003,3.21046581 L11.2750374,8.19954548 C11.6643604,8.59193123 11.6645756,9.22591178 11.2750374,9.61606213 L6.32490003,14.5739785 C5.93557705,14.9639132 5.3048231,14.9648641 4.90996552,14.5699959 L4.90996552,14.5699959 C4.51784174,14.1778616 4.51273549,13.5497061 4.9163418,13.1493324 L8.84038203,9.25672113 C9.03897712,9.05971665 9.04484713,8.74520064 8.84038203,8.54114518 L4.90573685,4.61438297 Z"
+                  transform="translate(8.089966, 8.890003) scale(-1, 1) rotate(-270.000000) translate(-8.089966, -8.890003) "
+                />
+              </g>
+            </svg>
+          </span>
+        </div>
+      </a>
+      <div
+        className="dropdown__content dropdownContent"
+      >
+        <ol
+          style={
+            Object {
+              "margin": 0,
+              "padding": 0,
+            }
+          }
+        >
+          <li
+            style={
+              Object {
+                "listStyle": "none",
+                "padding": "10px",
+              }
+            }
+          >
+            <button
+              aria-label={null}
+              disabled={undefined}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "background": "none",
+                  "backgroundColor": "unset",
+                  "border": "none",
+                  "borderRadius": "unset",
+                  "color": "unset",
+                  "cursor": "pointer",
+                  "display": "unset",
+                  "fontFamily": "unset",
+                  "fontSize": "unset",
+                  "fontWeight": "unset",
+                  "lineHeight": "unset",
+                  "margin": "unset",
+                  "outline": "none",
+                  "padding": 0,
+                  "transition": "unset",
+                  "width": "100%",
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "textAlign": "left",
+                    "width": "100%",
+                  }
+                }
+              >
+                <i
+                  style={
+                    Object {
+                      "background": "#fec78b",
+                      "borderRadius": null,
+                      "display": "inline-block",
+                      "height": "10px",
+                      "marginRight": "5px",
+                      "verticalAlign": "baseline",
+                      "width": "10px",
+                    }
+                  }
+                />
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Impressions
+                </span>
+              </span>
+            </button>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots Dropdown open dropdown 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+        "width": "10rem",
+      }
+    }
+  >
+    <div
+      className="dropdown dropdownContainer"
+    >
+      <a
+        className="dropdown__trigger dropdownTrigger dropdownTriggerActive"
+        style={
+          Object {
+            "display": "flex",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+              "padding": "5px 0",
+              "width": "100%",
+            }
+          }
+        >
+          <i
+            style={
+              Object {
+                "background": "#3a92d3",
+                "borderRadius": null,
+                "display": "inline-block",
+                "height": "10px",
+                "marginRight": "5px",
+                "verticalAlign": "baseline",
+                "width": "10px",
+              }
+            }
+          />
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Engagements
+          </span>
+          <span
+            style={
+              Object {
+                "marginLeft": "auto",
+              }
+            }
+          >
+            <svg
+              height="100%"
+              style={
+                Object {
+                  "fill": "#59626a",
+                  "height": "0.75rem",
+                  "width": "0.75rem",
+                }
+              }
+              version="1.1"
+              viewBox="0 0 16 16"
+              width="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            >
+              <g
+                className="shuttleGray"
+              >
+                <path
+                  d="M4.90573685,3.83437656 C4.5159485,3.44536915 4.51510793,2.81708404 4.90996552,2.42499924 L4.90996552,2.42499924 C5.30208929,2.03562905 5.93536183,2.03785674 6.32490003,2.4304594 L11.2750374,7.41953907 C11.6643604,7.81192483 11.6645756,8.44590538 11.2750374,8.83605572 L6.32490003,13.7939721 C5.93557705,14.1839068 5.3048231,14.1848577 4.90996552,13.7899895 L4.90996552,13.7899895 C4.51784174,13.3978552 4.51273549,12.7696997 4.9163418,12.369326 L8.84038203,8.47671472 C9.03897712,8.27971024 9.04484713,7.96519423 8.84038203,7.76113877 L4.90573685,3.83437656 Z"
+                  transform="translate(8.089966, 8.109997) scale(-1, -1) rotate(-270.000000) translate(-8.089966, -8.109997) "
+                />
+              </g>
+            </svg>
+          </span>
+        </div>
+      </a>
+      <div
+        className="dropdown__content dropdownContent dropdownContentActive"
+      >
+        <ol
+          style={
+            Object {
+              "margin": 0,
+              "padding": 0,
+            }
+          }
+        >
+          <li
+            style={
+              Object {
+                "listStyle": "none",
+                "padding": "10px",
+              }
+            }
+          >
+            <button
+              aria-label={null}
+              disabled={undefined}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "background": "none",
+                  "backgroundColor": "unset",
+                  "border": "none",
+                  "borderRadius": "unset",
+                  "color": "unset",
+                  "cursor": "pointer",
+                  "display": "unset",
+                  "fontFamily": "unset",
+                  "fontSize": "unset",
+                  "fontWeight": "unset",
+                  "lineHeight": "unset",
+                  "margin": "unset",
+                  "outline": "none",
+                  "padding": 0,
+                  "transition": "unset",
+                  "width": "100%",
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "textAlign": "left",
+                    "width": "100%",
+                  }
+                }
+              >
+                <i
+                  style={
+                    Object {
+                      "background": "#fec78b",
+                      "borderRadius": null,
+                      "display": "inline-block",
+                      "height": "10px",
+                      "marginRight": "5px",
+                      "verticalAlign": "baseline",
+                      "width": "10px",
+                    }
+                  }
+                />
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Impressions
+                </span>
+              </span>
+            </button>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots HourlyChart loaded chart 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "800px",
+      }
+    }
+  >
+    <div>
+      <h2
+        style={
+          Object {
+            "margin": "2rem 0 1rem",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Engagements by hour of the day
+        </span>
+      </h2>
+      <div
+        id="js-dom-to-png-hourly-engagements"
+        style={
+          Object {
+            "border": "1px solid #ced7df",
+            "margin": "1rem 0 1.5rem",
+            "minHeight": "12rem",
+            "position": "relative",
+          }
+        }
+      >
+        <div>
+          <section
+            style={
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "padding": "1.25rem",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "display": "inline-block",
+                  "width": "10rem",
+                }
+              }
+            >
+              <div
+                className="dropdown dropdownContainer"
+              >
+                <a
+                  className="dropdown__trigger dropdownTrigger"
+                  style={
+                    Object {
+                      "display": "flex",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "display": "flex",
+                        "padding": "5px 0",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <i
+                      style={
+                        Object {
+                          "background": "#3a92d3",
+                          "borderRadius": null,
+                          "display": "inline-block",
+                          "height": "10px",
+                          "marginRight": "5px",
+                          "verticalAlign": "baseline",
+                          "width": "10px",
+                        }
+                      }
+                    />
+                    <span
+                      style={
+                        Object {
+                          "color": "#59626a",
+                          "fontFamily": "\\"Open Sans\\", sans-serif",
+                          "fontSize": "0.8rem",
+                          "fontWeight": 400,
+                        }
+                      }
+                    >
+                      Engagements
+                    </span>
+                    <span
+                      style={
+                        Object {
+                          "marginLeft": "auto",
+                        }
+                      }
+                    >
+                      <svg
+                        height="100%"
+                        style={
+                          Object {
+                            "fill": "#59626a",
+                            "height": "0.75rem",
+                            "width": "0.75rem",
+                          }
+                        }
+                        version="1.1"
+                        viewBox="0 0 16 16"
+                        width="100%"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                      >
+                        <g
+                          className="shuttleGray"
+                        >
+                          <path
+                            d="M4.90573685,4.61438297 C4.5159485,4.22537555 4.51510793,3.59709045 4.90996552,3.20500565 L4.90996552,3.20500565 C5.30208929,2.81563546 5.93536183,2.81786315 6.32490003,3.21046581 L11.2750374,8.19954548 C11.6643604,8.59193123 11.6645756,9.22591178 11.2750374,9.61606213 L6.32490003,14.5739785 C5.93557705,14.9639132 5.3048231,14.9648641 4.90996552,14.5699959 L4.90996552,14.5699959 C4.51784174,14.1778616 4.51273549,13.5497061 4.9163418,13.1493324 L8.84038203,9.25672113 C9.03897712,9.05971665 9.04484713,8.74520064 8.84038203,8.54114518 L4.90573685,4.61438297 Z"
+                            transform="translate(8.089966, 8.890003) scale(-1, 1) rotate(-270.000000) translate(-8.089966, -8.890003) "
+                          />
+                        </g>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+                <div
+                  className="dropdown__content dropdownContent"
+                >
+                  <ol
+                    style={
+                      Object {
+                        "margin": 0,
+                        "padding": 0,
+                      }
+                    }
+                  >
+                    <li
+                      style={
+                        Object {
+                          "listStyle": "none",
+                          "padding": "10px",
+                        }
+                      }
+                    >
+                      <button
+                        aria-label={null}
+                        disabled={undefined}
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseEnter={[Function]}
+                        onMouseLeave={[Function]}
+                        style={
+                          Object {
+                            "background": "none",
+                            "backgroundColor": "unset",
+                            "border": "none",
+                            "borderRadius": "unset",
+                            "color": "unset",
+                            "cursor": "pointer",
+                            "display": "unset",
+                            "fontFamily": "unset",
+                            "fontSize": "unset",
+                            "fontWeight": "unset",
+                            "lineHeight": "unset",
+                            "margin": "unset",
+                            "outline": "none",
+                            "padding": 0,
+                            "transition": "unset",
+                            "width": "100%",
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            Object {
+                              "display": "inline-block",
+                              "textAlign": "left",
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          <i
+                            style={
+                              Object {
+                                "background": "#fec78b",
+                                "borderRadius": null,
+                                "display": "inline-block",
+                                "height": "10px",
+                                "marginRight": "5px",
+                                "verticalAlign": "baseline",
+                                "width": "10px",
+                              }
+                            }
+                          />
+                          <span
+                            style={
+                              Object {
+                                "color": "#59626a",
+                                "fontFamily": "\\"Open Sans\\", sans-serif",
+                                "fontSize": "0.8rem",
+                                "fontWeight": 400,
+                              }
+                            }
+                          >
+                            Impressions
+                          </span>
+                        </span>
+                      </button>
+                    </li>
+                    <li
+                      style={
+                        Object {
+                          "listStyle": "none",
+                          "padding": "10px",
+                        }
+                      }
+                    >
+                      <button
+                        aria-label={null}
+                        disabled={undefined}
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseEnter={[Function]}
+                        onMouseLeave={[Function]}
+                        style={
+                          Object {
+                            "background": "none",
+                            "backgroundColor": "unset",
+                            "border": "none",
+                            "borderRadius": "unset",
+                            "color": "unset",
+                            "cursor": "pointer",
+                            "display": "unset",
+                            "fontFamily": "unset",
+                            "fontSize": "unset",
+                            "fontWeight": "unset",
+                            "lineHeight": "unset",
+                            "margin": "unset",
+                            "outline": "none",
+                            "padding": 0,
+                            "transition": "unset",
+                            "width": "100%",
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            Object {
+                              "display": "inline-block",
+                              "textAlign": "left",
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          <i
+                            style={
+                              Object {
+                                "background": "#8fc6db",
+                                "borderRadius": null,
+                                "display": "inline-block",
+                                "height": "10px",
+                                "marginRight": "5px",
+                                "verticalAlign": "baseline",
+                                "width": "10px",
+                              }
+                            }
+                          />
+                          <span
+                            style={
+                              Object {
+                                "color": "#59626a",
+                                "fontFamily": "\\"Open Sans\\", sans-serif",
+                                "fontSize": "0.8rem",
+                                "fontWeight": 400,
+                              }
+                            }
+                          >
+                            Favorites
+                          </span>
+                        </span>
+                      </button>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <span
+              style={
+                Object {
+                  "marginLeft": "1.25rem",
+                }
+              }
+            >
+              <button
+                aria-label={null}
+                disabled={undefined}
+                onBlur={[Function]}
+                onClick={undefined}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "background": "none",
+                    "backgroundColor": "unset",
+                    "border": "none",
+                    "borderRadius": "unset",
+                    "color": "unset",
+                    "cursor": "pointer",
+                    "display": "unset",
+                    "fontFamily": "unset",
+                    "fontSize": "unset",
+                    "fontWeight": "unset",
+                    "lineHeight": "unset",
+                    "margin": "unset",
+                    "outline": "none",
+                    "padding": 0,
+                    "transition": "unset",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "border": "1px solid #ced7df",
+                      "borderRadius": "3px",
+                      "cursor": "pointer",
+                      "display": "inline-block",
+                      "padding": "7px 11px",
+                    }
+                  }
+                >
+                  <svg
+                    height="100%"
+                    style={
+                      Object {
+                        "fill": "#59626a",
+                        "height": "0.75rem",
+                        "width": "0.75rem",
+                      }
+                    }
+                    version="1.1"
+                    viewBox="0 0 16 16"
+                    width="100%"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g
+                      className="shuttleGray"
+                    >
+                      <path
+                        d="M7,9 L1.00292933,9 C0.449026756,9 0,8.55613518 0,8 L0,8 C0,7.44771525 0.437881351,7 1.00292933,7 L7,7 L7,1.00292933 C7,0.449026756 7.44386482,0 8,0 L8,0 C8.55228475,0 9,0.437881351 9,1.00292933 L9,7 L14.9970707,7 C15.5509732,7 16,7.44386482 16,8 L16,8 C16,8.55228475 15.5621186,9 14.9970707,9 L9,9 L9,14.9970707 C9,15.5509732 8.55613518,16 8,16 L8,16 C7.44771525,16 7,15.5621186 7,14.9970707 L7,9 Z"
+                      />
+                    </g>
+                  </svg>
+                </span>
+              </button>
+            </span>
+            <span
+              style={
+                Object {
+                  "marginLeft": "auto",
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#666c72",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.9rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                UTC 
+                +02:00
+              </span>
+            </span>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots HourlyChart loading state 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "800px",
+      }
+    }
+  >
+    <div>
+      <h2
+        style={
+          Object {
+            "margin": "2rem 0 1rem",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Engagements by hour of the day
+        </span>
+      </h2>
+      <div
+        id="js-dom-to-png-hourly-engagements"
+        style={
+          Object {
+            "border": "1px solid #ced7df",
+            "margin": "1rem 0 1.5rem",
+            "minHeight": "12rem",
+            "position": "relative",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "background": "rgba(255,255,255,.95)",
+              "border": "solid 1px #ced7df",
+              "bottom": 0,
+              "display": "flex",
+              "justifyContent": "center",
+              "left": 0,
+              "maxHeight": "none",
+              "opacity": 1,
+              "position": "absolute",
+              "right": 0,
+              "textAlign": "center",
+              "top": 0,
+              "transition": "opacity 350ms ease-in-out",
+              "zIndex": 2,
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "background": "white",
+                "borderRadius": "2px",
+                "flex": 1,
+                "flexDirection": "row",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "textAlign": "center",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "height": "1rem",
+                    "margin": "0 auto 1rem auto",
+                    "position": "relative",
+                    "width": "1rem",
+                  }
+                }
+              >
+                <span>
+                  <div
+                    style={
+                      Object {
+                        "height": "1rem",
+                        "left": 0,
+                        "opacity": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "transition": "all 1000ms ease-in-out",
+                        "width": "1rem",
+                      }
+                    }
+                  >
+                    <svg
+                      height="100%"
+                      style={
+                        Object {
+                          "fill": "#59626a",
+                          "height": "1rem",
+                          "width": "1rem",
+                        }
+                      }
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="100%"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlnsXlink="http://www.w3.org/1999/xlink"
+                    >
+                      <g
+                        className="shuttleGray"
+                      >
+                        <path
+                          d="M1.10241622,4.34038738 L7.75166358,7.40469806 C7.88821853,7.46764349 8.11178147,7.46764349 8.24833642,7.40469806 L14.8975838,4.34038738 C15.0341387,4.27744195 15.0341387,4.17446518 14.8975838,4.11151975 L8.24833642,1.04720908 C8.11178147,0.984263641 7.88821853,0.984263641 7.75166358,1.04720908 L1.10241622,4.11151975 C0.965861261,4.17446518 0.965861261,4.27744195 1.10241622,4.34038738"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                </span>
+              </div>
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "1rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                Loading...
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots HourlyChart second metric selected 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "800px",
+      }
+    }
+  >
+    <div>
+      <h2
+        style={
+          Object {
+            "margin": "2rem 0 1rem",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Engagements by hour of the day
+        </span>
+      </h2>
+      <div
+        id="js-dom-to-png-hourly-engagements"
+        style={
+          Object {
+            "border": "1px solid #ced7df",
+            "margin": "1rem 0 1.5rem",
+            "minHeight": "12rem",
+            "position": "relative",
+          }
+        }
+      >
+        <div>
+          <section
+            style={
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "padding": "1.25rem",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "display": "inline-block",
+                  "width": "10rem",
+                }
+              }
+            >
+              <div
+                className="dropdown dropdownContainer"
+              >
+                <a
+                  className="dropdown__trigger dropdownTrigger"
+                  style={
+                    Object {
+                      "display": "flex",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "display": "flex",
+                        "padding": "5px 0",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <i
+                      style={
+                        Object {
+                          "background": "#3a92d3",
+                          "borderRadius": null,
+                          "display": "inline-block",
+                          "height": "10px",
+                          "marginRight": "5px",
+                          "verticalAlign": "baseline",
+                          "width": "10px",
+                        }
+                      }
+                    />
+                    <span
+                      style={
+                        Object {
+                          "color": "#59626a",
+                          "fontFamily": "\\"Open Sans\\", sans-serif",
+                          "fontSize": "0.8rem",
+                          "fontWeight": 400,
+                        }
+                      }
+                    >
+                      Engagements
+                    </span>
+                    <span
+                      style={
+                        Object {
+                          "marginLeft": "auto",
+                        }
+                      }
+                    >
+                      <svg
+                        height="100%"
+                        style={
+                          Object {
+                            "fill": "#59626a",
+                            "height": "0.75rem",
+                            "width": "0.75rem",
+                          }
+                        }
+                        version="1.1"
+                        viewBox="0 0 16 16"
+                        width="100%"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                      >
+                        <g
+                          className="shuttleGray"
+                        >
+                          <path
+                            d="M4.90573685,4.61438297 C4.5159485,4.22537555 4.51510793,3.59709045 4.90996552,3.20500565 L4.90996552,3.20500565 C5.30208929,2.81563546 5.93536183,2.81786315 6.32490003,3.21046581 L11.2750374,8.19954548 C11.6643604,8.59193123 11.6645756,9.22591178 11.2750374,9.61606213 L6.32490003,14.5739785 C5.93557705,14.9639132 5.3048231,14.9648641 4.90996552,14.5699959 L4.90996552,14.5699959 C4.51784174,14.1778616 4.51273549,13.5497061 4.9163418,13.1493324 L8.84038203,9.25672113 C9.03897712,9.05971665 9.04484713,8.74520064 8.84038203,8.54114518 L4.90573685,4.61438297 Z"
+                            transform="translate(8.089966, 8.890003) scale(-1, 1) rotate(-270.000000) translate(-8.089966, -8.890003) "
+                          />
+                        </g>
+                      </svg>
+                    </span>
+                  </div>
+                </a>
+                <div
+                  className="dropdown__content dropdownContent"
+                >
+                  <ol
+                    style={
+                      Object {
+                        "margin": 0,
+                        "padding": 0,
+                      }
+                    }
+                  >
+                    <li
+                      style={
+                        Object {
+                          "listStyle": "none",
+                          "padding": "10px",
+                        }
+                      }
+                    >
+                      <button
+                        aria-label={null}
+                        disabled={undefined}
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseEnter={[Function]}
+                        onMouseLeave={[Function]}
+                        style={
+                          Object {
+                            "background": "none",
+                            "backgroundColor": "unset",
+                            "border": "none",
+                            "borderRadius": "unset",
+                            "color": "unset",
+                            "cursor": "pointer",
+                            "display": "unset",
+                            "fontFamily": "unset",
+                            "fontSize": "unset",
+                            "fontWeight": "unset",
+                            "lineHeight": "unset",
+                            "margin": "unset",
+                            "outline": "none",
+                            "padding": 0,
+                            "transition": "unset",
+                            "width": "100%",
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            Object {
+                              "display": "inline-block",
+                              "textAlign": "left",
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          <i
+                            style={
+                              Object {
+                                "background": "#fec78b",
+                                "borderRadius": null,
+                                "display": "inline-block",
+                                "height": "10px",
+                                "marginRight": "5px",
+                                "verticalAlign": "baseline",
+                                "width": "10px",
+                              }
+                            }
+                          />
+                          <span
+                            style={
+                              Object {
+                                "color": "#59626a",
+                                "fontFamily": "\\"Open Sans\\", sans-serif",
+                                "fontSize": "0.8rem",
+                                "fontWeight": 400,
+                              }
+                            }
+                          >
+                            Impressions
+                          </span>
+                        </span>
+                      </button>
+                    </li>
+                    <li
+                      style={
+                        Object {
+                          "listStyle": "none",
+                          "padding": "10px",
+                        }
+                      }
+                    >
+                      <button
+                        aria-label={null}
+                        disabled={undefined}
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseEnter={[Function]}
+                        onMouseLeave={[Function]}
+                        style={
+                          Object {
+                            "background": "none",
+                            "backgroundColor": "unset",
+                            "border": "none",
+                            "borderRadius": "unset",
+                            "color": "unset",
+                            "cursor": "pointer",
+                            "display": "unset",
+                            "fontFamily": "unset",
+                            "fontSize": "unset",
+                            "fontWeight": "unset",
+                            "lineHeight": "unset",
+                            "margin": "unset",
+                            "outline": "none",
+                            "padding": 0,
+                            "transition": "unset",
+                            "width": "100%",
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            Object {
+                              "display": "inline-block",
+                              "textAlign": "left",
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          <i
+                            style={
+                              Object {
+                                "background": "#8fc6db",
+                                "borderRadius": null,
+                                "display": "inline-block",
+                                "height": "10px",
+                                "marginRight": "5px",
+                                "verticalAlign": "baseline",
+                                "width": "10px",
+                              }
+                            }
+                          />
+                          <span
+                            style={
+                              Object {
+                                "color": "#59626a",
+                                "fontFamily": "\\"Open Sans\\", sans-serif",
+                                "fontSize": "0.8rem",
+                                "fontWeight": 400,
+                              }
+                            }
+                          >
+                            Favorites
+                          </span>
+                        </span>
+                      </button>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <span
+              style={
+                Object {
+                  "marginLeft": "1.25rem",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "display": "inline-block",
+                    "width": "10rem",
+                  }
+                }
+              >
+                <div
+                  className="dropdown dropdownContainer"
+                >
+                  <a
+                    className="dropdown__trigger dropdownTrigger"
+                    style={
+                      Object {
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "display": "flex",
+                          "padding": "5px 0",
+                          "width": "100%",
+                        }
+                      }
+                    >
+                      <i
+                        style={
+                          Object {
+                            "background": "#fec78b",
+                            "borderRadius": null,
+                            "display": "inline-block",
+                            "height": "10px",
+                            "marginRight": "5px",
+                            "verticalAlign": "baseline",
+                            "width": "10px",
+                          }
+                        }
+                      />
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        Impressions
+                      </span>
+                      <span
+                        style={
+                          Object {
+                            "marginLeft": "auto",
+                          }
+                        }
+                      >
+                        <svg
+                          height="100%"
+                          style={
+                            Object {
+                              "fill": "#59626a",
+                              "height": "0.75rem",
+                              "width": "0.75rem",
+                            }
+                          }
+                          version="1.1"
+                          viewBox="0 0 16 16"
+                          width="100%"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlnsXlink="http://www.w3.org/1999/xlink"
+                        >
+                          <g
+                            className="shuttleGray"
+                          >
+                            <path
+                              d="M4.90573685,4.61438297 C4.5159485,4.22537555 4.51510793,3.59709045 4.90996552,3.20500565 L4.90996552,3.20500565 C5.30208929,2.81563546 5.93536183,2.81786315 6.32490003,3.21046581 L11.2750374,8.19954548 C11.6643604,8.59193123 11.6645756,9.22591178 11.2750374,9.61606213 L6.32490003,14.5739785 C5.93557705,14.9639132 5.3048231,14.9648641 4.90996552,14.5699959 L4.90996552,14.5699959 C4.51784174,14.1778616 4.51273549,13.5497061 4.9163418,13.1493324 L8.84038203,9.25672113 C9.03897712,9.05971665 9.04484713,8.74520064 8.84038203,8.54114518 L4.90573685,4.61438297 Z"
+                              transform="translate(8.089966, 8.890003) scale(-1, 1) rotate(-270.000000) translate(-8.089966, -8.890003) "
+                            />
+                          </g>
+                        </svg>
+                      </span>
+                    </div>
+                  </a>
+                  <div
+                    className="dropdown__content dropdownContent"
+                  >
+                    <ol
+                      style={
+                        Object {
+                          "margin": 0,
+                          "padding": 0,
+                        }
+                      }
+                    >
+                      <li
+                        style={
+                          Object {
+                            "listStyle": "none",
+                            "padding": "10px",
+                          }
+                        }
+                      >
+                        <button
+                          aria-label={null}
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              Object {
+                                "display": "inline-block",
+                                "textAlign": "left",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <i
+                              style={
+                                Object {
+                                  "background": "#3a92d3",
+                                  "borderRadius": null,
+                                  "display": "inline-block",
+                                  "height": "10px",
+                                  "marginRight": "5px",
+                                  "verticalAlign": "baseline",
+                                  "width": "10px",
+                                }
+                              }
+                            />
+                            <span
+                              style={
+                                Object {
+                                  "color": "#59626a",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "0.8rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Engagements
+                            </span>
+                          </span>
+                        </button>
+                      </li>
+                      <li
+                        style={
+                          Object {
+                            "listStyle": "none",
+                            "padding": "10px",
+                          }
+                        }
+                      >
+                        <button
+                          aria-label={null}
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              Object {
+                                "display": "inline-block",
+                                "textAlign": "left",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <i
+                              style={
+                                Object {
+                                  "background": "#8fc6db",
+                                  "borderRadius": null,
+                                  "display": "inline-block",
+                                  "height": "10px",
+                                  "marginRight": "5px",
+                                  "verticalAlign": "baseline",
+                                  "width": "10px",
+                                }
+                              }
+                            />
+                            <span
+                              style={
+                                Object {
+                                  "color": "#59626a",
+                                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                                  "fontSize": "0.8rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Favorites
+                            </span>
+                          </span>
+                        </button>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <button
+                aria-label={null}
+                disabled={undefined}
+                onBlur={[Function]}
+                onClick={undefined}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "background": "none",
+                    "backgroundColor": "unset",
+                    "border": "none",
+                    "borderRadius": "unset",
+                    "color": "unset",
+                    "cursor": "pointer",
+                    "display": "unset",
+                    "fontFamily": "unset",
+                    "fontSize": "unset",
+                    "fontWeight": "unset",
+                    "lineHeight": "unset",
+                    "margin": "unset",
+                    "outline": "none",
+                    "padding": 0,
+                    "transition": "unset",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#ced7df",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                        "lineHeight": "1",
+                        "marginBottom": "auto",
+                        "marginLeft": "10px",
+                        "marginTop": "auto",
+                      }
+                    }
+                  >
+                    x
+                  </span>
+                </span>
+              </button>
+            </span>
+            <span
+              style={
+                Object {
+                  "marginLeft": "auto",
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#666c72",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.9rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                UTC 
+                +02:00
+              </span>
+            </span>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</span>
+`;

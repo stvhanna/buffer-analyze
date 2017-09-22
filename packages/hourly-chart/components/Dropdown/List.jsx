@@ -51,7 +51,7 @@ const dropdownList = {
 const List = ({ metrics, selectedMetric }) => (
   <ol style={dropdownList}>
     { metrics.map((metric, index) =>
-      (selectedMetric === index ? null : <DropdownItem metric={metric} />)) }
+      (selectedMetric === index ? null : <DropdownItem key={metric.label} metric={metric} />)) }
   </ol>
 );
 

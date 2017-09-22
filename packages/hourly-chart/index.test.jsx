@@ -1,5 +1,6 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { shallow } from 'enzyme';
+import configureMockStore from 'redux-mock-store';
 import { Provider } from 'react-redux';
 import HourlyChart, {
   reducer,
@@ -7,7 +8,7 @@ import HourlyChart, {
   actionTypes,
   middleware,
 } from './index';
-import HourlyChart from './components/HourlyChart';
+import HourlyChartComponent from './components/HourlyChart';
 
 const storeFake = state => ({
   default: () => {},
@@ -18,14 +19,20 @@ const storeFake = state => ({
 
 describe('HourlyChart', () => {
   it('should render', () => {
-    const store = storeFake({
+    const mockStore = configureMockStore();
+    const store = mockStore({
+      hourly: {
+        metrics: [{
+          label: 'Post Impressions',
+          color: '#3ed56a',
+          hourlyMetrics: [],
+        }],
+      },
     });
-    const wrapper = mount(
-      <Provider store={store}>
-        <HourlyChart />
-      </Provider>,
+    const wrapper = shallow(
+      <HourlyChart store={store}/>
     );
-    expect(wrapper.find(HourlyChart).length)
+    expect(wrapper.find(HourlyChartComponent).length)
       .toBe(1);
   });
 

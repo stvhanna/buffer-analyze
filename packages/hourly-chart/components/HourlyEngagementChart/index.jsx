@@ -186,6 +186,8 @@ const HourlyEngagementChart = ({ metric, secondaryMetric, posts, timezone }) => 
       color: secondaryMetric.color,
     };
   });
+  const baseColor = ReactHighcharts.Highcharts.Color(secondaryMetric.color);
+  const fillColor = baseColor ? baseColor.brighten(.1).get('rgba') : null;
   const config = {
     ...chartConfig,
     getTimezoneOffset: timestamp => -moment.tz(timestamp, timezone).utcOffset(),
@@ -199,7 +201,6 @@ const HourlyEngagementChart = ({ metric, secondaryMetric, posts, timezone }) => 
       yAxis: (secondaryMetric.label === 'Impressions') ? 1 : 0,
       marker: {
         lineColor: secondaryMetric.color,
-        fillColor: ReactHighcharts.Highcharts.Color(secondaryMetric.color).brighten(.1).get('rgba'),
         lineWidth: 2,
         radius: 4,
         symbol: 'circle',
@@ -208,6 +209,7 @@ const HourlyEngagementChart = ({ metric, secondaryMetric, posts, timezone }) => 
             radiusPlus: 1.5,
           },
         },
+        fillColor,
       },
       color: secondaryMetric.color,
       name: secondaryMetric.label,
