@@ -15,6 +15,7 @@ import Title from '../Title';
 import Footer from '../Footer';
 import MetricsDropdown from '../MetricsDropdown';
 import PeriodToggle from '../PeriodToggle';
+import ModeToggle from '../ModeToggle';
 
 function getStartDate(dailyData) {
   return dailyData.length ? dailyData[0].day / 1000 : null;
@@ -45,6 +46,8 @@ const CompareChart = ({
   closeDropdown,
   isDropdownOpen,
   profileService,
+  selectDailyMode,
+  dailyMode,
 }) => {
   let content = null;
   let header = null;
@@ -74,6 +77,14 @@ const CompareChart = ({
           openDropdown={openDropdown}
           closeDropdown={closeDropdown}
         />
+        {profileService === 'twitter' &&
+          <ModeToggle
+            baseModeLabel="Daily"
+            secondaryModeLabel="Period Total"
+            active={dailyMode === 1}
+            handleClick={selectDailyMode}
+          />
+        }
         <PeriodToggle handleClick={togglePreviousPeriod} active={visualizePreviousPeriod} />
       </div>
     );
@@ -149,6 +160,8 @@ CompareChart.propTypes = {
   togglePreviousPeriod: PropTypes.func.isRequired,
   openDropdown: PropTypes.func.isRequired,
   closeDropdown: PropTypes.func.isRequired,
+  selectDailyMode: PropTypes.func.isRequired,
+  dailyMode: PropTypes.number.isRequired,
 };
 
 export default CompareChart;

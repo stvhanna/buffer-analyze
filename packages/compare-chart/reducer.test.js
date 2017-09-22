@@ -11,6 +11,7 @@ describe('reducer', () => {
       metrics: { totals: [], daily: [] },
       selectedMetricLabel: '',
       visualizePreviousPeriod: false,
+      dailyMode: 0,
     };
   });
 
@@ -19,17 +20,15 @@ describe('reducer', () => {
       .toEqual(initialState);
   });
 
-  it('should open the dropdown', () => {
-    expect(actions.openDropdown())
+  it('should select dailyMode', () => {
+    expect(reducer({
+      dailyMode: 0,
+    }, {
+      type: `compare_${actionTypes.SELECT_DAILY_MODE}`,
+      mode: 1,
+    }))
       .toEqual({
-        type: `compare_${actionTypes.OPEN_DROPDOWN}`,
-      });
-  });
-
-  it('should close the dropdown', () => {
-    expect(actions.closeDropdown())
-      .toEqual({
-        type: `compare_${actionTypes.CLOSE_DROPDOWN}`,
+        dailyMode: 1,
       });
   });
 
@@ -143,6 +142,14 @@ describe('actions', () => {
       .toEqual({
         type: `compare_${actionTypes.SELECT_METRIC}`,
         metricLabel: 'foo',
+      });
+  });
+
+  it('should select the daily mode', () => {
+    expect(actions.selectDailyMode(1))
+      .toEqual({
+        type: `compare_${actionTypes.SELECT_DAILY_MODE}`,
+        mode: 1,
       });
   });
 });

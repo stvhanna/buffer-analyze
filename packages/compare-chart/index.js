@@ -10,13 +10,14 @@ function getSelectedProfileTimezone({ profiles, selectedProfileId }) {
 function mapStateToProps (state) {
   return {
     dailyData: state.compare.metrics.daily,
+    dailyMode: state.compare.dailyMode,
+    isDropdownOpen: state.compare.isDropdownOpen,
     loading: state.compare.loading,
+    profileService: state.profiles.selectedProfileService,
+    selectedMetricLabel: state.compare.selectedMetricLabel,
     timezone: getSelectedProfileTimezone(state.profiles),
     totals: state.compare.metrics.totals,
-    selectedMetricLabel: state.compare.selectedMetricLabel,
-    isDropdownOpen: state.compare.isDropdownOpen,
     visualizePreviousPeriod: state.compare.visualizePreviousPeriod,
-    profileService: state.profiles.selectedProfileService,
   };
 }
 
@@ -25,6 +26,7 @@ const mapDispatchToProps = dispatch => ({
   togglePreviousPeriod: () => dispatch(actions.togglePreviousPeriod()),
   openDropdown: () => dispatch(actions.openDropdown()),
   closeDropdown: () => dispatch(actions.closeDropdown()),
+  selectDailyMode: mode => dispatch(actions.selectDailyMode(mode)),
 });
 
 export default connect(

@@ -20,6 +20,7 @@ describe('CompareChartContainer', () => {
         metrics: { totals: [], daily: [] },
         selectedMetricLabel: '',
         visualizePreviousPeriod: false,
+        dailyMode: 0,
       },
       profiles: {
         profiles: mockProfiles,
@@ -69,6 +70,11 @@ describe('CompareChartContainer', () => {
     expect(component.props().selectMetric('foo')).toEqual({
       metricLabel: 'foo',
       type: `compare_${actionTypes.SELECT_METRIC}`,
+    });
+
+    expect(component.props().selectDailyMode(1)).toEqual({
+      mode: 1,
+      type: `compare_${actionTypes.SELECT_DAILY_MODE}`,
     });
 
     expect(component.props().openDropdown({

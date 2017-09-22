@@ -2,6 +2,7 @@ import { actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-
 
 export const actionTypes = {
   SELECT_METRIC: 'SELECT_METRIC',
+  SELECT_DAILY_MODE: 'SELECT_DAILY_MODE',
   TOGGLE_PREVIOUS_PERIOD: 'TOGGLE_PREVIOUS_PERIOD',
   OPEN_DROPDOWN: 'OPEN_DROPDOWN',
   CLOSE_DROPDOWN: 'CLOSE_DROPDOWN',
@@ -13,6 +14,7 @@ const initialState = {
   metrics: { totals: [], daily: [] },
   selectedMetricLabel: '',
   visualizePreviousPeriod: false,
+  dailyMode: 0,
 };
 
 function isMetricValid(totals, metricLabel) {
@@ -46,6 +48,10 @@ export default (state = initialState, action) => {
       return Object.assign({}, state, {
         isDropdownOpen: false,
         selectedMetricLabel: action.metricLabel,
+      });
+    case `compare_${actionTypes.SELECT_DAILY_MODE}`:
+      return Object.assign({}, state, {
+        dailyMode: action.mode,
       });
     case `compare_${actionTypes.OPEN_DROPDOWN}`:
       return Object.assign({}, state, {
@@ -84,6 +90,12 @@ export const actions = {
     return {
       type: `compare_${actionTypes.SELECT_METRIC}`,
       metricLabel,
+    };
+  },
+  selectDailyMode(mode) {
+    return {
+      type: `compare_${actionTypes.SELECT_DAILY_MODE}`,
+      mode,
     };
   },
 };
