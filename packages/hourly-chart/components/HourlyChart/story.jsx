@@ -38,7 +38,7 @@ storiesOf('HourlyChart')
   .add('loaded chart', () => (
     <div style={wrapper}>
       <HourlyChart
-        selectedMetric={0}
+        selectedMetric={'Engagements'}
         metrics={mockMetrics}
         posts={mockPostCount}
         timezone="Europe/Madrid"
@@ -48,8 +48,8 @@ storiesOf('HourlyChart')
   .add('second metric selected', () => (
     <div style={wrapper}>
       <HourlyChart
-        selectedMetric={0}
-        secondaryMetric={1}
+        selectedMetric={'Engagements'}
+        secondaryMetric={'Impressions'}
         metrics={mockMetrics}
         posts={mockPostCount}
         timezone="Europe/Madrid"

@@ -14,6 +14,7 @@ import { reducer as postsSummaryReducer } from '@bufferapp/posts-summary-table';
 import { reducer as averageReducer } from '@bufferapp/average-table';
 import { reducer as exportToPNGReducer } from '@bufferapp/analyze-png-export';
 import { reducer as topPostsReducer } from '@bufferapp/top-posts-table';
+import { reducer as hourly } from '@bufferapp/hourly-chart';
 
 export default combineReducers({
   login: loginReducer,
@@ -29,6 +30,7 @@ export default combineReducers({
   date: datePickerReducer,
   profileLoader: profileLoaderReducer,
   postsSummary: postsSummaryReducer,
-  exportToPNG: exportToPNGReducer,
   topPosts: topPostsReducer,
+  hourly,
+  exportToPNG: exportToPNGReducer,
 });
