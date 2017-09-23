@@ -144,6 +144,7 @@ storiesOf('GridItem')
           value: 42,
           diff: 60,
         }}
+        timezone="America/Los_Angeles"
         dailyData={mockDailyData}
       />
     </ul>

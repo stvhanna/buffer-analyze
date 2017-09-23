@@ -121,7 +121,7 @@ export default {
     formatter() {
       const point = this.points[0].point;
       return reactDOM.renderToStaticMarkup(
-        <ChartTooltip day={point.x} {...point.metricData} />,
+        <ChartTooltip {...point.metricData} />,
       );
     },
     backgroundColor: '#343E46',

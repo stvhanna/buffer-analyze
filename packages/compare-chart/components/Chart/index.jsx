@@ -47,16 +47,24 @@ function prepareSeries(
         color = day.metric.color;
       }
     }
+
+    // This is needed cause charts time need to be in utc to snap markers on the grid
+    // but we want to display the data in the profile timezone
+    const chartTime = moment.utc(Number(day.day)).startOf('day');
+    const dayWithTimezone = moment.tz(Number(day.day), timezone).startOf('day');
+    if (dayWithTimezone.utcOffset() < 0) {
+      chartTime.subtract(1, 'day');
+    }
     return {
-      x: moment.utc(Number(day.day)).endOf('day').valueOf(),
+      x: chartTime.valueOf(),
       y: value,
       metricData: Object.assign({}, day.metric, {
-        previousPeriodDay: moment.utc(Number(day.previousPeriodDay)).endOf('day').valueOf(),
+        day: Number(day.day),
+        previousPeriodDay: Number(day.previousPeriodDay),
         profileService,
         timezone,
         visualizePreviousPeriod,
       }),
-      timezone,
       pointPlacement: getTickInterval(dailyMetric),
     };
   });
