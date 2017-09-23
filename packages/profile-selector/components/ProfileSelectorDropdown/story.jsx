@@ -15,8 +15,21 @@ storiesOf('ProfileSelectorDropdown')
         profiles={mockProfiles}
         selectedProfileId={mockProfiles[0].id}
         selectProfile={actionLogger('selectProfile')}
-        toggleDropdown={() => {}}
-        onSearchChange={() => {}}
+        openDropdown={actionLogger('openDropdown')}
+        closeDropdown={actionLogger('closeDropdown')}
+        onSearchChange={actionLogger('onSearchChange')}
+      />
+    </div>
+  ))
+  .add('should not render the dropdown if profiles are missing', () => (
+    <div style={{ display: 'flex' }}>
+      <ProfileSelectorDropdown
+        profiles={[]}
+        selectedProfileId=""
+        selectProfile={actionLogger('selectProfile')}
+        openDropdown={actionLogger('openDropdown')}
+        closeDropdown={actionLogger('closeDropdown')}
+        onSearchChange={actionLogger('onSearchChange')}
       />
     </div>
   ))
@@ -27,7 +40,8 @@ storiesOf('ProfileSelectorDropdown')
         selectedProfileId={mockProfiles[0].id}
         isDropdownOpen
         selectProfile={actionLogger('selectProfile')}
-        toggleDropdown={() => {}}
+        openDropdown={actionLogger('openDropdown')}
+        closeDropdown={actionLogger('closeDropdown')}
         onSearchChange={actionLogger('onSearchChange')}
       />
     </div>
@@ -48,7 +62,8 @@ storiesOf('ProfileSelectorDropdown')
         selectedProfileId={profiles[0].id}
         isDropdownOpen
         selectProfile={actionLogger('selectProfile')}
-        toggleDropdown={() => {}}
+        openDropdown={actionLogger('openDropdown')}
+        closeDropdown={actionLogger('closeDropdown')}
         onSearchChange={actionLogger('onSearchChange')}
       />
     </div>);
@@ -61,7 +76,8 @@ storiesOf('ProfileSelectorDropdown')
         isDropdownOpen
         profilesFilterString={'joel'}
         selectProfile={actionLogger('selectProfile')}
-        toggleDropdown={() => {}}
+        openDropdown={actionLogger('openDropdown')}
+        closeDropdown={actionLogger('closeDropdown')}
         onSearchChange={actionLogger('onSearchChange')}
       />
     </div>
@@ -74,7 +90,8 @@ storiesOf('ProfileSelectorDropdown')
         isDropdownOpen
         profilesFilterString={'foo'}
         selectProfile={actionLogger('selectProfile')}
-        toggleDropdown={() => {}}
+        openDropdown={actionLogger('openDropdown')}
+        closeDropdown={actionLogger('closeDropdown')}
         onSearchChange={actionLogger('onSearchChange')}
       />
     </div>

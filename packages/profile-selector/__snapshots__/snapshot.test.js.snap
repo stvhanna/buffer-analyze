@@ -812,6 +812,18 @@ exports[`Snapshots ProfileSelectorDropdown should filter by profilesFilterString
 </span>
 `;
 
+exports[`Snapshots ProfileSelectorDropdown should not render the dropdown if profiles are missing 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  />
+</span>
+`;
+
 exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
 <span>
   <div
