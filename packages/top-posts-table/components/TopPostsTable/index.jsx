@@ -27,7 +27,6 @@ import { metricsConfig } from '../../metrics';
 const gridContainer = {
   minHeight: '12rem',
   position: 'relative',
-  margin: '1rem 0 1.5rem',
 };
 
 const defaultSortMetrics = {
@@ -139,7 +138,7 @@ const TopPostsTable = (props) => {
   return (
     <div>
       <Title startDate={startDate} endDate={endDate} />
-      <div id="js-dom-to-png-top-posts" style={gridContainer}>
+      <div style={gridContainer}>
         {content}
       </div>
     </div>

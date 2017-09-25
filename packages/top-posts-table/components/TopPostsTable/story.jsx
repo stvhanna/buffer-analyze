@@ -92,6 +92,25 @@ storiesOf('TopPostsTable')
       />
     </div>
   ))
+  .add('should render the top posts table with default selected metric', () => (
+    <div
+      style={{
+        width: '750px',
+      }}
+    >
+      <TopPostsTable
+        profileTimezone={'America/Los_Angeles'}
+        profileService={'facebook'}
+        topPosts={topPosts}
+        selectMetric={() => {}}
+        selectedMetric={{}}
+        toggleDropdown={() => {}}
+        isDescendingSelected
+        handlePostsCountClick={() => {}}
+        activePostsCount={10}
+      />
+    </div>
+  ))
   .add('should render a loading state', () => (
     <div
       style={{

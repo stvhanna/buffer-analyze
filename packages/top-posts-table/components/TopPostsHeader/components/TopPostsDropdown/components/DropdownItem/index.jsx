@@ -20,7 +20,7 @@ const DropdownItem = ({ metric, handleClick, selected, sortDirectionLabel }) => 
           boxSizing: 'border-box',
           display: 'flex',
           position: 'relative',
-          width: '280px',
+          width: '200px',
           padding: '5px 10px',
           marginTop: '7px',
         }}
