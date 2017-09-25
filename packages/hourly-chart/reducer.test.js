@@ -19,6 +19,9 @@ const metrics = [
   },
 ];
 
+const postsCount =
+  [2, 0, 0, 0, 0, 5, 11, 4, 1, 0, 1, 0, 3, 1, 0, 5, 11, 0, 0, 2, 0, 1, 1, 0];
+
 describe('reducer', () => {
   describe('initial state', () => {
     it('should be loading', () => {
@@ -67,6 +70,14 @@ describe('reducer', () => {
         metrics,
       });
       expect(state.metrics).toEqual(metrics);
+    });
+    it('should store posts count', () => {
+      const state = reducer(undefined, {
+        type: `hourly_${asyncDataFetchActions.FETCH_SUCCESS}`,
+        metrics,
+        postsCount,
+      });
+      expect(state.postsCount).toEqual(postsCount);
     });
     it('selected metric is the first on the list', () => {
       const state = reducer(undefined, {

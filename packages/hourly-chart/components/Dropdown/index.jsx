@@ -7,7 +7,6 @@ import {
 } from '@bufferapp/components';
 
 import Dropdown, {
-  DropdownTrigger,
   DropdownContent,
 } from '@bufferapp/analyze-shared-components/Dropdown';
 
@@ -26,21 +25,24 @@ const dropdown = {
   display: 'inline-block',
 };
 
-const MetricDropdown = ({ metrics, open, selectedMetric }) => (
+const MetricDropdown = ({ metrics, open, selectedMetric, toggleDropdown, secondary, selectMetric }) => (
   <div style={dropdown}>
-    <Dropdown>
-      <DropdownTrigger isDropdownOpen={open}>
-        <div style={triggerContainer}>
-          <ColorIcon color={metrics[selectedMetric].color} />
-          <Text size="small">{metrics[selectedMetric].label}</Text>
-          <span style={{ marginLeft: 'auto' }} >
-            { open && <ArrowUpIcon size="small" /> }
-            { !open && <ArrowDownIcon size="small" /> }
-          </span>
-        </div>
-      </DropdownTrigger>
+    <Dropdown toggleDropdown={toggleDropdown} isDropdownOpen={open}>
+      <div style={triggerContainer}>
+        <ColorIcon metric={selectedMetric.label} />
+        <Text size="small">{selectedMetric.label}</Text>
+        <span style={{ marginLeft: 'auto' }} >
+          { open && <ArrowUpIcon size="small" /> }
+          { !open && <ArrowDownIcon size="small" /> }
+        </span>
+      </div>
       <DropdownContent isDropdownOpen={open}>
-        <List metrics={metrics} selectedMetric={selectedMetric} />
+        <List
+          metrics={metrics}
+          selectedMetric={selectedMetric}
+          selectMetric={selectMetric}
+          secondary={secondary}
+        />
       </DropdownContent>
     </Dropdown>
   </div>

@@ -40,15 +40,13 @@ const openButton = {
   cursor: 'pointer',
 };
 
-const SecondaryMetricToggle = ({ metric, metrics }) => (
+const SecondaryMetricToggle = ({ metric, metrics, toggleSecondaryDropdown, showSecondaryDropdown, hideSecondaryDropdown, secondaryDropdownOpen, selectMetric }) => (
   <span style={toggleWrapper}>
-    { metric && <Dropdown metrics={metrics} selectedMetric={metric} />}
-    { metric && <Button noStyle><Text size="small" color="geyser"><span style={closeButton}>x</span></Text></Button>}
-    { !metric && <Button noStyle><span style={openButton}><PlusIcon size="small" /></span></Button>}
+    { metric && <Dropdown secondary selectMetric={selectMetric} open={secondaryDropdownOpen} toggleDropdown={toggleSecondaryDropdown} metrics={metrics} selectedMetric={metric} />}
+    { metric && <Button onClick={hideSecondaryDropdown} noStyle><Text size="small" color="geyser"><span style={closeButton}>x</span></Text></Button>}
+    { !metric && <Button onClick={showSecondaryDropdown} noStyle><span style={openButton}><PlusIcon size="small" /></span></Button>}
   </span>
 );
-
-SecondaryMetricToggle.defaultProps 
 
 SecondaryMetricToggle.propTypes = {
   metric: PropTypes.string,
@@ -59,13 +57,27 @@ SecondaryMetricToggle.propTypes = {
   })),
 };
 
-const ChartHeader = ({ metrics, selectedMetric, secondaryMetric, timezone }) => (
-  <section style={chartHeader}>
-    <Dropdown metrics={metrics} selectedMetric={selectedMetric} />
-    <SecondaryMetricToggle metric={secondaryMetric} metrics={metrics} />
-    <TimezoneInfo timezone={timezone} />
-  </section>
-);
+const ChartHeader = (props) => {
+  const metrics = props.metrics.filter(metric => (
+    metric.label !== props.selectedMetric.label &&
+      (!props.secondaryMetric || metric.label !== props.secondaryMetric.label)
+  ));
+  return (
+    <section style={chartHeader}>
+      <Dropdown metrics={metrics} selectMetric={props.selectMetric} open={props.dropdownOpen} toggleDropdown={props.toggleDropdown} selectedMetric={props.selectedMetric} />
+      <SecondaryMetricToggle
+        metric={props.secondaryMetric}
+        metrics={metrics}
+        secondaryDropdownOpen={props.secondaryDropdownOpen}
+        toggleSecondaryDropdown={props.toggleSecondaryDropdown}
+        showSecondaryDropdown={props.showSecondaryDropdown}
+        hideSecondaryDropdown={props.hideSecondaryDropdown}
+        selectMetric={props.selectMetric}
+      />
+      <TimezoneInfo timezone={props.timezone} />
+    </section>
+  );
+}
 
 ChartHeader.propTypes = {
   selectedMetric: PropTypes.string,

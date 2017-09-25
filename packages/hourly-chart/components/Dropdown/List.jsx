@@ -5,6 +5,10 @@ import {
   Button,
 } from '@bufferapp/components';
 
+import {
+  color,
+} from '@bufferapp/analyze-shared-components/style';
+
 import ColorIcon from './ColorIcon';
 
 const dropdownItem = {
@@ -22,7 +26,7 @@ const DropdownItem = ({ metric, handleClick }) => (
   <li style={dropdownItem}>
     <Button noStyle fillContainer onClick={handleClick}>
       <span style={dropdownItemContent}>
-        <ColorIcon color={metric.color} />
+        <ColorIcon metric={metric.label} />
         <Text size="small">{metric.label}</Text>
       </span>
     </Button>
@@ -48,10 +52,14 @@ const dropdownList = {
   margin: 0,
 };
 
-const List = ({ metrics, selectedMetric }) => (
+const List = ({ metrics, selectedMetric, secondary, selectMetric }) => (
   <ol style={dropdownList}>
-    { metrics.map((metric, index) =>
-      (selectedMetric === index ? null : <DropdownItem key={metric.label} metric={metric} />)) }
+    { metrics.map(metric =>
+      <DropdownItem
+        key={metric.label}
+        metric={metric}
+        handleClick={() => selectMetric(metric.label, secondary)}
+      />)}
   </ol>
 );
 

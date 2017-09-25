@@ -49,6 +49,7 @@ const configureStore = (initialstate) => {
         postsSummaryMiddleware,
         averageMiddleware,
         topPostsMiddleware,
+        hourly,
         exportToPNGMiddleware,
       ),
     ),

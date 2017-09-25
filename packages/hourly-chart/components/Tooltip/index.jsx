@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 import moment from 'moment';
 import numeral from 'numeral';
 
+import {
+  color,
+} from '@bufferapp/analyze-shared-components/style';
+
 import ColorIcon from '../Dropdown/ColorIcon';
 
 const header = {
@@ -47,7 +51,7 @@ Header.propTypes = {
 
 const Summary = ({ item, circle }) => (
   <span>
-    <ColorIcon circle={circle} color={item.point.color} />
+    <ColorIcon circle={circle} metric={item.series.name} />
     <b>{numeral(item.y).format('0,0')} {item.series.name}</b>
     <br />
   </span>
@@ -55,12 +59,12 @@ const Summary = ({ item, circle }) => (
 
 Summary.propTypes = {
   item: PropTypes.shape({
-    point: {
+    point: PropTypes.shape({
       color: PropTypes.string,
-    },
-    series: {
+    }),
+    series: PropTypes.shape({
       name: PropTypes.string,
-    },
+    }),
   }).isRequired,
   circle: PropTypes.bool.isRequired,
 };
@@ -69,7 +73,12 @@ const Tooltip = ({ points }) => (
   <div>
     <Header hour={points[0].key} totalUpdates={points[0].point.totalUpdates} />
     {points.reverse().map((point, index) =>
-      <Summary item={point} circle={points.length === 2 && index === 0} />) }
+      <Summary
+        key={point.series.name}
+        item={point}
+        circle={points.length === 2 && index === 0}
+      />)
+    }
   </div>
 );
 

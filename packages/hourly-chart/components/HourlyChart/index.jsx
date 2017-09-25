@@ -13,6 +13,7 @@ import {
 import PostCountByHour from '../PostCountByHour';
 import HourlyEngagementChart from '../HourlyEngagementChart';
 import ChartHeader from '../ChartHeader';
+import ColorIcon from '../Dropdown/ColorIcon';
 
 const title = {
   margin: '2rem 0 1rem',
@@ -31,41 +32,59 @@ const gridContainer = {
   border: `1px solid ${geyser}`,
 };
 
-const ChartContent = ({ posts, timezone, metrics, selectedMetric, secondaryMetric }) => (
+const legendItem = {
+  display: 'inline-block',
+  padding: '.8rem',
+  margin: '0 .8rem',
+};
+
+const legendList = {
+  padding: '0 1.5rem',
+  marginBottom: '1.5rem',
+  textAlign: 'center',
+};
+
+const Legend = ({ metric, secondaryMetric }) =>
+  <ul style={legendList}>
+    <li style={legendItem}>
+      <ColorIcon />
+      <Text size="mini">Tweets</Text>
+    </li>
+    <li style={legendItem}>
+      <ColorIcon metric={metric.label} />
+      <Text size="mini">{metric.label}</Text>
+    </li>
+    { secondaryMetric && <li style={legendItem}>
+      <ColorIcon circle metric={secondaryMetric.label} />
+      <Text size="mini">{secondaryMetric.label}</Text>
+    </li> }
+  </ul>;
+
+const ChartContent = props => (
   <div>
-    <ChartHeader
-      metrics={metrics}
-      selectedMetric={selectedMetric}
-      secondaryMetric={secondaryMetric}
-      timezone={timezone}
-    />
+    <ChartHeader {...props} />
     <HourlyEngagementChart
-      posts={posts}
-      metric={metrics[selectedMetric]}
-      secondaryMetric={metrics[secondaryMetric]}
-      timezone={timezone}
+      posts={props.postsCount}
+      metric={props.selectedMetric}
+      secondaryMetric={props.secondaryMetric}
+      timezone={props.timezone}
     />
-    <PostCountByHour posts={posts} timezone={timezone} />
+    <PostCountByHour posts={props.postsCount} timezone={props.timezone} />
+    <Legend metric={props.selectedMetric} secondaryMetric={props.secondaryMetric} />
   </div>
 );
 
 ChartContent.defaultProps = {
   selectedMetric: 0,
   secondaryMetric: null,
-  posts: [],
-  metrics: [],
+  postsCount: [],
   timezone: 'America/Los_Angeles',
 };
 
 ChartContent.propTypes = {
-  selectedMetric: PropTypes.number,
-  secondaryMetric: PropTypes.number,
-  posts: PropTypes.arrayOf(PropTypes.number),
-  metrics: PropTypes.arrayOf(PropTypes.shape({
-    label: PropTypes.string,
-    color: PropTypes.string,
-    hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
-  })),
+  selectedMetric: PropTypes.string,
+  secondaryMetric: PropTypes.string,
+  postsCount: PropTypes.arrayOf(PropTypes.number),
   timezone: PropTypes.string,
 };
 
@@ -73,7 +92,7 @@ const HourlyChart = props =>
   <div>
     <Title />
     <div id="js-dom-to-png-hourly-engagements" style={gridContainer}>
-      {props.loading && <Loading />}
+      {props.loading && <Loading noBorder />}
       {!props.loading && <ChartContent {...props} />}
     </div>
   </div>;

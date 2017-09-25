@@ -5,3 +5,4 @@ export ChartStateNoData from './ChartStateNoData';
 export ChartStateLoading from './ChartStateLoading';
 export GridItem from './GridItem';
 export Dropdown from './Dropdown';
+export style from './style';

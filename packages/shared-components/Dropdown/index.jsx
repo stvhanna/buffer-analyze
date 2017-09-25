@@ -15,14 +15,19 @@ import {
   dropdownTriggerActive,
 } from './style.less';
 
-export default ({ children, toggleDropdown }) => {
+export default ({ children, toggleDropdown, isDropdownOpen }) => {
+  const triggerClasses = classNames(dropdownTrigger, {
+    [dropdownTriggerActive]: isDropdownOpen,
+  });
   return (
     <Dropdown
       className={dropdownContainer}
       onShow={toggleDropdown}
       onHide={toggleDropdown}
     >
-      {children}
+      <Trigger className={triggerClasses} style={{ display: 'flex' }} >
+        {children}
+      </Trigger>
     </Dropdown>
   );
 };

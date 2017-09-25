@@ -1,8 +1,8 @@
 import { actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-fetch';
 
 export const actionTypes = {
-  OPEN_DROPDOWN: 'OPEN_DROPDOWN',
-  OPEN_SECONDARY_DROPDOWN: 'OPEN_SECONDARY_DROPDOWN',
+  TOGGLE_DROPDOWN: 'TOGGLE_DROPDOWN',
+  TOGGLE_SECONDARY_DROPDOWN: 'TOGGLE_SECONDARY_DROPDOWN',
   SHOW_SECONDARY_DROPDOWN: 'SHOW_SECONDARY_DROPDOWN',
   HIDE_SECONDARY_DROPDOWN: 'HIDE_SECONDARY_DROPDOWN',
   SELECT_METRIC: 'SELECT_METRIC',
@@ -11,6 +11,7 @@ export const actionTypes = {
 
 const initialState = {
   loading: true,
+  postsCount: [],
   metrics: [],
   dropdownOpen: false,
   secondaryDropdownOpen: false,
@@ -31,38 +32,58 @@ export default (state = initialState, action) => {
         ...state,
         selectedSecondaryMetric: null,
       };
-    case actionTypes.OPEN_SECONDARY_DROPDOWN:
+    case actionTypes.TOGGLE_SECONDARY_DROPDOWN:
       return {
         ...state,
-        secondaryDropdownOpen: true,
+        secondaryDropdownOpen: !state.secondaryDropdownOpen,
       };
     case actionTypes.SELECT_SECONDARY_METRIC:
       return {
         ...state,
-        secondaryDropdownOpen: false,
         selectedSecondaryMetric: action.metric,
       };
-    case actionTypes.OPEN_DROPDOWN:
+    case actionTypes.TOGGLE_DROPDOWN:
       return {
         ...state,
-        dropdownOpen: true,
+        dropdownOpen: !state.dropdownOpen,
       };
     case actionTypes.SELECT_METRIC:
       return {
         ...state,
-        dropdownOpen: false,
         selectedMetric: action.metric,
       };
     case `hourly_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
       return {
         ...state,
         loading: false,
-        metrics: action.metrics,
-        selectedMetric: action.metrics[0].label,
+        metrics: action.result.metrics,
+        selectedMetric: action.result.metrics[0].label,
+        postsCount: action.result.postsCount,
       };
     default:
       return state;
   }
 };
 
-export const actions = {};
+export const actions = {
+  showSecondaryDropdown: () => ({
+    type: actionTypes.SHOW_SECONDARY_DROPDOWN,
+  }),
+  hideSecondaryDropdown: () => ({
+    type: actionTypes.HIDE_SECONDARY_DROPDOWN,
+  }),
+  toggleDropdown: () => ({
+    type: actionTypes.TOGGLE_DROPDOWN,
+  }),
+  toggleSecondaryDropdown: () => ({
+    type: actionTypes.TOGGLE_SECONDARY_DROPDOWN,
+  }),
+  selectMetric: metric => ({
+    type: actionTypes.SELECT_METRIC,
+    metric,
+  }),
+  selectSecondaryMetric: metric => ({
+    type: actionTypes.SELECT_SECONDARY_METRIC,
+    metric,
+  }),
+};

@@ -1,6 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import {
+  color,
+} from '@bufferapp/analyze-shared-components/style';
+
+import {
+  geyser,
+} from '@bufferapp/components/style/color';
+
 const style = {
   display: 'inline-block',
   verticalAlign: 'baseline',
@@ -10,23 +18,23 @@ const style = {
   borderRadius: '1px',
 };
 
-const ColorIcon = ({ color, circle }) => (
+const ColorIcon = ({ metric, circle }) => (
   <i
     style={{
       ...style,
       borderRadius: circle ? '50%' : null,
-      background: color,
+      background: color[metric] || geyser,
     }}
   />
 );
 
 ColorIcon.defaultProps = {
-  color: null,
+  metric: null,
   circle: false,
 };
 
 ColorIcon.propTypes = {
-  color: PropTypes.string,
+  metric: PropTypes.string,
   circle: PropTypes.bool,
 };
 
