@@ -1,5 +1,5 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 import { Provider } from 'react-redux';
 import NavSidebar, {
   reducer,
@@ -9,7 +9,7 @@ import NavSidebar, {
 const storeFake = state => ({
   default: () => {},
   subscribe: () => {},
-  dispatch: () => {},
+  dispatch: jest.fn(),
   getState: () => ({ ...state }),
 });
 
@@ -57,6 +57,26 @@ describe('NavSidebar', () => {
     expect(wrapper.find(NavSidebar).length)
       .toBe(1);
     expect(wrapper.find('[children="Insights"]').length).toBe(0);
+  });
+
+  it('it should export onClick', () => {
+    const store = storeFake({
+      navSidebar: {
+        profiles: [],
+      },
+    });
+    const component = shallow(
+      <NavSidebar store={store} route="/" />,
+    );
+    expect(component.props().onClick).toBeDefined();
+    component.props().onClick();
+    expect(store.dispatch).toHaveBeenCalledTimes(2);
+    expect(store.dispatch.mock.calls[0][0]).toMatchObject({
+      type: '@@router/CALL_HISTORY_METHOD',
+    });
+    expect(store.dispatch.mock.calls[1][0]).toMatchObject({
+      type: 'SELECT_PROFILE',
+    });
   });
 
   it('should export reducer', () => {
