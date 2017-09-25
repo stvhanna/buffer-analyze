@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
+import { action } from '@storybook/addon-actions';
 import TopPostsDropdown from './index';
 
 import mockMetrics from './mocks/metrics';
@@ -13,8 +14,8 @@ storiesOf('TopPostsDropdown')
       <TopPostsDropdown
         metrics={mockMetrics}
         selectedMetric={mockMetrics[0]}
-        selectMetric={() => {}}
-        toggleDropdown={() => {}}
+        selectMetric={action('selectMetric')}
+        toggleDropdown={action('toggleDropdown')}
         isDescendingSelected
       />
     </div>
@@ -26,8 +27,8 @@ storiesOf('TopPostsDropdown')
         selectedMetric={mockMetrics[0]}
         isDropdownOpen
         isDescendingSelected={false}
-        selectMetric={() => {}}
-        toggleDropdown={() => {}}
+        selectMetric={action('selectMetric')}
+        toggleDropdown={action('toggleDropdown')}
       />
     </div>
   ))
@@ -36,8 +37,8 @@ storiesOf('TopPostsDropdown')
       <TopPostsDropdown
         metrics={[]}
         selectedMetric={mockMetrics[0]}
-        selectMetric={() => {}}
-        toggleDropdown={() => {}}
+        selectMetric={action('selectMetric')}
+        toggleDropdown={action('toggleDropdown')}
         isDescendingSelected
       />
     </div>

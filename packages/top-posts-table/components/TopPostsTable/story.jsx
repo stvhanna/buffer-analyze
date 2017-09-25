@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
+import { action } from '@storybook/addon-actions';
 import TopPostsTable from './index';
 
 const topPosts = [
@@ -80,14 +81,14 @@ storiesOf('TopPostsTable')
         profileTimezone={'America/Los_Angeles'}
         profileService={'facebook'}
         topPosts={topPosts}
-        selectMetric={() => {}}
+        selectMetric={action('selectMetric')}
         selectedMetric={{
           key: 'post_impressions',
           label: 'Post Impressions',
         }}
-        toggleDropdown={() => {}}
+        toggleDropdown={action('toggleDropdown')}
         isDescendingSelected
-        handlePostsCountClick={() => {}}
+        handlePostsCountClick={action('handlePostsCountClick')}
         activePostsCount={10}
       />
     </div>
@@ -102,11 +103,11 @@ storiesOf('TopPostsTable')
         profileTimezone={'America/Los_Angeles'}
         profileService={'facebook'}
         topPosts={topPosts}
-        selectMetric={() => {}}
+        selectMetric={action('selectMetric')}
         selectedMetric={{}}
-        toggleDropdown={() => {}}
+        toggleDropdown={action('toggleDropdown')}
         isDescendingSelected
-        handlePostsCountClick={() => {}}
+        handlePostsCountClick={action('handlePostsCountClick')}
         activePostsCount={10}
       />
     </div>
@@ -122,14 +123,14 @@ storiesOf('TopPostsTable')
         profileService={'facebook'}
         loading
         topPosts={[]}
-        selectMetric={() => {}}
+        selectMetric={action('selectMetric')}
         selectedMetric={{
           key: 'post_impressions',
           label: 'Post Impressions',
         }}
-        toggleDropdown={() => {}}
+        toggleDropdown={action('toggleDropdown')}
         isDescendingSelected
-        handlePostsCountClick={() => {}}
+        handlePostsCountClick={action('handlePostsCountClick')}
         activePostsCount={10}
       />
     </div>
@@ -144,14 +145,14 @@ storiesOf('TopPostsTable')
         profileTimezone={'America/Los_Angeles'}
         profileService={'facebook'}
         topPosts={[]}
-        selectMetric={() => {}}
+        selectMetric={action('selectMetric')}
         selectedMetric={{
           key: 'post_impressions',
           label: 'Post Impressions',
         }}
-        toggleDropdown={() => {}}
+        toggleDropdown={action('toggleDropdown')}
         isDescendingSelected
-        handlePostsCountClick={() => {}}
+        handlePostsCountClick={action('handlePostsCountClick')}
         activePostsCount={10}
       />
     </div>

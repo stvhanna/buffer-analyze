@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
+import { action } from '@storybook/addon-actions';
 
 import DropdownItem from './index';
 import mockMetrics from '../../mocks/metrics';
@@ -10,14 +11,14 @@ storiesOf('Dropdown Item')
   .add('should render item', () => (
     <DropdownItem
       metric={mockMetrics[0]}
-      handleClick={() => {}}
+      handleClick={action('handleClick')}
       sortDirectionLabel={'ASC'}
     />
   ))
   .add('should render selected item', () => (
     <DropdownItem
       metric={mockMetrics[0]}
-      handleClick={() => {}}
+      handleClick={action('handleClick')}
       sortDirectionLabel={'DESC'}
       selected
     />
