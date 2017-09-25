@@ -110,7 +110,7 @@ export const chartConfig = {
   tooltip: {
     shared: true,
     crosshairs: true,
-    formatter: function () {
+    formatter: function () { // eslint-disable-line object-shorthand
       return ReactDOM.renderToString(<Tooltip points={this.points} />);
     },
     dateTimeLabelFormats: {
@@ -121,7 +121,7 @@ export const chartConfig = {
     backgroundColor: '#343E46',
     borderRadius: 4,
     borderWidth: 0,
-    pointFormatter: function() {
+    pointFormatter: function() { // eslint-disable-line object-shorthand
       return `${this.series.name}: <b>${this.y}</b><br/>`;
     },
     shadow: false,
