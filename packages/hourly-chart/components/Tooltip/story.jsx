@@ -55,7 +55,7 @@ storiesOf('Tooltip')
         series: {
           name: 'Clicks',
         },
-      },{
+      }, {
         key: moment().startOf('day').valueOf(),
         point: {
           totalUpdates: 10,

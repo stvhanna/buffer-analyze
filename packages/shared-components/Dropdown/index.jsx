@@ -15,7 +15,7 @@ import {
   dropdownTriggerActive,
 } from './style.less';
 
-export default ({ children, toggleDropdown, isDropdownOpen }) => {
+const DropdownWrapper = ({ children, toggleDropdown, isDropdownOpen }) => {
   const triggerClasses = classNames(dropdownTrigger, {
     [dropdownTriggerActive]: isDropdownOpen,
   });
@@ -31,6 +31,14 @@ export default ({ children, toggleDropdown, isDropdownOpen }) => {
     </Dropdown>
   );
 };
+
+DropdownWrapper.propTypes = {
+  children: PropTypes.node.isRequired,
+  toggleDropdown: PropTypes.func.isRequired,
+  isDropdownOpen: PropTypes.bool.isRequired,
+};
+
+export default DropdownWrapper;
 
 export const DropdownTrigger = ({ children, isDropdownOpen }) => {
   const triggerClasses = classNames(dropdownTrigger, {

@@ -40,21 +40,48 @@ const openButton = {
   cursor: 'pointer',
 };
 
-const SecondaryMetricToggle = ({ metric, metrics, toggleSecondaryDropdown, showSecondaryDropdown, hideSecondaryDropdown, secondaryDropdownOpen, selectMetric }) => (
-  <span style={toggleWrapper}>
-    { metric && <Dropdown secondary selectMetric={selectMetric} open={secondaryDropdownOpen} toggleDropdown={toggleSecondaryDropdown} metrics={metrics} selectedMetric={metric} />}
-    { metric && <Button onClick={hideSecondaryDropdown} noStyle><Text size="small" color="geyser"><span style={closeButton}>x</span></Text></Button>}
-    { !metric && <Button onClick={showSecondaryDropdown} noStyle><span style={openButton}><PlusIcon size="small" /></span></Button>}
-  </span>
-);
+const SecondaryMetricToggle = (props) => {
+  if (props.metric) {
+    return (<span style={toggleWrapper}>
+      <Dropdown
+        secondary
+        selectMetric={props.selectMetric}
+        open={props.secondaryDropdownOpen}
+        toggleDropdown={props.toggleSecondaryDropdown}
+        metrics={props.metrics}
+        selectedMetric={props.metric}
+      />
+      <Button
+        onClick={props.hideSecondaryDropdown}
+        noStyle
+      >
+        <Text size="small" color="geyser"><span style={closeButton}>x</span></Text>
+      </Button>
+    </span>);
+  }
+  return (<span style={toggleWrapper}>
+    <Button onClick={props.showSecondaryDropdown} noStyle>
+      <span style={openButton}><PlusIcon size="small" /></span>
+    </Button>
+  </span>);
+};
+
+SecondaryMetricToggle.defaultProps = {
+  metric: null,
+};
 
 SecondaryMetricToggle.propTypes = {
+  showSecondaryDropdown: PropTypes.func.isRequired,
+  toggleSecondaryDropdown: PropTypes.func.isRequired,
+  hideSecondaryDropdown: PropTypes.func.isRequired,
+  secondaryDropdownOpen: PropTypes.bool.isRequired,
+  selectMetric: PropTypes.func.isRequired,
   metric: PropTypes.string,
   metrics: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string,
     color: PropTypes.string,
     hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
-  })),
+  })).isRequired,
 };
 
 const ChartHeader = (props) => {
@@ -64,7 +91,13 @@ const ChartHeader = (props) => {
   ));
   return (
     <section style={chartHeader}>
-      <Dropdown metrics={metrics} selectMetric={props.selectMetric} open={props.dropdownOpen} toggleDropdown={props.toggleDropdown} selectedMetric={props.selectedMetric} />
+      <Dropdown
+        metrics={metrics}
+        selectMetric={props.selectMetric}
+        open={props.dropdownOpen}
+        toggleDropdown={props.toggleDropdown}
+        selectedMetric={props.selectedMetric}
+      />
       <SecondaryMetricToggle
         metric={props.secondaryMetric}
         metrics={metrics}
@@ -77,17 +110,36 @@ const ChartHeader = (props) => {
       <TimezoneInfo timezone={props.timezone} />
     </section>
   );
-}
+};
+
+ChartHeader.defaultProps = {
+  secondaryMetric: null,
+};
 
 ChartHeader.propTypes = {
-  selectedMetric: PropTypes.string,
-  secondaryMetric: PropTypes.string,
+  selectedMetric: PropTypes.shape({
+    label: PropTypes.string,
+    color: PropTypes.string,
+    hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
+  }).isRequired,
+  secondaryMetric: PropTypes.shape({
+    label: PropTypes.string,
+    color: PropTypes.string,
+    hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
+  }),
   timezone: PropTypes.string.isRequired,
+  showSecondaryDropdown: PropTypes.func.isRequired,
+  toggleSecondaryDropdown: PropTypes.func.isRequired,
+  toggleDropdown: PropTypes.func.isRequired,
+  hideSecondaryDropdown: PropTypes.func.isRequired,
+  dropdownOpen: PropTypes.bool.isRequired,
+  secondaryDropdownOpen: PropTypes.bool.isRequired,
+  selectMetric: PropTypes.func.isRequired,
   metrics: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string,
     color: PropTypes.string,
     hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
-  })),
+  })).isRequired,
 };
 
 export default ChartHeader;

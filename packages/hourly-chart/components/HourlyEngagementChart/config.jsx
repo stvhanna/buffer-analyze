@@ -122,8 +122,8 @@ export const chartConfig = {
     backgroundColor: '#343E46',
     borderRadius: 4,
     borderWidth: 0,
-    /* istanbul ignore next */
     pointFormatter: function() { // eslint-disable-line object-shorthand
+      /* istanbul ignore next */
       return `${this.series.name}: <b>${this.y}</b><br/>`;
     },
     shadow: false,

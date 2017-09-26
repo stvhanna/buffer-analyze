@@ -13,7 +13,7 @@ import {
 import PostCountByHour from '../PostCountByHour';
 import HourlyEngagementChart from '../HourlyEngagementChart';
 import ChartHeader from '../ChartHeader';
-import ColorIcon from '../Dropdown/ColorIcon';
+import Legend from '../Legend';
 
 const title = {
   margin: '2rem 0 1rem',
@@ -31,34 +31,6 @@ const gridContainer = {
   margin: '1rem 0 1.5rem',
   border: `1px solid ${geyser}`,
 };
-
-const legendItem = {
-  display: 'inline-block',
-  padding: '.8rem',
-  margin: '0 .8rem',
-};
-
-const legendList = {
-  padding: '0 1.5rem',
-  marginBottom: '1.5rem',
-  textAlign: 'center',
-};
-
-const Legend = ({ metric, secondaryMetric }) =>
-  <ul style={legendList}>
-    <li style={legendItem}>
-      <ColorIcon />
-      <Text size="mini">Tweets</Text>
-    </li>
-    <li style={legendItem}>
-      <ColorIcon metric={metric.label} />
-      <Text size="mini">{metric.label}</Text>
-    </li>
-    { secondaryMetric && <li style={legendItem}>
-      <ColorIcon circle metric={secondaryMetric.label} />
-      <Text size="mini">{secondaryMetric.label}</Text>
-    </li> }
-  </ul>;
 
 const ChartContent = props => (
   <div>
