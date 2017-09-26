@@ -11,6 +11,7 @@ const followers = require('./followers');
 const analyticsStartDate = require('./analyticsStartDate');
 const average = require('./average');
 const topPosts = require('./topPosts');
+const compare = require('./compare');
 
 module.exports = checkToken(rpc(
   loginMethod,
@@ -24,4 +25,5 @@ module.exports = checkToken(rpc(
   postsSummary,
   average,
   topPosts,
+  compare,
 ));

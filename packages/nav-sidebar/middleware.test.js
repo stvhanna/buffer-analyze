@@ -56,7 +56,7 @@ describe('middleware', () => {
       type: `profiles_${actionTypes.FETCH_SUCCESS}`,
     };
     invoke(action);
-    expect(store.dispatch).toHaveBeenCalledWith(profileActions.selectProfile(profileId));
+    expect(store.dispatch).toHaveBeenCalledWith(profileActions.selectProfile(profileId, 'twitter'));
     expect(next).toHaveBeenCalledWith(action);
   });
 

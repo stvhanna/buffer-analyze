@@ -39,7 +39,10 @@ import DropdownItem from './components/DropdownItem';
 
 function renderDropdownItem(profile, selectedProfileId, selectProfile) {
   const onClick = () => {
-    selectProfile({ id: profile.id });
+    selectProfile({
+      id: profile.id,
+      service: profile.service,
+    });
   };
 
   return (<DropdownItem
@@ -57,7 +60,8 @@ const ProfileSelectorDropdown = ({
   profilesFilterString,
   selectProfile,
   selectedProfileId,
-  toggleDropdown,
+  openDropdown,
+  closeDropdown,
 }) => {
   const selectedProfile = profiles.find(p => p.id === selectedProfileId);
 
@@ -101,8 +105,8 @@ const ProfileSelectorDropdown = ({
     return (
       <Dropdown
         className={dropdownContainer}
-        onShow={toggleDropdown}
-        onHide={toggleDropdown}
+        onShow={openDropdown}
+        onHide={closeDropdown}
       >
         <DropdownTrigger className={triggerClasses} style={{ display: 'flex' }} >
           <ProfileBadge
@@ -112,7 +116,7 @@ const ProfileSelectorDropdown = ({
             socialIconSize={11}
           />
           <Text weight="bold" size="small">{selectedProfile.username}</Text>
-          <span style={{ marginLeft: 'auto' }} >
+          <span style={{ pointerEvents: 'none', marginLeft: 'auto' }} >
             { isDropdownOpen && <ArrowUpIcon /> }
             { !isDropdownOpen && <ArrowDownIcon /> }
           </span>
@@ -166,7 +170,8 @@ ProfileSelectorDropdown.propTypes = {
   profilesFilterString: PropTypes.string,
   selectProfile: PropTypes.func.isRequired,
   selectedProfileId: PropTypes.string.isRequired,
-  toggleDropdown: PropTypes.func.isRequired,
+  openDropdown: PropTypes.func.isRequired,
+  closeDropdown: PropTypes.func.isRequired,
 };
 
 ProfileSelectorDropdown.defaultProps = {

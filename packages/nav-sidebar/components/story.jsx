@@ -7,24 +7,24 @@ import Item from './Item';
 
 const twitterProfiles = [
   {
-    id: 1,
+    id: '1',
     service: 'twitter',
   },
   {
-    id: 2,
+    id: '2',
     service: 'twitter',
   },
-]; 
+];
 const facebookProfiles = [
   {
-    id: 3,
+    id: '3',
     service: 'facebook',
   },
 ];
 
 const instagramProfiles = [
   {
-    id: 4,
+    id: '4',
     service: 'instagram',
   },
 ];
@@ -55,6 +55,7 @@ storiesOf('NavSidebar')
     <div style={{ width: '260px', height: '100%', display: 'flex' }}>
       <NavSidebar
         route="/insights/twitter"
+        profileService="twitter"
         profiles={[...twitterProfiles, ...instagramProfiles]}
         onClick={action('click item')}
       />

@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import SummaryTable from '@bufferapp/summary-table';
 import Divider from '@bufferapp/components/Divider';
 import AverageTable from '@bufferapp/average-table';
+import CompareChart from '@bufferapp/compare-chart';
 import TopPostsTable from '@bufferapp/top-posts-table';
 
 const OverviewTab = ({ match }) => (
@@ -13,6 +14,7 @@ const OverviewTab = ({ match }) => (
     <Divider marginTop="1rem" marginBottom="1rem" />
     <AverageTable />
     <TopPostsTable selectedProfileId={match.params.id} profileService={match.params.service} />
+    <CompareChart />
   </div>
 );
 
