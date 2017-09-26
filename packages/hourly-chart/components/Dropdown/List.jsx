@@ -5,7 +5,7 @@ import {
   Button,
 } from '@bufferapp/components';
 
-import ColorIcon from './ColorIcon';
+import ColorIcon from '../ColorIcon';
 
 const dropdownItem = {
   listStyle: 'none',

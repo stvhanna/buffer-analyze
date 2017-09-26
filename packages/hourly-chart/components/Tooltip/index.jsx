@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import moment from 'moment';
 import numeral from 'numeral';
 
-import ColorIcon from '../Dropdown/ColorIcon';
+import ColorIcon from '../ColorIcon';
 
 const header = {
   fontSize: '8pt',

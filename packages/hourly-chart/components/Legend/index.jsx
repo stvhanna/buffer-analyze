@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ColorIcon from '../Dropdown/ColorIcon';
+import {
+  Text,
+} from '@bufferapp/components';
+import ColorIcon from '../ColorIcon';
 
 const legendItem = {
   display: 'inline-block',

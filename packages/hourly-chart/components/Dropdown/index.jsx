@@ -11,7 +11,7 @@ import Dropdown, {
 } from '@bufferapp/analyze-shared-components/Dropdown';
 
 import List from './List';
-import ColorIcon from './ColorIcon';
+import ColorIcon from '../ColorIcon';
 
 const triggerContainer = {
   padding: '5px 0',
