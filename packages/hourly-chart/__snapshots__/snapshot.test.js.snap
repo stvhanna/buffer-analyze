@@ -2647,3 +2647,268 @@ exports[`Snapshots HourlyChart second metric selected 1`] = `
   </div>
 </span>
 `;
+
+exports[`Snapshots Tooltip 1 update 1`] = `
+<span>
+  <div>
+    <div>
+      <span
+        style={
+          Object {
+            "color": "#cfcfcf",
+            "fontSize": "8pt",
+          }
+        }
+      >
+        12 AM
+         - 
+        1 AM
+      </span>
+      <br />
+      <br />
+      <span>
+        There was 
+        <b>
+          1
+        </b>
+         update
+      </span>
+       published between 
+      <b>
+        12 AM
+      </b>
+       and 
+      <b>
+        1 AM
+      </b>
+       and you earned:
+      <br />
+      <br />
+    </div>
+    <span>
+      <i
+        style={
+          Object {
+            "background": "#98E8B2",
+            "borderRadius": null,
+            "display": "inline-block",
+            "height": "10px",
+            "marginRight": "5px",
+            "verticalAlign": "baseline",
+            "width": "10px",
+          }
+        }
+      />
+      <b>
+        0
+         
+        Clicks
+      </b>
+      <br />
+    </span>
+  </div>
+</span>
+`;
+
+exports[`Snapshots Tooltip no updates 1`] = `
+<span>
+  <div>
+    <div>
+      <span
+        style={
+          Object {
+            "color": "#cfcfcf",
+            "fontSize": "8pt",
+          }
+        }
+      >
+        12 AM
+         - 
+        1 AM
+      </span>
+      <br />
+      <br />
+      <span>
+        There were no updates
+      </span>
+       published between 
+      <b>
+        12 AM
+      </b>
+       and 
+      <b>
+        1 AM
+      </b>
+       and you earned:
+      <br />
+      <br />
+    </div>
+    <span>
+      <i
+        style={
+          Object {
+            "background": "#98E8B2",
+            "borderRadius": null,
+            "display": "inline-block",
+            "height": "10px",
+            "marginRight": "5px",
+            "verticalAlign": "baseline",
+            "width": "10px",
+          }
+        }
+      />
+      <b>
+        0
+         
+        Clicks
+      </b>
+      <br />
+    </span>
+  </div>
+</span>
+`;
+
+exports[`Snapshots Tooltip should render 1`] = `
+<span>
+  <div>
+    <div>
+      <span
+        style={
+          Object {
+            "color": "#cfcfcf",
+            "fontSize": "8pt",
+          }
+        }
+      >
+        12 AM
+         - 
+        1 AM
+      </span>
+      <br />
+      <br />
+      <span>
+        There were a total of 
+        <b>
+          10
+        </b>
+         updates
+      </span>
+       published between 
+      <b>
+        12 AM
+      </b>
+       and 
+      <b>
+        1 AM
+      </b>
+       and you earned:
+      <br />
+      <br />
+    </div>
+    <span>
+      <i
+        style={
+          Object {
+            "background": "#98E8B2",
+            "borderRadius": null,
+            "display": "inline-block",
+            "height": "10px",
+            "marginRight": "5px",
+            "verticalAlign": "baseline",
+            "width": "10px",
+          }
+        }
+      />
+      <b>
+        0
+         
+        Clicks
+      </b>
+      <br />
+    </span>
+  </div>
+</span>
+`;
+
+exports[`Snapshots Tooltip two metrics 1`] = `
+<span>
+  <div>
+    <div>
+      <span
+        style={
+          Object {
+            "color": "#cfcfcf",
+            "fontSize": "8pt",
+          }
+        }
+      >
+        12 AM
+         - 
+        1 AM
+      </span>
+      <br />
+      <br />
+      <span>
+        There were a total of 
+        <b>
+          10
+        </b>
+         updates
+      </span>
+       published between 
+      <b>
+        12 AM
+      </b>
+       and 
+      <b>
+        1 AM
+      </b>
+       and you earned:
+      <br />
+      <br />
+    </div>
+    <span>
+      <i
+        style={
+          Object {
+            "background": "#FEC78B",
+            "borderRadius": "50%",
+            "display": "inline-block",
+            "height": "10px",
+            "marginRight": "5px",
+            "verticalAlign": "baseline",
+            "width": "10px",
+          }
+        }
+      />
+      <b>
+        0
+         
+        Impressions
+      </b>
+      <br />
+    </span>
+    <span>
+      <i
+        style={
+          Object {
+            "background": "#98E8B2",
+            "borderRadius": null,
+            "display": "inline-block",
+            "height": "10px",
+            "marginRight": "5px",
+            "verticalAlign": "baseline",
+            "width": "10px",
+          }
+        }
+      />
+      <b>
+        0
+         
+        Clicks
+      </b>
+      <br />
+    </span>
+  </div>
+</span>
+`;

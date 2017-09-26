@@ -3,10 +3,6 @@ import PropTypes from 'prop-types';
 import moment from 'moment';
 import numeral from 'numeral';
 
-import {
-  color,
-} from '@bufferapp/analyze-shared-components/style';
-
 import ColorIcon from '../Dropdown/ColorIcon';
 
 const header = {
