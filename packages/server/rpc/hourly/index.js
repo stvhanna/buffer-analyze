@@ -12,7 +12,7 @@ const METRICS = [{
   key: 'favorites',
   label: 'Likes',
 }, {
-  key: 'clicks',
+  key: 'url_clicks',
   label: 'Clicks',
 }, {
   key: 'retweets',
