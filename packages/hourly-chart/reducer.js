@@ -1,8 +1,8 @@
 import { actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-fetch';
 
 export const actionTypes = {
-  TOGGLE_DROPDOWN: 'TOGGLE_DROPDOWN',
-  TOGGLE_SECONDARY_DROPDOWN: 'TOGGLE_SECONDARY_DROPDOWN',
+  HOURLY_TOGGLE_DROPDOWN: 'HOURLY_TOGGLE_DROPDOWN',
+  HOURLY_TOGGLE_SECONDARY_DROPDOWN: 'HOURLY_TOGGLE_SECONDARY_DROPDOWN',
   SHOW_SECONDARY_DROPDOWN: 'SHOW_SECONDARY_DROPDOWN',
   HIDE_SECONDARY_DROPDOWN: 'HIDE_SECONDARY_DROPDOWN',
   SELECT_METRIC: 'SELECT_METRIC',
@@ -32,7 +32,7 @@ export default (state = initialState, action) => {
         ...state,
         selectedSecondaryMetric: null,
       };
-    case actionTypes.TOGGLE_SECONDARY_DROPDOWN:
+    case actionTypes.HOURLY_TOGGLE_SECONDARY_DROPDOWN:
       return {
         ...state,
         secondaryDropdownOpen: !state.secondaryDropdownOpen,
@@ -42,7 +42,7 @@ export default (state = initialState, action) => {
         ...state,
         selectedSecondaryMetric: action.metric,
       };
-    case actionTypes.TOGGLE_DROPDOWN:
+    case actionTypes.HOURLY_TOGGLE_DROPDOWN:
       return {
         ...state,
         dropdownOpen: !state.dropdownOpen,
@@ -73,10 +73,10 @@ export const actions = {
     type: actionTypes.HIDE_SECONDARY_DROPDOWN,
   }),
   toggleDropdown: () => ({
-    type: actionTypes.TOGGLE_DROPDOWN,
+    type: actionTypes.HOURLY_TOGGLE_DROPDOWN,
   }),
   toggleSecondaryDropdown: () => ({
-    type: actionTypes.TOGGLE_SECONDARY_DROPDOWN,
+    type: actionTypes.HOURLY_TOGGLE_SECONDARY_DROPDOWN,
   }),
   selectMetric: metric => ({
     type: actionTypes.SELECT_METRIC,

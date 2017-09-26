@@ -1,5 +1,5 @@
 import { actionTypes as asyncDataFetchActions } from '@bufferapp/async-data-fetch';
-import reducer, { actionTypes } from './reducer';
+import reducer, { actions } from './reducer';
 
 const metrics = [
   {
@@ -97,19 +97,12 @@ describe('reducer', () => {
   });
   describe('dropdown', () => {
     it('open', () => {
-      const state = reducer(undefined, {
-        type: actionTypes.TOGGLE_DROPDOWN,
-      });
+      const state = reducer(undefined, actions.toggleDropdown());
       expect(state.dropdownOpen).toBeTruthy();
     });
     it('select metric', () => {
-      const openDropdownState = reducer(undefined, {
-        type: actionTypes.TOGGLE_DROPDOWN,
-      });
-      const state = reducer(openDropdownState, {
-        type: actionTypes.SELECT_METRIC,
-        metric: 'Impressions',
-      });
+      const openDropdownState = reducer(undefined, actions.toggleDropdown());
+      const state = reducer(openDropdownState, actions.selectMetric('Impressions'));
       expect(state.selectedMetric).toBe('Impressions');
     });
   });
@@ -121,31 +114,20 @@ describe('reducer', () => {
           metrics,
         },
       });
-      const state = reducer(loadedMetrics, {
-        type: actionTypes.SHOW_SECONDARY_DROPDOWN,
-      });
+      const state = reducer(loadedMetrics, actions.showSecondaryDropdown());
       expect(state.selectedSecondaryMetric).toBe('Impressions');
     });
     it('open', () => {
-      const state = reducer(undefined, {
-        type: actionTypes.TOGGLE_SECONDARY_DROPDOWN,
-      });
+      const state = reducer(undefined, actions.toggleSecondaryDropdown());
       expect(state.secondaryDropdownOpen).toBeTruthy();
     });
     it('select secondary metric', () => {
-      const openDropdownState = reducer(undefined, {
-        type: actionTypes.TOGGLE_SECONDARY_DROPDOWN,
-      });
-      const state = reducer(openDropdownState, {
-        type: actionTypes.SELECT_SECONDARY_METRIC,
-        metric: 'Engagements',
-      });
+      const openDropdownState = reducer(undefined, actions.toggleSecondaryDropdown());
+      const state = reducer(openDropdownState, actions.selectSecondaryMetric('Engagements'));
       expect(state.selectedSecondaryMetric).toBe('Engagements');
     });
     it('hide removes selected metric from dropdown', () => {
-      const state = reducer(undefined, {
-        type: actionTypes.HIDE_SECONDARY_DROPDOWN,
-      });
+      const state = reducer(undefined, actions.hideSecondaryDropdown());
       expect(state.selectedSecondaryMetric).toBe(null);
     });
   });
