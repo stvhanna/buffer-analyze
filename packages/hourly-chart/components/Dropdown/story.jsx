@@ -23,6 +23,7 @@ storiesOf('Dropdown')
   .addDecorator(checkA11y)
   .add('closed dropdown', () => (
     <Dropdown
+      selectMetric={action('select')}
       metrics={mockMetrics}
       selectedMetric={engagements}
     />
@@ -30,6 +31,7 @@ storiesOf('Dropdown')
   .add('open dropdown', () => (
     <Dropdown
       open
+      selectMetric={action('select')}
       metrics={mockMetrics}
       toggleDropdown={action('toggle')}
       selectedMetric={impressions}

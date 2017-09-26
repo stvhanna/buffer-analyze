@@ -5,10 +5,6 @@ import {
   Button,
 } from '@bufferapp/components';
 
-import {
-  color,
-} from '@bufferapp/analyze-shared-components/style';
-
 import ColorIcon from './ColorIcon';
 
 const dropdownItem = {
@@ -52,7 +48,7 @@ const dropdownList = {
   margin: 0,
 };
 
-const List = ({ metrics, selectedMetric, secondary, selectMetric }) => (
+const List = ({ metrics, secondary, selectMetric }) => (
   <ol style={dropdownList}>
     { metrics.map(metric =>
       <DropdownItem
@@ -65,11 +61,12 @@ const List = ({ metrics, selectedMetric, secondary, selectMetric }) => (
 
 List.defaultProps = {
   metrics: [],
-  selectedMetric: 0,
+  secondary: false,
 };
 
 List.propTypes = {
-  selectedMetric: PropTypes.number,
+  selectMetric: PropTypes.func.isRequired,
+  secondary: PropTypes.bool,
   metrics: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string,
     color: PropTypes.string,
