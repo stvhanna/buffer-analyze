@@ -25,6 +25,7 @@ const highChartsTweetsConfigXAxis = {
   startOnTick: false,
   labels: {
     formatter: function() { // eslint-disable-line object-shorthand
+      /* istanbul ignore next */
       return moment(new Date(this.value)).format('h A');
     },
     align: 'left',
