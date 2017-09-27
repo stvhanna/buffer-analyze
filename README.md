@@ -108,16 +108,13 @@ If you need to listen to another packages events, import the actionTypes into th
 
 
 ```js
-//reducer.js - in @bufferapp/foo package
-import { actionTypes, loginActionTypes } from '@bufferapp/login';
-
 // handle login event
 export default (state, action) => {
   switch (action.type) {
-    case loginActionTypes.LOGIN_SUCCESS:
+    case 'APP_INIT':
       return {
         ...state,
-        loggedIn: true,
+        initialized: true,
       };
     default:
       return state;

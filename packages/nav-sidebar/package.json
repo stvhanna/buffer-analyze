@@ -22,7 +22,7 @@
   "author": "mike@msanroman.io",
   "dependencies": {
     "@bufferapp/components": "0.5.28",
-    "@bufferapp/async-data-fetch": "0.5.25",
+    "@bufferapp/async-data-fetch": "0.5.36-beta01",
     "@bufferapp/analyze-profile-selector": "0.0.1"
   },
   "devDependencies": {

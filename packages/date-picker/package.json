@@ -23,7 +23,7 @@
   "dependencies": {
     "moment": "^2.18.1",
     "react-tooltip": "^3.3.0",
-    "@bufferapp/async-data-fetch": "0.5.25",
+    "@bufferapp/async-data-fetch": "0.5.36-beta01",
     "@bufferapp/analyze-profile-selector": "0.0.1"
   },
   "devDependencies": {
