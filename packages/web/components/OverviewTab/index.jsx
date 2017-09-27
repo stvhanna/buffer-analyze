@@ -14,9 +14,9 @@ const OverviewTab = ({ match }) => (
     <SummaryTable profileService={match.params.service} />
     <Divider marginTop="1rem" marginBottom="1rem" />
     <AverageTable />
-    <HourlyChart />
-    <TopPostsTable selectedProfileId={match.params.id} profileService={match.params.service} />
+    {match.params.service === 'twitter' && <HourlyChart />}
     <CompareChart />
+    <TopPostsTable selectedProfileId={match.params.id} profileService={match.params.service} />
   </div>
 );
 
