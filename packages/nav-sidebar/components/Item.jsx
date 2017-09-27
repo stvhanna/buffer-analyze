@@ -14,7 +14,7 @@ import {
   calculateStyles,
 } from '@bufferapp/components/lib/utils';
 
-const Item = ({ href, route, children, onClick, profileId }) => {
+const Item = ({ href, route, children, onClick, profileId, profileService }) => {
   const active = href === route;
   const style = calculateStyles({
     default: {
@@ -34,7 +34,7 @@ const Item = ({ href, route, children, onClick, profileId }) => {
       onClick={(e) => {
         e.preventDefault();
         if (!active) {
-          onClick(href, profileId);
+          onClick(href, profileId, profileService);
         }
       }}
     >
@@ -51,11 +51,13 @@ Item.propTypes = {
   route: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
   profileId: PropTypes.string,
+  profileService: PropTypes.string,
 };
 
 Item.defaultProps = {
   active: false,
   profileId: null,
+  profileService: null,
 };
 
 export default Item;

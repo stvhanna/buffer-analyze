@@ -7,5 +7,8 @@ storiesOf('PeriodPhrase')
   .addDecorator(checkA11y)
   .add('should render', () => (
     <PeriodPhrase startDate={1504308280} endDate={1504826680} />
+  ))
+  .add('should render previous period phrase', () => (
+    <PeriodPhrase previous startDate={1504308280} endDate={1504826680} />
   ));
 

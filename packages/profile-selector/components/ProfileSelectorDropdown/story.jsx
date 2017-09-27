@@ -1,8 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
-import ProfileSelectorDropdown from './index';
+import { action as actionLogger } from '@storybook/addon-actions';
 
+import ProfileSelectorDropdown from './index';
 import mockProfiles from '../../mocks/profiles';
 
 
@@ -13,9 +14,22 @@ storiesOf('ProfileSelectorDropdown')
       <ProfileSelectorDropdown
         profiles={mockProfiles}
         selectedProfileId={mockProfiles[0].id}
-        selectProfile={() => {}}
-        toggleDropdown={() => {}}
-        onSearchChange={() => {}}
+        selectProfile={actionLogger('selectProfile')}
+        openDropdown={actionLogger('openDropdown')}
+        closeDropdown={actionLogger('closeDropdown')}
+        onSearchChange={actionLogger('onSearchChange')}
+      />
+    </div>
+  ))
+  .add('should not render the dropdown if profiles are missing', () => (
+    <div style={{ display: 'flex' }}>
+      <ProfileSelectorDropdown
+        profiles={[]}
+        selectedProfileId=""
+        selectProfile={actionLogger('selectProfile')}
+        openDropdown={actionLogger('openDropdown')}
+        closeDropdown={actionLogger('closeDropdown')}
+        onSearchChange={actionLogger('onSearchChange')}
       />
     </div>
   ))
@@ -25,11 +39,10 @@ storiesOf('ProfileSelectorDropdown')
         profiles={mockProfiles}
         selectedProfileId={mockProfiles[0].id}
         isDropdownOpen
-        selectProfile={() => {}}
-        toggleDropdown={() => {}}
-        onSearchChange={
-          (e) => { console.log(e.target.value); }
-        }
+        selectProfile={actionLogger('selectProfile')}
+        openDropdown={actionLogger('openDropdown')}
+        closeDropdown={actionLogger('closeDropdown')}
+        onSearchChange={actionLogger('onSearchChange')}
       />
     </div>
   ))
@@ -48,11 +61,10 @@ storiesOf('ProfileSelectorDropdown')
         profiles={profiles}
         selectedProfileId={profiles[0].id}
         isDropdownOpen
-        selectProfile={() => {}}
-        toggleDropdown={() => {}}
-        onSearchChange={
-          (e) => { console.log(e.target.value); }
-        }
+        selectProfile={actionLogger('selectProfile')}
+        openDropdown={actionLogger('openDropdown')}
+        closeDropdown={actionLogger('closeDropdown')}
+        onSearchChange={actionLogger('onSearchChange')}
       />
     </div>);
   })
@@ -63,11 +75,10 @@ storiesOf('ProfileSelectorDropdown')
         selectedProfileId={mockProfiles[0].id}
         isDropdownOpen
         profilesFilterString={'joel'}
-        selectProfile={() => {}}
-        toggleDropdown={() => {}}
-        onSearchChange={
-          (e) => { console.log(e.target.value); }
-        }
+        selectProfile={actionLogger('selectProfile')}
+        openDropdown={actionLogger('openDropdown')}
+        closeDropdown={actionLogger('closeDropdown')}
+        onSearchChange={actionLogger('onSearchChange')}
       />
     </div>
   ))
@@ -78,11 +89,10 @@ storiesOf('ProfileSelectorDropdown')
         selectedProfileId={mockProfiles[0].id}
         isDropdownOpen
         profilesFilterString={'foo'}
-        selectProfile={() => {}}
-        toggleDropdown={() => {}}
-        onSearchChange={
-          (e) => { console.log(e.target.value); }
-        }
+        selectProfile={actionLogger('selectProfile')}
+        openDropdown={actionLogger('openDropdown')}
+        closeDropdown={actionLogger('closeDropdown')}
+        onSearchChange={actionLogger('onSearchChange')}
       />
     </div>
   ));

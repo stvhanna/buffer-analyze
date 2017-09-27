@@ -6,7 +6,7 @@ import {
 } from '@bufferapp/components/style/font';
 
 import ArrowIcon from '../ArrowIcon';
-import TruncatedNumber from '../TruncatedNumber';
+import TruncatedNumber from '../../../TruncatedNumber';
 
 const baseMargin = 10;
 const gridSummaryItemDiffContainer = {

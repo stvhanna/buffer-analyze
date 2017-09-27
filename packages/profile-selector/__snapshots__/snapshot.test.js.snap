@@ -573,6 +573,7 @@ exports[`Snapshots ProfileSelectorDropdown should filter by profilesFilterString
           style={
             Object {
               "marginLeft": "auto",
+              "pointerEvents": "none",
             }
           }
         >
@@ -811,6 +812,18 @@ exports[`Snapshots ProfileSelectorDropdown should filter by profilesFilterString
 </span>
 `;
 
+exports[`Snapshots ProfileSelectorDropdown should not render the dropdown if profiles are missing 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  />
+</span>
+`;
+
 exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
 <span>
   <div
@@ -920,6 +933,7 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
           style={
             Object {
               "marginLeft": "auto",
+              "pointerEvents": "none",
             }
           }
         >
@@ -1704,6 +1718,7 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
           style={
             Object {
               "marginLeft": "auto",
+              "pointerEvents": "none",
             }
           }
         >
@@ -2488,6 +2503,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
           style={
             Object {
               "marginLeft": "auto",
+              "pointerEvents": "none",
             }
           }
         >
@@ -4572,6 +4588,7 @@ exports[`Snapshots ProfileSelectorDropdown should show no match message 1`] = `
           style={
             Object {
               "marginLeft": "auto",
+              "pointerEvents": "none",
             }
           }
         >

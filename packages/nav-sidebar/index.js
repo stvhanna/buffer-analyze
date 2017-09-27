@@ -8,9 +8,9 @@ export default connect(
     profiles: state.navSidebar.profiles,
   }),
   dispatch => ({
-    onClick: (path, profileId) => {
+    onClick: (path, profileId, profileService) => {
       dispatch(push(path));
-      dispatch(profilesActions.selectProfile(profileId));
+      dispatch(profilesActions.selectProfile(profileId, profileService));
     },
   }),
 )(NavSidebar);

@@ -33,22 +33,24 @@ const formatDateRange = (startDate, endDate) => {
   return range;
 };
 
-const PeriodPhrase = ({ startDate, endDate }) => {
+const PeriodPhrase = ({ startDate, endDate, previous }) => {
   const range = formatDateRange(startDate, endDate);
   if (range.start.match(/today|yesterday/)) {
     return (<span>{range.start}</span>);
   }
-  return (<span>the selected {range.start}</span>);
+  return (<span>the { previous ? 'previous' : 'selected' } {range.start}</span>);
 };
 
 PeriodPhrase.defaultProps = {
   startDate: null,
   endDate: null,
+  previous: false,
 };
 
 PeriodPhrase.propTypes = {
   startDate: PropTypes.number,
   endDate: PropTypes.number,
+  previous: PropTypes.bool,
 };
 
 export default PeriodPhrase;
