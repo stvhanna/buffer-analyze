@@ -8,6 +8,7 @@ import {
 import {
   ChartStateNoData as NoData,
   ChartStateLoading as Loading,
+  ModeToggle,
 } from '@bufferapp/analyze-shared-components';
 
 import Chart from '../Chart';
@@ -15,7 +16,6 @@ import Title from '../Title';
 import Footer from '../Footer';
 import MetricsDropdown from '../MetricsDropdown';
 import PeriodToggle from '../PeriodToggle';
-import ModeToggle from '../ModeToggle';
 
 function getStartDate(dailyData) {
   return dailyData.length ? dailyData[0].day / 1000 : null;
