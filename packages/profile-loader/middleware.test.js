@@ -18,7 +18,7 @@ describe('middleware', () => {
     expect(next).toHaveBeenCalledWith(action);
   });
 
-  it('should dispatch the data fetch action for fetching the profiles once login has been successful', () => {
+  it('should dispatch the data fetch action for fetching the profiles once app has been initialized', () => {
     const action = {
       type: 'APP_INIT',
     };

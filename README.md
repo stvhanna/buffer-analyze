@@ -65,7 +65,7 @@ This makes `some-cool-package` available to all packages
 
 ### Creating A Dependency To Another Local Package
 
-To create a dependency to the login package from the a package:
+To create a dependency to the shared-components package from the a package:
 
 In the `foo` package add the following entry in the `packages/foo/package.json` file under the dependencies key:
 
@@ -74,7 +74,7 @@ In the `foo` package add the following entry in the `packages/foo/package.json` 
   //...other stuff...
   dependencies:{
     //...other dependencies...
-    "@bufferapp/login": "0.0.1", // this version must be exact otherwise it fetches from npm
+    "@bufferapp/shared-components": "0.0.1", // this version must be exact otherwise it fetches from npm
   }
 }
 ```
