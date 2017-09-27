@@ -52,6 +52,8 @@ export default (state = initialState, action) => {
         ...state,
         selectedMetric: action.metric,
       };
+    case `hourly_${asyncDataFetchActionTypes.FETCH_START}`:
+      return initialState;
     case `hourly_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
       return {
         ...state,

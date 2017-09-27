@@ -110,7 +110,7 @@ const PostCountByHour = ({ posts, timezone }) => {
       timezoneOffset: -moment.tz(timezone).utcOffset(),
     },
   });
-  return <ReactHighcharts isPureConfig neverReflow config={config} />;
+  return <ReactHighcharts isPureConfig config={config} />;
 };
 
 PostCountByHour.defaultProps = {
