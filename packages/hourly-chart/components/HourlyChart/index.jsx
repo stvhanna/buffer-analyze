@@ -36,13 +36,8 @@ class ChartContent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      _chart: null,
+      ref: null,
     };
-  }
-  componentDidMount() {
-    this.setState({
-      _chart: this._chart,
-    });
   }
   render() {
     return (
@@ -55,9 +50,18 @@ class ChartContent extends React.Component {
           timezone={this.props.timezone}
           chartRef={(node) => {
             this._chart = node;
+            if (!this.state.ref) {
+              this.setState({
+                ref: true,
+              });
+            }
           }}
         />
-        <PostCountByHour posts={this.props.postsCount} hourlyChart={this.state._chart} timezone={this.props.timezone} />
+        <PostCountByHour
+          posts={this.props.postsCount}
+          hourlyChart={this._chart}
+          timezone={this.props.timezone}
+        />
         <Legend metric={this.props.selectedMetric} secondaryMetric={this.props.secondaryMetric} />
       </div>
     );
