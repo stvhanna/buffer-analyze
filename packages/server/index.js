@@ -72,12 +72,12 @@ const favicon = fs.readFileSync(join(__dirname, 'favicon.ico'));
 app.get('/favicon.ico', (req, res) => res.send(favicon));
 
 app.get('*', (req, res) => {
-  if (!req.session || !req.session.accessToken) {
+  if (req.session && req.session.accessToken) {
+    res.send(html);
+  } else {
     const redirect = encodeURIComponent(`https://${req.get('host')}${req.originalUrl}`);
     const accountUrl = `https://account${isProduction ? '' : '.local'}.buffer.com/login/`;
     res.redirect(`${accountUrl}?redirect=${redirect}`);
-  } else {
-    res.send(html);
   }
 });
 

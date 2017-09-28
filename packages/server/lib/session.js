@@ -23,7 +23,9 @@ exports.middleware = (req, res, next) => {
 
   exports.get(sessionCookie)
     .then((session) => {
-      req.session = session.analyze;
+      if (session && session.analyze) {
+        req.session = session.analyze;
+      }
       next();
     })
     .catch(next);
