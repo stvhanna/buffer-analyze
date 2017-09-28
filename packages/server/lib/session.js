@@ -1,9 +1,9 @@
 const RPCClient = require('micro-rpc-client');
 
 const COOKIE_NAME = 'session';
-  // isDevelopment ?
-  // 'buffer-session-2-local' :
-  // 'buffer-session-2';
+// isDevelopment ?
+// 'buffer-session-2-local' :
+// 'buffer-session-2';
 const client = new RPCClient({
   url: `http://${process.env.SESSION_SVC_HOST}`,
 });

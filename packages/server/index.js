@@ -51,8 +51,8 @@ if (!isProduction) {
 }
 
 const html = fs.readFileSync(join(__dirname, 'index.html'), 'utf8')
-                .replace('{{{bundle}}}', staticAssets['bundle.js'])
-                .replace('{{{bugsnagScript}}}', bugsnagScript);
+  .replace('{{{bundle}}}', staticAssets['bundle.js'])
+  .replace('{{{bugsnagScript}}}', bugsnagScript);
 
 app.use(logMiddleware({ name: 'BufferAnalyze' }));
 app.use(cookieParser());
