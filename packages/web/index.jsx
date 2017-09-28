@@ -6,31 +6,10 @@ import {
   ConnectedRouter as Router,
 } from 'react-router-redux';
 import createStore, { history } from '@bufferapp/store';
-import { actions as dataActions } from '@bufferapp/async-data-fetch';
 import { actions as performanceActions } from '@bufferapp/performance-tracking';
 import App from './components/App';
 
 const store = createStore();
-
-// TODO: remove thse after login service has been implemented
-window.login = ({
-  email,
-  password,
-  clientId,
-  clientSecret,
-}) => store.dispatch(dataActions.fetch({
-  name: 'login',
-  args: {
-    email,
-    password,
-    clientId,
-    clientSecret,
-  },
-}));
-
-window.logout = () => store.dispatch(dataActions.fetch({
-  name: 'logout',
-}));
 
 store.dispatch({
   type: 'APP_INIT',

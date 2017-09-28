@@ -5,6 +5,8 @@ const bugsnag = require('bugsnag');
 const fs = require('fs');
 const { join } = require('path');
 const shutdownHelper = require('@bufferapp/shutdown-helper');
+const cookieParser = require('cookie-parser');
+const session = require('./lib/session');
 const { apiError } = require('./middleware');
 const controller = require('./lib/controller');
 const rpc = require('./rpc');
@@ -49,12 +51,14 @@ if (!isProduction) {
 }
 
 const html = fs.readFileSync(join(__dirname, 'index.html'), 'utf8')
-                .replace('{{{bundle}}}', staticAssets['bundle.js'])
-                .replace('{{{bugsnagScript}}}', bugsnagScript);
+  .replace('{{{bundle}}}', staticAssets['bundle.js'])
+  .replace('{{{bugsnagScript}}}', bugsnagScript);
 
 app.use(logMiddleware({ name: 'BufferAnalyze' }));
+app.use(cookieParser());
 
-app.get('/', (req, res) => res.send(html));
+// All routes after this have access to the user session
+app.use(session.middleware);
 
 app.post('/rpc', (req, res, next) => {
   rpc(req, res)
@@ -67,7 +71,15 @@ app.get('/health-check', controller.healthCheck);
 const favicon = fs.readFileSync(join(__dirname, 'favicon.ico'));
 app.get('/favicon.ico', (req, res) => res.send(favicon));
 
-app.get('/*', (req, res) => res.send(html));
+app.get('*', (req, res) => {
+  if (req.session && req.session.accessToken) {
+    res.send(html);
+  } else {
+    const redirect = encodeURIComponent(`https://${req.get('host')}${req.originalUrl}`);
+    const accountUrl = `https://account${isProduction ? '' : '.local'}.buffer.com/login/`;
+    res.redirect(`${accountUrl}?redirect=${redirect}`);
+  }
+});
 
 app.use(apiError);
 

@@ -16,7 +16,7 @@
   },
   "author": "federicoweber@gmail.com",
   "dependencies": {
-    "@bufferapp/async-data-fetch": "0.5.25",
+    "@bufferapp/async-data-fetch": "0.5.36-beta01",
     "@bufferapp/chronos": "0.6.1"
   },
   "devDependencies": {

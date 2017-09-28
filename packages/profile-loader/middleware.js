@@ -1,8 +1,8 @@
-import { actionTypes, actions as asyncDataFetchActions } from '@bufferapp/async-data-fetch';
+import { actions as asyncDataFetchActions } from '@bufferapp/async-data-fetch';
 
 export default ({ dispatch }) => next => (action) => {
   switch (action.type) {
-    case `login_${actionTypes.FETCH_SUCCESS}`:
+    case 'APP_INIT':
       dispatch(asyncDataFetchActions.fetch({
         name: 'profiles',
       }));
