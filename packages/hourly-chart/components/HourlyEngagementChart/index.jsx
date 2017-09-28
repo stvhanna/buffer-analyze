@@ -82,6 +82,7 @@ HourlyEngagementChart.propTypes = {
     label: PropTypes.string,
     hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
   }),
+  chartRef: PropTypes.func.isRequired,
   timezone: PropTypes.string,
 };
 

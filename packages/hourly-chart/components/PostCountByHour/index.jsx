@@ -97,7 +97,7 @@ const PostCountByHour = ({ posts, timezone, hourlyChart }) => {
       y: postCount,
       color: '#ced7df',
       events: {
-        mouseOver: function() {
+        mouseOver: function() { // eslint-disable-line object-shorthand
           const chart = hourlyChart.getChart();
           const index = this.series.data.indexOf(this);
           const pointsToRefresh = [chart.series[0].points[index]];
@@ -139,6 +139,7 @@ PostCountByHour.defaultProps = {
 PostCountByHour.propTypes = {
   posts: PropTypes.arrayOf(PropTypes.number),
   timezone: PropTypes.string,
+  hourlyChart: PropTypes.node.isRequired,
 };
 
 export default PostCountByHour;

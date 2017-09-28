@@ -1,5 +1,73 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Snapshots Dropdown closed dropdown 1`] = `
+<span>
+  <div>
+    <div
+      className="dropdown dropdownContainer"
+    >
+      <a
+        className="dropdown__trigger dropdownTrigger"
+        onClick={[Function]}
+        style={
+          Object {
+            "display": "flex",
+          }
+        }
+      >
+        This is a dropdown
+        <div
+          className="dropdown__content dropdownContent"
+        >
+          <ul>
+            <li>
+              An item
+            </li>
+            <li>
+              Another item
+            </li>
+          </ul>
+        </div>
+      </a>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots Dropdown open dropdown 1`] = `
+<span>
+  <div>
+    <div
+      className="dropdown dropdownContainer"
+    >
+      <a
+        className="dropdown__trigger dropdownTrigger dropdownTriggerActive"
+        onClick={[Function]}
+        style={
+          Object {
+            "display": "flex",
+          }
+        }
+      >
+        This is a dropdown
+        <div
+          className="dropdown__content dropdownContent dropdownContentActive"
+        >
+          <ul>
+            <li>
+              An item
+            </li>
+            <li>
+              Another item
+            </li>
+          </ul>
+        </div>
+      </a>
+    </div>
+  </div>
+</span>
+`;
+
 exports[`Snapshots GridItem Should render the chart tolltip 1`] = `
 <span>
   <span
@@ -19,7 +87,7 @@ exports[`Snapshots GridItem Should render the chart tolltip 1`] = `
         }
       }
     >
-      25 September
+      28 September
       ,
     </span>
     <span
