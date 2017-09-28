@@ -20,7 +20,7 @@
     }
   },
   "dependencies": {
-    "@bufferapp/async-data-fetch": "0.5.25",
+    "@bufferapp/async-data-fetch": "0.5.36-beta01",
     "@bufferapp/analyze-date-picker": "0.0.1",
     "@bufferapp/analyze-profile-selector": "0.0.1",
     "@bufferapp/analyze-shared-components": "0.0.1",

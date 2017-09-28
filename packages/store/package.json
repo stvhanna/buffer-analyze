@@ -19,9 +19,8 @@
   },
   "author": "hharnisc@gmail.com",
   "dependencies": {
-    "@bufferapp/login": "0.0.1",
     "@bufferapp/analyze-i18n": "0.0.1",
-    "@bufferapp/async-data-fetch": "0.5.25",
+    "@bufferapp/async-data-fetch": "0.5.36-beta01",
     "@bufferapp/app-sidebar": "0.5.28",
     "@bufferapp/average-table": "0.0.1",
     "@bufferapp/nav-sidebar": "0.0.1",

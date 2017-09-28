@@ -7,6 +7,7 @@
     "start": "start-storybook -p 9001",
     "lint": "eslint . --ignore-pattern coverage node_modules",
     "test": "yarn run lint && sh ../../package_test.sh",
+    "test-watch": "jest --watch",
     "test-update": "jest -u"
   },
   "jest": {
@@ -23,7 +24,7 @@
     "numeral": "2.0.6",
     "lodash.clonedeep": "4.5.0",
     "@bufferapp/components": "0.5.28",
-    "@bufferapp/async-data-fetch": "0.5.25",
+    "@bufferapp/async-data-fetch": "0.5.36-beta01",
     "@bufferapp/nav-sidebar": "0.0.1",
     "@bufferapp/analyze-profile-selector": "0.0.1",
     "@bufferapp/analyze-shared-components": "0.0.1",

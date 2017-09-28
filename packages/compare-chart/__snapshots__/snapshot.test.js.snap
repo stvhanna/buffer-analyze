@@ -34,7 +34,7 @@ exports[`Snapshots ChartTooltip should render a no update published message 1`] 
             }
           }
         >
-          12 September
+          11 September
         </span>
         <br />
         <br />
@@ -94,7 +94,7 @@ exports[`Snapshots ChartTooltip should render the tooltip 1`] = `
             }
           }
         >
-          12 September
+          11 September
         </span>
         <br />
         <br />
@@ -245,7 +245,7 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
             }
           }
         >
-          12 September
+          11 September
         </span>
         <span>
           <br />
@@ -271,7 +271,7 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
               }
             }
           >
-            23 August
+            22 August
           </span>
         </span>
         <br />
@@ -510,7 +510,7 @@ exports[`Snapshots ChartTooltip should render the tooltip with twitter specific 
             }
           }
         >
-          12 September
+          11 September
         </span>
         <br />
         <br />
@@ -661,7 +661,7 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip 1`] = `
             }
           }
         >
-          12 September
+          11 September
         </span>
         <br />
         <br />
@@ -763,7 +763,7 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip with previ
             }
           }
         >
-          12 September
+          11 September
         </span>
         <span>
           <br />
@@ -789,7 +789,7 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip with previ
               }
             }
           >
-            23 August
+            22 August
           </span>
         </span>
         <br />
@@ -4757,184 +4757,6 @@ exports[`Snapshots MetricsDropdown should render the dropdown 1`] = `
         </ul>
       </div>
     </div>
-  </div>
-</span>
-`;
-
-exports[`Snapshots ModeToggle should render an active toggle 1`] = `
-<span>
-  <div
-    style={
-      Object {
-        "width": "750px",
-      }
-    }
-  >
-    <span
-      style={
-        Object {
-          "marginLeft": "auto",
-        }
-      }
-    >
-      <button
-        aria-label={null}
-        disabled={undefined}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        style={
-          Object {
-            "background": "none",
-            "backgroundColor": "unset",
-            "border": "none",
-            "borderRadius": "unset",
-            "color": "unset",
-            "cursor": "pointer",
-            "display": "unset",
-            "fontFamily": "unset",
-            "fontSize": "unset",
-            "fontWeight": "unset",
-            "lineHeight": "unset",
-            "margin": "unset",
-            "outline": "none",
-            "padding": 0,
-            "transition": "unset",
-          }
-        }
-      >
-        <span
-          className="leftButton"
-        >
-          mode1
-        </span>
-      </button>
-      <button
-        aria-label={null}
-        disabled={undefined}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        style={
-          Object {
-            "background": "none",
-            "backgroundColor": "unset",
-            "border": "none",
-            "borderRadius": "unset",
-            "color": "unset",
-            "cursor": "pointer",
-            "display": "unset",
-            "fontFamily": "unset",
-            "fontSize": "unset",
-            "fontWeight": "unset",
-            "lineHeight": "unset",
-            "margin": "unset",
-            "outline": "none",
-            "padding": 0,
-            "transition": "unset",
-          }
-        }
-      >
-        <span
-          className="rightButton activeButton"
-        >
-          mode2
-        </span>
-      </button>
-    </span>
-  </div>
-</span>
-`;
-
-exports[`Snapshots ModeToggle should render an inactive toggle 1`] = `
-<span>
-  <div
-    style={
-      Object {
-        "width": "750px",
-      }
-    }
-  >
-    <span
-      style={
-        Object {
-          "marginLeft": "auto",
-        }
-      }
-    >
-      <button
-        aria-label={null}
-        disabled={undefined}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        style={
-          Object {
-            "background": "none",
-            "backgroundColor": "unset",
-            "border": "none",
-            "borderRadius": "unset",
-            "color": "unset",
-            "cursor": "pointer",
-            "display": "unset",
-            "fontFamily": "unset",
-            "fontSize": "unset",
-            "fontWeight": "unset",
-            "lineHeight": "unset",
-            "margin": "unset",
-            "outline": "none",
-            "padding": 0,
-            "transition": "unset",
-          }
-        }
-      >
-        <span
-          className="leftButton activeButton"
-        >
-          mode1
-        </span>
-      </button>
-      <button
-        aria-label={null}
-        disabled={undefined}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        style={
-          Object {
-            "background": "none",
-            "backgroundColor": "unset",
-            "border": "none",
-            "borderRadius": "unset",
-            "color": "unset",
-            "cursor": "pointer",
-            "display": "unset",
-            "fontFamily": "unset",
-            "fontSize": "unset",
-            "fontWeight": "unset",
-            "lineHeight": "unset",
-            "margin": "unset",
-            "outline": "none",
-            "padding": 0,
-            "transition": "unset",
-          }
-        }
-      >
-        <span
-          className="rightButton"
-        >
-          mode2
-        </span>
-      </button>
-    </span>
   </div>
 </span>
 `;

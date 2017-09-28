@@ -1,6 +1,5 @@
 import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
-import { reducer as loginReducer } from '@bufferapp/login';
 import { reducer as i18nReducer } from '@bufferapp/analyze-i18n';
 import { reducer as appSidebarReducer } from '@bufferapp/app-sidebar';
 import { reducer as asyncDataFetchReducer } from '@bufferapp/async-data-fetch';
@@ -18,7 +17,6 @@ import { reducer as hourly } from '@bufferapp/hourly-chart';
 import { reducer as compareChartReducer } from '@bufferapp/compare-chart';
 
 export default combineReducers({
-  login: loginReducer,
   router: routerReducer,
   appSidebar: appSidebarReducer,
   asyncDataFetch: asyncDataFetchReducer,

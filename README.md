@@ -65,7 +65,7 @@ This makes `some-cool-package` available to all packages
 
 ### Creating A Dependency To Another Local Package
 
-To create a dependency to the login package from the a package:
+To create a dependency to the shared-components package from the a package:
 
 In the `foo` package add the following entry in the `packages/foo/package.json` file under the dependencies key:
 
@@ -74,7 +74,7 @@ In the `foo` package add the following entry in the `packages/foo/package.json` 
   //...other stuff...
   dependencies:{
     //...other dependencies...
-    "@bufferapp/login": "0.0.1", // this version must be exact otherwise it fetches from npm
+    "@bufferapp/shared-components": "0.0.1", // this version must be exact otherwise it fetches from npm
   }
 }
 ```
@@ -108,16 +108,13 @@ If you need to listen to another packages events, import the actionTypes into th
 
 
 ```js
-//reducer.js - in @bufferapp/foo package
-import { actionTypes, loginActionTypes } from '@bufferapp/login';
-
 // handle login event
 export default (state, action) => {
   switch (action.type) {
-    case loginActionTypes.LOGIN_SUCCESS:
+    case 'APP_INIT':
       return {
         ...state,
-        loggedIn: true,
+        initialized: true,
       };
     default:
       return state;

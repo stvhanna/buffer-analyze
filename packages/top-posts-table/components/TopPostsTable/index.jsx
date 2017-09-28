@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import cloneDeep from 'lodash.clonedeep';
 
 import {
   Text,
@@ -13,6 +12,7 @@ import {
 
 import Title from '../Title';
 import PostItem from '../PostItem';
+import TopPostsHeader from '../TopPostsHeader';
 
 import {
   postsContainer,
@@ -27,24 +27,22 @@ import { metricsConfig } from '../../metrics';
 const gridContainer = {
   minHeight: '12rem',
   position: 'relative',
-  margin: '1rem 0 1.5rem',
 };
 
-
-function mergePostMetrics(post, postMetrics) {
-  const postStatistics = post.statistics;
-
-  post.statistics = {};
-
-  postMetrics.forEach((postMetricConfig) => {
-    const postMetric = cloneDeep(postMetricConfig);
-
-    postMetric.value = postStatistics[postMetric.apiKey];
-    post.statistics[postMetricConfig.key] = postStatistics[postMetric.apiKey];
-  });
-
-  return post;
-}
+const defaultSortMetrics = {
+  facebook: {
+    key: 'post_impressions',
+    label: 'Post Impressions',
+  },
+  twitter: {
+    key: 'impressions',
+    label: 'Impressions',
+  },
+  instagram: {
+    key: 'likes',
+    label: 'Likes',
+  },
+};
 
 function getMaxMetricValue(posts, metrics) {
   let max = 0;
@@ -67,61 +65,80 @@ const TopPostsTable = (props) => {
     profileTimezone,
     startDate,
     endDate,
+    isDropdownOpen,
+    isDescendingSelected,
+    selectedMetric,
+    selectMetric,
+    toggleDropdown,
+    handlePostsCountClick,
+    activePostsCount,
   } = props;
 
+  // TODO: Move this to RPC endpoint and pass it as a prop to TopPostTable components
   const allPostMetrics = metricsConfig[profileService].postMetrics;
   const engagementMetrics = metricsConfig[profileService].topPostsEngagementMetrics;
   const audienceMetrics = metricsConfig[profileService].topPostsAudienceMetrics;
 
-  const posts = topPosts.map(post => mergePostMetrics(post, allPostMetrics));
+  const initialSelectedMetric = Object.keys(selectedMetric).length === 0 ?
+    defaultSortMetrics[profileService] : selectedMetric;
 
-  const maxEngagementValue = getMaxMetricValue(posts, engagementMetrics);
-  const maxAudienceValue = getMaxMetricValue(posts, audienceMetrics);
-
-  const slicedPosts = posts.slice(0, 10);
+  const maxEngagementValue = getMaxMetricValue(topPosts, engagementMetrics);
+  const maxAudienceValue = getMaxMetricValue(topPosts, audienceMetrics);
 
   let content = null;
   if (loading) {
     content = <Loading active text="Top Posts Loading..." />;
-  } else if (slicedPosts.length === 0) {
+  } else if (topPosts.length === 0) {
     content = <NoData />;
   } else {
     content = (
-      <aside className={chartContainer}>
-        <header>
-          <ul className={chartColumnHeader}>
-            <li className={contentColumn}>
-              <Text size="mini">Posts and Stories</Text>
-            </li>
-            <li className={metricColumn}>
-              <Text size="mini">Engagements</Text>
-            </li>
-            <li className={metricColumn}>
-              <Text size="mini">Audience</Text>
-            </li>
+      <div>
+        <TopPostsHeader
+          metrics={allPostMetrics}
+          selectedMetric={initialSelectedMetric}
+          isDescendingSelected={isDescendingSelected}
+          selectMetric={selectMetric}
+          toggleDropdown={toggleDropdown}
+          isDropdownOpen={isDropdownOpen}
+          handlePostsCountClick={handlePostsCountClick}
+          activePostsCount={activePostsCount}
+        />
+        <aside className={chartContainer}>
+          <header>
+            <ul className={chartColumnHeader}>
+              <li className={contentColumn}>
+                <Text size="mini">Posts and Stories</Text>
+              </li>
+              <li className={metricColumn}>
+                <Text size="mini">Engagements</Text>
+              </li>
+              <li className={metricColumn}>
+                <Text size="mini">Audience</Text>
+              </li>
+            </ul>
+          </header>
+          <ul className={postsContainer}>
+            {topPosts.map(post =>
+              <PostItem
+                key={post.id}
+                profileTimezone={profileTimezone}
+                post={post}
+                maxEngagementValue={maxEngagementValue}
+                maxAudienceValue={maxAudienceValue}
+                engagementMetrics={engagementMetrics}
+                audienceMetrics={audienceMetrics}
+              />,
+            )}
           </ul>
-        </header>
-        <ul className={postsContainer}>
-          {slicedPosts.map(post =>
-            <PostItem
-              key={post.id}
-              profileTimezone={profileTimezone}
-              post={post}
-              maxEngagementValue={maxEngagementValue}
-              maxAudienceValue={maxAudienceValue}
-              engagementMetrics={engagementMetrics}
-              audienceMetrics={audienceMetrics}
-            />,
-          )}
-        </ul>
-      </aside>
+        </aside>
+      </div>
     );
   }
 
   return (
     <div>
       <Title startDate={startDate} endDate={endDate} />
-      <div id="js-dom-to-png-top-posts" style={gridContainer}>
+      <div style={gridContainer}>
         {content}
       </div>
     </div>
@@ -132,6 +149,7 @@ TopPostsTable.defaultProps = {
   loading: false,
   startDate: null,
   endDate: null,
+  isDropdownOpen: false,
 };
 
 TopPostsTable.propTypes = {
@@ -155,6 +173,16 @@ TopPostsTable.propTypes = {
     text: PropTypes.string,
     type: PropTypes.string,
   })).isRequired,
+  isDropdownOpen: PropTypes.bool,
+  isDescendingSelected: PropTypes.bool.isRequired,
+  selectedMetric: PropTypes.shape({
+    key: PropTypes.string,
+    label: PropTypes.string,
+  }).isRequired,
+  toggleDropdown: PropTypes.func.isRequired,
+  selectMetric: PropTypes.func.isRequired,
+  handlePostsCountClick: PropTypes.func.isRequired,
+  activePostsCount: PropTypes.number.isRequired,
 };
 
 export default TopPostsTable;

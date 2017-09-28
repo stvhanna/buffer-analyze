@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import moment from 'moment-timezone';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
 import {
@@ -9,6 +10,7 @@ import GridItem from './index';
 import ChartTooltip from './components/ChartTooltip';
 import mockDailyData from './mock/dailyData';
 
+const dayTimestamp = moment.tz(Number(mockDailyData[0].day), 'Etc/UTC').startOf('day').valueOf();
 
 storiesOf('GridItem')
   .addDecorator(checkA11y)
@@ -175,9 +177,8 @@ storiesOf('GridItem')
     <ChartTooltip
       point={{
         label: 'Engagement average',
-        x: 1504137600000,
+        x: dayTimestamp,
         y: 42,
-        timezone: 'Etc/UTC',
       }}
       dailyData={mockDailyData}
     />
@@ -186,9 +187,8 @@ storiesOf('GridItem')
     <ChartTooltip
       point={{
         label: '',
-        x: 1504137600000,
+        x: dayTimestamp,
         y: 0,
-        timezone: 'Etc/UTC',
       }}
       dailyData={mockDailyData}
     />

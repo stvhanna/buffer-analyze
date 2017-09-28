@@ -5,7 +5,6 @@ import {
 } from 'redux';
 import { routerMiddleware } from 'react-router-redux';
 import createHistory from 'history/createBrowserHistory';
-import { middleware as loginMiddleware } from '@bufferapp/login';
 import { middleware as appSidebarMiddleware } from '@bufferapp/app-sidebar';
 import { middleware as i18nMiddleware } from '@bufferapp/analyze-i18n';
 import { middleware as asyncDataFetchMiddleware } from '@bufferapp/async-data-fetch';
@@ -38,7 +37,6 @@ const configureStore = (initialstate) => {
       applyMiddleware(
         routerMiddleware(history),
         asyncDataFetchMiddleware,
-        loginMiddleware,
         i18nMiddleware,
         appSidebarMiddleware,
         navSidebarMiddleware,

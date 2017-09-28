@@ -5,7 +5,7 @@ import Text from '@bufferapp/components/Text';
 import { PeriodPhrase } from '@bufferapp/analyze-shared-components';
 
 const title = {
-  margin: '2rem 0 1rem',
+  margin: '2rem 0 0',
 };
 
 const Title = ({ startDate, endDate }) =>
