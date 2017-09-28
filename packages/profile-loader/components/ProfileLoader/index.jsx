@@ -8,6 +8,7 @@ const pageContentStyle = {
   flexGrow: 1,
   flexDirection: 'column',
   height: '100vh',
+  maxWidth: '70rem',
 };
 
 const ProfileLoader = ({ loading, children }) => {

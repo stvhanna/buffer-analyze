@@ -18,6 +18,7 @@ import { middleware as postsSummaryMiddleware } from '@bufferapp/posts-summary-t
 import { middleware as averageMiddleware } from '@bufferapp/average-table';
 import { middleware as exportToPNGMiddleware } from '@bufferapp/analyze-png-export';
 import { middleware as topPostsMiddleware } from '@bufferapp/top-posts-table';
+import { middleware as hourly } from '@bufferapp/hourly-chart';
 import { middleware as compareChartMiddleware } from '@bufferapp/compare-chart';
 import reducers from './reducers';
 
@@ -47,6 +48,7 @@ const configureStore = (initialstate) => {
         postsSummaryMiddleware,
         averageMiddleware,
         topPostsMiddleware,
+        hourly,
         compareChartMiddleware,
         exportToPNGMiddleware,
       ),

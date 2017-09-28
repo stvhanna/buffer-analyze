@@ -13,6 +13,7 @@ import { reducer as postsSummaryReducer } from '@bufferapp/posts-summary-table';
 import { reducer as averageReducer } from '@bufferapp/average-table';
 import { reducer as exportToPNGReducer } from '@bufferapp/analyze-png-export';
 import { reducer as topPostsReducer } from '@bufferapp/top-posts-table';
+import { reducer as hourly } from '@bufferapp/hourly-chart';
 import { reducer as compareChartReducer } from '@bufferapp/compare-chart';
 
 export default combineReducers({
@@ -28,7 +29,8 @@ export default combineReducers({
   date: datePickerReducer,
   profileLoader: profileLoaderReducer,
   postsSummary: postsSummaryReducer,
-  exportToPNG: exportToPNGReducer,
   topPosts: topPostsReducer,
+  hourly,
+  exportToPNG: exportToPNGReducer,
   compare: compareChartReducer,
 });
