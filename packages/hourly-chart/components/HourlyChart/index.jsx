@@ -32,19 +32,37 @@ const gridContainer = {
   border: `1px solid ${geyser}`,
 };
 
-const ChartContent = props => (
-  <div>
-    <ChartHeader {...props} />
-    <HourlyEngagementChart
-      posts={props.postsCount}
-      metric={props.selectedMetric}
-      secondaryMetric={props.secondaryMetric}
-      timezone={props.timezone}
-    />
-    <PostCountByHour posts={props.postsCount} timezone={props.timezone} />
-    <Legend metric={props.selectedMetric} secondaryMetric={props.secondaryMetric} />
-  </div>
-);
+class ChartContent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      _chart: null,
+    };
+  }
+  componentDidMount() {
+    this.setState({
+      _chart: this._chart,
+    });
+  }
+  render() {
+    return (
+      <div>
+        <ChartHeader {...this.props} />
+        <HourlyEngagementChart
+          posts={this.props.postsCount}
+          metric={this.props.selectedMetric}
+          secondaryMetric={this.props.secondaryMetric}
+          timezone={this.props.timezone}
+          chartRef={(node) => {
+            this._chart = node;
+          }}
+        />
+        <PostCountByHour posts={this.props.postsCount} hourlyChart={this.state._chart} timezone={this.props.timezone} />
+        <Legend metric={this.props.selectedMetric} secondaryMetric={this.props.secondaryMetric} />
+      </div>
+    );
+  }
+}
 
 ChartContent.defaultProps = {
   selectedMetric: 0,

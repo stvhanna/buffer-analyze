@@ -11,6 +11,8 @@ const highChartsTweetsConfigXAxis = {
   gridLineWidth: 1,
   gridLineColor: '#F3F5F7',
   lineColor: '#E6EBEF',
+  min: moment().startOf('day').valueOf(),
+  max: moment().endOf('day').valueOf(),
   minorTickWidth: 0,
   minorGridLineWidth: 1,
   minorGridLineColor: '#F3F5F7',
@@ -21,7 +23,7 @@ const highChartsTweetsConfigXAxis = {
   tickPixelInterval: 3600 * 24 * 1000,
   tickLength: 20,
   showLastLabel: false,
-  endOnTick: true,
+  endOnTick: false,
   startOnTick: false,
   labels: {
     formatter: function() { // eslint-disable-line object-shorthand
@@ -85,13 +87,29 @@ const seriesConfig = {
   name: 'Tweets',
 };
 
-const PostCountByHour = ({ posts, timezone }) => {
+const mouseOut = chart => chart.getChart().tooltip.hide();
+
+const PostCountByHour = ({ posts, timezone, hourlyChart }) => {
   const hour = moment().startOf('day');
   const postsByHour = posts.map((postCount) => {
     const post = {
       x: hour.valueOf(),
       y: postCount,
       color: '#ced7df',
+      events: {
+        mouseOver: function() {
+          const chart = hourlyChart.getChart();
+          const index = this.series.data.indexOf(this);
+          const pointsToRefresh = [chart.series[0].points[index]];
+
+          if (chart.series[1] && chart.series[1].visible) {
+            pointsToRefresh.push(chart.series[1].points[index]);
+          }
+
+          chart.tooltip.refresh(pointsToRefresh);
+        },
+        mouseOut: (() => mouseOut(hourlyChart)),
+      },
     };
     hour.add(1, 'hour');
     return post;

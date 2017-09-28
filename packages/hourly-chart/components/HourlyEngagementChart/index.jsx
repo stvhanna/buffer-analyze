@@ -13,7 +13,7 @@ import {
   secondarySeriesConfig,
 } from './config';
 
-const HourlyEngagementChart = ({ metric, secondaryMetric, posts, timezone }) => {
+const HourlyEngagementChart = ({ metric, secondaryMetric, posts, timezone, chartRef }) => {
   let hour = moment().startOf('day').subtract(1, 'hour');
   const metricByHour = metric.hourlyMetrics.map((hourlyMetric, index) => {
     hour.add(1, 'hour');
@@ -60,7 +60,7 @@ const HourlyEngagementChart = ({ metric, secondaryMetric, posts, timezone }) => 
     });
   }
 
-  return <ReactHighcharts isPureConfig config={config} />;
+  return <ReactHighcharts ref={chartRef} isPureConfig config={config} />;
 };
 
 HourlyEngagementChart.defaultProps = {
