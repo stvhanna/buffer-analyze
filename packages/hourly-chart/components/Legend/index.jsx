@@ -34,12 +34,16 @@ const Legend = ({ metric, secondaryMetric }) =>
   </ul>;
 
 Legend.propTypes = {
+  secondaryMetric: null,
+};
+
+Legend.propTypes = {
   metric: PropTypes.shape({
     label: PropTypes.string,
   }).isRequired,
   secondaryMetric: PropTypes.shape({
     label: PropTypes.string,
-  }).isRequired,
+  }),
 };
 
 export default Legend;

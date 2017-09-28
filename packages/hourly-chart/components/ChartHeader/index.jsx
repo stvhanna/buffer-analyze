@@ -76,10 +76,12 @@ SecondaryMetricToggle.propTypes = {
   hideSecondaryDropdown: PropTypes.func.isRequired,
   secondaryDropdownOpen: PropTypes.bool.isRequired,
   selectMetric: PropTypes.func.isRequired,
-  metric: PropTypes.string,
+  metric: PropTypes.shape({
+    label: PropTypes.string,
+    hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
+  }),
   metrics: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string,
-    color: PropTypes.string,
     hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
   })).isRequired,
 };

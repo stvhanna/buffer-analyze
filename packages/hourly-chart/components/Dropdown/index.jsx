@@ -53,18 +53,19 @@ MetricDropdown.defaultProps = {
   metrics: [],
   open: false,
   secondary: false,
-  selectedMetric: 0,
 };
 
 MetricDropdown.propTypes = {
   open: PropTypes.bool,
   secondary: PropTypes.bool,
-  selectedMetric: PropTypes.number,
+  selectedMetric: PropTypes.shape({
+    label: PropTypes.string,
+    hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
+  }).isRequired,
   selectMetric: PropTypes.func.isRequired,
   toggleDropdown: PropTypes.func.isRequired,
   metrics: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string,
-    color: PropTypes.string,
     hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
   })),
 };

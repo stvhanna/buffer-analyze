@@ -134,12 +134,15 @@ const PostCountByHour = ({ posts, timezone, hourlyChart }) => {
 PostCountByHour.defaultProps = {
   posts: [],
   timezone: 'America/Los_Angeles',
+  hourlyChart: null,
 };
 
 PostCountByHour.propTypes = {
   posts: PropTypes.arrayOf(PropTypes.number),
   timezone: PropTypes.string,
-  hourlyChart: PropTypes.node.isRequired,
+  hourlyChart: PropTypes.shape({
+    getChart: PropTypes.func,
+  }),
 };
 
 export default PostCountByHour;

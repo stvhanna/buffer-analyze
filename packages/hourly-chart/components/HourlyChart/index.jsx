@@ -69,15 +69,20 @@ class ChartContent extends React.Component {
 }
 
 ChartContent.defaultProps = {
-  selectedMetric: 0,
   secondaryMetric: null,
   postsCount: [],
   timezone: 'America/Los_Angeles',
 };
 
 ChartContent.propTypes = {
-  selectedMetric: PropTypes.string,
-  secondaryMetric: PropTypes.string,
+  selectedMetric: PropTypes.shape({
+    label: PropTypes.string,
+    hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
+  }).isRequired,
+  secondaryMetric: PropTypes.shape({
+    label: PropTypes.string,
+    hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
+  }),
   postsCount: PropTypes.arrayOf(PropTypes.number),
   timezone: PropTypes.string,
 };
