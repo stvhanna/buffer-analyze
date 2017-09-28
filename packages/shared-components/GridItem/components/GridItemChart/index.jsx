@@ -7,18 +7,10 @@ import chartConfig from './chartConfig';
 
 function prepareSeries(dailyMetric, timezone) {
   const seriesData = Array.from(dailyMetric, (day) => {
-    // This is needed cause charts time need to be in utc to snap markers on the grid
-    // but we want to display the data in the profile timezone
-    const chartTime = moment.utc(Number(day.day)).startOf('day');
-    const dayWithTimezone = moment.tz(Number(day.day), timezone).startOf('day');
-    if (dayWithTimezone.utcOffset() < 0) {
-      chartTime.subtract(1, 'day');
-    }
-
+    const dayStartTimestamp = moment(Number(day.day)).startOf('day').valueOf();
     return {
-      x: chartTime.valueOf(),
+      x: dayStartTimestamp,
       y: day.metric ? day.metric.value : 0,
-      tooltipTime: Number(day.day),
       label: day.metric ? day.metric.label : '',
       timezone,
       color: {

@@ -48,19 +48,14 @@ function prepareSeries(
       }
     }
 
-    // This is needed cause charts time need to be in utc to snap markers on the grid
-    // but we want to display the data in the profile timezone
-    const chartTime = moment.utc(Number(day.day)).startOf('day');
-    const dayWithTimezone = moment.tz(Number(day.day), timezone).startOf('day');
-    if (dayWithTimezone.utcOffset() < 0) {
-      chartTime.subtract(1, 'day');
-    }
+    const dayStartTimestamp = moment.tz(Number(day.day), timezone).startOf('day').valueOf();
+    const previousPeriodDay = moment.tz(Number(day.previousPeriodDay), timezone).startOf('day').valueOf();
+
     return {
-      x: chartTime.valueOf(),
+      x: dayStartTimestamp,
       y: value,
       metricData: Object.assign({}, day.metric, {
-        day: Number(day.day),
-        previousPeriodDay: Number(day.previousPeriodDay),
+        previousPeriodDay,
         profileService,
         timezone,
         visualizePreviousPeriod,
@@ -90,6 +85,7 @@ function prepareSeries(
 
 function prepareChartOptions(dailyMetric, timezone, visualizePreviousPeriod, profileService) {
   const config = Object.assign({}, chartConfig);
+
   config.xAxis.minorTickInterval = getTickInterval(dailyMetric);
   config.series = [
     prepareSeries(dailyMetric, timezone, visualizePreviousPeriod, profileService),
@@ -111,7 +107,14 @@ const Chart = ({ dailyData, timezone, visualizePreviousPeriod, profileService })
     visualizePreviousPeriod,
     profileService,
   );
-  return (<ReactHighcharts config={charOptions} timezone={timezone} />);
+  ReactHighcharts.Highcharts.setOptions(
+    {
+      global: {
+        getTimezoneOffset: timestamp => -moment.tz(timestamp, timezone).utcOffset(),
+      },
+    },
+  );
+  return (<ReactHighcharts config={charOptions} />);
 };
 
 Chart.propTypes = {

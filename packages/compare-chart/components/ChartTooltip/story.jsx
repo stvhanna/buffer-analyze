@@ -1,7 +1,11 @@
 import React from 'react';
+import moment from 'moment-timezone';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
 import ChartTooltip from './index';
+
+const dayTimestamp = moment(1505174400000).startOf('day').valueOf();
+const previousDayTimestamp = moment(1503446400000).startOf('day').valueOf();
 
 storiesOf('ChartTooltip')
   .addDecorator(checkA11y)
@@ -13,12 +17,13 @@ storiesOf('ChartTooltip')
     >
       <ChartTooltip
         color="#fda3f3"
-        day={1505174400000}
-        previousPeriodDay={1503446400000}
+        day={dayTimestamp}
+        previousPeriodDay={previousDayTimestamp}
         label="Engagements"
         postsCount={5}
         value={42}
         profileService="facebook"
+        timezone="America/New_York"
       />
     </div>
   ))
@@ -30,12 +35,13 @@ storiesOf('ChartTooltip')
     >
       <ChartTooltip
         color="#fda3f3"
-        day={1505174400000}
-        previousPeriodDay={1503446400000}
+        day={dayTimestamp}
+        previousPeriodDay={previousDayTimestamp}
         label="Engagements"
         postsCount={5}
         value={42}
         profileService="twitter"
+        timezone="America/New_York"
       />
     </div>
   ))
@@ -47,8 +53,8 @@ storiesOf('ChartTooltip')
     >
       <ChartTooltip
         color="#fda3f3"
-        day={1505174400000}
-        previousPeriodDay={1503446400000}
+        day={dayTimestamp}
+        previousPeriodDay={previousDayTimestamp}
         label="Engagements"
         postsCount={5}
         previousPostsCount={10}
@@ -56,6 +62,7 @@ storiesOf('ChartTooltip')
         previousValue={100}
         visualizePreviousPeriod
         profileService="facebook"
+        timezone="America/New_York"
       />
     </div>
   ))
@@ -67,12 +74,13 @@ storiesOf('ChartTooltip')
     >
       <ChartTooltip
         color="#fda3f3"
-        day={1505174400000}
-        previousPeriodDay={1503446400000}
+        day={dayTimestamp}
+        previousPeriodDay={previousDayTimestamp}
         label="Posts"
         postsCount={5}
         value={42}
         profileService="facebook"
+        timezone="America/New_York"
       />
     </div>
   ))
@@ -84,14 +92,15 @@ storiesOf('ChartTooltip')
     >
       <ChartTooltip
         color="#fda3f3"
-        day={1505174400000}
-        previousPeriodDay={1503446400000}
+        day={dayTimestamp}
+        previousPeriodDay={previousDayTimestamp}
         label="Posts"
         postsCount={5}
         previousPostsCount={10}
         value={42}
         visualizePreviousPeriod
         profileService="facebook"
+        timezone="America/New_York"
       />
     </div>
   ))
@@ -102,9 +111,10 @@ storiesOf('ChartTooltip')
       }}
     >
       <ChartTooltip
-        day={1505174400000}
-        previousPeriodDay={1503446400000}
+        day={dayTimestamp}
+        previousPeriodDay={previousDayTimestamp}
         profileService="facebook"
+        timezone="America/New_York"
       />
     </div>
   ));
