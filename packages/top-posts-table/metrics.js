@@ -1,4 +1,4 @@
-const instagram = {};
+export const instagram = {};
 
 instagram.commentsMetric = {
   label: 'Comments',
@@ -36,11 +36,12 @@ twitter.retweetsMetric = {
   key: 'retweets',
   apiKey: 'retweets',
   color: '#FD8F90',
+  value: 0,
 };
 
 twitter.clicksMetric = {
   label: 'Clicks',
-  key: 'clicks',
+  key: 'url_clicks',
   apiKey: 'url_clicks',
   color: '#98E8B2',
   value: 0,
@@ -56,7 +57,7 @@ twitter.impressionsMetric = {
 
 twitter.likesMetric = {
   label: 'Likes',
-  key: 'likes',
+  key: 'favorites',
   apiKey: 'favorites',
   color: '#8FC6DB',
   value: 0,
@@ -69,10 +70,10 @@ twitter.topPostsEngagementMetrics = [
 ];
 
 twitter.postMetrics = [
+  twitter.impressionsMetric,
   twitter.clicksMetric,
   twitter.retweetsMetric,
   twitter.likesMetric,
-  twitter.impressionsMetric,
 ];
 
 twitter.topPostsAudienceMetrics = [
@@ -92,7 +93,7 @@ facebook.commentsMetric = {
 
 facebook.postClicksMetric = {
   label: 'Post Clicks',
-  key: 'postClicks',
+  key: 'post_clicks',
   apiKey: 'post_clicks',
   color: '#98E8B2',
   value: 0,
@@ -100,7 +101,7 @@ facebook.postClicksMetric = {
 
 facebook.impressionsMetric = {
   label: 'Post Impressions',
-  key: 'postImpressions',
+  key: 'post_impressions',
   apiKey: 'post_impressions',
   color: '#8AC6DE',
   value: 0,
@@ -108,7 +109,7 @@ facebook.impressionsMetric = {
 
 facebook.postReachMetric = {
   label: 'Post Reach',
-  key: 'postReach',
+  key: 'post_reach',
   apiKey: 'post_reach',
   color: '#FFC880',
   value: 0,

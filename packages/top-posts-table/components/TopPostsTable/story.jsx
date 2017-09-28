@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
+import { action } from '@storybook/addon-actions';
 import TopPostsTable from './index';
 
 const topPosts = [
@@ -80,6 +81,34 @@ storiesOf('TopPostsTable')
         profileTimezone={'America/Los_Angeles'}
         profileService={'facebook'}
         topPosts={topPosts}
+        selectMetric={action('selectMetric')}
+        selectedMetric={{
+          key: 'post_impressions',
+          label: 'Post Impressions',
+        }}
+        toggleDropdown={action('toggleDropdown')}
+        isDescendingSelected
+        handlePostsCountClick={action('handlePostsCountClick')}
+        activePostsCount={10}
+      />
+    </div>
+  ))
+  .add('should render the top posts table with default selected metric', () => (
+    <div
+      style={{
+        width: '750px',
+      }}
+    >
+      <TopPostsTable
+        profileTimezone={'America/Los_Angeles'}
+        profileService={'facebook'}
+        topPosts={topPosts}
+        selectMetric={action('selectMetric')}
+        selectedMetric={{}}
+        toggleDropdown={action('toggleDropdown')}
+        isDescendingSelected
+        handlePostsCountClick={action('handlePostsCountClick')}
+        activePostsCount={10}
       />
     </div>
   ))
@@ -94,6 +123,15 @@ storiesOf('TopPostsTable')
         profileService={'facebook'}
         loading
         topPosts={[]}
+        selectMetric={action('selectMetric')}
+        selectedMetric={{
+          key: 'post_impressions',
+          label: 'Post Impressions',
+        }}
+        toggleDropdown={action('toggleDropdown')}
+        isDescendingSelected
+        handlePostsCountClick={action('handlePostsCountClick')}
+        activePostsCount={10}
       />
     </div>
   ))
@@ -107,6 +145,15 @@ storiesOf('TopPostsTable')
         profileTimezone={'America/Los_Angeles'}
         profileService={'facebook'}
         topPosts={[]}
+        selectMetric={action('selectMetric')}
+        selectedMetric={{
+          key: 'post_impressions',
+          label: 'Post Impressions',
+        }}
+        toggleDropdown={action('toggleDropdown')}
+        isDescendingSelected
+        handlePostsCountClick={action('handlePostsCountClick')}
+        activePostsCount={10}
       />
     </div>
   ));
