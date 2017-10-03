@@ -40,7 +40,7 @@ const DatePicker = (props) => {
         </DatePickerDropdown>
       }
 
-      <div tabIndex="0" role="button" onClick={close} className={clickCatcherClass} />
+      <div style={{ zIndex: 1 }} tabIndex="0" role="button" onClick={close} className={clickCatcherClass} />
     </div>
   );
 };
