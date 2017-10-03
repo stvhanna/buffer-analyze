@@ -297,6 +297,11 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
       className="clickCatcher"
       onClick={undefined}
       role="button"
+      style={
+        Object {
+          "zIndex": 1,
+        }
+      }
       tabIndex="0"
     />
   </div>
@@ -600,6 +605,11 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
       className="clickCatcher clickCatcherActive"
       onClick={[Function]}
       role="button"
+      style={
+        Object {
+          "zIndex": 1,
+        }
+      }
       tabIndex="0"
     />
   </div>
@@ -2763,6 +2773,11 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
       className="clickCatcher clickCatcherActive"
       onClick={undefined}
       role="button"
+      style={
+        Object {
+          "zIndex": 1,
+        }
+      }
       tabIndex="0"
     />
   </div>
@@ -4926,6 +4941,11 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
       className="clickCatcher clickCatcherActive"
       onClick={undefined}
       role="button"
+      style={
+        Object {
+          "zIndex": 1,
+        }
+      }
       tabIndex="0"
     />
   </div>
@@ -5229,6 +5249,11 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
       className="clickCatcher clickCatcherActive"
       onClick={[Function]}
       role="button"
+      style={
+        Object {
+          "zIndex": 1,
+        }
+      }
       tabIndex="0"
     />
   </div>
@@ -5532,6 +5557,11 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
       className="clickCatcher"
       onClick={undefined}
       role="button"
+      style={
+        Object {
+          "zIndex": 1,
+        }
+      }
       tabIndex="0"
     />
   </div>
@@ -5604,6 +5634,11 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
       className="clickCatcher"
       onClick={undefined}
       role="button"
+      style={
+        Object {
+          "zIndex": 1,
+        }
+      }
       tabIndex="0"
     />
   </div>
@@ -5907,6 +5942,11 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
       className="clickCatcher clickCatcherActive"
       onClick={undefined}
       role="button"
+      style={
+        Object {
+          "zIndex": 1,
+        }
+      }
       tabIndex="0"
     />
   </div>
