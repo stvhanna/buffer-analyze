@@ -39,6 +39,7 @@ function renderDropdownItem(metric, selectedMetricLabel, selectMetric) {
 const MetricsDropdown = ({
   isDropdownOpen,
   metrics,
+  secondary,
   selectedMetricLabel,
   selectMetric,
   openDropdown,
@@ -62,6 +63,7 @@ const MetricsDropdown = ({
         className={dropdownContainer}
         onShow={openDropdown}
         onHide={closeDropdown}
+        style={{ marginLeft: `${secondary ? '0.5rem' : ''}` }}
       >
         <DropdownTrigger className={triggerClasses} style={{ display: 'flex' }} >
           <Text weight="bold" size="small">{selectedMetric.label}</Text>
@@ -86,6 +88,7 @@ MetricsDropdown.propTypes = {
     label: PropTypes.string.isRequired,
     color: PropTypes.string.isRequired,
   })).isRequired,
+  secondary: PropTypes.bool,
   isDropdownOpen: PropTypes.bool,
   selectedMetricLabel: PropTypes.string.isRequired,
   selectMetric: PropTypes.func.isRequired,
@@ -94,6 +97,7 @@ MetricsDropdown.propTypes = {
 };
 
 MetricsDropdown.defaultProps = {
+  secondary: false,
   isDropdownOpen: false,
 };
 

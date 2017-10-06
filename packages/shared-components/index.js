@@ -9,3 +9,4 @@ export ProfileBadge from './ProfileBadge';
 export SocialIcon from './SocialIcon';
 export TruncatedNumber from './TruncatedNumber';
 export ModeToggle from './ModeToggle';
+export MetricsDropdown from './MetricsDropdown';

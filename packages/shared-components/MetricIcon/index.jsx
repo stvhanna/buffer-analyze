@@ -9,7 +9,6 @@ const style = {
   width: `${iconSize}px`,
   height: `${iconSize}px`,
   marginRight: `${0.5 * base}px`,
-  borderRadius: `${base}px`,
 
   borderWidth: '1px',
   borderStyle: 'solid',
@@ -43,6 +42,7 @@ function getIconStyle(metric) {
   return Object.assign({}, style, {
     background: metric.color,
     borderColor: lightenDarkenColor(metric.color, -30),
+    borderRadius: `${metric.squaredIcon ? 0 : base}px`,
   });
 }
 

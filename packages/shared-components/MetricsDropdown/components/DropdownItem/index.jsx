@@ -7,9 +7,7 @@ import {
   Text,
 } from '@bufferapp/components';
 
-import {
-  MetricIcon,
-} from '@bufferapp/analyze-shared-components';
+import MetricIcon from '../../../MetricIcon';
 
 import {
   dropdownListItem,
