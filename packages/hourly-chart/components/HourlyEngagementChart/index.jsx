@@ -15,6 +15,13 @@ import {
 
 const HourlyEngagementChart = ({ metric, secondaryMetric, posts, timezone, chartRef }) => {
   let hour = moment().startOf('day').subtract(1, 'hour');
+  ReactHighcharts.Highcharts.setOptions(
+    {
+      global: {
+        getTimezoneOffset: timestamp => -moment.tz(timestamp, timezone).utcOffset(),
+      },
+    },
+  );
   const metricByHour = metric.hourlyMetrics.map((hourlyMetric, index) => {
     hour.add(1, 'hour');
     return {
@@ -26,7 +33,6 @@ const HourlyEngagementChart = ({ metric, secondaryMetric, posts, timezone, chart
   });
   const config = {
     ...chartConfig,
-    getTimezoneOffset: timestamp => -moment.tz(timestamp, timezone).utcOffset(),
     series: [{
       ...primarySeriesConfig,
       color: color[metric.label],
