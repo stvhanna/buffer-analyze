@@ -116,7 +116,6 @@ const PostCountByHour = ({ posts, timezone, hourlyChart }) => {
   });
   const config = {
     ...chartConfig,
-    getTimezoneOffset: timestamp => -moment.tz(timestamp, timezone).utcOffset(),
     series: [{
       ...seriesConfig,
       data: postsByHour,
