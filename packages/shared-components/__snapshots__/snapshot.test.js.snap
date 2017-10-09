@@ -794,15 +794,7 @@ exports[`Snapshots GridItem should render a summary grid item with a neutral dif
             </svg>
           </span>
           <div
-            style={
-              Object {
-                "color": "#2FD566",
-                "display": "inline-block",
-                "fontSize": "18px",
-                "fontWeight": 600,
-                "marginLeft": "5px",
-              }
-            }
+            style={undefined}
           >
             <span>
               <span

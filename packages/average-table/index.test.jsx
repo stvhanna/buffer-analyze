@@ -1,5 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { configure, shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import configureMockStore from 'redux-mock-store';
 import AverageTableContainer, {
   reducer,
@@ -10,6 +11,7 @@ import AverageTableContainer, {
 import AverageTable from './components/AverageTable';
 import mockProfiles from './mocks/profiles';
 
+configure({ adapter: new Adapter() });
 describe('AverageTable', () => {
   it('should render', () => {
     const mockStore = configureMockStore();

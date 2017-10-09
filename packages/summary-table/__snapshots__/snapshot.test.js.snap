@@ -454,7 +454,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                 <div
                   style={
                     Object {
-                      "color": "#FF1E1E",
+                      "color": "#2FD566",
                       "display": "inline-block",
                       "fontSize": "18px",
                       "fontWeight": 600,
@@ -1056,15 +1056,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                   </svg>
                 </span>
                 <div
-                  style={
-                    Object {
-                      "color": "#FF1E1E",
-                      "display": "inline-block",
-                      "fontSize": "18px",
-                      "fontWeight": 600,
-                      "marginLeft": "5px",
-                    }
-                  }
+                  style={undefined}
                 >
                   <span>
                     <span

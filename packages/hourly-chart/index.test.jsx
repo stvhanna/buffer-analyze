@@ -1,5 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { configure, shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import configureMockStore from 'redux-mock-store';
 import HourlyChart, {
   reducer,
@@ -9,6 +10,7 @@ import HourlyChart, {
 } from './index';
 import HourlyChartComponent from './components/HourlyChart';
 
+configure({ adapter: new Adapter() });
 describe('HourlyChart', () => {
   const mockStore = configureMockStore();
   const store = mockStore({

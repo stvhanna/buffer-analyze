@@ -1,5 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { configure, shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import configureMockStore from 'redux-mock-store';
 import CompareChartContainer, {
   reducer,
@@ -11,6 +12,7 @@ import CompareChart from './components/CompareChart';
 import mockProfiles from './mocks/profiles';
 import dailyData from './mocks/dailyData';
 
+configure({ adapter: new Adapter() });
 describe('CompareChartContainer', () => {
   let state = {};
   const totalPeriodDaily = [
