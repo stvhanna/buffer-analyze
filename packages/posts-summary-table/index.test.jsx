@@ -1,5 +1,6 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { configure, mount } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import { Provider } from 'react-redux';
 import PostsSummary, {
   reducer,
@@ -9,6 +10,7 @@ import PostsSummary, {
 } from './index';
 import PostsSummaryTable from './components/PostsSummaryTable';
 
+configure({ adapter: new Adapter() });
 const storeFake = state => ({
   default: () => {},
   subscribe: () => {},

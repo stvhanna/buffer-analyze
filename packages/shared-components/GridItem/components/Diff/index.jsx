@@ -28,11 +28,18 @@ const Diff = ({ diff }) => {
     return null;
   }
   let color = '#8D969E';
+  let itemDiffStyle;
   if (diff > 0) {
-    gridSummaryItemDiffContainer.color = '#2FD566';
+    itemDiffStyle = {
+      ...gridSummaryItemDiffContainer,
+      color: '#2FD566',
+    };
     color = 'shamrock';
   } else if (diff < 0) {
-    gridSummaryItemDiffContainer.color = '#FF1E1E';
+    itemDiffStyle = {
+      ...gridSummaryItemDiffContainer,
+      color: '#FF1E1E',
+    };
     color = 'torchRed';
   }
 
@@ -41,7 +48,7 @@ const Diff = ({ diff }) => {
       <span style={gridSummaryItemIcon}>
         <ArrowIcon diff={diff} />
       </span>
-      <div style={gridSummaryItemDiffContainer}>
+      <div style={itemDiffStyle}>
         <span>
           <span
             style={{
