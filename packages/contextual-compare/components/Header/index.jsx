@@ -7,6 +7,8 @@ import {
   MetricsDropdown,
 } from '@bufferapp/analyze-shared-components';
 
+import PresetsDropdown from '../PresetsDropdown';
+
 const CustomModeHeader = ({
   className,
   mode,
@@ -67,8 +69,10 @@ const PresetsModeHEader = ({
   className,
   mode,
   selectMode,
+  togglePresetDropdown,
   ...props
 }) => (<div className={className}>
+  <PresetsDropdown toggleDropdown={togglePresetDropdown} {...props} />
   <ModeToggle
     baseModeLabel="Presets" secondaryModeLabel="Custom"
     handleClick={selectMode}
@@ -83,8 +87,7 @@ PresetsModeHEader.propTypes = {
   // actions
   selectMode: PropTypes.func.isRequired,
   selectPreset: PropTypes.func.isRequired,
-  openPresetDropdown: PropTypes.func.isRequired,
-  closePresetDropdown: PropTypes.func.isRequired,
+  togglePresetDropdown: PropTypes.func.isRequired,
 };
 
 const Header = ({

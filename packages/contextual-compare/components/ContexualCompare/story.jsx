@@ -6,6 +6,7 @@ import ContextualCompare from './index';
 
 import mockDailyData from '../../mocks/dailyData';
 import mockTotals from '../../mocks/totals';
+import mockPresets from '../../mocks/presets';
 
 const selectedMetrics = [mockTotals[0], mockTotals[1]];
 selectedMetrics[0].squaredIcon = true;
@@ -21,12 +22,13 @@ storiesOf('ContextualCompare')
       <ContextualCompare
         selectedMetrics={selectedMetrics}
         metrics={mockTotals}
+        presets={mockPresets}
+        selectedPreset={0}
         dailyData={mockDailyData}
         mode={0}
         selectMode={actionLogger('selectMode')}
         selectPreset={actionLogger('selectPreset')}
-        openPresetDropdown={actionLogger('openPresetDropdown')}
-        closePresetDropdown={actionLogger('closePresetDropdown')}
+        togglePresetDropdown={actionLogger('openPresetDropdown')}
       />
     </div>
   ))
