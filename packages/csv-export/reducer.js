@@ -1,7 +1,7 @@
 export const actionTypes = {
   EXPORT_TO_CSV_START: 'EXPORT_TO_CSV_START',
   EXPORT_TO_CSV_END: 'EXPORT_TO_CSV_END',
-  EXPORT_CHART: 'EXPORT_CHART',
+  EXPORT_CHART: 'CSV_EXPORT_CHART',
 };
 
 const initialState = {
