@@ -12,6 +12,7 @@ import { reducer as profileLoaderReducer } from '@bufferapp/profile-loader';
 import { reducer as postsSummaryReducer } from '@bufferapp/posts-summary-table';
 import { reducer as averageReducer } from '@bufferapp/average-table';
 import { reducer as exportToPNGReducer } from '@bufferapp/analyze-png-export';
+import { reducer as exportToCSVReducer } from '@bufferapp/analyze-csv-export';
 import { reducer as topPostsReducer } from '@bufferapp/top-posts-table';
 import { reducer as hourly } from '@bufferapp/hourly-chart';
 import { reducer as compareChartReducer } from '@bufferapp/compare-chart';
@@ -32,5 +33,6 @@ export default combineReducers({
   topPosts: topPostsReducer,
   hourly,
   exportToPNG: exportToPNGReducer,
+  exportToCSV: exportToCSVReducer,
   compare: compareChartReducer,
 });
