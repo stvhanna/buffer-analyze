@@ -1,5 +1,6 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import { configure, mount, shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import { Provider } from 'react-redux';
 import CsvExport, {
   reducer,
@@ -9,6 +10,7 @@ import CsvExport, {
 } from './index';
 import ExportButton from './components/ExportButton';
 
+configure({ adapter: new Adapter() });
 const storeFake = state => ({
   default: () => {},
   subscribe: () => {},
@@ -55,6 +57,7 @@ describe('CsvExport', () => {
   it('exportToCSV should call the exportToCSV action with the filename prop', () => {
     const store = {
       dispatch: jest.fn(),
+      subscribe: () => {},
       getState: jest.fn(() => ({
         exportToCSV: {},
       })),

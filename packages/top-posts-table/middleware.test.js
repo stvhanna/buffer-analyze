@@ -191,7 +191,7 @@ describe('middleware', () => {
     const csvData = {
       id: ['59d7c0dcefda0ca07a6d3be1', '59d7c108c126328b1c6d3bdf'],
       type: ['picture', 'video'],
-      text: ['foobar', 'Looking for a good read? The top 5 books all marketers &amp; social media managers should have in their library 📚'],
+      text: ['"foo bar"', '"Looking for a good read? The top 5 books all marketers &amp; social media managers should have in their library 📚"'],
       date: ['Invalid date', '10/10/2017 14:30:35'],
       retweets: [195, 57],
       impressions: [50234, 33057],
