@@ -16,7 +16,7 @@ const formatMedia = (post) => {
 };
 
 const escapeText = (text) => {
-  let escapedText = striptags(text, [], '\n').replace(/\n+/gm, ' ');
+  const escapedText = striptags(text, [], '\n').replace(/\n+/gm, ' ');
   return `"${escapedText}"`;
 };
 

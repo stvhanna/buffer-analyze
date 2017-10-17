@@ -146,7 +146,7 @@ describe('middleware', () => {
     middleware(store)(next)(action);
     const csvData = {
       Posts: [1, 1, 1],
-      date: ["10/10/2017", "10/11/2017", "10/12/2017"],
+      date: ['10/10/2017', '10/11/2017', '10/12/2017'],
     };
     expect(store.dispatch).toHaveBeenCalledWith(csvExportActions.exportChart('metrics-breakdown', csvData));
   });
