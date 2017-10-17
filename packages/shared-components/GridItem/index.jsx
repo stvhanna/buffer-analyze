@@ -16,7 +16,6 @@ const gridSummaryItem = {
   boxSizing: 'border-box',
   paddingBottom: `${1.5 * baseMargin}px`,
   flexGrow: 1,
-  width: '25%',
 };
 const gridSummaryItemValueWrapper = {
   display: 'flex',
@@ -33,11 +32,14 @@ function filterDailyDataMetrics(dailyData, metricLabel) {
 }
 
 const GridItem = ({ metric, tooltip, gridWidth, dailyData, timezone, customLabel, hideDiff }) => {
-  gridSummaryItem.width = gridWidth;
+  const style = {
+    ...gridSummaryItem,
+    width: gridWidth,
+  };
   const dailyMetricData = filterDailyDataMetrics(dailyData, metric.label);
   return (
     <li
-      style={gridSummaryItem}
+      style={style}
       key={metric.label}
     >
       {dailyData.length > 1 &&

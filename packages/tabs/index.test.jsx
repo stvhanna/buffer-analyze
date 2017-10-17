@@ -1,10 +1,11 @@
 import React from 'react';
-import { mount } from 'enzyme';
-import { push } from 'react-router-redux';
+import { configure, mount } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import { Provider } from 'react-redux';
 import Tabs, { generateInsightsTabRoute } from './index';
 import TabNavigation from './components/TabNavigation';
 
+configure({ adapter: new Adapter() });
 const storeFake = state => ({
   default: () => {},
   subscribe: () => {},

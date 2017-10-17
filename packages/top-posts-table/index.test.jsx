@@ -1,5 +1,6 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import { configure, mount, shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import { Provider } from 'react-redux';
 import TopPosts, {
   reducer,
@@ -8,6 +9,8 @@ import TopPosts, {
   middleware,
 } from './index';
 import TopPostsTable from './components/TopPostsTable';
+
+configure({ adapter: new Adapter() });
 
 const selectedMetric = {
   key: 'reactions',

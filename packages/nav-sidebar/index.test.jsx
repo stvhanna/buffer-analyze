@@ -1,11 +1,14 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import { configure, mount, shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import { Provider } from 'react-redux';
 import NavSidebar, {
   reducer,
   middleware,
 } from './index';
+import Insights from './components/Insights';
 
+configure({ adapter: new Adapter() });
 const storeFake = state => ({
   default: () => {},
   subscribe: () => {},
@@ -40,7 +43,7 @@ describe('NavSidebar', () => {
     );
     expect(wrapper.find(NavSidebar).length)
       .toBe(1);
-    expect(wrapper.find('[children="Insights"]').length).toBe(1);
+    expect(wrapper.find(Insights)).toHaveLength(1);
   });
 
   it('should render without links to Insights if there are no profiles', () => {
@@ -56,7 +59,7 @@ describe('NavSidebar', () => {
     );
     expect(wrapper.find(NavSidebar).length)
       .toBe(1);
-    expect(wrapper.find('[children="Insights"]').length).toBe(0);
+    expect(wrapper.find(Insights).children()).toHaveLength(0);
   });
 
   it('it should export onClick', () => {

@@ -7,7 +7,6 @@ metadata:
     service: app
     track: stable
     chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
-  namespace: buffer
 spec:
   minReadySeconds: 10
   replicas: {{ .Values.replicaCount }}
