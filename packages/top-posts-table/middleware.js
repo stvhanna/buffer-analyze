@@ -15,6 +15,11 @@ const formatMedia = (post) => {
   }
 };
 
+const escapeText = (text) => {
+  let escapedText = striptags(text, [], '\n').replace(/\n+/gm, ' ');
+  return `"${escapedText}"`;
+};
+
 const formatDataForKey = (key, post) => {
   switch (key) {
     case 'date':
@@ -22,7 +27,7 @@ const formatDataForKey = (key, post) => {
     case 'media':
       return formatMedia(post);
     case 'text':
-      return striptags(post.text, [], '\n').replace(/\n+/gm, ' ');
+      return escapeText(post.text);
     default:
       return post[key];
   }
