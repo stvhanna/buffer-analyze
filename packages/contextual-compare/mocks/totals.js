@@ -2,22 +2,15 @@ export default [
   {
     color: '#fda3f3',
     diff: 25,
-    label: 'Impression',
+    label: 'Engagement',
     value: 150,
     previousValue: 100,
   },
   {
-    color: '#fda3f3',
+    color: '#98E8B2',
     diff: -55,
-    label: 'Click',
+    label: 'Impression',
     value: 1010,
-    previousValue: 100,
-  },
-  {
-    color: '#fda3f3',
-    diff: -39,
-    label: 'Engagement',
-    value: 901,
     previousValue: 100,
   },
 ];

@@ -14,20 +14,24 @@ import {
 import Title from '../Title';
 import Header from '../Header';
 import Footer from '../Footer';
+import Chart from '../Chart';
 
 const ContextualCompare = ({
   className,
-  dailyData,
+  data,
   loading,
   ...props
 }) => (<div style={{ margin: '0 0 1.5rem' }}>
-  {dailyData.length > 1 && !loading && <Title dailyData={dailyData} />}
+  {data.length > 1 && !loading && <Title dailyData={data} />}
   <div className={className}>
     {loading && <Loading active text="Engagement & Audience chart loading..." />}
-    {dailyData.length === 0 && !loading && <NoData />}
-    {dailyData.length > 1 && !loading && <div>
+    {data.length === 0 && !loading && <NoData />}
+    {data.length > 1 && !loading && <div>
       <Header {...props} />
-      <Footer {...props} />
+      <div id="js-dom-to-png-contextual">
+        <Chart {...props} data={data} />
+        <Footer {...props} />
+      </div>
     </div>}
   </div>
 </div>);
@@ -38,7 +42,7 @@ ContextualCompare.defaultProps = {
 
 ContextualCompare.propTypes = {
   className: PropTypes.string.isRequired,
-  dailyData: PropTypes.arrayOf(PropTypes.shape({
+  data: PropTypes.arrayOf(PropTypes.shape({
     day: PropTypes.string.isRequired,
     metrics: PropTypes.arrayOf(PropTypes.shape({
       color: PropTypes.string.isRequired,
@@ -53,7 +57,7 @@ const ContextualCompareStyled = styled(ContextualCompare)`
   padding: 1.25rem;
   border-radius: 2px;
   border: solid
-    ${({ loading, dailyData }) => (loading || dailyData.length === 0 ? '0' : '1px')}
+    ${({ loading, data }) => (loading || data.length === 0 ? '0' : '1px')}
     ${geyser};
   min-height: 12rem;
   position: relative;

@@ -24,8 +24,10 @@ storiesOf('ContextualCompare')
         metrics={mockTotals}
         presets={mockPresets}
         selectedPreset={0}
-        dailyData={mockDailyData}
+        data={mockDailyData}
         mode={0}
+        profileService="facebook"
+        timezone="Etc/UTC"
         selectMode={actionLogger('selectMode')}
         selectPreset={actionLogger('selectPreset')}
         togglePresetDropdown={actionLogger('openPresetDropdown')}
@@ -42,8 +44,10 @@ storiesOf('ContextualCompare')
         selectedPreset={0}
         selectedMetrics={selectedMetrics}
         metrics={mockTotals}
-        dailyData={mockDailyData}
+        data={mockDailyData}
         mode={1}
+        profileService="facebook"
+        timezone="Etc/UTC"
         selectMode={actionLogger('selectMode')}
         isPrimaryMetricDropdownOpen={false}
         isSecondaryMetricDropdownOpen={false}
@@ -63,7 +67,7 @@ storiesOf('ContextualCompare')
       }}
     >
       <ContextualCompare
-        dailyData={[]}
+        data={[]}
         loading
       />
     </div>
@@ -75,7 +79,7 @@ storiesOf('ContextualCompare')
       }}
     >
       <ContextualCompare
-        dailyData={[]}
+        data={[]}
       />
     </div>
   ));
