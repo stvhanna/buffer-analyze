@@ -21,6 +21,10 @@ const state = {
   },
   profiles: {
     selectedProfileId: '12359182129asd',
+    profiles: [{
+      id: '12359182129asd',
+      timezone: 'Etc/UTC',
+    }],
   },
   topPosts: {
     selectedMetric: {
@@ -192,7 +196,7 @@ describe('middleware', () => {
       id: ['59d7c0dcefda0ca07a6d3be1', '59d7c108c126328b1c6d3bdf'],
       type: ['picture', 'video'],
       text: ['"foo bar"', '"Looking for a good read? The top 5 books all marketers &amp; social media managers should have in their library 📚"'],
-      date: ['Invalid date', '10/10/2017 14:30:35'],
+      date: ['Invalid date', '10/10/2017 12:30:35'],
       retweets: [195, 57],
       impressions: [50234, 33057],
       engagements: [3771, 392],

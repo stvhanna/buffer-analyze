@@ -20,10 +20,10 @@ const escapeText = (text) => {
   return `"${escapedText}"`;
 };
 
-const formatDataForKey = (key, post) => {
+const formatDataForKey = (key, post, timezone) => {
   switch (key) {
     case 'date':
-      return moment(post[key]).format('MM/DD/YYYY HH:mm:ss');
+      return moment(post[key]).tz(timezone).format('MM/DD/YYYY HH:mm:ss');
     case 'media':
       return formatMedia(post);
     case 'text':
@@ -32,13 +32,20 @@ const formatDataForKey = (key, post) => {
       return post[key];
   }
 };
-const formatDataForCSVExport = ({ topPosts }) => {
+
+const getSelectedProfileTimezone = ({ profiles, selectedProfileId }) => {
+  const selectedProfile = profiles.find(profile => profile.id === selectedProfileId);
+  return selectedProfile.timezone;
+};
+
+const formatDataForCSVExport = ({ topPosts }, profileState) => {
   const keys = Object.keys(topPosts[0]);
+  const timezone = getSelectedProfileTimezone(profileState);
   const data = {};
   keys.forEach((key) => {
     data[key] = [];
     topPosts.forEach((post) => {
-      const formattedKey = formatDataForKey(key, post);
+      const formattedKey = formatDataForKey(key, post, timezone);
       if (key === 'statistics') {
         delete data.statistics;
         Object.keys(formattedKey).forEach((statistic) => {
@@ -53,6 +60,7 @@ const formatDataForCSVExport = ({ topPosts }) => {
   return data;
 };
 
+
 export default store => next => (action) => { // eslint-disable-line no-unused-vars
   const { dispatch, getState } = store;
   switch (action.type) {
@@ -61,7 +69,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
         dispatch(
           exportCSVActions.exportChart(
             EXPORT_FILENAME,
-            formatDataForCSVExport(getState().topPosts),
+            formatDataForCSVExport(getState().topPosts, getState().profiles),
           ),
         );
       }
