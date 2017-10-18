@@ -1,13 +1,14 @@
 import { connect } from 'react-redux';
 import AddReport from './components/AddReport';
+import { actions } from './actions';
 
 // default export = container
 export default connect(
-  // state => ({
-    // add state here
-  // }),
+  null,
+  (dispatch, props) => ({
+    addReport: name => dispatch(actions.createReport(name, props.chart)),
+  }),
 )(AddReport);
 
-// export reducer, actions and action types
-// export reducer, { actions, actionTypes } from './reducer';
-// export middleware from './middleware';
+export { actions, actionTypes } from './actions';
+export middleware from './middleware';

@@ -56,7 +56,7 @@ const SummaryTable = ({ metrics, loading, profileService, startDate, endDate }) 
     <div>
       <Header>
         <Title profileService={profileService} startDate={startDate} endDate={endDate} />
-        <AddReport />
+        <AddReport chart="summary-table" />
       </Header>
       <div id="js-dom-to-png-summary" style={gridContainer}>
         {content}
