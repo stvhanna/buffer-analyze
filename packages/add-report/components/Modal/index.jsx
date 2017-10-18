@@ -5,7 +5,7 @@ import Text from '@bufferapp/components/Text';
 import Button from '@bufferapp/analyze-shared-components/Button';
 
 const Card = styled.section`
-  width: 640px;
+  width: 660px;
   background: #FFFFFF;
   border: 1px solid #E2E8ED;
   box-shadow: 0px 0px 10px rgba(48, 71, 89, 0.05);

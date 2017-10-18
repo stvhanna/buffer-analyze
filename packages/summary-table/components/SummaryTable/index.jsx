@@ -11,6 +11,9 @@ import {
   GridItem,
 } from '@bufferapp/analyze-shared-components';
 
+import AddReport from '@bufferapp/add-report';
+import styled from 'styled-components';
+
 import Title from '../Title';
 
 const gridStyle = {
@@ -29,6 +32,12 @@ const gridContainer = {
   margin: '1rem 0 1.5rem',
 };
 
+const Header = styled.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+`;
+
 const SummaryTable = ({ metrics, loading, profileService, startDate, endDate }) => {
   let content = null;
   if (loading) {
@@ -45,7 +54,10 @@ const SummaryTable = ({ metrics, loading, profileService, startDate, endDate }) 
 
   return (
     <div>
-      <Title profileService={profileService} startDate={startDate} endDate={endDate} />
+      <Header>
+        <Title profileService={profileService} startDate={startDate} endDate={endDate} />
+        <AddReport />
+      </Header>
       <div id="js-dom-to-png-summary" style={gridContainer}>
         {content}
       </div>
