@@ -1,7 +1,7 @@
 export const actionTypes = {
-  EXPORT_TO_PNG_START: 'EXPORT_TO_PNG_START',
-  EXPORT_TO_PNG_END: 'EXPORT_TO_PNG_END',
-  EXPORT_CHART: 'PNG_EXPORT_CHART',
+  EXPORT_TO_CSV_START: 'EXPORT_TO_CSV_START',
+  EXPORT_TO_CSV_END: 'EXPORT_TO_CSV_END',
+  EXPORT_CHART: 'CSV_EXPORT_CHART',
 };
 
 const initialState = {
@@ -17,10 +17,10 @@ export default (state = initialState, action) => {
         exporting: true,
         charts: state.charts.concat([{
           filename: action.filename,
-          id: action.id,
+          data: action.data,
         }]),
       };
-    case actionTypes.EXPORT_TO_PNG_END:
+    case actionTypes.EXPORT_TO_CSV_END:
       return initialState;
     default:
       return state;
@@ -28,16 +28,16 @@ export default (state = initialState, action) => {
 };
 
 export const actions = {
-  endExportToPNG: () => ({
-    type: actionTypes.EXPORT_TO_PNG_END,
+  endExportToCSV: () => ({
+    type: actionTypes.EXPORT_TO_CSV_END,
   }),
-  exportToPNG: filename => ({
-    type: actionTypes.EXPORT_TO_PNG_START,
+  exportToCSV: filename => ({
+    type: actionTypes.EXPORT_TO_CSV_START,
     filename,
   }),
-  exportChart: (id, filename) => ({
+  exportChart: (filename, data) => ({
     type: actionTypes.EXPORT_CHART,
-    id,
     filename,
+    data,
   }),
 };
