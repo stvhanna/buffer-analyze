@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Text from '@bufferapp/components/Text';
@@ -12,23 +12,47 @@ const Wrapper = styled.section`
   position: relative;
 `;
 
-const AddReport = ({ toggleMenu, open, addReport }) =>
-  <Wrapper>
-    <Button onClick={toggleMenu}>
-      <Text color="sidebarBackgroundBlue">Add to Report</Text>
-    </Button>
-    <Modal open={open} addReport={addReport} />
-  </Wrapper>;
+const ClickCatcher = styled.div`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+`;
 
-AddReport.defaultProps = {
-  addReport: () => {},
-  open: false,
-};
+class AddReport extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      open: false,
+    };
+    this.toggleMenu = this.toggleMenu.bind(this);
+  }
+
+  toggleMenu() {
+    this.setState({
+      open: !this.state.open,
+    });
+  }
+
+  render() {
+    return (
+      <span>
+        <Wrapper>
+          <Button onClick={this.toggleMenu}>
+            <Text color="sidebarBackgroundBlue">Add to Report</Text>
+          </Button>
+          <Modal open={this.state.open} addReport={this.props.addReport} />
+        </Wrapper>
+        {this.state.open && <ClickCatcher onClick={this.toggleMenu}/>}
+      </span>
+    );
+  }
+}
 
 AddReport.propTypes = {
-  toggleMenu: PropTypes.func.isRequired,
-  addReport: PropTypes.func,
-  open: PropTypes.bool,
+  addReport: PropTypes.func.isRequired,
 };
 
 export default AddReport;

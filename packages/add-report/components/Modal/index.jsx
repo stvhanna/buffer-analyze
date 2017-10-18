@@ -15,6 +15,7 @@ const Card = styled.section`
   position: absolute;
   top: 0;
   right: 9.5rem;
+  z-index: 1;
 `;
 
 
