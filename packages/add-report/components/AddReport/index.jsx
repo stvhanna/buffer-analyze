@@ -21,7 +21,6 @@ const ClickCatcher = styled.div`
 `;
 
 class AddReport extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -45,7 +44,7 @@ class AddReport extends Component {
           </Button>
           <Modal open={this.state.open} addReport={this.props.addReport} />
         </Wrapper>
-        {this.state.open && <ClickCatcher onClick={this.toggleMenu}/>}
+        {this.state.open && <ClickCatcher onClick={this.toggleMenu} />}
       </span>
     );
   }

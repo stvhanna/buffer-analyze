@@ -1,5 +1,5 @@
-import middleware from './middleware';
 import { actions } from '@bufferapp/async-data-fetch';
+import middleware from './middleware';
 import { actionTypes } from './actions';
 
 describe('middleware', () => {
