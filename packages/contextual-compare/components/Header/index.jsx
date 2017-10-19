@@ -32,11 +32,6 @@ const CustomModeHeader = ({
     selectedMetricLabel={props.selectedMetrics[1].label}
     secondary
   />
-  <ModeToggle
-    baseModeLabel="Presets" secondaryModeLabel="Custom"
-    handleClick={selectMode}
-    active
-  />
 </div>);
 
 CustomModeHeader.propTypes = {
