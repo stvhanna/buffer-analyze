@@ -39,6 +39,52 @@ describe('reducer', () => {
       });
   });
 
+  it('should open primary dropdown', () => {
+    expect(reducer({
+      isPrimaryMetricDropdownOpen: false,
+    }, {
+      type: `contextual_${actionTypes.OPEN_PRIMARY_DROPDOWN}`,
+    }))
+      .toEqual({
+        isPrimaryMetricDropdownOpen: true,
+        isSecondaryMetricDropdownOpen: false,
+      });
+  });
+
+  it('should open secondary dropdown', () => {
+    expect(reducer({
+      isSecondaryMetricDropdownOpen: false,
+    }, {
+      type: `contextual_${actionTypes.OPEN_SECONDARY_DROPDOWN}`,
+    }))
+      .toEqual({
+        isSecondaryMetricDropdownOpen: true,
+        isPrimaryMetricDropdownOpen: false,
+      });
+  });
+
+  it('should close primary dropdown', () => {
+    expect(reducer({
+      isPrimaryMetricDropdownOpen: true,
+    }, {
+      type: `contextual_${actionTypes.CLOSE_PRIMARY_DROPDOWN}`,
+    }))
+      .toEqual({
+        isPrimaryMetricDropdownOpen: false,
+      });
+  });
+
+  it('should close secondary dropdown', () => {
+    expect(reducer({
+      isSecondaryMetricDropdownOpen: true,
+    }, {
+      type: `contextual_${actionTypes.CLOSE_SECONDARY_DROPDOWN}`,
+    }))
+      .toEqual({
+        isSecondaryMetricDropdownOpen: false,
+      });
+  });
+
   it('should select custom metric', () => {
     expect(reducer({
       metrics: mockMetrics,
