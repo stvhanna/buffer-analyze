@@ -5,15 +5,15 @@ import { action as actionLogger } from '@storybook/addon-actions';
 import ContextualCompare from './index';
 
 import mockDailyData from '../../mocks/dailyData';
-import mockTotals from '../../mocks/totals';
+import mockMetrics from '../../mocks/metrics';
 import mockPresets from '../../mocks/presets';
 
-const selectedMetrics = [mockTotals[0], mockTotals[1]];
+const selectedMetrics = [mockMetrics[0], mockMetrics[1]];
 selectedMetrics[0].squaredIcon = true;
 
 storiesOf('ContextualCompare')
   .addDecorator(checkA11y)
-  .add('Should render in Presets mode', () => (
+  .add('[TESTED] Should render in Presets mode', () => (
     <div
       style={{
         width: '750px',
@@ -21,7 +21,7 @@ storiesOf('ContextualCompare')
     >
       <ContextualCompare
         selectedMetrics={selectedMetrics}
-        metrics={mockTotals}
+        metrics={mockMetrics}
         presets={mockPresets}
         selectedPreset={0}
         data={mockDailyData}
@@ -34,7 +34,7 @@ storiesOf('ContextualCompare')
       />
     </div>
   ))
-  .add('Should render in Custom mode', () => (
+  .add('[TESTED] Should render in Custom mode', () => (
     <div
       style={{
         width: '750px',
@@ -43,7 +43,7 @@ storiesOf('ContextualCompare')
       <ContextualCompare
         selectedPreset={0}
         selectedMetrics={selectedMetrics}
-        metrics={mockTotals}
+        metrics={mockMetrics}
         data={mockDailyData}
         mode={1}
         profileService="facebook"

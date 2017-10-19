@@ -111,20 +111,28 @@ function prepareDataForCustomMode(dailyMetrics, timezone, profileService) {
   return config;
 }
 
-function prepareChartOptions(data, timezone, isCustomMode, profileService) {
+function prepareChartOptions(data, timezone, isCustomMode, profileService, selectedMetrics) {
   if (isCustomMode) {
-    return prepareDataForCustomMode(data, timezone, profileService);
+    const dailyData = data.map( d => ({
+      day: d.day,
+      metrics: d.metrics.filter(m => (
+        m.label === selectedMetrics[0].label ||
+        m.label === selectedMetrics[1].label
+      )),
+    }));
+    return prepareDataForCustomMode(dailyData, timezone, profileService);
   }
   return {};
 }
 
-const Chart = ({ data, timezone, mode, profileService }) => {
+const Chart = ({ data, timezone, mode, profileService, selectedMetrics }) => {
   const isCustomMode = mode === 1;
   const charOptions = prepareChartOptions(
     data,
     timezone,
     isCustomMode,
     profileService,
+    selectedMetrics,
   );
   ReactHighcharts.Highcharts.setOptions(
     {
@@ -150,6 +158,10 @@ Chart.propTypes = {
   profileService: PropTypes.string.isRequired,
   timezone: PropTypes.string.isRequired,
   mode: PropTypes.number.isRequired,
+  selectedMetrics: PropTypes.shape({
+    label: PropTypes.string.isRequired,
+  }).isRequired,
+
 };
 
 Chart.defaultProps = {

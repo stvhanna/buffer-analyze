@@ -26,7 +26,7 @@ const CustomModeHeader = ({
   <MetricsDropdown
     closeDropdown={props.closeSecondaryMetricDropdown}
     isDropdownOpen={props.isSecondaryMetricDropdownOpen}
-    metrics={props.metrics}
+    metrics={props.metrics.filter(m => m.label !== props.selectedMetrics[0].label)}
     openDropdown={props.openSecondaryMetricDropdown}
     selectMetric={props.selectSecondaryMetric}
     selectedMetricLabel={props.selectedMetrics[1].label}
