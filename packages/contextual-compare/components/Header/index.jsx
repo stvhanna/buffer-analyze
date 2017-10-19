@@ -65,7 +65,7 @@ CustomModeHeader.propTypes = {
   closeSecondaryMetricDropdown: PropTypes.func.isRequired,
 };
 
-const PresetsModeHEader = ({
+const PresetsModeHeader = ({
   className,
   mode,
   selectMode,
@@ -79,7 +79,7 @@ const PresetsModeHEader = ({
   />
 </div>);
 
-PresetsModeHEader.propTypes = {
+PresetsModeHeader.propTypes = {
   className: PropTypes.string.isRequired,
   mode: PropTypes.number.isRequired,
   selectedPreset: PropTypes.number.isRequired,
@@ -94,7 +94,7 @@ const Header = ({
   mode,
   ...props
 }) => (<div>
-  {mode === 0 && <PresetsModeHEader mode={mode} {...props} />}
+  {mode === 0 && <PresetsModeHeader mode={mode} {...props} />}
   {mode === 1 && <CustomModeHeader mode={mode} {...props} />}
 </div>);
 

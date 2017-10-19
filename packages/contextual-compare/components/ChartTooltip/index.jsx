@@ -8,7 +8,7 @@ function transformLabelForTooltip(label) {
   return `${label.toLowerCase()}`;
 }
 
-function postsWording(profileService, count = 1) {
+function postsWording(profileService, count) {
   let wording = '';
   switch (profileService) {
     case 'twitter':
@@ -34,7 +34,7 @@ function rewardWording(profileService) {
   }
 }
 
-const StandardTolltip = ({
+const StandardTooltip = ({
   label,
   value,
   previousValue,
@@ -69,7 +69,7 @@ const StandardTolltip = ({
   </span>
 );
 
-StandardTolltip.propTypes = {
+StandardTooltip.propTypes = {
   color: PropTypes.string,
   label: PropTypes.string,
   postsCount: PropTypes.number,
@@ -77,7 +77,7 @@ StandardTolltip.propTypes = {
   profileService: PropTypes.string.isRequired,
 };
 
-StandardTolltip.defaultProps = {
+StandardTooltip.defaultProps = {
   color: null,
   label: null,
   postsCount: null,
@@ -119,9 +119,9 @@ const ChartTooltip = ({
     }}
   >
     <Header day={day} {...extraProps} />
-    {label && <StandardTolltip profileService={profileService} label={label} {...extraProps} />}
+    {label && <StandardTooltip profileService={profileService} label={label} {...extraProps} />}
     {!label && <span>
-      <Text color="white" size="small" >There was no {postsWording(profileService, 2)} published at this time</Text>
+      <Text color="white" size="small" >There was no {postsWording(profileService)} published at this time</Text>
     </span> }
   </div>
 );

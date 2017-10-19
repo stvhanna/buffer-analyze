@@ -113,7 +113,7 @@ function prepareDataForCustomMode(dailyMetrics, timezone, profileService) {
 
 function prepareChartOptions(data, timezone, isCustomMode, profileService, selectedMetrics) {
   if (isCustomMode) {
-    const dailyData = data.map( d => ({
+    const dailyData = data.map(d => ({
       day: d.day,
       metrics: d.metrics.filter(m => (
         m.label === selectedMetrics[0].label ||
