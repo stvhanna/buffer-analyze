@@ -158,9 +158,9 @@ Chart.propTypes = {
   profileService: PropTypes.string.isRequired,
   timezone: PropTypes.string.isRequired,
   mode: PropTypes.number.isRequired,
-  selectedMetrics: PropTypes.shape({
+  selectedMetrics: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string.isRequired,
-  }).isRequired,
+  })).isRequired,
 
 };
 
