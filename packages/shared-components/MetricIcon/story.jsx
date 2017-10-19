@@ -15,4 +15,15 @@ storiesOf('MetricIcon')
         }}
       />
     </div>
+  ))
+  .add('should render a squared icon', () => (
+    <div style={{ width: '260px', display: 'flex' }}>
+      <MetricIcon
+        metric={{
+          label: 'Engagement average',
+          color: '#CCCCCC',
+          squaredIcon: true,
+        }}
+      />
+    </div>
   ));

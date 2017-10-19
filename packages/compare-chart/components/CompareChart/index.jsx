@@ -9,12 +9,12 @@ import {
   ChartStateNoData as NoData,
   ChartStateLoading as Loading,
   ModeToggle,
+  MetricsDropdown,
 } from '@bufferapp/analyze-shared-components';
 
 import Chart from '../Chart';
 import Title from '../Title';
 import Footer from '../Footer';
-import MetricsDropdown from '../MetricsDropdown';
 import PeriodToggle from '../PeriodToggle';
 
 function getStartDate(dailyData) {

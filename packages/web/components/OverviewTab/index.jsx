@@ -8,6 +8,7 @@ import AverageTable from '@bufferapp/average-table';
 import CompareChart from '@bufferapp/compare-chart';
 import TopPostsTable from '@bufferapp/top-posts-table';
 import HourlyChart from '@bufferapp/hourly-chart';
+import ContextualCompare from '@bufferapp/contextual-compare';
 
 const OverviewTab = ({ match }) => (
   <div>
@@ -16,6 +17,7 @@ const OverviewTab = ({ match }) => (
     <AverageTable />
     {match.params.service === 'twitter' && <HourlyChart />}
     <CompareChart />
+    {match.params.service === 'facebook' && <ContextualCompare /> }
     <TopPostsTable selectedProfileId={match.params.id} profileService={match.params.service} />
   </div>
 );
