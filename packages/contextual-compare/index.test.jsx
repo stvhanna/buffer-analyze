@@ -41,6 +41,43 @@ describe('ContextualCompareContainer', () => {
       .toBe(1);
   });
 
+  it('should dispatch', () => {
+    const mockStore = configureMockStore();
+    const store = mockStore(state);
+
+    const component = shallow(<ContextualCompareContainer
+      store={store}
+    />);
+
+    expect(component.props().selectMode(1)).toEqual({
+      mode: 1,
+      type: `contextual_${actionTypes.SELECT_CHART_MODE}`,
+    });
+    expect(component.props().openPrimaryMetricDropdown()).toEqual({
+      type: `contextual_${actionTypes.OPEN_PRIMARY_DROPDOWN}`,
+    });
+    expect(component.props().closePrimaryMetricDropdown()).toEqual({
+      type: `contextual_${actionTypes.CLOSE_PRIMARY_DROPDOWN}`,
+    });
+    expect(component.props().openSecondaryMetricDropdown()).toEqual({
+      type: `contextual_${actionTypes.OPEN_SECONDARY_DROPDOWN}`,
+    });
+    expect(component.props().closeSecondaryMetricDropdown()).toEqual({
+      type: `contextual_${actionTypes.CLOSE_SECONDARY_DROPDOWN}`,
+    });
+    expect(component.props().selectPrimaryMetric('foo')).toEqual({
+      metricIndex: 0,
+      selectedMetricLabel: 'foo',
+      type: `contextual_${actionTypes.SELECT_CUSTOM_METRIC}`,
+    });
+    expect(component.props().selectSecondaryMetric('foo')).toEqual({
+      metricIndex: 1,
+      selectedMetricLabel: 'foo',
+      type: `contextual_${actionTypes.SELECT_CUSTOM_METRIC}`,
+    });
+  });
+
+
   it('should export reducer', () => {
     expect(reducer)
       .toBeDefined();
