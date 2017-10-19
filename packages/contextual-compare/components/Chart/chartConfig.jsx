@@ -119,9 +119,17 @@ export default {
     shared: true,
     crosshairs: true,
     formatter() {
-      const point = this.points[0].point;
+      const primaryMetric = this.points[0].point;
+      const secondaryMetric = this.points[1].point;
       return reactDOM.renderToStaticMarkup(
-        <ChartTooltip {...point.metricData} day={point.x} />,
+        <ChartTooltip
+          day={primaryMetric.x}
+          profileService={primaryMetric.profileService}
+          timezone={primaryMetric.timezone}
+          postsCount={primaryMetric.metricData.postsCount}
+          primaryMetric={primaryMetric.metricData}
+          secondaryMetric={secondaryMetric.metricData}
+        />,
       );
     },
     backgroundColor: '#343E46',

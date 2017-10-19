@@ -71,11 +71,9 @@ function prepareSeriesForCustomMode(
     return {
       x: dayStartTimestamp,
       y: value,
-      metricData: Object.assign({}, metric, {
-        profileService,
-        timezone,
-      }),
-      //TODO pass data for secondary metric
+      profileService,
+      timezone,
+      metricData: Object.assign({}, metric),
       pointPlacement: getTickInterval(dailyMetrics),
     };
   });

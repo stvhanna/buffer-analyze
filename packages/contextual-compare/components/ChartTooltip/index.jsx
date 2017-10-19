@@ -8,12 +8,13 @@ function transformLabelForTooltip(label) {
   return `${label.toLowerCase()}`;
 }
 
+function isUpdatesMetric(label) {
+  return Boolean(label.match(/^(posts|tweets)$/i));
+}
+
 function postsWording(profileService, count) {
   let wording = '';
   switch (profileService) {
-    case 'twitter':
-      wording = 'tweet';
-      break;
     default:
       wording = 'post';
       break;
@@ -27,20 +28,16 @@ function wasOrWere(count) {
 
 function rewardWording(profileService) {
   switch (profileService) {
-    case 'twitter':
-      return ' that generated';
     default:
       return ', and you earned';
   }
 }
 
 const StandardTooltip = ({
-  label,
-  value,
-  previousValue,
   postsCount,
-  color,
   profileService,
+  primaryMetric,
+  secondaryMetric,
 }) => (
   <span>
     <Text color="white" size="small" >There {wasOrWere(postsCount)} a total of </Text>
@@ -52,29 +49,41 @@ const StandardTooltip = ({
     <Text color="white" size="small" >{rewardWording(profileService)}:</Text>
     <br />
     <br />
-    <span>
+    {!isUpdatesMetric(primaryMetric.label) && <span>
       <Text color="white" size="small" weight="bold" >
-        <MetricIcon metric={{ color }} /> <TruncatedNumber>{value}</TruncatedNumber>
+        <MetricIcon
+          metric={{ color: primaryMetric.color }}
+        /> <TruncatedNumber>{primaryMetric.value}</TruncatedNumber>
       </Text>
-      <Text color="white" size="small" > {transformLabelForTooltip(label)}</Text>
-    </span>
+      <Text color="white" size="small" > {transformLabelForTooltip(primaryMetric.label)}</Text>
+      <br />
+    </span>}
 
     <span>
-      <br />
       <Text color="white" size="small" weight="bold" >
-        <MetricIcon metric={{ color: '#9B9FA3' }} /> <TruncatedNumber>{previousValue}</TruncatedNumber>
+        <MetricIcon
+          metric={{ color: secondaryMetric.color }}
+        /> <TruncatedNumber>{secondaryMetric.value}</TruncatedNumber>
       </Text>
-      <Text color="white" size="small" > Previous {transformLabelForTooltip(label)}</Text>
+      <Text color="white" size="small" > {transformLabelForTooltip(secondaryMetric.label)}</Text>
     </span>
   </span>
 );
 
 StandardTooltip.propTypes = {
-  color: PropTypes.string,
-  label: PropTypes.string,
   postsCount: PropTypes.number,
-  value: PropTypes.number,
   profileService: PropTypes.string.isRequired,
+  primaryMetric: PropTypes.shape({
+    color: PropTypes.string,
+    label: PropTypes.string,
+    value: PropTypes.number,
+  }).isRequired,
+  secondaryMetric: PropTypes.shape({
+    color: PropTypes.string,
+    label: PropTypes.string,
+    value: PropTypes.number,
+  }).isRequired,
+
 };
 
 StandardTooltip.defaultProps = {
@@ -102,9 +111,8 @@ Header.propTypes = {
 
 const ChartTooltip = ({
   day,
-  label,
   profileService,
-  ...extraProps
+  ...props
 }) => (
   <div
     style={{
@@ -118,22 +126,14 @@ const ChartTooltip = ({
       whiteSpace: 'normal',
     }}
   >
-    <Header day={day} {...extraProps} />
-    {label && <StandardTooltip profileService={profileService} label={label} {...extraProps} />}
-    {!label && <span>
-      <Text color="white" size="small" >There was no {postsWording(profileService)} published at this time</Text>
-    </span> }
+    <Header day={day} {...props} />
+    <StandardTooltip profileService={profileService} {...props} />
   </div>
 );
 
 ChartTooltip.propTypes = {
   day: PropTypes.number.isRequired,
-  label: PropTypes.string,
   profileService: PropTypes.string.isRequired,
-};
-
-ChartTooltip.defaultProps = {
-  label: null,
 };
 
 export default ChartTooltip;

@@ -16,7 +16,7 @@ storiesOf('PresetsDropdown')
       toggleDropdown={actionLogger('openPresetDropdown')}
     />
   ))
-  .add('open dropdown', () => (
+  .add('[TESTED] open dropdown', () => (
     <PresetsDropdown
       open
       presets={mockPresets}
