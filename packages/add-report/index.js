@@ -6,7 +6,7 @@ import { actions } from './actions';
 export default connect(
   null,
   (dispatch, props) => ({
-    addReport: name => dispatch(actions.createReport(name, props.chart)),
+    createReport: name => dispatch(actions.createReport(name, props.chart)),
   }),
 )(AddReport);
 

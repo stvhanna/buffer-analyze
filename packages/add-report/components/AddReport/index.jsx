@@ -27,12 +27,20 @@ class AddReport extends Component {
       open: false,
     };
     this.toggleMenu = this.toggleMenu.bind(this);
+    this.addReport = this.addReport.bind(this);
   }
 
   toggleMenu() {
     this.setState({
       open: !this.state.open,
     });
+  }
+
+  addReport(name) {
+    this.setState({
+      open: false,
+    });
+    this.props.createReport(name);
   }
 
   render() {
@@ -42,7 +50,7 @@ class AddReport extends Component {
           <Button onClick={this.toggleMenu}>
             <Text color="sidebarBackgroundBlue">Add to Report</Text>
           </Button>
-          <Modal open={this.state.open} addReport={this.props.addReport} />
+          <Modal open={this.state.open} addReport={this.addReport} />
         </Wrapper>
         {this.state.open && <ClickCatcher onClick={this.toggleMenu} />}
       </span>
@@ -51,7 +59,7 @@ class AddReport extends Component {
 }
 
 AddReport.propTypes = {
-  addReport: PropTypes.func.isRequired,
+  createReport: PropTypes.func.isRequired,
 };
 
 export default AddReport;
