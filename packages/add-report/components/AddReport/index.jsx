@@ -50,7 +50,11 @@ class AddReport extends Component {
           <Button onClick={this.toggleMenu}>
             <Text color="sidebarBackgroundBlue">{this.props.translations.addReport}</Text>
           </Button>
-          <Modal translations={this.props.translations} open={this.state.open} addReport={this.addReport} />
+          <Modal
+            translations={this.props.translations}
+            open={this.state.open}
+            addReport={this.addReport}
+          />
         </Wrapper>
         {this.state.open && <ClickCatcher onClick={this.toggleMenu} />}
       </span>
