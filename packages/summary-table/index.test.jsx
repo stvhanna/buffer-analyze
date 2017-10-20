@@ -25,6 +25,9 @@ describe('SummaryTable', () => {
         loading: false,
         metrics: [],
       },
+      i18n: {
+        translations: {},
+      },
       date: {},
     });
     const wrapper = mount(
