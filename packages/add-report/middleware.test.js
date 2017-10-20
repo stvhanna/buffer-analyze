@@ -24,7 +24,7 @@ describe('middleware', () => {
     middleware(store)(next)(action);
   });
 
-  it('shoud dispatch a data fetch for top posts once a profile has been selected', () => {
+  it('should create a report when CREATE_REPORT is triggered', () => {
     const action = {
       type: actionTypes.CREATE_REPORT,
       chart_id: 'summary-table',
