@@ -35,7 +35,7 @@ const Report = ({ updated_at, name }) =>
   </ReportListItem>;
 
 Report.propTypes = {
-  updated_at: PropTypes.string.isRequired,
+  updated_at: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
 };
 

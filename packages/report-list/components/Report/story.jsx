@@ -7,7 +7,7 @@ import Report from './index';
 const report = {
   _id: '1293125asda',
   name: 'Weekly Sync Report',
-  updated_at: '1507680000000',
+  updated_at: 1507680000000,
 };
 
 storiesOf('Report')

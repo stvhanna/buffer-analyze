@@ -7,11 +7,11 @@ import ReportList from './index';
 const mockReports = [{
   _id: '1293125asda',
   name: 'Weekly Sync Report',
-  updated_at: '1510099200000',
+  updated_at: 1510099200000,
 }, {
   _id: '1921591adsd',
   name: 'Client Social Media Campaign',
-  updated_at: '1507680000000',
+  updated_at: 1507680000000,
 }];
 
 storiesOf('ReportList')
