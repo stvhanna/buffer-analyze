@@ -28,6 +28,7 @@ const summarize = (
   const label = METRICS_CONFIG[profileService].config[metricKey].label;
   if (label) {
     return {
+      key: metricKey,
       label,
       color: METRICS_CONFIG[profileService].config[metricKey].color,
       value,
@@ -38,14 +39,14 @@ const summarize = (
 };
 
 function formatDaily(
-  currentPeriodDailyTotalsResult,
+  dailyTotalsResult,
   profileService,
 ) {
-  const currentPeriodDays = Object.keys(currentPeriodDailyTotalsResult);
+  const currentPeriodDays = Object.keys(dailyTotalsResult);
   const daily = Array.from(currentPeriodDays, day => ({
     day,
-    currentPeriodMetrics: currentPeriodDailyTotalsResult[day],
-    currentPeriodPostCount: currentPeriodDailyTotalsResult[day].posts_count,
+    currentPeriodMetrics: dailyTotalsResult[day],
+    currentPeriodPostCount: dailyTotalsResult[day].posts_count,
   })).map((data) => {
     const metricKeys = METRICS_CONFIG[profileService].orderedKeys;
     return {
@@ -70,20 +71,86 @@ function getMetrics(profileService) {
   );
 }
 
-function getPresets(profileService) {
-  return PRESETS[profileService];
+function processValueForPresetMetric(
+  metricConfig,
+  data,
+) {
+  let value = 0;
+  switch (metricConfig.aggregationRule) {
+    // if no aggregation rule is specified we are expecting just one metric Key
+    default:
+      value = data[metricConfig.key] || 0;
+      break;
+  }
+  return value;
+}
+
+function formatDailyDataForPresets(
+  yAxis,
+  dailyTotalsResult,
+) {
+  const currentPeriodDays = Object.keys(dailyTotalsResult);
+  const daily = Array.from(currentPeriodDays, day => ({
+    day,
+    dayData: dailyTotalsResult[day],
+  })).map((data) => {
+    const presetMetric = yAxis.metrics;
+    return {
+      day: data.day,
+      metrics: presetMetric.map(metricConfig => Object.assign({},
+        metricConfig,
+        {
+          value: processValueForPresetMetric(metricConfig, data.dayData),
+        },
+      )),
+    };
+  });
+  return { data: daily };
+}
+
+function processPreset(
+  preset,
+  dailyTotalsResult,
+) {
+  let data = [];
+
+  switch (preset.xAxis) {
+    default:
+      data = formatDailyDataForPresets(preset.yAxis, dailyTotalsResult);
+      break;
+  }
+
+  return Object.assign(
+    {},
+    preset,
+    data,
+  );
+}
+
+function formatPresets(
+  dailyTotalsResult,
+  profileService,
+) {
+  return PRESETS[profileService].map(
+    preset => processPreset(preset, dailyTotalsResult),
+  );
 }
 
 function formatData(
-  currentPeriodDailyTotalsResult,
+  dailyTotalsResult,
   profileService,
 ) {
   const daily = formatDaily(
-    currentPeriodDailyTotalsResult,
+    dailyTotalsResult,
     profileService,
   );
+
   const metrics = getMetrics(profileService);
-  const presets = getPresets(profileService);
+
+  const presets = formatPresets(
+    dailyTotalsResult,
+    profileService,
+  );
 
   return {
     daily,
@@ -99,17 +166,17 @@ module.exports = method(
     const end = moment.unix(endDate).format('MM/DD/YYYY');
     const start = moment.unix(startDate).format('MM/DD/YYYY');
     const dateRange = new DateRange(start, end);
-    const currentPeriodDailyTotals = requestDailyTotals(profileId, dateRange, session.accessToken);
+    const dailyTotals = requestDailyTotals(profileId, dateRange, session.accessToken);
 
     return Promise
       .all([
-        currentPeriodDailyTotals,
+        dailyTotals,
       ])
       .then((response) => {
-        const currentPeriodDailyTotalsResult = response[0].response;
+        const dailyTotalsResult = response[0].response;
 
         return formatData(
-          currentPeriodDailyTotalsResult,
+          dailyTotalsResult,
           profileService,
         );
       })

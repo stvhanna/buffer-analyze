@@ -94,5 +94,28 @@ describe('rpc/contextual', () => {
       day: '1504051200000',
     });
   });
+
+  it('should return the presets data', async() => {
+    rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
+
+    const data = await contextual.fn({ profileId, profileService }, {
+      session: {
+        accessToken: token,
+      },
+    });
+    expect(data.presets.length).toBe(2);
+
+    expect(data.presets[0].label).toBe('How does post frequency affect my fan count?');
+    expect(data.presets[0].data.length).toBe(7);
+    expect(data.presets[0].data[0]).toMatchObject({
+      day: '1504051200000',
+    });
+    expect(data.presets[0].data[0].metrics.length).toBe(2);
+    expect(data.presets[0].data[0].metrics[0]).toMatchObject({
+      key: 'posts_count',
+      label: 'posts',
+      value: 4,
+    });
+  });
 });
 
