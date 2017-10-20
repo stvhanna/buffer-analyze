@@ -10,31 +10,35 @@ exports[`Snapshots SummaryTable should render a "no data" state 1`] = `
     }
   >
     <div>
-      <h2
-        style={
-          Object {
-            "margin": "2rem 0 1rem",
-          }
-        }
+      <header
+        className="sc-bwzfXH hcRgMz"
       >
-        <span
+        <h2
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "margin": "2rem 0 1rem",
             }
           }
         >
-          Tweet performance 
-          for 
-          <span>
-            yesterday
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Tweet performance 
+            for 
+            <span>
+              yesterday
+            </span>
+             compared to the previous period
           </span>
-           compared to the previous period
-        </span>
-      </h2>
+        </h2>
+      </header>
       <div
         id="js-dom-to-png-summary"
         style={
@@ -130,31 +134,35 @@ exports[`Snapshots SummaryTable should render a loading state 1`] = `
     }
   >
     <div>
-      <h2
-        style={
-          Object {
-            "margin": "2rem 0 1rem",
-          }
-        }
+      <header
+        className="sc-bwzfXH hcRgMz"
       >
-        <span
+        <h2
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "margin": "2rem 0 1rem",
             }
           }
         >
-          Performance 
-          for 
-          <span>
-            yesterday
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Performance 
+            for 
+            <span>
+              yesterday
+            </span>
+             compared to the previous period
           </span>
-           compared to the previous period
-        </span>
-      </h2>
+        </h2>
+      </header>
       <div
         id="js-dom-to-png-summary"
         style={
@@ -284,31 +292,35 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
     }
   >
     <div>
-      <h2
-        style={
-          Object {
-            "margin": "2rem 0 1rem",
-          }
-        }
+      <header
+        className="sc-bwzfXH hcRgMz"
       >
-        <span
+        <h2
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "margin": "2rem 0 1rem",
             }
           }
         >
-          Tweet performance 
-          for 
-          <span>
-            yesterday
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Tweet performance 
+            for 
+            <span>
+              yesterday
+            </span>
+             compared to the previous period
           </span>
-           compared to the previous period
-        </span>
-      </h2>
+        </h2>
+      </header>
       <div
         id="js-dom-to-png-summary"
         style={

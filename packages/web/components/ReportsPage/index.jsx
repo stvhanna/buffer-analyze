@@ -2,25 +2,37 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import NavSidebar from '@bufferapp/nav-sidebar';
-import { Text, Divider } from '@bufferapp/components';
+import ReportsList from '@bufferapp/report-list';
+import styled from 'styled-components';
 
-const pageStyle = {
-  display: 'flex',
-  flexGrow: 1,
-  height: '100%',
-};
+const Page = styled.div`
+  display: flex;
+  flexGrow: 1;
+  height: 100%;
+  background: #FAFAFA;
+`;
 
-const reportsPageStyle = {
-  padding: '1rem',
-};
+const Container = styled.div`
+  padding: 2.8rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
+const Content = styled.div`
+  max-width: 65rem;
+  width: 100%;
+`;
 
 const ReportsPage = ({ location }) => (
-  <div style={pageStyle}>
+  <Page>
     <NavSidebar route={location.pathname} />
-    <div style={reportsPageStyle}>
-      <Text>This is where the Reports will go.</Text>
-    </div>
-  </div>
+    <Container>
+      <Content>
+        <ReportsList />
+      </Content>
+    </Container>
+  </Page>
 );
 
 ReportsPage.propTypes = {

@@ -2,20 +2,20 @@
 # yarn lockfile v1
 
 
-"@bufferapp/app-sidebar@0.5.28":
-  version "0.5.28"
-  resolved "https://registry.yarnpkg.com/@bufferapp/app-sidebar/-/app-sidebar-0.5.28.tgz#b52be8c9af56dca2bb14dd3f52ad72c7f1ea8b08"
+"@bufferapp/app-sidebar@0.7.4":
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/@bufferapp/app-sidebar/-/app-sidebar-0.7.4.tgz#a907618701408627f73b30abe74ddd5121194933"
   dependencies:
-    "@bufferapp/async-data-fetch" "0.5.25"
-    "@bufferapp/components" "0.5.28"
-
-"@bufferapp/async-data-fetch@0.5.25":
-  version "0.5.25"
-  resolved "https://registry.yarnpkg.com/@bufferapp/async-data-fetch/-/async-data-fetch-0.5.25.tgz#1fb30f21a83c25fa93e2f84d8220a6824b9820da"
+    "@bufferapp/async-data-fetch" "0.7.4"
+    "@bufferapp/components" "0.7.3"
 
 "@bufferapp/async-data-fetch@0.5.36-beta01":
   version "0.5.36-beta01"
   resolved "https://registry.yarnpkg.com/@bufferapp/async-data-fetch/-/async-data-fetch-0.5.36-beta01.tgz#684504ddc303577c42b0ba350d854990d6bd1ad1"
+
+"@bufferapp/async-data-fetch@0.7.4":
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/@bufferapp/async-data-fetch/-/async-data-fetch-0.7.4.tgz#81cee5ae4911be932f88744fc3c30296eeab2a64"
 
 "@bufferapp/chronos@0.6.1":
   version "0.6.1"
@@ -32,6 +32,14 @@
 "@bufferapp/components@0.5.34":
   version "0.5.34"
   resolved "https://registry.yarnpkg.com/@bufferapp/components/-/components-0.5.34.tgz#7f9a7cef1ab7c54b9314fc99702fba931e81f89b"
+  dependencies:
+    "@bufferapp/react-keyframes" "0.2.5"
+    react-autocomplete "1.5.9"
+    react-day-picker "5.5.1"
+
+"@bufferapp/components@0.7.3":
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/@bufferapp/components/-/components-0.7.3.tgz#bb8cb636ea624dada04eb9b50ae2f5ae4b95b646"
   dependencies:
     "@bufferapp/react-keyframes" "0.2.5"
     react-autocomplete "1.5.9"
@@ -8051,7 +8059,7 @@ style-loader@^0.18.2:
     loader-utils "^1.0.2"
     schema-utils "^0.3.0"
 
-styled-components@^2.2.0:
+styled-components@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-2.2.1.tgz#f4835f1001c37bcc301ac3865b5d93466de4dd5b"
   dependencies:

@@ -495,6 +495,7 @@ exports[`Snapshots App should render application 1`] = `
                 <div
                   style={
                     Object {
+                      "cursor": "default",
                       "padding": ".5rem 1rem 0 1rem",
                     }
                   }
@@ -1625,13 +1626,7 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
 exports[`Snapshots ReportsPage should render reports page 1`] = `
 <span>
   <div
-    style={
-      Object {
-        "display": "flex",
-        "flexGrow": 1,
-        "height": "100%",
-      }
-    }
+    className="sc-bRBYWo czzsok"
   >
     <div
       style={
@@ -1893,24 +1888,24 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
       </div>
     </div>
     <div
-      style={
-        Object {
-          "padding": "1rem",
-        }
-      }
+      className="sc-hzDkRC iZHGdW"
     >
-      <span
-        style={
-          Object {
-            "color": "#59626a",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
-            "fontSize": "1rem",
-            "fontWeight": 400,
-          }
-        }
+      <div
+        className="sc-jhAzac fxyzYS"
       >
-        This is where the Reports will go.
-      </span>
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Loading...
+        </span>
+      </div>
     </div>
   </div>
 </span>

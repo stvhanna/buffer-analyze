@@ -21,6 +21,8 @@ import { middleware as exportToCSVMiddleware } from '@bufferapp/analyze-csv-expo
 import { middleware as topPostsMiddleware } from '@bufferapp/top-posts-table';
 import { middleware as hourly } from '@bufferapp/hourly-chart';
 import { middleware as compareChartMiddleware } from '@bufferapp/compare-chart';
+import { middleware as addReportMiddleware } from '@bufferapp/add-report';
+import { middleware as reportListMiddleware } from '@bufferapp/report-list';
 import { middleware as contextualCompareMiddleware } from '@bufferapp/contextual-compare';
 
 import reducers from './reducers';
@@ -55,6 +57,8 @@ const configureStore = (initialstate) => {
         compareChartMiddleware,
         contextualCompareMiddleware,
         exportToPNGMiddleware,
+        addReportMiddleware,
+        reportListMiddleware,
         exportToCSVMiddleware,
       ),
     ),

@@ -2,5 +2,11 @@
   "example": {
     "loggedIn": "Logged In...",
     "loggedOut": "Logged Out..."
-  }
+  },
+	"reports": {
+		"addReport": "Add to Report",
+		"createReport": "Create Report",
+		"addReportTitle": "Add to a new report",
+		"addReportPlaceholder": "Please enter title here"
+	}
 }

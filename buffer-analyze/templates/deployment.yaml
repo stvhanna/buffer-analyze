@@ -50,6 +50,8 @@ spec:
               name: buffer-publish-buffer-api-client
         - name: API_ADDR
           value: https://api.bufferapp.com
+        - name: ANALYZE_API_ADDR
+          value: https://analyze-api.buffer.com
         - name: BUGSNAG_KEY
           valueFrom:
             secretKeyRef:

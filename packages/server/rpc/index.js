@@ -11,6 +11,8 @@ const average = require('./average');
 const topPosts = require('./topPosts');
 const hourly = require('./hourly');
 const compare = require('./compare');
+const createReport = require('./createReport');
+const listReports = require('./listReports');
 const contextual = require('./contextual');
 
 module.exports = checkToken(rpc(
@@ -25,5 +27,7 @@ module.exports = checkToken(rpc(
   topPosts,
   hourly,
   compare,
+  createReport,
+  listReports,
   contextual,
 ));

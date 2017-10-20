@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshots AddReport opened 1`] = `
+<span>
+  <div>
+    <span
+      className="sc-bZQynM bpcKCf"
+    />
+    <span>
+      <section
+        className="sc-ifAKCX eGJmLz"
+      >
+        <button
+          className="sc-bdVaJa eGnFHC"
+          onClick={[Function]}
+        >
+          <span
+            style={
+              Object {
+                "color": "#192534",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Add to Report
+          </span>
+        </button>
+      </section>
+    </span>
+  </div>
+</span>
+`;
+
+exports[`Snapshots AddReport unopened 1`] = `
+<span>
+  <div>
+    <span
+      className="sc-bZQynM bpcKCf"
+    />
+    <span>
+      <section
+        className="sc-ifAKCX eGJmLz"
+      >
+        <button
+          className="sc-bdVaJa eGnFHC"
+          onClick={[Function]}
+        >
+          <span
+            style={
+              Object {
+                "color": "#192534",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Add to Report
+          </span>
+        </button>
+      </section>
+    </span>
+  </div>
+</span>
+`;
+
+exports[`Snapshots Modal open 1`] = `
+<span>
+  <section
+    className="sc-bwzfXH ixJVwR"
+  >
+    <span
+      style={
+        Object {
+          "color": "#192534",
+          "fontFamily": "\\"Open Sans\\", sans-serif",
+          "fontSize": "1.25rem",
+          "fontWeight": 400,
+        }
+      }
+    >
+      Add to a new report
+    </span>
+    <section
+      className="sc-htpNat ddyrlB"
+    >
+      <input
+        className="sc-bxivhb isBxLm"
+        placeholder="Please enter title here"
+        type="text"
+      />
+      <button
+        className="sc-bdVaJa eGnFHC"
+        onClick={[Function]}
+      >
+        <span
+          style={
+            Object {
+              "color": "#192534",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Create Report
+        </span>
+      </button>
+    </section>
+  </section>
+</span>
+`;
+
+exports[`Snapshots Modal unopened 1`] = `<span />`;
