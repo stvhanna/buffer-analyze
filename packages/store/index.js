@@ -21,6 +21,7 @@ import { middleware as topPostsMiddleware } from '@bufferapp/top-posts-table';
 import { middleware as hourly } from '@bufferapp/hourly-chart';
 import { middleware as compareChartMiddleware } from '@bufferapp/compare-chart';
 import { middleware as addReportMiddleware } from '@bufferapp/add-report';
+import { middleware as reportListMiddleware } from '@bufferapp/report-list';
 import reducers from './reducers';
 
 export const history = createHistory();
@@ -53,6 +54,7 @@ const configureStore = (initialstate) => {
         compareChartMiddleware,
         exportToPNGMiddleware,
         addReportMiddleware,
+        reportListMiddleware,
       ),
     ),
   );
