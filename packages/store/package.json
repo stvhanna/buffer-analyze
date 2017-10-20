@@ -33,11 +33,13 @@
     "@bufferapp/posts-summary-table": "0.0.1",
     "@bufferapp/tabs": "0.0.1",
     "@bufferapp/analyze-png-export": "0.0.1",
+    "@bufferapp/analyze-csv-export": "0.0.1",
     "@bufferapp/top-posts-table": "0.0.1",
     "@bufferapp/hourly-chart": "0.0.1",
-    "@bufferapp/compare-chart": "0.0.1",
     "@bufferapp/add-report": "0.0.1",
-    "@bufferapp/report-list": "0.0.1"
+    "@bufferapp/report-list": "0.0.1",
+    "@bufferapp/contextual-compare": "0.0.1",
+    "@bufferapp/compare-chart": "0.0.1"
   },
   "devDependencies": {
     "eslint": "3.19.0",

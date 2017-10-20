@@ -12,10 +12,11 @@ const List = styled.ol`
 `;
 
 const ReportList = ({ loading, reports }) =>
-  (loading ? <Text>Loading...</Text> :
-  <List>
-    {reports.map(report => <Report key={report._id} {...report} />)}
-  </List>);
+  (loading ?
+    <Text>Loading...</Text> :
+    <List>
+      {reports.map(report => <Report key={report._id} {...report} />)}
+    </List>);
 
 ReportList.defaultProps = {
   reports: [],

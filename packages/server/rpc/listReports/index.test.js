@@ -36,5 +36,3 @@ describe('rpc/list_reports', () => {
     }]);
   });
 });
-
-

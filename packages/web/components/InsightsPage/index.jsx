@@ -9,7 +9,8 @@ import DatePicker from '@bufferapp/analyze-date-picker';
 import ProfileLoader from '@bufferapp/profile-loader';
 import Divider from '@bufferapp/components/Divider';
 import TabNavigation from '@bufferapp/tabs';
-import ExportButton from '@bufferapp/analyze-png-export';
+import PNGExportButton from '@bufferapp/analyze-png-export';
+import CSVExportButton from '@bufferapp/analyze-csv-export';
 import { offWhite, mystic } from '@bufferapp/components/style/color';
 import PostsTab from '../PostsTab';
 import OverviewTab from '../OverviewTab';
@@ -64,7 +65,10 @@ const InsightsPage = ({
         </div>
         <div style={datePickerContainer}>
           <DatePicker />
-          <ExportButton filename={`buffer-${tabId === 'overview' ? 'overview' : 'posts'}-analytics`} />
+          <div>
+            <PNGExportButton filename={`buffer-${tabId === 'overview' ? 'overview' : 'posts'}-analytics`} />
+            <CSVExportButton filename={`buffer-${tabId === 'overview' ? 'overview' : 'posts'}-analytics`} />
+          </div>
         </div>
         <Divider marginTop="1rem" marginBottom="1rem" />
         <ProfileHeader selectedProfileId={id} />

@@ -1,7 +1,7 @@
 export const actionTypes = {
   EXPORT_TO_PNG_START: 'EXPORT_TO_PNG_START',
   EXPORT_TO_PNG_END: 'EXPORT_TO_PNG_END',
-  EXPORT_CHART: 'EXPORT_CHART',
+  EXPORT_CHART: 'PNG_EXPORT_CHART',
 };
 
 const initialState = {
