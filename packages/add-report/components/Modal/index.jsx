@@ -39,7 +39,7 @@ const Input = styled.input.attrs({
   font-family: 'Open Sans', sans-serif;
 `;
 
-const Modal = ({ open, addReport }) => {
+const Modal = ({ open, addReport, translations }) => {
   if (!open) return null;
   let textInput;
   const onClick = () => {
@@ -47,11 +47,11 @@ const Modal = ({ open, addReport }) => {
   };
   return (
     <Card>
-      <Text color="sidebarBackgroundBlue" size="large">Add to a new report</Text>
+      <Text color="sidebarBackgroundBlue" size="large">{translations.addReportTitle}</Text>
       <Section>
-        <Input innerRef={(input) => { textInput = input; }} />
+        <Input placeholder={translations.addReportPlaceholder} innerRef={(input) => { textInput = input; }} />
         <Button onClick={onClick}>
-          <Text color="sidebarBackgroundBlue">Create Report</Text>
+          <Text color="sidebarBackgroundBlue">{translations.createReport}</Text>
         </Button>
       </Section>
     </Card>
@@ -66,6 +66,11 @@ Modal.defaultProps = {
 Modal.propTypes = {
   open: PropTypes.bool,
   addReport: PropTypes.func,
+  translations: PropTypes.shape({
+    addReportTitle: PropTypes.string,
+    createReport: PropTypes.string,
+    addReportPlaceholder: PropTypes.string,
+  }).isRequired,
 };
 
 export default Modal;

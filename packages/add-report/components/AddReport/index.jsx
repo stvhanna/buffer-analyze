@@ -48,9 +48,9 @@ class AddReport extends Component {
       <span>
         <Wrapper>
           <Button onClick={this.toggleMenu}>
-            <Text color="sidebarBackgroundBlue">Add to Report</Text>
+            <Text color="sidebarBackgroundBlue">{this.props.translations.addReport}</Text>
           </Button>
-          <Modal open={this.state.open} addReport={this.addReport} />
+          <Modal translations={this.props.translations} open={this.state.open} addReport={this.addReport} />
         </Wrapper>
         {this.state.open && <ClickCatcher onClick={this.toggleMenu} />}
       </span>
@@ -59,6 +59,9 @@ class AddReport extends Component {
 }
 
 AddReport.propTypes = {
+  translations: PropTypes.shape({
+    addReport: PropTypes.string,
+  }).isRequired,
   createReport: PropTypes.func.isRequired,
 };
 

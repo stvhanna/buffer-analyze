@@ -4,7 +4,11 @@ import { actions } from './actions';
 
 // default export = container
 export default connect(
-  null,
+  state => ({
+    translations: {
+      ...state.i18n.translations.reports,
+    },
+  }),
   (dispatch, props) => ({
     createReport: name => dispatch(actions.createReport(name, props.chart)),
   }),

@@ -3,7 +3,6 @@ import { mount, configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { Provider } from 'react-redux';
 import AddReport, {
-  reducer,
   actions,
   actionTypes,
   middleware,
@@ -22,6 +21,10 @@ const storeFake = state => ({
 describe('AddReport', () => {
   it('should render', () => {
     const store = storeFake({
+      i18n: {
+        translations: {
+        },
+      },
     });
     const wrapper = mount(
       <Provider store={store}>
@@ -32,22 +35,17 @@ describe('AddReport', () => {
       .toBe(1);
   });
 
-  xit('should export reducer', () => {
-    expect(reducer)
-      .toBeDefined();
-  });
-
-  xit('should export actions', () => {
+  it('should export actions', () => {
     expect(actions)
       .toBeDefined();
   });
 
-  xit('should export actionTypes', () => {
+  it('should export actionTypes', () => {
     expect(actionTypes)
       .toBeDefined();
   });
 
-  xit('should export middleware', () => {
+  it('should export middleware', () => {
     expect(middleware)
       .toBeDefined();
   });

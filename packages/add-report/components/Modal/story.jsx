@@ -7,8 +7,22 @@ import Modal from './index';
 storiesOf('Modal')
   .addDecorator(checkA11y)
   .add('unopened', () => (
-    <Modal />
+    <Modal
+      translations={{
+        addReportTitle: 'Add to a new report',
+        addReportPlaceholder: 'Please enter title here',
+        createReport: 'Create Report',
+      }}
+    />
   ))
   .add('open', () => (
-    <Modal open addReport={action('add report')} />
+    <Modal
+      translations={{
+        addReportTitle: 'Add to a new report',
+        addReportPlaceholder: 'Please enter title here',
+        createReport: 'Create Report',
+      }}
+      open
+      addReport={action('add report')}
+    />
   ));

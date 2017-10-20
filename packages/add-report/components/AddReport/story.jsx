@@ -18,6 +18,9 @@ storiesOf('AddReport')
     <div>
       <Spacer />
       <AddReport
+        translations={{
+          addReport: 'Add to Report',
+        }}
         toggleMenu={action('open menu')}
       />
     </div>
@@ -26,6 +29,9 @@ storiesOf('AddReport')
     <div>
       <Spacer />
       <AddReport
+        translations={{
+          addReport: 'Add to Report',
+        }}
         toggleMenu={action('close menu')}
         open
       />
