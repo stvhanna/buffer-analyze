@@ -4,7 +4,7 @@ const facebookConfig = {
     color: '#3A92D3',
   },
 
-  post_reach: {
+  page_engagements: {
     label: 'Engagement',
     color: '#FDA3F3',
   },
@@ -50,7 +50,7 @@ module.exports = {
     config: facebookConfig,
     orderedKeys: [
       'posts_count',
-      'post_reach',
+      'page_engagements',
       'post_impressions',
       'post_clicks',
       'reactions',
