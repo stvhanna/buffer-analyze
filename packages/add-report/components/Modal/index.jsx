@@ -49,7 +49,10 @@ const Modal = ({ open, addReport, translations }) => {
     <Card>
       <Text color="sidebarBackgroundBlue" size="large">{translations.addReportTitle}</Text>
       <Section>
-        <Input placeholder={translations.addReportPlaceholder} innerRef={(input) => { textInput = input; }} />
+        <Input
+          placeholder={translations.addReportPlaceholder}
+          innerRef={(input) => { textInput = input; }}
+        />
         <Button onClick={onClick}>
           <Text color="sidebarBackgroundBlue">{translations.createReport}</Text>
         </Button>
