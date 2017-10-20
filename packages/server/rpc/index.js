@@ -12,6 +12,7 @@ const topPosts = require('./topPosts');
 const hourly = require('./hourly');
 const compare = require('./compare');
 const createReport = require('./createReport');
+const listReports = require('./listReports');
 
 module.exports = checkToken(rpc(
   profilesMethod,
@@ -26,4 +27,5 @@ module.exports = checkToken(rpc(
   hourly,
   compare,
   createReport,
+  listReports,
 ));
