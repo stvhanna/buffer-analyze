@@ -20,7 +20,7 @@ const triggerContainer = {
 };
 
 const dropdown = {
-  width: '10rem',
+  width: '16rem',
   display: 'inline-block',
 };
 

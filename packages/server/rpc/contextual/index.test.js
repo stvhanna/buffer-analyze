@@ -51,7 +51,7 @@ describe('rpc/contextual', () => {
       }]);
   });
 
-  it('it should return both data and metrics', async() => {
+  it('it should return: data, metrics, and presets', async() => {
     rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
 
     const data = await contextual.fn({ profileId, profileService }, {
@@ -62,6 +62,7 @@ describe('rpc/contextual', () => {
 
     expect(data.daily).toBeDefined();
     expect(data.metrics).toBeDefined();
+    expect(data.presets).toBeDefined();
   });
 
   it('should return a valid response if all data is 0', async() => {

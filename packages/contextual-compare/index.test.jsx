@@ -75,6 +75,14 @@ describe('ContextualCompareContainer', () => {
       selectedMetricLabel: 'foo',
       type: `contextual_${actionTypes.SELECT_CUSTOM_METRIC}`,
     });
+
+    expect(component.props().selectPreset(1)).toEqual({
+      preset: 1,
+      type: `contextual_${actionTypes.SELECT_PRESET}`,
+    });
+    expect(component.props().togglePresetDropdown()).toEqual({
+      type: `contextual_${actionTypes.TOGGLE_PRESETS_DROPDOWN}`,
+    });
   });
 
 

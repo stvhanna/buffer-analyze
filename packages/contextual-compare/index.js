@@ -12,9 +12,12 @@ function mapStateToProps (state) {
     data: state.contextual.data,
     isPrimaryMetricDropdownOpen: state.contextual.isPrimaryMetricDropdownOpen,
     isSecondaryMetricDropdownOpen: state.contextual.isSecondaryMetricDropdownOpen,
+    isPresetsDropdownOpen: state.contextual.isPresetsDropdownOpen,
     loading: state.contextual.loading,
     metrics: state.contextual.metrics,
     mode: state.contextual.mode,
+    presets: state.contextual.presets,
+    profileService: state.profiles.selectedProfileService,
     selectedMetricLabel: state.contextual.selectedMetricLabel,
     selectedMetrics: state.contextual.selectedMetrics,
     selectedPreset: state.contextual.selectedPreset,
@@ -30,6 +33,9 @@ const mapDispatchToProps = dispatch => ({
   openSecondaryMetricDropdown: () => dispatch(actions.openSecondaryMetricDropdown()),
   closeSecondaryMetricDropdown: () => dispatch(actions.closeSecondaryMetricDropdown()),
   selectSecondaryMetric: metricIndex => dispatch(actions.selectSecondaryMetric(metricIndex)),
+
+  togglePresetDropdown: () => dispatch(actions.togglePresetDropdown()),
+  selectPreset: preset => dispatch(actions.selectPreset(preset)),
 });
 
 // default export = container

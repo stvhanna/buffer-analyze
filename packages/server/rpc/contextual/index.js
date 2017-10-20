@@ -3,7 +3,7 @@ const rp = require('request-promise');
 const moment = require('moment');
 const DateRange = require('../utils/DateRange');
 const METRICS_CONFIG = require('./metricsConfig');
-
+const PRESETS = require('./presets');
 
 const requestDailyTotals = (profileId, dateRange, accessToken) =>
   rp({
@@ -70,6 +70,10 @@ function getMetrics(profileService) {
   );
 }
 
+function getPresets(profileService) {
+  return PRESETS[profileService];
+}
+
 function formatData(
   currentPeriodDailyTotalsResult,
   profileService,
@@ -79,10 +83,12 @@ function formatData(
     profileService,
   );
   const metrics = getMetrics(profileService);
+  const presets = getPresets(profileService);
 
   return {
     daily,
     metrics,
+    presets,
   };
 }
 
@@ -110,6 +116,7 @@ module.exports = method(
       .catch(() => ({
         daily: [],
         metrics: [],
+        presets: [],
       }));
   },
 );

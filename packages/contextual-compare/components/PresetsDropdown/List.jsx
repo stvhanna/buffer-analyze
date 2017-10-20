@@ -72,11 +72,14 @@ const dropdownItemContent = {
   boxSizing: 'border-box',
 };
 
-const DropdownItem = ({ preset, handleClick }) => (
+const DropdownItem = ({ preset, handleClick, selectedPresetLabel }) => (
   <li style={dropdownItem}>
     <Button noStyle fillContainer onClick={handleClick}>
       <span style={dropdownItemContent}>
-        <Text size="small">{preset.label}</Text>
+        <Text
+          weight={preset.label === selectedPresetLabel? 'bold' : ''}
+          size="small"
+        >{preset.label}</Text>
         <HelpButton data-description={preset.description}>?</HelpButton>
       </span>
     </Button>
@@ -94,6 +97,7 @@ DropdownItem.propTypes = {
     color: PropTypes.string,
     hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
   }),
+  selectedPresetLabel: PropTypes.string.isRequired,
   handleClick: PropTypes.func,
 };
 
@@ -103,12 +107,13 @@ const dropdownList = {
   marginBottom: '5px',
 };
 
-const List = ({ presets, selectPreset }) => (
+const List = ({ presets, selectPreset, selectedPreset }) => (
   <ol style={dropdownList}>
     { presets.map(preset =>
       <DropdownItem
         key={preset.label}
         preset={preset}
+        selectedPresetLabel={presets[selectedPreset].label}
         handleClick={() => selectPreset(presets.indexOf(preset))}
       />)}
   </ol>
@@ -125,6 +130,7 @@ List.propTypes = {
     color: PropTypes.string,
     hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
   })),
+  selectedPreset: PropTypes.number.isRequired,
 };
 
 export default List;
