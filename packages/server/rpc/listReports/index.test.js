@@ -6,6 +6,7 @@ import rp from 'request-promise';
 import listReports from './';
 
 describe('rpc/list_reports', () => {
+  const userId = 'user123';
 
   it('should have the expected name', () => {
     expect(listReports.name)
@@ -21,7 +22,7 @@ describe('rpc/list_reports', () => {
     const reports = ['a report', 'another_report'];
     rp.mockReturnValueOnce(Promise.resolve(reports));
 
-    const result = await listReports.fn();
+    const result = await listReports.fn({ userId });
 
     expect(result).toEqual(reports);
     expect(rp.mock.calls[0]).toEqual([{
@@ -29,7 +30,7 @@ describe('rpc/list_reports', () => {
       method: 'POST',
       strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
       body: {
-        user_id: '56c20bd3bd3816f63c94c73f',
+        user_id: userId,
       },
       json: true,
     }]);

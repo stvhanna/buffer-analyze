@@ -5,6 +5,11 @@ import { actionTypes } from './actions';
 describe('middleware', () => {
   const next = jest.fn();
   const state = {
+    appSidebar: {
+      user: {
+        id: 'user1234',
+      },
+    },
     profiles: {
       selectedProfileId: '12359182129asd',
     },
@@ -34,6 +39,7 @@ describe('middleware', () => {
     expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
       name: 'create_report',
       args: {
+        userId: 'user1234',
         profileId: '12359182129asd',
         chartId: 'summary-table',
         name: 'Weekly Sync Report',

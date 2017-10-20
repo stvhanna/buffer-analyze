@@ -6,6 +6,7 @@ import rp from 'request-promise';
 import createReport from './';
 
 describe('rpc/create_report', () => {
+  const userId = 'user123';
   const profileId = '123159ad';
   const chartId = 'summary-table';
   const name = 'Weekly Sync Report';
@@ -23,7 +24,7 @@ describe('rpc/create_report', () => {
   it('should send a POST request to /create_report with the provided parameters', async () => {
     rp.mockReturnValueOnce(Promise.resolve('success'));
 
-    const result = await createReport.fn({ profileId, chartId, name });
+    const result = await createReport.fn({ profileId, chartId, name, userId });
 
     expect(result).toBe('success');
     expect(rp.mock.calls[0]).toEqual([{
@@ -34,7 +35,7 @@ describe('rpc/create_report', () => {
         name,
         profile_id: profileId,
         chart_id: chartId,
-        user_id: '56c20bd3bd3816f63c94c73f',
+        user_id: userId,
       },
       json: true,
     }]);

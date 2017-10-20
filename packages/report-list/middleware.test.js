@@ -4,7 +4,13 @@ import middleware from './middleware';
 
 describe('middleware', () => {
   const next = jest.fn();
-  const state = {};
+  const state = {
+    appSidebar: {
+      user: {
+        id: 'user1234',
+      },
+    },
+  };
   const store = {
     dispatch: jest.fn(),
     getState: jest.fn(() => state),
@@ -30,6 +36,9 @@ describe('middleware', () => {
     middleware(store)(next)(action);
     expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
       name: 'list_reports',
+      args: {
+        userId: 'user1234',
+      },
     }));
     expect(next).toHaveBeenCalledWith(action);
   });
@@ -44,6 +53,9 @@ describe('middleware', () => {
     middleware(store)(next)(action);
     expect(store.dispatch).not.toHaveBeenCalledWith(actions.fetch({
       name: 'list_reports',
+      args: {
+        userId: 'user1234',
+      },
     }));
     expect(next).toHaveBeenCalledWith(action);
   });

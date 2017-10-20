@@ -7,6 +7,9 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
       if (action.payload.pathname === '/reports') {
         store.dispatch(actions.fetch({
           name: 'list_reports',
+          args: {
+            userId: store.getState().appSidebar.user.id,
+          },
         }));
       }
       break;
