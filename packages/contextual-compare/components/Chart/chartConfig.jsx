@@ -129,6 +129,7 @@ export default {
           postsCount={primaryMetric.metricData.postsCount}
           primaryMetric={primaryMetric.metricData}
           secondaryMetric={secondaryMetric.metricData}
+          isCustomMode={primaryMetric.isCustomMode}
         />,
       );
     },

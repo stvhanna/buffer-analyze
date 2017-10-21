@@ -47,28 +47,28 @@ module.exports = {
         metrics: [
           {
             key: 'posts_count',
-            label: 'posts',
+            label: 'Posts',
           },
           {
             key: 'new_followers',
-            label: 'new fans',
+            label: 'New Fans',
           },
         ],
       },
     },
     {
-      label: 'How does post frequency affect te reach per post?',
+      label: 'How does post frequency affect the reach per post?',
       description: '',
       xAxis: 'date',
       yAxis: {
         metrics: [
           {
             key: 'posts_count',
-            label: 'posts',
+            label: 'Posts',
           },
           {
             key: 'post_reach',
-            label: 'reach',
+            label: 'Reach',
           },
         ],
       },

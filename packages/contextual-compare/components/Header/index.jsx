@@ -84,12 +84,16 @@ PresetsModeHeader.propTypes = {
   className: PropTypes.string.isRequired,
   mode: PropTypes.number.isRequired,
   selectedPreset: PropTypes.number.isRequired,
-  isPresetsDropdownOpen: PropTypes.bool.isRequired,
+  isPresetsDropdownOpen: PropTypes.bool,
 
   // actions
   selectMode: PropTypes.func.isRequired,
   selectPreset: PropTypes.func.isRequired,
   togglePresetDropdown: PropTypes.func.isRequired,
+};
+
+PresetsModeHeader.defaultProps = {
+  isPresetsDropdownOpen: false,
 };
 
 const Header = ({

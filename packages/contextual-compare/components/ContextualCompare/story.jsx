@@ -57,6 +57,8 @@ storiesOf('ContextualCompare')
         openSecondaryMetricDropdown={actionLogger('openSecondaryMetricDropdown')}
         closePrimaryMetricDropdown={actionLogger('closePrimaryMetricDropdown')}
         closeSecondaryMetricDropdown={actionLogger('closeSecondaryMetricDropdown')}
+        selectPreset={actionLogger('selectPreset')}
+        presets={mockPresets}
       />
     </div>
   ))

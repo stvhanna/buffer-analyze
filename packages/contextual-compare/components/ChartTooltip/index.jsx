@@ -38,17 +38,22 @@ const StandardTooltip = ({
   profileService,
   primaryMetric,
   secondaryMetric,
+  isCustomMode,
 }) => (
   <span>
-    <Text color="white" size="small" >There {wasOrWere(postsCount)} a total of </Text>
-    <Text color="white" size="small" weight="bold" >
-      <TruncatedNumber>{postsCount}</TruncatedNumber>
-    </Text>
-    <Text color="white" size="small" > {postsWording(profileService, postsCount)} published</Text>
+    {isCustomMode &&
+      <span>
+        <Text color="white" size="small" >There {wasOrWere(postsCount)} a total of </Text>
+        <Text color="white" size="small" weight="bold" >
+          <TruncatedNumber>{postsCount}</TruncatedNumber>
+        </Text>
+        <Text color="white" size="small" > {postsWording(profileService, postsCount)} published</Text>
 
-    <Text color="white" size="small" >{rewardWording(profileService)}:</Text>
-    <br />
-    <br />
+        <Text color="white" size="small" >{rewardWording(profileService)}:</Text>
+        <br />
+        <br />
+      </span>
+    }
     {!isUpdatesMetric(primaryMetric.label) && <span>
       <Text color="white" size="small" weight="bold" >
         <MetricIcon
@@ -83,7 +88,7 @@ StandardTooltip.propTypes = {
     label: PropTypes.string,
     value: PropTypes.number,
   }).isRequired,
-
+  isCustomMode: PropTypes.bool,
 };
 
 StandardTooltip.defaultProps = {
@@ -91,6 +96,7 @@ StandardTooltip.defaultProps = {
   label: null,
   postsCount: null,
   value: null,
+  isCustomMode: false,
 };
 
 const Header = ({

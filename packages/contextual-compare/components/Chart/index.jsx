@@ -3,6 +3,11 @@ import React from 'react';
 import ReactHighcharts from 'react-highcharts';
 import moment from 'moment';
 
+import {
+  color as metricsColor,
+} from '@bufferapp/analyze-shared-components/style';
+
+
 import chartConfig, { highChartsSeriesPrimaryConfig } from './chartConfig';
 
 function getMarkerFillColor(color) {
@@ -51,19 +56,23 @@ function setSecondaryScale([primarySeries, secondarySeries]) {
   }
 }
 
-function prepareSeriesForCustomMode(
+
+function prepareSeries(
   dailyMetrics,
-  metricIndex,
   timezone,
   profileService,
+  isCustomMode,
 ) {
+  const series = [];
   let color = '#9B9FA3';
-  const seriesData = Array.from(dailyMetrics, (day) => {
+  let metricIndex = 0;
+
+  function mapDataToPoint(day) {
     let value = 0;
     const metric = day.metrics[metricIndex];
     if (metric) {
       value = metric.value;
-      color = metric.color;
+      color = metric.color ? metric.color : metricsColor[metric.key];
     }
 
     const dayStartTimestamp = moment.tz(Number(day.day), timezone).startOf('day').valueOf();
@@ -73,64 +82,91 @@ function prepareSeriesForCustomMode(
       y: value,
       profileService,
       timezone,
+      isCustomMode,
       metricData: Object.assign({}, metric),
       pointPlacement: getTickInterval(dailyMetrics),
     };
-  });
+  }
 
-  const seriesConfig = Object.assign({}, highChartsSeriesPrimaryConfig, {
-    marker: {
-      fillColor: getMarkerFillColor(color),
+  while (series.length < dailyMetrics[0].metrics.length) {
+    const seriesData = Array.from(dailyMetrics, mapDataToPoint);
+
+    const seriesConfig = Object.assign({}, highChartsSeriesPrimaryConfig, {
+      marker: {
+        fillColor: getMarkerFillColor(color),
+        lineColor: color,
+      },
+      fillColor: {
+        linearGradient: [0, 0, 0, 300],
+        stops: [
+          [0, fadeColor(color, 0.3)],
+          [1, fadeColor(color, 0)],
+        ],
+      },
       lineColor: color,
-    },
-    fillColor: {
-      linearGradient: [0, 0, 0, 300],
-      stops: [
-        [0, fadeColor(color, 0.3)],
-        [1, fadeColor(color, 0)],
-      ],
-    },
-    lineColor: color,
-    data: seriesData,
-  });
+      data: seriesData,
+    });
 
-  return seriesConfig;
+    series.push(seriesConfig);
+    metricIndex += 1;
+  }
+  return series;
 }
 
-function prepareDataForCustomMode(dailyMetrics, timezone, profileService) {
+function prepareData(
+  dailyMetrics,
+  timezone,
+  profileService,
+  isCustomMode = false,
+) {
   const config = Object.assign({}, chartConfig);
 
   config.xAxis.minorTickInterval = getTickInterval(dailyMetrics);
-  config.series = [
-    prepareSeriesForCustomMode(dailyMetrics, 0, timezone, profileService),
-    prepareSeriesForCustomMode(dailyMetrics, 1, timezone, profileService),
-  ];
+  config.series = prepareSeries(dailyMetrics, timezone, profileService, isCustomMode);
   setSecondaryScale(config.series);
   return config;
 }
 
-function prepareChartOptions(data, timezone, isCustomMode, profileService, selectedMetrics) {
+function prepareChartOptions(
+  data,
+  isCustomMode,
+  presets,
+  profileService,
+  selectedMetrics,
+  selectedPreset,
+  timezone,
+) {
   if (isCustomMode) {
-    const dailyData = data.map(d => ({
+    const dailyMetrics = data.map(d => ({
       day: d.day,
       metrics: d.metrics.filter(m => (
         m.label === selectedMetrics[0].label ||
         m.label === selectedMetrics[1].label
       )),
     }));
-    return prepareDataForCustomMode(dailyData, timezone, profileService);
+    return prepareData(dailyMetrics, timezone, profileService, isCustomMode);
   }
-  return {};
+  return prepareData(presets[selectedPreset].data, timezone, profileService);
 }
 
-const Chart = ({ data, timezone, mode, profileService, selectedMetrics }) => {
+const Chart = ({
+  data,
+  mode,
+  presets,
+  profileService,
+  selectedMetrics,
+  selectedPreset,
+  timezone,
+}) => {
   const isCustomMode = mode === 1;
   const charOptions = prepareChartOptions(
     data,
-    timezone,
     isCustomMode,
+    presets,
     profileService,
     selectedMetrics,
+    selectedPreset,
+    timezone,
   );
   ReactHighcharts.Highcharts.setOptions(
     {
@@ -159,7 +195,17 @@ Chart.propTypes = {
   selectedMetrics: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string.isRequired,
   })).isRequired,
-
+  selectedPreset: PropTypes.number.isRequired,
+  presets: PropTypes.arrayOf(PropTypes.shape({
+    day: PropTypes.string,
+    data: PropTypes.arrayOf(PropTypes.shape({
+      metrics: PropTypes.arrayOf(PropTypes.shape({
+        key: PropTypes.string.isRequired,
+        label: PropTypes.string.isRequired,
+        value: PropTypes.number.isRequired,
+      })),
+    })),
+  })).isRequired,
 };
 
 Chart.defaultProps = {
