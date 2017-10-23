@@ -11,7 +11,7 @@ exports[`Snapshots AddReport opened 1`] = `
         className="sc-ifAKCX eGJmLz"
       >
         <button
-          className="sc-bdVaJa eGnFHC"
+          className="sc-bdVaJa eaeDpx"
           onClick={[Function]}
         >
           <span
@@ -27,6 +27,45 @@ exports[`Snapshots AddReport opened 1`] = `
             Add to Report
           </span>
         </button>
+        <section
+          className="sc-bwzfXH ixJVwR"
+        >
+          <span
+            style={
+              Object {
+                "color": "#192534",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1.25rem",
+                "fontWeight": 400,
+              }
+            }
+          />
+          <section
+            className="sc-htpNat ddyrlB"
+          >
+            <input
+              className="sc-bxivhb jJWRXH"
+              onChange={[Function]}
+              placeholder={undefined}
+              type="text"
+            />
+            <button
+              className="sc-bdVaJa eaeDpx"
+              onClick={[Function]}
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#192534",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "1rem",
+                    "fontWeight": 400,
+                  }
+                }
+              />
+            </button>
+          </section>
+        </section>
       </section>
     </span>
   </div>
@@ -44,7 +83,7 @@ exports[`Snapshots AddReport unopened 1`] = `
         className="sc-ifAKCX eGJmLz"
       >
         <button
-          className="sc-bdVaJa eGnFHC"
+          className="sc-bdVaJa eaeDpx"
           onClick={[Function]}
         >
           <span
@@ -60,6 +99,45 @@ exports[`Snapshots AddReport unopened 1`] = `
             Add to Report
           </span>
         </button>
+        <section
+          className="sc-bwzfXH ixJVwR"
+        >
+          <span
+            style={
+              Object {
+                "color": "#192534",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1.25rem",
+                "fontWeight": 400,
+              }
+            }
+          />
+          <section
+            className="sc-htpNat ddyrlB"
+          >
+            <input
+              className="sc-bxivhb jJWRXH"
+              onChange={[Function]}
+              placeholder={undefined}
+              type="text"
+            />
+            <button
+              className="sc-bdVaJa eaeDpx"
+              onClick={[Function]}
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#192534",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "1rem",
+                    "fontWeight": 400,
+                  }
+                }
+              />
+            </button>
+          </section>
+        </section>
       </section>
     </span>
   </div>
@@ -87,12 +165,13 @@ exports[`Snapshots Modal open 1`] = `
       className="sc-htpNat ddyrlB"
     >
       <input
-        className="sc-bxivhb isBxLm"
+        className="sc-bxivhb jJWRXH"
+        onChange={[Function]}
         placeholder="Please enter title here"
         type="text"
       />
       <button
-        className="sc-bdVaJa eGnFHC"
+        className="sc-bdVaJa eaeDpx"
         onClick={[Function]}
       >
         <span
@@ -113,4 +192,50 @@ exports[`Snapshots Modal open 1`] = `
 </span>
 `;
 
-exports[`Snapshots Modal unopened 1`] = `<span />`;
+exports[`Snapshots Modal unopened 1`] = `
+<span>
+  <section
+    className="sc-bwzfXH ixJVwR"
+  >
+    <span
+      style={
+        Object {
+          "color": "#192534",
+          "fontFamily": "\\"Open Sans\\", sans-serif",
+          "fontSize": "1.25rem",
+          "fontWeight": 400,
+        }
+      }
+    >
+      Add to a new report
+    </span>
+    <section
+      className="sc-htpNat ddyrlB"
+    >
+      <input
+        className="sc-bxivhb jJWRXH"
+        onChange={[Function]}
+        placeholder="Please enter title here"
+        type="text"
+      />
+      <button
+        className="sc-bdVaJa eaeDpx"
+        onClick={[Function]}
+      >
+        <span
+          style={
+            Object {
+              "color": "#192534",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Create Report
+        </span>
+      </button>
+    </section>
+  </section>
+</span>
+`;
