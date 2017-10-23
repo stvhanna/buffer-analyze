@@ -57,8 +57,8 @@ module.exports = {
       },
     },
     {
-      label: 'Discover how your posting frequency affects your reach.',
-      description: '',
+      label: 'How does post frequency affect the reach per post?',
+      description: 'Discover how your posting frequency affects your reach.',
       xAxis: 'date',
       yAxis: {
         metrics: [
