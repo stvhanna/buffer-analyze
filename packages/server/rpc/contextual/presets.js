@@ -21,15 +21,15 @@ module.exports = {
   facebook: [
     // {
     //   label: 'When is it most effective to post?',
-    //   description: 'Find out which day of the week is the best for you to focus on',
+    //   description: 'Discover which days your audience engages the most with your content.',
     // },
     // {
     //   label: 'Whhat type of content is working?',
-    //   description: '',
+    //   description: 'Find out what type of content reasonates well with your audience.',
     // },
     // {
     //   label: 'How does post frequency affect my engagement rate?',
-    //   description: 'When is it most effective to post?',
+    //   description: 'Learn how your posting frequency encourages users to engage with your content.',
     //   xAxis: 'date',
     //   yAxis: {
     //     label: 'Engagement',
@@ -41,7 +41,7 @@ module.exports = {
     // },
     {
       label: 'How does post frequency affect my fan count?',
-      description: '',
+      description: 'Discover how your posting frequency affects your fan count.',
       xAxis: 'date',
       yAxis: {
         metrics: [
@@ -57,7 +57,7 @@ module.exports = {
       },
     },
     {
-      label: 'How does post frequency affect the reach per post?',
+      label: 'Discover how your posting frequency affects your reach.',
       description: '',
       xAxis: 'date',
       yAxis: {

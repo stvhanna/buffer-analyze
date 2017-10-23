@@ -5,7 +5,7 @@ const facebookConfig = {
   },
 
   page_engagements: {
-    label: 'Engagement',
+    label: 'Engagements',
     color: '#FDA3F3',
   },
 
