@@ -112,9 +112,10 @@ describe('rpc/contextual', () => {
     });
     expect(data.presets[0].data[0].metrics.length).toBe(2);
     expect(data.presets[0].data[0].metrics[0]).toMatchObject({
-      key: 'posts_count',
-      label: 'Posts',
-      value: 4,
+      key: 'new_followers',
+      label: 'New Fans',
+      postsCount: 4,
+      value: 101,
     });
   });
 });

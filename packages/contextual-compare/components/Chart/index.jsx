@@ -62,6 +62,7 @@ function prepareSeries(
   timezone,
   profileService,
   isCustomMode,
+  presetConfig,
 ) {
   const series = [];
   let color = '#9B9FA3';
@@ -84,6 +85,7 @@ function prepareSeries(
       timezone,
       isCustomMode,
       metricData: Object.assign({}, metric),
+      presetConfig,
       pointPlacement: getTickInterval(dailyMetrics),
     };
   }
@@ -118,11 +120,12 @@ function prepareData(
   timezone,
   profileService,
   isCustomMode = false,
+  presetConfig = null,
 ) {
   const config = Object.assign({}, chartConfig);
 
   config.xAxis.minorTickInterval = getTickInterval(dailyMetrics);
-  config.series = prepareSeries(dailyMetrics, timezone, profileService, isCustomMode);
+  config.series = prepareSeries(dailyMetrics, timezone, profileService, isCustomMode, presetConfig);
   setSecondaryScale(config.series);
   return config;
 }
@@ -144,9 +147,20 @@ function prepareChartOptions(
         m.label === selectedMetrics[1].label
       )),
     }));
-    return prepareData(dailyMetrics, timezone, profileService, isCustomMode);
+    return prepareData(
+      dailyMetrics,
+      timezone,
+      profileService,
+      isCustomMode,
+    );
   }
-  return prepareData(presets[selectedPreset].data, timezone, profileService);
+  return prepareData(
+    presets[selectedPreset].data,
+    timezone,
+    profileService,
+    false,
+    presets[selectedPreset],
+  );
 }
 
 const Chart = ({

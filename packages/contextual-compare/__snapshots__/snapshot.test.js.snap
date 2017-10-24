@@ -1,5 +1,169 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Snapshots ChartTooltip [TESTED] should render a presets tooltip 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#343E46",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "color": "#fff",
+          "cursor": "default",
+          "fontFamily": "Open Sans, Helvetica Neue, Helvetica, Arial, sans serif",
+          "fontSize": "9pt",
+          "padding": "10px",
+          "pointerEvents": "none",
+          "whiteSpace": "normal",
+          "width": "185px",
+        }
+      }
+    >
+      <span>
+        <span
+          style={
+            Object {
+              "color": "#e6ebef",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "0.7rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          11 September
+        </span>
+        <br />
+        <br />
+      </span>
+      <span>
+        <span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            There 
+            were
+             a total of 
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 600,
+              }
+            }
+          >
+            <span>
+              5
+            </span>
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+             
+            posts
+             published
+          </span>
+        </span>
+        <span
+          style={
+            Object {
+              "color": "#fff",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "0.8rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+           
+          and you gained 2 new fans.
+        </span>
+        <br />
+      </span>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots ChartTooltip [TESTED] should render a presets tooltip with negative count and no update count 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#343E46",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "color": "#fff",
+          "cursor": "default",
+          "fontFamily": "Open Sans, Helvetica Neue, Helvetica, Arial, sans serif",
+          "fontSize": "9pt",
+          "padding": "10px",
+          "pointerEvents": "none",
+          "whiteSpace": "normal",
+          "width": "185px",
+        }
+      }
+    >
+      <span>
+        <span
+          style={
+            Object {
+              "color": "#e6ebef",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "0.7rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          11 September
+        </span>
+        <br />
+        <br />
+      </span>
+      <span>
+        <span
+          style={
+            Object {
+              "color": "#fff",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "0.8rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+           
+          Here goes the metric with negative 15 value!
+        </span>
+        <br />
+      </span>
+    </div>
+  </div>
+</span>
+`;
+
 exports[`Snapshots ChartTooltip [TESTED] should render the posts tooltip 1`] = `
 <span>
   <div
@@ -47,29 +211,26 @@ exports[`Snapshots ChartTooltip [TESTED] should render the posts tooltip 1`] = `
                 "color": "#fff",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
                 "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            There 
+            were
+             a total of 
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
                 "fontWeight": 600,
               }
             }
           >
-            <span
-              style={
-                Object {
-                  "background": "#fda3f3",
-                  "borderColor": "#df85d5",
-                  "borderRadius": "10px",
-                  "borderStyle": "solid",
-                  "borderWidth": "1px",
-                  "display": "inline-block",
-                  "height": "7px",
-                  "marginRight": "5px",
-                  "verticalAlign": "baseline",
-                  "width": "7px",
-                }
-              }
-            />
-             
             <span>
-              42
+              5
             </span>
           </span>
           <span
@@ -83,7 +244,74 @@ exports[`Snapshots ChartTooltip [TESTED] should render the posts tooltip 1`] = `
             }
           >
              
-            clicks
+            posts
+             published
+          </span>
+        </span>
+        <span
+          style={
+            Object {
+              "color": "#fff",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "0.8rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          , and you earned
+          :
+        </span>
+        <br />
+        <span>
+          <span />
+          <span>
+            <span>
+              <br />
+              <span
+                style={
+                  Object {
+                    "color": "#fff",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 600,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "background": "#fda3f3",
+                      "borderColor": "#df85d5",
+                      "borderRadius": "10px",
+                      "borderStyle": "solid",
+                      "borderWidth": "1px",
+                      "display": "inline-block",
+                      "height": "7px",
+                      "marginRight": "5px",
+                      "verticalAlign": "baseline",
+                      "width": "7px",
+                    }
+                  }
+                />
+                 
+                <span>
+                  42
+                </span>
+              </span>
+              <span
+                style={
+                  Object {
+                    "color": "#fff",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                 
+                clicks
+              </span>
+            </span>
           </span>
         </span>
       </span>
@@ -139,29 +367,26 @@ exports[`Snapshots ChartTooltip [TESTED] should render the tooltip 1`] = `
                 "color": "#fff",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
                 "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            There 
+            were
+             a total of 
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
                 "fontWeight": 600,
               }
             }
           >
-            <span
-              style={
-                Object {
-                  "background": "#fda3f3",
-                  "borderColor": "#df85d5",
-                  "borderRadius": "10px",
-                  "borderStyle": "solid",
-                  "borderWidth": "1px",
-                  "display": "inline-block",
-                  "height": "7px",
-                  "marginRight": "5px",
-                  "verticalAlign": "baseline",
-                  "width": "7px",
-                }
-              }
-            />
-             
             <span>
-              42
+              5
             </span>
           </span>
           <span
@@ -175,54 +400,122 @@ exports[`Snapshots ChartTooltip [TESTED] should render the tooltip 1`] = `
             }
           >
              
-            engagements
+            posts
+             published
           </span>
-          <br />
         </span>
-        <span>
-          <span
-            style={
-              Object {
-                "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
-                "fontWeight": 600,
-              }
+        <span
+          style={
+            Object {
+              "color": "#fff",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "0.8rem",
+              "fontWeight": 400,
             }
-          >
-            <span
-              style={
-                Object {
-                  "background": "#fda3f3",
-                  "borderColor": "#df85d5",
-                  "borderRadius": "10px",
-                  "borderStyle": "solid",
-                  "borderWidth": "1px",
-                  "display": "inline-block",
-                  "height": "7px",
-                  "marginRight": "5px",
-                  "verticalAlign": "baseline",
-                  "width": "7px",
-                }
-              }
-            />
-             
+          }
+        >
+          , and you earned
+          :
+        </span>
+        <br />
+        <span>
+          <span>
             <span>
-              42
+              <br />
+              <span
+                style={
+                  Object {
+                    "color": "#fff",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 600,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "background": "#fda3f3",
+                      "borderColor": "#df85d5",
+                      "borderRadius": "10px",
+                      "borderStyle": "solid",
+                      "borderWidth": "1px",
+                      "display": "inline-block",
+                      "height": "7px",
+                      "marginRight": "5px",
+                      "verticalAlign": "baseline",
+                      "width": "7px",
+                    }
+                  }
+                />
+                 
+                <span>
+                  42
+                </span>
+              </span>
+              <span
+                style={
+                  Object {
+                    "color": "#fff",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                 
+                engagements
+              </span>
             </span>
           </span>
-          <span
-            style={
-              Object {
-                "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
-                "fontWeight": 400,
-              }
-            }
-          >
-             
-            clicks
+          <span>
+            <span>
+              <br />
+              <span
+                style={
+                  Object {
+                    "color": "#fff",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 600,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "background": "#fda3f3",
+                      "borderColor": "#df85d5",
+                      "borderRadius": "10px",
+                      "borderStyle": "solid",
+                      "borderWidth": "1px",
+                      "display": "inline-block",
+                      "height": "7px",
+                      "marginRight": "5px",
+                      "verticalAlign": "baseline",
+                      "width": "7px",
+                    }
+                  }
+                />
+                 
+                <span>
+                  42
+                </span>
+              </span>
+              <span
+                style={
+                  Object {
+                    "color": "#fff",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                 
+                clicks
+              </span>
+            </span>
           </span>
         </span>
       </span>
@@ -1010,7 +1303,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode 1`] 
                               </span>
                               <span
                                 className="sc-bwzfXH fydlv"
-                                data-description=""
+                                data-description="Already it was conjectured that this might be the well-known interplan industrialist Palmer Eldritch, who had gone to the Prox system a decade ago at the invitation of the Prox Council of humanoid types; they had wanted him to modernize their autofacs along Terran lines. Nothing had been heard from Eldritch since. Now this."
                               >
                                 ?
                               </span>
@@ -1078,7 +1371,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode 1`] 
                               </span>
                               <span
                                 className="sc-bwzfXH fydlv"
-                                data-description=""
+                                data-description="Discover how your posting frequency affects your fan count."
                               >
                                 ?
                               </span>
@@ -1637,7 +1930,7 @@ exports[`Snapshots PresetsDropdown [TESTED] open dropdown 1`] = `
                   </span>
                   <span
                     className="sc-bwzfXH fydlv"
-                    data-description=""
+                    data-description="Already it was conjectured that this might be the well-known interplan industrialist Palmer Eldritch, who had gone to the Prox system a decade ago at the invitation of the Prox Council of humanoid types; they had wanted him to modernize their autofacs along Terran lines. Nothing had been heard from Eldritch since. Now this."
                   >
                     ?
                   </span>
@@ -1705,7 +1998,7 @@ exports[`Snapshots PresetsDropdown [TESTED] open dropdown 1`] = `
                   </span>
                   <span
                     className="sc-bwzfXH fydlv"
-                    data-description=""
+                    data-description="Discover how your posting frequency affects your fan count."
                   >
                     ?
                   </span>

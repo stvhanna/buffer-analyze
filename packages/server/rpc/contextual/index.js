@@ -93,6 +93,7 @@ function formatDailyDataForPresets(
   const daily = Array.from(currentPeriodDays, day => ({
     day,
     dayData: dailyTotalsResult[day],
+    currentPeriodPostCount: dailyTotalsResult[day].posts_count,
   })).map((data) => {
     const presetMetric = yAxis.metrics;
     return {
@@ -101,6 +102,7 @@ function formatDailyDataForPresets(
         metricConfig,
         {
           value: processValueForPresetMetric(metricConfig, data.dayData),
+          postsCount: data.currentPeriodPostCount,
         },
       )),
     };

@@ -20,16 +20,18 @@
 module.exports = {
   facebook: [
     // {
+    //   id: 0,
     //   label: 'When is it most effective to post?',
     //   description: 'Discover which days your audience engages the most with your content.',
     // },
     // {
+    //   id: 1,
     //   label: 'Whhat type of content is working?',
     //   description: 'Find out what type of content reasonates well with your audience.',
     // },
     // {
+    //   id: 2,
     //   label: 'How does post frequency affect my engagement rate?',
-    //   description: 'Learn how your posting frequency encourages users to engage with your content.',
     //   xAxis: 'date',
     //   yAxis: {
     //     label: 'Engagement',
@@ -40,35 +42,41 @@ module.exports = {
     //   },
     // },
     {
+      id: 3,
       label: 'How does post frequency affect my fan count?',
       description: 'Discover how your posting frequency affects your fan count.',
+      showUpdatesCount: true,
+      rewardWording: 'and you {gained|lost} {value} [+new] fans.',
       xAxis: 'date',
       yAxis: {
         metrics: [
           {
-            key: 'posts_count',
-            label: 'Posts',
-          },
-          {
             key: 'new_followers',
             label: 'New Fans',
+          },
+          {
+            key: 'posts_count',
+            label: 'Posts',
           },
         ],
       },
     },
     {
+      id: 4,
       label: 'How does post frequency affect the reach per post?',
       description: 'Discover how your posting frequency affects your reach.',
+      showUpdatesCount: true,
+      rewardWording: 'that earned an average reach of {value} people.',
       xAxis: 'date',
       yAxis: {
         metrics: [
           {
-            key: 'posts_count',
-            label: 'Posts',
-          },
-          {
             key: 'post_reach',
             label: 'Reach',
+          },
+          {
+            key: 'posts_count',
+            label: 'Posts',
           },
         ],
       },

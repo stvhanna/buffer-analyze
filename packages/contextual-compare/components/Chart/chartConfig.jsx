@@ -130,6 +130,7 @@ export default {
           primaryMetric={primaryMetric.metricData}
           secondaryMetric={secondaryMetric.metricData}
           isCustomMode={primaryMetric.isCustomMode}
+          presetConfig={primaryMetric.presetConfig}
         />,
       );
     },
