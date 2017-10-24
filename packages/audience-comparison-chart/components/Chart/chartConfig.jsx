@@ -1,6 +1,8 @@
 import React from 'react';
 import reactDOM from 'react-dom/server';
 
+import ChartTooltip from '../ChartTooltip';
+
 export const highChartsConfigXAxis = {
   gridLineColor: '#F3F5F7',
   gridLineWidth: 1,
@@ -112,6 +114,22 @@ export default {
         },
       },
     },
+  },
+  tooltip: {
+    shared: true,
+    crosshairs: true,
+    formatter() {
+      const point = this.points[0].point;
+      return reactDOM.renderToStaticMarkup(
+        <ChartTooltip {...point.metricData} day={point.x} />,
+      );
+    },
+    backgroundColor: '#343E46',
+    borderRadius: 4,
+    borderWidth: 0,
+    pointFormatter: () => `${this.series.name}: <b>${this.y}</b><br/>`,
+    shadow: false,
+    useHTML: true,
   },
   series: [],
 };

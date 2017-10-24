@@ -8,16 +8,25 @@ import mockDailyData from '../../mocks/dailyData';
 
 storiesOf('Chart')
   .addDecorator(checkA11y)
-  .add('should render the chart', () => (
+  .add('should render the chart for a single profile', () => (
     <div
       style={{
         width: '750px',
       }}
     >
       <Chart
-        profileService="facebook"
-        dailyData={mockDailyData}
-        timezone="America/Los_Angeles"
+        profilesMetricData={[mockDailyData[0]]}
+      />
+    </div>
+  ))
+  .add('should render the chart for multiple profiles', () => (
+    <div
+      style={{
+        width: '750px',
+      }}
+    >
+      <Chart
+        profilesMetricData={mockDailyData}
       />
     </div>
   ));

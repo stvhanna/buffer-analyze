@@ -12,18 +12,18 @@ import {
 } from '@bufferapp/analyze-shared-components';
 
 const Grid = styled.ul`
-  display: 'flex',
-  flexWrap: 'wrap',
-  padding: '0',
-  margin: '0 auto',
-  borderLeft: solid 1px ${geyser},
-  borderRadius: '2px',
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 auto;
+  border-left: solid 1px ${geyser};
+  border-radius: 2px;
 `;
 
 const Wrapper = styled.section`
-  minHeight: '12rem',
-  position: 'relative',
-  margin: '0 0 1.5rem',
+  min-height: 12rem;
+  position: relative;
+  margin: 0 0 1.5rem;
 `;
 
 const Footer = ({ metric }) => {

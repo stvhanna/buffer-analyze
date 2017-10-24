@@ -52,6 +52,8 @@ function prepareSeries(
         timezone,
       }),
       pointPlacement: getTickInterval(dailyMetric),
+      // set profile specific timezone
+      getTimezoneOffset: timestamp => -moment.tz(timestamp, timezone).utcOffset(),
     };
   });
 
@@ -74,43 +76,33 @@ function prepareSeries(
   return seriesConfig;
 }
 
-function prepareChartOptions(dailyMetric, timezone, profileService) {
+function prepareChartOptions(profilesMetricData) {
   const config = Object.assign({}, chartConfig);
-
-  config.xAxis.minorTickInterval = getTickInterval(dailyMetric);
-  config.series = [
-    prepareSeries(dailyMetric, timezone, profileService),
-  ].filter(e => e !== null);
+  const seriesData = profilesMetricData.map((profileData) => {
+    return prepareSeries(profileData.dailyData, profileData.timezone, profileData.service);
+  });
+  config.series = seriesData.filter(e => e !== null);
   return config;
 }
 
-const Chart = ({ dailyData, timezone, profileService }) => {
-  const charOptions = prepareChartOptions(
-    dailyData,
-    timezone,
-    profileService,
-  );
-  ReactHighcharts.Highcharts.setOptions(
-    {
-      global: {
-        getTimezoneOffset: timestamp => -moment.tz(timestamp, timezone).utcOffset(),
-      },
-    },
-  );
+const Chart = ({ profilesMetricData }) => {
+  const charOptions = prepareChartOptions(profilesMetricData);
   return (<ReactHighcharts config={charOptions} />);
 };
 
 Chart.propTypes = {
-  dailyData: PropTypes.arrayOf(PropTypes.shape({
-    day: PropTypes.string.isRequired,
-    metric: PropTypes.shape({
-      color: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
-      value: PropTypes.number.isRequired,
-    }),
+  profilesMetricData: PropTypes.arrayOf(PropTypes.shape({
+    dailyData: PropTypes.arrayOf(PropTypes.shape({
+      day: PropTypes.string.isRequired,
+      metric: PropTypes.shape({
+        color: PropTypes.string.isRequired,
+        label: PropTypes.string.isRequired,
+        value: PropTypes.number.isRequired,
+      }),
+    })),
+    service: PropTypes.string.isRequired,
+    timezone: PropTypes.string.isRequired,
   })).isRequired,
-  profileService: PropTypes.string.isRequired,
-  timezone: PropTypes.string.isRequired,
 };
 
 export default Chart;
