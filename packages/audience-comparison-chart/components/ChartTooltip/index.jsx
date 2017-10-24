@@ -21,7 +21,7 @@ function transformLabelForTooltip(label) {
   return `${label.toLowerCase()}`;
 }
 
-const StandardTolltip = ({
+const StandardTooltip = ({
   label,
   value,
   color,
@@ -34,13 +34,13 @@ const StandardTolltip = ({
   </span>
 );
 
-StandardTolltip.propTypes = {
+StandardTooltip.propTypes = {
   label: PropTypes.string,
   value: PropTypes.number,
   color: PropTypes.string,
 };
 
-StandardTolltip.defaultProps = {
+StandardTooltip.defaultProps = {
   color: null,
   label: null,
   value: null,
@@ -70,7 +70,7 @@ const ChartTooltip = ({
   <Wrapper>
     <Header day={day} {...extraProps} />
     {label && <span>
-      <StandardTolltip label={label} {...extraProps} />
+      <StandardTooltip label={label} {...extraProps} />
       </span>}
   </Wrapper>
 );
