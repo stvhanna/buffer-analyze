@@ -1,6 +1,110 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Snapshots ChartTooltip [TESTED] should render the posts tooltip 1`] = `
+exports[`Snapshots ChartTooltip [TESTED] should render a presets tooltip 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#343E46",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "color": "#fff",
+          "cursor": "default",
+          "fontFamily": "Open Sans, Helvetica Neue, Helvetica, Arial, sans serif",
+          "fontSize": "9pt",
+          "padding": "10px",
+          "pointerEvents": "none",
+          "whiteSpace": "normal",
+          "width": "185px",
+        }
+      }
+    >
+      <span>
+        <span
+          style={
+            Object {
+              "color": "#e6ebef",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "0.7rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          11 September
+        </span>
+        <br />
+        <br />
+      </span>
+      <span>
+        <span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            There 
+            were
+             a total of 
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 600,
+              }
+            }
+          >
+            <span>
+              5
+            </span>
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+             
+            posts
+             published
+          </span>
+        </span>
+        <span
+          style={
+            Object {
+              "color": "#fff",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "0.8rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+           
+          and you gained 2 new fans.
+        </span>
+        <br />
+      </span>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots ChartTooltip [TESTED] should render a presets tooltip with negative count and no update count 1`] = `
 <span>
   <div
     style={
@@ -50,37 +154,99 @@ exports[`Snapshots ChartTooltip [TESTED] should render the posts tooltip 1`] = `
             }
           }
         >
-          There 
-          were
-           a total of 
+           
+          Here goes the metric with negative 15 value!
         </span>
+        <br />
+      </span>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots ChartTooltip [TESTED] should render the posts tooltip 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#343E46",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "color": "#fff",
+          "cursor": "default",
+          "fontFamily": "Open Sans, Helvetica Neue, Helvetica, Arial, sans serif",
+          "fontSize": "9pt",
+          "padding": "10px",
+          "pointerEvents": "none",
+          "whiteSpace": "normal",
+          "width": "185px",
+        }
+      }
+    >
+      <span>
         <span
           style={
             Object {
-              "color": "#fff",
+              "color": "#e6ebef",
               "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.8rem",
-              "fontWeight": 600,
-            }
-          }
-        >
-          <span>
-            5
-          </span>
-        </span>
-        <span
-          style={
-            Object {
-              "color": "#fff",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.8rem",
+              "fontSize": "0.7rem",
               "fontWeight": 400,
             }
           }
         >
-           
-          posts
-           published
+          11 September
+        </span>
+        <br />
+        <br />
+      </span>
+      <span>
+        <span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            There 
+            were
+             a total of 
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 600,
+              }
+            }
+          >
+            <span>
+              5
+            </span>
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+             
+            posts
+             published
+          </span>
         </span>
         <span
           style={
@@ -96,51 +262,56 @@ exports[`Snapshots ChartTooltip [TESTED] should render the posts tooltip 1`] = `
           :
         </span>
         <br />
-        <br />
         <span>
-          <span
-            style={
-              Object {
-                "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
-                "fontWeight": 600,
-              }
-            }
-          >
-            <span
-              style={
-                Object {
-                  "background": "#fda3f3",
-                  "borderColor": "#df85d5",
-                  "borderRadius": "10px",
-                  "borderStyle": "solid",
-                  "borderWidth": "1px",
-                  "display": "inline-block",
-                  "height": "7px",
-                  "marginRight": "5px",
-                  "verticalAlign": "baseline",
-                  "width": "7px",
-                }
-              }
-            />
-             
+          <span />
+          <span>
             <span>
-              42
+              <br />
+              <span
+                style={
+                  Object {
+                    "color": "#fff",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 600,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "background": "#fda3f3",
+                      "borderColor": "#df85d5",
+                      "borderRadius": "10px",
+                      "borderStyle": "solid",
+                      "borderWidth": "1px",
+                      "display": "inline-block",
+                      "height": "7px",
+                      "marginRight": "5px",
+                      "verticalAlign": "baseline",
+                      "width": "7px",
+                    }
+                  }
+                />
+                 
+                <span>
+                  42
+                </span>
+              </span>
+              <span
+                style={
+                  Object {
+                    "color": "#fff",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                 
+                clicks
+              </span>
             </span>
-          </span>
-          <span
-            style={
-              Object {
-                "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
-                "fontWeight": 400,
-              }
-            }
-          >
-             
-            clicks
           </span>
         </span>
       </span>
@@ -189,47 +360,49 @@ exports[`Snapshots ChartTooltip [TESTED] should render the tooltip 1`] = `
         <br />
       </span>
       <span>
-        <span
-          style={
-            Object {
-              "color": "#fff",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.8rem",
-              "fontWeight": 400,
+        <span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
             }
-          }
-        >
-          There 
-          were
-           a total of 
-        </span>
-        <span
-          style={
-            Object {
-              "color": "#fff",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.8rem",
-              "fontWeight": 600,
-            }
-          }
-        >
-          <span>
-            5
+          >
+            There 
+            were
+             a total of 
           </span>
-        </span>
-        <span
-          style={
-            Object {
-              "color": "#fff",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.8rem",
-              "fontWeight": 400,
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 600,
+              }
             }
-          }
-        >
-           
-          posts
-           published
+          >
+            <span>
+              5
+            </span>
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+             
+            posts
+             published
+          </span>
         </span>
         <span
           style={
@@ -245,98 +418,104 @@ exports[`Snapshots ChartTooltip [TESTED] should render the tooltip 1`] = `
           :
         </span>
         <br />
-        <br />
         <span>
-          <span
-            style={
-              Object {
-                "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
-                "fontWeight": 600,
-              }
-            }
-          >
-            <span
-              style={
-                Object {
-                  "background": "#fda3f3",
-                  "borderColor": "#df85d5",
-                  "borderRadius": "10px",
-                  "borderStyle": "solid",
-                  "borderWidth": "1px",
-                  "display": "inline-block",
-                  "height": "7px",
-                  "marginRight": "5px",
-                  "verticalAlign": "baseline",
-                  "width": "7px",
-                }
-              }
-            />
-             
+          <span>
             <span>
-              42
+              <br />
+              <span
+                style={
+                  Object {
+                    "color": "#fff",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 600,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "background": "#fda3f3",
+                      "borderColor": "#df85d5",
+                      "borderRadius": "10px",
+                      "borderStyle": "solid",
+                      "borderWidth": "1px",
+                      "display": "inline-block",
+                      "height": "7px",
+                      "marginRight": "5px",
+                      "verticalAlign": "baseline",
+                      "width": "7px",
+                    }
+                  }
+                />
+                 
+                <span>
+                  42
+                </span>
+              </span>
+              <span
+                style={
+                  Object {
+                    "color": "#fff",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                 
+                engagements
+              </span>
             </span>
           </span>
-          <span
-            style={
-              Object {
-                "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
-                "fontWeight": 400,
-              }
-            }
-          >
-             
-            engagements
-          </span>
-          <br />
-        </span>
-        <span>
-          <span
-            style={
-              Object {
-                "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
-                "fontWeight": 600,
-              }
-            }
-          >
-            <span
-              style={
-                Object {
-                  "background": "#fda3f3",
-                  "borderColor": "#df85d5",
-                  "borderRadius": "10px",
-                  "borderStyle": "solid",
-                  "borderWidth": "1px",
-                  "display": "inline-block",
-                  "height": "7px",
-                  "marginRight": "5px",
-                  "verticalAlign": "baseline",
-                  "width": "7px",
-                }
-              }
-            />
-             
+          <span>
             <span>
-              42
+              <br />
+              <span
+                style={
+                  Object {
+                    "color": "#fff",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 600,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "background": "#fda3f3",
+                      "borderColor": "#df85d5",
+                      "borderRadius": "10px",
+                      "borderStyle": "solid",
+                      "borderWidth": "1px",
+                      "display": "inline-block",
+                      "height": "7px",
+                      "marginRight": "5px",
+                      "verticalAlign": "baseline",
+                      "width": "7px",
+                    }
+                  }
+                />
+                 
+                <span>
+                  42
+                </span>
+              </span>
+              <span
+                style={
+                  Object {
+                    "color": "#fff",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                 
+                clicks
+              </span>
             </span>
-          </span>
-          <span
-            style={
-              Object {
-                "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
-                "fontWeight": 400,
-              }
-            }
-          >
-             
-            clicks
           </span>
         </span>
       </span>
@@ -570,80 +749,6 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                         </span>
                       </button>
                     </li>
-                    <li
-                      className="dropdownListItem"
-                    >
-                      <button
-                        aria-label={null}
-                        disabled={undefined}
-                        onBlur={[Function]}
-                        onClick={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        style={
-                          Object {
-                            "background": "none",
-                            "backgroundColor": "unset",
-                            "border": "none",
-                            "borderRadius": "unset",
-                            "color": "unset",
-                            "cursor": "pointer",
-                            "display": "unset",
-                            "fontFamily": "unset",
-                            "fontSize": "unset",
-                            "fontWeight": "unset",
-                            "lineHeight": "unset",
-                            "margin": "unset",
-                            "outline": "none",
-                            "padding": 0,
-                            "transition": "unset",
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "alignItems": "center",
-                              "boxSizing": "border-box",
-                              "display": "flex",
-                              "padding": "5px 10px",
-                              "position": "relative",
-                              "width": "200px",
-                            }
-                          }
-                        >
-                          <span
-                            style={
-                              Object {
-                                "background": "#98E8B2",
-                                "borderColor": "#7aca94",
-                                "borderRadius": "10px",
-                                "borderStyle": "solid",
-                                "borderWidth": "1px",
-                                "display": "inline-block",
-                                "height": "7px",
-                                "marginRight": "5px",
-                                "verticalAlign": "baseline",
-                                "width": "7px",
-                              }
-                            }
-                          />
-                          <span
-                            style={
-                              Object {
-                                "color": "#59626a",
-                                "fontFamily": "\\"Open Sans\\", sans-serif",
-                                "fontSize": "0.8rem",
-                                "fontWeight": 600,
-                              }
-                            }
-                          >
-                            Impression
-                          </span>
-                        </span>
-                      </button>
-                    </li>
                   </ul>
                 </div>
               </div>
@@ -825,6 +930,82 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                   </ul>
                 </div>
               </div>
+              <span
+                style={
+                  Object {
+                    "marginLeft": "auto",
+                  }
+                }
+              >
+                <button
+                  aria-label={null}
+                  disabled={undefined}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "background": "none",
+                      "backgroundColor": "unset",
+                      "border": "none",
+                      "borderRadius": "unset",
+                      "color": "unset",
+                      "cursor": "pointer",
+                      "display": "unset",
+                      "fontFamily": "unset",
+                      "fontSize": "unset",
+                      "fontWeight": "unset",
+                      "lineHeight": "unset",
+                      "margin": "unset",
+                      "outline": "none",
+                      "padding": 0,
+                      "transition": "unset",
+                    }
+                  }
+                >
+                  <span
+                    className="leftButton"
+                  >
+                    Presets
+                  </span>
+                </button>
+                <button
+                  aria-label={null}
+                  disabled={undefined}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  style={
+                    Object {
+                      "background": "none",
+                      "backgroundColor": "unset",
+                      "border": "none",
+                      "borderRadius": "unset",
+                      "color": "unset",
+                      "cursor": "pointer",
+                      "display": "unset",
+                      "fontFamily": "unset",
+                      "fontSize": "unset",
+                      "fontWeight": "unset",
+                      "lineHeight": "unset",
+                      "margin": "unset",
+                      "outline": "none",
+                      "padding": 0,
+                      "transition": "unset",
+                    }
+                  }
+                >
+                  <span
+                    className="rightButton activeButton"
+                  >
+                    Custom
+                  </span>
+                </button>
+              </span>
             </div>
           </div>
           <div
@@ -978,7 +1159,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode 1`] 
                 style={
                   Object {
                     "display": "inline-block",
-                    "width": "10rem",
+                    "width": "24rem",
                   }
                 }
               >
@@ -1014,7 +1195,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode 1`] 
                           }
                         }
                       >
-                        Impression
+                        How does post frequency affect my fan count?
                       </span>
                       <span
                         style={
@@ -1114,11 +1295,11 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode 1`] 
                                     "color": "#59626a",
                                     "fontFamily": "\\"Open Sans\\", sans-serif",
                                     "fontSize": "0.8rem",
-                                    "fontWeight": 400,
+                                    "fontWeight": 600,
                                   }
                                 }
                               >
-                                Impression
+                                How does post frequency affect my fan count?
                               </span>
                               <span
                                 className="sc-bwzfXH fydlv"
@@ -1186,79 +1367,11 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode 1`] 
                                   }
                                 }
                               >
-                                Click
+                                How does post frequency affect te reach per post?
                               </span>
                               <span
                                 className="sc-bwzfXH fydlv"
-                                data-description="Already it was conjectured that this might be the well-known interplan industrialist Palmer Eldritch, who had gone to the Prox system a decade ago at the invitation of the Prox Council of humanoid types; they had wanted him to modernize their autofacs along Terran lines. Nothing had been heard from Eldritch since. Now this."
-                              >
-                                ?
-                              </span>
-                            </span>
-                          </button>
-                        </li>
-                        <li
-                          style={
-                            Object {
-                              "listStyle": "none",
-                            }
-                          }
-                        >
-                          <button
-                            aria-label={null}
-                            disabled={undefined}
-                            onBlur={[Function]}
-                            onClick={[Function]}
-                            onFocus={[Function]}
-                            onMouseEnter={[Function]}
-                            onMouseLeave={[Function]}
-                            style={
-                              Object {
-                                "background": "none",
-                                "backgroundColor": "unset",
-                                "border": "none",
-                                "borderRadius": "unset",
-                                "color": "unset",
-                                "cursor": "pointer",
-                                "display": "unset",
-                                "fontFamily": "unset",
-                                "fontSize": "unset",
-                                "fontWeight": "unset",
-                                "lineHeight": "unset",
-                                "margin": "unset",
-                                "outline": "none",
-                                "padding": 0,
-                                "transition": "unset",
-                                "width": "100%",
-                              }
-                            }
-                          >
-                            <span
-                              style={
-                                Object {
-                                  "boxSizing": "border-box",
-                                  "display": "inline-flex",
-                                  "padding": "5px 10px",
-                                  "textAlign": "left",
-                                  "width": "100%",
-                                }
-                              }
-                            >
-                              <span
-                                style={
-                                  Object {
-                                    "color": "#59626a",
-                                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                                    "fontSize": "0.8rem",
-                                    "fontWeight": 400,
-                                  }
-                                }
-                              >
-                                Engagement
-                              </span>
-                              <span
-                                className="sc-bwzfXH fydlv"
-                                data-description="Already it was conjectured that this might be the well-known interplan industrialist Palmer Eldritch, who had gone to the Prox system a decade ago at the invitation of the Prox Council of humanoid types; they had wanted him to modernize their autofacs along Terran lines. Nothing had been heard from Eldritch since. Now this."
+                                data-description="Discover how your posting frequency affects your fan count."
                               >
                                 ?
                               </span>
@@ -1374,44 +1487,8 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode 1`] 
                 <span
                   style={
                     Object {
-                      "background": "#fda3f3",
-                      "borderColor": "#df85d5",
-                      "borderRadius": "0px",
-                      "borderStyle": "solid",
-                      "borderWidth": "1px",
-                      "display": "inline-block",
-                      "height": "7px",
-                      "marginRight": "5px",
-                      "verticalAlign": "baseline",
-                      "width": "7px",
-                    }
-                  }
-                />
-                <span
-                  style={
-                    Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
-                    }
-                  }
-                >
-                  Engagement
-                </span>
-              </li>
-              <li
-                style={
-                  Object {
-                    "margin": "0 0.5rem",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "background": "#98E8B2",
-                      "borderColor": "#7aca94",
+                      "background": "#3A92D3",
+                      "borderColor": "#1c74b5",
                       "borderRadius": "10px",
                       "borderStyle": "solid",
                       "borderWidth": "1px",
@@ -1433,10 +1510,268 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode 1`] 
                     }
                   }
                 >
-                  Impression
+                  posts
+                </span>
+              </li>
+              <li
+                style={
+                  Object {
+                    "margin": "0 0.5rem",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "background": "#D7B5FD",
+                      "borderColor": "#b997df",
+                      "borderRadius": "10px",
+                      "borderStyle": "solid",
+                      "borderWidth": "1px",
+                      "display": "inline-block",
+                      "height": "7px",
+                      "marginRight": "5px",
+                      "verticalAlign": "baseline",
+                      "width": "7px",
+                    }
+                  }
+                />
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
+                      "fontWeight": 600,
+                    }
+                  }
+                >
+                  new fans
                 </span>
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots ContextualCompare [TESTED] should render a "no data" state 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "750px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "margin": "0 0 1.5rem",
+        }
+      }
+    >
+      <div
+        className="sc-bxivhb gCXzOQ"
+      >
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "background": "rgba(255, 255, 255, 1)",
+              "bottom": 0,
+              "display": "flex",
+              "justifyContent": "center",
+              "left": 0,
+              "opacity": 1,
+              "position": "absolute",
+              "right": 0,
+              "textAlign": "center",
+              "top": 0,
+              "transition": "opacity 350ms ease-in-out",
+              "zIndex": 2,
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "background": "white",
+                "border": "solid 1px #ced7df",
+                "borderRadius": "2px",
+                "boxSizing": "border-box",
+                "flex": 1,
+                "flexDirection": "row",
+                "marginLeft": 30,
+                "marginRight": 30,
+              }
+            }
+          >
+            <h1>
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "1.25rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                We couldn't find any analytics for this date range.
+              </span>
+            </h1>
+            <p
+              style={
+                Object {
+                  "marginBottom": 30,
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "1rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                Try selecting a longer date range, or share something and check back tomorrow :)
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots ContextualCompare [TESTED] should render a loading state 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "750px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "margin": "0 0 1.5rem",
+        }
+      }
+    >
+      <div
+        className="sc-bxivhb gCXzOQ"
+      >
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "background": "rgba(255,255,255,.95)",
+              "border": "solid 1px #ced7df",
+              "bottom": 0,
+              "display": "flex",
+              "justifyContent": "center",
+              "left": 0,
+              "maxHeight": "none",
+              "opacity": 1,
+              "position": "absolute",
+              "right": 0,
+              "textAlign": "center",
+              "top": 0,
+              "transition": "opacity 350ms ease-in-out",
+              "zIndex": 2,
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "background": "white",
+                "borderRadius": "2px",
+                "flex": 1,
+                "flexDirection": "row",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "textAlign": "center",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "height": "1rem",
+                    "margin": "0 auto 1rem auto",
+                    "position": "relative",
+                    "width": "1rem",
+                  }
+                }
+              >
+                <span>
+                  <div
+                    style={
+                      Object {
+                        "height": "1rem",
+                        "left": 0,
+                        "opacity": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "transition": "all 1000ms ease-in-out",
+                        "width": "1rem",
+                      }
+                    }
+                  >
+                    <svg
+                      height="100%"
+                      style={
+                        Object {
+                          "fill": "#59626a",
+                          "height": "1rem",
+                          "width": "1rem",
+                        }
+                      }
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="100%"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlnsXlink="http://www.w3.org/1999/xlink"
+                    >
+                      <g
+                        className="shuttleGray"
+                      >
+                        <path
+                          d="M1.10241622,4.34038738 L7.75166358,7.40469806 C7.88821853,7.46764349 8.11178147,7.46764349 8.24833642,7.40469806 L14.8975838,4.34038738 C15.0341387,4.27744195 15.0341387,4.17446518 14.8975838,4.11151975 L8.24833642,1.04720908 C8.11178147,0.984263641 7.88821853,0.984263641 7.75166358,1.04720908 L1.10241622,4.11151975 C0.965861261,4.17446518 0.965861261,4.27744195 1.10241622,4.34038738"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                </span>
+              </div>
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "1rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                Engagement & Audience chart loading...
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -1451,7 +1786,7 @@ exports[`Snapshots PresetsDropdown [TESTED] open dropdown 1`] = `
     style={
       Object {
         "display": "inline-block",
-        "width": "10rem",
+        "width": "24rem",
       }
     }
   >
@@ -1487,7 +1822,7 @@ exports[`Snapshots PresetsDropdown [TESTED] open dropdown 1`] = `
               }
             }
           >
-            Impression
+            How does post frequency affect my fan count?
           </span>
           <span
             style={
@@ -1587,11 +1922,11 @@ exports[`Snapshots PresetsDropdown [TESTED] open dropdown 1`] = `
                         "color": "#59626a",
                         "fontFamily": "\\"Open Sans\\", sans-serif",
                         "fontSize": "0.8rem",
-                        "fontWeight": 400,
+                        "fontWeight": 600,
                       }
                     }
                   >
-                    Impression
+                    How does post frequency affect my fan count?
                   </span>
                   <span
                     className="sc-bwzfXH fydlv"
@@ -1659,79 +1994,11 @@ exports[`Snapshots PresetsDropdown [TESTED] open dropdown 1`] = `
                       }
                     }
                   >
-                    Click
+                    How does post frequency affect te reach per post?
                   </span>
                   <span
                     className="sc-bwzfXH fydlv"
-                    data-description="Already it was conjectured that this might be the well-known interplan industrialist Palmer Eldritch, who had gone to the Prox system a decade ago at the invitation of the Prox Council of humanoid types; they had wanted him to modernize their autofacs along Terran lines. Nothing had been heard from Eldritch since. Now this."
-                  >
-                    ?
-                  </span>
-                </span>
-              </button>
-            </li>
-            <li
-              style={
-                Object {
-                  "listStyle": "none",
-                }
-              }
-            >
-              <button
-                aria-label={null}
-                disabled={undefined}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                style={
-                  Object {
-                    "background": "none",
-                    "backgroundColor": "unset",
-                    "border": "none",
-                    "borderRadius": "unset",
-                    "color": "unset",
-                    "cursor": "pointer",
-                    "display": "unset",
-                    "fontFamily": "unset",
-                    "fontSize": "unset",
-                    "fontWeight": "unset",
-                    "lineHeight": "unset",
-                    "margin": "unset",
-                    "outline": "none",
-                    "padding": 0,
-                    "transition": "unset",
-                    "width": "100%",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "boxSizing": "border-box",
-                      "display": "inline-flex",
-                      "padding": "5px 10px",
-                      "textAlign": "left",
-                      "width": "100%",
-                    }
-                  }
-                >
-                  <span
-                    style={
-                      Object {
-                        "color": "#59626a",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
-                        "fontSize": "0.8rem",
-                        "fontWeight": 400,
-                      }
-                    }
-                  >
-                    Engagement
-                  </span>
-                  <span
-                    className="sc-bwzfXH fydlv"
-                    data-description="Already it was conjectured that this might be the well-known interplan industrialist Palmer Eldritch, who had gone to the Prox system a decade ago at the invitation of the Prox Council of humanoid types; they had wanted him to modernize their autofacs along Terran lines. Nothing had been heard from Eldritch since. Now this."
+                    data-description="Discover how your posting frequency affects your fan count."
                   >
                     ?
                   </span>

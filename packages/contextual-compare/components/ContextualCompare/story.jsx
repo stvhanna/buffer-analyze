@@ -57,10 +57,12 @@ storiesOf('ContextualCompare')
         openSecondaryMetricDropdown={actionLogger('openSecondaryMetricDropdown')}
         closePrimaryMetricDropdown={actionLogger('closePrimaryMetricDropdown')}
         closeSecondaryMetricDropdown={actionLogger('closeSecondaryMetricDropdown')}
+        selectPreset={actionLogger('selectPreset')}
+        presets={mockPresets}
       />
     </div>
   ))
-  .add('should render a loading state', () => (
+  .add('[TESTED] should render a loading state', () => (
     <div
       style={{
         width: '750px',
@@ -72,7 +74,7 @@ storiesOf('ContextualCompare')
       />
     </div>
   ))
-  .add('should render a "no data" state', () => (
+  .add('[TESTED] should render a "no data" state', () => (
     <div
       style={{
         width: '750px',

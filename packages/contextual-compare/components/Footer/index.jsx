@@ -27,7 +27,12 @@ Metric.propTypes = {
 };
 
 
-const Footer = ({ selectedMetrics }) => (
+const Footer = ({
+  selectedMetrics,
+  mode,
+  presets,
+  selectedPreset,
+}) => (
   <ul
     style={{
       alignItems: 'center',
@@ -39,7 +44,8 @@ const Footer = ({ selectedMetrics }) => (
       justifyContent: 'center',
     }}
   >
-    {selectedMetrics.map(metric => <Metric key={`contextual-footer-${metric.label}`} metric={metric} />)}
+    {mode === 0 && presets[selectedPreset].yAxis.metrics.map(metric => <Metric key={`contextual-footer-${metric.label}`} metric={metric} />)}
+    {mode === 1 && selectedMetrics.map(metric => <Metric key={`contextual-footer-${metric.label}`} metric={metric} />)}
   </ul>
 );
 
@@ -48,8 +54,17 @@ Footer.defaultProps = {
 };
 
 Footer.propTypes = {
+  mode: PropTypes.number.isRequired,
   selectedMetrics: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string,
+  })).isRequired,
+  selectedPreset: PropTypes.number.isRequired,
+  presets: PropTypes.arrayOf(PropTypes.shape({
+    yAxis: PropTypes.shape({
+      metrics: PropTypes.arrayOf(PropTypes.shape({
+        label: PropTypes.string,
+      })).isRequired,
+    }).isRequired,
   })).isRequired,
 };
 

@@ -1543,7 +1543,7 @@ exports[`Snapshots MetricsDropdown should open the dropdown 1`] = `
     }
   >
     <div
-      className="dropdown dropdownContainer"
+      className="dropdown dropdown--active dropdownContainer"
       style={
         Object {
           "marginLeft": "",
