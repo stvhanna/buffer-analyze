@@ -26,28 +26,26 @@ const Wrapper = styled.section`
   margin: 0 0 1.5rem;
 `;
 
-const Footer = ({ profileTotals }) => {
-  return (
-    <Wrapper>
-      <Grid>
-        {profileTotals.map(total => <GridItem
-          key={total.profileId}
-          metric={{
-            label: total.metric.label,
-            value: total.currentPeriodTotal,
-            diff: total.currentPeriodDiff,
-          }}
-          customLabel={
-            <span>
-              <MetricIcon key={total.profileId} metric={total.metric} />
-              {total.metric.label}
-            </span>
-          }
-        />)}
-      </Grid>
-    </Wrapper>
-  );
-};
+const Footer = ({ profileTotals }) => (
+  <Wrapper>
+    <Grid>
+      {profileTotals.map(total => <GridItem
+        key={total.profileId}
+        metric={{
+          label: total.metric.label,
+          value: total.currentPeriodTotal,
+          diff: total.currentPeriodDiff,
+        }}
+        customLabel={
+          <span>
+            <MetricIcon key={total.profileId} metric={total.metric} />
+            {total.metric.label}
+          </span>
+        }
+      />)}
+    </Grid>
+  </Wrapper>
+);
 
 Footer.defaultProps = {
   loading: false,

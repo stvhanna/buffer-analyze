@@ -69,8 +69,9 @@ const ChartTooltip = ({
 }) => (
   <Wrapper>
     <Header day={day} {...extraProps} />
-    {label && <span>
-      <StandardTooltip label={label} {...extraProps} />
+    {label &&
+      <span>
+        <StandardTooltip label={label} {...extraProps} />
       </span>}
   </Wrapper>
 );

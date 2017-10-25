@@ -24,6 +24,7 @@ import { middleware as compareChartMiddleware } from '@bufferapp/compare-chart';
 import { middleware as addReportMiddleware } from '@bufferapp/add-report';
 import { middleware as reportListMiddleware } from '@bufferapp/report-list';
 import { middleware as contextualCompareMiddleware } from '@bufferapp/contextual-compare';
+import { middleware as audienceComparisonMiddleware } from '@bufferapp/audience-comparison-chart';
 
 import reducers from './reducers';
 
@@ -60,6 +61,7 @@ const configureStore = (initialstate) => {
         addReportMiddleware,
         reportListMiddleware,
         exportToCSVMiddleware,
+        audienceComparisonMiddleware,
       ),
     ),
   );

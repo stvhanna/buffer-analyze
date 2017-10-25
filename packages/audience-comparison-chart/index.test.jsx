@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import { Provider } from 'react-redux';
-import AudienceComparisonChart, {
+import AudienceComparisonChartContainer, {
   reducer,
   actions,
   actionTypes,
@@ -16,7 +16,7 @@ const storeFake = state => ({
   getState: () => ({ ...state }),
 });
 
-describe('AudienceComparisonChart', () => {
+describe('AudienceComparisonChartContainer', () => {
   it('should render', () => {
     const store = storeFake({
     });
@@ -25,7 +25,7 @@ describe('AudienceComparisonChart', () => {
         <AudienceComparisonChart />
       </Provider>,
     );
-    expect(wrapper.find(AudienceComparisonChart).length)
+    expect(wrapper.find(AudienceComparisonChartContainer).length)
       .toBe(1);
   });
 

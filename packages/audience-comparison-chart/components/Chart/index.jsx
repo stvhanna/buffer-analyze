@@ -78,9 +78,9 @@ function prepareSeries(
 
 function prepareChartOptions(profilesMetricData) {
   const config = Object.assign({}, chartConfig);
-  const seriesData = profilesMetricData.map((profileData) => {
-    return prepareSeries(profileData.dailyData, profileData.timezone, profileData.service);
-  });
+  const seriesData = profilesMetricData.map(profileData =>
+    prepareSeries(profileData.dailyData, profileData.timezone, profileData.service),
+  );
   config.series = seriesData.filter(e => e !== null);
   return config;
 }
