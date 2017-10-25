@@ -16,17 +16,11 @@ import Footer from '../Footer';
 
 const AudienceComparisonChart = ({
   profilesMetricData,
+  profileTotals,
   loading,
 }) => {
   let content = null;
   let footer = null;
-
-  const metric = {
-    color: '#fda3f3',
-    diff: 50,
-    label: 'Fans',
-    value: 200,
-  };
 
   if (loading) {
     content = <Loading active text="Audience chart loading..." />;
@@ -42,7 +36,7 @@ const AudienceComparisonChart = ({
     );
     footer = (
       <Footer
-        metric={metric}
+        profileTotals={profileTotals}
       />
     );
   }
@@ -75,6 +69,7 @@ AudienceComparisonChart.defaultProps = {
 
 AudienceComparisonChart.propTypes = {
   loading: PropTypes.bool,
+  // props used for chart
   profilesMetricData: PropTypes.arrayOf(PropTypes.shape({
     dailyData: PropTypes.arrayOf(PropTypes.shape({
       day: PropTypes.string.isRequired,
@@ -86,6 +81,16 @@ AudienceComparisonChart.propTypes = {
     })),
     service: PropTypes.string.isRequired,
     timezone: PropTypes.string.isRequired,
+  })).isRequired,
+  // props  for generating the right footer
+  profileTotals: PropTypes.arrayOf(PropTypes.shape({
+    metric: PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      color: PropTypes.string.isRequired,
+    }),
+    currentPeriodTotal: PropTypes.number.isRequired,
+    currentPeriodDiff: PropTypes.number.isRequired,
+    profileId: PropTypes.string.isRequired,
   })).isRequired,
 };
 

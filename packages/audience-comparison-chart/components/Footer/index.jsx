@@ -26,23 +26,24 @@ const Wrapper = styled.section`
   margin: 0 0 1.5rem;
 `;
 
-const Footer = ({ metric }) => {
-  const currentMetric = Object.assign({}, metric, {
-    key: `${metric.label}_current`,
-  });
+const Footer = ({ profileTotals }) => {
   return (
     <Wrapper>
       <Grid>
-        <GridItem
-          key={currentMetric.key}
-          metric={currentMetric}
+        {profileTotals.map(total => <GridItem
+          key={total.profileId}
+          metric={{
+            label: total.metric.label,
+            value: total.currentPeriodTotal,
+            diff: total.currentPeriodDiff,
+          }}
           customLabel={
             <span>
-              <MetricIcon metric={currentMetric} />
-              {metric.label} dot
+              <MetricIcon key={total.profileId} metric={total.metric} />
+              {total.metric.label}
             </span>
           }
-        />
+        />)}
       </Grid>
     </Wrapper>
   );
@@ -53,11 +54,15 @@ Footer.defaultProps = {
 };
 
 Footer.propTypes = {
-  metric: PropTypes.shape({
-    diff: PropTypes.number,
-    label: PropTypes.string,
-    value: PropTypes.number,
-  }).isRequired,
+  profileTotals: PropTypes.arrayOf(PropTypes.shape({
+    metric: PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      color: PropTypes.string.isRequired,
+    }),
+    currentPeriodTotal: PropTypes.number.isRequired,
+    currentPeriodDiff: PropTypes.number.isRequired,
+    profileId: PropTypes.string.isRequired,
+  })).isRequired,
 };
 
 export default Footer;

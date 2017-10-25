@@ -3,23 +3,48 @@ import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
 import Footer from './index';
 
-const metric = {
-  color: '#fda3f3',
-  diff: 50,
-  label: 'Fans',
-  value: 200,
-};
+const profileTotals = [
+  {
+    currentPeriodTotal: 400,
+    currentPeriodDiff: 20,
+    profileId: '1234abcd',
+    metric: {
+      color: '#fda3f3',
+      label: 'Fans',
+    },
+  },
+  {
+    currentPeriodTotal: 700,
+    currentPeriodDiff: -10,
+    profileId: '5678abcd',
+    metric: {
+      color: '#fda444',
+      label: 'Followers',
+    },
+  },
+];
 
 storiesOf('Footer')
   .addDecorator(checkA11y)
-  .add('should render the footer for audience comparison chart', () => (
+  .add('should render the footer for a single profile', () => (
     <div
       style={{
         width: '750px',
       }}
     >
       <Footer
-        metric={metric}
+        profileTotals={[profileTotals[0]]}
+      />
+    </div>
+  ))
+  .add('should render the footer for multiple profiles', () => (
+    <div
+      style={{
+        width: '750px',
+      }}
+    >
+      <Footer
+        profileTotals={profileTotals}
       />
     </div>
   ));
