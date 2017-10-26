@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 import {
   geyser,
@@ -17,6 +18,7 @@ import Footer from '../Footer';
 const AudienceComparisonChart = ({
   profilesMetricData,
   profileTotals,
+  selectedProfile,
   loading,
 }) => {
   let content = null;
@@ -37,29 +39,32 @@ const AudienceComparisonChart = ({
     footer = (
       <Footer
         profileTotals={profileTotals}
+        selectedProfile={selectedProfile}
       />
     );
   }
 
-  const containerStyle = {
-    padding: '0',
-    margin: '0 auto',
-    borderRadius: '2px',
-    border: `solid 1px ${geyser}`,
-    minHeight: '12rem',
-    position: 'relative',
-  };
+  const ContentContainer = styled.div`
+    padding: 0;
+    margin: 0 auto;
+    borderRadius: 2px;
+    border: solid 1px ${geyser};
+    minHeight: 12rem;
+    position: relative;
+  `;
 
-  if (loading || profilesMetricData.length === 0) delete containerStyle.border;
+  const Wrapper = styled.div`
+    margin: 0 0 1.5rem;
+  `;
 
   return (
-    <div style={{ margin: '0 0 1.5rem' }}>
+    <Wrapper>
       <Title />
-      <div style={containerStyle}>
+      <ContentContainer>
         {content}
-      </div>
+      </ContentContainer>
       {footer}
-    </div>
+    </Wrapper>
   );
 };
 
@@ -69,7 +74,7 @@ AudienceComparisonChart.defaultProps = {
 
 AudienceComparisonChart.propTypes = {
   loading: PropTypes.bool,
-  // props used for chart
+  // props used for generating chart
   profilesMetricData: PropTypes.arrayOf(PropTypes.shape({
     dailyData: PropTypes.arrayOf(PropTypes.shape({
       day: PropTypes.string.isRequired,
@@ -92,6 +97,13 @@ AudienceComparisonChart.propTypes = {
     currentPeriodDiff: PropTypes.number.isRequired,
     profileId: PropTypes.string.isRequired,
   })).isRequired,
+  selectedProfile: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    avatarUrl: PropTypes.string.isRequired,
+    service: PropTypes.string.isRequired,
+    timezone: PropTypes.string.isRequired,
+    username: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default AudienceComparisonChart;

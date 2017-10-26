@@ -59,7 +59,8 @@ function formatData(profileAudienceData, profileService) {
           profileService,
         ),
       ),
-      service: profileService,
+      service: data.service,
+      timezone: data.timezone,
     };
   });
 
@@ -91,32 +92,117 @@ module.exports = method(
     const start = moment.unix(startDate).format('MM/DD/YYYY');
     const dateRange = new DateRange(start, end);
 
-    // for testing
-    return {
-      profilesMetricData: [],
-      profileTotals: [],
-    };
-
-    // const profileAudienceData = requestProfileAudienceData(
-    //   profileId,
-    //   dateRange,
-    //   session.accessToken,
+    // const profileAudienceDataResult = {
+    //   profileAudienceData: [{
+    //     dailyData: [
+    //       {
+    //         day: '1504137600000',
+    //         value: 50,
+    //       },
+    //       {
+    //         day: '1504224000000',
+    //         value: 100,
+    //       },
+    //       {
+    //         day: '1504310400000',
+    //         value: 25,
+    //       },
+    //       {
+    //         day: '1504396800000',
+    //         value: 40,
+    //       },
+    //       {
+    //         day: '1504483200000',
+    //         value: 10,
+    //       },
+    //       {
+    //         day: '1504569600000',
+    //         value: 70,
+    //       },
+    //       {
+    //         day: '1504656000000',
+    //         value: 100,
+    //       },
+    //     ],
+    //   }],
+    //   profileTotals: [{
+    //     currentPeriodTotal: 1000,
+    //     currentPeriodDiff: 20,
+    //     profileId: '12345',
+    //   }],
+    // };
+    // // for testing
+    // return formatData(
+    //   profileAudienceDataResult,
+    //   'facebook',
     // );
+    // return {
+    //   profilesMetricData: [],
+    //   profileTotals: [],
+    // };
 
-    // return Promise
-    //   .all([
-    //     profileAudienceData,
-    //   ])
-    //   .then((response) => {
-    //     const profileAudienceDataResult = response[0].response;
-    //     return formatData(
-    //       profileAudienceDataResult,
-    //       profileService,
-    //     );
-    //   })
-    //   .catch(() => ({
-    //     profilesMetricData: [],
-    //     profileTotals: [],
-    //   }));
+    const profileAudienceData = requestProfileAudienceData(
+      profileId,
+      dateRange,
+      session.accessToken,
+    );
+
+    return Promise
+      .all([
+        profileAudienceData,
+      ])
+      .then((response) => {
+        // const profileAudienceDataResult = response[0].response;
+        const profileAudienceDataResult = {
+          profileAudienceData: [{
+            dailyData: [
+              {
+                day: '1504137600000',
+                value: 50,
+              },
+              {
+                day: '1504224000000',
+                value: 100,
+              },
+              {
+                day: '1504310400000',
+                value: 25,
+              },
+              {
+                day: '1504396800000',
+                value: 40,
+              },
+              {
+                day: '1504483200000',
+                value: 10,
+              },
+              {
+                day: '1504569600000',
+                value: 70,
+              },
+              {
+                day: '1504656000000',
+                value: 100,
+              },
+            ],
+            timezone: 'America/New_York',
+            service: 'facebook',
+          }],
+          profileTotals: [{
+            currentPeriodTotal: 1000,
+            currentPeriodDiff: 20,
+            profileId: '12345',
+          }],
+        };
+        // for testing
+        return formatData(
+          profileAudienceDataResult,
+          profileService,
+        );
+      })
+      .catch(() => ({
+        profilesMetricData: [],
+        profileTotals: [],
+      }));
   },
 );

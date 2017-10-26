@@ -26,6 +26,13 @@ const profileTotals = [
   },
 ];
 
+const selectedProfile = {
+  avatarUrl: "https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/10403026_1055367724535674_7855796462569708170_n.png?oh=39ea3ae01610ba482316d4c87ca1c14c&oe=59B58B81",
+  service: 'facebook',
+  timezone: 'America/Los_Angeles',
+  username: 'Buffer',
+};
+
 storiesOf('AudienceComparisonChart')
   .addDecorator(checkA11y)
   .add('should render the audience comparison chart for a single profile', () => (
@@ -37,6 +44,7 @@ storiesOf('AudienceComparisonChart')
       <AudienceComparisonChart
         profilesMetricData={[mockDailyData[0]]}
         profileTotals={[profileTotals[0]]}
+        selectedProfile={selectedProfile}
       />
     </div>
   ))
@@ -49,6 +57,7 @@ storiesOf('AudienceComparisonChart')
       <AudienceComparisonChart
         profilesMetricData={mockDailyData}
         profileTotals={profileTotals}
+        selectedProfile={selectedProfile}
       />
     </div>
   ))
@@ -61,6 +70,7 @@ storiesOf('AudienceComparisonChart')
       <AudienceComparisonChart
         profilesMetricData={[]}
         profileTotals={[]}
+        selectedProfile={{}}
         loading
       />
     </div>
@@ -74,6 +84,7 @@ storiesOf('AudienceComparisonChart')
       <AudienceComparisonChart
         profilesMetricData={[]}
         profileTotals={[]}
+        selectedProfile={{}}
       />
     </div>
   ));

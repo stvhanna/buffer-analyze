@@ -9,6 +9,10 @@ import ProfileSelector from '@bufferapp/analyze-profile-selector';
 import Divider from '@bufferapp/components/Divider';
 import AudienceComparisonChart from '@bufferapp/audience-comparison-chart';
 import styled from 'styled-components';
+import {
+  Tabs,
+  Tab,
+} from '@bufferapp/publish-shared-components';
 
 const pageStyle = {
   display: 'flex',
@@ -39,11 +43,25 @@ const Content = styled.div`
   width: 100%;
 `;
 
-const ComparisonsPage = ({ location }) => (
+const ComparisonsPage = ({
+  // match: {
+  //   params: {
+  //     service,
+  //     id,
+  //   },
+  // },
+  location,
+}) => (
   <div style={pageStyle}>
     <NavSidebar route={location.pathname} />
     <ProfileLoader>
-      <div />
+      <div id="tabs">
+        <Tabs
+          selectedTabId={'performance'}
+        >
+          <Tab tabId={'performance'}>Performance</Tab>
+        </Tabs>
+      </div>
       <div style={contentStyle}>
         <div style={profileSelectorContainer}>
           <ProfileSelector
@@ -66,6 +84,12 @@ ComparisonsPage.propTypes = {
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired,
   }).isRequired,
+  // match: PropTypes.shape({
+  //   params: PropTypes.shape({
+  //     service: PropTypes.string,
+  //     id: PropTypes.string,
+  //   }),
+  // }).isRequired,
 };
 
 export default connect()(ComparisonsPage);
