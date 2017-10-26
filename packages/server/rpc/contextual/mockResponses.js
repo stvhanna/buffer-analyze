@@ -1,89 +1,537 @@
 export default {
   response: {
-    1504051200000: {
-      posts_count: 4,
-      shares: 79,
-      comments: 25,
-      followers: 99866,
-      new_followers: 101,
-      page_engagements: 3119,
-      post_impressions: 78966,
-      post_clicks: 2656,
-      post_reach: 64496,
-      reactions: 2863,
-    },
-    1504137600000: {
-      posts_count: 2,
-      shares: 0,
-      comments: 0,
-      followers: 100000,
-      new_followers: 161,
-      page_engagements: 1374,
-      post_impressions: 91133,
-      post_clicks: 2679,
-      post_reach: 75074,
-      reactions: 1024,
-    },
-    1504224000000: {
-      posts_count: 0,
-      shares: 0,
-      comments: 0,
-      followers: 100142,
-      new_followers: 170,
-      page_engagements: 803,
-      post_impressions: 85118,
-      post_clicks: 2582,
-      post_reach: 70817,
-      reactions: 472,
-    },
-    1504310400000: {
-      posts_count: 1,
-      shares: 130,
-      comments: 20,
-      followers: 100212,
-      new_followers: 77,
-      page_engagements: 414,
-      post_impressions: 75936,
-      post_clicks: 1846,
-      post_reach: 62235,
-      reactions: 246,
-    },
-    1504396800000: {
-      posts_count: 1,
-      shares: 31,
-      comments: 4,
-      followers: 100271,
-      new_followers: 73,
-      page_engagements: 340,
-      post_impressions: 86410,
-      post_clicks: 2755,
-      post_reach: 72016,
-      reactions: 181,
-    },
-    1504483200000: {
-      posts_count: 0,
-      shares: 0,
-      comments: 0,
-      followers: 100317,
-      new_followers: 69,
-      page_engagements: 439,
-      post_impressions: 87669,
-      post_clicks: 3041,
-      post_reach: 74474,
-      reactions: 253,
-    },
-    1504569600000: {
-      posts_count: 1,
-      shares: 177,
-      comments: 45,
-      followers: 100369,
-      new_followers: 73,
-      page_engagements: 299,
-      post_impressions: 74969,
-      post_clicks: 2516,
-      post_reach: 66089,
-      reactions: 167,
-    },
+    daily: [
+      {
+        day: 1508371200000,
+        metrics: [
+          {
+            key: 'posts_count',
+            value: 1,
+          },
+          {
+            key: 'shares',
+            value: 29,
+          },
+          {
+            key: 'comments',
+            value: 7,
+          },
+          {
+            key: 'followers',
+            value: 102915,
+          },
+          {
+            key: 'new_followers',
+            value: 58,
+          },
+          {
+            key: 'page_engagements',
+            value: 176,
+          },
+          {
+            key: 'post_impressions',
+            value: 35989,
+          },
+          {
+            key: 'post_clicks',
+            value: 1094,
+          },
+          {
+            key: 'post_reach',
+            value: 33909,
+          },
+          {
+            key: 'reactions',
+            value: 83,
+          },
+        ],
+      },
+      {
+        day: 1508457600000,
+        metrics: [
+          {
+            key: 'posts_count',
+            value: 0,
+          },
+          {
+            key: 'shares',
+            value: 0,
+          },
+          {
+            key: 'comments',
+            value: 0,
+          },
+          {
+            key: 'followers',
+            value: 102964,
+          },
+          {
+            key: 'new_followers',
+            value: 74,
+          },
+          {
+            key: 'page_engagements',
+            value: 327,
+          },
+          {
+            key: 'post_impressions',
+            value: 41652,
+          },
+          {
+            key: 'post_clicks',
+            value: 1319,
+          },
+          {
+            key: 'post_reach',
+            value: 34526,
+          },
+          {
+            key: 'reactions',
+            value: 157,
+          },
+        ],
+      },
+      {
+        day: 1508544000000,
+        metrics: [
+          {
+            key: 'posts_count',
+            value: 0,
+          },
+          {
+            key: 'shares',
+            value: 0,
+          },
+          {
+            key: 'comments',
+            value: 0,
+          },
+          {
+            key: 'followers',
+            value: 103013,
+          },
+          {
+            key: 'new_followers',
+            value: 70,
+          },
+          {
+            key: 'page_engagements',
+            value: 187,
+          },
+          {
+            key: 'post_impressions',
+            value: 36791,
+          },
+          {
+            key: 'post_clicks',
+            value: 1054,
+          },
+          {
+            key: 'post_reach',
+            value: 33670,
+          },
+          {
+            key: 'reactions',
+            value: 80,
+          },
+        ],
+      },
+      {
+        day: 1508630400000,
+        metrics: [
+          {
+            key: 'posts_count',
+            value: 1,
+          },
+          {
+            key: 'shares',
+            value: 66,
+          },
+          {
+            key: 'comments',
+            value: 23,
+          },
+          {
+            key: 'followers',
+            value: 103035,
+          },
+          {
+            key: 'new_followers',
+            value: 42,
+          },
+          {
+            key: 'page_engagements',
+            value: 147,
+          },
+          {
+            key: 'post_impressions',
+            value: 34300,
+          },
+          {
+            key: 'post_clicks',
+            value: 828,
+          },
+          {
+            key: 'post_reach',
+            value: 32655,
+          },
+          {
+            key: 'reactions',
+            value: 75,
+          },
+        ],
+      },
+      {
+        day: 1508716800000,
+        metrics: [
+          {
+            key: 'posts_count',
+            value: 0,
+          },
+          {
+            key: 'shares',
+            value: 0,
+          },
+          {
+            key: 'comments',
+            value: 0,
+          },
+          {
+            key: 'followers',
+            value: 103087,
+          },
+          {
+            key: 'new_followers',
+            value: 74,
+          },
+          {
+            key: 'page_engagements',
+            value: 313,
+          },
+          {
+            key: 'post_impressions',
+            value: 47435,
+          },
+          {
+            key: 'post_clicks',
+            value: 1266,
+          },
+          {
+            key: 'post_reach',
+            value: 40074,
+          },
+          {
+            key: 'reactions',
+            value: 174,
+          },
+        ],
+      },
+      {
+        day: 1508803200000,
+        metrics: [
+          {
+            key: 'posts_count',
+            value: 0,
+          },
+          {
+            key: 'shares',
+            value: 0,
+          },
+          {
+            key: 'comments',
+            value: 0,
+          },
+          {
+            key: 'followers',
+            value: 103160,
+          },
+          {
+            key: 'new_followers',
+            value: 93,
+          },
+          {
+            key: 'page_engagements',
+            value: 294,
+          },
+          {
+            key: 'post_impressions',
+            value: 45341,
+          },
+          {
+            key: 'post_clicks',
+            value: 1668,
+          },
+          {
+            key: 'post_reach',
+            value: 41813,
+          },
+          {
+            key: 'reactions',
+            value: 129,
+          },
+        ],
+      },
+      {
+        day: 1508889600000,
+        metrics: [
+          {
+            key: 'posts_count',
+            value: 0,
+          },
+          {
+            key: 'shares',
+            value: 0,
+          },
+          {
+            key: 'comments',
+            value: 0,
+          },
+          {
+            key: 'followers',
+            value: 0,
+          },
+          {
+            key: 'new_followers',
+            value: 0,
+          },
+          {
+            key: 'page_engagements',
+            value: 0,
+          },
+          {
+            key: 'post_impressions',
+            value: 0,
+          },
+          {
+            key: 'post_clicks',
+            value: 0,
+          },
+          {
+            key: 'post_reach',
+            value: 0,
+          },
+          {
+            key: 'reactions',
+            value: 0,
+          },
+        ],
+      },
+    ],
+    presets: [
+      {
+        id: 'preset_4',
+        xAxes: 'date',
+        yAxes: {
+          metrics: [
+            {
+              key: 'new_followers',
+            },
+            {
+              key: 'posts_count',
+            },
+          ],
+        },
+        data: [
+          {
+            day: 1508371200000,
+            metrics: {
+              0: {
+                key: 'posts_count',
+                value: 1,
+              },
+              4: {
+                key: 'new_followers',
+                value: 58,
+              },
+            },
+          },
+          {
+            day: 1508457600000,
+            metrics: {
+              0: {
+                key: 'posts_count',
+                value: 0,
+              },
+              4: {
+                key: 'new_followers',
+                value: 74,
+              },
+            },
+          },
+          {
+            day: 1508544000000,
+            metrics: {
+              0: {
+                key: 'posts_count',
+                value: 0,
+              },
+              4: {
+                key: 'new_followers',
+                value: 70,
+              },
+            },
+          },
+          {
+            day: 1508630400000,
+            metrics: {
+              0: {
+                key: 'posts_count',
+                value: 1,
+              },
+              4: {
+                key: 'new_followers',
+                value: 42,
+              },
+            },
+          },
+          {
+            day: 1508716800000,
+            metrics: {
+              0: {
+                key: 'posts_count',
+                value: 0,
+              },
+              4: {
+                key: 'new_followers',
+                value: 74,
+              },
+            },
+          },
+          {
+            day: 1508803200000,
+            metrics: {
+              0: {
+                key: 'posts_count',
+                value: 0,
+              },
+              4: {
+                key: 'new_followers',
+                value: 93,
+              },
+            },
+          },
+          {
+            day: 1508889600000,
+            metrics: {
+              0: {
+                key: 'posts_count',
+                value: 0,
+              },
+              4: {
+                key: 'new_followers',
+                value: 0,
+              },
+            },
+          },
+        ],
+      },
+      {
+        id: 'preset_5',
+        xAxes: 'date',
+        yAxes: {
+          metrics: [
+            {
+              key: 'post_reach',
+            },
+            {
+              key: 'posts_count',
+            },
+          ],
+        },
+        data: [
+          {
+            day: 1508371200000,
+            metrics: {
+              0: {
+                key: 'posts_count',
+                value: 1,
+              },
+              8: {
+                key: 'post_reach',
+                value: 33909,
+              },
+            },
+          },
+          {
+            day: 1508457600000,
+            metrics: {
+              0: {
+                key: 'posts_count',
+                value: 0,
+              },
+              8: {
+                key: 'post_reach',
+                value: 34526,
+              },
+            },
+          },
+          {
+            day: 1508544000000,
+            metrics: {
+              0: {
+                key: 'posts_count',
+                value: 0,
+              },
+              8: {
+                key: 'post_reach',
+                value: 33670,
+              },
+            },
+          },
+          {
+            day: 1508630400000,
+            metrics: {
+              0: {
+                key: 'posts_count',
+                value: 1,
+              },
+              8: {
+                key: 'post_reach',
+                value: 32655,
+              },
+            },
+          },
+          {
+            day: 1508716800000,
+            metrics: {
+              0: {
+                key: 'posts_count',
+                value: 0,
+              },
+              8: {
+                key: 'post_reach',
+                value: 40074,
+              },
+            },
+          },
+          {
+            day: 1508803200000,
+            metrics: {
+              0: {
+                key: 'posts_count',
+                value: 0,
+              },
+              8: {
+                key: 'post_reach',
+                value: 41813,
+              },
+            },
+          },
+          {
+            day: 1508889600000,
+            metrics: {
+              0: {
+                key: 'posts_count',
+                value: 0,
+              },
+              8: {
+                key: 'post_reach',
+                value: 0,
+              },
+            },
+          },
+        ],
+      },
+    ],
   },
-  success: true,
 };
