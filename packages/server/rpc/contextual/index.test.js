@@ -102,6 +102,35 @@ describe('rpc/contextual', () => {
     });
   });
 
+  it('should filter out unsuded presets', async() => {
+    const mockedResponse = { response: {
+      daily: CURRENT_PERIOD_DAILY_RESPONSE.response.daily,
+      presets: [{
+        presetKey: 'foo_bar',
+        xAxis: 'date',
+        yAxis: {
+          metrics: [
+            {
+              key: 'new_followers',
+            },
+            {
+              key: 'posts_count',
+            },
+          ],
+        },
+        data: [],
+      }],
+    } };
+    rp.mockReturnValueOnce(Promise.resolve(mockedResponse));
+
+    const data = await contextual.fn({ profileId, profileService }, {
+      session: {
+        accessToken: token,
+      },
+    });
+    expect(data.presets.length).toBe(0);
+  });
+
   it('should return the presets data', async() => {
     rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
 
@@ -128,6 +157,19 @@ describe('rpc/contextual', () => {
       key: 'new_followers',
       label: 'New Fans',
     });
+  });
+
+  it('should return empty data if fetch failed', async() => {
+    rp.mockReturnValueOnce(Promise.reject(CURRENT_PERIOD_DAILY_RESPONSE));
+
+    const data = await contextual.fn({ profileId, profileService }, {
+      session: {
+        accessToken: token,
+      },
+    });
+    expect(data.presets.length).toBe(0);
+    expect(data.daily.length).toBe(0);
+    expect(data.metrics.length).toBe(0);
   });
 });
 

@@ -61,15 +61,17 @@ function formatPresets(
   presetsResults,
   profileService,
 ) {
-  return presetsResults.map(
-    preset => Object.assign({},
-      preset,
-      PRESETS[profileService][preset.presetKey],
-      {
-        data: formatDaily(preset.data, profileService),
-        yAxis: formatPresetYAxis(preset.yAxis, profileService),
-      },
-    ));
+  return presetsResults
+    .filter(preset => Object.keys(PRESETS[profileService]).indexOf(preset.presetKey) >= 0)
+    .map(
+      preset => Object.assign({},
+        preset,
+        PRESETS[profileService][preset.presetKey],
+        {
+          data: formatDaily(preset.data, profileService),
+          yAxis: formatPresetYAxis(preset.yAxis, profileService),
+        },
+      ));
 }
 
 function formatData(
