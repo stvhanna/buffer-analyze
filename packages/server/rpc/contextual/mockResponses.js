@@ -319,9 +319,9 @@ export default {
     ],
     presets: [
       {
-        id: 'preset_4',
-        xAxes: 'date',
-        yAxes: {
+        presetKey: 'followers_posts',
+        xAxis: 'date',
+        yAxis: {
           metrics: [
             {
               key: 'new_followers',
@@ -334,101 +334,101 @@ export default {
         data: [
           {
             day: 1508371200000,
-            metrics: {
-              0: {
+            metrics: [
+              {
                 key: 'posts_count',
                 value: 1,
               },
-              4: {
+              {
                 key: 'new_followers',
                 value: 58,
               },
-            },
+            ],
           },
           {
             day: 1508457600000,
-            metrics: {
-              0: {
+            metrics: [
+              {
                 key: 'posts_count',
                 value: 0,
               },
-              4: {
+              {
                 key: 'new_followers',
                 value: 74,
               },
-            },
+            ],
           },
           {
             day: 1508544000000,
-            metrics: {
-              0: {
+            metrics: [
+              {
                 key: 'posts_count',
                 value: 0,
               },
-              4: {
+              {
                 key: 'new_followers',
                 value: 70,
               },
-            },
+            ],
           },
           {
             day: 1508630400000,
-            metrics: {
-              0: {
+            metrics: [
+              {
                 key: 'posts_count',
                 value: 1,
               },
-              4: {
+              {
                 key: 'new_followers',
                 value: 42,
               },
-            },
+            ],
           },
           {
             day: 1508716800000,
-            metrics: {
-              0: {
+            metrics: [
+              {
                 key: 'posts_count',
                 value: 0,
               },
-              4: {
+              {
                 key: 'new_followers',
                 value: 74,
               },
-            },
+            ],
           },
           {
             day: 1508803200000,
-            metrics: {
-              0: {
+            metrics: [
+              {
                 key: 'posts_count',
                 value: 0,
               },
-              4: {
+              {
                 key: 'new_followers',
                 value: 93,
               },
-            },
+            ],
           },
           {
             day: 1508889600000,
-            metrics: {
-              0: {
+            metrics: [
+              {
                 key: 'posts_count',
                 value: 0,
               },
-              4: {
+              {
                 key: 'new_followers',
                 value: 0,
               },
-            },
+            ],
           },
         ],
       },
       {
-        id: 'preset_5',
-        xAxes: 'date',
-        yAxes: {
+        presetKey: 'reach_posts',
+        xAxis: 'date',
+        yAxis: {
           metrics: [
             {
               key: 'post_reach',
@@ -441,94 +441,94 @@ export default {
         data: [
           {
             day: 1508371200000,
-            metrics: {
-              0: {
+            metrics: [
+              {
                 key: 'posts_count',
                 value: 1,
               },
-              8: {
+              {
                 key: 'post_reach',
                 value: 33909,
               },
-            },
+            ],
           },
           {
             day: 1508457600000,
-            metrics: {
-              0: {
+            metrics: [
+              {
                 key: 'posts_count',
                 value: 0,
               },
-              8: {
+              {
                 key: 'post_reach',
                 value: 34526,
               },
-            },
+            ],
           },
           {
             day: 1508544000000,
-            metrics: {
-              0: {
+            metrics: [
+              {
                 key: 'posts_count',
                 value: 0,
               },
-              8: {
+              {
                 key: 'post_reach',
                 value: 33670,
               },
-            },
+            ],
           },
           {
             day: 1508630400000,
-            metrics: {
-              0: {
+            metrics: [
+              {
                 key: 'posts_count',
                 value: 1,
               },
-              8: {
+              {
                 key: 'post_reach',
                 value: 32655,
               },
-            },
+            ],
           },
           {
             day: 1508716800000,
-            metrics: {
-              0: {
+            metrics: [
+              {
                 key: 'posts_count',
                 value: 0,
               },
-              8: {
+              {
                 key: 'post_reach',
                 value: 40074,
               },
-            },
+            ],
           },
           {
             day: 1508803200000,
-            metrics: {
-              0: {
+            metrics: [
+              {
                 key: 'posts_count',
                 value: 0,
               },
-              8: {
+              {
                 key: 'post_reach',
                 value: 41813,
               },
-            },
+            ],
           },
           {
             day: 1508889600000,
-            metrics: {
-              0: {
+            metrics: [
+              {
                 key: 'posts_count',
                 value: 0,
               },
-              8: {
+              {
                 key: 'post_reach',
                 value: 0,
               },
-            },
+            ],
           },
         ],
       },

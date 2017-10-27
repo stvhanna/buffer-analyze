@@ -5,7 +5,7 @@ const DateRange = require('../utils/DateRange');
 const METRICS_CONFIG = require('./metricsConfig');
 const PRESETS = require('./presets');
 
-const requestDailyTotals = (profileId, dateRange, accessToken) =>
+const requestContextual = (profileId, dateRange, accessToken) =>
   rp({
     uri: `${process.env.API_ADDR}/1/profiles/${profileId}/analytics/contextual.json`,
     method: 'GET',
@@ -32,7 +32,7 @@ function formatDaily(
       metric,
     ));
     return {
-      day: dayData.day,
+      day: String(dayData.day),
       metrics,
     };
   });
@@ -45,49 +45,15 @@ function getMetrics(profileService) {
   );
 }
 
-function processValueForPresetMetric(
-  metricConfig,
-  data,
-) {
-  let value = 0;
-  switch (metricConfig.aggregationRule) {
-    // if no aggregation rule is specified we are expecting just one metric Key
-    default:
-      value = data[metricConfig.key] || 0;
-      break;
-  }
-  return value;
-}
-
-function formatDailyDataForPresets(
-  yAxis,
-  dailyTotalsResult,
-) {
-  const daily = dailyTotalsResult.map((dayData) => {
-    const postsCount = dayData.metrics.find(m => m.key === 'posts_count').value;
-    return {
-      day: dayData.day,
-    };
-  });
-  return { data: daily };
-}
-
-function processPreset(
-  preset,
-  presetResult,
-) {
-  let data = [];
-
-  switch (preset.xAxis) {
-    default:
-      data = formatDailyDataForPresets(preset.yAxis, presetResult);
-      break;
-  }
-
-  return Object.assign(
-    {},
-    preset,
-    data,
+function formatPresetYAxis(yAxis, profileService) {
+  return Object.assign({},
+    yAxis,
+    {
+      metrics: yAxis.metrics.map(metric => Object.assign({},
+        METRICS_CONFIG[profileService].config[metric.key],
+        metric,
+      )),
+    },
   );
 }
 
@@ -95,9 +61,15 @@ function formatPresets(
   presetsResults,
   profileService,
 ) {
-  return PRESETS[profileService].map(
-    preset => processPreset(preset, presetsResults),
-  );
+  return presetsResults.map(
+    preset => Object.assign({},
+      preset,
+      PRESETS[profileService][preset.presetKey],
+      {
+        data: formatDaily(preset.data, profileService),
+        yAxis: formatPresetYAxis(preset.yAxis, profileService),
+      },
+    ));
 }
 
 function formatData(
@@ -111,15 +83,15 @@ function formatData(
 
   const metrics = getMetrics(profileService);
 
-  // const presets = formatPresets(
-  //   contextualResponse.presets,
-  //   profileService,
-  // );
+  const presets = formatPresets(
+    contextualResponse.presets,
+    profileService,
+  );
 
   return {
     daily,
-    // metrics,
-    // presets,
+    metrics,
+    presets,
   };
 }
 
@@ -130,20 +102,15 @@ module.exports = method(
     const end = moment.unix(endDate).format('MM/DD/YYYY');
     const start = moment.unix(startDate).format('MM/DD/YYYY');
     const dateRange = new DateRange(start, end);
-    const dailyTotals = requestDailyTotals(profileId, dateRange, session.accessToken);
-
-    return Promise
-      .all([
-        dailyTotals,
-      ])
-      .then((response) => {
-        const contextualResponse = response[0].response;
-
-        return formatData(
-          contextualResponse,
-          profileService,
-        );
-      })
+    return requestContextual(
+      profileId,
+      dateRange,
+      session.accessToken,
+    )
+      .then(response => formatData(
+        response.response,
+        profileService,
+      ))
       .catch(() => ({
         daily: [],
         metrics: [],

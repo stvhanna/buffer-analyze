@@ -7,6 +7,8 @@ import rp from 'request-promise';
 import contextual from './';
 import CURRENT_PERIOD_DAILY_RESPONSE from './mockResponses';
 
+rp.mockImplementation(() => new Promise(() => {}));
+
 describe('rpc/contextual', () => {
   const profileId = '123159ad';
   const profileService = 'facebook';
@@ -22,7 +24,7 @@ describe('rpc/contextual', () => {
       .toBe('fetch analytics contextual for profiles and pages');
   });
 
-  it('should request for the previous week', () => {
+  it('should request contextual data for the previous week', () => {
     const end = moment().subtract(1, 'days').unix();
     const start = moment().subtract(7, 'days').unix();
 
@@ -90,7 +92,7 @@ describe('rpc/contextual', () => {
       },
     });
     expect(data.daily.length).toBe(7);
-    expect(data.daily[0].day).toBe(1508371200000);
+    expect(data.daily[0].day).toBe('1508371200000');
     expect(data.daily[0].metrics.length).toBe(10);
     expect(data.daily[0].metrics[0]).toMatchObject({
       key: 'posts_count',
@@ -113,14 +115,18 @@ describe('rpc/contextual', () => {
     expect(data.presets[0].label).toBe('How does post frequency affect my fan count?');
     expect(data.presets[0].data.length).toBe(7);
     expect(data.presets[0].data[0]).toMatchObject({
-      day: 1508371200000,
+      day: '1508371200000',
     });
     expect(data.presets[0].data[0].metrics.length).toBe(2);
     expect(data.presets[0].data[0].metrics[0]).toMatchObject({
+      key: 'posts_count',
+      label: 'Posts',
+      postsCount: 1,
+      value: 1,
+    });
+    expect(data.presets[0].yAxis.metrics[0]).toMatchObject({
       key: 'new_followers',
       label: 'New Fans',
-      postsCount: 4,
-      value: 101,
     });
   });
 });
