@@ -12,9 +12,12 @@ module.exports = {
     //   label: 'Whhat type of content is working?',
     //   description: 'Find out what type of content reasonates well with your audience.',
     // },
-    // {
-    //   label: 'How does post frequency affect my engagement rate?',
-    // },
+    frequency_engagement: {
+      label: 'How does post frequency affect my engagement rate?',
+      description: 'Learn how your posting frequency encourages users to engage with your content.',
+      showUpdatesCount: true,
+      rewardWording: 'that earned an average engagement rate of {value}%.',
+    },
     followers_posts: {
       label: 'How does post frequency affect my fan count?',
       description: 'Discover how your posting frequency affects your fan count.',
