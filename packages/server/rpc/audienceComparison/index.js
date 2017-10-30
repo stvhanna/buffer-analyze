@@ -51,6 +51,7 @@ function formatData(profileAudienceData, profileService) {
   const profileTotals = profileAudienceData.profileTotals;
 
   const formattedProfilesMetricData = Array.from(profilesMetricData, (data) => {
+    const timezone = data.timezone;
     return {
       dailyData: data.dailyData.map(d =>
         formatDailyData(
@@ -60,7 +61,7 @@ function formatData(profileAudienceData, profileService) {
         ),
       ),
       service: data.service,
-      timezone: data.timezone,
+      timezone,
     };
   });
 
@@ -152,48 +153,48 @@ module.exports = method(
         profileAudienceData,
       ])
       .then((response) => {
-        // const profileAudienceDataResult = response[0].response;
-        const profileAudienceDataResult = {
-          profileAudienceData: [{
-            dailyData: [
-              {
-                day: '1504137600000',
-                value: 50,
-              },
-              {
-                day: '1504224000000',
-                value: 100,
-              },
-              {
-                day: '1504310400000',
-                value: 25,
-              },
-              {
-                day: '1504396800000',
-                value: 40,
-              },
-              {
-                day: '1504483200000',
-                value: 10,
-              },
-              {
-                day: '1504569600000',
-                value: 70,
-              },
-              {
-                day: '1504656000000',
-                value: 100,
-              },
-            ],
-            timezone: 'America/New_York',
-            service: 'facebook',
-          }],
-          profileTotals: [{
-            currentPeriodTotal: 1000,
-            currentPeriodDiff: 20,
-            profileId: '12345',
-          }],
-        };
+        const profileAudienceDataResult = response[0].response;
+        // const profileAudienceDataResult = {
+        //   profileAudienceData: [{
+        //     dailyData: [
+        //       {
+        //         day: '1504137600000',
+        //         value: 50,
+        //       },
+        //       {
+        //         day: '1504224000000',
+        //         value: 100,
+        //       },
+        //       {
+        //         day: '1504310400000',
+        //         value: 25,
+        //       },
+        //       {
+        //         day: '1504396800000',
+        //         value: 40,
+        //       },
+        //       {
+        //         day: '1504483200000',
+        //         value: 10,
+        //       },
+        //       {
+        //         day: '1504569600000',
+        //         value: 70,
+        //       },
+        //       {
+        //         day: '1504656000000',
+        //         value: 100,
+        //       },
+        //     ],
+        //     timezone: 'America/New_York',
+        //     service: 'facebook',
+        //   }],
+        //   profileTotals: [{
+        //     currentPeriodTotal: 1000,
+        //     currentPeriodDiff: 20,
+        //     profileId: '12345',
+        //   }],
+        // };
         // for testing
         return formatData(
           profileAudienceDataResult,

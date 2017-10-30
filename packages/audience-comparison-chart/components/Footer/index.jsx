@@ -11,9 +11,8 @@ import {
 import {
   GridItem,
   MetricIcon,
+  ProfileBadge,
 } from '@bufferapp/analyze-shared-components';
-
-import { ProfileBadge } from '@bufferapp/analyze-shared-components';
 
 const Grid = styled.ul`
   display: flex;

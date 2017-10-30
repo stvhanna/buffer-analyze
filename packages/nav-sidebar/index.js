@@ -10,10 +10,12 @@ export default connect(
   dispatch => ({
     onClick: (path, profileId, profileService) => {
       dispatch(push(path));
-      dispatch(profilesActions.selectProfile(profileId, profileService));
+      if (path === '/comparisons') {
+        profileService = null;
+      }
+      dispatch(profilesActions.selectProfileService(profileService));
     },
   }),
 )(NavSidebar);
 
 export reducer, { actions, actionTypes } from './reducer';
-export middleware from './middleware';

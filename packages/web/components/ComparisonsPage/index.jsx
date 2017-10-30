@@ -44,12 +44,6 @@ const Content = styled.div`
 `;
 
 const ComparisonsPage = ({
-  // match: {
-  //   params: {
-  //     service,
-  //     id,
-  //   },
-  // },
   location,
 }) => (
   <div style={pageStyle}>
@@ -64,9 +58,7 @@ const ComparisonsPage = ({
       </div>
       <div style={contentStyle}>
         <div style={profileSelectorContainer}>
-          <ProfileSelector
-            profileService={'facebook'}
-          />
+          <ProfileSelector />
         </div>
         <div style={datePickerContainer}>
           <DatePicker />
@@ -84,12 +76,6 @@ ComparisonsPage.propTypes = {
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired,
   }).isRequired,
-  // match: PropTypes.shape({
-  //   params: PropTypes.shape({
-  //     service: PropTypes.string,
-  //     id: PropTypes.string,
-  //   }),
-  // }).isRequired,
 };
 
 export default connect()(ComparisonsPage);

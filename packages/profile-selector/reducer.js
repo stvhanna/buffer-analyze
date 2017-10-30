@@ -2,6 +2,7 @@ import { actionTypes as fetchActions } from '@bufferapp/async-data-fetch';
 
 export const actionTypes = {
   SELECT_PROFILE: 'SELECT_PROFILE',
+  SELECT_PROFILE_SERVICE: 'SELECT_PROFILE_SERVICE',
   FILTER_PROFILES: 'FILTER_PROFILES',
   OPEN_DROPDOWN: 'OPEN_DROPDOWN',
   CLOSE_DROPDOWN: 'CLOSE_DROPDOWN',
@@ -32,6 +33,12 @@ export default (state = initialState, action) => {
         selectedProfileId: action.id,
         selectedProfileService: action.profileService || state.selectedProfileService,
       });
+    case actionTypes.SELECT_PROFILE_SERVICE:
+      return {
+        ...state,
+        selectedProfileService: action.profileService,
+        selectedProfileId: state.selectedProfileId,
+      };
     case `profiles_${actionTypes.OPEN_DROPDOWN}`:
       return Object.assign({}, state, {
         isDropdownOpen: true,
@@ -50,6 +57,12 @@ export const actions = {
     return {
       type: actionTypes.SELECT_PROFILE,
       id,
+      profileService,
+    };
+  },
+  selectProfileService(profileService = null) {
+    return {
+      type: actionTypes.SELECT_PROFILE_SERVICE,
       profileService,
     };
   },
