@@ -36,6 +36,7 @@ if (!isProduction) {
   const compiler = webpack(config);
   app.use(webpackMiddleware(compiler, {
     publicPath: config.output.publicPath,
+    reload: true,
   }));
   app.use(webpackHotMiddleware(compiler));
 } else {
