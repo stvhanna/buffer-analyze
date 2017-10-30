@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@bufferapp/components": "0.5.28",
-    "@bufferapp/store": "0.0.1",
+    "@bufferapp/analyze-store": "0.0.1",
     "@bufferapp/async-data-fetch": "0.5.36-beta01",
     "@bufferapp/app-sidebar": "0.7.4",
     "@bufferapp/nav-sidebar": "0.0.1",
@@ -36,7 +36,7 @@
     "@bufferapp/profile-loader": "0.0.1",
     "@bufferapp/profile-header": "0.0.1",
     "@bufferapp/posts-summary-table": "0.0.1",
-    "@bufferapp/tabs" : "0.0.1",
+    "@bufferapp/analyze-tabs" : "0.0.1",
     "@bufferapp/top-posts-table" : "0.0.1",
     "@bufferapp/hourly-chart" : "0.0.1",
     "@bufferapp/report-list" : "0.0.1",

@@ -1,5 +1,5 @@
 {
-  "name": "@bufferapp/store",
+  "name": "@bufferapp/analyze-store",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -31,7 +31,7 @@
     "@bufferapp/profile-loader": "0.0.1",
     "@bufferapp/profile-header": "0.0.1",
     "@bufferapp/posts-summary-table": "0.0.1",
-    "@bufferapp/tabs": "0.0.1",
+    "@bufferapp/analyze-tabs": "0.0.1",
     "@bufferapp/analyze-png-export": "0.0.1",
     "@bufferapp/analyze-csv-export": "0.0.1",
     "@bufferapp/top-posts-table": "0.0.1",
