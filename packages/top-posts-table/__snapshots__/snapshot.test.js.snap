@@ -218,7 +218,7 @@ exports[`Snapshots MetricGraph should render MetricGraph with maxValue greater t
             }
           >
             <span>
-              30
+              30.0
             </span>
           </span>
           <span
@@ -279,7 +279,7 @@ exports[`Snapshots MetricGraph should render MetricGraph with maxValue less than
             }
           >
             <span>
-              30
+              30.0
             </span>
           </span>
           <span
@@ -488,7 +488,7 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
                 }
               >
                 <span>
-                  122
+                  122.0
                 </span>
               </span>
               <span
@@ -535,7 +535,7 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
                 }
               >
                 <span>
-                  123
+                  123.0
                 </span>
               </span>
               <span
@@ -582,7 +582,7 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
                 }
               >
                 <span>
-                  10
+                  10.0
                 </span>
               </span>
               <span
@@ -629,7 +629,7 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
                 }
               >
                 <span>
-                  233
+                  233.0
                 </span>
               </span>
               <span
@@ -5530,7 +5530,7 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           }
                         >
                           <span>
-                            3,067
+                            3,067.0
                           </span>
                         </span>
                         <span
@@ -5577,7 +5577,7 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           }
                         >
                           <span>
-                            222
+                            222.0
                           </span>
                         </span>
                         <span
@@ -5624,7 +5624,7 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           }
                         >
                           <span>
-                            35
+                            35.0
                           </span>
                         </span>
                         <span
@@ -5671,7 +5671,7 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           }
                         >
                           <span>
-                            233
+                            233.0
                           </span>
                         </span>
                         <span
@@ -5890,7 +5890,7 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           }
                         >
                           <span>
-                            1,666
+                            1,666.0
                           </span>
                         </span>
                         <span
@@ -5937,7 +5937,7 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           }
                         >
                           <span>
-                            196
+                            196.0
                           </span>
                         </span>
                         <span
@@ -5984,7 +5984,7 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           }
                         >
                           <span>
-                            15
+                            15.0
                           </span>
                         </span>
                         <span
@@ -6031,7 +6031,7 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           }
                         >
                           <span>
-                            54
+                            54.0
                           </span>
                         </span>
                         <span
@@ -6129,7 +6129,7 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           }
                         >
                           <span>
-                            8,582
+                            8,582.0
                           </span>
                         </span>
                         <span
@@ -6244,7 +6244,7 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           }
                         >
                           <span>
-                            534
+                            534.0
                           </span>
                         </span>
                         <span
@@ -6291,7 +6291,7 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           }
                         >
                           <span>
-                            107
+                            107.0
                           </span>
                         </span>
                         <span
@@ -6338,7 +6338,7 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           }
                         >
                           <span>
-                            6
+                            6.0
                           </span>
                         </span>
                         <span
@@ -6385,7 +6385,7 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           }
                         >
                           <span>
-                            30
+                            30.0
                           </span>
                         </span>
                         <span
@@ -6483,7 +6483,7 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           }
                         >
                           <span>
-                            6,095
+                            6,095.0
                           </span>
                         </span>
                         <span
@@ -7791,7 +7791,7 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           }
                         >
                           <span>
-                            3,067
+                            3,067.0
                           </span>
                         </span>
                         <span
@@ -7838,7 +7838,7 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           }
                         >
                           <span>
-                            222
+                            222.0
                           </span>
                         </span>
                         <span
@@ -7885,7 +7885,7 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           }
                         >
                           <span>
-                            35
+                            35.0
                           </span>
                         </span>
                         <span
@@ -7932,7 +7932,7 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           }
                         >
                           <span>
-                            233
+                            233.0
                           </span>
                         </span>
                         <span
@@ -8151,7 +8151,7 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           }
                         >
                           <span>
-                            1,666
+                            1,666.0
                           </span>
                         </span>
                         <span
@@ -8198,7 +8198,7 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           }
                         >
                           <span>
-                            196
+                            196.0
                           </span>
                         </span>
                         <span
@@ -8245,7 +8245,7 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           }
                         >
                           <span>
-                            15
+                            15.0
                           </span>
                         </span>
                         <span
@@ -8292,7 +8292,7 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           }
                         >
                           <span>
-                            54
+                            54.0
                           </span>
                         </span>
                         <span
@@ -8390,7 +8390,7 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           }
                         >
                           <span>
-                            8,582
+                            8,582.0
                           </span>
                         </span>
                         <span
@@ -8505,7 +8505,7 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           }
                         >
                           <span>
-                            534
+                            534.0
                           </span>
                         </span>
                         <span
@@ -8552,7 +8552,7 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           }
                         >
                           <span>
-                            107
+                            107.0
                           </span>
                         </span>
                         <span
@@ -8599,7 +8599,7 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           }
                         >
                           <span>
-                            6
+                            6.0
                           </span>
                         </span>
                         <span
@@ -8646,7 +8646,7 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           }
                         >
                           <span>
-                            30
+                            30.0
                           </span>
                         </span>
                         <span
@@ -8744,7 +8744,7 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           }
                         >
                           <span>
-                            6,095
+                            6,095.0
                           </span>
                         </span>
                         <span

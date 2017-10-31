@@ -40,21 +40,23 @@ function getMaxValue(data) {
   return max;
 }
 
-function setSecondaryScale([seriesConfig, secondarySeries]) {
+function setyAxisScale([primarySeries, secondarySeries]) {
   // we are using two scales only if there is a siginificative difference in scale
-  const yAxisMax = getMaxValue(seriesConfig.data);
-  const secondaryYAxisMax = getMaxValue(secondarySeries.data);
-  const maxScaleDifference = 0.7;
-  let scaleDifference = 0;
-  if (yAxisMax > secondaryYAxisMax) {
-    scaleDifference = (Math.log10(yAxisMax) - Math.log10(secondaryYAxisMax));
-  } else {
-    scaleDifference = (Math.log10(secondaryYAxisMax) - Math.log10(yAxisMax));
-  }
-  if (scaleDifference >= maxScaleDifference) {
-    secondarySeries.yAxis = 1;
-  } else {
-    secondarySeries.yAxis = 0;
+  const yAxisMax = getMaxValue(primarySeries.data);
+  if (secondarySeries) {
+    const secondaryYAxisMax = getMaxValue(secondarySeries.data);
+    const maxScaleDifference = 0.7;
+    let scaleDifference = 0;
+    if (yAxisMax > secondaryYAxisMax) {
+      scaleDifference = (Math.log10(yAxisMax) - Math.log10(secondaryYAxisMax));
+    } else {
+      scaleDifference = (Math.log10(secondaryYAxisMax) - Math.log10(yAxisMax));
+    }
+    if (scaleDifference >= maxScaleDifference) {
+      secondarySeries.yAxis = 1;
+    } else {
+      secondarySeries.yAxis = 0;
+    }
   }
 }
 
@@ -169,7 +171,7 @@ function prepareData(
   }
 
   config.series = prepareSeries(dailyMetrics, timezone, profileService, isCustomMode, presetConfig);
-  if (config.series.length > 1) setSecondaryScale(config.series);
+  setyAxisScale(config.series);
   return config;
 }
 
