@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/hourly-chart",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Hourly Engagements Chart",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "test": "yarn run lint && sh ../../package_test.sh",
     "test-watch": "jest --watch",
     "test-update": "jest -u",
-		"test-coverage": "jest --coverage"
+    "test-coverage": "jest --coverage"
   },
   "author": "mike@msanroman.io",
   "jest": {
@@ -22,10 +22,10 @@
     }
   },
   "dependencies": {
-    "@bufferapp/analyze-csv-export": "0.0.1",
-		"@bufferapp/analyze-shared-components": "0.0.1",
-		"@bufferapp/analyze-profile-selector": "0.0.1",
-		"@bufferapp/analyze-date-picker": "0.0.1"
+    "@bufferapp/analyze-csv-export": "^0.1.0",
+    "@bufferapp/analyze-date-picker": "^0.1.0",
+    "@bufferapp/analyze-profile-selector": "^0.1.0",
+    "@bufferapp/analyze-shared-components": "^0.1.0"
   },
   "devDependencies": {
     "@storybook/addon-storyshots": "3.1.4",

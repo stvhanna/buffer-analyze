@@ -18,7 +18,7 @@ const CustomModeHeader = ({
   <MetricsDropdown
     closeDropdown={props.closePrimaryMetricDropdown}
     isDropdownOpen={props.isPrimaryMetricDropdownOpen}
-    metrics={props.metrics}
+    metrics={props.metrics.filter(m => m.label !== props.selectedMetrics[1].label)}
     openDropdown={props.openPrimaryMetricDropdown}
     selectMetric={props.selectPrimaryMetric}
     selectedMetricLabel={props.selectedMetrics[0].label}
@@ -31,6 +31,11 @@ const CustomModeHeader = ({
     selectMetric={props.selectSecondaryMetric}
     selectedMetricLabel={props.selectedMetrics[1].label}
     secondary
+  />
+  <ModeToggle
+    baseModeLabel="Presets" secondaryModeLabel="Custom"
+    handleClick={selectMode}
+    active
   />
 </div>);
 
@@ -65,9 +70,10 @@ const PresetsModeHeader = ({
   mode,
   selectMode,
   togglePresetDropdown,
+  isPresetsDropdownOpen,
   ...props
 }) => (<div className={className}>
-  <PresetsDropdown toggleDropdown={togglePresetDropdown} {...props} />
+  <PresetsDropdown toggleDropdown={togglePresetDropdown} open={isPresetsDropdownOpen} {...props} />
   <ModeToggle
     baseModeLabel="Presets" secondaryModeLabel="Custom"
     handleClick={selectMode}
@@ -78,11 +84,16 @@ PresetsModeHeader.propTypes = {
   className: PropTypes.string.isRequired,
   mode: PropTypes.number.isRequired,
   selectedPreset: PropTypes.number.isRequired,
+  isPresetsDropdownOpen: PropTypes.bool,
 
   // actions
   selectMode: PropTypes.func.isRequired,
   selectPreset: PropTypes.func.isRequired,
   togglePresetDropdown: PropTypes.func.isRequired,
+};
+
+PresetsModeHeader.defaultProps = {
+  isPresetsDropdownOpen: false,
 };
 
 const Header = ({

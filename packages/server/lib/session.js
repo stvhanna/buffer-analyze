@@ -11,7 +11,7 @@ const client = new RPCClient({
 exports = module.exports;
 
 exports.get = sessionCookie =>
-  client.call('get', { token: sessionCookie });
+  client.call('get', { token: sessionCookie, keys: ['global', 'analyze'] });
 
 exports.getCookie = req => req.cookies[COOKIE_NAME];
 

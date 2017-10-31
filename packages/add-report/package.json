@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/add-report",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Add Report button for Analyze chart components",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "lint": "eslint . --ignore-pattern coverage node_modules",
     "test": "yarn run lint && sh ../../package_test.sh",
     "test-update": "jest -u",
-		"test-watch": "jest --watch"
+    "test-watch": "jest --watch"
   },
   "jest": {
     "transformIgnorePatterns": [
@@ -21,8 +21,8 @@
   },
   "author": "mike@msanroman.io",
   "dependencies": {
-    "styled-components": "^2.2.1",
-		"@bufferapp/analyze-shared-components": "0.0.1"
+    "@bufferapp/analyze-shared-components": "^0.1.0",
+    "styled-components": "^2.2.1"
   },
   "devDependencies": {
     "@storybook/addon-storyshots": "3.1.4",

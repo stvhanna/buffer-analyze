@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/profile-loader",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Profile Loader wrapper, renders children once the profiles have loaded",
   "main": "index.js",
   "scripts": {
@@ -19,8 +19,6 @@
     }
   },
   "author": "mike@msanroman.io",
-  "dependencies": {
-  },
   "devDependencies": {
     "@storybook/addon-storyshots": "3.1.4",
     "@storybook/react": "3.1.3",

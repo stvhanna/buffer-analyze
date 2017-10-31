@@ -1,6 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import {
+  geyser,
+} from '@bufferapp/components/style/color';
+
+import {
+  color as metricsColor,
+} from '../style';
+
 const iconSize = 7;
 const base = 10;
 const style = {
@@ -39,9 +47,10 @@ function lightenDarkenColor (color, amt) {
 }
 
 function getIconStyle(metric) {
+  const color = metric.color ? metric.color : metricsColor[metric.key] || geyser;
   return Object.assign({}, style, {
-    background: metric.color,
-    borderColor: lightenDarkenColor(metric.color, -30),
+    background: color,
+    borderColor: lightenDarkenColor(color, -30),
     borderRadius: `${metric.squaredIcon ? 0 : base}px`,
   });
 }
@@ -50,7 +59,8 @@ const MetricIcon = ({ metric }) => (<span style={getIconStyle(metric)} />);
 
 MetricIcon.propTypes = {
   metric: PropTypes.shape({
-    color: PropTypes.string.isRequired,
+    color: PropTypes.string,
+    key: PropTypes.string,
   }).isRequired,
 };
 
