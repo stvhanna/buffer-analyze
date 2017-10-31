@@ -87,6 +87,17 @@ function prepareChartOptions(profilesMetricData) {
 
 const Chart = ({ profilesMetricData }) => {
   const charOptions = prepareChartOptions(profilesMetricData);
+  // TODO: This won't work for multiple profiles.
+  // We should move do timezone transformation in the backend
+  // and get the data based on UTC from backend
+  const timezone = profilesMetricData[0].timezone;
+  ReactHighcharts.Highcharts.setOptions(
+    {
+      global: {
+        getTimezoneOffset: timestamp => -moment.tz(timestamp, timezone).utcOffset(),
+      },
+    },
+  );
   return (<ReactHighcharts config={charOptions} />);
 };
 

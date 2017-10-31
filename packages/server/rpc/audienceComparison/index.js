@@ -92,56 +92,6 @@ module.exports = method(
     const end = moment.unix(endDate).format('MM/DD/YYYY');
     const start = moment.unix(startDate).format('MM/DD/YYYY');
     const dateRange = new DateRange(start, end);
-
-    // const profileAudienceDataResult = {
-    //   profileAudienceData: [{
-    //     dailyData: [
-    //       {
-    //         day: '1504137600000',
-    //         value: 50,
-    //       },
-    //       {
-    //         day: '1504224000000',
-    //         value: 100,
-    //       },
-    //       {
-    //         day: '1504310400000',
-    //         value: 25,
-    //       },
-    //       {
-    //         day: '1504396800000',
-    //         value: 40,
-    //       },
-    //       {
-    //         day: '1504483200000',
-    //         value: 10,
-    //       },
-    //       {
-    //         day: '1504569600000',
-    //         value: 70,
-    //       },
-    //       {
-    //         day: '1504656000000',
-    //         value: 100,
-    //       },
-    //     ],
-    //   }],
-    //   profileTotals: [{
-    //     currentPeriodTotal: 1000,
-    //     currentPeriodDiff: 20,
-    //     profileId: '12345',
-    //   }],
-    // };
-    // // for testing
-    // return formatData(
-    //   profileAudienceDataResult,
-    //   'facebook',
-    // );
-    // return {
-    //   profilesMetricData: [],
-    //   profileTotals: [],
-    // };
-
     const profileAudienceData = requestProfileAudienceData(
       profileId,
       dateRange,

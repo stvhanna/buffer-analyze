@@ -3,8 +3,8 @@ import {
   actionTypes as profileActionTypes,
   actions as profileActions,
 } from './reducer';
+import { push } from 'react-router-redux';
 import middleware from './middleware';
-
 
 const profileId = '120351988a';
 
@@ -80,13 +80,21 @@ describe('middleware', () => {
     expect(next).toHaveBeenCalledWith(action);
   });
 
-  it('should not select a profile after fetching all the profiles if the route is not an insights route', () => {
+  it('should select the first profile after fetching all the profiles if the route is not an insights route', () => {
     const { store, next, invoke } = getMiddlewareElements(stateWithoutProfileRoute);
     const action = {
       type: `profiles_${actionTypes.FETCH_SUCCESS}`,
+      result: [
+        {
+          id: '12345',
+          service: 'facebook',
+          username: 'buffer',
+          timezone: 'America/Los_Angeles',
+        },
+      ],
     };
     invoke(action);
-    expect(store.dispatch).not.toHaveBeenCalledWith(profileActions.selectProfile(profileId));
+    expect(store.dispatch).toHaveBeenCalledWith(profileActions.selectProfile('12345', 'facebook'));
     expect(next).toHaveBeenCalledWith(action);
   });
 
@@ -109,6 +117,40 @@ describe('middleware', () => {
     };
     invoke(action);
     expect(store.dispatch).toHaveBeenCalledWith(profileActions.selectProfile('120351988a'));
+    expect(next).toHaveBeenCalledWith(action);
+  });
+
+  it('should push a new route whenever a profile has been selected', () => {
+    const { store, next, invoke } = getMiddlewareElements();
+    const action = {
+      type: profileActionTypes.SELECT_PROFILE,
+      id: profileId,
+    };
+    invoke(action);
+    expect(store.dispatch).toHaveBeenCalledWith(push(`/insights/twitter/${profileId}/overview`));
+    expect(next).toHaveBeenCalledWith(action);
+  });
+
+  it('should not push a new route whenever a profile has been selected if not insights', () => {
+    const { store, next, invoke } = getMiddlewareElements(stateWithoutProfileRoute);
+    const action = {
+      type: profileActionTypes.SELECT_PROFILE,
+      id: profileId,
+    };
+    invoke(action);
+    expect(store.dispatch).not.toHaveBeenCalledWith(push(`/insights/twitter/${profileId}/overview`));
+    expect(next).toHaveBeenCalledWith(action);
+  });
+
+  it('should select a profile after a service is selected on side-navbar', () => {
+    const { store, next, invoke } = getMiddlewareElements();
+    const action = {
+      type: `${profileActionTypes.SELECT_PROFILE_SERVICE}`,
+      profileService: 'facebook',
+
+    };
+    invoke(action);
+    expect(store.dispatch).toHaveBeenCalledWith(profileActions.selectProfile('122222222'));
     expect(next).toHaveBeenCalledWith(action);
   });
 });

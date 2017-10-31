@@ -46,25 +46,21 @@ const AudienceComparisonChart = ({
 
   const ContentContainer = styled.div`
     padding: 0;
-    margin: 0 auto;
-    borderRadius: 2px;
+    margin: auto;
+    border-radius: 2px;
     border: solid 1px ${geyser};
-    minHeight: 12rem;
+    min-height: 12rem;
     position: relative;
   `;
 
-  const Wrapper = styled.div`
-    margin: 0 0 1.5rem;
-  `;
-
   return (
-    <Wrapper>
+    <div>
       <Title />
       <ContentContainer>
         {content}
       </ContentContainer>
       {footer}
-    </Wrapper>
+    </div>
   );
 };
 

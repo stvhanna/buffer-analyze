@@ -9,9 +9,7 @@ exports[`Snapshots AudienceComparisonChart should render a "no data" state 1`] =
       }
     }
   >
-    <div
-      className="sc-jTzLTM ehHMvz"
-    >
+    <div>
       <h2
         className="sc-htpNat VCvAx"
       >
@@ -29,7 +27,7 @@ exports[`Snapshots AudienceComparisonChart should render a "no data" state 1`] =
         </span>
       </h2>
       <div
-        className="sc-VigVT dTBudE"
+        className="sc-iwsKbI dPcvgv"
       >
         <div
           style={
@@ -115,9 +113,7 @@ exports[`Snapshots AudienceComparisonChart should render a loading state 1`] = `
       }
     }
   >
-    <div
-      className="sc-gqjmRU jOCXgA"
-    >
+    <div>
       <h2
         className="sc-htpNat VCvAx"
       >
@@ -135,7 +131,7 @@ exports[`Snapshots AudienceComparisonChart should render a loading state 1`] = `
         </span>
       </h2>
       <div
-        className="sc-gZMcBi edVohD"
+        className="sc-dnqmqq cktmIi"
       >
         <div
           style={
@@ -255,9 +251,7 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
       }
     }
   >
-    <div
-      className="sc-iwsKbI iXZXJw"
-    >
+    <div>
       <h2
         className="sc-htpNat VCvAx"
       >
@@ -275,7 +269,7 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
         </span>
       </h2>
       <div
-        className="sc-dnqmqq jSzhhT"
+        className="sc-htoDjs fQyzgx"
       >
         <div />
       </div>
@@ -816,9 +810,7 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
       }
     }
   >
-    <div
-      className="sc-htoDjs iqammk"
-    >
+    <div>
       <h2
         className="sc-htpNat VCvAx"
       >
@@ -836,7 +828,7 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
         </span>
       </h2>
       <div
-        className="sc-gzVnrw cYAYhH"
+        className="sc-gzVnrw boivNx"
       >
         <div />
       </div>
@@ -1144,7 +1136,7 @@ exports[`Snapshots ChartTooltip should render the tooltip 1`] = `
     }
   >
     <div
-      className="sc-bwzfXH jeIydZ"
+      className="sc-bwzfXH eqtISe"
     >
       <span>
         <span

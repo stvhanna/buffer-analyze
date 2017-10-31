@@ -10,12 +10,11 @@ const Wrapper = styled.div`
   padding: 10px;
   color: #fff;
   cursor: default;
-  fontSize: 9pt;
-  fontFamily: Open Sans, Helvetica Neue, Helvetica, Arial, sans serif;
-  pointerEvents: none;
-  whiteSpace: normal;
+  font-size: 9pt;
+  font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans serif;
+  pointer-events: none;
+  white-space: normal;
 `;
-
 
 function transformLabelForTooltip(label) {
   return `${label.toLowerCase()}`;

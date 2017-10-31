@@ -1,12 +1,16 @@
 import { connect } from 'react-redux';
 import AudienceComparisonChart from './components/AudienceComparisonChart';
 
+function getSelectedProfile({ profiles, selectedProfileId }) {
+  const profile = profiles.find(p => p.id === selectedProfileId);
+  return profile;
+}
+
 function mapStateToProps (state) {
   return {
     profilesMetricData: state.audienceComparison.profilesMetricData,
     profileTotals: state.audienceComparison.profileTotals,
-    // get the first profile
-    selectedProfile: state.profiles.profiles[0],
+    selectedProfile: getSelectedProfile(state.profiles),
     loading: state.audienceComparison.loading,
   };
 }
