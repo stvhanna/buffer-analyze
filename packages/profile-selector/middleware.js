@@ -41,8 +41,8 @@ export default ({ dispatch, getState }) => next => (action) => {
       // if profile service is selected. E.g. Insights page
       if (action.profileService) {
         const filteredProfiles = filterProfilesByService(
-            allProfiles,
-            action.profileService,
+          allProfiles,
+          action.profileService,
         );
         dispatch(profilesActions.selectProfile(filteredProfiles[0].id));
       } else {

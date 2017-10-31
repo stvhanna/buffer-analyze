@@ -1,10 +1,6 @@
 import { connect } from 'react-redux';
 import AudienceComparisonChart from './components/AudienceComparisonChart';
 
-// selectedProfile: state.profiles.profiles.find(
-//   profile => profile.id === state.profiles.selectedProfileId,
-// )
-
 function mapStateToProps (state) {
   return {
     profilesMetricData: state.audienceComparison.profilesMetricData,

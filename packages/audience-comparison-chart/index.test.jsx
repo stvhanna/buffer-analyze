@@ -1,41 +1,44 @@
 import React from 'react';
-import { mount } from 'enzyme';
-import { Provider } from 'react-redux';
+import { configure, shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+import configureMockStore from 'redux-mock-store';
 import AudienceComparisonChartContainer, {
   reducer,
-  actions,
   actionTypes,
   middleware,
 } from './index';
 import AudienceComparisonChart from './components/AudienceComparisonChart';
 
-const storeFake = state => ({
-  default: () => {},
-  subscribe: () => {},
-  dispatch: () => {},
-  getState: () => ({ ...state }),
-});
+import mockProfiles from './mocks/profiles';
 
+configure({ adapter: new Adapter() });
 describe('AudienceComparisonChartContainer', () => {
+  let state = {};
+  beforeEach(() => {
+    state = {
+      audienceComparison: {
+        profilesMetricData: [],
+        profileTotals: [],
+      },
+      profiles: {
+        profiles: mockProfiles,
+        selectedProfileId: mockProfiles[0].id,
+        selectedProfileService: 'twitter',
+      },
+    };
+  });
   it('should render', () => {
-    const store = storeFake({
-    });
-    const wrapper = mount(
-      <Provider store={store}>
-        <AudienceComparisonChart />
-      </Provider>,
-    );
-    expect(wrapper.find(AudienceComparisonChartContainer).length)
+    const mockStore = configureMockStore();
+    const store = mockStore(state);
+    const component = shallow(<AudienceComparisonChartContainer
+      store={store}
+    />);
+    expect(component.find(AudienceComparisonChart).length)
       .toBe(1);
   });
 
   it('should export reducer', () => {
     expect(reducer)
-      .toBeDefined();
-  });
-
-  it('should export actions', () => {
-    expect(actions)
       .toBeDefined();
   });
 

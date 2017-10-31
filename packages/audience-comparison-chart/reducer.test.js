@@ -18,6 +18,11 @@ describe('reducer', () => {
       .toEqual(initialState);
   });
 
+  it('should return initial state on FETCH_START', () => {
+    expect(reducer(undefined, { type:
+        `audience_comparison_${asyncDataFetchActionTypes.FETCH_START}` }))
+      .toEqual(initialState);
+  });
 
   it('should update metric on fetch success', () => {
     const metrics = [
@@ -35,10 +40,8 @@ describe('reducer', () => {
       profileTotals: totals,
     };
 
-    expect(reducer({
-      selectedMetricLabel: '',
-    }, {
-      type: `compare_${asyncDataFetchActionTypes.FETCH_SUCCESS}`,
+    expect(reducer({}, {
+      type: `audience_comparison_${asyncDataFetchActionTypes.FETCH_SUCCESS}`,
       result,
     }))
       .toEqual(Object.assign({}, {

@@ -4,7 +4,6 @@ import Adapter from 'enzyme-adapter-react-16';
 import { Provider } from 'react-redux';
 import NavSidebar, {
   reducer,
-  middleware,
 } from './index';
 import Insights from './components/Insights';
 
@@ -78,17 +77,12 @@ describe('NavSidebar', () => {
       type: '@@router/CALL_HISTORY_METHOD',
     });
     expect(store.dispatch.mock.calls[1][0]).toMatchObject({
-      type: 'SELECT_PROFILE',
+      type: 'SELECT_PROFILE_SERVICE',
     });
   });
 
   it('should export reducer', () => {
     expect(reducer)
-      .toBeDefined();
-  });
-
-  it('should export middleware', () => {
-    expect(middleware)
       .toBeDefined();
   });
 });

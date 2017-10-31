@@ -10,11 +10,7 @@ exports[`Snapshots AudienceComparisonChart should render a "no data" state 1`] =
     }
   >
     <div
-      style={
-        Object {
-          "margin": "0 0 1.5rem",
-        }
-      }
+      className="sc-jTzLTM ehHMvz"
     >
       <h2
         className="sc-htpNat VCvAx"
@@ -33,15 +29,7 @@ exports[`Snapshots AudienceComparisonChart should render a "no data" state 1`] =
         </span>
       </h2>
       <div
-        style={
-          Object {
-            "borderRadius": "2px",
-            "margin": "0 auto",
-            "minHeight": "12rem",
-            "padding": "0",
-            "position": "relative",
-          }
-        }
+        className="sc-VigVT dTBudE"
       >
         <div
           style={
@@ -128,11 +116,7 @@ exports[`Snapshots AudienceComparisonChart should render a loading state 1`] = `
     }
   >
     <div
-      style={
-        Object {
-          "margin": "0 0 1.5rem",
-        }
-      }
+      className="sc-gqjmRU jOCXgA"
     >
       <h2
         className="sc-htpNat VCvAx"
@@ -151,15 +135,7 @@ exports[`Snapshots AudienceComparisonChart should render a loading state 1`] = `
         </span>
       </h2>
       <div
-        style={
-          Object {
-            "borderRadius": "2px",
-            "margin": "0 auto",
-            "minHeight": "12rem",
-            "padding": "0",
-            "position": "relative",
-          }
-        }
+        className="sc-gZMcBi edVohD"
       >
         <div
           style={
@@ -267,6 +243,894 @@ exports[`Snapshots AudienceComparisonChart should render a loading state 1`] = `
       </div>
     </div>
   </div>
+</span>
+`;
+
+exports[`Snapshots AudienceComparisonChart should render the audience comparison chart for a multiple profiles 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "750px",
+      }
+    }
+  >
+    <div
+      className="sc-iwsKbI iXZXJw"
+    >
+      <h2
+        className="sc-htpNat VCvAx"
+      >
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Audience comparison
+        </span>
+      </h2>
+      <div
+        className="sc-dnqmqq jSzhhT"
+      >
+        <div />
+      </div>
+      <section
+        className="sc-ifAKCX blbWuv"
+      >
+        <ul
+          className="sc-bxivhb bxRtQv"
+        >
+          <li
+            style={
+              Object {
+                "borderBottom": "solid 1px #CED7DF",
+                "borderRight": "solid 1px #CED7DF",
+                "boxSizing": "border-box",
+                "display": "inline-block",
+                "flexGrow": 1,
+                "listStyle": "none",
+                "paddingBottom": "15px",
+                "width": "25%",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "fontSize": "12px",
+                  "fontWeight": 600,
+                  "marginLeft": "15px",
+                  "marginTop": "15px",
+                }
+              }
+            >
+              <span
+                data-tip={null}
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <div
+                    className="sc-EHOje enMLlg"
+                  >
+                    <div
+                      style={
+                        Object {
+                          "background": "rgba(50, 59, 67, 0.1)",
+                          "borderRadius": "50%",
+                          "height": "16px",
+                          "marginRight": "10px",
+                          "position": "relative",
+                          "width": "16px",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        src="https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/10403026_1055367724535674_7855796462569708170_n.png?oh=39ea3ae01610ba482316d4c87ca1c14c&oe=59B58B81"
+                        style={
+                          Object {
+                            "borderRadius": "50%",
+                            "height": "16px",
+                            "marginBottom": undefined,
+                            "marginTop": undefined,
+                            "maxHeight": undefined,
+                            "maxWidth": undefined,
+                            "minHeight": undefined,
+                            "minWidth": undefined,
+                            "objectFit": undefined,
+                            "width": "16px",
+                          }
+                        }
+                      />
+                      <div
+                        style={
+                          Object {
+                            "background": "#fff",
+                            "borderRadius": "50%",
+                            "height": "8px",
+                            "left": "8px",
+                            "position": "absolute",
+                            "top": "8px",
+                            "width": "8px",
+                          }
+                        }
+                      >
+                        <svg
+                          height="100%"
+                          style={
+                            Object {
+                              "fill": "#3b5998",
+                              "height": "100%",
+                              "width": "100%",
+                            }
+                          }
+                          version="1.1"
+                          viewBox="0 0 16 16"
+                          width="100%"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlnsXlink="http://www.w3.org/1999/xlink"
+                        >
+                          <g
+                            className="facebook"
+                          >
+                            <g
+                              fillRule="evenodd"
+                            >
+                              <path
+                                d="M0,8 C0,3.581722 3.59071231,0 8,0 L8,0 C12.418278,0 16,3.59071231 16,8 L16,8 C16,12.418278 12.4092877,16 8,16 L8,16 C3.581722,16 0,12.4092877 0,8 L0,8 Z M7.18233349,12 L7.18233349,8.3508456 L6,8.3508456 L6,6.92867987 L7.18233349,6.92867987 L7.18233349,5.87988561 C7.18233349,4.66274759 7.89803602,4 8.94344305,4 C9.44416966,4 9.8745294,4.03873177 10,4.0560322 L10,5.32800198 L9.27491523,5.32835505 C8.70640526,5.32835505 8.59633378,5.60893973 8.59633378,6.0206899 L8.59633378,6.92867987 L9.95220491,6.92867987 L9.77564184,8.3508456 L8.59633378,8.3508456 L8.59633378,12 L7.18233349,12 Z"
+                              />
+                            </g>
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                    <div
+                      className="sc-bZQynM fqsBLH"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        Buffer
+                      </span>
+                    </div>
+                    <span
+                      style={
+                        Object {
+                          "background": "#fda3f3",
+                          "borderColor": "#df85d5",
+                          "borderRadius": "10px",
+                          "borderStyle": "solid",
+                          "borderWidth": "1px",
+                          "display": "inline-block",
+                          "height": "7px",
+                          "marginRight": "5px",
+                          "verticalAlign": "baseline",
+                          "width": "7px",
+                        }
+                      }
+                    />
+                  </div>
+                </span>
+              </span>
+            </span>
+            <div
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "flex": 1,
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "display": "inline-block",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#323b43",
+                      "fontSize": "2em",
+                      "fontWeight": 600,
+                      "marginLeft": "15px",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#323b43",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontSize": "2rem",
+                        "fontWeight": 600,
+                      }
+                    }
+                  >
+                    <span>
+                      400
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div>
+                <span
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "height": "1rem",
+                      "marginLeft": "10px",
+                    }
+                  }
+                >
+                  <svg
+                    height="100%"
+                    style={
+                      Object {
+                        "fill": "#2fd566",
+                        "height": "1rem",
+                        "width": "1rem",
+                      }
+                    }
+                    version="1.1"
+                    viewBox="0 0 16 16"
+                    width="100%"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g
+                      className="shamrock"
+                    >
+                      <path
+                        d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                      />
+                    </g>
+                  </svg>
+                </span>
+                <div
+                  style={
+                    Object {
+                      "color": "#2FD566",
+                      "display": "inline-block",
+                      "fontSize": "18px",
+                      "fontWeight": 600,
+                      "marginLeft": "5px",
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      style={
+                        Object {
+                          "color": "shamrock",
+                          "fontFamily": "\\"Open Sans\\", sans-serif",
+                          "fontSize": "1.25rem",
+                        }
+                      }
+                    >
+                      <span>
+                        20
+                      </span>
+                      %
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            style={
+              Object {
+                "borderBottom": "solid 1px #CED7DF",
+                "borderRight": "solid 1px #CED7DF",
+                "boxSizing": "border-box",
+                "display": "inline-block",
+                "flexGrow": 1,
+                "listStyle": "none",
+                "paddingBottom": "15px",
+                "width": "25%",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "fontSize": "12px",
+                  "fontWeight": 600,
+                  "marginLeft": "15px",
+                  "marginTop": "15px",
+                }
+              }
+            >
+              <span
+                data-tip={null}
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <div
+                    className="sc-EHOje enMLlg"
+                  >
+                    <div
+                      style={
+                        Object {
+                          "background": "rgba(50, 59, 67, 0.1)",
+                          "borderRadius": "50%",
+                          "height": "16px",
+                          "marginRight": "10px",
+                          "position": "relative",
+                          "width": "16px",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        src="https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/10403026_1055367724535674_7855796462569708170_n.png?oh=39ea3ae01610ba482316d4c87ca1c14c&oe=59B58B81"
+                        style={
+                          Object {
+                            "borderRadius": "50%",
+                            "height": "16px",
+                            "marginBottom": undefined,
+                            "marginTop": undefined,
+                            "maxHeight": undefined,
+                            "maxWidth": undefined,
+                            "minHeight": undefined,
+                            "minWidth": undefined,
+                            "objectFit": undefined,
+                            "width": "16px",
+                          }
+                        }
+                      />
+                      <div
+                        style={
+                          Object {
+                            "background": "#fff",
+                            "borderRadius": "50%",
+                            "height": "8px",
+                            "left": "8px",
+                            "position": "absolute",
+                            "top": "8px",
+                            "width": "8px",
+                          }
+                        }
+                      >
+                        <svg
+                          height="100%"
+                          style={
+                            Object {
+                              "fill": "#3b5998",
+                              "height": "100%",
+                              "width": "100%",
+                            }
+                          }
+                          version="1.1"
+                          viewBox="0 0 16 16"
+                          width="100%"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlnsXlink="http://www.w3.org/1999/xlink"
+                        >
+                          <g
+                            className="facebook"
+                          >
+                            <g
+                              fillRule="evenodd"
+                            >
+                              <path
+                                d="M0,8 C0,3.581722 3.59071231,0 8,0 L8,0 C12.418278,0 16,3.59071231 16,8 L16,8 C16,12.418278 12.4092877,16 8,16 L8,16 C3.581722,16 0,12.4092877 0,8 L0,8 Z M7.18233349,12 L7.18233349,8.3508456 L6,8.3508456 L6,6.92867987 L7.18233349,6.92867987 L7.18233349,5.87988561 C7.18233349,4.66274759 7.89803602,4 8.94344305,4 C9.44416966,4 9.8745294,4.03873177 10,4.0560322 L10,5.32800198 L9.27491523,5.32835505 C8.70640526,5.32835505 8.59633378,5.60893973 8.59633378,6.0206899 L8.59633378,6.92867987 L9.95220491,6.92867987 L9.77564184,8.3508456 L8.59633378,8.3508456 L8.59633378,12 L7.18233349,12 Z"
+                              />
+                            </g>
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                    <div
+                      className="sc-bZQynM fqsBLH"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        Buffer
+                      </span>
+                    </div>
+                    <span
+                      style={
+                        Object {
+                          "background": "#fda444",
+                          "borderColor": "#df8626",
+                          "borderRadius": "10px",
+                          "borderStyle": "solid",
+                          "borderWidth": "1px",
+                          "display": "inline-block",
+                          "height": "7px",
+                          "marginRight": "5px",
+                          "verticalAlign": "baseline",
+                          "width": "7px",
+                        }
+                      }
+                    />
+                  </div>
+                </span>
+              </span>
+            </span>
+            <div
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "flex": 1,
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "display": "inline-block",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#323b43",
+                      "fontSize": "2em",
+                      "fontWeight": 600,
+                      "marginLeft": "15px",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#323b43",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontSize": "2rem",
+                        "fontWeight": 600,
+                      }
+                    }
+                  >
+                    <span>
+                      700
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div>
+                <span
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "height": "1rem",
+                      "marginLeft": "10px",
+                    }
+                  }
+                >
+                  <svg
+                    height="100%"
+                    style={
+                      Object {
+                        "fill": "#ff1e1e",
+                        "height": "1rem",
+                        "width": "1rem",
+                      }
+                    }
+                    version="1.1"
+                    viewBox="0 0 16 16"
+                    width="100%"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g
+                      className="torchRed"
+                    >
+                      <path
+                        d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                        transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
+                      />
+                    </g>
+                  </svg>
+                </span>
+                <div
+                  style={
+                    Object {
+                      "color": "#FF1E1E",
+                      "display": "inline-block",
+                      "fontSize": "18px",
+                      "fontWeight": 600,
+                      "marginLeft": "5px",
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      style={
+                        Object {
+                          "color": "torchRed",
+                          "fontFamily": "\\"Open Sans\\", sans-serif",
+                          "fontSize": "1.25rem",
+                        }
+                      }
+                    >
+                      <span>
+                        10
+                      </span>
+                      %
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots AudienceComparisonChart should render the audience comparison chart for a single profile 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "750px",
+      }
+    }
+  >
+    <div
+      className="sc-htoDjs iqammk"
+    >
+      <h2
+        className="sc-htpNat VCvAx"
+      >
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Audience comparison
+        </span>
+      </h2>
+      <div
+        className="sc-gzVnrw cYAYhH"
+      >
+        <div />
+      </div>
+      <section
+        className="sc-ifAKCX blbWuv"
+      >
+        <ul
+          className="sc-bxivhb bxRtQv"
+        >
+          <li
+            style={
+              Object {
+                "borderBottom": "solid 1px #CED7DF",
+                "borderRight": "solid 1px #CED7DF",
+                "boxSizing": "border-box",
+                "display": "inline-block",
+                "flexGrow": 1,
+                "listStyle": "none",
+                "paddingBottom": "15px",
+                "width": "25%",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "fontSize": "12px",
+                  "fontWeight": 600,
+                  "marginLeft": "15px",
+                  "marginTop": "15px",
+                }
+              }
+            >
+              <span
+                data-tip={null}
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <div
+                    className="sc-EHOje enMLlg"
+                  >
+                    <div
+                      style={
+                        Object {
+                          "background": "rgba(50, 59, 67, 0.1)",
+                          "borderRadius": "50%",
+                          "height": "16px",
+                          "marginRight": "10px",
+                          "position": "relative",
+                          "width": "16px",
+                        }
+                      }
+                    >
+                      <img
+                        alt=""
+                        src="https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/10403026_1055367724535674_7855796462569708170_n.png?oh=39ea3ae01610ba482316d4c87ca1c14c&oe=59B58B81"
+                        style={
+                          Object {
+                            "borderRadius": "50%",
+                            "height": "16px",
+                            "marginBottom": undefined,
+                            "marginTop": undefined,
+                            "maxHeight": undefined,
+                            "maxWidth": undefined,
+                            "minHeight": undefined,
+                            "minWidth": undefined,
+                            "objectFit": undefined,
+                            "width": "16px",
+                          }
+                        }
+                      />
+                      <div
+                        style={
+                          Object {
+                            "background": "#fff",
+                            "borderRadius": "50%",
+                            "height": "8px",
+                            "left": "8px",
+                            "position": "absolute",
+                            "top": "8px",
+                            "width": "8px",
+                          }
+                        }
+                      >
+                        <svg
+                          height="100%"
+                          style={
+                            Object {
+                              "fill": "#3b5998",
+                              "height": "100%",
+                              "width": "100%",
+                            }
+                          }
+                          version="1.1"
+                          viewBox="0 0 16 16"
+                          width="100%"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlnsXlink="http://www.w3.org/1999/xlink"
+                        >
+                          <g
+                            className="facebook"
+                          >
+                            <g
+                              fillRule="evenodd"
+                            >
+                              <path
+                                d="M0,8 C0,3.581722 3.59071231,0 8,0 L8,0 C12.418278,0 16,3.59071231 16,8 L16,8 C16,12.418278 12.4092877,16 8,16 L8,16 C3.581722,16 0,12.4092877 0,8 L0,8 Z M7.18233349,12 L7.18233349,8.3508456 L6,8.3508456 L6,6.92867987 L7.18233349,6.92867987 L7.18233349,5.87988561 C7.18233349,4.66274759 7.89803602,4 8.94344305,4 C9.44416966,4 9.8745294,4.03873177 10,4.0560322 L10,5.32800198 L9.27491523,5.32835505 C8.70640526,5.32835505 8.59633378,5.60893973 8.59633378,6.0206899 L8.59633378,6.92867987 L9.95220491,6.92867987 L9.77564184,8.3508456 L8.59633378,8.3508456 L8.59633378,12 L7.18233349,12 Z"
+                              />
+                            </g>
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                    <div
+                      className="sc-bZQynM fqsBLH"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        Buffer
+                      </span>
+                    </div>
+                    <span
+                      style={
+                        Object {
+                          "background": "#fda3f3",
+                          "borderColor": "#df85d5",
+                          "borderRadius": "10px",
+                          "borderStyle": "solid",
+                          "borderWidth": "1px",
+                          "display": "inline-block",
+                          "height": "7px",
+                          "marginRight": "5px",
+                          "verticalAlign": "baseline",
+                          "width": "7px",
+                        }
+                      }
+                    />
+                  </div>
+                </span>
+              </span>
+            </span>
+            <div
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "flex": 1,
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "display": "inline-block",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#323b43",
+                      "fontSize": "2em",
+                      "fontWeight": 600,
+                      "marginLeft": "15px",
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#323b43",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontSize": "2rem",
+                        "fontWeight": 600,
+                      }
+                    }
+                  >
+                    <span>
+                      400
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div>
+                <span
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "height": "1rem",
+                      "marginLeft": "10px",
+                    }
+                  }
+                >
+                  <svg
+                    height="100%"
+                    style={
+                      Object {
+                        "fill": "#2fd566",
+                        "height": "1rem",
+                        "width": "1rem",
+                      }
+                    }
+                    version="1.1"
+                    viewBox="0 0 16 16"
+                    width="100%"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g
+                      className="shamrock"
+                    >
+                      <path
+                        d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                      />
+                    </g>
+                  </svg>
+                </span>
+                <div
+                  style={
+                    Object {
+                      "color": "#2FD566",
+                      "display": "inline-block",
+                      "fontSize": "18px",
+                      "fontWeight": 600,
+                      "marginLeft": "5px",
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      style={
+                        Object {
+                          "color": "shamrock",
+                          "fontFamily": "\\"Open Sans\\", sans-serif",
+                          "fontSize": "1.25rem",
+                        }
+                      }
+                    >
+                      <span>
+                        20
+                      </span>
+                      %
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots Chart should render the chart for a single profile 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "750px",
+      }
+    }
+  />
+</span>
+`;
+
+exports[`Snapshots Chart should render the chart for multiple profiles 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "750px",
+      }
+    }
+  />
 </span>
 `;
 
@@ -404,7 +1268,97 @@ exports[`Snapshots Footer should render the footer for a single profile 1`] = `
                   }
                 }
               >
-                <span>
+                <div
+                  className="sc-EHOje enMLlg"
+                >
+                  <div
+                    style={
+                      Object {
+                        "background": "rgba(50, 59, 67, 0.1)",
+                        "borderRadius": "50%",
+                        "height": "16px",
+                        "marginRight": "10px",
+                        "position": "relative",
+                        "width": "16px",
+                      }
+                    }
+                  >
+                    <img
+                      alt=""
+                      src="https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/10403026_1055367724535674_7855796462569708170_n.png?oh=39ea3ae01610ba482316d4c87ca1c14c&oe=59B58B81"
+                      style={
+                        Object {
+                          "borderRadius": "50%",
+                          "height": "16px",
+                          "marginBottom": undefined,
+                          "marginTop": undefined,
+                          "maxHeight": undefined,
+                          "maxWidth": undefined,
+                          "minHeight": undefined,
+                          "minWidth": undefined,
+                          "objectFit": undefined,
+                          "width": "16px",
+                        }
+                      }
+                    />
+                    <div
+                      style={
+                        Object {
+                          "background": "#fff",
+                          "borderRadius": "50%",
+                          "height": "8px",
+                          "left": "8px",
+                          "position": "absolute",
+                          "top": "8px",
+                          "width": "8px",
+                        }
+                      }
+                    >
+                      <svg
+                        height="100%"
+                        style={
+                          Object {
+                            "fill": "#3b5998",
+                            "height": "100%",
+                            "width": "100%",
+                          }
+                        }
+                        version="1.1"
+                        viewBox="0 0 16 16"
+                        width="100%"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                      >
+                        <g
+                          className="facebook"
+                        >
+                          <g
+                            fillRule="evenodd"
+                          >
+                            <path
+                              d="M0,8 C0,3.581722 3.59071231,0 8,0 L8,0 C12.418278,0 16,3.59071231 16,8 L16,8 C16,12.418278 12.4092877,16 8,16 L8,16 C3.581722,16 0,12.4092877 0,8 L0,8 Z M7.18233349,12 L7.18233349,8.3508456 L6,8.3508456 L6,6.92867987 L7.18233349,6.92867987 L7.18233349,5.87988561 C7.18233349,4.66274759 7.89803602,4 8.94344305,4 C9.44416966,4 9.8745294,4.03873177 10,4.0560322 L10,5.32800198 L9.27491523,5.32835505 C8.70640526,5.32835505 8.59633378,5.60893973 8.59633378,6.0206899 L8.59633378,6.92867987 L9.95220491,6.92867987 L9.77564184,8.3508456 L8.59633378,8.3508456 L8.59633378,12 L7.18233349,12 Z"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-bZQynM fqsBLH"
+                  >
+                    <span
+                      style={
+                        Object {
+                          "color": "#59626a",
+                          "fontFamily": "\\"Open Sans\\", sans-serif",
+                          "fontSize": "0.8rem",
+                          "fontWeight": 400,
+                        }
+                      }
+                    >
+                      Buffer
+                    </span>
+                  </div>
                   <span
                     style={
                       Object {
@@ -421,8 +1375,7 @@ exports[`Snapshots Footer should render the footer for a single profile 1`] = `
                       }
                     }
                   />
-                  Fans
-                </span>
+                </div>
               </span>
             </span>
           </span>
@@ -593,7 +1546,97 @@ exports[`Snapshots Footer should render the footer for multiple profiles 1`] = `
                   }
                 }
               >
-                <span>
+                <div
+                  className="sc-EHOje enMLlg"
+                >
+                  <div
+                    style={
+                      Object {
+                        "background": "rgba(50, 59, 67, 0.1)",
+                        "borderRadius": "50%",
+                        "height": "16px",
+                        "marginRight": "10px",
+                        "position": "relative",
+                        "width": "16px",
+                      }
+                    }
+                  >
+                    <img
+                      alt=""
+                      src="https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/10403026_1055367724535674_7855796462569708170_n.png?oh=39ea3ae01610ba482316d4c87ca1c14c&oe=59B58B81"
+                      style={
+                        Object {
+                          "borderRadius": "50%",
+                          "height": "16px",
+                          "marginBottom": undefined,
+                          "marginTop": undefined,
+                          "maxHeight": undefined,
+                          "maxWidth": undefined,
+                          "minHeight": undefined,
+                          "minWidth": undefined,
+                          "objectFit": undefined,
+                          "width": "16px",
+                        }
+                      }
+                    />
+                    <div
+                      style={
+                        Object {
+                          "background": "#fff",
+                          "borderRadius": "50%",
+                          "height": "8px",
+                          "left": "8px",
+                          "position": "absolute",
+                          "top": "8px",
+                          "width": "8px",
+                        }
+                      }
+                    >
+                      <svg
+                        height="100%"
+                        style={
+                          Object {
+                            "fill": "#3b5998",
+                            "height": "100%",
+                            "width": "100%",
+                          }
+                        }
+                        version="1.1"
+                        viewBox="0 0 16 16"
+                        width="100%"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                      >
+                        <g
+                          className="facebook"
+                        >
+                          <g
+                            fillRule="evenodd"
+                          >
+                            <path
+                              d="M0,8 C0,3.581722 3.59071231,0 8,0 L8,0 C12.418278,0 16,3.59071231 16,8 L16,8 C16,12.418278 12.4092877,16 8,16 L8,16 C3.581722,16 0,12.4092877 0,8 L0,8 Z M7.18233349,12 L7.18233349,8.3508456 L6,8.3508456 L6,6.92867987 L7.18233349,6.92867987 L7.18233349,5.87988561 C7.18233349,4.66274759 7.89803602,4 8.94344305,4 C9.44416966,4 9.8745294,4.03873177 10,4.0560322 L10,5.32800198 L9.27491523,5.32835505 C8.70640526,5.32835505 8.59633378,5.60893973 8.59633378,6.0206899 L8.59633378,6.92867987 L9.95220491,6.92867987 L9.77564184,8.3508456 L8.59633378,8.3508456 L8.59633378,12 L7.18233349,12 Z"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-bZQynM fqsBLH"
+                  >
+                    <span
+                      style={
+                        Object {
+                          "color": "#59626a",
+                          "fontFamily": "\\"Open Sans\\", sans-serif",
+                          "fontSize": "0.8rem",
+                          "fontWeight": 400,
+                        }
+                      }
+                    >
+                      Buffer
+                    </span>
+                  </div>
                   <span
                     style={
                       Object {
@@ -610,8 +1653,7 @@ exports[`Snapshots Footer should render the footer for multiple profiles 1`] = `
                       }
                     }
                   />
-                  Fans
-                </span>
+                </div>
               </span>
             </span>
           </span>
@@ -761,7 +1803,97 @@ exports[`Snapshots Footer should render the footer for multiple profiles 1`] = `
                   }
                 }
               >
-                <span>
+                <div
+                  className="sc-EHOje enMLlg"
+                >
+                  <div
+                    style={
+                      Object {
+                        "background": "rgba(50, 59, 67, 0.1)",
+                        "borderRadius": "50%",
+                        "height": "16px",
+                        "marginRight": "10px",
+                        "position": "relative",
+                        "width": "16px",
+                      }
+                    }
+                  >
+                    <img
+                      alt=""
+                      src="https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/10403026_1055367724535674_7855796462569708170_n.png?oh=39ea3ae01610ba482316d4c87ca1c14c&oe=59B58B81"
+                      style={
+                        Object {
+                          "borderRadius": "50%",
+                          "height": "16px",
+                          "marginBottom": undefined,
+                          "marginTop": undefined,
+                          "maxHeight": undefined,
+                          "maxWidth": undefined,
+                          "minHeight": undefined,
+                          "minWidth": undefined,
+                          "objectFit": undefined,
+                          "width": "16px",
+                        }
+                      }
+                    />
+                    <div
+                      style={
+                        Object {
+                          "background": "#fff",
+                          "borderRadius": "50%",
+                          "height": "8px",
+                          "left": "8px",
+                          "position": "absolute",
+                          "top": "8px",
+                          "width": "8px",
+                        }
+                      }
+                    >
+                      <svg
+                        height="100%"
+                        style={
+                          Object {
+                            "fill": "#3b5998",
+                            "height": "100%",
+                            "width": "100%",
+                          }
+                        }
+                        version="1.1"
+                        viewBox="0 0 16 16"
+                        width="100%"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                      >
+                        <g
+                          className="facebook"
+                        >
+                          <g
+                            fillRule="evenodd"
+                          >
+                            <path
+                              d="M0,8 C0,3.581722 3.59071231,0 8,0 L8,0 C12.418278,0 16,3.59071231 16,8 L16,8 C16,12.418278 12.4092877,16 8,16 L8,16 C3.581722,16 0,12.4092877 0,8 L0,8 Z M7.18233349,12 L7.18233349,8.3508456 L6,8.3508456 L6,6.92867987 L7.18233349,6.92867987 L7.18233349,5.87988561 C7.18233349,4.66274759 7.89803602,4 8.94344305,4 C9.44416966,4 9.8745294,4.03873177 10,4.0560322 L10,5.32800198 L9.27491523,5.32835505 C8.70640526,5.32835505 8.59633378,5.60893973 8.59633378,6.0206899 L8.59633378,6.92867987 L9.95220491,6.92867987 L9.77564184,8.3508456 L8.59633378,8.3508456 L8.59633378,12 L7.18233349,12 Z"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-bZQynM fqsBLH"
+                  >
+                    <span
+                      style={
+                        Object {
+                          "color": "#59626a",
+                          "fontFamily": "\\"Open Sans\\", sans-serif",
+                          "fontSize": "0.8rem",
+                          "fontWeight": 400,
+                        }
+                      }
+                    >
+                      Buffer
+                    </span>
+                  </div>
                   <span
                     style={
                       Object {
@@ -778,8 +1910,7 @@ exports[`Snapshots Footer should render the footer for multiple profiles 1`] = `
                       }
                     }
                   />
-                  Followers
-                </span>
+                </div>
               </span>
             </span>
           </span>
