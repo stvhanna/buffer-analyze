@@ -6,7 +6,7 @@ import {
 } from '@bufferapp/components';
 
 import {
-  offWhite,
+  white,
   mystic,
 } from '@bufferapp/components/style/color';
 
@@ -21,7 +21,7 @@ const sidebarStyle = {
   minHeight: '100vh',
   maxHeight: '100vh',
   width: '200px',
-  background: offWhite,
+  background: white,
   borderRight: `1px solid ${mystic}`,
 };
 
