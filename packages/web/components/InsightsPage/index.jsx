@@ -8,7 +8,7 @@ import ProfileHeader from '@bufferapp/profile-header';
 import DatePicker from '@bufferapp/analyze-date-picker';
 import ProfileLoader from '@bufferapp/profile-loader';
 import Divider from '@bufferapp/components/Divider';
-import TabNavigation from '@bufferapp/tabs';
+import TabNavigation from '@bufferapp/analyze-tabs';
 import PNGExportButton from '@bufferapp/analyze-png-export';
 import CSVExportButton from '@bufferapp/analyze-csv-export';
 import { offWhite, mystic } from '@bufferapp/components/style/color';
