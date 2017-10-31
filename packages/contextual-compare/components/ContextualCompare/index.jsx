@@ -45,8 +45,8 @@ ContextualCompare.propTypes = {
   data: PropTypes.arrayOf(PropTypes.shape({
     day: PropTypes.string.isRequired,
     metrics: PropTypes.arrayOf(PropTypes.shape({
-      color: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
+      color: PropTypes.string,
+      label: PropTypes.string,
     })),
   })).isRequired,
   loading: PropTypes.bool,

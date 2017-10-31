@@ -188,22 +188,6 @@ exports[`Snapshots ChartTooltip [TESTED] should render the posts tooltip 1`] = `
       }
     >
       <span>
-        <span
-          style={
-            Object {
-              "color": "#e6ebef",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.7rem",
-              "fontWeight": 400,
-            }
-          }
-        >
-          11 September
-        </span>
-        <br />
-        <br />
-      </span>
-      <span>
         <span>
           <span
             style={
@@ -343,22 +327,6 @@ exports[`Snapshots ChartTooltip [TESTED] should render the tooltip 1`] = `
         }
       }
     >
-      <span>
-        <span
-          style={
-            Object {
-              "color": "#e6ebef",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.7rem",
-              "fontWeight": 400,
-            }
-          }
-        >
-          11 September
-        </span>
-        <br />
-        <br />
-      </span>
       <span>
         <span>
           <span

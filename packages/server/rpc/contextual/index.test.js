@@ -76,7 +76,7 @@ describe('rpc/contextual', () => {
       },
     });
 
-    expect(data.metrics.length).toBe(9);
+    expect(data.metrics.length).toBe(10);
     expect(data.metrics[0]).toEqual({
       label: 'Posts',
       color: '#3A92D3',
@@ -99,6 +99,38 @@ describe('rpc/contextual', () => {
       value: 1,
       postsCount: 1,
       label: 'Posts',
+    });
+  });
+
+  it('should set postsCount to 0 if it is missing', async() => {
+    const response = {
+      response: {
+        daily: [{
+          day: 1508371200000,
+          metrics: [
+            {
+              key: 'shares',
+              value: 29,
+            },
+          ],
+        }],
+        presets: [],
+      },
+    };
+
+    rp.mockReturnValueOnce(Promise.resolve(response));
+
+    const data = await contextual.fn({ profileId, profileService }, {
+      session: {
+        accessToken: token,
+      },
+    });
+    expect(data.daily.length).toBe(1);
+    expect(data.daily[0].metrics.length).toBe(1);
+    expect(data.daily[0].metrics[0]).toMatchObject({
+      key: 'shares',
+      value: 29,
+      postsCount: 0,
     });
   });
 

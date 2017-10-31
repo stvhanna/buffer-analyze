@@ -14,6 +14,11 @@ const facebookConfig = {
     color: '#8AC6DE',
   },
 
+  post_reach: {
+    label: 'Post Reach',
+    color: '#D7B5FD',
+  },
+
   post_clicks: {
     label: 'Post Clicks',
     color: '#98E8B2',
@@ -52,6 +57,7 @@ module.exports = {
       'posts_count',
       'page_engagements',
       'post_impressions',
+      'post_reach',
       'post_clicks',
       'reactions',
       'shares',

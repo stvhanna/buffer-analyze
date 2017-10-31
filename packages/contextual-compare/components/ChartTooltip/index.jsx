@@ -42,6 +42,10 @@ function parsePresetRewardWording(metric, template) {
         .replace(/<.*>-*([0-9]+\.*[0-9]*\w*)<.*>/, '$1'),
     )
     .replace(
+      '{category}',
+      metric.category,
+    )
+    .replace(
       /\{(\w+)\|(\w+)\}/,
       metric.value >= 0 ? '$1' : '$2',
     )
@@ -206,7 +210,7 @@ const ChartTooltip = ({
       whiteSpace: 'normal',
     }}
   >
-    <Header day={day} {...props} />
+    {props.presetConfig && !props.presetConfig.hideDate && <Header day={day} {...props} />}
     {isCustomMode && <CustomTooltip profileService={profileService} {...props} />}
     {!isCustomMode && <PresetsTooltip profileService={profileService} {...props} />}
   </div>
@@ -216,10 +220,14 @@ ChartTooltip.propTypes = {
   day: PropTypes.number.isRequired,
   profileService: PropTypes.string.isRequired,
   isCustomMode: PropTypes.bool,
+  presetConfig: PropTypes.shape({
+    hideDate: PropTypes.bool,
+  }),
 };
 
 ChartTooltip.defaultProps = {
   isCustomMode: false,
+  presetConfig: null,
 };
 
 export default ChartTooltip;

@@ -23,16 +23,17 @@ function formatDaily(
   profileService,
 ) {
   const daily = dailyTotalsResult.map((dayData) => {
-    const postsCount = dayData.metrics.find(m => m.key === 'posts_count').value;
+    const postsCountMetric = dayData.metrics.find(m => m.key === 'posts_count');
     const metrics = dayData.metrics.map(metric => Object.assign({},
       {
-        postsCount,
+        postsCount: postsCountMetric ? postsCountMetric.value : 0,
       },
       METRICS_CONFIG[profileService].config[metric.key],
       metric,
     ));
     return {
-      day: String(dayData.day),
+      day: dayData.category ? null : String(dayData.day),
+      category: dayData.category,
       metrics,
     };
   });

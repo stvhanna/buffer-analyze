@@ -4,10 +4,13 @@
 
 module.exports = {
   facebook: {
-    // {
-    //   label: 'When is it most effective to post?',
-    //   description: 'Discover which days your audience engages the most with your content.',
-    // },
+    weekly_frequency_engagement: {
+      label: 'When is it most effective to post?',
+      description: 'Discover which days your audience engages the most with your content.',
+      hideDate: true,
+      rewardWording: 'On {category}, your content earned an average engagement rate of {value}%.',
+      type: 'column',
+    },
     // {
     //   label: 'Whhat type of content is working?',
     //   description: 'Find out what type of content reasonates well with your audience.',
