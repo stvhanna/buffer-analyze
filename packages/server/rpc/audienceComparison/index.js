@@ -19,19 +19,6 @@ const METRICS_CONFIG = {
   },
 };
 
-const requestProfileAudienceData = (profileId, dateRange, accessToken) =>
-  rp({
-    uri: `${process.env.API_ADDR}/1/profiles/${profileId}/analytics/daily_totals.json`,
-    method: 'GET',
-    strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
-    qs: {
-      access_token: accessToken,
-      start_date: dateRange.start,
-      end_date: dateRange.end,
-    },
-    json: true,
-  });
-
 const formatDailyData = (day, value, profileService) => {
   const label = METRICS_CONFIG[profileService].label;
   const color = METRICS_CONFIG[profileService].color;
@@ -45,10 +32,9 @@ const formatDailyData = (day, value, profileService) => {
   };
 };
 
-
-function formatData(profileAudienceData, profileService) {
-  const profilesMetricData = profileAudienceData.profileAudienceData;
-  const profileTotals = profileAudienceData.profileTotals;
+function formatData(result, profileService) {
+  const profilesMetricData = result.profilesMetricData;
+  const profileTotals = result.profileTotals;
 
   const formattedProfilesMetricData = Array.from(profilesMetricData, (data) => {
     const timezone = data.timezone;
@@ -87,31 +73,23 @@ function formatData(profileAudienceData, profileService) {
 
 module.exports = method(
   'audience_comparison',
-  'fetch analytics audience for profiles and pages',
-  ({ profileId, profileService, startDate, endDate }, { session }) => {
-    const end = moment.unix(endDate).format('MM/DD/YYYY');
+  'get daily audience data for profile',
+  ({ profileId, profileService, startDate, endDate }) => {
     const start = moment.unix(startDate).format('MM/DD/YYYY');
+    const end = moment.unix(endDate).format('MM/DD/YYYY');
     const dateRange = new DateRange(start, end);
-    const profileAudienceData = requestProfileAudienceData(
-      profileId,
-      dateRange,
-      session.accessToken,
-    );
-
-    return Promise
-      .all([
-        profileAudienceData,
-      ])
-      .then((response) => {
-        const profileAudienceDataResult = response[0].response;
-        return formatData(
-          profileAudienceDataResult,
-          profileService,
-        );
-      })
-      .catch(() => ({
-        profilesMetricData: [],
-        profileTotals: [],
-      }));
+    return rp({
+      uri: `${process.env.ANALYZE_API_ADDR}/audience_comparison`,
+      method: 'POST',
+      strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
+      body: {
+        profile_id: profileId,
+        start_date: dateRange.start,
+        end_date: dateRange.end,
+      },
+      json: true,
+    }).then(({ response }) => (
+        formatData(response, profileService)
+    ));
   },
 );
