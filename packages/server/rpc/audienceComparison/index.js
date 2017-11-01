@@ -89,7 +89,7 @@ module.exports = method(
       },
       json: true,
     }).then(({ response }) => (
-        formatData(response, profileService)
+      formatData(response, profileService)
     ));
   },
 );
