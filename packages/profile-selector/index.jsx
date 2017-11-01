@@ -29,7 +29,6 @@ const filterProfilesByService = (profiles, service) => (
 
 const mapStateToProps = (state) => {
   let filteredProfiles = null;
-  // instead use ternary operation
   if (state.profiles.selectedProfileService) {
     filteredProfiles = filterProfilesByService(
       state.profiles.profiles,
