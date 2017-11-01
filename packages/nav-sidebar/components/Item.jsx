@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import {
-  Text,
   Link,
+  HoverableText,
 } from '@bufferapp/components';
 
 import {
@@ -41,7 +41,13 @@ const Item = ({ href, route, children, onClick, profileId, profileService }) => 
       }}
     >
       <span style={style}>
-        <Text color="shuttleGray" weight={active ? 'bold' : null}>{children}</Text>
+        <HoverableText
+          color="shuttleGray"
+          hoverColor="black"
+          weight={active ? 'bold' : null}
+        >
+          {children}
+        </HoverableText>
       </span>
     </Link>
   );
