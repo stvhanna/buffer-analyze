@@ -1,9 +1,9 @@
 import { actionTypes } from '@bufferapp/async-data-fetch';
+import { push } from 'react-router-redux';
 import {
   actionTypes as profileActionTypes,
   actions as profileActions,
 } from './reducer';
-import { push } from 'react-router-redux';
 import middleware from './middleware';
 
 const profileId = '120351988a';
