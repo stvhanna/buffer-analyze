@@ -33,7 +33,7 @@ export default [
         metrics: [
           {
             key: 'post_impressions',
-            label: 'Impressions',
+            label: 'impressions',
             value: 38,
           },
           {
@@ -52,8 +52,8 @@ export default [
         category: 'Image',
         metrics: [
           {
-            key: 'posts_count',
-            label: 'posts',
+            key: 'post_impressions',
+            label: 'impressions',
             value: 1,
           },
           {

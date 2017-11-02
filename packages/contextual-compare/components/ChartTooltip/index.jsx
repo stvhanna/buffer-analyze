@@ -3,7 +3,13 @@ import React from 'react';
 import reactDOM from 'react-dom/server';
 import Text from '@bufferapp/components/Text';
 import moment from 'moment-timezone';
-import { TruncatedNumber, MetricIcon } from '@bufferapp/analyze-shared-components';
+import {
+  TruncatedNumber,
+  MetricIcon,
+  style as sharedStyle,
+} from '@bufferapp/analyze-shared-components';
+
+const metricsColor = sharedStyle.color;
 
 function transformLabelForTooltip(label) {
   return `${label.toLowerCase()}`;
@@ -64,7 +70,7 @@ const MetricEntry = ({
       <br />
       <Text color="white" size="small" weight="bold" >
         <MetricIcon
-          metric={{ color: metric.color }}
+          metric={{ color: metricsColor[metric.key] }}
         /> <TruncatedNumber>{metric.value}</TruncatedNumber>
       </Text>
       <Text color="white" size="small" > {transformLabelForTooltip(metric.label)}</Text>
