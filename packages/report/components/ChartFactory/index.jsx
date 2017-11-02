@@ -1,14 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  CircleTwitterIcon,
   Text,
 } from '@bufferapp/components';
-import { Table as SummaryTable } from '@bufferapp/summary-table';
+import { Table as SummaryTable, Title as SummaryTitle } from '@bufferapp/summary-table';
 import styled from 'styled-components';
 
 const CHARTS = {
-  'summary-table': SummaryTable,
+  'summary-table': {
+    chart: SummaryTable,
+    title: SummaryTitle,
+  },
 };
 
 const Separator = styled.section`
@@ -27,8 +29,9 @@ const Profile = styled.span`
 `;
 
 const ProfileLegend = ({ profile }) =>
-  <Text weight="bold"><ProfileString>Showing for accounts</ProfileString>
-    <Profile><CircleTwitterIcon service={profile.service} /> {profile.username}</Profile>
+  <Text weight="bold">
+    <ProfileString>Showing for accounts</ProfileString>
+    <Profile> {profile.username}</Profile>
   </Text>;
 
 ProfileLegend.propTypes = {
@@ -41,8 +44,9 @@ ProfileLegend.propTypes = {
 const ChartFactory = ({ charts }) =>
   charts.map(chart => (
     <Separator>
+      {React.createElement(CHARTS[chart.chart_id].title)}
       <ProfileLegend profile={chart.profile} />
-      {React.createElement(CHARTS[chart.chart_id], { ...chart })}
+      {React.createElement(CHARTS[chart.chart_id].chart, { ...chart })}
     </Separator>
   ));
 
