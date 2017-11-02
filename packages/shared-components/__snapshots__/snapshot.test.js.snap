@@ -310,7 +310,7 @@ exports[`Snapshots GridItem Should render the chart tolltip 1`] = `
     >
        
       <span>
-        42.0
+        42
       </span>
     </span>
     <span
@@ -425,7 +425,7 @@ exports[`Snapshots GridItem should not render the chart if we have only one day 
               }
             >
               <span>
-                42.0
+                42
               </span>
             </span>
           </span>
@@ -486,7 +486,7 @@ exports[`Snapshots GridItem should not render the chart if we have only one day 
                 }
               >
                 <span>
-                  60.0
+                  60
                 </span>
                 %
               </span>
@@ -594,7 +594,7 @@ exports[`Snapshots GridItem should render a grid item with a Chart if dailyData 
               }
             >
               <span>
-                42.0
+                42
               </span>
             </span>
           </span>
@@ -655,7 +655,7 @@ exports[`Snapshots GridItem should render a grid item with a Chart if dailyData 
                 }
               >
                 <span>
-                  60.0
+                  60
                 </span>
                 %
               </span>
@@ -765,7 +765,7 @@ exports[`Snapshots GridItem should render a grid item with a custom Label 1`] = 
               }
             >
               <span>
-                10.0
+                10
               </span>
             </span>
           </span>
@@ -827,7 +827,7 @@ exports[`Snapshots GridItem should render a grid item with a custom Label 1`] = 
                 }
               >
                 <span>
-                  60.0
+                  60
                 </span>
                 %
               </span>
@@ -961,7 +961,7 @@ exports[`Snapshots GridItem should render a summary grid item with a neutral dif
               }
             >
               <span>
-                0.0
+                0
               </span>
             </span>
           </span>
@@ -1015,7 +1015,7 @@ exports[`Snapshots GridItem should render a summary grid item with a neutral dif
                 }
               >
                 <span>
-                  0.0
+                  0
                 </span>
                 %
               </span>
@@ -1123,7 +1123,7 @@ exports[`Snapshots GridItem should render a summary grid item with negative diff
               }
             >
               <span>
-                10.0
+                10
               </span>
             </span>
           </span>
@@ -1185,7 +1185,7 @@ exports[`Snapshots GridItem should render a summary grid item with negative diff
                 }
               >
                 <span>
-                  60.0
+                  60
                 </span>
                 %
               </span>
@@ -1293,7 +1293,7 @@ exports[`Snapshots GridItem should render a summary grid item with no diff 1`] =
               }
             >
               <span>
-                10.0
+                10
               </span>
             </span>
           </span>
@@ -1399,7 +1399,7 @@ exports[`Snapshots GridItem should render a summary grid item with positive diff
               }
             >
               <span>
-                150.0
+                150
               </span>
             </span>
           </span>
@@ -1460,7 +1460,7 @@ exports[`Snapshots GridItem should render a summary grid item with positive diff
                 }
               >
                 <span>
-                  50.0
+                  50
                 </span>
                 %
               </span>

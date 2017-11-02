@@ -17,8 +17,10 @@ const TruncatedNumber = ({ children, absoluteValue, shorterOption }) => {
     formattedNumber = numeral(number).format('0a');
   } else if (number >= 10000) {
     formattedNumber = numeral(number).format('0.0a');
-  } else {
+  } else if (number < 1 && number > 0) {
     formattedNumber = numeral(number).format('0,0.0');
+  } else {
+    formattedNumber = numeral(number).format('0,0');
   }
 
   return <span>{formattedNumber}</span>;

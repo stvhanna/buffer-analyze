@@ -126,7 +126,7 @@ exports[`Snapshots ChartTooltip should render the tooltip 1`] = `
             }
           >
             <span>
-              5.0
+              5
             </span>
           </span>
           <span
@@ -187,7 +187,7 @@ exports[`Snapshots ChartTooltip should render the tooltip 1`] = `
               />
                
               <span>
-                42.0
+                42
               </span>
             </span>
             <span
@@ -304,7 +304,7 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
             }
           >
             <span>
-              5.0
+              5
             </span>
           </span>
           <span
@@ -345,7 +345,7 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
               }
             >
               <span>
-                10.0
+                10
               </span>
             </span>
             <span
@@ -405,7 +405,7 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
               />
                
               <span>
-                42.0
+                42
               </span>
             </span>
             <span
@@ -452,7 +452,7 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
               />
                
               <span>
-                100.0
+                100
               </span>
             </span>
             <span
@@ -542,7 +542,7 @@ exports[`Snapshots ChartTooltip should render the tooltip with twitter specific 
             }
           >
             <span>
-              5.0
+              5
             </span>
           </span>
           <span
@@ -603,7 +603,7 @@ exports[`Snapshots ChartTooltip should render the tooltip with twitter specific 
               />
                
               <span>
-                42.0
+                42
               </span>
             </span>
             <span
@@ -693,7 +693,7 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip 1`] = `
             }
           >
             <span>
-              5.0
+              5
             </span>
           </span>
           <span
@@ -822,7 +822,7 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip with previ
             }
           >
             <span>
-              5.0
+              5
             </span>
           </span>
           <span
@@ -863,7 +863,7 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip with previ
               }
             >
               <span>
-                10.0
+                10
               </span>
             </span>
             <span
@@ -1757,7 +1757,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                     }
                   >
                     <span>
-                      1,010.0
+                      1,010
                     </span>
                   </span>
                 </span>
@@ -1819,7 +1819,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                       }
                     >
                       <span>
-                        55.0
+                        55
                       </span>
                       %
                     </span>
@@ -1933,7 +1933,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                     }
                   >
                     <span>
-                      100.0
+                      100
                     </span>
                   </span>
                 </span>
@@ -2610,7 +2610,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                     }
                   >
                     <span>
-                      1,010.0
+                      1,010
                     </span>
                   </span>
                 </span>
@@ -2672,7 +2672,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                       }
                     >
                       <span>
-                        55.0
+                        55
                       </span>
                       %
                     </span>
@@ -2786,7 +2786,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                     }
                   >
                     <span>
-                      100.0
+                      100
                     </span>
                   </span>
                 </span>
@@ -3387,7 +3387,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                     }
                   >
                     <span>
-                      1,010.0
+                      1,010
                     </span>
                   </span>
                 </span>
@@ -3449,7 +3449,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                       }
                     >
                       <span>
-                        55.0
+                        55
                       </span>
                       %
                     </span>
@@ -3563,7 +3563,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                     }
                   >
                     <span>
-                      100.0
+                      100
                     </span>
                   </span>
                 </span>
@@ -3712,7 +3712,7 @@ exports[`Snapshots Footer should render the table 1`] = `
                   }
                 >
                   <span>
-                    150.0
+                    150
                   </span>
                 </span>
               </span>
@@ -3773,7 +3773,7 @@ exports[`Snapshots Footer should render the table 1`] = `
                     }
                   >
                     <span>
-                      25.0
+                      25
                     </span>
                     %
                   </span>
@@ -3887,7 +3887,7 @@ exports[`Snapshots Footer should render the table 1`] = `
                   }
                 >
                   <span>
-                    100.0
+                    100
                   </span>
                 </span>
               </span>
