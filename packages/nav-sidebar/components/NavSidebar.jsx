@@ -21,6 +21,7 @@ const sidebarStyle = {
   minHeight: '100vh',
   maxHeight: '100vh',
   width: '200px',
+  boxSizing: 'border-box',
   background: white,
   borderRight: `1px solid ${mystic}`,
 };

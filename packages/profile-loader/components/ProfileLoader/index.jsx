@@ -3,12 +3,11 @@ import PropTypes from 'prop-types';
 import Loader from '@bufferapp/components/Loader';
 
 const pageContentStyle = {
-  padding: '0rem 2rem',
   display: 'flex',
   flexGrow: 1,
   flexDirection: 'column',
   height: '100vh',
-  maxWidth: '70rem',
+  maxWidth: '100%',
 };
 
 const ProfileLoader = ({ loading, children }) => {
