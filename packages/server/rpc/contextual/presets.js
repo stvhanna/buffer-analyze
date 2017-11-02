@@ -11,10 +11,12 @@ module.exports = {
       rewardWording: 'On {category}, your content earned an average engagement rate of {value}%.',
       type: 'column',
     },
-    // {
-    //   label: 'Whhat type of content is working?',
-    //   description: 'Find out what type of content reasonates well with your audience.',
-    // },
+    content_type: {
+      label: 'What type of content is working?',
+      description: 'Find out what type of content reasonates well with your audience.',
+      hideDate: true,
+      rewardWording: 'Your {category} posts earned on average:',
+    },
     frequency_engagement: {
       label: 'How does post frequency affect my engagement rate?',
       description: 'Learn how your posting frequency encourages users to engage with your content.',

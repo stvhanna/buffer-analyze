@@ -64,6 +64,7 @@ function formatPresets(
 ) {
   return presetsResults
     .filter(preset => Object.keys(PRESETS[profileService]).indexOf(preset.presetKey) >= 0)
+    .filter(preset => preset.data.length > 0)
     .map(
       preset => Object.assign({},
         preset,

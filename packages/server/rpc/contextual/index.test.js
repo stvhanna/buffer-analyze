@@ -134,6 +134,35 @@ describe('rpc/contextual', () => {
     });
   });
 
+  it('should filter out presets with empty data', async() => {
+    const mockedResponse = { response: {
+      daily: CURRENT_PERIOD_DAILY_RESPONSE.response.daily,
+      presets: [{
+        presetKey: 'content_type',
+        xAxis: 'date',
+        yAxis: {
+          metrics: [
+            {
+              key: 'new_followers',
+            },
+            {
+              key: 'posts_count',
+            },
+          ],
+        },
+        data: [],
+      }],
+    } };
+    rp.mockReturnValueOnce(Promise.resolve(mockedResponse));
+
+    const data = await contextual.fn({ profileId, profileService }, {
+      session: {
+        accessToken: token,
+      },
+    });
+    expect(data.presets.length).toBe(0);
+  });
+
   it('should filter out unsuded presets', async() => {
     const mockedResponse = { response: {
       daily: CURRENT_PERIOD_DAILY_RESPONSE.response.daily,
@@ -150,7 +179,7 @@ describe('rpc/contextual', () => {
             },
           ],
         },
-        data: [],
+        data: [{}, {}],
       }],
     } };
     rp.mockReturnValueOnce(Promise.resolve(mockedResponse));
