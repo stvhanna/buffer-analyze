@@ -40,7 +40,7 @@ function getMaxValue(data) {
   return max;
 }
 
-function setyAxisScale([primarySeries, secondarySeries]) {
+function setyAxisScale([primarySeries, secondarySeries], xAxis) {
   // we are using two scales only if there is a siginificative difference in scale
   const yAxisMax = getMaxValue(primarySeries.data);
   if (secondarySeries) {
@@ -52,7 +52,7 @@ function setyAxisScale([primarySeries, secondarySeries]) {
     } else {
       scaleDifference = (Math.log10(secondaryYAxisMax) - Math.log10(yAxisMax));
     }
-    if (scaleDifference >= maxScaleDifference) {
+    if (scaleDifference >= maxScaleDifference && !xAxis.categories) {
       secondarySeries.yAxis = 1;
     } else {
       secondarySeries.yAxis = 0;
@@ -87,6 +87,7 @@ function prepareSeries(
       isCustomMode,
       metricData: Object.assign({}, metric, { category: dailyEntry.category }),
       presetConfig,
+      metrics: dailyEntry.metrics,
       pointPlacement: getTickInterval(dailyMetrics),
     };
 
@@ -120,6 +121,7 @@ function prepareSeries(
 
     if (presetConfig && presetConfig.type) {
       seriesConfig.type = presetConfig.type;
+
       if (presetConfig.type === 'column') {
         seriesConfig.colors = [{
           linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
@@ -162,7 +164,7 @@ function prepareData(
     minorTickInterval: getTickInterval(dailyMetrics),
   });
 
-  if (presetConfig && presetConfig.xAxis) {
+  if (presetConfig && presetConfig.xAxis !== 'date') {
     delete config.xAxis.labels.format;
     delete config.xAxis.labels.align;
     delete config.xAxis.type;
@@ -171,7 +173,7 @@ function prepareData(
   }
 
   config.series = prepareSeries(dailyMetrics, timezone, profileService, isCustomMode, presetConfig);
-  setyAxisScale(config.series);
+  setyAxisScale(config.series, config.xAxis);
   return config;
 }
 

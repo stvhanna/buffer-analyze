@@ -130,13 +130,8 @@ export default {
       return reactDOM.renderToStaticMarkup(
         <ChartTooltip
           day={primaryMetric.x}
-          profileService={primaryMetric.profileService}
-          timezone={primaryMetric.timezone}
-          postsCount={primaryMetric.metricData.postsCount}
-          primaryMetric={primaryMetric.metricData}
           secondaryMetric={secondaryMetric ? secondaryMetric.metricData : null}
-          isCustomMode={primaryMetric.isCustomMode}
-          presetConfig={primaryMetric.presetConfig}
+          {...primaryMetric}
         />,
       );
     },

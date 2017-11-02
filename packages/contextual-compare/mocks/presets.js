@@ -2,22 +2,28 @@ export default [
   {
     label: 'How does post frequency affect my fan count?',
     description: 'Already it was conjectured that this might be the well-known interplan industrialist Palmer Eldritch, who had gone to the Prox system a decade ago at the invitation of the Prox Council of humanoid types; they had wanted him to modernize their autofacs along Terran lines. Nothing had been heard from Eldritch since. Now this.',
-    showUpdatesCount: true,
-    rewardWording: 'and you {gained|lost} {value} [+new] fans.',
+    hideDate: true,
+    showUpdatesCount: false,
+    showMetricsList: true,
+    rewardWording: 'Your {category} posts earned on average:',
     type: 'column',
     xAxis: {
       categories:
-      ['Video', 'Image']
+      ['Video', 'Image'],
     },
     yAxis: {
       metrics: [
         {
-          key: 'posts_count',
-          label: 'posts',
+          key: 'post_impressions',
+          label: 'Impressions',
         },
         {
           key: 'new_followers',
           label: 'new fans',
+        },
+        {
+          key: 'post_reach',
+          label: 'reach',
         },
       ],
     },
@@ -26,14 +32,19 @@ export default [
         category: 'Video',
         metrics: [
           {
-            key: 'posts_count',
-            label: 'posts',
-            value: 1,
+            key: 'post_impressions',
+            label: 'Impressions',
+            value: 38,
           },
           {
             key: 'new_followers',
             label: 'new fans',
             value: 69,
+          },
+          {
+            key: 'post_reach',
+            label: 'reach',
+            value: 42,
           },
         ],
       },
@@ -50,6 +61,11 @@ export default [
             label: 'new fans',
             value: 63,
           },
+          {
+            key: 'post_reach',
+            label: 'reach',
+            value: 42,
+          },
         ],
       },
     ],
@@ -59,7 +75,7 @@ export default [
     description: 'Discover how your posting frequency affects your fan count.',
     showUpdatesCount: false,
     rewardWording: 'and you {gained|lost} {value} [+new] fans.',
-    xAxis: 'date',
+    xAxis: {},
     yAxis: {
       metrics: [
         {

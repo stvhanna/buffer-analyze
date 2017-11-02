@@ -97,71 +97,77 @@ MetricsList.propTypes = {
 };
 
 const PresetsTooltip = ({
-  postsCount,
   profileService,
-  primaryMetric,
+  metricData,
   presetConfig,
+  metrics,
 }) => (
   <span>
     {presetConfig.showUpdatesCount &&
       <span>
-        <Text color="white" size="small" >There {wasOrWere(postsCount)} a total of </Text>
+        <Text color="white" size="small" >There {wasOrWere(metricData.postsCount)} a total of </Text>
         <Text color="white" size="small" weight="bold" >
-          <TruncatedNumber>{postsCount}</TruncatedNumber>
+          <TruncatedNumber>{metricData.postsCount}</TruncatedNumber>
         </Text>
-        <Text color="white" size="small" > {postsWording(profileService, postsCount)} published</Text>
+        <Text color="white" size="small" > {postsWording(profileService, metricData.postsCount)} published</Text>
       </span>
     }
-    <Text color="white" size="small" > {parsePresetRewardWording(primaryMetric, presetConfig.rewardWording)}</Text>
+    <Text color="white" size="small" > {parsePresetRewardWording(metricData, presetConfig.rewardWording)}</Text>
     <br />
+    {metrics && presetConfig.showMetricsList && <MetricsList metrics={metrics} />}
   </span>
 );
 
 PresetsTooltip.propTypes = {
-  postsCount: PropTypes.number,
   profileService: PropTypes.string.isRequired,
-  primaryMetric: PropTypes.shape({
+  metricData: PropTypes.shape({
     color: PropTypes.string,
     label: PropTypes.string,
+    postsCount: PropTypes.number,
     value: PropTypes.number,
   }).isRequired,
   presetConfig: PropTypes.shape({
+    showMetricsList: PropTypes.bool,
     showUpdatesCount: PropTypes.bool,
     rewardWording: PropTypes.string,
   }),
+  metrics: PropTypes.arrayOf(PropTypes.shape({
+    color: PropTypes.string,
+    label: PropTypes.string,
+    value: PropTypes.number,
+  })),
 };
 
 PresetsTooltip.defaultProps = {
-  postsCount: null,
   presetConfig: null,
+  metrics: null,
 };
 
 const CustomTooltip = ({
-  postsCount,
   profileService,
-  primaryMetric,
+  metricData,
   secondaryMetric,
 }) => (
   <span>
     <span>
-      <Text color="white" size="small" >There {wasOrWere(postsCount)} a total of </Text>
+      <Text color="white" size="small" >There {wasOrWere(metricData.postsCount)} a total of </Text>
       <Text color="white" size="small" weight="bold" >
-        <TruncatedNumber>{postsCount}</TruncatedNumber>
+        <TruncatedNumber>{metricData.postsCount}</TruncatedNumber>
       </Text>
-      <Text color="white" size="small" > {postsWording(profileService, postsCount)} published</Text>
+      <Text color="white" size="small" > {postsWording(profileService, metricData.postsCount)} published</Text>
     </span>
     <Text color="white" size="small" >{rewardWording(profileService)}:</Text>
     <br />
-    <MetricsList metrics={[primaryMetric, secondaryMetric]} />
+    <MetricsList metrics={[metricData, secondaryMetric]} />
   </span>
 );
 
 CustomTooltip.propTypes = {
-  postsCount: PropTypes.number,
   profileService: PropTypes.string.isRequired,
-  primaryMetric: PropTypes.shape({
+  metricData: PropTypes.shape({
     color: PropTypes.string,
     label: PropTypes.string,
+    postsCount: PropTypes.number,
     value: PropTypes.number,
   }).isRequired,
   secondaryMetric: PropTypes.shape({
@@ -172,7 +178,6 @@ CustomTooltip.propTypes = {
 };
 
 CustomTooltip.defaultProps = {
-  postsCount: null,
   presetConfig: null,
 };
 
