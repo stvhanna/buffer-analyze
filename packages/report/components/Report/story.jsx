@@ -13,7 +13,48 @@ const report = {
         service: 'twitter',
       },
       profile_id: '4e88a092512f7e1556000000',
-      metrics: [{"value":8163,"diff":-70,"label":"Engaged Users"},{"value":298207,"diff":-34,"label":"Post Impressions"},{"value":842,"diff":-95,"label":"Reactions"},{"value":266624,"diff":-29,"label":"Post Reach"},{"value":1672,"diff":-91,"label":"Page & Post Engagements"},{"value":8503,"diff":-34,"label":"Post Clicks"},{"value":447,"diff":-6,"label":"New Fans"},{"value":2,"diff":-66,"label":"Posts"}],
+      metrics: [
+        {
+          label: 'Tweets',
+          value: 150,
+          diff: 25,
+        },
+        {
+          label: 'Retweets',
+          value: 901,
+          diff: -39,
+        },
+        {
+          label: 'Clicks',
+          value: 1010,
+          diff: -55,
+        },
+        {
+          label: 'Impressions',
+          value: 963400,
+          diff: -26,
+        },
+        {
+          label: 'New Followers',
+          value: 0,
+          diff: 0,
+        },
+        {
+          label: 'Engagements',
+          value: 28800,
+          diff: -33,
+        },
+        {
+          label: 'Likes',
+          value: 2313,
+          diff: -28,
+        },
+        {
+          label: 'Replies',
+          value: 658,
+          diff: -9,
+        },
+      ],
     },
   ],
 };

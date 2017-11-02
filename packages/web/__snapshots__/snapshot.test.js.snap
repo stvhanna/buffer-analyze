@@ -1626,7 +1626,7 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
 exports[`Snapshots ReportsPage should render reports page 1`] = `
 <span>
   <div
-    className="sc-jhAzac dwJHYk"
+    className="sc-RefOD enAibU"
   >
     <div
       style={
@@ -1888,23 +1888,325 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
       </div>
     </div>
     <div
-      className="sc-fBuWsC gLmJxE"
+      className="sc-iQKALj cxrBId"
     >
-      <div
-        className="sc-fMiknA lcyNYZ"
+      <header
+        className="sc-hrWEMg kVYzHE"
       >
-        <span
+        <button
+          className="sc-ibxdXY fNzNap"
+          onClick={[Function]}
+        >
+          Back to Reports
+        </button>
+        <div
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "position": "relative",
             }
           }
         >
-          Loading...
-        </span>
+          <button
+            className="button button"
+            disabled={false}
+            onClick={[Function]}
+          >
+            <i
+              className="bi-calendar"
+            />
+            <span>
+              Past 7 Days
+            </span>
+            <span
+              className="rightSide"
+            >
+              <span
+                className="dateRange"
+              >
+                10/26/17 to 11/01/17
+              </span>
+              <span
+                style={
+                  Object {
+                    "marginLeft": "5px",
+                  }
+                }
+              >
+                <svg
+                  height="100%"
+                  style={
+                    Object {
+                      "fill": "#59626a",
+                      "height": "0.75rem",
+                      "width": "0.75rem",
+                    }
+                  }
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                >
+                  <g
+                    className="shuttleGray"
+                  >
+                    <path
+                      d="M4.90573685,4.61438297 C4.5159485,4.22537555 4.51510793,3.59709045 4.90996552,3.20500565 L4.90996552,3.20500565 C5.30208929,2.81563546 5.93536183,2.81786315 6.32490003,3.21046581 L11.2750374,8.19954548 C11.6643604,8.59193123 11.6645756,9.22591178 11.2750374,9.61606213 L6.32490003,14.5739785 C5.93557705,14.9639132 5.3048231,14.9648641 4.90996552,14.5699959 L4.90996552,14.5699959 C4.51784174,14.1778616 4.51273549,13.5497061 4.9163418,13.1493324 L8.84038203,9.25672113 C9.03897712,9.05971665 9.04484713,8.74520064 8.84038203,8.54114518 L4.90573685,4.61438297 Z"
+                      transform="translate(8.089966, 8.890003) scale(-1, 1) rotate(-270.000000) translate(-8.089966, -8.890003) "
+                    />
+                  </g>
+                </svg>
+              </span>
+            </span>
+          </button>
+          <div
+            className="dropDown"
+          >
+            <div>
+              <header
+                className="header"
+              >
+                <ul
+                  className="headerList"
+                >
+                  <li
+                    className="headerListItem headerListItemInactive"
+                    data-tip={null}
+                  >
+                    <button
+                      aria-label={null}
+                      disabled={undefined}
+                      onBlur={[Function]}
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                      style={
+                        Object {
+                          "background": "none",
+                          "backgroundColor": "unset",
+                          "border": "none",
+                          "borderRadius": "unset",
+                          "color": "unset",
+                          "cursor": "pointer",
+                          "display": "unset",
+                          "fontFamily": "unset",
+                          "fontSize": "unset",
+                          "fontWeight": "unset",
+                          "lineHeight": "unset",
+                          "margin": "unset",
+                          "outline": "none",
+                          "padding": 0,
+                          "transition": "unset",
+                        }
+                      }
+                    >
+                      90 Days
+                    </button>
+                  </li>
+                  <li
+                    className="headerListItem headerListItemInactive"
+                    data-tip={null}
+                  >
+                    <button
+                      aria-label={null}
+                      disabled={undefined}
+                      onBlur={[Function]}
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                      style={
+                        Object {
+                          "background": "none",
+                          "backgroundColor": "unset",
+                          "border": "none",
+                          "borderRadius": "unset",
+                          "color": "unset",
+                          "cursor": "pointer",
+                          "display": "unset",
+                          "fontFamily": "unset",
+                          "fontSize": "unset",
+                          "fontWeight": "unset",
+                          "lineHeight": "unset",
+                          "margin": "unset",
+                          "outline": "none",
+                          "padding": 0,
+                          "transition": "unset",
+                        }
+                      }
+                    >
+                      30 Days
+                    </button>
+                  </li>
+                  <li
+                    className="headerListItem headerListItemInactive"
+                    data-tip={null}
+                  >
+                    <button
+                      aria-label={null}
+                      disabled={undefined}
+                      onBlur={[Function]}
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                      style={
+                        Object {
+                          "background": "none",
+                          "backgroundColor": "unset",
+                          "border": "none",
+                          "borderRadius": "unset",
+                          "color": "unset",
+                          "cursor": "pointer",
+                          "display": "unset",
+                          "fontFamily": "unset",
+                          "fontSize": "unset",
+                          "fontWeight": "unset",
+                          "lineHeight": "unset",
+                          "margin": "unset",
+                          "outline": "none",
+                          "padding": 0,
+                          "transition": "unset",
+                        }
+                      }
+                    >
+                      28 Days
+                    </button>
+                  </li>
+                </ul>
+                <ul
+                  className="headerList"
+                >
+                  <li
+                    className="headerListItem headerListItemActive"
+                    data-tip={null}
+                  >
+                    <button
+                      aria-label={null}
+                      disabled={undefined}
+                      onBlur={[Function]}
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                      style={
+                        Object {
+                          "background": "none",
+                          "backgroundColor": "unset",
+                          "border": "none",
+                          "borderRadius": "unset",
+                          "color": "unset",
+                          "cursor": "pointer",
+                          "display": "unset",
+                          "fontFamily": "unset",
+                          "fontSize": "unset",
+                          "fontWeight": "unset",
+                          "lineHeight": "unset",
+                          "margin": "unset",
+                          "outline": "none",
+                          "padding": 0,
+                          "transition": "unset",
+                        }
+                      }
+                    >
+                      7 Days
+                    </button>
+                  </li>
+                  <li
+                    className="headerListItem headerListItemInactive"
+                    data-tip={null}
+                  >
+                    <button
+                      aria-label={null}
+                      disabled={undefined}
+                      onBlur={[Function]}
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                      style={
+                        Object {
+                          "background": "none",
+                          "backgroundColor": "unset",
+                          "border": "none",
+                          "borderRadius": "unset",
+                          "color": "unset",
+                          "cursor": "pointer",
+                          "display": "unset",
+                          "fontFamily": "unset",
+                          "fontSize": "unset",
+                          "fontWeight": "unset",
+                          "lineHeight": "unset",
+                          "margin": "unset",
+                          "outline": "none",
+                          "padding": 0,
+                          "transition": "unset",
+                        }
+                      }
+                    >
+                      Yesterday
+                    </button>
+                  </li>
+                  <li
+                    className="headerListItem headerListItemInactive"
+                    data-tip={null}
+                  >
+                    <button
+                      aria-label={null}
+                      disabled={undefined}
+                      onBlur={[Function]}
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                      style={
+                        Object {
+                          "background": "none",
+                          "backgroundColor": "unset",
+                          "border": "none",
+                          "borderRadius": "unset",
+                          "color": "unset",
+                          "cursor": "pointer",
+                          "display": "unset",
+                          "fontFamily": "unset",
+                          "fontSize": "unset",
+                          "fontWeight": "unset",
+                          "lineHeight": "unset",
+                          "margin": "unset",
+                          "outline": "none",
+                          "padding": 0,
+                          "transition": "unset",
+                        }
+                      }
+                    >
+                      Custom
+                    </button>
+                  </li>
+                </ul>
+              </header>
+              <div
+                className="customDateRangeContainer"
+              />
+            </div>
+          </div>
+          <div
+            className="clickCatcher"
+            onClick={[Function]}
+            role="button"
+            style={
+              Object {
+                "zIndex": 1,
+              }
+            }
+            tabIndex="0"
+          />
+        </div>
+      </header>
+      <div
+        className="sc-bwCtUz dHAzbG"
+      >
+        ...loading
       </div>
     </div>
   </div>
