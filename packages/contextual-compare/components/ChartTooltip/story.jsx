@@ -3,6 +3,7 @@ import moment from 'moment-timezone';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
 import ChartTooltip from './index';
+import mockPresets from '../../mocks/presets';
 
 const dayTimestamp = moment(1505174400000).startOf('day').valueOf();
 
@@ -29,6 +30,7 @@ storiesOf('ChartTooltip')
           label: 'Clicks',
           value: 42,
         }}
+        isCustomMode
       />
     </div>
   ))
@@ -53,6 +55,47 @@ storiesOf('ChartTooltip')
           label: 'Clicks',
           value: 42,
         }}
+        isCustomMode
+      />
+    </div>
+  ))
+  .add('[TESTED] should render a presets tooltip', () => (
+    <div
+      style={{
+        backgroundColor: '#343E46',
+      }}
+    >
+      <ChartTooltip
+        day={dayTimestamp}
+        postsCount={5}
+        profileService="facebook"
+        timezone="America/New_York"
+        primaryMetric={{
+          color: '#fda3f3',
+          label: 'Fans',
+          value: 2,
+        }}
+        presetConfig={mockPresets[0]}
+      />
+    </div>
+  ))
+  .add('[TESTED] should render a presets tooltip with negative count and no update count', () => (
+    <div
+      style={{
+        backgroundColor: '#343E46',
+      }}
+    >
+      <ChartTooltip
+        day={dayTimestamp}
+        postsCount={5}
+        profileService="facebook"
+        timezone="America/New_York"
+        primaryMetric={{
+          color: '#fda3f3',
+          label: 'Fans',
+          value: -15,
+        }}
+        presetConfig={{ rewardWording: 'Here goes the metric with {positive|negative} {value} value!', showUpdatesCount: false }}
       />
     </div>
   ));

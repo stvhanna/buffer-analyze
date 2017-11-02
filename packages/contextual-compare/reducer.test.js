@@ -3,6 +3,7 @@ import reducer, { actions, actionTypes } from './reducer';
 
 import mockDailyData from './mocks/dailyData';
 import mockMetrics from './mocks/metrics';
+import mockPresets from './mocks/presets';
 
 describe('reducer', () => {
   let initialState = {};
@@ -11,13 +12,14 @@ describe('reducer', () => {
     initialState = {
       data: [],
       metrics: [],
-      mode: 1,
+      mode: 0,
       presets: [],
       profileService: '',
       selectedMetrics: [],
-      selectedPreset: 0,
+      selectedPreset: -1,
       isPrimaryMetricDropdownOpen: false,
       isSecondaryMetricDropdownOpen: false,
+      isPresetsDropdownOpen: false,
       loading: true,
     };
   });
@@ -85,6 +87,31 @@ describe('reducer', () => {
       });
   });
 
+  it('should select a preset', () => {
+    expect(reducer({
+      presets: mockPresets,
+      selectedPreset: 0,
+    }, {
+      type: `contextual_${actionTypes.SELECT_PRESET}`,
+      preset: 1,
+    }))
+      .toEqual({
+        presets: mockPresets,
+        selectedPreset: 1,
+      });
+  });
+
+  it('should toggle preset dropdown', () => {
+    expect(reducer({
+      isPresetsDropdownOpen: false,
+    }, {
+      type: `contextual_${actionTypes.TOGGLE_PRESETS_DROPDOWN}`,
+    }))
+      .toEqual({
+        isPresetsDropdownOpen: true,
+      });
+  });
+
   it('should select custom metric', () => {
     expect(reducer({
       metrics: mockMetrics,
@@ -104,10 +131,11 @@ describe('reducer', () => {
       });
   });
 
-  it('should fetch the metrics and select a pair', () => {
+  it('should fetch the metrics and select a pair and a preset', () => {
     const result = {
       daily: mockDailyData,
       metrics: mockMetrics,
+      presets: mockPresets,
     };
 
     expect(reducer({}, {
@@ -121,6 +149,8 @@ describe('reducer', () => {
           result.metrics[1],
         ],
         metrics: mockMetrics,
+        presets: mockPresets,
+        selectedPreset: 0,
         loading: false,
       }));
   });
@@ -129,6 +159,7 @@ describe('reducer', () => {
     const result = {
       daily: [],
       metrics: [],
+      presets: [],
     };
 
     expect(reducer({}, {
@@ -137,9 +168,11 @@ describe('reducer', () => {
     }))
       .toEqual(Object.assign({}, {
         data: result.daily,
-        selectedMetrics: [],
-        metrics: [],
         loading: false,
+        metrics: [],
+        presets: [],
+        selectedMetrics: [],
+        selectedPreset: -1,
       }));
   });
 
@@ -194,6 +227,21 @@ describe('reducer', () => {
       .toEqual({
         type: `contextual_${actionTypes.SELECT_CHART_MODE}`,
         mode: 1,
+      });
+  });
+
+  it('should select a preset', () => {
+    expect(actions.selectPreset(1))
+      .toEqual({
+        type: `contextual_${actionTypes.SELECT_PRESET}`,
+        preset: 1,
+      });
+  });
+
+  it('should toggle the presets dropdown', () => {
+    expect(actions.togglePresetDropdown())
+      .toEqual({
+        type: `contextual_${actionTypes.TOGGLE_PRESETS_DROPDOWN}`,
       });
   });
 });

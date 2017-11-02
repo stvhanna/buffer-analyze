@@ -63,6 +63,7 @@ const MetricsDropdown = ({
         className={dropdownContainer}
         onShow={openDropdown}
         onHide={closeDropdown}
+        active={isDropdownOpen}
         style={{ marginLeft: `${secondary ? '0.5rem' : ''}` }}
       >
         <DropdownTrigger className={triggerClasses} style={{ display: 'flex' }} >

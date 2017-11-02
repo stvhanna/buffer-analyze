@@ -51,7 +51,7 @@ describe('rpc/contextual', () => {
       }]);
   });
 
-  it('it should return both data and metrics', async() => {
+  it('it should return: data, metrics, and presets', async() => {
     rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
 
     const data = await contextual.fn({ profileId, profileService }, {
@@ -62,6 +62,7 @@ describe('rpc/contextual', () => {
 
     expect(data.daily).toBeDefined();
     expect(data.metrics).toBeDefined();
+    expect(data.presets).toBeDefined();
   });
 
   it('should return a valid response if all data is 0', async() => {
@@ -91,6 +92,30 @@ describe('rpc/contextual', () => {
     expect(data.daily.length).toBe(7);
     expect(data.daily[0]).toMatchObject({
       day: '1504051200000',
+    });
+  });
+
+  it('should return the presets data', async() => {
+    rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
+
+    const data = await contextual.fn({ profileId, profileService }, {
+      session: {
+        accessToken: token,
+      },
+    });
+    expect(data.presets.length).toBe(2);
+
+    expect(data.presets[0].label).toBe('How does post frequency affect my fan count?');
+    expect(data.presets[0].data.length).toBe(7);
+    expect(data.presets[0].data[0]).toMatchObject({
+      day: '1504051200000',
+    });
+    expect(data.presets[0].data[0].metrics.length).toBe(2);
+    expect(data.presets[0].data[0].metrics[0]).toMatchObject({
+      key: 'new_followers',
+      label: 'New Fans',
+      postsCount: 4,
+      value: 101,
     });
   });
 });

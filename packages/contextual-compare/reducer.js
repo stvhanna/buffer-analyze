@@ -7,19 +7,23 @@ export const actionTypes = {
   OPEN_SECONDARY_DROPDOWN: 'OPEN_SECONDARY_DROPDOWN',
   CLOSE_PRIMARY_DROPDOWN: 'CLOSE_PRIMARY_DROPDOWN',
   CLOSE_SECONDARY_DROPDOWN: 'CLOSE_SECONDARY_DROPDOWN',
+
+  SELECT_PRESET: 'SELECT_PRESET',
+  TOGGLE_PRESETS_DROPDOWN: 'TOGGLE_PRESETS_DROPDOWN',
 };
 
 const initialState = {
   data: [],
   isPrimaryMetricDropdownOpen: false,
   isSecondaryMetricDropdownOpen: false,
+  isPresetsDropdownOpen: false,
   loading: true,
   metrics: [],
-  mode: 1,
+  mode: 0,
   presets: [],
   profileService: '',
   selectedMetrics: [],
-  selectedPreset: 0,
+  selectedPreset: -1,
 };
 
 function selecetCustomMetricsPairOnFetch(metrics) {
@@ -50,6 +54,8 @@ export default (state = initialState, action) => {
         data: action.result.daily,
         metrics: action.result.metrics,
         selectedMetrics: selecetCustomMetricsPairOnFetch(action.result.metrics),
+        presets: action.result.presets,
+        selectedPreset: action.result.presets.length ? 0 : -1,
         loading: false,
       });
 
@@ -90,6 +96,15 @@ export default (state = initialState, action) => {
         isSecondaryMetricDropdownOpen: false,
       });
 
+    case `contextual_${actionTypes.SELECT_PRESET}`:
+      return Object.assign({}, state, {
+        selectedPreset: action.preset,
+      });
+
+    case `contextual_${actionTypes.TOGGLE_PRESETS_DROPDOWN}`:
+      return Object.assign({}, state, {
+        isPresetsDropdownOpen: !state.isPresetsDropdownOpen,
+      });
 
     default:
       return state;
@@ -141,6 +156,19 @@ export const actions = {
       type: `contextual_${actionTypes.SELECT_CUSTOM_METRIC}`,
       metricIndex: 1,
       selectedMetricLabel,
+    };
+  },
+
+  togglePresetDropdown() {
+    return {
+      type: `contextual_${actionTypes.TOGGLE_PRESETS_DROPDOWN}`,
+    };
+  },
+
+  selectPreset(preset) {
+    return {
+      type: `contextual_${actionTypes.SELECT_PRESET}`,
+      preset,
     };
   },
 };
