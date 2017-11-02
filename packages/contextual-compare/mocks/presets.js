@@ -4,7 +4,11 @@ export default [
     description: 'Already it was conjectured that this might be the well-known interplan industrialist Palmer Eldritch, who had gone to the Prox system a decade ago at the invitation of the Prox Council of humanoid types; they had wanted him to modernize their autofacs along Terran lines. Nothing had been heard from Eldritch since. Now this.',
     showUpdatesCount: true,
     rewardWording: 'and you {gained|lost} {value} [+new] fans.',
-    xAxis: 'date',
+    type: 'column',
+    xAxis: {
+      categories:
+      ['Video', 'Image']
+    },
     yAxis: {
       metrics: [
         {
@@ -19,7 +23,7 @@ export default [
     },
     data: [
       {
-        day: '1507852800000',
+        category: 'Video',
         metrics: [
           {
             key: 'posts_count',
@@ -34,7 +38,7 @@ export default [
         ],
       },
       {
-        day: '1507939200000',
+        category: 'Image',
         metrics: [
           {
             key: 'posts_count',
@@ -45,81 +49,6 @@ export default [
             key: 'new_followers',
             label: 'new fans',
             value: 63,
-          },
-        ],
-      },
-      {
-        day: '1508025600000',
-        metrics: [
-          {
-            key: 'posts_count',
-            label: 'posts',
-            value: 0,
-          },
-          {
-            key: 'new_followers',
-            label: 'new fans',
-            value: 48,
-          },
-        ],
-      },
-      {
-        day: '1508112000000',
-        metrics: [
-          {
-            key: 'posts_count',
-            label: 'posts',
-            value: 0,
-          },
-          {
-            key: 'new_followers',
-            label: 'new fans',
-            value: 64,
-          },
-        ],
-      },
-      {
-        day: '1508198400000',
-        metrics: [
-          {
-            key: 'posts_count',
-            label: 'posts',
-            value: 0,
-          },
-          {
-            key: 'new_followers',
-            label: 'new fans',
-            value: 74,
-          },
-        ],
-      },
-      {
-        day: '1508284800000',
-        metrics: [
-          {
-            key: 'posts_count',
-            label: 'posts',
-            value: 0,
-          },
-          {
-            key: 'new_followers',
-            label: 'new fans',
-            value: 65,
-          },
-        ],
-      },
-      {
-        day: '1508371200000',
-        metrics: [
-          {
-            key: 'posts_count',
-            label: 'posts',
-            value: 1,
-          },
-          {
-            key: 'new_followers',
-            label: 'new fans',
-            value: 58,
           },
         ],
       },

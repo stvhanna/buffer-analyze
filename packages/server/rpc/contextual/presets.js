@@ -16,6 +16,7 @@ module.exports = {
       description: 'Find out what type of content reasonates well with your audience.',
       hideDate: true,
       rewardWording: 'Your {category} posts earned on average:',
+      type: 'column',
     },
     frequency_engagement: {
       label: 'How does post frequency affect my engagement rate?',
