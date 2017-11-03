@@ -79,7 +79,7 @@ describe('rpc/contextual', () => {
     expect(data.metrics.length).toBe(10);
     expect(data.metrics[0]).toEqual({
       label: 'Posts',
-      color: '#3A92D3',
+      key: 'posts_count',
     });
   });
 
@@ -134,7 +134,7 @@ describe('rpc/contextual', () => {
     });
   });
 
-  it('should filter out presets with empty data', async() => {
+  it('should return presets with empty data', async() => {
     const mockedResponse = { response: {
       daily: CURRENT_PERIOD_DAILY_RESPONSE.response.daily,
       presets: [{
@@ -160,7 +160,7 @@ describe('rpc/contextual', () => {
         accessToken: token,
       },
     });
-    expect(data.presets.length).toBe(0);
+    expect(data.presets.length).toBe(1);
   });
 
   it('should filter out unsuded presets', async() => {

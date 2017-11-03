@@ -71,7 +71,37 @@ export default [
     ],
   },
   {
-    label: 'How does post frequency affect te reach per post?',
+    label: 'This should be disabled',
+    description: 'Already it was conjectured that this might be the well-known interplan industrialist Palmer Eldritch, who had gone to the Prox system a decade ago at the invitation of the Prox Council of humanoid types; they had wanted him to modernize their autofacs along Terran lines. Nothing had been heard from Eldritch since. Now this.',
+    hideDate: true,
+    showUpdatesCount: false,
+    showMetricsList: true,
+    rewardWording: 'Your {category} posts earned on average:',
+    type: 'column',
+    xAxis: {
+      categories:
+      ['Video', 'Image'],
+    },
+    yAxis: {
+      metrics: [
+        {
+          key: 'post_impressions',
+          label: 'Impressions',
+        },
+        {
+          key: 'new_followers',
+          label: 'new fans',
+        },
+        {
+          key: 'post_reach',
+          label: 'reach',
+        },
+      ],
+    },
+    data: [],
+  },
+  {
+    label: 'How does post  affect te reach per post?',
     description: 'Discover how your posting frequency affects your fan count.',
     showUpdatesCount: false,
     rewardWording: 'and you {gained|lost} {value} [+new] fans.',
