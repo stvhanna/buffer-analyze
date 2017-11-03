@@ -15,7 +15,7 @@ export default [
       {
         diff: 43,
         label: 'Impression',
-        value: 91133,
+        value: 1133,
         postsCount: 100,
         previousPostsCount: 50,
         previousValue: 1100,
@@ -39,7 +39,7 @@ export default [
       {
         diff: -7,
         label: 'Impression',
-        value: 85118,
+        value: 5118,
         postsCount: 100,
         previousPostsCount: 50,
         previousValue: 1100,
@@ -63,7 +63,7 @@ export default [
       {
         diff: -42,
         label: 'Impression',
-        value: 75936,
+        value: 5936,
         postsCount: 100,
         previousPostsCount: 50,
         previousValue: 1100,
@@ -87,7 +87,7 @@ export default [
       {
         diff: -18,
         label: 'Impression',
-        value: 86410,
+        value: 6410,
         postsCount: 100,
         previousPostsCount: 50,
         previousValue: 1100,
@@ -111,7 +111,7 @@ export default [
       {
         diff: -12,
         label: 'Impression',
-        value: 87669,
+        value: 7669,
         postsCount: 100,
         previousPostsCount: 50,
         previousValue: 1100,
@@ -135,7 +135,7 @@ export default [
       {
         diff: -22,
         label: 'Impression',
-        value: 74969,
+        value: 4969,
         postsCount: 100,
         previousPostsCount: 50,
         previousValue: 1100,
@@ -159,7 +159,7 @@ export default [
       {
         diff: 51,
         label: 'Impression',
-        value: 118827,
+        value: 8827,
         postsCount: 100,
         previousPostsCount: 50,
         previousValue: 1100,

@@ -44,7 +44,7 @@ storiesOf('ContextualCompare')
         selectedMetrics={selectedMetrics}
         metrics={mockMetrics}
         presets={mockPresets}
-        selectedPreset={1}
+        selectedPreset={2}
         data={mockDailyData}
         mode={0}
         profileService="facebook"

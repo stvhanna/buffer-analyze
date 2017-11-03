@@ -126,8 +126,8 @@ function prepareSeries(
         seriesConfig.colors = [{
           linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
           stops: [
-            [0, ReactHighcharts.Highcharts.Color(color).setOpacity(0.6).get('rgba')],
-            [1, ReactHighcharts.Highcharts.Color(color).setOpacity(0).get('rgba')],
+            [0, fadeColor(color, 0.6)],
+            [1, fadeColor(color, 0)],
           ],
         }];
         seriesConfig.borderColor = seriesConfig.color;
@@ -164,7 +164,7 @@ function prepareData(
     minorTickInterval: getTickInterval(dailyMetrics),
   });
 
-  if (presetConfig && presetConfig.xAxis !== 'date') {
+  if (presetConfig && presetConfig.xAxis.categories) {
     delete config.xAxis.labels.format;
     delete config.xAxis.labels.align;
     delete config.xAxis.type;
@@ -243,7 +243,7 @@ Chart.propTypes = {
   data: PropTypes.arrayOf(PropTypes.shape({
     day: PropTypes.string,
     metric: PropTypes.shape({
-      color: PropTypes.string.isRequired,
+      color: PropTypes.string,
       diff: PropTypes.number.isRequired,
       label: PropTypes.string.isRequired,
       value: PropTypes.number.isRequired,
