@@ -48,7 +48,7 @@ class AddReport extends Component {
       <span>
         <Wrapper>
           <Button onClick={this.toggleMenu}>
-            <Text color="sidebarBackgroundBlue">{this.props.translations.addReport}</Text>
+            <Text color="sidebarBackgroundBlue" size="small" weight="medium">{this.props.translations.addReport}</Text>
           </Button>
           <Modal
             translations={this.props.translations}

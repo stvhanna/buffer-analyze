@@ -1,5 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
+import {
+  Divider,
+} from '@bufferapp/components';
+
 import Label from './Label';
 import Item from './Item';
 
@@ -22,6 +27,7 @@ const Insights = ({ profiles, ...props }) => {
       { facebookProfile && <Item profileService="facebook" profileId={facebookProfile.id} href={`/insights/facebook/${facebookProfile.id}/${tabId}`} {...props}>Facebook</Item>}
       { twitterProfile && <Item profileService="twitter" profileId={twitterProfile.id} href={`/insights/twitter/${twitterProfile.id}/${tabId}`} {...props}>Twitter</Item>}
       { instagramProfile && <Item profileService="instagran" profileId={instagramProfile.id} href={`/insights/instagram/${instagramProfile.id}/${tabId}`} {...props}>Instagram</Item>}
+      <Divider marginTop="0.75rem" marginBottom="1rem" />
     </div>
   );
 };

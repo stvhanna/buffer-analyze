@@ -681,50 +681,17 @@ exports[`Snapshots App should render application 1`] = `
         <div
           style={
             Object {
-              "background": "#fcfcfc",
+              "background": "#fff",
               "borderRight": "1px solid #e6ebef",
               "display": "flex",
               "flexDirection": "column",
               "maxHeight": "100vh",
               "minHeight": "100vh",
-              "width": "16rem",
+              "padding": "0.75rem 0",
+              "width": "200px",
             }
           }
         >
-          <div
-            style={
-              Object {
-                "display": "block",
-                "padding": ".75rem 1rem .5rem",
-              }
-            }
-          >
-            <span
-              style={
-                Object {
-                  "color": "#168eea",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "fontSize": "1.25rem",
-                  "fontWeight": 600,
-                }
-              }
-            >
-              Analyze
-            </span>
-          </div>
-          <hr
-            style={
-              Object {
-                "background": "#e6ebef",
-                "border": "none",
-                "boxSizing": "border-box",
-                "height": "0.063rem",
-                "marginBottom": "1rem",
-                "marginTop": "0",
-                "width": "100%",
-              }
-            }
-          />
           <a
             href="/"
             onBlur={[Function]}
@@ -735,7 +702,8 @@ exports[`Snapshots App should render application 1`] = `
             style={
               Object {
                 "color": "#168eea",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "outline": "none",
                 "padding": "0",
                 "textDecoration": "none",
               }
@@ -745,8 +713,10 @@ exports[`Snapshots App should render application 1`] = `
             <span
               style={
                 Object {
+                  "borderRadius": "4px",
                   "display": "block",
-                  "padding": ".5rem 1rem",
+                  "margin": "0 0.5rem",
+                  "padding": "0.75rem 0.5rem",
                 }
               }
             >
@@ -754,7 +724,7 @@ exports[`Snapshots App should render application 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 400,
                   }
@@ -764,13 +734,26 @@ exports[`Snapshots App should render application 1`] = `
               </span>
             </span>
           </a>
+          <hr
+            style={
+              Object {
+                "background": "#e6ebef",
+                "border": "none",
+                "boxSizing": "border-box",
+                "height": "0.063rem",
+                "marginBottom": "1rem",
+                "marginTop": "0.75rem",
+                "width": "100%",
+              }
+            }
+          />
           <span
             style={
               Object {
                 "display": "block",
                 "letterSpacing": ".075rem",
-                "marginTop": "1rem",
-                "padding": ".5rem 1rem 0",
+                "margin": "0 1rem 0.75rem",
+                "padding": "0",
                 "textTransform": "uppercase",
               }
             }
@@ -778,10 +761,10 @@ exports[`Snapshots App should render application 1`] = `
             <span
               style={
                 Object {
-                  "color": "#ced7df",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "fontSize": "0.7rem",
-                  "fontWeight": 400,
+                  "color": "#8A9097",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "0.75rem",
+                  "fontWeight": 500,
                 }
               }
             >
@@ -798,7 +781,8 @@ exports[`Snapshots App should render application 1`] = `
             style={
               Object {
                 "color": "#168eea",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "outline": "none",
                 "padding": "0",
                 "textDecoration": "none",
               }
@@ -808,8 +792,10 @@ exports[`Snapshots App should render application 1`] = `
             <span
               style={
                 Object {
+                  "borderRadius": "4px",
                   "display": "block",
-                  "padding": ".5rem 1rem",
+                  "margin": "0 0.5rem",
+                  "padding": "0.75rem 0.5rem",
                 }
               }
             >
@@ -817,7 +803,7 @@ exports[`Snapshots App should render application 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 400,
                   }
@@ -837,7 +823,8 @@ exports[`Snapshots App should render application 1`] = `
             style={
               Object {
                 "color": "#168eea",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "outline": "none",
                 "padding": "0",
                 "textDecoration": "none",
               }
@@ -847,8 +834,10 @@ exports[`Snapshots App should render application 1`] = `
             <span
               style={
                 Object {
+                  "borderRadius": "4px",
                   "display": "block",
-                  "padding": ".5rem 1rem",
+                  "margin": "0 0.5rem",
+                  "padding": "0.75rem 0.5rem",
                 }
               }
             >
@@ -856,7 +845,7 @@ exports[`Snapshots App should render application 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 400,
                   }
@@ -866,75 +855,6 @@ exports[`Snapshots App should render application 1`] = `
               </span>
             </span>
           </a>
-          <div
-            style={
-              Object {
-                "marginTop": "auto",
-                "padding": "0 1rem",
-              }
-            }
-          >
-            <hr
-              style={
-                Object {
-                  "background": "#e6ebef",
-                  "border": "none",
-                  "boxSizing": "border-box",
-                  "height": "0.063rem",
-                  "marginBottom": "0",
-                  "marginTop": "0",
-                  "width": "100%",
-                }
-              }
-            />
-          </div>
-          <div
-            style={
-              Object {
-                "padding": ".25rem 0 .5rem",
-              }
-            }
-          >
-            <a
-              href="/settings"
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              style={
-                Object {
-                  "color": "#168eea",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "padding": "0",
-                  "textDecoration": "none",
-                }
-              }
-              target="_self"
-            >
-              <span
-                style={
-                  Object {
-                    "display": "block",
-                    "padding": ".5rem 1rem",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "1rem",
-                      "fontWeight": 400,
-                    }
-                  }
-                >
-                  Settings
-                </span>
-              </span>
-            </a>
-          </div>
         </div>
         <div
           style={
@@ -1001,50 +921,17 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
     <div
       style={
         Object {
-          "background": "#fcfcfc",
+          "background": "#fff",
           "borderRight": "1px solid #e6ebef",
           "display": "flex",
           "flexDirection": "column",
           "maxHeight": "100vh",
           "minHeight": "100vh",
-          "width": "16rem",
+          "padding": "0.75rem 0",
+          "width": "200px",
         }
       }
     >
-      <div
-        style={
-          Object {
-            "display": "block",
-            "padding": ".75rem 1rem .5rem",
-          }
-        }
-      >
-        <span
-          style={
-            Object {
-              "color": "#168eea",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1.25rem",
-              "fontWeight": 600,
-            }
-          }
-        >
-          Analyze
-        </span>
-      </div>
-      <hr
-        style={
-          Object {
-            "background": "#e6ebef",
-            "border": "none",
-            "boxSizing": "border-box",
-            "height": "0.063rem",
-            "marginBottom": "1rem",
-            "marginTop": "0",
-            "width": "100%",
-          }
-        }
-      />
       <a
         href="/"
         onBlur={[Function]}
@@ -1055,7 +942,8 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
         style={
           Object {
             "color": "#168eea",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "outline": "none",
             "padding": "0",
             "textDecoration": "none",
           }
@@ -1065,8 +953,10 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
         <span
           style={
             Object {
+              "borderRadius": "4px",
               "display": "block",
-              "padding": ".5rem 1rem",
+              "margin": "0 0.5rem",
+              "padding": "0.75rem 0.5rem",
             }
           }
         >
@@ -1074,7 +964,7 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1rem",
                 "fontWeight": 400,
               }
@@ -1084,13 +974,26 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
           </span>
         </span>
       </a>
+      <hr
+        style={
+          Object {
+            "background": "#e6ebef",
+            "border": "none",
+            "boxSizing": "border-box",
+            "height": "0.063rem",
+            "marginBottom": "1rem",
+            "marginTop": "0.75rem",
+            "width": "100%",
+          }
+        }
+      />
       <span
         style={
           Object {
             "display": "block",
             "letterSpacing": ".075rem",
-            "marginTop": "1rem",
-            "padding": ".5rem 1rem 0",
+            "margin": "0 1rem 0.75rem",
+            "padding": "0",
             "textTransform": "uppercase",
           }
         }
@@ -1098,10 +1001,10 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
         <span
           style={
             Object {
-              "color": "#ced7df",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.7rem",
-              "fontWeight": 400,
+              "color": "#8A9097",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
+              "fontWeight": 500,
             }
           }
         >
@@ -1118,7 +1021,8 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
         style={
           Object {
             "color": "#168eea",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "outline": "none",
             "padding": "0",
             "textDecoration": "none",
           }
@@ -1128,8 +1032,10 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
         <span
           style={
             Object {
+              "borderRadius": "4px",
               "display": "block",
-              "padding": ".5rem 1rem",
+              "margin": "0 0.5rem",
+              "padding": "0.75rem 0.5rem",
             }
           }
         >
@@ -1137,7 +1043,7 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1rem",
                 "fontWeight": 400,
               }
@@ -1157,7 +1063,8 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
         style={
           Object {
             "color": "#168eea",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "outline": "none",
             "padding": "0",
             "textDecoration": "none",
           }
@@ -1167,8 +1074,10 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
         <span
           style={
             Object {
+              "borderRadius": "4px",
               "display": "block",
-              "padding": ".5rem 1rem",
+              "margin": "0 0.5rem",
+              "padding": "0.75rem 0.5rem",
             }
           }
         >
@@ -1176,7 +1085,7 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1rem",
                 "fontWeight": 400,
               }
@@ -1186,75 +1095,6 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
           </span>
         </span>
       </a>
-      <div
-        style={
-          Object {
-            "marginTop": "auto",
-            "padding": "0 1rem",
-          }
-        }
-      >
-        <hr
-          style={
-            Object {
-              "background": "#e6ebef",
-              "border": "none",
-              "boxSizing": "border-box",
-              "height": "0.063rem",
-              "marginBottom": "0",
-              "marginTop": "0",
-              "width": "100%",
-            }
-          }
-        />
-      </div>
-      <div
-        style={
-          Object {
-            "padding": ".25rem 0 .5rem",
-          }
-        }
-      >
-        <a
-          href="/settings"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          style={
-            Object {
-              "color": "#168eea",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "padding": "0",
-              "textDecoration": "none",
-            }
-          }
-          target="_self"
-        >
-          <span
-            style={
-              Object {
-                "display": "block",
-                "padding": ".5rem 1rem",
-              }
-            }
-          >
-            <span
-              style={
-                Object {
-                  "color": "#59626a",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "fontSize": "1rem",
-                  "fontWeight": 400,
-                }
-              }
-            >
-              Settings
-            </span>
-          </span>
-        </a>
-      </div>
     </div>
     <div
       style={
@@ -1294,50 +1134,17 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
     <div
       style={
         Object {
-          "background": "#fcfcfc",
+          "background": "#fff",
           "borderRight": "1px solid #e6ebef",
           "display": "flex",
           "flexDirection": "column",
           "maxHeight": "100vh",
           "minHeight": "100vh",
-          "width": "16rem",
+          "padding": "0.75rem 0",
+          "width": "200px",
         }
       }
     >
-      <div
-        style={
-          Object {
-            "display": "block",
-            "padding": ".75rem 1rem .5rem",
-          }
-        }
-      >
-        <span
-          style={
-            Object {
-              "color": "#168eea",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1.25rem",
-              "fontWeight": 600,
-            }
-          }
-        >
-          Analyze
-        </span>
-      </div>
-      <hr
-        style={
-          Object {
-            "background": "#e6ebef",
-            "border": "none",
-            "boxSizing": "border-box",
-            "height": "0.063rem",
-            "marginBottom": "1rem",
-            "marginTop": "0",
-            "width": "100%",
-          }
-        }
-      />
       <a
         href="/"
         onBlur={[Function]}
@@ -1348,7 +1155,8 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
         style={
           Object {
             "color": "#168eea",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "outline": "none",
             "padding": "0",
             "textDecoration": "none",
           }
@@ -1358,8 +1166,10 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
         <span
           style={
             Object {
+              "borderRadius": "4px",
               "display": "block",
-              "padding": ".5rem 1rem",
+              "margin": "0 0.5rem",
+              "padding": "0.75rem 0.5rem",
             }
           }
         >
@@ -1367,7 +1177,7 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1rem",
                 "fontWeight": 400,
               }
@@ -1377,13 +1187,26 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
           </span>
         </span>
       </a>
+      <hr
+        style={
+          Object {
+            "background": "#e6ebef",
+            "border": "none",
+            "boxSizing": "border-box",
+            "height": "0.063rem",
+            "marginBottom": "1rem",
+            "marginTop": "0.75rem",
+            "width": "100%",
+          }
+        }
+      />
       <span
         style={
           Object {
             "display": "block",
             "letterSpacing": ".075rem",
-            "marginTop": "1rem",
-            "padding": ".5rem 1rem 0",
+            "margin": "0 1rem 0.75rem",
+            "padding": "0",
             "textTransform": "uppercase",
           }
         }
@@ -1391,10 +1214,10 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
         <span
           style={
             Object {
-              "color": "#ced7df",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.7rem",
-              "fontWeight": 400,
+              "color": "#8A9097",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
+              "fontWeight": 500,
             }
           }
         >
@@ -1411,7 +1234,8 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
         style={
           Object {
             "color": "#168eea",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "outline": "none",
             "padding": "0",
             "textDecoration": "none",
           }
@@ -1421,8 +1245,10 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
         <span
           style={
             Object {
+              "borderRadius": "4px",
               "display": "block",
-              "padding": ".5rem 1rem",
+              "margin": "0 0.5rem",
+              "padding": "0.75rem 0.5rem",
             }
           }
         >
@@ -1430,7 +1256,7 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1rem",
                 "fontWeight": 400,
               }
@@ -1450,7 +1276,8 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
         style={
           Object {
             "color": "#168eea",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "outline": "none",
             "padding": "0",
             "textDecoration": "none",
           }
@@ -1460,8 +1287,10 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
         <span
           style={
             Object {
+              "borderRadius": "4px",
               "display": "block",
-              "padding": ".5rem 1rem",
+              "margin": "0 0.5rem",
+              "padding": "0.75rem 0.5rem",
             }
           }
         >
@@ -1469,7 +1298,7 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1rem",
                 "fontWeight": 400,
               }
@@ -1479,75 +1308,6 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
           </span>
         </span>
       </a>
-      <div
-        style={
-          Object {
-            "marginTop": "auto",
-            "padding": "0 1rem",
-          }
-        }
-      >
-        <hr
-          style={
-            Object {
-              "background": "#e6ebef",
-              "border": "none",
-              "boxSizing": "border-box",
-              "height": "0.063rem",
-              "marginBottom": "0",
-              "marginTop": "0",
-              "width": "100%",
-            }
-          }
-        />
-      </div>
-      <div
-        style={
-          Object {
-            "padding": ".25rem 0 .5rem",
-          }
-        }
-      >
-        <a
-          href="/settings"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          style={
-            Object {
-              "color": "#168eea",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "padding": "0",
-              "textDecoration": "none",
-            }
-          }
-          target="_self"
-        >
-          <span
-            style={
-              Object {
-                "display": "block",
-                "padding": ".5rem 1rem",
-              }
-            }
-          >
-            <span
-              style={
-                Object {
-                  "color": "#59626a",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "fontSize": "1rem",
-                  "fontWeight": 400,
-                }
-              }
-            >
-              Settings
-            </span>
-          </span>
-        </a>
-      </div>
     </div>
     <div
       style={
@@ -1631,50 +1391,17 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
     <div
       style={
         Object {
-          "background": "#fcfcfc",
+          "background": "#fff",
           "borderRight": "1px solid #e6ebef",
           "display": "flex",
           "flexDirection": "column",
           "maxHeight": "100vh",
           "minHeight": "100vh",
-          "width": "16rem",
+          "padding": "0.75rem 0",
+          "width": "200px",
         }
       }
     >
-      <div
-        style={
-          Object {
-            "display": "block",
-            "padding": ".75rem 1rem .5rem",
-          }
-        }
-      >
-        <span
-          style={
-            Object {
-              "color": "#168eea",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1.25rem",
-              "fontWeight": 600,
-            }
-          }
-        >
-          Analyze
-        </span>
-      </div>
-      <hr
-        style={
-          Object {
-            "background": "#e6ebef",
-            "border": "none",
-            "boxSizing": "border-box",
-            "height": "0.063rem",
-            "marginBottom": "1rem",
-            "marginTop": "0",
-            "width": "100%",
-          }
-        }
-      />
       <a
         href="/"
         onBlur={[Function]}
@@ -1685,7 +1412,8 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
         style={
           Object {
             "color": "#168eea",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "outline": "none",
             "padding": "0",
             "textDecoration": "none",
           }
@@ -1695,8 +1423,10 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
         <span
           style={
             Object {
+              "borderRadius": "4px",
               "display": "block",
-              "padding": ".5rem 1rem",
+              "margin": "0 0.5rem",
+              "padding": "0.75rem 0.5rem",
             }
           }
         >
@@ -1704,7 +1434,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1rem",
                 "fontWeight": 400,
               }
@@ -1714,13 +1444,26 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
           </span>
         </span>
       </a>
+      <hr
+        style={
+          Object {
+            "background": "#e6ebef",
+            "border": "none",
+            "boxSizing": "border-box",
+            "height": "0.063rem",
+            "marginBottom": "1rem",
+            "marginTop": "0.75rem",
+            "width": "100%",
+          }
+        }
+      />
       <span
         style={
           Object {
             "display": "block",
             "letterSpacing": ".075rem",
-            "marginTop": "1rem",
-            "padding": ".5rem 1rem 0",
+            "margin": "0 1rem 0.75rem",
+            "padding": "0",
             "textTransform": "uppercase",
           }
         }
@@ -1728,10 +1471,10 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
         <span
           style={
             Object {
-              "color": "#ced7df",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.7rem",
-              "fontWeight": 400,
+              "color": "#8A9097",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
+              "fontWeight": 500,
             }
           }
         >
@@ -1748,7 +1491,8 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
         style={
           Object {
             "color": "#168eea",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "outline": "none",
             "padding": "0",
             "textDecoration": "none",
           }
@@ -1758,8 +1502,10 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
         <span
           style={
             Object {
+              "borderRadius": "4px",
               "display": "block",
-              "padding": ".5rem 1rem",
+              "margin": "0 0.5rem",
+              "padding": "0.75rem 0.5rem",
             }
           }
         >
@@ -1767,7 +1513,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1rem",
                 "fontWeight": 400,
               }
@@ -1787,7 +1533,8 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
         style={
           Object {
             "color": "#168eea",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "outline": "none",
             "padding": "0",
             "textDecoration": "none",
           }
@@ -1798,8 +1545,10 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
           style={
             Object {
               "backgroundColor": "rgba(22, 142, 234, .1)",
+              "borderRadius": "4px",
               "display": "block",
-              "padding": ".5rem 1rem",
+              "margin": "0 0.5rem",
+              "padding": "0.75rem 0.5rem",
             }
           }
         >
@@ -1807,9 +1556,9 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1rem",
-                "fontWeight": 600,
+                "fontWeight": 700,
               }
             }
           >
@@ -1817,75 +1566,6 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
           </span>
         </span>
       </a>
-      <div
-        style={
-          Object {
-            "marginTop": "auto",
-            "padding": "0 1rem",
-          }
-        }
-      >
-        <hr
-          style={
-            Object {
-              "background": "#e6ebef",
-              "border": "none",
-              "boxSizing": "border-box",
-              "height": "0.063rem",
-              "marginBottom": "0",
-              "marginTop": "0",
-              "width": "100%",
-            }
-          }
-        />
-      </div>
-      <div
-        style={
-          Object {
-            "padding": ".25rem 0 .5rem",
-          }
-        }
-      >
-        <a
-          href="/settings"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          style={
-            Object {
-              "color": "#168eea",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "padding": "0",
-              "textDecoration": "none",
-            }
-          }
-          target="_self"
-        >
-          <span
-            style={
-              Object {
-                "display": "block",
-                "padding": ".5rem 1rem",
-              }
-            }
-          >
-            <span
-              style={
-                Object {
-                  "color": "#59626a",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "fontSize": "1rem",
-                  "fontWeight": 400,
-                }
-              }
-            >
-              Settings
-            </span>
-          </span>
-        </a>
-      </div>
     </div>
     <div
       className="sc-iQKALj cxrBId"
