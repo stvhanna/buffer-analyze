@@ -23,7 +23,6 @@ const DatePickerButton = ({ isOpen, loading, startDate, endDate, handleClick }) 
       className={buttonClass}
       onClick={handleClick}
     >
-      <i className="bi-calendar" />
       <Title loading={loading} startDate={startDate} endDate={endDate} />
       <span className={styles.rightSide}>
         <Subtitle startDate={startDate} endDate={endDate} />
