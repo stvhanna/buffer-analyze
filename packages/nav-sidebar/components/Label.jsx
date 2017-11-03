@@ -5,15 +5,15 @@ import Text from '@bufferapp/components/Text';
 
 const labelStyle = {
   display: 'block',
-  marginTop: '1rem',
-  padding: '.5rem 1rem 0',
+  margin: '0 1rem 0.75rem',
+  padding: '0',
   textTransform: 'uppercase',
   letterSpacing: '.075rem',
 };
 
 const Label = ({ children }) => (
   <span style={labelStyle}>
-    <Text size="extra-small" color="geyser">{children}</Text>
+    <Text size="small" color="lightSlate" weight="medium">{children}</Text>
   </span>
 );
 
