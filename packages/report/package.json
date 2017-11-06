@@ -26,6 +26,7 @@
     "@bufferapp/components": "2.1.0",
     "@bufferapp/report-list": "^0.3.0",
     "@bufferapp/summary-table": "^0.3.0",
+    "@bufferapp/posts-summary-table": "^0.3.0",
     "styled-components": "^2.2.1"
   },
   "devDependencies": {
