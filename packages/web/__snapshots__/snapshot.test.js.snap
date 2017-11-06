@@ -867,7 +867,7 @@ exports[`Snapshots App should render application 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 400,
               }
@@ -892,7 +892,7 @@ exports[`Snapshots App should render application 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1rem",
                 "fontWeight": 400,
               }
@@ -1107,7 +1107,7 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
         style={
           Object {
             "color": "#59626a",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontFamily": "\\"Roboto\\", sans-serif",
             "fontSize": "1rem",
             "fontWeight": 400,
           }
@@ -1370,7 +1370,7 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
         style={
           Object {
             "color": "#59626a",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontFamily": "\\"Roboto\\", sans-serif",
             "fontSize": "1rem",
             "fontWeight": 400,
           }
@@ -1574,7 +1574,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
         className="sc-hrWEMg kVYzHE"
       >
         <button
-          className="sc-ibxdXY fNzNap"
+          className="sc-ibxdXY hpfxac"
           onClick={[Function]}
         >
           Back to Reports
@@ -1603,7 +1603,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
               <span
                 className="dateRange"
               >
-                10/27/17 to 11/02/17
+                10/30/17 to 11/05/17
               </span>
               <span
                 style={
