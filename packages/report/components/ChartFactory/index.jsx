@@ -4,12 +4,17 @@ import {
   Text,
 } from '@bufferapp/components';
 import { Table as SummaryTable, Title as SummaryTitle } from '@bufferapp/summary-table';
+import { Table as PostsSummary, Title as PostsSummaryTitle } from '@bufferapp/posts-summary-table';
 import styled from 'styled-components';
 
 const CHARTS = {
   'summary-table': {
     chart: SummaryTable,
     title: SummaryTitle,
+  },
+  'posts-summary': {
+    chart: PostsSummary,
+    title: PostsSummaryTitle,
   },
 };
 
