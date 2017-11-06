@@ -1370,7 +1370,7 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
         style={
           Object {
             "color": "#59626a",
-            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontFamily": "\\"Open Sans\\", sans-serif",
             "fontSize": "1rem",
             "fontWeight": 400,
           }
@@ -1386,7 +1386,7 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
 exports[`Snapshots ReportsPage should render reports page 1`] = `
 <span>
   <div
-    className="sc-RefOD enAibU"
+    className="sc-kpOJdX iKubOM"
   >
     <div
       style={
@@ -1568,13 +1568,13 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
       </a>
     </div>
     <div
-      className="sc-iQKALj cxrBId"
+      className="sc-dxgOiQ gtKKlQ"
     >
       <header
-        className="sc-hrWEMg kVYzHE"
+        className="sc-jKJlTe jSeAKj"
       >
         <button
-          className="sc-ibxdXY hpfxac"
+          className="sc-bdVaJa eTEyQW"
           onClick={[Function]}
         >
           Back to Reports
@@ -1884,7 +1884,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
         </div>
       </header>
       <div
-        className="sc-bwCtUz dHAzbG"
+        className="sc-ckVGcZ hImKRA"
       >
         ...loading
       </div>
