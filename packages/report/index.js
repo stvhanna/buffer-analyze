@@ -1,18 +1,16 @@
-import { push } from 'react-router-redux';
 import { connect } from 'react-redux';
-import ReportList from './components/ReportList';
+import Report from './components/Report';
 
 // default export = container
 export default connect(
   state => ({
-    ...state.reportList,
-  }),
-  dispatch => ({
-    selectReport: (id) => {
-      dispatch(push(`/reports/${id}`));
+    dateRange: {
+      startDate: state.date.startDate,
+      endDate: state.date.endDate,
     },
+    ...state.report,
   }),
-)(ReportList);
+)(Report);
 
 // export reducer, actions and action types
 export reducer, { actions, actionTypes } from './reducer';

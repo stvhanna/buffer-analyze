@@ -1,15 +1,16 @@
 {
-  "name": "@bufferapp/nav-sidebar",
-  "version": "0.2.0",
-  "description": "Nav sidebar for Analyze",
+  "name": "@bufferapp/report",
+  "version": "0.0.1",
+  "description": "Report detail",
   "main": "index.js",
   "scripts": {
     "start": "start-storybook -p 9001",
     "lint": "eslint . --ignore-pattern coverage node_modules",
-    "test": "sh ../../package_test.sh",
+    "test": "yarn run lint && sh ../../package_test.sh",
     "test-watch": "jest --watch",
     "test-update": "jest -u"
   },
+  "author": "mike@msanroman.io",
   "jest": {
     "transformIgnorePatterns": [
       "node_modules/(?!@bufferapp/*)"
@@ -19,12 +20,13 @@
       "\\.(css|less)$": "identity-obj-proxy"
     }
   },
-  "author": "mike@msanroman.io",
   "dependencies": {
-    "@bufferapp/analyze-profile-selector": "^0.2.0",
-    "@bufferapp/async-data-fetch": "0.5.36-beta01",
-    "@bufferapp/report-list": "^0.2.0",
-    "@bufferapp/components": "2.1.0"
+    "styled-components": "^2.2.1",
+		"@bufferapp/summary-table": "^0.2.0",
+		"@bufferapp/report-list": "^0.2.0",
+		"@bufferapp/analyze-date-picker": "^0.2.0",
+		"@bufferapp/analyze-shared-components": "^0.2.0",
+		"@bufferapp/components": "2.1.0"
   },
   "devDependencies": {
     "@storybook/addon-storyshots": "3.1.4",
@@ -32,5 +34,8 @@
     "eslint": "3.19.0",
     "jest": "19.0.2",
     "storybook-addon-a11y": "3.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

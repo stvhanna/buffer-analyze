@@ -25,17 +25,12 @@ exports[`Snapshots SummaryTable should render a "no data" state 1`] = `
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "1rem",
-                "fontWeight": 400,
+                "fontSize": "2rem",
+                "fontWeight": 600,
               }
             }
           >
-            Tweet performance 
-            for 
-            <span>
-              yesterday
-            </span>
-             compared to the previous period
+            Performance
           </span>
         </h2>
       </header>
@@ -149,17 +144,12 @@ exports[`Snapshots SummaryTable should render a loading state 1`] = `
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "1rem",
-                "fontWeight": 400,
+                "fontSize": "2rem",
+                "fontWeight": 600,
               }
             }
           >
-            Performance 
-            for 
-            <span>
-              yesterday
-            </span>
-             compared to the previous period
+            Performance
           </span>
         </h2>
       </header>
@@ -307,17 +297,12 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "1rem",
-                "fontWeight": 400,
+                "fontSize": "2rem",
+                "fontWeight": 600,
               }
             }
           >
-            Tweet performance 
-            for 
-            <span>
-              yesterday
-            </span>
-             compared to the previous period
+            Performance
           </span>
         </h2>
       </header>

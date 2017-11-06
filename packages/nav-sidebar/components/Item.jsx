@@ -15,7 +15,7 @@ import {
 } from '@bufferapp/components/lib/utils';
 
 const Item = ({ href, route, children, onClick, profileId, profileService }) => {
-  const active = href === route;
+  const active = href === '/' ? href === route : route.includes(href);
   const style = calculateStyles({
     default: {
       display: 'block',
