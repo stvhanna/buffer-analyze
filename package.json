@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "description": "📈📉",
   "scripts": {
-    "bootstrap": "lerna bootstrap --hoist",
+    "bootstrap": "yarn",
     "clean": "lerna clean",
     "test": "if [ -n \"$CI\" ]; then yarn run init; fi && yarn run lint && lerna run test",
     "test-update": "lerna run test-update",
-    "init": "yarn install && lerna bootstrap --loglevel verbose --hoist",
+    "init": "yarn install",
     "lint-branch": "git diff --name-only master... |  grep .jsx*$ | xargs eslint -c .eslintrc.json --stdin --quiet -f table",
     "lint-head": "git diff --name-only |  grep .jsx*$ | xargs eslint -c .eslintrc.json --stdin --quiet -f table",
     "lint": "yarn run lint-branch && yarn run lint-head",
@@ -15,6 +15,10 @@
     "publish": "echo \"will eventually run: lerna publish\"",
     "build": "webpack  --config ./packages/server/webpack.config.js --output-path=`pwd`"
   },
+	"private": true,
+	"workspaces": [
+		"packages/*"
+	],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bufferapp/buffer-analyze.git"
@@ -46,7 +50,7 @@
     "eslint-plugin-react": "6.10.3",
     "identity-obj-proxy": "3.0.0",
     "js-cookie": "2.1.4",
-    "lerna": "2.0.0-rc.5",
+    "lerna": "2.5.1",
     "less": "2.7.2",
     "less-loader": "4.0.5",
     "micro-rpc-client": "0.1.2",

@@ -38,6 +38,20 @@ const Header = styled.header`
   align-items: baseline;
 `;
 
+export const Table = ({ metrics }) =>
+  <ul style={gridStyle}>
+    {metrics.map(metric => <GridItem key={metric.label} metric={metric} />)}
+  </ul>;
+
+Table.propTypes = {
+  metrics: PropTypes.arrayOf(PropTypes.shape({
+    label: PropTypes.string,
+    value: PropTypes.number,
+    diff: PropTypes.number,
+  })).isRequired,
+};
+
+
 const SummaryTable = ({ metrics, loading, profileService, startDate, endDate }) => {
   let content = null;
   if (loading) {
@@ -45,11 +59,7 @@ const SummaryTable = ({ metrics, loading, profileService, startDate, endDate }) 
   } else if (metrics.length === 0) {
     content = <NoData />;
   } else {
-    content = (
-      <ul style={gridStyle}>
-        {metrics.map(metric => <GridItem key={metric.label} metric={metric} />)}
-      </ul>
-    );
+    content = <Table metrics={metrics} />;
   }
 
   return (

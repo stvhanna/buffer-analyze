@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
+import { action } from '@storybook/addon-actions';
 import ReportList from './index';
 
 
@@ -17,10 +18,11 @@ const mockReports = [{
 storiesOf('ReportList')
   .addDecorator(checkA11y)
   .add('loading state', () => (
-    <ReportList loading />
+    <ReportList loading selectReport={action('select report')} />
   ))
   .add('renders the reports collection in a list', () => (
     <ReportList
       reports={mockReports}
+      selectReport={action('select report')}
     />
   ));

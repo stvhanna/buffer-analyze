@@ -3,40 +3,74 @@
 exports[`Snapshots Report renders the report 1`] = `
 <span>
   <li
-    className="sc-bdVaJa jSkEYu"
+    className="sc-bdVaJa dCwyQQ"
   >
-    <span
+    <button
+      aria-label={null}
+      disabled={undefined}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
       style={
         Object {
-          "color": "#59626a",
-          "fontFamily": "\\"Open Sans\\", sans-serif",
-          "fontSize": "1.25rem",
-          "fontWeight": 600,
+          "background": "none",
+          "backgroundColor": "unset",
+          "border": "none",
+          "borderRadius": "unset",
+          "color": "unset",
+          "cursor": "pointer",
+          "display": "unset",
+          "fontFamily": "unset",
+          "fontSize": "unset",
+          "fontWeight": "unset",
+          "lineHeight": "unset",
+          "margin": "unset",
+          "outline": "none",
+          "padding": 0,
+          "transition": "unset",
+          "width": "100%",
         }
       }
     >
       <span
-        className="sc-bwzfXH inMSfv"
+        className="sc-bwzfXH kYzbBn"
       >
-        Weekly Sync Report
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1.25rem",
+              "fontWeight": 600,
+            }
+          }
+        >
+          <span
+            className="sc-htpNat byAsPi"
+          >
+            Weekly Sync Report
+          </span>
+        </span>
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          <span
+            className="sc-bxivhb hlPYmz"
+          >
+            October 11, 2017
+          </span>
+        </span>
       </span>
-    </span>
-    <span
-      style={
-        Object {
-          "color": "#59626a",
-          "fontFamily": "\\"Open Sans\\", sans-serif",
-          "fontSize": "1rem",
-          "fontWeight": 400,
-        }
-      }
-    >
-      <span
-        className="sc-htpNat fkvbHj"
-      >
-        October 11, 2017
-      </span>
-    </span>
+    </button>
   </li>
 </span>
 `;
@@ -61,79 +95,147 @@ exports[`Snapshots ReportList loading state 1`] = `
 exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
 <span>
   <ol
-    className="sc-bxivhb hEnmgW"
+    className="sc-ifAKCX bAoxEZ"
   >
     <li
-      className="sc-bdVaJa jSkEYu"
+      className="sc-bdVaJa dCwyQQ"
     >
-      <span
+      <button
+        aria-label={null}
+        disabled={undefined}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
         style={
           Object {
-            "color": "#59626a",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
-            "fontSize": "1.25rem",
-            "fontWeight": 600,
+            "background": "none",
+            "backgroundColor": "unset",
+            "border": "none",
+            "borderRadius": "unset",
+            "color": "unset",
+            "cursor": "pointer",
+            "display": "unset",
+            "fontFamily": "unset",
+            "fontSize": "unset",
+            "fontWeight": "unset",
+            "lineHeight": "unset",
+            "margin": "unset",
+            "outline": "none",
+            "padding": 0,
+            "transition": "unset",
+            "width": "100%",
           }
         }
       >
         <span
-          className="sc-bwzfXH inMSfv"
+          className="sc-bwzfXH kYzbBn"
         >
-          Weekly Sync Report
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1.25rem",
+                "fontWeight": 600,
+              }
+            }
+          >
+            <span
+              className="sc-htpNat byAsPi"
+            >
+              Weekly Sync Report
+            </span>
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            <span
+              className="sc-bxivhb hlPYmz"
+            >
+              November 8, 2017
+            </span>
+          </span>
         </span>
-      </span>
-      <span
-        style={
-          Object {
-            "color": "#59626a",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
-            "fontSize": "1rem",
-            "fontWeight": 400,
-          }
-        }
-      >
-        <span
-          className="sc-htpNat fkvbHj"
-        >
-          November 8, 2017
-        </span>
-      </span>
+      </button>
     </li>
     <li
-      className="sc-bdVaJa jSkEYu"
+      className="sc-bdVaJa dCwyQQ"
     >
-      <span
+      <button
+        aria-label={null}
+        disabled={undefined}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
         style={
           Object {
-            "color": "#59626a",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
-            "fontSize": "1.25rem",
-            "fontWeight": 600,
+            "background": "none",
+            "backgroundColor": "unset",
+            "border": "none",
+            "borderRadius": "unset",
+            "color": "unset",
+            "cursor": "pointer",
+            "display": "unset",
+            "fontFamily": "unset",
+            "fontSize": "unset",
+            "fontWeight": "unset",
+            "lineHeight": "unset",
+            "margin": "unset",
+            "outline": "none",
+            "padding": 0,
+            "transition": "unset",
+            "width": "100%",
           }
         }
       >
         <span
-          className="sc-bwzfXH inMSfv"
+          className="sc-bwzfXH kYzbBn"
         >
-          Client Social Media Campaign
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1.25rem",
+                "fontWeight": 600,
+              }
+            }
+          >
+            <span
+              className="sc-htpNat byAsPi"
+            >
+              Client Social Media Campaign
+            </span>
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            <span
+              className="sc-bxivhb hlPYmz"
+            >
+              October 11, 2017
+            </span>
+          </span>
         </span>
-      </span>
-      <span
-        style={
-          Object {
-            "color": "#59626a",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
-            "fontSize": "1rem",
-            "fontWeight": 400,
-          }
-        }
-      >
-        <span
-          className="sc-htpNat fkvbHj"
-        >
-          October 11, 2017
-        </span>
-      </span>
+      </button>
     </li>
   </ol>
 </span>

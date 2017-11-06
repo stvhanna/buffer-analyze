@@ -1,8 +1,10 @@
-import { push } from 'react-router-redux';
+import { push, LOCATION_CHANGE } from 'react-router-redux';
 import { actionTypes } from '@bufferapp/async-data-fetch';
 import { actions as profilesActions, actionTypes as profileActionTypes } from '@bufferapp/analyze-profile-selector';
+import { actions as reportActions } from '@bufferapp/report-list';
 
 const INSIGHTS_PATH_REGEX = /insights\/(\w+)\/(\w+)\/(.*)$/;
+const REPORTS_PATH_REGEX = /reports\/(.*)$/;
 const getProfileIdAndServiceFromRoute = (state) => {
   const currentRoute = state.router.location.pathname;
   const routeMatch = currentRoute.match(INSIGHTS_PATH_REGEX);
@@ -49,6 +51,12 @@ export default ({ dispatch, getState }) => next => (action) => {
       break;
     case profileActionTypes.SELECT_PROFILE:
       dispatch(push(getProfileRoute(getState(), action.id)));
+      break;
+
+    case LOCATION_CHANGE:
+      if (action.payload.pathname.match(REPORTS_PATH_REGEX)) {
+        dispatch(reportActions.viewReport(action.payload.pathname.match(REPORTS_PATH_REGEX)[1]));
+      }
       break;
     default:
       break;
