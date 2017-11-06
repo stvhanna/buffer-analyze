@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "description": "📈📉",
   "scripts": {
-    "bootstrap": "lerna bootstrap --hoist",
+    "bootstrap": "yarn",
     "clean": "lerna clean",
     "test": "if [ -n \"$CI\" ]; then yarn run init; fi && yarn run lint && lerna run test",
     "test-update": "lerna run test-update",
-    "init": "yarn install && lerna bootstrap --loglevel verbose --hoist",
+    "init": "yarn install",
     "lint-branch": "git diff --name-only master... |  grep .jsx*$ | xargs eslint -c .eslintrc.json --stdin --quiet -f table",
     "lint-head": "git diff --name-only |  grep .jsx*$ | xargs eslint -c .eslintrc.json --stdin --quiet -f table",
     "lint": "yarn run lint-branch && yarn run lint-head",
