@@ -1386,7 +1386,7 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
 exports[`Snapshots ReportsPage should render reports page 1`] = `
 <span>
   <div
-    className="sc-RefOD enAibU"
+    className="sc-iujRgT bHeljQ"
   >
     <div
       style={
@@ -1568,13 +1568,13 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
       </a>
     </div>
     <div
-      className="sc-iQKALj cxrBId"
+      className="sc-GMQeP hnfwnh"
     >
       <header
-        className="sc-hrWEMg kVYzHE"
+        className="sc-cQFLBn kHyciU"
       >
         <button
-          className="sc-ibxdXY hpfxac"
+          className="sc-bAeIUo kxjPWX"
           onClick={[Function]}
         >
           Back to Reports
@@ -1595,7 +1595,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
               className="bi-calendar"
             />
             <span>
-              Past 7 Days
+              From: 10/31/17 - To: 11/06/17
             </span>
             <span
               className="rightSide"
@@ -1603,7 +1603,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
               <span
                 className="dateRange"
               >
-                10/30/17 to 11/05/17
+                
               </span>
               <span
                 style={
@@ -1759,7 +1759,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
                   className="headerList"
                 >
                   <li
-                    className="headerListItem headerListItemActive"
+                    className="headerListItem headerListItemInactive"
                     data-tip={null}
                   >
                     <button
@@ -1829,7 +1829,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
                     </button>
                   </li>
                   <li
-                    className="headerListItem headerListItemInactive"
+                    className="headerListItem headerListItemActive"
                     data-tip={null}
                   >
                     <button
@@ -1884,7 +1884,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
         </div>
       </header>
       <div
-        className="sc-bwCtUz dHAzbG"
+        className="sc-exAgwC maWqS"
       >
         ...loading
       </div>
