@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from 'moment';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
 import createStore, { history } from '@bufferapp/analyze-store';
@@ -9,6 +10,8 @@ import {
 
 import ReportsPage from './index';
 
+const mockTimestamp = moment('2017-11-05').valueOf();
+Date.now = () => mockTimestamp;
 
 storiesOf('ReportsPage')
   .addDecorator(checkA11y)

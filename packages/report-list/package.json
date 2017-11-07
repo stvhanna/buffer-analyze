@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/report-list",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Report list package for Analyze",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,7 @@
     }
   },
   "dependencies": {
-    "@bufferapp/analyze-shared-components": "^0.2.0",
+    "@bufferapp/analyze-shared-components": "^0.4.0",
     "styled-components": "^2.2.1"
   },
   "devDependencies": {

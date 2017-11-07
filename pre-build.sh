@@ -1,4 +1,6 @@
 #!/bin/bash
+curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.3.2
+export PATH="$HOME/.yarn/bin:$PATH"
 yarn run init
 yarn run build
 

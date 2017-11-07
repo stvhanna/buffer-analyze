@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/summary-table",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Summary Table package for Insights/Overview",
   "main": "index.js",
   "scripts": {
@@ -21,15 +21,15 @@
   },
   "author": "mike@msanroman.io",
   "dependencies": {
-    "@bufferapp/add-report": "^0.3.0",
+    "@bufferapp/add-report": "^0.4.0",
     "@bufferapp/analyze-csv-export": "^0.1.0",
-    "@bufferapp/analyze-date-picker": "^0.3.0",
+    "@bufferapp/analyze-date-picker": "^0.4.0",
     "@bufferapp/analyze-png-export": "^0.1.0",
-    "@bufferapp/analyze-profile-selector": "^0.2.0",
-    "@bufferapp/analyze-shared-components": "^0.2.0",
+    "@bufferapp/analyze-profile-selector": "^0.4.0",
+    "@bufferapp/analyze-shared-components": "^0.4.0",
     "@bufferapp/async-data-fetch": "0.5.36-beta01",
     "@bufferapp/components": "0.5.28",
-    "@bufferapp/nav-sidebar": "^0.3.0",
+    "@bufferapp/nav-sidebar": "^0.4.0",
     "numeral": "2.0.6"
   },
   "devDependencies": {
