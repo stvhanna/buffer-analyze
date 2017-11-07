@@ -6,7 +6,7 @@ exports[`Snapshots App should render application 1`] = `
     style={
       Object {
         "display": "flex",
-        "height": "100%",
+        "height": "100vh",
       }
     }
   >
@@ -666,6 +666,7 @@ exports[`Snapshots App should render application 1`] = `
       style={
         Object {
           "flexGrow": 1,
+          "height": "100vh",
         }
       }
     >
@@ -683,6 +684,7 @@ exports[`Snapshots App should render application 1`] = `
             Object {
               "background": "#fff",
               "borderRight": "1px solid #e6ebef",
+              "boxSizing": "border-box",
               "display": "flex",
               "flexDirection": "column",
               "maxHeight": "100vh",
@@ -923,6 +925,7 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
         Object {
           "background": "#fff",
           "borderRight": "1px solid #e6ebef",
+          "boxSizing": "border-box",
           "display": "flex",
           "flexDirection": "column",
           "maxHeight": "100vh",
@@ -1126,8 +1129,6 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
     style={
       Object {
         "display": "flex",
-        "flexGrow": 1,
-        "height": "100%",
       }
     }
   >
@@ -1136,6 +1137,7 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
         Object {
           "background": "#fff",
           "borderRight": "1px solid #e6ebef",
+          "boxSizing": "border-box",
           "display": "flex",
           "flexDirection": "column",
           "maxHeight": "100vh",
@@ -1386,17 +1388,14 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
 exports[`Snapshots ReportsPage should render reports page 1`] = `
 <span>
   <div
-<<<<<<< HEAD
-    className="sc-kpOJdX iKubOM"
-=======
     className="sc-kGXeez ldpPAk"
->>>>>>> 5aa4fff2290954e98cd2e8935876425f56a3c3bb
   >
     <div
       style={
         Object {
           "background": "#fff",
           "borderRight": "1px solid #e6ebef",
+          "boxSizing": "border-box",
           "display": "flex",
           "flexDirection": "column",
           "maxHeight": "100vh",
@@ -1572,17 +1571,10 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
       </a>
     </div>
     <div
-<<<<<<< HEAD
-      className="sc-dxgOiQ gtKKlQ"
-    >
-      <header
-        className="sc-jKJlTe jSeAKj"
-=======
       className="sc-kpOJdX LsipW"
     >
       <header
         className="sc-ckVGcZ byWctv"
->>>>>>> 5aa4fff2290954e98cd2e8935876425f56a3c3bb
       >
         <button
           className="sc-bdVaJa eTEyQW"
@@ -1895,11 +1887,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
         </div>
       </header>
       <div
-<<<<<<< HEAD
-        className="sc-ckVGcZ hImKRA"
-=======
         className="sc-dxgOiQ gGVzZA"
->>>>>>> 5aa4fff2290954e98cd2e8935876425f56a3c3bb
       >
         ...loading
       </div>
