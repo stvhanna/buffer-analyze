@@ -2,6 +2,7 @@ const { method } = require('@bufferapp/micro-rpc');
 
 const RPC_ENDPOINTS = {
   'summary-table': require('../summary'), // eslint-disable-line global-require
+  'posts-summary': require('../postsSummary'), // eslint-disable-line global-require
 };
 
 const requestChartData = (chart, startDate, endDate, session) =>

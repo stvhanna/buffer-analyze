@@ -9,7 +9,11 @@ exports[`Snapshots Report renders a loading report 1`] = `
 exports[`Snapshots Report renders a report with summary table 1`] = `
 <span>
   <section
+<<<<<<< HEAD
     className="sc-gqjmRU hcmUZL"
+=======
+    className="sc-gZMcBi dfNeYM"
+>>>>>>> 5aa4fff2290954e98cd2e8935876425f56a3c3bb
   >
     <span
       style={
@@ -22,7 +26,11 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
       }
     >
       <h1
+<<<<<<< HEAD
         className="sc-VigVT cKtsFR"
+=======
+        className="sc-gqjmRU iGtJFC"
+>>>>>>> 5aa4fff2290954e98cd2e8935876425f56a3c3bb
       >
         Weekly Sync Report
       </h1>
@@ -37,13 +45,21 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         }
       >
         <span
+<<<<<<< HEAD
           className="sc-iwsKbI ebaISY"
+=======
+          className="sc-dnqmqq cyBbIy"
+>>>>>>> 5aa4fff2290954e98cd2e8935876425f56a3c3bb
         >
           Showing for dates
         </span>
          
         <span
+<<<<<<< HEAD
           className="sc-gZMcBi bMHQsL"
+=======
+          className="sc-iwsKbI ebSInR"
+>>>>>>> 5aa4fff2290954e98cd2e8935876425f56a3c3bb
         >
           January 27, 49385
            to 
@@ -52,7 +68,11 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
       </span>
     </span>
     <section
+<<<<<<< HEAD
       className="sc-gzVnrw eAQdKd"
+=======
+      className="sc-bZQynM dKDtFu"
+>>>>>>> 5aa4fff2290954e98cd2e8935876425f56a3c3bb
     >
       <h2
         style={
@@ -85,12 +105,20 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         }
       >
         <span
+<<<<<<< HEAD
           className="sc-htoDjs hkucKJ"
+=======
+          className="sc-gzVnrw eMydYi"
+>>>>>>> 5aa4fff2290954e98cd2e8935876425f56a3c3bb
         >
           Showing for accounts
         </span>
         <span
+<<<<<<< HEAD
           className="sc-dnqmqq fjaMWx"
+=======
+          className="sc-htoDjs eCjlmS"
+>>>>>>> 5aa4fff2290954e98cd2e8935876425f56a3c3bb
         >
            
         </span>
