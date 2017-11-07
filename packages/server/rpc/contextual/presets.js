@@ -4,7 +4,7 @@
 
 module.exports = {
   facebook: {
-    weekly_frequency_engagement: {
+    weekly_engagement: {
       label: 'When is it most effective to post?',
       description: 'Discover which days your audience engages the most with your content.',
       hideDate: true,
