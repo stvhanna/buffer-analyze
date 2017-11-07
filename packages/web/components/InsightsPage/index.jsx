@@ -10,6 +10,7 @@ import ProfileLoader from '@bufferapp/profile-loader';
 import TabNavigation from '@bufferapp/analyze-tabs';
 import PNGExportButton from '@bufferapp/analyze-png-export';
 import CSVExportButton from '@bufferapp/analyze-csv-export';
+import { white, mystic } from '@bufferapp/components/style/color';
 import PostsTab from '../PostsTab';
 import OverviewTab from '../OverviewTab';
 
@@ -19,25 +20,28 @@ const pageStyle = {
 
 const contentStyle = {
   flexGrow: 1,
-  flexDirection: 'row',
   height: '100vh',
   maxWidth: '100%',
+  display: 'flex',
+  minHeight: '100vh',
+  flexDirection: 'column',
 };
 
 const toolbarContainer = {
   display: 'flex',
   justifyContent: 'space-between',
-  background: '#FFFFFF',
+  background: `${white}`,
   padding: '0.75rem 0.5rem',
   marginbottom: '1rem',
-  borderBottom: '1px solid #E2E8ED',
+  borderBottom: `1px solid ${mystic}`,
   boxSizing: 'border-box',
 };
 
 const insightContainer = {
-  background: '#FAFAFA',
+  background: '#FAFAFA', // TODO: Need to add this color to buffer components
   overflowY: 'auto',
-  height: 'calc(100vh - 68px)', // TODO: Don't want this hardcoded
+  display: 'flex',
+  flex: 1,
 };
 
 const insightMaxWidth = {
@@ -46,16 +50,14 @@ const insightMaxWidth = {
   padding: '2.5rem',
 };
 
-const toolbarTabNavigation = {
-};
+const toolbarTabNavigation = {};
 
 const toolbarRight = {
   display: 'flex',
   justifyContent: 'flex-end',
 };
 
-const toolbarProfileSelector = {
-};
+const toolbarProfileSelector = {};
 
 const toolbarDatePicker = {
   marginLeft: '0.5rem',
