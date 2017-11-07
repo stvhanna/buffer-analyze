@@ -1,0 +1,41 @@
+{
+  "name": "@bufferapp/report",
+  "version": "0.3.0",
+  "description": "Report detail",
+  "main": "index.js",
+  "scripts": {
+    "start": "start-storybook -p 9001",
+    "lint": "eslint . --ignore-pattern coverage node_modules",
+    "test": "yarn run lint && sh ../../package_test.sh",
+    "test-watch": "jest --watch",
+    "test-update": "jest -u"
+  },
+  "author": "mike@msanroman.io",
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!@bufferapp/*)"
+    ],
+    "verbose": true,
+    "moduleNameMapper": {
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
+  },
+  "dependencies": {
+    "@bufferapp/analyze-date-picker": "^0.3.0",
+    "@bufferapp/analyze-shared-components": "^0.2.0",
+    "@bufferapp/components": "2.1.0",
+    "@bufferapp/report-list": "^0.3.0",
+    "@bufferapp/summary-table": "^0.3.0",
+    "styled-components": "^2.2.1"
+  },
+  "devDependencies": {
+    "@storybook/addon-storyshots": "3.1.4",
+    "@storybook/react": "3.1.3",
+    "eslint": "3.19.0",
+    "jest": "19.0.2",
+    "storybook-addon-a11y": "3.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,3 +1,4 @@
+import { push } from 'react-router-redux';
 import { connect } from 'react-redux';
 import ReportList from './components/ReportList';
 
@@ -5,6 +6,11 @@ import ReportList from './components/ReportList';
 export default connect(
   state => ({
     ...state.reportList,
+  }),
+  dispatch => ({
+    selectReport: (id) => {
+      dispatch(push(`/reports/${id}`));
+    },
   }),
 )(ReportList);
 

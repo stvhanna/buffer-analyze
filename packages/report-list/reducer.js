@@ -1,6 +1,8 @@
 import { actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-fetch';
 
-export const actionTypes = {};
+export const actionTypes = {
+  VIEW_REPORT: 'VIEW_REPORT',
+};
 
 const initialState = {
   reports: [],
@@ -22,4 +24,9 @@ export default (state = initialState, action) => {
   }
 };
 
-export const actions = {};
+export const actions = {
+  viewReport: id => ({
+    type: actionTypes.VIEW_REPORT,
+    id,
+  }),
+};
