@@ -619,9 +619,15 @@ async@^1.4.0, async@^1.5.0:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
 
-async@^2.1.2, async@^2.1.4:
+async@^2.1.2:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/async/-/async-2.5.0.tgz#843190fd6b7357a0b9e1c956edddd5ec8462b54d"
+  dependencies:
+    lodash "^4.14.0"
+
+async@^2.1.4:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/async/-/async-2.6.0.tgz#61a29abb6fcc026fea77e56d1c6ec53a795951f4"
   dependencies:
     lodash "^4.14.0"
 
@@ -668,8 +674,8 @@ axe-core@2.2.0:
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-2.2.0.tgz#00b410b3fc899207d4f2f8e3753cff150d34e4bb"
 
 axe-core@^2.0.7:
-  version "2.4.2"
-  resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-2.4.2.tgz#3156d914051ea32597e584071d9d653b66d1579b"
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-2.5.0.tgz#2f7c662c4d7d07cc8dc81f2f1d3d8288d8628039"
 
 babel-code-frame@^6.11.0, babel-code-frame@^6.22.0:
   version "6.22.0"

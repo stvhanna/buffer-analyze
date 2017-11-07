@@ -8,11 +8,11 @@ import {
 import {
   ChartStateNoData as NoData,
   ChartStateLoading as Loading,
+  ChartHeader,
   GridItem,
 } from '@bufferapp/analyze-shared-components';
 
 import AddReport from '@bufferapp/add-report';
-import styled from 'styled-components';
 
 import Title from '../Title';
 
@@ -31,12 +31,6 @@ const gridContainer = {
   position: 'relative',
   margin: '1rem 0 1.5rem',
 };
-
-const Header = styled.header`
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-`;
 
 export const Table = ({ metrics }) =>
   <ul style={gridStyle}>
@@ -64,10 +58,10 @@ const SummaryTable = ({ metrics, loading, profileService, startDate, endDate }) 
 
   return (
     <div>
-      <Header>
+      <ChartHeader>
         <Title profileService={profileService} startDate={startDate} endDate={endDate} />
         <AddReport chart="summary-table" />
-      </Header>
+      </ChartHeader>
       <div id="js-dom-to-png-summary" style={gridContainer}>
         {content}
       </div>

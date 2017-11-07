@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/nav-sidebar",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Nav sidebar for Analyze",
   "main": "index.js",
   "scripts": {
@@ -21,10 +21,10 @@
   },
   "author": "mike@msanroman.io",
   "dependencies": {
-    "@bufferapp/analyze-profile-selector": "^0.2.0",
+    "@bufferapp/analyze-profile-selector": "^0.4.0",
     "@bufferapp/async-data-fetch": "0.5.36-beta01",
     "@bufferapp/components": "2.1.0",
-    "@bufferapp/report-list": "^0.3.0"
+    "@bufferapp/report-list": "^0.4.0"
   },
   "devDependencies": {
     "@storybook/addon-storyshots": "3.1.4",

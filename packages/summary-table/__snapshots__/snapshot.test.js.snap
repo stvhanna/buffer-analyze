@@ -11,7 +11,13 @@ exports[`Snapshots SummaryTable should render a "no data" state 1`] = `
   >
     <div>
       <header
-        className="sc-bwzfXH hcRgMz"
+        style={
+          Object {
+            "alignItems": "baseline",
+            "display": "flex",
+            "justifyContent": "space-between",
+          }
+        }
       >
         <h2
           style={
@@ -130,7 +136,13 @@ exports[`Snapshots SummaryTable should render a loading state 1`] = `
   >
     <div>
       <header
-        className="sc-bwzfXH hcRgMz"
+        style={
+          Object {
+            "alignItems": "baseline",
+            "display": "flex",
+            "justifyContent": "space-between",
+          }
+        }
       >
         <h2
           style={
@@ -283,7 +295,13 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
   >
     <div>
       <header
-        className="sc-bwzfXH hcRgMz"
+        style={
+          Object {
+            "alignItems": "baseline",
+            "display": "flex",
+            "justifyContent": "space-between",
+          }
+        }
       >
         <h2
           style={

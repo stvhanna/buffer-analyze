@@ -9,7 +9,7 @@ exports[`Snapshots Report renders a loading report 1`] = `
 exports[`Snapshots Report renders a report with summary table 1`] = `
 <span>
   <section
-    className="sc-gqjmRU hcmUZL"
+    className="sc-gZMcBi dfNeYM"
   >
     <span
       style={
@@ -22,7 +22,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
       }
     >
       <h1
-        className="sc-VigVT cKtsFR"
+        className="sc-gqjmRU iGtJFC"
       >
         Weekly Sync Report
       </h1>
@@ -37,13 +37,13 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         }
       >
         <span
-          className="sc-iwsKbI ebaISY"
+          className="sc-dnqmqq cyBbIy"
         >
           Showing for dates
         </span>
          
         <span
-          className="sc-gZMcBi bMHQsL"
+          className="sc-iwsKbI ebSInR"
         >
           January 27, 49385
            to 
@@ -52,7 +52,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
       </span>
     </span>
     <section
-      className="sc-gzVnrw eAQdKd"
+      className="sc-bZQynM dKDtFu"
     >
       <h2
         style={
@@ -85,12 +85,12 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         }
       >
         <span
-          className="sc-htoDjs hkucKJ"
+          className="sc-gzVnrw eMydYi"
         >
           Showing for accounts
         </span>
         <span
-          className="sc-dnqmqq fjaMWx"
+          className="sc-htoDjs eCjlmS"
         >
            
         </span>
