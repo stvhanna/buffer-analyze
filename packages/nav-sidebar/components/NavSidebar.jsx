@@ -23,6 +23,7 @@ const sidebarStyle = {
   width: '200px',
   background: white,
   borderRight: `1px solid ${mystic}`,
+  boxSizing: 'border-box',
 };
 
 const NavSidebar = props => (
