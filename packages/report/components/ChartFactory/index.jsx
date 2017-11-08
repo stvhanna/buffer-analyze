@@ -17,7 +17,7 @@ const CHARTS = {
     chart: PostsSummary,
     title: PostsSummaryTitle,
   },
-  'average': {
+  average: {
     chart: AverageTable,
     title: AverageTitle,
   },

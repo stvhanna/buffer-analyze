@@ -41,6 +41,25 @@ export const Table = ({ metrics, timezone }) =>
     />)}
   </ul>;
 
+Table.propTypes = {
+  timezone: PropTypes.string.isRequired,
+  metrics: PropTypes.shape({
+    daily: PropTypes.arrayOf(PropTypes.shape({
+      day: PropTypes.string.isRequired,
+      metrics: PropTypes.arrayOf(PropTypes.shape({
+        diff: PropTypes.number.isRequired,
+        label: PropTypes.string.isRequired,
+        value: PropTypes.number.isRequired,
+      })),
+    })),
+    totals: PropTypes.arrayOf(PropTypes.shape({
+      label: PropTypes.string,
+      value: PropTypes.number,
+      diff: PropTypes.number,
+    })),
+  }).isRequired,
+};
+
 export const Title = () =>
   <h2 style={{ margin: '2rem 0 1rem' }}>
     <Text weight="bold" size="extra-large"> Average Performance </Text>
