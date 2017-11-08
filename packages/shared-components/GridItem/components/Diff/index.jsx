@@ -27,7 +27,7 @@ const Diff = ({ diff }) => {
   if (diff === null) {
     return null;
   }
-  let color = '#8D969E';
+  let color;
   let itemDiffStyle;
   if (diff > 0) {
     itemDiffStyle = {
@@ -41,6 +41,12 @@ const Diff = ({ diff }) => {
       color: '#FF1E1E',
     };
     color = 'torchRed';
+  } else {
+    itemDiffStyle = {
+      ...gridSummaryItemDiffContainer,
+      color: '#8D969E',
+    };
+    color = '#8D969E';
   }
 
   return (
