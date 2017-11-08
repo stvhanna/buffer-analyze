@@ -5,6 +5,7 @@ import {
 } from '@bufferapp/components';
 import { Table as SummaryTable, Title as SummaryTitle } from '@bufferapp/summary-table';
 import { Table as PostsSummary, Title as PostsSummaryTitle } from '@bufferapp/posts-summary-table';
+import { Table as AverageTable, Title as AverageTitle } from '@bufferapp/average-table';
 import styled from 'styled-components';
 
 const CHARTS = {
@@ -15,6 +16,10 @@ const CHARTS = {
   'posts-summary': {
     chart: PostsSummary,
     title: PostsSummaryTitle,
+  },
+  'average': {
+    chart: AverageTable,
+    title: AverageTitle,
   },
 };
 
