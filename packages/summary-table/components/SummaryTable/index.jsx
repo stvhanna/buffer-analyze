@@ -11,7 +11,7 @@ import {
   ChartStateLoading as Loading,
   ChartHeader,
   GridItem,
-} from '../../../shared-components';
+} from '@bufferapp/analyze-shared-components';
 
 import AddReport from '@bufferapp/add-report';
 
@@ -25,9 +25,7 @@ const gridStyle = {
 };
 
 const gridContainer = {
-  minHeight: '12rem',
   position: 'relative',
-  margin: '1rem 0 1.5rem',
   padding: '1.5rem',
 };
 

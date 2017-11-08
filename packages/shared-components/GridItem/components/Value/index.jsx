@@ -4,13 +4,11 @@ import Text from '@bufferapp/components/Text';
 
 import TruncatedNumber from '../../../TruncatedNumber';
 
-const baseMargin = 10;
 const headingColor = '#323b43';
 
 const gridSummaryItemValue = {
-  fontSize: '2em',
+  fontSize: '2.5rem',
   fontWeight: 600,
-  marginLeft: `${1.5 * baseMargin}px`,
   color: headingColor,
 };
 
