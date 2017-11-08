@@ -6,35 +6,32 @@ exports[`Snapshots Tabs a story 1`] = `
     id="tabs"
   >
     <div>
-      <div
+      <a
+        href="#"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
         style={
           Object {
-            "display": "inline-block",
-            "margin": "0 42px 0 0",
-            "minWidth": "60px",
-            "textAlign": "center",
-            "transform": "translate(0, 1px)",
+            "color": "#168eea",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "outline": "none",
+            "padding": "0",
+            "textDecoration": "none",
           }
         }
+        target="_self"
       >
-        <a
-          href="#"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
+        <span
           style={
             Object {
-              "color": "#168eea",
-              "display": "block",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "outline": "none",
-              "padding": "18px 13px 17px 13px",
-              "textDecoration": "none",
+              "borderRadius": "4px",
+              "display": "inline-block",
+              "padding": "0.75rem 1rem",
             }
           }
-          target="_self"
         >
           <span
             onMouseEnter={undefined}
@@ -44,8 +41,8 @@ exports[`Snapshots Tabs a story 1`] = `
               style={
                 Object {
                   "color": "#59626a",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "fontSize": "0.9rem",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
                   "fontWeight": 400,
                 }
               }
@@ -53,38 +50,35 @@ exports[`Snapshots Tabs a story 1`] = `
               Overview
             </span>
           </span>
-        </a>
-      </div>
-      <div
+        </span>
+      </a>
+      <a
+        href="#"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
         style={
           Object {
-            "borderBottom": "2px solid #168eea",
-            "display": "inline-block",
-            "margin": "0 42px 0 0",
-            "minWidth": "60px",
-            "textAlign": "center",
-            "transform": "translate(0, 1px)",
+            "color": "#168eea",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "outline": "none",
+            "padding": "0",
+            "textDecoration": "none",
           }
         }
+        target="_self"
       >
-        <a
-          href="#"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
+        <span
           style={
             Object {
-              "color": "#168eea",
-              "display": "block",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "outline": "none",
-              "padding": "18px 13px 17px 13px",
-              "textDecoration": "none",
+              "backgroundColor": "rgba(22, 142, 234, .1)",
+              "borderRadius": "4px",
+              "display": "inline-block",
+              "padding": "0.75rem 1rem",
             }
           }
-          target="_self"
         >
           <span
             onMouseEnter={undefined}
@@ -93,31 +87,18 @@ exports[`Snapshots Tabs a story 1`] = `
             <span
               style={
                 Object {
-                  "color": "#000",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "fontSize": "0.9rem",
-                  "fontWeight": 400,
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 700,
                 }
               }
             >
               Posts
             </span>
           </span>
-        </a>
-      </div>
-      <hr
-        style={
-          Object {
-            "background": "#e6ebef",
-            "border": "none",
-            "boxSizing": "border-box",
-            "height": "0.063rem",
-            "marginBottom": "0",
-            "marginTop": "0",
-            "width": "100%",
-          }
-        }
-      />
+        </span>
+      </a>
     </div>
   </div>
 </span>

@@ -6,7 +6,7 @@ exports[`Snapshots App should render application 1`] = `
     style={
       Object {
         "display": "flex",
-        "height": "100%",
+        "height": "100vh",
       }
     }
   >
@@ -666,6 +666,7 @@ exports[`Snapshots App should render application 1`] = `
       style={
         Object {
           "flexGrow": 1,
+          "height": "100vh",
         }
       }
     >
@@ -683,6 +684,7 @@ exports[`Snapshots App should render application 1`] = `
             Object {
               "background": "#fff",
               "borderRight": "1px solid #e6ebef",
+              "boxSizing": "border-box",
               "display": "flex",
               "flexDirection": "column",
               "maxHeight": "100vh",
@@ -923,6 +925,7 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
         Object {
           "background": "#fff",
           "borderRight": "1px solid #e6ebef",
+          "boxSizing": "border-box",
           "display": "flex",
           "flexDirection": "column",
           "maxHeight": "100vh",
@@ -1126,8 +1129,6 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
     style={
       Object {
         "display": "flex",
-        "flexGrow": 1,
-        "height": "100%",
       }
     }
   >
@@ -1136,6 +1137,7 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
         Object {
           "background": "#fff",
           "borderRight": "1px solid #e6ebef",
+          "boxSizing": "border-box",
           "display": "flex",
           "flexDirection": "column",
           "maxHeight": "100vh",
@@ -1393,6 +1395,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
         Object {
           "background": "#fff",
           "borderRight": "1px solid #e6ebef",
+          "boxSizing": "border-box",
           "display": "flex",
           "flexDirection": "column",
           "maxHeight": "100vh",
