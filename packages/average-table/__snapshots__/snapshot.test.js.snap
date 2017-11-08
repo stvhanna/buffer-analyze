@@ -10,26 +10,36 @@ exports[`Snapshots AverageTable should render a "no data" state 1`] = `
     }
   >
     <div>
-      <h2
+      <header
         style={
           Object {
-            "margin": "2rem 0 1rem",
+            "alignItems": "baseline",
+            "display": "flex",
+            "justifyContent": "space-between",
           }
         }
       >
-        <span
+        <h2
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "margin": "2rem 0 1rem",
             }
           }
         >
-           Average post performance 
-        </span>
-      </h2>
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "2rem",
+                "fontWeight": 600,
+              }
+            }
+          >
+             Average Performance 
+          </span>
+        </h2>
+      </header>
       <div
         id="js-dom-to-png-average"
         style={
@@ -125,26 +135,36 @@ exports[`Snapshots AverageTable should render a loading state 1`] = `
     }
   >
     <div>
-      <h2
+      <header
         style={
           Object {
-            "margin": "2rem 0 1rem",
+            "alignItems": "baseline",
+            "display": "flex",
+            "justifyContent": "space-between",
           }
         }
       >
-        <span
+        <h2
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "margin": "2rem 0 1rem",
             }
           }
         >
-           Average post performance 
-        </span>
-      </h2>
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "2rem",
+                "fontWeight": 600,
+              }
+            }
+          >
+             Average Performance 
+          </span>
+        </h2>
+      </header>
       <div
         id="js-dom-to-png-average"
         style={
@@ -274,26 +294,36 @@ exports[`Snapshots AverageTable should render the average table 1`] = `
     }
   >
     <div>
-      <h2
+      <header
         style={
           Object {
-            "margin": "2rem 0 1rem",
+            "alignItems": "baseline",
+            "display": "flex",
+            "justifyContent": "space-between",
           }
         }
       >
-        <span
+        <h2
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "margin": "2rem 0 1rem",
             }
           }
         >
-           Average post performance 
-        </span>
-      </h2>
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "2rem",
+                "fontWeight": 600,
+              }
+            }
+          >
+             Average Performance 
+          </span>
+        </h2>
+      </header>
       <div
         id="js-dom-to-png-average"
         style={
