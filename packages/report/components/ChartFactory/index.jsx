@@ -57,8 +57,8 @@ const ChartFactory = ({ charts }) =>
       {React.createElement(CHARTS[chart.chart_id].title)}
       <ProfileLegend profile={chart.profile} />
       {React.createElement(CHARTS[chart.chart_id].chart, {
-      ...chart,
-      timezone: chart.profile.timezone,
+        ...chart,
+        timezone: chart.profile.timezone,
       })}
     </Separator>
   ));
