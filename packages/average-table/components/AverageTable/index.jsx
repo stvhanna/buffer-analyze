@@ -9,8 +9,11 @@ import {
 import {
   ChartStateNoData as NoData,
   ChartStateLoading as Loading,
+  ChartHeader,
   GridItem,
 } from '@bufferapp/analyze-shared-components';
+
+import AddReport from '@bufferapp/add-report';
 
 const gridStyle = {
   display: 'flex',
@@ -28,30 +31,39 @@ const gridContainer = {
   margin: '1rem 0 1.5rem',
 };
 
-const AverageTable = ({ totals, loading, dailyData, timezone }) => {
+export const Table = ({ metrics, timezone }) =>
+  <ul style={gridStyle}>
+    {metrics.totals.map(metric => <GridItem
+      key={metric.label}
+      metric={metric}
+      dailyData={metrics.daily}
+      timezone={timezone}
+    />)}
+  </ul>;
+
+export const Title = () =>
+  <h2 style={{ margin: '2rem 0 1rem' }}>
+    <Text weight="bold" size="extra-large"> Average Performance </Text>
+  </h2>;
+
+const AverageTable = ({ metrics, loading, timezone }) => {
   let content = null;
   if (loading) {
     content = <Loading active text="Average loading..." />;
-  } else if (totals.length === 0) {
+  } else if (metrics.totals.length === 0) {
     content = <NoData />;
   } else {
     content = (
-      <ul style={gridStyle}>
-        {totals.map(metric => <GridItem
-          key={metric.label}
-          metric={metric}
-          dailyData={dailyData}
-          timezone={timezone}
-        />)}
-      </ul>
+      <Table metrics={metrics} timezone={timezone} />
     );
   }
 
   return (
     <div>
-      <h2 style={{ margin: '2rem 0 1rem' }}>
-        <Text> Average post performance </Text>
-      </h2>
+      <ChartHeader>
+        <Title />
+        <AddReport chart="average" />
+      </ChartHeader>
       <div id="js-dom-to-png-average" style={gridContainer}>
         {content}
       </div>
@@ -65,20 +77,22 @@ AverageTable.defaultProps = {
 
 AverageTable.propTypes = {
   loading: PropTypes.bool,
-  dailyData: PropTypes.arrayOf(PropTypes.shape({
-    day: PropTypes.string.isRequired,
-    metrics: PropTypes.arrayOf(PropTypes.shape({
-      diff: PropTypes.number.isRequired,
-      label: PropTypes.string.isRequired,
-      value: PropTypes.number.isRequired,
-    })),
-  })).isRequired,
   timezone: PropTypes.string.isRequired,
-  totals: PropTypes.arrayOf(PropTypes.shape({
-    label: PropTypes.string,
-    value: PropTypes.number,
-    diff: PropTypes.number,
-  })).isRequired,
+  metrics: PropTypes.shape({
+    daily: PropTypes.arrayOf(PropTypes.shape({
+      day: PropTypes.string.isRequired,
+      metrics: PropTypes.arrayOf(PropTypes.shape({
+        diff: PropTypes.number.isRequired,
+        label: PropTypes.string.isRequired,
+        value: PropTypes.number.isRequired,
+      })),
+    })),
+    totals: PropTypes.arrayOf(PropTypes.shape({
+      label: PropTypes.string,
+      value: PropTypes.number,
+      diff: PropTypes.number,
+    })),
+  }).isRequired,
 };
 
 export default AverageTable;
