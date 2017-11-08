@@ -8,7 +8,7 @@ const title = {
 
 const Title = () =>
   <h2 style={title}>
-    <Text weight="bold" size="extra-large">
+    <Text weight="bold" size="large">
       Performance
     </Text>
   </h2>

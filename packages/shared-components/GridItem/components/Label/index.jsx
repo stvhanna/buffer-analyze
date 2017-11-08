@@ -5,10 +5,9 @@ import Text from '@bufferapp/components/Text';
 const baseMargin = 10;
 const gridSummaryItemLabel = {
   display: 'block',
-  fontSize: '12px',
+  fontSize: '0.75rem',
   fontWeight: 600,
   marginTop: `${1.5 * baseMargin}px`,
-  marginLeft: `${1.5 * baseMargin}px`,
 };
 
 const Label = ({ tooltip, children }) =>

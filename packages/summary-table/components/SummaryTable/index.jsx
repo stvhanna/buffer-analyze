@@ -11,7 +11,7 @@ import {
   ChartStateLoading as Loading,
   ChartHeader,
   GridItem,
-} from '@bufferapp/analyze-shared-components';
+} from '../../../shared-components';
 
 import AddReport from '@bufferapp/add-report';
 
@@ -28,11 +28,11 @@ const gridContainer = {
   minHeight: '12rem',
   position: 'relative',
   margin: '1rem 0 1.5rem',
+  padding: '1.5rem',
 };
 
 const chartContainer = {
   background: `${white}`,
-  padding: '1rem',
   border: '1px solid #E2E8ED',
   boxShadow: '0px 0px 10px rgba(48, 71, 89, 0.05)',
   borderRadius: '5px',
@@ -55,7 +55,7 @@ Table.propTypes = {
 const SummaryTable = ({ metrics, loading, profileService, startDate, endDate }) => {
   let content = null;
   if (loading) {
-    content = <Loading active text="Summary loading..." />;
+    content = <Loading active text="Summary loading YAY..." />;
   } else if (metrics.length === 0) {
     content = <NoData />;
   } else {
