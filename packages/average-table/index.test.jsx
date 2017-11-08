@@ -20,6 +20,9 @@ describe('AverageTable', () => {
         loading: true,
         metrics: { totals: [], daily: [] },
       },
+      i18n: {
+        translations: {},
+      },
       profiles: {
         profiles: mockProfiles,
         selectedProfileId: mockProfiles[0].id,

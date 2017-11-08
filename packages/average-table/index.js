@@ -9,16 +9,16 @@ function getSelectedProfileTimezone({ profiles, selectedProfileId }) {
 // default export = container
 function mapStateToProps (state) {
   return {
-    dailyData: state.average.metrics.daily,
     loading: state.average.loading,
     timezone: getSelectedProfileTimezone(state.profiles),
-    totals: state.average.metrics.totals,
+    metrics: state.average.metrics,
   };
 }
 export default connect(
   mapStateToProps,
 )(AverageTable);
 
+export { Table, Title } from './components/AverageTable';
 // export reducer, actions and action types
 export reducer, { actions, actionTypes } from './reducer';
 export middleware from './middleware';
