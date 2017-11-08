@@ -69,7 +69,7 @@ describe('rpc/hourly', () => {
       startDate,
       endDate,
       profileId,
-      selectedMetric
+      selectedMetric,
     }, session);
 
     shouldCallHourlyTotalsEndpointWith(profileId, token, startDate, endDate);
@@ -90,7 +90,7 @@ describe('rpc/hourly', () => {
       startDate,
       endDate,
       profileId,
-      secondaryMetric
+      secondaryMetric,
     }, session);
 
     shouldCallHourlyTotalsEndpointWith(profileId, token, startDate, endDate);
