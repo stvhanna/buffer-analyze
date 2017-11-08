@@ -8,6 +8,21 @@ describe('actions', () => {
       type: actionTypes.CREATE_REPORT,
       name,
       chart_id: chartId,
+      state: {},
+    });
+  });
+
+  it('createReport triggers CREATE_REPORT and passes state if provided', () => {
+    const name = 'Weekly Sync';
+    const chartId = 'summary-table';
+    const state = {
+      key: 'value',
+    };
+    expect(actions.createReport(name, chartId, state)).toEqual({
+      type: actionTypes.CREATE_REPORT,
+      name,
+      state,
+      chart_id: chartId,
     });
   });
 });
