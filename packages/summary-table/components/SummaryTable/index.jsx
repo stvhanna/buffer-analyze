@@ -1,14 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {
-  geyser,
-  white,
-} from '@bufferapp/components/style/color';
+import { white } from '@bufferapp/components/style/color';
 
 import {
   ChartStateNoData as NoData,
   ChartStateLoading as Loading,
+  ChartCard,
   ChartHeader,
   GridItem,
 } from '@bufferapp/analyze-shared-components';
@@ -27,13 +25,6 @@ const gridStyle = {
 const gridContainer = {
   position: 'relative',
   padding: '1.5rem',
-};
-
-const chartContainer = {
-  background: `${white}`,
-  border: '1px solid #E2E8ED',
-  boxShadow: '0px 0px 10px rgba(48, 71, 89, 0.05)',
-  borderRadius: '5px',
 };
 
 export const Table = ({ metrics }) =>
@@ -61,7 +52,7 @@ const SummaryTable = ({ metrics, loading, profileService, startDate, endDate }) 
   }
 
   return (
-    <div style={chartContainer}>
+    <ChartCard>
       <ChartHeader>
         <Title profileService={profileService} startDate={startDate} endDate={endDate} />
         <AddReport chart="summary-table" />
@@ -69,7 +60,7 @@ const SummaryTable = ({ metrics, loading, profileService, startDate, endDate }) 
       <div id="js-dom-to-png-summary" style={gridContainer}>
         {content}
       </div>
-    </div>
+    </ChartCard>
   );
 };
 

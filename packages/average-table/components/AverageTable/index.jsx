@@ -2,19 +2,21 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Text from '@bufferapp/components/Text';
-import {
-  white,
-  geyser,
-} from '@bufferapp/components/style/color';
+import { white } from '@bufferapp/components/style/color';
 
 import {
   ChartStateNoData as NoData,
   ChartStateLoading as Loading,
+  ChartCard,
   ChartHeader,
   GridItem,
 } from '@bufferapp/analyze-shared-components';
 
 import AddReport from '@bufferapp/add-report';
+
+
+console.log('ChartCard', ChartCard);
+console.log('ChartHeader', ChartHeader);
 
 const gridStyle = {
   display: 'flex',
@@ -26,13 +28,6 @@ const gridStyle = {
 const gridContainer = {
   position: 'relative',
   padding: '1.5rem',
-};
-
-const chartContainer = {
-  background: `${white}`,
-  border: '1px solid #E2E8ED',
-  boxShadow: '0px 0px 10px rgba(48, 71, 89, 0.05)',
-  borderRadius: '5px',
 };
 
 export const Table = ({ metrics, timezone }) =>
@@ -82,7 +77,7 @@ const AverageTable = ({ metrics, loading, timezone }) => {
   }
 
   return (
-    <div style={chartContainer}>
+    <ChartCard>
       <ChartHeader>
         <Title />
         <AddReport chart="average" />
@@ -90,7 +85,7 @@ const AverageTable = ({ metrics, loading, timezone }) => {
       <div id="js-dom-to-png-average" style={gridContainer}>
         {content}
       </div>
-    </div>
+    </ChartCard>
   );
 };
 
