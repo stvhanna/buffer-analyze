@@ -3,10 +3,11 @@ export const actionTypes = {
 };
 
 export const actions = {
-  createReport(name, chartId) {
+  createReport(name, chartId, state = {}) {
     return {
       type: actionTypes.CREATE_REPORT,
       name,
+      state,
       chart_id: chartId,
     };
   },
