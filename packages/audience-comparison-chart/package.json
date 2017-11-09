@@ -22,9 +22,9 @@
   "author": "tik.hakobyan@gmail.com",
   "dependencies": {
     "@bufferapp/async-data-fetch": "0.5.36-beta01",
-    "@bufferapp/analyze-date-picker": "^0.1.0",
-    "@bufferapp/analyze-profile-selector": "^0.1.0",
-    "@bufferapp/analyze-shared-components": "^0.1.0",
+    "@bufferapp/analyze-date-picker": "^0.7.1",
+    "@bufferapp/analyze-profile-selector": "^0.7.1",
+    "@bufferapp/analyze-shared-components": "^0.7.1",
     "@bufferapp/analyze-png-export": "^0.1.0",
     "@bufferapp/analyze-csv-export": "^0.1.0",
     "react-highcharts": "^12.0.0",

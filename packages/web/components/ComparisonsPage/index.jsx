@@ -9,10 +9,6 @@ import ProfileSelector from '@bufferapp/analyze-profile-selector';
 import Divider from '@bufferapp/components/Divider';
 import AudienceComparisonChart from '@bufferapp/audience-comparison-chart';
 import styled from 'styled-components';
-import {
-  Tabs,
-  Tab,
-} from '@bufferapp/publish-shared-components';
 
 const pageStyle = {
   display: 'flex',
@@ -49,13 +45,6 @@ const ComparisonsPage = ({
   <div style={pageStyle}>
     <NavSidebar route={location.pathname} />
     <ProfileLoader>
-      <div id="tabs">
-        <Tabs
-          selectedTabId={'performance'}
-        >
-          <Tab tabId={'performance'}>Performance</Tab>
-        </Tabs>
-      </div>
       <div style={contentStyle}>
         <div style={profileSelectorContainer}>
           <ProfileSelector />
