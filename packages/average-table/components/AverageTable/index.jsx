@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Text from '@bufferapp/components/Text';
-import { white } from '@bufferapp/components/style/color';
 
 import {
   ChartStateNoData as NoData,
@@ -13,10 +12,6 @@ import {
 } from '@bufferapp/analyze-shared-components';
 
 import AddReport from '@bufferapp/add-report';
-
-
-console.log('ChartCard', ChartCard);
-console.log('ChartHeader', ChartHeader);
 
 const gridStyle = {
   display: 'flex',

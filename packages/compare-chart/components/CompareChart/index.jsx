@@ -8,6 +8,8 @@ import {
 import {
   ChartStateNoData as NoData,
   ChartStateLoading as Loading,
+  ChartCard,
+  ChartHeader,
   ModeToggle,
   MetricsDropdown,
 } from '@bufferapp/analyze-shared-components';
@@ -53,7 +55,7 @@ const CompareChart = ({
   let header = null;
   let footer = null;
   if (loading) {
-    content = <Loading active text="Compare chart loading..." />;
+    content = <Loading active noBorder text="Compare chart loading..." />;
   } else if (dailyData.length === 0) {
     content = <NoData />;
   } else {
@@ -101,26 +103,25 @@ const CompareChart = ({
   const containerStyle = {
     padding: '0',
     margin: '0 auto',
-    borderRadius: '2px',
-    border: `solid 1px ${geyser}`,
-    minHeight: '12rem',
     position: 'relative',
   };
 
   if (loading || dailyData.length === 0) delete containerStyle.border;
 
   return (
-    <div style={{ margin: '0 0 1.5rem' }}>
-      <Title
-        startDate={getStartDate(dailyData)}
-        endDate={getEndDate(dailyData)}
-      />
+    <ChartCard>
+      <ChartHeader>
+        <Title
+          startDate={getStartDate(dailyData)}
+          endDate={getEndDate(dailyData)}
+        />
+      </ChartHeader>
       <div style={containerStyle}>
         {header}
         {content}
       </div>
       {footer}
-    </div>
+    </ChartCard>
   );
 };
 

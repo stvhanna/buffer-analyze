@@ -7,6 +7,7 @@ const style = {
   border: '1px solid #E2E8ED',
   boxShadow: '0px 0px 10px rgba(48, 71, 89, 0.05)',
   borderRadius: '5px',
+  margin: '0 0 2rem',
 };
 
 const ChartCard = ({ children }) =>

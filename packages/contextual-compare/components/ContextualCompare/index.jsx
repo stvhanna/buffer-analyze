@@ -9,6 +9,8 @@ import {
 import {
   ChartStateNoData as NoData,
   ChartStateLoading as Loading,
+  ChartCard,
+  ChartHeader,
 } from '@bufferapp/analyze-shared-components';
 
 import Title from '../Title';
@@ -21,20 +23,24 @@ const ContextualCompare = ({
   data,
   loading,
   ...props
-}) => (<div style={{ margin: '0 0 1.5rem' }}>
-  {data.length > 1 && !loading && <Title dailyData={data} />}
-  <div className={className}>
-    {loading && <Loading active text="Engagement & Audience chart loading..." />}
-    {data.length === 0 && !loading && <NoData />}
-    {data.length > 1 && !loading && <div>
-      <Header {...props} />
-      <div id="js-dom-to-png-contextual">
-        <Chart {...props} data={data} />
-        <Footer {...props} />
-      </div>
-    </div>}
-  </div>
-</div>);
+}) => (
+  <ChartCard>
+    <ChartHeader>
+      <Title dailyData={data} />
+    </ChartHeader>
+    <div className={className}>
+      {loading && <Loading active noBorder text="Engagement & Audience chart loading..." />}
+      {data.length === 0 && !loading && <NoData />}
+      {data.length > 1 && !loading && <div>
+        <Header {...props} />
+        <div id="js-dom-to-png-contextual">
+          <Chart {...props} data={data} />
+          <Footer {...props} />
+        </div>
+      </div>}
+    </div>
+  </ChartCard>
+);
 
 ContextualCompare.defaultProps = {
   loading: false,
@@ -55,11 +61,6 @@ ContextualCompare.propTypes = {
 const ContextualCompareStyled = styled(ContextualCompare)`
   margin: 0 auto;
   padding: 1.25rem;
-  border-radius: 2px;
-  border: solid
-    ${({ loading, data }) => (loading || data.length === 0 ? '0' : '1px')}
-    ${geyser};
-  min-height: 12rem;
   position: relative;
 `;
 
