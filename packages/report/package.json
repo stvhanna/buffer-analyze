@@ -29,6 +29,7 @@
     "@bufferapp/posts-summary-table": "^0.7.1",
     "@bufferapp/report-list": "^0.7.1",
     "@bufferapp/summary-table": "^0.7.1",
+    "@bufferapp/top-posts-table": "^0.7.1",
     "styled-components": "^2.2.1"
   },
   "devDependencies": {

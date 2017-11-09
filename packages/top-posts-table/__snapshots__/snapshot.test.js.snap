@@ -4006,29 +4006,36 @@ exports[`Snapshots TopPostsTable should render a "no data" state 1`] = `
     }
   >
     <div>
-      <h2
+      <header
         style={
           Object {
-            "margin": "2rem 0 0",
+            "alignItems": "baseline",
+            "display": "flex",
+            "justifyContent": "space-between",
           }
         }
       >
-        <span
+        <h2
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "margin": "2rem 0 0",
             }
           }
         >
-          Your top posts for 
-          <span>
-            yesterday
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1.25rem",
+                "fontWeight": 600,
+              }
+            }
+          >
+            Top Posts
           </span>
-        </span>
-      </h2>
+        </h2>
+      </header>
       <div
         style={
           Object {
@@ -4122,29 +4129,36 @@ exports[`Snapshots TopPostsTable should render a loading state 1`] = `
     }
   >
     <div>
-      <h2
+      <header
         style={
           Object {
-            "margin": "2rem 0 0",
+            "alignItems": "baseline",
+            "display": "flex",
+            "justifyContent": "space-between",
           }
         }
       >
-        <span
+        <h2
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "margin": "2rem 0 0",
             }
           }
         >
-          Your top posts for 
-          <span>
-            yesterday
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1.25rem",
+                "fontWeight": 600,
+              }
+            }
+          >
+            Top Posts
           </span>
-        </span>
-      </h2>
+        </h2>
+      </header>
       <div
         style={
           Object {
@@ -4272,29 +4286,36 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
     }
   >
     <div>
-      <h2
+      <header
         style={
           Object {
-            "margin": "2rem 0 0",
+            "alignItems": "baseline",
+            "display": "flex",
+            "justifyContent": "space-between",
           }
         }
       >
-        <span
+        <h2
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "margin": "2rem 0 0",
             }
           }
         >
-          Your top posts for 
-          <span>
-            yesterday
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1.25rem",
+                "fontWeight": 600,
+              }
+            }
+          >
+            Top Posts
           </span>
-        </span>
-      </h2>
+        </h2>
+      </header>
       <div
         style={
           Object {
@@ -6533,29 +6554,36 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
     }
   >
     <div>
-      <h2
+      <header
         style={
           Object {
-            "margin": "2rem 0 0",
+            "alignItems": "baseline",
+            "display": "flex",
+            "justifyContent": "space-between",
           }
         }
       >
-        <span
+        <h2
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "margin": "2rem 0 0",
             }
           }
         >
-          Your top posts for 
-          <span>
-            yesterday
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1.25rem",
+                "fontWeight": 600,
+              }
+            }
+          >
+            Top Posts
           </span>
-        </span>
-      </h2>
+        </h2>
+      </header>
       <div
         style={
           Object {

@@ -78,9 +78,9 @@ storiesOf('TopPostsTable')
       }}
     >
       <TopPostsTable
-        profileTimezone={'America/Los_Angeles'}
+        timezone={'America/Los_Angeles'}
         profileService={'facebook'}
-        topPosts={topPosts}
+        metrics={topPosts}
         selectMetric={action('selectMetric')}
         selectedMetric={{
           key: 'post_impressions',
@@ -100,9 +100,9 @@ storiesOf('TopPostsTable')
       }}
     >
       <TopPostsTable
-        profileTimezone={'America/Los_Angeles'}
+        timezone={'America/Los_Angeles'}
         profileService={'facebook'}
-        topPosts={topPosts}
+        metrics={topPosts}
         selectMetric={action('selectMetric')}
         selectedMetric={{}}
         toggleDropdown={action('toggleDropdown')}
@@ -119,10 +119,10 @@ storiesOf('TopPostsTable')
       }}
     >
       <TopPostsTable
-        profileTimezone={'America/Los_Angeles'}
+        timezone={'America/Los_Angeles'}
         profileService={'facebook'}
         loading
-        topPosts={[]}
+        metrics={[]}
         selectMetric={action('selectMetric')}
         selectedMetric={{
           key: 'post_impressions',
@@ -142,9 +142,9 @@ storiesOf('TopPostsTable')
       }}
     >
       <TopPostsTable
-        profileTimezone={'America/Los_Angeles'}
+        timezone={'America/Los_Angeles'}
         profileService={'facebook'}
-        topPosts={[]}
+        metrics={[]}
         selectMetric={action('selectMetric')}
         selectedMetric={{
           key: 'post_impressions',

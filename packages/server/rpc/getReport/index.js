@@ -5,6 +5,7 @@ const RPC_ENDPOINTS = {
   'posts-summary': require('../postsSummary'), // eslint-disable-line global-require
   average: require('../average'), // eslint-disable-line global-require
   'hourly-engagements': require('../hourly'), // eslint-disable-line global-require
+  'top-posts': require('../topPosts'), // eslint-disable-line global-require
 };
 
 const requestChartData = (chart, startDate, endDate, session) =>
