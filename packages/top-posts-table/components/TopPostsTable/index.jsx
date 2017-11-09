@@ -177,7 +177,7 @@ const TopPostsTable = (props) => {
           chart="top-posts"
           state={{
             descending: isDescendingSelected,
-            sortBy: selectedMetric,
+            sortBy: selectedMetric.apiKey,
             limit: activePostsCount,
           }}
         />
