@@ -83,13 +83,13 @@ module.exports = method(
       method: 'POST',
       strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
       body: {
-        profile_id: profileId,
+        profiles: [profileId],
         start_date: dateRange.start,
         end_date: dateRange.end,
       },
       json: true,
     }).then(({ response }) => (
       formatData(response, profileService)
-    ));
+    )).catch(err => console.log(err));
   },
 );
