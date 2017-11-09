@@ -9,11 +9,12 @@ import ComparisonsPage from '../ComparisonsPage';
 
 const appStyle = {
   display: 'flex',
-  height: '100%',
+  height: '100vh',
 };
 
 const contentStyle = {
   flexGrow: 1,
+  height: '100vh',
 };
 
 export default () =>
