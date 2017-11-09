@@ -25,7 +25,7 @@ const getProfileIdAndServiceFromRoute = (state) => {
     ] = routeMatch;
     data = [profileId, service];
   } else {
-    data = false;
+    data = null;
   }
   return data;
 };
