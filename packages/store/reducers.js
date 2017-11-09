@@ -41,7 +41,6 @@ export default combineReducers({
   compare: compareChartReducer,
   reportList: reportListReducer,
   contextual: contextualCompareReducer,
-  audienceComparison: audienceComparisonReducer,
   report: reportReducer,
   audienceComparison: audienceComparisonReducer,
 });

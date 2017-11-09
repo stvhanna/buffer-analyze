@@ -5,13 +5,13 @@ import { actions } from './reducer';
 
 // default export = container
 export default connect(
-  state => ({
-    loading: state.date.loading,
+  (state, ownProps) => ({
+    loading: ownProps.staticData ? false : state.date.loading,
     startDate: state.date.startDate,
     endDate: state.date.endDate,
     isOpen: state.date.open,
     calendarOpen: state.date.calendarOpen,
-    minDate: state.date.minDate,
+    minDate: ownProps.staticData ? null : state.date.minDate,
     maxDate: state.date.maxDate,
     month: state.date.month,
     // add state here
