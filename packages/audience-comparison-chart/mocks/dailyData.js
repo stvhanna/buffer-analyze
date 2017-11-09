@@ -2,7 +2,7 @@ export default [
   {
     dailyData: [
       {
-        day: '1504137600000',
+        day: 1504137600000,
         metric: {
           label: 'Fans',
           value: 50,
@@ -10,7 +10,7 @@ export default [
         },
       },
       {
-        day: '1504224000000',
+        day: 1504224000000,
         metric: {
           label: 'Fans',
           value: 100,
@@ -18,7 +18,7 @@ export default [
         },
       },
       {
-        day: '1504310400000',
+        day: 1504310400000,
         metric: {
           label: 'Fans',
           value: 150,
@@ -26,7 +26,7 @@ export default [
         },
       },
       {
-        day: '1504396800000',
+        day: 1504396800000,
         metric: {
           label: 'Fans',
           value: 200,
@@ -34,7 +34,7 @@ export default [
         },
       },
       {
-        day: '1504483200000',
+        day: 1504483200000,
         metric: {
           label: 'Fans',
           value: 300,
@@ -42,7 +42,7 @@ export default [
         },
       },
       {
-        day: '1504569600000',
+        day: 1504569600000,
         metric: {
           label: 'Fans',
           value: 400,
@@ -50,7 +50,7 @@ export default [
         },
       },
       {
-        day: '1504656000000',
+        day: 1504656000000,
         metric: {
           label: 'Fans',
           value: 450,
@@ -66,7 +66,7 @@ export default [
   {
     dailyData: [
       {
-        day: '1504137600000',
+        day: 1504137600000,
         metric: {
           label: 'Fans',
           value: 200,
@@ -74,7 +74,7 @@ export default [
         },
       },
       {
-        day: '1504224000000',
+        day: 1504224000000,
         metric: {
           label: 'Fans',
           value: 100,
@@ -82,7 +82,7 @@ export default [
         },
       },
       {
-        day: '1504310400000',
+        day: 1504310400000,
         metric: {
           label: 'Fans',
           value: 500,
@@ -90,7 +90,7 @@ export default [
         },
       },
       {
-        day: '1504396800000',
+        day: 1504396800000,
         metric: {
           label: 'Fans',
           value: 400,
@@ -98,7 +98,7 @@ export default [
         },
       },
       {
-        day: '1504483200000',
+        day: 1504483200000,
         metric: {
           label: 'Fans',
           value: 800,
@@ -106,7 +106,7 @@ export default [
         },
       },
       {
-        day: '1504569600000',
+        day: 1504569600000,
         metric: {
           label: 'Fans',
           value: 900,
@@ -114,7 +114,7 @@ export default [
         },
       },
       {
-        day: '1504656000000',
+        day: 1504656000000,
         metric: {
           label: 'Fans',
           value: 600,

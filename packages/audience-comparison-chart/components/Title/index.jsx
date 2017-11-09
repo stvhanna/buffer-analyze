@@ -8,7 +8,7 @@ const TitleWrapper = styled.h2`
 
 const Title = () =>
   <TitleWrapper>
-    <Text>
+    <Text weight="bold" size="extra-large">
       Audience comparison
     </Text>
   </TitleWrapper>

@@ -18,8 +18,8 @@ exports[`Snapshots AudienceComparisonChart should render a "no data" state 1`] =
             Object {
               "color": "#59626a",
               "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "fontSize": "2rem",
+              "fontWeight": 600,
             }
           }
         >
@@ -122,8 +122,8 @@ exports[`Snapshots AudienceComparisonChart should render a loading state 1`] = `
             Object {
               "color": "#59626a",
               "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "fontSize": "2rem",
+              "fontWeight": 600,
             }
           }
         >
@@ -260,8 +260,8 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
             Object {
               "color": "#59626a",
               "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "fontSize": "2rem",
+              "fontWeight": 600,
             }
           }
         >
@@ -320,78 +320,6 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
                   <div
                     className="sc-EHOje enMLlg"
                   >
-                    <div
-                      style={
-                        Object {
-                          "background": "rgba(50, 59, 67, 0.1)",
-                          "borderRadius": "50%",
-                          "height": "16px",
-                          "marginRight": "10px",
-                          "position": "relative",
-                          "width": "16px",
-                        }
-                      }
-                    >
-                      <img
-                        alt=""
-                        src="https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/10403026_1055367724535674_7855796462569708170_n.png?oh=39ea3ae01610ba482316d4c87ca1c14c&oe=59B58B81"
-                        style={
-                          Object {
-                            "borderRadius": "50%",
-                            "height": "16px",
-                            "marginBottom": undefined,
-                            "marginTop": undefined,
-                            "maxHeight": undefined,
-                            "maxWidth": undefined,
-                            "minHeight": undefined,
-                            "minWidth": undefined,
-                            "objectFit": undefined,
-                            "width": "16px",
-                          }
-                        }
-                      />
-                      <div
-                        style={
-                          Object {
-                            "background": "#fff",
-                            "borderRadius": "50%",
-                            "height": "8px",
-                            "left": "8px",
-                            "position": "absolute",
-                            "top": "8px",
-                            "width": "8px",
-                          }
-                        }
-                      >
-                        <svg
-                          height="100%"
-                          style={
-                            Object {
-                              "fill": "#3b5998",
-                              "height": "100%",
-                              "width": "100%",
-                            }
-                          }
-                          version="1.1"
-                          viewBox="0 0 16 16"
-                          width="100%"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlnsXlink="http://www.w3.org/1999/xlink"
-                        >
-                          <g
-                            className="facebook"
-                          >
-                            <g
-                              fillRule="evenodd"
-                            >
-                              <path
-                                d="M0,8 C0,3.581722 3.59071231,0 8,0 L8,0 C12.418278,0 16,3.59071231 16,8 L16,8 C16,12.418278 12.4092877,16 8,16 L8,16 C3.581722,16 0,12.4092877 0,8 L0,8 Z M7.18233349,12 L7.18233349,8.3508456 L6,8.3508456 L6,6.92867987 L7.18233349,6.92867987 L7.18233349,5.87988561 C7.18233349,4.66274759 7.89803602,4 8.94344305,4 C9.44416966,4 9.8745294,4.03873177 10,4.0560322 L10,5.32800198 L9.27491523,5.32835505 C8.70640526,5.32835505 8.59633378,5.60893973 8.59633378,6.0206899 L8.59633378,6.92867987 L9.95220491,6.92867987 L9.77564184,8.3508456 L8.59633378,8.3508456 L8.59633378,12 L7.18233349,12 Z"
-                              />
-                            </g>
-                          </g>
-                        </svg>
-                      </div>
-                    </div>
                     <div
                       className="sc-bZQynM fqsBLH"
                     >
@@ -578,78 +506,6 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
                     className="sc-EHOje enMLlg"
                   >
                     <div
-                      style={
-                        Object {
-                          "background": "rgba(50, 59, 67, 0.1)",
-                          "borderRadius": "50%",
-                          "height": "16px",
-                          "marginRight": "10px",
-                          "position": "relative",
-                          "width": "16px",
-                        }
-                      }
-                    >
-                      <img
-                        alt=""
-                        src="https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/10403026_1055367724535674_7855796462569708170_n.png?oh=39ea3ae01610ba482316d4c87ca1c14c&oe=59B58B81"
-                        style={
-                          Object {
-                            "borderRadius": "50%",
-                            "height": "16px",
-                            "marginBottom": undefined,
-                            "marginTop": undefined,
-                            "maxHeight": undefined,
-                            "maxWidth": undefined,
-                            "minHeight": undefined,
-                            "minWidth": undefined,
-                            "objectFit": undefined,
-                            "width": "16px",
-                          }
-                        }
-                      />
-                      <div
-                        style={
-                          Object {
-                            "background": "#fff",
-                            "borderRadius": "50%",
-                            "height": "8px",
-                            "left": "8px",
-                            "position": "absolute",
-                            "top": "8px",
-                            "width": "8px",
-                          }
-                        }
-                      >
-                        <svg
-                          height="100%"
-                          style={
-                            Object {
-                              "fill": "#3b5998",
-                              "height": "100%",
-                              "width": "100%",
-                            }
-                          }
-                          version="1.1"
-                          viewBox="0 0 16 16"
-                          width="100%"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlnsXlink="http://www.w3.org/1999/xlink"
-                        >
-                          <g
-                            className="facebook"
-                          >
-                            <g
-                              fillRule="evenodd"
-                            >
-                              <path
-                                d="M0,8 C0,3.581722 3.59071231,0 8,0 L8,0 C12.418278,0 16,3.59071231 16,8 L16,8 C16,12.418278 12.4092877,16 8,16 L8,16 C3.581722,16 0,12.4092877 0,8 L0,8 Z M7.18233349,12 L7.18233349,8.3508456 L6,8.3508456 L6,6.92867987 L7.18233349,6.92867987 L7.18233349,5.87988561 C7.18233349,4.66274759 7.89803602,4 8.94344305,4 C9.44416966,4 9.8745294,4.03873177 10,4.0560322 L10,5.32800198 L9.27491523,5.32835505 C8.70640526,5.32835505 8.59633378,5.60893973 8.59633378,6.0206899 L8.59633378,6.92867987 L9.95220491,6.92867987 L9.77564184,8.3508456 L8.59633378,8.3508456 L8.59633378,12 L7.18233349,12 Z"
-                              />
-                            </g>
-                          </g>
-                        </svg>
-                      </div>
-                    </div>
-                    <div
                       className="sc-bZQynM fqsBLH"
                     >
                       <span
@@ -819,8 +675,8 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
             Object {
               "color": "#59626a",
               "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "fontSize": "2rem",
+              "fontWeight": 600,
             }
           }
         >
@@ -879,78 +735,6 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
                   <div
                     className="sc-EHOje enMLlg"
                   >
-                    <div
-                      style={
-                        Object {
-                          "background": "rgba(50, 59, 67, 0.1)",
-                          "borderRadius": "50%",
-                          "height": "16px",
-                          "marginRight": "10px",
-                          "position": "relative",
-                          "width": "16px",
-                        }
-                      }
-                    >
-                      <img
-                        alt=""
-                        src="https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/10403026_1055367724535674_7855796462569708170_n.png?oh=39ea3ae01610ba482316d4c87ca1c14c&oe=59B58B81"
-                        style={
-                          Object {
-                            "borderRadius": "50%",
-                            "height": "16px",
-                            "marginBottom": undefined,
-                            "marginTop": undefined,
-                            "maxHeight": undefined,
-                            "maxWidth": undefined,
-                            "minHeight": undefined,
-                            "minWidth": undefined,
-                            "objectFit": undefined,
-                            "width": "16px",
-                          }
-                        }
-                      />
-                      <div
-                        style={
-                          Object {
-                            "background": "#fff",
-                            "borderRadius": "50%",
-                            "height": "8px",
-                            "left": "8px",
-                            "position": "absolute",
-                            "top": "8px",
-                            "width": "8px",
-                          }
-                        }
-                      >
-                        <svg
-                          height="100%"
-                          style={
-                            Object {
-                              "fill": "#3b5998",
-                              "height": "100%",
-                              "width": "100%",
-                            }
-                          }
-                          version="1.1"
-                          viewBox="0 0 16 16"
-                          width="100%"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlnsXlink="http://www.w3.org/1999/xlink"
-                        >
-                          <g
-                            className="facebook"
-                          >
-                            <g
-                              fillRule="evenodd"
-                            >
-                              <path
-                                d="M0,8 C0,3.581722 3.59071231,0 8,0 L8,0 C12.418278,0 16,3.59071231 16,8 L16,8 C16,12.418278 12.4092877,16 8,16 L8,16 C3.581722,16 0,12.4092877 0,8 L0,8 Z M7.18233349,12 L7.18233349,8.3508456 L6,8.3508456 L6,6.92867987 L7.18233349,6.92867987 L7.18233349,5.87988561 C7.18233349,4.66274759 7.89803602,4 8.94344305,4 C9.44416966,4 9.8745294,4.03873177 10,4.0560322 L10,5.32800198 L9.27491523,5.32835505 C8.70640526,5.32835505 8.59633378,5.60893973 8.59633378,6.0206899 L8.59633378,6.92867987 L9.95220491,6.92867987 L9.77564184,8.3508456 L8.59633378,8.3508456 L8.59633378,12 L7.18233349,12 Z"
-                              />
-                            </g>
-                          </g>
-                        </svg>
-                      </div>
-                    </div>
                     <div
                       className="sc-bZQynM fqsBLH"
                     >
@@ -1240,78 +1024,6 @@ exports[`Snapshots Footer should render the footer for a single profile 1`] = `
                   className="sc-EHOje enMLlg"
                 >
                   <div
-                    style={
-                      Object {
-                        "background": "rgba(50, 59, 67, 0.1)",
-                        "borderRadius": "50%",
-                        "height": "16px",
-                        "marginRight": "10px",
-                        "position": "relative",
-                        "width": "16px",
-                      }
-                    }
-                  >
-                    <img
-                      alt=""
-                      src="https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/10403026_1055367724535674_7855796462569708170_n.png?oh=39ea3ae01610ba482316d4c87ca1c14c&oe=59B58B81"
-                      style={
-                        Object {
-                          "borderRadius": "50%",
-                          "height": "16px",
-                          "marginBottom": undefined,
-                          "marginTop": undefined,
-                          "maxHeight": undefined,
-                          "maxWidth": undefined,
-                          "minHeight": undefined,
-                          "minWidth": undefined,
-                          "objectFit": undefined,
-                          "width": "16px",
-                        }
-                      }
-                    />
-                    <div
-                      style={
-                        Object {
-                          "background": "#fff",
-                          "borderRadius": "50%",
-                          "height": "8px",
-                          "left": "8px",
-                          "position": "absolute",
-                          "top": "8px",
-                          "width": "8px",
-                        }
-                      }
-                    >
-                      <svg
-                        height="100%"
-                        style={
-                          Object {
-                            "fill": "#3b5998",
-                            "height": "100%",
-                            "width": "100%",
-                          }
-                        }
-                        version="1.1"
-                        viewBox="0 0 16 16"
-                        width="100%"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlnsXlink="http://www.w3.org/1999/xlink"
-                      >
-                        <g
-                          className="facebook"
-                        >
-                          <g
-                            fillRule="evenodd"
-                          >
-                            <path
-                              d="M0,8 C0,3.581722 3.59071231,0 8,0 L8,0 C12.418278,0 16,3.59071231 16,8 L16,8 C16,12.418278 12.4092877,16 8,16 L8,16 C3.581722,16 0,12.4092877 0,8 L0,8 Z M7.18233349,12 L7.18233349,8.3508456 L6,8.3508456 L6,6.92867987 L7.18233349,6.92867987 L7.18233349,5.87988561 C7.18233349,4.66274759 7.89803602,4 8.94344305,4 C9.44416966,4 9.8745294,4.03873177 10,4.0560322 L10,5.32800198 L9.27491523,5.32835505 C8.70640526,5.32835505 8.59633378,5.60893973 8.59633378,6.0206899 L8.59633378,6.92867987 L9.95220491,6.92867987 L9.77564184,8.3508456 L8.59633378,8.3508456 L8.59633378,12 L7.18233349,12 Z"
-                            />
-                          </g>
-                        </g>
-                      </svg>
-                    </div>
-                  </div>
-                  <div
                     className="sc-bZQynM fqsBLH"
                   >
                     <span
@@ -1518,78 +1230,6 @@ exports[`Snapshots Footer should render the footer for multiple profiles 1`] = `
                   className="sc-EHOje enMLlg"
                 >
                   <div
-                    style={
-                      Object {
-                        "background": "rgba(50, 59, 67, 0.1)",
-                        "borderRadius": "50%",
-                        "height": "16px",
-                        "marginRight": "10px",
-                        "position": "relative",
-                        "width": "16px",
-                      }
-                    }
-                  >
-                    <img
-                      alt=""
-                      src="https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/10403026_1055367724535674_7855796462569708170_n.png?oh=39ea3ae01610ba482316d4c87ca1c14c&oe=59B58B81"
-                      style={
-                        Object {
-                          "borderRadius": "50%",
-                          "height": "16px",
-                          "marginBottom": undefined,
-                          "marginTop": undefined,
-                          "maxHeight": undefined,
-                          "maxWidth": undefined,
-                          "minHeight": undefined,
-                          "minWidth": undefined,
-                          "objectFit": undefined,
-                          "width": "16px",
-                        }
-                      }
-                    />
-                    <div
-                      style={
-                        Object {
-                          "background": "#fff",
-                          "borderRadius": "50%",
-                          "height": "8px",
-                          "left": "8px",
-                          "position": "absolute",
-                          "top": "8px",
-                          "width": "8px",
-                        }
-                      }
-                    >
-                      <svg
-                        height="100%"
-                        style={
-                          Object {
-                            "fill": "#3b5998",
-                            "height": "100%",
-                            "width": "100%",
-                          }
-                        }
-                        version="1.1"
-                        viewBox="0 0 16 16"
-                        width="100%"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlnsXlink="http://www.w3.org/1999/xlink"
-                      >
-                        <g
-                          className="facebook"
-                        >
-                          <g
-                            fillRule="evenodd"
-                          >
-                            <path
-                              d="M0,8 C0,3.581722 3.59071231,0 8,0 L8,0 C12.418278,0 16,3.59071231 16,8 L16,8 C16,12.418278 12.4092877,16 8,16 L8,16 C3.581722,16 0,12.4092877 0,8 L0,8 Z M7.18233349,12 L7.18233349,8.3508456 L6,8.3508456 L6,6.92867987 L7.18233349,6.92867987 L7.18233349,5.87988561 C7.18233349,4.66274759 7.89803602,4 8.94344305,4 C9.44416966,4 9.8745294,4.03873177 10,4.0560322 L10,5.32800198 L9.27491523,5.32835505 C8.70640526,5.32835505 8.59633378,5.60893973 8.59633378,6.0206899 L8.59633378,6.92867987 L9.95220491,6.92867987 L9.77564184,8.3508456 L8.59633378,8.3508456 L8.59633378,12 L7.18233349,12 Z"
-                            />
-                          </g>
-                        </g>
-                      </svg>
-                    </div>
-                  </div>
-                  <div
                     className="sc-bZQynM fqsBLH"
                   >
                     <span
@@ -1775,78 +1415,6 @@ exports[`Snapshots Footer should render the footer for multiple profiles 1`] = `
                   className="sc-EHOje enMLlg"
                 >
                   <div
-                    style={
-                      Object {
-                        "background": "rgba(50, 59, 67, 0.1)",
-                        "borderRadius": "50%",
-                        "height": "16px",
-                        "marginRight": "10px",
-                        "position": "relative",
-                        "width": "16px",
-                      }
-                    }
-                  >
-                    <img
-                      alt=""
-                      src="https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/10403026_1055367724535674_7855796462569708170_n.png?oh=39ea3ae01610ba482316d4c87ca1c14c&oe=59B58B81"
-                      style={
-                        Object {
-                          "borderRadius": "50%",
-                          "height": "16px",
-                          "marginBottom": undefined,
-                          "marginTop": undefined,
-                          "maxHeight": undefined,
-                          "maxWidth": undefined,
-                          "minHeight": undefined,
-                          "minWidth": undefined,
-                          "objectFit": undefined,
-                          "width": "16px",
-                        }
-                      }
-                    />
-                    <div
-                      style={
-                        Object {
-                          "background": "#fff",
-                          "borderRadius": "50%",
-                          "height": "8px",
-                          "left": "8px",
-                          "position": "absolute",
-                          "top": "8px",
-                          "width": "8px",
-                        }
-                      }
-                    >
-                      <svg
-                        height="100%"
-                        style={
-                          Object {
-                            "fill": "#3b5998",
-                            "height": "100%",
-                            "width": "100%",
-                          }
-                        }
-                        version="1.1"
-                        viewBox="0 0 16 16"
-                        width="100%"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlnsXlink="http://www.w3.org/1999/xlink"
-                      >
-                        <g
-                          className="facebook"
-                        >
-                          <g
-                            fillRule="evenodd"
-                          >
-                            <path
-                              d="M0,8 C0,3.581722 3.59071231,0 8,0 L8,0 C12.418278,0 16,3.59071231 16,8 L16,8 C16,12.418278 12.4092877,16 8,16 L8,16 C3.581722,16 0,12.4092877 0,8 L0,8 Z M7.18233349,12 L7.18233349,8.3508456 L6,8.3508456 L6,6.92867987 L7.18233349,6.92867987 L7.18233349,5.87988561 C7.18233349,4.66274759 7.89803602,4 8.94344305,4 C9.44416966,4 9.8745294,4.03873177 10,4.0560322 L10,5.32800198 L9.27491523,5.32835505 C8.70640526,5.32835505 8.59633378,5.60893973 8.59633378,6.0206899 L8.59633378,6.92867987 L9.95220491,6.92867987 L9.77564184,8.3508456 L8.59633378,8.3508456 L8.59633378,12 L7.18233349,12 Z"
-                            />
-                          </g>
-                        </g>
-                      </svg>
-                    </div>
-                  </div>
-                  <div
                     className="sc-bZQynM fqsBLH"
                   >
                     <span
@@ -2014,8 +1582,8 @@ exports[`Snapshots Title should render the title for the comparison audience cha
           Object {
             "color": "#59626a",
             "fontFamily": "\\"Open Sans\\", sans-serif",
-            "fontSize": "1rem",
-            "fontWeight": 400,
+            "fontSize": "2rem",
+            "fontWeight": 600,
           }
         }
       >

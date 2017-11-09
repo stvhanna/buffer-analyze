@@ -73,7 +73,7 @@ AudienceComparisonChart.propTypes = {
   // props used for generating chart
   profilesMetricData: PropTypes.arrayOf(PropTypes.shape({
     dailyData: PropTypes.arrayOf(PropTypes.shape({
-      day: PropTypes.string.isRequired,
+      day: PropTypes.number.isRequired,
       metric: PropTypes.shape({
         color: PropTypes.string.isRequired,
         label: PropTypes.string.isRequired,

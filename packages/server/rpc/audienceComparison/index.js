@@ -90,6 +90,9 @@ module.exports = method(
       json: true,
     }).then(({ response }) => (
       formatData(response, profileService)
-    )).catch(err => console.log(err));
+    )).catch(() => ({
+      profilesMetricData: [],
+      profileTotals: [],
+    }));
   },
 );

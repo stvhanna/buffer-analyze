@@ -4,40 +4,58 @@ import { connect } from 'react-redux';
 import NavSidebar from '@bufferapp/nav-sidebar';
 import DatePicker from '@bufferapp/analyze-date-picker';
 import ProfileLoader from '@bufferapp/profile-loader';
-import { offWhite, mystic } from '@bufferapp/components/style/color';
+import { white, mystic } from '@bufferapp/components/style/color';
 import ProfileSelector from '@bufferapp/analyze-profile-selector';
-import Divider from '@bufferapp/components/Divider';
 import AudienceComparisonChart from '@bufferapp/audience-comparison-chart';
-import styled from 'styled-components';
 
 const pageStyle = {
   display: 'flex',
-  flexGrow: 1,
-  height: '100%',
 };
 
 const contentStyle = {
-  overflowY: 'auto',
   flexGrow: 1,
+  height: '100vh',
+  maxWidth: '100%',
+  display: 'flex',
+  minHeight: '100vh',
+  flexDirection: 'column',
 };
 
-const profileSelectorContainer = {
-  background: offWhite,
-  border: `1px solid ${mystic}`,
-  padding: '1rem',
-  marginTop: '10px',
-};
-
-const datePickerContainer = {
-  padding: '2rem 0',
+const toolbarContainer = {
   display: 'flex',
   justifyContent: 'space-between',
+  background: `${white}`,
+  padding: '0.75rem 0.5rem',
+  marginbottom: '1rem',
+  borderBottom: `1px solid ${mystic}`,
+  boxSizing: 'border-box',
 };
 
-const Content = styled.div`
-  max-width: 65rem;
-  width: 100%;
-`;
+const comparisonsContainer = {
+  background: '#FAFAFA', // TODO: Need to add this color to buffer components
+  overflowY: 'auto',
+  display: 'flex',
+  flex: 1,
+};
+
+const comparisonsMaxWidth = {
+  width: '52rem',
+  margin: '0 auto',
+  padding: '2.5rem',
+};
+
+const toolbarTabNavigation = {};
+
+const toolbarRight = {
+  display: 'flex',
+  justifyContent: 'flex-end',
+};
+
+const toolbarProfileSelector = {};
+
+const toolbarDatePicker = {
+  marginLeft: '0.5rem',
+};
 
 const ComparisonsPage = ({
   location,
@@ -46,16 +64,22 @@ const ComparisonsPage = ({
     <NavSidebar route={location.pathname} />
     <ProfileLoader>
       <div style={contentStyle}>
-        <div style={profileSelectorContainer}>
-          <ProfileSelector />
+        <div style={toolbarContainer}>
+          <div style={toolbarTabNavigation} />
+          <div style={toolbarRight}>
+            <div style={toolbarProfileSelector}>
+              <ProfileSelector />
+            </div>
+            <div style={toolbarDatePicker}>
+              <DatePicker />
+            </div>
+          </div>
         </div>
-        <div style={datePickerContainer}>
-          <DatePicker />
+        <div style={comparisonsContainer}>
+          <div style={comparisonsMaxWidth}>
+            <AudienceComparisonChart />
+          </div>
         </div>
-        <Divider marginTop="1rem" marginBottom="1rem" />
-        <Content>
-          <AudienceComparisonChart />
-        </Content>
       </div>
     </ProfileLoader>
   </div>

@@ -49,12 +49,6 @@ const Footer = ({ profileTotals, selectedProfile }) => (
         }}
         customLabel={
           <ProfileAvatarWrapper>
-            <ProfileBadge
-              avatarUrl={selectedProfile.avatarUrl}
-              service={selectedProfile.service}
-              avatarSize={16}
-              socialIconSize={8}
-            />
             <ProfileUsernameWrapper>
               <Text size="small">{selectedProfile.username}</Text>
             </ProfileUsernameWrapper>
