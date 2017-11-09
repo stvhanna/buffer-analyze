@@ -15,6 +15,7 @@ module.exports = {
       label: 'What type of content is working?',
       description: 'Find out what type of content reasonates well with your audience.',
       hideDate: true,
+      showMetricsList: true,
       rewardWording: 'Your {category} posts earned on average:',
       type: 'column',
     },
