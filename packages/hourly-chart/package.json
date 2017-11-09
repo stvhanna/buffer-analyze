@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/hourly-chart",
-  "version": "0.4.0",
+  "version": "0.7.0",
   "description": "Hourly Engagements Chart",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
     }
   },
   "dependencies": {
-    "@bufferapp/add-report": "^0.4.0",
+    "@bufferapp/add-report": "^0.7.0",
     "@bufferapp/analyze-csv-export": "^0.1.0",
     "@bufferapp/analyze-date-picker": "^0.4.0",
     "@bufferapp/analyze-profile-selector": "^0.4.0",
