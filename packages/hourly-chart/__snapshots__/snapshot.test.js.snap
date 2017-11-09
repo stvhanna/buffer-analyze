@@ -545,7 +545,7 @@ exports[`Snapshots HourlyChart loaded chart 1`] = `
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "2rem",
+                "fontSize": "1.25rem",
                 "fontWeight": 600,
               }
             }
@@ -1337,7 +1337,7 @@ exports[`Snapshots HourlyChart loading state 1`] = `
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "2rem",
+                "fontSize": "1.25rem",
                 "fontWeight": 600,
               }
             }
@@ -1497,7 +1497,7 @@ exports[`Snapshots HourlyChart second metric selected 1`] = `
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "2rem",
+                "fontSize": "1.25rem",
                 "fontWeight": 600,
               }
             }
