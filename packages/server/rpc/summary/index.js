@@ -3,21 +3,32 @@ const rp = require('request-promise');
 const moment = require('moment');
 const DateRange = require('../utils/DateRange');
 
+// This also also used to filter down the metrics to return
 const LABELS = {
-  engaged_users: 'Engaged Users',
-  post_impressions: 'Post Impressions',
-  reactions: 'Reactions',
-  post_reach: 'Post Reach',
-  page_engagements: 'Page & Post Engagements',
-  post_clicks: 'Post Clicks',
-  new_followers: 'New Fans',
-  posts_count: 'Posts',
-  favorites: 'Likes',
-  impressions: 'Impressions',
-  replies: 'Replies',
-  retweets: 'Retweets',
-  url_clicks: 'Clicks',
-  engagements: 'Engagements',
+  twitter: {
+    posts_count: 'Posts',
+    retweets: 'Retweets',
+    impressions: 'Impressions',
+    engagements: 'Engagements',
+    replies: 'Replies',
+    url_clicks: 'Clicks',
+    favorites: 'Likes',
+    new_followers: 'New Followers',
+  },
+  facebook: {
+    engaged_users: 'Engaged Users',
+    post_impressions: 'Post Impressions',
+    reactions: 'Reactions',
+    post_reach: 'Post Reach',
+    page_engagements: 'Page & Post Engagements',
+    post_clicks: 'Post Clicks',
+    new_followers: 'New Fans',
+    posts_count: 'Posts',
+  },
+  instagram: {
+    posts_count: 'Posts',
+    followers: 'Followers',
+  },
 };
 
 const requestTotals = (profileId, dateRange, accessToken) =>
@@ -33,27 +44,26 @@ const requestTotals = (profileId, dateRange, accessToken) =>
     json: true,
   });
 
-const excludeFollowerCount = metrics => metrics.filter(metric => metric !== 'followers');
-
 const percentageDifference = (value, pastValue) => {
   const difference = value - pastValue;
   return Math.ceil((difference / pastValue) * 100);
 };
 
-const summarize = (metric, currentPeriod, pastPeriod) => {
+const summarize = (metric, currentPeriod, pastPeriod, profileService) => {
   const pastValue = pastPeriod[metric];
   const value = currentPeriod[metric];
   return {
     value,
     diff: percentageDifference(value, pastValue),
-    label: LABELS[metric],
+    label: LABELS[profileService][metric],
   };
 };
 
 module.exports = method(
   'summary',
   'fetch analytics summary for profiles and pages',
-  ({ profileId, startDate, endDate }, { session }) => {
+  ({ profileId, profileService, startDate, endDate }, { session }) => {
+    console.log(profileService)
     const end = moment.unix(endDate).format('MM/DD/YYYY');
     const start = moment.unix(startDate).format('MM/DD/YYYY');
     const dateRange = new DateRange(start, end);
@@ -68,9 +78,13 @@ module.exports = method(
         const currentPeriodResult = response[0].response;
         const pastPeriodResult = response[1].response;
         const metrics = Object.keys(currentPeriodResult);
-        return excludeFollowerCount(metrics).map(metric =>
-          summarize(metric, currentPeriodResult, pastPeriodResult),
-        );
+        return metrics
+          .map(metric =>
+            summarize(metric, currentPeriodResult, pastPeriodResult, profileService),
+          )
+          .filter(metric =>
+            metric.label !== undefined,
+          );
       })
       .catch(() => []);
   },
