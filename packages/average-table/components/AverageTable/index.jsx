@@ -62,7 +62,7 @@ export const Title = () =>
 const AverageTable = ({ metrics, loading, timezone }) => {
   let content = null;
   if (loading) {
-    content = <Loading active noBorder text="Average loading..." />;
+    content = <Loading active noBorder />;
   } else if (metrics.totals.length === 0) {
     content = <NoData />;
   } else {

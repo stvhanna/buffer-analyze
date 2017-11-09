@@ -3,10 +3,6 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import {
-  geyser,
-} from '@bufferapp/components/style/color';
-
-import {
   ChartStateNoData as NoData,
   ChartStateLoading as Loading,
   ChartCard,
@@ -29,7 +25,7 @@ const ContextualCompare = ({
       <Title dailyData={data} />
     </ChartHeader>
     <div className={className}>
-      {loading && <Loading active noBorder text="Engagement & Audience chart loading..." />}
+      {loading && <Loading active noBorder />}
       {data.length === 0 && !loading && <NoData />}
       {data.length > 1 && !loading && <div>
         <Header {...props} />

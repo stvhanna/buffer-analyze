@@ -3,33 +3,25 @@ import PropTypes from 'prop-types';
 import { Text } from '@bufferapp/components';
 
 import {
-  geyser,
-} from '@bufferapp/components/style/color';
-
-import {
   ChartStateLoading as Loading,
+  ChartCard,
+  ChartHeader,
 } from '@bufferapp/analyze-shared-components';
 
 import PostCountByHour from '../PostCountByHour';
 import HourlyEngagementChart from '../HourlyEngagementChart';
-import ChartHeader from '../ChartHeader';
 import Legend from '../Legend';
 
-const title = {
-  margin: '2rem 0 1rem',
-};
-
 const Title = () =>
-  <h2 style={title}>
-    <Text>Engagements by hour of the day</Text>
+  <h2 style={{ margin: '0', padding: '0' }}>
+    <Text weight="bold" size="large">Engagements by hour of the day</Text>
   </h2>
 ;
 
 const gridContainer = {
-  minHeight: '12rem',
+  margin: '0 auto',
+  padding: '1.25rem',
   position: 'relative',
-  margin: '1rem 0 1.5rem',
-  border: `1px solid ${geyser}`,
 };
 
 class ChartContent extends React.Component {
@@ -42,7 +34,6 @@ class ChartContent extends React.Component {
   render() {
     return (
       <div>
-        <ChartHeader {...this.props} />
         <HourlyEngagementChart
           posts={this.props.postsCount}
           metric={this.props.selectedMetric}
@@ -88,13 +79,15 @@ ChartContent.propTypes = {
 };
 
 const HourlyChart = props =>
-  <div>
-    <Title />
+  <ChartCard>
+    <ChartHeader>
+      <Title />
+    </ChartHeader>
     <div id="js-dom-to-png-hourly-engagements" style={gridContainer}>
       {props.loading && <Loading noBorder />}
       {!props.loading && <ChartContent {...props} />}
     </div>
-  </div>;
+  </ChartCard>;
 
 HourlyChart.defaultProps = {
   loading: false,

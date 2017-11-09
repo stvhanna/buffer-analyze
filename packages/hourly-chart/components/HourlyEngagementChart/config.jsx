@@ -64,7 +64,7 @@ const yAxis = [{
     style: {
       'font-size': '12px',
       'font-weight': 'lighter',
-      'font-family': 'Open Sans, Helvetica Neue, Helvetica, Arial, sans serif',
+      'font-family': 'Roboto, sans serif',
     },
   },
 },
@@ -81,7 +81,7 @@ const yAxis = [{
     style: {
       'font-size': '12px',
       'font-weight': 'lighter',
-      'font-family': 'Open Sans, Helvetica Neue, Helvetica, Arial, sans serif',
+      'font-family': 'Roboto, sans serif',
     },
   },
 }];
@@ -135,7 +135,7 @@ export const chartConfig = {
       color: '#fff',
       cursor: 'default',
       'font-size': '9pt',
-      'font-family': 'Open Sans, Helvetica Neue, Helvetica, Arial, sans serif',
+      'font-family': 'Roboto, sans serif',
       'pointer-events': 'none',
       'white-space': 'nowrap',
     },

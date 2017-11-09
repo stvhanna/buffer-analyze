@@ -55,7 +55,7 @@ const CompareChart = ({
   let header = null;
   let footer = null;
   if (loading) {
-    content = <Loading active noBorder text="Compare chart loading..." />;
+    content = <Loading active noBorder />;
   } else if (dailyData.length === 0) {
     content = <NoData />;
   } else {

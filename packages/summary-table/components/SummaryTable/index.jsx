@@ -44,7 +44,7 @@ Table.propTypes = {
 const SummaryTable = ({ metrics, loading, profileService, startDate, endDate }) => {
   let content = null;
   if (loading) {
-    content = <Loading active noBorder text="Summary loading..." />;
+    content = <Loading active noBorder />;
   } else if (metrics.length === 0) {
     content = <NoData />;
   } else {

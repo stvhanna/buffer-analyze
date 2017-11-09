@@ -22,7 +22,7 @@
   "author": "mike@msanroman.io",
   "dependencies": {
     "@bufferapp/analyze-shared-components": "^0.5.0",
-    "@bufferapp/components": "2.1.0",
+    "@bufferapp/components": "2.1.1",
     "styled-components": "^2.2.1"
   },
   "devDependencies": {
