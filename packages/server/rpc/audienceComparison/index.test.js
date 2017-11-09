@@ -40,7 +40,7 @@ describe('rpc/audience_comparison', () => {
       method: 'POST',
       strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
       body: {
-        profile_id: profileId,
+        profiles: [profileId],
         start_date: dateRange.start,
         end_date: dateRange.end,
       },

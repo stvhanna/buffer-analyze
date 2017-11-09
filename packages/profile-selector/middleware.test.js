@@ -1,5 +1,6 @@
 import { actionTypes } from '@bufferapp/async-data-fetch';
-import { push } from 'react-router-redux';
+import { actions as reportActions } from '@bufferapp/report-list';
+import { push, LOCATION_CHANGE } from 'react-router-redux';
 import {
   actionTypes as profileActionTypes,
   actions as profileActions,
@@ -151,6 +152,19 @@ describe('middleware', () => {
     };
     invoke(action);
     expect(store.dispatch).toHaveBeenCalledWith(profileActions.selectProfile('122222222'));
+    expect(next).toHaveBeenCalledWith(action);
+  });
+
+  it('should push a viewReport action if there is a LOCATION_CHANGE towards a report route', () => {
+    const { store, next, invoke } = getMiddlewareElements();
+    const action = {
+      type: LOCATION_CHANGE,
+      payload: {
+        pathname: '/reports/report-1',
+      },
+    };
+    invoke(action);
+    expect(store.dispatch).toHaveBeenCalledWith(reportActions.viewReport('report-1'));
     expect(next).toHaveBeenCalledWith(action);
   });
 });

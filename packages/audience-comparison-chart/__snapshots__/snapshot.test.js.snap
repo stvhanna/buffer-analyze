@@ -1102,30 +1102,6 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
 </span>
 `;
 
-exports[`Snapshots Chart should render the chart for a single profile 1`] = `
-<span>
-  <div
-    style={
-      Object {
-        "width": "750px",
-      }
-    }
-  />
-</span>
-`;
-
-exports[`Snapshots Chart should render the chart for multiple profiles 1`] = `
-<span>
-  <div
-    style={
-      Object {
-        "width": "750px",
-      }
-    }
-  />
-</span>
-`;
-
 exports[`Snapshots ChartTooltip should render the tooltip 1`] = `
 <span>
   <div
