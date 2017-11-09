@@ -18,7 +18,6 @@ const Card = styled.section`
   z-index: 1;
 `;
 
-
 const Section = styled.section`
   margin: 1.25rem 0 2.25rem;
   display: flex;
@@ -34,9 +33,10 @@ const Input = styled.input.attrs({
   box-sizing: border-box;
   width: 445px;
   outline: none;
-  font-size: 1rem;
+  font-size: 0.75rem !important;
+  font-weight: 400;
   padding: 1rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 `;
 
 const Modal = ({ open, addReport, translations }) => {
@@ -47,14 +47,14 @@ const Modal = ({ open, addReport, translations }) => {
   };
   return (
     <Card>
-      <Text color="sidebarBackgroundBlue" size="large">{translations.addReportTitle}</Text>
+      <Text color="sidebarBackgroundBlue" weight="medium">{translations.addReportTitle}</Text>
       <Section>
         <Input
           placeholder={translations.addReportPlaceholder}
           innerRef={(input) => { textInput = input; }}
         />
         <Button onClick={onClick}>
-          <Text color="sidebarBackgroundBlue">{translations.createReport}</Text>
+          <Text color="sidebarBackgroundBlue" size="small" weight="medium">{translations.createReport}</Text>
         </Button>
       </Section>
     </Card>

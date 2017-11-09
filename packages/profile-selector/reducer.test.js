@@ -75,16 +75,6 @@ describe('reducer', () => {
       .toBe('foo');
   });
 
-  it('should update selected Profile Service on SELECT_PROFILE_SERVICE', () => {
-    const selectedProfileService = 'instagram';
-    const state = reducer(Object.assign({}, initialState), {
-      type: actionTypes.SELECT_PROFILE_SERVICE,
-      profileService: selectedProfileService,
-    });
-    expect(state.selectedProfileService)
-      .toBe('instagram');
-  });
-
   it('should not update the profileService if not provided', () => {
     const selectedProfileId = '1234foo';
     const state = reducer(Object.assign({}, initialState, { selectedProfileService: 'bar' }), {
@@ -123,22 +113,6 @@ describe('actions', () => {
         type: actionTypes.SELECT_PROFILE,
         id: 42,
         profileService: 'foo',
-      });
-  });
-
-  it('should select a new profile service', () => {
-    expect(actions.selectProfileService('twitter'))
-      .toEqual({
-        type: actionTypes.SELECT_PROFILE_SERVICE,
-        profileService: 'twitter',
-      });
-  });
-
-  it('should not fail if profile service is not passed', () => {
-    expect(actions.selectProfileService())
-      .toEqual({
-        type: actionTypes.SELECT_PROFILE_SERVICE,
-        profileService: null,
       });
   });
 

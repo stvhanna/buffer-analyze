@@ -10,7 +10,7 @@ export default connect(
     },
   }),
   (dispatch, props) => ({
-    createReport: name => dispatch(actions.createReport(name, props.chart)),
+    createReport: name => dispatch(actions.createReport(name, props.chart, props.state)),
   }),
 )(AddReport);
 

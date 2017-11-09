@@ -11,7 +11,13 @@ exports[`Snapshots SummaryTable should render a "no data" state 1`] = `
   >
     <div>
       <header
-        className="sc-bwzfXH hcRgMz"
+        style={
+          Object {
+            "alignItems": "baseline",
+            "display": "flex",
+            "justifyContent": "space-between",
+          }
+        }
       >
         <h2
           style={
@@ -25,17 +31,12 @@ exports[`Snapshots SummaryTable should render a "no data" state 1`] = `
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "1rem",
-                "fontWeight": 400,
+                "fontSize": "2rem",
+                "fontWeight": 600,
               }
             }
           >
-            Tweet performance 
-            for 
-            <span>
-              yesterday
-            </span>
-             compared to the previous period
+            Performance
           </span>
         </h2>
       </header>
@@ -135,7 +136,13 @@ exports[`Snapshots SummaryTable should render a loading state 1`] = `
   >
     <div>
       <header
-        className="sc-bwzfXH hcRgMz"
+        style={
+          Object {
+            "alignItems": "baseline",
+            "display": "flex",
+            "justifyContent": "space-between",
+          }
+        }
       >
         <h2
           style={
@@ -149,17 +156,12 @@ exports[`Snapshots SummaryTable should render a loading state 1`] = `
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "1rem",
-                "fontWeight": 400,
+                "fontSize": "2rem",
+                "fontWeight": 600,
               }
             }
           >
-            Performance 
-            for 
-            <span>
-              yesterday
-            </span>
-             compared to the previous period
+            Performance
           </span>
         </h2>
       </header>
@@ -293,7 +295,13 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
   >
     <div>
       <header
-        className="sc-bwzfXH hcRgMz"
+        style={
+          Object {
+            "alignItems": "baseline",
+            "display": "flex",
+            "justifyContent": "space-between",
+          }
+        }
       >
         <h2
           style={
@@ -307,17 +315,12 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "1rem",
-                "fontWeight": 400,
+                "fontSize": "2rem",
+                "fontWeight": 600,
               }
             }
           >
-            Tweet performance 
-            for 
-            <span>
-              yesterday
-            </span>
-             compared to the previous period
+            Performance
           </span>
         </h2>
       </header>
@@ -424,7 +427,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                     }
                   >
                     <span>
-                      150
+                      150.0
                     </span>
                   </span>
                 </span>
@@ -485,7 +488,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                       }
                     >
                       <span>
-                        25
+                        25.0
                       </span>
                       %
                     </span>
@@ -574,7 +577,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                     }
                   >
                     <span>
-                      901
+                      901.0
                     </span>
                   </span>
                 </span>
@@ -636,7 +639,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                       }
                     >
                       <span>
-                        39
+                        39.0
                       </span>
                       %
                     </span>
@@ -725,7 +728,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                     }
                   >
                     <span>
-                      1,010
+                      1,010.0
                     </span>
                   </span>
                 </span>
@@ -787,7 +790,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                       }
                     >
                       <span>
-                        55
+                        55.0
                       </span>
                       %
                     </span>
@@ -938,7 +941,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                       }
                     >
                       <span>
-                        26
+                        26.0
                       </span>
                       %
                     </span>
@@ -1027,7 +1030,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                     }
                   >
                     <span>
-                      0
+                      0.0
                     </span>
                   </span>
                 </span>
@@ -1081,7 +1084,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                       }
                     >
                       <span>
-                        0
+                        0.0
                       </span>
                       %
                     </span>
@@ -1232,7 +1235,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                       }
                     >
                       <span>
-                        33
+                        33.0
                       </span>
                       %
                     </span>
@@ -1321,7 +1324,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                     }
                   >
                     <span>
-                      2,313
+                      2,313.0
                     </span>
                   </span>
                 </span>
@@ -1383,7 +1386,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                       }
                     >
                       <span>
-                        28
+                        28.0
                       </span>
                       %
                     </span>
@@ -1472,7 +1475,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                     }
                   >
                     <span>
-                      658
+                      658.0
                     </span>
                   </span>
                 </span>
@@ -1534,7 +1537,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                       }
                     >
                       <span>
-                        9
+                        9.0
                       </span>
                       %
                     </span>

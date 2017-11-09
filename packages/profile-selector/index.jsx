@@ -28,15 +28,10 @@ const filterProfilesByService = (profiles, service) => (
 );
 
 const mapStateToProps = (state) => {
-  let filteredProfiles = null;
-  if (state.profiles.selectedProfileService) {
-    filteredProfiles = filterProfilesByService(
-      state.profiles.profiles,
-      state.profiles.selectedProfileService,
-    );
-  } else {
-    filteredProfiles = state.profiles.profiles;
-  }
+  const filteredProfiles = filterProfilesByService(
+    state.profiles.profiles,
+    state.profiles.selectedProfileService,
+  );
   return {
     isDropdownOpen: state.profiles.isDropdownOpen,
     profiles: filteredProfiles,
@@ -58,4 +53,3 @@ export default connect(
 )(ProfileSelector);
 
 export reducer, { actionTypes, actions } from './reducer';
-export middleware from './middleware';

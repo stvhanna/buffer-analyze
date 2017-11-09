@@ -84,8 +84,7 @@ exports[`Snapshots ProfileLoader renders its child components if its not loading
         "flexDirection": "column",
         "flexGrow": 1,
         "height": "100vh",
-        "maxWidth": "70rem",
-        "padding": "0rem 2rem",
+        "maxWidth": "100%",
       }
     }
   >

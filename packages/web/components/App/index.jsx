@@ -3,16 +3,18 @@ import { Route, Switch } from 'react-router';
 import AppSidebar from '@bufferapp/app-sidebar';
 import DefaultPage from '../DefaultPage';
 import ReportsPage from '../ReportsPage';
+import ReportsList from '../ReportsList';
 import InsightsPage from '../InsightsPage';
 import ComparisonsPage from '../ComparisonsPage';
 
 const appStyle = {
   display: 'flex',
-  height: '100%',
+  height: '100vh',
 };
 
 const contentStyle = {
   flexGrow: 1,
+  height: '100vh',
 };
 
 export default () =>
@@ -21,16 +23,20 @@ export default () =>
     <div style={contentStyle}>
       <Switch>
         <Route
-          path="/reports"
-          component={ReportsPage}
-        />
-        <Route
           path="/insights/:service/:id/:tabId"
           component={InsightsPage}
         />
         <Route
           path="/comparisons"
           component={ComparisonsPage}
+        />
+        <Route
+          path="/reports/:id"
+          component={ReportsPage}
+        />
+        <Route
+          path="/reports"
+          component={ReportsList}
         />
         <Route component={DefaultPage} />
       </Switch>

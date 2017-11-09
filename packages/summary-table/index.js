@@ -12,3 +12,5 @@ export default connect(
 
 export reducer, { actions, actionTypes } from './reducer';
 export middleware from './middleware';
+export { Table } from './components/SummaryTable';
+export Title from './components/Title';

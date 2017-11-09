@@ -524,26 +524,36 @@ exports[`Snapshots HourlyChart loaded chart 1`] = `
     }
   >
     <div>
-      <h2
+      <header
         style={
           Object {
-            "margin": "2rem 0 1rem",
+            "alignItems": "baseline",
+            "display": "flex",
+            "justifyContent": "space-between",
           }
         }
       >
-        <span
+        <h2
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "margin": "2rem 0 1rem",
             }
           }
         >
-          Engagements by hour of the day
-        </span>
-      </h2>
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1.25rem",
+                "fontWeight": 600,
+              }
+            }
+          >
+            Hourly Engagements
+          </span>
+        </h2>
+      </header>
       <div
         id="js-dom-to-png-hourly-engagements"
         style={
@@ -1207,86 +1217,88 @@ exports[`Snapshots HourlyChart loaded chart 1`] = `
               </span>
             </span>
           </section>
-          <ul
-            style={
-              Object {
-                "marginBottom": "1.5rem",
-                "padding": "0 1.5rem",
-                "textAlign": "center",
-              }
-            }
-          >
-            <li
+          <div>
+            <ul
               style={
                 Object {
-                  "display": "inline-block",
-                  "margin": "0 .8rem",
-                  "padding": ".8rem",
+                  "marginBottom": "1.5rem",
+                  "padding": "0 1.5rem",
+                  "textAlign": "center",
                 }
               }
             >
-              <i
+              <li
                 style={
                   Object {
-                    "background": "#ced7df",
-                    "borderRadius": null,
                     "display": "inline-block",
-                    "height": "10px",
-                    "marginRight": "5px",
-                    "verticalAlign": "baseline",
-                    "width": "10px",
-                  }
-                }
-              />
-              <span
-                style={
-                  Object {
-                    "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.9rem",
-                    "fontWeight": 400,
+                    "margin": "0 .8rem",
+                    "padding": ".8rem",
                   }
                 }
               >
-                Tweets
-              </span>
-            </li>
-            <li
-              style={
-                Object {
-                  "display": "inline-block",
-                  "margin": "0 .8rem",
-                  "padding": ".8rem",
-                }
-              }
-            >
-              <i
-                style={
-                  Object {
-                    "background": "#3A92D3",
-                    "borderRadius": null,
-                    "display": "inline-block",
-                    "height": "10px",
-                    "marginRight": "5px",
-                    "verticalAlign": "baseline",
-                    "width": "10px",
+                <i
+                  style={
+                    Object {
+                      "background": "#ced7df",
+                      "borderRadius": null,
+                      "display": "inline-block",
+                      "height": "10px",
+                      "marginRight": "5px",
+                      "verticalAlign": "baseline",
+                      "width": "10px",
+                    }
                   }
-                }
-              />
-              <span
+                />
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.9rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Tweets
+                </span>
+              </li>
+              <li
                 style={
                   Object {
-                    "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.9rem",
-                    "fontWeight": 400,
+                    "display": "inline-block",
+                    "margin": "0 .8rem",
+                    "padding": ".8rem",
                   }
                 }
               >
-                Engagements
-              </span>
-            </li>
-          </ul>
+                <i
+                  style={
+                    Object {
+                      "background": "#3A92D3",
+                      "borderRadius": null,
+                      "display": "inline-block",
+                      "height": "10px",
+                      "marginRight": "5px",
+                      "verticalAlign": "baseline",
+                      "width": "10px",
+                    }
+                  }
+                />
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.9rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Engagements
+                </span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -1304,26 +1316,36 @@ exports[`Snapshots HourlyChart loading state 1`] = `
     }
   >
     <div>
-      <h2
+      <header
         style={
           Object {
-            "margin": "2rem 0 1rem",
+            "alignItems": "baseline",
+            "display": "flex",
+            "justifyContent": "space-between",
           }
         }
       >
-        <span
+        <h2
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "margin": "2rem 0 1rem",
             }
           }
         >
-          Engagements by hour of the day
-        </span>
-      </h2>
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1.25rem",
+                "fontWeight": 600,
+              }
+            }
+          >
+            Hourly Engagements
+          </span>
+        </h2>
+      </header>
       <div
         id="js-dom-to-png-hourly-engagements"
         style={
@@ -1454,26 +1476,36 @@ exports[`Snapshots HourlyChart second metric selected 1`] = `
     }
   >
     <div>
-      <h2
+      <header
         style={
           Object {
-            "margin": "2rem 0 1rem",
+            "alignItems": "baseline",
+            "display": "flex",
+            "justifyContent": "space-between",
           }
         }
       >
-        <span
+        <h2
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "margin": "2rem 0 1rem",
             }
           }
         >
-          Engagements by hour of the day
-        </span>
-      </h2>
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1.25rem",
+                "fontWeight": 600,
+              }
+            }
+          >
+            Hourly Engagements
+          </span>
+        </h2>
+      </header>
       <div
         id="js-dom-to-png-hourly-engagements"
         style={
@@ -2526,121 +2558,123 @@ exports[`Snapshots HourlyChart second metric selected 1`] = `
               </span>
             </span>
           </section>
-          <ul
-            style={
-              Object {
-                "marginBottom": "1.5rem",
-                "padding": "0 1.5rem",
-                "textAlign": "center",
-              }
-            }
-          >
-            <li
+          <div>
+            <ul
               style={
                 Object {
-                  "display": "inline-block",
-                  "margin": "0 .8rem",
-                  "padding": ".8rem",
+                  "marginBottom": "1.5rem",
+                  "padding": "0 1.5rem",
+                  "textAlign": "center",
                 }
               }
             >
-              <i
+              <li
                 style={
                   Object {
-                    "background": "#ced7df",
-                    "borderRadius": null,
                     "display": "inline-block",
-                    "height": "10px",
-                    "marginRight": "5px",
-                    "verticalAlign": "baseline",
-                    "width": "10px",
-                  }
-                }
-              />
-              <span
-                style={
-                  Object {
-                    "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.9rem",
-                    "fontWeight": 400,
+                    "margin": "0 .8rem",
+                    "padding": ".8rem",
                   }
                 }
               >
-                Tweets
-              </span>
-            </li>
-            <li
-              style={
-                Object {
-                  "display": "inline-block",
-                  "margin": "0 .8rem",
-                  "padding": ".8rem",
-                }
-              }
-            >
-              <i
-                style={
-                  Object {
-                    "background": "#3A92D3",
-                    "borderRadius": null,
-                    "display": "inline-block",
-                    "height": "10px",
-                    "marginRight": "5px",
-                    "verticalAlign": "baseline",
-                    "width": "10px",
+                <i
+                  style={
+                    Object {
+                      "background": "#ced7df",
+                      "borderRadius": null,
+                      "display": "inline-block",
+                      "height": "10px",
+                      "marginRight": "5px",
+                      "verticalAlign": "baseline",
+                      "width": "10px",
+                    }
                   }
-                }
-              />
-              <span
+                />
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.9rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Tweets
+                </span>
+              </li>
+              <li
                 style={
                   Object {
-                    "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.9rem",
-                    "fontWeight": 400,
+                    "display": "inline-block",
+                    "margin": "0 .8rem",
+                    "padding": ".8rem",
                   }
                 }
               >
-                Engagements
-              </span>
-            </li>
-            <li
-              style={
-                Object {
-                  "display": "inline-block",
-                  "margin": "0 .8rem",
-                  "padding": ".8rem",
-                }
-              }
-            >
-              <i
-                style={
-                  Object {
-                    "background": "#FEC78B",
-                    "borderRadius": "50%",
-                    "display": "inline-block",
-                    "height": "10px",
-                    "marginRight": "5px",
-                    "verticalAlign": "baseline",
-                    "width": "10px",
+                <i
+                  style={
+                    Object {
+                      "background": "#3A92D3",
+                      "borderRadius": null,
+                      "display": "inline-block",
+                      "height": "10px",
+                      "marginRight": "5px",
+                      "verticalAlign": "baseline",
+                      "width": "10px",
+                    }
                   }
-                }
-              />
-              <span
+                />
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.9rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Engagements
+                </span>
+              </li>
+              <li
                 style={
                   Object {
-                    "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.9rem",
-                    "fontWeight": 400,
+                    "display": "inline-block",
+                    "margin": "0 .8rem",
+                    "padding": ".8rem",
                   }
                 }
               >
-                Impressions
-              </span>
-            </li>
-          </ul>
+                <i
+                  style={
+                    Object {
+                      "background": "#FEC78B",
+                      "borderRadius": "50%",
+                      "display": "inline-block",
+                      "height": "10px",
+                      "marginRight": "5px",
+                      "verticalAlign": "baseline",
+                      "width": "10px",
+                    }
+                  }
+                />
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.9rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Impressions
+                </span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

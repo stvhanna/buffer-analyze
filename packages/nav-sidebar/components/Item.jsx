@@ -15,11 +15,13 @@ import {
 } from '@bufferapp/components/lib/utils';
 
 const Item = ({ href, route, children, onClick, profileId, profileService }) => {
-  const active = href === route;
+  const active = href === '/' ? href === route : route.includes(href);
   const style = calculateStyles({
     default: {
       display: 'block',
-      padding: '.5rem 1rem',
+      padding: '0.75rem 0.5rem',
+      margin: '0 0.5rem',
+      borderRadius: '4px',
     },
     active: {
       backgroundColor: curiousBlueUltraLight,

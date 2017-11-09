@@ -8,11 +8,11 @@ import {
 import {
   ChartStateNoData as NoData,
   ChartStateLoading as Loading,
+  ChartHeader,
   GridItem,
 } from '@bufferapp/analyze-shared-components';
 
 import AddReport from '@bufferapp/add-report';
-import styled from 'styled-components';
 
 import Title from '../Title';
 
@@ -32,11 +32,19 @@ const gridContainer = {
   margin: '1rem 0 1.5rem',
 };
 
-const Header = styled.header`
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-`;
+export const Table = ({ metrics }) =>
+  <ul style={gridStyle}>
+    {metrics.map(metric => <GridItem key={metric.label} metric={metric} />)}
+  </ul>;
+
+Table.propTypes = {
+  metrics: PropTypes.arrayOf(PropTypes.shape({
+    label: PropTypes.string,
+    value: PropTypes.number,
+    diff: PropTypes.number,
+  })).isRequired,
+};
+
 
 const SummaryTable = ({ metrics, loading, profileService, startDate, endDate }) => {
   let content = null;
@@ -45,19 +53,15 @@ const SummaryTable = ({ metrics, loading, profileService, startDate, endDate }) 
   } else if (metrics.length === 0) {
     content = <NoData />;
   } else {
-    content = (
-      <ul style={gridStyle}>
-        {metrics.map(metric => <GridItem key={metric.label} metric={metric} />)}
-      </ul>
-    );
+    content = <Table metrics={metrics} />;
   }
 
   return (
     <div>
-      <Header>
+      <ChartHeader>
         <Title profileService={profileService} startDate={startDate} endDate={endDate} />
         <AddReport chart="summary-table" />
-      </Header>
+      </ChartHeader>
       <div id="js-dom-to-png-summary" style={gridContainer}>
         {content}
       </div>

@@ -13,6 +13,7 @@ const hourly = require('./hourly');
 const compare = require('./compare');
 const createReport = require('./createReport');
 const listReports = require('./listReports');
+const getReport = require('./getReport');
 const contextual = require('./contextual');
 const audienceComparison = require('./audienceComparison');
 
@@ -30,6 +31,7 @@ module.exports = checkToken(rpc(
   compare,
   createReport,
   listReports,
+  getReport,
   contextual,
   audienceComparison,
 ));

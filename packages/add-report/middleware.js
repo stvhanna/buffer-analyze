@@ -11,6 +11,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
           profileId: store.getState().profiles.selectedProfileId,
           chartId: action.chart_id,
           name: action.name,
+          state: action.state,
         },
       }));
       break;

@@ -10,30 +10,37 @@ exports[`Snapshots PostsSummaryTable should render a "no data" state 1`] = `
     }
   >
     <div>
-      <h2
+      <header
         style={
           Object {
-            "margin": "2rem 0 1rem",
+            "alignItems": "baseline",
+            "display": "flex",
+            "justifyContent": "space-between",
           }
         }
       >
-        <span
+        <h2
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "margin": "2rem 0 1rem",
             }
           }
         >
-          Tweet 
-          summary for 
-          <span>
-            yesterday
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "2rem",
+                "fontWeight": 600,
+              }
+            }
+          >
+            Tweet 
+            summary
           </span>
-        </span>
-      </h2>
+        </h2>
+      </header>
       <div
         id="js-dom-to-png-posts-summary"
         style={
@@ -129,30 +136,37 @@ exports[`Snapshots PostsSummaryTable should render a loading state 1`] = `
     }
   >
     <div>
-      <h2
+      <header
         style={
           Object {
-            "margin": "2rem 0 1rem",
+            "alignItems": "baseline",
+            "display": "flex",
+            "justifyContent": "space-between",
           }
         }
       >
-        <span
+        <h2
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "margin": "2rem 0 1rem",
             }
           }
         >
-          Post 
-          summary for 
-          <span>
-            yesterday
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "2rem",
+                "fontWeight": 600,
+              }
+            }
+          >
+            Post 
+            summary
           </span>
-        </span>
-      </h2>
+        </h2>
+      </header>
       <div
         id="js-dom-to-png-posts-summary"
         style={
@@ -282,30 +296,37 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
     }
   >
     <div>
-      <h2
+      <header
         style={
           Object {
-            "margin": "2rem 0 1rem",
+            "alignItems": "baseline",
+            "display": "flex",
+            "justifyContent": "space-between",
           }
         }
       >
-        <span
+        <h2
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "margin": "2rem 0 1rem",
             }
           }
         >
-          Post 
-          summary for 
-          <span>
-            yesterday
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "2rem",
+                "fontWeight": 600,
+              }
+            }
+          >
+            Post 
+            summary
           </span>
-        </span>
-      </h2>
+        </h2>
+      </header>
       <div
         id="js-dom-to-png-posts-summary"
         style={

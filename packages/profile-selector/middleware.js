@@ -1,12 +1,34 @@
+
+import { push, LOCATION_CHANGE } from 'react-router-redux';
+import { actions as reportActions } from '@bufferapp/report-list';
 import { actionTypes } from '@bufferapp/async-data-fetch';
-import { push } from 'react-router-redux';
 import { actions as profilesActions, actionTypes as profileActionTypes } from './reducer';
 
+
 const INSIGHTS_PATH_REGEX = /insights\/(\w+)\/(\w+)\/(.*)$/;
+const REPORTS_PATH_REGEX = /reports\/(.*)$/;
+
 
 const filterProfilesByService = (profiles, service) => (
   profiles.filter(p => p.service === service)
 );
+
+const getProfileIdAndServiceFromRoute = (state) => {
+  const currentRoute = state.router.location.pathname;
+  const routeMatch = currentRoute.match(INSIGHTS_PATH_REGEX);
+  let data;
+  if (routeMatch) {
+    const [
+      route, // eslint-disable-line no-unused-vars
+      service,
+      profileId,
+    ] = routeMatch;
+    data = [profileId, service];
+  } else {
+    data = false;
+  }
+  return data;
+};
 
 const getRouteParams = (path) => {
   const [
@@ -20,24 +42,6 @@ const getRouteParams = (path) => {
     profileId,
     pageRoute,
   };
-};
-
-const getProfileIdAndServiceFromRoute = (state) => {
-  const currentRoute = state.router.location.pathname;
-  const routeMatch = currentRoute.match(INSIGHTS_PATH_REGEX);
-  let data;
-  // has to match only to service
-  if (routeMatch) {
-    const [
-      route, // eslint-disable-line no-unused-vars
-      service,
-      profileId,
-    ] = routeMatch;
-    data = [profileId, service];
-  } else {
-    data = null;
-  }
-  return data;
 };
 
 const getProfileRoute = (state, id) => {
@@ -81,6 +85,11 @@ export default ({ dispatch, getState }) => next => (action) => {
       }
       break;
     }
+    case LOCATION_CHANGE:
+      if (action.payload.pathname.match(REPORTS_PATH_REGEX)) {
+        dispatch(reportActions.viewReport(action.payload.pathname.match(REPORTS_PATH_REGEX)[1]));
+      }
+      break;
     default:
       break;
   }
