@@ -13,7 +13,7 @@ selectedMetrics[0].squaredIcon = true;
 
 storiesOf('ContextualCompare')
   .addDecorator(checkA11y)
-  .add('[TESTED] Should render in Presets mode', () => (
+  .add('[TESTED] Should render in Presets mode with multiple metrics for each category', () => (
     <div
       style={{
         width: '750px',
@@ -24,6 +24,27 @@ storiesOf('ContextualCompare')
         metrics={mockMetrics}
         presets={mockPresets}
         selectedPreset={0}
+        data={mockDailyData}
+        mode={0}
+        profileService="facebook"
+        timezone="Etc/UTC"
+        selectMode={actionLogger('selectMode')}
+        selectPreset={actionLogger('selectPreset')}
+        togglePresetDropdown={actionLogger('openPresetDropdown')}
+      />
+    </div>
+  ))
+  .add('[TESTED] Should render in Presets mode with days', () => (
+    <div
+      style={{
+        width: '750px',
+      }}
+    >
+      <ContextualCompare
+        selectedMetrics={selectedMetrics}
+        metrics={mockMetrics}
+        presets={mockPresets}
+        selectedPreset={2}
         data={mockDailyData}
         mode={0}
         profileService="facebook"
