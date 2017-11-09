@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import {
   geyser,
+  white,
 } from '@bufferapp/components/style/color';
 
 import {
@@ -21,15 +22,18 @@ const gridStyle = {
   flexWrap: 'wrap',
   padding: '0',
   margin: '0 auto',
-  borderTop: `solid 1px ${geyser}`,
-  borderLeft: `solid 1px ${geyser}`,
-  borderRadius: '2px',
 };
 
 const gridContainer = {
-  minHeight: '12rem',
   position: 'relative',
-  margin: '1rem 0 1.5rem',
+  padding: '1.5rem',
+};
+
+const chartContainer = {
+  background: `${white}`,
+  border: '1px solid #E2E8ED',
+  boxShadow: '0px 0px 10px rgba(48, 71, 89, 0.05)',
+  borderRadius: '5px',
 };
 
 export const Table = ({ metrics }) =>
@@ -49,7 +53,7 @@ Table.propTypes = {
 const SummaryTable = ({ metrics, loading, profileService, startDate, endDate }) => {
   let content = null;
   if (loading) {
-    content = <Loading active text="Summary loading..." />;
+    content = <Loading active noBorder text="Summary loading..." />;
   } else if (metrics.length === 0) {
     content = <NoData />;
   } else {
@@ -57,7 +61,7 @@ const SummaryTable = ({ metrics, loading, profileService, startDate, endDate }) 
   }
 
   return (
-    <div>
+    <div style={chartContainer}>
       <ChartHeader>
         <Title profileService={profileService} startDate={startDate} endDate={endDate} />
         <AddReport chart="summary-table" />

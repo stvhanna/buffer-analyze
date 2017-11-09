@@ -13,7 +13,7 @@ import ContextualCompare from '@bufferapp/contextual-compare';
 const OverviewTab = ({ match }) => (
   <div>
     <SummaryTable profileService={match.params.service} />
-    <Divider marginTop="1rem" marginBottom="1rem" />
+    <Divider marginTop="1rem" marginBottom="1rem" color="transparent" />
     <AverageTable />
     {match.params.service === 'twitter' && <HourlyChart />}
     <CompareChart />

@@ -4,7 +4,9 @@ import PropTypes from 'prop-types';
 const header = {
   display: 'flex',
   justifyContent: 'space-between',
-  alignItems: 'baseline',
+  alignItems: 'center',
+  padding: '1.5rem',
+  borderBottom: '1px solid #ECEEEF',
 };
 
 const Header = ({ children }) =>
