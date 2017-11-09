@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/report",
-  "version": "0.7.1",
+  "version": "0.8.0",
   "description": "Report detail",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
     "@bufferapp/posts-summary-table": "^0.7.1",
     "@bufferapp/report-list": "^0.7.1",
     "@bufferapp/summary-table": "^0.7.1",
-    "@bufferapp/top-posts-table": "^0.7.1",
+    "@bufferapp/top-posts-table": "^0.8.0",
     "styled-components": "^2.2.1"
   },
   "devDependencies": {
