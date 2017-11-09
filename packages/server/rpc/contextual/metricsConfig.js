@@ -1,47 +1,52 @@
 const facebookConfig = {
   posts_count: {
     label: 'Posts',
-    color: '#3A92D3',
+    key: 'posts_count',
   },
 
   page_engagements: {
     label: 'Engagements',
-    color: '#FDA3F3',
+    key: 'page_engagements',
   },
 
   post_impressions: {
     label: 'Post Impressions',
-    color: '#8AC6DE',
+    key: 'post_impressions',
+  },
+
+  post_reach: {
+    label: 'Post Reach',
+    key: 'post_reach',
   },
 
   post_clicks: {
     label: 'Post Clicks',
-    color: '#98E8B2',
+    key: 'post_clicks',
   },
 
   reactions: {
     label: 'Reactions',
-    color: '#FD8F90',
+    key: 'reactions',
   },
 
   shares: {
     label: 'Shares',
-    color: '#D2C3AB',
+    key: 'shares',
   },
 
   comments: {
     label: 'Comments',
-    color: '#EFDF00',
+    key: 'comments',
   },
 
   followers: {
     label: 'Total Fans',
-    color: '#FDA3F3',
+    key: 'followers',
   },
 
   new_followers: {
     label: 'New Fans',
-    color: '#D7B5FD',
+    key: 'new_followers',
   },
 };
 
@@ -52,6 +57,7 @@ module.exports = {
       'posts_count',
       'page_engagements',
       'post_impressions',
+      'post_reach',
       'post_clicks',
       'reactions',
       'shares',

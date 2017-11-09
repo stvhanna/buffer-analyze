@@ -87,7 +87,7 @@ const MetricsDropdown = ({
 MetricsDropdown.propTypes = {
   metrics: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string.isRequired,
-    color: PropTypes.string.isRequired,
+    color: PropTypes.string,
   })).isRequired,
   secondary: PropTypes.bool,
   isDropdownOpen: PropTypes.bool,

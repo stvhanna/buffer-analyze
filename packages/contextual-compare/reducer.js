@@ -49,6 +49,8 @@ function selectMetricByLabel(
 
 export default (state = initialState, action) => {
   switch (action.type) {
+    case `contextual_${asyncDataFetchActionTypes.FETCH_START}`:
+      return initialState;
     case `contextual_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
       return Object.assign({}, state, {
         data: action.result.daily,

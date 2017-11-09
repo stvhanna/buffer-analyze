@@ -39,7 +39,7 @@ const DropdownItem = ({ metric, handleClick, selected }) => (
 DropdownItem.propTypes = {
   metric: PropTypes.shape({
     label: PropTypes.string.isRequired,
-    color: PropTypes.string.isRequired,
+    color: PropTypes.string,
   }).isRequired,
   handleClick: PropTypes.func.isRequired,
   selected: PropTypes.bool,
