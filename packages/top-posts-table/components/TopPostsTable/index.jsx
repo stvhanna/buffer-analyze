@@ -12,6 +12,8 @@ import {
   ChartHeader,
 } from '@bufferapp/analyze-shared-components';
 
+import AddReport from '@bufferapp/add-report';
+
 import Title from '../Title';
 import PostItem from '../PostItem';
 import TopPostsHeader from '../TopPostsHeader';
@@ -59,14 +61,72 @@ function getMaxMetricValue(posts, metrics) {
   return max;
 }
 
+export const Table = ({ metrics, timezone, service }) => {
+  const topPosts = metrics;
+  const engagementMetrics = metricsConfig[service].topPostsEngagementMetrics;
+  const audienceMetrics = metricsConfig[service].topPostsAudienceMetrics;
+
+  const maxEngagementValue = getMaxMetricValue(topPosts, engagementMetrics);
+  const maxAudienceValue = getMaxMetricValue(topPosts, audienceMetrics);
+
+  return (
+    <aside className={chartContainer}>
+      <header>
+        <ul className={chartColumnHeader}>
+          <li className={contentColumn}>
+            <Text size="mini">Posts and Stories</Text>
+          </li>
+          <li className={metricColumn}>
+            <Text size="mini">Engagements</Text>
+          </li>
+          <li className={metricColumn}>
+            <Text size="mini">Audience</Text>
+          </li>
+        </ul>
+      </header>
+      <ul className={postsContainer}>
+        {topPosts.map(post =>
+          <PostItem
+            key={post.id}
+            timezone={timezone}
+            post={post}
+            maxEngagementValue={maxEngagementValue}
+            maxAudienceValue={maxAudienceValue}
+            engagementMetrics={engagementMetrics}
+            audienceMetrics={audienceMetrics}
+          />,
+        )}
+      </ul>
+    </aside>
+  );
+};
+
+Table.propTypes = {
+  timezone: PropTypes.string.isRequired,
+  service: PropTypes.string.isRequired,
+  metrics: PropTypes.arrayOf(PropTypes.shape({
+    date: PropTypes.number,
+    id: PropTypes.string,
+    serviceLink: PropTypes.string,
+    statistics: PropTypes.shape({
+      comments: PropTypes.number,
+      postClicks: PropTypes.number,
+      postImpressions: PropTypes.number,
+      postReach: PropTypes.number,
+      reactions: PropTypes.number,
+      shares: PropTypes.number,
+    }),
+    text: PropTypes.string,
+    type: PropTypes.string,
+  })).isRequired,
+};
+
 const TopPostsTable = (props) => {
   const {
-    topPosts,
+    metrics,
     profileService,
     loading,
-    profileTimezone,
-    startDate,
-    endDate,
+    timezone,
     isDropdownOpen,
     isDescendingSelected,
     selectedMetric,
@@ -77,15 +137,11 @@ const TopPostsTable = (props) => {
   } = props;
 
   // TODO: Move this to RPC endpoint and pass it as a prop to TopPostTable components
+  const topPosts = metrics;
   const allPostMetrics = metricsConfig[profileService].postMetrics;
-  const engagementMetrics = metricsConfig[profileService].topPostsEngagementMetrics;
-  const audienceMetrics = metricsConfig[profileService].topPostsAudienceMetrics;
 
   const initialSelectedMetric = Object.keys(selectedMetric).length === 0 ?
     defaultSortMetrics[profileService] : selectedMetric;
-
-  const maxEngagementValue = getMaxMetricValue(topPosts, engagementMetrics);
-  const maxAudienceValue = getMaxMetricValue(topPosts, audienceMetrics);
 
   let content = null;
   if (loading) {
@@ -105,21 +161,11 @@ const TopPostsTable = (props) => {
           handlePostsCountClick={handlePostsCountClick}
           activePostsCount={activePostsCount}
         />
-        <aside className={chartContainer}>
-          <ul className={postsContainer}>
-            {topPosts.map(post =>
-              <PostItem
-                key={post.id}
-                profileTimezone={profileTimezone}
-                post={post}
-                maxEngagementValue={maxEngagementValue}
-                maxAudienceValue={maxAudienceValue}
-                engagementMetrics={engagementMetrics}
-                audienceMetrics={audienceMetrics}
-              />,
-            )}
-          </ul>
-        </aside>
+        <Table
+          metrics={metrics}
+          timezone={timezone}
+          service={profileService}
+        />
       </div>
     );
   }
@@ -127,7 +173,15 @@ const TopPostsTable = (props) => {
   return (
     <ChartCard>
       <ChartHeader>
-        <Title startDate={startDate} endDate={endDate} />
+        <Title />
+        <AddReport
+          chart="top-posts"
+          state={{
+            descending: isDescendingSelected,
+            sortBy: selectedMetric.apiKey,
+            limit: activePostsCount,
+          }}
+        />
       </ChartHeader>
       <div style={gridContainer}>
         {content}
@@ -138,18 +192,14 @@ const TopPostsTable = (props) => {
 
 TopPostsTable.defaultProps = {
   loading: false,
-  startDate: null,
-  endDate: null,
   isDropdownOpen: false,
 };
 
 TopPostsTable.propTypes = {
   loading: PropTypes.bool,
-  profileTimezone: PropTypes.string.isRequired,
+  timezone: PropTypes.string.isRequired,
   profileService: PropTypes.string.isRequired,
-  startDate: PropTypes.number,
-  endDate: PropTypes.number,
-  topPosts: PropTypes.arrayOf(PropTypes.shape({
+  metrics: PropTypes.arrayOf(PropTypes.shape({
     date: PropTypes.number,
     id: PropTypes.string,
     serviceLink: PropTypes.string,

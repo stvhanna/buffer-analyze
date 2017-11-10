@@ -144,7 +144,7 @@ storiesOf('PostItem')
             value: 0,
           },
         ]}
-        profileTimezone={'America/Los_Angeles'}
+        timezone={'America/Los_Angeles'}
       />
     </div>
   ))
@@ -161,7 +161,7 @@ storiesOf('PostItem')
         maxAudienceValue={200000}
         engagementMetrics={[]}
         audienceMetrics={[]}
-        profileTimezone={'America/Los_Angeles'}
+        timezone={'America/Los_Angeles'}
       />
     </div>
   ));

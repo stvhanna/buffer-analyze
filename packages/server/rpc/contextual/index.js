@@ -5,9 +5,9 @@ const DateRange = require('../utils/DateRange');
 const METRICS_CONFIG = require('./metricsConfig');
 const PRESETS = require('./presets');
 
-const requestDailyTotals = (profileId, dateRange, accessToken) =>
+const requestContextual = (profileId, dateRange, accessToken) =>
   rp({
-    uri: `${process.env.API_ADDR}/1/profiles/${profileId}/analytics/daily_totals.json`,
+    uri: `${process.env.API_ADDR}/1/profiles/${profileId}/analytics/contextual.json`,
     method: 'GET',
     strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
     qs: {
@@ -18,48 +18,23 @@ const requestDailyTotals = (profileId, dateRange, accessToken) =>
     json: true,
   });
 
-const summarize = (
-  metricKey,
-  currentPeriod,
-  currentPeriodPostCount,
-  profileService,
-) => {
-  const value = currentPeriod[metricKey] || 0;
-  const label = METRICS_CONFIG[profileService].config[metricKey].label;
-  if (label) {
-    return {
-      key: metricKey,
-      label,
-      color: METRICS_CONFIG[profileService].config[metricKey].color,
-      value,
-      postsCount: currentPeriodPostCount,
-    };
-  }
-  return null;
-};
-
 function formatDaily(
   dailyTotalsResult,
   profileService,
 ) {
-  const currentPeriodDays = Object.keys(dailyTotalsResult);
-  const daily = Array.from(currentPeriodDays, day => ({
-    day,
-    currentPeriodMetrics: dailyTotalsResult[day],
-    currentPeriodPostCount: dailyTotalsResult[day].posts_count,
-  })).map((data) => {
-    const metricKeys = METRICS_CONFIG[profileService].orderedKeys;
+  const daily = dailyTotalsResult.map((dayData) => {
+    const postsCountMetric = dayData.metrics.find(m => m.key === 'posts_count');
+    const metrics = dayData.metrics.map(metric => Object.assign({},
+      {
+        postsCount: postsCountMetric ? postsCountMetric.value : 0,
+      },
+      METRICS_CONFIG[profileService].config[metric.key],
+      metric,
+    ));
     return {
-      day: data.day,
-      previousPeriodDay: data.previousPeriodDay,
-      metrics: metricKeys.map(metricKey =>
-        summarize(
-          metricKey,
-          data.currentPeriodMetrics,
-          data.currentPeriodPostCount,
-          profileService,
-        ),
-      ).filter(metric => metric !== null),
+      day: dayData.category ? null : String(dayData.day),
+      category: dayData.category,
+      metrics,
     };
   });
   return daily;
@@ -71,86 +46,48 @@ function getMetrics(profileService) {
   );
 }
 
-function processValueForPresetMetric(
-  metricConfig,
-  data,
-) {
-  let value = 0;
-  switch (metricConfig.aggregationRule) {
-    // if no aggregation rule is specified we are expecting just one metric Key
-    default:
-      value = data[metricConfig.key] || 0;
-      break;
-  }
-  return value;
-}
-
-function formatDailyDataForPresets(
-  yAxis,
-  dailyTotalsResult,
-) {
-  const currentPeriodDays = Object.keys(dailyTotalsResult);
-  const daily = Array.from(currentPeriodDays, day => ({
-    day,
-    dayData: dailyTotalsResult[day],
-    currentPeriodPostCount: dailyTotalsResult[day].posts_count,
-  })).map((data) => {
-    const presetMetric = yAxis.metrics;
-    return {
-      day: data.day,
-      metrics: presetMetric.map(metricConfig => Object.assign({},
-        metricConfig,
-        {
-          value: processValueForPresetMetric(metricConfig, data.dayData),
-          postsCount: data.currentPeriodPostCount,
-        },
+function formatPresetYAxis(yAxis, profileService) {
+  return Object.assign({},
+    yAxis,
+    {
+      metrics: yAxis.metrics.map(metric => Object.assign({},
+        METRICS_CONFIG[profileService].config[metric.key],
+        metric,
       )),
-    };
-  });
-  return { data: daily };
-}
-
-function processPreset(
-  preset,
-  dailyTotalsResult,
-) {
-  let data = [];
-
-  switch (preset.xAxis) {
-    default:
-      data = formatDailyDataForPresets(preset.yAxis, dailyTotalsResult);
-      break;
-  }
-
-  return Object.assign(
-    {},
-    preset,
-    data,
+    },
   );
 }
 
 function formatPresets(
-  dailyTotalsResult,
+  presetsResults,
   profileService,
 ) {
-  return PRESETS[profileService].map(
-    preset => processPreset(preset, dailyTotalsResult),
-  );
+  return presetsResults
+    .filter(preset => Object.keys(PRESETS[profileService]).indexOf(preset.presetKey) >= 0)
+    .map(
+      preset => Object.assign({},
+        preset,
+        PRESETS[profileService][preset.presetKey],
+        {
+          data: formatDaily(preset.data, profileService),
+          yAxis: formatPresetYAxis(preset.yAxis, profileService),
+        },
+      ));
 }
 
 function formatData(
-  dailyTotalsResult,
+  contextualResponse,
   profileService,
 ) {
   const daily = formatDaily(
-    dailyTotalsResult,
+    contextualResponse.daily,
     profileService,
   );
 
   const metrics = getMetrics(profileService);
 
   const presets = formatPresets(
-    dailyTotalsResult,
+    contextualResponse.presets,
     profileService,
   );
 
@@ -168,20 +105,15 @@ module.exports = method(
     const end = moment.unix(endDate).format('MM/DD/YYYY');
     const start = moment.unix(startDate).format('MM/DD/YYYY');
     const dateRange = new DateRange(start, end);
-    const dailyTotals = requestDailyTotals(profileId, dateRange, session.accessToken);
-
-    return Promise
-      .all([
-        dailyTotals,
-      ])
-      .then((response) => {
-        const dailyTotalsResult = response[0].response;
-
-        return formatData(
-          dailyTotalsResult,
-          profileService,
-        );
-      })
+    return requestContextual(
+      profileId,
+      dateRange,
+      session.accessToken,
+    )
+      .then(response => formatData(
+        response.response,
+        profileService,
+      ))
       .catch(() => ({
         daily: [],
         metrics: [],

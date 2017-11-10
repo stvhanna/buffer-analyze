@@ -44,13 +44,11 @@ CustomModeHeader.propTypes = {
   isPrimaryMetricDropdownOpen: PropTypes.bool.isRequired,
   isSecondaryMetricDropdownOpen: PropTypes.bool.isRequired,
   metrics: PropTypes.arrayOf(PropTypes.shape({
-    color: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
     mode: PropTypes.number,
   })).isRequired,
   mode: PropTypes.number.isRequired,
   selectedMetrics: PropTypes.arrayOf(PropTypes.shape({
-    color: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
     mode: PropTypes.number,
   })).isRequired,

@@ -6,6 +6,8 @@ import {
 import { Table as SummaryTable, Title as SummaryTitle } from '@bufferapp/summary-table';
 import { Table as PostsSummary, Title as PostsSummaryTitle } from '@bufferapp/posts-summary-table';
 import { Table as AverageTable, Title as AverageTitle } from '@bufferapp/average-table';
+import { ChartContent as HourlyCharts, Title as HourlyTitle } from '@bufferapp/hourly-chart';
+import { Table as TopPostsTable, Title as TopPostsTitle } from '@bufferapp/top-posts-table';
 import styled from 'styled-components';
 
 const CHARTS = {
@@ -20,6 +22,14 @@ const CHARTS = {
   average: {
     chart: AverageTable,
     title: AverageTitle,
+  },
+  'hourly-engagements': {
+    chart: HourlyCharts,
+    title: HourlyTitle,
+  },
+  'top-posts': {
+    chart: TopPostsTable,
+    title: TopPostsTitle,
   },
 };
 
@@ -59,6 +69,7 @@ const ChartFactory = ({ charts }) =>
       {React.createElement(CHARTS[chart.chart_id].chart, {
         ...chart,
         timezone: chart.profile.timezone,
+        service: chart.profile.service,
       })}
     </Separator>
   ));

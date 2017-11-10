@@ -4,14 +4,16 @@ const RPC_ENDPOINTS = {
   'summary-table': require('../summary'), // eslint-disable-line global-require
   'posts-summary': require('../postsSummary'), // eslint-disable-line global-require
   average: require('../average'), // eslint-disable-line global-require
+  'hourly-engagements': require('../hourly'), // eslint-disable-line global-require
+  'top-posts': require('../topPosts'), // eslint-disable-line global-require
 };
 
 const requestChartData = (chart, startDate, endDate, session) =>
-  RPC_ENDPOINTS[chart.chart_id].fn({
+  RPC_ENDPOINTS[chart.chart_id].fn(Object.assign({
     profileId: chart.profile_id,
     startDate,
     endDate,
-  }, { session });
+  }, chart.state), { session });
 
 module.exports = method(
   'get_report',
@@ -20,10 +22,14 @@ module.exports = method(
     Promise
       .all(charts.map(chart => requestChartData(chart, startDate, endDate, session)))
       .then(chartMetrics =>
-        charts.map((chart, index) => Object.assign(chart, {
-          metrics: chartMetrics[index],
-        })),
-      )
+        charts.map((chart, index) => {
+          if (chartMetrics[index].metrics) {
+            return Object.assign(chart, chartMetrics[index]);
+          }
+          return Object.assign(chart, {
+            metrics: chartMetrics[index],
+          });
+        }))
   ,
 );
 

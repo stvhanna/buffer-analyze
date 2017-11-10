@@ -32,7 +32,6 @@ export const highChartsConfigYAxis = [
     max: null,
     min: 0,
     softMin: 0,
-    minRange: 8,
     maxPadding: 0.1,
     minPadding: 0.1,
     allowDecimals: false,
@@ -55,7 +54,6 @@ export const highChartsConfigYAxis = [
     max: null,
     min: 0,
     softMin: 0,
-    minRange: 8,
     maxPadding: 0.1,
     minPadding: 0.1,
     allowDecimals: false,
@@ -114,23 +112,26 @@ export default {
         },
       },
     },
+    column: {
+      colorByPoint: true,
+    },
   },
   tooltip: {
     shared: true,
     crosshairs: true,
     formatter() {
-      const primaryMetric = this.points[0].point;
-      const secondaryMetric = this.points[1].point;
+      let primaryMetric = this.points[0].point;
+      let secondaryMetric = this.points.length > 1 ? this.points[1].point : null;
+      // on the tooltip for presets the post_count metric should always be the seconday one
+      if (!primaryMetric.isCustomMode && secondaryMetric && primaryMetric.metricData.key === 'posts_count') {
+        primaryMetric = secondaryMetric;
+        secondaryMetric = this.points[0].point;
+      }
       return reactDOM.renderToStaticMarkup(
         <ChartTooltip
           day={primaryMetric.x}
-          profileService={primaryMetric.profileService}
-          timezone={primaryMetric.timezone}
-          postsCount={primaryMetric.metricData.postsCount}
-          primaryMetric={primaryMetric.metricData}
-          secondaryMetric={secondaryMetric.metricData}
-          isCustomMode={primaryMetric.isCustomMode}
-          presetConfig={primaryMetric.presetConfig}
+          secondaryMetric={secondaryMetric ? secondaryMetric.metricData : null}
+          {...primaryMetric}
         />,
       );
     },

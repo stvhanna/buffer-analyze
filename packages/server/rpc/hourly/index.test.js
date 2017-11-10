@@ -55,6 +55,48 @@ describe('rpc/hourly', () => {
       label: 'Engagements',
       hourlyMetrics: [780, 1581, 788, 832, 664, 1909, 1773, 4307, 2006, 1403, 1219, 1232, 5300, 3174, 2044, 1987, 2445, 1146, 896, 2706, 2293, 1287, 1295, 823], // eslint-disable-line max-len
     });
+    expect(hourlyData.selectedMetric).toBe(undefined);
+    expect(hourlyData.secondaryMetric).toBe(undefined);
+  });
+
+  it('returns selectedMetric if selected label is passed as parameter', async () => {
+    const endDate = moment().subtract(1, 'days').unix();
+    const startDate = moment().subtract(7, 'days').unix();
+    const selectedMetric = 'Engagements';
+    rp.mockReturnValueOnce(Promise.resolve(response));
+
+    const hourlyData = await hourly.fn({
+      startDate,
+      endDate,
+      profileId,
+      selectedMetric,
+    }, session);
+
+    shouldCallHourlyTotalsEndpointWith(profileId, token, startDate, endDate);
+    expect(hourlyData.selectedMetric).toEqual({
+      label: 'Engagements',
+      hourlyMetrics: [780, 1581, 788, 832, 664, 1909, 1773, 4307, 2006, 1403, 1219, 1232, 5300, 3174, 2044, 1987, 2445, 1146, 896, 2706, 2293, 1287, 1295, 823], // eslint-disable-line max-len
+    });
+    expect(hourlyData.secondaryMetric).toBe(undefined);
+  });
+
+  it('returns secondaryMetric if secondary metric label is passed as parameter', async () => {
+    const endDate = moment().subtract(1, 'days').unix();
+    const startDate = moment().subtract(7, 'days').unix();
+    const secondaryMetric = 'Likes';
+    rp.mockReturnValueOnce(Promise.resolve(response));
+
+    const hourlyData = await hourly.fn({
+      startDate,
+      endDate,
+      profileId,
+      secondaryMetric,
+    }, session);
+
+    shouldCallHourlyTotalsEndpointWith(profileId, token, startDate, endDate);
+    expect(hourlyData.secondaryMetric).toEqual({
+      label: 'Likes',
+      hourlyMetrics: [66, 157, 53, 74, 49, 237, 167, 270, 148, 87, 70, 71, 227, 142, 107, 321, 270, 102, 56, 178, 153, 75, 65, 38], // eslint-disable-line max-len
+    });
   });
 });
-

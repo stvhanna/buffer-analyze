@@ -9,6 +9,7 @@ import { CURRENT_PERIOD_RESPONSE, PAST_PERIOD_RESPONSE } from './mockResponses';
 
 describe('rpc/summary', () => {
   const profileId = '123159ad';
+  const profileService = 'facebook';
   const token = 'some token';
 
   it('should have the expected name', () => {
@@ -29,6 +30,7 @@ describe('rpc/summary', () => {
       startDate: start,
       endDate: end,
       profileId,
+      profileService,
     }, {
       session: {
         accessToken: token,
@@ -57,6 +59,7 @@ describe('rpc/summary', () => {
       startDate,
       endDate,
       profileId,
+      profileService,
     }, {
       session: {
         accessToken: token,
@@ -84,7 +87,7 @@ describe('rpc/summary', () => {
     rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_RESPONSE));
     rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_RESPONSE));
 
-    const summaryData = await summary.fn({ profileId }, {
+    const summaryData = await summary.fn({ profileId, profileService }, {
       session: {
         accessToken: token,
       },

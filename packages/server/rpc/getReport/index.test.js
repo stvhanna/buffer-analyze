@@ -61,4 +61,53 @@ describe('rpc/get_report', () => {
 
     expect(report[0].metrics).toEqual(metrics);
   });
+
+  it('if chart metrics is an object with a metrics attribute, we merge the full object into the chart', async () => {
+    const charts = [{
+      chart_id: 'summary-table',
+      profile_id: '12351wa',
+    }];
+
+    const endDate = moment().subtract(1, 'days').unix();
+    const startDate = moment().subtract(7, 'days').unix();
+    const metricsEmbeddedInObject = {
+      metrics: [1, 2, 3, 4],
+      posts: ['a post', 'another post'],
+    };
+    summary.fn = jest.fn();
+    summary.fn.mockReturnValueOnce(Promise.resolve(metricsEmbeddedInObject));
+
+    const report = await getReport.fn({ startDate, endDate, charts }, { session });
+
+    expect(report[0].metrics).toEqual(metricsEmbeddedInObject.metrics);
+    expect(report[0].posts).toEqual(metricsEmbeddedInObject.posts);
+  });
+
+  it('destructures over state as arguments for the charts rpc method', async () => {
+    const charts = [{
+      chart_id: 'summary-table',
+      profile_id: '12351wa',
+      state: {
+        service: 'facebook',
+      },
+    }];
+
+    const endDate = moment().subtract(1, 'days').unix();
+    const startDate = moment().subtract(7, 'days').unix();
+    const metricsEmbeddedInObject = {
+      metrics: [1, 2, 3, 4],
+      posts: ['a post', 'another post'],
+    };
+    summary.fn = jest.fn();
+    summary.fn.mockReturnValueOnce(Promise.resolve(metricsEmbeddedInObject));
+
+    await getReport.fn({ startDate, endDate, charts }, { session });
+
+    expect(summary.fn.mock.calls[0][0]).toEqual({
+      profileId: '12351wa',
+      service: 'facebook',
+      endDate,
+      startDate,
+    });
+  });
 });

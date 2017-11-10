@@ -40,19 +40,23 @@ function getMaxValue(data) {
   return max;
 }
 
-function setSecondaryScale([primarySeries, secondarySeries]) {
+function setyAxisScale([primarySeries, secondarySeries], xAxis) {
   // we are using two scales only if there is a siginificative difference in scale
   const yAxisMax = getMaxValue(primarySeries.data);
-  const secondaryYAxisMax = getMaxValue(secondarySeries.data);
-  const maxScaleDifference = 0.7;
-  let scaleDifference = 0;
-  if (yAxisMax > secondaryYAxisMax) {
-    scaleDifference = (Math.log10(yAxisMax) - Math.log10(secondaryYAxisMax));
-  } else {
-    scaleDifference = (Math.log10(secondaryYAxisMax) - Math.log10(yAxisMax));
-  }
-  if (scaleDifference >= maxScaleDifference) {
-    secondarySeries.yAxis = 1;
+  if (secondarySeries) {
+    const secondaryYAxisMax = getMaxValue(secondarySeries.data);
+    const maxScaleDifference = 0.7;
+    let scaleDifference = 0;
+    if (yAxisMax > secondaryYAxisMax) {
+      scaleDifference = (Math.log10(yAxisMax) - Math.log10(secondaryYAxisMax));
+    } else {
+      scaleDifference = (Math.log10(secondaryYAxisMax) - Math.log10(yAxisMax));
+    }
+    if (scaleDifference >= maxScaleDifference && !xAxis.categories) {
+      secondarySeries.yAxis = 1;
+    } else {
+      secondarySeries.yAxis = 0;
+    }
   }
 }
 
@@ -68,26 +72,31 @@ function prepareSeries(
   let color = '#9B9FA3';
   let metricIndex = 0;
 
-  function mapDataToPoint(day) {
+  function mapDataToPoint(dailyEntry) {
     let value = 0;
-    const metric = day.metrics[metricIndex];
+    const metric = dailyEntry.metrics[metricIndex];
     if (metric) {
       value = metric.value;
       color = metric.color ? metric.color : metricsColor[metric.key];
     }
 
-    const dayStartTimestamp = moment.tz(Number(day.day), timezone).startOf('day').valueOf();
-
-    return {
-      x: dayStartTimestamp,
+    const data = {
       y: value,
       profileService,
       timezone,
       isCustomMode,
-      metricData: Object.assign({}, metric),
+      metricData: Object.assign({}, metric, { category: dailyEntry.category }),
       presetConfig,
+      metrics: dailyEntry.metrics,
       pointPlacement: getTickInterval(dailyMetrics),
     };
+
+    if (dailyEntry.day) {
+      const dayStartTimestamp = moment.tz(Number(dailyEntry.day), timezone).startOf('day').valueOf();
+      data.x = dayStartTimestamp;
+    }
+
+    return data;
   }
 
   while (series.length < dailyMetrics[0].metrics.length) {
@@ -107,7 +116,34 @@ function prepareSeries(
       },
       lineColor: color,
       data: seriesData,
+      states: {},
     });
+
+    if (presetConfig && presetConfig.type) {
+      seriesConfig.type = presetConfig.type;
+
+      if (presetConfig.type === 'column') {
+        seriesConfig.colors = [{
+          linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
+          stops: [
+            [0, fadeColor(color, 0.6)],
+            [1, fadeColor(color, 0)],
+          ],
+        }];
+        seriesConfig.borderColor = seriesConfig.color;
+        seriesConfig.states = {
+          hover: {
+            color: {
+              linearGradient: { x1: 0, y1: 0 },
+              stops: [
+                [0, color],
+              ],
+            },
+            brightness: 0.0,
+          },
+        };
+      }
+    }
 
     series.push(seriesConfig);
     metricIndex += 1;
@@ -124,9 +160,20 @@ function prepareData(
 ) {
   const config = Object.assign({}, chartConfig);
 
-  config.xAxis.minorTickInterval = getTickInterval(dailyMetrics);
+  config.xAxis = Object.assign({}, chartConfig.xAxis, {
+    minorTickInterval: getTickInterval(dailyMetrics),
+  });
+
+  if (presetConfig && presetConfig.xAxis.categories) {
+    delete config.xAxis.labels.format;
+    delete config.xAxis.labels.align;
+    delete config.xAxis.type;
+    config.xAxis.crosshair = false;
+    config.xAxis.categories = presetConfig.xAxis.categories;
+  }
+
   config.series = prepareSeries(dailyMetrics, timezone, profileService, isCustomMode, presetConfig);
-  setSecondaryScale(config.series);
+  setyAxisScale(config.series, config.xAxis);
   return config;
 }
 
@@ -196,7 +243,7 @@ Chart.propTypes = {
   data: PropTypes.arrayOf(PropTypes.shape({
     day: PropTypes.string,
     metric: PropTypes.shape({
-      color: PropTypes.string.isRequired,
+      color: PropTypes.string,
       diff: PropTypes.number.isRequired,
       label: PropTypes.string.isRequired,
       value: PropTypes.number.isRequired,
@@ -215,7 +262,7 @@ Chart.propTypes = {
     data: PropTypes.arrayOf(PropTypes.shape({
       metrics: PropTypes.arrayOf(PropTypes.shape({
         key: PropTypes.string.isRequired,
-        label: PropTypes.string.isRequired,
+        label: PropTypes.string,
         value: PropTypes.number.isRequired,
       })),
     })),

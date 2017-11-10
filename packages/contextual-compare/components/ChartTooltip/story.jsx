@@ -20,7 +20,7 @@ storiesOf('ChartTooltip')
         postsCount={5}
         profileService="facebook"
         timezone="America/New_York"
-        primaryMetric={{
+        metricData={{
           color: '#fda3f3',
           label: 'Engagements',
           value: 42,
@@ -45,7 +45,7 @@ storiesOf('ChartTooltip')
         postsCount={5}
         profileService="facebook"
         timezone="America/New_York"
-        primaryMetric={{
+        metricData={{
           color: '#fda3f3',
           label: 'Posts',
           value: 2,
@@ -70,7 +70,7 @@ storiesOf('ChartTooltip')
         postsCount={5}
         profileService="facebook"
         timezone="America/New_York"
-        primaryMetric={{
+        metricData={{
           color: '#fda3f3',
           label: 'Fans',
           value: 2,
@@ -90,7 +90,7 @@ storiesOf('ChartTooltip')
         postsCount={5}
         profileService="facebook"
         timezone="America/New_York"
-        primaryMetric={{
+        metricData={{
           color: '#fda3f3',
           label: 'Fans',
           value: -15,

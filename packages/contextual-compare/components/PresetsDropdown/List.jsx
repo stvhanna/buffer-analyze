@@ -74,12 +74,17 @@ const dropdownItemContent = {
 
 const DropdownItem = ({ preset, handleClick, selectedPresetLabel }) => (
   <li style={dropdownItem}>
-    <Button noStyle fillContainer onClick={handleClick}>
+    <Button disabled={preset.data.length === 0} noStyle fillContainer onClick={handleClick}>
       <span style={dropdownItemContent}>
         <Text
           weight={preset.label === selectedPresetLabel ? 'bold' : null}
           size="small"
-        >{preset.label}</Text>
+        >{preset.label} </Text>
+        {preset.data.length === 0 && <Text
+          weight="bold" color="torchRed"
+          size="small"
+        > &nbsp;(no data) </Text>}
+
         <HelpButton data-description={preset.description}>?</HelpButton>
       </span>
     </Button>

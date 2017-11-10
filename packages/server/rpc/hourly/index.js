@@ -25,7 +25,7 @@ const METRICS = [{
 module.exports = method(
   'hourly',
   'fetch hourly insights for profiles',
-  ({ profileId, startDate, endDate }, { session }) => {
+  ({ profileId, startDate, endDate, selectedMetric, secondaryMetric }, { session }) => {
     const start = moment.unix(startDate).format('MM/DD/YYYY');
     const end = moment.unix(endDate).format('MM/DD/YYYY');
     return rp({
@@ -48,6 +48,8 @@ module.exports = method(
       return {
         postsCount,
         metrics,
+        selectedMetric: metrics.find(metric => metric.label === selectedMetric),
+        secondaryMetric: metrics.find(metric => metric.label === secondaryMetric),
       };
     });
   },
