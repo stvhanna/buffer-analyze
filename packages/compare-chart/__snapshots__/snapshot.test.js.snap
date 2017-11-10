@@ -974,7 +974,7 @@ exports[`Snapshots CompareChart should render a "no data" state 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "1.25rem",
                     "fontWeight": 400,
                   }
@@ -994,7 +994,7 @@ exports[`Snapshots CompareChart should render a "no data" state 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 400,
                   }
@@ -1153,7 +1153,7 @@ exports[`Snapshots CompareChart should render a loading state 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 400,
                   }
@@ -1253,9 +1253,9 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 700,
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 600,
                   }
                 }
               >
@@ -1364,9 +1364,9 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 600,
                           }
                         }
                       >
@@ -1438,9 +1438,9 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 600,
                           }
                         }
                       >
@@ -1544,9 +1544,9 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 600,
                           }
                         }
                       >
@@ -1684,8 +1684,8 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
                       "fontWeight": 400,
                     }
                   }
@@ -1750,9 +1750,9 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 700,
+                        "fontWeight": 600,
                       }
                     }
                   >
@@ -1813,7 +1813,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                       style={
                         Object {
                           "color": "torchRed",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontFamily": "\\"Open Sans\\", sans-serif",
                           "fontSize": "1.25rem",
                         }
                       }
@@ -1860,8 +1860,8 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
                       "fontWeight": 400,
                     }
                   }
@@ -1926,9 +1926,9 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 700,
+                        "fontWeight": 600,
                       }
                     }
                   >
@@ -2030,9 +2030,9 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 700,
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 600,
                   }
                 }
               >
@@ -2141,9 +2141,9 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 600,
                           }
                         }
                       >
@@ -2215,9 +2215,9 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 600,
                           }
                         }
                       >
@@ -2321,9 +2321,9 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 600,
                           }
                         }
                       >
@@ -2537,8 +2537,8 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
                       "fontWeight": 400,
                     }
                   }
@@ -2603,9 +2603,9 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 700,
+                        "fontWeight": 600,
                       }
                     }
                   >
@@ -2666,7 +2666,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                       style={
                         Object {
                           "color": "torchRed",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontFamily": "\\"Open Sans\\", sans-serif",
                           "fontSize": "1.25rem",
                         }
                       }
@@ -2713,8 +2713,8 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
                       "fontWeight": 400,
                     }
                   }
@@ -2779,9 +2779,9 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 700,
+                        "fontWeight": 600,
                       }
                     }
                   >
@@ -2883,9 +2883,9 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 700,
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 600,
                   }
                 }
               >
@@ -2994,9 +2994,9 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 600,
                           }
                         }
                       >
@@ -3068,9 +3068,9 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 600,
                           }
                         }
                       >
@@ -3174,9 +3174,9 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
+                            "fontWeight": 600,
                           }
                         }
                       >
@@ -3314,8 +3314,8 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
                       "fontWeight": 400,
                     }
                   }
@@ -3380,9 +3380,9 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 700,
+                        "fontWeight": 600,
                       }
                     }
                   >
@@ -3443,7 +3443,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                       style={
                         Object {
                           "color": "torchRed",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontFamily": "\\"Open Sans\\", sans-serif",
                           "fontSize": "1.25rem",
                         }
                       }
@@ -3490,8 +3490,8 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
                       "fontWeight": 400,
                     }
                   }
@@ -3556,9 +3556,9 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 700,
+                        "fontWeight": 600,
                       }
                     }
                   >
@@ -3639,8 +3639,8 @@ exports[`Snapshots Footer should render the table 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "0.75rem",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
                     "fontWeight": 400,
                   }
                 }
@@ -3705,9 +3705,9 @@ exports[`Snapshots Footer should render the table 1`] = `
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
                       "fontSize": "2rem",
-                      "fontWeight": 700,
+                      "fontWeight": 600,
                     }
                   }
                 >
@@ -3767,7 +3767,7 @@ exports[`Snapshots Footer should render the table 1`] = `
                     style={
                       Object {
                         "color": "shamrock",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
                         "fontSize": "1.25rem",
                       }
                     }
@@ -3814,8 +3814,8 @@ exports[`Snapshots Footer should render the table 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "0.75rem",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
                     "fontWeight": 400,
                   }
                 }
@@ -3880,9 +3880,9 @@ exports[`Snapshots Footer should render the table 1`] = `
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
                       "fontSize": "2rem",
-                      "fontWeight": 700,
+                      "fontWeight": 600,
                     }
                   }
                 >

@@ -88,7 +88,7 @@ exports[`Snapshots SummaryTable should render a "no data" state 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "1.25rem",
                     "fontWeight": 400,
                   }
@@ -108,7 +108,7 @@ exports[`Snapshots SummaryTable should render a "no data" state 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 400,
                   }
@@ -267,7 +267,7 @@ exports[`Snapshots SummaryTable should render a loading state 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 400,
                   }
@@ -379,8 +379,8 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
                       "fontWeight": 400,
                     }
                   }
@@ -420,9 +420,9 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 700,
+                        "fontWeight": 600,
                       }
                     }
                   >
@@ -482,7 +482,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                       style={
                         Object {
                           "color": "shamrock",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontFamily": "\\"Open Sans\\", sans-serif",
                           "fontSize": "1.25rem",
                         }
                       }
@@ -529,8 +529,8 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
                       "fontWeight": 400,
                     }
                   }
@@ -570,9 +570,9 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 700,
+                        "fontWeight": 600,
                       }
                     }
                   >
@@ -633,7 +633,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                       style={
                         Object {
                           "color": "torchRed",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontFamily": "\\"Open Sans\\", sans-serif",
                           "fontSize": "1.25rem",
                         }
                       }
@@ -680,8 +680,8 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
                       "fontWeight": 400,
                     }
                   }
@@ -721,9 +721,9 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 700,
+                        "fontWeight": 600,
                       }
                     }
                   >
@@ -784,7 +784,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                       style={
                         Object {
                           "color": "torchRed",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontFamily": "\\"Open Sans\\", sans-serif",
                           "fontSize": "1.25rem",
                         }
                       }
@@ -831,8 +831,8 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
                       "fontWeight": 400,
                     }
                   }
@@ -872,9 +872,9 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 700,
+                        "fontWeight": 600,
                       }
                     }
                   >
@@ -935,7 +935,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                       style={
                         Object {
                           "color": "torchRed",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontFamily": "\\"Open Sans\\", sans-serif",
                           "fontSize": "1.25rem",
                         }
                       }
@@ -982,8 +982,8 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
                       "fontWeight": 400,
                     }
                   }
@@ -1023,9 +1023,9 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 700,
+                        "fontWeight": 600,
                       }
                     }
                   >
@@ -1078,7 +1078,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                       style={
                         Object {
                           "color": "#8D969E",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontFamily": "\\"Open Sans\\", sans-serif",
                           "fontSize": "1.25rem",
                         }
                       }
@@ -1125,8 +1125,8 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
                       "fontWeight": 400,
                     }
                   }
@@ -1166,9 +1166,9 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 700,
+                        "fontWeight": 600,
                       }
                     }
                   >
@@ -1229,7 +1229,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                       style={
                         Object {
                           "color": "torchRed",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontFamily": "\\"Open Sans\\", sans-serif",
                           "fontSize": "1.25rem",
                         }
                       }
@@ -1276,8 +1276,8 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
                       "fontWeight": 400,
                     }
                   }
@@ -1317,9 +1317,9 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 700,
+                        "fontWeight": 600,
                       }
                     }
                   >
@@ -1380,7 +1380,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                       style={
                         Object {
                           "color": "torchRed",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontFamily": "\\"Open Sans\\", sans-serif",
                           "fontSize": "1.25rem",
                         }
                       }
@@ -1427,8 +1427,8 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
                       "fontWeight": 400,
                     }
                   }
@@ -1468,9 +1468,9 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 700,
+                        "fontWeight": 600,
                       }
                     }
                   >
@@ -1531,7 +1531,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                       style={
                         Object {
                           "color": "torchRed",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontFamily": "\\"Open Sans\\", sans-serif",
                           "fontSize": "1.25rem",
                         }
                       }
