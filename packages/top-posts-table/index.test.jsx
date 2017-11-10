@@ -29,6 +29,9 @@ const validStore = {
   subscribe: () => {},
   dispatch: jest.fn(),
   getState: jest.fn(() => ({
+    i18n: {
+      translations: {},
+    },
     profiles: {
       profiles: [profile],
     },

@@ -63,7 +63,7 @@ const PostItem = ({
   audienceMetrics,
   maxEngagementValue,
   maxAudienceValue,
-  profileTimezone,
+  timezone,
 }) => {
   const secondaryPostColumnMetrics = audienceMetrics.map((metric) => {
     return {
@@ -88,7 +88,7 @@ const PostItem = ({
         <div className={postMeta}>
           <div className={contentDate}>
             <a href={post.serviceLink} target="_blank" rel="noopener noreferrer" className={tweetServiceLinkClass}>
-              <Text size="small">{moment(post.date).tz(profileTimezone).format(dateFormat)}</Text>
+              <Text size="small">{moment(post.date).tz(timezone).format(dateFormat)}</Text>
             </a>
           </div>
           <div className={contentLink}>
@@ -133,7 +133,7 @@ PostItem.propTypes = {
   audienceMetrics: PropTypes.arrayOf(PropTypes.object).isRequired,
   maxEngagementValue: PropTypes.number.isRequired,
   maxAudienceValue: PropTypes.number.isRequired,
-  profileTimezone: PropTypes.string.isRequired,
+  timezone: PropTypes.string.isRequired,
 };
 
 export default PostItem;

@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/top-posts-table",
-  "version": "0.7.1",
+  "version": "0.8.0",
   "description": "The top posts table for Insights.",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,7 @@
   },
   "author": "tik.hakobyan@gmail.com",
   "dependencies": {
+    "@bufferapp/add-report": "^0.7.0",
     "@bufferapp/analyze-csv-export": "^0.1.0",
     "@bufferapp/analyze-date-picker": "^0.7.1",
     "@bufferapp/analyze-png-export": "^0.1.0",

@@ -7,10 +7,10 @@ import { actions } from './reducer';
 export default connect(
   (state, props) => ({
     loading: state.topPosts.loading,
-    profileTimezone: state.profiles.profiles.find(
+    timezone: state.profiles.profiles.find(
       profile => profile.id === props.selectedProfileId,
     ).timezone,
-    topPosts: state.topPosts.topPosts,
+    metrics: state.topPosts.topPosts,
     startDate: state.date.startDate,
     endDate: state.date.endDate,
     isDropdownOpen: state.topPosts.isDropdownOpen,
@@ -29,6 +29,8 @@ export default connect(
   }),
 )(TopPostsTable);
 
+export Title from './components/Title';
+export { Table } from './components/TopPostsTable';
 // export reducer, actions and action types
 export reducer, { actions, actionTypes } from './reducer';
 export middleware from './middleware';
