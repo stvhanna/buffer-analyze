@@ -13,9 +13,11 @@ exports[`Snapshots PostsSummaryTable should render a "no data" state 1`] = `
       <header
         style={
           Object {
-            "alignItems": "baseline",
+            "alignItems": "center",
+            "borderBottom": "1px solid #ECEEEF",
             "display": "flex",
             "justifyContent": "space-between",
+            "padding": "1.5rem",
           }
         }
       >
@@ -30,9 +32,9 @@ exports[`Snapshots PostsSummaryTable should render a "no data" state 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "2rem",
-                "fontWeight": 600,
+                "fontWeight": 700,
               }
             }
           >
@@ -56,17 +58,11 @@ exports[`Snapshots PostsSummaryTable should render a "no data" state 1`] = `
             Object {
               "alignItems": "center",
               "background": "rgba(255, 255, 255, 1)",
-              "bottom": 0,
               "display": "flex",
               "justifyContent": "center",
-              "left": 0,
               "opacity": 1,
-              "position": "absolute",
-              "right": 0,
               "textAlign": "center",
-              "top": 0,
               "transition": "opacity 350ms ease-in-out",
-              "zIndex": 2,
             }
           }
         >
@@ -74,8 +70,6 @@ exports[`Snapshots PostsSummaryTable should render a "no data" state 1`] = `
             style={
               Object {
                 "background": "white",
-                "border": "solid 1px #ced7df",
-                "borderRadius": "2px",
                 "boxSizing": "border-box",
                 "flex": 1,
                 "flexDirection": "row",
@@ -89,7 +83,7 @@ exports[`Snapshots PostsSummaryTable should render a "no data" state 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
                     "fontWeight": 400,
                   }
@@ -109,7 +103,7 @@ exports[`Snapshots PostsSummaryTable should render a "no data" state 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 400,
                   }
@@ -139,9 +133,11 @@ exports[`Snapshots PostsSummaryTable should render a loading state 1`] = `
       <header
         style={
           Object {
-            "alignItems": "baseline",
+            "alignItems": "center",
+            "borderBottom": "1px solid #ECEEEF",
             "display": "flex",
             "justifyContent": "space-between",
+            "padding": "1.5rem",
           }
         }
       >
@@ -156,9 +152,9 @@ exports[`Snapshots PostsSummaryTable should render a loading state 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "2rem",
-                "fontWeight": 600,
+                "fontWeight": 700,
               }
             }
           >
@@ -183,16 +179,11 @@ exports[`Snapshots PostsSummaryTable should render a loading state 1`] = `
               "alignItems": "center",
               "background": "rgba(255,255,255,.95)",
               "border": "solid 1px #ced7df",
-              "bottom": 0,
               "display": "flex",
               "justifyContent": "center",
-              "left": 0,
               "maxHeight": "none",
-              "opacity": 1,
-              "position": "absolute",
-              "right": 0,
+              "minHeight": "8rem",
               "textAlign": "center",
-              "top": 0,
               "transition": "opacity 350ms ease-in-out",
               "zIndex": 2,
             }
@@ -269,7 +260,7 @@ exports[`Snapshots PostsSummaryTable should render a loading state 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 400,
                   }
@@ -299,9 +290,11 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
       <header
         style={
           Object {
-            "alignItems": "baseline",
+            "alignItems": "center",
+            "borderBottom": "1px solid #ECEEEF",
             "display": "flex",
             "justifyContent": "space-between",
+            "padding": "1.5rem",
           }
         }
       >
@@ -316,9 +309,9 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "2rem",
-                "fontWeight": 600,
+                "fontWeight": 700,
               }
             }
           >
@@ -353,8 +346,6 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
           <li
             style={
               Object {
-                "borderBottom": "solid 1px #CED7DF",
-                "borderRight": "solid 1px #CED7DF",
                 "boxSizing": "border-box",
                 "display": "inline-block",
                 "flexGrow": 1,
@@ -368,9 +359,8 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
               style={
                 Object {
                   "display": "block",
-                  "fontSize": "12px",
+                  "fontSize": "0.75rem",
                   "fontWeight": 600,
-                  "marginLeft": "15px",
                   "marginTop": "15px",
                 }
               }
@@ -382,8 +372,8 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
                       "fontWeight": 400,
                     }
                   }
@@ -413,9 +403,8 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontSize": "2em",
+                      "fontSize": "2.5rem",
                       "fontWeight": 600,
-                      "marginLeft": "15px",
                     }
                   }
                 >
@@ -423,9 +412,9 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 600,
+                        "fontWeight": 700,
                       }
                     }
                   >
@@ -485,7 +474,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                       style={
                         Object {
                           "color": "shamrock",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
                           "fontSize": "1.25rem",
                         }
                       }
@@ -503,8 +492,6 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
           <li
             style={
               Object {
-                "borderBottom": "solid 1px #CED7DF",
-                "borderRight": "solid 1px #CED7DF",
                 "boxSizing": "border-box",
                 "display": "inline-block",
                 "flexGrow": 1,
@@ -518,9 +505,8 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
               style={
                 Object {
                   "display": "block",
-                  "fontSize": "12px",
+                  "fontSize": "0.75rem",
                   "fontWeight": 600,
-                  "marginLeft": "15px",
                   "marginTop": "15px",
                 }
               }
@@ -532,8 +518,8 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
                       "fontWeight": 400,
                     }
                   }
@@ -563,9 +549,8 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontSize": "2em",
+                      "fontSize": "2.5rem",
                       "fontWeight": 600,
-                      "marginLeft": "15px",
                     }
                   }
                 >
@@ -573,9 +558,9 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 600,
+                        "fontWeight": 700,
                       }
                     }
                   >
@@ -636,7 +621,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                       style={
                         Object {
                           "color": "torchRed",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
                           "fontSize": "1.25rem",
                         }
                       }
@@ -654,8 +639,6 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
           <li
             style={
               Object {
-                "borderBottom": "solid 1px #CED7DF",
-                "borderRight": "solid 1px #CED7DF",
                 "boxSizing": "border-box",
                 "display": "inline-block",
                 "flexGrow": 1,
@@ -669,9 +652,8 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
               style={
                 Object {
                   "display": "block",
-                  "fontSize": "12px",
+                  "fontSize": "0.75rem",
                   "fontWeight": 600,
-                  "marginLeft": "15px",
                   "marginTop": "15px",
                 }
               }
@@ -683,8 +665,8 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
                       "fontWeight": 400,
                     }
                   }
@@ -714,9 +696,8 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontSize": "2em",
+                      "fontSize": "2.5rem",
                       "fontWeight": 600,
-                      "marginLeft": "15px",
                     }
                   }
                 >
@@ -724,9 +705,9 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 600,
+                        "fontWeight": 700,
                       }
                     }
                   >
@@ -786,7 +767,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                       style={
                         Object {
                           "color": "shamrock",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
                           "fontSize": "1.25rem",
                         }
                       }
@@ -804,8 +785,6 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
           <li
             style={
               Object {
-                "borderBottom": "solid 1px #CED7DF",
-                "borderRight": "solid 1px #CED7DF",
                 "boxSizing": "border-box",
                 "display": "inline-block",
                 "flexGrow": 1,
@@ -819,9 +798,8 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
               style={
                 Object {
                   "display": "block",
-                  "fontSize": "12px",
+                  "fontSize": "0.75rem",
                   "fontWeight": 600,
-                  "marginLeft": "15px",
                   "marginTop": "15px",
                 }
               }
@@ -833,8 +811,8 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
                       "fontWeight": 400,
                     }
                   }
@@ -864,9 +842,8 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontSize": "2em",
+                      "fontSize": "2.5rem",
                       "fontWeight": 600,
-                      "marginLeft": "15px",
                     }
                   }
                 >
@@ -874,9 +851,9 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 600,
+                        "fontWeight": 700,
                       }
                     }
                   >
@@ -937,7 +914,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                       style={
                         Object {
                           "color": "torchRed",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
                           "fontSize": "1.25rem",
                         }
                       }
@@ -955,8 +932,6 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
           <li
             style={
               Object {
-                "borderBottom": "solid 1px #CED7DF",
-                "borderRight": "solid 1px #CED7DF",
                 "boxSizing": "border-box",
                 "display": "inline-block",
                 "flexGrow": 1,
@@ -970,9 +945,8 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
               style={
                 Object {
                   "display": "block",
-                  "fontSize": "12px",
+                  "fontSize": "0.75rem",
                   "fontWeight": 600,
-                  "marginLeft": "15px",
                   "marginTop": "15px",
                 }
               }
@@ -984,8 +958,8 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
                       "fontWeight": 400,
                     }
                   }
@@ -1015,9 +989,8 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontSize": "2em",
+                      "fontSize": "2.5rem",
                       "fontWeight": 600,
-                      "marginLeft": "15px",
                     }
                   }
                 >
@@ -1025,9 +998,9 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 600,
+                        "fontWeight": 700,
                       }
                     }
                   >
@@ -1073,14 +1046,22 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                   </svg>
                 </span>
                 <div
-                  style={undefined}
+                  style={
+                    Object {
+                      "color": "#8D969E",
+                      "display": "inline-block",
+                      "fontSize": "18px",
+                      "fontWeight": 600,
+                      "marginLeft": "5px",
+                    }
+                  }
                 >
                   <span>
                     <span
                       style={
                         Object {
                           "color": "#8D969E",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
                           "fontSize": "1.25rem",
                         }
                       }
@@ -1098,8 +1079,6 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
           <li
             style={
               Object {
-                "borderBottom": "solid 1px #CED7DF",
-                "borderRight": "solid 1px #CED7DF",
                 "boxSizing": "border-box",
                 "display": "inline-block",
                 "flexGrow": 1,
@@ -1113,9 +1092,8 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
               style={
                 Object {
                   "display": "block",
-                  "fontSize": "12px",
+                  "fontSize": "0.75rem",
                   "fontWeight": 600,
-                  "marginLeft": "15px",
                   "marginTop": "15px",
                 }
               }
@@ -1127,8 +1105,8 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
                       "fontWeight": 400,
                     }
                   }
@@ -1158,9 +1136,8 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontSize": "2em",
+                      "fontSize": "2.5rem",
                       "fontWeight": 600,
-                      "marginLeft": "15px",
                     }
                   }
                 >
@@ -1168,9 +1145,9 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 600,
+                        "fontWeight": 700,
                       }
                     }
                   >
@@ -1231,7 +1208,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                       style={
                         Object {
                           "color": "torchRed",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
                           "fontSize": "1.25rem",
                         }
                       }
