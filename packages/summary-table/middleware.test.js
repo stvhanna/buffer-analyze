@@ -16,6 +16,9 @@ const state = {
     startDate: '10/10/2016',
     endDate: '30/10/2016',
   },
+  profiles: {
+    selectedProfileService: 'instagram',
+  },
   summary: {
     metrics: [
       {
@@ -55,12 +58,33 @@ describe('middleware', () => {
     const action = {
       type: actionTypes.SELECT_PROFILE,
       id: '1235519asd',
+      profileService: 'instagram',
+    };
+    middleware(store)(next)(action);
+    expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
+      name: 'summary',
+      args: {
+        profileService: 'instagram',
+        profileId: '1235519asd',
+        startDate: state.date.startDate,
+        endDate: state.date.endDate,
+      },
+    }));
+    expect(next).toHaveBeenCalledWith(action);
+  });
+
+  it('shoud dispatch a data fetch for summary once a dateRange has been selected', () => {
+    const action = {
+      type: actionTypes.SELECT_PROFILE,
+      id: '1235519asd',
+      profileService: 'instagram',
     };
     middleware(store)(next)(action);
     expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
       name: 'summary',
       args: {
         profileId: '1235519asd',
+        profileService: 'instagram',
         startDate: state.date.startDate,
         endDate: state.date.endDate,
       },
