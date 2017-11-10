@@ -15,7 +15,8 @@ import HourlyEngagementChart from '../HourlyEngagementChart';
 import Legend from '../Legend';
 
 const title = {
-  margin: '2rem 0 1rem',
+  margin: '0',
+  padding: '0',
 };
 
 export const Title = () =>

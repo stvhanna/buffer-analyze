@@ -47,7 +47,7 @@ const insightContainer = {
 const insightMaxWidth = {
   width: '52rem',
   margin: '0 auto',
-  padding: '2.5rem',
+  padding: '2.5rem 1rem 4rem',
 };
 
 const toolbarTabNavigation = {};
