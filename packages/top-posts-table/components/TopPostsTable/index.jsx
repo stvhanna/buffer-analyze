@@ -8,6 +8,8 @@ import {
 import {
   ChartStateNoData as NoData,
   ChartStateLoading as Loading,
+  ChartCard,
+  ChartHeader,
 } from '@bufferapp/analyze-shared-components';
 
 import Title from '../Title';
@@ -25,8 +27,8 @@ import {
 import { metricsConfig } from '../../metrics';
 
 const gridContainer = {
-  minHeight: '12rem',
   position: 'relative',
+  padding: '1.5rem',
 };
 
 const defaultSortMetrics = {
@@ -87,7 +89,7 @@ const TopPostsTable = (props) => {
 
   let content = null;
   if (loading) {
-    content = <Loading active text="Top Posts Loading..." />;
+    content = <Loading active noBorder />;
   } else if (topPosts.length === 0) {
     content = <NoData />;
   } else {
@@ -104,19 +106,6 @@ const TopPostsTable = (props) => {
           activePostsCount={activePostsCount}
         />
         <aside className={chartContainer}>
-          <header>
-            <ul className={chartColumnHeader}>
-              <li className={contentColumn}>
-                <Text size="mini">Posts and Stories</Text>
-              </li>
-              <li className={metricColumn}>
-                <Text size="mini">Engagements</Text>
-              </li>
-              <li className={metricColumn}>
-                <Text size="mini">Audience</Text>
-              </li>
-            </ul>
-          </header>
           <ul className={postsContainer}>
             {topPosts.map(post =>
               <PostItem
@@ -136,12 +125,14 @@ const TopPostsTable = (props) => {
   }
 
   return (
-    <div>
-      <Title startDate={startDate} endDate={endDate} />
+    <ChartCard>
+      <ChartHeader>
+        <Title startDate={startDate} endDate={endDate} />
+      </ChartHeader>
       <div style={gridContainer}>
         {content}
       </div>
-    </div>
+    </ChartCard>
   );
 };
 

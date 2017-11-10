@@ -125,22 +125,6 @@
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@bufferapp/shutdown-helper/-/shutdown-helper-0.2.0.tgz#d43bbba845e30e411dda76a7b7629e11160e5395"
 
-"@bufferapp/top-posts-table@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@bufferapp/top-posts-table/-/top-posts-table-0.4.0.tgz#0c7b981ee13f57e79b016902f0bc1181e9bf65d1"
-  dependencies:
-    "@bufferapp/analyze-csv-export" "^0.1.0"
-    "@bufferapp/analyze-date-picker" "^0.4.0"
-    "@bufferapp/analyze-png-export" "^0.1.0"
-    "@bufferapp/analyze-profile-selector" "^0.4.0"
-    "@bufferapp/analyze-shared-components" "^0.4.0"
-    "@bufferapp/async-data-fetch" "0.5.36-beta01"
-    "@bufferapp/components" "0.5.28"
-    "@bufferapp/nav-sidebar" "^0.4.0"
-    lodash.clonedeep "4.5.0"
-    numeral "2.0.6"
-    striptags "^3.1.0"
-
 "@hypnosphi/fuse.js@^3.0.9":
   version "3.0.9"
   resolved "https://registry.yarnpkg.com/@hypnosphi/fuse.js/-/fuse.js-3.0.9.tgz#ea99f6121b4a8f065b4c71f85595db2714498807"
