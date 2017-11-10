@@ -40,7 +40,8 @@
     "@bufferapp/report": "^0.8.0",
     "@bufferapp/report-list": "^0.7.1",
     "@bufferapp/summary-table": "^0.7.1",
-    "@bufferapp/top-posts-table": "^0.8.0"
+    "@bufferapp/top-posts-table": "^0.8.0",
+    "@bufferapp/audience-comparison-chart": "^0.1.0"
   },
   "devDependencies": {
     "eslint": "3.19.0",

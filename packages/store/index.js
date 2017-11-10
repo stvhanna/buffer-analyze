@@ -8,7 +8,6 @@ import createHistory from 'history/createBrowserHistory';
 import { middleware as appSidebarMiddleware } from '@bufferapp/app-sidebar';
 import { middleware as i18nMiddleware } from '@bufferapp/analyze-i18n';
 import { middleware as asyncDataFetchMiddleware } from '@bufferapp/async-data-fetch';
-import { middleware as navSidebarMiddleware } from '@bufferapp/nav-sidebar';
 import { middleware as performanceMiddleware } from '@bufferapp/performance-tracking';
 import { middleware as summaryMiddleware } from '@bufferapp/summary-table';
 import { middleware as profileHeaderMiddleware } from '@bufferapp/profile-header';
@@ -24,6 +23,8 @@ import { middleware as compareChartMiddleware } from '@bufferapp/compare-chart';
 import { middleware as addReportMiddleware } from '@bufferapp/add-report';
 import { middleware as reportListMiddleware } from '@bufferapp/report-list';
 import { middleware as contextualCompareMiddleware } from '@bufferapp/contextual-compare';
+import { middleware as audienceComparisonMiddleware } from '@bufferapp/audience-comparison-chart';
+import { middleware as profileSelectorMiddleware } from '@bufferapp/analyze-profile-selector';
 import { middleware as reportMiddleware } from '@bufferapp/report';
 
 import reducers from './reducers';
@@ -45,7 +46,6 @@ const configureStore = (initialstate) => {
         asyncDataFetchMiddleware,
         i18nMiddleware,
         appSidebarMiddleware,
-        navSidebarMiddleware,
         performanceMiddleware,
         summaryMiddleware,
         profileHeaderMiddleware,
@@ -61,6 +61,8 @@ const configureStore = (initialstate) => {
         addReportMiddleware,
         reportListMiddleware,
         exportToCSVMiddleware,
+        audienceComparisonMiddleware,
+        profileSelectorMiddleware,
         reportMiddleware,
       ),
     ),
