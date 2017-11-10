@@ -88,7 +88,7 @@ exports[`Snapshots AverageTable should render a "no data" state 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
                     "fontWeight": 400,
                   }
@@ -108,7 +108,7 @@ exports[`Snapshots AverageTable should render a "no data" state 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 400,
                   }
@@ -267,7 +267,7 @@ exports[`Snapshots AverageTable should render a loading state 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 400,
                   }
@@ -379,8 +379,8 @@ exports[`Snapshots AverageTable should render the average table 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
                       "fontWeight": 400,
                     }
                   }
@@ -420,9 +420,9 @@ exports[`Snapshots AverageTable should render the average table 1`] = `
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 600,
+                        "fontWeight": 700,
                       }
                     }
                   >
@@ -482,7 +482,7 @@ exports[`Snapshots AverageTable should render the average table 1`] = `
                       style={
                         Object {
                           "color": "shamrock",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
                           "fontSize": "1.25rem",
                         }
                       }
@@ -529,8 +529,8 @@ exports[`Snapshots AverageTable should render the average table 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
                       "fontWeight": 400,
                     }
                   }
@@ -570,9 +570,9 @@ exports[`Snapshots AverageTable should render the average table 1`] = `
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 600,
+                        "fontWeight": 700,
                       }
                     }
                   >
@@ -633,7 +633,7 @@ exports[`Snapshots AverageTable should render the average table 1`] = `
                       style={
                         Object {
                           "color": "torchRed",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
                           "fontSize": "1.25rem",
                         }
                       }
@@ -680,8 +680,8 @@ exports[`Snapshots AverageTable should render the average table 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
                       "fontWeight": 400,
                     }
                   }
@@ -721,9 +721,9 @@ exports[`Snapshots AverageTable should render the average table 1`] = `
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 600,
+                        "fontWeight": 700,
                       }
                     }
                   >
@@ -784,7 +784,7 @@ exports[`Snapshots AverageTable should render the average table 1`] = `
                       style={
                         Object {
                           "color": "torchRed",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
                           "fontSize": "1.25rem",
                         }
                       }

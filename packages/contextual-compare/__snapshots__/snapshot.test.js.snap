@@ -503,9 +503,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                     style={
                       Object {
                         "color": "#59626a",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
-                        "fontSize": "0.8rem",
-                        "fontWeight": 600,
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 700,
                       }
                     }
                   >
@@ -614,9 +614,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                             style={
                               Object {
                                 "color": "#59626a",
-                                "fontFamily": "\\"Open Sans\\", sans-serif",
-                                "fontSize": "0.8rem",
-                                "fontWeight": 600,
+                                "fontFamily": "\\"Roboto\\", sans-serif",
+                                "fontSize": "0.75rem",
+                                "fontWeight": 700,
                               }
                             }
                           >
@@ -681,9 +681,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                     style={
                       Object {
                         "color": "#59626a",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
-                        "fontSize": "0.8rem",
-                        "fontWeight": 600,
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 700,
                       }
                     }
                   >
@@ -792,9 +792,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                             style={
                               Object {
                                 "color": "#59626a",
-                                "fontFamily": "\\"Open Sans\\", sans-serif",
-                                "fontSize": "0.8rem",
-                                "fontWeight": 600,
+                                "fontFamily": "\\"Roboto\\", sans-serif",
+                                "fontSize": "0.75rem",
+                                "fontWeight": 700,
                               }
                             }
                           >
@@ -2178,7 +2178,7 @@ exports[`Snapshots ContextualCompare [TESTED] should render a "no data" state 1`
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
                     "fontWeight": 400,
                   }
@@ -2198,7 +2198,7 @@ exports[`Snapshots ContextualCompare [TESTED] should render a "no data" state 1`
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 400,
                   }
@@ -2326,7 +2326,7 @@ exports[`Snapshots ContextualCompare [TESTED] should render a loading state 1`] 
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 400,
                   }
