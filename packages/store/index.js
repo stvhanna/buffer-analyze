@@ -26,6 +26,7 @@ import { middleware as contextualCompareMiddleware } from '@bufferapp/contextual
 import { middleware as audienceComparisonMiddleware } from '@bufferapp/audience-comparison-chart';
 import { middleware as profileSelectorMiddleware } from '@bufferapp/analyze-profile-selector';
 import { middleware as reportMiddleware } from '@bufferapp/report';
+import { middleware as multiProfileSelectorMiddleware } from '@bufferapp/multi-profile-selector';
 
 import reducers from './reducers';
 
@@ -64,6 +65,7 @@ const configureStore = (initialstate) => {
         audienceComparisonMiddleware,
         profileSelectorMiddleware,
         reportMiddleware,
+        multiProfileSelectorMiddleware,
       ),
     ),
   );

@@ -41,7 +41,8 @@
     "@bufferapp/report": "^0.9.0",
     "@bufferapp/report-list": "^0.9.0",
     "@bufferapp/summary-table": "^0.9.0",
-    "@bufferapp/top-posts-table": "^0.9.0"
+    "@bufferapp/top-posts-table": "^0.9.0",
+    "@bufferapp/multi-profile-selector": "^0.0.1"
   },
   "devDependencies": {
     "eslint": "3.19.0",

@@ -6,6 +6,7 @@ import DatePicker from '@bufferapp/analyze-date-picker';
 import ProfileLoader from '@bufferapp/profile-loader';
 import { white, mystic } from '@bufferapp/components/style/color';
 import ProfileSelector from '@bufferapp/analyze-profile-selector';
+import MultiProfileSelector from '@bufferapp/multi-profile-selector';
 import AudienceComparisonChart from '@bufferapp/audience-comparison-chart';
 
 const pageStyle = {
@@ -68,7 +69,7 @@ const ComparisonsPage = ({
           <div style={toolbarTabNavigation} />
           <div style={toolbarRight}>
             <div style={toolbarProfileSelector}>
-              <ProfileSelector />
+              <MultiProfileSelector />
             </div>
             <div style={toolbarDatePicker}>
               <DatePicker />

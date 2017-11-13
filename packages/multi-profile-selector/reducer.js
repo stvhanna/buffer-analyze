@@ -14,12 +14,24 @@ const initialState = {
   selectedProfiles: [],
 };
 
-function updatedSelectedProfiles(profileId, selectedProfiles) {
+function updatedSelectedProfiles(profileId, selectedProfiles, profiles) {
+  const selectedProfileIds = selectedProfiles.map(p => p.id);
+  const index = selectedProfileIds.indexOf(profileId);
+  const isNotAlreadySelected = index === -1;
+
+  if (isNotAlreadySelected) {
+    const selectedProfile = profiles.find(p => p.id === profileId);
+    selectedProfiles.push(selectedProfile);
+  } else {
+    selectedProfiles = selectedProfiles.filter(p => p.id !== profileId);
+  }
   return selectedProfiles;
 }
 
 export default (state = initialState, action) => {
   switch (action.type) {
+    case `profiles_${fetchActions.FETCH_START}`:
+      return initialState;
     case `profiles_${fetchActions.FETCH_SUCCESS}`:
       return Object.assign({}, state, {
         profiles: action.result,
@@ -31,7 +43,11 @@ export default (state = initialState, action) => {
     case actionTypes.TOGGLE_PROFILE:
       return Object.assign({}, state, {
         profilesFilterString: '',
-        selectedProfiles: updatedSelectedProfiles(action.id, state.selectedProfiles),
+        selectedProfiles: updatedSelectedProfiles(
+          action.id,
+          state.selectedProfiles,
+          state.profiles,
+        ),
       });
     case actionTypes.COMPARE_PROFILES:
       return Object.assign({}, state, {

@@ -13,16 +13,6 @@ import {
   Text,
   Button,
 } from '@bufferapp/components';
-import {
-  curiousBlue,
-} from '@bufferapp/components/style/color';
-import {
-  fontFamily,
-} from '@bufferapp/components/style/font';
-import {
-  transitionAnimationTime,
-  transitionAnimationType,
-} from '@bufferapp/components/style/animation';
 
 import {
   dropdownContainer,
@@ -163,7 +153,6 @@ MultiProfileSelector.propTypes = {
   profilesFilterString: PropTypes.string,
   openDropdown: PropTypes.func.isRequired,
   closeDropdown: PropTypes.func.isRequired,
-
   selectedProfiles: PropTypes.arrayOf(PropTypes.shape({
     service: PropTypes.string.isRequired,
     username: PropTypes.string.isRequired,
