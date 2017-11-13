@@ -41,9 +41,9 @@ exports[`Snapshots Report renders the report 1`] = `
           style={
             Object {
               "color": "#59626a",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "1.25rem",
-              "fontWeight": 700,
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 600,
             }
           }
         >
@@ -57,7 +57,7 @@ exports[`Snapshots Report renders the report 1`] = `
           style={
             Object {
               "color": "#59626a",
-              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
               "fontSize": "1rem",
               "fontWeight": 400,
             }
@@ -81,7 +81,7 @@ exports[`Snapshots ReportList loading state 1`] = `
     style={
       Object {
         "color": "#59626a",
-        "fontFamily": "\\"Roboto\\", sans-serif",
+        "fontFamily": "\\"Open Sans\\", sans-serif",
         "fontSize": "1rem",
         "fontWeight": 400,
       }
@@ -136,9 +136,9 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 600,
               }
             }
           >
@@ -152,7 +152,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
                 "fontSize": "1rem",
                 "fontWeight": 400,
               }
@@ -206,9 +206,9 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 600,
               }
             }
           >
@@ -222,7 +222,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
                 "fontSize": "1rem",
                 "fontWeight": 400,
               }

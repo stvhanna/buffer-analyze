@@ -28,8 +28,8 @@ exports[`Snapshots ChartTooltip [TESTED] should render a presets tooltip 1`] = `
           style={
             Object {
               "color": "#fff",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "0.75rem",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "0.8rem",
               "fontWeight": 400,
             }
           }
@@ -72,8 +72,8 @@ exports[`Snapshots ChartTooltip [TESTED] should render a presets tooltip with ne
           style={
             Object {
               "color": "#e6ebef",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "0.5rem",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "0.7rem",
               "fontWeight": 400,
             }
           }
@@ -88,8 +88,8 @@ exports[`Snapshots ChartTooltip [TESTED] should render a presets tooltip with ne
           style={
             Object {
               "color": "#fff",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "0.75rem",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "0.8rem",
               "fontWeight": 400,
             }
           }
@@ -133,8 +133,8 @@ exports[`Snapshots ChartTooltip [TESTED] should render the posts tooltip 1`] = `
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
                 "fontWeight": 400,
               }
             }
@@ -147,9 +147,9 @@ exports[`Snapshots ChartTooltip [TESTED] should render the posts tooltip 1`] = `
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 600,
               }
             }
           >
@@ -161,8 +161,8 @@ exports[`Snapshots ChartTooltip [TESTED] should render the posts tooltip 1`] = `
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
                 "fontWeight": 400,
               }
             }
@@ -176,8 +176,8 @@ exports[`Snapshots ChartTooltip [TESTED] should render the posts tooltip 1`] = `
           style={
             Object {
               "color": "#fff",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "0.75rem",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "0.8rem",
               "fontWeight": 400,
             }
           }
@@ -195,9 +195,9 @@ exports[`Snapshots ChartTooltip [TESTED] should render the posts tooltip 1`] = `
                 style={
                   Object {
                     "color": "#fff",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 700,
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 600,
                   }
                 }
               >
@@ -226,8 +226,8 @@ exports[`Snapshots ChartTooltip [TESTED] should render the posts tooltip 1`] = `
                 style={
                   Object {
                     "color": "#fff",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "0.75rem",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
                     "fontWeight": 400,
                   }
                 }
@@ -273,8 +273,8 @@ exports[`Snapshots ChartTooltip [TESTED] should render the tooltip 1`] = `
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
                 "fontWeight": 400,
               }
             }
@@ -287,9 +287,9 @@ exports[`Snapshots ChartTooltip [TESTED] should render the tooltip 1`] = `
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 600,
               }
             }
           >
@@ -301,8 +301,8 @@ exports[`Snapshots ChartTooltip [TESTED] should render the tooltip 1`] = `
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
                 "fontWeight": 400,
               }
             }
@@ -316,8 +316,8 @@ exports[`Snapshots ChartTooltip [TESTED] should render the tooltip 1`] = `
           style={
             Object {
               "color": "#fff",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "0.75rem",
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "0.8rem",
               "fontWeight": 400,
             }
           }
@@ -334,9 +334,9 @@ exports[`Snapshots ChartTooltip [TESTED] should render the tooltip 1`] = `
                 style={
                   Object {
                     "color": "#fff",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 700,
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 600,
                   }
                 }
               >
@@ -365,8 +365,8 @@ exports[`Snapshots ChartTooltip [TESTED] should render the tooltip 1`] = `
                 style={
                   Object {
                     "color": "#fff",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "0.75rem",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
                     "fontWeight": 400,
                   }
                 }
@@ -383,9 +383,9 @@ exports[`Snapshots ChartTooltip [TESTED] should render the tooltip 1`] = `
                 style={
                   Object {
                     "color": "#fff",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 700,
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
+                    "fontWeight": 600,
                   }
                 }
               >
@@ -414,8 +414,8 @@ exports[`Snapshots ChartTooltip [TESTED] should render the tooltip 1`] = `
                 style={
                   Object {
                     "color": "#fff",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "0.75rem",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontSize": "0.8rem",
                     "fontWeight": 400,
                   }
                 }
@@ -475,9 +475,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -486,12 +486,12 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
         </h2>
       </header>
       <div
-        className="sc-bxivhb cduSBF"
+        className="sc-ifAKCX pOhLU"
       >
         <div>
           <div>
             <div
-              className="sc-htpNat cixthU"
+              className="sc-bxivhb cDFCAd"
             >
               <div
                 className="dropdown dropdownContainer"
@@ -514,9 +514,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                     style={
                       Object {
                         "color": "#59626a",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 700,
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontSize": "0.8rem",
+                        "fontWeight": 600,
                       }
                     }
                   >
@@ -625,9 +625,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                             style={
                               Object {
                                 "color": "#59626a",
-                                "fontFamily": "\\"Roboto\\", sans-serif",
-                                "fontSize": "0.75rem",
-                                "fontWeight": 700,
+                                "fontFamily": "\\"Open Sans\\", sans-serif",
+                                "fontSize": "0.8rem",
+                                "fontWeight": 600,
                               }
                             }
                           >
@@ -692,9 +692,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                     style={
                       Object {
                         "color": "#59626a",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 700,
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontSize": "0.8rem",
+                        "fontWeight": 600,
                       }
                     }
                   >
@@ -803,9 +803,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                             style={
                               Object {
                                 "color": "#59626a",
-                                "fontFamily": "\\"Roboto\\", sans-serif",
-                                "fontSize": "0.75rem",
-                                "fontWeight": 700,
+                                "fontFamily": "\\"Open Sans\\", sans-serif",
+                                "fontSize": "0.8rem",
+                                "fontWeight": 600,
                               }
                             }
                           >
@@ -970,9 +970,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
+                      "fontWeight": 600,
                     }
                   }
                 >
@@ -1006,9 +1006,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
+                      "fontWeight": 600,
                     }
                   }
                 >
@@ -1067,9 +1067,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -1078,12 +1078,12 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
         </h2>
       </header>
       <div
-        className="sc-bxivhb cduSBF"
+        className="sc-ifAKCX pOhLU"
       >
         <div>
           <div>
             <div
-              className="sc-htpNat cixthU"
+              className="sc-bxivhb cDFCAd"
             >
               <div
                 style={
@@ -1119,8 +1119,8 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "0.75rem",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
                             "fontWeight": 400,
                           }
                         }
@@ -1223,8 +1223,8 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                                 style={
                                   Object {
                                     "color": "#59626a",
-                                    "fontFamily": "\\"Roboto\\", sans-serif",
-                                    "fontSize": "0.75rem",
+                                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                                    "fontSize": "0.8rem",
                                     "fontWeight": 400,
                                   }
                                 }
@@ -1233,7 +1233,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                                  
                               </span>
                               <span
-                                className="sc-bwzfXH fydlv"
+                                className="sc-htpNat iUFLDl"
                                 data-description="Already it was conjectured that this might be the well-known interplan industrialist Palmer Eldritch, who had gone to the Prox system a decade ago at the invitation of the Prox Council of humanoid types; they had wanted him to modernize their autofacs along Terran lines. Nothing had been heard from Eldritch since. Now this."
                               >
                                 ?
@@ -1292,8 +1292,8 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                                 style={
                                   Object {
                                     "color": "#59626a",
-                                    "fontFamily": "\\"Roboto\\", sans-serif",
-                                    "fontSize": "0.75rem",
+                                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                                    "fontSize": "0.8rem",
                                     "fontWeight": 400,
                                   }
                                 }
@@ -1305,16 +1305,16 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                                 style={
                                   Object {
                                     "color": "#ff1e1e",
-                                    "fontFamily": "\\"Roboto\\", sans-serif",
-                                    "fontSize": "0.75rem",
-                                    "fontWeight": 700,
+                                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                                    "fontSize": "0.8rem",
+                                    "fontWeight": 600,
                                   }
                                 }
                               >
                                   (no data) 
                               </span>
                               <span
-                                className="sc-bwzfXH fydlv"
+                                className="sc-htpNat iUFLDl"
                                 data-description="Already it was conjectured that this might be the well-known interplan industrialist Palmer Eldritch, who had gone to the Prox system a decade ago at the invitation of the Prox Council of humanoid types; they had wanted him to modernize their autofacs along Terran lines. Nothing had been heard from Eldritch since. Now this."
                               >
                                 ?
@@ -1373,9 +1373,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                                 style={
                                   Object {
                                     "color": "#59626a",
-                                    "fontFamily": "\\"Roboto\\", sans-serif",
-                                    "fontSize": "0.75rem",
-                                    "fontWeight": 700,
+                                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                                    "fontSize": "0.8rem",
+                                    "fontWeight": 600,
                                   }
                                 }
                               >
@@ -1383,7 +1383,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                                  
                               </span>
                               <span
-                                className="sc-bwzfXH fydlv"
+                                className="sc-htpNat iUFLDl"
                                 data-description="Discover how your posting frequency affects your fan count."
                               >
                                 ?
@@ -1517,9 +1517,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
+                      "fontWeight": 600,
                     }
                   }
                 >
@@ -1553,9 +1553,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
+                      "fontWeight": 600,
                     }
                   }
                 >
@@ -1614,9 +1614,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -1625,12 +1625,12 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
         </h2>
       </header>
       <div
-        className="sc-bxivhb cduSBF"
+        className="sc-ifAKCX pOhLU"
       >
         <div>
           <div>
             <div
-              className="sc-htpNat cixthU"
+              className="sc-bxivhb cDFCAd"
             >
               <div
                 style={
@@ -1666,8 +1666,8 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "0.75rem",
+                            "fontFamily": "\\"Open Sans\\", sans-serif",
+                            "fontSize": "0.8rem",
                             "fontWeight": 400,
                           }
                         }
@@ -1770,9 +1770,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                                 style={
                                   Object {
                                     "color": "#59626a",
-                                    "fontFamily": "\\"Roboto\\", sans-serif",
-                                    "fontSize": "0.75rem",
-                                    "fontWeight": 700,
+                                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                                    "fontSize": "0.8rem",
+                                    "fontWeight": 600,
                                   }
                                 }
                               >
@@ -1780,7 +1780,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                                  
                               </span>
                               <span
-                                className="sc-bwzfXH fydlv"
+                                className="sc-htpNat iUFLDl"
                                 data-description="Already it was conjectured that this might be the well-known interplan industrialist Palmer Eldritch, who had gone to the Prox system a decade ago at the invitation of the Prox Council of humanoid types; they had wanted him to modernize their autofacs along Terran lines. Nothing had been heard from Eldritch since. Now this."
                               >
                                 ?
@@ -1839,8 +1839,8 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                                 style={
                                   Object {
                                     "color": "#59626a",
-                                    "fontFamily": "\\"Roboto\\", sans-serif",
-                                    "fontSize": "0.75rem",
+                                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                                    "fontSize": "0.8rem",
                                     "fontWeight": 400,
                                   }
                                 }
@@ -1852,16 +1852,16 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                                 style={
                                   Object {
                                     "color": "#ff1e1e",
-                                    "fontFamily": "\\"Roboto\\", sans-serif",
-                                    "fontSize": "0.75rem",
-                                    "fontWeight": 700,
+                                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                                    "fontSize": "0.8rem",
+                                    "fontWeight": 600,
                                   }
                                 }
                               >
                                   (no data) 
                               </span>
                               <span
-                                className="sc-bwzfXH fydlv"
+                                className="sc-htpNat iUFLDl"
                                 data-description="Already it was conjectured that this might be the well-known interplan industrialist Palmer Eldritch, who had gone to the Prox system a decade ago at the invitation of the Prox Council of humanoid types; they had wanted him to modernize their autofacs along Terran lines. Nothing had been heard from Eldritch since. Now this."
                               >
                                 ?
@@ -1920,8 +1920,8 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                                 style={
                                   Object {
                                     "color": "#59626a",
-                                    "fontFamily": "\\"Roboto\\", sans-serif",
-                                    "fontSize": "0.75rem",
+                                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                                    "fontSize": "0.8rem",
                                     "fontWeight": 400,
                                   }
                                 }
@@ -1930,7 +1930,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                                  
                               </span>
                               <span
-                                className="sc-bwzfXH fydlv"
+                                className="sc-htpNat iUFLDl"
                                 data-description="Discover how your posting frequency affects your fan count."
                               >
                                 ?
@@ -2064,9 +2064,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
+                      "fontWeight": 600,
                     }
                   }
                 >
@@ -2100,9 +2100,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
+                      "fontWeight": 600,
                     }
                   }
                 >
@@ -2136,9 +2136,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
+                      "fontWeight": 600,
                     }
                   }
                 >
@@ -2197,9 +2197,9 @@ exports[`Snapshots ContextualCompare [TESTED] should render a "no data" state 1`
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -2208,7 +2208,7 @@ exports[`Snapshots ContextualCompare [TESTED] should render a "no data" state 1`
         </h2>
       </header>
       <div
-        className="sc-bxivhb cduSBF"
+        className="sc-ifAKCX pOhLU"
       >
         <div
           style={
@@ -2240,7 +2240,7 @@ exports[`Snapshots ContextualCompare [TESTED] should render a "no data" state 1`
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "1.25rem",
                     "fontWeight": 400,
                   }
@@ -2260,7 +2260,7 @@ exports[`Snapshots ContextualCompare [TESTED] should render a "no data" state 1`
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 400,
                   }
@@ -2320,9 +2320,9 @@ exports[`Snapshots ContextualCompare [TESTED] should render a loading state 1`] 
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -2331,7 +2331,7 @@ exports[`Snapshots ContextualCompare [TESTED] should render a loading state 1`] 
         </h2>
       </header>
       <div
-        className="sc-bxivhb cduSBF"
+        className="sc-ifAKCX pOhLU"
       >
         <div
           style={
@@ -2420,7 +2420,7 @@ exports[`Snapshots ContextualCompare [TESTED] should render a loading state 1`] 
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 400,
                   }
@@ -2473,8 +2473,8 @@ exports[`Snapshots PresetsDropdown [TESTED] open dropdown 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
                 "fontWeight": 400,
               }
             }
@@ -2577,9 +2577,9 @@ exports[`Snapshots PresetsDropdown [TESTED] open dropdown 1`] = `
                     style={
                       Object {
                         "color": "#59626a",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 700,
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontSize": "0.8rem",
+                        "fontWeight": 600,
                       }
                     }
                   >
@@ -2587,7 +2587,7 @@ exports[`Snapshots PresetsDropdown [TESTED] open dropdown 1`] = `
                      
                   </span>
                   <span
-                    className="sc-bwzfXH fydlv"
+                    className="sc-htpNat iUFLDl"
                     data-description="Already it was conjectured that this might be the well-known interplan industrialist Palmer Eldritch, who had gone to the Prox system a decade ago at the invitation of the Prox Council of humanoid types; they had wanted him to modernize their autofacs along Terran lines. Nothing had been heard from Eldritch since. Now this."
                   >
                     ?
@@ -2646,8 +2646,8 @@ exports[`Snapshots PresetsDropdown [TESTED] open dropdown 1`] = `
                     style={
                       Object {
                         "color": "#59626a",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontSize": "0.8rem",
                         "fontWeight": 400,
                       }
                     }
@@ -2659,16 +2659,16 @@ exports[`Snapshots PresetsDropdown [TESTED] open dropdown 1`] = `
                     style={
                       Object {
                         "color": "#ff1e1e",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 700,
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontSize": "0.8rem",
+                        "fontWeight": 600,
                       }
                     }
                   >
                       (no data) 
                   </span>
                   <span
-                    className="sc-bwzfXH fydlv"
+                    className="sc-htpNat iUFLDl"
                     data-description="Already it was conjectured that this might be the well-known interplan industrialist Palmer Eldritch, who had gone to the Prox system a decade ago at the invitation of the Prox Council of humanoid types; they had wanted him to modernize their autofacs along Terran lines. Nothing had been heard from Eldritch since. Now this."
                   >
                     ?
@@ -2727,8 +2727,8 @@ exports[`Snapshots PresetsDropdown [TESTED] open dropdown 1`] = `
                     style={
                       Object {
                         "color": "#59626a",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontSize": "0.8rem",
                         "fontWeight": 400,
                       }
                     }
@@ -2737,7 +2737,7 @@ exports[`Snapshots PresetsDropdown [TESTED] open dropdown 1`] = `
                      
                   </span>
                   <span
-                    className="sc-bwzfXH fydlv"
+                    className="sc-htpNat iUFLDl"
                     data-description="Discover how your posting frequency affects your fan count."
                   >
                     ?

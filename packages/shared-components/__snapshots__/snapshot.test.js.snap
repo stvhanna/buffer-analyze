@@ -73,9 +73,9 @@ exports[`Snapshots Dropdown Item should render 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 600,
               }
             }
           >
@@ -161,9 +161,9 @@ exports[`Snapshots Dropdown Item should selected 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
+                "fontWeight": 600,
               }
             }
           >
@@ -289,8 +289,8 @@ exports[`Snapshots GridItem Should render the chart tolltip 1`] = `
       style={
         Object {
           "color": "#59626a",
-          "fontFamily": "\\"Roboto\\", sans-serif",
-          "fontSize": "0.75rem",
+          "fontFamily": "\\"Open Sans\\", sans-serif",
+          "fontSize": "0.8rem",
           "fontWeight": 400,
         }
       }
@@ -302,9 +302,9 @@ exports[`Snapshots GridItem Should render the chart tolltip 1`] = `
       style={
         Object {
           "color": "#000",
-          "fontFamily": "\\"Roboto\\", sans-serif",
-          "fontSize": "0.75rem",
-          "fontWeight": 700,
+          "fontFamily": "\\"Open Sans\\", sans-serif",
+          "fontSize": "0.8rem",
+          "fontWeight": 600,
         }
       }
     >
@@ -317,8 +317,8 @@ exports[`Snapshots GridItem Should render the chart tolltip 1`] = `
       style={
         Object {
           "color": "#59626a",
-          "fontFamily": "\\"Roboto\\", sans-serif",
-          "fontSize": "0.75rem",
+          "fontFamily": "\\"Open Sans\\", sans-serif",
+          "fontSize": "0.8rem",
           "fontWeight": 400,
         }
       }
@@ -374,8 +374,8 @@ exports[`Snapshots GridItem should not render the chart if we have only one day 
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
                 "fontWeight": 400,
               }
             }
@@ -414,9 +414,9 @@ exports[`Snapshots GridItem should not render the chart if we have only one day 
               style={
                 Object {
                   "color": "#323b43",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
                   "fontSize": "2rem",
-                  "fontWeight": 700,
+                  "fontWeight": 600,
                 }
               }
             >
@@ -476,7 +476,7 @@ exports[`Snapshots GridItem should not render the chart if we have only one day 
                 style={
                   Object {
                     "color": "shamrock",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "1.25rem",
                   }
                 }
@@ -539,8 +539,8 @@ exports[`Snapshots GridItem should render a grid item with a Chart if dailyData 
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
                 "fontWeight": 400,
               }
             }
@@ -579,9 +579,9 @@ exports[`Snapshots GridItem should render a grid item with a Chart if dailyData 
               style={
                 Object {
                   "color": "#323b43",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
                   "fontSize": "2rem",
-                  "fontWeight": 700,
+                  "fontWeight": 600,
                 }
               }
             >
@@ -641,7 +641,7 @@ exports[`Snapshots GridItem should render a grid item with a Chart if dailyData 
                 style={
                   Object {
                     "color": "shamrock",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "1.25rem",
                   }
                 }
@@ -704,8 +704,8 @@ exports[`Snapshots GridItem should render a grid item with a custom Label 1`] = 
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
                 "fontWeight": 400,
               }
             }
@@ -746,9 +746,9 @@ exports[`Snapshots GridItem should render a grid item with a custom Label 1`] = 
               style={
                 Object {
                   "color": "#323b43",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
                   "fontSize": "2rem",
-                  "fontWeight": 700,
+                  "fontWeight": 600,
                 }
               }
             >
@@ -809,7 +809,7 @@ exports[`Snapshots GridItem should render a grid item with a custom Label 1`] = 
                 style={
                   Object {
                     "color": "torchRed",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "1.25rem",
                   }
                 }
@@ -841,8 +841,8 @@ exports[`Snapshots GridItem should render a no data tolltip 1`] = `
       style={
         Object {
           "color": "#59626a",
-          "fontFamily": "\\"Roboto\\", sans-serif",
-          "fontSize": "0.75rem",
+          "fontFamily": "\\"Open Sans\\", sans-serif",
+          "fontSize": "0.8rem",
           "fontWeight": 400,
         }
       }
@@ -898,8 +898,8 @@ exports[`Snapshots GridItem should render a summary grid item with a neutral dif
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
                 "fontWeight": 400,
               }
             }
@@ -938,9 +938,9 @@ exports[`Snapshots GridItem should render a summary grid item with a neutral dif
               style={
                 Object {
                   "color": "#323b43",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
                   "fontSize": "2rem",
-                  "fontWeight": 700,
+                  "fontWeight": 600,
                 }
               }
             >
@@ -1001,7 +1001,7 @@ exports[`Snapshots GridItem should render a summary grid item with a neutral dif
                 style={
                   Object {
                     "color": "#8D969E",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "1.25rem",
                   }
                 }
@@ -1064,8 +1064,8 @@ exports[`Snapshots GridItem should render a summary grid item with negative diff
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
                 "fontWeight": 400,
               }
             }
@@ -1104,9 +1104,9 @@ exports[`Snapshots GridItem should render a summary grid item with negative diff
               style={
                 Object {
                   "color": "#323b43",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
                   "fontSize": "2rem",
-                  "fontWeight": 700,
+                  "fontWeight": 600,
                 }
               }
             >
@@ -1167,7 +1167,7 @@ exports[`Snapshots GridItem should render a summary grid item with negative diff
                 style={
                   Object {
                     "color": "torchRed",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "1.25rem",
                   }
                 }
@@ -1230,8 +1230,8 @@ exports[`Snapshots GridItem should render a summary grid item with no diff 1`] =
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
                 "fontWeight": 400,
               }
             }
@@ -1270,9 +1270,9 @@ exports[`Snapshots GridItem should render a summary grid item with no diff 1`] =
               style={
                 Object {
                   "color": "#323b43",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
                   "fontSize": "2rem",
-                  "fontWeight": 700,
+                  "fontWeight": 600,
                 }
               }
             >
@@ -1332,8 +1332,8 @@ exports[`Snapshots GridItem should render a summary grid item with positive diff
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
+                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontSize": "0.8rem",
                 "fontWeight": 400,
               }
             }
@@ -1372,9 +1372,9 @@ exports[`Snapshots GridItem should render a summary grid item with positive diff
               style={
                 Object {
                   "color": "#323b43",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontFamily": "\\"Open Sans\\", sans-serif",
                   "fontSize": "2rem",
-                  "fontWeight": 700,
+                  "fontWeight": 600,
                 }
               }
             >
@@ -1434,7 +1434,7 @@ exports[`Snapshots GridItem should render a summary grid item with positive diff
                 style={
                   Object {
                     "color": "shamrock",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontFamily": "\\"Open Sans\\", sans-serif",
                     "fontSize": "1.25rem",
                   }
                 }
@@ -1543,9 +1543,9 @@ exports[`Snapshots MetricsDropdown should open the dropdown 1`] = `
           style={
             Object {
               "color": "#59626a",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "0.75rem",
-              "fontWeight": 700,
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "0.8rem",
+              "fontWeight": 600,
             }
           }
         >
@@ -1654,9 +1654,9 @@ exports[`Snapshots MetricsDropdown should open the dropdown 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
+                      "fontWeight": 600,
                     }
                   }
                 >
@@ -1760,9 +1760,9 @@ exports[`Snapshots MetricsDropdown should open the dropdown 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
+                      "fontWeight": 600,
                     }
                   }
                 >
@@ -1834,9 +1834,9 @@ exports[`Snapshots MetricsDropdown should open the dropdown 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
+                      "fontWeight": 600,
                     }
                   }
                 >
@@ -1882,9 +1882,9 @@ exports[`Snapshots MetricsDropdown should render a secondary dropdown 1`] = `
           style={
             Object {
               "color": "#59626a",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "0.75rem",
-              "fontWeight": 700,
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "0.8rem",
+              "fontWeight": 600,
             }
           }
         >
@@ -1993,9 +1993,9 @@ exports[`Snapshots MetricsDropdown should render a secondary dropdown 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
+                      "fontWeight": 600,
                     }
                   }
                 >
@@ -2099,9 +2099,9 @@ exports[`Snapshots MetricsDropdown should render a secondary dropdown 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
+                      "fontWeight": 600,
                     }
                   }
                 >
@@ -2173,9 +2173,9 @@ exports[`Snapshots MetricsDropdown should render a secondary dropdown 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
+                      "fontWeight": 600,
                     }
                   }
                 >
@@ -2221,9 +2221,9 @@ exports[`Snapshots MetricsDropdown should render the dropdown 1`] = `
           style={
             Object {
               "color": "#59626a",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "0.75rem",
-              "fontWeight": 700,
+              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontSize": "0.8rem",
+              "fontWeight": 600,
             }
           }
         >
@@ -2332,9 +2332,9 @@ exports[`Snapshots MetricsDropdown should render the dropdown 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
+                      "fontWeight": 600,
                     }
                   }
                 >
@@ -2438,9 +2438,9 @@ exports[`Snapshots MetricsDropdown should render the dropdown 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
+                      "fontWeight": 600,
                     }
                   }
                 >
@@ -2512,9 +2512,9 @@ exports[`Snapshots MetricsDropdown should render the dropdown 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontSize": "0.8rem",
+                      "fontWeight": 600,
                     }
                   }
                 >

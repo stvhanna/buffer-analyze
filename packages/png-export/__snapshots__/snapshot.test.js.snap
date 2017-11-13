@@ -19,13 +19,13 @@ exports[`Snapshots ExportButton default 1`] = `
         "color": "#168eea",
         "cursor": "pointer",
         "display": "inline-block",
-        "fontFamily": "\\"Roboto\\", sans-serif",
-        "fontSize": "0.75rem",
+        "fontFamily": "\\"Open Sans\\", sans-serif",
+        "fontSize": "0.8rem",
         "fontWeight": 400,
         "margin": "0",
         "outline": "none",
         "padding": "0.5rem 2rem",
-        "transition": "background-color 0.2s linear",
+        "transition": "background-color 0.1s linear",
       }
     }
   >
@@ -53,14 +53,14 @@ exports[`Snapshots ExportButton exporting 1`] = `
         "color": "#168eea",
         "cursor": "pointer",
         "display": "inline-block",
-        "fontFamily": "\\"Roboto\\", sans-serif",
-        "fontSize": "0.75rem",
+        "fontFamily": "\\"Open Sans\\", sans-serif",
+        "fontSize": "0.8rem",
         "fontWeight": 400,
         "margin": "0",
         "opacity": 0.3,
         "outline": "none",
         "padding": "0.5rem 2rem",
-        "transition": "background-color 0.2s linear",
+        "transition": "background-color 0.1s linear",
       }
     }
   >
@@ -90,13 +90,13 @@ exports[`Snapshots ExportButton onClick works when not exporting 1`] = `
             "color": "#168eea",
             "cursor": "pointer",
             "display": "inline-block",
-            "fontFamily": "\\"Roboto\\", sans-serif",
-            "fontSize": "0.75rem",
+            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontSize": "0.8rem",
             "fontWeight": 400,
             "margin": "0",
             "outline": "none",
             "padding": "0.5rem 2rem",
-            "transition": "background-color 0.2s linear",
+            "transition": "background-color 0.1s linear",
           }
         }
       >
@@ -121,14 +121,14 @@ exports[`Snapshots ExportButton onClick works when not exporting 1`] = `
             "color": "#168eea",
             "cursor": "pointer",
             "display": "inline-block",
-            "fontFamily": "\\"Roboto\\", sans-serif",
-            "fontSize": "0.75rem",
+            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontSize": "0.8rem",
             "fontWeight": 400,
             "margin": "0",
             "opacity": 0.3,
             "outline": "none",
             "padding": "0.5rem 2rem",
-            "transition": "background-color 0.2s linear",
+            "transition": "background-color 0.1s linear",
           }
         }
       >
