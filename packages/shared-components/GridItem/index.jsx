@@ -11,8 +11,6 @@ const borderColor = '#CED7DF';
 const gridSummaryItem = {
   display: 'inline-block',
   listStyle: 'none',
-  borderRight: `solid 1px ${borderColor}`,
-  borderBottom: `solid 1px ${borderColor}`,
   boxSizing: 'border-box',
   paddingBottom: `${1.5 * baseMargin}px`,
   flexGrow: 1,

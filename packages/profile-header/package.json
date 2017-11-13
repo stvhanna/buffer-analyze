@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/profile-header",
-  "version": "0.7.1",
+  "version": "0.9.0",
   "description": "The profile header for Insights",
   "main": "index.js",
   "scripts": {
@@ -21,11 +21,11 @@
   },
   "author": "tik.hakobyan@gmail.com",
   "dependencies": {
-    "@bufferapp/analyze-profile-selector": "^0.7.1",
-    "@bufferapp/analyze-shared-components": "^0.7.1",
+    "@bufferapp/analyze-profile-selector": "^0.9.0",
+    "@bufferapp/analyze-shared-components": "^0.9.0",
     "@bufferapp/async-data-fetch": "0.5.36-beta01",
-    "@bufferapp/components": "0.5.28",
-    "@bufferapp/nav-sidebar": "^0.7.1",
+    "@bufferapp/components": "2.1.1",
+    "@bufferapp/nav-sidebar": "^0.9.0",
     "numeral": "2.0.6"
   },
   "devDependencies": {

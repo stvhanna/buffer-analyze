@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 import SummaryTable from '@bufferapp/summary-table';
-import Divider from '@bufferapp/components/Divider';
 import AverageTable from '@bufferapp/average-table';
 import CompareChart from '@bufferapp/compare-chart';
 import TopPostsTable from '@bufferapp/top-posts-table';
@@ -13,7 +12,6 @@ import ContextualCompare from '@bufferapp/contextual-compare';
 const OverviewTab = ({ match }) => (
   <div>
     <SummaryTable profileService={match.params.service} />
-    <Divider marginTop="1rem" marginBottom="1rem" />
     <AverageTable />
     {match.params.service === 'twitter' && <HourlyChart />}
     <CompareChart />

@@ -16,6 +16,7 @@ const listReports = require('./listReports');
 const getReport = require('./getReport');
 const contextual = require('./contextual');
 const addToReport = require('./addToReport');
+const audienceComparison = require('./audienceComparison');
 
 module.exports = checkToken(rpc(
   profilesMethod,
@@ -34,4 +35,5 @@ module.exports = checkToken(rpc(
   getReport,
   contextual,
   addToReport,
+  audienceComparison,
 ));

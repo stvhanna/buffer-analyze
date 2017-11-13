@@ -19,6 +19,7 @@ import { reducer as compareChartReducer } from '@bufferapp/compare-chart';
 import { reducer as reportListReducer } from '@bufferapp/report-list';
 import { reducer as contextualCompareReducer } from '@bufferapp/contextual-compare';
 import { reducer as reportReducer } from '@bufferapp/report';
+import { reducer as audienceComparisonReducer } from '@bufferapp/audience-comparison-chart';
 
 export default combineReducers({
   router: routerReducer,
@@ -41,4 +42,5 @@ export default combineReducers({
   reportList: reportListReducer,
   contextual: contextualCompareReducer,
   report: reportReducer,
+  audienceComparison: audienceComparisonReducer,
 });

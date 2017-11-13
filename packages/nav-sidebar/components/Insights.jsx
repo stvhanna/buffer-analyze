@@ -26,7 +26,7 @@ const Insights = ({ profiles, ...props }) => {
       <Label>Insights</Label>
       { facebookProfile && <Item profileService="facebook" profileId={facebookProfile.id} href={`/insights/facebook/${facebookProfile.id}/${tabId}`} {...props}>Facebook</Item>}
       { twitterProfile && <Item profileService="twitter" profileId={twitterProfile.id} href={`/insights/twitter/${twitterProfile.id}/${tabId}`} {...props}>Twitter</Item>}
-      { instagramProfile && <Item profileService="instagran" profileId={instagramProfile.id} href={`/insights/instagram/${instagramProfile.id}/${tabId}`} {...props}>Instagram</Item>}
+      { instagramProfile && <Item profileService="instagram" profileId={instagramProfile.id} href={`/insights/instagram/${instagramProfile.id}/${tabId}`} {...props}>Instagram</Item>}
       <Divider marginTop="0.75rem" marginBottom="1rem" />
     </div>
   );

@@ -14,7 +14,7 @@ exports[`Snapshots ChartTooltip should render a no update published message 1`] 
         Object {
           "color": "#fff",
           "cursor": "default",
-          "fontFamily": "Open Sans, Helvetica Neue, Helvetica, Arial, sans serif",
+          "fontFamily": "Roboto, sans serif",
           "fontSize": "9pt",
           "padding": "10px",
           "pointerEvents": "none",
@@ -28,8 +28,8 @@ exports[`Snapshots ChartTooltip should render a no update published message 1`] 
           style={
             Object {
               "color": "#e6ebef",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.7rem",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.5rem",
               "fontWeight": 400,
             }
           }
@@ -44,8 +44,8 @@ exports[`Snapshots ChartTooltip should render a no update published message 1`] 
           style={
             Object {
               "color": "#fff",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.8rem",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
               "fontWeight": 400,
             }
           }
@@ -74,7 +74,7 @@ exports[`Snapshots ChartTooltip should render the tooltip 1`] = `
         Object {
           "color": "#fff",
           "cursor": "default",
-          "fontFamily": "Open Sans, Helvetica Neue, Helvetica, Arial, sans serif",
+          "fontFamily": "Roboto, sans serif",
           "fontSize": "9pt",
           "padding": "10px",
           "pointerEvents": "none",
@@ -88,8 +88,8 @@ exports[`Snapshots ChartTooltip should render the tooltip 1`] = `
           style={
             Object {
               "color": "#e6ebef",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.7rem",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.5rem",
               "fontWeight": 400,
             }
           }
@@ -105,8 +105,8 @@ exports[`Snapshots ChartTooltip should render the tooltip 1`] = `
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -119,9 +119,9 @@ exports[`Snapshots ChartTooltip should render the tooltip 1`] = `
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
-                "fontWeight": 600,
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
               }
             }
           >
@@ -133,8 +133,8 @@ exports[`Snapshots ChartTooltip should render the tooltip 1`] = `
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -147,8 +147,8 @@ exports[`Snapshots ChartTooltip should render the tooltip 1`] = `
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -163,9 +163,9 @@ exports[`Snapshots ChartTooltip should render the tooltip 1`] = `
               style={
                 Object {
                   "color": "#fff",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "fontSize": "0.8rem",
-                  "fontWeight": 600,
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "0.75rem",
+                  "fontWeight": 700,
                 }
               }
             >
@@ -194,8 +194,8 @@ exports[`Snapshots ChartTooltip should render the tooltip 1`] = `
               style={
                 Object {
                   "color": "#fff",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "fontSize": "0.8rem",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "0.75rem",
                   "fontWeight": 400,
                 }
               }
@@ -225,7 +225,7 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
         Object {
           "color": "#fff",
           "cursor": "default",
-          "fontFamily": "Open Sans, Helvetica Neue, Helvetica, Arial, sans serif",
+          "fontFamily": "Roboto, sans serif",
           "fontSize": "9pt",
           "padding": "10px",
           "pointerEvents": "none",
@@ -239,8 +239,8 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
           style={
             Object {
               "color": "#e6ebef",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.7rem",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.5rem",
               "fontWeight": 400,
             }
           }
@@ -253,8 +253,8 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
             style={
               Object {
                 "color": "#e6ebef",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.7rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.5rem",
                 "fontWeight": 400,
               }
             }
@@ -265,8 +265,8 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
             style={
               Object {
                 "color": "#e6ebef",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.7rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.5rem",
                 "fontWeight": 400,
               }
             }
@@ -283,8 +283,8 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -297,9 +297,9 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
-                "fontWeight": 600,
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
               }
             }
           >
@@ -311,8 +311,8 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -326,8 +326,8 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
               style={
                 Object {
                   "color": "#fff",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "fontSize": "0.8rem",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "0.75rem",
                   "fontWeight": 400,
                 }
               }
@@ -338,9 +338,9 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
               style={
                 Object {
                   "color": "#fff",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "fontSize": "0.8rem",
-                  "fontWeight": 600,
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "0.75rem",
+                  "fontWeight": 700,
                 }
               }
             >
@@ -352,8 +352,8 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
               style={
                 Object {
                   "color": "#fff",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "fontSize": "0.8rem",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "0.75rem",
                   "fontWeight": 400,
                 }
               }
@@ -365,8 +365,8 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -381,9 +381,9 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
               style={
                 Object {
                   "color": "#fff",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "fontSize": "0.8rem",
-                  "fontWeight": 600,
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "0.75rem",
+                  "fontWeight": 700,
                 }
               }
             >
@@ -412,8 +412,8 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
               style={
                 Object {
                   "color": "#fff",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "fontSize": "0.8rem",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "0.75rem",
                   "fontWeight": 400,
                 }
               }
@@ -428,9 +428,9 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
               style={
                 Object {
                   "color": "#fff",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "fontSize": "0.8rem",
-                  "fontWeight": 600,
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "0.75rem",
+                  "fontWeight": 700,
                 }
               }
             >
@@ -459,8 +459,8 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
               style={
                 Object {
                   "color": "#fff",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "fontSize": "0.8rem",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "0.75rem",
                   "fontWeight": 400,
                 }
               }
@@ -490,7 +490,7 @@ exports[`Snapshots ChartTooltip should render the tooltip with twitter specific 
         Object {
           "color": "#fff",
           "cursor": "default",
-          "fontFamily": "Open Sans, Helvetica Neue, Helvetica, Arial, sans serif",
+          "fontFamily": "Roboto, sans serif",
           "fontSize": "9pt",
           "padding": "10px",
           "pointerEvents": "none",
@@ -504,8 +504,8 @@ exports[`Snapshots ChartTooltip should render the tooltip with twitter specific 
           style={
             Object {
               "color": "#e6ebef",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.7rem",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.5rem",
               "fontWeight": 400,
             }
           }
@@ -521,8 +521,8 @@ exports[`Snapshots ChartTooltip should render the tooltip with twitter specific 
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -535,9 +535,9 @@ exports[`Snapshots ChartTooltip should render the tooltip with twitter specific 
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
-                "fontWeight": 600,
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
               }
             }
           >
@@ -549,8 +549,8 @@ exports[`Snapshots ChartTooltip should render the tooltip with twitter specific 
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -563,8 +563,8 @@ exports[`Snapshots ChartTooltip should render the tooltip with twitter specific 
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -579,9 +579,9 @@ exports[`Snapshots ChartTooltip should render the tooltip with twitter specific 
               style={
                 Object {
                   "color": "#fff",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "fontSize": "0.8rem",
-                  "fontWeight": 600,
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "0.75rem",
+                  "fontWeight": 700,
                 }
               }
             >
@@ -610,8 +610,8 @@ exports[`Snapshots ChartTooltip should render the tooltip with twitter specific 
               style={
                 Object {
                   "color": "#fff",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "fontSize": "0.8rem",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "0.75rem",
                   "fontWeight": 400,
                 }
               }
@@ -641,7 +641,7 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip 1`] = `
         Object {
           "color": "#fff",
           "cursor": "default",
-          "fontFamily": "Open Sans, Helvetica Neue, Helvetica, Arial, sans serif",
+          "fontFamily": "Roboto, sans serif",
           "fontSize": "9pt",
           "padding": "10px",
           "pointerEvents": "none",
@@ -655,8 +655,8 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip 1`] = `
           style={
             Object {
               "color": "#e6ebef",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.7rem",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.5rem",
               "fontWeight": 400,
             }
           }
@@ -672,8 +672,8 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip 1`] = `
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -686,9 +686,9 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip 1`] = `
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
-                "fontWeight": 600,
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
               }
             }
           >
@@ -700,8 +700,8 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip 1`] = `
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -714,8 +714,8 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip 1`] = `
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -743,7 +743,7 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip with previ
         Object {
           "color": "#fff",
           "cursor": "default",
-          "fontFamily": "Open Sans, Helvetica Neue, Helvetica, Arial, sans serif",
+          "fontFamily": "Roboto, sans serif",
           "fontSize": "9pt",
           "padding": "10px",
           "pointerEvents": "none",
@@ -757,8 +757,8 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip with previ
           style={
             Object {
               "color": "#e6ebef",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.7rem",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.5rem",
               "fontWeight": 400,
             }
           }
@@ -771,8 +771,8 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip with previ
             style={
               Object {
                 "color": "#e6ebef",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.7rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.5rem",
                 "fontWeight": 400,
               }
             }
@@ -783,8 +783,8 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip with previ
             style={
               Object {
                 "color": "#e6ebef",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.7rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.5rem",
                 "fontWeight": 400,
               }
             }
@@ -801,8 +801,8 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip with previ
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -815,9 +815,9 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip with previ
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
-                "fontWeight": 600,
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
               }
             }
           >
@@ -829,8 +829,8 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip with previ
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -844,8 +844,8 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip with previ
               style={
                 Object {
                   "color": "#fff",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "fontSize": "0.8rem",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "0.75rem",
                   "fontWeight": 400,
                 }
               }
@@ -856,9 +856,9 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip with previ
               style={
                 Object {
                   "color": "#fff",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "fontSize": "0.8rem",
-                  "fontWeight": 600,
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "0.75rem",
+                  "fontWeight": 700,
                 }
               }
             >
@@ -870,8 +870,8 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip with previ
               style={
                 Object {
                   "color": "#fff",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "fontSize": "0.8rem",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "0.75rem",
                   "fontWeight": 400,
                 }
               }
@@ -898,39 +898,51 @@ exports[`Snapshots CompareChart should render a "no data" state 1`] = `
     <div
       style={
         Object {
-          "margin": "0 0 1.5rem",
+          "background": "#fff",
+          "border": "1px solid #E2E8ED",
+          "borderRadius": "5px",
+          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
+          "margin": "0 0 2rem",
         }
       }
     >
-      <h2
+      <header
         style={
           Object {
-            "margin": "2rem 0 1rem",
+            "alignItems": "center",
+            "borderBottom": "1px solid #ECEEEF",
+            "display": "flex",
+            "justifyContent": "space-between",
+            "padding": "1.5rem",
           }
         }
       >
-        <span
+        <h2
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "margin": "0",
+              "padding": "0",
             }
           }
         >
-          Metrics breakdown over 
-          <span>
-            yesterday
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1.25rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            Metrics breakdown
           </span>
-        </span>
-      </h2>
+        </h2>
+      </header>
       <div
         style={
           Object {
-            "borderRadius": "2px",
             "margin": "0 auto",
-            "minHeight": "12rem",
             "padding": "0",
             "position": "relative",
           }
@@ -941,17 +953,11 @@ exports[`Snapshots CompareChart should render a "no data" state 1`] = `
             Object {
               "alignItems": "center",
               "background": "rgba(255, 255, 255, 1)",
-              "bottom": 0,
               "display": "flex",
               "justifyContent": "center",
-              "left": 0,
               "opacity": 1,
-              "position": "absolute",
-              "right": 0,
               "textAlign": "center",
-              "top": 0,
               "transition": "opacity 350ms ease-in-out",
-              "zIndex": 2,
             }
           }
         >
@@ -959,8 +965,6 @@ exports[`Snapshots CompareChart should render a "no data" state 1`] = `
             style={
               Object {
                 "background": "white",
-                "border": "solid 1px #ced7df",
-                "borderRadius": "2px",
                 "boxSizing": "border-box",
                 "flex": 1,
                 "flexDirection": "row",
@@ -974,7 +978,7 @@ exports[`Snapshots CompareChart should render a "no data" state 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
                     "fontWeight": 400,
                   }
@@ -994,7 +998,7 @@ exports[`Snapshots CompareChart should render a "no data" state 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 400,
                   }
@@ -1023,39 +1027,51 @@ exports[`Snapshots CompareChart should render a loading state 1`] = `
     <div
       style={
         Object {
-          "margin": "0 0 1.5rem",
+          "background": "#fff",
+          "border": "1px solid #E2E8ED",
+          "borderRadius": "5px",
+          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
+          "margin": "0 0 2rem",
         }
       }
     >
-      <h2
+      <header
         style={
           Object {
-            "margin": "2rem 0 1rem",
+            "alignItems": "center",
+            "borderBottom": "1px solid #ECEEEF",
+            "display": "flex",
+            "justifyContent": "space-between",
+            "padding": "1.5rem",
           }
         }
       >
-        <span
+        <h2
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "margin": "0",
+              "padding": "0",
             }
           }
         >
-          Metrics breakdown over 
-          <span>
-            yesterday
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1.25rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            Metrics breakdown
           </span>
-        </span>
-      </h2>
+        </h2>
+      </header>
       <div
         style={
           Object {
-            "borderRadius": "2px",
             "margin": "0 auto",
-            "minHeight": "12rem",
             "padding": "0",
             "position": "relative",
           }
@@ -1066,17 +1082,12 @@ exports[`Snapshots CompareChart should render a loading state 1`] = `
             Object {
               "alignItems": "center",
               "background": "rgba(255,255,255,.95)",
-              "border": "solid 1px #ced7df",
-              "bottom": 0,
+              "border": "none",
               "display": "flex",
               "justifyContent": "center",
-              "left": 0,
               "maxHeight": "none",
-              "opacity": 1,
-              "position": "absolute",
-              "right": 0,
+              "minHeight": "8rem",
               "textAlign": "center",
-              "top": 0,
               "transition": "opacity 350ms ease-in-out",
               "zIndex": 2,
             }
@@ -1153,13 +1164,13 @@ exports[`Snapshots CompareChart should render a loading state 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 400,
                   }
                 }
               >
-                Compare chart loading...
+                Loading...
               </span>
             </div>
           </div>
@@ -1182,43 +1193,51 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
     <div
       style={
         Object {
-          "margin": "0 0 1.5rem",
+          "background": "#fff",
+          "border": "1px solid #E2E8ED",
+          "borderRadius": "5px",
+          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
+          "margin": "0 0 2rem",
         }
       }
     >
-      <h2
+      <header
         style={
           Object {
-            "margin": "2rem 0 1rem",
+            "alignItems": "center",
+            "borderBottom": "1px solid #ECEEEF",
+            "display": "flex",
+            "justifyContent": "space-between",
+            "padding": "1.5rem",
           }
         }
       >
-        <span
+        <h2
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "margin": "0",
+              "padding": "0",
             }
           }
         >
-          Metrics breakdown over 
-          <span>
-            the 
-            selected
-             
-            7 days
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1.25rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            Metrics breakdown
           </span>
-        </span>
-      </h2>
+        </h2>
+      </header>
       <div
         style={
           Object {
-            "border": "solid 1px #ced7df",
-            "borderRadius": "2px",
             "margin": "0 auto",
-            "minHeight": "12rem",
             "padding": "0",
             "position": "relative",
           }
@@ -1253,9 +1272,9 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
-                    "fontWeight": 600,
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
+                    "fontWeight": 700,
                   }
                 }
               >
@@ -1364,9 +1383,9 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
-                            "fontWeight": 600,
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
                           }
                         }
                       >
@@ -1438,9 +1457,9 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
-                            "fontWeight": 600,
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
                           }
                         }
                       >
@@ -1544,9 +1563,9 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
-                            "fontWeight": 600,
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
                           }
                         }
                       >
@@ -1600,9 +1619,9 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -1634,8 +1653,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
       <div
         style={
           Object {
-            "margin": "0 0 1.5rem",
-            "minHeight": "12rem",
+            "margin": "1.5rem 1.5rem 1rem",
             "position": "relative",
           }
         }
@@ -1643,8 +1661,6 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
         <ul
           style={
             Object {
-              "borderLeft": "solid 1px #ced7df",
-              "borderRadius": "2px",
               "display": "flex",
               "flexWrap": "wrap",
               "margin": "0 auto",
@@ -1655,8 +1671,6 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
           <li
             style={
               Object {
-                "borderBottom": "solid 1px #CED7DF",
-                "borderRight": "solid 1px #CED7DF",
                 "boxSizing": "border-box",
                 "display": "inline-block",
                 "flexGrow": 1,
@@ -1670,9 +1684,8 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
               style={
                 Object {
                   "display": "block",
-                  "fontSize": "12px",
+                  "fontSize": "0.75rem",
                   "fontWeight": 600,
-                  "marginLeft": "15px",
                   "marginTop": "15px",
                 }
               }
@@ -1684,8 +1697,8 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
                       "fontWeight": 400,
                     }
                   }
@@ -1740,9 +1753,8 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontSize": "2em",
+                      "fontSize": "2.5rem",
                       "fontWeight": 600,
-                      "marginLeft": "15px",
                     }
                   }
                 >
@@ -1750,9 +1762,9 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 600,
+                        "fontWeight": 700,
                       }
                     }
                   >
@@ -1813,7 +1825,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                       style={
                         Object {
                           "color": "torchRed",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
                           "fontSize": "1.25rem",
                         }
                       }
@@ -1831,8 +1843,6 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
           <li
             style={
               Object {
-                "borderBottom": "solid 1px #CED7DF",
-                "borderRight": "solid 1px #CED7DF",
                 "boxSizing": "border-box",
                 "display": "inline-block",
                 "flexGrow": 1,
@@ -1846,9 +1856,8 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
               style={
                 Object {
                   "display": "block",
-                  "fontSize": "12px",
+                  "fontSize": "0.75rem",
                   "fontWeight": 600,
-                  "marginLeft": "15px",
                   "marginTop": "15px",
                 }
               }
@@ -1860,8 +1869,8 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
                       "fontWeight": 400,
                     }
                   }
@@ -1916,9 +1925,8 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontSize": "2em",
+                      "fontSize": "2.5rem",
                       "fontWeight": 600,
-                      "marginLeft": "15px",
                     }
                   }
                 >
@@ -1926,9 +1934,9 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 600,
+                        "fontWeight": 700,
                       }
                     }
                   >
@@ -1959,43 +1967,51 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
     <div
       style={
         Object {
-          "margin": "0 0 1.5rem",
+          "background": "#fff",
+          "border": "1px solid #E2E8ED",
+          "borderRadius": "5px",
+          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
+          "margin": "0 0 2rem",
         }
       }
     >
-      <h2
+      <header
         style={
           Object {
-            "margin": "2rem 0 1rem",
+            "alignItems": "center",
+            "borderBottom": "1px solid #ECEEEF",
+            "display": "flex",
+            "justifyContent": "space-between",
+            "padding": "1.5rem",
           }
         }
       >
-        <span
+        <h2
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "margin": "0",
+              "padding": "0",
             }
           }
         >
-          Metrics breakdown over 
-          <span>
-            the 
-            selected
-             
-            7 days
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1.25rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            Metrics breakdown
           </span>
-        </span>
-      </h2>
+        </h2>
+      </header>
       <div
         style={
           Object {
-            "border": "solid 1px #ced7df",
-            "borderRadius": "2px",
             "margin": "0 auto",
-            "minHeight": "12rem",
             "padding": "0",
             "position": "relative",
           }
@@ -2030,9 +2046,9 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
-                    "fontWeight": 600,
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
+                    "fontWeight": 700,
                   }
                 }
               >
@@ -2141,9 +2157,9 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
-                            "fontWeight": 600,
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
                           }
                         }
                       >
@@ -2215,9 +2231,9 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
-                            "fontWeight": 600,
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
                           }
                         }
                       >
@@ -2321,9 +2337,9 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
-                            "fontWeight": 600,
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
                           }
                         }
                       >
@@ -2453,9 +2469,9 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -2487,8 +2503,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
       <div
         style={
           Object {
-            "margin": "0 0 1.5rem",
-            "minHeight": "12rem",
+            "margin": "1.5rem 1.5rem 1rem",
             "position": "relative",
           }
         }
@@ -2496,8 +2511,6 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
         <ul
           style={
             Object {
-              "borderLeft": "solid 1px #ced7df",
-              "borderRadius": "2px",
               "display": "flex",
               "flexWrap": "wrap",
               "margin": "0 auto",
@@ -2508,8 +2521,6 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
           <li
             style={
               Object {
-                "borderBottom": "solid 1px #CED7DF",
-                "borderRight": "solid 1px #CED7DF",
                 "boxSizing": "border-box",
                 "display": "inline-block",
                 "flexGrow": 1,
@@ -2523,9 +2534,8 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
               style={
                 Object {
                   "display": "block",
-                  "fontSize": "12px",
+                  "fontSize": "0.75rem",
                   "fontWeight": 600,
-                  "marginLeft": "15px",
                   "marginTop": "15px",
                 }
               }
@@ -2537,8 +2547,8 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
                       "fontWeight": 400,
                     }
                   }
@@ -2593,9 +2603,8 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontSize": "2em",
+                      "fontSize": "2.5rem",
                       "fontWeight": 600,
-                      "marginLeft": "15px",
                     }
                   }
                 >
@@ -2603,9 +2612,9 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 600,
+                        "fontWeight": 700,
                       }
                     }
                   >
@@ -2666,7 +2675,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                       style={
                         Object {
                           "color": "torchRed",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
                           "fontSize": "1.25rem",
                         }
                       }
@@ -2684,8 +2693,6 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
           <li
             style={
               Object {
-                "borderBottom": "solid 1px #CED7DF",
-                "borderRight": "solid 1px #CED7DF",
                 "boxSizing": "border-box",
                 "display": "inline-block",
                 "flexGrow": 1,
@@ -2699,9 +2706,8 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
               style={
                 Object {
                   "display": "block",
-                  "fontSize": "12px",
+                  "fontSize": "0.75rem",
                   "fontWeight": 600,
-                  "marginLeft": "15px",
                   "marginTop": "15px",
                 }
               }
@@ -2713,8 +2719,8 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
                       "fontWeight": 400,
                     }
                   }
@@ -2769,9 +2775,8 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontSize": "2em",
+                      "fontSize": "2.5rem",
                       "fontWeight": 600,
-                      "marginLeft": "15px",
                     }
                   }
                 >
@@ -2779,9 +2784,9 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 600,
+                        "fontWeight": 700,
                       }
                     }
                   >
@@ -2812,43 +2817,51 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
     <div
       style={
         Object {
-          "margin": "0 0 1.5rem",
+          "background": "#fff",
+          "border": "1px solid #E2E8ED",
+          "borderRadius": "5px",
+          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
+          "margin": "0 0 2rem",
         }
       }
     >
-      <h2
+      <header
         style={
           Object {
-            "margin": "2rem 0 1rem",
+            "alignItems": "center",
+            "borderBottom": "1px solid #ECEEEF",
+            "display": "flex",
+            "justifyContent": "space-between",
+            "padding": "1.5rem",
           }
         }
       >
-        <span
+        <h2
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "margin": "0",
+              "padding": "0",
             }
           }
         >
-          Metrics breakdown over 
-          <span>
-            the 
-            selected
-             
-            7 days
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1.25rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            Metrics breakdown
           </span>
-        </span>
-      </h2>
+        </h2>
+      </header>
       <div
         style={
           Object {
-            "border": "solid 1px #ced7df",
-            "borderRadius": "2px",
             "margin": "0 auto",
-            "minHeight": "12rem",
             "padding": "0",
             "position": "relative",
           }
@@ -2883,9 +2896,9 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
-                    "fontWeight": 600,
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
+                    "fontWeight": 700,
                   }
                 }
               >
@@ -2994,9 +3007,9 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
-                            "fontWeight": 600,
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
                           }
                         }
                       >
@@ -3068,9 +3081,9 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
-                            "fontWeight": 600,
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
                           }
                         }
                       >
@@ -3174,9 +3187,9 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
-                            "fontWeight": 600,
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
                           }
                         }
                       >
@@ -3230,9 +3243,9 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -3264,8 +3277,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
       <div
         style={
           Object {
-            "margin": "0 0 1.5rem",
-            "minHeight": "12rem",
+            "margin": "1.5rem 1.5rem 1rem",
             "position": "relative",
           }
         }
@@ -3273,8 +3285,6 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
         <ul
           style={
             Object {
-              "borderLeft": "solid 1px #ced7df",
-              "borderRadius": "2px",
               "display": "flex",
               "flexWrap": "wrap",
               "margin": "0 auto",
@@ -3285,8 +3295,6 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
           <li
             style={
               Object {
-                "borderBottom": "solid 1px #CED7DF",
-                "borderRight": "solid 1px #CED7DF",
                 "boxSizing": "border-box",
                 "display": "inline-block",
                 "flexGrow": 1,
@@ -3300,9 +3308,8 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
               style={
                 Object {
                   "display": "block",
-                  "fontSize": "12px",
+                  "fontSize": "0.75rem",
                   "fontWeight": 600,
-                  "marginLeft": "15px",
                   "marginTop": "15px",
                 }
               }
@@ -3314,8 +3321,8 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
                       "fontWeight": 400,
                     }
                   }
@@ -3370,9 +3377,8 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontSize": "2em",
+                      "fontSize": "2.5rem",
                       "fontWeight": 600,
-                      "marginLeft": "15px",
                     }
                   }
                 >
@@ -3380,9 +3386,9 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 600,
+                        "fontWeight": 700,
                       }
                     }
                   >
@@ -3443,7 +3449,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                       style={
                         Object {
                           "color": "torchRed",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
                           "fontSize": "1.25rem",
                         }
                       }
@@ -3461,8 +3467,6 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
           <li
             style={
               Object {
-                "borderBottom": "solid 1px #CED7DF",
-                "borderRight": "solid 1px #CED7DF",
                 "boxSizing": "border-box",
                 "display": "inline-block",
                 "flexGrow": 1,
@@ -3476,9 +3480,8 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
               style={
                 Object {
                   "display": "block",
-                  "fontSize": "12px",
+                  "fontSize": "0.75rem",
                   "fontWeight": 600,
-                  "marginLeft": "15px",
                   "marginTop": "15px",
                 }
               }
@@ -3490,8 +3493,8 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
                       "fontWeight": 400,
                     }
                   }
@@ -3546,9 +3549,8 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontSize": "2em",
+                      "fontSize": "2.5rem",
                       "fontWeight": 600,
-                      "marginLeft": "15px",
                     }
                   }
                 >
@@ -3556,9 +3558,9 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 600,
+                        "fontWeight": 700,
                       }
                     }
                   >
@@ -3589,8 +3591,7 @@ exports[`Snapshots Footer should render the table 1`] = `
     <div
       style={
         Object {
-          "margin": "0 0 1.5rem",
-          "minHeight": "12rem",
+          "margin": "1.5rem 1.5rem 1rem",
           "position": "relative",
         }
       }
@@ -3598,8 +3599,6 @@ exports[`Snapshots Footer should render the table 1`] = `
       <ul
         style={
           Object {
-            "borderLeft": "solid 1px #ced7df",
-            "borderRadius": "2px",
             "display": "flex",
             "flexWrap": "wrap",
             "margin": "0 auto",
@@ -3610,8 +3609,6 @@ exports[`Snapshots Footer should render the table 1`] = `
         <li
           style={
             Object {
-              "borderBottom": "solid 1px #CED7DF",
-              "borderRight": "solid 1px #CED7DF",
               "boxSizing": "border-box",
               "display": "inline-block",
               "flexGrow": 1,
@@ -3625,9 +3622,8 @@ exports[`Snapshots Footer should render the table 1`] = `
             style={
               Object {
                 "display": "block",
-                "fontSize": "12px",
+                "fontSize": "0.75rem",
                 "fontWeight": 600,
-                "marginLeft": "15px",
                 "marginTop": "15px",
               }
             }
@@ -3639,8 +3635,8 @@ exports[`Snapshots Footer should render the table 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -3695,9 +3691,8 @@ exports[`Snapshots Footer should render the table 1`] = `
                 style={
                   Object {
                     "color": "#323b43",
-                    "fontSize": "2em",
+                    "fontSize": "2.5rem",
                     "fontWeight": 600,
-                    "marginLeft": "15px",
                   }
                 }
               >
@@ -3705,9 +3700,9 @@ exports[`Snapshots Footer should render the table 1`] = `
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "2rem",
-                      "fontWeight": 600,
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -3767,7 +3762,7 @@ exports[`Snapshots Footer should render the table 1`] = `
                     style={
                       Object {
                         "color": "shamrock",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "1.25rem",
                       }
                     }
@@ -3785,8 +3780,6 @@ exports[`Snapshots Footer should render the table 1`] = `
         <li
           style={
             Object {
-              "borderBottom": "solid 1px #CED7DF",
-              "borderRight": "solid 1px #CED7DF",
               "boxSizing": "border-box",
               "display": "inline-block",
               "flexGrow": 1,
@@ -3800,9 +3793,8 @@ exports[`Snapshots Footer should render the table 1`] = `
             style={
               Object {
                 "display": "block",
-                "fontSize": "12px",
+                "fontSize": "0.75rem",
                 "fontWeight": 600,
-                "marginLeft": "15px",
                 "marginTop": "15px",
               }
             }
@@ -3814,8 +3806,8 @@ exports[`Snapshots Footer should render the table 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -3870,9 +3862,8 @@ exports[`Snapshots Footer should render the table 1`] = `
                 style={
                   Object {
                     "color": "#323b43",
-                    "fontSize": "2em",
+                    "fontSize": "2.5rem",
                     "fontWeight": 600,
-                    "marginLeft": "15px",
                   }
                 }
               >
@@ -3880,9 +3871,9 @@ exports[`Snapshots Footer should render the table 1`] = `
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "2rem",
-                      "fontWeight": 600,
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -3951,9 +3942,9 @@ exports[`Snapshots PeriodToggle should render an active toggle 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
-                "fontWeight": 600,
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
               }
             }
           >
@@ -4032,9 +4023,9 @@ exports[`Snapshots PeriodToggle should render an inactive toggle 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
-                "fontWeight": 600,
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
               }
             }
           >

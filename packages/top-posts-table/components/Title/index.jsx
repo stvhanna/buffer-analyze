@@ -1,9 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Text from '@bufferapp/components/Text';
 
 const title = {
-  margin: '2rem 0 0',
+  margin: '0',
+  padding: '0',
 };
 
 const Title = () =>

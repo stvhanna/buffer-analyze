@@ -9,7 +9,7 @@ exports[`Snapshots Report renders a loading report 1`] = `
 exports[`Snapshots Report renders a report with summary table 1`] = `
 <span>
   <section
-    className="sc-gZMcBi dfNeYM"
+    className="sc-jzJRlG bwoGdJ"
   >
     <span
       style={
@@ -22,7 +22,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
       }
     >
       <h1
-        className="sc-gqjmRU iGtJFC"
+        className="sc-cSHVUG ipFAZq"
       >
         Weekly Sync Report
       </h1>
@@ -37,13 +37,13 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         }
       >
         <span
-          className="sc-dnqmqq cyBbIy"
+          className="sc-jTzLTM cufbYR"
         >
           Showing for dates
         </span>
          
         <span
-          className="sc-iwsKbI ebSInR"
+          className="sc-fjdhpX fDKCBV"
         >
           January 27, 49385
            to 
@@ -52,12 +52,13 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
       </span>
     </span>
     <section
-      className="sc-bZQynM dKDtFu"
+      className="sc-gZMcBi gYgfEP"
     >
       <h2
         style={
           Object {
-            "margin": "2rem 0 1rem",
+            "margin": "0",
+            "padding": "0",
           }
         }
       >
@@ -65,9 +66,9 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
           style={
             Object {
               "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "2rem",
-              "fontWeight": 600,
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "1.25rem",
+              "fontWeight": 700,
             }
           }
         >
@@ -85,12 +86,12 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         }
       >
         <span
-          className="sc-gzVnrw eMydYi"
+          className="sc-gqjmRU iVoIsy"
         >
           Showing for accounts
         </span>
         <span
-          className="sc-htoDjs eCjlmS"
+          className="sc-VigVT fXurLo"
         >
            
         </span>
@@ -98,9 +99,6 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
       <ul
         style={
           Object {
-            "borderLeft": "solid 1px #ced7df",
-            "borderRadius": "2px",
-            "borderTop": "solid 1px #ced7df",
             "display": "flex",
             "flexWrap": "wrap",
             "margin": "0 auto",
@@ -111,8 +109,6 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         <li
           style={
             Object {
-              "borderBottom": "solid 1px #CED7DF",
-              "borderRight": "solid 1px #CED7DF",
               "boxSizing": "border-box",
               "display": "inline-block",
               "flexGrow": 1,
@@ -126,9 +122,8 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
             style={
               Object {
                 "display": "block",
-                "fontSize": "12px",
+                "fontSize": "0.75rem",
                 "fontWeight": 600,
-                "marginLeft": "15px",
                 "marginTop": "15px",
               }
             }
@@ -140,8 +135,8 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -171,9 +166,8 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                 style={
                   Object {
                     "color": "#323b43",
-                    "fontSize": "2em",
+                    "fontSize": "2.5rem",
                     "fontWeight": 600,
-                    "marginLeft": "15px",
                   }
                 }
               >
@@ -181,9 +175,9 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "2rem",
-                      "fontWeight": 600,
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -243,7 +237,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                     style={
                       Object {
                         "color": "shamrock",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "1.25rem",
                       }
                     }
@@ -261,8 +255,6 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         <li
           style={
             Object {
-              "borderBottom": "solid 1px #CED7DF",
-              "borderRight": "solid 1px #CED7DF",
               "boxSizing": "border-box",
               "display": "inline-block",
               "flexGrow": 1,
@@ -276,9 +268,8 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
             style={
               Object {
                 "display": "block",
-                "fontSize": "12px",
+                "fontSize": "0.75rem",
                 "fontWeight": 600,
-                "marginLeft": "15px",
                 "marginTop": "15px",
               }
             }
@@ -290,8 +281,8 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -321,9 +312,8 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                 style={
                   Object {
                     "color": "#323b43",
-                    "fontSize": "2em",
+                    "fontSize": "2.5rem",
                     "fontWeight": 600,
-                    "marginLeft": "15px",
                   }
                 }
               >
@@ -331,9 +321,9 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "2rem",
-                      "fontWeight": 600,
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -394,7 +384,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                     style={
                       Object {
                         "color": "torchRed",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "1.25rem",
                       }
                     }
@@ -412,8 +402,6 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         <li
           style={
             Object {
-              "borderBottom": "solid 1px #CED7DF",
-              "borderRight": "solid 1px #CED7DF",
               "boxSizing": "border-box",
               "display": "inline-block",
               "flexGrow": 1,
@@ -427,9 +415,8 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
             style={
               Object {
                 "display": "block",
-                "fontSize": "12px",
+                "fontSize": "0.75rem",
                 "fontWeight": 600,
-                "marginLeft": "15px",
                 "marginTop": "15px",
               }
             }
@@ -441,8 +428,8 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -472,9 +459,8 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                 style={
                   Object {
                     "color": "#323b43",
-                    "fontSize": "2em",
+                    "fontSize": "2.5rem",
                     "fontWeight": 600,
-                    "marginLeft": "15px",
                   }
                 }
               >
@@ -482,9 +468,9 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "2rem",
-                      "fontWeight": 600,
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -545,7 +531,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                     style={
                       Object {
                         "color": "torchRed",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "1.25rem",
                       }
                     }
@@ -563,8 +549,6 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         <li
           style={
             Object {
-              "borderBottom": "solid 1px #CED7DF",
-              "borderRight": "solid 1px #CED7DF",
               "boxSizing": "border-box",
               "display": "inline-block",
               "flexGrow": 1,
@@ -578,9 +562,8 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
             style={
               Object {
                 "display": "block",
-                "fontSize": "12px",
+                "fontSize": "0.75rem",
                 "fontWeight": 600,
-                "marginLeft": "15px",
                 "marginTop": "15px",
               }
             }
@@ -592,8 +575,8 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -623,9 +606,8 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                 style={
                   Object {
                     "color": "#323b43",
-                    "fontSize": "2em",
+                    "fontSize": "2.5rem",
                     "fontWeight": 600,
-                    "marginLeft": "15px",
                   }
                 }
               >
@@ -633,9 +615,9 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "2rem",
-                      "fontWeight": 600,
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -696,7 +678,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                     style={
                       Object {
                         "color": "torchRed",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "1.25rem",
                       }
                     }
@@ -714,8 +696,6 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         <li
           style={
             Object {
-              "borderBottom": "solid 1px #CED7DF",
-              "borderRight": "solid 1px #CED7DF",
               "boxSizing": "border-box",
               "display": "inline-block",
               "flexGrow": 1,
@@ -729,9 +709,8 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
             style={
               Object {
                 "display": "block",
-                "fontSize": "12px",
+                "fontSize": "0.75rem",
                 "fontWeight": 600,
-                "marginLeft": "15px",
                 "marginTop": "15px",
               }
             }
@@ -743,8 +722,8 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -774,9 +753,8 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                 style={
                   Object {
                     "color": "#323b43",
-                    "fontSize": "2em",
+                    "fontSize": "2.5rem",
                     "fontWeight": 600,
-                    "marginLeft": "15px",
                   }
                 }
               >
@@ -784,9 +762,9 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "2rem",
-                      "fontWeight": 600,
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -832,14 +810,22 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                 </svg>
               </span>
               <div
-                style={undefined}
+                style={
+                  Object {
+                    "color": "#8D969E",
+                    "display": "inline-block",
+                    "fontSize": "18px",
+                    "fontWeight": 600,
+                    "marginLeft": "5px",
+                  }
+                }
               >
                 <span>
                   <span
                     style={
                       Object {
                         "color": "#8D969E",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "1.25rem",
                       }
                     }
@@ -857,8 +843,6 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         <li
           style={
             Object {
-              "borderBottom": "solid 1px #CED7DF",
-              "borderRight": "solid 1px #CED7DF",
               "boxSizing": "border-box",
               "display": "inline-block",
               "flexGrow": 1,
@@ -872,9 +856,8 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
             style={
               Object {
                 "display": "block",
-                "fontSize": "12px",
+                "fontSize": "0.75rem",
                 "fontWeight": 600,
-                "marginLeft": "15px",
                 "marginTop": "15px",
               }
             }
@@ -886,8 +869,8 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -917,9 +900,8 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                 style={
                   Object {
                     "color": "#323b43",
-                    "fontSize": "2em",
+                    "fontSize": "2.5rem",
                     "fontWeight": 600,
-                    "marginLeft": "15px",
                   }
                 }
               >
@@ -927,9 +909,9 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "2rem",
-                      "fontWeight": 600,
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -990,7 +972,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                     style={
                       Object {
                         "color": "torchRed",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "1.25rem",
                       }
                     }
@@ -1008,8 +990,6 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         <li
           style={
             Object {
-              "borderBottom": "solid 1px #CED7DF",
-              "borderRight": "solid 1px #CED7DF",
               "boxSizing": "border-box",
               "display": "inline-block",
               "flexGrow": 1,
@@ -1023,9 +1003,8 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
             style={
               Object {
                 "display": "block",
-                "fontSize": "12px",
+                "fontSize": "0.75rem",
                 "fontWeight": 600,
-                "marginLeft": "15px",
                 "marginTop": "15px",
               }
             }
@@ -1037,8 +1016,8 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -1068,9 +1047,8 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                 style={
                   Object {
                     "color": "#323b43",
-                    "fontSize": "2em",
+                    "fontSize": "2.5rem",
                     "fontWeight": 600,
-                    "marginLeft": "15px",
                   }
                 }
               >
@@ -1078,9 +1056,9 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "2rem",
-                      "fontWeight": 600,
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -1141,7 +1119,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                     style={
                       Object {
                         "color": "torchRed",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "1.25rem",
                       }
                     }
@@ -1159,8 +1137,6 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         <li
           style={
             Object {
-              "borderBottom": "solid 1px #CED7DF",
-              "borderRight": "solid 1px #CED7DF",
               "boxSizing": "border-box",
               "display": "inline-block",
               "flexGrow": 1,
@@ -1174,9 +1150,8 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
             style={
               Object {
                 "display": "block",
-                "fontSize": "12px",
+                "fontSize": "0.75rem",
                 "fontWeight": 600,
-                "marginLeft": "15px",
                 "marginTop": "15px",
               }
             }
@@ -1188,8 +1163,8 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -1219,9 +1194,8 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                 style={
                   Object {
                     "color": "#323b43",
-                    "fontSize": "2em",
+                    "fontSize": "2.5rem",
                     "fontWeight": 600,
-                    "marginLeft": "15px",
                   }
                 }
               >
@@ -1229,9 +1203,9 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "2rem",
-                      "fontWeight": 600,
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -1292,7 +1266,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                     style={
                       Object {
                         "color": "torchRed",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "1.25rem",
                       }
                     }

@@ -915,8 +915,6 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
     style={
       Object {
         "display": "flex",
-        "flexGrow": 1,
-        "height": "100%",
       }
     }
   >
@@ -1102,10 +1100,60 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
     <div
       style={
         Object {
-          "padding": "1rem",
+          "textAlign": "center",
         }
       }
     >
+      <div
+        style={
+          Object {
+            "height": "1rem",
+            "margin": "0 auto 1rem auto",
+            "position": "relative",
+            "width": "1rem",
+          }
+        }
+      >
+        <span>
+          <div
+            style={
+              Object {
+                "height": "1rem",
+                "left": 0,
+                "opacity": 0,
+                "position": "absolute",
+                "top": 0,
+                "transition": "all 1000ms ease-in-out",
+                "width": "1rem",
+              }
+            }
+          >
+            <svg
+              height="100%"
+              style={
+                Object {
+                  "fill": "#59626a",
+                  "height": "1rem",
+                  "width": "1rem",
+                }
+              }
+              version="1.1"
+              viewBox="0 0 16 16"
+              width="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            >
+              <g
+                className="shuttleGray"
+              >
+                <path
+                  d="M1.10241622,4.34038738 L7.75166358,7.40469806 C7.88821853,7.46764349 8.11178147,7.46764349 8.24833642,7.40469806 L14.8975838,4.34038738 C15.0341387,4.27744195 15.0341387,4.17446518 14.8975838,4.11151975 L8.24833642,1.04720908 C8.11178147,0.984263641 7.88821853,0.984263641 7.75166358,1.04720908 L1.10241622,4.11151975 C0.965861261,4.17446518 0.965861261,4.27744195 1.10241622,4.34038738"
+                />
+              </g>
+            </svg>
+          </div>
+        </span>
+      </div>
       <span
         style={
           Object {
@@ -1116,7 +1164,7 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
           }
         }
       >
-        This is where the Comparisons will go.
+        Loading...
       </span>
     </div>
   </div>
@@ -1372,7 +1420,7 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
         style={
           Object {
             "color": "#59626a",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontFamily": "\\"Roboto\\", sans-serif",
             "fontSize": "1rem",
             "fontWeight": 400,
           }
@@ -1388,7 +1436,7 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
 exports[`Snapshots ReportsPage should render reports page 1`] = `
 <span>
   <div
-    className="sc-kGXeez ldpPAk"
+    className="sc-hMqMXs ewXgWI"
   >
     <div
       style={
@@ -1571,10 +1619,10 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
       </a>
     </div>
     <div
-      className="sc-kpOJdX LsipW"
+      className="sc-kEYyzF bnShOR"
     >
       <header
-        className="sc-ckVGcZ byWctv"
+        className="sc-iAyFgw bbekyU"
       >
         <button
           className="sc-bdVaJa eTEyQW"
@@ -1598,7 +1646,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
               className="bi-calendar"
             />
             <span>
-              From: 11/02/17 - To: 11/08/17
+              From: 11/06/17 - To: 11/12/17
             </span>
             <span
               className="rightSide"
@@ -1887,7 +1935,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
         </div>
       </header>
       <div
-        className="sc-dxgOiQ gGVzZA"
+        className="sc-kkGfuU kAHaQx"
       >
         ...loading
       </div>

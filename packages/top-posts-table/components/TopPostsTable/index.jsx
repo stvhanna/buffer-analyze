@@ -8,6 +8,7 @@ import {
 import {
   ChartStateNoData as NoData,
   ChartStateLoading as Loading,
+  ChartCard,
   ChartHeader,
 } from '@bufferapp/analyze-shared-components';
 
@@ -28,8 +29,8 @@ import {
 import { metricsConfig } from '../../metrics';
 
 const gridContainer = {
-  minHeight: '12rem',
   position: 'relative',
+  padding: '1.5rem',
 };
 
 const defaultSortMetrics = {
@@ -144,7 +145,7 @@ const TopPostsTable = (props) => {
 
   let content = null;
   if (loading) {
-    content = <Loading active text="Top Posts Loading..." />;
+    content = <Loading active noBorder />;
   } else if (topPosts.length === 0) {
     content = <NoData />;
   } else {
@@ -170,7 +171,7 @@ const TopPostsTable = (props) => {
   }
 
   return (
-    <div>
+    <ChartCard>
       <ChartHeader>
         <Title />
         <AddReport
@@ -185,7 +186,7 @@ const TopPostsTable = (props) => {
       <div style={gridContainer}>
         {content}
       </div>
-    </div>
+    </ChartCard>
   );
 };
 

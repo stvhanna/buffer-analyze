@@ -16,14 +16,11 @@ const gridStyle = {
   flexWrap: 'wrap',
   padding: '0',
   margin: '0 auto',
-  borderLeft: `solid 1px ${geyser}`,
-  borderRadius: '2px',
 };
 
 const gridContainer = {
-  minHeight: '12rem',
   position: 'relative',
-  margin: '0 0 1.5rem',
+  margin: '1.5rem 1.5rem 1rem',
 };
 
 const Footer = ({ totals, selectedMetricLabel, startDate, endDate }) => {

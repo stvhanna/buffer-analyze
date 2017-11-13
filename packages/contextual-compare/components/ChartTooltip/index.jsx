@@ -216,7 +216,7 @@ const ChartTooltip = ({
       color: '#fff',
       cursor: 'default',
       fontSize: '9pt',
-      fontFamily: 'Open Sans, Helvetica Neue, Helvetica, Arial, sans serif',
+      fontFamily: 'Roboto, sans serif',
       pointerEvents: 'none',
       whiteSpace: 'normal',
     }}
