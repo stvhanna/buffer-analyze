@@ -2,6 +2,7 @@ import { actionTypes as fetchActions } from '@bufferapp/async-data-fetch';
 
 export const actionTypes = {
   TOGGLE_PROFILE: 'TOGGLE_PROFILE',
+  COMPARE_PROFILES: 'COMPARE_PROFILES',
   FILTER_PROFILES: 'FILTER_PROFILES',
   OPEN_DROPDOWN: 'OPEN_DROPDOWN',
   CLOSE_DROPDOWN: 'CLOSE_DROPDOWN',
@@ -62,6 +63,9 @@ export default (state = initialState, action) => {
       return Object.assign({}, state, {
         isDropdownOpen: false,
       });
+    // changing pages on navbar.
+    case actionTypes.SELECT_PROFILE_SERVICE:
+      return initialState;
     default:
       return state;
   }
