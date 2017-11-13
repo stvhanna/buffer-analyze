@@ -25,4 +25,17 @@ describe('actions', () => {
       chart_id: chartId,
     });
   });
+  it('addToReport triggers ADD_TO_REPORT', () => {
+    const reportId = 'report-123';
+    const chartId = 'summary-table';
+    const state = {
+      key: 'value',
+    };
+    expect(actions.addToReport(reportId, chartId, state)).toEqual({
+      type: actionTypes.ADD_TO_REPORT,
+      reportId,
+      state,
+      chart_id: chartId,
+    });
+  });
 });

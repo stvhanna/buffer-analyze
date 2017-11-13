@@ -4,6 +4,36 @@ import { checkA11y } from 'storybook-addon-a11y';
 import { action } from '@storybook/addon-actions';
 import Modal from './index';
 
+const mockReports = [{
+  _id: '1293125asda',
+  name: 'Weekly Sync Report',
+  updated_at: 1510099200000,
+}, {
+  _id: '1921591adsd',
+  name: 'client social media campaign',
+  updated_at: 1507680000000,
+}, {
+  _id: '1921591adsd',
+  name: 'client social media campaign',
+  updated_at: 1507680000000,
+}, {
+  _id: '1921591adsd',
+  name: 'client social media campaign',
+  updated_at: 1507680000000,
+}, {
+  _id: '1921591adsd',
+  name: 'client social media campaign',
+  updated_at: 1507680000000,
+}, {
+  _id: '1921591adsd',
+  name: 'client social media campaign',
+  updated_at: 1507680000000,
+}, {
+  _id: '1921591adsd',
+  name: 'client social media campaign',
+  updated_at: 1507680000000,
+}];
+
 storiesOf('Modal')
   .addDecorator(checkA11y)
   .add('unopened', () => (
@@ -13,6 +43,7 @@ storiesOf('Modal')
         addReportPlaceholder: 'Please enter title here',
         createReport: 'Create Report',
       }}
+      toggle={action('toggle')}
     />
   ))
   .add('open', () => (
@@ -24,5 +55,7 @@ storiesOf('Modal')
       }}
       open
       addReport={action('add report')}
+      toggle={action('toggle')}
+      reports={mockReports}
     />
   ));

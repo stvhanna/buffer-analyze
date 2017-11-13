@@ -1,5 +1,6 @@
 export const actionTypes = {
   CREATE_REPORT: 'CREATE_REPORT',
+  ADD_TO_REPORT: 'ADD_TO_REPORT',
 };
 
 export const actions = {
@@ -9,6 +10,14 @@ export const actions = {
       name,
       state,
       chart_id: chartId,
+    };
+  },
+  addToReport(id, chartId, state = {}) {
+    return {
+      type: actionTypes.ADD_TO_REPORT,
+      state,
+      chart_id: chartId,
+      reportId: id,
     };
   },
 };

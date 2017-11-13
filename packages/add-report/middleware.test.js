@@ -47,4 +47,24 @@ describe('middleware', () => {
     }));
     expect(next).toHaveBeenCalledWith(action);
   });
+
+  it('should add a chart to a report when ADD_TO_REPORT is triggered', () => {
+    const action = {
+      type: actionTypes.ADD_TO_REPORT,
+      chart_id: 'summary-table',
+      reportId: 'report-123',
+      state: {},
+    };
+    middleware(store)(next)(action);
+    expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
+      name: 'add_chart_to_report',
+      args: {
+        reportId: 'report-123',
+        profileId: '12359182129asd',
+        chartId: 'summary-table',
+        state: {},
+      },
+    }));
+    expect(next).toHaveBeenCalledWith(action);
+  });
 });

@@ -1,25 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Divider from '@bufferapp/components/Divider';
 import Text from '@bufferapp/components/Text';
 import Button from '@bufferapp/analyze-shared-components/Button';
+import Modal from '@bufferapp/analyze-shared-components/Modal';
 
-const Card = styled.section`
-  width: 660px;
-  background: #FFFFFF;
-  border: 1px solid #E2E8ED;
-  box-shadow: 0px 0px 10px rgba(48, 71, 89, 0.05);
-  box-sizing: border-box;
-  border-radius: 5px;
-  padding: 2.25rem;
-  position: absolute;
-  top: 0;
-  right: 9.5rem;
-  z-index: 1;
+import { ReportList } from '@bufferapp/report-list';
+
+const Content = styled.section`
+  padding: 0 .75rem;
 `;
 
 const Section = styled.section`
-  margin: 1.25rem 0 2.25rem;
+  margin-top: 1.25rem;
+  max-height: 18rem;
+  overflow-y: scroll;
+`;
+
+const InputWrapper = styled.section`
+  margin-top: 1.25rem;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: space-between;
 `;
@@ -39,41 +40,62 @@ const Input = styled.input.attrs({
   font-family: 'Roboto', sans-serif;
 `;
 
-const Modal = ({ open, addReport, translations }) => {
-  if (!open) return null;
+const AddReportModal = ({ open, addReport, toggle, selectReport, translations, reports }) => {
   let textInput;
   const onClick = () => {
     addReport(textInput.value);
   };
   return (
-    <Card>
-      <Text color="sidebarBackgroundBlue" weight="medium">{translations.addReportTitle}</Text>
-      <Section>
-        <Input
-          placeholder={translations.addReportPlaceholder}
-          innerRef={(input) => { textInput = input; }}
-        />
-        <Button onClick={onClick}>
-          <Text color="sidebarBackgroundBlue" size="small" weight="medium">{translations.createReport}</Text>
-        </Button>
-      </Section>
-    </Card>
+    <Modal open={open} toggle={toggle}>
+      <Content>
+        <Text color="sidebarBackgroundBlue" weight="medium">{translations.addReportTitle}</Text>
+        <InputWrapper>
+          <Input
+            placeholder={translations.addReportPlaceholder}
+            innerRef={(input) => { textInput = input; }}
+          />
+          <Button onClick={onClick}>
+            <Text color="sidebarBackgroundBlue" size="small" weight="medium">{translations.createReport}</Text>
+          </Button>
+        </InputWrapper>
+        <div>
+          <Text color="sidebarBackgroundBlue" weight="medium">Or, add to an existing report</Text>
+        </div>
+        <Section>
+          <ReportList
+            reports={reports}
+            selectReport={selectReport}
+            small
+          />
+        </Section>
+      </Content>
+      <Divider marginTop="0" />
+    </Modal>
   );
 };
 
-Modal.defaultProps = {
+AddReportModal.defaultProps = {
   open: false,
   addReport: () => {},
+  selectReport: () => {},
+  toggle: () => {},
+  reports: [],
 };
 
-Modal.propTypes = {
+AddReportModal.propTypes = {
   open: PropTypes.bool,
   addReport: PropTypes.func,
+  selectReport: PropTypes.func,
   translations: PropTypes.shape({
     addReportTitle: PropTypes.string,
     createReport: PropTypes.string,
     addReportPlaceholder: PropTypes.string,
   }).isRequired,
+  toggle: PropTypes.func,
+  reports: PropTypes.arrayOf(PropTypes.shape({
+    updated_at: PropTypes.string,
+    name: PropTypes.string,
+  })),
 };
 
-export default Modal;
+export default AddReportModal;

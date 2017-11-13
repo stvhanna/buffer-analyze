@@ -3,6 +3,17 @@ import { actionTypes } from './actions';
 
 export default store => next => (action) => { // eslint-disable-line no-unused-vars
   switch (action.type) {
+    case actionTypes.ADD_TO_REPORT:
+      store.dispatch(actions.fetch({
+        name: 'add_chart_to_report',
+        args: {
+          reportId: action.reportId,
+          profileId: store.getState().profiles.selectedProfileId,
+          chartId: action.chart_id,
+          state: action.state,
+        },
+      }));
+      break;
     case actionTypes.CREATE_REPORT:
       store.dispatch(actions.fetch({
         name: 'create_report',

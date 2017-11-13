@@ -25,6 +25,9 @@ describe('AddReport', () => {
         translations: {
         },
       },
+      reportList: {
+        reports: [],
+      },
     });
     const wrapper = mount(
       <Provider store={store}>

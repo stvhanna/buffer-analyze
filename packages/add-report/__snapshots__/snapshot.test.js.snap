@@ -4,93 +4,9 @@ exports[`Snapshots AddReport opened 1`] = `
 <span>
   <div>
     <span
-      className="sc-bZQynM bpcKCf"
+      className="sc-gqjmRU hDRXCq"
     />
     <span>
-      <section
-        className="sc-ifAKCX eGJmLz"
-      >
-        <button
-          className="sc-bdVaJa eTEyQW"
-          onClick={[Function]}
-        >
-          <span
-            style={
-              Object {
-                "color": "#192534",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 500,
-              }
-            }
-          >
-            Add to Report
-          </span>
-        </button>
-      </section>
-    </span>
-  </div>
-</span>
-`;
-
-exports[`Snapshots AddReport unopened 1`] = `
-<span>
-  <div>
-    <span
-      className="sc-bZQynM bpcKCf"
-    />
-    <span>
-      <section
-        className="sc-ifAKCX eGJmLz"
-      >
-        <button
-          className="sc-bdVaJa eTEyQW"
-          onClick={[Function]}
-        >
-          <span
-            style={
-              Object {
-                "color": "#192534",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 500,
-              }
-            }
-          >
-            Add to Report
-          </span>
-        </button>
-      </section>
-    </span>
-  </div>
-</span>
-`;
-
-exports[`Snapshots Modal open 1`] = `
-<span>
-  <section
-    className="sc-bwzfXH ixJVwR"
-  >
-    <span
-      style={
-        Object {
-          "color": "#192534",
-          "fontFamily": "\\"Roboto\\", sans-serif",
-          "fontSize": "1rem",
-          "fontWeight": 500,
-        }
-      }
-    >
-      Add to a new report
-    </span>
-    <section
-      className="sc-htpNat ddyrlB"
-    >
-      <input
-        className="sc-bxivhb fnVrYG"
-        placeholder="Please enter title here"
-        type="text"
-      />
       <button
         className="sc-bdVaJa eTEyQW"
         onClick={[Function]}
@@ -105,11 +21,633 @@ exports[`Snapshots Modal open 1`] = `
             }
           }
         >
-          Create Report
+          Add to Report
         </span>
       </button>
+    </span>
+  </div>
+</span>
+`;
+
+exports[`Snapshots AddReport unopened 1`] = `
+<span>
+  <div>
+    <span
+      className="sc-gqjmRU hDRXCq"
+    />
+    <span>
+      <button
+        className="sc-bdVaJa eTEyQW"
+        onClick={[Function]}
+      >
+        <span
+          style={
+            Object {
+              "color": "#192534",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
+              "fontWeight": 500,
+            }
+          }
+        >
+          Add to Report
+        </span>
+      </button>
+    </span>
+  </div>
+</span>
+`;
+
+exports[`Snapshots Modal open 1`] = `
+<span>
+  <div>
+    <div
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "rgba(50, 59, 67, 0.8)",
+          "bottom": 0,
+          "left": 0,
+          "opacity": 1,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "zIndex": 2000,
+        }
+      }
+    />
+    <section
+      className="sc-bwzfXH hsxteo"
+    >
+      <section
+        className="sc-gzVnrw gqpfaq"
+      >
+        <span
+          style={
+            Object {
+              "color": "#192534",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 500,
+            }
+          }
+        >
+          Add to a new report
+        </span>
+        <section
+          className="sc-dnqmqq gJHkvk"
+        >
+          <input
+            className="sc-iwsKbI ibazrd"
+            placeholder="Please enter title here"
+            type="text"
+          />
+          <button
+            className="sc-bdVaJa eTEyQW"
+            onClick={[Function]}
+          >
+            <span
+              style={
+                Object {
+                  "color": "#192534",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "0.75rem",
+                  "fontWeight": 500,
+                }
+              }
+            >
+              Create Report
+            </span>
+          </button>
+        </section>
+        <div>
+          <span
+            style={
+              Object {
+                "color": "#192534",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 500,
+              }
+            }
+          >
+            Or, add to an existing report
+          </span>
+        </div>
+        <section
+          className="sc-htoDjs jLChxT"
+        >
+          <ol
+            className="sc-bZQynM kdXtUd"
+          >
+            <li
+              className="sc-htpNat kuydZ"
+            >
+              <button
+                aria-label={null}
+                disabled={undefined}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "background": "none",
+                    "backgroundColor": "unset",
+                    "border": "none",
+                    "borderRadius": "unset",
+                    "color": "unset",
+                    "cursor": "pointer",
+                    "display": "unset",
+                    "fontFamily": "unset",
+                    "fontSize": "unset",
+                    "fontWeight": "unset",
+                    "lineHeight": "unset",
+                    "margin": "unset",
+                    "outline": "none",
+                    "padding": 0,
+                    "transition": "unset",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  className="sc-bxivhb csZuzJ"
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontSize": "0.8rem",
+                        "fontWeight": 600,
+                      }
+                    }
+                  >
+                    <span
+                      className="sc-ifAKCX fkqwkB"
+                    >
+                      Weekly Sync Report
+                    </span>
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontSize": "1rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    <span
+                      className="sc-EHOje faSybo"
+                    >
+                      November 8, 2017
+                    </span>
+                  </span>
+                </span>
+              </button>
+            </li>
+            <li
+              className="sc-htpNat kuydZ"
+            >
+              <button
+                aria-label={null}
+                disabled={undefined}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "background": "none",
+                    "backgroundColor": "unset",
+                    "border": "none",
+                    "borderRadius": "unset",
+                    "color": "unset",
+                    "cursor": "pointer",
+                    "display": "unset",
+                    "fontFamily": "unset",
+                    "fontSize": "unset",
+                    "fontWeight": "unset",
+                    "lineHeight": "unset",
+                    "margin": "unset",
+                    "outline": "none",
+                    "padding": 0,
+                    "transition": "unset",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  className="sc-bxivhb csZuzJ"
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontSize": "0.8rem",
+                        "fontWeight": 600,
+                      }
+                    }
+                  >
+                    <span
+                      className="sc-ifAKCX fkqwkB"
+                    >
+                      client social media campaign
+                    </span>
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontSize": "1rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    <span
+                      className="sc-EHOje faSybo"
+                    >
+                      October 11, 2017
+                    </span>
+                  </span>
+                </span>
+              </button>
+            </li>
+            <li
+              className="sc-htpNat kuydZ"
+            >
+              <button
+                aria-label={null}
+                disabled={undefined}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "background": "none",
+                    "backgroundColor": "unset",
+                    "border": "none",
+                    "borderRadius": "unset",
+                    "color": "unset",
+                    "cursor": "pointer",
+                    "display": "unset",
+                    "fontFamily": "unset",
+                    "fontSize": "unset",
+                    "fontWeight": "unset",
+                    "lineHeight": "unset",
+                    "margin": "unset",
+                    "outline": "none",
+                    "padding": 0,
+                    "transition": "unset",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  className="sc-bxivhb csZuzJ"
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontSize": "0.8rem",
+                        "fontWeight": 600,
+                      }
+                    }
+                  >
+                    <span
+                      className="sc-ifAKCX fkqwkB"
+                    >
+                      client social media campaign
+                    </span>
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontSize": "1rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    <span
+                      className="sc-EHOje faSybo"
+                    >
+                      October 11, 2017
+                    </span>
+                  </span>
+                </span>
+              </button>
+            </li>
+            <li
+              className="sc-htpNat kuydZ"
+            >
+              <button
+                aria-label={null}
+                disabled={undefined}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "background": "none",
+                    "backgroundColor": "unset",
+                    "border": "none",
+                    "borderRadius": "unset",
+                    "color": "unset",
+                    "cursor": "pointer",
+                    "display": "unset",
+                    "fontFamily": "unset",
+                    "fontSize": "unset",
+                    "fontWeight": "unset",
+                    "lineHeight": "unset",
+                    "margin": "unset",
+                    "outline": "none",
+                    "padding": 0,
+                    "transition": "unset",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  className="sc-bxivhb csZuzJ"
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontSize": "0.8rem",
+                        "fontWeight": 600,
+                      }
+                    }
+                  >
+                    <span
+                      className="sc-ifAKCX fkqwkB"
+                    >
+                      client social media campaign
+                    </span>
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontSize": "1rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    <span
+                      className="sc-EHOje faSybo"
+                    >
+                      October 11, 2017
+                    </span>
+                  </span>
+                </span>
+              </button>
+            </li>
+            <li
+              className="sc-htpNat kuydZ"
+            >
+              <button
+                aria-label={null}
+                disabled={undefined}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "background": "none",
+                    "backgroundColor": "unset",
+                    "border": "none",
+                    "borderRadius": "unset",
+                    "color": "unset",
+                    "cursor": "pointer",
+                    "display": "unset",
+                    "fontFamily": "unset",
+                    "fontSize": "unset",
+                    "fontWeight": "unset",
+                    "lineHeight": "unset",
+                    "margin": "unset",
+                    "outline": "none",
+                    "padding": 0,
+                    "transition": "unset",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  className="sc-bxivhb csZuzJ"
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontSize": "0.8rem",
+                        "fontWeight": 600,
+                      }
+                    }
+                  >
+                    <span
+                      className="sc-ifAKCX fkqwkB"
+                    >
+                      client social media campaign
+                    </span>
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontSize": "1rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    <span
+                      className="sc-EHOje faSybo"
+                    >
+                      October 11, 2017
+                    </span>
+                  </span>
+                </span>
+              </button>
+            </li>
+            <li
+              className="sc-htpNat kuydZ"
+            >
+              <button
+                aria-label={null}
+                disabled={undefined}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "background": "none",
+                    "backgroundColor": "unset",
+                    "border": "none",
+                    "borderRadius": "unset",
+                    "color": "unset",
+                    "cursor": "pointer",
+                    "display": "unset",
+                    "fontFamily": "unset",
+                    "fontSize": "unset",
+                    "fontWeight": "unset",
+                    "lineHeight": "unset",
+                    "margin": "unset",
+                    "outline": "none",
+                    "padding": 0,
+                    "transition": "unset",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  className="sc-bxivhb csZuzJ"
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontSize": "0.8rem",
+                        "fontWeight": 600,
+                      }
+                    }
+                  >
+                    <span
+                      className="sc-ifAKCX fkqwkB"
+                    >
+                      client social media campaign
+                    </span>
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontSize": "1rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    <span
+                      className="sc-EHOje faSybo"
+                    >
+                      October 11, 2017
+                    </span>
+                  </span>
+                </span>
+              </button>
+            </li>
+            <li
+              className="sc-htpNat kuydZ"
+            >
+              <button
+                aria-label={null}
+                disabled={undefined}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "background": "none",
+                    "backgroundColor": "unset",
+                    "border": "none",
+                    "borderRadius": "unset",
+                    "color": "unset",
+                    "cursor": "pointer",
+                    "display": "unset",
+                    "fontFamily": "unset",
+                    "fontSize": "unset",
+                    "fontWeight": "unset",
+                    "lineHeight": "unset",
+                    "margin": "unset",
+                    "outline": "none",
+                    "padding": 0,
+                    "transition": "unset",
+                    "width": "100%",
+                  }
+                }
+              >
+                <span
+                  className="sc-bxivhb csZuzJ"
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontSize": "0.8rem",
+                        "fontWeight": 600,
+                      }
+                    }
+                  >
+                    <span
+                      className="sc-ifAKCX fkqwkB"
+                    >
+                      client social media campaign
+                    </span>
+                  </span>
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontSize": "1rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    <span
+                      className="sc-EHOje faSybo"
+                    >
+                      October 11, 2017
+                    </span>
+                  </span>
+                </span>
+              </button>
+            </li>
+          </ol>
+        </section>
+      </section>
+      <hr
+        style={
+          Object {
+            "background": "#e6ebef",
+            "border": "none",
+            "boxSizing": "border-box",
+            "height": "0.063rem",
+            "marginBottom": "0.5rem",
+            "marginTop": "0",
+            "width": "100%",
+          }
+        }
+      />
     </section>
-  </section>
+  </div>
 </span>
 `;
 

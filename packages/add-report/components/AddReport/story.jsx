@@ -12,6 +12,36 @@ const Spacer = styled.span`
   height: 60px;
 `;
 
+const mockReports = [{
+  _id: '1293125asda',
+  name: 'Weekly Sync Report',
+  updated_at: 1510099200000,
+}, {
+  _id: '1921591adsd',
+  name: 'client social media campaign',
+  updated_at: 1507680000000,
+}, {
+  _id: '1921591adsd',
+  name: 'client social media campaign',
+  updated_at: 1507680000000,
+}, {
+  _id: '1921591adsd',
+  name: 'client social media campaign',
+  updated_at: 1507680000000,
+}, {
+  _id: '1921591adsd',
+  name: 'client social media campaign',
+  updated_at: 1507680000000,
+}, {
+  _id: '1921591adsd',
+  name: 'client social media campaign',
+  updated_at: 1507680000000,
+}, {
+  _id: '1921591adsd',
+  name: 'client social media campaign',
+  updated_at: 1507680000000,
+}];
+
 storiesOf('AddReport')
   .addDecorator(checkA11y)
   .add('unopened', () => (
@@ -33,6 +63,8 @@ storiesOf('AddReport')
           addReport: 'Add to Report',
         }}
         toggleMenu={action('close menu')}
+        addReport={action('add report')}
+        reports={mockReports}
         open
       />
     </div>

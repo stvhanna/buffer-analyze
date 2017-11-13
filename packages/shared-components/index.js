@@ -12,3 +12,4 @@ export ModeToggle from './ModeToggle';
 export Button from './Button';
 export MetricsDropdown from './MetricsDropdown';
 export ChartHeader from './ChartHeader';
+export Modal from './Modal';
