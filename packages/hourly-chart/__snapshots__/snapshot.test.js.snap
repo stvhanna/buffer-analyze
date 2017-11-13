@@ -49,8 +49,8 @@ exports[`Snapshots Dropdown closed dropdown 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -164,8 +164,8 @@ exports[`Snapshots Dropdown closed dropdown 1`] = `
                     style={
                       Object {
                         "color": "#59626a",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
-                        "fontSize": "0.8rem",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
                         "fontWeight": 400,
                       }
                     }
@@ -238,8 +238,8 @@ exports[`Snapshots Dropdown closed dropdown 1`] = `
                     style={
                       Object {
                         "color": "#59626a",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
-                        "fontSize": "0.8rem",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
                         "fontWeight": 400,
                       }
                     }
@@ -306,8 +306,8 @@ exports[`Snapshots Dropdown open dropdown 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -421,8 +421,8 @@ exports[`Snapshots Dropdown open dropdown 1`] = `
                     style={
                       Object {
                         "color": "#59626a",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
-                        "fontSize": "0.8rem",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
                         "fontWeight": 400,
                       }
                     }
@@ -495,8 +495,8 @@ exports[`Snapshots Dropdown open dropdown 1`] = `
                     style={
                       Object {
                         "color": "#59626a",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
-                        "fontSize": "0.8rem",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
                         "fontWeight": 400,
                       }
                     }
@@ -557,9 +557,9 @@ exports[`Snapshots HourlyChart loaded chart 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 600,
+                "fontWeight": 700,
               }
             }
           >
@@ -625,8 +625,8 @@ exports[`Snapshots HourlyChart loaded chart 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.9rem",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.5rem",
                       "fontWeight": 400,
                     }
                   }
@@ -660,8 +660,8 @@ exports[`Snapshots HourlyChart loaded chart 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.9rem",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.5rem",
                       "fontWeight": 400,
                     }
                   }
@@ -721,9 +721,9 @@ exports[`Snapshots HourlyChart loading state 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 600,
+                "fontWeight": 700,
               }
             }
           >
@@ -828,7 +828,7 @@ exports[`Snapshots HourlyChart loading state 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 400,
                   }
@@ -888,9 +888,9 @@ exports[`Snapshots HourlyChart second metric selected 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 600,
+                "fontWeight": 700,
               }
             }
           >
@@ -956,8 +956,8 @@ exports[`Snapshots HourlyChart second metric selected 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.9rem",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.5rem",
                       "fontWeight": 400,
                     }
                   }
@@ -991,8 +991,8 @@ exports[`Snapshots HourlyChart second metric selected 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.9rem",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.5rem",
                       "fontWeight": 400,
                     }
                   }
@@ -1026,8 +1026,8 @@ exports[`Snapshots HourlyChart second metric selected 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.9rem",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.5rem",
                       "fontWeight": 400,
                     }
                   }
