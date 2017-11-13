@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/profile-header",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "description": "The profile header for Insights",
   "main": "index.js",
   "scripts": {
@@ -25,7 +25,7 @@
     "@bufferapp/analyze-shared-components": "^0.10.0",
     "@bufferapp/async-data-fetch": "0.5.36-beta01",
     "@bufferapp/components": "2.1.1",
-    "@bufferapp/nav-sidebar": "^0.10.0",
+    "@bufferapp/nav-sidebar": "^0.10.1",
     "numeral": "2.0.6"
   },
   "devDependencies": {
