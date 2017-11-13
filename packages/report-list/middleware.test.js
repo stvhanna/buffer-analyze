@@ -1,4 +1,4 @@
-import { actions } from '@bufferapp/async-data-fetch';
+import { actions, actionTypes } from '@bufferapp/async-data-fetch';
 import { LOCATION_CHANGE } from 'react-router-redux';
 import middleware from './middleware';
 
@@ -24,6 +24,23 @@ describe('middleware', () => {
       type: 'TEST',
     };
     middleware(store)(next)(action);
+  });
+
+  it('should fetch the reports list on user load', () => {
+    const action = {
+      type: `user_${actionTypes.FETCH_SUCCESS}`,
+      result: {
+        id: 'user1234',
+      },
+    };
+    middleware(store)(next)(action);
+    expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
+      name: 'list_reports',
+      args: {
+        userId: 'user1234',
+      },
+    }));
+    expect(next).toHaveBeenCalledWith(action);
   });
 
   it('should fetch the reports list when location changes to /reports', () => {
