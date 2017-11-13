@@ -38,7 +38,7 @@ const Report = ({ _id, updated_at, name, selectReport, small }) =>
     <Button noStyle fillContainer onClick={() => selectReport(_id)}>
       <ReportText small={small}>
         <Text size={small ? 'small' : null} weight="bold"><Name>{name}</Name></Text>
-        <Text><Date>{moment(updated_at, 'x').format('MMMM D, YYYY')}</Date></Text>
+        <Text size={small ? 'small' : null}><Date>{moment(updated_at, 'x').format('MMMM D, YYYY')}</Date></Text>
       </ReportText>
     </Button>
   </ReportListItem>;
