@@ -13,3 +13,4 @@ export Button from './Button';
 export MetricsDropdown from './MetricsDropdown';
 export ChartCard from './ChartCard';
 export ChartHeader from './ChartHeader';
+export Modal from './Modal';

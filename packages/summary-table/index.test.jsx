@@ -10,6 +10,8 @@ import Summary, {
 } from './index';
 import SummaryTable from './components/SummaryTable';
 
+jest.mock('@bufferapp/add-report');
+
 configure({ adapter: new Adapter() });
 const storeFake = state => ({
   default: () => {},

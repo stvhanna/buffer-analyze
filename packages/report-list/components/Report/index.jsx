@@ -20,7 +20,7 @@ const ReportListItem = styled.li`
 
 const ReportText = styled.span`
   display: flex;
-  padding: 1.5rem 1.25rem;
+  padding: ${props => (props.small ? '.75rem 1rem' : '1.5rem 1.25rem')};
   justify-content: space-between;
   align-items: center;
 `;
@@ -33,21 +33,26 @@ const Date = styled.span`
   color: #c1c1c1;
 `;
 
-const Report = ({ _id, updated_at, name, selectReport }) =>
+const Report = ({ _id, updated_at, name, selectReport, small }) =>
   <ReportListItem>
     <Button noStyle fillContainer onClick={() => selectReport(_id)}>
-      <ReportText>
-        <Text size="large" weight="bold"><Name>{name}</Name></Text>
+      <ReportText small={small}>
+        <Text size={small ? 'small' : null} weight="bold"><Name>{name}</Name></Text>
         <Text><Date>{moment(updated_at, 'x').format('MMMM D, YYYY')}</Date></Text>
       </ReportText>
     </Button>
   </ReportListItem>;
+
+Report.defaultProps = {
+  small: false,
+};
 
 Report.propTypes = {
   _id: PropTypes.string.isRequired,
   updated_at: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   selectReport: PropTypes.func.isRequired,
+  small: PropTypes.bool,
 };
 
 export default Report;

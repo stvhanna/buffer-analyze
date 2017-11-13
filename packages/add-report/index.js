@@ -8,9 +8,11 @@ export default connect(
     translations: {
       ...state.i18n.translations.reports,
     },
+    reports: state.reportList.reports,
   }),
   (dispatch, props) => ({
     createReport: name => dispatch(actions.createReport(name, props.chart, props.state)),
+    addToReport: id => dispatch(actions.addToReport(id, props.chart, props.state)),
   }),
 )(AddReport);
 

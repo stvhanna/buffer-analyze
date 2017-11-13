@@ -14,6 +14,8 @@ export default connect(
   }),
 )(ReportList);
 
+export ReportList from './components/ReportList';
+
 // export reducer, actions and action types
 export reducer, { actions, actionTypes } from './reducer';
 export middleware from './middleware';

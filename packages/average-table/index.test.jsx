@@ -11,6 +11,8 @@ import AverageTableContainer, {
 import AverageTable from './components/AverageTable';
 import mockProfiles from './mocks/profiles';
 
+jest.mock('@bufferapp/add-report');
+
 configure({ adapter: new Adapter() });
 describe('AverageTable', () => {
   it('should render', () => {

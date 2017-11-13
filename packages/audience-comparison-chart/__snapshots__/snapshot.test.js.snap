@@ -11,7 +11,7 @@ exports[`Snapshots AudienceComparisonChart should render a "no data" state 1`] =
   >
     <div>
       <h2
-        className="sc-htpNat VCvAx"
+        className="sc-bxivhb cTJhDP"
       >
         <span
           style={
@@ -27,7 +27,7 @@ exports[`Snapshots AudienceComparisonChart should render a "no data" state 1`] =
         </span>
       </h2>
       <div
-        className="sc-iwsKbI dPcvgv"
+        className="sc-gZMcBi gwdoth"
       >
         <div
           style={
@@ -107,7 +107,7 @@ exports[`Snapshots AudienceComparisonChart should render a loading state 1`] = `
   >
     <div>
       <h2
-        className="sc-htpNat VCvAx"
+        className="sc-bxivhb cTJhDP"
       >
         <span
           style={
@@ -123,7 +123,7 @@ exports[`Snapshots AudienceComparisonChart should render a loading state 1`] = `
         </span>
       </h2>
       <div
-        className="sc-dnqmqq cktmIi"
+        className="sc-iwsKbI dPcvgv"
       >
         <div
           style={
@@ -240,7 +240,7 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
   >
     <div>
       <h2
-        className="sc-htpNat VCvAx"
+        className="sc-bxivhb cTJhDP"
       >
         <span
           style={
@@ -256,15 +256,15 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
         </span>
       </h2>
       <div
-        className="sc-htoDjs fQyzgx"
+        className="sc-dnqmqq cktmIi"
       >
         <div />
       </div>
       <section
-        className="sc-ifAKCX blbWuv"
+        className="sc-EHOje cPjIPk"
       >
         <ul
-          className="sc-bxivhb bxRtQv"
+          className="sc-ifAKCX kfJnLQ"
         >
           <li
             style={
@@ -302,10 +302,10 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
                   }
                 >
                   <div
-                    className="sc-EHOje enMLlg"
+                    className="sc-bZQynM iyAvwK"
                   >
                     <div
-                      className="sc-bZQynM fqsBLH"
+                      className="sc-gzVnrw jpIfFt"
                     >
                       <span
                         style={
@@ -483,10 +483,10 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
                   }
                 >
                   <div
-                    className="sc-EHOje enMLlg"
+                    className="sc-bZQynM iyAvwK"
                   >
                     <div
-                      className="sc-bZQynM fqsBLH"
+                      className="sc-gzVnrw jpIfFt"
                     >
                       <span
                         style={
@@ -647,7 +647,7 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
   >
     <div>
       <h2
-        className="sc-htpNat VCvAx"
+        className="sc-bxivhb cTJhDP"
       >
         <span
           style={
@@ -663,15 +663,15 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
         </span>
       </h2>
       <div
-        className="sc-gzVnrw boivNx"
+        className="sc-htoDjs fQyzgx"
       >
         <div />
       </div>
       <section
-        className="sc-ifAKCX blbWuv"
+        className="sc-EHOje cPjIPk"
       >
         <ul
-          className="sc-bxivhb bxRtQv"
+          className="sc-ifAKCX kfJnLQ"
         >
           <li
             style={
@@ -709,10 +709,10 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
                   }
                 >
                   <div
-                    className="sc-EHOje enMLlg"
+                    className="sc-bZQynM iyAvwK"
                   >
                     <div
-                      className="sc-bZQynM fqsBLH"
+                      className="sc-gzVnrw jpIfFt"
                     >
                       <span
                         style={
@@ -871,7 +871,7 @@ exports[`Snapshots ChartTooltip should render the tooltip 1`] = `
     }
   >
     <div
-      className="sc-bwzfXH eqtISe"
+      className="sc-htpNat gyRHIN"
     >
       <span>
         <span
@@ -952,10 +952,10 @@ exports[`Snapshots Footer should render the footer for a single profile 1`] = `
     }
   >
     <section
-      className="sc-ifAKCX blbWuv"
+      className="sc-EHOje cPjIPk"
     >
       <ul
-        className="sc-bxivhb bxRtQv"
+        className="sc-ifAKCX kfJnLQ"
       >
         <li
           style={
@@ -993,10 +993,10 @@ exports[`Snapshots Footer should render the footer for a single profile 1`] = `
                 }
               >
                 <div
-                  className="sc-EHOje enMLlg"
+                  className="sc-bZQynM iyAvwK"
                 >
                   <div
-                    className="sc-bZQynM fqsBLH"
+                    className="sc-gzVnrw jpIfFt"
                   >
                     <span
                       style={
@@ -1154,10 +1154,10 @@ exports[`Snapshots Footer should render the footer for multiple profiles 1`] = `
     }
   >
     <section
-      className="sc-ifAKCX blbWuv"
+      className="sc-EHOje cPjIPk"
     >
       <ul
-        className="sc-bxivhb bxRtQv"
+        className="sc-ifAKCX kfJnLQ"
       >
         <li
           style={
@@ -1195,10 +1195,10 @@ exports[`Snapshots Footer should render the footer for multiple profiles 1`] = `
                 }
               >
                 <div
-                  className="sc-EHOje enMLlg"
+                  className="sc-bZQynM iyAvwK"
                 >
                   <div
-                    className="sc-bZQynM fqsBLH"
+                    className="sc-gzVnrw jpIfFt"
                   >
                     <span
                       style={
@@ -1376,10 +1376,10 @@ exports[`Snapshots Footer should render the footer for multiple profiles 1`] = `
                 }
               >
                 <div
-                  className="sc-EHOje enMLlg"
+                  className="sc-bZQynM iyAvwK"
                 >
                   <div
-                    className="sc-bZQynM fqsBLH"
+                    className="sc-gzVnrw jpIfFt"
                   >
                     <span
                       style={
@@ -1538,7 +1538,7 @@ exports[`Snapshots Title should render the title for the comparison audience cha
     }
   >
     <h2
-      className="sc-htpNat VCvAx"
+      className="sc-bxivhb cTJhDP"
     >
       <span
         style={

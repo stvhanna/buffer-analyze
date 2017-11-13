@@ -7,11 +7,6 @@ import { Button } from '@bufferapp/analyze-shared-components';
 
 import Modal from '../Modal';
 
-const Wrapper = styled.section`
-  display: inline-block;
-  position: relative;
-`;
-
 const ClickCatcher = styled.div`
   position: absolute;
   top: 0;
@@ -28,6 +23,7 @@ class AddReport extends Component {
     };
     this.toggleMenu = this.toggleMenu.bind(this);
     this.addReport = this.addReport.bind(this);
+    this.selectReport = this.selectReport.bind(this);
   }
 
   toggleMenu() {
@@ -43,30 +39,48 @@ class AddReport extends Component {
     this.props.createReport(name);
   }
 
+  selectReport(id) {
+    this.setState({
+      open: false,
+    });
+    this.props.addToReport(id);
+  }
+
   render() {
     return (
       <span>
-        <Wrapper>
-          <Button onClick={this.toggleMenu}>
-            <Text color="sidebarBackgroundBlue" size="small" weight="medium">{this.props.translations.addReport}</Text>
-          </Button>
-          <Modal
-            translations={this.props.translations}
-            open={this.state.open}
-            addReport={this.addReport}
-          />
-        </Wrapper>
+        <Button onClick={this.toggleMenu}>
+          <Text color="sidebarBackgroundBlue" size="small" weight="medium">{this.props.translations.addReport}</Text>
+        </Button>
+        <Modal
+          translations={this.props.translations}
+          open={this.state.open}
+          toggle={this.toggleMenu}
+          addReport={this.addReport}
+          selectReport={this.selectReport}
+          reports={this.props.reports}
+        />
         {this.state.open && <ClickCatcher onClick={this.toggleMenu} />}
       </span>
     );
   }
 }
 
+
+AddReport.defaultProps = {
+  reports: [],
+};
+
 AddReport.propTypes = {
   translations: PropTypes.shape({
     addReport: PropTypes.string,
   }).isRequired,
   createReport: PropTypes.func.isRequired,
+  addToReport: PropTypes.func.isRequired,
+  reports: PropTypes.arrayOf(PropTypes.shape({
+    updated_at: PropTypes.string,
+    name: PropTypes.string,
+  })),
 };
 
 export default AddReport;
