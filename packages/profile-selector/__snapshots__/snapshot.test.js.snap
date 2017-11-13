@@ -129,9 +129,9 @@ exports[`Snapshots Dropdown Item should render 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
-                "fontWeight": 600,
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
               }
             }
           >
@@ -273,9 +273,9 @@ exports[`Snapshots Dropdown Item should render properly with an empty avatarUrl 
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
-                "fontWeight": 600,
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
               }
             }
           >
@@ -417,9 +417,9 @@ exports[`Snapshots Dropdown Item should selected 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
-                "fontWeight": 600,
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
               }
             }
           >
@@ -561,9 +561,9 @@ exports[`Snapshots ProfileSelectorDropdown should filter by profilesFilterString
           style={
             Object {
               "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.8rem",
-              "fontWeight": 600,
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
+              "fontWeight": 700,
             }
           }
         >
@@ -626,7 +626,7 @@ exports[`Snapshots ProfileSelectorDropdown should filter by profilesFilterString
                   "border": "0.063rem solid #ced7df",
                   "borderRadius": "0.126rem",
                   "boxSizing": "border-box",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
                   "fontSize": "1rem",
                   "outline": 0,
                   "padding": "0.5rem",
@@ -760,9 +760,9 @@ exports[`Snapshots ProfileSelectorDropdown should filter by profilesFilterString
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -791,14 +791,14 @@ exports[`Snapshots ProfileSelectorDropdown should filter by profilesFilterString
                 "color": "#168eea",
                 "cursor": "pointer",
                 "display": "inline-block",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "0.8rem",
                 "margin": "0",
                 "outline": "none",
                 "padding": "0.4rem 0",
                 "textAlign": "center",
                 "textDecoration": "none",
-                "transition": "background-color 0.1s linear",
+                "transition": "background-color 0.2s linear",
                 "width": "100%",
               }
             }
@@ -921,9 +921,9 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
           style={
             Object {
               "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.8rem",
-              "fontWeight": 600,
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
+              "fontWeight": 700,
             }
           }
         >
@@ -986,7 +986,7 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                   "border": "0.063rem solid #ced7df",
                   "borderRadius": "0.126rem",
                   "boxSizing": "border-box",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
                   "fontSize": "1rem",
                   "outline": 0,
                   "padding": "0.5rem",
@@ -1120,9 +1120,9 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -1282,9 +1282,9 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -1412,9 +1412,9 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -1557,9 +1557,9 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -1588,14 +1588,14 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                 "color": "#168eea",
                 "cursor": "pointer",
                 "display": "inline-block",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "0.8rem",
                 "margin": "0",
                 "outline": "none",
                 "padding": "0.4rem 0",
                 "textAlign": "center",
                 "textDecoration": "none",
-                "transition": "background-color 0.1s linear",
+                "transition": "background-color 0.2s linear",
                 "width": "100%",
               }
             }
@@ -1706,9 +1706,9 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
           style={
             Object {
               "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.8rem",
-              "fontWeight": 600,
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
+              "fontWeight": 700,
             }
           }
         >
@@ -1771,7 +1771,7 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                   "border": "0.063rem solid #ced7df",
                   "borderRadius": "0.126rem",
                   "boxSizing": "border-box",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
                   "fontSize": "1rem",
                   "outline": 0,
                   "padding": "0.5rem",
@@ -1905,9 +1905,9 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -2067,9 +2067,9 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -2197,9 +2197,9 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -2342,9 +2342,9 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -2373,14 +2373,14 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                 "color": "#168eea",
                 "cursor": "pointer",
                 "display": "inline-block",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "0.8rem",
                 "margin": "0",
                 "outline": "none",
                 "padding": "0.4rem 0",
                 "textAlign": "center",
                 "textDecoration": "none",
-                "transition": "background-color 0.1s linear",
+                "transition": "background-color 0.2s linear",
                 "width": "100%",
               }
             }
@@ -2491,9 +2491,9 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
           style={
             Object {
               "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.8rem",
-              "fontWeight": 600,
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
+              "fontWeight": 700,
             }
           }
         >
@@ -2556,7 +2556,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   "border": "0.063rem solid #ced7df",
                   "borderRadius": "0.126rem",
                   "boxSizing": "border-box",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
                   "fontSize": "1rem",
                   "outline": 0,
                   "padding": "0.5rem",
@@ -2690,9 +2690,9 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -2852,9 +2852,9 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -2982,9 +2982,9 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -3127,9 +3127,9 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -3257,9 +3257,9 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -3387,9 +3387,9 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -3517,9 +3517,9 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -3647,9 +3647,9 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -3777,9 +3777,9 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -3907,9 +3907,9 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -4037,9 +4037,9 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -4167,9 +4167,9 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -4297,9 +4297,9 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -4427,9 +4427,9 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -4458,14 +4458,14 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 "color": "#168eea",
                 "cursor": "pointer",
                 "display": "inline-block",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "0.8rem",
                 "margin": "0",
                 "outline": "none",
                 "padding": "0.4rem 0",
                 "textAlign": "center",
                 "textDecoration": "none",
-                "transition": "background-color 0.1s linear",
+                "transition": "background-color 0.2s linear",
                 "width": "100%",
               }
             }
@@ -4576,9 +4576,9 @@ exports[`Snapshots ProfileSelectorDropdown should show no match message 1`] = `
           style={
             Object {
               "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.8rem",
-              "fontWeight": 600,
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
+              "fontWeight": 700,
             }
           }
         >
@@ -4641,7 +4641,7 @@ exports[`Snapshots ProfileSelectorDropdown should show no match message 1`] = `
                   "border": "0.063rem solid #ced7df",
                   "borderRadius": "0.126rem",
                   "boxSizing": "border-box",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
                   "fontSize": "1rem",
                   "outline": 0,
                   "padding": "0.5rem",
@@ -4663,9 +4663,9 @@ exports[`Snapshots ProfileSelectorDropdown should show no match message 1`] = `
               style={
                 Object {
                   "color": "#59626a",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "fontSize": "0.8rem",
-                  "fontWeight": 600,
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "0.75rem",
+                  "fontWeight": 700,
                 }
               }
             >
@@ -4692,14 +4692,14 @@ exports[`Snapshots ProfileSelectorDropdown should show no match message 1`] = `
                 "color": "#168eea",
                 "cursor": "pointer",
                 "display": "inline-block",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "0.8rem",
                 "margin": "0",
                 "outline": "none",
                 "padding": "0.4rem 0",
                 "textAlign": "center",
                 "textDecoration": "none",
-                "transition": "background-color 0.1s linear",
+                "transition": "background-color 0.2s linear",
                 "width": "100%",
               }
             }
