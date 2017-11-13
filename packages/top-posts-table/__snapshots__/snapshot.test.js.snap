@@ -50,9 +50,9 @@ exports[`Snapshots Dropdown Item should render item 1`] = `
           style={
             Object {
               "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.8rem",
-              "fontWeight": 600,
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
+              "fontWeight": 700,
             }
           }
         >
@@ -65,8 +65,8 @@ exports[`Snapshots Dropdown Item should render item 1`] = `
           style={
             Object {
               "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.8rem",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
               "fontWeight": 400,
             }
           }
@@ -129,9 +129,9 @@ exports[`Snapshots Dropdown Item should render selected item 1`] = `
           style={
             Object {
               "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.8rem",
-              "fontWeight": 600,
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
+              "fontWeight": 700,
             }
           }
         >
@@ -144,8 +144,8 @@ exports[`Snapshots Dropdown Item should render selected item 1`] = `
           style={
             Object {
               "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.8rem",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
               "fontWeight": 400,
             }
           }
@@ -211,9 +211,9 @@ exports[`Snapshots MetricGraph should render MetricGraph with maxValue greater t
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
-                "fontWeight": 600,
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
               }
             }
           >
@@ -225,8 +225,8 @@ exports[`Snapshots MetricGraph should render MetricGraph with maxValue greater t
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -272,9 +272,9 @@ exports[`Snapshots MetricGraph should render MetricGraph with maxValue less than
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
-                "fontWeight": 600,
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
               }
             }
           >
@@ -286,8 +286,8 @@ exports[`Snapshots MetricGraph should render MetricGraph with maxValue less than
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -343,8 +343,8 @@ exports[`Snapshots PostItem should not render the top posts item when no metrics
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -423,8 +423,8 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -481,9 +481,9 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
-                    "fontWeight": 600,
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
+                    "fontWeight": 700,
                   }
                 }
               >
@@ -495,8 +495,8 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -528,9 +528,9 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
-                    "fontWeight": 600,
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
+                    "fontWeight": 700,
                   }
                 }
               >
@@ -542,8 +542,8 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -575,9 +575,9 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
-                    "fontWeight": 600,
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
+                    "fontWeight": 700,
                   }
                 }
               >
@@ -589,8 +589,8 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -622,9 +622,9 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
-                    "fontWeight": 600,
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
+                    "fontWeight": 700,
                   }
                 }
               >
@@ -636,8 +636,8 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -673,9 +673,9 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
-                    "fontWeight": 600,
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
+                    "fontWeight": 700,
                   }
                 }
               >
@@ -687,8 +687,8 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -720,9 +720,9 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
-                    "fontWeight": 600,
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
+                    "fontWeight": 700,
                   }
                 }
               >
@@ -734,8 +734,8 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -777,8 +777,8 @@ exports[`Snapshots PostsCountBar should render 1`] = `
         style={
           Object {
             "color": "#59626a",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
-            "fontSize": "0.8rem",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontSize": "0.75rem",
             "fontWeight": 400,
           }
         }
@@ -844,8 +844,8 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
         style={
           Object {
             "color": "#59626a",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
-            "fontSize": "0.8rem",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontSize": "0.75rem",
             "fontWeight": 400,
           }
         }
@@ -868,8 +868,8 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -883,8 +883,8 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -979,9 +979,9 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
-                          "fontWeight": 600,
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
@@ -994,8 +994,8 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
                           "fontWeight": 400,
                         }
                       }
@@ -1085,9 +1085,9 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
-                          "fontWeight": 600,
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
@@ -1100,8 +1100,8 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
                           "fontWeight": 400,
                         }
                       }
@@ -1161,9 +1161,9 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
-                          "fontWeight": 600,
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
@@ -1176,8 +1176,8 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
                           "fontWeight": 400,
                         }
                       }
@@ -1235,9 +1235,9 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
-                          "fontWeight": 600,
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
@@ -1250,8 +1250,8 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
                           "fontWeight": 400,
                         }
                       }
@@ -1311,9 +1311,9 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
-                          "fontWeight": 600,
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
@@ -1326,8 +1326,8 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
                           "fontWeight": 400,
                         }
                       }
@@ -1385,9 +1385,9 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
-                          "fontWeight": 600,
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
@@ -1400,8 +1400,8 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
                           "fontWeight": 400,
                         }
                       }
@@ -1461,9 +1461,9 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
-                          "fontWeight": 600,
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
@@ -1476,8 +1476,8 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
                           "fontWeight": 400,
                         }
                       }
@@ -1535,9 +1535,9 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
-                          "fontWeight": 600,
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
@@ -1550,8 +1550,8 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
                           "fontWeight": 400,
                         }
                       }
@@ -1611,9 +1611,9 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
-                          "fontWeight": 600,
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
@@ -1626,8 +1626,8 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
                           "fontWeight": 400,
                         }
                       }
@@ -1685,9 +1685,9 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
-                          "fontWeight": 600,
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
@@ -1700,8 +1700,8 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
                           "fontWeight": 400,
                         }
                       }
@@ -1761,9 +1761,9 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
-                          "fontWeight": 600,
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
@@ -1776,8 +1776,8 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
                           "fontWeight": 400,
                         }
                       }
@@ -1835,9 +1835,9 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
-                          "fontWeight": 600,
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
@@ -1850,8 +1850,8 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
                           "fontWeight": 400,
                         }
                       }
@@ -1884,8 +1884,8 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
         style={
           Object {
             "color": "#59626a",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
-            "fontSize": "0.8rem",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontSize": "0.75rem",
             "fontWeight": 400,
           }
         }
@@ -1908,8 +1908,8 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -1923,8 +1923,8 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -2019,9 +2019,9 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
-                          "fontWeight": 600,
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
@@ -2034,8 +2034,8 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
                           "fontWeight": 400,
                         }
                       }
@@ -2093,9 +2093,9 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
-                          "fontWeight": 600,
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
@@ -2108,8 +2108,8 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
                           "fontWeight": 400,
                         }
                       }
@@ -2201,9 +2201,9 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
-                          "fontWeight": 600,
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
@@ -2216,8 +2216,8 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
                           "fontWeight": 400,
                         }
                       }
@@ -2275,9 +2275,9 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
-                          "fontWeight": 600,
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
@@ -2290,8 +2290,8 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
                           "fontWeight": 400,
                         }
                       }
@@ -2351,9 +2351,9 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
-                          "fontWeight": 600,
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
@@ -2366,8 +2366,8 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
                           "fontWeight": 400,
                         }
                       }
@@ -2425,9 +2425,9 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
-                          "fontWeight": 600,
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
@@ -2440,8 +2440,8 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
                           "fontWeight": 400,
                         }
                       }
@@ -2501,9 +2501,9 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
-                          "fontWeight": 600,
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
@@ -2516,8 +2516,8 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
                           "fontWeight": 400,
                         }
                       }
@@ -2575,9 +2575,9 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
-                          "fontWeight": 600,
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
@@ -2590,8 +2590,8 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
                           "fontWeight": 400,
                         }
                       }
@@ -2651,9 +2651,9 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
-                          "fontWeight": 600,
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
@@ -2666,8 +2666,8 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
                           "fontWeight": 400,
                         }
                       }
@@ -2725,9 +2725,9 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
-                          "fontWeight": 600,
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
@@ -2740,8 +2740,8 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
                           "fontWeight": 400,
                         }
                       }
@@ -2801,9 +2801,9 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
-                          "fontWeight": 600,
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
@@ -2816,8 +2816,8 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
                           "fontWeight": 400,
                         }
                       }
@@ -2875,9 +2875,9 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
-                          "fontWeight": 600,
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
@@ -2890,8 +2890,8 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
                           "fontWeight": 400,
                         }
                       }
@@ -2918,7 +2918,7 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
         Object {
           "display": "flex",
           "justifyContent": "space-between",
-          "padding": "1rem 0",
+          "padding": "0 0 1rem",
         }
       }
     >
@@ -2927,8 +2927,8 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
           style={
             Object {
               "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.8rem",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
               "fontWeight": 400,
             }
           }
@@ -2969,8 +2969,8 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
           style={
             Object {
               "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.8rem",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
               "fontWeight": 400,
             }
           }
@@ -2993,8 +2993,8 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
               style={
                 Object {
                   "color": "#59626a",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "fontSize": "0.8rem",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "0.75rem",
                   "fontWeight": 400,
                 }
               }
@@ -3008,8 +3008,8 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
               style={
                 Object {
                   "color": "#59626a",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "fontSize": "0.8rem",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "0.75rem",
                   "fontWeight": 400,
                 }
               }
@@ -3104,9 +3104,9 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
-                            "fontWeight": 600,
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
                           }
                         }
                       >
@@ -3119,8 +3119,8 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
                             "fontWeight": 400,
                           }
                         }
@@ -3178,9 +3178,9 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
-                            "fontWeight": 600,
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
                           }
                         }
                       >
@@ -3193,8 +3193,8 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
                             "fontWeight": 400,
                           }
                         }
@@ -3254,9 +3254,9 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
-                            "fontWeight": 600,
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
                           }
                         }
                       >
@@ -3269,8 +3269,8 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
                             "fontWeight": 400,
                           }
                         }
@@ -3328,9 +3328,9 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
-                            "fontWeight": 600,
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
                           }
                         }
                       >
@@ -3343,8 +3343,8 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
                             "fontWeight": 400,
                           }
                         }
@@ -3404,9 +3404,9 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
-                            "fontWeight": 600,
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
                           }
                         }
                       >
@@ -3419,8 +3419,8 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
                             "fontWeight": 400,
                           }
                         }
@@ -3478,9 +3478,9 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
-                            "fontWeight": 600,
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
                           }
                         }
                       >
@@ -3493,8 +3493,8 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
                             "fontWeight": 400,
                           }
                         }
@@ -3554,9 +3554,9 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
-                            "fontWeight": 600,
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
                           }
                         }
                       >
@@ -3569,8 +3569,8 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
                             "fontWeight": 400,
                           }
                         }
@@ -3628,9 +3628,9 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
-                            "fontWeight": 600,
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
                           }
                         }
                       >
@@ -3643,8 +3643,8 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
                             "fontWeight": 400,
                           }
                         }
@@ -3736,9 +3736,9 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
-                            "fontWeight": 600,
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
                           }
                         }
                       >
@@ -3751,8 +3751,8 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
                             "fontWeight": 400,
                           }
                         }
@@ -3810,9 +3810,9 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
-                            "fontWeight": 600,
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
                           }
                         }
                       >
@@ -3825,8 +3825,8 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
                             "fontWeight": 400,
                           }
                         }
@@ -3886,9 +3886,9 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
-                            "fontWeight": 600,
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
                           }
                         }
                       >
@@ -3901,8 +3901,8 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
                             "fontWeight": 400,
                           }
                         }
@@ -3960,9 +3960,9 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
-                            "fontWeight": 600,
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
                           }
                         }
                       >
@@ -3975,8 +3975,8 @@ exports[`Snapshots TopPostsHeader should render top posts header 1`] = `
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
                             "fontWeight": 400,
                           }
                         }
@@ -4005,20 +4005,33 @@ exports[`Snapshots TopPostsTable should render a "no data" state 1`] = `
       }
     }
   >
-    <div>
+    <div
+      style={
+        Object {
+          "background": "#fff",
+          "border": "1px solid #E2E8ED",
+          "borderRadius": "5px",
+          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
+          "margin": "0 0 2rem",
+        }
+      }
+    >
       <header
         style={
           Object {
-            "alignItems": "baseline",
+            "alignItems": "center",
+            "borderBottom": "1px solid #ECEEEF",
             "display": "flex",
             "justifyContent": "space-between",
+            "padding": "1.5rem",
           }
         }
       >
         <h2
           style={
             Object {
-              "margin": "2rem 0 0",
+              "margin": "0",
+              "padding": "0",
             }
           }
         >
@@ -4026,9 +4039,9 @@ exports[`Snapshots TopPostsTable should render a "no data" state 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 600,
+                "fontWeight": 700,
               }
             }
           >
@@ -4039,7 +4052,7 @@ exports[`Snapshots TopPostsTable should render a "no data" state 1`] = `
       <div
         style={
           Object {
-            "minHeight": "12rem",
+            "padding": "1.5rem",
             "position": "relative",
           }
         }
@@ -4049,17 +4062,11 @@ exports[`Snapshots TopPostsTable should render a "no data" state 1`] = `
             Object {
               "alignItems": "center",
               "background": "rgba(255, 255, 255, 1)",
-              "bottom": 0,
               "display": "flex",
               "justifyContent": "center",
-              "left": 0,
               "opacity": 1,
-              "position": "absolute",
-              "right": 0,
               "textAlign": "center",
-              "top": 0,
               "transition": "opacity 350ms ease-in-out",
-              "zIndex": 2,
             }
           }
         >
@@ -4067,8 +4074,6 @@ exports[`Snapshots TopPostsTable should render a "no data" state 1`] = `
             style={
               Object {
                 "background": "white",
-                "border": "solid 1px #ced7df",
-                "borderRadius": "2px",
                 "boxSizing": "border-box",
                 "flex": 1,
                 "flexDirection": "row",
@@ -4082,7 +4087,7 @@ exports[`Snapshots TopPostsTable should render a "no data" state 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
                     "fontWeight": 400,
                   }
@@ -4102,7 +4107,7 @@ exports[`Snapshots TopPostsTable should render a "no data" state 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 400,
                   }
@@ -4128,20 +4133,33 @@ exports[`Snapshots TopPostsTable should render a loading state 1`] = `
       }
     }
   >
-    <div>
+    <div
+      style={
+        Object {
+          "background": "#fff",
+          "border": "1px solid #E2E8ED",
+          "borderRadius": "5px",
+          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
+          "margin": "0 0 2rem",
+        }
+      }
+    >
       <header
         style={
           Object {
-            "alignItems": "baseline",
+            "alignItems": "center",
+            "borderBottom": "1px solid #ECEEEF",
             "display": "flex",
             "justifyContent": "space-between",
+            "padding": "1.5rem",
           }
         }
       >
         <h2
           style={
             Object {
-              "margin": "2rem 0 0",
+              "margin": "0",
+              "padding": "0",
             }
           }
         >
@@ -4149,9 +4167,9 @@ exports[`Snapshots TopPostsTable should render a loading state 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 600,
+                "fontWeight": 700,
               }
             }
           >
@@ -4162,7 +4180,7 @@ exports[`Snapshots TopPostsTable should render a loading state 1`] = `
       <div
         style={
           Object {
-            "minHeight": "12rem",
+            "padding": "1.5rem",
             "position": "relative",
           }
         }
@@ -4172,17 +4190,12 @@ exports[`Snapshots TopPostsTable should render a loading state 1`] = `
             Object {
               "alignItems": "center",
               "background": "rgba(255,255,255,.95)",
-              "border": "solid 1px #ced7df",
-              "bottom": 0,
+              "border": "none",
               "display": "flex",
               "justifyContent": "center",
-              "left": 0,
               "maxHeight": "none",
-              "opacity": 1,
-              "position": "absolute",
-              "right": 0,
+              "minHeight": "8rem",
               "textAlign": "center",
-              "top": 0,
               "transition": "opacity 350ms ease-in-out",
               "zIndex": 2,
             }
@@ -4259,13 +4272,13 @@ exports[`Snapshots TopPostsTable should render a loading state 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 400,
                   }
                 }
               >
-                Top Posts Loading...
+                Loading...
               </span>
             </div>
           </div>
@@ -4285,20 +4298,33 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
       }
     }
   >
-    <div>
+    <div
+      style={
+        Object {
+          "background": "#fff",
+          "border": "1px solid #E2E8ED",
+          "borderRadius": "5px",
+          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
+          "margin": "0 0 2rem",
+        }
+      }
+    >
       <header
         style={
           Object {
-            "alignItems": "baseline",
+            "alignItems": "center",
+            "borderBottom": "1px solid #ECEEEF",
             "display": "flex",
             "justifyContent": "space-between",
+            "padding": "1.5rem",
           }
         }
       >
         <h2
           style={
             Object {
-              "margin": "2rem 0 0",
+              "margin": "0",
+              "padding": "0",
             }
           }
         >
@@ -4306,9 +4332,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 600,
+                "fontWeight": 700,
               }
             }
           >
@@ -4319,7 +4345,7 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
       <div
         style={
           Object {
-            "minHeight": "12rem",
+            "padding": "1.5rem",
             "position": "relative",
           }
         }
@@ -4330,7 +4356,7 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
               Object {
                 "display": "flex",
                 "justifyContent": "space-between",
-                "padding": "1rem 0",
+                "padding": "0 0 1rem",
               }
             }
           >
@@ -4339,8 +4365,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -4381,8 +4407,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -4405,8 +4431,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                     style={
                       Object {
                         "color": "#59626a",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
-                        "fontSize": "0.8rem",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
                         "fontWeight": 400,
                       }
                     }
@@ -4420,8 +4446,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                     style={
                       Object {
                         "color": "#59626a",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
-                        "fontSize": "0.8rem",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
                         "fontWeight": 400,
                       }
                     }
@@ -4516,9 +4542,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
-                                  "fontWeight": 600,
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
                                 }
                               }
                             >
@@ -4531,8 +4557,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
                                   "fontWeight": 400,
                                 }
                               }
@@ -4590,9 +4616,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
-                                  "fontWeight": 600,
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
                                 }
                               }
                             >
@@ -4605,8 +4631,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
                                   "fontWeight": 400,
                                 }
                               }
@@ -4698,9 +4724,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
-                                  "fontWeight": 600,
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
                                 }
                               }
                             >
@@ -4713,8 +4739,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
                                   "fontWeight": 400,
                                 }
                               }
@@ -4772,9 +4798,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
-                                  "fontWeight": 600,
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
                                 }
                               }
                             >
@@ -4787,8 +4813,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
                                   "fontWeight": 400,
                                 }
                               }
@@ -4848,9 +4874,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
-                                  "fontWeight": 600,
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
                                 }
                               }
                             >
@@ -4863,8 +4889,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
                                   "fontWeight": 400,
                                 }
                               }
@@ -4922,9 +4948,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
-                                  "fontWeight": 600,
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
                                 }
                               }
                             >
@@ -4937,8 +4963,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
                                   "fontWeight": 400,
                                 }
                               }
@@ -4998,9 +5024,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
-                                  "fontWeight": 600,
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
                                 }
                               }
                             >
@@ -5013,8 +5039,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
                                   "fontWeight": 400,
                                 }
                               }
@@ -5072,9 +5098,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
-                                  "fontWeight": 600,
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
                                 }
                               }
                             >
@@ -5087,8 +5113,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
                                   "fontWeight": 400,
                                 }
                               }
@@ -5148,9 +5174,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
-                                  "fontWeight": 600,
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
                                 }
                               }
                             >
@@ -5163,8 +5189,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
                                   "fontWeight": 400,
                                 }
                               }
@@ -5222,9 +5248,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
-                                  "fontWeight": 600,
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
                                 }
                               }
                             >
@@ -5237,8 +5263,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
                                   "fontWeight": 400,
                                 }
                               }
@@ -5298,9 +5324,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
-                                  "fontWeight": 600,
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
                                 }
                               }
                             >
@@ -5313,8 +5339,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
                                   "fontWeight": 400,
                                 }
                               }
@@ -5372,9 +5398,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
-                                  "fontWeight": 600,
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
                                 }
                               }
                             >
@@ -5387,8 +5413,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
                                   "fontWeight": 400,
                                 }
                               }
@@ -5418,8 +5444,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                     style={
                       Object {
                         "color": "#59626a",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
-                        "fontSize": "0.9rem",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.5rem",
                         "fontWeight": 400,
                       }
                     }
@@ -5434,8 +5460,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                     style={
                       Object {
                         "color": "#59626a",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
-                        "fontSize": "0.9rem",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.5rem",
                         "fontWeight": 400,
                       }
                     }
@@ -5450,8 +5476,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                     style={
                       Object {
                         "color": "#59626a",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
-                        "fontSize": "0.9rem",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.5rem",
                         "fontWeight": 400,
                       }
                     }
@@ -5486,8 +5512,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -5544,9 +5570,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -5558,8 +5584,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -5591,9 +5617,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -5605,8 +5631,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -5638,9 +5664,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -5652,8 +5678,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -5685,9 +5711,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -5699,8 +5725,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -5736,9 +5762,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -5750,8 +5776,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -5783,9 +5809,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -5797,8 +5823,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -5843,8 +5869,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -5904,9 +5930,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -5918,8 +5944,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -5951,9 +5977,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -5965,8 +5991,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -5998,9 +6024,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -6012,8 +6038,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -6045,9 +6071,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -6059,8 +6085,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -6096,9 +6122,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -6110,8 +6136,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -6143,9 +6169,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -6157,8 +6183,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -6203,8 +6229,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -6258,9 +6284,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -6272,8 +6298,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -6305,9 +6331,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -6319,8 +6345,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -6352,9 +6378,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -6366,8 +6392,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -6399,9 +6425,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -6413,8 +6439,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -6450,9 +6476,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -6464,8 +6490,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -6497,9 +6523,9 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -6511,8 +6537,8 @@ exports[`Snapshots TopPostsTable should render the top posts table 1`] = `
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -6553,20 +6579,33 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
       }
     }
   >
-    <div>
+    <div
+      style={
+        Object {
+          "background": "#fff",
+          "border": "1px solid #E2E8ED",
+          "borderRadius": "5px",
+          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
+          "margin": "0 0 2rem",
+        }
+      }
+    >
       <header
         style={
           Object {
-            "alignItems": "baseline",
+            "alignItems": "center",
+            "borderBottom": "1px solid #ECEEEF",
             "display": "flex",
             "justifyContent": "space-between",
+            "padding": "1.5rem",
           }
         }
       >
         <h2
           style={
             Object {
-              "margin": "2rem 0 0",
+              "margin": "0",
+              "padding": "0",
             }
           }
         >
@@ -6574,9 +6613,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
+                "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 600,
+                "fontWeight": 700,
               }
             }
           >
@@ -6587,7 +6626,7 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
       <div
         style={
           Object {
-            "minHeight": "12rem",
+            "padding": "1.5rem",
             "position": "relative",
           }
         }
@@ -6598,7 +6637,7 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
               Object {
                 "display": "flex",
                 "justifyContent": "space-between",
-                "padding": "1rem 0",
+                "padding": "0 0 1rem",
               }
             }
           >
@@ -6607,8 +6646,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -6649,8 +6688,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -6673,8 +6712,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                     style={
                       Object {
                         "color": "#59626a",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
-                        "fontSize": "0.8rem",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
                         "fontWeight": 400,
                       }
                     }
@@ -6688,8 +6727,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                     style={
                       Object {
                         "color": "#59626a",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
-                        "fontSize": "0.8rem",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
                         "fontWeight": 400,
                       }
                     }
@@ -6784,9 +6823,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
-                                  "fontWeight": 600,
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
                                 }
                               }
                             >
@@ -6799,8 +6838,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
                                   "fontWeight": 400,
                                 }
                               }
@@ -6858,9 +6897,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
-                                  "fontWeight": 600,
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
                                 }
                               }
                             >
@@ -6873,8 +6912,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
                                   "fontWeight": 400,
                                 }
                               }
@@ -6966,9 +7005,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
-                                  "fontWeight": 600,
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
                                 }
                               }
                             >
@@ -6981,8 +7020,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
                                   "fontWeight": 400,
                                 }
                               }
@@ -7040,9 +7079,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
-                                  "fontWeight": 600,
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
                                 }
                               }
                             >
@@ -7055,8 +7094,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
                                   "fontWeight": 400,
                                 }
                               }
@@ -7116,9 +7155,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
-                                  "fontWeight": 600,
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
                                 }
                               }
                             >
@@ -7131,8 +7170,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
                                   "fontWeight": 400,
                                 }
                               }
@@ -7190,9 +7229,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
-                                  "fontWeight": 600,
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
                                 }
                               }
                             >
@@ -7205,8 +7244,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
                                   "fontWeight": 400,
                                 }
                               }
@@ -7266,9 +7305,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
-                                  "fontWeight": 600,
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
                                 }
                               }
                             >
@@ -7281,8 +7320,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
                                   "fontWeight": 400,
                                 }
                               }
@@ -7340,9 +7379,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
-                                  "fontWeight": 600,
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
                                 }
                               }
                             >
@@ -7355,8 +7394,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
                                   "fontWeight": 400,
                                 }
                               }
@@ -7416,9 +7455,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
-                                  "fontWeight": 600,
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
                                 }
                               }
                             >
@@ -7431,8 +7470,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
                                   "fontWeight": 400,
                                 }
                               }
@@ -7490,9 +7529,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
-                                  "fontWeight": 600,
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
                                 }
                               }
                             >
@@ -7505,8 +7544,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
                                   "fontWeight": 400,
                                 }
                               }
@@ -7566,9 +7605,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
-                                  "fontWeight": 600,
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
                                 }
                               }
                             >
@@ -7581,8 +7620,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
                                   "fontWeight": 400,
                                 }
                               }
@@ -7640,9 +7679,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
-                                  "fontWeight": 600,
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
                                 }
                               }
                             >
@@ -7655,8 +7694,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                               style={
                                 Object {
                                   "color": "#59626a",
-                                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                                  "fontSize": "0.8rem",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
                                   "fontWeight": 400,
                                 }
                               }
@@ -7686,8 +7725,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                     style={
                       Object {
                         "color": "#59626a",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
-                        "fontSize": "0.9rem",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.5rem",
                         "fontWeight": 400,
                       }
                     }
@@ -7702,8 +7741,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                     style={
                       Object {
                         "color": "#59626a",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
-                        "fontSize": "0.9rem",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.5rem",
                         "fontWeight": 400,
                       }
                     }
@@ -7718,8 +7757,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                     style={
                       Object {
                         "color": "#59626a",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
-                        "fontSize": "0.9rem",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.5rem",
                         "fontWeight": 400,
                       }
                     }
@@ -7754,8 +7793,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -7812,9 +7851,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -7826,8 +7865,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -7859,9 +7898,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -7873,8 +7912,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -7906,9 +7945,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -7920,8 +7959,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -7953,9 +7992,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -7967,8 +8006,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -8004,9 +8043,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -8018,8 +8057,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -8051,9 +8090,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -8065,8 +8104,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -8111,8 +8150,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -8172,9 +8211,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -8186,8 +8225,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -8219,9 +8258,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -8233,8 +8272,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -8266,9 +8305,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -8280,8 +8319,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -8313,9 +8352,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -8327,8 +8366,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -8364,9 +8403,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -8378,8 +8417,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -8411,9 +8450,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -8425,8 +8464,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -8471,8 +8510,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -8526,9 +8565,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -8540,8 +8579,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -8573,9 +8612,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -8587,8 +8626,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -8620,9 +8659,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -8634,8 +8673,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -8667,9 +8706,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -8681,8 +8720,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -8718,9 +8757,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -8732,8 +8771,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }
@@ -8765,9 +8804,9 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
-                              "fontWeight": 600,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
                             }
                           }
                         >
@@ -8779,8 +8818,8 @@ exports[`Snapshots TopPostsTable should render the top posts table with default 
                           style={
                             Object {
                               "color": "#59626a",
-                              "fontFamily": "\\"Open Sans\\", sans-serif",
-                              "fontSize": "0.8rem",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
                               "fontWeight": 400,
                             }
                           }

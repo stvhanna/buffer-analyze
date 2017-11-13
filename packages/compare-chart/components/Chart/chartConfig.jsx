@@ -46,7 +46,7 @@ export const highChartsConfigYAxis = [
       style: {
         'font-size': '12px',
         'font-weight': 'lighter',
-        'font-family': 'Open Sans, Helvetica Neue, Helvetica, Arial, sans serif',
+        'font-family': 'Roboto, sans serif',
       },
     },
   }, {
@@ -69,7 +69,7 @@ export const highChartsConfigYAxis = [
       style: {
         'font-size': '12px',
         'font-weight': 'lighter',
-        'font-family': 'Open Sans, Helvetica Neue, Helvetica, Arial, sans serif',
+        'font-family': 'Roboto, sans serif',
       },
     },
     opposite: true,

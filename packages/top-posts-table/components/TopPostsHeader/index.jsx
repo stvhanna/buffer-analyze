@@ -5,7 +5,7 @@ import TopPostsDropdown from './components/TopPostsDropdown';
 import PostsCountBar from './components/PostsCountBar';
 
 const topPostsHeaderContainer = {
-  padding: '1rem 0',
+  padding: '0 0 1rem',
   display: 'flex',
   justifyContent: 'space-between',
 };

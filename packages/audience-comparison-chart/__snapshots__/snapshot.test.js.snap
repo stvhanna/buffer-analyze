@@ -17,9 +17,9 @@ exports[`Snapshots AudienceComparisonChart should render a "no data" state 1`] =
           style={
             Object {
               "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontFamily": "\\"Roboto\\", sans-serif",
               "fontSize": "2rem",
-              "fontWeight": 600,
+              "fontWeight": 700,
             }
           }
         >
@@ -34,17 +34,11 @@ exports[`Snapshots AudienceComparisonChart should render a "no data" state 1`] =
             Object {
               "alignItems": "center",
               "background": "rgba(255, 255, 255, 1)",
-              "bottom": 0,
               "display": "flex",
               "justifyContent": "center",
-              "left": 0,
               "opacity": 1,
-              "position": "absolute",
-              "right": 0,
               "textAlign": "center",
-              "top": 0,
               "transition": "opacity 350ms ease-in-out",
-              "zIndex": 2,
             }
           }
         >
@@ -52,8 +46,6 @@ exports[`Snapshots AudienceComparisonChart should render a "no data" state 1`] =
             style={
               Object {
                 "background": "white",
-                "border": "solid 1px #ced7df",
-                "borderRadius": "2px",
                 "boxSizing": "border-box",
                 "flex": 1,
                 "flexDirection": "row",
@@ -67,7 +59,7 @@ exports[`Snapshots AudienceComparisonChart should render a "no data" state 1`] =
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
                     "fontWeight": 400,
                   }
@@ -87,7 +79,7 @@ exports[`Snapshots AudienceComparisonChart should render a "no data" state 1`] =
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 400,
                   }
@@ -121,9 +113,9 @@ exports[`Snapshots AudienceComparisonChart should render a loading state 1`] = `
           style={
             Object {
               "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontFamily": "\\"Roboto\\", sans-serif",
               "fontSize": "2rem",
-              "fontWeight": 600,
+              "fontWeight": 700,
             }
           }
         >
@@ -139,16 +131,11 @@ exports[`Snapshots AudienceComparisonChart should render a loading state 1`] = `
               "alignItems": "center",
               "background": "rgba(255,255,255,.95)",
               "border": "solid 1px #ced7df",
-              "bottom": 0,
               "display": "flex",
               "justifyContent": "center",
-              "left": 0,
               "maxHeight": "none",
-              "opacity": 1,
-              "position": "absolute",
-              "right": 0,
+              "minHeight": "8rem",
               "textAlign": "center",
-              "top": 0,
               "transition": "opacity 350ms ease-in-out",
               "zIndex": 2,
             }
@@ -225,7 +212,7 @@ exports[`Snapshots AudienceComparisonChart should render a loading state 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 400,
                   }
@@ -259,9 +246,9 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
           style={
             Object {
               "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontFamily": "\\"Roboto\\", sans-serif",
               "fontSize": "2rem",
-              "fontWeight": 600,
+              "fontWeight": 700,
             }
           }
         >
@@ -282,8 +269,6 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
           <li
             style={
               Object {
-                "borderBottom": "solid 1px #CED7DF",
-                "borderRight": "solid 1px #CED7DF",
                 "boxSizing": "border-box",
                 "display": "inline-block",
                 "flexGrow": 1,
@@ -297,9 +282,8 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
               style={
                 Object {
                   "display": "block",
-                  "fontSize": "12px",
+                  "fontSize": "0.75rem",
                   "fontWeight": 600,
-                  "marginLeft": "15px",
                   "marginTop": "15px",
                 }
               }
@@ -311,8 +295,8 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
                       "fontWeight": 400,
                     }
                   }
@@ -327,8 +311,8 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
                             "fontWeight": 400,
                           }
                         }
@@ -377,9 +361,8 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontSize": "2em",
+                      "fontSize": "2.5rem",
                       "fontWeight": 600,
-                      "marginLeft": "15px",
                     }
                   }
                 >
@@ -387,9 +370,9 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 600,
+                        "fontWeight": 700,
                       }
                     }
                   >
@@ -449,7 +432,7 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
                       style={
                         Object {
                           "color": "shamrock",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
                           "fontSize": "1.25rem",
                         }
                       }
@@ -467,8 +450,6 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
           <li
             style={
               Object {
-                "borderBottom": "solid 1px #CED7DF",
-                "borderRight": "solid 1px #CED7DF",
                 "boxSizing": "border-box",
                 "display": "inline-block",
                 "flexGrow": 1,
@@ -482,9 +463,8 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
               style={
                 Object {
                   "display": "block",
-                  "fontSize": "12px",
+                  "fontSize": "0.75rem",
                   "fontWeight": 600,
-                  "marginLeft": "15px",
                   "marginTop": "15px",
                 }
               }
@@ -496,8 +476,8 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
                       "fontWeight": 400,
                     }
                   }
@@ -512,8 +492,8 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
                             "fontWeight": 400,
                           }
                         }
@@ -562,9 +542,8 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontSize": "2em",
+                      "fontSize": "2.5rem",
                       "fontWeight": 600,
-                      "marginLeft": "15px",
                     }
                   }
                 >
@@ -572,9 +551,9 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 600,
+                        "fontWeight": 700,
                       }
                     }
                   >
@@ -635,7 +614,7 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
                       style={
                         Object {
                           "color": "torchRed",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
                           "fontSize": "1.25rem",
                         }
                       }
@@ -674,9 +653,9 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
           style={
             Object {
               "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
+              "fontFamily": "\\"Roboto\\", sans-serif",
               "fontSize": "2rem",
-              "fontWeight": 600,
+              "fontWeight": 700,
             }
           }
         >
@@ -697,8 +676,6 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
           <li
             style={
               Object {
-                "borderBottom": "solid 1px #CED7DF",
-                "borderRight": "solid 1px #CED7DF",
                 "boxSizing": "border-box",
                 "display": "inline-block",
                 "flexGrow": 1,
@@ -712,9 +689,8 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
               style={
                 Object {
                   "display": "block",
-                  "fontSize": "12px",
+                  "fontSize": "0.75rem",
                   "fontWeight": 600,
-                  "marginLeft": "15px",
                   "marginTop": "15px",
                 }
               }
@@ -726,8 +702,8 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
                       "fontWeight": 400,
                     }
                   }
@@ -742,8 +718,8 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
                             "fontWeight": 400,
                           }
                         }
@@ -792,9 +768,8 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontSize": "2em",
+                      "fontSize": "2.5rem",
                       "fontWeight": 600,
-                      "marginLeft": "15px",
                     }
                   }
                 >
@@ -802,9 +777,9 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
                     style={
                       Object {
                         "color": "#323b43",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "2rem",
-                        "fontWeight": 600,
+                        "fontWeight": 700,
                       }
                     }
                   >
@@ -864,7 +839,7 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
                       style={
                         Object {
                           "color": "shamrock",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
                           "fontSize": "1.25rem",
                         }
                       }
@@ -903,8 +878,8 @@ exports[`Snapshots ChartTooltip should render the tooltip 1`] = `
           style={
             Object {
               "color": "#e6ebef",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.7rem",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.5rem",
               "fontWeight": 400,
             }
           }
@@ -920,9 +895,9 @@ exports[`Snapshots ChartTooltip should render the tooltip 1`] = `
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
-                "fontWeight": 600,
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
               }
             }
           >
@@ -951,8 +926,8 @@ exports[`Snapshots ChartTooltip should render the tooltip 1`] = `
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -985,8 +960,6 @@ exports[`Snapshots Footer should render the footer for a single profile 1`] = `
         <li
           style={
             Object {
-              "borderBottom": "solid 1px #CED7DF",
-              "borderRight": "solid 1px #CED7DF",
               "boxSizing": "border-box",
               "display": "inline-block",
               "flexGrow": 1,
@@ -1000,9 +973,8 @@ exports[`Snapshots Footer should render the footer for a single profile 1`] = `
             style={
               Object {
                 "display": "block",
-                "fontSize": "12px",
+                "fontSize": "0.75rem",
                 "fontWeight": 600,
-                "marginLeft": "15px",
                 "marginTop": "15px",
               }
             }
@@ -1014,8 +986,8 @@ exports[`Snapshots Footer should render the footer for a single profile 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -1030,8 +1002,8 @@ exports[`Snapshots Footer should render the footer for a single profile 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
                           "fontWeight": 400,
                         }
                       }
@@ -1080,9 +1052,8 @@ exports[`Snapshots Footer should render the footer for a single profile 1`] = `
                 style={
                   Object {
                     "color": "#323b43",
-                    "fontSize": "2em",
+                    "fontSize": "2.5rem",
                     "fontWeight": 600,
-                    "marginLeft": "15px",
                   }
                 }
               >
@@ -1090,9 +1061,9 @@ exports[`Snapshots Footer should render the footer for a single profile 1`] = `
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "2rem",
-                      "fontWeight": 600,
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -1152,7 +1123,7 @@ exports[`Snapshots Footer should render the footer for a single profile 1`] = `
                     style={
                       Object {
                         "color": "shamrock",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "1.25rem",
                       }
                     }
@@ -1191,8 +1162,6 @@ exports[`Snapshots Footer should render the footer for multiple profiles 1`] = `
         <li
           style={
             Object {
-              "borderBottom": "solid 1px #CED7DF",
-              "borderRight": "solid 1px #CED7DF",
               "boxSizing": "border-box",
               "display": "inline-block",
               "flexGrow": 1,
@@ -1206,9 +1175,8 @@ exports[`Snapshots Footer should render the footer for multiple profiles 1`] = `
             style={
               Object {
                 "display": "block",
-                "fontSize": "12px",
+                "fontSize": "0.75rem",
                 "fontWeight": 600,
-                "marginLeft": "15px",
                 "marginTop": "15px",
               }
             }
@@ -1220,8 +1188,8 @@ exports[`Snapshots Footer should render the footer for multiple profiles 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -1236,8 +1204,8 @@ exports[`Snapshots Footer should render the footer for multiple profiles 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
                           "fontWeight": 400,
                         }
                       }
@@ -1286,9 +1254,8 @@ exports[`Snapshots Footer should render the footer for multiple profiles 1`] = `
                 style={
                   Object {
                     "color": "#323b43",
-                    "fontSize": "2em",
+                    "fontSize": "2.5rem",
                     "fontWeight": 600,
-                    "marginLeft": "15px",
                   }
                 }
               >
@@ -1296,9 +1263,9 @@ exports[`Snapshots Footer should render the footer for multiple profiles 1`] = `
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "2rem",
-                      "fontWeight": 600,
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -1358,7 +1325,7 @@ exports[`Snapshots Footer should render the footer for multiple profiles 1`] = `
                     style={
                       Object {
                         "color": "shamrock",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "1.25rem",
                       }
                     }
@@ -1376,8 +1343,6 @@ exports[`Snapshots Footer should render the footer for multiple profiles 1`] = `
         <li
           style={
             Object {
-              "borderBottom": "solid 1px #CED7DF",
-              "borderRight": "solid 1px #CED7DF",
               "boxSizing": "border-box",
               "display": "inline-block",
               "flexGrow": 1,
@@ -1391,9 +1356,8 @@ exports[`Snapshots Footer should render the footer for multiple profiles 1`] = `
             style={
               Object {
                 "display": "block",
-                "fontSize": "12px",
+                "fontSize": "0.75rem",
                 "fontWeight": 600,
-                "marginLeft": "15px",
                 "marginTop": "15px",
               }
             }
@@ -1405,8 +1369,8 @@ exports[`Snapshots Footer should render the footer for multiple profiles 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -1421,8 +1385,8 @@ exports[`Snapshots Footer should render the footer for multiple profiles 1`] = `
                       style={
                         Object {
                           "color": "#59626a",
-                          "fontFamily": "\\"Open Sans\\", sans-serif",
-                          "fontSize": "0.8rem",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
                           "fontWeight": 400,
                         }
                       }
@@ -1471,9 +1435,8 @@ exports[`Snapshots Footer should render the footer for multiple profiles 1`] = `
                 style={
                   Object {
                     "color": "#323b43",
-                    "fontSize": "2em",
+                    "fontSize": "2.5rem",
                     "fontWeight": 600,
-                    "marginLeft": "15px",
                   }
                 }
               >
@@ -1481,9 +1444,9 @@ exports[`Snapshots Footer should render the footer for multiple profiles 1`] = `
                   style={
                     Object {
                       "color": "#323b43",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "2rem",
-                      "fontWeight": 600,
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -1544,7 +1507,7 @@ exports[`Snapshots Footer should render the footer for multiple profiles 1`] = `
                     style={
                       Object {
                         "color": "torchRed",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "1.25rem",
                       }
                     }
@@ -1581,9 +1544,9 @@ exports[`Snapshots Title should render the title for the comparison audience cha
         style={
           Object {
             "color": "#59626a",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontFamily": "\\"Roboto\\", sans-serif",
             "fontSize": "2rem",
-            "fontWeight": 600,
+            "fontWeight": 700,
           }
         }
       >

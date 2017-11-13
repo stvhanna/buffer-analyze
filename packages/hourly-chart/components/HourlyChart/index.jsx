@@ -3,23 +3,20 @@ import PropTypes from 'prop-types';
 import { Text } from '@bufferapp/components';
 
 import {
-  geyser,
-} from '@bufferapp/components/style/color';
-
-import {
   ChartStateLoading as Loading,
-  ChartHeader as Header,
+  ChartCard,
+  ChartHeader,
 } from '@bufferapp/analyze-shared-components';
 
 import AddReport from '@bufferapp/add-report';
 
 import PostCountByHour from '../PostCountByHour';
 import HourlyEngagementChart from '../HourlyEngagementChart';
-import ChartHeader from '../ChartHeader';
 import Legend from '../Legend';
 
 const title = {
-  margin: '2rem 0 1rem',
+  margin: '0',
+  padding: '0',
 };
 
 export const Title = () =>
@@ -29,10 +26,9 @@ export const Title = () =>
 ;
 
 const gridContainer = {
-  minHeight: '12rem',
+  margin: '0 auto',
+  padding: '1.25rem',
   position: 'relative',
-  margin: '1rem 0 1.5rem',
-  border: `1px solid ${geyser}`,
 };
 
 export class ChartContent extends React.Component {
@@ -95,14 +91,14 @@ const getStateForReport = props => ({
 });
 
 const HourlyChart = props =>
-  <div>
-    <Header>
+  <ChartCard>
+    <ChartHeader>
       <Title />
       <AddReport
         chart="hourly-engagements"
         state={getStateForReport(props)}
       />
-    </Header>
+    </ChartHeader>
     <div id="js-dom-to-png-hourly-engagements" style={gridContainer}>
       {props.loading && <Loading noBorder />}
       {!props.loading &&
@@ -112,7 +108,7 @@ const HourlyChart = props =>
         </div>
       }
     </div>
-  </div>;
+  </ChartCard>;
 
 HourlyChart.defaultProps = {
   loading: false,

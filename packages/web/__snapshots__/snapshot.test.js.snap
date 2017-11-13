@@ -1158,7 +1158,7 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
         style={
           Object {
             "color": "#59626a",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontFamily": "\\"Roboto\\", sans-serif",
             "fontSize": "1rem",
             "fontWeight": 400,
           }
@@ -1420,7 +1420,7 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
         style={
           Object {
             "color": "#59626a",
-            "fontFamily": "\\"Open Sans\\", sans-serif",
+            "fontFamily": "\\"Roboto\\", sans-serif",
             "fontSize": "1rem",
             "fontWeight": 400,
           }
@@ -1646,7 +1646,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
               className="bi-calendar"
             />
             <span>
-              From: 11/03/17 - To: 11/09/17
+              From: 11/06/17 - To: 11/12/17
             </span>
             <span
               className="rightSide"

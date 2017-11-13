@@ -2,13 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Text from '@bufferapp/components/Text';
-import {
-  geyser,
-} from '@bufferapp/components/style/color';
 
 import {
   ChartStateNoData as NoData,
   ChartStateLoading as Loading,
+  ChartCard,
   ChartHeader,
   GridItem,
 } from '@bufferapp/analyze-shared-components';
@@ -20,15 +18,11 @@ const gridStyle = {
   flexWrap: 'wrap',
   padding: '0',
   margin: '0 auto',
-  borderTop: `solid 1px ${geyser}`,
-  borderLeft: `solid 1px ${geyser}`,
-  borderRadius: '2px',
 };
 
 const gridContainer = {
-  minHeight: '12rem',
   position: 'relative',
-  margin: '1rem 0 1.5rem',
+  padding: '1.5rem',
 };
 
 export const Table = ({ metrics, timezone }) =>
@@ -61,14 +55,14 @@ Table.propTypes = {
 };
 
 export const Title = () =>
-  <h2 style={{ margin: '2rem 0 1rem' }}>
-    <Text weight="bold" size="extra-large"> Average Performance </Text>
+  <h2 style={{ margin: '0', padding: '0' }}>
+    <Text weight="bold" size="large">Average Performance</Text>
   </h2>;
 
 const AverageTable = ({ metrics, loading, timezone }) => {
   let content = null;
   if (loading) {
-    content = <Loading active text="Average loading..." />;
+    content = <Loading active noBorder />;
   } else if (metrics.totals.length === 0) {
     content = <NoData />;
   } else {
@@ -78,7 +72,7 @@ const AverageTable = ({ metrics, loading, timezone }) => {
   }
 
   return (
-    <div>
+    <ChartCard>
       <ChartHeader>
         <Title />
         <AddReport chart="average" />
@@ -86,7 +80,7 @@ const AverageTable = ({ metrics, loading, timezone }) => {
       <div id="js-dom-to-png-average" style={gridContainer}>
         {content}
       </div>
-    </div>
+    </ChartCard>
   );
 };
 

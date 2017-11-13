@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {
-  geyser,
-} from '@bufferapp/components/style/color';
+import { white } from '@bufferapp/components/style/color';
 
 import {
   ChartStateNoData as NoData,
   ChartStateLoading as Loading,
+  ChartCard,
   ChartHeader,
   GridItem,
 } from '@bufferapp/analyze-shared-components';
@@ -21,15 +20,11 @@ const gridStyle = {
   flexWrap: 'wrap',
   padding: '0',
   margin: '0 auto',
-  borderTop: `solid 1px ${geyser}`,
-  borderLeft: `solid 1px ${geyser}`,
-  borderRadius: '2px',
 };
 
 const gridContainer = {
-  minHeight: '12rem',
   position: 'relative',
-  margin: '1rem 0 1.5rem',
+  padding: '1.5rem',
 };
 
 export const Table = ({ metrics }) =>
@@ -49,7 +44,7 @@ Table.propTypes = {
 const SummaryTable = ({ metrics, loading, profileService, startDate, endDate }) => {
   let content = null;
   if (loading) {
-    content = <Loading active text="Summary loading..." />;
+    content = <Loading active noBorder />;
   } else if (metrics.length === 0) {
     content = <NoData />;
   } else {
@@ -57,7 +52,7 @@ const SummaryTable = ({ metrics, loading, profileService, startDate, endDate }) 
   }
 
   return (
-    <div>
+    <ChartCard>
       <ChartHeader>
         <Title profileService={profileService} startDate={startDate} endDate={endDate} />
         <AddReport chart="summary-table" />
@@ -65,7 +60,7 @@ const SummaryTable = ({ metrics, loading, profileService, startDate, endDate }) 
       <div id="js-dom-to-png-summary" style={gridContainer}>
         {content}
       </div>
-    </div>
+    </ChartCard>
   );
 };
 

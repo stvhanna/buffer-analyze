@@ -15,12 +15,6 @@ const loaderContainer = {
 
 const Loading = ({ text, maxHeight, noBorder }) => {
   const style = {
-    opacity: 1,
-    position: 'absolute',
-    top: 0,
-    bottom: 0,
-    right: 0,
-    left: 0,
     zIndex: 2,
     textAlign: 'center',
     border: noBorder ? 'none' : `solid 1px ${geyser}`,
@@ -28,6 +22,7 @@ const Loading = ({ text, maxHeight, noBorder }) => {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    minHeight: '8rem',
     transition: 'opacity 350ms ease-in-out',
     maxHeight: maxHeight || 'none',
   };

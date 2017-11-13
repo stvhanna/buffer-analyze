@@ -14,7 +14,7 @@ exports[`Snapshots ChartTooltip [TESTED] should render a presets tooltip 1`] = `
         Object {
           "color": "#fff",
           "cursor": "default",
-          "fontFamily": "Open Sans, Helvetica Neue, Helvetica, Arial, sans serif",
+          "fontFamily": "Roboto, sans serif",
           "fontSize": "9pt",
           "padding": "10px",
           "pointerEvents": "none",
@@ -28,8 +28,8 @@ exports[`Snapshots ChartTooltip [TESTED] should render a presets tooltip 1`] = `
           style={
             Object {
               "color": "#fff",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.8rem",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
               "fontWeight": 400,
             }
           }
@@ -58,7 +58,7 @@ exports[`Snapshots ChartTooltip [TESTED] should render a presets tooltip with ne
         Object {
           "color": "#fff",
           "cursor": "default",
-          "fontFamily": "Open Sans, Helvetica Neue, Helvetica, Arial, sans serif",
+          "fontFamily": "Roboto, sans serif",
           "fontSize": "9pt",
           "padding": "10px",
           "pointerEvents": "none",
@@ -72,8 +72,8 @@ exports[`Snapshots ChartTooltip [TESTED] should render a presets tooltip with ne
           style={
             Object {
               "color": "#e6ebef",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.7rem",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.5rem",
               "fontWeight": 400,
             }
           }
@@ -88,8 +88,8 @@ exports[`Snapshots ChartTooltip [TESTED] should render a presets tooltip with ne
           style={
             Object {
               "color": "#fff",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.8rem",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
               "fontWeight": 400,
             }
           }
@@ -118,7 +118,7 @@ exports[`Snapshots ChartTooltip [TESTED] should render the posts tooltip 1`] = `
         Object {
           "color": "#fff",
           "cursor": "default",
-          "fontFamily": "Open Sans, Helvetica Neue, Helvetica, Arial, sans serif",
+          "fontFamily": "Roboto, sans serif",
           "fontSize": "9pt",
           "padding": "10px",
           "pointerEvents": "none",
@@ -133,8 +133,8 @@ exports[`Snapshots ChartTooltip [TESTED] should render the posts tooltip 1`] = `
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -147,9 +147,9 @@ exports[`Snapshots ChartTooltip [TESTED] should render the posts tooltip 1`] = `
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
-                "fontWeight": 600,
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
               }
             }
           >
@@ -161,8 +161,8 @@ exports[`Snapshots ChartTooltip [TESTED] should render the posts tooltip 1`] = `
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -176,8 +176,8 @@ exports[`Snapshots ChartTooltip [TESTED] should render the posts tooltip 1`] = `
           style={
             Object {
               "color": "#fff",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.8rem",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
               "fontWeight": 400,
             }
           }
@@ -195,9 +195,9 @@ exports[`Snapshots ChartTooltip [TESTED] should render the posts tooltip 1`] = `
                 style={
                   Object {
                     "color": "#fff",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
-                    "fontWeight": 600,
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
+                    "fontWeight": 700,
                   }
                 }
               >
@@ -226,8 +226,8 @@ exports[`Snapshots ChartTooltip [TESTED] should render the posts tooltip 1`] = `
                 style={
                   Object {
                     "color": "#fff",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -258,7 +258,7 @@ exports[`Snapshots ChartTooltip [TESTED] should render the tooltip 1`] = `
         Object {
           "color": "#fff",
           "cursor": "default",
-          "fontFamily": "Open Sans, Helvetica Neue, Helvetica, Arial, sans serif",
+          "fontFamily": "Roboto, sans serif",
           "fontSize": "9pt",
           "padding": "10px",
           "pointerEvents": "none",
@@ -273,8 +273,8 @@ exports[`Snapshots ChartTooltip [TESTED] should render the tooltip 1`] = `
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -287,9 +287,9 @@ exports[`Snapshots ChartTooltip [TESTED] should render the tooltip 1`] = `
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
-                "fontWeight": 600,
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
               }
             }
           >
@@ -301,8 +301,8 @@ exports[`Snapshots ChartTooltip [TESTED] should render the tooltip 1`] = `
             style={
               Object {
                 "color": "#fff",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -316,8 +316,8 @@ exports[`Snapshots ChartTooltip [TESTED] should render the tooltip 1`] = `
           style={
             Object {
               "color": "#fff",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "0.8rem",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
               "fontWeight": 400,
             }
           }
@@ -334,9 +334,9 @@ exports[`Snapshots ChartTooltip [TESTED] should render the tooltip 1`] = `
                 style={
                   Object {
                     "color": "#fff",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
-                    "fontWeight": 600,
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
+                    "fontWeight": 700,
                   }
                 }
               >
@@ -365,8 +365,8 @@ exports[`Snapshots ChartTooltip [TESTED] should render the tooltip 1`] = `
                 style={
                   Object {
                     "color": "#fff",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -383,9 +383,9 @@ exports[`Snapshots ChartTooltip [TESTED] should render the tooltip 1`] = `
                 style={
                   Object {
                     "color": "#fff",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
-                    "fontWeight": 600,
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
+                    "fontWeight": 700,
                   }
                 }
               >
@@ -414,8 +414,8 @@ exports[`Snapshots ChartTooltip [TESTED] should render the tooltip 1`] = `
                 style={
                   Object {
                     "color": "#fff",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
                     "fontWeight": 400,
                   }
                 }
@@ -444,38 +444,49 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
     <div
       style={
         Object {
-          "margin": "0 0 1.5rem",
+          "background": "#fff",
+          "border": "1px solid #E2E8ED",
+          "borderRadius": "5px",
+          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
+          "margin": "0 0 2rem",
         }
       }
     >
-      <h2
+      <header
         style={
           Object {
-            "margin": "2rem 0 1rem",
+            "alignItems": "center",
+            "borderBottom": "1px solid #ECEEEF",
+            "display": "flex",
+            "justifyContent": "space-between",
+            "padding": "1.5rem",
           }
         }
       >
-        <span
+        <h2
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "margin": "0",
+              "padding": "0",
             }
           }
         >
-          Engagement & Audience over 
-          <span>
-            the 
-            selected
-             
-            7 days
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1.25rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            Engagement & Audience
           </span>
-        </span>
-      </h2>
+        </h2>
+      </header>
       <div
-        className="sc-bxivhb eViwtr"
+        className="sc-bxivhb cduSBF"
       >
         <div>
           <div>
@@ -503,9 +514,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                     style={
                       Object {
                         "color": "#59626a",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
-                        "fontSize": "0.8rem",
-                        "fontWeight": 600,
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 700,
                       }
                     }
                   >
@@ -614,9 +625,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                             style={
                               Object {
                                 "color": "#59626a",
-                                "fontFamily": "\\"Open Sans\\", sans-serif",
-                                "fontSize": "0.8rem",
-                                "fontWeight": 600,
+                                "fontFamily": "\\"Roboto\\", sans-serif",
+                                "fontSize": "0.75rem",
+                                "fontWeight": 700,
                               }
                             }
                           >
@@ -681,9 +692,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                     style={
                       Object {
                         "color": "#59626a",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
-                        "fontSize": "0.8rem",
-                        "fontWeight": 600,
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 700,
                       }
                     }
                   >
@@ -792,9 +803,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                             style={
                               Object {
                                 "color": "#59626a",
-                                "fontFamily": "\\"Open Sans\\", sans-serif",
-                                "fontSize": "0.8rem",
-                                "fontWeight": 600,
+                                "fontFamily": "\\"Roboto\\", sans-serif",
+                                "fontSize": "0.75rem",
+                                "fontWeight": 700,
                               }
                             }
                           >
@@ -959,9 +970,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -995,9 +1006,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -1025,38 +1036,49 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
     <div
       style={
         Object {
-          "margin": "0 0 1.5rem",
+          "background": "#fff",
+          "border": "1px solid #E2E8ED",
+          "borderRadius": "5px",
+          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
+          "margin": "0 0 2rem",
         }
       }
     >
-      <h2
+      <header
         style={
           Object {
-            "margin": "2rem 0 1rem",
+            "alignItems": "center",
+            "borderBottom": "1px solid #ECEEEF",
+            "display": "flex",
+            "justifyContent": "space-between",
+            "padding": "1.5rem",
           }
         }
       >
-        <span
+        <h2
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "margin": "0",
+              "padding": "0",
             }
           }
         >
-          Engagement & Audience over 
-          <span>
-            the 
-            selected
-             
-            7 days
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1.25rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            Engagement & Audience
           </span>
-        </span>
-      </h2>
+        </h2>
+      </header>
       <div
-        className="sc-bxivhb eViwtr"
+        className="sc-bxivhb cduSBF"
       >
         <div>
           <div>
@@ -1097,8 +1119,8 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
                             "fontWeight": 400,
                           }
                         }
@@ -1201,8 +1223,8 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                                 style={
                                   Object {
                                     "color": "#59626a",
-                                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                                    "fontSize": "0.8rem",
+                                    "fontFamily": "\\"Roboto\\", sans-serif",
+                                    "fontSize": "0.75rem",
                                     "fontWeight": 400,
                                   }
                                 }
@@ -1270,8 +1292,8 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                                 style={
                                   Object {
                                     "color": "#59626a",
-                                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                                    "fontSize": "0.8rem",
+                                    "fontFamily": "\\"Roboto\\", sans-serif",
+                                    "fontSize": "0.75rem",
                                     "fontWeight": 400,
                                   }
                                 }
@@ -1283,9 +1305,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                                 style={
                                   Object {
                                     "color": "#ff1e1e",
-                                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                                    "fontSize": "0.8rem",
-                                    "fontWeight": 600,
+                                    "fontFamily": "\\"Roboto\\", sans-serif",
+                                    "fontSize": "0.75rem",
+                                    "fontWeight": 700,
                                   }
                                 }
                               >
@@ -1351,9 +1373,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                                 style={
                                   Object {
                                     "color": "#59626a",
-                                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                                    "fontSize": "0.8rem",
-                                    "fontWeight": 600,
+                                    "fontFamily": "\\"Roboto\\", sans-serif",
+                                    "fontSize": "0.75rem",
+                                    "fontWeight": 700,
                                   }
                                 }
                               >
@@ -1495,9 +1517,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -1531,9 +1553,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -1561,38 +1583,49 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
     <div
       style={
         Object {
-          "margin": "0 0 1.5rem",
+          "background": "#fff",
+          "border": "1px solid #E2E8ED",
+          "borderRadius": "5px",
+          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
+          "margin": "0 0 2rem",
         }
       }
     >
-      <h2
+      <header
         style={
           Object {
-            "margin": "2rem 0 1rem",
+            "alignItems": "center",
+            "borderBottom": "1px solid #ECEEEF",
+            "display": "flex",
+            "justifyContent": "space-between",
+            "padding": "1.5rem",
           }
         }
       >
-        <span
+        <h2
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Open Sans\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
+              "margin": "0",
+              "padding": "0",
             }
           }
         >
-          Engagement & Audience over 
-          <span>
-            the 
-            selected
-             
-            7 days
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1.25rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            Engagement & Audience
           </span>
-        </span>
-      </h2>
+        </h2>
+      </header>
       <div
-        className="sc-bxivhb eViwtr"
+        className="sc-bxivhb cduSBF"
       >
         <div>
           <div>
@@ -1633,8 +1666,8 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                         style={
                           Object {
                             "color": "#59626a",
-                            "fontFamily": "\\"Open Sans\\", sans-serif",
-                            "fontSize": "0.8rem",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
                             "fontWeight": 400,
                           }
                         }
@@ -1737,9 +1770,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                                 style={
                                   Object {
                                     "color": "#59626a",
-                                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                                    "fontSize": "0.8rem",
-                                    "fontWeight": 600,
+                                    "fontFamily": "\\"Roboto\\", sans-serif",
+                                    "fontSize": "0.75rem",
+                                    "fontWeight": 700,
                                   }
                                 }
                               >
@@ -1806,8 +1839,8 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                                 style={
                                   Object {
                                     "color": "#59626a",
-                                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                                    "fontSize": "0.8rem",
+                                    "fontFamily": "\\"Roboto\\", sans-serif",
+                                    "fontSize": "0.75rem",
                                     "fontWeight": 400,
                                   }
                                 }
@@ -1819,9 +1852,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                                 style={
                                   Object {
                                     "color": "#ff1e1e",
-                                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                                    "fontSize": "0.8rem",
-                                    "fontWeight": 600,
+                                    "fontFamily": "\\"Roboto\\", sans-serif",
+                                    "fontSize": "0.75rem",
+                                    "fontWeight": 700,
                                   }
                                 }
                               >
@@ -1887,8 +1920,8 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                                 style={
                                   Object {
                                     "color": "#59626a",
-                                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                                    "fontSize": "0.8rem",
+                                    "fontFamily": "\\"Roboto\\", sans-serif",
+                                    "fontSize": "0.75rem",
                                     "fontWeight": 400,
                                   }
                                 }
@@ -2031,9 +2064,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -2067,9 +2100,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -2103,9 +2136,9 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                   style={
                     Object {
                       "color": "#59626a",
-                      "fontFamily": "\\"Open Sans\\", sans-serif",
-                      "fontSize": "0.8rem",
-                      "fontWeight": 600,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
@@ -2133,29 +2166,60 @@ exports[`Snapshots ContextualCompare [TESTED] should render a "no data" state 1`
     <div
       style={
         Object {
-          "margin": "0 0 1.5rem",
+          "background": "#fff",
+          "border": "1px solid #E2E8ED",
+          "borderRadius": "5px",
+          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
+          "margin": "0 0 2rem",
         }
       }
     >
+      <header
+        style={
+          Object {
+            "alignItems": "center",
+            "borderBottom": "1px solid #ECEEEF",
+            "display": "flex",
+            "justifyContent": "space-between",
+            "padding": "1.5rem",
+          }
+        }
+      >
+        <h2
+          style={
+            Object {
+              "margin": "0",
+              "padding": "0",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1.25rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            Engagement & Audience
+          </span>
+        </h2>
+      </header>
       <div
-        className="sc-bxivhb gCXzOQ"
+        className="sc-bxivhb cduSBF"
       >
         <div
           style={
             Object {
               "alignItems": "center",
               "background": "rgba(255, 255, 255, 1)",
-              "bottom": 0,
               "display": "flex",
               "justifyContent": "center",
-              "left": 0,
               "opacity": 1,
-              "position": "absolute",
-              "right": 0,
               "textAlign": "center",
-              "top": 0,
               "transition": "opacity 350ms ease-in-out",
-              "zIndex": 2,
             }
           }
         >
@@ -2163,8 +2227,6 @@ exports[`Snapshots ContextualCompare [TESTED] should render a "no data" state 1`
             style={
               Object {
                 "background": "white",
-                "border": "solid 1px #ced7df",
-                "borderRadius": "2px",
                 "boxSizing": "border-box",
                 "flex": 1,
                 "flexDirection": "row",
@@ -2178,7 +2240,7 @@ exports[`Snapshots ContextualCompare [TESTED] should render a "no data" state 1`
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
                     "fontWeight": 400,
                   }
@@ -2198,7 +2260,7 @@ exports[`Snapshots ContextualCompare [TESTED] should render a "no data" state 1`
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 400,
                   }
@@ -2227,29 +2289,61 @@ exports[`Snapshots ContextualCompare [TESTED] should render a loading state 1`] 
     <div
       style={
         Object {
-          "margin": "0 0 1.5rem",
+          "background": "#fff",
+          "border": "1px solid #E2E8ED",
+          "borderRadius": "5px",
+          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
+          "margin": "0 0 2rem",
         }
       }
     >
+      <header
+        style={
+          Object {
+            "alignItems": "center",
+            "borderBottom": "1px solid #ECEEEF",
+            "display": "flex",
+            "justifyContent": "space-between",
+            "padding": "1.5rem",
+          }
+        }
+      >
+        <h2
+          style={
+            Object {
+              "margin": "0",
+              "padding": "0",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1.25rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            Engagement & Audience
+          </span>
+        </h2>
+      </header>
       <div
-        className="sc-bxivhb gCXzOQ"
+        className="sc-bxivhb cduSBF"
       >
         <div
           style={
             Object {
               "alignItems": "center",
               "background": "rgba(255,255,255,.95)",
-              "border": "solid 1px #ced7df",
-              "bottom": 0,
+              "border": "none",
               "display": "flex",
               "justifyContent": "center",
-              "left": 0,
               "maxHeight": "none",
-              "opacity": 1,
-              "position": "absolute",
-              "right": 0,
+              "minHeight": "8rem",
               "textAlign": "center",
-              "top": 0,
               "transition": "opacity 350ms ease-in-out",
               "zIndex": 2,
             }
@@ -2326,13 +2420,13 @@ exports[`Snapshots ContextualCompare [TESTED] should render a loading state 1`] 
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 400,
                   }
                 }
               >
-                Engagement & Audience chart loading...
+                Loading...
               </span>
             </div>
           </div>
@@ -2379,8 +2473,8 @@ exports[`Snapshots PresetsDropdown [TESTED] open dropdown 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.8rem",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -2483,9 +2577,9 @@ exports[`Snapshots PresetsDropdown [TESTED] open dropdown 1`] = `
                     style={
                       Object {
                         "color": "#59626a",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
-                        "fontSize": "0.8rem",
-                        "fontWeight": 600,
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 700,
                       }
                     }
                   >
@@ -2552,8 +2646,8 @@ exports[`Snapshots PresetsDropdown [TESTED] open dropdown 1`] = `
                     style={
                       Object {
                         "color": "#59626a",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
-                        "fontSize": "0.8rem",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
                         "fontWeight": 400,
                       }
                     }
@@ -2565,9 +2659,9 @@ exports[`Snapshots PresetsDropdown [TESTED] open dropdown 1`] = `
                     style={
                       Object {
                         "color": "#ff1e1e",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
-                        "fontSize": "0.8rem",
-                        "fontWeight": 600,
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 700,
                       }
                     }
                   >
@@ -2633,8 +2727,8 @@ exports[`Snapshots PresetsDropdown [TESTED] open dropdown 1`] = `
                     style={
                       Object {
                         "color": "#59626a",
-                        "fontFamily": "\\"Open Sans\\", sans-serif",
-                        "fontSize": "0.8rem",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
                         "fontWeight": 400,
                       }
                     }

@@ -96,9 +96,9 @@ exports[`Snapshots ProfileHeader should render facebook fans 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
-                    "fontWeight": 400,
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
+                    "fontWeight": 700,
                   }
                 }
               >
@@ -113,9 +113,9 @@ exports[`Snapshots ProfileHeader should render facebook fans 1`] = `
               style={
                 Object {
                   "color": "#59626a",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "fontSize": "0.7rem",
-                  "fontWeight": 600,
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "0.75rem",
+                  "fontWeight": 400,
                 }
               }
             >
@@ -138,9 +138,9 @@ exports[`Snapshots ProfileHeader should render facebook fans 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.7rem",
-                "fontWeight": 300,
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 400,
               }
             }
           >
@@ -249,9 +249,9 @@ exports[`Snapshots ProfileHeader should render twitter followers 1`] = `
                 style={
                   Object {
                     "color": "#59626a",
-                    "fontFamily": "\\"Open Sans\\", sans-serif",
-                    "fontSize": "0.8rem",
-                    "fontWeight": 400,
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
+                    "fontWeight": 700,
                   }
                 }
               >
@@ -266,9 +266,9 @@ exports[`Snapshots ProfileHeader should render twitter followers 1`] = `
               style={
                 Object {
                   "color": "#59626a",
-                  "fontFamily": "\\"Open Sans\\", sans-serif",
-                  "fontSize": "0.7rem",
-                  "fontWeight": 600,
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "0.75rem",
+                  "fontWeight": 400,
                 }
               }
             >
@@ -291,9 +291,9 @@ exports[`Snapshots ProfileHeader should render twitter followers 1`] = `
             style={
               Object {
                 "color": "#59626a",
-                "fontFamily": "\\"Open Sans\\", sans-serif",
-                "fontSize": "0.7rem",
-                "fontWeight": 300,
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 400,
               }
             }
           >
