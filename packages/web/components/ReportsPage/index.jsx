@@ -17,6 +17,7 @@ const Page = styled.div`
 
 const Container = styled.div`
   width: 100%;
+  overflow-y: scroll;
 `;
 
 const Content = styled.div`

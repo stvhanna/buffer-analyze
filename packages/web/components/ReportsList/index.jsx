@@ -17,6 +17,7 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+  overflow-y: scroll;
 `;
 
 const Content = styled.div`
