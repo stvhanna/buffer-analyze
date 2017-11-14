@@ -127,9 +127,16 @@ const MultiProfileSelector = ({
               padding: '10px',
             }}
           >
-            <Button fillContainer onClick={() => compareProfiles(selectedProfiles)} >
-              Compare Profiles
-            </Button>
+            {
+              selectedProfiles.length < 5 ?
+                <Button fillContainer onClick={() => compareProfiles(selectedProfiles)} >
+                  Compare Profiles
+                </Button>
+                :
+                <Button disabled fillContainer>
+                  Compare Profiles
+                </Button>
+            }
           </div>
         </DropdownContent>
       </Dropdown>);

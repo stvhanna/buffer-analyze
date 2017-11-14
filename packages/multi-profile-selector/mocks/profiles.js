@@ -13,6 +13,12 @@ const twitterProfiles = [
     id: '2',
     service: 'twitter',
   },
+  {
+    avatarUrl,
+    username: 'tigran',
+    id: '5',
+    service: 'twitter',
+  },
 ];
 
 const facebookProfiles = [

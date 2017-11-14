@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
 
 import DropdownItem from './index';
-import mockProfiles from '../../../../mocks/profiles';
+import mockProfiles from './mocks/profiles';
 
 storiesOf('Dropdown Item')
   .addDecorator(checkA11y)
