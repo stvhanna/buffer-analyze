@@ -18,7 +18,6 @@ import Footer from '../Footer';
 const AudienceComparisonChart = ({
   profilesMetricData,
   profileTotals,
-  selectedProfile,
   loading,
 }) => {
   let content = null;
@@ -39,7 +38,6 @@ const AudienceComparisonChart = ({
     footer = (
       <Footer
         profileTotals={profileTotals}
-        selectedProfile={selectedProfile}
       />
     );
   }
@@ -66,6 +64,7 @@ const AudienceComparisonChart = ({
 
 AudienceComparisonChart.defaultProps = {
   loading: false,
+  selectedProfiles: [],
 };
 
 AudienceComparisonChart.propTypes = {
@@ -92,14 +91,9 @@ AudienceComparisonChart.propTypes = {
     currentPeriodTotal: PropTypes.number.isRequired,
     currentPeriodDiff: PropTypes.number.isRequired,
     profileId: PropTypes.string.isRequired,
-  })).isRequired,
-  selectedProfile: PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    avatarUrl: PropTypes.string.isRequired,
-    service: PropTypes.string.isRequired,
-    timezone: PropTypes.string.isRequired,
     username: PropTypes.string.isRequired,
-  }).isRequired,
+
+  })).isRequired,
 };
 
 export default AudienceComparisonChart;

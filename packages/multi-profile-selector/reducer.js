@@ -63,9 +63,6 @@ export default (state = initialState, action) => {
       return Object.assign({}, state, {
         isDropdownOpen: false,
       });
-    // changing pages on navbar.
-    case actionTypes.SELECT_PROFILE_SERVICE:
-      return initialState;
     default:
       return state;
   }

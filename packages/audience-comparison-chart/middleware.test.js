@@ -1,11 +1,10 @@
 import { actions } from '@bufferapp/async-data-fetch';
-import { actionTypes } from '@bufferapp/analyze-profile-selector';
+import { actionTypes } from '@bufferapp/multi-profile-selector';
 import { actionTypes as dateActionTypes } from '@bufferapp/analyze-date-picker';
 import middleware from './middleware';
 
 import mockProfiles from './mocks/profiles';
 
-const profileId = '12359182129asd';
 let state = {};
 let store = {};
 const next = jest.fn();
@@ -14,19 +13,15 @@ const next = jest.fn();
 describe('middleware', () => {
   beforeEach(() => {
     state = {
-      router: {
-        location: {
-          pathname: `/insights/twitter/${profileId}`,
-        },
-      },
       date: {
         startDate: '10/10/2016',
         endDate: '30/10/2016',
       },
       profiles: {
         profiles: mockProfiles,
-        selectedProfileService: 'facebook',
-        selectedProfileId: 'foo42',
+      },
+      multiProfileSelector: {
+        selectedProfiles: mockProfiles,
       },
     };
 
@@ -46,18 +41,16 @@ describe('middleware', () => {
     middleware(store)(next)(action);
   });
 
-  it('shoud dispatch a data fetch for audience comparison once a profile has been selected', () => {
+  it('shoud dispatch a data fetch for audience comparison once a compare profile has been pressed', () => {
     const action = {
-      type: actionTypes.SELECT_PROFILE,
-      id: mockProfiles[0].id,
-      profileService: 'twitter',
+      type: actionTypes.COMPARE_PROFILES,
+      selectedProfiles: mockProfiles,
     };
     middleware(store)(next)(action);
     expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
       name: 'audience_comparison',
       args: {
-        profileId: mockProfiles[0].id,
-        profileService: 'twitter',
+        profileIds: mockProfiles.map(p => p.id),
         startDate: state.date.startDate,
         endDate: state.date.endDate,
       },
@@ -70,14 +63,13 @@ describe('middleware', () => {
       type: dateActionTypes.SET_DATE_RANGE,
       startDate: state.date.startDate,
       endDate: state.date.endDate,
-      id: mockProfiles[0].id,
+      profileIds: mockProfiles.map(p => p.id),
     };
     middleware(store)(next)(action);
     expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
       name: 'audience_comparison',
       args: {
-        profileService: 'facebook',
-        profileId: 'foo42',
+        profileIds: mockProfiles.map(p => p.id),
         startDate: state.date.startDate,
         endDate: state.date.endDate,
       },

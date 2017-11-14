@@ -5,7 +5,6 @@ import NavSidebar from '@bufferapp/nav-sidebar';
 import DatePicker from '@bufferapp/analyze-date-picker';
 import ProfileLoader from '@bufferapp/profile-loader';
 import { white, mystic } from '@bufferapp/components/style/color';
-import ProfileSelector from '@bufferapp/analyze-profile-selector';
 import MultiProfileSelector from '@bufferapp/multi-profile-selector';
 import AudienceComparisonChart from '@bufferapp/audience-comparison-chart';
 

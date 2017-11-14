@@ -22,8 +22,9 @@ describe('AudienceComparisonChartContainer', () => {
       },
       profiles: {
         profiles: mockProfiles,
-        selectedProfileId: mockProfiles[0].id,
-        selectedProfileService: 'twitter',
+      },
+      multiProfileSelector: {
+        selectedProfiles: mockProfiles,
       },
     };
   });

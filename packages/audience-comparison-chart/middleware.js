@@ -17,17 +17,19 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
       }));
       break;
     }
-    case dateActionTypes.SET_DATE_RANGE:
+    case dateActionTypes.SET_DATE_RANGE: {
+      const selectedProfileIds = getState().multiProfileSelector.selectedProfiles.map(p => p.id);
       dispatch(actions.fetch({
         name: 'audience_comparison',
         args: {
-          profileId: getState().profiles.selectedProfileId,
+          profileIds: selectedProfileIds,
           profileService: getState().profiles.selectedProfileService,
           startDate: action.startDate,
           endDate: action.endDate,
         },
       }));
       break;
+    }
     default:
       break;
   }

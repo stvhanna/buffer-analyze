@@ -7,7 +7,7 @@ describe('reducer', () => {
 
   beforeEach(() => {
     initialState = {
-      loading: true,
+      loading: false,
       profilesMetricData: [],
       profileTotals: [],
     };
@@ -21,7 +21,10 @@ describe('reducer', () => {
   it('should return initial state on FETCH_START', () => {
     expect(reducer(undefined, { type:
         `audience_comparison_${asyncDataFetchActionTypes.FETCH_START}` }))
-      .toEqual(initialState);
+      .toEqual({
+        ...initialState,
+        loading: true,
+      });
   });
 
   it('should update metric on fetch success', () => {

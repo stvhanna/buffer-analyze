@@ -10,7 +10,7 @@ import audienceComparison from './';
 const DateRange = require('../utils/DateRange');
 
 describe('rpc/audience_comparison', () => {
-  const profileId = 'profile1234';
+  const profileIds = ['profile1234'];
 
   it('should have the expected name', () => {
     expect(audienceComparison.name)
@@ -26,8 +26,7 @@ describe('rpc/audience_comparison', () => {
     const startDate = moment().subtract(7, 'days');
     const endDate = moment().subtract(1, 'days');
     rp.mockReturnValueOnce(Promise.resolve(response));
-    const profileService = 'facebook';
-    const result = await audienceComparison.fn({ startDate, profileService, endDate, profileId });
+    const result = await audienceComparison.fn({ profileIds, startDate, endDate });
 
     const start = moment.unix(startDate).format('MM/DD/YYYY');
     const end = moment.unix(endDate).format('MM/DD/YYYY');
@@ -40,7 +39,7 @@ describe('rpc/audience_comparison', () => {
       method: 'POST',
       strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
       body: {
-        profiles: [profileId],
+        profiles: profileIds,
         start_date: dateRange.start,
         end_date: dateRange.end,
       },

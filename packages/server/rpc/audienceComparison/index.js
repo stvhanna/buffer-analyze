@@ -34,7 +34,6 @@ const formatDailyData = (day, value, profileService) => {
 
 function formatData(result) {
   const profileIds = Object.keys(result);
-
   const profilesMetricData = Array.from(profileIds, (id) => {
     const data = result[id];
     return data.profilesMetricData;
@@ -71,6 +70,7 @@ function formatData(result) {
       currentPeriodTotal: data.currentPeriodTotal,
       currentPeriodDiff: data.currentPeriodDiff,
       profileId: data.profileId,
+      username: data.username,
     };
   });
 
