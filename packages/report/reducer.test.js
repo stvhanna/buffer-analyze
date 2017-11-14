@@ -1,5 +1,5 @@
 import { actionTypes as asyncDataFetchActions } from '@bufferapp/async-data-fetch';
-import reducer from './reducer';
+import reducer, { actions, actionTypes } from './reducer';
 
 describe('reducer', () => {
   describe('initial state', () => {
@@ -14,6 +14,10 @@ describe('reducer', () => {
     it('has no charts', () => {
       const state = reducer(undefined, {});
       expect(state.charts).toHaveLength(0);
+    });
+    it('is not in edit mode', () => {
+      const state = reducer(undefined, {});
+      expect(state.edit).toBeFalsy();
     });
   });
 
@@ -40,6 +44,45 @@ describe('reducer', () => {
         result: ['a chart', 'another chart'],
       });
       expect(state.charts).toEqual(['a chart', 'another chart']);
+    });
+  });
+
+  it('EDIT_NAME sets edit mode', () => {
+    const state = reducer(undefined, {
+      type: actionTypes.EDIT_NAME,
+    });
+    expect(state.edit).toBeTruthy();
+  });
+
+  describe('SAVE_CHANGES', () => {
+    it('removes edit mode', () => {
+      const initialState = reducer(undefined, {});
+      const state = reducer(initialState, {
+        type: actionTypes.SAVE_CHANGES,
+      });
+      expect(state.edit).toBeFalsy();
+    });
+    it('stores the new name', () => {
+      const initialState = reducer(undefined, {});
+      const state = reducer(initialState, {
+        type: actionTypes.SAVE_CHANGES,
+        name: 'a new name',
+      });
+      expect(state.name).toBe('a new name');
+    });
+  });
+
+  describe('actions', () => {
+    it('editName', () => {
+      expect(actions.editName()).toEqual({
+        type: actionTypes.EDIT_NAME,
+      });
+    });
+    it('saveChanges', () => {
+      expect(actions.saveChanges('a new name')).toEqual({
+        type: actionTypes.SAVE_CHANGES,
+        name: 'a new name',
+      });
     });
   });
 });

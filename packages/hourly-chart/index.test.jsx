@@ -10,6 +10,8 @@ import HourlyChart, {
 } from './index';
 import HourlyChartComponent from './components/HourlyChart';
 
+jest.mock('@bufferapp/add-report');
+
 configure({ adapter: new Adapter() });
 describe('HourlyChart', () => {
   const mockStore = configureMockStore();

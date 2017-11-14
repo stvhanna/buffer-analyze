@@ -10,6 +10,8 @@ import TopPosts, {
 } from './index';
 import TopPostsTable from './components/TopPostsTable';
 
+jest.mock('@bufferapp/add-report');
+
 configure({ adapter: new Adapter() });
 
 const selectedMetric = {

@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
+import { action } from '@storybook/addon-actions';
 import Report from './index';
 
 const report = {
@@ -70,5 +71,8 @@ storiesOf('Report')
     <Report loading />
   ))
   .add('renders a report with summary table', () => (
-    <Report {...report} dateRange={dateRange} />
+    <Report {...report} dateRange={dateRange} saveChanges={() => {}} />
+  ))
+  .add('renders a report in edit mode', () => (
+    <Report {...report} dateRange={dateRange} edit saveChanges={action('save!')} />
   ));

@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import Report from './components/Report';
+import { actions } from './reducer';
 
 // default export = container
 export default connect(
@@ -9,6 +10,10 @@ export default connect(
       endDate: state.date.endDate,
     },
     ...state.report,
+  }),
+  dispatch => ({
+    editName: () => dispatch(actions.editName()),
+    saveChanges: name => dispatch(actions.saveChanges(name)),
   }),
 )(Report);
 

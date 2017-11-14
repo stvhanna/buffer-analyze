@@ -27,7 +27,7 @@ const ContextualCompare = ({
     <div className={className}>
       {loading && <Loading active noBorder />}
       {data.length === 0 && !loading && <NoData />}
-      {data.length > 1 && !loading && <div>
+      {data.length >= 1 && !loading && <div>
         <Header {...props} />
         <div id="js-dom-to-png-contextual">
           <Chart {...props} data={data} />

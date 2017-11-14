@@ -2,10 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {
   Text,
+  Button,
 } from '@bufferapp/components';
 import styled from 'styled-components';
 import ChartFactory from '../ChartFactory';
 import DateRange from '../DateRange';
+import EditTitle from '../EditTitle';
 
 const Card = styled.section`
   width: 880px;
@@ -23,12 +25,13 @@ const Title = styled.h1`
   margin: 0 0 .5rem;
 `;
 
-const Report = ({ name, dateRange, charts, loading }) => {
+const Report = ({ name, dateRange, charts, loading, edit, saveChanges, editName }) => {
   if (loading) return '...loading';
   return (
     <Card>
       <Text>
-        <Title>{name}</Title>
+        { edit && <EditTitle name={name} saveChanges={saveChanges} />}
+        { !edit && <div><Button noStyle onClick={editName}><Title>{name}</Title></Button></div> }
         <DateRange {...dateRange} />
       </Text>
       <ChartFactory charts={charts} />
@@ -38,17 +41,20 @@ const Report = ({ name, dateRange, charts, loading }) => {
 
 Report.defaultProps = {
   loading: false,
+  edit: false,
   dateRange: {},
   charts: [],
 };
 
 Report.propTypes = {
   loading: PropTypes.bool,
+  edit: PropTypes.bool,
   dateRange: PropTypes.shape({
     startDate: PropTypes.string,
     endDate: PropTypes.string,
   }),
   name: PropTypes.string.isRequired,
+  saveChanges: PropTypes.func.isRequired,
   charts: PropTypes.arrayOf(PropTypes.shape({
     chart_id: PropTypes.string,
   }).isRequired),

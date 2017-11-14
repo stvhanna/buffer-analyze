@@ -42,7 +42,7 @@ exports[`Snapshots Report renders the report 1`] = `
             Object {
               "color": "#59626a",
               "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "1.25rem",
+              "fontSize": "1rem",
               "fontWeight": 700,
             }
           }
@@ -137,7 +137,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1.25rem",
+                "fontSize": "1rem",
                 "fontWeight": 700,
               }
             }
@@ -207,7 +207,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1.25rem",
+                "fontSize": "1rem",
                 "fontWeight": 700,
               }
             }
