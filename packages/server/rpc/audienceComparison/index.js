@@ -32,9 +32,18 @@ const formatDailyData = (day, value, profileService) => {
   };
 };
 
-function formatData(result, profileService) {
-  const profilesMetricData = result.profilesMetricData;
-  const profileTotals = result.profileTotals;
+function formatData(result) {
+  const profileIds = Object.keys(result);
+
+  const profilesMetricData = Array.from(profileIds, (id) => {
+    const data = result[id];
+    return data.profilesMetricData;
+  });
+
+  const profileTotals = Array.from(profileIds, (id) => {
+    const data = result[id];
+    return data.profileTotals;
+  });
 
   const formattedProfilesMetricData = Array.from(profilesMetricData, (data) => {
     const timezone = data.timezone;
@@ -43,7 +52,7 @@ function formatData(result, profileService) {
         formatDailyData(
           d.day,
           d.value,
-          profileService,
+          data.service,
         ),
       ),
       service: data.service,
@@ -52,8 +61,8 @@ function formatData(result, profileService) {
   });
 
   const formattedProfileTotals = Array.from(profileTotals, (data) => {
-    const label = METRICS_CONFIG[profileService].label;
-    const color = METRICS_CONFIG[profileService].color;
+    const label = METRICS_CONFIG[data.service].label;
+    const color = METRICS_CONFIG[data.service].color;
     return {
       metric: {
         label,
@@ -74,7 +83,7 @@ function formatData(result, profileService) {
 module.exports = method(
   'audience_comparison',
   'get daily audience data for profile',
-  ({ profileId, profileService, startDate, endDate }) => {
+  ({ profileIds, startDate, endDate }) => {
     const start = moment.unix(startDate).format('MM/DD/YYYY');
     const end = moment.unix(endDate).format('MM/DD/YYYY');
     const dateRange = new DateRange(start, end);
@@ -83,13 +92,13 @@ module.exports = method(
       method: 'POST',
       strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
       body: {
-        profiles: [profileId],
+        profiles: profileIds,
         start_date: dateRange.start,
         end_date: dateRange.end,
       },
       json: true,
     }).then(({ response }) => (
-      formatData(response, profileService)
+      formatData(response)
     )).catch(() => ({
       profilesMetricData: [],
       profileTotals: [],

@@ -89,6 +89,7 @@ function formatDaily(
   previousPeriodDailyTotalsResult,
   profileService,
 ) {
+
   const currentPeriodDays = Object.keys(currentPeriodDailyTotalsResult);
   const previousPeriodDays = Object.keys(previousPeriodDailyTotalsResult);
   const daily = Array.from(currentPeriodDays, (day, index) => ({

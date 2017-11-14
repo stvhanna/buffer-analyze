@@ -6,13 +6,11 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
   const { dispatch, getState } = store;
   switch (action.type) {
     case profileActionTypes.COMPARE_PROFILES: {
-      console.log(action);
       const selectedProfileIds = action.selectedProfiles.map(p => p.id);
       dispatch(actions.fetch({
         name: 'audience_comparison',
         args: {
-          profileId: selectedProfileIds[0],
-          profileService: 'facebook',
+          profileIds: selectedProfileIds,
           startDate: getState().date.startDate,
           endDate: getState().date.endDate,
         },
