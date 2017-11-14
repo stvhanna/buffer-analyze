@@ -15,6 +15,7 @@ const Page = styled.div`
 const Container = styled.div`
   padding: 2.8rem;
   width: 100%;
+  overflow-y: scroll;
   display: flex;
   justify-content: center;
 `;
