@@ -4,6 +4,8 @@ exports[`Snapshots Report renders the report 1`] = `
 <span>
   <li
     className="sc-bdVaJa dCwyQQ"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
   >
     <button
       aria-label={null}
@@ -99,6 +101,8 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
   >
     <li
       className="sc-bdVaJa dCwyQQ"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
     >
       <button
         aria-label={null}
@@ -169,6 +173,8 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
     </li>
     <li
       className="sc-bdVaJa dCwyQQ"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
     >
       <button
         aria-label={null}

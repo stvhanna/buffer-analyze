@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {
   Text,
@@ -33,26 +33,68 @@ const Date = styled.span`
   color: #c1c1c1;
 `;
 
-const Report = ({ _id, updated_at, name, selectReport, small }) =>
-  <ReportListItem>
-    <Button noStyle fillContainer onClick={() => selectReport(_id)}>
-      <ReportText small={small}>
-        <Text size={small ? 'small' : null} weight="bold"><Name>{name}</Name></Text>
-        <Text size={small ? 'small' : null}><Date>{moment(updated_at, 'x').format('MMMM D, YYYY')}</Date></Text>
-      </ReportText>
-    </Button>
-  </ReportListItem>;
+class Report extends Component {
+  static propTypes = {
+    _id: PropTypes.string.isRequired,
+    updated_at: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    selectReport: PropTypes.func.isRequired,
+    removeReport: PropTypes.func,
+    small: PropTypes.bool,
+  };
 
-Report.defaultProps = {
-  small: false,
-};
+  static defaultProps = {
+    small: false,
+    removeReport: null,
+  };
 
-Report.propTypes = {
-  _id: PropTypes.string.isRequired,
-  updated_at: PropTypes.number.isRequired,
-  name: PropTypes.string.isRequired,
-  selectReport: PropTypes.func.isRequired,
-  small: PropTypes.bool,
-};
+
+  constructor(props) {
+    super(props);
+    this.addHover = this.addHover.bind(this);
+    this.removeHover = this.removeHover.bind(this);
+    this.state = {
+      hovered: false,
+    };
+  }
+
+  addHover() {
+    this.setState({
+      hovered: true,
+    });
+  }
+
+  removeHover() {
+    this.setState({
+      hovered: false,
+    });
+  }
+
+  render() {
+    const {
+      _id,
+      updated_at,
+      name,
+      selectReport,
+      small,
+      removeReport,
+    } = this.props;
+    const canShowRemoveButton = this.state.hovered && removeReport;
+    return (
+      <ReportListItem
+        onMouseEnter={this.addHover}
+        onMouseLeave={this.removeHover}
+      >
+        <Button noStyle fillContainer onClick={() => selectReport(_id)}>
+          <ReportText small={small}>
+            <Text size={small ? 'small' : null} weight="bold"><Name>{name}</Name></Text>
+            <Text size={small ? 'small' : null}><Date>{moment(updated_at, 'x').format('MMMM D, YYYY')}</Date></Text>
+          </ReportText>
+        </Button>
+        { canShowRemoveButton && <Button noStyle onClick={() => removeReport(_id)}>x</Button>}
+      </ReportListItem>
+    );
+  }
+}
 
 export default Report;

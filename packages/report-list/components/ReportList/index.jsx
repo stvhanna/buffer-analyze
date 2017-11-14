@@ -11,17 +11,26 @@ const List = styled.ol`
   width: 100%;
 `;
 
-const ReportList = ({ loading, reports, selectReport, small }) =>
+const ReportList = ({ loading, reports, selectReport, removeReport, small }) =>
   (loading ?
     <Text>Loading...</Text> :
     <List>
-      {reports.map(report => <Report key={report._id} {...report} small={small} selectReport={selectReport} />)}
+      {reports.map(report =>
+        <Report
+          key={report._id}
+          {...report}
+          small={small}
+          selectReport={selectReport}
+          removeReport={removeReport}
+        />,
+      )}
     </List>);
 
 ReportList.defaultProps = {
   reports: [],
   loading: false,
   small: false,
+  removeReport: null,
 };
 
 ReportList.propTypes = {
@@ -31,6 +40,7 @@ ReportList.propTypes = {
     name: PropTypes.string,
   })),
   selectReport: PropTypes.func.isRequired,
+  removeReport: PropTypes.func,
   small: PropTypes.bool,
 };
 

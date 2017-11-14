@@ -1,6 +1,7 @@
 import { push } from 'react-router-redux';
 import { connect } from 'react-redux';
 import ReportList from './components/ReportList';
+import { actions } from './reducer';
 
 // default export = container
 export default connect(
@@ -11,6 +12,7 @@ export default connect(
     selectReport: (id) => {
       dispatch(push(`/reports/${id}`));
     },
+    removeReport: id => dispatch(actions.removeReport(id)),
   }),
 )(ReportList);
 
