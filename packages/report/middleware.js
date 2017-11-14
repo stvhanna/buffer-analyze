@@ -1,6 +1,7 @@
 import { actions, actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-fetch';
 import { actionTypes as dateActionTypes } from '@bufferapp/analyze-date-picker';
-import { actionTypes } from '@bufferapp/report-list';
+import { actionTypes as listActionTypes } from '@bufferapp/report-list';
+import { actionTypes } from './reducer';
 
 const getReport = (reportId, state) =>
   state.reportList.reports.find(report => report._id === reportId);
@@ -30,13 +31,22 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
         },
       }));
       break;
-    case actionTypes.VIEW_REPORT:
+    case listActionTypes.VIEW_REPORT:
       store.dispatch(actions.fetch({
         name: 'get_report',
         args: {
           ...getReport(action.id, store.getState()),
           startDate: store.getState().date.startDate,
           endDate: store.getState().date.endDate,
+        },
+      }));
+      break;
+    case actionTypes.SAVE_CHANGES:
+      store.dispatch(actions.fetch({
+        name: 'save_report_changes',
+        args: {
+          ...store.getState().report,
+          name: action.name,
         },
       }));
       break;
