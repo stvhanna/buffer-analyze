@@ -3,7 +3,7 @@
 exports[`Snapshots Report renders the report 1`] = `
 <span>
   <li
-    className="sc-bdVaJa dCwyQQ"
+    className="sc-bdVaJa hzPqI"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
@@ -100,7 +100,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
     className="sc-ifAKCX bAoxEZ"
   >
     <li
-      className="sc-bdVaJa dCwyQQ"
+      className="sc-bdVaJa hzPqI"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -172,7 +172,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
       </button>
     </li>
     <li
-      className="sc-bdVaJa dCwyQQ"
+      className="sc-bdVaJa hzPqI"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >

@@ -9,7 +9,7 @@ import moment from 'moment';
 import styled from 'styled-components';
 
 const ReportListItem = styled.li`
-  display: block;
+  display: flex;
   background: #FFFFFF;
   border: 1px solid #D5E3EF;
   box-sizing: border-box;
