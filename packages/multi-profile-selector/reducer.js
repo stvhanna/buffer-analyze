@@ -43,7 +43,6 @@ export default (state = initialState, action) => {
       });
     case actionTypes.TOGGLE_PROFILE:
       return Object.assign({}, state, {
-        profilesFilterString: '',
         selectedProfiles: updatedSelectedProfiles(
           action.id,
           state.selectedProfiles,
@@ -53,13 +52,14 @@ export default (state = initialState, action) => {
     case actionTypes.COMPARE_PROFILES:
       return Object.assign({}, state, {
         isDropdownOpen: false,
+        profilesFilterString: '',
         selectedProfiles: state.selectedProfiles,
       });
-    case `profiles_${actionTypes.OPEN_DROPDOWN}`:
+    case `multiProfileSelector_${actionTypes.OPEN_DROPDOWN}`:
       return Object.assign({}, state, {
         isDropdownOpen: true,
       });
-    case `profiles_${actionTypes.CLOSE_DROPDOWN}`:
+    case `multiProfileSelector_${actionTypes.CLOSE_DROPDOWN}`:
       return Object.assign({}, state, {
         isDropdownOpen: false,
       });
@@ -69,11 +69,10 @@ export default (state = initialState, action) => {
 };
 
 export const actions = {
-  toggleProfile(id, profileService = null) {
+  toggleProfile(id) {
     return {
       type: actionTypes.TOGGLE_PROFILE,
       id,
-      profileService,
     };
   },
   compareProfiles(selectedProfiles) {
@@ -84,12 +83,12 @@ export const actions = {
   },
   openDropdown() {
     return {
-      type: `profiles_${actionTypes.OPEN_DROPDOWN}`,
+      type: `multiProfileSelector_${actionTypes.OPEN_DROPDOWN}`,
     };
   },
   closeDropdown() {
     return {
-      type: `profiles_${actionTypes.CLOSE_DROPDOWN}`,
+      type: `multiProfileSelector_${actionTypes.CLOSE_DROPDOWN}`,
     };
   },
   filterProfilesByUsername({ target }) {

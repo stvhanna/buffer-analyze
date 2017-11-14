@@ -15,7 +15,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  toggleProfile: ({ id, service }) => dispatch(actions.toggleProfile(id, service)),
+  toggleProfile: ({ id }) => dispatch(actions.toggleProfile(id)),
   compareProfiles: selectedProfiles => dispatch(actions.compareProfiles(selectedProfiles)),
   openDropdown: () => dispatch(actions.openDropdown()),
   closeDropdown: () => dispatch(actions.closeDropdown()),

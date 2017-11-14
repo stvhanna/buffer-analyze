@@ -1,31 +1,32 @@
 import React from 'react';
-import { mount } from 'enzyme';
-import { Provider } from 'react-redux';
+import { configure, shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+import configureMockStore from 'redux-mock-store';
 import MultiProfileSelector, {
   reducer,
   actions,
   actionTypes,
-  middleware,
 } from './index';
-import MultiProfileSelector from './components/MultiProfileSelector';
+import MultiProfileSelectorComponent from './components/MultiProfileSelector';
 
-const storeFake = state => ({
-  default: () => {},
-  subscribe: () => {},
-  dispatch: () => {},
-  getState: () => ({ ...state }),
-});
+import mockProfiles from './mocks/profiles';
 
+configure({ adapter: new Adapter() });
 describe('MultiProfileSelector', () => {
+  const mockStore = configureMockStore();
+  const store = mockStore({
+    profiles: {
+      profiles: mockProfiles,
+    },
+    multiProfileSelector: {
+      selectedProfiles: mockProfiles,
+    },
+  });
   it('should render', () => {
-    const store = storeFake({
-    });
-    const wrapper = mount(
-      <Provider store={store}>
-        <MultiProfileSelector />
-      </Provider>,
+    const wrapper = shallow(
+      <MultiProfileSelector store={store} />,
     );
-    expect(wrapper.find(MultiProfileSelector).length)
+    expect(wrapper.find(MultiProfileSelectorComponent).length)
       .toBe(1);
   });
 
@@ -44,8 +45,37 @@ describe('MultiProfileSelector', () => {
       .toBeDefined();
   });
 
-  it('should export middleware', () => {
-    expect(middleware)
-      .toBeDefined();
+  describe('mapDispatchToProps', () => {
+    it('toggle profile dispatches toggleProfile', () => {
+      const profileSelector = shallow(
+        <MultiProfileSelector store={store} />,
+      );
+      expect(profileSelector.props().toggleProfile({ id: 1 })).toEqual(actions.toggleProfile(1));
+    });
+    it('toggle openDropdown dispatches openDropdown', () => {
+      const profileSelector = shallow(
+        <MultiProfileSelector store={store} />,
+      );
+      expect(profileSelector.props().openDropdown()).toEqual(actions.openDropdown());
+    });
+    it('toggle closeDropdown dispatches closeDropdown', () => {
+      const profileSelector = shallow(
+        <MultiProfileSelector store={store} />,
+      );
+      expect(profileSelector.props().closeDropdown()).toEqual(actions.closeDropdown());
+    });
+    it('toggle onSearchChange dispatches filterProfilesByUsername', () => {
+      const profileSelector = shallow(
+        <MultiProfileSelector store={store} />,
+      );
+      expect(profileSelector.props().onSearchChange('event')).toEqual(actions.filterProfilesByUsername('event'));
+    });
+    it('toggle compareProfiles dispatches compareProfiles', () => {
+      const profileSelector = shallow(
+        <MultiProfileSelector store={store} />,
+      );
+      expect(profileSelector.props()
+        .compareProfiles(mockProfiles)).toEqual(actions.compareProfiles(mockProfiles));
+    });
   });
 });
