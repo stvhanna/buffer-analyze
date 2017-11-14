@@ -1,6 +1,7 @@
 import { actionTypes as dateActionTypes } from '@bufferapp/analyze-date-picker';
 import { actions, actionTypes as asyncDataFetchActions } from '@bufferapp/async-data-fetch';
-import { actionTypes } from '@bufferapp/report-list';
+import { actionTypes as listActionTypes } from '@bufferapp/report-list';
+import { actionTypes } from './reducer';
 import middleware from './middleware';
 
 describe('middleware', () => {
@@ -66,7 +67,7 @@ describe('middleware', () => {
 
   it('VIEW_REPORT dispatches a new data fetch', () => {
     const action = {
-      type: actionTypes.VIEW_REPORT,
+      type: listActionTypes.VIEW_REPORT,
       id: 'report_id_2',
     };
     middleware(store)(next)(action);
@@ -105,5 +106,19 @@ describe('middleware', () => {
     });
   });
 
+  it('SAVE_CHANGES dispatches a update report request', () => {
+    const action = {
+      type: actionTypes.SAVE_CHANGES,
+      name: 'A new name!',
+    };
+    middleware(store)(next)(action);
+    expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
+      name: 'update_report',
+      args: {
+        ...state.report,
+        name: action.name,
+      },
+    }));
+  });
   afterEach(() => jest.clearAllMocks());
 });
