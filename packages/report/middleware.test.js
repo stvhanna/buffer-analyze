@@ -113,7 +113,7 @@ describe('middleware', () => {
     };
     middleware(store)(next)(action);
     expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
-      name: 'save_report_changes',
+      name: 'update_report',
       args: {
         ...state.report,
         name: action.name,

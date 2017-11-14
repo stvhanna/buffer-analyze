@@ -43,7 +43,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
       break;
     case actionTypes.SAVE_CHANGES:
       store.dispatch(actions.fetch({
-        name: 'save_report_changes',
+        name: 'update_report',
         args: {
           ...store.getState().report,
           name: action.name,
