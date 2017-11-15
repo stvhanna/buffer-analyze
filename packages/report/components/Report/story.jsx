@@ -1,8 +1,12 @@
 import React from 'react';
+import moment from 'moment-timezone';
+import timezoneMock from 'timezone-mock';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
 import { action } from '@storybook/addon-actions';
 import Report from './index';
+
+timezoneMock.register('US/Eastern');
 
 const report = {
   name: 'Weekly Sync Report',
@@ -61,8 +65,8 @@ const report = {
 };
 
 const dateRange = {
-  startDate: 1496275200000,
-  endDate: 1498780800000,
+  startDate: moment.tz(1496275200000, 'US/Eastern').format('x'),
+  endDate: moment.tz(1498780800000, 'US/Eastern').format('x'),
 };
 
 storiesOf('Report')
