@@ -1,11 +1,17 @@
 import { connect } from 'react-redux';
 import ReachComparisonChart from './components/ReachComparisonChart';
 
+function mapStateToProps (state) {
+  return {
+    profilesMetricData: state.reachComparison.profilesMetricData,
+    profileTotals: state.reachComparison.profileTotals,
+    loading: state.reachComparison.loading,
+  };
+}
+
 // default export = container
 export default connect(
-  state => ({
-    // add state here
-  }),
+  mapStateToProps,
 )(ReachComparisonChart);
 
 // export reducer, actions and action types
