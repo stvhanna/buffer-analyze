@@ -30,7 +30,7 @@ const profileTotals = [
 
 storiesOf('ReachComparisonChart')
   .addDecorator(checkA11y)
-  .add('should render the audience comparison chart for a single profile', () => (
+  .add('should render the reach comparison chart for a single profile', () => (
     <div
       style={{
         width: '750px',
@@ -42,7 +42,7 @@ storiesOf('ReachComparisonChart')
       />
     </div>
   ))
-  .add('should render the audience comparison chart for a multiple profiles', () => (
+  .add('should render the reach comparison chart for a multiple profiles', () => (
     <div
       style={{
         width: '750px',
