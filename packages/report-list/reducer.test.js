@@ -48,4 +48,20 @@ describe('reducer', () => {
     });
     expect(state.reports).toHaveLength(0);
   });
+
+  it('prepends the newly created report on create_report_FETCH_SUCCESS', () => {
+    const state = reducer(undefined, {
+      type: `list_reports_${asyncDataFetchActions.FETCH_SUCCESS}`,
+      result: [{
+        name: 'a report',
+      }],
+    });
+    const stateWithNewReport = reducer(state, {
+      type: `create_report_${asyncDataFetchActions.FETCH_SUCCESS}`,
+      result: {
+        name: 'a new report',
+      },
+    });
+    expect(stateWithNewReport.reports[0].name).toEqual('a new report');
+  });
 });
