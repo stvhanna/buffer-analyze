@@ -3,7 +3,7 @@
 exports[`Snapshots Report can display buttons for viewing and removing the report 1`] = `
 <span>
   <span
-    className="sc-htpNat ehDjhI"
+    className="sc-ifAKCX fUXxUr"
   >
     <span
       style={
@@ -16,13 +16,13 @@ exports[`Snapshots Report can display buttons for viewing and removing the repor
       }
     >
       <span
-        className="sc-EHOje cmrrca"
+        className="sc-htpNat byAsPi"
       >
         Weekly Sync Report
       </span>
     </span>
     <span
-      className="sc-bxivhb hRMay"
+      className="sc-EHOje jKgWDh"
     >
       <button
         className="sc-bdVaJa eTEyQW"
@@ -51,7 +51,7 @@ exports[`Snapshots Report can display buttons for viewing and removing the repor
         }
       />
       <button
-        className="sc-ifAKCX khueld sc-bdVaJa eTEyQW"
+        className="sc-bZQynM iqGHUr sc-bdVaJa eTEyQW"
         onClick={[Function]}
       >
         <svg
@@ -91,42 +91,72 @@ exports[`Snapshots Report renders the report 1`] = `
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
-    <span
-      className="sc-htpNat ehDjhI"
+    <button
+      aria-label={null}
+      disabled={undefined}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      style={
+        Object {
+          "background": "none",
+          "backgroundColor": "unset",
+          "border": "none",
+          "borderRadius": "unset",
+          "color": "unset",
+          "cursor": "pointer",
+          "display": "unset",
+          "fontFamily": "unset",
+          "fontSize": "unset",
+          "fontWeight": "unset",
+          "lineHeight": "unset",
+          "margin": "unset",
+          "outline": "none",
+          "padding": 0,
+          "transition": "unset",
+          "width": "100%",
+        }
+      }
     >
       <span
-        style={
-          Object {
-            "color": "#59626a",
-            "fontFamily": "\\"Roboto\\", sans-serif",
-            "fontSize": "1rem",
-            "fontWeight": 700,
-          }
-        }
+        className="sc-ifAKCX fUXxUr"
       >
         <span
-          className="sc-EHOje cmrrca"
-        >
-          Weekly Sync Report
-        </span>
-      </span>
-      <span
-        style={
-          Object {
-            "color": "#59626a",
-            "fontFamily": "\\"Roboto\\", sans-serif",
-            "fontSize": "1rem",
-            "fontWeight": 400,
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 700,
+            }
           }
-        }
-      >
-        <span
-          className="sc-bZQynM eUosDx"
         >
-          October 11, 2017
+          <span
+            className="sc-htpNat byAsPi"
+          >
+            Weekly Sync Report
+          </span>
+        </span>
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          <span
+            className="sc-bxivhb hlPYmz"
+          >
+            October 11, 2017
+          </span>
         </span>
       </span>
-    </span>
+    </button>
   </li>
 </span>
 `;
@@ -159,7 +189,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
       onMouseLeave={[Function]}
     >
       <span
-        className="sc-htpNat ehDjhI"
+        className="sc-ifAKCX fUXxUr"
       >
         <span
           style={
@@ -172,7 +202,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
           }
         >
           <span
-            className="sc-EHOje cmrrca"
+            className="sc-htpNat byAsPi"
           >
             Weekly Sync Report
           </span>
@@ -188,7 +218,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
           }
         >
           <span
-            className="sc-bZQynM eUosDx"
+            className="sc-bxivhb hlPYmz"
           >
             November 8, 2017
           </span>
@@ -201,7 +231,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
       onMouseLeave={[Function]}
     >
       <span
-        className="sc-htpNat ehDjhI"
+        className="sc-ifAKCX fUXxUr"
       >
         <span
           style={
@@ -214,7 +244,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
           }
         >
           <span
-            className="sc-EHOje cmrrca"
+            className="sc-htpNat byAsPi"
           >
             Client Social Media Campaign
           </span>
@@ -230,7 +260,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
           }
         >
           <span
-            className="sc-bZQynM eUosDx"
+            className="sc-bxivhb hlPYmz"
           >
             October 11, 2017
           </span>

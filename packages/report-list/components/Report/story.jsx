@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
 import { action } from '@storybook/addon-actions';
 import Report from './index';
-import StatelessReport from './StatelessReport';
+import RemovableReport from './RemovableReport';
 
 
 const report = {
@@ -21,11 +21,11 @@ storiesOf('Report')
     />
   ))
   .add('can display buttons for viewing and removing the report', () => (
-    <StatelessReport
+    <RemovableReport
       {...report}
-      showButtons
       selectReport={action('select report')}
       removeReport={action('remove report')}
+      showButtons
     />
   ));
 

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import StatelessReport from './StatelessReport';
+import RemovableReport from './RemovableReport';
+import SelectableReport from './SelectableReport';
 
 const ReportListItem = styled.li`
   display: flex;
@@ -45,13 +46,14 @@ class Report extends Component {
   }
 
   render() {
-    const showButtons = this.state.hovered && this.props.removeReport;
     return (
       <ReportListItem
         onMouseEnter={this.addHover}
         onMouseLeave={this.removeHover}
       >
-        <StatelessReport {...this.props} showButtons={showButtons} />
+        { !this.props.removeReport && <SelectableReport {...this.props} /> }
+        { this.props.removeReport &&
+          <RemovableReport showButtons={this.state.hovered} {...this.props} /> }
       </ReportListItem>
     );
   }
