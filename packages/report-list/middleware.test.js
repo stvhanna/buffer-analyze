@@ -1,5 +1,6 @@
 import { actions, actionTypes } from '@bufferapp/async-data-fetch';
 import { LOCATION_CHANGE } from 'react-router-redux';
+import { actionTypes as reportListActionTypes } from './reducer';
 import middleware from './middleware';
 
 describe('middleware', () => {
@@ -72,6 +73,22 @@ describe('middleware', () => {
       name: 'list_reports',
       args: {
         userId: 'user1234',
+      },
+    }));
+    expect(next).toHaveBeenCalledWith(action);
+  });
+
+  it('triggers a remove_report RPC on REMOVE_REPORT', () => {
+    const id = 'report-123';
+    const action = {
+      type: reportListActionTypes.REMOVE_REPORT,
+      id,
+    };
+    middleware(store)(next)(action);
+    expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
+      name: 'remove_report',
+      args: {
+        id,
       },
     }));
     expect(next).toHaveBeenCalledWith(action);

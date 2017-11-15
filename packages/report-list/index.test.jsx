@@ -1,8 +1,10 @@
 import React from 'react';
-import { mount, configure } from 'enzyme';
+import { mount, configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
+import { push } from 'react-router-redux';
 import { Provider } from 'react-redux';
-import ReportList, {
+import configureMockStore from 'redux-mock-store';
+import ReportListContainer, {
   reducer,
   actions,
   actionTypes,
@@ -19,16 +21,17 @@ const storeFake = state => ({
 });
 
 describe('ReportList', () => {
+  const state = {
+    reportList: {
+      reports: [],
+      loading: true,
+    },
+  };
   it('should render', () => {
-    const store = storeFake({
-      reportList: {
-        reports: [],
-        loading: true,
-      },
-    });
+    const store = storeFake(state);
     const wrapper = mount(
       <Provider store={store}>
-        <ReportList />
+        <ReportListContainer />
       </Provider>,
     );
     expect(wrapper.find(ReportListComponent).length)
@@ -53,5 +56,27 @@ describe('ReportList', () => {
   it('should export middleware', () => {
     expect(middleware)
       .toBeDefined();
+  });
+
+  it('select report should dispatch a push navigation event', () => {
+    const mockStore = configureMockStore();
+    const store = mockStore(state);
+
+    const component = shallow(<ReportListContainer
+      store={store}
+    />);
+
+    expect(component.props().selectReport('id')).toEqual(push('/reports/id'));
+  });
+
+  it('remove report should dispatch removeReport', () => {
+    const mockStore = configureMockStore();
+    const store = mockStore(state);
+
+    const component = shallow(<ReportListContainer
+      store={store}
+    />);
+
+    expect(component.props().removeReport('id')).toEqual(actions.removeReport('id'));
   });
 });

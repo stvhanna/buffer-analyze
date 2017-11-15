@@ -79,7 +79,7 @@ function formatData(
   contextualResponse,
   profileService,
 ) {
-  const daily = formatDaily(
+  const data = formatDaily(
     contextualResponse.daily,
     profileService,
   );
@@ -92,7 +92,7 @@ function formatData(
   );
 
   return {
-    daily,
+    data,
     metrics,
     presets,
   };
@@ -115,7 +115,7 @@ module.exports = method(
         profileService,
       ))
       .catch(() => ({
-        daily: [],
+        data: [],
         metrics: [],
         presets: [],
       }));

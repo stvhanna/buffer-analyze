@@ -110,4 +110,31 @@ describe('rpc/get_report', () => {
       startDate,
     });
   });
+
+  it('assigns chart state to the chart response', async () => {
+    const charts = [{
+      chart_id: 'summary-table',
+      profile_id: '12351wa',
+      state: {
+        service: 'facebook',
+      },
+    }];
+
+    const endDate = moment().subtract(1, 'days').unix();
+    const startDate = moment().subtract(7, 'days').unix();
+    const metricsEmbeddedInObject = {
+      metrics: [1, 2, 3, 4],
+      posts: ['a post', 'another post'],
+    };
+    summary.fn = jest.fn();
+    summary.fn.mockReturnValueOnce(Promise.resolve(metricsEmbeddedInObject));
+
+    const response = await getReport.fn({ startDate, endDate, charts }, { session });
+
+    expect(response[0]).toEqual({
+      ...charts[0],
+      ...charts[0].state,
+      ...metricsEmbeddedInObject,
+    });
+  });
 });

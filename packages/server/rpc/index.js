@@ -17,6 +17,7 @@ const getReport = require('./getReport');
 const contextual = require('./contextual');
 const addToReport = require('./addToReport');
 const audienceComparison = require('./audienceComparison');
+const removeReport = require('./removeReport');
 const saveReportChanges = require('./saveReportChanges');
 
 module.exports = checkToken(rpc(
@@ -37,5 +38,6 @@ module.exports = checkToken(rpc(
   contextual,
   addToReport,
   audienceComparison,
+  removeReport,
   saveReportChanges,
 ));
