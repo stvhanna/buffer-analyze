@@ -25,7 +25,7 @@ describe('rpc/create_report', () => {
     const report = {
       _id: '1234',
       name,
-      updated_at: 1509836400000,
+      updated_at: 1509840000000,
       charts: [{
         profile_id: profileId,
         chart_id: chartId,
@@ -34,7 +34,7 @@ describe('rpc/create_report', () => {
     rp.mockReturnValueOnce(Promise.resolve({
       created: {
         _id: report._id,
-        updated_at: '2017/11/05',
+        updated_at: '2017/11/05 UTC',
       },
     }));
 
