@@ -1,0 +1,458 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshots AddReport opened 1`] = `
+<span>
+  <div>
+    <span
+      className="sc-jTzLTM kAAZaV"
+    />
+    <span>
+      <button
+        className="sc-bdVaJa eTEyQW"
+        onClick={[Function]}
+      >
+        <span
+          style={
+            Object {
+              "color": "#192534",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
+              "fontWeight": 500,
+            }
+          }
+        >
+          Add to Report
+        </span>
+      </button>
+    </span>
+  </div>
+</span>
+`;
+
+exports[`Snapshots AddReport unopened 1`] = `
+<span>
+  <div>
+    <span
+      className="sc-jTzLTM kAAZaV"
+    />
+    <span>
+      <button
+        className="sc-bdVaJa eTEyQW"
+        onClick={[Function]}
+      >
+        <span
+          style={
+            Object {
+              "color": "#192534",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
+              "fontWeight": 500,
+            }
+          }
+        >
+          Add to Report
+        </span>
+      </button>
+    </span>
+  </div>
+</span>
+`;
+
+exports[`Snapshots Modal open 1`] = `
+<span>
+  <div>
+    <div
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "rgba(50, 59, 67, 0.8)",
+          "bottom": 0,
+          "left": 0,
+          "opacity": 1,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "zIndex": 2000,
+        }
+      }
+    />
+    <section
+      className="sc-bwzfXH hsxteo"
+    >
+      <section
+        className="sc-dnqmqq inShUk"
+      >
+        <span
+          style={
+            Object {
+              "color": "#192534",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 500,
+            }
+          }
+        >
+          Add to a new report
+        </span>
+        <section
+          className="sc-gZMcBi jTQoVD"
+        >
+          <input
+            className="sc-gqjmRU jqVmt"
+            placeholder="Please enter title here"
+            type="text"
+          />
+          <button
+            className="sc-bdVaJa eTEyQW"
+            onClick={[Function]}
+          >
+            <span
+              style={
+                Object {
+                  "color": "#192534",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "0.75rem",
+                  "fontWeight": 500,
+                }
+              }
+            >
+              Create Report
+            </span>
+          </button>
+        </section>
+        <div>
+          <span
+            style={
+              Object {
+                "color": "#192534",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 500,
+              }
+            }
+          >
+            Or, add to an existing report
+          </span>
+        </div>
+        <section
+          className="sc-iwsKbI gMvqlC"
+        >
+          <ol
+            className="sc-htoDjs cysWFd"
+          >
+            <li
+              className="sc-gzVnrw fCsohM"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              <span
+                className="sc-htpNat gareNJ"
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
+                    }
+                  }
+                >
+                  <span
+                    className="sc-EHOje cmrrca"
+                  >
+                    Weekly Sync Report
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <span
+                    className="sc-bZQynM eUosDx"
+                  >
+                    November 7, 2017
+                  </span>
+                </span>
+              </span>
+            </li>
+            <li
+              className="sc-gzVnrw fCsohM"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              <span
+                className="sc-htpNat gareNJ"
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
+                    }
+                  }
+                >
+                  <span
+                    className="sc-EHOje cmrrca"
+                  >
+                    client social media campaign
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <span
+                    className="sc-bZQynM eUosDx"
+                  >
+                    October 10, 2017
+                  </span>
+                </span>
+              </span>
+            </li>
+            <li
+              className="sc-gzVnrw fCsohM"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              <span
+                className="sc-htpNat gareNJ"
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
+                    }
+                  }
+                >
+                  <span
+                    className="sc-EHOje cmrrca"
+                  >
+                    client social media campaign
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <span
+                    className="sc-bZQynM eUosDx"
+                  >
+                    October 10, 2017
+                  </span>
+                </span>
+              </span>
+            </li>
+            <li
+              className="sc-gzVnrw fCsohM"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              <span
+                className="sc-htpNat gareNJ"
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
+                    }
+                  }
+                >
+                  <span
+                    className="sc-EHOje cmrrca"
+                  >
+                    client social media campaign
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <span
+                    className="sc-bZQynM eUosDx"
+                  >
+                    October 10, 2017
+                  </span>
+                </span>
+              </span>
+            </li>
+            <li
+              className="sc-gzVnrw fCsohM"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              <span
+                className="sc-htpNat gareNJ"
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
+                    }
+                  }
+                >
+                  <span
+                    className="sc-EHOje cmrrca"
+                  >
+                    client social media campaign
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <span
+                    className="sc-bZQynM eUosDx"
+                  >
+                    October 10, 2017
+                  </span>
+                </span>
+              </span>
+            </li>
+            <li
+              className="sc-gzVnrw fCsohM"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              <span
+                className="sc-htpNat gareNJ"
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
+                    }
+                  }
+                >
+                  <span
+                    className="sc-EHOje cmrrca"
+                  >
+                    client social media campaign
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <span
+                    className="sc-bZQynM eUosDx"
+                  >
+                    October 10, 2017
+                  </span>
+                </span>
+              </span>
+            </li>
+            <li
+              className="sc-gzVnrw fCsohM"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              <span
+                className="sc-htpNat gareNJ"
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
+                    }
+                  }
+                >
+                  <span
+                    className="sc-EHOje cmrrca"
+                  >
+                    client social media campaign
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <span
+                    className="sc-bZQynM eUosDx"
+                  >
+                    October 10, 2017
+                  </span>
+                </span>
+              </span>
+            </li>
+          </ol>
+        </section>
+      </section>
+      <hr
+        style={
+          Object {
+            "background": "#e6ebef",
+            "border": "none",
+            "boxSizing": "border-box",
+            "height": "0.063rem",
+            "marginBottom": "0.5rem",
+            "marginTop": "0",
+            "width": "100%",
+          }
+        }
+      />
+    </section>
+  </div>
+</span>
+`;
+
+exports[`Snapshots Modal unopened 1`] = `<span />`;
