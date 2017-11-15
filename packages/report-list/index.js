@@ -9,9 +9,7 @@ export default connect(
     ...state.reportList,
   }),
   dispatch => ({
-    selectReport: (id) => {
-      dispatch(push(`/reports/${id}`));
-    },
+    selectReport: (id) => dispatch(push(`/reports/${id}`)),
     removeReport: id => dispatch(actions.removeReport(id)),
   }),
 )(ReportList);
