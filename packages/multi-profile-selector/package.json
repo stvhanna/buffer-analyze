@@ -1,15 +1,14 @@
 {
   "name": "@bufferapp/multi-profile-selector",
-  "version": "0.0.1",
+  "version": "0.15.0",
   "description": "The multi-profile selector for Bufer Analyze.",
   "main": "index.js",
   "scripts": {
     "start": "start-storybook -p 9001",
     "lint": "eslint . --ignore-pattern coverage node_modules",
     "test": "yarn run lint && sh ../../package_test.sh",
-    "test-update": "jest -u --config=../../.jestrc.json",
-    "test-watch": "jest --watch",
-    "test-update": "jest -u"
+    "test-update": "jest -u",
+    "test-watch": "jest --watch"
   },
   "jest": {
     "moduleNameMapper": {
@@ -22,7 +21,7 @@
   },
   "author": "Tigran Hakobyan <tik.hakobyan@gmail.com>",
   "dependencies": {
-    "@bufferapp/analyze-shared-components": "^0.12.0",
+    "@bufferapp/analyze-shared-components": "^0.15.0",
     "@bufferapp/components": "2.1.1",
     "react-simple-dropdown": "3.0.0"
   },
