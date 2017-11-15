@@ -113,30 +113,4 @@ describe('CompareChartContainer', () => {
       type: `compare_${actionTypes.TOGGLE_PREVIOUS_PERIOD}`,
     });
   });
-
-  it('should use daily if daily mode = 0', () => {
-    const mockStore = configureMockStore();
-    state.compare.dailyMode = 0;
-    state.compare.metrics.daily = dailyData;
-    state.compare.metrics.totalPeriodDaily = totalPeriodDaily;
-    const store = mockStore(state);
-    const component = shallow(<CompareChartContainer
-      store={store}
-    />);
-
-    expect(component.props().dailyData).toBe(dailyData);
-  });
-
-  it('should use totalPeriodDaily instead od daily if daily mode = 1', () => {
-    const mockStore = configureMockStore();
-    state.compare.dailyMode = 1;
-    state.compare.metrics.daily = dailyData;
-    state.compare.metrics.totalPeriodDaily = totalPeriodDaily;
-    const store = mockStore(state);
-    const component = shallow(<CompareChartContainer
-      store={store}
-    />);
-
-    expect(component.props().dailyData).toBe(totalPeriodDaily);
-  });
 });

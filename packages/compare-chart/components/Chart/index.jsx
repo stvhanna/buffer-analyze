@@ -100,25 +100,50 @@ function prepareChartOptions(dailyMetric, timezone, visualizePreviousPeriod, pro
   return config;
 }
 
-const Chart = ({ dailyData, timezone, visualizePreviousPeriod, profileService }) => {
-  const charOptions = prepareChartOptions(
-    dailyData,
-    timezone,
-    visualizePreviousPeriod,
-    profileService,
-  );
-  ReactHighcharts.Highcharts.setOptions(
-    {
-      global: {
-        getTimezoneOffset: timestamp => -moment.tz(timestamp, timezone).utcOffset(),
+function filterDailyDataMetrics(dailyData, metricLabel) {
+  return dailyData.map(day => ({
+    day: day.day,
+    previousPeriodDay: day.previousPeriodDay,
+    metric: day.metrics.filter(metric => metric.label === metricLabel).shift(),
+  }));
+}
+
+
+const Chart =
+  ({ daily, totalPeriodDaily, selectedMetricLabel,
+    dailyMode, timezone, visualizePreviousPeriod, profileService }) => {
+    const dailyData = dailyMode === 1 ? totalPeriodDaily : daily;
+    const filteredDailyData = filterDailyDataMetrics(dailyData, selectedMetricLabel);
+    const charOptions = prepareChartOptions(
+      filteredDailyData,
+      timezone,
+      visualizePreviousPeriod,
+      profileService,
+    );
+    ReactHighcharts.Highcharts.setOptions(
+      {
+        global: {
+          getTimezoneOffset: timestamp => -moment.tz(timestamp, timezone).utcOffset(),
+        },
       },
-    },
-  );
-  return (<ReactHighcharts config={charOptions} />);
-};
+    );
+    return (<ReactHighcharts config={charOptions} />);
+  };
 
 Chart.propTypes = {
-  dailyData: PropTypes.arrayOf(PropTypes.shape({
+  totalPeriodDaily: PropTypes.arrayOf(PropTypes.shape({
+    day: PropTypes.string.isRequired,
+    previousPeriodDay: PropTypes.string.isRequired,
+    metric: PropTypes.shape({
+      color: PropTypes.string.isRequired,
+      diff: PropTypes.number.isRequired,
+      label: PropTypes.string.isRequired,
+      value: PropTypes.number.isRequired,
+      previousValue: PropTypes.number.isRequired,
+      postsCount: PropTypes.number.isRequired,
+    }),
+  })).isRequired,
+  daily: PropTypes.arrayOf(PropTypes.shape({
     day: PropTypes.string.isRequired,
     previousPeriodDay: PropTypes.string.isRequired,
     metric: PropTypes.shape({
@@ -133,10 +158,13 @@ Chart.propTypes = {
   profileService: PropTypes.string.isRequired,
   timezone: PropTypes.string.isRequired,
   visualizePreviousPeriod: PropTypes.bool,
+  selectedMetricLabel: PropTypes.string,
+  dailyMode: PropTypes.number.isRequired,
 };
 
 Chart.defaultProps = {
   visualizePreviousPeriod: false,
+  selectedMetricLabel: '',
 };
 
 export default Chart;
