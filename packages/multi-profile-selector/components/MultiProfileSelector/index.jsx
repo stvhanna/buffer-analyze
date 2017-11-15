@@ -141,7 +141,6 @@ const MultiProfileSelector = ({
         </DropdownContent>
       </Dropdown>);
   }
-
   return null;
 };
 

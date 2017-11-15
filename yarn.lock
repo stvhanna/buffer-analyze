@@ -2,6 +2,15 @@
 # yarn lockfile v1
 
 
+"@bufferapp/analyze-shared-components@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@bufferapp/analyze-shared-components/-/analyze-shared-components-0.9.0.tgz#7c08c4cf568fe25264052b69f45a2f4a066fc212"
+  dependencies:
+    "@bufferapp/components" "2.1.1"
+    moment "^2.18.1"
+    react-highcharts "^12.0.0"
+    styled-components "^2.2.1"
+
 "@bufferapp/app-sidebar@0.7.4":
   version "0.7.4"
   resolved "https://registry.yarnpkg.com/@bufferapp/app-sidebar/-/app-sidebar-0.7.4.tgz#a907618701408627f73b30abe74ddd5121194933"
