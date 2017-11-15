@@ -37,6 +37,12 @@ const instagramProfiles = [
     id: '4',
     service: 'instagram',
   },
+  {
+    avatarUrl,
+    username: 'tiggreen',
+    id: '6',
+    service: 'instagram',
+  },
 ];
 
 export default [...twitterProfiles, ...facebookProfiles, ...instagramProfiles];

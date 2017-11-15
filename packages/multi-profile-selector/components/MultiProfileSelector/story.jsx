@@ -62,7 +62,7 @@ storiesOf('MultiProfileSelector')
       />
     </div>
   ))
-  .add('Compare Profiles Button should be disabled if 5 profiles are selected', () => (
+  .add('Compare Profiles Button should be disabled if more than 5 profiles are selected', () => (
     <div style={{ display: 'flex' }}>
       <MultiProfileSelector
         profiles={mockProfiles}
@@ -78,7 +78,7 @@ storiesOf('MultiProfileSelector')
   ))
   .add('should scroll profiles if > 7', () => {
     const profiles = mockProfiles.slice(0);
-    for (let id = 6; id < 16; id += 1) {
+    for (let id = 7; id < 16; id += 1) {
       profiles.push({
         avatarUrl: mockProfiles[0].avatarUrl,
         username: `Buffer ${id}`,

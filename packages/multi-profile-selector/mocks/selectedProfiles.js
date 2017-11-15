@@ -36,4 +36,11 @@ export default [
     service: 'twitter',
     timezone: 'America/Los_Angeles',
   },
+  {
+    avatarUrl,
+    username: 'tiggreen',
+    id: '6',
+    service: 'instagram',
+    timezone: 'America/Los_Angeles',
+  },
 ];

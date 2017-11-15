@@ -128,7 +128,7 @@ const MultiProfileSelector = ({
             }}
           >
             {
-              selectedProfiles.length < 5 ?
+              selectedProfiles.length <= 5 ?
                 <Button fillContainer onClick={() => compareProfiles(selectedProfiles)} >
                   Compare Profiles
                 </Button>
