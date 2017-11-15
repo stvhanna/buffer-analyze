@@ -1,15 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import {
-  Text,
-  Button,
-} from '@bufferapp/components';
-
-import moment from 'moment';
 import styled from 'styled-components';
+import StatelessReport from './StatelessReport';
 
 const ReportListItem = styled.li`
-  display: block;
+  display: flex;
   background: #FFFFFF;
   border: 1px solid #D5E3EF;
   box-sizing: border-box;
@@ -18,41 +13,48 @@ const ReportListItem = styled.li`
   margin-bottom: .5rem;
 `;
 
-const ReportText = styled.span`
-  display: flex;
-  padding: ${props => (props.small ? '.75rem 1rem' : '1.5rem 1.25rem')};
-  justify-content: space-between;
-  align-items: center;
-`;
+class Report extends Component {
+  static propTypes = {
+    removeReport: PropTypes.func,
+  };
 
-const Name = styled.span`
-  color: #343E47;
-`;
+  static defaultProps = {
+    removeReport: null,
+  };
 
-const Date = styled.span`
-  color: #c1c1c1;
-`;
 
-const Report = ({ _id, updated_at, name, selectReport, small }) =>
-  <ReportListItem>
-    <Button noStyle fillContainer onClick={() => selectReport(_id)}>
-      <ReportText small={small}>
-        <Text size={small ? 'small' : null} weight="bold"><Name>{name}</Name></Text>
-        <Text size={small ? 'small' : null}><Date>{moment(updated_at, 'x').format('MMMM D, YYYY')}</Date></Text>
-      </ReportText>
-    </Button>
-  </ReportListItem>;
+  constructor(props) {
+    super(props);
+    this.addHover = this.addHover.bind(this);
+    this.removeHover = this.removeHover.bind(this);
+    this.state = {
+      hovered: false,
+    };
+  }
 
-Report.defaultProps = {
-  small: false,
-};
+  addHover() {
+    this.setState({
+      hovered: true,
+    });
+  }
 
-Report.propTypes = {
-  _id: PropTypes.string.isRequired,
-  updated_at: PropTypes.number.isRequired,
-  name: PropTypes.string.isRequired,
-  selectReport: PropTypes.func.isRequired,
-  small: PropTypes.bool,
-};
+  removeHover() {
+    this.setState({
+      hovered: false,
+    });
+  }
+
+  render() {
+    const showButtons = this.state.hovered && this.props.removeReport;
+    return (
+      <ReportListItem
+        onMouseEnter={this.addHover}
+        onMouseLeave={this.removeHover}
+      >
+        <StatelessReport {...this.props} showButtons={showButtons} />
+      </ReportListItem>
+    );
+  }
+}
 
 export default Report;

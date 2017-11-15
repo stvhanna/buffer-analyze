@@ -24,5 +24,6 @@ storiesOf('ReportList')
     <ReportList
       reports={mockReports}
       selectReport={action('select report')}
+      removeReport={action('remove report')}
     />
   ));

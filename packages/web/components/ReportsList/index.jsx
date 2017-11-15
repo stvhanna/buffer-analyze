@@ -18,6 +18,7 @@ const Container = styled.div`
   overflow-y: scroll;
   display: flex;
   justify-content: center;
+  overflow-y: scroll;
 `;
 
 const Content = styled.div`
