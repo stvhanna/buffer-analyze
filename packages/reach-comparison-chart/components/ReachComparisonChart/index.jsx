@@ -15,7 +15,7 @@ import {
 
 import Title from '../Title';
 
-const AudienceComparisonChart = ({
+const ReachComparisonChart = ({
   profilesMetricData,
   profileTotals,
   loading,
@@ -24,7 +24,7 @@ const AudienceComparisonChart = ({
   let footer = null;
 
   if (loading) {
-    content = <Loading active text="Audience chart loading..." />;
+    content = <Loading active text="Reach chart loading..." />;
   } else if (profilesMetricData.length === 0) {
     content = <NoData />;
   } else {
@@ -62,12 +62,12 @@ const AudienceComparisonChart = ({
   );
 };
 
-AudienceComparisonChart.defaultProps = {
+ReachComparisonChart.defaultProps = {
   loading: false,
   selectedProfiles: [],
 };
 
-AudienceComparisonChart.propTypes = {
+ReachComparisonChart.propTypes = {
   loading: PropTypes.bool,
   // props used for generating chart
   profilesMetricData: PropTypes.arrayOf(PropTypes.shape({
@@ -96,4 +96,4 @@ AudienceComparisonChart.propTypes = {
   })).isRequired,
 };
 
-export default AudienceComparisonChart;
+export default ReachComparisonChart;

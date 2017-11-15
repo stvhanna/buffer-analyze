@@ -1,7 +1,10 @@
 import React from 'react';
 import reactDOM from 'react-dom/server';
 
-import ChartTooltip from '../ChartTooltip';
+
+import {
+  ComparisonChartTooltip as ChartTooltip,
+} from '../ComparisonChartTooltip';
 
 export const highChartsConfigXAxis = {
   gridLineColor: '#F3F5F7',
