@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+import AddReport from '@bufferapp/add-report';
+
 import {
   ChartStateNoData as NoData,
   ChartStateLoading as Loading,
@@ -11,7 +13,6 @@ import {
 
 import Title from '../Title';
 import Header from '../Header';
-import Footer from '../Footer';
 import Chart from '../Chart';
 
 const ContextualCompare = ({
@@ -23,16 +24,22 @@ const ContextualCompare = ({
   <ChartCard>
     <ChartHeader>
       <Title dailyData={data} />
+      <AddReport
+        chart="contextual-compare"
+        state={{
+          mode: props.mode,
+          selectedMetrics: props.selectedMetrics,
+          selectedPreset: props.selectedPreset,
+          profileService: props.profileService,
+        }}
+      />
     </ChartHeader>
     <div className={className}>
       {loading && <Loading active noBorder />}
       {data.length === 0 && !loading && <NoData />}
       {data.length >= 1 && !loading && <div>
         <Header {...props} />
-        <div id="js-dom-to-png-contextual">
-          <Chart {...props} data={data} />
-          <Footer {...props} />
-        </div>
+        <Chart {...props} data={data} />
       </div>}
     </div>
   </ChartCard>
@@ -44,6 +51,7 @@ ContextualCompare.defaultProps = {
 
 ContextualCompare.propTypes = {
   className: PropTypes.string.isRequired,
+  profileService: PropTypes.string.isRequired,
   data: PropTypes.arrayOf(PropTypes.shape({
     day: PropTypes.string.isRequired,
     metrics: PropTypes.arrayOf(PropTypes.shape({
@@ -52,6 +60,11 @@ ContextualCompare.propTypes = {
     })),
   })).isRequired,
   loading: PropTypes.bool,
+  selectedPreset: PropTypes.number.isRequired,
+  selectedMetrics: PropTypes.arrayOf(PropTypes.shape({
+    label: PropTypes.string.isRequired,
+  })).isRequired,
+  mode: PropTypes.number.isRequired,
 };
 
 const ContextualCompareStyled = styled(ContextualCompare)`

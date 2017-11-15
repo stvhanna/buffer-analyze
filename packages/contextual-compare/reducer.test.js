@@ -133,7 +133,7 @@ describe('reducer', () => {
 
   it('should fetch the metrics and select a pair and a preset', () => {
     const result = {
-      daily: mockDailyData,
+      data: mockDailyData,
       metrics: mockMetrics,
       presets: mockPresets,
     };
@@ -157,7 +157,7 @@ describe('reducer', () => {
 
   it('should return an empty selected metrics array if fetch result metrics are missing', () => {
     const result = {
-      daily: [],
+      data: [],
       metrics: [],
       presets: [],
     };
@@ -167,7 +167,7 @@ describe('reducer', () => {
       result,
     }))
       .toEqual(Object.assign({}, {
-        data: result.daily,
+        data: result.data,
         loading: false,
         metrics: [],
         presets: [],
