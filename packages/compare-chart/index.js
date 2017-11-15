@@ -8,11 +8,9 @@ function getSelectedProfileTimezone({ profiles, selectedProfileId }) {
 }
 
 function mapStateToProps (state) {
-  const visualizeTotalPeriodDaily = state.compare.dailyMode === 1;
   return {
-    dailyData: visualizeTotalPeriodDaily ?
-      state.compare.metrics.totalPeriodDaily :
-      state.compare.metrics.daily,
+    daily: state.compare.metrics.daily,
+    totalPeriodDaily: state.compare.metrics.totalPeriodDaily,
     dailyMode: state.compare.dailyMode,
     isDropdownOpen: state.compare.isDropdownOpen,
     loading: state.compare.loading,
@@ -37,6 +35,9 @@ export default connect(
   mapDispatchToProps,
 )(CompareChart);
 
+
+export Title from './components/Title';
+export Chart from './components/Chart';
 // export reducer, actions and action types
 export reducer, { actions, actionTypes } from './reducer';
 export middleware from './middleware';

@@ -17,7 +17,7 @@ storiesOf('CompareChart')
     >
       <CompareChart
         profileService="facebook"
-        dailyData={mockDailyData}
+        totalPeriodDaily={mockDailyData}
         selectedMetricLabel="Click"
         totals={mockTotals}
         timezone="America/Los_Angeles"
@@ -38,7 +38,7 @@ storiesOf('CompareChart')
     >
       <CompareChart
         profileService="twitter"
-        dailyData={mockDailyData}
+        daily={mockDailyData}
         selectedMetricLabel="Click"
         totals={mockTotals}
         timezone="America/Los_Angeles"
@@ -59,7 +59,7 @@ storiesOf('CompareChart')
     >
       <CompareChart
         profileService="facebook"
-        dailyData={mockDailyData}
+        totalPeriodDaily={mockDailyData}
         selectedMetricLabel="Click"
         totals={mockTotals}
         timezone="America/Los_Angeles"
@@ -81,7 +81,7 @@ storiesOf('CompareChart')
     >
       <CompareChart
         profileService="facebook"
-        dailyData={[]}
+        totalPeriodDaily={[]}
         totals={[]}
         timezone="America/Los_Angeles"
         selectMetric={() => {}}
@@ -102,7 +102,7 @@ storiesOf('CompareChart')
     >
       <CompareChart
         profileService="facebook"
-        dailyData={[]}
+        totalPeriodDaily={[]}
         totals={[]}
         timezone="America/Los_Angeles"
         selectMetric={() => {}}
