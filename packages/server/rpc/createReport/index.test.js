@@ -22,11 +22,25 @@ describe('rpc/create_report', () => {
   });
 
   it('should send a POST request to /create_report with the provided parameters', async () => {
-    rp.mockReturnValueOnce(Promise.resolve('success'));
+    const report = {
+      _id: '1234',
+      name,
+      updated_at: 1509836400000,
+      charts: [{
+        profile_id: profileId,
+        chart_id: chartId,
+      }],
+    };
+    rp.mockReturnValueOnce(Promise.resolve({
+      created: {
+        _id: report._id,
+        updated_at: '2017/11/05',
+      },
+    }));
 
     const result = await createReport.fn({ profileId, chartId, name, userId });
 
-    expect(result).toBe('success');
+    expect(result).toEqual(report);
     expect(rp.mock.calls[0]).toEqual([{
       uri: `${process.env.ANALYZE_API_ADDR}/create_report`,
       method: 'POST',
