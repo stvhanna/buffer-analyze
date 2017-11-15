@@ -1,14 +1,14 @@
 export const response = {
   response: {
-    profileTotals: [
-      {
+    profile1234: {
+      profileTotals: {
         currentPeriodDiff: 20,
         currentPeriodTotal: 1000,
-        profileId: '12345',
+        profileId: 'profile1234',
+        service: 'facebook',
+        username: 'Buffer',
       },
-    ],
-    profilesMetricData: [
-      {
+      profilesMetricData: {
         dailyData: [
           {
             day: 1504137600000,
@@ -42,7 +42,7 @@ export const response = {
         service: 'facebook',
         timezone: 'America/New_York',
       },
-    ],
+    },
   },
 };
 
@@ -55,7 +55,8 @@ export const rpcFinalResponse = {
         color: '#ced7df',
         label: 'Fans',
       },
-      profileId: '12345',
+      profileId: 'profile1234',
+      username: 'Buffer',
     },
   ],
   profilesMetricData: [

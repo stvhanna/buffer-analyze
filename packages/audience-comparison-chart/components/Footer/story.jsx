@@ -8,6 +8,7 @@ const profileTotals = [
     currentPeriodTotal: 400,
     currentPeriodDiff: 20,
     profileId: '1234abcd',
+    username: 'Buffer',
     metric: {
       color: '#fda3f3',
       label: 'Fans',
@@ -17,19 +18,13 @@ const profileTotals = [
     currentPeriodTotal: 700,
     currentPeriodDiff: -10,
     profileId: '5678abcd',
+    username: 'Buffer',
     metric: {
       color: '#fda444',
       label: 'Followers',
     },
   },
 ];
-
-const selectedProfile = {
-  avatarUrl: 'https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/10403026_1055367724535674_7855796462569708170_n.png?oh=39ea3ae01610ba482316d4c87ca1c14c&oe=59B58B81',
-  service: 'facebook',
-  timezone: 'America/Los_Angeles',
-  username: 'Buffer',
-};
 
 storiesOf('Footer')
   .addDecorator(checkA11y)
@@ -41,7 +36,6 @@ storiesOf('Footer')
     >
       <Footer
         profileTotals={[profileTotals[0]]}
-        selectedProfile={selectedProfile}
       />
     </div>
   ))
@@ -53,7 +47,6 @@ storiesOf('Footer')
     >
       <Footer
         profileTotals={profileTotals}
-        selectedProfile={selectedProfile}
       />
     </div>
   ));

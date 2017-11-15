@@ -264,7 +264,7 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
         className="sc-EHOje cPjIPk"
       >
         <ul
-          className="sc-ifAKCX kfJnLQ"
+          className="sc-ifAKCX fRqoAI"
         >
           <li
             style={
@@ -498,7 +498,7 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
                           }
                         }
                       >
-                        Buffer
+                        buffer
                       </span>
                     </div>
                     <span
@@ -671,7 +671,7 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
         className="sc-EHOje cPjIPk"
       >
         <ul
-          className="sc-ifAKCX kfJnLQ"
+          className="sc-ifAKCX fRqoAI"
         >
           <li
             style={
@@ -955,7 +955,7 @@ exports[`Snapshots Footer should render the footer for a single profile 1`] = `
       className="sc-EHOje cPjIPk"
     >
       <ul
-        className="sc-ifAKCX kfJnLQ"
+        className="sc-ifAKCX fRqoAI"
       >
         <li
           style={
@@ -1157,7 +1157,7 @@ exports[`Snapshots Footer should render the footer for multiple profiles 1`] = `
       className="sc-EHOje cPjIPk"
     >
       <ul
-        className="sc-ifAKCX kfJnLQ"
+        className="sc-ifAKCX fRqoAI"
       >
         <li
           style={

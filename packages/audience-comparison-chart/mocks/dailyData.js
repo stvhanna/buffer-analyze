@@ -61,7 +61,7 @@ export default [
     currentPeriodTotal: 5000,
     currentPeriodDiff: 23,
     service: 'facebook',
-    timezone: 'America/Los_Angeles',
+    timezone: 'America/New_York',
   },
   {
     dailyData: [

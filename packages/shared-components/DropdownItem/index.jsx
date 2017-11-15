@@ -10,7 +10,7 @@ import {
 import { ProfileBadge } from '@bufferapp/analyze-shared-components';
 import {
   dropdownListItem,
-} from '../../style.less';
+} from './style.less';
 
 const DropdownItem = ({ profile, handleClick, selected }) => (
   <li className={dropdownListItem}>
