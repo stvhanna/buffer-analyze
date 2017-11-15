@@ -2,8 +2,13 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {
   Text,
-  Button,
 } from '@bufferapp/components';
+import CloseIcon from '@bufferapp/components/Icon/Icons/CloseIcon';
+
+import {
+  Button,
+  VerticalDivider,
+} from '@bufferapp/analyze-shared-components';
 
 import moment from 'moment';
 import styled from 'styled-components';
@@ -20,9 +25,27 @@ const ReportListItem = styled.li`
 
 const ReportText = styled.span`
   display: flex;
+  width: 100%;
   padding: ${props => (props.small ? '.75rem 1rem' : '1.5rem 1.25rem')};
   justify-content: space-between;
   align-items: center;
+  position: relative;
+`;
+
+const ButtonContainer = styled.span`
+  position: absolute;
+  right: 1rem;
+  display: flex;
+`;
+
+
+const DeleteButton = styled(Button)`
+  &:before {
+    width: 1px
+    height: 1px;
+    display: block;
+    content: "";
+  }
 `;
 
 const Name = styled.span`
@@ -85,13 +108,15 @@ class Report extends Component {
         onMouseEnter={this.addHover}
         onMouseLeave={this.removeHover}
       >
-        <Button noStyle fillContainer onClick={() => selectReport(_id)}>
-          <ReportText small={small}>
-            <Text size={small ? 'small' : null} weight="bold"><Name>{name}</Name></Text>
-            <Text size={small ? 'small' : null}><Date>{moment(updated_at, 'x').format('MMMM D, YYYY')}</Date></Text>
-          </ReportText>
-        </Button>
-        { canShowRemoveButton && <Button noStyle onClick={() => removeReport(_id)}>x</Button>}
+        <ReportText small={small}>
+          <Text size={small ? 'small' : null} weight="bold"><Name>{name}</Name></Text>
+          { !canShowRemoveButton && <Text size={small ? 'small' : null}><Date>{moment(updated_at, 'x').format('MMMM D, YYYY')}</Date></Text>}
+          { canShowRemoveButton && <ButtonContainer>
+            <Button onClick={() => selectReport(_id)}><Text>View report</Text></Button>
+            <VerticalDivider />
+            <DeleteButton noStyle onClick={() => removeReport(_id)}><CloseIcon color="torchRed"/></DeleteButton>
+          </ButtonContainer> }
+        </ReportText>
       </ReportListItem>
     );
   }

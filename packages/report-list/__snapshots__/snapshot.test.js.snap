@@ -3,76 +3,46 @@
 exports[`Snapshots Report renders the report 1`] = `
 <span>
   <li
-    className="sc-bdVaJa hzPqI"
+    className="sc-htpNat iDskHQ"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
-    <button
-      aria-label={null}
-      disabled={undefined}
-      onBlur={[Function]}
-      onClick={[Function]}
-      onFocus={[Function]}
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "background": "none",
-          "backgroundColor": "unset",
-          "border": "none",
-          "borderRadius": "unset",
-          "color": "unset",
-          "cursor": "pointer",
-          "display": "unset",
-          "fontFamily": "unset",
-          "fontSize": "unset",
-          "fontWeight": "unset",
-          "lineHeight": "unset",
-          "margin": "unset",
-          "outline": "none",
-          "padding": 0,
-          "transition": "unset",
-          "width": "100%",
-        }
-      }
+    <span
+      className="sc-bxivhb ejCdsA"
     >
       <span
-        className="sc-bwzfXH kYzbBn"
+        style={
+          Object {
+            "color": "#59626a",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontSize": "1rem",
+            "fontWeight": 700,
+          }
+        }
       >
         <span
-          style={
-            Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 700,
-            }
-          }
+          className="sc-bZQynM BOwjm"
         >
-          <span
-            className="sc-htpNat byAsPi"
-          >
-            Weekly Sync Report
-          </span>
-        </span>
-        <span
-          style={
-            Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
-            }
-          }
-        >
-          <span
-            className="sc-bxivhb hlPYmz"
-          >
-            October 11, 2017
-          </span>
+          Weekly Sync Report
         </span>
       </span>
-    </button>
+      <span
+        style={
+          Object {
+            "color": "#59626a",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontSize": "1rem",
+            "fontWeight": 400,
+          }
+        }
+      >
+        <span
+          className="sc-gzVnrw kmTeHH"
+        >
+          October 11, 2017
+        </span>
+      </span>
+    </span>
   </li>
 </span>
 `;
@@ -97,151 +67,91 @@ exports[`Snapshots ReportList loading state 1`] = `
 exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
 <span>
   <ol
-    className="sc-ifAKCX bAoxEZ"
+    className="sc-htoDjs cysWFd"
   >
     <li
-      className="sc-bdVaJa hzPqI"
+      className="sc-htpNat iDskHQ"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
-      <button
-        aria-label={null}
-        disabled={undefined}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        style={
-          Object {
-            "background": "none",
-            "backgroundColor": "unset",
-            "border": "none",
-            "borderRadius": "unset",
-            "color": "unset",
-            "cursor": "pointer",
-            "display": "unset",
-            "fontFamily": "unset",
-            "fontSize": "unset",
-            "fontWeight": "unset",
-            "lineHeight": "unset",
-            "margin": "unset",
-            "outline": "none",
-            "padding": 0,
-            "transition": "unset",
-            "width": "100%",
-          }
-        }
+      <span
+        className="sc-bxivhb ejCdsA"
       >
         <span
-          className="sc-bwzfXH kYzbBn"
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 700,
+            }
+          }
         >
           <span
-            style={
-              Object {
-                "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1rem",
-                "fontWeight": 700,
-              }
-            }
+            className="sc-bZQynM BOwjm"
           >
-            <span
-              className="sc-htpNat byAsPi"
-            >
-              Weekly Sync Report
-            </span>
-          </span>
-          <span
-            style={
-              Object {
-                "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1rem",
-                "fontWeight": 400,
-              }
-            }
-          >
-            <span
-              className="sc-bxivhb hlPYmz"
-            >
-              November 8, 2017
-            </span>
+            Weekly Sync Report
           </span>
         </span>
-      </button>
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          <span
+            className="sc-gzVnrw kmTeHH"
+          >
+            November 8, 2017
+          </span>
+        </span>
+      </span>
     </li>
     <li
-      className="sc-bdVaJa hzPqI"
+      className="sc-htpNat iDskHQ"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
-      <button
-        aria-label={null}
-        disabled={undefined}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        style={
-          Object {
-            "background": "none",
-            "backgroundColor": "unset",
-            "border": "none",
-            "borderRadius": "unset",
-            "color": "unset",
-            "cursor": "pointer",
-            "display": "unset",
-            "fontFamily": "unset",
-            "fontSize": "unset",
-            "fontWeight": "unset",
-            "lineHeight": "unset",
-            "margin": "unset",
-            "outline": "none",
-            "padding": 0,
-            "transition": "unset",
-            "width": "100%",
-          }
-        }
+      <span
+        className="sc-bxivhb ejCdsA"
       >
         <span
-          className="sc-bwzfXH kYzbBn"
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 700,
+            }
+          }
         >
           <span
-            style={
-              Object {
-                "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1rem",
-                "fontWeight": 700,
-              }
-            }
+            className="sc-bZQynM BOwjm"
           >
-            <span
-              className="sc-htpNat byAsPi"
-            >
-              Client Social Media Campaign
-            </span>
-          </span>
-          <span
-            style={
-              Object {
-                "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1rem",
-                "fontWeight": 400,
-              }
-            }
-          >
-            <span
-              className="sc-bxivhb hlPYmz"
-            >
-              October 11, 2017
-            </span>
+            Client Social Media Campaign
           </span>
         </span>
-      </button>
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          <span
+            className="sc-gzVnrw kmTeHH"
+          >
+            October 11, 2017
+          </span>
+        </span>
+      </span>
     </li>
   </ol>
 </span>

@@ -4,7 +4,7 @@ exports[`Snapshots AddReport opened 1`] = `
 <span>
   <div>
     <span
-      className="sc-gqjmRU hDRXCq"
+      className="sc-jTzLTM kAAZaV"
     />
     <span>
       <button
@@ -33,7 +33,7 @@ exports[`Snapshots AddReport unopened 1`] = `
 <span>
   <div>
     <span
-      className="sc-gqjmRU hDRXCq"
+      className="sc-jTzLTM kAAZaV"
     />
     <span>
       <button
@@ -80,7 +80,7 @@ exports[`Snapshots Modal open 1`] = `
       className="sc-bwzfXH hsxteo"
     >
       <section
-        className="sc-gzVnrw gqpfaq"
+        className="sc-dnqmqq inShUk"
       >
         <span
           style={
@@ -95,10 +95,10 @@ exports[`Snapshots Modal open 1`] = `
           Add to a new report
         </span>
         <section
-          className="sc-dnqmqq gJHkvk"
+          className="sc-gZMcBi jTQoVD"
         >
           <input
-            className="sc-iwsKbI ibazrd"
+            className="sc-gqjmRU jqVmt"
             placeholder="Please enter title here"
             type="text"
           />
@@ -135,514 +135,304 @@ exports[`Snapshots Modal open 1`] = `
           </span>
         </div>
         <section
-          className="sc-htoDjs jLChxT"
+          className="sc-iwsKbI gMvqlC"
         >
           <ol
-            className="sc-bZQynM kdXtUd"
+            className="sc-htoDjs cysWFd"
           >
             <li
               className="sc-htpNat iDskHQ"
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
             >
-              <button
-                aria-label={null}
-                disabled={undefined}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                style={
-                  Object {
-                    "background": "none",
-                    "backgroundColor": "unset",
-                    "border": "none",
-                    "borderRadius": "unset",
-                    "color": "unset",
-                    "cursor": "pointer",
-                    "display": "unset",
-                    "fontFamily": "unset",
-                    "fontSize": "unset",
-                    "fontWeight": "unset",
-                    "lineHeight": "unset",
-                    "margin": "unset",
-                    "outline": "none",
-                    "padding": 0,
-                    "transition": "unset",
-                    "width": "100%",
-                  }
-                }
+              <span
+                className="sc-bxivhb dzrWOf"
               >
                 <span
-                  className="sc-bxivhb csZuzJ"
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
+                    }
+                  }
                 >
                   <span
-                    style={
-                      Object {
-                        "color": "#59626a",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 700,
-                      }
-                    }
+                    className="sc-bZQynM BOwjm"
                   >
-                    <span
-                      className="sc-ifAKCX fkqwkB"
-                    >
-                      Weekly Sync Report
-                    </span>
-                  </span>
-                  <span
-                    style={
-                      Object {
-                        "color": "#59626a",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 400,
-                      }
-                    }
-                  >
-                    <span
-                      className="sc-EHOje faSybo"
-                    >
-                      November 8, 2017
-                    </span>
+                    Weekly Sync Report
                   </span>
                 </span>
-              </button>
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <span
+                    className="sc-gzVnrw kmTeHH"
+                  >
+                    November 8, 2017
+                  </span>
+                </span>
+              </span>
             </li>
             <li
               className="sc-htpNat iDskHQ"
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
             >
-              <button
-                aria-label={null}
-                disabled={undefined}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                style={
-                  Object {
-                    "background": "none",
-                    "backgroundColor": "unset",
-                    "border": "none",
-                    "borderRadius": "unset",
-                    "color": "unset",
-                    "cursor": "pointer",
-                    "display": "unset",
-                    "fontFamily": "unset",
-                    "fontSize": "unset",
-                    "fontWeight": "unset",
-                    "lineHeight": "unset",
-                    "margin": "unset",
-                    "outline": "none",
-                    "padding": 0,
-                    "transition": "unset",
-                    "width": "100%",
-                  }
-                }
+              <span
+                className="sc-bxivhb dzrWOf"
               >
                 <span
-                  className="sc-bxivhb csZuzJ"
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
+                    }
+                  }
                 >
                   <span
-                    style={
-                      Object {
-                        "color": "#59626a",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 700,
-                      }
-                    }
+                    className="sc-bZQynM BOwjm"
                   >
-                    <span
-                      className="sc-ifAKCX fkqwkB"
-                    >
-                      client social media campaign
-                    </span>
-                  </span>
-                  <span
-                    style={
-                      Object {
-                        "color": "#59626a",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 400,
-                      }
-                    }
-                  >
-                    <span
-                      className="sc-EHOje faSybo"
-                    >
-                      October 11, 2017
-                    </span>
+                    client social media campaign
                   </span>
                 </span>
-              </button>
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <span
+                    className="sc-gzVnrw kmTeHH"
+                  >
+                    October 11, 2017
+                  </span>
+                </span>
+              </span>
             </li>
             <li
               className="sc-htpNat iDskHQ"
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
             >
-              <button
-                aria-label={null}
-                disabled={undefined}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                style={
-                  Object {
-                    "background": "none",
-                    "backgroundColor": "unset",
-                    "border": "none",
-                    "borderRadius": "unset",
-                    "color": "unset",
-                    "cursor": "pointer",
-                    "display": "unset",
-                    "fontFamily": "unset",
-                    "fontSize": "unset",
-                    "fontWeight": "unset",
-                    "lineHeight": "unset",
-                    "margin": "unset",
-                    "outline": "none",
-                    "padding": 0,
-                    "transition": "unset",
-                    "width": "100%",
-                  }
-                }
+              <span
+                className="sc-bxivhb dzrWOf"
               >
                 <span
-                  className="sc-bxivhb csZuzJ"
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
+                    }
+                  }
                 >
                   <span
-                    style={
-                      Object {
-                        "color": "#59626a",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 700,
-                      }
-                    }
+                    className="sc-bZQynM BOwjm"
                   >
-                    <span
-                      className="sc-ifAKCX fkqwkB"
-                    >
-                      client social media campaign
-                    </span>
-                  </span>
-                  <span
-                    style={
-                      Object {
-                        "color": "#59626a",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 400,
-                      }
-                    }
-                  >
-                    <span
-                      className="sc-EHOje faSybo"
-                    >
-                      October 11, 2017
-                    </span>
+                    client social media campaign
                   </span>
                 </span>
-              </button>
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <span
+                    className="sc-gzVnrw kmTeHH"
+                  >
+                    October 11, 2017
+                  </span>
+                </span>
+              </span>
             </li>
             <li
               className="sc-htpNat iDskHQ"
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
             >
-              <button
-                aria-label={null}
-                disabled={undefined}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                style={
-                  Object {
-                    "background": "none",
-                    "backgroundColor": "unset",
-                    "border": "none",
-                    "borderRadius": "unset",
-                    "color": "unset",
-                    "cursor": "pointer",
-                    "display": "unset",
-                    "fontFamily": "unset",
-                    "fontSize": "unset",
-                    "fontWeight": "unset",
-                    "lineHeight": "unset",
-                    "margin": "unset",
-                    "outline": "none",
-                    "padding": 0,
-                    "transition": "unset",
-                    "width": "100%",
-                  }
-                }
+              <span
+                className="sc-bxivhb dzrWOf"
               >
                 <span
-                  className="sc-bxivhb csZuzJ"
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
+                    }
+                  }
                 >
                   <span
-                    style={
-                      Object {
-                        "color": "#59626a",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 700,
-                      }
-                    }
+                    className="sc-bZQynM BOwjm"
                   >
-                    <span
-                      className="sc-ifAKCX fkqwkB"
-                    >
-                      client social media campaign
-                    </span>
-                  </span>
-                  <span
-                    style={
-                      Object {
-                        "color": "#59626a",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 400,
-                      }
-                    }
-                  >
-                    <span
-                      className="sc-EHOje faSybo"
-                    >
-                      October 11, 2017
-                    </span>
+                    client social media campaign
                   </span>
                 </span>
-              </button>
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <span
+                    className="sc-gzVnrw kmTeHH"
+                  >
+                    October 11, 2017
+                  </span>
+                </span>
+              </span>
             </li>
             <li
               className="sc-htpNat iDskHQ"
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
             >
-              <button
-                aria-label={null}
-                disabled={undefined}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                style={
-                  Object {
-                    "background": "none",
-                    "backgroundColor": "unset",
-                    "border": "none",
-                    "borderRadius": "unset",
-                    "color": "unset",
-                    "cursor": "pointer",
-                    "display": "unset",
-                    "fontFamily": "unset",
-                    "fontSize": "unset",
-                    "fontWeight": "unset",
-                    "lineHeight": "unset",
-                    "margin": "unset",
-                    "outline": "none",
-                    "padding": 0,
-                    "transition": "unset",
-                    "width": "100%",
-                  }
-                }
+              <span
+                className="sc-bxivhb dzrWOf"
               >
                 <span
-                  className="sc-bxivhb csZuzJ"
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
+                    }
+                  }
                 >
                   <span
-                    style={
-                      Object {
-                        "color": "#59626a",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 700,
-                      }
-                    }
+                    className="sc-bZQynM BOwjm"
                   >
-                    <span
-                      className="sc-ifAKCX fkqwkB"
-                    >
-                      client social media campaign
-                    </span>
-                  </span>
-                  <span
-                    style={
-                      Object {
-                        "color": "#59626a",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 400,
-                      }
-                    }
-                  >
-                    <span
-                      className="sc-EHOje faSybo"
-                    >
-                      October 11, 2017
-                    </span>
+                    client social media campaign
                   </span>
                 </span>
-              </button>
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <span
+                    className="sc-gzVnrw kmTeHH"
+                  >
+                    October 11, 2017
+                  </span>
+                </span>
+              </span>
             </li>
             <li
               className="sc-htpNat iDskHQ"
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
             >
-              <button
-                aria-label={null}
-                disabled={undefined}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                style={
-                  Object {
-                    "background": "none",
-                    "backgroundColor": "unset",
-                    "border": "none",
-                    "borderRadius": "unset",
-                    "color": "unset",
-                    "cursor": "pointer",
-                    "display": "unset",
-                    "fontFamily": "unset",
-                    "fontSize": "unset",
-                    "fontWeight": "unset",
-                    "lineHeight": "unset",
-                    "margin": "unset",
-                    "outline": "none",
-                    "padding": 0,
-                    "transition": "unset",
-                    "width": "100%",
-                  }
-                }
+              <span
+                className="sc-bxivhb dzrWOf"
               >
                 <span
-                  className="sc-bxivhb csZuzJ"
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
+                    }
+                  }
                 >
                   <span
-                    style={
-                      Object {
-                        "color": "#59626a",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 700,
-                      }
-                    }
+                    className="sc-bZQynM BOwjm"
                   >
-                    <span
-                      className="sc-ifAKCX fkqwkB"
-                    >
-                      client social media campaign
-                    </span>
-                  </span>
-                  <span
-                    style={
-                      Object {
-                        "color": "#59626a",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 400,
-                      }
-                    }
-                  >
-                    <span
-                      className="sc-EHOje faSybo"
-                    >
-                      October 11, 2017
-                    </span>
+                    client social media campaign
                   </span>
                 </span>
-              </button>
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <span
+                    className="sc-gzVnrw kmTeHH"
+                  >
+                    October 11, 2017
+                  </span>
+                </span>
+              </span>
             </li>
             <li
               className="sc-htpNat iDskHQ"
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
             >
-              <button
-                aria-label={null}
-                disabled={undefined}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                style={
-                  Object {
-                    "background": "none",
-                    "backgroundColor": "unset",
-                    "border": "none",
-                    "borderRadius": "unset",
-                    "color": "unset",
-                    "cursor": "pointer",
-                    "display": "unset",
-                    "fontFamily": "unset",
-                    "fontSize": "unset",
-                    "fontWeight": "unset",
-                    "lineHeight": "unset",
-                    "margin": "unset",
-                    "outline": "none",
-                    "padding": 0,
-                    "transition": "unset",
-                    "width": "100%",
-                  }
-                }
+              <span
+                className="sc-bxivhb dzrWOf"
               >
                 <span
-                  className="sc-bxivhb csZuzJ"
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
+                    }
+                  }
                 >
                   <span
-                    style={
-                      Object {
-                        "color": "#59626a",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 700,
-                      }
-                    }
+                    className="sc-bZQynM BOwjm"
                   >
-                    <span
-                      className="sc-ifAKCX fkqwkB"
-                    >
-                      client social media campaign
-                    </span>
-                  </span>
-                  <span
-                    style={
-                      Object {
-                        "color": "#59626a",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 400,
-                      }
-                    }
-                  >
-                    <span
-                      className="sc-EHOje faSybo"
-                    >
-                      October 11, 2017
-                    </span>
+                    client social media campaign
                   </span>
                 </span>
-              </button>
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <span
+                    className="sc-gzVnrw kmTeHH"
+                  >
+                    October 11, 2017
+                  </span>
+                </span>
+              </span>
             </li>
           </ol>
         </section>
