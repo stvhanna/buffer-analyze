@@ -17,6 +17,14 @@ module.exports = method(
         user_id: userId,
       },
       json: true,
-    }).then(result => result)
+    }).then(result => ({
+      _id: result.created._id,
+      updated_at: (new Date(result.created.updated_at)).getTime(),
+      charts: [{
+        profile_id: profileId,
+        chart_id: chartId,
+      }],
+      name,
+    }))
   ,
 );

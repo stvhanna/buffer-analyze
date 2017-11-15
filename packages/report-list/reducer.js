@@ -14,6 +14,16 @@ export default (state = initialState, action) => {
   switch (action.type) {
     case `list_reports_${asyncDataFetchActionTypes.FETCH_START}`:
       return initialState;
+    case `create_report_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
+      return {
+        ...state,
+        reports: [
+          {
+            ...action.result,
+          },
+          ...state.reports,
+        ],
+      };
     case `list_reports_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
       return {
         ...state,
