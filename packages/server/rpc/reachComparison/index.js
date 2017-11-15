@@ -82,7 +82,7 @@ function formatData(result) {
 
 module.exports = method(
   'reach_comparison',
-  'get daily audience data for profile',
+  'get daily reach data for profile',
   ({ profileIds, startDate, endDate }) => {
     const start = moment.unix(startDate).format('MM/DD/YYYY');
     const end = moment.unix(endDate).format('MM/DD/YYYY');
