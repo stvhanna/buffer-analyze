@@ -8,6 +8,7 @@ import { Table as PostsSummary, Title as PostsSummaryTitle } from '@bufferapp/po
 import { Table as AverageTable, Title as AverageTitle } from '@bufferapp/average-table';
 import { ChartContent as HourlyCharts, Title as HourlyTitle } from '@bufferapp/hourly-chart';
 import { Table as TopPostsTable, Title as TopPostsTitle } from '@bufferapp/top-posts-table';
+import { Chart as ContextualChart, Title as ContextualTitle } from '@bufferapp/contextual-compare';
 import styled from 'styled-components';
 
 const CHARTS = {
@@ -30,6 +31,10 @@ const CHARTS = {
   'top-posts': {
     chart: TopPostsTable,
     title: TopPostsTitle,
+  },
+  'contextual-compare': {
+    chart: ContextualChart,
+    title: ContextualTitle,
   },
 };
 

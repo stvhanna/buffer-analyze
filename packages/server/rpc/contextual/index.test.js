@@ -62,7 +62,7 @@ describe('rpc/contextual', () => {
       },
     });
 
-    expect(data.daily).toBeDefined();
+    expect(data.data).toBeDefined();
     expect(data.metrics).toBeDefined();
     expect(data.presets).toBeDefined();
   });
@@ -91,10 +91,10 @@ describe('rpc/contextual', () => {
         accessToken: token,
       },
     });
-    expect(data.daily.length).toBe(7);
-    expect(data.daily[0].day).toBe('1508371200000');
-    expect(data.daily[0].metrics.length).toBe(10);
-    expect(data.daily[0].metrics[0]).toMatchObject({
+    expect(data.data.length).toBe(7);
+    expect(data.data[0].day).toBe('1508371200000');
+    expect(data.data[0].metrics.length).toBe(10);
+    expect(data.data[0].metrics[0]).toMatchObject({
       key: 'posts_count',
       value: 1,
       postsCount: 1,
@@ -125,9 +125,9 @@ describe('rpc/contextual', () => {
         accessToken: token,
       },
     });
-    expect(data.daily.length).toBe(1);
-    expect(data.daily[0].metrics.length).toBe(1);
-    expect(data.daily[0].metrics[0]).toMatchObject({
+    expect(data.data.length).toBe(1);
+    expect(data.data[0].metrics.length).toBe(1);
+    expect(data.data[0].metrics[0]).toMatchObject({
       key: 'shares',
       value: 29,
       postsCount: 0,
@@ -229,7 +229,7 @@ describe('rpc/contextual', () => {
       },
     });
     expect(data.presets.length).toBe(0);
-    expect(data.daily.length).toBe(0);
+    expect(data.data.length).toBe(0);
     expect(data.metrics.length).toBe(0);
   });
 });

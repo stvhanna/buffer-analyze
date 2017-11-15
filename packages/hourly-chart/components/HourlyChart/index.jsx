@@ -13,6 +13,7 @@ import AddReport from '@bufferapp/add-report';
 import PostCountByHour from '../PostCountByHour';
 import HourlyEngagementChart from '../HourlyEngagementChart';
 import Legend from '../Legend';
+import Header from '../ChartHeader';
 
 const title = {
   margin: '0',
@@ -103,7 +104,7 @@ const HourlyChart = props =>
       {props.loading && <Loading noBorder />}
       {!props.loading &&
         <div>
-          <ChartHeader {...props} />
+          <Header {...props} />
           <ChartContent {...props} />
         </div>
       }

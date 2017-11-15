@@ -53,7 +53,7 @@ export default (state = initialState, action) => {
       return initialState;
     case `contextual_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
       return Object.assign({}, state, {
-        data: action.result.daily,
+        data: action.result.data,
         metrics: action.result.metrics,
         selectedMetrics: selecetCustomMetricsPairOnFetch(action.result.metrics),
         presets: action.result.presets,

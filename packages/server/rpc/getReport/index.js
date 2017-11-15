@@ -6,6 +6,7 @@ const RPC_ENDPOINTS = {
   average: require('../average'), // eslint-disable-line global-require
   'hourly-engagements': require('../hourly'), // eslint-disable-line global-require
   'top-posts': require('../topPosts'), // eslint-disable-line global-require
+  'contextual-compare': require('../contextual'), // eslint-disable-line global-require
 };
 
 const requestChartData = (chart, startDate, endDate, session) =>
@@ -24,7 +25,7 @@ module.exports = method(
       .then(chartMetrics =>
         charts.map((chart, index) => {
           if (chartMetrics[index].metrics) {
-            return Object.assign(chart, chartMetrics[index]);
+            return Object.assign(chart, chart.state, chartMetrics[index]);
           }
           return Object.assign(chart, {
             metrics: chartMetrics[index],

@@ -7,6 +7,7 @@ import {
   color as metricsColor,
 } from '@bufferapp/analyze-shared-components/style';
 
+import Footer from '../Footer';
 
 import chartConfig, { highChartsSeriesPrimaryConfig } from './chartConfig';
 
@@ -236,7 +237,17 @@ const Chart = ({
       },
     },
   );
-  return (<ReactHighcharts config={charOptions} />);
+  return (
+    <div id="js-dom-to-png-contextual">
+      <ReactHighcharts config={charOptions} />
+      <Footer
+        selectedMetrics={selectedMetrics}
+        mode={mode}
+        presets={presets}
+        selectedPreset={selectedPreset}
+      />
+    </div>
+  );
 };
 
 Chart.propTypes = {
