@@ -8,10 +8,10 @@ import ProfileHeader from '@bufferapp/profile-header';
 import DatePicker from '@bufferapp/analyze-date-picker';
 import ProfileLoader from '@bufferapp/profile-loader';
 import TabNavigation from '@bufferapp/analyze-tabs';
-import ExportDropdown from '../../../export-as-dropdown/';
 import PNGExportButton from '@bufferapp/analyze-png-export';
 import CSVExportButton from '@bufferapp/analyze-csv-export';
 import { white, mystic } from '@bufferapp/components/style/color';
+import ExportDropdown from '../../../export-picker/';
 import PostsTab from '../PostsTab';
 import OverviewTab from '../OverviewTab';
 

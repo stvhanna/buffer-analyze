@@ -11,7 +11,6 @@ import { reducer as datePickerReducer } from '@bufferapp/analyze-date-picker';
 import { reducer as profileLoaderReducer } from '@bufferapp/profile-loader';
 import { reducer as postsSummaryReducer } from '@bufferapp/posts-summary-table';
 import { reducer as averageReducer } from '@bufferapp/average-table';
-import { reducer as exportAsReducer } from '../export-as-dropdown/';
 import { reducer as exportToPNGReducer } from '@bufferapp/analyze-png-export';
 import { reducer as exportToCSVReducer } from '@bufferapp/analyze-csv-export';
 import { reducer as topPostsReducer } from '@bufferapp/top-posts-table';
@@ -21,6 +20,7 @@ import { reducer as reportListReducer } from '@bufferapp/report-list';
 import { reducer as contextualCompareReducer } from '@bufferapp/contextual-compare';
 import { reducer as reportReducer } from '@bufferapp/report';
 import { reducer as audienceComparisonReducer } from '@bufferapp/audience-comparison-chart';
+import { reducer as exportAsReducer } from '../export-picker/';
 
 export default combineReducers({
   router: routerReducer,
