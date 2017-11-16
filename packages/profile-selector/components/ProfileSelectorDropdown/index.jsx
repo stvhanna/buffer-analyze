@@ -34,6 +34,32 @@ import {
   dropdownTriggerActive,
 } from './style.less';
 
+const styleButton = {
+  cursor: 'pointer',
+  display: 'flex',
+  alignItems: 'center',
+  padding: '0.5rem 1rem',
+  fontFamily: '"Roboto", sans-serif',
+  fontSize: '0.75rem',
+  fontWeight: 'bold',
+  color: '#333333',
+  textDecoration: 'none',
+  textShadow: 'none',
+  textAlign: 'left',
+  border: '1px solid #D5E3EF',
+  borderRadius: '3px',
+  width: '100%',
+  boxSizing: 'border-box',
+  boxShadow: '0px 1px 2px rgba(0, 0, 0, 0.05)',
+  outline: '0 none',
+};
+
+const styleButtonDisabled = {
+  ...styleButton,
+  opacity: 0.2,
+  pointerEvents: 'none',
+};
+
 function renderDropdownItem(profile, selectedProfileId, selectProfile) {
   const onClick = () => {
     selectProfile({
@@ -51,6 +77,7 @@ function renderDropdownItem(profile, selectedProfileId, selectProfile) {
 }
 
 const ProfileSelectorDropdown = ({
+  loading,
   isDropdownOpen,
   onSearchChange,
   profiles,
@@ -105,17 +132,17 @@ const ProfileSelectorDropdown = ({
         onShow={openDropdown}
         onHide={closeDropdown}
       >
-        <DropdownTrigger className={triggerClasses} style={{ display: 'flex' }} >
+        <DropdownTrigger style={(loading ? styleButtonDisabled : styleButton)}>
           <ProfileBadge
             avatarUrl={selectedProfile.avatarUrl}
             service={selectedProfile.service}
-            avatarSize={24}
+            avatarSize={23}
             socialIconSize={11}
           />
           <Text weight="bold" size="small">{selectedProfile.username}</Text>
           <span style={{ pointerEvents: 'none', marginLeft: 'auto' }} >
-            { isDropdownOpen && <ArrowUpIcon /> }
-            { !isDropdownOpen && <ArrowDownIcon /> }
+            { isDropdownOpen && <ArrowUpIcon size="small" /> }
+            { !isDropdownOpen && <ArrowDownIcon size="small" /> }
           </span>
         </DropdownTrigger>
         <DropdownContent className={contentClasses} >

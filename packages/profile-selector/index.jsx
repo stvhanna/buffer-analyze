@@ -27,7 +27,7 @@ const filterProfilesByService = (profiles, service) => (
   profiles.filter(p => p.service === service)
 );
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (state, ownProps) => {
   let filteredProfiles = null;
   if (state.profiles.selectedProfileService) {
     filteredProfiles = filterProfilesByService(
@@ -38,6 +38,7 @@ const mapStateToProps = (state) => {
     filteredProfiles = state.profiles.profiles;
   }
   return {
+    loading: ownProps.staticData ? false : state.date.loading,
     isDropdownOpen: state.profiles.isDropdownOpen,
     profiles: filteredProfiles,
     profilesFilterString: state.profiles.profilesFilterString,

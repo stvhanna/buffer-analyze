@@ -32,7 +32,7 @@ const ExportPicker = (props) => {
   } = props;
 
   return (
-    <div style={{ position: 'relative', width: '12rem' }}>
+    <div style={{ position: 'relative', width: '8rem' }}>
       <Button
         isOpen={isOpen}
         loading={loading}

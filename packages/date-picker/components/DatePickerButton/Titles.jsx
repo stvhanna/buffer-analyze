@@ -55,17 +55,13 @@ const isRangeSelected = (range, start, end) => {
 
 const Title = ({ loading, startDate, endDate }) => {
   let title;
-  if (loading) {
-    title = 'Loading...';
+  const selectedRange = PRESETS.find(preset => isRangeSelected(preset.range, startDate, endDate));
+  if (selectedRange.label === 'Custom' && startDate && endDate) {
+    const from = formatDate(startDate);
+    const to = formatDate(endDate);
+    title = `From: ${from} - To: ${to}`;
   } else {
-    const selectedRange = PRESETS.find(preset => isRangeSelected(preset.range, startDate, endDate));
-    if (selectedRange.label === 'Custom' && startDate && endDate) {
-      const from = formatDate(startDate);
-      const to = formatDate(endDate);
-      title = `From: ${from} - To: ${to}`;
-    } else {
-      title = selectedRange.label;
-    }
+    title = selectedRange.label;
   }
   return (<Text size="small" weight="bold">{title}</Text>);
 };
