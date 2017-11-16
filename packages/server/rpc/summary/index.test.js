@@ -22,6 +22,36 @@ describe('rpc/summary', () => {
       .toBe('fetch analytics summary for profiles and pages');
   });
 
+  it('should request metrics to Analyze Api for Instagram', () => {
+    const end = moment().subtract(1, 'days').unix();
+    const start = moment().subtract(7, 'days').unix();
+
+    summary.fn({
+      startDate: start,
+      endDate: end,
+      profileId,
+      profileService: 'instagram',
+    }, {
+      session: {
+        accessToken: token,
+      },
+    });
+
+    expect(rp.mock.calls[0])
+      .toEqual([{
+        uri: `${process.env.ANALYZE_API_ADDR}/metrics/totals`,
+        method: 'POST',
+        strictSSL: false,
+        qs: {
+          access_token: token,
+          start_date: moment.unix(start).format('MM/DD/YYYY'),
+          end_date: moment.unix(end).format('MM/DD/YYYY'),
+        },
+        json: true,
+      }]);
+    rp.mockClear();
+  });
+
   it('should request for the past week', () => {
     const end = moment().subtract(1, 'days').unix();
     const start = moment().subtract(7, 'days').unix();

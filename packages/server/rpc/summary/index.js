@@ -31,10 +31,16 @@ const LABELS = {
   },
 };
 
-const requestTotals = (profileId, dateRange, accessToken) =>
+const requestTotals = (profileId, profileService, dateRange, accessToken) =>
   rp({
-    uri: `${process.env.API_ADDR}/1/profiles/${profileId}/analytics/totals.json`,
-    method: 'GET',
+    uri: (profileService === 'instagram' ?
+      `${process.env.ANALYZE_API_ADDR}/metrics/totals` :
+      `${process.env.API_ADDR}/1/profiles/${profileId}/analytics/totals.json`
+    ),
+    method: (profileService === 'instagram' ?
+      'POST' :
+      'GET'
+    ),
     strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
     qs: {
       access_token: accessToken,
@@ -63,14 +69,23 @@ module.exports = method(
   'summary',
   'fetch analytics summary for profiles and pages',
   ({ profileId, profileService, startDate, endDate }, { session }) => {
-    console.log(profileService)
     const end = moment.unix(endDate).format('MM/DD/YYYY');
     const start = moment.unix(startDate).format('MM/DD/YYYY');
     const dateRange = new DateRange(start, end);
     const previousDateRange = dateRange.getPreviousDateRange();
 
-    const currentPeriod = requestTotals(profileId, dateRange, session.analyze.accessToken);
-    const previousPeriod = requestTotals(profileId, previousDateRange, session.analyze.accessToken);
+    const currentPeriod = requestTotals(
+      profileId,
+      profileService,
+      dateRange,
+      session.analyze.accessToken,
+    );
+    const previousPeriod = requestTotals(
+      profileId,
+      profileService,
+      previousDateRange,
+      session.analyze.accessToken,
+    );
 
     return Promise
       .all([currentPeriod, previousPeriod])
