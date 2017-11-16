@@ -27,17 +27,24 @@ const LABELS = {
   },
   instagram: {
     posts_count: 'Posts',
-    followers: 'Followers',
+    likes: 'Likes',
+    comments: 'Comments',
+    followers: 'Total Followers',
+    new_followers: 'New Followers',
   },
 };
 
+function shouldUseAnalyzeApi (profileService) {
+  return profileService === 'instagram';
+}
+
 const requestTotals = (profileId, profileService, dateRange, accessToken) =>
   rp({
-    uri: (profileService === 'instagram' ?
+    uri: (shouldUseAnalyzeApi(profileService) ?
       `${process.env.ANALYZE_API_ADDR}/metrics/totals` :
       `${process.env.API_ADDR}/1/profiles/${profileId}/analytics/totals.json`
     ),
-    method: (profileService === 'instagram' ?
+    method: (shouldUseAnalyzeApi(profileService) ?
       'POST' :
       'GET'
     ),
@@ -46,6 +53,10 @@ const requestTotals = (profileId, profileService, dateRange, accessToken) =>
       access_token: accessToken,
       start_date: dateRange.start,
       end_date: dateRange.end,
+      profile_id: (shouldUseAnalyzeApi(profileService) ?
+        profileId :
+        null
+      ),
     },
     json: true,
   });

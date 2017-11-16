@@ -46,13 +46,14 @@ describe('rpc/summary', () => {
           access_token: token,
           start_date: moment.unix(start).format('MM/DD/YYYY'),
           end_date: moment.unix(end).format('MM/DD/YYYY'),
+          profile_id: profileId,
         },
         json: true,
       }]);
-    rp.mockClear();
   });
 
   it('should request for the past week', () => {
+    rp.mockClear();
     const end = moment().subtract(1, 'days').unix();
     const start = moment().subtract(7, 'days').unix();
 
@@ -78,6 +79,7 @@ describe('rpc/summary', () => {
           access_token: token,
           start_date: moment.unix(start).format('MM/DD/YYYY'),
           end_date: moment.unix(end).format('MM/DD/YYYY'),
+          profile_id: null,
         },
         json: true,
       }]);
@@ -112,6 +114,7 @@ describe('rpc/summary', () => {
           access_token: token,
           start_date: start,
           end_date: end,
+          profile_id: null,
         },
         json: true,
       }]);
