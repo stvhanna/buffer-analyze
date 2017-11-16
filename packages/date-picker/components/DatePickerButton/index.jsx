@@ -10,7 +10,36 @@ import {
   button,
 } from '../styleGuide/components/ButtonSquareSecondary/button-square-secondary.less';
 
+
+const styleButton = {
+  cursor: 'pointer',
+  display: 'flex',
+  padding: '0.75rem 1rem',
+  fontFamily: '"Roboto", sans-serif',
+  fontSize: '0.75rem',
+  fontWeight: 'bold',
+  color: '#333333',
+  textDecoration: 'none',
+  textShadow: 'none',
+  textAlign: 'left',
+  border: '1px solid #D5E3EF',
+  borderRadius: '3px',
+  width: '100%',
+  boxSizing: 'border-box',
+  boxShadow: '0px 1px 2px rgba(0, 0, 0, 0.05)',
+  outline: '0 none',
+};
+
+const styleButtonDisabled = {
+  ...styleButton,
+  opacity: 0.2,
+  pointerEvents: 'none',
+};
+
 import { Title, Subtitle } from './Titles';
+
+
+        // <Subtitle startDate={startDate} endDate={endDate} />
 
 const DatePickerButton = ({ isOpen, loading, startDate, endDate, handleClick }) => {
   const buttonClass = classNames(button, styles.button, {
@@ -19,14 +48,12 @@ const DatePickerButton = ({ isOpen, loading, startDate, endDate, handleClick }) 
 
   return (
     <button
+      style={(loading ? styleButtonDisabled : styleButton)}
       disabled={loading}
-      className={buttonClass}
       onClick={handleClick}
     >
-      <i className="bi-calendar" />
       <Title loading={loading} startDate={startDate} endDate={endDate} />
       <span className={styles.rightSide}>
-        <Subtitle startDate={startDate} endDate={endDate} />
         <span style={{ marginLeft: '5px' }}>
           { isOpen ?
             <ArrowUpIcon size="small" /> :

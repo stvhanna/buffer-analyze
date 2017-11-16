@@ -4,9 +4,9 @@ import { actions } from './reducer';
 
 // default export = container
 export default connect(
-  state => ({
+  (state, ownProps) => ({
+    loading: ownProps.staticData ? false : state.date.loading,
     isOpen: state.exportAs.open,
-    bum: state.exportAs.bum,
   }),
   dispatch => ({
     open: () => dispatch(actions.open()),

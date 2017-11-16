@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
 
+import Text from '@bufferapp/components/Text';
 import styles from './date-picker-button.less';
 
 const formatDate = (date, dateFormat = 'MM/DD/YY') =>
@@ -66,7 +67,7 @@ const Title = ({ loading, startDate, endDate }) => {
       title = selectedRange.label;
     }
   }
-  return (<span>{title}</span>);
+  return (<Text size="small" weight="bold">{title}</Text>);
 };
 
 Title.defaultProps = {

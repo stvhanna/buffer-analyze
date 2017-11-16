@@ -4,9 +4,9 @@ export const actionTypes = {
 };
 
 const initialState = {
-  exporting: true,
+  exporting: false,
+  loading: true,
   open: false,
-  bum: 'poo',
 };
 
 export default (state = initialState, action) => {

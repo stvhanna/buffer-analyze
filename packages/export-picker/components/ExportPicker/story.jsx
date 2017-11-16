@@ -1,13 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
-import { action } from '@storybook/addon-actions';
 
 import ExportPicker from './index';
 
 storiesOf('ExportPicker')
   .addDecorator(checkA11y)
-  .add('default', () => (
+  .add('should not be open', () => (
     <ExportPicker
       isOpen={false}
     />

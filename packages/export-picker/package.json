@@ -20,6 +20,9 @@
     }
   },
   "author": "me@jamesmorr.is",
+  "dependencies": {
+    "@bufferapp/components": "2.1.1"
+  },
   "devDependencies": {
     "@storybook/addon-storyshots": "3.1.4",
     "@storybook/react": "3.1.3",

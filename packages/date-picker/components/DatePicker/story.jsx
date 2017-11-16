@@ -11,6 +11,17 @@ Date.now = () => mockTimestamp;
 
 storiesOf('DatePicker')
   .addDecorator(checkA11y)
+  .add('should not be open', () => (
+    <DatePicker
+      startDate={moment().subtract(1, 'days').unix()}
+      endDate={moment().subtract(1, 'days').unix()}
+      open={action('open')}
+      isOpen={false}
+      month={moment().startOf('month').unix()}
+      minDate={moment().subtract(15, 'days').valueOf()}
+      maxDate={moment().valueOf()}
+    />
+  ))
   .add('there is no date if a single day is selected', () => (
     <DatePicker
       startDate={moment().subtract(1, 'days').unix()}

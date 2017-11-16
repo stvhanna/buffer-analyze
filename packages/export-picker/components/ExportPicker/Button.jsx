@@ -4,23 +4,25 @@ import PropTypes from 'prop-types';
 import ArrowDownIcon from '@bufferapp/components/Icon/Icons/ArrowDownIcon';
 import ArrowUpIcon from '@bufferapp/components/Icon/Icons/ArrowUpIcon';
 
-import Title from './Title';
+import Text from '@bufferapp/components/Text';
 
 const styleButton = {
   cursor: 'pointer',
   display: 'flex',
-  boxSizing: 'border-box',
-  margin: 0,
-  padding: '1rem',
+  padding: '0.75rem 1rem',
   fontFamily: '"Roboto", sans-serif',
-  fontSize: '1rem',
+  fontSize: '0.75rem',
+  fontWeight: 'bold',
   color: '#333333',
   textDecoration: 'none',
   textShadow: 'none',
   textAlign: 'left',
-  border: '1px solid #AAAAAA',
+  border: '1px solid #D5E3EF',
   borderRadius: '3px',
   width: '100%',
+  boxSizing: 'border-box',
+  boxShadow: '0px 1px 2px rgba(0, 0, 0, 0.05)',
+  outline: '0 none',
 };
 
 const styleButtonDisabled = {
@@ -29,14 +31,14 @@ const styleButtonDisabled = {
   pointerEvents: 'none',
 };
 
-const DatePickerButton = ({ isOpen, exporting, handleClick }) => {
+const DatePickerButton = ({ isOpen, loading, exporting, handleClick }) => {
   return (
     <button
-      style={(exporting) ? styleButtonDisabled : styleButton}
-      disabled={exporting}
+      style={(loading || exporting ? styleButtonDisabled : styleButton)}
+      disabled={(exporting || exporting)}
       onClick={handleClick}
     >
-      <Title exporting={exporting} />
+      <Text size="small" weight="bold">{(exporting ? 'Exporting...' : 'Export as...')}</Text>
       <span style={{ marginLeft: 'auto' }}>
         { isOpen ?
           <ArrowUpIcon size="small" /> :
@@ -50,12 +52,14 @@ DatePickerButton.defaultProps = {
   startDate: 0,
   endDate: 0,
   exporting: false,
+  loading: false,
 };
 
 DatePickerButton.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   handleClick: PropTypes.func.isRequired,
   exporting: PropTypes.bool,
+  loading: PropTypes.bool,
 };
 
 export default DatePickerButton;

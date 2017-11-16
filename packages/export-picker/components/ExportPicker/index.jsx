@@ -24,6 +24,7 @@ const styleCatcherOpen = {
 const ExportPicker = (props) => {
   const {
     isOpen,
+    loading,
     exporting,
     // Actions
     open,
@@ -31,9 +32,10 @@ const ExportPicker = (props) => {
   } = props;
 
   return (
-    <div style={{ position: 'relative', width: 400 }}>
+    <div style={{ position: 'relative', width: '12rem' }}>
       <Button
         isOpen={isOpen}
+        loading={loading}
         exporting={exporting}
         handleClick={() => (isOpen ? close() : open())}
       />
@@ -53,6 +55,7 @@ ExportPicker.defaultProps = {
 
 ExportPicker.propTypes = {
   isOpen: PropTypes.bool.isRequired,
+  loading: PropTypes.bool.isRequired,
   exporting: PropTypes.bool.isRequired,
 
   // Actions

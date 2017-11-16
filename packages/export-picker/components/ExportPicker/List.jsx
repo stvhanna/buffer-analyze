@@ -1,26 +1,28 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Text from '@bufferapp/components/Text';
 
-
-const buttonStyle = {
-  cursor: 'pointer',
-  appearance: 'none',
-  display: 'block',
-  background: '#FFFFFF',
-  border: '0 none',
+const listStyle = {
+  listStyle: 'none',
+  margin: 0,
   padding: 0,
-  margin: '0.5rem 0',
-  fontSize: '1rem',
+};
+
+const itemStyle = {
+  cursor: 'pointer',
+  listStyle: 'none',
+  padding: '0.25rem 0',
+  margin: 0,
 };
 
 class ExportPickerList extends Component {
 
   render() {
     return (
-      <div>
-        <button style={buttonStyle}>Export as CSV</button>
-        <button style={buttonStyle}>Export as PNG</button>
-      </div>
+      <ul style={listStyle}>
+        <li style={itemStyle}><Text size="small" weight="bold">Export as CSV</Text></li>
+        <li style={itemStyle}><Text size="small" weight="bold">Export as PNG</Text></li>
+      </ul>
     );
   }
 }
