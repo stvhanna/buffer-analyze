@@ -47,7 +47,7 @@ Table.propTypes = {
 const PostsSummaryTable = ({ metrics, loading, profileService, startDate, endDate }) => {
   let content = null;
   if (loading) {
-    content = <Loading active text="Summary loading..." />;
+    content = <Loading active />;
   } else if (metrics.length === 0) {
     content = <NoData />;
   } else {

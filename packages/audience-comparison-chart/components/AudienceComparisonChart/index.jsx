@@ -24,7 +24,7 @@ const AudienceComparisonChart = ({
   let footer = null;
 
   if (loading) {
-    content = <Loading active text="Audience chart loading..." />;
+    content = <Loading active />;
   } else if (profilesMetricData.length === 0) {
     content = <NoData />;
   } else {
