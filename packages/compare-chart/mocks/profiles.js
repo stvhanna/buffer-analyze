@@ -15,6 +15,13 @@ const twitterProfiles = [
     service: 'twitter',
     timezone: 'America/Los_Angeles',
   },
+  {
+    avatarUrl,
+    username: 'tiggreen',
+    id: 'foo42',
+    service: 'twitter',
+    timezone: 'America/Los_Angeles',
+  },
 ];
 
 const facebookProfiles = [

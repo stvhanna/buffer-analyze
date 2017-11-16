@@ -20,6 +20,7 @@ import { reducer as reportListReducer } from '@bufferapp/report-list';
 import { reducer as contextualCompareReducer } from '@bufferapp/contextual-compare';
 import { reducer as reportReducer } from '@bufferapp/report';
 import { reducer as audienceComparisonReducer } from '@bufferapp/audience-comparison-chart';
+import { reducer as multiProfileSelectorReducer } from '@bufferapp/multi-profile-selector';
 import { reducer as exportAsReducer } from '../export-picker/';
 
 export default combineReducers({
@@ -45,4 +46,5 @@ export default combineReducers({
   contextual: contextualCompareReducer,
   report: reportReducer,
   audienceComparison: audienceComparisonReducer,
+  multiProfileSelector: multiProfileSelectorReducer,
 });

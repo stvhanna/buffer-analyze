@@ -25,33 +25,31 @@ const gridContainer = {
   padding: '1.5rem',
 };
 
-export const Table = ({ metrics, timezone }) =>
+export const Table = ({ daily, totals, timezone }) =>
   <ul style={gridStyle}>
-    {metrics.totals.map(metric => <GridItem
+    {totals.map(metric => <GridItem
       key={metric.label}
       metric={metric}
-      dailyData={metrics.daily}
+      dailyData={daily}
       timezone={timezone}
     />)}
   </ul>;
 
 Table.propTypes = {
   timezone: PropTypes.string.isRequired,
-  metrics: PropTypes.shape({
-    daily: PropTypes.arrayOf(PropTypes.shape({
-      day: PropTypes.string.isRequired,
-      metrics: PropTypes.arrayOf(PropTypes.shape({
-        diff: PropTypes.number.isRequired,
-        label: PropTypes.string.isRequired,
-        value: PropTypes.number.isRequired,
-      })),
+  daily: PropTypes.arrayOf(PropTypes.shape({
+    day: PropTypes.string.isRequired,
+    metrics: PropTypes.arrayOf(PropTypes.shape({
+      diff: PropTypes.number.isRequired,
+      label: PropTypes.string.isRequired,
+      value: PropTypes.number.isRequired,
     })),
-    totals: PropTypes.arrayOf(PropTypes.shape({
-      label: PropTypes.string,
-      value: PropTypes.number,
-      diff: PropTypes.number,
-    })),
-  }).isRequired,
+  })).isRequired,
+  totals: PropTypes.arrayOf(PropTypes.shape({
+    label: PropTypes.string,
+    value: PropTypes.number,
+    diff: PropTypes.number,
+  })).isRequired,
 };
 
 export const Title = () =>
@@ -67,7 +65,7 @@ const AverageTable = ({ metrics, loading, timezone }) => {
     content = <NoData />;
   } else {
     content = (
-      <Table metrics={metrics} timezone={timezone} />
+      <Table daily={metrics.daily} totals={metrics.totals} timezone={timezone} />
     );
   }
 

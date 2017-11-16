@@ -19,7 +19,7 @@ module.exports = method(
       json: true,
     }).then(result => ({
       _id: result.created._id,
-      updated_at: (new Date(result.created.updated_at)).getTime(),
+      updated_at: Date.now(),
       charts: [{
         profile_id: profileId,
         chart_id: chartId,

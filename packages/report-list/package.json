@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/report-list",
-  "version": "0.12.0",
+  "version": "0.15.0",
   "description": "Report list package for Analyze",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,7 @@
     }
   },
   "dependencies": {
-    "@bufferapp/analyze-shared-components": "^0.12.0",
+    "@bufferapp/analyze-shared-components": "^0.15.0",
     "styled-components": "^2.2.1"
   },
   "devDependencies": {
@@ -29,7 +29,8 @@
     "@storybook/react": "3.1.3",
     "eslint": "3.19.0",
     "jest": "19.0.2",
-    "storybook-addon-a11y": "3.0.0"
+    "storybook-addon-a11y": "3.0.0",
+    "timezone-mock": "0.0.7"
   },
   "publishConfig": {
     "access": "public"

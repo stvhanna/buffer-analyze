@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ProfileBadge } from '@bufferapp/analyze-shared-components';
+import { ProfileBadge, DropdownItem } from '@bufferapp/analyze-shared-components';
 import Dropdown, {
   DropdownTrigger,
   DropdownContent,
@@ -33,9 +33,6 @@ import {
   dropdownTrigger,
   dropdownTriggerActive,
 } from './style.less';
-
-
-import DropdownItem from './components/DropdownItem';
 
 function renderDropdownItem(profile, selectedProfileId, selectProfile) {
   const onClick = () => {

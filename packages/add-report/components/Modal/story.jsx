@@ -1,8 +1,11 @@
 import React from 'react';
+import timezoneMock from 'timezone-mock';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
 import { action } from '@storybook/addon-actions';
 import Modal from './index';
+
+timezoneMock.register('US/Eastern');
 
 const mockReports = [{
   _id: '1293125asda',

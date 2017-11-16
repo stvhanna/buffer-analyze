@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/report",
-  "version": "0.13.0",
+  "version": "0.15.0",
   "description": "Report detail",
   "main": "index.js",
   "scripts": {
@@ -21,16 +21,17 @@
     }
   },
   "dependencies": {
-    "@bufferapp/analyze-date-picker": "^0.12.0",
-    "@bufferapp/analyze-shared-components": "^0.12.0",
-    "@bufferapp/average-table": "^0.12.0",
+    "@bufferapp/analyze-date-picker": "^0.15.0",
+    "@bufferapp/analyze-shared-components": "^0.15.0",
+    "@bufferapp/average-table": "^0.15.0",
+    "@bufferapp/compare-chart": "^0.15.0",
     "@bufferapp/components": "2.1.1",
-    "@bufferapp/contextual-compare": "^0.13.0",
-    "@bufferapp/hourly-chart": "^0.13.0",
-    "@bufferapp/posts-summary-table": "^0.12.0",
-    "@bufferapp/report-list": "^0.12.0",
-    "@bufferapp/summary-table": "^0.12.0",
-    "@bufferapp/top-posts-table": "^0.12.0",
+    "@bufferapp/contextual-compare": "^0.15.0",
+    "@bufferapp/hourly-chart": "^0.15.0",
+    "@bufferapp/posts-summary-table": "^0.15.0",
+    "@bufferapp/report-list": "^0.15.0",
+    "@bufferapp/summary-table": "^0.15.0",
+    "@bufferapp/top-posts-table": "^0.15.0",
     "styled-components": "^2.2.1"
   },
   "devDependencies": {
@@ -38,7 +39,8 @@
     "@storybook/react": "3.1.3",
     "eslint": "3.19.0",
     "jest": "19.0.2",
-    "storybook-addon-a11y": "3.0.0"
+    "storybook-addon-a11y": "3.0.0",
+    "timezone-mock": "0.0.7"
   },
   "publishConfig": {
     "access": "public"

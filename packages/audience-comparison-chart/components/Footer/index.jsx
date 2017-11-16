@@ -16,9 +16,10 @@ import {
 const Grid = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
+  padding: 0 0 0 10px;
   margin: 0 auto;
-  border-left: solid 1px ${geyser};
+  border: solid 1px ${geyser};
+  border-top-style: none;
   border-radius: 2px;
 `;
 
@@ -36,7 +37,7 @@ const ProfileUsernameWrapper = styled.div`
   margin-right: 10px;
 `;
 
-const Footer = ({ profileTotals, selectedProfile }) => (
+const Footer = ({ profileTotals }) => (
   <Wrapper>
     <Grid>
       {profileTotals.map(total => <GridItem
@@ -49,7 +50,9 @@ const Footer = ({ profileTotals, selectedProfile }) => (
         customLabel={
           <ProfileAvatarWrapper>
             <ProfileUsernameWrapper>
-              <Text size="small">{selectedProfile.username}</Text>
+              <Text size="small">
+                {total.username}
+              </Text>
             </ProfileUsernameWrapper>
             <MetricIcon key={total.profileId} metric={total.metric} />
           </ProfileAvatarWrapper>
@@ -72,14 +75,8 @@ Footer.propTypes = {
     currentPeriodTotal: PropTypes.number.isRequired,
     currentPeriodDiff: PropTypes.number.isRequired,
     profileId: PropTypes.string.isRequired,
-  })).isRequired,
-  selectedProfile: PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    avatarUrl: PropTypes.string.isRequired,
-    service: PropTypes.string.isRequired,
-    timezone: PropTypes.string.isRequired,
     username: PropTypes.string.isRequired,
-  }).isRequired,
+  })).isRequired,
 };
 
 export default Footer;
