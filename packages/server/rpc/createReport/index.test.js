@@ -3,7 +3,11 @@
 jest.mock('micro-rpc-client');
 jest.mock('request-promise');
 import rp from 'request-promise';
+import moment from 'moment';
 import createReport from './';
+
+const mockTimestamp = moment('2017-11-15').valueOf();
+Date.now = () => mockTimestamp;
 
 describe('rpc/create_report', () => {
   const userId = 'user123';
@@ -25,7 +29,7 @@ describe('rpc/create_report', () => {
     const report = {
       _id: '1234',
       name,
-      updated_at: 1509840000000,
+      updated_at: mockTimestamp,
       charts: [{
         profile_id: profileId,
         chart_id: chartId,
@@ -34,7 +38,6 @@ describe('rpc/create_report', () => {
     rp.mockReturnValueOnce(Promise.resolve({
       created: {
         _id: report._id,
-        updated_at: '2017/11/05 UTC',
       },
     }));
 
