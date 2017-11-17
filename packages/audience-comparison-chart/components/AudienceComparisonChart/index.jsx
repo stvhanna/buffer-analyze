@@ -1,66 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-
-import {
-  geyser,
-} from '@bufferapp/components/style/color';
-
-import {
-  ChartStateNoData as NoData,
-  ChartStateLoading as Loading,
-  ComparisonChart as Chart,
-  ComparisonFooter as Footer,
-} from '@bufferapp/analyze-shared-components';
-
-import Title from '../Title';
+import { ComparisonChartWrapper } from '@bufferapp/analyze-shared-components';
 
 const AudienceComparisonChart = ({
   profilesMetricData,
   profileTotals,
   loading,
-}) => {
-  let content = null;
-  let footer = null;
-
-  if (loading) {
-    content = <Loading active text="Audience chart loading..." />;
-  } else if (profilesMetricData.length === 0) {
-    content = <NoData />;
-  } else {
-    content = (
-      <div>
-        <Chart
-          profilesMetricData={profilesMetricData}
-        />
-      </div>
-    );
-    footer = (
-      <Footer
-        profileTotals={profileTotals}
-      />
-    );
-  }
-
-  const ContentContainer = styled.div`
-    padding: 0;
-    margin: auto;
-    border-radius: 2px;
-    border: solid 1px ${geyser};
-    min-height: 12rem;
-    position: relative;
-  `;
-
-  return (
-    <div>
-      <Title />
-      <ContentContainer>
-        {content}
-      </ContentContainer>
-      {footer}
-    </div>
+}) =>
+  (
+    <ComparisonChartWrapper
+      profilesMetricData={profilesMetricData}
+      profileTotals={profileTotals}
+      loading={loading}
+      chartName={'Audience'}
+    />
   );
-};
 
 AudienceComparisonChart.defaultProps = {
   loading: false,
@@ -92,7 +46,7 @@ AudienceComparisonChart.propTypes = {
     currentPeriodDiff: PropTypes.number.isRequired,
     profileId: PropTypes.string.isRequired,
     username: PropTypes.string.isRequired,
-
+    service: PropTypes.string,
   })).isRequired,
 };
 

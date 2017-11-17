@@ -85,7 +85,7 @@ function prepareChartOptions(profilesMetricData) {
   return config;
 }
 
-const Chart = ({ profilesMetricData }) => {
+const ComparisonChart = ({ profilesMetricData }) => {
   const charOptions = prepareChartOptions(profilesMetricData);
   // TODO: This won't work for multiple profiles.
   // We should move do timezone transformation in the backend
@@ -101,7 +101,7 @@ const Chart = ({ profilesMetricData }) => {
   return (<ReactHighcharts config={charOptions} />);
 };
 
-Chart.propTypes = {
+ComparisonChart.propTypes = {
   profilesMetricData: PropTypes.arrayOf(PropTypes.shape({
     dailyData: PropTypes.arrayOf(PropTypes.shape({
       day: PropTypes.number.isRequired,
@@ -116,4 +116,4 @@ Chart.propTypes = {
   })).isRequired,
 };
 
-export default Chart;
+export default ComparisonChart;

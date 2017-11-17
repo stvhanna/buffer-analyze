@@ -20,7 +20,7 @@ describe('reducer', () => {
 
   it('should return initial state on FETCH_START', () => {
     expect(reducer(undefined, { type:
-        `audience_comparison_${asyncDataFetchActionTypes.FETCH_START}` }))
+        `comparison_${asyncDataFetchActionTypes.FETCH_START}` }))
       .toEqual({
         ...initialState,
         loading: true,
@@ -44,7 +44,7 @@ describe('reducer', () => {
     };
 
     expect(reducer({}, {
-      type: `audience_comparison_${asyncDataFetchActionTypes.FETCH_SUCCESS}`,
+      type: `comparison_${asyncDataFetchActionTypes.FETCH_SUCCESS}`,
       result,
     }))
       .toEqual(Object.assign({}, {

@@ -1436,7 +1436,7 @@ exports[`Snapshots InsightsPage should render reports page 1`] = `
 exports[`Snapshots ReportsPage should render reports page 1`] = `
 <span>
   <div
-    className="sc-eHgmQL fpPbRP"
+    className="sc-hSdWYo ezBnBR"
   >
     <div
       style={
@@ -1619,10 +1619,10 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
       </a>
     </div>
     <div
-      className="sc-cvbbAY iCHeNv"
+      className="sc-eHgmQL kOLMFU"
     >
       <header
-        className="sc-brqgnP daPGDP"
+        className="sc-jWBwVP crMjwi"
       >
         <button
           className="sc-bdVaJa eTEyQW"
@@ -1646,7 +1646,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
               className="bi-calendar"
             />
             <span>
-              From: 11/08/17 - To: 11/14/17
+              From: 11/10/17 - To: 11/16/17
             </span>
             <span
               className="rightSide"
@@ -1935,7 +1935,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
         </div>
       </header>
       <div
-        className="sc-jWBwVP fFaqJq"
+        className="sc-cvbbAY jVZbgE"
       >
         ...loading
       </div>

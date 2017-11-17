@@ -6,12 +6,21 @@ import Title from './index';
 
 storiesOf('Title')
   .addDecorator(checkA11y)
+  .add('should render the title for the comparison reach chart', () => (
+    <div
+      style={{
+        width: '750px',
+      }}
+    >
+      <Title chartName={'Reach'} />
+    </div>
+  ))
   .add('should render the title for the comparison audience chart', () => (
     <div
       style={{
         width: '750px',
       }}
     >
-      <Title />
+      <Title chartName={'Audience'} />
     </div>
   ));

@@ -16,8 +16,8 @@ export ChartHeader from './ChartHeader';
 export Modal from './Modal';
 export DropdownItem from './DropdownItem';
 export VerticalDivider from './VerticalDivider';
-
-
+export ComparisonChartWrapper from './ComparisonChartWrapper';
 export ComparisonChart from './ComparisonChart';
 export ComparisonChartTooltip from './ComparisonChartTooltip';
 export ComparisonFooter from './ComparisonFooter';
+export ComparisonTitle from './ComparisonTitle';

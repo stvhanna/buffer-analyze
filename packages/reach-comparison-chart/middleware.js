@@ -8,11 +8,12 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
     case profileActionTypes.COMPARE_PROFILES: {
       const selectedProfileIds = action.selectedProfiles.map(p => p.id);
       dispatch(actions.fetch({
-        name: 'reach_comparison',
+        name: 'comparison',
         args: {
           profileIds: selectedProfileIds,
           startDate: getState().date.startDate,
           endDate: getState().date.endDate,
+          metric: 'reach',
         },
       }));
       break;
@@ -20,12 +21,13 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
     case dateActionTypes.SET_DATE_RANGE: {
       const selectedProfileIds = getState().multiProfileSelector.selectedProfiles.map(p => p.id);
       dispatch(actions.fetch({
-        name: 'reach_comparison',
+        name: 'comparison',
         args: {
           profileIds: selectedProfileIds,
           profileService: getState().profiles.selectedProfileService,
           startDate: action.startDate,
           endDate: action.endDate,
+          metric: 'reach',
         },
       }));
       break;

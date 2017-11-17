@@ -61,7 +61,7 @@ Header.propTypes = {
   timezone: PropTypes.string.isRequired,
 };
 
-const ChartTooltip = ({
+const ComparisonChartTooltip = ({
   day,
   label,
   ...extraProps
@@ -75,13 +75,13 @@ const ChartTooltip = ({
   </Wrapper>
 );
 
-ChartTooltip.propTypes = {
+ComparisonChartTooltip.propTypes = {
   day: PropTypes.number.isRequired,
   label: PropTypes.string,
 };
 
-ChartTooltip.defaultProps = {
+ComparisonChartTooltip.defaultProps = {
   label: null,
 };
 
-export default ChartTooltip;
+export default ComparisonChartTooltip;

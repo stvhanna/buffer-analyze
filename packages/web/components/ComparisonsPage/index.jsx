@@ -72,7 +72,7 @@ const ComparisonsPage = ({
               <MultiProfileSelector />
             </div>
             <div style={toolbarDatePicker}>
-              <DatePicker />
+              <DatePicker staticData />
             </div>
           </div>
         </div>

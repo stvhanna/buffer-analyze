@@ -23,7 +23,8 @@ exports[`Snapshots ReachComparisonChart should render a "no data" state 1`] = `
             }
           }
         >
-          Reach comparison
+          Reach
+           comparison
         </span>
       </h2>
       <div
@@ -119,7 +120,8 @@ exports[`Snapshots ReachComparisonChart should render a loading state 1`] = `
             }
           }
         >
-          Reach comparison
+          Reach
+           comparison
         </span>
       </h2>
       <div
@@ -218,7 +220,7 @@ exports[`Snapshots ReachComparisonChart should render a loading state 1`] = `
                   }
                 }
               >
-                Reach chart loading...
+                Reach comparison chart loading...
               </span>
             </div>
           </div>
@@ -252,7 +254,8 @@ exports[`Snapshots ReachComparisonChart should render the reach comparison chart
             }
           }
         >
-          Reach comparison
+          Reach
+           comparison
         </span>
       </h2>
       <div
@@ -320,22 +323,6 @@ exports[`Snapshots ReachComparisonChart should render the reach comparison chart
                         Buffer
                       </span>
                     </div>
-                    <span
-                      style={
-                        Object {
-                          "background": "#fda3f3",
-                          "borderColor": "#df85d5",
-                          "borderRadius": "10px",
-                          "borderStyle": "solid",
-                          "borderWidth": "1px",
-                          "display": "inline-block",
-                          "height": "7px",
-                          "marginRight": "5px",
-                          "verticalAlign": "baseline",
-                          "width": "7px",
-                        }
-                      }
-                    />
                   </div>
                 </span>
               </span>
@@ -501,22 +488,6 @@ exports[`Snapshots ReachComparisonChart should render the reach comparison chart
                         buffer
                       </span>
                     </div>
-                    <span
-                      style={
-                        Object {
-                          "background": "#fda444",
-                          "borderColor": "#df8626",
-                          "borderRadius": "10px",
-                          "borderStyle": "solid",
-                          "borderWidth": "1px",
-                          "display": "inline-block",
-                          "height": "7px",
-                          "marginRight": "5px",
-                          "verticalAlign": "baseline",
-                          "width": "7px",
-                        }
-                      }
-                    />
                   </div>
                 </span>
               </span>
@@ -659,7 +630,8 @@ exports[`Snapshots ReachComparisonChart should render the reach comparison chart
             }
           }
         >
-          Reach comparison
+          Reach
+           comparison
         </span>
       </h2>
       <div
@@ -727,22 +699,6 @@ exports[`Snapshots ReachComparisonChart should render the reach comparison chart
                         Buffer
                       </span>
                     </div>
-                    <span
-                      style={
-                        Object {
-                          "background": "#fda3f3",
-                          "borderColor": "#df85d5",
-                          "borderRadius": "10px",
-                          "borderStyle": "solid",
-                          "borderWidth": "1px",
-                          "display": "inline-block",
-                          "height": "7px",
-                          "marginRight": "5px",
-                          "verticalAlign": "baseline",
-                          "width": "7px",
-                        }
-                      }
-                    />
                   </div>
                 </span>
               </span>
@@ -857,35 +813,6 @@ exports[`Snapshots ReachComparisonChart should render the reach comparison chart
         </ul>
       </section>
     </div>
-  </div>
-</span>
-`;
-
-exports[`Snapshots Title should render the title for the comparison reach chart 1`] = `
-<span>
-  <div
-    style={
-      Object {
-        "width": "750px",
-      }
-    }
-  >
-    <h2
-      className="sc-gzVnrw LRhtN"
-    >
-      <span
-        style={
-          Object {
-            "color": "#59626a",
-            "fontFamily": "\\"Roboto\\", sans-serif",
-            "fontSize": "2rem",
-            "fontWeight": 700,
-          }
-        }
-      >
-        Reach comparison
-      </span>
-    </h2>
   </div>
 </span>
 `;

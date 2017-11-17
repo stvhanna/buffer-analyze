@@ -37,10 +37,19 @@ const ProfileUsernameWrapper = styled.div`
   margin-right: 10px;
 `;
 
-const Footer = ({ profileTotals }) => (
+const ComparisonFooter = ({ profileTotals }) => (
   <Wrapper>
     <Grid>
-      {profileTotals.map(total => <GridItem
+      {profileTotals.map(total =>
+        // {
+        //   total.service === 'instagram' && (
+        //       total.metric.label === 'Impressions' || total.metric.label === 'Engagements'
+        //     ) ?
+        //       <Text color="nevada" size="small">Coming soon for Instagram</Text>
+        //     :
+        //       <MetricIcon key={total.profileId} metric={total.metric} />
+        // }
+      <GridItem
         key={total.profileId}
         metric={{
           label: total.metric.label,
@@ -54,7 +63,6 @@ const Footer = ({ profileTotals }) => (
                 {total.username}
               </Text>
             </ProfileUsernameWrapper>
-            <MetricIcon key={total.profileId} metric={total.metric} />
           </ProfileAvatarWrapper>
         }
       />)}
@@ -62,11 +70,11 @@ const Footer = ({ profileTotals }) => (
   </Wrapper>
 );
 
-Footer.defaultProps = {
+ComparisonFooter.defaultProps = {
   loading: false,
 };
 
-Footer.propTypes = {
+ComparisonFooter.propTypes = {
   profileTotals: PropTypes.arrayOf(PropTypes.shape({
     metric: PropTypes.shape({
       label: PropTypes.string.isRequired,
@@ -76,8 +84,9 @@ Footer.propTypes = {
     currentPeriodDiff: PropTypes.number.isRequired,
     profileId: PropTypes.string.isRequired,
     username: PropTypes.string.isRequired,
+    service: PropTypes.string,
   })).isRequired,
 };
 
-export default Footer;
+export default ComparisonFooter;
 
