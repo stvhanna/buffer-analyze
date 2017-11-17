@@ -29,7 +29,14 @@ const gridContainer = {
 
 export const Table = ({ metrics }) =>
   <ul style={gridStyle}>
-    {metrics.map(metric => <GridItem key={metric.label} metric={metric} />)}
+    {metrics.map((metric) => {
+      const itemProps = {
+        key: metric.label,
+        metric,
+      };
+      if (metrics.length === 5) itemProps.gridWidth = '20%';
+      return (<GridItem {...itemProps} />);
+    })}
   </ul>;
 
 Table.propTypes = {
