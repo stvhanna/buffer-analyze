@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import moment from 'moment';
 
 import Text from '@bufferapp/components/Text';
-import styles from './date-picker-button.less';
 
 const formatDate = (date, dateFormat = 'MM/DD/YY') =>
   moment.unix(date).format(dateFormat);

@@ -1,15 +1,13 @@
 @import '../styleGuide/config.less';
 
-@gridSpaceHeight: 45px;
-@gridSpaceWidth: 100%/7;
+@gridSpaceHeight: 1rem;
+@gridSpaceWidth: 3rem;
 
 @inactiveColor: @darkGray;
 
-@headerHeight: 45px;
-
 .calendar {
-  margin-top: 2*@base;
   display: none;
+  margin-top: 1rem;
   border: solid 1px @borderColor;
   border-radius: 3px;
 }
@@ -23,14 +21,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  font-size: 1.25em;
+  font-size: 0.75em;
   font-family: @baseFontFamily;
-
-  height: @headerHeight;
-
+  height: 2rem;
   border-bottom: solid 1px @borderColor;
-
   text-align: center;
   background: #FAFBFB;
 
@@ -55,17 +49,17 @@
 .dayHeaderListItem {
   display: inline-block;
   text-decoration: none;
-  width: @gridSpaceWidth;
+  width: 3rem;
   font-family: @baseFontFamily;
-  height: 35px;
-  line-height: 35px;
+  height: 1.5rem;
+  line-height: 1.5rem;
   text-align: center;
   color: @darkGray;
   border-bottom: solid 1px @borderColor;
 }
 
 .week {
-  margin: 0 2*@base;
+  margin: 0 1rem;
 
   &:last-of-type {
     margin-bottom: @base;
@@ -91,10 +85,10 @@
 
 .marker {
   display: inline-block;
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
-  border-radius: 35px;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  border-radius: 1.5rem;
 }
 
 .hoverMarker:hover {
@@ -123,7 +117,7 @@
 }
 
 .markerConnector {
-  height: 35px;
+  height: 1.5rem;
   flex-grow: 1;
 }
 

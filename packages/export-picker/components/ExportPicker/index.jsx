@@ -6,7 +6,12 @@ import Button from './Button';
 import Dropdown from './Dropdown';
 import List from './List';
 
-const styleCatcher = {
+const containerStyle = {
+  position: 'relative',
+  width: '8rem',
+};
+
+const catcherStyle = {
   display: 'none',
   position: 'fixed',
   top: 0,
@@ -16,8 +21,8 @@ const styleCatcher = {
   zIndex: 1,
 };
 
-const styleCatcherOpen = {
-  ...styleCatcher,
+const catcherOpenStyle = {
+  ...catcherStyle,
   display: 'block',
 };
 
@@ -32,7 +37,7 @@ const ExportPicker = (props) => {
   } = props;
 
   return (
-    <div style={{ position: 'relative', width: '8rem' }}>
+    <div style={containerStyle}>
       <Button
         isOpen={isOpen}
         loading={loading}
@@ -43,7 +48,12 @@ const ExportPicker = (props) => {
         <List {...props} />
       </Dropdown>
 
-      <div style={(isOpen ? styleCatcherOpen : styleCatcher)} tabIndex="0" role="button" onClick={close} />
+      <div
+        style={(isOpen ? catcherOpenStyle : catcherStyle)}
+        tabIndex="0"
+        role="button"
+        onClick={close}
+      />
     </div>
   );
 };

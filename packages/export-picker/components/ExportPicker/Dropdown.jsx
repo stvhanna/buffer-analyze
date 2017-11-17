@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const styleDropdown = {
+const dropdownStyle = {
   zIndex: 2,
   display: 'none',
   position: 'absolute',
@@ -16,22 +16,22 @@ const styleDropdown = {
   boxShadow: '0px 1px 2px rgba(0, 0, 0, 0.05)',
 };
 
-const styleDropdownOpen = {
-  ...styleDropdown,
+const dropdownOpenStyle = {
+  ...dropdownStyle,
   display: 'block',
 };
 
-const ExportPickerDropdown = ({ isOpen, children }) => {
+const Dropdown = ({ isOpen, children }) => {
   return (
-    <div style={(isOpen ? styleDropdownOpen : styleDropdown)}>
+    <div style={(isOpen ? dropdownOpenStyle : dropdownStyle)}>
       {children}
     </div>
   );
 };
 
-ExportPickerDropdown.propTypes = {
+Dropdown.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   children: PropTypes.node.isRequired,
 };
 
-export default ExportPickerDropdown;
+export default Dropdown;

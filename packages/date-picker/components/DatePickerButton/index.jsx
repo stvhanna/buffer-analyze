@@ -1,23 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
 
 import ArrowDownIcon from '@bufferapp/components/Icon/Icons/ArrowDownIcon';
 import ArrowUpIcon from '@bufferapp/components/Icon/Icons/ArrowUpIcon';
 
-import styles from './date-picker-button.less';
-import {
-  button,
-} from '../styleGuide/components/ButtonSquareSecondary/button-square-secondary.less';
+import { Title } from './Titles';
 
-
-const styleButton = {
+const buttonStyle = {
   cursor: 'pointer',
   display: 'flex',
   padding: '0.75rem 1rem',
-  fontFamily: '"Roboto", sans-serif',
-  fontSize: '0.75rem',
-  fontWeight: 'bold',
   color: '#333333',
   textDecoration: 'none',
   textShadow: 'none',
@@ -30,35 +22,25 @@ const styleButton = {
   outline: '0 none',
 };
 
-const styleButtonDisabled = {
-  ...styleButton,
+const buttonDisabledStyle = {
+  ...buttonStyle,
   opacity: 0.2,
   pointerEvents: 'none',
 };
 
-import { Title, Subtitle } from './Titles';
-
-
-        // <Subtitle startDate={startDate} endDate={endDate} />
-
 const DatePickerButton = ({ isOpen, loading, startDate, endDate, handleClick }) => {
-  const buttonClass = classNames(button, styles.button, {
-    [styles.disabled]: loading,
-  });
 
   return (
     <button
-      style={(loading ? styleButtonDisabled : styleButton)}
+      style={(loading ? buttonDisabledStyle : buttonStyle)}
       disabled={loading}
       onClick={handleClick}
     >
       <Title loading={loading} startDate={startDate} endDate={endDate} />
-      <span className={styles.rightSide}>
-        <span style={{ marginLeft: '5px' }}>
-          { isOpen ?
-            <ArrowUpIcon size="small" /> :
-            <ArrowDownIcon size="small" /> }
-        </span>
+      <span style={{ marginLeft: 'auto' }}>
+        { isOpen ?
+          <ArrowUpIcon size="small" /> :
+          <ArrowDownIcon size="small" /> }
       </span>
     </button>
   );

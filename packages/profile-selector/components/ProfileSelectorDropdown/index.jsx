@@ -97,25 +97,6 @@ const ProfileSelectorDropdown = ({
     [dropdownTriggerActive]: isDropdownOpen,
   });
 
-  const manageAccountsStyle = {
-    display: 'inline-block',
-    margin: '0',
-    padding: '0.4rem 0',
-    fontFamily,
-    fontSize: '0.8rem',
-    color: curiousBlue,
-    backgroundColor: 'transparent',
-    border: 'solid 1px',
-    boxSizing: 'border-box',
-    borderRadius: '3px',
-    cursor: 'pointer',
-    outline: 'none',
-    width: '100%',
-    transition: `background-color ${transitionAnimationTime} ${transitionAnimationType}`,
-    textAlign: 'center',
-    textDecoration: 'none',
-  };
-
   if (profiles.length) {
     const filteredProfiles = profiles.filter(
       p => p.username.toLowerCase().match(profilesFilterString),
@@ -136,7 +117,7 @@ const ProfileSelectorDropdown = ({
           <ProfileBadge
             avatarUrl={selectedProfile.avatarUrl}
             service={selectedProfile.service}
-            avatarSize={23}
+            avatarSize={22}
             socialIconSize={11}
           />
           <Text weight="bold" size="small">{selectedProfile.username}</Text>
@@ -148,9 +129,6 @@ const ProfileSelectorDropdown = ({
         <DropdownContent className={contentClasses} >
           <div
             className={dropdownContentInputHolder}
-            style={{
-              padding: '10px',
-            }}
           >
             <Input
               placeholder={'Search'}
@@ -167,14 +145,6 @@ const ProfileSelectorDropdown = ({
               { filteredProfiles.map(p => renderDropdownItem(p, selectedProfileId, selectProfile)) }
             </ul>
           }
-          <div
-            style={{
-              marginTop: '10px',
-              padding: '10px',
-            }}
-          >
-            <a href={'//buffer.com/manage'} style={manageAccountsStyle} >Manage accounts</a>
-          </div>
         </DropdownContent>
       </Dropdown>);
   }

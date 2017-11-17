@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import moment from 'moment';
-import Button from '@bufferapp/components/Button';
+
+import { Text, Button } from '@bufferapp/components';
 
 import styles from '../DatePickerForm/date-picker-form.less';
 
@@ -65,7 +66,7 @@ const Presets = ({ selectPreset, minStartDate, startDate, endDate }) => {
         data-tip={dataTip}
         className={itemClass}
       >
-        <Button noStyle onClick={handleClick}>{preset.name}</Button>
+        <Button noStyle onClick={handleClick}><Text size="small" color={(selected ? 'white' : null)}>{preset.name}</Text></Button>
       </li>
     );
   });

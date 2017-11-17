@@ -6,13 +6,10 @@ import ArrowUpIcon from '@bufferapp/components/Icon/Icons/ArrowUpIcon';
 
 import Text from '@bufferapp/components/Text';
 
-const styleButton = {
+const buttonStyle = {
   cursor: 'pointer',
   display: 'flex',
   padding: '0.75rem 1rem',
-  fontFamily: '"Roboto", sans-serif',
-  fontSize: '0.75rem',
-  fontWeight: 'bold',
   color: '#333333',
   textDecoration: 'none',
   textShadow: 'none',
@@ -25,8 +22,8 @@ const styleButton = {
   outline: '0 none',
 };
 
-const styleButtonDisabled = {
-  ...styleButton,
+const buttonDisabledStyle = {
+  ...buttonStyle,
   opacity: 0.2,
   pointerEvents: 'none',
 };
@@ -34,7 +31,7 @@ const styleButtonDisabled = {
 const DatePickerButton = ({ isOpen, loading, exporting, handleClick }) => {
   return (
     <button
-      style={(loading || exporting ? styleButtonDisabled : styleButton)}
+      style={(loading || exporting ? buttonDisabledStyle : buttonStyle)}
       disabled={(exporting || exporting)}
       onClick={handleClick}
     >

@@ -20,8 +20,8 @@ class ExportPickerList extends Component {
   render() {
     return (
       <ul style={listStyle}>
-        <li style={itemStyle}><Text size="small" weight="bold">Export as CSV</Text></li>
-        <li style={itemStyle}><Text size="small" weight="bold">Export as PNG</Text></li>
+        <li style={itemStyle}><Text size="small">Export as CSV</Text></li>
+        <li style={itemStyle}><Text size="small">Export as PNG</Text></li>
       </ul>
     );
   }
