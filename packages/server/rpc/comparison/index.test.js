@@ -25,9 +25,9 @@ describe('rpc/comparison', () => {
   it('should send a POST request to /comparison with the provided parameters', async () => {
     const startDate = moment().subtract(7, 'days');
     const endDate = moment().subtract(1, 'days');
-    const metricKey = 'reach';
+    const metric = 'reach';
     rp.mockReturnValueOnce(Promise.resolve(response));
-    const result = await comparison.fn({ profileIds, startDate, endDate, metricKey });
+    const result = await comparison.fn({ profileIds, startDate, endDate, metric });
 
     const start = moment.unix(startDate).format('MM/DD/YYYY');
     const end = moment.unix(endDate).format('MM/DD/YYYY');
@@ -43,7 +43,7 @@ describe('rpc/comparison', () => {
         profiles: profileIds,
         start_date: dateRange.start,
         end_date: dateRange.end,
-        metric: metricKey,
+        metric,
       },
       json: true,
     }]);

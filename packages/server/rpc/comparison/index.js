@@ -49,7 +49,6 @@ const formatDailyData = (day, value, profileService, metricKey) => {
 };
 
 function formatData(result, metricKey) {
-  console.log(result);
   const profileIds = Object.keys(result);
   const profilesMetricData = Array.from(profileIds, (id) => {
     const data = result[id];
@@ -114,7 +113,7 @@ module.exports = method(
         profiles: profileIds,
         start_date: dateRange.start,
         end_date: dateRange.end,
-        metric: metric,
+        metric,
       },
       json: true,
     }).then(({ response }) => (
