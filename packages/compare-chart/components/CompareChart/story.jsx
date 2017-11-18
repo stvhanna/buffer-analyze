@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
 import { action as actionLogger } from '@storybook/addon-actions';
+import { ReportsStore } from '@bufferapp/analyze-decorators';
 
 import CompareChart from './index';
 import mockDailyData from '../../mocks/dailyData';
@@ -9,6 +10,7 @@ import mockTotals from '../../mocks/totals';
 
 storiesOf('CompareChart')
   .addDecorator(checkA11y)
+  .addDecorator(ReportsStore)
   .add('should render the compare chart', () => (
     <div
       style={{
