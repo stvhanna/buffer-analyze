@@ -32,7 +32,6 @@ const metrics = {
 storiesOf('AverageTable')
   .addDecorator(checkA11y)
   .addDecorator(ReportsStore)
-  .addDecorator(ReportsStore)
   .add('should render the average table', () => (
     <div
       style={{
