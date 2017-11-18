@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/top-posts-table",
-  "version": "0.15.0",
+  "version": "0.15.2",
   "description": "The top posts table for Insights.",
   "main": "index.js",
   "scripts": {
@@ -24,10 +24,10 @@
     "@bufferapp/add-report": "^0.15.0",
     "@bufferapp/analyze-csv-export": "^0.9.0",
     "@bufferapp/analyze-date-picker": "^0.15.0",
+    "@bufferapp/analyze-decorators": "^0.15.2",
     "@bufferapp/analyze-png-export": "^0.9.0",
     "@bufferapp/analyze-profile-selector": "^0.15.0",
     "@bufferapp/analyze-shared-components": "^0.15.0",
-    "@bufferapp/analyze-decorators": "^0.1.0",
     "@bufferapp/async-data-fetch": "0.5.36-beta01",
     "@bufferapp/components": "2.1.1",
     "@bufferapp/nav-sidebar": "^0.15.0",
