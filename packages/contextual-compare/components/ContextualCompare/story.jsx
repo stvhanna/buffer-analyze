@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
 import { action as actionLogger } from '@storybook/addon-actions';
+import { ReportsStore } from '@bufferapp/analyze-decorators';
 import ContextualCompare from './index';
 
 import mockDailyData from '../../mocks/dailyData';
@@ -13,6 +14,7 @@ selectedMetrics[0].squaredIcon = true;
 
 storiesOf('ContextualCompare')
   .addDecorator(checkA11y)
+  .addDecorator(ReportsStore)
   .add('[TESTED] Should render in Presets mode with multiple metrics for each category', () => (
     <div
       style={{
