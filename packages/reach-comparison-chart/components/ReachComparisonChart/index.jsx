@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { ComparisonChartWrapper } from '@bufferapp/analyze-shared-components';
 
+const CHART_NAME = 'Reach';
+
 const ReachComparisonChart = ({
   profilesMetricData,
   profileTotals,
@@ -12,7 +14,7 @@ const ReachComparisonChart = ({
       profilesMetricData={profilesMetricData}
       profileTotals={profileTotals}
       loading={loading}
-      chartName={'Reach'}
+      chartName={CHART_NAME}
     />
   );
 

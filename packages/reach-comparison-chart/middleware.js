@@ -2,6 +2,8 @@ import { actions } from '@bufferapp/async-data-fetch';
 import { actionTypes as profileActionTypes } from '@bufferapp/multi-profile-selector';
 import { actionTypes as dateActionTypes } from '@bufferapp/analyze-date-picker';
 
+const METRIC_NAME = 'reach';
+
 export default store => next => (action) => { // eslint-disable-line no-unused-vars
   const { dispatch, getState } = store;
   switch (action.type) {
@@ -13,7 +15,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
           profileIds: selectedProfileIds,
           startDate: getState().date.startDate,
           endDate: getState().date.endDate,
-          metric: 'reach',
+          metric: METRIC_NAME,
         },
       }));
       break;
@@ -27,7 +29,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
           profileService: getState().profiles.selectedProfileService,
           startDate: action.startDate,
           endDate: action.endDate,
-          metric: 'reach',
+          metric: METRIC_NAME,
         },
       }));
       break;

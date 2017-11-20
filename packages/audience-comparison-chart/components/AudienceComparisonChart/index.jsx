@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { ComparisonChartWrapper } from '@bufferapp/analyze-shared-components';
 
+const CHART_NAME = 'Audience';
+
 const AudienceComparisonChart = ({
   profilesMetricData,
   profileTotals,
@@ -12,7 +14,7 @@ const AudienceComparisonChart = ({
       profilesMetricData={profilesMetricData}
       profileTotals={profileTotals}
       loading={loading}
-      chartName={'Audience'}
+      chartName={CHART_NAME}
     />
   );
 
