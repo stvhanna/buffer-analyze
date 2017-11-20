@@ -2,9 +2,6 @@
 # yarn lockfile v1
 
 
-"@bufferapp/analyze-export-picker@./packages/export-picker/":
-  version "0.12.0"
-
 "@bufferapp/app-sidebar@0.7.4":
   version "0.7.4"
   resolved "https://registry.yarnpkg.com/@bufferapp/app-sidebar/-/app-sidebar-0.7.4.tgz#a907618701408627f73b30abe74ddd5121194933"
