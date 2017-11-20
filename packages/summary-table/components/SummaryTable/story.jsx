@@ -1,10 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { ReportsStore } from '@bufferapp/analyze-decorators';
 import { checkA11y } from 'storybook-addon-a11y';
 import SummaryTable from './index';
 
 storiesOf('SummaryTable')
   .addDecorator(checkA11y)
+  .addDecorator(ReportsStore)
   .add('should render the summary table', () => (
     <div
       style={{

@@ -19,7 +19,7 @@ storiesOf('InsightsPage')
       </Router>
     </Provider>),
   )
-  .add('should render reports page', () => (
+  .add('should render Insights page', () => (
     <InsightsPage
       location={{
         pathname: '/insights/twitter',

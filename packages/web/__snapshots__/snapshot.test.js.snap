@@ -1171,7 +1171,7 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
 </span>
 `;
 
-exports[`Snapshots InsightsPage should render reports page 1`] = `
+exports[`Snapshots InsightsPage should render Insights page 1`] = `
 <span>
   <div
     style={
@@ -1646,7 +1646,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
               className="bi-calendar"
             />
             <span>
-              From: 11/08/17 - To: 11/14/17
+              From: 11/11/17 - To: 11/17/17
             </span>
             <span
               className="rightSide"

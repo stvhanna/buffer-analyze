@@ -1,5 +1,5 @@
 import React from 'react';
-import moment from 'moment';
+import moment from 'moment-timezone';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
 import createStore, { history } from '@bufferapp/analyze-store';
@@ -10,7 +10,7 @@ import {
 
 import ReportsPage from './index';
 
-const mockTimestamp = moment('2017-11-05').valueOf();
+const mockTimestamp = moment('2017-11-05').tz('etc/UTC').valueOf();
 Date.now = () => mockTimestamp;
 
 storiesOf('ReportsPage')
