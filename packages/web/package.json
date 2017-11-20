@@ -22,7 +22,7 @@
   "dependencies": {
     "@bufferapp/analyze-csv-export": "^0.9.0",
     "@bufferapp/analyze-date-picker": "^0.15.0",
-    "@bufferapp/analyze-export-picker": "./packages/export-picker/",
+    "@bufferapp/analyze-export-picker": "^0.12.0",
     "@bufferapp/analyze-png-export": "^0.9.0",
     "@bufferapp/analyze-profile-selector": "^0.15.0",
     "@bufferapp/analyze-shared-components": "^0.15.0",
