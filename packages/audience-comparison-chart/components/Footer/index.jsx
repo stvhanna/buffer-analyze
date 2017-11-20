@@ -5,10 +5,6 @@ import styled from 'styled-components';
 import Text from '@bufferapp/components/Text';
 
 import {
-  geyser,
-} from '@bufferapp/components/style/color';
-
-import {
   GridItem,
   MetricIcon,
 } from '@bufferapp/analyze-shared-components';
@@ -16,17 +12,13 @@ import {
 const Grid = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  padding: 0 0 0 10px;
+  padding: 0 0 0 0.5rem;
   margin: 0 auto;
-  border: solid 1px ${geyser};
-  border-top-style: none;
-  border-radius: 2px;
 `;
 
 const Wrapper = styled.section`
-  min-height: 12rem;
   position: relative;
-  margin: 0 0 1.5rem;
+  padding: 0 1rem 1rem;
 `;
 
 const ProfileAvatarWrapper = styled.div`
