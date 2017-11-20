@@ -12,16 +12,6 @@ import {
   Input,
   Text,
 } from '@bufferapp/components';
-import {
-  curiousBlue,
-} from '@bufferapp/components/style/color';
-import {
-  fontFamily,
-} from '@bufferapp/components/style/font';
-import {
-  transitionAnimationTime,
-  transitionAnimationType,
-} from '@bufferapp/components/style/animation';
 
 import {
   dropdownContainer,
@@ -141,7 +131,7 @@ const ProfileSelectorDropdown = ({
             }
           </div>
           { filteredProfiles.length > 0 &&
-            <ul className={dropdownListClasses} >
+            <ul className={dropdownListClasses} style={{ paddingBottom: '0.5rem' }}>
               { filteredProfiles.map(p => renderDropdownItem(p, selectedProfileId, selectProfile)) }
             </ul>
           }
