@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { ComparisonChartWrapper } from '@bufferapp/analyze-shared-components';
 
-const CHART_NAME = 'Audience';
+const CHART_NAME = 'Reach';
 
-const AudienceComparisonChart = ({
+const ReachComparisonChart = ({
   profilesMetricData,
   profileTotals,
   loading,
@@ -18,12 +18,12 @@ const AudienceComparisonChart = ({
     />
   );
 
-AudienceComparisonChart.defaultProps = {
+ReachComparisonChart.defaultProps = {
   loading: false,
   selectedProfiles: [],
 };
 
-AudienceComparisonChart.propTypes = {
+ReachComparisonChart.propTypes = {
   loading: PropTypes.bool,
   // props used for generating chart
   profilesMetricData: PropTypes.arrayOf(PropTypes.shape({
@@ -52,4 +52,4 @@ AudienceComparisonChart.propTypes = {
   })).isRequired,
 };
 
-export default AudienceComparisonChart;
+export default ReachComparisonChart;

@@ -2,7 +2,7 @@ import { actions } from '@bufferapp/async-data-fetch';
 import { actionTypes as profileActionTypes } from '@bufferapp/multi-profile-selector';
 import { actionTypes as dateActionTypes } from '@bufferapp/analyze-date-picker';
 
-const METRIC_NAME = 'audience';
+const METRIC_NAME = 'reach';
 
 export default store => next => (action) => { // eslint-disable-line no-unused-vars
   const { dispatch, getState } = store;

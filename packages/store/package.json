@@ -42,7 +42,8 @@
     "@bufferapp/report": "^0.15.2",
     "@bufferapp/report-list": "^0.15.0",
     "@bufferapp/summary-table": "^0.15.2",
-    "@bufferapp/top-posts-table": "^0.15.2"
+    "@bufferapp/top-posts-table": "^0.15.2",
+    "@bufferapp/reach-comparison-chart": "^0.0.1"
   },
   "devDependencies": {
     "eslint": "3.19.0",

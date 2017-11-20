@@ -16,7 +16,7 @@ export default (state = initialState, action) => {
         loading: true,
       };
     case `comparison_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
-      if (action.args.metric === 'audience') {
+      if (action.args.metric === 'reach') {
         return {
           ...state,
           profilesMetricData: action.result.profilesMetricData,

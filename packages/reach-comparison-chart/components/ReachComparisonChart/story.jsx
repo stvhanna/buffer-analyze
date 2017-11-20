@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
 
-import AudienceComparisonChart from './index';
+import ReachComparisonChart from './index';
 import mockDailyData from '../../mocks/dailyData';
 
 const profileTotals = [
@@ -14,7 +14,7 @@ const profileTotals = [
     service: 'facebook',
     metric: {
       color: '#fda3f3',
-      label: 'Fans',
+      label: 'Impressions',
     },
   },
   {
@@ -25,32 +25,43 @@ const profileTotals = [
     service: 'twitter',
     metric: {
       color: '#fda444',
-      label: 'Followers',
+      label: 'Impressions',
+    },
+  },
+  {
+    currentPeriodTotal: 2000,
+    currentPeriodDiff: 80,
+    profileId: '5678abcd',
+    username: 'TestInstagram',
+    service: 'instagram',
+    metric: {
+      color: '#fda444',
+      label: 'Impressions',
     },
   },
 ];
 
-storiesOf('AudienceComparisonChart')
+storiesOf('ReachComparisonChart')
   .addDecorator(checkA11y)
-  .add('should render the audience comparison chart for a single profile', () => (
+  .add('should render the reach comparison chart for a single profile', () => (
     <div
       style={{
         width: '750px',
       }}
     >
-      <AudienceComparisonChart
+      <ReachComparisonChart
         profilesMetricData={[mockDailyData[0]]}
         profileTotals={[profileTotals[0]]}
       />
     </div>
   ))
-  .add('should render the audience comparison chart for a multiple profiles', () => (
+  .add('should render the reach comparison chart for a multiple profiles', () => (
     <div
       style={{
         width: '750px',
       }}
     >
-      <AudienceComparisonChart
+      <ReachComparisonChart
         profilesMetricData={mockDailyData}
         profileTotals={profileTotals}
       />
@@ -62,7 +73,7 @@ storiesOf('AudienceComparisonChart')
         width: '750px',
       }}
     >
-      <AudienceComparisonChart
+      <ReachComparisonChart
         profilesMetricData={[]}
         profileTotals={[]}
         loading
@@ -75,7 +86,7 @@ storiesOf('AudienceComparisonChart')
         width: '750px',
       }}
     >
-      <AudienceComparisonChart
+      <ReachComparisonChart
         profilesMetricData={[]}
         profileTotals={[]}
       />
