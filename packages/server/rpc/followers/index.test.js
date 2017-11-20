@@ -23,7 +23,11 @@ describe('rpc/followers', () => {
       response: 'current_follower_count',
     }));
     const followersCount = await followers.fn({ profileId }, {
-      session: { accessToken },
+      session: {
+        analyze: {
+          accessToken,
+        },
+      },
     });
 
     expect(rp.mock.calls[0])
@@ -40,4 +44,3 @@ describe('rpc/followers', () => {
     expect(followersCount).toBe('current_follower_count');
   });
 });
-

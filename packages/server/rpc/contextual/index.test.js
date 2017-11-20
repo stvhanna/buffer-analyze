@@ -35,7 +35,9 @@ describe('rpc/contextual', () => {
       profileService,
     }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
@@ -58,7 +60,9 @@ describe('rpc/contextual', () => {
 
     const data = await contextual.fn({ profileId, profileService }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
@@ -72,7 +76,9 @@ describe('rpc/contextual', () => {
 
     const data = await contextual.fn({ profileId, profileService }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
@@ -88,7 +94,9 @@ describe('rpc/contextual', () => {
 
     const data = await contextual.fn({ profileId, profileService }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
     expect(data.data.length).toBe(7);
@@ -122,7 +130,9 @@ describe('rpc/contextual', () => {
 
     const data = await contextual.fn({ profileId, profileService }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
     expect(data.data.length).toBe(1);
@@ -157,7 +167,9 @@ describe('rpc/contextual', () => {
 
     const data = await contextual.fn({ profileId, profileService }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
     expect(data.presets.length).toBe(1);
@@ -186,7 +198,9 @@ describe('rpc/contextual', () => {
 
     const data = await contextual.fn({ profileId, profileService }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
     expect(data.presets.length).toBe(0);
@@ -197,7 +211,9 @@ describe('rpc/contextual', () => {
 
     const data = await contextual.fn({ profileId, profileService }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
     expect(data.presets.length).toBe(2);
@@ -225,7 +241,9 @@ describe('rpc/contextual', () => {
 
     const data = await contextual.fn({ profileId, profileService }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
     expect(data.presets.length).toBe(0);
@@ -233,4 +251,3 @@ describe('rpc/contextual', () => {
     expect(data.metrics.length).toBe(0);
   });
 });
-

@@ -13,7 +13,7 @@ module.exports = method(
       method: 'POST',
       strictSSL: !(process.env.NODE_ENV === 'development'),
       qs: Object.assign({
-        access_token: session.accessToken,
+        access_token: session.analyze.accessToken,
       }, data),
     })
       .then(result => JSON.parse(result));

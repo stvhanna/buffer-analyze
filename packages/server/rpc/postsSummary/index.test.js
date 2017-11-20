@@ -31,7 +31,9 @@ describe('rpc/posts_summary', () => {
       profileId,
     }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
@@ -59,7 +61,9 @@ describe('rpc/posts_summary', () => {
       profileId,
     }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
@@ -86,7 +90,9 @@ describe('rpc/posts_summary', () => {
 
     const postsSummaryData = await postsSummary.fn({ profileId }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
@@ -118,4 +124,3 @@ describe('rpc/posts_summary', () => {
     ]);
   });
 });
-

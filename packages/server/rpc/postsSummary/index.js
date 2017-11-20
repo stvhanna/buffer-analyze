@@ -59,8 +59,8 @@ module.exports = method(
     const dateRange = new DateRange(start, end);
     const previousDateRange = dateRange.getPreviousDateRange();
 
-    const currentPeriod = requestPostsSummary(profileId, dateRange, session.accessToken);
-    const previousPeriod = requestPostsSummary(profileId, previousDateRange, session.accessToken);
+    const currentPeriod = requestPostsSummary(profileId, dateRange, session.analyze.accessToken);
+    const previousPeriod = requestPostsSummary(profileId, previousDateRange, session.analyze.accessToken);
 
     return Promise
       .all([currentPeriod, previousPeriod])

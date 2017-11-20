@@ -37,7 +37,9 @@ describe('rpc/average', () => {
       profileId,
     }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
@@ -65,7 +67,9 @@ describe('rpc/average', () => {
       profileId,
     }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
@@ -94,7 +98,9 @@ describe('rpc/average', () => {
 
     const data = await average.fn({ profileId }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
@@ -110,7 +116,9 @@ describe('rpc/average', () => {
 
     const data = await average.fn({ profileId }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
@@ -125,7 +133,9 @@ describe('rpc/average', () => {
 
     const data = await average.fn({ profileId }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
@@ -156,7 +166,9 @@ describe('rpc/average', () => {
 
     const data = await average.fn({ profileId }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
@@ -187,7 +199,9 @@ describe('rpc/average', () => {
 
     const data = await average.fn({ profileId }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
@@ -218,7 +232,9 @@ describe('rpc/average', () => {
 
     const data = await average.fn({ profileId }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
@@ -233,4 +249,3 @@ describe('rpc/average', () => {
     });
   });
 });
-

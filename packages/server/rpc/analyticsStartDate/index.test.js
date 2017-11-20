@@ -23,7 +23,11 @@ describe('rpc/analytics_start_date', () => {
       response: ['start_date_for_this_profile'],
     }));
     const startDate = await analyticsStartDate.fn({ profileId }, {
-      session: { accessToken },
+      session: {
+        analyze: {
+          accessToken,
+        },
+      },
     });
 
     expect(rp.mock.calls[0])
@@ -40,4 +44,3 @@ describe('rpc/analytics_start_date', () => {
     expect(startDate).toBe('start_date_for_this_profile');
   });
 });
-

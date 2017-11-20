@@ -31,7 +31,9 @@ describe('rpc/summary', () => {
       profileId,
     }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
@@ -59,7 +61,9 @@ describe('rpc/summary', () => {
       profileId,
     }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
@@ -86,7 +90,9 @@ describe('rpc/summary', () => {
 
     const summaryData = await summary.fn({ profileId }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
@@ -126,4 +132,3 @@ describe('rpc/summary', () => {
     ]);
   });
 });
-
