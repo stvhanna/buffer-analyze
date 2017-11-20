@@ -6,64 +6,93 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
     style={
       Object {
         "position": "relative",
+        "width": "16rem",
       }
     }
   >
     <button
-      className="button button"
       disabled={false}
       onClick={[Function]}
+      style={
+        Object {
+          "border": "1px solid #D5E3EF",
+          "borderRadius": "3px",
+          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+          "boxSizing": "border-box",
+          "color": "#333333",
+          "cursor": "pointer",
+          "display": "flex",
+          "outline": "0 none",
+          "padding": "0.75rem 1rem",
+          "textAlign": "left",
+          "textDecoration": "none",
+          "textShadow": "none",
+          "width": "100%",
+        }
+      }
     >
-      <i
-        className="bi-calendar"
-      />
-      <span>
+      <span
+        style={
+          Object {
+            "color": "#59626a",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontSize": "0.75rem",
+            "fontWeight": 700,
+          }
+        }
+      >
         From: 08/21/17 - To: 08/30/17
       </span>
       <span
-        className="rightSide"
+        style={
+          Object {
+            "marginLeft": "auto",
+          }
+        }
       >
-        <span
-          className="dateRange"
-        >
-          
-        </span>
-        <span
+        <svg
+          height="100%"
           style={
             Object {
-              "marginLeft": "5px",
+              "fill": "#59626a",
+              "height": "0.75rem",
+              "width": "0.75rem",
             }
           }
+          version="1.1"
+          viewBox="0 0 16 16"
+          width="100%"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
         >
-          <svg
-            height="100%"
-            style={
-              Object {
-                "fill": "#59626a",
-                "height": "0.75rem",
-                "width": "0.75rem",
-              }
-            }
-            version="1.1"
-            viewBox="0 0 16 16"
-            width="100%"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
+          <g
+            className="shuttleGray"
           >
-            <g
-              className="shuttleGray"
-            >
-              <path
-                d="M4.90573685,4.61438297 C4.5159485,4.22537555 4.51510793,3.59709045 4.90996552,3.20500565 L4.90996552,3.20500565 C5.30208929,2.81563546 5.93536183,2.81786315 6.32490003,3.21046581 L11.2750374,8.19954548 C11.6643604,8.59193123 11.6645756,9.22591178 11.2750374,9.61606213 L6.32490003,14.5739785 C5.93557705,14.9639132 5.3048231,14.9648641 4.90996552,14.5699959 L4.90996552,14.5699959 C4.51784174,14.1778616 4.51273549,13.5497061 4.9163418,13.1493324 L8.84038203,9.25672113 C9.03897712,9.05971665 9.04484713,8.74520064 8.84038203,8.54114518 L4.90573685,4.61438297 Z"
-                transform="translate(8.089966, 8.890003) scale(-1, 1) rotate(-270.000000) translate(-8.089966, -8.890003) "
-              />
-            </g>
-          </svg>
-        </span>
+            <path
+              d="M4.90573685,4.61438297 C4.5159485,4.22537555 4.51510793,3.59709045 4.90996552,3.20500565 L4.90996552,3.20500565 C5.30208929,2.81563546 5.93536183,2.81786315 6.32490003,3.21046581 L11.2750374,8.19954548 C11.6643604,8.59193123 11.6645756,9.22591178 11.2750374,9.61606213 L6.32490003,14.5739785 C5.93557705,14.9639132 5.3048231,14.9648641 4.90996552,14.5699959 L4.90996552,14.5699959 C4.51784174,14.1778616 4.51273549,13.5497061 4.9163418,13.1493324 L8.84038203,9.25672113 C9.03897712,9.05971665 9.04484713,8.74520064 8.84038203,8.54114518 L4.90573685,4.61438297 Z"
+              transform="translate(8.089966, 8.890003) scale(-1, 1) rotate(-270.000000) translate(-8.089966, -8.890003) "
+            />
+          </g>
+        </svg>
       </span>
     </button>
     <div
-      className="dropDown"
+      style={
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "border": "1px solid #D5E3EF",
+          "borderRadius": 3,
+          "borderWidth": "0 1px 1px",
+          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+          "boxSizing": "border-box",
+          "display": "none",
+          "padding": "0.5rem 1rem",
+          "position": "absolute",
+          "top": "2.25rem",
+          "width": "100%",
+          "zIndex": 2,
+        }
+      }
     >
       <div>
         <header
@@ -104,7 +133,18 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   }
                 }
               >
-                90 Days
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  90 Days
+                </span>
               </button>
             </li>
             <li
@@ -139,7 +179,18 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   }
                 }
               >
-                30 Days
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  30 Days
+                </span>
               </button>
             </li>
             <li
@@ -174,7 +225,18 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   }
                 }
               >
-                28 Days
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  28 Days
+                </span>
               </button>
             </li>
           </ul>
@@ -213,7 +275,18 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   }
                 }
               >
-                7 Days
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  7 Days
+                </span>
               </button>
             </li>
             <li
@@ -248,7 +321,18 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   }
                 }
               >
-                Yesterday
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Yesterday
+                </span>
               </button>
             </li>
             <li
@@ -283,7 +367,18 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
                   }
                 }
               >
-                Custom
+                <span
+                  style={
+                    Object {
+                      "color": "#fff",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Custom
+                </span>
               </button>
             </li>
           </ul>
@@ -294,11 +389,16 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
       </div>
     </div>
     <div
-      className="clickCatcher"
       onClick={undefined}
       role="button"
       style={
         Object {
+          "bottom": 0,
+          "display": "none",
+          "left": 0,
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
           "zIndex": 1,
         }
       }
@@ -314,64 +414,93 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
     style={
       Object {
         "position": "relative",
+        "width": "16rem",
       }
     }
   >
     <button
-      className="button button"
       disabled={false}
       onClick={[Function]}
+      style={
+        Object {
+          "border": "1px solid #D5E3EF",
+          "borderRadius": "3px",
+          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+          "boxSizing": "border-box",
+          "color": "#333333",
+          "cursor": "pointer",
+          "display": "flex",
+          "outline": "0 none",
+          "padding": "0.75rem 1rem",
+          "textAlign": "left",
+          "textDecoration": "none",
+          "textShadow": "none",
+          "width": "100%",
+        }
+      }
     >
-      <i
-        className="bi-calendar"
-      />
-      <span>
+      <span
+        style={
+          Object {
+            "color": "#59626a",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontSize": "0.75rem",
+            "fontWeight": 700,
+          }
+        }
+      >
         Past 7 Days
       </span>
       <span
-        className="rightSide"
+        style={
+          Object {
+            "marginLeft": "auto",
+          }
+        }
       >
-        <span
-          className="dateRange"
-        >
-          08/24/17 to 08/30/17
-        </span>
-        <span
+        <svg
+          height="100%"
           style={
             Object {
-              "marginLeft": "5px",
+              "fill": "#59626a",
+              "height": "0.75rem",
+              "width": "0.75rem",
             }
           }
+          version="1.1"
+          viewBox="0 0 16 16"
+          width="100%"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
         >
-          <svg
-            height="100%"
-            style={
-              Object {
-                "fill": "#59626a",
-                "height": "0.75rem",
-                "width": "0.75rem",
-              }
-            }
-            version="1.1"
-            viewBox="0 0 16 16"
-            width="100%"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
+          <g
+            className="shuttleGray"
           >
-            <g
-              className="shuttleGray"
-            >
-              <path
-                d="M4.90573685,3.83437656 C4.5159485,3.44536915 4.51510793,2.81708404 4.90996552,2.42499924 L4.90996552,2.42499924 C5.30208929,2.03562905 5.93536183,2.03785674 6.32490003,2.4304594 L11.2750374,7.41953907 C11.6643604,7.81192483 11.6645756,8.44590538 11.2750374,8.83605572 L6.32490003,13.7939721 C5.93557705,14.1839068 5.3048231,14.1848577 4.90996552,13.7899895 L4.90996552,13.7899895 C4.51784174,13.3978552 4.51273549,12.7696997 4.9163418,12.369326 L8.84038203,8.47671472 C9.03897712,8.27971024 9.04484713,7.96519423 8.84038203,7.76113877 L4.90573685,3.83437656 Z"
-                transform="translate(8.089966, 8.109997) scale(-1, -1) rotate(-270.000000) translate(-8.089966, -8.109997) "
-              />
-            </g>
-          </svg>
-        </span>
+            <path
+              d="M4.90573685,3.83437656 C4.5159485,3.44536915 4.51510793,2.81708404 4.90996552,2.42499924 L4.90996552,2.42499924 C5.30208929,2.03562905 5.93536183,2.03785674 6.32490003,2.4304594 L11.2750374,7.41953907 C11.6643604,7.81192483 11.6645756,8.44590538 11.2750374,8.83605572 L6.32490003,13.7939721 C5.93557705,14.1839068 5.3048231,14.1848577 4.90996552,13.7899895 L4.90996552,13.7899895 C4.51784174,13.3978552 4.51273549,12.7696997 4.9163418,12.369326 L8.84038203,8.47671472 C9.03897712,8.27971024 9.04484713,7.96519423 8.84038203,7.76113877 L4.90573685,3.83437656 Z"
+              transform="translate(8.089966, 8.109997) scale(-1, -1) rotate(-270.000000) translate(-8.089966, -8.109997) "
+            />
+          </g>
+        </svg>
       </span>
     </button>
     <div
-      className="dropDown open"
+      style={
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "border": "1px solid #D5E3EF",
+          "borderRadius": 3,
+          "borderWidth": "0 1px 1px",
+          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+          "boxSizing": "border-box",
+          "display": "block",
+          "padding": "0.5rem 1rem",
+          "position": "absolute",
+          "top": "2.25rem",
+          "width": "100%",
+          "zIndex": 2,
+        }
+      }
     >
       <div>
         <header
@@ -412,7 +541,18 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                   }
                 }
               >
-                90 Days
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  90 Days
+                </span>
               </button>
             </li>
             <li
@@ -447,7 +587,18 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                   }
                 }
               >
-                30 Days
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  30 Days
+                </span>
               </button>
             </li>
             <li
@@ -482,7 +633,18 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                   }
                 }
               >
-                28 Days
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  28 Days
+                </span>
               </button>
             </li>
           </ul>
@@ -521,7 +683,18 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                   }
                 }
               >
-                7 Days
+                <span
+                  style={
+                    Object {
+                      "color": "#fff",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  7 Days
+                </span>
               </button>
             </li>
             <li
@@ -556,7 +729,18 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                   }
                 }
               >
-                Yesterday
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Yesterday
+                </span>
               </button>
             </li>
             <li
@@ -591,7 +775,18 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
                   }
                 }
               >
-                Custom
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Custom
+                </span>
               </button>
             </li>
           </ul>
@@ -602,11 +797,16 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
       </div>
     </div>
     <div
-      className="clickCatcher clickCatcherActive"
       onClick={[Function]}
       role="button"
       style={
         Object {
+          "bottom": 0,
+          "display": "block",
+          "left": 0,
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
           "zIndex": 1,
         }
       }
@@ -622,64 +822,93 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
     style={
       Object {
         "position": "relative",
+        "width": "16rem",
       }
     }
   >
     <button
-      className="button button"
       disabled={false}
       onClick={[Function]}
+      style={
+        Object {
+          "border": "1px solid #D5E3EF",
+          "borderRadius": "3px",
+          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+          "boxSizing": "border-box",
+          "color": "#333333",
+          "cursor": "pointer",
+          "display": "flex",
+          "outline": "0 none",
+          "padding": "0.75rem 1rem",
+          "textAlign": "left",
+          "textDecoration": "none",
+          "textShadow": "none",
+          "width": "100%",
+        }
+      }
     >
-      <i
-        className="bi-calendar"
-      />
-      <span>
+      <span
+        style={
+          Object {
+            "color": "#59626a",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontSize": "0.75rem",
+            "fontWeight": 700,
+          }
+        }
+      >
         From: 08/21/17 - To: 08/30/17
       </span>
       <span
-        className="rightSide"
+        style={
+          Object {
+            "marginLeft": "auto",
+          }
+        }
       >
-        <span
-          className="dateRange"
-        >
-          
-        </span>
-        <span
+        <svg
+          height="100%"
           style={
             Object {
-              "marginLeft": "5px",
+              "fill": "#59626a",
+              "height": "0.75rem",
+              "width": "0.75rem",
             }
           }
+          version="1.1"
+          viewBox="0 0 16 16"
+          width="100%"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
         >
-          <svg
-            height="100%"
-            style={
-              Object {
-                "fill": "#59626a",
-                "height": "0.75rem",
-                "width": "0.75rem",
-              }
-            }
-            version="1.1"
-            viewBox="0 0 16 16"
-            width="100%"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
+          <g
+            className="shuttleGray"
           >
-            <g
-              className="shuttleGray"
-            >
-              <path
-                d="M4.90573685,3.83437656 C4.5159485,3.44536915 4.51510793,2.81708404 4.90996552,2.42499924 L4.90996552,2.42499924 C5.30208929,2.03562905 5.93536183,2.03785674 6.32490003,2.4304594 L11.2750374,7.41953907 C11.6643604,7.81192483 11.6645756,8.44590538 11.2750374,8.83605572 L6.32490003,13.7939721 C5.93557705,14.1839068 5.3048231,14.1848577 4.90996552,13.7899895 L4.90996552,13.7899895 C4.51784174,13.3978552 4.51273549,12.7696997 4.9163418,12.369326 L8.84038203,8.47671472 C9.03897712,8.27971024 9.04484713,7.96519423 8.84038203,7.76113877 L4.90573685,3.83437656 Z"
-                transform="translate(8.089966, 8.109997) scale(-1, -1) rotate(-270.000000) translate(-8.089966, -8.109997) "
-              />
-            </g>
-          </svg>
-        </span>
+            <path
+              d="M4.90573685,3.83437656 C4.5159485,3.44536915 4.51510793,2.81708404 4.90996552,2.42499924 L4.90996552,2.42499924 C5.30208929,2.03562905 5.93536183,2.03785674 6.32490003,2.4304594 L11.2750374,7.41953907 C11.6643604,7.81192483 11.6645756,8.44590538 11.2750374,8.83605572 L6.32490003,13.7939721 C5.93557705,14.1839068 5.3048231,14.1848577 4.90996552,13.7899895 L4.90996552,13.7899895 C4.51784174,13.3978552 4.51273549,12.7696997 4.9163418,12.369326 L8.84038203,8.47671472 C9.03897712,8.27971024 9.04484713,7.96519423 8.84038203,7.76113877 L4.90573685,3.83437656 Z"
+              transform="translate(8.089966, 8.109997) scale(-1, -1) rotate(-270.000000) translate(-8.089966, -8.109997) "
+            />
+          </g>
+        </svg>
       </span>
     </button>
     <div
-      className="dropDown open"
+      style={
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "border": "1px solid #D5E3EF",
+          "borderRadius": 3,
+          "borderWidth": "0 1px 1px",
+          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+          "boxSizing": "border-box",
+          "display": "block",
+          "padding": "0.5rem 1rem",
+          "position": "absolute",
+          "top": "2.25rem",
+          "width": "100%",
+          "zIndex": 2,
+        }
+      }
     >
       <div>
         <header
@@ -720,7 +949,18 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                   }
                 }
               >
-                90 Days
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  90 Days
+                </span>
               </button>
             </li>
             <li
@@ -755,7 +995,18 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                   }
                 }
               >
-                30 Days
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  30 Days
+                </span>
               </button>
             </li>
             <li
@@ -790,7 +1041,18 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                   }
                 }
               >
-                28 Days
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  28 Days
+                </span>
               </button>
             </li>
           </ul>
@@ -829,7 +1091,18 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                   }
                 }
               >
-                7 Days
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  7 Days
+                </span>
               </button>
             </li>
             <li
@@ -864,7 +1137,18 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                   }
                 }
               >
-                Yesterday
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Yesterday
+                </span>
               </button>
             </li>
             <li
@@ -899,7 +1183,18 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                   }
                 }
               >
-                Custom
+                <span
+                  style={
+                    Object {
+                      "color": "#fff",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Custom
+                </span>
               </button>
             </li>
           </ul>
@@ -919,7 +1214,7 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
               <input
                 className="startInput"
                 name="start"
-                placeholder="Date from:"
+                placeholder="Date from"
                 readOnly={true}
                 type="text"
                 value="Date from: 08/21/17"
@@ -961,7 +1256,7 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
               <input
                 className="endInput"
                 name="end"
-                placeholder="Date to:"
+                placeholder="Date to"
                 readOnly={true}
                 type="text"
                 value="Date to: 08/30/17"
@@ -2770,11 +3065,16 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
       </div>
     </div>
     <div
-      className="clickCatcher clickCatcherActive"
       onClick={undefined}
       role="button"
       style={
         Object {
+          "bottom": 0,
+          "display": "block",
+          "left": 0,
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
           "zIndex": 1,
         }
       }
@@ -2790,64 +3090,93 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
     style={
       Object {
         "position": "relative",
+        "width": "16rem",
       }
     }
   >
     <button
-      className="button button"
       disabled={false}
       onClick={[Function]}
+      style={
+        Object {
+          "border": "1px solid #D5E3EF",
+          "borderRadius": "3px",
+          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+          "boxSizing": "border-box",
+          "color": "#333333",
+          "cursor": "pointer",
+          "display": "flex",
+          "outline": "0 none",
+          "padding": "0.75rem 1rem",
+          "textAlign": "left",
+          "textDecoration": "none",
+          "textShadow": "none",
+          "width": "100%",
+        }
+      }
     >
-      <i
-        className="bi-calendar"
-      />
-      <span>
+      <span
+        style={
+          Object {
+            "color": "#59626a",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontSize": "0.75rem",
+            "fontWeight": 700,
+          }
+        }
+      >
         Custom
       </span>
       <span
-        className="rightSide"
+        style={
+          Object {
+            "marginLeft": "auto",
+          }
+        }
       >
-        <span
-          className="dateRange"
-        >
-          
-        </span>
-        <span
+        <svg
+          height="100%"
           style={
             Object {
-              "marginLeft": "5px",
+              "fill": "#59626a",
+              "height": "0.75rem",
+              "width": "0.75rem",
             }
           }
+          version="1.1"
+          viewBox="0 0 16 16"
+          width="100%"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
         >
-          <svg
-            height="100%"
-            style={
-              Object {
-                "fill": "#59626a",
-                "height": "0.75rem",
-                "width": "0.75rem",
-              }
-            }
-            version="1.1"
-            viewBox="0 0 16 16"
-            width="100%"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
+          <g
+            className="shuttleGray"
           >
-            <g
-              className="shuttleGray"
-            >
-              <path
-                d="M4.90573685,3.83437656 C4.5159485,3.44536915 4.51510793,2.81708404 4.90996552,2.42499924 L4.90996552,2.42499924 C5.30208929,2.03562905 5.93536183,2.03785674 6.32490003,2.4304594 L11.2750374,7.41953907 C11.6643604,7.81192483 11.6645756,8.44590538 11.2750374,8.83605572 L6.32490003,13.7939721 C5.93557705,14.1839068 5.3048231,14.1848577 4.90996552,13.7899895 L4.90996552,13.7899895 C4.51784174,13.3978552 4.51273549,12.7696997 4.9163418,12.369326 L8.84038203,8.47671472 C9.03897712,8.27971024 9.04484713,7.96519423 8.84038203,7.76113877 L4.90573685,3.83437656 Z"
-                transform="translate(8.089966, 8.109997) scale(-1, -1) rotate(-270.000000) translate(-8.089966, -8.109997) "
-              />
-            </g>
-          </svg>
-        </span>
+            <path
+              d="M4.90573685,3.83437656 C4.5159485,3.44536915 4.51510793,2.81708404 4.90996552,2.42499924 L4.90996552,2.42499924 C5.30208929,2.03562905 5.93536183,2.03785674 6.32490003,2.4304594 L11.2750374,7.41953907 C11.6643604,7.81192483 11.6645756,8.44590538 11.2750374,8.83605572 L6.32490003,13.7939721 C5.93557705,14.1839068 5.3048231,14.1848577 4.90996552,13.7899895 L4.90996552,13.7899895 C4.51784174,13.3978552 4.51273549,12.7696997 4.9163418,12.369326 L8.84038203,8.47671472 C9.03897712,8.27971024 9.04484713,7.96519423 8.84038203,7.76113877 L4.90573685,3.83437656 Z"
+              transform="translate(8.089966, 8.109997) scale(-1, -1) rotate(-270.000000) translate(-8.089966, -8.109997) "
+            />
+          </g>
+        </svg>
       </span>
     </button>
     <div
-      className="dropDown open"
+      style={
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "border": "1px solid #D5E3EF",
+          "borderRadius": 3,
+          "borderWidth": "0 1px 1px",
+          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+          "boxSizing": "border-box",
+          "display": "block",
+          "padding": "0.5rem 1rem",
+          "position": "absolute",
+          "top": "2.25rem",
+          "width": "100%",
+          "zIndex": 2,
+        }
+      }
     >
       <div>
         <header
@@ -2888,7 +3217,18 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                   }
                 }
               >
-                90 Days
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  90 Days
+                </span>
               </button>
             </li>
             <li
@@ -2923,7 +3263,18 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                   }
                 }
               >
-                30 Days
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  30 Days
+                </span>
               </button>
             </li>
             <li
@@ -2958,7 +3309,18 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                   }
                 }
               >
-                28 Days
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  28 Days
+                </span>
               </button>
             </li>
           </ul>
@@ -2997,7 +3359,18 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                   }
                 }
               >
-                7 Days
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  7 Days
+                </span>
               </button>
             </li>
             <li
@@ -3032,7 +3405,18 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                   }
                 }
               >
-                Yesterday
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Yesterday
+                </span>
               </button>
             </li>
             <li
@@ -3067,7 +3451,18 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                   }
                 }
               >
-                Custom
+                <span
+                  style={
+                    Object {
+                      "color": "#fff",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Custom
+                </span>
               </button>
             </li>
           </ul>
@@ -3087,7 +3482,7 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
               <input
                 className="startInput inputFocus"
                 name="start"
-                placeholder="Date from:"
+                placeholder="Date from"
                 readOnly={true}
                 type="text"
                 value=""
@@ -3129,7 +3524,7 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
               <input
                 className="endInput"
                 name="end"
-                placeholder="Date to:"
+                placeholder="Date to"
                 readOnly={true}
                 type="text"
                 value=""
@@ -4938,11 +5333,16 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
       </div>
     </div>
     <div
-      className="clickCatcher clickCatcherActive"
       onClick={undefined}
       role="button"
       style={
         Object {
+          "bottom": 0,
+          "display": "block",
+          "left": 0,
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
           "zIndex": 1,
         }
       }
@@ -4958,64 +5358,93 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
     style={
       Object {
         "position": "relative",
+        "width": "16rem",
       }
     }
   >
     <button
-      className="button button"
       disabled={false}
       onClick={[Function]}
+      style={
+        Object {
+          "border": "1px solid #D5E3EF",
+          "borderRadius": "3px",
+          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+          "boxSizing": "border-box",
+          "color": "#333333",
+          "cursor": "pointer",
+          "display": "flex",
+          "outline": "0 none",
+          "padding": "0.75rem 1rem",
+          "textAlign": "left",
+          "textDecoration": "none",
+          "textShadow": "none",
+          "width": "100%",
+        }
+      }
     >
-      <i
-        className="bi-calendar"
-      />
-      <span>
+      <span
+        style={
+          Object {
+            "color": "#59626a",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontSize": "0.75rem",
+            "fontWeight": 700,
+          }
+        }
+      >
         Past 7 Days
       </span>
       <span
-        className="rightSide"
+        style={
+          Object {
+            "marginLeft": "auto",
+          }
+        }
       >
-        <span
-          className="dateRange"
-        >
-          08/24/17 to 08/30/17
-        </span>
-        <span
+        <svg
+          height="100%"
           style={
             Object {
-              "marginLeft": "5px",
+              "fill": "#59626a",
+              "height": "0.75rem",
+              "width": "0.75rem",
             }
           }
+          version="1.1"
+          viewBox="0 0 16 16"
+          width="100%"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
         >
-          <svg
-            height="100%"
-            style={
-              Object {
-                "fill": "#59626a",
-                "height": "0.75rem",
-                "width": "0.75rem",
-              }
-            }
-            version="1.1"
-            viewBox="0 0 16 16"
-            width="100%"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
+          <g
+            className="shuttleGray"
           >
-            <g
-              className="shuttleGray"
-            >
-              <path
-                d="M4.90573685,3.83437656 C4.5159485,3.44536915 4.51510793,2.81708404 4.90996552,2.42499924 L4.90996552,2.42499924 C5.30208929,2.03562905 5.93536183,2.03785674 6.32490003,2.4304594 L11.2750374,7.41953907 C11.6643604,7.81192483 11.6645756,8.44590538 11.2750374,8.83605572 L6.32490003,13.7939721 C5.93557705,14.1839068 5.3048231,14.1848577 4.90996552,13.7899895 L4.90996552,13.7899895 C4.51784174,13.3978552 4.51273549,12.7696997 4.9163418,12.369326 L8.84038203,8.47671472 C9.03897712,8.27971024 9.04484713,7.96519423 8.84038203,7.76113877 L4.90573685,3.83437656 Z"
-                transform="translate(8.089966, 8.109997) scale(-1, -1) rotate(-270.000000) translate(-8.089966, -8.109997) "
-              />
-            </g>
-          </svg>
-        </span>
+            <path
+              d="M4.90573685,3.83437656 C4.5159485,3.44536915 4.51510793,2.81708404 4.90996552,2.42499924 L4.90996552,2.42499924 C5.30208929,2.03562905 5.93536183,2.03785674 6.32490003,2.4304594 L11.2750374,7.41953907 C11.6643604,7.81192483 11.6645756,8.44590538 11.2750374,8.83605572 L6.32490003,13.7939721 C5.93557705,14.1839068 5.3048231,14.1848577 4.90996552,13.7899895 L4.90996552,13.7899895 C4.51784174,13.3978552 4.51273549,12.7696997 4.9163418,12.369326 L8.84038203,8.47671472 C9.03897712,8.27971024 9.04484713,7.96519423 8.84038203,7.76113877 L4.90573685,3.83437656 Z"
+              transform="translate(8.089966, 8.109997) scale(-1, -1) rotate(-270.000000) translate(-8.089966, -8.109997) "
+            />
+          </g>
+        </svg>
       </span>
     </button>
     <div
-      className="dropDown open"
+      style={
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "border": "1px solid #D5E3EF",
+          "borderRadius": 3,
+          "borderWidth": "0 1px 1px",
+          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+          "boxSizing": "border-box",
+          "display": "block",
+          "padding": "0.5rem 1rem",
+          "position": "absolute",
+          "top": "2.25rem",
+          "width": "100%",
+          "zIndex": 2,
+        }
+      }
     >
       <div>
         <header
@@ -5056,7 +5485,18 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                   }
                 }
               >
-                90 Days
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  90 Days
+                </span>
               </button>
             </li>
             <li
@@ -5091,7 +5531,18 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                   }
                 }
               >
-                30 Days
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  30 Days
+                </span>
               </button>
             </li>
             <li
@@ -5126,7 +5577,18 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                   }
                 }
               >
-                28 Days
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  28 Days
+                </span>
               </button>
             </li>
           </ul>
@@ -5165,7 +5627,18 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                   }
                 }
               >
-                7 Days
+                <span
+                  style={
+                    Object {
+                      "color": "#fff",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  7 Days
+                </span>
               </button>
             </li>
             <li
@@ -5200,7 +5673,18 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                   }
                 }
               >
-                Yesterday
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Yesterday
+                </span>
               </button>
             </li>
             <li
@@ -5235,7 +5719,18 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
                   }
                 }
               >
-                Custom
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Custom
+                </span>
               </button>
             </li>
           </ul>
@@ -5246,11 +5741,16 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
       </div>
     </div>
     <div
-      className="clickCatcher clickCatcherActive"
       onClick={[Function]}
       role="button"
       style={
         Object {
+          "bottom": 0,
+          "display": "block",
+          "left": 0,
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
           "zIndex": 1,
         }
       }
@@ -5266,64 +5766,93 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
     style={
       Object {
         "position": "relative",
+        "width": "16rem",
       }
     }
   >
     <button
-      className="button button"
       disabled={false}
       onClick={[Function]}
+      style={
+        Object {
+          "border": "1px solid #D5E3EF",
+          "borderRadius": "3px",
+          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+          "boxSizing": "border-box",
+          "color": "#333333",
+          "cursor": "pointer",
+          "display": "flex",
+          "outline": "0 none",
+          "padding": "0.75rem 1rem",
+          "textAlign": "left",
+          "textDecoration": "none",
+          "textShadow": "none",
+          "width": "100%",
+        }
+      }
     >
-      <i
-        className="bi-calendar"
-      />
-      <span>
+      <span
+        style={
+          Object {
+            "color": "#59626a",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontSize": "0.75rem",
+            "fontWeight": 700,
+          }
+        }
+      >
         Past 7 Days
       </span>
       <span
-        className="rightSide"
+        style={
+          Object {
+            "marginLeft": "auto",
+          }
+        }
       >
-        <span
-          className="dateRange"
-        >
-          08/24/17 to 08/30/17
-        </span>
-        <span
+        <svg
+          height="100%"
           style={
             Object {
-              "marginLeft": "5px",
+              "fill": "#59626a",
+              "height": "0.75rem",
+              "width": "0.75rem",
             }
           }
+          version="1.1"
+          viewBox="0 0 16 16"
+          width="100%"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
         >
-          <svg
-            height="100%"
-            style={
-              Object {
-                "fill": "#59626a",
-                "height": "0.75rem",
-                "width": "0.75rem",
-              }
-            }
-            version="1.1"
-            viewBox="0 0 16 16"
-            width="100%"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
+          <g
+            className="shuttleGray"
           >
-            <g
-              className="shuttleGray"
-            >
-              <path
-                d="M4.90573685,4.61438297 C4.5159485,4.22537555 4.51510793,3.59709045 4.90996552,3.20500565 L4.90996552,3.20500565 C5.30208929,2.81563546 5.93536183,2.81786315 6.32490003,3.21046581 L11.2750374,8.19954548 C11.6643604,8.59193123 11.6645756,9.22591178 11.2750374,9.61606213 L6.32490003,14.5739785 C5.93557705,14.9639132 5.3048231,14.9648641 4.90996552,14.5699959 L4.90996552,14.5699959 C4.51784174,14.1778616 4.51273549,13.5497061 4.9163418,13.1493324 L8.84038203,9.25672113 C9.03897712,9.05971665 9.04484713,8.74520064 8.84038203,8.54114518 L4.90573685,4.61438297 Z"
-                transform="translate(8.089966, 8.890003) scale(-1, 1) rotate(-270.000000) translate(-8.089966, -8.890003) "
-              />
-            </g>
-          </svg>
-        </span>
+            <path
+              d="M4.90573685,4.61438297 C4.5159485,4.22537555 4.51510793,3.59709045 4.90996552,3.20500565 L4.90996552,3.20500565 C5.30208929,2.81563546 5.93536183,2.81786315 6.32490003,3.21046581 L11.2750374,8.19954548 C11.6643604,8.59193123 11.6645756,9.22591178 11.2750374,9.61606213 L6.32490003,14.5739785 C5.93557705,14.9639132 5.3048231,14.9648641 4.90996552,14.5699959 L4.90996552,14.5699959 C4.51784174,14.1778616 4.51273549,13.5497061 4.9163418,13.1493324 L8.84038203,9.25672113 C9.03897712,9.05971665 9.04484713,8.74520064 8.84038203,8.54114518 L4.90573685,4.61438297 Z"
+              transform="translate(8.089966, 8.890003) scale(-1, 1) rotate(-270.000000) translate(-8.089966, -8.890003) "
+            />
+          </g>
+        </svg>
       </span>
     </button>
     <div
-      className="dropDown"
+      style={
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "border": "1px solid #D5E3EF",
+          "borderRadius": 3,
+          "borderWidth": "0 1px 1px",
+          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+          "boxSizing": "border-box",
+          "display": "none",
+          "padding": "0.5rem 1rem",
+          "position": "absolute",
+          "top": "2.25rem",
+          "width": "100%",
+          "zIndex": 2,
+        }
+      }
     >
       <div>
         <header
@@ -5364,7 +5893,18 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                   }
                 }
               >
-                90 Days
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  90 Days
+                </span>
               </button>
             </li>
             <li
@@ -5399,7 +5939,18 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                   }
                 }
               >
-                30 Days
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  30 Days
+                </span>
               </button>
             </li>
             <li
@@ -5434,7 +5985,18 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                   }
                 }
               >
-                28 Days
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  28 Days
+                </span>
               </button>
             </li>
           </ul>
@@ -5473,7 +6035,18 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                   }
                 }
               >
-                7 Days
+                <span
+                  style={
+                    Object {
+                      "color": "#fff",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  7 Days
+                </span>
               </button>
             </li>
             <li
@@ -5508,7 +6081,18 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                   }
                 }
               >
-                Yesterday
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Yesterday
+                </span>
               </button>
             </li>
             <li
@@ -5543,7 +6127,18 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
                   }
                 }
               >
-                Custom
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Custom
+                </span>
               </button>
             </li>
           </ul>
@@ -5554,11 +6149,424 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
       </div>
     </div>
     <div
-      className="clickCatcher"
       onClick={undefined}
       role="button"
       style={
         Object {
+          "bottom": 0,
+          "display": "none",
+          "left": 0,
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
+          "zIndex": 1,
+        }
+      }
+      tabIndex="0"
+    />
+  </div>
+</span>
+`;
+
+exports[`Snapshots DatePicker should not be open 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "width": "16rem",
+      }
+    }
+  >
+    <button
+      disabled={false}
+      onClick={[Function]}
+      style={
+        Object {
+          "border": "1px solid #D5E3EF",
+          "borderRadius": "3px",
+          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+          "boxSizing": "border-box",
+          "color": "#333333",
+          "cursor": "pointer",
+          "display": "flex",
+          "outline": "0 none",
+          "padding": "0.75rem 1rem",
+          "textAlign": "left",
+          "textDecoration": "none",
+          "textShadow": "none",
+          "width": "100%",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "#59626a",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontSize": "0.75rem",
+            "fontWeight": 700,
+          }
+        }
+      >
+        Yesterday
+      </span>
+      <span
+        style={
+          Object {
+            "marginLeft": "auto",
+          }
+        }
+      >
+        <svg
+          height="100%"
+          style={
+            Object {
+              "fill": "#59626a",
+              "height": "0.75rem",
+              "width": "0.75rem",
+            }
+          }
+          version="1.1"
+          viewBox="0 0 16 16"
+          width="100%"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        >
+          <g
+            className="shuttleGray"
+          >
+            <path
+              d="M4.90573685,4.61438297 C4.5159485,4.22537555 4.51510793,3.59709045 4.90996552,3.20500565 L4.90996552,3.20500565 C5.30208929,2.81563546 5.93536183,2.81786315 6.32490003,3.21046581 L11.2750374,8.19954548 C11.6643604,8.59193123 11.6645756,9.22591178 11.2750374,9.61606213 L6.32490003,14.5739785 C5.93557705,14.9639132 5.3048231,14.9648641 4.90996552,14.5699959 L4.90996552,14.5699959 C4.51784174,14.1778616 4.51273549,13.5497061 4.9163418,13.1493324 L8.84038203,9.25672113 C9.03897712,9.05971665 9.04484713,8.74520064 8.84038203,8.54114518 L4.90573685,4.61438297 Z"
+              transform="translate(8.089966, 8.890003) scale(-1, 1) rotate(-270.000000) translate(-8.089966, -8.890003) "
+            />
+          </g>
+        </svg>
+      </span>
+    </button>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "border": "1px solid #D5E3EF",
+          "borderRadius": 3,
+          "borderWidth": "0 1px 1px",
+          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+          "boxSizing": "border-box",
+          "display": "none",
+          "padding": "0.5rem 1rem",
+          "position": "absolute",
+          "top": "2.25rem",
+          "width": "100%",
+          "zIndex": 2,
+        }
+      }
+    >
+      <div>
+        <header
+          className="header"
+        >
+          <ul
+            className="headerList"
+          >
+            <li
+              className="headerListItem headerListItemInactive headerListItemDisabled"
+              data-tip="We don't have complete data for this range."
+            >
+              <button
+                aria-label={null}
+                disabled={undefined}
+                onBlur={[Function]}
+                onClick={null}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "background": "none",
+                    "backgroundColor": "unset",
+                    "border": "none",
+                    "borderRadius": "unset",
+                    "color": "unset",
+                    "cursor": "pointer",
+                    "display": "unset",
+                    "fontFamily": "unset",
+                    "fontSize": "unset",
+                    "fontWeight": "unset",
+                    "lineHeight": "unset",
+                    "margin": "unset",
+                    "outline": "none",
+                    "padding": 0,
+                    "transition": "unset",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  90 Days
+                </span>
+              </button>
+            </li>
+            <li
+              className="headerListItem headerListItemInactive headerListItemDisabled"
+              data-tip="We don't have complete data for this range."
+            >
+              <button
+                aria-label={null}
+                disabled={undefined}
+                onBlur={[Function]}
+                onClick={null}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "background": "none",
+                    "backgroundColor": "unset",
+                    "border": "none",
+                    "borderRadius": "unset",
+                    "color": "unset",
+                    "cursor": "pointer",
+                    "display": "unset",
+                    "fontFamily": "unset",
+                    "fontSize": "unset",
+                    "fontWeight": "unset",
+                    "lineHeight": "unset",
+                    "margin": "unset",
+                    "outline": "none",
+                    "padding": 0,
+                    "transition": "unset",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  30 Days
+                </span>
+              </button>
+            </li>
+            <li
+              className="headerListItem headerListItemInactive headerListItemDisabled"
+              data-tip="We don't have complete data for this range."
+            >
+              <button
+                aria-label={null}
+                disabled={undefined}
+                onBlur={[Function]}
+                onClick={null}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "background": "none",
+                    "backgroundColor": "unset",
+                    "border": "none",
+                    "borderRadius": "unset",
+                    "color": "unset",
+                    "cursor": "pointer",
+                    "display": "unset",
+                    "fontFamily": "unset",
+                    "fontSize": "unset",
+                    "fontWeight": "unset",
+                    "lineHeight": "unset",
+                    "margin": "unset",
+                    "outline": "none",
+                    "padding": 0,
+                    "transition": "unset",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  28 Days
+                </span>
+              </button>
+            </li>
+          </ul>
+          <ul
+            className="headerList"
+          >
+            <li
+              className="headerListItem headerListItemInactive"
+              data-tip={null}
+            >
+              <button
+                aria-label={null}
+                disabled={undefined}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "background": "none",
+                    "backgroundColor": "unset",
+                    "border": "none",
+                    "borderRadius": "unset",
+                    "color": "unset",
+                    "cursor": "pointer",
+                    "display": "unset",
+                    "fontFamily": "unset",
+                    "fontSize": "unset",
+                    "fontWeight": "unset",
+                    "lineHeight": "unset",
+                    "margin": "unset",
+                    "outline": "none",
+                    "padding": 0,
+                    "transition": "unset",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  7 Days
+                </span>
+              </button>
+            </li>
+            <li
+              className="headerListItem headerListItemActive"
+              data-tip={null}
+            >
+              <button
+                aria-label={null}
+                disabled={undefined}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "background": "none",
+                    "backgroundColor": "unset",
+                    "border": "none",
+                    "borderRadius": "unset",
+                    "color": "unset",
+                    "cursor": "pointer",
+                    "display": "unset",
+                    "fontFamily": "unset",
+                    "fontSize": "unset",
+                    "fontWeight": "unset",
+                    "lineHeight": "unset",
+                    "margin": "unset",
+                    "outline": "none",
+                    "padding": 0,
+                    "transition": "unset",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#fff",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Yesterday
+                </span>
+              </button>
+            </li>
+            <li
+              className="headerListItem headerListItemInactive"
+              data-tip={null}
+            >
+              <button
+                aria-label={null}
+                disabled={undefined}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "background": "none",
+                    "backgroundColor": "unset",
+                    "border": "none",
+                    "borderRadius": "unset",
+                    "color": "unset",
+                    "cursor": "pointer",
+                    "display": "unset",
+                    "fontFamily": "unset",
+                    "fontSize": "unset",
+                    "fontWeight": "unset",
+                    "lineHeight": "unset",
+                    "margin": "unset",
+                    "outline": "none",
+                    "padding": 0,
+                    "transition": "unset",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Custom
+                </span>
+              </button>
+            </li>
+          </ul>
+        </header>
+        <div
+          className="customDateRangeContainer"
+        />
+      </div>
+    </div>
+    <div
+      onClick={undefined}
+      role="button"
+      style={
+        Object {
+          "bottom": 0,
+          "display": "none",
+          "left": 0,
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
           "zIndex": 1,
         }
       }
@@ -5574,68 +6582,401 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
     style={
       Object {
         "position": "relative",
+        "width": "16rem",
       }
     }
   >
     <button
-      className="button button disabled"
       disabled={true}
       onClick={[Function]}
+      style={
+        Object {
+          "border": "1px solid #D5E3EF",
+          "borderRadius": "3px",
+          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+          "boxSizing": "border-box",
+          "color": "#333333",
+          "cursor": "pointer",
+          "display": "flex",
+          "opacity": 0.2,
+          "outline": "0 none",
+          "padding": "0.75rem 1rem",
+          "pointerEvents": "none",
+          "textAlign": "left",
+          "textDecoration": "none",
+          "textShadow": "none",
+          "width": "100%",
+        }
+      }
     >
-      <i
-        className="bi-calendar"
-      />
-      <span>
-        Loading...
+      <span
+        style={
+          Object {
+            "color": "#59626a",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontSize": "0.75rem",
+            "fontWeight": 700,
+          }
+        }
+      >
+        Custom
       </span>
       <span
-        className="rightSide"
+        style={
+          Object {
+            "marginLeft": "auto",
+          }
+        }
       >
-        <span
-          className="dateRange"
-        >
-          
-        </span>
-        <span
+        <svg
+          height="100%"
           style={
             Object {
-              "marginLeft": "5px",
+              "fill": "#59626a",
+              "height": "0.75rem",
+              "width": "0.75rem",
             }
           }
+          version="1.1"
+          viewBox="0 0 16 16"
+          width="100%"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
         >
-          <svg
-            height="100%"
-            style={
-              Object {
-                "fill": "#59626a",
-                "height": "0.75rem",
-                "width": "0.75rem",
-              }
-            }
-            version="1.1"
-            viewBox="0 0 16 16"
-            width="100%"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
+          <g
+            className="shuttleGray"
           >
-            <g
-              className="shuttleGray"
-            >
-              <path
-                d="M4.90573685,4.61438297 C4.5159485,4.22537555 4.51510793,3.59709045 4.90996552,3.20500565 L4.90996552,3.20500565 C5.30208929,2.81563546 5.93536183,2.81786315 6.32490003,3.21046581 L11.2750374,8.19954548 C11.6643604,8.59193123 11.6645756,9.22591178 11.2750374,9.61606213 L6.32490003,14.5739785 C5.93557705,14.9639132 5.3048231,14.9648641 4.90996552,14.5699959 L4.90996552,14.5699959 C4.51784174,14.1778616 4.51273549,13.5497061 4.9163418,13.1493324 L8.84038203,9.25672113 C9.03897712,9.05971665 9.04484713,8.74520064 8.84038203,8.54114518 L4.90573685,4.61438297 Z"
-                transform="translate(8.089966, 8.890003) scale(-1, 1) rotate(-270.000000) translate(-8.089966, -8.890003) "
-              />
-            </g>
-          </svg>
-        </span>
+            <path
+              d="M4.90573685,4.61438297 C4.5159485,4.22537555 4.51510793,3.59709045 4.90996552,3.20500565 L4.90996552,3.20500565 C5.30208929,2.81563546 5.93536183,2.81786315 6.32490003,3.21046581 L11.2750374,8.19954548 C11.6643604,8.59193123 11.6645756,9.22591178 11.2750374,9.61606213 L6.32490003,14.5739785 C5.93557705,14.9639132 5.3048231,14.9648641 4.90996552,14.5699959 L4.90996552,14.5699959 C4.51784174,14.1778616 4.51273549,13.5497061 4.9163418,13.1493324 L8.84038203,9.25672113 C9.03897712,9.05971665 9.04484713,8.74520064 8.84038203,8.54114518 L4.90573685,4.61438297 Z"
+              transform="translate(8.089966, 8.890003) scale(-1, 1) rotate(-270.000000) translate(-8.089966, -8.890003) "
+            />
+          </g>
+        </svg>
       </span>
     </button>
     <div
-      className="clickCatcher"
+      style={
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "border": "1px solid #D5E3EF",
+          "borderRadius": 3,
+          "borderWidth": "0 1px 1px",
+          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+          "boxSizing": "border-box",
+          "display": "none",
+          "padding": "0.5rem 1rem",
+          "position": "absolute",
+          "top": "2.25rem",
+          "width": "100%",
+          "zIndex": 2,
+        }
+      }
+    >
+      <div>
+        <header
+          className="header"
+        >
+          <ul
+            className="headerList"
+          >
+            <li
+              className="headerListItem headerListItemInactive"
+              data-tip={null}
+            >
+              <button
+                aria-label={null}
+                disabled={undefined}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "background": "none",
+                    "backgroundColor": "unset",
+                    "border": "none",
+                    "borderRadius": "unset",
+                    "color": "unset",
+                    "cursor": "pointer",
+                    "display": "unset",
+                    "fontFamily": "unset",
+                    "fontSize": "unset",
+                    "fontWeight": "unset",
+                    "lineHeight": "unset",
+                    "margin": "unset",
+                    "outline": "none",
+                    "padding": 0,
+                    "transition": "unset",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  90 Days
+                </span>
+              </button>
+            </li>
+            <li
+              className="headerListItem headerListItemInactive"
+              data-tip={null}
+            >
+              <button
+                aria-label={null}
+                disabled={undefined}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "background": "none",
+                    "backgroundColor": "unset",
+                    "border": "none",
+                    "borderRadius": "unset",
+                    "color": "unset",
+                    "cursor": "pointer",
+                    "display": "unset",
+                    "fontFamily": "unset",
+                    "fontSize": "unset",
+                    "fontWeight": "unset",
+                    "lineHeight": "unset",
+                    "margin": "unset",
+                    "outline": "none",
+                    "padding": 0,
+                    "transition": "unset",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  30 Days
+                </span>
+              </button>
+            </li>
+            <li
+              className="headerListItem headerListItemInactive"
+              data-tip={null}
+            >
+              <button
+                aria-label={null}
+                disabled={undefined}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "background": "none",
+                    "backgroundColor": "unset",
+                    "border": "none",
+                    "borderRadius": "unset",
+                    "color": "unset",
+                    "cursor": "pointer",
+                    "display": "unset",
+                    "fontFamily": "unset",
+                    "fontSize": "unset",
+                    "fontWeight": "unset",
+                    "lineHeight": "unset",
+                    "margin": "unset",
+                    "outline": "none",
+                    "padding": 0,
+                    "transition": "unset",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  28 Days
+                </span>
+              </button>
+            </li>
+          </ul>
+          <ul
+            className="headerList"
+          >
+            <li
+              className="headerListItem headerListItemInactive"
+              data-tip={null}
+            >
+              <button
+                aria-label={null}
+                disabled={undefined}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "background": "none",
+                    "backgroundColor": "unset",
+                    "border": "none",
+                    "borderRadius": "unset",
+                    "color": "unset",
+                    "cursor": "pointer",
+                    "display": "unset",
+                    "fontFamily": "unset",
+                    "fontSize": "unset",
+                    "fontWeight": "unset",
+                    "lineHeight": "unset",
+                    "margin": "unset",
+                    "outline": "none",
+                    "padding": 0,
+                    "transition": "unset",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  7 Days
+                </span>
+              </button>
+            </li>
+            <li
+              className="headerListItem headerListItemInactive"
+              data-tip={null}
+            >
+              <button
+                aria-label={null}
+                disabled={undefined}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "background": "none",
+                    "backgroundColor": "unset",
+                    "border": "none",
+                    "borderRadius": "unset",
+                    "color": "unset",
+                    "cursor": "pointer",
+                    "display": "unset",
+                    "fontFamily": "unset",
+                    "fontSize": "unset",
+                    "fontWeight": "unset",
+                    "lineHeight": "unset",
+                    "margin": "unset",
+                    "outline": "none",
+                    "padding": 0,
+                    "transition": "unset",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Yesterday
+                </span>
+              </button>
+            </li>
+            <li
+              className="headerListItem headerListItemActive"
+              data-tip={null}
+            >
+              <button
+                aria-label={null}
+                disabled={undefined}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "background": "none",
+                    "backgroundColor": "unset",
+                    "border": "none",
+                    "borderRadius": "unset",
+                    "color": "unset",
+                    "cursor": "pointer",
+                    "display": "unset",
+                    "fontFamily": "unset",
+                    "fontSize": "unset",
+                    "fontWeight": "unset",
+                    "lineHeight": "unset",
+                    "margin": "unset",
+                    "outline": "none",
+                    "padding": 0,
+                    "transition": "unset",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#fff",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Custom
+                </span>
+              </button>
+            </li>
+          </ul>
+        </header>
+        <div
+          className="customDateRangeContainer"
+        />
+      </div>
+    </div>
+    <div
       onClick={undefined}
       role="button"
       style={
         Object {
+          "bottom": 0,
+          "display": "none",
+          "left": 0,
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
           "zIndex": 1,
         }
       }
@@ -5651,64 +6992,93 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
     style={
       Object {
         "position": "relative",
+        "width": "16rem",
       }
     }
   >
     <button
-      className="button button"
       disabled={false}
       onClick={[Function]}
+      style={
+        Object {
+          "border": "1px solid #D5E3EF",
+          "borderRadius": "3px",
+          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+          "boxSizing": "border-box",
+          "color": "#333333",
+          "cursor": "pointer",
+          "display": "flex",
+          "outline": "0 none",
+          "padding": "0.75rem 1rem",
+          "textAlign": "left",
+          "textDecoration": "none",
+          "textShadow": "none",
+          "width": "100%",
+        }
+      }
     >
-      <i
-        className="bi-calendar"
-      />
-      <span>
+      <span
+        style={
+          Object {
+            "color": "#59626a",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontSize": "0.75rem",
+            "fontWeight": 700,
+          }
+        }
+      >
         Yesterday
       </span>
       <span
-        className="rightSide"
+        style={
+          Object {
+            "marginLeft": "auto",
+          }
+        }
       >
-        <span
-          className="dateRange"
-        >
-          
-        </span>
-        <span
+        <svg
+          height="100%"
           style={
             Object {
-              "marginLeft": "5px",
+              "fill": "#59626a",
+              "height": "0.75rem",
+              "width": "0.75rem",
             }
           }
+          version="1.1"
+          viewBox="0 0 16 16"
+          width="100%"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
         >
-          <svg
-            height="100%"
-            style={
-              Object {
-                "fill": "#59626a",
-                "height": "0.75rem",
-                "width": "0.75rem",
-              }
-            }
-            version="1.1"
-            viewBox="0 0 16 16"
-            width="100%"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
+          <g
+            className="shuttleGray"
           >
-            <g
-              className="shuttleGray"
-            >
-              <path
-                d="M4.90573685,3.83437656 C4.5159485,3.44536915 4.51510793,2.81708404 4.90996552,2.42499924 L4.90996552,2.42499924 C5.30208929,2.03562905 5.93536183,2.03785674 6.32490003,2.4304594 L11.2750374,7.41953907 C11.6643604,7.81192483 11.6645756,8.44590538 11.2750374,8.83605572 L6.32490003,13.7939721 C5.93557705,14.1839068 5.3048231,14.1848577 4.90996552,13.7899895 L4.90996552,13.7899895 C4.51784174,13.3978552 4.51273549,12.7696997 4.9163418,12.369326 L8.84038203,8.47671472 C9.03897712,8.27971024 9.04484713,7.96519423 8.84038203,7.76113877 L4.90573685,3.83437656 Z"
-                transform="translate(8.089966, 8.109997) scale(-1, -1) rotate(-270.000000) translate(-8.089966, -8.109997) "
-              />
-            </g>
-          </svg>
-        </span>
+            <path
+              d="M4.90573685,3.83437656 C4.5159485,3.44536915 4.51510793,2.81708404 4.90996552,2.42499924 L4.90996552,2.42499924 C5.30208929,2.03562905 5.93536183,2.03785674 6.32490003,2.4304594 L11.2750374,7.41953907 C11.6643604,7.81192483 11.6645756,8.44590538 11.2750374,8.83605572 L6.32490003,13.7939721 C5.93557705,14.1839068 5.3048231,14.1848577 4.90996552,13.7899895 L4.90996552,13.7899895 C4.51784174,13.3978552 4.51273549,12.7696997 4.9163418,12.369326 L8.84038203,8.47671472 C9.03897712,8.27971024 9.04484713,7.96519423 8.84038203,7.76113877 L4.90573685,3.83437656 Z"
+              transform="translate(8.089966, 8.109997) scale(-1, -1) rotate(-270.000000) translate(-8.089966, -8.109997) "
+            />
+          </g>
+        </svg>
       </span>
     </button>
     <div
-      className="dropDown open"
+      style={
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "border": "1px solid #D5E3EF",
+          "borderRadius": 3,
+          "borderWidth": "0 1px 1px",
+          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+          "boxSizing": "border-box",
+          "display": "block",
+          "padding": "0.5rem 1rem",
+          "position": "absolute",
+          "top": "2.25rem",
+          "width": "100%",
+          "zIndex": 2,
+        }
+      }
     >
       <div>
         <header
@@ -5749,7 +7119,18 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                   }
                 }
               >
-                90 Days
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  90 Days
+                </span>
               </button>
             </li>
             <li
@@ -5784,7 +7165,18 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                   }
                 }
               >
-                30 Days
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  30 Days
+                </span>
               </button>
             </li>
             <li
@@ -5819,7 +7211,18 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                   }
                 }
               >
-                28 Days
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  28 Days
+                </span>
               </button>
             </li>
           </ul>
@@ -5858,7 +7261,18 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                   }
                 }
               >
-                7 Days
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  7 Days
+                </span>
               </button>
             </li>
             <li
@@ -5893,7 +7307,18 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                   }
                 }
               >
-                Yesterday
+                <span
+                  style={
+                    Object {
+                      "color": "#fff",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Yesterday
+                </span>
               </button>
             </li>
             <li
@@ -5928,7 +7353,18 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
                   }
                 }
               >
-                Custom
+                <span
+                  style={
+                    Object {
+                      "color": undefined,
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Custom
+                </span>
               </button>
             </li>
           </ul>
@@ -5939,11 +7375,16 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
       </div>
     </div>
     <div
-      className="clickCatcher clickCatcherActive"
       onClick={undefined}
       role="button"
       style={
         Object {
+          "bottom": 0,
+          "display": "block",
+          "left": 0,
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
           "zIndex": 1,
         }
       }
