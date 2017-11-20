@@ -33,7 +33,9 @@ describe('rpc/summary', () => {
       profileService: 'instagram',
     }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
