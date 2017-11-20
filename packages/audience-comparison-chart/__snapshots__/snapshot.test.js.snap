@@ -323,6 +323,22 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
                         Buffer
                       </span>
                     </div>
+                    <span
+                      style={
+                        Object {
+                          "background": "#fda3f3",
+                          "borderColor": "#df85d5",
+                          "borderRadius": "10px",
+                          "borderStyle": "solid",
+                          "borderWidth": "1px",
+                          "display": "inline-block",
+                          "height": "7px",
+                          "marginRight": "5px",
+                          "verticalAlign": "baseline",
+                          "width": "7px",
+                        }
+                      }
+                    />
                   </div>
                 </span>
               </span>
@@ -488,6 +504,22 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
                         buffer
                       </span>
                     </div>
+                    <span
+                      style={
+                        Object {
+                          "background": "#fda444",
+                          "borderColor": "#df8626",
+                          "borderRadius": "10px",
+                          "borderStyle": "solid",
+                          "borderWidth": "1px",
+                          "display": "inline-block",
+                          "height": "7px",
+                          "marginRight": "5px",
+                          "verticalAlign": "baseline",
+                          "width": "7px",
+                        }
+                      }
+                    />
                   </div>
                 </span>
               </span>
@@ -699,6 +731,22 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
                         Buffer
                       </span>
                     </div>
+                    <span
+                      style={
+                        Object {
+                          "background": "#fda3f3",
+                          "borderColor": "#df85d5",
+                          "borderRadius": "10px",
+                          "borderStyle": "solid",
+                          "borderWidth": "1px",
+                          "display": "inline-block",
+                          "height": "7px",
+                          "marginRight": "5px",
+                          "verticalAlign": "baseline",
+                          "width": "7px",
+                        }
+                      }
+                    />
                   </div>
                 </span>
               </span>

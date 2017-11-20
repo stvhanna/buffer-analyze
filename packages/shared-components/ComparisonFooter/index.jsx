@@ -41,31 +41,24 @@ const ComparisonFooter = ({ profileTotals }) => (
   <Wrapper>
     <Grid>
       {profileTotals.map(total =>
-        // {
-        //   total.service === 'instagram' && (
-        //       total.metric.label === 'Impressions' || total.metric.label === 'Engagements'
-        //     ) ?
-        //       <Text color="nevada" size="small">Coming soon for Instagram</Text>
-        //     :
-        //       <MetricIcon key={total.profileId} metric={total.metric} />
-        // }
-      <GridItem
-        key={total.profileId}
-        metric={{
-          label: total.metric.label,
-          value: total.currentPeriodTotal,
-          diff: total.currentPeriodDiff,
-        }}
-        customLabel={
-          <ProfileAvatarWrapper>
-            <ProfileUsernameWrapper>
-              <Text size="small">
-                {total.username}
-              </Text>
-            </ProfileUsernameWrapper>
-          </ProfileAvatarWrapper>
-        }
-      />)}
+        <GridItem
+          key={total.profileId}
+          metric={{
+            label: total.metric.label,
+            value: total.currentPeriodTotal,
+            diff: total.currentPeriodDiff,
+          }}
+          customLabel={
+            <ProfileAvatarWrapper>
+              <ProfileUsernameWrapper>
+                <Text size="small">
+                  {total.username}
+                </Text>
+              </ProfileUsernameWrapper>
+              <MetricIcon key={total.profileId} metric={total.metric} />
+            </ProfileAvatarWrapper>
+          }
+        />)}
     </Grid>
   </Wrapper>
 );

@@ -150,6 +150,22 @@ exports[`Snapshots ComparisonFooter should render coming soon if the profile is 
                       Buffer
                     </span>
                   </div>
+                  <span
+                    style={
+                      Object {
+                        "background": "#fda3f3",
+                        "borderColor": "#df85d5",
+                        "borderRadius": "10px",
+                        "borderStyle": "solid",
+                        "borderWidth": "1px",
+                        "display": "inline-block",
+                        "height": "7px",
+                        "marginRight": "5px",
+                        "verticalAlign": "baseline",
+                        "width": "7px",
+                      }
+                    }
+                  />
                 </div>
               </span>
             </span>
@@ -336,6 +352,22 @@ exports[`Snapshots ComparisonFooter should render the footer for a single profil
                       LifeIsAwesome
                     </span>
                   </div>
+                  <span
+                    style={
+                      Object {
+                        "background": "#fda444",
+                        "borderColor": "#df8626",
+                        "borderRadius": "10px",
+                        "borderStyle": "solid",
+                        "borderWidth": "1px",
+                        "display": "inline-block",
+                        "height": "7px",
+                        "marginRight": "5px",
+                        "verticalAlign": "baseline",
+                        "width": "7px",
+                      }
+                    }
+                  />
                 </div>
               </span>
             </span>
@@ -523,6 +555,22 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
                       Buffer
                     </span>
                   </div>
+                  <span
+                    style={
+                      Object {
+                        "background": "#fda3f3",
+                        "borderColor": "#df85d5",
+                        "borderRadius": "10px",
+                        "borderStyle": "solid",
+                        "borderWidth": "1px",
+                        "display": "inline-block",
+                        "height": "7px",
+                        "marginRight": "5px",
+                        "verticalAlign": "baseline",
+                        "width": "7px",
+                      }
+                    }
+                  />
                 </div>
               </span>
             </span>
@@ -688,6 +736,22 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
                       Buffer
                     </span>
                   </div>
+                  <span
+                    style={
+                      Object {
+                        "background": "#fda444",
+                        "borderColor": "#df8626",
+                        "borderRadius": "10px",
+                        "borderStyle": "solid",
+                        "borderWidth": "1px",
+                        "display": "inline-block",
+                        "height": "7px",
+                        "marginRight": "5px",
+                        "verticalAlign": "baseline",
+                        "width": "7px",
+                      }
+                    }
+                  />
                 </div>
               </span>
             </span>
@@ -854,6 +918,22 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
                       LifeIsAwesome
                     </span>
                   </div>
+                  <span
+                    style={
+                      Object {
+                        "background": "#fda444",
+                        "borderColor": "#df8626",
+                        "borderRadius": "10px",
+                        "borderStyle": "solid",
+                        "borderWidth": "1px",
+                        "display": "inline-block",
+                        "height": "7px",
+                        "marginRight": "5px",
+                        "verticalAlign": "baseline",
+                        "width": "7px",
+                      }
+                    }
+                  />
                 </div>
               </span>
             </span>

@@ -4,7 +4,7 @@ import reactDOM from 'react-dom/server';
 
 import {
   ComparisonChartTooltip as ChartTooltip,
-} from '../ComparisonChartTooltip';
+} from '@bufferapp/analyze-shared-components';
 
 export const highChartsConfigXAxis = {
   gridLineColor: '#F3F5F7',

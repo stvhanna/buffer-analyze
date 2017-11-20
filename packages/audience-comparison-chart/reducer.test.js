@@ -27,7 +27,7 @@ describe('reducer', () => {
       });
   });
 
-  it('should update metric on fetch success', () => {
+  it('should update metric on fetch success if metric is audience', () => {
     const metrics = [
       { label: 'foo' },
       { label: 'bar' },
@@ -45,11 +45,43 @@ describe('reducer', () => {
 
     expect(reducer({}, {
       type: `comparison_${asyncDataFetchActionTypes.FETCH_SUCCESS}`,
+      args: { metric: 'audience' },
       result,
     }))
       .toEqual(Object.assign({}, {
         profilesMetricData: metrics,
         profileTotals: totals,
+        loading: false,
+      }));
+  });
+
+  it('should NOT update metric on fetch success if metric is NOT audience', () => {
+    const metrics = [
+      { label: 'foo' },
+      { label: 'bar' },
+    ];
+
+    const totals = [
+      { day: '12345' },
+      { day: '12345' },
+    ];
+
+    const result = {
+      profilesMetricData: metrics,
+      profileTotals: totals,
+    };
+
+    expect(reducer({
+      profilesMetricData: [1, 2, 3],
+      profileTotals: [5, 6, 7],
+    }, {
+      type: `comparison_${asyncDataFetchActionTypes.FETCH_SUCCESS}`,
+      args: { metric: 'reach' },
+      result,
+    }))
+      .toEqual(Object.assign({}, {
+        profilesMetricData: [1, 2, 3],
+        profileTotals: [5, 6, 7],
         loading: false,
       }));
   });
