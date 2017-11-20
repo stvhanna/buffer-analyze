@@ -60,6 +60,44 @@ storiesOf('SummaryTable')
       />
     </div>
   ))
+  .add('should render the summary table with 5 metrics on one line', () => (
+    <div
+      style={{
+        width: '750px',
+      }}
+    >
+      <SummaryTable
+        metrics={[
+          {
+            label: 'Tweets',
+            value: 150,
+            diff: 25,
+          },
+          {
+            label: 'Retweets',
+            value: 901,
+            diff: -39,
+          },
+          {
+            label: 'Clicks',
+            value: 1010,
+            diff: -55,
+          },
+          {
+            label: 'Impressions',
+            value: 963400,
+            diff: -26,
+          },
+          {
+            label: 'New Followers',
+            value: 0,
+            diff: 0,
+          },
+        ]}
+        profileService="twitter"
+      />
+    </div>
+  ))
   .add('should render a loading state', () => (
     <div
       style={{

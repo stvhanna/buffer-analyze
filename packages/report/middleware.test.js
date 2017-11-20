@@ -18,18 +18,30 @@ describe('middleware', () => {
       reports: [{
         _id: 'report_id_1',
         name: 'A report',
+        charts: [
+          {
+            profile_id: 'profile1',
+          },
+        ],
       }, {
         _id: 'report_id_2',
         name: 'Another report',
+        charts: [
+          {
+            profile_id: 'profile1',
+          },
+        ],
       }],
     },
     profiles: {
       profiles: [{
         id: 'profile1',
         username: 'profile_username_1',
+        service: 'foo',
       }, {
         id: 'profile2',
         username: 'profile_username_2',
+        service: 'foo',
       }],
     },
   };
@@ -78,6 +90,10 @@ describe('middleware', () => {
         name: 'Another report',
         startDate: state.date.startDate,
         endDate: state.date.endDate,
+        charts: [{
+          profile_id: 'profile1',
+          service: 'foo',
+        }],
       },
     }));
   });
@@ -100,6 +116,7 @@ describe('middleware', () => {
         profile: {
           id: 'profile1',
           username: 'profile_username_1',
+          service: 'foo',
         },
         metrics: [],
       }],
