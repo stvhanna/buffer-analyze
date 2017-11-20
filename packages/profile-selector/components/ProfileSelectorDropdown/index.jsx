@@ -20,8 +20,6 @@ import {
   dropdownContentInputHolder,
   dropdownList,
   dropdownListScrollable,
-  dropdownTrigger,
-  dropdownTriggerActive,
 } from './style.less';
 
 const styleButton = {
@@ -81,10 +79,6 @@ const ProfileSelectorDropdown = ({
 
   const contentClasses = classNames(dropdownContent, {
     [dropdownContentActive]: isDropdownOpen,
-  });
-
-  const triggerClasses = classNames(dropdownTrigger, {
-    [dropdownTriggerActive]: isDropdownOpen,
   });
 
   if (profiles.length) {
@@ -149,6 +143,7 @@ ProfileSelectorDropdown.propTypes = {
     avatarUrl: PropTypes.string.isRequired,
     id: PropTypes.string.isRequired,
   })).isRequired,
+  loading: PropTypes.bool.isRequired,
   isDropdownOpen: PropTypes.bool,
   onSearchChange: PropTypes.func.isRequired,
   profilesFilterString: PropTypes.string,

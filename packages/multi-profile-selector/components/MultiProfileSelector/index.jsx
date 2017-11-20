@@ -25,6 +25,32 @@ import {
   dropdownTriggerActive,
 } from './style.less';
 
+const styleButton = {
+  cursor: 'pointer',
+  display: 'flex',
+  alignItems: 'center',
+  padding: '0.5rem 1rem',
+  fontFamily: '"Roboto", sans-serif',
+  fontSize: '0.75rem',
+  fontWeight: 'bold',
+  color: '#333333',
+  textDecoration: 'none',
+  textShadow: 'none',
+  textAlign: 'left',
+  border: '1px solid #D5E3EF',
+  borderRadius: '3px',
+  width: '100%',
+  boxSizing: 'border-box',
+  boxShadow: '0px 1px 2px rgba(0, 0, 0, 0.05)',
+  outline: '0 none',
+};
+
+const styleButtonDisabled = {
+  ...styleButton,
+  opacity: 0.2,
+  pointerEvents: 'none',
+};
+
 function renderDropdownItem(profile, selectedProfiles, toggleProfile) {
   const onClick = () => {
     toggleProfile({
@@ -44,6 +70,7 @@ function renderDropdownItem(profile, selectedProfiles, toggleProfile) {
 }
 
 const MultiProfileSelector = ({
+  loading,
   isDropdownOpen,
   onSearchChange,
   profiles,
@@ -57,10 +84,6 @@ const MultiProfileSelector = ({
 }) => {
   const contentClasses = classNames(dropdownContent, {
     [dropdownContentActive]: isDropdownOpen,
-  });
-
-  const triggerClasses = classNames(dropdownTrigger, {
-    [dropdownTriggerActive]: isDropdownOpen,
   });
 
   if (profiles.length) {
@@ -79,20 +102,20 @@ const MultiProfileSelector = ({
         onShow={openDropdown}
         onHide={closeDropdown}
       >
-        <DropdownTrigger className={triggerClasses} style={{ display: 'flex' }} >
+        <DropdownTrigger style={(loading ? styleButtonDisabled : styleButton)}>
           { selectedProfiles.length > 0 &&
             selectedProfiles.map(p =>
               <ProfileBadge
                 avatarUrl={p.avatarUrl}
                 service={p.service}
-                avatarSize={24}
+                avatarSize={22}
                 socialIconSize={11}
                 key={p.id}
               />,
             )
           }
           { selectedProfiles.length === 0 &&
-            <Text weight="bold" size="small">Please choose an account</Text>
+            <div style={{ margin: '4px 0' }}><Text weight="bold" size="small">Please choose an account</Text></div>
           }
           <span style={{ pointerEvents: 'none', marginLeft: 'auto' }} >
             { isDropdownOpen && <ArrowUpIcon /> }
@@ -102,9 +125,6 @@ const MultiProfileSelector = ({
         <DropdownContent className={contentClasses} >
           <div
             className={dropdownContentInputHolder}
-            style={{
-              padding: '10px',
-            }}
           >
             <Input
               placeholder={'Search'}
@@ -151,6 +171,7 @@ MultiProfileSelector.propTypes = {
     avatarUrl: PropTypes.string.isRequired,
     id: PropTypes.string.isRequired,
   })).isRequired,
+  loading: PropTypes.bool.isRequired,
   isDropdownOpen: PropTypes.bool,
   onSearchChange: PropTypes.func.isRequired,
   profilesFilterString: PropTypes.string,
