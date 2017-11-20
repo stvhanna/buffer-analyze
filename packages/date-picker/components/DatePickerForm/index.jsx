@@ -104,14 +104,13 @@ class Form extends Component {
           { calendarOpen &&
           <div>
             <h4 className={styles.title}>Select a custom date range</h4>
-
             <form className={styles.form}>
               <input
                 ref={(node) => { this._startDate = node; }}
                 type="text"
                 name="start"
                 value={startDateFormat}
-                placeholder="Date from:"
+                placeholder="Date from"
                 className={startDateInputClass}
                 readOnly
               />
@@ -128,7 +127,7 @@ class Form extends Component {
                 type="text"
                 name="end"
                 value={endDateFormat}
-                placeholder="Date to:"
+                placeholder="Date to"
                 className={endDateInputClass}
                 readOnly
               />

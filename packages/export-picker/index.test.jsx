@@ -2,13 +2,13 @@ import React from 'react';
 import { configure, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { Provider } from 'react-redux';
-import DatePickerContainer, {
+import ExportPickerContainer, {
   reducer,
   actions,
   actionTypes,
   middleware,
 } from './index';
-import DatePicker from './components/DatePicker';
+import ExportPicker from './components/ExportPicker';
 
 configure({ adapter: new Adapter() });
 const storeFake = state => ({
@@ -18,19 +18,15 @@ const storeFake = state => ({
   getState: () => ({ ...state }),
 });
 
-describe('DatePicker', () => {
+describe('ExportPicker', () => {
   it('should render', () => {
-    const store = storeFake({
-      date: {
-        loading: true,
-      },
-    });
+    const store = storeFake({});
     const wrapper = mount(
       <Provider store={store}>
-        <DatePickerContainer />
+        <ExportPickerContainer />
       </Provider>,
     );
-    expect(wrapper.find(DatePicker).length)
+    expect(wrapper.find(ExportPicker).length)
       .toBe(1);
   });
 

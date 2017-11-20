@@ -1,5 +1,3 @@
-import { actions } from '@bufferapp/async-data-fetch';
-import { actionTypes } from '@bufferapp/analyze-profile-selector';
 import middleware from './middleware';
 
 describe('middleware', () => {
@@ -16,20 +14,5 @@ describe('middleware', () => {
       type: 'TEST',
     };
     middleware(store)(next)(action);
-  });
-
-  it('should dispatch a data fetch for the minimum date with analytics available once a profile has been selected', () => {
-    const action = {
-      type: actionTypes.SELECT_PROFILE,
-      id: '1235519asd',
-    };
-    middleware(store)(next)(action);
-    expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
-      name: 'analytics_start_date',
-      args: {
-        profileId: '1235519asd',
-      },
-    }));
-    expect(next).toHaveBeenCalledWith(action);
   });
 });
