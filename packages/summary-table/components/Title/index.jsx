@@ -2,8 +2,8 @@ import React from 'react';
 import Text from '@bufferapp/components/Text';
 
 const title = {
-  margin: '0',
-  padding: '0',
+  margin: 0,
+  padding: 0,
 };
 
 const Title = () =>

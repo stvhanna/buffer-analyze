@@ -3,12 +3,10 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import {
-  geyser,
-} from '@bufferapp/components/style/color';
-
-import {
   ChartStateNoData as NoData,
   ChartStateLoading as Loading,
+  ChartCard,
+  ChartHeader,
 } from '@bufferapp/analyze-shared-components';
 
 import Chart from '../Chart';
@@ -24,7 +22,7 @@ const AudienceComparisonChart = ({
   let footer = null;
 
   if (loading) {
-    content = <Loading active />;
+    content = <Loading active noBorder />;
   } else if (profilesMetricData.length === 0) {
     content = <NoData />;
   } else {
@@ -43,22 +41,20 @@ const AudienceComparisonChart = ({
   }
 
   const ContentContainer = styled.div`
-    padding: 0;
-    margin: auto;
-    border-radius: 2px;
-    border: solid 1px ${geyser};
-    min-height: 12rem;
     position: relative;
+    padding: 1.5rem;
   `;
 
   return (
-    <div>
-      <Title />
+    <ChartCard>
+      <ChartHeader>
+        <Title />
+      </ChartHeader>
       <ContentContainer>
         {content}
       </ContentContainer>
       {footer}
-    </div>
+    </ChartCard>
   );
 };
 
