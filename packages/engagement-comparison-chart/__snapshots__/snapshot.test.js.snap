@@ -23,7 +23,7 @@ exports[`Snapshots EngagementComparisonChart should render a "no data" state 1`]
             }
           }
         >
-          Likes
+          Engagement
            comparison
         </span>
       </h2>
@@ -120,7 +120,7 @@ exports[`Snapshots EngagementComparisonChart should render a loading state 1`] =
             }
           }
         >
-          Likes
+          Engagement
            comparison
         </span>
       </h2>
@@ -220,7 +220,7 @@ exports[`Snapshots EngagementComparisonChart should render a loading state 1`] =
                   }
                 }
               >
-                Likes comparison chart loading...
+                Engagement comparison chart loading...
               </span>
             </div>
           </div>
@@ -254,7 +254,7 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
             }
           }
         >
-          Likes
+          Engagement
            comparison
         </span>
       </h2>
@@ -662,7 +662,7 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
             }
           }
         >
-          Likes
+          Engagement
            comparison
         </span>
       </h2>
