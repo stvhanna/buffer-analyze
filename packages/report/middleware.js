@@ -86,6 +86,15 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
         },
       }));
       break;
+    case actionTypes.DELETE_CHART:
+      store.dispatch(actions.fetch({
+        name: 'delete_chart',
+        args: {
+          chartId: action.chartId,
+          reportId: store.getState().report.id,
+        },
+      }));
+      break;
     default:
       break;
   }
