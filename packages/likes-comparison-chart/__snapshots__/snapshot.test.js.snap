@@ -1,0 +1,1047 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshots LikesComparisonChart should render a "no data" state 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "750px",
+      }
+    }
+  >
+    <div>
+      <h2
+        className="sc-gzVnrw LRhtN"
+      >
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "2rem",
+              "fontWeight": 700,
+            }
+          }
+        >
+          Likes
+           comparison
+        </span>
+      </h2>
+      <div
+        className="sc-gZMcBi gwdoth"
+      >
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "background": "rgba(255, 255, 255, 1)",
+              "display": "flex",
+              "justifyContent": "center",
+              "opacity": 1,
+              "textAlign": "center",
+              "transition": "opacity 350ms ease-in-out",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "background": "white",
+                "boxSizing": "border-box",
+                "flex": 1,
+                "flexDirection": "row",
+                "marginLeft": 30,
+                "marginRight": 30,
+              }
+            }
+          >
+            <h1>
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "1.25rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                We couldn't find any analytics for this date range.
+              </span>
+            </h1>
+            <p
+              style={
+                Object {
+                  "marginBottom": 30,
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "1rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                Try selecting a longer date range, or share something and check back tomorrow :)
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots LikesComparisonChart should render a loading state 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "750px",
+      }
+    }
+  >
+    <div>
+      <h2
+        className="sc-gzVnrw LRhtN"
+      >
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "2rem",
+              "fontWeight": 700,
+            }
+          }
+        >
+          Likes
+           comparison
+        </span>
+      </h2>
+      <div
+        className="sc-iwsKbI dPcvgv"
+      >
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "background": "rgba(255,255,255,.95)",
+              "border": "solid 1px #ced7df",
+              "display": "flex",
+              "justifyContent": "center",
+              "maxHeight": "none",
+              "minHeight": "8rem",
+              "textAlign": "center",
+              "transition": "opacity 350ms ease-in-out",
+              "zIndex": 2,
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "background": "white",
+                "borderRadius": "2px",
+                "flex": 1,
+                "flexDirection": "row",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "textAlign": "center",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "height": "1rem",
+                    "margin": "0 auto 1rem auto",
+                    "position": "relative",
+                    "width": "1rem",
+                  }
+                }
+              >
+                <span>
+                  <div
+                    style={
+                      Object {
+                        "height": "1rem",
+                        "left": 0,
+                        "opacity": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "transition": "all 1000ms ease-in-out",
+                        "width": "1rem",
+                      }
+                    }
+                  >
+                    <svg
+                      height="100%"
+                      style={
+                        Object {
+                          "fill": "#59626a",
+                          "height": "1rem",
+                          "width": "1rem",
+                        }
+                      }
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="100%"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlnsXlink="http://www.w3.org/1999/xlink"
+                    >
+                      <g
+                        className="shuttleGray"
+                      >
+                        <path
+                          d="M1.10241622,4.34038738 L7.75166358,7.40469806 C7.88821853,7.46764349 8.11178147,7.46764349 8.24833642,7.40469806 L14.8975838,4.34038738 C15.0341387,4.27744195 15.0341387,4.17446518 14.8975838,4.11151975 L8.24833642,1.04720908 C8.11178147,0.984263641 7.88821853,0.984263641 7.75166358,1.04720908 L1.10241622,4.11151975 C0.965861261,4.17446518 0.965861261,4.27744195 1.10241622,4.34038738"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                </span>
+              </div>
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "1rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                Likes comparison chart loading...
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots LikesComparisonChart should render the likes comparison chart for a multiple profiles 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "750px",
+      }
+    }
+  >
+    <div>
+      <h2
+        className="sc-gzVnrw LRhtN"
+      >
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "2rem",
+              "fontWeight": 700,
+            }
+          }
+        >
+          Likes
+           comparison
+        </span>
+      </h2>
+      <div
+        className="sc-dnqmqq cktmIi"
+      >
+        <div />
+      </div>
+      <section
+        className="sc-ifAKCX blbWuv"
+      >
+        <ul
+          className="sc-bxivhb bMvQir"
+        >
+          <li
+            style={
+              Object {
+                "boxSizing": "border-box",
+                "display": "inline-block",
+                "flexGrow": 1,
+                "listStyle": "none",
+                "paddingBottom": "15px",
+                "width": "25%",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "fontSize": "0.75rem",
+                  "fontWeight": 600,
+                  "marginTop": "15px",
+                }
+              }
+            >
+              <span
+                data-tip={null}
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <div
+                    className="sc-EHOje enMLlg"
+                  >
+                    <div
+                      className="sc-bZQynM fqsBLH"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        Buffer
+                      </span>
+                    </div>
+                    <span
+                      style={
+                        Object {
+                          "background": "#fda3f3",
+                          "borderColor": "#df85d5",
+                          "borderRadius": "10px",
+                          "borderStyle": "solid",
+                          "borderWidth": "1px",
+                          "display": "inline-block",
+                          "height": "7px",
+                          "marginRight": "5px",
+                          "verticalAlign": "baseline",
+                          "width": "7px",
+                        }
+                      }
+                    />
+                  </div>
+                </span>
+              </span>
+            </span>
+            <div
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "flex": 1,
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "display": "inline-block",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#323b43",
+                      "fontSize": "2.5rem",
+                      "fontWeight": 600,
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#323b43",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "2rem",
+                        "fontWeight": 700,
+                      }
+                    }
+                  >
+                    <span>
+                      400
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div>
+                <span
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "height": "1rem",
+                      "marginLeft": "10px",
+                    }
+                  }
+                >
+                  <svg
+                    height="100%"
+                    style={
+                      Object {
+                        "fill": "#2fd566",
+                        "height": "1rem",
+                        "width": "1rem",
+                      }
+                    }
+                    version="1.1"
+                    viewBox="0 0 16 16"
+                    width="100%"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g
+                      className="shamrock"
+                    >
+                      <path
+                        d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                      />
+                    </g>
+                  </svg>
+                </span>
+                <div
+                  style={
+                    Object {
+                      "color": "#2FD566",
+                      "display": "inline-block",
+                      "fontSize": "18px",
+                      "fontWeight": 600,
+                      "marginLeft": "5px",
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      style={
+                        Object {
+                          "color": "shamrock",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1.25rem",
+                        }
+                      }
+                    >
+                      <span>
+                        20
+                      </span>
+                      %
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            style={
+              Object {
+                "boxSizing": "border-box",
+                "display": "inline-block",
+                "flexGrow": 1,
+                "listStyle": "none",
+                "paddingBottom": "15px",
+                "width": "25%",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "fontSize": "0.75rem",
+                  "fontWeight": 600,
+                  "marginTop": "15px",
+                }
+              }
+            >
+              <span
+                data-tip={null}
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <div
+                    className="sc-EHOje enMLlg"
+                  >
+                    <div
+                      className="sc-bZQynM fqsBLH"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        buffer
+                      </span>
+                    </div>
+                    <span
+                      style={
+                        Object {
+                          "background": "#fda444",
+                          "borderColor": "#df8626",
+                          "borderRadius": "10px",
+                          "borderStyle": "solid",
+                          "borderWidth": "1px",
+                          "display": "inline-block",
+                          "height": "7px",
+                          "marginRight": "5px",
+                          "verticalAlign": "baseline",
+                          "width": "7px",
+                        }
+                      }
+                    />
+                  </div>
+                </span>
+              </span>
+            </span>
+            <div
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "flex": 1,
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "display": "inline-block",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#323b43",
+                      "fontSize": "2.5rem",
+                      "fontWeight": 600,
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#323b43",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "2rem",
+                        "fontWeight": 700,
+                      }
+                    }
+                  >
+                    <span>
+                      700
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div>
+                <span
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "height": "1rem",
+                      "marginLeft": "10px",
+                    }
+                  }
+                >
+                  <svg
+                    height="100%"
+                    style={
+                      Object {
+                        "fill": "#ff1e1e",
+                        "height": "1rem",
+                        "width": "1rem",
+                      }
+                    }
+                    version="1.1"
+                    viewBox="0 0 16 16"
+                    width="100%"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g
+                      className="torchRed"
+                    >
+                      <path
+                        d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                        transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
+                      />
+                    </g>
+                  </svg>
+                </span>
+                <div
+                  style={
+                    Object {
+                      "color": "#FF1E1E",
+                      "display": "inline-block",
+                      "fontSize": "18px",
+                      "fontWeight": 600,
+                      "marginLeft": "5px",
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      style={
+                        Object {
+                          "color": "torchRed",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1.25rem",
+                        }
+                      }
+                    >
+                      <span>
+                        10
+                      </span>
+                      %
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li
+            style={
+              Object {
+                "boxSizing": "border-box",
+                "display": "inline-block",
+                "flexGrow": 1,
+                "listStyle": "none",
+                "paddingBottom": "15px",
+                "width": "25%",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "fontSize": "0.75rem",
+                  "fontWeight": 600,
+                  "marginTop": "15px",
+                }
+              }
+            >
+              <span
+                data-tip={null}
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <div
+                    className="sc-EHOje enMLlg"
+                  >
+                    <div
+                      className="sc-bZQynM fqsBLH"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        TestInstagram
+                      </span>
+                    </div>
+                    <span
+                      style={
+                        Object {
+                          "background": "#fda444",
+                          "borderColor": "#df8626",
+                          "borderRadius": "10px",
+                          "borderStyle": "solid",
+                          "borderWidth": "1px",
+                          "display": "inline-block",
+                          "height": "7px",
+                          "marginRight": "5px",
+                          "verticalAlign": "baseline",
+                          "width": "7px",
+                        }
+                      }
+                    />
+                  </div>
+                </span>
+              </span>
+            </span>
+            <div
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "flex": 1,
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "display": "inline-block",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#323b43",
+                      "fontSize": "2.5rem",
+                      "fontWeight": 600,
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#323b43",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "2rem",
+                        "fontWeight": 700,
+                      }
+                    }
+                  >
+                    <span>
+                      2,000
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div>
+                <span
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "height": "1rem",
+                      "marginLeft": "10px",
+                    }
+                  }
+                >
+                  <svg
+                    height="100%"
+                    style={
+                      Object {
+                        "fill": "#2fd566",
+                        "height": "1rem",
+                        "width": "1rem",
+                      }
+                    }
+                    version="1.1"
+                    viewBox="0 0 16 16"
+                    width="100%"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g
+                      className="shamrock"
+                    >
+                      <path
+                        d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                      />
+                    </g>
+                  </svg>
+                </span>
+                <div
+                  style={
+                    Object {
+                      "color": "#2FD566",
+                      "display": "inline-block",
+                      "fontSize": "18px",
+                      "fontWeight": 600,
+                      "marginLeft": "5px",
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      style={
+                        Object {
+                          "color": "shamrock",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1.25rem",
+                        }
+                      }
+                    >
+                      <span>
+                        80
+                      </span>
+                      %
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots LikesComparisonChart should render the likes comparison chart for a single profile 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "750px",
+      }
+    }
+  >
+    <div>
+      <h2
+        className="sc-gzVnrw LRhtN"
+      >
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "2rem",
+              "fontWeight": 700,
+            }
+          }
+        >
+          Likes
+           comparison
+        </span>
+      </h2>
+      <div
+        className="sc-htoDjs fQyzgx"
+      >
+        <div />
+      </div>
+      <section
+        className="sc-ifAKCX blbWuv"
+      >
+        <ul
+          className="sc-bxivhb bMvQir"
+        >
+          <li
+            style={
+              Object {
+                "boxSizing": "border-box",
+                "display": "inline-block",
+                "flexGrow": 1,
+                "listStyle": "none",
+                "paddingBottom": "15px",
+                "width": "25%",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "fontSize": "0.75rem",
+                  "fontWeight": 600,
+                  "marginTop": "15px",
+                }
+              }
+            >
+              <span
+                data-tip={null}
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <div
+                    className="sc-EHOje enMLlg"
+                  >
+                    <div
+                      className="sc-bZQynM fqsBLH"
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 400,
+                          }
+                        }
+                      >
+                        Buffer
+                      </span>
+                    </div>
+                    <span
+                      style={
+                        Object {
+                          "background": "#fda3f3",
+                          "borderColor": "#df85d5",
+                          "borderRadius": "10px",
+                          "borderStyle": "solid",
+                          "borderWidth": "1px",
+                          "display": "inline-block",
+                          "height": "7px",
+                          "marginRight": "5px",
+                          "verticalAlign": "baseline",
+                          "width": "7px",
+                        }
+                      }
+                    />
+                  </div>
+                </span>
+              </span>
+            </span>
+            <div
+              style={
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "flex": 1,
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "display": "inline-block",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#323b43",
+                      "fontSize": "2.5rem",
+                      "fontWeight": 600,
+                    }
+                  }
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#323b43",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "2rem",
+                        "fontWeight": 700,
+                      }
+                    }
+                  >
+                    <span>
+                      400
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div>
+                <span
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "height": "1rem",
+                      "marginLeft": "10px",
+                    }
+                  }
+                >
+                  <svg
+                    height="100%"
+                    style={
+                      Object {
+                        "fill": "#2fd566",
+                        "height": "1rem",
+                        "width": "1rem",
+                      }
+                    }
+                    version="1.1"
+                    viewBox="0 0 16 16"
+                    width="100%"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g
+                      className="shamrock"
+                    >
+                      <path
+                        d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                      />
+                    </g>
+                  </svg>
+                </span>
+                <div
+                  style={
+                    Object {
+                      "color": "#2FD566",
+                      "display": "inline-block",
+                      "fontSize": "18px",
+                      "fontWeight": 600,
+                      "marginLeft": "5px",
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      style={
+                        Object {
+                          "color": "shamrock",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1.25rem",
+                        }
+                      }
+                    >
+                      <span>
+                        20
+                      </span>
+                      %
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</span>
+`;
