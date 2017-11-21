@@ -19,6 +19,7 @@ const addToReport = require('./addToReport');
 const audienceComparison = require('./audienceComparison');
 const removeReport = require('./removeReport');
 const saveReportChanges = require('./saveReportChanges');
+const moveChart = require('./moveChart');
 
 module.exports = checkToken(rpc(
   profilesMethod,
@@ -40,4 +41,5 @@ module.exports = checkToken(rpc(
   audienceComparison,
   removeReport,
   saveReportChanges,
+  moveChart,
 ));
