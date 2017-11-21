@@ -18,6 +18,7 @@ const contextual = require('./contextual');
 const addToReport = require('./addToReport');
 const removeReport = require('./removeReport');
 const saveReportChanges = require('./saveReportChanges');
+const moveChart = require('./moveChart');
 const comparison = require('./comparison');
 
 module.exports = checkToken(rpc(
@@ -39,5 +40,6 @@ module.exports = checkToken(rpc(
   addToReport,
   removeReport,
   saveReportChanges,
+  moveChart,
   comparison,
 ));

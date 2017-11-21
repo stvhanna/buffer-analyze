@@ -3,6 +3,9 @@ import { actionTypes as dateActionTypes } from '@bufferapp/analyze-date-picker';
 import { actionTypes as listActionTypes } from '@bufferapp/report-list';
 import { actionTypes } from './reducer';
 
+export const DIRECTION_UP = 'up';
+export const DIRECTION_DOWN = 'down';
+
 const getReport = (reportId, state) =>
   state.reportList.reports.find(report => report._id === reportId);
 
@@ -60,6 +63,26 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
         args: {
           ...store.getState().report,
           name: action.name,
+        },
+      }));
+      break;
+    case actionTypes.MOVE_CHART_UP:
+      store.dispatch(actions.fetch({
+        name: 'move_chart',
+        args: {
+          direction: DIRECTION_UP,
+          chartId: action.chartId,
+          reportId: store.getState().report.id,
+        },
+      }));
+      break;
+    case actionTypes.MOVE_CHART_DOWN:
+      store.dispatch(actions.fetch({
+        name: 'move_chart',
+        args: {
+          direction: DIRECTION_DOWN,
+          chartId: action.chartId,
+          reportId: store.getState().report.id,
         },
       }));
       break;
