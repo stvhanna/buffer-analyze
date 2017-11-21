@@ -19,6 +19,7 @@ const addToReport = require('./addToReport');
 const removeReport = require('./removeReport');
 const saveReportChanges = require('./saveReportChanges');
 const moveChart = require('./moveChart');
+const deleteChart = require('./deleteChart');
 const comparison = require('./comparison');
 
 module.exports = checkToken(rpc(
@@ -42,4 +43,5 @@ module.exports = checkToken(rpc(
   saveReportChanges,
   moveChart,
   comparison,
+  deleteChart,
 ));
