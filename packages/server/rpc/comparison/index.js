@@ -49,15 +49,15 @@ const METRIC_CONFIGS_BY_KEY = {
   },
   engagement: {
     facebook: {
-      label: 'Likes',
+      label: 'Engagement',
       color: '#ced7df',
     },
     instagram: {
-      label: 'Likes',
+      label: 'Engagement',
       color: '#FEC78B',
     },
     twitter: {
-      label: 'Likes',
+      label: 'Engagement',
       color: '#3A92D3',
     },
   },
