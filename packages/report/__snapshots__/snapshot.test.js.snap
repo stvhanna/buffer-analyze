@@ -549,7 +549,7 @@ exports[`Snapshots Report renders a loading report 1`] = `
 exports[`Snapshots Report renders a report in edit mode 1`] = `
 <span>
   <section
-    className="sc-jKJlTe gBAUF"
+    className="sc-hSdWYo ijvLfn"
   >
     <span
       style={
@@ -562,7 +562,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
       }
     >
       <input
-        className="sc-ckVGcZ eDOhIO"
+        className="sc-iAyFgw jLtcPz"
         onBlur={[Function]}
         onChange={[Function]}
         value="Weekly Sync Report"
@@ -578,13 +578,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         }
       >
         <span
-          className="sc-kpOJdX fZqPVt"
+          className="sc-kEYyzF loCWBI"
         >
           Showing for dates
         </span>
          
         <span
-          className="sc-dxgOiQ bnJfCW"
+          className="sc-kkGfuU bRtMqI"
         >
           Invalid date
            to 
@@ -593,7 +593,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
       </span>
     </span>
     <section
-      className="sc-chPdSV dGyChb"
+      className="sc-jKJlTe jHmkYK"
     >
       <h2
         style={
@@ -802,12 +802,12 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         }
       >
         <span
-          className="sc-kgoBCf krymCW"
+          className="sc-eNQAEJ fEJkBn"
         >
           Showing for accounts
         </span>
         <span
-          className="sc-kGXeez kwOvDg"
+          className="sc-hMqMXs hICpRk"
         >
            
         </span>
@@ -2006,7 +2006,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
 exports[`Snapshots Report renders a report with summary table 1`] = `
 <span>
   <section
-    className="sc-jKJlTe gBAUF"
+    className="sc-hSdWYo ijvLfn"
   >
     <span
       style={
@@ -2048,7 +2048,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
           }
         >
           <h1
-            className="sc-eNQAEJ fNERTW"
+            className="sc-eHgmQL ipwQiU"
           >
             Weekly Sync Report
           </h1>
@@ -2065,13 +2065,13 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         }
       >
         <span
-          className="sc-kpOJdX fZqPVt"
+          className="sc-kEYyzF loCWBI"
         >
           Showing for dates
         </span>
          
         <span
-          className="sc-dxgOiQ bnJfCW"
+          className="sc-kkGfuU bRtMqI"
         >
           Invalid date
            to 
@@ -2080,7 +2080,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
       </span>
     </span>
     <section
-      className="sc-chPdSV dGyChb"
+      className="sc-jKJlTe jHmkYK"
     >
       <h2
         style={
@@ -2289,12 +2289,12 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         }
       >
         <span
-          className="sc-kgoBCf krymCW"
+          className="sc-eNQAEJ fEJkBn"
         >
           Showing for accounts
         </span>
         <span
-          className="sc-kGXeez kwOvDg"
+          className="sc-hMqMXs hICpRk"
         >
            
         </span>

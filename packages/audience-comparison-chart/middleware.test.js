@@ -48,11 +48,12 @@ describe('middleware', () => {
     };
     middleware(store)(next)(action);
     expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
-      name: 'audience_comparison',
+      name: 'comparison',
       args: {
         profileIds: mockProfiles.map(p => p.id),
         startDate: state.date.startDate,
         endDate: state.date.endDate,
+        metric: 'audience',
       },
     }));
     expect(next).toHaveBeenCalledWith(action);
@@ -67,11 +68,12 @@ describe('middleware', () => {
     };
     middleware(store)(next)(action);
     expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
-      name: 'audience_comparison',
+      name: 'comparison',
       args: {
         profileIds: mockProfiles.map(p => p.id),
         startDate: state.date.startDate,
         endDate: state.date.endDate,
+        metric: 'audience',
       },
     }));
     expect(next).toHaveBeenCalledWith(action);

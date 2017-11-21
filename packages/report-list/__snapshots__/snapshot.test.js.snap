@@ -3,7 +3,7 @@
 exports[`Snapshots Report can display buttons for viewing and removing the report 1`] = `
 <span>
   <span
-    className="sc-ifAKCX fUXxUr"
+    className="sc-iwsKbI ifbRPO"
   >
     <span
       style={
@@ -16,13 +16,13 @@ exports[`Snapshots Report can display buttons for viewing and removing the repor
       }
     >
       <span
-        className="sc-htpNat byAsPi"
+        className="sc-htoDjs kUnzht"
       >
         Weekly Sync Report
       </span>
     </span>
     <span
-      className="sc-EHOje jKgWDh"
+      className="sc-gZMcBi kZHApZ"
     >
       <button
         className="sc-bdVaJa eTEyQW"
@@ -51,7 +51,7 @@ exports[`Snapshots Report can display buttons for viewing and removing the repor
         }
       />
       <button
-        className="sc-bZQynM iqGHUr sc-bdVaJa eTEyQW"
+        className="sc-gqjmRU gKrgaB sc-bdVaJa eTEyQW"
         onClick={[Function]}
       >
         <svg
@@ -87,7 +87,7 @@ exports[`Snapshots Report can display buttons for viewing and removing the repor
 exports[`Snapshots Report renders the report 1`] = `
 <span>
   <li
-    className="sc-gzVnrw fCsohM"
+    className="sc-VigVT iHSuUu"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
@@ -121,7 +121,7 @@ exports[`Snapshots Report renders the report 1`] = `
       }
     >
       <span
-        className="sc-ifAKCX fUXxUr"
+        className="sc-iwsKbI ifbRPO"
       >
         <span
           style={
@@ -134,7 +134,7 @@ exports[`Snapshots Report renders the report 1`] = `
           }
         >
           <span
-            className="sc-htpNat byAsPi"
+            className="sc-htoDjs kUnzht"
           >
             Weekly Sync Report
           </span>
@@ -150,7 +150,7 @@ exports[`Snapshots Report renders the report 1`] = `
           }
         >
           <span
-            className="sc-bxivhb hlPYmz"
+            className="sc-dnqmqq eTpfEZ"
           >
             October 10, 2017
           </span>
@@ -181,15 +181,15 @@ exports[`Snapshots ReportList loading state 1`] = `
 exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
 <span>
   <ol
-    className="sc-htoDjs cysWFd"
+    className="sc-jTzLTM jkPlha"
   >
     <li
-      className="sc-gzVnrw fCsohM"
+      className="sc-VigVT iHSuUu"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
       <span
-        className="sc-ifAKCX fUXxUr"
+        className="sc-iwsKbI ifbRPO"
       >
         <span
           style={
@@ -202,7 +202,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
           }
         >
           <span
-            className="sc-htpNat byAsPi"
+            className="sc-htoDjs kUnzht"
           >
             Weekly Sync Report
           </span>
@@ -218,7 +218,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
           }
         >
           <span
-            className="sc-bxivhb hlPYmz"
+            className="sc-dnqmqq eTpfEZ"
           >
             November 7, 2017
           </span>
@@ -226,12 +226,12 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
       </span>
     </li>
     <li
-      className="sc-gzVnrw fCsohM"
+      className="sc-VigVT iHSuUu"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
       <span
-        className="sc-ifAKCX fUXxUr"
+        className="sc-iwsKbI ifbRPO"
       >
         <span
           style={
@@ -244,7 +244,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
           }
         >
           <span
-            className="sc-htpNat byAsPi"
+            className="sc-htoDjs kUnzht"
           >
             Client Social Media Campaign
           </span>
@@ -260,7 +260,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
           }
         >
           <span
-            className="sc-bxivhb hlPYmz"
+            className="sc-dnqmqq eTpfEZ"
           >
             October 10, 2017
           </span>

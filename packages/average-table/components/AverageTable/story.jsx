@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { ReportsStore } from '@bufferapp/analyze-decorators';
 import { checkA11y } from 'storybook-addon-a11y';
 import AverageTable from './index';
 import mockDailyData from './mock/dailyData';
@@ -30,6 +31,7 @@ const metrics = {
 
 storiesOf('AverageTable')
   .addDecorator(checkA11y)
+  .addDecorator(ReportsStore)
   .add('should render the average table', () => (
     <div
       style={{

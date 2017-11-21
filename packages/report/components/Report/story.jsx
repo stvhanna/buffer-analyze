@@ -65,8 +65,8 @@ const report = {
 };
 
 const dateRange = {
-  startDate: moment.tz(1496275200000, 'US/Eastern').format('x'),
-  endDate: moment.tz(1498780800000, 'US/Eastern').format('x'),
+  startDate: moment.tz(1509321600, 'US/Eastern').format('x'),
+  endDate: moment.tz(1509494400, 'US/Eastern').format('x'),
 };
 
 storiesOf('Report')

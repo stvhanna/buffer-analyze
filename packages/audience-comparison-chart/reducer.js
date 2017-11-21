@@ -10,16 +10,22 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case `audience_comparison_${asyncDataFetchActionTypes.FETCH_START}`:
+    case `comparison_${asyncDataFetchActionTypes.FETCH_START}`:
       return {
         ...initialState,
         loading: true,
       };
-    case `audience_comparison_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
+    case `comparison_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
+      if (action.args.metric === 'audience') {
+        return {
+          ...state,
+          profilesMetricData: action.result.profilesMetricData,
+          profileTotals: action.result.profileTotals,
+          loading: false,
+        };
+      }
       return {
         ...state,
-        profilesMetricData: action.result.profilesMetricData,
-        profileTotals: action.result.profileTotals,
         loading: false,
       };
     default:

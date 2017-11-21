@@ -11,6 +11,7 @@ const profileTotals = [
     currentPeriodDiff: 20,
     profileId: '1234abcd',
     username: 'Buffer',
+    service: 'facebook',
     metric: {
       color: '#fda3f3',
       label: 'Fans',
@@ -21,6 +22,7 @@ const profileTotals = [
     currentPeriodDiff: -10,
     profileId: '5678abcd',
     username: 'buffer',
+    service: 'twitter',
     metric: {
       color: '#fda444',
       label: 'Followers',

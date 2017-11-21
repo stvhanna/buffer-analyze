@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
-import Footer from './index';
+import ComparisonFooter from './index';
 
 const profileTotals = [
   {
@@ -24,9 +24,20 @@ const profileTotals = [
       label: 'Followers',
     },
   },
+  {
+    currentPeriodTotal: 700,
+    currentPeriodDiff: -10,
+    profileId: '5678ioio',
+    username: 'LifeIsAwesome',
+    service: 'instagram',
+    metric: {
+      color: '#fda444',
+      label: 'Impressions',
+    },
+  },
 ];
 
-storiesOf('Footer')
+storiesOf('ComparisonFooter')
   .addDecorator(checkA11y)
   .add('should render the footer for a single profile', () => (
     <div
@@ -34,7 +45,18 @@ storiesOf('Footer')
         width: '750px',
       }}
     >
-      <Footer
+      <ComparisonFooter
+        profileTotals={[profileTotals[2]]}
+      />
+    </div>
+  ))
+  .add('should render coming soon if the profile is instagram and metric is Impressions', () => (
+    <div
+      style={{
+        width: '750px',
+      }}
+    >
+      <ComparisonFooter
         profileTotals={[profileTotals[0]]}
       />
     </div>
@@ -45,7 +67,7 @@ storiesOf('Footer')
         width: '750px',
       }}
     >
-      <Footer
+      <ComparisonFooter
         profileTotals={profileTotals}
       />
     </div>

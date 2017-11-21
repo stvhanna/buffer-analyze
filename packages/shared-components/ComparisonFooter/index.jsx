@@ -37,36 +37,37 @@ const ProfileUsernameWrapper = styled.div`
   margin-right: 10px;
 `;
 
-const Footer = ({ profileTotals }) => (
+const ComparisonFooter = ({ profileTotals }) => (
   <Wrapper>
     <Grid>
-      {profileTotals.map(total => <GridItem
-        key={total.profileId}
-        metric={{
-          label: total.metric.label,
-          value: total.currentPeriodTotal,
-          diff: total.currentPeriodDiff,
-        }}
-        customLabel={
-          <ProfileAvatarWrapper>
-            <ProfileUsernameWrapper>
-              <Text size="small">
-                {total.username}
-              </Text>
-            </ProfileUsernameWrapper>
-            <MetricIcon key={total.profileId} metric={total.metric} />
-          </ProfileAvatarWrapper>
-        }
-      />)}
+      {profileTotals.map(total =>
+        <GridItem
+          key={total.profileId}
+          metric={{
+            label: total.metric.label,
+            value: total.currentPeriodTotal,
+            diff: total.currentPeriodDiff,
+          }}
+          customLabel={
+            <ProfileAvatarWrapper>
+              <ProfileUsernameWrapper>
+                <Text size="small">
+                  {total.username}
+                </Text>
+              </ProfileUsernameWrapper>
+              <MetricIcon key={total.profileId} metric={total.metric} />
+            </ProfileAvatarWrapper>
+          }
+        />)}
     </Grid>
   </Wrapper>
 );
 
-Footer.defaultProps = {
+ComparisonFooter.defaultProps = {
   loading: false,
 };
 
-Footer.propTypes = {
+ComparisonFooter.propTypes = {
   profileTotals: PropTypes.arrayOf(PropTypes.shape({
     metric: PropTypes.shape({
       label: PropTypes.string.isRequired,
@@ -76,8 +77,9 @@ Footer.propTypes = {
     currentPeriodDiff: PropTypes.number.isRequired,
     profileId: PropTypes.string.isRequired,
     username: PropTypes.string.isRequired,
+    service: PropTypes.string,
   })).isRequired,
 };
 
-export default Footer;
+export default ComparisonFooter;
 
