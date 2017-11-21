@@ -1,5 +1,6 @@
 import { actionTypes as asyncDataFetchActions } from '@bufferapp/async-data-fetch';
 import reducer, { actions, actionTypes } from './reducer';
+import { DIRECTION_UP, DIRECTION_DOWN } from './middleware';
 
 describe('reducer', () => {
   describe('initial state', () => {
@@ -72,6 +73,72 @@ describe('reducer', () => {
     });
   });
 
+  describe('moving charts', () => {
+    let initialState = null;
+
+    beforeEach(() => {
+      initialState = reducer({
+        charts: [{
+          _id: 1,
+        }, {
+          _id: 2,
+        }],
+      }, {});
+    });
+
+    it('moves chart when move_chart_FETCH_START happens', () => {
+      const state = reducer(initialState, {
+        type: `move_chart_${asyncDataFetchActions.FETCH_START}`,
+        args: {
+          direction: DIRECTION_UP,
+          chartId: 2,
+        },
+      });
+
+      const chartIds = state.charts.map(chart => chart._id);
+
+      expect(chartIds).toEqual([2, 1]);
+    });
+
+    it('triggering the opposite moves on the same charts leads to the same order', () => {
+      const state = reducer(initialState, {
+        type: `move_chart_${asyncDataFetchActions.FETCH_START}`,
+        args: {
+          direction: DIRECTION_UP,
+          chartId: 2,
+        },
+      });
+      const stateWithChartsBackToNormal = reducer(state, {
+        type: `move_chart_${asyncDataFetchActions.FETCH_START}`,
+        args: {
+          direction: DIRECTION_DOWN,
+          chartId: 2,
+        },
+      });
+
+      expect(initialState.charts).toEqual(stateWithChartsBackToNormal.charts);
+    });
+
+    it('should revert move if fetch fails', () => {
+      const state = reducer(initialState, {
+        type: `move_chart_${asyncDataFetchActions.FETCH_START}`,
+        args: {
+          direction: DIRECTION_UP,
+          chartId: 2,
+        },
+      });
+      const revertedState = reducer(state, {
+        type: `move_chart_${asyncDataFetchActions.FETCH_FAIL}`,
+        args: {
+          direction: DIRECTION_UP,
+          chartId: 2,
+        },
+      });
+
+      expect(revertedState.charts).toEqual(initialState.charts);
+    });
+  });
+
   describe('actions', () => {
     it('editName', () => {
       expect(actions.editName()).toEqual({
@@ -82,6 +149,24 @@ describe('reducer', () => {
       expect(actions.saveChanges('a new name')).toEqual({
         type: actionTypes.SAVE_CHANGES,
         name: 'a new name',
+      });
+    });
+    it('moveUp', () => {
+      expect(actions.moveUp('chart-123')).toEqual({
+        type: actionTypes.MOVE_CHART_UP,
+        chartId: 'chart-123',
+      });
+    });
+    it('moveDown', () => {
+      expect(actions.moveDown('chart-123')).toEqual({
+        type: actionTypes.MOVE_CHART_DOWN,
+        chartId: 'chart-123',
+      });
+    });
+    it('deleteChart', () => {
+      expect(actions.deleteChart('chart-123')).toEqual({
+        type: actionTypes.DELETE_CHART,
+        chartId: 'chart-123',
       });
     });
   });

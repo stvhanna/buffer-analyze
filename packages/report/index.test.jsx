@@ -79,4 +79,37 @@ describe('Report', () => {
 
     expect(component.props().saveChanges('a new name!')).toEqual(actions.saveChanges('a new name!'));
   });
+
+  it('move up should mispatch moveUp', () => {
+    const mockStore = configureMockStore();
+    const store = mockStore(state);
+
+    const component = shallow(<Report
+      store={store}
+    />);
+
+    expect(component.props().moveUp('chart_id')).toEqual(actions.moveUp('chart_id'));
+  });
+
+  it('move down should mispatch moveDown', () => {
+    const mockStore = configureMockStore();
+    const store = mockStore(state);
+
+    const component = shallow(<Report
+      store={store}
+    />);
+
+    expect(component.props().moveDown('chart_id')).toEqual(actions.moveDown('chart_id'));
+  });
+
+  it('delete chart should dispatch deleteChart', () => {
+    const mockStore = configureMockStore();
+    const store = mockStore(state);
+
+    const component = shallow(<Report
+      store={store}
+    />);
+
+    expect(component.props().deleteChart('chart_id')).toEqual(actions.deleteChart('chart_id'));
+  });
 });

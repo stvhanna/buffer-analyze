@@ -14,6 +14,9 @@ export default connect(
   dispatch => ({
     editName: () => dispatch(actions.editName()),
     saveChanges: name => dispatch(actions.saveChanges(name)),
+    moveUp: id => dispatch(actions.moveUp(id)),
+    moveDown: id => dispatch(actions.moveDown(id)),
+    deleteChart: id => dispatch(actions.deleteChart(id)),
   }),
 )(Report);
 
