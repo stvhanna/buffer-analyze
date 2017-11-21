@@ -23,6 +23,7 @@ import { reducer as audienceComparisonReducer } from '@bufferapp/audience-compar
 import { reducer as multiProfileSelectorReducer } from '@bufferapp/multi-profile-selector';
 import { reducer as reachComparisonReducer } from '@bufferapp/reach-comparison-chart';
 import { reducer as likesComparisonReducer } from '@bufferapp/likes-comparison-chart';
+import { reducer as engagementComparisonReducer } from '@bufferapp/engagement-comparison-chart';
 
 export default combineReducers({
   router: routerReducer,
@@ -49,4 +50,5 @@ export default combineReducers({
   multiProfileSelector: multiProfileSelectorReducer,
   reachComparison: reachComparisonReducer,
   likesComparison: likesComparisonReducer,
+  engagementComparison: engagementComparisonReducer,
 });
