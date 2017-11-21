@@ -8,6 +8,8 @@ import { white, mystic } from '@bufferapp/components/style/color';
 import MultiProfileSelector from '@bufferapp/multi-profile-selector';
 import AudienceComparisonChart from '@bufferapp/audience-comparison-chart';
 import ReachComparisonChart from '@bufferapp/reach-comparison-chart';
+import LikesComparisonChart from '@bufferapp/likes-comparison-chart';
+import EngagementComparisonChart from '@bufferapp/engagement-comparison-chart';
 
 const pageStyle = {
   display: 'flex',
@@ -80,6 +82,8 @@ const ComparisonsPage = ({
           <div style={comparisonsMaxWidth}>
             <AudienceComparisonChart />
             <ReachComparisonChart />
+            <LikesComparisonChart />
+            <EngagementComparisonChart />
           </div>
         </div>
       </div>

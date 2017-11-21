@@ -27,6 +27,8 @@ import { middleware as audienceComparisonMiddleware } from '@bufferapp/audience-
 import { middleware as profileSelectorMiddleware } from '@bufferapp/analyze-profile-selector';
 import { middleware as reportMiddleware } from '@bufferapp/report';
 import { middleware as reachComparisonMiddleware } from '@bufferapp/reach-comparison-chart';
+import { middleware as likesComparisonMiddleware } from '@bufferapp/likes-comparison-chart';
+import { middleware as engagementComparisonMiddleware } from '@bufferapp/engagement-comparison-chart';
 
 import reducers from './reducers';
 
@@ -66,6 +68,8 @@ const configureStore = (initialstate) => {
         profileSelectorMiddleware,
         reportMiddleware,
         reachComparisonMiddleware,
+        likesComparisonMiddleware,
+        engagementComparisonMiddleware,
       ),
     ),
   );
