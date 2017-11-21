@@ -169,5 +169,20 @@ describe('middleware', () => {
       },
     }));
   });
+
+  it('DELETE_CHART dispatches a delete_chart request', () => {
+    const action = {
+      type: actionTypes.DELETE_CHART,
+      chartId: 'chart-123',
+    };
+    middleware(store)(next)(action);
+    expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
+      name: 'delete_chart',
+      args: {
+        reportId: state.report.id,
+        chartId: action.chartId,
+      },
+    }));
+  });
   afterEach(() => jest.clearAllMocks());
 });

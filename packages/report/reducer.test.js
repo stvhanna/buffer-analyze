@@ -73,7 +73,7 @@ describe('reducer', () => {
     });
   });
 
-  describe('moving charts', () => {
+  describe('deleting and moving charts', () => {
     let initialState = null;
 
     beforeEach(() => {
@@ -84,6 +84,18 @@ describe('reducer', () => {
           _id: 2,
         }],
       }, {});
+    });
+
+    it('delete chart removes chart with that ID once the server has responded correctly', () => {
+      const state = reducer(initialState, {
+        type: `delete_chart_${asyncDataFetchActions.FETCH_SUCCESS}`,
+        args: {
+          chartId: 2,
+        },
+      });
+      expect(state.charts).toEqual([{
+        _id: 1,
+      }]);
     });
 
     it('moves chart when move_chart_FETCH_START happens', () => {

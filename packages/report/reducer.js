@@ -68,6 +68,11 @@ export default (state = initialState, action) => {
         ...state,
         charts: moveChart(action.args.chartId, action.args.direction, state.charts),
       };
+    case `delete_chart_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
+      return {
+        ...state,
+        charts: state.charts.filter(chart => chart._id !== action.args.chartId),
+      };
     case actionTypes.SAVE_CHANGES:
       return {
         ...state,
