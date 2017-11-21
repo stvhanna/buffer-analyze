@@ -71,7 +71,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
         name: 'move_chart',
         args: {
           direction: DIRECTION_UP,
-          chartId: action.id,
+          chartId: action.chartId,
           reportId: store.getState().report.id,
         },
       }));
@@ -81,7 +81,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
         name: 'move_chart',
         args: {
           direction: DIRECTION_DOWN,
-          chartId: action.id,
+          chartId: action.chartId,
           reportId: store.getState().report.id,
         },
       }));

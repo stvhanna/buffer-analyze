@@ -141,7 +141,7 @@ describe('middleware', () => {
   it('MOVE_CHART_UP dispatches a move_chart request with DIRECTION_UP', () => {
     const action = {
       type: actionTypes.MOVE_CHART_UP,
-      id: 'chart-123',
+      chartId: 'chart-123',
     };
     middleware(store)(next)(action);
     expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
@@ -149,7 +149,7 @@ describe('middleware', () => {
       args: {
         reportId: state.report.id,
         direction: DIRECTION_UP,
-        chartId: action.id,
+        chartId: action.chartId,
       },
     }));
   });
@@ -157,7 +157,7 @@ describe('middleware', () => {
   it('MOVE_CHART_DOWN dispatches a move_chart request with DIRECTION_DOWN', () => {
     const action = {
       type: actionTypes.MOVE_CHART_DOWN,
-      id: 'chart-123',
+      chartId: 'chart-123',
     };
     middleware(store)(next)(action);
     expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
@@ -165,7 +165,7 @@ describe('middleware', () => {
       args: {
         reportId: state.report.id,
         direction: DIRECTION_DOWN,
-        chartId: action.id,
+        chartId: action.chartId,
       },
     }));
   });
