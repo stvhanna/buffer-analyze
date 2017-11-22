@@ -25,19 +25,26 @@ const Title = styled.h1`
   margin: 0 0 .5rem;
 `;
 
-const Report = ({ name, dateRange, charts, loading, edit, saveChanges, editName }) => {
-  if (loading) return '...loading';
-  return (
-    <Card>
-      <Text>
-        { edit && <EditTitle name={name} saveChanges={saveChanges} />}
-        { !edit && <div><Button noStyle onClick={editName}><Title>{name}</Title></Button></div> }
-        <DateRange {...dateRange} />
-      </Text>
-      <ChartFactory charts={charts} />
-    </Card>
-  );
-};
+const Report =
+  ({ name, dateRange, charts, loading,
+    edit, saveChanges, editName, moveUp, moveDown, deleteChart }) => {
+    if (loading) return '...loading';
+    return (
+      <Card>
+        <Text>
+          { edit && <EditTitle name={name} saveChanges={saveChanges} />}
+          { !edit && <div><Button noStyle onClick={editName}><Title>{name}</Title></Button></div> }
+          <DateRange {...dateRange} />
+        </Text>
+        <ChartFactory
+          charts={charts}
+          moveUp={moveUp}
+          moveDown={moveDown}
+          deleteChart={deleteChart}
+        />
+      </Card>
+    );
+  };
 
 Report.defaultProps = {
   loading: false,
@@ -58,6 +65,10 @@ Report.propTypes = {
   charts: PropTypes.arrayOf(PropTypes.shape({
     chart_id: PropTypes.string,
   }).isRequired),
+  editName: PropTypes.func.isRequired,
+  moveUp: PropTypes.func.isRequired,
+  moveDown: PropTypes.func.isRequired,
+  deleteChart: PropTypes.func.isRequired,
 };
 
 export default Report;

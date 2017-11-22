@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/analyze-date-picker",
-  "version": "0.15.0",
+  "version": "0.16.0",
   "description": "Date picker for Insights",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
   "author": "mike@msanroman.io",
   "dependencies": {
     "@bufferapp/components": "2.1.1",
-    "@bufferapp/analyze-profile-selector": "^0.15.0",
+    "@bufferapp/analyze-profile-selector": "^0.16.0",
     "@bufferapp/async-data-fetch": "0.5.36-beta01",
     "moment": "^2.18.1",
     "react-tooltip": "^3.3.0"

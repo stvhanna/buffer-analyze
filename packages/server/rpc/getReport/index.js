@@ -13,6 +13,7 @@ const RPC_ENDPOINTS = {
 const requestChartData = (chart, startDate, endDate, session) =>
   RPC_ENDPOINTS[chart.chart_id].fn(Object.assign({
     profileId: chart.profile_id,
+    profileService: chart.service,
     startDate,
     endDate,
   }, chart.state), { session });

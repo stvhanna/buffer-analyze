@@ -16,9 +16,11 @@ const listReports = require('./listReports');
 const getReport = require('./getReport');
 const contextual = require('./contextual');
 const addToReport = require('./addToReport');
-const audienceComparison = require('./audienceComparison');
 const removeReport = require('./removeReport');
 const saveReportChanges = require('./saveReportChanges');
+const moveChart = require('./moveChart');
+const deleteChart = require('./deleteChart');
+const comparison = require('./comparison');
 
 module.exports = checkToken(rpc(
   profilesMethod,
@@ -37,7 +39,9 @@ module.exports = checkToken(rpc(
   getReport,
   contextual,
   addToReport,
-  audienceComparison,
   removeReport,
   saveReportChanges,
+  moveChart,
+  comparison,
+  deleteChart,
 ));

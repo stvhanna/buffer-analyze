@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/server-analyze",
-  "version": "0.15.1",
+  "version": "0.20.0",
   "description": "",
   "scripts": {
     "start": "micro",
@@ -21,6 +21,7 @@
   "dependencies": {
     "@bufferapp/logger": "0.7.0",
     "@bufferapp/micro-rpc": "0.1.6",
+    "@bufferapp/session-manager": "0.5.36",
     "@bufferapp/shutdown-helper": "0.2.0",
     "bugsnag": "1.11.0",
     "cookie-parser": "1.4.3",

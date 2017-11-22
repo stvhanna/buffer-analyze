@@ -39,7 +39,9 @@ describe('rpc/compare', () => {
       profileService,
     }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
@@ -68,7 +70,9 @@ describe('rpc/compare', () => {
       profileService,
     }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
@@ -97,7 +101,9 @@ describe('rpc/compare', () => {
 
     const data = await compare.fn({ profileId, profileService }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
@@ -113,7 +119,9 @@ describe('rpc/compare', () => {
 
     const data = await compare.fn({ profileId, profileService }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
@@ -136,7 +144,9 @@ describe('rpc/compare', () => {
 
     const data = await compare.fn({ profileId, profileService }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
@@ -160,7 +170,9 @@ describe('rpc/compare', () => {
 
     const data = await compare.fn({ profileId, profileService }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
@@ -184,7 +196,9 @@ describe('rpc/compare', () => {
 
     const data = await compare.fn({ profileId, profileService }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
@@ -206,7 +220,9 @@ describe('rpc/compare', () => {
 
     const data = await compare.fn({ profileId, profileService: 'twitter' }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
@@ -224,4 +240,3 @@ describe('rpc/compare', () => {
     });
   });
 });
-

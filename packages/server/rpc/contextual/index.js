@@ -108,7 +108,7 @@ module.exports = method(
     return requestContextual(
       profileId,
       dateRange,
-      session.accessToken,
+      session.analyze.accessToken,
     )
       .then(response => formatData(
         response.response,

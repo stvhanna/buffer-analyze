@@ -91,7 +91,9 @@ describe('rpc/top_posts', () => {
       profileId,
     }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
@@ -114,7 +116,9 @@ describe('rpc/top_posts', () => {
 
     const topPostsData = await topPosts.fn({ profileId }, {
       session: {
-        accessToken: token,
+        analyze: {
+          accessToken: token,
+        },
       },
     });
 
@@ -149,4 +153,3 @@ describe('rpc/top_posts', () => {
     }]);
   });
 });
-

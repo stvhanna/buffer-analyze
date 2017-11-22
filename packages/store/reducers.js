@@ -21,7 +21,10 @@ import { reducer as contextualCompareReducer } from '@bufferapp/contextual-compa
 import { reducer as reportReducer } from '@bufferapp/report';
 import { reducer as audienceComparisonReducer } from '@bufferapp/audience-comparison-chart';
 import { reducer as multiProfileSelectorReducer } from '@bufferapp/multi-profile-selector';
-import { reducer as exportAsReducer } from '../export-picker/';
+import { reducer as reachComparisonReducer } from '@bufferapp/reach-comparison-chart';
+import { reducer as likesComparisonReducer } from '@bufferapp/likes-comparison-chart';
+import { reducer as engagementComparisonReducer } from '@bufferapp/engagement-comparison-chart';
+import { reducer as exportAsReducer } from 'bufferapp/analyze-export-picker';
 
 export default combineReducers({
   router: routerReducer,
@@ -47,4 +50,7 @@ export default combineReducers({
   report: reportReducer,
   audienceComparison: audienceComparisonReducer,
   multiProfileSelector: multiProfileSelectorReducer,
+  reachComparison: reachComparisonReducer,
+  likesComparison: likesComparisonReducer,
+  engagementComparison: engagementComparisonReducer,
 });

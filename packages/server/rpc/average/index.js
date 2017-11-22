@@ -159,11 +159,11 @@ module.exports = method(
     const dateRange = new DateRange(start, end);
     const pastDateRange = dateRange.getPreviousDateRange();
 
-    const currentPeriodTotals = requestTotals(profileId, dateRange, session.accessToken);
-    const pastPeriodTotals = requestTotals(profileId, pastDateRange, session.accessToken);
+    const currentPeriodTotals = requestTotals(profileId, dateRange, session.analyze.accessToken);
+    const pastPeriodTotals = requestTotals(profileId, pastDateRange, session.analyze.accessToken);
 
-    const currentPeriodDailyTotals = requestDailyTotals(profileId, dateRange, session.accessToken);
-    const pastPeriodDailyTotals = requestDailyTotals(profileId, pastDateRange, session.accessToken);
+    const currentPeriodDailyTotals = requestDailyTotals(profileId, dateRange, session.analyze.accessToken);
+    const pastPeriodDailyTotals = requestDailyTotals(profileId, pastDateRange, session.analyze.accessToken);
 
     return Promise
       .all([currentPeriodTotals, pastPeriodTotals, currentPeriodDailyTotals, pastPeriodDailyTotals])

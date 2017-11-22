@@ -27,7 +27,9 @@ describe('rpc/hourly', () => {
   const token = 'some token';
   const session = {
     session: {
-      accessToken: token,
+      analyze: {
+        accessToken: token,
+      },
     },
   };
 

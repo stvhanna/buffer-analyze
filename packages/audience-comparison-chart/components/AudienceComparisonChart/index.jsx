@@ -1,62 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import { ComparisonChartWrapper } from '@bufferapp/analyze-shared-components';
 
-import {
-  ChartStateNoData as NoData,
-  ChartStateLoading as Loading,
-  ChartCard,
-  ChartHeader,
-} from '@bufferapp/analyze-shared-components';
-
-import Chart from '../Chart';
-import Title from '../Title';
-import Footer from '../Footer';
+const CHART_NAME = 'Audience';
 
 const AudienceComparisonChart = ({
   profilesMetricData,
   profileTotals,
   loading,
-}) => {
-  let content = null;
-  let footer = null;
-
-  if (loading) {
-    content = <Loading active noBorder />;
-  } else if (profilesMetricData.length === 0) {
-    content = <NoData />;
-  } else {
-    content = (
-      <div>
-        <Chart
-          profilesMetricData={profilesMetricData}
-        />
-      </div>
-    );
-    footer = (
-      <Footer
-        profileTotals={profileTotals}
-      />
-    );
-  }
-
-  const ContentContainer = styled.div`
-    position: relative;
-    padding: 1.5rem;
-  `;
-
-  return (
-    <ChartCard>
-      <ChartHeader>
-        <Title />
-      </ChartHeader>
-      <ContentContainer>
-        {content}
-      </ContentContainer>
-      {footer}
-    </ChartCard>
+}) =>
+  (
+    <ComparisonChartWrapper
+      profilesMetricData={profilesMetricData}
+      profileTotals={profileTotals}
+      loading={loading}
+      chartName={CHART_NAME}
+    />
   );
-};
 
 AudienceComparisonChart.defaultProps = {
   loading: false,
@@ -88,7 +48,7 @@ AudienceComparisonChart.propTypes = {
     currentPeriodDiff: PropTypes.number.isRequired,
     profileId: PropTypes.string.isRequired,
     username: PropTypes.string.isRequired,
-
+    service: PropTypes.string,
   })).isRequired,
 };
 

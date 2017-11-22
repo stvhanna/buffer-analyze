@@ -61,6 +61,13 @@
   version "0.2.5"
   resolved "https://registry.yarnpkg.com/@bufferapp/react-keyframes/-/react-keyframes-0.2.5.tgz#fed847849f170c440ad6ea683224352e4b882b92"
 
+"@bufferapp/session-manager@0.5.36":
+  version "0.5.36"
+  resolved "https://registry.yarnpkg.com/@bufferapp/session-manager/-/session-manager-0.5.36.tgz#6b52cf1197d2c7cd6875b56623969a28d4fa6ab1"
+  dependencies:
+    micro-rpc-client "0.1.2"
+    object-path "0.11.4"
+
 "@bufferapp/shutdown-helper@0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@bufferapp/shutdown-helper/-/shutdown-helper-0.2.0.tgz#d43bbba845e30e411dda76a7b7629e11160e5395"
@@ -6234,6 +6241,10 @@ object-is@^1.0.1:
 object-keys@^1.0.10, object-keys@^1.0.8:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-1.0.11.tgz#c54601778ad560f1142ce0e01bcca8b56d13426d"
+
+object-path@0.11.4:
+  version "0.11.4"
+  resolved "https://registry.yarnpkg.com/object-path/-/object-path-0.11.4.tgz#370ae752fbf37de3ea70a861c23bba8915691949"
 
 object.assign@^4.0.4:
   version "4.0.4"

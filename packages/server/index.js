@@ -1,12 +1,15 @@
 const http = require('http');
 const express = require('express');
 const logMiddleware = require('@bufferapp/logger/middleware');
+const RPCClient = require('micro-rpc-client');
 const bugsnag = require('bugsnag');
 const fs = require('fs');
 const { join } = require('path');
 const shutdownHelper = require('@bufferapp/shutdown-helper');
 const cookieParser = require('cookie-parser');
-const session = require('./lib/session');
+const {
+  middleware: sessionMiddleware,
+} = require('@bufferapp/session-manager');
 const { apiError } = require('./middleware');
 const controller = require('./lib/controller');
 const rpc = require('./rpc');
@@ -58,8 +61,21 @@ const html = fs.readFileSync(join(__dirname, 'index.html'), 'utf8')
 app.use(logMiddleware({ name: 'BufferAnalyze' }));
 app.use(cookieParser());
 
+app.get('/health-check', controller.healthCheck);
+const favicon = fs.readFileSync(join(__dirname, 'favicon.ico'));
+app.get('/favicon.ico', (req, res) => res.send(favicon));
+
 // All routes after this have access to the user session
-app.use(session.middleware);
+// app.use(session.middleware);
+app.use(sessionMiddleware.getSession({
+  production: isProduction,
+  sessionKeys: ['global', 'analyze'],
+}));
+
+app.use(sessionMiddleware.validateSession({
+  production: isProduction,
+  requiredSessionKeys: ['analyze.accessToken'],
+}));
 
 app.post('/rpc', (req, res, next) => {
   rpc(req, res)
@@ -67,20 +83,7 @@ app.post('/rpc', (req, res, next) => {
     .catch(err => next(err));
 });
 
-app.get('/health-check', controller.healthCheck);
-
-const favicon = fs.readFileSync(join(__dirname, 'favicon.ico'));
-app.get('/favicon.ico', (req, res) => res.send(favicon));
-
-app.get('*', (req, res) => {
-  if (req.session && req.session.accessToken) {
-    res.send(html);
-  } else {
-    const redirect = encodeURIComponent(`https://${req.get('host')}${req.originalUrl}`);
-    const accountUrl = `https://account${isProduction ? '' : '.local'}.buffer.com/login/`;
-    res.redirect(`${accountUrl}?redirect=${redirect}`);
-  }
-});
+app.get('*', (req, res) => res.send(html));
 
 app.use(apiError);
 
