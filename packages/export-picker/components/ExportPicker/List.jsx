@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import ExportAsCSV from '@bufferapp/analyze-csv-export';
 import ExportAsPNG from '@bufferapp/analyze-png-export';
@@ -17,20 +17,27 @@ const Item = styled.li`
   margin: 0;
 `;
 
-class ExportPickerList extends Component {
+const ExportPickerList = (props) => {
+  const {
+    filename,
 
-  render() {
-    return (
-      <List>
-        <Item onClick={this.props.close}><ExportAsCSV filename={this.props.filename} /></Item>
-        <Item onClick={this.props.close}><ExportAsPNG filename={this.props.filename} /></Item>
-      </List>
-    );
-  }
-}
+    // Actions
+    close,
+  } = props;
+
+  return (
+    <List>
+      <Item onClick={close}><ExportAsCSV filename={filename} /></Item>
+      <Item onClick={close}><ExportAsPNG filename={filename} /></Item>
+    </List>
+  );
+};
+
 
 ExportPickerList.propTypes = {
   filename: PropTypes.string.isRequired,
+
+  // Actions
   close: PropTypes.func.isRequired,
 };
 

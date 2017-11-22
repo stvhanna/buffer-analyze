@@ -1,43 +1,44 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled, { css } from 'styled-components';
 
 import Button from './Button';
 import Dropdown from './Dropdown';
 import List from './List';
 
-const containerStyle = {
-  position: 'relative',
-  width: '8rem',
-};
+const Container = styled.div`
+  position: relative;
+  width: 8rem;
+`;
 
-const catcherStyle = {
-  display: 'none',
-  position: 'fixed',
-  top: 0,
-  bottom: 0,
-  right: 0,
-  left: 0,
-  zIndex: 1,
-};
+const Catcher = styled.div`
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
 
-const catcherOpenStyle = {
-  ...catcherStyle,
-  display: 'block',
-};
+  ${props => props.isOpen && css`
+    display: block;
+  `}
+`;
 
 const ExportPicker = (props) => {
   const {
     isOpen,
     loading,
     exporting,
+
     // Actions
     open,
     close,
   } = props;
 
   return (
-    <div style={containerStyle}>
+    <Container>
       <Button
         isOpen={isOpen}
         loading={loading}
@@ -48,13 +49,13 @@ const ExportPicker = (props) => {
         <List {...props} />
       </Dropdown>
 
-      <div
-        style={(isOpen ? catcherOpenStyle : catcherStyle)}
+      <Catcher
         tabIndex="0"
         role="button"
         onClick={close}
+        isOpen={isOpen}
       />
-    </div>
+    </Container>
   );
 };
 

@@ -1,33 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled, { css } from 'styled-components';
 
-const dropdownStyle = {
-  zIndex: 2,
-  display: 'none',
-  position: 'absolute',
-  width: '100%',
-  top: '2.25rem',
-  backgroundColor: '#FFFFFF',
-  border: '1px solid #D5E3EF',
-  borderWidth: '0 1px 1px',
-  borderRadius: 3,
-  padding: '0.5rem 1rem',
-  boxSizing: 'border-box',
-  boxShadow: '0px 1px 2px rgba(0, 0, 0, 0.05)',
-};
+const Container = styled.div`
+  display: none;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  top: 2.25rem;
+  background: #FFFFFF;
+  border: 1px solid #D5E3EF;
+  border-width: 0 1px 1px;
+  border-radius: 3;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
 
-const dropdownOpenStyle = {
-  ...dropdownStyle,
-  display: 'block',
-};
+  ${props => props.isOpen && css`
+    display: block;
+  `}
+`;
 
-const Dropdown = ({ isOpen, children }) => {
-  return (
-    <div style={(isOpen ? dropdownOpenStyle : dropdownStyle)}>
-      {children}
-    </div>
-  );
-};
+const Dropdown = ({ isOpen, children }) => (
+  <Container isOpen={isOpen}>
+    {children}
+  </Container>
+);
 
 Dropdown.propTypes = {
   isOpen: PropTypes.bool.isRequired,
