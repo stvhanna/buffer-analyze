@@ -91,6 +91,33 @@ const facebookConfig = {
   },
 };
 
+const instagramConfig = {
+  posts_count: {
+    label: 'Posts',
+    color: '#3A92D3',
+  },
+
+  likes: {
+    label: 'Likes',
+    color: '#FD8F90',
+  },
+
+  comments: {
+    label: 'Comments',
+    color: '#EFDF00',
+  },
+
+  followers: {
+    label: 'Total Fans',
+    color: '#FDA3F3',
+  },
+
+  new_followers: {
+    label: 'New Fans',
+    color: '#D7B5FD',
+  },
+};
+
 module.exports = {
   twitter: {
     config: twitterConfig,
@@ -115,6 +142,16 @@ module.exports = {
       'post_clicks',
       'reactions',
       'shares',
+      'comments',
+      'followers',
+      'new_followers',
+    ],
+  },
+  instagram: {
+    config: instagramConfig,
+    orderedKeys: [
+      'posts_count',
+      'likes',
       'comments',
       'followers',
       'new_followers',

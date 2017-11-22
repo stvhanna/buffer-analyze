@@ -5,28 +5,52 @@ const moment = require('moment');
 const DateRange = require('../utils/DateRange');
 const METRICS_CONFIG = require('./metricsConfig');
 
-const requestTotals = (profileId, dateRange, accessToken) =>
+function shouldUseAnalyzeApi (profileService) {
+  return profileService === 'instagram';
+}
+
+const requestTotals = (profileId, profileService, dateRange, accessToken) =>
   rp({
-    uri: `${process.env.API_ADDR}/1/profiles/${profileId}/analytics/totals.json`,
-    method: 'GET',
+    uri: (shouldUseAnalyzeApi(profileService) ?
+      `${process.env.ANALYZE_API_ADDR}/metrics/totals` :
+      `${process.env.API_ADDR}/1/profiles/${profileId}/analytics/totals.json`
+    ),
+    method: (shouldUseAnalyzeApi(profileService) ?
+      'POST' :
+      'GET'
+    ),
     strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
     qs: {
       access_token: accessToken,
       start_date: dateRange.start,
       end_date: dateRange.end,
+      profile_id: (shouldUseAnalyzeApi(profileService) ?
+        profileId :
+        null
+      ),
     },
     json: true,
   });
 
-const requestDailyTotals = (profileId, dateRange, accessToken) =>
+const requestDailyTotals = (profileId, profileService, dateRange, accessToken) =>
   rp({
-    uri: `${process.env.API_ADDR}/1/profiles/${profileId}/analytics/daily_totals.json`,
-    method: 'GET',
+    uri: (shouldUseAnalyzeApi(profileService) ?
+      `${process.env.ANALYZE_API_ADDR}/metrics/daily_totals` :
+      `${process.env.API_ADDR}/1/profiles/${profileId}/analytics/daily_totals.json`
+    ),
+    method: (shouldUseAnalyzeApi(profileService) ?
+      'POST' :
+      'GET'
+    ),
     strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
     qs: {
       access_token: accessToken,
       start_date: dateRange.start,
       end_date: dateRange.end,
+      profile_id: (shouldUseAnalyzeApi(profileService) ?
+        profileId :
+        null
+      ),
     },
     json: true,
   });
@@ -93,12 +117,18 @@ function formatDaily(
   const previousPeriodDays = Object.keys(previousPeriodDailyTotalsResult);
   const daily = Array.from(currentPeriodDays, (day, index) => ({
     day,
-    previousPeriodDay: previousPeriodDays[index],
+    previousPeriodDay: previousPeriodDays[index] ?
+      previousPeriodDays[index] :
+      null,
     currentPeriodMetrics: currentPeriodDailyTotalsResult[day],
-    previousPeriodMetrics: previousPeriodDailyTotalsResult[previousPeriodDays[index]],
+    previousPeriodMetrics: previousPeriodDays[index] ?
+      previousPeriodDailyTotalsResult[previousPeriodDays[index]] :
+      null,
     currentPeriodPostCount: currentPeriodDailyTotalsResult[day].posts_count,
-    previousPeriodPostCount: previousPeriodDailyTotalsResult[previousPeriodDays[index]].posts_count,
-  })).map((data) => {
+    previousPeriodPostCount: previousPeriodDays[index] ?
+      previousPeriodDailyTotalsResult[previousPeriodDays[index]].posts_count :
+      null,
+  })).filter(data => data.previousPeriodDay !== null).map((data) => {
     const metricKeys = METRICS_CONFIG[profileService].orderedKeys;
     return {
       day: data.day,
@@ -144,6 +174,12 @@ function formatTotalPeriodDaily(formattedDailyData) {
   return totalPeriodDaily;
 }
 
+function shouldComputeTotalPeriodDaily (profileService) {
+  return profileService === 'twitter' ||
+  profileService === 'instagram';
+}
+
+
 function formatData(
   currentPeriodResult,
   currentPeriodPostCount,
@@ -167,7 +203,9 @@ function formatData(
     profileService,
   );
 
-  const totalPeriodDaily = profileService === 'twitter' ? formatTotalPeriodDaily(daily) : [];
+  const totalPeriodDaily = shouldComputeTotalPeriodDaily(profileService) ?
+    formatTotalPeriodDaily(daily) :
+    [];
 
   return {
     totals,
@@ -185,12 +223,27 @@ module.exports = method(
     const dateRange = new DateRange(start, end);
     const previousDateRange = dateRange.getPreviousDateRange();
 
-    const currentPeriodTotals = requestTotals(profileId, dateRange, session.analyze.accessToken);
-    const previousPeriodTotals = requestTotals(profileId, previousDateRange, session.analyze.accessToken);
-
-    const currentPeriodDailyTotals = requestDailyTotals(profileId, dateRange, session.analyze.accessToken);
+    const currentPeriodTotals = requestTotals(
+      profileId,
+      profileService,
+      dateRange,
+      session.analyze.accessToken,
+    );
+    const previousPeriodTotals = requestTotals(
+      profileId,
+      profileService,
+      previousDateRange,
+      session.analyze.accessToken,
+    );
+    const currentPeriodDailyTotals = requestDailyTotals(
+      profileId,
+      profileService,
+      dateRange,
+      session.analyze.accessToken,
+    );
     const previousPeriodDailyTotals = requestDailyTotals(
       profileId,
+      profileService,
       previousDateRange,
       session.analyze.accessToken,
     );
