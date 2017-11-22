@@ -29,7 +29,6 @@ const Catcher = styled.div`
 const ExportPicker = (props) => {
   const {
     isOpen,
-    loading,
     exporting,
 
     // Actions
@@ -41,7 +40,6 @@ const ExportPicker = (props) => {
     <Container>
       <Button
         isOpen={isOpen}
-        loading={loading}
         exporting={exporting}
         handleClick={() => (isOpen ? close() : open())}
       />
@@ -66,7 +64,6 @@ ExportPicker.defaultProps = {
 
 ExportPicker.propTypes = {
   isOpen: PropTypes.bool.isRequired,
-  loading: PropTypes.bool.isRequired,
   exporting: PropTypes.bool.isRequired,
 
   // Actions

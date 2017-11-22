@@ -14,7 +14,6 @@ const initialState = {
   profilesFilterString: '',
   selectedProfileService: '',
   selectedProfileId: '',
-  loading: true,
 };
 
 export default (state = initialState, action) => {

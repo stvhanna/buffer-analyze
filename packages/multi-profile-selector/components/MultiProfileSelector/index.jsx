@@ -45,12 +45,6 @@ const styleButton = {
   outline: '0 none',
 };
 
-const styleButtonDisabled = {
-  ...styleButton,
-  opacity: 0.2,
-  pointerEvents: 'none',
-};
-
 function renderDropdownItem(profile, selectedProfiles, toggleProfile) {
   const onClick = () => {
     toggleProfile({
@@ -70,7 +64,6 @@ function renderDropdownItem(profile, selectedProfiles, toggleProfile) {
 }
 
 const MultiProfileSelector = ({
-  loading,
   isDropdownOpen,
   onSearchChange,
   profiles,
@@ -102,7 +95,7 @@ const MultiProfileSelector = ({
         onShow={openDropdown}
         onHide={closeDropdown}
       >
-        <DropdownTrigger style={(loading ? styleButtonDisabled : styleButton)}>
+        <DropdownTrigger style={styleButton}>
           { selectedProfiles.length > 0 &&
             selectedProfiles.map(p =>
               <ProfileBadge

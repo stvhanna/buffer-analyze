@@ -10,8 +10,8 @@ describe('reducer', () => {
       });
     });
 
-    it('is loading', () => {
-      expect(state.loading).toBeTruthy();
+    it('is exporting', () => {
+      expect(state.exporting).toBeTruthy();
     });
 
     it('is closed', () => {

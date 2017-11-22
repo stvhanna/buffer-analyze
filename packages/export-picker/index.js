@@ -6,7 +6,6 @@ import { actions } from './reducer';
 export default connect(
   (state, ownProps) => ({
     exporting: state.exportToCSV.exporting || state.exportToPNG.exporting,
-    loading: ownProps.staticData ? false : state.date.loading,
     isOpen: state.exportAs.open,
     filename: ownProps.filename,
   }),

@@ -24,27 +24,24 @@ const buttonStyle = {
 
 const buttonDisabledStyle = {
   ...buttonStyle,
-  opacity: 0.2,
   pointerEvents: 'none',
 };
 
-const DatePickerButton = ({ isOpen, loading, startDate, endDate, handleClick }) => {
-
-  return (
-    <button
-      style={(loading ? buttonDisabledStyle : buttonStyle)}
-      disabled={loading}
-      onClick={handleClick}
-    >
-      <Title loading={loading} startDate={startDate} endDate={endDate} />
+const DatePickerButton = ({ isOpen, loading, startDate, endDate, handleClick }) => (
+  <button
+    style={(loading ? buttonDisabledStyle : buttonStyle)}
+    disabled={loading}
+    onClick={handleClick}
+  >
+    <Title loading={loading} startDate={startDate} endDate={endDate} />
+    { !loading ?
       <span style={{ marginLeft: 'auto' }}>
         { isOpen ?
           <ArrowUpIcon size="small" /> :
           <ArrowDownIcon size="small" /> }
-      </span>
-    </button>
-  );
-};
+      </span> : null}
+  </button>
+);
 
 DatePickerButton.defaultProps = {
   startDate: 0,

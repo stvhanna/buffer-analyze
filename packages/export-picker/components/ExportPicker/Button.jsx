@@ -21,7 +21,7 @@ const Button = styled.button`
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   outline: 0 none;
 
-  ${props => (props.loading || props.exporting) && css`
+  ${props => props.exporting && css`
     opacity: 0.2;
     pointerEvents: none;
   `}
@@ -31,11 +31,10 @@ const Arrow = styled.span`
   margin-left: auto;
 `;
 
-const DatePickerButton = ({ isOpen, exporting, loading, handleClick }) => (
+const DatePickerButton = ({ isOpen, exporting, handleClick }) => (
   <Button
-    loading={loading}
     exporting={exporting}
-    disabled={(loading || exporting)}
+    disabled={exporting}
     onClick={handleClick}
   >
     <Text size="small" weight="bold">{(exporting ? 'Exporting...' : 'Export as...')}</Text>
@@ -51,14 +50,12 @@ DatePickerButton.defaultProps = {
   startDate: 0,
   endDate: 0,
   exporting: false,
-  loading: false,
 };
 
 DatePickerButton.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   handleClick: PropTypes.func.isRequired,
   exporting: PropTypes.bool,
-  loading: PropTypes.bool,
 };
 
 export default DatePickerButton;
