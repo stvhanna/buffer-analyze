@@ -2,10 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {
   Button,
+  Text,
 } from '@bufferapp/components';
 
-const ExportButton = ({ exporting, exportToPNG }) =>
-  <Button secondary disabled={exporting} onClick={exportToPNG}>{exporting ? 'Exporting...' : 'Export as Images' }</Button>;
+const ExportButton = ({ exporting, exportToPNG }) => (
+  <Button noStyle disabled={exporting} onClick={exportToPNG}>
+    <Text size="small">{exporting ? 'Exporting...' : 'Export as Images' }</Text>
+  </Button>
+);
 
 ExportButton.defaultProps = {
   exporting: false,

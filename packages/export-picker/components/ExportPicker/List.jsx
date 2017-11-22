@@ -1,36 +1,36 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Text from '@bufferapp/components/Text';
+import ExportAsCSV from '@bufferapp/analyze-csv-export';
+import ExportAsPNG from '@bufferapp/analyze-png-export';
+import styled from 'styled-components';
 
-const listStyle = {
-  listStyle: 'none',
-  margin: 0,
-  padding: 0,
-};
+const List = styled.ul`
+  list-style: none;
+  margin: 0;
+  padding: 0;
+`;
 
-const itemStyle = {
-  cursor: 'pointer',
-  listStyle: 'none',
-  padding: '0.25rem 0',
-  margin: 0,
-};
+const Item = styled.li`
+  cursor: pointer;
+  list-style: none;
+  padding: 0.25rem 0;
+  margin: 0;
+`;
 
 class ExportPickerList extends Component {
 
   render() {
     return (
-      <ul style={listStyle}>
-        <li style={itemStyle}><Text size="small">Export as CSV</Text></li>
-        <li style={itemStyle}><Text size="small">Export as PNG</Text></li>
-      </ul>
+      <List>
+        <Item onClick={this.props.close}><ExportAsCSV filename={this.props.filename} /></Item>
+        <Item onClick={this.props.close}><ExportAsPNG filename={this.props.filename} /></Item>
+      </List>
     );
   }
 }
 
-ExportPickerList.defaultProps = {};
-
 ExportPickerList.propTypes = {
-  // Actions
+  filename: PropTypes.string.isRequired,
   close: PropTypes.func.isRequired,
 };
 
