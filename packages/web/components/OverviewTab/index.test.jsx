@@ -62,4 +62,24 @@ describe('web/OverviewTab', () => {
     expect(component.find(TopPostsTable).length)
       .toBe(1);
   });
+  it('should render the overview for instagram', () => {
+    const mockStore = configureMockStore();
+    const store = mockStore({});
+    const match = {
+      params: {
+        service: 'instagram',
+        id: 'afs42',
+      },
+    };
+    const component = shallow(<OverviewTab
+      match={match}
+      store={store}
+    />).dive();
+    expect(component.find(SummaryTable).length)
+      .toBe(1);
+    expect(component.find(CompareChart).length)
+      .toBe(1);
+    expect(component.find(TopPostsTable).length)
+      .toBe(1);
+  });
 });
