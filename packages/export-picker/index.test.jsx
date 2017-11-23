@@ -20,7 +20,11 @@ const storeFake = state => ({
 
 describe('ExportPicker', () => {
   it('should render', () => {
-    const store = storeFake({});
+    const store = storeFake({
+      exportToCSV: {},
+      exportToPNG: {},
+      exportAs: {},
+    });
     const wrapper = mount(
       <Provider store={store}>
         <ExportPickerContainer />
