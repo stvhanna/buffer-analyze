@@ -7,7 +7,6 @@ import AudienceChart from './index';
 
 import mockDailyData from '../../mocks/dailyData';
 import mockMetrics from '../../mocks/metrics';
-import mockPresets from '../../mocks/presets';
 
 const selectedMetrics = [mockMetrics[0], mockMetrics[1]];
 selectedMetrics[0].squaredIcon = true;
@@ -22,24 +21,20 @@ storiesOf('AudienceChart')
       }}
     >
       <AudienceChart
-        selectedPreset={0}
-        selectedMetrics={selectedMetrics}
-        metrics={mockMetrics}
         data={mockDailyData}
-        mode={1}
-        profileService="facebook"
-        timezone="Etc/UTC"
-        selectMode={actionLogger('selectMode')}
         isPrimaryMetricDropdownOpen={false}
         isSecondaryMetricDropdownOpen={false}
-        selectPrimaryMetric={actionLogger('selectFirsPrimaryMetric')}
-        selectSecondaryMetric={actionLogger('selectSecondaryMetric')}
+        metrics={mockMetrics}
+        profileService="instagram"
+        selectedMetrics={selectedMetrics}
+        timezone="Etc/UTC"
+
         openPrimaryMetricDropdown={actionLogger('openPrimaryMetricDropdown')}
-        openSecondaryMetricDropdown={actionLogger('openSecondaryMetricDropdown')}
         closePrimaryMetricDropdown={actionLogger('closePrimaryMetricDropdown')}
+        selectPrimaryMetric={actionLogger('selectFirsPrimaryMetric')}
+        openSecondaryMetricDropdown={actionLogger('openSecondaryMetricDropdown')}
         closeSecondaryMetricDropdown={actionLogger('closeSecondaryMetricDropdown')}
-        selectPreset={actionLogger('selectPreset')}
-        presets={mockPresets}
+        selectSecondaryMetric={actionLogger('selectSecondaryMetric')}
       />
     </div>
   ))
@@ -51,9 +46,7 @@ storiesOf('AudienceChart')
     >
       <AudienceChart
         profileService="facebook"
-        selectedPreset={0}
         selectedMetrics={selectedMetrics}
-        mode={1}
         data={[]}
         loading
       />
@@ -67,9 +60,7 @@ storiesOf('AudienceChart')
     >
       <AudienceChart
         profileService="facebook"
-        selectedPreset={0}
         selectedMetrics={selectedMetrics}
-        mode={1}
         data={[]}
       />
     </div>

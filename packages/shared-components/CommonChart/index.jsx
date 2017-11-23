@@ -265,11 +265,11 @@ Chart.propTypes = {
   profileService: PropTypes.string.isRequired,
   pngExportId: PropTypes.string,
   timezone: PropTypes.string.isRequired,
-  mode: PropTypes.number.isRequired,
+  mode: PropTypes.number,
   selectedMetrics: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string.isRequired,
   })).isRequired,
-  selectedPreset: PropTypes.number.isRequired,
+  selectedPreset: PropTypes.number,
   presets: PropTypes.arrayOf(PropTypes.shape({
     day: PropTypes.string,
     data: PropTypes.arrayOf(PropTypes.shape({
@@ -279,12 +279,15 @@ Chart.propTypes = {
         value: PropTypes.number.isRequired,
       })),
     })),
-  })).isRequired,
+  })),
 };
 
 Chart.defaultProps = {
   isCustomMode: false,
   pngExportId: 'common',
+  presets: null,
+  selectedPreset: null,
+  mode: 1,
 };
 
 export default Chart;

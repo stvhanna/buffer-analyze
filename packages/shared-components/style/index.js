@@ -16,6 +16,7 @@ export const color = {
   comments: '#EFDF00',
   followers: '#FDA3F3',
   new_followers: '#D7B5FD',
+  likes: '#FD8F90',
 };
 
 

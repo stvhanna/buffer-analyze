@@ -86,6 +86,7 @@ describe('rpc/audience', () => {
     expect(data.metrics[0]).toEqual({
       label: 'Posts',
       key: 'posts_count',
+      color: '#3A92D3',
     });
   });
 

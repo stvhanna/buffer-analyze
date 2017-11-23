@@ -9,7 +9,6 @@ import {
 const Header = ({
   className,
   mode,
-  selectMode,
   ...props
 }) => (<div className={className}>
   <MetricsDropdown
@@ -46,7 +45,6 @@ Header.propTypes = {
   })).isRequired,
 
   // actions
-  selectMode: PropTypes.func.isRequired,
   selectPrimaryMetric: PropTypes.func.isRequired,
   selectSecondaryMetric: PropTypes.func.isRequired,
   openPrimaryMetricDropdown: PropTypes.func.isRequired,

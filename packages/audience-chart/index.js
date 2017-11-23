@@ -15,7 +15,6 @@ function mapStateToProps (state) {
     loading: state.audience.loading,
     metrics: state.audience.metrics,
     profileService: state.profiles.selectedProfileService,
-    selectedMetricLabel: state.audience.selectedMetricLabel,
     selectedMetrics: state.audience.selectedMetrics,
     timezone: getSelectedProfileTimezone(state.profiles),
   };

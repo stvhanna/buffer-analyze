@@ -49,6 +49,8 @@ const Footer = ({
 
 Footer.defaultProps = {
   loading: false,
+  presets: null,
+  selectedPreset: null,
 };
 
 Footer.propTypes = {
@@ -56,14 +58,14 @@ Footer.propTypes = {
   selectedMetrics: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string,
   })).isRequired,
-  selectedPreset: PropTypes.number.isRequired,
+  selectedPreset: PropTypes.number,
   presets: PropTypes.arrayOf(PropTypes.shape({
     yAxis: PropTypes.shape({
       metrics: PropTypes.arrayOf(PropTypes.shape({
         label: PropTypes.string,
       })).isRequired,
     }).isRequired,
-  })).isRequired,
+  })),
 };
 
 export default Footer;
