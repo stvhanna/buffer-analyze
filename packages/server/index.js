@@ -1,3 +1,4 @@
+require('babel-polyfill');
 const http = require('http');
 const express = require('express');
 const logMiddleware = require('@bufferapp/logger/middleware');

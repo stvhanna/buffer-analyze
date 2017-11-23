@@ -222,3 +222,33 @@ export const PAST_PERIOD_DAILY_RESPONSE = {
   },
   success: true,
 };
+
+export const PAST_PERIOD_DAILY_PARTIAL_RESPONSE = {
+  response: {
+    1503446400000: {
+      posts_count: 1,
+      shares: 21,
+      comments: 22,
+      followers: 99384,
+      new_followers: 68,
+      page_engagements: 322,
+      post_impressions: 45547,
+      post_clicks: 1812,
+      post_reach: 37170,
+      reactions: 181,
+    },
+    1503532800000: {
+      posts_count: 3,
+      shares: 0,
+      comments: 0,
+      followers: 99444,
+      new_followers: 79,
+      page_engagements: 493,
+      post_impressions: 63845,
+      post_clicks: 2599,
+      post_reach: 45702,
+      reactions: 288,
+    },
+  },
+  success: true,
+};

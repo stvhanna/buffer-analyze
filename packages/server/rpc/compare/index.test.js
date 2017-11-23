@@ -11,6 +11,7 @@ import {
   EMPTY_TOTALS_RESPONSE,
   CURRENT_PERIOD_DAILY_RESPONSE,
   PAST_PERIOD_DAILY_RESPONSE,
+  PAST_PERIOD_DAILY_PARTIAL_RESPONSE,
 } from './mockResponses';
 
 describe('rpc/compare', () => {
@@ -28,7 +29,55 @@ describe('rpc/compare', () => {
       .toBe('fetch analytics compare for profiles and pages');
   });
 
+  it('should request metrics to Analyze Api for Instagram', () => {
+    const end = moment().subtract(1, 'days').unix();
+    const start = moment().subtract(7, 'days').unix();
+
+    compare.fn({
+      startDate: start,
+      endDate: end,
+      profileId,
+      profileService: 'instagram',
+    }, {
+      session: {
+        analyze: {
+          accessToken: token,
+        },
+      },
+    });
+
+    expect(rp.mock.calls[0])
+      .toEqual([{
+        uri: `${process.env.ANALYZE_API_ADDR}/metrics/totals`,
+        method: 'POST',
+        strictSSL: false,
+        qs: {
+          access_token: token,
+          start_date: moment.unix(start).format('MM/DD/YYYY'),
+          end_date: moment.unix(end).format('MM/DD/YYYY'),
+          profile_id: profileId,
+        },
+        json: true,
+      }]);
+
+    expect(rp.mock.calls[2])
+      .toEqual([{
+        uri: `${process.env.ANALYZE_API_ADDR}/metrics/daily_totals`,
+        method: 'POST',
+        strictSSL: false,
+        qs: {
+          access_token: token,
+          start_date: moment.unix(start).format('MM/DD/YYYY'),
+          end_date: moment.unix(end).format('MM/DD/YYYY'),
+          profile_id: profileId,
+        },
+        json: true,
+      }]);
+  });
+
+
   it('should request for the previous week', () => {
+    rp.mockClear();
     const end = moment().subtract(1, 'days').unix();
     const start = moment().subtract(7, 'days').unix();
 
@@ -54,6 +103,7 @@ describe('rpc/compare', () => {
           access_token: token,
           start_date: moment.unix(start).format('MM/DD/YYYY'),
           end_date: moment.unix(end).format('MM/DD/YYYY'),
+          profile_id: null,
         },
         json: true,
       }]);
@@ -88,6 +138,7 @@ describe('rpc/compare', () => {
           access_token: token,
           start_date: start,
           end_date: end,
+          profile_id: null,
         },
         json: true,
       }]);
@@ -237,6 +288,30 @@ describe('rpc/compare', () => {
       label: 'Tweets',
       value: firstDayMetric.value + secondDayMetric.value,
       previousValue: firstDayMetric.previousValue + secondDayMetric.previousValue,
+    });
+  });
+
+  it('should return daily totals only for days that match with the previous period', async() => {
+    rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_TOTALS_RESPONSE));
+    rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_TOTALS_RESPONSE));
+    rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
+    rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_DAILY_PARTIAL_RESPONSE));
+
+    const data = await compare.fn({ profileId, profileService }, {
+      session: {
+        analyze: {
+          accessToken: token,
+        },
+      },
+    });
+
+    expect(data.daily.length).toBe(2);
+
+    expect(data.totalPeriodDaily.length).toBe(0);
+
+    expect(data.daily[0]).toMatchObject({
+      day: '1504051200000',
+      previousPeriodDay: '1503446400000',
     });
   });
 });
