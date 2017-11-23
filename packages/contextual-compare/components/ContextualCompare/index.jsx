@@ -9,11 +9,11 @@ import {
   ChartStateLoading as Loading,
   ChartCard,
   ChartHeader,
+  CommonChart as Chart,
 } from '@bufferapp/analyze-shared-components';
 
 import Title from '../Title';
 import Header from '../Header';
-import Chart from '../Chart';
 
 const ContextualCompare = ({
   className,
@@ -39,7 +39,7 @@ const ContextualCompare = ({
       {data.length === 0 && !loading && <NoData />}
       {data.length >= 1 && !loading && <div>
         <Header {...props} />
-        <Chart {...props} data={data} />
+        <Chart {...props} pngExportId="contextual" data={data} />
       </div>}
     </div>
   </ChartCard>

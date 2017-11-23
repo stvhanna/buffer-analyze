@@ -5,9 +5,9 @@ import moment from 'moment';
 
 import {
   color as metricsColor,
-} from '@bufferapp/analyze-shared-components/style';
+} from '../style';
 
-import Footer from '../Footer';
+import Footer from './components/Footer';
 
 import chartConfig, { highChartsSeriesPrimaryConfig } from './chartConfig';
 
@@ -216,6 +216,7 @@ const Chart = ({
   mode,
   presets,
   profileService,
+  pngExportId,
   selectedMetrics,
   selectedPreset,
   timezone,
@@ -238,7 +239,7 @@ const Chart = ({
     },
   );
   return (
-    <div id="js-dom-to-png-contextual">
+    <div id={`js-dom-to-png-${pngExportId}`}>
       <ReactHighcharts config={charOptions} />
       <Footer
         selectedMetrics={selectedMetrics}
@@ -262,6 +263,7 @@ Chart.propTypes = {
     }),
   })).isRequired,
   profileService: PropTypes.string.isRequired,
+  pngExportId: PropTypes.string,
   timezone: PropTypes.string.isRequired,
   mode: PropTypes.number.isRequired,
   selectedMetrics: PropTypes.arrayOf(PropTypes.shape({
@@ -282,6 +284,7 @@ Chart.propTypes = {
 
 Chart.defaultProps = {
   isCustomMode: false,
+  pngExportId: 'common',
 };
 
 export default Chart;
