@@ -7,7 +7,7 @@ const filterProfilesByService = profiles => (
   profiles.filter(p => ['facebook', 'twitter', 'instagram'].indexOf(p.service) > -1)
 );
 
-const mapStateToProps = (state, ownProps) => ({
+const mapStateToProps = state => ({
   profiles: filterProfilesByService(state.profiles.profiles),
   isDropdownOpen: state.multiProfileSelector.isDropdownOpen,
   profilesFilterString: state.multiProfileSelector.profilesFilterString,
