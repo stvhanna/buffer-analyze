@@ -1,4 +1,5 @@
 import React from 'react';
+import timezoneMock from 'timezone-mock';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import configureMockStore from 'redux-mock-store';
@@ -11,6 +12,8 @@ import HourlyChart from '@bufferapp/hourly-chart';
 import ContextualCompare from '@bufferapp/contextual-compare';
 
 import OverviewTab from './index';
+
+timezoneMock.register('US/Eastern');
 
 configure({ adapter: new Adapter() });
 describe('web/OverviewTab', () => {
