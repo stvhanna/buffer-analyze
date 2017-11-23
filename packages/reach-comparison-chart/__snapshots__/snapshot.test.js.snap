@@ -9,26 +9,48 @@ exports[`Snapshots ReachComparisonChart should render a "no data" state 1`] = `
       }
     }
   >
-    <div>
-      <h2
-        className="sc-gzVnrw LRhtN"
-      >
-        <span
-          style={
-            Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "2rem",
-              "fontWeight": 700,
-            }
+    <div
+      style={
+        Object {
+          "background": "#fff",
+          "border": "1px solid #E2E8ED",
+          "borderRadius": "5px",
+          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
+          "margin": "0 0 2rem",
+        }
+      }
+    >
+      <header
+        style={
+          Object {
+            "alignItems": "center",
+            "borderBottom": "1px solid #ECEEEF",
+            "display": "flex",
+            "justifyContent": "space-between",
+            "padding": "1.5rem",
           }
+        }
+      >
+        <h2
+          className="sc-gzVnrw fhxDdR"
         >
-          Reach
-           comparison
-        </span>
-      </h2>
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1.25rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            Reach
+             comparison
+          </span>
+        </h2>
+      </header>
       <div
-        className="sc-gZMcBi gwdoth"
+        className="sc-gZMcBi cCickz"
       >
         <div
           style={
@@ -106,33 +128,55 @@ exports[`Snapshots ReachComparisonChart should render a loading state 1`] = `
       }
     }
   >
-    <div>
-      <h2
-        className="sc-gzVnrw LRhtN"
-      >
-        <span
-          style={
-            Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "2rem",
-              "fontWeight": 700,
-            }
+    <div
+      style={
+        Object {
+          "background": "#fff",
+          "border": "1px solid #E2E8ED",
+          "borderRadius": "5px",
+          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
+          "margin": "0 0 2rem",
+        }
+      }
+    >
+      <header
+        style={
+          Object {
+            "alignItems": "center",
+            "borderBottom": "1px solid #ECEEEF",
+            "display": "flex",
+            "justifyContent": "space-between",
+            "padding": "1.5rem",
           }
+        }
+      >
+        <h2
+          className="sc-gzVnrw fhxDdR"
         >
-          Reach
-           comparison
-        </span>
-      </h2>
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1.25rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            Reach
+             comparison
+          </span>
+        </h2>
+      </header>
       <div
-        className="sc-iwsKbI dPcvgv"
+        className="sc-iwsKbI MLANU"
       >
         <div
           style={
             Object {
               "alignItems": "center",
               "background": "rgba(255,255,255,.95)",
-              "border": "solid 1px #ced7df",
+              "border": "none",
               "display": "flex",
               "justifyContent": "center",
               "maxHeight": "none",
@@ -220,7 +264,7 @@ exports[`Snapshots ReachComparisonChart should render a loading state 1`] = `
                   }
                 }
               >
-                Reach comparison chart loading...
+                Loading...
               </span>
             </div>
           </div>
@@ -240,34 +284,56 @@ exports[`Snapshots ReachComparisonChart should render the reach comparison chart
       }
     }
   >
-    <div>
-      <h2
-        className="sc-gzVnrw LRhtN"
-      >
-        <span
-          style={
-            Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "2rem",
-              "fontWeight": 700,
-            }
+    <div
+      style={
+        Object {
+          "background": "#fff",
+          "border": "1px solid #E2E8ED",
+          "borderRadius": "5px",
+          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
+          "margin": "0 0 2rem",
+        }
+      }
+    >
+      <header
+        style={
+          Object {
+            "alignItems": "center",
+            "borderBottom": "1px solid #ECEEEF",
+            "display": "flex",
+            "justifyContent": "space-between",
+            "padding": "1.5rem",
           }
+        }
+      >
+        <h2
+          className="sc-gzVnrw fhxDdR"
         >
-          Reach
-           comparison
-        </span>
-      </h2>
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1.25rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            Reach
+             comparison
+          </span>
+        </h2>
+      </header>
       <div
-        className="sc-dnqmqq cktmIi"
+        className="sc-dnqmqq jhnxZF"
       >
         <div />
       </div>
       <section
-        className="sc-ifAKCX blbWuv"
+        className="sc-ifAKCX fEBlBl"
       >
         <ul
-          className="sc-bxivhb bMvQir"
+          className="sc-bxivhb kLcPeY"
         >
           <li
             style={
@@ -829,34 +895,56 @@ exports[`Snapshots ReachComparisonChart should render the reach comparison chart
       }
     }
   >
-    <div>
-      <h2
-        className="sc-gzVnrw LRhtN"
-      >
-        <span
-          style={
-            Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "2rem",
-              "fontWeight": 700,
-            }
+    <div
+      style={
+        Object {
+          "background": "#fff",
+          "border": "1px solid #E2E8ED",
+          "borderRadius": "5px",
+          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
+          "margin": "0 0 2rem",
+        }
+      }
+    >
+      <header
+        style={
+          Object {
+            "alignItems": "center",
+            "borderBottom": "1px solid #ECEEEF",
+            "display": "flex",
+            "justifyContent": "space-between",
+            "padding": "1.5rem",
           }
+        }
+      >
+        <h2
+          className="sc-gzVnrw fhxDdR"
         >
-          Reach
-           comparison
-        </span>
-      </h2>
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1.25rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            Reach
+             comparison
+          </span>
+        </h2>
+      </header>
       <div
-        className="sc-htoDjs fQyzgx"
+        className="sc-htoDjs rfxNx"
       >
         <div />
       </div>
       <section
-        className="sc-ifAKCX blbWuv"
+        className="sc-ifAKCX fEBlBl"
       >
         <ul
-          className="sc-bxivhb bMvQir"
+          className="sc-bxivhb kLcPeY"
         >
           <li
             style={

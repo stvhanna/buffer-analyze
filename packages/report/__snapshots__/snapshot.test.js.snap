@@ -598,8 +598,8 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
       <h2
         style={
           Object {
-            "margin": "0",
-            "padding": "0",
+            "margin": 0,
+            "padding": 0,
           }
         }
       >
@@ -2085,8 +2085,8 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
       <h2
         style={
           Object {
-            "margin": "0",
-            "padding": "0",
+            "margin": 0,
+            "padding": 0,
           }
         }
       >
