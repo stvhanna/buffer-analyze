@@ -6,16 +6,9 @@ import ExportPicker from './index';
 
 storiesOf('ExportPicker')
   .addDecorator(checkA11y)
-  .add('should not be open', () => (
+  .add('should not be open or exporting', () => (
     <ExportPicker
       isOpen={false}
+      exporting={false}
     />
-  ))
-  .add('should be open', () => (
-    <ExportPicker
-      isOpen
-    />
-  ))
-  .add('should show exporting', () => (
-    <ExportPicker exporting />
   ));

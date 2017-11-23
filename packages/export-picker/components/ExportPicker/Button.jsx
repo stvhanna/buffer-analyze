@@ -31,7 +31,7 @@ const Arrow = styled.span`
   margin-left: auto;
 `;
 
-const DatePickerButton = ({ isOpen, exporting, handleClick }) => (
+const ExportPickerButton = ({ isOpen, exporting, handleClick }) => (
   <Button
     exporting={exporting}
     disabled={exporting}
@@ -46,16 +46,16 @@ const DatePickerButton = ({ isOpen, exporting, handleClick }) => (
   </Button>
 );
 
-DatePickerButton.defaultProps = {
+ExportPickerButton.defaultProps = {
   startDate: 0,
   endDate: 0,
   exporting: false,
 };
 
-DatePickerButton.propTypes = {
+ExportPickerButton.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   handleClick: PropTypes.func.isRequired,
   exporting: PropTypes.bool,
 };
 
-export default DatePickerButton;
+export default ExportPickerButton;

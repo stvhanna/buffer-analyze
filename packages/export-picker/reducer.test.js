@@ -10,10 +10,6 @@ describe('reducer', () => {
       });
     });
 
-    it('is exporting', () => {
-      expect(state.exporting).toBeTruthy();
-    });
-
     it('is closed', () => {
       expect(state.open).toBe(false);
     });

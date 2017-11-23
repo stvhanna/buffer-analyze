@@ -1,4 +1,4 @@
-export default ({ dispatch }) => next => (action) => {
+export default () => next => (action) => {
   switch (action.type) {
     default:
       break;

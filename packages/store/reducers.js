@@ -24,7 +24,7 @@ import { reducer as multiProfileSelectorReducer } from '@bufferapp/multi-profile
 import { reducer as reachComparisonReducer } from '@bufferapp/reach-comparison-chart';
 import { reducer as likesComparisonReducer } from '@bufferapp/likes-comparison-chart';
 import { reducer as engagementComparisonReducer } from '@bufferapp/engagement-comparison-chart';
-import { reducer as exportAsReducer } from '@bufferapp/analyze-export-picker';
+import { reducer as exportPickerReducer } from '@bufferapp/analyze-export-picker';
 
 export default combineReducers({
   router: routerReducer,
@@ -41,7 +41,7 @@ export default combineReducers({
   postsSummary: postsSummaryReducer,
   topPosts: topPostsReducer,
   hourly,
-  exportAs: exportAsReducer,
+  exportPicker: exportPickerReducer,
   exportToPNG: exportToPNGReducer,
   exportToCSV: exportToCSVReducer,
   compare: compareChartReducer,

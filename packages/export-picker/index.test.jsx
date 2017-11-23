@@ -20,10 +20,20 @@ const storeFake = state => ({
 
 describe('ExportPicker', () => {
   it('should render', () => {
-    const store = storeFake({});
+    const store = storeFake({
+      exportPicker: {
+        open: true,
+      },
+      exportToCSV: {
+        exporting: false,
+      },
+      exportToPNG: {
+        exporting: false,
+      },
+    });
     const wrapper = mount(
       <Provider store={store}>
-        <ExportPickerContainer />
+        <ExportPickerContainer filename="buffer-overview-analytics" />
       </Provider>,
     );
     expect(wrapper.find(ExportPicker).length)

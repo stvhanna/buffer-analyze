@@ -21,15 +21,15 @@ const Container = styled.div`
   `}
 `;
 
-const Dropdown = ({ isOpen, children }) => (
+const ExportPickerDropdown = ({ isOpen, children }) => (
   <Container isOpen={isOpen}>
     {children}
   </Container>
 );
 
-Dropdown.propTypes = {
+ExportPickerDropdown.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   children: PropTypes.node.isRequired,
 };
 
-export default Dropdown;
+export default ExportPickerDropdown;

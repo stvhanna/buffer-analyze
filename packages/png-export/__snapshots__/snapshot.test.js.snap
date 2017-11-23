@@ -12,24 +12,36 @@ exports[`Snapshots ExportButton default 1`] = `
     onMouseLeave={[Function]}
     style={
       Object {
-        "backgroundColor": "transparent",
-        "border": "0.063rem solid transparent",
-        "borderColor": "#168eea",
-        "borderRadius": "2rem",
-        "color": "#168eea",
+        "background": "none",
+        "backgroundColor": "unset",
+        "border": "none",
+        "borderRadius": "unset",
+        "color": "unset",
         "cursor": "pointer",
-        "display": "inline-block",
-        "fontFamily": "\\"Roboto\\", sans-serif",
-        "fontSize": "0.75rem",
-        "fontWeight": 400,
-        "margin": "0",
+        "display": "unset",
+        "fontFamily": "unset",
+        "fontSize": "unset",
+        "fontWeight": "unset",
+        "lineHeight": "unset",
+        "margin": "unset",
         "outline": "none",
-        "padding": "0.5rem 2rem",
-        "transition": "background-color 0.2s linear",
+        "padding": 0,
+        "transition": "unset",
       }
     }
   >
-    Export as Images
+    <span
+      style={
+        Object {
+          "color": "#59626a",
+          "fontFamily": "\\"Roboto\\", sans-serif",
+          "fontSize": "0.75rem",
+          "fontWeight": 400,
+        }
+      }
+    >
+      Export as Images
+    </span>
   </button>
 </span>
 `;
@@ -46,25 +58,36 @@ exports[`Snapshots ExportButton exporting 1`] = `
     onMouseLeave={[Function]}
     style={
       Object {
-        "backgroundColor": "transparent",
-        "border": "0.063rem solid transparent",
-        "borderColor": "#168eea",
-        "borderRadius": "2rem",
-        "color": "#168eea",
+        "background": "none",
+        "backgroundColor": "unset",
+        "border": "none",
+        "borderRadius": "unset",
+        "color": "unset",
         "cursor": "pointer",
-        "display": "inline-block",
-        "fontFamily": "\\"Roboto\\", sans-serif",
-        "fontSize": "0.75rem",
-        "fontWeight": 400,
-        "margin": "0",
-        "opacity": 0.3,
+        "display": "unset",
+        "fontFamily": "unset",
+        "fontSize": "unset",
+        "fontWeight": "unset",
+        "lineHeight": "unset",
+        "margin": "unset",
         "outline": "none",
-        "padding": "0.5rem 2rem",
-        "transition": "background-color 0.2s linear",
+        "padding": 0,
+        "transition": "unset",
       }
     }
   >
-    Exporting...
+    <span
+      style={
+        Object {
+          "color": "#59626a",
+          "fontFamily": "\\"Roboto\\", sans-serif",
+          "fontSize": "0.75rem",
+          "fontWeight": 400,
+        }
+      }
+    >
+      Exporting...
+    </span>
   </button>
 </span>
 `;
@@ -83,24 +106,36 @@ exports[`Snapshots ExportButton onClick works when not exporting 1`] = `
         onMouseLeave={[Function]}
         style={
           Object {
-            "backgroundColor": "transparent",
-            "border": "0.063rem solid transparent",
-            "borderColor": "#168eea",
-            "borderRadius": "2rem",
-            "color": "#168eea",
+            "background": "none",
+            "backgroundColor": "unset",
+            "border": "none",
+            "borderRadius": "unset",
+            "color": "unset",
             "cursor": "pointer",
-            "display": "inline-block",
-            "fontFamily": "\\"Roboto\\", sans-serif",
-            "fontSize": "0.75rem",
-            "fontWeight": 400,
-            "margin": "0",
+            "display": "unset",
+            "fontFamily": "unset",
+            "fontSize": "unset",
+            "fontWeight": "unset",
+            "lineHeight": "unset",
+            "margin": "unset",
             "outline": "none",
-            "padding": "0.5rem 2rem",
-            "transition": "background-color 0.2s linear",
+            "padding": 0,
+            "transition": "unset",
           }
         }
       >
-        Export as Images
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Export as Images
+        </span>
       </button>
     </div>
     <div>
@@ -114,25 +149,36 @@ exports[`Snapshots ExportButton onClick works when not exporting 1`] = `
         onMouseLeave={[Function]}
         style={
           Object {
-            "backgroundColor": "transparent",
-            "border": "0.063rem solid transparent",
-            "borderColor": "#168eea",
-            "borderRadius": "2rem",
-            "color": "#168eea",
+            "background": "none",
+            "backgroundColor": "unset",
+            "border": "none",
+            "borderRadius": "unset",
+            "color": "unset",
             "cursor": "pointer",
-            "display": "inline-block",
-            "fontFamily": "\\"Roboto\\", sans-serif",
-            "fontSize": "0.75rem",
-            "fontWeight": 400,
-            "margin": "0",
-            "opacity": 0.3,
+            "display": "unset",
+            "fontFamily": "unset",
+            "fontSize": "unset",
+            "fontWeight": "unset",
+            "lineHeight": "unset",
+            "margin": "unset",
             "outline": "none",
-            "padding": "0.5rem 2rem",
-            "transition": "background-color 0.2s linear",
+            "padding": 0,
+            "transition": "unset",
           }
         }
       >
-        Exporting...
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Exporting...
+        </span>
       </button>
     </div>
   </div>
