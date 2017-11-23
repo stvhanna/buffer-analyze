@@ -4,7 +4,6 @@ export const actionTypes = {
 };
 
 const initialState = {
-  exporting: false,
   open: false,
 };
 
