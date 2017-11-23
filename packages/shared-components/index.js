@@ -21,3 +21,4 @@ export ComparisonChart from './ComparisonChart';
 export ComparisonChartTooltip from './ComparisonChartTooltip';
 export ComparisonFooter from './ComparisonFooter';
 export ComparisonTitle from './ComparisonTitle';
+export CommonChart from './CommonChart';

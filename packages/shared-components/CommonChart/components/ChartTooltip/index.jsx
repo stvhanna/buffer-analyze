@@ -3,13 +3,12 @@ import React from 'react';
 import reactDOM from 'react-dom/server';
 import Text from '@bufferapp/components/Text';
 import moment from 'moment-timezone';
-import {
-  TruncatedNumber,
-  MetricIcon,
-  style as sharedStyle,
-} from '@bufferapp/analyze-shared-components';
 
-const metricsColor = sharedStyle.color;
+import MetricIcon from '../../../MetricIcon';
+import TruncatedNumber from '../../../TruncatedNumber';
+import { color } from '../../../style';
+
+const metricsColor = color;
 
 function transformLabelForTooltip(label) {
   return `${label.toLowerCase()}`;

@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import ContextualCompare from './components/ContextualCompare';
+import AudienceChart from './components/AudienceChart';
 import { actions } from './reducer';
 
 function getSelectedProfileTimezone({ profiles, selectedProfileId }) {
@@ -9,40 +9,31 @@ function getSelectedProfileTimezone({ profiles, selectedProfileId }) {
 
 function mapStateToProps (state) {
   return {
-    data: state.contextual.data,
-    isPrimaryMetricDropdownOpen: state.contextual.isPrimaryMetricDropdownOpen,
-    isSecondaryMetricDropdownOpen: state.contextual.isSecondaryMetricDropdownOpen,
-    isPresetsDropdownOpen: state.contextual.isPresetsDropdownOpen,
-    loading: state.contextual.loading,
-    metrics: state.contextual.metrics,
-    mode: state.contextual.mode,
-    presets: state.contextual.presets,
+    data: state.audience.data,
+    isPrimaryMetricDropdownOpen: state.audience.isPrimaryMetricDropdownOpen,
+    isSecondaryMetricDropdownOpen: state.audience.isSecondaryMetricDropdownOpen,
+    loading: state.audience.loading,
+    metrics: state.audience.metrics,
     profileService: state.profiles.selectedProfileService,
-    selectedMetricLabel: state.contextual.selectedMetricLabel,
-    selectedMetrics: state.contextual.selectedMetrics,
-    selectedPreset: state.contextual.selectedPreset,
+    selectedMetrics: state.audience.selectedMetrics,
     timezone: getSelectedProfileTimezone(state.profiles),
   };
 }
 
 const mapDispatchToProps = dispatch => ({
-  selectMode: mode => dispatch(actions.selectMode(mode)),
   openPrimaryMetricDropdown: () => dispatch(actions.openPrimaryMetricDropdown()),
   closePrimaryMetricDropdown: () => dispatch(actions.closePrimaryMetricDropdown()),
   selectPrimaryMetric: metricIndex => dispatch(actions.selectPrimaryMetric(metricIndex)),
   openSecondaryMetricDropdown: () => dispatch(actions.openSecondaryMetricDropdown()),
   closeSecondaryMetricDropdown: () => dispatch(actions.closeSecondaryMetricDropdown()),
   selectSecondaryMetric: metricIndex => dispatch(actions.selectSecondaryMetric(metricIndex)),
-
-  togglePresetDropdown: () => dispatch(actions.togglePresetDropdown()),
-  selectPreset: preset => dispatch(actions.selectPreset(preset)),
 });
 
 // default export = container
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(ContextualCompare);
+)(AudienceChart);
 
 export Title from './components/Title';
 // export reducer, actions and action types

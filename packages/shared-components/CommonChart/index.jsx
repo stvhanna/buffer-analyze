@@ -5,9 +5,9 @@ import moment from 'moment';
 
 import {
   color as metricsColor,
-} from '@bufferapp/analyze-shared-components/style';
+} from '../style';
 
-import Footer from '../Footer';
+import Footer from './components/Footer';
 
 import chartConfig, { highChartsSeriesPrimaryConfig } from './chartConfig';
 
@@ -216,6 +216,7 @@ const Chart = ({
   mode,
   presets,
   profileService,
+  pngExportId,
   selectedMetrics,
   selectedPreset,
   timezone,
@@ -238,7 +239,7 @@ const Chart = ({
     },
   );
   return (
-    <div id="js-dom-to-png-contextual">
+    <div id={`js-dom-to-png-${pngExportId}`}>
       <ReactHighcharts config={charOptions} />
       <Footer
         selectedMetrics={selectedMetrics}
@@ -262,12 +263,13 @@ Chart.propTypes = {
     }),
   })).isRequired,
   profileService: PropTypes.string.isRequired,
+  pngExportId: PropTypes.string,
   timezone: PropTypes.string.isRequired,
-  mode: PropTypes.number.isRequired,
+  mode: PropTypes.number,
   selectedMetrics: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string.isRequired,
   })).isRequired,
-  selectedPreset: PropTypes.number.isRequired,
+  selectedPreset: PropTypes.number,
   presets: PropTypes.arrayOf(PropTypes.shape({
     day: PropTypes.string,
     data: PropTypes.arrayOf(PropTypes.shape({
@@ -277,11 +279,15 @@ Chart.propTypes = {
         value: PropTypes.number.isRequired,
       })),
     })),
-  })).isRequired,
+  })),
 };
 
 Chart.defaultProps = {
   isCustomMode: false,
+  pngExportId: 'common',
+  presets: null,
+  selectedPreset: null,
+  mode: 1,
 };
 
 export default Chart;
