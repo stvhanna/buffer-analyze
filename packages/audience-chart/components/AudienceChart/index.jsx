@@ -15,7 +15,7 @@ import {
 import Title from '../Title';
 import Header from '../Header';
 
-const ContextualCompare = ({
+const AudienceChart = ({
   className,
   data,
   loading,
@@ -25,11 +25,10 @@ const ContextualCompare = ({
     <ChartHeader>
       <Title dailyData={data} />
       <AddReport
-        chart="contextual-compare"
+        chart="audience-compare"
         state={{
           mode: props.mode,
           selectedMetrics: props.selectedMetrics,
-          selectedPreset: props.selectedPreset,
           profileService: props.profileService,
         }}
       />
@@ -39,17 +38,18 @@ const ContextualCompare = ({
       {data.length === 0 && !loading && <NoData />}
       {data.length >= 1 && !loading && <div>
         <Header {...props} />
-        <Chart {...props} pngExportId="contextual" data={data} />
+        <Chart {...props} pngExportId="audience" data={data} />
       </div>}
     </div>
   </ChartCard>
 );
 
-ContextualCompare.defaultProps = {
+AudienceChart.defaultProps = {
   loading: false,
+  mode: 1,
 };
 
-ContextualCompare.propTypes = {
+AudienceChart.propTypes = {
   className: PropTypes.string.isRequired,
   profileService: PropTypes.string.isRequired,
   data: PropTypes.arrayOf(PropTypes.shape({
@@ -60,17 +60,16 @@ ContextualCompare.propTypes = {
     })),
   })).isRequired,
   loading: PropTypes.bool,
-  selectedPreset: PropTypes.number.isRequired,
   selectedMetrics: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string.isRequired,
   })).isRequired,
-  mode: PropTypes.number.isRequired,
+  mode: PropTypes.number,
 };
 
-const ContextualCompareStyled = styled(ContextualCompare)`
+const AudienceChartStyled = styled(AudienceChart)`
   margin: 0 auto;
   padding: 1.25rem;
   position: relative;
 `;
 
-export default ContextualCompareStyled;
+export default AudienceChartStyled;

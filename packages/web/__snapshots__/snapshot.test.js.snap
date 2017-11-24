@@ -1466,7 +1466,7 @@ exports[`Snapshots InsightsPage should render Insights page 1`] = `
 exports[`Snapshots ReportsPage should render reports page 1`] = `
 <span>
   <div
-    className="sc-iRbamj fxuZZC"
+    className="sc-gipzik cvvDcg"
   >
     <div
       style={
@@ -1649,10 +1649,10 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
       </a>
     </div>
     <div
-      className="sc-jlyJG eLCxWo"
+      className="sc-csuQGl iJcxxc"
     >
       <header
-        className="sc-csuQGl gRIhSc"
+        className="sc-bRBYWo rIYWd"
       >
         <button
           className="sc-bdVaJa eTEyQW"
@@ -1699,7 +1699,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
                 }
               }
             >
-              From: 11/16/17 - To: 11/22/17
+              From: 11/17/17 - To: 11/23/17
             </span>
             <span
               style={
@@ -2065,7 +2065,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
         </div>
       </header>
       <div
-        className="sc-gipzik bNUHZP"
+        className="sc-Rmtcm bryngC"
       >
         ...loading
       </div>
