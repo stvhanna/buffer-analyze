@@ -143,7 +143,7 @@ class Form extends Component {
             <Inputs>
               <InputContainer>
                 <DateInput
-                  ref={(node) => { this._startDate = node; }}
+                  innerRef={(node) => { this._startDate = node; }}
                   type="text"
                   name="start"
                   value={startDateFormat}
