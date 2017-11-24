@@ -31,6 +31,7 @@
     "@bufferapp/audience-comparison-chart": "^0.16.0",
     "@bufferapp/average-table": "^0.17.0",
     "@bufferapp/compare-chart": "^0.16.0",
+    "@bufferapp/audience-chart": "^0.0.1",
     "@bufferapp/components": "2.1.1",
     "@bufferapp/contextual-compare": "^0.16.0",
     "@bufferapp/engagement-comparison-chart": "^0.20.0",
@@ -54,6 +55,7 @@
     "@storybook/react": "3.1.3",
     "eslint": "3.19.0",
     "jest": "20.0.4",
-    "storybook-addon-a11y": "3.0.0"
+    "storybook-addon-a11y": "3.0.0",
+    "timezone-mock": "0.0.7"
   }
 }

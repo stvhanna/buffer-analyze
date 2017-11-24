@@ -1,4 +1,3 @@
-require('babel-polyfill');
 const http = require('http');
 const express = require('express');
 const logMiddleware = require('@bufferapp/logger/middleware');
@@ -31,6 +30,7 @@ app.set('isProduction', isProduction);
 
 if (!isProduction) {
   /* eslint-disable global-require */
+  require('babel-polyfill');
   const webpack = require('webpack');
   const config = require('./webpack.config.dev');
   const webpackMiddleware = require('webpack-dev-middleware');

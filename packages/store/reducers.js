@@ -16,6 +16,7 @@ import { reducer as exportToCSVReducer } from '@bufferapp/analyze-csv-export';
 import { reducer as topPostsReducer } from '@bufferapp/top-posts-table';
 import { reducer as hourly } from '@bufferapp/hourly-chart';
 import { reducer as compareChartReducer } from '@bufferapp/compare-chart';
+import { reducer as audienceChartReducer } from '@bufferapp/audience-chart';
 import { reducer as reportListReducer } from '@bufferapp/report-list';
 import { reducer as contextualCompareReducer } from '@bufferapp/contextual-compare';
 import { reducer as reportReducer } from '@bufferapp/report';
@@ -45,6 +46,7 @@ export default combineReducers({
   exportToPNG: exportToPNGReducer,
   exportToCSV: exportToCSVReducer,
   compare: compareChartReducer,
+  audience: audienceChartReducer,
   reportList: reportListReducer,
   contextual: contextualCompareReducer,
   report: reportReducer,

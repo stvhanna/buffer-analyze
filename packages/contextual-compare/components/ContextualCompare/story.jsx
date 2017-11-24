@@ -92,6 +92,10 @@ storiesOf('ContextualCompare')
       }}
     >
       <ContextualCompare
+        profileService="facebook"
+        selectedPreset={0}
+        selectedMetrics={selectedMetrics}
+        mode={1}
         data={[]}
         loading
       />
@@ -104,6 +108,10 @@ storiesOf('ContextualCompare')
       }}
     >
       <ContextualCompare
+        profileService="facebook"
+        selectedPreset={0}
+        selectedMetrics={selectedMetrics}
+        mode={1}
         data={[]}
       />
     </div>
