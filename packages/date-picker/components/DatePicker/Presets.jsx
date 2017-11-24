@@ -1,11 +1,76 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
 import moment from 'moment';
+import styled, { css } from 'styled-components';
 
-import { Text, Button } from '@bufferapp/components';
+import {
+  Button,
+  Text,
+} from '@bufferapp/components';
 
-import styles from '../DatePickerForm/date-picker-form.less';
+const Header = styled.header`
+  margin: 0 0 0.5rem;
+  height: auto;
+`;
+
+const List = styled.ul`
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+`;
+
+const Item = styled.li`
+  width: 33%;
+  list-style: none;
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0.5rem 0.25rem;
+  text-decoration: none;
+  text-shadow: none;
+  border: 1px solid #CED7DF;
+  border-radius: 3px;
+  text-align: center;
+  user-select: none;
+  margin: 0.1rem;
+  white-space: nowrap;
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  ${props => props.inactive && css`
+    opacity: 1;
+  `}
+
+  ${props => props.active && css`
+    background: #168EEA;
+    border-color: #168EEA;
+  `}
+
+  ${props => props.disabled && css`
+    color: #AAAAAA !important;
+    opacity: .3 !important;
+    background: transparent !important;
+    cursor: not-allowed;
+  `}
+`;
 
 const PRESETS = [
   {
@@ -51,35 +116,37 @@ const Presets = ({ selectPreset, minStartDate, startDate, endDate }) => {
     const disabled = minStartDate > moment().subtract(preset.range, 'days');
     const selectedRange = PRESETS.find(({ range }) => isRangeSelected(range, startDate, endDate));
     const selected = selectedRange.range === preset.range;
-
-    const itemClass = classNames(styles.headerListItem, {
-      [styles.headerListItemActive]: selected,
-      [styles.headerListItemInactive]: !selected,
-      [styles.headerListItemDisabled]: disabled,
-    });
-
     const dataTip = disabled ? 'We don\'t have complete data for this range.' : null;
     const handleClick = disabled ? null : (() => selectPreset(preset.range));
+    const buttonTextColor = (selected ? 'white' : null);
+
     return (
-      <li
+      <Item
+        active={selected}
+        inactive={!selected}
+        disabled={disabled}
         key={preset.name.toLowerCase().replace(' ', '-')}
         data-tip={dataTip}
-        className={itemClass}
       >
-        <Button noStyle onClick={handleClick}><Text size="small" color={(selected ? 'white' : null)}>{preset.name}</Text></Button>
-      </li>
+        <Button
+          noStyle
+          onClick={handleClick}
+        >
+          <Text size="small" color={buttonTextColor}>{preset.name}</Text>
+        </Button>
+      </Item>
     );
   });
 
   return (
-    <header className={styles.header}>
-      <ul className={styles.headerList}>
+    <Header>
+      <List>
         {presets.slice(0, 3)}
-      </ul>
-      <ul className={styles.headerList}>
+      </List>
+      <List>
         {presets.splice(3)}
-      </ul>
-    </header>
+      </List>
+    </Header>
   );
 };
 

@@ -1,12 +1,17 @@
-import React, {
-  Component,
-} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ReactTooltip from 'react-tooltip';
 import moment from 'moment';
+import styled from 'styled-components';
 
-import styles from './date-picker-calendar.less';
 import Day from './Day';
+
+const Week = styled.div`
+  padding: 0;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+`;
 
 const getFirstDayOfWeek = (timestamp) => {
   const startOfMonth = moment.unix(timestamp).startOf('month');
@@ -82,9 +87,9 @@ class Month extends Component {
     return monthGrid.map((weekList) => {
       const days = this.getDays(weekList);
       return (
-        <div className={styles.week} key={weekList[0].timestamp}>
+        <Week key={weekList[0].timestamp}>
           {days}
-        </div>
+        </Week>
       );
     });
   }

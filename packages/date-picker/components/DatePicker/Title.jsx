@@ -81,31 +81,4 @@ Title.propTypes = {
   loading: PropTypes.bool,
 };
 
-
-const Subtitle = ({ startDate, endDate }) => {
-  let subtitle = '';
-  const selectedRange = PRESETS.find(preset => isRangeSelected(preset.range, startDate, endDate));
-  if (selectedRange.label !== 'Custom' && startDate && endDate) {
-    const from = formatDate(startDate);
-    const to = formatDate(endDate);
-
-    if (from !== to) {
-      subtitle = `${from} to ${to}`;
-    }
-  }
-
-  return (<span className={styles.dateRange}>{subtitle}</span>);
-};
-
-Subtitle.defaultProps = {
-  startDate: 0,
-  endDate: 0,
-};
-
-Subtitle.propTypes = {
-  startDate: PropTypes.number,
-  endDate: PropTypes.number,
-};
-
-
-export { Title, Subtitle };
+export default Title;

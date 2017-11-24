@@ -2,30 +2,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
+import styled, { css } from 'styled-components';
 
-import Button from '../DatePickerButton/';
-import Dropdown from '../DatePickerDropdown/';
-import Form from '../DatePickerForm/';
+import Button from './Button';
+import Dropdown from './Dropdown';
+import Form from './Form';
 
-const containerStyle = {
-  position: 'relative',
-  width: '16rem',
-};
+const Container = styled.div`
+  position: relative;
+  width: 16rem;
+`;
 
-const catcherStyle = {
-  display: 'none',
-  position: 'fixed',
-  top: 0,
-  bottom: 0,
-  right: 0,
-  left: 0,
-  zIndex: 1,
-};
+const ClickCatcher = styled.div`
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
 
-const catcherOpenStyle = {
-  ...catcherStyle,
-  display: 'block',
-};
+  ${props => props.isOpen && css`
+    display: block;
+  `}
+`;
 
 const DatePicker = (props) => {
   const {
@@ -39,7 +39,7 @@ const DatePicker = (props) => {
   } = props;
 
   return (
-    <div style={containerStyle}>
+    <Container>
       <Button
         isOpen={isOpen}
         loading={loading}
@@ -51,13 +51,13 @@ const DatePicker = (props) => {
         <Form {...props} />
       </Dropdown>
 
-      <div
-        style={(isOpen ? catcherOpenStyle : catcherStyle)}
+      <ClickCatcher
+        isOpen={isOpen}
         tabIndex="0"
         role="button"
         onClick={close}
       />
-    </div>
+    </Container>
   );
 };
 

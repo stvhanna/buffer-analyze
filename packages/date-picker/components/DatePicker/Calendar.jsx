@@ -1,32 +1,76 @@
-import React, {
-  Component,
-} from 'react';
-
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
-import Button from '@bufferapp/components/Button';
-
 import moment from 'moment';
-import classNames from 'classnames';
+import styled, { css } from 'styled-components';
 
+import {
+  Button,
+  Text,
+} from '@bufferapp/components';
 import ArrowLeftIcon from '@bufferapp/components/Icon/Icons/ArrowLeftIcon';
 import ArrowRightIcon from '@bufferapp/components/Icon/Icons/ArrowRightIcon';
-
 import Month from './Month';
 
-import styles from './date-picker-calendar.less';
+const DayHeaderListItem = styled.li`
+  display: inline-block;
+  text-decoration: none;
+  width: 1.7rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  border-bottom: solid 1px #CED7DF;
+`;
+
+const DayHeaderList = styled.ul`
+  padding: 0;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+`;
+
+const Header = styled.header`
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2rem;
+  border-bottom: solid 1px #CED7DF;
+  text-align: center;
+  background: #FAFBFB;
+`;
+
+const ArrowLeft = styled.i`
+  cursor: pointer;
+  margin-left: 1rem;
+`;
+
+const ArrowRight = styled.i`
+  cursor: pointer;
+  margin-right: 1rem;
+`;
+
+const Container = styled.aside`
+  display: none;
+  margin-top: 1rem;
+  border: solid 1px #CED7DF;
+  border-radius: 3px;
+
+  ${props => props.isOpen && css`
+    display: block;
+  `}
+`;
 
 const MonthHeader = () => {
   const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'].map(day => (
-    <li className={styles.dayHeaderListItem} key={day}>
-      {day.charAt(0)}
-    </li>
+    <DayHeaderListItem key={day}>
+      <Text size="small">{day.charAt(0)}</Text>
+    </DayHeaderListItem>
   ));
 
   return (
-    <ul className={styles.dayHeaderList}>
+    <DayHeaderList>
       {days}
-    </ul>
+    </DayHeaderList>
   );
 };
 
@@ -35,15 +79,15 @@ class Calendar extends Component {
     const currentMonth = moment.unix(unixTimestamp).format('MMMM YYYY');
 
     return (
-      <header className={styles.header}>
+      <Header>
         <Button noStyle onClick={() => this.previousMonth(unixTimestamp)}>
-          <i className={styles.arrowLeft}><ArrowLeftIcon /></i>
+          <ArrowLeft><ArrowLeftIcon /></ArrowLeft>
         </Button>
-        {currentMonth}
+        <Text size="small">{currentMonth}</Text>
         <Button noStyle onClick={() => this.nextMonth(unixTimestamp)}>
-          <i className={styles.arrowRight}><ArrowRightIcon /></i>
+          <ArrowRight><ArrowRightIcon /></ArrowRight>
         </Button>
-      </header>
+      </Header>
     );
   }
 
@@ -91,12 +135,8 @@ class Calendar extends Component {
 
     const header = this.getHeader(currentMonth);
 
-    const calendarClass = classNames(styles.calendar, {
-      [styles.calendarOpen]: isOpen,
-    });
-
     return (
-      <aside className={calendarClass}>
+      <Container isOpen={isOpen}>
         {header}
         <MonthHeader />
         <Month
@@ -107,7 +147,7 @@ class Calendar extends Component {
           maxStartDate={maxStartDate}
           maxEndDate={maxEndDate}
         />
-      </aside>
+      </Container>
     );
   }
 }
