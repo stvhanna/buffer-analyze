@@ -1466,7 +1466,7 @@ exports[`Snapshots InsightsPage should render Insights page 1`] = `
 exports[`Snapshots ReportsPage should render reports page 1`] = `
 <span>
   <div
-    className="sc-gipzik cvvDcg"
+    className="sc-uJMKN fHlLjs"
   >
     <div
       style={
@@ -1649,10 +1649,10 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
       </a>
     </div>
     <div
-      className="sc-csuQGl iJcxxc"
+      className="sc-bbmXgH lofLKu"
     >
       <header
-        className="sc-bRBYWo rIYWd"
+        className="sc-jnlKLf kgZYjV"
       >
         <button
           className="sc-bdVaJa eTEyQW"
@@ -1661,33 +1661,12 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
           Back to Reports
         </button>
         <div
-          style={
-            Object {
-              "position": "relative",
-              "width": "16rem",
-            }
-          }
+          className="sc-Rmtcm kWSdXa"
         >
           <button
+            className="sc-kgoBCf bCHNEj"
             disabled={false}
             onClick={[Function]}
-            style={
-              Object {
-                "border": "1px solid #D5E3EF",
-                "borderRadius": "3px",
-                "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
-                "boxSizing": "border-box",
-                "color": "#333333",
-                "cursor": "pointer",
-                "display": "flex",
-                "outline": "0 none",
-                "padding": "0.75rem 1rem",
-                "textAlign": "left",
-                "textDecoration": "none",
-                "textShadow": "none",
-                "width": "100%",
-              }
-            }
           >
             <span
               style={
@@ -1702,11 +1681,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
               From: 11/17/17 - To: 11/23/17
             </span>
             <span
-              style={
-                Object {
-                  "marginLeft": "auto",
-                }
-              }
+              className="sc-kGXeez QhbPc"
             >
               <svg
                 height="100%"
@@ -1735,33 +1710,19 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
             </span>
           </button>
           <div
-            style={
-              Object {
-                "backgroundColor": "#FFFFFF",
-                "border": "1px solid #D5E3EF",
-                "borderRadius": 3,
-                "borderWidth": "0 1px 1px",
-                "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
-                "boxSizing": "border-box",
-                "display": "none",
-                "padding": "0.5rem 1rem",
-                "position": "absolute",
-                "top": "2.25rem",
-                "width": "100%",
-                "zIndex": 2,
-              }
-            }
+            className="sc-kpOJdX dYDxNw"
           >
             <div>
               <header
-                className="header"
+                className="sc-jWBwVP hHfNoH"
               >
                 <ul
-                  className="headerList"
+                  className="sc-brqgnP hNHNEh"
                 >
                   <li
-                    className="headerListItem headerListItemInactive"
+                    className="sc-cMljjf fLBuZh"
                     data-tip={null}
+                    disabled={false}
                   >
                     <button
                       aria-label={null}
@@ -1806,8 +1767,9 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
                     </button>
                   </li>
                   <li
-                    className="headerListItem headerListItemInactive"
+                    className="sc-cMljjf fLBuZh"
                     data-tip={null}
+                    disabled={false}
                   >
                     <button
                       aria-label={null}
@@ -1852,8 +1814,9 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
                     </button>
                   </li>
                   <li
-                    className="headerListItem headerListItemInactive"
+                    className="sc-cMljjf fLBuZh"
                     data-tip={null}
+                    disabled={false}
                   >
                     <button
                       aria-label={null}
@@ -1899,11 +1862,12 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
                   </li>
                 </ul>
                 <ul
-                  className="headerList"
+                  className="sc-brqgnP hNHNEh"
                 >
                   <li
-                    className="headerListItem headerListItemInactive"
+                    className="sc-cMljjf fLBuZh"
                     data-tip={null}
+                    disabled={false}
                   >
                     <button
                       aria-label={null}
@@ -1948,8 +1912,9 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
                     </button>
                   </li>
                   <li
-                    className="headerListItem headerListItemInactive"
+                    className="sc-cMljjf fLBuZh"
                     data-tip={null}
+                    disabled={false}
                   >
                     <button
                       aria-label={null}
@@ -1994,8 +1959,9 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
                     </button>
                   </li>
                   <li
-                    className="headerListItem headerListItemActive"
+                    className="sc-cMljjf kVpdba"
                     data-tip={null}
+                    disabled={false}
                   >
                     <button
                       aria-label={null}
@@ -2042,30 +2008,20 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
                 </ul>
               </header>
               <div
-                className="customDateRangeContainer"
+                className="sc-gipzik bvAyXF"
               />
             </div>
           </div>
           <div
+            className="sc-bRBYWo eETGfz"
             onClick={[Function]}
             role="button"
-            style={
-              Object {
-                "bottom": 0,
-                "display": "none",
-                "left": 0,
-                "position": "fixed",
-                "right": 0,
-                "top": 0,
-                "zIndex": 1,
-              }
-            }
             tabIndex="0"
           />
         </div>
       </header>
       <div
-        className="sc-Rmtcm bryngC"
+        className="sc-gGBfsJ bLDNTf"
       >
         ...loading
       </div>

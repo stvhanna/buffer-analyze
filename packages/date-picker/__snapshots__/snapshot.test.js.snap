@@ -3,33 +3,12 @@
 exports[`Snapshots DatePicker should be able to have a custom date range selected 1`] = `
 <span>
   <div
-    style={
-      Object {
-        "position": "relative",
-        "width": "16rem",
-      }
-    }
+    className="sc-ckVGcZ jbcifS"
   >
     <button
+      className="sc-bdVaJa gFDTaL"
       disabled={false}
       onClick={[Function]}
-      style={
-        Object {
-          "border": "1px solid #D5E3EF",
-          "borderRadius": "3px",
-          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
-          "boxSizing": "border-box",
-          "color": "#333333",
-          "cursor": "pointer",
-          "display": "flex",
-          "outline": "0 none",
-          "padding": "0.75rem 1rem",
-          "textAlign": "left",
-          "textDecoration": "none",
-          "textShadow": "none",
-          "width": "100%",
-        }
-      }
     >
       <span
         style={
@@ -44,11 +23,7 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
         From: 08/21/17 - To: 08/30/17
       </span>
       <span
-        style={
-          Object {
-            "marginLeft": "auto",
-          }
-        }
+        className="sc-bwzfXH eBBRbA"
       >
         <svg
           height="100%"
@@ -77,33 +52,19 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
       </span>
     </button>
     <div
-      style={
-        Object {
-          "backgroundColor": "#FFFFFF",
-          "border": "1px solid #D5E3EF",
-          "borderRadius": 3,
-          "borderWidth": "0 1px 1px",
-          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
-          "boxSizing": "border-box",
-          "display": "none",
-          "padding": "0.5rem 1rem",
-          "position": "absolute",
-          "top": "2.25rem",
-          "width": "100%",
-          "zIndex": 2,
-        }
-      }
+      className="sc-htpNat fWujPp"
     >
       <div>
         <header
-          className="header"
+          className="sc-jTzLTM ddhgwI"
         >
           <ul
-            className="headerList"
+            className="sc-fjdhpX iXoyCj"
           >
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -148,8 +109,9 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -194,8 +156,9 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -241,11 +204,12 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
             </li>
           </ul>
           <ul
-            className="headerList"
+            className="sc-fjdhpX iXoyCj"
           >
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -290,8 +254,9 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -336,8 +301,9 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
               </button>
             </li>
             <li
-              className="headerListItem headerListItemActive"
+              className="sc-jzJRlG fzIEaG"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -384,24 +350,14 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
           </ul>
         </header>
         <div
-          className="customDateRangeContainer"
+          className="sc-kpOJdX jxdMrm"
         />
       </div>
     </div>
     <div
+      className="sc-jKJlTe gRJUDO"
       onClick={undefined}
       role="button"
-      style={
-        Object {
-          "bottom": 0,
-          "display": "none",
-          "left": 0,
-          "position": "fixed",
-          "right": 0,
-          "top": 0,
-          "zIndex": 1,
-        }
-      }
       tabIndex="0"
     />
   </div>
@@ -411,33 +367,12 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
 exports[`Snapshots DatePicker should be able to open 1`] = `
 <span>
   <div
-    style={
-      Object {
-        "position": "relative",
-        "width": "16rem",
-      }
-    }
+    className="sc-ckVGcZ jbcifS"
   >
     <button
+      className="sc-bdVaJa gFDTaL"
       disabled={false}
       onClick={[Function]}
-      style={
-        Object {
-          "border": "1px solid #D5E3EF",
-          "borderRadius": "3px",
-          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
-          "boxSizing": "border-box",
-          "color": "#333333",
-          "cursor": "pointer",
-          "display": "flex",
-          "outline": "0 none",
-          "padding": "0.75rem 1rem",
-          "textAlign": "left",
-          "textDecoration": "none",
-          "textShadow": "none",
-          "width": "100%",
-        }
-      }
     >
       <span
         style={
@@ -452,11 +387,7 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
         Past 7 Days
       </span>
       <span
-        style={
-          Object {
-            "marginLeft": "auto",
-          }
-        }
+        className="sc-bwzfXH eBBRbA"
       >
         <svg
           height="100%"
@@ -485,33 +416,19 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
       </span>
     </button>
     <div
-      style={
-        Object {
-          "backgroundColor": "#FFFFFF",
-          "border": "1px solid #D5E3EF",
-          "borderRadius": 3,
-          "borderWidth": "0 1px 1px",
-          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
-          "boxSizing": "border-box",
-          "display": "block",
-          "padding": "0.5rem 1rem",
-          "position": "absolute",
-          "top": "2.25rem",
-          "width": "100%",
-          "zIndex": 2,
-        }
-      }
+      className="sc-htpNat duBrKZ"
     >
       <div>
         <header
-          className="header"
+          className="sc-jTzLTM ddhgwI"
         >
           <ul
-            className="headerList"
+            className="sc-fjdhpX iXoyCj"
           >
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -556,8 +473,9 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -602,8 +520,9 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -649,11 +568,12 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
             </li>
           </ul>
           <ul
-            className="headerList"
+            className="sc-fjdhpX iXoyCj"
           >
             <li
-              className="headerListItem headerListItemActive"
+              className="sc-jzJRlG fzIEaG"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -698,8 +618,9 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -744,8 +665,9 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -792,24 +714,14 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
           </ul>
         </header>
         <div
-          className="customDateRangeContainer"
+          className="sc-kpOJdX jxdMrm"
         />
       </div>
     </div>
     <div
+      className="sc-jKJlTe bejxfx"
       onClick={[Function]}
       role="button"
-      style={
-        Object {
-          "bottom": 0,
-          "display": "block",
-          "left": 0,
-          "position": "fixed",
-          "right": 0,
-          "top": 0,
-          "zIndex": 1,
-        }
-      }
       tabIndex="0"
     />
   </div>
@@ -819,33 +731,12 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
 exports[`Snapshots DatePicker should display a calendar 1`] = `
 <span>
   <div
-    style={
-      Object {
-        "position": "relative",
-        "width": "16rem",
-      }
-    }
+    className="sc-ckVGcZ jbcifS"
   >
     <button
+      className="sc-bdVaJa gFDTaL"
       disabled={false}
       onClick={[Function]}
-      style={
-        Object {
-          "border": "1px solid #D5E3EF",
-          "borderRadius": "3px",
-          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
-          "boxSizing": "border-box",
-          "color": "#333333",
-          "cursor": "pointer",
-          "display": "flex",
-          "outline": "0 none",
-          "padding": "0.75rem 1rem",
-          "textAlign": "left",
-          "textDecoration": "none",
-          "textShadow": "none",
-          "width": "100%",
-        }
-      }
     >
       <span
         style={
@@ -860,11 +751,7 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
         From: 08/21/17 - To: 08/30/17
       </span>
       <span
-        style={
-          Object {
-            "marginLeft": "auto",
-          }
-        }
+        className="sc-bwzfXH eBBRbA"
       >
         <svg
           height="100%"
@@ -893,33 +780,19 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
       </span>
     </button>
     <div
-      style={
-        Object {
-          "backgroundColor": "#FFFFFF",
-          "border": "1px solid #D5E3EF",
-          "borderRadius": 3,
-          "borderWidth": "0 1px 1px",
-          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
-          "boxSizing": "border-box",
-          "display": "block",
-          "padding": "0.5rem 1rem",
-          "position": "absolute",
-          "top": "2.25rem",
-          "width": "100%",
-          "zIndex": 2,
-        }
-      }
+      className="sc-htpNat duBrKZ"
     >
       <div>
         <header
-          className="header"
+          className="sc-jTzLTM ddhgwI"
         >
           <ul
-            className="headerList"
+            className="sc-fjdhpX iXoyCj"
           >
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -964,8 +837,9 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -1010,8 +884,9 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -1057,11 +932,12 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
             </li>
           </ul>
           <ul
-            className="headerList"
+            className="sc-fjdhpX iXoyCj"
           >
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -1106,8 +982,9 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -1152,8 +1029,9 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
               </button>
             </li>
             <li
-              className="headerListItem headerListItemActive"
+              className="sc-jzJRlG fzIEaG"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -1200,107 +1078,148 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
           </ul>
         </header>
         <div
-          className="customDateRangeContainer customDateRangeContainerOpen"
+          className="sc-kpOJdX ctlwNz"
         >
           <div>
-            <h4
-              className="title"
+            <div
+              className="sc-cSHVUG WqJhG"
             >
-              Select a custom date range
-            </h4>
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                Select a custom date range:
+              </span>
+            </div>
             <form
-              className="form"
+              className="sc-chPdSV esCkuH"
             >
-              <input
-                className="startInput"
-                name="start"
-                placeholder="Date from"
-                readOnly={true}
-                type="text"
-                value="Date from: 08/21/17"
-              />
-              <button
-                aria-label={null}
-                disabled={undefined}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                style={
-                  Object {
-                    "background": "none",
-                    "backgroundColor": "unset",
-                    "border": "none",
-                    "borderRadius": "unset",
-                    "color": "unset",
-                    "cursor": "pointer",
-                    "display": "unset",
-                    "fontFamily": "unset",
-                    "fontSize": "unset",
-                    "fontWeight": "unset",
-                    "lineHeight": "unset",
-                    "margin": "unset",
-                    "outline": "none",
-                    "padding": 0,
-                    "transition": "unset",
-                  }
-                }
+              <div
+                className="sc-kgoBCf cebbaE"
               >
-                <span
-                  className="inputClear"
+                <input
+                  className="sc-kGXeez djLDiT"
+                  name="start"
+                  placeholder="Date from"
+                  readOnly={true}
+                  type="text"
+                  value="08/21/17"
+                />
+                <div
+                  className="sc-kAzzGY gHJqvz"
                 >
-                  x
-                </span>
-              </button>
-              <input
-                className="endInput"
-                name="end"
-                placeholder="Date to"
-                readOnly={true}
-                type="text"
-                value="Date to: 08/30/17"
-              />
-              <button
-                aria-label={null}
-                disabled={undefined}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                style={
-                  Object {
-                    "background": "none",
-                    "backgroundColor": "unset",
-                    "border": "none",
-                    "borderRadius": "unset",
-                    "color": "unset",
-                    "cursor": "pointer",
-                    "display": "unset",
-                    "fontFamily": "unset",
-                    "fontSize": "unset",
-                    "fontWeight": "unset",
-                    "lineHeight": "unset",
-                    "margin": "unset",
-                    "outline": "none",
-                    "padding": 0,
-                    "transition": "unset",
-                  }
-                }
+                  <button
+                    aria-label={null}
+                    disabled={undefined}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "background": "none",
+                        "backgroundColor": "unset",
+                        "border": "none",
+                        "borderRadius": "unset",
+                        "color": "unset",
+                        "cursor": "pointer",
+                        "display": "unset",
+                        "fontFamily": "unset",
+                        "fontSize": "unset",
+                        "fontWeight": "unset",
+                        "lineHeight": "unset",
+                        "margin": "unset",
+                        "outline": "none",
+                        "padding": 0,
+                        "transition": "unset",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "color": "#59626a",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 400,
+                        }
+                      }
+                    >
+                      x
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div
+                className="sc-kgoBCf cebbaE"
               >
-                <span
-                  className="inputClear"
+                <input
+                  className="sc-kGXeez djLDiT"
+                  name="end"
+                  placeholder="Date to"
+                  readOnly={true}
+                  type="text"
+                  value="08/30/17"
+                />
+                <div
+                  className="sc-kAzzGY gHJqvz"
                 >
-                  x
-                </span>
-              </button>
+                  <button
+                    aria-label={null}
+                    disabled={undefined}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "background": "none",
+                        "backgroundColor": "unset",
+                        "border": "none",
+                        "borderRadius": "unset",
+                        "color": "unset",
+                        "cursor": "pointer",
+                        "display": "unset",
+                        "fontFamily": "unset",
+                        "fontSize": "unset",
+                        "fontWeight": "unset",
+                        "lineHeight": "unset",
+                        "margin": "unset",
+                        "outline": "none",
+                        "padding": 0,
+                        "transition": "unset",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "color": "#59626a",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 400,
+                        }
+                      }
+                    >
+                      x
+                    </span>
+                  </button>
+                </div>
+              </div>
             </form>
             <aside
-              className="calendar calendarOpen"
+              className="sc-VigVT jUfrZz"
             >
               <header
-                className="header"
+                className="sc-iwsKbI AMmyE"
               >
                 <button
                   aria-label={null}
@@ -1331,7 +1250,7 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                   }
                 >
                   <i
-                    className="arrowLeft"
+                    className="sc-gZMcBi fgHZPB"
                   >
                     <svg
                       height="100%"
@@ -1359,7 +1278,18 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                     </svg>
                   </i>
                 </button>
-                August 2017
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  August 2017
+                </span>
                 <button
                   aria-label={null}
                   disabled={undefined}
@@ -1389,7 +1319,7 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                   }
                 >
                   <i
-                    className="arrowRight"
+                    className="sc-gqjmRU ejkArs"
                   >
                     <svg
                       height="100%"
@@ -1418,54 +1348,131 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                 </button>
               </header>
               <ul
-                className="dayHeaderList"
+                className="sc-dnqmqq hlRQPc"
               >
                 <li
-                  className="dayHeaderListItem"
+                  className="sc-htoDjs cOLTeV"
                 >
-                  M
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    M
+                  </span>
                 </li>
                 <li
-                  className="dayHeaderListItem"
+                  className="sc-htoDjs cOLTeV"
                 >
-                  T
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    T
+                  </span>
                 </li>
                 <li
-                  className="dayHeaderListItem"
+                  className="sc-htoDjs cOLTeV"
                 >
-                  W
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    W
+                  </span>
                 </li>
                 <li
-                  className="dayHeaderListItem"
+                  className="sc-htoDjs cOLTeV"
                 >
-                  T
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    T
+                  </span>
                 </li>
                 <li
-                  className="dayHeaderListItem"
+                  className="sc-htoDjs cOLTeV"
                 >
-                  F
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    F
+                  </span>
                 </li>
                 <li
-                  className="dayHeaderListItem"
+                  className="sc-htoDjs cOLTeV"
                 >
-                  S
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    S
+                  </span>
                 </li>
                 <li
-                  className="dayHeaderListItem"
+                  className="sc-htoDjs cOLTeV"
                 >
-                  S
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    S
+                  </span>
                 </li>
               </ul>
               <div>
                 <div
-                  className="week"
+                  className="sc-gzVnrw bLrxjN"
                 >
                   <div
-                    className="day inactiveDay"
+                    className="sc-bxivhb hTLBko"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -1496,21 +1503,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        31
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          31
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -1541,21 +1562,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        1
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          1
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -1586,21 +1621,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        2
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          2
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -1631,21 +1680,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        3
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          3
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -1676,21 +1739,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        4
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          4
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -1721,21 +1798,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        5
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          5
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -1766,25 +1857,39 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        6
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          6
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                 </div>
                 <div
-                  className="week"
+                  className="sc-gzVnrw bLrxjN"
                 >
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -1815,21 +1920,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        7
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          7
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -1860,21 +1979,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        8
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          8
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -1905,21 +2038,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        9
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          9
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -1950,21 +2097,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        10
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          10
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -1995,21 +2156,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        11
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          11
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -2040,21 +2215,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        12
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          12
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -2085,25 +2274,39 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        13
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          13
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                 </div>
                 <div
-                  className="week"
+                  className="sc-gzVnrw bLrxjN"
                 >
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -2134,21 +2337,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        14
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          14
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -2179,21 +2396,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        15
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          15
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -2224,21 +2455,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        16
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          16
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -2269,21 +2514,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        17
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          17
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -2314,21 +2573,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        18
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          18
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -2359,21 +2632,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        19
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          19
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -2404,25 +2691,39 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        20
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          20
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                 </div>
                 <div
-                  className="week"
+                  className="sc-gzVnrw bLrxjN"
                 >
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -2453,21 +2754,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker selectedMarker startMarker"
+                        className="sc-ifAKCX iFdFev"
+                        end={false}
+                        selected={true}
+                        start={true}
                       >
-                        21
+                        <span
+                          style={
+                            Object {
+                              "color": "#fff",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          21
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector markerConectorActive"
+                      className="sc-bZQynM gjBxvj"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector markerConectorActive"
+                      className="sc-EHOje jYFraO"
                     />
                     <button
                       aria-label={null}
@@ -2498,21 +2813,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker selectedMarker startMarker endMarker"
+                        className="sc-ifAKCX jkjqgp"
+                        end={true}
+                        selected={true}
+                        start={true}
                       >
-                        22
+                        <span
+                          style={
+                            Object {
+                              "color": "#fff",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          22
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector markerConectorActive"
+                      className="sc-bZQynM gjBxvj"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector markerConectorActive"
+                      className="sc-EHOje jYFraO"
                     />
                     <button
                       aria-label={null}
@@ -2543,21 +2872,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker selectedMarker startMarker endMarker"
+                        className="sc-ifAKCX jkjqgp"
+                        end={true}
+                        selected={true}
+                        start={true}
                       >
-                        23
+                        <span
+                          style={
+                            Object {
+                              "color": "#fff",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          23
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector markerConectorActive"
+                      className="sc-bZQynM gjBxvj"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector markerConectorActive"
+                      className="sc-EHOje jYFraO"
                     />
                     <button
                       aria-label={null}
@@ -2588,21 +2931,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker selectedMarker startMarker endMarker"
+                        className="sc-ifAKCX jkjqgp"
+                        end={true}
+                        selected={true}
+                        start={true}
                       >
-                        24
+                        <span
+                          style={
+                            Object {
+                              "color": "#fff",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          24
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector markerConectorActive"
+                      className="sc-bZQynM gjBxvj"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector markerConectorActive"
+                      className="sc-EHOje jYFraO"
                     />
                     <button
                       aria-label={null}
@@ -2633,21 +2990,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker selectedMarker startMarker endMarker"
+                        className="sc-ifAKCX jkjqgp"
+                        end={true}
+                        selected={true}
+                        start={true}
                       >
-                        25
+                        <span
+                          style={
+                            Object {
+                              "color": "#fff",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          25
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector markerConectorActive"
+                      className="sc-bZQynM gjBxvj"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector markerConectorActive"
+                      className="sc-EHOje jYFraO"
                     />
                     <button
                       aria-label={null}
@@ -2678,21 +3049,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker selectedMarker startMarker endMarker"
+                        className="sc-ifAKCX jkjqgp"
+                        end={true}
+                        selected={true}
+                        start={true}
                       >
-                        26
+                        <span
+                          style={
+                            Object {
+                              "color": "#fff",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          26
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector markerConectorActive"
+                      className="sc-bZQynM gjBxvj"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector markerConectorActive"
+                      className="sc-EHOje jYFraO"
                     />
                     <button
                       aria-label={null}
@@ -2723,25 +3108,39 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker selectedMarker startMarker endMarker"
+                        className="sc-ifAKCX jkjqgp"
+                        end={true}
+                        selected={true}
+                        start={true}
                       >
-                        27
+                        <span
+                          style={
+                            Object {
+                              "color": "#fff",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          27
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector markerConectorActive roundEndMarker"
+                      className="sc-bZQynM fvQyNj"
                     />
                   </div>
                 </div>
                 <div
-                  className="week"
+                  className="sc-gzVnrw bLrxjN"
                 >
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector markerConectorActive roundStartMarker"
+                      className="sc-EHOje eExdhy"
                     />
                     <button
                       aria-label={null}
@@ -2772,21 +3171,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker selectedMarker startMarker endMarker"
+                        className="sc-ifAKCX jkjqgp"
+                        end={true}
+                        selected={true}
+                        start={true}
                       >
-                        28
+                        <span
+                          style={
+                            Object {
+                              "color": "#fff",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          28
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector markerConectorActive"
+                      className="sc-bZQynM gjBxvj"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector markerConectorActive"
+                      className="sc-EHOje jYFraO"
                     />
                     <button
                       aria-label={null}
@@ -2817,21 +3230,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker selectedMarker startMarker endMarker"
+                        className="sc-ifAKCX jkjqgp"
+                        end={true}
+                        selected={true}
+                        start={true}
                       >
-                        29
+                        <span
+                          style={
+                            Object {
+                              "color": "#fff",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          29
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector markerConectorActive"
+                      className="sc-bZQynM gjBxvj"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector markerConectorActive"
+                      className="sc-EHOje jYFraO"
                     />
                     <button
                       aria-label={null}
@@ -2862,21 +3289,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker hoverMarker selectedMarker endMarker"
+                        className="sc-ifAKCX schmj"
+                        end={true}
+                        selected={true}
+                        start={false}
                       >
-                        30
+                        <span
+                          style={
+                            Object {
+                              "color": "#fff",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          30
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day inactiveDay"
+                    className="sc-bxivhb hTLBko"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -2907,21 +3348,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker todayMarker"
+                        className="sc-ifAKCX dxmgGe"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        31
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          31
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day inactiveDay"
+                    className="sc-bxivhb hTLBko"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -2952,21 +3407,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        1
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          1
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day inactiveDay"
+                    className="sc-bxivhb hTLBko"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -2997,21 +3466,35 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        2
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          2
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day inactiveDay"
+                    className="sc-bxivhb hTLBko"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -3042,42 +3525,72 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
                       }
                     >
                       <span
-                        className="marker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        3
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          3
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                 </div>
               </div>
             </aside>
-            <button
-              className="submitButton"
-              onClick={[Function]}
+            <div
+              className="sc-dxgOiQ lemvFY"
             >
-              Apply This Date Range
-            </button>
+              <button
+                aria-label={null}
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "#168eea",
+                    "border": "0.063rem solid transparent",
+                    "borderRadius": "2rem",
+                    "color": "#fff",
+                    "cursor": "pointer",
+                    "display": "inline-block",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
+                    "fontWeight": 400,
+                    "margin": "0",
+                    "outline": "none",
+                    "padding": "0.5rem 2rem",
+                    "transition": "background-color 0.2s linear",
+                  }
+                }
+              >
+                Apply This Date Range
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div
+      className="sc-jKJlTe bejxfx"
       onClick={undefined}
       role="button"
-      style={
-        Object {
-          "bottom": 0,
-          "display": "block",
-          "left": 0,
-          "position": "fixed",
-          "right": 0,
-          "top": 0,
-          "zIndex": 1,
-        }
-      }
       tabIndex="0"
     />
   </div>
@@ -3087,33 +3600,12 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
 exports[`Snapshots DatePicker should display a calendar without a selected date range 1`] = `
 <span>
   <div
-    style={
-      Object {
-        "position": "relative",
-        "width": "16rem",
-      }
-    }
+    className="sc-ckVGcZ jbcifS"
   >
     <button
+      className="sc-bdVaJa gFDTaL"
       disabled={false}
       onClick={[Function]}
-      style={
-        Object {
-          "border": "1px solid #D5E3EF",
-          "borderRadius": "3px",
-          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
-          "boxSizing": "border-box",
-          "color": "#333333",
-          "cursor": "pointer",
-          "display": "flex",
-          "outline": "0 none",
-          "padding": "0.75rem 1rem",
-          "textAlign": "left",
-          "textDecoration": "none",
-          "textShadow": "none",
-          "width": "100%",
-        }
-      }
     >
       <span
         style={
@@ -3128,11 +3620,7 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
         Custom
       </span>
       <span
-        style={
-          Object {
-            "marginLeft": "auto",
-          }
-        }
+        className="sc-bwzfXH eBBRbA"
       >
         <svg
           height="100%"
@@ -3161,33 +3649,19 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
       </span>
     </button>
     <div
-      style={
-        Object {
-          "backgroundColor": "#FFFFFF",
-          "border": "1px solid #D5E3EF",
-          "borderRadius": 3,
-          "borderWidth": "0 1px 1px",
-          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
-          "boxSizing": "border-box",
-          "display": "block",
-          "padding": "0.5rem 1rem",
-          "position": "absolute",
-          "top": "2.25rem",
-          "width": "100%",
-          "zIndex": 2,
-        }
-      }
+      className="sc-htpNat duBrKZ"
     >
       <div>
         <header
-          className="header"
+          className="sc-jTzLTM ddhgwI"
         >
           <ul
-            className="headerList"
+            className="sc-fjdhpX iXoyCj"
           >
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -3232,8 +3706,9 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -3278,8 +3753,9 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -3325,11 +3801,12 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
             </li>
           </ul>
           <ul
-            className="headerList"
+            className="sc-fjdhpX iXoyCj"
           >
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -3374,8 +3851,9 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -3420,8 +3898,9 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
               </button>
             </li>
             <li
-              className="headerListItem headerListItemActive"
+              className="sc-jzJRlG fzIEaG"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -3468,107 +3947,148 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
           </ul>
         </header>
         <div
-          className="customDateRangeContainer customDateRangeContainerOpen"
+          className="sc-kpOJdX ctlwNz"
         >
           <div>
-            <h4
-              className="title"
+            <div
+              className="sc-cSHVUG WqJhG"
             >
-              Select a custom date range
-            </h4>
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                Select a custom date range:
+              </span>
+            </div>
             <form
-              className="form"
+              className="sc-chPdSV esCkuH"
             >
-              <input
-                className="startInput inputFocus"
-                name="start"
-                placeholder="Date from"
-                readOnly={true}
-                type="text"
-                value=""
-              />
-              <button
-                aria-label={null}
-                disabled={undefined}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                style={
-                  Object {
-                    "background": "none",
-                    "backgroundColor": "unset",
-                    "border": "none",
-                    "borderRadius": "unset",
-                    "color": "unset",
-                    "cursor": "pointer",
-                    "display": "unset",
-                    "fontFamily": "unset",
-                    "fontSize": "unset",
-                    "fontWeight": "unset",
-                    "lineHeight": "unset",
-                    "margin": "unset",
-                    "outline": "none",
-                    "padding": 0,
-                    "transition": "unset",
-                  }
-                }
+              <div
+                className="sc-kgoBCf cebbaE"
               >
-                <span
-                  className="inputClear"
+                <input
+                  className="sc-kGXeez djLDiT"
+                  name="start"
+                  placeholder="Date from"
+                  readOnly={true}
+                  type="text"
+                  value=""
+                />
+                <div
+                  className="sc-kAzzGY gHJqvz"
                 >
-                  x
-                </span>
-              </button>
-              <input
-                className="endInput"
-                name="end"
-                placeholder="Date to"
-                readOnly={true}
-                type="text"
-                value=""
-              />
-              <button
-                aria-label={null}
-                disabled={undefined}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                style={
-                  Object {
-                    "background": "none",
-                    "backgroundColor": "unset",
-                    "border": "none",
-                    "borderRadius": "unset",
-                    "color": "unset",
-                    "cursor": "pointer",
-                    "display": "unset",
-                    "fontFamily": "unset",
-                    "fontSize": "unset",
-                    "fontWeight": "unset",
-                    "lineHeight": "unset",
-                    "margin": "unset",
-                    "outline": "none",
-                    "padding": 0,
-                    "transition": "unset",
-                  }
-                }
+                  <button
+                    aria-label={null}
+                    disabled={undefined}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "background": "none",
+                        "backgroundColor": "unset",
+                        "border": "none",
+                        "borderRadius": "unset",
+                        "color": "unset",
+                        "cursor": "pointer",
+                        "display": "unset",
+                        "fontFamily": "unset",
+                        "fontSize": "unset",
+                        "fontWeight": "unset",
+                        "lineHeight": "unset",
+                        "margin": "unset",
+                        "outline": "none",
+                        "padding": 0,
+                        "transition": "unset",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "color": "#59626a",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 400,
+                        }
+                      }
+                    >
+                      x
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div
+                className="sc-kgoBCf cebbaE"
               >
-                <span
-                  className="inputClear"
+                <input
+                  className="sc-kGXeez djLDiT"
+                  name="end"
+                  placeholder="Date to"
+                  readOnly={true}
+                  type="text"
+                  value=""
+                />
+                <div
+                  className="sc-kAzzGY gHJqvz"
                 >
-                  x
-                </span>
-              </button>
+                  <button
+                    aria-label={null}
+                    disabled={undefined}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "background": "none",
+                        "backgroundColor": "unset",
+                        "border": "none",
+                        "borderRadius": "unset",
+                        "color": "unset",
+                        "cursor": "pointer",
+                        "display": "unset",
+                        "fontFamily": "unset",
+                        "fontSize": "unset",
+                        "fontWeight": "unset",
+                        "lineHeight": "unset",
+                        "margin": "unset",
+                        "outline": "none",
+                        "padding": 0,
+                        "transition": "unset",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "color": "#59626a",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 400,
+                        }
+                      }
+                    >
+                      x
+                    </span>
+                  </button>
+                </div>
+              </div>
             </form>
             <aside
-              className="calendar calendarOpen"
+              className="sc-VigVT jUfrZz"
             >
               <header
-                className="header"
+                className="sc-iwsKbI AMmyE"
               >
                 <button
                   aria-label={null}
@@ -3599,7 +4119,7 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                   }
                 >
                   <i
-                    className="arrowLeft"
+                    className="sc-gZMcBi fgHZPB"
                   >
                     <svg
                       height="100%"
@@ -3627,7 +4147,18 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                     </svg>
                   </i>
                 </button>
-                August 2017
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  August 2017
+                </span>
                 <button
                   aria-label={null}
                   disabled={undefined}
@@ -3657,7 +4188,7 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                   }
                 >
                   <i
-                    className="arrowRight"
+                    className="sc-gqjmRU ejkArs"
                   >
                     <svg
                       height="100%"
@@ -3686,54 +4217,131 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                 </button>
               </header>
               <ul
-                className="dayHeaderList"
+                className="sc-dnqmqq hlRQPc"
               >
                 <li
-                  className="dayHeaderListItem"
+                  className="sc-htoDjs cOLTeV"
                 >
-                  M
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    M
+                  </span>
                 </li>
                 <li
-                  className="dayHeaderListItem"
+                  className="sc-htoDjs cOLTeV"
                 >
-                  T
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    T
+                  </span>
                 </li>
                 <li
-                  className="dayHeaderListItem"
+                  className="sc-htoDjs cOLTeV"
                 >
-                  W
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    W
+                  </span>
                 </li>
                 <li
-                  className="dayHeaderListItem"
+                  className="sc-htoDjs cOLTeV"
                 >
-                  T
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    T
+                  </span>
                 </li>
                 <li
-                  className="dayHeaderListItem"
+                  className="sc-htoDjs cOLTeV"
                 >
-                  F
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    F
+                  </span>
                 </li>
                 <li
-                  className="dayHeaderListItem"
+                  className="sc-htoDjs cOLTeV"
                 >
-                  S
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    S
+                  </span>
                 </li>
                 <li
-                  className="dayHeaderListItem"
+                  className="sc-htoDjs cOLTeV"
                 >
-                  S
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    S
+                  </span>
                 </li>
               </ul>
               <div>
                 <div
-                  className="week"
+                  className="sc-gzVnrw bLrxjN"
                 >
                   <div
-                    className="day inactiveDay"
+                    className="sc-bxivhb hTLBko"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -3764,21 +4372,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        31
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          31
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -3809,21 +4431,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        1
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          1
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -3854,21 +4490,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        2
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          2
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -3899,21 +4549,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        3
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          3
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -3944,21 +4608,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        4
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          4
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -3989,21 +4667,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        5
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          5
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -4034,25 +4726,39 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        6
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          6
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                 </div>
                 <div
-                  className="week"
+                  className="sc-gzVnrw bLrxjN"
                 >
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -4083,21 +4789,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        7
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          7
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -4128,21 +4848,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        8
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          8
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -4173,21 +4907,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        9
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          9
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -4218,21 +4966,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        10
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          10
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -4263,21 +5025,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        11
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          11
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -4308,21 +5084,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        12
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          12
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -4353,25 +5143,39 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        13
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          13
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                 </div>
                 <div
-                  className="week"
+                  className="sc-gzVnrw bLrxjN"
                 >
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -4402,21 +5206,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        14
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          14
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -4447,21 +5265,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        15
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          15
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -4492,21 +5324,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        16
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          16
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -4537,21 +5383,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        17
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          17
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -4582,21 +5442,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        18
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          18
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -4627,21 +5501,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        19
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          19
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -4672,25 +5560,39 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        20
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          20
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                 </div>
                 <div
-                  className="week"
+                  className="sc-gzVnrw bLrxjN"
                 >
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -4721,21 +5623,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        21
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          21
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -4766,21 +5682,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        22
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          22
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -4811,21 +5741,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        23
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          23
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -4856,21 +5800,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        24
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          24
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -4901,21 +5859,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        25
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          25
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -4946,21 +5918,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        26
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          26
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -4991,25 +5977,39 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        27
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          27
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                 </div>
                 <div
-                  className="week"
+                  className="sc-gzVnrw bLrxjN"
                 >
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -5040,21 +6040,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        28
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          28
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -5085,21 +6099,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        29
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          29
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day"
+                    className="sc-bxivhb ljKwLw"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -5130,21 +6158,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker hoverMarker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        30
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          30
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day inactiveDay"
+                    className="sc-bxivhb hTLBko"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -5175,21 +6217,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker todayMarker"
+                        className="sc-ifAKCX dxmgGe"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        31
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          31
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day inactiveDay"
+                    className="sc-bxivhb hTLBko"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -5220,21 +6276,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        1
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          1
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day inactiveDay"
+                    className="sc-bxivhb hTLBko"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -5265,21 +6335,35 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        2
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          2
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                   <div
-                    className="day inactiveDay"
+                    className="sc-bxivhb hTLBko"
                     data-tip=""
                   >
                     <span
-                      className="markerConnector"
+                      className="sc-EHOje eVyIde"
                     />
                     <button
                       aria-label={null}
@@ -5310,42 +6394,73 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
                       }
                     >
                       <span
-                        className="marker"
+                        className="sc-ifAKCX jtnopR"
+                        end={false}
+                        selected={false}
+                        start={false}
                       >
-                        3
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          3
+                        </span>
                       </span>
                     </button>
                     <span
-                      className="markerConnector"
+                      className="sc-bZQynM dyJPdE"
                     />
                   </div>
                 </div>
               </div>
             </aside>
-            <button
-              className="submitButtonDisabled"
-              onClick={[Function]}
+            <div
+              className="sc-dxgOiQ lemvFY"
             >
-              Apply This Date Range
-            </button>
+              <button
+                aria-label={null}
+                disabled={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "#168eea",
+                    "border": "0.063rem solid transparent",
+                    "borderRadius": "2rem",
+                    "color": "#fff",
+                    "cursor": "pointer",
+                    "display": "inline-block",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
+                    "fontWeight": 400,
+                    "margin": "0",
+                    "opacity": 0.3,
+                    "outline": "none",
+                    "padding": "0.5rem 2rem",
+                    "transition": "background-color 0.2s linear",
+                  }
+                }
+              >
+                Apply This Date Range
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div
+      className="sc-jKJlTe bejxfx"
       onClick={undefined}
       role="button"
-      style={
-        Object {
-          "bottom": 0,
-          "display": "block",
-          "left": 0,
-          "position": "fixed",
-          "right": 0,
-          "top": 0,
-          "zIndex": 1,
-        }
-      }
       tabIndex="0"
     />
   </div>
@@ -5355,33 +6470,12 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
 exports[`Snapshots DatePicker should display some options as disabled 1`] = `
 <span>
   <div
-    style={
-      Object {
-        "position": "relative",
-        "width": "16rem",
-      }
-    }
+    className="sc-ckVGcZ jbcifS"
   >
     <button
+      className="sc-bdVaJa gFDTaL"
       disabled={false}
       onClick={[Function]}
-      style={
-        Object {
-          "border": "1px solid #D5E3EF",
-          "borderRadius": "3px",
-          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
-          "boxSizing": "border-box",
-          "color": "#333333",
-          "cursor": "pointer",
-          "display": "flex",
-          "outline": "0 none",
-          "padding": "0.75rem 1rem",
-          "textAlign": "left",
-          "textDecoration": "none",
-          "textShadow": "none",
-          "width": "100%",
-        }
-      }
     >
       <span
         style={
@@ -5396,11 +6490,7 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
         Past 7 Days
       </span>
       <span
-        style={
-          Object {
-            "marginLeft": "auto",
-          }
-        }
+        className="sc-bwzfXH eBBRbA"
       >
         <svg
           height="100%"
@@ -5429,33 +6519,19 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
       </span>
     </button>
     <div
-      style={
-        Object {
-          "backgroundColor": "#FFFFFF",
-          "border": "1px solid #D5E3EF",
-          "borderRadius": 3,
-          "borderWidth": "0 1px 1px",
-          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
-          "boxSizing": "border-box",
-          "display": "block",
-          "padding": "0.5rem 1rem",
-          "position": "absolute",
-          "top": "2.25rem",
-          "width": "100%",
-          "zIndex": 2,
-        }
-      }
+      className="sc-htpNat duBrKZ"
     >
       <div>
         <header
-          className="header"
+          className="sc-jTzLTM ddhgwI"
         >
           <ul
-            className="headerList"
+            className="sc-fjdhpX iXoyCj"
           >
             <li
-              className="headerListItem headerListItemInactive headerListItemDisabled"
+              className="sc-jzJRlG bbnXZj"
               data-tip="We don't have complete data for this range."
+              disabled={true}
             >
               <button
                 aria-label={null}
@@ -5500,8 +6576,9 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive headerListItemDisabled"
+              className="sc-jzJRlG bbnXZj"
               data-tip="We don't have complete data for this range."
+              disabled={true}
             >
               <button
                 aria-label={null}
@@ -5546,8 +6623,9 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -5593,11 +6671,12 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
             </li>
           </ul>
           <ul
-            className="headerList"
+            className="sc-fjdhpX iXoyCj"
           >
             <li
-              className="headerListItem headerListItemActive"
+              className="sc-jzJRlG fzIEaG"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -5642,8 +6721,9 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -5688,8 +6768,9 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -5736,24 +6817,14 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
           </ul>
         </header>
         <div
-          className="customDateRangeContainer"
+          className="sc-kpOJdX jxdMrm"
         />
       </div>
     </div>
     <div
+      className="sc-jKJlTe bejxfx"
       onClick={[Function]}
       role="button"
-      style={
-        Object {
-          "bottom": 0,
-          "display": "block",
-          "left": 0,
-          "position": "fixed",
-          "right": 0,
-          "top": 0,
-          "zIndex": 1,
-        }
-      }
       tabIndex="0"
     />
   </div>
@@ -5763,33 +6834,12 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
 exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
 <span>
   <div
-    style={
-      Object {
-        "position": "relative",
-        "width": "16rem",
-      }
-    }
+    className="sc-ckVGcZ jbcifS"
   >
     <button
+      className="sc-bdVaJa gFDTaL"
       disabled={false}
       onClick={[Function]}
-      style={
-        Object {
-          "border": "1px solid #D5E3EF",
-          "borderRadius": "3px",
-          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
-          "boxSizing": "border-box",
-          "color": "#333333",
-          "cursor": "pointer",
-          "display": "flex",
-          "outline": "0 none",
-          "padding": "0.75rem 1rem",
-          "textAlign": "left",
-          "textDecoration": "none",
-          "textShadow": "none",
-          "width": "100%",
-        }
-      }
     >
       <span
         style={
@@ -5804,11 +6854,7 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
         Past 7 Days
       </span>
       <span
-        style={
-          Object {
-            "marginLeft": "auto",
-          }
-        }
+        className="sc-bwzfXH eBBRbA"
       >
         <svg
           height="100%"
@@ -5837,33 +6883,19 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
       </span>
     </button>
     <div
-      style={
-        Object {
-          "backgroundColor": "#FFFFFF",
-          "border": "1px solid #D5E3EF",
-          "borderRadius": 3,
-          "borderWidth": "0 1px 1px",
-          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
-          "boxSizing": "border-box",
-          "display": "none",
-          "padding": "0.5rem 1rem",
-          "position": "absolute",
-          "top": "2.25rem",
-          "width": "100%",
-          "zIndex": 2,
-        }
-      }
+      className="sc-htpNat fWujPp"
     >
       <div>
         <header
-          className="header"
+          className="sc-jTzLTM ddhgwI"
         >
           <ul
-            className="headerList"
+            className="sc-fjdhpX iXoyCj"
           >
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -5908,8 +6940,9 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -5954,8 +6987,9 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -6001,11 +7035,12 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
             </li>
           </ul>
           <ul
-            className="headerList"
+            className="sc-fjdhpX iXoyCj"
           >
             <li
-              className="headerListItem headerListItemActive"
+              className="sc-jzJRlG fzIEaG"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -6050,8 +7085,9 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -6096,8 +7132,9 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -6144,24 +7181,14 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
           </ul>
         </header>
         <div
-          className="customDateRangeContainer"
+          className="sc-kpOJdX jxdMrm"
         />
       </div>
     </div>
     <div
+      className="sc-jKJlTe gRJUDO"
       onClick={undefined}
       role="button"
-      style={
-        Object {
-          "bottom": 0,
-          "display": "none",
-          "left": 0,
-          "position": "fixed",
-          "right": 0,
-          "top": 0,
-          "zIndex": 1,
-        }
-      }
       tabIndex="0"
     />
   </div>
@@ -6171,33 +7198,12 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
 exports[`Snapshots DatePicker should not be open 1`] = `
 <span>
   <div
-    style={
-      Object {
-        "position": "relative",
-        "width": "16rem",
-      }
-    }
+    className="sc-ckVGcZ jbcifS"
   >
     <button
+      className="sc-bdVaJa gFDTaL"
       disabled={false}
       onClick={[Function]}
-      style={
-        Object {
-          "border": "1px solid #D5E3EF",
-          "borderRadius": "3px",
-          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
-          "boxSizing": "border-box",
-          "color": "#333333",
-          "cursor": "pointer",
-          "display": "flex",
-          "outline": "0 none",
-          "padding": "0.75rem 1rem",
-          "textAlign": "left",
-          "textDecoration": "none",
-          "textShadow": "none",
-          "width": "100%",
-        }
-      }
     >
       <span
         style={
@@ -6212,11 +7218,7 @@ exports[`Snapshots DatePicker should not be open 1`] = `
         Yesterday
       </span>
       <span
-        style={
-          Object {
-            "marginLeft": "auto",
-          }
-        }
+        className="sc-bwzfXH eBBRbA"
       >
         <svg
           height="100%"
@@ -6245,33 +7247,19 @@ exports[`Snapshots DatePicker should not be open 1`] = `
       </span>
     </button>
     <div
-      style={
-        Object {
-          "backgroundColor": "#FFFFFF",
-          "border": "1px solid #D5E3EF",
-          "borderRadius": 3,
-          "borderWidth": "0 1px 1px",
-          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
-          "boxSizing": "border-box",
-          "display": "none",
-          "padding": "0.5rem 1rem",
-          "position": "absolute",
-          "top": "2.25rem",
-          "width": "100%",
-          "zIndex": 2,
-        }
-      }
+      className="sc-htpNat fWujPp"
     >
       <div>
         <header
-          className="header"
+          className="sc-jTzLTM ddhgwI"
         >
           <ul
-            className="headerList"
+            className="sc-fjdhpX iXoyCj"
           >
             <li
-              className="headerListItem headerListItemInactive headerListItemDisabled"
+              className="sc-jzJRlG bbnXZj"
               data-tip="We don't have complete data for this range."
+              disabled={true}
             >
               <button
                 aria-label={null}
@@ -6316,8 +7304,9 @@ exports[`Snapshots DatePicker should not be open 1`] = `
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive headerListItemDisabled"
+              className="sc-jzJRlG bbnXZj"
               data-tip="We don't have complete data for this range."
+              disabled={true}
             >
               <button
                 aria-label={null}
@@ -6362,8 +7351,9 @@ exports[`Snapshots DatePicker should not be open 1`] = `
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive headerListItemDisabled"
+              className="sc-jzJRlG bbnXZj"
               data-tip="We don't have complete data for this range."
+              disabled={true}
             >
               <button
                 aria-label={null}
@@ -6409,11 +7399,12 @@ exports[`Snapshots DatePicker should not be open 1`] = `
             </li>
           </ul>
           <ul
-            className="headerList"
+            className="sc-fjdhpX iXoyCj"
           >
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -6458,8 +7449,9 @@ exports[`Snapshots DatePicker should not be open 1`] = `
               </button>
             </li>
             <li
-              className="headerListItem headerListItemActive"
+              className="sc-jzJRlG fzIEaG"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -6504,8 +7496,9 @@ exports[`Snapshots DatePicker should not be open 1`] = `
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -6552,24 +7545,14 @@ exports[`Snapshots DatePicker should not be open 1`] = `
           </ul>
         </header>
         <div
-          className="customDateRangeContainer"
+          className="sc-kpOJdX jxdMrm"
         />
       </div>
     </div>
     <div
+      className="sc-jKJlTe gRJUDO"
       onClick={undefined}
       role="button"
-      style={
-        Object {
-          "bottom": 0,
-          "display": "none",
-          "left": 0,
-          "position": "fixed",
-          "right": 0,
-          "top": 0,
-          "zIndex": 1,
-        }
-      }
       tabIndex="0"
     />
   </div>
@@ -6579,34 +7562,12 @@ exports[`Snapshots DatePicker should not be open 1`] = `
 exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
 <span>
   <div
-    style={
-      Object {
-        "position": "relative",
-        "width": "16rem",
-      }
-    }
+    className="sc-ckVGcZ jbcifS"
   >
     <button
+      className="sc-bdVaJa hvBhFe"
       disabled={true}
       onClick={[Function]}
-      style={
-        Object {
-          "border": "1px solid #D5E3EF",
-          "borderRadius": "3px",
-          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
-          "boxSizing": "border-box",
-          "color": "#333333",
-          "cursor": "pointer",
-          "display": "flex",
-          "outline": "0 none",
-          "padding": "0.75rem 1rem",
-          "pointerEvents": "none",
-          "textAlign": "left",
-          "textDecoration": "none",
-          "textShadow": "none",
-          "width": "100%",
-        }
-      }
     >
       <span
         style={
@@ -6622,33 +7583,19 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
       </span>
     </button>
     <div
-      style={
-        Object {
-          "backgroundColor": "#FFFFFF",
-          "border": "1px solid #D5E3EF",
-          "borderRadius": 3,
-          "borderWidth": "0 1px 1px",
-          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
-          "boxSizing": "border-box",
-          "display": "none",
-          "padding": "0.5rem 1rem",
-          "position": "absolute",
-          "top": "2.25rem",
-          "width": "100%",
-          "zIndex": 2,
-        }
-      }
+      className="sc-htpNat fWujPp"
     >
       <div>
         <header
-          className="header"
+          className="sc-jTzLTM ddhgwI"
         >
           <ul
-            className="headerList"
+            className="sc-fjdhpX iXoyCj"
           >
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -6693,8 +7640,9 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -6739,8 +7687,9 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -6786,11 +7735,12 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
             </li>
           </ul>
           <ul
-            className="headerList"
+            className="sc-fjdhpX iXoyCj"
           >
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -6835,8 +7785,9 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -6881,8 +7832,9 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
               </button>
             </li>
             <li
-              className="headerListItem headerListItemActive"
+              className="sc-jzJRlG fzIEaG"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -6929,24 +7881,14 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
           </ul>
         </header>
         <div
-          className="customDateRangeContainer"
+          className="sc-kpOJdX jxdMrm"
         />
       </div>
     </div>
     <div
+      className="sc-jKJlTe gRJUDO"
       onClick={undefined}
       role="button"
-      style={
-        Object {
-          "bottom": 0,
-          "display": "none",
-          "left": 0,
-          "position": "fixed",
-          "right": 0,
-          "top": 0,
-          "zIndex": 1,
-        }
-      }
       tabIndex="0"
     />
   </div>
@@ -6956,33 +7898,12 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
 exports[`Snapshots DatePicker there is no date if a single day is selected 1`] = `
 <span>
   <div
-    style={
-      Object {
-        "position": "relative",
-        "width": "16rem",
-      }
-    }
+    className="sc-ckVGcZ jbcifS"
   >
     <button
+      className="sc-bdVaJa gFDTaL"
       disabled={false}
       onClick={[Function]}
-      style={
-        Object {
-          "border": "1px solid #D5E3EF",
-          "borderRadius": "3px",
-          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
-          "boxSizing": "border-box",
-          "color": "#333333",
-          "cursor": "pointer",
-          "display": "flex",
-          "outline": "0 none",
-          "padding": "0.75rem 1rem",
-          "textAlign": "left",
-          "textDecoration": "none",
-          "textShadow": "none",
-          "width": "100%",
-        }
-      }
     >
       <span
         style={
@@ -6997,11 +7918,7 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
         Yesterday
       </span>
       <span
-        style={
-          Object {
-            "marginLeft": "auto",
-          }
-        }
+        className="sc-bwzfXH eBBRbA"
       >
         <svg
           height="100%"
@@ -7030,33 +7947,19 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
       </span>
     </button>
     <div
-      style={
-        Object {
-          "backgroundColor": "#FFFFFF",
-          "border": "1px solid #D5E3EF",
-          "borderRadius": 3,
-          "borderWidth": "0 1px 1px",
-          "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
-          "boxSizing": "border-box",
-          "display": "block",
-          "padding": "0.5rem 1rem",
-          "position": "absolute",
-          "top": "2.25rem",
-          "width": "100%",
-          "zIndex": 2,
-        }
-      }
+      className="sc-htpNat duBrKZ"
     >
       <div>
         <header
-          className="header"
+          className="sc-jTzLTM ddhgwI"
         >
           <ul
-            className="headerList"
+            className="sc-fjdhpX iXoyCj"
           >
             <li
-              className="headerListItem headerListItemInactive headerListItemDisabled"
+              className="sc-jzJRlG bbnXZj"
               data-tip="We don't have complete data for this range."
+              disabled={true}
             >
               <button
                 aria-label={null}
@@ -7101,8 +8004,9 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive headerListItemDisabled"
+              className="sc-jzJRlG bbnXZj"
               data-tip="We don't have complete data for this range."
+              disabled={true}
             >
               <button
                 aria-label={null}
@@ -7147,8 +8051,9 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive headerListItemDisabled"
+              className="sc-jzJRlG bbnXZj"
               data-tip="We don't have complete data for this range."
+              disabled={true}
             >
               <button
                 aria-label={null}
@@ -7194,11 +8099,12 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
             </li>
           </ul>
           <ul
-            className="headerList"
+            className="sc-fjdhpX iXoyCj"
           >
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -7243,8 +8149,9 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
               </button>
             </li>
             <li
-              className="headerListItem headerListItemActive"
+              className="sc-jzJRlG fzIEaG"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -7289,8 +8196,9 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
               </button>
             </li>
             <li
-              className="headerListItem headerListItemInactive"
+              className="sc-jzJRlG loxEQY"
               data-tip={null}
+              disabled={false}
             >
               <button
                 aria-label={null}
@@ -7337,24 +8245,14 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
           </ul>
         </header>
         <div
-          className="customDateRangeContainer"
+          className="sc-kpOJdX jxdMrm"
         />
       </div>
     </div>
     <div
+      className="sc-jKJlTe bejxfx"
       onClick={undefined}
       role="button"
-      style={
-        Object {
-          "bottom": 0,
-          "display": "block",
-          "left": 0,
-          "position": "fixed",
-          "right": 0,
-          "top": 0,
-          "zIndex": 1,
-        }
-      }
       tabIndex="0"
     />
   </div>
