@@ -3,6 +3,7 @@ import moment from 'moment-timezone';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
 import createStore, { history } from '@bufferapp/analyze-store';
+import { actions } from '@bufferapp/analyze-date-picker';
 import { Provider } from 'react-redux';
 import {
   ConnectedRouter as Router,
@@ -10,18 +11,30 @@ import {
 
 import ReportsPage from './index';
 
-const mockTimestamp = moment('2017-11-05').tz('etc/UTC').valueOf();
-Date.now = () => mockTimestamp;
-
 storiesOf('ReportsPage')
   .addDecorator(checkA11y)
-  .addDecorator(getStory =>
-    <Provider store={createStore()}>
-      <Router history={history}>
-        {getStory()}
-      </Router>
-    </Provider>,
-  )
+  .addDecorator((getStory) => {
+    const store = createStore();
+    store.dispatch(
+      actions.setDateRange(
+        moment('2017-11-05')
+        .subtract('7', 'days')
+        .tz('etc/UTC')
+        .unix(),
+        moment('2017-11-05')
+        .subtract('1', 'days')
+        .tz('etc/UTC')
+        .unix(),
+      ),
+    );
+    return (
+      <Provider store={store}>
+        <Router history={history}>
+          {getStory()}
+        </Router>
+      </Provider>
+    );
+  })
   .add('should render reports page', () => (
     <ReportsPage
       location={{

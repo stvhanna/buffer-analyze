@@ -22,6 +22,7 @@ const moveChart = require('./moveChart');
 const deleteChart = require('./deleteChart');
 const comparison = require('./comparison');
 const audience = require('./audience');
+const environment = require('./environment');
 
 module.exports = checkToken(rpc(
   profilesMethod,
@@ -46,4 +47,5 @@ module.exports = checkToken(rpc(
   comparison,
   audience,
   deleteChart,
+  environment,
 ));

@@ -2,12 +2,13 @@
 # yarn lockfile v1
 
 
-"@bufferapp/app-sidebar@0.7.4":
-  version "0.7.4"
-  resolved "https://registry.yarnpkg.com/@bufferapp/app-sidebar/-/app-sidebar-0.7.4.tgz#a907618701408627f73b30abe74ddd5121194933"
+"@bufferapp/app-sidebar@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@bufferapp/app-sidebar/-/app-sidebar-1.2.2.tgz#39c37188c5c106cfdc9436cb348869de40d6ac70"
   dependencies:
     "@bufferapp/async-data-fetch" "0.7.4"
-    "@bufferapp/components" "0.7.3"
+    "@bufferapp/components" "1.0.7"
+    "@bufferapp/session-manager" "0.5.38"
 
 "@bufferapp/async-data-fetch@0.5.25":
   version "0.5.25"
@@ -25,13 +26,15 @@
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/@bufferapp/chronos/-/chronos-0.6.1.tgz#0213dff339459ca510103e5a72f558682a2675dd"
 
-"@bufferapp/components@0.7.3":
-  version "0.7.3"
-  resolved "https://registry.yarnpkg.com/@bufferapp/components/-/components-0.7.3.tgz#bb8cb636ea624dada04eb9b50ae2f5ae4b95b646"
+"@bufferapp/components@1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@bufferapp/components/-/components-1.0.7.tgz#d0dfa99fecabd53339eca51a515587ee040bf25b"
   dependencies:
     "@bufferapp/react-keyframes" "0.2.5"
-    react-autocomplete "1.5.9"
-    react-day-picker "5.5.1"
+    prop-types "15.5.10"
+    react-autocomplete "1.7.2"
+    react-day-picker "6.2.1"
+    uuid "3.0.1"
 
 "@bufferapp/components@2.1.1", "@bufferapp/components@^2.1.1":
   version "2.1.1"
@@ -64,6 +67,13 @@
 "@bufferapp/session-manager@0.5.36":
   version "0.5.36"
   resolved "https://registry.yarnpkg.com/@bufferapp/session-manager/-/session-manager-0.5.36.tgz#6b52cf1197d2c7cd6875b56623969a28d4fa6ab1"
+  dependencies:
+    micro-rpc-client "0.1.2"
+    object-path "0.11.4"
+
+"@bufferapp/session-manager@0.5.38":
+  version "0.5.38"
+  resolved "https://registry.yarnpkg.com/@bufferapp/session-manager/-/session-manager-0.5.38.tgz#7e0a82af35b9772dd08d465872832c8874606285"
   dependencies:
     micro-rpc-client "0.1.2"
     object-path "0.11.4"
@@ -7090,25 +7100,12 @@ react-addons-test-utils@15.5.1:
     fbjs "^0.8.4"
     object-assign "^4.1.0"
 
-react-autocomplete@1.5.9:
-  version "1.5.9"
-  resolved "https://registry.yarnpkg.com/react-autocomplete/-/react-autocomplete-1.5.9.tgz#d1dbc3ce8bbcb9fdf54197d0f112f3e6992789b8"
-  dependencies:
-    dom-scroll-into-view "1.0.1"
-    prop-types "^15.5.10"
-
 react-autocomplete@1.7.2:
   version "1.7.2"
   resolved "https://registry.yarnpkg.com/react-autocomplete/-/react-autocomplete-1.7.2.tgz#c55a0a4b8a9f4cba911dfccb74ef74f2161c46e0"
   dependencies:
     dom-scroll-into-view "1.0.1"
     prop-types "^15.5.10"
-
-react-day-picker@5.5.1:
-  version "5.5.1"
-  resolved "https://registry.yarnpkg.com/react-day-picker/-/react-day-picker-5.5.1.tgz#23e4ac99b8f361165050b2d12589aa05f24eabf1"
-  dependencies:
-    prop-types "^15.5.8"
 
 react-day-picker@6.2.1:
   version "6.2.1"
