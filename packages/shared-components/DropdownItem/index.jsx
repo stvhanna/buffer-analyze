@@ -14,15 +14,15 @@ import {
 
 const DropdownItem = ({ profile, handleClick, selected }) => (
   <li className={dropdownListItem}>
-    <Button noStyle onClick={handleClick} >
+    <Button noStyle fillContainer onClick={handleClick} >
       <span
         style={{
           alignItems: 'center',
           boxSizing: 'border-box',
           display: 'flex',
           position: 'relative',
-          width: '280px',
-          padding: '5px 10px',
+          width: '100%',
+          padding: '0.25rem 0',
         }}
       >
         <ProfileBadge
@@ -31,7 +31,7 @@ const DropdownItem = ({ profile, handleClick, selected }) => (
           avatarSize={24}
           socialIconSize={11}
         />
-        <Text weight="bold" size="small">{profile.username}</Text>
+        <Text size="small">{profile.username}</Text>
         { selected && <div style={{ marginLeft: 'auto' }}>
           <CheckmarkIcon color={'curiousBlue'} />
         </div>}

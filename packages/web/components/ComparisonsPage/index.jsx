@@ -28,7 +28,7 @@ const toolbarContainer = {
   display: 'flex',
   justifyContent: 'space-between',
   background: `${white}`,
-  padding: '0.75rem 0.5rem',
+  padding: '0.85rem 0.5rem',
   marginbottom: '1rem',
   borderBottom: `1px solid ${mystic}`,
   boxSizing: 'border-box',

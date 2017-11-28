@@ -13,11 +13,27 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
       className="dropdown dropdownContainer"
     >
       <a
-        className="dropdown__trigger dropdownTrigger dropdownTriggerActive"
+        className="dropdown__trigger "
         onClick={[Function]}
         style={
           Object {
+            "alignItems": "center",
+            "border": "1px solid #D5E3EF",
+            "borderRadius": "3px",
+            "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+            "boxSizing": "border-box",
+            "color": "#333333",
+            "cursor": "pointer",
             "display": "flex",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontSize": "0.75rem",
+            "fontWeight": "bold",
+            "outline": "0 none",
+            "padding": "0.5rem 1rem",
+            "textAlign": "left",
+            "textDecoration": "none",
+            "textShadow": "none",
+            "width": "100%",
           }
         }
       >
@@ -26,10 +42,10 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
             Object {
               "background": "rgba(50, 59, 67, 0.1)",
               "borderRadius": "50%",
-              "height": "24px",
+              "height": "22px",
               "marginRight": "10px",
               "position": "relative",
-              "width": "24px",
+              "width": "22px",
             }
           }
         >
@@ -39,7 +55,7 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
             style={
               Object {
                 "borderRadius": "50%",
-                "height": "24px",
+                "height": "22px",
                 "marginBottom": undefined,
                 "marginTop": undefined,
                 "maxHeight": undefined,
@@ -47,7 +63,7 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                 "minHeight": undefined,
                 "minWidth": undefined,
                 "objectFit": undefined,
-                "width": "24px",
+                "width": "22px",
               }
             }
           />
@@ -57,9 +73,9 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                 "background": "#fff",
                 "borderRadius": "50%",
                 "height": "11px",
-                "left": "13px",
+                "left": "11px",
                 "position": "absolute",
-                "top": "13px",
+                "top": "11px",
                 "width": "11px",
               }
             }
@@ -98,10 +114,10 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
             Object {
               "background": "rgba(50, 59, 67, 0.1)",
               "borderRadius": "50%",
-              "height": "24px",
+              "height": "22px",
               "marginRight": "10px",
               "position": "relative",
-              "width": "24px",
+              "width": "22px",
             }
           }
         >
@@ -111,7 +127,7 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
             style={
               Object {
                 "borderRadius": "50%",
-                "height": "24px",
+                "height": "22px",
                 "marginBottom": undefined,
                 "marginTop": undefined,
                 "maxHeight": undefined,
@@ -119,7 +135,7 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                 "minHeight": undefined,
                 "minWidth": undefined,
                 "objectFit": undefined,
-                "width": "24px",
+                "width": "22px",
               }
             }
           />
@@ -129,9 +145,9 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                 "background": "#fff",
                 "borderRadius": "50%",
                 "height": "11px",
-                "left": "13px",
+                "left": "11px",
                 "position": "absolute",
-                "top": "13px",
+                "top": "11px",
                 "width": "11px",
               }
             }
@@ -170,10 +186,10 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
             Object {
               "background": "rgba(50, 59, 67, 0.1)",
               "borderRadius": "50%",
-              "height": "24px",
+              "height": "22px",
               "marginRight": "10px",
               "position": "relative",
-              "width": "24px",
+              "width": "22px",
             }
           }
         >
@@ -183,7 +199,7 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
             style={
               Object {
                 "borderRadius": "50%",
-                "height": "24px",
+                "height": "22px",
                 "marginBottom": undefined,
                 "marginTop": undefined,
                 "maxHeight": undefined,
@@ -191,7 +207,7 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                 "minHeight": undefined,
                 "minWidth": undefined,
                 "objectFit": undefined,
-                "width": "24px",
+                "width": "22px",
               }
             }
           />
@@ -201,9 +217,9 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                 "background": "#fff",
                 "borderRadius": "50%",
                 "height": "11px",
-                "left": "13px",
+                "left": "11px",
                 "position": "absolute",
-                "top": "13px",
+                "top": "11px",
                 "width": "11px",
               }
             }
@@ -242,10 +258,10 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
             Object {
               "background": "rgba(50, 59, 67, 0.1)",
               "borderRadius": "50%",
-              "height": "24px",
+              "height": "22px",
               "marginRight": "10px",
               "position": "relative",
-              "width": "24px",
+              "width": "22px",
             }
           }
         >
@@ -255,7 +271,7 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
             style={
               Object {
                 "borderRadius": "50%",
-                "height": "24px",
+                "height": "22px",
                 "marginBottom": undefined,
                 "marginTop": undefined,
                 "maxHeight": undefined,
@@ -263,7 +279,7 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                 "minHeight": undefined,
                 "minWidth": undefined,
                 "objectFit": undefined,
-                "width": "24px",
+                "width": "22px",
               }
             }
           />
@@ -273,9 +289,9 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                 "background": "#fff",
                 "borderRadius": "50%",
                 "height": "11px",
-                "left": "13px",
+                "left": "11px",
                 "position": "absolute",
-                "top": "13px",
+                "top": "11px",
                 "width": "11px",
               }
             }
@@ -329,10 +345,10 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
             Object {
               "background": "rgba(50, 59, 67, 0.1)",
               "borderRadius": "50%",
-              "height": "24px",
+              "height": "22px",
               "marginRight": "10px",
               "position": "relative",
-              "width": "24px",
+              "width": "22px",
             }
           }
         >
@@ -342,7 +358,7 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
             style={
               Object {
                 "borderRadius": "50%",
-                "height": "24px",
+                "height": "22px",
                 "marginBottom": undefined,
                 "marginTop": undefined,
                 "maxHeight": undefined,
@@ -350,7 +366,7 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                 "minHeight": undefined,
                 "minWidth": undefined,
                 "objectFit": undefined,
-                "width": "24px",
+                "width": "22px",
               }
             }
           />
@@ -360,9 +376,9 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                 "background": "#fff",
                 "borderRadius": "50%",
                 "height": "11px",
-                "left": "13px",
+                "left": "11px",
                 "position": "absolute",
-                "top": "13px",
+                "top": "11px",
                 "width": "11px",
               }
             }
@@ -401,10 +417,10 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
             Object {
               "background": "rgba(50, 59, 67, 0.1)",
               "borderRadius": "50%",
-              "height": "24px",
+              "height": "22px",
               "marginRight": "10px",
               "position": "relative",
-              "width": "24px",
+              "width": "22px",
             }
           }
         >
@@ -414,7 +430,7 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
             style={
               Object {
                 "borderRadius": "50%",
-                "height": "24px",
+                "height": "22px",
                 "marginBottom": undefined,
                 "marginTop": undefined,
                 "maxHeight": undefined,
@@ -422,7 +438,7 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                 "minHeight": undefined,
                 "minWidth": undefined,
                 "objectFit": undefined,
-                "width": "24px",
+                "width": "22px",
               }
             }
           />
@@ -432,9 +448,9 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                 "background": "#fff",
                 "borderRadius": "50%",
                 "height": "11px",
-                "left": "13px",
+                "left": "11px",
                 "position": "absolute",
-                "top": "13px",
+                "top": "11px",
                 "width": "11px",
               }
             }
@@ -522,11 +538,6 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
       >
         <div
           className="dropdownContentInputHolder"
-          style={
-            Object {
-              "padding": "10px",
-            }
-          }
         >
           <div>
             <input
@@ -583,6 +594,7 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -592,9 +604,9 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -676,7 +688,7 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -745,6 +757,7 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -754,9 +767,9 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -838,7 +851,7 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -907,6 +920,7 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -916,9 +930,9 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -1000,7 +1014,7 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -1069,6 +1083,7 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -1078,9 +1093,9 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -1162,7 +1177,7 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -1231,6 +1246,7 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -1240,9 +1256,9 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -1339,7 +1355,7 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -1408,6 +1424,7 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -1417,9 +1434,9 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -1516,7 +1533,7 @@ exports[`Snapshots MultiProfileSelector Compare Profiles Button should be disabl
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -1616,26 +1633,50 @@ exports[`Snapshots MultiProfileSelector should filter by profilesFilterString 1`
       className="dropdown dropdownContainer"
     >
       <a
-        className="dropdown__trigger dropdownTrigger dropdownTriggerActive"
+        className="dropdown__trigger "
         onClick={[Function]}
         style={
           Object {
+            "alignItems": "center",
+            "border": "1px solid #D5E3EF",
+            "borderRadius": "3px",
+            "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+            "boxSizing": "border-box",
+            "color": "#333333",
+            "cursor": "pointer",
             "display": "flex",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontSize": "0.75rem",
+            "fontWeight": "bold",
+            "outline": "0 none",
+            "padding": "0.5rem 1rem",
+            "textAlign": "left",
+            "textDecoration": "none",
+            "textShadow": "none",
+            "width": "100%",
           }
         }
       >
-        <span
+        <div
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "0.75rem",
-              "fontWeight": 700,
+              "margin": "4px 0",
             }
           }
         >
-          Please choose an account
-        </span>
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            Please choose an account
+          </span>
+        </div>
         <span
           style={
             Object {
@@ -1675,11 +1716,6 @@ exports[`Snapshots MultiProfileSelector should filter by profilesFilterString 1`
       >
         <div
           className="dropdownContentInputHolder"
-          style={
-            Object {
-              "padding": "10px",
-            }
-          }
         >
           <div>
             <input
@@ -1736,6 +1772,7 @@ exports[`Snapshots MultiProfileSelector should filter by profilesFilterString 1`
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -1745,9 +1782,9 @@ exports[`Snapshots MultiProfileSelector should filter by profilesFilterString 1`
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -1829,7 +1866,7 @@ exports[`Snapshots MultiProfileSelector should filter by profilesFilterString 1`
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -1908,11 +1945,27 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
       className="dropdown dropdownContainer"
     >
       <a
-        className="dropdown__trigger dropdownTrigger dropdownTriggerActive"
+        className="dropdown__trigger "
         onClick={[Function]}
         style={
           Object {
+            "alignItems": "center",
+            "border": "1px solid #D5E3EF",
+            "borderRadius": "3px",
+            "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+            "boxSizing": "border-box",
+            "color": "#333333",
+            "cursor": "pointer",
             "display": "flex",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontSize": "0.75rem",
+            "fontWeight": "bold",
+            "outline": "0 none",
+            "padding": "0.5rem 1rem",
+            "textAlign": "left",
+            "textDecoration": "none",
+            "textShadow": "none",
+            "width": "100%",
           }
         }
       >
@@ -1921,10 +1974,10 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
             Object {
               "background": "rgba(50, 59, 67, 0.1)",
               "borderRadius": "50%",
-              "height": "24px",
+              "height": "22px",
               "marginRight": "10px",
               "position": "relative",
-              "width": "24px",
+              "width": "22px",
             }
           }
         >
@@ -1934,7 +1987,7 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
             style={
               Object {
                 "borderRadius": "50%",
-                "height": "24px",
+                "height": "22px",
                 "marginBottom": undefined,
                 "marginTop": undefined,
                 "maxHeight": undefined,
@@ -1942,7 +1995,7 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                 "minHeight": undefined,
                 "minWidth": undefined,
                 "objectFit": undefined,
-                "width": "24px",
+                "width": "22px",
               }
             }
           />
@@ -1952,9 +2005,9 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                 "background": "#fff",
                 "borderRadius": "50%",
                 "height": "11px",
-                "left": "13px",
+                "left": "11px",
                 "position": "absolute",
-                "top": "13px",
+                "top": "11px",
                 "width": "11px",
               }
             }
@@ -1993,10 +2046,10 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
             Object {
               "background": "rgba(50, 59, 67, 0.1)",
               "borderRadius": "50%",
-              "height": "24px",
+              "height": "22px",
               "marginRight": "10px",
               "position": "relative",
-              "width": "24px",
+              "width": "22px",
             }
           }
         >
@@ -2006,7 +2059,7 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
             style={
               Object {
                 "borderRadius": "50%",
-                "height": "24px",
+                "height": "22px",
                 "marginBottom": undefined,
                 "marginTop": undefined,
                 "maxHeight": undefined,
@@ -2014,7 +2067,7 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                 "minHeight": undefined,
                 "minWidth": undefined,
                 "objectFit": undefined,
-                "width": "24px",
+                "width": "22px",
               }
             }
           />
@@ -2024,9 +2077,9 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                 "background": "#fff",
                 "borderRadius": "50%",
                 "height": "11px",
-                "left": "13px",
+                "left": "11px",
                 "position": "absolute",
-                "top": "13px",
+                "top": "11px",
                 "width": "11px",
               }
             }
@@ -2099,11 +2152,6 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
       >
         <div
           className="dropdownContentInputHolder"
-          style={
-            Object {
-              "padding": "10px",
-            }
-          }
         >
           <div>
             <input
@@ -2160,6 +2208,7 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -2169,9 +2218,9 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -2253,7 +2302,7 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -2322,6 +2371,7 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -2331,9 +2381,9 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -2415,7 +2465,7 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -2452,6 +2502,7 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -2461,9 +2512,9 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -2545,7 +2596,7 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -2614,6 +2665,7 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -2623,9 +2675,9 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -2707,7 +2759,7 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -2744,6 +2796,7 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -2753,9 +2806,9 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -2852,7 +2905,7 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -2889,6 +2942,7 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -2898,9 +2952,9 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -2997,7 +3051,7 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -3064,26 +3118,50 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
       className="dropdown dropdownContainer"
     >
       <a
-        className="dropdown__trigger dropdownTrigger"
+        className="dropdown__trigger "
         onClick={[Function]}
         style={
           Object {
+            "alignItems": "center",
+            "border": "1px solid #D5E3EF",
+            "borderRadius": "3px",
+            "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+            "boxSizing": "border-box",
+            "color": "#333333",
+            "cursor": "pointer",
             "display": "flex",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontSize": "0.75rem",
+            "fontWeight": "bold",
+            "outline": "0 none",
+            "padding": "0.5rem 1rem",
+            "textAlign": "left",
+            "textDecoration": "none",
+            "textShadow": "none",
+            "width": "100%",
           }
         }
       >
-        <span
+        <div
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "0.75rem",
-              "fontWeight": 700,
+              "margin": "4px 0",
             }
           }
         >
-          Please choose an account
-        </span>
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            Please choose an account
+          </span>
+        </div>
         <span
           style={
             Object {
@@ -3123,11 +3201,6 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
       >
         <div
           className="dropdownContentInputHolder"
-          style={
-            Object {
-              "padding": "10px",
-            }
-          }
         >
           <div>
             <input
@@ -3184,6 +3257,7 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -3193,9 +3267,9 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -3277,7 +3351,7 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -3314,6 +3388,7 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -3323,9 +3398,9 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -3407,7 +3482,7 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -3444,6 +3519,7 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -3453,9 +3529,9 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -3537,7 +3613,7 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -3574,6 +3650,7 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -3583,9 +3660,9 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -3667,7 +3744,7 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -3704,6 +3781,7 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -3713,9 +3791,9 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -3812,7 +3890,7 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -3849,6 +3927,7 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -3858,9 +3937,9 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -3957,7 +4036,7 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -4024,11 +4103,27 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
       className="dropdown dropdownContainer"
     >
       <a
-        className="dropdown__trigger dropdownTrigger"
+        className="dropdown__trigger "
         onClick={[Function]}
         style={
           Object {
+            "alignItems": "center",
+            "border": "1px solid #D5E3EF",
+            "borderRadius": "3px",
+            "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+            "boxSizing": "border-box",
+            "color": "#333333",
+            "cursor": "pointer",
             "display": "flex",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontSize": "0.75rem",
+            "fontWeight": "bold",
+            "outline": "0 none",
+            "padding": "0.5rem 1rem",
+            "textAlign": "left",
+            "textDecoration": "none",
+            "textShadow": "none",
+            "width": "100%",
           }
         }
       >
@@ -4037,10 +4132,10 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
             Object {
               "background": "rgba(50, 59, 67, 0.1)",
               "borderRadius": "50%",
-              "height": "24px",
+              "height": "22px",
               "marginRight": "10px",
               "position": "relative",
-              "width": "24px",
+              "width": "22px",
             }
           }
         >
@@ -4050,7 +4145,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
             style={
               Object {
                 "borderRadius": "50%",
-                "height": "24px",
+                "height": "22px",
                 "marginBottom": undefined,
                 "marginTop": undefined,
                 "maxHeight": undefined,
@@ -4058,7 +4153,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                 "minHeight": undefined,
                 "minWidth": undefined,
                 "objectFit": undefined,
-                "width": "24px",
+                "width": "22px",
               }
             }
           />
@@ -4068,9 +4163,9 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                 "background": "#fff",
                 "borderRadius": "50%",
                 "height": "11px",
-                "left": "13px",
+                "left": "11px",
                 "position": "absolute",
-                "top": "13px",
+                "top": "11px",
                 "width": "11px",
               }
             }
@@ -4109,10 +4204,10 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
             Object {
               "background": "rgba(50, 59, 67, 0.1)",
               "borderRadius": "50%",
-              "height": "24px",
+              "height": "22px",
               "marginRight": "10px",
               "position": "relative",
-              "width": "24px",
+              "width": "22px",
             }
           }
         >
@@ -4122,7 +4217,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
             style={
               Object {
                 "borderRadius": "50%",
-                "height": "24px",
+                "height": "22px",
                 "marginBottom": undefined,
                 "marginTop": undefined,
                 "maxHeight": undefined,
@@ -4130,7 +4225,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                 "minHeight": undefined,
                 "minWidth": undefined,
                 "objectFit": undefined,
-                "width": "24px",
+                "width": "22px",
               }
             }
           />
@@ -4140,9 +4235,9 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                 "background": "#fff",
                 "borderRadius": "50%",
                 "height": "11px",
-                "left": "13px",
+                "left": "11px",
                 "position": "absolute",
-                "top": "13px",
+                "top": "11px",
                 "width": "11px",
               }
             }
@@ -4181,10 +4276,10 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
             Object {
               "background": "rgba(50, 59, 67, 0.1)",
               "borderRadius": "50%",
-              "height": "24px",
+              "height": "22px",
               "marginRight": "10px",
               "position": "relative",
-              "width": "24px",
+              "width": "22px",
             }
           }
         >
@@ -4194,7 +4289,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
             style={
               Object {
                 "borderRadius": "50%",
-                "height": "24px",
+                "height": "22px",
                 "marginBottom": undefined,
                 "marginTop": undefined,
                 "maxHeight": undefined,
@@ -4202,7 +4297,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                 "minHeight": undefined,
                 "minWidth": undefined,
                 "objectFit": undefined,
-                "width": "24px",
+                "width": "22px",
               }
             }
           />
@@ -4212,9 +4307,9 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                 "background": "#fff",
                 "borderRadius": "50%",
                 "height": "11px",
-                "left": "13px",
+                "left": "11px",
                 "position": "absolute",
-                "top": "13px",
+                "top": "11px",
                 "width": "11px",
               }
             }
@@ -4253,10 +4348,10 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
             Object {
               "background": "rgba(50, 59, 67, 0.1)",
               "borderRadius": "50%",
-              "height": "24px",
+              "height": "22px",
               "marginRight": "10px",
               "position": "relative",
-              "width": "24px",
+              "width": "22px",
             }
           }
         >
@@ -4266,7 +4361,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
             style={
               Object {
                 "borderRadius": "50%",
-                "height": "24px",
+                "height": "22px",
                 "marginBottom": undefined,
                 "marginTop": undefined,
                 "maxHeight": undefined,
@@ -4274,7 +4369,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                 "minHeight": undefined,
                 "minWidth": undefined,
                 "objectFit": undefined,
-                "width": "24px",
+                "width": "22px",
               }
             }
           />
@@ -4284,9 +4379,9 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                 "background": "#fff",
                 "borderRadius": "50%",
                 "height": "11px",
-                "left": "13px",
+                "left": "11px",
                 "position": "absolute",
-                "top": "13px",
+                "top": "11px",
                 "width": "11px",
               }
             }
@@ -4340,10 +4435,10 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
             Object {
               "background": "rgba(50, 59, 67, 0.1)",
               "borderRadius": "50%",
-              "height": "24px",
+              "height": "22px",
               "marginRight": "10px",
               "position": "relative",
-              "width": "24px",
+              "width": "22px",
             }
           }
         >
@@ -4353,7 +4448,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
             style={
               Object {
                 "borderRadius": "50%",
-                "height": "24px",
+                "height": "22px",
                 "marginBottom": undefined,
                 "marginTop": undefined,
                 "maxHeight": undefined,
@@ -4361,7 +4456,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                 "minHeight": undefined,
                 "minWidth": undefined,
                 "objectFit": undefined,
-                "width": "24px",
+                "width": "22px",
               }
             }
           />
@@ -4371,9 +4466,9 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                 "background": "#fff",
                 "borderRadius": "50%",
                 "height": "11px",
-                "left": "13px",
+                "left": "11px",
                 "position": "absolute",
-                "top": "13px",
+                "top": "11px",
                 "width": "11px",
               }
             }
@@ -4412,10 +4507,10 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
             Object {
               "background": "rgba(50, 59, 67, 0.1)",
               "borderRadius": "50%",
-              "height": "24px",
+              "height": "22px",
               "marginRight": "10px",
               "position": "relative",
-              "width": "24px",
+              "width": "22px",
             }
           }
         >
@@ -4425,7 +4520,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
             style={
               Object {
                 "borderRadius": "50%",
-                "height": "24px",
+                "height": "22px",
                 "marginBottom": undefined,
                 "marginTop": undefined,
                 "maxHeight": undefined,
@@ -4433,7 +4528,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                 "minHeight": undefined,
                 "minWidth": undefined,
                 "objectFit": undefined,
-                "width": "24px",
+                "width": "22px",
               }
             }
           />
@@ -4443,9 +4538,9 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                 "background": "#fff",
                 "borderRadius": "50%",
                 "height": "11px",
-                "left": "13px",
+                "left": "11px",
                 "position": "absolute",
-                "top": "13px",
+                "top": "11px",
                 "width": "11px",
               }
             }
@@ -4533,11 +4628,6 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
       >
         <div
           className="dropdownContentInputHolder"
-          style={
-            Object {
-              "padding": "10px",
-            }
-          }
         >
           <div>
             <input
@@ -4594,6 +4684,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -4603,9 +4694,9 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -4687,7 +4778,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -4756,6 +4847,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -4765,9 +4857,9 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -4849,7 +4941,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -4918,6 +5010,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -4927,9 +5020,9 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -5011,7 +5104,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -5080,6 +5173,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -5089,9 +5183,9 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -5173,7 +5267,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -5242,6 +5336,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -5251,9 +5346,9 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -5350,7 +5445,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -5419,6 +5514,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -5428,9 +5524,9 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -5527,7 +5623,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -5627,26 +5723,50 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
       className="dropdown dropdownContainer"
     >
       <a
-        className="dropdown__trigger dropdownTrigger dropdownTriggerActive"
+        className="dropdown__trigger "
         onClick={[Function]}
         style={
           Object {
+            "alignItems": "center",
+            "border": "1px solid #D5E3EF",
+            "borderRadius": "3px",
+            "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+            "boxSizing": "border-box",
+            "color": "#333333",
+            "cursor": "pointer",
             "display": "flex",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontSize": "0.75rem",
+            "fontWeight": "bold",
+            "outline": "0 none",
+            "padding": "0.5rem 1rem",
+            "textAlign": "left",
+            "textDecoration": "none",
+            "textShadow": "none",
+            "width": "100%",
           }
         }
       >
-        <span
+        <div
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "0.75rem",
-              "fontWeight": 700,
+              "margin": "4px 0",
             }
           }
         >
-          Please choose an account
-        </span>
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            Please choose an account
+          </span>
+        </div>
         <span
           style={
             Object {
@@ -5686,11 +5806,6 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
       >
         <div
           className="dropdownContentInputHolder"
-          style={
-            Object {
-              "padding": "10px",
-            }
-          }
         >
           <div>
             <input
@@ -5747,6 +5862,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -5756,9 +5872,9 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -5840,7 +5956,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -5877,6 +5993,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -5886,9 +6003,9 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -5970,7 +6087,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -6007,6 +6124,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -6016,9 +6134,9 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -6100,7 +6218,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -6137,6 +6255,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -6146,9 +6265,9 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -6230,7 +6349,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -6267,6 +6386,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -6276,9 +6396,9 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -6375,7 +6495,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -6412,6 +6532,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -6421,9 +6542,9 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -6520,7 +6641,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -6557,6 +6678,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -6566,9 +6688,9 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -6650,7 +6772,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -6687,6 +6809,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -6696,9 +6819,9 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -6780,7 +6903,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -6817,6 +6940,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -6826,9 +6950,9 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -6910,7 +7034,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -6947,6 +7071,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -6956,9 +7081,9 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -7040,7 +7165,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -7077,6 +7202,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -7086,9 +7212,9 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -7170,7 +7296,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -7207,6 +7333,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -7216,9 +7343,9 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -7300,7 +7427,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -7337,6 +7464,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -7346,9 +7474,9 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -7430,7 +7558,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -7467,6 +7595,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -7476,9 +7605,9 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -7560,7 +7689,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -7597,6 +7726,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   "outline": "none",
                   "padding": 0,
                   "transition": "unset",
+                  "width": "100%",
                 }
               }
             >
@@ -7606,9 +7736,9 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "5px 10px",
+                    "padding": "0.25rem 0",
                     "position": "relative",
-                    "width": "280px",
+                    "width": "100%",
                   }
                 }
               >
@@ -7690,7 +7820,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -7757,26 +7887,50 @@ exports[`Snapshots MultiProfileSelector should show no match message 1`] = `
       className="dropdown dropdownContainer"
     >
       <a
-        className="dropdown__trigger dropdownTrigger dropdownTriggerActive"
+        className="dropdown__trigger "
         onClick={[Function]}
         style={
           Object {
+            "alignItems": "center",
+            "border": "1px solid #D5E3EF",
+            "borderRadius": "3px",
+            "boxShadow": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+            "boxSizing": "border-box",
+            "color": "#333333",
+            "cursor": "pointer",
             "display": "flex",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontSize": "0.75rem",
+            "fontWeight": "bold",
+            "outline": "0 none",
+            "padding": "0.5rem 1rem",
+            "textAlign": "left",
+            "textDecoration": "none",
+            "textShadow": "none",
+            "width": "100%",
           }
         }
       >
-        <span
+        <div
           style={
             Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "0.75rem",
-              "fontWeight": 700,
+              "margin": "4px 0",
             }
           }
         >
-          Please choose an account
-        </span>
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            Please choose an account
+          </span>
+        </div>
         <span
           style={
             Object {
@@ -7816,11 +7970,6 @@ exports[`Snapshots MultiProfileSelector should show no match message 1`] = `
       >
         <div
           className="dropdownContentInputHolder"
-          style={
-            Object {
-              "padding": "10px",
-            }
-          }
         >
           <div>
             <input

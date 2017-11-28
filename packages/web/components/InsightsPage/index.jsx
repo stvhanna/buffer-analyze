@@ -8,9 +8,8 @@ import ProfileHeader from '@bufferapp/profile-header';
 import DatePicker from '@bufferapp/analyze-date-picker';
 import ProfileLoader from '@bufferapp/profile-loader';
 import TabNavigation from '@bufferapp/analyze-tabs';
-import PNGExportButton from '@bufferapp/analyze-png-export';
-import CSVExportButton from '@bufferapp/analyze-csv-export';
 import { white, mystic } from '@bufferapp/components/style/color';
+import ExportPicker from '@bufferapp/analyze-export-picker';
 import PostsTab from '../PostsTab';
 import OverviewTab from '../OverviewTab';
 
@@ -55,15 +54,23 @@ const toolbarTabNavigation = {};
 const toolbarRight = {
   display: 'flex',
   justifyContent: 'flex-end',
+  alignContent: 'center',
 };
 
-const toolbarProfileSelector = {};
+const toolbarProfileSelector = {
+  display: 'flex',
+  alignContent: 'center',
+};
 
 const toolbarDatePicker = {
+  display: 'flex',
+  alignContent: 'center',
   marginLeft: '0.5rem',
 };
 
 const toolbarExport = {
+  display: 'flex',
+  alignContent: 'center',
   marginLeft: '0.5rem',
 };
 
@@ -97,8 +104,7 @@ const InsightsPage = ({
               <DatePicker />
             </div>
             <div style={toolbarExport}>
-              <PNGExportButton filename={`buffer-${tabId === 'overview' ? 'overview' : 'posts'}-analytics`} />
-              <CSVExportButton filename={`buffer-${tabId === 'overview' ? 'overview' : 'posts'}-analytics`} />
+              <ExportPicker filename={`buffer-${tabId === 'overview' ? 'overview' : 'posts'}-analytics`} />
             </div>
           </div>
         </div>

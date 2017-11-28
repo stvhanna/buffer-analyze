@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { white } from '@bufferapp/components/style/color';
-
 import {
   ChartStateNoData as NoData,
   ChartStateLoading as Loading,

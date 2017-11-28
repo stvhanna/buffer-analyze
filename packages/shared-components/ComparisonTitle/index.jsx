@@ -4,12 +4,13 @@ import styled from 'styled-components';
 import Text from '@bufferapp/components/Text';
 
 const TitleWrapper = styled.h2`
-  margin: '2rem 0 1rem',
+  margin: 0;
+  padding: 0;
 `;
 
 const ComparisonTitle = ({ chartName }) =>
   <TitleWrapper>
-    <Text weight="bold" size="extra-large">
+    <Text weight="bold" size="large">
       {chartName} comparison
     </Text>
   </TitleWrapper>

@@ -523,10 +523,10 @@ exports[`Snapshots ComparisonFooter should render coming soon if the profile is 
     }
   >
     <section
-      className="sc-iwsKbI eNcCDe"
+      className="sc-iwsKbI jRuIUA"
     >
       <ul
-        className="sc-dnqmqq lhDvUG"
+        className="sc-dnqmqq cbpPJN"
       >
         <li
           style={
@@ -725,10 +725,10 @@ exports[`Snapshots ComparisonFooter should render the footer for a single profil
     }
   >
     <section
-      className="sc-iwsKbI eNcCDe"
+      className="sc-iwsKbI jRuIUA"
     >
       <ul
-        className="sc-dnqmqq lhDvUG"
+        className="sc-dnqmqq cbpPJN"
       >
         <li
           style={
@@ -928,10 +928,10 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
     }
   >
     <section
-      className="sc-iwsKbI eNcCDe"
+      className="sc-iwsKbI jRuIUA"
     >
       <ul
-        className="sc-dnqmqq lhDvUG"
+        className="sc-dnqmqq cbpPJN"
       >
         <li
           style={
@@ -1522,6 +1522,7 @@ exports[`Snapshots Dropdown Item should render 1`] = `
             "outline": "none",
             "padding": 0,
             "transition": "unset",
+            "width": "100%",
           }
         }
       >
@@ -1531,9 +1532,9 @@ exports[`Snapshots Dropdown Item should render 1`] = `
               "alignItems": "center",
               "boxSizing": "border-box",
               "display": "flex",
-              "padding": "5px 10px",
+              "padding": "0.25rem 0",
               "position": "relative",
-              "width": "280px",
+              "width": "100%",
             }
           }
         >
@@ -1615,7 +1616,7 @@ exports[`Snapshots Dropdown Item should render 1`] = `
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontWeight": 400,
               }
             }
           >
@@ -1666,6 +1667,7 @@ exports[`Snapshots Dropdown Item should render properly with an empty avatarUrl 
             "outline": "none",
             "padding": 0,
             "transition": "unset",
+            "width": "100%",
           }
         }
       >
@@ -1675,9 +1677,9 @@ exports[`Snapshots Dropdown Item should render properly with an empty avatarUrl 
               "alignItems": "center",
               "boxSizing": "border-box",
               "display": "flex",
-              "padding": "5px 10px",
+              "padding": "0.25rem 0",
               "position": "relative",
-              "width": "280px",
+              "width": "100%",
             }
           }
         >
@@ -1759,7 +1761,7 @@ exports[`Snapshots Dropdown Item should render properly with an empty avatarUrl 
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontWeight": 400,
               }
             }
           >
@@ -1810,6 +1812,7 @@ exports[`Snapshots Dropdown Item should selected 1`] = `
             "outline": "none",
             "padding": 0,
             "transition": "unset",
+            "width": "100%",
           }
         }
       >
@@ -1819,9 +1822,9 @@ exports[`Snapshots Dropdown Item should selected 1`] = `
               "alignItems": "center",
               "boxSizing": "border-box",
               "display": "flex",
-              "padding": "5px 10px",
+              "padding": "0.25rem 0",
               "position": "relative",
-              "width": "280px",
+              "width": "100%",
             }
           }
         >
@@ -1903,7 +1906,7 @@ exports[`Snapshots Dropdown Item should selected 1`] = `
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontWeight": 400,
               }
             }
           >
@@ -4811,14 +4814,14 @@ exports[`Snapshots Title should render the title for the comparison audience cha
     }
   >
     <h2
-      className="sc-VigVT bOdCvD"
+      className="sc-VigVT koZmyN"
     >
       <span
         style={
           Object {
             "color": "#59626a",
             "fontFamily": "\\"Roboto\\", sans-serif",
-            "fontSize": "2rem",
+            "fontSize": "1.25rem",
             "fontWeight": 700,
           }
         }
@@ -4841,14 +4844,14 @@ exports[`Snapshots Title should render the title for the comparison reach chart 
     }
   >
     <h2
-      className="sc-VigVT bOdCvD"
+      className="sc-VigVT koZmyN"
     >
       <span
         style={
           Object {
             "color": "#59626a",
             "fontFamily": "\\"Roboto\\", sans-serif",
-            "fontSize": "2rem",
+            "fontSize": "1.25rem",
             "fontWeight": 700,
           }
         }

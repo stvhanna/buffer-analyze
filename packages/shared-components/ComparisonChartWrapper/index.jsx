@@ -3,12 +3,10 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import {
-  geyser,
-} from '@bufferapp/components/style/color';
-
-import {
   ChartStateNoData as NoData,
   ChartStateLoading as Loading,
+  ChartCard as Card,
+  ChartHeader as Header,
   ComparisonChart as Chart,
   ComparisonFooter as Footer,
   ComparisonTitle as Title,
@@ -24,7 +22,7 @@ const ComparisonChartWrapper = ({
   let footer = null;
 
   if (loading) {
-    content = <Loading active text={`${chartName} comparison chart loading...`} />;
+    content = <Loading active noBorder />;
   } else if (profilesMetricData.length === 0) {
     content = <NoData />;
   } else {
@@ -43,22 +41,20 @@ const ComparisonChartWrapper = ({
   }
 
   const ContentContainer = styled.div`
-    padding: 0;
-    margin: auto;
-    border-radius: 2px;
-    border: solid 1px ${geyser};
-    min-height: 12rem;
     position: relative;
+    padding: 1.5rem;
   `;
 
   return (
-    <div>
-      <Title chartName={chartName} />
+    <Card>
+      <Header>
+        <Title chartName={chartName} />
+      </Header>
       <ContentContainer>
         {content}
       </ContentContainer>
       {footer}
-    </div>
+    </Card>
   );
 };
 

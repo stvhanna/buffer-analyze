@@ -1,14 +1,31 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
 import moment from 'moment';
+import styled, { css } from 'styled-components';
 
-import styles from './date-picker.less';
+import Button from './Button';
+import Dropdown from './Dropdown';
+import Form from './Form';
 
-import DatePickerButton from '../DatePickerButton/';
-import DatePickerDropdown from '../DatePickerDropdown/';
-import DatePickerForm from '../DatePickerForm/';
+const Container = styled.div`
+  position: relative;
+  width: 16rem;
+`;
+
+const ClickCatcher = styled.div`
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+
+  ${props => props.isOpen && css`
+    display: block;
+  `}
+`;
 
 const DatePicker = (props) => {
   const {
@@ -21,27 +38,26 @@ const DatePicker = (props) => {
     close,
   } = props;
 
-  const clickCatcherClass = classNames(styles.clickCatcher, {
-    [styles.clickCatcherActive]: isOpen,
-  });
-
   return (
-    <div style={{ position: 'relative' }}>
-      <DatePickerButton
+    <Container>
+      <Button
         isOpen={isOpen}
         loading={loading}
         startDate={startDate}
         endDate={endDate}
         handleClick={() => (isOpen ? close() : open())}
       />
-      { !loading &&
-        <DatePickerDropdown isOpen={isOpen}>
-          <DatePickerForm {...props} />
-        </DatePickerDropdown>
-      }
+      <Dropdown isOpen={isOpen}>
+        <Form {...props} />
+      </Dropdown>
 
-      <div style={{ zIndex: 1 }} tabIndex="0" role="button" onClick={close} className={clickCatcherClass} />
-    </div>
+      <ClickCatcher
+        isOpen={isOpen}
+        tabIndex="0"
+        role="button"
+        onClick={close}
+      />
+    </Container>
   );
 };
 
