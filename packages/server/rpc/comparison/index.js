@@ -61,6 +61,20 @@ const METRIC_CONFIGS_BY_KEY = {
       color: '#3A92D3',
     },
   },
+  comments: {
+    facebook: {
+      label: 'Comments',
+      color: '#ced7df',
+    },
+    instagram: {
+      label: 'Comments',
+      color: '#FEC78B',
+    },
+    twitter: {
+      label: 'Comments',
+      color: '#3A92D3',
+    },
+  },
 };
 
 const formatDailyData = (day, value, profileService, metricKey) => {

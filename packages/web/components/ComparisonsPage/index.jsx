@@ -10,6 +10,7 @@ import AudienceComparisonChart from '@bufferapp/audience-comparison-chart';
 import ReachComparisonChart from '@bufferapp/reach-comparison-chart';
 import LikesComparisonChart from '@bufferapp/likes-comparison-chart';
 import EngagementComparisonChart from '@bufferapp/engagement-comparison-chart';
+import CommentsComparisonChart from "@bufferapp/comments-comparison-chart";
 
 const pageStyle = {
   display: 'flex',
@@ -60,9 +61,7 @@ const toolbarDatePicker = {
   marginLeft: '0.5rem',
 };
 
-const ComparisonsPage = ({
-  location,
-}) => (
+const ComparisonsPage = ({ location }) => (
   <div style={pageStyle}>
     <NavSidebar route={location.pathname} />
     <ProfileLoader>
@@ -84,6 +83,7 @@ const ComparisonsPage = ({
             <ReachComparisonChart />
             <LikesComparisonChart />
             <EngagementComparisonChart />
+            <CommentsComparisonChart />
           </div>
         </div>
       </div>

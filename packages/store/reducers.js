@@ -26,6 +26,7 @@ import { reducer as reachComparisonReducer } from '@bufferapp/reach-comparison-c
 import { reducer as likesComparisonReducer } from '@bufferapp/likes-comparison-chart';
 import { reducer as engagementComparisonReducer } from '@bufferapp/engagement-comparison-chart';
 import { reducer as exportPickerReducer } from '@bufferapp/analyze-export-picker';
+import { reducer as commentsComparisonReducer } from '@bufferapp/comments-comparison-chart';
 
 export default combineReducers({
   router: routerReducer,
@@ -55,4 +56,5 @@ export default combineReducers({
   reachComparison: reachComparisonReducer,
   likesComparison: likesComparisonReducer,
   engagementComparison: engagementComparisonReducer,
+  commentsComparison: commentsComparisonReducer,
 });
