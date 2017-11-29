@@ -1,3 +1,4 @@
+import 'babel-polyfill';
 import { configure } from '@storybook/react';
 
 // automatically import all story.js files, excluding buffer components

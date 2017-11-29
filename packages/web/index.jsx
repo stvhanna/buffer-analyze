@@ -6,7 +6,6 @@ import {
   ConnectedRouter as Router,
 } from 'react-router-redux';
 import createStore, { history } from '@bufferapp/analyze-store';
-import { actions as performanceActions } from '@bufferapp/performance-tracking';
 import App from './components/App';
 
 const store = createStore();
@@ -14,8 +13,6 @@ const store = createStore();
 store.dispatch({
   type: 'APP_INIT',
 });
-
-store.dispatch(performanceActions.measureFromNavigationStart({ name: 'init' }));
 
 const renderApp = (AppComponent) => {
   render(
