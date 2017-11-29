@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/comments-comparison-chart",
-  "version": "0.0.1",
+  "version": "0.23.0",
   "description": "CommentsComparisonChart",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,9 @@
     "test-update": "jest -u"
   },
   "jest": {
-    "transformIgnorePatterns": ["node_modules/(?!@bufferapp/*)"],
+    "transformIgnorePatterns": [
+      "node_modules/(?!@bufferapp/*)"
+    ],
     "verbose": true,
     "moduleNameMapper": {
       "\\.(css|less)$": "identity-obj-proxy"

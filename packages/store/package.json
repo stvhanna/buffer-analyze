@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/analyze-store",
-  "version": "0.22.0",
+  "version": "0.23.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -31,6 +31,7 @@
     "@bufferapp/audience-chart": "^0.22.0",
     "@bufferapp/audience-comparison-chart": "^0.22.0",
     "@bufferapp/average-table": "^0.22.0",
+    "@bufferapp/comments-comparison-chart": "^0.23.0",
     "@bufferapp/compare-chart": "^0.22.0",
     "@bufferapp/contextual-compare": "^0.22.0",
     "@bufferapp/engagement-comparison-chart": "^0.22.0",
@@ -46,8 +47,7 @@
     "@bufferapp/report": "^0.22.0",
     "@bufferapp/report-list": "^0.22.0",
     "@bufferapp/summary-table": "^0.22.0",
-    "@bufferapp/top-posts-table": "^0.22.0",
-    "@bufferapp/comments-comparison-chart": "^0.0.1"
+    "@bufferapp/top-posts-table": "^0.22.0"
   },
   "devDependencies": {
     "eslint": "3.19.0",
