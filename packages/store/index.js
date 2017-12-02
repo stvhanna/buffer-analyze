@@ -32,6 +32,8 @@ import { middleware as reachComparisonMiddleware } from '@bufferapp/reach-compar
 import { middleware as likesComparisonMiddleware } from '@bufferapp/likes-comparison-chart';
 import { middleware as engagementComparisonMiddleware } from '@bufferapp/engagement-comparison-chart';
 import { middleware as commentsComparisonMiddleware } from '@bufferapp/comments-comparison-chart';
+import { middleware as environmentMiddleware } from '@bufferapp/environment';
+import { middleware as unauthorizedRedirectMiddleware } from '@bufferapp/unauthorized-redirect';
 import initMiddleware from './initMiddleware';
 
 import reducers from './reducers';
@@ -78,6 +80,8 @@ const configureStore = (initialstate) => {
         engagementComparisonMiddleware,
         exportPickerMiddleware,
         commentsComparisonMiddleware,
+        environmentMiddleware,
+        unauthorizedRedirectMiddleware,
       ),
     ),
   );

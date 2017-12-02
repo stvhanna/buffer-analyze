@@ -20,7 +20,7 @@
   "author": "mike@msanroman.io",
   "dependencies": {
     "@bufferapp/logger": "0.7.0",
-    "@bufferapp/micro-rpc": "0.1.6",
+    "@bufferapp/micro-rpc": "0.1.7",
     "@bufferapp/session-manager": "0.5.36",
     "@bufferapp/shutdown-helper": "0.2.0",
     "bugsnag": "1.11.0",
@@ -28,7 +28,7 @@
     "express": "4.15.3",
     "jsonwebtoken": "7.4.1",
     "micro": "7.3.3",
-    "micro-rpc-client": "0.1.1",
+    "micro-rpc-client": "0.1.2",
     "microrouter": "2.1.1",
     "moment": "^2.18.1",
     "moment-timezone": "0.5.12",

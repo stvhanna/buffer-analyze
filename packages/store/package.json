@@ -26,7 +26,7 @@
     "@bufferapp/analyze-png-export": "^0.22.0",
     "@bufferapp/analyze-profile-selector": "^0.22.0",
     "@bufferapp/analyze-tabs": "^0.22.0",
-    "@bufferapp/app-sidebar": "1.2.2",
+    "@bufferapp/app-sidebar": "1.2.3",
     "@bufferapp/async-data-fetch": "0.5.36-beta01",
     "@bufferapp/audience-chart": "^0.22.0",
     "@bufferapp/audience-comparison-chart": "^0.22.0",
@@ -35,6 +35,7 @@
     "@bufferapp/compare-chart": "^0.22.0",
     "@bufferapp/contextual-compare": "^0.22.0",
     "@bufferapp/engagement-comparison-chart": "^0.22.0",
+    "@bufferapp/environment": "1.2.3",
     "@bufferapp/hourly-chart": "^0.22.0",
     "@bufferapp/likes-comparison-chart": "^0.22.0",
     "@bufferapp/multi-profile-selector": "^0.22.0",
@@ -47,7 +48,8 @@
     "@bufferapp/report": "^0.22.0",
     "@bufferapp/report-list": "^0.22.0",
     "@bufferapp/summary-table": "^0.22.0",
-    "@bufferapp/top-posts-table": "^0.22.0"
+    "@bufferapp/top-posts-table": "^0.22.0",
+    "@bufferapp/unauthorized-redirect": "1.2.3"
   },
   "devDependencies": {
     "eslint": "3.19.0",

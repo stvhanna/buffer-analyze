@@ -1,3 +1,4 @@
+const ObjectPath = require('object-path');
 const {
   json,
   createError,
@@ -10,7 +11,10 @@ const whitelistedRPCNames = [
 module.exports = next => async (req, res) => {
   const data = await json(req);
   const { name } = data;
-  if (whitelistedRPCNames.includes(name) || req.session) {
+  if (
+    whitelistedRPCNames.includes(name) ||
+    ObjectPath.has(req, 'session.analyze')
+  ) {
     return next(req, res);
   }
   const errorMessage = 'Unauthorized';

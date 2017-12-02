@@ -27,6 +27,7 @@ import { reducer as likesComparisonReducer } from '@bufferapp/likes-comparison-c
 import { reducer as engagementComparisonReducer } from '@bufferapp/engagement-comparison-chart';
 import { reducer as exportPickerReducer } from '@bufferapp/analyze-export-picker';
 import { reducer as commentsComparisonReducer } from '@bufferapp/comments-comparison-chart';
+import { reducer as environmentReducer } from '@bufferapp/environment';
 
 export default combineReducers({
   router: routerReducer,
@@ -57,4 +58,5 @@ export default combineReducers({
   likesComparison: likesComparisonReducer,
   engagementComparison: engagementComparisonReducer,
   commentsComparison: commentsComparisonReducer,
+  environment: environmentReducer,
 });

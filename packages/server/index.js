@@ -73,16 +73,25 @@ app.use(sessionMiddleware.getSession({
   sessionKeys: ['global', 'analyze'],
 }));
 
+app.post('/rpc', (req, res, next) => {
+  rpc(req, res)
+    // catch any unexpected errors
+    .catch((err) => {
+      if (err.statusCode !== 500) {
+        next({
+          httpCode: err.statusCode,
+          error: err.message,
+        });
+      } else {
+        next(err);
+      }
+    });
+});
+
 app.use(sessionMiddleware.validateSession({
   production: isProduction,
   requiredSessionKeys: ['analyze.accessToken'],
 }));
-
-app.post('/rpc', (req, res, next) => {
-  rpc(req, res)
-    // catch any unexpected errors
-    .catch(err => next(err));
-});
 
 app.get('*', (req, res) => res.send(html));
 

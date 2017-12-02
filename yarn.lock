@@ -2,13 +2,13 @@
 # yarn lockfile v1
 
 
-"@bufferapp/app-sidebar@1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@bufferapp/app-sidebar/-/app-sidebar-1.2.2.tgz#39c37188c5c106cfdc9436cb348869de40d6ac70"
+"@bufferapp/app-sidebar@1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@bufferapp/app-sidebar/-/app-sidebar-1.2.3.tgz#bc02453ff23c6a49715a63ae60f9e3bca54df443"
   dependencies:
     "@bufferapp/async-data-fetch" "0.7.4"
-    "@bufferapp/components" "1.0.7"
-    "@bufferapp/session-manager" "0.5.38"
+    "@bufferapp/components" "1.1.0-beta.6"
+    "@bufferapp/session-manager" "0.5.39"
 
 "@bufferapp/async-data-fetch@0.5.25":
   version "0.5.25"
@@ -26,9 +26,9 @@
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/@bufferapp/chronos/-/chronos-0.6.1.tgz#0213dff339459ca510103e5a72f558682a2675dd"
 
-"@bufferapp/components@1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@bufferapp/components/-/components-1.0.7.tgz#d0dfa99fecabd53339eca51a515587ee040bf25b"
+"@bufferapp/components@1.1.0-beta.6":
+  version "1.1.0-beta.6"
+  resolved "https://registry.yarnpkg.com/@bufferapp/components/-/components-1.1.0-beta.6.tgz#61782a8fe78e128e5011c76075600a17cca846d5"
   dependencies:
     "@bufferapp/react-keyframes" "0.2.5"
     prop-types "15.5.10"
@@ -44,6 +44,12 @@
     react-autocomplete "1.7.2"
     react-day-picker "6.2.1"
 
+"@bufferapp/environment@1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@bufferapp/environment/-/environment-1.2.3.tgz#bf5aebd58375785d2ee6bd625faba2af9095f847"
+  dependencies:
+    "@bufferapp/async-data-fetch" "0.7.4"
+
 "@bufferapp/logger@0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@bufferapp/logger/-/logger-0.7.0.tgz#623b519e39bda4c20201fca16f0943c89b42a0b9"
@@ -52,9 +58,9 @@
     fluent-logger "2.2.0"
     on-finished "2.3.0"
 
-"@bufferapp/micro-rpc@0.1.6":
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/@bufferapp/micro-rpc/-/micro-rpc-0.1.6.tgz#104417af8c4940c92d45164cc097d5d38fd7d957"
+"@bufferapp/micro-rpc@0.1.7":
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@bufferapp/micro-rpc/-/micro-rpc-0.1.7.tgz#a97782dc88cf476278911287728bef538adb25b9"
 
 "@bufferapp/react-keyframes@0.2.4":
   version "0.2.4"
@@ -71,9 +77,9 @@
     micro-rpc-client "0.1.2"
     object-path "0.11.4"
 
-"@bufferapp/session-manager@0.5.38":
-  version "0.5.38"
-  resolved "https://registry.yarnpkg.com/@bufferapp/session-manager/-/session-manager-0.5.38.tgz#7e0a82af35b9772dd08d465872832c8874606285"
+"@bufferapp/session-manager@0.5.39":
+  version "0.5.39"
+  resolved "https://registry.yarnpkg.com/@bufferapp/session-manager/-/session-manager-0.5.39.tgz#fa8753005976682ad7a6830ac17b5573cc4161c0"
   dependencies:
     micro-rpc-client "0.1.2"
     object-path "0.11.4"
@@ -81,6 +87,13 @@
 "@bufferapp/shutdown-helper@0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@bufferapp/shutdown-helper/-/shutdown-helper-0.2.0.tgz#d43bbba845e30e411dda76a7b7629e11160e5395"
+
+"@bufferapp/unauthorized-redirect@1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@bufferapp/unauthorized-redirect/-/unauthorized-redirect-1.2.3.tgz#c4ae21a2d6f0557920a92d6e8b841db67b9d6f67"
+  dependencies:
+    "@bufferapp/async-data-fetch" "0.7.4"
+    "@bufferapp/session-manager" "0.5.39"
 
 "@hypnosphi/fuse.js@^3.0.9":
   version "3.0.9"
@@ -5871,12 +5884,6 @@ merge@^1.1.3:
 methods@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
-
-micro-rpc-client@0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/micro-rpc-client/-/micro-rpc-client-0.1.1.tgz#9eb199a004b04cbdf6ecc108dc1f65283c2b2bbd"
-  dependencies:
-    isomorphic-fetch "^2.2.1"
 
 micro-rpc-client@0.1.2:
   version "0.1.2"
