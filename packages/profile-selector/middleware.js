@@ -2,6 +2,7 @@
 import { push, LOCATION_CHANGE } from 'react-router-redux';
 import { actions as reportActions } from '@bufferapp/report-list';
 import { actionTypes } from '@bufferapp/async-data-fetch';
+import { actions as performanceActions } from '@bufferapp/performance-tracking';
 import { actions as profilesActions, actionTypes as profileActionTypes } from './reducer';
 
 
@@ -60,6 +61,7 @@ export default ({ dispatch, getState }) => next => (action) => {
         const firstProfile = action.result[0];
         dispatch(profilesActions.selectProfile(firstProfile.id, firstProfile.service));
       }
+      dispatch(performanceActions.measureFromNavigationStart({ name: 'firstMeaningfulPaint' }));
       break;
     case profileActionTypes.SELECT_PROFILE_SERVICE: {
       const allProfiles = getState().profiles.profiles;
