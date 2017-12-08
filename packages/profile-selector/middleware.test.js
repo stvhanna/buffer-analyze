@@ -1,3 +1,4 @@
+import { actions as performanceActions } from '@bufferapp/performance-tracking';
 import { actionTypes } from '@bufferapp/async-data-fetch';
 import { actions as reportActions } from '@bufferapp/report-list';
 import { push, LOCATION_CHANGE } from 'react-router-redux';
@@ -78,6 +79,16 @@ describe('middleware', () => {
     };
     invoke(action);
     expect(store.dispatch).toHaveBeenCalledWith(profileActions.selectProfile(profileId, 'twitter'));
+    expect(next).toHaveBeenCalledWith(action);
+  });
+
+  it('should track first meaningful paint on fetch', () => {
+    const { store, next, invoke } = getMiddlewareElements();
+    const action = {
+      type: `profiles_${actionTypes.FETCH_SUCCESS}`,
+    };
+    invoke(action);
+    expect(store.dispatch).toHaveBeenCalledWith(performanceActions.measureFromNavigationStart({ name: 'firstMeaningfulPaint' }));
     expect(next).toHaveBeenCalledWith(action);
   });
 
