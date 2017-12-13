@@ -21,7 +21,7 @@ describe('rpc/posts_summary', () => {
       .toBe('fetch analytics posts summary for profiles and pages');
   });
 
-  it('should request for the past week', () => {
+  it('should request metrics to Analyze Api for Instagram', () => {
     const end = moment().subtract(1, 'days').unix();
     const start = moment().subtract(7, 'days').unix();
 
@@ -29,6 +29,40 @@ describe('rpc/posts_summary', () => {
       startDate: start,
       endDate: end,
       profileId,
+      profileService: 'instagram',
+    }, {
+      session: {
+        analyze: {
+          accessToken: token,
+        },
+      },
+    });
+
+    expect(rp.mock.calls[0])
+      .toEqual([{
+        uri: `${process.env.ANALYZE_API_ADDR}/metrics/totals`,
+        method: 'POST',
+        strictSSL: false,
+        qs: {
+          access_token: token,
+          start_date: moment.unix(start).format('MM/DD/YYYY'),
+          end_date: moment.unix(end).format('MM/DD/YYYY'),
+          profile_id: profileId,
+        },
+        json: true,
+      }]);
+  });
+
+  it('should request for the past week', () => {
+    rp.mockClear();
+    const end = moment().subtract(1, 'days').unix();
+    const start = moment().subtract(7, 'days').unix();
+
+    postsSummary.fn({
+      startDate: start,
+      endDate: end,
+      profileId,
+      profileService: 'twitter',
     }, {
       session: {
         analyze: {
@@ -46,6 +80,7 @@ describe('rpc/posts_summary', () => {
           access_token: token,
           start_date: moment.unix(start).format('MM/DD/YYYY'),
           end_date: moment.unix(end).format('MM/DD/YYYY'),
+          profile_id: profileId,
         },
         json: true,
       }]);
@@ -59,6 +94,7 @@ describe('rpc/posts_summary', () => {
       startDate,
       endDate,
       profileId,
+      profileService: 'twitter',
     }, {
       session: {
         analyze: {
@@ -79,6 +115,7 @@ describe('rpc/posts_summary', () => {
           access_token: token,
           start_date: start,
           end_date: end,
+          profile_id: profileId,
         },
         json: true,
       }]);
@@ -88,7 +125,10 @@ describe('rpc/posts_summary', () => {
     rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_RESPONSE));
     rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_RESPONSE));
 
-    const postsSummaryData = await postsSummary.fn({ profileId }, {
+    const postsSummaryData = await postsSummary.fn({
+      profileId,
+      profileService: 'facebook',
+    }, {
       session: {
         analyze: {
           accessToken: token,

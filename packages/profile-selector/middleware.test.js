@@ -110,18 +110,6 @@ describe('middleware', () => {
     expect(next).toHaveBeenCalledWith(action);
   });
 
-  it('should select a profile after a service is selected on side-navbar', () => {
-    const { store, next, invoke } = getMiddlewareElements();
-    const action = {
-      type: `${profileActionTypes.SELECT_PROFILE_SERVICE}`,
-      profileService: 'facebook',
-
-    };
-    invoke(action);
-    expect(store.dispatch).toHaveBeenCalledWith(profileActions.selectProfile('122222222'));
-    expect(next).toHaveBeenCalledWith(action);
-  });
-
   it('should select the first profile if profileService is not specified (comparison page)', () => {
     const { store, next, invoke } = getMiddlewareElements();
     const action = {
@@ -161,8 +149,13 @@ describe('middleware', () => {
       profileService: 'facebook',
 
     };
+    const expectedAction = {
+      type: `${profileActionTypes.SELECT_PROFILE}`,
+      profileService: 'facebook',
+      id: '122222222',
+    };
     invoke(action);
-    expect(store.dispatch).toHaveBeenCalledWith(profileActions.selectProfile('122222222'));
+    expect(store.dispatch).toHaveBeenCalledWith(expectedAction);
     expect(next).toHaveBeenCalledWith(action);
   });
 

@@ -26,6 +26,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
         name: 'posts_summary',
         args: {
           profileId: action.id,
+          profileService: action.profileService,
           startDate: getState().date.startDate,
           endDate: getState().date.endDate,
         },
@@ -36,6 +37,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
         name: 'posts_summary',
         args: {
           profileId: getState().profiles.selectedProfileId,
+          profileService: getState().profiles.selectedProfileService,
           startDate: action.startDate,
           endDate: action.endDate,
         },
