@@ -7,7 +7,7 @@ module.exports = {
   output: {
     path: __dirname,
     filename: 'bundle.js',
-    publicPath: '/static/',
+    publicPath: '//analyze.local.buffer.com:8080/static/',
   },
   plugins: [],
   resolve: {

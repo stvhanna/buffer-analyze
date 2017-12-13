@@ -1,7 +1,6 @@
 const http = require('http');
 const express = require('express');
 const logMiddleware = require('@bufferapp/logger/middleware');
-const RPCClient = require('micro-rpc-client');
 const bugsnag = require('bugsnag');
 const fs = require('fs');
 const { join } = require('path');
@@ -28,22 +27,7 @@ let bugsnagScript = '';
 const isProduction = process.env.NODE_ENV === 'production';
 app.set('isProduction', isProduction);
 
-if (!isProduction) {
-  /* eslint-disable global-require */
-  require('babel-polyfill');
-  const webpack = require('webpack');
-  const config = require('./webpack.config.dev');
-  const webpackMiddleware = require('webpack-dev-middleware');
-  const webpackHotMiddleware = require('webpack-hot-middleware');
-  /* eslint-enable global-require */
-
-  const compiler = webpack(config);
-  app.use(webpackMiddleware(compiler, {
-    publicPath: config.output.publicPath,
-    reload: true,
-  }));
-  app.use(webpackHotMiddleware(compiler));
-} else {
+if (isProduction) {
   staticAssets = JSON.parse(fs.readFileSync(join(__dirname, 'staticAssets.json'), 'utf8'));
   if (process.env.BUGSNAG_KEY) {
     bugsnag.register(process.env.BUGSNAG_KEY);
@@ -53,6 +37,10 @@ if (!isProduction) {
     bugsnagScript = `<script src="//d2wy8f7a9ursnm.cloudfront.net/bugsnag-3.min.js"
                               data-apikey="${process.env.BUGSNAG_KEY}"></script>`;
   }
+} else {
+  staticAssets = {
+    'bundle.js': '//analyze.local.buffer.com:8080/static/bundle.js',
+  };
 }
 
 const html = fs.readFileSync(join(__dirname, 'index.html'), 'utf8')

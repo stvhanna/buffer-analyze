@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const fs = require('fs');
 const config = require('./webpack.config');
 
 // NOTE: Bugsnag will not notify in local setup with current weback configuration
@@ -7,11 +8,27 @@ config.devtool = 'cheap-module-eval-source-map';
 
 config.entry.unshift(
   'react-hot-loader/patch',
-  'webpack-hot-middleware/client',
 );
 
 config.plugins.unshift(
   new webpack.HotModuleReplacementPlugin(),
+  new webpack.NamedModulesPlugin(),
 );
+
+config.devServer = {
+  hot: true,
+  publicPath: config.output.publicPath,
+  contentBase: false,
+  port: 8080,
+  host: 'analyze.local.buffer.com',
+  headers: {
+    'Access-Control-Allow-Origin': '*',
+  },
+  https: {
+    key: fs.readFileSync('../reverseproxy/certs/local.buffer.com-wildcard.key'),
+    cert: fs.readFileSync('../reverseproxy/certs/local.buffer.com-wildcard.crt'),
+  },
+};
+
 
 module.exports = config;
