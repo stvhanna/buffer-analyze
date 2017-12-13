@@ -12,6 +12,7 @@
     "lint-head": "git diff --name-only |  grep .jsx*$ | xargs eslint -c .eslintrc.json --stdin --quiet -f table",
     "lint": "yarn run lint-branch && yarn run lint-head",
     "start": "cd ./packages/server/ && yarn start",
+		"watch": "webpack-dev-server --config ./packages/server/webpack.config.dev.js --colors",
     "publish": "echo \"will eventually run: lerna publish\"",
     "build": "webpack  --config ./packages/server/webpack.config.js --output-path=`pwd`"
   },
@@ -59,7 +60,7 @@
     "react": "16.0.0",
     "react-addons-test-utils": "15.5.1",
     "react-dom": "16.0.0",
-    "react-hot-loader": "3.0.0-beta.7",
+    "react-hot-loader": "3.1.2",
     "react-redux": "5.0.4",
     "react-router": "4.2.0",
     "react-router-dom": "4.1.2",
@@ -75,6 +76,7 @@
     "uuid": "3.0.1",
     "webpack": "2.6.1",
     "webpack-dev-middleware": "1.10.2",
+		"webpack-dev-server": "^2.9.7",
     "webpack-hot-middleware": "2.18.0"
   },
   "dependencies": {

@@ -14,7 +14,9 @@ A better way to measure performance on social media 📈📉
 
 ## Quick Start
 
-**Coming Soon**
+1. Run `yarn` in order to install all dependencies.
+2. Run `yarn watch` in order to use Webpack dev server to watch for file changes and rebundle on the fly (and trigger HMR!).
+3. Enjoy ✨
 
 ## NPM Commands
 

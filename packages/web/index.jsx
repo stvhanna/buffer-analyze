@@ -30,8 +30,14 @@ const renderApp = (AppComponent) => {
 renderApp(App);
 
 if (module.hot) {
-  module.hot.accept('./components/App', () => {
+  module.hot.accept([
+    '../store/index.js',
+    '../store/reducers.js',
+    './components/App/index.jsx',
+  ], () => {
     const newApp = require('./components/App').default; // eslint-disable-line global-require
+    const newReducers = require('../store/reducers').default; // eslint-disable-line global-require
+    store.replaceReducer(newReducers);
     renderApp(newApp);
   });
 }
