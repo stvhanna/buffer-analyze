@@ -71,7 +71,7 @@ export default ({ dispatch, getState }) => next => (action) => {
           allProfiles,
           action.profileService,
         );
-        dispatch(profilesActions.selectProfile(filteredProfiles[0].id));
+        dispatch(profilesActions.selectProfile(filteredProfiles[0].id, action.profileService));
       } else {
         // do not filter profiles & select the first one
         dispatch(profilesActions.selectProfile(allProfiles[0].id));
