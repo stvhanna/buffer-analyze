@@ -28,7 +28,7 @@ const Legend = ({ metric, secondaryMetric }) =>
       <Text size="small">{metric.label}</Text>
     </li>
     { secondaryMetric && <li style={legendItem}>
-      <ColorIcon circle metric={secondaryMetric.label} />
+      <ColorIcon metric={secondaryMetric.label} />
       <Text size="small">{secondaryMetric.label}</Text>
     </li> }
   </ul>;

@@ -24,14 +24,6 @@ const toggleWrapper = {
   marginLeft: '0.75rem',
 };
 
-const closeButton = {
-  marginTop: 'auto',
-  marginBottom: 'auto',
-  marginLeft: '10px',
-  cursor: 'pointer',
-  lineHeight: '1',
-};
-
 const openButton = {
   display: 'inline-block',
   padding: '7px 11px',
