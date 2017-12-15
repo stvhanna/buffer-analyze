@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import {
-  Text,
   Button,
 } from '@bufferapp/components';
 
 
 import {
   PlusIcon,
+  CloseIcon,
 } from '@bufferapp/components/Icon/Icons';
 
 import Dropdown from '../Dropdown';
@@ -21,7 +21,7 @@ const chartHeader = {
 };
 
 const toggleWrapper = {
-  marginLeft: '1.25rem',
+  marginLeft: '0.75rem',
 };
 
 const closeButton = {
@@ -51,12 +51,14 @@ const SecondaryMetricToggle = (props) => {
         metrics={props.metrics}
         selectedMetric={props.metric}
       />
-      <Button
-        onClick={props.hideSecondaryDropdown}
-        noStyle
-      >
-        <Text size="small" color="geyser"><span style={closeButton}>x</span></Text>
-      </Button>
+      <span style={toggleWrapper}>
+        <Button
+          onClick={props.hideSecondaryDropdown}
+          noStyle
+        >
+          <CloseIcon size="small" />
+        </Button>
+      </span>
     </span>);
   }
   return (<span style={toggleWrapper}>
