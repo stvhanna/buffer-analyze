@@ -57,6 +57,16 @@ spec:
             secretKeyRef:
               key: bugsnag
               name: buffer-analyze-keys
+        - name: AWS_ACCESS_KEY_ID
+          valueFrom:
+            secretKeyRef:
+              key: aws-access-key-id
+              name: buffer-analyze-keys
+        - name: AWS_SECRET_ACCESS_KEY
+          valueFrom:
+            secretKeyRef:
+              key: aws-secret-access-key
+              name: buffer-analyze-keys
         livenessProbe:
           httpGet:
             path: /health-check
