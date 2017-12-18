@@ -75,18 +75,18 @@ ProfileLegend.propTypes = {
   }).isRequired,
 };
 
-const ChartFactory = ({ charts, moveUp, moveDown, deleteChart }) =>
+const ChartFactory = ({ charts, moveUp, moveDown, deleteChart, exporting }) =>
   charts.map((chart, index) => (
     <Separator key={chart._id}>
       {React.createElement(CHARTS[chart.chart_id].title)}
-      <ChartEditButtons
+      {!exporting && <ChartEditButtons
         moveUp={moveUp}
         moveDown={moveDown}
         deleteChart={deleteChart}
         id={chart._id}
         first={index === 0}
         last={index === charts.length - 1}
-      />
+      />}
       <ProfileLegend profile={chart.profile} />
       {React.createElement(CHARTS[chart.chart_id].chart, {
         ...chart,

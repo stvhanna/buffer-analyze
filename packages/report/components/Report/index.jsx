@@ -27,10 +27,10 @@ const Title = styled.h1`
 
 const Report =
   ({ name, dateRange, charts, loading,
-    edit, saveChanges, editName, moveUp, moveDown, deleteChart }) => {
+    edit, saveChanges, editName, moveUp, moveDown, deleteChart, exporting }) => {
     if (loading) return '...loading';
     return (
-      <Card>
+      <div>
         <Text>
           { edit && <EditTitle name={name} saveChanges={saveChanges} />}
           { !edit && <div><Button noStyle onClick={editName}><Title>{name}</Title></Button></div> }
@@ -41,8 +41,9 @@ const Report =
           moveUp={moveUp}
           moveDown={moveDown}
           deleteChart={deleteChart}
+          exporting={exporting}
         />
-      </Card>
+      </div>
     );
   };
 

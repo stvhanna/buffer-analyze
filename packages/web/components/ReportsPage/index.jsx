@@ -35,6 +35,15 @@ const Header = styled.header`
   align-items: center;
 `;
 
+const Card = styled.section`
+  width: 880px;
+  background: #FFFFFF;
+  border: 1px solid #E2E8ED;
+  box-shadow: 0px 0px 10px rgba(48, 71, 89, 0.05);
+  border-radius: 5px;
+  padding: 4.5rem 4rem;
+`;
+
 const ReportsPage = ({ location, dispatch }) => (
   <Page>
     <NavSidebar route={location.pathname} />
@@ -44,7 +53,9 @@ const ReportsPage = ({ location, dispatch }) => (
         <DatePicker staticData />
       </Header>
       <Content>
-        <Report />
+        <Card>
+          <Report />
+        </Card>
       </Content>
     </Container>
   </Page>

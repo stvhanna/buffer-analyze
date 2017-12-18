@@ -649,6 +649,15 @@ autoprefixer@^7.1.1, autoprefixer@^7.1.6:
     postcss "^6.0.13"
     postcss-value-parser "^3.2.3"
 
+aws-sdk@2.4.7:
+  version "2.4.7"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.4.7.tgz#a38e4e46e6229514794ba03b686d6b23b05aebdf"
+  dependencies:
+    jmespath "0.15.0"
+    sax "1.1.5"
+    xml2js "0.4.15"
+    xmlbuilder "2.6.2"
+
 aws-sign2@~0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.6.0.tgz#14342dd38dbcc94d0e5b87d763cd63612c0e794f"

@@ -4,6 +4,7 @@ import AppSidebar from '@bufferapp/app-sidebar';
 import DefaultPage from '../DefaultPage';
 import ReportsPage from '../ReportsPage';
 import ReportsList from '../ReportsList';
+import ReportExport from '../ReportExport';
 import InsightsPage from '../InsightsPage';
 import ComparisonsPage from '../ComparisonsPage';
 
@@ -17,8 +18,8 @@ const contentStyle = {
   height: '100vh',
 };
 
-export default () =>
-  (<div style={appStyle}>
+const App = () =>
+  <div style={appStyle}>
     <AppSidebar activeProduct="analyze" />
     <div style={contentStyle}>
       <Switch>
@@ -41,4 +42,14 @@ export default () =>
         <Route component={DefaultPage} />
       </Switch>
     </div>
-  </div>);
+  </div>
+;
+
+export default () =>
+  <Switch>
+    <Route
+      path="/export/reports/:id"
+      component={ReportExport}
+    />
+    <Route component={App} />
+  </Switch>;

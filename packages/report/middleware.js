@@ -6,8 +6,14 @@ import { actionTypes } from './reducer';
 export const DIRECTION_UP = 'up';
 export const DIRECTION_DOWN = 'down';
 
-const getReport = (reportId, state) =>
-  state.reportList.reports.find(report => report._id === reportId);
+const getReportId = (pathname) => {
+  const routeMatch = pathname.match(/reports\/(.+)$/);
+  return routeMatch ? routeMatch[1] : null;
+};
+const isReportDetailRoute = pathname => getReportId(pathname) !== null;
+
+const getReport = (reportId, reports) =>
+  reports.find(report => report._id === reportId);
 
 const addProfileInformationToCharts = (charts, state) =>
   charts.map(chart => ({
@@ -27,41 +33,57 @@ const addProfileServiceToReportsCharts = (report, state) =>
   });
 
 export default store => next => (action) => { // eslint-disable-line no-unused-vars
+  const state = store.getState();
   switch (action.type) {
     case `get_report_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
       action = {
         ...action,
-        result: addProfileInformationToCharts(action.result, store.getState()),
+        result: addProfileInformationToCharts(action.result, state),
       };
       break;
     case dateActionTypes.SET_DATE_RANGE:
       store.dispatch(actions.fetch({
         name: 'get_report',
         args: {
-          ...store.getState().report,
+          ...state.report,
           startDate: action.startDate,
           endDate: action.endDate,
         },
       }));
       break;
+    case `list_reports_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
+      if (isReportDetailRoute(state.router.location.pathname)) {
+        store.dispatch(actions.fetch({
+          name: 'get_report',
+          args: {
+            ...addProfileServiceToReportsCharts(
+              getReport(getReportId(state.router.location.pathname), action.result),
+              state,
+            ),
+            startDate: state.date.startDate,
+            endDate: state.date.endDate,
+          },
+        }));
+      }
+      break;
     case listActionTypes.VIEW_REPORT:
-      store.dispatch(actions.fetch({
-        name: 'get_report',
-        args: {
-          ...addProfileServiceToReportsCharts(
-            getReport(action.id, store.getState()),
-            store.getState(),
-          ),
-          startDate: store.getState().date.startDate,
-          endDate: store.getState().date.endDate,
-        },
-      }));
+      const report = getReport(action.id, state.reportList.reports);
+      if (report) {
+        store.dispatch(actions.fetch({
+          name: 'get_report',
+          args: {
+            ...addProfileServiceToReportsCharts(report, state),
+            startDate: state.date.startDate,
+            endDate: state.date.endDate,
+          },
+        }));
+      }
       break;
     case actionTypes.SAVE_CHANGES:
       store.dispatch(actions.fetch({
         name: 'update_report',
         args: {
-          ...store.getState().report,
+          ...state.report,
           name: action.name,
         },
       }));
@@ -72,7 +94,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
         args: {
           direction: DIRECTION_UP,
           chartId: action.chartId,
-          reportId: store.getState().report.id,
+          reportId: state.report.id,
         },
       }));
       break;
@@ -82,7 +104,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
         args: {
           direction: DIRECTION_DOWN,
           chartId: action.chartId,
-          reportId: store.getState().report.id,
+          reportId: state.report.id,
         },
       }));
       break;
@@ -91,7 +113,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
         name: 'delete_chart',
         args: {
           chartId: action.chartId,
-          reportId: store.getState().report.id,
+          reportId: state.report.id,
         },
       }));
       break;
