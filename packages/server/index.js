@@ -91,6 +91,7 @@ app.get('/report_to_pdf', (req, res) => {
       javascriptDelay: 30000,
       cookie: req.cookies.buffer_session,
     }),
+    LogType: 'Tail',
   };
   const lambda = new AWS.Lambda({
     region: 'us-east-1',
