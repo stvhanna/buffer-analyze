@@ -84,9 +84,9 @@ app.use(sessionMiddleware.validateSession({
 
 app.get('/report_to_pdf', (req, res) => {
   const params = {
-    FunctionName: 'generatePDFDev',
+    FunctionName: 'reportToPDF',
     Payload: JSON.stringify({
-      url: req.params.url,
+      url: req.query.url,
       orientation: 'portrait',
       javascriptDelay: 30000,
       cookie: req.cookies.buffer_session,
