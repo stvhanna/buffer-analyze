@@ -30,7 +30,7 @@ const Report =
     edit, saveChanges, editName, moveUp, moveDown, deleteChart, exporting }) => {
     if (loading) return '...loading';
     return (
-      <div>
+      <div id="report-page">
         <Text>
           { edit && <EditTitle name={name} saveChanges={saveChanges} />}
           { !edit && <div><Button noStyle onClick={editName}><Title>{name}</Title></Button></div> }
