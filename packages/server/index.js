@@ -89,7 +89,10 @@ app.get('/report_to_pdf', (req, res) => {
       url: req.query.url,
       orientation: 'portrait',
       javascriptDelay: 30000,
-      cookie: req.cookies.buffer_session,
+      cookie: {
+        name: 'buffer_session',
+        value: req.cookies.buffer_session,
+      },
     }),
     LogType: 'Tail',
   };
