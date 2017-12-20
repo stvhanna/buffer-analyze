@@ -104,9 +104,13 @@ app.get('/report_to_pdf', (req, res) => {
       res.send(err);
     } else {
       const payload = JSON.parse(data.Payload);
-      const pdf = Buffer.from(payload.contents, 'base64');
-      res.type('application/pdf');
-      res.end(pdf, 'binary');
+      if (payload.errorMessage) {
+        res.send(payload.errorMessage);
+      } else {
+        const pdf = Buffer.from(payload.contents, 'base64');
+        res.type('application/pdf');
+        res.end(pdf, 'binary');
+      }
     }
   });
 });

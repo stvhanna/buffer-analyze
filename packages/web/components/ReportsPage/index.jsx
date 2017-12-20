@@ -51,6 +51,15 @@ const ReportsPage = ({ location, dispatch }) => (
       <Header>
         <Button onClick={() => dispatch(push('/reports'))}>Back to Reports</Button>
         <DatePicker staticData />
+        <a
+          href="#export"
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={(e) => {
+            e.stopPropagation();
+            e.target.href = window.location.origin + '/report_to_pdf?url=' + window.location.origin + '/export' + window.location.pathname;
+          }}
+        >Export to PDF</a>
       </Header>
       <Content>
         <Card>
