@@ -56,6 +56,8 @@ class Report extends React.Component {
           const ulList = module.getElementsByTagName('ul');
           if (ulList.length === 2) {
             height -= moduleHeight;
+            const [ title, subtitle, list ] = module.children;
+            height += title.clientHeight + subtitle.clientHeight;
             const listItems = ulList[1].children;
             Array.prototype.forEach.call(listItems, (li) => {
               const liHeight = li.clientHeight;
