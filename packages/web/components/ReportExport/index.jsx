@@ -6,7 +6,8 @@ import styled from 'styled-components';
 
 const Content = styled.div`
   max-width: 65rem;
-  width: 100%;
+  width: 880px;
+  padding: 0 4rem;
   margin: 2.8rem auto;
 `;
 
