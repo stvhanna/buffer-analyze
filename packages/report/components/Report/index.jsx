@@ -9,15 +9,6 @@ import ChartFactory from '../ChartFactory';
 import DateRange from '../DateRange';
 import EditTitle from '../EditTitle';
 
-const Card = styled.section`
-  width: 880px;
-  background: #FFFFFF;
-  border: 1px solid #E2E8ED;
-  box-shadow: 0px 0px 10px rgba(48, 71, 89, 0.05);
-  border-radius: 5px;
-  padding: 4.5rem 4rem;
-`;
-
 const Title = styled.h1`
   color: #343E47;
   font-size: 26px;
@@ -25,9 +16,67 @@ const Title = styled.h1`
   margin: 0 0 .5rem;
 `;
 
-const Report =
-  ({ name, dateRange, charts, loading,
-    edit, saveChanges, editName, moveUp, moveDown, deleteChart, exporting }) => {
+class Report extends React.Component {
+  static defaultProps = {
+    loading: false,
+    exporting: false,
+    edit: false,
+    dateRange: {},
+    charts: [],
+  };
+
+  static propTypes = {
+    loading: PropTypes.bool,
+    exporting: PropTypes.bool,
+    edit: PropTypes.bool,
+    dateRange: PropTypes.shape({
+      startDate: PropTypes.string,
+      endDate: PropTypes.string,
+    }),
+    name: PropTypes.string.isRequired,
+    saveChanges: PropTypes.func.isRequired,
+    charts: PropTypes.arrayOf(PropTypes.shape({
+      chart_id: PropTypes.string,
+    }).isRequired),
+    editName: PropTypes.func.isRequired,
+    moveUp: PropTypes.func.isRequired,
+    moveDown: PropTypes.func.isRequired,
+    deleteChart: PropTypes.func.isRequired,
+  };
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.loading && !this.props.loading && this.props.exporting) {
+      let height = 0;
+      const pdfHeight = 1122; // 842 pt to px
+      const reportModules = document.getElementById('report-page').children;
+      Array.prototype.forEach.call(reportModules, (module) => {
+        const moduleHeight = module.clientHeight;
+        height += moduleHeight;
+        if (height >= pdfHeight) {
+          const ulList = module.getElementsByTagName('ul');
+          if (ulList.length === 2) {
+            height -= moduleHeight;
+            const listItems = ulList[1].children;
+            Array.prototype.forEach.call(listItems, (li) => {
+              const liHeight = li.clientHeight;
+              height += liHeight;
+              if (height >= pdfHeight) {
+                li.style.setProperty('page-break-after', 'always');
+                height = liHeight;
+              }
+            });
+          } else {
+            module.style.setProperty('page-break-after', 'always');
+            height = moduleHeight;
+          }
+        }
+      });
+    }
+  }
+
+  render() {
+    const { name, dateRange, charts, loading,
+      edit, saveChanges, editName, moveUp, moveDown, deleteChart, exporting } = this.props;
     if (loading) return '...loading';
     return (
       <div id="report-page">
@@ -45,31 +94,7 @@ const Report =
         />
       </div>
     );
-  };
-
-Report.defaultProps = {
-  loading: false,
-  edit: false,
-  dateRange: {},
-  charts: [],
-};
-
-Report.propTypes = {
-  loading: PropTypes.bool,
-  edit: PropTypes.bool,
-  dateRange: PropTypes.shape({
-    startDate: PropTypes.string,
-    endDate: PropTypes.string,
-  }),
-  name: PropTypes.string.isRequired,
-  saveChanges: PropTypes.func.isRequired,
-  charts: PropTypes.arrayOf(PropTypes.shape({
-    chart_id: PropTypes.string,
-  }).isRequired),
-  editName: PropTypes.func.isRequired,
-  moveUp: PropTypes.func.isRequired,
-  moveDown: PropTypes.func.isRequired,
-  deleteChart: PropTypes.func.isRequired,
-};
+  }
+}
 
 export default Report;
