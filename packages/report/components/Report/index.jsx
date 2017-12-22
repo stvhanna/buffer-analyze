@@ -64,6 +64,7 @@ class Report extends React.Component {
               height += liHeight;
               if (height >= pdfHeight) {
                 li.style.setProperty('page-break-before', 'always');
+                li.style.setProperty('border-top-color', getComputedStyle(li).getPropertyValue('border-bottom-color'));
                 li.style.setProperty('border-top-width', '1px');
                 li.style.setProperty('border-top-style', 'solid');
                 li.style.setProperty('margin-top', '2.8rem');
