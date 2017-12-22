@@ -64,6 +64,8 @@ class Report extends React.Component {
               height += liHeight;
               if (height >= pdfHeight) {
                 li.style.setProperty('page-break-before', 'always');
+                li.style.setProperty('border-top-width', '1px');
+                li.style.setProperty('border-top-style', 'solid');
                 height = liHeight;
               }
             });
