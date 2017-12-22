@@ -3,14 +3,6 @@ const PDF_HEIGHT = 1122; // 842 pt to px
 class PDFFormatter {
   currentPageHeight = 0;
 
-  needsPageBreak() {
-    return this.currentPageHeight >= PDF_HEIGHT;
-  }
-
-  addToCurrentPage(element) {
-    this.currentPageHeight += element.clientHeight;
-  }
-
   formatPage() {
     const modules = document.getElementById('report-page').children;
     Array.prototype.forEach.call(modules, (module) => {
@@ -21,16 +13,33 @@ class PDFFormatter {
     });
   }
 
-  static canBeBrokenDownIntoMultiplePages (element) {
-    return element.getElementsByTagName('aside').length > 0;
+  needsPageBreak() {
+    return this.currentPageHeight >= PDF_HEIGHT;
+  }
+
+  addToCurrentPage(element) {
+    this.currentPageHeight += element.clientHeight;
   }
 
   removeFromCurrentPage(element) {
     this.currentPageHeight -= element.clientHeight;
   }
 
-  addHeaderToCurrentPage(title, subtitle) {
-    this.currentPageHeight += title.clientHeight + subtitle.clientHeight;
+  static canBeBrokenDownIntoMultiplePages (element) {
+    return element.getElementsByTagName('aside').length > 0;
+  }
+
+  addPageBreak(element) {
+    if (PDFFormatter.canBeBrokenDownIntoMultiplePages(element)) {
+      const [title, subtitle, list] = element.children;
+      this.removeFromCurrentPage(element);
+      this.addToCurrentPage(title);
+      this.addToCurrentPage(subtitle);
+      const listItems = list.getElementsByTagName('ul')[0].children;
+      this.breakIntoPages(listItems);
+    } else {
+      this.addNewPage(element);
+    }
   }
 
   addNewPage(element) {
@@ -38,15 +47,14 @@ class PDFFormatter {
     this.currentPageHeight = element.clientHeight;
   }
 
-  addPageBreak(element) {
-    if (PDFFormatter.canBeBrokenDownIntoMultiplePages(element)) {
-      const [title, subtitle, list] = element.children;
-      this.removeFromCurrentPage(element);
-      this.addHeaderToCurrentPage(title, subtitle);
-      this.breakIntoPages(list.getElementsByTagName('ul')[0]);
-    } else {
-      this.addNewPage(element);
-    }
+  breakIntoPages(listItems) {
+    Array.prototype.forEach.call(listItems, (li) => {
+      this.addToCurrentPage(li);
+      if (this.needsPageBreak()) {
+        this.addNewPage(li);
+        PDFFormatter.addBorder(li);
+      }
+    });
   }
 
   static addBorder(element) {
@@ -55,16 +63,6 @@ class PDFFormatter {
     element.style.setProperty('border-top-width', '1px');
     element.style.setProperty('border-top-style', 'solid');
     element.style.setProperty('margin-top', '2.8rem');
-  }
-
-  breakIntoPages(items) {
-    Array.prototype.forEach.call(items, (li) => {
-      this.addToCurrentPage(li);
-      if (this.needsPageBreak()) {
-        this.addNewPage(li);
-        PDFFormatter.addBorder(li);
-      }
-    });
   }
 }
 
