@@ -2,6 +2,7 @@ import { actions, actionTypes as asyncDataFetchActionTypes } from '@bufferapp/as
 import { actionTypes as dateActionTypes } from '@bufferapp/analyze-date-picker';
 import { actionTypes as listActionTypes } from '@bufferapp/report-list';
 import { actionTypes } from './reducer';
+import PDFFormatter from './PDFFormatter';
 
 export const DIRECTION_UP = 'up';
 export const DIRECTION_DOWN = 'down';
@@ -32,8 +33,11 @@ const addProfileServiceToReportsCharts = (report, state) =>
     })),
   });
 
+const formatter = new PDFFormatter();
+
 export default store => next => (action) => { // eslint-disable-line no-unused-vars
   const state = store.getState();
+  let report;
   switch (action.type) {
     case `get_report_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
       action = {
@@ -67,7 +71,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
       }
       break;
     case listActionTypes.VIEW_REPORT:
-      const report = getReport(action.id, state.reportList.reports);
+      report = getReport(action.id, state.reportList.reports);
       if (report) {
         store.dispatch(actions.fetch({
           name: 'get_report',
@@ -116,6 +120,9 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
           reportId: state.report.id,
         },
       }));
+      break;
+    case actionTypes.PARSE_PAGE_BREAKS:
+      formatter.formatPage();
       break;
     default:
       break;

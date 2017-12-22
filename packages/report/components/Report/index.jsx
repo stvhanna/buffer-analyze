@@ -45,39 +45,16 @@ class Report extends React.Component {
   };
 
   componentDidUpdate(prevProps) {
-    if (prevProps.loading && !this.props.loading && this.props.exporting) {
-      let height = 0;
-      const pdfHeight = 1122; // 842 pt to px
-      const reportModules = document.getElementById('report-page').children;
-      Array.prototype.forEach.call(reportModules, (module) => {
-        const moduleHeight = module.clientHeight;
-        height += moduleHeight;
-        if (height >= pdfHeight) {
-          const ulList = module.getElementsByTagName('ul');
-          if (ulList.length === 2) {
-            height -= moduleHeight;
-            const [title, subtitle] = module.children;
-            height += title.clientHeight + subtitle.clientHeight;
-            const listItems = ulList[1].children;
-            Array.prototype.forEach.call(listItems, (li) => {
-              const liHeight = li.clientHeight;
-              height += liHeight;
-              if (height >= pdfHeight) {
-                li.style.setProperty('page-break-before', 'always');
-                li.style.setProperty('border-top-color', getComputedStyle(li).getPropertyValue('border-bottom-color'));
-                li.style.setProperty('border-top-width', '1px');
-                li.style.setProperty('border-top-style', 'solid');
-                li.style.setProperty('margin-top', '2.8rem');
-                height = liHeight;
-              }
-            });
-          } else {
-            module.style.setProperty('page-break-before', 'always');
-            height = moduleHeight;
-          }
-        }
-      });
+    if (this.shouldAddPageBreaks(prevProps)) {
+      this.props.parsePageBreaks();
     }
+  }
+
+  shouldAddPageBreaks(prevProps) {
+    const hasStoppedLoading = prevProps.loading && !this.props.loading;
+    const isExportView = this.props.exporting;
+
+    return hasStoppedLoading && isExportView;
   }
 
   render() {
