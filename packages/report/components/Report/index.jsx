@@ -56,7 +56,7 @@ class Report extends React.Component {
           const ulList = module.getElementsByTagName('ul');
           if (ulList.length === 2) {
             height -= moduleHeight;
-            const [ title, subtitle, list ] = module.children;
+            const [title, subtitle] = module.children;
             height += title.clientHeight + subtitle.clientHeight;
             const listItems = ulList[1].children;
             Array.prototype.forEach.call(listItems, (li) => {
@@ -66,6 +66,7 @@ class Report extends React.Component {
                 li.style.setProperty('page-break-before', 'always');
                 li.style.setProperty('border-top-width', '1px');
                 li.style.setProperty('border-top-style', 'solid');
+                li.style.setProperty('margin-top', '2.8rem');
                 height = liHeight;
               }
             });
