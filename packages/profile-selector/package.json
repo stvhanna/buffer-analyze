@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/analyze-profile-selector",
-  "version": "0.24.0",
+  "version": "0.25.0",
   "description": "Profile selector dropdown",
   "main": "index.jsx",
   "scripts": {
@@ -20,7 +20,7 @@
     "verbose": true
   },
   "dependencies": {
-    "@bufferapp/analyze-shared-components": "^0.22.0",
+    "@bufferapp/analyze-shared-components": "^0.25.0",
     "@bufferapp/components": "2.1.1",
     "react-simple-dropdown": "3.0.0"
   },
