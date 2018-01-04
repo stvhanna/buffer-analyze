@@ -548,8 +548,8 @@ exports[`Snapshots Report renders a loading report 1`] = `
 
 exports[`Snapshots Report renders a report in edit mode 1`] = `
 <span>
-  <section
-    className="sc-TOsTZ hQumiL"
+  <div
+    id="report-page"
   >
     <span
       style={
@@ -1999,14 +1999,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         </li>
       </ul>
     </section>
-  </section>
+  </div>
 </span>
 `;
 
 exports[`Snapshots Report renders a report with summary table 1`] = `
 <span>
-  <section
-    className="sc-TOsTZ hQumiL"
+  <div
+    id="report-page"
   >
     <span
       style={
@@ -2048,7 +2048,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
           }
         >
           <h1
-            className="sc-kgAjT bAoxYp"
+            className="sc-TOsTZ fDtncE"
           >
             Weekly Sync Report
           </h1>
@@ -3486,6 +3486,6 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         </li>
       </ul>
     </section>
-  </section>
+  </div>
 </span>
 `;
