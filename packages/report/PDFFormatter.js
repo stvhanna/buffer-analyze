@@ -35,7 +35,7 @@ class PDFFormatter {
       this.removeFromCurrentPage(element);
       this.addToCurrentPage(title);
       this.addToCurrentPage(subtitle);
-      const listItems = list.getElementsByTagName('ul')[0].children;
+      const listItems = list.getElementsByTagName('ul')[1].children;
       this.breakIntoPages(listItems);
     } else {
       this.addNewPage(element);
@@ -50,6 +50,7 @@ class PDFFormatter {
   breakIntoPages(listItems) {
     Array.prototype.forEach.call(listItems, (li) => {
       this.addToCurrentPage(li);
+      console.log(this.currentPageHeight, this.needsPageBreak(), li.clientHeight);
       if (this.needsPageBreak()) {
         this.addNewPage(li);
         PDFFormatter.addBorder(li);
