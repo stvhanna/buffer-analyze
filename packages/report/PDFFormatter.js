@@ -1,7 +1,10 @@
 const PDF_HEIGHT = 1122; // 842 pt to px
 
 class PDFFormatter {
-  currentPageHeight = 0;
+
+  constructor() {
+    this.currentPageHeight = 0;
+  }
 
   formatPage() {
     const modules = document.getElementById('report-page').children;
@@ -50,7 +53,6 @@ class PDFFormatter {
   breakIntoPages(listItems) {
     Array.prototype.forEach.call(listItems, (li) => {
       this.addToCurrentPage(li);
-      console.log(this.currentPageHeight, this.needsPageBreak(), li.clientHeight);
       if (this.needsPageBreak()) {
         this.addNewPage(li);
         PDFFormatter.addBorder(li);
