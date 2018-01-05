@@ -33,10 +33,10 @@ const addProfileServiceToReportsCharts = (report, state) =>
     })),
   });
 
-const formatter = new PDFFormatter();
 
 export default store => next => (action) => { // eslint-disable-line no-unused-vars
   const state = store.getState();
+  let formatter;
   let report;
   switch (action.type) {
     case `get_report_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
@@ -122,6 +122,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
       }));
       break;
     case actionTypes.PARSE_PAGE_BREAKS:
+      formatter = new PDFFormatter(document.getElementById('report-page'));
       formatter.formatPage();
       break;
     default:

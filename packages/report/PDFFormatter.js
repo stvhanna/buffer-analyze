@@ -2,13 +2,13 @@ const PDF_HEIGHT = 1122; // 842 pt to px
 
 class PDFFormatter {
 
-  constructor() {
+  constructor(page) {
     this.currentPageHeight = 0;
+    this.modules = page.children;
   }
 
   formatPage() {
-    const modules = document.getElementById('report-page').children;
-    Array.prototype.forEach.call(modules, (module) => {
+    Array.prototype.forEach.call(this.modules, (module) => {
       this.addToCurrentPage(module);
       if (this.needsPageBreak()) {
         this.addPageBreak(module);
@@ -22,10 +22,12 @@ class PDFFormatter {
 
   addToCurrentPage(element) {
     this.currentPageHeight += element.clientHeight;
+    this.currentPageHeight += parseInt(window.getComputedStyle(element).marginTop, 10);
   }
 
   removeFromCurrentPage(element) {
     this.currentPageHeight -= element.clientHeight;
+    this.currentPageHeight -= parseInt(window.getComputedStyle(element).marginTop, 10);
   }
 
   static canBeBrokenDownIntoMultiplePages (element) {
@@ -51,7 +53,7 @@ class PDFFormatter {
   }
 
   breakIntoPages(listItems) {
-    Array.prototype.forEach.call(listItems, (li) => {
+    Array.prototype.forEach.call(listItems, (li, index) => {
       this.addToCurrentPage(li);
       if (this.needsPageBreak()) {
         this.addNewPage(li);
