@@ -201,7 +201,7 @@ describe('rpc/compare', () => {
       },
     });
 
-    expect(data.totals.length).toBe(9);
+    expect(data.totals.length).toBe(10);
     expect(data.totals[0]).toEqual({
       diff: 0,
       label: 'Posts',
@@ -227,7 +227,7 @@ describe('rpc/compare', () => {
       },
     });
 
-    expect(data.totals.length).toBe(9);
+    expect(data.totals.length).toBe(10);
     expect(data.totals[0]).toEqual({
       diff: 300,
       label: 'Posts',
