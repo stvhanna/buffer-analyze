@@ -101,6 +101,55 @@ describe('middleware', () => {
     }));
   });
 
+  describe('list_reports_FETCH_SUCCESS', () => {
+    it('should get report if on a report route and reports list has loaded', () => {
+      state.router = {
+        location: {
+          pathname: '/reports/1234',
+        },
+      };
+
+      const action = {
+        type: `list_reports_${asyncDataFetchActions.FETCH_SUCCESS}`,
+        result: [{
+          _id: '1234',
+          name: 'Another report',
+          charts: [],
+        }],
+      };
+      middleware(store)(next)(action);
+      expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
+        name: 'get_report',
+        args: {
+          _id: '1234',
+          name: 'Another report',
+          startDate: state.date.startDate,
+          endDate: state.date.endDate,
+          charts: [],
+        },
+      }));
+    });
+
+    it('should not fetch any report information if not in a report route', () => {
+      state.router = {
+        location: {
+          pathname: '/',
+        },
+      };
+      const action = {
+        type: `list_reports_${asyncDataFetchActions.FETCH_SUCCESS}`,
+        result: [{
+          _id: '1234',
+          name: 'Another report',
+          charts: [],
+        }],
+      };
+      middleware(store)(next)(action);
+      expect(store.dispatch).not.toHaveBeenCalled();
+    });
+  });
+
+
   it('fills profile information for each retrieved chart', () => {
     const action = {
       type: `get_report_${asyncDataFetchActions.FETCH_SUCCESS}`,
