@@ -1,12 +1,12 @@
 {
-  "name": "@bufferapp/contextual-compare",
+  "name": "@bufferapp/posts-table",
   "version": "0.25.0",
-  "description": "the Contextual Compare Chart for Analyze Overview",
-  "main": "index.js",
+  "description": "The table for Insights.",
+  "main": "index.jsx",
   "scripts": {
-    "start": "start-storybook -p 9001",
     "lint": "eslint . --ignore-pattern coverage node_modules",
-    "test": "sh ../../package_test.sh",
+    "test": "yarn run lint && sh ../../package_test.sh",
+    "test-watch": "jest --watch",
     "test-update": "jest -u"
   },
   "jest": {
@@ -21,21 +21,22 @@
   "author": "federicoweber@gmail.com",
   "dependencies": {
     "@bufferapp/add-report": "^0.25.0",
+    "@bufferapp/analyze-csv-export": "^0.22.0",
     "@bufferapp/analyze-date-picker": "^0.25.0",
     "@bufferapp/analyze-decorators": "^0.15.2",
     "@bufferapp/analyze-png-export": "^0.22.0",
     "@bufferapp/analyze-profile-selector": "^0.25.0",
     "@bufferapp/analyze-shared-components": "^0.25.0",
-    "@bufferapp/async-data-fetch": "0.5.25",
-    "react-highcharts": "^12.0.0",
-    "styled-components": "^2.2.0"
+    "@bufferapp/async-data-fetch": "0.5.36-beta01",
+    "@bufferapp/components": "2.1.1",
+    "@bufferapp/nav-sidebar": "^0.25.0",
+    "lodash.clonedeep": "4.5.0",
+    "numeral": "2.0.6",
+    "striptags": "^3.1.0"
   },
   "devDependencies": {
-    "@storybook/addon-storyshots": "3.1.4",
-    "@storybook/react": "3.1.3",
     "eslint": "3.19.0",
-    "jest": "19.0.2",
-    "storybook-addon-a11y": "3.0.0"
+    "jest": "19.0.2"
   },
   "publishConfig": {
     "access": "public"

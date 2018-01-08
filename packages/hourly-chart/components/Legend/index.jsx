@@ -21,19 +21,19 @@ const Legend = ({ metric, secondaryMetric }) =>
   <ul style={legendList}>
     <li style={legendItem}>
       <ColorIcon />
-      <Text size="mini">Tweets</Text>
+      <Text size="small">Tweets</Text>
     </li>
     <li style={legendItem}>
       <ColorIcon metric={metric.label} />
-      <Text size="mini">{metric.label}</Text>
+      <Text size="small">{metric.label}</Text>
     </li>
     { secondaryMetric && <li style={legendItem}>
-      <ColorIcon circle metric={secondaryMetric.label} />
-      <Text size="mini">{secondaryMetric.label}</Text>
+      <ColorIcon metric={secondaryMetric.label} />
+      <Text size="small">{secondaryMetric.label}</Text>
     </li> }
   </ul>;
 
-Legend.propTypes = {
+Legend.defaultProps = {
   secondaryMetric: null,
 };
 
