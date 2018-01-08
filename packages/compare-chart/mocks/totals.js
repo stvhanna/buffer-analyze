@@ -20,4 +20,11 @@ export default [
     value: 901,
     previousValue: 100,
   },
+  {
+    color: '#fda3f3',
+    diff: -39,
+    label: 'Posts',
+    value: 100,
+    previousValue: 100,
+  },
 ];
