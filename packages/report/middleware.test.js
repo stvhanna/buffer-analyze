@@ -4,6 +4,9 @@ import { actionTypes as listActionTypes } from '@bufferapp/report-list';
 import { actionTypes } from './reducer';
 import middleware, { DIRECTION_UP, DIRECTION_DOWN } from './middleware';
 
+jest.mock('./PDFFormatter.js');
+import PDFFormatter from './PDFFormatter'; // eslint-disable-line import/first
+
 describe('middleware', () => {
   const next = jest.fn();
   const state = {
@@ -183,6 +186,18 @@ describe('middleware', () => {
         chartId: action.chartId,
       },
     }));
+  });
+
+  it('PARSE_PAGE_BREAKS sends report page over to PDFFormatter', () => {
+    Object.defineProperty(document, 'getElementById', {
+      value: () => 'report html',
+    });
+    const action = {
+      type: actionTypes.PARSE_PAGE_BREAKS,
+    };
+    middleware(store)(next)(action);
+    expect(PDFFormatter.mock.calls[0]).toEqual(['report html']);
+    expect(PDFFormatter.mock.instances[0].formatPage).toHaveBeenCalled();
   });
   afterEach(() => jest.clearAllMocks());
 });
