@@ -112,4 +112,15 @@ describe('Report', () => {
 
     expect(component.props().deleteChart('chart_id')).toEqual(actions.deleteChart('chart_id'));
   });
+
+  it('parse page breaks should dispatch parsePageBreaks', () => {
+    const mockStore = configureMockStore();
+    const store = mockStore(state);
+
+    const component = shallow(<Report
+      store={store}
+    />);
+
+    expect(component.props().parsePageBreaks()).toEqual(actions.parsePageBreaks());
+  });
 });
