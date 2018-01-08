@@ -1,4 +1,5 @@
 import { JSDOM } from 'jsdom';
+
 const fullReport = `
   <html>
     <div id="report-page">
