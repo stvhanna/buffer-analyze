@@ -2020,10 +2020,20 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
           />
         </div>
         <a
-          href="#export"
+          href="#export-to-pdf"
+          onBlur={[Function]}
           onClick={[Function]}
-          rel="noopener noreferrer"
-          target="_blank"
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "padding": "0",
+            }
+          }
+          target="_self"
         >
           Export to PDF
         </a>
