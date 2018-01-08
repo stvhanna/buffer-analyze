@@ -79,4 +79,8 @@ storiesOf('Report')
   ))
   .add('renders a report in edit mode', () => (
     <Report {...report} dateRange={dateRange} edit saveChanges={action('save!')} />
-  ));
+    ))
+  .add('adds page breaks where needed if exporting', () => (
+    <Report {...report} dateRange={dateRange} exporting parsePageBreaks={action('parse page breaks!')} />
+    ))
+  ;

@@ -17,41 +17,14 @@ const Title = styled.h1`
 `;
 
 class Report extends React.Component {
-  static defaultProps = {
-    loading: false,
-    exporting: false,
-    edit: false,
-    dateRange: {},
-    charts: [],
-  };
-
-  static propTypes = {
-    loading: PropTypes.bool,
-    exporting: PropTypes.bool,
-    edit: PropTypes.bool,
-    dateRange: PropTypes.shape({
-      startDate: PropTypes.string,
-      endDate: PropTypes.string,
-    }),
-    name: PropTypes.string.isRequired,
-    saveChanges: PropTypes.func.isRequired,
-    charts: PropTypes.arrayOf(PropTypes.shape({
-      chart_id: PropTypes.string,
-    }).isRequired),
-    editName: PropTypes.func.isRequired,
-    moveUp: PropTypes.func.isRequired,
-    moveDown: PropTypes.func.isRequired,
-    deleteChart: PropTypes.func.isRequired,
-  };
-
-  componentDidUpdate(prevProps) {
-    if (this.shouldAddPageBreaks(prevProps)) {
+  componentDidUpdate() {
+    if (this.shouldAddPageBreaks()) {
       this.props.parsePageBreaks();
     }
   }
 
-  shouldAddPageBreaks(prevProps) {
-    const hasStoppedLoading = prevProps.loading && !this.props.loading;
+  shouldAddPageBreaks() {
+    const hasStoppedLoading = !this.props.loading;
     const isExportView = this.props.exporting;
 
     return hasStoppedLoading && isExportView;
@@ -79,5 +52,33 @@ class Report extends React.Component {
     );
   }
 }
+
+Report.defaultProps = {
+  loading: false,
+  exporting: false,
+  edit: false,
+  dateRange: {},
+  charts: [],
+};
+
+Report.propTypes = {
+  loading: PropTypes.bool,
+  exporting: PropTypes.bool,
+  edit: PropTypes.bool,
+  dateRange: PropTypes.shape({
+    startDate: PropTypes.string,
+    endDate: PropTypes.string,
+  }),
+  name: PropTypes.string.isRequired,
+  saveChanges: PropTypes.func.isRequired,
+  charts: PropTypes.arrayOf(PropTypes.shape({
+    chart_id: PropTypes.string,
+  }).isRequired),
+  editName: PropTypes.func.isRequired,
+  moveUp: PropTypes.func.isRequired,
+  moveDown: PropTypes.func.isRequired,
+  deleteChart: PropTypes.func.isRequired,
+  parsePageBreaks: PropTypes.func.isRequired,
+};
 
 export default Report;
