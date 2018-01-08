@@ -4,6 +4,7 @@ import DatePicker from '@bufferapp/analyze-date-picker';
 import { push } from 'react-router-redux';
 import { connect } from 'react-redux';
 import NavSidebar from '@bufferapp/nav-sidebar';
+import PDFExportButton from '@bufferapp/pdf-export';
 import Report from '@bufferapp/report';
 import { Button } from '@bufferapp/analyze-shared-components';
 import styled from 'styled-components';
@@ -51,15 +52,7 @@ const ReportsPage = ({ location, dispatch }) => (
       <Header>
         <Button onClick={() => dispatch(push('/reports'))}>Back to Reports</Button>
         <DatePicker staticData />
-        <a
-          href="#export"
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={(e) => {
-            e.stopPropagation();
-            e.target.href = window.location.origin + '/report_to_pdf?url=' + window.location.origin + '/export' + window.location.pathname;
-          }}
-        >Export to PDF</a>
+        <PDFExportButton />
       </Header>
       <Content>
         <Card>

@@ -1,0 +1,20 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import {
+  Link,
+} from '@bufferapp/components';
+
+const PDFExportButton = ({ exportToPDF }) =>
+  <Link
+    href="#export-to-pdf"
+    onClick={(e) => {
+      e.preventDefault();
+      exportToPDF();
+    }}
+  >Export to PDF</Link>;
+
+PDFExportButton.propTypes = {
+  exportToPDF: PropTypes.func.isRequired,
+};
+
+export default PDFExportButton;
