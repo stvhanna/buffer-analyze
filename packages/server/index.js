@@ -1,3 +1,4 @@
+const AWS = require('aws-sdk');
 const http = require('http');
 const express = require('express');
 const logMiddleware = require('@bufferapp/logger/middleware');
@@ -81,7 +82,42 @@ app.use(sessionMiddleware.validateSession({
   requiredSessionKeys: ['analyze.accessToken'],
 }));
 
-app.get('*', (req, res) => res.send(html));
+app.get('/report_to_pdf', (req, res) => {
+  const params = {
+    FunctionName: 'reportToPDF',
+    Payload: JSON.stringify({
+      url: req.query.url,
+      orientation: 'portrait',
+      javascriptDelay: 30000,
+      cookie: {
+        name: 'buffer_session',
+        value: req.cookies.buffer_session,
+      },
+    }),
+    LogType: 'Tail',
+  };
+  const lambda = new AWS.Lambda({
+    region: 'us-east-1',
+  });
+  lambda.invoke(params, (err, data) => {
+    if (err) {
+      res.send(err);
+    } else {
+      const payload = JSON.parse(data.Payload);
+      if (payload.errorMessage) {
+        res.send(payload.errorMessage);
+      } else {
+        const pdf = Buffer.from(payload.contents, 'base64');
+        res.type('application/pdf');
+        res.end(pdf, 'binary');
+      }
+    }
+  });
+});
+
+app.get('*', (req, res) => {
+  res.send(html);
+});
 
 app.use(apiError);
 

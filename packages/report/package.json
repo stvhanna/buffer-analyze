@@ -32,6 +32,7 @@
     "@bufferapp/report-list": "^0.25.0",
     "@bufferapp/summary-table": "^0.25.0",
     "@bufferapp/top-posts-table": "^0.25.0",
+    "jsdom": "^11.5.1",
     "styled-components": "^2.2.1"
   },
   "devDependencies": {

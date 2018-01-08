@@ -9,15 +9,6 @@ import ChartFactory from '../ChartFactory';
 import DateRange from '../DateRange';
 import EditTitle from '../EditTitle';
 
-const Card = styled.section`
-  width: 880px;
-  background: #FFFFFF;
-  border: 1px solid #E2E8ED;
-  box-shadow: 0px 0px 10px rgba(48, 71, 89, 0.05);
-  border-radius: 5px;
-  padding: 4.5rem 4rem;
-`;
-
 const Title = styled.h1`
   color: #343E47;
   font-size: 26px;
@@ -25,12 +16,26 @@ const Title = styled.h1`
   margin: 0 0 .5rem;
 `;
 
-const Report =
-  ({ name, dateRange, charts, loading,
-    edit, saveChanges, editName, moveUp, moveDown, deleteChart }) => {
+class Report extends React.Component {
+  componentDidUpdate() {
+    if (this.shouldAddPageBreaks()) {
+      this.props.parsePageBreaks();
+    }
+  }
+
+  shouldAddPageBreaks() {
+    const hasStoppedLoading = !this.props.loading;
+    const isExportView = this.props.exporting;
+
+    return hasStoppedLoading && isExportView;
+  }
+
+  render() {
+    const { name, dateRange, charts, loading,
+      edit, saveChanges, editName, moveUp, moveDown, deleteChart, exporting } = this.props;
     if (loading) return '...loading';
     return (
-      <Card>
+      <div id="report-page">
         <Text>
           { edit && <EditTitle name={name} saveChanges={saveChanges} />}
           { !edit && <div><Button noStyle onClick={editName}><Title>{name}</Title></Button></div> }
@@ -41,13 +46,16 @@ const Report =
           moveUp={moveUp}
           moveDown={moveDown}
           deleteChart={deleteChart}
+          exporting={exporting}
         />
-      </Card>
+      </div>
     );
-  };
+  }
+}
 
 Report.defaultProps = {
   loading: false,
+  exporting: false,
   edit: false,
   dateRange: {},
   charts: [],
@@ -55,6 +63,7 @@ Report.defaultProps = {
 
 Report.propTypes = {
   loading: PropTypes.bool,
+  exporting: PropTypes.bool,
   edit: PropTypes.bool,
   dateRange: PropTypes.shape({
     startDate: PropTypes.string,
@@ -69,6 +78,7 @@ Report.propTypes = {
   moveUp: PropTypes.func.isRequired,
   moveDown: PropTypes.func.isRequired,
   deleteChart: PropTypes.func.isRequired,
+  parsePageBreaks: PropTypes.func.isRequired,
 };
 
 export default Report;

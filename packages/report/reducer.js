@@ -7,6 +7,7 @@ export const actionTypes = {
   MOVE_CHART_UP: 'MOVE_CHART_UP',
   MOVE_CHART_DOWN: 'MOVE_CHART_DOWN',
   DELETE_CHART: 'DELETE_CHART',
+  PARSE_PAGE_BREAKS: 'PARSE_PAGE_BREAKS',
 };
 
 const initialState = {
@@ -108,5 +109,8 @@ export const actions = {
   deleteChart: chartId => ({
     type: actionTypes.DELETE_CHART,
     chartId,
+  }),
+  parsePageBreaks: () => ({
+    type: actionTypes.PARSE_PAGE_BREAKS,
   }),
 };

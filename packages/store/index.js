@@ -35,6 +35,7 @@ import { middleware as engagementComparisonMiddleware } from '@bufferapp/engagem
 import { middleware as commentsComparisonMiddleware } from '@bufferapp/comments-comparison-chart';
 import { middleware as environmentMiddleware } from '@bufferapp/environment';
 import { middleware as unauthorizedRedirectMiddleware } from '@bufferapp/unauthorized-redirect';
+import { middleware as exportToPDFMiddleware } from '@bufferapp/pdf-export';
 import initMiddleware from './initMiddleware';
 
 import reducers from './reducers';
@@ -84,6 +85,7 @@ const configureStore = (initialstate) => {
         commentsComparisonMiddleware,
         environmentMiddleware,
         unauthorizedRedirectMiddleware,
+        exportToPDFMiddleware,
       ),
     ),
   );

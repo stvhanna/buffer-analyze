@@ -9,7 +9,7 @@
 
 .chartContainer {
   position: relative;
-  border: solid 1px @borderColor;
+  // border: solid 1px @borderColor;
   border-radius: 2px;
   font-size: 12px;
   min-height: 177px;
@@ -62,14 +62,16 @@
   margin: 0;
   padding: 0;
   display: flex;
-  border-bottom: solid 1px @borderColor;
+  border: solid 1px @borderColor;
 }
 
 .columnContainer {
   margin: 0;
   padding: 0;
   display: flex;
-  border-bottom: solid 1px @borderColor;
+  border: solid 1px @borderColor;
+	border-color: @borderColor;
+	border-top: none;
 }
 
 .contentDate {

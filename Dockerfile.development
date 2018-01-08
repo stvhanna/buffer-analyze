@@ -5,6 +5,7 @@ WORKDIR /usr/src/app
 
 ENV NODE_ENV development
 
+
 RUN npm i -g nodemon
 
 EXPOSE 80

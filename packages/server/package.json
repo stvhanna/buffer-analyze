@@ -23,6 +23,7 @@
     "@bufferapp/micro-rpc": "0.1.7",
     "@bufferapp/session-manager": "0.5.36",
     "@bufferapp/shutdown-helper": "0.2.0",
+    "aws-sdk": "2.4.7",
     "bugsnag": "1.11.0",
     "cookie-parser": "1.4.3",
     "express": "4.15.3",

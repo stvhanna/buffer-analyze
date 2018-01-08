@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshots PDFExportButton a story 1`] = `
+<span>
+  <a
+    href="#export-to-pdf"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    style={
+      Object {
+        "color": "#168eea",
+        "fontFamily": "\\"Roboto\\", sans-serif",
+        "padding": "0",
+      }
+    }
+    target="_self"
+  >
+    Export to PDF
+  </a>
+</span>
+`;
