@@ -1466,7 +1466,7 @@ exports[`Snapshots InsightsPage should render Insights page 1`] = `
 exports[`Snapshots ReportsPage should render reports page 1`] = `
 <span>
   <div
-    className="sc-uJMKN fHlLjs"
+    className="sc-jqCOkK joTNwV"
   >
     <div
       style={
@@ -1649,10 +1649,10 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
       </a>
     </div>
     <div
-      className="sc-bbmXgH lofLKu"
+      className="sc-uJMKN kElbHg"
     >
       <header
-        className="sc-jnlKLf kgZYjV"
+        className="sc-gGBfsJ eYywuG"
       >
         <button
           className="sc-bdVaJa eTEyQW"
@@ -2019,11 +2019,23 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
             tabIndex="0"
           />
         </div>
+        <a
+          href="#export"
+          onClick={[Function]}
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Export to PDF
+        </a>
       </header>
       <div
-        className="sc-gGBfsJ bLDNTf"
+        className="sc-bbmXgH dzigrC"
       >
-        ...loading
+        <section
+          className="sc-jnlKLf gNFAI"
+        >
+          ...loading
+        </section>
       </div>
     </div>
   </div>
