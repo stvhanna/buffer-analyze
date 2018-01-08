@@ -53,7 +53,7 @@ class PDFFormatter {
   }
 
   breakIntoPages(listItems) {
-    Array.prototype.forEach.call(listItems, (li, index) => {
+    Array.prototype.forEach.call(listItems, (li) => {
       this.addToCurrentPage(li);
       if (this.needsPageBreak()) {
         this.addNewPage(li);
