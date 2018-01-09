@@ -150,6 +150,8 @@ function prepareSeries(
       }
     }
 
+    console.log(seriesConfig);
+
     if (seriesConfig.data[0].metricData.key === 'posts_count') {
       seriesConfig.type = 'column';
       seriesConfig.colors = columnColors;
