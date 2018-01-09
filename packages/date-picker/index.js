@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-import moment from 'moment';
 import DatePicker from './components/DatePicker';
 import { actions } from './reducer';
 
