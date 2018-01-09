@@ -109,6 +109,7 @@ app.get('/report_to_pdf', (req, res) => {
       } else {
         const pdf = Buffer.from(payload.contents, 'base64');
         res.type('application/pdf');
+        res.setHeader(`Content-disposition', 'attachment; filename=${req.query.name}`);
         res.end(pdf, 'binary');
       }
     }
