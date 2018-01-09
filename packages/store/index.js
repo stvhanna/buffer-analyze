@@ -37,6 +37,7 @@ import { middleware as environmentMiddleware } from '@bufferapp/environment';
 import { middleware as unauthorizedRedirectMiddleware } from '@bufferapp/unauthorized-redirect';
 import { middleware as exportToPDFMiddleware } from '@bufferapp/pdf-export';
 import initMiddleware from './initMiddleware';
+import { createMiddleware } from '@bufferapp/buffermetrics/redux'
 
 import reducers from './reducers';
 
@@ -48,7 +49,16 @@ const configureStore = (initialstate) => {
     window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
       window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({}) : compose;
 
-  return createStore(
+    const buffermetricsMiddleware = createMiddleware({
+        application: 'ANALYZE',
+        metadata: (state, action) => ({
+            userId: state.appSidebar.user.id,
+            profileId: state.profiles.selectedProfileId,
+            action:action
+        })
+    });
+
+    return createStore(
     reducers,
     initialstate,
     composeEnhancers(
@@ -86,6 +96,7 @@ const configureStore = (initialstate) => {
         environmentMiddleware,
         unauthorizedRedirectMiddleware,
         exportToPDFMiddleware,
+        buffermetricsMiddleware
       ),
     ),
   );

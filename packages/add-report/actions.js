@@ -1,7 +1,9 @@
-export const actionTypes = {
+import keyWrapper from '@bufferapp/keywrapper';
+
+export const actionTypes = keyWrapper('REPORTS', {
   CREATE_REPORT: 'CREATE_REPORT',
   ADD_TO_REPORT: 'ADD_TO_REPORT',
-};
+});
 
 export const actions = {
   createReport(name, chartId, state = {}) {

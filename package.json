@@ -12,14 +12,14 @@
     "lint-head": "git diff --name-only |  grep .jsx*$ | xargs eslint -c .eslintrc.json --stdin --quiet -f table",
     "lint": "yarn run lint-branch && yarn run lint-head",
     "start": "cd ./packages/server/ && yarn start",
-		"watch": "webpack-dev-server --config ./packages/server/webpack.config.dev.js --colors",
+    "watch": "webpack-dev-server --config ./packages/server/webpack.config.dev.js --colors",
     "publish": "echo \"will eventually run: lerna publish\"",
     "build": "webpack  --config ./packages/server/webpack.config.js --output-path=`pwd`"
   },
-	"private": true,
-	"workspaces": [
-		"packages/*"
-	],
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bufferapp/buffer-analyze.git"
@@ -76,10 +76,11 @@
     "uuid": "3.0.1",
     "webpack": "2.6.1",
     "webpack-dev-middleware": "1.10.2",
-		"webpack-dev-server": "^2.9.7",
+    "webpack-dev-server": "^2.9.7",
     "webpack-hot-middleware": "2.18.0"
   },
   "dependencies": {
+    "@bufferapp/buffermetrics": "^0.5.0-beta2",
     "global": "^4.3.2"
   }
 }
