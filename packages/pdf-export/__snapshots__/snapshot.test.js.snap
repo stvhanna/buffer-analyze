@@ -2,23 +2,26 @@
 
 exports[`Snapshots PDFExportButton a story 1`] = `
 <span>
-  <a
-    href="#export-to-pdf"
-    onBlur={[Function]}
-    onClick={[Function]}
-    onFocus={[Function]}
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
-    style={
-      Object {
-        "color": "#168eea",
-        "fontFamily": "\\"Roboto\\", sans-serif",
-        "padding": "0",
-      }
-    }
-    target="_self"
+  <span
+    className="sc-htoDjs cqFtEe"
   >
-    Export to PDF
-  </a>
+    <button
+      className="sc-bdVaJa eTEyQW"
+      onClick={[Function]}
+    >
+      <span
+        style={
+          Object {
+            "color": "#59626a",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontSize": "0.75rem",
+            "fontWeight": 700,
+          }
+        }
+      >
+        Export as PDF
+      </span>
+    </button>
+  </span>
 </span>
 `;

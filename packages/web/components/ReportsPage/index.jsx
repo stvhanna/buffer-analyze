@@ -45,14 +45,21 @@ const Card = styled.section`
   padding: 4.5rem 4rem;
 `;
 
+const Section = styled.section`
+  display: flex;
+  align-items: center;
+`;
+
 const ReportsPage = ({ location, dispatch }) => (
   <Page>
     <NavSidebar route={location.pathname} />
     <Container>
       <Header>
         <Button onClick={() => dispatch(push('/reports'))}>Back to Reports</Button>
-        <DatePicker staticData />
-        <PDFExportButton />
+        <Section>
+          <DatePicker staticData />
+          <PDFExportButton />
+        </Section>
       </Header>
       <Content>
         <Card>
