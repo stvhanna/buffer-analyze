@@ -100,6 +100,7 @@ app.get('/report_to_pdf', (req, res) => {
     region: 'us-east-1',
   });
   lambda.invoke(params, (err, data) => {
+    res.header('Content-disposition', `inline; filename=${req.query.name}`);
     if (err) {
       res.send(err);
     } else {
@@ -109,7 +110,7 @@ app.get('/report_to_pdf', (req, res) => {
       } else {
         const pdf = Buffer.from(payload.contents, 'base64');
         res.type('application/pdf');
-        res.setHeader(`Content-disposition', 'attachment; filename=${req.query.name}`);
+        res.header('Content-disposition', `inline; filename=${req.query.name}`);
         res.end(pdf, 'binary');
       }
     }
