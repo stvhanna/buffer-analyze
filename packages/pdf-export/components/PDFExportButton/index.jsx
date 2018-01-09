@@ -11,7 +11,7 @@ const PDFExportButton = ({ exportToPDF }) =>
       e.preventDefault();
       exportToPDF();
     }}
-  >Export to PDF</Link>;
+  >Export as PDF</Link>;
 
 PDFExportButton.propTypes = {
   exportToPDF: PropTypes.func.isRequired,
