@@ -1,12 +1,18 @@
-import { actions } from '@bufferapp/async-data-fetch';
+import { actions, actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-fetch';
 import { actionTypes } from '@bufferapp/analyze-profile-selector';
+import { actions as dateActions } from './reducer';
 import middleware from './middleware';
 
 describe('middleware', () => {
+  let state = {};
   const next = jest.fn();
   const store = {
     dispatch: jest.fn(),
+    getState: jest.fn(() => state),
   };
+  beforeEach(() => {
+    state = {};
+  });
   it('should exist', () => {
     expect(middleware).toBeDefined();
   });
@@ -31,5 +37,22 @@ describe('middleware', () => {
       },
     }));
     expect(next).toHaveBeenCalledWith(action);
+  });
+
+  it('should set the date range on user_FETCH_SUCCESS if there are start_date and end_date available as search parameters', () => {
+    state.router = {
+      location: {
+        search: '?start_date=1234&end_date=5678',
+      },
+    };
+    const action = {
+      type: `user_${asyncDataFetchActionTypes.FETCH_SUCCESS}`,
+    };
+    middleware(store)(next)(action);
+    expect(store.dispatch).toHaveBeenCalledWith(dateActions.setDateRange(1234, 5678));
+  });
+
+  afterEach(() => {
+    store.dispatch.mockReset();
   });
 });
