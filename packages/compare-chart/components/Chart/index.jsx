@@ -80,6 +80,32 @@ function prepareSeries(
     data: seriesData,
   });
 
+  if (dailyMetric[0].metric.label === 'Posts' || dailyMetric[0].metric.label === 'Tweets') {
+    seriesConfig.type = 'column';
+    seriesConfig.pointPadding = 0.1;
+    seriesConfig.pointPlacement = 0.4;
+    seriesConfig.colors = [{
+      linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
+      stops: [
+        [0, fadeColor(color, 0.6)],
+        [1, fadeColor(color, 0)],
+      ],
+    }];
+    seriesConfig.borderColor = color;
+    seriesConfig.states = {
+      hover: {
+        color: {
+          linearGradient: { x1: 0, y1: 0 },
+          stops: [
+            [0, color],
+          ],
+        },
+        brightness: 0.0,
+      },
+    };
+  }
+
+
   return seriesConfig;
 }
 

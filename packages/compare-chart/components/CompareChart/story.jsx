@@ -32,6 +32,49 @@ storiesOf('CompareChart')
       />
     </div>
   ))
+  .add('should render the compare chart for Posts metric', () => (
+    <div
+      style={{
+        width: '750px',
+      }}
+    >
+      <CompareChart
+        profileService="facebook"
+        totalPeriodDaily={mockDailyData}
+        selectedMetricLabel="Posts"
+        totals={mockTotals}
+        timezone="America/Los_Angeles"
+        selectMetric={() => {}}
+        togglePreviousPeriod={() => {}}
+        openDropdown={() => {}}
+        closeDropdown={() => {}}
+        selectDailyMode={actionLogger('selectDailyMode')}
+        dailyMode={1}
+      />
+    </div>
+  ))
+  .add('should render the compare chart for Posts metric with previous period', () => (
+    <div
+      style={{
+        width: '750px',
+      }}
+    >
+      <CompareChart
+        profileService="facebook"
+        totalPeriodDaily={mockDailyData}
+        selectedMetricLabel="Posts"
+        totals={mockTotals}
+        timezone="America/Los_Angeles"
+        selectMetric={() => {}}
+        togglePreviousPeriod={() => {}}
+        openDropdown={() => {}}
+        closeDropdown={() => {}}
+        selectDailyMode={actionLogger('selectDailyMode')}
+        dailyMode={1}
+        visualizePreviousPeriod
+      />
+    </div>
+  ))
   .add('should render the compare chart with mode toggle Twitter', () => (
     <div
       style={{

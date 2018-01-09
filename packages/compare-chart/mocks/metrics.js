@@ -11,4 +11,8 @@ export default [
     label: 'Click',
     color: '#fda3f3',
   },
+  {
+    label: 'Posts',
+    color: '#fda3f3',
+  },
 ];
