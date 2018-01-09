@@ -120,30 +120,41 @@ function prepareSeries(
       states: {},
     });
 
+    const columnColors = [{
+      linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
+      stops: [
+        [0, fadeColor(color, 0.6)],
+        [1, fadeColor(color, 0)],
+      ],
+    }];
+
+    const columnStates = {
+      hover: {
+        color: {
+          linearGradient: { x1: 0, y1: 0 },
+          stops: [
+            [0, color],
+          ],
+        },
+        brightness: 0.0,
+      },
+    };
+
     if (presetConfig && presetConfig.type) {
       seriesConfig.type = presetConfig.type;
 
       if (presetConfig.type === 'column') {
-        seriesConfig.colors = [{
-          linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
-          stops: [
-            [0, fadeColor(color, 0.6)],
-            [1, fadeColor(color, 0)],
-          ],
-        }];
+        seriesConfig.colors = columnColors;
         seriesConfig.borderColor = seriesConfig.color;
-        seriesConfig.states = {
-          hover: {
-            color: {
-              linearGradient: { x1: 0, y1: 0 },
-              stops: [
-                [0, color],
-              ],
-            },
-            brightness: 0.0,
-          },
-        };
+        seriesConfig.states = columnStates;
       }
+    }
+
+    if (seriesConfig.data[0].metricData.key === 'posts_count') {
+      seriesConfig.type = 'column';
+      seriesConfig.colors = columnColors;
+      seriesConfig.borderColor = color;
+      seriesConfig.states = columnStates;
     }
 
     series.push(seriesConfig);
