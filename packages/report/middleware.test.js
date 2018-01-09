@@ -36,6 +36,11 @@ describe('middleware', () => {
         ],
       }],
     },
+    router: {
+      location: {
+        pathname: '',
+      },
+    },
     profiles: {
       profiles: [{
         id: 'profile1',
@@ -62,22 +67,39 @@ describe('middleware', () => {
     middleware(store)(next)(action);
   });
 
-  it('shoud dispatch a new data fetch for once date range is changed', () => {
-    const action = {
-      type: dateActionTypes.SET_DATE_RANGE,
-      startDate: '10/10/2016',
-      endDate: '20/10/2016',
-    };
-    middleware(store)(next)(action);
-    expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
-      name: 'get_report',
-      args: {
-        id: state.report.id,
+  describe('SET_DATE_RANGE', () => {
+    it('shoud dispatch a new data fetch for the report once date range is changed', () => {
+      const action = {
+        type: dateActionTypes.SET_DATE_RANGE,
         startDate: '10/10/2016',
         endDate: '20/10/2016',
-      },
-    }));
-    expect(next).toHaveBeenCalledWith(action);
+      };
+      middleware(store)(next)(action);
+      expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
+        name: 'get_report',
+        args: {
+          id: state.report.id,
+          startDate: '10/10/2016',
+          endDate: '20/10/2016',
+        },
+      }));
+      expect(next).toHaveBeenCalledWith(action);
+    });
+
+    it('should not dispatch the data fetch if the view is an export view', () => {
+      state.router = {
+        location: {
+          pathname: '/export/reports/1234',
+        },
+      };
+      const action = {
+        type: dateActionTypes.SET_DATE_RANGE,
+        startDate: '10/10/2016',
+        endDate: '20/10/2016',
+      };
+      middleware(store)(next)(action);
+      expect(store.dispatch).not.toHaveBeenCalled();
+    });
   });
 
   it('VIEW_REPORT dispatches a new data fetch', () => {

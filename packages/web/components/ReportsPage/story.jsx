@@ -14,7 +14,13 @@ import ReportsPage from './index';
 storiesOf('ReportsPage')
   .addDecorator(checkA11y)
   .addDecorator((getStory) => {
-    const store = createStore();
+    const store = createStore({
+      router: {
+        location: {
+          pathname: '',
+        },
+      },
+    });
     store.dispatch(
       actions.setDateRange(
         moment('2017-11-05')

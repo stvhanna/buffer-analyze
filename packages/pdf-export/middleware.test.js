@@ -13,7 +13,12 @@ describe('middleware', () => {
   const next = jest.fn();
   const store = {
     dispatch: jest.fn(),
-    getState: jest.fn(() => {}),
+    getState: jest.fn(() => ({
+      date: {
+        startDate: 5678,
+        endDate: 9876,
+      },
+    })),
   };
   it('should exist', () => {
     expect(middleware).toBeDefined();
@@ -24,11 +29,13 @@ describe('middleware', () => {
     };
     middleware(store)(next)(action);
   });
-  it('should work', () => {
+  it('EXPORT_TO_PDF should open a new tab with the export url for that report', () => {
     const action = {
       type: actionTypes.EXPORT_TO_PDF,
     };
+    const exportURL = encodeURIComponent('https://analyze.buffer.com/export/report/1234?start_date=5678&end_date=9876');
+    const expectedURL = `https://analyze.buffer.com/report_to_pdf?url=${exportURL}`;
     middleware(store)(next)(action);
-    expect(global.open).toHaveBeenCalledWith('https://analyze.buffer.com/report_to_pdf?url=https://analyze.buffer.com/export/report/1234', '_blank');
+    expect(global.open).toHaveBeenCalledWith(expectedURL, '_blank');
   });
 });

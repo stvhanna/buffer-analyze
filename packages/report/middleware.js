@@ -12,6 +12,7 @@ const getReportId = (pathname) => {
   return routeMatch ? routeMatch[1] : null;
 };
 const isReportDetailRoute = pathname => getReportId(pathname) !== null;
+const isExportRoute = pathname => pathname.match(/export\/reports/) !== null;
 
 const getReport = (reportId, reports) =>
   reports.find(report => report._id === reportId);
@@ -46,14 +47,16 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
       };
       break;
     case dateActionTypes.SET_DATE_RANGE:
-      store.dispatch(actions.fetch({
-        name: 'get_report',
-        args: {
-          ...state.report,
-          startDate: action.startDate,
-          endDate: action.endDate,
-        },
-      }));
+      if (!isExportRoute(state.router.location.pathname)) {
+        store.dispatch(actions.fetch({
+          name: 'get_report',
+          args: {
+            ...state.report,
+            startDate: action.startDate,
+            endDate: action.endDate,
+          },
+        }));
+      }
       break;
     case `list_reports_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
       if (isReportDetailRoute(state.router.location.pathname)) {
