@@ -1466,7 +1466,7 @@ exports[`Snapshots InsightsPage should render Insights page 1`] = `
 exports[`Snapshots ReportsPage should render reports page 1`] = `
 <span>
   <div
-    className="sc-uJMKN fHlLjs"
+    className="sc-bbmXgH eNJbEi"
   >
     <div
       style={
@@ -1649,10 +1649,10 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
       </a>
     </div>
     <div
-      className="sc-bbmXgH lofLKu"
+      className="sc-gGBfsJ euiZiE"
     >
       <header
-        className="sc-jnlKLf kgZYjV"
+        className="sc-fYxtnH feNlAK"
       >
         <button
           className="sc-bdVaJa eTEyQW"
@@ -1661,7 +1661,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
           Back to Reports
         </button>
         <section
-          className="sc-tilXH ipziHM"
+          className="sc-hEsumM ddolde"
         >
           <div
             className="sc-Rmtcm kWSdXa"
@@ -2023,7 +2023,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
             />
           </div>
           <span
-            className="sc-jqCOkK glHNLq"
+            className="sc-uJMKN dJvIXT"
           >
             <button
               className="sc-bdVaJa eTEyQW"
@@ -2046,10 +2046,10 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
         </section>
       </header>
       <div
-        className="sc-gGBfsJ bLDNTf"
+        className="sc-jnlKLf fAcuFv"
       >
         <section
-          className="sc-fYxtnH iJmkVD"
+          className="sc-tilXH kqaNi"
         >
           ...loading
         </section>
