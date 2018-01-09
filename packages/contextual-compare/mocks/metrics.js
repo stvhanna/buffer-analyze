@@ -7,4 +7,8 @@ export default [
     color: '#98E8B2',
     label: 'Impression',
   },
+  {
+    color: '#93C2E4',
+    label: 'Posts',
+  },
 ];
