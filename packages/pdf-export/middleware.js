@@ -2,7 +2,8 @@ import { actionTypes } from './actions';
 
 const getExportURL = ({ startDate, endDate }) => {
   const { origin, pathname } = window.location;
-  return `${origin}/report_to_pdf?url=${origin}/export${pathname}?start_date=${startDate}&end_date=${endDate}`;
+  const exportURL = encodeURIComponent(`${origin}/export${pathname}?start_date=${startDate}&end_date=${endDate}`);
+  return `${origin}/report_to_pdf?url=${exportURL}`;
 };
 
 export default store => next => (action) => { // eslint-disable-line no-unused-vars

@@ -86,7 +86,7 @@ app.get('/report_to_pdf', (req, res) => {
   const params = {
     FunctionName: 'reportToPDF',
     Payload: JSON.stringify({
-      url: req.query.url,
+      url: decodeURIComponent(req.query.url),
       orientation: 'portrait',
       javascriptDelay: 30000,
       cookie: {
