@@ -53,7 +53,6 @@ const html = fs.readFileSync(join(__dirname, 'index.html'), 'utf8')
 app.use(logMiddleware({ name: 'BufferAnalyze' }));
 app.use(cookieParser());
 //app.use(bodyParser.json());
-console.log('isProduction: ' + isProduction);
 app.use(buffermetricsMiddleware({
   name: 'Buffer-Analyze',
   debug: !isProduction,
