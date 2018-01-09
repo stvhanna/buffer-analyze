@@ -114,6 +114,9 @@ export default {
         },
       },
     },
+    column: {
+      colorByPoint: true,
+    },
   },
   tooltip: {
     shared: true,
