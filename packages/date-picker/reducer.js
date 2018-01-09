@@ -16,8 +16,10 @@ export const actionTypes = {
 };
 
 function calculateDateRange(range) {
-  const startDate = moment().subtract(range, 'days').unix();
-  const endDate = moment().subtract(1, 'days').unix();
+  // We need to enfoce the start of the day to make sure
+  // that the range is not effected by the time of the day
+  const startDate = moment().startOf('day').subtract(range, 'days').unix();
+  const endDate = moment().startOf('day').subtract(1, 'days').unix();
   return { startDate, endDate };
 }
 

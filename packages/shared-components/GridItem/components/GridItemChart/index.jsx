@@ -7,7 +7,14 @@ import chartConfig from './chartConfig';
 
 function prepareSeries(dailyMetric, timezone) {
   const seriesData = Array.from(dailyMetric, (day) => {
-    const dayStartTimestamp = moment(Number(day.day)).startOf('day').valueOf();
+    const dayStartTimestamp = moment(Number(day.day)).tz(timezone).startOf('day').valueOf();
+    ReactHighcharts.Highcharts.setOptions(
+      {
+        global: {
+          getTimezoneOffset: timestamp => -moment.tz(timestamp, timezone).utcOffset(),
+        },
+      },
+    );
     return {
       x: dayStartTimestamp,
       y: day.metric ? day.metric.value : 0,
