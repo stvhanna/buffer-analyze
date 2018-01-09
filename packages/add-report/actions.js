@@ -1,6 +1,6 @@
 import keyWrapper from '@bufferapp/keywrapper';
 
-export const actionTypes = keyWrapper('REPORTS', {
+export const actionTypes = keyWrapper('REPORT', {
   CREATE_REPORT: 'CREATE_REPORT',
   ADD_TO_REPORT: 'ADD_TO_REPORT',
 });

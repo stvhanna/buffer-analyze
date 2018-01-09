@@ -1,12 +1,14 @@
 import { actionTypes as fetchActions } from '@bufferapp/async-data-fetch';
 
-export const actionTypes = {
+import keyWrapper from '@bufferapp/keywrapper';
+
+export const actionTypes = keyWrapper('PROFILE_SELECTOR', {
   SELECT_PROFILE: 'SELECT_PROFILE',
   SELECT_PROFILE_SERVICE: 'SELECT_PROFILE_SERVICE',
   FILTER_PROFILES: 'FILTER_PROFILES',
   OPEN_DROPDOWN: 'OPEN_DROPDOWN',
   CLOSE_DROPDOWN: 'CLOSE_DROPDOWN',
-};
+});
 
 const initialState = {
   profiles: [],

@@ -1,11 +1,13 @@
 import { actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-fetch';
 import { actionTypes as profileActionTypes } from '@bufferapp/analyze-profile-selector';
 
-export const actionTypes = {
+import keyWrapper from '@bufferapp/keywrapper';
+
+export const actionTypes = keyWrapper('POSTS_TABLE', {
   SELECT_TOP_POSTS_METRIC: 'SELECT_TOP_POSTS_METRIC',
   TOGGLE_TOP_POSTS_DROPDOWN: 'TOGGLE_TOP_POSTS_DROPDOWN',
   SELECT_TOP_POSTS_COUNT: 'SELECT_TOP_POSTS_COUNT',
-};
+});
 
 const initialState = {
   posts: [],

@@ -1,9 +1,10 @@
 import defaultTranslations from './translations/en-us.json';
+import keyWrapper from '@bufferapp/keywrapper';
 
-export const actionTypes = {
+export const actionTypes = keyWrapper('I18N', {
   SET_LOCALE: 'SET_LOCALE',
   SET_TRANSLATIONS: 'SET_TRANSLATIONS',
-};
+});
 
 const initialState = {
   locale: 'en-US',

@@ -1,8 +1,9 @@
 import moment from 'moment';
 
 import { actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-fetch';
+import keyWrapper from '@bufferapp/keywrapper';
 
-export const actionTypes = {
+export const actionTypes = keyWrapper('DATE_PICKER', {
   OPEN_DATE_PICKER: 'OPEN_DATE_PICKER',
   CLOSE_DATE_PICKER: 'CLOSE_DATE_PICKER',
   SET_MONTH: 'SET_MONTH',
@@ -13,7 +14,7 @@ export const actionTypes = {
   CLEAR_END_DATE: 'CLEAR_END_DATE',
   OPEN_CALENDAR: 'OPEN_CALENDAR',
   CLOSE_CALENDAR: 'CLOSE_CALENDAR',
-};
+});
 
 const initialState = {
   loading: true,

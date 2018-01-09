@@ -1,9 +1,10 @@
 import { actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-fetch';
+import keyWrapper from '@bufferapp/keywrapper';
 
-export const actionTypes = {
+export const actionTypes = keyWrapper('REPORT', {
   VIEW_REPORT: 'VIEW_REPORT',
   REMOVE_REPORT: 'REMOVE_REPORT',
-};
+});
 
 const initialState = {
   reports: [],

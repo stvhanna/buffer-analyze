@@ -23,7 +23,6 @@
   "dependencies": {
     "@bufferapp/analyze-shared-components": "^0.26.0",
     "@bufferapp/components": "2.1.1",
-    "@bufferapp/keywrapper": "^0.2.0",
     "@bufferapp/report-list": "^0.26.0",
     "styled-components": "^2.2.1"
   },

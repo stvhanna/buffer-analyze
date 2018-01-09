@@ -1,12 +1,13 @@
 import { actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-fetch';
+import keyWrapper from '@bufferapp/keywrapper';
 
-export const actionTypes = {
+export const actionTypes = keyWrapper('COMPARE_CHART', {
   SELECT_METRIC: 'SELECT_METRIC',
   SELECT_DAILY_MODE: 'SELECT_DAILY_MODE',
   TOGGLE_PREVIOUS_PERIOD: 'TOGGLE_PREVIOUS_PERIOD',
   OPEN_DROPDOWN: 'OPEN_DROPDOWN',
   CLOSE_DROPDOWN: 'CLOSE_DROPDOWN',
-};
+});
 
 const initialState = {
   isDropdownOpen: false,
