@@ -1466,7 +1466,7 @@ exports[`Snapshots InsightsPage should render Insights page 1`] = `
 exports[`Snapshots ReportsPage should render reports page 1`] = `
 <span>
   <div
-    className="sc-jqCOkK joTNwV"
+    className="sc-uJMKN fHlLjs"
   >
     <div
       style={
@@ -1649,10 +1649,10 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
       </a>
     </div>
     <div
-      className="sc-uJMKN kElbHg"
+      className="sc-bbmXgH lofLKu"
     >
       <header
-        className="sc-gGBfsJ eYywuG"
+        className="sc-jnlKLf kgZYjV"
       >
         <button
           className="sc-bdVaJa eTEyQW"
@@ -1660,389 +1660,396 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
         >
           Back to Reports
         </button>
-        <div
-          className="sc-Rmtcm kWSdXa"
+        <section
+          className="sc-tilXH ipziHM"
         >
-          <button
-            className="sc-kgoBCf bCHNEj"
-            disabled={false}
-            onClick={[Function]}
+          <div
+            className="sc-Rmtcm kWSdXa"
           >
-            <span
-              style={
-                Object {
-                  "color": "#59626a",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "0.75rem",
-                  "fontWeight": 700,
-                }
-              }
+            <button
+              className="sc-kgoBCf bCHNEj"
+              disabled={false}
+              onClick={[Function]}
             >
-              From: 10/29/17 - To: 11/04/17
-            </span>
-            <span
-              className="sc-kGXeez QhbPc"
-            >
-              <svg
-                height="100%"
+              <span
                 style={
                   Object {
-                    "fill": "#59626a",
-                    "height": "0.75rem",
-                    "width": "0.75rem",
+                    "color": "#59626a",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
+                    "fontWeight": 700,
                   }
                 }
-                version="1.1"
-                viewBox="0 0 16 16"
-                width="100%"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
               >
-                <g
-                  className="shuttleGray"
-                >
-                  <path
-                    d="M4.90573685,4.61438297 C4.5159485,4.22537555 4.51510793,3.59709045 4.90996552,3.20500565 L4.90996552,3.20500565 C5.30208929,2.81563546 5.93536183,2.81786315 6.32490003,3.21046581 L11.2750374,8.19954548 C11.6643604,8.59193123 11.6645756,9.22591178 11.2750374,9.61606213 L6.32490003,14.5739785 C5.93557705,14.9639132 5.3048231,14.9648641 4.90996552,14.5699959 L4.90996552,14.5699959 C4.51784174,14.1778616 4.51273549,13.5497061 4.9163418,13.1493324 L8.84038203,9.25672113 C9.03897712,9.05971665 9.04484713,8.74520064 8.84038203,8.54114518 L4.90573685,4.61438297 Z"
-                    transform="translate(8.089966, 8.890003) scale(-1, 1) rotate(-270.000000) translate(-8.089966, -8.890003) "
-                  />
-                </g>
-              </svg>
-            </span>
-          </button>
-          <div
-            className="sc-kpOJdX dYDxNw"
-          >
-            <div>
-              <header
-                className="sc-jWBwVP hHfNoH"
+                From: 10/29/17 - To: 11/04/17
+              </span>
+              <span
+                className="sc-kGXeez QhbPc"
               >
-                <ul
-                  className="sc-brqgnP hNHNEh"
+                <svg
+                  height="100%"
+                  style={
+                    Object {
+                      "fill": "#59626a",
+                      "height": "0.75rem",
+                      "width": "0.75rem",
+                    }
+                  }
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
                 >
-                  <li
-                    className="sc-cMljjf fLBuZh"
-                    data-tip={null}
-                    disabled={false}
+                  <g
+                    className="shuttleGray"
                   >
-                    <button
-                      aria-label={null}
-                      disabled={undefined}
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      onMouseEnter={[Function]}
-                      onMouseLeave={[Function]}
-                      style={
-                        Object {
-                          "background": "none",
-                          "backgroundColor": "unset",
-                          "border": "none",
-                          "borderRadius": "unset",
-                          "color": "unset",
-                          "cursor": "pointer",
-                          "display": "unset",
-                          "fontFamily": "unset",
-                          "fontSize": "unset",
-                          "fontWeight": "unset",
-                          "lineHeight": "unset",
-                          "margin": "unset",
-                          "outline": "none",
-                          "padding": 0,
-                          "transition": "unset",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "color": undefined,
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "0.75rem",
-                            "fontWeight": 400,
-                          }
-                        }
-                      >
-                        90 Days
-                      </span>
-                    </button>
-                  </li>
-                  <li
-                    className="sc-cMljjf fLBuZh"
-                    data-tip={null}
-                    disabled={false}
-                  >
-                    <button
-                      aria-label={null}
-                      disabled={undefined}
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      onMouseEnter={[Function]}
-                      onMouseLeave={[Function]}
-                      style={
-                        Object {
-                          "background": "none",
-                          "backgroundColor": "unset",
-                          "border": "none",
-                          "borderRadius": "unset",
-                          "color": "unset",
-                          "cursor": "pointer",
-                          "display": "unset",
-                          "fontFamily": "unset",
-                          "fontSize": "unset",
-                          "fontWeight": "unset",
-                          "lineHeight": "unset",
-                          "margin": "unset",
-                          "outline": "none",
-                          "padding": 0,
-                          "transition": "unset",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "color": undefined,
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "0.75rem",
-                            "fontWeight": 400,
-                          }
-                        }
-                      >
-                        30 Days
-                      </span>
-                    </button>
-                  </li>
-                  <li
-                    className="sc-cMljjf fLBuZh"
-                    data-tip={null}
-                    disabled={false}
-                  >
-                    <button
-                      aria-label={null}
-                      disabled={undefined}
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      onMouseEnter={[Function]}
-                      onMouseLeave={[Function]}
-                      style={
-                        Object {
-                          "background": "none",
-                          "backgroundColor": "unset",
-                          "border": "none",
-                          "borderRadius": "unset",
-                          "color": "unset",
-                          "cursor": "pointer",
-                          "display": "unset",
-                          "fontFamily": "unset",
-                          "fontSize": "unset",
-                          "fontWeight": "unset",
-                          "lineHeight": "unset",
-                          "margin": "unset",
-                          "outline": "none",
-                          "padding": 0,
-                          "transition": "unset",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "color": undefined,
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "0.75rem",
-                            "fontWeight": 400,
-                          }
-                        }
-                      >
-                        28 Days
-                      </span>
-                    </button>
-                  </li>
-                </ul>
-                <ul
-                  className="sc-brqgnP hNHNEh"
+                    <path
+                      d="M4.90573685,4.61438297 C4.5159485,4.22537555 4.51510793,3.59709045 4.90996552,3.20500565 L4.90996552,3.20500565 C5.30208929,2.81563546 5.93536183,2.81786315 6.32490003,3.21046581 L11.2750374,8.19954548 C11.6643604,8.59193123 11.6645756,9.22591178 11.2750374,9.61606213 L6.32490003,14.5739785 C5.93557705,14.9639132 5.3048231,14.9648641 4.90996552,14.5699959 L4.90996552,14.5699959 C4.51784174,14.1778616 4.51273549,13.5497061 4.9163418,13.1493324 L8.84038203,9.25672113 C9.03897712,9.05971665 9.04484713,8.74520064 8.84038203,8.54114518 L4.90573685,4.61438297 Z"
+                      transform="translate(8.089966, 8.890003) scale(-1, 1) rotate(-270.000000) translate(-8.089966, -8.890003) "
+                    />
+                  </g>
+                </svg>
+              </span>
+            </button>
+            <div
+              className="sc-kpOJdX dYDxNw"
+            >
+              <div>
+                <header
+                  className="sc-jWBwVP hHfNoH"
                 >
-                  <li
-                    className="sc-cMljjf fLBuZh"
-                    data-tip={null}
-                    disabled={false}
+                  <ul
+                    className="sc-brqgnP hNHNEh"
                   >
-                    <button
-                      aria-label={null}
-                      disabled={undefined}
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      onMouseEnter={[Function]}
-                      onMouseLeave={[Function]}
-                      style={
-                        Object {
-                          "background": "none",
-                          "backgroundColor": "unset",
-                          "border": "none",
-                          "borderRadius": "unset",
-                          "color": "unset",
-                          "cursor": "pointer",
-                          "display": "unset",
-                          "fontFamily": "unset",
-                          "fontSize": "unset",
-                          "fontWeight": "unset",
-                          "lineHeight": "unset",
-                          "margin": "unset",
-                          "outline": "none",
-                          "padding": 0,
-                          "transition": "unset",
-                        }
-                      }
+                    <li
+                      className="sc-cMljjf fLBuZh"
+                      data-tip={null}
+                      disabled={false}
                     >
-                      <span
+                      <button
+                        aria-label={null}
+                        disabled={undefined}
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseEnter={[Function]}
+                        onMouseLeave={[Function]}
                         style={
                           Object {
-                            "color": undefined,
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "0.75rem",
-                            "fontWeight": 400,
+                            "background": "none",
+                            "backgroundColor": "unset",
+                            "border": "none",
+                            "borderRadius": "unset",
+                            "color": "unset",
+                            "cursor": "pointer",
+                            "display": "unset",
+                            "fontFamily": "unset",
+                            "fontSize": "unset",
+                            "fontWeight": "unset",
+                            "lineHeight": "unset",
+                            "margin": "unset",
+                            "outline": "none",
+                            "padding": 0,
+                            "transition": "unset",
                           }
                         }
                       >
-                        7 Days
-                      </span>
-                    </button>
-                  </li>
-                  <li
-                    className="sc-cMljjf fLBuZh"
-                    data-tip={null}
-                    disabled={false}
-                  >
-                    <button
-                      aria-label={null}
-                      disabled={undefined}
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      onMouseEnter={[Function]}
-                      onMouseLeave={[Function]}
-                      style={
-                        Object {
-                          "background": "none",
-                          "backgroundColor": "unset",
-                          "border": "none",
-                          "borderRadius": "unset",
-                          "color": "unset",
-                          "cursor": "pointer",
-                          "display": "unset",
-                          "fontFamily": "unset",
-                          "fontSize": "unset",
-                          "fontWeight": "unset",
-                          "lineHeight": "unset",
-                          "margin": "unset",
-                          "outline": "none",
-                          "padding": 0,
-                          "transition": "unset",
-                        }
-                      }
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          90 Days
+                        </span>
+                      </button>
+                    </li>
+                    <li
+                      className="sc-cMljjf fLBuZh"
+                      data-tip={null}
+                      disabled={false}
                     >
-                      <span
+                      <button
+                        aria-label={null}
+                        disabled={undefined}
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseEnter={[Function]}
+                        onMouseLeave={[Function]}
                         style={
                           Object {
-                            "color": undefined,
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "0.75rem",
-                            "fontWeight": 400,
+                            "background": "none",
+                            "backgroundColor": "unset",
+                            "border": "none",
+                            "borderRadius": "unset",
+                            "color": "unset",
+                            "cursor": "pointer",
+                            "display": "unset",
+                            "fontFamily": "unset",
+                            "fontSize": "unset",
+                            "fontWeight": "unset",
+                            "lineHeight": "unset",
+                            "margin": "unset",
+                            "outline": "none",
+                            "padding": 0,
+                            "transition": "unset",
                           }
                         }
                       >
-                        Yesterday
-                      </span>
-                    </button>
-                  </li>
-                  <li
-                    className="sc-cMljjf kVpdba"
-                    data-tip={null}
-                    disabled={false}
-                  >
-                    <button
-                      aria-label={null}
-                      disabled={undefined}
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      onMouseEnter={[Function]}
-                      onMouseLeave={[Function]}
-                      style={
-                        Object {
-                          "background": "none",
-                          "backgroundColor": "unset",
-                          "border": "none",
-                          "borderRadius": "unset",
-                          "color": "unset",
-                          "cursor": "pointer",
-                          "display": "unset",
-                          "fontFamily": "unset",
-                          "fontSize": "unset",
-                          "fontWeight": "unset",
-                          "lineHeight": "unset",
-                          "margin": "unset",
-                          "outline": "none",
-                          "padding": 0,
-                          "transition": "unset",
-                        }
-                      }
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          30 Days
+                        </span>
+                      </button>
+                    </li>
+                    <li
+                      className="sc-cMljjf fLBuZh"
+                      data-tip={null}
+                      disabled={false}
                     >
-                      <span
+                      <button
+                        aria-label={null}
+                        disabled={undefined}
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseEnter={[Function]}
+                        onMouseLeave={[Function]}
                         style={
                           Object {
-                            "color": "#fff",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "0.75rem",
-                            "fontWeight": 400,
+                            "background": "none",
+                            "backgroundColor": "unset",
+                            "border": "none",
+                            "borderRadius": "unset",
+                            "color": "unset",
+                            "cursor": "pointer",
+                            "display": "unset",
+                            "fontFamily": "unset",
+                            "fontSize": "unset",
+                            "fontWeight": "unset",
+                            "lineHeight": "unset",
+                            "margin": "unset",
+                            "outline": "none",
+                            "padding": 0,
+                            "transition": "unset",
                           }
                         }
                       >
-                        Custom
-                      </span>
-                    </button>
-                  </li>
-                </ul>
-              </header>
-              <div
-                className="sc-gipzik bvAyXF"
-              />
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          28 Days
+                        </span>
+                      </button>
+                    </li>
+                  </ul>
+                  <ul
+                    className="sc-brqgnP hNHNEh"
+                  >
+                    <li
+                      className="sc-cMljjf fLBuZh"
+                      data-tip={null}
+                      disabled={false}
+                    >
+                      <button
+                        aria-label={null}
+                        disabled={undefined}
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseEnter={[Function]}
+                        onMouseLeave={[Function]}
+                        style={
+                          Object {
+                            "background": "none",
+                            "backgroundColor": "unset",
+                            "border": "none",
+                            "borderRadius": "unset",
+                            "color": "unset",
+                            "cursor": "pointer",
+                            "display": "unset",
+                            "fontFamily": "unset",
+                            "fontSize": "unset",
+                            "fontWeight": "unset",
+                            "lineHeight": "unset",
+                            "margin": "unset",
+                            "outline": "none",
+                            "padding": 0,
+                            "transition": "unset",
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          7 Days
+                        </span>
+                      </button>
+                    </li>
+                    <li
+                      className="sc-cMljjf fLBuZh"
+                      data-tip={null}
+                      disabled={false}
+                    >
+                      <button
+                        aria-label={null}
+                        disabled={undefined}
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseEnter={[Function]}
+                        onMouseLeave={[Function]}
+                        style={
+                          Object {
+                            "background": "none",
+                            "backgroundColor": "unset",
+                            "border": "none",
+                            "borderRadius": "unset",
+                            "color": "unset",
+                            "cursor": "pointer",
+                            "display": "unset",
+                            "fontFamily": "unset",
+                            "fontSize": "unset",
+                            "fontWeight": "unset",
+                            "lineHeight": "unset",
+                            "margin": "unset",
+                            "outline": "none",
+                            "padding": 0,
+                            "transition": "unset",
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": undefined,
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          Yesterday
+                        </span>
+                      </button>
+                    </li>
+                    <li
+                      className="sc-cMljjf kVpdba"
+                      data-tip={null}
+                      disabled={false}
+                    >
+                      <button
+                        aria-label={null}
+                        disabled={undefined}
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseEnter={[Function]}
+                        onMouseLeave={[Function]}
+                        style={
+                          Object {
+                            "background": "none",
+                            "backgroundColor": "unset",
+                            "border": "none",
+                            "borderRadius": "unset",
+                            "color": "unset",
+                            "cursor": "pointer",
+                            "display": "unset",
+                            "fontFamily": "unset",
+                            "fontSize": "unset",
+                            "fontWeight": "unset",
+                            "lineHeight": "unset",
+                            "margin": "unset",
+                            "outline": "none",
+                            "padding": 0,
+                            "transition": "unset",
+                          }
+                        }
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#fff",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                          Custom
+                        </span>
+                      </button>
+                    </li>
+                  </ul>
+                </header>
+                <div
+                  className="sc-gipzik bvAyXF"
+                />
+              </div>
             </div>
+            <div
+              className="sc-bRBYWo eETGfz"
+              onClick={[Function]}
+              role="button"
+              tabIndex="0"
+            />
           </div>
-          <div
-            className="sc-bRBYWo eETGfz"
-            onClick={[Function]}
-            role="button"
-            tabIndex="0"
-          />
-        </div>
-        <a
-          href="#export-to-pdf"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          style={
-            Object {
-              "color": "#168eea",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "padding": "0",
-            }
-          }
-          target="_self"
-        >
-          Export to PDF
-        </a>
+          <span
+            className="sc-jqCOkK glHNLq"
+          >
+            <button
+              className="sc-bdVaJa eTEyQW"
+              onClick={[Function]}
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
+                    "fontWeight": 700,
+                  }
+                }
+              >
+                Export as PDF
+              </span>
+            </button>
+          </span>
+        </section>
       </header>
       <div
-        className="sc-bbmXgH dzigrC"
+        className="sc-gGBfsJ bLDNTf"
       >
         <section
-          className="sc-jnlKLf gNFAI"
+          className="sc-fYxtnH iJmkVD"
         >
           ...loading
         </section>
