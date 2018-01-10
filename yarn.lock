@@ -2,11 +2,11 @@
 # yarn lockfile v1
 
 
-"@bufferapp/app-sidebar@1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@bufferapp/app-sidebar/-/app-sidebar-1.2.3.tgz#bc02453ff23c6a49715a63ae60f9e3bca54df443"
+"@bufferapp/app-sidebar@1.2.4":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@bufferapp/app-sidebar/-/app-sidebar-1.2.4.tgz#0a63bd367caae8a2602eb7b2aa0dfaadc2c0e6d2"
   dependencies:
-    "@bufferapp/async-data-fetch" "0.7.4"
+    "@bufferapp/async-data-fetch" "1.2.4"
     "@bufferapp/components" "1.1.0-beta.6"
     "@bufferapp/session-manager" "0.5.39"
 
@@ -21,6 +21,10 @@
 "@bufferapp/async-data-fetch@0.7.4":
   version "0.7.4"
   resolved "https://registry.yarnpkg.com/@bufferapp/async-data-fetch/-/async-data-fetch-0.7.4.tgz#81cee5ae4911be932f88744fc3c30296eeab2a64"
+
+"@bufferapp/async-data-fetch@1.2.4":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@bufferapp/async-data-fetch/-/async-data-fetch-1.2.4.tgz#a79d586fae1207010f8fa4130685c20a561a93f6"
 
 "@bufferapp/chronos@0.6.1":
   version "0.6.1"
