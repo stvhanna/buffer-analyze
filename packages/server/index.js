@@ -3,6 +3,7 @@ const http = require('http');
 const express = require('express');
 const bodyParser = require('body-parser');
 const logMiddleware = require('@bufferapp/logger/middleware');
+const buffermetricsMiddleware = require('@bufferapp/buffermetrics/middleware');
 const bugsnag = require('bugsnag');
 const fs = require('fs');
 const { join } = require('path');
@@ -14,7 +15,6 @@ const {
 const { apiError } = require('./middleware');
 const controller = require('./lib/controller');
 const rpc = require('./rpc');
-const buffermetricsMiddleware = require('@bufferapp/buffermetrics/middleware')
 
 const app = express();
 const server = http.createServer(app);

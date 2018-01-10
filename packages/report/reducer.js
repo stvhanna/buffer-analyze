@@ -1,7 +1,7 @@
 import { actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-fetch';
+import keyWrapper from '@bufferapp/keywrapper';
 import { DIRECTION_UP, DIRECTION_DOWN } from './middleware';
 
-import keyWrapper from '@bufferapp/keywrapper';
 
 export const actionTypes = keyWrapper('REPORT', {
   EDIT_NAME: 'EDIT_NAME',
