@@ -31,8 +31,6 @@ const cardLinkStyle = {
 
 const getFirstProfileForService = (service, profiles) => (
   profiles.find(profile => profile.service === service)
-  //console.log('finding ' + service);
-  //return '12345';
 );
 
 
