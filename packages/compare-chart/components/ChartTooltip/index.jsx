@@ -148,15 +148,14 @@ UpdatesTooltip.defaultProps = {
 const Header = ({
   day,
   previousPeriodDay,
-  timezone,
   visualizePreviousPeriod,
 }) => (
   <span>
-    <Text color="mystic" size="extra-small" >{moment.tz(day, timezone).format('D MMMM')}</Text>
+    <Text color="mystic" size="extra-small" >{moment.utc(day).format('D MMMM')}</Text>
     {visualizePreviousPeriod && <span>
       <br />
       <Text color="mystic" size="extra-small" >comparing to </Text>
-      <Text color="mystic" size="extra-small" >{moment.tz(previousPeriodDay, timezone).format('D MMMM')}</Text>
+      <Text color="mystic" size="extra-small" >{moment.utc(previousPeriodDay).format('D MMMM')}</Text>
     </span>}
     <br />
     <br />
@@ -167,7 +166,6 @@ Header.propTypes = {
   visualizePreviousPeriod: PropTypes.bool,
   day: PropTypes.number.isRequired,
   previousPeriodDay: PropTypes.number.isRequired,
-  timezone: PropTypes.string.isRequired,
 };
 
 Header.defaultProps = {

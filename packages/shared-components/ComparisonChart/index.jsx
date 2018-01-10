@@ -42,7 +42,7 @@ function prepareSeries(
       color = day.metric.color;
     }
 
-    const dayStartTimestamp = moment.tz(Number(day.day), timezone).startOf('day').valueOf();
+    const dayStartTimestamp = moment.utc(Number(day.day)).startOf('day').valueOf();
 
     return {
       x: dayStartTimestamp,
@@ -87,17 +87,6 @@ function prepareChartOptions(profilesMetricData) {
 
 const ComparisonChart = ({ profilesMetricData }) => {
   const charOptions = prepareChartOptions(profilesMetricData);
-  // TODO: This won't work for multiple profiles.
-  // We should move do timezone transformation in the backend
-  // and get the data based on UTC from backend
-  const timezone = profilesMetricData[0].timezone;
-  ReactHighcharts.Highcharts.setOptions(
-    {
-      global: {
-        getTimezoneOffset: timestamp => -moment.tz(timestamp, timezone).utcOffset(),
-      },
-    },
-  );
   return (<ReactHighcharts config={charOptions} />);
 };
 

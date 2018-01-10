@@ -47,10 +47,9 @@ StandardTooltip.defaultProps = {
 
 const Header = ({
   day,
-  timezone,
 }) => (
   <span>
-    <Text color="mystic" size="extra-small" >{moment.tz(day, timezone).format('D MMMM')}</Text>
+    <Text color="mystic" size="extra-small" >{moment.utc(day).format('D MMMM')}</Text>
     <br />
     <br />
   </span>
@@ -58,7 +57,6 @@ const Header = ({
 
 Header.propTypes = {
   day: PropTypes.number.isRequired,
-  timezone: PropTypes.string.isRequired,
 };
 
 const ComparisonChartTooltip = ({

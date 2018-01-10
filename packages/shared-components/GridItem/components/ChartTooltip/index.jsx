@@ -12,12 +12,12 @@ function transformLabelForTooltip(label) {
 const ChartTooltip = ({ point }) => (
   point.label ?
     (<span style={{ marginLeft: '7px' }}>
-      <Text size="small" >{moment.tz(point.x, point.timezone).format('D MMMM')},</Text>
+      <Text size="small" >{moment.utc(point.x).format('D MMMM')},</Text>
       <Text size="small" weight="bold" color="black" > <TruncatedNumber>{point.y}</TruncatedNumber></Text>
       <Text size="small" > {transformLabelForTooltip(point.label)}</Text>
     </span>) :
     (<span style={{ marginLeft: '7px' }}>
-      <Text size="small">No data for {moment.tz(point.x, point.timezone).format('D MMMM')}</Text>
+      <Text size="small">No data for {moment.utc(point.x).format('D MMMM')}</Text>
     </span>)
 );
 

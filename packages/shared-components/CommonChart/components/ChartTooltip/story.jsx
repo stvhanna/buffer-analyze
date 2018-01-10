@@ -5,7 +5,7 @@ import { checkA11y } from 'storybook-addon-a11y';
 import ChartTooltip from './index';
 import mockPresets from '../../../mocks/presets';
 
-const dayTimestamp = moment(1505174400000).startOf('day').valueOf();
+const dayTimestamp = moment.utc(1505174400000).startOf('day').valueOf();
 
 storiesOf('AudienceChartTooltip')
   .addDecorator(checkA11y)

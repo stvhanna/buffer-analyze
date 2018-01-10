@@ -24,7 +24,7 @@ const gridSummaryItemValueWrapper = {
 
 function filterDailyDataMetrics(dailyData, metricLabel) {
   return dailyData.map(day => ({
-    day: day.day,
+    ...day,
     metric: day.metrics.filter(metric => metric.label === metricLabel).shift(),
   }));
 }
