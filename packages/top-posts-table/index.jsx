@@ -36,7 +36,7 @@ PostsTableWrapper.propTypes = {
 // default export = container
 export default connect(
   (state, props) => ({
-    title: 'Top Posts',
+    title: 'Top posts',
     loading: state.topPosts.loading,
     timezone: state.profiles.profiles.find(
       profile => profile.id === props.selectedProfileId,
