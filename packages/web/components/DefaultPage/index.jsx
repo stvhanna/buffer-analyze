@@ -1,11 +1,10 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import { Text, Divider, Link } from '@bufferapp/components';
 import NavSidebar from '@bufferapp/nav-sidebar';
-import {
-  ChartCard
-} from '@bufferapp/analyze-shared-components';
+import { ChartCard } from '@bufferapp/analyze-shared-components';
 
 const pageStyle = {
   display: 'flex',
@@ -30,7 +29,53 @@ const cardLinkStyle = {
   color: 'rgb(22, 142, 234)'
 };
 
-const DefaultPage = ({ location }) =>
+const getFirstProfileForService = (service, profiles) => (
+  profiles.find(profile => profile.service === service)
+  //console.log('finding ' + service);
+  //return '12345';
+);
+
+
+const DefaultPage = ({ location, profiles }) => {
+
+  let facebookLink = 'Facebook Pages';
+  let twitterLink = 'Twitter Profiles';
+  let instagramLink = 'Instagram Profiles';
+
+  let facebookInsightsURL = '#';
+  let twitterInsightsURL = '#';
+  let instagramInsightsURL = '#';
+  const comparisonsLink = '/comparisons';
+  const reportsLink = '/reports';
+
+  if (profiles.length > 0) {
+    const facebookProfile = getFirstProfileForService('facebook', profiles);
+    const twitterProfile = getFirstProfileForService('twitter', profiles);
+    const instagramProfile = getFirstProfileForService('instagram', profiles);
+
+    if (facebookProfile) {
+      facebookInsightsURL = `/insights/facebook/${facebookProfile.id}/overview`;
+      facebookLink = (<a href={facebookInsightsURL} style={cardLinkStyle}>Facebook Pages</a>);
+    }
+
+    if (twitterProfile) {
+      twitterInsightsURL = `/insights/twitter/${twitterProfile.id}/overview`;
+      twitterLink = (<a href={twitterInsightsURL} style={cardLinkStyle}>Twitter Profiles</a>);
+    }
+
+    if (instagramProfile) {
+      instagramInsightsURL = `/insights/instagram/${instagramProfile.id}/overview`;
+      instagramLink = (<a href={instagramInsightsURL} style={cardLinkStyle}>Instagram Profiles</a>);
+    }
+  }
+
+  let welcomeText = (
+    <span>
+    Get started by viewing Insights for {facebookLink}, {twitterLink} or {instagramLink}. You can also <a href={comparisonsLink} style={cardLinkStyle}>compare profiles</a> or view <a href={reportsLink} style={cardLinkStyle}>your reports</a>.
+    </span>
+  );
+
+  return (
   <div style={pageStyle}>
     <NavSidebar route={location.pathname} />
     <div style={defaultPageStyle}>
@@ -39,18 +84,25 @@ const DefaultPage = ({ location }) =>
           <Text size="large">Welcome to Buffer Analyze 🎉</Text>
           <Divider marginBottom="1.5rem"/>
           <Text>
-            Get started by viewing Insights for <a href='#' style={cardLinkStyle}>Facebook Pages</a>, <a href='#' style={cardLinkStyle}>Twitter</a> or <a href='#' style={cardLinkStyle}>Instagram Profiles</a>.
-            You can also <a href='#' style={cardLinkStyle}>compare profiles</a> or view <a href='#' style={cardLinkStyle}>your reports</a>.
+            {welcomeText}
           </Text>
         </div>
       </ChartCard>
     </div>
-  </div>;
+  </div>
+  );
+}
 
 DefaultPage.propTypes = {
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired,
-  }).isRequired,
+  }).isRequired
 };
 
-export default DefaultPage;
+function mapStateToProps (state) {
+  return {
+    profiles: state.navSidebar.profiles
+  }
+}
+
+export default connect(mapStateToProps)(DefaultPage);
