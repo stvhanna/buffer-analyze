@@ -93,7 +93,7 @@ function prepareSeries(
     };
 
     if (dailyEntry.day) {
-      const dayStartTimestamp = moment.tz(Number(dailyEntry.day), timezone).startOf('day').valueOf();
+      const dayStartTimestamp = moment.utc(Number(dailyEntry.day)).startOf('day').valueOf();
       data.x = dayStartTimestamp;
     }
 
@@ -243,13 +243,6 @@ const Chart = ({
     selectedMetrics,
     selectedPreset,
     timezone,
-  );
-  ReactHighcharts.Highcharts.setOptions(
-    {
-      global: {
-        getTimezoneOffset: timestamp => -moment.tz(timestamp, timezone).utcOffset(),
-      },
-    },
   );
   return (
     <div id={`js-dom-to-png-${pngExportId}`}>

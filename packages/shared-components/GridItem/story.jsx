@@ -10,7 +10,7 @@ import GridItem from './index';
 import ChartTooltip from './components/ChartTooltip';
 import mockDailyData from './mock/dailyData';
 
-const dayTimestamp = moment.tz(Number(mockDailyData[0].day), 'Etc/UTC').startOf('day').valueOf();
+const dayTimestamp = moment.utc(Number(mockDailyData[0].day)).startOf('day').valueOf();
 
 storiesOf('GridItem')
   .addDecorator(checkA11y)

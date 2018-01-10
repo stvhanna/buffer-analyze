@@ -13,15 +13,8 @@ import {
   secondarySeriesConfig,
 } from './config';
 
-const HourlyEngagementChart = ({ metric, secondaryMetric, posts, timezone, chartRef }) => {
+const HourlyEngagementChart = ({ metric, secondaryMetric, posts, chartRef }) => {
   let hour = moment().startOf('day').subtract(1, 'hour');
-  ReactHighcharts.Highcharts.setOptions(
-    {
-      global: {
-        getTimezoneOffset: timestamp => -moment.tz(timestamp, timezone).utcOffset(),
-      },
-    },
-  );
   const metricByHour = metric.hourlyMetrics.map((hourlyMetric, index) => {
     hour.add(1, 'hour');
     return {
@@ -75,7 +68,6 @@ HourlyEngagementChart.defaultProps = {
   secondaryMetric: {
     hourlyMetrics: [],
   },
-  timezone: 'America/Los_Angeles',
 };
 
 HourlyEngagementChart.propTypes = {
@@ -89,7 +81,6 @@ HourlyEngagementChart.propTypes = {
     hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
   }),
   chartRef: PropTypes.func.isRequired,
-  timezone: PropTypes.string,
 };
 
 export default HourlyEngagementChart;

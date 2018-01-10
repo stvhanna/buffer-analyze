@@ -48,8 +48,8 @@ function prepareSeries(
       }
     }
 
-    const dayStartTimestamp = moment.tz(Number(day.day), timezone).startOf('day').valueOf();
-    const previousPeriodDay = moment.tz(Number(day.previousPeriodDay), timezone).startOf('day').valueOf();
+    const dayStartTimestamp = moment.utc(Number(day.day)).startOf('day').valueOf();
+    const previousPeriodDay = moment.utc(Number(day.previousPeriodDay)).startOf('day').valueOf();
 
     return {
       x: dayStartTimestamp,
@@ -145,13 +145,6 @@ const Chart =
       timezone,
       visualizePreviousPeriod,
       profileService,
-    );
-    ReactHighcharts.Highcharts.setOptions(
-      {
-        global: {
-          getTimezoneOffset: timestamp => -moment.tz(timestamp, timezone).utcOffset(),
-        },
-      },
     );
     return (<ReactHighcharts config={charOptions} />);
   };

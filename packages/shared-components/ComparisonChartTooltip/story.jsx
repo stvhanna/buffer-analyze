@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
 import ComparisonChartTooltip from './index';
 
-const dayTimestamp = moment(1505174400000).startOf('day').valueOf();
+const dayTimestamp = moment.utc(1505174400000).startOf('day').valueOf();
 
 storiesOf('ComparisonChartTooltip')
   .addDecorator(checkA11y)
