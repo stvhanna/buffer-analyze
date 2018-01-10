@@ -7,16 +7,16 @@ const style = {
   padding: '0',
 };
 
-const Title = ({ title }) =>
+const Title = ({ profileService }) =>
   <h2 style={style}>
     <Text weight="bold" size="large">
-      { title }
+      {profileService === 'twitter' ? 'Tweet breakdown' : 'Post breakdown'}
     </Text>
   </h2>
 ;
 
 Title.propTypes = {
-  title: PropTypes.string.isRequired,
+  profileService: PropTypes.string.isRequired,
 };
 
 export default Title;
