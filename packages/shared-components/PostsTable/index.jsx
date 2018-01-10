@@ -73,13 +73,13 @@ export const Table = ({ metrics, timezone, service }) => {
       <header>
         <ul className={chartColumnHeader}>
           <li className={contentColumn}>
-            <Text size="mini">Posts and Stories</Text>
+            <Text size="small">Posts and Stories</Text>
           </li>
           <li className={metricColumn}>
-            <Text size="mini">Engagements</Text>
+            <Text size="small">Engagements</Text>
           </li>
           <li className={metricColumn}>
-            <Text size="mini">Audience</Text>
+            <Text size="small">Audience</Text>
           </li>
         </ul>
       </header>
