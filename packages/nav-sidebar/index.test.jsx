@@ -2,6 +2,7 @@ import React from 'react';
 import { configure, mount, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { Provider } from 'react-redux';
+import { actions as profilesActions } from '@bufferapp/analyze-profile-selector';
 import NavSidebar, {
   reducer,
 } from './index';
@@ -76,9 +77,9 @@ describe('NavSidebar', () => {
     expect(store.dispatch.mock.calls[0][0]).toMatchObject({
       type: '@@router/CALL_HISTORY_METHOD',
     });
-    expect(store.dispatch.mock.calls[1][0]).toMatchObject({
-      type: 'SELECT_PROFILE_SERVICE',
-    });
+    expect(store.dispatch.mock.calls[1][0]).toMatchObject(
+      profilesActions.selectProfileService(),
+    );
   });
 
   it('should export reducer', () => {
