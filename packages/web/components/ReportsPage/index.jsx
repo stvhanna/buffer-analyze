@@ -13,12 +13,17 @@ import styled from 'styled-components';
 const Page = styled.div`
   display: flex;
   height: 100%;
-  background: #FAFAFA;
 `;
 
 const Container = styled.div`
-  width: 100%;
-  overflow-y: scroll;
+  flex-grow: 1;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: #FAFAFA;
+  overflow-y: auto;
 `;
 
 const Content = styled.div`
