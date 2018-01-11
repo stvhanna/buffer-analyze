@@ -7,6 +7,7 @@ import NavSidebar from '@bufferapp/nav-sidebar';
 import PDFExportButton from '@bufferapp/pdf-export';
 import Report from '@bufferapp/report';
 import { Button } from '@bufferapp/analyze-shared-components';
+import Text from '@bufferapp/components/Text';
 import styled from 'styled-components';
 
 const Page = styled.div`
@@ -29,11 +30,13 @@ const Content = styled.div`
 
 const Header = styled.header`
   background: white;
-  padding: .5rem;
-  box-shadow: 0px 1px 0px #E2E8ED;
+  padding: 0.85rem 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #E2E8ED;
+  box-sizing: border-box;
 `;
 
 const Card = styled.section`
@@ -55,7 +58,7 @@ const ReportsPage = ({ location, dispatch }) => (
     <NavSidebar route={location.pathname} />
     <Container>
       <Header>
-        <Button onClick={() => dispatch(push('/reports'))}>Back to Reports</Button>
+        <Button onClick={() => dispatch(push('/reports'))}><Text weight="bold" size="small">Back to Reports</Text></Button>
         <Section>
           <DatePicker staticData />
           <PDFExportButton />
