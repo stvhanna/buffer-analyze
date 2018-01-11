@@ -5,6 +5,9 @@ import {
   Button,
 } from '@bufferapp/components';
 import {
+  ChartStateLoading as Loading,
+} from '@bufferapp/analyze-shared-components';
+import {
   EditIcon,
 } from '@bufferapp/components/Icon/Icons';
 import styled from 'styled-components';
@@ -50,7 +53,7 @@ class Report extends React.Component {
   render() {
     const { name, dateRange, charts, loading,
       edit, saveChanges, editName, moveUp, moveDown, deleteChart, exporting } = this.props;
-    if (loading) return '...loading';
+    if (loading) return <Loading active noBorder />;
     return (
       <div id="report-page">
         <Text>
