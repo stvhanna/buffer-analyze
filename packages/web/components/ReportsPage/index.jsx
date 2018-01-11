@@ -23,13 +23,13 @@ const Container = styled.div`
   min-height: 100vh;
   flex-direction: column;
   background: #FAFAFA;
-  overflow-y: auto;
 `;
 
 const Content = styled.div`
-  max-width: 65rem;
   width: 100%;
-  margin: 2.8rem auto;
+  margin: 0 auto;
+  padding: 2.8rem 0;
+  overflow-y: auto;
 `;
 
 const Header = styled.header`
@@ -45,6 +45,7 @@ const Header = styled.header`
 
 const Card = styled.section`
   width: 880px;
+  margin: 0 auto;
   background: #FFFFFF;
   border: 1px solid #E2E8ED;
   box-shadow: 0px 0px 10px rgba(48, 71, 89, 0.05);
