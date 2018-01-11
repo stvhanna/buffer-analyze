@@ -12,7 +12,6 @@ import styled from 'styled-components';
 
 const Page = styled.div`
   display: flex;
-  flexGrow: 1;
   height: 100%;
   background: #FAFAFA;
 `;
