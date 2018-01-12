@@ -432,6 +432,454 @@ exports[`Snapshots AudienceChartTooltip [TESTED] should render the tooltip 1`] =
 </span>
 `;
 
+exports[`Snapshots CommonChart [TESTED] Should render Posts metrics as columns in Custom mode 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "750px",
+      }
+    }
+  >
+    <div
+      id="js-dom-to-png-common"
+    >
+      <ul
+        style={
+          Object {
+            "alignItems": "center",
+            "boxSizing": "border-box",
+            "display": "flex",
+            "justifyContent": "center",
+            "listStyle": "none",
+            "padding": "5px 10px",
+            "position": "relative",
+          }
+        }
+      >
+        <li
+          style={
+            Object {
+              "margin": "0 0.5rem",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "background": "#fda3f3",
+                "borderColor": "#df85d5",
+                "borderRadius": "10px",
+                "borderStyle": "solid",
+                "borderWidth": "1px",
+                "display": "inline-block",
+                "height": "7px",
+                "marginRight": "5px",
+                "verticalAlign": "baseline",
+                "width": "7px",
+              }
+            }
+          />
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            Impression
+          </span>
+        </li>
+        <li
+          style={
+            Object {
+              "margin": "0 0.5rem",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "background": "#fda3f3",
+                "borderColor": "#df85d5",
+                "borderRadius": "10px",
+                "borderStyle": "solid",
+                "borderWidth": "1px",
+                "display": "inline-block",
+                "height": "7px",
+                "marginRight": "5px",
+                "verticalAlign": "baseline",
+                "width": "7px",
+              }
+            }
+          />
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            Click
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots CommonChart [TESTED] Should render in Custom mode 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "750px",
+      }
+    }
+  >
+    <div
+      id="js-dom-to-png-common"
+    >
+      <ul
+        style={
+          Object {
+            "alignItems": "center",
+            "boxSizing": "border-box",
+            "display": "flex",
+            "justifyContent": "center",
+            "listStyle": "none",
+            "padding": "5px 10px",
+            "position": "relative",
+          }
+        }
+      >
+        <li
+          style={
+            Object {
+              "margin": "0 0.5rem",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "background": "#fda3f3",
+                "borderColor": "#df85d5",
+                "borderRadius": "0px",
+                "borderStyle": "solid",
+                "borderWidth": "1px",
+                "display": "inline-block",
+                "height": "7px",
+                "marginRight": "5px",
+                "verticalAlign": "baseline",
+                "width": "7px",
+              }
+            }
+          />
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            Engagement
+          </span>
+        </li>
+        <li
+          style={
+            Object {
+              "margin": "0 0.5rem",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "background": "#fda3f3",
+                "borderColor": "#df85d5",
+                "borderRadius": "10px",
+                "borderStyle": "solid",
+                "borderWidth": "1px",
+                "display": "inline-block",
+                "height": "7px",
+                "marginRight": "5px",
+                "verticalAlign": "baseline",
+                "width": "7px",
+              }
+            }
+          />
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            Impression
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots CommonChart [TESTED] Should render in Presets mode with days 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "750px",
+      }
+    }
+  >
+    <div
+      id="js-dom-to-png-common"
+    >
+      <ul
+        style={
+          Object {
+            "alignItems": "center",
+            "boxSizing": "border-box",
+            "display": "flex",
+            "justifyContent": "center",
+            "listStyle": "none",
+            "padding": "5px 10px",
+            "position": "relative",
+          }
+        }
+      >
+        <li
+          style={
+            Object {
+              "margin": "0 0.5rem",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "background": "#3A92D3",
+                "borderColor": "#1c74b5",
+                "borderRadius": "10px",
+                "borderStyle": "solid",
+                "borderWidth": "1px",
+                "display": "inline-block",
+                "height": "7px",
+                "marginRight": "5px",
+                "verticalAlign": "baseline",
+                "width": "7px",
+              }
+            }
+          />
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            posts
+          </span>
+        </li>
+        <li
+          style={
+            Object {
+              "margin": "0 0.5rem",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "background": "#FDA3F3",
+                "borderColor": "#df85d5",
+                "borderRadius": "10px",
+                "borderStyle": "solid",
+                "borderWidth": "1px",
+                "display": "inline-block",
+                "height": "7px",
+                "marginRight": "5px",
+                "verticalAlign": "baseline",
+                "width": "7px",
+              }
+            }
+          />
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            reach
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots CommonChart [TESTED] Should render in Presets mode with multiple metrics for each category 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "750px",
+      }
+    }
+  >
+    <div
+      id="js-dom-to-png-common"
+    >
+      <ul
+        style={
+          Object {
+            "alignItems": "center",
+            "boxSizing": "border-box",
+            "display": "flex",
+            "justifyContent": "center",
+            "listStyle": "none",
+            "padding": "5px 10px",
+            "position": "relative",
+          }
+        }
+      >
+        <li
+          style={
+            Object {
+              "margin": "0 0.5rem",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "background": "#8AC6DE",
+                "borderColor": "#6ca8c0",
+                "borderRadius": "10px",
+                "borderStyle": "solid",
+                "borderWidth": "1px",
+                "display": "inline-block",
+                "height": "7px",
+                "marginRight": "5px",
+                "verticalAlign": "baseline",
+                "width": "7px",
+              }
+            }
+          />
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            Impressions
+          </span>
+        </li>
+        <li
+          style={
+            Object {
+              "margin": "0 0.5rem",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "background": "#D7B5FD",
+                "borderColor": "#b997df",
+                "borderRadius": "10px",
+                "borderStyle": "solid",
+                "borderWidth": "1px",
+                "display": "inline-block",
+                "height": "7px",
+                "marginRight": "5px",
+                "verticalAlign": "baseline",
+                "width": "7px",
+              }
+            }
+          />
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            new fans
+          </span>
+        </li>
+        <li
+          style={
+            Object {
+              "margin": "0 0.5rem",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "background": "#FDA3F3",
+                "borderColor": "#df85d5",
+                "borderRadius": "10px",
+                "borderStyle": "solid",
+                "borderWidth": "1px",
+                "display": "inline-block",
+                "height": "7px",
+                "marginRight": "5px",
+                "verticalAlign": "baseline",
+                "width": "7px",
+              }
+            }
+          />
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            reach
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</span>
+`;
+
 exports[`Snapshots ComparisonChartTooltip should render the tooltip 1`] = `
 <span>
   <div
@@ -2284,7 +2732,7 @@ exports[`Snapshots DropdownItem should render 1`] = `
               Object {
                 "background": "#fda3f3",
                 "borderColor": "#df85d5",
-                "borderRadius": "10px",
+                "borderRadius": "0px",
                 "borderStyle": "solid",
                 "borderWidth": "1px",
                 "display": "inline-block",
@@ -2372,7 +2820,7 @@ exports[`Snapshots DropdownItem should selected 1`] = `
               Object {
                 "background": "#fda3f3",
                 "borderColor": "#df85d5",
-                "borderRadius": "10px",
+                "borderRadius": "0px",
                 "borderStyle": "solid",
                 "borderWidth": "1px",
                 "display": "inline-block",
@@ -3933,7 +4381,7 @@ exports[`Snapshots MetricsDropdown should open the dropdown 1`] = `
                     Object {
                       "background": "#fda3f3",
                       "borderColor": "#df85d5",
-                      "borderRadius": "10px",
+                      "borderRadius": "0px",
                       "borderStyle": "solid",
                       "borderWidth": "1px",
                       "display": "inline-block",
@@ -4272,7 +4720,7 @@ exports[`Snapshots MetricsDropdown should render a secondary dropdown 1`] = `
                     Object {
                       "background": "#fda3f3",
                       "borderColor": "#df85d5",
-                      "borderRadius": "10px",
+                      "borderRadius": "0px",
                       "borderStyle": "solid",
                       "borderWidth": "1px",
                       "display": "inline-block",
@@ -4611,7 +5059,7 @@ exports[`Snapshots MetricsDropdown should render the dropdown 1`] = `
                     Object {
                       "background": "#fda3f3",
                       "borderColor": "#df85d5",
-                      "borderRadius": "10px",
+                      "borderRadius": "0px",
                       "borderStyle": "solid",
                       "borderWidth": "1px",
                       "display": "inline-block",
