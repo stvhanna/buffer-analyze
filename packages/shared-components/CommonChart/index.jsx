@@ -34,17 +34,47 @@ function getMinorTickInterval(dailyMetric) {
     oneDay;
 }
 
-function getMaxValue(data) {
-  let max = 0;
-  data.forEach((item) => { if (max < item.y); max = item.y; });
-  return max;
+function reduceSeriesToValues(series) {
+  let values = [];
+  const reducedSeries = series.map(s => s.data.map(point => point.y));
+  reducedSeries.forEach((s) => { values = values.concat(s); });
+  return values;
 }
 
-function setyAxisScale([primarySeries, secondarySeries], xAxis) {
+function getSeriesRange(series) {
+  const reducedSeries = reduceSeriesToValues(series);
+  let min = Math.min.apply(null, reducedSeries);
+  let max = Math.max.apply(null, reducedSeries);
+  min -= (min / 100) * 5;
+  if (min < 0) min = -10;
+  max += (max / 100) * 5;
+  return {
+    min,
+    max,
+  };
+}
+
+function setChartLimits({ series, yAxis }, usesTwoScales) {
+  if (!usesTwoScales) {
+    const range = getSeriesRange(series);
+    yAxis[0].floor = range.min;
+    yAxis[0].ceiling = range.max;
+  } else {
+    const range = getSeriesRange([series[0]]);
+    const secondaryRange = getSeriesRange([series[1]]);
+    yAxis[0].floor = range.min;
+    yAxis[0].ceiling = range.max;
+    yAxis[1].floor = secondaryRange.min;
+    yAxis[1].ceiling = secondaryRange.max;
+  }
+}
+
+function setYAxisScale([primarySeries, secondarySeries], xAxis, yAxis) {
   // we are using two scales only if there is a siginificative difference in scale
-  const yAxisMax = getMaxValue(primarySeries.data);
+  const yAxisMax = Math.max.apply(null, reduceSeriesToValues([primarySeries]));
+  let usesTwoScales = false;
   if (secondarySeries) {
-    const secondaryYAxisMax = getMaxValue(secondarySeries.data);
+    const secondaryYAxisMax = Math.max.apply(null, reduceSeriesToValues([secondarySeries]));
     const maxScaleDifference = 0.7;
     let scaleDifference = 0;
     if (yAxisMax > secondaryYAxisMax) {
@@ -54,10 +84,15 @@ function setyAxisScale([primarySeries, secondarySeries], xAxis) {
     }
     if (scaleDifference >= maxScaleDifference && !xAxis.categories) {
       secondarySeries.yAxis = 1;
+      usesTwoScales = true;
     } else {
       secondarySeries.yAxis = 0;
     }
   }
+  setChartLimits({
+    series: [primarySeries, secondarySeries].filter(s => typeof s !== 'undefined'),
+    yAxis,
+  }, usesTwoScales);
 }
 
 
@@ -149,8 +184,6 @@ function prepareSeries(
       }
     }
 
-    console.log(seriesConfig);
-
     if (seriesConfig.data[0].metricData.key === 'posts_count') {
       seriesConfig.type = 'column';
       seriesConfig.colors = columnColors;
@@ -186,7 +219,7 @@ function prepareData(
   }
 
   config.series = prepareSeries(dailyMetrics, timezone, profileService, isCustomMode, presetConfig);
-  setyAxisScale(config.series, config.xAxis);
+  setYAxisScale(config.series, config.xAxis, config.yAxis);
   return config;
 }
 
