@@ -49,30 +49,6 @@ export const highChartsConfigYAxis = [
         'font-family': 'Roboto, sans serif',
       },
     },
-  }, {
-    title: { text: null },
-    gridLineWidth: 1,
-    max: null,
-    min: 0,
-    softMin: 0,
-    minRange: 8,
-    maxPadding: 0.1,
-    minPadding: 0.1,
-    allowDecimals: false,
-    gridLineColor: '#F3F5F7',
-    lineColor: '#E6EBEF',
-    showLastLabel: false,
-    labels: {
-      x: 0,
-      y: -3,
-      align: 'right',
-      style: {
-        'font-size': '12px',
-        'font-weight': 'lighter',
-        'font-family': 'Roboto, sans serif',
-      },
-    },
-    opposite: true,
   },
 ];
 
