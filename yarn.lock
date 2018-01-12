@@ -22,18 +22,18 @@
   version "0.7.4"
   resolved "https://registry.yarnpkg.com/@bufferapp/async-data-fetch/-/async-data-fetch-0.7.4.tgz#81cee5ae4911be932f88744fc3c30296eeab2a64"
 
-"@bufferapp/buda@0.5.0-beta1":
-  version "0.5.0-beta1"
-  resolved "https://registry.yarnpkg.com/@bufferapp/buda/-/buda-0.5.0-beta1.tgz#aea75f4064ad4fa8b461c37ee91b036e42342b08"
+"@bufferapp/buda@0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@bufferapp/buda/-/buda-0.5.1.tgz#7bebbfefe4656e70936a0c8bdc627d2208f2beb0"
   dependencies:
     grpc "~1.6.0"
     protobufjs "~6.8.0"
 
-"@bufferapp/buffermetrics@^0.5.0-beta2":
-  version "0.5.0-beta2"
-  resolved "https://registry.yarnpkg.com/@bufferapp/buffermetrics/-/buffermetrics-0.5.0-beta2.tgz#106a8dcdee74d27e972d55ab0de5369c6501c865"
+"@bufferapp/buffermetrics@^0.5.0-beta5":
+  version "0.5.0-beta5"
+  resolved "https://registry.yarnpkg.com/@bufferapp/buffermetrics/-/buffermetrics-0.5.0-beta5.tgz#a5ca49e1c125134fa855e4dc15e649e3b550f18e"
   dependencies:
-    "@bufferapp/buda" "0.5.0-beta1"
+    "@bufferapp/buda" "0.5.1"
     grpc "~1.6.0"
     on-finished "^2.3.0"
     useragent "^2.1.13"

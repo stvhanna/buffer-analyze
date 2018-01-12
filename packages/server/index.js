@@ -52,14 +52,6 @@ const html = fs.readFileSync(join(__dirname, 'index.html'), 'utf8')
 
 app.use(logMiddleware({ name: 'BufferAnalyze' }));
 app.use(cookieParser());
-app.use(bodyParser.json());
-app.use(buffermetricsMiddleware({
-  name: 'Buffer-Analyze',
-  debug: !isProduction,
-  trackVisits: true,
-}));
-
-app.post('/buffermetrics/track_action', req => req.buffermetrics.trackAction(req.body));
 
 app.get('/health-check', controller.healthCheck);
 const favicon = fs.readFileSync(join(__dirname, 'favicon.ico'));
@@ -86,6 +78,14 @@ app.post('/rpc', (req, res, next) => {
       }
     });
 });
+
+app.use(bodyParser.json());
+app.use(buffermetricsMiddleware({
+  name: 'Buffer-Analyze',
+  debug: !isProduction,
+  trackVisits: true,
+}));
+
 
 app.use(sessionMiddleware.validateSession({
   production: isProduction,
