@@ -51,10 +51,9 @@ const configureStore = (initialstate) => {
 
   const buffermetricsMiddleware = createMiddleware({
     application: 'ANALYZE',
-    metadata: (state, action) => ({
+    metadata: state => ({
       userId: state.appSidebar.user.id,
       profileId: state.profiles.selectedProfileId,
-      action,
     }),
   });
 
