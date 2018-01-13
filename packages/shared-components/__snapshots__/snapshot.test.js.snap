@@ -880,6 +880,18 @@ exports[`Snapshots CommonChart [TESTED] Should render in Presets mode with multi
 </span>
 `;
 
+exports[`Snapshots ComparisonChart should render the compare chart 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "750px",
+      }
+    }
+  />
+</span>
+`;
+
 exports[`Snapshots ComparisonChartTooltip should render the tooltip 1`] = `
 <span>
   <div
