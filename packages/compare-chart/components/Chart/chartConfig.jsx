@@ -4,7 +4,7 @@ import numeral from 'numeral';
 
 import ChartTooltip from '../ChartTooltip';
 
-function truncateNumber() {
+export function truncateNumber() {
   let number = parseFloat(this.value);
 
   if (number > 1000000) {

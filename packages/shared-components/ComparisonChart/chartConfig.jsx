@@ -7,7 +7,7 @@ import {
   ComparisonChartTooltip as ChartTooltip,
 } from '@bufferapp/analyze-shared-components';
 
-function truncateNumber() {
+export function truncateNumber() {
   let number = parseFloat(this.value);
 
   if (number > 1000000) {
