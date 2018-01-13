@@ -116,8 +116,14 @@ function setChartLimits({ series, yAxis }) {
   let max = Math.max.apply(null, values);
   const maxPaddingPercentage = 5.25;
   const minPaddingPercentage = 2;
-  const topPaddingPercentage = (maxPaddingPercentage - Math.log10(max)) || minPaddingPercentage;
-  const bottomPaddingPercentage = (maxPaddingPercentage - Math.log10(min)) || minPaddingPercentage;
+  let topPaddingPercentage = (maxPaddingPercentage - Math.log10(max));
+  if (topPaddingPercentage < minPaddingPercentage) {
+    topPaddingPercentage = minPaddingPercentage;
+  }
+  let bottomPaddingPercentage = (maxPaddingPercentage - Math.log10(min));
+  if (bottomPaddingPercentage < minPaddingPercentage) {
+    bottomPaddingPercentage = minPaddingPercentage;
+  }
   min -= (min / 100) * bottomPaddingPercentage;
   max += (max / 100) * topPaddingPercentage;
   yAxis[0].floor = min;
