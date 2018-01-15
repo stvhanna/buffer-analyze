@@ -190,7 +190,7 @@ exports[`Snapshots ReachComparisonChart should render a loading state 1`] = `
           <div
             style={
               Object {
-                "background": "white",
+                "background": "none",
                 "borderRadius": "2px",
                 "flex": 1,
                 "flexDirection": "row",
