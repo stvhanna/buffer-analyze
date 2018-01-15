@@ -26,21 +26,22 @@ const Container = styled.div`
 `;
 
 const Content = styled.div`
-  width: 100%;
+  display: 'flex',
+  flex: 1,
   margin: 0 auto;
-  padding: 2.8rem 0;
+  padding: 2.5rem 1rem 4rem;
   overflow-y: auto;
 `;
 
 const Header = styled.header`
-  background: white;
-  padding: 0.85rem 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
+  background: white;
+  padding: 0.85rem 0.5rem;
   border-bottom: 1px solid #E2E8ED;
   box-sizing: border-box;
+  flex-shrink: 0;
 `;
 
 const Card = styled.section`
