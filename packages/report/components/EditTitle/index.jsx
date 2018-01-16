@@ -46,6 +46,7 @@ class EditTitle extends Component {
         value={this.state.name}
         onChange={this.handleChange}
         onBlur={this.handleBlur}
+        autofocus
       />
     );
   }

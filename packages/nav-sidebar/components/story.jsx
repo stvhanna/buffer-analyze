@@ -5,31 +5,20 @@ import { checkA11y } from 'storybook-addon-a11y';
 import NavSidebar from './NavSidebar';
 import Item from './Item';
 
-const twitterProfiles = [
-  {
-    id: '1',
-    service: 'twitter',
-  },
-  {
-    id: '2',
-    service: 'twitter',
-  },
-];
-const facebookProfiles = [
-  {
-    id: '3',
-    service: 'facebook',
-  },
-];
+const twitterProfile = {
+  id: '1',
+  service: 'twitter',
+};
 
-const instagramProfiles = [
-  {
-    id: '4',
-    service: 'instagram',
-  },
-];
+const facebookProfile = {
+  id: '3',
+  service: 'facebook',
+};
 
-const mockProfiles = [...twitterProfiles, ...facebookProfiles, ...instagramProfiles];
+const instagramProfile = {
+  id: '4',
+  service: 'instagram',
+};
 
 storiesOf('NavSidebar')
   .addDecorator(checkA11y)
@@ -37,7 +26,9 @@ storiesOf('NavSidebar')
     <div style={{ width: '260px', height: '100%', display: 'flex' }}>
       <NavSidebar
         route="/"
-        profiles={mockProfiles}
+        facebookProfile={facebookProfile}
+        twitterProfile={twitterProfile}
+        instagramProfile={instagramProfile}
         onClick={action('click item')}
       />
     </div>
@@ -46,7 +37,6 @@ storiesOf('NavSidebar')
     <div style={{ width: '260px', height: '100%', display: 'flex' }}>
       <NavSidebar
         route="/"
-        profiles={[]}
         onClick={action('click item')}
       />
     </div>
@@ -56,7 +46,8 @@ storiesOf('NavSidebar')
       <NavSidebar
         route="/insights/twitter"
         profileService="twitter"
-        profiles={[...twitterProfiles, ...instagramProfiles]}
+        facebookProfile={facebookProfile}
+        twitterProfile={twitterProfile}
         onClick={action('click item')}
       />
     </div>

@@ -11,7 +11,21 @@ import App from './index';
 storiesOf('App')
   .addDecorator(checkA11y)
   .addDecorator(getStory =>
-    <Provider store={createStore()}>
+    <Provider
+      store={createStore({
+        navSidebar: {
+          facebookProfile: {
+            id: '1',
+          },
+          instagramProfile: {
+            id: '2',
+          },
+          twitterProfile: {
+            id: '3',
+          },
+        },
+      })}
+    >
       <Router history={history}>
         {getStory()}
       </Router>

@@ -7,18 +7,18 @@ import {
 import Loader from '@bufferapp/components/Loader';
 
 const loaderContainer = {
-  background: 'white',
+  background: 'none',
   borderRadius: '2px',
   flexDirection: 'row',
   flex: 1,
 };
 
-const Loading = ({ text, maxHeight, noBorder }) => {
+const Loading = ({ text, maxHeight, noBorder, transparent }) => {
   const style = {
     zIndex: 2,
     textAlign: 'center',
     border: noBorder ? 'none' : `solid 1px ${geyser}`,
-    background: 'rgba(255,255,255,.95)',
+    background: transparent ? 'transparent' : 'rgba(255,255,255,.95)',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -43,12 +43,14 @@ Loading.propTypes = {
     PropTypes.bool,
   ]),
   noBorder: PropTypes.bool,
+  transparent: PropTypes.bool,
 };
 
 Loading.defaultProps = {
   text: 'Loading...',
   maxHeight: false,
   noBorder: false,
+  transparent: false,
 };
 
 export default Loading;

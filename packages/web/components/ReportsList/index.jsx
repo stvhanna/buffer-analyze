@@ -7,23 +7,23 @@ import styled from 'styled-components';
 
 const Page = styled.div`
   display: flex;
-  flexGrow: 1;
-  height: 100%;
-  background: #FAFAFA;
 `;
 
 const Container = styled.div`
-  padding: 2.8rem;
-  width: 100%;
-  overflow-y: scroll;
+  flex-grow: 1;
+  height: 100vh;
+  max-width: 100%;
   display: flex;
-  justify-content: center;
-  overflow-y: scroll;
+  min-height: 100vh;
+  flex-direction: column;
+  background: #FAFAFA;
+  overflow-y: auto;
 `;
 
 const Content = styled.div`
   max-width: 65rem;
   width: 100%;
+  margin: 2.8rem auto;
 `;
 
 const ReportsPage = ({ location }) => (

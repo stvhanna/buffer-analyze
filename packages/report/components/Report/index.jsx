@@ -4,16 +4,36 @@ import {
   Text,
   Button,
 } from '@bufferapp/components';
+import {
+  ChartStateLoading as Loading,
+} from '@bufferapp/analyze-shared-components';
+import {
+  EditIcon,
+} from '@bufferapp/components/Icon/Icons';
 import styled from 'styled-components';
 import ChartFactory from '../ChartFactory';
 import DateRange from '../DateRange';
 import EditTitle from '../EditTitle';
 
 const Title = styled.h1`
+  display: inline-block;
   color: #343E47;
   font-size: 26px;
   font-weight: bold;
-  margin: 0 0 .5rem;
+  margin: 0 0 .5rem 0;
+`;
+
+const Container = styled.div`
+  &:hover > div {
+    opacity: 1;
+  }
+`;
+
+const Icon = styled.div`
+  display: inline-block;
+  margin: 0 0 0 0.75em;
+  opacity: 0;
+  transition: opacity 50ms linear;
 `;
 
 class Report extends React.Component {
@@ -33,12 +53,19 @@ class Report extends React.Component {
   render() {
     const { name, dateRange, charts, loading,
       edit, saveChanges, editName, moveUp, moveDown, deleteChart, exporting } = this.props;
-    if (loading) return '...loading';
+    if (loading) return <Loading active noBorder />;
     return (
       <div id="report-page">
         <Text>
           { edit && <EditTitle name={name} saveChanges={saveChanges} />}
-          { !edit && <div><Button noStyle onClick={editName}><Title>{name}</Title></Button></div> }
+          { !edit &&
+            <Container>
+              <Button noStyle onClick={editName}>
+                <Title>{name}</Title>
+              </Button>
+              <Icon><EditIcon /></Icon>
+            </Container>
+          }
           <DateRange {...dateRange} />
         </Text>
         <ChartFactory
