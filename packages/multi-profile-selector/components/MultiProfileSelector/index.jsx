@@ -95,7 +95,7 @@ const MultiProfileSelector = ({
       >
         <DropdownTrigger style={styleButton}>
           { selectedProfiles.length > 0 &&
-            selectedProfiles.map(p =>
+            selectedProfiles.slice(0, 5).map(p =>
               <ProfileBadge
                 avatarUrl={p.avatarUrl}
                 service={p.service}
