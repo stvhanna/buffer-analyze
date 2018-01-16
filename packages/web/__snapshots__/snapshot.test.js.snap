@@ -673,6 +673,7 @@ exports[`Snapshots App should render application 1`] = `
       <div
         style={
           Object {
+            "background": "#FAFAFA",
             "display": "flex",
             "flexGrow": 1,
             "height": "100%",
@@ -749,6 +750,171 @@ exports[`Snapshots App should render application 1`] = `
               }
             }
           />
+          <div>
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "letterSpacing": ".075rem",
+                  "margin": "0 1rem 0.75rem",
+                  "padding": "0",
+                  "textTransform": "uppercase",
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#8A9097",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
+                    "fontWeight": 500,
+                  }
+                }
+              >
+                Insights
+              </span>
+            </span>
+            <a
+              href="/insights/facebook/1/overview"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "color": "#168eea",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "outline": "none",
+                  "padding": "0",
+                  "textDecoration": "none",
+                }
+              }
+              target="_self"
+            >
+              <span
+                style={
+                  Object {
+                    "borderRadius": "4px",
+                    "display": "block",
+                    "margin": "0 0.5rem",
+                    "padding": "0.75rem 0.5rem",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Facebook
+                </span>
+              </span>
+            </a>
+            <a
+              href="/insights/twitter/3/overview"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "color": "#168eea",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "outline": "none",
+                  "padding": "0",
+                  "textDecoration": "none",
+                }
+              }
+              target="_self"
+            >
+              <span
+                style={
+                  Object {
+                    "borderRadius": "4px",
+                    "display": "block",
+                    "margin": "0 0.5rem",
+                    "padding": "0.75rem 0.5rem",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Twitter
+                </span>
+              </span>
+            </a>
+            <a
+              href="/insights/instagram/2/overview"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "color": "#168eea",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "outline": "none",
+                  "padding": "0",
+                  "textDecoration": "none",
+                }
+              }
+              target="_self"
+            >
+              <span
+                style={
+                  Object {
+                    "borderRadius": "4px",
+                    "display": "block",
+                    "margin": "0 0.5rem",
+                    "padding": "0.75rem 0.5rem",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Instagram
+                </span>
+              </span>
+            </a>
+            <hr
+              style={
+                Object {
+                  "background": "#e6ebef",
+                  "border": "none",
+                  "boxSizing": "border-box",
+                  "height": "0.063rem",
+                  "marginBottom": "1rem",
+                  "marginTop": "0.75rem",
+                  "width": "100%",
+                }
+              }
+            />
+          </div>
           <span
             style={
               Object {
@@ -861,47 +1027,177 @@ exports[`Snapshots App should render application 1`] = `
         <div
           style={
             Object {
-              "padding": "1rem",
+              "margin": "0 auto",
+              "padding": "2.5rem 1rem 4rem",
+              "width": "52rem",
             }
           }
         >
-          <span
+          <div
             style={
               Object {
-                "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1.25rem",
-                "fontWeight": 400,
+                "background": "#fff",
+                "border": "1px solid #E2E8ED",
+                "borderRadius": "5px",
+                "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
+                "margin": "0 0 2rem",
               }
             }
           >
-            Welcome to Buffer Analyze 🎉
-          </span>
-          <hr
-            style={
-              Object {
-                "background": "#e6ebef",
-                "border": "none",
-                "boxSizing": "border-box",
-                "height": "0.063rem",
-                "marginBottom": "0.5rem",
-                "marginTop": "0.5rem",
-                "width": "100%",
+            <div
+              style={
+                Object {
+                  "lineHeight": "1.5rem",
+                  "padding": "1.5rem",
+                }
               }
-            }
-          />
-          <span
-            style={
-              Object {
-                "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1rem",
-                "fontWeight": 400,
-              }
-            }
-          >
-            You are logged in!
-          </span>
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "1.25rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                Welcome to Buffer Analyze 🎉
+              </span>
+              <hr
+                style={
+                  Object {
+                    "background": "#e6ebef",
+                    "border": "none",
+                    "boxSizing": "border-box",
+                    "height": "0.063rem",
+                    "marginBottom": "1.5rem",
+                    "marginTop": "0.5rem",
+                    "width": "100%",
+                  }
+                }
+              />
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "1rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                <span>
+                  Get started by viewing Insights for 
+                  <a
+                    href="/insights/facebook/1/overview"
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "color": "#168eea",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "outline": "none",
+                        "padding": "0",
+                        "textDecoration": "none",
+                      }
+                    }
+                    target="_self"
+                  >
+                    Facebook Pages
+                  </a>
+                  , 
+                  <a
+                    href="/insights/twitter/3/overview"
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "color": "#168eea",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "outline": "none",
+                        "padding": "0",
+                        "textDecoration": "none",
+                      }
+                    }
+                    target="_self"
+                  >
+                    Twitter Profiles
+                  </a>
+                   or 
+                  <a
+                    href="/insights/instagram/2/overview"
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "color": "#168eea",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "outline": "none",
+                        "padding": "0",
+                        "textDecoration": "none",
+                      }
+                    }
+                    target="_self"
+                  >
+                    Instagram Profiles
+                  </a>
+                  . You can also 
+                  <a
+                    href="/comparisons"
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "color": "#168eea",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "outline": "none",
+                        "padding": "0",
+                        "textDecoration": "none",
+                      }
+                    }
+                    target="_self"
+                  >
+                    compare profiles
+                  </a>
+                   or view 
+                  <a
+                    href="/reports"
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "color": "#168eea",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "outline": "none",
+                        "padding": "0",
+                        "textDecoration": "none",
+                      }
+                    }
+                    target="_self"
+                  >
+                    your reports
+                  </a>
+                  .
+                </span>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
