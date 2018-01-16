@@ -25,14 +25,13 @@ function fadeColor(color, opacity) {
     color;
 }
 
-function getTickInterval(dailyMetrics) {
-  const oneDayMS = 24 * 3600 * 1000;
-  const sevenDaysMS = 7 * oneDayMS;
-  const isMoreThenSevenDays = dailyMetrics[0].length > 7;
+function getMinorTickInterval(dailyMetric) {
+  const oneDay = 24 * 3600 * 1000;
+  const moreThanAMonth = dailyMetric.length > 31;
 
-  return isMoreThenSevenDays ?
-    sevenDaysMS :
-    oneDayMS;
+  return moreThanAMonth ?
+    null :
+    oneDay;
 }
 
 function getMaxValue(data) {
@@ -89,7 +88,7 @@ function prepareSeries(
       metricData: Object.assign({}, metric, { category: dailyEntry.category }),
       presetConfig,
       metrics: dailyEntry.metrics,
-      pointPlacement: getTickInterval(dailyMetrics),
+      pointPlacement: getMinorTickInterval(dailyMetrics),
     };
 
     if (dailyEntry.day) {
@@ -175,7 +174,7 @@ function prepareData(
   const config = Object.assign({}, chartConfig);
 
   config.xAxis = Object.assign({}, chartConfig.xAxis, {
-    minorTickInterval: getTickInterval(dailyMetrics),
+    minorTickInterval: getMinorTickInterval(dailyMetrics),
   });
 
   if (presetConfig && presetConfig.xAxis.categories) {

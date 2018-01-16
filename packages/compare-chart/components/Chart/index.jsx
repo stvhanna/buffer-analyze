@@ -19,14 +19,13 @@ function fadeColor(color, opacity) {
     color;
 }
 
-function getTickInterval(dailyMetric) {
-  const oneDayMS = 24 * 3600 * 1000;
-  const sevenDaysMS = 7 * oneDayMS;
-  const isMoreThenSevenDays = dailyMetric[0].length > 7;
+function getMinorTickInterval(dailyMetric) {
+  const oneDay = 24 * 3600 * 1000;
+  const moreThanAMonth = dailyMetric.length > 31;
 
-  return isMoreThenSevenDays ?
-    sevenDaysMS :
-    oneDayMS;
+  return moreThanAMonth ?
+    null :
+    oneDay;
 }
 
 function prepareSeries(
@@ -60,7 +59,7 @@ function prepareSeries(
         timezone,
         visualizePreviousPeriod,
       }),
-      pointPlacement: getTickInterval(dailyMetric),
+      pointPlacement: getMinorTickInterval(dailyMetric),
     };
   });
 
@@ -112,7 +111,7 @@ function prepareSeries(
 function prepareChartOptions(dailyMetric, timezone, visualizePreviousPeriod, profileService) {
   const config = Object.assign({}, chartConfig);
 
-  config.xAxis.minorTickInterval = getTickInterval(dailyMetric);
+  config.xAxis.minorTickInterval = getMinorTickInterval(dailyMetric);
   config.series = [
     prepareSeries(dailyMetric, timezone, visualizePreviousPeriod, profileService),
     (visualizePreviousPeriod ? prepareSeries(
