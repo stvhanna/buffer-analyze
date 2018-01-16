@@ -21,8 +21,6 @@ import {
   dropdownContentInputHolder,
   dropdownList,
   dropdownListScrollable,
-  dropdownTrigger,
-  dropdownTriggerActive,
 } from './style.less';
 
 const styleButton = {
@@ -164,7 +162,6 @@ MultiProfileSelector.propTypes = {
     avatarUrl: PropTypes.string.isRequired,
     id: PropTypes.string.isRequired,
   })).isRequired,
-  loading: PropTypes.bool.isRequired,
   isDropdownOpen: PropTypes.bool,
   onSearchChange: PropTypes.func.isRequired,
   profilesFilterString: PropTypes.string,
