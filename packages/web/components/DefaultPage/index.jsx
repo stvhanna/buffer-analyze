@@ -1,4 +1,5 @@
 import React from 'react';
+import { push } from 'react-router-redux';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
@@ -10,7 +11,7 @@ const pageStyle = {
   display: 'flex',
   flexGrow: 1,
   height: '100%',
-  background: '#FAFAFA'
+  background: '#FAFAFA',
 };
 
 const defaultPageStyle = {
@@ -21,86 +22,110 @@ const defaultPageStyle = {
 
 const cardContentStyle = {
   padding: '1.5rem',
-  lineHeight: '1.5rem'
+  lineHeight: '1.5rem',
 };
 
-const cardLinkStyle = {
-  textDecoration: 'none',
-  color: 'rgb(22, 142, 234)'
+const navigate = (event, dispatch, url) => {
+  event.preventDefault();
+  dispatch(push(url));
 };
 
-const getFirstProfileForService = (service, profiles) => (
-  profiles.find(profile => profile.service === service)
-);
-
-
-const DefaultPage = ({ location, profiles }) => {
-
+const DefaultPage = ({ location, dispatch, facebookProfile, twitterProfile, instagramProfile }) => {
   let facebookLink = 'Facebook Pages';
   let twitterLink = 'Twitter Profiles';
   let instagramLink = 'Instagram Profiles';
 
-  let facebookInsightsURL = '#';
-  let twitterInsightsURL = '#';
-  let instagramInsightsURL = '#';
-  const comparisonsLink = '/comparisons';
-  const reportsLink = '/reports';
+  const comparisonsLink = (<Link
+    href="/comparisons"
+    unstyled
+    onClick={e => navigate(e, dispatch, '/comparisons')}
+  >compare profiles</Link>);
+  const reportsLink = (<Link
+    href="/reports"
+    unstyled
+    onClick={e => navigate(e, dispatch, '/reports')}
+  >your reports</Link>);
 
-  if (profiles.length > 0) {
-    const facebookProfile = getFirstProfileForService('facebook', profiles);
-    const twitterProfile = getFirstProfileForService('twitter', profiles);
-    const instagramProfile = getFirstProfileForService('instagram', profiles);
-
-    if (facebookProfile) {
-      facebookInsightsURL = `/insights/facebook/${facebookProfile.id}/overview`;
-      facebookLink = (<a href={facebookInsightsURL} style={cardLinkStyle}>Facebook Pages</a>);
-    }
-
-    if (twitterProfile) {
-      twitterInsightsURL = `/insights/twitter/${twitterProfile.id}/overview`;
-      twitterLink = (<a href={twitterInsightsURL} style={cardLinkStyle}>Twitter Profiles</a>);
-    }
-
-    if (instagramProfile) {
-      instagramInsightsURL = `/insights/instagram/${instagramProfile.id}/overview`;
-      instagramLink = (<a href={instagramInsightsURL} style={cardLinkStyle}>Instagram Profiles</a>);
-    }
+  if (facebookProfile) {
+    const facebookInsightsURL = `/insights/facebook/${facebookProfile.id}/overview`;
+    facebookLink = (<Link
+      href={facebookInsightsURL}
+      unstyled
+      onClick={e => navigate(e, dispatch, facebookInsightsURL)}
+    >Facebook Pages</Link>);
   }
 
-  let welcomeText = (
+  if (twitterProfile) {
+    const twitterInsightsURL = `/insights/twitter/${twitterProfile.id}/overview`;
+    twitterLink = (<Link
+      href={twitterInsightsURL}
+      unstyled
+      onClick={e => navigate(e, dispatch, twitterInsightsURL)}
+    >Twitter Profiles</Link>);
+  }
+
+  if (instagramProfile) {
+    const instagramInsightsURL = `/insights/instagram/${instagramProfile.id}/overview`;
+    instagramLink = (<Link
+      href={instagramInsightsURL}
+      unstyled
+      onClick={e => navigate(e, dispatch, instagramInsightsURL)}
+    >Instagram Profiles</Link>);
+  }
+
+  const welcomeText = (
     <span>
-    Get started by viewing Insights for {facebookLink}, {twitterLink} or {instagramLink}. You can also <a href={comparisonsLink} style={cardLinkStyle}>compare profiles</a> or view <a href={reportsLink} style={cardLinkStyle}>your reports</a>.
+      Get started by viewing Insights for {facebookLink}, {twitterLink} or {instagramLink}.
+      You can also {comparisonsLink} or view {reportsLink}.
     </span>
   );
 
   return (
-  <div style={pageStyle}>
-    <NavSidebar route={location.pathname} />
-    <div style={defaultPageStyle}>
-      <ChartCard>
-        <div style={cardContentStyle}>
-          <Text size="large">Welcome to Buffer Analyze 🎉</Text>
-          <Divider marginBottom="1.5rem"/>
-          <Text>
-            {welcomeText}
-          </Text>
-        </div>
-      </ChartCard>
+    <div style={pageStyle}>
+      <NavSidebar route={location.pathname} />
+      <div style={defaultPageStyle}>
+        <ChartCard>
+          <div style={cardContentStyle}>
+            <Text size="large">Welcome to Buffer Analyze 🎉</Text>
+            <Divider marginBottom="1.5rem" />
+            <Text>
+              {welcomeText}
+            </Text>
+          </div>
+        </ChartCard>
+      </div>
     </div>
-  </div>
   );
-}
+};
+
+DefaultPage.defaultProps = {
+  instagramProfile: null,
+  twitterProfile: null,
+  facebookProfile: null,
+};
 
 DefaultPage.propTypes = {
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired,
-  }).isRequired
+  }).isRequired,
+  instagramProfile: PropTypes.shape({
+    service: PropTypes.String,
+  }),
+  twitterProfile: PropTypes.shape({
+    service: PropTypes.String,
+  }),
+  facebookProfile: PropTypes.shape({
+    service: PropTypes.String,
+  }),
+  dispatch: PropTypes.func.isRequired,
 };
 
 function mapStateToProps (state) {
   return {
-    profiles: state.navSidebar.profiles
-  }
+    facebookProfile: state.navSidebar.facebookProfile,
+    twitterProfile: state.navSidebar.twitterProfile,
+    instagramProfile: state.navSidebar.instagramProfile,
+  };
 }
 
 export default connect(mapStateToProps)(DefaultPage);
