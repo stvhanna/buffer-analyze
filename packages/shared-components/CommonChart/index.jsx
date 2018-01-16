@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { PureComponent } from 'react';
 import ReactHighcharts from 'react-highcharts';
 import moment from 'moment';
 
@@ -224,38 +224,42 @@ function prepareChartOptions(
   );
 }
 
-const Chart = ({
-  data,
-  mode,
-  presets,
-  profileService,
-  pngExportId,
-  selectedMetrics,
-  selectedPreset,
-  timezone,
-}) => {
-  const isCustomMode = mode === 1;
-  const charOptions = prepareChartOptions(
-    data,
-    isCustomMode,
-    presets,
-    profileService,
-    selectedMetrics,
-    selectedPreset,
-    timezone,
-  );
-  return (
-    <div id={`js-dom-to-png-${pngExportId}`}>
-      <ReactHighcharts config={charOptions} />
-      <Footer
-        selectedMetrics={selectedMetrics}
-        mode={mode}
-        presets={presets}
-        selectedPreset={selectedPreset}
-      />
-    </div>
-  );
-};
+class Chart extends PureComponent {
+  render() {
+    const {
+      data,
+      mode,
+      presets,
+      profileService,
+      pngExportId,
+      selectedMetrics,
+      selectedPreset,
+      timezone,
+    } = this.props;
+
+    const isCustomMode = mode === 1;
+    const charOptions = prepareChartOptions(
+      data,
+      isCustomMode,
+      presets,
+      profileService,
+      selectedMetrics,
+      selectedPreset,
+      timezone,
+    );
+    return (
+      <div id={`js-dom-to-png-${pngExportId}`}>
+        <ReactHighcharts config={charOptions} />
+        <Footer
+          selectedMetrics={selectedMetrics}
+          mode={mode}
+          presets={presets}
+          selectedPreset={selectedPreset}
+        />
+      </div>
+    );
+  }
+}
 
 Chart.propTypes = {
   data: PropTypes.arrayOf(PropTypes.shape({
