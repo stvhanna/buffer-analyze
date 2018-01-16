@@ -5,7 +5,9 @@ import NavSidebar from './components/NavSidebar';
 
 export default connect(
   state => ({
-    profiles: state.navSidebar.profiles,
+    facebookProfile: state.navSidebar.facebookProfile,
+    twitterProfile: state.navSidebar.twitterProfile,
+    instagramProfile: state.navSidebar.instagramProfile,
   }),
   dispatch => ({
     onClick: (path, profileId, profileService) => {
