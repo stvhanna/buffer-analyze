@@ -1762,7 +1762,7 @@ exports[`Snapshots InsightsPage should render Insights page 1`] = `
 exports[`Snapshots ReportsPage should render reports page 1`] = `
 <span>
   <div
-    className="sc-bbmXgH eNJbEi"
+    className="sc-jnlKLf hyYdYy"
   >
     <div
       style={
@@ -1945,19 +1945,30 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
       </a>
     </div>
     <div
-      className="sc-gGBfsJ euiZiE"
+      className="sc-fYxtnH fOnNfm"
     >
       <header
-        className="sc-fYxtnH feNlAK"
+        className="sc-hEsumM dDdjEf"
       >
         <button
           className="sc-bdVaJa eTEyQW"
           onClick={[Function]}
         >
-          Back to Reports
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            Back to Reports
+          </span>
         </button>
         <section
-          className="sc-hEsumM ddolde"
+          className="sc-cIShpX iWIiAw"
         >
           <div
             className="sc-Rmtcm kWSdXa"
@@ -2319,7 +2330,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
             />
           </div>
           <span
-            className="sc-uJMKN dJvIXT"
+            className="sc-gGBfsJ iOISQQ"
           >
             <button
               className="sc-bdVaJa eTEyQW"
@@ -2342,12 +2353,109 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
         </section>
       </header>
       <div
-        className="sc-jnlKLf fAcuFv"
+        className="sc-tilXH llDiCM"
       >
         <section
-          className="sc-tilXH kqaNi"
+          className="sc-ktHwxA igrPvZ"
         >
-          ...loading
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "rgba(255,255,255,.95)",
+                "border": "none",
+                "display": "flex",
+                "justifyContent": "center",
+                "maxHeight": "none",
+                "minHeight": "8rem",
+                "textAlign": "center",
+                "transition": "opacity 350ms ease-in-out",
+                "zIndex": 2,
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "background": "none",
+                  "borderRadius": "2px",
+                  "flex": 1,
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "textAlign": "center",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "height": "1rem",
+                      "margin": "0 auto 1rem auto",
+                      "position": "relative",
+                      "width": "1rem",
+                    }
+                  }
+                >
+                  <span>
+                    <div
+                      style={
+                        Object {
+                          "height": "1rem",
+                          "left": 0,
+                          "opacity": 0,
+                          "position": "absolute",
+                          "top": 0,
+                          "transition": "all 1000ms ease-in-out",
+                          "width": "1rem",
+                        }
+                      }
+                    >
+                      <svg
+                        height="100%"
+                        style={
+                          Object {
+                            "fill": "#59626a",
+                            "height": "1rem",
+                            "width": "1rem",
+                          }
+                        }
+                        version="1.1"
+                        viewBox="0 0 16 16"
+                        width="100%"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                      >
+                        <g
+                          className="shuttleGray"
+                        >
+                          <path
+                            d="M1.10241622,4.34038738 L7.75166358,7.40469806 C7.88821853,7.46764349 8.11178147,7.46764349 8.24833642,7.40469806 L14.8975838,4.34038738 C15.0341387,4.27744195 15.0341387,4.17446518 14.8975838,4.11151975 L8.24833642,1.04720908 C8.11178147,0.984263641 7.88821853,0.984263641 7.75166358,1.04720908 L1.10241622,4.11151975 C0.965861261,4.17446518 0.965861261,4.27744195 1.10241622,4.34038738"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </span>
+                </div>
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Loading...
+                </span>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </div>
