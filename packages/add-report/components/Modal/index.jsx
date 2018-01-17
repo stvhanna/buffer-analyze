@@ -19,7 +19,7 @@ const Section = styled.section`
   background: #FAFAFA;
   border-radius: 3px 3px 0 0;
   min-height: 12rem;
-  padding: 0.75rem;
+  padding: 0.75rem 0.5rem;
   box-shadow: 0 1px 1px rgba(0,0,0,0.05) inset;
 `;
 
@@ -39,7 +39,7 @@ const Input = styled.input.attrs({
   box-sizing: border-box;
   width: 466px;
   outline: none;
-  font-size: 1rem !important;
+  font-size: 0.8rem !important;
   font-weight: 400;
   padding: 1rem;
   font-family: 'Roboto', sans-serif;

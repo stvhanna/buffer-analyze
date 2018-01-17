@@ -1,52 +1,48 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-
+import styled from 'styled-components';
 import Text from '@bufferapp/components/Text';
-import {
-  geyser,
-} from '@bufferapp/components/style/color';
+import imageBase64 from './image';
 
-const messageContainer = {
-  boxSizing: 'border-box',
-  background: 'white',
-  marginLeft: 30,
-  marginRight: 30,
-  flexDirection: 'row',
-  flex: 1,
-};
+const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12rem;
+`;
 
-const description = {
-  marginBottom: 30,
-};
+const Message = styled.div`
+  box-sizing: border-box;
+  background: white;
+  margin-left: 30;
+  margin-right: 30;
+  flex-direction: row;
+  flex: 1;
+  text-align: center;
+`;
 
-const NoData = ({ alignTop }) => {
-  const container = {
-    opacity: 1,
-    textAlign: 'center',
-    background: 'rgba(255, 255, 255, 1)',
-    display: 'flex',
-    alignItems: alignTop ? 'flex-start' : 'center',
-    justifyContent: 'center',
-    transition: 'opacity 350ms ease-in-out',
-  };
-  return (
-    <div style={container}>
-      <div style={messageContainer}>
-        <h1><Text size="large">We couldn't find any analytics for this date range.</Text></h1>
-        <p style={description}>
-          <Text>Try selecting a longer date range, or share something and check back tomorrow :)</Text>
-        </p>
-      </div>
-    </div>
-  );
-};
+const Image = styled.div`
+  width: 240px;
+  height: 100px;
+  background: url(${imageBase64});
+  background-size: 100% 100%;
+  margin: 0 auto 0.1rem;
+`;
 
-NoData.defaultProps = {
-  alignTop: false,
-};
+const Header = styled.h1`
+  padding: 0;
+  margin: 0 0 0.1rem;
+`;
 
-NoData.propTypes = {
-  alignTop: PropTypes.bool,
-};
+const NoData = () => (
+  <Container>
+    <Message>
+      <Image />
+      <Header>
+        <Text size="medium">There are no analytics for this date range</Text>
+      </Header>
+    </Message>
+  </Container>
+);
+
 export default NoData;
 

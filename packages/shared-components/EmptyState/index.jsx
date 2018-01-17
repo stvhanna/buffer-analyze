@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Text from '@bufferapp/components/Text';
-import imageBase64 from './image2';
+import imageBase64 from './image';
 
 const Container = styled.div`
   width: 400px;
