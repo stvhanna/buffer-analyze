@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { PureComponent } from 'react';
 import ReactHighcharts from 'react-highcharts';
 import moment from 'moment';
 
@@ -133,10 +133,10 @@ function filterDailyDataMetrics(dailyData, metricLabel) {
   }));
 }
 
-
-const Chart =
-  ({ daily, totalPeriodDaily, selectedMetricLabel,
-    dailyMode, timezone, visualizePreviousPeriod, profileService }) => {
+class Chart extends PureComponent {
+  render() {
+    const { daily, totalPeriodDaily, selectedMetricLabel,
+      dailyMode, timezone, visualizePreviousPeriod, profileService } = this.props;
     const dailyData = dailyMode === 1 ? totalPeriodDaily : daily;
     const filteredDailyData = filterDailyDataMetrics(dailyData, selectedMetricLabel);
     const charOptions = prepareChartOptions(
@@ -146,7 +146,8 @@ const Chart =
       profileService,
     );
     return (<ReactHighcharts config={charOptions} />);
-  };
+  }
+}
 
 Chart.propTypes = {
   totalPeriodDaily: PropTypes.arrayOf(PropTypes.shape({

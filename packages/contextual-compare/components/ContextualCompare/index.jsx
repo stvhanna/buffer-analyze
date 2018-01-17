@@ -39,7 +39,16 @@ const ContextualCompare = ({
       {data.length === 0 && !loading && <NoData />}
       {data.length >= 1 && !loading && <div>
         <Header {...props} />
-        <Chart {...props} pngExportId="contextual" data={data} />
+        <Chart
+          mode={props.mode}
+          presets={props.presets}
+          profileService={props.profileService}
+          selectedMetrics={props.selectedMetrics}
+          selectedPreset={props.selectedPreset}
+          timezone={props.timezone}
+          pngExportId="contextual"
+          data={data}
+        />
       </div>}
     </div>
   </ChartCard>
@@ -47,9 +56,11 @@ const ContextualCompare = ({
 
 ContextualCompare.defaultProps = {
   loading: false,
+  presets: null,
 };
 
 ContextualCompare.propTypes = {
+  timezone: PropTypes.string.isRequired,
   className: PropTypes.string.isRequired,
   profileService: PropTypes.string.isRequired,
   data: PropTypes.arrayOf(PropTypes.shape({
@@ -65,6 +76,16 @@ ContextualCompare.propTypes = {
     label: PropTypes.string.isRequired,
   })).isRequired,
   mode: PropTypes.number.isRequired,
+  presets: PropTypes.arrayOf(PropTypes.shape({
+    day: PropTypes.string,
+    data: PropTypes.arrayOf(PropTypes.shape({
+      metrics: PropTypes.arrayOf(PropTypes.shape({
+        key: PropTypes.string.isRequired,
+        label: PropTypes.string,
+        value: PropTypes.number.isRequired,
+      })),
+    })),
+  })),
 };
 
 const ContextualCompareStyled = styled(ContextualCompare)`
