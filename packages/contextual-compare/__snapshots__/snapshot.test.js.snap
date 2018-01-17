@@ -54,12 +54,12 @@ exports[`Snapshots ContextualCompare [TESTED] Should render Posts metrics as col
         </h2>
       </header>
       <div
-        className="sc-gqjmRU kIuJuB"
+        className="sc-kgoBCf jMQwnZ"
       >
         <div>
           <div>
             <div
-              className="sc-gZMcBi koPbPx"
+              className="sc-chPdSV dxNFWQ"
             >
               <div
                 className="dropdown dropdownContainer"
@@ -794,12 +794,12 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
         </h2>
       </header>
       <div
-        className="sc-gqjmRU kIuJuB"
+        className="sc-kgoBCf jMQwnZ"
       >
         <div>
           <div>
             <div
-              className="sc-gZMcBi koPbPx"
+              className="sc-chPdSV dxNFWQ"
             >
               <div
                 className="dropdown dropdownContainer"
@@ -1534,12 +1534,12 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
         </h2>
       </header>
       <div
-        className="sc-gqjmRU kIuJuB"
+        className="sc-kgoBCf jMQwnZ"
       >
         <div>
           <div>
             <div
-              className="sc-gZMcBi koPbPx"
+              className="sc-chPdSV dxNFWQ"
             >
               <div
                 style={
@@ -1689,7 +1689,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                                  
                               </span>
                               <span
-                                className="sc-iwsKbI gcczDF"
+                                className="sc-kAzzGY jLLAkG"
                                 data-description="Already it was conjectured that this might be the well-known interplan industrialist Palmer Eldritch, who had gone to the Prox system a decade ago at the invitation of the Prox Council of humanoid types; they had wanted him to modernize their autofacs along Terran lines. Nothing had been heard from Eldritch since. Now this."
                               >
                                 ?
@@ -1770,7 +1770,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                                   (no data) 
                               </span>
                               <span
-                                className="sc-iwsKbI gcczDF"
+                                className="sc-kAzzGY jLLAkG"
                                 data-description="Already it was conjectured that this might be the well-known interplan industrialist Palmer Eldritch, who had gone to the Prox system a decade ago at the invitation of the Prox Council of humanoid types; they had wanted him to modernize their autofacs along Terran lines. Nothing had been heard from Eldritch since. Now this."
                               >
                                 ?
@@ -1839,7 +1839,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                                  
                               </span>
                               <span
-                                className="sc-iwsKbI gcczDF"
+                                className="sc-kAzzGY jLLAkG"
                                 data-description="Discover how your posting frequency affects your fan count."
                               >
                                 ?
@@ -2081,12 +2081,12 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
         </h2>
       </header>
       <div
-        className="sc-gqjmRU kIuJuB"
+        className="sc-kgoBCf jMQwnZ"
       >
         <div>
           <div>
             <div
-              className="sc-gZMcBi koPbPx"
+              className="sc-chPdSV dxNFWQ"
             >
               <div
                 style={
@@ -2236,7 +2236,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                                  
                               </span>
                               <span
-                                className="sc-iwsKbI gcczDF"
+                                className="sc-kAzzGY jLLAkG"
                                 data-description="Already it was conjectured that this might be the well-known interplan industrialist Palmer Eldritch, who had gone to the Prox system a decade ago at the invitation of the Prox Council of humanoid types; they had wanted him to modernize their autofacs along Terran lines. Nothing had been heard from Eldritch since. Now this."
                               >
                                 ?
@@ -2317,7 +2317,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                                   (no data) 
                               </span>
                               <span
-                                className="sc-iwsKbI gcczDF"
+                                className="sc-kAzzGY jLLAkG"
                                 data-description="Already it was conjectured that this might be the well-known interplan industrialist Palmer Eldritch, who had gone to the Prox system a decade ago at the invitation of the Prox Council of humanoid types; they had wanted him to modernize their autofacs along Terran lines. Nothing had been heard from Eldritch since. Now this."
                               >
                                 ?
@@ -2386,7 +2386,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                                  
                               </span>
                               <span
-                                className="sc-iwsKbI gcczDF"
+                                className="sc-kAzzGY jLLAkG"
                                 data-description="Discover how your posting frequency affects your fan count."
                               >
                                 ?
@@ -2664,53 +2664,19 @@ exports[`Snapshots ContextualCompare [TESTED] should render a "no data" state 1`
         </h2>
       </header>
       <div
-        className="sc-gqjmRU kIuJuB"
+        className="sc-kgoBCf jMQwnZ"
       >
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "background": "rgba(255, 255, 255, 1)",
-              "display": "flex",
-              "justifyContent": "center",
-              "opacity": 1,
-              "textAlign": "center",
-              "transition": "opacity 350ms ease-in-out",
-            }
-          }
+          className="sc-bdVaJa fWzNTu"
         >
           <div
-            style={
-              Object {
-                "background": "white",
-                "boxSizing": "border-box",
-                "flex": 1,
-                "flexDirection": "row",
-                "marginLeft": 30,
-                "marginRight": 30,
-              }
-            }
+            className="sc-bwzfXH iNQYMr"
           >
-            <h1>
-              <span
-                style={
-                  Object {
-                    "color": "#59626a",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "1.25rem",
-                    "fontWeight": 400,
-                  }
-                }
-              >
-                We couldn't find any analytics for this date range.
-              </span>
-            </h1>
-            <p
-              style={
-                Object {
-                  "marginBottom": 30,
-                }
-              }
+            <div
+              className="sc-htpNat bHmPki"
+            />
+            <h1
+              className="sc-bxivhb hlZJQM"
             >
               <span
                 style={
@@ -2722,9 +2688,9 @@ exports[`Snapshots ContextualCompare [TESTED] should render a "no data" state 1`
                   }
                 }
               >
-                Try selecting a longer date range, or share something and check back tomorrow :)
+                There are no analytics for this date range
               </span>
-            </p>
+            </h1>
           </div>
         </div>
       </div>
@@ -2787,7 +2753,7 @@ exports[`Snapshots ContextualCompare [TESTED] should render a loading state 1`] 
         </h2>
       </header>
       <div
-        className="sc-gqjmRU kIuJuB"
+        className="sc-kgoBCf jMQwnZ"
       >
         <div
           style={
@@ -3043,7 +3009,7 @@ exports[`Snapshots PresetsDropdown [TESTED] open dropdown 1`] = `
                      
                   </span>
                   <span
-                    className="sc-iwsKbI gcczDF"
+                    className="sc-kAzzGY jLLAkG"
                     data-description="Already it was conjectured that this might be the well-known interplan industrialist Palmer Eldritch, who had gone to the Prox system a decade ago at the invitation of the Prox Council of humanoid types; they had wanted him to modernize their autofacs along Terran lines. Nothing had been heard from Eldritch since. Now this."
                   >
                     ?
@@ -3124,7 +3090,7 @@ exports[`Snapshots PresetsDropdown [TESTED] open dropdown 1`] = `
                       (no data) 
                   </span>
                   <span
-                    className="sc-iwsKbI gcczDF"
+                    className="sc-kAzzGY jLLAkG"
                     data-description="Already it was conjectured that this might be the well-known interplan industrialist Palmer Eldritch, who had gone to the Prox system a decade ago at the invitation of the Prox Council of humanoid types; they had wanted him to modernize their autofacs along Terran lines. Nothing had been heard from Eldritch since. Now this."
                   >
                     ?
@@ -3193,7 +3159,7 @@ exports[`Snapshots PresetsDropdown [TESTED] open dropdown 1`] = `
                      
                   </span>
                   <span
-                    className="sc-iwsKbI gcczDF"
+                    className="sc-kAzzGY jLLAkG"
                     data-description="Discover how your posting frequency affects your fan count."
                   >
                     ?

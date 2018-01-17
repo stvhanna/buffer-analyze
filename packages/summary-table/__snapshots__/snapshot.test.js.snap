@@ -63,50 +63,16 @@ exports[`Snapshots SummaryTable should render a "no data" state 1`] = `
         }
       >
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "background": "rgba(255, 255, 255, 1)",
-              "display": "flex",
-              "justifyContent": "center",
-              "opacity": 1,
-              "textAlign": "center",
-              "transition": "opacity 350ms ease-in-out",
-            }
-          }
+          className="sc-bdVaJa fWzNTu"
         >
           <div
-            style={
-              Object {
-                "background": "white",
-                "boxSizing": "border-box",
-                "flex": 1,
-                "flexDirection": "row",
-                "marginLeft": 30,
-                "marginRight": 30,
-              }
-            }
+            className="sc-bwzfXH iNQYMr"
           >
-            <h1>
-              <span
-                style={
-                  Object {
-                    "color": "#59626a",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "1.25rem",
-                    "fontWeight": 400,
-                  }
-                }
-              >
-                We couldn't find any analytics for this date range.
-              </span>
-            </h1>
-            <p
-              style={
-                Object {
-                  "marginBottom": 30,
-                }
-              }
+            <div
+              className="sc-htpNat bHmPki"
+            />
+            <h1
+              className="sc-bxivhb hlZJQM"
             >
               <span
                 style={
@@ -118,9 +84,9 @@ exports[`Snapshots SummaryTable should render a "no data" state 1`] = `
                   }
                 }
               >
-                Try selecting a longer date range, or share something and check back tomorrow :)
+                There are no analytics for this date range
               </span>
-            </p>
+            </h1>
           </div>
         </div>
       </div>

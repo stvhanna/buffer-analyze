@@ -3,7 +3,7 @@
 exports[`Snapshots RemoveButton renders the remove button 1`] = `
 <span>
   <button
-    className="sc-iwsKbI gzNeKR sc-htpNat jElTWv"
+    className="sc-kAzzGY jWgWfF sc-bZQynM gQpRYd"
     onClick={[Function]}
   >
     <svg
@@ -66,7 +66,7 @@ exports[`Snapshots Report can display buttons for viewing and removing the repor
     }
   >
     <span
-      className="sc-VigVT imyKmg"
+      className="sc-kGXeez ikuGfZ"
     >
       <span
         style={
@@ -79,16 +79,16 @@ exports[`Snapshots Report can display buttons for viewing and removing the repor
         }
       >
         <span
-          className="sc-gZMcBi bMHQsL"
+          className="sc-chPdSV jFSiVY"
         >
           Weekly Sync Report
         </span>
       </span>
       <span
-        className="sc-jTzLTM imCabk"
+        className="sc-kpOJdX vaKxX"
       >
         <button
-          className="sc-iwsKbI gzNeKR sc-htpNat jElTWv"
+          className="sc-kAzzGY jWgWfF sc-bZQynM gQpRYd"
           onClick={[Function]}
         >
           <svg
@@ -125,7 +125,7 @@ exports[`Snapshots Report can display buttons for viewing and removing the repor
 exports[`Snapshots Report renders the report 1`] = `
 <span>
   <li
-    className="sc-fjdhpX dihBVz"
+    className="sc-dxgOiQ bjQadS"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
@@ -159,7 +159,7 @@ exports[`Snapshots Report renders the report 1`] = `
       }
     >
       <span
-        className="sc-VigVT imyKmg"
+        className="sc-kGXeez ikuGfZ"
       >
         <span
           style={
@@ -172,7 +172,7 @@ exports[`Snapshots Report renders the report 1`] = `
           }
         >
           <span
-            className="sc-gZMcBi bMHQsL"
+            className="sc-chPdSV jFSiVY"
           >
             Weekly Sync Report
           </span>
@@ -188,7 +188,7 @@ exports[`Snapshots Report renders the report 1`] = `
           }
         >
           <span
-            className="sc-gqjmRU gYOUjR"
+            className="sc-kgoBCf hIItCJ"
           >
             October 10, 2017
           </span>
@@ -202,88 +202,124 @@ exports[`Snapshots Report renders the report 1`] = `
 exports[`Snapshots ReportList loading state 1`] = `
 <span>
   <div
-    style={
-      Object {
-        "alignItems": "center",
-        "background": "transparent",
-        "border": "none",
-        "display": "flex",
-        "justifyContent": "center",
-        "maxHeight": "none",
-        "minHeight": "8rem",
-        "textAlign": "center",
-        "transition": "opacity 350ms ease-in-out",
-        "zIndex": 2,
-      }
-    }
+    className="sc-jKJlTe hzCAlj"
   >
     <div
       style={
         Object {
-          "background": "none",
-          "borderRadius": "2px",
-          "flex": 1,
-          "flexDirection": "row",
+          "alignItems": "center",
+          "background": "transparent",
+          "border": "none",
+          "display": "flex",
+          "justifyContent": "center",
+          "maxHeight": "none",
+          "minHeight": "8rem",
+          "textAlign": "center",
+          "transition": "opacity 350ms ease-in-out",
+          "zIndex": 2,
         }
       }
     >
       <div
         style={
           Object {
-            "textAlign": "center",
+            "background": "none",
+            "borderRadius": "2px",
+            "flex": 1,
+            "flexDirection": "row",
           }
         }
       >
         <div
           style={
             Object {
-              "height": "1rem",
-              "margin": "0 auto 1rem auto",
-              "position": "relative",
-              "width": "1rem",
+              "textAlign": "center",
             }
           }
         >
-          <span>
-            <div
-              style={
-                Object {
-                  "height": "1rem",
-                  "left": 0,
-                  "opacity": 0,
-                  "position": "absolute",
-                  "top": 0,
-                  "transition": "all 1000ms ease-in-out",
-                  "width": "1rem",
-                }
+          <div
+            style={
+              Object {
+                "height": "1rem",
+                "margin": "0 auto 1rem auto",
+                "position": "relative",
+                "width": "1rem",
               }
-            >
-              <svg
-                height="100%"
+            }
+          >
+            <span>
+              <div
                 style={
                   Object {
-                    "fill": "#59626a",
                     "height": "1rem",
+                    "left": 0,
+                    "opacity": 0,
+                    "position": "absolute",
+                    "top": 0,
+                    "transition": "all 1000ms ease-in-out",
                     "width": "1rem",
                   }
                 }
-                version="1.1"
-                viewBox="0 0 16 16"
-                width="100%"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
               >
-                <g
-                  className="shuttleGray"
+                <svg
+                  height="100%"
+                  style={
+                    Object {
+                      "fill": "#59626a",
+                      "height": "1rem",
+                      "width": "1rem",
+                    }
+                  }
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
                 >
-                  <path
-                    d="M1.10241622,4.34038738 L7.75166358,7.40469806 C7.88821853,7.46764349 8.11178147,7.46764349 8.24833642,7.40469806 L14.8975838,4.34038738 C15.0341387,4.27744195 15.0341387,4.17446518 14.8975838,4.11151975 L8.24833642,1.04720908 C8.11178147,0.984263641 7.88821853,0.984263641 7.75166358,1.04720908 L1.10241622,4.11151975 C0.965861261,4.17446518 0.965861261,4.27744195 1.10241622,4.34038738"
-                  />
-                </g>
-              </svg>
-            </div>
+                  <g
+                    className="shuttleGray"
+                  >
+                    <path
+                      d="M1.10241622,4.34038738 L7.75166358,7.40469806 C7.88821853,7.46764349 8.11178147,7.46764349 8.24833642,7.40469806 L14.8975838,4.34038738 C15.0341387,4.27744195 15.0341387,4.17446518 14.8975838,4.11151975 L8.24833642,1.04720908 C8.11178147,0.984263641 7.88821853,0.984263641 7.75166358,1.04720908 L1.10241622,4.11151975 C0.965861261,4.17446518 0.965861261,4.27744195 1.10241622,4.34038738"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </span>
+          </div>
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Loading...
           </span>
         </div>
+      </div>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots ReportList renders an empty state for reports 1`] = `
+<span>
+  <div
+    className="sc-jKJlTe hzCAlj"
+  >
+    <div
+      className="sc-htoDjs bitDVA"
+    >
+      <div
+        className="sc-dnqmqq jsFTOH"
+      />
+      <h1
+        className="sc-iwsKbI csSyjD"
+      >
         <span
           style={
             Object {
@@ -294,9 +330,9 @@ exports[`Snapshots ReportList loading state 1`] = `
             }
           }
         >
-          Loading...
+          There are currently no reports
         </span>
-      </div>
+      </h1>
     </div>
   </div>
 </span>
@@ -305,10 +341,10 @@ exports[`Snapshots ReportList loading state 1`] = `
 exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
 <span>
   <ol
-    className="sc-jzJRlG fDXUjd"
+    className="sc-ckVGcZ brbPNr"
   >
     <li
-      className="sc-fjdhpX dihBVz"
+      className="sc-dxgOiQ bjQadS"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -342,7 +378,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
         }
       >
         <span
-          className="sc-VigVT imyKmg"
+          className="sc-kGXeez ikuGfZ"
         >
           <span
             style={
@@ -355,7 +391,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
             }
           >
             <span
-              className="sc-gZMcBi bMHQsL"
+              className="sc-chPdSV jFSiVY"
             >
               Weekly Sync Report
             </span>
@@ -371,7 +407,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
             }
           >
             <span
-              className="sc-gqjmRU gYOUjR"
+              className="sc-kgoBCf hIItCJ"
             >
               November 7, 2017
             </span>
@@ -380,7 +416,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
       </button>
     </li>
     <li
-      className="sc-fjdhpX dihBVz"
+      className="sc-dxgOiQ bjQadS"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -414,7 +450,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
         }
       >
         <span
-          className="sc-VigVT imyKmg"
+          className="sc-kGXeez ikuGfZ"
         >
           <span
             style={
@@ -427,7 +463,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
             }
           >
             <span
-              className="sc-gZMcBi bMHQsL"
+              className="sc-chPdSV jFSiVY"
             >
               Client Social Media Campaign
             </span>
@@ -443,7 +479,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
             }
           >
             <span
-              className="sc-gqjmRU gYOUjR"
+              className="sc-kgoBCf hIItCJ"
             >
               October 10, 2017
             </span>
