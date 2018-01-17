@@ -35,7 +35,7 @@ function setChartLimits({ series, yAxis }) {
   let min = Math.min.apply(null, values);
   let max = Math.max.apply(null, values);
   const maxPaddingPercentage = 5.25;
-  const minPaddingPercentage = 1;
+  const minPaddingPercentage = 0.1;
   let topPaddingPercentage = (maxPaddingPercentage - Math.log10(max));
   if (topPaddingPercentage < minPaddingPercentage) {
     topPaddingPercentage = minPaddingPercentage;

@@ -46,7 +46,7 @@ function getSeriesRange(series) {
   let min = Math.min.apply(null, reducedSeries);
   let max = Math.max.apply(null, reducedSeries);
   const maxPaddingPercentage = 5.25;
-  const minPaddingPercentage = 2;
+  const minPaddingPercentage = 0.1;
   let topPaddingPercentage = (maxPaddingPercentage - Math.log10(max));
   if (topPaddingPercentage < minPaddingPercentage) {
     topPaddingPercentage = minPaddingPercentage;
