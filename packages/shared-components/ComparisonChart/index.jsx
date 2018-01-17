@@ -19,14 +19,13 @@ function fadeColor(color, opacity) {
     color;
 }
 
-function getTickInterval(dailyMetric) {
-  const oneDayMS = 24 * 3600 * 1000;
-  const sevenDaysMS = 7 * oneDayMS;
-  const isMoreThenSevenDays = dailyMetric[0].length > 7;
+function getMinorTickInterval(dailyMetric) {
+  const oneDay = 24 * 3600 * 1000;
+  const moreThanAMonth = dailyMetric.length > 31;
 
-  return isMoreThenSevenDays ?
-    sevenDaysMS :
-    oneDayMS;
+  return moreThanAMonth ?
+    null :
+    oneDay;
 }
 
 function prepareSeries(
@@ -51,7 +50,7 @@ function prepareSeries(
         profileService,
         timezone,
       }),
-      pointPlacement: getTickInterval(dailyMetric),
+      pointPlacement: getMinorTickInterval(dailyMetric),
       // set profile specific timezone
       getTimezoneOffset: timestamp => -moment.tz(timestamp, timezone).utcOffset(),
     };
