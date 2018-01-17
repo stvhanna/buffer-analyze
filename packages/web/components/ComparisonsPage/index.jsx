@@ -62,6 +62,14 @@ const toolbarDatePicker = {
   marginLeft: '0.5rem',
 };
 
+const centeredContainer = {
+  display: 'flex',
+  width: '100%',
+  height: '90%',
+  justifyContent: 'center',
+  alignItems: 'center',
+};
+
 const ComparisonsPage = ({ location, profilesSelected }) => (
   <div style={pageStyle}>
     <NavSidebar route={location.pathname} />
@@ -89,10 +97,10 @@ const ComparisonsPage = ({ location, profilesSelected }) => (
                 <CommentsComparisonChart />
               </div>
             :
-              <div style={comparisonsMaxWidth}>
+              <div style={centeredContainer}>
                 <EmptyState
                   header="No profiles are currently selected"
-                  description="Please choose two or more profiles from the dropdown to see the comparison charts"
+                  description="Please choose two or more profiles from the dropdown"
                 />
               </div>
           }

@@ -16,6 +16,8 @@ const Section = styled.section`
   margin-top: 1.25rem;
   max-height: 18rem;
   overflow-y: scroll;
+  background: #FAFAFA;
+  border-radius: 3px;
 `;
 
 const InputWrapper = styled.section`

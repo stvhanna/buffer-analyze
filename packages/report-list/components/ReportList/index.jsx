@@ -13,9 +13,19 @@ const List = styled.ol`
   width: 100%;
 `;
 
+const Centered = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+`;
+
 const ReportList = ({ loading, reports, selectReport, removeReport, small }) =>
   (loading ?
-    <Loading active noBorder transparent /> :
+    <Centered>
+      <Loading active noBorder transparent />
+    </Centered> :
     reports.length > 0 ?
       <List>
         {reports.map(report =>
@@ -28,10 +38,11 @@ const ReportList = ({ loading, reports, selectReport, removeReport, small }) =>
           />,
         )}
       </List> :
-      <EmptyState
-        header="There are currently no reports"
-        description="Reports can be made by using the Add to Report button on the graph of your choosing"
-      />
+      <Centered>
+        <EmptyState
+          header="There are currently no reports"
+        />
+      </Centered>
   );
 
 ReportList.defaultProps = {

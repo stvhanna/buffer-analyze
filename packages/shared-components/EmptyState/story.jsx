@@ -8,7 +8,12 @@ storiesOf('EmptyState')
   .add('render with default text', () => (
     <EmptyState />
   ))
-  .add('render with custom text', () => (
+  .add('render with a custom header but no description', () => (
+    <EmptyState
+      header="This is a custom header!"
+    />
+  ))
+  .add('render with a custom header and description', () => (
     <EmptyState
       header="This is a custom header!"
       description="This is a custom description!"
