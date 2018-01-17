@@ -82,6 +82,7 @@ app.post('/rpc', (req, res, next) => {
 app.use(bodyParser.json());
 app.use(buffermetricsMiddleware({
   name: 'Buffer-Analyze',
+  host: 'events-collector.data:50051',
   debug: !isProduction,
   trackVisits: true,
 }));
