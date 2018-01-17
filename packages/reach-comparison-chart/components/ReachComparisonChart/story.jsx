@@ -4,12 +4,13 @@ import { checkA11y } from 'storybook-addon-a11y';
 
 import ReachComparisonChart from './index';
 import mockDailyData from '../../mocks/dailyData';
+import profiles from '../../mocks/profiles';
 
 const profileTotals = [
   {
     currentPeriodTotal: 400,
     currentPeriodDiff: 20,
-    profileId: '1234abcd',
+    profileId: '1',
     username: 'Buffer',
     service: 'facebook',
     metric: {
@@ -20,7 +21,7 @@ const profileTotals = [
   {
     currentPeriodTotal: 700,
     currentPeriodDiff: -10,
-    profileId: '5678abcd',
+    profileId: '2',
     username: 'buffer',
     service: 'twitter',
     metric: {
@@ -31,7 +32,7 @@ const profileTotals = [
   {
     currentPeriodTotal: 2000,
     currentPeriodDiff: 80,
-    profileId: '5678abcd',
+    profileId: '3',
     username: 'TestInstagram',
     service: 'instagram',
     metric: {
@@ -52,6 +53,7 @@ storiesOf('ReachComparisonChart')
       <ReachComparisonChart
         profilesMetricData={[mockDailyData[0]]}
         profileTotals={[profileTotals[0]]}
+        profiles={profiles}
       />
     </div>
   ))
@@ -64,6 +66,7 @@ storiesOf('ReachComparisonChart')
       <ReachComparisonChart
         profilesMetricData={mockDailyData}
         profileTotals={profileTotals}
+        profiles={profiles}
       />
     </div>
   ))
@@ -76,6 +79,7 @@ storiesOf('ReachComparisonChart')
       <ReachComparisonChart
         profilesMetricData={[]}
         profileTotals={[]}
+        profiles={profiles}
         loading
       />
     </div>
@@ -89,6 +93,7 @@ storiesOf('ReachComparisonChart')
       <ReachComparisonChart
         profilesMetricData={[]}
         profileTotals={[]}
+        profiles={profiles}
       />
     </div>
   ));

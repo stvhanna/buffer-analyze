@@ -6,8 +6,12 @@ import Text from '@bufferapp/components/Text';
 
 import {
   GridItem,
-  MetricIcon,
+  ProfileIcon,
 } from '@bufferapp/analyze-shared-components';
+
+import {
+  shuttleGrey,
+} from '@bufferapp/components/style/color';
 
 const Grid = styled.ul`
   display: flex;
@@ -24,6 +28,7 @@ const Wrapper = styled.section`
 const ProfileAvatarWrapper = styled.div`
   display: inline-flex;
   align-items: center;
+  margin-right: 14px;
 `;
 const ProfileUsernameWrapper = styled.div`
   margin-right: 10px;
@@ -37,13 +42,15 @@ const ProfileCell = ({ profileTotal, profile }) => (
       diff: profileTotal.currentPeriodDiff,
     }}
     customLabel={
+      <ProfileUsernameWrapper>
+        <Text weight="bold" color={shuttleGrey}>
+          {profile.username}
+        </Text>
+      </ProfileUsernameWrapper>
+    }
+    prefix={
       <ProfileAvatarWrapper>
-        <ProfileUsernameWrapper>
-          <Text size="small">
-            {profile.username}
-          </Text>
-        </ProfileUsernameWrapper>
-        <MetricIcon key={profile.profileId} metric={profileTotal.metric} />
+        <ProfileIcon color={profileTotal.metric.color} profile={profile} />
       </ProfileAvatarWrapper>
     }
   />
