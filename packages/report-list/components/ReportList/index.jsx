@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-
 import {
   ChartStateLoading as Loading,
+  EmptyState,
 } from '@bufferapp/analyze-shared-components';
 import Report from '../Report';
 
@@ -16,17 +16,23 @@ const List = styled.ol`
 const ReportList = ({ loading, reports, selectReport, removeReport, small }) =>
   (loading ?
     <Loading active noBorder transparent /> :
-    <List>
-      {reports.map(report =>
-        <Report
-          key={report._id}
-          {...report}
-          small={small}
-          selectReport={selectReport}
-          removeReport={removeReport}
-        />,
-      )}
-    </List>);
+    reports.length > 0 ?
+      <List>
+        {reports.map(report =>
+          <Report
+            key={report._id}
+            {...report}
+            small={small}
+            selectReport={selectReport}
+            removeReport={removeReport}
+          />,
+        )}
+      </List> :
+      <EmptyState
+        header="There are currently no reports"
+        description="Reports can be made by using the Add to Report button on the graph of your choosing"
+      />
+  );
 
 ReportList.defaultProps = {
   reports: [],

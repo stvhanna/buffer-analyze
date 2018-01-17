@@ -15,6 +15,7 @@ export MetricsDropdown from './MetricsDropdown';
 export ChartCard from './ChartCard';
 export ChartHeader from './ChartHeader';
 export Modal from './Modal';
+export EmptyState from './EmptyState';
 export DropdownItem from './DropdownItem';
 export VerticalDivider from './VerticalDivider';
 export ComparisonChartWrapper from './ComparisonChartWrapper';
