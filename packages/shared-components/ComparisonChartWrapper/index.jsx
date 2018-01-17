@@ -15,6 +15,7 @@ import {
 const ComparisonChartWrapper = ({
   profilesMetricData,
   profileTotals,
+  profiles,
   loading,
   chartName,
 }) => {
@@ -36,6 +37,7 @@ const ComparisonChartWrapper = ({
     footer = (
       <Footer
         profileTotals={profileTotals}
+        profiles={profiles}
       />
     );
   }
@@ -88,7 +90,12 @@ ComparisonChartWrapper.propTypes = {
     currentPeriodTotal: PropTypes.number.isRequired,
     currentPeriodDiff: PropTypes.number.isRequired,
     profileId: PropTypes.string.isRequired,
+  })).isRequired,
+  profiles: PropTypes.arrayOf(PropTypes.shape({
+    profileId: PropTypes.string.isRequired,
     username: PropTypes.string.isRequired,
+    avatarUrl: PropTypes.string.isRequired,
+    service: PropTypes.string.isRequired,
   })).isRequired,
 };
 

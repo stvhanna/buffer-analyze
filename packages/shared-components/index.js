@@ -4,6 +4,7 @@ export GridItem from './GridItem';
 export Dropdown from './Dropdown';
 export style from './style';
 export MetricIcon from './MetricIcon';
+export ProfileIcon from './ProfileIcon';
 export PeriodPhrase from './PeriodPhrase';
 export PostsTable from './PostsTable';
 export ProfileBadge from './ProfileBadge';

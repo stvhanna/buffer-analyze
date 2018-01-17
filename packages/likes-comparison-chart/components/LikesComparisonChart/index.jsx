@@ -7,12 +7,14 @@ const CHART_NAME = 'Likes';
 const LikesComparisonChart = ({
   profilesMetricData,
   profileTotals,
+  profiles,
   loading,
 }) =>
   (
     <ComparisonChartWrapper
       profilesMetricData={profilesMetricData}
       profileTotals={profileTotals}
+      profiles={profiles}
       loading={loading}
       chartName={CHART_NAME}
     />
@@ -49,6 +51,12 @@ LikesComparisonChart.propTypes = {
     profileId: PropTypes.string.isRequired,
     username: PropTypes.string.isRequired,
     service: PropTypes.string,
+  })).isRequired,
+  profiles: PropTypes.arrayOf(PropTypes.shape({
+    profileId: PropTypes.string.isRequired,
+    username: PropTypes.string.isRequired,
+    avatarUrl: PropTypes.string.isRequired,
+    service: PropTypes.string.isRequired,
   })).isRequired,
 };
 

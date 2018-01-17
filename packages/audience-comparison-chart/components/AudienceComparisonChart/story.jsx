@@ -4,12 +4,13 @@ import { checkA11y } from 'storybook-addon-a11y';
 
 import AudienceComparisonChart from './index';
 import mockDailyData from '../../mocks/dailyData';
+import profiles from '../../mocks/profiles';
 
 const profileTotals = [
   {
     currentPeriodTotal: 400,
     currentPeriodDiff: 20,
-    profileId: '1234abcd',
+    profileId: '1',
     username: 'Buffer',
     service: 'facebook',
     metric: {
@@ -20,7 +21,7 @@ const profileTotals = [
   {
     currentPeriodTotal: 700,
     currentPeriodDiff: -10,
-    profileId: '5678abcd',
+    profileId: '2',
     username: 'buffer',
     service: 'twitter',
     metric: {
@@ -41,6 +42,7 @@ storiesOf('AudienceComparisonChart')
       <AudienceComparisonChart
         profilesMetricData={[mockDailyData[0]]}
         profileTotals={[profileTotals[0]]}
+        profiles={profiles}
       />
     </div>
   ))
@@ -53,6 +55,7 @@ storiesOf('AudienceComparisonChart')
       <AudienceComparisonChart
         profilesMetricData={mockDailyData}
         profileTotals={profileTotals}
+        profiles={profiles}
       />
     </div>
   ))
@@ -65,6 +68,7 @@ storiesOf('AudienceComparisonChart')
       <AudienceComparisonChart
         profilesMetricData={[]}
         profileTotals={[]}
+        profiles={profiles}
         loading
       />
     </div>
@@ -78,6 +82,7 @@ storiesOf('AudienceComparisonChart')
       <AudienceComparisonChart
         profilesMetricData={[]}
         profileTotals={[]}
+        profiles={profiles}
       />
     </div>
   ));

@@ -4,12 +4,15 @@ import { checkA11y } from "storybook-addon-a11y";
 
 import CommentsComparisonChart from "./index";
 import mockDailyData from "../../mocks/dailyData";
+import profiles from "../../mocks/profiles";
+
+console.log(profiles)
 
 const profileTotals = [
   {
     currentPeriodTotal: 400,
     currentPeriodDiff: 20,
-    profileId: "1234abcd",
+    profileId: "1",
     username: "Buffer",
     service: "facebook",
     metric: {
@@ -20,7 +23,7 @@ const profileTotals = [
   {
     currentPeriodTotal: 700,
     currentPeriodDiff: -10,
-    profileId: "5678abcd",
+    profileId: "2",
     username: "buffer",
     service: "twitter",
     metric: {
@@ -31,7 +34,7 @@ const profileTotals = [
   {
     currentPeriodTotal: 2000,
     currentPeriodDiff: 80,
-    profileId: "5678abcd",
+    profileId: "3",
     username: "TestInstagram",
     service: "instagram",
     metric: {
@@ -52,6 +55,7 @@ storiesOf("CommentsComparisonChart")
       <CommentsComparisonChart
         profilesMetricData={[mockDailyData[0]]}
         profileTotals={[profileTotals[0]]}
+        profiles={profiles}
       />
     </div>
   ))
@@ -66,6 +70,7 @@ storiesOf("CommentsComparisonChart")
         <CommentsComparisonChart
           profilesMetricData={mockDailyData}
           profileTotals={profileTotals}
+          profiles={profiles}
         />
       </div>
     )
@@ -79,6 +84,7 @@ storiesOf("CommentsComparisonChart")
       <CommentsComparisonChart
         profilesMetricData={[]}
         profileTotals={[]}
+        profiles={profiles}
         loading
       />
     </div>
@@ -89,6 +95,6 @@ storiesOf("CommentsComparisonChart")
         width: "750px"
       }}
     >
-      <CommentsComparisonChart profilesMetricData={[]} profileTotals={[]} />
+      <CommentsComparisonChart profilesMetricData={[]} profileTotals={[]} profiles={profiles} />
     </div>
   ));

@@ -11,5 +11,13 @@ storiesOf('SocialIcon')
       socialIconSize={16}
       avatarSize={32}
     />
+  ))
+  .add('should render with border', () => (
+    <SocialIcon
+      service={'facebook'}
+      socialIconSize={16}
+      avatarSize={32}
+      withBorder
+    />
   ));
 

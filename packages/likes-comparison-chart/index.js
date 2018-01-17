@@ -5,6 +5,7 @@ function mapStateToProps (state) {
   return {
     profilesMetricData: state.likesComparison.profilesMetricData,
     profileTotals: state.likesComparison.profileTotals,
+    profiles: state.profiles.profiles,
     loading: state.likesComparison.loading,
   };
 }
