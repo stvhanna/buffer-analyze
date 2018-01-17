@@ -13,15 +13,18 @@ const Content = styled.section`
 `;
 
 const Section = styled.section`
-  margin-top: 1.25rem;
+  margin-top: 1rem;
   max-height: 18rem;
   overflow-y: scroll;
   background: #FAFAFA;
-  border-radius: 3px;
+  border-radius: 3px 3px 0 0;
+  min-height: 12rem;
+  padding: 0.75rem;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.05) inset;
 `;
 
 const InputWrapper = styled.section`
-  margin-top: 1.25rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
   display: flex;
   justify-content: space-between;
@@ -34,9 +37,9 @@ const Input = styled.input.attrs({
   border: 1px solid #D5E3EF;
   border-radius: 3px;
   box-sizing: border-box;
-  width: 445px;
+  width: 466px;
   outline: none;
-  font-size: 0.75rem !important;
+  font-size: 1rem !important;
   font-weight: 400;
   padding: 1rem;
   font-family: 'Roboto', sans-serif;
