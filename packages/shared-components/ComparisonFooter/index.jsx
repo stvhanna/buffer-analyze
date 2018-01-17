@@ -6,8 +6,12 @@ import Text from '@bufferapp/components/Text';
 
 import {
   GridItem,
-  MetricIcon,
+  ProfileIcon,
 } from '@bufferapp/analyze-shared-components';
+
+import {
+  shuttleGrey,
+} from '@bufferapp/components/style/color';
 
 const Grid = styled.ul`
   display: flex;
@@ -24,33 +28,67 @@ const Wrapper = styled.section`
 const ProfileAvatarWrapper = styled.div`
   display: inline-flex;
   align-items: center;
+  margin-right: 14px;
 `;
 const ProfileUsernameWrapper = styled.div`
   margin-right: 10px;
 `;
 
-const ComparisonFooter = ({ profileTotals }) => (
+const ProfileCell = ({ profileTotal, profile }) => (
+  <GridItem
+    metric={{
+      label: profileTotal.metric.label,
+      value: profileTotal.currentPeriodTotal,
+      diff: profileTotal.currentPeriodDiff,
+    }}
+    customLabel={
+      <ProfileUsernameWrapper>
+        <Text weight="bold" color={shuttleGrey}>
+          {profile.username}
+        </Text>
+      </ProfileUsernameWrapper>
+    }
+    prefix={
+      <ProfileAvatarWrapper>
+        <ProfileIcon color={profileTotal.metric.color} profile={profile} />
+      </ProfileAvatarWrapper>
+    }
+  />
+);
+
+ProfileCell.propTypes = {
+  profileTotal: PropTypes.shape({
+    metric: PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      color: PropTypes.string.isRequired,
+    }),
+    currentPeriodTotal: PropTypes.number.isRequired,
+    currentPeriodDiff: PropTypes.number.isRequired,
+    profileId: PropTypes.string.isRequired,
+    username: PropTypes.string.isRequired,
+    service: PropTypes.string,
+  }).isRequired,
+  profile: PropTypes.shape({
+    profileId: PropTypes.string.isRequired,
+    username: PropTypes.string.isRequired,
+    avatarUrl: PropTypes.string.isRequired,
+    service: PropTypes.string.isRequired,
+  }).isRequired,
+};
+
+function renderGridItem(profileTotal) {
+  const profile = this.profiles.find(p => p.id === profileTotal.profileId);
+  return (<ProfileCell
+    key={profileTotal.profileId}
+    profileTotal={profileTotal}
+    profile={profile}
+  />);
+}
+
+const ComparisonFooter = ({ profileTotals, profiles }) => (
   <Wrapper>
     <Grid>
-      {profileTotals.map(total =>
-        <GridItem
-          key={total.profileId}
-          metric={{
-            label: total.metric.label,
-            value: total.currentPeriodTotal,
-            diff: total.currentPeriodDiff,
-          }}
-          customLabel={
-            <ProfileAvatarWrapper>
-              <ProfileUsernameWrapper>
-                <Text size="small">
-                  {total.username}
-                </Text>
-              </ProfileUsernameWrapper>
-              <MetricIcon key={total.profileId} metric={total.metric} />
-            </ProfileAvatarWrapper>
-          }
-        />)}
+      {profileTotals.map(renderGridItem, { profiles })}
     </Grid>
   </Wrapper>
 );
@@ -70,6 +108,12 @@ ComparisonFooter.propTypes = {
     profileId: PropTypes.string.isRequired,
     username: PropTypes.string.isRequired,
     service: PropTypes.string,
+  })).isRequired,
+  profiles: PropTypes.arrayOf(PropTypes.shape({
+    profileId: PropTypes.string.isRequired,
+    username: PropTypes.string.isRequired,
+    avatarUrl: PropTypes.string.isRequired,
+    service: PropTypes.string.isRequired,
   })).isRequired,
 };
 

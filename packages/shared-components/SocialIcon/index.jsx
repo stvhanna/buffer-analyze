@@ -7,7 +7,7 @@ import {
   CircleTwitterIcon,
 } from '@bufferapp/components';
 
-const SocialIcon = ({ service, socialIconSize, avatarSize }) => {
+const SocialIcon = ({ service, socialIconSize, avatarSize, withBorder }) => {
   let icon;
   switch (service) {
     case 'twitter':
@@ -36,6 +36,7 @@ const SocialIcon = ({ service, socialIconSize, avatarSize }) => {
         top: `${avatarSize - socialIconSize}px`,
         left: `${avatarSize - socialIconSize}px`,
         borderRadius: '50%',
+        border: `#fff ${withBorder ? '1px' : '0'} solid`,
       }}
     >
       {icon}
@@ -47,6 +48,11 @@ SocialIcon.propTypes = {
   service: PropTypes.oneOf(['twitter', 'facebook', 'instagram']).isRequired,
   socialIconSize: PropTypes.number.isRequired,
   avatarSize: PropTypes.number.isRequired,
+  withBorder: PropTypes.bool,
+};
+
+SocialIcon.defaultProps = {
+  withBorder: false,
 };
 
 export default SocialIcon;

@@ -43,6 +43,7 @@ exports[`Snapshots ProfileHeader should render facebook fans 1`] = `
             style={
               Object {
                 "background": "#fff",
+                "border": "#fff 0 solid",
                 "borderRadius": "50%",
                 "height": "16px",
                 "left": "16px",
@@ -196,6 +197,7 @@ exports[`Snapshots ProfileHeader should render twitter followers 1`] = `
             style={
               Object {
                 "background": "#fff",
+                "border": "#fff 0 solid",
                 "borderRadius": "50%",
                 "height": "16px",
                 "left": "16px",

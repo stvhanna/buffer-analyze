@@ -9,7 +9,7 @@ import GridItemChart from './components/GridItemChart';
 const baseMargin = 10;
 const borderColor = '#CED7DF';
 const gridSummaryItem = {
-  display: 'inline-block',
+  display: 'flex',
   listStyle: 'none',
   boxSizing: 'border-box',
   paddingBottom: `${1.5 * baseMargin}px`,
@@ -29,7 +29,16 @@ function filterDailyDataMetrics(dailyData, metricLabel) {
   }));
 }
 
-const GridItem = ({ metric, tooltip, gridWidth, dailyData, timezone, customLabel, hideDiff }) => {
+const GridItem = ({
+  metric,
+  tooltip,
+  gridWidth,
+  dailyData,
+  timezone,
+  customLabel,
+  prefix,
+  hideDiff,
+}) => {
   const style = {
     ...gridSummaryItem,
     width: gridWidth,
@@ -40,16 +49,19 @@ const GridItem = ({ metric, tooltip, gridWidth, dailyData, timezone, customLabel
       style={style}
       key={metric.label}
     >
-      {dailyData.length > 1 &&
-        <GridItemChart timezone={timezone} dailyData={dailyMetricData} />
-      }
-      <Label tooltip={tooltip} >
-        {!customLabel && metric.label}
-        {customLabel && customLabel}
-      </Label>
-      <div style={gridSummaryItemValueWrapper}>
-        <Value>{metric.value}</Value>
-        {!hideDiff && <Diff diff={metric.diff} />}
+      {prefix && prefix}
+      <div>
+        {dailyData.length > 1 &&
+          <GridItemChart timezone={timezone} dailyData={dailyMetricData} />
+        }
+        <Label tooltip={tooltip} >
+          {!customLabel && metric.label}
+          {customLabel && customLabel}
+        </Label>
+        <div style={gridSummaryItemValueWrapper}>
+          <Value>{metric.value}</Value>
+          {!hideDiff && <Diff diff={metric.diff} />}
+        </div>
       </div>
     </li>
   );
@@ -61,6 +73,7 @@ GridItem.defaultProps = {
   timezone: 'Etc/UTC',
   tooltip: null,
   customLabel: null,
+  prefix: null,
   hideDiff: false,
 };
 
@@ -71,6 +84,7 @@ GridItem.propTypes = {
     value: PropTypes.number,
   }).isRequired,
   customLabel: PropTypes.element,
+  prefix: PropTypes.element,
   dailyData: PropTypes.arrayOf(PropTypes.shape({
     day: PropTypes.string.isRequired,
     metrics: PropTypes.arrayOf(PropTypes.shape({
