@@ -108,6 +108,28 @@ function prepareSeries(
   return seriesConfig;
 }
 
+function setChartLimits({ series, yAxis }) {
+  let values = [];
+  const reducedSeries = series.map(s => s.data.map(point => point.y));
+  reducedSeries.forEach((s) => { values = values.concat(s); });
+  let min = Math.min.apply(null, values);
+  let max = Math.max.apply(null, values);
+  const maxPaddingPercentage = 5.25;
+  const minPaddingPercentage = 0.1;
+  let topPaddingPercentage = (maxPaddingPercentage - Math.log10(max));
+  if (topPaddingPercentage < minPaddingPercentage) {
+    topPaddingPercentage = minPaddingPercentage;
+  }
+  let bottomPaddingPercentage = (maxPaddingPercentage - Math.log10(min));
+  if (bottomPaddingPercentage < minPaddingPercentage) {
+    bottomPaddingPercentage = minPaddingPercentage;
+  }
+  min -= (min / 100) * bottomPaddingPercentage;
+  max += (max / 100) * topPaddingPercentage;
+  yAxis[0].floor = min;
+  yAxis[0].ceiling = max;
+}
+
 function prepareChartOptions(dailyMetric, timezone, visualizePreviousPeriod, profileService) {
   const config = Object.assign({}, chartConfig);
 
@@ -122,6 +144,7 @@ function prepareChartOptions(dailyMetric, timezone, visualizePreviousPeriod, pro
       true,
     ) : null),
   ].filter(e => e !== null);
+  setChartLimits(config);
   return config;
 }
 

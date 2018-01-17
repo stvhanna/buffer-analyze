@@ -1,7 +1,24 @@
 import React from 'react';
 import reactDOM from 'react-dom/server';
+import numeral from 'numeral';
 
 import ChartTooltip from './components/ChartTooltip';
+
+export function truncateNumber() {
+  let number = parseFloat(this.value);
+
+  if (number > 1000000) {
+    number = numeral(number).format('0.[00]a');
+  } else if (number >= 10000) {
+    number = numeral(number).format('0.0a');
+  } else if (number < 1 && number > 0) {
+    number = numeral(number).format('0,0.0');
+  } else {
+    number = numeral(number).format('0,0');
+  }
+
+  return number;
+}
 
 export const highChartsConfigXAxis = {
   gridLineColor: '#F3F5F7',
@@ -42,6 +59,8 @@ export const highChartsConfigYAxis = [
       x: 0,
       y: -3,
       align: 'left',
+      format: '{value}',
+      formatter: truncateNumber,
       style: {
         'font-size': '12px',
         'font-weight': 'lighter',
@@ -64,6 +83,8 @@ export const highChartsConfigYAxis = [
       x: 0,
       y: -3,
       align: 'right',
+      format: '{value}',
+      formatter: truncateNumber,
       style: {
         'font-size': '12px',
         'font-weight': 'lighter',
