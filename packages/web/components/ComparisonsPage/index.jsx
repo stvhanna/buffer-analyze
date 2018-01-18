@@ -123,8 +123,7 @@ ComparisonsPage.defaultProps = {
 
 function mapStateToProps({ multiProfileSelector }) {
   return {
-    profilesSelected: multiProfileSelector.selectedProfiles.length > 0
-      && !multiProfileSelector.isDropdownOpen,
+    profilesSelected: multiProfileSelector.selectedProfiles.length > 0,
   };
 }
 
