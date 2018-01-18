@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Text from '@bufferapp/components/Text';
-import imageBase64 from './image';
 
 const Container = styled.div`
   width: 400px;
@@ -14,7 +13,7 @@ const Container = styled.div`
 const Image = styled.div`
   width: 400px;
   height: 160px;
-  background: url(${imageBase64});
+  background: url(https://buffer-analyze.s3.amazonaws.com/images/empty.png);
   background-size: 100% 100%;
   margin: 0 0 0.1rem;
 `;

@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Text from '@bufferapp/components/Text';
-import imageBase64 from './image';
 
 const Container = styled.div`
   display: flex;
@@ -23,7 +22,7 @@ const Message = styled.div`
 const Image = styled.div`
   width: 240px;
   height: 100px;
-  background: url(${imageBase64});
+  background: url(https://buffer-analyze.s3.amazonaws.com/images/empty.png);
   background-size: 100% 100%;
   margin: 0 auto 0.1rem;
 `;
