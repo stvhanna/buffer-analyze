@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { PureComponent } from 'react';
 import ReactHighcharts from 'react-highcharts';
 import moment from 'moment';
 
@@ -19,14 +19,13 @@ function fadeColor(color, opacity) {
     color;
 }
 
-function getTickInterval(dailyMetric) {
-  const oneDayMS = 24 * 3600 * 1000;
-  const sevenDaysMS = 7 * oneDayMS;
-  const isMoreThenSevenDays = dailyMetric[0].length > 7;
+function getMinorTickInterval(dailyMetric) {
+  const oneDay = 24 * 3600 * 1000;
+  const moreThanAMonth = dailyMetric.length > 31;
 
-  return isMoreThenSevenDays ?
-    sevenDaysMS :
-    oneDayMS;
+  return moreThanAMonth ?
+    null :
+    oneDay;
 }
 
 function prepareSeries(
@@ -48,8 +47,8 @@ function prepareSeries(
       }
     }
 
-    const dayStartTimestamp = moment.tz(Number(day.day), timezone).startOf('day').valueOf();
-    const previousPeriodDay = moment.tz(Number(day.previousPeriodDay), timezone).startOf('day').valueOf();
+    const dayStartTimestamp = moment.utc(Number(day.day)).startOf('day').valueOf();
+    const previousPeriodDay = moment.utc(Number(day.previousPeriodDay)).startOf('day').valueOf();
 
     return {
       x: dayStartTimestamp,
@@ -60,7 +59,7 @@ function prepareSeries(
         timezone,
         visualizePreviousPeriod,
       }),
-      pointPlacement: getTickInterval(dailyMetric),
+      pointPlacement: getMinorTickInterval(dailyMetric),
     };
   });
 
@@ -80,13 +79,61 @@ function prepareSeries(
     data: seriesData,
   });
 
+  if (dailyMetric[0].metric.label === 'Posts' || dailyMetric[0].metric.label === 'Tweets') {
+    seriesConfig.type = 'column';
+    seriesConfig.pointPadding = 0.1;
+    seriesConfig.pointPlacement = 0.4;
+    seriesConfig.colors = [{
+      linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
+      stops: [
+        [0, fadeColor(color, 0.6)],
+        [1, fadeColor(color, 0)],
+      ],
+    }];
+    seriesConfig.borderColor = color;
+    seriesConfig.states = {
+      hover: {
+        color: {
+          linearGradient: { x1: 0, y1: 0 },
+          stops: [
+            [0, color],
+          ],
+        },
+        brightness: 0.0,
+      },
+    };
+  }
+
+
   return seriesConfig;
+}
+
+function setChartLimits({ series, yAxis }) {
+  let values = [];
+  const reducedSeries = series.map(s => s.data.map(point => point.y));
+  reducedSeries.forEach((s) => { values = values.concat(s); });
+  let min = Math.min.apply(null, values);
+  let max = Math.max.apply(null, values);
+  const maxPaddingPercentage = 5.25;
+  const minPaddingPercentage = 0.1;
+  let topPaddingPercentage = (maxPaddingPercentage - Math.log10(max));
+  if (topPaddingPercentage < minPaddingPercentage) {
+    topPaddingPercentage = minPaddingPercentage;
+  }
+  let bottomPaddingPercentage = (maxPaddingPercentage - Math.log10(min));
+  if (bottomPaddingPercentage < minPaddingPercentage) {
+    bottomPaddingPercentage = minPaddingPercentage;
+  }
+  min -= (min / 100) * bottomPaddingPercentage;
+  max += (max / 100) * topPaddingPercentage;
+  yAxis[0].floor = min;
+  yAxis[0].ceiling = max;
 }
 
 function prepareChartOptions(dailyMetric, timezone, visualizePreviousPeriod, profileService) {
   const config = Object.assign({}, chartConfig);
 
-  config.xAxis.minorTickInterval = getTickInterval(dailyMetric);
+  config.xAxis.minorTickInterval = getMinorTickInterval(dailyMetric);
   config.series = [
     prepareSeries(dailyMetric, timezone, visualizePreviousPeriod, profileService),
     (visualizePreviousPeriod ? prepareSeries(
@@ -97,6 +144,7 @@ function prepareChartOptions(dailyMetric, timezone, visualizePreviousPeriod, pro
       true,
     ) : null),
   ].filter(e => e !== null);
+  setChartLimits(config);
   return config;
 }
 
@@ -108,10 +156,10 @@ function filterDailyDataMetrics(dailyData, metricLabel) {
   }));
 }
 
-
-const Chart =
-  ({ daily, totalPeriodDaily, selectedMetricLabel,
-    dailyMode, timezone, visualizePreviousPeriod, profileService }) => {
+class Chart extends PureComponent {
+  render() {
+    const { daily, totalPeriodDaily, selectedMetricLabel,
+      dailyMode, timezone, visualizePreviousPeriod, profileService } = this.props;
     const dailyData = dailyMode === 1 ? totalPeriodDaily : daily;
     const filteredDailyData = filterDailyDataMetrics(dailyData, selectedMetricLabel);
     const charOptions = prepareChartOptions(
@@ -120,15 +168,9 @@ const Chart =
       visualizePreviousPeriod,
       profileService,
     );
-    ReactHighcharts.Highcharts.setOptions(
-      {
-        global: {
-          getTimezoneOffset: timestamp => -moment.tz(timestamp, timezone).utcOffset(),
-        },
-      },
-    );
     return (<ReactHighcharts config={charOptions} />);
-  };
+  }
+}
 
 Chart.propTypes = {
   totalPeriodDaily: PropTypes.arrayOf(PropTypes.shape({

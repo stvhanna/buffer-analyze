@@ -49,16 +49,16 @@ exports[`Snapshots AudienceChart [TESTED] Should render 1`] = `
               }
             }
           >
-            Engagement & Audience
+            Engagement and audience
           </span>
         </h2>
       </header>
       <div
-        className="sc-dnqmqq gOqivX"
+        className="sc-gZMcBi hDWkZz"
       >
         <div>
           <div
-            className="sc-htoDjs juvQWM"
+            className="sc-iwsKbI cslhIm"
           >
             <div
               className="dropdown dropdownContainer"
@@ -563,12 +563,12 @@ exports[`Snapshots AudienceChart [TESTED] should render a "no data" state 1`] = 
               }
             }
           >
-            Engagement & Audience
+            Engagement and audience
           </span>
         </h2>
       </header>
       <div
-        className="sc-dnqmqq gOqivX"
+        className="sc-gZMcBi hDWkZz"
       >
         <div
           style={
@@ -686,12 +686,12 @@ exports[`Snapshots AudienceChart [TESTED] should render a loading state 1`] = `
               }
             }
           >
-            Engagement & Audience
+            Engagement and audience
           </span>
         </h2>
       </header>
       <div
-        className="sc-dnqmqq gOqivX"
+        className="sc-gZMcBi hDWkZz"
       >
         <div
           style={
@@ -712,7 +712,7 @@ exports[`Snapshots AudienceChart [TESTED] should render a loading state 1`] = `
           <div
             style={
               Object {
-                "background": "white",
+                "background": "none",
                 "borderRadius": "2px",
                 "flex": 1,
                 "flexDirection": "row",

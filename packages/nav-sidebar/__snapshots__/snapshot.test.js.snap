@@ -1,0 +1,988 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshots Item active state 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "height": "100%",
+        "width": "260px",
+      }
+    }
+  >
+    <a
+      href="/"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      style={
+        Object {
+          "color": "#168eea",
+          "fontFamily": "\\"Roboto\\", sans-serif",
+          "outline": "none",
+          "padding": "0",
+          "textDecoration": "none",
+        }
+      }
+      target="_self"
+    >
+      <span
+        style={
+          Object {
+            "backgroundColor": "rgba(22, 142, 234, .1)",
+            "borderRadius": "4px",
+            "display": "block",
+            "margin": "0 0.5rem",
+            "padding": "0.75rem 0.5rem",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 700,
+            }
+          }
+        >
+          Dashboard
+        </span>
+      </span>
+    </a>
+  </div>
+</span>
+`;
+
+exports[`Snapshots Item normal state 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "height": "100%",
+        "width": "260px",
+      }
+    }
+  >
+    <a
+      href="/"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      style={
+        Object {
+          "color": "#168eea",
+          "fontFamily": "\\"Roboto\\", sans-serif",
+          "outline": "none",
+          "padding": "0",
+          "textDecoration": "none",
+        }
+      }
+      target="_self"
+    >
+      <span
+        style={
+          Object {
+            "borderRadius": "4px",
+            "display": "block",
+            "margin": "0 0.5rem",
+            "padding": "0.75rem 0.5rem",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Dashboard
+        </span>
+      </span>
+    </a>
+  </div>
+</span>
+`;
+
+exports[`Snapshots NavSidebar if there are no profiles it should not show the Insights section 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "height": "100%",
+        "width": "260px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "background": "#fff",
+          "borderRight": "1px solid #e6ebef",
+          "boxSizing": "border-box",
+          "display": "flex",
+          "flexDirection": "column",
+          "maxHeight": "100vh",
+          "minHeight": "100vh",
+          "padding": "0.75rem 0",
+          "width": "200px",
+        }
+      }
+    >
+      <a
+        href="/"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "color": "#168eea",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "outline": "none",
+            "padding": "0",
+            "textDecoration": "none",
+          }
+        }
+        target="_self"
+      >
+        <span
+          style={
+            Object {
+              "backgroundColor": "rgba(22, 142, 234, .1)",
+              "borderRadius": "4px",
+              "display": "block",
+              "margin": "0 0.5rem",
+              "padding": "0.75rem 0.5rem",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            Dashboard
+          </span>
+        </span>
+      </a>
+      <hr
+        style={
+          Object {
+            "background": "#e6ebef",
+            "border": "none",
+            "boxSizing": "border-box",
+            "height": "0.063rem",
+            "marginBottom": "1rem",
+            "marginTop": "0.75rem",
+            "width": "100%",
+          }
+        }
+      />
+      <span
+        style={
+          Object {
+            "display": "block",
+            "letterSpacing": ".075rem",
+            "margin": "0 1rem 0.75rem",
+            "padding": "0",
+            "textTransform": "uppercase",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "color": "#8A9097",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
+              "fontWeight": 500,
+            }
+          }
+        >
+          Tools
+        </span>
+      </span>
+      <a
+        href="/comparisons"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "color": "#168eea",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "outline": "none",
+            "padding": "0",
+            "textDecoration": "none",
+          }
+        }
+        target="_self"
+      >
+        <span
+          style={
+            Object {
+              "borderRadius": "4px",
+              "display": "block",
+              "margin": "0 0.5rem",
+              "padding": "0.75rem 0.5rem",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Comparisons
+          </span>
+        </span>
+      </a>
+      <a
+        href="/reports"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "color": "#168eea",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "outline": "none",
+            "padding": "0",
+            "textDecoration": "none",
+          }
+        }
+        target="_self"
+      >
+        <span
+          style={
+            Object {
+              "borderRadius": "4px",
+              "display": "block",
+              "margin": "0 0.5rem",
+              "padding": "0.75rem 0.5rem",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Reports
+          </span>
+        </span>
+      </a>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots NavSidebar should show nav sidebar with Dashboard as active link 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "height": "100%",
+        "width": "260px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "background": "#fff",
+          "borderRight": "1px solid #e6ebef",
+          "boxSizing": "border-box",
+          "display": "flex",
+          "flexDirection": "column",
+          "maxHeight": "100vh",
+          "minHeight": "100vh",
+          "padding": "0.75rem 0",
+          "width": "200px",
+        }
+      }
+    >
+      <a
+        href="/"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "color": "#168eea",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "outline": "none",
+            "padding": "0",
+            "textDecoration": "none",
+          }
+        }
+        target="_self"
+      >
+        <span
+          style={
+            Object {
+              "backgroundColor": "rgba(22, 142, 234, .1)",
+              "borderRadius": "4px",
+              "display": "block",
+              "margin": "0 0.5rem",
+              "padding": "0.75rem 0.5rem",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            Dashboard
+          </span>
+        </span>
+      </a>
+      <hr
+        style={
+          Object {
+            "background": "#e6ebef",
+            "border": "none",
+            "boxSizing": "border-box",
+            "height": "0.063rem",
+            "marginBottom": "1rem",
+            "marginTop": "0.75rem",
+            "width": "100%",
+          }
+        }
+      />
+      <div>
+        <span
+          style={
+            Object {
+              "display": "block",
+              "letterSpacing": ".075rem",
+              "margin": "0 1rem 0.75rem",
+              "padding": "0",
+              "textTransform": "uppercase",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#8A9097",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 500,
+              }
+            }
+          >
+            Insights
+          </span>
+        </span>
+        <a
+          href="/insights/facebook/3/overview"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            style={
+              Object {
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0 0.5rem",
+                "padding": "0.75rem 0.5rem",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Facebook
+            </span>
+          </span>
+        </a>
+        <a
+          href="/insights/twitter/1/overview"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            style={
+              Object {
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0 0.5rem",
+                "padding": "0.75rem 0.5rem",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Twitter
+            </span>
+          </span>
+        </a>
+        <a
+          href="/insights/instagram/4/overview"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            style={
+              Object {
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0 0.5rem",
+                "padding": "0.75rem 0.5rem",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Instagram
+            </span>
+          </span>
+        </a>
+        <hr
+          style={
+            Object {
+              "background": "#e6ebef",
+              "border": "none",
+              "boxSizing": "border-box",
+              "height": "0.063rem",
+              "marginBottom": "1rem",
+              "marginTop": "0.75rem",
+              "width": "100%",
+            }
+          }
+        />
+      </div>
+      <span
+        style={
+          Object {
+            "display": "block",
+            "letterSpacing": ".075rem",
+            "margin": "0 1rem 0.75rem",
+            "padding": "0",
+            "textTransform": "uppercase",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "color": "#8A9097",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
+              "fontWeight": 500,
+            }
+          }
+        >
+          Tools
+        </span>
+      </span>
+      <a
+        href="/comparisons"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "color": "#168eea",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "outline": "none",
+            "padding": "0",
+            "textDecoration": "none",
+          }
+        }
+        target="_self"
+      >
+        <span
+          style={
+            Object {
+              "borderRadius": "4px",
+              "display": "block",
+              "margin": "0 0.5rem",
+              "padding": "0.75rem 0.5rem",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Comparisons
+          </span>
+        </span>
+      </a>
+      <a
+        href="/reports"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "color": "#168eea",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "outline": "none",
+            "padding": "0",
+            "textDecoration": "none",
+          }
+        }
+        target="_self"
+      >
+        <span
+          style={
+            Object {
+              "borderRadius": "4px",
+              "display": "block",
+              "margin": "0 0.5rem",
+              "padding": "0.75rem 0.5rem",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Reports
+          </span>
+        </span>
+      </a>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots NavSidebar should show only services for which the user has profiles 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "height": "100%",
+        "width": "260px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "background": "#fff",
+          "borderRight": "1px solid #e6ebef",
+          "boxSizing": "border-box",
+          "display": "flex",
+          "flexDirection": "column",
+          "maxHeight": "100vh",
+          "minHeight": "100vh",
+          "padding": "0.75rem 0",
+          "width": "200px",
+        }
+      }
+    >
+      <a
+        href="/"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "color": "#168eea",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "outline": "none",
+            "padding": "0",
+            "textDecoration": "none",
+          }
+        }
+        target="_self"
+      >
+        <span
+          style={
+            Object {
+              "borderRadius": "4px",
+              "display": "block",
+              "margin": "0 0.5rem",
+              "padding": "0.75rem 0.5rem",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Dashboard
+          </span>
+        </span>
+      </a>
+      <hr
+        style={
+          Object {
+            "background": "#e6ebef",
+            "border": "none",
+            "boxSizing": "border-box",
+            "height": "0.063rem",
+            "marginBottom": "1rem",
+            "marginTop": "0.75rem",
+            "width": "100%",
+          }
+        }
+      />
+      <div>
+        <span
+          style={
+            Object {
+              "display": "block",
+              "letterSpacing": ".075rem",
+              "margin": "0 1rem 0.75rem",
+              "padding": "0",
+              "textTransform": "uppercase",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#8A9097",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 500,
+              }
+            }
+          >
+            Insights
+          </span>
+        </span>
+        <a
+          href="/insights/facebook/3/overview"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            style={
+              Object {
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0 0.5rem",
+                "padding": "0.75rem 0.5rem",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Facebook
+            </span>
+          </span>
+        </a>
+        <a
+          href="/insights/twitter/1/overview"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            style={
+              Object {
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0 0.5rem",
+                "padding": "0.75rem 0.5rem",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Twitter
+            </span>
+          </span>
+        </a>
+        <hr
+          style={
+            Object {
+              "background": "#e6ebef",
+              "border": "none",
+              "boxSizing": "border-box",
+              "height": "0.063rem",
+              "marginBottom": "1rem",
+              "marginTop": "0.75rem",
+              "width": "100%",
+            }
+          }
+        />
+      </div>
+      <span
+        style={
+          Object {
+            "display": "block",
+            "letterSpacing": ".075rem",
+            "margin": "0 1rem 0.75rem",
+            "padding": "0",
+            "textTransform": "uppercase",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "color": "#8A9097",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
+              "fontWeight": 500,
+            }
+          }
+        >
+          Tools
+        </span>
+      </span>
+      <a
+        href="/comparisons"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "color": "#168eea",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "outline": "none",
+            "padding": "0",
+            "textDecoration": "none",
+          }
+        }
+        target="_self"
+      >
+        <span
+          style={
+            Object {
+              "borderRadius": "4px",
+              "display": "block",
+              "margin": "0 0.5rem",
+              "padding": "0.75rem 0.5rem",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Comparisons
+          </span>
+        </span>
+      </a>
+      <a
+        href="/reports"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "color": "#168eea",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "outline": "none",
+            "padding": "0",
+            "textDecoration": "none",
+          }
+        }
+        target="_self"
+      >
+        <span
+          style={
+            Object {
+              "borderRadius": "4px",
+              "display": "block",
+              "margin": "0 0.5rem",
+              "padding": "0.75rem 0.5rem",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Reports
+          </span>
+        </span>
+      </a>
+    </div>
+  </div>
+</span>
+`;

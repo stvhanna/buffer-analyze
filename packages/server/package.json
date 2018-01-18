@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/server-analyze",
-  "version": "0.28.0",
+  "version": "0.32.0",
   "description": "",
   "scripts": {
     "start": "micro",
@@ -22,7 +22,7 @@
 		"@bufferapp/buffermetrics": "^0.5.0-beta7",
     "@bufferapp/logger": "0.7.0",
     "@bufferapp/micro-rpc": "0.1.7",
-    "@bufferapp/session-manager": "0.5.36",
+    "@bufferapp/session-manager": "0.5.42",
     "@bufferapp/shutdown-helper": "0.2.0",
     "aws-sdk": "2.4.7",
     "body-parser": "^1.18.2",

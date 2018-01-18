@@ -22,7 +22,7 @@ const title = {
 
 export const Title = () =>
   <h2 style={title}>
-    <Text weight="bold" size="large">Hourly Engagements</Text>
+    <Text weight="bold" size="large">Hourly engagements</Text>
   </h2>
 ;
 
@@ -32,7 +32,7 @@ const gridContainer = {
   position: 'relative',
 };
 
-export class ChartContent extends React.Component {
+export class ChartContent extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
@@ -105,7 +105,12 @@ const HourlyChart = props =>
       {!props.loading &&
         <div>
           <Header {...props} />
-          <ChartContent {...props} />
+          <ChartContent
+            postsCount={props.postsCount}
+            timezone={props.timezone}
+            selectedMetric={props.selectedMetric}
+            secondaryMetric={props.secondaryMetric}
+          />
         </div>
       }
     </div>
@@ -113,10 +118,23 @@ const HourlyChart = props =>
 
 HourlyChart.defaultProps = {
   loading: false,
+  secondaryMetric: null,
+  postsCount: [],
+  timezone: 'America/Los_Angeles',
 };
 
 HourlyChart.propTypes = {
   loading: PropTypes.bool,
+  selectedMetric: PropTypes.shape({
+    label: PropTypes.string,
+    hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
+  }).isRequired,
+  secondaryMetric: PropTypes.shape({
+    label: PropTypes.string,
+    hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
+  }),
+  postsCount: PropTypes.arrayOf(PropTypes.number),
+  timezone: PropTypes.string,
 };
 
 export default HourlyChart;

@@ -7,7 +7,7 @@ import TruncatedNumber from '../../../TruncatedNumber';
 const headingColor = '#323b43';
 
 const gridSummaryItemValue = {
-  fontSize: '2.5rem',
+  fontSize: '2rem',
   fontWeight: 600,
   color: headingColor,
 };

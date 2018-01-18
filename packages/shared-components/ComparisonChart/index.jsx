@@ -19,14 +19,35 @@ function fadeColor(color, opacity) {
     color;
 }
 
-function getTickInterval(dailyMetric) {
-  const oneDayMS = 24 * 3600 * 1000;
-  const sevenDaysMS = 7 * oneDayMS;
-  const isMoreThenSevenDays = dailyMetric[0].length > 7;
+function getMinorTickInterval(dailyMetric) {
+  const oneDay = 24 * 3600 * 1000;
+  const moreThanAMonth = dailyMetric.length > 31;
 
-  return isMoreThenSevenDays ?
-    sevenDaysMS :
-    oneDayMS;
+  return moreThanAMonth ?
+    null :
+    oneDay;
+}
+
+function setChartLimits({ series, yAxis }) {
+  let values = [];
+  const reducedSeries = series.map(s => s.data.map(point => point.y));
+  reducedSeries.forEach((s) => { values = values.concat(s); });
+  let min = Math.min.apply(null, values);
+  let max = Math.max.apply(null, values);
+  const maxPaddingPercentage = 5.25;
+  const minPaddingPercentage = 0.1;
+  let topPaddingPercentage = (maxPaddingPercentage - Math.log10(max));
+  if (topPaddingPercentage < minPaddingPercentage) {
+    topPaddingPercentage = minPaddingPercentage;
+  }
+  let bottomPaddingPercentage = (maxPaddingPercentage - Math.log10(min));
+  if (bottomPaddingPercentage < minPaddingPercentage) {
+    bottomPaddingPercentage = minPaddingPercentage;
+  }
+  min -= (min / 100) * bottomPaddingPercentage;
+  max += (max / 100) * topPaddingPercentage;
+  yAxis[0].floor = min;
+  yAxis[0].ceiling = max;
 }
 
 function prepareSeries(
@@ -42,7 +63,7 @@ function prepareSeries(
       color = day.metric.color;
     }
 
-    const dayStartTimestamp = moment.tz(Number(day.day), timezone).startOf('day').valueOf();
+    const dayStartTimestamp = moment.utc(Number(day.day)).startOf('day').valueOf();
 
     return {
       x: dayStartTimestamp,
@@ -51,7 +72,7 @@ function prepareSeries(
         profileService,
         timezone,
       }),
-      pointPlacement: getTickInterval(dailyMetric),
+      pointPlacement: getMinorTickInterval(dailyMetric),
       // set profile specific timezone
       getTimezoneOffset: timestamp => -moment.tz(timestamp, timezone).utcOffset(),
     };
@@ -82,22 +103,12 @@ function prepareChartOptions(profilesMetricData) {
     prepareSeries(profileData.dailyData, profileData.timezone, profileData.service),
   );
   config.series = seriesData.filter(e => e !== null);
+  setChartLimits(config);
   return config;
 }
 
 const ComparisonChart = ({ profilesMetricData }) => {
   const charOptions = prepareChartOptions(profilesMetricData);
-  // TODO: This won't work for multiple profiles.
-  // We should move do timezone transformation in the backend
-  // and get the data based on UTC from backend
-  const timezone = profilesMetricData[0].timezone;
-  ReactHighcharts.Highcharts.setOptions(
-    {
-      global: {
-        getTimezoneOffset: timestamp => -moment.tz(timestamp, timezone).utcOffset(),
-      },
-    },
-  );
   return (<ReactHighcharts config={charOptions} />);
 };
 

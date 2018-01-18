@@ -89,7 +89,7 @@ const seriesConfig = {
 
 const mouseOut = chart => chart.getChart().tooltip.hide();
 
-const PostCountByHour = ({ posts, timezone, hourlyChart }) => {
+const PostCountByHour = ({ posts, hourlyChart }) => {
   const hour = moment().startOf('day');
   const postsByHour = posts.map((postCount) => {
     const post = {
@@ -122,23 +122,16 @@ const PostCountByHour = ({ posts, timezone, hourlyChart }) => {
     }],
   };
 
-  ReactHighcharts.Highcharts.setOptions({
-    global: {
-      timezoneOffset: -moment.tz(timezone).utcOffset(),
-    },
-  });
   return <ReactHighcharts isPureConfig config={config} />;
 };
 
 PostCountByHour.defaultProps = {
   posts: [],
-  timezone: 'America/Los_Angeles',
   hourlyChart: null,
 };
 
 PostCountByHour.propTypes = {
   posts: PropTypes.arrayOf(PropTypes.number),
-  timezone: PropTypes.string,
   hourlyChart: PropTypes.shape({
     getChart: PropTypes.func,
   }),

@@ -1,7 +1,24 @@
 import React from 'react';
 import reactDOM from 'react-dom/server';
+import numeral from 'numeral';
 
 import ChartTooltip from '../ChartTooltip';
+
+export function truncateNumber() {
+  let number = parseFloat(this.value);
+
+  if (number > 1000000) {
+    number = numeral(number).format('0.[00]a');
+  } else if (number >= 10000) {
+    number = numeral(number).format('0.0a');
+  } else if (number < 1 && number > 0) {
+    number = numeral(number).format('0,0.0');
+  } else {
+    number = numeral(number).format('0,0');
+  }
+
+  return number;
+}
 
 export const highChartsConfigXAxis = {
   gridLineColor: '#F3F5F7',
@@ -43,36 +60,14 @@ export const highChartsConfigYAxis = [
       x: 0,
       y: -3,
       align: 'left',
+      format: '{value}',
+      formatter: truncateNumber,
       style: {
         'font-size': '12px',
         'font-weight': 'lighter',
         'font-family': 'Roboto, sans serif',
       },
     },
-  }, {
-    title: { text: null },
-    gridLineWidth: 1,
-    max: null,
-    min: 0,
-    softMin: 0,
-    minRange: 8,
-    maxPadding: 0.1,
-    minPadding: 0.1,
-    allowDecimals: false,
-    gridLineColor: '#F3F5F7',
-    lineColor: '#E6EBEF',
-    showLastLabel: false,
-    labels: {
-      x: 0,
-      y: -3,
-      align: 'right',
-      style: {
-        'font-size': '12px',
-        'font-weight': 'lighter',
-        'font-family': 'Roboto, sans serif',
-      },
-    },
-    opposite: true,
   },
 ];
 
@@ -104,6 +99,7 @@ export default {
   plotOptions: {
     series: {
       marker: {
+        enabled: false,
         lineWidth: 2,
         radius: 3,
         symbol: 'circle',
@@ -113,6 +109,9 @@ export default {
           radiusPlus: 1.5,
         },
       },
+    },
+    column: {
+      colorByPoint: true,
     },
   },
   tooltip: {

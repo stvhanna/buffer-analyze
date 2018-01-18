@@ -2,13 +2,13 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
 import ComparisonFooter from './index';
+import profiles from '../mocks/profiles';
 
 const profileTotals = [
   {
     currentPeriodTotal: 400,
     currentPeriodDiff: 20,
-    profileId: '1234abcd',
-    username: 'Buffer',
+    profileId: '1',
     metric: {
       color: '#fda3f3',
       label: 'Fans',
@@ -17,8 +17,7 @@ const profileTotals = [
   {
     currentPeriodTotal: 700,
     currentPeriodDiff: -10,
-    profileId: '5678abcd',
-    username: 'Buffer',
+    profileId: '2',
     metric: {
       color: '#fda444',
       label: 'Followers',
@@ -27,8 +26,7 @@ const profileTotals = [
   {
     currentPeriodTotal: 700,
     currentPeriodDiff: -10,
-    profileId: '5678ioio',
-    username: 'LifeIsAwesome',
+    profileId: '3',
     service: 'instagram',
     metric: {
       color: '#fda444',
@@ -47,17 +45,7 @@ storiesOf('ComparisonFooter')
     >
       <ComparisonFooter
         profileTotals={[profileTotals[2]]}
-      />
-    </div>
-  ))
-  .add('should render coming soon if the profile is instagram and metric is Impressions', () => (
-    <div
-      style={{
-        width: '750px',
-      }}
-    >
-      <ComparisonFooter
-        profileTotals={[profileTotals[0]]}
+        profiles={profiles}
       />
     </div>
   ))
@@ -69,6 +57,7 @@ storiesOf('ComparisonFooter')
     >
       <ComparisonFooter
         profileTotals={profileTotals}
+        profiles={profiles}
       />
     </div>
   ));

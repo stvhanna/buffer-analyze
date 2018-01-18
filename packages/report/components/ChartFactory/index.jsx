@@ -10,7 +10,7 @@ import { ChartContent as HourlyCharts, Title as HourlyTitle } from '@bufferapp/h
 import { Table as TopPostsTable, Title as TopPostsTitle } from '@bufferapp/top-posts-table';
 import { Title as ContextualTitle } from '@bufferapp/contextual-compare';
 import { Chart as CompareChart, Title as CompareTitle } from '@bufferapp/compare-chart';
-import { CommonChart } from '@bufferapp/analyze-shared-components';
+import { CommonChart, ProfileBadge } from '@bufferapp/analyze-shared-components';
 import styled from 'styled-components';
 
 import ChartEditButtons from '../ChartEditButtons';
@@ -55,6 +55,7 @@ const Separator = styled.section`
 
 const ProfileString = styled.span`
   color: #717A86;
+  margin-right: .75rem;
 `;
 
 const Profile = styled.span`
@@ -62,10 +63,23 @@ const Profile = styled.span`
   position: relative;
 `;
 
+const Legend = styled.span`
+  display: flex;
+  align-items: center;
+`;
+
 const ProfileLegend = ({ profile }) =>
   <Text weight="bold">
-    <ProfileString>Showing for accounts</ProfileString>
-    <Profile> {profile.username}</Profile>
+    <Legend>
+      <ProfileString>Showing for accounts</ProfileString>
+      <ProfileBadge
+        avatarUrl={profile.avatarUrl}
+        service={profile.service}
+        avatarSize={22}
+        socialIconSize={13}
+      />
+      <Profile>{profile.username}</Profile>
+    </Legend>
   </Text>;
 
 ProfileLegend.propTypes = {

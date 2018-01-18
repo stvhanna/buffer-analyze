@@ -85,6 +85,34 @@ storiesOf('ContextualCompare')
       />
     </div>
   ))
+  .add('[TESTED] Should render Posts metrics as columns in Custom mode', () => (
+    <div
+      style={{
+        width: '750px',
+      }}
+    >
+      <ContextualCompare
+        selectedPreset={0}
+        selectedMetrics={[mockMetrics[1], mockMetrics[2]]}
+        metrics={mockMetrics}
+        data={mockDailyData}
+        mode={1}
+        profileService="facebook"
+        timezone="Etc/UTC"
+        selectMode={actionLogger('selectMode')}
+        isPrimaryMetricDropdownOpen={false}
+        isSecondaryMetricDropdownOpen={false}
+        selectPrimaryMetric={actionLogger('selectFirsPrimaryMetric')}
+        selectSecondaryMetric={actionLogger('selectSecondaryMetric')}
+        openPrimaryMetricDropdown={actionLogger('openPrimaryMetricDropdown')}
+        openSecondaryMetricDropdown={actionLogger('openSecondaryMetricDropdown')}
+        closePrimaryMetricDropdown={actionLogger('closePrimaryMetricDropdown')}
+        closeSecondaryMetricDropdown={actionLogger('closeSecondaryMetricDropdown')}
+        selectPreset={actionLogger('selectPreset')}
+        presets={mockPresets}
+      />
+    </div>
+  ))
   .add('[TESTED] should render a loading state', () => (
     <div
       style={{

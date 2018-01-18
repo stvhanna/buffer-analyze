@@ -8,6 +8,11 @@ indent_size = 2
 indent_style = space
 indent_size = 2
 
+# Tab indentation for JSON files
+[*.json]
+indent_style = space
+indent_size = 2
+
 # Tab indentation for JSX files
 [*.jsx]
 indent_style = space

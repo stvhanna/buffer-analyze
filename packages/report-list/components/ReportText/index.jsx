@@ -7,4 +7,5 @@ export default styled.span`
   justify-content: space-between;
   align-items: center;
   position: relative;
+  cursor: pointer;
 `;

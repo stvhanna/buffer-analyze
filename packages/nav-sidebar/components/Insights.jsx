@@ -8,15 +8,8 @@ import {
 import Label from './Label';
 import Item from './Item';
 
-const getFirstProfileForService = (service, profiles) => (
-  profiles.find(profile => profile.service === service)
-);
-
-const Insights = ({ profiles, ...props }) => {
+const Insights = ({ facebookProfile, twitterProfile, instagramProfile, ...props }) => {
   const tabId = props.tabId;
-  const facebookProfile = getFirstProfileForService('facebook', profiles);
-  const twitterProfile = getFirstProfileForService('twitter', profiles);
-  const instagramProfile = getFirstProfileForService('instagram', profiles);
   const shouldShowInsights = facebookProfile || twitterProfile || instagramProfile;
   if (!shouldShowInsights) {
     return null;
@@ -32,15 +25,25 @@ const Insights = ({ profiles, ...props }) => {
   );
 };
 
+
 Insights.propTypes = {
-  profiles: PropTypes.arrayOf(PropTypes.shape({
+  instagramProfile: PropTypes.shape({
     service: PropTypes.String,
-  })).isRequired,
+  }),
+  twitterProfile: PropTypes.shape({
+    service: PropTypes.String,
+  }),
+  facebookProfile: PropTypes.shape({
+    service: PropTypes.String,
+  }),
   tabId: PropTypes.string.isRequired,
 };
 
 Insights.defaultProps = {
   tabId: 'overview',
+  instagramProfile: null,
+  twitterProfile: null,
+  facebookProfile: null,
 };
 
 export default Insights;

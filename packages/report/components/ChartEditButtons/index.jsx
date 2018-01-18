@@ -26,6 +26,7 @@ const Box = styled.span`
   align-items: center;
   justify-content: center;
   border-radius: 3px;
+  margin: 0 0 0 .25rem;
 `;
 
 const ChartEditButtons = ({ first, last, moveUp, moveDown, deleteChart, id }) => (

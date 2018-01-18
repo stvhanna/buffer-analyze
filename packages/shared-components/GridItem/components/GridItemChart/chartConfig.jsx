@@ -8,7 +8,7 @@ export default {
   chart: {
     type: 'column',
     height: 100,
-    spacing: [20, 12, 1, 12],
+    spacing: [20, 0, 1, 0],
   },
   xAxis: {
     title: { text: null },

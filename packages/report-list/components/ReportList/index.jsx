@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Text from '@bufferapp/components/Text';
 
+import {
+  ChartStateLoading as Loading,
+} from '@bufferapp/analyze-shared-components';
 import Report from '../Report';
 
 const List = styled.ol`
@@ -13,7 +15,7 @@ const List = styled.ol`
 
 const ReportList = ({ loading, reports, selectReport, removeReport, small }) =>
   (loading ?
-    <Text>Loading...</Text> :
+    <Loading active noBorder transparent /> :
     <List>
       {reports.map(report =>
         <Report

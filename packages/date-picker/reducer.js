@@ -16,16 +16,24 @@ export const actionTypes = keyWrapper('DATE_PICKER', {
   CLOSE_CALENDAR: 'CLOSE_CALENDAR',
 });
 
+function calculateDateRange(range) {
+  // We need to enfoce the start of the day to make sure
+  // that the range is not effected by the time of the day
+  const startDate = moment().startOf('day').subtract(range, 'days').unix();
+  const endDate = moment().startOf('day').subtract(1, 'days').unix();
+  return { startDate, endDate };
+}
+
 const initialState = {
   loading: true,
-  startDate: moment().subtract('7', 'days').unix(),
-  endDate: moment().subtract('1', 'days').unix(),
   open: false,
   calendarOpen: false,
   minDate: null,
   maxDate: moment().valueOf(),
   month: moment().startOf('month').unix(),
+  ...calculateDateRange(7),
 };
+
 
 export default (state = initialState, action) => {
   switch (action.type) {
@@ -128,6 +136,10 @@ export const actions = {
     type: actionTypes.SET_DATE_RANGE,
     startDate,
     endDate,
+  }),
+  setDatePreset: range => ({
+    type: actionTypes.SET_DATE_RANGE,
+    ...calculateDateRange(range),
   }),
   setMonth: date => ({
     type: actionTypes.SET_MONTH,
