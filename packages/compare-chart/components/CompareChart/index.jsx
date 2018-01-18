@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 import {
   ChartStateNoData as NoData,
@@ -16,6 +17,11 @@ import Chart from '../Chart';
 import Title from '../Title';
 import Footer from '../Footer';
 import PeriodToggle from '../PeriodToggle';
+
+const Container = styled.div`
+  position: relative;
+  padding: 1.5rem;
+`;
 
 function getStartDate(dailyData) {
   return dailyData.length ? dailyData[0].day / 1000 : null;
@@ -47,9 +53,17 @@ const CompareChart = ({
   let footer = null;
   const dailyData = dailyMode === 1 ? totalPeriodDaily : daily;
   if (loading) {
-    content = <Loading active noBorder />;
+    content = (
+      <Container>
+        <Loading active noBorder />
+      </Container>
+    );
   } else if (dailyData.length === 0) {
-    content = <NoData />;
+    content = (
+      <Container>
+        <NoData />
+      </Container>
+    );
   } else {
     content = (
       <div id="js-dom-to-png-compare">

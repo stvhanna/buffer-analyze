@@ -10,7 +10,8 @@ import AudienceComparisonChart from '@bufferapp/audience-comparison-chart';
 import ReachComparisonChart from '@bufferapp/reach-comparison-chart';
 import LikesComparisonChart from '@bufferapp/likes-comparison-chart';
 import EngagementComparisonChart from '@bufferapp/engagement-comparison-chart';
-import CommentsComparisonChart from "@bufferapp/comments-comparison-chart";
+import CommentsComparisonChart from '@bufferapp/comments-comparison-chart';
+import { EmptyState } from '@bufferapp/analyze-shared-components';
 
 const pageStyle = {
   display: 'flex',
@@ -61,7 +62,15 @@ const toolbarDatePicker = {
   marginLeft: '0.5rem',
 };
 
-const ComparisonsPage = ({ location }) => (
+const centeredContainer = {
+  display: 'flex',
+  width: '100%',
+  height: '90%',
+  justifyContent: 'center',
+  alignItems: 'center',
+};
+
+const ComparisonsPage = ({ location, profilesSelected }) => (
   <div style={pageStyle}>
     <NavSidebar route={location.pathname} />
     <ProfileLoader>
@@ -78,13 +87,23 @@ const ComparisonsPage = ({ location }) => (
           </div>
         </div>
         <div style={comparisonsContainer}>
-          <div style={comparisonsMaxWidth}>
-            <AudienceComparisonChart />
-            <ReachComparisonChart />
-            <LikesComparisonChart />
-            <EngagementComparisonChart />
-            <CommentsComparisonChart />
-          </div>
+          {
+            profilesSelected ?
+              <div style={comparisonsMaxWidth}>
+                <AudienceComparisonChart />
+                <ReachComparisonChart />
+                <LikesComparisonChart />
+                <EngagementComparisonChart />
+                <CommentsComparisonChart />
+              </div>
+              :
+              <div style={centeredContainer}>
+                <EmptyState
+                  header="No profiles are currently selected"
+                  description="Please choose two or more profiles from the dropdown"
+                />
+              </div>
+          }
         </div>
       </div>
     </ProfileLoader>
@@ -95,6 +114,17 @@ ComparisonsPage.propTypes = {
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired,
   }).isRequired,
+  profilesSelected: PropTypes.bool,
 };
 
-export default connect()(ComparisonsPage);
+ComparisonsPage.defaultProps = {
+  profilesSelected: false,
+};
+
+function mapStateToProps({ multiProfileSelector }) {
+  return {
+    profilesSelected: multiProfileSelector.selectedProfiles.length > 0,
+  };
+}
+
+export default connect(mapStateToProps)(ComparisonsPage);
