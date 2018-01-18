@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-
 import {
   ChartStateLoading as Loading,
+  EmptyState,
 } from '@bufferapp/analyze-shared-components';
 import Report from '../Report';
 
@@ -13,20 +13,37 @@ const List = styled.ol`
   width: 100%;
 `;
 
+const Centered = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+`;
+
 const ReportList = ({ loading, reports, selectReport, removeReport, small }) =>
   (loading ?
-    <Loading active noBorder transparent /> :
-    <List>
-      {reports.map(report =>
-        <Report
-          key={report._id}
-          {...report}
-          small={small}
-          selectReport={selectReport}
-          removeReport={removeReport}
-        />,
-      )}
-    </List>);
+    <Centered>
+      <Loading active noBorder transparent />
+    </Centered> :
+    reports.length > 0 ?
+      <List>
+        {reports.map(report =>
+          <Report
+            key={report._id}
+            {...report}
+            small={small}
+            selectReport={selectReport}
+            removeReport={removeReport}
+          />,
+        )}
+      </List> :
+      <Centered>
+        <EmptyState
+          header="There are currently no reports"
+        />
+      </Centered>
+  );
 
 ReportList.defaultProps = {
   reports: [],

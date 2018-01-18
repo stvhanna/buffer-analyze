@@ -23,7 +23,10 @@ const Container = styled.div`
 const Content = styled.div`
   max-width: 65rem;
   width: 100%;
-  margin: 2.8rem auto;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 2.8rem 0;
+  box-sizing: border-box;
 `;
 
 const ReportsPage = ({ location }) => (

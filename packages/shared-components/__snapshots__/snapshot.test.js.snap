@@ -902,7 +902,7 @@ exports[`Snapshots ComparisonChartTooltip should render the tooltip 1`] = `
     }
   >
     <div
-      className="sc-iwsKbI gaXzVq"
+      className="sc-kAzzGY dcHRuz"
     >
       <span>
         <span
@@ -983,10 +983,10 @@ exports[`Snapshots ComparisonFooter should render the footer for a single profil
     }
   >
     <section
-      className="sc-gqjmRU fAQVWU"
+      className="sc-kgoBCf fFebmp"
     >
       <ul
-        className="sc-gZMcBi eWCLFi"
+        className="sc-chPdSV cHWtVK"
       >
         <li
           style={
@@ -1001,13 +1001,13 @@ exports[`Snapshots ComparisonFooter should render the footer for a single profil
           }
         >
           <div
-            className="sc-VigVT fAjQiM"
+            className="sc-kGXeez evarDB"
           >
             <span
-              className="sc-bwzfXH ghuPdm"
+              className="sc-EHOje eQMpHY"
             >
               <span
-                className="sc-bdVaJa hWwCRQ"
+                className="sc-ifAKCX kdNFSI"
               >
                 <img
                   alt=""
@@ -1097,7 +1097,7 @@ exports[`Snapshots ComparisonFooter should render the footer for a single profil
                   }
                 >
                   <div
-                    className="sc-jTzLTM ikcdJN"
+                    className="sc-kpOJdX cyFStC"
                   >
                     <span
                       style={
@@ -1240,10 +1240,10 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
     }
   >
     <section
-      className="sc-gqjmRU fAQVWU"
+      className="sc-kgoBCf fFebmp"
     >
       <ul
-        className="sc-gZMcBi eWCLFi"
+        className="sc-chPdSV cHWtVK"
       >
         <li
           style={
@@ -1258,13 +1258,13 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
           }
         >
           <div
-            className="sc-VigVT fAjQiM"
+            className="sc-kGXeez evarDB"
           >
             <span
-              className="sc-bwzfXH ghuPdm"
+              className="sc-EHOje eQMpHY"
             >
               <span
-                className="sc-bdVaJa bjwIvU"
+                className="sc-ifAKCX dIQiBH"
               >
                 <img
                   alt=""
@@ -1354,7 +1354,7 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
                   }
                 >
                   <div
-                    className="sc-jTzLTM ikcdJN"
+                    className="sc-kpOJdX cyFStC"
                   >
                     <span
                       style={
@@ -1493,13 +1493,13 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
           }
         >
           <div
-            className="sc-VigVT fAjQiM"
+            className="sc-kGXeez evarDB"
           >
             <span
-              className="sc-bwzfXH ghuPdm"
+              className="sc-EHOje eQMpHY"
             >
               <span
-                className="sc-bdVaJa hWwCRQ"
+                className="sc-ifAKCX kdNFSI"
               >
                 <img
                   alt=""
@@ -1589,7 +1589,7 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
                   }
                 >
                   <div
-                    className="sc-jTzLTM ikcdJN"
+                    className="sc-kpOJdX cyFStC"
                   >
                     <span
                       style={
@@ -1729,13 +1729,13 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
           }
         >
           <div
-            className="sc-VigVT fAjQiM"
+            className="sc-kGXeez evarDB"
           >
             <span
-              className="sc-bwzfXH ghuPdm"
+              className="sc-EHOje eQMpHY"
             >
               <span
-                className="sc-bdVaJa hWwCRQ"
+                className="sc-ifAKCX kdNFSI"
               >
                 <img
                   alt=""
@@ -1825,7 +1825,7 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
                   }
                 >
                   <div
-                    className="sc-jTzLTM ikcdJN"
+                    className="sc-kpOJdX cyFStC"
                   >
                     <span
                       style={
@@ -2890,6 +2890,106 @@ exports[`Snapshots DropdownItem should selected 1`] = `
         </span>
       </button>
     </li>
+  </div>
+</span>
+`;
+
+exports[`Snapshots EmptyState render with a custom header and description 1`] = `
+<span>
+  <div
+    className="sc-ckVGcZ iqZOoR"
+  >
+    <div
+      className="sc-jKJlTe dtelEX"
+    />
+    <h1
+      className="sc-eNQAEJ dYjNXW"
+    >
+      <span
+        style={
+          Object {
+            "color": "#59626a",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontSize": "1rem",
+            "fontWeight": 400,
+          }
+        }
+      >
+        This is a custom header!
+      </span>
+    </h1>
+    <h2
+      className="sc-hMqMXs cbwRfB"
+    >
+      <span
+        style={
+          Object {
+            "color": "#59626a",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontSize": "0.75rem",
+            "fontWeight": 400,
+          }
+        }
+      >
+        This is a custom description!
+      </span>
+    </h2>
+  </div>
+</span>
+`;
+
+exports[`Snapshots EmptyState render with a custom header but no description 1`] = `
+<span>
+  <div
+    className="sc-ckVGcZ iqZOoR"
+  >
+    <div
+      className="sc-jKJlTe dtelEX"
+    />
+    <h1
+      className="sc-eNQAEJ dYjNXW"
+    >
+      <span
+        style={
+          Object {
+            "color": "#59626a",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontSize": "1rem",
+            "fontWeight": 400,
+          }
+        }
+      >
+        This is a custom header!
+      </span>
+    </h1>
+  </div>
+</span>
+`;
+
+exports[`Snapshots EmptyState render with default text 1`] = `
+<span>
+  <div
+    className="sc-ckVGcZ iqZOoR"
+  >
+    <div
+      className="sc-jKJlTe dtelEX"
+    />
+    <h1
+      className="sc-eNQAEJ dYjNXW"
+    >
+      <span
+        style={
+          Object {
+            "color": "#59626a",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontSize": "1rem",
+            "fontWeight": 400,
+          }
+        }
+      >
+        There is currently nothing available or selected
+      </span>
+    </h1>
   </div>
 </span>
 `;
@@ -6052,50 +6152,16 @@ exports[`Snapshots PostsTable should render a "no data" state 1`] = `
         }
       >
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "background": "rgba(255, 255, 255, 1)",
-              "display": "flex",
-              "justifyContent": "center",
-              "opacity": 1,
-              "textAlign": "center",
-              "transition": "opacity 350ms ease-in-out",
-            }
-          }
+          className="sc-kEYyzF fDHQev"
         >
           <div
-            style={
-              Object {
-                "background": "white",
-                "boxSizing": "border-box",
-                "flex": 1,
-                "flexDirection": "row",
-                "marginLeft": 30,
-                "marginRight": 30,
-              }
-            }
+            className="sc-kkGfuU ePhBXT"
           >
-            <h1>
-              <span
-                style={
-                  Object {
-                    "color": "#59626a",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "1.25rem",
-                    "fontWeight": 400,
-                  }
-                }
-              >
-                We couldn't find any analytics for this date range.
-              </span>
-            </h1>
-            <p
-              style={
-                Object {
-                  "marginBottom": 30,
-                }
-              }
+            <div
+              className="sc-iAyFgw jfuPyu"
+            />
+            <h1
+              className="sc-hSdWYo bBqBHC"
             >
               <span
                 style={
@@ -6107,9 +6173,9 @@ exports[`Snapshots PostsTable should render a "no data" state 1`] = `
                   }
                 }
               >
-                Try selecting a longer date range, or share something and check back tomorrow :)
+                There are no analytics for this date range
               </span>
-            </p>
+            </h1>
           </div>
         </div>
       </div>
@@ -12601,10 +12667,10 @@ exports[`Snapshots ProfileIcon should render 1`] = `
     }
   >
     <span
-      className="sc-cSHVUG hDUXUW"
+      className="sc-cvbbAY cDfiQI"
     >
       <span
-        className="sc-jzJRlG iFhvqW"
+        className="sc-eHgmQL dnUKBI"
       >
         <img
           alt=""
@@ -12776,7 +12842,7 @@ exports[`Snapshots Title should render the title for the comparison audience cha
     }
   >
     <h2
-      className="sc-fjdhpX emYWof"
+      className="sc-dxgOiQ isvEAp"
     >
       <span
         style={
@@ -12806,7 +12872,7 @@ exports[`Snapshots Title should render the title for the comparison reach chart 
     }
   >
     <h2
-      className="sc-fjdhpX emYWof"
+      className="sc-dxgOiQ isvEAp"
     >
       <span
         style={

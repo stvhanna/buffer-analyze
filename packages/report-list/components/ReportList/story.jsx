@@ -22,6 +22,11 @@ storiesOf('ReportList')
   .add('loading state', () => (
     <ReportList loading selectReport={action('select report')} />
   ))
+  .add('renders an empty state for reports', () => (
+    <ReportList
+      reports={[]}
+    />
+  ))
   .add('renders the reports collection in a list', () => (
     <ReportList
       reports={mockReports}

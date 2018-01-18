@@ -32,7 +32,7 @@ exports[`Snapshots EngagementComparisonChart should render a "no data" state 1`]
         }
       >
         <h2
-          className="sc-dnqmqq CwTMq"
+          className="sc-cSHVUG eMsAFn"
         >
           <span
             style={
@@ -50,53 +50,19 @@ exports[`Snapshots EngagementComparisonChart should render a "no data" state 1`]
         </h2>
       </header>
       <div
-        className="sc-VigVT knyrTu"
+        className="sc-kGXeez bFAmmu"
       >
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "background": "rgba(255, 255, 255, 1)",
-              "display": "flex",
-              "justifyContent": "center",
-              "opacity": 1,
-              "textAlign": "center",
-              "transition": "opacity 350ms ease-in-out",
-            }
-          }
+          className="sc-bdVaJa fWzNTu"
         >
           <div
-            style={
-              Object {
-                "background": "white",
-                "boxSizing": "border-box",
-                "flex": 1,
-                "flexDirection": "row",
-                "marginLeft": 30,
-                "marginRight": 30,
-              }
-            }
+            className="sc-bwzfXH iNQYMr"
           >
-            <h1>
-              <span
-                style={
-                  Object {
-                    "color": "#59626a",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "1.25rem",
-                    "fontWeight": 400,
-                  }
-                }
-              >
-                We couldn't find any analytics for this date range.
-              </span>
-            </h1>
-            <p
-              style={
-                Object {
-                  "marginBottom": 30,
-                }
-              }
+            <div
+              className="sc-htpNat gPGNmp"
+            />
+            <h1
+              className="sc-bxivhb hlZJQM"
             >
               <span
                 style={
@@ -108,9 +74,9 @@ exports[`Snapshots EngagementComparisonChart should render a "no data" state 1`]
                   }
                 }
               >
-                Try selecting a longer date range, or share something and check back tomorrow :)
+                There are no analytics for this date range
               </span>
-            </p>
+            </h1>
           </div>
         </div>
       </div>
@@ -151,7 +117,7 @@ exports[`Snapshots EngagementComparisonChart should render a loading state 1`] =
         }
       >
         <h2
-          className="sc-dnqmqq CwTMq"
+          className="sc-cSHVUG eMsAFn"
         >
           <span
             style={
@@ -169,7 +135,7 @@ exports[`Snapshots EngagementComparisonChart should render a loading state 1`] =
         </h2>
       </header>
       <div
-        className="sc-gqjmRU fgNPjU"
+        className="sc-kgoBCf iKvldm"
       >
         <div
           style={
@@ -307,7 +273,7 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
         }
       >
         <h2
-          className="sc-dnqmqq CwTMq"
+          className="sc-cSHVUG eMsAFn"
         >
           <span
             style={
@@ -325,15 +291,15 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
         </h2>
       </header>
       <div
-        className="sc-gZMcBi cCickz"
+        className="sc-chPdSV beTITA"
       >
         <div />
       </div>
       <section
-        className="sc-bZQynM jQlKhY"
+        className="sc-jTzLTM kxZztx"
       >
         <ul
-          className="sc-EHOje gptsFE"
+          className="sc-VigVT cJjjvE"
         >
           <li
             style={
@@ -348,13 +314,13 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
             }
           >
             <div
-              className="sc-gzVnrw azIqp"
+              className="sc-fjdhpX jpAcTc"
             >
               <span
-                className="sc-bwzfXH ghuPdm"
+                className="sc-EHOje eQMpHY"
               >
                 <span
-                  className="sc-bdVaJa bjwIvU"
+                  className="sc-ifAKCX dIQiBH"
                 >
                   <img
                     alt=""
@@ -444,7 +410,7 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
                     }
                   >
                     <div
-                      className="sc-htoDjs jxuJsQ"
+                      className="sc-jzJRlG hAWwQv"
                     >
                       <span
                         style={
@@ -583,13 +549,13 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
             }
           >
             <div
-              className="sc-gzVnrw azIqp"
+              className="sc-fjdhpX jpAcTc"
             >
               <span
-                className="sc-bwzfXH ghuPdm"
+                className="sc-EHOje eQMpHY"
               >
                 <span
-                  className="sc-bdVaJa hWwCRQ"
+                  className="sc-ifAKCX kdNFSI"
                 >
                   <img
                     alt=""
@@ -679,7 +645,7 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
                     }
                   >
                     <div
-                      className="sc-htoDjs jxuJsQ"
+                      className="sc-jzJRlG hAWwQv"
                     >
                       <span
                         style={
@@ -845,7 +811,7 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
         }
       >
         <h2
-          className="sc-dnqmqq CwTMq"
+          className="sc-cSHVUG eMsAFn"
         >
           <span
             style={
@@ -863,15 +829,15 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
         </h2>
       </header>
       <div
-        className="sc-iwsKbI MLANU"
+        className="sc-kAzzGY jEkjcv"
       >
         <div />
       </div>
       <section
-        className="sc-bZQynM jQlKhY"
+        className="sc-jTzLTM kxZztx"
       >
         <ul
-          className="sc-EHOje gptsFE"
+          className="sc-VigVT cJjjvE"
         >
           <li
             style={
@@ -886,13 +852,13 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
             }
           >
             <div
-              className="sc-gzVnrw azIqp"
+              className="sc-fjdhpX jpAcTc"
             >
               <span
-                className="sc-bwzfXH ghuPdm"
+                className="sc-EHOje eQMpHY"
               >
                 <span
-                  className="sc-bdVaJa bjwIvU"
+                  className="sc-ifAKCX dIQiBH"
                 >
                   <img
                     alt=""
@@ -982,7 +948,7 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
                     }
                   >
                     <div
-                      className="sc-htoDjs jxuJsQ"
+                      className="sc-jzJRlG hAWwQv"
                     >
                       <span
                         style={
