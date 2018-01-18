@@ -2900,7 +2900,7 @@ exports[`Snapshots EmptyState render with a custom header and description 1`] = 
     className="sc-ckVGcZ iqZOoR"
   >
     <div
-      className="sc-jKJlTe iDdiZz"
+      className="sc-jKJlTe dtelEX"
     />
     <h1
       className="sc-eNQAEJ dYjNXW"
@@ -2944,7 +2944,7 @@ exports[`Snapshots EmptyState render with a custom header but no description 1`]
     className="sc-ckVGcZ iqZOoR"
   >
     <div
-      className="sc-jKJlTe iDdiZz"
+      className="sc-jKJlTe dtelEX"
     />
     <h1
       className="sc-eNQAEJ dYjNXW"
@@ -2972,7 +2972,7 @@ exports[`Snapshots EmptyState render with default text 1`] = `
     className="sc-ckVGcZ iqZOoR"
   >
     <div
-      className="sc-jKJlTe iDdiZz"
+      className="sc-jKJlTe dtelEX"
     />
     <h1
       className="sc-eNQAEJ dYjNXW"
@@ -6158,7 +6158,7 @@ exports[`Snapshots PostsTable should render a "no data" state 1`] = `
             className="sc-kkGfuU ePhBXT"
           >
             <div
-              className="sc-iAyFgw hknSHh"
+              className="sc-iAyFgw jfuPyu"
             />
             <h1
               className="sc-hSdWYo bBqBHC"
