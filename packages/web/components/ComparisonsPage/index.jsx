@@ -96,7 +96,7 @@ const ComparisonsPage = ({ location, profilesSelected }) => (
                 <EngagementComparisonChart />
                 <CommentsComparisonChart />
               </div>
-            :
+              :
               <div style={centeredContainer}>
                 <EmptyState
                   header="No profiles are currently selected"
@@ -121,9 +121,10 @@ ComparisonsPage.defaultProps = {
   profilesSelected: false,
 };
 
-function mapStateToProps(state) {
+function mapStateToProps({ multiProfileSelector }) {
   return {
-    profilesSelected: state.multiProfileSelector.selectedProfiles.length > 0,
+    profilesSelected: multiProfileSelector.selectedProfiles.length > 0
+      && !multiProfileSelector.isDropdownOpen,
   };
 }
 
