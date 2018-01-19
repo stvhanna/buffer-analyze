@@ -33,6 +33,16 @@
     grpc "^1.8.0"
     protobufjs "~6.8.0"
 
+"@bufferapp/buffermetrics@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@bufferapp/buffermetrics/-/buffermetrics-0.5.0.tgz#fc5c9daf7f6a14af405db8a70c44bf7a29396a75"
+  dependencies:
+    "@bufferapp/buda" "0.5.2-beta1"
+    grpc "~1.8.0"
+    on-finished "^2.3.0"
+    useragent "^2.1.13"
+    uuid "^3.0.1"
+
 "@bufferapp/buffermetrics@^0.5.0-beta7":
   version "0.5.0-beta7"
   resolved "https://registry.yarnpkg.com/@bufferapp/buffermetrics/-/buffermetrics-0.5.0-beta7.tgz#750965889efa6f2beea2110c149c5cf115d5c078"
