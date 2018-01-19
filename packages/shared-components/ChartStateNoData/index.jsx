@@ -22,7 +22,7 @@ const Message = styled.div`
 const Image = styled.div`
   width: 240px;
   height: 100px;
-  background: url(https://buffer-analyze.s3.amazonaws.com/images/empty.png);
+  background: url(https://s3.amazonaws.com/buffer-analyze/images/empty-white.png);
   background-size: 100% 100%;
   margin: 0 auto 0.1rem;
 `;
