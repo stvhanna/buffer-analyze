@@ -138,6 +138,7 @@ app.get('/report_to_pdf', (req, res) => {
 });
 
 app.get('*', (req, res) => {
+  bugsnag.notify(new Error("Non-fatal"));
   res.send(html);
 });
 
