@@ -1,5 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {
+  calculateStyles,
+} from '@bufferapp/components/lib/utils';
+import {
+  Text,
+  Link,
+} from '@bufferapp/components';
 
 const feedbackSpanStyle = {
   display: 'block',
@@ -17,11 +24,11 @@ const feedbackLinkStyle = {
 };
 
 const FeedbackLink = ({ children, email }) => (
-	<a style={feedbackLinkStyle} href={'mailto:' + email + '?subject=Analyze feedback'}>
+	<Link unstyled href={'mailto:' + email + '?subject=Analyze feedback'}>
 		<span style={feedbackSpanStyle}>
-	    	<span>{children}</span>
-	    </span>
-    </a>
+	    	<span style={feedbackLinkStyle}>{children}</span>
+    	</span>
+    </Link>
 );
 
 FeedbackLink.propTypes = {
