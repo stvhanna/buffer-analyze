@@ -1,13 +1,14 @@
 import { actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-fetch';
+import keyWrapper from '@bufferapp/keywrapper';
 
-export const actionTypes = {
+export const actionTypes = keyWrapper('HOURLY_CHART', {
   HOURLY_TOGGLE_DROPDOWN: 'HOURLY_TOGGLE_DROPDOWN',
   HOURLY_TOGGLE_SECONDARY_DROPDOWN: 'HOURLY_TOGGLE_SECONDARY_DROPDOWN',
   SHOW_SECONDARY_DROPDOWN: 'SHOW_SECONDARY_DROPDOWN',
   HIDE_SECONDARY_DROPDOWN: 'HIDE_SECONDARY_DROPDOWN',
   SELECT_METRIC: 'SELECT_METRIC',
   SELECT_SECONDARY_METRIC: 'SELECT_SECONDARY_METRIC',
-};
+});
 
 const initialState = {
   loading: true,

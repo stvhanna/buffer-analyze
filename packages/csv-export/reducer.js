@@ -1,8 +1,10 @@
-export const actionTypes = {
+import keyWrapper from '@bufferapp/keywrapper';
+
+export const actionTypes = keyWrapper('CSV_EXPORT', {
   EXPORT_TO_CSV_START: 'EXPORT_TO_CSV_START',
   EXPORT_TO_CSV_END: 'EXPORT_TO_CSV_END',
   EXPORT_CHART: 'CSV_EXPORT_CHART',
-};
+});
 
 const initialState = {
   exporting: false,

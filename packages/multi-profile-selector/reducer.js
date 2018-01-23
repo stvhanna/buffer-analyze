@@ -1,12 +1,13 @@
 import { actionTypes as fetchActions } from '@bufferapp/async-data-fetch';
+import keyWrapper from '@bufferapp/keywrapper';
 
-export const actionTypes = {
+export const actionTypes = keyWrapper('MULTI_PROFILE_SELECTOR', {
   TOGGLE_PROFILE: 'TOGGLE_PROFILE',
   COMPARE_PROFILES: 'COMPARE_PROFILES',
   FILTER_PROFILES: 'FILTER_PROFILES',
   OPEN_DROPDOWN: 'OPEN_DROPDOWN',
   CLOSE_DROPDOWN: 'CLOSE_DROPDOWN',
-};
+});
 
 const initialState = {
   profiles: [],

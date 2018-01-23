@@ -1,7 +1,9 @@
-export const actionTypes = {
+import keyWrapper from '@bufferapp/keywrapper';
+
+export const actionTypes = keyWrapper('EXPORT_PICKER', {
   OPEN_EXPORT_PICKER_LIST: 'OPEN_EXPORT_PICKER_LIST',
   CLOSE_EXPORT_PICKER_LIST: 'CLOSE_EXPORT_PICKER_LIST',
-};
+});
 
 const initialState = {
   open: false,

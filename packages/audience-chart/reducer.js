@@ -1,6 +1,7 @@
 import { actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-fetch';
+import keyWrapper from '@bufferapp/keywrapper';
 
-export const actionTypes = {
+export const actionTypes = keyWrapper('AUDIENCE_CHART', {
   SELECT_CHART_MODE: 'SELECT_CHART_MODE',
   SELECT_SECONDARY_METRIC: 'SELECT_SECONDARY_METRIC',
   OPEN_PRIMARY_DROPDOWN: 'OPEN_PRIMARY_DROPDOWN',
@@ -10,7 +11,7 @@ export const actionTypes = {
 
   SELECT_PRESET: 'SELECT_PRESET',
   TOGGLE_PRESETS_DROPDOWN: 'TOGGLE_PRESETS_DROPDOWN',
-};
+});
 
 const initialState = {
   data: [],

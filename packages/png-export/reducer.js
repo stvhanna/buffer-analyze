@@ -1,8 +1,10 @@
-export const actionTypes = {
+import keyWrapper from '@bufferapp/keywrapper';
+
+export const actionTypes = keyWrapper('PNG_EXPORT', {
   EXPORT_TO_PNG_START: 'EXPORT_TO_PNG_START',
   EXPORT_TO_PNG_END: 'EXPORT_TO_PNG_END',
   EXPORT_CHART: 'PNG_EXPORT_CHART',
-};
+});
 
 const initialState = {
   exporting: false,

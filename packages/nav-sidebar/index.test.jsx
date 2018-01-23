@@ -2,12 +2,12 @@ import React from 'react';
 import { configure, mount, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { Provider } from 'react-redux';
+import { actions as profilesActions } from '@bufferapp/analyze-profile-selector';
+import { Link } from '@bufferapp/components';
 import NavSidebar, {
   reducer,
 } from './index';
 import Insights from './components/Insights';
-import Item from './components/Item';
-import { Link } from '@bufferapp/components';
 
 configure({ adapter: new Adapter() });
 const storeFake = state => ({
@@ -83,7 +83,8 @@ describe('NavSidebar', () => {
         type: '@@router/CALL_HISTORY_METHOD',
       });
       expect(store.dispatch.mock.calls[1][0]).toMatchObject({
-        type: 'SELECT_PROFILE_SERVICE',
+        profileService: 'facebook',
+        type: 'PROFILE_SELECTOR__SELECT_PROFILE_SERVICE',
       });
     });
 
@@ -116,6 +117,26 @@ describe('NavSidebar', () => {
     expect(wrapper.find(NavSidebar).length)
       .toBe(1);
     expect(wrapper.find(Insights).children()).toHaveLength(0);
+  });
+
+  it('it should export onClick', () => {
+    const store = storeFake({
+      navSidebar: {
+        profiles: [],
+      },
+    });
+    const component = shallow(
+      <NavSidebar store={store} route="/" />,
+    );
+    expect(component.props().onClick).toBeDefined();
+    component.props().onClick();
+    expect(store.dispatch).toHaveBeenCalledTimes(2);
+    expect(store.dispatch.mock.calls[0][0]).toMatchObject({
+      type: '@@router/CALL_HISTORY_METHOD',
+    });
+    expect(store.dispatch.mock.calls[1][0]).toMatchObject(
+      profilesActions.selectProfileService(),
+    );
   });
 
   it('should export reducer', () => {

@@ -1,7 +1,9 @@
 const AWS = require('aws-sdk');
 const http = require('http');
 const express = require('express');
+const bodyParser = require('body-parser');
 const logMiddleware = require('@bufferapp/logger/middleware');
+const buffermetricsMiddleware = require('@bufferapp/buffermetrics/middleware');
 const bugsnag = require('bugsnag');
 const fs = require('fs');
 const { join } = require('path');
@@ -96,6 +98,14 @@ app.post('/rpc', (req, res, next) => {
       }
     });
 });
+
+app.use(bodyParser.json());
+app.use(buffermetricsMiddleware({
+  name: 'Buffer-Analyze',
+  debug: !isProduction,
+  trackVisits: true,
+}));
+
 
 app.use(sessionMiddleware.validateSession({
   production: isProduction,
