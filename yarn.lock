@@ -33,7 +33,7 @@
     grpc "^1.8.0"
     protobufjs "~6.8.0"
 
-"@bufferapp/buffermetrics@^0.5.0", "@bufferapp/buffermetrics@^0.5.0-beta7":
+"@bufferapp/buffermetrics@^0.5.0":
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/@bufferapp/buffermetrics/-/buffermetrics-0.5.0.tgz#fc5c9daf7f6a14af405db8a70c44bf7a29396a75"
   dependencies:
@@ -113,6 +113,14 @@
 "@bufferapp/session-manager@0.5.42":
   version "0.5.42"
   resolved "https://registry.yarnpkg.com/@bufferapp/session-manager/-/session-manager-0.5.42.tgz#722279a32af1a3e0ba7c6d695f0830bbb85f0f63"
+  dependencies:
+    jsonwebtoken "8.1.0"
+    micro-rpc-client "0.1.2"
+    object-path "0.11.4"
+
+"@bufferapp/session-manager@0.5.43":
+  version "0.5.43"
+  resolved "https://registry.yarnpkg.com/@bufferapp/session-manager/-/session-manager-0.5.43.tgz#2fe80cce760a7b500fcd79e3643b24c8ba1d1893"
   dependencies:
     jsonwebtoken "8.1.0"
     micro-rpc-client "0.1.2"
