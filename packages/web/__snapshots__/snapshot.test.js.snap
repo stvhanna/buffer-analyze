@@ -915,114 +915,167 @@ exports[`Snapshots App should render application 1`] = `
               }
             />
           </div>
-          <span
-            style={
-              Object {
-                "display": "block",
-                "letterSpacing": ".075rem",
-                "margin": "0 1rem 0.75rem",
-                "padding": "0",
-                "textTransform": "uppercase",
-              }
-            }
-          >
+          <div>
             <span
               style={
                 Object {
-                  "color": "#8A9097",
+                  "display": "block",
+                  "letterSpacing": ".075rem",
+                  "margin": "0 1rem 0.75rem",
+                  "padding": "0",
+                  "textTransform": "uppercase",
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#8A9097",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
+                    "fontWeight": 500,
+                  }
+                }
+              >
+                Tools
+              </span>
+            </span>
+            <a
+              href="/comparisons"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "color": "#168eea",
                   "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "0.75rem",
-                  "fontWeight": 500,
+                  "outline": "none",
+                  "padding": "0",
+                  "textDecoration": "none",
                 }
               }
-            >
-              Tools
-            </span>
-          </span>
-          <a
-            href="/comparisons"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "color": "#168eea",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "outline": "none",
-                "padding": "0",
-                "textDecoration": "none",
-              }
-            }
-            target="_self"
-          >
-            <span
-              style={
-                Object {
-                  "borderRadius": "4px",
-                  "display": "block",
-                  "margin": "0 0.5rem",
-                  "padding": "0.75rem 0.5rem",
-                }
-              }
+              target="_self"
             >
               <span
                 style={
                   Object {
-                    "color": "#59626a",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "1rem",
-                    "fontWeight": 400,
+                    "borderRadius": "4px",
+                    "display": "block",
+                    "margin": "0 0.5rem",
+                    "padding": "0.75rem 0.5rem",
                   }
                 }
               >
-                Comparisons
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Comparisons
+                </span>
               </span>
-            </span>
-          </a>
-          <a
-            href="/reports"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "color": "#168eea",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "outline": "none",
-                "padding": "0",
-                "textDecoration": "none",
-              }
-            }
-            target="_self"
-          >
-            <span
+            </a>
+            <a
+              href="/reports"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
               style={
                 Object {
-                  "borderRadius": "4px",
-                  "display": "block",
-                  "margin": "0 0.5rem",
-                  "padding": "0.75rem 0.5rem",
+                  "color": "#168eea",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "outline": "none",
+                  "padding": "0",
+                  "textDecoration": "none",
                 }
               }
+              target="_self"
             >
               <span
                 style={
                   Object {
-                    "color": "#59626a",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "1rem",
-                    "fontWeight": 400,
+                    "borderRadius": "4px",
+                    "display": "block",
+                    "margin": "0 0.5rem",
+                    "padding": "0.75rem 0.5rem",
                   }
                 }
               >
-                Reports
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Reports
+                </span>
               </span>
-            </span>
-          </a>
+            </a>
+          </div>
+          <div
+            style={
+              Object {
+                "marginTop": "auto",
+              }
+            }
+          >
+            <a
+              href="mailto:tom@buffer.com?subject=Analyze feedback"
+              onBlur={[Function]}
+              onClick={undefined}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "color": "#168eea",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "outline": "none",
+                  "padding": "0",
+                  "textDecoration": "none",
+                }
+              }
+              target="_self"
+            >
+              <span
+                style={
+                  Object {
+                    "borderRadius": "4px",
+                    "display": "block",
+                    "margin": "0px 0.5rem",
+                    "padding": "0.75rem 0.5rem",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "rgb(89, 98, 106)",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1rem",
+                      "fontWeight": "400",
+                      "textDecoration": "none",
+                    }
+                  }
+                >
+                  Send Feedback
+                </span>
+              </span>
+            </a>
+          </div>
         </div>
         <div
           style={
@@ -1284,114 +1337,167 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
           }
         }
       />
-      <span
-        style={
-          Object {
-            "display": "block",
-            "letterSpacing": ".075rem",
-            "margin": "0 1rem 0.75rem",
-            "padding": "0",
-            "textTransform": "uppercase",
-          }
-        }
-      >
+      <div>
         <span
           style={
             Object {
-              "color": "#8A9097",
+              "display": "block",
+              "letterSpacing": ".075rem",
+              "margin": "0 1rem 0.75rem",
+              "padding": "0",
+              "textTransform": "uppercase",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#8A9097",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 500,
+              }
+            }
+          >
+            Tools
+          </span>
+        </span>
+        <a
+          href="/comparisons"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
               "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "0.75rem",
-              "fontWeight": 500,
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
             }
           }
-        >
-          Tools
-        </span>
-      </span>
-      <a
-        href="/comparisons"
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        style={
-          Object {
-            "color": "#168eea",
-            "fontFamily": "\\"Roboto\\", sans-serif",
-            "outline": "none",
-            "padding": "0",
-            "textDecoration": "none",
-          }
-        }
-        target="_self"
-      >
-        <span
-          style={
-            Object {
-              "borderRadius": "4px",
-              "display": "block",
-              "margin": "0 0.5rem",
-              "padding": "0.75rem 0.5rem",
-            }
-          }
+          target="_self"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1rem",
-                "fontWeight": 400,
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0 0.5rem",
+                "padding": "0.75rem 0.5rem",
               }
             }
           >
-            Comparisons
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Comparisons
+            </span>
           </span>
-        </span>
-      </a>
-      <a
-        href="/reports"
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        style={
-          Object {
-            "color": "#168eea",
-            "fontFamily": "\\"Roboto\\", sans-serif",
-            "outline": "none",
-            "padding": "0",
-            "textDecoration": "none",
-          }
-        }
-        target="_self"
-      >
-        <span
+        </a>
+        <a
+          href="/reports"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
           style={
             Object {
-              "borderRadius": "4px",
-              "display": "block",
-              "margin": "0 0.5rem",
-              "padding": "0.75rem 0.5rem",
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
             }
           }
+          target="_self"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1rem",
-                "fontWeight": 400,
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0 0.5rem",
+                "padding": "0.75rem 0.5rem",
               }
             }
           >
-            Reports
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Reports
+            </span>
           </span>
-        </span>
-      </a>
+        </a>
+      </div>
+      <div
+        style={
+          Object {
+            "marginTop": "auto",
+          }
+        }
+      >
+        <a
+          href="mailto:tom@buffer.com?subject=Analyze feedback"
+          onBlur={[Function]}
+          onClick={undefined}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            style={
+              Object {
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0px 0.5rem",
+                "padding": "0.75rem 0.5rem",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "rgb(89, 98, 106)",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": "400",
+                  "textDecoration": "none",
+                }
+              }
+            >
+              Send Feedback
+            </span>
+          </span>
+        </a>
+      </div>
     </div>
     <div
       style={
@@ -1561,114 +1667,167 @@ exports[`Snapshots InsightsPage should render Insights page 1`] = `
           }
         }
       />
-      <span
-        style={
-          Object {
-            "display": "block",
-            "letterSpacing": ".075rem",
-            "margin": "0 1rem 0.75rem",
-            "padding": "0",
-            "textTransform": "uppercase",
-          }
-        }
-      >
+      <div>
         <span
           style={
             Object {
-              "color": "#8A9097",
+              "display": "block",
+              "letterSpacing": ".075rem",
+              "margin": "0 1rem 0.75rem",
+              "padding": "0",
+              "textTransform": "uppercase",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#8A9097",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 500,
+              }
+            }
+          >
+            Tools
+          </span>
+        </span>
+        <a
+          href="/comparisons"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
               "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "0.75rem",
-              "fontWeight": 500,
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
             }
           }
-        >
-          Tools
-        </span>
-      </span>
-      <a
-        href="/comparisons"
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        style={
-          Object {
-            "color": "#168eea",
-            "fontFamily": "\\"Roboto\\", sans-serif",
-            "outline": "none",
-            "padding": "0",
-            "textDecoration": "none",
-          }
-        }
-        target="_self"
-      >
-        <span
-          style={
-            Object {
-              "borderRadius": "4px",
-              "display": "block",
-              "margin": "0 0.5rem",
-              "padding": "0.75rem 0.5rem",
-            }
-          }
+          target="_self"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1rem",
-                "fontWeight": 400,
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0 0.5rem",
+                "padding": "0.75rem 0.5rem",
               }
             }
           >
-            Comparisons
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Comparisons
+            </span>
           </span>
-        </span>
-      </a>
-      <a
-        href="/reports"
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        style={
-          Object {
-            "color": "#168eea",
-            "fontFamily": "\\"Roboto\\", sans-serif",
-            "outline": "none",
-            "padding": "0",
-            "textDecoration": "none",
-          }
-        }
-        target="_self"
-      >
-        <span
+        </a>
+        <a
+          href="/reports"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
           style={
             Object {
-              "borderRadius": "4px",
-              "display": "block",
-              "margin": "0 0.5rem",
-              "padding": "0.75rem 0.5rem",
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
             }
           }
+          target="_self"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1rem",
-                "fontWeight": 400,
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0 0.5rem",
+                "padding": "0.75rem 0.5rem",
               }
             }
           >
-            Reports
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Reports
+            </span>
           </span>
-        </span>
-      </a>
+        </a>
+      </div>
+      <div
+        style={
+          Object {
+            "marginTop": "auto",
+          }
+        }
+      >
+        <a
+          href="mailto:tom@buffer.com?subject=Analyze feedback"
+          onBlur={[Function]}
+          onClick={undefined}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            style={
+              Object {
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0px 0.5rem",
+                "padding": "0.75rem 0.5rem",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "rgb(89, 98, 106)",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": "400",
+                  "textDecoration": "none",
+                }
+              }
+            >
+              Send Feedback
+            </span>
+          </span>
+        </a>
+      </div>
     </div>
     <div
       style={
@@ -1834,115 +1993,168 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
           }
         }
       />
-      <span
-        style={
-          Object {
-            "display": "block",
-            "letterSpacing": ".075rem",
-            "margin": "0 1rem 0.75rem",
-            "padding": "0",
-            "textTransform": "uppercase",
-          }
-        }
-      >
+      <div>
         <span
           style={
             Object {
-              "color": "#8A9097",
+              "display": "block",
+              "letterSpacing": ".075rem",
+              "margin": "0 1rem 0.75rem",
+              "padding": "0",
+              "textTransform": "uppercase",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#8A9097",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 500,
+              }
+            }
+          >
+            Tools
+          </span>
+        </span>
+        <a
+          href="/comparisons"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
               "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "0.75rem",
-              "fontWeight": 500,
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
             }
           }
-        >
-          Tools
-        </span>
-      </span>
-      <a
-        href="/comparisons"
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        style={
-          Object {
-            "color": "#168eea",
-            "fontFamily": "\\"Roboto\\", sans-serif",
-            "outline": "none",
-            "padding": "0",
-            "textDecoration": "none",
-          }
-        }
-        target="_self"
-      >
-        <span
-          style={
-            Object {
-              "borderRadius": "4px",
-              "display": "block",
-              "margin": "0 0.5rem",
-              "padding": "0.75rem 0.5rem",
-            }
-          }
+          target="_self"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1rem",
-                "fontWeight": 400,
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0 0.5rem",
+                "padding": "0.75rem 0.5rem",
               }
             }
           >
-            Comparisons
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Comparisons
+            </span>
           </span>
-        </span>
-      </a>
-      <a
-        href="/reports"
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        style={
-          Object {
-            "color": "#168eea",
-            "fontFamily": "\\"Roboto\\", sans-serif",
-            "outline": "none",
-            "padding": "0",
-            "textDecoration": "none",
-          }
-        }
-        target="_self"
-      >
-        <span
+        </a>
+        <a
+          href="/reports"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
           style={
             Object {
-              "backgroundColor": "rgba(22, 142, 234, .1)",
-              "borderRadius": "4px",
-              "display": "block",
-              "margin": "0 0.5rem",
-              "padding": "0.75rem 0.5rem",
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
             }
           }
+          target="_self"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1rem",
-                "fontWeight": 700,
+                "backgroundColor": "rgba(22, 142, 234, .1)",
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0 0.5rem",
+                "padding": "0.75rem 0.5rem",
               }
             }
           >
-            Reports
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 700,
+                }
+              }
+            >
+              Reports
+            </span>
           </span>
-        </span>
-      </a>
+        </a>
+      </div>
+      <div
+        style={
+          Object {
+            "marginTop": "auto",
+          }
+        }
+      >
+        <a
+          href="mailto:tom@buffer.com?subject=Analyze feedback"
+          onBlur={[Function]}
+          onClick={undefined}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            style={
+              Object {
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0px 0.5rem",
+                "padding": "0.75rem 0.5rem",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "rgb(89, 98, 106)",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": "400",
+                  "textDecoration": "none",
+                }
+              }
+            >
+              Send Feedback
+            </span>
+          </span>
+        </a>
+      </div>
     </div>
     <div
       className="sc-bYSBpT ctfxGZ"

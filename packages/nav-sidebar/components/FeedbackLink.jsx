@@ -1,18 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  calculateStyles,
-} from '@bufferapp/components/lib/utils';
-import {
-  Text,
-  Link,
+  Link
 } from '@bufferapp/components';
 
 const feedbackSpanStyle = {
-  display: 'block',
-  padding: '0.75rem 0.5rem',
-  margin: '0px 0.5rem',
-  borderRadius: '4px'
+	display: 'block',
+	padding: '0.75rem 0.5rem',
+	margin: '0px 0.5rem',
+	borderRadius: '4px'
 };
 
 const feedbackLinkStyle = {
