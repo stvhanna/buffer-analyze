@@ -7,6 +7,9 @@ module.exports.apiError = (err, req, res, next) => { // eslint-disable-line no-u
     delete filteredError.httpCode;
     res.status(httpCode).send(filteredError);
   } else if (req.app.get('isProduction')) {
+    req.app.get('bugsnag').notify(err, {
+      originalUrl: req.originalUrl,
+    });
     // parse the body for json
     json(req)
       // if it fails the body wasn't json and no params where passed in
