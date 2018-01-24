@@ -10,7 +10,7 @@ describe('reducer', () => {
       profiles: [],
       isDropdownOpen: false,
       profilesFilterString: '',
-      selectedProfileId: '',
+      selectedProfileId: null,
       selectedProfileService: '',
     };
   });
@@ -32,7 +32,7 @@ describe('reducer', () => {
         profiles: mockProfiles,
         isDropdownOpen: false,
         profilesFilterString: '',
-        selectedProfileId: '',
+        selectedProfileId: null,
         selectedProfileService: '',
       });
   });
