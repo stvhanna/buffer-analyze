@@ -5,10 +5,10 @@ export default [
   },
   {
     label: 'Impression',
-    color: '#fda3f3',
+    color: '#98E8B2',
   },
   {
-    label: 'Click',
-    color: '#fda3f3',
+    label: 'Posts',
+    color: '#3A92D3',
   },
 ];

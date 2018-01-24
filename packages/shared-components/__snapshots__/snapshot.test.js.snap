@@ -467,8 +467,8 @@ exports[`Snapshots CommonChart [TESTED] Should render Posts metrics as columns i
           <span
             style={
               Object {
-                "background": "#fda3f3",
-                "borderColor": "#df85d5",
+                "background": "#98E8B2",
+                "borderColor": "#7aca94",
                 "borderRadius": "10px",
                 "borderStyle": "solid",
                 "borderWidth": "1px",
@@ -503,8 +503,8 @@ exports[`Snapshots CommonChart [TESTED] Should render Posts metrics as columns i
           <span
             style={
               Object {
-                "background": "#fda3f3",
-                "borderColor": "#df85d5",
+                "background": "#3A92D3",
+                "borderColor": "#1c74b5",
                 "borderRadius": "10px",
                 "borderStyle": "solid",
                 "borderWidth": "1px",
@@ -526,7 +526,7 @@ exports[`Snapshots CommonChart [TESTED] Should render Posts metrics as columns i
               }
             }
           >
-            Click
+            Posts
           </span>
         </li>
       </ul>
@@ -606,8 +606,8 @@ exports[`Snapshots CommonChart [TESTED] Should render in Custom mode 1`] = `
           <span
             style={
               Object {
-                "background": "#fda3f3",
-                "borderColor": "#df85d5",
+                "background": "#98E8B2",
+                "borderColor": "#7aca94",
                 "borderRadius": "10px",
                 "borderStyle": "solid",
                 "borderWidth": "1px",
@@ -4597,8 +4597,8 @@ exports[`Snapshots MetricsDropdown should open the dropdown 1`] = `
                 <span
                   style={
                     Object {
-                      "background": "#fda3f3",
-                      "borderColor": "#df85d5",
+                      "background": "#98E8B2",
+                      "borderColor": "#7aca94",
                       "borderRadius": "10px",
                       "borderStyle": "solid",
                       "borderWidth": "1px",
@@ -4671,8 +4671,8 @@ exports[`Snapshots MetricsDropdown should open the dropdown 1`] = `
                 <span
                   style={
                     Object {
-                      "background": "#fda3f3",
-                      "borderColor": "#df85d5",
+                      "background": "#3A92D3",
+                      "borderColor": "#1c74b5",
                       "borderRadius": "10px",
                       "borderStyle": "solid",
                       "borderWidth": "1px",
@@ -4694,7 +4694,7 @@ exports[`Snapshots MetricsDropdown should open the dropdown 1`] = `
                     }
                   }
                 >
-                  Click
+                  Posts
                 </span>
               </span>
             </button>
@@ -4936,8 +4936,8 @@ exports[`Snapshots MetricsDropdown should render a secondary dropdown 1`] = `
                 <span
                   style={
                     Object {
-                      "background": "#fda3f3",
-                      "borderColor": "#df85d5",
+                      "background": "#98E8B2",
+                      "borderColor": "#7aca94",
                       "borderRadius": "10px",
                       "borderStyle": "solid",
                       "borderWidth": "1px",
@@ -5010,8 +5010,8 @@ exports[`Snapshots MetricsDropdown should render a secondary dropdown 1`] = `
                 <span
                   style={
                     Object {
-                      "background": "#fda3f3",
-                      "borderColor": "#df85d5",
+                      "background": "#3A92D3",
+                      "borderColor": "#1c74b5",
                       "borderRadius": "10px",
                       "borderStyle": "solid",
                       "borderWidth": "1px",
@@ -5033,7 +5033,7 @@ exports[`Snapshots MetricsDropdown should render a secondary dropdown 1`] = `
                     }
                   }
                 >
-                  Click
+                  Posts
                 </span>
               </span>
             </button>
@@ -5275,8 +5275,8 @@ exports[`Snapshots MetricsDropdown should render the dropdown 1`] = `
                 <span
                   style={
                     Object {
-                      "background": "#fda3f3",
-                      "borderColor": "#df85d5",
+                      "background": "#98E8B2",
+                      "borderColor": "#7aca94",
                       "borderRadius": "10px",
                       "borderStyle": "solid",
                       "borderWidth": "1px",
@@ -5349,8 +5349,8 @@ exports[`Snapshots MetricsDropdown should render the dropdown 1`] = `
                 <span
                   style={
                     Object {
-                      "background": "#fda3f3",
-                      "borderColor": "#df85d5",
+                      "background": "#3A92D3",
+                      "borderColor": "#1c74b5",
                       "borderRadius": "10px",
                       "borderStyle": "solid",
                       "borderWidth": "1px",
@@ -5372,7 +5372,7 @@ exports[`Snapshots MetricsDropdown should render the dropdown 1`] = `
                     }
                   }
                 >
-                  Click
+                  Posts
                 </span>
               </span>
             </button>
