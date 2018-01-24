@@ -42,7 +42,7 @@ const NavSidebar = props => (
       <Item href="/reports" {...props}>Reports</Item>
     </div>
     <div style={bottomSectionStyle}>
-      <FeedbackLink email="tom@buffer.com">Send Feedback</FeedbackLink>
+      <FeedbackLink email="hello+analyze@buffer.com">Send Feedback</FeedbackLink>
     </div>
   </div>
 );
