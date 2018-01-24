@@ -1033,7 +1033,7 @@ exports[`Snapshots App should render application 1`] = `
             }
           >
             <a
-              href="mailto:tom@buffer.com?subject=Analyze feedback"
+              href="mailto:hello+analyze@buffer.com?subject=Analyze feedback"
               onBlur={[Function]}
               onClick={undefined}
               onFocus={[Function]}
@@ -1051,25 +1051,10 @@ exports[`Snapshots App should render application 1`] = `
               target="_self"
             >
               <span
-                style={
-                  Object {
-                    "borderRadius": "4px",
-                    "display": "block",
-                    "margin": "0px 0.5rem",
-                    "padding": "0.75rem 0.5rem",
-                  }
-                }
+                className="sc-lhVmIH cLtxjG"
               >
                 <span
-                  style={
-                    Object {
-                      "color": "rgb(89, 98, 106)",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "1rem",
-                      "fontWeight": "400",
-                      "textDecoration": "none",
-                    }
-                  }
+                  className="sc-bYSBpT bSLZKc"
                 >
                   Send Feedback
                 </span>
@@ -1455,7 +1440,7 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
         }
       >
         <a
-          href="mailto:tom@buffer.com?subject=Analyze feedback"
+          href="mailto:hello+analyze@buffer.com?subject=Analyze feedback"
           onBlur={[Function]}
           onClick={undefined}
           onFocus={[Function]}
@@ -1473,25 +1458,10 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
           target="_self"
         >
           <span
-            style={
-              Object {
-                "borderRadius": "4px",
-                "display": "block",
-                "margin": "0px 0.5rem",
-                "padding": "0.75rem 0.5rem",
-              }
-            }
+            className="sc-lhVmIH cLtxjG"
           >
             <span
-              style={
-                Object {
-                  "color": "rgb(89, 98, 106)",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1rem",
-                  "fontWeight": "400",
-                  "textDecoration": "none",
-                }
-              }
+              className="sc-bYSBpT bSLZKc"
             >
               Send Feedback
             </span>
@@ -1785,7 +1755,7 @@ exports[`Snapshots InsightsPage should render Insights page 1`] = `
         }
       >
         <a
-          href="mailto:tom@buffer.com?subject=Analyze feedback"
+          href="mailto:hello+analyze@buffer.com?subject=Analyze feedback"
           onBlur={[Function]}
           onClick={undefined}
           onFocus={[Function]}
@@ -1803,25 +1773,10 @@ exports[`Snapshots InsightsPage should render Insights page 1`] = `
           target="_self"
         >
           <span
-            style={
-              Object {
-                "borderRadius": "4px",
-                "display": "block",
-                "margin": "0px 0.5rem",
-                "padding": "0.75rem 0.5rem",
-              }
-            }
+            className="sc-lhVmIH cLtxjG"
           >
             <span
-              style={
-                Object {
-                  "color": "rgb(89, 98, 106)",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1rem",
-                  "fontWeight": "400",
-                  "textDecoration": "none",
-                }
-              }
+              className="sc-bYSBpT bSLZKc"
             >
               Send Feedback
             </span>
@@ -1921,7 +1876,7 @@ exports[`Snapshots InsightsPage should render Insights page 1`] = `
 exports[`Snapshots ReportsPage should render reports page 1`] = `
 <span>
   <div
-    className="sc-lhVmIH glwrPR"
+    className="sc-elJkPf bUkfXi"
   >
     <div
       style={
@@ -2112,7 +2067,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
         }
       >
         <a
-          href="mailto:tom@buffer.com?subject=Analyze feedback"
+          href="mailto:hello+analyze@buffer.com?subject=Analyze feedback"
           onBlur={[Function]}
           onClick={undefined}
           onFocus={[Function]}
@@ -2130,25 +2085,10 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
           target="_self"
         >
           <span
-            style={
-              Object {
-                "borderRadius": "4px",
-                "display": "block",
-                "margin": "0px 0.5rem",
-                "padding": "0.75rem 0.5rem",
-              }
-            }
+            className="sc-lhVmIH cLtxjG"
           >
             <span
-              style={
-                Object {
-                  "color": "rgb(89, 98, 106)",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1rem",
-                  "fontWeight": "400",
-                  "textDecoration": "none",
-                }
-              }
+              className="sc-bYSBpT bSLZKc"
             >
               Send Feedback
             </span>
@@ -2157,10 +2097,10 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
       </div>
     </div>
     <div
-      className="sc-bYSBpT ctfxGZ"
+      className="sc-jtRfpW huBDPE"
     >
       <header
-        className="sc-jtRfpW dASyzi"
+        className="sc-dqBHgY gTeVon"
       >
         <button
           className="sc-bZQynM gQpRYd"
@@ -2180,7 +2120,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
           </span>
         </button>
         <section
-          className="sc-dqBHgY kXWExh"
+          className="sc-dfVpRl jBypUr"
         >
           <div
             className="sc-kjoXOD bKsEHy"
@@ -2565,10 +2505,10 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
         </section>
       </header>
       <div
-        className="sc-elJkPf gVrLtt"
+        className="sc-kTUwUJ kPZwkN"
       >
         <section
-          className="sc-kTUwUJ gkaFtX"
+          className="sc-gxMtzJ iemDyH"
         >
           <div
             style={
