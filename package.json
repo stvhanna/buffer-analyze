@@ -14,7 +14,9 @@
     "start": "cd ./packages/server/ && yarn start",
     "watch": "webpack-dev-server --config ./packages/server/webpack.config.dev.js --colors",
     "publish": "echo \"will eventually run: lerna publish\"",
-    "build": "webpack  --config ./packages/server/webpack.config.js --output-path=`pwd`"
+    "build": "webpack  --config ./packages/server/webpack.config.js --output-path=`pwd`",
+
+    "postinstall": "npm rebuild grpc --target_arch=x64 --target_platform=linux --target_libc=glibc"
   },
   "private": true,
   "workspaces": [
