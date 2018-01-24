@@ -78,7 +78,7 @@ function setChartLimits({ series, yAxis }, usesTwoScales) {
   }
 }
 
-function setYAxisScale([primarySeries, secondarySeries], xAxis, yAxis) {
+function setYAxisScale([primarySeries, secondarySeries, ...otherSeries], xAxis, yAxis) {
   // we are using two scales only if there is a siginificative difference in scale
   const yAxisMax = Math.max.apply(null, reduceSeriesToValues([primarySeries]));
   let usesTwoScales = false;
@@ -99,7 +99,7 @@ function setYAxisScale([primarySeries, secondarySeries], xAxis, yAxis) {
     }
   }
   setChartLimits({
-    series: [primarySeries, secondarySeries].filter(s => typeof s !== 'undefined'),
+    series: [].concat(primarySeries, secondarySeries, otherSeries).filter(s => typeof s !== 'undefined'),
     yAxis,
   }, usesTwoScales);
 }

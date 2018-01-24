@@ -44,7 +44,7 @@ export default [
           {
             key: 'post_reach',
             label: 'reach',
-            value: 42,
+            value: 342,
           },
         ],
       },
@@ -64,7 +64,7 @@ export default [
           {
             key: 'post_reach',
             label: 'reach',
-            value: 42,
+            value: 342,
           },
         ],
       },
