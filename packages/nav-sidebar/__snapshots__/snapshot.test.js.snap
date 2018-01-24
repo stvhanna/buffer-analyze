@@ -315,7 +315,7 @@ exports[`Snapshots NavSidebar if there are no profiles it should not show the In
         }
       >
         <a
-          href="mailto:tom@buffer.com?subject=Analyze feedback"
+          href="mailto:hello+analyze@buffer.com?subject=Analyze feedback"
           onBlur={[Function]}
           onClick={undefined}
           onFocus={[Function]}
@@ -333,25 +333,10 @@ exports[`Snapshots NavSidebar if there are no profiles it should not show the In
           target="_self"
         >
           <span
-            style={
-              Object {
-                "borderRadius": "4px",
-                "display": "block",
-                "margin": "0px 0.5rem",
-                "padding": "0.75rem 0.5rem",
-              }
-            }
+            className="sc-bdVaJa jeXJBe"
           >
             <span
-              style={
-                Object {
-                  "color": "rgb(89, 98, 106)",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1rem",
-                  "fontWeight": "400",
-                  "textDecoration": "none",
-                }
-              }
+              className="sc-bwzfXH bfuxIT"
             >
               Send Feedback
             </span>
@@ -728,7 +713,7 @@ exports[`Snapshots NavSidebar should show nav sidebar with Dashboard as active l
         }
       >
         <a
-          href="mailto:tom@buffer.com?subject=Analyze feedback"
+          href="mailto:hello+analyze@buffer.com?subject=Analyze feedback"
           onBlur={[Function]}
           onClick={undefined}
           onFocus={[Function]}
@@ -746,25 +731,10 @@ exports[`Snapshots NavSidebar should show nav sidebar with Dashboard as active l
           target="_self"
         >
           <span
-            style={
-              Object {
-                "borderRadius": "4px",
-                "display": "block",
-                "margin": "0px 0.5rem",
-                "padding": "0.75rem 0.5rem",
-              }
-            }
+            className="sc-bdVaJa jeXJBe"
           >
             <span
-              style={
-                Object {
-                  "color": "rgb(89, 98, 106)",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1rem",
-                  "fontWeight": "400",
-                  "textDecoration": "none",
-                }
-              }
+              className="sc-bwzfXH bfuxIT"
             >
               Send Feedback
             </span>
@@ -1098,7 +1068,7 @@ exports[`Snapshots NavSidebar should show only services for which the user has p
         }
       >
         <a
-          href="mailto:tom@buffer.com?subject=Analyze feedback"
+          href="mailto:hello+analyze@buffer.com?subject=Analyze feedback"
           onBlur={[Function]}
           onClick={undefined}
           onFocus={[Function]}
@@ -1116,25 +1086,10 @@ exports[`Snapshots NavSidebar should show only services for which the user has p
           target="_self"
         >
           <span
-            style={
-              Object {
-                "borderRadius": "4px",
-                "display": "block",
-                "margin": "0px 0.5rem",
-                "padding": "0.75rem 0.5rem",
-              }
-            }
+            className="sc-bdVaJa jeXJBe"
           >
             <span
-              style={
-                Object {
-                  "color": "rgb(89, 98, 106)",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1rem",
-                  "fontWeight": "400",
-                  "textDecoration": "none",
-                }
-              }
+              className="sc-bwzfXH bfuxIT"
             >
               Send Feedback
             </span>
