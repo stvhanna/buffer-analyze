@@ -64,7 +64,6 @@ function getSeriesRange(series) {
 }
 
 function setChartLimits({ series, yAxis }, usesTwoScales) {
-  console.log(usesTwoScales);
   if (!usesTwoScales) {
     const range = getSeriesRange(series);
     yAxis[0].floor = range.min;
