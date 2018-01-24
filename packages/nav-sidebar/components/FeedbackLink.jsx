@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import {
   Link
 } from '@bufferapp/components';
@@ -15,8 +16,12 @@ import {
      fontFamily: "Roboto", sans-serif;
 	fontSize: 1rem;
 	fontWeight: 400;
-	color: rgb(89, 98, 106);
 	textDecoration: none;
+	color: rgb(89, 98, 106);
+
+	${FeedbackSpan}:hover & {
+    	color: #168eea;
+  	}
  `;
 
 const FeedbackLink = ({ children, email }) => (
