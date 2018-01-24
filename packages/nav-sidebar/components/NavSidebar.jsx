@@ -38,7 +38,6 @@ const NavSidebar = props => (
     <Insights {...props} />
     <div>
       <Label>Tools</Label>
-      <Item href="/comparisons" {...props}>Comparisons</Item>
       <Item href="/reports" {...props}>Reports</Item>
     </div>
     <div style={bottomSectionStyle}>

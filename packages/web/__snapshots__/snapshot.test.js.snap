@@ -941,48 +941,6 @@ exports[`Snapshots App should render application 1`] = `
               </span>
             </span>
             <a
-              href="/comparisons"
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              style={
-                Object {
-                  "color": "#168eea",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
-                  "outline": "none",
-                  "padding": "0",
-                  "textDecoration": "none",
-                }
-              }
-              target="_self"
-            >
-              <span
-                style={
-                  Object {
-                    "borderRadius": "4px",
-                    "display": "block",
-                    "margin": "0 0.5rem",
-                    "padding": "0.75rem 0.5rem",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "1rem",
-                      "fontWeight": 400,
-                    }
-                  }
-                >
-                  Comparisons
-                </span>
-              </span>
-            </a>
-            <a
               href="/reports"
               onBlur={[Function]}
               onClick={[Function]}
@@ -1348,48 +1306,6 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
           </span>
         </span>
         <a
-          href="/comparisons"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          style={
-            Object {
-              "color": "#168eea",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "outline": "none",
-              "padding": "0",
-              "textDecoration": "none",
-            }
-          }
-          target="_self"
-        >
-          <span
-            style={
-              Object {
-                "borderRadius": "4px",
-                "display": "block",
-                "margin": "0 0.5rem",
-                "padding": "0.75rem 0.5rem",
-              }
-            }
-          >
-            <span
-              style={
-                Object {
-                  "color": "#59626a",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1rem",
-                  "fontWeight": 400,
-                }
-              }
-            >
-              Comparisons
-            </span>
-          </span>
-        </a>
-        <a
           href="/reports"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1663,48 +1579,6 @@ exports[`Snapshots InsightsPage should render Insights page 1`] = `
           </span>
         </span>
         <a
-          href="/comparisons"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          style={
-            Object {
-              "color": "#168eea",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "outline": "none",
-              "padding": "0",
-              "textDecoration": "none",
-            }
-          }
-          target="_self"
-        >
-          <span
-            style={
-              Object {
-                "borderRadius": "4px",
-                "display": "block",
-                "margin": "0 0.5rem",
-                "padding": "0.75rem 0.5rem",
-              }
-            }
-          >
-            <span
-              style={
-                Object {
-                  "color": "#59626a",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1rem",
-                  "fontWeight": 400,
-                }
-              }
-            >
-              Comparisons
-            </span>
-          </span>
-        </a>
-        <a
           href="/reports"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1973,48 +1847,6 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
             Tools
           </span>
         </span>
-        <a
-          href="/comparisons"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          style={
-            Object {
-              "color": "#168eea",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "outline": "none",
-              "padding": "0",
-              "textDecoration": "none",
-            }
-          }
-          target="_self"
-        >
-          <span
-            style={
-              Object {
-                "borderRadius": "4px",
-                "display": "block",
-                "margin": "0 0.5rem",
-                "padding": "0.75rem 0.5rem",
-              }
-            }
-          >
-            <span
-              style={
-                Object {
-                  "color": "#59626a",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1rem",
-                  "fontWeight": 400,
-                }
-              }
-            >
-              Comparisons
-            </span>
-          </span>
-        </a>
         <a
           href="/reports"
           onBlur={[Function]}
