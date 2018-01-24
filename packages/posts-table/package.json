@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/posts-table",
-  "version": "0.39.1",
+  "version": "0.40.1",
   "description": "The table for Insights.",
   "main": "index.jsx",
   "scripts": {
@@ -29,7 +29,7 @@
     "@bufferapp/analyze-shared-components": "^0.39.1",
     "@bufferapp/async-data-fetch": "0.5.36-beta01",
     "@bufferapp/components": "2.1.1",
-    "@bufferapp/nav-sidebar": "^0.39.1",
+    "@bufferapp/nav-sidebar": "^0.40.1",
     "lodash.clonedeep": "4.5.0",
     "numeral": "2.0.6",
     "striptags": "^3.1.0"
