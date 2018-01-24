@@ -18,15 +18,17 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
       }));
       break;
     case dateActionTypes.SET_DATE_RANGE:
-      dispatch(actions.fetch({
-        name: 'contextual',
-        args: {
-          profileId: getState().profiles.selectedProfileId,
-          profileService: getState().profiles.selectedProfileService,
-          startDate: action.startDate,
-          endDate: action.endDate,
-        },
-      }));
+      if (getState().profiles.selectedProfileId) {
+        dispatch(actions.fetch({
+          name: 'contextual',
+          args: {
+            profileId: getState().profiles.selectedProfileId,
+            profileService: getState().profiles.selectedProfileService,
+            startDate: action.startDate,
+            endDate: action.endDate,
+          },
+        }));
+      }
       break;
     case exportActionTypes.EXPORT_TO_PNG_START:
       dispatch(exportActions.exportChart(
