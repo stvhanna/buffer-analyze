@@ -44,7 +44,10 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
     case `get_report_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
       action = {
         ...action,
-        result: addProfileInformationToCharts(action.result, state),
+        result: {
+          ...action.result,
+          charts: addProfileInformationToCharts(action.result.charts, state),
+        },
       };
       break;
     case dateActionTypes.SET_DATE_RANGE:
