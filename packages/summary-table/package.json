@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/summary-table",
-  "version": "0.40.1",
+  "version": "0.40.2",
   "description": "Summary Table package for Insights/Overview",
   "main": "index.js",
   "scripts": {
@@ -30,7 +30,7 @@
     "@bufferapp/analyze-shared-components": "^0.39.1",
     "@bufferapp/async-data-fetch": "0.5.36-beta01",
     "@bufferapp/components": "2.1.1",
-    "@bufferapp/nav-sidebar": "^0.40.1",
+    "@bufferapp/nav-sidebar": "^0.40.2",
     "numeral": "2.0.6"
   },
   "devDependencies": {
