@@ -7,7 +7,7 @@ import { Table as SummaryTable, Title as SummaryTitle } from '@bufferapp/summary
 import { Table as PostsSummary, Title as PostsSummaryTitle } from '@bufferapp/posts-summary-table';
 import { Table as AverageTable, Title as AverageTitle } from '@bufferapp/average-table';
 import { ChartContent as HourlyCharts, Title as HourlyTitle } from '@bufferapp/hourly-chart';
-import { Table as TopPostsTable, Title as TopPostsTitle } from '@bufferapp/top-posts-table';
+import { Table as PostsTable, Title as PostsTitle } from '@bufferapp/posts-table';
 import { Title as ContextualTitle } from '@bufferapp/contextual-compare';
 import { Chart as CompareChart, Title as CompareTitle } from '@bufferapp/compare-chart';
 import { CommonChart, ProfileBadge } from '@bufferapp/analyze-shared-components';
@@ -32,9 +32,9 @@ const CHARTS = {
     chart: HourlyCharts,
     title: HourlyTitle,
   },
-  'top-posts': {
-    chart: TopPostsTable,
-    title: TopPostsTitle,
+  posts: {
+    chart: PostsTable,
+    title: PostsTitle,
   },
   'contextual-compare': {
     chart: CommonChart,
