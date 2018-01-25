@@ -26,7 +26,7 @@
     "@bufferapp/analyze-png-export": "^0.39.0",
     "@bufferapp/analyze-profile-selector": "^0.39.1",
     "@bufferapp/analyze-tabs": "^0.22.0",
-    "@bufferapp/app-sidebar": "1.2.7",
+    "@bufferapp/app-sidebar": "1.2.9",
     "@bufferapp/async-data-fetch": "0.5.36-beta01",
     "@bufferapp/audience-chart": "^0.39.1",
     "@bufferapp/audience-comparison-chart": "^0.39.1",
@@ -51,7 +51,7 @@
     "@bufferapp/report-list": "^0.39.1",
     "@bufferapp/summary-table": "^0.40.2",
     "@bufferapp/top-posts-table": "^0.40.2",
-    "@bufferapp/unauthorized-redirect": "1.2.3"
+    "@bufferapp/unauthorized-redirect": "1.2.9"
   },
   "devDependencies": {
     "eslint": "3.19.0",
