@@ -13,7 +13,7 @@ import {
 } from '@bufferapp/analyze-shared-components';
 
 
-import Title from './components/Title';
+import Title from '../Title';
 import PostItem from './components/PostItem';
 import PostsHeader from './components/PostsHeader';
 
