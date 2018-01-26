@@ -2,13 +2,13 @@
 # yarn lockfile v1
 
 
-"@bufferapp/app-sidebar@1.2.7":
-  version "1.2.7"
-  resolved "https://registry.yarnpkg.com/@bufferapp/app-sidebar/-/app-sidebar-1.2.7.tgz#ba36f64592fb22b21f4674bcbb8683ca44678fba"
+"@bufferapp/app-sidebar@1.2.9":
+  version "1.2.9"
+  resolved "https://registry.yarnpkg.com/@bufferapp/app-sidebar/-/app-sidebar-1.2.9.tgz#4f66028823a40b442a427d837a256c469cfe1c4e"
   dependencies:
     "@bufferapp/async-data-fetch" "1.2.7"
     "@bufferapp/components" "1.1.0-beta.6"
-    "@bufferapp/session-manager" "0.5.42"
+    "@bufferapp/session-manager" "0.5.43"
 
 "@bufferapp/async-data-fetch@0.5.25":
   version "0.5.25"
@@ -103,21 +103,6 @@
   version "0.2.5"
   resolved "https://registry.yarnpkg.com/@bufferapp/react-keyframes/-/react-keyframes-0.2.5.tgz#fed847849f170c440ad6ea683224352e4b882b92"
 
-"@bufferapp/session-manager@0.5.39":
-  version "0.5.39"
-  resolved "https://registry.yarnpkg.com/@bufferapp/session-manager/-/session-manager-0.5.39.tgz#fa8753005976682ad7a6830ac17b5573cc4161c0"
-  dependencies:
-    micro-rpc-client "0.1.2"
-    object-path "0.11.4"
-
-"@bufferapp/session-manager@0.5.42":
-  version "0.5.42"
-  resolved "https://registry.yarnpkg.com/@bufferapp/session-manager/-/session-manager-0.5.42.tgz#722279a32af1a3e0ba7c6d695f0830bbb85f0f63"
-  dependencies:
-    jsonwebtoken "8.1.0"
-    micro-rpc-client "0.1.2"
-    object-path "0.11.4"
-
 "@bufferapp/session-manager@0.5.43":
   version "0.5.43"
   resolved "https://registry.yarnpkg.com/@bufferapp/session-manager/-/session-manager-0.5.43.tgz#2fe80cce760a7b500fcd79e3643b24c8ba1d1893"
@@ -130,12 +115,12 @@
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@bufferapp/shutdown-helper/-/shutdown-helper-0.2.0.tgz#d43bbba845e30e411dda76a7b7629e11160e5395"
 
-"@bufferapp/unauthorized-redirect@1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@bufferapp/unauthorized-redirect/-/unauthorized-redirect-1.2.3.tgz#c4ae21a2d6f0557920a92d6e8b841db67b9d6f67"
+"@bufferapp/unauthorized-redirect@1.2.9":
+  version "1.2.9"
+  resolved "https://registry.yarnpkg.com/@bufferapp/unauthorized-redirect/-/unauthorized-redirect-1.2.9.tgz#6325067c42da8ca5dbf385631637d6e9a50f6be7"
   dependencies:
-    "@bufferapp/async-data-fetch" "0.7.4"
-    "@bufferapp/session-manager" "0.5.39"
+    "@bufferapp/async-data-fetch" "1.2.7"
+    "@bufferapp/session-manager" "0.5.43"
 
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
   version "1.1.2"
