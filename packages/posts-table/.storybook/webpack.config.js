@@ -2,19 +2,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.less$/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true,
-            },
-          },
-          'less-loader',
-        ],
-      },
-      {
         test: /\.css$/,
         use: [
           'style-loader',
@@ -27,6 +14,19 @@ module.exports = {
         use: {
           loader: 'babel-loader',
         },
+      },
+      {
+        test: /\.less$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+            },
+          },
+          'less-loader',
+        ],
       },
     ],
   },

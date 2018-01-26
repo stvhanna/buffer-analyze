@@ -13,6 +13,7 @@ import {
 import Label from './Label';
 import Item from './Item';
 import Insights from './Insights';
+import FeedbackLink from './FeedbackLink';
 
 const sidebarStyle = {
   display: 'flex',
@@ -26,14 +27,22 @@ const sidebarStyle = {
   boxSizing: 'border-box',
 };
 
+const bottomSectionStyle = {
+  marginTop: 'auto'
+};
+
 const NavSidebar = props => (
   <div style={sidebarStyle}>
     <Item href="/" {...props}>Dashboard</Item>
     <Divider marginTop="0.75rem" marginBottom="1rem" />
     <Insights {...props} />
-    <Label>Tools</Label>
-    <Item href="/comparisons" {...props}>Comparisons</Item>
-    <Item href="/reports" {...props}>Reports</Item>
+    <div>
+      <Label>Tools</Label>
+      <Item href="/reports" {...props}>Reports</Item>
+    </div>
+    <div style={bottomSectionStyle}>
+      <FeedbackLink email="hello+analyze@buffer.com">Send Feedback</FeedbackLink>
+    </div>
   </div>
 );
 
