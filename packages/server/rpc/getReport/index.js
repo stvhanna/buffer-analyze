@@ -11,14 +11,13 @@ const RPC_ENDPOINTS = {
   compare: require('../compare'), // eslint-disable-line global-require
 };
 
-const requestChartData = (chart, startDate, endDate, session) => {
-  return RPC_ENDPOINTS[chart.chart_id].fn(Object.assign({
+const requestChartData = (chart, startDate, endDate, session) =>
+  RPC_ENDPOINTS[chart.chart_id].fn(Object.assign({
     profileId: chart.profile_id,
     profileService: chart.service,
     startDate,
     endDate,
   }, chart.state), { session });
-}
 
 module.exports = method(
   'get_report',
@@ -32,11 +31,11 @@ module.exports = method(
         id: _id,
       },
       json: true,
-    }).then((report) => {
-      return Promise
+    }).then(report =>
+      Promise
         .all(report.charts.map(chart => requestChartData(chart, startDate, endDate, session)))
-        .then(chartMetrics => {
-          return Object.assign(report, {
+        .then(chartMetrics =>
+          Object.assign(report, {
             charts: report.charts.map((chart, index) => {
               if (!Array.isArray(chartMetrics[index])) {
                 return Object.assign(chart, chart.state, chartMetrics[index]);
@@ -45,9 +44,8 @@ module.exports = method(
                 metrics: chartMetrics[index],
               });
             }),
-          });
-        })
-    })
+          })),
+    )
   ,
 );
 
