@@ -69,6 +69,7 @@ const Profile = styled.span`
 const Legend = styled.span`
   display: flex;
   align-items: center;
+  margin-bottom: 8px;
 `;
 
 const ProfileLegend = ({ profile }) =>
