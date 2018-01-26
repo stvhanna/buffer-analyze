@@ -44,4 +44,8 @@ module.exports = {
       },
     ],
   },
+  node: {
+    dns: 'mock',
+    net: 'mock',
+  },
 };
