@@ -36,13 +36,18 @@ describe('reducer', () => {
     it('stops loading', () => {
       const state = reducer(undefined, {
         type: `get_report_${asyncDataFetchActions.FETCH_SUCCESS}`,
+        result: {
+          name: 'A new report',
+        },
       });
       expect(state.loading).toBeFalsy();
     });
     it('stores the retrieved chart information', () => {
       const state = reducer(undefined, {
         type: `get_report_${asyncDataFetchActions.FETCH_SUCCESS}`,
-        result: ['a chart', 'another chart'],
+        result: {
+          charts: ['a chart', 'another chart'],
+        },
       });
       expect(state.charts).toEqual(['a chart', 'another chart']);
     });
