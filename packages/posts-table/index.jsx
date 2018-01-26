@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { PostsTable } from '@bufferapp/analyze-shared-components';
 import AddReport from '@bufferapp/add-report';
 
+import PostsTable from './components/PostsTable';
 import { actions } from './reducer';
 
 export const PostsTableWrapper = props => (<div id="js-dom-to-png-posts"><PostsTable

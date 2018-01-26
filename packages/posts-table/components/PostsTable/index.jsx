@@ -10,7 +10,7 @@ import {
   ChartStateLoading as Loading,
   ChartCard,
   ChartHeader,
-} from '../index';
+} from '@bufferapp/analyze-shared-components';
 
 
 import Title from './components/Title';
