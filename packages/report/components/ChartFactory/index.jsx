@@ -7,10 +7,13 @@ import { Table as SummaryTable, Title as SummaryTitle } from '@bufferapp/summary
 import { Table as PostsSummary, Title as PostsSummaryTitle } from '@bufferapp/posts-summary-table';
 import { Table as AverageTable, Title as AverageTitle } from '@bufferapp/average-table';
 import { ChartContent as HourlyCharts, Title as HourlyTitle } from '@bufferapp/hourly-chart';
-import { Table as TopPostsTable, Title as TopPostsTitle } from '@bufferapp/top-posts-table';
 import { Title as ContextualTitle } from '@bufferapp/contextual-compare';
+import { Table as PostsTable, Title as PostsTitle } from '@bufferapp/posts-table';
 import { Chart as CompareChart, Title as CompareTitle } from '@bufferapp/compare-chart';
-import { CommonChart, ProfileBadge } from '@bufferapp/analyze-shared-components';
+import {
+  CommonChart,
+  ProfileBadge,
+} from '@bufferapp/analyze-shared-components';
 import styled from 'styled-components';
 
 import ChartEditButtons from '../ChartEditButtons';
@@ -32,9 +35,9 @@ const CHARTS = {
     chart: HourlyCharts,
     title: HourlyTitle,
   },
-  'top-posts': {
-    chart: TopPostsTable,
-    title: TopPostsTitle,
+  posts: {
+    chart: PostsTable,
+    title: PostsTitle,
   },
   'contextual-compare': {
     chart: CommonChart,
@@ -66,6 +69,7 @@ const Profile = styled.span`
 const Legend = styled.span`
   display: flex;
   align-items: center;
+  margin-bottom: 8px;
 `;
 
 const ProfileLegend = ({ profile }) =>

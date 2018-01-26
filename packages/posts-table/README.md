@@ -1,6 +1,6 @@
-# @bufferapp/top-posts-table
+# @bufferapp/posts-table
 
-The top posts table for Insights.
+The posts table for Insights.
 
 - [Quick Start](#quick-start)
 - [Package Anatomy](#component-anatomy)
@@ -53,7 +53,7 @@ npm run test-watch
 A UI package should include all concerns related to a given feature.
 
 ```
-top-posts-table/ # root
+posts-table/ # root
 +-- __snapshots__/
     `-- snapshot.test.js.snap # jest snapshots storage
 +-- .storybook/ # React Storybook Configuration
@@ -65,7 +65,7 @@ top-posts-table/ # root
         `-- index.jsx # implementation of the component
         `-- story.jsx # description of all the possible configurations of the component
 `-- .babelrc # babel transpiler
-`-- index.js # main package file, should export the container and top level  resources
+`-- index.js # main package file, should export the container and level  resources
 `-- index.test.js # main package file tests
 `-- middleware.js # all action side effects
 `-- middleware.test.js # test action side effects
@@ -83,7 +83,7 @@ This is the main package file, it's default export should be the container.
 Imagine another package is trying to use the package you're building. The package API should look like this:
 
 ```js
-import TopPostsTable, { actions, actionTypes, middleware, reducer } from '@bufferapp/top-posts-table';
+import TopPostsTable, { actions, actionTypes, middleware, reducer } from '@bufferapp/posts-table';
 ```
 
 ### components/

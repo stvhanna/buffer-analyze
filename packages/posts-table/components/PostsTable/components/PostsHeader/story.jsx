@@ -1,15 +1,15 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
-import TopPostsHeader from './index';
+import PostsHeader from './index';
 
 import mockMetrics from './components/TopPostsDropdown/mocks/metrics';
 
-storiesOf('TopPostsHeader')
+storiesOf('PostsHeader')
   .addDecorator(checkA11y)
   .add('should render top posts header', () => (
     <div>
-      <TopPostsHeader
+      <PostsHeader
         metrics={mockMetrics}
         selectedMetric={mockMetrics[3]}
         isDescendingSelected

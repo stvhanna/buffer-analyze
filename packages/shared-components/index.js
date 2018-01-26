@@ -6,7 +6,6 @@ export style from './style';
 export MetricIcon from './MetricIcon';
 export ProfileIcon from './ProfileIcon';
 export PeriodPhrase from './PeriodPhrase';
-export PostsTable from './PostsTable';
 export ProfileBadge from './ProfileBadge';
 export SocialIcon from './SocialIcon';
 export TruncatedNumber from './TruncatedNumber';
