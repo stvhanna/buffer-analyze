@@ -55,7 +55,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
         store.dispatch(actions.fetch({
           name: 'get_report',
           args: {
-            _id: getReportId(action.payload.pathname),
+            _id: getReportId(state.router.location.pathname),
             startDate: action.startDate,
             endDate: action.endDate,
           },
