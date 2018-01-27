@@ -6,41 +6,13 @@ import styled from 'styled-components';
 
 import AddReport from './index';
 
+import mockReports from '../../mock/reports';
+
 const Spacer = styled.span`
   display: inline-block;
   width: 660px;
   height: 60px;
 `;
-
-const mockReports = [{
-  _id: '1293125asda',
-  name: 'Weekly Sync Report',
-  updated_at: 1510099200000,
-}, {
-  _id: '1921591adsd',
-  name: 'client social media campaign',
-  updated_at: 1507680000000,
-}, {
-  _id: '1921591adsd',
-  name: 'client social media campaign',
-  updated_at: 1507680000000,
-}, {
-  _id: '1921591adsd',
-  name: 'client social media campaign',
-  updated_at: 1507680000000,
-}, {
-  _id: '1921591adsd',
-  name: 'client social media campaign',
-  updated_at: 1507680000000,
-}, {
-  _id: '1921591adsd',
-  name: 'client social media campaign',
-  updated_at: 1507680000000,
-}, {
-  _id: '1921591adsd',
-  name: 'client social media campaign',
-  updated_at: 1507680000000,
-}];
 
 storiesOf('AddReport')
   .addDecorator(checkA11y)
@@ -52,6 +24,8 @@ storiesOf('AddReport')
           addReport: 'Add to Report',
         }}
         toggleMenu={action('open menu')}
+        createReport={action('create report')}
+        addToReport={action('add to report')}
       />
     </div>
   ))
@@ -65,6 +39,8 @@ storiesOf('AddReport')
         toggleMenu={action('close menu')}
         addReport={action('add report')}
         reports={mockReports}
+        createReport={action('create report')}
+        addToReport={action('add to report')}
         open
       />
     </div>

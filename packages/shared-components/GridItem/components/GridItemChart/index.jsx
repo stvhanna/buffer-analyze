@@ -5,14 +5,13 @@ import moment from 'moment-timezone';
 
 import chartConfig from './chartConfig';
 
-function prepareSeries(dailyMetric, timezone) {
+function prepareSeries(dailyMetric) {
   const seriesData = Array.from(dailyMetric, (day) => {
     const dayStartTimestamp = moment.utc(Number(day.day)).startOf('day').valueOf();
     return {
       x: dayStartTimestamp,
       y: day.metric ? day.metric.value : 0,
       label: day.metric ? day.metric.label : '',
-      timezone,
       color: {
         linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
         stops: [
@@ -39,14 +38,14 @@ function prepareSeries(dailyMetric, timezone) {
   }];
 }
 
-function prepareChartOptions(dailyMetric, timezone) {
+function prepareChartOptions(dailyMetric) {
   const config = Object.assign({}, chartConfig);
-  config.series = prepareSeries(dailyMetric, timezone);
+  config.series = prepareSeries(dailyMetric);
   return config;
 }
 
-const GridItemChart = ({ dailyData, timezone }) => {
-  const charOptions = prepareChartOptions(dailyData, timezone);
+const GridItemChart = ({ dailyData }) => {
+  const charOptions = prepareChartOptions(dailyData);
   return (<ReactHighcharts config={charOptions} />);
 };
 
@@ -59,7 +58,6 @@ GridItemChart.propTypes = {
       value: PropTypes.number.isRequired,
     }),
   })).isRequired,
-  timezone: PropTypes.string.isRequired,
 };
 
 export default GridItemChart;

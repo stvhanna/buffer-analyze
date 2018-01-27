@@ -34,7 +34,6 @@ const GridItem = ({
   tooltip,
   gridWidth,
   dailyData,
-  timezone,
   customLabel,
   prefix,
   hideDiff,
@@ -52,7 +51,7 @@ const GridItem = ({
       {prefix && prefix}
       <div>
         {dailyData.length > 1 &&
-          <GridItemChart timezone={timezone} dailyData={dailyMetricData} />
+          <GridItemChart dailyData={dailyMetricData} />
         }
         <Label tooltip={tooltip} >
           {!customLabel && metric.label}
@@ -70,7 +69,6 @@ const GridItem = ({
 GridItem.defaultProps = {
   dailyData: [],
   gridWidth: '25%',
-  timezone: 'Etc/UTC',
   tooltip: null,
   customLabel: null,
   prefix: null,
@@ -94,7 +92,6 @@ GridItem.propTypes = {
     })),
   })),
   tooltip: PropTypes.string,
-  timezone: PropTypes.string,
   gridWidth: PropTypes.string,
   hideDiff: PropTypes.bool,
 };

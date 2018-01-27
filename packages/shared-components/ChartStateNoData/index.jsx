@@ -37,7 +37,7 @@ const NoData = () => (
     <Message>
       <Image />
       <Header>
-        <Text size="medium">There are no analytics for this date range</Text>
+        <Text>There are no analytics for this date range</Text>
       </Header>
     </Message>
   </Container>

@@ -19,7 +19,7 @@ const ReportWithDate =
 ReportWithDate.propTypes = {
   _id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  updated_at: PropTypes.string.isRequired,
+  updated_at: PropTypes.number.isRequired,
   selectReport: PropTypes.func.isRequired,
   small: PropTypes.bool,
 };
