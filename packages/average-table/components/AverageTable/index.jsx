@@ -25,18 +25,20 @@ const gridContainer = {
   padding: '1.5rem',
 };
 
-export const Table = ({ daily, totals, timezone }) =>
+export const Table = ({ daily, totals}) =>
   <ul style={gridStyle}>
     {totals.map(metric => <GridItem
       key={metric.label}
       metric={metric}
       dailyData={daily}
-      timezone={timezone}
     />)}
   </ul>;
 
+Table.defaultProps = {
+  daily: [],
+};
+
 Table.propTypes = {
-  timezone: PropTypes.string.isRequired,
   daily: PropTypes.arrayOf(PropTypes.shape({
     day: PropTypes.string.isRequired,
     metrics: PropTypes.arrayOf(PropTypes.shape({
@@ -44,7 +46,7 @@ Table.propTypes = {
       label: PropTypes.string.isRequired,
       value: PropTypes.number.isRequired,
     })),
-  })).isRequired,
+  })),
   totals: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string,
     value: PropTypes.number,
@@ -57,7 +59,7 @@ export const Title = () =>
     <Text weight="bold" size="large">Average performance</Text>
   </h2>;
 
-const AverageTable = ({ metrics, loading, timezone }) => {
+const AverageTable = ({ metrics, loading }) => {
   let content = null;
   if (loading) {
     content = <Loading active noBorder />;
@@ -65,7 +67,7 @@ const AverageTable = ({ metrics, loading, timezone }) => {
     content = <NoData />;
   } else {
     content = (
-      <Table daily={metrics.daily} totals={metrics.totals} timezone={timezone} />
+      <Table daily={metrics.daily} totals={metrics.totals} />
     );
   }
 
@@ -88,7 +90,6 @@ AverageTable.defaultProps = {
 
 AverageTable.propTypes = {
   loading: PropTypes.bool,
-  timezone: PropTypes.string.isRequired,
   metrics: PropTypes.shape({
     daily: PropTypes.arrayOf(PropTypes.shape({
       day: PropTypes.string.isRequired,
