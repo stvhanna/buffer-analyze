@@ -53,7 +53,7 @@ AudienceComparisonChart.propTypes = {
     service: PropTypes.string,
   })).isRequired,
   profiles: PropTypes.arrayOf(PropTypes.shape({
-    profileId: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
     username: PropTypes.string.isRequired,
     avatarUrl: PropTypes.string.isRequired,
     service: PropTypes.string.isRequired,
