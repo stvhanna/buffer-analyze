@@ -78,7 +78,7 @@ AddReport.propTypes = {
   createReport: PropTypes.func.isRequired,
   addToReport: PropTypes.func.isRequired,
   reports: PropTypes.arrayOf(PropTypes.shape({
-    updated_at: PropTypes.string,
+    updated_at: PropTypes.number,
     name: PropTypes.string,
   })),
 };

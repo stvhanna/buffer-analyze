@@ -98,7 +98,7 @@ AddReportModal.propTypes = {
   }).isRequired,
   toggle: PropTypes.func,
   reports: PropTypes.arrayOf(PropTypes.shape({
-    updated_at: PropTypes.string,
+    updated_at: PropTypes.number,
     name: PropTypes.string,
   })),
 };
