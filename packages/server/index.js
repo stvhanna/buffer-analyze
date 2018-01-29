@@ -36,7 +36,7 @@ if (isProduction) {
     response_code: true,
     bufferRPC: true,
     tags: ['app:analyze', 'service:web'],
-  }));
+  }, 'dd-agent.default'));
   staticAssets = JSON.parse(fs.readFileSync(join(__dirname, 'staticAssets.json'), 'utf8'));
   if (process.env.BUGSNAG_KEY) {
     bugsnag.register(process.env.BUGSNAG_KEY);
