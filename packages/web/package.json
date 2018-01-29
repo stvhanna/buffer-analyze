@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/web-analyze",
-  "version": "0.41.0",
+  "version": "0.42.0",
   "description": "Analyze Web Dashboard",
   "main": "index.jsx",
   "scripts": {
@@ -24,7 +24,7 @@
     "@bufferapp/analyze-export-picker": "^0.39.0",
     "@bufferapp/analyze-profile-selector": "^0.41.0",
     "@bufferapp/analyze-shared-components": "^0.40.4",
-    "@bufferapp/analyze-store": "^0.41.0",
+    "@bufferapp/analyze-store": "^0.42.0",
     "@bufferapp/analyze-tabs": "^0.22.0",
     "@bufferapp/app-sidebar": "1.2.9",
     "@bufferapp/async-data-fetch": "0.5.36-beta01",
