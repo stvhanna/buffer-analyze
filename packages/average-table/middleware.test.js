@@ -1,5 +1,6 @@
 import { actions } from '@bufferapp/async-data-fetch';
 import { actionTypes } from '@bufferapp/analyze-profile-selector';
+import { actionTypes as dateActionTypes } from '@bufferapp/analyze-date-picker';
 import { actions as exportActions, actionTypes as exportActionTypes } from '@bufferapp/analyze-png-export';
 import { actions as csvExportActions, actionTypes as csvExportActionTypes } from '@bufferapp/analyze-csv-export';
 import middleware from './middleware';
@@ -85,4 +86,41 @@ describe('middleware', () => {
     middleware(store)(next)(action);
     expect(store.dispatch).toHaveBeenCalledWith(csvExportActions.exportChart('average-performance-statistics', csvData));
   });
+
+  describe('SET_DATE_RANGE', () => {
+    it('should dispatch an average metrics fetch if there is a profile selected', () => {
+      const action = {
+        type: dateActionTypes.SET_DATE_RANGE,
+        startDate: state.date.startDate,
+        endDate: state.date.endDate,
+      };
+      state.profiles = {
+        selectedProfileId: profileId,
+      };
+      middleware(store)(next)(action);
+      expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
+        name: 'average',
+        args: {
+          profileId,
+          startDate: state.date.startDate,
+          endDate: state.date.endDate,
+        },
+      }));
+      expect(next).toHaveBeenCalledWith(action);
+    });
+    it('should not dispatch it if there is no profile selected', () => {
+      const action = {
+        type: dateActionTypes.SET_DATE_RANGE,
+        startDate: state.date.startDate,
+        endDate: state.date.endDate,
+      };
+      state.profiles = {
+        selectedProfileId: null,
+      };
+      middleware(store)(next)(action);
+      expect(store.dispatch).not.toHaveBeenCalled();
+    });
+  });
+
+  afterEach(() => jest.clearAllMocks());
 });
