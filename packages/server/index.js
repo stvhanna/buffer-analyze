@@ -12,7 +12,7 @@ const cookieParser = require('cookie-parser');
 const {
   middleware: sessionMiddleware,
 } = require('@bufferapp/session-manager');
-const connectDatadog = require('connect-datadog');
+const connectDatadog = require('@bufferapp/connect-datadog');
 const { apiError } = require('./middleware');
 const controller = require('./lib/controller');
 const rpc = require('./rpc');
