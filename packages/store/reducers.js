@@ -14,7 +14,6 @@ import { reducer as averageReducer } from '@bufferapp/average-table';
 import { reducer as exportToPNGReducer } from '@bufferapp/analyze-png-export';
 import { reducer as exportToCSVReducer } from '@bufferapp/analyze-csv-export';
 import { reducer as postsReducer } from '@bufferapp/posts-table';
-import { reducer as hourly } from '@bufferapp/hourly-chart';
 import { reducer as compareChartReducer } from '@bufferapp/compare-chart';
 import { reducer as audienceChartReducer } from '@bufferapp/audience-chart';
 import { reducer as reportListReducer } from '@bufferapp/report-list';
@@ -43,7 +42,6 @@ export default combineReducers({
   profileLoader: profileLoaderReducer,
   postsSummary: postsSummaryReducer,
   posts: postsReducer,
-  hourly,
   exportPicker: exportPickerReducer,
   exportToPNG: exportToPNGReducer,
   exportToCSV: exportToCSVReducer,

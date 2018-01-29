@@ -6,7 +6,6 @@ import {
 import { Table as SummaryTable, Title as SummaryTitle } from '@bufferapp/summary-table';
 import { Table as PostsSummary, Title as PostsSummaryTitle } from '@bufferapp/posts-summary-table';
 import { Table as AverageTable, Title as AverageTitle } from '@bufferapp/average-table';
-import { ChartContent as HourlyCharts, Title as HourlyTitle } from '@bufferapp/hourly-chart';
 import { Title as ContextualTitle } from '@bufferapp/contextual-compare';
 import { Table as PostsTable, Title as PostsTitle } from '@bufferapp/posts-table';
 import { Chart as CompareChart, Title as CompareTitle } from '@bufferapp/compare-chart';
@@ -30,10 +29,6 @@ const CHARTS = {
   average: {
     chart: AverageTable,
     title: AverageTitle,
-  },
-  'hourly-engagements': {
-    chart: HourlyCharts,
-    title: HourlyTitle,
   },
   posts: {
     chart: PostsTable,
