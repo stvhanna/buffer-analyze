@@ -35,6 +35,7 @@ import { middleware as commentsComparisonMiddleware } from '@bufferapp/comments-
 import { middleware as environmentMiddleware } from '@bufferapp/environment';
 import { middleware as unauthorizedRedirectMiddleware } from '@bufferapp/unauthorized-redirect';
 import { middleware as exportToPDFMiddleware } from '@bufferapp/pdf-export';
+import { middleware as earlyAccessMiddleware } from '@bufferapp/analyze-early-access';
 import { createMiddleware } from '@bufferapp/buffermetrics/redux';
 import initMiddleware from './initMiddleware';
 
@@ -61,6 +62,7 @@ const configureStore = (initialstate) => {
     initialstate,
     composeEnhancers(
       applyMiddleware(
+        earlyAccessMiddleware,
         initMiddleware,
         routerMiddleware(history),
         asyncDataFetchMiddleware,
