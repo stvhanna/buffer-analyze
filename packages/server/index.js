@@ -12,6 +12,7 @@ const cookieParser = require('cookie-parser');
 const {
   middleware: sessionMiddleware,
 } = require('@bufferapp/session-manager');
+const connectDatadog = require('connect-datadog');
 const { apiError } = require('./middleware');
 const controller = require('./lib/controller');
 const rpc = require('./rpc');
@@ -31,6 +32,11 @@ const isProduction = process.env.NODE_ENV === 'production';
 app.set('isProduction', isProduction);
 
 if (isProduction) {
+  app.use(connectDatadog({
+    response_code: true,
+    bufferRPC: true,
+    tags: ['app:analyze', 'service:web'],
+  }));
   staticAssets = JSON.parse(fs.readFileSync(join(__dirname, 'staticAssets.json'), 'utf8'));
   if (process.env.BUGSNAG_KEY) {
     bugsnag.register(process.env.BUGSNAG_KEY);
