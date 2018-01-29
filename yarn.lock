@@ -73,6 +73,12 @@
     react-autocomplete "1.7.2"
     react-day-picker "6.2.1"
 
+"@bufferapp/connect-datadog@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@bufferapp/connect-datadog/-/connect-datadog-0.2.1.tgz#e6e5a783fe9e047440a10b111457e6a24ab83049"
+  dependencies:
+    node-dogstatsd "0.0.6"
+
 "@bufferapp/environment@1.2.3":
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/@bufferapp/environment/-/environment-1.2.3.tgz#bf5aebd58375785d2ee6bd625faba2af9095f847"
