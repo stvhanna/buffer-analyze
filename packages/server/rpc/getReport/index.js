@@ -1,3 +1,4 @@
+const rp = require('request-promise');
 const { method } = require('@bufferapp/micro-rpc');
 
 const RPC_ENDPOINTS = {
@@ -21,18 +22,30 @@ const requestChartData = (chart, startDate, endDate, session) =>
 module.exports = method(
   'get_report',
   'get report details',
-  ({ charts, startDate, endDate }, { session }) =>
-    Promise
-      .all(charts.map(chart => requestChartData(chart, startDate, endDate, session)))
-      .then(chartMetrics =>
-        charts.map((chart, index) => {
-          if (!Array.isArray(chartMetrics[index])) {
-            return Object.assign(chart, chart.state, chartMetrics[index]);
-          }
-          return Object.assign(chart, {
-            metrics: chartMetrics[index],
-          });
-        }))
+  ({ _id, startDate, endDate }, { session }) =>
+    rp({
+      uri: `${process.env.ANALYZE_API_ADDR}/get_report`,
+      method: 'POST',
+      strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
+      body: {
+        id: _id,
+      },
+      json: true,
+    }).then(report =>
+      Promise
+        .all(report.charts.map(chart => requestChartData(chart, startDate, endDate, session)))
+        .then(chartMetrics =>
+          Object.assign(report, {
+            charts: report.charts.map((chart, index) => {
+              if (!Array.isArray(chartMetrics[index])) {
+                return Object.assign(chart, chart.state, chartMetrics[index]);
+              }
+              return Object.assign(chart, {
+                metrics: chartMetrics[index],
+              });
+            }),
+          })),
+    )
   ,
 );
 

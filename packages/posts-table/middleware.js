@@ -114,17 +114,19 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
       }));
       break;
     case dateActionTypes.SET_DATE_RANGE:
-      dispatch(actions.fetch({
-        name: 'posts',
-        args: {
-          profileId: getState().profiles.selectedProfileId,
-          startDate: action.startDate,
-          endDate: action.endDate,
-          sortBy: getState().posts.selectedMetric.apiKey,
-          descending: getState().posts.isDescendingSelected,
-          limit: getState().posts.activePostsCount,
-        },
-      }));
+      if (getState().profiles.selectedProfileId) {
+        dispatch(actions.fetch({
+          name: 'posts',
+          args: {
+            profileId: getState().profiles.selectedProfileId,
+            startDate: action.startDate,
+            endDate: action.endDate,
+            sortBy: getState().posts.selectedMetric.apiKey,
+            descending: getState().posts.isDescendingSelected,
+            limit: getState().posts.activePostsCount,
+          },
+        }));
+      }
       break;
     default:
       break;

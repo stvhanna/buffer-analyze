@@ -1,3 +1,4 @@
+import { LOCATION_CHANGE } from 'react-router-redux';
 import { actions, actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-fetch';
 import { actionTypes as dateActionTypes } from '@bufferapp/analyze-date-picker';
 import { actionTypes as listActionTypes } from '@bufferapp/report-list';
@@ -43,7 +44,10 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
     case `get_report_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
       action = {
         ...action,
-        result: addProfileInformationToCharts(action.result, state),
+        result: {
+          ...action.result,
+          charts: addProfileInformationToCharts(action.result.charts, state),
+        },
       };
       break;
     case dateActionTypes.SET_DATE_RANGE:
@@ -51,22 +55,19 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
         store.dispatch(actions.fetch({
           name: 'get_report',
           args: {
-            ...state.report,
+            _id: getReportId(state.router.location.pathname),
             startDate: action.startDate,
             endDate: action.endDate,
           },
         }));
       }
       break;
-    case `list_reports_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
-      if (isReportDetailRoute(state.router.location.pathname)) {
+    case LOCATION_CHANGE:
+      if (isReportDetailRoute(action.payload.pathname)) {
         store.dispatch(actions.fetch({
           name: 'get_report',
           args: {
-            ...addProfileServiceToReportsCharts(
-              getReport(getReportId(state.router.location.pathname), action.result),
-              state,
-            ),
+            _id: getReportId(action.payload.pathname),
             startDate: state.date.startDate,
             endDate: state.date.endDate,
           },

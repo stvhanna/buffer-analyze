@@ -56,10 +56,6 @@ export default ({ dispatch, getState }) => next => (action) => {
       // insights
       if (getProfileIdAndServiceFromRoute(getState())) {
         dispatch(profilesActions.selectProfile(...getProfileIdAndServiceFromRoute(getState())));
-      } else {
-        // select the first profile
-        const firstProfile = action.result[0];
-        dispatch(profilesActions.selectProfile(firstProfile.id, firstProfile.service));
       }
       dispatch(performanceActions.measureFromNavigationStart({ name: 'firstMeaningfulPaint' }));
       break;

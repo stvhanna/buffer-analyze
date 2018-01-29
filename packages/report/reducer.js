@@ -54,7 +54,8 @@ export default (state = initialState, action) => {
     case `get_report_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
       return {
         ...state,
-        charts: action.result,
+        name: action.result.name,
+        charts: action.result.charts,
         loading: false,
       };
     case `move_chart_${asyncDataFetchActionTypes.FETCH_FAIL}`:

@@ -1,8 +1,10 @@
 import { actionTypes as dateActionTypes } from '@bufferapp/analyze-date-picker';
 import { actions, actionTypes as asyncDataFetchActions } from '@bufferapp/async-data-fetch';
 import { actionTypes as listActionTypes } from '@bufferapp/report-list';
+import { LOCATION_CHANGE } from 'react-router-redux';
 import { actionTypes } from './reducer';
 import middleware, { DIRECTION_UP, DIRECTION_DOWN } from './middleware';
+
 
 jest.mock('./PDFFormatter.js');
 import PDFFormatter from './PDFFormatter'; // eslint-disable-line import/first
@@ -38,7 +40,7 @@ describe('middleware', () => {
     },
     router: {
       location: {
-        pathname: '',
+        pathname: '/reports/report_id_1',
       },
     },
     profiles: {
@@ -78,7 +80,7 @@ describe('middleware', () => {
       expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
         name: 'get_report',
         args: {
-          id: state.report.id,
+          _id: 'report_id_1',
           startDate: '10/10/2016',
           endDate: '20/10/2016',
         },
@@ -123,77 +125,32 @@ describe('middleware', () => {
     }));
   });
 
-  describe('list_reports_FETCH_SUCCESS', () => {
-    it('should get report if on a report route and reports list has loaded', () => {
-      state.router = {
-        location: {
-          pathname: '/reports/1234',
-        },
-      };
-
-      const action = {
-        type: `list_reports_${asyncDataFetchActions.FETCH_SUCCESS}`,
-        result: [{
-          _id: '1234',
-          name: 'Another report',
-          charts: [],
-        }],
-      };
-      middleware(store)(next)(action);
-      expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
-        name: 'get_report',
-        args: {
-          _id: '1234',
-          name: 'Another report',
-          startDate: state.date.startDate,
-          endDate: state.date.endDate,
-          charts: [],
-        },
-      }));
-    });
-
-    it('should not fetch any report information if not in a report route', () => {
-      state.router = {
-        location: {
-          pathname: '/',
-        },
-      };
-      const action = {
-        type: `list_reports_${asyncDataFetchActions.FETCH_SUCCESS}`,
-        result: [{
-          _id: '1234',
-          name: 'Another report',
-          charts: [],
-        }],
-      };
-      middleware(store)(next)(action);
-      expect(store.dispatch).not.toHaveBeenCalled();
-    });
-  });
-
-
   it('fills profile information for each retrieved chart', () => {
     const action = {
       type: `get_report_${asyncDataFetchActions.FETCH_SUCCESS}`,
-      result: [{
-        chart_id: 'summary-table',
-        profile_id: 'profile1',
-        metrics: [],
-      }],
+      result: {
+        charts: [{
+          chart_id: 'summary-table',
+          profile_id: 'profile1',
+          metrics: [],
+        }],
+      },
     };
     middleware(store)(next)(action);
     expect(next).toHaveBeenCalledWith({
       type: action.type,
-      result: [{
-        chart_id: 'summary-table',
-        profile_id: 'profile1',
-        profile: {
-          id: 'profile1',
-          username: 'profile_username_1',
-          service: 'foo',
-        },
-        metrics: [],
-      }],
+      result: {
+        charts: [{
+          chart_id: 'summary-table',
+          profile_id: 'profile1',
+          profile: {
+            id: 'profile1',
+            username: 'profile_username_1',
+            service: 'foo',
+          },
+          metrics: [],
+        }],
+      },
     });
   });
 
@@ -270,5 +227,37 @@ describe('middleware', () => {
     expect(PDFFormatter.mock.calls[0]).toEqual(['report html']);
     expect(PDFFormatter.mock.instances[0].formatPage).toHaveBeenCalled();
   });
+
+  describe('LOCATION_CHANGE', () => {
+    it('LOCATION_CHANGE to a report detail route triggers a get_report', () => {
+      const action = {
+        type: LOCATION_CHANGE,
+        payload: {
+          pathname: '/reports/report-id',
+        },
+      };
+      middleware(store)(next)(action);
+      expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
+        name: 'get_report',
+        args: {
+          _id: 'report-id',
+          startDate: state.date.startDate,
+          endDate: state.date.endDate,
+        },
+      }));
+    });
+
+    it('LOCATION_CHANGE to another route does not trigger get_report', () => {
+      const action = {
+        type: LOCATION_CHANGE,
+        payload: {
+          pathname: '/insights/facebook',
+        },
+      };
+      middleware(store)(next)(action);
+      expect(store.dispatch).not.toHaveBeenCalled();
+    });
+  });
+
   afterEach(() => jest.clearAllMocks());
 });

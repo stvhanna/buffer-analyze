@@ -22,16 +22,18 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
     }
     case dateActionTypes.SET_DATE_RANGE: {
       const selectedProfileIds = getState().multiProfileSelector.selectedProfiles.map(p => p.id);
-      dispatch(actions.fetch({
-        name: 'comparison',
-        args: {
-          profileIds: selectedProfileIds,
-          profileService: getState().profiles.selectedProfileService,
-          startDate: action.startDate,
-          endDate: action.endDate,
-          metric: METRIC_NAME,
-        },
-      }));
+      if (selectedProfileIds.length > 0) {
+        dispatch(actions.fetch({
+          name: 'comparison',
+          args: {
+            profileIds: selectedProfileIds,
+            profileService: getState().profiles.selectedProfileService,
+            startDate: action.startDate,
+            endDate: action.endDate,
+            metric: METRIC_NAME,
+          },
+        }));
+      }
       break;
     }
     default:

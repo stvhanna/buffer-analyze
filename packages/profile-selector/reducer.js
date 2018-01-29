@@ -15,7 +15,7 @@ const initialState = {
   isDropdownOpen: false,
   profilesFilterString: '',
   selectedProfileService: '',
-  selectedProfileId: '',
+  selectedProfileId: null,
 };
 
 export default (state = initialState, action) => {

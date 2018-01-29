@@ -2,6 +2,9 @@
 import moment from 'moment';
 
 jest.mock('micro-rpc-client');
+jest.mock('request-promise');
+import rp from 'request-promise';
+
 jest.mock('../summary');
 import summary from '../summary';
 import getReport from './';
@@ -13,6 +16,20 @@ describe('rpc/get_report', () => {
       accessToken: token,
     },
   };
+  const id = 'report-1235asd';
+
+  const report = {
+    id,
+    charts: [{
+      chart_id: 'summary-table',
+      profile_id: '12351wa',
+      service: 'facebook',
+    }],
+  };
+
+  beforeEach(() => {
+    rp.mockReturnValueOnce(Promise.resolve(report));
+  });
 
   it('should have the expected name', () => {
     expect(getReport.name)
@@ -25,49 +42,35 @@ describe('rpc/get_report', () => {
   });
 
   it('should request chart data for every chart on the argument list', async () => {
-    const charts = [{
-      chart_id: 'summary-table',
-      profile_id: '12351wa',
-    }];
-
     const endDate = moment().subtract(1, 'days').unix();
     const startDate = moment().subtract(7, 'days').unix();
     summary.fn = jest.fn();
     summary.fn.mockReturnValueOnce(Promise.resolve([]));
 
-    await getReport.fn({ startDate, endDate, charts }, { session });
+    await getReport.fn({ startDate, endDate, _id: id }, { session });
 
     expect(summary.fn.mock.calls[0])
       .toEqual([{
         profileId: '12351wa',
+        profileService: 'facebook',
         startDate,
         endDate,
       }, { session }]);
   });
 
   it('returns chart data for each chart as a "metrics" key', async () => {
-    const charts = [{
-      chart_id: 'summary-table',
-      profile_id: '12351wa',
-    }];
-
     const endDate = moment().subtract(1, 'days').unix();
     const startDate = moment().subtract(7, 'days').unix();
     const metrics = [1, 2, 3, 4];
     summary.fn = jest.fn();
     summary.fn.mockReturnValueOnce(Promise.resolve(metrics));
 
-    const report = await getReport.fn({ startDate, endDate, charts }, { session });
+    const result = await getReport.fn({ startDate, endDate, _id: id }, { session });
 
-    expect(report[0].metrics).toEqual(metrics);
+    expect(result.charts[0].metrics).toEqual(metrics);
   });
 
   it('if chart metrics is an object with a metrics attribute, we merge the full object into the chart', async () => {
-    const charts = [{
-      chart_id: 'summary-table',
-      profile_id: '12351wa',
-    }];
-
     const endDate = moment().subtract(1, 'days').unix();
     const startDate = moment().subtract(7, 'days').unix();
     const metricsEmbeddedInObject = {
@@ -77,21 +80,13 @@ describe('rpc/get_report', () => {
     summary.fn = jest.fn();
     summary.fn.mockReturnValueOnce(Promise.resolve(metricsEmbeddedInObject));
 
-    const report = await getReport.fn({ startDate, endDate, charts }, { session });
+    const result = await getReport.fn({ startDate, endDate, _id: id }, { session });
 
-    expect(report[0].metrics).toEqual(metricsEmbeddedInObject.metrics);
-    expect(report[0].posts).toEqual(metricsEmbeddedInObject.posts);
+    expect(result.charts[0].metrics).toEqual(metricsEmbeddedInObject.metrics);
+    expect(result.charts[0].posts).toEqual(metricsEmbeddedInObject.posts);
   });
 
   it('destructures over state as arguments for the charts rpc method', async () => {
-    const charts = [{
-      chart_id: 'summary-table',
-      profile_id: '12351wa',
-      state: {
-        service: 'facebook',
-      },
-    }];
-
     const endDate = moment().subtract(1, 'days').unix();
     const startDate = moment().subtract(7, 'days').unix();
     const metricsEmbeddedInObject = {
@@ -101,25 +96,17 @@ describe('rpc/get_report', () => {
     summary.fn = jest.fn();
     summary.fn.mockReturnValueOnce(Promise.resolve(metricsEmbeddedInObject));
 
-    await getReport.fn({ startDate, endDate, charts }, { session });
+    await getReport.fn({ startDate, endDate, _id: id }, { session });
 
     expect(summary.fn.mock.calls[0][0]).toEqual({
       profileId: '12351wa',
-      service: 'facebook',
+      profileService: 'facebook',
       endDate,
       startDate,
     });
   });
 
   it('assigns chart state to the chart response', async () => {
-    const charts = [{
-      chart_id: 'summary-table',
-      profile_id: '12351wa',
-      state: {
-        service: 'facebook',
-      },
-    }];
-
     const endDate = moment().subtract(1, 'days').unix();
     const startDate = moment().subtract(7, 'days').unix();
     const metricsEmbeddedInObject = {
@@ -129,11 +116,11 @@ describe('rpc/get_report', () => {
     summary.fn = jest.fn();
     summary.fn.mockReturnValueOnce(Promise.resolve(metricsEmbeddedInObject));
 
-    const response = await getReport.fn({ startDate, endDate, charts }, { session });
+    const response = await getReport.fn({ startDate, endDate, _id: id }, { session });
 
-    expect(response[0]).toEqual({
-      ...charts[0],
-      ...charts[0].state,
+    expect(response.charts[0]).toEqual({
+      ...report.charts[0],
+      ...report.charts[0].state,
       ...metricsEmbeddedInObject,
     });
   });

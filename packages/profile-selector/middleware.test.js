@@ -92,24 +92,6 @@ describe('middleware', () => {
     expect(next).toHaveBeenCalledWith(action);
   });
 
-  it('should select the first profile after fetching all the profiles if the route is not an insights route', () => {
-    const { store, next, invoke } = getMiddlewareElements(stateWithoutProfileRoute);
-    const action = {
-      type: `profiles_${actionTypes.FETCH_SUCCESS}`,
-      result: [
-        {
-          id: '12345',
-          service: 'facebook',
-          username: 'buffer',
-          timezone: 'America/Los_Angeles',
-        },
-      ],
-    };
-    invoke(action);
-    expect(store.dispatch).toHaveBeenCalledWith(profileActions.selectProfile('12345', 'facebook'));
-    expect(next).toHaveBeenCalledWith(action);
-  });
-
   it('should select the first profile if profileService is not specified (comparison page)', () => {
     const { store, next, invoke } = getMiddlewareElements();
     const action = {
