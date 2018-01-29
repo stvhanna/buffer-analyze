@@ -10,7 +10,6 @@ const analyticsStartDate = require('./analyticsStartDate');
 const average = require('./average');
 const topPosts = require('./topPosts');
 const posts = require('./posts');
-const hourly = require('./hourly');
 const compare = require('./compare');
 const createReport = require('./createReport');
 const listReports = require('./listReports');
@@ -36,7 +35,6 @@ module.exports = checkToken(rpc(
   average,
   topPosts,
   posts,
-  hourly,
   compare,
   createReport,
   listReports,

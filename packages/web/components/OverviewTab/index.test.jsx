@@ -7,7 +7,6 @@ import configureMockStore from 'redux-mock-store';
 import SummaryTable from '@bufferapp/summary-table';
 import AverageTable from '@bufferapp/average-table';
 import CompareChart from '@bufferapp/compare-chart';
-import HourlyChart from '@bufferapp/hourly-chart';
 import ContextualCompare from '@bufferapp/contextual-compare';
 
 import OverviewTab from './index';
@@ -54,8 +53,6 @@ describe('web/OverviewTab', () => {
     expect(component.find(SummaryTable).length)
       .toBe(1);
     expect(component.find(AverageTable).length)
-      .toBe(1);
-    expect(component.find(HourlyChart).length)
       .toBe(1);
     expect(component.find(CompareChart).length)
       .toBe(1);

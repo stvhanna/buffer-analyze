@@ -5,7 +5,6 @@ const RPC_ENDPOINTS = {
   'summary-table': require('../summary'), // eslint-disable-line global-require
   'posts-summary': require('../postsSummary'), // eslint-disable-line global-require
   average: require('../average'), // eslint-disable-line global-require
-  'hourly-engagements': require('../hourly'), // eslint-disable-line global-require
   posts: require('../posts'), // eslint-disable-line global-require
   'contextual-compare': require('../contextual'), // eslint-disable-line global-require
   compare: require('../compare'), // eslint-disable-line global-require
