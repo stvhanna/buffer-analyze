@@ -9,6 +9,7 @@ import { Table as AverageTable, Title as AverageTitle } from '@bufferapp/average
 import { Title as ContextualTitle } from '@bufferapp/contextual-compare';
 import { Table as PostsTable, Title as PostsTitle } from '@bufferapp/posts-table';
 import { Chart as CompareChart, Title as CompareTitle } from '@bufferapp/compare-chart';
+import { Title as AudienceTitle } from '@bufferapp/audience-chart';
 import {
   CommonChart,
   ProfileBadge,
@@ -41,6 +42,10 @@ const CHARTS = {
   compare: {
     chart: CompareChart,
     title: CompareTitle,
+  },
+  audience: {
+    chart: CommonChart,
+    title: AudienceTitle,
   },
 };
 
