@@ -1147,28 +1147,9 @@ exports[`Snapshots App should render application 1`] = `
                   >
                     Instagram Profiles
                   </a>
-                  . You can also 
-                  <a
-                    href="/comparisons"
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    style={
-                      Object {
-                        "color": "#168eea",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
-                        "outline": "none",
-                        "padding": "0",
-                        "textDecoration": "none",
-                      }
-                    }
-                    target="_self"
-                  >
-                    compare profiles
-                  </a>
-                   or view 
+                  .
+                  <br />
+                  You can also view 
                   <a
                     href="/reports"
                     onBlur={[Function]}
