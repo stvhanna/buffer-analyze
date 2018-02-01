@@ -11,13 +11,15 @@ const RPC_ENDPOINTS = {
   audience: require('../audience'), // eslint-disable-line global-require
 };
 
-const requestChartData = (chart, startDate, endDate, session) =>
-  RPC_ENDPOINTS[chart.chart_id].fn(Object.assign({
+function requestChartData (chart, startDate, endDate, session) {
+  if (RPC_ENDPOINTS[chart.chart_id] === undefined) return;
+  return RPC_ENDPOINTS[chart.chart_id].fn(Object.assign({
     profileId: chart.profile_id,
     profileService: chart.service,
     startDate,
     endDate,
   }, chart.state), { session });
+}
 
 module.exports = method(
   'get_report',
@@ -36,16 +38,17 @@ module.exports = method(
         .all(report.charts.map(chart => requestChartData(chart, startDate, endDate, session)))
         .then(chartMetrics =>
           Object.assign(report, {
-            charts: report.charts.map((chart, index) => {
-              if (!Array.isArray(chartMetrics[index])) {
-                return Object.assign(chart, chart.state, chartMetrics[index]);
-              }
-              return Object.assign(chart, {
-                metrics: chartMetrics[index],
-              });
-            }),
+            charts: report.charts
+              .map((chart, index) => {
+                if (!Array.isArray(chartMetrics[index])) {
+                  return Object.assign(chart, chart.state, chartMetrics[index]);
+                }
+                return Object.assign(chart, {
+                  metrics: chartMetrics[index],
+                });
+              })
+              .filter(chart => RPC_ENDPOINTS[chart.chart_id] !== undefined),
           })),
-    )
-  ,
+    ),
 );
 
