@@ -25,7 +25,7 @@ const AudienceChart = ({
     <ChartHeader>
       <Title dailyData={data} />
       <AddReport
-        chart="audience-compare"
+        chart="audience"
         state={{
           mode: props.mode,
           selectedMetrics: props.selectedMetrics,

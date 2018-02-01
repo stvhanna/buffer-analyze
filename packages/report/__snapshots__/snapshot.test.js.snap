@@ -556,7 +556,7 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
       }
     >
       <div
-        className="sc-jnlKLf eggVnr"
+        className="sc-tilXH bkBwWr"
       >
         <button
           aria-label={null}
@@ -587,13 +587,13 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
           }
         >
           <h1
-            className="sc-gGBfsJ fHiXdl"
+            className="sc-fYxtnH HuPID"
           >
             Weekly Sync Report
           </h1>
         </button>
         <div
-          className="sc-fYxtnH hcgiEu"
+          className="sc-hEsumM ClmrB"
         >
           <svg
             height="100%"
@@ -631,13 +631,13 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
         }
       >
         <span
-          className="sc-jqCOkK VkehX"
+          className="sc-bbmXgH bPNoAj"
         >
           Showing for dates
         </span>
          
         <span
-          className="sc-uJMKN hvlSKg"
+          className="sc-gGBfsJ cwcERw"
         >
           Invalid date
            to 
@@ -646,7 +646,7 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
       </span>
     </span>
     <section
-      className="sc-kvZOFW hTJQjW"
+      className="sc-jbKcbu dnDUoT"
     >
       <h2
         style={
@@ -680,10 +680,10 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
         }
       >
         <span
-          className="sc-dNLxif gQUAVc"
+          className="sc-uJMKN gdNjKI"
         >
           <span
-            className="sc-hqyNC dRNKrH"
+            className="sc-dNLxif fLSJyM"
           >
             Showing for accounts
           </span>
@@ -761,7 +761,7 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
             </div>
           </div>
           <span
-            className="sc-jbKcbu iuRTvb"
+            className="sc-jqCOkK laZUyd"
           >
             Buffer
           </span>
@@ -2093,7 +2093,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
       }
     >
       <input
-        className="sc-bbmXgH kyqikf"
+        className="sc-jnlKLf fuVnqU"
         onBlur={[Function]}
         onChange={[Function]}
         value="Weekly Sync Report"
@@ -2109,13 +2109,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         }
       >
         <span
-          className="sc-jqCOkK VkehX"
+          className="sc-bbmXgH bPNoAj"
         >
           Showing for dates
         </span>
          
         <span
-          className="sc-uJMKN hvlSKg"
+          className="sc-gGBfsJ cwcERw"
         >
           Invalid date
            to 
@@ -2124,7 +2124,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
       </span>
     </span>
     <section
-      className="sc-kvZOFW hTJQjW"
+      className="sc-jbKcbu dnDUoT"
     >
       <h2
         style={
@@ -2333,10 +2333,10 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         }
       >
         <span
-          className="sc-dNLxif gQUAVc"
+          className="sc-uJMKN gdNjKI"
         >
           <span
-            className="sc-hqyNC dRNKrH"
+            className="sc-dNLxif fLSJyM"
           >
             Showing for accounts
           </span>
@@ -2414,7 +2414,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </div>
           </div>
           <span
-            className="sc-jbKcbu iuRTvb"
+            className="sc-jqCOkK laZUyd"
           >
             Buffer
           </span>
@@ -3643,7 +3643,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
       }
     >
       <div
-        className="sc-jnlKLf eggVnr"
+        className="sc-tilXH bkBwWr"
       >
         <button
           aria-label={null}
@@ -3674,13 +3674,13 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
           }
         >
           <h1
-            className="sc-gGBfsJ fHiXdl"
+            className="sc-fYxtnH HuPID"
           >
             Weekly Sync Report
           </h1>
         </button>
         <div
-          className="sc-fYxtnH hcgiEu"
+          className="sc-hEsumM ClmrB"
         >
           <svg
             height="100%"
@@ -3718,13 +3718,13 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         }
       >
         <span
-          className="sc-jqCOkK VkehX"
+          className="sc-bbmXgH bPNoAj"
         >
           Showing for dates
         </span>
          
         <span
-          className="sc-uJMKN hvlSKg"
+          className="sc-gGBfsJ cwcERw"
         >
           Invalid date
            to 
@@ -3733,7 +3733,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
       </span>
     </span>
     <section
-      className="sc-kvZOFW hTJQjW"
+      className="sc-jbKcbu dnDUoT"
     >
       <h2
         style={
@@ -3942,10 +3942,10 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         }
       >
         <span
-          className="sc-dNLxif gQUAVc"
+          className="sc-uJMKN gdNjKI"
         >
           <span
-            className="sc-hqyNC dRNKrH"
+            className="sc-dNLxif fLSJyM"
           >
             Showing for accounts
           </span>
@@ -4023,7 +4023,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
             </div>
           </div>
           <span
-            className="sc-jbKcbu iuRTvb"
+            className="sc-jqCOkK laZUyd"
           >
             Buffer
           </span>

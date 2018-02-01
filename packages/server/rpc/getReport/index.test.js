@@ -20,11 +20,23 @@ describe('rpc/get_report', () => {
 
   const report = {
     id,
-    charts: [{
-      chart_id: 'summary-table',
-      profile_id: '12351wa',
-      service: 'facebook',
-    }],
+    charts: [
+      {
+        chart_id: 'summary-table',
+        profile_id: '12351wa',
+        service: 'facebook',
+      },
+      {
+        chart_id: 'deprecated-chart',
+        profile_id: '12351wa',
+        service: 'facebook',
+      },
+      {
+        chart_id: 'summary-table',
+        profile_id: '12351xa',
+        service: 'facebook',
+      },
+    ],
   };
 
   beforeEach(() => {
@@ -123,5 +135,34 @@ describe('rpc/get_report', () => {
       ...report.charts[0].state,
       ...metricsEmbeddedInObject,
     });
+  });
+
+  it('prunes unsupported charts', async () => {
+    const endDate = moment().subtract(1, 'days').unix();
+    const startDate = moment().subtract(7, 'days').unix();
+    const metrics = [1, 2, 3, 4];
+    const reports = {
+      id,
+      charts: [
+        {
+          chart_id: 'deprecated-chart',
+          profile_id: '12351wa',
+          service: 'facebook',
+        },
+        {
+          chart_id: 'summary-table',
+          profile_id: '12351wa',
+          service: 'facebook',
+        },
+      ],
+    };
+
+    rp.mockReturnValue(Promise.resolve(reports));
+    summary.fn = jest.fn();
+    summary.fn.mockReturnValue(Promise.resolve(metrics));
+
+    const result = await getReport.fn({ startDate, endDate, _id: id }, { session });
+
+    expect(result.charts.length).toEqual(2);
   });
 });
