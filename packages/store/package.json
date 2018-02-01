@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/analyze-store",
-  "version": "0.43.0",
+  "version": "0.43.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
     "@bufferapp/analyze-tabs": "^0.22.0",
     "@bufferapp/app-sidebar": "1.2.10",
     "@bufferapp/async-data-fetch": "0.5.36-beta01",
-    "@bufferapp/audience-chart": "^0.41.0",
+    "@bufferapp/audience-chart": "^0.43.1",
     "@bufferapp/audience-comparison-chart": "^0.41.0",
     "@bufferapp/average-table": "^0.41.0",
     "@bufferapp/buffermetrics": "^0.5.0",
@@ -47,7 +47,7 @@
     "@bufferapp/profile-header": "^0.41.0",
     "@bufferapp/profile-loader": "^0.22.0",
     "@bufferapp/reach-comparison-chart": "^0.41.0",
-    "@bufferapp/report": "^0.43.0",
+    "@bufferapp/report": "^0.43.1",
     "@bufferapp/report-list": "^0.40.4",
     "@bufferapp/summary-table": "^0.41.0",
     "@bufferapp/unauthorized-redirect": "1.2.10"
