@@ -76,7 +76,8 @@ const DefaultPage = ({ location, dispatch, facebookProfile, twitterProfile, inst
   const welcomeText = (
     <span>
       Get started by viewing Insights for {facebookLink}, {twitterLink} or {instagramLink}.
-      You can also {comparisonsLink} or view {reportsLink}.
+      <br />
+      You can also view {reportsLink}.
     </span>
   );
 
