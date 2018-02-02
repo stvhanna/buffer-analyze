@@ -1,5 +1,5 @@
 import { actionTypes as dateActionTypes } from '@bufferapp/analyze-date-picker';
-import { actions, actionTypes as asyncDataFetchActions } from '@bufferapp/async-data-fetch';
+import { actions } from '@bufferapp/async-data-fetch';
 import { actionTypes as listActionTypes } from '@bufferapp/report-list';
 import { LOCATION_CHANGE } from 'react-router-redux';
 import { actionTypes } from './reducer';
@@ -118,35 +118,6 @@ describe('middleware', () => {
         endDate: state.date.endDate,
       },
     }));
-  });
-
-  it('fills profile information for each retrieved chart', () => {
-    const action = {
-      type: `get_report_${asyncDataFetchActions.FETCH_SUCCESS}`,
-      result: {
-        charts: [{
-          chart_id: 'summary-table',
-          profile_id: 'profile1',
-          metrics: [],
-        }],
-      },
-    };
-    middleware(store)(next)(action);
-    expect(next).toHaveBeenCalledWith({
-      type: action.type,
-      result: {
-        charts: [{
-          chart_id: 'summary-table',
-          profile_id: 'profile1',
-          profile: {
-            id: 'profile1',
-            username: 'profile_username_1',
-            service: 'foo',
-          },
-          metrics: [],
-        }],
-      },
-    });
   });
 
   it('SAVE_CHANGES dispatches a update report request', () => {

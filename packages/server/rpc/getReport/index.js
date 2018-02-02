@@ -1,5 +1,6 @@
 const rp = require('request-promise');
 const { method } = require('@bufferapp/micro-rpc');
+const profileParser = require('../utils/profileParser');
 
 const RPC_ENDPOINTS = {
   'summary-table': require('../summary'), // eslint-disable-line global-require
@@ -40,6 +41,7 @@ module.exports = method(
           Object.assign(report, {
             charts: report.charts
               .map((chart, index) => {
+                chart.profile = profileParser(chart.profile);
                 if (!Array.isArray(chartMetrics[index])) {
                   return Object.assign(chart, chart.state, chartMetrics[index]);
                 }

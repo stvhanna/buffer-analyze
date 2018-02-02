@@ -1,5 +1,5 @@
 import { LOCATION_CHANGE } from 'react-router-redux';
-import { actions, actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-fetch';
+import { actions } from '@bufferapp/async-data-fetch';
 import { actionTypes as dateActionTypes } from '@bufferapp/analyze-date-picker';
 import { actionTypes as listActionTypes } from '@bufferapp/report-list';
 import { actionTypes } from './reducer';
@@ -18,27 +18,11 @@ const isExportRoute = pathname => pathname.match(/export\/reports/) !== null;
 const getReport = (reportId, reports) =>
   reports.find(report => report._id === reportId);
 
-const addProfileInformationToCharts = (charts, state) =>
-  charts.map(chart => ({
-    ...chart,
-    profile: state.profiles.profiles.find(profile =>
-      profile.id === chart.profile_id),
-  }));
-
 export default store => next => (action) => { // eslint-disable-line no-unused-vars
   const state = store.getState();
   let formatter;
   let report;
   switch (action.type) {
-    case `get_report_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
-      action = {
-        ...action,
-        result: {
-          ...action.result,
-          charts: addProfileInformationToCharts(action.result.charts, state),
-        },
-      };
-      break;
     case dateActionTypes.SET_DATE_RANGE:
       if (!isExportRoute(state.router.location.pathname)) {
         store.dispatch(actions.fetch({
