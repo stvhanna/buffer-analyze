@@ -14,6 +14,8 @@ jest.mock('@bufferapp/chronos', () => (
   { chronos: () => mockChronos }
 ));
 
+jest.useFakeTimers();
+
 describe('middleware', () => {
   const next = jest.fn();
   const mockReduxStore = {
@@ -30,9 +32,22 @@ describe('middleware', () => {
   });
 
   test('store method should use Async Data Fetch', () => {
-    storeMeasure(mockReduxStore.dispatch)({});
+    storeMeasure(mockReduxStore.dispatch)({ foo: 'foo' });
+    jest.runAllTimers();
+    expect(setTimeout).toHaveBeenCalledTimes(1);
     expect(mockReduxStore.dispatch).toBeCalledWith({
-      args: { data: {} }, name: 'performance', type: asyncActionTypes.FETCH,
+      args: { measures: [{ foo: 'foo' }] }, name: 'performance', type: asyncActionTypes.FETCH,
+    });
+  });
+
+  test('store method should batch multiple measures in one request', () => {
+    storeMeasure(mockReduxStore.dispatch)({ foo: 'foo' });
+    storeMeasure(mockReduxStore.dispatch)({ bar: 'bar' });
+    jest.runAllTimers();
+    expect(setTimeout).toHaveBeenCalledTimes(2);
+    expect(mockReduxStore.dispatch).toHaveBeenCalledTimes(1);
+    expect(mockReduxStore.dispatch).toBeCalledWith({
+      args: { measures: [{ foo: 'foo' }, { bar: 'bar' }] }, name: 'performance', type: asyncActionTypes.FETCH,
     });
   });
 
