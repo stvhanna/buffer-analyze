@@ -25,17 +25,6 @@ const addProfileInformationToCharts = (charts, state) =>
       profile.id === chart.profile_id),
   }));
 
-const addProfileServiceToReportsCharts = (report, state) =>
-  ({
-    ...report,
-    charts: report.charts.map(chart => ({
-      ...chart,
-      service: state.profiles.profiles.find(profile =>
-        profile.id === chart.profile_id).service,
-    })),
-  });
-
-
 export default store => next => (action) => { // eslint-disable-line no-unused-vars
   const state = store.getState();
   let formatter;
@@ -80,7 +69,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
         store.dispatch(actions.fetch({
           name: 'get_report',
           args: {
-            ...addProfileServiceToReportsCharts(report, state),
+            _id: report._id,
             startDate: state.date.startDate,
             endDate: state.date.endDate,
           },

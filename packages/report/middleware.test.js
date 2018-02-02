@@ -114,13 +114,8 @@ describe('middleware', () => {
       name: 'get_report',
       args: {
         _id: 'report_id_2',
-        name: 'Another report',
         startDate: state.date.startDate,
         endDate: state.date.endDate,
-        charts: [{
-          profile_id: 'profile1',
-          service: 'foo',
-        }],
       },
     }));
   });
