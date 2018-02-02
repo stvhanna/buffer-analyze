@@ -25,16 +25,34 @@ describe('rpc/get_report', () => {
         chart_id: 'summary-table',
         profile_id: '12351wa',
         service: 'facebook',
+        profile: {
+          _id: '12351wa',
+          service: 'facebook',
+          avatar_url: 'https://avatar.url',
+          service_username: 'Buffer',
+        },
       },
       {
         chart_id: 'deprecated-chart',
         profile_id: '12351wa',
         service: 'facebook',
+        profile: {
+          _id: '12351wa',
+          service: 'facebook',
+          avatar_url: 'https://avatar.url',
+          service_username: 'Buffer',
+        },
       },
       {
         chart_id: 'summary-table',
         profile_id: '12351xa',
         service: 'facebook',
+        profile: {
+          _id: '12351wa',
+          service: 'facebook',
+          avatar_url: 'https://avatar.url',
+          service_username: 'Buffer',
+        },
       },
     ],
   };
