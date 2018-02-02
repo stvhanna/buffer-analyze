@@ -1,4 +1,4 @@
-import { actions } from '@bufferapp/async-data-fetch';
+import { actions, actionTypes } from '@bufferapp/async-data-fetch';
 import middleware from './middleware';
 
 describe('middleware', () => {
@@ -20,11 +20,17 @@ describe('middleware', () => {
 
   it('should dispatch the data fetch action for fetching the profiles once app has been initialized', () => {
     const action = {
-      type: 'APP_INIT',
+      type: `user_${actionTypes.FETCH_SUCCESS}`,
+      result: {
+        id: 'user_id-1234',
+      },
     };
     middleware(store)(next)(action);
     expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
       name: 'profiles',
+      args: {
+        id: 'user_id-1234',
+      },
     }));
     expect(next).toHaveBeenCalledWith(action);
   });

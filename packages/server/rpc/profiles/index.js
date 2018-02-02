@@ -5,17 +5,15 @@ const profileParser = require('../utils/profileParser');
 module.exports = method(
   'profiles',
   'fetch profiles',
-  (_, { session }) =>
+  ({ id }, { session }) =>
     rp({
-      uri: `${process.env.API_ADDR}/1/profiles.json`,
+      uri: `${process.env.API_ADDR}/1/analyze/users/${id}/get_social_accounts.json`,
       method: 'GET',
       strictSSL: !(process.env.NODE_ENV === 'development'),
       qs: {
         access_token: session.analyze.accessToken,
-        subprofiles: true,
-        locked: true,
       },
     })
       .then(result => JSON.parse(result))
-      .then(profiles => profiles.map(profileParser)),
+      .then(({ profiles }) => profiles.map(profileParser)),
 );
