@@ -6,20 +6,22 @@ import {
 
 import { actionTypes, actions } from './reducer';
 
-const pendingMeasures = [];
+const TRACKING_DELAY = 10 * 1000;
+let pendingMeasures = [];
 let rpcCallTimeout;
 
 function sendMeasuresToRPC (dispatch) {
   dispatch(fetchActions.fetch({
     name: 'performance',
-    args: { measures: pendingMeasures.splice(0, pendingMeasures.length) },
+    args: { measures: pendingMeasures },
   }));
+  pendingMeasures = [];
 }
 
 export const storeMeasure = dispatch => (measure) => {
   pendingMeasures.push(measure);
   if (rpcCallTimeout) clearTimeout(rpcCallTimeout);
-  rpcCallTimeout = setTimeout(sendMeasuresToRPC, 10000, dispatch);
+  rpcCallTimeout = setTimeout(sendMeasuresToRPC, TRACKING_DELAY, dispatch);
 };
 
 function actionTypeRegExp(actionType) {
