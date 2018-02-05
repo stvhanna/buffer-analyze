@@ -82,7 +82,6 @@ describe('reducer', () => {
       .toEqual(Object.assign({}, {
         profilesMetricData: [1, 2, 3],
         profileTotals: [5, 6, 7],
-        loading: false,
       }));
   });
 });
