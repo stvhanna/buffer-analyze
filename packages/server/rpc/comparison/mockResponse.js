@@ -52,7 +52,7 @@ export const rpcFinalResponse = {
       currentPeriodDiff: 20,
       currentPeriodTotal: 1000,
       metric: {
-        color: '#ced7df',
+        color: '#53CBB0',
         label: 'Impressions',
       },
       profileId: 'profile1234',
@@ -66,7 +66,7 @@ export const rpcFinalResponse = {
         {
           day: 1504137600000,
           metric: {
-            color: '#ced7df',
+            color: '#53CBB0',
             label: 'Impressions',
             value: 50,
           },
@@ -74,7 +74,7 @@ export const rpcFinalResponse = {
         {
           day: 1504224000000,
           metric: {
-            color: '#ced7df',
+            color: '#53CBB0',
             label: 'Impressions',
             value: 100,
           },
@@ -82,7 +82,7 @@ export const rpcFinalResponse = {
         {
           day: 1504310400000,
           metric: {
-            color: '#ced7df',
+            color: '#53CBB0',
             label: 'Impressions',
             value: 25,
           },
@@ -90,7 +90,7 @@ export const rpcFinalResponse = {
         {
           day: 1504396800000,
           metric: {
-            color: '#ced7df',
+            color: '#53CBB0',
             label: 'Impressions',
             value: 40,
           },
@@ -98,7 +98,7 @@ export const rpcFinalResponse = {
         {
           day: 1504483200000,
           metric: {
-            color: '#ced7df',
+            color: '#53CBB0',
             label: 'Impressions',
             value: 10,
           },
@@ -106,7 +106,7 @@ export const rpcFinalResponse = {
         {
           day: 1504569600000,
           metric: {
-            color: '#ced7df',
+            color: '#53CBB0',
             label: 'Impressions',
             value: 70,
           },
@@ -114,7 +114,7 @@ export const rpcFinalResponse = {
         {
           day: 1504656000000,
           metric: {
-            color: '#ced7df',
+            color: '#53CBB0',
             label: 'Impressions',
             value: 100,
           },

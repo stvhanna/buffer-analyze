@@ -4,82 +4,75 @@ const rp = require('request-promise');
 const moment = require('moment');
 const DateRange = require('../utils/DateRange');
 
+const PROFILE_COLORS = [
+  '#53CBB0',
+  '#168EEA',
+  '#C53DD2',
+  '#E53C5F',
+  '#F2994A',
+];
+
 const METRIC_CONFIGS_BY_KEY = {
   audience: {
     facebook: {
       label: 'Fans',
-      color: '#ced7df',
     },
     instagram: {
       label: 'Followers',
-      color: '#FEC78B',
     },
     twitter: {
       label: 'Followers',
-      color: '#3A92D3',
     },
   },
   reach: {
     facebook: {
       label: 'Impressions',
-      color: '#ced7df',
     },
     instagram: {
       label: 'Impressions',
-      color: '#FEC78B',
     },
     twitter: {
       label: 'Impressions',
-      color: '#3A92D3',
     },
   },
   likes: {
     facebook: {
       label: 'Likes',
-      color: '#ced7df',
     },
     instagram: {
       label: 'Likes',
-      color: '#FEC78B',
     },
     twitter: {
       label: 'Likes',
-      color: '#3A92D3',
     },
   },
   engagement: {
     facebook: {
       label: 'Engagement',
-      color: '#ced7df',
     },
     instagram: {
       label: 'Engagement',
-      color: '#FEC78B',
     },
     twitter: {
       label: 'Engagement',
-      color: '#3A92D3',
     },
   },
   comments: {
     facebook: {
       label: 'Comments',
-      color: '#ced7df',
     },
     instagram: {
       label: 'Comments',
-      color: '#FEC78B',
     },
     twitter: {
       label: 'Comments',
-      color: '#3A92D3',
     },
   },
 };
 
-const formatDailyData = (day, value, profileService, metricKey) => {
+const formatDailyData = (day, value, profileService, metricKey, index) => {
   const label = METRIC_CONFIGS_BY_KEY[metricKey][profileService].label;
-  const color = METRIC_CONFIGS_BY_KEY[metricKey][profileService].color;
+  const color = PROFILE_COLORS[index];
   return {
     day,
     metric: {
@@ -102,7 +95,7 @@ function formatData(result, metricKey) {
     return data.profileTotals;
   });
 
-  const formattedProfilesMetricData = Array.from(profilesMetricData, (data) => {
+  const formattedProfilesMetricData = Array.from(profilesMetricData, (data, index) => {
     const timezone = data.timezone;
     return {
       dailyData: data.dailyData.map(d =>
@@ -111,6 +104,7 @@ function formatData(result, metricKey) {
           d.value,
           data.service,
           metricKey,
+          index,
         ),
       ),
       service: data.service,
@@ -118,9 +112,9 @@ function formatData(result, metricKey) {
     };
   });
 
-  const formattedProfileTotals = Array.from(profileTotals, (data) => {
+  const formattedProfileTotals = Array.from(profileTotals, (data, index) => {
     const label = METRIC_CONFIGS_BY_KEY[metricKey][data.service].label;
-    const color = METRIC_CONFIGS_BY_KEY[metricKey][data.service].color;
+    const color = PROFILE_COLORS[index];
     return {
       metric: {
         label,
