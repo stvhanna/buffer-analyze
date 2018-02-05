@@ -375,7 +375,8 @@ exports[`Snapshots PostItem should not render the top posts item when no metrics
           <img
             alt=""
             className="mediaThumbnail"
-            src="https://buffer-media-uploads.s3.amazonaws.com/59a4711d7cbc83d309960116/5ed19955e0c4785b990ec752ff6df55c367f9808_dc779030b683e4f41ffa863f5c88795128de1d58_thumbnail"
+            crossOrigin="Anonymous"
+            src="https://safeimage.buffer.com/https://buffer-media-uploads.s3.amazonaws.com/59a4711d7cbc83d309960116/5ed19955e0c4785b990ec752ff6df55c367f9808_dc779030b683e4f41ffa863f5c88795128de1d58_thumbnail"
           />
           <div
             className="contentContainer"
@@ -455,7 +456,8 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
           <img
             alt=""
             className="mediaThumbnail"
-            src="https://buffer-media-uploads.s3.amazonaws.com/59a4711d7cbc83d309960116/5ed19955e0c4785b990ec752ff6df55c367f9808_dc779030b683e4f41ffa863f5c88795128de1d58_thumbnail"
+            crossOrigin="Anonymous"
+            src="https://safeimage.buffer.com/https://buffer-media-uploads.s3.amazonaws.com/59a4711d7cbc83d309960116/5ed19955e0c4785b990ec752ff6df55c367f9808_dc779030b683e4f41ffa863f5c88795128de1d58_thumbnail"
           />
           <div
             className="contentContainer"
@@ -3418,7 +3420,8 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                     <img
                       alt=""
                       className="mediaThumbnail"
-                      src="https://buffer-media-uploads.s3.amazonaws.com/59a4711d7cbc83d309960116/5ed19955e0c4785b990ec752ff6df55c367f9808_dc779030b683e4f41ffa863f5c88795128de1d58_thumbnail"
+                      crossOrigin="Anonymous"
+                      src="https://safeimage.buffer.com/https://buffer-media-uploads.s3.amazonaws.com/59a4711d7cbc83d309960116/5ed19955e0c4785b990ec752ff6df55c367f9808_dc779030b683e4f41ffa863f5c88795128de1d58_thumbnail"
                     />
                     <div
                       className="contentContainer"
@@ -3775,7 +3778,8 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                     <img
                       alt=""
                       className="mediaThumbnail"
-                      src="https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/21314332_1678667648872342_5837561331042406631_n.jpg?oh=739aa8ab3fb7ca5dd00d11c369bde453&oe=5A153FC6"
+                      crossOrigin="Anonymous"
+                      src="https://safeimage.buffer.com/https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/21314332_1678667648872342_5837561331042406631_n.jpg?oh=739aa8ab3fb7ca5dd00d11c369bde453&oe=5A153FC6"
                     />
                     <div
                       className="contentContainer"
@@ -5367,7 +5371,8 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                     <img
                       alt=""
                       className="mediaThumbnail"
-                      src="https://buffer-media-uploads.s3.amazonaws.com/59a4711d7cbc83d309960116/5ed19955e0c4785b990ec752ff6df55c367f9808_dc779030b683e4f41ffa863f5c88795128de1d58_thumbnail"
+                      crossOrigin="Anonymous"
+                      src="https://safeimage.buffer.com/https://buffer-media-uploads.s3.amazonaws.com/59a4711d7cbc83d309960116/5ed19955e0c4785b990ec752ff6df55c367f9808_dc779030b683e4f41ffa863f5c88795128de1d58_thumbnail"
                     />
                     <div
                       className="contentContainer"
@@ -5630,7 +5635,8 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                     <img
                       alt=""
                       className="mediaThumbnail"
-                      src="https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/21314332_1678667648872342_5837561331042406631_n.jpg?oh=739aa8ab3fb7ca5dd00d11c369bde453&oe=5A153FC6"
+                      crossOrigin="Anonymous"
+                      src="https://safeimage.buffer.com/https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/21314332_1678667648872342_5837561331042406631_n.jpg?oh=739aa8ab3fb7ca5dd00d11c369bde453&oe=5A153FC6"
                     />
                     <div
                       className="contentContainer"
@@ -7366,7 +7372,8 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                     <img
                       alt=""
                       className="mediaThumbnail"
-                      src="https://buffer-media-uploads.s3.amazonaws.com/59a4711d7cbc83d309960116/5ed19955e0c4785b990ec752ff6df55c367f9808_dc779030b683e4f41ffa863f5c88795128de1d58_thumbnail"
+                      crossOrigin="Anonymous"
+                      src="https://safeimage.buffer.com/https://buffer-media-uploads.s3.amazonaws.com/59a4711d7cbc83d309960116/5ed19955e0c4785b990ec752ff6df55c367f9808_dc779030b683e4f41ffa863f5c88795128de1d58_thumbnail"
                     />
                     <div
                       className="contentContainer"
@@ -7723,7 +7730,8 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                     <img
                       alt=""
                       className="mediaThumbnail"
-                      src="https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/21314332_1678667648872342_5837561331042406631_n.jpg?oh=739aa8ab3fb7ca5dd00d11c369bde453&oe=5A153FC6"
+                      crossOrigin="Anonymous"
+                      src="https://safeimage.buffer.com/https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/21314332_1678667648872342_5837561331042406631_n.jpg?oh=739aa8ab3fb7ca5dd00d11c369bde453&oe=5A153FC6"
                     />
                     <div
                       className="contentContainer"
