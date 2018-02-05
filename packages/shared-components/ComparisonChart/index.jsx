@@ -3,7 +3,7 @@ import React from 'react';
 import ReactHighcharts from 'react-highcharts';
 import moment from 'moment-timezone';
 
-import chartConfig, { highChartsSeriesPrimaryConfig } from './chartConfig';
+import getChartConfig, { highChartsSeriesPrimaryConfig } from './chartConfig';
 
 function getMarkerFillColor(color) {
   const highchartColor = ReactHighcharts.Highcharts.Color(color);
@@ -98,7 +98,7 @@ function prepareSeries(
 }
 
 function prepareChartOptions(profilesMetricData) {
-  const config = Object.assign({}, chartConfig);
+  const config = getChartConfig();
   const seriesData = profilesMetricData.map(profileData =>
     prepareSeries(profileData.dailyData, profileData.timezone, profileData.service),
   );
