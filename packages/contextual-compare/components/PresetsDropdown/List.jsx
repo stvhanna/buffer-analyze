@@ -21,12 +21,13 @@ const HelpButton = styled.span`
   text-align: center;
   border-radius: 8px;
   cursor: pointer;
+  // position: relative;
 
   &::before {
     transition: opacity 250ms ease-out;
     content: " ";
     position: absolute;
-    margin-left: 14px;
+    right: 0;
     width: 0;
     height: 0;
     border-style: solid;
@@ -39,8 +40,8 @@ const HelpButton = styled.span`
     transition: opacity 250ms ease-out;
     content: attr(data-description);
     position: absolute;
-    margin-left: 14px;
-    margin-top: -10px;
+    top: -2px;
+    left: calc(100% - 2px);
     background: #343E46;
     border-radius: 4px;
     width: 175px;
@@ -62,13 +63,16 @@ const HelpButton = styled.span`
 
 const dropdownItem = {
   listStyle: 'none',
+  display: 'flex',
+  justifyContent: 'space-between',
+  padding: '5px 10px',
+  position: 'relative',
 };
 
 const dropdownItemContent = {
   width: '100%',
   display: 'inline-flex',
   textAlign: 'left',
-  padding: '5px 10px',
   boxSizing: 'border-box',
 };
 
@@ -85,9 +89,9 @@ const DropdownItem = ({ preset, handleClick, selectedPresetLabel }) => (
           size="small"
         > &nbsp;(no data) </Text>}
 
-        <HelpButton data-description={preset.description}>?</HelpButton>
       </span>
     </Button>
+    <HelpButton data-description={preset.description}>?</HelpButton>
   </li>
 );
 
