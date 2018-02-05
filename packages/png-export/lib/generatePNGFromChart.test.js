@@ -40,6 +40,8 @@ describe('generatePNGFromChart', () => {
     generatePNGFromChart(charts, date).then((pngs) => {
       expect(html2canvas).toHaveBeenCalledWith('an html node', {
         background: '#fff',
+        dpi: 300,
+        useCORS: true,
       });
       expect(pngs.length).toBe(charts.length);
       done();

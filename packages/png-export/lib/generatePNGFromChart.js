@@ -20,6 +20,8 @@ const generatePNG = (chart, date) => {
   if (!node) return null;
   return html2canvas(node, {
     background: '#fff',
+    useCORS: true,
+    dpi: 300,
   }).then(canvas => ({
     image: convertCanvasToPNG(canvas),
     filename: createChartFilename(chart, date),

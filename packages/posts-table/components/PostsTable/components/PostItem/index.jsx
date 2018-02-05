@@ -25,7 +25,7 @@ import {
 
 const Attachment = ({ type, media }) => {
   if (['picture', 'photo', 'video', 'image'].includes(type) && media) {
-    return <img alt="" className={mediaThumbnail} src={media.thumbnail} />;
+    return <img alt="" crossOrigin="Anonymous" className={mediaThumbnail} src={`https://safeimage.buffer.com/${media.thumbnail}`} />;
   }
   return null;
 };
