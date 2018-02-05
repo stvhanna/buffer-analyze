@@ -107,9 +107,12 @@ function prepareChartOptions(profilesMetricData) {
   return config;
 }
 
+const CHART_HEIGHT = '400px';
 const ComparisonChart = ({ profilesMetricData }) => {
   const charOptions = prepareChartOptions(profilesMetricData);
-  return (<ReactHighcharts config={charOptions} />);
+  return (<div style={{ minHeight: CHART_HEIGHT }}>
+    <ReactHighcharts config={charOptions} />
+  </div>);
 };
 
 ComparisonChart.propTypes = {

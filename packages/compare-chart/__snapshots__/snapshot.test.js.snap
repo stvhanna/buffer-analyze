@@ -943,6 +943,7 @@ exports[`Snapshots CompareChart should render a "no data" state 1`] = `
         style={
           Object {
             "margin": "0 auto",
+            "minHeight": "474px",
             "padding": "0",
             "position": "relative",
           }
@@ -1042,6 +1043,7 @@ exports[`Snapshots CompareChart should render a loading state 1`] = `
         style={
           Object {
             "margin": "0 auto",
+            "minHeight": "474px",
             "padding": "0",
             "position": "relative",
           }
@@ -1212,6 +1214,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
         style={
           Object {
             "margin": "0 auto",
+            "minHeight": "474px",
             "padding": "0",
             "position": "relative",
           }
@@ -2064,6 +2067,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
         style={
           Object {
             "margin": "0 auto",
+            "minHeight": "474px",
             "padding": "0",
             "position": "relative",
           }
@@ -2916,6 +2920,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
         style={
           Object {
             "margin": "0 auto",
+            "minHeight": "474px",
             "padding": "0",
             "position": "relative",
           }
@@ -3768,6 +3773,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
         style={
           Object {
             "margin": "0 auto",
+            "minHeight": "474px",
             "padding": "0",
             "position": "relative",
           }
@@ -4696,6 +4702,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
         style={
           Object {
             "margin": "0 auto",
+            "minHeight": "474px",
             "padding": "0",
             "position": "relative",
           }

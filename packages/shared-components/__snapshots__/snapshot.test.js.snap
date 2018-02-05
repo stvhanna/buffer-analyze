@@ -443,6 +443,11 @@ exports[`Snapshots CommonChart [TESTED] Should render Posts metrics as columns i
   >
     <div
       id="js-dom-to-png-common"
+      style={
+        Object {
+          "minHeight": "445px",
+        }
+      }
     >
       <ul
         style={
@@ -546,6 +551,11 @@ exports[`Snapshots CommonChart [TESTED] Should render in Custom mode 1`] = `
   >
     <div
       id="js-dom-to-png-common"
+      style={
+        Object {
+          "minHeight": "445px",
+        }
+      }
     >
       <ul
         style={
@@ -649,6 +659,11 @@ exports[`Snapshots CommonChart [TESTED] Should render in Presets mode with days 
   >
     <div
       id="js-dom-to-png-common"
+      style={
+        Object {
+          "minHeight": "445px",
+        }
+      }
     >
       <ul
         style={
@@ -752,6 +767,11 @@ exports[`Snapshots CommonChart [TESTED] Should render in Presets mode with multi
   >
     <div
       id="js-dom-to-png-common"
+      style={
+        Object {
+          "minHeight": "445px",
+        }
+      }
     >
       <ul
         style={
@@ -888,7 +908,15 @@ exports[`Snapshots ComparisonChart should render the compare chart 1`] = `
         "width": "750px",
       }
     }
-  />
+  >
+    <div
+      style={
+        Object {
+          "minHeight": "400px",
+        }
+      }
+    />
+  </div>
 </span>
 `;
 

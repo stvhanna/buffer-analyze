@@ -645,6 +645,11 @@ exports[`Snapshots ContextualCompare [TESTED] Should render Posts metrics as col
           </div>
           <div
             id="js-dom-to-png-contextual"
+            style={
+              Object {
+                "minHeight": "445px",
+              }
+            }
           >
             <ul
               style={
@@ -1385,6 +1390,11 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
           </div>
           <div
             id="js-dom-to-png-contextual"
+            style={
+              Object {
+                "minHeight": "445px",
+              }
+            }
           >
             <ul
               style={
@@ -1941,6 +1951,11 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
           </div>
           <div
             id="js-dom-to-png-contextual"
+            style={
+              Object {
+                "minHeight": "445px",
+              }
+            }
           >
             <ul
               style={
@@ -2497,6 +2512,11 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
           </div>
           <div
             id="js-dom-to-png-contextual"
+            style={
+              Object {
+                "minHeight": "445px",
+              }
+            }
           >
             <ul
               style={

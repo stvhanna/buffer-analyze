@@ -293,7 +293,15 @@ exports[`Snapshots LikesComparisonChart should render the likes comparison chart
       <div
         className="sc-chPdSV beTITA"
       >
-        <div />
+        <div>
+          <div
+            style={
+              Object {
+                "minHeight": "400px",
+              }
+            }
+          />
+        </div>
       </div>
       <section
         className="sc-jTzLTM kxZztx"
@@ -1066,7 +1074,15 @@ exports[`Snapshots LikesComparisonChart should render the likes comparison chart
       <div
         className="sc-kAzzGY jEkjcv"
       >
-        <div />
+        <div>
+          <div
+            style={
+              Object {
+                "minHeight": "400px",
+              }
+            }
+          />
+        </div>
       </div>
       <section
         className="sc-jTzLTM kxZztx"
