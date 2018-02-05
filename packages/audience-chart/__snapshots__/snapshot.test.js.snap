@@ -419,6 +419,11 @@ exports[`Snapshots AudienceChart [TESTED] Should render 1`] = `
           </div>
           <div
             id="js-dom-to-png-audience"
+            style={
+              Object {
+                "minHeight": "445px",
+              }
+            }
           >
             <ul
               style={

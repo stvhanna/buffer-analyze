@@ -293,7 +293,15 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
       <div
         className="sc-chPdSV beTITA"
       >
-        <div />
+        <div>
+          <div
+            style={
+              Object {
+                "minHeight": "400px",
+              }
+            }
+          />
+        </div>
       </div>
       <section
         className="sc-jTzLTM kxZztx"
@@ -831,7 +839,15 @@ exports[`Snapshots AudienceComparisonChart should render the audience comparison
       <div
         className="sc-kAzzGY jEkjcv"
       >
-        <div />
+        <div>
+          <div
+            style={
+              Object {
+                "minHeight": "400px",
+              }
+            }
+          />
+        </div>
       </div>
       <section
         className="sc-jTzLTM kxZztx"

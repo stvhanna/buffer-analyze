@@ -265,6 +265,7 @@ function prepareChartOptions(
   );
 }
 
+const CHART_AND_FOOTER_HEIGHT = '445px';
 class Chart extends PureComponent {
   render() {
     const {
@@ -289,7 +290,7 @@ class Chart extends PureComponent {
       timezone,
     );
     return (
-      <div id={`js-dom-to-png-${pngExportId}`}>
+      <div style={{ minHeight: CHART_AND_FOOTER_HEIGHT }} id={`js-dom-to-png-${pngExportId}`}>
         <ReactHighcharts config={charOptions} />
         <Footer
           selectedMetrics={selectedMetrics}

@@ -109,10 +109,12 @@ const CompareChart = ({
     );
   }
 
+  const CHART_AND_HEADER_HEIGHT = '474px';
   const containerStyle = {
     padding: '0',
     margin: '0 auto',
     position: 'relative',
+    minHeight: CHART_AND_HEADER_HEIGHT,
   };
 
   if (loading || dailyData.length === 0) delete containerStyle.border;
