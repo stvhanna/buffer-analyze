@@ -145,7 +145,7 @@ export default () => ({
     formatter() {
       const point = this.points[0].point;
       return reactDOM.renderToStaticMarkup(
-        <ChartTooltip {...point.metricData} day={point.x} />,
+        <ChartTooltip metrics={this.points.map(p => p.point.metricData)} day={point.x} />,
       );
     },
     backgroundColor: '#343E46',

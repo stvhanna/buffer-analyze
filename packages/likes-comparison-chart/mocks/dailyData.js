@@ -62,6 +62,7 @@ export default [
     currentPeriodDiff: 23,
     service: 'facebook',
     timezone: 'America/New_York',
+    profileId: '1',
   },
   {
     dailyData: [
@@ -126,5 +127,6 @@ export default [
     currentPeriodDiff: 50,
     service: 'facebook',
     timezone: 'America/New_York',
+    profileId: '1',
   },
 ];

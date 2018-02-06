@@ -12,14 +12,25 @@ storiesOf('ComparisonChartTooltip')
     <div
       style={{
         backgroundColor: '#343E46',
+        width: '185px',
       }}
     >
       <ComparisonChartTooltip
-        color="#fda3f3"
         day={dayTimestamp}
-        label="Fans"
-        value={143}
-        timezone="America/New_York"
+        metrics={[
+          {
+            color: '#fda3f3',
+            label: 'clicks',
+            username: 'foo',
+            value: 42,
+          },
+          {
+            color: '#fda3f3',
+            label: 'clicks',
+            username: 'Buffer very long name',
+            value: 42,
+          },
+        ]}
       />
     </div>
   ));

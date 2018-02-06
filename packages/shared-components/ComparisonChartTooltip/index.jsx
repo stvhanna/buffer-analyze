@@ -6,7 +6,7 @@ import { TruncatedNumber, MetricIcon } from '@bufferapp/analyze-shared-component
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  width: 185px;
+  width: 240px;
   padding: 10px;
   color: #fff;
   cursor: default;
@@ -14,35 +14,46 @@ const Wrapper = styled.div`
   font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans serif;
   pointer-events: none;
   white-space: normal;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 
 function transformLabelForTooltip(label) {
   return `${label.toLowerCase()}`;
 }
 
-const StandardTooltip = ({
-  label,
-  value,
-  color,
+const MetricEntry = ({
+  metric,
 }) => (
-  <span>
-    <Text color="white" size="small" weight="bold">
-      <MetricIcon metric={{ color }} /> <TruncatedNumber>{value}</TruncatedNumber>
+  <span
+    style={{
+      whiteSpace: 'nowrap',
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+      display: 'inline-box',
+    }}
+  >
+    <br />
+    <Text color="white" size="small" weight="bold" >
+      <MetricIcon metric={{ color: metric.color }} /> <TruncatedNumber>
+        {metric.value}
+      </TruncatedNumber>
     </Text>
-    <Text color="white" size="small" > {transformLabelForTooltip(label)}</Text>
+    <Text color="white" size="small" > {transformLabelForTooltip(metric.label)}</Text>
+    <Text color="white" size="small" > for </Text>
+    <Text color="white" size="small" weight="bold" > {metric.username} </Text>
   </span>
 );
 
-StandardTooltip.propTypes = {
-  label: PropTypes.string,
-  value: PropTypes.number,
-  color: PropTypes.string,
-};
-
-StandardTooltip.defaultProps = {
-  color: null,
-  label: null,
-  value: null,
+MetricEntry.propTypes = {
+  metric: PropTypes.shape({
+    color: PropTypes.string,
+    label: PropTypes.string,
+    username: PropTypes.string,
+    value: PropTypes.number,
+  }).isRequired,
 };
 
 const Header = ({
@@ -61,25 +72,24 @@ Header.propTypes = {
 
 const ComparisonChartTooltip = ({
   day,
-  label,
-  ...extraProps
+  metrics,
 }) => (
   <Wrapper>
-    <Header day={day} {...extraProps} />
-    {label &&
-      <span>
-        <StandardTooltip label={label} {...extraProps} />
-      </span>}
+    <Header day={day} />
+    <span>
+      {metrics.map(m => <MetricEntry key={m.username} metric={m} />)}
+    </span>
   </Wrapper>
 );
 
 ComparisonChartTooltip.propTypes = {
   day: PropTypes.number.isRequired,
-  label: PropTypes.string,
-};
-
-ComparisonChartTooltip.defaultProps = {
-  label: null,
+  metrics: PropTypes.arrayOf(PropTypes.shape({
+    color: PropTypes.string,
+    label: PropTypes.string,
+    username: PropTypes.string,
+    value: PropTypes.string,
+  })).isRequired,
 };
 
 export default ComparisonChartTooltip;

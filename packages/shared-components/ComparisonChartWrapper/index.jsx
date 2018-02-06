@@ -31,6 +31,7 @@ const ComparisonChartWrapper = ({
       <div>
         <Chart
           profilesMetricData={profilesMetricData}
+          profiles={profiles}
         />
       </div>
     );
