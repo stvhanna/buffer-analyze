@@ -9,7 +9,7 @@ import {
 
 import Footer from './components/Footer';
 
-import chartConfig, { highChartsSeriesPrimaryConfig } from './chartConfig';
+import getChartConfig, { highChartsSeriesPrimaryConfig } from './chartConfig';
 
 function getMarkerFillColor(color) {
   const highchartColor = ReactHighcharts.Highcharts.Color(color);
@@ -213,9 +213,9 @@ function prepareData(
   isCustomMode = false,
   presetConfig = null,
 ) {
-  const config = Object.assign({}, chartConfig);
+  const config = getChartConfig();
 
-  config.xAxis = Object.assign({}, chartConfig.xAxis, {
+  config.xAxis = Object.assign({}, getChartConfig().xAxis, {
     minorTickInterval: getMinorTickInterval(dailyMetrics),
   });
 
