@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/web-analyze",
-  "version": "0.43.11",
+  "version": "0.43.12",
   "description": "Analyze Web Dashboard",
   "main": "index.jsx",
   "scripts": {
@@ -24,7 +24,7 @@
     "@bufferapp/analyze-export-picker": "^0.43.7",
     "@bufferapp/analyze-profile-selector": "^0.43.11",
     "@bufferapp/analyze-shared-components": "^0.43.11",
-    "@bufferapp/analyze-store": "^0.43.11",
+    "@bufferapp/analyze-store": "^0.43.12",
     "@bufferapp/analyze-tabs": "^0.22.0",
     "@bufferapp/app-sidebar": "1.2.10",
     "@bufferapp/async-data-fetch": "0.5.36-beta01",
@@ -37,7 +37,7 @@
     "@bufferapp/contextual-compare": "^0.43.11",
     "@bufferapp/engagement-comparison-chart": "^0.43.11",
     "@bufferapp/likes-comparison-chart": "^0.43.11",
-    "@bufferapp/multi-profile-selector": "^0.43.11",
+    "@bufferapp/multi-profile-selector": "^0.43.12",
     "@bufferapp/nav-sidebar": "^0.43.11",
     "@bufferapp/pdf-export": "^0.39.0",
     "@bufferapp/performance-tracking": "^0.43.5",
