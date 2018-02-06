@@ -926,11 +926,12 @@ exports[`Snapshots ComparisonChartTooltip should render the tooltip 1`] = `
     style={
       Object {
         "backgroundColor": "#343E46",
+        "width": "185px",
       }
     }
   >
     <div
-      className="sc-kAzzGY dcHRuz"
+      className="sc-kAzzGY bNdPJH"
     >
       <span>
         <span
@@ -949,7 +950,17 @@ exports[`Snapshots ComparisonChartTooltip should render the tooltip 1`] = `
         <br />
       </span>
       <span>
-        <span>
+        <span
+          style={
+            Object {
+              "display": "inline-box",
+              "overflow": "hidden",
+              "textOverflow": "ellipsis",
+              "whiteSpace": "nowrap",
+            }
+          }
+        >
+          <br />
           <span
             style={
               Object {
@@ -978,7 +989,7 @@ exports[`Snapshots ComparisonChartTooltip should render the tooltip 1`] = `
             />
              
             <span>
-              143
+              42
             </span>
           </span>
           <span
@@ -992,7 +1003,115 @@ exports[`Snapshots ComparisonChartTooltip should render the tooltip 1`] = `
             }
           >
              
-            fans
+            clicks
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+             for 
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+             
+            foo
+             
+          </span>
+        </span>
+        <span
+          style={
+            Object {
+              "display": "inline-box",
+              "overflow": "hidden",
+              "textOverflow": "ellipsis",
+              "whiteSpace": "nowrap",
+            }
+          }
+        >
+          <br />
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "background": "#fda3f3",
+                  "borderColor": "#df85d5",
+                  "borderRadius": "10px",
+                  "borderStyle": "solid",
+                  "borderWidth": "1px",
+                  "display": "inline-block",
+                  "height": "7px",
+                  "marginRight": "5px",
+                  "verticalAlign": "baseline",
+                  "width": "7px",
+                }
+              }
+            />
+             
+            <span>
+              42
+            </span>
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+             
+            clicks
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+             for 
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#fff",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+             
+            Buffer very long name
+             
           </span>
         </span>
       </span>

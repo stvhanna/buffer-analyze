@@ -5,6 +5,7 @@ import { ReportsStore } from '@bufferapp/analyze-decorators';
 
 import ComparisonChart from './index';
 import mockDailyData from '../mocks/compareDayData';
+import profiles from '../mocks/profiles';
 
 storiesOf('ComparisonChart')
   .addDecorator(checkA11y)
@@ -16,11 +17,17 @@ storiesOf('ComparisonChart')
       }}
     >
       <ComparisonChart
-        profilesMetricData={[{
-          service: 'twitter',
-          timezone: 'America/Los_Angeles',
-          dailyData: mockDailyData,
-        }]}
+        profilesMetricData={[
+          {
+            dailyData: mockDailyData,
+            profileId: '1',
+          },
+          {
+            dailyData: mockDailyData,
+            profileId: '2',
+          },
+        ]}
+        profiles={profiles}
       />
     </div>
   ));
