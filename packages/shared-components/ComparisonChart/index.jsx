@@ -54,6 +54,7 @@ function prepareSeries(
   dailyMetric,
   timezone,
   profileService,
+  username,
 ) {
   let color = '#9B9FA3';
   const seriesData = Array.from(dailyMetric, (day) => {
@@ -71,6 +72,7 @@ function prepareSeries(
       metricData: Object.assign({}, day.metric, {
         profileService,
         timezone,
+        username,
       }),
       pointPlacement: getMinorTickInterval(dailyMetric),
       // set profile specific timezone
@@ -97,19 +99,25 @@ function prepareSeries(
   return seriesConfig;
 }
 
-function prepareChartOptions(profilesMetricData) {
+function prepareChartOptions(profilesMetricData, profiles) {
   const config = getChartConfig();
-  const seriesData = profilesMetricData.map(profileData =>
-    prepareSeries(profileData.dailyData, profileData.timezone, profileData.service),
-  );
+  const seriesData = profilesMetricData.map((profileData) => {
+    const profile = profiles.find(p => p.id === profileData.profileId);
+    return prepareSeries(
+      profileData.dailyData,
+      profile.timezone,
+      profile.service,
+      profile.username,
+    );
+  }, { profiles });
   config.series = seriesData.filter(e => e !== null);
   setChartLimits(config);
   return config;
 }
 
 const CHART_HEIGHT = '400px';
-const ComparisonChart = ({ profilesMetricData }) => {
-  const charOptions = prepareChartOptions(profilesMetricData);
+const ComparisonChart = ({ profilesMetricData, profiles }) => {
+  const charOptions = prepareChartOptions(profilesMetricData, profiles);
   return (<div style={{ minHeight: CHART_HEIGHT }}>
     <ReactHighcharts config={charOptions} />
   </div>);
@@ -125,6 +133,10 @@ ComparisonChart.propTypes = {
         value: PropTypes.number.isRequired,
       }),
     })),
+    profileId: PropTypes.string.isRequired,
+  })).isRequired,
+  profiles: PropTypes.arrayOf(PropTypes.shape({
+    profileId: PropTypes.string.isRequired,
     service: PropTypes.string.isRequired,
     timezone: PropTypes.string.isRequired,
   })).isRequired,

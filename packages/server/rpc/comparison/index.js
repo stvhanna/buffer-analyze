@@ -87,7 +87,7 @@ function formatData(result, metricKey) {
   const profileIds = Object.keys(result);
   const profilesMetricData = Array.from(profileIds, (id) => {
     const data = result[id];
-    return data.profilesMetricData;
+    return Object.assign({ profileId: id }, data.profilesMetricData);
   });
 
   const profileTotals = Array.from(profileIds, (id) => {
@@ -107,8 +107,7 @@ function formatData(result, metricKey) {
           index,
         ),
       ),
-      service: data.service,
-      timezone,
+      profileId: data.profileId,
     };
   });
 

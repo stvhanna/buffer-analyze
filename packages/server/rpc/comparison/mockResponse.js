@@ -120,8 +120,7 @@ export const rpcFinalResponse = {
           },
         },
       ],
-      service: 'facebook',
-      timezone: 'America/New_York',
+      profileId: 'profile1234',
     },
   ],
 };
