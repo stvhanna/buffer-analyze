@@ -71,8 +71,8 @@ function prepareSeries(
     fillColor: {
       linearGradient: [0, 0, 0, 300],
       stops: [
-        [0, fadeColor(color, 0.3)],
-        [1, fadeColor(color, 0)],
+        [0, fadeColor(color, 0.6)],
+        [1, fadeColor(color, 0.1)],
       ],
     },
     lineColor: color,
@@ -87,7 +87,7 @@ function prepareSeries(
       linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
       stops: [
         [0, fadeColor(color, 0.6)],
-        [1, fadeColor(color, 0)],
+        [1, fadeColor(color, 0.2)],
       ],
     }];
     seriesConfig.borderColor = color;
