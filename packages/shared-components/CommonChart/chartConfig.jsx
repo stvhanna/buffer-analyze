@@ -20,7 +20,7 @@ export function truncateNumber() {
   return number;
 }
 
-export const highChartsConfigXAxis = {
+export const getXAxis = () => ({
   gridLineColor: '#F3F5F7',
   gridLineWidth: 1,
   lineColor: '#E6EBEF',
@@ -40,9 +40,9 @@ export const highChartsConfigXAxis = {
       'font-weight': 'lighter',
     },
   },
-};
+});
 
-export const highChartsConfigYAxis = [
+export const getYAxis = () => ([
   {
     title: { text: null },
     gridLineWidth: 1,
@@ -93,7 +93,7 @@ export const highChartsConfigYAxis = [
     },
     opposite: true,
   },
-];
+]);
 
 export const highChartsSeriesPrimaryConfig = {
   type: 'areaspline',
@@ -106,10 +106,10 @@ export const highChartsSeriesPrimaryConfig = {
   data: null,
 };
 
-export default {
+export default () => ({
   title: null,
-  xAxis: highChartsConfigXAxis,
-  yAxis: highChartsConfigYAxis,
+  xAxis: getXAxis(),
+  yAxis: getYAxis(),
   chart: {
     marginLeft: 20,
     marginRight: 20,
@@ -165,4 +165,4 @@ export default {
     useHTML: true,
   },
   series: [],
-};
+});

@@ -3,7 +3,7 @@ import React, { PureComponent } from 'react';
 import ReactHighcharts from 'react-highcharts';
 import moment from 'moment';
 
-import chartConfig, { highChartsSeriesPrimaryConfig } from './chartConfig';
+import getChartConfig, { highChartsSeriesPrimaryConfig } from './chartConfig';
 
 function getMarkerFillColor(color) {
   const highchartColor = ReactHighcharts.Highcharts.Color(color);
@@ -131,7 +131,7 @@ function setChartLimits({ series, yAxis }) {
 }
 
 function prepareChartOptions(dailyMetric, timezone, visualizePreviousPeriod, profileService) {
-  const config = Object.assign({}, chartConfig);
+  const config = getChartConfig();
 
   config.xAxis.minorTickInterval = getMinorTickInterval(dailyMetric);
   config.series = [
