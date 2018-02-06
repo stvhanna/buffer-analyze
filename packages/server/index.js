@@ -136,6 +136,7 @@ app.get('/report_to_pdf', (req, res) => {
   const lambda = new AWS.Lambda({
     region: 'us-east-1',
   });
+  const encodedFilename = `${encodeURIComponent(req.query.name)}.pdf`;
   lambda.invoke(params, (err, data) => {
     res.header('Content-disposition', `inline; filename=${req.query.name}.pdf`);
     if (err) {
@@ -147,7 +148,7 @@ app.get('/report_to_pdf', (req, res) => {
       } else {
         const pdf = Buffer.from(payload.contents, 'base64');
         res.type('application/pdf');
-        res.header('Content-disposition', `inline; filename=${req.query.name}.pdf`);
+        res.header('Content-disposition', `inline; filename=${req.query.name}.pdf; filename*=utf-8''${encodedFilename}`);
         res.end(pdf, 'binary');
       }
     }
