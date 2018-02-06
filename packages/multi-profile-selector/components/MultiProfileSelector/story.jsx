@@ -62,6 +62,48 @@ storiesOf('MultiProfileSelector')
       />
     </div>
   ))
+  .add('compare profile button should be disabled if no profiles are selected', () => (
+    <div style={{ display: 'flex' }}>
+      <MultiProfileSelector
+        profiles={mockProfiles}
+        selectedProfiles={[]}
+        isDropdownOpen
+        toggleProfile={actionLogger('toggleProfile')}
+        openDropdown={actionLogger('openDropdown')}
+        closeDropdown={actionLogger('closeDropdown')}
+        onSearchChange={actionLogger('onSearchChange')}
+        compareProfiles={actionLogger('compareProfiles')}
+      />
+    </div>
+  ))
+  .add('compare profile button should be disabled if less than 2 profiles are selected', () => (
+    <div style={{ display: 'flex' }}>
+      <MultiProfileSelector
+        profiles={mockProfiles}
+        selectedProfiles={[mockProfiles[0]]}
+        isDropdownOpen
+        toggleProfile={actionLogger('toggleProfile')}
+        openDropdown={actionLogger('openDropdown')}
+        closeDropdown={actionLogger('closeDropdown')}
+        onSearchChange={actionLogger('onSearchChange')}
+        compareProfiles={actionLogger('compareProfiles')}
+      />
+    </div>
+  ))
+  .add('compare profile button should be enabled when at least 2 profiles are selected', () => (
+    <div style={{ display: 'flex' }}>
+      <MultiProfileSelector
+        profiles={mockProfiles}
+        selectedProfiles={[mockProfiles[0], mockProfiles[1]]}
+        isDropdownOpen
+        toggleProfile={actionLogger('toggleProfile')}
+        openDropdown={actionLogger('openDropdown')}
+        closeDropdown={actionLogger('closeDropdown')}
+        onSearchChange={actionLogger('onSearchChange')}
+        compareProfiles={actionLogger('compareProfiles')}
+      />
+    </div>
+  ))
   .add('Compare Profiles Button should be disabled if more than 5 profiles are selected', () => (
     <div style={{ display: 'flex' }}>
       <MultiProfileSelector
