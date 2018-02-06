@@ -88,8 +88,8 @@ function prepareSeries(
     fillColor: {
       linearGradient: [0, 0, 0, 300],
       stops: [
-        [0, fadeColor(color, 0.3)],
-        [1, fadeColor(color, 0)],
+        [0, fadeColor(color, 0.6)],
+        [1, fadeColor(color, 0.1)],
       ],
     },
     lineColor: color,
