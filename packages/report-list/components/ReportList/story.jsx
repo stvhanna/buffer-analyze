@@ -27,6 +27,12 @@ storiesOf('ReportList')
       reports={[]}
     />
   ))
+  .add('renders an empty state for reports when from modal', () => (
+    <ReportList
+      reports={[]}
+      fromModal
+    />
+  ))
   .add('renders the reports collection in a list', () => (
     <ReportList
       reports={mockReports}

@@ -71,6 +71,7 @@ const AddReportModal = ({ open, addReport, toggle, selectReport, translations, r
             reports={reports}
             selectReport={selectReport}
             small
+            fromModal
           />
         </Section>
       </Content>
