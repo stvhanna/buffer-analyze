@@ -37,7 +37,7 @@ export default connect(
 
 
 export Title from './components/Title';
-export Chart from './components/Chart';
+export { ChartWithFooter as Chart } from './components/CompareChart';
 // export reducer, actions and action types
 export reducer, { actions, actionTypes } from './reducer';
 export middleware from './middleware';
