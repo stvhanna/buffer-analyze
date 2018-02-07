@@ -31,6 +31,74 @@ function getEndDate(dailyData) {
   return dailyData.length ? dailyData[dailyData.length - 1].day / 1000 : null;
 }
 
+export const ChartWithFooter = ({
+  daily,
+  totalPeriodDaily,
+  selectedMetricLabel,
+  totals,
+  timezone,
+  visualizePreviousPeriod,
+  profileService,
+  dailyMode,
+}) => {
+  const dailyData = dailyMode === 1 ? totalPeriodDaily : daily;
+  return (
+    <div id="js-dom-to-png-compare">
+      <Chart
+        daily={daily}
+        totalPeriodDaily={totalPeriodDaily}
+        dailyMode={dailyMode}
+        selectedMetricLabel={selectedMetricLabel}
+        timezone={timezone}
+        visualizePreviousPeriod={visualizePreviousPeriod}
+        profileService={profileService}
+      />
+      <Footer
+        startDate={getStartDate(dailyData)}
+        endDate={getEndDate(dailyData)}
+        selectedMetricLabel={selectedMetricLabel}
+        totals={totals}
+      />
+    </div>
+  );
+};
+
+ChartWithFooter.propTypes = {
+  totalPeriodDaily: PropTypes.arrayOf(PropTypes.shape({
+    day: PropTypes.string.isRequired,
+    metrics: PropTypes.arrayOf(PropTypes.shape({
+      color: PropTypes.string.isRequired,
+      diff: PropTypes.number.isRequired,
+      label: PropTypes.string.isRequired,
+      value: PropTypes.number.isRequired,
+      previousValue: PropTypes.number.isRequired,
+      postsCount: PropTypes.number.isRequired,
+    })),
+  })).isRequired,
+  daily: PropTypes.arrayOf(PropTypes.shape({
+    day: PropTypes.string.isRequired,
+    metrics: PropTypes.arrayOf(PropTypes.shape({
+      color: PropTypes.string.isRequired,
+      diff: PropTypes.number.isRequired,
+      label: PropTypes.string.isRequired,
+      value: PropTypes.number.isRequired,
+      previousValue: PropTypes.number.isRequired,
+      postsCount: PropTypes.number.isRequired,
+    })),
+  })).isRequired,
+  totals: PropTypes.arrayOf(PropTypes.shape({
+    diff: PropTypes.number,
+    label: PropTypes.string,
+    previousValue: PropTypes.number,
+    value: PropTypes.number,
+  })).isRequired,
+  timezone: PropTypes.string.isRequired,
+  profileService: PropTypes.string.isRequired,
+  dailyMode: PropTypes.number.isRequired,
+  visualizePreviousPeriod: PropTypes.bool.isRequired,
+  selectedMetricLabel: PropTypes.string.isRequired,
+};
+
 const CompareChart = ({
   daily,
   totalPeriodDaily,
@@ -50,7 +118,6 @@ const CompareChart = ({
 }) => {
   let content = null;
   let header = null;
-  let footer = null;
   const dailyData = dailyMode === 1 ? totalPeriodDaily : daily;
   if (loading) {
     content = (
@@ -66,17 +133,17 @@ const CompareChart = ({
     );
   } else {
     content = (
-      <div id="js-dom-to-png-compare">
-        <Chart
-          daily={daily}
-          totalPeriodDaily={totalPeriodDaily}
-          dailyMode={dailyMode}
-          selectedMetricLabel={selectedMetricLabel}
-          timezone={timezone}
-          visualizePreviousPeriod={visualizePreviousPeriod}
-          profileService={profileService}
-        />
-      </div>
+      <ChartWithFooter
+        daily={daily}
+        totalPeriodDaily={totalPeriodDaily}
+        dailyMode={dailyMode}
+        selectedMetricLabel={selectedMetricLabel}
+        timezone={timezone}
+        visualizePreviousPeriod={visualizePreviousPeriod}
+        profileService={profileService}
+        dailyData={dailyData}
+        totals={totals}
+      />
     );
     header = (
       <div style={{ padding: '20px', display: 'flex' }} >
@@ -98,14 +165,6 @@ const CompareChart = ({
         }
         <PeriodToggle handleClick={togglePreviousPeriod} active={visualizePreviousPeriod} />
       </div>
-    );
-    footer = (
-      <Footer
-        startDate={getStartDate(dailyData)}
-        endDate={getEndDate(dailyData)}
-        selectedMetricLabel={selectedMetricLabel}
-        totals={totals}
-      />
     );
   }
 
@@ -140,7 +199,6 @@ const CompareChart = ({
         {header}
         {content}
       </div>
-      {footer}
     </ChartCard>
   );
 };
