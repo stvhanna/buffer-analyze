@@ -53,11 +53,15 @@ function renderDropdownItem(profile, selectedProfiles, toggleProfile) {
 
   const selectedProfileIds = selectedProfiles.map(p => p.id);
 
+  const selected = selectedProfileIds.indexOf(profile.id) !== -1;
+  const disabled = !selected && selectedProfileIds.length === 5;
+
   return (<DropdownItem
     key={profile.id}
     profile={profile}
     handleClick={onClick}
-    selected={selectedProfileIds.indexOf(profile.id) !== -1}
+    selected={selected}
+    disabled={disabled}
   />);
 }
 
