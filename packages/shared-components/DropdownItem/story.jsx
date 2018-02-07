@@ -24,6 +24,15 @@ storiesOf('Dropdown Item')
       />
     </div>
   ))
+  .add('should be disabled', () => (
+    <div style={{ width: '260px', display: 'flex' }}>
+      <DropdownItem
+        profile={mockProfiles[0]}
+        handleClick={() => {}}
+        disabled
+      />
+    </div>
+  ))
   .add('should render properly with an empty avatarUrl', () => {
     const profile = Object.assign({}, mockProfiles[0]);
     profile.avatarUrl = '';

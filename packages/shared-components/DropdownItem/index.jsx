@@ -10,10 +10,11 @@ import {
 import { ProfileBadge } from '@bufferapp/analyze-shared-components';
 import {
   dropdownListItem,
+  dropdownListDisabledItem,
 } from './style.less';
 
-const DropdownItem = ({ profile, handleClick, selected }) => (
-  <li className={dropdownListItem}>
+const DropdownItem = ({ profile, handleClick, selected, disabled }) => (
+  <li className={disabled ? dropdownListDisabledItem : dropdownListItem}>
     <Button noStyle fillContainer onClick={handleClick} >
       <span
         style={{
@@ -49,10 +50,12 @@ DropdownItem.propTypes = {
   }).isRequired,
   handleClick: PropTypes.func.isRequired,
   selected: PropTypes.bool,
+  disabled: PropTypes.bool,
 };
 
 DropdownItem.defaultProps = {
   selected: false,
+  disabled: false,
 };
 
 export default DropdownItem;
