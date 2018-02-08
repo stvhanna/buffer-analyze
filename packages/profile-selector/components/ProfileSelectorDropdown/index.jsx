@@ -116,7 +116,7 @@ const ProfileSelectorDropdown = ({
 }) => {
   const selectedProfile = profiles.find(p => p.id === selectedProfileId);
 
-  if (profiles.length) {
+  if (profiles.length && selectedProfile) {
     const filteredProfiles = profiles.filter(
       p => p.username.toLowerCase().match(profilesFilterString),
     );
