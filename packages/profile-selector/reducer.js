@@ -4,7 +4,6 @@ import keyWrapper from '@bufferapp/keywrapper';
 
 export const actionTypes = keyWrapper('PROFILE_SELECTOR', {
   SELECT_PROFILE: 'SELECT_PROFILE',
-  SELECT_PROFILE_SERVICE: 'SELECT_PROFILE_SERVICE',
   FILTER_PROFILES: 'FILTER_PROFILES',
   OPEN_DROPDOWN: 'OPEN_DROPDOWN',
   CLOSE_DROPDOWN: 'CLOSE_DROPDOWN',
@@ -14,8 +13,7 @@ const initialState = {
   profiles: [],
   isDropdownOpen: false,
   profilesFilterString: '',
-  selectedProfileService: '',
-  selectedProfileId: null,
+  selectedProfile: null,
 };
 
 export default (state = initialState, action) => {
@@ -23,6 +21,7 @@ export default (state = initialState, action) => {
     case `profiles_${fetchActions.FETCH_SUCCESS}`:
       return Object.assign({}, state, {
         profiles: action.result,
+        // selectedProfile: state.selectedProfile || action.result[0],
       });
     case actionTypes.FILTER_PROFILES:
       return Object.assign({}, state, {
@@ -32,15 +31,10 @@ export default (state = initialState, action) => {
       return Object.assign({}, state, {
         profilesFilterString: '',
         isDropdownOpen: false,
-        selectedProfileId: action.id,
-        selectedProfileService: action.profileService || state.selectedProfileService,
+        selectedProfile: action.profile,
+        selectedProfileId: action.profile.id,
+        selectedProfileService: action.profile.service,
       });
-    case actionTypes.SELECT_PROFILE_SERVICE:
-      return {
-        ...state,
-        selectedProfileService: action.profileService,
-        selectedProfileId: state.selectedProfileId,
-      };
     case `profiles_${actionTypes.OPEN_DROPDOWN}`:
       return Object.assign({}, state, {
         isDropdownOpen: true,
@@ -55,17 +49,10 @@ export default (state = initialState, action) => {
 };
 
 export const actions = {
-  selectProfile(id, profileService = null) {
+  selectProfile(profile) {
     return {
       type: actionTypes.SELECT_PROFILE,
-      id,
-      profileService,
-    };
-  },
-  selectProfileService(profileService = null) {
-    return {
-      type: actionTypes.SELECT_PROFILE_SERVICE,
-      profileService,
+      profile,
     };
   },
   openDropdown() {

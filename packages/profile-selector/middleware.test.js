@@ -32,7 +32,7 @@ const profiles = {
 const stateWithProfileRoute = {
   router: {
     location: {
-      pathname: `/insights/twitter/${profileId}/overview`,
+      pathname: `/overview/${profileId}`,
     },
   },
   profiles,
@@ -76,9 +76,10 @@ describe('middleware', () => {
     const { store, next, invoke } = getMiddlewareElements();
     const action = {
       type: `profiles_${actionTypes.FETCH_SUCCESS}`,
+      result: profiles.profiles,
     };
     invoke(action);
-    expect(store.dispatch).toHaveBeenCalledWith(profileActions.selectProfile(profileId, 'twitter'));
+    expect(store.dispatch).toHaveBeenCalledWith(profileActions.selectProfile(profiles.profiles[0]));
     expect(next).toHaveBeenCalledWith(action);
   });
 
@@ -86,19 +87,10 @@ describe('middleware', () => {
     const { store, next, invoke } = getMiddlewareElements();
     const action = {
       type: `profiles_${actionTypes.FETCH_SUCCESS}`,
+      result: profiles.profiles,
     };
     invoke(action);
     expect(store.dispatch).toHaveBeenCalledWith(performanceActions.measureFromNavigationStart({ name: 'firstMeaningfulPaint' }));
-    expect(next).toHaveBeenCalledWith(action);
-  });
-
-  it('should select the first profile if profileService is not specified (comparison page)', () => {
-    const { store, next, invoke } = getMiddlewareElements();
-    const action = {
-      type: `${profileActionTypes.SELECT_PROFILE_SERVICE}`,
-    };
-    invoke(action);
-    expect(store.dispatch).toHaveBeenCalledWith(profileActions.selectProfile('120351988a'));
     expect(next).toHaveBeenCalledWith(action);
   });
 
@@ -106,10 +98,12 @@ describe('middleware', () => {
     const { store, next, invoke } = getMiddlewareElements();
     const action = {
       type: profileActionTypes.SELECT_PROFILE,
-      id: profileId,
+      profile: {
+        id: profileId,
+      },
     };
     invoke(action);
-    expect(store.dispatch).toHaveBeenCalledWith(push(`/insights/twitter/${profileId}/overview`));
+    expect(store.dispatch).toHaveBeenCalledWith(push(`/overview/${profileId}`));
     expect(next).toHaveBeenCalledWith(action);
   });
 
@@ -117,27 +111,12 @@ describe('middleware', () => {
     const { store, next, invoke } = getMiddlewareElements(stateWithoutProfileRoute);
     const action = {
       type: profileActionTypes.SELECT_PROFILE,
-      id: profileId,
+      profile: {
+        id: profileId,
+      },
     };
     invoke(action);
-    expect(store.dispatch).not.toHaveBeenCalledWith(push(`/insights/twitter/${profileId}/overview`));
-    expect(next).toHaveBeenCalledWith(action);
-  });
-
-  it('should select a profile after a service is selected on side-navbar', () => {
-    const { store, next, invoke } = getMiddlewareElements();
-    const action = {
-      type: `${profileActionTypes.SELECT_PROFILE_SERVICE}`,
-      profileService: 'facebook',
-
-    };
-    const expectedAction = {
-      type: `${profileActionTypes.SELECT_PROFILE}`,
-      profileService: 'facebook',
-      id: '122222222',
-    };
-    invoke(action);
-    expect(store.dispatch).toHaveBeenCalledWith(expectedAction);
+    expect(store.dispatch).not.toHaveBeenCalledWith(push(`/overview/${profileId}`));
     expect(next).toHaveBeenCalledWith(action);
   });
 

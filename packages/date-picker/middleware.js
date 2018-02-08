@@ -33,7 +33,7 @@ export default ({ dispatch, getState }) => next => (action) => {
       dispatch(actions.fetch({
         name: 'analytics_start_date',
         args: {
-          profileId: action.id,
+          profileId: action.profile.id,
         },
       }));
       break;

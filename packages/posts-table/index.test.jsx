@@ -36,6 +36,7 @@ const validStore = {
     },
     profiles: {
       profiles: [profile],
+      selectedProfile: profile,
     },
     posts: {
       loading: false,
@@ -57,8 +58,6 @@ describe('Top Post Table', () => {
     const wrapper = mount(
       <Provider store={validStore}>
         <TopPosts
-          profileService="facebook"
-          selectedProfileId="4e88a092512f7e1556000000"
           selectedMetric={selectedMetric}
           selectMetric={() => {}}
           toggleDropdown={() => {}}
@@ -92,8 +91,6 @@ describe('Top Post Table', () => {
 
   it('postsTable should call the selectMetric action with the correct values', () => {
     const component = shallow(<TopPosts
-      profileService="facebook"
-      selectedProfileId="4e88a092512f7e1556000000"
       isDescendingSelected
       selectedMetric={selectedMetric}
       store={validStore}
@@ -108,8 +105,6 @@ describe('Top Post Table', () => {
 
   it('postsTable should call the handlePostsCountClick action with the correct values', () => {
     const component = shallow(<TopPosts
-      profileService="facebook"
-      selectedProfileId="4e88a092512f7e1556000000"
       isDescendingSelected
       selectedMetric={selectedMetric}
       store={validStore}
@@ -123,8 +118,6 @@ describe('Top Post Table', () => {
 
   it('postsTable should call the toggleDropdown action', () => {
     const component = shallow(<TopPosts
-      profileService="facebook"
-      selectedProfileId="4e88a092512f7e1556000000"
       isDescendingSelected
       selectedMetric={selectedMetric}
       store={validStore}

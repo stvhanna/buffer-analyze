@@ -19,30 +19,37 @@ const AudienceChart = ({
   className,
   data,
   loading,
+  profileService,
   ...props
-}) => (
-  <ChartCard>
-    <ChartHeader>
-      <Title dailyData={data} />
-      <AddReport
-        chart="audience"
-        state={{
-          mode: props.mode,
-          selectedMetrics: props.selectedMetrics,
-          profileService: props.profileService,
-        }}
-      />
-    </ChartHeader>
-    <div className={className}>
-      {loading && <Loading active noBorder />}
-      {data.length === 0 && !loading && <NoData />}
-      {data.length >= 1 && !loading && <div>
-        <Header {...props} />
-        <Chart {...props} pngExportId="audience" data={data} />
-      </div>}
-    </div>
-  </ChartCard>
-);
+}) => {
+  if (profileService !== 'instagram') {
+    return null;
+  }
+
+  return (
+    <ChartCard>
+      <ChartHeader>
+        <Title dailyData={data} />
+        <AddReport
+          chart="audience"
+          state={{
+            mode: props.mode,
+            selectedMetrics: props.selectedMetrics,
+            profileService,
+          }}
+        />
+      </ChartHeader>
+      <div className={className}>
+        {loading && <Loading active noBorder />}
+        {data.length === 0 && !loading && <NoData />}
+        {data.length >= 1 && !loading && <div>
+          <Header {...props} />
+          <Chart {...props} pngExportId="audience" data={data} />
+        </div>}
+      </div>
+    </ChartCard>
+  );
+};
 
 AudienceChart.defaultProps = {
   loading: false,

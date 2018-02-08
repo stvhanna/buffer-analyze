@@ -99,7 +99,9 @@ describe('middleware', () => {
   it('shoud dispatch a data fetch for posts once a profile has been selected', () => {
     const action = {
       type: actionTypes.SELECT_PROFILE,
-      id: '12359182129asd',
+      profile: {
+        id: '12359182129asd',
+      },
     };
     middleware(store)(next)(action);
     expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({

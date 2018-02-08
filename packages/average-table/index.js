@@ -12,6 +12,7 @@ function mapStateToProps (state) {
     loading: state.average.loading,
     timezone: getSelectedProfileTimezone(state.profiles),
     metrics: state.average.metrics,
+    profileService: state.profiles.selectedProfileService,
   };
 }
 export default connect(

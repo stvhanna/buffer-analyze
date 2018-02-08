@@ -7,7 +7,7 @@ export default ({ dispatch }) => next => (action) => { // eslint-disable-line no
       dispatch(actions.fetch({
         name: 'followers',
         args: {
-          profileId: action.id,
+          profileId: action.profile.id,
         },
       }));
       break;

@@ -92,10 +92,7 @@ const arrowHolderStyle = {
 
 function renderDropdownItem(profile, selectedProfileId, selectProfile) {
   const onClick = () => {
-    selectProfile({
-      id: profile.id,
-      service: profile.service,
-    });
+    selectProfile(profile);
   };
 
   return (<DropdownItem

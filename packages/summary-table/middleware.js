@@ -25,8 +25,8 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
       dispatch(actions.fetch({
         name: 'summary',
         args: {
-          profileId: action.id,
-          profileService: action.profileService,
+          profileId: action.profile.id,
+          profileService: action.profile.service,
           startDate: getState().date.startDate,
           endDate: getState().date.endDate,
         },
