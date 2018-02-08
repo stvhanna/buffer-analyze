@@ -27,7 +27,7 @@ const mapStateToProps = state => ({
   isDropdownOpen: state.profiles.isDropdownOpen,
   profiles: state.profiles.profiles,
   profilesFilterString: state.profiles.profilesFilterString,
-  selectedProfileId: state.profiles.selectedProfile.id,
+  selectedProfileId: state.profiles.selectedProfile ? state.profiles.selectedProfile.id : null,
 });
 
 const mapDispatchToProps = dispatch => ({

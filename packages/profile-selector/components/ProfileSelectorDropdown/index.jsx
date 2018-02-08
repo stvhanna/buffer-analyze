@@ -157,7 +157,7 @@ const ProfileSelectorDropdown = ({
           { filteredProfiles.length > 0 &&
             <ul
               style={(filteredProfiles.length > 7 ?
-              dropdownListScrollableStyle : dropdownListStyle)}
+                dropdownListScrollableStyle : dropdownListStyle)}
             >
               { filteredProfiles.map(p => renderDropdownItem(p, selectedProfileId, selectProfile)) }
             </ul>
@@ -181,7 +181,7 @@ ProfileSelectorDropdown.propTypes = {
   onSearchChange: PropTypes.func.isRequired,
   profilesFilterString: PropTypes.string,
   selectProfile: PropTypes.func.isRequired,
-  selectedProfileId: PropTypes.string.isRequired,
+  selectedProfileId: PropTypes.string,
   openDropdown: PropTypes.func.isRequired,
   closeDropdown: PropTypes.func.isRequired,
 };
@@ -189,6 +189,7 @@ ProfileSelectorDropdown.propTypes = {
 ProfileSelectorDropdown.defaultProps = {
   isDropdownOpen: false,
   profilesFilterString: '',
+  selectedProfileId: '',
 };
 
 export default ProfileSelectorDropdown;
