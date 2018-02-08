@@ -27,10 +27,10 @@ storiesOf('ReportList')
       reports={[]}
     />
   ))
-  .add('renders an empty state for reports when from modal', () => (
+  .add('renders an empty state for small reports', () => (
     <ReportList
       reports={[]}
-      fromModal
+      small
     />
   ))
   .add('renders the reports collection in a list', () => (

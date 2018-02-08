@@ -354,7 +354,7 @@ exports[`Snapshots ReportList renders an empty state for reports 1`] = `
 </span>
 `;
 
-exports[`Snapshots ReportList renders an empty state for reports when from modal 1`] = `
+exports[`Snapshots ReportList renders an empty state for small reports 1`] = `
 <span>
   <div
     className="sc-jKJlTe hzCAlj"

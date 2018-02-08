@@ -21,7 +21,7 @@ const Centered = styled.div`
   align-items: center;
 `;
 
-const ReportList = ({ loading, reports, selectReport, removeReport, small, fromModal }) =>
+const ReportList = ({ loading, reports, selectReport, removeReport, small }) =>
   (loading ?
     <Centered>
       <Loading active noBorder transparent />
@@ -41,7 +41,7 @@ const ReportList = ({ loading, reports, selectReport, removeReport, small, fromM
       <Centered>
         <EmptyState
           header="There are currently no reports"
-          description={!fromModal ? "Create one with the 'Add to Report' button on any graph" : null}
+          description={!small ? "Create one with the 'Add to Report' button on any graph" : null}
         />
       </Centered>
   );
@@ -51,7 +51,6 @@ ReportList.defaultProps = {
   loading: false,
   small: false,
   removeReport: null,
-  fromModal: false,
 };
 
 ReportList.propTypes = {
@@ -63,7 +62,6 @@ ReportList.propTypes = {
   selectReport: PropTypes.func.isRequired,
   removeReport: PropTypes.func,
   small: PropTypes.bool,
-  fromModal: PropTypes.bool,
 };
 
 export default ReportList;
