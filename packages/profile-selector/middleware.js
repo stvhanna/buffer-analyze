@@ -34,6 +34,7 @@ const getProfileRoute = (state, id) => {
 };
 
 export default ({ dispatch, getState }) => next => (action) => {
+  const result = next(action);
   switch (action.type) {
     case `profiles_${actionTypes.FETCH_SUCCESS}`: {
       const profileId = getProfileIdFromRoute(getState());
@@ -54,7 +55,7 @@ export default ({ dispatch, getState }) => next => (action) => {
     case LOCATION_CHANGE:
       if (action.payload.pathname.match(REPORTS_PATH_REGEX)) {
         dispatch(reportActions.viewReport(action.payload.pathname.match(REPORTS_PATH_REGEX)[1]));
-      } else if (isInsightsRoute(action.payload.pathname)) {
+      } else if (action.payload.pathname.match(/(overview|posts)\/?$/)) {
         let profile = null;
         if (getState().profiles.selectedProfile === null) {
           profile = getState().profiles.profiles[0];
@@ -63,15 +64,15 @@ export default ({ dispatch, getState }) => next => (action) => {
           }
         } else {
           profile = getState().profiles.selectedProfile;
-        }
-        if (profile) {
-          dispatch(push(`${action.payload.pathname}/${profile.id}`));
+          if (profile) {
+            dispatch(push(`${action.payload.pathname}/${profile.id}`));
+          }
         }
       }
       break;
     default:
       break;
   }
-  return next(action);
+  return result;
 };
 

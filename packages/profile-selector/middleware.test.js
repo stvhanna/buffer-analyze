@@ -11,6 +11,7 @@ import middleware from './middleware';
 const profileId = '120351988a';
 
 const profiles = {
+  selectedProfile: null,
   profiles: [
     {
       id: '120351988a',
@@ -36,6 +37,14 @@ const stateWithProfileRoute = {
     },
   },
   profiles,
+};
+
+const stateWithProfileRouteAndSelectedProfile = {
+  ...stateWithProfileRoute,
+  profiles: {
+    ...stateWithProfileRoute.profiles,
+    selectedProfile: profiles.profiles[0],
+  },
 };
 
 const stateWithoutProfileRoute = {
@@ -120,16 +129,45 @@ describe('middleware', () => {
     expect(next).toHaveBeenCalledWith(action);
   });
 
-  it('should push a viewReport action if there is a LOCATION_CHANGE towards a report route', () => {
-    const { store, next, invoke } = getMiddlewareElements();
-    const action = {
-      type: LOCATION_CHANGE,
-      payload: {
-        pathname: '/reports/report-1',
-      },
-    };
-    invoke(action);
-    expect(store.dispatch).toHaveBeenCalledWith(reportActions.viewReport('report-1'));
-    expect(next).toHaveBeenCalledWith(action);
+  describe('LOCATION_CHANGE', () => {
+    it('should push a viewReport action if there is a LOCATION_CHANGE towards a report route', () => {
+      const { store, next, invoke } = getMiddlewareElements();
+      const action = {
+        type: LOCATION_CHANGE,
+        payload: {
+          pathname: '/reports/report-1',
+        },
+      };
+      invoke(action);
+      expect(store.dispatch).toHaveBeenCalledWith(reportActions.viewReport('report-1'));
+      expect(next).toHaveBeenCalledWith(action);
+    });
+
+    it('should push a selectProfile action if there is a LOCATION_CHANGE for an overview/posts route and there is no profile selected', () => {
+      const { store, next, invoke } = getMiddlewareElements();
+      const action = {
+        type: LOCATION_CHANGE,
+        payload: {
+          pathname: '/overview',
+        },
+      };
+      invoke(action);
+      expect(store.dispatch)
+        .toHaveBeenCalledWith(profileActions.selectProfile(profiles.profiles[0]));
+      expect(next).toHaveBeenCalledWith(action);
+    });
+    it('should push a new route with (overview|posts)/profileId as format when visting overview or posts with a profile selected', () => {
+      const { store, next, invoke } = getMiddlewareElements(stateWithProfileRouteAndSelectedProfile);
+      const action = {
+        type: LOCATION_CHANGE,
+        payload: {
+          pathname: '/overview',
+        },
+      };
+      invoke(action);
+      expect(store.dispatch)
+        .toHaveBeenCalledWith(push(`/overview/${profiles.profiles[0].id}`));
+      expect(next).toHaveBeenCalledWith(action);
+    });
   });
 });
