@@ -37,7 +37,7 @@ const Item = styled.li`
   display: inline-block;
   box-sizing: border-box;
   margin: 0;
-  padding: 0.5rem 0.25rem;
+  padding: 0;
   text-decoration: none;
   text-shadow: none;
   border: 1px solid #CED7DF;
@@ -53,6 +53,10 @@ const Item = styled.li`
 
   &:last-of-type {
     margin-right: 0;
+  }
+
+  > button {
+    padding: 0.5rem 0.25rem !important;
   }
 
   ${props => props.inactive && css`
@@ -130,6 +134,7 @@ const Presets = ({ selectPreset, minStartDate, startDate, endDate }) => {
       >
         <Button
           noStyle
+          fillContainer
           onClick={handleClick}
         >
           <Text size="small" color={buttonTextColor}>{preset.name}</Text>
