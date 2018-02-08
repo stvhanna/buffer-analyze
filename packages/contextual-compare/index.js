@@ -2,11 +2,6 @@ import { connect } from 'react-redux';
 import ContextualCompare from './components/ContextualCompare';
 import { actions } from './reducer';
 
-function getSelectedProfileTimezone({ profiles, selectedProfileId }) {
-  const profile = profiles.find(p => p.id === selectedProfileId);
-  return profile.timezone;
-}
-
 function mapStateToProps (state) {
   return {
     data: state.contextual.data,
@@ -21,7 +16,7 @@ function mapStateToProps (state) {
     selectedMetricLabel: state.contextual.selectedMetricLabel,
     selectedMetrics: state.contextual.selectedMetrics,
     selectedPreset: state.contextual.selectedPreset,
-    timezone: getSelectedProfileTimezone(state.profiles),
+    timezone: state.profiles.selectedProfile ? state.profiles.selectedProfile.timezone : '',
   };
 }
 

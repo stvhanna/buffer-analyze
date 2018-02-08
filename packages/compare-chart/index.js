@@ -2,11 +2,6 @@ import { connect } from 'react-redux';
 import CompareChart from './components/CompareChart';
 import { actions } from './reducer';
 
-function getSelectedProfileTimezone({ profiles, selectedProfileId }) {
-  const profile = profiles.find(p => p.id === selectedProfileId);
-  return profile.timezone;
-}
-
 function mapStateToProps (state) {
   return {
     daily: state.compare.metrics.daily,
@@ -16,7 +11,7 @@ function mapStateToProps (state) {
     loading: state.compare.loading,
     profileService: state.profiles.selectedProfileService,
     selectedMetricLabel: state.compare.selectedMetricLabel,
-    timezone: getSelectedProfileTimezone(state.profiles),
+    timezone: state.profiles.selectedProfile ? state.profiles.selectedProfile.timezone : '',
     totals: state.compare.metrics.totals,
     visualizePreviousPeriod: state.compare.visualizePreviousPeriod,
   };

@@ -39,6 +39,15 @@ const stateWithProfileRoute = {
   profiles,
 };
 
+const stateWithInsightsRoute = {
+  router: {
+    location: {
+      pathname: `/overview`,
+    },
+  },
+  profiles,
+};
+
 const stateWithProfileRouteAndSelectedProfile = {
   ...stateWithProfileRoute,
   profiles: {
@@ -83,6 +92,17 @@ describe('middleware', () => {
 
   it('should select a profile after fetching all the profiles if the route is an insights route', () => {
     const { store, next, invoke } = getMiddlewareElements();
+    const action = {
+      type: `profiles_${actionTypes.FETCH_SUCCESS}`,
+      result: profiles.profiles,
+    };
+    invoke(action);
+    expect(store.dispatch).toHaveBeenCalledWith(profileActions.selectProfile(profiles.profiles[0]));
+    expect(next).toHaveBeenCalledWith(action);
+  });
+
+  it('should select the first profile after fetching all the profiles if the route is an insights route with no id in the pathname', () => {
+    const { store, next, invoke } = getMiddlewareElements(stateWithInsightsRoute);
     const action = {
       type: `profiles_${actionTypes.FETCH_SUCCESS}`,
       result: profiles.profiles,

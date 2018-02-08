@@ -41,6 +41,8 @@ export default ({ dispatch, getState }) => next => (action) => {
       if (profileId) {
         const profile = action.result.find(p => p.id === profileId);
         dispatch(profilesActions.selectProfile(profile));
+      } else if (isInsightsRoute(getState().router.location.pathname)) {
+        dispatch(profilesActions.selectProfile(action.result[0]));
       }
       dispatch(performanceActions.measureFromNavigationStart({ name: 'firstMeaningfulPaint' }));
       break;
