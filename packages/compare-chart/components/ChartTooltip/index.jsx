@@ -151,11 +151,11 @@ const Header = ({
   visualizePreviousPeriod,
 }) => (
   <span>
-    <Text color="mystic" size="extra-small" >{moment.utc(day).format('D MMMM')}</Text>
+    <Text color="mystic" size="small" >{moment.utc(day).format('D MMMM')}</Text>
     {visualizePreviousPeriod && <span>
       <br />
-      <Text color="mystic" size="extra-small" >comparing to </Text>
-      <Text color="mystic" size="extra-small" >{moment.utc(previousPeriodDay).format('D MMMM')}</Text>
+      <Text color="mystic" size="small" >comparing to </Text>
+      <Text color="mystic" size="small" >{moment.utc(previousPeriodDay).format('D MMMM')}</Text>
     </span>}
     <br />
     <br />

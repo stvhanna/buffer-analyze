@@ -73,7 +73,7 @@ exports[`Snapshots AudienceChartTooltip [TESTED] should render a presets tooltip
             Object {
               "color": "#e6ebef",
               "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "0.5rem",
+              "fontSize": "0.75rem",
               "fontWeight": 400,
             }
           }
@@ -939,7 +939,7 @@ exports[`Snapshots ComparisonChartTooltip should render the tooltip 1`] = `
             Object {
               "color": "#e6ebef",
               "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "0.5rem",
+              "fontSize": "0.75rem",
               "fontWeight": 400,
             }
           }
