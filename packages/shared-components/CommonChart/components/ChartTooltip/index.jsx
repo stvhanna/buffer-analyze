@@ -190,7 +190,7 @@ const Header = ({
   day,
 }) => (
   <span>
-    <Text color="mystic" size="extra-small" >{moment.utc(day).format('D MMMM')}</Text>
+    <Text color="mystic" size="small" >{moment.utc(day).format('D MMMM')}</Text>
     <br />
     <br />
   </span>
