@@ -1,0 +1,108 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import {
+  ChartStateNoData as NoData,
+  ChartStateLoading as Loading,
+  ChartCard as Card,
+  ChartHeader as Header,
+} from '@bufferapp/analyze-shared-components';
+
+import Chart from '../Chart';
+import Footer from '../ComparisonFooter';
+import Title from '../ComparisonTitle';
+
+function capitalizeMetricName(name) {
+  return `${name.charAt(0).toUpperCase()}${name.slice(1)}`;
+}
+
+const ComparisonChart = ({
+  profilesMetricData,
+  profileTotals,
+  profiles,
+  loading,
+  metricKey,
+}) => {
+  let content = null;
+  let footer = null;
+
+  if (loading) {
+    content = <Loading active noBorder />;
+  } else if (profilesMetricData.length === 0) {
+    content = <NoData />;
+  } else {
+    content = (
+      <div>
+        <Chart
+          profilesMetricData={profilesMetricData}
+          profiles={profiles}
+        />
+      </div>
+    );
+    footer = (
+      <Footer
+        profileTotals={profileTotals}
+        profiles={profiles}
+      />
+    );
+  }
+
+  const ContentContainer = styled.div`
+    position: relative;
+    padding: 1.5rem;
+  `;
+
+  return (
+    <Card>
+      <Header>
+        <Title chartName={capitalizeMetricName(metricKey)} />
+      </Header>
+      <ContentContainer>
+        {content}
+      </ContentContainer>
+      {footer}
+    </Card>
+  );
+};
+
+ComparisonChart.defaultProps = {
+  loading: false,
+  selectedProfiles: [],
+};
+
+ComparisonChart.propTypes = {
+  loading: PropTypes.bool,
+  metricKey: PropTypes.string.isRequired,
+  // props used for generating chart
+  profilesMetricData: PropTypes.arrayOf(PropTypes.shape({
+    dailyData: PropTypes.arrayOf(PropTypes.shape({
+      day: PropTypes.number.isRequired,
+      metric: PropTypes.shape({
+        color: PropTypes.string.isRequired,
+        label: PropTypes.string.isRequired,
+        value: PropTypes.number.isRequired,
+      }),
+    })),
+    service: PropTypes.string.isRequired,
+    timezone: PropTypes.string.isRequired,
+  })).isRequired,
+  // props  for generating the right footer
+  profileTotals: PropTypes.arrayOf(PropTypes.shape({
+    metric: PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      color: PropTypes.string.isRequired,
+    }),
+    currentPeriodTotal: PropTypes.number.isRequired,
+    currentPeriodDiff: PropTypes.number.isRequired,
+    profileId: PropTypes.string.isRequired,
+  })).isRequired,
+  profiles: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    username: PropTypes.string.isRequired,
+    avatarUrl: PropTypes.string.isRequired,
+    service: PropTypes.string.isRequired,
+  })).isRequired,
+};
+
+export default ComparisonChart;
+

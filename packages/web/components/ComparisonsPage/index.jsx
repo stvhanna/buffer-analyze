@@ -6,11 +6,7 @@ import DatePicker from '@bufferapp/analyze-date-picker';
 import ProfileLoader from '@bufferapp/profile-loader';
 import { white, mystic } from '@bufferapp/components/style/color';
 import MultiProfileSelector from '@bufferapp/multi-profile-selector';
-import AudienceComparisonChart from '@bufferapp/audience-comparison-chart';
-import ReachComparisonChart from '@bufferapp/reach-comparison-chart';
-import LikesComparisonChart from '@bufferapp/likes-comparison-chart';
-import EngagementComparisonChart from '@bufferapp/engagement-comparison-chart';
-import CommentsComparisonChart from '@bufferapp/comments-comparison-chart';
+import ComparisonChart from '@bufferapp/comparison-chart';
 import { EmptyState } from '@bufferapp/analyze-shared-components';
 
 const pageStyle = {
@@ -90,11 +86,11 @@ const ComparisonsPage = ({ location, isCompareProfileClicked }) => (
           {
             isCompareProfileClicked ?
               <div style={comparisonsMaxWidth}>
-                <AudienceComparisonChart />
-                <ReachComparisonChart />
-                <LikesComparisonChart />
-                <EngagementComparisonChart />
-                <CommentsComparisonChart />
+                <ComparisonChart metricKey="audience" />
+                <ComparisonChart metricKey="reach" />
+                <ComparisonChart metricKey="likes" />
+                <ComparisonChart metricKey="engagement" />
+                <ComparisonChart metricKey="comments" />
               </div>
               :
               <div style={centeredContainer}>
