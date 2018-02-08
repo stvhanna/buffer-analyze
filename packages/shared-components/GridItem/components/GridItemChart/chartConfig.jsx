@@ -40,8 +40,8 @@ export default {
   plotOptions: {
     column: {
       pointPlacement: 'between',
-      borderWitdth: 0,
-      borderColor: 'transparent',
+      borderWidth: 1,
+      borderColor: '#FBC699',
     },
   },
   tooltip: {

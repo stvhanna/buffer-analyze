@@ -25,14 +25,17 @@ const gridContainer = {
   padding: '1.5rem',
 };
 
-export const Table = ({ daily, totals}) =>
-  <ul style={gridStyle}>
+export const Table = ({ daily, totals }) => {
+  console.log(`${100 / totals.length}%`);
+  return (<ul style={gridStyle}>
     {totals.map(metric => <GridItem
       key={metric.label}
       metric={metric}
       dailyData={daily}
+      gridWidth={`${100 / totals.length}%`}
     />)}
-  </ul>;
+  </ul>);
+};
 
 Table.defaultProps = {
   daily: [],
