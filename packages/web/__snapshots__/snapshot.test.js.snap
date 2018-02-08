@@ -1042,9 +1042,9 @@ exports[`Snapshots App should render application 1`] = `
                 }
               >
                 <span>
-                  Get started by viewing Insights for 
+                  Get started by viewing an 
                   <a
-                    href="/insights/facebook/1/overview"
+                    href="/overview"
                     onBlur={[Function]}
                     onClick={[Function]}
                     onFocus={[Function]}
@@ -1061,11 +1061,11 @@ exports[`Snapshots App should render application 1`] = `
                     }
                     target="_self"
                   >
-                    Facebook Pages
+                    overview of your performance
                   </a>
-                  , 
+                   or gaining some insights around 
                   <a
-                    href="/insights/twitter/3/overview"
+                    href="/posts"
                     onBlur={[Function]}
                     onClick={[Function]}
                     onFocus={[Function]}
@@ -1082,32 +1082,9 @@ exports[`Snapshots App should render application 1`] = `
                     }
                     target="_self"
                   >
-                    Twitter Profiles
+                    your posts
                   </a>
-                   or 
-                  <a
-                    href="/insights/instagram/2/overview"
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    style={
-                      Object {
-                        "color": "#168eea",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
-                        "outline": "none",
-                        "padding": "0",
-                        "textDecoration": "none",
-                      }
-                    }
-                    target="_self"
-                  >
-                    Instagram Profiles
-                  </a>
-                  .
-                  <br />
-                  You can also view 
+                  . You can also view 
                   <a
                     href="/reports"
                     onBlur={[Function]}
