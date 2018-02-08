@@ -28,7 +28,7 @@ const sidebarStyle = {
 };
 
 const bottomSectionStyle = {
-  marginTop: 'auto'
+  marginTop: 'auto',
 };
 
 const NavSidebar = props => (
@@ -45,11 +45,5 @@ const NavSidebar = props => (
     </div>
   </div>
 );
-
-NavSidebar.propTypes = {
-  profiles: PropTypes.arrayOf(PropTypes.shape({
-    service: PropTypes.string,
-  })).isRequired,
-};
 
 export default NavSidebar;

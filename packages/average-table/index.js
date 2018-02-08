@@ -1,17 +1,13 @@
 import { connect } from 'react-redux';
 import AverageTable from './components/AverageTable';
 
-function getSelectedProfileTimezone({ profiles, selectedProfileId }) {
-  const profile = profiles.find(p => p.id === selectedProfileId);
-  return profile.timezone;
-}
-
 // default export = container
 function mapStateToProps (state) {
   return {
     loading: state.average.loading,
-    timezone: getSelectedProfileTimezone(state.profiles),
+    timezone: state.profiles.selectedProfile ? state.profiles.selectedProfile.timezone : '',
     metrics: state.average.metrics,
+    profileService: state.profiles.selectedProfileService,
   };
 }
 export default connect(

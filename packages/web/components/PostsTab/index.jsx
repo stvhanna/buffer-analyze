@@ -5,12 +5,11 @@ import PostsTable from '@bufferapp/posts-table';
 
 import PostsSummaryTable from '@bufferapp/posts-summary-table';
 
-const PostsTab = ({ match }) => (
+const PostsTab = () =>
   <div>
-    <PostsSummaryTable profileService={match.params.service} />
-    <PostsTable selectedProfileId={match.params.id} profileService={match.params.service} />
-  </div>
-);
+    <PostsSummaryTable />
+    <PostsTable />
+  </div>;
 
 PostsTab.propTypes = {
   match: PropTypes.shape({

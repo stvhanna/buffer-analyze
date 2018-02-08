@@ -89,17 +89,10 @@ const InsightsPage = ({
     <ProfileLoader>
       <div style={contentStyle}>
         <div style={toolbarContainer}>
-          <div style={toolbarTabNavigation}>
-            <TabNavigation
-              profileId={id}
-              service={service}
-              tabId={tabId}
-            />
+          <div style={toolbarProfileSelector}>
+            <ProfileSelector profileService={service} />
           </div>
           <div style={toolbarRight}>
-            <div style={toolbarProfileSelector}>
-              <ProfileSelector profileService={service} />
-            </div>
             <div style={toolbarDatePicker}>
               <DatePicker />
             </div>
@@ -113,11 +106,11 @@ const InsightsPage = ({
             <ProfileHeader selectedProfileId={id} />
             <Switch>
               <Route
-                path="/insights/:service/:id/overview"
+                path="/overview/:id?"
                 component={OverviewTab}
               />
               <Route
-                path="/insights/:service/:id/posts"
+                path="/posts/:id?"
                 component={PostsTab}
               />
             </Switch>

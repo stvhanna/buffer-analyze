@@ -19,40 +19,46 @@ const ContextualCompare = ({
   className,
   data,
   loading,
+  profileService,
   ...props
-}) => (
-  <ChartCard>
-    <ChartHeader>
-      <Title dailyData={data} />
-      <AddReport
-        chart="contextual-compare"
-        state={{
-          mode: props.mode,
-          selectedMetrics: props.selectedMetrics,
-          selectedPreset: props.selectedPreset,
-          profileService: props.profileService,
-        }}
-      />
-    </ChartHeader>
-    <div className={className}>
-      {loading && <Loading active noBorder />}
-      {data.length === 0 && !loading && <NoData />}
-      {data.length >= 1 && !loading && <div>
-        <Header {...props} />
-        <Chart
-          mode={props.mode}
-          presets={props.presets}
-          profileService={props.profileService}
-          selectedMetrics={props.selectedMetrics}
-          selectedPreset={props.selectedPreset}
-          timezone={props.timezone}
-          pngExportId="contextual"
-          data={data}
+}) => {
+  if (profileService !== 'facebook') {
+    return null;
+  }
+  return (
+    <ChartCard>
+      <ChartHeader>
+        <Title dailyData={data} />
+        <AddReport
+          chart="contextual-compare"
+          state={{
+            mode: props.mode,
+            selectedMetrics: props.selectedMetrics,
+            selectedPreset: props.selectedPreset,
+            profileService,
+          }}
         />
-      </div>}
-    </div>
-  </ChartCard>
-);
+      </ChartHeader>
+      <div className={className}>
+        {loading && <Loading active noBorder />}
+        {data.length === 0 && !loading && <NoData />}
+        {data.length >= 1 && !loading && <div>
+          <Header {...props} />
+          <Chart
+            mode={props.mode}
+            presets={props.presets}
+            profileService={profileService}
+            selectedMetrics={props.selectedMetrics}
+            selectedPreset={props.selectedPreset}
+            timezone={props.timezone}
+            pngExportId="contextual"
+            data={data}
+          />
+        </div>}
+      </div>
+    </ChartCard>
+  );
+};
 
 ContextualCompare.defaultProps = {
   loading: false,

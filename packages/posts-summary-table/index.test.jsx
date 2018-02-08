@@ -30,11 +30,16 @@ describe('PostsSummaryTable', () => {
       i18n: {
         translations: {},
       },
+      profiles: {
+        selectedProfile: {
+          service: 'facebook',
+        },
+      },
       date: {},
     });
     const wrapper = mount(
       <Provider store={store}>
-        <PostsSummary profileService="facebook" />
+        <PostsSummary/>
       </Provider>,
     );
     expect(wrapper.find(PostsSummaryTable).length)

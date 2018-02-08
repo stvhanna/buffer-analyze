@@ -53,7 +53,9 @@ describe('middleware', () => {
   it('shoud dispatch a data fetch for average once a profile has been selected', () => {
     const action = {
       type: actionTypes.SELECT_PROFILE,
-      id: '1235519asd',
+      profile: {
+        id: '1235519asd',
+      },
     };
     middleware(store)(next)(action);
     expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({

@@ -776,7 +776,7 @@ exports[`Snapshots App should render application 1`] = `
               </span>
             </span>
             <a
-              href="/insights/facebook/1/overview"
+              href="/overview"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -813,12 +813,12 @@ exports[`Snapshots App should render application 1`] = `
                     }
                   }
                 >
-                  Facebook
+                  Overview
                 </span>
               </span>
             </a>
             <a
-              href="/insights/twitter/3/overview"
+              href="/posts"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -855,49 +855,7 @@ exports[`Snapshots App should render application 1`] = `
                     }
                   }
                 >
-                  Twitter
-                </span>
-              </span>
-            </a>
-            <a
-              href="/insights/instagram/2/overview"
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              style={
-                Object {
-                  "color": "#168eea",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
-                  "outline": "none",
-                  "padding": "0",
-                  "textDecoration": "none",
-                }
-              }
-              target="_self"
-            >
-              <span
-                style={
-                  Object {
-                    "borderRadius": "4px",
-                    "display": "block",
-                    "margin": "0 0.5rem",
-                    "padding": "0.75rem 0.5rem",
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "1rem",
-                      "fontWeight": 400,
-                    }
-                  }
-                >
-                  Instagram
+                  Posts
                 </span>
               </span>
             </a>
@@ -1084,9 +1042,9 @@ exports[`Snapshots App should render application 1`] = `
                 }
               >
                 <span>
-                  Get started by viewing Insights for 
+                  Get started by viewing an 
                   <a
-                    href="/insights/facebook/1/overview"
+                    href="/overview"
                     onBlur={[Function]}
                     onClick={[Function]}
                     onFocus={[Function]}
@@ -1103,11 +1061,11 @@ exports[`Snapshots App should render application 1`] = `
                     }
                     target="_self"
                   >
-                    Facebook Pages
+                    overview of your performance
                   </a>
-                  , 
+                   or gaining some insights around 
                   <a
-                    href="/insights/twitter/3/overview"
+                    href="/posts"
                     onBlur={[Function]}
                     onClick={[Function]}
                     onFocus={[Function]}
@@ -1124,32 +1082,9 @@ exports[`Snapshots App should render application 1`] = `
                     }
                     target="_self"
                   >
-                    Twitter Profiles
+                    your posts
                   </a>
-                   or 
-                  <a
-                    href="/insights/instagram/2/overview"
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onMouseEnter={[Function]}
-                    onMouseLeave={[Function]}
-                    style={
-                      Object {
-                        "color": "#168eea",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
-                        "outline": "none",
-                        "padding": "0",
-                        "textDecoration": "none",
-                      }
-                    }
-                    target="_self"
-                  >
-                    Instagram Profiles
-                  </a>
-                  .
-                  <br />
-                  You can also view 
+                  . You can also view 
                   <a
                     href="/reports"
                     onBlur={[Function]}
@@ -1261,6 +1196,129 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
           }
         }
       />
+      <div>
+        <span
+          style={
+            Object {
+              "display": "block",
+              "letterSpacing": ".075rem",
+              "margin": "0 1rem 0.75rem",
+              "padding": "0",
+              "textTransform": "uppercase",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#8A9097",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 500,
+              }
+            }
+          >
+            Insights
+          </span>
+        </span>
+        <a
+          href="/overview"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            style={
+              Object {
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0 0.5rem",
+                "padding": "0.75rem 0.5rem",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Overview
+            </span>
+          </span>
+        </a>
+        <a
+          href="/posts"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            style={
+              Object {
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0 0.5rem",
+                "padding": "0.75rem 0.5rem",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Posts
+            </span>
+          </span>
+        </a>
+        <hr
+          style={
+            Object {
+              "background": "#e6ebef",
+              "border": "none",
+              "boxSizing": "border-box",
+              "height": "0.063rem",
+              "marginBottom": "1rem",
+              "marginTop": "0.75rem",
+              "width": "100%",
+            }
+          }
+        />
+      </div>
       <div>
         <span
           style={
@@ -1556,6 +1614,129 @@ exports[`Snapshots InsightsPage should render Insights page 1`] = `
               }
             }
           >
+            Insights
+          </span>
+        </span>
+        <a
+          href="/overview"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            style={
+              Object {
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0 0.5rem",
+                "padding": "0.75rem 0.5rem",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Overview
+            </span>
+          </span>
+        </a>
+        <a
+          href="/posts"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            style={
+              Object {
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0 0.5rem",
+                "padding": "0.75rem 0.5rem",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Posts
+            </span>
+          </span>
+        </a>
+        <hr
+          style={
+            Object {
+              "background": "#e6ebef",
+              "border": "none",
+              "boxSizing": "border-box",
+              "height": "0.063rem",
+              "marginBottom": "1rem",
+              "marginTop": "0.75rem",
+              "width": "100%",
+            }
+          }
+        />
+      </div>
+      <div>
+        <span
+          style={
+            Object {
+              "display": "block",
+              "letterSpacing": ".075rem",
+              "margin": "0 1rem 0.75rem",
+              "padding": "0",
+              "textTransform": "uppercase",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#8A9097",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 500,
+              }
+            }
+          >
             Tools
           </span>
         </span>
@@ -1803,6 +1984,129 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
           }
         }
       />
+      <div>
+        <span
+          style={
+            Object {
+              "display": "block",
+              "letterSpacing": ".075rem",
+              "margin": "0 1rem 0.75rem",
+              "padding": "0",
+              "textTransform": "uppercase",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#8A9097",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 500,
+              }
+            }
+          >
+            Insights
+          </span>
+        </span>
+        <a
+          href="/overview"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            style={
+              Object {
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0 0.5rem",
+                "padding": "0.75rem 0.5rem",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Overview
+            </span>
+          </span>
+        </a>
+        <a
+          href="/posts"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            style={
+              Object {
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0 0.5rem",
+                "padding": "0.75rem 0.5rem",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Posts
+            </span>
+          </span>
+        </a>
+        <hr
+          style={
+            Object {
+              "background": "#e6ebef",
+              "border": "none",
+              "boxSizing": "border-box",
+              "height": "0.063rem",
+              "marginBottom": "1rem",
+              "marginTop": "0.75rem",
+              "width": "100%",
+            }
+          }
+        />
+      </div>
       <div>
         <span
           style={

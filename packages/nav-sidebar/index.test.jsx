@@ -78,20 +78,16 @@ describe('NavSidebar', () => {
         .find(Link)
         .get(0);
       link.props.onClick({ preventDefault: () => {} });
-      expect(store.dispatch).toHaveBeenCalledTimes(2);
+      expect(store.dispatch).toHaveBeenCalledTimes(1);
       expect(store.dispatch.mock.calls[0][0]).toMatchObject({
         type: '@@router/CALL_HISTORY_METHOD',
-      });
-      expect(store.dispatch.mock.calls[1][0]).toMatchObject({
-        profileService: 'facebook',
-        type: 'PROFILE_SELECTOR__SELECT_PROFILE_SERVICE',
       });
     });
 
     it('should not dispatch anything if item is active already', () => {
       const wrapper = mount(
         <Provider store={store}>
-          <NavSidebar route="/insights/facebook/5/overview" />
+          <NavSidebar route="/overview/5123asd122" />
         </Provider>,
       );
       const link = wrapper
@@ -101,22 +97,6 @@ describe('NavSidebar', () => {
       link.props.onClick({ preventDefault: () => {} });
       expect(store.dispatch).toHaveBeenCalledTimes(0);
     });
-  });
-
-  it('should render without links to Insights if there are no profiles', () => {
-    const store = storeFake({
-      navSidebar: {
-        profiles: [],
-      },
-    });
-    const wrapper = mount(
-      <Provider store={store}>
-        <NavSidebar route="/" />
-      </Provider>,
-    );
-    expect(wrapper.find(NavSidebar).length)
-      .toBe(1);
-    expect(wrapper.find(Insights).children()).toHaveLength(0);
   });
 
   it('it should export onClick', () => {
@@ -130,13 +110,10 @@ describe('NavSidebar', () => {
     );
     expect(component.props().onClick).toBeDefined();
     component.props().onClick();
-    expect(store.dispatch).toHaveBeenCalledTimes(2);
+    expect(store.dispatch).toHaveBeenCalledTimes(1);
     expect(store.dispatch.mock.calls[0][0]).toMatchObject({
       type: '@@router/CALL_HISTORY_METHOD',
     });
-    expect(store.dispatch.mock.calls[1][0]).toMatchObject(
-      profilesActions.selectProfileService(),
-    );
   });
 
   it('should export reducer', () => {
