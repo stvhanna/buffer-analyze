@@ -44,7 +44,7 @@ PostsTableWrapper.propTypes = {
 export default connect(
   state => ({
     loading: state.posts.loading,
-    timezone: state.profiles.selectedProfile.timezone,
+    timezone: state.profiles.selectedProfile ? state.profiles.selectedProfile.timezone : '',
     metrics: state.posts.posts,
     startDate: state.date.startDate,
     endDate: state.date.endDate,
@@ -52,8 +52,8 @@ export default connect(
     isDescendingSelected: state.posts.isDescendingSelected,
     selectedMetric: state.posts.selectedMetric,
     activePostsCount: state.posts.activePostsCount,
-    profileService: state.profiles.selectedProfile.service,
-    selectedProfileId: state.profiles.selectedProfile.id,
+    profileService: state.profiles.selectedProfile ? state.profiles.selectedProfile.service : '',
+    selectedProfileId: state.profiles.selectedProfile ? state.profiles.selectedProfile.id : null,
   }),
   dispatch => ({
     selectMetric: ({ metric, descending }) => dispatch(

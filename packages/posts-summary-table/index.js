@@ -8,7 +8,7 @@ export default connect(
     metrics: state.postsSummary.metrics,
     startDate: state.date.startDate,
     endDate: state.date.endDate,
-    profileService: state.profiles.selectedProfile.service,
+    profileService: state.profiles.selectedProfile ? state.profiles.selectedProfile.service : '',
   }),
 )(PostsSummaryTable);
 
