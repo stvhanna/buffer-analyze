@@ -7,8 +7,8 @@ export default {
   title: null,
   chart: {
     type: 'column',
-    height: 100,
-    spacing: [20, 0, 1, 0],
+    height: 120,
+    spacing: [5, 0, 0, 0],
   },
   xAxis: {
     title: { text: null },
@@ -40,8 +40,11 @@ export default {
   plotOptions: {
     column: {
       pointPlacement: 'between',
-      borderWidth: 1,
       borderColor: '#FBC699',
+      pointWidth: null,
+      pointPadding: 0,
+      borderWidth: 0,
+      groupPadding: 0,
     },
   },
   tooltip: {

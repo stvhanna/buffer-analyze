@@ -39,6 +39,11 @@ const ValueWrapper = styled.div`
   align-items: center;
 `;
 
+const GridItemChartContainer = styled.div`
+  border: 1px solid #ECEEEF;
+  border-width: 0 0 1px;
+`;
+
 function filterDailyDataMetrics(dailyData, metricLabel) {
   return dailyData.map(day => ({
     ...day,
@@ -61,7 +66,9 @@ const GridItem = ({
       {prefix && prefix}
       <Container>
         {dailyData.length > 1 &&
-          <GridItemChart dailyData={dailyMetricData} />
+          <GridItemChartContainer>
+            <GridItemChart dailyData={dailyMetricData} />
+          </GridItemChartContainer>
         }
         <Label tooltip={tooltip} >
           {!customLabel && metric.label}

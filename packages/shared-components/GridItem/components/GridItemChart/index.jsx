@@ -38,8 +38,47 @@ function prepareSeries(dailyMetric) {
   }];
 }
 
+function preparePlotOptions(dailyMetric) {
+  let options = {};
+  if (dailyMetric.length <= 15) {
+    options = {
+      column: {
+        pointPlacement: 'between',
+        borderColor: '#FBC699',
+        pointWidth: null,
+        pointPadding: 0.2,
+        borderWidth: 1,
+        groupPadding: null,
+      },
+    };
+  } else if (dailyMetric.length > 15 && dailyMetric.length <= 80) {
+    options = {
+      column: {
+        pointPlacement: 'between',
+        borderColor: '#FBC699',
+        pointWidth: null,
+        pointPadding: null,
+        borderWidth: 1,
+        groupPadding: null,
+      },
+    };
+  } else if (dailyMetric.length > 80) {
+    options = {
+      column: {
+        pointPlacement: 'on',
+        pointWidth: null,
+        pointPadding: 0,
+        borderWidth: 0,
+        groupPadding: 0,
+      },
+    };
+  }
+  return options;
+}
+
 function prepareChartOptions(dailyMetric) {
   const config = Object.assign({}, chartConfig);
+  config.plotOptions = preparePlotOptions(dailyMetric);
   config.series = prepareSeries(dailyMetric);
   return config;
 }
