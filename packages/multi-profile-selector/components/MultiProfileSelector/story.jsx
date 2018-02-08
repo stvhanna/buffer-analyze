@@ -104,11 +104,17 @@ storiesOf('MultiProfileSelector')
       />
     </div>
   ))
-  .add('Compare Profiles Button should be disabled if more than 5 profiles are selected', () => (
+  .add('Profiles should be disabled when 5 profiles are selected', () => (
     <div style={{ display: 'flex' }}>
       <MultiProfileSelector
         profiles={mockProfiles}
-        selectedProfiles={selectedProfiles}
+        selectedProfiles={[
+          selectedProfiles[0],
+          selectedProfiles[1],
+          selectedProfiles[2],
+          selectedProfiles[3],
+          selectedProfiles[4],
+        ]}
         isDropdownOpen
         toggleProfile={actionLogger('toggleProfile')}
         openDropdown={actionLogger('openDropdown')}
