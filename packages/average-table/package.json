@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/average-table",
-  "version": "0.44.1",
+  "version": "0.44.2",
   "description": "average table for insights",
   "main": "index.js",
   "scripts": {
@@ -30,7 +30,7 @@
     "@bufferapp/analyze-shared-components": "^0.44.0",
     "@bufferapp/async-data-fetch": "0.5.36-beta01",
     "@bufferapp/components": "^2.1.1",
-    "@bufferapp/summary-table": "^0.44.1"
+    "@bufferapp/summary-table": "^0.44.2"
   },
   "devDependencies": {
     "@storybook/addon-storyshots": "3.1.4",
