@@ -49,18 +49,24 @@ export default {
   },
   tooltip: {
     shared: true,
-    backgroundColor: 'transparent',
-    borderRadius: 0,
-    borderWidth: 0,
+    crosshairs: true,
     formatter() {
       const point = this.points[0].point;
       return reactDOM.renderToStaticMarkup(<ChartTooltip point={point} />);
     },
+    backgroundColor: '#343E46',
+    borderRadius: 4,
+    borderWidth: 0,
+    hideDelay: 10,
+    pointFormatter: () => `${this.series.name}: <b>${this.y}</b><br/>`,
     shadow: false,
     useHTML: true,
-    positioner: () => ({ x: 0, y: 0 }),
-    style: {
-      pointerEvents: 'none',
+    positioner: function (boxWidth, boxHeight, point) { // eslint-disable-line
+      const chart = this.chart;
+      let x = (point.plotX + chart.plotLeft) - (boxWidth - 30);
+      if (x < 0) x = 0;
+      if ((x + boxWidth) > chart.plotWidth) x -= (x + boxWidth) - chart.plotWidth;
+      return { x, y: 0 };
     },
   },
 };
