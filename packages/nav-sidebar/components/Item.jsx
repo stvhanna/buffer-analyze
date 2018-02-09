@@ -15,7 +15,7 @@ import {
 } from '@bufferapp/components/lib/utils';
 
 const Item = ({ href, route, children, onClick, selectedProfile }) => {
-  const active = href === '/' ? href === route : route.includes(href);
+  const highlightActive = href === '/' ? href === route : route.includes(href);
   const style = calculateStyles({
     default: {
       display: 'block',
@@ -23,11 +23,11 @@ const Item = ({ href, route, children, onClick, selectedProfile }) => {
       margin: '0 0.5rem',
       borderRadius: '4px',
     },
-    active: {
+    highlightActive: {
       backgroundColor: curiousBlueUltraLight,
     },
   }, {
-    active,
+    highlightActive,
   });
   return (
     <Link
@@ -35,13 +35,14 @@ const Item = ({ href, route, children, onClick, selectedProfile }) => {
       unstyled
       onClick={(e) => {
         e.preventDefault();
-        if (!active) {
+        const isCurrent = href === route;
+        if (!isCurrent) {
           onClick(href, selectedProfile);
         }
       }}
     >
       <span style={style}>
-        <Text color="shuttleGray" weight={active ? 'bold' : null}>{children}</Text>
+        <Text color="shuttleGray" weight={highlightActive ? 'bold' : null}>{children}</Text>
       </span>
     </Link>
   );
@@ -58,7 +59,7 @@ Item.propTypes = {
 };
 
 Item.defaultProps = {
-  active: false,
+  highlightActive: false,
   selectedProfile: {},
 };
 
