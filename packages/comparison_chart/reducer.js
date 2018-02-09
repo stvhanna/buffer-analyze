@@ -4,8 +4,7 @@ export const actionTypes = {};
 
 const initialState = {
   loading: false,
-  profilesMetricData: [],
-  profileTotals: [],
+  metrics: {},
 };
 
 export default (state = initialState, action) => {
@@ -16,16 +15,10 @@ export default (state = initialState, action) => {
         loading: true,
       };
     case `comparison_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
-      if (action.args.metric === 'engagement') {
-        return {
-          ...state,
-          profilesMetricData: action.result.profilesMetricData,
-          profileTotals: action.result.profileTotals,
-          loading: false,
-        };
-      }
       return {
         ...state,
+        metrics: action.result,
+        loading: false,
       };
     default:
       return state;

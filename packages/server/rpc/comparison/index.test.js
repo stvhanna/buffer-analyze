@@ -22,12 +22,11 @@ describe('rpc/comparison', () => {
       .toBe('get daily comparison data for the given profiles');
   });
 
-  it('should send a POST request to /comparison with the provided parameters', async () => {
+  it('should send a POST request to /comparison with the provided parameters for every metric', async () => {
     const startDate = moment().subtract(7, 'days');
     const endDate = moment().subtract(1, 'days');
-    const metric = 'reach';
-    rp.mockReturnValueOnce(Promise.resolve(response));
-    const result = await comparison.fn({ profileIds, startDate, endDate, metric });
+    rp.mockReturnValue(Promise.resolve(response));
+    const result = await comparison.fn({ profileIds, startDate, endDate });
 
     const start = moment.unix(startDate).format('MM/DD/YYYY');
     const end = moment.unix(endDate).format('MM/DD/YYYY');
@@ -41,11 +40,12 @@ describe('rpc/comparison', () => {
       strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
       body: {
         profiles: profileIds,
+        metric: 'audience',
         start_date: dateRange.start,
         end_date: dateRange.end,
-        metric,
       },
       json: true,
     }]);
+    expect(rp).toHaveBeenCalledTimes(5);
   });
 });

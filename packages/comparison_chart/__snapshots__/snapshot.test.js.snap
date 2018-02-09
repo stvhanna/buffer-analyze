@@ -32,7 +32,7 @@ exports[`Snapshots ComparisonChart should render a "no data" state 1`] = `
         }
       >
         <h2
-          className="sc-cSHVUG eMsAFn"
+          className="sc-dxgOiQ isvEAp"
         >
           <span
             style={
@@ -50,7 +50,7 @@ exports[`Snapshots ComparisonChart should render a "no data" state 1`] = `
         </h2>
       </header>
       <div
-        className="sc-kGXeez bFAmmu"
+        className="sc-hMqMXs fWFqoF"
       >
         <div
           className="sc-bdVaJa fWzNTu"
@@ -117,7 +117,7 @@ exports[`Snapshots ComparisonChart should render a loading state 1`] = `
         }
       >
         <h2
-          className="sc-cSHVUG eMsAFn"
+          className="sc-dxgOiQ isvEAp"
         >
           <span
             style={
@@ -135,7 +135,7 @@ exports[`Snapshots ComparisonChart should render a loading state 1`] = `
         </h2>
       </header>
       <div
-        className="sc-kgoBCf iKvldm"
+        className="sc-eNQAEJ fUifcZ"
       >
         <div
           style={
@@ -273,7 +273,7 @@ exports[`Snapshots ComparisonChart should render the audience comparison chart f
         }
       >
         <h2
-          className="sc-cSHVUG eMsAFn"
+          className="sc-dxgOiQ isvEAp"
         >
           <span
             style={
@@ -291,7 +291,7 @@ exports[`Snapshots ComparisonChart should render the audience comparison chart f
         </h2>
       </header>
       <div
-        className="sc-chPdSV beTITA"
+        className="sc-jKJlTe jeWmsw"
       >
         <div>
           <div
@@ -304,10 +304,10 @@ exports[`Snapshots ComparisonChart should render the audience comparison chart f
         </div>
       </div>
       <section
-        className="sc-jTzLTM kxZztx"
+        className="sc-kgoBCf fFebmp"
       >
         <ul
-          className="sc-VigVT cJjjvE"
+          className="sc-chPdSV cHWtVK"
         >
           <li
             style={
@@ -322,7 +322,7 @@ exports[`Snapshots ComparisonChart should render the audience comparison chart f
             }
           >
             <div
-              className="sc-fjdhpX jpAcTc"
+              className="sc-kGXeez evarDB"
             >
               <span
                 className="sc-EHOje eQMpHY"
@@ -418,7 +418,7 @@ exports[`Snapshots ComparisonChart should render the audience comparison chart f
                     }
                   >
                     <div
-                      className="sc-jzJRlG hAWwQv"
+                      className="sc-kpOJdX cyFStC"
                     >
                       <span
                         style={
@@ -557,7 +557,7 @@ exports[`Snapshots ComparisonChart should render the audience comparison chart f
             }
           >
             <div
-              className="sc-fjdhpX jpAcTc"
+              className="sc-kGXeez evarDB"
             >
               <span
                 className="sc-EHOje eQMpHY"
@@ -653,7 +653,7 @@ exports[`Snapshots ComparisonChart should render the audience comparison chart f
                     }
                   >
                     <div
-                      className="sc-jzJRlG hAWwQv"
+                      className="sc-kpOJdX cyFStC"
                     >
                       <span
                         style={
@@ -819,7 +819,7 @@ exports[`Snapshots ComparisonChart should render the audience comparison chart f
         }
       >
         <h2
-          className="sc-cSHVUG eMsAFn"
+          className="sc-dxgOiQ isvEAp"
         >
           <span
             style={
@@ -837,7 +837,7 @@ exports[`Snapshots ComparisonChart should render the audience comparison chart f
         </h2>
       </header>
       <div
-        className="sc-kAzzGY jEkjcv"
+        className="sc-ckVGcZ dzSqhQ"
       >
         <div>
           <div
@@ -850,10 +850,10 @@ exports[`Snapshots ComparisonChart should render the audience comparison chart f
         </div>
       </div>
       <section
-        className="sc-jTzLTM kxZztx"
+        className="sc-kgoBCf fFebmp"
       >
         <ul
-          className="sc-VigVT cJjjvE"
+          className="sc-chPdSV cHWtVK"
         >
           <li
             style={
@@ -868,7 +868,7 @@ exports[`Snapshots ComparisonChart should render the audience comparison chart f
             }
           >
             <div
-              className="sc-fjdhpX jpAcTc"
+              className="sc-kGXeez evarDB"
             >
               <span
                 className="sc-EHOje eQMpHY"
@@ -964,7 +964,7 @@ exports[`Snapshots ComparisonChart should render the audience comparison chart f
                     }
                   >
                     <div
-                      className="sc-jzJRlG hAWwQv"
+                      className="sc-kpOJdX cyFStC"
                     >
                       <span
                         style={
@@ -1128,7 +1128,7 @@ exports[`Snapshots ComparisonChartTooltip should render the tooltip 1`] = `
     }
   >
     <div
-      className="sc-gqjmRU dXIOQE"
+      className="sc-kAzzGY bNdPJH"
     >
       <span>
         <span
@@ -1327,10 +1327,10 @@ exports[`Snapshots ComparisonFooter should render the footer for a single profil
     }
   >
     <section
-      className="sc-jTzLTM kxZztx"
+      className="sc-kgoBCf fFebmp"
     >
       <ul
-        className="sc-VigVT cJjjvE"
+        className="sc-chPdSV cHWtVK"
       >
         <li
           style={
@@ -1345,7 +1345,7 @@ exports[`Snapshots ComparisonFooter should render the footer for a single profil
           }
         >
           <div
-            className="sc-fjdhpX jpAcTc"
+            className="sc-kGXeez evarDB"
           >
             <span
               className="sc-EHOje eQMpHY"
@@ -1441,7 +1441,7 @@ exports[`Snapshots ComparisonFooter should render the footer for a single profil
                   }
                 >
                   <div
-                    className="sc-jzJRlG hAWwQv"
+                    className="sc-kpOJdX cyFStC"
                   >
                     <span
                       style={
@@ -1584,10 +1584,10 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
     }
   >
     <section
-      className="sc-jTzLTM kxZztx"
+      className="sc-kgoBCf fFebmp"
     >
       <ul
-        className="sc-VigVT cJjjvE"
+        className="sc-chPdSV cHWtVK"
       >
         <li
           style={
@@ -1602,7 +1602,7 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
           }
         >
           <div
-            className="sc-fjdhpX jpAcTc"
+            className="sc-kGXeez evarDB"
           >
             <span
               className="sc-EHOje eQMpHY"
@@ -1698,7 +1698,7 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
                   }
                 >
                   <div
-                    className="sc-jzJRlG hAWwQv"
+                    className="sc-kpOJdX cyFStC"
                   >
                     <span
                       style={
@@ -1837,7 +1837,7 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
           }
         >
           <div
-            className="sc-fjdhpX jpAcTc"
+            className="sc-kGXeez evarDB"
           >
             <span
               className="sc-EHOje eQMpHY"
@@ -1933,7 +1933,7 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
                   }
                 >
                   <div
-                    className="sc-jzJRlG hAWwQv"
+                    className="sc-kpOJdX cyFStC"
                   >
                     <span
                       style={
@@ -2073,7 +2073,7 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
           }
         >
           <div
-            className="sc-fjdhpX jpAcTc"
+            className="sc-kGXeez evarDB"
           >
             <span
               className="sc-EHOje eQMpHY"
@@ -2169,7 +2169,7 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
                   }
                 >
                   <div
-                    className="sc-jzJRlG hAWwQv"
+                    className="sc-kpOJdX cyFStC"
                   >
                     <span
                       style={
@@ -2312,7 +2312,7 @@ exports[`Snapshots Title should render the title for the comparison audience cha
     }
   >
     <h2
-      className="sc-cSHVUG eMsAFn"
+      className="sc-dxgOiQ isvEAp"
     >
       <span
         style={
@@ -2342,7 +2342,7 @@ exports[`Snapshots Title should render the title for the comparison reach chart 
     }
   >
     <h2
-      className="sc-cSHVUG eMsAFn"
+      className="sc-dxgOiQ isvEAp"
     >
       <span
         style={

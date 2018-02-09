@@ -4,6 +4,14 @@ const rp = require('request-promise');
 const moment = require('moment');
 const DateRange = require('../utils/DateRange');
 
+const METRIC_KEYS = [
+  'audience',
+  'reach',
+  'likes',
+  'engagement',
+  'comments',
+];
+
 const PROFILE_COLORS = [
   '#53CBB0',
   '#168EEA',
@@ -136,26 +144,29 @@ function formatData(result, metricKey) {
 module.exports = method(
   'comparison',
   'get daily comparison data for the given profiles',
-  ({ profileIds, startDate, endDate, metric }) => {
+  ({ profileIds, startDate, endDate }) => {
     const start = moment.unix(startDate).format('MM/DD/YYYY');
     const end = moment.unix(endDate).format('MM/DD/YYYY');
     const dateRange = new DateRange(start, end);
-    return rp({
-      uri: `${process.env.ANALYZE_API_ADDR}/comparison`,
-      method: 'POST',
-      strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
-      body: {
-        profiles: profileIds,
-        start_date: dateRange.start,
-        end_date: dateRange.end,
-        metric,
-      },
-      json: true,
-    }).then(({ response }) => (
-      formatData(response, metric)
-    )).catch(() => ({
-      profilesMetricData: [],
-      profileTotals: [],
-    }));
-  },
-);
+    const result = {};
+    return Promise
+      .all(METRIC_KEYS.map(metric => rp({
+        uri: `${process.env.ANALYZE_API_ADDR}/comparison`,
+        method: 'POST',
+        strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
+        body: {
+          profiles: profileIds,
+          start_date: dateRange.start,
+          end_date: dateRange.end,
+          metric,
+        },
+        json: true,
+      }).then(({ response }) => {
+        result[metric] = formatData(response, metric);
+      })))
+      .then(() => result)
+      .catch(() => ({
+        profilesMetricData: [],
+        profileTotals: [],
+      }));
+  });

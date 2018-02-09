@@ -41,7 +41,7 @@ describe('middleware', () => {
     middleware(store)(next)(action);
   });
 
-  it('shoud dispatch a data fetch for engagement comparison once a compare profile has been pressed', () => {
+  it('shoud dispatch a data fetch for comparison once a compare profile has been pressed', () => {
     const action = {
       type: actionTypes.COMPARE_PROFILES,
       selectedProfiles: mockProfiles,
@@ -53,13 +53,12 @@ describe('middleware', () => {
         profileIds: mockProfiles.map(p => p.id),
         startDate: state.date.startDate,
         endDate: state.date.endDate,
-        metric: 'engagement',
       },
     }));
     expect(next).toHaveBeenCalledWith(action);
   });
 
-  it('shoud dispatch a data fetch for engagement comparison on date change', () => {
+  it('shoud dispatch a data fetch for comparison on date change', () => {
     const action = {
       type: dateActionTypes.SET_DATE_RANGE,
       startDate: state.date.startDate,
@@ -73,7 +72,6 @@ describe('middleware', () => {
         profileIds: mockProfiles.map(p => p.id),
         startDate: state.date.startDate,
         endDate: state.date.endDate,
-        metric: 'engagement',
       },
     }));
     expect(next).toHaveBeenCalledWith(action);
