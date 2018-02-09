@@ -26,6 +26,9 @@ const getFirstDayOfWeek = (timestamp) => {
 };
 
 const isInValidRange = (start, end, timestamp) => {
+  if (start === null) {
+    return true;
+  }
   const date = moment.unix(timestamp);
 
   // start date should always be inclusive
