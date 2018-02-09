@@ -14,8 +14,8 @@ import {
   calculateStyles,
 } from '@bufferapp/components/lib/utils';
 
-const Item = ({ href, route, children, onClick, selectedProfile }) => {
-  const active = href === '/' ? href === route : route.includes(href);
+const Item = ({ href, route, children, onClick, profileId, profileService }) => {
+  const highlightActive = href === '/' ? href === route : route.includes(href);
   const style = calculateStyles({
     default: {
       display: 'block',
@@ -23,11 +23,11 @@ const Item = ({ href, route, children, onClick, selectedProfile }) => {
       margin: '0 0.5rem',
       borderRadius: '4px',
     },
-    active: {
+    highlightActive: {
       backgroundColor: curiousBlueUltraLight,
     },
   }, {
-    active,
+    highlightActive,
   });
   return (
     <Link
@@ -35,13 +35,14 @@ const Item = ({ href, route, children, onClick, selectedProfile }) => {
       unstyled
       onClick={(e) => {
         e.preventDefault();
-        if (!active) {
-          onClick(href, selectedProfile);
+        const isCurrent = href === route;
+        if (!isCurrent) {
+          onClick(href, profileId, profileService);
         }
       }}
     >
       <span style={style}>
-        <Text color="shuttleGray" weight={active ? 'bold' : null}>{children}</Text>
+        <Text color="shuttleGray" weight={highlightActive ? 'bold' : null}>{children}</Text>
       </span>
     </Link>
   );
@@ -52,14 +53,14 @@ Item.propTypes = {
   href: PropTypes.string.isRequired,
   route: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
-  selectedProfile: PropTypes.shape({
-    id: PropTypes.string,
-  }),
+  profileId: PropTypes.string,
+  profileService: PropTypes.string,
 };
 
 Item.defaultProps = {
-  active: false,
-  selectedProfile: {},
+  highlightActive: false,
+  profileId: null,
+  profileService: null,
 };
 
 export default Item;
