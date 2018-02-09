@@ -27,6 +27,12 @@ storiesOf('ReportList')
       reports={[]}
     />
   ))
+  .add('renders an empty state for small reports', () => (
+    <ReportList
+      reports={[]}
+      small
+    />
+  ))
   .add('renders the reports collection in a list', () => (
     <ReportList
       reports={mockReports}
