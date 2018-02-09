@@ -30,7 +30,7 @@ const toolbarContainer = {
   display: 'flex',
   justifyContent: 'space-between',
   background: `${white}`,
-  padding: '0.75rem 0.5rem',
+  padding: '0.75rem 0.5rem calc(1rem - 0.07rem)',
   marginbottom: '1rem',
   borderBottom: `1px solid ${mystic}`,
   boxSizing: 'border-box',
@@ -48,8 +48,6 @@ const insightMaxWidth = {
   margin: '0 auto',
   padding: '2.5rem 1rem 4rem',
 };
-
-const toolbarTabNavigation = {};
 
 const toolbarRight = {
   display: 'flex',
