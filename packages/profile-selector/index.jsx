@@ -23,30 +23,15 @@ ProfileSelector.propTypes = {
   onSearchChange: PropTypes.func.isRequired,
 };
 
-const filterProfilesByService = (profiles, service) => (
-  profiles.filter(p => p.service === service)
-);
-
-const mapStateToProps = (state) => {
-  let filteredProfiles = null;
-  if (state.profiles.selectedProfileService) {
-    filteredProfiles = filterProfilesByService(
-      state.profiles.profiles,
-      state.profiles.selectedProfileService,
-    );
-  } else {
-    filteredProfiles = state.profiles.profiles;
-  }
-  return {
-    isDropdownOpen: state.profiles.isDropdownOpen,
-    profiles: filteredProfiles,
-    profilesFilterString: state.profiles.profilesFilterString,
-    selectedProfileId: state.profiles.selectedProfileId,
-  };
-};
+const mapStateToProps = state => ({
+  isDropdownOpen: state.profiles.isDropdownOpen,
+  profiles: state.profiles.profiles,
+  profilesFilterString: state.profiles.profilesFilterString,
+  selectedProfileId: state.profiles.selectedProfile ? state.profiles.selectedProfile.id : null,
+});
 
 const mapDispatchToProps = dispatch => ({
-  selectProfile: ({ id, service }) => dispatch(actions.selectProfile(id, service)),
+  selectProfile: profile => dispatch(actions.selectProfile(profile)),
   openDropdown: () => dispatch(actions.openDropdown()),
   closeDropdown: () => dispatch(actions.closeDropdown()),
   onSearchChange: event => dispatch(actions.filterProfilesByUsername(event)),

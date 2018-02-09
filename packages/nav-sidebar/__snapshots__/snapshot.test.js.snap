@@ -219,6 +219,129 @@ exports[`Snapshots NavSidebar if there are no profiles it should not show the In
               }
             }
           >
+            Insights
+          </span>
+        </span>
+        <a
+          href="/overview"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            style={
+              Object {
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0 0.5rem",
+                "padding": "0.75rem 0.5rem",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Overview
+            </span>
+          </span>
+        </a>
+        <a
+          href="/posts"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            style={
+              Object {
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0 0.5rem",
+                "padding": "0.75rem 0.5rem",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Posts
+            </span>
+          </span>
+        </a>
+        <hr
+          style={
+            Object {
+              "background": "#e6ebef",
+              "border": "none",
+              "boxSizing": "border-box",
+              "height": "0.063rem",
+              "marginBottom": "1rem",
+              "marginTop": "0.75rem",
+              "width": "100%",
+            }
+          }
+        />
+      </div>
+      <div>
+        <span
+          style={
+            Object {
+              "display": "block",
+              "letterSpacing": ".075rem",
+              "margin": "0 1rem 0.75rem",
+              "padding": "0",
+              "textTransform": "uppercase",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#8A9097",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 500,
+              }
+            }
+          >
             Tools
           </span>
         </span>
@@ -414,7 +537,7 @@ exports[`Snapshots NavSidebar should show nav sidebar with Dashboard as active l
           </span>
         </span>
         <a
-          href="/insights/facebook/3/overview"
+          href="/overview"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
@@ -451,12 +574,12 @@ exports[`Snapshots NavSidebar should show nav sidebar with Dashboard as active l
                 }
               }
             >
-              Facebook
+              Overview
             </span>
           </span>
         </a>
         <a
-          href="/insights/twitter/1/overview"
+          href="/posts"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
@@ -493,49 +616,7 @@ exports[`Snapshots NavSidebar should show nav sidebar with Dashboard as active l
                 }
               }
             >
-              Twitter
-            </span>
-          </span>
-        </a>
-        <a
-          href="/insights/instagram/4/overview"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          style={
-            Object {
-              "color": "#168eea",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "outline": "none",
-              "padding": "0",
-              "textDecoration": "none",
-            }
-          }
-          target="_self"
-        >
-          <span
-            style={
-              Object {
-                "borderRadius": "4px",
-                "display": "block",
-                "margin": "0 0.5rem",
-                "padding": "0.75rem 0.5rem",
-              }
-            }
-          >
-            <span
-              style={
-                Object {
-                  "color": "#59626a",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1rem",
-                  "fontWeight": 400,
-                }
-              }
-            >
-              Instagram
+              Posts
             </span>
           </span>
         </a>
@@ -769,7 +850,7 @@ exports[`Snapshots NavSidebar should show only services for which the user has p
           </span>
         </span>
         <a
-          href="/insights/facebook/3/overview"
+          href="/overview"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
@@ -806,12 +887,12 @@ exports[`Snapshots NavSidebar should show only services for which the user has p
                 }
               }
             >
-              Facebook
+              Overview
             </span>
           </span>
         </a>
         <a
-          href="/insights/twitter/1/overview"
+          href="/posts"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
@@ -848,7 +929,7 @@ exports[`Snapshots NavSidebar should show only services for which the user has p
                 }
               }
             >
-              Twitter
+              Posts
             </span>
           </span>
         </a>

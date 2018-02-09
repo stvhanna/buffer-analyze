@@ -4,14 +4,14 @@ import mockProfiles from './mocks/profiles';
 
 describe('reducer', () => {
   let initialState = {};
+  const selectedProfileId = '1234foo';
 
   beforeEach(() => {
     initialState = {
       profiles: [],
       isDropdownOpen: false,
       profilesFilterString: '',
-      selectedProfileId: null,
-      selectedProfileService: '',
+      selectedProfile: null,
     };
   });
 
@@ -32,8 +32,7 @@ describe('reducer', () => {
         profiles: mockProfiles,
         isDropdownOpen: false,
         profilesFilterString: '',
-        selectedProfileId: null,
-        selectedProfileService: '',
+        selectedProfile: null,
       });
   });
 
@@ -49,6 +48,9 @@ describe('reducer', () => {
   it('should clear profilesFilterString on SELECT_PROFILE', () => {
     const state = reducer(Object.assign({}, initialState, { profilesFilterString: 'foo' }), {
       type: actionTypes.SELECT_PROFILE,
+      profile: {
+        id: selectedProfileId,
+      },
     });
     expect(state.profilesFilterString)
       .toBe('');
@@ -57,44 +59,26 @@ describe('reducer', () => {
   it('should close dropdown on SELECT_PROFILE', () => {
     const state = reducer(Object.assign({}, initialState, { isDropdownOpen: true }), {
       type: actionTypes.SELECT_PROFILE,
+      profile: {
+        id: selectedProfileId,
+      },
     });
     expect(state.isDropdownOpen)
       .toBeFalsy();
   });
 
   it('should update selected Profile info on SELECT_PROFILE', () => {
-    const selectedProfileId = '1234foo';
     const state = reducer(Object.assign({}, initialState), {
       type: actionTypes.SELECT_PROFILE,
-      id: selectedProfileId,
-      profileService: 'foo',
+      profile: {
+        id: selectedProfileId,
+        service: 'foo',
+      },
     });
     expect(state.selectedProfileId)
       .toBe(selectedProfileId);
     expect(state.selectedProfileService)
       .toBe('foo');
-  });
-
-  it('should update selected Profile Service on SELECT_PROFILE_SERVICE', () => {
-    const selectedProfileService = 'instagram';
-    const state = reducer(Object.assign({}, initialState), {
-      type: actionTypes.SELECT_PROFILE_SERVICE,
-      profileService: selectedProfileService,
-    });
-    expect(state.selectedProfileService)
-      .toBe('instagram');
-  });
-
-  it('should not update the profileService if not provided', () => {
-    const selectedProfileId = '1234foo';
-    const state = reducer(Object.assign({}, initialState, { selectedProfileService: 'bar' }), {
-      type: actionTypes.SELECT_PROFILE,
-      id: selectedProfileId,
-    });
-    expect(state.selectedProfileId)
-      .toBe(selectedProfileId);
-    expect(state.selectedProfileService)
-      .toBe('bar');
   });
 
   it('should open the dropdown', () => {
@@ -118,36 +102,16 @@ describe('reducer', () => {
 
 describe('actions', () => {
   it('should select a profile', () => {
-    expect(actions.selectProfile(42, 'foo'))
+    expect(actions.selectProfile({
+      id: 42,
+      service: 'foo',
+    }))
       .toEqual({
         type: actionTypes.SELECT_PROFILE,
-        id: 42,
-        profileService: 'foo',
-      });
-  });
-
-  it('should select a new profile service', () => {
-    expect(actions.selectProfileService('twitter'))
-      .toEqual({
-        type: actionTypes.SELECT_PROFILE_SERVICE,
-        profileService: 'twitter',
-      });
-  });
-
-  it('should not fail if profile service is not passed', () => {
-    expect(actions.selectProfileService())
-      .toEqual({
-        type: actionTypes.SELECT_PROFILE_SERVICE,
-        profileService: null,
-      });
-  });
-
-  it('should select a profile without changing the service', () => {
-    expect(actions.selectProfile(42))
-      .toEqual({
-        type: actionTypes.SELECT_PROFILE,
-        id: 42,
-        profileService: null,
+        profile: {
+          id: 42,
+          service: 'foo',
+        },
       });
   });
 

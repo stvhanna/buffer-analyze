@@ -24,10 +24,6 @@ const App = () =>
     <div style={contentStyle}>
       <Switch>
         <Route
-          path="/insights/:service/:id/:tabId"
-          component={InsightsPage}
-        />
-        <Route
           path="/comparisons"
           component={ComparisonsPage}
         />
@@ -38,6 +34,10 @@ const App = () =>
         <Route
           path="/reports"
           component={ReportsList}
+        />
+        <Route
+          path="/:tabId/:id?"
+          component={InsightsPage}
         />
         <Route component={DefaultPage} />
       </Switch>

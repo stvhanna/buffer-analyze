@@ -2,11 +2,6 @@ import { connect } from 'react-redux';
 import AudienceChart from './components/AudienceChart';
 import { actions } from './reducer';
 
-function getSelectedProfileTimezone({ profiles, selectedProfileId }) {
-  const profile = profiles.find(p => p.id === selectedProfileId);
-  return profile.timezone;
-}
-
 function mapStateToProps (state) {
   return {
     data: state.audience.data,
@@ -16,7 +11,7 @@ function mapStateToProps (state) {
     metrics: state.audience.metrics,
     profileService: state.profiles.selectedProfileService,
     selectedMetrics: state.audience.selectedMetrics,
-    timezone: getSelectedProfileTimezone(state.profiles),
+    timezone: state.profiles.selectedProfile ? state.profiles.selectedProfile.timezone : '',
   };
 }
 

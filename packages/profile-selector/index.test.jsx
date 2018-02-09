@@ -42,8 +42,10 @@ describe('ProfileSelector', () => {
       profiles: {
         profiles,
         isDropdownOpen: false,
-        selectedProfileId: '1',
-        selectedProfileService: 'twitter',
+        selectedProfile: {
+          id: '1',
+          service: 'twitter',
+        },
       },
     };
   });
@@ -63,18 +65,6 @@ describe('ProfileSelector', () => {
       .toBeDefined();
   });
 
-  it('should filter profiles by service', () => {
-    const mockStore = configureMockStore();
-    const store = mockStore(state);
-
-    const component = shallow(<ProfileSelector
-      store={store}
-    />);
-
-    expect(component.props().profiles)
-      .toHaveLength(2);
-  });
-
   it('should dispatch', () => {
     const mockStore = configureMockStore();
     const store = mockStore(state);
@@ -87,8 +77,10 @@ describe('ProfileSelector', () => {
       id: 'foo',
       service: 'bar',
     })).toEqual({
-      id: 'foo',
-      profileService: 'bar',
+      profile: {
+        id: 'foo',
+        service: 'bar',
+      },
       type: actionTypes.SELECT_PROFILE,
     });
 

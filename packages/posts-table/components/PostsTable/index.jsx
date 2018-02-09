@@ -125,6 +125,7 @@ const PostsTable = (props) => {
     addToReportButton,
     metrics,
     profileService,
+    selectedProfileId,
     loading,
     timezone,
     isDropdownOpen,
@@ -135,6 +136,9 @@ const PostsTable = (props) => {
     handlePostsCountClick,
     activePostsCount,
   } = props;
+  if (selectedProfileId === null) {
+    return null;
+  }
 
   // TODO: Move this to RPC endpoint and pass it as a prop to PostTable components
   const topPosts = metrics;
@@ -188,6 +192,7 @@ PostsTable.defaultProps = {
   isDropdownOpen: false,
   loading: false,
   addToReportButton: null,
+  selectedProfileId: null,
 };
 
 PostsTable.propTypes = {
@@ -220,6 +225,7 @@ PostsTable.propTypes = {
   handlePostsCountClick: PropTypes.func.isRequired,
   activePostsCount: PropTypes.string.isRequired,
   addToReportButton: PropTypes.element,
+  selectedProfileId: PropTypes.string,
 };
 
 export default PostsTable;

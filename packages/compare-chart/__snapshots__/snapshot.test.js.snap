@@ -29,7 +29,7 @@ exports[`Snapshots ChartTooltip should render a no update published message 1`] 
             Object {
               "color": "#e6ebef",
               "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "0.5rem",
+              "fontSize": "0.75rem",
               "fontWeight": 400,
             }
           }
@@ -89,7 +89,7 @@ exports[`Snapshots ChartTooltip should render the tooltip 1`] = `
             Object {
               "color": "#e6ebef",
               "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "0.5rem",
+              "fontSize": "0.75rem",
               "fontWeight": 400,
             }
           }
@@ -240,7 +240,7 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
             Object {
               "color": "#e6ebef",
               "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "0.5rem",
+              "fontSize": "0.75rem",
               "fontWeight": 400,
             }
           }
@@ -254,7 +254,7 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
               Object {
                 "color": "#e6ebef",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.5rem",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -266,7 +266,7 @@ exports[`Snapshots ChartTooltip should render the tooltip with the previous data
               Object {
                 "color": "#e6ebef",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.5rem",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -505,7 +505,7 @@ exports[`Snapshots ChartTooltip should render the tooltip with twitter specific 
             Object {
               "color": "#e6ebef",
               "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "0.5rem",
+              "fontSize": "0.75rem",
               "fontWeight": 400,
             }
           }
@@ -656,7 +656,7 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip 1`] = `
             Object {
               "color": "#e6ebef",
               "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "0.5rem",
+              "fontSize": "0.75rem",
               "fontWeight": 400,
             }
           }
@@ -758,7 +758,7 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip with previ
             Object {
               "color": "#e6ebef",
               "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "0.5rem",
+              "fontSize": "0.75rem",
               "fontWeight": 400,
             }
           }
@@ -772,7 +772,7 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip with previ
               Object {
                 "color": "#e6ebef",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.5rem",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }
@@ -784,7 +784,7 @@ exports[`Snapshots ChartTooltip should render updates measure tooltip with previ
               Object {
                 "color": "#e6ebef",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.5rem",
+                "fontSize": "0.75rem",
                 "fontWeight": 400,
               }
             }

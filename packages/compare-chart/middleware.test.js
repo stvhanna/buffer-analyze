@@ -86,8 +86,10 @@ describe('middleware', () => {
   it('shoud dispatch a data fetch for compare once a profile has been selected', () => {
     const action = {
       type: actionTypes.SELECT_PROFILE,
-      id: mockProfiles[0].id,
-      profileService: 'twitter',
+      profile: {
+        id: mockProfiles[0].id,
+        service: 'twitter',
+      },
     };
     middleware(store)(next)(action);
     expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({

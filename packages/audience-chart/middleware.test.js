@@ -48,11 +48,13 @@ describe('middleware', () => {
     middleware(store)(next)(action);
   });
 
-  it('shoud dispatch a data fetch for audience once a profile has been selected', () => {
+  it('should dispatch a data fetch for audience once a profile has been selected', () => {
     const action = {
       type: actionTypes.SELECT_PROFILE,
-      id: mockProfiles[0].id,
-      profileService: 'twitter',
+      profile: {
+        id: mockProfiles[0].id,
+        service: 'twitter',
+      },
     };
     middleware(store)(next)(action);
     expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
@@ -67,7 +69,7 @@ describe('middleware', () => {
     expect(next).toHaveBeenCalledWith(action);
   });
 
-  it('shoud dispatch a data fetch for audience on  date change', () => {
+  it('should dispatch a data fetch for audience on  date change', () => {
     const action = {
       type: dateActionTypes.SET_DATE_RANGE,
       startDate: state.date.startDate,

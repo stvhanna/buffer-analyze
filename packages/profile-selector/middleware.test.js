@@ -11,6 +11,7 @@ import middleware from './middleware';
 const profileId = '120351988a';
 
 const profiles = {
+  selectedProfile: null,
   profiles: [
     {
       id: '120351988a',
@@ -32,10 +33,27 @@ const profiles = {
 const stateWithProfileRoute = {
   router: {
     location: {
-      pathname: `/insights/twitter/${profileId}/overview`,
+      pathname: `/overview/${profileId}`,
     },
   },
   profiles,
+};
+
+const stateWithInsightsRoute = {
+  router: {
+    location: {
+      pathname: `/overview`,
+    },
+  },
+  profiles,
+};
+
+const stateWithProfileRouteAndSelectedProfile = {
+  ...stateWithProfileRoute,
+  profiles: {
+    ...stateWithProfileRoute.profiles,
+    selectedProfile: profiles.profiles[0],
+  },
 };
 
 const stateWithoutProfileRoute = {
@@ -76,9 +94,21 @@ describe('middleware', () => {
     const { store, next, invoke } = getMiddlewareElements();
     const action = {
       type: `profiles_${actionTypes.FETCH_SUCCESS}`,
+      result: profiles.profiles,
     };
     invoke(action);
-    expect(store.dispatch).toHaveBeenCalledWith(profileActions.selectProfile(profileId, 'twitter'));
+    expect(store.dispatch).toHaveBeenCalledWith(profileActions.selectProfile(profiles.profiles[0]));
+    expect(next).toHaveBeenCalledWith(action);
+  });
+
+  it('should select the first profile after fetching all the profiles if the route is an insights route with no id in the pathname', () => {
+    const { store, next, invoke } = getMiddlewareElements(stateWithInsightsRoute);
+    const action = {
+      type: `profiles_${actionTypes.FETCH_SUCCESS}`,
+      result: profiles.profiles,
+    };
+    invoke(action);
+    expect(store.dispatch).toHaveBeenCalledWith(profileActions.selectProfile(profiles.profiles[0]));
     expect(next).toHaveBeenCalledWith(action);
   });
 
@@ -86,19 +116,10 @@ describe('middleware', () => {
     const { store, next, invoke } = getMiddlewareElements();
     const action = {
       type: `profiles_${actionTypes.FETCH_SUCCESS}`,
+      result: profiles.profiles,
     };
     invoke(action);
     expect(store.dispatch).toHaveBeenCalledWith(performanceActions.measureFromNavigationStart({ name: 'firstMeaningfulPaint' }));
-    expect(next).toHaveBeenCalledWith(action);
-  });
-
-  it('should select the first profile if profileService is not specified (comparison page)', () => {
-    const { store, next, invoke } = getMiddlewareElements();
-    const action = {
-      type: `${profileActionTypes.SELECT_PROFILE_SERVICE}`,
-    };
-    invoke(action);
-    expect(store.dispatch).toHaveBeenCalledWith(profileActions.selectProfile('120351988a'));
     expect(next).toHaveBeenCalledWith(action);
   });
 
@@ -106,10 +127,12 @@ describe('middleware', () => {
     const { store, next, invoke } = getMiddlewareElements();
     const action = {
       type: profileActionTypes.SELECT_PROFILE,
-      id: profileId,
+      profile: {
+        id: profileId,
+      },
     };
     invoke(action);
-    expect(store.dispatch).toHaveBeenCalledWith(push(`/insights/twitter/${profileId}/overview`));
+    expect(store.dispatch).toHaveBeenCalledWith(push(`/overview/${profileId}`));
     expect(next).toHaveBeenCalledWith(action);
   });
 
@@ -117,40 +140,54 @@ describe('middleware', () => {
     const { store, next, invoke } = getMiddlewareElements(stateWithoutProfileRoute);
     const action = {
       type: profileActionTypes.SELECT_PROFILE,
-      id: profileId,
-    };
-    invoke(action);
-    expect(store.dispatch).not.toHaveBeenCalledWith(push(`/insights/twitter/${profileId}/overview`));
-    expect(next).toHaveBeenCalledWith(action);
-  });
-
-  it('should select a profile after a service is selected on side-navbar', () => {
-    const { store, next, invoke } = getMiddlewareElements();
-    const action = {
-      type: `${profileActionTypes.SELECT_PROFILE_SERVICE}`,
-      profileService: 'facebook',
-
-    };
-    const expectedAction = {
-      type: `${profileActionTypes.SELECT_PROFILE}`,
-      profileService: 'facebook',
-      id: '122222222',
-    };
-    invoke(action);
-    expect(store.dispatch).toHaveBeenCalledWith(expectedAction);
-    expect(next).toHaveBeenCalledWith(action);
-  });
-
-  it('should push a viewReport action if there is a LOCATION_CHANGE towards a report route', () => {
-    const { store, next, invoke } = getMiddlewareElements();
-    const action = {
-      type: LOCATION_CHANGE,
-      payload: {
-        pathname: '/reports/report-1',
+      profile: {
+        id: profileId,
       },
     };
     invoke(action);
-    expect(store.dispatch).toHaveBeenCalledWith(reportActions.viewReport('report-1'));
+    expect(store.dispatch).not.toHaveBeenCalledWith(push(`/overview/${profileId}`));
     expect(next).toHaveBeenCalledWith(action);
+  });
+
+  describe('LOCATION_CHANGE', () => {
+    it('should push a viewReport action if there is a LOCATION_CHANGE towards a report route', () => {
+      const { store, next, invoke } = getMiddlewareElements();
+      const action = {
+        type: LOCATION_CHANGE,
+        payload: {
+          pathname: '/reports/report-1',
+        },
+      };
+      invoke(action);
+      expect(store.dispatch).toHaveBeenCalledWith(reportActions.viewReport('report-1'));
+      expect(next).toHaveBeenCalledWith(action);
+    });
+
+    it('should push a selectProfile action if there is a LOCATION_CHANGE for an overview/posts route and there is no profile selected', () => {
+      const { store, next, invoke } = getMiddlewareElements();
+      const action = {
+        type: LOCATION_CHANGE,
+        payload: {
+          pathname: '/overview',
+        },
+      };
+      invoke(action);
+      expect(store.dispatch)
+        .toHaveBeenCalledWith(profileActions.selectProfile(profiles.profiles[0]));
+      expect(next).toHaveBeenCalledWith(action);
+    });
+    it('should push a new route with (overview|posts)/profileId as format when visting overview or posts with a profile selected', () => {
+      const { store, next, invoke } = getMiddlewareElements(stateWithProfileRouteAndSelectedProfile);
+      const action = {
+        type: LOCATION_CHANGE,
+        payload: {
+          pathname: '/overview',
+        },
+      };
+      invoke(action);
+      expect(store.dispatch)
+        .toHaveBeenCalledWith(push(`/overview/${profiles.profiles[0].id}`));
+      expect(next).toHaveBeenCalledWith(action);
+    });
   });
 });

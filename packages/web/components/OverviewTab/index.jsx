@@ -11,10 +11,10 @@ import AudienceChart from '@bufferapp/audience-chart';
 const OverviewTab = ({ match }) => (
   <div>
     <SummaryTable profileService={match.params.service} />
-    {match.params.service !== 'instagram' && <AverageTable />}
+    <AverageTable />
     <CompareChart />
-    {match.params.service === 'instagram' && <AudienceChart />}
-    {match.params.service === 'facebook' && <ContextualCompare /> }
+    <AudienceChart />
+    <ContextualCompare />
   </div>
 );
 

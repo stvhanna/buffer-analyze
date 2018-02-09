@@ -333,6 +333,54 @@ exports[`Snapshots ReportList renders an empty state for reports 1`] = `
           There are currently no reports
         </span>
       </h1>
+      <h2
+        className="sc-gZMcBi dbKLLN"
+      >
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Create one with the 'Add to Report' button on any graph
+        </span>
+      </h2>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots ReportList renders an empty state for small reports 1`] = `
+<span>
+  <div
+    className="sc-jKJlTe hzCAlj"
+  >
+    <div
+      className="sc-htoDjs bitDVA"
+    >
+      <div
+        className="sc-dnqmqq eThGVq"
+      />
+      <h1
+        className="sc-iwsKbI csSyjD"
+      >
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          There are currently no reports
+        </span>
+      </h1>
     </div>
   </div>
 </span>

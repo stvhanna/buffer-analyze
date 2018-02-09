@@ -58,8 +58,10 @@ describe('middleware', () => {
   it('shoud dispatch a data fetch for summary once a profile has been selected', () => {
     const action = {
       type: actionTypes.SELECT_PROFILE,
-      id: '1235519asd',
-      profileService: 'instagram',
+      profile: {
+        id: '1235519asd',
+        service: 'instagram',
+      },
     };
     middleware(store)(next)(action);
     expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
@@ -77,8 +79,10 @@ describe('middleware', () => {
   it('shoud dispatch a data fetch for summary once a dateRange has been selected', () => {
     const action = {
       type: actionTypes.SELECT_PROFILE,
-      id: '1235519asd',
-      profileService: 'instagram',
+      profile: {
+        id: '1235519asd',
+        service: 'instagram',
+      },
     };
     middleware(store)(next)(action);
     expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({

@@ -5,92 +5,76 @@ import { actionTypes } from '@bufferapp/async-data-fetch';
 import { actions as performanceActions } from '@bufferapp/performance-tracking';
 import { actions as profilesActions, actionTypes as profileActionTypes } from './reducer';
 
-
-const INSIGHTS_PATH_REGEX = /insights\/(\w+)\/(\w+)\/(.*)$/;
+const INSIGHTS_PATH_REGEX = /(overview|posts)\/?(.*)$/;
 const REPORTS_PATH_REGEX = /reports\/(.*)$/;
 
+const isInsightsRoute = route => route.match(INSIGHTS_PATH_REGEX);
 
-const filterProfilesByService = (profiles, service) => (
-  profiles.filter(p => p.service === service)
-);
-
-const getProfileIdAndServiceFromRoute = (state) => {
+const getProfileIdFromRoute = (state) => {
   const currentRoute = state.router.location.pathname;
-  const routeMatch = currentRoute.match(INSIGHTS_PATH_REGEX);
-  let data;
+  const routeMatch = isInsightsRoute(currentRoute);
+  let profileId = null;
   if (routeMatch) {
-    const [
-      route, // eslint-disable-line no-unused-vars
-      service,
-      profileId,
-    ] = routeMatch;
-    data = [profileId, service];
-  } else {
-    data = null;
+    profileId = routeMatch[2];
   }
-  return data;
+  return profileId;
 };
 
-const getRouteParams = (path) => {
+const getViewFromRoute = (path) => {
   const [
     route, // eslint-disable-line no-unused-vars
-    service,
-    profileId,
-    pageRoute,
+    view,
   ] = path.match(INSIGHTS_PATH_REGEX);
-  return {
-    service,
-    profileId,
-    pageRoute,
-  };
+  return view;
 };
 
 const getProfileRoute = (state, id) => {
-  const { service, pageRoute } = getRouteParams(state.router.location.pathname);
-  return `/insights/${service}/${id}/${pageRoute}`;
+  const view = getViewFromRoute(state.router.location.pathname);
+  return `/${view}/${id}`;
 };
 
 export default ({ dispatch, getState }) => next => (action) => {
+  const result = next(action);
   switch (action.type) {
-    case `profiles_${actionTypes.FETCH_SUCCESS}`:
-      // insights
-      if (getProfileIdAndServiceFromRoute(getState())) {
-        dispatch(profilesActions.selectProfile(...getProfileIdAndServiceFromRoute(getState())));
+    case `profiles_${actionTypes.FETCH_SUCCESS}`: {
+      const profileId = getProfileIdFromRoute(getState());
+      if (profileId) {
+        const profile = action.result.find(p => p.id === profileId);
+        dispatch(profilesActions.selectProfile(profile));
+      } else if (isInsightsRoute(getState().router.location.pathname)) {
+        dispatch(profilesActions.selectProfile(action.result[0]));
       }
       dispatch(performanceActions.measureFromNavigationStart({ name: 'firstMeaningfulPaint' }));
-      break;
-    case profileActionTypes.SELECT_PROFILE_SERVICE: {
-      const allProfiles = getState().profiles.profiles;
-      // if profile service is selected. E.g. Insights page
-      if (action.profileService) {
-        const filteredProfiles = filterProfilesByService(
-          allProfiles,
-          action.profileService,
-        );
-        dispatch(profilesActions.selectProfile(filteredProfiles[0].id, action.profileService));
-      } else {
-        // do not filter profiles & select the first one
-        dispatch(profilesActions.selectProfile(allProfiles[0].id));
-      }
       break;
     }
     case profileActionTypes.SELECT_PROFILE: {
       const currentRoute = getState().router.location.pathname;
-      const routeMatch = currentRoute.match(INSIGHTS_PATH_REGEX);
-      // if we are in Insights page then push a new url
-      if (routeMatch) {
-        dispatch(push(getProfileRoute(getState(), action.id)));
+      if (isInsightsRoute(currentRoute)) {
+        dispatch(push(getProfileRoute(getState(), action.profile.id)));
       }
       break;
     }
     case LOCATION_CHANGE:
       if (action.payload.pathname.match(REPORTS_PATH_REGEX)) {
         dispatch(reportActions.viewReport(action.payload.pathname.match(REPORTS_PATH_REGEX)[1]));
+      } else if (action.payload.pathname.match(/(overview|posts)\/?$/)) {
+        let profile = null;
+        if (getState().profiles.selectedProfile === null) {
+          profile = getState().profiles.profiles[0];
+          if (profile) {
+            dispatch(profilesActions.selectProfile(profile));
+          }
+        } else {
+          profile = getState().profiles.selectedProfile;
+          if (profile) {
+            dispatch(push(`${action.payload.pathname}/${profile.id}`));
+          }
+        }
       }
       break;
     default:
       break;
   }
-  return next(action);
+  return result;
 };
 

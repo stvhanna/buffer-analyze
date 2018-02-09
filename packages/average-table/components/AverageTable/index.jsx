@@ -61,7 +61,11 @@ export const Title = () =>
     <Text weight="bold" size="large">Average performance</Text>
   </h2>;
 
-const AverageTable = ({ metrics, loading }) => {
+const AverageTable = ({ metrics, loading, profileService }) => {
+  if (profileService === 'instagram') {
+    return null;
+  }
+
   let content = null;
   if (loading) {
     content = <Loading active noBorder />;
@@ -107,6 +111,7 @@ AverageTable.propTypes = {
       diff: PropTypes.number,
     })),
   }).isRequired,
+  profileService: PropTypes.string.isRequired,
 };
 
 export default AverageTable;
