@@ -87,7 +87,7 @@ describe('NavSidebar', () => {
     it('should not dispatch anything if item is active already', () => {
       const wrapper = mount(
         <Provider store={store}>
-          <NavSidebar route="/overview/5123asd122" />
+          <NavSidebar route="/overview" />
         </Provider>,
       );
       const link = wrapper
