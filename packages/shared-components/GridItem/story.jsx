@@ -8,9 +8,11 @@ import {
 } from '@bufferapp/components/style/color';
 import GridItem from './index';
 import ChartTooltip from './components/ChartTooltip';
-import mockDailyData from './mock/dailyData';
+import mockDaily7days from './mock/daily7days';
+import mockDaily30days from './mock/daily30days';
+import mockDaily90days from './mock/daily90days';
 
-const dayTimestamp = moment.utc(Number(mockDailyData[0].day)).startOf('day').valueOf();
+const dayTimestamp = moment.utc(Number(mockDaily7days[0].day)).startOf('day').valueOf();
 
 storiesOf('GridItem')
   .addDecorator(checkA11y)
@@ -128,7 +130,7 @@ storiesOf('GridItem')
       />
     </ul>);
   })
-  .add('should render a grid item with a Chart if dailyData is provided', () => (
+  .add('should render a grid item with a 7 day chart if 7 days worth of dailyData is provided', () => (
     <ul
       style={{
         display: 'flex',
@@ -147,7 +149,53 @@ storiesOf('GridItem')
           diff: 60,
         }}
         timezone="America/Los_Angeles"
-        dailyData={mockDailyData}
+        dailyData={mockDaily7days}
+      />
+    </ul>
+  ))
+  .add('should render a grid item with a 30 day chart if 30 days worth of dailyData is provided', () => (
+    <ul
+      style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        padding: '0',
+        margin: '0 auto',
+        borderTop: `solid 1px ${geyser}`,
+        borderLeft: `solid 1px ${geyser}`,
+        borderRadius: '2px',
+      }}
+    >
+      <GridItem
+        metric={{
+          label: 'Engagement average',
+          value: 502,
+          diff: -40,
+        }}
+        timezone="America/Los_Angeles"
+        dailyData={mockDaily30days}
+      />
+    </ul>
+  ))
+  .add('should render a grid item with a 90 day chart if 90 days worth of dailyData is provided', () => (
+    <ul
+      style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        padding: '0',
+        margin: '0 auto',
+        borderTop: `solid 1px ${geyser}`,
+        borderLeft: `solid 1px ${geyser}`,
+        borderRadius: '2px',
+      }}
+    >
+      <GridItem
+        metric={{
+          label: 'Engagement average',
+          value: 948,
+          diff: 12,
+        }}
+        timezone="America/Los_Angeles"
+        dailyData={mockDaily90days}
       />
     </ul>
   ))
@@ -169,7 +217,7 @@ storiesOf('GridItem')
           value: 42,
           diff: 60,
         }}
-        dailyData={[mockDailyData[0]]}
+        dailyData={[mockDaily7days[0]]}
       />
     </ul>
   ))
@@ -180,7 +228,7 @@ storiesOf('GridItem')
         x: dayTimestamp,
         y: 42,
       }}
-      dailyData={mockDailyData}
+      dailyData={mockDaily7days}
     />
   ))
   .add('should render a no data tolltip', () => (
@@ -190,6 +238,6 @@ storiesOf('GridItem')
         x: dayTimestamp,
         y: 0,
       }}
-      dailyData={mockDailyData}
+      dailyData={mockDaily7days}
     />
   ));
