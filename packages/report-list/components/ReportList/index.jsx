@@ -41,6 +41,7 @@ const ReportList = ({ loading, reports, selectReport, removeReport, small }) =>
       <Centered>
         <EmptyState
           header="There are currently no reports"
+          description={!small ? "Create one with the 'Add to Report' button on any graph" : null}
         />
       </Centered>
   );
