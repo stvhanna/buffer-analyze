@@ -3,7 +3,6 @@ import AverageTable from './components/AverageTable';
 
 // default export = container
 function mapStateToProps (state) {
-  console.log('state.average.metrics', JSON.stringify(state.average.metrics));
   return {
     loading: state.average.loading,
     timezone: state.profiles.selectedProfile ? state.profiles.selectedProfile.timezone : '',
