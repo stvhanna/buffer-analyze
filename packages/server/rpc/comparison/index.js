@@ -148,7 +148,7 @@ module.exports = method(
     const start = moment.unix(startDate).format('MM/DD/YYYY');
     const end = moment.unix(endDate).format('MM/DD/YYYY');
     const dateRange = new DateRange(start, end);
-    const result = {};
+    const metrics = {};
     return Promise
       .all(METRIC_KEYS.map(metric => rp({
         uri: `${process.env.ANALYZE_API_ADDR}/comparison`,
@@ -162,11 +162,8 @@ module.exports = method(
         },
         json: true,
       }).then(({ response }) => {
-        result[metric] = formatData(response, metric);
+        metrics[metric] = formatData(response, metric);
       })))
-      .then(() => result)
-      .catch(() => ({
-        profilesMetricData: [],
-        profileTotals: [],
-      }));
+      .then(() => ({ metrics }))
+      .catch(() => {});
   });

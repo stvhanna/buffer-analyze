@@ -10,6 +10,7 @@ import { Title as ContextualTitle } from '@bufferapp/contextual-compare';
 import { Table as PostsTable, Title as PostsTitle } from '@bufferapp/posts-table';
 import { Chart as CompareChart, Title as CompareTitle } from '@bufferapp/compare-chart';
 import { Title as AudienceTitle } from '@bufferapp/audience-chart';
+import { Chart as ComparisonChart, Title as ComparisonTitle } from '@bufferapp/comparison-chart';
 import {
   CommonChart,
   ProfileBadge,
@@ -47,6 +48,10 @@ const CHARTS = {
     chart: CommonChart,
     title: AudienceTitle,
   },
+  comparison: {
+    chart: ComparisonChart,
+    title: ComparisonTitle,
+  },
 };
 
 const Separator = styled.section`
@@ -70,6 +75,10 @@ const Legend = styled.span`
   display: flex;
   align-items: center;
   margin-bottom: 8px;
+`;
+
+const TitleWrapper = styled.div`
+  min-height: 48px;
 `;
 
 const ProfileLegend = ({ profile }) =>
@@ -96,16 +105,18 @@ ProfileLegend.propTypes = {
 const ChartFactory = ({ charts, moveUp, moveDown, deleteChart, exporting }) =>
   charts.map((chart, index) => (
     <Separator key={chart._id}>
-      {React.createElement(CHARTS[chart.chart_id].title)}
-      {!exporting && <ChartEditButtons
-        moveUp={moveUp}
-        moveDown={moveDown}
-        deleteChart={deleteChart}
-        id={chart._id}
-        first={index === 0}
-        last={index === charts.length - 1}
-      />}
-      <ProfileLegend profile={chart.profile} />
+      <TitleWrapper>
+        {React.createElement(CHARTS[chart.chart_id].title, { ...chart })}
+        {!exporting && <ChartEditButtons
+          moveUp={moveUp}
+          moveDown={moveDown}
+          deleteChart={deleteChart}
+          id={chart._id}
+          first={index === 0}
+          last={index === charts.length - 1}
+        />}
+      </TitleWrapper>
+      {chart.profile_id && <ProfileLegend profile={chart.profile} />}
       {React.createElement(CHARTS[chart.chart_id].chart, {
         ...chart,
         timezone: chart.profile.timezone,

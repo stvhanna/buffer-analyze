@@ -3,7 +3,7 @@ import reactDOM from 'react-dom/server';
 import numeral from 'numeral';
 
 
-import ChartTooltip from '../ComparisonChartTooltip';
+import ChartTooltip from '../ChartTooltip';
 
 export function truncateNumber() {
   let number = parseFloat(this.value);

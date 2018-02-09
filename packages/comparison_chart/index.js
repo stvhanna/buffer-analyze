@@ -1,17 +1,12 @@
 import { connect } from 'react-redux';
-import ComparisonChart from './components/ComparisonChart';
-
-function getMetricData(state, metricKey, dataKey) {
-  const metricData = state.comparison.metrics[metricKey];
-  if (metricData) return metricData[dataKey];
-  return [];
-}
+import ComparisonChart from './components/ChartWrapper';
 
 function mapStateToProps (state, ownProps) {
   return {
-    profileTotals: getMetricData(state, ownProps.metricKey, 'profileTotals'),
-    profilesMetricData: getMetricData(state, ownProps.metricKey, 'profilesMetricData'),
+    metrics: state.comparison.metrics,
+    metricKey: ownProps.metricKey,
     profiles: state.profiles.profiles,
+    profileIds: state.multiProfileSelector.selectedProfiles.map(p => p.id),
     loading: state.comparison.loading,
   };
 }
@@ -24,3 +19,6 @@ export default connect(
 // export reducer, actions and action types
 export reducer, { actions, actionTypes } from './reducer';
 export middleware from './middleware';
+
+export Chart from './components/ChartAndFooter';
+export Title from './components/Title';

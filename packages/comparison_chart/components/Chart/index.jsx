@@ -136,9 +136,9 @@ ComparisonChart.propTypes = {
     profileId: PropTypes.string.isRequired,
   })).isRequired,
   profiles: PropTypes.arrayOf(PropTypes.shape({
-    profileId: PropTypes.string.isRequired,
-    service: PropTypes.string.isRequired,
-    timezone: PropTypes.string.isRequired,
+    profileId: PropTypes.string,
+    service: PropTypes.string,
+    timezone: PropTypes.string,
   })).isRequired,
 };
 

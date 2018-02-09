@@ -63,6 +63,12 @@ describe('reducer', () => {
     ];
 
     const result = {
+      metrics: {
+        audience: { profilesMetricData, profileTotals },
+        likes: { profilesMetricData, profileTotals },
+      },
+    };
+    const metrics = {
       audience: { profilesMetricData, profileTotals },
       likes: { profilesMetricData, profileTotals },
     };
@@ -73,7 +79,7 @@ describe('reducer', () => {
       result,
     }))
       .toEqual(Object.assign({}, {
-        metrics: result,
+        metrics,
         loading: false,
       }));
   });

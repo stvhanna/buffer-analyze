@@ -17,7 +17,7 @@ export default (state = initialState, action) => {
     case `comparison_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
       return {
         ...state,
-        metrics: action.result,
+        metrics: action.result.metrics,
         loading: false,
       };
     default:

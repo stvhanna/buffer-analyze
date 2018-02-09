@@ -32,7 +32,7 @@ describe('rpc/comparison', () => {
     const end = moment.unix(endDate).format('MM/DD/YYYY');
     const dateRange = new DateRange(start, end);
 
-    expect(result).toEqual(rpcFinalResponse);
+    expect(result.metrics).toEqual(rpcFinalResponse);
 
     expect(rp.mock.calls[0]).toEqual([{
       uri: `${process.env.ANALYZE_API_ADDR}/comparison`,

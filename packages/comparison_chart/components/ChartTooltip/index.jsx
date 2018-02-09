@@ -88,7 +88,7 @@ ComparisonChartTooltip.propTypes = {
     color: PropTypes.string,
     label: PropTypes.string,
     username: PropTypes.string,
-    value: PropTypes.string,
+    value: PropTypes.number,
   })).isRequired,
 };
 

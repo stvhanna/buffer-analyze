@@ -1,11 +1,13 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
+import { ReportsStore } from '@bufferapp/analyze-decorators';
 
 import ComparisonChart from './index';
-import mockDailyData from '../../mocks/dailyData';
+import profilesMetricData from '../../mocks/dailyData';
 import profiles from '../../mocks/profiles';
 
+const profileIds = ['1', '2'];
 const profileTotals = [
   {
     currentPeriodTotal: 400,
@@ -31,9 +33,17 @@ const profileTotals = [
   },
 ];
 
+const metrics = {
+  audience: {
+    profileTotals,
+    profilesMetricData,
+  },
+};
+
 storiesOf('ComparisonChart')
   .addDecorator(checkA11y)
-  .add('should render the audience comparison chart for a single profile', () => (
+  .addDecorator(ReportsStore)
+  .add('[TESTED] should render the audience comparison chart for a multiple profiles', () => (
     <div
       style={{
         width: '750px',
@@ -41,23 +51,9 @@ storiesOf('ComparisonChart')
     >
       <ComparisonChart
         metricKey="audience"
-        profilesMetricData={[mockDailyData[0]]}
-        profileTotals={[profileTotals[0]]}
+        metrics={metrics}
         profiles={profiles}
-      />
-    </div>
-  ))
-  .add('should render the audience comparison chart for a multiple profiles', () => (
-    <div
-      style={{
-        width: '750px',
-      }}
-    >
-      <ComparisonChart
-        metricKey="audience"
-        profilesMetricData={mockDailyData}
-        profileTotals={profileTotals}
-        profiles={profiles}
+        profileIds={profileIds}
       />
     </div>
   ))
@@ -69,9 +65,9 @@ storiesOf('ComparisonChart')
     >
       <ComparisonChart
         metricKey="audience"
-        profilesMetricData={[]}
-        profileTotals={[]}
+        metrics={metrics}
         profiles={profiles}
+        profileIds={profileIds}
         loading
       />
     </div>
@@ -84,9 +80,9 @@ storiesOf('ComparisonChart')
     >
       <ComparisonChart
         metricKey="audience"
-        profilesMetricData={[]}
-        profileTotals={[]}
+        metrics={{}}
         profiles={profiles}
+        profileIds={profileIds}
       />
     </div>
   ));

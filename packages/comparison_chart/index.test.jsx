@@ -2,11 +2,13 @@ import React from 'react';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import configureMockStore from 'redux-mock-store';
-import ComparisonChart from './components/ComparisonChart';
+import ChartWrapper from './components/ChartWrapper';
 import ComparisonChartContainer, {
   reducer,
   actionTypes,
   middleware,
+  Chart,
+  Title,
 } from './index';
 
 import mockProfiles from './mocks/profiles';
@@ -35,7 +37,7 @@ describe('ComparisonChartContainer', () => {
         store={store}
         metricKey="audience"
       />);
-    expect(component.find(ComparisonChart).length)
+    expect(component.find(ChartWrapper).length)
       .toBe(1);
   });
 
@@ -51,6 +53,16 @@ describe('ComparisonChartContainer', () => {
 
   it('should export middleware', () => {
     expect(middleware)
+      .toBeDefined();
+  });
+
+  it('should export chart', () => {
+    expect(Chart)
+      .toBeDefined();
+  });
+
+  it('should export Title', () => {
+    expect(Title)
       .toBeDefined();
   });
 });
