@@ -950,7 +950,7 @@ exports[`Snapshots CompareChart should render a "no data" state 1`] = `
         }
       >
         <div
-          className="sc-kAzzGY fTVLQQ"
+          className="sc-kpOJdX kbEKjm"
         >
           <div
             className="sc-bdVaJa fWzNTu"
@@ -1050,7 +1050,7 @@ exports[`Snapshots CompareChart should render a loading state 1`] = `
         }
       >
         <div
-          className="sc-kAzzGY fTVLQQ"
+          className="sc-kpOJdX kbEKjm"
         >
           <div
             style={
@@ -1719,18 +1719,12 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
               }
             >
               <li
-                style={
-                  Object {
-                    "boxSizing": "border-box",
-                    "display": "flex",
-                    "flexGrow": 1,
-                    "listStyle": "none",
-                    "paddingBottom": "15px",
-                    "width": "25%",
-                  }
-                }
+                className="sc-ifAKCX hjaDfC"
+                width="25%"
               >
-                <div>
+                <div
+                  className="sc-EHOje YINzU"
+                >
                   <span
                     style={
                       Object {
@@ -1784,14 +1778,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                     </span>
                   </span>
                   <div
-                    style={
-                      Object {
-                        "alignItems": "center",
-                        "display": "flex",
-                        "flex": 1,
-                        "flexDirection": "row",
-                      }
-                    }
+                    className="sc-bZQynM hCNVyQ"
                   >
                     <div
                       style={
@@ -1893,18 +1880,12 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                 </div>
               </li>
               <li
-                style={
-                  Object {
-                    "boxSizing": "border-box",
-                    "display": "flex",
-                    "flexGrow": 1,
-                    "listStyle": "none",
-                    "paddingBottom": "15px",
-                    "width": "25%",
-                  }
-                }
+                className="sc-ifAKCX hjaDfC"
+                width="25%"
               >
-                <div>
+                <div
+                  className="sc-EHOje YINzU"
+                >
                   <span
                     style={
                       Object {
@@ -1958,14 +1939,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                     </span>
                   </span>
                   <div
-                    style={
-                      Object {
-                        "alignItems": "center",
-                        "display": "flex",
-                        "flex": 1,
-                        "flexDirection": "row",
-                      }
-                    }
+                    className="sc-bZQynM hCNVyQ"
                   >
                     <div
                       style={
@@ -2573,18 +2547,12 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
               }
             >
               <li
-                style={
-                  Object {
-                    "boxSizing": "border-box",
-                    "display": "flex",
-                    "flexGrow": 1,
-                    "listStyle": "none",
-                    "paddingBottom": "15px",
-                    "width": "25%",
-                  }
-                }
+                className="sc-ifAKCX hjaDfC"
+                width="25%"
               >
-                <div>
+                <div
+                  className="sc-EHOje YINzU"
+                >
                   <span
                     style={
                       Object {
@@ -2638,14 +2606,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                     </span>
                   </span>
                   <div
-                    style={
-                      Object {
-                        "alignItems": "center",
-                        "display": "flex",
-                        "flex": 1,
-                        "flexDirection": "row",
-                      }
-                    }
+                    className="sc-bZQynM hCNVyQ"
                   >
                     <div
                       style={
@@ -2747,18 +2708,12 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                 </div>
               </li>
               <li
-                style={
-                  Object {
-                    "boxSizing": "border-box",
-                    "display": "flex",
-                    "flexGrow": 1,
-                    "listStyle": "none",
-                    "paddingBottom": "15px",
-                    "width": "25%",
-                  }
-                }
+                className="sc-ifAKCX hjaDfC"
+                width="25%"
               >
-                <div>
+                <div
+                  className="sc-EHOje YINzU"
+                >
                   <span
                     style={
                       Object {
@@ -2812,14 +2767,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                     </span>
                   </span>
                   <div
-                    style={
-                      Object {
-                        "alignItems": "center",
-                        "display": "flex",
-                        "flex": 1,
-                        "flexDirection": "row",
-                      }
-                    }
+                    className="sc-bZQynM hCNVyQ"
                   >
                     <div
                       style={
@@ -3427,18 +3375,12 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
               }
             >
               <li
-                style={
-                  Object {
-                    "boxSizing": "border-box",
-                    "display": "flex",
-                    "flexGrow": 1,
-                    "listStyle": "none",
-                    "paddingBottom": "15px",
-                    "width": "25%",
-                  }
-                }
+                className="sc-ifAKCX hjaDfC"
+                width="25%"
               >
-                <div>
+                <div
+                  className="sc-EHOje YINzU"
+                >
                   <span
                     style={
                       Object {
@@ -3492,14 +3434,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                     </span>
                   </span>
                   <div
-                    style={
-                      Object {
-                        "alignItems": "center",
-                        "display": "flex",
-                        "flex": 1,
-                        "flexDirection": "row",
-                      }
-                    }
+                    className="sc-bZQynM hCNVyQ"
                   >
                     <div
                       style={
@@ -3601,18 +3536,12 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                 </div>
               </li>
               <li
-                style={
-                  Object {
-                    "boxSizing": "border-box",
-                    "display": "flex",
-                    "flexGrow": 1,
-                    "listStyle": "none",
-                    "paddingBottom": "15px",
-                    "width": "25%",
-                  }
-                }
+                className="sc-ifAKCX hjaDfC"
+                width="25%"
               >
-                <div>
+                <div
+                  className="sc-EHOje YINzU"
+                >
                   <span
                     style={
                       Object {
@@ -3666,14 +3595,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                     </span>
                   </span>
                   <div
-                    style={
-                      Object {
-                        "alignItems": "center",
-                        "display": "flex",
-                        "flex": 1,
-                        "flexDirection": "row",
-                      }
-                    }
+                    className="sc-bZQynM hCNVyQ"
                   >
                     <div
                       style={
@@ -4357,18 +4279,12 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
               }
             >
               <li
-                style={
-                  Object {
-                    "boxSizing": "border-box",
-                    "display": "flex",
-                    "flexGrow": 1,
-                    "listStyle": "none",
-                    "paddingBottom": "15px",
-                    "width": "25%",
-                  }
-                }
+                className="sc-ifAKCX hjaDfC"
+                width="25%"
               >
-                <div>
+                <div
+                  className="sc-EHOje YINzU"
+                >
                   <span
                     style={
                       Object {
@@ -4422,14 +4338,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                     </span>
                   </span>
                   <div
-                    style={
-                      Object {
-                        "alignItems": "center",
-                        "display": "flex",
-                        "flex": 1,
-                        "flexDirection": "row",
-                      }
-                    }
+                    className="sc-bZQynM hCNVyQ"
                   >
                     <div
                       style={
@@ -4531,18 +4440,12 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                 </div>
               </li>
               <li
-                style={
-                  Object {
-                    "boxSizing": "border-box",
-                    "display": "flex",
-                    "flexGrow": 1,
-                    "listStyle": "none",
-                    "paddingBottom": "15px",
-                    "width": "25%",
-                  }
-                }
+                className="sc-ifAKCX hjaDfC"
+                width="25%"
               >
-                <div>
+                <div
+                  className="sc-EHOje YINzU"
+                >
                   <span
                     style={
                       Object {
@@ -4596,14 +4499,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                     </span>
                   </span>
                   <div
-                    style={
-                      Object {
-                        "alignItems": "center",
-                        "display": "flex",
-                        "flex": 1,
-                        "flexDirection": "row",
-                      }
-                    }
+                    className="sc-bZQynM hCNVyQ"
                   >
                     <div
                       style={
@@ -5211,18 +5107,12 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
               }
             >
               <li
-                style={
-                  Object {
-                    "boxSizing": "border-box",
-                    "display": "flex",
-                    "flexGrow": 1,
-                    "listStyle": "none",
-                    "paddingBottom": "15px",
-                    "width": "25%",
-                  }
-                }
+                className="sc-ifAKCX hjaDfC"
+                width="25%"
               >
-                <div>
+                <div
+                  className="sc-EHOje YINzU"
+                >
                   <span
                     style={
                       Object {
@@ -5276,14 +5166,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                     </span>
                   </span>
                   <div
-                    style={
-                      Object {
-                        "alignItems": "center",
-                        "display": "flex",
-                        "flex": 1,
-                        "flexDirection": "row",
-                      }
-                    }
+                    className="sc-bZQynM hCNVyQ"
                   >
                     <div
                       style={
@@ -5385,18 +5268,12 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                 </div>
               </li>
               <li
-                style={
-                  Object {
-                    "boxSizing": "border-box",
-                    "display": "flex",
-                    "flexGrow": 1,
-                    "listStyle": "none",
-                    "paddingBottom": "15px",
-                    "width": "25%",
-                  }
-                }
+                className="sc-ifAKCX hjaDfC"
+                width="25%"
               >
-                <div>
+                <div
+                  className="sc-EHOje YINzU"
+                >
                   <span
                     style={
                       Object {
@@ -5450,14 +5327,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                     </span>
                   </span>
                   <div
-                    style={
-                      Object {
-                        "alignItems": "center",
-                        "display": "flex",
-                        "flex": 1,
-                        "flexDirection": "row",
-                      }
-                    }
+                    className="sc-bZQynM hCNVyQ"
                   >
                     <div
                       style={
@@ -5531,18 +5401,12 @@ exports[`Snapshots Footer should render the table 1`] = `
         }
       >
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-ifAKCX hjaDfC"
+          width="25%"
         >
-          <div>
+          <div
+            className="sc-EHOje YINzU"
+          >
             <span
               style={
                 Object {
@@ -5596,14 +5460,7 @@ exports[`Snapshots Footer should render the table 1`] = `
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-bZQynM hCNVyQ"
             >
               <div
                 style={
@@ -5704,18 +5561,12 @@ exports[`Snapshots Footer should render the table 1`] = `
           </div>
         </li>
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-ifAKCX hjaDfC"
+          width="25%"
         >
-          <div>
+          <div
+            className="sc-EHOje YINzU"
+          >
             <span
               style={
                 Object {
@@ -5769,14 +5620,7 @@ exports[`Snapshots Footer should render the table 1`] = `
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-bZQynM hCNVyQ"
             >
               <div
                 style={

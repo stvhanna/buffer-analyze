@@ -32,7 +32,7 @@ exports[`Snapshots EngagementComparisonChart should render a "no data" state 1`]
         }
       >
         <h2
-          className="sc-cSHVUG eMsAFn"
+          className="sc-kGXeez bsulgI"
         >
           <span
             style={
@@ -50,7 +50,7 @@ exports[`Snapshots EngagementComparisonChart should render a "no data" state 1`]
         </h2>
       </header>
       <div
-        className="sc-kGXeez bFAmmu"
+        className="sc-jKJlTe jeWmsw"
       >
         <div
           className="sc-bdVaJa fWzNTu"
@@ -117,7 +117,7 @@ exports[`Snapshots EngagementComparisonChart should render a loading state 1`] =
         }
       >
         <h2
-          className="sc-cSHVUG eMsAFn"
+          className="sc-kGXeez bsulgI"
         >
           <span
             style={
@@ -135,7 +135,7 @@ exports[`Snapshots EngagementComparisonChart should render a loading state 1`] =
         </h2>
       </header>
       <div
-        className="sc-kgoBCf iKvldm"
+        className="sc-ckVGcZ dzSqhQ"
       >
         <div
           style={
@@ -273,7 +273,7 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
         }
       >
         <h2
-          className="sc-cSHVUG eMsAFn"
+          className="sc-kGXeez bsulgI"
         >
           <span
             style={
@@ -291,7 +291,7 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
         </h2>
       </header>
       <div
-        className="sc-chPdSV beTITA"
+        className="sc-dxgOiQ eHCNaG"
       >
         <div>
           <div
@@ -304,31 +304,23 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
         </div>
       </div>
       <section
-        className="sc-jTzLTM kxZztx"
+        className="sc-kAzzGY cfzHJv"
       >
         <ul
-          className="sc-VigVT cJjjvE"
+          className="sc-cSHVUG fGjpOO"
         >
           <li
-            style={
-              Object {
-                "boxSizing": "border-box",
-                "display": "flex",
-                "flexGrow": 1,
-                "listStyle": "none",
-                "paddingBottom": "15px",
-                "width": "25%",
-              }
-            }
+            className="sc-ifAKCX hjaDfC"
+            width="25%"
           >
             <div
-              className="sc-fjdhpX jpAcTc"
+              className="sc-chPdSV iMhkHF"
             >
               <span
-                className="sc-EHOje eQMpHY"
+                className="sc-dnqmqq hHLyWY"
               >
                 <span
-                  className="sc-ifAKCX dIQiBH"
+                  className="sc-htoDjs fydcEL"
                 >
                   <img
                     alt=""
@@ -393,7 +385,9 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
                 </div>
               </span>
             </div>
-            <div>
+            <div
+              className="sc-EHOje YINzU"
+            >
               <span
                 style={
                   Object {
@@ -418,7 +412,7 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
                     }
                   >
                     <div
-                      className="sc-jzJRlG hAWwQv"
+                      className="sc-kgoBCf bcqlIB"
                     >
                       <span
                         style={
@@ -437,14 +431,7 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
                 </span>
               </span>
               <div
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "display": "flex",
-                    "flex": 1,
-                    "flexDirection": "row",
-                  }
-                }
+                className="sc-bZQynM hCNVyQ"
               >
                 <div
                   style={
@@ -545,25 +532,17 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
             </div>
           </li>
           <li
-            style={
-              Object {
-                "boxSizing": "border-box",
-                "display": "flex",
-                "flexGrow": 1,
-                "listStyle": "none",
-                "paddingBottom": "15px",
-                "width": "25%",
-              }
-            }
+            className="sc-ifAKCX hjaDfC"
+            width="25%"
           >
             <div
-              className="sc-fjdhpX jpAcTc"
+              className="sc-chPdSV iMhkHF"
             >
               <span
-                className="sc-EHOje eQMpHY"
+                className="sc-dnqmqq hHLyWY"
               >
                 <span
-                  className="sc-ifAKCX kdNFSI"
+                  className="sc-htoDjs frZYef"
                 >
                   <img
                     alt=""
@@ -628,7 +607,9 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
                 </div>
               </span>
             </div>
-            <div>
+            <div
+              className="sc-EHOje YINzU"
+            >
               <span
                 style={
                   Object {
@@ -653,7 +634,7 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
                     }
                   >
                     <div
-                      className="sc-jzJRlG hAWwQv"
+                      className="sc-kgoBCf bcqlIB"
                     >
                       <span
                         style={
@@ -672,14 +653,7 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
                 </span>
               </span>
               <div
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "display": "flex",
-                    "flex": 1,
-                    "flexDirection": "row",
-                  }
-                }
+                className="sc-bZQynM hCNVyQ"
               >
                 <div
                   style={
@@ -819,7 +793,7 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
         }
       >
         <h2
-          className="sc-cSHVUG eMsAFn"
+          className="sc-kGXeez bsulgI"
         >
           <span
             style={
@@ -837,7 +811,7 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
         </h2>
       </header>
       <div
-        className="sc-kAzzGY jEkjcv"
+        className="sc-kpOJdX ifUknr"
       >
         <div>
           <div
@@ -850,31 +824,23 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
         </div>
       </div>
       <section
-        className="sc-jTzLTM kxZztx"
+        className="sc-kAzzGY cfzHJv"
       >
         <ul
-          className="sc-VigVT cJjjvE"
+          className="sc-cSHVUG fGjpOO"
         >
           <li
-            style={
-              Object {
-                "boxSizing": "border-box",
-                "display": "flex",
-                "flexGrow": 1,
-                "listStyle": "none",
-                "paddingBottom": "15px",
-                "width": "25%",
-              }
-            }
+            className="sc-ifAKCX hjaDfC"
+            width="25%"
           >
             <div
-              className="sc-fjdhpX jpAcTc"
+              className="sc-chPdSV iMhkHF"
             >
               <span
-                className="sc-EHOje eQMpHY"
+                className="sc-dnqmqq hHLyWY"
               >
                 <span
-                  className="sc-ifAKCX dIQiBH"
+                  className="sc-htoDjs fydcEL"
                 >
                   <img
                     alt=""
@@ -939,7 +905,9 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
                 </div>
               </span>
             </div>
-            <div>
+            <div
+              className="sc-EHOje YINzU"
+            >
               <span
                 style={
                   Object {
@@ -964,7 +932,7 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
                     }
                   >
                     <div
-                      className="sc-jzJRlG hAWwQv"
+                      className="sc-kgoBCf bcqlIB"
                     >
                       <span
                         style={
@@ -983,14 +951,7 @@ exports[`Snapshots EngagementComparisonChart should render the engagement compar
                 </span>
               </span>
               <div
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "display": "flex",
-                    "flex": 1,
-                    "flexDirection": "row",
-                  }
-                }
+                className="sc-bZQynM hCNVyQ"
               >
                 <div
                   style={

@@ -931,7 +931,7 @@ exports[`Snapshots ComparisonChartTooltip should render the tooltip 1`] = `
     }
   >
     <div
-      className="sc-kAzzGY bNdPJH"
+      className="sc-kpOJdX cwjPeT"
     >
       <span>
         <span
@@ -1130,31 +1130,23 @@ exports[`Snapshots ComparisonFooter should render the footer for a single profil
     }
   >
     <section
-      className="sc-kgoBCf fFebmp"
+      className="sc-ckVGcZ jcJSd"
     >
       <ul
-        className="sc-chPdSV cHWtVK"
+        className="sc-dxgOiQ gfqjWL"
       >
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-ifAKCX hjaDfC"
+          width="25%"
         >
           <div
-            className="sc-kGXeez evarDB"
+            className="sc-jKJlTe ihNVRw"
           >
             <span
-              className="sc-EHOje eQMpHY"
+              className="sc-dnqmqq hHLyWY"
             >
               <span
-                className="sc-ifAKCX kdNFSI"
+                className="sc-htoDjs frZYef"
               >
                 <img
                   alt=""
@@ -1219,7 +1211,9 @@ exports[`Snapshots ComparisonFooter should render the footer for a single profil
               </div>
             </span>
           </div>
-          <div>
+          <div
+            className="sc-EHOje YINzU"
+          >
             <span
               style={
                 Object {
@@ -1244,7 +1238,7 @@ exports[`Snapshots ComparisonFooter should render the footer for a single profil
                   }
                 >
                   <div
-                    className="sc-kpOJdX cyFStC"
+                    className="sc-eNQAEJ cDikKS"
                   >
                     <span
                       style={
@@ -1263,14 +1257,7 @@ exports[`Snapshots ComparisonFooter should render the footer for a single profil
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-bZQynM hCNVyQ"
             >
               <div
                 style={
@@ -1387,31 +1374,23 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
     }
   >
     <section
-      className="sc-kgoBCf fFebmp"
+      className="sc-ckVGcZ jcJSd"
     >
       <ul
-        className="sc-chPdSV cHWtVK"
+        className="sc-dxgOiQ gfqjWL"
       >
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-ifAKCX hjaDfC"
+          width="25%"
         >
           <div
-            className="sc-kGXeez evarDB"
+            className="sc-jKJlTe ihNVRw"
           >
             <span
-              className="sc-EHOje eQMpHY"
+              className="sc-dnqmqq hHLyWY"
             >
               <span
-                className="sc-ifAKCX dIQiBH"
+                className="sc-htoDjs fydcEL"
               >
                 <img
                   alt=""
@@ -1476,7 +1455,9 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
               </div>
             </span>
           </div>
-          <div>
+          <div
+            className="sc-EHOje YINzU"
+          >
             <span
               style={
                 Object {
@@ -1501,7 +1482,7 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
                   }
                 >
                   <div
-                    className="sc-kpOJdX cyFStC"
+                    className="sc-eNQAEJ cDikKS"
                   >
                     <span
                       style={
@@ -1520,14 +1501,7 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-bZQynM hCNVyQ"
             >
               <div
                 style={
@@ -1628,25 +1602,17 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
           </div>
         </li>
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-ifAKCX hjaDfC"
+          width="25%"
         >
           <div
-            className="sc-kGXeez evarDB"
+            className="sc-jKJlTe ihNVRw"
           >
             <span
-              className="sc-EHOje eQMpHY"
+              className="sc-dnqmqq hHLyWY"
             >
               <span
-                className="sc-ifAKCX kdNFSI"
+                className="sc-htoDjs frZYef"
               >
                 <img
                   alt=""
@@ -1711,7 +1677,9 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
               </div>
             </span>
           </div>
-          <div>
+          <div
+            className="sc-EHOje YINzU"
+          >
             <span
               style={
                 Object {
@@ -1736,7 +1704,7 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
                   }
                 >
                   <div
-                    className="sc-kpOJdX cyFStC"
+                    className="sc-eNQAEJ cDikKS"
                   >
                     <span
                       style={
@@ -1755,14 +1723,7 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-bZQynM hCNVyQ"
             >
               <div
                 style={
@@ -1864,25 +1825,17 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
           </div>
         </li>
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-ifAKCX hjaDfC"
+          width="25%"
         >
           <div
-            className="sc-kGXeez evarDB"
+            className="sc-jKJlTe ihNVRw"
           >
             <span
-              className="sc-EHOje eQMpHY"
+              className="sc-dnqmqq hHLyWY"
             >
               <span
-                className="sc-ifAKCX kdNFSI"
+                className="sc-htoDjs frZYef"
               >
                 <img
                   alt=""
@@ -1947,7 +1900,9 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
               </div>
             </span>
           </div>
-          <div>
+          <div
+            className="sc-EHOje YINzU"
+          >
             <span
               style={
                 Object {
@@ -1972,7 +1927,7 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
                   }
                 >
                   <div
-                    className="sc-kpOJdX cyFStC"
+                    className="sc-eNQAEJ cDikKS"
                   >
                     <span
                       style={
@@ -1991,14 +1946,7 @@ exports[`Snapshots ComparisonFooter should render the footer for multiple profil
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-bZQynM hCNVyQ"
             >
               <div
                 style={
@@ -3000,13 +2948,13 @@ exports[`Snapshots DropdownItem should selected 1`] = `
 exports[`Snapshots EmptyState render with a custom header and description 1`] = `
 <span>
   <div
-    className="sc-ckVGcZ iqZOoR"
+    className="sc-kEYyzF dZcEiA"
   >
     <div
-      className="sc-jKJlTe dtelEX"
+      className="sc-kkGfuU loMzXm"
     />
     <h1
-      className="sc-eNQAEJ dYjNXW"
+      className="sc-iAyFgw xgYaB"
     >
       <span
         style={
@@ -3022,7 +2970,7 @@ exports[`Snapshots EmptyState render with a custom header and description 1`] = 
       </span>
     </h1>
     <h2
-      className="sc-hMqMXs cbwRfB"
+      className="sc-hSdWYo huQOnW"
     >
       <span
         style={
@@ -3044,13 +2992,13 @@ exports[`Snapshots EmptyState render with a custom header and description 1`] = 
 exports[`Snapshots EmptyState render with a custom header but no description 1`] = `
 <span>
   <div
-    className="sc-ckVGcZ iqZOoR"
+    className="sc-kEYyzF dZcEiA"
   >
     <div
-      className="sc-jKJlTe dtelEX"
+      className="sc-kkGfuU loMzXm"
     />
     <h1
-      className="sc-eNQAEJ dYjNXW"
+      className="sc-iAyFgw xgYaB"
     >
       <span
         style={
@@ -3072,13 +3020,13 @@ exports[`Snapshots EmptyState render with a custom header but no description 1`]
 exports[`Snapshots EmptyState render with default text 1`] = `
 <span>
   <div
-    className="sc-ckVGcZ iqZOoR"
+    className="sc-kEYyzF dZcEiA"
   >
     <div
-      className="sc-jKJlTe dtelEX"
+      className="sc-kkGfuU loMzXm"
     />
     <h1
-      className="sc-eNQAEJ dYjNXW"
+      className="sc-iAyFgw xgYaB"
     >
       <span
         style={
@@ -3099,17 +3047,11 @@ exports[`Snapshots EmptyState render with default text 1`] = `
 
 exports[`Snapshots GridItem Should render the chart tolltip 1`] = `
 <span>
-  <span
-    style={
-      Object {
-        "marginLeft": "7px",
-      }
-    }
-  >
+  <span>
     <span
       style={
         Object {
-          "color": "#59626a",
+          "color": "#fff",
           "fontFamily": "\\"Roboto\\", sans-serif",
           "fontSize": "0.75rem",
           "fontWeight": 400,
@@ -3122,7 +3064,7 @@ exports[`Snapshots GridItem Should render the chart tolltip 1`] = `
     <span
       style={
         Object {
-          "color": "#000",
+          "color": "#fff",
           "fontFamily": "\\"Roboto\\", sans-serif",
           "fontSize": "0.75rem",
           "fontWeight": 700,
@@ -3137,7 +3079,7 @@ exports[`Snapshots GridItem Should render the chart tolltip 1`] = `
     <span
       style={
         Object {
-          "color": "#59626a",
+          "color": "#fff",
           "fontFamily": "\\"Roboto\\", sans-serif",
           "fontSize": "0.75rem",
           "fontWeight": 400,
@@ -3167,18 +3109,12 @@ exports[`Snapshots GridItem should not render the chart if we have only one day 
     }
   >
     <li
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "display": "flex",
-          "flexGrow": 1,
-          "listStyle": "none",
-          "paddingBottom": "15px",
-          "width": "25%",
-        }
-      }
+      className="sc-eHgmQL jsCYRK"
+      width="25%"
     >
-      <div>
+      <div
+        className="sc-cvbbAY FpcGm"
+      >
         <span
           style={
             Object {
@@ -3207,14 +3143,7 @@ exports[`Snapshots GridItem should not render the chart if we have only one day 
           </span>
         </span>
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "display": "flex",
-              "flex": 1,
-              "flexDirection": "row",
-            }
-          }
+          className="sc-jWBwVP jFdhvt"
         >
           <div
             style={
@@ -3334,18 +3263,15 @@ exports[`Snapshots GridItem should render a grid item with a Chart if dailyData 
     }
   >
     <li
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "display": "flex",
-          "flexGrow": 1,
-          "listStyle": "none",
-          "paddingBottom": "15px",
-          "width": "25%",
-        }
-      }
+      className="sc-eHgmQL jsCYRK"
+      width="25%"
     >
-      <div>
+      <div
+        className="sc-cvbbAY FpcGm"
+      >
+        <div
+          className="sc-brqgnP eoHSSf"
+        />
         <span
           style={
             Object {
@@ -3374,14 +3300,7 @@ exports[`Snapshots GridItem should render a grid item with a Chart if dailyData 
           </span>
         </span>
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "display": "flex",
-              "flex": 1,
-              "flexDirection": "row",
-            }
-          }
+          className="sc-jWBwVP jFdhvt"
         >
           <div
             style={
@@ -3501,18 +3420,12 @@ exports[`Snapshots GridItem should render a grid item with a custom Label 1`] = 
     }
   >
     <li
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "display": "flex",
-          "flexGrow": 1,
-          "listStyle": "none",
-          "paddingBottom": "15px",
-          "width": "25%",
-        }
-      }
+      className="sc-eHgmQL jsCYRK"
+      width="25%"
     >
-      <div>
+      <div
+        className="sc-cvbbAY FpcGm"
+      >
         <span
           style={
             Object {
@@ -3543,14 +3456,7 @@ exports[`Snapshots GridItem should render a grid item with a custom Label 1`] = 
           </span>
         </span>
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "display": "flex",
-              "flex": 1,
-              "flexDirection": "row",
-            }
-          }
+          className="sc-jWBwVP jFdhvt"
         >
           <div
             style={
@@ -3657,17 +3563,11 @@ exports[`Snapshots GridItem should render a grid item with a custom Label 1`] = 
 
 exports[`Snapshots GridItem should render a no data tolltip 1`] = `
 <span>
-  <span
-    style={
-      Object {
-        "marginLeft": "7px",
-      }
-    }
-  >
+  <span>
     <span
       style={
         Object {
-          "color": "#59626a",
+          "color": "#fff",
           "fontFamily": "\\"Roboto\\", sans-serif",
           "fontSize": "0.75rem",
           "fontWeight": 400,
@@ -3697,18 +3597,12 @@ exports[`Snapshots GridItem should render a summary grid item with a neutral dif
     }
   >
     <li
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "display": "flex",
-          "flexGrow": 1,
-          "listStyle": "none",
-          "paddingBottom": "15px",
-          "width": "25%",
-        }
-      }
+      className="sc-eHgmQL jsCYRK"
+      width="25%"
     >
-      <div>
+      <div
+        className="sc-cvbbAY FpcGm"
+      >
         <span
           style={
             Object {
@@ -3737,14 +3631,7 @@ exports[`Snapshots GridItem should render a summary grid item with a neutral dif
           </span>
         </span>
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "display": "flex",
-              "flex": 1,
-              "flexDirection": "row",
-            }
-          }
+          className="sc-jWBwVP jFdhvt"
         >
           <div
             style={
@@ -3865,18 +3752,12 @@ exports[`Snapshots GridItem should render a summary grid item with negative diff
     }
   >
     <li
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "display": "flex",
-          "flexGrow": 1,
-          "listStyle": "none",
-          "paddingBottom": "15px",
-          "width": "25%",
-        }
-      }
+      className="sc-eHgmQL jsCYRK"
+      width="25%"
     >
-      <div>
+      <div
+        className="sc-cvbbAY FpcGm"
+      >
         <span
           style={
             Object {
@@ -3905,14 +3786,7 @@ exports[`Snapshots GridItem should render a summary grid item with negative diff
           </span>
         </span>
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "display": "flex",
-              "flex": 1,
-              "flexDirection": "row",
-            }
-          }
+          className="sc-jWBwVP jFdhvt"
         >
           <div
             style={
@@ -4033,18 +3907,12 @@ exports[`Snapshots GridItem should render a summary grid item with no diff 1`] =
     }
   >
     <li
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "display": "flex",
-          "flexGrow": 1,
-          "listStyle": "none",
-          "paddingBottom": "15px",
-          "width": "25%",
-        }
-      }
+      className="sc-eHgmQL jsCYRK"
+      width="25%"
     >
-      <div>
+      <div
+        className="sc-cvbbAY FpcGm"
+      >
         <span
           style={
             Object {
@@ -4073,14 +3941,7 @@ exports[`Snapshots GridItem should render a summary grid item with no diff 1`] =
           </span>
         </span>
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "display": "flex",
-              "flex": 1,
-              "flexDirection": "row",
-            }
-          }
+          className="sc-jWBwVP jFdhvt"
         >
           <div
             style={
@@ -4137,18 +3998,12 @@ exports[`Snapshots GridItem should render a summary grid item with positive diff
     }
   >
     <li
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "display": "flex",
-          "flexGrow": 1,
-          "listStyle": "none",
-          "paddingBottom": "15px",
-          "width": "25%",
-        }
-      }
+      className="sc-eHgmQL jsCYRK"
+      width="25%"
     >
-      <div>
+      <div
+        className="sc-cvbbAY FpcGm"
+      >
         <span
           style={
             Object {
@@ -4177,14 +4032,7 @@ exports[`Snapshots GridItem should render a summary grid item with positive diff
           </span>
         </span>
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "display": "flex",
-              "flex": 1,
-              "flexDirection": "row",
-            }
-          }
+          className="sc-jWBwVP jFdhvt"
         >
           <div
             style={
@@ -5654,10 +5502,10 @@ exports[`Snapshots ProfileIcon should render 1`] = `
     }
   >
     <span
-      className="sc-kkGfuU hPxXlr"
+      className="sc-jAaTju lEldS"
     >
       <span
-        className="sc-kEYyzF wKHws"
+        className="sc-cMljjf cTSLaQ"
       >
         <img
           alt=""
@@ -5829,7 +5677,7 @@ exports[`Snapshots Title should render the title for the comparison audience cha
     }
   >
     <h2
-      className="sc-dxgOiQ isvEAp"
+      className="sc-hMqMXs klQmSI"
     >
       <span
         style={
@@ -5859,7 +5707,7 @@ exports[`Snapshots Title should render the title for the comparison reach chart 
     }
   >
     <h2
-      className="sc-dxgOiQ isvEAp"
+      className="sc-hMqMXs klQmSI"
     >
       <span
         style={

@@ -3,7 +3,7 @@
 exports[`Snapshots RemoveButton renders the remove button 1`] = `
 <span>
   <button
-    className="sc-kAzzGY jWgWfF sc-bZQynM gQpRYd"
+    className="sc-kpOJdX bHxRPE sc-iwsKbI kGSkeT"
     onClick={[Function]}
   >
     <svg
@@ -66,7 +66,7 @@ exports[`Snapshots Report can display buttons for viewing and removing the repor
     }
   >
     <span
-      className="sc-kGXeez ikuGfZ"
+      className="sc-jKJlTe inDCBm"
     >
       <span
         style={
@@ -79,16 +79,16 @@ exports[`Snapshots Report can display buttons for viewing and removing the repor
         }
       >
         <span
-          className="sc-chPdSV jFSiVY"
+          className="sc-dxgOiQ bnJfCW"
         >
           Weekly Sync Report
         </span>
       </span>
       <span
-        className="sc-kpOJdX vaKxX"
+        className="sc-eNQAEJ dUWveg"
       >
         <button
-          className="sc-kAzzGY jWgWfF sc-bZQynM gQpRYd"
+          className="sc-kpOJdX bHxRPE sc-iwsKbI kGSkeT"
           onClick={[Function]}
         >
           <svg
@@ -125,7 +125,7 @@ exports[`Snapshots Report can display buttons for viewing and removing the repor
 exports[`Snapshots Report renders the report 1`] = `
 <span>
   <li
-    className="sc-dxgOiQ bjQadS"
+    className="sc-hMqMXs bnoAPC"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
@@ -159,7 +159,7 @@ exports[`Snapshots Report renders the report 1`] = `
       }
     >
       <span
-        className="sc-kGXeez ikuGfZ"
+        className="sc-jKJlTe inDCBm"
       >
         <span
           style={
@@ -172,7 +172,7 @@ exports[`Snapshots Report renders the report 1`] = `
           }
         >
           <span
-            className="sc-chPdSV jFSiVY"
+            className="sc-dxgOiQ bnJfCW"
           >
             Weekly Sync Report
           </span>
@@ -188,7 +188,7 @@ exports[`Snapshots Report renders the report 1`] = `
           }
         >
           <span
-            className="sc-kgoBCf hIItCJ"
+            className="sc-ckVGcZ dEzJDa"
           >
             October 10, 2017
           </span>
@@ -202,7 +202,7 @@ exports[`Snapshots Report renders the report 1`] = `
 exports[`Snapshots ReportList loading state 1`] = `
 <span>
   <div
-    className="sc-jKJlTe hzCAlj"
+    className="sc-kkGfuU lgsdEB"
   >
     <div
       style={
@@ -309,16 +309,16 @@ exports[`Snapshots ReportList loading state 1`] = `
 exports[`Snapshots ReportList renders an empty state for reports 1`] = `
 <span>
   <div
-    className="sc-jKJlTe hzCAlj"
+    className="sc-kkGfuU lgsdEB"
   >
     <div
-      className="sc-htoDjs bitDVA"
+      className="sc-gqjmRU civxtt"
     >
       <div
-        className="sc-dnqmqq eThGVq"
+        className="sc-VigVT fxxSpU"
       />
       <h1
-        className="sc-iwsKbI csSyjD"
+        className="sc-jTzLTM eZCbiY"
       >
         <span
           style={
@@ -334,7 +334,7 @@ exports[`Snapshots ReportList renders an empty state for reports 1`] = `
         </span>
       </h1>
       <h2
-        className="sc-gZMcBi dbKLLN"
+        className="sc-fjdhpX jKfQFw"
       >
         <span
           style={
@@ -357,16 +357,16 @@ exports[`Snapshots ReportList renders an empty state for reports 1`] = `
 exports[`Snapshots ReportList renders an empty state for small reports 1`] = `
 <span>
   <div
-    className="sc-jKJlTe hzCAlj"
+    className="sc-kkGfuU lgsdEB"
   >
     <div
-      className="sc-htoDjs bitDVA"
+      className="sc-gqjmRU civxtt"
     >
       <div
-        className="sc-dnqmqq eThGVq"
+        className="sc-VigVT fxxSpU"
       />
       <h1
-        className="sc-iwsKbI csSyjD"
+        className="sc-jTzLTM eZCbiY"
       >
         <span
           style={
@@ -389,10 +389,10 @@ exports[`Snapshots ReportList renders an empty state for small reports 1`] = `
 exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
 <span>
   <ol
-    className="sc-ckVGcZ brbPNr"
+    className="sc-kEYyzF dMYAWr"
   >
     <li
-      className="sc-dxgOiQ bjQadS"
+      className="sc-hMqMXs bnoAPC"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -426,7 +426,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
         }
       >
         <span
-          className="sc-kGXeez ikuGfZ"
+          className="sc-jKJlTe inDCBm"
         >
           <span
             style={
@@ -439,7 +439,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
             }
           >
             <span
-              className="sc-chPdSV jFSiVY"
+              className="sc-dxgOiQ bnJfCW"
             >
               Weekly Sync Report
             </span>
@@ -455,7 +455,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
             }
           >
             <span
-              className="sc-kgoBCf hIItCJ"
+              className="sc-ckVGcZ dEzJDa"
             >
               November 7, 2017
             </span>
@@ -464,7 +464,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
       </button>
     </li>
     <li
-      className="sc-dxgOiQ bjQadS"
+      className="sc-hMqMXs bnoAPC"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -498,7 +498,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
         }
       >
         <span
-          className="sc-kGXeez ikuGfZ"
+          className="sc-jKJlTe inDCBm"
         >
           <span
             style={
@@ -511,7 +511,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
             }
           >
             <span
-              className="sc-chPdSV jFSiVY"
+              className="sc-dxgOiQ bnJfCW"
             >
               Client Social Media Campaign
             </span>
@@ -527,7 +527,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
             }
           >
             <span
-              className="sc-kgoBCf hIItCJ"
+              className="sc-ckVGcZ dEzJDa"
             >
               October 10, 2017
             </span>

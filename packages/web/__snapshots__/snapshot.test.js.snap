@@ -967,10 +967,10 @@ exports[`Snapshots App should render application 1`] = `
               target="_self"
             >
               <span
-                className="sc-lhVmIH cLtxjG"
+                className="sc-gxMtzJ kHVwCh"
               >
                 <span
-                  className="sc-bYSBpT bSLZKc"
+                  className="sc-dfVpRl aIWwO"
                 >
                   Send Feedback
                 </span>
@@ -1413,10 +1413,10 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
           target="_self"
         >
           <span
-            className="sc-lhVmIH cLtxjG"
+            className="sc-gxMtzJ kHVwCh"
           >
             <span
-              className="sc-bYSBpT bSLZKc"
+              className="sc-dfVpRl aIWwO"
             >
               Send Feedback
             </span>
@@ -1809,10 +1809,10 @@ exports[`Snapshots InsightsPage should render Insights page 1`] = `
           target="_self"
         >
           <span
-            className="sc-lhVmIH cLtxjG"
+            className="sc-gxMtzJ kHVwCh"
           >
             <span
-              className="sc-bYSBpT bSLZKc"
+              className="sc-dfVpRl aIWwO"
             >
               Send Feedback
             </span>
@@ -1912,7 +1912,7 @@ exports[`Snapshots InsightsPage should render Insights page 1`] = `
 exports[`Snapshots ReportsPage should render reports page 1`] = `
 <span>
   <div
-    className="sc-elJkPf bUkfXi"
+    className="sc-gzOgki vyrKp"
   >
     <div
       style={
@@ -2202,10 +2202,10 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
           target="_self"
         >
           <span
-            className="sc-lhVmIH cLtxjG"
+            className="sc-gxMtzJ kHVwCh"
           >
             <span
-              className="sc-bYSBpT bSLZKc"
+              className="sc-dfVpRl aIWwO"
             >
               Send Feedback
             </span>
@@ -2214,13 +2214,13 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
       </div>
     </div>
     <div
-      className="sc-jtRfpW huBDPE"
+      className="sc-iyvyFf EkisJ"
     >
       <header
-        className="sc-dqBHgY gTeVon"
+        className="sc-kPVwWT iKQOxb"
       >
         <button
-          className="sc-bZQynM gQpRYd"
+          className="sc-iwsKbI kGSkeT"
           onClick={[Function]}
         >
           <span
@@ -2237,13 +2237,13 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
           </span>
         </button>
         <section
-          className="sc-dfVpRl jBypUr"
+          className="sc-esjQYD cVwFLp"
         >
           <div
-            className="sc-kjoXOD bKsEHy"
+            className="sc-cJSrbW GQFdN"
           >
             <button
-              className="sc-hSdWYo eKWmcc"
+              className="sc-brqgnP MqCms"
               disabled={false}
               onClick={[Function]}
             >
@@ -2260,7 +2260,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
                 From: 10/29/17 - To: 11/04/17
               </span>
               <span
-                className="sc-eHgmQL jOLMIK"
+                className="sc-cMljjf hloPZA"
               >
                 <svg
                   height="100%"
@@ -2289,17 +2289,17 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
               </span>
             </button>
             <div
-              className="sc-cvbbAY lmAiUy"
+              className="sc-jAaTju dsDZiR"
             >
               <div>
                 <header
-                  className="sc-bRBYWo dFNEsR"
+                  className="sc-fMiknA laFvzX"
                 >
                   <ul
-                    className="sc-hzDkRC kBSCix"
+                    className="sc-dVhcbM iEVnHX"
                   >
                     <li
-                      className="sc-jhAzac eShgXQ"
+                      className="sc-eqIVtm iOjAKr"
                       data-tip={null}
                       disabled={false}
                     >
@@ -2347,7 +2347,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
                       </button>
                     </li>
                     <li
-                      className="sc-jhAzac eShgXQ"
+                      className="sc-eqIVtm iOjAKr"
                       data-tip={null}
                       disabled={false}
                     >
@@ -2395,7 +2395,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
                       </button>
                     </li>
                     <li
-                      className="sc-jhAzac eShgXQ"
+                      className="sc-eqIVtm iOjAKr"
                       data-tip={null}
                       disabled={false}
                     >
@@ -2444,10 +2444,10 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
                     </li>
                   </ul>
                   <ul
-                    className="sc-hzDkRC kBSCix"
+                    className="sc-dVhcbM iEVnHX"
                   >
                     <li
-                      className="sc-jhAzac eShgXQ"
+                      className="sc-eqIVtm iOjAKr"
                       data-tip={null}
                       disabled={false}
                     >
@@ -2495,7 +2495,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
                       </button>
                     </li>
                     <li
-                      className="sc-jhAzac eShgXQ"
+                      className="sc-eqIVtm iOjAKr"
                       data-tip={null}
                       disabled={false}
                     >
@@ -2543,7 +2543,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
                       </button>
                     </li>
                     <li
-                      className="sc-jhAzac hjaNbY"
+                      className="sc-eqIVtm Klols"
                       data-tip={null}
                       disabled={false}
                     >
@@ -2593,22 +2593,22 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
                   </ul>
                 </header>
                 <div
-                  className="sc-caSCKo jwvIfN"
+                  className="sc-TOsTZ fUsDvY"
                 />
               </div>
             </div>
             <div
-              className="sc-cHGsZl cyOynz"
+              className="sc-ksYbfQ dbOZMP"
               onClick={[Function]}
               role="button"
               tabIndex="0"
             />
           </div>
           <span
-            className="sc-btzYZH bPqrpt"
+            className="sc-dqBHgY cIerws"
           >
             <button
-              className="sc-bZQynM gQpRYd"
+              className="sc-iwsKbI kGSkeT"
               onClick={[Function]}
             >
               <span
@@ -2628,10 +2628,10 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
         </section>
       </header>
       <div
-        className="sc-kTUwUJ kPZwkN"
+        className="sc-hwwEjo ebDSok"
       >
         <section
-          className="sc-gxMtzJ iemDyH"
+          className="sc-kfGgVZ sKhyE"
         >
           <div
             style={

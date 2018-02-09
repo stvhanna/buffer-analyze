@@ -337,18 +337,12 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
           }
         >
           <li
-            style={
-              Object {
-                "boxSizing": "border-box",
-                "display": "flex",
-                "flexGrow": 1,
-                "listStyle": "none",
-                "paddingBottom": "15px",
-                "width": "33.33%",
-              }
-            }
+            className="sc-ifAKCX bkOZJO"
+            width="33.33%"
           >
-            <div>
+            <div
+              className="sc-EHOje YINzU"
+            >
               <span
                 style={
                   Object {
@@ -377,14 +371,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                 </span>
               </span>
               <div
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "display": "flex",
-                    "flex": 1,
-                    "flexDirection": "row",
-                  }
-                }
+                className="sc-bZQynM hCNVyQ"
               >
                 <div
                   style={
@@ -485,18 +472,12 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
             </div>
           </li>
           <li
-            style={
-              Object {
-                "boxSizing": "border-box",
-                "display": "flex",
-                "flexGrow": 1,
-                "listStyle": "none",
-                "paddingBottom": "15px",
-                "width": "33.33%",
-              }
-            }
+            className="sc-ifAKCX bkOZJO"
+            width="33.33%"
           >
-            <div>
+            <div
+              className="sc-EHOje YINzU"
+            >
               <span
                 style={
                   Object {
@@ -525,14 +506,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                 </span>
               </span>
               <div
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "display": "flex",
-                    "flex": 1,
-                    "flexDirection": "row",
-                  }
-                }
+                className="sc-bZQynM hCNVyQ"
               >
                 <div
                   style={
@@ -634,18 +608,12 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
             </div>
           </li>
           <li
-            style={
-              Object {
-                "boxSizing": "border-box",
-                "display": "flex",
-                "flexGrow": 1,
-                "listStyle": "none",
-                "paddingBottom": "15px",
-                "width": "33.33%",
-              }
-            }
+            className="sc-ifAKCX bkOZJO"
+            width="33.33%"
           >
-            <div>
+            <div
+              className="sc-EHOje YINzU"
+            >
               <span
                 style={
                   Object {
@@ -674,14 +642,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                 </span>
               </span>
               <div
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "display": "flex",
-                    "flex": 1,
-                    "flexDirection": "row",
-                  }
-                }
+                className="sc-bZQynM hCNVyQ"
               >
                 <div
                   style={
@@ -782,18 +743,12 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
             </div>
           </li>
           <li
-            style={
-              Object {
-                "boxSizing": "border-box",
-                "display": "flex",
-                "flexGrow": 1,
-                "listStyle": "none",
-                "paddingBottom": "15px",
-                "width": "33.33%",
-              }
-            }
+            className="sc-ifAKCX bkOZJO"
+            width="33.33%"
           >
-            <div>
+            <div
+              className="sc-EHOje YINzU"
+            >
               <span
                 style={
                   Object {
@@ -822,14 +777,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                 </span>
               </span>
               <div
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "display": "flex",
-                    "flex": 1,
-                    "flexDirection": "row",
-                  }
-                }
+                className="sc-bZQynM hCNVyQ"
               >
                 <div
                   style={
@@ -931,18 +879,12 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
             </div>
           </li>
           <li
-            style={
-              Object {
-                "boxSizing": "border-box",
-                "display": "flex",
-                "flexGrow": 1,
-                "listStyle": "none",
-                "paddingBottom": "15px",
-                "width": "33.33%",
-              }
-            }
+            className="sc-ifAKCX bkOZJO"
+            width="33.33%"
           >
-            <div>
+            <div
+              className="sc-EHOje YINzU"
+            >
               <span
                 style={
                   Object {
@@ -971,14 +913,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                 </span>
               </span>
               <div
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "display": "flex",
-                    "flex": 1,
-                    "flexDirection": "row",
-                  }
-                }
+                className="sc-bZQynM hCNVyQ"
               >
                 <div
                   style={
@@ -1080,18 +1015,12 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
             </div>
           </li>
           <li
-            style={
-              Object {
-                "boxSizing": "border-box",
-                "display": "flex",
-                "flexGrow": 1,
-                "listStyle": "none",
-                "paddingBottom": "15px",
-                "width": "33.33%",
-              }
-            }
+            className="sc-ifAKCX bkOZJO"
+            width="33.33%"
           >
-            <div>
+            <div
+              className="sc-EHOje YINzU"
+            >
               <span
                 style={
                   Object {
@@ -1120,14 +1049,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                 </span>
               </span>
               <div
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "display": "flex",
-                    "flex": 1,
-                    "flexDirection": "row",
-                  }
-                }
+                className="sc-bZQynM hCNVyQ"
               >
                 <div
                   style={
