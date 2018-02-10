@@ -95,29 +95,30 @@ function formatData(result, metricKey) {
   const profileIds = Object.keys(result);
   const profilesMetricData = Array.from(profileIds, (id) => {
     const data = result[id];
-    return Object.assign({ profileId: id }, data.profilesMetricData);
-  });
+    if (data[metricKey] === undefined) return null;
+    return Object.assign({ profileId: id }, data[metricKey].profilesMetricData);
+  }).filter(e => e !== null);
 
   const profileTotals = Array.from(profileIds, (id) => {
     const data = result[id];
-    return data.profileTotals;
-  });
+    if (data[metricKey] === undefined) return null;
+    return data[metricKey].profileTotals;
+  }).filter(e => e !== null);
 
-  const formattedProfilesMetricData = Array.from(profilesMetricData, (data, index) => {
-    const timezone = data.timezone;
-    return {
-      dailyData: data.dailyData.map(d =>
-        formatDailyData(
-          d.day,
-          d.value,
-          data.service,
-          metricKey,
-          index,
-        ),
+  if (profilesMetricData.length === 0) return null;
+
+  const formattedProfilesMetricData = Array.from(profilesMetricData, (data, index) => ({
+    profileId: data.profileId,
+    dailyData: data.dailyData.map(d =>
+      formatDailyData(
+        d.day,
+        d.value,
+        data.service,
+        metricKey,
+        index,
       ),
-      profileId: data.profileId,
-    };
-  });
+    ),
+  }));
 
   const formattedProfileTotals = Array.from(profileTotals, (data, index) => {
     const label = METRIC_CONFIGS_BY_KEY[metricKey][data.service].label;
@@ -141,6 +142,18 @@ function formatData(result, metricKey) {
   };
 }
 
+function parseResponse(response) {
+  const metricsData = METRIC_KEYS.map(metric => formatData(response, metric));
+  const metrics = {};
+  METRIC_KEYS.forEach((metricKey, index) => {
+    const data = metricsData[index];
+    if (data !== null) metrics[metricKey] = data;
+  });
+  return {
+    metrics,
+  };
+}
+
 module.exports = method(
   'comparison',
   'get daily comparison data for the given profiles',
@@ -148,22 +161,18 @@ module.exports = method(
     const start = moment.unix(startDate).format('MM/DD/YYYY');
     const end = moment.unix(endDate).format('MM/DD/YYYY');
     const dateRange = new DateRange(start, end);
-    const metrics = {};
-    return Promise
-      .all(METRIC_KEYS.map(metric => rp({
-        uri: `${process.env.ANALYZE_API_ADDR}/comparison`,
-        method: 'POST',
-        strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
-        body: {
-          profiles: profileIds,
-          start_date: dateRange.start,
-          end_date: dateRange.end,
-          metric,
-        },
-        json: true,
-      }).then(({ response }) => {
-        metrics[metric] = formatData(response, metric);
-      })))
-      .then(() => ({ metrics }))
+    return rp({
+      uri: `${process.env.ANALYZE_API_ADDR}/comparison`,
+      method: 'POST',
+      strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
+      body: {
+        profiles: profileIds,
+        start_date: dateRange.start,
+        end_date: dateRange.end,
+        metrics: METRIC_KEYS,
+      },
+      json: true,
+    })
+      .then(({ response }) => parseResponse(response))
       .catch(() => {});
   });

@@ -967,10 +967,10 @@ exports[`Snapshots App should render application 1`] = `
               target="_self"
             >
               <span
-                className="sc-ipXKqB kmgQuH"
+                className="sc-lkqHmb hneQDx"
               >
                 <span
-                  className="sc-hmXxxW ennnnW"
+                  className="sc-eLExRp cAMBvV"
                 >
                   Send Feedback
                 </span>
@@ -1413,10 +1413,10 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
           target="_self"
         >
           <span
-            className="sc-ipXKqB kmgQuH"
+            className="sc-lkqHmb hneQDx"
           >
             <span
-              className="sc-hmXxxW ennnnW"
+              className="sc-eLExRp cAMBvV"
             >
               Send Feedback
             </span>
@@ -1745,7 +1745,7 @@ exports[`Snapshots DefaultPage should render the dashboard page 1`] = `
           </span>
         </span>
         <a
-          href="/reports"
+          href="/reports/"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
@@ -1813,10 +1813,10 @@ exports[`Snapshots DefaultPage should render the dashboard page 1`] = `
           target="_self"
         >
           <span
-            className="sc-lhVmIH cLtxjG"
+            className="sc-lkqHmb hneQDx"
           >
             <span
-              className="sc-bYSBpT bSLZKc"
+              className="sc-eLExRp cAMBvV"
             >
               Send Feedback
             </span>
@@ -2257,10 +2257,10 @@ exports[`Snapshots InsightsPage should render Insights page 1`] = `
           target="_self"
         >
           <span
-            className="sc-ipXKqB kmgQuH"
+            className="sc-lkqHmb hneQDx"
           >
             <span
-              className="sc-hmXxxW ennnnW"
+              className="sc-eLExRp cAMBvV"
             >
               Send Feedback
             </span>
@@ -2360,7 +2360,7 @@ exports[`Snapshots InsightsPage should render Insights page 1`] = `
 exports[`Snapshots ReportsPage should render reports page 1`] = `
 <span>
   <div
-    className="sc-cqCuEk iPHoDj"
+    className="sc-cbkKFq dcLefj"
   >
     <div
       style={
@@ -2649,10 +2649,10 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
           target="_self"
         >
           <span
-            className="sc-ipXKqB kmgQuH"
+            className="sc-lkqHmb hneQDx"
           >
             <span
-              className="sc-hmXxxW ennnnW"
+              className="sc-eLExRp cAMBvV"
             >
               Send Feedback
             </span>
@@ -2661,10 +2661,10 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
       </div>
     </div>
     <div
-      className="sc-dliRfk gHbHJG"
+      className="sc-krvtoX iHyxVg"
     >
       <header
-        className="sc-qrIAp jWDTYt"
+        className="sc-fOKMvo loHEnx"
       >
         <button
           className="sc-bZQynM gQpRYd"
@@ -2684,7 +2684,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
           </span>
         </button>
         <section
-          className="sc-ipZHIp dkJuCA"
+          className="sc-gHboQg fHtJmu"
         >
           <div
             className="sc-fMiknA ijDpKp"
@@ -3052,7 +3052,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
             />
           </div>
           <span
-            className="sc-VJcYb hJraKB"
+            className="sc-bXGyLb kMBpiR"
           >
             <button
               className="sc-bZQynM gQpRYd"
@@ -3075,10 +3075,10 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
         </section>
       </header>
       <div
-        className="sc-kLIISr kWyTrW"
+        className="sc-fYiAbW gafOon"
       >
         <section
-          className="sc-iqzUVk ieIinb"
+          className="sc-dUjcNx leHIYD"
         >
           <div
             style={

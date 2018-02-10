@@ -40,12 +40,12 @@ describe('rpc/comparison', () => {
       strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
       body: {
         profiles: profileIds,
-        metric: 'audience',
+        metrics: ['audience', 'reach', 'likes', 'engagement', 'comments'],
         start_date: dateRange.start,
         end_date: dateRange.end,
       },
       json: true,
     }]);
-    expect(rp).toHaveBeenCalledTimes(5);
+    expect(rp).toHaveBeenCalledTimes(1);
   });
 });
