@@ -78,6 +78,7 @@ storiesOf('DatePicker')
   ))
   .add('should display a calendar', () => (
     <DatePicker
+      minDate={null}
       maxDate={moment().valueOf()}
       startDate={moment().subtract(10, 'days').unix()}
       endDate={moment().subtract(1, 'day').unix()}
