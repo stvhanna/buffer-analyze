@@ -78,7 +78,17 @@ storiesOf('DatePicker')
   ))
   .add('should display a calendar', () => (
     <DatePicker
-      minDate={moment().subtract(90, 'days').valueOf()}
+      maxDate={moment().valueOf()}
+      startDate={moment().subtract(10, 'days').unix()}
+      endDate={moment().subtract(1, 'day').unix()}
+      isOpen
+      calendarOpen
+      month={moment().startOf('month').unix()}
+    />
+  ))
+  .add('days before minDate should be disabled', () => (
+    <DatePicker
+      minDate={moment().subtract(15, 'days').valueOf()}
       maxDate={moment().valueOf()}
       startDate={moment().subtract(10, 'days').unix()}
       endDate={moment().subtract(1, 'day').unix()}
