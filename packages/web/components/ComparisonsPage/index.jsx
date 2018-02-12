@@ -70,7 +70,7 @@ const centeredContainer = {
   alignItems: 'center',
 };
 
-const ComparisonsPage = ({ location, profilesSelected }) => (
+const ComparisonsPage = ({ location, isCompareProfileClicked }) => (
   <div style={pageStyle}>
     <NavSidebar route={location.pathname} />
     <ProfileLoader>
@@ -88,7 +88,7 @@ const ComparisonsPage = ({ location, profilesSelected }) => (
         </div>
         <div style={comparisonsContainer}>
           {
-            profilesSelected ?
+            isCompareProfileClicked ?
               <div style={comparisonsMaxWidth}>
                 <AudienceComparisonChart />
                 <ReachComparisonChart />
@@ -114,16 +114,16 @@ ComparisonsPage.propTypes = {
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired,
   }).isRequired,
-  profilesSelected: PropTypes.bool,
+  isCompareProfileClicked: PropTypes.bool,
 };
 
 ComparisonsPage.defaultProps = {
-  profilesSelected: false,
+  isCompareProfileClicked: false,
 };
 
 function mapStateToProps({ multiProfileSelector }) {
   return {
-    profilesSelected: multiProfileSelector.selectedProfiles.length > 0,
+    isCompareProfileClicked: multiProfileSelector.isCompareProfileClicked,
   };
 }
 
