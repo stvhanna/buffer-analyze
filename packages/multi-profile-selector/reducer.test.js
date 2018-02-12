@@ -11,6 +11,7 @@ describe('reducer', () => {
       isDropdownOpen: false,
       profilesFilterString: '',
       selectedProfiles: [],
+      isCompareProfileClicked: false,
     };
   });
 
@@ -37,6 +38,7 @@ describe('reducer', () => {
       .toEqual({
         profiles: mockProfiles,
         isDropdownOpen: false,
+        isCompareProfileClicked: false,
         profilesFilterString: '',
         selectedProfiles: [],
       });
@@ -65,6 +67,14 @@ describe('reducer', () => {
     });
     expect(state.isDropdownOpen)
       .toBeFalsy();
+  });
+
+  it('isCompareProfileClicked should be true on COMPARE_PROFILES', () => {
+    const state = reducer(Object.assign({}, initialState), {
+      type: actionTypes.COMPARE_PROFILES,
+    });
+    expect(state.isCompareProfileClicked)
+      .toBeTruthy();
   });
 
   it('should toggle (ADD) selected profile on TOGGLE_PROFILE', () => {
