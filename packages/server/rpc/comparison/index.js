@@ -78,9 +78,9 @@ const METRIC_CONFIGS_BY_KEY = {
   },
 };
 
-const formatDailyData = (day, value, profileService, metricKey, index) => {
+const formatDailyData = (day, value, profileService, metricKey, profileIndex) => {
   const label = METRIC_CONFIGS_BY_KEY[metricKey][profileService].label;
-  const color = PROFILE_COLORS[index];
+  const color = PROFILE_COLORS[profileIndex];
   return {
     day,
     metric: {
@@ -91,38 +91,52 @@ const formatDailyData = (day, value, profileService, metricKey, index) => {
   };
 };
 
-function formatData(result, metricKey) {
-  const profileIds = Object.keys(result);
+function getDaysFromProfilesMetricData(profileIds, rawData, metricKey) {
+  const validDailyData = profileIds
+    .map(profileId => rawData[profileId][metricKey].profilesMetricData.dailyData)
+    .filter(dailyData => dailyData.length > 0);
+  return validDailyData[0].map(dayData => dayData.day);
+}
+
+function getDailyData(days, data, metricKey, profileIndex) {
+  return days.map((day, index) =>
+    formatDailyData(
+      day,
+      data.dailyData[index] ? data.dailyData[index].value : null,
+      data.service,
+      metricKey,
+      profileIndex,
+    ),
+  );
+}
+
+function formatData(rawData, metricKey) {
+  const profileIds = Object.keys(rawData);
+
   const profilesMetricData = Array.from(profileIds, (id) => {
-    const data = result[id];
+    const data = rawData[id];
     if (data[metricKey] === undefined) return null;
     return Object.assign({ profileId: id }, data[metricKey].profilesMetricData);
   }).filter(e => e !== null);
 
   const profileTotals = Array.from(profileIds, (id) => {
-    const data = result[id];
+    const data = rawData[id];
     if (data[metricKey] === undefined) return null;
     return data[metricKey].profileTotals;
   }).filter(e => e !== null);
 
   if (profilesMetricData.length === 0) return null;
 
-  const formattedProfilesMetricData = Array.from(profilesMetricData, (data, index) => ({
+  const days = getDaysFromProfilesMetricData(profileIds, rawData, metricKey);
+
+  const formattedProfilesMetricData = Array.from(profilesMetricData, (data, profileIndex) => ({
     profileId: data.profileId,
-    dailyData: data.dailyData.map(d =>
-      formatDailyData(
-        d.day,
-        d.value,
-        data.service,
-        metricKey,
-        index,
-      ),
-    ),
+    dailyData: getDailyData(days, data, metricKey, profileIndex),
   }));
 
-  const formattedProfileTotals = Array.from(profileTotals, (data, index) => {
+  const formattedProfileTotals = Array.from(profileTotals, (data, profileIndex) => {
     const label = METRIC_CONFIGS_BY_KEY[metricKey][data.service].label;
-    const color = PROFILE_COLORS[index];
+    const color = PROFILE_COLORS[profileIndex];
     return {
       metric: {
         label,
