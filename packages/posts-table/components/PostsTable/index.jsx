@@ -78,9 +78,11 @@ export const Table = ({ metrics, timezone, service }) => {
           <li className={metricColumn}>
             <Text size="small">Engagements</Text>
           </li>
-          <li className={metricColumn}>
-            <Text size="small">Audience</Text>
-          </li>
+          {(service !== 'instagram') ?
+            <li className={metricColumn}>
+              <Text size="small">Audience</Text>
+            </li>
+          : null}
         </ul>
       </header>
       <ul className={postsContainer}>
@@ -139,6 +141,8 @@ const PostsTable = (props) => {
   if (selectedProfileId === null) {
     return null;
   }
+
+  console.log(JSON.stringify(metrics));
 
   // TODO: Move this to RPC endpoint and pass it as a prop to PostTable components
   const topPosts = metrics;
