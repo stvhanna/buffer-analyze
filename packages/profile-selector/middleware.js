@@ -6,7 +6,6 @@ import { actions as performanceActions } from '@bufferapp/performance-tracking';
 import { actions as profilesActions, actionTypes as profileActionTypes } from './reducer';
 
 const INSIGHTS_PATH_REGEX = /(overview|posts)\/?(.*)$/;
-const REPORTS_PATH_REGEX = /reports\/(.*)$/;
 
 const isInsightsRoute = route => route.match(INSIGHTS_PATH_REGEX);
 
@@ -55,9 +54,7 @@ export default ({ dispatch, getState }) => next => (action) => {
       break;
     }
     case LOCATION_CHANGE:
-      if (action.payload.pathname.match(REPORTS_PATH_REGEX)) {
-        dispatch(reportActions.viewReport(action.payload.pathname.match(REPORTS_PATH_REGEX)[1]));
-      } else if (action.payload.pathname.match(/(overview|posts)\/?$/)) {
+      if (action.payload.pathname.match(/(overview|posts)\/?$/)) {
         let profile = null;
         if (getState().profiles.selectedProfile === null) {
           profile = getState().profiles.profiles[0];
