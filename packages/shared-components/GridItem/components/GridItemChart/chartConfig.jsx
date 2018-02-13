@@ -58,14 +58,22 @@ export default {
     borderRadius: 4,
     borderWidth: 0,
     hideDelay: 10,
-    pointFormatter: () => `${this.series.name}: <b>${this.y}</b><br/>`,
     shadow: false,
     useHTML: true,
     positioner: function (boxWidth, boxHeight, point) { // eslint-disable-line
       const chart = this.chart;
-      let x = (point.plotX + chart.plotLeft) - (boxWidth - 30);
+      const boxOffset = 30;
+      const origin = point.plotX + chart.plotLeft;
+      let x = origin - (boxWidth - boxOffset);
+
       if (x < 0) x = 0;
-      if ((x + boxWidth) > chart.plotWidth) x -= (x + boxWidth) - chart.plotWidth;
+
+      const isOverflowing = (x + boxWidth) > chart.plotWidth;
+      if (isOverflowing) {
+        const overflowingAmount = (x + boxWidth) - chart.plotWidth;
+        x -= overflowingAmount;
+      }
+
       return { x, y: 0 };
     },
   },
