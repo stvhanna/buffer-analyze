@@ -10,6 +10,7 @@ const RPC_ENDPOINTS = {
   'contextual-compare': require('../contextual'), // eslint-disable-line global-require
   compare: require('../compare'), // eslint-disable-line global-require
   audience: require('../audience'), // eslint-disable-line global-require
+  comparison: require('../comparison'), // eslint-disable-line global-require
 };
 
 function requestChartData (chart, startDate, endDate, session) {

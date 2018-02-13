@@ -14,6 +14,7 @@ const initialState = {
   isDropdownOpen: false,
   profilesFilterString: '',
   selectedProfiles: [],
+  isCompareProfileClicked: false,
 };
 
 function updatedSelectedProfiles(profileId, selectedProfiles, profiles) {
@@ -53,6 +54,7 @@ export default (state = initialState, action) => {
     case actionTypes.COMPARE_PROFILES:
       return Object.assign({}, state, {
         isDropdownOpen: false,
+        isCompareProfileClicked: true,
         profilesFilterString: '',
         selectedProfiles: state.selectedProfiles,
       });

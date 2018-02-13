@@ -38,7 +38,7 @@ const NavSidebar = props => (
     <Insights {...props} />
     <div>
       <Label>Tools</Label>
-      <Item href="/reports" {...props}>Reports</Item>
+      <Item href="/reports/" {...props}>Reports</Item>
     </div>
     <div style={bottomSectionStyle}>
       <FeedbackLink email="hello+analyze@buffer.com">Send Feedback</FeedbackLink>
