@@ -86,21 +86,6 @@ describe('middleware', () => {
       }));
       expect(next).toHaveBeenCalledWith(action);
     });
-
-    it('should not dispatch the data fetch if the view is an export view', () => {
-      state.router = {
-        location: {
-          pathname: '/export/reports/1234',
-        },
-      };
-      const action = {
-        type: dateActionTypes.SET_DATE_RANGE,
-        startDate: '10/10/2016',
-        endDate: '20/10/2016',
-      };
-      middleware(store)(next)(action);
-      expect(store.dispatch).not.toHaveBeenCalled();
-    });
   });
 
   it('SAVE_CHANGES dispatches a update report request', () => {
@@ -194,6 +179,17 @@ describe('middleware', () => {
           endDate: state.date.endDate,
         },
       }));
+    });
+
+    it('should not dispatch the data fetch if the view is an export view', () => {
+      const action = {
+        type: LOCATION_CHANGE,
+        payload: {
+          pathname: '/export/reports/1234',
+        },
+      };
+      middleware(store)(next)(action);
+      expect(store.dispatch).not.toHaveBeenCalled();
     });
 
     it('LOCATION_CHANGE to another route does not trigger get_report', () => {
