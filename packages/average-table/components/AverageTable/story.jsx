@@ -3,45 +3,50 @@ import { storiesOf } from '@storybook/react';
 import { ReportsStore } from '@bufferapp/analyze-decorators';
 import { checkA11y } from 'storybook-addon-a11y';
 import AverageTable from './index';
-import mockDailyData from './mock/dailyData';
+import mockMetrics7days from './mock/metrics7days';
+import mockMetrics30days from './mock/metrics30days';
+import mockMetrics90days from './mock/metrics90days';
 
 const noMetrics = {
   totals: [],
 };
 
-const metrics = {
-  totals: [
-    {
-      label: 'Impression average',
-      value: 150,
-      diff: 25,
-    },
-    {
-      label: 'Click average',
-      value: 1010,
-      diff: -55,
-    },
-    {
-      label: 'Engagement average',
-      value: 901,
-      diff: -39,
-    },
-  ],
-};
-
 storiesOf('AverageTable')
   .addDecorator(checkA11y)
   .addDecorator(ReportsStore)
-  .add('should render the average table', () => (
+  .add('should render the average table for 7 days', () => (
     <div
       style={{
         width: '750px',
       }}
     >
       <AverageTable
-        dailyData={mockDailyData}
         timezone="America/Los_Angeles"
-        metrics={metrics}
+        metrics={mockMetrics7days}
+      />
+    </div>
+  ))
+  .add('should render the average table for 30 days', () => (
+    <div
+      style={{
+        width: '750px',
+      }}
+    >
+      <AverageTable
+        timezone="America/Los_Angeles"
+        metrics={mockMetrics30days}
+      />
+    </div>
+  ))
+  .add('should render the average table for 90 days', () => (
+    <div
+      style={{
+        width: '750px',
+      }}
+    >
+      <AverageTable
+        timezone="America/Los_Angeles"
+        metrics={mockMetrics90days}
       />
     </div>
   ))

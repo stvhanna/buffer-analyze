@@ -556,7 +556,7 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
       }
     >
       <div
-        className="sc-hORach fcOAIF"
+        className="sc-cQFLBn csZTIU"
       >
         <button
           aria-label={null}
@@ -587,13 +587,13 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
           }
         >
           <h1
-            className="sc-gqPbQI kklpUq"
+            className="sc-exAgwC jnixgg"
           >
             Weekly Sync Report
           </h1>
         </button>
         <div
-          className="sc-bMVAic utVwK"
+          className="sc-gojNiO hKVKqB"
         >
           <svg
             height="100%"
@@ -631,13 +631,13 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
         }
       >
         <span
-          className="sc-cmthru jtPgDu"
+          className="sc-bAeIUo jUGDKX"
         >
           Showing for dates
         </span>
          
         <span
-          className="sc-hMFtBS iyBJyg"
+          className="sc-iujRgT jUtcqQ"
         >
           Invalid date
            to 
@@ -646,10 +646,10 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
       </span>
     </span>
     <section
-      className="sc-bsbRJL edKPoo"
+      className="sc-hMFtBS eReMSp"
     >
       <div
-        className="sc-esOvli bKbMEm"
+        className="sc-bMVAic Nnqlo"
       >
         <h2
           style={
@@ -684,10 +684,10 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
         }
       >
         <span
-          className="sc-iuJeZd olhrV"
+          className="sc-hORach RePNO"
         >
           <span
-            className="sc-hZSUBg frkILU"
+            className="sc-cLQEGU bfOdyz"
           >
             Showing for accounts
           </span>
@@ -765,7 +765,7 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
             </div>
           </div>
           <span
-            className="sc-cMhqgX hDrCyM"
+            className="sc-gqPbQI fenzdF"
           >
             Buffer
           </span>
@@ -782,18 +782,12 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
         }
       >
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-bZQynM hDiwGY"
+          width="25%"
         >
-          <div>
+          <div
+            className="sc-gzVnrw lfdfns"
+          >
             <span
               style={
                 Object {
@@ -822,14 +816,7 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-htoDjs hWFnpg"
             >
               <div
                 style={
@@ -930,18 +917,12 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
           </div>
         </li>
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-bZQynM hDiwGY"
+          width="25%"
         >
-          <div>
+          <div
+            className="sc-gzVnrw lfdfns"
+          >
             <span
               style={
                 Object {
@@ -970,14 +951,7 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-htoDjs hWFnpg"
             >
               <div
                 style={
@@ -1079,18 +1053,12 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
           </div>
         </li>
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-bZQynM hDiwGY"
+          width="25%"
         >
-          <div>
+          <div
+            className="sc-gzVnrw lfdfns"
+          >
             <span
               style={
                 Object {
@@ -1119,14 +1087,7 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-htoDjs hWFnpg"
             >
               <div
                 style={
@@ -1228,18 +1189,12 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
           </div>
         </li>
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-bZQynM hDiwGY"
+          width="25%"
         >
-          <div>
+          <div
+            className="sc-gzVnrw lfdfns"
+          >
             <span
               style={
                 Object {
@@ -1268,14 +1223,7 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-htoDjs hWFnpg"
             >
               <div
                 style={
@@ -1377,18 +1325,12 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
           </div>
         </li>
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-bZQynM hDiwGY"
+          width="25%"
         >
-          <div>
+          <div
+            className="sc-gzVnrw lfdfns"
+          >
             <span
               style={
                 Object {
@@ -1417,14 +1359,7 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-htoDjs hWFnpg"
             >
               <div
                 style={
@@ -1526,18 +1461,12 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
           </div>
         </li>
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-bZQynM hDiwGY"
+          width="25%"
         >
-          <div>
+          <div
+            className="sc-gzVnrw lfdfns"
+          >
             <span
               style={
                 Object {
@@ -1566,14 +1495,7 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-htoDjs hWFnpg"
             >
               <div
                 style={
@@ -1675,18 +1597,12 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
           </div>
         </li>
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-bZQynM hDiwGY"
+          width="25%"
         >
-          <div>
+          <div
+            className="sc-gzVnrw lfdfns"
+          >
             <span
               style={
                 Object {
@@ -1715,14 +1631,7 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-htoDjs hWFnpg"
             >
               <div
                 style={
@@ -1824,18 +1733,12 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
           </div>
         </li>
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-bZQynM hDiwGY"
+          width="25%"
         >
-          <div>
+          <div
+            className="sc-gzVnrw lfdfns"
+          >
             <span
               style={
                 Object {
@@ -1864,14 +1767,7 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-htoDjs hWFnpg"
             >
               <div
                 style={
@@ -2097,7 +1993,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
       }
     >
       <input
-        className="sc-cLQEGU gVvcyM"
+        className="sc-GMQeP hFLrUy"
         onBlur={[Function]}
         onChange={[Function]}
         value="Weekly Sync Report"
@@ -2113,13 +2009,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         }
       >
         <span
-          className="sc-cmthru jtPgDu"
+          className="sc-bAeIUo jUGDKX"
         >
           Showing for dates
         </span>
          
         <span
-          className="sc-hMFtBS iyBJyg"
+          className="sc-iujRgT jUtcqQ"
         >
           Invalid date
            to 
@@ -2128,10 +2024,10 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
       </span>
     </span>
     <section
-      className="sc-bsbRJL edKPoo"
+      className="sc-hMFtBS eReMSp"
     >
       <div
-        className="sc-esOvli bKbMEm"
+        className="sc-bMVAic Nnqlo"
       >
         <h2
           style={
@@ -2341,10 +2237,10 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         }
       >
         <span
-          className="sc-iuJeZd olhrV"
+          className="sc-hORach RePNO"
         >
           <span
-            className="sc-hZSUBg frkILU"
+            className="sc-cLQEGU bfOdyz"
           >
             Showing for accounts
           </span>
@@ -2422,7 +2318,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </div>
           </div>
           <span
-            className="sc-cMhqgX hDrCyM"
+            className="sc-gqPbQI fenzdF"
           >
             Buffer
           </span>
@@ -2439,18 +2335,12 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         }
       >
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-bZQynM hDiwGY"
+          width="25%"
         >
-          <div>
+          <div
+            className="sc-gzVnrw lfdfns"
+          >
             <span
               style={
                 Object {
@@ -2479,14 +2369,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-htoDjs hWFnpg"
             >
               <div
                 style={
@@ -2587,18 +2470,12 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
           </div>
         </li>
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-bZQynM hDiwGY"
+          width="25%"
         >
-          <div>
+          <div
+            className="sc-gzVnrw lfdfns"
+          >
             <span
               style={
                 Object {
@@ -2627,14 +2504,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-htoDjs hWFnpg"
             >
               <div
                 style={
@@ -2736,18 +2606,12 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
           </div>
         </li>
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-bZQynM hDiwGY"
+          width="25%"
         >
-          <div>
+          <div
+            className="sc-gzVnrw lfdfns"
+          >
             <span
               style={
                 Object {
@@ -2776,14 +2640,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-htoDjs hWFnpg"
             >
               <div
                 style={
@@ -2885,18 +2742,12 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
           </div>
         </li>
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-bZQynM hDiwGY"
+          width="25%"
         >
-          <div>
+          <div
+            className="sc-gzVnrw lfdfns"
+          >
             <span
               style={
                 Object {
@@ -2925,14 +2776,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-htoDjs hWFnpg"
             >
               <div
                 style={
@@ -3034,18 +2878,12 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
           </div>
         </li>
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-bZQynM hDiwGY"
+          width="25%"
         >
-          <div>
+          <div
+            className="sc-gzVnrw lfdfns"
+          >
             <span
               style={
                 Object {
@@ -3074,14 +2912,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-htoDjs hWFnpg"
             >
               <div
                 style={
@@ -3183,18 +3014,12 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
           </div>
         </li>
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-bZQynM hDiwGY"
+          width="25%"
         >
-          <div>
+          <div
+            className="sc-gzVnrw lfdfns"
+          >
             <span
               style={
                 Object {
@@ -3223,14 +3048,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-htoDjs hWFnpg"
             >
               <div
                 style={
@@ -3332,18 +3150,12 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
           </div>
         </li>
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-bZQynM hDiwGY"
+          width="25%"
         >
-          <div>
+          <div
+            className="sc-gzVnrw lfdfns"
+          >
             <span
               style={
                 Object {
@@ -3372,14 +3184,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-htoDjs hWFnpg"
             >
               <div
                 style={
@@ -3481,18 +3286,12 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
           </div>
         </li>
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-bZQynM hDiwGY"
+          width="25%"
         >
-          <div>
+          <div
+            className="sc-gzVnrw lfdfns"
+          >
             <span
               style={
                 Object {
@@ -3521,14 +3320,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-htoDjs hWFnpg"
             >
               <div
                 style={
@@ -3651,7 +3443,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
       }
     >
       <div
-        className="sc-hORach fcOAIF"
+        className="sc-cQFLBn csZTIU"
       >
         <button
           aria-label={null}
@@ -3682,13 +3474,13 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
           }
         >
           <h1
-            className="sc-gqPbQI kklpUq"
+            className="sc-exAgwC jnixgg"
           >
             Weekly Sync Report
           </h1>
         </button>
         <div
-          className="sc-bMVAic utVwK"
+          className="sc-gojNiO hKVKqB"
         >
           <svg
             height="100%"
@@ -3726,13 +3518,13 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         }
       >
         <span
-          className="sc-cmthru jtPgDu"
+          className="sc-bAeIUo jUGDKX"
         >
           Showing for dates
         </span>
          
         <span
-          className="sc-hMFtBS iyBJyg"
+          className="sc-iujRgT jUtcqQ"
         >
           Invalid date
            to 
@@ -3741,10 +3533,10 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
       </span>
     </span>
     <section
-      className="sc-bsbRJL edKPoo"
+      className="sc-hMFtBS eReMSp"
     >
       <div
-        className="sc-esOvli bKbMEm"
+        className="sc-bMVAic Nnqlo"
       >
         <h2
           style={
@@ -3954,10 +3746,10 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         }
       >
         <span
-          className="sc-iuJeZd olhrV"
+          className="sc-hORach RePNO"
         >
           <span
-            className="sc-hZSUBg frkILU"
+            className="sc-cLQEGU bfOdyz"
           >
             Showing for accounts
           </span>
@@ -4035,7 +3827,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
             </div>
           </div>
           <span
-            className="sc-cMhqgX hDrCyM"
+            className="sc-gqPbQI fenzdF"
           >
             Buffer
           </span>
@@ -4052,18 +3844,12 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         }
       >
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-bZQynM hDiwGY"
+          width="25%"
         >
-          <div>
+          <div
+            className="sc-gzVnrw lfdfns"
+          >
             <span
               style={
                 Object {
@@ -4092,14 +3878,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-htoDjs hWFnpg"
             >
               <div
                 style={
@@ -4200,18 +3979,12 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
           </div>
         </li>
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-bZQynM hDiwGY"
+          width="25%"
         >
-          <div>
+          <div
+            className="sc-gzVnrw lfdfns"
+          >
             <span
               style={
                 Object {
@@ -4240,14 +4013,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-htoDjs hWFnpg"
             >
               <div
                 style={
@@ -4349,18 +4115,12 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
           </div>
         </li>
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-bZQynM hDiwGY"
+          width="25%"
         >
-          <div>
+          <div
+            className="sc-gzVnrw lfdfns"
+          >
             <span
               style={
                 Object {
@@ -4389,14 +4149,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-htoDjs hWFnpg"
             >
               <div
                 style={
@@ -4498,18 +4251,12 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
           </div>
         </li>
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-bZQynM hDiwGY"
+          width="25%"
         >
-          <div>
+          <div
+            className="sc-gzVnrw lfdfns"
+          >
             <span
               style={
                 Object {
@@ -4538,14 +4285,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-htoDjs hWFnpg"
             >
               <div
                 style={
@@ -4647,18 +4387,12 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
           </div>
         </li>
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-bZQynM hDiwGY"
+          width="25%"
         >
-          <div>
+          <div
+            className="sc-gzVnrw lfdfns"
+          >
             <span
               style={
                 Object {
@@ -4687,14 +4421,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-htoDjs hWFnpg"
             >
               <div
                 style={
@@ -4796,18 +4523,12 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
           </div>
         </li>
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-bZQynM hDiwGY"
+          width="25%"
         >
-          <div>
+          <div
+            className="sc-gzVnrw lfdfns"
+          >
             <span
               style={
                 Object {
@@ -4836,14 +4557,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-htoDjs hWFnpg"
             >
               <div
                 style={
@@ -4945,18 +4659,12 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
           </div>
         </li>
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-bZQynM hDiwGY"
+          width="25%"
         >
-          <div>
+          <div
+            className="sc-gzVnrw lfdfns"
+          >
             <span
               style={
                 Object {
@@ -4985,14 +4693,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-htoDjs hWFnpg"
             >
               <div
                 style={
@@ -5094,18 +4795,12 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
           </div>
         </li>
         <li
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "flex",
-              "flexGrow": 1,
-              "listStyle": "none",
-              "paddingBottom": "15px",
-              "width": "25%",
-            }
-          }
+          className="sc-bZQynM hDiwGY"
+          width="25%"
         >
-          <div>
+          <div
+            className="sc-gzVnrw lfdfns"
+          >
             <span
               style={
                 Object {
@@ -5134,14 +4829,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               </span>
             </span>
             <div
-              style={
-                Object {
-                  "alignItems": "center",
-                  "display": "flex",
-                  "flex": 1,
-                  "flexDirection": "row",
-                }
-              }
+              className="sc-htoDjs hWFnpg"
             >
               <div
                 style={

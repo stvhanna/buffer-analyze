@@ -1795,13 +1795,13 @@ exports[`Snapshots DropdownItem should selected 1`] = `
 exports[`Snapshots EmptyState render with a custom header and description 1`] = `
 <span>
   <div
-    className="sc-gqjmRU civxtt"
+    className="sc-jzJRlG iEhipk"
   >
     <div
-      className="sc-VigVT fxxSpU"
+      className="sc-cSHVUG bgfksQ"
     />
     <h1
-      className="sc-jTzLTM eZCbiY"
+      className="sc-kAzzGY cRoJlC"
     >
       <span
         style={
@@ -1817,7 +1817,7 @@ exports[`Snapshots EmptyState render with a custom header and description 1`] = 
       </span>
     </h1>
     <h2
-      className="sc-fjdhpX jKfQFw"
+      className="sc-chPdSV loMFrn"
     >
       <span
         style={
@@ -1839,13 +1839,13 @@ exports[`Snapshots EmptyState render with a custom header and description 1`] = 
 exports[`Snapshots EmptyState render with a custom header but no description 1`] = `
 <span>
   <div
-    className="sc-gqjmRU civxtt"
+    className="sc-jzJRlG iEhipk"
   >
     <div
-      className="sc-VigVT fxxSpU"
+      className="sc-cSHVUG bgfksQ"
     />
     <h1
-      className="sc-jTzLTM eZCbiY"
+      className="sc-kAzzGY cRoJlC"
     >
       <span
         style={
@@ -1867,13 +1867,13 @@ exports[`Snapshots EmptyState render with a custom header but no description 1`]
 exports[`Snapshots EmptyState render with default text 1`] = `
 <span>
   <div
-    className="sc-gqjmRU civxtt"
+    className="sc-jzJRlG iEhipk"
   >
     <div
-      className="sc-VigVT fxxSpU"
+      className="sc-cSHVUG bgfksQ"
     />
     <h1
-      className="sc-jTzLTM eZCbiY"
+      className="sc-kAzzGY cRoJlC"
     >
       <span
         style={
@@ -1894,30 +1894,24 @@ exports[`Snapshots EmptyState render with default text 1`] = `
 
 exports[`Snapshots GridItem Should render the chart tolltip 1`] = `
 <span>
-  <span
-    style={
-      Object {
-        "marginLeft": "7px",
-      }
-    }
-  >
+  <span>
     <span
       style={
         Object {
-          "color": "#59626a",
+          "color": "#fff",
           "fontFamily": "\\"Roboto\\", sans-serif",
           "fontSize": "0.75rem",
           "fontWeight": 400,
         }
       }
     >
-      31 August
+      1 February
       ,
     </span>
     <span
       style={
         Object {
-          "color": "#000",
+          "color": "#fff",
           "fontFamily": "\\"Roboto\\", sans-serif",
           "fontSize": "0.75rem",
           "fontWeight": 700,
@@ -1932,7 +1926,7 @@ exports[`Snapshots GridItem Should render the chart tolltip 1`] = `
     <span
       style={
         Object {
-          "color": "#59626a",
+          "color": "#fff",
           "fontFamily": "\\"Roboto\\", sans-serif",
           "fontSize": "0.75rem",
           "fontWeight": 400,
@@ -1962,18 +1956,12 @@ exports[`Snapshots GridItem should not render the chart if we have only one day 
     }
   >
     <li
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "display": "flex",
-          "flexGrow": 1,
-          "listStyle": "none",
-          "paddingBottom": "15px",
-          "width": "25%",
-        }
-      }
+      className="sc-kgoBCf bpIWKc"
+      width="25%"
     >
-      <div>
+      <div
+        className="sc-kGXeez hdOaOS"
+      >
         <span
           style={
             Object {
@@ -2002,14 +1990,7 @@ exports[`Snapshots GridItem should not render the chart if we have only one day 
           </span>
         </span>
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "display": "flex",
-              "flex": 1,
-              "flexDirection": "row",
-            }
-          }
+          className="sc-kpOJdX gsSdt"
         >
           <div
             style={
@@ -2113,7 +2094,7 @@ exports[`Snapshots GridItem should not render the chart if we have only one day 
 </span>
 `;
 
-exports[`Snapshots GridItem should render a grid item with a Chart if dailyData is provided 1`] = `
+exports[`Snapshots GridItem should render a grid item with a 7 day chart if 7 days worth of dailyData is provided 1`] = `
 <span>
   <ul
     style={
@@ -2129,18 +2110,15 @@ exports[`Snapshots GridItem should render a grid item with a Chart if dailyData 
     }
   >
     <li
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "display": "flex",
-          "flexGrow": 1,
-          "listStyle": "none",
-          "paddingBottom": "15px",
-          "width": "25%",
-        }
-      }
+      className="sc-kgoBCf bpIWKc"
+      width="25%"
     >
-      <div>
+      <div
+        className="sc-kGXeez hdOaOS"
+      >
+        <div
+          className="sc-dxgOiQ fQsFbd"
+        />
         <span
           style={
             Object {
@@ -2169,14 +2147,7 @@ exports[`Snapshots GridItem should render a grid item with a Chart if dailyData 
           </span>
         </span>
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "display": "flex",
-              "flex": 1,
-              "flexDirection": "row",
-            }
-          }
+          className="sc-kpOJdX gsSdt"
         >
           <div
             style={
@@ -2267,6 +2238,321 @@ exports[`Snapshots GridItem should render a grid item with a Chart if dailyData 
                 >
                   <span>
                     60
+                  </span>
+                  %
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</span>
+`;
+
+exports[`Snapshots GridItem should render a grid item with a 30 day chart if 30 days worth of dailyData is provided 1`] = `
+<span>
+  <ul
+    style={
+      Object {
+        "borderLeft": "solid 1px #ced7df",
+        "borderRadius": "2px",
+        "borderTop": "solid 1px #ced7df",
+        "display": "flex",
+        "flexWrap": "wrap",
+        "margin": "0 auto",
+        "padding": "0",
+      }
+    }
+  >
+    <li
+      className="sc-kgoBCf bpIWKc"
+      width="25%"
+    >
+      <div
+        className="sc-kGXeez hdOaOS"
+      >
+        <div
+          className="sc-dxgOiQ fQsFbd"
+        />
+        <span
+          style={
+            Object {
+              "display": "block",
+              "fontSize": "0.75rem",
+              "fontWeight": 600,
+              "marginTop": "15px",
+            }
+          }
+        >
+          <span
+            data-tip={null}
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "0.75rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Engagement average
+            </span>
+          </span>
+        </span>
+        <div
+          className="sc-kpOJdX gsSdt"
+        >
+          <div
+            style={
+              Object {
+                "display": "inline-block",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#323b43",
+                  "fontSize": "2rem",
+                  "fontWeight": 600,
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#323b43",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "2rem",
+                    "fontWeight": 700,
+                  }
+                }
+              >
+                <span>
+                  502
+                </span>
+              </span>
+            </span>
+          </div>
+          <div>
+            <span
+              style={
+                Object {
+                  "display": "inline-block",
+                  "height": "1rem",
+                  "marginLeft": "10px",
+                }
+              }
+            >
+              <svg
+                height="100%"
+                style={
+                  Object {
+                    "fill": "#ff1e1e",
+                    "height": "1rem",
+                    "width": "1rem",
+                  }
+                }
+                version="1.1"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              >
+                <g
+                  className="torchRed"
+                >
+                  <path
+                    d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                    transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
+                  />
+                </g>
+              </svg>
+            </span>
+            <div
+              style={
+                Object {
+                  "color": "#FF1E1E",
+                  "display": "inline-block",
+                  "fontSize": "18px",
+                  "fontWeight": 600,
+                  "marginLeft": "5px",
+                }
+              }
+            >
+              <span>
+                <span
+                  style={
+                    Object {
+                      "color": "torchRed",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.25rem",
+                    }
+                  }
+                >
+                  <span>
+                    40
+                  </span>
+                  %
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</span>
+`;
+
+exports[`Snapshots GridItem should render a grid item with a 90 day chart if 90 days worth of dailyData is provided 1`] = `
+<span>
+  <ul
+    style={
+      Object {
+        "borderLeft": "solid 1px #ced7df",
+        "borderRadius": "2px",
+        "borderTop": "solid 1px #ced7df",
+        "display": "flex",
+        "flexWrap": "wrap",
+        "margin": "0 auto",
+        "padding": "0",
+      }
+    }
+  >
+    <li
+      className="sc-kgoBCf bpIWKc"
+      width="25%"
+    >
+      <div
+        className="sc-kGXeez hdOaOS"
+      >
+        <div
+          className="sc-dxgOiQ fQsFbd"
+        />
+        <span
+          style={
+            Object {
+              "display": "block",
+              "fontSize": "0.75rem",
+              "fontWeight": 600,
+              "marginTop": "15px",
+            }
+          }
+        >
+          <span
+            data-tip={null}
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "0.75rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Engagement average
+            </span>
+          </span>
+        </span>
+        <div
+          className="sc-kpOJdX gsSdt"
+        >
+          <div
+            style={
+              Object {
+                "display": "inline-block",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#323b43",
+                  "fontSize": "2rem",
+                  "fontWeight": 600,
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#323b43",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "2rem",
+                    "fontWeight": 700,
+                  }
+                }
+              >
+                <span>
+                  948
+                </span>
+              </span>
+            </span>
+          </div>
+          <div>
+            <span
+              style={
+                Object {
+                  "display": "inline-block",
+                  "height": "1rem",
+                  "marginLeft": "10px",
+                }
+              }
+            >
+              <svg
+                height="100%"
+                style={
+                  Object {
+                    "fill": "#2fd566",
+                    "height": "1rem",
+                    "width": "1rem",
+                  }
+                }
+                version="1.1"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              >
+                <g
+                  className="shamrock"
+                >
+                  <path
+                    d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                  />
+                </g>
+              </svg>
+            </span>
+            <div
+              style={
+                Object {
+                  "color": "#2FD566",
+                  "display": "inline-block",
+                  "fontSize": "18px",
+                  "fontWeight": 600,
+                  "marginLeft": "5px",
+                }
+              }
+            >
+              <span>
+                <span
+                  style={
+                    Object {
+                      "color": "shamrock",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.25rem",
+                    }
+                  }
+                >
+                  <span>
+                    12
                   </span>
                   %
                 </span>
@@ -2296,18 +2582,12 @@ exports[`Snapshots GridItem should render a grid item with a custom Label 1`] = 
     }
   >
     <li
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "display": "flex",
-          "flexGrow": 1,
-          "listStyle": "none",
-          "paddingBottom": "15px",
-          "width": "25%",
-        }
-      }
+      className="sc-kgoBCf bpIWKc"
+      width="25%"
     >
-      <div>
+      <div
+        className="sc-kGXeez hdOaOS"
+      >
         <span
           style={
             Object {
@@ -2338,14 +2618,7 @@ exports[`Snapshots GridItem should render a grid item with a custom Label 1`] = 
           </span>
         </span>
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "display": "flex",
-              "flex": 1,
-              "flexDirection": "row",
-            }
-          }
+          className="sc-kpOJdX gsSdt"
         >
           <div
             style={
@@ -2452,17 +2725,11 @@ exports[`Snapshots GridItem should render a grid item with a custom Label 1`] = 
 
 exports[`Snapshots GridItem should render a no data tolltip 1`] = `
 <span>
-  <span
-    style={
-      Object {
-        "marginLeft": "7px",
-      }
-    }
-  >
+  <span>
     <span
       style={
         Object {
-          "color": "#59626a",
+          "color": "#fff",
           "fontFamily": "\\"Roboto\\", sans-serif",
           "fontSize": "0.75rem",
           "fontWeight": 400,
@@ -2470,7 +2737,7 @@ exports[`Snapshots GridItem should render a no data tolltip 1`] = `
       }
     >
       No data for 
-      31 August
+      1 February
     </span>
   </span>
 </span>
@@ -2492,18 +2759,12 @@ exports[`Snapshots GridItem should render a summary grid item with a neutral dif
     }
   >
     <li
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "display": "flex",
-          "flexGrow": 1,
-          "listStyle": "none",
-          "paddingBottom": "15px",
-          "width": "25%",
-        }
-      }
+      className="sc-kgoBCf bpIWKc"
+      width="25%"
     >
-      <div>
+      <div
+        className="sc-kGXeez hdOaOS"
+      >
         <span
           style={
             Object {
@@ -2532,14 +2793,7 @@ exports[`Snapshots GridItem should render a summary grid item with a neutral dif
           </span>
         </span>
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "display": "flex",
-              "flex": 1,
-              "flexDirection": "row",
-            }
-          }
+          className="sc-kpOJdX gsSdt"
         >
           <div
             style={
@@ -2660,18 +2914,12 @@ exports[`Snapshots GridItem should render a summary grid item with negative diff
     }
   >
     <li
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "display": "flex",
-          "flexGrow": 1,
-          "listStyle": "none",
-          "paddingBottom": "15px",
-          "width": "25%",
-        }
-      }
+      className="sc-kgoBCf bpIWKc"
+      width="25%"
     >
-      <div>
+      <div
+        className="sc-kGXeez hdOaOS"
+      >
         <span
           style={
             Object {
@@ -2700,14 +2948,7 @@ exports[`Snapshots GridItem should render a summary grid item with negative diff
           </span>
         </span>
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "display": "flex",
-              "flex": 1,
-              "flexDirection": "row",
-            }
-          }
+          className="sc-kpOJdX gsSdt"
         >
           <div
             style={
@@ -2828,18 +3069,12 @@ exports[`Snapshots GridItem should render a summary grid item with no diff 1`] =
     }
   >
     <li
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "display": "flex",
-          "flexGrow": 1,
-          "listStyle": "none",
-          "paddingBottom": "15px",
-          "width": "25%",
-        }
-      }
+      className="sc-kgoBCf bpIWKc"
+      width="25%"
     >
-      <div>
+      <div
+        className="sc-kGXeez hdOaOS"
+      >
         <span
           style={
             Object {
@@ -2868,14 +3103,7 @@ exports[`Snapshots GridItem should render a summary grid item with no diff 1`] =
           </span>
         </span>
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "display": "flex",
-              "flex": 1,
-              "flexDirection": "row",
-            }
-          }
+          className="sc-kpOJdX gsSdt"
         >
           <div
             style={
@@ -2932,18 +3160,12 @@ exports[`Snapshots GridItem should render a summary grid item with positive diff
     }
   >
     <li
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "display": "flex",
-          "flexGrow": 1,
-          "listStyle": "none",
-          "paddingBottom": "15px",
-          "width": "25%",
-        }
-      }
+      className="sc-kgoBCf bpIWKc"
+      width="25%"
     >
-      <div>
+      <div
+        className="sc-kGXeez hdOaOS"
+      >
         <span
           style={
             Object {
@@ -2972,14 +3194,7 @@ exports[`Snapshots GridItem should render a summary grid item with positive diff
           </span>
         </span>
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "display": "flex",
-              "flex": 1,
-              "flexDirection": "row",
-            }
-          }
+          className="sc-kpOJdX gsSdt"
         >
           <div
             style={
@@ -4449,10 +4664,10 @@ exports[`Snapshots ProfileIcon should render 1`] = `
     }
   >
     <span
-      className="sc-cSHVUG hDUXUW"
+      className="sc-jKJlTe fbhgEC"
     >
       <span
-        className="sc-jzJRlG iFhvqW"
+        className="sc-ckVGcZ flkuUW"
       >
         <img
           alt=""

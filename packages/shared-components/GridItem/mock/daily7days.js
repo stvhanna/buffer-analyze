@@ -1,141 +1,141 @@
 export default [
   {
-    day: '1504137600000',
+    day: '1517443200000',
     metrics: [
       {
-        diff: 179,
+        diff: -26,
         label: 'Engagement average',
-        value: 1374,
+        value: 230,
       },
       {
-        diff: 43,
+        diff: -25,
         label: 'Impression average',
-        value: 91133,
+        value: 35620,
       },
       {
-        diff: 4,
+        diff: -17,
         label: 'Click average',
-        value: 2679,
+        value: 290,
       },
     ],
   },
   {
-    day: '1504224000000',
+    day: '1517529600000',
     metrics: [
       {
-        diff: -36,
+        diff: -21,
         label: 'Engagement average',
-        value: 803,
+        value: 161,
       },
       {
-        diff: -7,
+        diff: -16,
         label: 'Impression average',
-        value: 85118,
+        value: 28260,
       },
       {
-        diff: -69,
+        diff: 8,
         label: 'Click average',
-        value: 2582,
+        value: 308,
       },
     ],
   },
   {
-    day: '1504310400000',
+    day: '1517616000000',
     metrics: [
       {
-        diff: -86,
+        diff: -52,
         label: 'Engagement average',
-        value: 414,
+        value: 157,
       },
       {
-        diff: -42,
+        diff: -52,
         label: 'Impression average',
-        value: 75936,
+        value: 28314,
       },
       {
-        diff: -74,
+        diff: 10,
         label: 'Click average',
-        value: 1846,
+        value: 324,
       },
     ],
   },
   {
-    day: '1504396800000',
-    metrics: [
-      {
-        diff: -59,
-        label: 'Engagement average',
-        value: 340,
-      },
-      {
-        diff: -18,
-        label: 'Impression average',
-        value: 86410,
-      },
-      {
-        diff: -48,
-        label: 'Click average',
-        value: 2755,
-      },
-    ],
-  },
-  {
-    day: '1504483200000',
-    metrics: [
-      {
-        diff: -48,
-        label: 'Engagement average',
-        value: 439,
-      },
-      {
-        diff: -12,
-        label: 'Impression average',
-        value: 87669,
-      },
-      {
-        diff: -30,
-        label: 'Click average',
-        value: 3041,
-      },
-    ],
-  },
-  {
-    day: '1504569600000',
-    metrics: [
-      {
-        diff: -89,
-        label: 'Engagement average',
-        value: 299,
-      },
-      {
-        diff: -22,
-        label: 'Impression average',
-        value: 74969,
-      },
-      {
-        diff: -5,
-        label: 'Click average',
-        value: 2516,
-      },
-    ],
-  },
-  {
-    day: '1504656000000',
+    day: '1517702400000',
     metrics: [
       {
         diff: -41,
         label: 'Engagement average',
-        value: 1824,
+        value: 167,
       },
       {
-        diff: 51,
+        diff: -47,
         label: 'Impression average',
-        value: 118827,
+        value: 28595,
       },
       {
-        diff: 49,
+        diff: 2,
         label: 'Click average',
-        value: 3933,
+        value: 350,
+      },
+    ],
+  },
+  {
+    day: '1517788800000',
+    metrics: [
+      {
+        diff: -61,
+        label: 'Engagement average',
+        value: 138,
+      },
+      {
+        diff: -46,
+        label: 'Impression average',
+        value: 25506,
+      },
+      {
+        diff: 33,
+        label: 'Click average',
+        value: 380,
+      },
+    ],
+  },
+  {
+    day: '1517875200000',
+    metrics: [
+      {
+        diff: -1,
+        label: 'Engagement average',
+        value: 154,
+      },
+      {
+        diff: -8,
+        label: 'Impression average',
+        value: 23968,
+      },
+      {
+        diff: 17,
+        label: 'Click average',
+        value: 309,
+      },
+    ],
+  },
+  {
+    day: '1517961600000',
+    metrics: [
+      {
+        diff: -57,
+        label: 'Engagement average',
+        value: 133,
+      },
+      {
+        diff: -53,
+        label: 'Impression average',
+        value: 23567,
+      },
+      {
+        diff: -13,
+        label: 'Click average',
+        value: 344,
       },
     ],
   },
