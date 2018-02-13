@@ -1,6 +1,5 @@
 import { actionTypes as dateActionTypes } from '@bufferapp/analyze-date-picker';
 import { actions } from '@bufferapp/async-data-fetch';
-import { actionTypes as listActionTypes } from '@bufferapp/report-list';
 import { LOCATION_CHANGE } from 'react-router-redux';
 import { actionTypes } from './reducer';
 import middleware, { DIRECTION_UP, DIRECTION_DOWN } from './middleware';
@@ -102,22 +101,6 @@ describe('middleware', () => {
       middleware(store)(next)(action);
       expect(store.dispatch).not.toHaveBeenCalled();
     });
-  });
-
-  it('VIEW_REPORT dispatches a new data fetch', () => {
-    const action = {
-      type: listActionTypes.VIEW_REPORT,
-      id: 'report_id_2',
-    };
-    middleware(store)(next)(action);
-    expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
-      name: 'get_report',
-      args: {
-        _id: 'report_id_2',
-        startDate: state.date.startDate,
-        endDate: state.date.endDate,
-      },
-    }));
   });
 
   it('SAVE_CHANGES dispatches a update report request', () => {
