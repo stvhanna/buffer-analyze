@@ -19,19 +19,17 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
   let formatter;
   switch (action.type) {
     case dateActionTypes.SET_DATE_RANGE:
-      if (!isExportRoute(state.router.location.pathname)) {
-        store.dispatch(actions.fetch({
-          name: 'get_report',
-          args: {
-            _id: getReportId(state.router.location.pathname),
-            startDate: action.startDate,
-            endDate: action.endDate,
-          },
-        }));
-      }
+      store.dispatch(actions.fetch({
+        name: 'get_report',
+        args: {
+          _id: getReportId(state.router.location.pathname),
+          startDate: action.startDate,
+          endDate: action.endDate,
+        },
+      }));
       break;
     case LOCATION_CHANGE:
-      if (isReportDetailRoute(action.payload.pathname)) {
+      if (isReportDetailRoute(action.payload.pathname) && !isExportRoute(action.payload.pathname)) {
         store.dispatch(actions.fetch({
           name: 'get_report',
           args: {
