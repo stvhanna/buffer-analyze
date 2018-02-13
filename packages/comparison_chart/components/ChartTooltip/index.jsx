@@ -24,6 +24,19 @@ function transformLabelForTooltip(label) {
   return `${label.toLowerCase()}`;
 }
 
+function postsWording(profileService) {
+  let wording = '';
+  switch (profileService) {
+    case 'twitter':
+      wording = 'tweet';
+      break;
+    default:
+      wording = 'post';
+      break;
+  }
+  return wording;
+}
+
 const MetricEntry = ({
   metric,
 }) => (
@@ -56,6 +69,36 @@ MetricEntry.propTypes = {
   }).isRequired,
 };
 
+const NoDataEntry = ({
+  metric,
+}) => (
+  <span
+    style={{
+      whiteSpace: 'nowrap',
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+      display: 'inline-box',
+    }}
+  >
+    <br />
+    <Text color="white" size="small" weight="bold" >
+      <MetricIcon metric={{ color: metric.color }} />
+    </Text>
+    <Text color="white" size="small" > no {postsWording(metric.profileService)} published for</Text>
+    <Text color="white" size="small" weight="bold" > {metric.username} </Text>
+  </span>
+);
+
+NoDataEntry.propTypes = {
+  metric: PropTypes.shape({
+    color: PropTypes.string,
+    label: PropTypes.string,
+    profileService: PropTypes.string,
+    username: PropTypes.string,
+    value: PropTypes.number,
+  }).isRequired,
+};
+
 const Header = ({
   day,
 }) => (
@@ -77,7 +120,10 @@ const ComparisonChartTooltip = ({
   <Wrapper>
     <Header day={day} />
     <span>
-      {metrics.map(m => <MetricEntry key={m.username} metric={m} />)}
+      {metrics.map(m => m.value === null ?
+        (<NoDataEntry key={m.username} metric={m} />) :
+        (<MetricEntry key={m.username} metric={m} />)
+      )}
     </span>
   </Wrapper>
 );
@@ -87,6 +133,7 @@ ComparisonChartTooltip.propTypes = {
   metrics: PropTypes.arrayOf(PropTypes.shape({
     color: PropTypes.string,
     label: PropTypes.string,
+    profileService: PropTypes.string,
     username: PropTypes.string,
     value: PropTypes.number,
   })).isRequired,

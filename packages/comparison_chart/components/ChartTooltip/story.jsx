@@ -8,11 +8,11 @@ const dayTimestamp = moment.utc(1505174400000).startOf('day').valueOf();
 
 storiesOf('ComparisonChartTooltip')
   .addDecorator(checkA11y)
-  .add('should render the tooltip', () => (
+  .add('[TESTED] should render the tooltip', () => (
     <div
       style={{
         backgroundColor: '#343E46',
-        width: '185px',
+        width: '240px',
       }}
     >
       <ComparisonChartTooltip
@@ -22,13 +22,22 @@ storiesOf('ComparisonChartTooltip')
             color: '#fda3f3',
             label: 'clicks',
             username: 'foo',
+            profileService: 'instagram',
             value: 42,
           },
           {
             color: '#fda3f3',
             label: 'clicks',
+            username: 'Buffer',
+            value: null,
+            profileService: 'facebook',
+          },
+          {
+            color: '#fda3f3',
+            label: 'clicks',
             username: 'Buffer very long name',
-            value: 42,
+            value: null,
+            profileService: 'twitter',
           },
         ]}
       />
