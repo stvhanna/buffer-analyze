@@ -68,7 +68,7 @@ function prepareSeries(
 
     return {
       x: dayStartTimestamp,
-      y: value,
+      y: value || 0,
       metricData: Object.assign({}, day.metric, {
         profileService,
         timezone,

@@ -25,8 +25,25 @@ export const response = {
         },
       },
     },
+    profile134B: {
+      audience: {
+        profileTotals: {
+          currentPeriodDiff: 0,
+          currentPeriodTotal: 0,
+          profileId: 'profile134B',
+          service: 'facebook',
+          username: 'Buffer',
+        },
+        profilesMetricData: {
+          dailyData: [],
+          service: 'facebook',
+          timezone: 'America/New_York',
+        },
+      },
+    },
   },
 };
+
 
 function getParsedResponse(label) {
   return {
@@ -39,6 +56,17 @@ function getParsedResponse(label) {
           label,
         },
         profileId: 'profile1234',
+        username: 'Buffer',
+        service: 'facebook',
+      },
+      {
+        currentPeriodDiff: 0,
+        currentPeriodTotal: 0,
+        metric: {
+          color: '#168EEA',
+          label,
+        },
+        profileId: 'profile134B',
         username: 'Buffer',
         service: 'facebook',
       },
@@ -65,6 +93,27 @@ function getParsedResponse(label) {
           },
         ],
         profileId: 'profile1234',
+      },
+      {
+        dailyData: [
+          {
+            day: 1504137600000,
+            metric: {
+              color: '#168EEA',
+              value: null,
+              label,
+            },
+          },
+          {
+            day: 1504224000000,
+            metric: {
+              color: '#168EEA',
+              value: null,
+              label,
+            },
+          },
+        ],
+        profileId: 'profile134B',
       },
     ],
   };
