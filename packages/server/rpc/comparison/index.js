@@ -4,6 +4,14 @@ const rp = require('request-promise');
 const moment = require('moment');
 const DateRange = require('../utils/DateRange');
 
+const METRIC_KEYS = [
+  'audience',
+  'reach',
+  'likes',
+  'engagement',
+  'comments',
+];
+
 const PROFILE_COLORS = [
   '#53CBB0',
   '#168EEA',
@@ -70,9 +78,9 @@ const METRIC_CONFIGS_BY_KEY = {
   },
 };
 
-const formatDailyData = (day, value, profileService, metricKey, index) => {
+const formatDailyData = (day, value, profileService, metricKey, profileIndex) => {
   const label = METRIC_CONFIGS_BY_KEY[metricKey][profileService].label;
-  const color = PROFILE_COLORS[index];
+  const color = PROFILE_COLORS[profileIndex];
   return {
     day,
     metric: {
@@ -83,37 +91,52 @@ const formatDailyData = (day, value, profileService, metricKey, index) => {
   };
 };
 
-function formatData(result, metricKey) {
-  const profileIds = Object.keys(result);
+function getDaysFromProfilesMetricData(profileIds, rawData, metricKey) {
+  const validDailyData = profileIds
+    .map(profileId => rawData[profileId][metricKey].profilesMetricData.dailyData)
+    .filter(dailyData => dailyData.length > 0);
+  return validDailyData[0].map(dayData => dayData.day);
+}
+
+function getDailyData(days, data, metricKey, profileIndex) {
+  return days.map((day, index) =>
+    formatDailyData(
+      day,
+      data.dailyData[index] ? data.dailyData[index].value : null,
+      data.service,
+      metricKey,
+      profileIndex,
+    ),
+  );
+}
+
+function formatData(rawData, metricKey) {
+  const profileIds = Object.keys(rawData);
+
   const profilesMetricData = Array.from(profileIds, (id) => {
-    const data = result[id];
-    return Object.assign({ profileId: id }, data.profilesMetricData);
-  });
+    const data = rawData[id];
+    if (data[metricKey] === undefined) return null;
+    return Object.assign({ profileId: id }, data[metricKey].profilesMetricData);
+  }).filter(e => e !== null);
 
   const profileTotals = Array.from(profileIds, (id) => {
-    const data = result[id];
-    return data.profileTotals;
-  });
+    const data = rawData[id];
+    if (data[metricKey] === undefined) return null;
+    return data[metricKey].profileTotals;
+  }).filter(e => e !== null);
 
-  const formattedProfilesMetricData = Array.from(profilesMetricData, (data, index) => {
-    const timezone = data.timezone;
-    return {
-      dailyData: data.dailyData.map(d =>
-        formatDailyData(
-          d.day,
-          d.value,
-          data.service,
-          metricKey,
-          index,
-        ),
-      ),
-      profileId: data.profileId,
-    };
-  });
+  if (profilesMetricData.length === 0) return null;
 
-  const formattedProfileTotals = Array.from(profileTotals, (data, index) => {
+  const days = getDaysFromProfilesMetricData(profileIds, rawData, metricKey);
+
+  const formattedProfilesMetricData = Array.from(profilesMetricData, (data, profileIndex) => ({
+    profileId: data.profileId,
+    dailyData: getDailyData(days, data, metricKey, profileIndex),
+  }));
+
+  const formattedProfileTotals = Array.from(profileTotals, (data, profileIndex) => {
     const label = METRIC_CONFIGS_BY_KEY[metricKey][data.service].label;
-    const color = PROFILE_COLORS[index];
+    const color = PROFILE_COLORS[profileIndex];
     return {
       metric: {
         label,
@@ -133,10 +156,22 @@ function formatData(result, metricKey) {
   };
 }
 
+function parseResponse(response) {
+  const metricsData = METRIC_KEYS.map(metric => formatData(response, metric));
+  const metrics = {};
+  METRIC_KEYS.forEach((metricKey, index) => {
+    const data = metricsData[index];
+    if (data !== null) metrics[metricKey] = data;
+  });
+  return {
+    metrics,
+  };
+}
+
 module.exports = method(
   'comparison',
   'get daily comparison data for the given profiles',
-  ({ profileIds, startDate, endDate, metric }) => {
+  ({ profileIds, startDate, endDate }) => {
     const start = moment.unix(startDate).format('MM/DD/YYYY');
     const end = moment.unix(endDate).format('MM/DD/YYYY');
     const dateRange = new DateRange(start, end);
@@ -148,14 +183,10 @@ module.exports = method(
         profiles: profileIds,
         start_date: dateRange.start,
         end_date: dateRange.end,
-        metric,
+        metrics: METRIC_KEYS,
       },
       json: true,
-    }).then(({ response }) => (
-      formatData(response, metric)
-    )).catch(() => ({
-      profilesMetricData: [],
-      profileTotals: [],
-    }));
-  },
-);
+    })
+      .then(({ response }) => parseResponse(response))
+      .catch(() => {});
+  });

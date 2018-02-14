@@ -2,9 +2,37 @@
 # yarn lockfile v1
 
 
-"@bufferapp/app-sidebar@1.3.1":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@bufferapp/app-sidebar/-/app-sidebar-1.3.1.tgz#49c05cbd5c8a5bcc8dd4d934e0b2ca6e9896e4b0"
+"@bufferapp/analyze-date-picker@^0.43.13":
+  version "0.43.13"
+  resolved "https://registry.yarnpkg.com/@bufferapp/analyze-date-picker/-/analyze-date-picker-0.43.13.tgz#652967e168e509e1b8ba724bff14890f4b6ed5c8"
+  dependencies:
+    "@bufferapp/analyze-profile-selector" "^0.43.13"
+    "@bufferapp/async-data-fetch" "0.5.36-beta01"
+    "@bufferapp/components" "2.1.1"
+    moment "^2.18.1"
+    react-tooltip "^3.3.0"
+    styled-components "^2.2.1"
+
+"@bufferapp/analyze-profile-selector@^0.43.13":
+  version "0.43.13"
+  resolved "https://registry.yarnpkg.com/@bufferapp/analyze-profile-selector/-/analyze-profile-selector-0.43.13.tgz#7fa55a12b020808126a3f10ef87471465adb7785"
+  dependencies:
+    "@bufferapp/analyze-shared-components" "^0.43.13"
+    "@bufferapp/components" "2.1.1"
+    react-simple-dropdown "3.0.0"
+
+"@bufferapp/analyze-shared-components@^0.43.13":
+  version "0.43.13"
+  resolved "https://registry.yarnpkg.com/@bufferapp/analyze-shared-components/-/analyze-shared-components-0.43.13.tgz#eea61a02c5faa5998712d456e1c437f75edbf803"
+  dependencies:
+    "@bufferapp/components" "2.1.1"
+    moment "^2.18.1"
+    react-highcharts "^12.0.0"
+    styled-components "^2.2.1"
+
+"@bufferapp/app-sidebar@1.3.2":
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/@bufferapp/app-sidebar/-/app-sidebar-1.3.2.tgz#982871683b0f56d670e85e45d80eba09ba8d2fb2"
   dependencies:
     "@bufferapp/async-data-fetch" "1.2.7"
     "@bufferapp/components" "1.1.0-beta.6"

@@ -2,7 +2,6 @@ import { actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-
 import keyWrapper from '@bufferapp/keywrapper';
 
 export const actionTypes = keyWrapper('REPORT', {
-  VIEW_REPORT: 'VIEW_REPORT',
   REMOVE_REPORT: 'REMOVE_REPORT',
 });
 
@@ -42,10 +41,6 @@ export default (state = initialState, action) => {
 };
 
 export const actions = {
-  viewReport: id => ({
-    type: actionTypes.VIEW_REPORT,
-    id,
-  }),
   removeReport: id => ({
     type: actionTypes.REMOVE_REPORT,
     id,

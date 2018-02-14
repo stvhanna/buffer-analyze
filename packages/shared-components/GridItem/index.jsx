@@ -1,26 +1,48 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 import Diff from './components/Diff';
 import Label from './components/Label';
 import Value from './components/Value';
 import GridItemChart from './components/GridItemChart';
 
-const baseMargin = 10;
-const borderColor = '#CED7DF';
-const gridSummaryItem = {
-  display: 'flex',
-  listStyle: 'none',
-  boxSizing: 'border-box',
-  paddingBottom: `${1.5 * baseMargin}px`,
-  flexGrow: 1,
-};
-const gridSummaryItemValueWrapper = {
-  display: 'flex',
-  flexDirection: 'row',
-  flex: 1,
-  alignItems: 'center',
-};
+const Item = styled.li`
+  display: flex;
+  list-style: none;
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: ${props => props.width};
+  justify-content: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+  &:first-child > div {
+    padding-left: 0;
+    padding-right: 1rem;
+  }
+
+  &:last-child > div {
+    padding-left: 1rem;
+    padding-right: 0;
+  }
+`;
+
+const Container = styled.div`
+  width: 100%;
+`;
+
+const ValueWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-items: center;
+`;
+
+const GridItemChartContainer = styled.div`
+  border: 1px solid #ECEEEF;
+  border-width: 0 0 1px;
+`;
 
 function filterDailyDataMetrics(dailyData, metricLabel) {
   return dailyData.map(day => ({
@@ -38,31 +60,26 @@ const GridItem = ({
   prefix,
   hideDiff,
 }) => {
-  const style = {
-    ...gridSummaryItem,
-    width: gridWidth,
-  };
   const dailyMetricData = filterDailyDataMetrics(dailyData, metric.label);
   return (
-    <li
-      style={style}
-      key={metric.label}
-    >
+    <Item key={metric.label} width={gridWidth}>
       {prefix && prefix}
-      <div>
+      <Container>
         {dailyData.length > 1 &&
-          <GridItemChart dailyData={dailyMetricData} />
+          <GridItemChartContainer>
+            <GridItemChart dailyData={dailyMetricData} />
+          </GridItemChartContainer>
         }
         <Label tooltip={tooltip} >
           {!customLabel && metric.label}
           {customLabel && customLabel}
         </Label>
-        <div style={gridSummaryItemValueWrapper}>
+        <ValueWrapper>
           <Value>{metric.value}</Value>
           {!hideDiff && <Diff diff={metric.diff} />}
-        </div>
-      </div>
-    </li>
+        </ValueWrapper>
+      </Container>
+    </Item>
   );
 };
 

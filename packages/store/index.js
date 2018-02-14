@@ -24,13 +24,9 @@ import { middleware as audienceChartMiddleware } from '@bufferapp/audience-chart
 import { middleware as addReportMiddleware } from '@bufferapp/add-report';
 import { middleware as reportListMiddleware } from '@bufferapp/report-list';
 import { middleware as contextualCompareMiddleware } from '@bufferapp/contextual-compare';
-import { middleware as audienceComparisonMiddleware } from '@bufferapp/audience-comparison-chart';
 import { middleware as profileSelectorMiddleware } from '@bufferapp/analyze-profile-selector';
 import { middleware as reportMiddleware } from '@bufferapp/report';
-import { middleware as reachComparisonMiddleware } from '@bufferapp/reach-comparison-chart';
-import { middleware as likesComparisonMiddleware } from '@bufferapp/likes-comparison-chart';
-import { middleware as engagementComparisonMiddleware } from '@bufferapp/engagement-comparison-chart';
-import { middleware as commentsComparisonMiddleware } from '@bufferapp/comments-comparison-chart';
+import { middleware as comparisonMiddleware } from '@bufferapp/comparison-chart';
 import { middleware as environmentMiddleware } from '@bufferapp/environment';
 import { middleware as unauthorizedRedirectMiddleware } from '@bufferapp/unauthorized-redirect';
 import { middleware as exportToPDFMiddleware } from '@bufferapp/pdf-export';
@@ -82,14 +78,10 @@ const configureStore = (initialstate) => {
         addReportMiddleware,
         reportListMiddleware,
         exportToCSVMiddleware,
-        audienceComparisonMiddleware,
         profileSelectorMiddleware,
         reportMiddleware,
-        reachComparisonMiddleware,
-        likesComparisonMiddleware,
-        engagementComparisonMiddleware,
         exportPickerMiddleware,
-        commentsComparisonMiddleware,
+        comparisonMiddleware,
         environmentMiddleware,
         unauthorizedRedirectMiddleware,
         exportToPDFMiddleware,

@@ -49,14 +49,6 @@ describe('reducer', () => {
     expect(state.reports).toHaveLength(0);
   });
 
-  it('viewReport triggers VIEW_REPORT', () => {
-    const id = 'report-123';
-    expect(actions.viewReport(id)).toEqual({
-      type: actionTypes.VIEW_REPORT,
-      id,
-    });
-  });
-
   it('removeReport triggers REMOVE_REPORT', () => {
     const id = 'report-123';
     expect(actions.removeReport(id)).toEqual({

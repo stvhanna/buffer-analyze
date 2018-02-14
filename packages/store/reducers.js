@@ -19,13 +19,9 @@ import { reducer as audienceChartReducer } from '@bufferapp/audience-chart';
 import { reducer as reportListReducer } from '@bufferapp/report-list';
 import { reducer as contextualCompareReducer } from '@bufferapp/contextual-compare';
 import { reducer as reportReducer } from '@bufferapp/report';
-import { reducer as audienceComparisonReducer } from '@bufferapp/audience-comparison-chart';
 import { reducer as multiProfileSelectorReducer } from '@bufferapp/multi-profile-selector';
-import { reducer as reachComparisonReducer } from '@bufferapp/reach-comparison-chart';
-import { reducer as likesComparisonReducer } from '@bufferapp/likes-comparison-chart';
-import { reducer as engagementComparisonReducer } from '@bufferapp/engagement-comparison-chart';
 import { reducer as exportPickerReducer } from '@bufferapp/analyze-export-picker';
-import { reducer as commentsComparisonReducer } from '@bufferapp/comments-comparison-chart';
+import { reducer as comparisonReducer } from '@bufferapp/comparison-chart';
 import { reducer as environmentReducer } from '@bufferapp/environment';
 
 export default combineReducers({
@@ -50,11 +46,7 @@ export default combineReducers({
   reportList: reportListReducer,
   contextual: contextualCompareReducer,
   report: reportReducer,
-  audienceComparison: audienceComparisonReducer,
   multiProfileSelector: multiProfileSelectorReducer,
-  reachComparison: reachComparisonReducer,
-  likesComparison: likesComparisonReducer,
-  engagementComparison: engagementComparisonReducer,
-  commentsComparison: commentsComparisonReducer,
+  comparison: comparisonReducer,
   environment: environmentReducer,
 });

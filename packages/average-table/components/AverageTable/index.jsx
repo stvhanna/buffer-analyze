@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 import Text from '@bufferapp/components/Text';
 
@@ -13,26 +14,27 @@ import {
 
 import AddReport from '@bufferapp/add-report';
 
-const gridStyle = {
-  display: 'flex',
-  flexWrap: 'wrap',
-  padding: '0',
-  margin: '0 auto',
-};
+const Grid = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 auto;
+`;
 
-const gridContainer = {
-  position: 'relative',
-  padding: '1.5rem',
-};
+const Container = styled.div`
+  position: relative;
+  padding: 0.75rem 1.5rem 1.5rem;
+`;
 
-export const Table = ({ daily, totals}) =>
-  <ul style={gridStyle}>
+export const Table = ({ daily, totals }) =>
+  <Grid>
     {totals.map(metric => <GridItem
       key={metric.label}
       metric={metric}
       dailyData={daily}
+      gridWidth={`${100 / totals.length}%`}
     />)}
-  </ul>;
+  </Grid>;
 
 Table.defaultProps = {
   daily: [],
@@ -81,9 +83,9 @@ const AverageTable = ({ metrics, loading, profileService }) => {
         <Title />
         <AddReport chart="average" />
       </ChartHeader>
-      <div id="js-dom-to-png-average" style={gridContainer}>
+      <Container id="js-dom-to-png-average">
         {content}
-      </div>
+      </Container>
     </ChartCard>
   );
 };
