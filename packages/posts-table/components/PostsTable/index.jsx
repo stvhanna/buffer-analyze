@@ -142,8 +142,6 @@ const PostsTable = (props) => {
     return null;
   }
 
-  console.log(JSON.stringify(metrics));
-
   // TODO: Move this to RPC endpoint and pass it as a prop to PostTable components
   const topPosts = metrics;
   const allPostMetrics = metricsConfig[profileService].postMetrics;
