@@ -15,6 +15,27 @@ selectedMetrics[0].squaredIcon = true;
 storiesOf('CommonChart')
   .addDecorator(checkA11y)
   .addDecorator(ReportsStore)
+  .add('[TESTED] Should render a no data message if there is no data', () => (
+    <div
+      style={{
+        width: '750px',
+      }}
+    >
+      <CommonChart
+        selectedMetrics={selectedMetrics}
+        metrics={mockMetrics}
+        presets={mockPresets}
+        selectedPreset={0}
+        data={[]}
+        mode={0}
+        profileService="facebook"
+        timezone="Etc/UTC"
+        selectMode={actionLogger('selectMode')}
+        selectPreset={actionLogger('selectPreset')}
+        togglePresetDropdown={actionLogger('openPresetDropdown')}
+      />
+    </div>
+  ))
   .add('[TESTED] Should render in Presets mode with multiple metrics for each category', () => (
     <div
       style={{

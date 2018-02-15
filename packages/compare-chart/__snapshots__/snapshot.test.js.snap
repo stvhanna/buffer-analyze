@@ -950,6 +950,83 @@ exports[`Snapshots CompareChart should render a "no data" state 1`] = `
         }
       >
         <div
+          style={
+            Object {
+              "display": "flex",
+              "padding": "20px",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "marginLeft": "auto",
+              }
+            }
+          >
+            <button
+              aria-label={null}
+              disabled={undefined}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "background": "none",
+                  "backgroundColor": "unset",
+                  "border": "none",
+                  "borderRadius": "unset",
+                  "color": "unset",
+                  "cursor": "pointer",
+                  "display": "unset",
+                  "fontFamily": "unset",
+                  "fontSize": "unset",
+                  "fontWeight": "unset",
+                  "lineHeight": "unset",
+                  "margin": "unset",
+                  "outline": "none",
+                  "padding": 0,
+                  "transition": "unset",
+                }
+              }
+            >
+              <span
+                className="periodToggle"
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 700,
+                    }
+                  }
+                >
+                  Previous Period
+                </span>
+                <span
+                  className="toggle"
+                  style={
+                    Object {
+                      "marginLeft": "auto",
+                    }
+                  }
+                >
+                  <span
+                    className="toggleSwitch"
+                  />
+                  <span
+                    className="toggleSwitchKnob"
+                  />
+                </span>
+              </span>
+            </button>
+          </span>
+        </div>
+        <div
           className="sc-jzJRlG iJTLJJ"
         >
           <div
