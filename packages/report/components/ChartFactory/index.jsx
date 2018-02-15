@@ -22,42 +22,41 @@ import ChartEditButtons from '../ChartEditButtons';
 const CHARTS = {
   'summary-table': {
     chart: SummaryTable,
-    title: SummaryTitle,
+    title: 'Performance',
   },
   'posts-summary': {
     chart: PostsSummary,
-    title: PostsSummaryTitle,
+    title: 'Posts Summary',
   },
   average: {
     chart: AverageTable,
-    title: AverageTitle,
+    title: 'Averages',
   },
   posts: {
     chart: PostsTable,
-    title: PostsTitle,
+    title: 'Posts breakdown',
   },
   'contextual-compare': {
     chart: CommonChart,
-    title: ContextualTitle,
+    title: 'Answers',
   },
   compare: {
     chart: CompareChart,
-    title: CompareTitle,
+    title: 'Compare',
   },
   audience: {
     chart: CommonChart,
-    title: AudienceTitle,
+    title: 'Audience',
   },
   comparison: {
     chart: ComparisonChart,
-    title: ComparisonTitle,
+    title: 'Comparison',
   },
 };
 
 const Separator = styled.section`
-  border-top: 1px solid #343E47;
   padding-top: 1.25rem;
-  margin-top: 5rem;
+  margin-top: 4rem;
   position: relative;
 `;
 
@@ -78,22 +77,39 @@ const Legend = styled.span`
 `;
 
 const TitleWrapper = styled.div`
-  min-height: 48px;
+  background: #343E47;
+  color: #FFFFFF;
+  padding: 0.5rem;
 `;
 
+const ProfileWrapper = styled.div`
+  padding: 0.5rem 0.5rem 0.25rem;
+`;
+
+const ProfileTexts = styled.div`
+  
+`;
+
+const URL = styled.div`
+  font-size: 0.75rem;
+  color: #CCCCCC;
+`;
+
+const Container = styled.div``;
+
 const ProfileLegend = ({ profile }) =>
-  <Text weight="bold">
-    <Legend>
-      <ProfileString>Showing for accounts</ProfileString>
-      <ProfileBadge
-        avatarUrl={profile.avatarUrl}
-        service={profile.service}
-        avatarSize={22}
-        socialIconSize={13}
-      />
-      <Profile>{profile.username}</Profile>
-    </Legend>
-  </Text>;
+  <Legend>
+    <ProfileBadge
+      avatarUrl={profile.avatarUrl}
+      service={profile.service}
+      avatarSize={22}
+      socialIconSize={24}
+    />
+    <ProfileTexts>
+      <Profile><Text weight="bold" size="small">{profile.username}</Text></Profile>
+      <URL><Text weight="medium" color="grey" size="small">facebook.com/username</Text></URL>
+    </ProfileTexts>
+  </Legend>;
 
 ProfileLegend.propTypes = {
   profile: PropTypes.shape({
@@ -105,18 +121,22 @@ ProfileLegend.propTypes = {
 const ChartFactory = ({ charts, moveUp, moveDown, deleteChart, exporting }) =>
   charts.map((chart, index) => (
     <Separator key={chart._id}>
-      <TitleWrapper>
-        {React.createElement(CHARTS[chart.chart_id].title, { ...chart })}
-        {!exporting && <ChartEditButtons
-          moveUp={moveUp}
-          moveDown={moveDown}
-          deleteChart={deleteChart}
-          id={chart._id}
-          first={index === 0}
-          last={index === charts.length - 1}
-        />}
-      </TitleWrapper>
-      {chart.profile_id && <ProfileLegend profile={chart.profile} />}
+      <Container>
+        <TitleWrapper>
+          <Text color="white" weight="medium" size="medium">{CHARTS[chart.chart_id].title}</Text>
+          {!exporting && <ChartEditButtons
+            moveUp={moveUp}
+            moveDown={moveDown}
+            deleteChart={deleteChart}
+            id={chart._id}
+            first={index === 0}
+            last={index === charts.length - 1}
+          />}
+        </TitleWrapper>
+        <ProfileWrapper>
+          {chart.profile_id && <ProfileLegend profile={chart.profile} />}
+        </ProfileWrapper>
+      </Container>
       {React.createElement(CHARTS[chart.chart_id].chart, {
         ...chart,
         timezone: chart.profile.timezone,

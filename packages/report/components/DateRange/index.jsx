@@ -18,7 +18,7 @@ const Date = ({ children }) => moment.unix(children).format('MMMM D, YYYY');
 
 const DateRange = ({ startDate, endDate }) =>
   <Text weight="bold">
-    <DateString>Showing for dates</DateString> <Range>
+    <Range>
       <Date>{startDate}</Date> to <Date>{endDate}</Date>
     </Range>
   </Text>;

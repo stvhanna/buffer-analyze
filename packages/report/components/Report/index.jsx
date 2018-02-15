@@ -18,7 +18,7 @@ import EditTitle from '../EditTitle';
 const Title = styled.h1`
   display: inline-block;
   color: #343E47;
-  font-size: 26px;
+  font-size: 2rem;
   font-weight: bold;
   margin: 0 0 .5rem 0;
 `;
