@@ -540,6 +540,46 @@ exports[`Snapshots CommonChart [TESTED] Should render Posts metrics as columns i
 </span>
 `;
 
+exports[`Snapshots CommonChart [TESTED] Should render a no data message if there is no data 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "750px",
+      }
+    }
+  >
+    <div
+      className="sc-bdVaJa fWzNTu"
+    >
+      <div
+        className="sc-bwzfXH iNQYMr"
+      >
+        <div
+          className="sc-htpNat lmFxxx"
+        />
+        <h1
+          className="sc-bxivhb hlZJQM"
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            There are no analytics for this date range
+          </span>
+        </h1>
+      </div>
+    </div>
+  </div>
+</span>
+`;
+
 exports[`Snapshots CommonChart [TESTED] Should render in Custom mode 1`] = `
 <span>
   <div
