@@ -8,6 +8,7 @@ import {
 } from '../style';
 
 import Footer from './components/Footer';
+import ChartStateNoData from '../ChartStateNoData';
 
 import getChartConfig, { highChartsSeriesPrimaryConfig } from './chartConfig';
 
@@ -278,6 +279,10 @@ class Chart extends PureComponent {
       selectedPreset,
       timezone,
     } = this.props;
+
+    if (data.length === 0) {
+      return <ChartStateNoData />;
+    }
 
     const isCustomMode = mode === 1;
     const charOptions = prepareChartOptions(
