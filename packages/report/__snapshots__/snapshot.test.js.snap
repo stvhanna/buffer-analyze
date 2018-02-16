@@ -3,7 +3,7 @@
 exports[`Snapshots ChartEditButtons move down is disabled if chart is last on list 1`] = `
 <span>
   <div
-    className="sc-bdVaJa GdIXh"
+    className="sc-bdVaJa cGwylx"
   >
     <button
       aria-label={null}
@@ -183,7 +183,7 @@ exports[`Snapshots ChartEditButtons move down is disabled if chart is last on li
 exports[`Snapshots ChartEditButtons move up is disabled if chart is first on list 1`] = `
 <span>
   <div
-    className="sc-bdVaJa GdIXh"
+    className="sc-bdVaJa cGwylx"
   >
     <button
       aria-label={null}
@@ -363,7 +363,7 @@ exports[`Snapshots ChartEditButtons move up is disabled if chart is first on lis
 exports[`Snapshots ChartEditButtons they render 1`] = `
 <span>
   <div
-    className="sc-bdVaJa GdIXh"
+    className="sc-bdVaJa cGwylx"
   >
     <button
       aria-label={null}
@@ -543,7 +543,7 @@ exports[`Snapshots ChartEditButtons they render 1`] = `
 exports[`Snapshots Report renders a loading report 1`] = `
 <span>
   <section
-    className="sc-fYiAbW iGGeNs"
+    className="sc-fOKMvo kDNgBi"
   >
     <div
       style={
@@ -650,7 +650,7 @@ exports[`Snapshots Report renders a loading report 1`] = `
 exports[`Snapshots Report renders a report with summary table 1`] = `
 <span>
   <section
-    className="sc-fYiAbW iGGeNs"
+    className="sc-fOKMvo kDNgBi"
   >
     <div
       id="report-page"
@@ -666,7 +666,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         }
       >
         <div
-          className="sc-cbkKFq jzXFwF"
+          className="sc-krvtoX dUBYjz"
         >
           <button
             aria-label={null}
@@ -697,13 +697,13 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
             }
           >
             <h1
-              className="sc-eLExRp dMKCQH"
+              className="sc-cbkKFq kFaNAF"
             >
               Weekly Sync Report
             </h1>
           </button>
           <div
-            className="sc-krvtoX cRLszq"
+            className="sc-fYiAbW djQlwO"
           >
             <svg
               height="100%"
@@ -776,10 +776,10 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
             </h2>
           </div>
           <div
-            className="sc-exAgwC iYPJxn"
+            className="sc-exAgwC XvVMK"
           >
             <span
-              className="sc-iujRgT gQfyED"
+              className="sc-iujRgT fotwRe"
             >
               <div
                 style={
@@ -817,11 +817,11 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                       "background": "#fff",
                       "border": "#fff 0 solid",
                       "borderRadius": "50%",
-                      "height": "22px",
-                      "left": "0px",
+                      "height": "24px",
+                      "left": "-2px",
                       "position": "absolute",
-                      "top": "0px",
-                      "width": "22px",
+                      "top": "-2px",
+                      "width": "24px",
                     }
                   }
                 >
@@ -2020,10 +2020,10 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
             </h2>
           </div>
           <div
-            className="sc-exAgwC iYPJxn"
+            className="sc-exAgwC XvVMK"
           >
             <span
-              className="sc-iujRgT gQfyED"
+              className="sc-iujRgT fotwRe"
             >
               <div
                 style={
@@ -2061,11 +2061,11 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                       "background": "#fff",
                       "border": "#fff 0 solid",
                       "borderRadius": "50%",
-                      "height": "22px",
-                      "left": "0px",
+                      "height": "24px",
+                      "left": "-2px",
                       "position": "absolute",
-                      "top": "0px",
-                      "width": "22px",
+                      "top": "-2px",
+                      "width": "24px",
                     }
                   }
                 >
