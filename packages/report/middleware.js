@@ -1,7 +1,6 @@
 import { LOCATION_CHANGE } from 'react-router-redux';
 import { actions } from '@bufferapp/async-data-fetch';
 import { actionTypes as dateActionTypes } from '@bufferapp/analyze-date-picker';
-import { actionTypes as listActionTypes } from '@bufferapp/report-list';
 import { actionTypes } from './reducer';
 import PDFFormatter from './PDFFormatter';
 
@@ -15,45 +14,26 @@ const getReportId = (pathname) => {
 const isReportDetailRoute = pathname => getReportId(pathname) !== null;
 const isExportRoute = pathname => pathname.match(/export\/reports/) !== null;
 
-const getReport = (reportId, reports) =>
-  reports.find(report => report._id === reportId);
-
 export default store => next => (action) => { // eslint-disable-line no-unused-vars
   const state = store.getState();
   let formatter;
-  let report;
   switch (action.type) {
     case dateActionTypes.SET_DATE_RANGE:
-      if (!isExportRoute(state.router.location.pathname)) {
-        store.dispatch(actions.fetch({
-          name: 'get_report',
-          args: {
-            _id: getReportId(state.router.location.pathname),
-            startDate: action.startDate,
-            endDate: action.endDate,
-          },
-        }));
-      }
+      store.dispatch(actions.fetch({
+        name: 'get_report',
+        args: {
+          _id: getReportId(state.router.location.pathname),
+          startDate: action.startDate,
+          endDate: action.endDate,
+        },
+      }));
       break;
     case LOCATION_CHANGE:
-      if (isReportDetailRoute(action.payload.pathname)) {
+      if (isReportDetailRoute(action.payload.pathname) && !isExportRoute(action.payload.pathname)) {
         store.dispatch(actions.fetch({
           name: 'get_report',
           args: {
             _id: getReportId(action.payload.pathname),
-            startDate: state.date.startDate,
-            endDate: state.date.endDate,
-          },
-        }));
-      }
-      break;
-    case listActionTypes.VIEW_REPORT:
-      report = getReport(action.id, state.reportList.reports);
-      if (report) {
-        store.dispatch(actions.fetch({
-          name: 'get_report',
-          args: {
-            _id: report._id,
             startDate: state.date.startDate,
             endDate: state.date.endDate,
           },

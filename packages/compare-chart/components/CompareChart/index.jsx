@@ -42,6 +42,13 @@ export const ChartWithFooter = ({
   dailyMode,
 }) => {
   const dailyData = dailyMode === 1 ? totalPeriodDaily : daily;
+  if (dailyData.length === 0) {
+    return (
+      <Container>
+        <NoData />
+      </Container>
+    );
+  }
   return (
     <div id="js-dom-to-png-compare">
       <Chart
@@ -123,12 +130,6 @@ const CompareChart = ({
     content = (
       <Container>
         <Loading active noBorder />
-      </Container>
-    );
-  } else if (dailyData.length === 0) {
-    content = (
-      <Container>
-        <NoData />
       </Container>
     );
   } else {

@@ -1,6 +1,5 @@
 import { actionTypes as dateActionTypes } from '@bufferapp/analyze-date-picker';
 import { actions } from '@bufferapp/async-data-fetch';
-import { actionTypes as listActionTypes } from '@bufferapp/report-list';
 import { LOCATION_CHANGE } from 'react-router-redux';
 import { actionTypes } from './reducer';
 import middleware, { DIRECTION_UP, DIRECTION_DOWN } from './middleware';
@@ -87,37 +86,6 @@ describe('middleware', () => {
       }));
       expect(next).toHaveBeenCalledWith(action);
     });
-
-    it('should not dispatch the data fetch if the view is an export view', () => {
-      state.router = {
-        location: {
-          pathname: '/export/reports/1234',
-        },
-      };
-      const action = {
-        type: dateActionTypes.SET_DATE_RANGE,
-        startDate: '10/10/2016',
-        endDate: '20/10/2016',
-      };
-      middleware(store)(next)(action);
-      expect(store.dispatch).not.toHaveBeenCalled();
-    });
-  });
-
-  it('VIEW_REPORT dispatches a new data fetch', () => {
-    const action = {
-      type: listActionTypes.VIEW_REPORT,
-      id: 'report_id_2',
-    };
-    middleware(store)(next)(action);
-    expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
-      name: 'get_report',
-      args: {
-        _id: 'report_id_2',
-        startDate: state.date.startDate,
-        endDate: state.date.endDate,
-      },
-    }));
   });
 
   it('SAVE_CHANGES dispatches a update report request', () => {
@@ -211,6 +179,17 @@ describe('middleware', () => {
           endDate: state.date.endDate,
         },
       }));
+    });
+
+    it('should not dispatch the data fetch if the view is an export view', () => {
+      const action = {
+        type: LOCATION_CHANGE,
+        payload: {
+          pathname: '/export/reports/1234',
+        },
+      };
+      middleware(store)(next)(action);
+      expect(store.dispatch).not.toHaveBeenCalled();
     });
 
     it('LOCATION_CHANGE to another route does not trigger get_report', () => {
