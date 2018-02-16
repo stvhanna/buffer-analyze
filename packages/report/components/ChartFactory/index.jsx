@@ -13,6 +13,7 @@ import { Title as AudienceTitle } from '@bufferapp/audience-chart';
 import { Chart as ComparisonChart, Title as ComparisonTitle } from '@bufferapp/comparison-chart';
 import {
   CommonChart,
+  ChartTitle,
   ProfileBadge,
 } from '@bufferapp/analyze-shared-components';
 import styled from 'styled-components';
@@ -22,35 +23,35 @@ import ChartEditButtons from '../ChartEditButtons';
 const CHARTS = {
   'summary-table': {
     chart: SummaryTable,
-    title: 'Performance',
+    title: SummaryTitle,
   },
   'posts-summary': {
     chart: PostsSummary,
-    title: 'Posts Summary',
+    title: PostsSummaryTitle,
   },
   average: {
     chart: AverageTable,
-    title: 'Averages',
+    title: AverageTitle,
   },
   posts: {
     chart: PostsTable,
-    title: 'Posts breakdown',
+    title: PostsTitle,
   },
   'contextual-compare': {
     chart: CommonChart,
-    title: 'Answers',
+    title: ContextualTitle,
   },
   compare: {
     chart: CompareChart,
-    title: 'Compare',
+    title: CompareTitle,
   },
   audience: {
     chart: CommonChart,
-    title: 'Audience',
+    title: AudienceTitle,
   },
   comparison: {
     chart: ComparisonChart,
-    title: 'Comparison',
+    title: ComparisonTitle,
   },
 };
 
@@ -66,7 +67,7 @@ const ProfileString = styled.span`
 `;
 
 const Profile = styled.span`
-  color: #343E47;
+  color: #333B43;
   position: relative;
 `;
 
@@ -77,22 +78,24 @@ const Legend = styled.span`
 `;
 
 const TitleWrapper = styled.div`
-  background: #343E47;
-  color: #FFFFFF;
-  padding: 0.5rem;
+  background: transparent;
+  color: #333B43;
+  padding: 0.5rem 0.4rem 0.5rem 0;
+  border: 2px solid #333B43;
+  border-width: 0 0 2px;
 `;
 
 const ProfileWrapper = styled.div`
-  padding: 0.5rem 0.5rem 0.25rem;
+  padding: 0.5rem 0.5rem 0.25rem 0.1rem;
 `;
 
-const ProfileTexts = styled.div`
-  
+const ProfileText = styled.div`
+  margin: 0 0 0 -3px
 `;
 
 const URL = styled.div`
   font-size: 0.75rem;
-  color: #CCCCCC;
+  color: #AEB8C2;
 `;
 
 const Container = styled.div``;
@@ -103,12 +106,12 @@ const ProfileLegend = ({ profile }) =>
       avatarUrl={profile.avatarUrl}
       service={profile.service}
       avatarSize={22}
-      socialIconSize={24}
+      socialIconSize={22}
     />
-    <ProfileTexts>
+    <ProfileText>
       <Profile><Text weight="bold" size="small">{profile.username}</Text></Profile>
-      <URL><Text weight="medium" color="grey" size="small">facebook.com/username</Text></URL>
-    </ProfileTexts>
+      <URL><Text weight="medium" size="small">facebook.com/username</Text></URL>
+    </ProfileText>
   </Legend>;
 
 ProfileLegend.propTypes = {
@@ -123,7 +126,7 @@ const ChartFactory = ({ charts, moveUp, moveDown, deleteChart, exporting }) =>
     <Separator key={chart._id}>
       <Container>
         <TitleWrapper>
-          <Text color="white" weight="medium" size="medium">{CHARTS[chart.chart_id].title}</Text>
+          {React.createElement(CHARTS[chart.chart_id].title, {...chart, forReport: true})}
           {!exporting && <ChartEditButtons
             moveUp={moveUp}
             moveDown={moveDown}

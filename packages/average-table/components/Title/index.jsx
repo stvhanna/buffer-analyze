@@ -4,7 +4,7 @@ import { ChartTitle } from '@bufferapp/analyze-shared-components';
 
 const Title = ({ forReport }) => (
   <ChartTitle forReport={forReport}>
-    Performance
+    Average performance
   </ChartTitle>
 );
 

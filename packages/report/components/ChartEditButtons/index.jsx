@@ -12,7 +12,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   position: absolute;
-  top: 60px;
+  top: 70px;
   right: 0;
 `;
 

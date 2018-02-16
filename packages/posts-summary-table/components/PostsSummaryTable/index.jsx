@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 import {
   ChartStateNoData as NoData,
@@ -13,20 +14,20 @@ import AddReport from '@bufferapp/add-report';
 
 import Title from '../Title';
 
-const gridStyle = {
-  display: 'flex',
-  flexWrap: 'wrap',
-  padding: '0',
-  margin: '0 auto',
-};
+const Grid = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 auto;
+`;
 
-const gridContainer = {
-  position: 'relative',
-  padding: '1.5rem',
-};
+const GridContainer = styled.div`
+  position: relative;
+  padding: 1.5rem;
+`;
 
 export const Table = ({ metrics }) =>
-  <ul style={gridStyle}>
+  <Grid>
     {metrics.map((metric) => {
       const itemProps = {
         key: metric.label,
@@ -36,7 +37,7 @@ export const Table = ({ metrics }) =>
       if (metrics.length === 5) itemProps.gridWidth = '20%';
       return (<GridItem {...itemProps} />);
     })}
-  </ul>;
+  </Grid>;
 
 Table.propTypes = {
   metrics: PropTypes.arrayOf(PropTypes.shape({
@@ -62,9 +63,9 @@ const PostsSummaryTable = ({ metrics, loading, profileService, startDate, endDat
         <Title profileService={profileService} startDate={startDate} endDate={endDate} />
         <AddReport chart="posts-summary" />
       </ChartHeader>
-      <div id="js-dom-to-png-posts-summary" style={gridContainer}>
+      <GridContainer id="js-dom-to-png-posts-summary">
         {content}
-      </div>
+      </GridContainer>
     </ChartCard>
   );
 };

@@ -14,7 +14,8 @@ export default connect(
   mapStateToProps,
 )(AverageTable);
 
-export { Table, Title } from './components/AverageTable';
+export { Table } from './components/AverageTable';
+export Title from './components/Title';
 // export reducer, actions and action types
 export reducer, { actions, actionTypes } from './reducer';
 export middleware from './middleware';
