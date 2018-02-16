@@ -71,7 +71,7 @@ const Profile = styled.span`
 const Legend = styled.span`
   display: flex;
   align-items: center;
-  margin-bottom: 8px;
+  margin: 0 2rem 0.5rem 0;
 `;
 
 const TitleWrapper = styled.div`
@@ -84,13 +84,15 @@ const TitleWrapper = styled.div`
 
 const ProfileWrapper = styled.div`
   padding: 0.5rem 0.5rem 0.25rem 0.1rem;
+  display: flex;
+  justify-content: flex-start;
 `;
 
 const ProfileText = styled.div`
   margin: 0 0 0 -3px
 `;
 
-const URL = styled.div`
+const Network = styled.div`
   font-size: 0.75rem;
   color: #919DA8;
   text-transform: lowercase;
@@ -104,14 +106,14 @@ const ProfileLegend = ({ profile }) =>
       avatarUrl={profile.avatarUrl}
       service={profile.service}
       avatarSize={22}
-      socialIconSize={22}
+      socialIconSize={24}
     />
     <ProfileText>
       <Text weight="bold" size="small">
         <Profile>{profile.username}</Profile>
       </Text>
       <Text weight="medium" size="small">
-        <URL>{profile.service}.com</URL>
+        <Network>{profile.service}.com</Network>
       </Text>
     </ProfileText>
   </Legend>;
@@ -122,6 +124,17 @@ ProfileLegend.propTypes = {
     username: PropTypes.string,
   }).isRequired,
 };
+
+// TODO: This should be coming from the state somehow
+// The goal here is to get only the profiles that the comparison graph is comparing
+const getComparisonProfilesOnly = (comparedProfileIds, allProfiles) => {
+  return allProfiles.filter(profile => {
+    return comparedProfileIds.includes(profile.id);
+  });
+}
+
+const MultiProfileLegends = ({ profiles }) =>
+  profiles.map(profile => <ProfileLegend profile={profile} />);
 
 const ChartFactory = ({ charts, moveUp, moveDown, deleteChart, exporting }) =>
   charts.map((chart, index) => (
@@ -140,6 +153,7 @@ const ChartFactory = ({ charts, moveUp, moveDown, deleteChart, exporting }) =>
         </TitleWrapper>
         <ProfileWrapper>
           {chart.profile_id && <ProfileLegend profile={chart.profile} />}
+          {chart.profileIds && <MultiProfileLegends profiles={getComparisonProfilesOnly(chart.profileIds, chart.profiles)} />}
         </ProfileWrapper>
       </Container>
       {React.createElement(CHARTS[chart.chart_id].chart, {
