@@ -78,8 +78,8 @@ const TitleWrapper = styled.div`
   background: transparent;
   color: #333B43;
   padding: 0.5rem 0.4rem 0.5rem 0;
-  border: 2px solid #333B43;
-  border-width: 0 0 2px;
+  border: 3px solid #333B43;
+  border-width: 0 0 3px;
 `;
 
 const ProfileWrapper = styled.div`
@@ -111,7 +111,7 @@ const ProfileLegend = ({ profile }) =>
         <Profile>{profile.username}</Profile>
       </Text>
       <Text weight="medium" size="small">
-        <URL>{profile.service}.com/{profile.username}</URL>
+        <URL>{profile.service}.com</URL>
       </Text>
     </ProfileText>
   </Legend>;

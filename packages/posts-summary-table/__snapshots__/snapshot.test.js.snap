@@ -21,23 +21,10 @@ exports[`Snapshots PostsSummaryTable should render a "no data" state 1`] = `
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": 0,
-              "padding": 0,
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -45,7 +32,7 @@ exports[`Snapshots PostsSummaryTable should render a "no data" state 1`] = `
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -55,13 +42,8 @@ exports[`Snapshots PostsSummaryTable should render a "no data" state 1`] = `
         </h2>
       </header>
       <div
+        className="sc-chPdSV hoBUjA"
         id="js-dom-to-png-posts-summary"
-        style={
-          Object {
-            "padding": "1.5rem",
-            "position": "relative",
-          }
-        }
       >
         <div
           className="sc-bdVaJa fWzNTu"
@@ -117,23 +99,10 @@ exports[`Snapshots PostsSummaryTable should render a loading state 1`] = `
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": 0,
-              "padding": 0,
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -141,7 +110,7 @@ exports[`Snapshots PostsSummaryTable should render a loading state 1`] = `
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -151,13 +120,8 @@ exports[`Snapshots PostsSummaryTable should render a loading state 1`] = `
         </h2>
       </header>
       <div
+        className="sc-chPdSV hoBUjA"
         id="js-dom-to-png-posts-summary"
-        style={
-          Object {
-            "padding": "1.5rem",
-            "position": "relative",
-          }
-        }
       >
         <div
           style={
@@ -284,23 +248,10 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": 0,
-              "padding": 0,
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -308,7 +259,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -318,23 +269,11 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
         </h2>
       </header>
       <div
+        className="sc-chPdSV hoBUjA"
         id="js-dom-to-png-posts-summary"
-        style={
-          Object {
-            "padding": "1.5rem",
-            "position": "relative",
-          }
-        }
       >
         <ul
-          style={
-            Object {
-              "display": "flex",
-              "flexWrap": "wrap",
-              "margin": "0 auto",
-              "padding": "0",
-            }
-          }
+          className="sc-kAzzGY hiaOuJ"
         >
           <li
             className="sc-ifAKCX bkOZJO"

@@ -907,23 +907,10 @@ exports[`Snapshots CompareChart should render a "no data" state 1`] = `
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -931,7 +918,7 @@ exports[`Snapshots CompareChart should render a "no data" state 1`] = `
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -1027,7 +1014,7 @@ exports[`Snapshots CompareChart should render a "no data" state 1`] = `
           </span>
         </div>
         <div
-          className="sc-jzJRlG iJTLJJ"
+          className="sc-kAzzGY fTVLQQ"
         >
           <div
             className="sc-bdVaJa fWzNTu"
@@ -1084,23 +1071,10 @@ exports[`Snapshots CompareChart should render a loading state 1`] = `
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -1108,7 +1082,7 @@ exports[`Snapshots CompareChart should render a loading state 1`] = `
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -1127,7 +1101,7 @@ exports[`Snapshots CompareChart should render a loading state 1`] = `
         }
       >
         <div
-          className="sc-jzJRlG iJTLJJ"
+          className="sc-kAzzGY fTVLQQ"
         >
           <div
             style={
@@ -1255,23 +1229,10 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -1279,7 +1240,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -2083,23 +2044,10 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -2107,7 +2055,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -2911,23 +2859,10 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -2935,7 +2870,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -3739,23 +3674,10 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -3763,7 +3685,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -4643,23 +4565,10 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -4667,7 +4576,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >

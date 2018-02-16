@@ -8,6 +8,7 @@ const Header = styled.h2`
   padding: 0;
 `;
 
+
 const renderForApp = children => (
   <Text weight="medium" size="large">
     {children}
