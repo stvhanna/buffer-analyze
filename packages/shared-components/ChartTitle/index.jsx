@@ -15,7 +15,7 @@ const renderForApp = children => (
 );
 
 const renderForReport = children => (
-  <Text color="#333B43" weight="bold" size="large">
+  <Text color="black" weight="bold" size="large">
     {children}
   </Text>
 );

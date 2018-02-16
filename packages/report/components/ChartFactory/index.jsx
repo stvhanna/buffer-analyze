@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  Text,
-} from '@bufferapp/components';
+import styled from 'styled-components';
+import { Text } from '@bufferapp/components';
 import { Table as SummaryTable, Title as SummaryTitle } from '@bufferapp/summary-table';
 import { Table as PostsSummary, Title as PostsSummaryTitle } from '@bufferapp/posts-summary-table';
 import { Table as AverageTable, Title as AverageTitle } from '@bufferapp/average-table';
@@ -16,8 +15,6 @@ import {
   ChartTitle,
   ProfileBadge,
 } from '@bufferapp/analyze-shared-components';
-import styled from 'styled-components';
-
 import ChartEditButtons from '../ChartEditButtons';
 
 const CHARTS = {
@@ -67,7 +64,7 @@ const ProfileString = styled.span`
 `;
 
 const Profile = styled.span`
-  color: #333B43;
+  color: #343E47;
   position: relative;
 `;
 
@@ -95,7 +92,8 @@ const ProfileText = styled.div`
 
 const URL = styled.div`
   font-size: 0.75rem;
-  color: #AEB8C2;
+  color: #919DA8;
+  text-transform: lowercase;
 `;
 
 const Container = styled.div``;
@@ -109,8 +107,12 @@ const ProfileLegend = ({ profile }) =>
       socialIconSize={22}
     />
     <ProfileText>
-      <Profile><Text weight="bold" size="small">{profile.username}</Text></Profile>
-      <URL><Text weight="medium" size="small">facebook.com/username</Text></URL>
+      <Text weight="bold" size="small">
+        <Profile>{profile.username}</Profile>
+      </Text>
+      <Text weight="medium" size="small">
+        <URL>{profile.service}.com/{profile.username}</URL>
+      </Text>
     </ProfileText>
   </Legend>;
 

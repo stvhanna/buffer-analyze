@@ -6,10 +6,6 @@ import {
 } from '@bufferapp/components';
 import styled from 'styled-components';
 
-const DateString = styled.span`
-  color: #717A86;
-`;
-
 const Range = styled.span`
   color: #343E47;
 `;
