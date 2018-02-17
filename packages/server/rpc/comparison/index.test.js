@@ -23,14 +23,15 @@ describe('rpc/comparison', () => {
   });
 
   it('should send a POST request to /comparison with the provided parameters for every metric', async () => {
-    const startDate = moment().subtract(7, 'days');
-    const endDate = moment().subtract(1, 'days');
+    const startDate = moment().subtract(7, 'days').unix();
+    const endDate = moment().subtract(1, 'days').unix();
     rp.mockReturnValue(Promise.resolve(response));
     const result = await comparison.fn({ profileIds, startDate, endDate });
 
     const start = moment.unix(startDate).format('MM/DD/YYYY');
+    console.log(start );
     const end = moment.unix(endDate).format('MM/DD/YYYY');
-    const dateRange = new DateRange(start, end);
+    console.log(end );
 
     expect(result.metrics).toEqual(rpcFinalResponse);
 
@@ -41,8 +42,8 @@ describe('rpc/comparison', () => {
       body: {
         profiles: profileIds,
         metrics: ['audience', 'reach', 'likes', 'engagement', 'comments'],
-        start_date: dateRange.start,
-        end_date: dateRange.end,
+        start_date: start,
+        end_date: end,
       },
       json: true,
     }]);
