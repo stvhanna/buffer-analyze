@@ -23,4 +23,19 @@ describe('rpc tools DateRange', () => {
     expect(previousDateRange.end)
       .toBe('01/20/2018');
   });
+
+  it('should return all the days in a range', () => {
+    const end = '01/31/2018';
+    const start = '01/21/2018';
+    const dateRange = new DateRange(start, end);
+    const daysInRange = dateRange.getDaysInRange();
+    expect(daysInRange.length)
+      .toBe(11);
+    expect(moment.unix(daysInRange[0] / 1000).format('MM/DD/YYYY'))
+      .toBe('01/21/2018');
+    expect(moment.unix(daysInRange[daysInRange.length - 1] / 1000).format('MM/DD/YYYY'))
+      .toBe('01/31/2018');
+    expect(moment.unix(daysInRange[5] / 1000).format('MM/DD/YYYY'))
+      .toBe('01/26/2018');
+  });
 });
