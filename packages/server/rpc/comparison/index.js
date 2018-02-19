@@ -91,26 +91,20 @@ const formatDailyData = (day, value, profileService, metricKey, profileIndex) =>
   };
 };
 
-function getDaysFromProfilesMetricData(profileIds, rawData, metricKey) {
-  const validDailyData = profileIds
-    .map(profileId => rawData[profileId][metricKey].profilesMetricData.dailyData)
-    .filter(dailyData => dailyData.length > 0);
-  return validDailyData[0].map(dayData => dayData.day);
-}
-
 function getDailyData(days, data, metricKey, profileIndex) {
-  return days.map((day, index) =>
-    formatDailyData(
+  return days.map((day) => {
+    const dailyData = data.dailyData.find(d => d.day === day);
+    return formatDailyData(
       day,
-      data.dailyData[index] ? data.dailyData[index].value : null,
+      dailyData ? dailyData.value : null,
       data.service,
       metricKey,
       profileIndex,
-    ),
-  );
+    );
+  });
 }
 
-function formatData(rawData, metricKey) {
+function formatData(rawData, metricKey, dateRange) {
   const profileIds = Object.keys(rawData);
 
   const profilesMetricData = Array.from(profileIds, (id) => {
@@ -127,7 +121,7 @@ function formatData(rawData, metricKey) {
 
   if (profilesMetricData.length === 0) return null;
 
-  const days = getDaysFromProfilesMetricData(profileIds, rawData, metricKey);
+  const days = dateRange.getDaysInRange();
 
   const formattedProfilesMetricData = Array.from(profilesMetricData, (data, profileIndex) => ({
     profileId: data.profileId,
@@ -156,8 +150,8 @@ function formatData(rawData, metricKey) {
   };
 }
 
-function parseResponse(response) {
-  const metricsData = METRIC_KEYS.map(metric => formatData(response, metric));
+function parseResponse(response, dateRange) {
+  const metricsData = METRIC_KEYS.map(metric => formatData(response, metric, dateRange));
   const metrics = {};
   METRIC_KEYS.forEach((metricKey, index) => {
     const data = metricsData[index];
@@ -187,6 +181,6 @@ module.exports = method(
       },
       json: true,
     })
-      .then(({ response }) => parseResponse(response))
+      .then(({ response }) => parseResponse(response, dateRange))
       .catch(() => {});
   });
