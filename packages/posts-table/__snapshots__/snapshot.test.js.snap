@@ -1942,6 +1942,18 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
 </span>
 `;
 
+exports[`Snapshots PostsTable should render the posts table for instagram 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "750px",
+      }
+    }
+  />
+</span>
+`;
+
 exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
 <span>
   <div

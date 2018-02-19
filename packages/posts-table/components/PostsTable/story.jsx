@@ -178,4 +178,26 @@ storiesOf('PostsTable')
         activePostsCount={10}
       />
     </div>
+  ))
+  .add('should render the posts table for instagram', () => (
+    <div
+      style={{
+        width: '750px',
+      }}
+    >
+      <PostsTable
+        timezone={'America/Los_Angeles'}
+        profileService={'instagram'}
+        metrics={topPosts}
+        selectMetric={action('selectMetric')}
+        selectedMetric={{
+          key: 'post_impressions',
+          label: 'Post Impressions',
+        }}
+        toggleDropdown={action('toggleDropdown')}
+        isDescendingSelected
+        handlePostsCountClick={action('handlePostsCountClick')}
+        activePostsCount={10}
+      />
+    </div>
   ));

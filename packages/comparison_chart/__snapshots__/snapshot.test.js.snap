@@ -32,7 +32,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render a "no data" state 1`] 
         }
       >
         <h2
-          className="sc-dxgOiQ isvEAp"
+          className="sc-kGXeez bsulgI"
         >
           <span
             style={
@@ -50,7 +50,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render a "no data" state 1`] 
         </h2>
       </header>
       <div
-        className="sc-eNQAEJ fUifcZ"
+        className="sc-ckVGcZ dzSqhQ"
       >
         <div
           className="sc-bdVaJa fWzNTu"
@@ -117,7 +117,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render a loading state 1`] = 
         }
       >
         <h2
-          className="sc-dxgOiQ isvEAp"
+          className="sc-kGXeez bsulgI"
         >
           <span
             style={
@@ -135,7 +135,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render a loading state 1`] = 
         </h2>
       </header>
       <div
-        className="sc-jKJlTe jeWmsw"
+        className="sc-dxgOiQ eHCNaG"
       >
         <div
           style={
@@ -273,7 +273,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
         }
       >
         <h2
-          className="sc-dxgOiQ isvEAp"
+          className="sc-kGXeez bsulgI"
         >
           <span
             style={
@@ -291,7 +291,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
         </h2>
       </header>
       <div
-        className="sc-ckVGcZ dzSqhQ"
+        className="sc-kpOJdX ifUknr"
       >
         <div>
           <div
@@ -302,31 +302,23 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
             }
           />
           <section
-            className="sc-kgoBCf fFebmp"
+            className="sc-kAzzGY cfzHJv"
           >
             <ul
-              className="sc-chPdSV cHWtVK"
+              className="sc-cSHVUG fGjpOO"
             >
               <li
-                style={
-                  Object {
-                    "boxSizing": "border-box",
-                    "display": "flex",
-                    "flexGrow": 1,
-                    "listStyle": "none",
-                    "paddingBottom": "15px",
-                    "width": "25%",
-                  }
-                }
+                className="sc-ifAKCX hjaDfC"
+                width="25%"
               >
                 <div
-                  className="sc-kGXeez evarDB"
+                  className="sc-chPdSV iMhkHF"
                 >
                   <span
-                    className="sc-EHOje eQMpHY"
+                    className="sc-dnqmqq hHLyWY"
                   >
                     <span
-                      className="sc-ifAKCX dIQiBH"
+                      className="sc-htoDjs fydcEL"
                     >
                       <img
                         alt=""
@@ -391,7 +383,9 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
                     </div>
                   </span>
                 </div>
-                <div>
+                <div
+                  className="sc-EHOje YINzU"
+                >
                   <span
                     style={
                       Object {
@@ -416,7 +410,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
                         }
                       >
                         <div
-                          className="sc-kpOJdX cyFStC"
+                          className="sc-kgoBCf bcqlIB"
                         >
                           <span
                             style={
@@ -435,14 +429,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
                     </span>
                   </span>
                   <div
-                    style={
-                      Object {
-                        "alignItems": "center",
-                        "display": "flex",
-                        "flex": 1,
-                        "flexDirection": "row",
-                      }
-                    }
+                    className="sc-bZQynM hCNVyQ"
                   >
                     <div
                       style={
@@ -543,25 +530,17 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
                 </div>
               </li>
               <li
-                style={
-                  Object {
-                    "boxSizing": "border-box",
-                    "display": "flex",
-                    "flexGrow": 1,
-                    "listStyle": "none",
-                    "paddingBottom": "15px",
-                    "width": "25%",
-                  }
-                }
+                className="sc-ifAKCX hjaDfC"
+                width="25%"
               >
                 <div
-                  className="sc-kGXeez evarDB"
+                  className="sc-chPdSV iMhkHF"
                 >
                   <span
-                    className="sc-EHOje eQMpHY"
+                    className="sc-dnqmqq hHLyWY"
                   >
                     <span
-                      className="sc-ifAKCX kdNFSI"
+                      className="sc-htoDjs frZYef"
                     >
                       <img
                         alt=""
@@ -626,7 +605,9 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
                     </div>
                   </span>
                 </div>
-                <div>
+                <div
+                  className="sc-EHOje YINzU"
+                >
                   <span
                     style={
                       Object {
@@ -651,7 +632,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
                         }
                       >
                         <div
-                          className="sc-kpOJdX cyFStC"
+                          className="sc-kgoBCf bcqlIB"
                         >
                           <span
                             style={
@@ -670,14 +651,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
                     </span>
                   </span>
                   <div
-                    style={
-                      Object {
-                        "alignItems": "center",
-                        "display": "flex",
-                        "flex": 1,
-                        "flexDirection": "row",
-                      }
-                    }
+                    className="sc-bZQynM hCNVyQ"
                   >
                     <div
                       style={
@@ -798,7 +772,7 @@ exports[`Snapshots ComparisonChartTooltip [TESTED] should render the tooltip 1`]
     }
   >
     <div
-      className="sc-kAzzGY bNdPJH"
+      className="sc-jzJRlG fLuqiy"
     >
       <span>
         <span
