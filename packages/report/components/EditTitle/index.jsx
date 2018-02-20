@@ -21,20 +21,13 @@ const Input = styled.input`
 `;
 
 class EditTitle extends Component {
-  static propTypes = {
-    name: PropTypes.string.isRequired,
-    saveChanges: PropTypes.func.isRequired,
-  };
+
   constructor(props) {
     super(props);
 
     this.state = {
       name: props.name,
     };
-  }
-
-  componentDidMount() {
-    this.input.focus();
   }
 
   handleBlur = () => {
@@ -59,10 +52,16 @@ class EditTitle extends Component {
           value={this.state.name}
           onChange={this.handleChange}
           onBlur={this.handleBlur}
+          autoFocus
         />
       </Form>
     );
   }
 }
+
+EditTitle.propTypes = {
+  name: PropTypes.string.isRequired,
+  saveChanges: PropTypes.func.isRequired,
+};
 
 export default EditTitle;

@@ -10,12 +10,11 @@ import { Table as PostsTable, Title as PostsTitle } from '@bufferapp/posts-table
 import { Chart as CompareChart, Title as CompareTitle } from '@bufferapp/compare-chart';
 import { Title as AudienceTitle } from '@bufferapp/audience-chart';
 import { Chart as ComparisonChart, Title as ComparisonTitle } from '@bufferapp/comparison-chart';
-import {
-  CommonChart,
-  ChartTitle,
-  ProfileBadge,
-} from '@bufferapp/analyze-shared-components';
+import { CommonChart } from '@bufferapp/analyze-shared-components';
+
 import ChartEditButtons from '../ChartEditButtons';
+import ProfileLegend from '../ProfileLegend';
+import MultiProfileLegends from '../MultiProfileLegends';
 
 const CHARTS = {
   'summary-table': {
@@ -58,22 +57,6 @@ const Separator = styled.section`
   position: relative;
 `;
 
-const ProfileString = styled.span`
-  color: #717A86;
-  margin-right: .75rem;
-`;
-
-const Profile = styled.span`
-  color: #343E47;
-  position: relative;
-`;
-
-const Legend = styled.span`
-  display: flex;
-  align-items: center;
-  margin: 0 2rem 0.5rem 0;
-`;
-
 const TitleWrapper = styled.div`
   background: transparent;
   color: #333B43;
@@ -83,65 +66,18 @@ const TitleWrapper = styled.div`
 `;
 
 const ProfileWrapper = styled.div`
-  padding: 0.5rem 0.5rem 0.25rem 0.1rem;
-  display: flex;
-  justify-content: flex-start;
+  padding: 0.5rem 0.1rem 0.25rem;
 `;
-
-const ProfileText = styled.div`
-  margin: 0 0 0 -3px
-`;
-
-const Network = styled.div`
-  font-size: 0.75rem;
-  color: #919DA8;
-  text-transform: lowercase;
-`;
-
-const Container = styled.div``;
-
-const ProfileLegend = ({ profile }) =>
-  <Legend>
-    <ProfileBadge
-      avatarUrl={profile.avatarUrl}
-      service={profile.service}
-      avatarSize={22}
-      socialIconSize={24}
-    />
-    <ProfileText>
-      <Text weight="bold" size="small">
-        <Profile>{profile.username}</Profile>
-      </Text>
-      <Text weight="medium" size="small">
-        <Network>{profile.service}.com</Network>
-      </Text>
-    </ProfileText>
-  </Legend>;
-
-ProfileLegend.propTypes = {
-  profile: PropTypes.shape({
-    service: PropTypes.string,
-    username: PropTypes.string,
-  }).isRequired,
-};
-
-// TODO: This should be coming from the state somehow
-// The goal here is to get only the profiles that the comparison graph is comparing
-const getComparisonProfilesOnly = (comparedProfileIds, allProfiles) => {
-  return allProfiles.filter(profile => {
-    return comparedProfileIds.includes(profile.id);
-  });
-}
-
-const MultiProfileLegends = ({ profiles }) =>
-  profiles.map(profile => <ProfileLegend profile={profile} />);
 
 const ChartFactory = ({ charts, moveUp, moveDown, deleteChart, exporting }) =>
   charts.map((chart, index) => (
     <Separator key={chart._id}>
-      <Container>
+      <div>
         <TitleWrapper>
-          {React.createElement(CHARTS[chart.chart_id].title, {...chart, forReport: true})}
+          {React.createElement(CHARTS[chart.chart_id].title, {
+            ...chart,
+            forReport: true
+          })}
           {!exporting && <ChartEditButtons
             moveUp={moveUp}
             moveDown={moveDown}
@@ -152,10 +88,19 @@ const ChartFactory = ({ charts, moveUp, moveDown, deleteChart, exporting }) =>
           />}
         </TitleWrapper>
         <ProfileWrapper>
-          {chart.profile_id && <ProfileLegend profile={chart.profile} />}
-          {chart.profileIds && <MultiProfileLegends profiles={getComparisonProfilesOnly(chart.profileIds, chart.profiles)} />}
+          {chart.profile_id &&
+            <ProfileLegend
+              profile={chart.profile}
+            />
+          }
+          {chart.profileIds &&
+            <MultiProfileLegends
+              profiles={chart.profiles}
+              comparedProfileIds={chart.profileIds}
+            />
+          }
         </ProfileWrapper>
-      </Container>
+      </div>
       {React.createElement(CHARTS[chart.chart_id].chart, {
         ...chart,
         timezone: chart.profile.timezone,
