@@ -1,3 +1,13 @@
+import moment from 'moment';
+
+const day1 = moment().subtract(1, 'days').startOf('day').valueOf();
+const day2 = moment().subtract(2, 'days').startOf('day').valueOf();
+const day3 = moment().subtract(3, 'days').startOf('day').valueOf();
+const day4 = moment().subtract(4, 'days').startOf('day').valueOf();
+const day5 = moment().subtract(5, 'days').startOf('day').valueOf();
+const day6 = moment().subtract(6, 'days').startOf('day').valueOf();
+const day7 = moment().subtract(7, 'days').startOf('day').valueOf();
+
 export const response = {
   response: {
     profile1234: {
@@ -12,11 +22,11 @@ export const response = {
         profilesMetricData: {
           dailyData: [
             {
-              day: 1504137600000,
+              day: day1,
               value: 50,
             },
             {
-              day: 1504224000000,
+              day: day3,
               value: 100,
             },
           ],
@@ -76,18 +86,58 @@ function getParsedResponse(label) {
       {
         dailyData: [
           {
-            day: 1504137600000,
+            day: day7,
             metric: {
               color: '#53CBB0',
-              value: 50,
+              value: null,
               label,
             },
           },
           {
-            day: 1504224000000,
+            day: day6,
+            metric: {
+              color: '#53CBB0',
+              value: null,
+              label,
+            },
+          },
+          {
+            day: day5,
+            metric: {
+              color: '#53CBB0',
+              value: null,
+              label,
+            },
+          },
+          {
+            day: day4,
+            metric: {
+              color: '#53CBB0',
+              value: null,
+              label,
+            },
+          },
+          {
+            day: day3,
             metric: {
               color: '#53CBB0',
               value: 100,
+              label,
+            },
+          },
+          {
+            day: day2,
+            metric: {
+              color: '#53CBB0',
+              value: null,
+              label,
+            },
+          },
+          {
+            day: day1,
+            metric: {
+              color: '#53CBB0',
+              value: 50,
               label,
             },
           },
@@ -97,7 +147,7 @@ function getParsedResponse(label) {
       {
         dailyData: [
           {
-            day: 1504137600000,
+            day: day7,
             metric: {
               color: '#168EEA',
               value: null,
@@ -105,7 +155,47 @@ function getParsedResponse(label) {
             },
           },
           {
-            day: 1504224000000,
+            day: day6,
+            metric: {
+              color: '#168EEA',
+              value: null,
+              label,
+            },
+          },
+          {
+            day: day5,
+            metric: {
+              color: '#168EEA',
+              value: null,
+              label,
+            },
+          },
+          {
+            day: day4,
+            metric: {
+              color: '#168EEA',
+              value: null,
+              label,
+            },
+          },
+          {
+            day: day3,
+            metric: {
+              color: '#168EEA',
+              value: null,
+              label,
+            },
+          },
+          {
+            day: day2,
+            metric: {
+              color: '#168EEA',
+              value: null,
+              label,
+            },
+          },
+          {
+            day: day1,
             metric: {
               color: '#168EEA',
               value: null,
