@@ -5810,3 +5810,45 @@ exports[`Snapshots PeriodToggle should render an inactive toggle 1`] = `
   </div>
 </span>
 `;
+
+exports[`Snapshots Title should render title as if for app 1`] = `
+<span>
+  <h2
+    className="sc-gqjmRU liZjsx"
+  >
+    <span
+      style={
+        Object {
+          "color": "#59626a",
+          "fontFamily": "\\"Roboto\\", sans-serif",
+          "fontSize": "1.25rem",
+          "fontWeight": 500,
+        }
+      }
+    >
+      Metrics breakdown
+    </span>
+  </h2>
+</span>
+`;
+
+exports[`Snapshots Title should render title as if for report 1`] = `
+<span>
+  <h2
+    className="sc-gqjmRU liZjsx"
+  >
+    <span
+      style={
+        Object {
+          "color": "#000",
+          "fontFamily": "\\"Roboto\\", sans-serif",
+          "fontSize": "1.25rem",
+          "fontWeight": 700,
+        }
+      }
+    >
+      Metrics breakdown
+    </span>
+  </h2>
+</span>
+`;
