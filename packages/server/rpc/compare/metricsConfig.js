@@ -66,7 +66,7 @@ const facebookConfig = {
   },
 
   post_clicks: {
-    label: 'Post Clicks',
+    label: 'Link Clicks',
     color: '#98E8B2',
   },
 
