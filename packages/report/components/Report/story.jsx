@@ -1,5 +1,4 @@
 import React from 'react';
-import moment from 'moment-timezone';
 import timezoneMock from 'timezone-mock';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
@@ -192,6 +191,18 @@ storiesOf('Report')
         saveChanges={() => {}}
         parsePageBreaks={() => {}}
         exporting
+      />
+    </Card>
+  ))
+  .add('renders a report in edit mode', () => (
+    <Card>
+      <Report
+        {...report}
+        dateRange={dateRange}
+        saveChanges={() => {}}
+        parsePageBreaks={() => {}}
+        exporting
+        edit
       />
     </Card>
   ))
