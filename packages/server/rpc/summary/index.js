@@ -27,6 +27,8 @@ const LABELS = {
   },
   instagram: {
     posts_count: 'Posts',
+
+
     likes: 'Likes',
     comments: 'Comments',
     followers: 'Total Followers',
