@@ -21,7 +21,7 @@ const LABELS = {
     reactions: 'Reactions',
     post_reach: 'Post Reach',
     page_engagements: 'Page & Post Engagements',
-    post_clicks: 'Post Clicks',
+    post_clicks: 'Link Clicks',
     new_followers: 'New Fans',
     posts_count: 'Posts',
   },
