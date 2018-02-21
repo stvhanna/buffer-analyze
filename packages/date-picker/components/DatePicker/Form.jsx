@@ -104,6 +104,7 @@ class Form extends Component {
   render () {
     // State
     const {
+      presets,
       calendarOpen,
       startDate,
       endDate,
@@ -131,6 +132,7 @@ class Form extends Component {
     return (
       <div>
         <Presets
+          presets={presets}
           selectPreset={selectPreset}
           minStartDate={minDate}
           startDate={startDate}

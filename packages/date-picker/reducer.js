@@ -24,6 +24,51 @@ function calculateDateRange(range) {
   return { startDate, endDate };
 }
 
+export const presets = [
+  {
+    name: '90 Days',
+    label: 'Past 90 Days',
+    range: 90,
+    selected: false,
+    disabled: false,
+  },
+  {
+    name: '30 Days',
+    label: 'Past 30 Days',
+    range: 30,
+    selected: false,
+    disabled: false,
+  },
+  {
+    name: '28 Days',
+    label: 'Past 28 Days',
+    range: 28,
+    selected: false,
+    disabled: false,
+  },
+  {
+    name: '7 Days',
+    label: 'Past 7 Days',
+    range: 7,
+    selected: true,
+    disabled: false,
+  },
+  {
+    name: 'Yesterday',
+    label: 'Yesterday',
+    range: 1,
+    selected: false,
+    disabled: false,
+  },
+  {
+    name: 'Custom',
+    label: 'Custom',
+    range: Infinity,
+    selected: false,
+    disabled: false,
+  },
+];
+
 const initialState = {
   loading: true,
   open: false,
@@ -32,6 +77,7 @@ const initialState = {
   maxDate: moment().valueOf(),
   month: moment().startOf('month').unix(),
   ...calculateDateRange(7),
+  presets,
 };
 
 
@@ -65,6 +111,10 @@ export default (state = initialState, action) => {
     case actionTypes.SET_DATE_RANGE:
       return {
         ...state,
+        presets: state.presets.map((preset) => {
+          preset.selected = action.preset ? preset.range === action.preset.range : preset.name === 'Custom';
+          return preset;
+        }),
         startDate: action.startDate,
         endDate: action.endDate,
         previousStartDate: null,
@@ -80,6 +130,10 @@ export default (state = initialState, action) => {
         ...state,
         loading: false,
         minDate: action.result,
+        presets: state.presets.map((preset) => {
+          preset.disabled = action.result > moment().subtract(preset.range, 'days');
+          return preset;
+        }),
       };
     case actionTypes.OPEN_DATE_PICKER:
       return {
@@ -137,9 +191,10 @@ export const actions = {
     startDate,
     endDate,
   }),
-  setDatePreset: range => ({
+  setDatePreset: preset => ({
     type: actionTypes.SET_DATE_RANGE,
-    ...calculateDateRange(range),
+    preset,
+    ...calculateDateRange(preset.range),
   }),
   setMonth: date => ({
     type: actionTypes.SET_MONTH,

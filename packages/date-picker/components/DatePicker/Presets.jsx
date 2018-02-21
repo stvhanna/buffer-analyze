@@ -76,59 +76,17 @@ const Item = styled.li`
   `}
 `;
 
-const PRESETS = [
-  {
-    name: '90 Days',
-    range: 90,
-  },
-  {
-    name: '30 Days',
-    range: 30,
-  },
-  {
-    name: '28 Days',
-    range: 28,
-  },
-  {
-    name: '7 Days',
-    range: 7,
-  },
-  {
-    name: 'Yesterday',
-    range: 1,
-  },
-  {
-    name: 'Custom',
-    range: Infinity,
-  },
-];
-
-const isRangeSelected = (range, start, end) => {
-  const rangeEnd = moment().subtract(1, 'day').format('MM/DD/YYYY');
-  const rangeStart = moment().subtract(range, 'days').format('MM/DD/YYYY');
-
-  const rangesMatch = (
-    rangeStart === moment.unix(start).format('MM/DD/YYYY') &&
-    rangeEnd === moment.unix(end).format('MM/DD/YYYY')
-  );
-
-  return (rangesMatch || range === Infinity);
-};
-
-const Presets = ({ selectPreset, minStartDate, startDate, endDate }) => {
-  const presets = PRESETS.map((preset) => {
-    const disabled = minStartDate > moment().subtract(preset.range, 'days');
-    const selectedRange = PRESETS.find(({ range }) => isRangeSelected(range, startDate, endDate));
-    const selected = selectedRange.range === preset.range;
-    const dataTip = disabled ? 'We don\'t have complete data for this range.' : null;
-    const handleClick = disabled ? null : (() => selectPreset(preset.range));
-    const buttonTextColor = (selected ? 'white' : null);
+const Presets = ({ presets, selectPreset, startDate, endDate }) => {
+  const presetButtons = presets.map((preset) => {
+    const dataTip = preset.disabled ? 'We don\'t have complete data for this range.' : null;
+    const handleClick = preset.disabled ? null : (() => selectPreset(preset));
+    const buttonTextColor = (preset.selected ? 'white' : null);
 
     return (
       <Item
-        active={selected}
-        inactive={!selected}
-        disabled={disabled}
+        active={preset.selected}
+        inactive={!preset.selected}
+        disabled={preset.disabled}
         key={preset.name.toLowerCase().replace(' ', '-')}
         data-tip={dataTip}
       >
@@ -146,10 +104,10 @@ const Presets = ({ selectPreset, minStartDate, startDate, endDate }) => {
   return (
     <Header>
       <List>
-        {presets.slice(0, 3)}
+        {presetButtons.slice(0, 3)}
       </List>
       <List>
-        {presets.splice(3)}
+        {presetButtons.splice(3)}
       </List>
     </Header>
   );

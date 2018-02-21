@@ -21,7 +21,15 @@ export default ({ dispatch, getState }) => next => (action) => {
   let startDate;
   let endDate;
   const state = getState();
+  const result = action.result;
   switch (action.type) {
+    case `get_report_${actionTypes.FETCH_SUCCESS}`:
+      if (result.date_range.range) {
+        dispatch(dateActions.setDatePreset(result.date_range));
+      } else {
+        dispatch(dateActions.setDateRange(result.date_range.startDate, result.date_range.endDate));
+      }
+      break;
     case `user_${actionTypes.FETCH_SUCCESS}`:
       startDate = getStartDate(state.router.location.search);
       endDate = getEndDate(state.router.location.search);

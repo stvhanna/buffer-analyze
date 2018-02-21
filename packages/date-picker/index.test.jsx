@@ -10,6 +10,7 @@ import DatePickerContainer, {
   middleware,
 } from './index';
 import DatePicker from './components/DatePicker';
+import { presets } from './reducer';
 
 configure({ adapter: new Adapter() });
 const storeFake = state => ({
@@ -30,6 +31,7 @@ describe('DatePicker', () => {
       minDate: 1463437140000,
       maxDate: 1511803062968,
       month: 1509508800,
+      presets,
     },
   };
 

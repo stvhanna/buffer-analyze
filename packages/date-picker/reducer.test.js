@@ -143,16 +143,29 @@ describe('reducer', () => {
     expect(state.month).toBe(month);
   });
 
-  it(`changes the date range when receiving ${actionTypes.SET_DATE_RANGE}`, () => {
-    const startDate = moment().subtract(4, 'days').unix();
-    const endDate = moment().subtract(2, 'days').unix();
-    const state = reducer(undefined, {
-      type: actionTypes.SET_DATE_RANGE,
-      startDate,
-      endDate,
+  describe('SET_DATE_RANGE', () => {
+    it('changes the date range', () => {
+      const startDate = moment().subtract(4, 'days').unix();
+      const endDate = moment().subtract(2, 'days').unix();
+      const state = reducer(undefined, {
+        type: actionTypes.SET_DATE_RANGE,
+        startDate,
+        endDate,
+      });
+      expect(state.startDate).toBe(startDate);
+      expect(state.endDate).toBe(endDate);
     });
-    expect(state.startDate).toBe(startDate);
-    expect(state.endDate).toBe(endDate);
+
+    it('if a new preset has been set, marks it as selected', () => {
+      const state = reducer(undefined, {
+        type: actionTypes.SET_DATE_RANGE,
+        preset: {
+          range: 30,
+        },
+      });
+      const selectedPreset = state.presets.find(preset => preset.selected);
+      expect(selectedPreset.range).toBe(30);
+    });
   });
 
   describe('OPEN CALENDAR', () => {

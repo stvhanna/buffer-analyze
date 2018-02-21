@@ -14,6 +14,7 @@ export default connect(
     minDate: ownProps.staticData ? null : state.date.minDate,
     maxDate: state.date.maxDate,
     month: state.date.month,
+    presets: state.date.presets,
     // add state here
   }),
   dispatch => ({
@@ -25,9 +26,9 @@ export default connect(
     clearEndDate: () => dispatch(actions.clearEndDate()),
     setEndDate: date => dispatch(actions.setEndDate(date)),
     setDateRange: (start, end) => dispatch(actions.setDateRange(start, end)),
-    selectPreset: (range) => {
-      if (range !== Infinity) {
-        dispatch(actions.setDatePreset(range));
+    selectPreset: (preset) => {
+      if (preset.range !== Infinity) {
+        dispatch(actions.setDatePreset(preset));
         dispatch(actions.close());
       } else {
         dispatch(actions.openCalendar());
@@ -37,5 +38,5 @@ export default connect(
 )(DatePicker);
 
 // export reducer, actions and action types
-export reducer, { actions, actionTypes } from './reducer';
+export reducer, { actions, actionTypes, presets } from './reducer';
 export middleware from './middleware';
