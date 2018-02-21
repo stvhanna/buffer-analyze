@@ -1,3 +1,4 @@
+const moment = require('moment-timezone');
 const rp = require('request-promise');
 const { method } = require('@bufferapp/micro-rpc');
 const profileParser = require('../utils/profileParser');
@@ -13,8 +14,19 @@ const RPC_ENDPOINTS = {
   comparison: require('../comparison'), // eslint-disable-line global-require
 };
 
-function requestChartData (chart, startDate, endDate, session) {
+function calculateDateRange(range, timezone) {
+  moment.tz.setDefault(timezone);
+  const startDate = moment().startOf('day').subtract(range, 'days').unix();
+  const endDate = moment().startOf('day').subtract(1, 'days').unix();
+  moment.tz.setDefault();
+
+  return { startDate, endDate };
+}
+
+function requestChartData (chart, dateRange, session) {
   if (RPC_ENDPOINTS[chart.chart_id] === undefined) return;
+  const { startDate, endDate } = dateRange;
+
   return RPC_ENDPOINTS[chart.chart_id].fn(Object.assign({
     profileId: chart.profile_id,
     profileService: chart.service,
@@ -26,7 +38,7 @@ function requestChartData (chart, startDate, endDate, session) {
 module.exports = method(
   'get_report',
   'get report details',
-  ({ _id, startDate, endDate }, { session }) =>
+  ({ _id, timezone }, { session }) =>
     rp({
       uri: `${process.env.ANALYZE_API_ADDR}/get_report`,
       method: 'POST',
@@ -35,11 +47,26 @@ module.exports = method(
         id: _id,
       },
       json: true,
-    }).then(report =>
-      Promise
-        .all(report.charts.map(chart => requestChartData(chart, startDate, endDate, session)))
+    }).then((report) => {
+      let dateRange;
+      if (report.date_range.range) {
+        dateRange = calculateDateRange(report.date_range.range, timezone);
+      } else {
+        dateRange = {
+          startDate: report.date_range.start,
+          endDate: report.date_range.end,
+        };
+      }
+
+      return Promise
+        .all(report.charts.map(chart => requestChartData(chart, dateRange, session)))
         .then(chartMetrics =>
           Object.assign(report, {
+            date_range: {
+              startDate: dateRange.startDate,
+              endDate: dateRange.endDate,
+              range: report.date_range.range,
+            },
             charts: report.charts
               .map((chart, index) => {
                 chart.profile = profileParser(chart.profile);
@@ -51,7 +78,7 @@ module.exports = method(
                 });
               })
               .filter(chart => RPC_ENDPOINTS[chart.chart_id] !== undefined),
-          })),
-    ),
+          }));
+    }),
 );
 
