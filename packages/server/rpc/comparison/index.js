@@ -56,13 +56,13 @@ const METRIC_CONFIGS_BY_KEY = {
   },
   engagement: {
     facebook: {
-      label: 'Engagement',
+      label: 'Engagements',
     },
     instagram: {
-      label: 'Engagement',
+      label: 'Engagements',
     },
     twitter: {
-      label: 'Engagement',
+      label: 'Engagements',
     },
   },
   comments: {
