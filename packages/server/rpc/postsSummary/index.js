@@ -16,9 +16,9 @@ const LABELS = {
     posts_count: 'Posts',
     retweets: 'Retweets',
     impressions: 'Impressions',
-    favorites: 'Likes',
     replies: 'Replies',
     url_clicks: 'Clicks',
+    favorites: 'Likes',
   },
   instagram: {
     posts_count: 'Posts',
@@ -52,6 +52,11 @@ const requestPostsSummary = (profileId, profileService, dateRange, accessToken) 
   });
 
 const filterMetrics = metrics => metrics.filter(metric => metric.label !== undefined);
+
+const sortMetrics = (metrics, profileService) => Object.values(LABELS[profileService]).map(
+  label => metrics.find(metric => metric.label === label),
+);
+
 
 const percentageDifference = (value, pastValue) => {
   const difference = value - pastValue;
@@ -96,9 +101,9 @@ module.exports = method(
         const currentPeriodResult = response[0].response;
         const pastPeriodResult = response[1].response;
         const metrics = Object.keys(currentPeriodResult);
-        return filterMetrics(metrics.map(metric =>
+        return sortMetrics(filterMetrics(metrics.map(metric =>
           summarize(metric, currentPeriodResult, pastPeriodResult, profileService),
-        ));
+        )), profileService);
       })
       .catch(() => []);
   },
