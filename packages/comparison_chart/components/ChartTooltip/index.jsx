@@ -84,7 +84,7 @@ const NoDataEntry = ({
     <Text color="white" size="small" weight="bold" >
       <MetricIcon metric={{ color: metric.color }} />
     </Text>
-    <Text color="white" size="small" > no {postsWording(metric.profileService)} published for</Text>
+    <Text color="white" size="small" > No {postsWording(metric.profileService)} were published for</Text>
     <Text color="white" size="small" weight="bold" > {metric.username} </Text>
   </span>
 );
@@ -120,10 +120,10 @@ const ComparisonChartTooltip = ({
   <Wrapper>
     <Header day={day} />
     <span>
-      {metrics.map(m => m.value === null ?
+      {metrics.map(m => (m.value === null ?
         (<NoDataEntry key={m.username} metric={m} />) :
         (<MetricEntry key={m.username} metric={m} />)
-      )}
+      ))}
     </span>
   </Wrapper>
 );
