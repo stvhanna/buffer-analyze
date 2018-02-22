@@ -56,6 +56,7 @@ export default (state = initialState, action) => {
         ...state,
         name: action.result.name,
         charts: action.result.charts,
+        dateRange: action.result.date_range,
         loading: false,
       };
     case `move_chart_${asyncDataFetchActionTypes.FETCH_FAIL}`:
@@ -81,7 +82,12 @@ export default (state = initialState, action) => {
       return {
         ...state,
         edit: false,
-        name: action.name,
+        name: action.name ? action.name : state.name,
+      };
+    case `update_report_${asyncDataFetchActionTypes.FETCH_START}`:
+      return {
+        ...state,
+        loading: !Object.is(state.dateRange, action.args.dateRange),
       };
     case actionTypes.EDIT_NAME:
       return {
@@ -97,9 +103,9 @@ export const actions = {
   editName: () => ({
     type: actionTypes.EDIT_NAME,
   }),
-  saveChanges: name => ({
+  saveChanges: report => ({
     type: actionTypes.SAVE_CHANGES,
-    name,
+    ...report,
   }),
   moveUp: chartId => ({
     type: actionTypes.MOVE_CHART_UP,

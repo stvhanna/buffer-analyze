@@ -77,7 +77,9 @@ describe('Report', () => {
       store={store}
     />);
 
-    expect(component.props().saveChanges('a new name!')).toEqual(actions.saveChanges('a new name!'));
+    expect(component.props().saveChanges('a new name!')).toEqual(actions.saveChanges({
+      name: 'a new name!',
+    }));
   });
 
   it('move up should mispatch moveUp', () => {

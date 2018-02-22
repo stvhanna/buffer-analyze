@@ -78,6 +78,20 @@ describe('reducer', () => {
     });
   });
 
+  it('updating the date range on a report sets its state to loading', () => {
+    const state = reducer(undefined, {
+      type: `update_report_${asyncDataFetchActions.FETCH_START}`,
+      args: {
+        dateRange: {
+          startDate: 'yesterday',
+          endDate: 'today',
+        },
+      },
+    });
+
+    expect(state.loading).toBeTruthy();
+  });
+
   describe('deleting and moving charts', () => {
     let initialState = null;
 
@@ -136,23 +150,44 @@ describe('reducer', () => {
       expect(initialState.charts).toEqual(stateWithChartsBackToNormal.charts);
     });
 
-    it('should revert move if fetch fails', () => {
-      const state = reducer(initialState, {
-        type: `move_chart_${asyncDataFetchActions.FETCH_START}`,
-        args: {
-          direction: DIRECTION_UP,
-          chartId: 2,
-        },
-      });
-      const revertedState = reducer(state, {
-        type: `move_chart_${asyncDataFetchActions.FETCH_FAIL}`,
-        args: {
-          direction: DIRECTION_UP,
-          chartId: 2,
-        },
+    describe('should revert move if fetch fails', () => {
+      it('move up should revert by moving back down', () => {
+        const state = reducer(initialState, {
+          type: `move_chart_${asyncDataFetchActions.FETCH_START}`,
+          args: {
+            direction: DIRECTION_UP,
+            chartId: 2,
+          },
+        });
+        const revertedState = reducer(state, {
+          type: `move_chart_${asyncDataFetchActions.FETCH_FAIL}`,
+          args: {
+            direction: DIRECTION_UP,
+            chartId: 2,
+          },
+        });
+
+        expect(revertedState.charts).toEqual(initialState.charts);
       });
 
-      expect(revertedState.charts).toEqual(initialState.charts);
+      it('move down should revert by moving back up', () => {
+        const state = reducer(initialState, {
+          type: `move_chart_${asyncDataFetchActions.FETCH_START}`,
+          args: {
+            direction: DIRECTION_DOWN,
+            chartId: 1,
+          },
+        });
+        const revertedState = reducer(state, {
+          type: `move_chart_${asyncDataFetchActions.FETCH_FAIL}`,
+          args: {
+            direction: DIRECTION_DOWN,
+            chartId: 1,
+          },
+        });
+
+        expect(revertedState.charts).toEqual(initialState.charts);
+      });
     });
   });
 
@@ -163,7 +198,9 @@ describe('reducer', () => {
       });
     });
     it('saveChanges', () => {
-      expect(actions.saveChanges('a new name')).toEqual({
+      expect(actions.saveChanges({
+        name: 'a new name',
+      })).toEqual({
         type: actionTypes.SAVE_CHANGES,
         name: 'a new name',
       });
