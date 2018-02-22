@@ -136,31 +136,37 @@ describe('rpc/posts_summary', () => {
       },
     });
 
-    expect(postsSummaryData).toEqual([{
-      label: 'Post Impressions',
-      value: 56755,
-      diff: 25,
-    }, {
-      label: 'Post Reach',
-      value: 1181030,
-      diff: -0,
-    }, {
-      label: 'Reactions',
-      value: 9391,
-      diff: 0,
-    }, {
-      label: 'Shares',
-      value: 5,
-      diff: 150,
-    }, {
-      label: 'Posts',
-      value: 3,
-      diff: -40,
-    }, {
-      label: 'Comments',
-      value: 100,
-      diff: 25,
-    },
+    expect(postsSummaryData).toEqual([
+      {
+        label: 'Posts',
+        value: 3,
+        diff: -40,
+      },
+      {
+        label: 'Post Impressions',
+        value: 56755,
+        diff: 25,
+      },
+      {
+        label: 'Post Reach',
+        value: 1181030,
+        diff: -0,
+      },
+      {
+        label: 'Reactions',
+        value: 9391,
+        diff: 0,
+      },
+      {
+        label: 'Comments',
+        value: 100,
+        diff: 25,
+      },
+      {
+        label: 'Shares',
+        value: 5,
+        diff: 150,
+      },
     ]);
   });
 });
