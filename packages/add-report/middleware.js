@@ -23,6 +23,11 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
           chartId: action.chart_id,
           name: action.name,
           state: action.state,
+          dateRange: {
+            range: store.getState().date.presets.find(preset => preset.selected).range,
+            start: store.getState().date.startDate,
+            end: store.getState().date.endDate,
+          },
         },
       }));
       break;
