@@ -125,8 +125,8 @@ export default [
     ],
     currentPeriodTotal: 4000,
     currentPeriodDiff: 50,
-    service: 'facebook',
+    service: 'instagram',
     timezone: 'America/New_York',
-    profileId: '1',
+    profileId: '4',
   },
 ];

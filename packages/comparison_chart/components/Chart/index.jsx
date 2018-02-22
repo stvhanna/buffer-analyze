@@ -99,31 +99,35 @@ function prepareSeries(
   return seriesConfig;
 }
 
-function prepareChartOptions(profilesMetricData, profiles) {
+function prepareChartOptions(profilesMetricData, profiles, metricKey) {
   const config = getChartConfig();
   const seriesData = profilesMetricData.map((profileData) => {
     const profile = profiles.find(p => p.id === profileData.profileId);
+    if (profile.service === 'instagram' && metricKey === 'reach') {
+      return null;
+    }
     return prepareSeries(
       profileData.dailyData,
       profile.timezone,
       profile.service,
       profile.username,
     );
-  }, { profiles });
+  }, { profiles, metricKey });
   config.series = seriesData.filter(e => e !== null);
   setChartLimits(config);
   return config;
 }
 
 const CHART_HEIGHT = '400px';
-const ComparisonChart = ({ profilesMetricData, profiles }) => {
-  const charOptions = prepareChartOptions(profilesMetricData, profiles);
+const ComparisonChart = ({ profilesMetricData, profiles, metricKey }) => {
+  const charOptions = prepareChartOptions(profilesMetricData, profiles, metricKey);
   return (<div style={{ minHeight: CHART_HEIGHT }}>
     <ReactHighcharts config={charOptions} />
   </div>);
 };
 
 ComparisonChart.propTypes = {
+  metricKey: PropTypes.string.isRequired,
   profilesMetricData: PropTypes.arrayOf(PropTypes.shape({
     dailyData: PropTypes.arrayOf(PropTypes.shape({
       day: PropTypes.number.isRequired,
