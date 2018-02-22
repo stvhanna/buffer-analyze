@@ -26,8 +26,7 @@ const profileTotals = [
   {
     currentPeriodTotal: 700,
     currentPeriodDiff: -10,
-    profileId: '3',
-    service: 'instagram',
+    profileId: '4',
     metric: {
       color: '#fda444',
       label: 'Impressions',
@@ -44,6 +43,7 @@ storiesOf('ComparisonFooter')
       }}
     >
       <ComparisonFooter
+        metricKey="audience"
         profileTotals={[profileTotals[2]]}
         profiles={profiles}
       />
@@ -56,6 +56,20 @@ storiesOf('ComparisonFooter')
       }}
     >
       <ComparisonFooter
+        metricKey="audience"
+        profileTotals={profileTotals}
+        profiles={profiles}
+      />
+    </div>
+  ))
+  .add('should render a coming soon message for instagram on reach metric', () => (
+    <div
+      style={{
+        width: '750px',
+      }}
+    >
+      <ComparisonFooter
+        metricKey="reach"
         profileTotals={profileTotals}
         profiles={profiles}
       />

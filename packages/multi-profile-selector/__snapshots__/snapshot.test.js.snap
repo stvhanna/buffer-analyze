@@ -73,8 +73,10 @@ exports[`Snapshots MultiProfileSelector Profiles should be disabled when 5 profi
                 "background": "#fff",
                 "border": "#fff 0 solid",
                 "borderRadius": "50%",
+                "display": "",
                 "height": "11px",
                 "left": "11px",
+                "marginRight": "",
                 "position": "absolute",
                 "top": "11px",
                 "width": "11px",
@@ -146,8 +148,10 @@ exports[`Snapshots MultiProfileSelector Profiles should be disabled when 5 profi
                 "background": "#fff",
                 "border": "#fff 0 solid",
                 "borderRadius": "50%",
+                "display": "",
                 "height": "11px",
                 "left": "11px",
+                "marginRight": "",
                 "position": "absolute",
                 "top": "11px",
                 "width": "11px",
@@ -219,8 +223,10 @@ exports[`Snapshots MultiProfileSelector Profiles should be disabled when 5 profi
                 "background": "#fff",
                 "border": "#fff 0 solid",
                 "borderRadius": "50%",
+                "display": "",
                 "height": "11px",
                 "left": "11px",
+                "marginRight": "",
                 "position": "absolute",
                 "top": "11px",
                 "width": "11px",
@@ -292,8 +298,10 @@ exports[`Snapshots MultiProfileSelector Profiles should be disabled when 5 profi
                 "background": "#fff",
                 "border": "#fff 0 solid",
                 "borderRadius": "50%",
+                "display": "",
                 "height": "11px",
                 "left": "11px",
+                "marginRight": "",
                 "position": "absolute",
                 "top": "11px",
                 "width": "11px",
@@ -304,7 +312,7 @@ exports[`Snapshots MultiProfileSelector Profiles should be disabled when 5 profi
               height="100%"
               style={
                 Object {
-                  "fill": "#ff1e1e",
+                  "fill": "#e53c5f",
                   "height": "100%",
                   "width": "100%",
                 }
@@ -316,7 +324,7 @@ exports[`Snapshots MultiProfileSelector Profiles should be disabled when 5 profi
               xmlnsXlink="http://www.w3.org/1999/xlink"
             >
               <g
-                className="torchRed"
+                className="instagram"
               >
                 <circle
                   cx="8"
@@ -380,8 +388,10 @@ exports[`Snapshots MultiProfileSelector Profiles should be disabled when 5 profi
                 "background": "#fff",
                 "border": "#fff 0 solid",
                 "borderRadius": "50%",
+                "display": "",
                 "height": "11px",
                 "left": "11px",
+                "marginRight": "",
                 "position": "absolute",
                 "top": "11px",
                 "width": "11px",
@@ -564,8 +574,10 @@ exports[`Snapshots MultiProfileSelector Profiles should be disabled when 5 profi
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -728,8 +740,10 @@ exports[`Snapshots MultiProfileSelector Profiles should be disabled when 5 profi
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -892,8 +906,10 @@ exports[`Snapshots MultiProfileSelector Profiles should be disabled when 5 profi
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -1056,8 +1072,10 @@ exports[`Snapshots MultiProfileSelector Profiles should be disabled when 5 profi
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -1220,8 +1238,10 @@ exports[`Snapshots MultiProfileSelector Profiles should be disabled when 5 profi
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -1232,7 +1252,7 @@ exports[`Snapshots MultiProfileSelector Profiles should be disabled when 5 profi
                       height="100%"
                       style={
                         Object {
-                          "fill": "#ff1e1e",
+                          "fill": "#e53c5f",
                           "height": "100%",
                           "width": "100%",
                         }
@@ -1244,7 +1264,7 @@ exports[`Snapshots MultiProfileSelector Profiles should be disabled when 5 profi
                       xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
                       <g
-                        className="torchRed"
+                        className="instagram"
                       >
                         <circle
                           cx="8"
@@ -1399,8 +1419,10 @@ exports[`Snapshots MultiProfileSelector Profiles should be disabled when 5 profi
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -1411,7 +1433,7 @@ exports[`Snapshots MultiProfileSelector Profiles should be disabled when 5 profi
                       height="100%"
                       style={
                         Object {
-                          "fill": "#ff1e1e",
+                          "fill": "#e53c5f",
                           "height": "100%",
                           "width": "100%",
                         }
@@ -1423,7 +1445,7 @@ exports[`Snapshots MultiProfileSelector Profiles should be disabled when 5 profi
                       xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
                       <g
-                        className="torchRed"
+                        className="instagram"
                       >
                         <circle
                           cx="8"
@@ -1584,8 +1606,10 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                 "background": "#fff",
                 "border": "#fff 0 solid",
                 "borderRadius": "50%",
+                "display": "",
                 "height": "11px",
                 "left": "11px",
+                "marginRight": "",
                 "position": "absolute",
                 "top": "11px",
                 "width": "11px",
@@ -1768,8 +1792,10 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -1932,8 +1958,10 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -2064,8 +2092,10 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -2196,8 +2226,10 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -2328,8 +2360,10 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -2340,7 +2374,7 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                       height="100%"
                       style={
                         Object {
-                          "fill": "#ff1e1e",
+                          "fill": "#e53c5f",
                           "height": "100%",
                           "width": "100%",
                         }
@@ -2352,7 +2386,7 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                       xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
                       <g
-                        className="torchRed"
+                        className="instagram"
                       >
                         <circle
                           cx="8"
@@ -2475,8 +2509,10 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -2487,7 +2523,7 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                       height="100%"
                       style={
                         Object {
-                          "fill": "#ff1e1e",
+                          "fill": "#e53c5f",
                           "height": "100%",
                           "width": "100%",
                         }
@@ -2499,7 +2535,7 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                       xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
                       <g
-                        className="torchRed"
+                        className="instagram"
                       >
                         <circle
                           cx="8"
@@ -2792,8 +2828,10 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -2924,8 +2962,10 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -3056,8 +3096,10 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -3188,8 +3230,10 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -3320,8 +3364,10 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -3332,7 +3378,7 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                       height="100%"
                       style={
                         Object {
-                          "fill": "#ff1e1e",
+                          "fill": "#e53c5f",
                           "height": "100%",
                           "width": "100%",
                         }
@@ -3344,7 +3390,7 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                       xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
                       <g
-                        className="torchRed"
+                        className="instagram"
                       >
                         <circle
                           cx="8"
@@ -3467,8 +3513,10 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -3479,7 +3527,7 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                       height="100%"
                       style={
                         Object {
-                          "fill": "#ff1e1e",
+                          "fill": "#e53c5f",
                           "height": "100%",
                           "width": "100%",
                         }
@@ -3491,7 +3539,7 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                       xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
                       <g
-                        className="torchRed"
+                        className="instagram"
                       >
                         <circle
                           cx="8"
@@ -3653,8 +3701,10 @@ exports[`Snapshots MultiProfileSelector compare profile button should be enabled
                 "background": "#fff",
                 "border": "#fff 0 solid",
                 "borderRadius": "50%",
+                "display": "",
                 "height": "11px",
                 "left": "11px",
+                "marginRight": "",
                 "position": "absolute",
                 "top": "11px",
                 "width": "11px",
@@ -3726,8 +3776,10 @@ exports[`Snapshots MultiProfileSelector compare profile button should be enabled
                 "background": "#fff",
                 "border": "#fff 0 solid",
                 "borderRadius": "50%",
+                "display": "",
                 "height": "11px",
                 "left": "11px",
+                "marginRight": "",
                 "position": "absolute",
                 "top": "11px",
                 "width": "11px",
@@ -3910,8 +3962,10 @@ exports[`Snapshots MultiProfileSelector compare profile button should be enabled
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -4074,8 +4128,10 @@ exports[`Snapshots MultiProfileSelector compare profile button should be enabled
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -4238,8 +4294,10 @@ exports[`Snapshots MultiProfileSelector compare profile button should be enabled
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -4370,8 +4428,10 @@ exports[`Snapshots MultiProfileSelector compare profile button should be enabled
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -4502,8 +4562,10 @@ exports[`Snapshots MultiProfileSelector compare profile button should be enabled
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -4514,7 +4576,7 @@ exports[`Snapshots MultiProfileSelector compare profile button should be enabled
                       height="100%"
                       style={
                         Object {
-                          "fill": "#ff1e1e",
+                          "fill": "#e53c5f",
                           "height": "100%",
                           "width": "100%",
                         }
@@ -4526,7 +4588,7 @@ exports[`Snapshots MultiProfileSelector compare profile button should be enabled
                       xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
                       <g
-                        className="torchRed"
+                        className="instagram"
                       >
                         <circle
                           cx="8"
@@ -4649,8 +4711,10 @@ exports[`Snapshots MultiProfileSelector compare profile button should be enabled
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -4661,7 +4725,7 @@ exports[`Snapshots MultiProfileSelector compare profile button should be enabled
                       height="100%"
                       style={
                         Object {
-                          "fill": "#ff1e1e",
+                          "fill": "#e53c5f",
                           "height": "100%",
                           "width": "100%",
                         }
@@ -4673,7 +4737,7 @@ exports[`Snapshots MultiProfileSelector compare profile button should be enabled
                       xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
                       <g
-                        className="torchRed"
+                        className="instagram"
                       >
                         <circle
                           cx="8"
@@ -4965,8 +5029,10 @@ exports[`Snapshots MultiProfileSelector should filter by profilesFilterString 1`
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -5148,8 +5214,10 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                 "background": "#fff",
                 "border": "#fff 0 solid",
                 "borderRadius": "50%",
+                "display": "",
                 "height": "11px",
                 "left": "11px",
+                "marginRight": "",
                 "position": "absolute",
                 "top": "11px",
                 "width": "11px",
@@ -5221,8 +5289,10 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                 "background": "#fff",
                 "border": "#fff 0 solid",
                 "borderRadius": "50%",
+                "display": "",
                 "height": "11px",
                 "left": "11px",
+                "marginRight": "",
                 "position": "absolute",
                 "top": "11px",
                 "width": "11px",
@@ -5405,8 +5475,10 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -5569,8 +5641,10 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -5701,8 +5775,10 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -5865,8 +5941,10 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -5997,8 +6075,10 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -6009,7 +6089,7 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                       height="100%"
                       style={
                         Object {
-                          "fill": "#ff1e1e",
+                          "fill": "#e53c5f",
                           "height": "100%",
                           "width": "100%",
                         }
@@ -6021,7 +6101,7 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                       xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
                       <g
-                        className="torchRed"
+                        className="instagram"
                       >
                         <circle
                           cx="8"
@@ -6144,8 +6224,10 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -6156,7 +6238,7 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                       height="100%"
                       style={
                         Object {
-                          "fill": "#ff1e1e",
+                          "fill": "#e53c5f",
                           "height": "100%",
                           "width": "100%",
                         }
@@ -6168,7 +6250,7 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                       xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
                       <g
-                        className="torchRed"
+                        className="instagram"
                       >
                         <circle
                           cx="8"
@@ -6460,8 +6542,10 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -6592,8 +6676,10 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -6724,8 +6810,10 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -6856,8 +6944,10 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -6988,8 +7078,10 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -7000,7 +7092,7 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                       height="100%"
                       style={
                         Object {
-                          "fill": "#ff1e1e",
+                          "fill": "#e53c5f",
                           "height": "100%",
                           "width": "100%",
                         }
@@ -7012,7 +7104,7 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                       xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
                       <g
-                        className="torchRed"
+                        className="instagram"
                       >
                         <circle
                           cx="8"
@@ -7135,8 +7227,10 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -7147,7 +7241,7 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                       height="100%"
                       style={
                         Object {
-                          "fill": "#ff1e1e",
+                          "fill": "#e53c5f",
                           "height": "100%",
                           "width": "100%",
                         }
@@ -7159,7 +7253,7 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                       xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
                       <g
-                        className="torchRed"
+                        className="instagram"
                       >
                         <circle
                           cx="8"
@@ -7321,8 +7415,10 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                 "background": "#fff",
                 "border": "#fff 0 solid",
                 "borderRadius": "50%",
+                "display": "",
                 "height": "11px",
                 "left": "11px",
+                "marginRight": "",
                 "position": "absolute",
                 "top": "11px",
                 "width": "11px",
@@ -7394,8 +7490,10 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                 "background": "#fff",
                 "border": "#fff 0 solid",
                 "borderRadius": "50%",
+                "display": "",
                 "height": "11px",
                 "left": "11px",
+                "marginRight": "",
                 "position": "absolute",
                 "top": "11px",
                 "width": "11px",
@@ -7467,8 +7565,10 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                 "background": "#fff",
                 "border": "#fff 0 solid",
                 "borderRadius": "50%",
+                "display": "",
                 "height": "11px",
                 "left": "11px",
+                "marginRight": "",
                 "position": "absolute",
                 "top": "11px",
                 "width": "11px",
@@ -7540,8 +7640,10 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                 "background": "#fff",
                 "border": "#fff 0 solid",
                 "borderRadius": "50%",
+                "display": "",
                 "height": "11px",
                 "left": "11px",
+                "marginRight": "",
                 "position": "absolute",
                 "top": "11px",
                 "width": "11px",
@@ -7552,7 +7654,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
               height="100%"
               style={
                 Object {
-                  "fill": "#ff1e1e",
+                  "fill": "#e53c5f",
                   "height": "100%",
                   "width": "100%",
                 }
@@ -7564,7 +7666,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
               xmlnsXlink="http://www.w3.org/1999/xlink"
             >
               <g
-                className="torchRed"
+                className="instagram"
               >
                 <circle
                   cx="8"
@@ -7628,8 +7730,10 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                 "background": "#fff",
                 "border": "#fff 0 solid",
                 "borderRadius": "50%",
+                "display": "",
                 "height": "11px",
                 "left": "11px",
+                "marginRight": "",
                 "position": "absolute",
                 "top": "11px",
                 "width": "11px",
@@ -7812,8 +7916,10 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -7976,8 +8082,10 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -8140,8 +8248,10 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -8304,8 +8414,10 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -8468,8 +8580,10 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -8480,7 +8594,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                       height="100%"
                       style={
                         Object {
-                          "fill": "#ff1e1e",
+                          "fill": "#e53c5f",
                           "height": "100%",
                           "width": "100%",
                         }
@@ -8492,7 +8606,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                       xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
                       <g
-                        className="torchRed"
+                        className="instagram"
                       >
                         <circle
                           cx="8"
@@ -8647,8 +8761,10 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -8659,7 +8775,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                       height="100%"
                       style={
                         Object {
-                          "fill": "#ff1e1e",
+                          "fill": "#e53c5f",
                           "height": "100%",
                           "width": "100%",
                         }
@@ -8671,7 +8787,7 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                       xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
                       <g
-                        className="torchRed"
+                        className="instagram"
                       >
                         <circle
                           cx="8"
@@ -8996,8 +9112,10 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -9128,8 +9246,10 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -9260,8 +9380,10 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -9392,8 +9514,10 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -9524,8 +9648,10 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -9536,7 +9662,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                       height="100%"
                       style={
                         Object {
-                          "fill": "#ff1e1e",
+                          "fill": "#e53c5f",
                           "height": "100%",
                           "width": "100%",
                         }
@@ -9548,7 +9674,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                       xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
                       <g
-                        className="torchRed"
+                        className="instagram"
                       >
                         <circle
                           cx="8"
@@ -9671,8 +9797,10 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -9683,7 +9811,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                       height="100%"
                       style={
                         Object {
-                          "fill": "#ff1e1e",
+                          "fill": "#e53c5f",
                           "height": "100%",
                           "width": "100%",
                         }
@@ -9695,7 +9823,7 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                       xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
                       <g
-                        className="torchRed"
+                        className="instagram"
                       >
                         <circle
                           cx="8"
@@ -9818,8 +9946,10 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -9950,8 +10080,10 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -10082,8 +10214,10 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -10214,8 +10348,10 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -10346,8 +10482,10 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -10478,8 +10616,10 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -10610,8 +10750,10 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -10742,8 +10884,10 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",
@@ -10874,8 +11018,10 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                         "background": "#fff",
                         "border": "#fff 0 solid",
                         "borderRadius": "50%",
+                        "display": "",
                         "height": "11px",
                         "left": "13px",
+                        "marginRight": "",
                         "position": "absolute",
                         "top": "13px",
                         "width": "11px",

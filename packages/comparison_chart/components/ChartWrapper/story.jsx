@@ -13,8 +13,6 @@ const profileTotals = [
     currentPeriodTotal: 400,
     currentPeriodDiff: 20,
     profileId: '1',
-    username: 'Buffer',
-    service: 'facebook',
     metric: {
       color: '#fda3f3',
       label: 'Fans',
@@ -23,9 +21,7 @@ const profileTotals = [
   {
     currentPeriodTotal: 700,
     currentPeriodDiff: -10,
-    profileId: '2',
-    username: 'buffer',
-    service: 'twitter',
+    profileId: '4',
     metric: {
       color: '#fda444',
       label: 'Followers',
@@ -35,6 +31,10 @@ const profileTotals = [
 
 const metrics = {
   audience: {
+    profileTotals,
+    profilesMetricData,
+  },
+  reach: {
     profileTotals,
     profilesMetricData,
   },
@@ -54,6 +54,20 @@ storiesOf('ComparisonChart')
         metrics={metrics}
         profiles={profiles}
         profileIds={profileIds}
+      />
+    </div>
+  ))
+  .add('[TESTED] should hide Instagram in the reach chart', () => (
+    <div
+      style={{
+        width: '750px',
+      }}
+    >
+      <ComparisonChart
+        metricKey="reach"
+        metrics={metrics}
+        profiles={profiles}
+        profileIds={['1', '4']}
       />
     </div>
   ))
