@@ -18,7 +18,10 @@ describe('middleware', () => {
     },
     report: {
       id: 'report_id_1',
-      dateRange: {},
+      dateRange: {
+        startDate: '10/10/2016',
+        endDate: '30/10/2016',
+      },
     },
     reportList: {
       reports: [{
@@ -93,7 +96,7 @@ describe('middleware', () => {
       const action = {
         type: dateActionTypes.SET_DATE_RANGE,
         startDate: '10/10/2016',
-        endDate: '20/10/2016',
+        endDate: '30/10/2016',
         preset: {
           range: 30,
         },
