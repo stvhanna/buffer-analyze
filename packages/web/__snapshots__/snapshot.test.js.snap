@@ -2687,10 +2687,10 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
           className="sc-laTMn fsSTcy"
         >
           <div
-            className="sc-kjoXOD bKsEHy"
+            className="sc-csuQGl hHHoqC"
           >
             <button
-              className="sc-hSdWYo eKWmcc"
+              className="sc-chPdSV kRuxkt"
               disabled={false}
               onClick={[Function]}
             >
@@ -2707,7 +2707,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
                 From: 10/29/17 - To: 11/04/17
               </span>
               <span
-                className="sc-eHgmQL jOLMIK"
+                className="sc-kgoBCf eomJbf"
               >
                 <svg
                   height="100%"
@@ -2736,17 +2736,17 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
               </span>
             </button>
             <div
-              className="sc-cvbbAY lmAiUy"
+              className="sc-kGXeez gNIyUX"
             >
               <div>
                 <header
-                  className="sc-bRBYWo dFNEsR"
+                  className="sc-cvbbAY iVyROH"
                 >
                   <ul
-                    className="sc-hzDkRC kBSCix"
+                    className="sc-jWBwVP kdEjLp"
                   >
                     <li
-                      className="sc-jhAzac eShgXQ"
+                      className="sc-brqgnP cTSvmE"
                       data-tip={null}
                       disabled={false}
                     >
@@ -2794,7 +2794,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
                       </button>
                     </li>
                     <li
-                      className="sc-jhAzac eShgXQ"
+                      className="sc-brqgnP cTSvmE"
                       data-tip={null}
                       disabled={false}
                     >
@@ -2842,7 +2842,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
                       </button>
                     </li>
                     <li
-                      className="sc-jhAzac eShgXQ"
+                      className="sc-brqgnP cTSvmE"
                       data-tip={null}
                       disabled={false}
                     >
@@ -2891,10 +2891,10 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
                     </li>
                   </ul>
                   <ul
-                    className="sc-hzDkRC kBSCix"
+                    className="sc-jWBwVP kdEjLp"
                   >
                     <li
-                      className="sc-jhAzac eShgXQ"
+                      className="sc-brqgnP cTSvmE"
                       data-tip={null}
                       disabled={false}
                     >
@@ -2942,7 +2942,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
                       </button>
                     </li>
                     <li
-                      className="sc-jhAzac eShgXQ"
+                      className="sc-brqgnP cTSvmE"
                       data-tip={null}
                       disabled={false}
                     >
@@ -2990,7 +2990,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
                       </button>
                     </li>
                     <li
-                      className="sc-jhAzac hjaNbY"
+                      className="sc-brqgnP himVzC"
                       data-tip={null}
                       disabled={false}
                     >
@@ -3040,12 +3040,12 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
                   </ul>
                 </header>
                 <div
-                  className="sc-caSCKo jwvIfN"
+                  className="sc-jlyJG imxPGX"
                 />
               </div>
             </div>
             <div
-              className="sc-cHGsZl cyOynz"
+              className="sc-Rmtcm bmXXsR"
               onClick={[Function]}
               role="button"
               tabIndex="0"
