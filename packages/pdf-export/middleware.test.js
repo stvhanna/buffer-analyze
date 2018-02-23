@@ -14,12 +14,12 @@ describe('middleware', () => {
   const store = {
     dispatch: jest.fn(),
     getState: jest.fn(() => ({
-      date: {
-        startDate: 5678,
-        endDate: 9876,
-      },
       report: {
         name: 'A report',
+        dateRange: {
+          startDate: 5678,
+          endDate: 9876,
+        },
       },
     })),
   };
