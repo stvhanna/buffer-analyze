@@ -78,6 +78,7 @@ storiesOf('PostsTable')
       }}
     >
       <PostsTable
+        selectedProfileId="foo"
         timezone={'America/Los_Angeles'}
         profileService={'facebook'}
         metrics={topPosts}
@@ -100,6 +101,7 @@ storiesOf('PostsTable')
       }}
     >
       <PostsTable
+        selectedProfileId="foo"
         timezone={'America/Los_Angeles'}
         profileService={'facebook'}
         metrics={topPosts}
@@ -119,6 +121,7 @@ storiesOf('PostsTable')
       }}
     >
       <PostsTable
+        selectedProfileId="foo"
         timezone={'America/Los_Angeles'}
         profileService={'facebook'}
         loading
@@ -142,6 +145,7 @@ storiesOf('PostsTable')
       }}
     >
       <PostsTable
+        selectedProfileId="foo"
         timezone={'America/Los_Angeles'}
         profileService={'facebook'}
         metrics={[]}
@@ -164,6 +168,7 @@ storiesOf('PostsTable')
       }}
     >
       <PostsTable
+        selectedProfileId="foo"
         timezone={'America/Los_Angeles'}
         profileService={'twitter'}
         metrics={topPosts}
@@ -186,6 +191,30 @@ storiesOf('PostsTable')
       }}
     >
       <PostsTable
+        selectedProfileId="foo"
+        timezone={'America/Los_Angeles'}
+        profileService={'instagram'}
+        metrics={topPosts}
+        selectMetric={action('selectMetric')}
+        selectedMetric={{
+          key: 'post_impressions',
+          label: 'Post Impressions',
+        }}
+        toggleDropdown={action('toggleDropdown')}
+        isDescendingSelected
+        handlePostsCountClick={action('handlePostsCountClick')}
+        activePostsCount={10}
+      />
+    </div>
+  ))
+  .add('should render an empty component if when selected profile is missing', () => (
+    <div
+      style={{
+        width: '750px',
+      }}
+    >
+      <PostsTable
+        selectedProfileId={null}
         timezone={'America/Los_Angeles'}
         profileService={'instagram'}
         metrics={topPosts}
