@@ -556,7 +556,7 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
       }
     >
       <div
-        className="sc-cQFLBn csZTIU"
+        className="sc-gojNiO duEdht"
       >
         <button
           aria-label={null}
@@ -587,13 +587,13 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
           }
         >
           <h1
-            className="sc-exAgwC jnixgg"
+            className="sc-cQFLBn draqRd"
           >
             Weekly Sync Report
           </h1>
         </button>
         <div
-          className="sc-gojNiO hKVKqB"
+          className="sc-daURTG glnDnL"
         >
           <svg
             height="100%"
@@ -631,13 +631,13 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
         }
       >
         <span
-          className="sc-bAeIUo jUGDKX"
+          className="sc-iujRgT efQEMt"
         >
           Showing for dates
         </span>
          
         <span
-          className="sc-iujRgT jUtcqQ"
+          className="sc-GMQeP ffoJxR"
         >
           Invalid date
            to 
@@ -646,10 +646,10 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
       </span>
     </span>
     <section
-      className="sc-hMFtBS eReMSp"
+      className="sc-cLQEGU gCVhdO"
     >
       <div
-        className="sc-bMVAic Nnqlo"
+        className="sc-bAeIUo fYVXSt"
       >
         <h2
           style={
@@ -684,10 +684,10 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
         }
       >
         <span
-          className="sc-hORach RePNO"
+          className="sc-bMVAic dOhBnu"
         >
           <span
-            className="sc-cLQEGU bfOdyz"
+            className="sc-gqPbQI biIafE"
           >
             Showing for accounts
           </span>
@@ -727,8 +727,10 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
                   "background": "#fff",
                   "border": "#fff 0 solid",
                   "borderRadius": "50%",
+                  "display": "",
                   "height": "13px",
                   "left": "9px",
+                  "marginRight": "",
                   "position": "absolute",
                   "top": "9px",
                   "width": "13px",
@@ -765,7 +767,7 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
             </div>
           </div>
           <span
-            className="sc-gqPbQI fenzdF"
+            className="sc-hORach iQkHhj"
           >
             Buffer
           </span>
@@ -782,7 +784,7 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
         }
       >
         <li
-          className="sc-bZQynM hDiwGY"
+          className="sc-bZQynM ciUnRY"
           width="25%"
         >
           <div
@@ -917,7 +919,7 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
           </div>
         </li>
         <li
-          className="sc-bZQynM hDiwGY"
+          className="sc-bZQynM ciUnRY"
           width="25%"
         >
           <div
@@ -1053,7 +1055,7 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
           </div>
         </li>
         <li
-          className="sc-bZQynM hDiwGY"
+          className="sc-bZQynM ciUnRY"
           width="25%"
         >
           <div
@@ -1189,7 +1191,7 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
           </div>
         </li>
         <li
-          className="sc-bZQynM hDiwGY"
+          className="sc-bZQynM ciUnRY"
           width="25%"
         >
           <div
@@ -1325,7 +1327,7 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
           </div>
         </li>
         <li
-          className="sc-bZQynM hDiwGY"
+          className="sc-bZQynM ciUnRY"
           width="25%"
         >
           <div
@@ -1461,7 +1463,7 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
           </div>
         </li>
         <li
-          className="sc-bZQynM hDiwGY"
+          className="sc-bZQynM ciUnRY"
           width="25%"
         >
           <div
@@ -1597,7 +1599,7 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
           </div>
         </li>
         <li
-          className="sc-bZQynM hDiwGY"
+          className="sc-bZQynM ciUnRY"
           width="25%"
         >
           <div
@@ -1733,7 +1735,7 @@ exports[`Snapshots Report adds page breaks where needed if exporting 1`] = `
           </div>
         </li>
         <li
-          className="sc-bZQynM hDiwGY"
+          className="sc-bZQynM ciUnRY"
           width="25%"
         >
           <div
@@ -1993,7 +1995,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
       }
     >
       <input
-        className="sc-GMQeP hFLrUy"
+        className="sc-exAgwC gidUPe"
         onBlur={[Function]}
         onChange={[Function]}
         value="Weekly Sync Report"
@@ -2009,13 +2011,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         }
       >
         <span
-          className="sc-bAeIUo jUGDKX"
+          className="sc-iujRgT efQEMt"
         >
           Showing for dates
         </span>
          
         <span
-          className="sc-iujRgT jUtcqQ"
+          className="sc-GMQeP ffoJxR"
         >
           Invalid date
            to 
@@ -2024,10 +2026,10 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
       </span>
     </span>
     <section
-      className="sc-hMFtBS eReMSp"
+      className="sc-cLQEGU gCVhdO"
     >
       <div
-        className="sc-bMVAic Nnqlo"
+        className="sc-bAeIUo fYVXSt"
       >
         <h2
           style={
@@ -2237,10 +2239,10 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         }
       >
         <span
-          className="sc-hORach RePNO"
+          className="sc-bMVAic dOhBnu"
         >
           <span
-            className="sc-cLQEGU bfOdyz"
+            className="sc-gqPbQI biIafE"
           >
             Showing for accounts
           </span>
@@ -2280,8 +2282,10 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   "background": "#fff",
                   "border": "#fff 0 solid",
                   "borderRadius": "50%",
+                  "display": "",
                   "height": "13px",
                   "left": "9px",
+                  "marginRight": "",
                   "position": "absolute",
                   "top": "9px",
                   "width": "13px",
@@ -2318,7 +2322,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </div>
           </div>
           <span
-            className="sc-gqPbQI fenzdF"
+            className="sc-hORach iQkHhj"
           >
             Buffer
           </span>
@@ -2335,7 +2339,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         }
       >
         <li
-          className="sc-bZQynM hDiwGY"
+          className="sc-bZQynM ciUnRY"
           width="25%"
         >
           <div
@@ -2470,7 +2474,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
           </div>
         </li>
         <li
-          className="sc-bZQynM hDiwGY"
+          className="sc-bZQynM ciUnRY"
           width="25%"
         >
           <div
@@ -2606,7 +2610,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
           </div>
         </li>
         <li
-          className="sc-bZQynM hDiwGY"
+          className="sc-bZQynM ciUnRY"
           width="25%"
         >
           <div
@@ -2742,7 +2746,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
           </div>
         </li>
         <li
-          className="sc-bZQynM hDiwGY"
+          className="sc-bZQynM ciUnRY"
           width="25%"
         >
           <div
@@ -2878,7 +2882,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
           </div>
         </li>
         <li
-          className="sc-bZQynM hDiwGY"
+          className="sc-bZQynM ciUnRY"
           width="25%"
         >
           <div
@@ -3014,7 +3018,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
           </div>
         </li>
         <li
-          className="sc-bZQynM hDiwGY"
+          className="sc-bZQynM ciUnRY"
           width="25%"
         >
           <div
@@ -3150,7 +3154,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
           </div>
         </li>
         <li
-          className="sc-bZQynM hDiwGY"
+          className="sc-bZQynM ciUnRY"
           width="25%"
         >
           <div
@@ -3286,7 +3290,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
           </div>
         </li>
         <li
-          className="sc-bZQynM hDiwGY"
+          className="sc-bZQynM ciUnRY"
           width="25%"
         >
           <div
@@ -3443,7 +3447,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
       }
     >
       <div
-        className="sc-cQFLBn csZTIU"
+        className="sc-gojNiO duEdht"
       >
         <button
           aria-label={null}
@@ -3474,13 +3478,13 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
           }
         >
           <h1
-            className="sc-exAgwC jnixgg"
+            className="sc-cQFLBn draqRd"
           >
             Weekly Sync Report
           </h1>
         </button>
         <div
-          className="sc-gojNiO hKVKqB"
+          className="sc-daURTG glnDnL"
         >
           <svg
             height="100%"
@@ -3518,13 +3522,13 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         }
       >
         <span
-          className="sc-bAeIUo jUGDKX"
+          className="sc-iujRgT efQEMt"
         >
           Showing for dates
         </span>
          
         <span
-          className="sc-iujRgT jUtcqQ"
+          className="sc-GMQeP ffoJxR"
         >
           Invalid date
            to 
@@ -3533,10 +3537,10 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
       </span>
     </span>
     <section
-      className="sc-hMFtBS eReMSp"
+      className="sc-cLQEGU gCVhdO"
     >
       <div
-        className="sc-bMVAic Nnqlo"
+        className="sc-bAeIUo fYVXSt"
       >
         <h2
           style={
@@ -3746,10 +3750,10 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         }
       >
         <span
-          className="sc-hORach RePNO"
+          className="sc-bMVAic dOhBnu"
         >
           <span
-            className="sc-cLQEGU bfOdyz"
+            className="sc-gqPbQI biIafE"
           >
             Showing for accounts
           </span>
@@ -3789,8 +3793,10 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                   "background": "#fff",
                   "border": "#fff 0 solid",
                   "borderRadius": "50%",
+                  "display": "",
                   "height": "13px",
                   "left": "9px",
+                  "marginRight": "",
                   "position": "absolute",
                   "top": "9px",
                   "width": "13px",
@@ -3827,7 +3833,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
             </div>
           </div>
           <span
-            className="sc-gqPbQI fenzdF"
+            className="sc-hORach iQkHhj"
           >
             Buffer
           </span>
@@ -3844,7 +3850,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         }
       >
         <li
-          className="sc-bZQynM hDiwGY"
+          className="sc-bZQynM ciUnRY"
           width="25%"
         >
           <div
@@ -3979,7 +3985,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
           </div>
         </li>
         <li
-          className="sc-bZQynM hDiwGY"
+          className="sc-bZQynM ciUnRY"
           width="25%"
         >
           <div
@@ -4115,7 +4121,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
           </div>
         </li>
         <li
-          className="sc-bZQynM hDiwGY"
+          className="sc-bZQynM ciUnRY"
           width="25%"
         >
           <div
@@ -4251,7 +4257,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
           </div>
         </li>
         <li
-          className="sc-bZQynM hDiwGY"
+          className="sc-bZQynM ciUnRY"
           width="25%"
         >
           <div
@@ -4387,7 +4393,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
           </div>
         </li>
         <li
-          className="sc-bZQynM hDiwGY"
+          className="sc-bZQynM ciUnRY"
           width="25%"
         >
           <div
@@ -4523,7 +4529,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
           </div>
         </li>
         <li
-          className="sc-bZQynM hDiwGY"
+          className="sc-bZQynM ciUnRY"
           width="25%"
         >
           <div
@@ -4659,7 +4665,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
           </div>
         </li>
         <li
-          className="sc-bZQynM hDiwGY"
+          className="sc-bZQynM ciUnRY"
           width="25%"
         >
           <div
@@ -4795,7 +4801,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
           </div>
         </li>
         <li
-          className="sc-bZQynM hDiwGY"
+          className="sc-bZQynM ciUnRY"
           width="25%"
         >
           <div

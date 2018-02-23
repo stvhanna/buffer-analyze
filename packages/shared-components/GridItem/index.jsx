@@ -18,13 +18,13 @@ const Item = styled.li`
   padding-right: 0.5rem;
 
   &:first-child > div {
-    padding-left: 0;
-    padding-right: 1rem;
+    padding-left: ${props => (props.withChart ? '0' : '')};
+    padding-right: ${props => (props.withChart ? '1rem' : '')};
   }
 
   &:last-child > div {
-    padding-left: 1rem;
-    padding-right: 0;
+    padding-left: ${props => (props.withChart ? '1rem' : '')};
+    padding-right: ${props => (props.withChart ? '0' : '')};
   }
 `;
 
@@ -62,7 +62,7 @@ const GridItem = ({
 }) => {
   const dailyMetricData = filterDailyDataMetrics(dailyData, metric.label);
   return (
-    <Item key={metric.label} width={gridWidth}>
+    <Item key={metric.label} width={gridWidth} withChart={dailyData.length > 0}>
       {prefix && prefix}
       <Container>
         {dailyData.length > 1 &&
