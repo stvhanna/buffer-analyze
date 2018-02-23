@@ -21,23 +21,10 @@ exports[`Snapshots ContextualCompare [TESTED] Should render Posts metrics as col
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -45,7 +32,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render Posts metrics as col
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -54,12 +41,12 @@ exports[`Snapshots ContextualCompare [TESTED] Should render Posts metrics as col
         </h2>
       </header>
       <div
-        className="sc-kAzzGY hFcmaz"
+        className="sc-kgoBCf jMQwnZ"
       >
         <div>
           <div>
             <div
-              className="sc-cSHVUG kVZMia"
+              className="sc-chPdSV dxNFWQ"
             >
               <div
                 className="dropdown dropdownContainer"
@@ -766,23 +753,10 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -790,7 +764,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -799,12 +773,12 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
         </h2>
       </header>
       <div
-        className="sc-kAzzGY hFcmaz"
+        className="sc-kgoBCf jMQwnZ"
       >
         <div>
           <div>
             <div
-              className="sc-cSHVUG kVZMia"
+              className="sc-chPdSV dxNFWQ"
             >
               <div
                 className="dropdown dropdownContainer"
@@ -1511,23 +1485,10 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -1535,7 +1496,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -1544,12 +1505,12 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
         </h2>
       </header>
       <div
-        className="sc-kAzzGY hFcmaz"
+        className="sc-kgoBCf jMQwnZ"
       >
         <div>
           <div>
             <div
-              className="sc-cSHVUG kVZMia"
+              className="sc-chPdSV dxNFWQ"
             >
               <div
                 style={
@@ -1704,7 +1665,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                             </span>
                           </button>
                           <span
-                            className="sc-jzJRlG jHSkfo"
+                            className="sc-kAzzGY dweAdK"
                             data-description="Already it was conjectured that this might be the well-known interplan industrialist Palmer Eldritch, who had gone to the Prox system a decade ago at the invitation of the Prox Council of humanoid types; they had wanted him to modernize their autofacs along Terran lines. Nothing had been heard from Eldritch since. Now this."
                           >
                             ?
@@ -1788,7 +1749,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                             </span>
                           </button>
                           <span
-                            className="sc-jzJRlG jHSkfo"
+                            className="sc-kAzzGY dweAdK"
                             data-description="Already it was conjectured that this might be the well-known interplan industrialist Palmer Eldritch, who had gone to the Prox system a decade ago at the invitation of the Prox Council of humanoid types; they had wanted him to modernize their autofacs along Terran lines. Nothing had been heard from Eldritch since. Now this."
                           >
                             ?
@@ -1860,7 +1821,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                             </span>
                           </button>
                           <span
-                            className="sc-jzJRlG jHSkfo"
+                            className="sc-kAzzGY dweAdK"
                             data-description="Discover how your posting frequency affects your fan count."
                           >
                             ?
@@ -2072,23 +2033,10 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -2096,7 +2044,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -2105,12 +2053,12 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
         </h2>
       </header>
       <div
-        className="sc-kAzzGY hFcmaz"
+        className="sc-kgoBCf jMQwnZ"
       >
         <div>
           <div>
             <div
-              className="sc-cSHVUG kVZMia"
+              className="sc-chPdSV dxNFWQ"
             >
               <div
                 style={
@@ -2265,7 +2213,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                             </span>
                           </button>
                           <span
-                            className="sc-jzJRlG jHSkfo"
+                            className="sc-kAzzGY dweAdK"
                             data-description="Already it was conjectured that this might be the well-known interplan industrialist Palmer Eldritch, who had gone to the Prox system a decade ago at the invitation of the Prox Council of humanoid types; they had wanted him to modernize their autofacs along Terran lines. Nothing had been heard from Eldritch since. Now this."
                           >
                             ?
@@ -2349,7 +2297,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                             </span>
                           </button>
                           <span
-                            className="sc-jzJRlG jHSkfo"
+                            className="sc-kAzzGY dweAdK"
                             data-description="Already it was conjectured that this might be the well-known interplan industrialist Palmer Eldritch, who had gone to the Prox system a decade ago at the invitation of the Prox Council of humanoid types; they had wanted him to modernize their autofacs along Terran lines. Nothing had been heard from Eldritch since. Now this."
                           >
                             ?
@@ -2421,7 +2369,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                             </span>
                           </button>
                           <span
-                            className="sc-jzJRlG jHSkfo"
+                            className="sc-kAzzGY dweAdK"
                             data-description="Discover how your posting frequency affects your fan count."
                           >
                             ?
@@ -2669,23 +2617,10 @@ exports[`Snapshots ContextualCompare [TESTED] should render a "no data" state 1`
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -2693,7 +2628,7 @@ exports[`Snapshots ContextualCompare [TESTED] should render a "no data" state 1`
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -2702,7 +2637,7 @@ exports[`Snapshots ContextualCompare [TESTED] should render a "no data" state 1`
         </h2>
       </header>
       <div
-        className="sc-kAzzGY hFcmaz"
+        className="sc-kgoBCf jMQwnZ"
       >
         <div
           className="sc-bdVaJa fWzNTu"
@@ -2758,23 +2693,10 @@ exports[`Snapshots ContextualCompare [TESTED] should render a loading state 1`] 
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -2782,7 +2704,7 @@ exports[`Snapshots ContextualCompare [TESTED] should render a loading state 1`] 
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -2791,7 +2713,7 @@ exports[`Snapshots ContextualCompare [TESTED] should render a loading state 1`] 
         </h2>
       </header>
       <div
-        className="sc-kAzzGY hFcmaz"
+        className="sc-kgoBCf jMQwnZ"
       >
         <div
           style={
@@ -3052,7 +2974,7 @@ exports[`Snapshots PresetsDropdown [TESTED] open dropdown 1`] = `
                 </span>
               </button>
               <span
-                className="sc-jzJRlG jHSkfo"
+                className="sc-kAzzGY dweAdK"
                 data-description="Already it was conjectured that this might be the well-known interplan industrialist Palmer Eldritch, who had gone to the Prox system a decade ago at the invitation of the Prox Council of humanoid types; they had wanted him to modernize their autofacs along Terran lines. Nothing had been heard from Eldritch since. Now this."
               >
                 ?
@@ -3136,7 +3058,7 @@ exports[`Snapshots PresetsDropdown [TESTED] open dropdown 1`] = `
                 </span>
               </button>
               <span
-                className="sc-jzJRlG jHSkfo"
+                className="sc-kAzzGY dweAdK"
                 data-description="Already it was conjectured that this might be the well-known interplan industrialist Palmer Eldritch, who had gone to the Prox system a decade ago at the invitation of the Prox Council of humanoid types; they had wanted him to modernize their autofacs along Terran lines. Nothing had been heard from Eldritch since. Now this."
               >
                 ?
@@ -3208,7 +3130,7 @@ exports[`Snapshots PresetsDropdown [TESTED] open dropdown 1`] = `
                 </span>
               </button>
               <span
-                className="sc-jzJRlG jHSkfo"
+                className="sc-kAzzGY dweAdK"
                 data-description="Discover how your posting frequency affects your fan count."
               >
                 ?

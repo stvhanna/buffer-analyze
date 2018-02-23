@@ -28,7 +28,7 @@ const ContextualCompare = ({
   return (
     <ChartCard>
       <ChartHeader>
-        <Title dailyData={data} />
+        <Title />
         <AddReport
           chart="contextual-compare"
           state={{

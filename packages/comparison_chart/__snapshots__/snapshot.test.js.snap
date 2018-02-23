@@ -21,18 +21,10 @@ exports[`Snapshots ComparisonChart [TESTED] should hide Instagram in the reach c
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          className="sc-kpOJdX hkatTF"
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -40,7 +32,7 @@ exports[`Snapshots ComparisonChart [TESTED] should hide Instagram in the reach c
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -50,7 +42,7 @@ exports[`Snapshots ComparisonChart [TESTED] should hide Instagram in the reach c
         </h2>
       </header>
       <div
-        className="sc-ckVGcZ dzSqhQ"
+        className="sc-jKJlTe jeWmsw"
       >
         <div>
           <div
@@ -61,17 +53,17 @@ exports[`Snapshots ComparisonChart [TESTED] should hide Instagram in the reach c
             }
           />
           <section
-            className="sc-kAzzGY cfzHJv"
+            className="sc-kgoBCf fFebmp"
           >
             <ul
-              className="sc-cSHVUG fGjpOO"
+              className="sc-chPdSV cHWtVK"
             >
               <li
                 className="sc-ifAKCX dYwfOF"
                 width="25%"
               >
                 <div
-                  className="sc-chPdSV iMhkHF"
+                  className="sc-kGXeez evarDB"
                 >
                   <span
                     className="sc-dnqmqq hHLyWY"
@@ -171,7 +163,7 @@ exports[`Snapshots ComparisonChart [TESTED] should hide Instagram in the reach c
                         }
                       >
                         <div
-                          className="sc-kgoBCf bcqlIB"
+                          className="sc-kpOJdX cyFStC"
                         >
                           <span
                             style={
@@ -292,7 +284,7 @@ exports[`Snapshots ComparisonChart [TESTED] should hide Instagram in the reach c
               </li>
             </ul>
             <div
-              className="sc-kGXeez eumamU"
+              className="sc-dxgOiQ ePbvtA"
             >
               <div
                 style={
@@ -395,18 +387,10 @@ exports[`Snapshots ComparisonChart [TESTED] should render a "no data" state 1`] 
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          className="sc-kpOJdX hkatTF"
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -414,7 +398,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render a "no data" state 1`] 
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -424,7 +408,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render a "no data" state 1`] 
         </h2>
       </header>
       <div
-        className="sc-eNQAEJ fUifcZ"
+        className="sc-hMqMXs fWFqoF"
       >
         <div
           className="sc-bdVaJa fWzNTu"
@@ -480,18 +464,10 @@ exports[`Snapshots ComparisonChart [TESTED] should render a loading state 1`] = 
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          className="sc-kpOJdX hkatTF"
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -499,7 +475,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render a loading state 1`] = 
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -509,7 +485,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render a loading state 1`] = 
         </h2>
       </header>
       <div
-        className="sc-jKJlTe jeWmsw"
+        className="sc-eNQAEJ fUifcZ"
       >
         <div
           style={
@@ -636,18 +612,10 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          className="sc-kpOJdX hkatTF"
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -655,7 +623,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -665,7 +633,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
         </h2>
       </header>
       <div
-        className="sc-dxgOiQ eHCNaG"
+        className="sc-ckVGcZ dzSqhQ"
       >
         <div>
           <div
@@ -676,17 +644,17 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
             }
           />
           <section
-            className="sc-kAzzGY cfzHJv"
+            className="sc-kgoBCf fFebmp"
           >
             <ul
-              className="sc-cSHVUG fGjpOO"
+              className="sc-chPdSV cHWtVK"
             >
               <li
                 className="sc-ifAKCX dYwfOF"
                 width="25%"
               >
                 <div
-                  className="sc-chPdSV iMhkHF"
+                  className="sc-kGXeez evarDB"
                 >
                   <span
                     className="sc-dnqmqq hHLyWY"
@@ -786,7 +754,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
                         }
                       >
                         <div
-                          className="sc-kgoBCf bcqlIB"
+                          className="sc-kpOJdX cyFStC"
                         >
                           <span
                             style={
@@ -910,7 +878,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
                 width="25%"
               >
                 <div
-                  className="sc-chPdSV iMhkHF"
+                  className="sc-kGXeez evarDB"
                 >
                   <span
                     className="sc-dnqmqq hHLyWY"
@@ -1025,7 +993,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
                         }
                       >
                         <div
-                          className="sc-kgoBCf bcqlIB"
+                          className="sc-kpOJdX cyFStC"
                         >
                           <span
                             style={
@@ -1165,7 +1133,7 @@ exports[`Snapshots ComparisonChartTooltip [TESTED] should render the tooltip 1`]
     }
   >
     <div
-      className="sc-jzJRlG fLuqiy"
+      className="sc-kAzzGY bNdPJH"
     >
       <span>
         <span

@@ -12,8 +12,8 @@ import {
   CommonChart as Chart,
 } from '@bufferapp/analyze-shared-components';
 
-import Title from '../Title';
 import Header from '../Header';
+import Title from '../Title';
 
 const AudienceChart = ({
   className,
@@ -29,7 +29,7 @@ const AudienceChart = ({
   return (
     <ChartCard>
       <ChartHeader>
-        <Title dailyData={data} />
+        <Title />
         <AddReport
           chart="audience"
           state={{

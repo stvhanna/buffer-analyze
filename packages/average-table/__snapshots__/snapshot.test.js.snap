@@ -1,5 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Snapshots AverageTable should not render if profile is for Instagram 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "750px",
+      }
+    }
+  />
+</span>
+`;
+
 exports[`Snapshots AverageTable should render a "no data" state 1`] = `
 <span>
   <div
@@ -21,23 +33,10 @@ exports[`Snapshots AverageTable should render a "no data" state 1`] = `
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -45,7 +44,7 @@ exports[`Snapshots AverageTable should render a "no data" state 1`] = `
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -54,7 +53,7 @@ exports[`Snapshots AverageTable should render a "no data" state 1`] = `
         </h2>
       </header>
       <div
-        className="sc-cSHVUG dLCFfX"
+        className="sc-chPdSV hROZPO"
         id="js-dom-to-png-average"
       >
         <div
@@ -111,23 +110,10 @@ exports[`Snapshots AverageTable should render a loading state 1`] = `
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -135,7 +121,7 @@ exports[`Snapshots AverageTable should render a loading state 1`] = `
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -144,7 +130,7 @@ exports[`Snapshots AverageTable should render a loading state 1`] = `
         </h2>
       </header>
       <div
-        className="sc-cSHVUG dLCFfX"
+        className="sc-chPdSV hROZPO"
         id="js-dom-to-png-average"
       >
         <div
@@ -272,23 +258,10 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -296,7 +269,7 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -305,11 +278,11 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
         </h2>
       </header>
       <div
-        className="sc-cSHVUG dLCFfX"
+        className="sc-chPdSV hROZPO"
         id="js-dom-to-png-average"
       >
         <ul
-          className="sc-jzJRlG xFKrf"
+          className="sc-kAzzGY hiaOuJ"
         >
           <li
             className="sc-ifAKCX jhSkFX"
@@ -753,23 +726,10 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -777,7 +737,7 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -786,11 +746,11 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
         </h2>
       </header>
       <div
-        className="sc-cSHVUG dLCFfX"
+        className="sc-chPdSV hROZPO"
         id="js-dom-to-png-average"
       >
         <ul
-          className="sc-jzJRlG xFKrf"
+          className="sc-kAzzGY hiaOuJ"
         >
           <li
             className="sc-ifAKCX jhSkFX"
@@ -1237,23 +1197,10 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -1261,7 +1208,7 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -1270,11 +1217,11 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
         </h2>
       </header>
       <div
-        className="sc-cSHVUG dLCFfX"
+        className="sc-chPdSV hROZPO"
         id="js-dom-to-png-average"
       >
         <ul
-          className="sc-jzJRlG xFKrf"
+          className="sc-kAzzGY hiaOuJ"
         >
           <li
             className="sc-ifAKCX jhSkFX"
@@ -1696,5 +1643,47 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
       </div>
     </div>
   </div>
+</span>
+`;
+
+exports[`Snapshots Title should render title as if for app 1`] = `
+<span>
+  <h2
+    className="sc-gqjmRU liZjsx"
+  >
+    <span
+      style={
+        Object {
+          "color": "#59626a",
+          "fontFamily": "\\"Roboto\\", sans-serif",
+          "fontSize": "1.25rem",
+          "fontWeight": 500,
+        }
+      }
+    >
+      Average performance
+    </span>
+  </h2>
+</span>
+`;
+
+exports[`Snapshots Title should render title as if for report 1`] = `
+<span>
+  <h2
+    className="sc-gqjmRU liZjsx"
+  >
+    <span
+      style={
+        Object {
+          "color": "#000",
+          "fontFamily": "\\"Roboto\\", sans-serif",
+          "fontSize": "1.25rem",
+          "fontWeight": 700,
+        }
+      }
+    >
+      Average performance
+    </span>
+  </h2>
 </span>
 `;

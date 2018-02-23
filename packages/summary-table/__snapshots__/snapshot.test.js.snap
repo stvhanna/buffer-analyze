@@ -21,23 +21,10 @@ exports[`Snapshots SummaryTable should render a "no data" state 1`] = `
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": 0,
-              "padding": 0,
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -45,7 +32,7 @@ exports[`Snapshots SummaryTable should render a "no data" state 1`] = `
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -116,23 +103,10 @@ exports[`Snapshots SummaryTable should render a loading state 1`] = `
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": 0,
-              "padding": 0,
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -140,7 +114,7 @@ exports[`Snapshots SummaryTable should render a loading state 1`] = `
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -282,23 +256,10 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": 0,
-              "padding": 0,
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -306,7 +267,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -1448,23 +1409,10 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": 0,
-              "padding": 0,
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -1472,7 +1420,7 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -2182,5 +2130,47 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
       </div>
     </div>
   </div>
+</span>
+`;
+
+exports[`Snapshots Title should render title as if for app 1`] = `
+<span>
+  <h2
+    className="sc-gqjmRU liZjsx"
+  >
+    <span
+      style={
+        Object {
+          "color": "#59626a",
+          "fontFamily": "\\"Roboto\\", sans-serif",
+          "fontSize": "1.25rem",
+          "fontWeight": 500,
+        }
+      }
+    >
+      Performance
+    </span>
+  </h2>
+</span>
+`;
+
+exports[`Snapshots Title should render title as if for report 1`] = `
+<span>
+  <h2
+    className="sc-gqjmRU liZjsx"
+  >
+    <span
+      style={
+        Object {
+          "color": "#000",
+          "fontFamily": "\\"Roboto\\", sans-serif",
+          "fontSize": "1.25rem",
+          "fontWeight": 700,
+        }
+      }
+    >
+      Performance
+    </span>
+  </h2>
 </span>
 `;

@@ -12,17 +12,18 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   position: absolute;
-  top: 1.25rem;
+  top: 75px;
   right: 0;
 `;
 
 const Box = styled.span`
+  background: #FFFFFF;
   border: 1px solid #D5E3EF;
   box-sizing: border-box;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   display: flex;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 1.75rem;
+  height: 1.75rem;
   align-items: center;
   justify-content: center;
   border-radius: 3px;

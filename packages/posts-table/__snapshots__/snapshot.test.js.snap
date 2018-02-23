@@ -1927,23 +1927,10 @@ exports[`Snapshots PostsTable should render a "no data" state 1`] = `
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -1951,7 +1938,7 @@ exports[`Snapshots PostsTable should render a "no data" state 1`] = `
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -2021,23 +2008,10 @@ exports[`Snapshots PostsTable should render a loading state 1`] = `
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -2045,7 +2019,7 @@ exports[`Snapshots PostsTable should render a loading state 1`] = `
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -2198,23 +2172,10 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -2222,7 +2183,7 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -4481,23 +4442,10 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -4505,7 +4453,7 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -5540,23 +5488,10 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -5564,7 +5499,7 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -7209,23 +7144,10 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
       }
     >
       <header
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottom": "1px solid #ECEEEF",
-            "display": "flex",
-            "justifyContent": "space-between",
-            "padding": "1.5rem",
-          }
-        }
+        className="sc-gZMcBi dRDRQC"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-gqjmRU liZjsx"
         >
           <span
             style={
@@ -7233,7 +7155,7 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -9468,6 +9390,90 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
       </div>
     </div>
   </div>
+</span>
+`;
+
+exports[`Snapshots Title should render title as if for app 1`] = `
+<span>
+  <h2
+    className="sc-gqjmRU liZjsx"
+  >
+    <span
+      style={
+        Object {
+          "color": "#59626a",
+          "fontFamily": "\\"Roboto\\", sans-serif",
+          "fontSize": "1.25rem",
+          "fontWeight": 500,
+        }
+      }
+    >
+      Post breakdown
+    </span>
+  </h2>
+</span>
+`;
+
+exports[`Snapshots Title should render title as if for report 1`] = `
+<span>
+  <h2
+    className="sc-gqjmRU liZjsx"
+  >
+    <span
+      style={
+        Object {
+          "color": "#000",
+          "fontFamily": "\\"Roboto\\", sans-serif",
+          "fontSize": "1.25rem",
+          "fontWeight": 700,
+        }
+      }
+    >
+      Post breakdown
+    </span>
+  </h2>
+</span>
+`;
+
+exports[`Snapshots Title should render title for Twitter is if for app 1`] = `
+<span>
+  <h2
+    className="sc-gqjmRU liZjsx"
+  >
+    <span
+      style={
+        Object {
+          "color": "#59626a",
+          "fontFamily": "\\"Roboto\\", sans-serif",
+          "fontSize": "1.25rem",
+          "fontWeight": 500,
+        }
+      }
+    >
+      Tweet breakdown
+    </span>
+  </h2>
+</span>
+`;
+
+exports[`Snapshots Title should render title for Twitter is if for report 1`] = `
+<span>
+  <h2
+    className="sc-gqjmRU liZjsx"
+  >
+    <span
+      style={
+        Object {
+          "color": "#000",
+          "fontFamily": "\\"Roboto\\", sans-serif",
+          "fontSize": "1.25rem",
+          "fontWeight": 700,
+        }
+      }
+    >
+      Tweet breakdown
+    </span>
+  </h2>
 </span>
 `;
 

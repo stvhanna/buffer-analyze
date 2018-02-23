@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import Text from '@bufferapp/components/Text';
-
 import {
   ChartStateNoData as NoData,
   ChartStateLoading as Loading,
@@ -13,6 +11,7 @@ import {
 } from '@bufferapp/analyze-shared-components';
 
 import AddReport from '@bufferapp/add-report';
+import Title from '../Title';
 
 const Grid = styled.ul`
   display: flex;
@@ -55,11 +54,6 @@ Table.propTypes = {
     diff: PropTypes.number,
   })).isRequired,
 };
-
-export const Title = () =>
-  <h2 style={{ margin: '0', padding: '0' }}>
-    <Text weight="bold" size="large">Average performance</Text>
-  </h2>;
 
 const AverageTable = ({ metrics, loading, profileService }) => {
   if (profileService === 'instagram') {

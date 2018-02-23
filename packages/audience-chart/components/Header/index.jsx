@@ -8,7 +8,6 @@ import {
 
 const Header = ({
   className,
-  mode,
   ...props
 }) => (<div className={className}>
   <MetricsDropdown

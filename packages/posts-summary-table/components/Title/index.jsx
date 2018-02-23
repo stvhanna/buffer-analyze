@@ -1,23 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Text from '@bufferapp/components/Text';
+import { ChartTitle } from '@bufferapp/analyze-shared-components';
 
-const title = {
-  margin: 0,
-  padding: 0,
-};
-
-const Title = ({ profileService }) =>
-  <h2 style={title}>
-    <Text weight="bold" size="large">
-      {profileService === 'twitter' ? 'Tweet ' : 'Post '}
-      summary
-    </Text>
-  </h2>
+const Title = ({ profileService, forReport }) =>
+  <ChartTitle forReport={forReport}>
+    {profileService === 'twitter' ? 'Tweet ' : 'Post '}
+    summary
+  </ChartTitle>
 ;
 
 Title.propTypes = {
   profileService: PropTypes.string.isRequired,
+  forReport: PropTypes.bool,
+};
+
+Title.defaultProps = {
+  forReport: false,
 };
 
 export default Title;

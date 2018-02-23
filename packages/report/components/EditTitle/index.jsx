@@ -3,9 +3,14 @@ import PropTypes from 'prop-types';
 import { fontFamily } from '@bufferapp/components/style/font';
 import styled from 'styled-components';
 
-const EditTitleInput = styled.input`
-  color: #343E47;
-  font-size: 26px;
+const Form = styled.form`
+  margin: 0;
+  padding: 0;
+`;
+
+const Input = styled.input`
+  color: #000000;
+  font-size: 2rem;
   font-weight: bold;
   font-family: ${fontFamily};
   margin: 0 0 .5rem;
@@ -16,25 +21,23 @@ const EditTitleInput = styled.input`
 `;
 
 class EditTitle extends Component {
-  static propTypes = {
-    name: PropTypes.string.isRequired,
-    saveChanges: PropTypes.func.isRequired,
-  };
   constructor(props) {
     super(props);
 
     this.state = {
       name: props.name,
     };
-    this.handleChange = this.handleChange.bind(this);
-    this.handleBlur = this.handleBlur.bind(this);
   }
 
-  handleBlur() {
+  handleBlur = () => {
     this.props.saveChanges(this.state.name);
   }
 
-  handleChange(e) {
+  handleSubmit = () => {
+    this.props.saveChanges(this.state.name);
+  }
+
+  handleChange = (e) => {
     this.setState({
       name: e.target.value,
     });
@@ -42,14 +45,22 @@ class EditTitle extends Component {
 
   render() {
     return (
-      <EditTitleInput
-        value={this.state.name}
-        onChange={this.handleChange}
-        onBlur={this.handleBlur}
-        autofocus
-      />
+      <Form onSubmit={this.handleSubmit}>
+        <Input
+          innerRef={(input) => { this.input = input; }}
+          value={this.state.name}
+          onChange={this.handleChange}
+          onBlur={this.handleBlur}
+          autoFocus
+        />
+      </Form>
     );
   }
 }
+
+EditTitle.propTypes = {
+  name: PropTypes.string.isRequired,
+  saveChanges: PropTypes.func.isRequired,
+};
 
 export default EditTitle;

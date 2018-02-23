@@ -1,16 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
-const header = {
-  display: 'flex',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-  padding: '1.5rem',
-  borderBottom: '1px solid #ECEEEF',
-};
+const Container = styled.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #ECEEEF;
+`;
 
 const Header = ({ children }) =>
-  <header style={header}>{children}</header>;
+  <Container>{children}</Container>;
 
 Header.propTypes = {
   children: PropTypes.node.isRequired,
