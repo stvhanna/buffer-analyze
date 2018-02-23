@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {
-  ChartStateNoData as NoData,
-  ChartStateLoading as Loading,
   ChartCard as Card,
   ChartHeader as Header,
 } from '@bufferapp/analyze-shared-components';
@@ -19,22 +17,6 @@ const ChartWrapper = ({
   loading,
   metricKey,
 }) => {
-  let content = null;
-
-  if (loading) {
-    content = <Loading active noBorder />;
-  } else if (!metrics[metricKey]) {
-    content = <NoData />;
-  } else {
-    content = (
-      <ChartAndFooter
-        metrics={metrics}
-        metricKey={metricKey}
-        profiles={profiles}
-      />
-    );
-  }
-
   const ContentContainer = styled.div`
     position: relative;
     padding: 1.5rem;
@@ -54,7 +36,12 @@ const ChartWrapper = ({
         />
       </Header>
       <ContentContainer>
-        {content}
+        <ChartAndFooter
+          loading={loading}
+          metrics={metrics}
+          metricKey={metricKey}
+          profiles={profiles}
+        />
       </ContentContainer>
     </Card>
   );
