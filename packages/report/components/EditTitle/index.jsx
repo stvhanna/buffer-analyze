@@ -21,7 +21,6 @@ const Input = styled.input`
 `;
 
 class EditTitle extends Component {
-
   constructor(props) {
     super(props);
 
