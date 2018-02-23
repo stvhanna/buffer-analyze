@@ -155,7 +155,7 @@ describe('rpc/summary', () => {
       value: 12831,
       diff: 149,
     }, {
-      label: 'Post Clicks',
+      label: 'Link Clicks',
       value: 59989,
       diff: 173,
     }, {

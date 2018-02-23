@@ -7,11 +7,12 @@ import Text from '@bufferapp/components/Text';
 import {
   GridItem,
   ProfileIcon,
+  SocialIcon,
 } from '@bufferapp/analyze-shared-components';
 
-import {
-  shuttleGrey,
-} from '@bufferapp/components/style/color';
+function capitalizeWord(name) {
+  return `${name.charAt(0).toUpperCase()}${name.slice(1)}`;
+}
 
 const Grid = styled.ul`
   display: flex;
@@ -43,7 +44,7 @@ const ProfileCell = ({ profileTotal, profile }) => (
     }}
     customLabel={
       <ProfileUsernameWrapper>
-        <Text weight="bold" color={shuttleGrey}>
+        <Text weight="bold" color="shuttleGrey">
           {profile.username}
         </Text>
       </ProfileUsernameWrapper>
@@ -76,8 +77,43 @@ ProfileCell.propTypes = {
   }).isRequired,
 };
 
+const ComingSoonWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0.8rem;
+  margin-top: 1rem;
+  position: relative;
+  align-items: center;
+`;
+
+const ComingSoon = ({ metricKey, profile }) => (
+  <ComingSoonWrapper>
+    <SocialIcon
+      service={profile.service}
+      socialIconSize={18}
+      avatarSize={12}
+      inline
+    />
+    <Text size="small" color="lightSlate">
+      {`${capitalizeWord(profile.service)} ${metricKey} coming soon`}
+    </Text>
+  </ComingSoonWrapper>
+);
+ComingSoon.propTypes = {
+  metricKey: PropTypes.string.isRequired,
+  profile: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    username: PropTypes.string.isRequired,
+    avatarUrl: PropTypes.string.isRequired,
+    service: PropTypes.string.isRequired,
+  }).isRequired,
+};
+
 function renderGridItem(profileTotal) {
   const profile = this.profiles.find(p => p.id === profileTotal.profileId);
+  if (profile.service === 'instagram' && this.metricKey === 'reach') {
+    return null;
+  }
   return (<ProfileCell
     key={profileTotal.profileId}
     profileTotal={profileTotal}
@@ -85,11 +121,23 @@ function renderGridItem(profileTotal) {
   />);
 }
 
-const ComparisonFooter = ({ profileTotals, profiles }) => (
+function renderComingSoon(profileTotal) {
+  const profile = this.profiles.find(p => p.id === profileTotal.profileId);
+  if (profile.service === 'instagram' && this.metricKey === 'reach') {
+    return (<ComingSoon
+      metricKey={this.metricKey}
+      profile={profile}
+    />);
+  }
+  return null;
+}
+
+const ComparisonFooter = ({ profileTotals, profiles, metricKey }) => (
   <Wrapper>
     <Grid>
-      {profileTotals.map(renderGridItem, { profiles })}
+      {profileTotals.map(renderGridItem, { profiles, metricKey })}
     </Grid>
+    {profileTotals.map(renderComingSoon, { profiles, metricKey })}
   </Wrapper>
 );
 
@@ -98,6 +146,7 @@ ComparisonFooter.defaultProps = {
 };
 
 ComparisonFooter.propTypes = {
+  metricKey: PropTypes.string.isRequired,
   profileTotals: PropTypes.arrayOf(PropTypes.shape({
     metric: PropTypes.shape({
       label: PropTypes.string.isRequired,

@@ -7,7 +7,7 @@ import {
   CircleTwitterIcon,
 } from '@bufferapp/components';
 
-const SocialIcon = ({ service, socialIconSize, avatarSize, withBorder }) => {
+const SocialIcon = ({ service, socialIconSize, avatarSize, withBorder, inline }) => {
   let icon;
   switch (service) {
     case 'twitter':
@@ -17,9 +17,7 @@ const SocialIcon = ({ service, socialIconSize, avatarSize, withBorder }) => {
       icon = <CircleFacebookIcon color={service} size={{ width: '100%', height: '100%' }} />;
       break;
     case 'instagram':
-      // TODO using this as it's the only red we have
-      // but we need to change it to match instagram color
-      icon = <CircleInstagramIcon color={'torchRed'} size={{ width: '100%', height: '100%' }} />;
+      icon = <CircleInstagramIcon color={service} size={{ width: '100%', height: '100%' }} />;
       break;
     default:
       icon = null;
@@ -30,7 +28,9 @@ const SocialIcon = ({ service, socialIconSize, avatarSize, withBorder }) => {
     <div
       style={{
         background: '#fff',
-        position: 'absolute',
+        position: `${!inline ? 'absolute' : ''}`,
+        display: `${inline ? 'inline-block' : ''}`,
+        marginRight: `${inline ? '0.25rem' : ''}`,
         width: `${socialIconSize}px`,
         height: `${socialIconSize}px`,
         top: `${avatarSize - socialIconSize}px`,
@@ -47,12 +47,15 @@ const SocialIcon = ({ service, socialIconSize, avatarSize, withBorder }) => {
 SocialIcon.propTypes = {
   service: PropTypes.oneOf(['twitter', 'facebook', 'instagram']).isRequired,
   socialIconSize: PropTypes.number.isRequired,
-  avatarSize: PropTypes.number.isRequired,
+  avatarSize: PropTypes.number,
   withBorder: PropTypes.bool,
+  inline: PropTypes.bool,
 };
 
 SocialIcon.defaultProps = {
+  avatarSize: 0,
   withBorder: false,
+  inline: false,
 };
 
 export default SocialIcon;

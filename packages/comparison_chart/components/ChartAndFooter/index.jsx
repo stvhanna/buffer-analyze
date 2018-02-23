@@ -10,12 +10,14 @@ const ChartAndFooter = ({
   profiles,
 }) => (<div>
   <Chart
+    metricKey={metricKey}
     profilesMetricData={metrics[metricKey].profilesMetricData}
     profiles={profiles}
   />
   <Footer
     profileTotals={metrics[metricKey].profileTotals}
     profiles={profiles}
+    metricKey={metricKey}
   />
 </div>);
 

@@ -19,5 +19,14 @@ storiesOf('SocialIcon')
       avatarSize={32}
       withBorder
     />
+  ))
+  .add('should render inline', () => (
+    <div>
+      <SocialIcon
+        service={'instagram'}
+        socialIconSize={16}
+        inline
+      /> Foo
+    </div>
   ));
 

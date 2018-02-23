@@ -30,7 +30,7 @@ const facebookProfiles = [
 const instagramProfiles = [
   {
     avatarUrl,
-    username: 'Buffer',
+    username: 'Buffer Instagram',
     id: '4',
     service: 'instagram',
     timezone: 'America/Los_Angeles',

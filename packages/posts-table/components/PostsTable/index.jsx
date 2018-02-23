@@ -78,9 +78,11 @@ export const Table = ({ metrics, timezone, service }) => {
           <li className={metricColumn}>
             <Text size="small">Engagements</Text>
           </li>
-          <li className={metricColumn}>
-            <Text size="small">Audience</Text>
-          </li>
+          {(service !== 'instagram') ?
+            <li className={metricColumn}>
+              <Text size="small">Audience</Text>
+            </li>
+          : null}
         </ul>
       </header>
       <ul className={postsContainer}>
