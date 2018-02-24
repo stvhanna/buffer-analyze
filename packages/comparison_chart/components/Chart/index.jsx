@@ -115,6 +115,11 @@ function prepareChartOptions(profilesMetricData, profiles, metricKey) {
   }, { profiles, metricKey });
   config.series = seriesData.filter(e => e !== null);
   setChartLimits(config);
+
+  config.xAxis = Object.assign({}, getChartConfig().xAxis, {
+    minorTickInterval: getMinorTickInterval(profilesMetricData[0].dailyData),
+  });
+
   return config;
 }
 
