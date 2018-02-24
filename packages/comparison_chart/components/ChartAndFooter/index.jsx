@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import {
   ChartStateNoData as NoData,
-  ChartStateLoading as Loading
+  ChartStateLoading as Loading,
 } from '@bufferapp/analyze-shared-components';
 
 import Chart from '../Chart';

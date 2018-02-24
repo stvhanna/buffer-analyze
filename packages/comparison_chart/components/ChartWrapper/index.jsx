@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {
@@ -10,42 +10,46 @@ import AddReport from '@bufferapp/add-report';
 import ChartAndFooter from '../ChartAndFooter';
 import Title from '../Title';
 
-const ChartWrapper = ({
-  metrics,
-  profiles,
-  profileIds,
-  loading,
-  metricKey,
-}) => {
-  const ContentContainer = styled.div`
-    position: relative;
-    padding: 1.5rem;
-  `;
+const ContentContainer = styled.div`
+  position: relative;
+  padding: 1.5rem;
+`;
 
-  return (
-    <Card>
-      <Header>
-        <Title metricKey={metricKey} />
-        <AddReport
-          chart="comparison"
-          state={{
-            metricKey,
-            profileIds,
-            profiles,
-          }}
-        />
-      </Header>
-      <ContentContainer>
-        <ChartAndFooter
-          loading={loading}
-          metrics={metrics}
-          metricKey={metricKey}
-          profiles={profiles}
-        />
-      </ContentContainer>
-    </Card>
-  );
-};
+class ChartWrapper extends PureComponent {
+  render() {
+    const {
+      metrics,
+      profiles,
+      profileIds,
+      loading,
+      metricKey,
+    } = this.props;
+
+    return (
+      <Card>
+        <Header>
+          <Title metricKey={metricKey} />
+          <AddReport
+            chart="comparison"
+            state={{
+              metricKey,
+              profileIds,
+              profiles,
+            }}
+          />
+        </Header>
+        <ContentContainer>
+          <ChartAndFooter
+            loading={loading}
+            metrics={metrics}
+            metricKey={metricKey}
+            profiles={profiles}
+          />
+        </ContentContainer>
+      </Card>
+    );
+  }
+}
 
 ChartWrapper.defaultProps = {
   loading: false,
