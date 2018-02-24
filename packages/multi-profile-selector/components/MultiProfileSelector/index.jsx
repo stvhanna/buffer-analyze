@@ -23,6 +23,8 @@ import {
   dropdownListScrollable,
 } from './style.less';
 
+const MAX_SELECTABLEPROFILES = 3;
+
 const styleButton = {
   cursor: 'pointer',
   display: 'flex',
@@ -54,7 +56,7 @@ function renderDropdownItem(profile, selectedProfiles, toggleProfile) {
   const selectedProfileIds = selectedProfiles.map(p => p.id);
 
   const selected = selectedProfileIds.indexOf(profile.id) !== -1;
-  const disabled = !selected && selectedProfileIds.length === 5;
+  const disabled = !selected && selectedProfileIds.length === MAX_SELECTABLEPROFILES;
 
   return (<DropdownItem
     key={profile.id}
