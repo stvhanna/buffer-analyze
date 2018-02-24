@@ -168,7 +168,7 @@ exports[`Snapshots ComparisonChart [TESTED] should hide Instagram in the reach c
                           <span
                             style={
                               Object {
-                                "color": undefined,
+                                "color": "#59626a",
                                 "fontFamily": "\\"Roboto\\", sans-serif",
                                 "fontSize": "1rem",
                                 "fontWeight": 700,
@@ -759,7 +759,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
                           <span
                             style={
                               Object {
-                                "color": undefined,
+                                "color": "#59626a",
                                 "fontFamily": "\\"Roboto\\", sans-serif",
                                 "fontSize": "1rem",
                                 "fontWeight": 700,
@@ -998,7 +998,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
                           <span
                             style={
                               Object {
-                                "color": undefined,
+                                "color": "#59626a",
                                 "fontFamily": "\\"Roboto\\", sans-serif",
                                 "fontSize": "1rem",
                                 "fontWeight": 700,
