@@ -44,7 +44,7 @@ const ProfileCell = ({ profileTotal, profile }) => (
     }}
     customLabel={
       <ProfileUsernameWrapper>
-        <Text weight="bold" color="shuttleGrey">
+        <Text weight="bold" color="shuttleGray">
           {profile.username}
         </Text>
       </ProfileUsernameWrapper>
@@ -66,8 +66,6 @@ ProfileCell.propTypes = {
     currentPeriodTotal: PropTypes.number.isRequired,
     currentPeriodDiff: PropTypes.number.isRequired,
     profileId: PropTypes.string.isRequired,
-    username: PropTypes.string.isRequired,
-    service: PropTypes.string,
   }).isRequired,
   profile: PropTypes.shape({
     id: PropTypes.string.isRequired,
@@ -125,6 +123,7 @@ function renderComingSoon(profileTotal) {
   const profile = this.profiles.find(p => p.id === profileTotal.profileId);
   if (profile.service === 'instagram' && this.metricKey === 'reach') {
     return (<ComingSoon
+      key={profile.id}
       metricKey={this.metricKey}
       profile={profile}
     />);
@@ -155,8 +154,6 @@ ComparisonFooter.propTypes = {
     currentPeriodTotal: PropTypes.number.isRequired,
     currentPeriodDiff: PropTypes.number.isRequired,
     profileId: PropTypes.string.isRequired,
-    username: PropTypes.string.isRequired,
-    service: PropTypes.string,
   })).isRequired,
   profiles: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string.isRequired,

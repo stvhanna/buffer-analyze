@@ -42,7 +42,7 @@ exports[`Snapshots ComparisonChart [TESTED] should hide Instagram in the reach c
         </h2>
       </header>
       <div
-        className="sc-jKJlTe jeWmsw"
+        className="sc-ckVGcZ eVVHjA"
       >
         <div>
           <div
@@ -168,7 +168,7 @@ exports[`Snapshots ComparisonChart [TESTED] should hide Instagram in the reach c
                           <span
                             style={
                               Object {
-                                "color": undefined,
+                                "color": "#59626a",
                                 "fontFamily": "\\"Roboto\\", sans-serif",
                                 "fontSize": "1rem",
                                 "fontWeight": 700,
@@ -408,7 +408,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render a "no data" state 1`] 
         </h2>
       </header>
       <div
-        className="sc-hMqMXs fWFqoF"
+        className="sc-ckVGcZ eVVHjA"
       >
         <div
           className="sc-bdVaJa fWzNTu"
@@ -485,7 +485,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render a loading state 1`] = 
         </h2>
       </header>
       <div
-        className="sc-eNQAEJ fUifcZ"
+        className="sc-ckVGcZ eVVHjA"
       >
         <div
           style={
@@ -633,7 +633,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
         </h2>
       </header>
       <div
-        className="sc-ckVGcZ dzSqhQ"
+        className="sc-ckVGcZ eVVHjA"
       >
         <div>
           <div
@@ -759,7 +759,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
                           <span
                             style={
                               Object {
-                                "color": undefined,
+                                "color": "#59626a",
                                 "fontFamily": "\\"Roboto\\", sans-serif",
                                 "fontSize": "1rem",
                                 "fontWeight": 700,
@@ -998,7 +998,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
                           <span
                             style={
                               Object {
-                                "color": undefined,
+                                "color": "#59626a",
                                 "fontFamily": "\\"Roboto\\", sans-serif",
                                 "fontSize": "1rem",
                                 "fontWeight": 700,

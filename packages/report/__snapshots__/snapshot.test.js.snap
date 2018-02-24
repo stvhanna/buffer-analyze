@@ -1061,7 +1061,7 @@ exports[`Snapshots ProfileLegend renders the profile legend 1`] = `
 exports[`Snapshots Report renders a loading report 1`] = `
 <span>
   <section
-    className="sc-fOKMvo kDNgBi"
+    className="sc-dUjcNx usgiW"
   >
     <div
       style={
@@ -1168,7 +1168,7 @@ exports[`Snapshots Report renders a loading report 1`] = `
 exports[`Snapshots Report renders a report in edit mode 1`] = `
 <span>
   <section
-    className="sc-fOKMvo kDNgBi"
+    className="sc-dUjcNx usgiW"
   >
     <div
       id="report-page"
@@ -1215,11 +1215,11 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         </span>
       </span>
       <section
-        className="sc-bXGyLb eTeGbe"
+        className="sc-lkqHmb caPCsE"
       >
         <div>
           <div
-            className="sc-lkqHmb buryjB"
+            className="sc-eLExRp dWIFmQ"
           >
             <h2
               className="sc-cSHVUG eMsAFn"
@@ -1239,7 +1239,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </h2>
           </div>
           <div
-            className="sc-eLExRp HDsaC"
+            className="sc-cbkKFq fcEmgV"
           >
             <span
               className="sc-ckVGcZ ldWrHP"
@@ -2459,11 +2459,11 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         </ul>
       </section>
       <section
-        className="sc-bXGyLb eTeGbe"
+        className="sc-lkqHmb caPCsE"
       >
         <div>
           <div
-            className="sc-lkqHmb buryjB"
+            className="sc-eLExRp dWIFmQ"
           >
             <h2
               className="sc-cSHVUG eMsAFn"
@@ -2483,7 +2483,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </h2>
           </div>
           <div
-            className="sc-eLExRp HDsaC"
+            className="sc-cbkKFq fcEmgV"
           >
             <span
               className="sc-ckVGcZ ldWrHP"
@@ -3703,11 +3703,11 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         </ul>
       </section>
       <section
-        className="sc-bXGyLb eTeGbe"
+        className="sc-lkqHmb caPCsE"
       >
         <div>
           <div
-            className="sc-lkqHmb buryjB"
+            className="sc-eLExRp dWIFmQ"
           >
             <h2
               className="sc-cSHVUG eMsAFn"
@@ -3727,7 +3727,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </h2>
           </div>
           <div
-            className="sc-eLExRp HDsaC"
+            className="sc-cbkKFq fcEmgV"
           >
             <span
               className="sc-ckVGcZ ldWrHP"
@@ -4954,7 +4954,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
 exports[`Snapshots Report renders a report with summary table 1`] = `
 <span>
   <section
-    className="sc-fOKMvo kDNgBi"
+    className="sc-dUjcNx usgiW"
   >
     <div
       id="report-page"
@@ -4970,7 +4970,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         }
       >
         <div
-          className="sc-krvtoX dUBYjz"
+          className="sc-fYiAbW kHMMR"
         >
           <button
             aria-label={null}
@@ -5001,13 +5001,13 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
             }
           >
             <h1
-              className="sc-cbkKFq kFaNAF"
+              className="sc-krvtoX dSsqBO"
             >
               Weekly Sync Report
             </h1>
           </button>
           <div
-            className="sc-fYiAbW djQlwO"
+            className="sc-fOKMvo gTwaBx"
           >
             <svg
               height="100%"
@@ -5054,11 +5054,11 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         </span>
       </span>
       <section
-        className="sc-bXGyLb eTeGbe"
+        className="sc-lkqHmb caPCsE"
       >
         <div>
           <div
-            className="sc-lkqHmb buryjB"
+            className="sc-eLExRp dWIFmQ"
           >
             <h2
               className="sc-cSHVUG eMsAFn"
@@ -5078,7 +5078,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
             </h2>
           </div>
           <div
-            className="sc-eLExRp HDsaC"
+            className="sc-cbkKFq fcEmgV"
           >
             <span
               className="sc-ckVGcZ ldWrHP"
@@ -6298,11 +6298,11 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         </ul>
       </section>
       <section
-        className="sc-bXGyLb eTeGbe"
+        className="sc-lkqHmb caPCsE"
       >
         <div>
           <div
-            className="sc-lkqHmb buryjB"
+            className="sc-eLExRp dWIFmQ"
           >
             <h2
               className="sc-cSHVUG eMsAFn"
@@ -6322,7 +6322,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
             </h2>
           </div>
           <div
-            className="sc-eLExRp HDsaC"
+            className="sc-cbkKFq fcEmgV"
           >
             <span
               className="sc-ckVGcZ ldWrHP"
@@ -7542,11 +7542,11 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         </ul>
       </section>
       <section
-        className="sc-bXGyLb eTeGbe"
+        className="sc-lkqHmb caPCsE"
       >
         <div>
           <div
-            className="sc-lkqHmb buryjB"
+            className="sc-eLExRp dWIFmQ"
           >
             <h2
               className="sc-cSHVUG eMsAFn"
@@ -7566,7 +7566,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
             </h2>
           </div>
           <div
-            className="sc-eLExRp HDsaC"
+            className="sc-cbkKFq fcEmgV"
           >
             <span
               className="sc-ckVGcZ ldWrHP"

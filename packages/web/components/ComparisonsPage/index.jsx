@@ -45,14 +45,15 @@ const comparisonsMaxWidth = {
   padding: '2.5rem',
 };
 
-const toolbarTabNavigation = {};
-
 const toolbarRight = {
   display: 'flex',
   justifyContent: 'flex-end',
 };
 
-const toolbarProfileSelector = {};
+const toolbarProfileSelector = {
+  display: 'flex',
+  alignContent: 'center',
+};
 
 const toolbarDatePicker = {
   marginLeft: '0.5rem',
@@ -72,11 +73,10 @@ const ComparisonsPage = ({ location, isCompareProfileClicked }) => (
     <ProfileLoader>
       <div style={contentStyle}>
         <div style={toolbarContainer}>
-          <div style={toolbarTabNavigation} />
+          <div style={toolbarProfileSelector}>
+            <MultiProfileSelector />
+          </div>
           <div style={toolbarRight}>
-            <div style={toolbarProfileSelector}>
-              <MultiProfileSelector />
-            </div>
             <div style={toolbarDatePicker}>
               <DatePicker staticData />
             </div>

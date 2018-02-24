@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { PureComponent } from 'react';
 import ReactHighcharts from 'react-highcharts';
 import moment from 'moment-timezone';
 
@@ -115,16 +115,25 @@ function prepareChartOptions(profilesMetricData, profiles, metricKey) {
   }, { profiles, metricKey });
   config.series = seriesData.filter(e => e !== null);
   setChartLimits(config);
+
+  config.xAxis = Object.assign({}, getChartConfig().xAxis, {
+    minorTickInterval: getMinorTickInterval(profilesMetricData[0].dailyData),
+  });
+
   return config;
 }
 
 const CHART_HEIGHT = '400px';
-const ComparisonChart = ({ profilesMetricData, profiles, metricKey }) => {
-  const charOptions = prepareChartOptions(profilesMetricData, profiles, metricKey);
-  return (<div style={{ minHeight: CHART_HEIGHT }}>
-    <ReactHighcharts config={charOptions} />
-  </div>);
-};
+
+class ComparisonChart extends PureComponent {
+  render() {
+    const { profilesMetricData, profiles, metricKey } = this.props;
+    const charOptions = prepareChartOptions(profilesMetricData, profiles, metricKey);
+    return (<div style={{ minHeight: CHART_HEIGHT }}>
+      <ReactHighcharts isPureConfig config={charOptions} />
+    </div>);
+  }
+}
 
 ComparisonChart.propTypes = {
   metricKey: PropTypes.string.isRequired,
@@ -134,15 +143,15 @@ ComparisonChart.propTypes = {
       metric: PropTypes.shape({
         color: PropTypes.string.isRequired,
         label: PropTypes.string.isRequired,
-        value: PropTypes.number.isRequired,
+        value: PropTypes.number,
       }),
     })),
     profileId: PropTypes.string.isRequired,
   })).isRequired,
   profiles: PropTypes.arrayOf(PropTypes.shape({
-    profileId: PropTypes.string,
-    service: PropTypes.string,
-    timezone: PropTypes.string,
+    id: PropTypes.string.isRequired,
+    service: PropTypes.string.isRequired,
+    timezone: PropTypes.string.isRequired,
   })).isRequired,
 };
 

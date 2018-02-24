@@ -126,6 +126,7 @@ export default () => ({
   plotOptions: {
     series: {
       marker: {
+        enabled: false,
         lineWidth: 2,
         radius: 3,
         symbol: 'circle',
