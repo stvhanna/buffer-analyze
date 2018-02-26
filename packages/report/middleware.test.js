@@ -243,21 +243,8 @@ describe('middleware', () => {
         args: {
           _id: 'report-id',
           timezone: moment.tz.guess(),
-          startDate: state.date.startDate,
-          endDate: state.date.endDate,
         },
       }));
-    });
-
-    it('should not dispatch the data fetch if the view is an export view', () => {
-      const action = {
-        type: LOCATION_CHANGE,
-        payload: {
-          pathname: '/export/reports/1234',
-        },
-      };
-      middleware(store)(next)(action);
-      expect(store.dispatch).not.toHaveBeenCalled();
     });
 
     it('LOCATION_CHANGE to another route does not trigger get_report', () => {

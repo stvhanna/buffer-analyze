@@ -13,7 +13,6 @@ const getReportId = (pathname) => {
   return routeMatch ? routeMatch[1] : null;
 };
 const isReportDetailRoute = pathname => getReportId(pathname) !== null;
-const isExportRoute = pathname => pathname.match(/export\/reports/) !== null;
 const isRouteDifferentThanCurrentOne = (router, pathname) =>
   !router.location || router.location.pathname !== pathname;
 
@@ -59,15 +58,12 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
     case LOCATION_CHANGE:
       if (
         isReportDetailRoute(action.payload.pathname) &&
-        !isExportRoute(action.payload.pathname) &&
         (isRouteDifferentThanCurrentOne(state.router, action.payload.pathname))) {
         store.dispatch(actions.fetch({
           name: 'get_report',
           args: {
             _id: getReportId(action.payload.pathname),
             timezone: moment.tz.guess(),
-            startDate: state.date.startDate,
-            endDate: state.date.endDate,
           },
         }));
       }
