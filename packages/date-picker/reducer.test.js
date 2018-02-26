@@ -73,6 +73,21 @@ describe('reducer', () => {
     });
   });
 
+  describe('custom date range for a report', () => {
+    it('starts loading after fetching report', () => {
+      const state = reducer(undefined, {
+        type: `get_report_${asyncDataFetchActions.FETCH_START}`,
+      });
+      expect(state.loading).toBeTruthy();
+    });
+    it('stops loading after fetching report', () => {
+      const state = reducer(undefined, {
+        type: `get_report_${asyncDataFetchActions.FETCH_SUCCESS}`,
+      });
+      expect(state.loading).toBeFalsy();
+    });
+  });
+
   describe('set minimum start date', () => {
     it(`stops loading state when receiving analytics_start_date_${asyncDataFetchActions.FETCH_SUCCESS}`, () => {
       const state = reducer(undefined, {

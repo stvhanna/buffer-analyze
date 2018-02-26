@@ -120,6 +120,16 @@ export default (state = initialState, action) => {
         previousStartDate: null,
         previousEndDate: null,
       };
+    case `get_report_${asyncDataFetchActionTypes.FETCH_START}`:
+      return {
+        ...state,
+        loading: true,
+      };
+    case `get_report_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
+      return {
+        ...state,
+        loading: false,
+      };
     case `analytics_start_date_${asyncDataFetchActionTypes.FETCH_START}`:
       return {
         ...state,
