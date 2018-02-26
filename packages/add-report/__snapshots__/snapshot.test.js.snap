@@ -4,7 +4,7 @@ exports[`Snapshots AddReport opened 1`] = `
 <span>
   <div>
     <span
-      className="sc-hSdWYo bINQXe"
+      className="sc-TOsTZ WJFhR"
     />
     <span>
       <button
@@ -33,7 +33,7 @@ exports[`Snapshots AddReport unopened 1`] = `
 <span>
   <div>
     <span
-      className="sc-hSdWYo bINQXe"
+      className="sc-TOsTZ WJFhR"
     />
     <span>
       <button
@@ -80,7 +80,7 @@ exports[`Snapshots Modal open 1`] = `
       className="sc-VigVT fUSJNC"
     >
       <section
-        className="sc-eNQAEJ eQWjiW"
+        className="sc-fAjcbJ frRFlq"
       >
         <span
           style={
@@ -95,10 +95,10 @@ exports[`Snapshots Modal open 1`] = `
           Add to a new report
         </span>
         <section
-          className="sc-kEYyzF ybKjd"
+          className="sc-gisBJw dqgPWx"
         >
           <input
-            className="sc-kkGfuU evptcg"
+            className="sc-kjoXOD jVLqXb"
             placeholder="Please enter title here"
             type="text"
           />
@@ -135,13 +135,13 @@ exports[`Snapshots Modal open 1`] = `
           </span>
         </div>
         <section
-          className="sc-hMqMXs fAGFfd"
+          className="sc-caSCKo bIbPVx"
         >
           <ol
-            className="sc-ckVGcZ brbPNr"
+            className="sc-dVhcbM cnSZzd"
           >
             <li
-              className="sc-dxgOiQ bjQadS"
+              className="sc-fMiknA kUxEDH"
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
             >
@@ -175,7 +175,7 @@ exports[`Snapshots Modal open 1`] = `
                 }
               >
                 <span
-                  className="sc-kgoBCf sJamF"
+                  className="sc-hzDkRC caLgHn"
                 >
                   <span
                     style={
@@ -204,16 +204,16 @@ exports[`Snapshots Modal open 1`] = `
                     }
                   >
                     <span
-                      className="sc-chPdSV bIRDP"
+                      className="sc-bRBYWo vuRkw"
                     >
-                      November 7, 2017
+                      Past 7 Days
                     </span>
                   </span>
                 </span>
               </button>
             </li>
             <li
-              className="sc-dxgOiQ bjQadS"
+              className="sc-fMiknA kUxEDH"
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
             >
@@ -247,7 +247,7 @@ exports[`Snapshots Modal open 1`] = `
                 }
               >
                 <span
-                  className="sc-kgoBCf sJamF"
+                  className="sc-hzDkRC caLgHn"
                 >
                   <span
                     style={
@@ -276,16 +276,16 @@ exports[`Snapshots Modal open 1`] = `
                     }
                   >
                     <span
-                      className="sc-chPdSV bIRDP"
+                      className="sc-bRBYWo vuRkw"
                     >
-                      October 10, 2017
+                      Past 7 Days
                     </span>
                   </span>
                 </span>
               </button>
             </li>
             <li
-              className="sc-dxgOiQ bjQadS"
+              className="sc-fMiknA kUxEDH"
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
             >
@@ -319,7 +319,7 @@ exports[`Snapshots Modal open 1`] = `
                 }
               >
                 <span
-                  className="sc-kgoBCf sJamF"
+                  className="sc-hzDkRC caLgHn"
                 >
                   <span
                     style={
@@ -348,16 +348,16 @@ exports[`Snapshots Modal open 1`] = `
                     }
                   >
                     <span
-                      className="sc-chPdSV bIRDP"
+                      className="sc-bRBYWo vuRkw"
                     >
-                      October 10, 2017
+                      Past 7 Days
                     </span>
                   </span>
                 </span>
               </button>
             </li>
             <li
-              className="sc-dxgOiQ bjQadS"
+              className="sc-fMiknA kUxEDH"
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
             >
@@ -391,7 +391,7 @@ exports[`Snapshots Modal open 1`] = `
                 }
               >
                 <span
-                  className="sc-kgoBCf sJamF"
+                  className="sc-hzDkRC caLgHn"
                 >
                   <span
                     style={
@@ -420,16 +420,16 @@ exports[`Snapshots Modal open 1`] = `
                     }
                   >
                     <span
-                      className="sc-chPdSV bIRDP"
+                      className="sc-bRBYWo vuRkw"
                     >
-                      October 10, 2017
+                      Past 7 Days
                     </span>
                   </span>
                 </span>
               </button>
             </li>
             <li
-              className="sc-dxgOiQ bjQadS"
+              className="sc-fMiknA kUxEDH"
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
             >
@@ -463,7 +463,7 @@ exports[`Snapshots Modal open 1`] = `
                 }
               >
                 <span
-                  className="sc-kgoBCf sJamF"
+                  className="sc-hzDkRC caLgHn"
                 >
                   <span
                     style={
@@ -492,16 +492,16 @@ exports[`Snapshots Modal open 1`] = `
                     }
                   >
                     <span
-                      className="sc-chPdSV bIRDP"
+                      className="sc-bRBYWo vuRkw"
                     >
-                      October 10, 2017
+                      Past 7 Days
                     </span>
                   </span>
                 </span>
               </button>
             </li>
             <li
-              className="sc-dxgOiQ bjQadS"
+              className="sc-fMiknA kUxEDH"
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
             >
@@ -535,7 +535,7 @@ exports[`Snapshots Modal open 1`] = `
                 }
               >
                 <span
-                  className="sc-kgoBCf sJamF"
+                  className="sc-hzDkRC caLgHn"
                 >
                   <span
                     style={
@@ -564,16 +564,16 @@ exports[`Snapshots Modal open 1`] = `
                     }
                   >
                     <span
-                      className="sc-chPdSV bIRDP"
+                      className="sc-bRBYWo vuRkw"
                     >
-                      October 10, 2017
+                      Past 7 Days
                     </span>
                   </span>
                 </span>
               </button>
             </li>
             <li
-              className="sc-dxgOiQ bjQadS"
+              className="sc-fMiknA kUxEDH"
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
             >
@@ -607,7 +607,7 @@ exports[`Snapshots Modal open 1`] = `
                 }
               >
                 <span
-                  className="sc-kgoBCf sJamF"
+                  className="sc-hzDkRC caLgHn"
                 >
                   <span
                     style={
@@ -636,9 +636,9 @@ exports[`Snapshots Modal open 1`] = `
                     }
                   >
                     <span
-                      className="sc-chPdSV bIRDP"
+                      className="sc-bRBYWo vuRkw"
                     >
-                      October 10, 2017
+                      Past 7 Days
                     </span>
                   </span>
                 </span>
