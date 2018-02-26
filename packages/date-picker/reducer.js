@@ -135,6 +135,11 @@ export default (state = initialState, action) => {
         ...state,
         loading: true,
       };
+    case `analytics_start_date_${asyncDataFetchActionTypes.FETCH_FAIL}`:
+      return {
+        ...state,
+        loading: false,
+      };
     case `analytics_start_date_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
       return {
         ...state,

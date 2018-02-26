@@ -114,6 +114,13 @@ describe('reducer', () => {
       });
       expect(state.minDate).toBe(date);
     });
+
+    it('stops loading if fetch fails', () => {
+      const state = reducer(undefined, {
+        type: `analytics_start_date_${asyncDataFetchActions.FETCH_FAIL}`,
+      });
+      expect(state.loading).toBe(false);
+    });
   });
   describe('clear start and end dates', () => {
     it('CLEAR_START_DATE updates the start date', () => {
