@@ -39,7 +39,7 @@ const DefaultPage = ({ location, dispatch }) => {
 
   const welcomeText = (
     <span>
-      Get started by viewing an <Link href="/overview" unstyled onClick={e => navigate(e, dispatch, '/overview')}>overview of your performance</Link> or gaining some insights around <Link href="/posts" unstyled onClick={e => navigate(e, dispatch, '/posts')}>your posts</Link>. You can also view {reportsLink}.
+      Get started by viewing an <Link href="/overview" unstyled onClick={e => navigate(e, dispatch, '/overview')}>overview of your performance</Link> or gaining some insights around <Link href="/posts" unstyled onClick={e => navigate(e, dispatch, '/posts')}>your posts</Link>. You can also <Link href="/comparisons" unstyled onClick={e => navigate(e, dispatch, '/comparisons')}>compare performance across networks</Link> or view {reportsLink}.
     </span>
   );
 
