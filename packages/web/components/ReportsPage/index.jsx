@@ -66,7 +66,7 @@ const ReportsPage = ({ location, dispatch }) => (
       <Header>
         <Button onClick={() => dispatch(push('/reports'))}><Text weight="bold" size="small">Back to Reports</Text></Button>
         <Section>
-          <DatePicker staticData />
+          <DatePicker/>
           <PDFExportButton />
         </Section>
       </Header>

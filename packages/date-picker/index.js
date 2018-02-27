@@ -5,8 +5,7 @@ import { actions } from './reducer';
 // default export = container
 export default connect(
   (state, ownProps) => ({
-    loading: state.date.loading, // NOTE: Want to see if loading is really required for date picker
-    // loading: ownProps.staticData ? false : state.date.loading,
+    loading: ownProps.staticData ? false : state.date.loading,
     startDate: state.date.startDate,
     endDate: state.date.endDate,
     isOpen: state.date.open,
