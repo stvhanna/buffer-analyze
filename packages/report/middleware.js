@@ -19,7 +19,8 @@ const isRouteDifferentThanCurrentOne = (router, pathname) =>
 const dateRangesDoNotMatch = (reportDate, dateRange) => (
   reportDate.startDate !== dateRange.startDate ||
   reportDate.endDate !== dateRange.endDate ||
-  (dateRange.preset && reportDate.range !== dateRange.preset.range)
+  (dateRange.preset && reportDate.range !== dateRange.preset.range) ||
+  (!dateRange.preset && reportDate.range)
 );
 
 export default store => next => (action) => { // eslint-disable-line no-unused-vars

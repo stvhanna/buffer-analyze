@@ -112,6 +112,25 @@ describe('middleware', () => {
       }));
       expect(next).toHaveBeenCalledWith(action);
     });
+
+    it('shoud dispatch a new data fetch for the report if there was a relative range selected and now there is not', () => {
+      const action = {
+        type: dateActionTypes.SET_DATE_RANGE,
+        startDate: '10/10/2016',
+        endDate: '30/10/2016',
+      };
+      state.report.dateRange.range = 7;
+      middleware(store)(next)(action);
+      expect(store.dispatch).toHaveBeenCalledWith(actions.saveChanges({
+        ...state.report,
+        dateRange: {
+          startDate: action.startDate,
+          endDate: action.endDate,
+          range: null,
+        },
+      }));
+      expect(next).toHaveBeenCalledWith(action);
+    });
   });
 
   it('SAVE_CHANGES dispatches a update report request', () => {
