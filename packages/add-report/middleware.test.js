@@ -4,16 +4,28 @@ import { actionTypes } from './actions';
 
 describe('middleware', () => {
   const next = jest.fn();
-  const state = {
-    appSidebar: {
-      user: {
-        id: 'user1234',
+  let state = null;
+
+  beforeEach(() => {
+    state = {
+      appSidebar: {
+        user: {
+          id: 'user1234',
+        },
       },
-    },
-    profiles: {
-      selectedProfileId: '12359182129asd',
-    },
-  };
+      profiles: {
+        selectedProfileId: '12359182129asd',
+      },
+      date: {
+        presets: [{
+          range: 7,
+          selected: true,
+        }],
+        startDate: null,
+        endDate: null,
+      },
+    };
+  });
   const store = {
     dispatch: jest.fn(),
     getState: jest.fn(() => state),
@@ -43,6 +55,11 @@ describe('middleware', () => {
         profileId: '12359182129asd',
         chartId: 'summary-table',
         name: 'Weekly Sync Report',
+        dateRange: {
+          range: 7,
+          start: null,
+          end: null,
+        },
       },
     }));
     expect(next).toHaveBeenCalledWith(action);

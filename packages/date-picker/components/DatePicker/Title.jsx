@@ -7,55 +7,10 @@ import Text from '@bufferapp/components/Text';
 const formatDate = (date, dateFormat = 'MM/DD/YY') =>
   moment.unix(date).format(dateFormat);
 
-const PRESETS = [
-  {
-    name: '90 Days',
-    label: 'Past 90 Days',
-    range: 90,
-  },
-  {
-    name: '30 Days',
-    label: 'Past 30 Days',
-    range: 30,
-  },
-  {
-    name: '28 Days',
-    label: 'Past 28 Days',
-    range: 28,
-  },
-  {
-    name: '7 Days',
-    label: 'Past 7 Days',
-    range: 7,
-  },
-  {
-    name: 'Yesterday',
-    label: 'Yesterday',
-    range: 1,
-  },
-  {
-    name: 'Custom',
-    label: 'Custom',
-    range: Infinity,
-  },
-];
-
-const isRangeSelected = (range, start, end) => {
-  const rangeEnd = moment().subtract(1, 'day').format('MM/DD/YYYY');
-  const rangeStart = moment().subtract(range, 'days').format('MM/DD/YYYY');
-
-  const rangesMatch = (
-    rangeStart === moment.unix(start).format('MM/DD/YYYY') &&
-    rangeEnd === moment.unix(end).format('MM/DD/YYYY')
-  );
-
-  return (rangesMatch || range === Infinity);
-};
-
-const Title = ({ loading, startDate, endDate }) => {
+const Title = ({ presets, loading, startDate, endDate }) => {
   let title;
   if (!loading) {
-    const selectedRange = PRESETS.find(preset => isRangeSelected(preset.range, startDate, endDate));
+    const selectedRange = presets.find(preset => preset.selected);
     if (selectedRange.label === 'Custom' && startDate && endDate) {
       const from = formatDate(startDate);
       const to = formatDate(endDate);

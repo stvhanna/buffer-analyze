@@ -8,11 +8,11 @@ import Name from '../Name';
 import Date from '../Date';
 
 const ReportWithDate =
-  ({ _id, name, updated_at, small, selectReport }) =>
+  ({ _id, name, updated_at, date_range, small, selectReport }) =>
     <Button noStyle fillContainer onClick={() => selectReport(_id)}>
       <ReportText small={small}>
         <Name name={name} small={small} />
-        <Date updated_at={updated_at} small={small} />
+        <Date updated_at={updated_at} date_range={date_range} small={small} />
       </ReportText>
     </Button>;
 

@@ -73,6 +73,21 @@ describe('reducer', () => {
     });
   });
 
+  describe('custom date range for a report', () => {
+    it('starts loading after fetching report', () => {
+      const state = reducer(undefined, {
+        type: `get_report_${asyncDataFetchActions.FETCH_START}`,
+      });
+      expect(state.loading).toBeTruthy();
+    });
+    it('stops loading after fetching report', () => {
+      const state = reducer(undefined, {
+        type: `get_report_${asyncDataFetchActions.FETCH_SUCCESS}`,
+      });
+      expect(state.loading).toBeFalsy();
+    });
+  });
+
   describe('set minimum start date', () => {
     it(`stops loading state when receiving analytics_start_date_${asyncDataFetchActions.FETCH_SUCCESS}`, () => {
       const state = reducer(undefined, {
@@ -98,6 +113,13 @@ describe('reducer', () => {
         result: date,
       });
       expect(state.minDate).toBe(date);
+    });
+
+    it('stops loading if fetch fails', () => {
+      const state = reducer(undefined, {
+        type: `analytics_start_date_${asyncDataFetchActions.FETCH_FAIL}`,
+      });
+      expect(state.loading).toBe(false);
     });
   });
   describe('clear start and end dates', () => {
@@ -143,16 +165,29 @@ describe('reducer', () => {
     expect(state.month).toBe(month);
   });
 
-  it(`changes the date range when receiving ${actionTypes.SET_DATE_RANGE}`, () => {
-    const startDate = moment().subtract(4, 'days').unix();
-    const endDate = moment().subtract(2, 'days').unix();
-    const state = reducer(undefined, {
-      type: actionTypes.SET_DATE_RANGE,
-      startDate,
-      endDate,
+  describe('SET_DATE_RANGE', () => {
+    it('changes the date range', () => {
+      const startDate = moment().subtract(4, 'days').unix();
+      const endDate = moment().subtract(2, 'days').unix();
+      const state = reducer(undefined, {
+        type: actionTypes.SET_DATE_RANGE,
+        startDate,
+        endDate,
+      });
+      expect(state.startDate).toBe(startDate);
+      expect(state.endDate).toBe(endDate);
     });
-    expect(state.startDate).toBe(startDate);
-    expect(state.endDate).toBe(endDate);
+
+    it('if a new preset has been set, marks it as selected', () => {
+      const state = reducer(undefined, {
+        type: actionTypes.SET_DATE_RANGE,
+        preset: {
+          range: 30,
+        },
+      });
+      const selectedPreset = state.presets.find(preset => preset.selected);
+      expect(selectedPreset.range).toBe(30);
+    });
   });
 
   describe('OPEN CALENDAR', () => {

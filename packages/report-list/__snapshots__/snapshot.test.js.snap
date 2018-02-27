@@ -66,7 +66,7 @@ exports[`Snapshots Report can display buttons for viewing and removing the repor
     }
   >
     <span
-      className="sc-kGXeez ikuGfZ"
+      className="sc-kjoXOD jsgSJS"
     >
       <span
         style={
@@ -85,7 +85,7 @@ exports[`Snapshots Report can display buttons for viewing and removing the repor
         </span>
       </span>
       <span
-        className="sc-kpOJdX vaKxX"
+        className="sc-cHGsZl hdDRGc"
       >
         <button
           className="sc-kAzzGY jWgWfF sc-iwsKbI kGSkeT"
@@ -125,7 +125,7 @@ exports[`Snapshots Report can display buttons for viewing and removing the repor
 exports[`Snapshots Report renders the report 1`] = `
 <span>
   <li
-    className="sc-dxgOiQ bjQadS"
+    className="sc-TOsTZ cNGXka"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
@@ -159,7 +159,7 @@ exports[`Snapshots Report renders the report 1`] = `
       }
     >
       <span
-        className="sc-kGXeez ikuGfZ"
+        className="sc-kjoXOD jsgSJS"
       >
         <span
           style={
@@ -188,9 +188,9 @@ exports[`Snapshots Report renders the report 1`] = `
           }
         >
           <span
-            className="sc-kgoBCf hIItCJ"
+            className="sc-gisBJw jOLbZU"
           >
-            October 10, 2017
+            Past 7 Days
           </span>
         </span>
       </span>
@@ -202,7 +202,7 @@ exports[`Snapshots Report renders the report 1`] = `
 exports[`Snapshots ReportList loading state 1`] = `
 <span>
   <div
-    className="sc-jKJlTe hzCAlj"
+    className="sc-cJSrbW mFfYZ"
   >
     <div
       style={
@@ -309,7 +309,7 @@ exports[`Snapshots ReportList loading state 1`] = `
 exports[`Snapshots ReportList renders an empty state for reports 1`] = `
 <span>
   <div
-    className="sc-jKJlTe hzCAlj"
+    className="sc-cJSrbW mFfYZ"
   >
     <div
       className="sc-jTzLTM cifIwB"
@@ -357,7 +357,7 @@ exports[`Snapshots ReportList renders an empty state for reports 1`] = `
 exports[`Snapshots ReportList renders an empty state for small reports 1`] = `
 <span>
   <div
-    className="sc-jKJlTe hzCAlj"
+    className="sc-cJSrbW mFfYZ"
   >
     <div
       className="sc-jTzLTM cifIwB"
@@ -389,10 +389,10 @@ exports[`Snapshots ReportList renders an empty state for small reports 1`] = `
 exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
 <span>
   <ol
-    className="sc-ckVGcZ brbPNr"
+    className="sc-kgAjT kiuMLo"
   >
     <li
-      className="sc-dxgOiQ bjQadS"
+      className="sc-TOsTZ cNGXka"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -426,7 +426,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
         }
       >
         <span
-          className="sc-kGXeez ikuGfZ"
+          className="sc-kjoXOD jsgSJS"
         >
           <span
             style={
@@ -455,16 +455,16 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
             }
           >
             <span
-              className="sc-kgoBCf hIItCJ"
+              className="sc-gisBJw jOLbZU"
             >
-              November 7, 2017
+              February 14, 2018 to February 22, 2018
             </span>
           </span>
         </span>
       </button>
     </li>
     <li
-      className="sc-dxgOiQ bjQadS"
+      className="sc-TOsTZ cNGXka"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -498,7 +498,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
         }
       >
         <span
-          className="sc-kGXeez ikuGfZ"
+          className="sc-kjoXOD jsgSJS"
         >
           <span
             style={
@@ -527,9 +527,162 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
             }
           >
             <span
-              className="sc-kgoBCf hIItCJ"
+              className="sc-gisBJw jOLbZU"
             >
-              October 10, 2017
+              Past 7 Days
+            </span>
+          </span>
+        </span>
+      </button>
+    </li>
+  </ol>
+</span>
+`;
+
+exports[`Snapshots ReportList renders the reports collection in a small list 1`] = `
+<span>
+  <ol
+    className="sc-kgAjT kiuMLo"
+  >
+    <li
+      className="sc-TOsTZ cNGXka"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+    >
+      <button
+        aria-label={null}
+        disabled={undefined}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "background": "none",
+            "backgroundColor": "unset",
+            "border": "none",
+            "borderRadius": "unset",
+            "color": "unset",
+            "cursor": "pointer",
+            "display": "unset",
+            "fontFamily": "unset",
+            "fontSize": "unset",
+            "fontWeight": "unset",
+            "lineHeight": "unset",
+            "margin": "unset",
+            "outline": "none",
+            "padding": 0,
+            "transition": "unset",
+            "width": "100%",
+          }
+        }
+      >
+        <span
+          className="sc-kjoXOD gpGbPO"
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            <span
+              className="sc-chPdSV jFSiVY"
+            >
+              Weekly Sync Report
+            </span>
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            <span
+              className="sc-gisBJw jOLbZU"
+            >
+              February 14, 2018 to February 22, 2018
+            </span>
+          </span>
+        </span>
+      </button>
+    </li>
+    <li
+      className="sc-TOsTZ cNGXka"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+    >
+      <button
+        aria-label={null}
+        disabled={undefined}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "background": "none",
+            "backgroundColor": "unset",
+            "border": "none",
+            "borderRadius": "unset",
+            "color": "unset",
+            "cursor": "pointer",
+            "display": "unset",
+            "fontFamily": "unset",
+            "fontSize": "unset",
+            "fontWeight": "unset",
+            "lineHeight": "unset",
+            "margin": "unset",
+            "outline": "none",
+            "padding": 0,
+            "transition": "unset",
+            "width": "100%",
+          }
+        }
+      >
+        <span
+          className="sc-kjoXOD gpGbPO"
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            <span
+              className="sc-chPdSV jFSiVY"
+            >
+              Client Social Media Campaign
+            </span>
+          </span>
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            <span
+              className="sc-gisBJw jOLbZU"
+            >
+              Past 7 Days
             </span>
           </span>
         </span>

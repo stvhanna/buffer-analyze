@@ -33,6 +33,7 @@ const DatePicker = (props) => {
     loading,
     startDate,
     endDate,
+    presets,
     // Actions
     open,
     close,
@@ -45,6 +46,7 @@ const DatePicker = (props) => {
         loading={loading}
         startDate={startDate}
         endDate={endDate}
+        presets={presets}
         handleClick={() => (isOpen ? close() : open())}
       />
       <Dropdown isOpen={isOpen}>
@@ -67,11 +69,12 @@ DatePicker.defaultProps = {
   customMonth: moment().startOf('month').unix(),
   startDate: null,
   endDate: null,
+  loading: false,
 };
 
 DatePicker.propTypes = {
   isOpen: PropTypes.bool.isRequired,
-  loading: PropTypes.bool.isRequired,
+  loading: PropTypes.bool,
   startDate: PropTypes.number,
   endDate: PropTypes.number,
 

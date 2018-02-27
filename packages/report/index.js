@@ -5,15 +5,11 @@ import { actions } from './reducer';
 // default export = container
 export default connect(
   state => ({
-    dateRange: {
-      startDate: state.date.startDate,
-      endDate: state.date.endDate,
-    },
     ...state.report,
   }),
   dispatch => ({
     editName: () => dispatch(actions.editName()),
-    saveChanges: name => dispatch(actions.saveChanges(name)),
+    saveChanges: name => dispatch(actions.saveChanges({ name })),
     moveUp: id => dispatch(actions.moveUp(id)),
     moveDown: id => dispatch(actions.moveDown(id)),
     deleteChart: id => dispatch(actions.deleteChart(id)),

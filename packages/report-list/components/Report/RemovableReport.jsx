@@ -16,11 +16,11 @@ const ButtonContainer = styled.span`
 `;
 
 const RemovableReport =
-  ({ _id, updated_at, name, small, removeReport, selectReport, showButtons }) =>
+  ({ _id, updated_at, name, small, date_range, removeReport, selectReport, showButtons }) =>
     <Button noStyle fillContainer onClick={() => selectReport(_id)}>
       <ReportText small={small}>
         <Name name={name} small={small} />
-        { !showButtons && <Date updated_at={updated_at} small={small} /> }
+        { !showButtons && <Date updated_at={updated_at} date_range={date_range} small={small} /> }
         { showButtons &&
           <ButtonContainer>
             <RemoveButton _id={_id} removeReport={removeReport} />

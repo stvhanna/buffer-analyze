@@ -30,13 +30,13 @@ const Arrow = styled.span`
   margin-left: auto;
 `;
 
-const DatePickerButton = ({ isOpen, loading, startDate, endDate, handleClick }) => (
+const DatePickerButton = ({ presets, isOpen, loading, startDate, endDate, handleClick }) => (
   <Button
     loading={loading}
     disabled={loading}
     onClick={handleClick}
   >
-    <Title loading={loading} startDate={startDate} endDate={endDate} />
+    <Title presets={presets} loading={loading} startDate={startDate} endDate={endDate} />
     { !loading ?
       <Arrow>
         { isOpen ?

@@ -1,7 +1,8 @@
 import { actionTypes as dateActionTypes } from '@bufferapp/analyze-date-picker';
-import { actions } from '@bufferapp/async-data-fetch';
+import { actions as dataFetchActions, actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-fetch';
 import { LOCATION_CHANGE } from 'react-router-redux';
-import { actionTypes } from './reducer';
+import moment from 'moment-timezone';
+import { actionTypes, actions } from './reducer';
 import middleware, { DIRECTION_UP, DIRECTION_DOWN } from './middleware';
 
 
@@ -17,6 +18,10 @@ describe('middleware', () => {
     },
     report: {
       id: 'report_id_1',
+      dateRange: {
+        startDate: '10/10/2016',
+        endDate: '30/10/2016',
+      },
     },
     reportList: {
       reports: [{
@@ -76,12 +81,52 @@ describe('middleware', () => {
         endDate: '20/10/2016',
       };
       middleware(store)(next)(action);
-      expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
-        name: 'get_report',
-        args: {
-          _id: 'report_id_1',
-          startDate: '10/10/2016',
-          endDate: '20/10/2016',
+      expect(store.dispatch).toHaveBeenCalledWith(actions.saveChanges({
+        ...state.report,
+        dateRange: {
+          startDate: action.startDate,
+          endDate: action.endDate,
+          range: null,
+        },
+      }));
+      expect(next).toHaveBeenCalledWith(action);
+    });
+
+    it('shoud dispatch a new data fetch for the report once a new preset has been selected', () => {
+      const action = {
+        type: dateActionTypes.SET_DATE_RANGE,
+        startDate: '10/10/2016',
+        endDate: '30/10/2016',
+        preset: {
+          range: 30,
+        },
+      };
+      middleware(store)(next)(action);
+      expect(store.dispatch).toHaveBeenCalledWith(actions.saveChanges({
+        ...state.report,
+        dateRange: {
+          startDate: action.startDate,
+          endDate: action.endDate,
+          range: 30,
+        },
+      }));
+      expect(next).toHaveBeenCalledWith(action);
+    });
+
+    it('shoud dispatch a new data fetch for the report if there was a relative range selected and now there is not', () => {
+      const action = {
+        type: dateActionTypes.SET_DATE_RANGE,
+        startDate: '10/10/2016',
+        endDate: '30/10/2016',
+      };
+      state.report.dateRange.range = 7;
+      middleware(store)(next)(action);
+      expect(store.dispatch).toHaveBeenCalledWith(actions.saveChanges({
+        ...state.report,
+        dateRange: {
+          startDate: action.startDate,
+          endDate: action.endDate,
+          range: null,
         },
       }));
       expect(next).toHaveBeenCalledWith(action);
@@ -94,7 +139,7 @@ describe('middleware', () => {
       name: 'A new name!',
     };
     middleware(store)(next)(action);
-    expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
+    expect(store.dispatch).toHaveBeenCalledWith(dataFetchActions.fetch({
       name: 'update_report',
       args: {
         ...state.report,
@@ -109,7 +154,7 @@ describe('middleware', () => {
       chartId: 'chart-123',
     };
     middleware(store)(next)(action);
-    expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
+    expect(store.dispatch).toHaveBeenCalledWith(dataFetchActions.fetch({
       name: 'move_chart',
       args: {
         reportId: state.report.id,
@@ -125,7 +170,7 @@ describe('middleware', () => {
       chartId: 'chart-123',
     };
     middleware(store)(next)(action);
-    expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
+    expect(store.dispatch).toHaveBeenCalledWith(dataFetchActions.fetch({
       name: 'move_chart',
       args: {
         reportId: state.report.id,
@@ -141,7 +186,7 @@ describe('middleware', () => {
       chartId: 'chart-123',
     };
     middleware(store)(next)(action);
-    expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
+    expect(store.dispatch).toHaveBeenCalledWith(dataFetchActions.fetch({
       name: 'delete_chart',
       args: {
         reportId: state.report.id,
@@ -162,6 +207,47 @@ describe('middleware', () => {
     expect(PDFFormatter.mock.instances[0].formatPage).toHaveBeenCalled();
   });
 
+  describe('updating a report successfully', () => {
+    it('should refetch the report after updating the date range', () => {
+      const action = {
+        type: `update_report_${asyncDataFetchActionTypes.FETCH_SUCCESS}`,
+        args: {
+          dateRange: {
+            range: 30,
+          },
+        },
+        result: {
+          _id: 1,
+        },
+      };
+      middleware(store)(next)(action);
+      expect(store.dispatch).toHaveBeenCalledWith(dataFetchActions.fetch({
+        name: 'get_report',
+        args: {
+          _id: action.result._id,
+          timezone: moment.tz.guess(),
+          startDate: state.date.startDate,
+          endDate: state.date.endDate,
+        },
+      }));
+    });
+    it('should not trigger anything if the date range did not change', () => {
+      const action = {
+        type: `update_report_${asyncDataFetchActionTypes.FETCH_SUCCESS}`,
+        args: {
+          name: 'a new name for the report',
+          dateRange: state.report.dateRange,
+        },
+        result: {
+          _id: 1,
+        },
+      };
+      middleware(store)(next)(action);
+      expect(store.dispatch).not.toHaveBeenCalled();
+    });
+  });
+
+
   describe('LOCATION_CHANGE', () => {
     it('LOCATION_CHANGE to a report detail route triggers a get_report', () => {
       const action = {
@@ -171,25 +257,13 @@ describe('middleware', () => {
         },
       };
       middleware(store)(next)(action);
-      expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
+      expect(store.dispatch).toHaveBeenCalledWith(dataFetchActions.fetch({
         name: 'get_report',
         args: {
           _id: 'report-id',
-          startDate: state.date.startDate,
-          endDate: state.date.endDate,
+          timezone: moment.tz.guess(),
         },
       }));
-    });
-
-    it('should not dispatch the data fetch if the view is an export view', () => {
-      const action = {
-        type: LOCATION_CHANGE,
-        payload: {
-          pathname: '/export/reports/1234',
-        },
-      };
-      middleware(store)(next)(action);
-      expect(store.dispatch).not.toHaveBeenCalled();
     });
 
     it('LOCATION_CHANGE to another route does not trigger get_report', () => {

@@ -35,13 +35,18 @@ describe('rpc/create_report', () => {
         chart_id: chartId,
       }],
     };
+    const dateRange = {
+      start: 123461235,
+      end: 1235132442,
+      range: 30,
+    };
     rp.mockReturnValueOnce(Promise.resolve({
       created: {
         _id: report._id,
       },
     }));
 
-    const result = await createReport.fn({ profileId, chartId, name, userId });
+    const result = await createReport.fn({ profileId, chartId, name, userId, dateRange });
 
     expect(result).toEqual(report);
     expect(rp.mock.calls[0]).toEqual([{
@@ -53,6 +58,9 @@ describe('rpc/create_report', () => {
         profile_id: profileId,
         chart_id: chartId,
         user_id: userId,
+        start_date: dateRange.start,
+        end_date: dateRange.end,
+        range: dateRange.range,
       },
       json: true,
     }]);
