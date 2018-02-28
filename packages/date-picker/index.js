@@ -1,13 +1,20 @@
+import moment from 'moment';
 import { connect } from 'react-redux';
 import DatePicker from './components/DatePicker';
 import { actions } from './reducer';
+
+export function convertDateToTimestamp(date) {
+  return date ?
+    moment(date, 'MM/DD/YYYY').unix() :
+    null;
+}
 
 // default export = container
 export default connect(
   (state, ownProps) => ({
     loading: ownProps.staticData ? false : state.date.loading,
-    startDate: state.date.startDate,
-    endDate: state.date.endDate,
+    startDate: convertDateToTimestamp(state.date.startDate),
+    endDate: convertDateToTimestamp(state.date.endDate),
     isOpen: state.date.open,
     calendarOpen: state.date.calendarOpen,
     minDate: ownProps.staticData ? null : state.date.minDate,

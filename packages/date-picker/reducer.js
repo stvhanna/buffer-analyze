@@ -16,11 +16,23 @@ export const actionTypes = keyWrapper('DATE_PICKER', {
   CLOSE_CALENDAR: 'CLOSE_CALENDAR',
 });
 
+function getDayFromTimestamp(timestamp) {
+  return moment.unix(timestamp).startOf('day');
+}
+
+function formatDay(momentDay) {
+  return momentDay.format('MM/DD/YYYY');
+}
+
+function formatTimestamp(timestamp) {
+  return formatDay(getDayFromTimestamp(timestamp));
+}
+
 function calculateDateRange(range) {
   // We need to enfoce the start of the day to make sure
   // that the range is not effected by the time of the day
-  const startDate = moment().startOf('day').subtract(range, 'days').unix();
-  const endDate = moment().startOf('day').subtract(1, 'days').unix();
+  const startDate = formatDay(moment().startOf('day').subtract(range, 'days'));
+  const endDate = formatDay(moment().startOf('day').subtract(1, 'days'));
   return { startDate, endDate };
 }
 
@@ -189,22 +201,22 @@ export const actions = {
   }),
   setStartDate: date => ({
     type: actionTypes.SET_START_DATE,
-    date,
+    date: formatTimestamp(date),
   }),
   clearStartDate: () => ({
     type: actionTypes.CLEAR_START_DATE,
   }),
   setEndDate: date => ({
     type: actionTypes.SET_END_DATE,
-    date,
+    date: formatTimestamp(date),
   }),
   clearEndDate: () => ({
     type: actionTypes.CLEAR_END_DATE,
   }),
   setDateRange: (startDate, endDate) => ({
     type: actionTypes.SET_DATE_RANGE,
-    startDate,
-    endDate,
+    startDate: formatTimestamp(startDate),
+    endDate: formatTimestamp(endDate),
   }),
   setDatePreset: preset => ({
     type: actionTypes.SET_DATE_RANGE,
