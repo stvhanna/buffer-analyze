@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/posts-table",
-  "version": "0.49.1",
+  "version": "0.49.2",
   "description": "The table for Insights.",
   "main": "index.jsx",
   "scripts": {
@@ -23,7 +23,7 @@
   "dependencies": {
     "@bufferapp/add-report": "^0.48.0",
     "@bufferapp/analyze-csv-export": "^0.39.0",
-    "@bufferapp/analyze-date-picker": "^0.49.1",
+    "@bufferapp/analyze-date-picker": "^0.49.2",
     "@bufferapp/analyze-decorators": "^0.15.2",
     "@bufferapp/analyze-png-export": "^0.43.7",
     "@bufferapp/analyze-profile-selector": "^0.47.0",
