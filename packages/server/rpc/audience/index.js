@@ -1,6 +1,5 @@
 const { method } = require('@bufferapp/micro-rpc');
 const rp = require('request-promise');
-const moment = require('moment');
 const DateRange = require('../utils/DateRange');
 const METRICS_CONFIG = require('./metricsConfig');
 
@@ -69,9 +68,7 @@ module.exports = method(
   'audience',
   'fetch analytics audience for profiles and pages',
   ({ profileId, profileService, startDate, endDate }, { session }) => {
-    const end = moment.unix(endDate).format('MM/DD/YYYY');
-    const start = moment.unix(startDate).format('MM/DD/YYYY');
-    const dateRange = new DateRange(start, end);
+    const dateRange = new DateRange(startDate, endDate);
     return requestAudience(
       profileId,
       dateRange,

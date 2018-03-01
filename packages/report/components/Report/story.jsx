@@ -177,8 +177,8 @@ const report = {
 };
 
 const dateRange = {
-  startDate: '1509321600',
-  endDate: '1509494400',
+  startDate: '02/20/2018',
+  endDate: '02/25/2018',
 };
 
 storiesOf('Report')

@@ -1,6 +1,5 @@
 const { method } = require('@bufferapp/micro-rpc');
 const rp = require('request-promise');
-const moment = require('moment');
 const DateRange = require('../utils/DateRange');
 
 // We are using this to filter down the metrics we want
@@ -154,9 +153,7 @@ module.exports = method(
   'average',
   'fetch analytics average for profiles and pages',
   ({ profileId, startDate, endDate }, { session }) => {
-    const end = moment.unix(endDate).format('MM/DD/YYYY');
-    const start = moment.unix(startDate).format('MM/DD/YYYY');
-    const dateRange = new DateRange(start, end);
+    const dateRange = new DateRange(startDate, endDate);
     const pastDateRange = dateRange.getPreviousDateRange();
 
     const currentPeriodTotals = requestTotals(profileId, dateRange, session.analyze.accessToken);

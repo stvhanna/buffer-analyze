@@ -28,8 +28,8 @@ describe('rpc/average', () => {
   });
 
   it('should request for the past week', () => {
-    const end = moment().subtract(1, 'days').unix();
-    const start = moment().subtract(7, 'days').unix();
+    const end = moment().subtract(1, 'days').format('MM/DD/YYYY');
+    const start = moment().subtract(7, 'days').format('MM/DD/YYYY');
 
     average.fn({
       startDate: start,
@@ -50,20 +50,20 @@ describe('rpc/average', () => {
         strictSSL: false,
         qs: {
           access_token: token,
-          start_date: moment.unix(start).format('MM/DD/YYYY'),
-          end_date: moment.unix(end).format('MM/DD/YYYY'),
+          start_date: start,
+          end_date: end,
         },
         json: true,
       }]);
   });
 
   it('should request for the week before that', () => {
-    const endDate = moment().subtract(1, 'days').unix();
-    const startDate = moment().subtract(7, 'days').unix();
+    const end = moment().subtract(1, 'days').format('MM/DD/YYYY');
+    const start = moment().subtract(7, 'days').format('MM/DD/YYYY');
 
     average.fn({
-      startDate,
-      endDate,
+      start,
+      end,
       profileId,
     }, {
       session: {
@@ -73,8 +73,8 @@ describe('rpc/average', () => {
       },
     });
 
-    const end = moment().subtract(8, 'days').format('MM/DD/YYYY');
-    const start = moment().subtract(14, 'days').format('MM/DD/YYYY');
+    const expectedEnd = moment().subtract(8, 'days').format('MM/DD/YYYY');
+    const expectedStart = moment().subtract(14, 'days').format('MM/DD/YYYY');
 
     expect(rp.mock.calls[1])
       .toEqual([{
@@ -83,8 +83,8 @@ describe('rpc/average', () => {
         strictSSL: false,
         qs: {
           access_token: token,
-          start_date: start,
-          end_date: end,
+          start_date: expectedStart,
+          end_date: expectedEnd,
         },
         json: true,
       }]);

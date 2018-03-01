@@ -22,8 +22,8 @@ describe('rpc/posts_summary', () => {
   });
 
   it('should request metrics to Analyze Api for Instagram', () => {
-    const end = moment().subtract(1, 'days').unix();
-    const start = moment().subtract(7, 'days').unix();
+    const end = moment().subtract(1, 'days').format('MM/DD/YYYY');
+    const start = moment().subtract(7, 'days').format('MM/DD/YYYY');
 
     postsSummary.fn({
       startDate: start,
@@ -45,8 +45,8 @@ describe('rpc/posts_summary', () => {
         strictSSL: false,
         qs: {
           access_token: token,
-          start_date: moment.unix(start).format('MM/DD/YYYY'),
-          end_date: moment.unix(end).format('MM/DD/YYYY'),
+          start_date: start,
+          end_date: end,
           profile_id: profileId,
         },
         json: true,
@@ -55,8 +55,8 @@ describe('rpc/posts_summary', () => {
 
   it('should request for the past week', () => {
     rp.mockClear();
-    const end = moment().subtract(1, 'days').unix();
-    const start = moment().subtract(7, 'days').unix();
+    const end = moment().subtract(1, 'days').format('MM/DD/YYYY');
+    const start = moment().subtract(7, 'days').format('MM/DD/YYYY');
 
     postsSummary.fn({
       startDate: start,
@@ -78,8 +78,8 @@ describe('rpc/posts_summary', () => {
         strictSSL: false,
         qs: {
           access_token: token,
-          start_date: moment.unix(start).format('MM/DD/YYYY'),
-          end_date: moment.unix(end).format('MM/DD/YYYY'),
+          start_date: start,
+          end_date: end,
           profile_id: profileId,
         },
         json: true,
@@ -87,8 +87,8 @@ describe('rpc/posts_summary', () => {
   });
 
   it('should request for the week before that', () => {
-    const endDate = moment().subtract(1, 'days').unix();
-    const startDate = moment().subtract(7, 'days').unix();
+    const endDate = moment().subtract(1, 'days').format('MM/DD/YYYY');
+    const startDate = moment().subtract(7, 'days').format('MM/DD/YYYY');
 
     postsSummary.fn({
       startDate,

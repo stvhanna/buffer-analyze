@@ -11,14 +11,17 @@ import getReport from './';
 
 describe('rpc/get_report', () => {
   const token = 'some token';
+  const timezone = 'Europe/Amsterdam';
   const session = {
     session: {
       accessToken: token,
     },
   };
   const id = 'report-1235asd';
-  const endDate = moment().startOf('day').subtract(1, 'days').unix();
-  const startDate = moment().startOf('day').subtract(30, 'days').unix();
+  moment.tz.setDefault(timezone);
+  const endDate = moment().startOf('day').subtract(1, 'days').format('MM/DD/YYYY');
+  const startDate = moment().startOf('day').subtract(30, 'days').format('MM/DD/YYYY');
+  moment.tz.setDefault();
 
   const report = {
     id,
@@ -80,7 +83,7 @@ describe('rpc/get_report', () => {
     summary.fn = jest.fn();
     summary.fn.mockReturnValueOnce(Promise.resolve([]));
 
-    await getReport.fn({ _id: id }, { session });
+    await getReport.fn({ _id: id, timezone }, { session });
 
     expect(summary.fn.mock.calls[0])
       .toEqual([{
@@ -96,7 +99,7 @@ describe('rpc/get_report', () => {
     summary.fn = jest.fn();
     summary.fn.mockReturnValueOnce(Promise.resolve(metrics));
 
-    const result = await getReport.fn({ _id: id }, { session });
+    const result = await getReport.fn({ _id: id, timezone }, { session });
 
     expect(result.charts[0].metrics).toEqual(metrics);
   });
@@ -109,7 +112,7 @@ describe('rpc/get_report', () => {
     summary.fn = jest.fn();
     summary.fn.mockReturnValueOnce(Promise.resolve(metricsEmbeddedInObject));
 
-    const result = await getReport.fn({ _id: id }, { session });
+    const result = await getReport.fn({ _id: id, timezone }, { session });
 
     expect(result.charts[0].metrics).toEqual(metricsEmbeddedInObject.metrics);
     expect(result.charts[0].posts).toEqual(metricsEmbeddedInObject.posts);
@@ -123,7 +126,7 @@ describe('rpc/get_report', () => {
     summary.fn = jest.fn();
     summary.fn.mockReturnValueOnce(Promise.resolve(metricsEmbeddedInObject));
 
-    await getReport.fn({ _id: id }, { session });
+    await getReport.fn({ _id: id, timezone }, { session });
 
     expect(summary.fn.mock.calls[0][0]).toEqual({
       profileId: '12351wa',
@@ -136,21 +139,46 @@ describe('rpc/get_report', () => {
   it('uses a custom date if the date range provided in the report is custom', async () => {
     report.date_range = {
       range: null,
-      startDate: moment().subtract(20, 'days').unix(),
-      endDate: moment().subtract(15, 'days').unix(),
+      startDate: moment().subtract(20, 'days').format('MM/DD/YYYY'),
+      endDate: moment().subtract(15, 'days').format('MM/DD/YYYY'),
     };
     summary.fn = jest.fn();
     summary.fn.mockReturnValueOnce(Promise.resolve([]));
 
-    await getReport.fn({ _id: id }, { session });
+    await getReport.fn({ _id: id, timezone }, { session });
 
     expect(summary.fn.mock.calls[0][0]).toEqual({
       profileId: '12351wa',
       profileService: 'facebook',
-      startDate: report.date_range.startDate,
-      endDate: report.date_range.endDate,
+      start: report.date_range.startDate,
+      end: report.date_range.endDate,
     });
   });
+
+  it('should proprely resolve reports with unix date range', async () => {
+    moment.tz.setDefault(timezone);
+    const start = moment().subtract(20, 'days');
+    const end = moment().subtract(15, 'days');
+    moment.tz.setDefault();
+
+    report.date_range = {
+      range: null,
+      start: start.unix(),
+      end: end.unix(),
+    };
+    summary.fn = jest.fn();
+    summary.fn.mockReturnValueOnce(Promise.resolve([]));
+
+    await getReport.fn({ _id: id, timezone }, { session });
+
+    expect(summary.fn.mock.calls[0][0]).toEqual({
+      profileId: '12351wa',
+      profileService: 'facebook',
+      startDate: start.format('MM/DD/YYYY'),
+      endDate: end.format('MM/DD/YYYY'),
+    });
+  });
+
 
   it('assigns chart state to the chart response', async () => {
     const metricsEmbeddedInObject = {
@@ -160,7 +188,7 @@ describe('rpc/get_report', () => {
     summary.fn = jest.fn();
     summary.fn.mockReturnValueOnce(Promise.resolve(metricsEmbeddedInObject));
 
-    const response = await getReport.fn({ _id: id }, { session });
+    const response = await getReport.fn({ _id: id, timezone }, { session });
 
     expect(response.charts[0]).toEqual({
       ...report.charts[0],
@@ -191,7 +219,7 @@ describe('rpc/get_report', () => {
     summary.fn = jest.fn();
     summary.fn.mockReturnValue(Promise.resolve(metrics));
 
-    const result = await getReport.fn({ _id: id }, { session });
+    const result = await getReport.fn({ _id: id, timezone }, { session });
 
     expect(result.charts.length).toEqual(2);
   });

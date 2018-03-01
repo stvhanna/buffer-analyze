@@ -23,12 +23,12 @@ describe('rpc/summary', () => {
   });
 
   it('should request metrics to Analyze Api for Instagram', () => {
-    const end = moment().subtract(1, 'days').unix();
-    const start = moment().subtract(7, 'days').unix();
+    const startDate = moment().subtract(1, 'days').format('MM/DD/YYYY');
+    const endDate = moment().subtract(7, 'days').format('MM/DD/YYYY');
 
     summary.fn({
-      startDate: start,
-      endDate: end,
+      startDate,
+      endDate,
       profileId,
       profileService: 'instagram',
     }, {
@@ -46,8 +46,8 @@ describe('rpc/summary', () => {
         strictSSL: false,
         qs: {
           access_token: token,
-          start_date: moment.unix(start).format('MM/DD/YYYY'),
-          end_date: moment.unix(end).format('MM/DD/YYYY'),
+          start_date: startDate,
+          end_date: endDate,
           profile_id: profileId,
         },
         json: true,
@@ -56,12 +56,12 @@ describe('rpc/summary', () => {
 
   it('should request for the past week', () => {
     rp.mockClear();
-    const end = moment().subtract(1, 'days').unix();
-    const start = moment().subtract(7, 'days').unix();
+    const startDate = moment().subtract(7, 'days').format('MM/DD/YYYY');
+    const endDate = moment().subtract(1, 'days').format('MM/DD/YYYY');
 
     summary.fn({
-      startDate: start,
-      endDate: end,
+      startDate,
+      endDate,
       profileId,
       profileService,
     }, {
@@ -72,15 +72,15 @@ describe('rpc/summary', () => {
       },
     });
 
-    expect(rp.mock.calls[0])
+    expect(rp.mock.calls[1])
       .toEqual([{
         uri: `${process.env.API_ADDR}/1/profiles/${profileId}/analytics/totals.json`,
         method: 'GET',
         strictSSL: false,
         qs: {
           access_token: token,
-          start_date: moment.unix(start).format('MM/DD/YYYY'),
-          end_date: moment.unix(end).format('MM/DD/YYYY'),
+          start_date: moment().subtract(14, 'days').format('MM/DD/YYYY'),
+          end_date: moment().subtract(8, 'days').format('MM/DD/YYYY'),
           profile_id: null,
         },
         json: true,

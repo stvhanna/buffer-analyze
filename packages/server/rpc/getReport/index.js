@@ -16,9 +16,22 @@ const RPC_ENDPOINTS = {
 
 function calculateDateRange(range, timezone) {
   moment.tz.setDefault(timezone);
-  const startDate = moment().startOf('day').subtract(range, 'days').unix();
-  const endDate = moment().startOf('day').subtract(1, 'days').unix();
+  const startDate = moment().startOf('day').subtract(range, 'days').format('MM/DD/YYYY');
+  const endDate = moment().startOf('day').subtract(1, 'days').format('MM/DD/YYYY');
   moment.tz.setDefault();
+
+  return { startDate, endDate };
+}
+
+function getDateRangeFromDates(start, end, timezone) {
+  let startDate = start;
+  let endDate = end;
+  if (typeof start === 'number') {
+    moment.tz.setDefault(timezone);
+    startDate = moment.unix(start).format('MM/DD/YYYY');
+    endDate = moment.unix(end).format('MM/DD/YYYY');
+    moment.tz.setDefault();
+  }
 
   return { startDate, endDate };
 }
@@ -52,10 +65,11 @@ module.exports = method(
       if (report.date_range.range) {
         dateRange = calculateDateRange(report.date_range.range, timezone);
       } else {
-        dateRange = {
-          startDate: report.date_range.start,
-          endDate: report.date_range.end,
-        };
+        dateRange = getDateRangeFromDates(
+          report.date_range.start,
+          report.date_range.end,
+          timezone,
+        );
       }
 
       return Promise

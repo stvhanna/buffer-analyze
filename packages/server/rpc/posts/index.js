@@ -1,6 +1,5 @@
 const { method } = require('@bufferapp/micro-rpc');
 const rp = require('request-promise');
-const moment = require('moment');
 const DateRange = require('../utils/DateRange');
 
 const mergeStatsWithUpdates = (stats, updates) => {
@@ -45,9 +44,7 @@ module.exports = method(
   'posts',
   'fetch analytics posts for profiles and pages',
   ({ profileId, startDate, endDate, sortBy, descending, limit }, { session }) => {
-    const end = moment.unix(endDate).format('MM/DD/YYYY');
-    const start = moment.unix(startDate).format('MM/DD/YYYY');
-    const dateRange = new DateRange(start, end);
+    const dateRange = new DateRange(startDate, endDate);
     const posts = fetchTopPosts(
       profileId,
       dateRange,
