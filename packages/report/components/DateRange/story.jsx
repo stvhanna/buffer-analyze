@@ -7,5 +7,5 @@ import DateRange from './index';
 storiesOf('DateRange')
   .addDecorator(checkA11y)
   .add('renders the date range', () => (
-    <DateRange startDate="1514764800" endDate="1517356800" />
+    <DateRange startDate="02/20/2018" endDate="02/25/2018" />
   ));

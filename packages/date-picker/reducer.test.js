@@ -19,8 +19,8 @@ describe('reducer', () => {
     it('has the past seven days date range selected', () => {
       const yesterday = moment().subtract(1, 'day').format('MM/DD/YYYY');
       const sevenDaysAgo = moment().subtract(7, 'day').format('MM/DD/YYYY');
-      expect(moment.unix(state.startDate).format('MM/DD/YYYY')).toBe(sevenDaysAgo);
-      expect(moment.unix(state.endDate).format('MM/DD/YYYY')).toBe(yesterday);
+      expect(state.startDate).toBe(sevenDaysAgo);
+      expect(state.endDate).toBe(yesterday);
     });
 
     it('is closed', () => {
@@ -226,17 +226,17 @@ describe('actions', () => {
 
   describe('set dates', () => {
     it(`setStartDate triggers ${actionTypes.SET_START_DATE}`, () => {
-      const start = moment().subtract(30, 'days').unix();
-      expect(actions.setStartDate(start)).toEqual({
+      const start = moment().subtract(30, 'days');
+      expect(actions.setStartDate(start.unix())).toEqual({
         type: actionTypes.SET_START_DATE,
-        date: start,
+        date: start.format('MM/DD/YYYY'),
       });
     });
     it(`setEndDate triggers ${actionTypes.SET_END_DATE}`, () => {
-      const end = moment().subtract(1, 'days').unix();
-      expect(actions.setEndDate(end)).toEqual({
+      const end = moment().subtract(1, 'days');
+      expect(actions.setEndDate(end.unix())).toEqual({
         type: actionTypes.SET_END_DATE,
-        date: end,
+        date: end.format('MM/DD/YYYY'),
       });
     });
   });
@@ -261,12 +261,12 @@ describe('actions', () => {
   });
 
   it(`setDateRange triggers ${actionTypes.SET_DATE_RANGE}`, () => {
-    const start = moment().subtract(30, 'days').unix();
-    const end = moment().subtract(1, 'days').unix();
-    expect(actions.setDateRange(start, end)).toEqual({
+    const start = moment().subtract(30, 'days');
+    const end = moment().subtract(1, 'days');
+    expect(actions.setDateRange(start.unix(), end.unix())).toEqual({
       type: actionTypes.SET_DATE_RANGE,
-      startDate: start,
-      endDate: end,
+      startDate: start.format('MM/DD/YYYY'),
+      endDate: end.format('MM/DD/YYYY'),
     });
   });
 

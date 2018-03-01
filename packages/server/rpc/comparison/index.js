@@ -1,7 +1,6 @@
 
 const { method } = require('@bufferapp/micro-rpc');
 const rp = require('request-promise');
-const moment = require('moment');
 const DateRange = require('../utils/DateRange');
 
 const METRIC_KEYS = [
@@ -166,9 +165,7 @@ module.exports = method(
   'comparison',
   'get daily comparison data for the given profiles',
   ({ profileIds, startDate, endDate }) => {
-    const start = moment.unix(startDate).format('MM/DD/YYYY');
-    const end = moment.unix(endDate).format('MM/DD/YYYY');
-    const dateRange = new DateRange(start, end);
+    const dateRange = new DateRange(startDate, endDate);
     return rp({
       uri: `${process.env.ANALYZE_API_ADDR}/comparison`,
       method: 'POST',

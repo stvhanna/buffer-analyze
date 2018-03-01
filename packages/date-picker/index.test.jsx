@@ -1,3 +1,4 @@
+import moment from 'moment';
 import React from 'react';
 import { configure, mount, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
@@ -8,6 +9,7 @@ import DatePickerContainer, {
   actions,
   actionTypes,
   middleware,
+  convertDateToTimestamp,
 } from './index';
 import DatePicker from './components/DatePicker';
 import { presets } from './reducer';
@@ -70,8 +72,8 @@ describe('DatePicker', () => {
     const store = mockStore(state);
     const component = shallow(<DatePickerContainer store={store} />);
     expect(component
-        .props()
-        .open()).toEqual(actions.open());
+      .props()
+      .open()).toEqual(actions.open());
   });
 
   it('should dispatch close', () => {
@@ -79,8 +81,8 @@ describe('DatePicker', () => {
     const store = mockStore(state);
     const component = shallow(<DatePickerContainer store={store} />);
     expect(component
-        .props()
-        .close()).toEqual(actions.close());
+      .props()
+      .close()).toEqual(actions.close());
   });
 
   it('should dispatch clearStartDate', () => {
@@ -88,8 +90,8 @@ describe('DatePicker', () => {
     const store = mockStore(state);
     const component = shallow(<DatePickerContainer store={store} />);
     expect(component
-        .props()
-        .clearStartDate()).toEqual(actions.clearStartDate());
+      .props()
+      .clearStartDate()).toEqual(actions.clearStartDate());
   });
 
   it('should dispatch setDateRange', () => {
@@ -97,8 +99,8 @@ describe('DatePicker', () => {
     const store = mockStore(state);
     const component = shallow(<DatePickerContainer store={store} />);
     expect(component
-        .props()
-        .setDateRange(111, 222)).toEqual(actions.setDateRange(111, 222));
+      .props()
+      .setDateRange(111, 222)).toEqual(actions.setDateRange(111, 222));
   });
 
   it('should dispatch setMonth', () => {
@@ -113,8 +115,8 @@ describe('DatePicker', () => {
     const store = mockStore(state);
     const component = shallow(<DatePickerContainer store={store} />);
     expect(component
-        .props()
-        .setStartDate(123)).toEqual(actions.setStartDate(123));
+      .props()
+      .setStartDate(123)).toEqual(actions.setStartDate(123));
   });
 
   it('should dispatch setEndDate', () => {
@@ -122,8 +124,8 @@ describe('DatePicker', () => {
     const store = mockStore(state);
     const component = shallow(<DatePickerContainer store={store} />);
     expect(component
-        .props()
-        .setEndDate()).toEqual(actions.setEndDate());
+      .props()
+      .setEndDate()).toEqual(actions.setEndDate());
   });
 
   it('should dispatch clearEndDate', () => {
@@ -131,8 +133,8 @@ describe('DatePicker', () => {
     const store = mockStore(state);
     const component = shallow(<DatePickerContainer store={store} />);
     expect(component
-        .props()
-        .clearEndDate()).toEqual(actions.clearEndDate());
+      .props()
+      .clearEndDate()).toEqual(actions.clearEndDate());
   });
 
   it('should dispatch selectPreset when value is defined', () => {
@@ -140,8 +142,8 @@ describe('DatePicker', () => {
     const store = mockStore(state);
     const component = shallow(<DatePickerContainer store={store} />);
     expect(component
-        .props()
-        .selectPreset(1)).toEqual(undefined);
+      .props()
+      .selectPreset(1)).toEqual(undefined);
   });
 
   it('should dispatch selectPreset when value is Infinity', () => {
@@ -149,5 +151,16 @@ describe('DatePicker', () => {
     const store = mockStore(state);
     const component = shallow(<DatePickerContainer store={store} />);
     expect(component.props().selectPreset(Infinity)).toEqual(undefined);
+  });
+});
+
+describe('Convert Date To Timestamp', () => {
+  it('should convert date string to timestamp', () => {
+    const date = moment().startOf('day');
+    expect(convertDateToTimestamp(date.format('MM/DD/YYYY'))).toEqual(date.unix());
+  });
+
+  it('should return null if date is missing', () => {
+    expect(convertDateToTimestamp(null)).toEqual(null);
   });
 });

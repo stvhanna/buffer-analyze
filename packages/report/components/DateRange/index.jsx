@@ -10,7 +10,7 @@ const Range = styled.span`
   color: #343E47;
 `;
 
-const Date = ({ children }) => moment.unix(children).format('MMMM D, YYYY');
+const Date = ({ children }) => moment(children, 'MM/DD/YYYY').format('MMMM D, YYYY');
 
 const DateRange = ({ startDate, endDate }) =>
   <Text weight="bold">

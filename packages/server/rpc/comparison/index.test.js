@@ -7,8 +7,6 @@ import rp from 'request-promise';
 import { response, rpcFinalResponse } from './mockResponse';
 import comparison from './';
 
-const DateRange = require('../utils/DateRange');
-
 describe('rpc/comparison', () => {
   const profileIds = ['profile1234'];
 
@@ -23,15 +21,10 @@ describe('rpc/comparison', () => {
   });
 
   it('should send a POST request to /comparison with the provided parameters for every metric', async () => {
-    const startDate = moment().subtract(7, 'days').unix();
-    const endDate = moment().subtract(1, 'days').unix();
+    const startDate = moment().subtract(7, 'days').format('MM/DD/YYYY');
+    const endDate = moment().subtract(1, 'days').format('MM/DD/YYYY');
     rp.mockReturnValue(Promise.resolve(response));
     const result = await comparison.fn({ profileIds, startDate, endDate });
-
-    const start = moment.unix(startDate).format('MM/DD/YYYY');
-    console.log(start );
-    const end = moment.unix(endDate).format('MM/DD/YYYY');
-    console.log(end );
 
     expect(result.metrics).toEqual(rpcFinalResponse);
 
@@ -42,8 +35,8 @@ describe('rpc/comparison', () => {
       body: {
         profiles: profileIds,
         metrics: ['audience', 'reach', 'likes', 'engagement', 'comments'],
-        start_date: start,
-        end_date: end,
+        start_date: startDate,
+        end_date: endDate,
       },
       json: true,
     }]);
