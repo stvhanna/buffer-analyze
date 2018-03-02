@@ -11,6 +11,9 @@ const Date = styled.span`
   color: #c1c1c1;
 `;
 
+function formatDate(date) {
+  return moment(date, 'MM/DD/YYYY').format('MMMM D, YYYY');
+}
 
 const DateComponent = ({ updated_at, small, date_range }) => {
   let date;
@@ -18,7 +21,7 @@ const DateComponent = ({ updated_at, small, date_range }) => {
     if (date_range.range) {
       date = presets.find(preset => preset.range === date_range.range).label;
     } else {
-      date = `${moment.unix(date_range.start).format('MMMM D, YYYY')} to ${moment.unix(date_range.end).format('MMMM D, YYYY')}`;
+      date = `${formatDate(date_range.start)} to ${formatDate(date_range.end)}`;
     }
   } else {
     date = presets.find(preset => preset.range === 7).label;

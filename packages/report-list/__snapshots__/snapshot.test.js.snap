@@ -441,7 +441,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
             <span
               className="sc-chPdSV jFSiVY"
             >
-              Weekly Sync Report
+              With custom range
             </span>
           </span>
           <span
@@ -457,7 +457,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
             <span
               className="sc-gisBJw jOLbZU"
             >
-              February 14, 2018 to February 22, 2018
+              February 20, 2018 to February 25, 2018
             </span>
           </span>
         </span>
@@ -513,7 +513,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
             <span
               className="sc-chPdSV jFSiVY"
             >
-              Client Social Media Campaign
+              With dynamic range
             </span>
           </span>
           <span
@@ -594,7 +594,7 @@ exports[`Snapshots ReportList renders the reports collection in a small list 1`]
             <span
               className="sc-chPdSV jFSiVY"
             >
-              Weekly Sync Report
+              With custom range
             </span>
           </span>
           <span
@@ -610,7 +610,7 @@ exports[`Snapshots ReportList renders the reports collection in a small list 1`]
             <span
               className="sc-gisBJw jOLbZU"
             >
-              February 14, 2018 to February 22, 2018
+              February 20, 2018 to February 25, 2018
             </span>
           </span>
         </span>
@@ -666,7 +666,7 @@ exports[`Snapshots ReportList renders the reports collection in a small list 1`]
             <span
               className="sc-chPdSV jFSiVY"
             >
-              Client Social Media Campaign
+              With dynamic range
             </span>
           </span>
           <span
