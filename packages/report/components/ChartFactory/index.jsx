@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Text } from '@bufferapp/components';
 import { Table as SummaryTable, Title as SummaryTitle } from '@bufferapp/summary-table';
 import { Table as PostsSummary, Title as PostsSummaryTitle } from '@bufferapp/posts-summary-table';
 import { Table as AverageTable, Title as AverageTitle } from '@bufferapp/average-table';
@@ -88,7 +87,7 @@ const ChartFactory = ({ charts, moveUp, moveDown, deleteChart, exporting }) =>
           />}
         </TitleWrapper>
         <ProfileWrapper>
-          {chart.profile_id &&
+          {chart.profile_id && !chart.profileIds &&
             <ProfileLegend
               profile={chart.profile}
             />
