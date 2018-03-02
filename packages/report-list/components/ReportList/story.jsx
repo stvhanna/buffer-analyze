@@ -9,15 +9,15 @@ timezoneMock.register('US/Eastern');
 
 const mockReports = [{
   _id: '1293125asda',
-  name: 'Weekly Sync Report',
+  name: 'With custom range',
   updated_at: 1510099200000,
   date_range: {
-    start: 1518652800,
-    end: 1519293994,
+    start: '02/20/2018',
+    end: '02/25/2018',
   },
 }, {
   _id: '1921591adsd',
-  name: 'Client Social Media Campaign',
+  name: 'With dynamic range',
   updated_at: 1507680000000,
   date_range: {
     range: 7,
