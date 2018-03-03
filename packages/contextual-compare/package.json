@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/contextual-compare",
-  "version": "0.49.3",
+  "version": "0.49.4",
   "description": "the Contextual Compare Chart for Analyze Overview",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
   },
   "author": "federicoweber@gmail.com",
   "dependencies": {
-    "@bufferapp/add-report": "^0.49.3",
+    "@bufferapp/add-report": "^0.49.4",
     "@bufferapp/analyze-date-picker": "^0.49.2",
     "@bufferapp/analyze-decorators": "^0.15.2",
     "@bufferapp/analyze-png-export": "^0.43.7",

@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/comparison-chart",
-  "version": "0.49.3",
+  "version": "0.49.4",
   "description": "The comparison chart for Buffer Analyze",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,7 @@
   },
   "author": "federicoweber@gmail.com",
   "dependencies": {
-    "@bufferapp/add-report": "^0.49.3",
+    "@bufferapp/add-report": "^0.49.4",
     "@bufferapp/analyze-csv-export": "^0.39.0",
     "@bufferapp/analyze-date-picker": "^0.43.13",
     "@bufferapp/analyze-decorators": "^0.15.2",
