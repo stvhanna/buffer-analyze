@@ -8,7 +8,9 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
         name: 'add_chart_to_report',
         args: {
           reportId: action.reportId,
-          profileId: store.getState().profiles.selectedProfileId,
+          profileId: action.chart_id === 'comparison' ?
+            null :
+            store.getState().profiles.selectedProfileId,
           chartId: action.chart_id,
           state: action.state,
         },
@@ -19,7 +21,9 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
         name: 'create_report',
         args: {
           userId: store.getState().appSidebar.user.id,
-          profileId: store.getState().profiles.selectedProfileId,
+          profileId: action.chart_id === 'comparison' ?
+            null :
+            store.getState().profiles.selectedProfileId,
           chartId: action.chart_id,
           name: action.name,
           state: action.state,

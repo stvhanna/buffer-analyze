@@ -176,6 +176,47 @@ const report = {
   ],
 };
 
+const comparisonReport = {
+  name: 'Weekly Sync Report',
+  charts: [
+    {
+      chart_id: 'comparison',
+      profile_id: '4e88a092512f7e1556000000',
+      service: 'facebook',
+      profile: {
+        id: '4e88a092512f7e1556000000',
+        avatarUrl: 'https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/10403026_1055367724535674_7855796462569708170_n.png?oh=39ea3ae01610ba482316d4c87ca1c14c&oe=59B58B81',
+        service: 'facebook',
+        timezone: 'Europe/London',
+        username: 'Buffer',
+      },
+      metricKey: 'audience',
+      profileIds: [
+        '4f65dced512f7edf4600000a',
+        '56e0448e36e5e4b85080630e',
+      ],
+      profiles: [
+        {
+          id: '4f65dced512f7edf4600000a',
+          avatarUrl: 'https://pbs.twimg.com/profile_images/711360318262218752/wdl3jY5t_normal.jpg',
+          service: 'twitter',
+          timezone: 'America/Los_Angeles',
+          username: '@buffer',
+        },
+        {
+          id: '56e0448e36e5e4b85080630e',
+          avatarUrl: 'https://scontent.cdninstagram.com/t51.2885-19/11243954_781009082006449_2106614257_a.jpg',
+          service: 'instagram',
+          timezone: 'America/Los_Angeles',
+          username: 'buffer',
+        },
+      ],
+      metrics: [
+      ],
+    },
+  ],
+};
+
 const dateRange = {
   startDate: '02/20/2018',
   endDate: '02/25/2018',
@@ -187,6 +228,17 @@ storiesOf('Report')
     <Card>
       <Report
         {...report}
+        dateRange={dateRange}
+        saveChanges={() => {}}
+        parsePageBreaks={() => {}}
+        exporting
+      />
+    </Card>
+  ))
+  .add('render only the multi-profile legend if that is available', () => (
+    <Card>
+      <Report
+        {...comparisonReport}
         dateRange={dateRange}
         saveChanges={() => {}}
         parsePageBreaks={() => {}}
