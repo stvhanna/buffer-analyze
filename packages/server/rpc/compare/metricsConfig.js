@@ -127,6 +127,7 @@ module.exports = {
   twitter: {
     config: twitterConfig,
     orderedKeys: [
+      'followers',
       'posts_count',
       'impressions',
       'engagements',
@@ -135,12 +136,12 @@ module.exports = {
       'url_clicks',
       'replies',
       'new_followers',
-      'followers',
     ],
   },
   facebook: {
     config: facebookConfig,
     orderedKeys: [
+      'followers',
       'posts_count',
       'page_engagements',
       'post_impressions',
@@ -149,17 +150,16 @@ module.exports = {
       'reactions',
       'shares',
       'comments',
-      'followers',
       'new_followers',
     ],
   },
   instagram: {
     config: instagramConfig,
     orderedKeys: [
+      'followers',
       'posts_count',
       'likes',
       'comments',
-      'followers',
       'new_followers',
     ],
   },
