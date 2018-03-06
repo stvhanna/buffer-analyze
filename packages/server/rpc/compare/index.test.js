@@ -177,11 +177,11 @@ describe('rpc/compare', () => {
     });
 
     expect(data.totals[0]).toEqual({
-      diff: -40,
-      label: 'Posts',
-      color: '#3A92D3',
-      value: 3,
-      previousValue: 5,
+      diff: 1,
+      label: 'Total Fans',
+      color: '#FDA3F3',
+      value: 99324,
+      previousValue: 98805,
       postsCount: 3,
       previousPostsCount: 5,
     });
@@ -204,8 +204,8 @@ describe('rpc/compare', () => {
     expect(data.totals.length).toBe(10);
     expect(data.totals[0]).toEqual({
       diff: 0,
-      label: 'Posts',
-      color: '#3A92D3',
+      label: 'Total Fans',
+      color: '#FDA3F3',
       value: 0,
       previousValue: 0,
       postsCount: 0,
@@ -229,10 +229,10 @@ describe('rpc/compare', () => {
 
     expect(data.totals.length).toBe(10);
     expect(data.totals[0]).toEqual({
-      diff: 300,
-      label: 'Posts',
-      color: '#3A92D3',
-      value: 3,
+      diff: 9932400,
+      label: 'Total Fans',
+      color: '#FDA3F3',
+      value: 99324,
       previousValue: 0,
       postsCount: 3,
       previousPostsCount: 0,
@@ -285,7 +285,7 @@ describe('rpc/compare', () => {
       .not.toMatchObject(data.daily[1].metrics[0]);
 
     expect(data.totalPeriodDaily[1].metrics[0]).toMatchObject({
-      label: 'Tweets',
+      label: 'Total Followers',
       value: firstDayMetric.value + secondDayMetric.value,
       previousValue: firstDayMetric.previousValue + secondDayMetric.previousValue,
     });
