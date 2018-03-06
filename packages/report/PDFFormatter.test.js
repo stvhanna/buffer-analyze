@@ -18,6 +18,15 @@ describe('PDF formatter', () => {
     expect(PDFFormatter).not.toBe(undefined);
   });
 
+  it('formatWrapper prevents page breaks after the main content', () => {
+    const wrapper = require('./mocks/smallReport').default; // eslint-disable-line global-require
+    PDFFormatter.formatWrapper(wrapper);
+    expect(wrapper.style._values.border).toBe('1px solid white');
+    expect(wrapper.style._values.height).toBe('99%');
+    expect(wrapper.style._values['page-break-before']).toBe('avoid');
+    expect(wrapper.style._values['page-break-after']).toBe('avoid');
+  });
+
   describe('adds page breaks', () => {
     it('should not add a page break if the sunm of the heights of all the children is smaller than an A4', () => {
       const smallReport = require('./mocks/smallReport').default; // eslint-disable-line global-require

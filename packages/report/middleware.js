@@ -110,6 +110,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
       break;
     case actionTypes.PARSE_PAGE_BREAKS:
       formatter = new PDFFormatter(document.getElementById('report-page'));
+      PDFFormatter.formatWrapper(document.getElementById('root'));
       formatter.formatPage();
       break;
     default:

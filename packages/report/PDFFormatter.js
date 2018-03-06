@@ -1,7 +1,6 @@
 const PDF_HEIGHT = 1122; // 842 pt to px
 
 class PDFFormatter {
-
   constructor(page) {
     this.currentPageHeight = 0;
     this.modules = page.children;
@@ -14,6 +13,13 @@ class PDFFormatter {
         this.addPageBreak(module);
       }
     });
+  }
+
+  static formatWrapper(wrapper) {
+    wrapper.style.setProperty('border', '1px solid white');
+    wrapper.style.setProperty('height', '99%');
+    wrapper.style.setProperty('page-break-after', 'avoid');
+    wrapper.style.setProperty('page-break-before', 'avoid');
   }
 
   needsPageBreak() {

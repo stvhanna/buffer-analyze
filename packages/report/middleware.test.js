@@ -198,6 +198,7 @@ describe('middleware', () => {
   it('PARSE_PAGE_BREAKS sends report page over to PDFFormatter', () => {
     Object.defineProperty(document, 'getElementById', {
       value: () => 'report html',
+      configurable: true,
     });
     const action = {
       type: actionTypes.PARSE_PAGE_BREAKS,
@@ -205,6 +206,18 @@ describe('middleware', () => {
     middleware(store)(next)(action);
     expect(PDFFormatter.mock.calls[0]).toEqual(['report html']);
     expect(PDFFormatter.mock.instances[0].formatPage).toHaveBeenCalled();
+  });
+
+  it('PARSE_PAGE_BREAKS formats the report wrapper to avoid extra page breaks', () => {
+    Object.defineProperty(document, 'getElementById', {
+      value: () => 'report wrapper',
+      configurable: true,
+    });
+    const action = {
+      type: actionTypes.PARSE_PAGE_BREAKS,
+    };
+    middleware(store)(next)(action);
+    expect(PDFFormatter.formatWrapper).toHaveBeenCalledWith('report wrapper');
   });
 
   describe('updating a report successfully', () => {
