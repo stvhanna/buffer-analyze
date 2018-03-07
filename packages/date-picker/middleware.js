@@ -1,6 +1,7 @@
+import { LOCATION_CHANGE } from 'react-router-redux';
 import { actions, actionTypes } from '@bufferapp/async-data-fetch';
 import { actionTypes as profileActionTypes } from '@bufferapp/analyze-profile-selector';
-import { actions as dateActions } from './reducer';
+import { actions as dateActions, updatePresets } from './reducer';
 
 const getStartDate = (query) => {
   let startDate = query.match(/start_date=(.*)&/);
@@ -16,6 +17,43 @@ const getEndDate = (query) => {
   }
   return endDate;
 };
+
+function getTabId(pathname) {
+  const matchPath = pathname.match(/^\/(\w+)/);
+  return matchPath ?
+    matchPath[1] :
+    null;
+}
+
+
+function getHistoricDateRange(state, tabId) {
+  const historicTabData = state.date.historicData[tabId];
+  if (historicTabData) {
+    return {
+      startDate: historicTabData.startDate,
+      endDate: historicTabData.endDate,
+      preset: updatePresets(state.date.presets, historicTabData.selectedPreset)
+        .presets.find(preset => preset.selected),
+    };
+  }
+
+  return null;
+}
+
+function handleTabChange(pathname, state, dispatch) {
+  const tabId = getTabId(pathname);
+  const currentTabId = state.router.location ?
+    getTabId(state.router.location.pathname) :
+    null;
+  const isNewTab = tabId && tabId !== currentTabId;
+  if (isNewTab) {
+    dispatch(dateActions.setCurrentTab(tabId));
+    const historicDateRange = getHistoricDateRange(state, tabId);
+    if (historicDateRange) {
+      dispatch(dateActions.setDateRangeAndPreset(historicDateRange));
+    }
+  }
+}
 
 export default ({ dispatch, getState }) => next => (action) => {
   let startDate;
@@ -44,6 +82,9 @@ export default ({ dispatch, getState }) => next => (action) => {
           profileId: action.profile.id,
         },
       }));
+      break;
+    case LOCATION_CHANGE:
+      handleTabChange(action.payload.pathname, state, dispatch);
       break;
     default:
       break;
