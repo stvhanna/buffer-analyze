@@ -3,8 +3,8 @@ import moment from 'moment';
 const createChartFilename = (chart, date) => {
   const { startDate, endDate } = date;
   const fileDateFormat = 'YYYYMMDD';
-  const startDateFormatted = moment.unix(startDate).format(fileDateFormat);
-  const endDateFormatted = moment.unix(endDate).format(fileDateFormat);
+  const startDateFormatted = moment(startDate, 'MM/DD/YYYY').format(fileDateFormat);
+  const endDateFormatted = moment(endDate, 'MM/DD/YYYY').format(fileDateFormat);
 
   return `${chart.filename}-${startDateFormatted}-to-${endDateFormatted}.csv`;
 };
