@@ -43,10 +43,21 @@ const getCSVBody = (chart) => {
 
 const convertChartToCSV = chart => `${getCSVHeader(chart)}\n${getCSVBody(chart)}`;
 
-const generateCSV = (chart, date) => ({
-  filename: createChartFilename(chart, date),
-  csv: convertChartToCSV(chart.data),
-});
+const generateCSV = (chart, date) => {
+  const metricKeys = Object.keys(chart.data);
+  const hasMetrics = metricKeys.length > 0;
+  if (!hasMetrics) {
+    return {
+      filename: null,
+      csv: null,
+    };
+  }
+
+  return {
+    filename: createChartFilename(chart, date),
+    csv: convertChartToCSV(chart.data),
+  };
+};
 
 export default (charts, date) =>
   Promise

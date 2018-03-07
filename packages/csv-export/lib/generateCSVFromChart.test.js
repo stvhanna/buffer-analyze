@@ -35,6 +35,21 @@ describe('generateCSVFromChart', () => {
       });
   });
 
+  it('it skip a chart with no metrics', (done) => {
+    const chart = {
+      filename: 'summary',
+      data: {},
+    };
+    generateCSVFromChart([chart], date)
+      .then((csvs) => {
+        const csv = csvs[0].csv;
+        const filename = csvs[0].filename;
+        expect(csv).toBe(null);
+        expect(filename).toBe(null);
+        done();
+      });
+  });
+
   it('returns a csv for a chart with multiple dimensions', (done) => {
     const multipleDimensionCSV = `foo,date,impressions
 1,10/03/2017,26950
