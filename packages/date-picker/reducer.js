@@ -14,6 +14,7 @@ export const actionTypes = keyWrapper('DATE_PICKER', {
   CLEAR_END_DATE: 'CLEAR_END_DATE',
   OPEN_CALENDAR: 'OPEN_CALENDAR',
   CLOSE_CALENDAR: 'CLOSE_CALENDAR',
+  SET_CURRET_TAB: 'SET_CURRET_TAB',
 });
 
 function getDayFromTimestamp(timestamp) {
@@ -34,6 +35,43 @@ function calculateDateRange(range) {
   const startDate = formatDay(moment().startOf('day').subtract(range, 'days'));
   const endDate = formatDay(moment().startOf('day').subtract(1, 'days'));
   return { startDate, endDate };
+}
+
+export function updatePresets(presets, selectedPreset) {
+  return { presets: presets.map((preset) => {
+    preset.selected = selectedPreset ? preset.range === selectedPreset.range : preset.name === 'Custom';
+    return preset;
+  }) };
+}
+
+function ensureHistoryStore(state, tabId) {
+  const historicData = Object.assign({}, state.historicData);
+  if (!historicData[tabId]) {
+    historicData[tabId] = {
+      selectedPreset: state.presets.find(preset => preset.selected),
+      startDate: state.startDate,
+      endDate: state.endDate,
+    };
+  }
+
+  return { historicData };
+}
+
+function updateHistory(state, updatedValues) {
+  const tabId = state.currentTab;
+  const historicData = Object.assign({}, state.historicData);
+  if (historicData[tabId]) {
+    if (updatedValues.presets) {
+      updatedValues.selectedPreset = updatedValues.presets.find(preset => preset.selected);
+      delete updatedValues.presets;
+    }
+    historicData[tabId] = {
+      ...historicData[tabId],
+      ...updatedValues,
+    };
+  }
+
+  return { historicData };
 }
 
 export const presets = [
@@ -90,6 +128,8 @@ const initialState = {
   month: moment().startOf('month').unix(),
   ...calculateDateRange(7),
   presets,
+  historicData: {},
+  currentTab: '',
 };
 
 
@@ -104,33 +144,39 @@ export default (state = initialState, action) => {
       return {
         ...state,
         startDate: null,
+        ...updateHistory(state, { startDate: null }),
       };
     case actionTypes.SET_START_DATE:
       return {
         ...state,
         startDate: action.date,
+        ...updateHistory(state, { startDate: action.date }),
       };
     case actionTypes.CLEAR_END_DATE:
       return {
         ...state,
         endDate: null,
+        ...updateHistory(state, { endDate: null }),
       };
     case actionTypes.SET_END_DATE:
       return {
         ...state,
         endDate: action.date,
+        ...updateHistory(state, { endDate: action.date }),
       };
     case actionTypes.SET_DATE_RANGE:
       return {
         ...state,
-        presets: state.presets.map((preset) => {
-          preset.selected = action.preset ? preset.range === action.preset.range : preset.name === 'Custom';
-          return preset;
-        }),
+        ...updatePresets(state.presets, action.preset),
         startDate: action.startDate,
         endDate: action.endDate,
         previousStartDate: null,
         previousEndDate: null,
+        ...updateHistory(state, {
+          endDate: action.endDate,
+          startDate: action.startDate,
+          ...updatePresets(state.presets, action.preset),
+        }),
       };
     case `get_report_${asyncDataFetchActionTypes.FETCH_START}`:
       return {
@@ -184,6 +230,12 @@ export default (state = initialState, action) => {
         startDate: null,
         endDate: null,
       };
+    case actionTypes.SET_CURRET_TAB:
+      return {
+        ...state,
+        ...ensureHistoryStore(state, action.tabId),
+        currentTab: action.tabId,
+      };
     default:
       return state;
   }
@@ -226,5 +278,15 @@ export const actions = {
   setMonth: date => ({
     type: actionTypes.SET_MONTH,
     date,
+  }),
+  setCurrentTab: tabId => ({
+    type: actionTypes.SET_CURRET_TAB,
+    tabId,
+  }),
+  setDateRangeAndPreset: ({ preset, startDate, endDate }) => ({
+    type: actionTypes.SET_DATE_RANGE,
+    startDate,
+    endDate,
+    preset,
   }),
 };

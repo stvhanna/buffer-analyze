@@ -30,6 +30,14 @@ describe('reducer', () => {
     it('has no minimum date set', () => {
       expect(state.minDate).toBe(null);
     });
+
+    it('has no historic data', () => {
+      expect(state.historicData).toMatchObject({});
+    });
+
+    it('has no curretTab set', () => {
+      expect(state.currentTab).toBe('');
+    });
   });
 
   describe('opening and closing the date picker', () => {
@@ -167,8 +175,8 @@ describe('reducer', () => {
 
   describe('SET_DATE_RANGE', () => {
     it('changes the date range', () => {
-      const startDate = moment().subtract(4, 'days').unix();
-      const endDate = moment().subtract(2, 'days').unix();
+      const startDate = moment().subtract(4, 'days').format('MM/DD/YYYY');
+      const endDate = moment().subtract(2, 'days').format('MM/DD/YYYY');
       const state = reducer(undefined, {
         type: actionTypes.SET_DATE_RANGE,
         startDate,
@@ -276,5 +284,164 @@ describe('actions', () => {
       type: actionTypes.SET_MONTH,
       date,
     });
+  });
+});
+
+describe('persist dates on tabs', () => {
+  const expectPresets = [
+    {
+      name: '7 Days',
+      label: 'Past 7 Days',
+      range: 7,
+      selected: false,
+      disabled: false,
+    },
+    {
+      name: 'Yesterday',
+      label: 'Yesterday',
+      range: 1,
+      selected: true,
+      disabled: false,
+    },
+  ];
+
+  const presets = [
+    {
+      name: '7 Days',
+      label: 'Past 7 Days',
+      range: 7,
+      selected: true,
+      disabled: false,
+    },
+    {
+      name: 'Yesterday',
+      label: 'Yesterday',
+      range: 1,
+      selected: false,
+      disabled: false,
+    },
+  ];
+
+  const historicData = {
+    foo: {
+      selectedPreset: expectPresets[1],
+      startDate: '1/1/2018',
+      endDate: '1/2/2018',
+    },
+  };
+
+  it('should dispatch SET_CURRET_TAB', () => {
+    expect(actions.setCurrentTab('overview')).toEqual({
+      type: actionTypes.SET_CURRET_TAB,
+      tabId: 'overview',
+    });
+  });
+
+  it('should set the current tab on SET_CURRET_TAB', () => {
+    const state = reducer(undefined, {
+      type: actionTypes.SET_CURRET_TAB,
+      tabId: 'foo',
+    });
+    expect(state.currentTab).toBe('foo');
+  });
+
+  it('should create a historicData store on SET_CURRET_TAB', () => {
+    const state = reducer(undefined, {
+      type: actionTypes.SET_CURRET_TAB,
+      tabId: 'foo',
+    });
+    expect(state.historicData.foo).toBeDefined();
+    expect(typeof state.historicData.foo.selectedPreset).toBe('object');
+    expect(typeof state.historicData.foo.endDate).toBe('string');
+    expect(typeof state.historicData.foo.startDate).toBe('string');
+  });
+
+  it('should not override an existing history store on SET_CURRET_TAB', () => {
+    const state = reducer({ historicData }, {
+      type: actionTypes.SET_CURRET_TAB,
+      tabId: 'foo',
+    });
+    expect(state.historicData.foo).toBe(historicData.foo);
+  });
+
+  it(`setDateRangeAndPreset triggers ${actionTypes.SET_DATE_RANGE}`, () => {
+    expect(actions.setDateRangeAndPreset({
+      startDate: '1/1/2018',
+      endDate: '1/2/2018',
+      preset: presets[1],
+    })).toEqual({
+      type: actionTypes.SET_DATE_RANGE,
+      startDate: '1/1/2018',
+      endDate: '1/2/2018',
+      preset: presets[1],
+    });
+  });
+
+  it('should store historicData for the current tab on SET_START_DATE', () => {
+    const startDate = moment().subtract(4, 'days').format('MM/DD/YYYY');
+    const state = reducer({
+      historicData,
+      currentTab: 'foo',
+    }, {
+      type: actionTypes.SET_START_DATE,
+      date: startDate,
+    });
+    expect(state.historicData.foo.startDate).toBe(startDate);
+  });
+  it('should store historicData for the current tab on CLEAR_START_DATE', () => {
+    const state = reducer({
+      historicData,
+      currentTab: 'foo',
+    }, {
+      type: actionTypes.CLEAR_START_DATE,
+    });
+    expect(state.historicData.foo.startDate).toBe(null);
+  });
+  it('should store historicData for the current tab on SET_END_DATE', () => {
+    const endDate = moment().subtract(4, 'days').format('MM/DD/YYYY');
+    const state = reducer({
+      historicData,
+      currentTab: 'foo',
+    }, {
+      type: actionTypes.SET_END_DATE,
+      date: endDate,
+    });
+    expect(state.historicData.foo.endDate).toBe(endDate);
+  });
+  it('should store historicData for the current tab on CLEAR_END_DATE', () => {
+    const state = reducer({
+      historicData,
+      currentTab: 'foo',
+    }, {
+      type: actionTypes.CLEAR_END_DATE,
+    });
+    expect(state.historicData.foo.endDate).toBe(null);
+  });
+  it('should store historicData for the current tab on SET_DATE_RANGE', () => {
+    const startDate = moment().subtract(4, 'days').format('MM/DD/YYYY');
+    const endDate = moment().subtract(2, 'days').format('MM/DD/YYYY');
+    let state = reducer({
+      historicData,
+      currentTab: 'foo',
+      presets,
+    }, {
+      type: actionTypes.SET_DATE_RANGE,
+      startDate,
+      endDate,
+    });
+    expect(state.historicData.foo.startDate).toBe(startDate);
+    expect(state.historicData.foo.endDate).toBe(endDate);
+
+    state = reducer({
+      historicData,
+      currentTab: 'foo',
+      presets,
+    }, {
+      preset: {
+        range: 1,
+      },
+    });
+    const selectedPreset = state.historicData.foo.selectedPreset;
+    expect(selectedPreset.range).toBe(1);
   });
 });
