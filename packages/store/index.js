@@ -27,6 +27,7 @@ import { middleware as contextualCompareMiddleware } from '@bufferapp/contextual
 import { middleware as profileSelectorMiddleware } from '@bufferapp/analyze-profile-selector';
 import { middleware as reportMiddleware } from '@bufferapp/report';
 import { middleware as comparisonMiddleware } from '@bufferapp/comparison-chart';
+import { middleware as hourlyMiddleware } from '@bufferapp/hourly-chart';
 import { middleware as environmentMiddleware } from '@bufferapp/environment';
 import { middleware as unauthorizedRedirectMiddleware } from '@bufferapp/unauthorized-redirect';
 import { middleware as exportToPDFMiddleware } from '@bufferapp/pdf-export';
@@ -82,6 +83,7 @@ const configureStore = (initialstate) => {
         reportMiddleware,
         exportPickerMiddleware,
         comparisonMiddleware,
+        hourlyMiddleware,
         environmentMiddleware,
         unauthorizedRedirectMiddleware,
         exportToPDFMiddleware,
