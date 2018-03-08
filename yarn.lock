@@ -30,13 +30,13 @@
     react-highcharts "^12.0.0"
     styled-components "^2.2.1"
 
-"@bufferapp/app-sidebar@1.3.2":
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/@bufferapp/app-sidebar/-/app-sidebar-1.3.2.tgz#982871683b0f56d670e85e45d80eba09ba8d2fb2"
+"@bufferapp/app-sidebar@1.3.3":
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/@bufferapp/app-sidebar/-/app-sidebar-1.3.3.tgz#29e935c87829367cd054ccfa38c7866d894229dd"
   dependencies:
     "@bufferapp/async-data-fetch" "1.2.7"
-    "@bufferapp/components" "1.1.0-beta.6"
-    "@bufferapp/session-manager" "0.6.1"
+    "@bufferapp/components" "1.0.8"
+    "@bufferapp/session-manager" "0.6.2"
 
 "@bufferapp/async-data-fetch@0.5.25":
   version "0.5.25"
@@ -75,9 +75,9 @@
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/@bufferapp/chronos/-/chronos-0.6.1.tgz#0213dff339459ca510103e5a72f558682a2675dd"
 
-"@bufferapp/components@1.1.0-beta.6":
-  version "1.1.0-beta.6"
-  resolved "https://registry.yarnpkg.com/@bufferapp/components/-/components-1.1.0-beta.6.tgz#61782a8fe78e128e5011c76075600a17cca846d5"
+"@bufferapp/components@1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@bufferapp/components/-/components-1.0.8.tgz#ed551e32a574a4a582df2aa023485f19e11d0f70"
   dependencies:
     "@bufferapp/react-keyframes" "0.2.5"
     prop-types "15.5.10"
@@ -137,9 +137,9 @@
   version "0.2.5"
   resolved "https://registry.yarnpkg.com/@bufferapp/react-keyframes/-/react-keyframes-0.2.5.tgz#fed847849f170c440ad6ea683224352e4b882b92"
 
-"@bufferapp/session-manager@0.6.1":
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/@bufferapp/session-manager/-/session-manager-0.6.1.tgz#fcbd6b0c66750ad0bce4a9fd86b093d113b054e5"
+"@bufferapp/session-manager@0.6.2":
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/@bufferapp/session-manager/-/session-manager-0.6.2.tgz#1c468cae20255ae49d2b3bfc9083fb9e64543ce3"
   dependencies:
     jsonwebtoken "8.1.0"
     micro-rpc-client "0.1.2"
@@ -149,12 +149,12 @@
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@bufferapp/shutdown-helper/-/shutdown-helper-0.2.0.tgz#d43bbba845e30e411dda76a7b7629e11160e5395"
 
-"@bufferapp/unauthorized-redirect@1.3.1":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@bufferapp/unauthorized-redirect/-/unauthorized-redirect-1.3.1.tgz#885f4b736454e0732511d3a9ebdb45eeae754d7c"
+"@bufferapp/unauthorized-redirect@1.3.3":
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/@bufferapp/unauthorized-redirect/-/unauthorized-redirect-1.3.3.tgz#094adc08a4d1fe79184d612318c966de6135f012"
   dependencies:
     "@bufferapp/async-data-fetch" "1.2.7"
-    "@bufferapp/session-manager" "0.6.1"
+    "@bufferapp/session-manager" "0.6.2"
 
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
   version "1.1.2"
