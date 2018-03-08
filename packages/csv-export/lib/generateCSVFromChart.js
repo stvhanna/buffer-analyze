@@ -3,8 +3,8 @@ import moment from 'moment';
 const createChartFilename = (chart, date) => {
   const { startDate, endDate } = date;
   const fileDateFormat = 'YYYYMMDD';
-  const startDateFormatted = moment.unix(startDate).format(fileDateFormat);
-  const endDateFormatted = moment.unix(endDate).format(fileDateFormat);
+  const startDateFormatted = moment(startDate, 'MM/DD/YYYY').format(fileDateFormat);
+  const endDateFormatted = moment(endDate, 'MM/DD/YYYY').format(fileDateFormat);
 
   return `${chart.filename}-${startDateFormatted}-to-${endDateFormatted}.csv`;
 };
@@ -43,10 +43,21 @@ const getCSVBody = (chart) => {
 
 const convertChartToCSV = chart => `${getCSVHeader(chart)}\n${getCSVBody(chart)}`;
 
-const generateCSV = (chart, date) => ({
-  filename: createChartFilename(chart, date),
-  csv: convertChartToCSV(chart.data),
-});
+const generateCSV = (chart, date) => {
+  const metricKeys = Object.keys(chart.data);
+  const hasMetrics = metricKeys.length > 0;
+  if (!hasMetrics) {
+    return {
+      filename: null,
+      csv: null,
+    };
+  }
+
+  return {
+    filename: createChartFilename(chart, date),
+    csv: convertChartToCSV(chart.data),
+  };
+};
 
 export default (charts, date) =>
   Promise

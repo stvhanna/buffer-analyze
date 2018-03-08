@@ -44,6 +44,9 @@ describe('downloadAsZip', () => {
     }, {
       filename: 'top-posts-20160606-to20160610.csv',
       csv: 'csv content',
+    }, {
+      filename: null,
+      csv: null,
     }];
     downloadAsZip('analytics', files).then(() => {
       expect(zipFolder.file).toHaveBeenCalledWith(files[0].filename, files[0].csv);

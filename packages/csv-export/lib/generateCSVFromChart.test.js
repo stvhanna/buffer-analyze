@@ -1,11 +1,10 @@
 /* eslint-disable import/first */
-import moment from 'moment';
 import generateCSVFromChart from './generateCSVFromChart';
 
 describe('generateCSVFromChart', () => {
   const date = {
-    startDate: moment('20170707', 'YYYYMMDD').unix(),
-    endDate: moment('20170715', 'YYYYMMDD').unix(),
+    startDate: '07/07/2017',
+    endDate: '07/15/2017',
   };
 
   it('returns a csv for a chart with one dimension only', (done) => {
@@ -32,6 +31,21 @@ describe('generateCSVFromChart', () => {
         const filename = csvs[0].filename;
         expect(csv).toBe(singleDimensionCSV);
         expect(filename).toBe('summary-20170707-to-20170715.csv');
+        done();
+      });
+  });
+
+  it('it skip a chart with no metrics', (done) => {
+    const chart = {
+      filename: 'summary',
+      data: {},
+    };
+    generateCSVFromChart([chart], date)
+      .then((csvs) => {
+        const csv = csvs[0].csv;
+        const filename = csvs[0].filename;
+        expect(csv).toBe(null);
+        expect(filename).toBe(null);
         done();
       });
   });

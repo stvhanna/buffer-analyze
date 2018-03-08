@@ -1,5 +1,4 @@
 /* eslint-disable import/first */
-import moment from 'moment';
 import generatePNGFromChart from './generatePNGFromChart';
 
 jest.mock('dataurl-to-blob');
@@ -9,8 +8,8 @@ import dataURLToBlob from 'dataurl-to-blob';
 
 describe('generatePNGFromChart', () => {
   const date = {
-    startDate: moment('20170707', 'YYYYMMDD').unix(),
-    endDate: moment('20170715', 'YYYYMMDD').unix(),
+    startDate: '07/07/2017',
+    endDate: '07/15/2017',
   };
 
   const charts = [{
