@@ -15,8 +15,8 @@ const shouldCallHourlyTotalsEndpointWith = (profileId, token, startDate, endDate
       strictSSL: false,
       qs: {
         access_token: token,
-        start_date: moment.unix(startDate).format('MM/DD/YYYY'),
-        end_date: moment.unix(endDate).format('MM/DD/YYYY'),
+        start_date: startDate,
+        end_date: endDate,
       },
       json: true,
     }]);
@@ -44,8 +44,8 @@ describe('rpc/hourly', () => {
   });
 
   it('should request hourly data for current profile and date range', async () => {
-    const endDate = moment().subtract(1, 'days').unix();
-    const startDate = moment().subtract(7, 'days').unix();
+    const endDate = moment().subtract(1, 'days').format('MM/DD/YYYY');
+    const startDate = moment().subtract(7, 'days').format('MM/DD/YYYY');
     rp.mockReturnValueOnce(Promise.resolve(response));
 
     const hourlyData = await hourly.fn({ startDate, endDate, profileId }, session);
@@ -62,8 +62,8 @@ describe('rpc/hourly', () => {
   });
 
   it('returns selectedMetric if selected label is passed as parameter', async () => {
-    const endDate = moment().subtract(1, 'days').unix();
-    const startDate = moment().subtract(7, 'days').unix();
+    const endDate = moment().subtract(1, 'days').format('MM/DD/YYYY');
+    const startDate = moment().subtract(7, 'days').format('MM/DD/YYYY');
     const selectedMetric = 'Engagements';
     rp.mockReturnValueOnce(Promise.resolve(response));
 
@@ -83,8 +83,8 @@ describe('rpc/hourly', () => {
   });
 
   it('returns secondaryMetric if secondary metric label is passed as parameter', async () => {
-    const endDate = moment().subtract(1, 'days').unix();
-    const startDate = moment().subtract(7, 'days').unix();
+    const endDate = moment().subtract(1, 'days').format('MM/DD/YYYY');
+    const startDate = moment().subtract(7, 'days').format('MM/DD/YYYY');
     const secondaryMetric = 'Likes';
     rp.mockReturnValueOnce(Promise.resolve(response));
 
