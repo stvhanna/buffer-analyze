@@ -9,6 +9,7 @@ import { Table as PostsTable, Title as PostsTitle } from '@bufferapp/posts-table
 import { Chart as CompareChart, Title as CompareTitle } from '@bufferapp/compare-chart';
 import { Title as AudienceTitle } from '@bufferapp/audience-chart';
 import { Chart as ComparisonChart, Title as ComparisonTitle } from '@bufferapp/comparison-chart';
+import { ChartContent as HourlyChart, Title as HourlyTitle } from '@bufferapp/hourly-chart';
 import { CommonChart } from '@bufferapp/analyze-shared-components';
 
 import ChartEditButtons from '../ChartEditButtons';
@@ -47,6 +48,10 @@ const CHARTS = {
   comparison: {
     chart: ComparisonChart,
     title: ComparisonTitle,
+  },
+  'hourly-engagements': {
+    chart: HourlyChart,
+    title: HourlyTitle,
   },
 };
 

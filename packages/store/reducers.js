@@ -22,6 +22,7 @@ import { reducer as reportReducer } from '@bufferapp/report';
 import { reducer as multiProfileSelectorReducer } from '@bufferapp/multi-profile-selector';
 import { reducer as exportPickerReducer } from '@bufferapp/analyze-export-picker';
 import { reducer as comparisonReducer } from '@bufferapp/comparison-chart';
+import { reducer as hourlyReducer } from '@bufferapp/hourly-chart';
 import { reducer as environmentReducer } from '@bufferapp/environment';
 
 export default combineReducers({
@@ -48,5 +49,6 @@ export default combineReducers({
   report: reportReducer,
   multiProfileSelector: multiProfileSelectorReducer,
   comparison: comparisonReducer,
+  hourly: hourlyReducer,
   environment: environmentReducer,
 });
