@@ -51,12 +51,13 @@ storiesOf('HourlyChart')
   .addDecorator(ReportsStore)
   .add('[TESTED] loading state', () => (
     <div style={wrapper}>
-      <HourlyChart loading />
+      <HourlyChart loading profileService="twitter" />
     </div>
   ))
   .add('[TESTED] loaded chart', () => (
     <div style={wrapper}>
       <HourlyChart
+        profileService="twitter"
         selectedMetric={engagements}
         metrics={mockMetrics}
         postsCount={mockPostCount}
@@ -67,6 +68,7 @@ storiesOf('HourlyChart')
   .add('[TESTED] second metric selected', () => (
     <div style={wrapper}>
       <HourlyChart
+        profileService="twitter"
         selectedMetric={engagements}
         secondaryMetric={impressions}
         metrics={mockMetrics}
