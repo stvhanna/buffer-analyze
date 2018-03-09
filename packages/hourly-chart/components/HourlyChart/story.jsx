@@ -49,12 +49,12 @@ const mockPostCount =
 storiesOf('HourlyChart')
   .addDecorator(checkA11y)
   .addDecorator(ReportsStore)
-  .add('loading state', () => (
+  .add('[TESTED] loading state', () => (
     <div style={wrapper}>
       <HourlyChart loading />
     </div>
   ))
-  .add('loaded chart', () => (
+  .add('[TESTED] loaded chart', () => (
     <div style={wrapper}>
       <HourlyChart
         selectedMetric={engagements}
@@ -64,7 +64,7 @@ storiesOf('HourlyChart')
       />
     </div>
   ))
-  .add('second metric selected', () => (
+  .add('[TESTED] second metric selected', () => (
     <div style={wrapper}>
       <HourlyChart
         selectedMetric={engagements}

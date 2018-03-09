@@ -514,7 +514,7 @@ exports[`Snapshots Dropdown open dropdown 1`] = `
 </span>
 `;
 
-exports[`Snapshots HourlyChart loaded chart 1`] = `
+exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
 <span>
   <div
     style={
@@ -526,7 +526,7 @@ exports[`Snapshots HourlyChart loaded chart 1`] = `
 </span>
 `;
 
-exports[`Snapshots HourlyChart loading state 1`] = `
+exports[`Snapshots HourlyChart [TESTED] loading state 1`] = `
 <span>
   <div
     style={
@@ -538,7 +538,7 @@ exports[`Snapshots HourlyChart loading state 1`] = `
 </span>
 `;
 
-exports[`Snapshots HourlyChart second metric selected 1`] = `
+exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
 <span>
   <div
     style={
