@@ -36,7 +36,7 @@ exports[`Snapshots Dropdown closed dropdown 1`] = `
             style={
               Object {
                 "background": "#3A92D3",
-                "borderRadius": null,
+                "borderRadius": "50%",
                 "display": "inline-block",
                 "height": "10px",
                 "marginRight": "5px",
@@ -151,7 +151,7 @@ exports[`Snapshots Dropdown closed dropdown 1`] = `
                     style={
                       Object {
                         "background": "#3A92D3",
-                        "borderRadius": null,
+                        "borderRadius": "50%",
                         "display": "inline-block",
                         "height": "10px",
                         "marginRight": "5px",
@@ -225,7 +225,7 @@ exports[`Snapshots Dropdown closed dropdown 1`] = `
                     style={
                       Object {
                         "background": "#FEC78B",
-                        "borderRadius": null,
+                        "borderRadius": "50%",
                         "display": "inline-block",
                         "height": "10px",
                         "marginRight": "5px",
@@ -293,7 +293,7 @@ exports[`Snapshots Dropdown open dropdown 1`] = `
             style={
               Object {
                 "background": "#FEC78B",
-                "borderRadius": null,
+                "borderRadius": "50%",
                 "display": "inline-block",
                 "height": "10px",
                 "marginRight": "5px",
@@ -408,7 +408,7 @@ exports[`Snapshots Dropdown open dropdown 1`] = `
                     style={
                       Object {
                         "background": "#3A92D3",
-                        "borderRadius": null,
+                        "borderRadius": "50%",
                         "display": "inline-block",
                         "height": "10px",
                         "marginRight": "5px",
@@ -482,7 +482,7 @@ exports[`Snapshots Dropdown open dropdown 1`] = `
                     style={
                       Object {
                         "background": "#FEC78B",
-                        "borderRadius": null,
+                        "borderRadius": "50%",
                         "display": "inline-block",
                         "height": "10px",
                         "marginRight": "5px",
@@ -613,7 +613,7 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
                       style={
                         Object {
                           "background": "#3A92D3",
-                          "borderRadius": null,
+                          "borderRadius": "50%",
                           "display": "inline-block",
                           "height": "10px",
                           "marginRight": "5px",
@@ -728,7 +728,7 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
                               style={
                                 Object {
                                   "background": "#FD8F90",
-                                  "borderRadius": null,
+                                  "borderRadius": "50%",
                                   "display": "inline-block",
                                   "height": "10px",
                                   "marginRight": "5px",
@@ -802,7 +802,7 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
                               style={
                                 Object {
                                   "background": "#FEC78B",
-                                  "borderRadius": null,
+                                  "borderRadius": "50%",
                                   "display": "inline-block",
                                   "height": "10px",
                                   "marginRight": "5px",
@@ -876,7 +876,7 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
                               style={
                                 Object {
                                   "background": "#D2C3AB",
-                                  "borderRadius": null,
+                                  "borderRadius": "50%",
                                   "display": "inline-block",
                                   "height": "10px",
                                   "marginRight": "5px",
@@ -950,7 +950,7 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
                               style={
                                 Object {
                                   "background": "#98E8B2",
-                                  "borderRadius": null,
+                                  "borderRadius": "50%",
                                   "display": "inline-block",
                                   "height": "10px",
                                   "marginRight": "5px",
@@ -1024,7 +1024,7 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
                               style={
                                 Object {
                                   "background": "#8FC6DB",
-                                  "borderRadius": null,
+                                  "borderRadius": "50%",
                                   "display": "inline-block",
                                   "height": "10px",
                                   "marginRight": "5px",
@@ -1098,7 +1098,7 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
                               style={
                                 Object {
                                   "background": "#ced7df",
-                                  "borderRadius": null,
+                                  "borderRadius": "50%",
                                   "display": "inline-block",
                                   "height": "10px",
                                   "marginRight": "5px",
@@ -1568,7 +1568,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                       style={
                         Object {
                           "background": "#3A92D3",
-                          "borderRadius": null,
+                          "borderRadius": "50%",
                           "display": "inline-block",
                           "height": "10px",
                           "marginRight": "5px",
@@ -1683,7 +1683,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                               style={
                                 Object {
                                   "background": "#FD8F90",
-                                  "borderRadius": null,
+                                  "borderRadius": "50%",
                                   "display": "inline-block",
                                   "height": "10px",
                                   "marginRight": "5px",
@@ -1757,7 +1757,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                               style={
                                 Object {
                                   "background": "#D2C3AB",
-                                  "borderRadius": null,
+                                  "borderRadius": "50%",
                                   "display": "inline-block",
                                   "height": "10px",
                                   "marginRight": "5px",
@@ -1831,7 +1831,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                               style={
                                 Object {
                                   "background": "#98E8B2",
-                                  "borderRadius": null,
+                                  "borderRadius": "50%",
                                   "display": "inline-block",
                                   "height": "10px",
                                   "marginRight": "5px",
@@ -1905,7 +1905,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                               style={
                                 Object {
                                   "background": "#8FC6DB",
-                                  "borderRadius": null,
+                                  "borderRadius": "50%",
                                   "display": "inline-block",
                                   "height": "10px",
                                   "marginRight": "5px",
@@ -1979,7 +1979,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                               style={
                                 Object {
                                   "background": "#ced7df",
-                                  "borderRadius": null,
+                                  "borderRadius": "50%",
                                   "display": "inline-block",
                                   "height": "10px",
                                   "marginRight": "5px",
@@ -2049,7 +2049,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                         style={
                           Object {
                             "background": "#FEC78B",
-                            "borderRadius": null,
+                            "borderRadius": "50%",
                             "display": "inline-block",
                             "height": "10px",
                             "marginRight": "5px",
@@ -2164,7 +2164,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                                 style={
                                   Object {
                                     "background": "#FD8F90",
-                                    "borderRadius": null,
+                                    "borderRadius": "50%",
                                     "display": "inline-block",
                                     "height": "10px",
                                     "marginRight": "5px",
@@ -2238,7 +2238,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                                 style={
                                   Object {
                                     "background": "#D2C3AB",
-                                    "borderRadius": null,
+                                    "borderRadius": "50%",
                                     "display": "inline-block",
                                     "height": "10px",
                                     "marginRight": "5px",
@@ -2312,7 +2312,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                                 style={
                                   Object {
                                     "background": "#98E8B2",
-                                    "borderRadius": null,
+                                    "borderRadius": "50%",
                                     "display": "inline-block",
                                     "height": "10px",
                                     "marginRight": "5px",
@@ -2386,7 +2386,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                                 style={
                                   Object {
                                     "background": "#8FC6DB",
-                                    "borderRadius": null,
+                                    "borderRadius": "50%",
                                     "display": "inline-block",
                                     "height": "10px",
                                     "marginRight": "5px",
@@ -2460,7 +2460,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                                 style={
                                   Object {
                                     "background": "#ced7df",
-                                    "borderRadius": null,
+                                    "borderRadius": "50%",
                                     "display": "inline-block",
                                     "height": "10px",
                                     "marginRight": "5px",
