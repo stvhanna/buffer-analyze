@@ -20,15 +20,15 @@ const legendList = {
 const Legend = ({ metric, secondaryMetric }) =>
   <ul style={legendList}>
     <li style={legendItem}>
-      <ColorIcon />
+      <ColorIcon circle />
       <Text size="small">Tweets</Text>
     </li>
     <li style={legendItem}>
-      <ColorIcon metric={metric.label} />
+      <ColorIcon metric={metric.label} circle />
       <Text size="small">{metric.label}</Text>
     </li>
     { secondaryMetric && <li style={legendItem}>
-      <ColorIcon metric={secondaryMetric.label} />
+      <ColorIcon metric={secondaryMetric.label} circle />
       <Text size="small">{secondaryMetric.label}</Text>
     </li> }
   </ul>;

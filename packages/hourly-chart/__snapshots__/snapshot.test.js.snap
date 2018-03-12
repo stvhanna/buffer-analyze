@@ -1244,7 +1244,7 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
                   style={
                     Object {
                       "background": "#ced7df",
-                      "borderRadius": null,
+                      "borderRadius": "50%",
                       "display": "inline-block",
                       "height": "10px",
                       "marginRight": "5px",
@@ -1279,7 +1279,7 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
                   style={
                     Object {
                       "background": "#3A92D3",
-                      "borderRadius": null,
+                      "borderRadius": "50%",
                       "display": "inline-block",
                       "height": "10px",
                       "marginRight": "5px",
@@ -2596,7 +2596,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                   style={
                     Object {
                       "background": "#ced7df",
-                      "borderRadius": null,
+                      "borderRadius": "50%",
                       "display": "inline-block",
                       "height": "10px",
                       "marginRight": "5px",
@@ -2631,7 +2631,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                   style={
                     Object {
                       "background": "#3A92D3",
-                      "borderRadius": null,
+                      "borderRadius": "50%",
                       "display": "inline-block",
                       "height": "10px",
                       "marginRight": "5px",
@@ -2666,7 +2666,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                   style={
                     Object {
                       "background": "#FEC78B",
-                      "borderRadius": null,
+                      "borderRadius": "50%",
                       "display": "inline-block",
                       "height": "10px",
                       "marginRight": "5px",
