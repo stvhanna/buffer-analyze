@@ -57,7 +57,6 @@ const CHARTS = {
 
 const Separator = styled.section`
   padding-top: 1.25rem;
-  margin-top: 4rem;
   position: relative;
 `;
 
