@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/analyze-store",
-  "version": "0.51.1",
+  "version": "0.51.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -36,7 +36,7 @@
     "@bufferapp/comparison-chart": "^0.50.1",
     "@bufferapp/contextual-compare": "^0.50.1",
     "@bufferapp/environment": "1.2.3",
-    "@bufferapp/hourly-chart": "^0.51.1",
+    "@bufferapp/hourly-chart": "^0.51.2",
     "@bufferapp/multi-profile-selector": "^0.47.1",
     "@bufferapp/nav-sidebar": "^0.49.3",
     "@bufferapp/performance-tracking": "^0.43.5",
@@ -44,7 +44,7 @@
     "@bufferapp/posts-table": "^0.50.1",
     "@bufferapp/profile-header": "^0.49.3",
     "@bufferapp/profile-loader": "^0.43.5",
-    "@bufferapp/report": "^0.51.1",
+    "@bufferapp/report": "^0.51.2",
     "@bufferapp/report-list": "^0.49.3",
     "@bufferapp/summary-table": "^0.50.1",
     "@bufferapp/unauthorized-redirect": "1.3.3"
