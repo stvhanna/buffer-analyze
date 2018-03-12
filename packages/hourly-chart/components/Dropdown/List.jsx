@@ -22,7 +22,7 @@ const DropdownItem = ({ metric, handleClick }) => (
   <li style={dropdownItem}>
     <Button noStyle fillContainer onClick={handleClick}>
       <span style={dropdownItemContent}>
-        <ColorIcon metric={metric.label} />
+        <ColorIcon metric={metric.label} circle />
         <Text size="small">{metric.label}</Text>
       </span>
     </Button>
