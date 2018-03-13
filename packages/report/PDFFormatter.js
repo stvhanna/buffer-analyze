@@ -43,10 +43,12 @@ class PDFFormatter {
 
   addPageBreak(element) {
     if (PDFFormatter.canBeBrokenDownIntoMultiplePages(element)) {
-      const [title, list] = element.children;
+      const [title, aside] = element.children;
+      const [header, list] = aside.children;
       this.removeFromCurrentPage(element);
       this.addToCurrentPage(title);
-      const listItems = list.getElementsByTagName('ul')[1].children;
+      this.addToCurrentPage(header);
+      const listItems = list.children;
       this.breakIntoPages(listItems);
     } else {
       this.addNewPage(element);
