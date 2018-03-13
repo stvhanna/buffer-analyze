@@ -1,5 +1,4 @@
-// const PDF_HEIGHT = 1122; // 842 pt to px
-const PDF_HEIGHT = 1755;
+const PDF_HEIGHT = 1404; // 11.7 in to px at 120 dpi
 
 class PDFFormatter {
   constructor(page) {
