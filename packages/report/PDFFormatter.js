@@ -1,4 +1,5 @@
 const PDF_HEIGHT = 1404; // 11.7 in to px at 120 dpi
+const PAGE_MARGIN = 84; // 0.7 in to px at 120 dpi
 
 class PDFFormatter {
   constructor(page) {
@@ -23,7 +24,7 @@ class PDFFormatter {
   }
 
   needsPageBreak() {
-    return this.currentPageHeight >= PDF_HEIGHT;
+    return this.currentPageHeight >= (PDF_HEIGHT - PAGE_MARGIN);
   }
 
   addToCurrentPage(element) {
