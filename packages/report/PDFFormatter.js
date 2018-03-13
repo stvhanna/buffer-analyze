@@ -1,4 +1,5 @@
-const PDF_HEIGHT = 1122; // 842 pt to px
+const PDF_HEIGHT = 1404; // 11.7 in to px at 120 dpi
+const PAGE_MARGIN = 84; // 0.7 in to px at 120 dpi
 
 class PDFFormatter {
   constructor(page) {
@@ -23,7 +24,7 @@ class PDFFormatter {
   }
 
   needsPageBreak() {
-    return this.currentPageHeight >= PDF_HEIGHT;
+    return this.currentPageHeight >= (PDF_HEIGHT - PAGE_MARGIN);
   }
 
   addToCurrentPage(element) {
@@ -42,10 +43,12 @@ class PDFFormatter {
 
   addPageBreak(element) {
     if (PDFFormatter.canBeBrokenDownIntoMultiplePages(element)) {
-      const [title, list] = element.children;
+      const [title, aside] = element.children;
+      const [header, list] = aside.children;
       this.removeFromCurrentPage(element);
       this.addToCurrentPage(title);
-      const listItems = list.getElementsByTagName('ul')[1].children;
+      this.addToCurrentPage(header);
+      const listItems = list.children;
       this.breakIntoPages(listItems);
     } else {
       this.addNewPage(element);
