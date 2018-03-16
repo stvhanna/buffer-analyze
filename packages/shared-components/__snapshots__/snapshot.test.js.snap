@@ -1843,13 +1843,13 @@ exports[`Snapshots DropdownItem should selected 1`] = `
 exports[`Snapshots EmptyState render with a custom header and description 1`] = `
 <span>
   <div
-    className="sc-kpOJdX ciLNQo"
+    className="sc-dxgOiQ jErQoA"
   >
     <div
-      className="sc-dxgOiQ cMrwZJ"
+      className="sc-ckVGcZ jqluPB"
     />
     <h1
-      className="sc-ckVGcZ fpjiSi"
+      className="sc-jKJlTe cVHNsT"
     >
       <span
         style={
@@ -1865,7 +1865,7 @@ exports[`Snapshots EmptyState render with a custom header and description 1`] = 
       </span>
     </h1>
     <h2
-      className="sc-jKJlTe fNWLTJ"
+      className="sc-eNQAEJ kAvWWX"
     >
       <span
         style={
@@ -1887,13 +1887,13 @@ exports[`Snapshots EmptyState render with a custom header and description 1`] = 
 exports[`Snapshots EmptyState render with a custom header but no description 1`] = `
 <span>
   <div
-    className="sc-kpOJdX ciLNQo"
+    className="sc-dxgOiQ jErQoA"
   >
     <div
-      className="sc-dxgOiQ cMrwZJ"
+      className="sc-ckVGcZ jqluPB"
     />
     <h1
-      className="sc-ckVGcZ fpjiSi"
+      className="sc-jKJlTe cVHNsT"
     >
       <span
         style={
@@ -1915,13 +1915,13 @@ exports[`Snapshots EmptyState render with a custom header but no description 1`]
 exports[`Snapshots EmptyState render with default text 1`] = `
 <span>
   <div
-    className="sc-kpOJdX ciLNQo"
+    className="sc-dxgOiQ jErQoA"
   >
     <div
-      className="sc-dxgOiQ cMrwZJ"
+      className="sc-ckVGcZ jqluPB"
     />
     <h1
-      className="sc-ckVGcZ fpjiSi"
+      className="sc-jKJlTe cVHNsT"
     >
       <span
         style={
@@ -2004,11 +2004,11 @@ exports[`Snapshots GridItem should not render the chart if we have only one day 
     }
   >
     <li
-      className="sc-eNQAEJ kiPbPw"
+      className="sc-hMqMXs fzfnf"
       width="25%"
     >
       <div
-        className="sc-hMqMXs hXuWdI"
+        className="sc-kEYyzF bnShOR"
       >
         <span
           style={
@@ -2038,7 +2038,7 @@ exports[`Snapshots GridItem should not render the chart if we have only one day 
           </span>
         </span>
         <div
-          className="sc-kEYyzF gwJiOg"
+          className="sc-kkGfuU qzYdM"
         >
           <div
             style={
@@ -2158,14 +2158,14 @@ exports[`Snapshots GridItem should render a grid item with a 7 day chart if 7 da
     }
   >
     <li
-      className="sc-eNQAEJ kiPbPw"
+      className="sc-hMqMXs fzfnf"
       width="25%"
     >
       <div
-        className="sc-hMqMXs hXuWdI"
+        className="sc-kEYyzF bnShOR"
       >
         <div
-          className="sc-kkGfuU ihSfxo"
+          className="sc-iAyFgw fzSDaD"
         />
         <span
           style={
@@ -2195,7 +2195,7 @@ exports[`Snapshots GridItem should render a grid item with a 7 day chart if 7 da
           </span>
         </span>
         <div
-          className="sc-kEYyzF gwJiOg"
+          className="sc-kkGfuU qzYdM"
         >
           <div
             style={
@@ -2315,14 +2315,14 @@ exports[`Snapshots GridItem should render a grid item with a 30 day chart if 30 
     }
   >
     <li
-      className="sc-eNQAEJ kiPbPw"
+      className="sc-hMqMXs fzfnf"
       width="25%"
     >
       <div
-        className="sc-hMqMXs hXuWdI"
+        className="sc-kEYyzF bnShOR"
       >
         <div
-          className="sc-kkGfuU ihSfxo"
+          className="sc-iAyFgw fzSDaD"
         />
         <span
           style={
@@ -2352,7 +2352,7 @@ exports[`Snapshots GridItem should render a grid item with a 30 day chart if 30 
           </span>
         </span>
         <div
-          className="sc-kEYyzF gwJiOg"
+          className="sc-kkGfuU qzYdM"
         >
           <div
             style={
@@ -2473,14 +2473,14 @@ exports[`Snapshots GridItem should render a grid item with a 90 day chart if 90 
     }
   >
     <li
-      className="sc-eNQAEJ kiPbPw"
+      className="sc-hMqMXs fzfnf"
       width="25%"
     >
       <div
-        className="sc-hMqMXs hXuWdI"
+        className="sc-kEYyzF bnShOR"
       >
         <div
-          className="sc-kkGfuU ihSfxo"
+          className="sc-iAyFgw fzSDaD"
         />
         <span
           style={
@@ -2510,7 +2510,7 @@ exports[`Snapshots GridItem should render a grid item with a 90 day chart if 90 
           </span>
         </span>
         <div
-          className="sc-kEYyzF gwJiOg"
+          className="sc-kkGfuU qzYdM"
         >
           <div
             style={
@@ -2630,11 +2630,11 @@ exports[`Snapshots GridItem should render a grid item with a custom Label 1`] = 
     }
   >
     <li
-      className="sc-eNQAEJ jAcnpX"
+      className="sc-hMqMXs htArcQ"
       width="25%"
     >
       <div
-        className="sc-hMqMXs hXuWdI"
+        className="sc-kEYyzF bnShOR"
       >
         <span
           style={
@@ -2666,7 +2666,7 @@ exports[`Snapshots GridItem should render a grid item with a custom Label 1`] = 
           </span>
         </span>
         <div
-          className="sc-kEYyzF gwJiOg"
+          className="sc-kkGfuU qzYdM"
         >
           <div
             style={
@@ -2807,11 +2807,11 @@ exports[`Snapshots GridItem should render a summary grid item with a neutral dif
     }
   >
     <li
-      className="sc-eNQAEJ jAcnpX"
+      className="sc-hMqMXs htArcQ"
       width="25%"
     >
       <div
-        className="sc-hMqMXs hXuWdI"
+        className="sc-kEYyzF bnShOR"
       >
         <span
           style={
@@ -2841,7 +2841,7 @@ exports[`Snapshots GridItem should render a summary grid item with a neutral dif
           </span>
         </span>
         <div
-          className="sc-kEYyzF gwJiOg"
+          className="sc-kkGfuU qzYdM"
         >
           <div
             style={
@@ -2962,11 +2962,11 @@ exports[`Snapshots GridItem should render a summary grid item with negative diff
     }
   >
     <li
-      className="sc-eNQAEJ jAcnpX"
+      className="sc-hMqMXs htArcQ"
       width="25%"
     >
       <div
-        className="sc-hMqMXs hXuWdI"
+        className="sc-kEYyzF bnShOR"
       >
         <span
           style={
@@ -2996,7 +2996,7 @@ exports[`Snapshots GridItem should render a summary grid item with negative diff
           </span>
         </span>
         <div
-          className="sc-kEYyzF gwJiOg"
+          className="sc-kkGfuU qzYdM"
         >
           <div
             style={
@@ -3117,11 +3117,11 @@ exports[`Snapshots GridItem should render a summary grid item with no diff 1`] =
     }
   >
     <li
-      className="sc-eNQAEJ jAcnpX"
+      className="sc-hMqMXs htArcQ"
       width="25%"
     >
       <div
-        className="sc-hMqMXs hXuWdI"
+        className="sc-kEYyzF bnShOR"
       >
         <span
           style={
@@ -3151,7 +3151,7 @@ exports[`Snapshots GridItem should render a summary grid item with no diff 1`] =
           </span>
         </span>
         <div
-          className="sc-kEYyzF gwJiOg"
+          className="sc-kkGfuU qzYdM"
         >
           <div
             style={
@@ -3208,11 +3208,11 @@ exports[`Snapshots GridItem should render a summary grid item with positive diff
     }
   >
     <li
-      className="sc-eNQAEJ jAcnpX"
+      className="sc-hMqMXs htArcQ"
       width="25%"
     >
       <div
-        className="sc-hMqMXs hXuWdI"
+        className="sc-kEYyzF bnShOR"
       >
         <span
           style={
@@ -3242,7 +3242,7 @@ exports[`Snapshots GridItem should render a summary grid item with positive diff
           </span>
         </span>
         <div
-          className="sc-kEYyzF gwJiOg"
+          className="sc-kkGfuU qzYdM"
         >
           <div
             style={
@@ -4714,10 +4714,10 @@ exports[`Snapshots ProfileIcon should render 1`] = `
     }
   >
     <span
-      className="sc-hSdWYo dAtSZv"
+      className="sc-eHgmQL dpAtYH"
     >
       <span
-        className="sc-iAyFgw dZtumf"
+        className="sc-hSdWYo milNT"
       >
         <img
           alt=""

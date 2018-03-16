@@ -4,10 +4,9 @@ import { connect } from 'react-redux';
 import NavSidebar from '@bufferapp/nav-sidebar';
 import DatePicker from '@bufferapp/analyze-date-picker';
 import ProfileLoader from '@bufferapp/profile-loader';
-import { white, mystic } from '@bufferapp/components/style/color';
 import MultiProfileSelector from '@bufferapp/multi-profile-selector';
 import ComparisonChart from '@bufferapp/comparison-chart';
-import { EmptyState } from '@bufferapp/analyze-shared-components';
+import { EmptyState, Toolbar } from '@bufferapp/analyze-shared-components';
 
 const pageStyle = {
   display: 'flex',
@@ -20,16 +19,6 @@ const contentStyle = {
   display: 'flex',
   minHeight: '100vh',
   flexDirection: 'column',
-};
-
-const toolbarContainer = {
-  display: 'flex',
-  justifyContent: 'space-between',
-  background: `${white}`,
-  padding: '0.85rem 0.5rem',
-  marginbottom: '1rem',
-  borderBottom: `1px solid ${mystic}`,
-  boxSizing: 'border-box',
 };
 
 const comparisonsContainer = {
@@ -72,7 +61,7 @@ const ComparisonsPage = ({ location, isCompareProfileClicked }) => (
     <NavSidebar route={location.pathname} />
     <ProfileLoader>
       <div style={contentStyle}>
-        <div style={toolbarContainer}>
+        <Toolbar>
           <div style={toolbarProfileSelector}>
             <MultiProfileSelector />
           </div>
@@ -81,7 +70,7 @@ const ComparisonsPage = ({ location, isCompareProfileClicked }) => (
               <DatePicker staticData />
             </div>
           </div>
-        </div>
+        </Toolbar>
         <div style={comparisonsContainer}>
           {
             isCompareProfileClicked ?
