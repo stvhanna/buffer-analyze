@@ -7,7 +7,6 @@ import ProfileSelector from '@bufferapp/analyze-profile-selector';
 import ProfileHeader from '@bufferapp/profile-header';
 import DatePicker from '@bufferapp/analyze-date-picker';
 import ProfileLoader from '@bufferapp/profile-loader';
-import TabNavigation from '@bufferapp/analyze-tabs';
 import { white, mystic } from '@bufferapp/components/style/color';
 import ExportPicker from '@bufferapp/analyze-export-picker';
 import PostsTab from '../PostsTab';
@@ -58,6 +57,8 @@ const toolbarRight = {
 const toolbarProfileSelector = {
   display: 'flex',
   alignContent: 'center',
+  position: 'relative',
+  zIndex: 2,
 };
 
 const toolbarDatePicker = {
