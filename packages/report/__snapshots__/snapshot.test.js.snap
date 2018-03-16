@@ -583,10 +583,10 @@ exports[`Snapshots EditTitle renders the edit title text box 1`] = `
 exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
 <span>
   <div
-    className="sc-hMqMXs kgNWkC"
+    className="sc-kEYyzF jWrHXn"
   >
     <span
-      className="sc-ckVGcZ ldWrHP"
+      className="sc-jKJlTe bUdhTv"
     >
       <div
         style={
@@ -664,7 +664,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
         </div>
       </div>
       <div
-        className="sc-jKJlTe jYXCIe"
+        className="sc-eNQAEJ jNxjFz"
       >
         <span
           style={
@@ -677,7 +677,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
           }
         >
           <span
-            className="sc-dxgOiQ Assxh"
+            className="sc-ckVGcZ fTxXUL"
           >
             @moreofmorris
           </span>
@@ -693,7 +693,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
           }
         >
           <div
-            className="sc-eNQAEJ cuYGgM"
+            className="sc-hMqMXs kCbAWz"
           >
             twitter
             .com
@@ -702,7 +702,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
       </div>
     </span>
     <span
-      className="sc-ckVGcZ ldWrHP"
+      className="sc-jKJlTe bUdhTv"
     >
       <div
         style={
@@ -780,7 +780,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
         </div>
       </div>
       <div
-        className="sc-jKJlTe jYXCIe"
+        className="sc-eNQAEJ jNxjFz"
       >
         <span
           style={
@@ -793,7 +793,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
           }
         >
           <span
-            className="sc-dxgOiQ Assxh"
+            className="sc-ckVGcZ fTxXUL"
           >
             @roughquest
           </span>
@@ -809,7 +809,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
           }
         >
           <div
-            className="sc-eNQAEJ cuYGgM"
+            className="sc-hMqMXs kCbAWz"
           >
             twitter
             .com
@@ -818,7 +818,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
       </div>
     </span>
     <span
-      className="sc-ckVGcZ ldWrHP"
+      className="sc-jKJlTe bUdhTv"
     >
       <div
         style={
@@ -896,7 +896,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
         </div>
       </div>
       <div
-        className="sc-jKJlTe jYXCIe"
+        className="sc-eNQAEJ jNxjFz"
       >
         <span
           style={
@@ -909,7 +909,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
           }
         >
           <span
-            className="sc-dxgOiQ Assxh"
+            className="sc-ckVGcZ fTxXUL"
           >
             Roughquest
           </span>
@@ -925,7 +925,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
           }
         >
           <div
-            className="sc-eNQAEJ cuYGgM"
+            className="sc-hMqMXs kCbAWz"
           >
             facebook
             .com
@@ -940,7 +940,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
 exports[`Snapshots ProfileLegend renders the profile legend 1`] = `
 <span>
   <span
-    className="sc-ckVGcZ ldWrHP"
+    className="sc-jKJlTe bUdhTv"
   >
     <div
       style={
@@ -1018,7 +1018,7 @@ exports[`Snapshots ProfileLegend renders the profile legend 1`] = `
       </div>
     </div>
     <div
-      className="sc-jKJlTe jYXCIe"
+      className="sc-eNQAEJ jNxjFz"
     >
       <span
         style={
@@ -1031,7 +1031,7 @@ exports[`Snapshots ProfileLegend renders the profile legend 1`] = `
         }
       >
         <span
-          className="sc-dxgOiQ Assxh"
+          className="sc-ckVGcZ fTxXUL"
         >
           @moreofmorris
         </span>
@@ -1047,7 +1047,7 @@ exports[`Snapshots ProfileLegend renders the profile legend 1`] = `
         }
       >
         <div
-          className="sc-eNQAEJ cuYGgM"
+          className="sc-hMqMXs kCbAWz"
         >
           twitter
           .com
@@ -1061,7 +1061,7 @@ exports[`Snapshots ProfileLegend renders the profile legend 1`] = `
 exports[`Snapshots Report render only the multi-profile legend if that is available 1`] = `
 <span>
   <section
-    className="sc-dUjcNx usgiW"
+    className="sc-gHboQg GWBJS"
   >
     <div
       id="report-page"
@@ -1077,7 +1077,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
         }
       >
         <div
-          className="sc-fYiAbW kHMMR"
+          className="sc-fOKMvo dnFqjj"
         >
           <button
             aria-label={null}
@@ -1108,13 +1108,13 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
             }
           >
             <h1
-              className="sc-krvtoX dSsqBO"
+              className="sc-fYiAbW jQNJiv"
             >
               Weekly Sync Report
             </h1>
           </button>
           <div
-            className="sc-fOKMvo gTwaBx"
+            className="sc-dUjcNx caCxfA"
           >
             <svg
               height="100%"
@@ -1161,11 +1161,11 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
         </span>
       </span>
       <section
-        className="sc-lkqHmb bIFGmX"
+        className="sc-eLExRp hQaTGy"
       >
         <div>
           <div
-            className="sc-eLExRp dWIFmQ"
+            className="sc-cbkKFq hDaAke"
           >
             <h2
               className="sc-cSHVUG eMsAFn"
@@ -1186,13 +1186,13 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
             </h2>
           </div>
           <div
-            className="sc-cbkKFq fcEmgV"
+            className="sc-krvtoX eqYWEa"
           >
             <div
-              className="sc-hMqMXs kgNWkC"
+              className="sc-kEYyzF jWrHXn"
             >
               <span
-                className="sc-ckVGcZ ldWrHP"
+                className="sc-jKJlTe bUdhTv"
               >
                 <div
                   style={
@@ -1270,7 +1270,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                   </div>
                 </div>
                 <div
-                  className="sc-jKJlTe jYXCIe"
+                  className="sc-eNQAEJ jNxjFz"
                 >
                   <span
                     style={
@@ -1283,7 +1283,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                     }
                   >
                     <span
-                      className="sc-dxgOiQ Assxh"
+                      className="sc-ckVGcZ fTxXUL"
                     >
                       @buffer
                     </span>
@@ -1299,7 +1299,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                     }
                   >
                     <div
-                      className="sc-eNQAEJ cuYGgM"
+                      className="sc-hMqMXs kCbAWz"
                     >
                       twitter
                       .com
@@ -1308,7 +1308,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                 </div>
               </span>
               <span
-                className="sc-ckVGcZ ldWrHP"
+                className="sc-jKJlTe bUdhTv"
               >
                 <div
                   style={
@@ -1401,7 +1401,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                   </div>
                 </div>
                 <div
-                  className="sc-jKJlTe jYXCIe"
+                  className="sc-eNQAEJ jNxjFz"
                 >
                   <span
                     style={
@@ -1414,7 +1414,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                     }
                   >
                     <span
-                      className="sc-dxgOiQ Assxh"
+                      className="sc-ckVGcZ fTxXUL"
                     >
                       buffer
                     </span>
@@ -1430,7 +1430,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                     }
                   >
                     <div
-                      className="sc-eNQAEJ cuYGgM"
+                      className="sc-hMqMXs kCbAWz"
                     >
                       instagram
                       .com
@@ -1477,7 +1477,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
 exports[`Snapshots Report renders a loading report 1`] = `
 <span>
   <section
-    className="sc-dUjcNx usgiW"
+    className="sc-gHboQg GWBJS"
   >
     <div
       style={
@@ -1584,7 +1584,7 @@ exports[`Snapshots Report renders a loading report 1`] = `
 exports[`Snapshots Report renders a report in edit mode 1`] = `
 <span>
   <section
-    className="sc-dUjcNx usgiW"
+    className="sc-gHboQg GWBJS"
   >
     <div
       id="report-page"
@@ -1631,11 +1631,11 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         </span>
       </span>
       <section
-        className="sc-lkqHmb bIFGmX"
+        className="sc-eLExRp hQaTGy"
       >
         <div>
           <div
-            className="sc-eLExRp dWIFmQ"
+            className="sc-cbkKFq hDaAke"
           >
             <h2
               className="sc-cSHVUG eMsAFn"
@@ -1655,10 +1655,10 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </h2>
           </div>
           <div
-            className="sc-cbkKFq fcEmgV"
+            className="sc-krvtoX eqYWEa"
           >
             <span
-              className="sc-ckVGcZ ldWrHP"
+              className="sc-jKJlTe bUdhTv"
             >
               <div
                 style={
@@ -1736,7 +1736,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </div>
               </div>
               <div
-                className="sc-jKJlTe jYXCIe"
+                className="sc-eNQAEJ jNxjFz"
               >
                 <span
                   style={
@@ -1749,7 +1749,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   }
                 >
                   <span
-                    className="sc-dxgOiQ Assxh"
+                    className="sc-ckVGcZ fTxXUL"
                   >
                     Buffer
                   </span>
@@ -1765,7 +1765,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   }
                 >
                   <div
-                    className="sc-eNQAEJ cuYGgM"
+                    className="sc-hMqMXs kCbAWz"
                   >
                     facebook
                     .com
@@ -2875,11 +2875,11 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         </ul>
       </section>
       <section
-        className="sc-lkqHmb bIFGmX"
+        className="sc-eLExRp hQaTGy"
       >
         <div>
           <div
-            className="sc-eLExRp dWIFmQ"
+            className="sc-cbkKFq hDaAke"
           >
             <h2
               className="sc-cSHVUG eMsAFn"
@@ -2899,10 +2899,10 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </h2>
           </div>
           <div
-            className="sc-cbkKFq fcEmgV"
+            className="sc-krvtoX eqYWEa"
           >
             <span
-              className="sc-ckVGcZ ldWrHP"
+              className="sc-jKJlTe bUdhTv"
             >
               <div
                 style={
@@ -2980,7 +2980,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </div>
               </div>
               <div
-                className="sc-jKJlTe jYXCIe"
+                className="sc-eNQAEJ jNxjFz"
               >
                 <span
                   style={
@@ -2993,7 +2993,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   }
                 >
                   <span
-                    className="sc-dxgOiQ Assxh"
+                    className="sc-ckVGcZ fTxXUL"
                   >
                     Buffer
                   </span>
@@ -3009,7 +3009,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   }
                 >
                   <div
-                    className="sc-eNQAEJ cuYGgM"
+                    className="sc-hMqMXs kCbAWz"
                   >
                     facebook
                     .com
@@ -4119,11 +4119,11 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         </ul>
       </section>
       <section
-        className="sc-lkqHmb bIFGmX"
+        className="sc-eLExRp hQaTGy"
       >
         <div>
           <div
-            className="sc-eLExRp dWIFmQ"
+            className="sc-cbkKFq hDaAke"
           >
             <h2
               className="sc-cSHVUG eMsAFn"
@@ -4143,10 +4143,10 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </h2>
           </div>
           <div
-            className="sc-cbkKFq fcEmgV"
+            className="sc-krvtoX eqYWEa"
           >
             <span
-              className="sc-ckVGcZ ldWrHP"
+              className="sc-jKJlTe bUdhTv"
             >
               <div
                 style={
@@ -4224,7 +4224,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </div>
               </div>
               <div
-                className="sc-jKJlTe jYXCIe"
+                className="sc-eNQAEJ jNxjFz"
               >
                 <span
                   style={
@@ -4237,7 +4237,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   }
                 >
                   <span
-                    className="sc-dxgOiQ Assxh"
+                    className="sc-ckVGcZ fTxXUL"
                   >
                     Buffer
                   </span>
@@ -4253,7 +4253,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   }
                 >
                   <div
-                    className="sc-eNQAEJ cuYGgM"
+                    className="sc-hMqMXs kCbAWz"
                   >
                     facebook
                     .com
@@ -5370,7 +5370,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
 exports[`Snapshots Report renders a report with summary table 1`] = `
 <span>
   <section
-    className="sc-dUjcNx usgiW"
+    className="sc-gHboQg GWBJS"
   >
     <div
       id="report-page"
@@ -5386,7 +5386,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         }
       >
         <div
-          className="sc-fYiAbW kHMMR"
+          className="sc-fOKMvo dnFqjj"
         >
           <button
             aria-label={null}
@@ -5417,13 +5417,13 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
             }
           >
             <h1
-              className="sc-krvtoX dSsqBO"
+              className="sc-fYiAbW jQNJiv"
             >
               Weekly Sync Report
             </h1>
           </button>
           <div
-            className="sc-fOKMvo gTwaBx"
+            className="sc-dUjcNx caCxfA"
           >
             <svg
               height="100%"
@@ -5470,11 +5470,11 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         </span>
       </span>
       <section
-        className="sc-lkqHmb bIFGmX"
+        className="sc-eLExRp hQaTGy"
       >
         <div>
           <div
-            className="sc-eLExRp dWIFmQ"
+            className="sc-cbkKFq hDaAke"
           >
             <h2
               className="sc-cSHVUG eMsAFn"
@@ -5494,10 +5494,10 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
             </h2>
           </div>
           <div
-            className="sc-cbkKFq fcEmgV"
+            className="sc-krvtoX eqYWEa"
           >
             <span
-              className="sc-ckVGcZ ldWrHP"
+              className="sc-jKJlTe bUdhTv"
             >
               <div
                 style={
@@ -5575,7 +5575,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                 </div>
               </div>
               <div
-                className="sc-jKJlTe jYXCIe"
+                className="sc-eNQAEJ jNxjFz"
               >
                 <span
                   style={
@@ -5588,7 +5588,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                   }
                 >
                   <span
-                    className="sc-dxgOiQ Assxh"
+                    className="sc-ckVGcZ fTxXUL"
                   >
                     Buffer
                   </span>
@@ -5604,7 +5604,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                   }
                 >
                   <div
-                    className="sc-eNQAEJ cuYGgM"
+                    className="sc-hMqMXs kCbAWz"
                   >
                     facebook
                     .com
@@ -6714,11 +6714,11 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         </ul>
       </section>
       <section
-        className="sc-lkqHmb bIFGmX"
+        className="sc-eLExRp hQaTGy"
       >
         <div>
           <div
-            className="sc-eLExRp dWIFmQ"
+            className="sc-cbkKFq hDaAke"
           >
             <h2
               className="sc-cSHVUG eMsAFn"
@@ -6738,10 +6738,10 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
             </h2>
           </div>
           <div
-            className="sc-cbkKFq fcEmgV"
+            className="sc-krvtoX eqYWEa"
           >
             <span
-              className="sc-ckVGcZ ldWrHP"
+              className="sc-jKJlTe bUdhTv"
             >
               <div
                 style={
@@ -6819,7 +6819,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                 </div>
               </div>
               <div
-                className="sc-jKJlTe jYXCIe"
+                className="sc-eNQAEJ jNxjFz"
               >
                 <span
                   style={
@@ -6832,7 +6832,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                   }
                 >
                   <span
-                    className="sc-dxgOiQ Assxh"
+                    className="sc-ckVGcZ fTxXUL"
                   >
                     Buffer
                   </span>
@@ -6848,7 +6848,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                   }
                 >
                   <div
-                    className="sc-eNQAEJ cuYGgM"
+                    className="sc-hMqMXs kCbAWz"
                   >
                     facebook
                     .com
@@ -7958,11 +7958,11 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         </ul>
       </section>
       <section
-        className="sc-lkqHmb bIFGmX"
+        className="sc-eLExRp hQaTGy"
       >
         <div>
           <div
-            className="sc-eLExRp dWIFmQ"
+            className="sc-cbkKFq hDaAke"
           >
             <h2
               className="sc-cSHVUG eMsAFn"
@@ -7982,10 +7982,10 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
             </h2>
           </div>
           <div
-            className="sc-cbkKFq fcEmgV"
+            className="sc-krvtoX eqYWEa"
           >
             <span
-              className="sc-ckVGcZ ldWrHP"
+              className="sc-jKJlTe bUdhTv"
             >
               <div
                 style={
@@ -8063,7 +8063,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                 </div>
               </div>
               <div
-                className="sc-jKJlTe jYXCIe"
+                className="sc-eNQAEJ jNxjFz"
               >
                 <span
                   style={
@@ -8076,7 +8076,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                   }
                 >
                   <span
-                    className="sc-dxgOiQ Assxh"
+                    className="sc-ckVGcZ fTxXUL"
                   >
                     Buffer
                   </span>
@@ -8092,7 +8092,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                   }
                 >
                   <div
-                    className="sc-eNQAEJ cuYGgM"
+                    className="sc-hMqMXs kCbAWz"
                   >
                     facebook
                     .com

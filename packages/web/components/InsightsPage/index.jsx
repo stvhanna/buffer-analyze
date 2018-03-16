@@ -7,8 +7,8 @@ import ProfileSelector from '@bufferapp/analyze-profile-selector';
 import ProfileHeader from '@bufferapp/profile-header';
 import DatePicker from '@bufferapp/analyze-date-picker';
 import ProfileLoader from '@bufferapp/profile-loader';
-import { white, mystic } from '@bufferapp/components/style/color';
 import ExportPicker from '@bufferapp/analyze-export-picker';
+import { Toolbar } from '@bufferapp/analyze-shared-components';
 import PostsTab from '../PostsTab';
 import OverviewTab from '../OverviewTab';
 
@@ -23,16 +23,6 @@ const contentStyle = {
   display: 'flex',
   minHeight: '100vh',
   flexDirection: 'column',
-};
-
-const toolbarContainer = {
-  display: 'flex',
-  justifyContent: 'space-between',
-  background: `${white}`,
-  padding: '0.75rem 0.5rem calc(1rem - 0.07rem)',
-  marginbottom: '1rem',
-  borderBottom: `1px solid ${mystic}`,
-  boxSizing: 'border-box',
 };
 
 const insightContainer = {
@@ -87,7 +77,7 @@ const InsightsPage = ({
     <NavSidebar route={location.pathname} tabId={tabId} />
     <ProfileLoader>
       <div style={contentStyle}>
-        <div style={toolbarContainer}>
+        <Toolbar>
           <div style={toolbarProfileSelector}>
             <ProfileSelector profileService={service} />
           </div>
@@ -99,7 +89,7 @@ const InsightsPage = ({
               <ExportPicker filename={`buffer-${tabId === 'overview' ? 'overview' : 'posts'}-analytics`} />
             </div>
           </div>
-        </div>
+        </Toolbar>
         <div style={insightContainer}>
           <div style={insightMaxWidth}>
             <ProfileHeader selectedProfileId={id} />
