@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/compare-chart",
-  "version": "0.50.1",
+  "version": "0.51.5",
   "description": "compare daily metrics with the previous period",
   "main": "index.js",
   "scripts": {
@@ -20,13 +20,13 @@
   },
   "author": "federicoweber@gmail.com",
   "dependencies": {
-    "@bufferapp/add-report": "^0.49.4",
+    "@bufferapp/add-report": "^0.51.5",
     "@bufferapp/analyze-csv-export": "^0.50.1",
-    "@bufferapp/analyze-date-picker": "^0.50.0",
+    "@bufferapp/analyze-date-picker": "^0.51.5",
     "@bufferapp/analyze-decorators": "^0.15.2",
     "@bufferapp/analyze-png-export": "^0.50.1",
-    "@bufferapp/analyze-profile-selector": "^0.47.0",
-    "@bufferapp/analyze-shared-components": "^0.47.0",
+    "@bufferapp/analyze-profile-selector": "^0.51.5",
+    "@bufferapp/analyze-shared-components": "^0.51.5",
     "@bufferapp/async-data-fetch": "0.5.36-beta01",
     "react-highcharts": "^12.0.0",
     "react-simple-dropdown": "3.0.0"
