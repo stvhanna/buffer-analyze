@@ -178,6 +178,7 @@ describe('rpc/compare', () => {
 
     expect(data.totals[0]).toEqual({
       diff: 1,
+      key: 'followers',
       label: 'Total Fans',
       color: '#FDA3F3',
       value: 99324,
@@ -204,6 +205,7 @@ describe('rpc/compare', () => {
     expect(data.totals.length).toBe(10);
     expect(data.totals[0]).toEqual({
       diff: 0,
+      key: 'followers',
       label: 'Total Fans',
       color: '#FDA3F3',
       value: 0,
@@ -230,6 +232,7 @@ describe('rpc/compare', () => {
     expect(data.totals.length).toBe(10);
     expect(data.totals[0]).toEqual({
       diff: 9932400,
+      key: 'followers',
       label: 'Total Fans',
       color: '#FDA3F3',
       value: 99324,
@@ -277,7 +280,6 @@ describe('rpc/compare', () => {
       },
     });
 
-    const firstDayMetric = data.daily[0].metrics[0];
     const secondDayMetric = data.daily[1].metrics[0];
     expect(data.totalPeriodDaily.length).toBe(7);
 
@@ -286,8 +288,8 @@ describe('rpc/compare', () => {
 
     expect(data.totalPeriodDaily[1].metrics[0]).toMatchObject({
       label: 'Total Followers',
-      value: firstDayMetric.value + secondDayMetric.value,
-      previousValue: firstDayMetric.previousValue + secondDayMetric.previousValue,
+      value: secondDayMetric.value,
+      previousValue: secondDayMetric.previousValue,
     });
   });
 

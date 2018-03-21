@@ -74,6 +74,7 @@ const summarize = (
   const label = METRICS_CONFIG[profileService].config[metricKey].label;
   if (label) {
     return {
+      key: metricKey,
       diff: percentageDifference(value, previousValue),
       label,
       color: METRICS_CONFIG[profileService].config[metricKey].color,
@@ -157,12 +158,16 @@ function formatTotalPeriodDaily(formattedDailyData) {
     });
 
     day.metrics.forEach((metric, metricIndex) => {
-      metricClone = Object.assign({}, metric, {
-        value: dayIndex === 0 ? metric.value :
-          metric.value + totalPeriodDaily[dayIndex - 1].metrics[metricIndex].value,
-        previousValue: dayIndex === 0 ? metric.previousValue :
-          metric.previousValue + totalPeriodDaily[dayIndex - 1].metrics[metricIndex].previousValue,
-      });
+      if (metric.key === 'followers') {
+        metricClone = Object.assign({}, metric);
+      } else {
+        metricClone = Object.assign({}, metric, {
+          value: dayIndex === 0 ? metric.value :
+            metric.value + totalPeriodDaily[dayIndex - 1].metrics[metricIndex].value,
+          previousValue: dayIndex === 0 ? metric.previousValue :
+            metric.previousValue + totalPeriodDaily[dayIndex - 1].metrics[metricIndex].previousValue,
+        });
+      }
       delete metricClone.diff;
       dayClone.metrics.push(metricClone);
     });
