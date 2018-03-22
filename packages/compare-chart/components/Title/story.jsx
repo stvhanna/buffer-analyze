@@ -9,5 +9,5 @@ storiesOf('Title')
     <Title />
   ))
   .add('should render title as if for report', () => (
-    <Title forReport />
+    <Title forReport selectedMetricLabel="Engagements" />
   ));
