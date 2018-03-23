@@ -8,6 +8,14 @@ instagram.commentsMetric = {
   value: 0,
 };
 
+instagram.dateMetric = {
+  label: 'Date',
+  key: 'date',
+  apiKey: 'sent_at',
+  color: '#000',
+  value: 0,
+};
+
 instagram.likesMetric = {
   label: 'Likes',
   key: 'likes',
@@ -24,12 +32,21 @@ instagram.topPostsEngagementMetrics = [
 instagram.postMetrics = [
   instagram.likesMetric,
   instagram.commentsMetric,
+  instagram.dateMetric,
 ];
 
 instagram.topPostsAudienceMetrics = [];
 
 
 export const twitter = {};
+
+twitter.dateMetric = {
+  label: 'Date',
+  key: 'date',
+  apiKey: 'sent_at',
+  color: '#000',
+  value: 0,
+};
 
 twitter.retweetsMetric = {
   label: 'Retweets',
@@ -74,6 +91,7 @@ twitter.postMetrics = [
   twitter.clicksMetric,
   twitter.retweetsMetric,
   twitter.likesMetric,
+  twitter.dateMetric,
 ];
 
 twitter.topPostsAudienceMetrics = [
@@ -82,6 +100,14 @@ twitter.topPostsAudienceMetrics = [
 
 // Facebook Metrics Configuration
 export const facebook = {};
+
+facebook.dateMetric = {
+  label: 'Date',
+  key: 'date',
+  apiKey: 'sent_at',
+  color: '#000',
+  value: 0,
+};
 
 facebook.commentsMetric = {
   label: 'Comments',
@@ -145,6 +171,7 @@ facebook.postMetrics = [
   facebook.reactionsMetric,
   facebook.commentsMetric,
   facebook.sharesMetric,
+  facebook.dateMetric,
 ];
 
 facebook.topPostsAudienceMetrics = [
