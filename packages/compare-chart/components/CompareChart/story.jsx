@@ -146,7 +146,7 @@ storiesOf('CompareChart')
       }}
     >
       <CompareChart
-        profileService="facebook"
+        profileService="twitter"
         totalPeriodDaily={[]}
         totals={[]}
         timezone="America/Los_Angeles"

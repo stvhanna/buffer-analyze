@@ -20,7 +20,12 @@ import PeriodToggle from '../PeriodToggle';
 
 const Container = styled.div`
   position: relative;
-  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
 `;
 
 function getStartDate(dailyData) {
@@ -146,27 +151,29 @@ const CompareChart = ({
         totals={totals}
       />
     );
-    header = (
-      <div style={{ padding: '20px', display: 'flex' }} >
-        <MetricsDropdown
-          metrics={totals}
-          selectedMetricLabel={selectedMetricLabel}
-          isDropdownOpen={isDropdownOpen}
-          selectMetric={selectMetric}
-          openDropdown={openDropdown}
-          closeDropdown={closeDropdown}
-        />
-        {profileService === 'twitter' &&
-          <ModeToggle
-            baseModeLabel="Daily"
-            secondaryModeLabel="Period Total"
-            active={dailyMode === 1}
-            handleClick={selectDailyMode}
+    if (dailyData.length > 0) {
+      header = (
+        <div style={{ padding: '20px', display: 'flex' }} >
+          <MetricsDropdown
+            metrics={totals}
+            selectedMetricLabel={selectedMetricLabel}
+            isDropdownOpen={isDropdownOpen}
+            selectMetric={selectMetric}
+            openDropdown={openDropdown}
+            closeDropdown={closeDropdown}
           />
-        }
-        <PeriodToggle handleClick={togglePreviousPeriod} active={visualizePreviousPeriod} />
-      </div>
-    );
+          {profileService === 'twitter' &&
+            <ModeToggle
+              baseModeLabel="Daily"
+              secondaryModeLabel="Period Total"
+              active={dailyMode === 1}
+              handleClick={selectDailyMode}
+            />
+          }
+          <PeriodToggle handleClick={togglePreviousPeriod} active={visualizePreviousPeriod} />
+        </div>
+      );
+    }
   }
 
   const CHART_AND_HEADER_HEIGHT = '474px';
