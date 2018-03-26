@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/report",
-  "version": "0.52.1",
+  "version": "0.54.0",
   "description": "Report detail",
   "main": "index.js",
   "scripts": {
@@ -27,8 +27,8 @@
     "@bufferapp/average-table": "^0.51.5",
     "@bufferapp/compare-chart": "^0.52.1",
     "@bufferapp/components": "2.1.1",
-    "@bufferapp/contextual-compare": "^0.51.5",
-    "@bufferapp/hourly-chart": "^0.51.5",
+    "@bufferapp/contextual-compare": "^0.54.0",
+    "@bufferapp/hourly-chart": "^0.54.0",
     "@bufferapp/posts-summary-table": "^0.51.5",
     "@bufferapp/report-list": "^0.51.5",
     "@bufferapp/summary-table": "^0.51.5",
