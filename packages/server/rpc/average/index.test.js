@@ -142,17 +142,17 @@ describe('rpc/average', () => {
     expect(data.totals).toEqual([
       {
         diff: 403,
-        label: 'Impression average',
+        label: 'Average impressions per post',
         value: 393677,
       },
       {
         diff: 315,
-        label: 'Engagement average',
+        label: 'Average engagements per post',
         value: 4277,
       },
       {
         diff: 355,
-        label: 'Click average',
+        label: 'Average clicks per post',
         value: 19996,
       },
     ]);
@@ -175,17 +175,17 @@ describe('rpc/average', () => {
     expect(data.totals).toEqual([
       {
         diff: 0,
-        label: 'Impression average',
+        label: 'Average impressions per post',
         value: 0,
       },
       {
         diff: 0,
-        label: 'Engagement average',
+        label: 'Average engagements per post',
         value: 0,
       },
       {
         diff: 0,
-        label: 'Click average',
+        label: 'Average clicks per post',
         value: 0,
       },
     ]);
@@ -208,17 +208,17 @@ describe('rpc/average', () => {
     expect(data.totals).toEqual([
       {
         diff: 39367700,
-        label: 'Impression average',
+        label: 'Average impressions per post',
         value: 393677,
       },
       {
         diff: 427700,
-        label: 'Engagement average',
+        label: 'Average engagements per post',
         value: 4277,
       },
       {
         diff: 1999600,
-        label: 'Click average',
+        label: 'Average clicks per post',
         value: 19996,
       },
     ]);
@@ -242,9 +242,9 @@ describe('rpc/average', () => {
     expect(data.daily[0]).toEqual({
       day: '1504051200000',
       metrics: [
-        { diff: 869, label: 'Engagement average', value: 3119 },
-        { diff: 74, label: 'Impression average', value: 78966 },
-        { diff: 47, label: 'Click average', value: 2656 },
+        { diff: 869, label: 'Average engagements per post', value: 3119 },
+        { diff: 74, label: 'Average impressions per post', value: 78966 },
+        { diff: 47, label: 'Average clicks per post', value: 2656 },
       ],
     });
   });

@@ -5,13 +5,13 @@ const DateRange = require('../utils/DateRange');
 // We are using this to filter down the metrics we want
 const LABELS = {
   // Facebook metrics
-  post_impressions: 'Impression average',
-  page_engagements: 'Engagement average',
-  post_clicks: 'Click average',
+  post_impressions: 'Average impressions per post',
+  page_engagements: 'Average engagements per post',
+  post_clicks: 'Average clicks per post',
   // Twitter metrics
-  impressions: 'Impression average',
-  engagements: 'Engagement Average',
-  url_clicks: 'Click average',
+  impressions: 'Average impressions per post',
+  engagements: 'Average engagements per post',
+  url_clicks: 'Average clicks per post',
 };
 
 const requestTotals = (profileId, dateRange, accessToken) =>
