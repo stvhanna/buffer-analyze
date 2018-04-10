@@ -121,6 +121,11 @@ const instagramConfig = {
     label: 'New Fans',
     color: '#D7B5FD',
   },
+
+  engagement_rate: {
+    label: 'Engagement Rate',
+    color: '#98E8B2',
+  },
 };
 
 module.exports = {
@@ -161,6 +166,7 @@ module.exports = {
       'likes',
       'comments',
       'new_followers',
+      'engagement_rate',
     ],
   },
 };

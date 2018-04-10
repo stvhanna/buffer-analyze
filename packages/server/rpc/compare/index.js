@@ -1,4 +1,3 @@
-
 const { method } = require('@bufferapp/micro-rpc');
 const rp = require('request-promise');
 const DateRange = require('../utils/DateRange');
