@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/report",
-  "version": "0.54.0",
+  "version": "0.54.2",
   "description": "Report detail",
   "main": "index.js",
   "scripts": {
@@ -25,7 +25,7 @@
     "@bufferapp/analyze-shared-components": "^0.51.5",
     "@bufferapp/audience-chart": "^0.51.5",
     "@bufferapp/average-table": "^0.51.5",
-    "@bufferapp/compare-chart": "^0.52.1",
+    "@bufferapp/compare-chart": "^0.54.2",
     "@bufferapp/components": "2.1.1",
     "@bufferapp/contextual-compare": "^0.54.0",
     "@bufferapp/hourly-chart": "^0.54.0",
