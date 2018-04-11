@@ -129,7 +129,6 @@ function formatDaily(
       null,
   })).filter(data => data.previousPeriodDay !== null).map((data) => {
     const metricKeys = METRICS_CONFIG[profileService].orderedKeys;
-    console.log(metricKeys);
     return {
       day: data.day,
       previousPeriodDay: data.previousPeriodDay,
