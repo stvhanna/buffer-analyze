@@ -23,6 +23,7 @@ const LABELS = {
     posts_count: 'Posts',
     likes: 'Likes',
     comments: 'Comments',
+    engagement_rate: 'Engagement Rate',
   },
 };
 
