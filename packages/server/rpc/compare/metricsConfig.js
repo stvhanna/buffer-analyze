@@ -94,6 +94,11 @@ const facebookConfig = {
     label: 'New Fans',
     color: '#D7B5FD',
   },
+
+  engagement_rate: {
+    label: 'Engagement Rate',
+    color: '#98E8B2',
+  },
 };
 
 const instagramConfig = {
@@ -156,6 +161,7 @@ module.exports = {
       'shares',
       'comments',
       'new_followers',
+      'engagement_rate',
     ],
   },
   instagram: {
