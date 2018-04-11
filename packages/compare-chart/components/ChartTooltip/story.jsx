@@ -117,4 +117,45 @@ storiesOf('ChartTooltip')
         timezone="America/New_York"
       />
     </div>
+  ))
+  .add('should render a engagement rate tooltip', () => (
+    <div
+      style={{
+        backgroundColor: '#343E46',
+      }}
+    >
+      <ChartTooltip
+        color="#fda3f3"
+        day={dayTimestamp}
+        previousPeriodDay={previousDayTimestamp}
+        label="Engagement Rate"
+        postsCount={5}
+        previousPostsCount={10}
+        value={8}
+        previousValue={8}
+        profileService="facebook"
+        timezone="America/New_York"
+      />
+    </div>
+  ))
+  .add('should render a engagement rate tooltip with previous period', () => (
+    <div
+      style={{
+        backgroundColor: '#343E46',
+      }}
+    >
+      <ChartTooltip
+        color="#fda3f3"
+        day={dayTimestamp}
+        previousPeriodDay={previousDayTimestamp}
+        label="Engagement Rate"
+        postsCount={5}
+        previousPostsCount={10}
+        value={8}
+        previousValue={8}
+        profileService="facebook"
+        timezone="America/New_York"
+        visualizePreviousPeriod
+      />
+    </div>
   ));

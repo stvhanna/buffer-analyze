@@ -12,6 +12,10 @@ function isUpdatesMetric(label) {
   return Boolean(label.match(/^(posts|tweets)$/i));
 }
 
+function isEngagementRateMetric(label) {
+  return Boolean(label.match(/^(engagement rate)$/i));
+}
+
 function postsWording(profileService, count = 1) {
   let wording = '';
   switch (profileService) {
@@ -145,6 +149,54 @@ UpdatesTooltip.defaultProps = {
   visualizePreviousPeriod: false,
 };
 
+const EngagementRateTooltip = ({
+  postsCount,
+  previousPostsCount,
+  value,
+  previousValue,
+  visualizePreviousPeriod,
+  profileService,
+}) => (
+  <span>
+    <Text color="white" size="small" >There {wasOrWere(postsCount)} a total of </Text>
+    <Text color="white" size="small" weight="bold" >
+      <TruncatedNumber>{postsCount}</TruncatedNumber>
+    </Text>
+    <Text color="white" size="small" > {postsWording(profileService, postsCount)} published</Text>
+    <Text color="white" size="small" > with an Engagement Rate of {value}%</Text>
+
+    {visualizePreviousPeriod && <span>
+      <Text color="white" size="small" >, compared with </Text>
+      <Text color="white" size="small" > an Engagement Rate of {previousValue}% for </Text>
+      <Text color="white" size="small" weight="bold" >
+        <TruncatedNumber>{previousPostsCount}</TruncatedNumber>
+      </Text>
+      <Text color="white" size="small" > {postsWording(profileService, postsCount)}</Text>
+      <Text color="white" size="small" > previously.</Text>
+    </span>}
+    {!visualizePreviousPeriod && <Text color="white" size="small" >.</Text>}
+  </span>
+);
+
+EngagementRateTooltip.propTypes = {
+  postsCount: PropTypes.number,
+  previousPostsCount: PropTypes.number,
+  visualizePreviousPeriod: PropTypes.bool,
+  profileService: PropTypes.string.isRequired,
+  value: PropTypes.number,
+  previousValue: PropTypes.number,
+};
+
+EngagementRateTooltip.defaultProps = {
+  color: null,
+  label: null,
+  postsCount: null,
+  previousPostsCount: null,
+  value: null,
+  previousValue: null,
+  visualizePreviousPeriod: false,
+};
+
 const Header = ({
   day,
   previousPeriodDay,
@@ -192,9 +244,12 @@ const ChartTooltip = ({
     <Header day={day} {...extraProps} />
     {label && <span>
       {!isUpdatesMetric(label) &&
+        !isEngagementRateMetric(label)&&
         <StandardTolltip profileService={profileService} label={label} {...extraProps} />}
       {isUpdatesMetric(label) &&
         <UpdatesTooltip profileService={profileService}label={label} {...extraProps} />}
+      {isEngagementRateMetric(label) &&
+        <EngagementRateTooltip profileService={profileService}label={label} {...extraProps} />}
     </span>}
     {!label && <span>
       <Text color="white" size="small" >There was no {postsWording(profileService)}s published at this time</Text>
