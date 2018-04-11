@@ -42,6 +42,7 @@ instagram.postMetrics = [
   instagram.likesMetric,
   instagram.commentsMetric,
   instagram.dateMetric,
+  instagram.EngagementRateMetric,
 ];
 
 instagram.topPostsAudienceMetrics = [];
