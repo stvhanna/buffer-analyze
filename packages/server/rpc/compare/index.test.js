@@ -202,7 +202,7 @@ describe('rpc/compare', () => {
       },
     });
 
-    expect(data.totals.length).toBe(10);
+    expect(data.totals.length).toBe(11);
     expect(data.totals[0]).toEqual({
       diff: 0,
       key: 'followers',
@@ -229,7 +229,7 @@ describe('rpc/compare', () => {
       },
     });
 
-    expect(data.totals.length).toBe(10);
+    expect(data.totals.length).toBe(11);
     expect(data.totals[0]).toEqual({
       diff: 9932400,
       key: 'followers',
