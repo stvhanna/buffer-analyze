@@ -24,9 +24,18 @@ instagram.likesMetric = {
   value: 0,
 };
 
+instagram.EngagementRateMetric = {
+  label: 'Engagement Rate',
+  key: 'engagement_rate',
+  apiKey: 'engagement_rate',
+  color: '#98E8B2',
+  value: 0,
+};
+
 instagram.topPostsEngagementMetrics = [
   instagram.likesMetric,
   instagram.commentsMetric,
+  instagram.EngagementRateMetric,
 ];
 
 instagram.postMetrics = [
