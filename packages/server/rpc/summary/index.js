@@ -66,13 +66,13 @@ const percentageDifference = (value, pastValue) => {
   return Math.ceil((difference / pastValue) * 100);
 };
 
-const summarize = (metric, currentPeriod, pastPeriod, profileService) => {
-  const pastValue = pastPeriod[metric];
-  const value = currentPeriod[metric];
+const summarize = (metricKey, currentPeriod, pastPeriod, profileService) => {
+  const pastValue = pastPeriod[metricKey];
+  const value = currentPeriod[metricKey];
   return {
     value,
     diff: percentageDifference(value, pastValue),
-    label: LABELS[profileService][metric],
+    label: LABELS[profileService][metricKey],
   };
 };
 
@@ -101,10 +101,14 @@ module.exports = method(
       .then((response) => {
         const currentPeriodResult = response[0].response;
         const pastPeriodResult = response[1].response;
-        const metrics = Object.keys(currentPeriodResult);
-        return metrics
-          .map(metric =>
-            summarize(metric, currentPeriodResult, pastPeriodResult, profileService),
+        return Object.keys(LABELS[profileService])
+          .map(metricKey =>
+            summarize(
+              metricKey,
+              currentPeriodResult,
+              pastPeriodResult,
+              profileService,
+            ),
           )
           .filter(metric =>
             metric.label !== undefined,
