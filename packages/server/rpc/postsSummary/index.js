@@ -21,8 +21,10 @@ const LABELS = {
   },
   instagram: {
     posts_count: 'Posts',
-    likes: 'Likes',
-    comments: 'Comments',
+    impressions: 'Post Impressions',
+    reach: 'Post Reach',
+    likes: 'Post Likes',
+    comments: 'Post Comments',
     engagement_rate: 'Engagement Rate',
   },
 };
