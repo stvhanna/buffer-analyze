@@ -33,6 +33,7 @@ export const Table = ({ metrics }) =>
         metric,
       };
       if (metrics.length === 5) itemProps.gridWidth = '20%';
+      if (metrics.length === 6) itemProps.gridWidth = '33%';
       return (<GridItem {...itemProps} />);
     })}
   </ul>;
