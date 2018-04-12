@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/web-analyze",
-  "version": "0.54.3",
+  "version": "0.54.5",
   "description": "Analyze Web Dashboard",
   "main": "index.jsx",
   "scripts": {
@@ -24,12 +24,12 @@
     "@bufferapp/analyze-export-picker": "^0.50.1",
     "@bufferapp/analyze-profile-selector": "^0.51.5",
     "@bufferapp/analyze-shared-components": "^0.51.5",
-    "@bufferapp/analyze-store": "^0.54.3",
+    "@bufferapp/analyze-store": "^0.54.5",
     "@bufferapp/analyze-tabs": "^0.22.0",
     "@bufferapp/app-sidebar": "1.3.3",
     "@bufferapp/async-data-fetch": "0.5.36-beta01",
     "@bufferapp/audience-chart": "^0.51.5",
-    "@bufferapp/average-table": "^0.51.5",
+    "@bufferapp/average-table": "^0.54.5",
     "@bufferapp/compare-chart": "^0.54.2",
     "@bufferapp/comparison-chart": "^0.51.5",
     "@bufferapp/components": "2.1.1",
@@ -43,9 +43,9 @@
     "@bufferapp/posts-table": "^0.54.3",
     "@bufferapp/profile-header": "^0.51.5",
     "@bufferapp/profile-loader": "^0.43.5",
-    "@bufferapp/report": "^0.54.2",
+    "@bufferapp/report": "^0.54.5",
     "@bufferapp/report-list": "^0.51.5",
-    "@bufferapp/summary-table": "^0.51.5"
+    "@bufferapp/summary-table": "^0.54.5"
   },
   "author": "Mike San Román <mike@msanroman.io> (http://msanroman.io)",
   "devDependencies": {
