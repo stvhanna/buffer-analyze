@@ -167,11 +167,20 @@ facebook.sharesMetric = {
   value: 0,
 };
 
+facebook.EngagementRateMetric = {
+  label: 'Engagement Rate',
+  key: 'engagement_rate',
+  apiKey: 'engagement_rate',
+  color: '#98E8B2',
+  value: 0,
+};
+
 facebook.topPostsEngagementMetrics = [
   facebook.postClicksMetric,
   facebook.reactionsMetric,
   facebook.commentsMetric,
   facebook.sharesMetric,
+  facebook.EngagementRateMetric,
 ];
 
 facebook.postMetrics = [
@@ -182,6 +191,7 @@ facebook.postMetrics = [
   facebook.commentsMetric,
   facebook.sharesMetric,
   facebook.dateMetric,
+  facebook.EngagementRateMetric,
 ];
 
 facebook.topPostsAudienceMetrics = [

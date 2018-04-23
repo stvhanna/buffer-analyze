@@ -3424,6 +3424,156 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                         </button>
                       </li>
                     </span>
+                    <span>
+                      <li
+                        className="dropdownListItem"
+                      >
+                        <button
+                          aria-label={null}
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              Object {
+                                "alignItems": "center",
+                                "boxSizing": "border-box",
+                                "display": "flex",
+                                "marginTop": "7px",
+                                "padding": "5px 10px",
+                                "position": "relative",
+                                "width": "200px",
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#59626a",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
+                                }
+                              }
+                            >
+                              Engagement Rate
+                            </span>
+                            <span>
+                               
+                            </span>
+                            <span
+                              style={
+                                Object {
+                                  "color": "#59626a",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              ASC
+                            </span>
+                          </span>
+                        </button>
+                      </li>
+                      <li
+                        className="dropdownListItem"
+                      >
+                        <button
+                          aria-label={null}
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              Object {
+                                "alignItems": "center",
+                                "boxSizing": "border-box",
+                                "display": "flex",
+                                "marginTop": "7px",
+                                "padding": "5px 10px",
+                                "position": "relative",
+                                "width": "200px",
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#59626a",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
+                                }
+                              }
+                            >
+                              Engagement Rate
+                            </span>
+                            <span>
+                               
+                            </span>
+                            <span
+                              style={
+                                Object {
+                                  "color": "#59626a",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              DESC
+                            </span>
+                          </span>
+                        </button>
+                      </li>
+                    </span>
                   </ul>
                 </div>
               </div>
@@ -3742,6 +3892,53 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                           Object {
                             "backgroundColor": "#D2C3AB",
                             "width": "7.597000326051516%",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      className="metricBarGraphContainer"
+                    >
+                      <span
+                        className="metricBarLabel"
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#59626a",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
+                            }
+                          }
+                        >
+                          <span>
+                            0
+                          </span>
+                        </span>
+                        <span
+                          style={
+                            Object {
+                              "color": "#59626a",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                           
+                          engagement rate
+                        </span>
+                      </span>
+                      <span
+                        className="metricBarGraph"
+                        data-tip="Engagement Rate"
+                        style={
+                          Object {
+                            "backgroundColor": "#98E8B2",
+                            "width": "NaN%",
                           }
                         }
                       />
@@ -4108,6 +4305,53 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                       />
                     </div>
                   </div>
+                  <div>
+                    <div
+                      className="metricBarGraphContainer"
+                    >
+                      <span
+                        className="metricBarLabel"
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#59626a",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
+                            }
+                          }
+                        >
+                          <span>
+                            0
+                          </span>
+                        </span>
+                        <span
+                          style={
+                            Object {
+                              "color": "#59626a",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                           
+                          engagement rate
+                        </span>
+                      </span>
+                      <span
+                        className="metricBarGraph"
+                        data-tip="Engagement Rate"
+                        style={
+                          Object {
+                            "backgroundColor": "#98E8B2",
+                            "width": "NaN%",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div
                   className="metricColumn"
@@ -4457,6 +4701,53 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                           Object {
                             "backgroundColor": "#D2C3AB",
                             "width": "0.9781545484186501%",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      className="metricBarGraphContainer"
+                    >
+                      <span
+                        className="metricBarLabel"
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#59626a",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
+                            }
+                          }
+                        >
+                          <span>
+                            0
+                          </span>
+                        </span>
+                        <span
+                          style={
+                            Object {
+                              "color": "#59626a",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                           
+                          engagement rate
+                        </span>
+                      </span>
+                      <span
+                        className="metricBarGraph"
+                        data-tip="Engagement Rate"
+                        style={
+                          Object {
+                            "backgroundColor": "#98E8B2",
+                            "width": "NaN%",
                           }
                         }
                       />
@@ -9137,6 +9428,156 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                         </button>
                       </li>
                     </span>
+                    <span>
+                      <li
+                        className="dropdownListItem"
+                      >
+                        <button
+                          aria-label={null}
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              Object {
+                                "alignItems": "center",
+                                "boxSizing": "border-box",
+                                "display": "flex",
+                                "marginTop": "7px",
+                                "padding": "5px 10px",
+                                "position": "relative",
+                                "width": "200px",
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#59626a",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
+                                }
+                              }
+                            >
+                              Engagement Rate
+                            </span>
+                            <span>
+                               
+                            </span>
+                            <span
+                              style={
+                                Object {
+                                  "color": "#59626a",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              ASC
+                            </span>
+                          </span>
+                        </button>
+                      </li>
+                      <li
+                        className="dropdownListItem"
+                      >
+                        <button
+                          aria-label={null}
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              Object {
+                                "alignItems": "center",
+                                "boxSizing": "border-box",
+                                "display": "flex",
+                                "marginTop": "7px",
+                                "padding": "5px 10px",
+                                "position": "relative",
+                                "width": "200px",
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#59626a",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
+                                }
+                              }
+                            >
+                              Engagement Rate
+                            </span>
+                            <span>
+                               
+                            </span>
+                            <span
+                              style={
+                                Object {
+                                  "color": "#59626a",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              DESC
+                            </span>
+                          </span>
+                        </button>
+                      </li>
+                    </span>
                   </ul>
                 </div>
               </div>
@@ -9455,6 +9896,53 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                           Object {
                             "backgroundColor": "#D2C3AB",
                             "width": "7.597000326051516%",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      className="metricBarGraphContainer"
+                    >
+                      <span
+                        className="metricBarLabel"
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#59626a",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
+                            }
+                          }
+                        >
+                          <span>
+                            0
+                          </span>
+                        </span>
+                        <span
+                          style={
+                            Object {
+                              "color": "#59626a",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                           
+                          engagement rate
+                        </span>
+                      </span>
+                      <span
+                        className="metricBarGraph"
+                        data-tip="Engagement Rate"
+                        style={
+                          Object {
+                            "backgroundColor": "#98E8B2",
+                            "width": "NaN%",
                           }
                         }
                       />
@@ -9821,6 +10309,53 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                       />
                     </div>
                   </div>
+                  <div>
+                    <div
+                      className="metricBarGraphContainer"
+                    >
+                      <span
+                        className="metricBarLabel"
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#59626a",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
+                            }
+                          }
+                        >
+                          <span>
+                            0
+                          </span>
+                        </span>
+                        <span
+                          style={
+                            Object {
+                              "color": "#59626a",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                           
+                          engagement rate
+                        </span>
+                      </span>
+                      <span
+                        className="metricBarGraph"
+                        data-tip="Engagement Rate"
+                        style={
+                          Object {
+                            "backgroundColor": "#98E8B2",
+                            "width": "NaN%",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div
                   className="metricColumn"
@@ -10170,6 +10705,53 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                           Object {
                             "backgroundColor": "#D2C3AB",
                             "width": "0.9781545484186501%",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      className="metricBarGraphContainer"
+                    >
+                      <span
+                        className="metricBarLabel"
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#59626a",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
+                            }
+                          }
+                        >
+                          <span>
+                            0
+                          </span>
+                        </span>
+                        <span
+                          style={
+                            Object {
+                              "color": "#59626a",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                           
+                          engagement rate
+                        </span>
+                      </span>
+                      <span
+                        className="metricBarGraph"
+                        data-tip="Engagement Rate"
+                        style={
+                          Object {
+                            "backgroundColor": "#98E8B2",
+                            "width": "NaN%",
                           }
                         }
                       />
