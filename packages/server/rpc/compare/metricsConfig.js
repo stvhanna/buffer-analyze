@@ -102,14 +102,34 @@ const instagramConfig = {
     color: '#3A92D3',
   },
 
+  impressions: {
+    label: 'Impressions',
+    color: '#8AC6DE',
+  },
+
+  reach: {
+    label: 'Reach',
+    color: '#57AAE5',
+  },
+
   likes: {
     label: 'Likes',
-    color: '#FD8F90',
+    color: '#FDA3F3',
   },
 
   comments: {
     label: 'Comments',
     color: '#EFDF00',
+  },
+
+  saved: {
+    label: 'Post Saves',
+    color: '#FD8F90',
+  },
+
+  video_views: {
+    label: 'Video Views',
+    color: '#D2C3AB',
   },
 
   followers: {
@@ -161,11 +181,15 @@ module.exports = {
   instagram: {
     config: instagramConfig,
     orderedKeys: [
-      'followers',
       'posts_count',
+      'impressions',
+      'reach',
       'likes',
       'comments',
+      'saved',
+      'video_views',
       'new_followers',
+      'followers',
       'engagement_rate',
     ],
   },
