@@ -70,7 +70,7 @@ twitter.clicksMetric = {
   label: 'Clicks',
   key: 'url_clicks',
   apiKey: 'url_clicks',
-  color: '#98E8B2',
+  color: '#EFDF00',
   value: 0,
 };
 
@@ -90,6 +90,14 @@ twitter.likesMetric = {
   value: 0,
 };
 
+twitter.EngagementRateMetric = {
+  label: 'Engagement Rate',
+  key: 'engagement_rate',
+  apiKey: 'engagement_rate',
+  color: '#98E8B2',
+  value: 0,
+};
+
 twitter.topPostsEngagementMetrics = [
   twitter.clicksMetric,
   twitter.retweetsMetric,
@@ -98,6 +106,7 @@ twitter.topPostsEngagementMetrics = [
 
 twitter.postMetrics = [
   twitter.impressionsMetric,
+  twitter.EngagementRateMetric,
   twitter.clicksMetric,
   twitter.retweetsMetric,
   twitter.likesMetric,
@@ -106,6 +115,7 @@ twitter.postMetrics = [
 
 twitter.topPostsAudienceMetrics = [
   twitter.impressionsMetric,
+  twitter.EngagementRateMetric,
 ];
 
 // Facebook Metrics Configuration
