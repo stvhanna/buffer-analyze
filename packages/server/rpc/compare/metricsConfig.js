@@ -42,6 +42,11 @@ const twitterConfig = {
     label: 'New Followers',
     color: '#D7B5FD',
   },
+
+  engagement_rate: {
+    label: 'Engagement Rate',
+    color: '#98E8B2',
+  },
 };
 
 const facebookConfig = {
@@ -166,6 +171,7 @@ module.exports = {
       'url_clicks',
       'replies',
       'new_followers',
+      'engagement_rate',
     ],
   },
   facebook: {
