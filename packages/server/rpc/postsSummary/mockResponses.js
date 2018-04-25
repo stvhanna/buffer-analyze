@@ -6,6 +6,7 @@ export const CURRENT_PERIOD_RESPONSE = {
     posts_count: 3,
     reactions: 9391,
     shares: 5,
+    engagement_rate: 12,
   },
   success: true,
 };
@@ -17,6 +18,7 @@ export const PAST_PERIOD_RESPONSE = {
     posts_count: 5,
     reactions: 9391,
     shares: 2,
+    engagement_rate: 6,
   },
   success: true,
 };

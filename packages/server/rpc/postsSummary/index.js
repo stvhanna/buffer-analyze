@@ -10,6 +10,7 @@ const LABELS = {
     reactions: 'Reactions',
     comments: 'Comments',
     shares: 'Shares',
+    engagement_rate: 'Engagement Rate',
   },
   twitter: {
     posts_count: 'Posts',

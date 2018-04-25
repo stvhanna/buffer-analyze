@@ -167,6 +167,11 @@ describe('rpc/posts_summary', () => {
         value: 5,
         diff: 150,
       },
+      {
+        label: 'Engagement Rate',
+        value: 12,
+        diff: 100,
+      },
     ]);
   });
 });
