@@ -24,7 +24,7 @@ instagram.likesMetric = {
   value: 0,
 };
 
-instagram.EngagementRateMetric = {
+instagram.engagementRateMetric = {
   label: 'Engagement Rate',
   key: 'engagement_rate',
   apiKey: 'engagement_rate',
@@ -32,20 +32,41 @@ instagram.EngagementRateMetric = {
   value: 0,
 };
 
+instagram.impressionsMetric = {
+  label: 'Impressions',
+  key: 'impressions',
+  apiKey: 'impressions',
+  color: '#8AC6DE',
+  value: 0,
+};
+
+instagram.reachMetric = {
+  label: 'Reach',
+  key: 'reach',
+  apiKey: 'reach',
+  color: '#FFC880',
+  value: 0,
+};
+
 instagram.topPostsEngagementMetrics = [
   instagram.likesMetric,
   instagram.commentsMetric,
-  instagram.EngagementRateMetric,
 ];
 
 instagram.postMetrics = [
   instagram.likesMetric,
   instagram.commentsMetric,
+  instagram.impressionsMetric,
+  instagram.reachMetric,
+  instagram.engagementRateMetric,
   instagram.dateMetric,
-  instagram.EngagementRateMetric,
 ];
 
-instagram.topPostsAudienceMetrics = [];
+instagram.topPostsAudienceMetrics = [
+  instagram.impressionsMetric,
+  instagram.reachMetric,
+  instagram.engagementRateMetric,
+];
 
 
 export const twitter = {};
@@ -90,7 +111,7 @@ twitter.likesMetric = {
   value: 0,
 };
 
-twitter.EngagementRateMetric = {
+twitter.engagementRateMetric = {
   label: 'Engagement Rate',
   key: 'engagement_rate',
   apiKey: 'engagement_rate',
@@ -106,7 +127,7 @@ twitter.topPostsEngagementMetrics = [
 
 twitter.postMetrics = [
   twitter.impressionsMetric,
-  twitter.EngagementRateMetric,
+  twitter.engagementRateMetric,
   twitter.clicksMetric,
   twitter.retweetsMetric,
   twitter.likesMetric,
@@ -115,7 +136,7 @@ twitter.postMetrics = [
 
 twitter.topPostsAudienceMetrics = [
   twitter.impressionsMetric,
-  twitter.EngagementRateMetric,
+  twitter.engagementRateMetric,
 ];
 
 // Facebook Metrics Configuration
@@ -146,7 +167,7 @@ facebook.postClicksMetric = {
 };
 
 facebook.impressionsMetric = {
-  label: 'Post Impressions',
+  label: 'Impressions',
   key: 'post_impressions',
   apiKey: 'post_impressions',
   color: '#8AC6DE',
@@ -154,7 +175,7 @@ facebook.impressionsMetric = {
 };
 
 facebook.postReachMetric = {
-  label: 'Post Reach',
+  label: 'Reach',
   key: 'post_reach',
   apiKey: 'post_reach',
   color: '#FFC880',
@@ -177,7 +198,7 @@ facebook.sharesMetric = {
   value: 0,
 };
 
-facebook.EngagementRateMetric = {
+facebook.engagementRateMetric = {
   label: 'Engagement Rate',
   key: 'engagement_rate',
   apiKey: 'engagement_rate',
@@ -190,7 +211,6 @@ facebook.topPostsEngagementMetrics = [
   facebook.reactionsMetric,
   facebook.commentsMetric,
   facebook.sharesMetric,
-  facebook.EngagementRateMetric,
 ];
 
 facebook.postMetrics = [
@@ -200,13 +220,14 @@ facebook.postMetrics = [
   facebook.reactionsMetric,
   facebook.commentsMetric,
   facebook.sharesMetric,
+  facebook.engagementRateMetric,
   facebook.dateMetric,
-  facebook.EngagementRateMetric,
 ];
 
 facebook.topPostsAudienceMetrics = [
   facebook.impressionsMetric,
   facebook.postReachMetric,
+  facebook.engagementRateMetric,
 ];
 
 // Exports
