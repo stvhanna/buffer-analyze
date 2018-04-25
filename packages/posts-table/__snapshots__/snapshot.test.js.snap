@@ -2397,7 +2397,7 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                                 }
                               }
                             >
-                              Post Impressions
+                              Impressions
                             </span>
                             <span>
                                
@@ -2471,7 +2471,7 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                                 }
                               }
                             >
-                              Post Impressions
+                              Impressions
                             </span>
                             <span>
                                
@@ -2579,7 +2579,7 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                                 }
                               }
                             >
-                              Post Reach
+                              Reach
                             </span>
                             <span>
                                
@@ -2653,7 +2653,7 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                                 }
                               }
                             >
-                              Post Reach
+                              Reach
                             </span>
                             <span>
                                
@@ -3933,12 +3933,12 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                           }
                         >
                            
-                          post impressions
+                          impressions
                         </span>
                       </span>
                       <span
                         className="metricBarGraph"
-                        data-tip="Post Impressions"
+                        data-tip="Impressions"
                         style={
                           Object {
                             "backgroundColor": "#8AC6DE",
@@ -3980,12 +3980,12 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                           }
                         >
                            
-                          post reach
+                          reach
                         </span>
                       </span>
                       <span
                         className="metricBarGraph"
-                        data-tip="Post Reach"
+                        data-tip="Reach"
                         style={
                           Object {
                             "backgroundColor": "#FFC880",
@@ -4341,12 +4341,12 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                           }
                         >
                            
-                          post impressions
+                          impressions
                         </span>
                       </span>
                       <span
                         className="metricBarGraph"
-                        data-tip="Post Impressions"
+                        data-tip="Impressions"
                         style={
                           Object {
                             "backgroundColor": "#8AC6DE",
@@ -4388,12 +4388,12 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                           }
                         >
                            
-                          post reach
+                          reach
                         </span>
                       </span>
                       <span
                         className="metricBarGraph"
-                        data-tip="Post Reach"
+                        data-tip="Reach"
                         style={
                           Object {
                             "backgroundColor": "#FFC880",
@@ -4742,12 +4742,12 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                           }
                         >
                            
-                          post impressions
+                          impressions
                         </span>
                       </span>
                       <span
                         className="metricBarGraph"
-                        data-tip="Post Impressions"
+                        data-tip="Impressions"
                         style={
                           Object {
                             "backgroundColor": "#8AC6DE",
@@ -4789,12 +4789,12 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                           }
                         >
                            
-                          post reach
+                          reach
                         </span>
                       </span>
                       <span
                         className="metricBarGraph"
-                        data-tip="Post Reach"
+                        data-tip="Reach"
                         style={
                           Object {
                             "backgroundColor": "#FFC880",
@@ -9286,7 +9286,7 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                                 }
                               }
                             >
-                              Post Impressions
+                              Impressions
                             </span>
                             <span>
                                
@@ -9360,7 +9360,7 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                                 }
                               }
                             >
-                              Post Impressions
+                              Impressions
                             </span>
                             <span>
                                
@@ -9468,7 +9468,7 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                                 }
                               }
                             >
-                              Post Reach
+                              Reach
                             </span>
                             <span>
                                
@@ -9542,7 +9542,7 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                                 }
                               }
                             >
-                              Post Reach
+                              Reach
                             </span>
                             <span>
                                
@@ -10822,12 +10822,12 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                           }
                         >
                            
-                          post impressions
+                          impressions
                         </span>
                       </span>
                       <span
                         className="metricBarGraph"
-                        data-tip="Post Impressions"
+                        data-tip="Impressions"
                         style={
                           Object {
                             "backgroundColor": "#8AC6DE",
@@ -10869,12 +10869,12 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                           }
                         >
                            
-                          post reach
+                          reach
                         </span>
                       </span>
                       <span
                         className="metricBarGraph"
-                        data-tip="Post Reach"
+                        data-tip="Reach"
                         style={
                           Object {
                             "backgroundColor": "#FFC880",
@@ -11230,12 +11230,12 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                           }
                         >
                            
-                          post impressions
+                          impressions
                         </span>
                       </span>
                       <span
                         className="metricBarGraph"
-                        data-tip="Post Impressions"
+                        data-tip="Impressions"
                         style={
                           Object {
                             "backgroundColor": "#8AC6DE",
@@ -11277,12 +11277,12 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                           }
                         >
                            
-                          post reach
+                          reach
                         </span>
                       </span>
                       <span
                         className="metricBarGraph"
-                        data-tip="Post Reach"
+                        data-tip="Reach"
                         style={
                           Object {
                             "backgroundColor": "#FFC880",
@@ -11631,12 +11631,12 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                           }
                         >
                            
-                          post impressions
+                          impressions
                         </span>
                       </span>
                       <span
                         className="metricBarGraph"
-                        data-tip="Post Impressions"
+                        data-tip="Impressions"
                         style={
                           Object {
                             "backgroundColor": "#8AC6DE",
@@ -11678,12 +11678,12 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                           }
                         >
                            
-                          post reach
+                          reach
                         </span>
                       </span>
                       <span
                         className="metricBarGraph"
-                        data-tip="Post Reach"
+                        data-tip="Reach"
                         style={
                           Object {
                             "backgroundColor": "#FFC880",

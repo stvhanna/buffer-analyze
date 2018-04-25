@@ -167,7 +167,7 @@ facebook.postClicksMetric = {
 };
 
 facebook.impressionsMetric = {
-  label: 'Post Impressions',
+  label: 'Impressions',
   key: 'post_impressions',
   apiKey: 'post_impressions',
   color: '#8AC6DE',
@@ -175,7 +175,7 @@ facebook.impressionsMetric = {
 };
 
 facebook.postReachMetric = {
-  label: 'Post Reach',
+  label: 'Reach',
   key: 'post_reach',
   apiKey: 'post_reach',
   color: '#FFC880',
