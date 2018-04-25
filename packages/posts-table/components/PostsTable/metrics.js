@@ -32,6 +32,22 @@ instagram.engagementRateMetric = {
   value: 0,
 };
 
+instagram.impressionsMetric = {
+  label: 'Impressions',
+  key: 'impressions',
+  apiKey: 'impressions',
+  color: '#8AC6DE',
+  value: 0,
+};
+
+instagram.reachMetric = {
+  label: 'Reach',
+  key: 'reach',
+  apiKey: 'reach',
+  color: '#FFC880',
+  value: 0,
+};
+
 instagram.topPostsEngagementMetrics = [
   instagram.likesMetric,
   instagram.commentsMetric,
@@ -40,11 +56,15 @@ instagram.topPostsEngagementMetrics = [
 instagram.postMetrics = [
   instagram.likesMetric,
   instagram.commentsMetric,
+  instagram.impressionsMetric,
+  instagram.reachMetric,
   instagram.engagementRateMetric,
   instagram.dateMetric,
 ];
 
 instagram.topPostsAudienceMetrics = [
+  instagram.impressionsMetric,
+  instagram.reachMetric,
   instagram.engagementRateMetric,
 ];
 

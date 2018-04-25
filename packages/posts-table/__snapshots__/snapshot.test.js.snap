@@ -5408,6 +5408,456 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                                 }
                               }
                             >
+                              Impressions
+                            </span>
+                            <span>
+                               
+                            </span>
+                            <span
+                              style={
+                                Object {
+                                  "color": "#59626a",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              ASC
+                            </span>
+                          </span>
+                        </button>
+                      </li>
+                      <li
+                        className="dropdownListItem"
+                      >
+                        <button
+                          aria-label={null}
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              Object {
+                                "alignItems": "center",
+                                "boxSizing": "border-box",
+                                "display": "flex",
+                                "marginTop": "7px",
+                                "padding": "5px 10px",
+                                "position": "relative",
+                                "width": "200px",
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#59626a",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
+                                }
+                              }
+                            >
+                              Impressions
+                            </span>
+                            <span>
+                               
+                            </span>
+                            <span
+                              style={
+                                Object {
+                                  "color": "#59626a",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              DESC
+                            </span>
+                          </span>
+                        </button>
+                      </li>
+                    </span>
+                    <span>
+                      <li
+                        className="dropdownListItem"
+                      >
+                        <button
+                          aria-label={null}
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              Object {
+                                "alignItems": "center",
+                                "boxSizing": "border-box",
+                                "display": "flex",
+                                "marginTop": "7px",
+                                "padding": "5px 10px",
+                                "position": "relative",
+                                "width": "200px",
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#59626a",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
+                                }
+                              }
+                            >
+                              Reach
+                            </span>
+                            <span>
+                               
+                            </span>
+                            <span
+                              style={
+                                Object {
+                                  "color": "#59626a",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              ASC
+                            </span>
+                          </span>
+                        </button>
+                      </li>
+                      <li
+                        className="dropdownListItem"
+                      >
+                        <button
+                          aria-label={null}
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              Object {
+                                "alignItems": "center",
+                                "boxSizing": "border-box",
+                                "display": "flex",
+                                "marginTop": "7px",
+                                "padding": "5px 10px",
+                                "position": "relative",
+                                "width": "200px",
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#59626a",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
+                                }
+                              }
+                            >
+                              Reach
+                            </span>
+                            <span>
+                               
+                            </span>
+                            <span
+                              style={
+                                Object {
+                                  "color": "#59626a",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              DESC
+                            </span>
+                          </span>
+                        </button>
+                      </li>
+                    </span>
+                    <span>
+                      <li
+                        className="dropdownListItem"
+                      >
+                        <button
+                          aria-label={null}
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              Object {
+                                "alignItems": "center",
+                                "boxSizing": "border-box",
+                                "display": "flex",
+                                "marginTop": "7px",
+                                "padding": "5px 10px",
+                                "position": "relative",
+                                "width": "200px",
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#59626a",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
+                                }
+                              }
+                            >
+                              Engagement Rate
+                            </span>
+                            <span>
+                               
+                            </span>
+                            <span
+                              style={
+                                Object {
+                                  "color": "#59626a",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              ASC
+                            </span>
+                          </span>
+                        </button>
+                      </li>
+                      <li
+                        className="dropdownListItem"
+                      >
+                        <button
+                          aria-label={null}
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              Object {
+                                "alignItems": "center",
+                                "boxSizing": "border-box",
+                                "display": "flex",
+                                "marginTop": "7px",
+                                "padding": "5px 10px",
+                                "position": "relative",
+                                "width": "200px",
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#59626a",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
+                                }
+                              }
+                            >
+                              Engagement Rate
+                            </span>
+                            <span>
+                               
+                            </span>
+                            <span
+                              style={
+                                Object {
+                                  "color": "#59626a",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              DESC
+                            </span>
+                          </span>
+                        </button>
+                      </li>
+                    </span>
+                    <span>
+                      <li
+                        className="dropdownListItem"
+                      >
+                        <button
+                          aria-label={null}
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              Object {
+                                "alignItems": "center",
+                                "boxSizing": "border-box",
+                                "display": "flex",
+                                "marginTop": "7px",
+                                "padding": "5px 10px",
+                                "position": "relative",
+                                "width": "200px",
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "color": "#59626a",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 700,
+                                }
+                              }
+                            >
                               Date
                             </span>
                             <span>
@@ -5752,6 +6202,100 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                           }
                         >
                            
+                          impressions
+                        </span>
+                      </span>
+                      <span
+                        className="metricBarGraph"
+                        data-tip="Impressions"
+                        style={
+                          Object {
+                            "backgroundColor": "#8AC6DE",
+                            "width": "0%",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      className="metricBarGraphContainer"
+                    >
+                      <span
+                        className="metricBarLabel"
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#59626a",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
+                            }
+                          }
+                        >
+                          <span>
+                            0
+                          </span>
+                        </span>
+                        <span
+                          style={
+                            Object {
+                              "color": "#59626a",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                           
+                          reach
+                        </span>
+                      </span>
+                      <span
+                        className="metricBarGraph"
+                        data-tip="Reach"
+                        style={
+                          Object {
+                            "backgroundColor": "#FFC880",
+                            "width": "0%",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      className="metricBarGraphContainer"
+                    >
+                      <span
+                        className="metricBarLabel"
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#59626a",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
+                            }
+                          }
+                        >
+                          <span>
+                            0
+                          </span>
+                        </span>
+                        <span
+                          style={
+                            Object {
+                              "color": "#59626a",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                           
                           engagement rate
                         </span>
                       </span>
@@ -5972,6 +6516,100 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                           }
                         >
                            
+                          impressions
+                        </span>
+                      </span>
+                      <span
+                        className="metricBarGraph"
+                        data-tip="Impressions"
+                        style={
+                          Object {
+                            "backgroundColor": "#8AC6DE",
+                            "width": "0%",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      className="metricBarGraphContainer"
+                    >
+                      <span
+                        className="metricBarLabel"
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#59626a",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
+                            }
+                          }
+                        >
+                          <span>
+                            0
+                          </span>
+                        </span>
+                        <span
+                          style={
+                            Object {
+                              "color": "#59626a",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                           
+                          reach
+                        </span>
+                      </span>
+                      <span
+                        className="metricBarGraph"
+                        data-tip="Reach"
+                        style={
+                          Object {
+                            "backgroundColor": "#FFC880",
+                            "width": "0%",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      className="metricBarGraphContainer"
+                    >
+                      <span
+                        className="metricBarLabel"
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#59626a",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
+                            }
+                          }
+                        >
+                          <span>
+                            0
+                          </span>
+                        </span>
+                        <span
+                          style={
+                            Object {
+                              "color": "#59626a",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                           
                           engagement rate
                         </span>
                       </span>
@@ -6153,6 +6791,100 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                 <div
                   className="metricColumn"
                 >
+                  <div>
+                    <div
+                      className="metricBarGraphContainer"
+                    >
+                      <span
+                        className="metricBarLabel"
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#59626a",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
+                            }
+                          }
+                        >
+                          <span>
+                            0
+                          </span>
+                        </span>
+                        <span
+                          style={
+                            Object {
+                              "color": "#59626a",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                           
+                          impressions
+                        </span>
+                      </span>
+                      <span
+                        className="metricBarGraph"
+                        data-tip="Impressions"
+                        style={
+                          Object {
+                            "backgroundColor": "#8AC6DE",
+                            "width": "0%",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      className="metricBarGraphContainer"
+                    >
+                      <span
+                        className="metricBarLabel"
+                      >
+                        <span
+                          style={
+                            Object {
+                              "color": "#59626a",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 700,
+                            }
+                          }
+                        >
+                          <span>
+                            0
+                          </span>
+                        </span>
+                        <span
+                          style={
+                            Object {
+                              "color": "#59626a",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "0.75rem",
+                              "fontWeight": 400,
+                            }
+                          }
+                        >
+                           
+                          reach
+                        </span>
+                      </span>
+                      <span
+                        className="metricBarGraph"
+                        data-tip="Reach"
+                        style={
+                          Object {
+                            "backgroundColor": "#FFC880",
+                            "width": "0%",
+                          }
+                        }
+                      />
+                    </div>
+                  </div>
                   <div>
                     <div
                       className="metricBarGraphContainer"
