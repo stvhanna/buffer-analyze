@@ -1,17 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Snapshots AverageTable should not render if profile is for Instagram 1`] = `
-<span>
-  <div
-    style={
-      Object {
-        "width": "750px",
-      }
-    }
-  />
-</span>
-`;
-
 exports[`Snapshots AverageTable should render a "no data" state 1`] = `
 <span>
   <div

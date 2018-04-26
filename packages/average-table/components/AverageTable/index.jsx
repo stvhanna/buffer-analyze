@@ -56,10 +56,6 @@ Table.propTypes = {
 };
 
 const AverageTable = ({ metrics, loading, profileService }) => {
-  if (profileService === 'instagram') {
-    return null;
-  }
-
   let content = null;
   if (loading) {
     content = <Loading active noBorder />;
