@@ -30,6 +30,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
         name: 'average',
         args: {
           profileId: action.profile.id,
+          profileService: action.profile.service,
           startDate: getState().date.startDate,
           endDate: getState().date.endDate,
         },
@@ -41,6 +42,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
           name: 'average',
           args: {
             profileId: getState().profiles.selectedProfileId,
+            profileService: getState().profiles.selectedProfileService,
             startDate: action.startDate,
             endDate: action.endDate,
           },

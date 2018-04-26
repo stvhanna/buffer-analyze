@@ -55,6 +55,7 @@ describe('middleware', () => {
       type: actionTypes.SELECT_PROFILE,
       profile: {
         id: '1235519asd',
+        service: 'twitter',
       },
     };
     middleware(store)(next)(action);
@@ -62,6 +63,7 @@ describe('middleware', () => {
       name: 'average',
       args: {
         profileId: '1235519asd',
+        profileService: 'twitter',
         startDate: state.date.startDate,
         endDate: state.date.endDate,
       },
@@ -98,12 +100,14 @@ describe('middleware', () => {
       };
       state.profiles = {
         selectedProfileId: profileId,
+        selectedProfileService: 'twitter',
       };
       middleware(store)(next)(action);
       expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
         name: 'average',
         args: {
           profileId,
+          profileService: 'twitter',
           startDate: state.date.startDate,
           endDate: state.date.endDate,
         },
