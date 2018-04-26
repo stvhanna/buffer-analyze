@@ -67,17 +67,4 @@ storiesOf('AverageTable')
     >
       <AverageTable metrics={noMetrics} />
     </div>
-  ))
-  .add('should not render if profile is for Instagram', () => (
-    <div
-      style={{
-        width: '750px',
-      }}
-    >
-      <AverageTable
-        timezone="America/Los_Angeles"
-        metrics={mockMetrics7days}
-        profileService="instagram"
-      />
-    </div>
   ));
