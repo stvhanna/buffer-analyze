@@ -5,7 +5,6 @@ const DateRange = require('../utils/DateRange');
 const LABELS = {
   facebook: {
     posts_count: 'Posts',
-    post_impressions: 'Post Impressions',
     post_reach: 'Post Reach',
     reactions: 'Reactions',
     comments: 'Comments',
