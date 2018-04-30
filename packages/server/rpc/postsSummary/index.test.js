@@ -143,11 +143,6 @@ describe('rpc/posts_summary', () => {
         diff: -40,
       },
       {
-        label: 'Post Impressions',
-        value: 56755,
-        diff: 25,
-      },
-      {
         label: 'Post Reach',
         value: 1181030,
         diff: -0,
