@@ -15,10 +15,10 @@ const LABELS = {
   twitter: {
     posts_count: 'Posts',
     retweets: 'Retweets',
-    impressions: 'Impressions',
     replies: 'Replies',
     url_clicks: 'Clicks',
     favorites: 'Likes',
+    engagement_rate: 'Engagement Rate',
   },
   instagram: {
     posts_count: 'Posts',
