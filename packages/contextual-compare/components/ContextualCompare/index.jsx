@@ -22,7 +22,7 @@ const ContextualCompare = ({
   profileService,
   ...props
 }) => {
-  if (profileService !== 'facebook') {
+  if (profileService === 'twitter') {
     return null;
   }
   return (
