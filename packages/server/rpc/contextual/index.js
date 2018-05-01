@@ -4,15 +4,26 @@ const DateRange = require('../utils/DateRange');
 const METRICS_CONFIG = require('./metricsConfig');
 const PRESETS = require('./presets');
 
-const requestContextual = (profileId, dateRange, accessToken) =>
+function shouldUseAnalyzeApi (profileService) {
+  return profileService === 'instagram';
+}
+
+const requestContextual = (profileId, profileService, dateRange, accessToken) =>
   rp({
-    uri: `${process.env.API_ADDR}/1/profiles/${profileId}/analytics/contextual.json`,
-    method: 'GET',
+    uri: (shouldUseAnalyzeApi(profileService) ?
+      `${process.env.ANALYZE_API_ADDR}/metrics/questions` :
+      `${process.env.API_ADDR}/1/profiles/${profileId}/analytics/contextual.json`
+    ),
+    method: (shouldUseAnalyzeApi(profileService) ?
+      'POST' :
+      'GET'
+    ),
     strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
     qs: {
       access_token: accessToken,
       start_date: dateRange.start,
       end_date: dateRange.end,
+      profile_id: profileId,
     },
     json: true,
   });
@@ -104,6 +115,7 @@ module.exports = method(
     const dateRange = new DateRange(startDate, endDate);
     return requestContextual(
       profileId,
+      profileService,
       dateRange,
       session.analyze.accessToken,
     )
