@@ -6,7 +6,6 @@ import SummaryTable from '@bufferapp/summary-table';
 import AverageTable from '@bufferapp/average-table';
 import CompareChart from '@bufferapp/compare-chart';
 import ContextualCompare from '@bufferapp/contextual-compare';
-import AudienceChart from '@bufferapp/audience-chart';
 import HourlyChart from '@bufferapp/hourly-chart';
 
 const OverviewTab = ({ match }) => (
@@ -14,7 +13,6 @@ const OverviewTab = ({ match }) => (
     <SummaryTable profileService={match.params.service} />
     <AverageTable />
     <CompareChart />
-    <AudienceChart />
     <HourlyChart />
     <ContextualCompare />
   </div>
