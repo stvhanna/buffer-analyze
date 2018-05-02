@@ -19,7 +19,7 @@ const dropdownContainerStyle = {
   position: 'relative',
   display: 'inline-block',
   zIndex: 1,
-  width: '284px',
+  width: '360px',
   height: '34px',
 };
 

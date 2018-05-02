@@ -16,7 +16,7 @@ exports[`Snapshots ProfileSelectorDropdown should filter by profilesFilterString
           "display": "inline-block",
           "height": "34px",
           "position": "relative",
-          "width": "284px",
+          "width": "360px",
           "zIndex": 1,
         }
       }
@@ -265,6 +265,7 @@ exports[`Snapshots ProfileSelectorDropdown should filter by profilesFilterString
                     "width": "100%",
                   }
                 }
+                title="Joel Gascoigne"
               >
                 <div
                   style={
@@ -391,7 +392,7 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
           "display": "inline-block",
           "height": "34px",
           "position": "relative",
-          "width": "284px",
+          "width": "360px",
           "zIndex": 1,
         }
       }
@@ -640,6 +641,7 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                     "width": "100%",
                   }
                 }
+                title="Buffer"
               >
                 <div
                   style={
@@ -806,6 +808,7 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                     "width": "100%",
                   }
                 }
+                title="Joel Gascoigne"
               >
                 <div
                   style={
@@ -940,6 +943,7 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                     "width": "100%",
                   }
                 }
+                title="Buffer"
               >
                 <div
                   style={
@@ -1074,6 +1078,7 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                     "width": "100%",
                   }
                 }
+                title="Buffer"
               >
                 <div
                   style={
@@ -1203,7 +1208,7 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
           "display": "inline-block",
           "height": "34px",
           "position": "relative",
-          "width": "284px",
+          "width": "360px",
           "zIndex": 1,
         }
       }
@@ -1452,6 +1457,7 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                     "width": "100%",
                   }
                 }
+                title="Buffer"
               >
                 <div
                   style={
@@ -1618,6 +1624,7 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                     "width": "100%",
                   }
                 }
+                title="Joel Gascoigne"
               >
                 <div
                   style={
@@ -1752,6 +1759,7 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                     "width": "100%",
                   }
                 }
+                title="Buffer"
               >
                 <div
                   style={
@@ -1886,6 +1894,7 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                     "width": "100%",
                   }
                 }
+                title="Buffer"
               >
                 <div
                   style={
@@ -2015,7 +2024,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
           "display": "inline-block",
           "height": "34px",
           "position": "relative",
-          "width": "284px",
+          "width": "360px",
           "zIndex": 1,
         }
       }
@@ -2266,6 +2275,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "width": "100%",
                   }
                 }
+                title="Buffer"
               >
                 <div
                   style={
@@ -2432,6 +2442,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "width": "100%",
                   }
                 }
+                title="Joel Gascoigne"
               >
                 <div
                   style={
@@ -2566,6 +2577,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "width": "100%",
                   }
                 }
+                title="Buffer"
               >
                 <div
                   style={
@@ -2700,6 +2712,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "width": "100%",
                   }
                 }
+                title="Buffer"
               >
                 <div
                   style={
@@ -2849,6 +2862,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "width": "100%",
                   }
                 }
+                title="Buffer 5"
               >
                 <div
                   style={
@@ -2983,6 +2997,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "width": "100%",
                   }
                 }
+                title="Buffer 6"
               >
                 <div
                   style={
@@ -3117,6 +3132,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "width": "100%",
                   }
                 }
+                title="Buffer 7"
               >
                 <div
                   style={
@@ -3251,6 +3267,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "width": "100%",
                   }
                 }
+                title="Buffer 8"
               >
                 <div
                   style={
@@ -3385,6 +3402,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "width": "100%",
                   }
                 }
+                title="Buffer 9"
               >
                 <div
                   style={
@@ -3519,6 +3537,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "width": "100%",
                   }
                 }
+                title="Buffer 10"
               >
                 <div
                   style={
@@ -3653,6 +3672,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "width": "100%",
                   }
                 }
+                title="Buffer 11"
               >
                 <div
                   style={
@@ -3787,6 +3807,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "width": "100%",
                   }
                 }
+                title="Buffer 12"
               >
                 <div
                   style={
@@ -3921,6 +3942,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "width": "100%",
                   }
                 }
+                title="Buffer 13"
               >
                 <div
                   style={
@@ -4055,6 +4077,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "width": "100%",
                   }
                 }
+                title="Buffer 14"
               >
                 <div
                   style={
@@ -4169,7 +4192,7 @@ exports[`Snapshots ProfileSelectorDropdown should show no match message 1`] = `
           "display": "inline-block",
           "height": "34px",
           "position": "relative",
-          "width": "284px",
+          "width": "360px",
           "zIndex": 1,
         }
       }
