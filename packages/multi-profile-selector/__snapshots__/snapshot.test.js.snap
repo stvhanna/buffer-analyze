@@ -450,16 +450,27 @@ exports[`Snapshots MultiProfileSelector Profiles should be disabled when 3 profi
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
                 <div
                   style={
@@ -617,16 +628,27 @@ exports[`Snapshots MultiProfileSelector Profiles should be disabled when 3 profi
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Joel Gascoigne
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Joel Gascoigne
+                  </span>
                 </span>
                 <div
                   style={
@@ -784,16 +806,27 @@ exports[`Snapshots MultiProfileSelector Profiles should be disabled when 3 profi
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  tigran
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    tigran
+                  </span>
                 </span>
               </span>
             </button>
@@ -919,16 +952,27 @@ exports[`Snapshots MultiProfileSelector Profiles should be disabled when 3 profi
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
                 <div
                   style={
@@ -1101,16 +1145,27 @@ exports[`Snapshots MultiProfileSelector Profiles should be disabled when 3 profi
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
               </span>
             </button>
@@ -1251,16 +1306,27 @@ exports[`Snapshots MultiProfileSelector Profiles should be disabled when 3 profi
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  tiggreen
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    tiggreen
+                  </span>
                 </span>
               </span>
             </button>
@@ -1610,16 +1676,27 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
                 <div
                   style={
@@ -1777,16 +1854,27 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Joel Gascoigne
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Joel Gascoigne
+                  </span>
                 </span>
               </span>
             </button>
@@ -1912,16 +2000,27 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  tigran
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    tigran
+                  </span>
                 </span>
               </span>
             </button>
@@ -2047,16 +2146,27 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
               </span>
             </button>
@@ -2197,16 +2307,27 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
               </span>
             </button>
@@ -2347,16 +2468,27 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  tiggreen
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    tiggreen
+                  </span>
                 </span>
               </span>
             </button>
@@ -2652,16 +2784,27 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
               </span>
             </button>
@@ -2787,16 +2930,27 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Joel Gascoigne
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Joel Gascoigne
+                  </span>
                 </span>
               </span>
             </button>
@@ -2922,16 +3076,27 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  tigran
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    tigran
+                  </span>
                 </span>
               </span>
             </button>
@@ -3057,16 +3222,27 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
               </span>
             </button>
@@ -3207,16 +3383,27 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
               </span>
             </button>
@@ -3357,16 +3544,27 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  tiggreen
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    tiggreen
+                  </span>
                 </span>
               </span>
             </button>
@@ -3792,16 +3990,27 @@ exports[`Snapshots MultiProfileSelector compare profile button should be enabled
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
                 <div
                   style={
@@ -3959,16 +4168,27 @@ exports[`Snapshots MultiProfileSelector compare profile button should be enabled
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Joel Gascoigne
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Joel Gascoigne
+                  </span>
                 </span>
                 <div
                   style={
@@ -4126,16 +4346,27 @@ exports[`Snapshots MultiProfileSelector compare profile button should be enabled
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  tigran
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    tigran
+                  </span>
                 </span>
               </span>
             </button>
@@ -4261,16 +4492,27 @@ exports[`Snapshots MultiProfileSelector compare profile button should be enabled
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
               </span>
             </button>
@@ -4411,16 +4653,27 @@ exports[`Snapshots MultiProfileSelector compare profile button should be enabled
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
               </span>
             </button>
@@ -4561,16 +4814,27 @@ exports[`Snapshots MultiProfileSelector compare profile button should be enabled
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  tiggreen
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    tiggreen
+                  </span>
                 </span>
               </span>
             </button>
@@ -4865,16 +5129,27 @@ exports[`Snapshots MultiProfileSelector should filter by profilesFilterString 1`
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Joel Gascoigne
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Joel Gascoigne
+                  </span>
                 </span>
               </span>
             </button>
@@ -5312,16 +5587,27 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
                 <div
                   style={
@@ -5479,16 +5765,27 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Joel Gascoigne
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Joel Gascoigne
+                  </span>
                 </span>
               </span>
             </button>
@@ -5614,16 +5911,27 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  tigran
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    tigran
+                  </span>
                 </span>
                 <div
                   style={
@@ -5781,16 +6089,27 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
               </span>
             </button>
@@ -5931,16 +6250,27 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
               </span>
             </button>
@@ -6081,16 +6411,27 @@ exports[`Snapshots MultiProfileSelector should open the profile selector 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  tiggreen
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    tiggreen
+                  </span>
                 </span>
               </span>
             </button>
@@ -6385,16 +6726,27 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
               </span>
             </button>
@@ -6520,16 +6872,27 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Joel Gascoigne
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Joel Gascoigne
+                  </span>
                 </span>
               </span>
             </button>
@@ -6655,16 +7018,27 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  tigran
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    tigran
+                  </span>
                 </span>
               </span>
             </button>
@@ -6790,16 +7164,27 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
               </span>
             </button>
@@ -6940,16 +7325,27 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
               </span>
             </button>
@@ -7090,16 +7486,27 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  tiggreen
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    tiggreen
+                  </span>
                 </span>
               </span>
             </button>
@@ -7765,16 +8172,27 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
                 <div
                   style={
@@ -7932,16 +8350,27 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Joel Gascoigne
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Joel Gascoigne
+                  </span>
                 </span>
                 <div
                   style={
@@ -8099,16 +8528,27 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  tigran
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    tigran
+                  </span>
                 </span>
                 <div
                   style={
@@ -8266,16 +8706,27 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
                 <div
                   style={
@@ -8448,16 +8899,27 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
                 <div
                   style={
@@ -8630,16 +9092,27 @@ exports[`Snapshots MultiProfileSelector should render the selected profiles in t
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  tiggreen
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    tiggreen
+                  </span>
                 </span>
                 <div
                   style={
@@ -8967,16 +9440,27 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
               </span>
             </button>
@@ -9102,16 +9586,27 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Joel Gascoigne
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Joel Gascoigne
+                  </span>
                 </span>
               </span>
             </button>
@@ -9237,16 +9732,27 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  tigran
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    tigran
+                  </span>
                 </span>
               </span>
             </button>
@@ -9372,16 +9878,27 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
               </span>
             </button>
@@ -9522,16 +10039,27 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
               </span>
             </button>
@@ -9672,16 +10200,27 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  tiggreen
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    tiggreen
+                  </span>
                 </span>
               </span>
             </button>
@@ -9807,16 +10346,27 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer 7
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer 7
+                  </span>
                 </span>
               </span>
             </button>
@@ -9942,16 +10492,27 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer 8
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer 8
+                  </span>
                 </span>
               </span>
             </button>
@@ -10077,16 +10638,27 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer 9
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer 9
+                  </span>
                 </span>
               </span>
             </button>
@@ -10212,16 +10784,27 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer 10
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer 10
+                  </span>
                 </span>
               </span>
             </button>
@@ -10347,16 +10930,27 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer 11
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer 11
+                  </span>
                 </span>
               </span>
             </button>
@@ -10482,16 +11076,27 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer 12
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer 12
+                  </span>
                 </span>
               </span>
             </button>
@@ -10617,16 +11222,27 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer 13
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer 13
+                  </span>
                 </span>
               </span>
             </button>
@@ -10752,16 +11368,27 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer 14
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer 14
+                  </span>
                 </span>
               </span>
             </button>
@@ -10887,16 +11514,27 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer 15
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer 15
+                  </span>
                 </span>
               </span>
             </button>

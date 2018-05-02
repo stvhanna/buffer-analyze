@@ -343,16 +343,27 @@ exports[`Snapshots ProfileSelectorDropdown should filter by profilesFilterString
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Joel Gascoigne
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Joel Gascoigne
+                  </span>
                 </span>
               </span>
             </button>
@@ -719,16 +730,27 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
                 <div
                   style={
@@ -886,16 +908,27 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Joel Gascoigne
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Joel Gascoigne
+                  </span>
                 </span>
               </span>
             </button>
@@ -1021,16 +1054,27 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
               </span>
             </button>
@@ -1171,16 +1215,27 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
               </span>
             </button>
@@ -1535,16 +1590,27 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
                 <div
                   style={
@@ -1702,16 +1768,27 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Joel Gascoigne
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Joel Gascoigne
+                  </span>
                 </span>
               </span>
             </button>
@@ -1837,16 +1914,27 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
               </span>
             </button>
@@ -1987,16 +2075,27 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
               </span>
             </button>
@@ -2353,16 +2452,27 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
                 <div
                   style={
@@ -2520,16 +2630,27 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Joel Gascoigne
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Joel Gascoigne
+                  </span>
                 </span>
               </span>
             </button>
@@ -2655,16 +2776,27 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
               </span>
             </button>
@@ -2805,16 +2937,27 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer
+                  </span>
                 </span>
               </span>
             </button>
@@ -2940,16 +3083,27 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer 5
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer 5
+                  </span>
                 </span>
               </span>
             </button>
@@ -3075,16 +3229,27 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer 6
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer 6
+                  </span>
                 </span>
               </span>
             </button>
@@ -3210,16 +3375,27 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer 7
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer 7
+                  </span>
                 </span>
               </span>
             </button>
@@ -3345,16 +3521,27 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer 8
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer 8
+                  </span>
                 </span>
               </span>
             </button>
@@ -3480,16 +3667,27 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer 9
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer 9
+                  </span>
                 </span>
               </span>
             </button>
@@ -3615,16 +3813,27 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer 10
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer 10
+                  </span>
                 </span>
               </span>
             </button>
@@ -3750,16 +3959,27 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer 11
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer 11
+                  </span>
                 </span>
               </span>
             </button>
@@ -3885,16 +4105,27 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer 12
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer 12
+                  </span>
                 </span>
               </span>
             </button>
@@ -4020,16 +4251,27 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer 13
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer 13
+                  </span>
                 </span>
               </span>
             </button>
@@ -4155,16 +4397,27 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                   </div>
                 </div>
                 <span
+                  size="small"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
+                      "overflow": "hidden",
+                      "textOverflow": "ellipsis",
+                      "whiteSpace": "nowrap",
                     }
                   }
                 >
-                  Buffer 14
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Buffer 14
+                  </span>
                 </span>
               </span>
             </button>

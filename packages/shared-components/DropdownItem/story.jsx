@@ -42,5 +42,17 @@ storiesOf('Dropdown Item')
           profile={profile}
           handleClick={() => {}}
         />
+      </div>)
+  })
+  .add('should truncate long names', () => {
+    const profile = Object.assign({}, mockProfiles[0], {
+      username: 'a very long and meaningful name',
+    });
+    return (
+      <div style={{ width: '160px', display: 'flex' }}>
+        <DropdownItem
+          profile={profile}
+          handleClick={() => {}}
+        />
       </div>);
   });
