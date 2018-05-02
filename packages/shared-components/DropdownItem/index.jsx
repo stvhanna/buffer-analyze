@@ -17,6 +17,7 @@ const DropdownItem = ({ profile, handleClick, selected, disabled }) => (
   <li className={disabled ? dropdownListDisabledItem : dropdownListItem}>
     <Button noStyle fillContainer onClick={handleClick} >
       <span
+        title={profile.username}
         style={{
           alignItems: 'center',
           boxSizing: 'border-box',
@@ -32,7 +33,15 @@ const DropdownItem = ({ profile, handleClick, selected, disabled }) => (
           avatarSize={24}
           socialIconSize={11}
         />
-        <Text size="small">{profile.username}</Text>
+        <span
+          style={{
+            whiteSpace: 'nowrap',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+          }} size="small"
+        >
+          <Text size="small">{profile.username}</Text>
+        </span>
         { selected && <div style={{ marginLeft: 'auto' }}>
           <CheckmarkIcon color={'curiousBlue'} />
         </div>}
