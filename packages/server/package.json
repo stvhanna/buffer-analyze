@@ -19,7 +19,7 @@
   },
   "author": "mike@msanroman.io",
   "dependencies": {
-    "@bufferapp/buffermetrics": "^0.5.0",
+    "@bufferapp/buffermetrics": "^0.5.2",
     "@bufferapp/connect-datadog": "^0.2.1",
     "@bufferapp/logger": "0.7.0",
     "@bufferapp/micro-rpc": "0.1.7",

@@ -61,9 +61,9 @@
     grpc "^1.8.0"
     protobufjs "~6.8.0"
 
-"@bufferapp/buffermetrics@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@bufferapp/buffermetrics/-/buffermetrics-0.5.0.tgz#fc5c9daf7f6a14af405db8a70c44bf7a29396a75"
+"@bufferapp/buffermetrics@^0.5.2":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@bufferapp/buffermetrics/-/buffermetrics-0.5.2.tgz#0c710933aed2ddce61ab7d2709eed5da582c459a"
   dependencies:
     "@bufferapp/buda" "0.5.2-beta1"
     grpc "~1.8.0"
