@@ -56,6 +56,40 @@ describe('rpc/contextual', () => {
       }]);
   });
 
+  it('should request Questions Data to Analyze Api for Twitter', () => {
+    rp.mockClear();
+    const end = moment().subtract(1, 'days').format('MM/DD/YYYY');
+    const start = moment().subtract(7, 'days').format('MM/DD/YYYY');
+
+    contextual.fn({
+      startDate: start,
+      endDate: end,
+      profileId,
+      profileService: 'twitter',
+    }, {
+      session: {
+        analyze: {
+          accessToken: token,
+        },
+      },
+    });
+
+    expect(rp.mock.calls[0])
+      .toEqual([{
+        uri: `${process.env.ANALYZE_API_ADDR}/metrics/questions`,
+        method: 'POST',
+        strictSSL: false,
+        qs: {
+          access_token: token,
+          start_date: start,
+          end_date: end,
+          profile_id: profileId,
+        },
+        json: true,
+      }]);
+  });
+
+
   it('should request contextual data for the previous week', () => {
     rp.mockClear();
     const end = moment().subtract(1, 'days').format('MM/DD/YYYY');
