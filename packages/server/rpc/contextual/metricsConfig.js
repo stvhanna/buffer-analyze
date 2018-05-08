@@ -188,6 +188,7 @@ module.exports = {
   twitter: {
     config: twitterConfig,
     orderedKeys: [
+      'followers',
       'posts_count',
       'impressions',
       'engagements',
@@ -196,7 +197,6 @@ module.exports = {
       'url_click',
       'replies',
       'new_followers',
-      'followers',
       'engagement_rate',
     ],
   },
