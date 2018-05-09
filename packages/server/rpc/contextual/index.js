@@ -5,7 +5,7 @@ const METRICS_CONFIG = require('./metricsConfig');
 const PRESETS = require('./presets');
 
 function shouldUseAnalyzeApi (profileService) {
-  return profileService === 'instagram';
+  return profileService !== 'facebook';
 }
 
 const requestContextual = (profileId, profileService, dateRange, accessToken) =>

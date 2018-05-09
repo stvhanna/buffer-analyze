@@ -47,6 +47,8 @@ const configureStore = (initialstate) => {
 
   const buffermetricsMiddleware = createMiddleware({
     application: 'ANALYZE',
+    batchSize: 10,
+    throttle: 1000,
     metadata: state => ({
       userId: state.appSidebar.user.id,
       profileId: state.profiles.selectedProfileId,
