@@ -859,6 +859,48 @@ exports[`Snapshots App should render application 1`] = `
                 </span>
               </span>
             </a>
+            <a
+              href="/answers/"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              style={
+                Object {
+                  "color": "#168eea",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "outline": "none",
+                  "padding": "0",
+                  "textDecoration": "none",
+                }
+              }
+              target="_self"
+            >
+              <span
+                style={
+                  Object {
+                    "borderRadius": "4px",
+                    "display": "block",
+                    "margin": "0 0.5rem",
+                    "padding": "0.75rem 0.5rem",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Answers
+                </span>
+              </span>
+            </a>
             <hr
               style={
                 Object {
@@ -1368,6 +1410,48 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
             </span>
           </span>
         </a>
+        <a
+          href="/answers/"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            style={
+              Object {
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0 0.5rem",
+                "padding": "0.75rem 0.5rem",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Answers
+            </span>
+          </span>
+        </a>
         <hr
           style={
             Object {
@@ -1807,6 +1891,48 @@ exports[`Snapshots DefaultPage should render the dashboard page 1`] = `
               }
             >
               Posts
+            </span>
+          </span>
+        </a>
+        <a
+          href="/answers/"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            style={
+              Object {
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0 0.5rem",
+                "padding": "0.75rem 0.5rem",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Answers
             </span>
           </span>
         </a>
@@ -2317,6 +2443,48 @@ exports[`Snapshots InsightsPage should render Insights page 1`] = `
             </span>
           </span>
         </a>
+        <a
+          href="/answers/"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            style={
+              Object {
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0 0.5rem",
+                "padding": "0.75rem 0.5rem",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Answers
+            </span>
+          </span>
+        </a>
         <hr
           style={
             Object {
@@ -2748,6 +2916,48 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
               }
             >
               Posts
+            </span>
+          </span>
+        </a>
+        <a
+          href="/answers/"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            style={
+              Object {
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0 0.5rem",
+                "padding": "0.75rem 0.5rem",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Answers
             </span>
           </span>
         </a>
