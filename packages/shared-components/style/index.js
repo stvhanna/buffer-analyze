@@ -1,7 +1,7 @@
 
 export const color = {
   Clicks: '#98E8B2',
-  url_click: '#98E8B2',
+  url_clicks: '#98E8B2',
   Engagements: '#3A92D3',
   engagements: '#3A92D3',
   Impressions: '#FEC78B',
