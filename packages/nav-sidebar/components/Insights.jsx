@@ -12,7 +12,7 @@ const Insights = ({ ...props }) =>
     <Label>Insights</Label>
     <Item href="/overview" {...props}>Overview</Item>
     <Item href="/posts" {...props}>Posts</Item>
-    <Item href="/answers/" {...props}>Answers</Item>
+    <Item href="/answers" {...props}>Answers</Item>
     <Divider marginTop="0.75rem" marginBottom="1rem" />
   </div>;
 

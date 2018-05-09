@@ -307,7 +307,7 @@ exports[`Snapshots NavSidebar if there are no profiles it should not show the In
           </span>
         </a>
         <a
-          href="/answers/"
+          href="/answers"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
@@ -705,7 +705,7 @@ exports[`Snapshots NavSidebar should show nav sidebar with Dashboard as active l
           </span>
         </a>
         <a
-          href="/answers/"
+          href="/answers"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
@@ -1102,7 +1102,7 @@ exports[`Snapshots NavSidebar should show only services for which the user has p
           </span>
         </a>
         <a
-          href="/answers/"
+          href="/answers"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}

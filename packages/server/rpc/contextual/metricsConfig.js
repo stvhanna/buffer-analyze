@@ -123,9 +123,9 @@ const twitterConfig = {
     key: 'favorites',
   },
 
-  url_click: {
+  url_clicks: {
     label: 'Clicks',
-    key: 'url_click',
+    key: 'url_clicks',
   },
 
   replies: {
@@ -194,7 +194,7 @@ module.exports = {
       'engagements',
       'retweets',
       'favorites',
-      'url_click',
+      'url_clicks',
       'replies',
       'new_followers',
       'engagement_rate',

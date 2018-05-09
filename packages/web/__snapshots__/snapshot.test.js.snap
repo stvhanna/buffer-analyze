@@ -860,7 +860,7 @@ exports[`Snapshots App should render application 1`] = `
               </span>
             </a>
             <a
-              href="/answers/"
+              href="/answers"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -1411,7 +1411,7 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
           </span>
         </a>
         <a
-          href="/answers/"
+          href="/answers"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
@@ -1895,7 +1895,7 @@ exports[`Snapshots DefaultPage should render the dashboard page 1`] = `
           </span>
         </a>
         <a
-          href="/answers/"
+          href="/answers"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
@@ -2444,7 +2444,7 @@ exports[`Snapshots InsightsPage should render Insights page 1`] = `
           </span>
         </a>
         <a
-          href="/answers/"
+          href="/answers"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
@@ -2920,7 +2920,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
           </span>
         </a>
         <a
-          href="/answers/"
+          href="/answers"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
