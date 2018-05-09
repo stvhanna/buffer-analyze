@@ -13,6 +13,7 @@ import Label from './Label';
 import Item from './Item';
 import Insights from './Insights';
 import FeedbackLink from './FeedbackLink';
+import HeadwayWidget from './HeadwayWidget';
 
 const sidebarStyle = {
   display: 'flex',
@@ -41,6 +42,7 @@ const NavSidebar = props => (
       <Item href="/reports/" {...props}>Reports</Item>
     </div>
     <div style={bottomSectionStyle}>
+      <HeadwayWidget />
       <FeedbackLink email="hello+analyze@buffer.com">Send Feedback</FeedbackLink>
     </div>
   </div>

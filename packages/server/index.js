@@ -71,10 +71,13 @@ if (isProduction) {
   };
 }
 
+const headwayScript = '<script src="//cdn.headwayapp.co/widget.js"></script>';
+
 const html = fs.readFileSync(join(__dirname, 'index.html'), 'utf8')
   .replace('{{{bundle}}}', staticAssets['bundle.js'])
   .replace('{{{bugsnagScript}}}', bugsnagScript)
-  .replace('{{{fullStoryScript}}}', fullStoryScript);
+  .replace('{{{fullStoryScript}}}', fullStoryScript)
+  .replace('{{{headwayScript}}}', headwayScript);
 
 app.use(logMiddleware({ name: 'BufferAnalyze' }));
 app.use(cookieParser());
