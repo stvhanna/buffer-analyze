@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/average-table",
-  "version": "0.57.0",
+  "version": "0.57.1",
   "description": "average table for insights",
   "main": "index.js",
   "scripts": {
@@ -21,16 +21,16 @@
     }
   },
   "dependencies": {
-    "@bufferapp/add-report": "^0.56.0",
+    "@bufferapp/add-report": "^0.57.1",
     "@bufferapp/analyze-csv-export": "^0.50.1",
-    "@bufferapp/analyze-date-picker": "^0.56.0",
+    "@bufferapp/analyze-date-picker": "^0.57.1",
     "@bufferapp/analyze-decorators": "^0.15.2",
     "@bufferapp/analyze-png-export": "^0.50.1",
-    "@bufferapp/analyze-profile-selector": "^0.56.0",
-    "@bufferapp/analyze-shared-components": "^0.56.0",
+    "@bufferapp/analyze-profile-selector": "^0.57.1",
+    "@bufferapp/analyze-shared-components": "^0.57.1",
     "@bufferapp/async-data-fetch": "0.5.36-beta01",
     "@bufferapp/components": "^2.1.1",
-    "@bufferapp/summary-table": "^0.57.0"
+    "@bufferapp/summary-table": "^0.57.1"
   },
   "devDependencies": {
     "@storybook/addon-storyshots": "3.1.4",
