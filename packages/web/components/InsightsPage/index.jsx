@@ -87,7 +87,7 @@ const InsightsPage = ({
               <DatePicker />
             </div>
             <div style={toolbarExport}>
-              <ExportPicker filename={`buffer-${tabId === 'overview' ? 'overview' : 'posts'}-analytics`} />
+              <ExportPicker filename={`buffer-${tabId}-analytics`} />
             </div>
           </div>
         </Toolbar>
