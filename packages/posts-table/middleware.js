@@ -85,7 +85,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
           startDate: getState().date.startDate,
           endDate: getState().date.endDate,
           sortBy: action.metric.apiKey,
-          descending: action.descending,
+          descending: getState().posts.isDescendingSelected,
           limit: getState().posts.activePostsCount,
         },
       }));

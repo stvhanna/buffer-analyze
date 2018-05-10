@@ -57,12 +57,10 @@ describe('reducer', () => {
     const newState = reducer(initialState, {
       type: `${postsActionTypes.SELECT_TOP_POSTS_METRIC}`,
       metric: 'reactions',
-      descending: false,
     });
     expect(newState).toEqual({
       isDropdownOpen: false,
       selectedMetric: 'reactions',
-      isDescendingSelected: false,
     });
   });
   it('updates the state when a new posts count is selected', () => {
@@ -81,7 +79,6 @@ describe('reducer', () => {
     expect(newAction).toEqual({
       type: `${postsActionTypes.SELECT_TOP_POSTS_METRIC}`,
       metric: 'reactions',
-      descending: false,
     });
   });
   it('returns the right action upon toggleDropdown', () => {

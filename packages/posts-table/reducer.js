@@ -39,7 +39,6 @@ export default (state = initialState, action) => {
         ...state,
         isDropdownOpen: false,
         selectedMetric: action.metric,
-        isDescendingSelected: action.descending,
       };
     case actionTypes.SELECT_TOP_POSTS_COUNT:
       return {
@@ -61,11 +60,10 @@ export default (state = initialState, action) => {
 };
 
 export const actions = {
-  selectMetric(metric, descending) {
+  selectMetric(metric) {
     return {
       type: actionTypes.SELECT_TOP_POSTS_METRIC,
       metric,
-      descending,
     };
   },
   toggleDropdown() {
