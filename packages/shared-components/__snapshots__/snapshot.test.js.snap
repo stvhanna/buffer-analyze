@@ -2213,7 +2213,7 @@ exports[`Snapshots GridItem should not render the chart if we have only one day 
               Object {
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1.75rem",
+                "fontSize": "2rem",
                 "fontWeight": 700,
               }
             }
@@ -2352,7 +2352,7 @@ exports[`Snapshots GridItem should render a grid item with a 7 day chart if 7 da
               Object {
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1.75rem",
+                "fontSize": "2rem",
                 "fontWeight": 700,
               }
             }
@@ -2491,7 +2491,7 @@ exports[`Snapshots GridItem should render a grid item with a 30 day chart if 30 
               Object {
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1.75rem",
+                "fontSize": "2rem",
                 "fontWeight": 700,
               }
             }
@@ -2631,7 +2631,7 @@ exports[`Snapshots GridItem should render a grid item with a 90 day chart if 90 
               Object {
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1.75rem",
+                "fontSize": "2rem",
                 "fontWeight": 700,
               }
             }
@@ -2769,7 +2769,7 @@ exports[`Snapshots GridItem should render a grid item with a custom Label 1`] = 
               Object {
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1.75rem",
+                "fontSize": "2rem",
                 "fontWeight": 700,
               }
             }
@@ -2926,7 +2926,7 @@ exports[`Snapshots GridItem should render a summary grid item with a neutral dif
               Object {
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1.75rem",
+                "fontSize": "2rem",
                 "fontWeight": 700,
               }
             }
@@ -3063,7 +3063,7 @@ exports[`Snapshots GridItem should render a summary grid item with negative diff
               Object {
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1.75rem",
+                "fontSize": "2rem",
                 "fontWeight": 700,
               }
             }
@@ -3200,7 +3200,7 @@ exports[`Snapshots GridItem should render a summary grid item with no diff 1`] =
               Object {
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1.75rem",
+                "fontSize": "2rem",
                 "fontWeight": 700,
               }
             }
@@ -3273,7 +3273,7 @@ exports[`Snapshots GridItem should render a summary grid item with positive diff
               Object {
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1.75rem",
+                "fontSize": "2rem",
                 "fontWeight": 700,
               }
             }
