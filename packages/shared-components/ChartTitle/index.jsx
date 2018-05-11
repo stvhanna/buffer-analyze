@@ -8,15 +8,14 @@ const Header = styled.h2`
   padding: 0;
 `;
 
-
 const renderForApp = children => (
-  <Text weight="medium" size="large">
+  <Text color="#1A2633" weight="medium" size="large">
     {children}
   </Text>
 );
 
 const renderForReport = children => (
-  <Text color="black" weight="bold" size="large">
+  <Text color="black" weight="medium" size="large">
     {children}
   </Text>
 );
