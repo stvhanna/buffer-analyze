@@ -25,7 +25,6 @@ import DropdownItem from './components/DropdownItem';
 const TopPostsDropdown = ({
   metrics,
   selectedMetric,
-  isDescendingSelected,
   isDropdownOpen,
   selectMetric,
   toggleDropdown,
@@ -41,7 +40,7 @@ const TopPostsDropdown = ({
   if (metrics.length) {
     const dropdownListClasses = classNames(dropdownList);
     return (
-      <div>
+      <div style={{ marginLeft: 'auto', marginRight: '1em' }}>
         <Text size="small">Sort by</Text>
         <Dropdown
           className={dropdownContainer}
@@ -51,7 +50,6 @@ const TopPostsDropdown = ({
           <DropdownTrigger className={triggerClasses} style={{ display: 'flex' }} >
             <Text size="small">{selectedMetric.label}</Text>
             <span>&nbsp;</span>
-            <Text size="small" color="shuttleGray">{isDescendingSelected === true ? 'DESC' : 'ASC'}</Text>
             <span style={{ marginLeft: 'auto' }} >
               { isDropdownOpen && <ArrowUpIcon /> }
               { !isDropdownOpen && <ArrowDownIcon /> }
@@ -64,18 +62,10 @@ const TopPostsDropdown = ({
                   (
                     <span key={metric.key}>
                       <DropdownItem
-                        key={`${metric.key}_asc`}
-                        metric={metric}
-                        handleClick={() => selectMetric({ metric, descending: false })}
-                        selected={metric.key === selectedMetric.key && !isDescendingSelected}
-                        sortDirectionLabel={'ASC'}
-                      />
-                      <DropdownItem
                         key={`${metric.key}_desc`}
                         metric={metric}
-                        handleClick={() => selectMetric({ metric, descending: true })}
-                        selected={metric.key === selectedMetric.key && isDescendingSelected}
-                        sortDirectionLabel={'DESC'}
+                        handleClick={() => selectMetric({ metric })}
+                        selected={metric.key === selectedMetric.key}
                       />
                     </span>
                   ))
@@ -99,7 +89,6 @@ TopPostsDropdown.propTypes = {
     label: PropTypes.string.isRequired,
   }).isRequired,
   isDropdownOpen: PropTypes.bool,
-  isDescendingSelected: PropTypes.bool.isRequired,
   // actions
   selectMetric: PropTypes.func.isRequired,
   toggleDropdown: PropTypes.func.isRequired,

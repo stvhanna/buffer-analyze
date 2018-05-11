@@ -181,6 +181,26 @@ describe('middleware', () => {
     expect(next).toHaveBeenCalledWith(action);
   });
 
+  it('shoud dispatch a data fetch for posts once a new sort order is selected', () => {
+    const action = {
+      type: postsActionTypes.SELECT_TOP_POSTS_ORDER,
+      isDescendingSelected: false,
+    };
+    middleware(store)(next)(action);
+    expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
+      name: 'posts',
+      args: {
+        profileId: '12359182129asd',
+        startDate: state.date.startDate,
+        endDate: state.date.endDate,
+        sortBy: state.posts.selectedMetric.apiKey,
+        descending: false,
+        limit: state.posts.activePostsCount,
+      },
+    }));
+    expect(next).toHaveBeenCalledWith(action);
+  });
+
   it('should listen to EXPORT_TO_PNG_START and trigger a exportChart action', () => {
     const action = {
       type: exportActionTypes.EXPORT_TO_PNG_START,

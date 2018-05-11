@@ -116,6 +116,19 @@ describe('Top Post Table', () => {
     expect(validStore.dispatch).toHaveBeenCalledWith(actions.handlePostsCountClick(10));
   });
 
+  it('postsTable should call the handlePostsSortClick action with the correct values', () => {
+    const component = shallow(<TopPosts
+      isDescendingSelected
+      selectedMetric={selectedMetric}
+      store={validStore}
+    />);
+
+    component.props().handlePostsSortClick({
+      isDescendingSelected: false,
+    });
+    expect(validStore.dispatch).toHaveBeenCalledWith(actions.handlePostsSortClick(false));
+  });
+
   it('postsTable should call the toggleDropdown action', () => {
     const component = shallow(<TopPosts
       isDescendingSelected

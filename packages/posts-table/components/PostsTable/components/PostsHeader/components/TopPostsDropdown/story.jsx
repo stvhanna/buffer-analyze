@@ -16,7 +16,6 @@ storiesOf('TopPostsDropdown')
         selectedMetric={mockMetrics[0]}
         selectMetric={action('selectMetric')}
         toggleDropdown={action('toggleDropdown')}
-        isDescendingSelected
       />
     </div>
   ))
@@ -26,7 +25,6 @@ storiesOf('TopPostsDropdown')
         metrics={mockMetrics}
         selectedMetric={mockMetrics[0]}
         isDropdownOpen
-        isDescendingSelected={false}
         selectMetric={action('selectMetric')}
         toggleDropdown={action('toggleDropdown')}
       />
@@ -39,7 +37,6 @@ storiesOf('TopPostsDropdown')
         selectedMetric={mockMetrics[0]}
         selectMetric={action('selectMetric')}
         toggleDropdown={action('toggleDropdown')}
-        isDescendingSelected
       />
     </div>
   ));
