@@ -7,6 +7,7 @@ export const actionTypes = keyWrapper('POSTS_TABLE', {
   SELECT_TOP_POSTS_METRIC: 'SELECT_TOP_POSTS_METRIC',
   TOGGLE_TOP_POSTS_DROPDOWN: 'TOGGLE_TOP_POSTS_DROPDOWN',
   SELECT_TOP_POSTS_COUNT: 'SELECT_TOP_POSTS_COUNT',
+  SELECT_TOP_POSTS_ORDER: 'SELECT_TOP_POSTS_ORDER',
 });
 
 const initialState = {
@@ -54,6 +55,11 @@ export default (state = initialState, action) => {
       return {
         ...initialState,
       };
+    case actionTypes.SELECT_TOP_POSTS_ORDER:
+      return {
+        ...state,
+        isDescendingSelected: action.isDescendingSelected,
+      };
     default:
       return state;
   }
@@ -75,6 +81,12 @@ export const actions = {
     return {
       type: actionTypes.SELECT_TOP_POSTS_COUNT,
       postsCount,
+    };
+  },
+  handlePostsSortClick(isDescendingSelected) {
+    return {
+      type: actionTypes.SELECT_TOP_POSTS_ORDER,
+      isDescendingSelected,
     };
   },
 };

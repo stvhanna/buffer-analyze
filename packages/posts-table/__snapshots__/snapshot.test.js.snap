@@ -740,6 +740,210 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
 </span>
 `;
 
+exports[`Snapshots PostOrderSwitch should render with ascending selected 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "width": "260px",
+      }
+    }
+  >
+    <div>
+      <span
+        style={
+          Object {
+            "position": "relative",
+            "top": "-2px",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Order
+        </span>
+      </span>
+      <ul
+        className="container"
+      >
+        <li
+          className="buttonItem"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <svg
+            height="100%"
+            style={
+              Object {
+                "fill": "#ced7df",
+                "height": "1rem",
+                "width": "1rem",
+              }
+            }
+            version="1.1"
+            viewBox="0 0 16 16"
+            width="100%"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          >
+            <g
+              className="geyser"
+            >
+              <path
+                d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
+              />
+            </g>
+          </svg>
+        </li>
+        <li
+          className="buttonItem buttonActive"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <svg
+            height="100%"
+            style={
+              Object {
+                "fill": "#59626a",
+                "height": "1rem",
+                "width": "1rem",
+              }
+            }
+            version="1.1"
+            viewBox="0 0 16 16"
+            width="100%"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          >
+            <g
+              className="shuttleGray"
+            >
+              <path
+                d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+              />
+            </g>
+          </svg>
+        </li>
+      </ul>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots PostOrderSwitch should render with descending selected 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "width": "260px",
+      }
+    }
+  >
+    <div>
+      <span
+        style={
+          Object {
+            "position": "relative",
+            "top": "-2px",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Order
+        </span>
+      </span>
+      <ul
+        className="container"
+      >
+        <li
+          className="buttonItem buttonActive"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <svg
+            height="100%"
+            style={
+              Object {
+                "fill": "#59626a",
+                "height": "1rem",
+                "width": "1rem",
+              }
+            }
+            version="1.1"
+            viewBox="0 0 16 16"
+            width="100%"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          >
+            <g
+              className="shuttleGray"
+            >
+              <path
+                d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
+              />
+            </g>
+          </svg>
+        </li>
+        <li
+          className="buttonItem"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <svg
+            height="100%"
+            style={
+              Object {
+                "fill": "#ced7df",
+                "height": "1rem",
+                "width": "1rem",
+              }
+            }
+            version="1.1"
+            viewBox="0 0 16 16"
+            width="100%"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          >
+            <g
+              className="geyser"
+            >
+              <path
+                d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+              />
+            </g>
+          </svg>
+        </li>
+      </ul>
+    </div>
+  </div>
+</span>
+`;
+
 exports[`Snapshots PostsCountBar should render 1`] = `
 <span>
   <div
@@ -850,7 +1054,14 @@ exports[`Snapshots PostsHeader should render top posts header 1`] = `
           </li>
         </ul>
       </div>
-      <div>
+      <div
+        style={
+          Object {
+            "marginLeft": "auto",
+            "marginRight": "1em",
+          }
+        }
+      >
         <span
           style={
             Object {
@@ -1349,6 +1560,94 @@ exports[`Snapshots PostsHeader should render top posts header 1`] = `
           </div>
         </div>
       </div>
+      <div>
+        <span
+          style={
+            Object {
+              "position": "relative",
+              "top": "-2px",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Order
+          </span>
+        </span>
+        <ul
+          className="container"
+        >
+          <li
+            className="buttonItem buttonActive"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <svg
+              height="100%"
+              style={
+                Object {
+                  "fill": "#59626a",
+                  "height": "1rem",
+                  "width": "1rem",
+                }
+              }
+              version="1.1"
+              viewBox="0 0 16 16"
+              width="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            >
+              <g
+                className="shuttleGray"
+              >
+                <path
+                  d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                  transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
+                />
+              </g>
+            </svg>
+          </li>
+          <li
+            className="buttonItem"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <svg
+              height="100%"
+              style={
+                Object {
+                  "fill": "#ced7df",
+                  "height": "1rem",
+                  "width": "1rem",
+                }
+              }
+              version="1.1"
+              viewBox="0 0 16 16"
+              width="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            >
+              <g
+                className="geyser"
+              >
+                <path
+                  d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                />
+              </g>
+            </svg>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </span>
@@ -1699,7 +1998,14 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                 </li>
               </ul>
             </div>
-            <div>
+            <div
+              style={
+                Object {
+                  "marginLeft": "auto",
+                  "marginRight": "1em",
+                }
+              }
+            >
               <span
                 style={
                   Object {
@@ -2325,6 +2631,94 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                   </ul>
                 </div>
               </div>
+            </div>
+            <div>
+              <span
+                style={
+                  Object {
+                    "position": "relative",
+                    "top": "-2px",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Order
+                </span>
+              </span>
+              <ul
+                className="container"
+              >
+                <li
+                  className="buttonItem buttonActive"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                >
+                  <svg
+                    height="100%"
+                    style={
+                      Object {
+                        "fill": "#59626a",
+                        "height": "1rem",
+                        "width": "1rem",
+                      }
+                    }
+                    version="1.1"
+                    viewBox="0 0 16 16"
+                    width="100%"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g
+                      className="shuttleGray"
+                    >
+                      <path
+                        d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                        transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
+                      />
+                    </g>
+                  </svg>
+                </li>
+                <li
+                  className="buttonItem"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                >
+                  <svg
+                    height="100%"
+                    style={
+                      Object {
+                        "fill": "#ced7df",
+                        "height": "1rem",
+                        "width": "1rem",
+                      }
+                    }
+                    version="1.1"
+                    viewBox="0 0 16 16"
+                    width="100%"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g
+                      className="geyser"
+                    >
+                      <path
+                        d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                      />
+                    </g>
+                  </svg>
+                </li>
+              </ul>
             </div>
           </div>
           <aside
@@ -3710,7 +4104,14 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                 </li>
               </ul>
             </div>
-            <div>
+            <div
+              style={
+                Object {
+                  "marginLeft": "auto",
+                  "marginRight": "1em",
+                }
+              }
+            >
               <span
                 style={
                   Object {
@@ -4176,6 +4577,94 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                   </ul>
                 </div>
               </div>
+            </div>
+            <div>
+              <span
+                style={
+                  Object {
+                    "position": "relative",
+                    "top": "-2px",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Order
+                </span>
+              </span>
+              <ul
+                className="container"
+              >
+                <li
+                  className="buttonItem buttonActive"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                >
+                  <svg
+                    height="100%"
+                    style={
+                      Object {
+                        "fill": "#59626a",
+                        "height": "1rem",
+                        "width": "1rem",
+                      }
+                    }
+                    version="1.1"
+                    viewBox="0 0 16 16"
+                    width="100%"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g
+                      className="shuttleGray"
+                    >
+                      <path
+                        d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                        transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
+                      />
+                    </g>
+                  </svg>
+                </li>
+                <li
+                  className="buttonItem"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                >
+                  <svg
+                    height="100%"
+                    style={
+                      Object {
+                        "fill": "#ced7df",
+                        "height": "1rem",
+                        "width": "1rem",
+                      }
+                    }
+                    version="1.1"
+                    viewBox="0 0 16 16"
+                    width="100%"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g
+                      className="geyser"
+                    >
+                      <path
+                        d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                      />
+                    </g>
+                  </svg>
+                </li>
+              </ul>
             </div>
           </div>
           <aside
@@ -5263,7 +5752,14 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                 </li>
               </ul>
             </div>
-            <div>
+            <div
+              style={
+                Object {
+                  "marginLeft": "auto",
+                  "marginRight": "1em",
+                }
+              }
+            >
               <span
                 style={
                   Object {
@@ -5729,6 +6225,94 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                   </ul>
                 </div>
               </div>
+            </div>
+            <div>
+              <span
+                style={
+                  Object {
+                    "position": "relative",
+                    "top": "-2px",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Order
+                </span>
+              </span>
+              <ul
+                className="container"
+              >
+                <li
+                  className="buttonItem buttonActive"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                >
+                  <svg
+                    height="100%"
+                    style={
+                      Object {
+                        "fill": "#59626a",
+                        "height": "1rem",
+                        "width": "1rem",
+                      }
+                    }
+                    version="1.1"
+                    viewBox="0 0 16 16"
+                    width="100%"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g
+                      className="shuttleGray"
+                    >
+                      <path
+                        d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                        transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
+                      />
+                    </g>
+                  </svg>
+                </li>
+                <li
+                  className="buttonItem"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                >
+                  <svg
+                    height="100%"
+                    style={
+                      Object {
+                        "fill": "#ced7df",
+                        "height": "1rem",
+                        "width": "1rem",
+                      }
+                    }
+                    version="1.1"
+                    viewBox="0 0 16 16"
+                    width="100%"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g
+                      className="geyser"
+                    >
+                      <path
+                        d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                      />
+                    </g>
+                  </svg>
+                </li>
+              </ul>
             </div>
           </div>
           <aside
@@ -6832,7 +7416,14 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                 </li>
               </ul>
             </div>
-            <div>
+            <div
+              style={
+                Object {
+                  "marginLeft": "auto",
+                  "marginRight": "1em",
+                }
+              }
+            >
               <span
                 style={
                   Object {
@@ -7458,6 +8049,94 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                   </ul>
                 </div>
               </div>
+            </div>
+            <div>
+              <span
+                style={
+                  Object {
+                    "position": "relative",
+                    "top": "-2px",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Order
+                </span>
+              </span>
+              <ul
+                className="container"
+              >
+                <li
+                  className="buttonItem buttonActive"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                >
+                  <svg
+                    height="100%"
+                    style={
+                      Object {
+                        "fill": "#59626a",
+                        "height": "1rem",
+                        "width": "1rem",
+                      }
+                    }
+                    version="1.1"
+                    viewBox="0 0 16 16"
+                    width="100%"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g
+                      className="shuttleGray"
+                    >
+                      <path
+                        d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                        transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
+                      />
+                    </g>
+                  </svg>
+                </li>
+                <li
+                  className="buttonItem"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                >
+                  <svg
+                    height="100%"
+                    style={
+                      Object {
+                        "fill": "#ced7df",
+                        "height": "1rem",
+                        "width": "1rem",
+                      }
+                    }
+                    version="1.1"
+                    viewBox="0 0 16 16"
+                    width="100%"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g
+                      className="geyser"
+                    >
+                      <path
+                        d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                      />
+                    </g>
+                  </svg>
+                </li>
+              </ul>
             </div>
           </div>
           <aside
@@ -8848,7 +9527,14 @@ exports[`Snapshots TopPostsDropdown should open the dropdown 1`] = `
       }
     }
   >
-    <div>
+    <div
+      style={
+        Object {
+          "marginLeft": "auto",
+          "marginRight": "1em",
+        }
+      }
+    >
       <span
         style={
           Object {
@@ -9360,7 +10046,14 @@ exports[`Snapshots TopPostsDropdown should render the dropdown 1`] = `
       }
     }
   >
-    <div>
+    <div
+      style={
+        Object {
+          "marginLeft": "auto",
+          "marginRight": "1em",
+        }
+      }
+    >
       <span
         style={
           Object {

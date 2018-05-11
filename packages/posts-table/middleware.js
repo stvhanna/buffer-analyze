@@ -103,6 +103,19 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
         },
       }));
       break;
+    case postsActionTypes.SELECT_TOP_POSTS_ORDER:
+      dispatch(actions.fetch({
+        name: 'posts',
+        args: {
+          profileId: getState().profiles.selectedProfileId,
+          startDate: getState().date.startDate,
+          endDate: getState().date.endDate,
+          sortBy: getState().posts.selectedMetric.apiKey,
+          descending: action.isDescendingSelected,
+          limit: getState().posts.activePostsCount,
+        },
+      }));
+      break;
     case profileActionTypes.SELECT_PROFILE:
       dispatch(actions.fetch({
         name: 'posts',

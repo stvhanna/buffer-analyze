@@ -73,6 +73,16 @@ describe('reducer', () => {
       activePostsCount: 50,
     });
   });
+  it('updates the state when a new sort order is selected', () => {
+    const initialState = {};
+    const newState = reducer(initialState, {
+      type: `${postsActionTypes.SELECT_TOP_POSTS_ORDER}`,
+      isDescendingSelected: false,
+    });
+    expect(newState).toEqual({
+      isDescendingSelected: false,
+    });
+  });
   // testing actions
   it('returns the right action upon selectMetric', () => {
     const newAction = postsActions.selectMetric('reactions', false);
@@ -92,6 +102,13 @@ describe('reducer', () => {
     expect(newAction).toEqual({
       type: `${postsActionTypes.SELECT_TOP_POSTS_COUNT}`,
       postsCount: 50,
+    });
+  });
+  it('returns the right action upon handlePostsSortClick', () => {
+    const newAction = postsActions.handlePostsSortClick(false);
+    expect(newAction).toEqual({
+      type: `${postsActionTypes.SELECT_TOP_POSTS_ORDER}`,
+      isDescendingSelected: false,
     });
   });
 });

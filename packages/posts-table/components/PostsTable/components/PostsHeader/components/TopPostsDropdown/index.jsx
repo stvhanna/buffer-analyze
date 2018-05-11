@@ -40,7 +40,7 @@ const TopPostsDropdown = ({
   if (metrics.length) {
     const dropdownListClasses = classNames(dropdownList);
     return (
-      <div>
+      <div style={{ marginLeft: 'auto', marginRight: '1em' }}>
         <Text size="small">Sort by</Text>
         <Dropdown
           className={dropdownContainer}
