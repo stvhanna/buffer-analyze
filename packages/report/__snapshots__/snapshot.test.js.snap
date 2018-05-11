@@ -583,22 +583,14 @@ exports[`Snapshots EditTitle renders the edit title text box 1`] = `
 exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
 <span>
   <div
-    className="sc-kEYyzF jWrHXn"
+    className="sc-kkGfuU hwvCtq"
   >
     <span
-      className="sc-jKJlTe bUdhTv"
+      className="sc-eNQAEJ dxQfma"
     >
       <div
-        style={
-          Object {
-            "background": "rgba(50, 59, 67, 0.1)",
-            "borderRadius": "50%",
-            "height": "22px",
-            "marginRight": "10px",
-            "position": "relative",
-            "width": "22px",
-          }
-        }
+        className="sc-fjdhpX iiIGfb"
+        size="22px"
       >
         <img
           alt=""
@@ -664,7 +656,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
         </div>
       </div>
       <div
-        className="sc-eNQAEJ jNxjFz"
+        className="sc-hMqMXs fyRLAc"
       >
         <span
           style={
@@ -677,7 +669,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
           }
         >
           <span
-            className="sc-ckVGcZ fTxXUL"
+            className="sc-jKJlTe efoRij"
           >
             @moreofmorris
           </span>
@@ -693,7 +685,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
           }
         >
           <div
-            className="sc-hMqMXs kCbAWz"
+            className="sc-kEYyzF cfkUBy"
           >
             twitter
             .com
@@ -702,19 +694,11 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
       </div>
     </span>
     <span
-      className="sc-jKJlTe bUdhTv"
+      className="sc-eNQAEJ dxQfma"
     >
       <div
-        style={
-          Object {
-            "background": "rgba(50, 59, 67, 0.1)",
-            "borderRadius": "50%",
-            "height": "22px",
-            "marginRight": "10px",
-            "position": "relative",
-            "width": "22px",
-          }
-        }
+        className="sc-fjdhpX iiIGfb"
+        size="22px"
       >
         <img
           alt=""
@@ -780,7 +764,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
         </div>
       </div>
       <div
-        className="sc-eNQAEJ jNxjFz"
+        className="sc-hMqMXs fyRLAc"
       >
         <span
           style={
@@ -793,7 +777,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
           }
         >
           <span
-            className="sc-ckVGcZ fTxXUL"
+            className="sc-jKJlTe efoRij"
           >
             @roughquest
           </span>
@@ -809,7 +793,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
           }
         >
           <div
-            className="sc-hMqMXs kCbAWz"
+            className="sc-kEYyzF cfkUBy"
           >
             twitter
             .com
@@ -818,19 +802,11 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
       </div>
     </span>
     <span
-      className="sc-jKJlTe bUdhTv"
+      className="sc-eNQAEJ dxQfma"
     >
       <div
-        style={
-          Object {
-            "background": "rgba(50, 59, 67, 0.1)",
-            "borderRadius": "50%",
-            "height": "22px",
-            "marginRight": "10px",
-            "position": "relative",
-            "width": "22px",
-          }
-        }
+        className="sc-fjdhpX iiIGfb"
+        size="22px"
       >
         <img
           alt=""
@@ -896,7 +872,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
         </div>
       </div>
       <div
-        className="sc-eNQAEJ jNxjFz"
+        className="sc-hMqMXs fyRLAc"
       >
         <span
           style={
@@ -909,7 +885,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
           }
         >
           <span
-            className="sc-ckVGcZ fTxXUL"
+            className="sc-jKJlTe efoRij"
           >
             Roughquest
           </span>
@@ -925,7 +901,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
           }
         >
           <div
-            className="sc-hMqMXs kCbAWz"
+            className="sc-kEYyzF cfkUBy"
           >
             facebook
             .com
@@ -940,19 +916,11 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
 exports[`Snapshots ProfileLegend renders the profile legend 1`] = `
 <span>
   <span
-    className="sc-jKJlTe bUdhTv"
+    className="sc-eNQAEJ dxQfma"
   >
     <div
-      style={
-        Object {
-          "background": "rgba(50, 59, 67, 0.1)",
-          "borderRadius": "50%",
-          "height": "22px",
-          "marginRight": "10px",
-          "position": "relative",
-          "width": "22px",
-        }
-      }
+      className="sc-fjdhpX iiIGfb"
+      size="22px"
     >
       <img
         alt=""
@@ -1018,7 +986,7 @@ exports[`Snapshots ProfileLegend renders the profile legend 1`] = `
       </div>
     </div>
     <div
-      className="sc-eNQAEJ jNxjFz"
+      className="sc-hMqMXs fyRLAc"
     >
       <span
         style={
@@ -1031,7 +999,7 @@ exports[`Snapshots ProfileLegend renders the profile legend 1`] = `
         }
       >
         <span
-          className="sc-ckVGcZ fTxXUL"
+          className="sc-jKJlTe efoRij"
         >
           @moreofmorris
         </span>
@@ -1047,7 +1015,7 @@ exports[`Snapshots ProfileLegend renders the profile legend 1`] = `
         }
       >
         <div
-          className="sc-hMqMXs kCbAWz"
+          className="sc-kEYyzF cfkUBy"
         >
           twitter
           .com
@@ -1061,7 +1029,7 @@ exports[`Snapshots ProfileLegend renders the profile legend 1`] = `
 exports[`Snapshots Report render only the multi-profile legend if that is available 1`] = `
 <span>
   <section
-    className="sc-gHboQg GWBJS"
+    className="sc-eilVRo jCpWqw"
   >
     <div
       id="report-page"
@@ -1077,7 +1045,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
         }
       >
         <div
-          className="sc-fOKMvo dnFqjj"
+          className="sc-dUjcNx jvPPjN"
         >
           <button
             aria-label={null}
@@ -1108,13 +1076,13 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
             }
           >
             <h1
-              className="sc-fYiAbW jQNJiv"
+              className="sc-fOKMvo iwRZpQ"
             >
               Weekly Sync Report
             </h1>
           </button>
           <div
-            className="sc-dUjcNx caCxfA"
+            className="sc-gHboQg bVvuTj"
           >
             <svg
               height="100%"
@@ -1161,14 +1129,14 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
         </span>
       </span>
       <section
-        className="sc-eLExRp hQaTGy"
+        className="sc-cbkKFq fQuipZ"
       >
         <div>
           <div
-            className="sc-cbkKFq hDaAke"
+            className="sc-krvtoX iuVOpE"
           >
             <h2
-              className="sc-cSHVUG eMsAFn"
+              className="sc-kAzzGY eAFIje"
             >
               <span
                 style={
@@ -1176,7 +1144,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
-                    "fontWeight": 700,
+                    "fontWeight": 500,
                   }
                 }
               >
@@ -1186,25 +1154,17 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
             </h2>
           </div>
           <div
-            className="sc-krvtoX eqYWEa"
+            className="sc-fYiAbW iRPwao"
           >
             <div
-              className="sc-kEYyzF jWrHXn"
+              className="sc-kkGfuU hwvCtq"
             >
               <span
-                className="sc-jKJlTe bUdhTv"
+                className="sc-eNQAEJ dxQfma"
               >
                 <div
-                  style={
-                    Object {
-                      "background": "rgba(50, 59, 67, 0.1)",
-                      "borderRadius": "50%",
-                      "height": "22px",
-                      "marginRight": "10px",
-                      "position": "relative",
-                      "width": "22px",
-                    }
-                  }
+                  className="sc-fjdhpX iiIGfb"
+                  size="22px"
                 >
                   <img
                     alt=""
@@ -1270,7 +1230,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                   </div>
                 </div>
                 <div
-                  className="sc-eNQAEJ jNxjFz"
+                  className="sc-hMqMXs fyRLAc"
                 >
                   <span
                     style={
@@ -1283,7 +1243,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                     }
                   >
                     <span
-                      className="sc-ckVGcZ fTxXUL"
+                      className="sc-jKJlTe efoRij"
                     >
                       @buffer
                     </span>
@@ -1299,7 +1259,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                     }
                   >
                     <div
-                      className="sc-hMqMXs kCbAWz"
+                      className="sc-kEYyzF cfkUBy"
                     >
                       twitter
                       .com
@@ -1308,19 +1268,11 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                 </div>
               </span>
               <span
-                className="sc-jKJlTe bUdhTv"
+                className="sc-eNQAEJ dxQfma"
               >
                 <div
-                  style={
-                    Object {
-                      "background": "rgba(50, 59, 67, 0.1)",
-                      "borderRadius": "50%",
-                      "height": "22px",
-                      "marginRight": "10px",
-                      "position": "relative",
-                      "width": "22px",
-                    }
-                  }
+                  className="sc-fjdhpX iiIGfb"
+                  size="22px"
                 >
                   <img
                     alt=""
@@ -1401,7 +1353,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                   </div>
                 </div>
                 <div
-                  className="sc-eNQAEJ jNxjFz"
+                  className="sc-hMqMXs fyRLAc"
                 >
                   <span
                     style={
@@ -1414,7 +1366,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                     }
                   >
                     <span
-                      className="sc-ckVGcZ fTxXUL"
+                      className="sc-jKJlTe efoRij"
                     >
                       buffer
                     </span>
@@ -1430,7 +1382,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                     }
                   >
                     <div
-                      className="sc-hMqMXs kCbAWz"
+                      className="sc-kEYyzF cfkUBy"
                     >
                       instagram
                       .com
@@ -1477,7 +1429,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
 exports[`Snapshots Report renders a loading report 1`] = `
 <span>
   <section
-    className="sc-gHboQg GWBJS"
+    className="sc-eilVRo jCpWqw"
   >
     <div
       style={
@@ -1584,7 +1536,7 @@ exports[`Snapshots Report renders a loading report 1`] = `
 exports[`Snapshots Report renders a report in edit mode 1`] = `
 <span>
   <section
-    className="sc-gHboQg GWBJS"
+    className="sc-eilVRo jCpWqw"
   >
     <div
       id="report-page"
@@ -1631,14 +1583,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         </span>
       </span>
       <section
-        className="sc-eLExRp hQaTGy"
+        className="sc-cbkKFq fQuipZ"
       >
         <div>
           <div
-            className="sc-cbkKFq hDaAke"
+            className="sc-krvtoX iuVOpE"
           >
             <h2
-              className="sc-cSHVUG eMsAFn"
+              className="sc-kAzzGY eAFIje"
             >
               <span
                 style={
@@ -1646,7 +1598,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
-                    "fontWeight": 700,
+                    "fontWeight": 500,
                   }
                 }
               >
@@ -1655,22 +1607,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </h2>
           </div>
           <div
-            className="sc-krvtoX eqYWEa"
+            className="sc-fYiAbW iRPwao"
           >
             <span
-              className="sc-jKJlTe bUdhTv"
+              className="sc-eNQAEJ dxQfma"
             >
               <div
-                style={
-                  Object {
-                    "background": "rgba(50, 59, 67, 0.1)",
-                    "borderRadius": "50%",
-                    "height": "22px",
-                    "marginRight": "10px",
-                    "position": "relative",
-                    "width": "22px",
-                  }
-                }
+                className="sc-fjdhpX iiIGfb"
+                size="22px"
               >
                 <img
                   alt=""
@@ -1736,7 +1680,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </div>
               </div>
               <div
-                className="sc-eNQAEJ jNxjFz"
+                className="sc-hMqMXs fyRLAc"
               >
                 <span
                   style={
@@ -1749,7 +1693,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   }
                 >
                   <span
-                    className="sc-ckVGcZ fTxXUL"
+                    className="sc-jKJlTe efoRij"
                   >
                     Buffer
                   </span>
@@ -1765,7 +1709,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   }
                 >
                   <div
-                    className="sc-hMqMXs kCbAWz"
+                    className="sc-kEYyzF cfkUBy"
                   >
                     facebook
                     .com
@@ -1822,38 +1766,20 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        150
-                      </span>
-                    </span>
+                  <span>
+                    150
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -1957,38 +1883,20 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        901
-                      </span>
-                    </span>
+                  <span>
+                    901
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -2093,38 +2001,20 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        1,010
-                      </span>
-                    </span>
+                  <span>
+                    1,010
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -2229,38 +2119,20 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        963.4k
-                      </span>
-                    </span>
+                  <span>
+                    963.4k
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -2365,38 +2237,20 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        0
-                      </span>
-                    </span>
+                  <span>
+                    0
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -2501,38 +2355,20 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        28.8k
-                      </span>
-                    </span>
+                  <span>
+                    28.8k
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -2637,38 +2473,20 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        2,313
-                      </span>
-                    </span>
+                  <span>
+                    2,313
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -2773,38 +2591,20 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        658
-                      </span>
-                    </span>
+                  <span>
+                    658
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -2875,14 +2675,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         </ul>
       </section>
       <section
-        className="sc-eLExRp hQaTGy"
+        className="sc-cbkKFq fQuipZ"
       >
         <div>
           <div
-            className="sc-cbkKFq hDaAke"
+            className="sc-krvtoX iuVOpE"
           >
             <h2
-              className="sc-cSHVUG eMsAFn"
+              className="sc-kAzzGY eAFIje"
             >
               <span
                 style={
@@ -2890,7 +2690,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
-                    "fontWeight": 700,
+                    "fontWeight": 500,
                   }
                 }
               >
@@ -2899,22 +2699,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </h2>
           </div>
           <div
-            className="sc-krvtoX eqYWEa"
+            className="sc-fYiAbW iRPwao"
           >
             <span
-              className="sc-jKJlTe bUdhTv"
+              className="sc-eNQAEJ dxQfma"
             >
               <div
-                style={
-                  Object {
-                    "background": "rgba(50, 59, 67, 0.1)",
-                    "borderRadius": "50%",
-                    "height": "22px",
-                    "marginRight": "10px",
-                    "position": "relative",
-                    "width": "22px",
-                  }
-                }
+                className="sc-fjdhpX iiIGfb"
+                size="22px"
               >
                 <img
                   alt=""
@@ -2980,7 +2772,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </div>
               </div>
               <div
-                className="sc-eNQAEJ jNxjFz"
+                className="sc-hMqMXs fyRLAc"
               >
                 <span
                   style={
@@ -2993,7 +2785,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   }
                 >
                   <span
-                    className="sc-ckVGcZ fTxXUL"
+                    className="sc-jKJlTe efoRij"
                   >
                     Buffer
                   </span>
@@ -3009,7 +2801,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   }
                 >
                   <div
-                    className="sc-hMqMXs kCbAWz"
+                    className="sc-kEYyzF cfkUBy"
                   >
                     facebook
                     .com
@@ -3066,38 +2858,20 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        150
-                      </span>
-                    </span>
+                  <span>
+                    150
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -3201,38 +2975,20 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        901
-                      </span>
-                    </span>
+                  <span>
+                    901
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -3337,38 +3093,20 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        1,010
-                      </span>
-                    </span>
+                  <span>
+                    1,010
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -3473,38 +3211,20 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        963.4k
-                      </span>
-                    </span>
+                  <span>
+                    963.4k
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -3609,38 +3329,20 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        0
-                      </span>
-                    </span>
+                  <span>
+                    0
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -3745,38 +3447,20 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        28.8k
-                      </span>
-                    </span>
+                  <span>
+                    28.8k
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -3881,38 +3565,20 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        2,313
-                      </span>
-                    </span>
+                  <span>
+                    2,313
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -4017,38 +3683,20 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        658
-                      </span>
-                    </span>
+                  <span>
+                    658
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -4119,14 +3767,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         </ul>
       </section>
       <section
-        className="sc-eLExRp hQaTGy"
+        className="sc-cbkKFq fQuipZ"
       >
         <div>
           <div
-            className="sc-cbkKFq hDaAke"
+            className="sc-krvtoX iuVOpE"
           >
             <h2
-              className="sc-cSHVUG eMsAFn"
+              className="sc-kAzzGY eAFIje"
             >
               <span
                 style={
@@ -4134,7 +3782,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
-                    "fontWeight": 700,
+                    "fontWeight": 500,
                   }
                 }
               >
@@ -4143,22 +3791,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </h2>
           </div>
           <div
-            className="sc-krvtoX eqYWEa"
+            className="sc-fYiAbW iRPwao"
           >
             <span
-              className="sc-jKJlTe bUdhTv"
+              className="sc-eNQAEJ dxQfma"
             >
               <div
-                style={
-                  Object {
-                    "background": "rgba(50, 59, 67, 0.1)",
-                    "borderRadius": "50%",
-                    "height": "22px",
-                    "marginRight": "10px",
-                    "position": "relative",
-                    "width": "22px",
-                  }
-                }
+                className="sc-fjdhpX iiIGfb"
+                size="22px"
               >
                 <img
                   alt=""
@@ -4224,7 +3864,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </div>
               </div>
               <div
-                className="sc-eNQAEJ jNxjFz"
+                className="sc-hMqMXs fyRLAc"
               >
                 <span
                   style={
@@ -4237,7 +3877,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   }
                 >
                   <span
-                    className="sc-ckVGcZ fTxXUL"
+                    className="sc-jKJlTe efoRij"
                   >
                     Buffer
                   </span>
@@ -4253,7 +3893,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   }
                 >
                   <div
-                    className="sc-hMqMXs kCbAWz"
+                    className="sc-kEYyzF cfkUBy"
                   >
                     facebook
                     .com
@@ -4310,38 +3950,20 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        150
-                      </span>
-                    </span>
+                  <span>
+                    150
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -4445,38 +4067,20 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        901
-                      </span>
-                    </span>
+                  <span>
+                    901
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -4581,38 +4185,20 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        1,010
-                      </span>
-                    </span>
+                  <span>
+                    1,010
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -4717,38 +4303,20 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        963.4k
-                      </span>
-                    </span>
+                  <span>
+                    963.4k
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -4853,38 +4421,20 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        0
-                      </span>
-                    </span>
+                  <span>
+                    0
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -4989,38 +4539,20 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        28.8k
-                      </span>
-                    </span>
+                  <span>
+                    28.8k
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -5125,38 +4657,20 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        2,313
-                      </span>
-                    </span>
+                  <span>
+                    2,313
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -5261,38 +4775,20 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        658
-                      </span>
-                    </span>
+                  <span>
+                    658
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -5370,7 +4866,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
 exports[`Snapshots Report renders a report with summary table 1`] = `
 <span>
   <section
-    className="sc-gHboQg GWBJS"
+    className="sc-eilVRo jCpWqw"
   >
     <div
       id="report-page"
@@ -5386,7 +4882,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         }
       >
         <div
-          className="sc-fOKMvo dnFqjj"
+          className="sc-dUjcNx jvPPjN"
         >
           <button
             aria-label={null}
@@ -5417,13 +4913,13 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
             }
           >
             <h1
-              className="sc-fYiAbW jQNJiv"
+              className="sc-fOKMvo iwRZpQ"
             >
               Weekly Sync Report
             </h1>
           </button>
           <div
-            className="sc-dUjcNx caCxfA"
+            className="sc-gHboQg bVvuTj"
           >
             <svg
               height="100%"
@@ -5470,14 +4966,14 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         </span>
       </span>
       <section
-        className="sc-eLExRp hQaTGy"
+        className="sc-cbkKFq fQuipZ"
       >
         <div>
           <div
-            className="sc-cbkKFq hDaAke"
+            className="sc-krvtoX iuVOpE"
           >
             <h2
-              className="sc-cSHVUG eMsAFn"
+              className="sc-kAzzGY eAFIje"
             >
               <span
                 style={
@@ -5485,7 +4981,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
-                    "fontWeight": 700,
+                    "fontWeight": 500,
                   }
                 }
               >
@@ -5494,22 +4990,14 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
             </h2>
           </div>
           <div
-            className="sc-krvtoX eqYWEa"
+            className="sc-fYiAbW iRPwao"
           >
             <span
-              className="sc-jKJlTe bUdhTv"
+              className="sc-eNQAEJ dxQfma"
             >
               <div
-                style={
-                  Object {
-                    "background": "rgba(50, 59, 67, 0.1)",
-                    "borderRadius": "50%",
-                    "height": "22px",
-                    "marginRight": "10px",
-                    "position": "relative",
-                    "width": "22px",
-                  }
-                }
+                className="sc-fjdhpX iiIGfb"
+                size="22px"
               >
                 <img
                   alt=""
@@ -5575,7 +5063,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                 </div>
               </div>
               <div
-                className="sc-eNQAEJ jNxjFz"
+                className="sc-hMqMXs fyRLAc"
               >
                 <span
                   style={
@@ -5588,7 +5076,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                   }
                 >
                   <span
-                    className="sc-ckVGcZ fTxXUL"
+                    className="sc-jKJlTe efoRij"
                   >
                     Buffer
                   </span>
@@ -5604,7 +5092,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                   }
                 >
                   <div
-                    className="sc-hMqMXs kCbAWz"
+                    className="sc-kEYyzF cfkUBy"
                   >
                     facebook
                     .com
@@ -5661,38 +5149,20 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        150
-                      </span>
-                    </span>
+                  <span>
+                    150
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -5796,38 +5266,20 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        901
-                      </span>
-                    </span>
+                  <span>
+                    901
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -5932,38 +5384,20 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        1,010
-                      </span>
-                    </span>
+                  <span>
+                    1,010
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -6068,38 +5502,20 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        963.4k
-                      </span>
-                    </span>
+                  <span>
+                    963.4k
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -6204,38 +5620,20 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        0
-                      </span>
-                    </span>
+                  <span>
+                    0
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -6340,38 +5738,20 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        28.8k
-                      </span>
-                    </span>
+                  <span>
+                    28.8k
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -6476,38 +5856,20 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        2,313
-                      </span>
-                    </span>
+                  <span>
+                    2,313
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -6612,38 +5974,20 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        658
-                      </span>
-                    </span>
+                  <span>
+                    658
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -6714,14 +6058,14 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         </ul>
       </section>
       <section
-        className="sc-eLExRp hQaTGy"
+        className="sc-cbkKFq fQuipZ"
       >
         <div>
           <div
-            className="sc-cbkKFq hDaAke"
+            className="sc-krvtoX iuVOpE"
           >
             <h2
-              className="sc-cSHVUG eMsAFn"
+              className="sc-kAzzGY eAFIje"
             >
               <span
                 style={
@@ -6729,7 +6073,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
-                    "fontWeight": 700,
+                    "fontWeight": 500,
                   }
                 }
               >
@@ -6738,22 +6082,14 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
             </h2>
           </div>
           <div
-            className="sc-krvtoX eqYWEa"
+            className="sc-fYiAbW iRPwao"
           >
             <span
-              className="sc-jKJlTe bUdhTv"
+              className="sc-eNQAEJ dxQfma"
             >
               <div
-                style={
-                  Object {
-                    "background": "rgba(50, 59, 67, 0.1)",
-                    "borderRadius": "50%",
-                    "height": "22px",
-                    "marginRight": "10px",
-                    "position": "relative",
-                    "width": "22px",
-                  }
-                }
+                className="sc-fjdhpX iiIGfb"
+                size="22px"
               >
                 <img
                   alt=""
@@ -6819,7 +6155,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                 </div>
               </div>
               <div
-                className="sc-eNQAEJ jNxjFz"
+                className="sc-hMqMXs fyRLAc"
               >
                 <span
                   style={
@@ -6832,7 +6168,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                   }
                 >
                   <span
-                    className="sc-ckVGcZ fTxXUL"
+                    className="sc-jKJlTe efoRij"
                   >
                     Buffer
                   </span>
@@ -6848,7 +6184,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                   }
                 >
                   <div
-                    className="sc-hMqMXs kCbAWz"
+                    className="sc-kEYyzF cfkUBy"
                   >
                     facebook
                     .com
@@ -6905,38 +6241,20 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        150
-                      </span>
-                    </span>
+                  <span>
+                    150
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -7040,38 +6358,20 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        901
-                      </span>
-                    </span>
+                  <span>
+                    901
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -7176,38 +6476,20 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        1,010
-                      </span>
-                    </span>
+                  <span>
+                    1,010
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -7312,38 +6594,20 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        963.4k
-                      </span>
-                    </span>
+                  <span>
+                    963.4k
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -7448,38 +6712,20 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        0
-                      </span>
-                    </span>
+                  <span>
+                    0
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -7584,38 +6830,20 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        28.8k
-                      </span>
-                    </span>
+                  <span>
+                    28.8k
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -7720,38 +6948,20 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        2,313
-                      </span>
-                    </span>
+                  <span>
+                    2,313
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -7856,38 +7066,20 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        658
-                      </span>
-                    </span>
+                  <span>
+                    658
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -7958,14 +7150,14 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
         </ul>
       </section>
       <section
-        className="sc-eLExRp hQaTGy"
+        className="sc-cbkKFq fQuipZ"
       >
         <div>
           <div
-            className="sc-cbkKFq hDaAke"
+            className="sc-krvtoX iuVOpE"
           >
             <h2
-              className="sc-cSHVUG eMsAFn"
+              className="sc-kAzzGY eAFIje"
             >
               <span
                 style={
@@ -7973,7 +7165,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
-                    "fontWeight": 700,
+                    "fontWeight": 500,
                   }
                 }
               >
@@ -7982,22 +7174,14 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
             </h2>
           </div>
           <div
-            className="sc-krvtoX eqYWEa"
+            className="sc-fYiAbW iRPwao"
           >
             <span
-              className="sc-jKJlTe bUdhTv"
+              className="sc-eNQAEJ dxQfma"
             >
               <div
-                style={
-                  Object {
-                    "background": "rgba(50, 59, 67, 0.1)",
-                    "borderRadius": "50%",
-                    "height": "22px",
-                    "marginRight": "10px",
-                    "position": "relative",
-                    "width": "22px",
-                  }
-                }
+                className="sc-fjdhpX iiIGfb"
+                size="22px"
               >
                 <img
                   alt=""
@@ -8063,7 +7247,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                 </div>
               </div>
               <div
-                className="sc-eNQAEJ jNxjFz"
+                className="sc-hMqMXs fyRLAc"
               >
                 <span
                   style={
@@ -8076,7 +7260,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                   }
                 >
                   <span
-                    className="sc-ckVGcZ fTxXUL"
+                    className="sc-jKJlTe efoRij"
                   >
                     Buffer
                   </span>
@@ -8092,7 +7276,7 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
                   }
                 >
                   <div
-                    className="sc-hMqMXs kCbAWz"
+                    className="sc-kEYyzF cfkUBy"
                   >
                     facebook
                     .com
@@ -8149,38 +7333,20 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        150
-                      </span>
-                    </span>
+                  <span>
+                    150
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -8284,38 +7450,20 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        901
-                      </span>
-                    </span>
+                  <span>
+                    901
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -8420,38 +7568,20 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        1,010
-                      </span>
-                    </span>
+                  <span>
+                    1,010
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -8556,38 +7686,20 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        963.4k
-                      </span>
-                    </span>
+                  <span>
+                    963.4k
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -8692,38 +7804,20 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        0
-                      </span>
-                    </span>
+                  <span>
+                    0
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -8828,38 +7922,20 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        28.8k
-                      </span>
-                    </span>
+                  <span>
+                    28.8k
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -8964,38 +8040,20 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        2,313
-                      </span>
-                    </span>
+                  <span>
+                    2,313
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -9100,38 +8158,20 @@ exports[`Snapshots Report renders a report with summary table 1`] = `
               <div
                 className="sc-gZMcBi jCgfWF"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1.75rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        658
-                      </span>
-                    </span>
+                  <span>
+                    658
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={

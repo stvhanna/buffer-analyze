@@ -44,16 +44,8 @@ exports[`Snapshots ProfileSelectorDropdown should filter by profilesFilterString
         }
       >
         <div
-          style={
-            Object {
-              "background": "rgba(50, 59, 67, 0.1)",
-              "borderRadius": "50%",
-              "height": "22px",
-              "marginRight": "10px",
-              "position": "relative",
-              "width": "22px",
-            }
-          }
+          className="sc-iwsKbI gnLYRn"
+          size="22px"
         >
           <img
             alt=""
@@ -268,16 +260,8 @@ exports[`Snapshots ProfileSelectorDropdown should filter by profilesFilterString
                 title="Joel Gascoigne"
               >
                 <div
-                  style={
-                    Object {
-                      "background": "rgba(50, 59, 67, 0.1)",
-                      "borderRadius": "50%",
-                      "height": "24px",
-                      "marginRight": "10px",
-                      "position": "relative",
-                      "width": "24px",
-                    }
-                  }
+                  className="sc-iwsKbI fYlEZG"
+                  size="24px"
                 >
                   <img
                     alt=""
@@ -431,16 +415,8 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
         }
       >
         <div
-          style={
-            Object {
-              "background": "rgba(50, 59, 67, 0.1)",
-              "borderRadius": "50%",
-              "height": "22px",
-              "marginRight": "10px",
-              "position": "relative",
-              "width": "22px",
-            }
-          }
+          className="sc-iwsKbI gnLYRn"
+          size="22px"
         >
           <img
             alt=""
@@ -655,16 +631,8 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                 title="Buffer"
               >
                 <div
-                  style={
-                    Object {
-                      "background": "rgba(50, 59, 67, 0.1)",
-                      "borderRadius": "50%",
-                      "height": "24px",
-                      "marginRight": "10px",
-                      "position": "relative",
-                      "width": "24px",
-                    }
-                  }
+                  className="sc-iwsKbI fYlEZG"
+                  size="24px"
                 >
                   <img
                     alt=""
@@ -833,16 +801,8 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                 title="Joel Gascoigne"
               >
                 <div
-                  style={
-                    Object {
-                      "background": "rgba(50, 59, 67, 0.1)",
-                      "borderRadius": "50%",
-                      "height": "24px",
-                      "marginRight": "10px",
-                      "position": "relative",
-                      "width": "24px",
-                    }
-                  }
+                  className="sc-iwsKbI fYlEZG"
+                  size="24px"
                 >
                   <img
                     alt=""
@@ -979,16 +939,8 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                 title="Buffer"
               >
                 <div
-                  style={
-                    Object {
-                      "background": "rgba(50, 59, 67, 0.1)",
-                      "borderRadius": "50%",
-                      "height": "24px",
-                      "marginRight": "10px",
-                      "position": "relative",
-                      "width": "24px",
-                    }
-                  }
+                  className="sc-iwsKbI fYlEZG"
+                  size="24px"
                 >
                   <img
                     alt=""
@@ -1125,16 +1077,8 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                 title="Buffer"
               >
                 <div
-                  style={
-                    Object {
-                      "background": "rgba(50, 59, 67, 0.1)",
-                      "borderRadius": "50%",
-                      "height": "24px",
-                      "marginRight": "10px",
-                      "position": "relative",
-                      "width": "24px",
-                    }
-                  }
+                  className="sc-iwsKbI fYlEZG"
+                  size="24px"
                 >
                   <img
                     alt=""
@@ -1291,16 +1235,8 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
         }
       >
         <div
-          style={
-            Object {
-              "background": "rgba(50, 59, 67, 0.1)",
-              "borderRadius": "50%",
-              "height": "22px",
-              "marginRight": "10px",
-              "position": "relative",
-              "width": "22px",
-            }
-          }
+          className="sc-iwsKbI gnLYRn"
+          size="22px"
         >
           <img
             alt=""
@@ -1515,16 +1451,8 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                 title="Buffer"
               >
                 <div
-                  style={
-                    Object {
-                      "background": "rgba(50, 59, 67, 0.1)",
-                      "borderRadius": "50%",
-                      "height": "24px",
-                      "marginRight": "10px",
-                      "position": "relative",
-                      "width": "24px",
-                    }
-                  }
+                  className="sc-iwsKbI fYlEZG"
+                  size="24px"
                 >
                   <img
                     alt=""
@@ -1693,16 +1621,8 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                 title="Joel Gascoigne"
               >
                 <div
-                  style={
-                    Object {
-                      "background": "rgba(50, 59, 67, 0.1)",
-                      "borderRadius": "50%",
-                      "height": "24px",
-                      "marginRight": "10px",
-                      "position": "relative",
-                      "width": "24px",
-                    }
-                  }
+                  className="sc-iwsKbI fYlEZG"
+                  size="24px"
                 >
                   <img
                     alt=""
@@ -1839,16 +1759,8 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                 title="Buffer"
               >
                 <div
-                  style={
-                    Object {
-                      "background": "rgba(50, 59, 67, 0.1)",
-                      "borderRadius": "50%",
-                      "height": "24px",
-                      "marginRight": "10px",
-                      "position": "relative",
-                      "width": "24px",
-                    }
-                  }
+                  className="sc-iwsKbI fYlEZG"
+                  size="24px"
                 >
                   <img
                     alt=""
@@ -1985,16 +1897,8 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                 title="Buffer"
               >
                 <div
-                  style={
-                    Object {
-                      "background": "rgba(50, 59, 67, 0.1)",
-                      "borderRadius": "50%",
-                      "height": "24px",
-                      "marginRight": "10px",
-                      "position": "relative",
-                      "width": "24px",
-                    }
-                  }
+                  className="sc-iwsKbI fYlEZG"
+                  size="24px"
                 >
                   <img
                     alt=""
@@ -2151,16 +2055,8 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
         }
       >
         <div
-          style={
-            Object {
-              "background": "rgba(50, 59, 67, 0.1)",
-              "borderRadius": "50%",
-              "height": "22px",
-              "marginRight": "10px",
-              "position": "relative",
-              "width": "22px",
-            }
-          }
+          className="sc-iwsKbI gnLYRn"
+          size="22px"
         >
           <img
             alt=""
@@ -2377,16 +2273,8 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Buffer"
               >
                 <div
-                  style={
-                    Object {
-                      "background": "rgba(50, 59, 67, 0.1)",
-                      "borderRadius": "50%",
-                      "height": "24px",
-                      "marginRight": "10px",
-                      "position": "relative",
-                      "width": "24px",
-                    }
-                  }
+                  className="sc-iwsKbI fYlEZG"
+                  size="24px"
                 >
                   <img
                     alt=""
@@ -2555,16 +2443,8 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Joel Gascoigne"
               >
                 <div
-                  style={
-                    Object {
-                      "background": "rgba(50, 59, 67, 0.1)",
-                      "borderRadius": "50%",
-                      "height": "24px",
-                      "marginRight": "10px",
-                      "position": "relative",
-                      "width": "24px",
-                    }
-                  }
+                  className="sc-iwsKbI fYlEZG"
+                  size="24px"
                 >
                   <img
                     alt=""
@@ -2701,16 +2581,8 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Buffer"
               >
                 <div
-                  style={
-                    Object {
-                      "background": "rgba(50, 59, 67, 0.1)",
-                      "borderRadius": "50%",
-                      "height": "24px",
-                      "marginRight": "10px",
-                      "position": "relative",
-                      "width": "24px",
-                    }
-                  }
+                  className="sc-iwsKbI fYlEZG"
+                  size="24px"
                 >
                   <img
                     alt=""
@@ -2847,16 +2719,8 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Buffer"
               >
                 <div
-                  style={
-                    Object {
-                      "background": "rgba(50, 59, 67, 0.1)",
-                      "borderRadius": "50%",
-                      "height": "24px",
-                      "marginRight": "10px",
-                      "position": "relative",
-                      "width": "24px",
-                    }
-                  }
+                  className="sc-iwsKbI fYlEZG"
+                  size="24px"
                 >
                   <img
                     alt=""
@@ -3008,16 +2872,8 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Buffer 5"
               >
                 <div
-                  style={
-                    Object {
-                      "background": "rgba(50, 59, 67, 0.1)",
-                      "borderRadius": "50%",
-                      "height": "24px",
-                      "marginRight": "10px",
-                      "position": "relative",
-                      "width": "24px",
-                    }
-                  }
+                  className="sc-iwsKbI fYlEZG"
+                  size="24px"
                 >
                   <img
                     alt=""
@@ -3154,16 +3010,8 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Buffer 6"
               >
                 <div
-                  style={
-                    Object {
-                      "background": "rgba(50, 59, 67, 0.1)",
-                      "borderRadius": "50%",
-                      "height": "24px",
-                      "marginRight": "10px",
-                      "position": "relative",
-                      "width": "24px",
-                    }
-                  }
+                  className="sc-iwsKbI fYlEZG"
+                  size="24px"
                 >
                   <img
                     alt=""
@@ -3300,16 +3148,8 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Buffer 7"
               >
                 <div
-                  style={
-                    Object {
-                      "background": "rgba(50, 59, 67, 0.1)",
-                      "borderRadius": "50%",
-                      "height": "24px",
-                      "marginRight": "10px",
-                      "position": "relative",
-                      "width": "24px",
-                    }
-                  }
+                  className="sc-iwsKbI fYlEZG"
+                  size="24px"
                 >
                   <img
                     alt=""
@@ -3446,16 +3286,8 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Buffer 8"
               >
                 <div
-                  style={
-                    Object {
-                      "background": "rgba(50, 59, 67, 0.1)",
-                      "borderRadius": "50%",
-                      "height": "24px",
-                      "marginRight": "10px",
-                      "position": "relative",
-                      "width": "24px",
-                    }
-                  }
+                  className="sc-iwsKbI fYlEZG"
+                  size="24px"
                 >
                   <img
                     alt=""
@@ -3592,16 +3424,8 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Buffer 9"
               >
                 <div
-                  style={
-                    Object {
-                      "background": "rgba(50, 59, 67, 0.1)",
-                      "borderRadius": "50%",
-                      "height": "24px",
-                      "marginRight": "10px",
-                      "position": "relative",
-                      "width": "24px",
-                    }
-                  }
+                  className="sc-iwsKbI fYlEZG"
+                  size="24px"
                 >
                   <img
                     alt=""
@@ -3738,16 +3562,8 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Buffer 10"
               >
                 <div
-                  style={
-                    Object {
-                      "background": "rgba(50, 59, 67, 0.1)",
-                      "borderRadius": "50%",
-                      "height": "24px",
-                      "marginRight": "10px",
-                      "position": "relative",
-                      "width": "24px",
-                    }
-                  }
+                  className="sc-iwsKbI fYlEZG"
+                  size="24px"
                 >
                   <img
                     alt=""
@@ -3884,16 +3700,8 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Buffer 11"
               >
                 <div
-                  style={
-                    Object {
-                      "background": "rgba(50, 59, 67, 0.1)",
-                      "borderRadius": "50%",
-                      "height": "24px",
-                      "marginRight": "10px",
-                      "position": "relative",
-                      "width": "24px",
-                    }
-                  }
+                  className="sc-iwsKbI fYlEZG"
+                  size="24px"
                 >
                   <img
                     alt=""
@@ -4030,16 +3838,8 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Buffer 12"
               >
                 <div
-                  style={
-                    Object {
-                      "background": "rgba(50, 59, 67, 0.1)",
-                      "borderRadius": "50%",
-                      "height": "24px",
-                      "marginRight": "10px",
-                      "position": "relative",
-                      "width": "24px",
-                    }
-                  }
+                  className="sc-iwsKbI fYlEZG"
+                  size="24px"
                 >
                   <img
                     alt=""
@@ -4176,16 +3976,8 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Buffer 13"
               >
                 <div
-                  style={
-                    Object {
-                      "background": "rgba(50, 59, 67, 0.1)",
-                      "borderRadius": "50%",
-                      "height": "24px",
-                      "marginRight": "10px",
-                      "position": "relative",
-                      "width": "24px",
-                    }
-                  }
+                  className="sc-iwsKbI fYlEZG"
+                  size="24px"
                 >
                   <img
                     alt=""
@@ -4322,16 +4114,8 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Buffer 14"
               >
                 <div
-                  style={
-                    Object {
-                      "background": "rgba(50, 59, 67, 0.1)",
-                      "borderRadius": "50%",
-                      "height": "24px",
-                      "marginRight": "10px",
-                      "position": "relative",
-                      "width": "24px",
-                    }
-                  }
+                  className="sc-iwsKbI fYlEZG"
+                  size="24px"
                 >
                   <img
                     alt=""
@@ -4473,16 +4257,8 @@ exports[`Snapshots ProfileSelectorDropdown should show no match message 1`] = `
         }
       >
         <div
-          style={
-            Object {
-              "background": "rgba(50, 59, 67, 0.1)",
-              "borderRadius": "50%",
-              "height": "22px",
-              "marginRight": "10px",
-              "position": "relative",
-              "width": "22px",
-            }
-          }
+          className="sc-iwsKbI gnLYRn"
+          size="22px"
         >
           <img
             alt=""

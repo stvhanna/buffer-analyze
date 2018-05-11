@@ -21,15 +21,15 @@ exports[`Snapshots AudienceChart [TESTED] Should render 1`] = `
       }
     >
       <header
-        className="sc-gZMcBi dRDRQC"
+        className="sc-gqjmRU gcxEBF"
       >
         <h2
-          className="sc-gqjmRU liZjsx"
+          className="sc-VigVT koZmyN"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": undefined,
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -41,11 +41,11 @@ exports[`Snapshots AudienceChart [TESTED] Should render 1`] = `
         </h2>
       </header>
       <div
-        className="sc-kgoBCf jMQwnZ"
+        className="sc-kGXeez bXYitt"
       >
         <div>
           <div
-            className="sc-chPdSV dxNFWQ"
+            className="sc-kgoBCf beOYFC"
           >
             <div
               className="dropdown dropdownContainer"

@@ -1221,15 +1221,15 @@ exports[`Snapshots CompareChart should render a "no data" state 1`] = `
       }
     >
       <header
-        className="sc-gZMcBi dRDRQC"
+        className="sc-gqjmRU gcxEBF"
       >
         <h2
-          className="sc-gqjmRU liZjsx"
+          className="sc-VigVT koZmyN"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": undefined,
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -1251,7 +1251,7 @@ exports[`Snapshots CompareChart should render a "no data" state 1`] = `
         }
       >
         <div
-          className="sc-chPdSV haaEPG"
+          className="sc-kgoBCf fZCmWX"
         >
           <div
             className="sc-bdVaJa fWzNTu"
@@ -1308,15 +1308,15 @@ exports[`Snapshots CompareChart should render a loading state 1`] = `
       }
     >
       <header
-        className="sc-gZMcBi dRDRQC"
+        className="sc-gqjmRU gcxEBF"
       >
         <h2
-          className="sc-gqjmRU liZjsx"
+          className="sc-VigVT koZmyN"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": undefined,
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -1338,7 +1338,7 @@ exports[`Snapshots CompareChart should render a loading state 1`] = `
         }
       >
         <div
-          className="sc-chPdSV haaEPG"
+          className="sc-kgoBCf fZCmWX"
         >
           <div
             style={
@@ -1466,15 +1466,15 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
       }
     >
       <header
-        className="sc-gZMcBi dRDRQC"
+        className="sc-gqjmRU gcxEBF"
       >
         <h2
-          className="sc-gqjmRU liZjsx"
+          className="sc-VigVT koZmyN"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": undefined,
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -2055,38 +2055,20 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                   <div
                     className="sc-bZQynM hCNVyQ"
                   >
-                    <div
+                    <span
                       style={
                         Object {
-                          "display": "inline-block",
+                          "color": "#323b43",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
-                      <span
-                        style={
-                          Object {
-                            "color": "#323b43",
-                            "fontSize": "2rem",
-                            "fontWeight": 600,
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "color": "#323b43",
-                              "fontFamily": "\\"Roboto\\", sans-serif",
-                              "fontSize": "2rem",
-                              "fontWeight": 700,
-                            }
-                          }
-                        >
-                          <span>
-                            1,010
-                          </span>
-                        </span>
+                      <span>
+                        1,010
                       </span>
-                    </div>
+                    </span>
                     <div>
                       <span
                         style={
@@ -2216,38 +2198,20 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                   <div
                     className="sc-bZQynM hCNVyQ"
                   >
-                    <div
+                    <span
                       style={
                         Object {
-                          "display": "inline-block",
+                          "color": "#323b43",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
-                      <span
-                        style={
-                          Object {
-                            "color": "#323b43",
-                            "fontSize": "2rem",
-                            "fontWeight": 600,
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "color": "#323b43",
-                              "fontFamily": "\\"Roboto\\", sans-serif",
-                              "fontSize": "2rem",
-                              "fontWeight": 700,
-                            }
-                          }
-                        >
-                          <span>
-                            100
-                          </span>
-                        </span>
+                      <span>
+                        100
                       </span>
-                    </div>
+                    </span>
                   </div>
                 </div>
               </li>
@@ -2281,15 +2245,15 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
       }
     >
       <header
-        className="sc-gZMcBi dRDRQC"
+        className="sc-gqjmRU gcxEBF"
       >
         <h2
-          className="sc-gqjmRU liZjsx"
+          className="sc-VigVT koZmyN"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": undefined,
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -2870,38 +2834,20 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                   <div
                     className="sc-bZQynM hCNVyQ"
                   >
-                    <div
+                    <span
                       style={
                         Object {
-                          "display": "inline-block",
+                          "color": "#323b43",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
-                      <span
-                        style={
-                          Object {
-                            "color": "#323b43",
-                            "fontSize": "2rem",
-                            "fontWeight": 600,
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "color": "#323b43",
-                              "fontFamily": "\\"Roboto\\", sans-serif",
-                              "fontSize": "2rem",
-                              "fontWeight": 700,
-                            }
-                          }
-                        >
-                          <span>
-                            100
-                          </span>
-                        </span>
+                      <span>
+                        100
                       </span>
-                    </div>
+                    </span>
                     <div>
                       <span
                         style={
@@ -3031,38 +2977,20 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                   <div
                     className="sc-bZQynM hCNVyQ"
                   >
-                    <div
+                    <span
                       style={
                         Object {
-                          "display": "inline-block",
+                          "color": "#323b43",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
-                      <span
-                        style={
-                          Object {
-                            "color": "#323b43",
-                            "fontSize": "2rem",
-                            "fontWeight": 600,
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "color": "#323b43",
-                              "fontFamily": "\\"Roboto\\", sans-serif",
-                              "fontSize": "2rem",
-                              "fontWeight": 700,
-                            }
-                          }
-                        >
-                          <span>
-                            100
-                          </span>
-                        </span>
+                      <span>
+                        100
                       </span>
-                    </div>
+                    </span>
                   </div>
                 </div>
               </li>
@@ -3096,15 +3024,15 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
       }
     >
       <header
-        className="sc-gZMcBi dRDRQC"
+        className="sc-gqjmRU gcxEBF"
       >
         <h2
-          className="sc-gqjmRU liZjsx"
+          className="sc-VigVT koZmyN"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": undefined,
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -3685,38 +3613,20 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                   <div
                     className="sc-bZQynM hCNVyQ"
                   >
-                    <div
+                    <span
                       style={
                         Object {
-                          "display": "inline-block",
+                          "color": "#323b43",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
-                      <span
-                        style={
-                          Object {
-                            "color": "#323b43",
-                            "fontSize": "2rem",
-                            "fontWeight": 600,
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "color": "#323b43",
-                              "fontFamily": "\\"Roboto\\", sans-serif",
-                              "fontSize": "2rem",
-                              "fontWeight": 700,
-                            }
-                          }
-                        >
-                          <span>
-                            100
-                          </span>
-                        </span>
+                      <span>
+                        100
                       </span>
-                    </div>
+                    </span>
                     <div>
                       <span
                         style={
@@ -3846,38 +3756,20 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                   <div
                     className="sc-bZQynM hCNVyQ"
                   >
-                    <div
+                    <span
                       style={
                         Object {
-                          "display": "inline-block",
+                          "color": "#323b43",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
-                      <span
-                        style={
-                          Object {
-                            "color": "#323b43",
-                            "fontSize": "2rem",
-                            "fontWeight": 600,
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "color": "#323b43",
-                              "fontFamily": "\\"Roboto\\", sans-serif",
-                              "fontSize": "2rem",
-                              "fontWeight": 700,
-                            }
-                          }
-                        >
-                          <span>
-                            100
-                          </span>
-                        </span>
+                      <span>
+                        100
                       </span>
-                    </div>
+                    </span>
                   </div>
                 </div>
               </li>
@@ -3911,15 +3803,15 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
       }
     >
       <header
-        className="sc-gZMcBi dRDRQC"
+        className="sc-gqjmRU gcxEBF"
       >
         <h2
-          className="sc-gqjmRU liZjsx"
+          className="sc-VigVT koZmyN"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": undefined,
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -4576,38 +4468,20 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                   <div
                     className="sc-bZQynM hCNVyQ"
                   >
-                    <div
+                    <span
                       style={
                         Object {
-                          "display": "inline-block",
+                          "color": "#323b43",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
-                      <span
-                        style={
-                          Object {
-                            "color": "#323b43",
-                            "fontSize": "2rem",
-                            "fontWeight": 600,
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "color": "#323b43",
-                              "fontFamily": "\\"Roboto\\", sans-serif",
-                              "fontSize": "2rem",
-                              "fontWeight": 700,
-                            }
-                          }
-                        >
-                          <span>
-                            1,010
-                          </span>
-                        </span>
+                      <span>
+                        1,010
                       </span>
-                    </div>
+                    </span>
                     <div>
                       <span
                         style={
@@ -4737,38 +4611,20 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                   <div
                     className="sc-bZQynM hCNVyQ"
                   >
-                    <div
+                    <span
                       style={
                         Object {
-                          "display": "inline-block",
+                          "color": "#323b43",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
-                      <span
-                        style={
-                          Object {
-                            "color": "#323b43",
-                            "fontSize": "2rem",
-                            "fontWeight": 600,
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "color": "#323b43",
-                              "fontFamily": "\\"Roboto\\", sans-serif",
-                              "fontSize": "2rem",
-                              "fontWeight": 700,
-                            }
-                          }
-                        >
-                          <span>
-                            100
-                          </span>
-                        </span>
+                      <span>
+                        100
                       </span>
-                    </div>
+                    </span>
                   </div>
                 </div>
               </li>
@@ -4802,15 +4658,15 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
       }
     >
       <header
-        className="sc-gZMcBi dRDRQC"
+        className="sc-gqjmRU gcxEBF"
       >
         <h2
-          className="sc-gqjmRU liZjsx"
+          className="sc-VigVT koZmyN"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": undefined,
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -5391,38 +5247,20 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                   <div
                     className="sc-bZQynM hCNVyQ"
                   >
-                    <div
+                    <span
                       style={
                         Object {
-                          "display": "inline-block",
+                          "color": "#323b43",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
-                      <span
-                        style={
-                          Object {
-                            "color": "#323b43",
-                            "fontSize": "2rem",
-                            "fontWeight": 600,
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "color": "#323b43",
-                              "fontFamily": "\\"Roboto\\", sans-serif",
-                              "fontSize": "2rem",
-                              "fontWeight": 700,
-                            }
-                          }
-                        >
-                          <span>
-                            1,010
-                          </span>
-                        </span>
+                      <span>
+                        1,010
                       </span>
-                    </div>
+                    </span>
                     <div>
                       <span
                         style={
@@ -5552,38 +5390,20 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                   <div
                     className="sc-bZQynM hCNVyQ"
                   >
-                    <div
+                    <span
                       style={
                         Object {
-                          "display": "inline-block",
+                          "color": "#323b43",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1.75rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
-                      <span
-                        style={
-                          Object {
-                            "color": "#323b43",
-                            "fontSize": "2rem",
-                            "fontWeight": 600,
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "color": "#323b43",
-                              "fontFamily": "\\"Roboto\\", sans-serif",
-                              "fontSize": "2rem",
-                              "fontWeight": 700,
-                            }
-                          }
-                        >
-                          <span>
-                            100
-                          </span>
-                        </span>
+                      <span>
+                        100
                       </span>
-                    </div>
+                    </span>
                   </div>
                 </div>
               </li>
@@ -5685,38 +5505,20 @@ exports[`Snapshots Footer should render the table 1`] = `
             <div
               className="sc-bZQynM hCNVyQ"
             >
-              <div
+              <span
                 style={
                   Object {
-                    "display": "inline-block",
+                    "color": "#323b43",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "1.75rem",
+                    "fontWeight": 700,
                   }
                 }
               >
-                <span
-                  style={
-                    Object {
-                      "color": "#323b43",
-                      "fontSize": "2rem",
-                      "fontWeight": 600,
-                    }
-                  }
-                >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "2rem",
-                        "fontWeight": 700,
-                      }
-                    }
-                  >
-                    <span>
-                      150
-                    </span>
-                  </span>
+                <span>
+                  150
                 </span>
-              </div>
+              </span>
               <div>
                 <span
                   style={
@@ -5845,38 +5647,20 @@ exports[`Snapshots Footer should render the table 1`] = `
             <div
               className="sc-bZQynM hCNVyQ"
             >
-              <div
+              <span
                 style={
                   Object {
-                    "display": "inline-block",
+                    "color": "#323b43",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "1.75rem",
+                    "fontWeight": 700,
                   }
                 }
               >
-                <span
-                  style={
-                    Object {
-                      "color": "#323b43",
-                      "fontSize": "2rem",
-                      "fontWeight": 600,
-                    }
-                  }
-                >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "2rem",
-                        "fontWeight": 700,
-                      }
-                    }
-                  >
-                    <span>
-                      100
-                    </span>
-                  </span>
+                <span>
+                  100
                 </span>
-              </div>
+              </span>
             </div>
           </div>
         </li>
@@ -6051,12 +5835,12 @@ exports[`Snapshots PeriodToggle should render an inactive toggle 1`] = `
 exports[`Snapshots Title should render title as if for app 1`] = `
 <span>
   <h2
-    className="sc-gqjmRU liZjsx"
+    className="sc-VigVT koZmyN"
   >
     <span
       style={
         Object {
-          "color": "#59626a",
+          "color": undefined,
           "fontFamily": "\\"Roboto\\", sans-serif",
           "fontSize": "1.25rem",
           "fontWeight": 500,
@@ -6072,7 +5856,7 @@ exports[`Snapshots Title should render title as if for app 1`] = `
 exports[`Snapshots Title should render title as if for report 1`] = `
 <span>
   <h2
-    className="sc-gqjmRU liZjsx"
+    className="sc-VigVT koZmyN"
   >
     <span
       style={
@@ -6080,7 +5864,7 @@ exports[`Snapshots Title should render title as if for report 1`] = `
           "color": "#000",
           "fontFamily": "\\"Roboto\\", sans-serif",
           "fontSize": "1.25rem",
-          "fontWeight": 700,
+          "fontWeight": 500,
         }
       }
     >

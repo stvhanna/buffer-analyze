@@ -10,16 +10,8 @@ exports[`Snapshots ProfileHeader should render facebook fans 1`] = `
         className="profileAvatarWrapper"
       >
         <div
-          style={
-            Object {
-              "background": "rgba(50, 59, 67, 0.1)",
-              "borderRadius": "50%",
-              "height": "32px",
-              "marginRight": "10px",
-              "position": "relative",
-              "width": "32px",
-            }
-          }
+          className="sc-iwsKbI bGHEnt"
+          size="32px"
         >
           <img
             alt=""
@@ -166,16 +158,8 @@ exports[`Snapshots ProfileHeader should render twitter followers 1`] = `
         className="profileAvatarWrapper"
       >
         <div
-          style={
-            Object {
-              "background": "rgba(50, 59, 67, 0.1)",
-              "borderRadius": "50%",
-              "height": "32px",
-              "marginRight": "10px",
-              "position": "relative",
-              "width": "32px",
-            }
-          }
+          className="sc-iwsKbI bGHEnt"
+          size="32px"
         >
           <img
             alt=""

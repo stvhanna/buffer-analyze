@@ -3,7 +3,7 @@
 exports[`Snapshots RemoveButton renders the remove button 1`] = `
 <span>
   <button
-    className="sc-chPdSV dMffwC sc-iwsKbI kGSkeT"
+    className="sc-kgoBCf fgOgHe sc-gZMcBi XVdVZ"
     onClick={[Function]}
   >
     <svg
@@ -66,7 +66,7 @@ exports[`Snapshots Report can display buttons for viewing and removing the repor
     }
   >
     <span
-      className="sc-cHGsZl HEcDQ"
+      className="sc-TOsTZ fWgMgO"
     >
       <span
         style={
@@ -79,16 +79,16 @@ exports[`Snapshots Report can display buttons for viewing and removing the repor
         }
       >
         <span
-          className="sc-kgoBCf jkXBml"
+          className="sc-kGXeez jKZzuZ"
         >
           Weekly Sync Report
         </span>
       </span>
       <span
-        className="sc-TOsTZ juXHRX"
+        className="sc-kgAjT iYaroY"
       >
         <button
-          className="sc-chPdSV dMffwC sc-iwsKbI kGSkeT"
+          className="sc-kgoBCf fgOgHe sc-gZMcBi XVdVZ"
           onClick={[Function]}
         >
           <svg
@@ -125,7 +125,7 @@ exports[`Snapshots Report can display buttons for viewing and removing the repor
 exports[`Snapshots Report renders the report 1`] = `
 <span>
   <li
-    className="sc-kgAjT hSAmoj"
+    className="sc-cJSrbW gZPqAt"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
@@ -159,7 +159,7 @@ exports[`Snapshots Report renders the report 1`] = `
       }
     >
       <span
-        className="sc-cHGsZl HEcDQ"
+        className="sc-TOsTZ fWgMgO"
       >
         <span
           style={
@@ -172,7 +172,7 @@ exports[`Snapshots Report renders the report 1`] = `
           }
         >
           <span
-            className="sc-kgoBCf jkXBml"
+            className="sc-kGXeez jKZzuZ"
           >
             Weekly Sync Report
           </span>
@@ -188,7 +188,7 @@ exports[`Snapshots Report renders the report 1`] = `
           }
         >
           <span
-            className="sc-kjoXOD eGJWJJ"
+            className="sc-cHGsZl bzYMsK"
           >
             Past 7 Days
           </span>
@@ -202,7 +202,7 @@ exports[`Snapshots Report renders the report 1`] = `
 exports[`Snapshots ReportList loading state 1`] = `
 <span>
   <div
-    className="sc-ksYbfQ fFubep"
+    className="sc-hmzhuo dvKKdQ"
   >
     <div
       style={
@@ -309,16 +309,16 @@ exports[`Snapshots ReportList loading state 1`] = `
 exports[`Snapshots ReportList renders an empty state for reports 1`] = `
 <span>
   <div
-    className="sc-ksYbfQ fFubep"
+    className="sc-hmzhuo dvKKdQ"
   >
     <div
-      className="sc-jTzLTM cifIwB"
+      className="sc-fjdhpX gQOdUz"
     >
       <div
-        className="sc-fjdhpX bLNfoq"
+        className="sc-jzJRlG gxyjpH"
       />
       <h1
-        className="sc-jzJRlG esvzfq"
+        className="sc-cSHVUG iLBYtn"
       >
         <span
           style={
@@ -334,7 +334,7 @@ exports[`Snapshots ReportList renders an empty state for reports 1`] = `
         </span>
       </h1>
       <h2
-        className="sc-cSHVUG rBrhQ"
+        className="sc-kAzzGY jyLvkM"
       >
         <span
           style={
@@ -357,16 +357,16 @@ exports[`Snapshots ReportList renders an empty state for reports 1`] = `
 exports[`Snapshots ReportList renders an empty state for small reports 1`] = `
 <span>
   <div
-    className="sc-ksYbfQ fFubep"
+    className="sc-hmzhuo dvKKdQ"
   >
     <div
-      className="sc-jTzLTM cifIwB"
+      className="sc-fjdhpX gQOdUz"
     >
       <div
-        className="sc-fjdhpX bLNfoq"
+        className="sc-jzJRlG gxyjpH"
       />
       <h1
-        className="sc-jzJRlG esvzfq"
+        className="sc-cSHVUG iLBYtn"
       >
         <span
           style={
@@ -389,10 +389,10 @@ exports[`Snapshots ReportList renders an empty state for small reports 1`] = `
 exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
 <span>
   <ol
-    className="sc-cJSrbW hDQtus"
+    className="sc-ksYbfQ hhWiCp"
   >
     <li
-      className="sc-kgAjT hSAmoj"
+      className="sc-cJSrbW gZPqAt"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -426,7 +426,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
         }
       >
         <span
-          className="sc-cHGsZl HEcDQ"
+          className="sc-TOsTZ fWgMgO"
         >
           <span
             style={
@@ -439,7 +439,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
             }
           >
             <span
-              className="sc-kgoBCf jkXBml"
+              className="sc-kGXeez jKZzuZ"
             >
               With custom range
             </span>
@@ -455,7 +455,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
             }
           >
             <span
-              className="sc-kjoXOD eGJWJJ"
+              className="sc-cHGsZl bzYMsK"
             >
               February 20, 2018 to February 25, 2018
             </span>
@@ -464,7 +464,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
       </button>
     </li>
     <li
-      className="sc-kgAjT hSAmoj"
+      className="sc-cJSrbW gZPqAt"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -498,7 +498,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
         }
       >
         <span
-          className="sc-cHGsZl HEcDQ"
+          className="sc-TOsTZ fWgMgO"
         >
           <span
             style={
@@ -511,7 +511,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
             }
           >
             <span
-              className="sc-kgoBCf jkXBml"
+              className="sc-kGXeez jKZzuZ"
             >
               With dynamic range
             </span>
@@ -527,7 +527,7 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
             }
           >
             <span
-              className="sc-kjoXOD eGJWJJ"
+              className="sc-cHGsZl bzYMsK"
             >
               Past 7 Days
             </span>
@@ -542,10 +542,10 @@ exports[`Snapshots ReportList renders the reports collection in a list 1`] = `
 exports[`Snapshots ReportList renders the reports collection in a small list 1`] = `
 <span>
   <ol
-    className="sc-cJSrbW hDQtus"
+    className="sc-ksYbfQ hhWiCp"
   >
     <li
-      className="sc-kgAjT hSAmoj"
+      className="sc-cJSrbW gZPqAt"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -579,7 +579,7 @@ exports[`Snapshots ReportList renders the reports collection in a small list 1`]
         }
       >
         <span
-          className="sc-cHGsZl eJWNHQ"
+          className="sc-TOsTZ iQvdjk"
         >
           <span
             style={
@@ -592,7 +592,7 @@ exports[`Snapshots ReportList renders the reports collection in a small list 1`]
             }
           >
             <span
-              className="sc-kgoBCf jkXBml"
+              className="sc-kGXeez jKZzuZ"
             >
               With custom range
             </span>
@@ -608,7 +608,7 @@ exports[`Snapshots ReportList renders the reports collection in a small list 1`]
             }
           >
             <span
-              className="sc-kjoXOD eGJWJJ"
+              className="sc-cHGsZl bzYMsK"
             >
               February 20, 2018 to February 25, 2018
             </span>
@@ -617,7 +617,7 @@ exports[`Snapshots ReportList renders the reports collection in a small list 1`]
       </button>
     </li>
     <li
-      className="sc-kgAjT hSAmoj"
+      className="sc-cJSrbW gZPqAt"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -651,7 +651,7 @@ exports[`Snapshots ReportList renders the reports collection in a small list 1`]
         }
       >
         <span
-          className="sc-cHGsZl eJWNHQ"
+          className="sc-TOsTZ iQvdjk"
         >
           <span
             style={
@@ -664,7 +664,7 @@ exports[`Snapshots ReportList renders the reports collection in a small list 1`]
             }
           >
             <span
-              className="sc-kgoBCf jkXBml"
+              className="sc-kGXeez jKZzuZ"
             >
               With dynamic range
             </span>
@@ -680,7 +680,7 @@ exports[`Snapshots ReportList renders the reports collection in a small list 1`]
             }
           >
             <span
-              className="sc-kjoXOD eGJWJJ"
+              className="sc-cHGsZl bzYMsK"
             >
               Past 7 Days
             </span>
