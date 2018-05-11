@@ -2,28 +2,36 @@ import React from 'react';
 import { push } from 'react-router-redux';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-
-import { Text, Divider, Link } from '@bufferapp/components';
+import styled from 'styled-components';
 import NavSidebar from '@bufferapp/nav-sidebar';
-import { ChartCard } from '@bufferapp/analyze-shared-components';
+import {
+  Text,
+  Link,
+} from '@bufferapp/components';
+import {
+  ChartCard,
+  ChartHeader,
+  ChartTitle,
+} from '@bufferapp/analyze-shared-components';
 
-const pageStyle = {
-  display: 'flex',
-  flexGrow: 1,
-  height: '100%',
-  background: '#FAFAFA',
-};
+const Page = styled.div`
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+  background: #FAFAFA;
+`;
 
-const defaultPageStyle = {
-  width: '52rem',
-  margin: '0 auto',
-  padding: '2.5rem 1rem 4rem',
-};
+const Container = styled.div`
+  width: 52rem;
+  margin: 0 auto;
+  padding: 2.5rem 1rem 4rem;
+`;
 
-const cardContentStyle = {
-  padding: '1.5rem',
-  lineHeight: '1.5rem',
-};
+const ChartContainer = styled.div`
+  position: relative;
+  padding: 1.5rem;
+  line-height: 1.5rem;
+`;
 
 const navigate = (event, dispatch, url) => {
   event.preventDefault();
@@ -44,20 +52,21 @@ const DefaultPage = ({ location, dispatch }) => {
   );
 
   return (
-    <div style={pageStyle}>
+    <Page>
       <NavSidebar route={location.pathname} />
-      <div style={defaultPageStyle}>
+      <Container>
         <ChartCard>
-          <div style={cardContentStyle}>
-            <Text size="large">Welcome to Buffer Analyze 🎉</Text>
-            <Divider marginBottom="1.5rem" />
-            <Text>
-              {welcomeText}
-            </Text>
-          </div>
+          <ChartHeader>
+            <ChartTitle>
+              Welcome to Buffer Analyze
+            </ChartTitle>
+          </ChartHeader>
+          <ChartContainer>
+            <Text>{welcomeText}</Text>
+          </ChartContainer>
         </ChartCard>
-      </div>
-    </div>
+      </Container>
+    </Page>
   );
 };
 
