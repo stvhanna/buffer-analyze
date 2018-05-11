@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled, { css } from 'styled-components';
 
 import {
   Text,
@@ -10,25 +11,26 @@ import {
   curiousBlueUltraLight,
 } from '@bufferapp/components/style/color';
 
-import {
-  calculateStyles,
-} from '@bufferapp/components/lib/utils';
+const InnerLink = styled.span`
+  display: block;
+  padding: 0.75rem 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 4px;
+
+  ${props => !props.selected && css`
+    &:hover > span {
+      color: #168eea !important;
+    }
+  `}
+
+  ${props => props.selected && css`
+    background-color: ${curiousBlueUltraLight}
+  `}
+`;
 
 const Item = ({ href, route, children, onClick, selectedProfile }) => {
-  const highlightActive = href === '/' ? href === route : route.includes(href);
-  const style = calculateStyles({
-    default: {
-      display: 'block',
-      padding: '0.75rem 0.5rem',
-      margin: '0 0.5rem',
-      borderRadius: '4px',
-    },
-    highlightActive: {
-      backgroundColor: curiousBlueUltraLight,
-    },
-  }, {
-    highlightActive,
-  });
+  const selected = href === '/' ? href === route : route.includes(href);
+
   return (
     <Link
       href={href}
@@ -41,9 +43,9 @@ const Item = ({ href, route, children, onClick, selectedProfile }) => {
         }
       }}
     >
-      <span style={style}>
-        <Text color="shuttleGray" weight={highlightActive ? 'bold' : null}>{children}</Text>
-      </span>
+      <InnerLink selected={selected}>
+        <Text color="shuttleGray" weight={selected ? 'bold' : null}>{children}</Text>
+      </InnerLink>
     </Link>
   );
 };
