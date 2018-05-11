@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import PostOrderSwitch from './components/PostOrderSwitch';
 import TopPostsDropdown from './components/TopPostsDropdown';
 import PostsCountBar from './components/PostsCountBar';
 
@@ -18,6 +19,7 @@ const TopPostsHeader = ({
   selectMetric,
   toggleDropdown,
   handlePostsCountClick,
+  handlePostsSortClick,
   activePostsCount,
   postsCounts,
 }) =>
@@ -34,6 +36,10 @@ const TopPostsHeader = ({
       isDescendingSelected={isDescendingSelected}
       selectMetric={selectMetric}
       toggleDropdown={toggleDropdown}
+    />
+    <PostOrderSwitch
+      handleClick={handlePostsSortClick}
+      isDescendingSelected={isDescendingSelected}
     />
   </div>
 ;
@@ -52,6 +58,7 @@ TopPostsHeader.propTypes = {
   selectMetric: PropTypes.func.isRequired,
   toggleDropdown: PropTypes.func.isRequired,
   handlePostsCountClick: PropTypes.func.isRequired,
+  handlePostsSortClick: PropTypes.func.isRequired,
   activePostsCount: PropTypes.string.isRequired,
   postsCounts: PropTypes.arrayOf(PropTypes.shape({
     value: PropTypes.string,

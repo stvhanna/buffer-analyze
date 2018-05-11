@@ -12,14 +12,12 @@ storiesOf('Dropdown Item')
     <DropdownItem
       metric={mockMetrics[0]}
       handleClick={action('handleClick')}
-      sortDirectionLabel={'ASC'}
     />
   ))
   .add('should render selected item', () => (
     <DropdownItem
       metric={mockMetrics[0]}
       handleClick={action('handleClick')}
-      sortDirectionLabel={'DESC'}
       selected
     />
   ));

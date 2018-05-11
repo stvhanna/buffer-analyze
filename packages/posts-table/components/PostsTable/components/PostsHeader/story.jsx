@@ -14,6 +14,7 @@ storiesOf('PostsHeader')
         selectedMetric={mockMetrics[3]}
         isDescendingSelected
         handlePostsCountClick={() => {}}
+        handlePostsSortClick={() => {}}
         activePostsCount={10}
         isDropdownOpen={false}
         selectMetric={() => {}}

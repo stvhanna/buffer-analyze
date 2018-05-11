@@ -63,6 +63,9 @@ export default connect(
     handlePostsCountClick: ({ postsCount }) => dispatch(
       actions.handlePostsCountClick(postsCount),
     ),
+    handlePostsSortClick: ({ isDescendingSelected }) => dispatch(
+      actions.handlePostsSortClick(isDescendingSelected),
+    ),
   }),
 )(PostsTableWrapper);
 

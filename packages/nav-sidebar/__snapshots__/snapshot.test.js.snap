@@ -306,6 +306,48 @@ exports[`Snapshots NavSidebar if there are no profiles it should not show the In
             </span>
           </span>
         </a>
+        <a
+          href="/answers"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            style={
+              Object {
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0 0.5rem",
+                "padding": "0.75rem 0.5rem",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Answers
+            </span>
+          </span>
+        </a>
         <hr
           style={
             Object {
@@ -662,6 +704,48 @@ exports[`Snapshots NavSidebar should show nav sidebar with Dashboard as active l
             </span>
           </span>
         </a>
+        <a
+          href="/answers"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            style={
+              Object {
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0 0.5rem",
+                "padding": "0.75rem 0.5rem",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Answers
+            </span>
+          </span>
+        </a>
         <hr
           style={
             Object {
@@ -1014,6 +1098,48 @@ exports[`Snapshots NavSidebar should show only services for which the user has p
               }
             >
               Posts
+            </span>
+          </span>
+        </a>
+        <a
+          href="/answers"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            style={
+              Object {
+                "borderRadius": "4px",
+                "display": "block",
+                "margin": "0 0.5rem",
+                "padding": "0.75rem 0.5rem",
+              }
+            }
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Answers
             </span>
           </span>
         </a>

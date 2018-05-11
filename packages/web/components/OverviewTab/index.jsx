@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 import SummaryTable from '@bufferapp/summary-table';
 import AverageTable from '@bufferapp/average-table';
 import CompareChart from '@bufferapp/compare-chart';
-import ContextualCompare from '@bufferapp/contextual-compare';
 import HourlyChart from '@bufferapp/hourly-chart';
 
 const OverviewTab = ({ match }) => (
@@ -14,7 +13,6 @@ const OverviewTab = ({ match }) => (
     <AverageTable />
     <CompareChart />
     <HourlyChart />
-    <ContextualCompare />
   </div>
 );
 
