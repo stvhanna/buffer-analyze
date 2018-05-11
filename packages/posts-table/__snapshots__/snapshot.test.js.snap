@@ -755,7 +755,7 @@ exports[`Snapshots PostOrderSwitch should render with ascending selected 1`] = `
         style={
           Object {
             "position": "relative",
-            "top": "-2px",
+            "top": "-4px",
           }
         }
       >
@@ -857,7 +857,7 @@ exports[`Snapshots PostOrderSwitch should render with descending selected 1`] = 
         style={
           Object {
             "position": "relative",
-            "top": "-2px",
+            "top": "-4px",
           }
         }
       >
@@ -1565,7 +1565,7 @@ exports[`Snapshots PostsHeader should render top posts header 1`] = `
           style={
             Object {
               "position": "relative",
-              "top": "-2px",
+              "top": "-4px",
             }
           }
         >
@@ -2637,7 +2637,7 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                 style={
                   Object {
                     "position": "relative",
-                    "top": "-2px",
+                    "top": "-4px",
                   }
                 }
               >
@@ -4583,7 +4583,7 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                 style={
                   Object {
                     "position": "relative",
-                    "top": "-2px",
+                    "top": "-4px",
                   }
                 }
               >
@@ -6231,7 +6231,7 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                 style={
                   Object {
                     "position": "relative",
-                    "top": "-2px",
+                    "top": "-4px",
                   }
                 }
               >
@@ -8055,7 +8055,7 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                 style={
                   Object {
                     "position": "relative",
-                    "top": "-2px",
+                    "top": "-4px",
                   }
                 }
               >

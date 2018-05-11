@@ -31,7 +31,7 @@ class PostOrderSwitch extends React.Component {
     });
     return (
       <div>
-        <span style={{ top: '-2px', position: 'relative' }}>
+        <span style={{ top: '-4px', position: 'relative' }}>
           <Text size="small">Order</Text>
         </span>
         <ul className={container}>
