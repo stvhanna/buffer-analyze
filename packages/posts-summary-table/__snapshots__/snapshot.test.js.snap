@@ -21,15 +21,15 @@ exports[`Snapshots PostsSummaryTable should render a "no data" state 1`] = `
       }
     >
       <header
-        className="sc-gZMcBi dRDRQC"
+        className="sc-gqjmRU gcxEBF"
       >
         <h2
-          className="sc-gqjmRU liZjsx"
+          className="sc-VigVT koZmyN"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": undefined,
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -42,7 +42,7 @@ exports[`Snapshots PostsSummaryTable should render a "no data" state 1`] = `
         </h2>
       </header>
       <div
-        className="sc-kgoBCf bJmWgG"
+        className="sc-kGXeez lhgIUQ"
         id="js-dom-to-png-posts-summary"
       >
         <div
@@ -99,15 +99,15 @@ exports[`Snapshots PostsSummaryTable should render a loading state 1`] = `
       }
     >
       <header
-        className="sc-gZMcBi dRDRQC"
+        className="sc-gqjmRU gcxEBF"
       >
         <h2
-          className="sc-gqjmRU liZjsx"
+          className="sc-VigVT koZmyN"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": undefined,
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -120,7 +120,7 @@ exports[`Snapshots PostsSummaryTable should render a loading state 1`] = `
         </h2>
       </header>
       <div
-        className="sc-kgoBCf bJmWgG"
+        className="sc-kGXeez lhgIUQ"
         id="js-dom-to-png-posts-summary"
       >
         <div
@@ -248,15 +248,15 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
       }
     >
       <header
-        className="sc-gZMcBi dRDRQC"
+        className="sc-gqjmRU gcxEBF"
       >
         <h2
-          className="sc-gqjmRU liZjsx"
+          className="sc-VigVT koZmyN"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": undefined,
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -269,11 +269,11 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
         </h2>
       </header>
       <div
-        className="sc-kgoBCf bJmWgG"
+        className="sc-kGXeez lhgIUQ"
         id="js-dom-to-png-posts-summary"
       >
         <ul
-          className="sc-chPdSV ebVdFc"
+          className="sc-kgoBCf crtYML"
         >
           <li
             className="sc-ifAKCX ldPJxk"
@@ -312,38 +312,20 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
               <div
                 className="sc-bZQynM hCNVyQ"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "2rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        20
-                      </span>
-                    </span>
+                  <span>
+                    20
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -447,38 +429,20 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
               <div
                 className="sc-bZQynM hCNVyQ"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "2rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        901
-                      </span>
-                    </span>
+                  <span>
+                    901
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -583,38 +547,20 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
               <div
                 className="sc-bZQynM hCNVyQ"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "2rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        1,010
-                      </span>
-                    </span>
+                  <span>
+                    1,010
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -718,38 +664,20 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
               <div
                 className="sc-bZQynM hCNVyQ"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "2rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        568
-                      </span>
-                    </span>
+                  <span>
+                    568
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -854,38 +782,20 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
               <div
                 className="sc-bZQynM hCNVyQ"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "2rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        1
-                      </span>
-                    </span>
+                  <span>
+                    1
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -990,38 +900,20 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
               <div
                 className="sc-bZQynM hCNVyQ"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "2rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        12
-                      </span>
-                    </span>
+                  <span>
+                    12
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
