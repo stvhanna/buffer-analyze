@@ -113,6 +113,30 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
       PDFFormatter.formatWrapper(document.getElementById('root'));
       formatter.formatPage();
       break;
+    case actionTypes.UPLOAD_LOGO:
+      // get the logo file
+      const file = action.logo[0];
+      const reader = new FileReader();
+      reader.onload = (event) => {
+          const base64File = event.target.result;
+          store.dispatch(actions.fetch({
+            name: 'upload_report_logo',
+            args: {
+              reportId: state.report.id,
+              logoImage: base64File,
+            },
+          }));
+      };
+      reader.readAsDataURL(file);
+      break;
+    case actionTypes.DELETE_LOGO:
+      store.dispatch(actions.fetch({
+        name: 'delete_report_logo',
+        args: {
+          reportId: state.report.id,
+        },
+      }));
+      break;
     default:
       break;
   }

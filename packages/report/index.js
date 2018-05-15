@@ -14,6 +14,8 @@ export default connect(
     moveDown: id => dispatch(actions.moveDown(id)),
     deleteChart: id => dispatch(actions.deleteChart(id)),
     parsePageBreaks: () => dispatch(actions.parsePageBreaks()),
+    uploadLogo: logo => dispatch(actions.uploadLogo({ logo })),
+    deleteLogo: () => dispatch(actions.deleteLogo()),
   }),
 )(Report);
 

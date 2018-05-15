@@ -10,12 +10,15 @@ export const actionTypes = keyWrapper('REPORT', {
   MOVE_CHART_DOWN: 'MOVE_CHART_DOWN',
   DELETE_CHART: 'DELETE_CHART',
   PARSE_PAGE_BREAKS: 'PARSE_PAGE_BREAKS',
+  UPLOAD_LOGO: 'UPLOAD_LOGO',
+  DELETE_LOGO: 'DELETE_LOGO',
 });
 
 const initialState = {
   loading: true,
   charts: [],
   name: '',
+  logoUrl: '',
   edit: false,
 };
 
@@ -57,6 +60,7 @@ export default (state = initialState, action) => {
         name: action.result.name,
         charts: action.result.charts,
         dateRange: action.result.date_range,
+        logoUrl: action.result.logo.url,
         loading: false,
       };
     case `move_chart_${asyncDataFetchActionTypes.FETCH_FAIL}`:
@@ -78,6 +82,16 @@ export default (state = initialState, action) => {
         ...state,
         charts: state.charts.filter(chart => chart._id !== action.args.chartId),
       };
+    case `upload_report_logo_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
+      return {
+        ...state,
+        logoUrl: action.result.logo.url,
+      };
+    case `delete_report_logo_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
+      return {
+        ...state,
+        logoUrl: '', // action.result.logo.url ? action.result.logo.url : '',
+      };
     case actionTypes.SAVE_CHANGES:
       return {
         ...state,
@@ -93,6 +107,15 @@ export default (state = initialState, action) => {
       return {
         ...state,
         edit: true,
+      };
+    case actionTypes.UPLOAD_LOGO:
+      return {
+        ...state,
+        logo: action.logo ? action.logo : state.logo,
+      };
+    case actionTypes.DELETE_LOGO:
+      return {
+        ...state,
       };
     default:
       return state;
@@ -121,5 +144,12 @@ export const actions = {
   }),
   parsePageBreaks: () => ({
     type: actionTypes.PARSE_PAGE_BREAKS,
+  }),
+  uploadLogo: logo => ({
+    type: actionTypes.UPLOAD_LOGO,
+    ...logo,
+  }),
+  deleteLogo: () => ({
+    type: actionTypes.DELETE_LOGO,
   }),
 };
