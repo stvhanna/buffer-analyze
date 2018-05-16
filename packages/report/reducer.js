@@ -47,6 +47,11 @@ const moveChart = (chartId, direction, charts) => {
   return moveChartInPosition(position, direction, charts);
 };
 
+const getLogoUrl = (report) => {
+  if (report.logo === undefined) return '';
+  return report.logo.url ? report.logo.url : '';
+};
+
 export default (state = initialState, action) => {
   switch (action.type) {
     case `get_report_${asyncDataFetchActionTypes.FETCH_START}`:
@@ -61,7 +66,7 @@ export default (state = initialState, action) => {
         name: action.result.name,
         charts: action.result.charts,
         dateRange: action.result.date_range,
-        logoUrl: action.result.logo.url,
+        logoUrl: getLogoUrl(action.result),
         loading: false,
       };
     case `move_chart_${asyncDataFetchActionTypes.FETCH_FAIL}`:

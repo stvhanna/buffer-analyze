@@ -291,5 +291,33 @@ describe('middleware', () => {
     });
   });
 
+  // it('UPLOAD_LOGO dispatches upload logo request', () => {
+  //   const action = {
+  //     type: actionTypes.UPLOAD_LOGO,
+  //     logo: [new File(['blob'], 'new_file')],
+  //   };
+  //   middleware(store)(next)(action);
+  //   expect(store.dispatch).toHaveBeenCalledWith(dataFetchActions.fetch({
+  //     name: 'upload_report_logo',
+  //     args: {
+  //       reportId: state.report.id,
+  //       logoImage: action.logo[0],
+  //     },
+  //   }));
+  // });
+
+  it('DELETE_LOGO dispatches delete logo request', () => {
+    const action = {
+      type: actionTypes.DELETE_LOGO,
+    };
+    middleware(store)(next)(action);
+    expect(store.dispatch).toHaveBeenCalledWith(dataFetchActions.fetch({
+      name: 'delete_report_logo',
+      args: {
+        reportId: state.report.id,
+      },
+    }));
+  });
+
   afterEach(() => jest.clearAllMocks());
 });

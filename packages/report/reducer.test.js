@@ -20,6 +20,10 @@ describe('reducer', () => {
       const state = reducer(undefined, {});
       expect(state.edit).toBeFalsy();
     });
+    it('has no logo', () => {
+      const state = reducer(undefined, {});
+      expect(state.logoUrl).toBe('');
+    });
   });
 
   it('receives the name when a new report is selected', () => {
@@ -58,6 +62,21 @@ describe('reducer', () => {
       type: actionTypes.EDIT_NAME,
     });
     expect(state.edit).toBeTruthy();
+  });
+
+  it('UPLOAD_LOGO sets uploading mode', () => {
+    const state = reducer(undefined, {
+      type: actionTypes.UPLOAD_LOGO,
+      logo: 'logo-image',
+    });
+    expect(state.logo).toEqual('logo-image');
+  });
+
+  it('DELETE_LOGO sets delete logo mode', () => {
+    const state = reducer(undefined, {
+      type: actionTypes.DELETE_LOGO,
+    });
+    expect(state.logoUrl).toEqual('');
   });
 
   describe('SAVE_CHANGES', () => {
@@ -191,6 +210,66 @@ describe('reducer', () => {
     });
   });
 
+  describe('uploading and deleting logo', () => {
+    let initialState = null;
+
+    beforeEach(() => {
+      initialState = reducer({
+        logoUrl: 'https://s3-analyze-logo/test.png',
+        isLogoUploading: false,
+      }, {});
+    });
+
+    it('delete logo sets logoUrl to empty string', () => {
+      const state = reducer(initialState, {
+        type: `delete_report_logo_${asyncDataFetchActions.FETCH_SUCCESS}`,
+      });
+      expect(state.logoUrl).toEqual('');
+    });
+
+    it('logo url is empty when report does not have a logo', () => {
+      const state = reducer(undefined, {
+        type: `get_report_${asyncDataFetchActions.FETCH_SUCCESS}`,
+        result: {
+          name: 'A new report',
+          charts: [],
+        },
+      });
+      expect(state.logoUrl).toEqual('');
+    });
+
+    it('logo uploading should appear when the upload is in process', () => {
+      const state = reducer(undefined, {
+        type: `upload_report_logo_${asyncDataFetchActions.FETCH_START}`,
+      });
+      expect(state.isLogoUploading).toBeTruthy();
+    });
+
+    it('logo uploading stops when the upload is finished', () => {
+      const state = reducer(undefined, {
+        type: `upload_report_logo_${asyncDataFetchActions.FETCH_SUCCESS}`,
+        result: {
+          logo: {
+            url: 'https://s3-analyze-logo/test.png',
+          },
+        },
+      });
+      expect(state.isLogoUploading).toBeFalsy();
+    });
+
+    it('logo url is set properly when report has a logo url set', () => {
+      const state = reducer(undefined, {
+        type: `get_report_${asyncDataFetchActions.FETCH_SUCCESS}`,
+        result: {
+          logo: {
+            url: 'https://s3-analyze-logo/test.png',
+          },
+        },
+      });
+      expect(state.logoUrl).toEqual('https://s3-analyze-logo/test.png');
+    });
+  });
+
   describe('actions', () => {
     it('editName', () => {
       expect(actions.editName()).toEqual({
@@ -221,6 +300,18 @@ describe('reducer', () => {
       expect(actions.deleteChart('chart-123')).toEqual({
         type: actionTypes.DELETE_CHART,
         chartId: 'chart-123',
+      });
+    });
+    it('uploadLogo', () => {
+      const logo = ['logo-image'];
+      expect(actions.uploadLogo(['logo-image'])).toEqual({
+        type: actionTypes.UPLOAD_LOGO,
+        ...logo,
+      });
+    });
+    it('deleteLogo', () => {
+      expect(actions.deleteLogo()).toEqual({
+        type: actionTypes.DELETE_LOGO,
       });
     });
   });

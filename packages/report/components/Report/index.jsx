@@ -1,10 +1,8 @@
 import React from 'react';
-import Dropzone from 'react-dropzone';
 import PropTypes from 'prop-types';
 import {
   Text,
   Button,
-  CloseIcon,
 } from '@bufferapp/components';
 import {
   ChartStateLoading as Loading,
@@ -16,45 +14,7 @@ import styled from 'styled-components';
 import ChartFactory from '../ChartFactory';
 import DateRange from '../DateRange';
 import EditTitle from '../EditTitle';
-
-const DropzoneWrapper = styled.div`
-  float: right;
-  height: 64px;
-  width: 160px;
-  position: relative;
-  display: flex;
-  &:hover > button > span {
-    opacity: 1;
-  }
-`;
-
-const DropzonContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  text-align: center;
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 3px;
-  border-color: #D5E3EF;
-`;
-
-const LogoPlaceholder = styled.div`
-  height: 64px;
-  width: 160px;
-  position: relative;
-  box-sizing: border-box;
-  cursor: pointer;
-  text-align: right;
-
-  &:hover {
-    border-width: 1px;
-    border-style: dotted;
-    border-radius: 3px;
-    border-color: #D5E3EF;
-    opacity: 0.6;
-  }
-`;
+import LogoUpload from '../LogoUpload';
 
 const Title = styled.h1`
   display: inline-block;
@@ -62,47 +22,6 @@ const Title = styled.h1`
   font-size: 2rem;
   font-weight: bold;
   margin: 0 0 .5rem 0;
-`;
-
-const LogoImage = styled.img`
-  max-width: 100%;
-  max-height: 100%;
-`;
-
-const DropZone = {
-  height: '64px',
-  width: '160px',
-};
-
-const UploadLogoText = styled.span`
-  display: block;
-  margin-top: 13px;
-`;
-
-const UploadingText = styled.span`
-  display: block;
-  margin-top: 21px;
-`;
-
-const Box = styled.span`
-  position: absolute;
-  top: -12px;
-  right: -12px;
-  background: #FFFFFF;
-  border: 1px solid #D5E3EF;
-  box-sizing: border-box;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-  width: 1.75rem;
-  height: 1.75rem;
-  align-items: center;
-  justify-content: center;
-  border-radius: 3px;
-  margin: 0 0 0 .25rem;
-  z-index: 9999;
-  border-radius: 50%;
-  display: flex;
-  opacity: 0;
-  transition: opacity 50ms linear;
 `;
 
 const Container = styled.div`
@@ -143,39 +62,12 @@ class Report extends React.Component {
           { edit && <EditTitle name={name} saveChanges={saveChanges} />}
           { !edit &&
             <Container>
-              <DropzoneWrapper>
-                {!logoUrl &&
-                  <DropzonContainer>
-                    <UploadLogoText>
-                      {!isLogoUploading && <Text weight="bold">Upload logo</Text>}
-                    </UploadLogoText>
-                    {!isLogoUploading && <Text size="small" color="shuttleGray">PNG or JPG</Text>}
-                    {isLogoUploading && <UploadingText>
-                      <Text weight="bold">Uploading...</Text>
-                    </UploadingText>}
-                  </DropzonContainer>
-                }
-                <Dropzone
-                  name="file"
-                  disablePreview
-                  onDropAccepted={uploadLogo}
-                  multiple={false}
-                  accept="image/png,image/jpeg"
-                  style={DropZone}
-                >
-                  <LogoPlaceholder>
-                    <LogoImage src={logoUrl} />
-                  </LogoPlaceholder>
-                </Dropzone>
-                {logoUrl &&
-                  <Button noStyle onClick={() => deleteLogo()}>
-                    <Box>
-                      <CloseIcon />
-                    </Box>
-                  </Button>
-                }
-              </DropzoneWrapper>
-
+              <LogoUpload
+                logoUrl={logoUrl}
+                uploadLogo={uploadLogo}
+                deleteLogo={deleteLogo}
+                isLogoUploading={isLogoUploading}
+              />
               <Button noStyle onClick={editName}>
                 <Title>{name}</Title>
               </Button>
