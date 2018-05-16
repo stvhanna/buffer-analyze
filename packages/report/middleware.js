@@ -26,6 +26,8 @@ const dateRangesDoNotMatch = (reportDate, dateRange) => (
 export default store => next => (action) => { // eslint-disable-line no-unused-vars
   const state = store.getState();
   let formatter;
+  let logoFile;
+  let fileReader;
   switch (action.type) {
     case dateActionTypes.SET_DATE_RANGE: {
       if (!state.report.loading &&
@@ -115,19 +117,18 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
       break;
     case actionTypes.UPLOAD_LOGO:
       // get the logo file
-      const file = action.logo[0];
-      const reader = new FileReader();
-      reader.onload = (event) => {
-          const base64File = event.target.result;
-          store.dispatch(actions.fetch({
-            name: 'upload_report_logo',
-            args: {
-              reportId: state.report.id,
-              logoImage: base64File,
-            },
-          }));
+      logoFile = action.logo[0];
+      fileReader = new FileReader();
+      fileReader.onload = (event) => {
+        store.dispatch(actions.fetch({
+          name: 'upload_report_logo',
+          args: {
+            reportId: state.report.id,
+            logoImage: event.target.result,
+          },
+        }));
       };
-      reader.readAsDataURL(file);
+      fileReader.readAsDataURL(logoFile);
       break;
     case actionTypes.DELETE_LOGO:
       store.dispatch(actions.fetch({
