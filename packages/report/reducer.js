@@ -20,6 +20,7 @@ const initialState = {
   name: '',
   logoUrl: '',
   edit: false,
+  isLogoUploading: false,
 };
 
 const getOppositeDirection = direction =>
@@ -82,9 +83,15 @@ export default (state = initialState, action) => {
         ...state,
         charts: state.charts.filter(chart => chart._id !== action.args.chartId),
       };
+    case `upload_report_logo_${asyncDataFetchActionTypes.FETCH_START}`:
+      return {
+        ...state,
+        isLogoUploading: true,
+      };
     case `upload_report_logo_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
       return {
         ...state,
+        isLogoUploading: false,
         logoUrl: action.result.logo.url,
       };
     case `delete_report_logo_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:

@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import {
   Text,
   Button,
-  CircleXIcon,
   CloseIcon,
 } from '@bufferapp/components';
 import {
@@ -18,12 +17,26 @@ import ChartFactory from '../ChartFactory';
 import DateRange from '../DateRange';
 import EditTitle from '../EditTitle';
 
-const Title = styled.h1`
-  display: inline-block;
-  color: #000000;
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 0 0 .5rem 0;
+const DropzoneWrapper = styled.div`
+  float: right;
+  height: 64px;
+  width: 160px;
+  position: relative;
+  display: flex;
+  &:hover > button > span {
+    opacity: 1;
+  }
+`;
+
+const DropzonContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: #D5E3EF;
 `;
 
 const LogoPlaceholder = styled.div`
@@ -33,36 +46,27 @@ const LogoPlaceholder = styled.div`
   box-sizing: border-box;
   cursor: pointer;
   text-align: right;
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 3px;
-  border-color: #D5E3EF;
+
+  &:hover {
+    border-width: 1px;
+    border-style: dotted;
+    border-radius: 3px;
+    border-color: #D5E3EF;
+    opacity: 0.6;
+  }
+`;
+
+const Title = styled.h1`
+  display: inline-block;
+  color: #000000;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 .5rem 0;
 `;
 
 const LogoImage = styled.img`
   max-width: 100%;
   max-height: 100%;
-`;
-
-const DropzoneWrapper = styled.div`
-  float: right;
-  height: 64px;
-  width: 160px;
-  position: relative;
-
-  &:hover > button > span {
-    opacity: 1;
-  }
-`;
-
-const DropzonContainer = styled.div`
-  padding: 10px;
-  height: auto;
-  position: absolute;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
 `;
 
 const DropZone = {
@@ -72,6 +76,12 @@ const DropZone = {
 
 const UploadLogoText = styled.span`
   display: block;
+  margin-top: 13px;
+`;
+
+const UploadingText = styled.span`
+  display: block;
+  margin-top: 21px;
 `;
 
 const Box = styled.span`
@@ -122,28 +132,10 @@ class Report extends React.Component {
     return hasStoppedLoading && isExportView;
   }
 
-  // onImageDrop(files) {
-  //   console.log(files[0]);
-  //   console.log('onImageDrop');
-  // }
-
-  onDropRejected(files) {
-    // 5000000
-    const uploadingImage = files[0];
-    if (uploadingImage.size > 50) {
-      console.log(this.props);
-      this.props.hasUploadLogoError = 'Image file size is too large';
-    }
-  }
-
-  // onDropRejected() {
-  //   const hasError = this.props.hasUploadLogoError = true;
-  // }
-
   render() {
     const { name, dateRange, charts, loading,
       edit, saveChanges, editName, moveUp, moveDown, deleteChart, exporting, uploadLogo,
-        logoUrl, deleteLogo, hasUploadLogoError } = this.props;
+        logoUrl, deleteLogo, isLogoUploading } = this.props;
     if (loading) return <Loading active noBorder />;
     return (
       <div id="report-page">
@@ -155,21 +147,21 @@ class Report extends React.Component {
                 {!logoUrl &&
                   <DropzonContainer>
                     <UploadLogoText>
-                      <Text weight="bold">Upload logo</Text>
+                      {!isLogoUploading && <Text weight="bold">Upload logo</Text>}
                     </UploadLogoText>
-                    {!hasUploadLogoError && <Text size="small" color="shuttleGray">PNG or JPG &middot; 5mb max</Text>}
-                    {hasUploadLogoError && <Text size="small" color="torchRed">Image file size is too large</Text>}
+                    {!isLogoUploading && <Text size="small" color="shuttleGray">PNG or JPG</Text>}
+                    {isLogoUploading && <UploadingText>
+                      <Text weight="bold">Uploading...</Text>
+                    </UploadingText>}
                   </DropzonContainer>
                 }
                 <Dropzone
                   name="file"
-                  maxSize={5000000}
                   disablePreview
                   onDropAccepted={uploadLogo}
                   multiple={false}
                   accept="image/png,image/jpeg"
                   style={DropZone}
-                  // onDropRejected={this.onDropRejected.bind(this)}
                 >
                   <LogoPlaceholder>
                     <LogoImage src={logoUrl} />
@@ -210,7 +202,7 @@ Report.defaultProps = {
   edit: false,
   dateRange: {},
   charts: [],
-  hasUploadLogoError: false,
+  isLogoUploading: false,
 };
 
 Report.propTypes = {
@@ -226,7 +218,7 @@ Report.propTypes = {
   charts: PropTypes.arrayOf(PropTypes.shape({
     chart_id: PropTypes.string,
   }).isRequired),
-  logoUrl: PropTypes.string,
+  logoUrl: PropTypes.string.isRequired,
   editName: PropTypes.func.isRequired,
   moveUp: PropTypes.func.isRequired,
   moveDown: PropTypes.func.isRequired,
@@ -234,7 +226,7 @@ Report.propTypes = {
   parsePageBreaks: PropTypes.func.isRequired,
   uploadLogo: PropTypes.func.isRequired,
   deleteLogo: PropTypes.func.isRequired,
-  hasUploadLogoError: PropTypes.bool,
+  isLogoUploading: PropTypes.bool,
 };
 
 export default Report;
