@@ -102,6 +102,58 @@ const instagramConfig = {
   },
 };
 
+const twitterConfig = {
+  posts_count: {
+    label: 'Tweets',
+    key: 'posts_count',
+  },
+
+  impressions: {
+    label: 'Impressions',
+    key: 'impressions',
+  },
+
+  retweets: {
+    label: 'Retweets',
+    key: 'retweets',
+  },
+
+  favorites: {
+    label: 'Likes',
+    key: 'favorites',
+  },
+
+  url_clicks: {
+    label: 'Clicks',
+    key: 'url_clicks',
+  },
+
+  replies: {
+    label: 'Replies',
+    key: 'replies',
+  },
+
+  followers: {
+    label: 'Total Followers',
+    key: 'followers',
+  },
+
+  new_followers: {
+    label: 'New Fans',
+    key: 'new_followers',
+  },
+
+  engagement_rate: {
+    label: 'Engagement Rate',
+    key: 'engagement_rate',
+  },
+
+  engagements: {
+    label: 'Engagements',
+    key: 'engagements',
+  },
+};
+
 module.exports = {
   facebook: {
     config: facebookConfig,
@@ -130,6 +182,21 @@ module.exports = {
       'video_views',
       'new_followers',
       'followers',
+      'engagement_rate',
+    ],
+  },
+  twitter: {
+    config: twitterConfig,
+    orderedKeys: [
+      'followers',
+      'posts_count',
+      'impressions',
+      'engagements',
+      'retweets',
+      'favorites',
+      'url_clicks',
+      'replies',
+      'new_followers',
       'engagement_rate',
     ],
   },

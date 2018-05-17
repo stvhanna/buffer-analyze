@@ -22,9 +22,6 @@ const ContextualCompare = ({
   profileService,
   ...props
 }) => {
-  if (profileService === 'twitter') {
-    return null;
-  }
   return (
     <ChartCard>
       <ChartHeader>

@@ -8,7 +8,7 @@ const Toolbar = style.div`
   justify-content: space-between;
   background: ${white};
   padding: 0.75rem 0.5rem calc(1rem - 0.07rem);
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   border-bottom: 1px solid ${mystic};
   box-sizing: border-box;
 `;

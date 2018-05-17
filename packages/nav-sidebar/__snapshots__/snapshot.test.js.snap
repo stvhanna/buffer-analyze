@@ -30,15 +30,8 @@ exports[`Snapshots Item active state 1`] = `
       target="_self"
     >
       <span
-        style={
-          Object {
-            "backgroundColor": "rgba(22, 142, 234, .1)",
-            "borderRadius": "4px",
-            "display": "block",
-            "margin": "0 0.5rem",
-            "padding": "0.75rem 0.5rem",
-          }
-        }
+        className="sc-bdVaJa ijtgk"
+        selected={true}
       >
         <span
           style={
@@ -88,14 +81,8 @@ exports[`Snapshots Item normal state 1`] = `
       target="_self"
     >
       <span
-        style={
-          Object {
-            "borderRadius": "4px",
-            "display": "block",
-            "margin": "0 0.5rem",
-            "padding": "0.75rem 0.5rem",
-          }
-        }
+        className="sc-bdVaJa eZRxo"
+        selected={false}
       >
         <span
           style={
@@ -160,15 +147,8 @@ exports[`Snapshots NavSidebar if there are no profiles it should not show the In
         target="_self"
       >
         <span
-          style={
-            Object {
-              "backgroundColor": "rgba(22, 142, 234, .1)",
-              "borderRadius": "4px",
-              "display": "block",
-              "margin": "0 0.5rem",
-              "padding": "0.75rem 0.5rem",
-            }
-          }
+          className="sc-bdVaJa ijtgk"
+          selected={true}
         >
           <span
             style={
@@ -241,14 +221,8 @@ exports[`Snapshots NavSidebar if there are no profiles it should not show the In
           target="_self"
         >
           <span
-            style={
-              Object {
-                "borderRadius": "4px",
-                "display": "block",
-                "margin": "0 0.5rem",
-                "padding": "0.75rem 0.5rem",
-              }
-            }
+            className="sc-bdVaJa eZRxo"
+            selected={false}
           >
             <span
               style={
@@ -283,14 +257,8 @@ exports[`Snapshots NavSidebar if there are no profiles it should not show the In
           target="_self"
         >
           <span
-            style={
-              Object {
-                "borderRadius": "4px",
-                "display": "block",
-                "margin": "0 0.5rem",
-                "padding": "0.75rem 0.5rem",
-              }
-            }
+            className="sc-bdVaJa eZRxo"
+            selected={false}
           >
             <span
               style={
@@ -303,6 +271,42 @@ exports[`Snapshots NavSidebar if there are no profiles it should not show the In
               }
             >
               Posts
+            </span>
+          </span>
+        </a>
+        <a
+          href="/answers"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            className="sc-bdVaJa eZRxo"
+            selected={false}
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Answers
             </span>
           </span>
         </a>
@@ -364,14 +368,8 @@ exports[`Snapshots NavSidebar if there are no profiles it should not show the In
           target="_self"
         >
           <span
-            style={
-              Object {
-                "borderRadius": "4px",
-                "display": "block",
-                "margin": "0 0.5rem",
-                "padding": "0.75rem 0.5rem",
-              }
-            }
+            className="sc-bdVaJa eZRxo"
+            selected={false}
           >
             <span
               style={
@@ -406,14 +404,8 @@ exports[`Snapshots NavSidebar if there are no profiles it should not show the In
           target="_self"
         >
           <span
-            style={
-              Object {
-                "borderRadius": "4px",
-                "display": "block",
-                "margin": "0 0.5rem",
-                "padding": "0.75rem 0.5rem",
-              }
-            }
+            className="sc-bdVaJa eZRxo"
+            selected={false}
           >
             <span
               style={
@@ -456,10 +448,17 @@ exports[`Snapshots NavSidebar if there are no profiles it should not show the In
           target="_self"
         >
           <span
-            className="sc-bdVaJa jeXJBe"
+            className="sc-bwzfXH jkMRYo"
           >
             <span
-              className="sc-bwzfXH bfuxIT"
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
             >
               Send Feedback
             </span>
@@ -516,15 +515,8 @@ exports[`Snapshots NavSidebar should show nav sidebar with Dashboard as active l
         target="_self"
       >
         <span
-          style={
-            Object {
-              "backgroundColor": "rgba(22, 142, 234, .1)",
-              "borderRadius": "4px",
-              "display": "block",
-              "margin": "0 0.5rem",
-              "padding": "0.75rem 0.5rem",
-            }
-          }
+          className="sc-bdVaJa ijtgk"
+          selected={true}
         >
           <span
             style={
@@ -597,14 +589,8 @@ exports[`Snapshots NavSidebar should show nav sidebar with Dashboard as active l
           target="_self"
         >
           <span
-            style={
-              Object {
-                "borderRadius": "4px",
-                "display": "block",
-                "margin": "0 0.5rem",
-                "padding": "0.75rem 0.5rem",
-              }
-            }
+            className="sc-bdVaJa eZRxo"
+            selected={false}
           >
             <span
               style={
@@ -639,14 +625,8 @@ exports[`Snapshots NavSidebar should show nav sidebar with Dashboard as active l
           target="_self"
         >
           <span
-            style={
-              Object {
-                "borderRadius": "4px",
-                "display": "block",
-                "margin": "0 0.5rem",
-                "padding": "0.75rem 0.5rem",
-              }
-            }
+            className="sc-bdVaJa eZRxo"
+            selected={false}
           >
             <span
               style={
@@ -659,6 +639,42 @@ exports[`Snapshots NavSidebar should show nav sidebar with Dashboard as active l
               }
             >
               Posts
+            </span>
+          </span>
+        </a>
+        <a
+          href="/answers"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            className="sc-bdVaJa eZRxo"
+            selected={false}
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Answers
             </span>
           </span>
         </a>
@@ -720,14 +736,8 @@ exports[`Snapshots NavSidebar should show nav sidebar with Dashboard as active l
           target="_self"
         >
           <span
-            style={
-              Object {
-                "borderRadius": "4px",
-                "display": "block",
-                "margin": "0 0.5rem",
-                "padding": "0.75rem 0.5rem",
-              }
-            }
+            className="sc-bdVaJa eZRxo"
+            selected={false}
           >
             <span
               style={
@@ -762,14 +772,8 @@ exports[`Snapshots NavSidebar should show nav sidebar with Dashboard as active l
           target="_self"
         >
           <span
-            style={
-              Object {
-                "borderRadius": "4px",
-                "display": "block",
-                "margin": "0 0.5rem",
-                "padding": "0.75rem 0.5rem",
-              }
-            }
+            className="sc-bdVaJa eZRxo"
+            selected={false}
           >
             <span
               style={
@@ -812,10 +816,17 @@ exports[`Snapshots NavSidebar should show nav sidebar with Dashboard as active l
           target="_self"
         >
           <span
-            className="sc-bdVaJa jeXJBe"
+            className="sc-bwzfXH jkMRYo"
           >
             <span
-              className="sc-bwzfXH bfuxIT"
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
             >
               Send Feedback
             </span>
@@ -872,14 +883,8 @@ exports[`Snapshots NavSidebar should show only services for which the user has p
         target="_self"
       >
         <span
-          style={
-            Object {
-              "borderRadius": "4px",
-              "display": "block",
-              "margin": "0 0.5rem",
-              "padding": "0.75rem 0.5rem",
-            }
-          }
+          className="sc-bdVaJa eZRxo"
+          selected={false}
         >
           <span
             style={
@@ -952,14 +957,8 @@ exports[`Snapshots NavSidebar should show only services for which the user has p
           target="_self"
         >
           <span
-            style={
-              Object {
-                "borderRadius": "4px",
-                "display": "block",
-                "margin": "0 0.5rem",
-                "padding": "0.75rem 0.5rem",
-              }
-            }
+            className="sc-bdVaJa eZRxo"
+            selected={false}
           >
             <span
               style={
@@ -994,14 +993,8 @@ exports[`Snapshots NavSidebar should show only services for which the user has p
           target="_self"
         >
           <span
-            style={
-              Object {
-                "borderRadius": "4px",
-                "display": "block",
-                "margin": "0 0.5rem",
-                "padding": "0.75rem 0.5rem",
-              }
-            }
+            className="sc-bdVaJa eZRxo"
+            selected={false}
           >
             <span
               style={
@@ -1014,6 +1007,42 @@ exports[`Snapshots NavSidebar should show only services for which the user has p
               }
             >
               Posts
+            </span>
+          </span>
+        </a>
+        <a
+          href="/answers"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            className="sc-bdVaJa eZRxo"
+            selected={false}
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Answers
             </span>
           </span>
         </a>
@@ -1075,14 +1104,8 @@ exports[`Snapshots NavSidebar should show only services for which the user has p
           target="_self"
         >
           <span
-            style={
-              Object {
-                "borderRadius": "4px",
-                "display": "block",
-                "margin": "0 0.5rem",
-                "padding": "0.75rem 0.5rem",
-              }
-            }
+            className="sc-bdVaJa eZRxo"
+            selected={false}
           >
             <span
               style={
@@ -1117,14 +1140,8 @@ exports[`Snapshots NavSidebar should show only services for which the user has p
           target="_self"
         >
           <span
-            style={
-              Object {
-                "borderRadius": "4px",
-                "display": "block",
-                "margin": "0 0.5rem",
-                "padding": "0.75rem 0.5rem",
-              }
-            }
+            className="sc-bdVaJa eZRxo"
+            selected={false}
           >
             <span
               style={
@@ -1167,10 +1184,17 @@ exports[`Snapshots NavSidebar should show only services for which the user has p
           target="_self"
         >
           <span
-            className="sc-bdVaJa jeXJBe"
+            className="sc-bwzfXH jkMRYo"
           >
             <span
-              className="sc-bwzfXH bfuxIT"
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
             >
               Send Feedback
             </span>

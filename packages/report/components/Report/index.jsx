@@ -20,7 +20,7 @@ const Title = styled.h1`
   display: inline-block;
   color: #000000;
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 500;
   margin: 0 0 .5rem 0;
 `;
 

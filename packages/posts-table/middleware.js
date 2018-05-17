@@ -85,7 +85,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
           startDate: getState().date.startDate,
           endDate: getState().date.endDate,
           sortBy: action.metric.apiKey,
-          descending: action.descending,
+          descending: getState().posts.isDescendingSelected,
           limit: getState().posts.activePostsCount,
         },
       }));
@@ -100,6 +100,19 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
           sortBy: getState().posts.selectedMetric.apiKey,
           descending: getState().posts.isDescendingSelected,
           limit: action.postsCount !== 'All' ? action.postsCount : undefined,
+        },
+      }));
+      break;
+    case postsActionTypes.SELECT_TOP_POSTS_ORDER:
+      dispatch(actions.fetch({
+        name: 'posts',
+        args: {
+          profileId: getState().profiles.selectedProfileId,
+          startDate: getState().date.startDate,
+          endDate: getState().date.endDate,
+          sortBy: getState().posts.selectedMetric.apiKey,
+          descending: action.isDescendingSelected,
+          limit: getState().posts.activePostsCount,
         },
       }));
       break;

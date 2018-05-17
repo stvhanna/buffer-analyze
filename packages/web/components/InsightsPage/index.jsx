@@ -11,6 +11,7 @@ import ExportPicker from '@bufferapp/analyze-export-picker';
 import { Toolbar } from '@bufferapp/analyze-shared-components';
 import PostsTab from '../PostsTab';
 import OverviewTab from '../OverviewTab';
+import AnswersTab from '../AnswersTab';
 
 const pageStyle = {
   display: 'flex',
@@ -86,7 +87,7 @@ const InsightsPage = ({
               <DatePicker />
             </div>
             <div style={toolbarExport}>
-              <ExportPicker filename={`buffer-${tabId === 'overview' ? 'overview' : 'posts'}-analytics`} />
+              <ExportPicker filename={`buffer-${tabId}-analytics`} />
             </div>
           </div>
         </Toolbar>
@@ -101,6 +102,10 @@ const InsightsPage = ({
               <Route
                 path="/posts/:id?"
                 component={PostsTab}
+              />
+              <Route
+                path="/answers/:id?"
+                component={AnswersTab}
               />
             </Switch>
           </div>

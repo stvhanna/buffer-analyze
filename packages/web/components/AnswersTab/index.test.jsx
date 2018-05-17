@@ -4,18 +4,15 @@ import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import configureMockStore from 'redux-mock-store';
 
-import SummaryTable from '@bufferapp/summary-table';
-import AverageTable from '@bufferapp/average-table';
-import CompareChart from '@bufferapp/compare-chart';
 import ContextualCompare from '@bufferapp/contextual-compare';
 
-import OverviewTab from './index';
+import AnswersTab from './index';
 
 timezoneMock.register('US/Eastern');
 
 configure({ adapter: new Adapter() });
-describe('web/OverviewTab', () => {
-  it('should render the overview for facebook', () => {
+describe('web/AnswersTab', () => {
+  it('should render the answers for facebook', () => {
     const mockStore = configureMockStore();
     const store = mockStore({});
     const match = {
@@ -24,18 +21,14 @@ describe('web/OverviewTab', () => {
         id: 'afs42',
       },
     };
-    const component = shallow(<OverviewTab
+    const component = shallow(<AnswersTab
       match={match}
       store={store}
     />).dive();
-    expect(component.find(SummaryTable).length)
-      .toBe(1);
-    expect(component.find(AverageTable).length)
-      .toBe(1);
-    expect(component.find(CompareChart).length)
+    expect(component.find(ContextualCompare).length)
       .toBe(1);
   });
-  it('should render the overview for twitter', () => {
+  it('should render the answers for twitter', () => {
     const mockStore = configureMockStore();
     const store = mockStore({});
     const match = {
@@ -44,18 +37,14 @@ describe('web/OverviewTab', () => {
         id: 'afs42',
       },
     };
-    const component = shallow(<OverviewTab
+    const component = shallow(<AnswersTab
       match={match}
       store={store}
     />).dive();
-    expect(component.find(SummaryTable).length)
-      .toBe(1);
-    expect(component.find(AverageTable).length)
-      .toBe(1);
-    expect(component.find(CompareChart).length)
+    expect(component.find(ContextualCompare).length)
       .toBe(1);
   });
-  it('should render the overview for instagram', () => {
+  it('should render the answers for instagram', () => {
     const mockStore = configureMockStore();
     const store = mockStore({});
     const match = {
@@ -64,13 +53,11 @@ describe('web/OverviewTab', () => {
         id: 'afs42',
       },
     };
-    const component = shallow(<OverviewTab
+    const component = shallow(<AnswersTab
       match={match}
       store={store}
     />).dive();
-    expect(component.find(SummaryTable).length)
-      .toBe(1);
-    expect(component.find(CompareChart).length)
+    expect(component.find(ContextualCompare).length)
       .toBe(1);
   });
 });

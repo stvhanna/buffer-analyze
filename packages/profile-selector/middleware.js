@@ -5,7 +5,7 @@ import { actionTypes } from '@bufferapp/async-data-fetch';
 import { actions as performanceActions } from '@bufferapp/performance-tracking';
 import { actions as profilesActions, actionTypes as profileActionTypes } from './reducer';
 
-const INSIGHTS_PATH_REGEX = /(overview|posts)\/?(.*)$/;
+const INSIGHTS_PATH_REGEX = /(overview|posts|answers)\/?(.*)$/;
 
 const isInsightsRoute = route => route.match(INSIGHTS_PATH_REGEX);
 
@@ -54,7 +54,7 @@ export default ({ dispatch, getState }) => next => (action) => {
       break;
     }
     case LOCATION_CHANGE:
-      if (action.payload.pathname.match(/(overview|posts)\/?$/)) {
+      if (action.payload.pathname.match(/(overview|posts|answers)\/?$/)) {
         let profile = null;
         if (getState().profiles.selectedProfile === null) {
           profile = getState().profiles.profiles[0];

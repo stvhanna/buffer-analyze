@@ -21,15 +21,15 @@ exports[`Snapshots ComparisonChart [TESTED] should hide Instagram in the reach c
       }
     >
       <header
-        className="sc-gZMcBi dRDRQC"
+        className="sc-gqjmRU gcxEBF"
       >
         <h2
-          className="sc-gqjmRU liZjsx"
+          className="sc-VigVT koZmyN"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": undefined,
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -42,7 +42,7 @@ exports[`Snapshots ComparisonChart [TESTED] should hide Instagram in the reach c
         </h2>
       </header>
       <div
-        className="sc-jKJlTe cLGwIa"
+        className="sc-eNQAEJ gjMhBy"
       >
         <div>
           <div
@@ -53,17 +53,17 @@ exports[`Snapshots ComparisonChart [TESTED] should hide Instagram in the reach c
             }
           />
           <section
-            className="sc-kGXeez dxxTYX"
+            className="sc-kpOJdX dTTjLI"
           >
             <ul
-              className="sc-kgoBCf gojEPM"
+              className="sc-kGXeez gXOssz"
             >
               <li
                 className="sc-ifAKCX dYwfOF"
                 width="25%"
               >
                 <div
-                  className="sc-kpOJdX hQcrbI"
+                  className="sc-dxgOiQ fIsgqo"
                 >
                   <span
                     className="sc-dnqmqq hHLyWY"
@@ -163,7 +163,7 @@ exports[`Snapshots ComparisonChart [TESTED] should hide Instagram in the reach c
                         }
                       >
                         <div
-                          className="sc-dxgOiQ OhWjr"
+                          className="sc-ckVGcZ ifWboW"
                         >
                           <span
                             style={
@@ -184,38 +184,20 @@ exports[`Snapshots ComparisonChart [TESTED] should hide Instagram in the reach c
                   <div
                     className="sc-bZQynM hCNVyQ"
                   >
-                    <div
+                    <span
                       style={
                         Object {
-                          "display": "inline-block",
+                          "color": "#323b43",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "2rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
-                      <span
-                        style={
-                          Object {
-                            "color": "#323b43",
-                            "fontSize": "2rem",
-                            "fontWeight": 600,
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "color": "#323b43",
-                              "fontFamily": "\\"Roboto\\", sans-serif",
-                              "fontSize": "2rem",
-                              "fontWeight": 700,
-                            }
-                          }
-                        >
-                          <span>
-                            400
-                          </span>
-                        </span>
+                      <span>
+                        400
                       </span>
-                    </div>
+                    </span>
                     <div>
                       <span
                         style={
@@ -284,7 +266,7 @@ exports[`Snapshots ComparisonChart [TESTED] should hide Instagram in the reach c
               </li>
             </ul>
             <div
-              className="sc-ckVGcZ dMxzec"
+              className="sc-jKJlTe eLalXb"
             >
               <div
                 style={
@@ -387,15 +369,15 @@ exports[`Snapshots ComparisonChart [TESTED] should render a "no data" state 1`] 
       }
     >
       <header
-        className="sc-gZMcBi dRDRQC"
+        className="sc-gqjmRU gcxEBF"
       >
         <h2
-          className="sc-gqjmRU liZjsx"
+          className="sc-VigVT koZmyN"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": undefined,
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -408,7 +390,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render a "no data" state 1`] 
         </h2>
       </header>
       <div
-        className="sc-jKJlTe cLGwIa"
+        className="sc-eNQAEJ gjMhBy"
       >
         <div
           className="sc-bdVaJa fWzNTu"
@@ -464,15 +446,15 @@ exports[`Snapshots ComparisonChart [TESTED] should render a loading state 1`] = 
       }
     >
       <header
-        className="sc-gZMcBi dRDRQC"
+        className="sc-gqjmRU gcxEBF"
       >
         <h2
-          className="sc-gqjmRU liZjsx"
+          className="sc-VigVT koZmyN"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": undefined,
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -485,7 +467,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render a loading state 1`] = 
         </h2>
       </header>
       <div
-        className="sc-jKJlTe cLGwIa"
+        className="sc-eNQAEJ gjMhBy"
       >
         <div
           style={
@@ -612,15 +594,15 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
       }
     >
       <header
-        className="sc-gZMcBi dRDRQC"
+        className="sc-gqjmRU gcxEBF"
       >
         <h2
-          className="sc-gqjmRU liZjsx"
+          className="sc-VigVT koZmyN"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": undefined,
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -633,7 +615,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
         </h2>
       </header>
       <div
-        className="sc-jKJlTe cLGwIa"
+        className="sc-eNQAEJ gjMhBy"
       >
         <div>
           <div
@@ -644,17 +626,17 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
             }
           />
           <section
-            className="sc-kGXeez dxxTYX"
+            className="sc-kpOJdX dTTjLI"
           >
             <ul
-              className="sc-kgoBCf gojEPM"
+              className="sc-kGXeez gXOssz"
             >
               <li
                 className="sc-ifAKCX dYwfOF"
                 width="25%"
               >
                 <div
-                  className="sc-kpOJdX hQcrbI"
+                  className="sc-dxgOiQ fIsgqo"
                 >
                   <span
                     className="sc-dnqmqq hHLyWY"
@@ -754,7 +736,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
                         }
                       >
                         <div
-                          className="sc-dxgOiQ OhWjr"
+                          className="sc-ckVGcZ ifWboW"
                         >
                           <span
                             style={
@@ -775,38 +757,20 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
                   <div
                     className="sc-bZQynM hCNVyQ"
                   >
-                    <div
+                    <span
                       style={
                         Object {
-                          "display": "inline-block",
+                          "color": "#323b43",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "2rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
-                      <span
-                        style={
-                          Object {
-                            "color": "#323b43",
-                            "fontSize": "2rem",
-                            "fontWeight": 600,
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "color": "#323b43",
-                              "fontFamily": "\\"Roboto\\", sans-serif",
-                              "fontSize": "2rem",
-                              "fontWeight": 700,
-                            }
-                          }
-                        >
-                          <span>
-                            400
-                          </span>
-                        </span>
+                      <span>
+                        400
                       </span>
-                    </div>
+                    </span>
                     <div>
                       <span
                         style={
@@ -878,7 +842,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
                 width="25%"
               >
                 <div
-                  className="sc-kpOJdX hQcrbI"
+                  className="sc-dxgOiQ fIsgqo"
                 >
                   <span
                     className="sc-dnqmqq hHLyWY"
@@ -993,7 +957,7 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
                         }
                       >
                         <div
-                          className="sc-dxgOiQ OhWjr"
+                          className="sc-ckVGcZ ifWboW"
                         >
                           <span
                             style={
@@ -1014,38 +978,20 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
                   <div
                     className="sc-bZQynM hCNVyQ"
                   >
-                    <div
+                    <span
                       style={
                         Object {
-                          "display": "inline-block",
+                          "color": "#323b43",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "2rem",
+                          "fontWeight": 700,
                         }
                       }
                     >
-                      <span
-                        style={
-                          Object {
-                            "color": "#323b43",
-                            "fontSize": "2rem",
-                            "fontWeight": 600,
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "color": "#323b43",
-                              "fontFamily": "\\"Roboto\\", sans-serif",
-                              "fontSize": "2rem",
-                              "fontWeight": 700,
-                            }
-                          }
-                        >
-                          <span>
-                            700
-                          </span>
-                        </span>
+                      <span>
+                        700
                       </span>
-                    </div>
+                    </span>
                     <div>
                       <span
                         style={
@@ -1133,7 +1079,7 @@ exports[`Snapshots ComparisonChartTooltip [TESTED] should render the tooltip 1`]
     }
   >
     <div
-      className="sc-chPdSV gBydfm"
+      className="sc-kgoBCf iabSNB"
     >
       <span>
         <span

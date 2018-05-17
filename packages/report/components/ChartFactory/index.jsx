@@ -63,13 +63,13 @@ const Separator = styled.section`
 const TitleWrapper = styled.div`
   background: transparent;
   color: #333B43;
-  padding: 0.5rem 0.4rem 0.5rem 0;
-  border: 3px solid #333B43;
-  border-width: 0 0 3px;
+  padding: 0.5rem 0.4rem 0.35rem 0;
+  border: 2px solid #333B43;
+  border-width: 0 0 2px;
 `;
 
 const ProfileWrapper = styled.div`
-  padding: 0.5rem 0.1rem 0.25rem;
+  padding: 0.4rem 0.1rem 0.25rem;
 `;
 
 const ChartFactory = ({ charts, moveUp, moveDown, deleteChart, exporting }) =>

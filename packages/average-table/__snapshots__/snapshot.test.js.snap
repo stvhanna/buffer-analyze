@@ -21,15 +21,15 @@ exports[`Snapshots AverageTable should render a "no data" state 1`] = `
       }
     >
       <header
-        className="sc-gZMcBi dRDRQC"
+        className="sc-gqjmRU gcxEBF"
       >
         <h2
-          className="sc-gqjmRU liZjsx"
+          className="sc-VigVT koZmyN"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": undefined,
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -41,7 +41,7 @@ exports[`Snapshots AverageTable should render a "no data" state 1`] = `
         </h2>
       </header>
       <div
-        className="sc-kgoBCf fZXOgN"
+        className="sc-kGXeez hPKvAv"
         id="js-dom-to-png-average"
       >
         <div
@@ -98,15 +98,15 @@ exports[`Snapshots AverageTable should render a loading state 1`] = `
       }
     >
       <header
-        className="sc-gZMcBi dRDRQC"
+        className="sc-gqjmRU gcxEBF"
       >
         <h2
-          className="sc-gqjmRU liZjsx"
+          className="sc-VigVT koZmyN"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": undefined,
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -118,7 +118,7 @@ exports[`Snapshots AverageTable should render a loading state 1`] = `
         </h2>
       </header>
       <div
-        className="sc-kgoBCf fZXOgN"
+        className="sc-kGXeez hPKvAv"
         id="js-dom-to-png-average"
       >
         <div
@@ -246,15 +246,15 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
       }
     >
       <header
-        className="sc-gZMcBi dRDRQC"
+        className="sc-gqjmRU gcxEBF"
       >
         <h2
-          className="sc-gqjmRU liZjsx"
+          className="sc-VigVT koZmyN"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": undefined,
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -266,11 +266,11 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
         </h2>
       </header>
       <div
-        className="sc-kgoBCf fZXOgN"
+        className="sc-kGXeez hPKvAv"
         id="js-dom-to-png-average"
       >
         <ul
-          className="sc-chPdSV ebVdFc"
+          className="sc-kgoBCf crtYML"
         >
           <li
             className="sc-ifAKCX jhSkFX"
@@ -312,38 +312,20 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
               <div
                 className="sc-bZQynM hCNVyQ"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "2rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        193.8k
-                      </span>
-                    </span>
+                  <span>
+                    193.8k
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -450,38 +432,20 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
               <div
                 className="sc-bZQynM hCNVyQ"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "2rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        1,140
-                      </span>
-                    </span>
+                  <span>
+                    1,140
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -588,38 +552,20 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
               <div
                 className="sc-bZQynM hCNVyQ"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "2rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        2,305
-                      </span>
-                    </span>
+                  <span>
+                    2,305
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -714,15 +660,15 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
       }
     >
       <header
-        className="sc-gZMcBi dRDRQC"
+        className="sc-gqjmRU gcxEBF"
       >
         <h2
-          className="sc-gqjmRU liZjsx"
+          className="sc-VigVT koZmyN"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": undefined,
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -734,11 +680,11 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
         </h2>
       </header>
       <div
-        className="sc-kgoBCf fZXOgN"
+        className="sc-kGXeez hPKvAv"
         id="js-dom-to-png-average"
       >
         <ul
-          className="sc-chPdSV ebVdFc"
+          className="sc-kgoBCf crtYML"
         >
           <li
             className="sc-ifAKCX jhSkFX"
@@ -780,38 +726,20 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
               <div
                 className="sc-bZQynM hCNVyQ"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "2rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        85.0k
-                      </span>
-                    </span>
+                  <span>
+                    85.0k
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -919,38 +847,20 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
               <div
                 className="sc-bZQynM hCNVyQ"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "2rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        502
-                      </span>
-                    </span>
+                  <span>
+                    502
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -1058,38 +968,20 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
               <div
                 className="sc-bZQynM hCNVyQ"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "2rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        669
-                      </span>
-                    </span>
+                  <span>
+                    669
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -1185,15 +1077,15 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
       }
     >
       <header
-        className="sc-gZMcBi dRDRQC"
+        className="sc-gqjmRU gcxEBF"
       >
         <h2
-          className="sc-gqjmRU liZjsx"
+          className="sc-VigVT koZmyN"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": undefined,
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -1205,11 +1097,11 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
         </h2>
       </header>
       <div
-        className="sc-kgoBCf fZXOgN"
+        className="sc-kGXeez hPKvAv"
         id="js-dom-to-png-average"
       >
         <ul
-          className="sc-chPdSV ebVdFc"
+          className="sc-kgoBCf crtYML"
         >
           <li
             className="sc-ifAKCX jhSkFX"
@@ -1251,38 +1143,20 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
               <div
                 className="sc-bZQynM hCNVyQ"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "2rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        84.4k
-                      </span>
-                    </span>
+                  <span>
+                    84.4k
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -1390,38 +1264,20 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
               <div
                 className="sc-bZQynM hCNVyQ"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "2rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        572
-                      </span>
-                    </span>
+                  <span>
+                    572
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -1529,38 +1385,20 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
               <div
                 className="sc-bZQynM hCNVyQ"
               >
-                <div
+                <span
                   style={
                     Object {
-                      "display": "inline-block",
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "2rem",
+                      "fontWeight": 700,
                     }
                   }
                 >
-                  <span
-                    style={
-                      Object {
-                        "color": "#323b43",
-                        "fontSize": "2rem",
-                        "fontWeight": 600,
-                      }
-                    }
-                  >
-                    <span
-                      style={
-                        Object {
-                          "color": "#323b43",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
-                          "fontWeight": 700,
-                        }
-                      }
-                    >
-                      <span>
-                        744
-                      </span>
-                    </span>
+                  <span>
+                    744
                   </span>
-                </div>
+                </span>
                 <div>
                   <span
                     style={
@@ -1637,12 +1475,12 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
 exports[`Snapshots Title should render title as if for app 1`] = `
 <span>
   <h2
-    className="sc-gqjmRU liZjsx"
+    className="sc-VigVT koZmyN"
   >
     <span
       style={
         Object {
-          "color": "#59626a",
+          "color": undefined,
           "fontFamily": "\\"Roboto\\", sans-serif",
           "fontSize": "1.25rem",
           "fontWeight": 500,
@@ -1658,7 +1496,7 @@ exports[`Snapshots Title should render title as if for app 1`] = `
 exports[`Snapshots Title should render title as if for report 1`] = `
 <span>
   <h2
-    className="sc-gqjmRU liZjsx"
+    className="sc-VigVT koZmyN"
   >
     <span
       style={
@@ -1666,7 +1504,7 @@ exports[`Snapshots Title should render title as if for report 1`] = `
           "color": "#000",
           "fontFamily": "\\"Roboto\\", sans-serif",
           "fontSize": "1.25rem",
-          "fontWeight": 700,
+          "fontWeight": 500,
         }
       }
     >
