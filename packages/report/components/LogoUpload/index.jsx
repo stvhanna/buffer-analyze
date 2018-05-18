@@ -91,7 +91,7 @@ const Box = styled.span`
 
 class LogoUpload extends Component {
   render() {
-    const { logoUrl, uploadLogo, deleteLogo, isLogoUploading } = this.props;
+    const { logoUrl, uploadLogo, deleteLogo, isLogoUploading, isLogoDropzoneDisabled } = this.props;
     return (
       <DropzoneWrapper>
         {!logoUrl &&
@@ -108,6 +108,7 @@ class LogoUpload extends Component {
         <Dropzone
           name="file"
           disablePreview
+          disableClick={isLogoDropzoneDisabled}
           onDropAccepted={uploadLogo}
           multiple={false}
           accept="image/png,image/jpeg"
@@ -131,6 +132,7 @@ class LogoUpload extends Component {
 
 LogoUpload.defaultProps = {
   isLogoUploading: false,
+  isLogoDropzoneDisabled: false,
 };
 
 LogoUpload.propTypes = {
@@ -138,6 +140,7 @@ LogoUpload.propTypes = {
   uploadLogo: PropTypes.func.isRequired,
   deleteLogo: PropTypes.func.isRequired,
   isLogoUploading: PropTypes.bool,
+  isLogoDropzoneDisabled: PropTypes.bool,
 };
 
 export default LogoUpload;

@@ -54,7 +54,7 @@ class Report extends React.Component {
   render() {
     const { name, dateRange, charts, loading,
       edit, saveChanges, editName, moveUp, moveDown, deleteChart, exporting, uploadLogo,
-        logoUrl, deleteLogo, isLogoUploading } = this.props;
+        logoUrl, deleteLogo, isLogoUploading, isLogoDropzoneDisabled } = this.props;
     if (loading) return <Loading active noBorder />;
     return (
       <div id="report-page">
@@ -67,6 +67,7 @@ class Report extends React.Component {
                 uploadLogo={uploadLogo}
                 deleteLogo={deleteLogo}
                 isLogoUploading={isLogoUploading}
+                isLogoDropzoneDisabled={isLogoDropzoneDisabled}
               />
               <Button noStyle onClick={editName}>
                 <Title>{name}</Title>
@@ -95,6 +96,7 @@ Report.defaultProps = {
   dateRange: {},
   charts: [],
   isLogoUploading: false,
+  isLogoDropzoneDisabled: false,
 };
 
 Report.propTypes = {
@@ -119,6 +121,7 @@ Report.propTypes = {
   uploadLogo: PropTypes.func.isRequired,
   deleteLogo: PropTypes.func.isRequired,
   isLogoUploading: PropTypes.bool,
+  isLogoDropzoneDisabled: PropTypes.bool,
 };
 
 export default Report;

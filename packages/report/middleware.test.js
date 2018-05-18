@@ -300,7 +300,6 @@ describe('middleware', () => {
     middleware(store)(next)(action);
     const reader = new FileReader();
     reader.addEventListener('load', (event) => {
-      console.log('load event has been fired!');
       expect(store.dispatch).toHaveBeenCalledWith(dataFetchActions.fetch({
         name: 'upload_report_logo',
         args: {

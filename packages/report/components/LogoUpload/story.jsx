@@ -24,6 +24,16 @@ storiesOf('LogoUpload')
       />
     </div>
   ))
+  .add('renders logo and disables the replacement of the logo', () => (
+    <div style={{ width: '260px', height: '100%', display: 'flex', padding: '50px' }}>
+      <LogoUpload
+        logoUrl={'https://buffer-analyze.s3.amazonaws.com/report-logos/img_5afc8d8f209ec.jpg'}
+        isLogoDropzoneDisabled
+        uploadLogo={action('uploadLogo')}
+        deleteLogo={action('deleteLogo')}
+      />
+    </div>
+  ))
   .add('renders uploading state', () => (
     <div style={{ width: '260px', height: '100%', display: 'flex', padding: '50px' }}>
       <LogoUpload

@@ -21,6 +21,7 @@ const initialState = {
   logoUrl: '',
   edit: false,
   isLogoUploading: false,
+  isLogoDropzoneDisabled: false,
 };
 
 const getOppositeDirection = direction =>
@@ -97,12 +98,14 @@ export default (state = initialState, action) => {
       return {
         ...state,
         isLogoUploading: false,
+        isLogoDropzoneDisabled: true,
         logoUrl: action.result.logo.url,
       };
     case `delete_report_logo_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
       return {
         ...state,
-        logoUrl: '', // action.result.logo.url ? action.result.logo.url : '',
+        isLogoDropzoneDisabled: false,
+        logoUrl: '',
       };
     case actionTypes.SAVE_CHANGES:
       return {

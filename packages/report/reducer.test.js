@@ -217,6 +217,7 @@ describe('reducer', () => {
       initialState = reducer({
         logoUrl: 'https://s3-analyze-logo/test.png',
         isLogoUploading: false,
+        isLogoDropzoneDisabled: false,
       }, {});
     });
 
@@ -225,6 +226,30 @@ describe('reducer', () => {
         type: `delete_report_logo_${asyncDataFetchActions.FETCH_SUCCESS}`,
       });
       expect(state.logoUrl).toEqual('');
+    });
+
+    it('delete logo sets isLogoDropzoneDisabled to false', () => {
+      const newState = reducer({
+        logoUrl: 'https://s3-analyze-logo/test.png',
+        isLogoUploading: false,
+        isLogoDropzoneDisabled: true,
+      }, {});
+      const state = reducer(newState, {
+        type: `delete_report_logo_${asyncDataFetchActions.FETCH_SUCCESS}`,
+      });
+      expect(state.isLogoDropzoneDisabled).toBeFalsy();
+    });
+
+    it('upload logo sets isLogoDropzoneDisabled to true', () => {
+      const state = reducer(initialState, {
+        type: `upload_report_logo_${asyncDataFetchActions.FETCH_SUCCESS}`,
+        result: {
+          logo: {
+            url: 'urlexample',
+          },
+        },
+      });
+      expect(state.isLogoDropzoneDisabled).toBeTruthy();
     });
 
     it('logo url is empty when report does not have a logo', () => {
