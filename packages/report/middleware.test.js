@@ -7,6 +7,7 @@ import middleware, { DIRECTION_UP, DIRECTION_DOWN } from './middleware';
 
 
 jest.mock('./PDFFormatter.js');
+// jest.mock(FileReader);
 import PDFFormatter from './PDFFormatter'; // eslint-disable-line import/first
 
 describe('middleware', () => {
@@ -291,20 +292,26 @@ describe('middleware', () => {
     });
   });
 
-  // it('UPLOAD_LOGO dispatches upload logo request', () => {
-  //   const action = {
-  //     type: actionTypes.UPLOAD_LOGO,
-  //     logo: [new File(['blob'], 'new_file')],
-  //   };
-  //   middleware(store)(next)(action);
-  //   expect(store.dispatch).toHaveBeenCalledWith(dataFetchActions.fetch({
-  //     name: 'upload_report_logo',
-  //     args: {
-  //       reportId: state.report.id,
-  //       logoImage: action.logo[0],
-  //     },
-  //   }));
-  // });
+  it('UPLOAD_LOGO dispatches upload logo request', () => {
+    const logoFile = [new File(['blob'], 'new_file')];
+    const action = {
+      type: actionTypes.UPLOAD_LOGO,
+      logo: logoFile,
+    };
+    middleware(store)(next)(action);
+    const reader = new FileReader();
+    reader.addEventListener('load', (event) => {
+      console.log('load event has been fired!');
+      expect(store.dispatch).toHaveBeenCalledWith(dataFetchActions.fetch({
+        name: 'upload_report_logo',
+        args: {
+          reportId: state.report.id,
+          logoImage: event.target.result,
+        },
+      }));
+    });
+    reader.readAsDataURL(logoFile[0]);
+  });
 
   it('DELETE_LOGO dispatches delete logo request', () => {
     const action = {
