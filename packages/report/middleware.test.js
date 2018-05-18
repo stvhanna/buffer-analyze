@@ -7,7 +7,6 @@ import middleware, { DIRECTION_UP, DIRECTION_DOWN } from './middleware';
 
 
 jest.mock('./PDFFormatter.js');
-// jest.mock(FileReader);
 import PDFFormatter from './PDFFormatter'; // eslint-disable-line import/first
 
 describe('middleware', () => {
