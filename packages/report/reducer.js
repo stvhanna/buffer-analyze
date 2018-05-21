@@ -104,8 +104,6 @@ export default (state = initialState, action) => {
     case `delete_report_logo_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
       return {
         ...state,
-        isLogoDropzoneDisabled: false,
-        logoUrl: '',
       };
     case actionTypes.SAVE_CHANGES:
       return {
@@ -131,6 +129,8 @@ export default (state = initialState, action) => {
     case actionTypes.DELETE_LOGO:
       return {
         ...state,
+        isLogoDropzoneDisabled: false,
+        logoUrl: '',
       };
     default:
       return state;

@@ -72,11 +72,23 @@ describe('reducer', () => {
     expect(state.logo).toEqual('logo-image');
   });
 
-  it('DELETE_LOGO sets delete logo mode', () => {
-    const state = reducer(undefined, {
+  it('DELETE_LOGO sets logoUrl to empty', () => {
+    const state = reducer({
+      logoUrl: 'testLogoUrl',
+    }, {
       type: actionTypes.DELETE_LOGO,
     });
     expect(state.logoUrl).toEqual('');
+  });
+
+  it('DELETE_LOGO sets isLogoDropzoneDisabled to false', () => {
+    const state = reducer({
+      logoUrl: 'testLogoUrl',
+      isLogoDropzoneDisabled: true,
+    }, {
+      type: actionTypes.DELETE_LOGO,
+    });
+    expect(state.isLogoDropzoneDisabled).toBeFalsy();
   });
 
   describe('SAVE_CHANGES', () => {
@@ -221,23 +233,11 @@ describe('reducer', () => {
       }, {});
     });
 
-    it('delete logo sets logoUrl to empty string', () => {
+    it('delete logo returns the current state', () => {
       const state = reducer(initialState, {
         type: `delete_report_logo_${asyncDataFetchActions.FETCH_SUCCESS}`,
       });
-      expect(state.logoUrl).toEqual('');
-    });
-
-    it('delete logo sets isLogoDropzoneDisabled to false', () => {
-      const newState = reducer({
-        logoUrl: 'https://s3-analyze-logo/test.png',
-        isLogoUploading: false,
-        isLogoDropzoneDisabled: true,
-      }, {});
-      const state = reducer(newState, {
-        type: `delete_report_logo_${asyncDataFetchActions.FETCH_SUCCESS}`,
-      });
-      expect(state.isLogoDropzoneDisabled).toBeFalsy();
+      expect(state).toEqual(initialState);
     });
 
     it('upload logo sets isLogoDropzoneDisabled to true', () => {
