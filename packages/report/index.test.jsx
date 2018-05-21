@@ -25,6 +25,9 @@ describe('Report', () => {
     report: {
       name: 'A report',
       charts: [],
+      logo: {
+        url: 'https://test-url/test-logo.png'
+      }
     },
   };
   it('should render', () => {
@@ -82,7 +85,31 @@ describe('Report', () => {
     }));
   });
 
-  it('move up should mispatch moveUp', () => {
+  it('upload logo should dispatch uploadLogo', () => {
+    const mockStore = configureMockStore();
+    const store = mockStore(state);
+
+    const component = shallow(<Report
+      store={store}
+    />);
+
+    expect(component.props().uploadLogo('logo-image')).toEqual(actions.uploadLogo({
+      logo: 'logo-image',
+    }));
+  });
+
+  it('delete logo should dispatch deleteLogo', () => {
+    const mockStore = configureMockStore();
+    const store = mockStore(state);
+
+    const component = shallow(<Report
+      store={store}
+    />);
+
+    expect(component.props().deleteLogo()).toEqual(actions.deleteLogo());
+  });
+
+  it('move up should dispatch moveUp', () => {
     const mockStore = configureMockStore();
     const store = mockStore(state);
 
@@ -93,7 +120,7 @@ describe('Report', () => {
     expect(component.props().moveUp('chart_id')).toEqual(actions.moveUp('chart_id'));
   });
 
-  it('move down should mispatch moveDown', () => {
+  it('move down should dispatch moveDown', () => {
     const mockStore = configureMockStore();
     const store = mockStore(state);
 

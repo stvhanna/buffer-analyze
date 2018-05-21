@@ -224,13 +224,25 @@ const dateRange = {
 
 storiesOf('Report')
   .addDecorator(checkA11y)
-  .add('renders a report with summary table', () => (
+  .add('renders a report with summary table and no logo', () => (
     <Card>
       <Report
         {...report}
         dateRange={dateRange}
         saveChanges={() => {}}
         parsePageBreaks={() => {}}
+        exporting
+      />
+    </Card>
+  ))
+  .add('renders a report with summary table and logo', () => (
+    <Card>
+      <Report
+        {...report}
+        dateRange={dateRange}
+        saveChanges={() => {}}
+        parsePageBreaks={() => {}}
+        logoUrl={'https://buffer-analyze.s3.amazonaws.com/report-logos/img_5afc8d8f209ec.jpg'}
         exporting
       />
     </Card>

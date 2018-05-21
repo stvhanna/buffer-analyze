@@ -14,6 +14,7 @@ import styled from 'styled-components';
 import ChartFactory from '../ChartFactory';
 import DateRange from '../DateRange';
 import EditTitle from '../EditTitle';
+import LogoUpload from '../LogoUpload';
 
 const Title = styled.h1`
   display: inline-block;
@@ -52,7 +53,8 @@ class Report extends React.Component {
 
   render() {
     const { name, dateRange, charts, loading,
-      edit, saveChanges, editName, moveUp, moveDown, deleteChart, exporting } = this.props;
+      edit, saveChanges, editName, moveUp, moveDown, deleteChart, exporting, uploadLogo,
+        logoUrl, deleteLogo, isLogoUploading, isLogoDropzoneDisabled } = this.props;
     if (loading) return <Loading active noBorder />;
     return (
       <div id="report-page">
@@ -60,6 +62,14 @@ class Report extends React.Component {
           { edit && <EditTitle name={name} saveChanges={saveChanges} />}
           { !edit &&
             <Container>
+              <LogoUpload
+                logoUrl={logoUrl}
+                uploadLogo={uploadLogo}
+                deleteLogo={deleteLogo}
+                isLogoUploading={isLogoUploading}
+                isLogoDropzoneDisabled={isLogoDropzoneDisabled}
+                exporting={exporting}
+              />
               <Button noStyle onClick={editName}>
                 <Title>{name}</Title>
               </Button>
@@ -86,6 +96,8 @@ Report.defaultProps = {
   edit: false,
   dateRange: {},
   charts: [],
+  isLogoUploading: false,
+  isLogoDropzoneDisabled: false,
 };
 
 Report.propTypes = {
@@ -101,11 +113,16 @@ Report.propTypes = {
   charts: PropTypes.arrayOf(PropTypes.shape({
     chart_id: PropTypes.string,
   }).isRequired),
+  logoUrl: PropTypes.string.isRequired,
   editName: PropTypes.func.isRequired,
   moveUp: PropTypes.func.isRequired,
   moveDown: PropTypes.func.isRequired,
   deleteChart: PropTypes.func.isRequired,
   parsePageBreaks: PropTypes.func.isRequired,
+  uploadLogo: PropTypes.func.isRequired,
+  deleteLogo: PropTypes.func.isRequired,
+  isLogoUploading: PropTypes.bool,
+  isLogoDropzoneDisabled: PropTypes.bool,
 };
 
 export default Report;
