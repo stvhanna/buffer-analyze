@@ -34,6 +34,16 @@ storiesOf('LogoUpload')
       />
     </div>
   ))
+  .add('does not render anything even an empty box when exporting and logo is not set', () => (
+    <div style={{ width: '260px', height: '100%', display: 'flex', padding: '50px' }}>
+      <LogoUpload
+        logoUrl={''}
+        exporting
+        uploadLogo={action('uploadLogo')}
+        deleteLogo={action('deleteLogo')}
+      />
+    </div>
+  ))
   .add('renders uploading state', () => (
     <div style={{ width: '260px', height: '100%', display: 'flex', padding: '50px' }}>
       <LogoUpload

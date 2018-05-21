@@ -68,6 +68,7 @@ class Report extends React.Component {
                 deleteLogo={deleteLogo}
                 isLogoUploading={isLogoUploading}
                 isLogoDropzoneDisabled={isLogoDropzoneDisabled}
+                exporting={exporting}
               />
               <Button noStyle onClick={editName}>
                 <Title>{name}</Title>

@@ -91,7 +91,10 @@ const Box = styled.span`
 
 class LogoUpload extends Component {
   render() {
-    const { logoUrl, uploadLogo, deleteLogo, isLogoUploading, isLogoDropzoneDisabled } = this.props;
+    const { logoUrl, uploadLogo, deleteLogo, isLogoUploading,
+      isLogoDropzoneDisabled, exporting } = this.props;
+    // Do not display the logo box in export when logo is not set
+    if (logoUrl === '' && exporting) return null;
     return (
       <DropzoneWrapper>
         {!logoUrl &&
@@ -133,6 +136,7 @@ class LogoUpload extends Component {
 LogoUpload.defaultProps = {
   isLogoUploading: false,
   isLogoDropzoneDisabled: false,
+  exporting: false,
 };
 
 LogoUpload.propTypes = {
@@ -141,6 +145,7 @@ LogoUpload.propTypes = {
   deleteLogo: PropTypes.func.isRequired,
   isLogoUploading: PropTypes.bool,
   isLogoDropzoneDisabled: PropTypes.bool,
+  exporting: PropTypes.bool,
 };
 
 export default LogoUpload;

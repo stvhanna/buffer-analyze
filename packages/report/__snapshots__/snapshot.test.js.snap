@@ -580,6 +580,21 @@ exports[`Snapshots EditTitle renders the edit title text box 1`] = `
 </span>
 `;
 
+exports[`Snapshots LogoUpload does not render anything even an empty box when exporting and logo is not set 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "height": "100%",
+        "padding": "50px",
+        "width": "260px",
+      }
+    }
+  />
+</span>
+`;
+
 exports[`Snapshots LogoUpload renders logo and disables the replacement of the logo 1`] = `
 <span>
   <div
