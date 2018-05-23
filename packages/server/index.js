@@ -28,6 +28,7 @@ let staticAssets = {
 // NOTE: Bugsnag will not notify in local setup with current weback configuration
 // https://docs.bugsnag.com/platforms/browsers/faq/#4-code-generated-with-eval-e-g-from-webpack
 let bugsnagScript = '';
+// Note: Temporary diable fullStory due GDPR.
 let fullStoryScript = '';
 
 const isProduction = process.env.NODE_ENV === 'production';
@@ -73,8 +74,7 @@ if (isProduction) {
 
 const html = fs.readFileSync(join(__dirname, 'index.html'), 'utf8')
   .replace('{{{bundle}}}', staticAssets['bundle.js'])
-  .replace('{{{bugsnagScript}}}', bugsnagScript)
-  .replace('{{{fullStoryScript}}}', fullStoryScript);
+  .replace('{{{bugsnagScript}}}', bugsnagScript);
 
 app.use(logMiddleware({ name: 'BufferAnalyze' }));
 app.use(cookieParser());
