@@ -104,7 +104,7 @@ storiesOf('MultiProfileSelector')
       />
     </div>
   ))
-  .add('Profiles should be disabled when 3 profiles are selected', () => (
+  .add('Profiles should be disabled when 4 profiles are selected', () => (
     <div style={{ display: 'flex' }}>
       <MultiProfileSelector
         profiles={mockProfiles}
@@ -112,6 +112,7 @@ storiesOf('MultiProfileSelector')
           selectedProfiles[0],
           selectedProfiles[1],
           selectedProfiles[2],
+          selectedProfiles[3],
         ]}
         isDropdownOpen
         toggleProfile={actionLogger('toggleProfile')}

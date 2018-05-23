@@ -35,8 +35,9 @@ const ProfileUsernameWrapper = styled.div`
   margin-right: 10px;
 `;
 
-const ProfileCell = ({ profileTotal, profile }) => (
+const ProfileCell = ({ profileTotal, profile, gridWidth }) => (
   <GridItem
+    gridWidth={gridWidth}
     metric={{
       label: profileTotal.metric.label,
       value: profileTotal.currentPeriodTotal,
@@ -67,6 +68,7 @@ ProfileCell.propTypes = {
     currentPeriodDiff: PropTypes.number.isRequired,
     profileId: PropTypes.string.isRequired,
   }).isRequired,
+  gridWidth: PropTypes.string.isRequired,
   profile: PropTypes.shape({
     id: PropTypes.string.isRequired,
     username: PropTypes.string.isRequired,
@@ -112,7 +114,9 @@ function renderGridItem(profileTotal) {
   if (profile.service === 'instagram' && this.metricKey === 'reach') {
     return null;
   }
+  const gridWidth = this.profileTotals.length === 4 ? '50%' : '33%';
   return (<ProfileCell
+    gridWidth={gridWidth}
     key={profileTotal.profileId}
     profileTotal={profileTotal}
     profile={profile}
@@ -134,7 +138,7 @@ function renderComingSoon(profileTotal) {
 const ComparisonFooter = ({ profileTotals, profiles, metricKey }) => (
   <Wrapper>
     <Grid>
-      {profileTotals.map(renderGridItem, { profiles, metricKey })}
+      {profileTotals.map(renderGridItem, { profiles, metricKey, profileTotals })}
     </Grid>
     {profileTotals.map(renderComingSoon, { profiles, metricKey })}
   </Wrapper>
