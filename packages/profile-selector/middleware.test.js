@@ -39,10 +39,20 @@ const stateWithProfileRoute = {
   profiles,
 };
 
+const stateWithProfileRouteAndSearch = {
+  router: {
+    location: {
+      pathname: `/overview/${profileId}`,
+      search: '?foo=bar',
+    },
+  },
+  profiles,
+};
+
 const stateWithInsightsRoute = {
   router: {
     location: {
-      pathname: `/overview`,
+      pathname: '/overview',
     },
   },
   profiles,
@@ -50,6 +60,14 @@ const stateWithInsightsRoute = {
 
 const stateWithProfileRouteAndSelectedProfile = {
   ...stateWithProfileRoute,
+  profiles: {
+    ...stateWithProfileRoute.profiles,
+    selectedProfile: profiles.profiles[0],
+  },
+};
+
+const stateWithProfileRouteAndSelectedProfileAndSearch = {
+  ...stateWithProfileRouteAndSearch,
   profiles: {
     ...stateWithProfileRoute.profiles,
     selectedProfile: profiles.profiles[0],
@@ -149,6 +167,19 @@ describe('middleware', () => {
     expect(next).toHaveBeenCalledWith(action);
   });
 
+  it('should persist search string whenever a profile has been selected', () => {
+    const { store, next, invoke } = getMiddlewareElements(stateWithProfileRouteAndSelectedProfileAndSearch);
+    const action = {
+      type: profileActionTypes.SELECT_PROFILE,
+      profile: {
+        id: profileId,
+      },
+    };
+    invoke(action);
+    expect(store.dispatch).toHaveBeenCalledWith(push(`/overview/${profileId}/?foo=bar`));
+    expect(next).toHaveBeenCalledWith(action);
+  });
+
   describe('LOCATION_CHANGE', () => {
     it('should push a selectProfile action if there is a LOCATION_CHANGE for an overview/posts route and there is no profile selected', () => {
       const { store, next, invoke } = getMiddlewareElements();
@@ -174,6 +205,19 @@ describe('middleware', () => {
       invoke(action);
       expect(store.dispatch)
         .toHaveBeenCalledWith(push(`/overview/${profiles.profiles[0].id}`));
+      expect(next).toHaveBeenCalledWith(action);
+    });
+    it('should persist existing search tring', () => {
+      const { store, next, invoke } = getMiddlewareElements(stateWithProfileRouteAndSelectedProfileAndSearch);
+      const action = {
+        type: LOCATION_CHANGE,
+        payload: {
+          pathname: '/overview',
+        },
+      };
+      invoke(action);
+      expect(store.dispatch)
+        .toHaveBeenCalledWith(push(`/overview/${profiles.profiles[0].id}/?foo=bar`));
       expect(next).toHaveBeenCalledWith(action);
     });
   });

@@ -5,7 +5,7 @@ import { actionTypes } from '@bufferapp/async-data-fetch';
 import { actions as performanceActions } from '@bufferapp/performance-tracking';
 import { actions as profilesActions, actionTypes as profileActionTypes } from './reducer';
 
-const INSIGHTS_PATH_REGEX = /(overview|posts|answers)\/?(.*)$/;
+const INSIGHTS_PATH_REGEX = /(overview|posts|answers)\/?(.*)\/*.*$/;
 
 const isInsightsRoute = route => route.match(INSIGHTS_PATH_REGEX);
 
@@ -27,9 +27,16 @@ const getViewFromRoute = (path) => {
   return view;
 };
 
+const getSearchString = (state) => {
+  const search = state.router.location.search;
+  return search ?
+    `/${search}` :
+    '';
+};
+
 const getProfileRoute = (state, id) => {
   const view = getViewFromRoute(state.router.location.pathname);
-  return `/${view}/${id}`;
+  return `/${view}/${id}${getSearchString(state)}`;
 };
 
 export default ({ dispatch, getState }) => next => (action) => {
@@ -64,7 +71,7 @@ export default ({ dispatch, getState }) => next => (action) => {
         } else {
           profile = getState().profiles.selectedProfile;
           if (profile) {
-            dispatch(push(`${action.payload.pathname}/${profile.id}`));
+            dispatch(push(`${action.payload.pathname}/${profile.id}${getSearchString(getState())}`));
           }
         }
       }
