@@ -23,7 +23,7 @@ import {
   dropdownListScrollable,
 } from './style.less';
 
-const MAX_SELECTABLEPROFILES = 3;
+const MAX_SELECTABLEPROFILES = 4;
 
 const styleButton = {
   cursor: 'pointer',

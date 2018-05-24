@@ -49,7 +49,7 @@ storiesOf('ComparisonFooter')
       />
     </div>
   ))
-  .add('should render the footer for multiple profiles', () => (
+  .add('should render the footer for 3 profiles', () => (
     <div
       style={{
         width: '750px',
@@ -58,6 +58,29 @@ storiesOf('ComparisonFooter')
       <ComparisonFooter
         metricKey="audience"
         profileTotals={profileTotals}
+        profiles={profiles}
+      />
+    </div>
+  ))
+  .add('should render the footer for 4 profiles', () => (
+    <div
+      style={{
+        width: '750px',
+      }}
+    >
+      <ComparisonFooter
+        metricKey="audience"
+        profileTotals={profileTotals.concat([
+          {
+            currentPeriodTotal: 700,
+            currentPeriodDiff: -10,
+            profileId: '3',
+            metric: {
+              color: '#fda444',
+              label: 'Followers',
+            },
+          },
+        ])}
         profiles={profiles}
       />
     </div>
