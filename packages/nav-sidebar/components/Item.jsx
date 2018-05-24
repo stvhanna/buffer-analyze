@@ -28,7 +28,7 @@ const InnerLink = styled.span`
   `}
 `;
 
-const Item = ({ href, route, children, onClick, selectedProfile }) => {
+const Item = ({ href, searchParameters, route, children, onClick }) => {
   const selected = href === '/' ? href === route : route.includes(href);
 
   return (
@@ -39,7 +39,7 @@ const Item = ({ href, route, children, onClick, selectedProfile }) => {
         e.preventDefault();
         const isCurrent = href === route;
         if (!isCurrent) {
-          onClick(href, selectedProfile);
+          onClick(href, searchParameters);
         }
       }}
     >
@@ -55,14 +55,12 @@ Item.propTypes = {
   href: PropTypes.string.isRequired,
   route: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
-  selectedProfile: PropTypes.shape({
-    id: PropTypes.string,
-  }),
+  searchParameters: PropTypes.string,
 };
 
 Item.defaultProps = {
   highlightActive: false,
-  selectedProfile: {},
+  searchParameters: '',
 };
 
 export default Item;

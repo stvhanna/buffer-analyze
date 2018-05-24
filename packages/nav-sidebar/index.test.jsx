@@ -2,7 +2,6 @@ import React from 'react';
 import { configure, mount, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { Provider } from 'react-redux';
-import { actions as profilesActions } from '@bufferapp/analyze-profile-selector';
 import { Link } from '@bufferapp/components';
 import NavSidebar, {
   reducer,
@@ -34,6 +33,11 @@ describe('NavSidebar', () => {
           service: 'facebook',
         },
       },
+      router: {
+        location: {
+          search: '',
+        },
+      },
     });
     const wrapper = mount(
       <Provider store={store}>
@@ -62,6 +66,11 @@ describe('NavSidebar', () => {
           facebookProfile: {
             id: '5',
             service: 'facebook',
+          },
+        },
+        router: {
+          location: {
+            search: '',
           },
         },
       });
@@ -103,6 +112,11 @@ describe('NavSidebar', () => {
     const store = storeFake({
       navSidebar: {
         profiles: [],
+      },
+      router: {
+        location: {
+          search: '',
+        },
       },
     });
     const component = shallow(
