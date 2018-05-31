@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/analyze-store",
-  "version": "0.60.1",
+  "version": "0.60.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -33,11 +33,11 @@
     "@bufferapp/average-table": "^0.59.0",
     "@bufferapp/buffermetrics": "^0.5.2",
     "@bufferapp/compare-chart": "^0.59.0",
-    "@bufferapp/comparison-chart": "^0.60.1",
+    "@bufferapp/comparison-chart": "^0.60.2",
     "@bufferapp/contextual-compare": "^0.59.0",
     "@bufferapp/environment": "1.2.3",
     "@bufferapp/hourly-chart": "^0.59.0",
-    "@bufferapp/multi-profile-selector": "^0.60.1",
+    "@bufferapp/multi-profile-selector": "^0.60.2",
     "@bufferapp/nav-sidebar": "^0.59.0",
     "@bufferapp/performance-tracking": "^0.43.5",
     "@bufferapp/posts-summary-table": "^0.59.0",
