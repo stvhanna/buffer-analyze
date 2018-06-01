@@ -12,6 +12,7 @@ describe('reducer', () => {
       isDropdownOpen: false,
       profilesFilterString: '',
       selectedProfile: null,
+      loading: true,
     };
   });
 
@@ -33,6 +34,7 @@ describe('reducer', () => {
         isDropdownOpen: false,
         profilesFilterString: '',
         selectedProfile: null,
+        loading: false,
       });
   });
 

@@ -37,7 +37,7 @@ PostsTableWrapper.propTypes = {
     apiKey: PropTypes.string,
     label: PropTypes.string,
   }).isRequired,
-  activePostsCount: PropTypes.string.isRequired,
+  activePostsCount: PropTypes.number.isRequired,
 };
 
 // default export = container

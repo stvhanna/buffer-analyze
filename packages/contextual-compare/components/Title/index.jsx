@@ -12,9 +12,9 @@ Title.propTypes = {
   state: PropTypes.shape({
     selectedPreset: PropTypes.number,
   }),
-  presets: PropTypes.arrayOf({
+  presets: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string,
-  }),
+  })),
 };
 
 Title.defaultProps = {

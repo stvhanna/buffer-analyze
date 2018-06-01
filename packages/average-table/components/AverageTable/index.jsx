@@ -41,11 +41,11 @@ Table.defaultProps = {
 
 Table.propTypes = {
   daily: PropTypes.arrayOf(PropTypes.shape({
-    day: PropTypes.string.isRequired,
+    day: PropTypes.string,
     metrics: PropTypes.arrayOf(PropTypes.shape({
-      diff: PropTypes.number.isRequired,
-      label: PropTypes.string.isRequired,
-      value: PropTypes.number.isRequired,
+      diff: PropTypes.number,
+      label: PropTypes.string,
+      value: PropTypes.number,
     })),
   })),
   totals: PropTypes.arrayOf(PropTypes.shape({
@@ -55,7 +55,7 @@ Table.propTypes = {
   })).isRequired,
 };
 
-const AverageTable = ({ metrics, loading, profileService }) => {
+const AverageTable = ({ metrics, loading }) => {
   let content = null;
   if (loading) {
     content = <Loading active noBorder />;
@@ -88,11 +88,11 @@ AverageTable.propTypes = {
   loading: PropTypes.bool,
   metrics: PropTypes.shape({
     daily: PropTypes.arrayOf(PropTypes.shape({
-      day: PropTypes.string.isRequired,
+      day: PropTypes.string,
       metrics: PropTypes.arrayOf(PropTypes.shape({
-        diff: PropTypes.number.isRequired,
-        label: PropTypes.string.isRequired,
-        value: PropTypes.number.isRequired,
+        diff: PropTypes.number,
+        label: PropTypes.string,
+        value: PropTypes.number,
       })),
     })),
     totals: PropTypes.arrayOf(PropTypes.shape({
@@ -101,7 +101,6 @@ AverageTable.propTypes = {
       diff: PropTypes.number,
     })),
   }).isRequired,
-  profileService: PropTypes.string.isRequired,
 };
 
 export default AverageTable;

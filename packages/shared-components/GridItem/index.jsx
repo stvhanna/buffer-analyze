@@ -101,11 +101,11 @@ GridItem.propTypes = {
   customLabel: PropTypes.element,
   prefix: PropTypes.element,
   dailyData: PropTypes.arrayOf(PropTypes.shape({
-    day: PropTypes.string.isRequired,
+    day: PropTypes.string,
     metrics: PropTypes.arrayOf(PropTypes.shape({
-      diff: PropTypes.number.isRequired,
-      label: PropTypes.string.isRequired,
-      value: PropTypes.number.isRequired,
+      diff: PropTypes.number,
+      label: PropTypes.string,
+      value: PropTypes.number,
     })),
   })),
   tooltip: PropTypes.string,

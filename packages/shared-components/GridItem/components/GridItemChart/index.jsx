@@ -90,11 +90,11 @@ const GridItemChart = ({ dailyData }) => {
 
 GridItemChart.propTypes = {
   dailyData: PropTypes.arrayOf(PropTypes.shape({
-    day: PropTypes.string.isRequired,
+    day: PropTypes.string,
     metric: PropTypes.shape({
-      diff: PropTypes.number.isRequired,
-      label: PropTypes.string.isRequired,
-      value: PropTypes.number.isRequired,
+      diff: PropTypes.number,
+      label: PropTypes.string,
+      value: PropTypes.number,
     }),
   })).isRequired,
 };

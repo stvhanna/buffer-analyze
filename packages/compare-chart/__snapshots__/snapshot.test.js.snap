@@ -1229,7 +1229,7 @@ exports[`Snapshots CompareChart should render a "no data" state 1`] = `
           <span
             style={
               Object {
-                "color": undefined,
+                "color": "#000",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -1316,7 +1316,7 @@ exports[`Snapshots CompareChart should render a loading state 1`] = `
           <span
             style={
               Object {
-                "color": undefined,
+                "color": "#000",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -1474,7 +1474,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
           <span
             style={
               Object {
-                "color": undefined,
+                "color": "#000",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -2253,7 +2253,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
           <span
             style={
               Object {
-                "color": undefined,
+                "color": "#000",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -3032,7 +3032,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
           <span
             style={
               Object {
-                "color": undefined,
+                "color": "#000",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -3811,7 +3811,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
           <span
             style={
               Object {
-                "color": undefined,
+                "color": "#000",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -4666,7 +4666,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
           <span
             style={
               Object {
-                "color": undefined,
+                "color": "#000",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -5840,7 +5840,7 @@ exports[`Snapshots Title should render title as if for app 1`] = `
     <span
       style={
         Object {
-          "color": undefined,
+          "color": "#000",
           "fontFamily": "\\"Roboto\\", sans-serif",
           "fontSize": "1.25rem",
           "fontWeight": 500,

@@ -59,7 +59,7 @@ TopPostsHeader.propTypes = {
   toggleDropdown: PropTypes.func.isRequired,
   handlePostsCountClick: PropTypes.func.isRequired,
   handlePostsSortClick: PropTypes.func.isRequired,
-  activePostsCount: PropTypes.string.isRequired,
+  activePostsCount: PropTypes.number.isRequired,
   postsCounts: PropTypes.arrayOf(PropTypes.shape({
     value: PropTypes.string,
   })),

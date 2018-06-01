@@ -98,6 +98,7 @@ Report.defaultProps = {
   charts: [],
   isLogoUploading: false,
   isLogoDropzoneDisabled: false,
+  name: '',
 };
 
 Report.propTypes = {
@@ -108,7 +109,7 @@ Report.propTypes = {
     startDate: PropTypes.string,
     endDate: PropTypes.string,
   }),
-  name: PropTypes.string.isRequired,
+  name: PropTypes.string,
   saveChanges: PropTypes.func.isRequired,
   charts: PropTypes.arrayOf(PropTypes.shape({
     chart_id: PropTypes.string,

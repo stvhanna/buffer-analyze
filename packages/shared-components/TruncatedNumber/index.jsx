@@ -29,10 +29,11 @@ const TruncatedNumber = ({ children, absoluteValue, shorterOption }) => {
 TruncatedNumber.defaultProps = {
   absoluteValue: false,
   shorterOption: false,
+  children: 0,
 };
 
 TruncatedNumber.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   absoluteValue: PropTypes.bool,
   shorterOption: PropTypes.bool,
 };

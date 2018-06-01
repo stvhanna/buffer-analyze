@@ -25,7 +25,7 @@ export default (state = initialState, action) => {
     case `posts_${asyncDataFetchActionTypes.FETCH_START}`:
       return {
         ...initialState,
-        activePostsCount: state.activePostsCount,
+        activePostsCount: parseInt(state.activePostsCount, 10),
         selectedMetric: state.selectedMetric,
         isDescendingSelected: state.isDescendingSelected,
       };
@@ -44,7 +44,7 @@ export default (state = initialState, action) => {
     case actionTypes.SELECT_TOP_POSTS_COUNT:
       return {
         ...state,
-        activePostsCount: action.postsCount,
+        activePostsCount: parseInt(action.postsCount, 10),
       };
     case actionTypes.TOGGLE_TOP_POSTS_DROPDOWN:
       return {

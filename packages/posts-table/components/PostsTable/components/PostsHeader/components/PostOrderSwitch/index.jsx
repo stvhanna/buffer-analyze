@@ -70,7 +70,7 @@ class PostOrderSwitch extends React.Component {
 }
 
 PostOrderSwitch.propTypes = {
-  isDescendingSelected: PropTypes.string.isRequired,
+  isDescendingSelected: PropTypes.bool.isRequired,
   handleClick: PropTypes.func.isRequired,
 };
 
