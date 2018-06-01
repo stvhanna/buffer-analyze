@@ -3,9 +3,9 @@ const rp = require('request-promise');
 const DateRange = require('../utils/DateRange');
 const METRICS_CONFIG = require('./metricsConfig');
 
-const requestAudience = (profileId, dateRange, accessToken) =>
+const requestAudience = (profileId, dateRange, accessToken, analyzeApiAddr) =>
   rp({
-    uri: `${process.env.ANALYZE_API_ADDR}/metrics/daily_totals`,
+    uri: `${analyzeApiAddr}/metrics/daily_totals`,
     method: 'POST',
     strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
     qs: {
@@ -67,12 +67,13 @@ function formatData(
 module.exports = method(
   'audience',
   'fetch analytics audience for profiles and pages',
-  ({ profileId, profileService, startDate, endDate }, { session }) => {
+  ({ profileId, profileService, startDate, endDate }, req) => {
     const dateRange = new DateRange(startDate, endDate);
     return requestAudience(
       profileId,
       dateRange,
-      session.analyze.accessToken,
+      req.session.analyze.accessToken,
+      req.app.get('analyzeApiAddr'),
     )
       .then(response => formatData(
         response.response,

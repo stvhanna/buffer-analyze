@@ -52,9 +52,9 @@ function requestChartData (chart, dateRange, session) {
 module.exports = method(
   'get_report',
   'get report details',
-  ({ _id, timezone }, { session }) =>
+  ({ _id, timezone }, req) =>
     rp({
-      uri: `${process.env.ANALYZE_API_ADDR}/get_report`,
+      uri: `${req.app.get('analyzeApiAddr')}/get_report`,
       method: 'POST',
       strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
       body: {
@@ -74,7 +74,7 @@ module.exports = method(
       }
 
       return Promise
-        .all(report.charts.map(chart => requestChartData(chart, dateRange, session)))
+        .all(report.charts.map(chart => requestChartData(chart, dateRange, req.session)))
         .then(chartMetrics =>
           Object.assign(report, {
             date_range: {

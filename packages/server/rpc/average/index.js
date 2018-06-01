@@ -28,10 +28,10 @@ function shouldUseAnalyzeApi (profileService) {
   return profileService === 'instagram';
 }
 
-const requestTotals = (profileId, profileService, dateRange, accessToken) =>
+const requestTotals = (profileId, profileService, dateRange, accessToken, analyzeApiAddr) =>
   rp({
     uri: (shouldUseAnalyzeApi(profileService) ?
-      `${process.env.ANALYZE_API_ADDR}/metrics/totals` :
+      `${analyzeApiAddr}/metrics/totals` :
       `${process.env.API_ADDR}/1/profiles/${profileId}/analytics/totals.json`
     ),
     method: (shouldUseAnalyzeApi(profileService) ?
@@ -51,10 +51,10 @@ const requestTotals = (profileId, profileService, dateRange, accessToken) =>
     json: true,
   });
 
-const requestDailyTotals = (profileId, profileService, dateRange, accessToken) =>
+const requestDailyTotals = (profileId, profileService, dateRange, accessToken, analyzeApiAddr) =>
   rp({
     uri: (shouldUseAnalyzeApi(profileService) ?
-      `${process.env.ANALYZE_API_ADDR}/metrics/daily_totals` :
+      `${analyzeApiAddr}/metrics/daily_totals` :
       `${process.env.API_ADDR}/1/profiles/${profileId}/analytics/daily_totals.json`
     ),
     method: (shouldUseAnalyzeApi(profileService) ?
@@ -194,30 +194,34 @@ function formatData(
 module.exports = method(
   'average',
   'fetch analytics average for profiles and pages',
-  ({ profileId, profileService, startDate, endDate }, { session }) => {
+  ({ profileId, profileService, startDate, endDate }, req) => {
     const dateRange = new DateRange(startDate, endDate);
     const pastDateRange = dateRange.getPreviousDateRange();
 
     const currentPeriodTotals = requestTotals(profileId,
       profileService,
       dateRange,
-      session.analyze.accessToken,
+      req.session.analyze.accessToken,
+      req.app.get('analyzeApiAddr'),
     );
     const pastPeriodTotals = requestTotals(profileId,
       profileService,
       pastDateRange,
-      session.analyze.accessToken,
+      req.session.analyze.accessToken,
+      req.app.get('analyzeApiAddr'),
     );
 
     const currentPeriodDailyTotals = requestDailyTotals(profileId,
       profileService,
       dateRange,
-      session.analyze.accessToken,
+      req.session.analyze.accessToken,
+      req.app.get('analyzeApiAddr'),
     );
     const pastPeriodDailyTotals = requestDailyTotals(profileId,
       profileService,
       pastDateRange,
-      session.analyze.accessToken,
+      req.session.analyze.accessToken,
+      req.app.get('analyzeApiAddr'),
     );
 
     return Promise

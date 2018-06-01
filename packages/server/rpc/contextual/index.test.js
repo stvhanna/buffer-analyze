@@ -13,6 +13,16 @@ describe('rpc/contextual', () => {
   const profileId = '123159ad';
   const profileService = 'facebook';
   const token = 'some token';
+  const mockedRequest = {
+    session: {
+      analyze: {
+        accessToken: token,
+      },
+    },
+    app: {
+      get() { return 'analyze-api'; },
+    },
+  };
 
   it('should have the expected name', () => {
     expect(contextual.name)
@@ -33,17 +43,11 @@ describe('rpc/contextual', () => {
       endDate: end,
       profileId,
       profileService: 'instagram',
-    }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    }, mockedRequest);
 
     expect(rp.mock.calls[0])
       .toEqual([{
-        uri: `${process.env.ANALYZE_API_ADDR}/metrics/questions`,
+        uri: 'analyze-api/metrics/questions',
         method: 'POST',
         strictSSL: false,
         qs: {
@@ -66,17 +70,11 @@ describe('rpc/contextual', () => {
       endDate: end,
       profileId,
       profileService: 'twitter',
-    }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    }, mockedRequest);
 
     expect(rp.mock.calls[0])
       .toEqual([{
-        uri: `${process.env.ANALYZE_API_ADDR}/metrics/questions`,
+        uri: 'analyze-api/metrics/questions',
         method: 'POST',
         strictSSL: false,
         qs: {
@@ -100,13 +98,7 @@ describe('rpc/contextual', () => {
       endDate: end,
       profileId,
       profileService,
-    }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    }, mockedRequest);
 
     expect(rp.mock.calls[0])
       .toEqual([{
@@ -126,13 +118,7 @@ describe('rpc/contextual', () => {
   it('it should return: data, metrics, and presets', async() => {
     rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
 
-    const data = await contextual.fn({ profileId, profileService }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    const data = await contextual.fn({ profileId, profileService }, mockedRequest);
 
     expect(data.data).toBeDefined();
     expect(data.metrics).toBeDefined();
@@ -142,13 +128,7 @@ describe('rpc/contextual', () => {
   it('should return a valid response if all data is 0', async() => {
     rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
 
-    const data = await contextual.fn({ profileId, profileService }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    const data = await contextual.fn({ profileId, profileService }, mockedRequest);
 
     expect(data.metrics.length).toBe(10);
     expect(data.metrics[0]).toEqual({
@@ -160,13 +140,7 @@ describe('rpc/contextual', () => {
   it('should return the daily data', async() => {
     rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
 
-    const data = await contextual.fn({ profileId, profileService }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    const data = await contextual.fn({ profileId, profileService }, mockedRequest);
     expect(data.data.length).toBe(7);
     expect(data.data[0].day).toBe('1508371200000');
     expect(data.data[0].metrics.length).toBe(10);
@@ -196,13 +170,7 @@ describe('rpc/contextual', () => {
 
     rp.mockReturnValueOnce(Promise.resolve(response));
 
-    const data = await contextual.fn({ profileId, profileService }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    const data = await contextual.fn({ profileId, profileService }, mockedRequest);
     expect(data.data.length).toBe(1);
     expect(data.data[0].metrics.length).toBe(1);
     expect(data.data[0].metrics[0]).toMatchObject({
@@ -233,13 +201,7 @@ describe('rpc/contextual', () => {
     } };
     rp.mockReturnValueOnce(Promise.resolve(mockedResponse));
 
-    const data = await contextual.fn({ profileId, profileService }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    const data = await contextual.fn({ profileId, profileService }, mockedRequest);
     expect(data.presets.length).toBe(1);
   });
 
@@ -264,26 +226,14 @@ describe('rpc/contextual', () => {
     } };
     rp.mockReturnValueOnce(Promise.resolve(mockedResponse));
 
-    const data = await contextual.fn({ profileId, profileService }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    const data = await contextual.fn({ profileId, profileService }, mockedRequest);
     expect(data.presets.length).toBe(0);
   });
 
   it('should return the presets data', async() => {
     rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
 
-    const data = await contextual.fn({ profileId, profileService }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    const data = await contextual.fn({ profileId, profileService }, mockedRequest);
     expect(data.presets.length).toBe(2);
 
     expect(data.presets[0].label).toBe('How does post frequency affect my fan count?');
@@ -307,13 +257,7 @@ describe('rpc/contextual', () => {
   it('should return empty data if fetch failed', async() => {
     rp.mockReturnValueOnce(Promise.reject(CURRENT_PERIOD_DAILY_RESPONSE));
 
-    const data = await contextual.fn({ profileId, profileService }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    const data = await contextual.fn({ profileId, profileService }, mockedRequest);
     expect(data.presets.length).toBe(0);
     expect(data.data.length).toBe(0);
     expect(data.metrics.length).toBe(0);

@@ -8,10 +8,10 @@ function shouldUseAnalyzeApi (profileService) {
   return profileService !== 'facebook';
 }
 
-const requestContextual = (profileId, profileService, dateRange, accessToken) =>
+const requestContextual = (profileId, profileService, dateRange, accessToken, analyzeApiAddr) =>
   rp({
     uri: (shouldUseAnalyzeApi(profileService) ?
-      `${process.env.ANALYZE_API_ADDR}/metrics/questions` :
+      `${analyzeApiAddr}/metrics/questions` :
       `${process.env.API_ADDR}/1/profiles/${profileId}/analytics/contextual.json`
     ),
     method: (shouldUseAnalyzeApi(profileService) ?
@@ -111,13 +111,14 @@ function formatData(
 module.exports = method(
   'contextual',
   'fetch analytics contextual for profiles and pages',
-  ({ profileId, profileService, startDate, endDate }, { session }) => {
+  ({ profileId, profileService, startDate, endDate }, req) => {
     const dateRange = new DateRange(startDate, endDate);
     return requestContextual(
       profileId,
       profileService,
       dateRange,
-      session.analyze.accessToken,
+      req.session.analyze.accessToken,
+      req.app.get('analyzeApiAddr'),
     )
       .then(response => formatData(
         response.response,

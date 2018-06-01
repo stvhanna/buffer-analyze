@@ -79,6 +79,13 @@ const html = fs.readFileSync(join(__dirname, 'index.html'), 'utf8')
 app.use(logMiddleware({ name: 'BufferAnalyze' }));
 app.use(cookieParser());
 
+app.use('*', (req, res, next) => {
+  const analyzeApiAddr = req.get('ANALYZE-API-ADDR') || process.env.ANALYZE_API_ADDR;
+  app.set('analyzeApiAddr', analyzeApiAddr);
+  next();
+});
+
+
 app.get('/health-check', controller.healthCheck);
 const favicon = fs.readFileSync(join(__dirname, 'favicon.ico'));
 app.get('/favicon.ico', (req, res) => res.send(favicon));

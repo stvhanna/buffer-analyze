@@ -16,6 +16,9 @@ describe('rpc/get_report', () => {
     session: {
       accessToken: token,
     },
+    app: {
+      get() { return 'analyze-api'; },
+    },
   };
   const id = 'report-1235asd';
   moment.tz.setDefault(timezone);
@@ -83,7 +86,7 @@ describe('rpc/get_report', () => {
     summary.fn = jest.fn();
     summary.fn.mockReturnValueOnce(Promise.resolve([]));
 
-    await getReport.fn({ _id: id, timezone }, { session });
+    await getReport.fn({ _id: id, timezone }, session);
 
     expect(summary.fn.mock.calls[0])
       .toEqual([{
@@ -91,7 +94,7 @@ describe('rpc/get_report', () => {
         profileService: 'facebook',
         startDate,
         endDate,
-      }, { session }]);
+      }, { session: session.session }]);
   });
 
   it('returns chart data for each chart as a "metrics" key', async () => {
@@ -99,7 +102,7 @@ describe('rpc/get_report', () => {
     summary.fn = jest.fn();
     summary.fn.mockReturnValueOnce(Promise.resolve(metrics));
 
-    const result = await getReport.fn({ _id: id, timezone }, { session });
+    const result = await getReport.fn({ _id: id, timezone }, session);
 
     expect(result.charts[0].metrics).toEqual(metrics);
   });
@@ -112,7 +115,7 @@ describe('rpc/get_report', () => {
     summary.fn = jest.fn();
     summary.fn.mockReturnValueOnce(Promise.resolve(metricsEmbeddedInObject));
 
-    const result = await getReport.fn({ _id: id, timezone }, { session });
+    const result = await getReport.fn({ _id: id, timezone }, session);
 
     expect(result.charts[0].metrics).toEqual(metricsEmbeddedInObject.metrics);
     expect(result.charts[0].posts).toEqual(metricsEmbeddedInObject.posts);
@@ -126,7 +129,7 @@ describe('rpc/get_report', () => {
     summary.fn = jest.fn();
     summary.fn.mockReturnValueOnce(Promise.resolve(metricsEmbeddedInObject));
 
-    await getReport.fn({ _id: id, timezone }, { session });
+    await getReport.fn({ _id: id, timezone }, session);
 
     expect(summary.fn.mock.calls[0][0]).toEqual({
       profileId: '12351wa',
@@ -145,7 +148,7 @@ describe('rpc/get_report', () => {
     summary.fn = jest.fn();
     summary.fn.mockReturnValueOnce(Promise.resolve([]));
 
-    await getReport.fn({ _id: id, timezone }, { session });
+    await getReport.fn({ _id: id, timezone }, session);
 
     expect(summary.fn.mock.calls[0][0]).toEqual({
       profileId: '12351wa',
@@ -169,7 +172,7 @@ describe('rpc/get_report', () => {
     summary.fn = jest.fn();
     summary.fn.mockReturnValueOnce(Promise.resolve([]));
 
-    await getReport.fn({ _id: id, timezone }, { session });
+    await getReport.fn({ _id: id, timezone }, session);
 
     expect(summary.fn.mock.calls[0][0]).toEqual({
       profileId: '12351wa',
@@ -188,7 +191,7 @@ describe('rpc/get_report', () => {
     summary.fn = jest.fn();
     summary.fn.mockReturnValueOnce(Promise.resolve(metricsEmbeddedInObject));
 
-    const response = await getReport.fn({ _id: id, timezone }, { session });
+    const response = await getReport.fn({ _id: id, timezone }, session);
 
     expect(response.charts[0]).toEqual({
       ...report.charts[0],
@@ -219,7 +222,7 @@ describe('rpc/get_report', () => {
     summary.fn = jest.fn();
     summary.fn.mockReturnValue(Promise.resolve(metrics));
 
-    const result = await getReport.fn({ _id: id, timezone }, { session });
+    const result = await getReport.fn({ _id: id, timezone }, session);
 
     expect(result.charts.length).toEqual(2);
   });
