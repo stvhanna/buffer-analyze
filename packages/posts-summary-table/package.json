@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/posts-summary-table",
-  "version": "0.59.0",
+  "version": "0.60.3",
   "description": "Posts Summary Table package for Insights/Overview",
   "main": "index.js",
   "scripts": {
@@ -21,15 +21,15 @@
   },
   "author": "tik.hakobyan@gmail.com",
   "dependencies": {
-    "@bufferapp/add-report": "^0.59.0",
+    "@bufferapp/add-report": "^0.60.3",
     "@bufferapp/analyze-csv-export": "^0.50.1",
-    "@bufferapp/analyze-date-picker": "^0.59.0",
+    "@bufferapp/analyze-date-picker": "^0.60.3",
     "@bufferapp/analyze-png-export": "^0.50.1",
-    "@bufferapp/analyze-profile-selector": "^0.59.0",
-    "@bufferapp/analyze-shared-components": "^0.59.0",
+    "@bufferapp/analyze-profile-selector": "^0.60.3",
+    "@bufferapp/analyze-shared-components": "^0.60.3",
     "@bufferapp/async-data-fetch": "0.5.36-beta01",
     "@bufferapp/components": "2.1.1",
-    "@bufferapp/nav-sidebar": "^0.59.0",
+    "@bufferapp/nav-sidebar": "^0.60.3",
     "numeral": "2.0.6"
   },
   "devDependencies": {
