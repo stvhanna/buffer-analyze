@@ -47,7 +47,7 @@ Table.propTypes = {
 };
 
 
-const SummaryTable = ({ metrics, loading, profileService, startDate, endDate }) => {
+const SummaryTable = ({ metrics, loading }) => {
   let content = null;
   if (loading) {
     content = <Loading active noBorder />;
@@ -60,7 +60,7 @@ const SummaryTable = ({ metrics, loading, profileService, startDate, endDate }) 
   return (
     <ChartCard>
       <ChartHeader>
-        <Title profileService={profileService} startDate={startDate} endDate={endDate} />
+        <Title />
         <AddReport chart="summary-table" />
       </ChartHeader>
       <div id="js-dom-to-png-summary" style={gridContainer}>
@@ -72,20 +72,15 @@ const SummaryTable = ({ metrics, loading, profileService, startDate, endDate }) 
 
 SummaryTable.defaultProps = {
   loading: false,
-  startDate: null,
-  endDate: null,
 };
 
 SummaryTable.propTypes = {
   loading: PropTypes.bool,
-  profileService: PropTypes.string.isRequired,
   metrics: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string,
     value: PropTypes.number,
     diff: PropTypes.number,
   })).isRequired,
-  startDate: PropTypes.number,
-  endDate: PropTypes.number,
 };
 
 export default SummaryTable;

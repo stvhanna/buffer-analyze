@@ -29,7 +29,7 @@ exports[`Snapshots AudienceChart [TESTED] Should render 1`] = `
           <span
             style={
               Object {
-                "color": undefined,
+                "color": "#000",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,

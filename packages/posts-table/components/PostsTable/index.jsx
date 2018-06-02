@@ -225,7 +225,7 @@ PostsTable.propTypes = {
   toggleDropdown: PropTypes.func.isRequired,
   selectMetric: PropTypes.func.isRequired,
   handlePostsCountClick: PropTypes.func.isRequired,
-  activePostsCount: PropTypes.string.isRequired,
+  activePostsCount: PropTypes.number.isRequired,
   addToReportButton: PropTypes.element,
   selectedProfileId: PropTypes.string,
 };

@@ -212,6 +212,7 @@ class Form extends Component {
 Form.defaultProps = {
   startDate: null,
   endDate: null,
+  minDate: null,
 };
 
 Form.propTypes = {
@@ -219,7 +220,7 @@ Form.propTypes = {
   endDate: PropTypes.number,
   month: PropTypes.number.isRequired,
   calendarOpen: PropTypes.bool.isRequired,
-  minDate: PropTypes.number.isRequired,
+  minDate: PropTypes.number,
   maxDate: PropTypes.number.isRequired,
 
   // Actions

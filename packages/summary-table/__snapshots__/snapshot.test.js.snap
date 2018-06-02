@@ -29,7 +29,7 @@ exports[`Snapshots SummaryTable should render a "no data" state 1`] = `
           <span
             style={
               Object {
-                "color": undefined,
+                "color": "#000",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -111,7 +111,7 @@ exports[`Snapshots SummaryTable should render a loading state 1`] = `
           <span
             style={
               Object {
-                "color": undefined,
+                "color": "#000",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -264,7 +264,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
           <span
             style={
               Object {
-                "color": undefined,
+                "color": "#000",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -1273,7 +1273,7 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
           <span
             style={
               Object {
-                "color": undefined,
+                "color": "#000",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -1928,7 +1928,7 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
           <span
             style={
               Object {
-                "color": undefined,
+                "color": "#000",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -2680,7 +2680,7 @@ exports[`Snapshots Title should render title as if for app 1`] = `
     <span
       style={
         Object {
-          "color": undefined,
+          "color": "#000",
           "fontFamily": "\\"Roboto\\", sans-serif",
           "fontSize": "1.25rem",
           "fontWeight": 500,

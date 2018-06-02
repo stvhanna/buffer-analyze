@@ -32,7 +32,7 @@ const EmptyState = ({ header, description }) => (
   <Container>
     <Image />
     <Header>
-      <Text size="medium">{header}</Text>
+      <Text>{header}</Text>
     </Header>
     {description ?
       <Description>

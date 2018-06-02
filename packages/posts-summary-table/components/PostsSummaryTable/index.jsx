@@ -47,7 +47,7 @@ Table.propTypes = {
   })).isRequired,
 };
 
-const PostsSummaryTable = ({ metrics, loading, profileService, startDate, endDate }) => {
+const PostsSummaryTable = ({ metrics, loading, profileService }) => {
   let content = null;
   if (loading) {
     content = <Loading active noBorder />;
@@ -60,7 +60,7 @@ const PostsSummaryTable = ({ metrics, loading, profileService, startDate, endDat
   return (
     <ChartCard>
       <ChartHeader>
-        <Title profileService={profileService} startDate={startDate} endDate={endDate} />
+        <Title profileService={profileService} />
         <AddReport chart="posts-summary" />
       </ChartHeader>
       <GridContainer id="js-dom-to-png-posts-summary">
@@ -72,8 +72,6 @@ const PostsSummaryTable = ({ metrics, loading, profileService, startDate, endDat
 
 PostsSummaryTable.defaultProps = {
   loading: false,
-  startDate: null,
-  endDate: null,
 };
 
 PostsSummaryTable.propTypes = {
@@ -84,8 +82,6 @@ PostsSummaryTable.propTypes = {
     value: PropTypes.number,
     diff: PropTypes.number,
   })).isRequired,
-  startDate: PropTypes.number,
-  endDate: PropTypes.number,
 };
 
 export default PostsSummaryTable;

@@ -29,7 +29,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render Posts metrics as col
           <span
             style={
               Object {
-                "color": undefined,
+                "color": "#000",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -761,7 +761,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
           <span
             style={
               Object {
-                "color": undefined,
+                "color": "#000",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -1493,7 +1493,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
           <span
             style={
               Object {
-                "color": undefined,
+                "color": "#000",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -2041,7 +2041,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
           <span
             style={
               Object {
-                "color": undefined,
+                "color": "#000",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -2625,7 +2625,7 @@ exports[`Snapshots ContextualCompare [TESTED] should render a "no data" state 1`
           <span
             style={
               Object {
-                "color": undefined,
+                "color": "#000",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -2701,7 +2701,7 @@ exports[`Snapshots ContextualCompare [TESTED] should render a loading state 1`] 
           <span
             style={
               Object {
-                "color": undefined,
+                "color": "#000",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 500,
@@ -3173,7 +3173,7 @@ exports[`Snapshots Title [TESTED] should render title as if for app 1`] = `
     <span
       style={
         Object {
-          "color": undefined,
+          "color": "#000",
           "fontFamily": "\\"Roboto\\", sans-serif",
           "fontSize": "1.25rem",
           "fontWeight": 500,

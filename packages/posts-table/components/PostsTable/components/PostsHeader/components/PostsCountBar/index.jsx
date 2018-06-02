@@ -41,7 +41,7 @@ PostsCountBar.propTypes = {
   postsCounts: PropTypes.arrayOf(PropTypes.shape({
     value: PropTypes.string,
   })),
-  activePostsCount: PropTypes.string.isRequired,
+  activePostsCount: PropTypes.number.isRequired,
   handlePostsCountClick: PropTypes.func.isRequired,
 };
 

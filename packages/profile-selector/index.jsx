@@ -21,13 +21,15 @@ ProfileSelector.propTypes = {
   openDropdown: PropTypes.func.isRequired,
   closeDropdown: PropTypes.func.isRequired,
   onSearchChange: PropTypes.func.isRequired,
+  loading: PropTypes.bool.isRequired,
 };
 
 const mapStateToProps = state => ({
   isDropdownOpen: state.profiles.isDropdownOpen,
   profiles: state.profiles.profiles,
   profilesFilterString: state.profiles.profilesFilterString,
-  selectedProfileId: state.profiles.selectedProfile ? state.profiles.selectedProfile.id : null,
+  selectedProfileId: state.profiles.selectedProfile ? state.profiles.selectedProfile.id : '',
+  loading: state.profiles.loading,
 });
 
 const mapDispatchToProps = dispatch => ({

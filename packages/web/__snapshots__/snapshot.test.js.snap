@@ -1049,7 +1049,7 @@ exports[`Snapshots App should render application 1`] = `
                 <span
                   style={
                     Object {
-                      "color": undefined,
+                      "color": "#000",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "1.25rem",
                       "fontWeight": 500,
@@ -2002,7 +2002,7 @@ exports[`Snapshots DefaultPage should render the dashboard page 1`] = `
             <span
               style={
                 Object {
-                  "color": undefined,
+                  "color": "#000",
                   "fontFamily": "\\"Roboto\\", sans-serif",
                   "fontSize": "1.25rem",
                   "fontWeight": 500,

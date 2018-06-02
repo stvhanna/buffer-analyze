@@ -125,17 +125,19 @@ const HourlyChart = (props) => {
 HourlyChart.defaultProps = {
   loading: false,
   secondaryMetric: null,
+  selectedMetric: null,
   postsCount: [],
   timezone: 'America/Los_Angeles',
+  profileService: '',
 };
 
 HourlyChart.propTypes = {
   loading: PropTypes.bool,
-  profileService: PropTypes.string.isRequired,
+  profileService: PropTypes.string,
   selectedMetric: PropTypes.shape({
     label: PropTypes.string,
     hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
-  }).isRequired,
+  }),
   secondaryMetric: PropTypes.shape({
     label: PropTypes.string,
     hourlyMetrics: PropTypes.arrayOf(PropTypes.number),

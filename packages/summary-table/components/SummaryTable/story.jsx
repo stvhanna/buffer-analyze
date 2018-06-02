@@ -56,7 +56,6 @@ storiesOf('SummaryTable')
             diff: -9,
           },
         ]}
-        profileService="twitter"
       />
     </div>
   ))
@@ -94,7 +93,6 @@ storiesOf('SummaryTable')
             diff: 0,
           },
         ]}
-        profileService="twitter"
       />
     </div>
   ))
@@ -137,7 +135,6 @@ storiesOf('SummaryTable')
             diff: 0,
           },
         ]}
-        profileService="twitter"
       />
     </div>
   ))
@@ -147,7 +144,7 @@ storiesOf('SummaryTable')
         width: '750px',
       }}
     >
-      <SummaryTable profileService="facebook" loading metrics={[]} />
+      <SummaryTable loading metrics={[]} />
     </div>
   ))
   .add('should render a "no data" state', () => (
@@ -156,6 +153,6 @@ storiesOf('SummaryTable')
         width: '750px',
       }}
     >
-      <SummaryTable profileService="twitter" metrics={[]} />
+      <SummaryTable metrics={[]} />
     </div>
   ));

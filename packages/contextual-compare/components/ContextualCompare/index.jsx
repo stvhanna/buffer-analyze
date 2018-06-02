@@ -60,12 +60,13 @@ const ContextualCompare = ({
 ContextualCompare.defaultProps = {
   loading: false,
   presets: null,
+  profileService: '',
 };
 
 ContextualCompare.propTypes = {
   timezone: PropTypes.string.isRequired,
   className: PropTypes.string.isRequired,
-  profileService: PropTypes.string.isRequired,
+  profileService: PropTypes.string,
   data: PropTypes.arrayOf(PropTypes.shape({
     day: PropTypes.string.isRequired,
     metrics: PropTypes.arrayOf(PropTypes.shape({

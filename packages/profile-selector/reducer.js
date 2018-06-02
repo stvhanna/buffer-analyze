@@ -14,6 +14,7 @@ const initialState = {
   isDropdownOpen: false,
   profilesFilterString: '',
   selectedProfile: null,
+  loading: true,
 };
 
 export default (state = initialState, action) => {
@@ -21,6 +22,7 @@ export default (state = initialState, action) => {
     case `profiles_${fetchActions.FETCH_SUCCESS}`:
       return Object.assign({}, state, {
         profiles: action.result,
+        loading: false,
         // selectedProfile: state.selectedProfile || action.result[0],
       });
     case actionTypes.FILTER_PROFILES:

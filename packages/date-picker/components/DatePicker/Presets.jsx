@@ -120,7 +120,6 @@ Presets.defaultProps = {
 
 Presets.propTypes = {
   selectPreset: PropTypes.func.isRequired,
-  minStartDate: PropTypes.number.isRequired,
   startDate: PropTypes.number,
   endDate: PropTypes.number,
 };
