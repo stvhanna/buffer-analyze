@@ -56,21 +56,16 @@ const CHARTS = {
 };
 
 const Container = styled.div`
-  padding: 0.75rem 0 0;
+  padding: 1.5rem 1.5rem 0;
 `;
 
 const Separator = styled.section`
-  padding: 1.75rem 4rem 2.5rem;
-  margin: 0 0 0.75rem;
   position: relative;
   background: #FFFFFF;
   border: 1px solid #D9E5ED;
-  border-width: 1px 0;
-
-  &:last-of-type {
-    margin-bottom: 0;
-    border-bottom: 0;
-  }
+  border-radius: 3px;
+  padding: 1.5rem 2.5rem 1.75rem;
+  margin: 0 0 1.5rem;
 `;
 
 const TitleWrapper = styled.div`
