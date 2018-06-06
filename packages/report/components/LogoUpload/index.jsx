@@ -29,6 +29,7 @@ const DropzonContainer = styled.div`
   border-style: solid;
   border-radius: 3px;
   border-color: #D5E3EF;
+  background: #FFFFFF;
 `;
 
 const LogoPlaceholder = styled.div`

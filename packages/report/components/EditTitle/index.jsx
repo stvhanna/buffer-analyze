@@ -11,7 +11,7 @@ const Form = styled.form`
 const Input = styled.input`
   color: #000000;
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 700;
   font-family: ${fontFamily};
   margin: 0 0 .5rem;
   border: none;

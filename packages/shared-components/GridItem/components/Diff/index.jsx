@@ -13,7 +13,7 @@ const gridSummaryItemDiffContainer = {
   color: '#8D969E',
   display: 'inline-block',
   fontSize: '18px',
-  fontWeight: 600,
+  fontWeight: 500,
   marginLeft: `${0.5 * baseMargin}px`,
 };
 const gridSummaryItemIcon = {

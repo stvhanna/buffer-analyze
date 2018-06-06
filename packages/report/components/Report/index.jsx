@@ -16,11 +16,21 @@ import DateRange from '../DateRange';
 import EditTitle from '../EditTitle';
 import LogoUpload from '../LogoUpload';
 
+const Page = styled.div`
+  background: #FCFCFC;
+`;
+
+const Header = styled.div`
+  padding: 4.5rem 4rem;
+  background: #FFFFFF;
+  border-bottom: 1px solid #D9E5ED;
+`;
+
 const Title = styled.h1`
   display: inline-block;
   color: #000000;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 700;
   margin: 0 0 .5rem 0;
 `;
 
@@ -57,27 +67,29 @@ class Report extends React.Component {
         logoUrl, deleteLogo, isLogoUploading, isLogoDropzoneDisabled } = this.props;
     if (loading) return <Loading active noBorder />;
     return (
-      <div id="report-page">
-        <Text>
-          { edit && <EditTitle name={name} saveChanges={saveChanges} />}
-          { !edit &&
-            <Container>
-              <LogoUpload
-                logoUrl={logoUrl}
-                uploadLogo={uploadLogo}
-                deleteLogo={deleteLogo}
-                isLogoUploading={isLogoUploading}
-                isLogoDropzoneDisabled={isLogoDropzoneDisabled}
-                exporting={exporting}
-              />
-              <Button noStyle onClick={editName}>
-                <Title>{name}</Title>
-              </Button>
-              <Icon><EditIcon /></Icon>
-            </Container>
-          }
-          <DateRange {...dateRange} />
-        </Text>
+      <Page id="report-page">
+        <Header>
+          <Text>
+            { edit && <EditTitle name={name} saveChanges={saveChanges} />}
+            { !edit &&
+              <Container>
+                <LogoUpload
+                  logoUrl={logoUrl}
+                  uploadLogo={uploadLogo}
+                  deleteLogo={deleteLogo}
+                  isLogoUploading={isLogoUploading}
+                  isLogoDropzoneDisabled={isLogoDropzoneDisabled}
+                  exporting={exporting}
+                />
+                <Button noStyle onClick={editName}>
+                  <Title>{name}</Title>
+                </Button>
+                <Icon><EditIcon /></Icon>
+              </Container>
+            }
+            <DateRange {...dateRange} />
+          </Text>
+        </Header>
         <ChartFactory
           charts={charts}
           moveUp={moveUp}
@@ -85,7 +97,7 @@ class Report extends React.Component {
           deleteChart={deleteChart}
           exporting={exporting}
         />
-      </div>
+      </Page>
     );
   }
 }

@@ -20,7 +20,7 @@
   },
   "author": "mike@msanroman.io",
   "dependencies": {
-    "@bufferapp/components": "2.1.1",
+    "@bufferapp/components": "2.1.1-alpha.4",
     "moment": "^2.18.1",
     "react-highcharts": "^16.0.2",
     "styled-components": "^2.2.1"

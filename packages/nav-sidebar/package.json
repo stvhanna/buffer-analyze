@@ -23,7 +23,7 @@
   "dependencies": {
     "@bufferapp/analyze-profile-selector": "^0.60.3",
     "@bufferapp/async-data-fetch": "0.5.36-beta01",
-    "@bufferapp/components": "2.1.1",
+    "@bufferapp/components": "2.1.1-alpha.4",
     "@bufferapp/report-list": "^0.60.3"
   },
   "devDependencies": {

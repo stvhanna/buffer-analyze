@@ -14,8 +14,9 @@ const Item = styled.li`
   flex-grow: 1;
   width: ${props => props.width};
   justify-content: center;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 0;
+  padding-right: 1rem;
+  margin: 0 0 0.75rem;
 
   &:first-child > div {
     padding-left: ${props => (props.withChart ? '0' : '')};

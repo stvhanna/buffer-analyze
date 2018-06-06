@@ -6,14 +6,12 @@ import {
 } from '@bufferapp/components';
 import styled from 'styled-components';
 
-const Range = styled.span`
-  color: #343E47;
-`;
+const Range = styled.span``;
 
 const Date = ({ children }) => moment(children, 'MM/DD/YYYY').format('MMMM D, YYYY');
 
 const DateRange = ({ startDate, endDate }) =>
-  <Text weight="bold">
+  <Text weight="medium" color="outerSpace">
     <Range>
       <Date>{startDate}</Date> to <Date>{endDate}</Date>
     </Range>

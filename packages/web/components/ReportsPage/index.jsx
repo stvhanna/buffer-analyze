@@ -37,7 +37,7 @@ const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: white;
+  background: #FFFFFF;
   padding: 0.85rem 0.5rem;
   border-bottom: 1px solid #E2E8ED;
   box-sizing: border-box;
@@ -45,13 +45,11 @@ const Header = styled.header`
 `;
 
 const Card = styled.section`
-  width: 880px;
+  width: 960px;
   margin: 0 auto;
-  background: #FFFFFF;
-  border: 1px solid #E2E8ED;
-  box-shadow: 0px 0px 10px rgba(48, 71, 89, 0.05);
+  box-shadow: 0px 0px 30px rgba(48, 71, 89, 0.1);
   border-radius: 5px;
-  padding: 4.5rem 4rem;
+  overflow: hidden;
 `;
 
 const Section = styled.section`
@@ -66,7 +64,7 @@ const ReportsPage = ({ location, dispatch }) => (
       <Header>
         <Button onClick={() => dispatch(push('/reports'))}><Text weight="bold" size="small">Back to Reports</Text></Button>
         <Section>
-          <DatePicker/>
+          <DatePicker />
           <PDFExportButton />
         </Section>
       </Header>

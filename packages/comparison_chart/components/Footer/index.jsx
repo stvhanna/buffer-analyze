@@ -32,7 +32,7 @@ const ProfileAvatarWrapper = styled.div`
   margin-right: 14px;
 `;
 const ProfileUsernameWrapper = styled.div`
-  margin-right: 10px;
+  margin: 0 10px 0.1rem 0;
 `;
 
 const ProfileCell = ({ profileTotal, profile, gridWidth }) => (
@@ -45,7 +45,7 @@ const ProfileCell = ({ profileTotal, profile, gridWidth }) => (
     }}
     customLabel={
       <ProfileUsernameWrapper>
-        <Text weight="bold" color="shuttleGray">
+        <Text weight="medium" color="outerSpace">
           {profile.username}
         </Text>
       </ProfileUsernameWrapper>

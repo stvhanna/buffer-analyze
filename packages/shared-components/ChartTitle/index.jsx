@@ -15,7 +15,7 @@ const renderForApp = children => (
 );
 
 const renderForReport = children => (
-  <Text color="black" weight="medium" size="large">
+  <Text color="black" weight="medium" size="extra-large">
     {children}
   </Text>
 );
