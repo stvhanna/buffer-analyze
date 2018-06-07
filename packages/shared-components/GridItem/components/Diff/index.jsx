@@ -1,73 +1,50 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  fontFamily,
-  fontSizeLarge,
-} from '@bufferapp/components/style/font';
-
+import styled from 'styled-components';
+import Text from '@bufferapp/components/Text';
 import ArrowIcon from '../ArrowIcon';
 import TruncatedNumber from '../../../TruncatedNumber';
 
-const baseMargin = 10;
-const gridSummaryItemDiffContainer = {
-  color: '#8D969E',
-  display: 'inline-block',
-  fontSize: '18px',
-  fontWeight: 500,
-  marginLeft: `${0.5 * baseMargin}px`,
-};
-const gridSummaryItemIcon = {
-  display: 'inline-block',
-  marginLeft: `${baseMargin}px`,
-  height: '1rem',
-};
+const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
+const Icon = styled.div`
+  display: inline-block;
+  margin: 0 0.1rem 0 0.25rem;
+  height: 0.5rem;
+`;
+
+const Value = styled.div`
+  display: inline-block;
+`;
 
 const Diff = ({ diff }) => {
   if (diff === null) {
     return null;
   }
   let color;
-  let itemDiffStyle;
   if (diff > 0) {
-    itemDiffStyle = {
-      ...gridSummaryItemDiffContainer,
-      color: '#2FD566',
-    };
     color = 'shamrock';
   } else if (diff < 0) {
-    itemDiffStyle = {
-      ...gridSummaryItemDiffContainer,
-      color: '#FF1E1E',
-    };
     color = 'torchRed';
   } else {
-    itemDiffStyle = {
-      ...gridSummaryItemDiffContainer,
-      color: '#8D969E',
-    };
     color = '#8D969E';
   }
 
   return (
-    <div>
-      <span style={gridSummaryItemIcon}>
+    <Container>
+      <Icon>
         <ArrowIcon diff={diff} />
-      </span>
-      <div style={itemDiffStyle}>
-        <span>
-          <span
-            style={{
-              fontSize: fontSizeLarge,
-              fontFamily,
-              color,
-            }}
-          >
-            <TruncatedNumber absoluteValue shorterOption>{diff}</TruncatedNumber>%
-          </span>
-        </span>
-      </div>
-    </div>
+      </Icon>
+      <Value>
+        <Text color={color} weight="bold">
+          <TruncatedNumber absoluteValue shorterOption>{diff}</TruncatedNumber>%
+        </Text>
+      </Value>
+    </Container>
   );
 };
 
