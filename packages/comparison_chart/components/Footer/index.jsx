@@ -23,13 +23,13 @@ const Grid = styled.ul`
 
 const Wrapper = styled.section`
   position: relative;
-  padding: 0.75rem 0 0;
+  padding: 0.5rem 0 0;
 `;
 
 const ProfileAvatarWrapper = styled.div`
   display: inline-flex;
   align-items: center;
-  margin-right: 14px;
+  margin: 0 0.5rem 0 0;
 `;
 const ProfileUsernameWrapper = styled.div`
   margin: 0 0.75rem 0 0;

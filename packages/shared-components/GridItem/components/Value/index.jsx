@@ -5,7 +5,7 @@ import Text from '@bufferapp/components/Text';
 import TruncatedNumber from '../../../TruncatedNumber';
 
 const Value = ({ smaller, children }) =>
-  <Text size={smaller ? 'extra-large' : 'extra-extra-large'} weight="bold" color="outerSpace">
+  <Text size={smaller ? 'large' : 'extra-extra-large'} weight="bold" color="outerSpace">
     <TruncatedNumber>{children}</TruncatedNumber>
   </Text>;
 
