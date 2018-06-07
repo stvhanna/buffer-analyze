@@ -13,7 +13,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   position: absolute;
   top: 2.5rem;
-  right: 2rem;
+  right: 4rem;
 `;
 
 const Box = styled.span`
