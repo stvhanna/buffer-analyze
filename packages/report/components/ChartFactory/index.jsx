@@ -56,16 +56,16 @@ const CHARTS = {
 };
 
 const Container = styled.div`
-  padding: 1.5rem 1.5rem 0;
+  padding: 0.5rem 0 0;
 `;
 
 const Separator = styled.section`
   position: relative;
   background: #FFFFFF;
   border: 1px solid #D9E5ED;
-  border-radius: 3px;
-  padding: 1.5rem 2.5rem 1.75rem;
-  margin: 0 0 1.5rem;
+  border-width: 1px 0;
+  padding: 1.5rem 4rem 1.75rem;
+  margin: 0.75rem 0 0;
 `;
 
 const TitleWrapper = styled.div`
@@ -82,46 +82,44 @@ const Header = styled.div`
 `;
 
 const ChartFactory = ({ charts, moveUp, moveDown, deleteChart, exporting }) =>
-  <Container>
-    {charts.map((chart, index) => (
-      <Separator key={chart._id}>
-        <Header>
-          <TitleWrapper>
-            {React.createElement(CHARTS[chart.chart_id].title, {
-              ...chart,
-              forReport: true
-            })}
-            {!exporting && <ChartEditButtons
-              moveUp={moveUp}
-              moveDown={moveDown}
-              deleteChart={deleteChart}
-              id={chart._id}
-              first={index === 0}
-              last={index === charts.length - 1}
-            />}
-          </TitleWrapper>
-          <ProfileWrapper>
-            {chart.profile_id && !chart.profileIds &&
-              <ProfileLegend
-                profile={chart.profile}
-              />
-            }
-            {chart.profileIds &&
-              <MultiProfileLegends
-                profiles={chart.profiles}
-                comparedProfileIds={chart.profileIds}
-              />
-            }
-          </ProfileWrapper>
-        </Header>
-        {React.createElement(CHARTS[chart.chart_id].chart, {
-          ...chart,
-          timezone: chart.profile.timezone,
-          service: chart.profile.service,
-        })}
-      </Separator>
-    ))}
-  </Container>;
+  charts.map((chart, index) => (
+    <Separator key={chart._id}>
+      <Header>
+        <TitleWrapper>
+          {React.createElement(CHARTS[chart.chart_id].title, {
+            ...chart,
+            forReport: true
+          })}
+          {!exporting && <ChartEditButtons
+            moveUp={moveUp}
+            moveDown={moveDown}
+            deleteChart={deleteChart}
+            id={chart._id}
+            first={index === 0}
+            last={index === charts.length - 1}
+          />}
+        </TitleWrapper>
+        <ProfileWrapper>
+          {chart.profile_id && !chart.profileIds &&
+            <ProfileLegend
+              profile={chart.profile}
+            />
+          }
+          {chart.profileIds &&
+            <MultiProfileLegends
+              profiles={chart.profiles}
+              comparedProfileIds={chart.profileIds}
+            />
+          }
+        </ProfileWrapper>
+      </Header>
+      {React.createElement(CHARTS[chart.chart_id].chart, {
+        ...chart,
+        timezone: chart.profile.timezone,
+        service: chart.profile.service,
+      })}
+    </Separator>
+  ));
 
 ChartFactory.propTypes = {
   charts: PropTypes.arrayOf(PropTypes.shape({
