@@ -35,17 +35,17 @@ const ProfileHeader = ({ profile, followersCount }) => {
         <div className={styles.sectionProfileAvatarDetails}>
           <span className={styles.profileAvatarDetailHeader}>
             <a href={profile.service_link} rel="noopener noreferrer" target="_blank">
-              <Text size="small" weight="bold">{profile.username}</Text>
+              <Text size="extra-small" weight="bold">{profile.username}</Text>
             </a>
           </span>
           <span className={styles.profileAvatarDetailSubHeader}>
-            <Text size="small">{formatFollowerCount(followersCount)} {followersWording}</Text>
+            <Text size="extra-small">{formatFollowerCount(followersCount)} {followersWording}</Text>
           </span>
         </div>
       </div>
       <a href={helpLinkUrl} rel="noopener noreferrer" target="_blank">
         <span className={styles.profileAvatarDetailNote}>
-          <Text size="small">Analytics updated daily</Text>
+          <Text size="extra-small">Analytics updated daily</Text>
         </span>
       </a>
     </div>

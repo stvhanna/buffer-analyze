@@ -11,7 +11,7 @@ const Range = styled.span``;
 const Date = ({ children }) => moment(children, 'MM/DD/YYYY').format('MMMM D, YYYY');
 
 const DateRange = ({ startDate, endDate }) =>
-  <Text weight="medium" color="outerSpace">
+  <Text weight="bold" color="black">
     <Range>
       <Date>{startDate}</Date> to <Date>{endDate}</Date>
     </Range>

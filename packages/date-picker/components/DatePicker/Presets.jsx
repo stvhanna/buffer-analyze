@@ -95,7 +95,7 @@ const Presets = ({ presets, selectPreset, startDate, endDate }) => {
           fillContainer
           onClick={handleClick}
         >
-          <Text size="small" color={buttonTextColor}>{preset.name}</Text>
+          <Text size="extra-small" color={buttonTextColor}>{preset.name}</Text>
         </Button>
       </Item>
     );

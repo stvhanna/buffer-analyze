@@ -38,9 +38,9 @@ const DropdownItem = ({ profile, handleClick, selected, disabled }) => (
             whiteSpace: 'nowrap',
             overflow: 'hidden',
             textOverflow: 'ellipsis',
-          }} size="small"
+          }} size="extra-small"
         >
-          <Text size="small">{profile.username}</Text>
+          <Text size="extra-small">{profile.username}</Text>
         </span>
         { selected && <div style={{ marginLeft: 'auto' }}>
           <CheckmarkIcon color={'curiousBlue'} />

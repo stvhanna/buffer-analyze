@@ -53,36 +53,36 @@ const StandardTolltip = ({
   profileService,
 }) => (
   <span>
-    <Text color="white" size="small" >There {wasOrWere(postsCount)} a total of </Text>
-    <Text color="white" size="small" weight="bold" >
+    <Text color="white" size="extra-small" >There {wasOrWere(postsCount)} a total of </Text>
+    <Text color="white" size="extra-small" weight="bold" >
       <TruncatedNumber>{postsCount}</TruncatedNumber>
     </Text>
-    <Text color="white" size="small" > {postsWording(profileService, postsCount)} published</Text>
+    <Text color="white" size="extra-small" > {postsWording(profileService, postsCount)} published</Text>
 
     {visualizePreviousPeriod && <span>
-      <Text color="white" size="small" >, compared with </Text>
-      <Text color="white" size="small" weight="bold" >
+      <Text color="white" size="extra-small" >, compared with </Text>
+      <Text color="white" size="extra-small" weight="bold" >
         <TruncatedNumber>{previousPostsCount}</TruncatedNumber>
       </Text>
-      <Text color="white" size="small" > previously,</Text>
+      <Text color="white" size="extra-small" > previously,</Text>
     </span>}
 
-    <Text color="white" size="small" >{rewardWording(profileService)}:</Text>
+    <Text color="white" size="extra-small" >{rewardWording(profileService)}:</Text>
     <br />
     <br />
     <span>
-      <Text color="white" size="small" weight="bold" >
+      <Text color="white" size="extra-small" weight="bold" >
         <MetricIcon metric={{ color }} /> <TruncatedNumber>{value}</TruncatedNumber>
       </Text>
-      <Text color="white" size="small" > {transformLabelForTooltip(label)}</Text>
+      <Text color="white" size="extra-small" > {transformLabelForTooltip(label)}</Text>
     </span>
 
     {visualizePreviousPeriod && <span>
       <br />
-      <Text color="white" size="small" weight="bold" >
+      <Text color="white" size="extra-small" weight="bold" >
         <MetricIcon metric={{ color: '#9B9FA3' }} /> <TruncatedNumber>{previousValue}</TruncatedNumber>
       </Text>
-      <Text color="white" size="small" > Previous {transformLabelForTooltip(label)}</Text>
+      <Text color="white" size="extra-small" > Previous {transformLabelForTooltip(label)}</Text>
     </span>}
   </span>
 );
@@ -115,20 +115,20 @@ const UpdatesTooltip = ({
   profileService,
 }) => (
   <span>
-    <Text color="white" size="small" >There {wasOrWere(postsCount)} a total of </Text>
-    <Text color="white" size="small" weight="bold" >
+    <Text color="white" size="extra-small" >There {wasOrWere(postsCount)} a total of </Text>
+    <Text color="white" size="extra-small" weight="bold" >
       <TruncatedNumber>{postsCount}</TruncatedNumber>
     </Text>
-    <Text color="white" size="small" > {postsWording(profileService, postsCount)} published</Text>
+    <Text color="white" size="extra-small" > {postsWording(profileService, postsCount)} published</Text>
 
     {visualizePreviousPeriod && <span>
-      <Text color="white" size="small" >, compared with </Text>
-      <Text color="white" size="small" weight="bold" >
+      <Text color="white" size="extra-small" >, compared with </Text>
+      <Text color="white" size="extra-small" weight="bold" >
         <TruncatedNumber>{previousPostsCount}</TruncatedNumber>
       </Text>
-      <Text color="white" size="small" > previously.</Text>
+      <Text color="white" size="extra-small" > previously.</Text>
     </span>}
-    {!visualizePreviousPeriod && <Text color="white" size="small" >.</Text>}
+    {!visualizePreviousPeriod && <Text color="white" size="extra-small" >.</Text>}
   </span>
 );
 
@@ -158,23 +158,23 @@ const EngagementRateTooltip = ({
   profileService,
 }) => (
   <span>
-    <Text color="white" size="small" >There {wasOrWere(postsCount)} a total of </Text>
-    <Text color="white" size="small" weight="bold" >
+    <Text color="white" size="extra-small" >There {wasOrWere(postsCount)} a total of </Text>
+    <Text color="white" size="extra-small" weight="bold" >
       <TruncatedNumber>{postsCount}</TruncatedNumber>
     </Text>
-    <Text color="white" size="small" > {postsWording(profileService, postsCount)} published</Text>
-    <Text color="white" size="small" > with an Engagement Rate of {value}%</Text>
+    <Text color="white" size="extra-small" > {postsWording(profileService, postsCount)} published</Text>
+    <Text color="white" size="extra-small" > with an Engagement Rate of {value}%</Text>
 
     {visualizePreviousPeriod && <span>
-      <Text color="white" size="small" >, compared with </Text>
-      <Text color="white" size="small" > an Engagement Rate of {previousValue}% for </Text>
-      <Text color="white" size="small" weight="bold" >
+      <Text color="white" size="extra-small" >, compared with </Text>
+      <Text color="white" size="extra-small" > an Engagement Rate of {previousValue}% for </Text>
+      <Text color="white" size="extra-small" weight="bold" >
         <TruncatedNumber>{previousPostsCount}</TruncatedNumber>
       </Text>
-      <Text color="white" size="small" > {postsWording(profileService, postsCount)}</Text>
-      <Text color="white" size="small" > previously.</Text>
+      <Text color="white" size="extra-small" > {postsWording(profileService, postsCount)}</Text>
+      <Text color="white" size="extra-small" > previously.</Text>
     </span>}
-    {!visualizePreviousPeriod && <Text color="white" size="small" >.</Text>}
+    {!visualizePreviousPeriod && <Text color="white" size="extra-small" >.</Text>}
   </span>
 );
 
@@ -203,11 +203,11 @@ const Header = ({
   visualizePreviousPeriod,
 }) => (
   <span>
-    <Text color="mystic" size="small" >{moment.utc(day).format('D MMMM')}</Text>
+    <Text color="mystic" size="extra-small" >{moment.utc(day).format('D MMMM')}</Text>
     {visualizePreviousPeriod && <span>
       <br />
-      <Text color="mystic" size="small" >comparing to </Text>
-      <Text color="mystic" size="small" >{moment.utc(previousPeriodDay).format('D MMMM')}</Text>
+      <Text color="mystic" size="extra-small" >comparing to </Text>
+      <Text color="mystic" size="extra-small" >{moment.utc(previousPeriodDay).format('D MMMM')}</Text>
     </span>}
     <br />
     <br />
@@ -252,7 +252,7 @@ const ChartTooltip = ({
         <EngagementRateTooltip profileService={profileService}label={label} {...extraProps} />}
     </span>}
     {!label && <span>
-      <Text color="white" size="small" >There was no {postsWording(profileService)}s published at this time</Text>
+      <Text color="white" size="extra-small" >There was no {postsWording(profileService)}s published at this time</Text>
     </span> }
   </div>
 );

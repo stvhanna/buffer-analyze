@@ -63,7 +63,7 @@ const Container = styled.aside`
 const MonthHeader = () => {
   const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'].map(day => (
     <DayHeaderListItem key={day}>
-      <Text size="small">{day.charAt(0)}</Text>
+      <Text size="extra-small">{day.charAt(0)}</Text>
     </DayHeaderListItem>
   ));
 
@@ -83,7 +83,7 @@ class Calendar extends Component {
         <Button noStyle onClick={() => this.previousMonth(unixTimestamp)}>
           <ArrowLeft><ArrowLeftIcon /></ArrowLeft>
         </Button>
-        <Text size="small">{currentMonth}</Text>
+        <Text size="extra-small">{currentMonth}</Text>
         <Button noStyle onClick={() => this.nextMonth(unixTimestamp)}>
           <ArrowRight><ArrowRightIcon /></ArrowRight>
         </Button>

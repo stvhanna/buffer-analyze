@@ -112,7 +112,7 @@ const MultiProfileSelector = ({
             )
           }
           { selectedProfiles.length === 0 &&
-            <div style={{ margin: '4px 0' }}><Text weight="bold" size="small">Please choose an account</Text></div>
+            <div style={{ margin: '4px 0' }}><Text weight="bold" size="extra-small">Please choose an account</Text></div>
           }
           <span style={{ pointerEvents: 'none', marginLeft: 'auto' }} >
             { isDropdownOpen && <ArrowUpIcon /> }
@@ -129,7 +129,7 @@ const MultiProfileSelector = ({
             />
             { filteredProfiles.length === 0 &&
               <div style={{ marginTop: '10px' }}>
-                <Text weight="bold" size="small">No Results</Text>
+                <Text weight="bold" size="extra-small">No Results</Text>
               </div>
             }
           </div>

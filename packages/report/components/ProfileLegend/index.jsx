@@ -11,7 +11,7 @@ const Profile = styled.span`
 const Legend = styled.span`
   display: flex;
   align-items: center;
-  margin: 0 1.5rem 0.5rem 0;
+  margin: 0 1.25rem 0.5rem 0;
 `;
 
 const ProfileText = styled.div`
@@ -27,7 +27,7 @@ const ProfileLegend = ({ profile }) =>
       socialIconSize={18}
     />
     <ProfileText>
-      <Text color="outerSpace" weight="medium">
+      <Text color="outerSpace" weight="medium" size="small">
         <Profile>{profile.username}</Profile>
       </Text>
     </ProfileText>

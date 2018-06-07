@@ -43,6 +43,7 @@ const ValueWrapper = styled.div`
 const GridItemChartContainer = styled.div`
   border: 1px solid #ECEEEF;
   border-width: 0 0 1px;
+  margin: 0 0 0.5rem;
 `;
 
 function filterDailyDataMetrics(dailyData, metricLabel) {
@@ -60,6 +61,7 @@ const GridItem = ({
   customLabel,
   prefix,
   hideDiff,
+  smaller,
 }) => {
   const dailyMetricData = filterDailyDataMetrics(dailyData, metric.label);
   return (
@@ -76,7 +78,7 @@ const GridItem = ({
           {customLabel && customLabel}
         </Label>
         <ValueWrapper>
-          <Value>{metric.value}</Value>
+          <Value smaller={smaller}>{metric.value}</Value>
           {!hideDiff && <Diff diff={metric.diff} />}
         </ValueWrapper>
       </Container>
@@ -91,6 +93,7 @@ GridItem.defaultProps = {
   customLabel: null,
   prefix: null,
   hideDiff: false,
+  smaller: false,
 };
 
 GridItem.propTypes = {
@@ -112,6 +115,7 @@ GridItem.propTypes = {
   tooltip: PropTypes.string,
   gridWidth: PropTypes.string,
   hideDiff: PropTypes.bool,
+  smaller: PropTypes.bool,
 };
 
 export default GridItem;

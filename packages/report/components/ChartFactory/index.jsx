@@ -66,6 +66,7 @@ const Separator = styled.section`
   border-width: 1px 0;
   padding: 1.75rem 4rem 1.75rem;
   margin: 0.5rem 0 0;
+  page-break-inside: avoid;
 `;
 
 const TitleWrapper = styled.div`

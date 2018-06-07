@@ -13,7 +13,7 @@ const labelStyle = {
 
 const Label = ({ children }) => (
   <span style={labelStyle}>
-    <Text size="small" color="lightSlate" weight="medium">{children}</Text>
+    <Text size="extra-small" color="lightSlate" weight="medium">{children}</Text>
   </span>
 );
 

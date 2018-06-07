@@ -25,7 +25,7 @@ const DropdownItem = ({ metric, handleClick, selected }) => (
           marginTop: '7px',
         }}
       >
-        <Text weight="bold" size="small">{metric.label}</Text>
+        <Text weight="bold" size="extra-small">{metric.label}</Text>
         <span>&nbsp;</span>
         { selected && <div style={{ marginLeft: 'auto' }}>
           <CheckmarkIcon color={'curiousBlue'} />

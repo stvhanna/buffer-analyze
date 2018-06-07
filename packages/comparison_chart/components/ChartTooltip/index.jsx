@@ -49,14 +49,14 @@ const MetricEntry = ({
     }}
   >
     <br />
-    <Text color="white" size="small" weight="bold" >
+    <Text color="white" size="extra-small" weight="bold" >
       <MetricIcon metric={{ color: metric.color }} /> <TruncatedNumber>
         {metric.value}
       </TruncatedNumber>
     </Text>
-    <Text color="white" size="small" > {transformLabelForTooltip(metric.label)}</Text>
-    <Text color="white" size="small" > for </Text>
-    <Text color="white" size="small" weight="bold" > {metric.username} </Text>
+    <Text color="white" size="extra-small" > {transformLabelForTooltip(metric.label)}</Text>
+    <Text color="white" size="extra-small" > for </Text>
+    <Text color="white" size="extra-small" weight="bold" > {metric.username} </Text>
   </span>
 );
 
@@ -81,11 +81,11 @@ const NoDataEntry = ({
     }}
   >
     <br />
-    <Text color="white" size="small" weight="bold" >
+    <Text color="white" size="extra-small" weight="bold" >
       <MetricIcon metric={{ color: metric.color }} />
     </Text>
-    <Text color="white" size="small" > No {postsWording(metric.profileService)} were published for</Text>
-    <Text color="white" size="small" weight="bold" > {metric.username} </Text>
+    <Text color="white" size="extra-small" > No {postsWording(metric.profileService)} were published for</Text>
+    <Text color="white" size="extra-small" weight="bold" > {metric.username} </Text>
   </span>
 );
 
@@ -103,7 +103,7 @@ const Header = ({
   day,
 }) => (
   <span>
-    <Text color="mystic" size="small" >{moment.utc(day).format('D MMMM')}</Text>
+    <Text color="mystic" size="extra-small" >{moment.utc(day).format('D MMMM')}</Text>
     <br />
     <br />
   </span>

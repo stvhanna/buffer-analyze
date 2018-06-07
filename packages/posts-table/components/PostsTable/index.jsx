@@ -73,14 +73,14 @@ export const Table = ({ metrics, timezone, service }) => {
       <header>
         <ul className={chartColumnHeader}>
           <li className={contentColumn}>
-            <Text size="small">Posts and Stories</Text>
+            <Text size="extra-small">Posts and Stories</Text>
           </li>
           <li className={metricColumn}>
-            <Text size="small">Engagements</Text>
+            <Text size="extra-small">Engagements</Text>
           </li>
           {(service !== 'instagram') ?
             <li className={metricColumn}>
-              <Text size="small">Audience</Text>
+              <Text size="extra-small">Audience</Text>
             </li>
           : null}
         </ul>

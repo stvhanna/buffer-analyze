@@ -62,7 +62,7 @@ const ReportsPage = ({ location, dispatch }) => (
     <NavSidebar route={location.pathname} />
     <Container>
       <Header>
-        <Button onClick={() => dispatch(push('/reports'))}><Text weight="bold" size="small">Back to Reports</Text></Button>
+        <Button onClick={() => dispatch(push('/reports'))}><Text weight="bold" size="extra-small">Back to Reports</Text></Button>
         <Section>
           <DatePicker />
           <PDFExportButton />

@@ -82,11 +82,11 @@ const DropdownItem = ({ preset, handleClick, selectedPresetLabel }) => (
       <span style={dropdownItemContent}>
         <Text
           weight={preset.label === selectedPresetLabel ? 'bold' : null}
-          size="small"
+          size="extra-small"
         >{preset.label} </Text>
         {preset.data.length === 0 && <Text
           weight="bold" color="torchRed"
-          size="small"
+          size="extra-small"
         > &nbsp;(no data) </Text>}
 
       </span>

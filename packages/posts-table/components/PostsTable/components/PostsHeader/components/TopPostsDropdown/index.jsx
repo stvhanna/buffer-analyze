@@ -41,14 +41,14 @@ const TopPostsDropdown = ({
     const dropdownListClasses = classNames(dropdownList);
     return (
       <div style={{ marginLeft: 'auto', marginRight: '1em' }}>
-        <Text size="small">Sort by</Text>
+        <Text size="extra-small">Sort by</Text>
         <Dropdown
           className={dropdownContainer}
           onShow={toggleDropdown}
           onHide={toggleDropdown}
         >
           <DropdownTrigger className={triggerClasses} style={{ display: 'flex' }} >
-            <Text size="small">{selectedMetric.label}</Text>
+            <Text size="extra-small">{selectedMetric.label}</Text>
             <span>&nbsp;</span>
             <span style={{ marginLeft: 'auto' }} >
               { isDropdownOpen && <ArrowUpIcon /> }

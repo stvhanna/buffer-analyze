@@ -32,7 +32,7 @@ class PostOrderSwitch extends React.Component {
     return (
       <div>
         <span style={{ top: '-4px', position: 'relative' }}>
-          <Text size="small">Order</Text>
+          <Text size="extra-small">Order</Text>
         </span>
         <ul className={container}>
           <li  // eslint-disable-line

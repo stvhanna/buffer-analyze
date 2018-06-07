@@ -36,7 +36,7 @@ const EmptyState = ({ header, description }) => (
     </Header>
     {description ?
       <Description>
-        <Text size="small">{description}</Text>
+        <Text size="extra-small">{description}</Text>
       </Description> :
       null
     }

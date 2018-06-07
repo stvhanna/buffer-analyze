@@ -134,7 +134,7 @@ const Day = (props) => {
           start={showStartConnector}
           end={showEndConnector}
         >
-          <Text size="small" color={markerTextColor}>{day}</Text>
+          <Text size="extra-small" color={markerTextColor}>{day}</Text>
         </Marker>
       </Button>
       <EndMarkerConnector

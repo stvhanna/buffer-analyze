@@ -134,7 +134,7 @@ const ProfileSelectorDropdown = ({
             avatarSize={22}
             socialIconSize={13}
           />
-          <Text weight="bold" size="small">{selectedProfile.username}</Text>
+          <Text weight="bold" size="extra-small">{selectedProfile.username}</Text>
           <span style={arrowHolderStyle}>
             { isDropdownOpen && <ArrowUpIcon size="small" /> }
             { !isDropdownOpen && <ArrowDownIcon size="small" /> }
@@ -150,7 +150,7 @@ const ProfileSelectorDropdown = ({
             />
             { filteredProfiles.length === 0 &&
               <div style={noResultsContainerStyle}>
-                <Text weight="bold" size="small">No Results</Text>
+                <Text weight="bold" size="extra-small">No Results</Text>
               </div>
             }
           </div>

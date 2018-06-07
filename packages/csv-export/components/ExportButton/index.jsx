@@ -7,7 +7,7 @@ import {
 
 const ExportButton = ({ exporting, exportToCSV }) => (
   <Button noStyle disabled={exporting} onClick={exportToCSV}>
-    <Text size="small">{exporting ? 'Exporting...' : 'Export as CSV' }</Text>
+    <Text size="extra-small">{exporting ? 'Exporting...' : 'Export as CSV' }</Text>
   </Button>
 );
 

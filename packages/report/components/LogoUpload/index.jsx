@@ -103,7 +103,7 @@ class LogoUpload extends Component {
             <UploadLogoText>
               {!isLogoUploading && <Text weight="bold">Upload logo</Text>}
             </UploadLogoText>
-            {!isLogoUploading && <Text size="small" color="shuttleGray">PNG or JPG</Text>}
+            {!isLogoUploading && <Text size="extra-small" color="shuttleGray">PNG or JPG</Text>}
             {isLogoUploading && <UploadingText>
               <Text weight="bold">Uploading...</Text>
             </UploadingText>}

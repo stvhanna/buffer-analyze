@@ -67,12 +67,12 @@ const MetricEntry = ({
   <span>
     {!isUpdatesMetric(metric.label) && <span>
       <br />
-      <Text color="white" size="small" weight="bold" >
+      <Text color="white" size="extra-small" weight="bold" >
         <MetricIcon
           metric={{ color: metricsColor[metric.key] }}
         /> <TruncatedNumber>{metric.value}</TruncatedNumber>
       </Text>
-      <Text color="white" size="small" > {transformLabelForTooltip(metric.label)}</Text>
+      <Text color="white" size="extra-small" > {transformLabelForTooltip(metric.label)}</Text>
     </span>}
   </span>
 );
@@ -110,14 +110,14 @@ const PresetsTooltip = ({
   <span>
     {presetConfig.showUpdatesCount &&
       <span>
-        <Text color="white" size="small" >There {wasOrWere(metricData.postsCount)} a total of </Text>
-        <Text color="white" size="small" weight="bold" >
+        <Text color="white" size="extra-small" >There {wasOrWere(metricData.postsCount)} a total of </Text>
+        <Text color="white" size="extra-small" weight="bold" >
           <TruncatedNumber>{metricData.postsCount}</TruncatedNumber>
         </Text>
-        <Text color="white" size="small" > {postsWording(profileService, metricData.postsCount)} published</Text>
+        <Text color="white" size="extra-small" > {postsWording(profileService, metricData.postsCount)} published</Text>
       </span>
     }
-    <Text color="white" size="small" > {parsePresetRewardWording(metricData, presetConfig.rewardWording)}</Text>
+    <Text color="white" size="extra-small" > {parsePresetRewardWording(metricData, presetConfig.rewardWording)}</Text>
     <br />
     {metrics && presetConfig.showMetricsList && <MetricsList metrics={metrics} />}
   </span>
@@ -155,13 +155,13 @@ const CustomTooltip = ({
 }) => (
   <span>
     <span>
-      <Text color="white" size="small" >There {wasOrWere(metricData.postsCount)} a total of </Text>
-      <Text color="white" size="small" weight="bold" >
+      <Text color="white" size="extra-small" >There {wasOrWere(metricData.postsCount)} a total of </Text>
+      <Text color="white" size="extra-small" weight="bold" >
         <TruncatedNumber>{metricData.postsCount}</TruncatedNumber>
       </Text>
-      <Text color="white" size="small" > {postsWording(profileService, metricData.postsCount)} published</Text>
+      <Text color="white" size="extra-small" > {postsWording(profileService, metricData.postsCount)} published</Text>
     </span>
-    <Text color="white" size="small" >{rewardWording(profileService)}:</Text>
+    <Text color="white" size="extra-small" >{rewardWording(profileService)}:</Text>
     <br />
     <MetricsList metrics={[metricData, secondaryMetric]} />
   </span>
@@ -190,7 +190,7 @@ const Header = ({
   day,
 }) => (
   <span>
-    <Text color="mystic" size="small" >{moment.utc(day).format('D MMMM')}</Text>
+    <Text color="mystic" size="extra-small" >{moment.utc(day).format('D MMMM')}</Text>
     <br />
     <br />
   </span>
