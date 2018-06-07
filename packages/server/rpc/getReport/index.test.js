@@ -94,7 +94,7 @@ describe('rpc/get_report', () => {
         profileService: 'facebook',
         startDate,
         endDate,
-      }, { session: session.session }]);
+      }, session]);
   });
 
   it('returns chart data for each chart as a "metrics" key', async () => {

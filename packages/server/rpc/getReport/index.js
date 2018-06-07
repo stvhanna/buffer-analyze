@@ -37,7 +37,7 @@ function getDateRangeFromDates(start, end, timezone) {
   return { startDate, endDate };
 }
 
-function requestChartData (chart, dateRange, session) {
+function requestChartData (chart, dateRange, req) {
   if (RPC_ENDPOINTS[chart.chart_id] === undefined) return;
   const { startDate, endDate } = dateRange;
 
@@ -46,7 +46,7 @@ function requestChartData (chart, dateRange, session) {
     profileService: chart.service,
     startDate,
     endDate,
-  }, chart.state), { session });
+  }, chart.state), req);
 }
 
 module.exports = method(
@@ -74,7 +74,7 @@ module.exports = method(
       }
 
       return Promise
-        .all(report.charts.map(chart => requestChartData(chart, dateRange, req.session)))
+        .all(report.charts.map(chart => requestChartData(chart, dateRange, req)))
         .then(chartMetrics =>
           Object.assign(report, {
             date_range: {
