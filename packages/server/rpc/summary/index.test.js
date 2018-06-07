@@ -11,6 +11,16 @@ describe('rpc/summary', () => {
   const profileId = '123159ad';
   const profileService = 'facebook';
   const token = 'some token';
+  const mockedRequest = {
+    session: {
+      analyze: {
+        accessToken: token,
+      },
+    },
+    app: {
+      get() { return 'analyze-api'; },
+    },
+  };
 
   it('should have the expected name', () => {
     expect(summary.name)
@@ -31,17 +41,11 @@ describe('rpc/summary', () => {
       endDate,
       profileId,
       profileService: 'instagram',
-    }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    }, mockedRequest);
 
     expect(rp.mock.calls[0])
       .toEqual([{
-        uri: `${process.env.ANALYZE_API_ADDR}/metrics/totals`,
+        uri: 'analyze-api/metrics/totals',
         method: 'POST',
         strictSSL: false,
         qs: {
@@ -64,13 +68,7 @@ describe('rpc/summary', () => {
       endDate,
       profileId,
       profileService,
-    }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    }, mockedRequest);
 
     expect(rp.mock.calls[1])
       .toEqual([{
@@ -96,13 +94,7 @@ describe('rpc/summary', () => {
       endDate,
       profileId,
       profileService,
-    }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    }, mockedRequest);
 
     const end = moment().subtract(8, 'days').format('MM/DD/YYYY');
     const start = moment().subtract(14, 'days').format('MM/DD/YYYY');
@@ -126,13 +118,7 @@ describe('rpc/summary', () => {
     rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_RESPONSE));
     rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_RESPONSE));
 
-    const summaryData = await summary.fn({ profileId, profileService }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    const summaryData = await summary.fn({ profileId, profileService }, mockedRequest);
 
     expect(summaryData).toEqual([{
       label: 'Engaged Users',

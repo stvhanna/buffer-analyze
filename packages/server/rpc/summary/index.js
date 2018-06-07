@@ -38,10 +38,10 @@ function shouldUseAnalyzeApi (profileService) {
   return profileService === 'instagram';
 }
 
-const requestTotals = (profileId, profileService, dateRange, accessToken) =>
+const requestTotals = (profileId, profileService, dateRange, accessToken, analyzeApiAddr) =>
   rp({
     uri: (shouldUseAnalyzeApi(profileService) ?
-      `${process.env.ANALYZE_API_ADDR}/metrics/totals` :
+      `${analyzeApiAddr}/metrics/totals` :
       `${process.env.API_ADDR}/1/profiles/${profileId}/analytics/totals.json`
     ),
     method: (shouldUseAnalyzeApi(profileService) ?
@@ -79,7 +79,7 @@ const summarize = (metricKey, currentPeriod, pastPeriod, profileService) => {
 module.exports = method(
   'summary',
   'fetch analytics summary for profiles and pages',
-  ({ profileId, profileService, startDate, endDate }, { session }) => {
+  ({ profileId, profileService, startDate, endDate }, req) => {
     const dateRange = new DateRange(startDate, endDate);
     const previousDateRange = dateRange.getPreviousDateRange();
 
@@ -87,13 +87,15 @@ module.exports = method(
       profileId,
       profileService,
       dateRange,
-      session.analyze.accessToken,
+      req.session.analyze.accessToken,
+      req.app.get('analyzeApiAddr'),
     );
     const previousPeriod = requestTotals(
       profileId,
       profileService,
       previousDateRange,
-      session.analyze.accessToken,
+      req.session.analyze.accessToken,
+      req.app.get('analyzeApiAddr'),
     );
 
     return Promise

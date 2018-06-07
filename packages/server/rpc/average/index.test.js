@@ -17,6 +17,16 @@ describe('rpc/average', () => {
   const profileId = '123159ad';
   const profileService = 'facebook';
   const token = 'some token';
+  const mockedRequest = {
+    session: {
+      analyze: {
+        accessToken: token,
+      },
+    },
+    app: {
+      get() { return 'analyze-api'; },
+    },
+  };
 
   it('should have the expected name', () => {
     expect(average.name)
@@ -37,17 +47,11 @@ describe('rpc/average', () => {
       endDate: end,
       profileId,
       profileService: 'instagram',
-    }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    }, mockedRequest);
 
     expect(rp.mock.calls[0])
       .toEqual([{
-        uri: `${process.env.ANALYZE_API_ADDR}/metrics/totals`,
+        uri: 'analyze-api/metrics/totals',
         method: 'POST',
         strictSSL: false,
         qs: {
@@ -61,7 +65,7 @@ describe('rpc/average', () => {
 
     expect(rp.mock.calls[2])
       .toEqual([{
-        uri: `${process.env.ANALYZE_API_ADDR}/metrics/daily_totals`,
+        uri: 'analyze-api/metrics/daily_totals',
         method: 'POST',
         strictSSL: false,
         qs: {
@@ -84,13 +88,7 @@ describe('rpc/average', () => {
       endDate: end,
       profileId,
       profileService,
-    }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    }, mockedRequest);
 
     expect(rp.mock.calls[0])
       .toEqual([{
@@ -116,13 +114,7 @@ describe('rpc/average', () => {
       end,
       profileId,
       profileService,
-    }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    }, mockedRequest);
 
     const expectedEnd = moment().subtract(8, 'days').format('MM/DD/YYYY');
     const expectedStart = moment().subtract(14, 'days').format('MM/DD/YYYY');
@@ -148,13 +140,7 @@ describe('rpc/average', () => {
     rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
     rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_DAILY_RESPONSE));
 
-    const data = await average.fn({ profileId, profileService }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    const data = await average.fn({ profileId, profileService }, mockedRequest);
 
     expect(data.daily).toBeDefined();
     expect(data.totals).toBeDefined();
@@ -166,13 +152,7 @@ describe('rpc/average', () => {
     rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
     rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_DAILY_RESPONSE));
 
-    const data = await average.fn({ profileId, profileService }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    const data = await average.fn({ profileId, profileService }, mockedRequest);
 
     expect(data.totals.length).toEqual(3);
   });
@@ -183,13 +163,7 @@ describe('rpc/average', () => {
     rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
     rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_DAILY_RESPONSE));
 
-    const data = await average.fn({ profileId, profileService }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    const data = await average.fn({ profileId, profileService }, mockedRequest);
 
     expect(data.totals).toEqual([
       {
@@ -216,13 +190,7 @@ describe('rpc/average', () => {
     rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
     rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_DAILY_RESPONSE));
 
-    const data = await average.fn({ profileId, profileService }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    const data = await average.fn({ profileId, profileService }, mockedRequest);
 
     expect(data.totals).toEqual([
       {
@@ -249,13 +217,7 @@ describe('rpc/average', () => {
     rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
     rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_DAILY_RESPONSE));
 
-    const data = await average.fn({ profileId, profileService }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    const data = await average.fn({ profileId, profileService }, mockedRequest);
 
     expect(data.totals).toEqual([
       {
@@ -282,13 +244,7 @@ describe('rpc/average', () => {
     rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
     rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_DAILY_RESPONSE));
 
-    const data = await average.fn({ profileId, profileService }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    const data = await average.fn({ profileId, profileService }, mockedRequest);
 
     expect(data.daily.length).toBe(7);
     expect(data.daily[0]).toEqual({
