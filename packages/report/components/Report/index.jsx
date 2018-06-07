@@ -47,6 +47,14 @@ const Icon = styled.div`
   transition: opacity 50ms linear;
 `;
 
+const Centered = styled.div`
+  display: flex;
+  height: 400px;
+  background: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+`;
+
 class Report extends React.Component {
   componentDidUpdate() {
     if (this.shouldAddPageBreaks()) {
@@ -65,7 +73,13 @@ class Report extends React.Component {
     const { name, dateRange, charts, loading,
       edit, saveChanges, editName, moveUp, moveDown, deleteChart, exporting, uploadLogo,
         logoUrl, deleteLogo, isLogoUploading, isLogoDropzoneDisabled } = this.props;
-    if (loading) return <Loading active noBorder />;
+    if (loading) {
+      return (
+        <Centered>
+          <Loading active noBorder transparent />
+        </Centered>
+      );
+    }
     return (
       <Page id="report-page">
         <Header>
