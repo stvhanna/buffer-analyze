@@ -44,7 +44,7 @@ const Item = ({ href, route, children, onClick, selectedProfile }) => {
       }}
     >
       <InnerLink selected={selected}>
-        <Text color="shuttleGray" weight={selected ? 'bold' : null}>{children}</Text>
+        <Text color={selected ? 'black' : 'shuttleGray'} weight={selected ? 'bold' : null}>{children}</Text>
       </InnerLink>
     </Link>
   );
