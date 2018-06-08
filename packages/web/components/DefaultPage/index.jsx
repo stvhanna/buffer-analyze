@@ -24,7 +24,7 @@ const Page = styled.div`
 const Container = styled.div`
   width: 52rem;
   margin: 0 auto;
-  padding: 2.5rem 1rem 4rem;
+  padding: 1.5rem 1rem 4rem;
 `;
 
 const ChartContainer = styled.div`

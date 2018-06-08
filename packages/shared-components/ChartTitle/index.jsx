@@ -9,7 +9,7 @@ const Header = styled.h2`
 `;
 
 const renderForApp = children => (
-  <Text color="black" weight="medium" size="large">
+  <Text color="outerSpace" weight="bold" size="large">
     {children}
   </Text>
 );

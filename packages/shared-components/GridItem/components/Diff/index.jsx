@@ -31,7 +31,7 @@ const Diff = ({ diff }) => {
   } else if (diff < 0) {
     color = 'torchRed';
   } else {
-    color = '#8D969E';
+    color = '#CBCBCB';
   }
 
   return (

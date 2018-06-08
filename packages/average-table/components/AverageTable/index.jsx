@@ -22,7 +22,7 @@ const Grid = styled.ul`
 
 const Container = styled.div`
   position: relative;
-  padding: 0.75rem 1.5rem 1.5rem;
+  padding: 0rem 1.5rem 1.5rem;
 `;
 
 export const Table = ({ daily, totals }) =>
