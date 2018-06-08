@@ -6,7 +6,11 @@ import { Text } from '@bufferapp/components';
 import { ProfileBadge } from '@bufferapp/analyze-shared-components';
 
 const Container = styled.div`
+  display: flex;
   margin: 0 0 1.5rem;
+  padding: 0 0.25rem;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 const Wrapper = styled.div`
@@ -17,7 +21,7 @@ const Wrapper = styled.div`
 const Details = styled.div`
   display: inline-block;
   vertical-align: top;
-  margin-left: 0.5rem;
+  margin: 0 0 0 0.25rem;
 `;
 
 const Header = styled.span`
@@ -42,9 +46,14 @@ const Subheader = styled.span`
   color: #323b43;
 `;
 
-const Note = styled.span`
-  float:right;
+const Note = styled.a`
+  float: right;
+  display: block;
+  height: 100%;
+  display: flex;
+  align-items: center;
   color: #666C72;
+  text-decoration: none;
   &:hover {
     text-decoration: underline;
   }
@@ -88,11 +97,9 @@ const ProfileHeader = ({ profile, followersCount }) => {
           </Subheader>
         </Details>
       </Wrapper>
-      <a href={helpLinkUrl} rel="noopener noreferrer" target="_blank">
-        <Note>
-          <Text size="extra-small">Analytics updated daily</Text>
-        </Note>
-      </a>
+      <Note href={helpLinkUrl} rel="noopener noreferrer" target="_blank">
+        <Text size="extra-small">Analytics updated daily</Text>
+      </Note>
     </Container>
   );
 };

@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-
 import {
   ChartStateNoData as NoData,
   ChartStateLoading as Loading,
@@ -9,7 +8,6 @@ import {
   ChartHeader,
   GridItem,
 } from '@bufferapp/analyze-shared-components';
-
 import AddReport from '@bufferapp/add-report';
 import Title from '../Title';
 
@@ -22,7 +20,7 @@ const Grid = styled.ul`
 
 const Container = styled.div`
   position: relative;
-  padding: 0rem 1.5rem 1.5rem;
+  padding: 0 1.5rem 1rem;
 `;
 
 export const Table = ({ daily, totals }) =>

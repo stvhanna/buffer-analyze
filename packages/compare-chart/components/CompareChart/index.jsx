@@ -28,6 +28,18 @@ const Container = styled.div`
   width: 100%;
 `;
 
+const Header = styled.div`
+  display: flex;
+  padding: 0.5rem 1.5rem 0.75rem;
+`;
+
+const ChartContainer = styled.div`
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+  min-height: 474px;
+`;
+
 function getStartDate(dailyData) {
   return dailyData.length ? dailyData[0].day / 1000 : null;
 }
@@ -153,7 +165,7 @@ const CompareChart = ({
     );
     if (dailyData.length > 0) {
       header = (
-        <div style={{ padding: '20px', display: 'flex' }} >
+        <Header>
           <MetricsDropdown
             metrics={totals}
             selectedMetricLabel={selectedMetricLabel}
@@ -171,20 +183,10 @@ const CompareChart = ({
             />
           }
           <PeriodToggle handleClick={togglePreviousPeriod} active={visualizePreviousPeriod} />
-        </div>
+        </Header>
       );
     }
   }
-
-  const CHART_AND_HEADER_HEIGHT = '474px';
-  const containerStyle = {
-    padding: '0',
-    margin: '0 auto',
-    position: 'relative',
-    minHeight: CHART_AND_HEADER_HEIGHT,
-  };
-
-  if (loading || dailyData.length === 0) delete containerStyle.border;
 
   return (
     <ChartCard>
@@ -203,10 +205,10 @@ const CompareChart = ({
           }}
         />
       </ChartHeader>
-      <div style={containerStyle}>
+      <ChartContainer>
         {header}
         {content}
-      </div>
+      </ChartContainer>
     </ChartCard>
   );
 };
