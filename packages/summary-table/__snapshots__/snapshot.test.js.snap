@@ -21,10 +21,10 @@ exports[`Snapshots SummaryTable should render a "no data" state 1`] = `
       }
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-VigVT kuCSoJ"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-jTzLTM bckqaj"
         >
           <span
             style={
@@ -103,10 +103,10 @@ exports[`Snapshots SummaryTable should render a loading state 1`] = `
       }
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-VigVT kuCSoJ"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-jTzLTM bckqaj"
         >
           <span
             style={
@@ -256,10 +256,10 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
       }
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-VigVT kuCSoJ"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-jTzLTM bckqaj"
         >
           <span
             style={
@@ -1265,10 +1265,10 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
       }
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-VigVT kuCSoJ"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-jTzLTM bckqaj"
         >
           <span
             style={
@@ -1920,10 +1920,10 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
       }
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-VigVT kuCSoJ"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-jTzLTM bckqaj"
         >
           <span
             style={
@@ -2675,7 +2675,7 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
 exports[`Snapshots Title should render title as if for app 1`] = `
 <span>
   <h2
-    className="sc-VigVT koZmyN"
+    className="sc-jTzLTM bckqaj"
   >
     <span
       style={
@@ -2696,7 +2696,7 @@ exports[`Snapshots Title should render title as if for app 1`] = `
 exports[`Snapshots Title should render title as if for report 1`] = `
 <span>
   <h2
-    className="sc-VigVT koZmyN"
+    className="sc-jTzLTM bckqaj"
   >
     <span
       style={

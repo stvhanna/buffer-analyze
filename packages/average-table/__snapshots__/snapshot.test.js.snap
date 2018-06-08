@@ -21,10 +21,10 @@ exports[`Snapshots AverageTable should render a "no data" state 1`] = `
       }
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-VigVT kuCSoJ"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-jTzLTM bckqaj"
         >
           <span
             style={
@@ -41,7 +41,7 @@ exports[`Snapshots AverageTable should render a "no data" state 1`] = `
         </h2>
       </header>
       <div
-        className="sc-kGXeez hPKvAv"
+        className="sc-kpOJdX bUmrun"
         id="js-dom-to-png-average"
       >
         <div
@@ -98,10 +98,10 @@ exports[`Snapshots AverageTable should render a loading state 1`] = `
       }
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-VigVT kuCSoJ"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-jTzLTM bckqaj"
         >
           <span
             style={
@@ -118,7 +118,7 @@ exports[`Snapshots AverageTable should render a loading state 1`] = `
         </h2>
       </header>
       <div
-        className="sc-kGXeez hPKvAv"
+        className="sc-kpOJdX bUmrun"
         id="js-dom-to-png-average"
       >
         <div
@@ -246,10 +246,10 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
       }
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-VigVT kuCSoJ"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-jTzLTM bckqaj"
         >
           <span
             style={
@@ -266,11 +266,11 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
         </h2>
       </header>
       <div
-        className="sc-kGXeez hPKvAv"
+        className="sc-kpOJdX bUmrun"
         id="js-dom-to-png-average"
       >
         <ul
-          className="sc-kgoBCf crtYML"
+          className="sc-kGXeez ejFTba"
         >
           <li
             className="sc-ifAKCX jhSkFX"
@@ -660,10 +660,10 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
       }
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-VigVT kuCSoJ"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-jTzLTM bckqaj"
         >
           <span
             style={
@@ -680,11 +680,11 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
         </h2>
       </header>
       <div
-        className="sc-kGXeez hPKvAv"
+        className="sc-kpOJdX bUmrun"
         id="js-dom-to-png-average"
       >
         <ul
-          className="sc-kgoBCf crtYML"
+          className="sc-kGXeez ejFTba"
         >
           <li
             className="sc-ifAKCX jhSkFX"
@@ -1077,10 +1077,10 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
       }
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-VigVT kuCSoJ"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-jTzLTM bckqaj"
         >
           <span
             style={
@@ -1097,11 +1097,11 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
         </h2>
       </header>
       <div
-        className="sc-kGXeez hPKvAv"
+        className="sc-kpOJdX bUmrun"
         id="js-dom-to-png-average"
       >
         <ul
-          className="sc-kgoBCf crtYML"
+          className="sc-kGXeez ejFTba"
         >
           <li
             className="sc-ifAKCX jhSkFX"
@@ -1475,7 +1475,7 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
 exports[`Snapshots Title should render title as if for app 1`] = `
 <span>
   <h2
-    className="sc-VigVT koZmyN"
+    className="sc-jTzLTM bckqaj"
   >
     <span
       style={
@@ -1496,7 +1496,7 @@ exports[`Snapshots Title should render title as if for app 1`] = `
 exports[`Snapshots Title should render title as if for report 1`] = `
 <span>
   <h2
-    className="sc-VigVT koZmyN"
+    className="sc-jTzLTM bckqaj"
   >
     <span
       style={
