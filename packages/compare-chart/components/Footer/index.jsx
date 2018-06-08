@@ -48,6 +48,9 @@ const Footer = ({ totals, selectedMetricLabel, startDate, endDate }) => {
               {metric.label} over <PeriodPhrase startDate={startDate} endDate={endDate} />
             </span>
           }
+          showPercentSign={selectedMetricLabel === 'Engagement Rate'}
+          hideDiff={pastMetric.value < 0 || currentMetric.diff === 0}
+          showArrowIcon={pastMetric.value < 0}
         />
         <GridItem
           key={pastMetric.key}
@@ -59,6 +62,7 @@ const Footer = ({ totals, selectedMetricLabel, startDate, endDate }) => {
               {metric.label} over <PeriodPhrase previous startDate={startDate} endDate={endDate} />
             </span>
           }
+          showPercentSign={selectedMetricLabel === 'Engagement Rate'}
         />
       </ul>
     </div>

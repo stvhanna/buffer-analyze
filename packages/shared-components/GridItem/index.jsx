@@ -6,6 +6,7 @@ import Diff from './components/Diff';
 import Label from './components/Label';
 import Value from './components/Value';
 import GridItemChart from './components/GridItemChart';
+import ArrowIcon from './components/ArrowIcon';
 
 const Item = styled.li`
   display: flex;
@@ -43,6 +44,11 @@ const GridItemChartContainer = styled.div`
   border: 1px solid #ECEEEF;
   border-width: 0 0 1px;
 `;
+const ArrowIconContainer = styled.span`
+  display: inline-block;
+  margin-left: 10px;
+  height: 1rem;
+`;
 
 function filterDailyDataMetrics(dailyData, metricLabel) {
   return dailyData.map(day => ({
@@ -59,6 +65,8 @@ const GridItem = ({
   customLabel,
   prefix,
   hideDiff,
+  showPercentSign,
+  showArrowIcon,
 }) => {
   const dailyMetricData = filterDailyDataMetrics(dailyData, metric.label);
   return (
@@ -75,8 +83,13 @@ const GridItem = ({
           {customLabel && customLabel}
         </Label>
         <ValueWrapper>
-          <Value>{metric.value}</Value>
+          <Value showPercentSign={showPercentSign}>{metric.value}</Value>
           {!hideDiff && <Diff diff={metric.diff} />}
+          { showArrowIcon &&
+            <ArrowIconContainer>
+              <ArrowIcon diff={metric.diff} />
+            </ArrowIconContainer>
+          }
         </ValueWrapper>
       </Container>
     </Item>
@@ -90,6 +103,8 @@ GridItem.defaultProps = {
   customLabel: null,
   prefix: null,
   hideDiff: false,
+  showPercentSign: false,
+  showArrowIcon: false,
 };
 
 GridItem.propTypes = {
@@ -111,6 +126,8 @@ GridItem.propTypes = {
   tooltip: PropTypes.string,
   gridWidth: PropTypes.string,
   hideDiff: PropTypes.bool,
+  showPercentSign: PropTypes.bool,
+  showArrowIcon: PropTypes.bool,
 };
 
 export default GridItem;

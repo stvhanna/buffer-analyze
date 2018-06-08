@@ -37,6 +37,28 @@ storiesOf('GridItem')
       />
     </ul>
   ))
+  .add('should render a summary grid item with percent sign', () => (
+    <ul
+      style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        padding: '0',
+        margin: '0 auto',
+        borderTop: `solid 1px ${geyser}`,
+        borderLeft: `solid 1px ${geyser}`,
+        borderRadius: '2px',
+      }}
+    >
+      <GridItem
+        metric={{
+          label: 'Engagement Rate',
+          value: 20,
+          diff: 10,
+        }}
+        showPercentSign
+      />
+    </ul>
+  ))
   .add('should render a summary grid item with a neutral diff', () => (
     <ul
       style={{

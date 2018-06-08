@@ -1221,10 +1221,10 @@ exports[`Snapshots CompareChart should render a "no data" state 1`] = `
       }
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-VigVT kuCSoJ"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-jTzLTM bckqaj"
         >
           <span
             style={
@@ -1251,7 +1251,7 @@ exports[`Snapshots CompareChart should render a "no data" state 1`] = `
         }
       >
         <div
-          className="sc-kgoBCf fZCmWX"
+          className="sc-kGXeez bcbCys"
         >
           <div
             className="sc-bdVaJa fWzNTu"
@@ -1308,10 +1308,10 @@ exports[`Snapshots CompareChart should render a loading state 1`] = `
       }
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-VigVT kuCSoJ"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-jTzLTM bckqaj"
         >
           <span
             style={
@@ -1338,7 +1338,7 @@ exports[`Snapshots CompareChart should render a loading state 1`] = `
         }
       >
         <div
-          className="sc-kgoBCf fZCmWX"
+          className="sc-kGXeez bcbCys"
         >
           <div
             style={
@@ -1466,10 +1466,10 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
       }
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-VigVT kuCSoJ"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-jTzLTM bckqaj"
         >
           <span
             style={
@@ -1896,6 +1896,154 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                         }
                       >
                         Posts
+                      </span>
+                    </span>
+                  </button>
+                </li>
+                <li
+                  className="dropdownListItem"
+                >
+                  <button
+                    aria-label={null}
+                    disabled={undefined}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "background": "none",
+                        "backgroundColor": "unset",
+                        "border": "none",
+                        "borderRadius": "unset",
+                        "color": "unset",
+                        "cursor": "pointer",
+                        "display": "unset",
+                        "fontFamily": "unset",
+                        "fontSize": "unset",
+                        "fontWeight": "unset",
+                        "lineHeight": "unset",
+                        "margin": "unset",
+                        "outline": "none",
+                        "padding": 0,
+                        "transition": "unset",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "boxSizing": "border-box",
+                          "display": "flex",
+                          "padding": "5px 10px",
+                          "position": "relative",
+                          "width": "200px",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "background": "#fda3f3",
+                            "borderColor": "#df85d5",
+                            "borderRadius": "10px",
+                            "borderStyle": "solid",
+                            "borderWidth": "1px",
+                            "display": "inline-block",
+                            "height": "7px",
+                            "marginRight": "5px",
+                            "verticalAlign": "baseline",
+                            "width": "7px",
+                          }
+                        }
+                      />
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
+                          }
+                        }
+                      >
+                        New Followers
+                      </span>
+                    </span>
+                  </button>
+                </li>
+                <li
+                  className="dropdownListItem"
+                >
+                  <button
+                    aria-label={null}
+                    disabled={undefined}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "background": "none",
+                        "backgroundColor": "unset",
+                        "border": "none",
+                        "borderRadius": "unset",
+                        "color": "unset",
+                        "cursor": "pointer",
+                        "display": "unset",
+                        "fontFamily": "unset",
+                        "fontSize": "unset",
+                        "fontWeight": "unset",
+                        "lineHeight": "unset",
+                        "margin": "unset",
+                        "outline": "none",
+                        "padding": 0,
+                        "transition": "unset",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "boxSizing": "border-box",
+                          "display": "flex",
+                          "padding": "5px 10px",
+                          "position": "relative",
+                          "width": "200px",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "background": "#fda3f3",
+                            "borderColor": "#df85d5",
+                            "borderRadius": "10px",
+                            "borderStyle": "solid",
+                            "borderWidth": "1px",
+                            "display": "inline-block",
+                            "height": "7px",
+                            "marginRight": "5px",
+                            "verticalAlign": "baseline",
+                            "width": "7px",
+                          }
+                        }
+                      />
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
+                          }
+                        }
+                      >
+                        Retweets
                       </span>
                     </span>
                   </button>
@@ -2245,10 +2393,10 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
       }
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-VigVT kuCSoJ"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-jTzLTM bckqaj"
         >
           <span
             style={
@@ -2676,6 +2824,154 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           </g>
                         </svg>
                       </div>
+                    </span>
+                  </button>
+                </li>
+                <li
+                  className="dropdownListItem"
+                >
+                  <button
+                    aria-label={null}
+                    disabled={undefined}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "background": "none",
+                        "backgroundColor": "unset",
+                        "border": "none",
+                        "borderRadius": "unset",
+                        "color": "unset",
+                        "cursor": "pointer",
+                        "display": "unset",
+                        "fontFamily": "unset",
+                        "fontSize": "unset",
+                        "fontWeight": "unset",
+                        "lineHeight": "unset",
+                        "margin": "unset",
+                        "outline": "none",
+                        "padding": 0,
+                        "transition": "unset",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "boxSizing": "border-box",
+                          "display": "flex",
+                          "padding": "5px 10px",
+                          "position": "relative",
+                          "width": "200px",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "background": "#fda3f3",
+                            "borderColor": "#df85d5",
+                            "borderRadius": "10px",
+                            "borderStyle": "solid",
+                            "borderWidth": "1px",
+                            "display": "inline-block",
+                            "height": "7px",
+                            "marginRight": "5px",
+                            "verticalAlign": "baseline",
+                            "width": "7px",
+                          }
+                        }
+                      />
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
+                          }
+                        }
+                      >
+                        New Followers
+                      </span>
+                    </span>
+                  </button>
+                </li>
+                <li
+                  className="dropdownListItem"
+                >
+                  <button
+                    aria-label={null}
+                    disabled={undefined}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "background": "none",
+                        "backgroundColor": "unset",
+                        "border": "none",
+                        "borderRadius": "unset",
+                        "color": "unset",
+                        "cursor": "pointer",
+                        "display": "unset",
+                        "fontFamily": "unset",
+                        "fontSize": "unset",
+                        "fontWeight": "unset",
+                        "lineHeight": "unset",
+                        "margin": "unset",
+                        "outline": "none",
+                        "padding": 0,
+                        "transition": "unset",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "boxSizing": "border-box",
+                          "display": "flex",
+                          "padding": "5px 10px",
+                          "position": "relative",
+                          "width": "200px",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "background": "#fda3f3",
+                            "borderColor": "#df85d5",
+                            "borderRadius": "10px",
+                            "borderStyle": "solid",
+                            "borderWidth": "1px",
+                            "display": "inline-block",
+                            "height": "7px",
+                            "marginRight": "5px",
+                            "verticalAlign": "baseline",
+                            "width": "7px",
+                          }
+                        }
+                      />
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
+                          }
+                        }
+                      >
+                        Retweets
+                      </span>
                     </span>
                   </button>
                 </li>
@@ -3024,10 +3320,10 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
       }
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-VigVT kuCSoJ"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-jTzLTM bckqaj"
         >
           <span
             style={
@@ -3458,6 +3754,154 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                     </span>
                   </button>
                 </li>
+                <li
+                  className="dropdownListItem"
+                >
+                  <button
+                    aria-label={null}
+                    disabled={undefined}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "background": "none",
+                        "backgroundColor": "unset",
+                        "border": "none",
+                        "borderRadius": "unset",
+                        "color": "unset",
+                        "cursor": "pointer",
+                        "display": "unset",
+                        "fontFamily": "unset",
+                        "fontSize": "unset",
+                        "fontWeight": "unset",
+                        "lineHeight": "unset",
+                        "margin": "unset",
+                        "outline": "none",
+                        "padding": 0,
+                        "transition": "unset",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "boxSizing": "border-box",
+                          "display": "flex",
+                          "padding": "5px 10px",
+                          "position": "relative",
+                          "width": "200px",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "background": "#fda3f3",
+                            "borderColor": "#df85d5",
+                            "borderRadius": "10px",
+                            "borderStyle": "solid",
+                            "borderWidth": "1px",
+                            "display": "inline-block",
+                            "height": "7px",
+                            "marginRight": "5px",
+                            "verticalAlign": "baseline",
+                            "width": "7px",
+                          }
+                        }
+                      />
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
+                          }
+                        }
+                      >
+                        New Followers
+                      </span>
+                    </span>
+                  </button>
+                </li>
+                <li
+                  className="dropdownListItem"
+                >
+                  <button
+                    aria-label={null}
+                    disabled={undefined}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "background": "none",
+                        "backgroundColor": "unset",
+                        "border": "none",
+                        "borderRadius": "unset",
+                        "color": "unset",
+                        "cursor": "pointer",
+                        "display": "unset",
+                        "fontFamily": "unset",
+                        "fontSize": "unset",
+                        "fontWeight": "unset",
+                        "lineHeight": "unset",
+                        "margin": "unset",
+                        "outline": "none",
+                        "padding": 0,
+                        "transition": "unset",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "boxSizing": "border-box",
+                          "display": "flex",
+                          "padding": "5px 10px",
+                          "position": "relative",
+                          "width": "200px",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "background": "#fda3f3",
+                            "borderColor": "#df85d5",
+                            "borderRadius": "10px",
+                            "borderStyle": "solid",
+                            "borderWidth": "1px",
+                            "display": "inline-block",
+                            "height": "7px",
+                            "marginRight": "5px",
+                            "verticalAlign": "baseline",
+                            "width": "7px",
+                          }
+                        }
+                      />
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
+                          }
+                        }
+                      >
+                        Retweets
+                      </span>
+                    </span>
+                  </button>
+                </li>
               </ul>
             </div>
           </div>
@@ -3803,10 +4247,10 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
       }
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-VigVT kuCSoJ"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-jTzLTM bckqaj"
         >
           <span
             style={
@@ -4233,6 +4677,154 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                         }
                       >
                         Posts
+                      </span>
+                    </span>
+                  </button>
+                </li>
+                <li
+                  className="dropdownListItem"
+                >
+                  <button
+                    aria-label={null}
+                    disabled={undefined}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "background": "none",
+                        "backgroundColor": "unset",
+                        "border": "none",
+                        "borderRadius": "unset",
+                        "color": "unset",
+                        "cursor": "pointer",
+                        "display": "unset",
+                        "fontFamily": "unset",
+                        "fontSize": "unset",
+                        "fontWeight": "unset",
+                        "lineHeight": "unset",
+                        "margin": "unset",
+                        "outline": "none",
+                        "padding": 0,
+                        "transition": "unset",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "boxSizing": "border-box",
+                          "display": "flex",
+                          "padding": "5px 10px",
+                          "position": "relative",
+                          "width": "200px",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "background": "#fda3f3",
+                            "borderColor": "#df85d5",
+                            "borderRadius": "10px",
+                            "borderStyle": "solid",
+                            "borderWidth": "1px",
+                            "display": "inline-block",
+                            "height": "7px",
+                            "marginRight": "5px",
+                            "verticalAlign": "baseline",
+                            "width": "7px",
+                          }
+                        }
+                      />
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
+                          }
+                        }
+                      >
+                        New Followers
+                      </span>
+                    </span>
+                  </button>
+                </li>
+                <li
+                  className="dropdownListItem"
+                >
+                  <button
+                    aria-label={null}
+                    disabled={undefined}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "background": "none",
+                        "backgroundColor": "unset",
+                        "border": "none",
+                        "borderRadius": "unset",
+                        "color": "unset",
+                        "cursor": "pointer",
+                        "display": "unset",
+                        "fontFamily": "unset",
+                        "fontSize": "unset",
+                        "fontWeight": "unset",
+                        "lineHeight": "unset",
+                        "margin": "unset",
+                        "outline": "none",
+                        "padding": 0,
+                        "transition": "unset",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "boxSizing": "border-box",
+                          "display": "flex",
+                          "padding": "5px 10px",
+                          "position": "relative",
+                          "width": "200px",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "background": "#fda3f3",
+                            "borderColor": "#df85d5",
+                            "borderRadius": "10px",
+                            "borderStyle": "solid",
+                            "borderWidth": "1px",
+                            "display": "inline-block",
+                            "height": "7px",
+                            "marginRight": "5px",
+                            "verticalAlign": "baseline",
+                            "width": "7px",
+                          }
+                        }
+                      />
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
+                          }
+                        }
+                      >
+                        Retweets
                       </span>
                     </span>
                   </button>
@@ -4658,10 +5250,10 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
       }
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-VigVT kuCSoJ"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-jTzLTM bckqaj"
         >
           <span
             style={
@@ -5092,6 +5684,154 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                     </span>
                   </button>
                 </li>
+                <li
+                  className="dropdownListItem"
+                >
+                  <button
+                    aria-label={null}
+                    disabled={undefined}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "background": "none",
+                        "backgroundColor": "unset",
+                        "border": "none",
+                        "borderRadius": "unset",
+                        "color": "unset",
+                        "cursor": "pointer",
+                        "display": "unset",
+                        "fontFamily": "unset",
+                        "fontSize": "unset",
+                        "fontWeight": "unset",
+                        "lineHeight": "unset",
+                        "margin": "unset",
+                        "outline": "none",
+                        "padding": 0,
+                        "transition": "unset",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "boxSizing": "border-box",
+                          "display": "flex",
+                          "padding": "5px 10px",
+                          "position": "relative",
+                          "width": "200px",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "background": "#fda3f3",
+                            "borderColor": "#df85d5",
+                            "borderRadius": "10px",
+                            "borderStyle": "solid",
+                            "borderWidth": "1px",
+                            "display": "inline-block",
+                            "height": "7px",
+                            "marginRight": "5px",
+                            "verticalAlign": "baseline",
+                            "width": "7px",
+                          }
+                        }
+                      />
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
+                          }
+                        }
+                      >
+                        New Followers
+                      </span>
+                    </span>
+                  </button>
+                </li>
+                <li
+                  className="dropdownListItem"
+                >
+                  <button
+                    aria-label={null}
+                    disabled={undefined}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
+                    style={
+                      Object {
+                        "background": "none",
+                        "backgroundColor": "unset",
+                        "border": "none",
+                        "borderRadius": "unset",
+                        "color": "unset",
+                        "cursor": "pointer",
+                        "display": "unset",
+                        "fontFamily": "unset",
+                        "fontSize": "unset",
+                        "fontWeight": "unset",
+                        "lineHeight": "unset",
+                        "margin": "unset",
+                        "outline": "none",
+                        "padding": 0,
+                        "transition": "unset",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "boxSizing": "border-box",
+                          "display": "flex",
+                          "padding": "5px 10px",
+                          "position": "relative",
+                          "width": "200px",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "background": "#fda3f3",
+                            "borderColor": "#df85d5",
+                            "borderRadius": "10px",
+                            "borderStyle": "solid",
+                            "borderWidth": "1px",
+                            "display": "inline-block",
+                            "height": "7px",
+                            "marginRight": "5px",
+                            "verticalAlign": "baseline",
+                            "width": "7px",
+                          }
+                        }
+                      />
+                      <span
+                        style={
+                          Object {
+                            "color": "#59626a",
+                            "fontFamily": "\\"Roboto\\", sans-serif",
+                            "fontSize": "0.75rem",
+                            "fontWeight": 700,
+                          }
+                        }
+                      >
+                        Retweets
+                      </span>
+                    </span>
+                  </button>
+                </li>
               </ul>
             </div>
           </div>
@@ -5411,6 +6151,415 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots Footer should not render percentage change number only the arrow when previous period value is negative 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "750px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "margin": "1.5rem 1.5rem 1rem",
+          "position": "relative",
+        }
+      }
+    >
+      <ul
+        style={
+          Object {
+            "display": "flex",
+            "flexWrap": "wrap",
+            "margin": "0 auto",
+            "padding": "0",
+          }
+        }
+      >
+        <li
+          className="sc-ifAKCX dYwfOF"
+          width="25%"
+        >
+          <div
+            className="sc-EHOje YINzU"
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "fontSize": "0.75rem",
+                  "fontWeight": 600,
+                  "marginTop": "15px",
+                }
+              }
+            >
+              <span
+                data-tip={null}
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      style={
+                        Object {
+                          "background": "#fda3f3",
+                          "borderColor": "#df85d5",
+                          "borderRadius": "10px",
+                          "borderStyle": "solid",
+                          "borderWidth": "1px",
+                          "display": "inline-block",
+                          "height": "7px",
+                          "marginRight": "5px",
+                          "verticalAlign": "baseline",
+                          "width": "7px",
+                        }
+                      }
+                    />
+                    New Followers
+                     over 
+                    <span>
+                      the 
+                      selected
+                       
+                      7 days
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </span>
+            <div
+              className="sc-bZQynM hCNVyQ"
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#323b43",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "2rem",
+                    "fontWeight": 700,
+                  }
+                }
+              >
+                <span>
+                  100
+                </span>
+              </span>
+              <span
+                className="sc-htoDjs jpUPzE"
+              >
+                <svg
+                  height="100%"
+                  style={
+                    Object {
+                      "fill": "#2fd566",
+                      "height": "1rem",
+                      "width": "1rem",
+                    }
+                  }
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                >
+                  <g
+                    className="shamrock"
+                  >
+                    <path
+                      d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                    />
+                  </g>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li
+          className="sc-ifAKCX dYwfOF"
+          width="25%"
+        >
+          <div
+            className="sc-EHOje YINzU"
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "fontSize": "0.75rem",
+                  "fontWeight": 600,
+                  "marginTop": "15px",
+                }
+              }
+            >
+              <span
+                data-tip={null}
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      style={
+                        Object {
+                          "background": "#9B9FA3",
+                          "borderColor": "#7d8185",
+                          "borderRadius": "10px",
+                          "borderStyle": "solid",
+                          "borderWidth": "1px",
+                          "display": "inline-block",
+                          "height": "7px",
+                          "marginRight": "5px",
+                          "verticalAlign": "baseline",
+                          "width": "7px",
+                        }
+                      }
+                    />
+                    New Followers
+                     over 
+                    <span>
+                      the 
+                      previous
+                       
+                      7 days
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </span>
+            <div
+              className="sc-bZQynM hCNVyQ"
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#323b43",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "2rem",
+                    "fontWeight": 700,
+                  }
+                }
+              >
+                <span>
+                  -20
+                </span>
+              </span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots Footer should not render percentage change number when previous period diff is 0 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "width": "750px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "margin": "1.5rem 1.5rem 1rem",
+          "position": "relative",
+        }
+      }
+    >
+      <ul
+        style={
+          Object {
+            "display": "flex",
+            "flexWrap": "wrap",
+            "margin": "0 auto",
+            "padding": "0",
+          }
+        }
+      >
+        <li
+          className="sc-ifAKCX dYwfOF"
+          width="25%"
+        >
+          <div
+            className="sc-EHOje YINzU"
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "fontSize": "0.75rem",
+                  "fontWeight": 600,
+                  "marginTop": "15px",
+                }
+              }
+            >
+              <span
+                data-tip={null}
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      style={
+                        Object {
+                          "background": "#fda3f3",
+                          "borderColor": "#df85d5",
+                          "borderRadius": "10px",
+                          "borderStyle": "solid",
+                          "borderWidth": "1px",
+                          "display": "inline-block",
+                          "height": "7px",
+                          "marginRight": "5px",
+                          "verticalAlign": "baseline",
+                          "width": "7px",
+                        }
+                      }
+                    />
+                    Retweets
+                     over 
+                    <span>
+                      the 
+                      selected
+                       
+                      7 days
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </span>
+            <div
+              className="sc-bZQynM hCNVyQ"
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#323b43",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "2rem",
+                    "fontWeight": 700,
+                  }
+                }
+              >
+                <span>
+                  100
+                </span>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li
+          className="sc-ifAKCX dYwfOF"
+          width="25%"
+        >
+          <div
+            className="sc-EHOje YINzU"
+          >
+            <span
+              style={
+                Object {
+                  "display": "block",
+                  "fontSize": "0.75rem",
+                  "fontWeight": 600,
+                  "marginTop": "15px",
+                }
+              }
+            >
+              <span
+                data-tip={null}
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  <span>
+                    <span
+                      style={
+                        Object {
+                          "background": "#9B9FA3",
+                          "borderColor": "#7d8185",
+                          "borderRadius": "10px",
+                          "borderStyle": "solid",
+                          "borderWidth": "1px",
+                          "display": "inline-block",
+                          "height": "7px",
+                          "marginRight": "5px",
+                          "verticalAlign": "baseline",
+                          "width": "7px",
+                        }
+                      }
+                    />
+                    Retweets
+                     over 
+                    <span>
+                      the 
+                      previous
+                       
+                      7 days
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </span>
+            <div
+              className="sc-bZQynM hCNVyQ"
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#323b43",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "2rem",
+                    "fontWeight": 700,
+                  }
+                }
+              >
+                <span>
+                  100
+                </span>
+              </span>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 </span>
@@ -5835,7 +6984,7 @@ exports[`Snapshots PeriodToggle should render an inactive toggle 1`] = `
 exports[`Snapshots Title should render title as if for app 1`] = `
 <span>
   <h2
-    className="sc-VigVT koZmyN"
+    className="sc-jTzLTM bckqaj"
   >
     <span
       style={
@@ -5856,7 +7005,7 @@ exports[`Snapshots Title should render title as if for app 1`] = `
 exports[`Snapshots Title should render title as if for report 1`] = `
 <span>
   <h2
-    className="sc-VigVT koZmyN"
+    className="sc-jTzLTM bckqaj"
   >
     <span
       style={
