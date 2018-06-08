@@ -1,9 +1,54 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import numeral from 'numeral';
+import styled from 'styled-components';
 import { Text } from '@bufferapp/components';
 import { ProfileBadge } from '@bufferapp/analyze-shared-components';
-import styles from '../../styles.less';
+
+const Container = styled.div`
+  margin: 0 0 1.5rem;
+`;
+
+const Wrapper = styled.div`
+  display: inline-flex;
+  align-items: center;
+`;
+
+const Details = styled.div`
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 0.5rem;
+`;
+
+const Header = styled.span`
+  display: block;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #323b43;
+  &:hover {
+    text-decoration: none;
+  }
+  a {
+    color: #323b43;
+    text-decoration: none;
+  }
+`;
+
+const Subheader = styled.span`
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 600;
+  color: #323b43;
+`;
+
+const Note = styled.span`
+  float:right;
+  color: #666C72;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
 
 const ProfileHeader = ({ profile, followersCount }) => {
   if (!profile) return null;
@@ -24,31 +69,31 @@ const ProfileHeader = ({ profile, followersCount }) => {
   }
 
   return (
-    <div className={styles.sectionProfileAvatar}>
-      <div className={styles.profileAvatarWrapper}>
+    <Container>
+      <Wrapper>
         <ProfileBadge
           avatarUrl={profile.avatarUrl}
           service={profile.service}
           avatarSize={32}
           socialIconSize={16}
         />
-        <div className={styles.sectionProfileAvatarDetails}>
-          <span className={styles.profileAvatarDetailHeader}>
+        <Details>
+          <Header>
             <a href={profile.service_link} rel="noopener noreferrer" target="_blank">
-              <Text size="extra-small" weight="bold">{profile.username}</Text>
+              <Text size="extra-small" weight="bold" color="outerSpace">{profile.username}</Text>
             </a>
-          </span>
-          <span className={styles.profileAvatarDetailSubHeader}>
+          </Header>
+          <Subheader>
             <Text size="extra-small">{formatFollowerCount(followersCount)} {followersWording}</Text>
-          </span>
-        </div>
-      </div>
+          </Subheader>
+        </Details>
+      </Wrapper>
       <a href={helpLinkUrl} rel="noopener noreferrer" target="_blank">
-        <span className={styles.profileAvatarDetailNote}>
+        <Note>
           <Text size="extra-small">Analytics updated daily</Text>
-        </span>
+        </Note>
       </a>
-    </div>
+    </Container>
   );
 };
 
