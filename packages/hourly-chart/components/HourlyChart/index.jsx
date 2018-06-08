@@ -1,30 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Text } from '@bufferapp/components';
-
 import {
   ChartStateLoading as Loading,
   ChartCard,
   ChartHeader,
 } from '@bufferapp/analyze-shared-components';
-
 import AddReport from '@bufferapp/add-report';
 
 import PostCountByHour from '../PostCountByHour';
 import HourlyEngagementChart from '../HourlyEngagementChart';
 import Legend from '../Legend';
+import Title from '../Title';
 import Header from '../ChartHeader';
-
-const title = {
-  margin: '0',
-  padding: '0',
-};
-
-export const Title = () =>
-  <h2 style={title}>
-    <Text weight="bold" size="large">Hourly engagements</Text>
-  </h2>
-;
 
 const gridContainer = {
   margin: '0 auto',
