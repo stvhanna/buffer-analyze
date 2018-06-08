@@ -49,7 +49,7 @@ const Footer = ({ totals, selectedMetricLabel, startDate, endDate }) => {
             </span>
           }
           showPercentSign={selectedMetricLabel === 'Engagement Rate'}
-          hideDiff={pastMetric.value < 0 || currentMetric.diff === 0}
+          hideDiff={pastMetric.value < 0}
           showArrowIcon={pastMetric.value < 0}
         />
         <GridItem

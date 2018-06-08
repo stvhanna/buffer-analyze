@@ -85,7 +85,7 @@ const GridItem = ({
         <ValueWrapper>
           <Value showPercentSign={showPercentSign}>{metric.value}</Value>
           {!hideDiff && <Diff diff={metric.diff} />}
-          { showArrowIcon &&
+          {hideDiff && showArrowIcon &&
             <ArrowIconContainer>
               <ArrowIcon diff={metric.diff} />
             </ArrowIconContainer>
