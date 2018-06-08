@@ -1,17 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import Text from '@bufferapp/components/Text';
 
-const gridSummaryItemLabel = {
-  display: 'block',
-};
+const Container = styled.span`
+  display: block;
+  margin: 0 0 0.25rem;
+`;
 
 const Label = ({ tooltip, children }) =>
-  <span style={gridSummaryItemLabel}>
+  <Container>
     <span data-tip={tooltip}>
       <Text color="shuttleGray" size="small">{children}</Text>
     </span>
-  </span>;
+  </Container>;
 
 Label.defaultProps = {
   tooltip: null,
