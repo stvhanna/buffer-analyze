@@ -172,6 +172,7 @@ function getTotalsFromDaily (dailyData) {
         currentPeriodTotals[metric.key] = 0;
         previousPeriodTotals[metric.key] = 0;
         currentMetricsToAveragEntriesCount[metric.key] = 0;
+        previousMetricsToAveragEntriesCount[metric.key] = 0;
       }
 
       if (NON_SUMMABLE_METRICS.indexOf(metric.key) !== -1) {

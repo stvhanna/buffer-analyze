@@ -8,6 +8,7 @@ import compare from './';
 import {
   DAILY_RESPONSE_EMPTY,
   DAILY_RESPONSE_AVERAGE_METRICS,
+  PAST_DAILY_RESPONSE_AVERAGE_METRICS,
   CURRENT_PERIOD_DAILY_RESPONSE,
   PAST_PERIOD_DAILY_RESPONSE,
   PAST_PERIOD_DAILY_PARTIAL_RESPONSE,
@@ -189,19 +190,19 @@ describe('rpc/compare', () => {
 
   it('should average metrics for days where the value to average is > 0', async() => {
     rp.mockReturnValueOnce(Promise.resolve(DAILY_RESPONSE_AVERAGE_METRICS));
-    rp.mockReturnValueOnce(Promise.resolve(DAILY_RESPONSE_EMPTY));
+    rp.mockReturnValueOnce(Promise.resolve(PAST_DAILY_RESPONSE_AVERAGE_METRICS));
 
     const data = await compare.fn({ profileId, profileService }, mockedRequest);
 
     expect(data.totals[10]).toEqual({
-      diff: 115,
+      diff: 44,
       key: 'engagement_rate',
       label: 'Engagement Rate',
       color: '#98E8B2',
       value: 1.15,
-      previousValue: 0,
+      previousValue: 0.8,
       postsCount: 3,
-      previousPostsCount: 0,
+      previousPostsCount: 3,
     });
   });
 
