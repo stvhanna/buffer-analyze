@@ -319,3 +319,25 @@ export const DAILY_RESPONSE_AVERAGE_METRICS = {
   },
   success: true,
 };
+
+export const PAST_DAILY_RESPONSE_AVERAGE_METRICS = {
+  response: {
+    1503446400000: {
+      posts_count: 1,
+      engagement_rate: 1.2,
+    },
+    1504137600000: {
+      posts_count: 0,
+      engagement_rate: 0,
+    },
+    1503619200000: {
+      posts_count: 0,
+      engagement_rate: 0,
+    },
+    1503705600000: {
+      posts_count: 2,
+      engagement_rate: 0.4,
+    },
+  },
+  success: true,
+};
