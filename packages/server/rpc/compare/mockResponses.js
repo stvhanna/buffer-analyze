@@ -1,48 +1,3 @@
-export const CURRENT_PERIOD_TOTALS_RESPONSE = {
-  response: {
-    engaged_users: 56755,
-    post_impressions: 1181030,
-    reactions: 9391,
-    post_reach: 964968,
-    page_engagements: 12831,
-    post_clicks: 59989,
-    new_followers: 645,
-    followers: 99324,
-    posts_count: 3,
-  },
-  success: true,
-};
-
-export const PAST_PERIOD_TOTALS_RESPONSE = {
-  response: {
-    engaged_users: 15327,
-    post_impressions: 391753,
-    reactions: 2886,
-    post_reach: 284436,
-    page_engagements: 5160,
-    post_clicks: 21983,
-    new_followers: 1067,
-    followers: 98805,
-    posts_count: 5,
-  },
-  success: true,
-};
-
-export const EMPTY_TOTALS_RESPONSE = {
-  response: {
-    engaged_users: 0,
-    post_impressions: 0,
-    reactions: 0,
-    post_reach: 0,
-    page_engagements: 0,
-    post_clicks: 0,
-    new_followers: 0,
-    followers: 0,
-    posts_count: 0,
-  },
-  success: true,
-};
-
 export const CURRENT_PERIOD_DAILY_RESPONSE = {
   response: {
     1504051200000: {
@@ -128,6 +83,96 @@ export const CURRENT_PERIOD_DAILY_RESPONSE = {
       post_clicks: 2516,
       post_reach: 66089,
       reactions: 167,
+    },
+  },
+  success: true,
+};
+
+export const DAILY_RESPONSE_EMPTY = {
+  response: {
+    1504051200000: {
+      posts_count: 0,
+      shares: 0,
+      comments: 0,
+      followers: 0,
+      new_followers: 0,
+      page_engagements: 0,
+      post_impressions: 0,
+      post_clicks: 0,
+      post_reach: 0,
+      reactions: 0,
+    },
+    1504137600000: {
+      posts_count: 0,
+      shares: 0,
+      comments: 0,
+      followers: 0,
+      new_followers: 0,
+      page_engagements: 0,
+      post_impressions: 0,
+      post_clicks: 0,
+      post_reach: 0,
+      reactions: 0,
+    },
+    1504224000000: {
+      posts_count: 0,
+      shares: 0,
+      comments: 0,
+      followers: 0,
+      new_followers: 0,
+      page_engagements: 0,
+      post_impressions: 0,
+      post_clicks: 0,
+      post_reach: 0,
+      reactions: 0,
+    },
+    1504310400000: {
+      posts_count: 0,
+      shares: 0,
+      comments: 0,
+      followers: 0,
+      new_followers: 0,
+      page_engagements: 0,
+      post_impressions: 0,
+      post_clicks: 0,
+      post_reach: 0,
+      reactions: 0,
+    },
+    1504396800000: {
+      posts_count: 0,
+      shares: 0,
+      comments: 0,
+      followers: 0,
+      new_followers: 0,
+      page_engagements: 0,
+      post_impressions: 0,
+      post_clicks: 0,
+      post_reach: 0,
+      reactions: 0,
+    },
+    1504483200000: {
+      posts_count: 0,
+      shares: 0,
+      comments: 0,
+      followers: 0,
+      new_followers: 0,
+      page_engagements: 0,
+      post_impressions: 0,
+      post_clicks: 0,
+      post_reach: 0,
+      reactions: 0,
+    },
+    1504569600000: {
+      posts_count: 0,
+      shares: 0,
+      comments: 0,
+      followers: 0,
+      new_followers: 0,
+      page_engagements: 0,
+      post_impressions: 0,
+      post_clicks: 0,
+      post_reach: 0,
+      reactions: 0,
     },
   },
   success: true,
@@ -248,6 +293,28 @@ export const PAST_PERIOD_DAILY_PARTIAL_RESPONSE = {
       post_clicks: 2599,
       post_reach: 45702,
       reactions: 288,
+    },
+  },
+  success: true,
+};
+
+export const DAILY_RESPONSE_AVERAGE_METRICS = {
+  response: {
+    1504051200000: {
+      posts_count: 1,
+      engagement_rate: 1.5,
+    },
+    1504137600000: {
+      posts_count: 0,
+      engagement_rate: 0,
+    },
+    1504224000000: {
+      posts_count: 2,
+      engagement_rate: 0.8,
+    },
+    1504310400000: {
+      posts_count: 0,
+      engagement_rate: 0,
     },
   },
   success: true,
