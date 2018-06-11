@@ -22,7 +22,7 @@ const MetricGraphWrapper = styled.div`
   display: inline-block;
   text-decoration: none;
   color: #323b43;
-  padding: 1rem 1rem 1.5rem 0;
+  padding: 1.25rem 1rem 1.25rem 0;
   width: 25%;
   padding-left: 1rem;
 `;
@@ -31,7 +31,7 @@ const ContentColumn = styled.div`
   display: inline-block;
   text-decoration: none;
   color: #323b43;
-  padding: 1rem 1rem 1rem 0;
+  padding: 1.25rem 1rem 1.25rem 0;
   width: 75%;
   padding-right: 1rem;
   border-right: 1px dotted #CED7DF;
@@ -45,21 +45,23 @@ const ContentDate = styled.div`
 
 const ContentContainer = styled.div`
   overflow: hidden;
-  color: #323b43;
+  color: #8A9097;
   
   a,
   a:link,
   a:visited,
   a:hover {
-    color: #168eea;
+    color: #8A9097;
+    text-decoration: none;
   }
 `;
 
 const MediaThumbnail = styled.img`
-  width: 5rem;
-  min-width: 5rem;
+  width: 6rem;
+  min-width: 6rem;
   border-radius: 3px;
-  margin: 0.25rem 1rem 0 0;
+  margin: 0.25rem 0 0 1rem;
+  box-shadow: 0 0 1px rgba(0,0,0,0.1);
 `;
 
 const PostMeta = styled.div`
@@ -71,6 +73,7 @@ const PostMeta = styled.div`
 const PostContent = styled.div`
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
   padding-top: 0px;
 `;
 
@@ -83,7 +86,6 @@ const ViewPostLinkClass = styled.a`
   padding-top: 0.2rem;
   color: #168eea;
   text-decoration: none;
-  text-transform: uppercase;
 
   &:hover {
     text-decoration: underline;
@@ -154,7 +156,7 @@ const PostItem = ({
       <ContentColumn>
         <PostMeta>
           <ContentDate>
-            <Text size="extra-small" weight="medium" color="outerSpace">
+            <Text size="small" weight="bold" color="outerSpace">
               {moment(post.date).tz(timezone).format(dateFormat)}
             </Text>
           </ContentDate>
@@ -166,14 +168,14 @@ const PostItem = ({
             >
               <Text size="extra-small" color="curiousBlue">
                 <i className="bi-click" />
-                View post
+                View Post
               </Text>
             </ViewPostLinkClass>
           </ContentLink>
         </PostMeta>
         <PostContent>
+          <Text size="extra-small" color="curiousBlue"><ContentContainer dangerouslySetInnerHTML={{ __html: post.text }} /></Text>
           <Attachment type={post.type} media={post.media} />
-          <Text size="extra-small"><ContentContainer dangerouslySetInnerHTML={{ __html: post.text }} /></Text>
         </PostContent>
       </ContentColumn>
       <MetricColumn metrics={primaryPostColumnMetrics} />

@@ -9,7 +9,7 @@ const MetricBarGraph = styled.div`
   // we need this to render bars in pdf
   -webkit-print-color-adjust: exact;
   display: block;
-  height: 7px;
+  height: 0.5rem;
   border-radius: 2px;
   font-size: 0.9em;
   font-weight: bold;
@@ -26,7 +26,7 @@ const MetricBarGraphContainer = styled.div`
   position: relative;
   display: inline-block;
   // This is the maximum for each bar graph
-  width: 80%;
+  width: 95%;
   margin: 0 0 0.75rem;
 `;
 
@@ -47,7 +47,7 @@ const MetricGraph = ({ metric }) => {
     <div key={key}>
       <MetricBarGraphContainer>
         <MetricBarLabel>
-          <Text size="extra-small" weight="bold" color="outerSpace"><TruncatedNumber>{value}</TruncatedNumber></Text>
+          <Text size="small" weight="bold" color="outerSpace"><TruncatedNumber>{value}</TruncatedNumber></Text>
           <Text size="extra-small"> {label.toLowerCase()}</Text>
         </MetricBarLabel>
         <MetricBarGraph
