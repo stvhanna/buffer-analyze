@@ -24,7 +24,7 @@ const gridSummaryItemIcon = {
 
 
 const Diff = ({ diff }) => {
-  if (diff === null) {
+  if (diff === null || diff === 0) {
     return null;
   }
   let color;
@@ -41,12 +41,6 @@ const Diff = ({ diff }) => {
       color: '#FF1E1E',
     };
     color = 'torchRed';
-  } else {
-    itemDiffStyle = {
-      ...gridSummaryItemDiffContainer,
-      color: '#8D969E',
-    };
-    color = '#8D969E';
   }
 
   return (

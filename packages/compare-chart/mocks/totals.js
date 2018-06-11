@@ -27,4 +27,18 @@ export default [
     value: 100,
     previousValue: 100,
   },
+  {
+    color: '#fda3f3',
+    diff: 20,
+    label: 'New Followers',
+    value: 100,
+    previousValue: -20,
+  },
+  {
+    color: '#fda3f3',
+    diff: 0,
+    label: 'Retweets',
+    value: 100,
+    previousValue: 100,
+  },
 ];
