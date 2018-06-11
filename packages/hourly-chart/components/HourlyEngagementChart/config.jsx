@@ -30,8 +30,9 @@ const xAxis = {
     x: 10,
     y: 20,
     style: {
-      'font-size': '12px',
-      'font-weight': 'lighter',
+      'font-size': '11px',
+      'font-weight': 'normal',
+      'font-family': 'Roboto, sans serif',
     },
   },
 };
@@ -62,8 +63,8 @@ const yAxis = [{
     x: -10,
     y: -2,
     style: {
-      'font-size': '12px',
-      'font-weight': 'lighter',
+      'font-size': '11px',
+      'font-weight': 'normal',
       'font-family': 'Roboto, sans serif',
     },
   },
@@ -79,8 +80,8 @@ const yAxis = [{
     x: 10,
     y: -2,
     style: {
-      'font-size': '12px',
-      'font-weight': 'lighter',
+      'font-size': '11px',
+      'font-weight': 'normal',
       'font-family': 'Roboto, sans serif',
     },
   },

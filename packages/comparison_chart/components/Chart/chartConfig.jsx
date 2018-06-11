@@ -37,8 +37,9 @@ export const getXAxis = () => ({
     x: 5,
     y: 25,
     style: {
-      'font-size': '12px',
-      'font-weight': 'lighter',
+      'font-size': '11px',
+      'font-weight': 'normal',
+      'font-family': 'Roboto, sans serif',
     },
   },
 });
@@ -64,9 +65,9 @@ export const getYAxis = () => ([
       formatter: truncateNumber,
       align: 'left',
       style: {
-        'font-size': '12px',
-        'font-weight': 'lighter',
-        'font-family': 'Open Sans, Helvetica Neue, Helvetica, Arial, sans serif',
+        'font-size': '11px',
+        'font-weight': 'normal',
+        'font-family': 'Roboto, sans serif',
       },
     },
   }, {
@@ -89,9 +90,9 @@ export const getYAxis = () => ([
       format: '{value}',
       formatter: truncateNumber,
       style: {
-        'font-size': '12px',
-        'font-weight': 'lighter',
-        'font-family': 'Open Sans, Helvetica Neue, Helvetica, Arial, sans serif',
+        'font-size': '11px',
+        'font-weight': 'normal',
+        'font-family': 'Roboto, sans serif',
       },
     },
     opposite: true,
