@@ -7,7 +7,7 @@ import {
 import ColorIcon from '../ColorIcon';
 
 const LegendList = styled.ul`
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 1.5rem 0.75rem;
   margin: 0 0 1rem;
   text-align: center;
 `;
