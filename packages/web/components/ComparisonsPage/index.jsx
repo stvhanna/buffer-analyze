@@ -29,7 +29,7 @@ const comparisonsContainer = {
 };
 
 const comparisonsMaxWidth = {
-  width: '52rem',
+  width: '920px',
   margin: '0 auto',
   padding: '2.5rem',
 };

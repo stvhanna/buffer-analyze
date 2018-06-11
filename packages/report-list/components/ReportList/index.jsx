@@ -8,9 +8,9 @@ import {
 import Report from '../Report';
 
 const List = styled.ol`
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  width: 100%;
+  width: 920px;
 `;
 
 const Centered = styled.div`

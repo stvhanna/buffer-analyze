@@ -17,12 +17,12 @@ import {
 const Page = styled.div`
   display: flex;
   flex-grow: 1;
-  height: 100%;
+  min-height: 100%;
   background: #FAFAFA;
 `;
 
 const Container = styled.div`
-  width: 52rem;
+  width: 920px;
   margin: 0 auto;
   padding: 1.5rem 1rem 4rem;
 `;
