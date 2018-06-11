@@ -55,10 +55,6 @@ const CHARTS = {
   },
 };
 
-const Container = styled.div`
-  padding: 0.5rem 0 0;
-`;
-
 const Separator = styled.section`
   position: relative;
   background: #FFFFFF;
@@ -89,7 +85,7 @@ const ChartFactory = ({ charts, moveUp, moveDown, deleteChart, exporting }) =>
         <TitleWrapper>
           {React.createElement(CHARTS[chart.chart_id].title, {
             ...chart,
-            forReport: true
+            forReport: true,
           })}
           {!exporting && <ChartEditButtons
             moveUp={moveUp}
