@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
 import ReactHighcharts from 'react-highcharts';
 import moment from 'moment';
+import styled from 'styled-components';
 
 import getChartConfig, { highChartsSeriesPrimaryConfig } from './chartConfig';
 
@@ -104,7 +105,6 @@ function prepareSeries(
     };
   }
 
-
   return seriesConfig;
 }
 
@@ -156,6 +156,10 @@ function filterDailyDataMetrics(dailyData, metricLabel) {
   }));
 }
 
+const Container = styled.div`
+  padding: 0 0.5rem;
+`;
+
 class Chart extends PureComponent {
   render() {
     const { daily, totalPeriodDaily, selectedMetricLabel,
@@ -168,7 +172,11 @@ class Chart extends PureComponent {
       visualizePreviousPeriod,
       profileService,
     );
-    return (<ReactHighcharts config={charOptions} />);
+    return (
+      <Container>
+        <ReactHighcharts config={charOptions} />
+      </Container>
+    );
   }
 }
 
