@@ -10,29 +10,21 @@ exports[`Snapshots AverageTable should render a "no data" state 1`] = `
     }
   >
     <div
-      style={
-        Object {
-          "background": "#fff",
-          "border": "1px solid #E2E8ED",
-          "borderRadius": "5px",
-          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
-          "margin": "0 0 2rem",
-        }
-      }
+      className="sc-cSHVUG jGZnBH"
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-kAzzGY jvIsFy"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-chPdSV gKzWYD"
         >
           <span
             style={
               Object {
-                "color": "#000",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 500,
+                "fontWeight": 700,
               }
             }
           >
@@ -41,7 +33,7 @@ exports[`Snapshots AverageTable should render a "no data" state 1`] = `
         </h2>
       </header>
       <div
-        className="sc-kGXeez hPKvAv"
+        className="sc-hMqMXs jrguaW"
         id="js-dom-to-png-average"
       >
         <div
@@ -87,29 +79,21 @@ exports[`Snapshots AverageTable should render a loading state 1`] = `
     }
   >
     <div
-      style={
-        Object {
-          "background": "#fff",
-          "border": "1px solid #E2E8ED",
-          "borderRadius": "5px",
-          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
-          "margin": "0 0 2rem",
-        }
-      }
+      className="sc-cSHVUG jGZnBH"
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-kAzzGY jvIsFy"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-chPdSV gKzWYD"
         >
           <span
             style={
               Object {
-                "color": "#000",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 500,
+                "fontWeight": 700,
               }
             }
           >
@@ -118,7 +102,7 @@ exports[`Snapshots AverageTable should render a loading state 1`] = `
         </h2>
       </header>
       <div
-        className="sc-kGXeez hPKvAv"
+        className="sc-hMqMXs jrguaW"
         id="js-dom-to-png-average"
       >
         <div
@@ -235,29 +219,21 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
     }
   >
     <div
-      style={
-        Object {
-          "background": "#fff",
-          "border": "1px solid #E2E8ED",
-          "borderRadius": "5px",
-          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
-          "margin": "0 0 2rem",
-        }
-      }
+      className="sc-cSHVUG jGZnBH"
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-kAzzGY jvIsFy"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-chPdSV gKzWYD"
         >
           <span
             style={
               Object {
-                "color": "#000",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 500,
+                "fontWeight": 700,
               }
             }
           >
@@ -266,31 +242,24 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
         </h2>
       </header>
       <div
-        className="sc-kGXeez hPKvAv"
+        className="sc-hMqMXs jrguaW"
         id="js-dom-to-png-average"
       >
         <ul
-          className="sc-kgoBCf crtYML"
+          className="sc-eNQAEJ fMMTQM"
         >
           <li
-            className="sc-ifAKCX jhSkFX"
+            className="sc-dnqmqq fIiAgx"
             width="33.333333333333336%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <div
-                className="sc-gzVnrw ifkkSL"
+                className="sc-gqjmRU gqMZxf"
               />
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -300,7 +269,7 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -310,14 +279,14 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -326,66 +295,52 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
                     193.8k
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#2FD566"
+                          transform="translate(1 2)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#2fd566",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#2fd566",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="shamrock"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#2FD566",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "shamrock",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          181
-                        </span>
-                        %
+                      <span>
+                        181
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -393,24 +348,17 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
             </div>
           </li>
           <li
-            className="sc-ifAKCX jhSkFX"
+            className="sc-dnqmqq fIiAgx"
             width="33.333333333333336%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <div
-                className="sc-gzVnrw ifkkSL"
+                className="sc-gqjmRU gqMZxf"
               />
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -420,7 +368,7 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -430,14 +378,14 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -446,66 +394,52 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
                     1,140
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#2FD566"
+                          transform="translate(1 2)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#2fd566",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#2fd566",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="shamrock"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#2FD566",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "shamrock",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          169
-                        </span>
-                        %
+                      <span>
+                        169
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -513,24 +447,17 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
             </div>
           </li>
           <li
-            className="sc-ifAKCX jhSkFX"
+            className="sc-dnqmqq fIiAgx"
             width="33.333333333333336%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <div
-                className="sc-gzVnrw ifkkSL"
+                className="sc-gqjmRU gqMZxf"
               />
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -540,7 +467,7 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -550,14 +477,14 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -566,66 +493,52 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
                     2,305
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#2FD566"
+                          transform="translate(1 2)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#2fd566",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#2fd566",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="shamrock"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#2FD566",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "shamrock",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          363
-                        </span>
-                        %
+                      <span>
+                        363
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -649,29 +562,21 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
     }
   >
     <div
-      style={
-        Object {
-          "background": "#fff",
-          "border": "1px solid #E2E8ED",
-          "borderRadius": "5px",
-          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
-          "margin": "0 0 2rem",
-        }
-      }
+      className="sc-cSHVUG jGZnBH"
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-kAzzGY jvIsFy"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-chPdSV gKzWYD"
         >
           <span
             style={
               Object {
-                "color": "#000",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 500,
+                "fontWeight": 700,
               }
             }
           >
@@ -680,31 +585,24 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
         </h2>
       </header>
       <div
-        className="sc-kGXeez hPKvAv"
+        className="sc-hMqMXs jrguaW"
         id="js-dom-to-png-average"
       >
         <ul
-          className="sc-kgoBCf crtYML"
+          className="sc-eNQAEJ fMMTQM"
         >
           <li
-            className="sc-ifAKCX jhSkFX"
+            className="sc-dnqmqq fIiAgx"
             width="33.333333333333336%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <div
-                className="sc-gzVnrw ifkkSL"
+                className="sc-gqjmRU gqMZxf"
               />
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -714,7 +612,7 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -724,14 +622,14 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -740,67 +638,52 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
                     85.0k
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#FF4040"
+                          transform="translate(10 9) rotate(-180)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#ff1e1e",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#ff1e1e",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="torchRed"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                          transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#FF1E1E",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "torchRed",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          21
-                        </span>
-                        %
+                      <span>
+                        21
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -808,24 +691,17 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
             </div>
           </li>
           <li
-            className="sc-ifAKCX jhSkFX"
+            className="sc-dnqmqq fIiAgx"
             width="33.333333333333336%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <div
-                className="sc-gzVnrw ifkkSL"
+                className="sc-gqjmRU gqMZxf"
               />
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -835,7 +711,7 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -845,14 +721,14 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -861,67 +737,52 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
                     502
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#FF4040"
+                          transform="translate(10 9) rotate(-180)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#ff1e1e",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#ff1e1e",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="torchRed"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                          transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#FF1E1E",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "torchRed",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          40
-                        </span>
-                        %
+                      <span>
+                        40
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -929,24 +790,17 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
             </div>
           </li>
           <li
-            className="sc-ifAKCX jhSkFX"
+            className="sc-dnqmqq fIiAgx"
             width="33.333333333333336%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <div
-                className="sc-gzVnrw ifkkSL"
+                className="sc-gqjmRU gqMZxf"
               />
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -956,7 +810,7 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -966,14 +820,14 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -982,67 +836,52 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
                     669
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#FF4040"
+                          transform="translate(10 9) rotate(-180)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#ff1e1e",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#ff1e1e",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="torchRed"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                          transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#FF1E1E",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "torchRed",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          39
-                        </span>
-                        %
+                      <span>
+                        39
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -1066,29 +905,21 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
     }
   >
     <div
-      style={
-        Object {
-          "background": "#fff",
-          "border": "1px solid #E2E8ED",
-          "borderRadius": "5px",
-          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
-          "margin": "0 0 2rem",
-        }
-      }
+      className="sc-cSHVUG jGZnBH"
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-kAzzGY jvIsFy"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-chPdSV gKzWYD"
         >
           <span
             style={
               Object {
-                "color": "#000",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 500,
+                "fontWeight": 700,
               }
             }
           >
@@ -1097,31 +928,24 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
         </h2>
       </header>
       <div
-        className="sc-kGXeez hPKvAv"
+        className="sc-hMqMXs jrguaW"
         id="js-dom-to-png-average"
       >
         <ul
-          className="sc-kgoBCf crtYML"
+          className="sc-eNQAEJ fMMTQM"
         >
           <li
-            className="sc-ifAKCX jhSkFX"
+            className="sc-dnqmqq fIiAgx"
             width="33.333333333333336%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <div
-                className="sc-gzVnrw ifkkSL"
+                className="sc-gqjmRU gqMZxf"
               />
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -1131,7 +955,7 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -1141,14 +965,14 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -1157,67 +981,52 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
                     84.4k
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#FF4040"
+                          transform="translate(10 9) rotate(-180)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#ff1e1e",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#ff1e1e",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="torchRed"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                          transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#FF1E1E",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "torchRed",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          36
-                        </span>
-                        %
+                      <span>
+                        36
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -1225,24 +1034,17 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
             </div>
           </li>
           <li
-            className="sc-ifAKCX jhSkFX"
+            className="sc-dnqmqq fIiAgx"
             width="33.333333333333336%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <div
-                className="sc-gzVnrw ifkkSL"
+                className="sc-gqjmRU gqMZxf"
               />
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -1252,7 +1054,7 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -1262,14 +1064,14 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -1278,67 +1080,52 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
                     572
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#FF4040"
+                          transform="translate(10 9) rotate(-180)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#ff1e1e",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#ff1e1e",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="torchRed"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                          transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#FF1E1E",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "torchRed",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          69
-                        </span>
-                        %
+                      <span>
+                        69
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -1346,24 +1133,17 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
             </div>
           </li>
           <li
-            className="sc-ifAKCX jhSkFX"
+            className="sc-dnqmqq fIiAgx"
             width="33.333333333333336%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <div
-                className="sc-gzVnrw ifkkSL"
+                className="sc-gqjmRU gqMZxf"
               />
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -1373,7 +1153,7 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -1383,14 +1163,14 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -1399,66 +1179,52 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
                     744
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#2FD566"
+                          transform="translate(1 2)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#2fd566",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#2fd566",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="shamrock"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#2FD566",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "shamrock",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          18
-                        </span>
-                        %
+                      <span>
+                        18
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -1475,15 +1241,15 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
 exports[`Snapshots Title should render title as if for app 1`] = `
 <span>
   <h2
-    className="sc-VigVT koZmyN"
+    className="sc-chPdSV gKzWYD"
   >
     <span
       style={
         Object {
-          "color": "#000",
+          "color": "#323b43",
           "fontFamily": "\\"Roboto\\", sans-serif",
           "fontSize": "1.25rem",
-          "fontWeight": 500,
+          "fontWeight": 700,
         }
       }
     >
@@ -1496,15 +1262,15 @@ exports[`Snapshots Title should render title as if for app 1`] = `
 exports[`Snapshots Title should render title as if for report 1`] = `
 <span>
   <h2
-    className="sc-VigVT koZmyN"
+    className="sc-chPdSV gKzWYD"
   >
     <span
       style={
         Object {
           "color": "#000",
           "fontFamily": "\\"Roboto\\", sans-serif",
-          "fontSize": "1.25rem",
-          "fontWeight": 500,
+          "fontSize": "1.5rem",
+          "fontWeight": 700,
         }
       }
     >

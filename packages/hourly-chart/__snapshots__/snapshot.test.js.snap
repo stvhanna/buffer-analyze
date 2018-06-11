@@ -524,31 +524,18 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
     }
   >
     <div
-      style={
-        Object {
-          "background": "#fff",
-          "border": "1px solid #E2E8ED",
-          "borderRadius": "5px",
-          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
-          "margin": "0 0 2rem",
-        }
-      }
+      className="sc-cSHVUG jGZnBH"
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-kAzzGY jvIsFy"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-chPdSV gKzWYD"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 700,
@@ -560,24 +547,12 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
         </h2>
       </header>
       <div
+        className="sc-eHgmQL klbVQT"
         id="js-dom-to-png-hourly-engagements"
-        style={
-          Object {
-            "margin": "0 auto",
-            "padding": "1.25rem",
-            "position": "relative",
-          }
-        }
       >
         <div>
           <section
-            style={
-              Object {
-                "alignItems": "center",
-                "display": "flex",
-                "padding": "1.25rem",
-              }
-            }
+            className="sc-kEYyzF bAVsYh"
           >
             <div
               style={
@@ -1128,11 +1103,7 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
               </div>
             </div>
             <span
-              style={
-                Object {
-                  "marginLeft": "0.75rem",
-                }
-              }
+              className="sc-kkGfuU bhEKda"
             >
               <button
                 aria-label={null}
@@ -1163,15 +1134,7 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
                 }
               >
                 <span
-                  style={
-                    Object {
-                      "border": "1px solid #ced7df",
-                      "borderRadius": "3px",
-                      "cursor": "pointer",
-                      "display": "inline-block",
-                      "padding": "7px 11px",
-                    }
-                  }
+                  className="sc-iAyFgw cAoSw"
                 >
                   <svg
                     height="100%"
@@ -1223,22 +1186,10 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
           </section>
           <div>
             <ul
-              style={
-                Object {
-                  "marginBottom": "1.5rem",
-                  "padding": "0 1.5rem",
-                  "textAlign": "center",
-                }
-              }
+              className="sc-eNQAEJ eYZMnU"
             >
               <li
-                style={
-                  Object {
-                    "display": "inline-block",
-                    "margin": "0 .8rem",
-                    "padding": ".8rem",
-                  }
-                }
+                className="sc-hMqMXs iwsyiO"
               >
                 <i
                   style={
@@ -1258,7 +1209,7 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
                     Object {
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontSize": "0.875rem",
                       "fontWeight": 400,
                     }
                   }
@@ -1267,13 +1218,7 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
                 </span>
               </li>
               <li
-                style={
-                  Object {
-                    "display": "inline-block",
-                    "margin": "0 .8rem",
-                    "padding": ".8rem",
-                  }
-                }
+                className="sc-hMqMXs iwsyiO"
               >
                 <i
                   style={
@@ -1293,7 +1238,7 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
                     Object {
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontSize": "0.875rem",
                       "fontWeight": 400,
                     }
                   }
@@ -1320,31 +1265,18 @@ exports[`Snapshots HourlyChart [TESTED] loading state 1`] = `
     }
   >
     <div
-      style={
-        Object {
-          "background": "#fff",
-          "border": "1px solid #E2E8ED",
-          "borderRadius": "5px",
-          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
-          "margin": "0 0 2rem",
-        }
-      }
+      className="sc-cSHVUG jGZnBH"
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-kAzzGY jvIsFy"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-chPdSV gKzWYD"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 700,
@@ -1356,110 +1288,108 @@ exports[`Snapshots HourlyChart [TESTED] loading state 1`] = `
         </h2>
       </header>
       <div
+        className="sc-eHgmQL klbVQT"
         id="js-dom-to-png-hourly-engagements"
-        style={
-          Object {
-            "margin": "0 auto",
-            "padding": "1.25rem",
-            "position": "relative",
-          }
-        }
       >
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "background": "rgba(255,255,255,.95)",
-              "border": "none",
-              "display": "flex",
-              "justifyContent": "center",
-              "maxHeight": "none",
-              "minHeight": "8rem",
-              "textAlign": "center",
-              "transition": "opacity 350ms ease-in-out",
-              "zIndex": 2,
-            }
-          }
+          className="sc-hSdWYo dJlGWD"
         >
           <div
             style={
               Object {
-                "background": "none",
-                "borderRadius": "2px",
-                "flex": 1,
-                "flexDirection": "row",
+                "alignItems": "center",
+                "background": "rgba(255,255,255,.95)",
+                "border": "none",
+                "display": "flex",
+                "justifyContent": "center",
+                "maxHeight": "none",
+                "minHeight": "8rem",
+                "textAlign": "center",
+                "transition": "opacity 350ms ease-in-out",
+                "zIndex": 2,
               }
             }
           >
             <div
               style={
                 Object {
-                  "textAlign": "center",
+                  "background": "none",
+                  "borderRadius": "2px",
+                  "flex": 1,
+                  "flexDirection": "row",
                 }
               }
             >
               <div
                 style={
                   Object {
-                    "height": "1rem",
-                    "margin": "0 auto 1rem auto",
-                    "position": "relative",
-                    "width": "1rem",
+                    "textAlign": "center",
                   }
                 }
               >
-                <span>
-                  <div
-                    style={
-                      Object {
-                        "height": "1rem",
-                        "left": 0,
-                        "opacity": 0,
-                        "position": "absolute",
-                        "top": 0,
-                        "transition": "all 1000ms ease-in-out",
-                        "width": "1rem",
-                      }
+                <div
+                  style={
+                    Object {
+                      "height": "1rem",
+                      "margin": "0 auto 1rem auto",
+                      "position": "relative",
+                      "width": "1rem",
                     }
-                  >
-                    <svg
-                      height="100%"
+                  }
+                >
+                  <span>
+                    <div
                       style={
                         Object {
-                          "fill": "#59626a",
                           "height": "1rem",
+                          "left": 0,
+                          "opacity": 0,
+                          "position": "absolute",
+                          "top": 0,
+                          "transition": "all 1000ms ease-in-out",
                           "width": "1rem",
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="shuttleGray"
+                      <svg
+                        height="100%"
+                        style={
+                          Object {
+                            "fill": "#59626a",
+                            "height": "1rem",
+                            "width": "1rem",
+                          }
+                        }
+                        version="1.1"
+                        viewBox="0 0 16 16"
+                        width="100%"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlnsXlink="http://www.w3.org/1999/xlink"
                       >
-                        <path
-                          d="M1.10241622,4.34038738 L7.75166358,7.40469806 C7.88821853,7.46764349 8.11178147,7.46764349 8.24833642,7.40469806 L14.8975838,4.34038738 C15.0341387,4.27744195 15.0341387,4.17446518 14.8975838,4.11151975 L8.24833642,1.04720908 C8.11178147,0.984263641 7.88821853,0.984263641 7.75166358,1.04720908 L1.10241622,4.11151975 C0.965861261,4.17446518 0.965861261,4.27744195 1.10241622,4.34038738"
-                        />
-                      </g>
-                    </svg>
-                  </div>
+                        <g
+                          className="shuttleGray"
+                        >
+                          <path
+                            d="M1.10241622,4.34038738 L7.75166358,7.40469806 C7.88821853,7.46764349 8.11178147,7.46764349 8.24833642,7.40469806 L14.8975838,4.34038738 C15.0341387,4.27744195 15.0341387,4.17446518 14.8975838,4.11151975 L8.24833642,1.04720908 C8.11178147,0.984263641 7.88821853,0.984263641 7.75166358,1.04720908 L1.10241622,4.11151975 C0.965861261,4.17446518 0.965861261,4.27744195 1.10241622,4.34038738"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </span>
+                </div>
+                <span
+                  style={
+                    Object {
+                      "color": "#59626a",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "1rem",
+                      "fontWeight": 400,
+                    }
+                  }
+                >
+                  Loading...
                 </span>
               </div>
-              <span
-                style={
-                  Object {
-                    "color": "#59626a",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "1rem",
-                    "fontWeight": 400,
-                  }
-                }
-              >
-                Loading...
-              </span>
             </div>
           </div>
         </div>
@@ -1479,31 +1409,18 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
     }
   >
     <div
-      style={
-        Object {
-          "background": "#fff",
-          "border": "1px solid #E2E8ED",
-          "borderRadius": "5px",
-          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
-          "margin": "0 0 2rem",
-        }
-      }
+      className="sc-cSHVUG jGZnBH"
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-kAzzGY jvIsFy"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-chPdSV gKzWYD"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 700,
@@ -1515,24 +1432,12 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
         </h2>
       </header>
       <div
+        className="sc-eHgmQL klbVQT"
         id="js-dom-to-png-hourly-engagements"
-        style={
-          Object {
-            "margin": "0 auto",
-            "padding": "1.25rem",
-            "position": "relative",
-          }
-        }
       >
         <div>
           <section
-            style={
-              Object {
-                "alignItems": "center",
-                "display": "flex",
-                "padding": "1.25rem",
-              }
-            }
+            className="sc-kEYyzF bAVsYh"
           >
             <div
               style={
@@ -2009,11 +1914,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
               </div>
             </div>
             <span
-              style={
-                Object {
-                  "marginLeft": "0.75rem",
-                }
-              }
+              className="sc-kkGfuU bhEKda"
             >
               <div
                 style={
@@ -2490,11 +2391,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                 </div>
               </div>
               <span
-                style={
-                  Object {
-                    "marginLeft": "0.75rem",
-                  }
-                }
+                className="sc-kkGfuU bhEKda"
               >
                 <button
                   aria-label={null}
@@ -2575,22 +2472,10 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
           </section>
           <div>
             <ul
-              style={
-                Object {
-                  "marginBottom": "1.5rem",
-                  "padding": "0 1.5rem",
-                  "textAlign": "center",
-                }
-              }
+              className="sc-eNQAEJ eYZMnU"
             >
               <li
-                style={
-                  Object {
-                    "display": "inline-block",
-                    "margin": "0 .8rem",
-                    "padding": ".8rem",
-                  }
-                }
+                className="sc-hMqMXs iwsyiO"
               >
                 <i
                   style={
@@ -2610,7 +2495,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                     Object {
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontSize": "0.875rem",
                       "fontWeight": 400,
                     }
                   }
@@ -2619,13 +2504,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                 </span>
               </li>
               <li
-                style={
-                  Object {
-                    "display": "inline-block",
-                    "margin": "0 .8rem",
-                    "padding": ".8rem",
-                  }
-                }
+                className="sc-hMqMXs iwsyiO"
               >
                 <i
                   style={
@@ -2645,7 +2524,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                     Object {
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontSize": "0.875rem",
                       "fontWeight": 400,
                     }
                   }
@@ -2654,13 +2533,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                 </span>
               </li>
               <li
-                style={
-                  Object {
-                    "display": "inline-block",
-                    "margin": "0 .8rem",
-                    "padding": ".8rem",
-                  }
-                }
+                className="sc-hMqMXs iwsyiO"
               >
                 <i
                   style={
@@ -2680,7 +2553,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                     Object {
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontSize": "0.875rem",
                       "fontWeight": 400,
                     }
                   }
@@ -2694,6 +2567,48 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
       </div>
     </div>
   </div>
+</span>
+`;
+
+exports[`Snapshots Title should render title as if for app 1`] = `
+<span>
+  <h2
+    className="sc-chPdSV gKzWYD"
+  >
+    <span
+      style={
+        Object {
+          "color": "#323b43",
+          "fontFamily": "\\"Roboto\\", sans-serif",
+          "fontSize": "1.25rem",
+          "fontWeight": 700,
+        }
+      }
+    >
+      Hourly engagements
+    </span>
+  </h2>
+</span>
+`;
+
+exports[`Snapshots Title should render title as if for report 1`] = `
+<span>
+  <h2
+    className="sc-chPdSV gKzWYD"
+  >
+    <span
+      style={
+        Object {
+          "color": "#000",
+          "fontFamily": "\\"Roboto\\", sans-serif",
+          "fontSize": "1.5rem",
+          "fontWeight": 700,
+        }
+      }
+    >
+      Hourly engagements
+    </span>
+  </h2>
 </span>
 `;
 

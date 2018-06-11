@@ -10,29 +10,21 @@ exports[`Snapshots AudienceChart [TESTED] Should render 1`] = `
     }
   >
     <div
-      style={
-        Object {
-          "background": "#fff",
-          "border": "1px solid #E2E8ED",
-          "borderRadius": "5px",
-          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
-          "margin": "0 0 2rem",
-        }
-      }
+      className="sc-cSHVUG jGZnBH"
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-kAzzGY jvIsFy"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-chPdSV gKzWYD"
         >
           <span
             style={
               Object {
-                "color": "#000",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 500,
+                "fontWeight": 700,
               }
             }
           >
@@ -41,11 +33,11 @@ exports[`Snapshots AudienceChart [TESTED] Should render 1`] = `
         </h2>
       </header>
       <div
-        className="sc-kGXeez bXYitt"
+        className="sc-hMqMXs fQCBYm"
       >
         <div>
           <div
-            className="sc-kgoBCf beOYFC"
+            className="sc-eNQAEJ jZNGcd"
           >
             <div
               className="dropdown dropdownContainer"

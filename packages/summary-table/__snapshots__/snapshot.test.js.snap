@@ -10,29 +10,21 @@ exports[`Snapshots SummaryTable should render a "no data" state 1`] = `
     }
   >
     <div
-      style={
-        Object {
-          "background": "#fff",
-          "border": "1px solid #E2E8ED",
-          "borderRadius": "5px",
-          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
-          "margin": "0 0 2rem",
-        }
-      }
+      className="sc-cSHVUG jGZnBH"
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-kAzzGY jvIsFy"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-chPdSV gKzWYD"
         >
           <span
             style={
               Object {
-                "color": "#000",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 500,
+                "fontWeight": 700,
               }
             }
           >
@@ -41,13 +33,8 @@ exports[`Snapshots SummaryTable should render a "no data" state 1`] = `
         </h2>
       </header>
       <div
+        className="sc-hMqMXs bRQIel"
         id="js-dom-to-png-summary"
-        style={
-          Object {
-            "padding": "1.5rem",
-            "position": "relative",
-          }
-        }
       >
         <div
           className="sc-bdVaJa fWzNTu"
@@ -92,29 +79,21 @@ exports[`Snapshots SummaryTable should render a loading state 1`] = `
     }
   >
     <div
-      style={
-        Object {
-          "background": "#fff",
-          "border": "1px solid #E2E8ED",
-          "borderRadius": "5px",
-          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
-          "margin": "0 0 2rem",
-        }
-      }
+      className="sc-cSHVUG jGZnBH"
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-kAzzGY jvIsFy"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-chPdSV gKzWYD"
         >
           <span
             style={
               Object {
-                "color": "#000",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 500,
+                "fontWeight": 700,
               }
             }
           >
@@ -123,13 +102,8 @@ exports[`Snapshots SummaryTable should render a loading state 1`] = `
         </h2>
       </header>
       <div
+        className="sc-hMqMXs bRQIel"
         id="js-dom-to-png-summary"
-        style={
-          Object {
-            "padding": "1.5rem",
-            "position": "relative",
-          }
-        }
       >
         <div
           style={
@@ -245,29 +219,21 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
     }
   >
     <div
-      style={
-        Object {
-          "background": "#fff",
-          "border": "1px solid #E2E8ED",
-          "borderRadius": "5px",
-          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
-          "margin": "0 0 2rem",
-        }
-      }
+      className="sc-cSHVUG jGZnBH"
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-kAzzGY jvIsFy"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-chPdSV gKzWYD"
         >
           <span
             style={
               Object {
-                "color": "#000",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 500,
+                "fontWeight": 700,
               }
             }
           >
@@ -276,40 +242,21 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
         </h2>
       </header>
       <div
+        className="sc-hMqMXs bRQIel"
         id="js-dom-to-png-summary"
-        style={
-          Object {
-            "padding": "1.5rem",
-            "position": "relative",
-          }
-        }
       >
         <ul
-          style={
-            Object {
-              "display": "flex",
-              "flexWrap": "wrap",
-              "margin": "0 auto",
-              "padding": "0",
-            }
-          }
+          className="sc-eNQAEJ fMMTQM"
         >
           <li
-            className="sc-ifAKCX dYwfOF"
+            className="sc-dnqmqq bQsLfU"
             width="25%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -319,7 +266,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -329,14 +276,14 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -345,66 +292,52 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                     150
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#2FD566"
+                          transform="translate(1 2)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#2fd566",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#2fd566",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="shamrock"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#2FD566",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "shamrock",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          25
-                        </span>
-                        %
+                      <span>
+                        25
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -412,21 +345,14 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
             </div>
           </li>
           <li
-            className="sc-ifAKCX dYwfOF"
+            className="sc-dnqmqq bQsLfU"
             width="25%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -436,7 +362,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -446,14 +372,14 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -462,67 +388,52 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                     901
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#FF4040"
+                          transform="translate(10 9) rotate(-180)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#ff1e1e",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#ff1e1e",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="torchRed"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                          transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#FF1E1E",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "torchRed",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          39
-                        </span>
-                        %
+                      <span>
+                        39
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -530,21 +441,14 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
             </div>
           </li>
           <li
-            className="sc-ifAKCX dYwfOF"
+            className="sc-dnqmqq bQsLfU"
             width="25%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -554,7 +458,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -564,14 +468,14 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -580,67 +484,52 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                     1,010
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#FF4040"
+                          transform="translate(10 9) rotate(-180)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#ff1e1e",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#ff1e1e",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="torchRed"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                          transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#FF1E1E",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "torchRed",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          55
-                        </span>
-                        %
+                      <span>
+                        55
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -648,21 +537,14 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
             </div>
           </li>
           <li
-            className="sc-ifAKCX dYwfOF"
+            className="sc-dnqmqq bQsLfU"
             width="25%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -672,7 +554,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -682,14 +564,14 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -698,67 +580,52 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                     963.4k
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#FF4040"
+                          transform="translate(10 9) rotate(-180)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#ff1e1e",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#ff1e1e",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="torchRed"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                          transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#FF1E1E",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "torchRed",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          26
-                        </span>
-                        %
+                      <span>
+                        26
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -766,21 +633,14 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
             </div>
           </li>
           <li
-            className="sc-ifAKCX dYwfOF"
+            className="sc-dnqmqq bQsLfU"
             width="25%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -790,7 +650,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -800,14 +660,14 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -816,67 +676,52 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                     0
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#CBCBCB"
+                          transform="translate(9 10) scale(-1 1) rotate(-90)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#59626a",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#666c72",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="shuttleGray"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                          transform="translate(8.118778, 7.993958) scale(1, -1) rotate(90.000000) translate(-8.118778, -7.993958) "
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#8D969E",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "#8D969E",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          0
-                        </span>
-                        %
+                      <span>
+                        0
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -884,21 +729,14 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
             </div>
           </li>
           <li
-            className="sc-ifAKCX dYwfOF"
+            className="sc-dnqmqq bQsLfU"
             width="25%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -908,7 +746,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -918,14 +756,14 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -934,67 +772,52 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                     28.8k
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#FF4040"
+                          transform="translate(10 9) rotate(-180)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#ff1e1e",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#ff1e1e",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="torchRed"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                          transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#FF1E1E",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "torchRed",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          33
-                        </span>
-                        %
+                      <span>
+                        33
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -1002,21 +825,14 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
             </div>
           </li>
           <li
-            className="sc-ifAKCX dYwfOF"
+            className="sc-dnqmqq bQsLfU"
             width="25%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -1026,7 +842,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -1036,14 +852,14 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -1052,67 +868,52 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                     2,313
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#FF4040"
+                          transform="translate(10 9) rotate(-180)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#ff1e1e",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#ff1e1e",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="torchRed"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                          transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#FF1E1E",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "torchRed",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          28
-                        </span>
-                        %
+                      <span>
+                        28
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -1120,21 +921,14 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
             </div>
           </li>
           <li
-            className="sc-ifAKCX dYwfOF"
+            className="sc-dnqmqq bQsLfU"
             width="25%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -1144,7 +938,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -1154,14 +948,14 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -1170,67 +964,52 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                     658
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#FF4040"
+                          transform="translate(10 9) rotate(-180)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#ff1e1e",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#ff1e1e",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="torchRed"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                          transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#FF1E1E",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "torchRed",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          9
-                        </span>
-                        %
+                      <span>
+                        9
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -1254,29 +1033,21 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
     }
   >
     <div
-      style={
-        Object {
-          "background": "#fff",
-          "border": "1px solid #E2E8ED",
-          "borderRadius": "5px",
-          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
-          "margin": "0 0 2rem",
-        }
-      }
+      className="sc-cSHVUG jGZnBH"
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-kAzzGY jvIsFy"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-chPdSV gKzWYD"
         >
           <span
             style={
               Object {
-                "color": "#000",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 500,
+                "fontWeight": 700,
               }
             }
           >
@@ -1285,40 +1056,21 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
         </h2>
       </header>
       <div
+        className="sc-hMqMXs bRQIel"
         id="js-dom-to-png-summary"
-        style={
-          Object {
-            "padding": "1.5rem",
-            "position": "relative",
-          }
-        }
       >
         <ul
-          style={
-            Object {
-              "display": "flex",
-              "flexWrap": "wrap",
-              "margin": "0 auto",
-              "padding": "0",
-            }
-          }
+          className="sc-eNQAEJ fMMTQM"
         >
           <li
-            className="sc-ifAKCX ezERtX"
+            className="sc-dnqmqq ehjrxt"
             width="20%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -1328,7 +1080,7 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -1338,14 +1090,14 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -1354,66 +1106,52 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
                     150
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#2FD566"
+                          transform="translate(1 2)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#2fd566",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#2fd566",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="shamrock"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#2FD566",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "shamrock",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          25
-                        </span>
-                        %
+                      <span>
+                        25
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -1421,21 +1159,14 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
             </div>
           </li>
           <li
-            className="sc-ifAKCX ezERtX"
+            className="sc-dnqmqq ehjrxt"
             width="20%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -1445,7 +1176,7 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -1455,14 +1186,14 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -1471,67 +1202,52 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
                     901
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#FF4040"
+                          transform="translate(10 9) rotate(-180)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#ff1e1e",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#ff1e1e",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="torchRed"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                          transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#FF1E1E",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "torchRed",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          39
-                        </span>
-                        %
+                      <span>
+                        39
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -1539,21 +1255,14 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
             </div>
           </li>
           <li
-            className="sc-ifAKCX ezERtX"
+            className="sc-dnqmqq ehjrxt"
             width="20%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -1563,7 +1272,7 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -1573,14 +1282,14 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -1589,67 +1298,52 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
                     1,010
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#FF4040"
+                          transform="translate(10 9) rotate(-180)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#ff1e1e",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#ff1e1e",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="torchRed"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                          transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#FF1E1E",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "torchRed",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          55
-                        </span>
-                        %
+                      <span>
+                        55
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -1657,21 +1351,14 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
             </div>
           </li>
           <li
-            className="sc-ifAKCX ezERtX"
+            className="sc-dnqmqq ehjrxt"
             width="20%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -1681,7 +1368,7 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -1691,14 +1378,14 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -1707,67 +1394,52 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
                     963.4k
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#FF4040"
+                          transform="translate(10 9) rotate(-180)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#ff1e1e",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#ff1e1e",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="torchRed"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                          transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#FF1E1E",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "torchRed",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          26
-                        </span>
-                        %
+                      <span>
+                        26
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -1775,21 +1447,14 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
             </div>
           </li>
           <li
-            className="sc-ifAKCX ezERtX"
+            className="sc-dnqmqq ehjrxt"
             width="20%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -1799,7 +1464,7 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -1809,14 +1474,14 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -1825,67 +1490,52 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
                     0
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#CBCBCB"
+                          transform="translate(9 10) scale(-1 1) rotate(-90)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#59626a",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#666c72",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="shuttleGray"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                          transform="translate(8.118778, 7.993958) scale(1, -1) rotate(90.000000) translate(-8.118778, -7.993958) "
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#8D969E",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "#8D969E",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          0
-                        </span>
-                        %
+                      <span>
+                        0
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -1909,29 +1559,21 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
     }
   >
     <div
-      style={
-        Object {
-          "background": "#fff",
-          "border": "1px solid #E2E8ED",
-          "borderRadius": "5px",
-          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
-          "margin": "0 0 2rem",
-        }
-      }
+      className="sc-cSHVUG jGZnBH"
     >
       <header
-        className="sc-gqjmRU gcxEBF"
+        className="sc-kAzzGY jvIsFy"
       >
         <h2
-          className="sc-VigVT koZmyN"
+          className="sc-chPdSV gKzWYD"
         >
           <span
             style={
               Object {
-                "color": "#000",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 500,
+                "fontWeight": 700,
               }
             }
           >
@@ -1940,40 +1582,21 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
         </h2>
       </header>
       <div
+        className="sc-hMqMXs bRQIel"
         id="js-dom-to-png-summary"
-        style={
-          Object {
-            "padding": "1.5rem",
-            "position": "relative",
-          }
-        }
       >
         <ul
-          style={
-            Object {
-              "display": "flex",
-              "flexWrap": "wrap",
-              "margin": "0 auto",
-              "padding": "0",
-            }
-          }
+          className="sc-eNQAEJ fMMTQM"
         >
           <li
-            className="sc-ifAKCX emgTIV"
+            className="sc-dnqmqq eJFFuE"
             width="33%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -1983,7 +1606,7 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -1993,14 +1616,14 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -2009,66 +1632,52 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
                     150
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#2FD566"
+                          transform="translate(1 2)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#2fd566",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#2fd566",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="shamrock"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#2FD566",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "shamrock",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          25
-                        </span>
-                        %
+                      <span>
+                        25
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -2076,21 +1685,14 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
             </div>
           </li>
           <li
-            className="sc-ifAKCX emgTIV"
+            className="sc-dnqmqq eJFFuE"
             width="33%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -2100,7 +1702,7 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -2110,14 +1712,14 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -2126,67 +1728,52 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
                     901
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#FF4040"
+                          transform="translate(10 9) rotate(-180)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#ff1e1e",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#ff1e1e",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="torchRed"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                          transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#FF1E1E",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "torchRed",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          39
-                        </span>
-                        %
+                      <span>
+                        39
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -2194,21 +1781,14 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
             </div>
           </li>
           <li
-            className="sc-ifAKCX emgTIV"
+            className="sc-dnqmqq eJFFuE"
             width="33%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -2218,7 +1798,7 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -2228,14 +1808,14 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -2244,67 +1824,52 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
                     1,010
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#FF4040"
+                          transform="translate(10 9) rotate(-180)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#ff1e1e",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#ff1e1e",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="torchRed"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                          transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#FF1E1E",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "torchRed",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          55
-                        </span>
-                        %
+                      <span>
+                        55
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -2312,21 +1877,14 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
             </div>
           </li>
           <li
-            className="sc-ifAKCX emgTIV"
+            className="sc-dnqmqq eJFFuE"
             width="33%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -2336,7 +1894,7 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -2346,14 +1904,14 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -2362,67 +1920,52 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
                     1,010
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#FF4040"
+                          transform="translate(10 9) rotate(-180)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#ff1e1e",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#ff1e1e",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="torchRed"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                          transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#FF1E1E",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "torchRed",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          55
-                        </span>
-                        %
+                      <span>
+                        55
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -2430,21 +1973,14 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
             </div>
           </li>
           <li
-            className="sc-ifAKCX emgTIV"
+            className="sc-dnqmqq eJFFuE"
             width="33%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -2454,7 +1990,7 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -2464,14 +2000,14 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -2480,67 +2016,52 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
                     963.4k
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#FF4040"
+                          transform="translate(10 9) rotate(-180)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#ff1e1e",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#ff1e1e",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="torchRed"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                          transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#FF1E1E",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "torchRed",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          26
-                        </span>
-                        %
+                      <span>
+                        26
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -2548,21 +2069,14 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
             </div>
           </li>
           <li
-            className="sc-ifAKCX emgTIV"
+            className="sc-dnqmqq eJFFuE"
             width="33%"
           >
             <div
-              className="sc-EHOje YINzU"
+              className="sc-iwsKbI btmaIR"
             >
               <span
-                style={
-                  Object {
-                    "display": "block",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 600,
-                    "marginTop": "15px",
-                  }
-                }
+                className="sc-htoDjs rBkkQ"
               >
                 <span
                   data-tip={null}
@@ -2572,7 +2086,7 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
@@ -2582,14 +2096,14 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
                 </span>
               </span>
               <div
-                className="sc-bZQynM hCNVyQ"
+                className="sc-gZMcBi jCgfWF"
               >
                 <span
                   style={
                     Object {
                       "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "fontWeight": 700,
                     }
                   }
@@ -2598,67 +2112,52 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
                     0
                   </span>
                 </span>
-                <div>
-                  <span
-                    style={
-                      Object {
-                        "display": "inline-block",
-                        "height": "1rem",
-                        "marginLeft": "10px",
-                      }
-                    }
+                <div
+                  className="sc-EHOje faGiPL"
+                >
+                  <div
+                    className="sc-bZQynM hNHnok"
                   >
-                    <svg
-                      height="100%"
+                    <div
+                      className="sc-ifAKCX imANia"
+                    >
+                      <svg
+                        fill="none"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        width="11"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          fill="white"
+                          height="11"
+                          width="11"
+                        />
+                        <path
+                          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                          fill="#CBCBCB"
+                          transform="translate(9 10) scale(-1 1) rotate(-90)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    className="sc-gzVnrw fXIzxI"
+                  >
+                    <span
                       style={
                         Object {
-                          "fill": "#59626a",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "color": "#666c72",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "1rem",
+                          "fontWeight": 700,
                         }
                       }
-                      version="1.1"
-                      viewBox="0 0 16 16"
-                      width="100%"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <g
-                        className="shuttleGray"
-                      >
-                        <path
-                          d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                          transform="translate(8.118778, 7.993958) scale(1, -1) rotate(90.000000) translate(-8.118778, -7.993958) "
-                        />
-                      </g>
-                    </svg>
-                  </span>
-                  <div
-                    style={
-                      Object {
-                        "color": "#8D969E",
-                        "display": "inline-block",
-                        "fontSize": "18px",
-                        "fontWeight": 600,
-                        "marginLeft": "5px",
-                      }
-                    }
-                  >
-                    <span>
-                      <span
-                        style={
-                          Object {
-                            "color": "#8D969E",
-                            "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "1.25rem",
-                          }
-                        }
-                      >
-                        <span>
-                          0
-                        </span>
-                        %
+                      <span>
+                        0
                       </span>
+                      %
                     </span>
                   </div>
                 </div>
@@ -2675,15 +2174,15 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
 exports[`Snapshots Title should render title as if for app 1`] = `
 <span>
   <h2
-    className="sc-VigVT koZmyN"
+    className="sc-chPdSV gKzWYD"
   >
     <span
       style={
         Object {
-          "color": "#000",
+          "color": "#323b43",
           "fontFamily": "\\"Roboto\\", sans-serif",
           "fontSize": "1.25rem",
-          "fontWeight": 500,
+          "fontWeight": 700,
         }
       }
     >
@@ -2696,15 +2195,15 @@ exports[`Snapshots Title should render title as if for app 1`] = `
 exports[`Snapshots Title should render title as if for report 1`] = `
 <span>
   <h2
-    className="sc-VigVT koZmyN"
+    className="sc-chPdSV gKzWYD"
   >
     <span
       style={
         Object {
           "color": "#000",
           "fontFamily": "\\"Roboto\\", sans-serif",
-          "fontSize": "1.25rem",
-          "fontWeight": 500,
+          "fontSize": "1.5rem",
+          "fontWeight": 700,
         }
       }
     >

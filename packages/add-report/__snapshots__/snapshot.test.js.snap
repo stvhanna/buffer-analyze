@@ -4,11 +4,11 @@ exports[`Snapshots AddReport opened 1`] = `
 <span>
   <div>
     <span
-      className="sc-cJSrbW bXtoeK"
+      className="sc-jbKcbu ibdBBv"
     />
     <span>
       <button
-        className="sc-gZMcBi XVdVZ"
+        className="sc-jzJRlG jRwwvf"
         onClick={[Function]}
       >
         <span
@@ -33,11 +33,11 @@ exports[`Snapshots AddReport unopened 1`] = `
 <span>
   <div>
     <span
-      className="sc-cJSrbW bXtoeK"
+      className="sc-jbKcbu ibdBBv"
     />
     <span>
       <button
-        className="sc-gZMcBi XVdVZ"
+        className="sc-jzJRlG jRwwvf"
         onClick={[Function]}
       >
         <span
@@ -77,10 +77,10 @@ exports[`Snapshots Modal open 1`] = `
       }
     />
     <section
-      className="sc-jTzLTM jvovlK"
+      className="sc-kgoBCf gengDk"
     >
       <section
-        className="sc-gisBJw gjYvZH"
+        className="sc-ksYbfQ jFhNJb"
       >
         <span
           style={
@@ -95,15 +95,15 @@ exports[`Snapshots Modal open 1`] = `
           Add to a new report
         </span>
         <section
-          className="sc-cHGsZl jQfaSJ"
+          className="sc-frDJqD khZSpi"
         >
           <input
-            className="sc-TOsTZ Dvnji"
+            className="sc-kvZOFW dsClWV"
             placeholder="Please enter title here"
             type="text"
           />
           <button
-            className="sc-gZMcBi XVdVZ"
+            className="sc-jzJRlG jRwwvf"
             onClick={[Function]}
           >
             <span
@@ -135,13 +135,13 @@ exports[`Snapshots Modal open 1`] = `
           </span>
         </div>
         <section
-          className="sc-kjoXOD hFqzkC"
+          className="sc-hmzhuo jmZMUt"
         >
           <ol
-            className="sc-fAjcbJ hzqyVz"
+            className="sc-kgAjT kiuMLo"
           >
             <li
-              className="sc-eqIVtm ixpHoA"
+              className="sc-TOsTZ cNGXka"
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
             >
@@ -175,20 +175,20 @@ exports[`Snapshots Modal open 1`] = `
                 }
               >
                 <span
-                  className="sc-fBuWsC OMuqJ"
+                  className="sc-gisBJw gAHGNV"
                 >
                   <span
                     style={
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 700,
                       }
                     }
                   >
                     <span
-                      className="sc-kgoBCf jkXBml"
+                      className="sc-eNQAEJ jAVGYi"
                     >
                       Weekly Sync Report
                     </span>
@@ -198,13 +198,13 @@ exports[`Snapshots Modal open 1`] = `
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
                   >
                     <span
-                      className="sc-jhAzac fTpAZC"
+                      className="sc-caSCKo PKwDn"
                     >
                       Past 7 Days
                     </span>
@@ -213,7 +213,7 @@ exports[`Snapshots Modal open 1`] = `
               </button>
             </li>
             <li
-              className="sc-eqIVtm ixpHoA"
+              className="sc-TOsTZ cNGXka"
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
             >
@@ -247,20 +247,20 @@ exports[`Snapshots Modal open 1`] = `
                 }
               >
                 <span
-                  className="sc-fBuWsC OMuqJ"
+                  className="sc-gisBJw gAHGNV"
                 >
                   <span
                     style={
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 700,
                       }
                     }
                   >
                     <span
-                      className="sc-kgoBCf jkXBml"
+                      className="sc-eNQAEJ jAVGYi"
                     >
                       client social media campaign
                     </span>
@@ -270,13 +270,13 @@ exports[`Snapshots Modal open 1`] = `
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
                   >
                     <span
-                      className="sc-jhAzac fTpAZC"
+                      className="sc-caSCKo PKwDn"
                     >
                       Past 7 Days
                     </span>
@@ -285,7 +285,7 @@ exports[`Snapshots Modal open 1`] = `
               </button>
             </li>
             <li
-              className="sc-eqIVtm ixpHoA"
+              className="sc-TOsTZ cNGXka"
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
             >
@@ -319,20 +319,20 @@ exports[`Snapshots Modal open 1`] = `
                 }
               >
                 <span
-                  className="sc-fBuWsC OMuqJ"
+                  className="sc-gisBJw gAHGNV"
                 >
                   <span
                     style={
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 700,
                       }
                     }
                   >
                     <span
-                      className="sc-kgoBCf jkXBml"
+                      className="sc-eNQAEJ jAVGYi"
                     >
                       client social media campaign
                     </span>
@@ -342,13 +342,13 @@ exports[`Snapshots Modal open 1`] = `
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
                   >
                     <span
-                      className="sc-jhAzac fTpAZC"
+                      className="sc-caSCKo PKwDn"
                     >
                       Past 7 Days
                     </span>
@@ -357,7 +357,7 @@ exports[`Snapshots Modal open 1`] = `
               </button>
             </li>
             <li
-              className="sc-eqIVtm ixpHoA"
+              className="sc-TOsTZ cNGXka"
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
             >
@@ -391,20 +391,20 @@ exports[`Snapshots Modal open 1`] = `
                 }
               >
                 <span
-                  className="sc-fBuWsC OMuqJ"
+                  className="sc-gisBJw gAHGNV"
                 >
                   <span
                     style={
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 700,
                       }
                     }
                   >
                     <span
-                      className="sc-kgoBCf jkXBml"
+                      className="sc-eNQAEJ jAVGYi"
                     >
                       client social media campaign
                     </span>
@@ -414,13 +414,13 @@ exports[`Snapshots Modal open 1`] = `
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
                   >
                     <span
-                      className="sc-jhAzac fTpAZC"
+                      className="sc-caSCKo PKwDn"
                     >
                       Past 7 Days
                     </span>
@@ -429,7 +429,7 @@ exports[`Snapshots Modal open 1`] = `
               </button>
             </li>
             <li
-              className="sc-eqIVtm ixpHoA"
+              className="sc-TOsTZ cNGXka"
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
             >
@@ -463,20 +463,20 @@ exports[`Snapshots Modal open 1`] = `
                 }
               >
                 <span
-                  className="sc-fBuWsC OMuqJ"
+                  className="sc-gisBJw gAHGNV"
                 >
                   <span
                     style={
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 700,
                       }
                     }
                   >
                     <span
-                      className="sc-kgoBCf jkXBml"
+                      className="sc-eNQAEJ jAVGYi"
                     >
                       client social media campaign
                     </span>
@@ -486,13 +486,13 @@ exports[`Snapshots Modal open 1`] = `
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
                   >
                     <span
-                      className="sc-jhAzac fTpAZC"
+                      className="sc-caSCKo PKwDn"
                     >
                       Past 7 Days
                     </span>
@@ -501,7 +501,7 @@ exports[`Snapshots Modal open 1`] = `
               </button>
             </li>
             <li
-              className="sc-eqIVtm ixpHoA"
+              className="sc-TOsTZ cNGXka"
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
             >
@@ -535,20 +535,20 @@ exports[`Snapshots Modal open 1`] = `
                 }
               >
                 <span
-                  className="sc-fBuWsC OMuqJ"
+                  className="sc-gisBJw gAHGNV"
                 >
                   <span
                     style={
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 700,
                       }
                     }
                   >
                     <span
-                      className="sc-kgoBCf jkXBml"
+                      className="sc-eNQAEJ jAVGYi"
                     >
                       client social media campaign
                     </span>
@@ -558,13 +558,13 @@ exports[`Snapshots Modal open 1`] = `
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
                   >
                     <span
-                      className="sc-jhAzac fTpAZC"
+                      className="sc-caSCKo PKwDn"
                     >
                       Past 7 Days
                     </span>
@@ -573,7 +573,7 @@ exports[`Snapshots Modal open 1`] = `
               </button>
             </li>
             <li
-              className="sc-eqIVtm ixpHoA"
+              className="sc-TOsTZ cNGXka"
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
             >
@@ -607,20 +607,20 @@ exports[`Snapshots Modal open 1`] = `
                 }
               >
                 <span
-                  className="sc-fBuWsC OMuqJ"
+                  className="sc-gisBJw gAHGNV"
                 >
                   <span
                     style={
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 700,
                       }
                     }
                   >
                     <span
-                      className="sc-kgoBCf jkXBml"
+                      className="sc-eNQAEJ jAVGYi"
                     >
                       client social media campaign
                     </span>
@@ -630,13 +630,13 @@ exports[`Snapshots Modal open 1`] = `
                       Object {
                         "color": "#59626a",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "0.75rem",
+                        "fontSize": "0.875rem",
                         "fontWeight": 400,
                       }
                     }
                   >
                     <span
-                      className="sc-jhAzac fTpAZC"
+                      className="sc-caSCKo PKwDn"
                     >
                       Past 7 Days
                     </span>
