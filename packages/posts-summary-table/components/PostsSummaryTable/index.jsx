@@ -23,7 +23,7 @@ const Grid = styled.ul`
 
 const GridContainer = styled.div`
   position: relative;
-  padding: 1.5rem;
+  padding: 0.75rem 1.5rem 1rem;
 `;
 
 export const Table = ({ metrics }) =>
