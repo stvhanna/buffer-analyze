@@ -29,7 +29,7 @@ const Container = styled.div`
 
 const ChartContainer = styled.div`
   position: relative;
-  padding: 1.5rem;
+  padding: 0.5rem 1.5rem 1.75rem;
   line-height: 1.5rem;
 `;
 
