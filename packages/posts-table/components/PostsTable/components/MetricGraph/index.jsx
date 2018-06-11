@@ -1,14 +1,38 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled, { css } from 'styled-components';
 import { TruncatedNumber } from '@bufferapp/analyze-shared-components';
 import Text from '@bufferapp/components/Text';
 
-import {
-  metricBarGraph,
-  metricBarLabel,
-  metricBarGraphContainer,
-} from '../../styles.less';
+const MetricBarGraph = styled.div`
+  background-color: #666c72;
+  // we need this to render bars in pdf
+  -webkit-print-color-adjust: exact;
+  display: block;
+  height: 7px;
+  border-radius: 2px;
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 0 0 0 0.5rem;
+  background-color: ${props => props.color};
+  width: ${props => props.percentage}%;
 
+  &:hover {
+    cursor: default;
+  }
+`;
+
+const MetricBarGraphContainer = styled.div`
+  position: relative;
+  display: inline-block;
+  // This is the maximum for each bar graph
+  width: 80%;
+  margin: 0 0 0.75rem;
+`;
+
+const MetricBarLabel = styled.div`
+  margin: 0 0 0.25rem;
+`;
 
 const MetricGraph = ({ metric }) => {
   const { maxValue, value, color, key, label } = metric;
@@ -19,19 +43,19 @@ const MetricGraph = ({ metric }) => {
     percentage *= 100;
   }
 
-  const metricStyle = {
-    backgroundColor: color,
-    width: `${percentage}%`,
-  };
   return (
     <div key={key}>
-      <div className={metricBarGraphContainer}>
-        <span className={metricBarLabel}>
-          <Text size="extra-small" weight="bold"><TruncatedNumber>{value}</TruncatedNumber></Text>
+      <MetricBarGraphContainer>
+        <MetricBarLabel>
+          <Text size="extra-small" weight="bold" color="outerSpace"><TruncatedNumber>{value}</TruncatedNumber></Text>
           <Text size="extra-small"> {label.toLowerCase()}</Text>
-        </span>
-        <span data-tip={label} className={metricBarGraph} style={metricStyle} />
-      </div>
+        </MetricBarLabel>
+        <MetricBarGraph
+          data-tip={label}
+          color={color}
+          percentage={percentage}
+        />
+      </MetricBarGraphContainer>
     </div>
   );
 };

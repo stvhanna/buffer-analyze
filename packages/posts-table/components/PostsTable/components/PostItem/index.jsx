@@ -1,31 +1,98 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment-timezone';
-
+import styled from 'styled-components';
 import {
   Text,
 } from '@bufferapp/components';
-
-
 import MetricGraph from '../MetricGraph';
 
-import {
-  columnContainer,
-  metricColumn,
-  contentColumn,
-  contentDate,
-  contentContainer,
-  tweetServiceLinkClass,
-  mediaThumbnail,
-  postMeta,
-  postContent,
-  contentLink,
-  viewPostLinkClass,
-} from '../../styles.less';
+const ColumnContainer = styled.li`
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border-bottom: dotted 1px #CED7DF;
+  
+  &:last-child {
+    border-bottom: 0 none;
+  }
+`;
+
+const MetricGraphWrapper = styled.div`
+  display: inline-block;
+  text-decoration: none;
+  color: #323b43;
+  padding: 1rem 1rem 1.5rem 0;
+  width: 25%;
+  padding-left: 1rem;
+`;
+
+const ContentColumn = styled.div`
+  display: inline-block;
+  text-decoration: none;
+  color: #323b43;
+  padding: 1rem 1rem 1rem 0;
+  width: 75%;
+  padding-right: 1rem;
+  border-right: 1px dotted #CED7DF;
+`;
+
+const ContentDate = styled.div`
+  color: #666c72;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+`;
+
+const ContentContainer = styled.div`
+  overflow: hidden;
+  color: #323b43;
+  
+  a,
+  a:link,
+  a:visited,
+  a:hover {
+    color: #168eea;
+  }
+`;
+
+const MediaThumbnail = styled.img`
+  width: 5rem;
+  min-width: 5rem;
+  border-radius: 3px;
+  margin: 0.25rem 1rem 0 0;
+`;
+
+const PostMeta = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 0.5rem;
+`;
+
+const PostContent = styled.div`
+  display: flex;
+  align-items: flex-start;
+  padding-top: 0px;
+`;
+
+const ContentLink = styled.div`
+  margin: -2px 0 0;
+`;
+
+const ViewPostLinkClass = styled.a`
+  display: inline-block;
+  padding-top: 0.2rem;
+  color: #168eea;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
 
 const Attachment = ({ type, media }) => {
   if (['picture', 'photo', 'video', 'image'].includes(type) && media) {
-    return <img alt="" crossOrigin="Anonymous" className={mediaThumbnail} src={`https://safeimage.buffer.com/${media.thumbnail}`} />;
+    return <MediaThumbnail alt="" crossOrigin="Anonymous" src={`https://safeimage.buffer.com/${media.thumbnail}`} />;
   }
   return null;
 };
@@ -47,9 +114,9 @@ const MetricColumn = ({ metrics }) => {
     return null;
   }
   return (
-    <div className={metricColumn}>
+    <MetricGraphWrapper>
       {metrics.map(metric => <MetricGraph key={metric.key} metric={metric} />)}
-    </div>
+    </MetricGraphWrapper>
   );
 };
 
@@ -83,29 +150,35 @@ const PostItem = ({
 
   const dateFormat = 'D MMMM hh:mm a';
   return (
-    <li className={columnContainer}>
-      <div className={contentColumn}>
-        <div className={postMeta}>
-          <div className={contentDate}>
-            <a href={post.serviceLink} target="_blank" rel="noopener noreferrer" className={tweetServiceLinkClass}>
-              <Text size="extra-small">{moment(post.date).tz(timezone).format(dateFormat)}</Text>
-            </a>
-          </div>
-          <div className={contentLink}>
-            <a className={viewPostLinkClass} href={post.serviceLink} rel="noopener noreferrer" target="_blank">
-              <i className="bi-click" />
-              VIEW POST
-            </a>
-          </div>
-        </div>
-        <div className={postContent}>
+    <ColumnContainer>
+      <ContentColumn>
+        <PostMeta>
+          <ContentDate>
+            <Text size="extra-small" weight="medium" color="outerSpace">
+              {moment(post.date).tz(timezone).format(dateFormat)}
+            </Text>
+          </ContentDate>
+          <ContentLink>
+            <ViewPostLinkClass
+              href={post.serviceLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Text size="extra-small" color="curiousBlue">
+                <i className="bi-click" />
+                View post
+              </Text>
+            </ViewPostLinkClass>
+          </ContentLink>
+        </PostMeta>
+        <PostContent>
           <Attachment type={post.type} media={post.media} />
-          <div className={contentContainer} dangerouslySetInnerHTML={{ __html: post.text }} />
-        </div>
-      </div>
+          <Text size="extra-small"><ContentContainer dangerouslySetInnerHTML={{ __html: post.text }} /></Text>
+        </PostContent>
+      </ContentColumn>
       <MetricColumn metrics={primaryPostColumnMetrics} />
       <MetricColumn metrics={secondaryPostColumnMetrics} />
-    </li>
+    </ColumnContainer>
   );
 };
 

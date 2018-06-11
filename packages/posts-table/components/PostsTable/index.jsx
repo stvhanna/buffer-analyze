@@ -1,36 +1,61 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import styled from 'styled-components';
 import {
   Text,
 } from '@bufferapp/components';
-
 import {
   ChartStateNoData as NoData,
   ChartStateLoading as Loading,
   ChartCard,
   ChartHeader,
 } from '@bufferapp/analyze-shared-components';
-
-
 import Title from '../Title';
 import PostItem from './components/PostItem';
 import PostsHeader from './components/PostsHeader';
-
-import {
-  postsContainer,
-  chartColumnHeader,
-  metricColumn,
-  contentColumn,
-  chartContainer,
-} from './styles.less';
-
 import { metricsConfig } from './metrics';
 
-const gridContainer = {
-  position: 'relative',
-  padding: '1.5rem',
-};
+const ChartContainer = styled.aside`
+  position: relative;
+  border-radius: 2px;
+  font-size: 12px;
+  min-height: 177px;
+  border-top: dotted 1px #CED7DF;
+`;
+
+const PostsContainer = styled.div`
+  padding: 0;
+  margin: 0;
+`;
+
+const ChartColumnHeader = styled.ul`
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border-bottom: dotted 1px #CED7DF;
+`;
+
+const ContentColumn = styled.div`
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem 1rem 1rem 0;
+  width: 75%;
+  padding-right: 1rem;
+  border-right: 1px dotted #CED7DF;
+`;
+
+const MetricColumn = styled.div`
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem 1rem 1rem 0;
+  width: 25%;
+  padding-left: 1rem;
+`;
+
+const GridContainer = styled.div`
+  position: relative;
+  padding: 0.75rem 1.5rem 1rem;
+`;
 
 const defaultSortMetrics = {
   facebook: {
@@ -69,23 +94,23 @@ export const Table = ({ metrics, timezone, service }) => {
   const maxAudienceValue = getMaxMetricValue(topPosts, audienceMetrics);
 
   return (
-    <aside className={chartContainer}>
+    <ChartContainer>
       <header>
-        <ul className={chartColumnHeader}>
-          <li className={contentColumn}>
+        <ChartColumnHeader>
+          <ContentColumn>
             <Text size="extra-small">Posts and Stories</Text>
-          </li>
-          <li className={metricColumn}>
+          </ContentColumn>
+          <MetricColumn>
             <Text size="extra-small">Engagements</Text>
-          </li>
-          {(service !== 'instagram') ?
-            <li className={metricColumn}>
+          </MetricColumn>
+          <MetricColumn>
+            {(service !== 'instagram') ?
               <Text size="extra-small">Audience</Text>
-            </li>
-          : null}
-        </ul>
+              : null}
+          </MetricColumn>
+        </ChartColumnHeader>
       </header>
-      <ul className={postsContainer}>
+      <PostsContainer>
         {topPosts.map(post =>
           <PostItem
             key={post.id}
@@ -97,8 +122,8 @@ export const Table = ({ metrics, timezone, service }) => {
             audienceMetrics={audienceMetrics}
           />,
         )}
-      </ul>
-    </aside>
+      </PostsContainer>
+    </ChartContainer>
   );
 };
 
@@ -183,9 +208,9 @@ const PostsTable = (props) => {
         <Title {...props} />
         {addToReportButton}
       </ChartHeader>
-      <div style={gridContainer}>
+      <GridContainer>
         {content}
-      </div>
+      </GridContainer>
     </ChartCard>
   );
 };
