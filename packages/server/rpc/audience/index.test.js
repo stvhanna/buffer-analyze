@@ -13,6 +13,16 @@ describe('rpc/audience', () => {
   const profileId = '123159ad';
   const profileService = 'instagram';
   const token = 'some token';
+  const mockedRequest = {
+    session: {
+      analyze: {
+        accessToken: token,
+      },
+    },
+    app: {
+      get() { return 'analyze-api'; },
+    },
+  };
 
   it('should have the expected name', () => {
     expect(audience.name)
@@ -33,17 +43,11 @@ describe('rpc/audience', () => {
       endDate: end,
       profileId,
       profileService,
-    }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    }, mockedRequest);
 
     expect(rp.mock.calls[0])
       .toEqual([{
-        uri: `${process.env.ANALYZE_API_ADDR}/metrics/daily_totals`,
+        uri: 'analyze-api/metrics/daily_totals',
         method: 'POST',
         strictSSL: false,
         qs: {
@@ -59,13 +63,7 @@ describe('rpc/audience', () => {
   it('it should return: data, metrics', async() => {
     rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
 
-    const data = await audience.fn({ profileId, profileService }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    const data = await audience.fn({ profileId, profileService }, mockedRequest);
 
     expect(data.data).toBeDefined();
     expect(data.metrics).toBeDefined();
@@ -74,13 +72,7 @@ describe('rpc/audience', () => {
   it('should return a valid response if all data is 0', async() => {
     rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
 
-    const data = await audience.fn({ profileId, profileService }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    const data = await audience.fn({ profileId, profileService }, mockedRequest);
 
     expect(data.metrics.length).toBe(5);
     expect(data.metrics[0]).toEqual({
@@ -93,13 +85,7 @@ describe('rpc/audience', () => {
   it('should return the daily data', async() => {
     rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
 
-    const data = await audience.fn({ profileId, profileService }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    const data = await audience.fn({ profileId, profileService }, mockedRequest);
     expect(data.data.length).toBe(7);
     expect(data.data[0].day).toBe('1504051200000');
     expect(data.data[0].metrics.length).toBe(5);
@@ -122,13 +108,7 @@ describe('rpc/audience', () => {
 
     rp.mockReturnValueOnce(Promise.resolve(response));
 
-    const data = await audience.fn({ profileId, profileService }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    const data = await audience.fn({ profileId, profileService }, mockedRequest);
     expect(data.data.length).toBe(1);
     expect(data.data[0].metrics.length).toBe(1);
     expect(data.data[0].metrics[0]).toMatchObject({
@@ -141,13 +121,7 @@ describe('rpc/audience', () => {
   it('should return empty data if fetch failed', async() => {
     rp.mockReturnValueOnce(Promise.reject(CURRENT_PERIOD_DAILY_RESPONSE));
 
-    const data = await audience.fn({ profileId, profileService }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    const data = await audience.fn({ profileId, profileService }, mockedRequest);
     expect(data.data.length).toBe(0);
     expect(data.metrics.length).toBe(0);
   });

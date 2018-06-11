@@ -115,6 +115,8 @@
 
 .metricBarGraph {
   background-color: @nevada;
+  // we need this to render bars in pdf
+  -webkit-print-color-adjust: exact;
   display: block;
   height: 7px;
   border-radius: 2px;

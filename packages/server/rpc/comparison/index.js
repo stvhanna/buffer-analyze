@@ -164,10 +164,10 @@ function parseResponse(response, dateRange) {
 module.exports = method(
   'comparison',
   'get daily comparison data for the given profiles',
-  ({ profileIds, startDate, endDate }) => {
+  ({ profileIds, startDate, endDate }, req) => {
     const dateRange = new DateRange(startDate, endDate);
     return rp({
-      uri: `${process.env.ANALYZE_API_ADDR}/comparison`,
+      uri: `${req.app.get('analyzeApiAddr')}/comparison`,
       method: 'POST',
       strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
       body: {

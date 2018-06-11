@@ -6,9 +6,9 @@ jest.mock('request-promise');
 import rp from 'request-promise';
 import compare from './';
 import {
-  CURRENT_PERIOD_TOTALS_RESPONSE,
-  PAST_PERIOD_TOTALS_RESPONSE,
-  EMPTY_TOTALS_RESPONSE,
+  DAILY_RESPONSE_EMPTY,
+  DAILY_RESPONSE_AVERAGE_METRICS,
+  PAST_DAILY_RESPONSE_AVERAGE_METRICS,
   CURRENT_PERIOD_DAILY_RESPONSE,
   PAST_PERIOD_DAILY_RESPONSE,
   PAST_PERIOD_DAILY_PARTIAL_RESPONSE,
@@ -18,6 +18,16 @@ describe('rpc/compare', () => {
   const profileId = '123159ad';
   const profileService = 'facebook';
   const token = 'some token';
+  const mockedRequest = {
+    session: {
+      analyze: {
+        accessToken: token,
+      },
+    },
+    app: {
+      get() { return 'analyze-api'; },
+    },
+  };
 
   it('should have the expected name', () => {
     expect(compare.name)
@@ -38,31 +48,11 @@ describe('rpc/compare', () => {
       endDate: end,
       profileId,
       profileService: 'instagram',
-    }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    }, mockedRequest);
 
     expect(rp.mock.calls[0])
       .toEqual([{
-        uri: `${process.env.ANALYZE_API_ADDR}/metrics/totals`,
-        method: 'POST',
-        strictSSL: false,
-        qs: {
-          access_token: token,
-          start_date: start,
-          end_date: end,
-          profile_id: profileId,
-        },
-        json: true,
-      }]);
-
-    expect(rp.mock.calls[2])
-      .toEqual([{
-        uri: `${process.env.ANALYZE_API_ADDR}/metrics/daily_totals`,
+        uri: 'analyze-api/metrics/daily_totals',
         method: 'POST',
         strictSSL: false,
         qs: {
@@ -86,17 +76,11 @@ describe('rpc/compare', () => {
       endDate: end,
       profileId,
       profileService,
-    }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    }, mockedRequest);
 
     expect(rp.mock.calls[0])
       .toEqual([{
-        uri: `${process.env.API_ADDR}/1/profiles/${profileId}/analytics/totals.json`,
+        uri: `${process.env.API_ADDR}/1/profiles/${profileId}/analytics/daily_totals.json`,
         method: 'GET',
         strictSSL: false,
         qs: {
@@ -118,20 +102,14 @@ describe('rpc/compare', () => {
       endDate,
       profileId,
       profileService,
-    }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    }, mockedRequest);
 
     const end = moment().subtract(8, 'days').format('MM/DD/YYYY');
     const start = moment().subtract(14, 'days').format('MM/DD/YYYY');
 
     expect(rp.mock.calls[1])
       .toEqual([{
-        uri: `${process.env.API_ADDR}/1/profiles/${profileId}/analytics/totals.json`,
+        uri: `${process.env.API_ADDR}/1/profiles/${profileId}/analytics/daily_totals.json`,
         method: 'GET',
         strictSSL: false,
         qs: {
@@ -145,62 +123,38 @@ describe('rpc/compare', () => {
   });
 
   it('it should return both total and daily compares', async() => {
-    rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_TOTALS_RESPONSE));
-    rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_TOTALS_RESPONSE));
     rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
     rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_DAILY_RESPONSE));
 
-    const data = await compare.fn({ profileId, profileService }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    const data = await compare.fn({ profileId, profileService }, mockedRequest);
 
     expect(data.daily).toBeDefined();
     expect(data.totals).toBeDefined();
   });
 
   it('should return the metrics value and diff, compared by total updates sent in the period', async() => {
-    rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_TOTALS_RESPONSE));
-    rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_TOTALS_RESPONSE));
     rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
     rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_DAILY_RESPONSE));
 
-    const data = await compare.fn({ profileId, profileService }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    const data = await compare.fn({ profileId, profileService }, mockedRequest);
 
     expect(data.totals[0]).toEqual({
       diff: 1,
       key: 'followers',
       label: 'Total Fans',
       color: '#FDA3F3',
-      value: 99324,
-      previousValue: 98805,
-      postsCount: 3,
-      previousPostsCount: 5,
+      value: 100369,
+      previousValue: 99783,
+      postsCount: 9,
+      previousPostsCount: 8,
     });
   });
 
   it('should return a valid response if all data is 0', async() => {
-    rp.mockReturnValueOnce(Promise.resolve(EMPTY_TOTALS_RESPONSE));
-    rp.mockReturnValueOnce(Promise.resolve(EMPTY_TOTALS_RESPONSE));
-    rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
-    rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_DAILY_RESPONSE));
+    rp.mockReturnValueOnce(Promise.resolve(DAILY_RESPONSE_EMPTY));
+    rp.mockReturnValueOnce(Promise.resolve(DAILY_RESPONSE_EMPTY));
 
-    const data = await compare.fn({ profileId, profileService }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    const data = await compare.fn({ profileId, profileService }, mockedRequest);
 
     expect(data.totals.length).toBe(11);
     expect(data.totals[0]).toEqual({
@@ -216,45 +170,47 @@ describe('rpc/compare', () => {
   });
 
   it('should return a valid response if previous data is 0', async() => {
-    rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_TOTALS_RESPONSE));
-    rp.mockReturnValueOnce(Promise.resolve(EMPTY_TOTALS_RESPONSE));
     rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
-    rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_DAILY_RESPONSE));
+    rp.mockReturnValueOnce(Promise.resolve(DAILY_RESPONSE_EMPTY));
 
-    const data = await compare.fn({ profileId, profileService }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    const data = await compare.fn({ profileId, profileService }, mockedRequest);
 
     expect(data.totals.length).toBe(11);
     expect(data.totals[0]).toEqual({
-      diff: 9932400,
+      diff: 10036900,
       key: 'followers',
       label: 'Total Fans',
       color: '#FDA3F3',
-      value: 99324,
+      value: 100369,
       previousValue: 0,
-      postsCount: 3,
+      postsCount: 9,
       previousPostsCount: 0,
     });
   });
 
+  it('should average metrics for days where the value to average is > 0', async() => {
+    rp.mockReturnValueOnce(Promise.resolve(DAILY_RESPONSE_AVERAGE_METRICS));
+    rp.mockReturnValueOnce(Promise.resolve(PAST_DAILY_RESPONSE_AVERAGE_METRICS));
+
+    const data = await compare.fn({ profileId, profileService }, mockedRequest);
+
+    expect(data.totals[10]).toEqual({
+      diff: 44,
+      key: 'engagement_rate',
+      label: 'Engagement Rate',
+      color: '#98E8B2',
+      value: 1.15,
+      previousValue: 0.8,
+      postsCount: 3,
+      previousPostsCount: 3,
+    });
+  });
+
   it('should return the daily compares', async() => {
-    rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_TOTALS_RESPONSE));
-    rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_TOTALS_RESPONSE));
     rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
     rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_DAILY_RESPONSE));
 
-    const data = await compare.fn({ profileId, profileService }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    const data = await compare.fn({ profileId, profileService }, mockedRequest);
 
     expect(data.daily.length).toBe(7);
 
@@ -267,18 +223,10 @@ describe('rpc/compare', () => {
   });
 
   it('should return Period Total data for Twitter', async() => {
-    rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_TOTALS_RESPONSE));
-    rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_TOTALS_RESPONSE));
     rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
     rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_DAILY_RESPONSE));
 
-    const data = await compare.fn({ profileId, profileService: 'twitter' }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    const data = await compare.fn({ profileId, profileService: 'twitter' }, mockedRequest);
 
     const secondDayMetric = data.daily[1].metrics[0];
     expect(data.totalPeriodDaily.length).toBe(7);
@@ -294,18 +242,10 @@ describe('rpc/compare', () => {
   });
 
   it('should return daily totals only for days that match with the previous period', async() => {
-    rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_TOTALS_RESPONSE));
-    rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_TOTALS_RESPONSE));
     rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
     rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_DAILY_PARTIAL_RESPONSE));
 
-    const data = await compare.fn({ profileId, profileService }, {
-      session: {
-        analyze: {
-          accessToken: token,
-        },
-      },
-    });
+    const data = await compare.fn({ profileId, profileService }, mockedRequest);
 
     expect(data.daily.length).toBe(2);
 

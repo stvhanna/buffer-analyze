@@ -24,12 +24,16 @@ describe('rpc/comparison', () => {
     const startDate = moment().subtract(7, 'days').format('MM/DD/YYYY');
     const endDate = moment().subtract(1, 'days').format('MM/DD/YYYY');
     rp.mockReturnValue(Promise.resolve(response));
-    const result = await comparison.fn({ profileIds, startDate, endDate });
+    const result = await comparison.fn({ profileIds, startDate, endDate }, {
+      app: {
+        get() { return 'analyze-api'; },
+      },
+    });
 
     expect(result.metrics).toEqual(rpcFinalResponse);
 
     expect(rp.mock.calls[0]).toEqual([{
-      uri: `${process.env.ANALYZE_API_ADDR}/comparison`,
+      uri: 'analyze-api/comparison',
       method: 'POST',
       strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
       body: {
