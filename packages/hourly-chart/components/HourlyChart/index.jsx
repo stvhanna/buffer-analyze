@@ -15,7 +15,7 @@ import Header from '../ChartHeader';
 
 const gridContainer = {
   margin: '0 auto',
-  padding: '1.25rem',
+  padding: '0.5rem 0.75rem 0rem',
   position: 'relative',
 };
 

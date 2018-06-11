@@ -1,40 +1,37 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import styled from 'styled-components';
 import {
   Button,
 } from '@bufferapp/components';
-
-
 import {
   PlusIcon,
   CloseIcon,
 } from '@bufferapp/components/Icon/Icons';
-
 import Dropdown from '../Dropdown';
 import TimezoneInfo from '../TimezoneInfo';
 
-const chartHeader = {
-  display: 'flex',
-  alignItems: 'center',
-  padding: '1.25rem',
-};
+const Header = styled.section`
+  display: flex;
+  align-items: center;
+  padding: 0 0.75rem 1rem;
+`;
 
-const toggleWrapper = {
-  marginLeft: '0.75rem',
-};
+const ToggleWrapper = styled.span`
+  margin: 0 0 0 0.75rem;
+`;
 
-const openButton = {
-  display: 'inline-block',
-  padding: '7px 11px',
-  border: '1px solid #ced7df',
-  borderRadius: '3px',
-  cursor: 'pointer',
-};
+const OpenButton = styled.span`
+  display: inline-block;
+  padding: 7px 11px;
+  border: 1px solid #ced7df;
+  border-radius: 3px;
+  cursor: pointer;
+`;
 
 const SecondaryMetricToggle = (props) => {
   if (props.metric) {
-    return (<span style={toggleWrapper}>
+    return (<ToggleWrapper>
       <Dropdown
         secondary
         selectMetric={props.selectMetric}
@@ -43,21 +40,21 @@ const SecondaryMetricToggle = (props) => {
         metrics={props.metrics}
         selectedMetric={props.metric}
       />
-      <span style={toggleWrapper}>
+      <ToggleWrapper>
         <Button
           onClick={props.hideSecondaryDropdown}
           noStyle
         >
           <CloseIcon size="small" />
         </Button>
-      </span>
-    </span>);
+      </ToggleWrapper>
+    </ToggleWrapper>);
   }
-  return (<span style={toggleWrapper}>
+  return (<ToggleWrapper>
     <Button onClick={props.showSecondaryDropdown} noStyle>
-      <span style={openButton}><PlusIcon size="small" /></span>
+      <OpenButton><PlusIcon size="small" /></OpenButton>
     </Button>
-  </span>);
+  </ToggleWrapper>);
 };
 
 SecondaryMetricToggle.defaultProps = {
@@ -86,7 +83,7 @@ const ChartHeader = (props) => {
       (!props.secondaryMetric || metric.label !== props.secondaryMetric.label)
   ));
   return (
-    <section style={chartHeader}>
+    <Header>
       <Dropdown
         metrics={metrics}
         selectMetric={props.selectMetric}
@@ -104,7 +101,7 @@ const ChartHeader = (props) => {
         selectMetric={props.selectMetric}
       />
       <TimezoneInfo timezone={props.timezone} />
-    </section>
+    </Header>
   );
 };
 
