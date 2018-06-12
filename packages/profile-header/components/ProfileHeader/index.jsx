@@ -21,18 +21,20 @@ const Wrapper = styled.div`
 const Details = styled.div`
   display: inline-block;
   vertical-align: top;
-  margin: 0 0 0 0.25rem;
+  margin: 0 0 0 0.1rem;
 `;
 
 const Header = styled.span`
   display: block;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   color: #323b43;
+  margin: 0 0 0.1rem;
+
   &:hover {
     text-decoration: none;
   }
+
   a {
     color: #323b43;
     text-decoration: none;
@@ -89,7 +91,7 @@ const ProfileHeader = ({ profile, followersCount }) => {
         <Details>
           <Header>
             <a href={profile.service_link} rel="noopener noreferrer" target="_blank">
-              <Text size="extra-small" weight="bold" color="outerSpace">{profile.username}</Text>
+              <Text weight="bold" color="outerSpace">{profile.username}</Text>
             </a>
           </Header>
           <Subheader>
