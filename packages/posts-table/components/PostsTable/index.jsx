@@ -2,9 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {
-  Text,
-} from '@bufferapp/components';
-import {
   ChartStateNoData as NoData,
   ChartStateLoading as Loading,
   ChartCard,
@@ -20,36 +17,11 @@ const ChartContainer = styled.aside`
   border-radius: 2px;
   font-size: 12px;
   min-height: 177px;
-  border-top: dotted 1px #CED7DF;
 `;
 
-const PostsContainer = styled.div`
+const PostsTableWrapper = styled.table`
   padding: 0;
   margin: 0;
-`;
-
-const ChartColumnHeader = styled.ul`
-  margin: 0;
-  padding: 0;
-  display: flex;
-  border-bottom: dotted 1px #CED7DF;
-`;
-
-const ContentColumn = styled.div`
-  display: inline-block;
-  text-decoration: none;
-  padding: 1rem 1rem 1rem 0;
-  width: 75%;
-  padding-right: 1rem;
-  border-right: 1px dotted #CED7DF;
-`;
-
-const MetricColumn = styled.div`
-  display: inline-block;
-  text-decoration: none;
-  padding: 1rem 1rem 1rem 0;
-  width: 25%;
-  padding-left: 1rem;
 `;
 
 const GridContainer = styled.div`
@@ -95,25 +67,11 @@ export const Table = ({ metrics, timezone, service }) => {
 
   return (
     <ChartContainer>
-      <header>
-        <ChartColumnHeader>
-          <ContentColumn>
-            <Text size="extra-small">Posts and Stories</Text>
-          </ContentColumn>
-          <MetricColumn>
-            <Text size="extra-small">Engagements</Text>
-          </MetricColumn>
-          <MetricColumn>
-            {(service !== 'instagram') ?
-              <Text size="extra-small">Audience</Text>
-              : null}
-          </MetricColumn>
-        </ChartColumnHeader>
-      </header>
-      <PostsContainer>
-        {topPosts.map(post =>
+      <PostsTableWrapper>
+        {topPosts.map((post, index) =>
           <PostItem
             key={post.id}
+            index={index}
             timezone={timezone}
             post={post}
             maxEngagementValue={maxEngagementValue}
@@ -122,7 +80,7 @@ export const Table = ({ metrics, timezone, service }) => {
             audienceMetrics={audienceMetrics}
           />,
         )}
-      </PostsContainer>
+      </PostsTableWrapper>
     </ChartContainer>
   );
 };

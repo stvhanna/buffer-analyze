@@ -7,34 +7,43 @@ import {
 } from '@bufferapp/components';
 import MetricGraph from '../MetricGraph';
 
-const ColumnContainer = styled.li`
+const PostRow = styled.tr`
   margin: 0;
   padding: 0;
-  display: flex;
-  border-bottom: dotted 1px #CED7DF;
-  
-  &:last-child {
-    border-bottom: 0 none;
+
+  &:first-child td {
+    border-top: 1px dotted #CED7DF;
   }
 `;
 
-const MetricGraphWrapper = styled.div`
-  display: inline-block;
+const MetricCellInner = styled.td`
   text-decoration: none;
   color: #323b43;
-  padding: 1.25rem 1rem 1.25rem 0;
+  padding: 1.25rem 0;
   width: 25%;
   padding-left: 1rem;
+  vertical-align: top;
+  border-left: 1px dotted #CED7DF;
+  border-bottom: 1px dotted #CED7DF;
+  `;
+
+const NumberCell = styled.td`
+  position: relative;
+  color: #323b43;
+  padding: 1rem 1rem 1.25rem 0;
+  text-align: right;
+  vertical-align: top;
+  border-right: 1px dotted #CED7DF;
+  border-bottom: 1px dotted #CED7DF;
 `;
 
-const ContentColumn = styled.div`
-  display: inline-block;
+const ContentCell = styled.td`
   text-decoration: none;
   color: #323b43;
-  padding: 1.25rem 1rem 1.25rem 0;
-  width: 75%;
+  padding: 1.25rem 1rem 1.25rem 1rem;
   padding-right: 1rem;
-  border-right: 1px dotted #CED7DF;
+  vertical-align: top;
+  border-bottom: 1px dotted #CED7DF;
 `;
 
 const ContentDate = styled.div`
@@ -56,11 +65,23 @@ const ContentContainer = styled.div`
   }
 `;
 
+const ContentGradient = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2rem;
+  background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+`;
+
 const MediaThumbnail = styled.img`
-  width: 6rem;
-  min-width: 6rem;
+  width: 7rem;
+  min-width: 7rem;
   border-radius: 3px;
-  margin: 0.25rem 0 0 1rem;
+  margin: -32px 0 0 1rem;
   box-shadow: 0 0 1px rgba(0,0,0,0.1);
 `;
 
@@ -75,21 +96,25 @@ const PostContent = styled.div`
   align-items: flex-start;
   justify-content: space-between;
   padding-top: 0px;
-`;
-
-const ContentLink = styled.div`
-  margin: -2px 0 0;
+  height: 107px;
 `;
 
 const ViewPostLinkClass = styled.a`
   display: inline-block;
-  padding-top: 0.2rem;
+  padding: 0.2rem 0 0 0.75rem;
   color: #168eea;
   text-decoration: none;
 
   &:hover {
     text-decoration: underline;
   }
+`;
+
+const ContentBox = styled.div`
+  position: relative;
+  width: 90%;
+  height: 100%;
+  overflow: hidden;
 `;
 
 const Attachment = ({ type, media }) => {
@@ -111,18 +136,18 @@ Attachment.propTypes = {
   }),
 };
 
-const MetricColumn = ({ metrics }) => {
+const MetricCell = ({ metrics }) => {
   if (metrics.length === 0) {
     return null;
   }
   return (
-    <MetricGraphWrapper>
+    <MetricCellInner>
       {metrics.map(metric => <MetricGraph key={metric.key} metric={metric} />)}
-    </MetricGraphWrapper>
+    </MetricCellInner>
   );
 };
 
-MetricColumn.propTypes = {
+MetricCell.propTypes = {
   metrics: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
@@ -133,34 +158,32 @@ const PostItem = ({
   maxEngagementValue,
   maxAudienceValue,
   timezone,
+  index,
 }) => {
-  const secondaryPostColumnMetrics = audienceMetrics.map((metric) => {
-    return {
-      ...metric,
-      maxValue: maxAudienceValue,
-      value: post.statistics[metric.key],
-    };
-  });
+  const secondaryPostColumnMetrics = audienceMetrics.map(metric => ({
+    ...metric,
+    maxValue: maxAudienceValue,
+    value: post.statistics[metric.key],
+  }));
 
-  const primaryPostColumnMetrics = engagementMetrics.map((metric) => {
-    return {
-      ...metric,
-      maxValue: maxEngagementValue,
-      value: post.statistics[metric.key],
-    };
-  });
+  const primaryPostColumnMetrics = engagementMetrics.map(metric => ({
+    ...metric,
+    maxValue: maxEngagementValue,
+    value: post.statistics[metric.key],
+  }));
 
   const dateFormat = 'D MMMM hh:mm a';
   return (
-    <ColumnContainer>
-      <ContentColumn>
+    <PostRow>
+      <NumberCell>
+        <Text size="extra-large" weight="bold" color="outerSpace">{index + 1}</Text>
+      </NumberCell>
+      <ContentCell>
         <PostMeta>
           <ContentDate>
             <Text size="small" weight="bold" color="outerSpace">
               {moment(post.date).tz(timezone).format(dateFormat)}
             </Text>
-          </ContentDate>
-          <ContentLink>
             <ViewPostLinkClass
               href={post.serviceLink}
               target="_blank"
@@ -171,16 +194,20 @@ const PostItem = ({
                 View Post
               </Text>
             </ViewPostLinkClass>
-          </ContentLink>
+          </ContentDate>
         </PostMeta>
         <PostContent>
-          <Text size="extra-small" color="curiousBlue"><ContentContainer dangerouslySetInnerHTML={{ __html: post.text }} /></Text>
+          <ContentBox>
+            <Text size="small" color="curiousBlue">
+              <ContentContainer dangerouslySetInnerHTML={{ __html: post.text }} />
+            </Text>
+            <ContentGradient />
+          </ContentBox>
           <Attachment type={post.type} media={post.media} />
         </PostContent>
-      </ContentColumn>
-      <MetricColumn metrics={primaryPostColumnMetrics} />
-      <MetricColumn metrics={secondaryPostColumnMetrics} />
-    </ColumnContainer>
+      </ContentCell>
+      <MetricCell metrics={[...primaryPostColumnMetrics, ...secondaryPostColumnMetrics]} />
+    </PostRow>
   );
 };
 
@@ -209,6 +236,7 @@ PostItem.propTypes = {
   maxEngagementValue: PropTypes.number.isRequired,
   maxAudienceValue: PropTypes.number.isRequired,
   timezone: PropTypes.string.isRequired,
+  index: PropTypes.number.isRequired,
 };
 
 export default PostItem;

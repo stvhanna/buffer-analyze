@@ -1225,14 +1225,14 @@ exports[`Snapshots ProfileLegend renders the profile legend 1`] = `
 exports[`Snapshots Report render only the multi-profile legend if that is available 1`] = `
 <span>
   <section
-    className="sc-kxynE jPxQWj"
+    className="sc-hzNEM iiobtj"
   >
     <div
-      className="sc-jKVCRD lkEhfb"
+      className="sc-jtggT hKpupq"
       id="report-page"
     >
       <div
-        className="sc-kaNhvL bMWuIB"
+        className="sc-ebFjAB gGlMAE"
       >
         <span
           style={
@@ -1245,7 +1245,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
           }
         >
           <div
-            className="sc-iBEsjs iDDIrh"
+            className="sc-kaNhvL dfSHfD"
           >
             <div
               className="sc-EHOje hKVWKI"
@@ -1312,13 +1312,13 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
               }
             >
               <h1
-                className="sc-LKuAh PHAQY"
+                className="sc-jKVCRD hLWfLp"
               >
                 Weekly Sync Report
               </h1>
             </button>
             <div
-              className="sc-hzNEM iBlsLW"
+              className="sc-LKuAh jLaeaf"
             >
               <svg
                 height="100%"
@@ -1366,13 +1366,13 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
         </span>
       </div>
       <section
-        className="sc-bmyXtO hBShwb"
+        className="sc-ipZHIp kERDLX"
       >
         <div
-          className="sc-ebFjAB joITdX"
+          className="sc-dEoRIm dWJfCV"
         >
           <div
-            className="sc-dEoRIm bJmZfG"
+            className="sc-iGrrsa erLuMd"
           >
             <h2
               className="sc-eHgmQL lisssw"
@@ -1393,7 +1393,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
             </h2>
           </div>
           <div
-            className="sc-jtggT jgpGvV"
+            className="sc-bmyXtO gBgSYC"
           >
             <div
               className="sc-gipzik kOwuni"
@@ -1634,10 +1634,10 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
 exports[`Snapshots Report renders a loading report 1`] = `
 <span>
   <section
-    className="sc-kxynE jPxQWj"
+    className="sc-hzNEM iiobtj"
   >
     <div
-      className="sc-chbbiW kwhVXj"
+      className="sc-iBEsjs gtCACS"
     >
       <div
         style={
@@ -1745,14 +1745,14 @@ exports[`Snapshots Report renders a loading report 1`] = `
 exports[`Snapshots Report renders a report in edit mode 1`] = `
 <span>
   <section
-    className="sc-kxynE jPxQWj"
+    className="sc-hzNEM iiobtj"
   >
     <div
-      className="sc-jKVCRD lkEhfb"
+      className="sc-jtggT hKpupq"
       id="report-page"
     >
       <div
-        className="sc-kaNhvL bMWuIB"
+        className="sc-ebFjAB gGlMAE"
       >
         <span
           style={
@@ -1797,13 +1797,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         </span>
       </div>
       <section
-        className="sc-bmyXtO hBShwb"
+        className="sc-ipZHIp kERDLX"
       >
         <div
-          className="sc-ebFjAB joITdX"
+          className="sc-dEoRIm dWJfCV"
         >
           <div
-            className="sc-dEoRIm bJmZfG"
+            className="sc-iGrrsa erLuMd"
           >
             <h2
               className="sc-eHgmQL lisssw"
@@ -1823,7 +1823,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </h2>
           </div>
           <div
-            className="sc-jtggT jgpGvV"
+            className="sc-bmyXtO gBgSYC"
           >
             <span
               className="sc-iRbamj iUBILw"
@@ -2643,13 +2643,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         </ul>
       </section>
       <section
-        className="sc-bmyXtO hBShwb"
+        className="sc-ipZHIp kERDLX"
       >
         <div
-          className="sc-ebFjAB joITdX"
+          className="sc-dEoRIm dWJfCV"
         >
           <div
-            className="sc-dEoRIm bJmZfG"
+            className="sc-iGrrsa erLuMd"
           >
             <h2
               className="sc-eHgmQL lisssw"
@@ -2669,7 +2669,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </h2>
           </div>
           <div
-            className="sc-jtggT jgpGvV"
+            className="sc-bmyXtO gBgSYC"
           >
             <span
               className="sc-iRbamj iUBILw"
@@ -3489,13 +3489,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         </ul>
       </section>
       <section
-        className="sc-bmyXtO hBShwb"
+        className="sc-ipZHIp kERDLX"
       >
         <div
-          className="sc-ebFjAB joITdX"
+          className="sc-dEoRIm dWJfCV"
         >
           <div
-            className="sc-dEoRIm bJmZfG"
+            className="sc-iGrrsa erLuMd"
           >
             <h2
               className="sc-eHgmQL lisssw"
@@ -3515,7 +3515,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </h2>
           </div>
           <div
-            className="sc-jtggT jgpGvV"
+            className="sc-bmyXtO gBgSYC"
           >
             <span
               className="sc-iRbamj iUBILw"
@@ -4342,14 +4342,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
 exports[`Snapshots Report renders a report with summary table and logo 1`] = `
 <span>
   <section
-    className="sc-kxynE jPxQWj"
+    className="sc-hzNEM iiobtj"
   >
     <div
-      className="sc-jKVCRD lkEhfb"
+      className="sc-jtggT hKpupq"
       id="report-page"
     >
       <div
-        className="sc-kaNhvL bMWuIB"
+        className="sc-ebFjAB gGlMAE"
       >
         <span
           style={
@@ -4362,7 +4362,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
           }
         >
           <div
-            className="sc-iBEsjs iDDIrh"
+            className="sc-kaNhvL dfSHfD"
           >
             <div
               className="sc-EHOje hKVWKI"
@@ -4454,13 +4454,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
               }
             >
               <h1
-                className="sc-LKuAh PHAQY"
+                className="sc-jKVCRD hLWfLp"
               >
                 Weekly Sync Report
               </h1>
             </button>
             <div
-              className="sc-hzNEM iBlsLW"
+              className="sc-LKuAh jLaeaf"
             >
               <svg
                 height="100%"
@@ -4508,13 +4508,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
         </span>
       </div>
       <section
-        className="sc-bmyXtO hBShwb"
+        className="sc-ipZHIp kERDLX"
       >
         <div
-          className="sc-ebFjAB joITdX"
+          className="sc-dEoRIm dWJfCV"
         >
           <div
-            className="sc-dEoRIm bJmZfG"
+            className="sc-iGrrsa erLuMd"
           >
             <h2
               className="sc-eHgmQL lisssw"
@@ -4534,7 +4534,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             </h2>
           </div>
           <div
-            className="sc-jtggT jgpGvV"
+            className="sc-bmyXtO gBgSYC"
           >
             <span
               className="sc-iRbamj iUBILw"
@@ -5354,13 +5354,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
         </ul>
       </section>
       <section
-        className="sc-bmyXtO hBShwb"
+        className="sc-ipZHIp kERDLX"
       >
         <div
-          className="sc-ebFjAB joITdX"
+          className="sc-dEoRIm dWJfCV"
         >
           <div
-            className="sc-dEoRIm bJmZfG"
+            className="sc-iGrrsa erLuMd"
           >
             <h2
               className="sc-eHgmQL lisssw"
@@ -5380,7 +5380,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             </h2>
           </div>
           <div
-            className="sc-jtggT jgpGvV"
+            className="sc-bmyXtO gBgSYC"
           >
             <span
               className="sc-iRbamj iUBILw"
@@ -6200,13 +6200,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
         </ul>
       </section>
       <section
-        className="sc-bmyXtO hBShwb"
+        className="sc-ipZHIp kERDLX"
       >
         <div
-          className="sc-ebFjAB joITdX"
+          className="sc-dEoRIm dWJfCV"
         >
           <div
-            className="sc-dEoRIm bJmZfG"
+            className="sc-iGrrsa erLuMd"
           >
             <h2
               className="sc-eHgmQL lisssw"
@@ -6226,7 +6226,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             </h2>
           </div>
           <div
-            className="sc-jtggT jgpGvV"
+            className="sc-bmyXtO gBgSYC"
           >
             <span
               className="sc-iRbamj iUBILw"
@@ -7053,14 +7053,14 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
 exports[`Snapshots Report renders a report with summary table and no logo 1`] = `
 <span>
   <section
-    className="sc-kxynE jPxQWj"
+    className="sc-hzNEM iiobtj"
   >
     <div
-      className="sc-jKVCRD lkEhfb"
+      className="sc-jtggT hKpupq"
       id="report-page"
     >
       <div
-        className="sc-kaNhvL bMWuIB"
+        className="sc-ebFjAB gGlMAE"
       >
         <span
           style={
@@ -7073,7 +7073,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
           }
         >
           <div
-            className="sc-iBEsjs iDDIrh"
+            className="sc-kaNhvL dfSHfD"
           >
             <div
               className="sc-EHOje hKVWKI"
@@ -7140,13 +7140,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
               }
             >
               <h1
-                className="sc-LKuAh PHAQY"
+                className="sc-jKVCRD hLWfLp"
               >
                 Weekly Sync Report
               </h1>
             </button>
             <div
-              className="sc-hzNEM iBlsLW"
+              className="sc-LKuAh jLaeaf"
             >
               <svg
                 height="100%"
@@ -7194,13 +7194,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
         </span>
       </div>
       <section
-        className="sc-bmyXtO hBShwb"
+        className="sc-ipZHIp kERDLX"
       >
         <div
-          className="sc-ebFjAB joITdX"
+          className="sc-dEoRIm dWJfCV"
         >
           <div
-            className="sc-dEoRIm bJmZfG"
+            className="sc-iGrrsa erLuMd"
           >
             <h2
               className="sc-eHgmQL lisssw"
@@ -7220,7 +7220,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             </h2>
           </div>
           <div
-            className="sc-jtggT jgpGvV"
+            className="sc-bmyXtO gBgSYC"
           >
             <span
               className="sc-iRbamj iUBILw"
@@ -8040,13 +8040,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
         </ul>
       </section>
       <section
-        className="sc-bmyXtO hBShwb"
+        className="sc-ipZHIp kERDLX"
       >
         <div
-          className="sc-ebFjAB joITdX"
+          className="sc-dEoRIm dWJfCV"
         >
           <div
-            className="sc-dEoRIm bJmZfG"
+            className="sc-iGrrsa erLuMd"
           >
             <h2
               className="sc-eHgmQL lisssw"
@@ -8066,7 +8066,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             </h2>
           </div>
           <div
-            className="sc-jtggT jgpGvV"
+            className="sc-bmyXtO gBgSYC"
           >
             <span
               className="sc-iRbamj iUBILw"
@@ -8886,13 +8886,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
         </ul>
       </section>
       <section
-        className="sc-bmyXtO hBShwb"
+        className="sc-ipZHIp kERDLX"
       >
         <div
-          className="sc-ebFjAB joITdX"
+          className="sc-dEoRIm dWJfCV"
         >
           <div
-            className="sc-dEoRIm bJmZfG"
+            className="sc-iGrrsa erLuMd"
           >
             <h2
               className="sc-eHgmQL lisssw"
@@ -8912,7 +8912,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             </h2>
           </div>
           <div
-            className="sc-jtggT jgpGvV"
+            className="sc-bmyXtO gBgSYC"
           >
             <span
               className="sc-iRbamj iUBILw"

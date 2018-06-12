@@ -41,12 +41,5 @@ describe('PDF formatter', () => {
       formatter.formatPage();
       expect(hasPageBreak(reportWithPageBreak.children)).toBeTruthy();
     });
-
-    it('should break down the top posts table into multiple pages if it is larger than an A4', () => {
-      const fullReport = require('./mocks/fullReport').default; // eslint-disable-line global-require
-      const formatter = new PDFFormatter(fullReport);
-      formatter.formatPage();
-      expect(hasPageBreak(fullReport.getElementsByTagName('li'))).toBeTruthy();
-    });
   });
 });
