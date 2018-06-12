@@ -37,7 +37,73 @@ storiesOf('GridItem')
       />
     </ul>
   ))
-  .add('should render a summary grid item with a neutral diff', () => (
+  .add('should render a summary grid item with percent sign', () => (
+    <ul
+      style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        padding: '0',
+        margin: '0 auto',
+        borderTop: `solid 1px ${geyser}`,
+        borderLeft: `solid 1px ${geyser}`,
+        borderRadius: '2px',
+      }}
+    >
+      <GridItem
+        metric={{
+          label: 'Engagement Rate',
+          value: 20,
+          diff: 10,
+        }}
+        showPercentSign
+      />
+    </ul>
+  ))
+  .add('should render 2 digits in the grid item', () => (
+    <ul
+      style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        padding: '0',
+        margin: '0 auto',
+        borderTop: `solid 1px ${geyser}`,
+        borderLeft: `solid 1px ${geyser}`,
+        borderRadius: '2px',
+      }}
+    >
+      <GridItem
+        metric={{
+          label: 'Engagement Rate',
+          value: 0.04,
+          diff: 10,
+        }}
+        showPercentSign
+      />
+    </ul>
+  ))
+  .add('should render 2 digits in the grid item when the percent sign is true', () => (
+    <ul
+      style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        padding: '0',
+        margin: '0 auto',
+        borderTop: `solid 1px ${geyser}`,
+        borderLeft: `solid 1px ${geyser}`,
+        borderRadius: '2px',
+      }}
+    >
+      <GridItem
+        metric={{
+          label: 'Engagement Rate',
+          value: 0.69,
+          diff: 10,
+        }}
+        showPercentSign
+      />
+    </ul>
+  ))
+  .add('should not render the diff when the metric has a neutral diff', () => (
     <ul
       style={{
         display: 'flex',
@@ -55,6 +121,51 @@ storiesOf('GridItem')
           value: 0,
           diff: 0,
         }}
+      />
+    </ul>
+  ))
+  .add('should render a summary grid item with only arrow icon', () => (
+    <ul
+      style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        padding: '0',
+        margin: '0 auto',
+        borderTop: `solid 1px ${geyser}`,
+        borderLeft: `solid 1px ${geyser}`,
+        borderRadius: '2px',
+      }}
+    >
+      <GridItem
+        metric={{
+          label: 'Tweets',
+          value: 10,
+          diff: -60,
+        }}
+        hideDiff
+        showArrowIcon
+      />
+    </ul>
+  ))
+  .add('should not render arrow icon when diff is also visible', () => (
+    <ul
+      style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        padding: '0',
+        margin: '0 auto',
+        borderTop: `solid 1px ${geyser}`,
+        borderLeft: `solid 1px ${geyser}`,
+        borderRadius: '2px',
+      }}
+    >
+      <GridItem
+        metric={{
+          label: 'Tweets',
+          value: 10,
+          diff: 60,
+        }}
+        showArrowIcon
       />
     </ul>
   ))
