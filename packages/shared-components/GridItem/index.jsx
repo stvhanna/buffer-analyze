@@ -16,7 +16,7 @@ const Item = styled.li`
   justify-content: center;
   padding-left: 0;
   padding-right: 1rem;
-  margin: 0 0 1rem;
+  margin: 0 0 1.25rem;
 
   &:first-child > div {
     padding-left: ${props => (props.withChart ? '0' : '')};
