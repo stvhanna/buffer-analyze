@@ -20,7 +20,7 @@ const Image = styled.div`
 
 const Header = styled.h1`
   padding: 0;
-  margin: 0 0 0.1rem;
+  margin: 0;
 `;
 
 const Description = styled.h2`
@@ -32,7 +32,7 @@ const EmptyState = ({ header, description }) => (
   <Container>
     <Image />
     <Header>
-      <Text>{header}</Text>
+      <Text weight="medium" color="outerSpace">{header}</Text>
     </Header>
     {description ?
       <Description>
