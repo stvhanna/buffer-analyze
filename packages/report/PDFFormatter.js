@@ -48,6 +48,10 @@ class PDFFormatter {
       this.removeFromCurrentPage(element);
       this.addToCurrentPage(title);
       this.addToCurrentPage(header);
+      if (this.needsPageBreak()) {
+        this.removeFromCurrentPage(header);
+        this.addNewPage(header);
+      }
       const listItems = list.children;
       this.breakIntoPages(listItems);
     } else {
