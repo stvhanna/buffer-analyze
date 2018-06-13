@@ -24,7 +24,6 @@ describe('Common Chart: chartConfig x-axis label formatter', () => {
   });
 });
 
-
 describe('Common Chart: chartConfig truncate number', () => {
   it('should truncate 100500 into 100.5k', () => {
     const _this = {

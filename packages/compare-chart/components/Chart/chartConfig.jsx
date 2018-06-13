@@ -21,6 +21,16 @@ export function truncateNumber() {
   return number;
 }
 
+export function xAxisLabelFormatter() {
+  var date = moment(new Date(this.value)).utc();
+  if (!date.isValid()) return this.value;
+  var isFirstOfMonth = date.date() === 1;
+  if (this.isFirst || isFirstOfMonth) {
+    return date.format('MMM D');
+  }
+  return date.format('D');
+}
+
 export const getXAxis = () => ({
   gridLineColor: '#F3F5F7',
   gridLineWidth: 0,
@@ -36,14 +46,7 @@ export const getXAxis = () => ({
   type: 'datetime',
   labels: {
     align: 'center',
-    formatter: function() {
-      var date = moment(new Date(this.value)).utc();
-      var isFirstOfMonth = date.date() === 1;
-      if (this.isFirst || isFirstOfMonth) {
-        return date.format('MMM D');
-      }
-      return date.format('D');
-    },
+    formatter: xAxisLabelFormatter,
     x: 0,
     y: 25,
     style: {
