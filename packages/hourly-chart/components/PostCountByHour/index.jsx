@@ -98,14 +98,11 @@ const seriesConfig = {
 };
 
 const mouseOut = chart => {
-  chart.getChart().tooltip.hide()
-
-  //const chart = hourlyChart.getChart();
-  const index = this.series.data.indexOf(this);
-  const pointsToRefresh = [chart.series[0].points[index]];
-
-  if (chart.series[1] && chart.series[1].visible) {
-    chart.series[1].points[index].setState();
+  chart.tooltip.hide();
+  //manually remove hover state from all points except this one
+  for (var i in chart.series[0].points) {
+    let point = chart.series[0].points[i];
+    point.setState('');
   }
 };
 
@@ -118,6 +115,7 @@ const PostCountByHour = ({ posts, hourlyChart }) => {
       color: '#ced7df',
       events: {
         mouseOver: function() { // eslint-disable-line object-shorthand
+
           const chart = hourlyChart.getChart();
           const index = this.series.data.indexOf(this);
           const pointsToRefresh = [chart.series[0].points[index]];
@@ -128,7 +126,7 @@ const PostCountByHour = ({ posts, hourlyChart }) => {
 
           chart.tooltip.refresh(pointsToRefresh);
         },
-        mouseOut: (() => mouseOut(hourlyChart)),
+        mouseOut: (() => mouseOut(hourlyChart.getChart())),
       },
     };
     hour.add(1, 'hour');
