@@ -126,6 +126,7 @@ function setChartLimits({ series, yAxis }) {
   }
   min -= (min / 100) * bottomPaddingPercentage;
   max += (max / 100) * topPaddingPercentage;
+
   yAxis[0].floor = min;
   yAxis[0].ceiling = max;
 }

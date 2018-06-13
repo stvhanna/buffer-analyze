@@ -18,6 +18,13 @@ A better way to measure performance on social media 📈📉
 2. Run `yarn run watch` in order to use Webpack dev server to watch for file changes and rebundle on the fly (and trigger HMR!).
 3. Enjoy ✨
 
+## Preparing for production
+
+1. If there are UI changes, run `yarn run test-update && yarn test` to make update the tests and make sure they pass
+2. `yarn` to build everything
+3. Create PR, review, merge into master ✨
+4. Locally, switch to master and run `lerna publish` and then `patch`, `minor` or `major` depending on your changes. This updates the package versions.
+
 ## NPM Commands
 
 ### bootstrap

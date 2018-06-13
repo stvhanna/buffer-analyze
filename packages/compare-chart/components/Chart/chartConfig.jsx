@@ -8,8 +8,6 @@ import ChartTooltip from '../ChartTooltip';
 export function truncateNumber() {
   let number = parseFloat(this.value);
 
-  console.log(this);
-
   if (number > 1000000) {
     number = numeral(number).format('0.[00]a');
   } else if (number >= 10000) {
