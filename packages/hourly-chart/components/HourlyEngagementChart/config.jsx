@@ -59,8 +59,8 @@ const yAxisConfig = {
 const yAxis = [{
   ...yAxisConfig,
   endOnTick: true,
-  minPadding: 0.2,
-  maxPadding: 0.3,
+  minPadding: 0,
+  maxPadding: 0,
   labels: {
     x: -15,
     y: 4,
