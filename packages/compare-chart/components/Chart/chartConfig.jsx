@@ -103,7 +103,7 @@ export default () => ({
   xAxis: getXAxis(),
   yAxis: getYAxis(),
   chart: {
-    spacingLeft: 25,
+    marginLeft: 65,
     spacingRight:40,
     spacingTop:20
   },
