@@ -18,10 +18,6 @@ A better way to measure performance on social media 📈📉
 2. Run `yarn run watch` in order to use Webpack dev server to watch for file changes and rebundle on the fly (and trigger HMR!).
 3. Enjoy ✨
 
-## Bundling for Production
-
-
-
 ## NPM Commands
 
 ### bootstrap
