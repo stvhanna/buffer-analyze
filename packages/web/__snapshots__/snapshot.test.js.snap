@@ -677,7 +677,7 @@ exports[`Snapshots App should render application 1`] = `
           style={
             Object {
               "background": "#fff",
-              "borderRight": "1px solid #e6ebef",
+              "borderRight": "1px solid #F3F5F7",
               "boxSizing": "border-box",
               "display": "flex",
               "flexDirection": "column",
@@ -727,7 +727,7 @@ exports[`Snapshots App should render application 1`] = `
           <hr
             style={
               Object {
-                "background": "#e6ebef",
+                "background": "#F3F5F7",
                 "border": "none",
                 "boxSizing": "border-box",
                 "height": "0.063rem",
@@ -873,7 +873,7 @@ exports[`Snapshots App should render application 1`] = `
             <hr
               style={
                 Object {
-                  "background": "#e6ebef",
+                  "background": "#F3F5F7",
                   "border": "none",
                   "boxSizing": "border-box",
                   "height": "0.063rem",
@@ -1183,7 +1183,7 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
       style={
         Object {
           "background": "#fff",
-          "borderRight": "1px solid #e6ebef",
+          "borderRight": "1px solid #F3F5F7",
           "boxSizing": "border-box",
           "display": "flex",
           "flexDirection": "column",
@@ -1233,7 +1233,7 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
       <hr
         style={
           Object {
-            "background": "#e6ebef",
+            "background": "#F3F5F7",
             "border": "none",
             "boxSizing": "border-box",
             "height": "0.063rem",
@@ -1379,7 +1379,7 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
         <hr
           style={
             Object {
-              "background": "#e6ebef",
+              "background": "#F3F5F7",
               "border": "none",
               "boxSizing": "border-box",
               "height": "0.063rem",
@@ -1630,7 +1630,7 @@ exports[`Snapshots DefaultPage should render the dashboard page 1`] = `
       style={
         Object {
           "background": "#fff",
-          "borderRight": "1px solid #e6ebef",
+          "borderRight": "1px solid #F3F5F7",
           "boxSizing": "border-box",
           "display": "flex",
           "flexDirection": "column",
@@ -1680,7 +1680,7 @@ exports[`Snapshots DefaultPage should render the dashboard page 1`] = `
       <hr
         style={
           Object {
-            "background": "#e6ebef",
+            "background": "#F3F5F7",
             "border": "none",
             "boxSizing": "border-box",
             "height": "0.063rem",
@@ -1826,7 +1826,7 @@ exports[`Snapshots DefaultPage should render the dashboard page 1`] = `
         <hr
           style={
             Object {
-              "background": "#e6ebef",
+              "background": "#F3F5F7",
               "border": "none",
               "boxSizing": "border-box",
               "height": "0.063rem",
@@ -2134,7 +2134,7 @@ exports[`Snapshots InsightsPage should render Insights page 1`] = `
       style={
         Object {
           "background": "#fff",
-          "borderRight": "1px solid #e6ebef",
+          "borderRight": "1px solid #F3F5F7",
           "boxSizing": "border-box",
           "display": "flex",
           "flexDirection": "column",
@@ -2184,7 +2184,7 @@ exports[`Snapshots InsightsPage should render Insights page 1`] = `
       <hr
         style={
           Object {
-            "background": "#e6ebef",
+            "background": "#F3F5F7",
             "border": "none",
             "boxSizing": "border-box",
             "height": "0.063rem",
@@ -2330,7 +2330,7 @@ exports[`Snapshots InsightsPage should render Insights page 1`] = `
         <hr
           style={
             Object {
-              "background": "#e6ebef",
+              "background": "#F3F5F7",
               "border": "none",
               "boxSizing": "border-box",
               "height": "0.063rem",
@@ -2581,7 +2581,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
       style={
         Object {
           "background": "#fff",
-          "borderRight": "1px solid #e6ebef",
+          "borderRight": "1px solid #F3F5F7",
           "boxSizing": "border-box",
           "display": "flex",
           "flexDirection": "column",
@@ -2631,7 +2631,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
       <hr
         style={
           Object {
-            "background": "#e6ebef",
+            "background": "#F3F5F7",
             "border": "none",
             "boxSizing": "border-box",
             "height": "0.063rem",
@@ -2777,7 +2777,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
         <hr
           style={
             Object {
-              "background": "#e6ebef",
+              "background": "#F3F5F7",
               "border": "none",
               "boxSizing": "border-box",
               "height": "0.063rem",

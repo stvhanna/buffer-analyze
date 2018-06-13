@@ -1085,7 +1085,7 @@ exports[`Snapshots ComparisonChartTooltip [TESTED] should render the tooltip 1`]
         <span
           style={
             Object {
-              "color": "#e6ebef",
+              "color": "#F3F5F7",
               "fontFamily": "\\"Roboto\\", sans-serif",
               "fontSize": "0.75rem",
               "fontWeight": 400,

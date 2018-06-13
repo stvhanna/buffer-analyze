@@ -8,13 +8,14 @@ const xAxis = {
     text: null,
   },
   type: 'datetime',
-  gridLineWidth: 1,
+  gridLineWidth: 0,
   gridLineColor: '#F3F5F7',
-  lineColor: '#E6EBEF',
+  lineColor: '#F3F5F7',
+  lineWidth: 2,
   min: moment().startOf('day').valueOf(),
   max: moment().endOf('day').valueOf(),
   minorTickWidth: 0,
-  minorGridLineWidth: 1,
+  minorGridLineWidth: 0,
   minorGridLineColor: '#F3F5F7',
   minorTickInterval: 3600 * 1000,
   maxPadding: 0.05,
@@ -30,9 +31,11 @@ const xAxis = {
     x: 10,
     y: 20,
     style: {
-      'font-size': '12px',
-      'font-weight': 'lighter',
-    },
+      'width':'15px',
+      'font-size': '0.875rem',
+      'font-weight': '400',
+      'font-family': 'Roboto, sans serif',
+      },
   },
 };
 
@@ -43,13 +46,14 @@ const yAxisConfig = {
   max: null,
   min: null,
   allowDecimals: false,
-  gridLineWidth: 1,
+  gridLineWidth: 2,
   beginOnTick: true,
-  showLastLabel: false,
+  showLastLabel: true,
   gridLineColor: '#F3F5F7',
+  gridLineWidth: 2,
   minorTickWidth: 0,
-  minorGridLineWidth: 1,
-  minorGridLineColor: '#F3F5F7',
+  minorGridLineWidth: 0,
+  minorGridLineColor: '#F3F5F7'
 };
 
 const yAxis = [{
@@ -58,15 +62,16 @@ const yAxis = [{
   minPadding: 0.2,
   maxPadding: 0.3,
   labels: {
-    align: 'left',
-    x: -10,
-    y: -2,
+    x: -15,
+    y: 4,
+    align: 'right',
     style: {
-      'font-size': '12px',
-      'font-weight': 'lighter',
+      'width':'15px',
+      'font-size': '0.875rem',
+      'font-weight': '400',
       'font-family': 'Roboto, sans serif',
     },
-  },
+  }
 },
 {
   ...yAxisConfig,
@@ -75,23 +80,25 @@ const yAxis = [{
   minPadding: 0.05,
   maxPadding: 0.3,
   labels: {
+    x: -15,
+    y: 4,
     align: 'right',
-    x: 10,
-    y: -2,
     style: {
-      'font-size': '12px',
-      'font-weight': 'lighter',
+      'width':'15px',
+      'font-size': '0.875rem',
+      'font-weight': '400',
       'font-family': 'Roboto, sans serif',
     },
-  },
+  }
 }];
 
 export const chartConfig = {
   title: null,
   chart: {
     spacingBottom: 15,
-    marginLeft: 25,
-    marginRight: 25,
+    marginLeft: 65,
+    spacingRight:40,
+    spacingTop:20,
   },
   xAxis,
   yAxis,
@@ -131,7 +138,7 @@ export const chartConfig = {
     style: {
       'max-width': '200px',
       width: '200px',
-      padding: 18,
+      padding: 25,
       color: '#fff',
       cursor: 'default',
       'font-size': '9pt',
@@ -153,7 +160,7 @@ export const primarySeriesConfig = {
   type: 'column',
   states: {
     hover: {
-      enabled: false,
+      enabled: true,
     },
   },
 };

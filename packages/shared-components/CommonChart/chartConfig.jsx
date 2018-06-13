@@ -23,7 +23,7 @@ export function truncateNumber() {
 export const getXAxis = () => ({
   gridLineColor: '#F3F5F7',
   gridLineWidth: 1,
-  lineColor: '#E6EBEF',
+  lineColor: '#F3F5F7',
   maxPadding: 0.05,
   minPadding: 0.05,
   minorGridLineColor: '#F3F5F7',
@@ -53,7 +53,7 @@ export const getYAxis = () => ([
     minPadding: 0.1,
     allowDecimals: false,
     gridLineColor: '#F3F5F7',
-    lineColor: '#E6EBEF',
+    lineColor: '#F3F5F7',
     showLastLabel: false,
     labels: {
       x: 0,
@@ -77,7 +77,7 @@ export const getYAxis = () => ([
     minPadding: 0.1,
     allowDecimals: false,
     gridLineColor: '#F3F5F7',
-    lineColor: '#E6EBEF',
+    lineColor: '#F3F5F7',
     showLastLabel: false,
     labels: {
       x: 0,

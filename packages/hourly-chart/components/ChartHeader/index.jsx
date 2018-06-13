@@ -94,15 +94,6 @@ const ChartHeader = (props) => {
         toggleDropdown={props.toggleDropdown}
         selectedMetric={props.selectedMetric}
       />
-      <SecondaryMetricToggle
-        metric={props.secondaryMetric}
-        metrics={metrics}
-        secondaryDropdownOpen={props.secondaryDropdownOpen}
-        toggleSecondaryDropdown={props.toggleSecondaryDropdown}
-        showSecondaryDropdown={props.showSecondaryDropdown}
-        hideSecondaryDropdown={props.hideSecondaryDropdown}
-        selectMetric={props.selectMetric}
-      />
       <TimezoneInfo timezone={props.timezone} />
     </section>
   );
