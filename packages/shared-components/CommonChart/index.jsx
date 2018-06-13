@@ -46,7 +46,7 @@ function getSeriesRange(series) {
   const reducedSeries = reduceSeriesToValues(series);
   let min = Math.min.apply(null, reducedSeries);
   let max = Math.max.apply(null, reducedSeries);
-  const maxPaddingPercentage = 5.25;
+  const maxPaddingPercentage = 4.25;
   const minPaddingPercentage = 0.1;
   let topPaddingPercentage = (maxPaddingPercentage - Math.log10(max));
   if (topPaddingPercentage < minPaddingPercentage) {
@@ -204,6 +204,7 @@ function prepareSeries(
     series.push(seriesConfig);
     metricIndex += 1;
   }
+
   return series;
 }
 
@@ -230,6 +231,7 @@ function prepareData(
 
   config.series = prepareSeries(dailyMetrics, timezone, profileService, isCustomMode, presetConfig);
   setYAxisScale(config.series, config.xAxis, config.yAxis);
+  
   return config;
 }
 

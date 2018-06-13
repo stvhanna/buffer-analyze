@@ -1,6 +1,7 @@
 import React from 'react';
 import reactDOM from 'react-dom/server';
 import numeral from 'numeral';
+import moment from 'moment';
 
 import ChartTooltip from './components/ChartTooltip';
 
@@ -10,8 +11,8 @@ export function truncateNumber() {
   if (number > 1000000) {
     number = numeral(number).format('0.[00]a');
   } else if (number >= 10000) {
-    number = numeral(number).format('0.0a');
-  } else if (number < 1 && number > 0) {
+    number = numeral(number).format('0a');
+  } else if (number < 2 && number > 0) {
     number = numeral(number).format('0,0.0');
   } else {
     number = numeral(number).format('0,0');
@@ -21,73 +22,84 @@ export function truncateNumber() {
 }
 
 export const getXAxis = () => ({
-  gridLineColor: '#F3F5F7',
-  gridLineWidth: 1,
+  gridLineWidth: 0,
   lineColor: '#F3F5F7',
-  maxPadding: 0.05,
-  minPadding: 0.05,
-  minorGridLineColor: '#F3F5F7',
-  minorGridLineWidth: 1,
+  lineWidth: 2,
+  maxPadding: 0,
+  minPadding: 0,
+  tickLength: 0,
+  minorGridLineWidth: 0,
   title: { text: null },
   type: 'datetime',
   labels: {
-    align: 'left',
-    format: '{value:%e %b}',
-    x: 5,
+    align: 'center',
+    formatter: function() {
+      var date = moment(new Date(this.value)).utc();
+      if (!date.isValid()) return this.value;
+      var isFirstOfMonth = date.date() === 1;
+      if (this.isFirst || isFirstOfMonth) {
+        return date.format('MMM D');
+      }
+      return date.format('D');
+    },
+    x: 0,
     y: 25,
     style: {
-      'font-size': '12px',
-      'font-weight': 'lighter',
+      'font-size': '0.875rem',
+      'font-weight': '400',
+      'font-family': 'Roboto, sans serif',
+      'whiteSpace': 'nowrap'
     },
-  },
+  }
 });
 
 export const getYAxis = () => ([
   {
     title: { text: null },
-    gridLineWidth: 1,
+    gridLineWidth: 2,
     max: null,
     min: 0,
     softMin: 0,
+    minRange: 8,
     maxPadding: 0.1,
     minPadding: 0.1,
-    allowDecimals: false,
     gridLineColor: '#F3F5F7',
     lineColor: '#F3F5F7',
-    showLastLabel: false,
+    showLastLabel: true,
+    endOnTick: true,
     labels: {
-      x: 0,
-      y: -3,
-      align: 'left',
+      x: -15,
+      y: 4,
+      align: 'right',
       format: '{value}',
       formatter: truncateNumber,
       style: {
-        'font-size': '12px',
-        'font-weight': 'lighter',
+        'font-size': '0.875rem',
+        'font-weight': '400',
         'font-family': 'Roboto, sans serif',
       },
     },
   }, {
     title: { text: null },
-    gridLineWidth: 1,
+    gridLineWidth: 2,
     max: null,
     min: 0,
     softMin: 0,
+    minRange: 8,
     maxPadding: 0.1,
     minPadding: 0.1,
-    allowDecimals: false,
     gridLineColor: '#F3F5F7',
     lineColor: '#F3F5F7',
-    showLastLabel: false,
+    showLastLabel: true,
     labels: {
-      x: 0,
-      y: -3,
-      align: 'right',
+      x: 15,
+      y: 4,
+      align: 'left',
       format: '{value}',
       formatter: truncateNumber,
       style: {
-        'font-size': '12px',
-        'font-weight': 'lighter',
+        'font-size': '0.875rem',
+        'font-weight': '400',
         'font-family': 'Roboto, sans serif',
       },
     },
@@ -97,10 +109,10 @@ export const getYAxis = () => ([
 
 export const highChartsSeriesPrimaryConfig = {
   type: 'areaspline',
-  lineWidth: 2,
+  lineWidth: 3,
   states: {
     hover: {
-      lineWidth: 2,
+      lineWidth: 3,
     },
   },
   data: null,
@@ -111,8 +123,9 @@ export default () => ({
   xAxis: getXAxis(),
   yAxis: getYAxis(),
   chart: {
-    marginLeft: 20,
-    marginRight: 20,
+    marginLeft: 65,
+    marginRight: 65,
+    spacingTop: 30
   },
   legend: {
     enabled: false,
@@ -124,7 +137,7 @@ export default () => ({
     series: {
       marker: {
         enabled: false,
-        lineWidth: 2,
+        lineWidth: 3,
         radius: 3,
         symbol: 'circle',
       },

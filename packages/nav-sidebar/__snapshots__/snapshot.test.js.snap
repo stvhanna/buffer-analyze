@@ -117,7 +117,7 @@ exports[`Snapshots NavSidebar if there are no profiles it should not show the In
       style={
         Object {
           "background": "#fff",
-          "borderRight": "1px solid #F3F5F7",
+          "borderRight": "1px solid #e6ebef",
           "boxSizing": "border-box",
           "display": "flex",
           "flexDirection": "column",
@@ -167,7 +167,7 @@ exports[`Snapshots NavSidebar if there are no profiles it should not show the In
       <hr
         style={
           Object {
-            "background": "#F3F5F7",
+            "background": "#e6ebef",
             "border": "none",
             "boxSizing": "border-box",
             "height": "0.063rem",
@@ -313,7 +313,7 @@ exports[`Snapshots NavSidebar if there are no profiles it should not show the In
         <hr
           style={
             Object {
-              "background": "#F3F5F7",
+              "background": "#e6ebef",
               "border": "none",
               "boxSizing": "border-box",
               "height": "0.063rem",
@@ -485,7 +485,7 @@ exports[`Snapshots NavSidebar should show nav sidebar with Dashboard as active l
       style={
         Object {
           "background": "#fff",
-          "borderRight": "1px solid #F3F5F7",
+          "borderRight": "1px solid #e6ebef",
           "boxSizing": "border-box",
           "display": "flex",
           "flexDirection": "column",
@@ -535,7 +535,7 @@ exports[`Snapshots NavSidebar should show nav sidebar with Dashboard as active l
       <hr
         style={
           Object {
-            "background": "#F3F5F7",
+            "background": "#e6ebef",
             "border": "none",
             "boxSizing": "border-box",
             "height": "0.063rem",
@@ -681,7 +681,7 @@ exports[`Snapshots NavSidebar should show nav sidebar with Dashboard as active l
         <hr
           style={
             Object {
-              "background": "#F3F5F7",
+              "background": "#e6ebef",
               "border": "none",
               "boxSizing": "border-box",
               "height": "0.063rem",
@@ -853,7 +853,7 @@ exports[`Snapshots NavSidebar should show only services for which the user has p
       style={
         Object {
           "background": "#fff",
-          "borderRight": "1px solid #F3F5F7",
+          "borderRight": "1px solid #e6ebef",
           "boxSizing": "border-box",
           "display": "flex",
           "flexDirection": "column",
@@ -903,7 +903,7 @@ exports[`Snapshots NavSidebar should show only services for which the user has p
       <hr
         style={
           Object {
-            "background": "#F3F5F7",
+            "background": "#e6ebef",
             "border": "none",
             "boxSizing": "border-box",
             "height": "0.063rem",
@@ -1049,7 +1049,7 @@ exports[`Snapshots NavSidebar should show only services for which the user has p
         <hr
           style={
             Object {
-              "background": "#F3F5F7",
+              "background": "#e6ebef",
               "border": "none",
               "boxSizing": "border-box",
               "height": "0.063rem",

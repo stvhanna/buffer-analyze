@@ -4,9 +4,7 @@ import moment from 'moment';
 import Tooltip from '../Tooltip';
 
 const xAxis = {
-  title: {
-    text: null,
-  },
+  title: { text: null },
   type: 'datetime',
   gridLineWidth: 0,
   gridLineColor: '#F3F5F7',
@@ -31,7 +29,6 @@ const xAxis = {
     x: 10,
     y: 20,
     style: {
-      'width':'15px',
       'font-size': '0.875rem',
       'font-weight': '400',
       'font-family': 'Roboto, sans serif',
@@ -66,7 +63,6 @@ const yAxis = [{
     y: 4,
     align: 'right',
     style: {
-      'width':'15px',
       'font-size': '0.875rem',
       'font-weight': '400',
       'font-family': 'Roboto, sans serif',
@@ -84,7 +80,6 @@ const yAxis = [{
     y: 4,
     align: 'right',
     style: {
-      'width':'15px',
       'font-size': '0.875rem',
       'font-weight': '400',
       'font-family': 'Roboto, sans serif',
