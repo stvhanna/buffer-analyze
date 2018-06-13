@@ -103,8 +103,8 @@ export default () => ({
   xAxis: getXAxis(),
   yAxis: getYAxis(),
   chart: {
-    marginLeft: 65,
-    spacingRight:40,
+    marginLeft: 75,
+    spacingRight:50,
     spacingTop:20
   },
   legend: {
