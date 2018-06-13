@@ -36,7 +36,7 @@ function shouldUseAnalyzeApi (profileService) {
 const requestPostsSummary = (profileId, profileService, dateRange, accessToken) =>
   rp({
     uri: (shouldUseAnalyzeApi(profileService) ?
-      `${process.env.ANALYZE_API_ADDR}/metrics/totals` :
+      `${process.env.ANALYZE_API_ADDR}/metrics/post_totals` :
       `${process.env.API_ADDR}/1/profiles/${profileId}/analytics/posts_summary.json`
     ),
     method: (shouldUseAnalyzeApi(profileService) ?

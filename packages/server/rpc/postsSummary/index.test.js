@@ -40,7 +40,7 @@ describe('rpc/posts_summary', () => {
 
     expect(rp.mock.calls[0])
       .toEqual([{
-        uri: `${process.env.ANALYZE_API_ADDR}/metrics/totals`,
+        uri: `${process.env.ANALYZE_API_ADDR}/metrics/post_totals`,
         method: 'POST',
         strictSSL: false,
         qs: {
