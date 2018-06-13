@@ -21,7 +21,7 @@ const Title = ({ presets, loading, startDate, endDate }) => {
   } else {
     title = 'Loading...';
   }
-  return (<Text size="extra-small" weight="bold">{title}</Text>);
+  return (<Text color="outerSpace" size="extra-small" weight="medium">{title}</Text>);
 };
 
 Title.defaultProps = {

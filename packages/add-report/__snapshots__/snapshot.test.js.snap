@@ -14,7 +14,7 @@ exports[`Snapshots AddReport opened 1`] = `
         <span
           style={
             Object {
-              "color": "#192534",
+              "color": "#323b43",
               "fontFamily": "\\"Roboto\\", sans-serif",
               "fontSize": "0.75rem",
               "fontWeight": 500,
@@ -43,7 +43,7 @@ exports[`Snapshots AddReport unopened 1`] = `
         <span
           style={
             Object {
-              "color": "#192534",
+              "color": "#323b43",
               "fontFamily": "\\"Roboto\\", sans-serif",
               "fontSize": "0.75rem",
               "fontWeight": 500,

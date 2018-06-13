@@ -37,7 +37,7 @@ const ExportPickerButton = ({ isOpen, exporting, handleClick }) => (
     disabled={exporting}
     onClick={handleClick}
   >
-    <Text size="extra-small" weight="bold">{(exporting ? 'Exporting...' : 'Export as...')}</Text>
+    <Text color="outerSpace" size="extra-small" weight="medium">{(exporting ? 'Exporting...' : 'Export as...')}</Text>
     <Arrow>
       { isOpen ?
         <ArrowUpIcon size="small" /> :

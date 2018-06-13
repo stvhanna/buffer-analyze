@@ -10,7 +10,7 @@ const Margin = styled.span`
 
 const PDFExportButton = ({ exportToPDF }) =>
   <Margin>
-    <Button onClick={() => exportToPDF()}><Text size="extra-small" weight="bold">Export as PDF</Text></Button>
+    <Button onClick={() => exportToPDF()}><Text size="extra-small" weight="medium" color="outerSpace">Export as PDF</Text></Button>
   </Margin>;
 
 PDFExportButton.propTypes = {

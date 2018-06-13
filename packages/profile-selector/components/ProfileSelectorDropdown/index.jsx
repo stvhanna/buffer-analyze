@@ -1,13 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import {
   ProfileBadge,
   DropdownItem,
 } from '@bufferapp/analyze-shared-components';
+
 import Dropdown, {
   DropdownTrigger,
   DropdownContent,
 } from 'react-simple-dropdown';
+
 import {
   ArrowDownIcon,
   ArrowUpIcon,
@@ -45,6 +48,7 @@ const dropdownContentActiveStyle = {
 
 const dropdownSearchHolderStyle = {
   padding: '0 0 0.5rem',
+  fontSize: '0.75rem !important',
 };
 
 const dropdownListStyle = {
@@ -134,7 +138,7 @@ const ProfileSelectorDropdown = ({
             avatarSize={22}
             socialIconSize={13}
           />
-          <Text weight="bold" size="extra-small">{selectedProfile.username}</Text>
+          <Text color="outerSpace" size="extra-small" weight="medium">{selectedProfile.username}</Text>
           <span style={arrowHolderStyle}>
             { isDropdownOpen && <ArrowUpIcon size="small" /> }
             { !isDropdownOpen && <ArrowDownIcon size="small" /> }

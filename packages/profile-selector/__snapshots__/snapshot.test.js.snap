@@ -113,10 +113,10 @@ exports[`Snapshots ProfileSelectorDropdown should filter by profilesFilterString
         <span
           style={
             Object {
-              "color": "#59626a",
+              "color": "#323b43",
               "fontFamily": "\\"Roboto\\", sans-serif",
               "fontSize": "0.75rem",
-              "fontWeight": 700,
+              "fontWeight": 500,
             }
           }
         >
@@ -178,6 +178,7 @@ exports[`Snapshots ProfileSelectorDropdown should filter by profilesFilterString
         <div
           style={
             Object {
+              "fontSize": "0.75rem !important",
               "padding": "0 0 0.5rem",
             }
           }
@@ -484,10 +485,10 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
         <span
           style={
             Object {
-              "color": "#59626a",
+              "color": "#323b43",
               "fontFamily": "\\"Roboto\\", sans-serif",
               "fontSize": "0.75rem",
-              "fontWeight": 700,
+              "fontWeight": 500,
             }
           }
         >
@@ -549,6 +550,7 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
         <div
           style={
             Object {
+              "fontSize": "0.75rem !important",
               "padding": "0 0 0.5rem",
             }
           }
@@ -1304,10 +1306,10 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
         <span
           style={
             Object {
-              "color": "#59626a",
+              "color": "#323b43",
               "fontFamily": "\\"Roboto\\", sans-serif",
               "fontSize": "0.75rem",
-              "fontWeight": 700,
+              "fontWeight": 500,
             }
           }
         >
@@ -1369,6 +1371,7 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
         <div
           style={
             Object {
+              "fontSize": "0.75rem !important",
               "padding": "0 0 0.5rem",
             }
           }
@@ -2124,10 +2127,10 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
         <span
           style={
             Object {
-              "color": "#59626a",
+              "color": "#323b43",
               "fontFamily": "\\"Roboto\\", sans-serif",
               "fontSize": "0.75rem",
-              "fontWeight": 700,
+              "fontWeight": 500,
             }
           }
         >
@@ -2189,6 +2192,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
         <div
           style={
             Object {
+              "fontSize": "0.75rem !important",
               "padding": "0 0 0.5rem",
             }
           }
@@ -4326,10 +4330,10 @@ exports[`Snapshots ProfileSelectorDropdown should show no match message 1`] = `
         <span
           style={
             Object {
-              "color": "#59626a",
+              "color": "#323b43",
               "fontFamily": "\\"Roboto\\", sans-serif",
               "fontSize": "0.75rem",
-              "fontWeight": 700,
+              "fontWeight": 500,
             }
           }
         >
@@ -4391,6 +4395,7 @@ exports[`Snapshots ProfileSelectorDropdown should show no match message 1`] = `
         <div
           style={
             Object {
+              "fontSize": "0.75rem !important",
               "padding": "0 0 0.5rem",
             }
           }

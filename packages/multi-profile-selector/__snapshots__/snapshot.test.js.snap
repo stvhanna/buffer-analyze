@@ -2572,10 +2572,10 @@ exports[`Snapshots MultiProfileSelector compare profile button should be disable
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -4805,10 +4805,10 @@ exports[`Snapshots MultiProfileSelector should filter by profilesFilterString 1`
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -6330,10 +6330,10 @@ exports[`Snapshots MultiProfileSelector should render the initial empty state of
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -8908,10 +8908,10 @@ exports[`Snapshots MultiProfileSelector should scroll profiles if > 7 1`] = `
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -11178,10 +11178,10 @@ exports[`Snapshots MultiProfileSelector should show no match message 1`] = `
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >

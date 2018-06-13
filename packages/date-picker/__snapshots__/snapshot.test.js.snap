@@ -13,10 +13,10 @@ exports[`Snapshots DatePicker days before minDate should be disabled 1`] = `
       <span
         style={
           Object {
-            "color": "#59626a",
+            "color": "#323b43",
             "fontFamily": "\\"Roboto\\", sans-serif",
             "fontSize": "0.75rem",
-            "fontWeight": 700,
+            "fontWeight": 500,
           }
         }
       >
@@ -2888,10 +2888,10 @@ exports[`Snapshots DatePicker should be able to have a custom date range selecte
       <span
         style={
           Object {
-            "color": "#59626a",
+            "color": "#323b43",
             "fontFamily": "\\"Roboto\\", sans-serif",
             "fontSize": "0.75rem",
-            "fontWeight": 700,
+            "fontWeight": 500,
           }
         }
       >
@@ -3258,10 +3258,10 @@ exports[`Snapshots DatePicker should be able to open 1`] = `
       <span
         style={
           Object {
-            "color": "#59626a",
+            "color": "#323b43",
             "fontFamily": "\\"Roboto\\", sans-serif",
             "fontSize": "0.75rem",
-            "fontWeight": 700,
+            "fontWeight": 500,
           }
         }
       >
@@ -3628,10 +3628,10 @@ exports[`Snapshots DatePicker should display a calendar 1`] = `
       <span
         style={
           Object {
-            "color": "#59626a",
+            "color": "#323b43",
             "fontFamily": "\\"Roboto\\", sans-serif",
             "fontSize": "0.75rem",
-            "fontWeight": 700,
+            "fontWeight": 500,
           }
         }
       >
@@ -6503,10 +6503,10 @@ exports[`Snapshots DatePicker should display a calendar without a selected date 
       <span
         style={
           Object {
-            "color": "#59626a",
+            "color": "#323b43",
             "fontFamily": "\\"Roboto\\", sans-serif",
             "fontSize": "0.75rem",
-            "fontWeight": 700,
+            "fontWeight": 500,
           }
         }
       >
@@ -9379,10 +9379,10 @@ exports[`Snapshots DatePicker should display some options as disabled 1`] = `
       <span
         style={
           Object {
-            "color": "#59626a",
+            "color": "#323b43",
             "fontFamily": "\\"Roboto\\", sans-serif",
             "fontSize": "0.75rem",
-            "fontWeight": 700,
+            "fontWeight": 500,
           }
         }
       >
@@ -9749,10 +9749,10 @@ exports[`Snapshots DatePicker should have past 7 days selected 1`] = `
       <span
         style={
           Object {
-            "color": "#59626a",
+            "color": "#323b43",
             "fontFamily": "\\"Roboto\\", sans-serif",
             "fontSize": "0.75rem",
-            "fontWeight": 700,
+            "fontWeight": 500,
           }
         }
       >
@@ -10119,10 +10119,10 @@ exports[`Snapshots DatePicker should not be open 1`] = `
       <span
         style={
           Object {
-            "color": "#59626a",
+            "color": "#323b43",
             "fontFamily": "\\"Roboto\\", sans-serif",
             "fontSize": "0.75rem",
-            "fontWeight": 700,
+            "fontWeight": 500,
           }
         }
       >
@@ -10489,10 +10489,10 @@ exports[`Snapshots DatePicker should render a loading datepicker 1`] = `
       <span
         style={
           Object {
-            "color": "#59626a",
+            "color": "#323b43",
             "fontFamily": "\\"Roboto\\", sans-serif",
             "fontSize": "0.75rem",
-            "fontWeight": 700,
+            "fontWeight": 500,
           }
         }
       >
@@ -10831,10 +10831,10 @@ exports[`Snapshots DatePicker there is no date if a single day is selected 1`] =
       <span
         style={
           Object {
-            "color": "#59626a",
+            "color": "#323b43",
             "fontFamily": "\\"Roboto\\", sans-serif",
             "fontSize": "0.75rem",
-            "fontWeight": 700,
+            "fontWeight": 500,
           }
         }
       >
