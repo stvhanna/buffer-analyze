@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/audience-chart",
-  "version": "0.60.9",
+  "version": "0.60.12",
   "description": "the Audience Chart for Analyze Overview",
   "main": "index.js",
   "scripts": {
@@ -20,12 +20,12 @@
   },
   "author": "federicoweber@gmail.com",
   "dependencies": {
-    "@bufferapp/add-report": "^0.60.9",
-    "@bufferapp/analyze-date-picker": "^0.60.9",
+    "@bufferapp/add-report": "^0.60.12",
+    "@bufferapp/analyze-date-picker": "^0.60.12",
     "@bufferapp/analyze-decorators": "^0.15.2",
     "@bufferapp/analyze-png-export": "^0.50.1",
-    "@bufferapp/analyze-profile-selector": "^0.60.9",
-    "@bufferapp/analyze-shared-components": "^0.60.9",
+    "@bufferapp/analyze-profile-selector": "^0.60.12",
+    "@bufferapp/analyze-shared-components": "^0.60.12",
     "@bufferapp/async-data-fetch": "0.5.25",
     "react-highcharts": "^16.0.2",
     "styled-components": "^2.2.0"
