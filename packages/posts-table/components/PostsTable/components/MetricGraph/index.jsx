@@ -1,7 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { TruncatedNumber } from '@bufferapp/analyze-shared-components';
+
+import {
+  TruncatedNumber,
+  MetricIcon,
+} from '@bufferapp/analyze-shared-components';
+
 import Text from '@bufferapp/components/Text';
 
 const Container = styled.div`
@@ -14,23 +19,21 @@ const Container = styled.div`
   }
 `;
 
-const Color = styled.div`
+const MetricText = styled.span`
   display: inline-block;
-  width: 8px;
-  height: 8px;
-  border-radius: 8px;
-  margin: 0 0.75rem 0 0;
-  background: ${props => props.color};
+  margin: 0 0 0 0.25rem;
 `;
 
 const MetricGraph = ({ metric }) => {
-  const { color, value, key, label } = metric;
+  const { value, key, label } = metric;
 
   return (
     <Container key={key}>
-      <Color color={color} />
-      <Text size="small" weight="bold" color="outerSpace"><TruncatedNumber>{value}</TruncatedNumber></Text>
-      <Text size="small"> {label.toLowerCase()}</Text>
+      <MetricIcon metric={metric} />
+      <MetricText>
+        <Text size="small" weight="bold" color="outerSpace"><TruncatedNumber>{value}</TruncatedNumber></Text>
+        <Text size="small"> {label.toLowerCase()}</Text>
+      </MetricText>
     </Container>
   );
 };

@@ -1,12 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+
 import {
   ChartStateNoData as NoData,
   ChartStateLoading as Loading,
   ChartCard,
   ChartHeader,
 } from '@bufferapp/analyze-shared-components';
+
 import Title from '../Title';
 import PostItem from './components/PostItem';
 import PostsHeader from './components/PostsHeader';
@@ -134,7 +136,7 @@ const PostsTable = (props) => {
 
   let content = null;
   if (loading) {
-    content = <Loading active noBorder />;
+    content = <Loading active noBorder large />;
   } else if (topPosts.length === 0) {
     content = <NoData />;
   } else {

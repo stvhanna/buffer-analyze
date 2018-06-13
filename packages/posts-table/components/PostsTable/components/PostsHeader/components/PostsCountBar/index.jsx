@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import {
   Text,
 } from '@bufferapp/components';
+
 import classNames from 'classnames';
+
 import {
   container,
   buttonItem,

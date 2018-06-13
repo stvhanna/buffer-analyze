@@ -2,9 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment-timezone';
 import styled from 'styled-components';
-import {
-  Text,
-} from '@bufferapp/components';
+import { Text } from '@bufferapp/components';
 import MetricGraph from '../MetricGraph';
 
 const PostRow = styled.tr`
@@ -19,7 +17,7 @@ const PostRow = styled.tr`
 const MetricCellInner = styled.td`
   text-decoration: none;
   color: #323b43;
-  padding: 1.25rem 0;
+  padding: 1rem 0;
   width: 25%;
   padding-left: 1rem;
   vertical-align: top;
@@ -30,7 +28,7 @@ const MetricCellInner = styled.td`
 const NumberCell = styled.td`
   position: relative;
   color: #323b43;
-  padding: 1rem 1rem 1.25rem 0;
+  padding: 0.9rem 1rem 1.25rem 0;
   text-align: right;
   vertical-align: top;
   border-right: 1px dotted #CED7DF;
@@ -40,7 +38,7 @@ const NumberCell = styled.td`
 const ContentCell = styled.td`
   text-decoration: none;
   color: #323b43;
-  padding: 1.25rem 1rem 1.25rem 1rem;
+  padding: 1rem 1rem 1.25rem;
   padding-right: 1rem;
   vertical-align: top;
   border-bottom: 1px dotted #CED7DF;
@@ -66,8 +64,9 @@ const ContentContainer = styled.div`
 `;
 
 const ContentGradient = styled.div`
+  display: none;
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   left: 0;
   width: 100%;
   height: 2rem;
@@ -113,8 +112,18 @@ const ViewPostLinkClass = styled.a`
 const ContentBox = styled.div`
   position: relative;
   width: 90%;
-  height: 100%;
+  height: 96%;
   overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  span {
+    line-height: 1.5em !important;
+  }
 `;
 
 const Attachment = ({ type, media }) => {
