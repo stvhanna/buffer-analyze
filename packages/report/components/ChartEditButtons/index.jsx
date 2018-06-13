@@ -10,10 +10,10 @@ import {
 } from '@bufferapp/components/Icon/Icons';
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
+const Wrapper = styled.aside`
   position: absolute;
   top: 2.5rem;
-  right: 4rem;
+  right: 2rem;
 `;
 
 const Box = styled.span`

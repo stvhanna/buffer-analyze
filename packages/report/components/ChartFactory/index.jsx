@@ -59,10 +59,14 @@ const Separator = styled.section`
   position: relative;
   background: #FFFFFF;
   border: 1px solid #D9E5ED;
-  border-width: 1px 0;
-  padding: 1.75rem 4rem 1.75rem;
-  margin: 0.5rem 0 0;
+  border-radius: 3px;
+  padding: 1.5rem 2rem 1rem;
+  margin: 1.5rem 2rem;
   page-break-inside: avoid;
+
+  &:last-of-type {
+    margin-bottom: 2rem;
+  }
 `;
 
 const TitleWrapper = styled.div`
