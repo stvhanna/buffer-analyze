@@ -112,8 +112,8 @@ export default () => ({
   xAxis: getXAxis(),
   yAxis: getYAxis(),
   chart: {
-    marginLeft: 20,
-    marginRight: 20,
+    marginLeft: 2,
+    marginRight: 2,
   },
   legend: {
     enabled: false,

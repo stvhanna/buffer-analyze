@@ -77,10 +77,10 @@ exports[`Snapshots ProfileHeader should render facebook fans 1`] = `
           </div>
         </div>
         <div
-          className="sc-kkGfuU jTrjVJ"
+          className="sc-kkGfuU cYUekI"
         >
           <span
-            className="sc-iAyFgw dDncOZ"
+            className="sc-iAyFgw bePbGE"
           >
             <a
               href={undefined}
@@ -92,7 +92,7 @@ exports[`Snapshots ProfileHeader should render facebook fans 1`] = `
                   Object {
                     "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "0.75rem",
+                    "fontSize": "1rem",
                     "fontWeight": 700,
                   }
                 }
@@ -222,10 +222,10 @@ exports[`Snapshots ProfileHeader should render twitter followers 1`] = `
           </div>
         </div>
         <div
-          className="sc-kkGfuU jTrjVJ"
+          className="sc-kkGfuU cYUekI"
         >
           <span
-            className="sc-iAyFgw dDncOZ"
+            className="sc-iAyFgw bePbGE"
           >
             <a
               href={undefined}
@@ -237,7 +237,7 @@ exports[`Snapshots ProfileHeader should render twitter followers 1`] = `
                   Object {
                     "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "0.75rem",
+                    "fontSize": "1rem",
                     "fontWeight": 700,
                   }
                 }

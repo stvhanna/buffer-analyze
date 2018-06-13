@@ -318,15 +318,15 @@ exports[`Snapshots ReportList renders an empty state for reports 1`] = `
         className="sc-dxgOiQ cMrwZJ"
       />
       <h1
-        className="sc-ckVGcZ fpjiSi"
+        className="sc-ckVGcZ fnbqBH"
       >
         <span
           style={
             Object {
-              "color": "#59626a",
+              "color": "#323b43",
               "fontFamily": "\\"Roboto\\", sans-serif",
               "fontSize": "1rem",
-              "fontWeight": 400,
+              "fontWeight": 500,
             }
           }
         >
@@ -366,15 +366,15 @@ exports[`Snapshots ReportList renders an empty state for small reports 1`] = `
         className="sc-dxgOiQ cMrwZJ"
       />
       <h1
-        className="sc-ckVGcZ fpjiSi"
+        className="sc-ckVGcZ fnbqBH"
       >
         <span
           style={
             Object {
-              "color": "#59626a",
+              "color": "#323b43",
               "fontFamily": "\\"Roboto\\", sans-serif",
               "fontSize": "1rem",
-              "fontWeight": 400,
+              "fontWeight": 500,
             }
           }
         >

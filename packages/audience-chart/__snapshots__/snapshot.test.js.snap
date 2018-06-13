@@ -445,8 +445,8 @@ exports[`Snapshots AudienceChart [TESTED] Should render 1`] = `
                     Object {
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontSize": "0.875rem",
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -481,8 +481,8 @@ exports[`Snapshots AudienceChart [TESTED] Should render 1`] = `
                     Object {
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontSize": "0.875rem",
+                      "fontWeight": 400,
                     }
                   }
                 >

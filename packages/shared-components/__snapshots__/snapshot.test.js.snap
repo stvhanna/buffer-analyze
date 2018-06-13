@@ -490,8 +490,8 @@ exports[`Snapshots CommonChart [TESTED] Should render Posts metrics as columns i
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontSize": "0.875rem",
+                "fontWeight": 400,
               }
             }
           >
@@ -526,8 +526,8 @@ exports[`Snapshots CommonChart [TESTED] Should render Posts metrics as columns i
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontSize": "0.875rem",
+                "fontWeight": 400,
               }
             }
           >
@@ -638,8 +638,8 @@ exports[`Snapshots CommonChart [TESTED] Should render in Custom mode 1`] = `
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontSize": "0.875rem",
+                "fontWeight": 400,
               }
             }
           >
@@ -674,8 +674,8 @@ exports[`Snapshots CommonChart [TESTED] Should render in Custom mode 1`] = `
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontSize": "0.875rem",
+                "fontWeight": 400,
               }
             }
           >
@@ -746,8 +746,8 @@ exports[`Snapshots CommonChart [TESTED] Should render in Presets mode with days 
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontSize": "0.875rem",
+                "fontWeight": 400,
               }
             }
           >
@@ -782,8 +782,8 @@ exports[`Snapshots CommonChart [TESTED] Should render in Presets mode with days 
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontSize": "0.875rem",
+                "fontWeight": 400,
               }
             }
           >
@@ -854,8 +854,8 @@ exports[`Snapshots CommonChart [TESTED] Should render in Presets mode with multi
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontSize": "0.875rem",
+                "fontWeight": 400,
               }
             }
           >
@@ -890,8 +890,8 @@ exports[`Snapshots CommonChart [TESTED] Should render in Presets mode with multi
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontSize": "0.875rem",
+                "fontWeight": 400,
               }
             }
           >
@@ -926,8 +926,8 @@ exports[`Snapshots CommonChart [TESTED] Should render in Presets mode with multi
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontSize": "0.875rem",
+                "fontWeight": 400,
               }
             }
           >
@@ -2017,15 +2017,15 @@ exports[`Snapshots EmptyState render with a custom header and description 1`] = 
       className="sc-eHgmQL dIexom"
     />
     <h1
-      className="sc-cvbbAY fNTpWe"
+      className="sc-cvbbAY cJMUYe"
     >
       <span
         style={
           Object {
-            "color": "#59626a",
+            "color": "#323b43",
             "fontFamily": "\\"Roboto\\", sans-serif",
             "fontSize": "1rem",
-            "fontWeight": 400,
+            "fontWeight": 500,
           }
         }
       >
@@ -2061,15 +2061,15 @@ exports[`Snapshots EmptyState render with a custom header but no description 1`]
       className="sc-eHgmQL dIexom"
     />
     <h1
-      className="sc-cvbbAY fNTpWe"
+      className="sc-cvbbAY cJMUYe"
     >
       <span
         style={
           Object {
-            "color": "#59626a",
+            "color": "#323b43",
             "fontFamily": "\\"Roboto\\", sans-serif",
             "fontSize": "1rem",
-            "fontWeight": 400,
+            "fontWeight": 500,
           }
         }
       >
@@ -2089,15 +2089,15 @@ exports[`Snapshots EmptyState render with default text 1`] = `
       className="sc-eHgmQL dIexom"
     />
     <h1
-      className="sc-cvbbAY fNTpWe"
+      className="sc-cvbbAY cJMUYe"
     >
       <span
         style={
           Object {
-            "color": "#59626a",
+            "color": "#323b43",
             "fontFamily": "\\"Roboto\\", sans-serif",
             "fontSize": "1rem",
-            "fontWeight": 400,
+            "fontWeight": 500,
           }
         }
       >
@@ -2172,7 +2172,7 @@ exports[`Snapshots GridItem should not render arrow icon when diff is also visib
     }
   >
     <li
-      className="sc-iRbamj ivaMRs"
+      className="sc-iRbamj bGyPKK"
       width="25%"
     >
       <div
@@ -2287,7 +2287,7 @@ exports[`Snapshots GridItem should not render the chart if we have only one day 
     }
   >
     <li
-      className="sc-iRbamj gnXSnh"
+      className="sc-iRbamj bWbhFD"
       width="25%"
     >
       <div
@@ -2402,7 +2402,7 @@ exports[`Snapshots GridItem should not render the diff when the metric has a neu
     }
   >
     <li
-      className="sc-iRbamj ivaMRs"
+      className="sc-iRbamj bGyPKK"
       width="25%"
     >
       <div
@@ -2468,7 +2468,7 @@ exports[`Snapshots GridItem should render 2 digits in the grid item 1`] = `
     }
   >
     <li
-      className="sc-iRbamj ivaMRs"
+      className="sc-iRbamj bGyPKK"
       width="25%"
     >
       <div
@@ -2584,7 +2584,7 @@ exports[`Snapshots GridItem should render 2 digits in the grid item when the per
     }
   >
     <li
-      className="sc-iRbamj ivaMRs"
+      className="sc-iRbamj bGyPKK"
       width="25%"
     >
       <div
@@ -2700,7 +2700,7 @@ exports[`Snapshots GridItem should render a grid item with a 7 day chart if 7 da
     }
   >
     <li
-      className="sc-iRbamj gnXSnh"
+      className="sc-iRbamj bWbhFD"
       width="25%"
     >
       <div
@@ -2818,7 +2818,7 @@ exports[`Snapshots GridItem should render a grid item with a 30 day chart if 30 
     }
   >
     <li
-      className="sc-iRbamj gnXSnh"
+      className="sc-iRbamj bWbhFD"
       width="25%"
     >
       <div
@@ -2936,7 +2936,7 @@ exports[`Snapshots GridItem should render a grid item with a 90 day chart if 90 
     }
   >
     <li
-      className="sc-iRbamj gnXSnh"
+      className="sc-iRbamj bWbhFD"
       width="25%"
     >
       <div
@@ -3054,7 +3054,7 @@ exports[`Snapshots GridItem should render a grid item with a custom Label 1`] = 
     }
   >
     <li
-      className="sc-iRbamj ivaMRs"
+      className="sc-iRbamj bGyPKK"
       width="25%"
     >
       <div
@@ -3191,7 +3191,7 @@ exports[`Snapshots GridItem should render a summary grid item with negative diff
     }
   >
     <li
-      className="sc-iRbamj ivaMRs"
+      className="sc-iRbamj bGyPKK"
       width="25%"
     >
       <div
@@ -3306,7 +3306,7 @@ exports[`Snapshots GridItem should render a summary grid item with no diff 1`] =
     }
   >
     <li
-      className="sc-iRbamj ivaMRs"
+      className="sc-iRbamj bGyPKK"
       width="25%"
     >
       <div
@@ -3372,7 +3372,7 @@ exports[`Snapshots GridItem should render a summary grid item with only arrow ic
     }
   >
     <li
-      className="sc-iRbamj ivaMRs"
+      className="sc-iRbamj bGyPKK"
       width="25%"
     >
       <div
@@ -3464,7 +3464,7 @@ exports[`Snapshots GridItem should render a summary grid item with percent sign 
     }
   >
     <li
-      className="sc-iRbamj ivaMRs"
+      className="sc-iRbamj bGyPKK"
       width="25%"
     >
       <div
@@ -3580,7 +3580,7 @@ exports[`Snapshots GridItem should render a summary grid item with positive diff
     }
   >
     <li
-      className="sc-iRbamj ivaMRs"
+      className="sc-iRbamj bGyPKK"
       width="25%"
     >
       <div
