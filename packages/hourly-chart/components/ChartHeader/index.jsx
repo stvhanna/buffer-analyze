@@ -85,6 +85,7 @@ const ChartHeader = (props) => {
     metric.label !== props.selectedMetric.label &&
       (!props.secondaryMetric || metric.label !== props.secondaryMetric.label)
   ));
+
   return (
     <section style={chartHeader}>
       <Dropdown
