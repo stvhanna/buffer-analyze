@@ -26,7 +26,7 @@ const dropdown = {
 };
 
 const MetricDropdown =
-  ({ metrics, open, selectedMetric, toggleDropdown, secondary, selectMetric }) => (
+  ({ metrics, open, selectedMetric, toggleDropdown, selectMetric }) => (
     <div style={dropdown}>
       <Dropdown toggleDropdown={toggleDropdown} isDropdownOpen={open}>
         <div style={triggerContainer}>
@@ -42,7 +42,6 @@ const MetricDropdown =
             metrics={metrics}
             selectedMetric={selectedMetric}
             selectMetric={selectMetric}
-            secondary={secondary}
           />
         </DropdownContent>
       </Dropdown>
@@ -51,13 +50,11 @@ const MetricDropdown =
 
 MetricDropdown.defaultProps = {
   metrics: [],
-  open: false,
-  secondary: false,
+  open: false
 };
 
 MetricDropdown.propTypes = {
   open: PropTypes.bool,
-  secondary: PropTypes.bool,
   selectedMetric: PropTypes.shape({
     label: PropTypes.string,
     hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
