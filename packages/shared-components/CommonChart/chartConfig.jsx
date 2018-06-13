@@ -11,7 +11,7 @@ export function truncateNumber() {
   if (number > 1000000) {
     number = numeral(number).format('0.[00]a');
   } else if (number >= 10000) {
-    number = numeral(number).format('0a');
+    number = numeral(number).format('0.[0]a');
   } else if (number < 2 && number > 0) {
     number = numeral(number).format('0,0.0');
   } else {
