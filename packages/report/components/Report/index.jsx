@@ -23,7 +23,7 @@ const Page = styled.div`
 const Header = styled.div`
   padding: 4.5rem 4rem;
   background: #FFFFFF;
-  border-bottom: 1px solid #D9E5ED;
+  border-bottom: 1px solid #DBE8F1;
 `;
 
 const Title = styled.h1`

@@ -3,7 +3,7 @@
 exports[`Snapshots ChartEditButtons move down is disabled if chart is last on list 1`] = `
 <span>
   <aside
-    className="sc-bdVaJa fpNUgg"
+    className="sc-bdVaJa OXVli"
   >
     <button
       aria-label={null}
@@ -183,7 +183,7 @@ exports[`Snapshots ChartEditButtons move down is disabled if chart is last on li
 exports[`Snapshots ChartEditButtons move up is disabled if chart is first on list 1`] = `
 <span>
   <aside
-    className="sc-bdVaJa fpNUgg"
+    className="sc-bdVaJa OXVli"
   >
     <button
       aria-label={null}
@@ -363,7 +363,7 @@ exports[`Snapshots ChartEditButtons move up is disabled if chart is first on lis
 exports[`Snapshots ChartEditButtons they render 1`] = `
 <span>
   <aside
-    className="sc-bdVaJa fpNUgg"
+    className="sc-bdVaJa OXVli"
   >
     <button
       aria-label={null}
@@ -1232,7 +1232,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
       id="report-page"
     >
       <div
-        className="sc-ebFjAB gGlMAE"
+        className="sc-ebFjAB jUioVa"
       >
         <span
           style={
@@ -1366,7 +1366,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
         </span>
       </div>
       <section
-        className="sc-ipZHIp sPQVI"
+        className="sc-ipZHIp iwCxRw"
       >
         <div
           className="sc-dEoRIm dWJfCV"
@@ -1752,7 +1752,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
       id="report-page"
     >
       <div
-        className="sc-ebFjAB gGlMAE"
+        className="sc-ebFjAB jUioVa"
       >
         <span
           style={
@@ -1797,7 +1797,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         </span>
       </div>
       <section
-        className="sc-ipZHIp sPQVI"
+        className="sc-ipZHIp iwCxRw"
       >
         <div
           className="sc-dEoRIm dWJfCV"
@@ -2643,7 +2643,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         </ul>
       </section>
       <section
-        className="sc-ipZHIp sPQVI"
+        className="sc-ipZHIp iwCxRw"
       >
         <div
           className="sc-dEoRIm dWJfCV"
@@ -3489,7 +3489,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         </ul>
       </section>
       <section
-        className="sc-ipZHIp sPQVI"
+        className="sc-ipZHIp iwCxRw"
       >
         <div
           className="sc-dEoRIm dWJfCV"
@@ -4349,7 +4349,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
       id="report-page"
     >
       <div
-        className="sc-ebFjAB gGlMAE"
+        className="sc-ebFjAB jUioVa"
       >
         <span
           style={
@@ -4508,7 +4508,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
         </span>
       </div>
       <section
-        className="sc-ipZHIp sPQVI"
+        className="sc-ipZHIp iwCxRw"
       >
         <div
           className="sc-dEoRIm dWJfCV"
@@ -5354,7 +5354,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
         </ul>
       </section>
       <section
-        className="sc-ipZHIp sPQVI"
+        className="sc-ipZHIp iwCxRw"
       >
         <div
           className="sc-dEoRIm dWJfCV"
@@ -6200,7 +6200,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
         </ul>
       </section>
       <section
-        className="sc-ipZHIp sPQVI"
+        className="sc-ipZHIp iwCxRw"
       >
         <div
           className="sc-dEoRIm dWJfCV"
@@ -7060,7 +7060,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
       id="report-page"
     >
       <div
-        className="sc-ebFjAB gGlMAE"
+        className="sc-ebFjAB jUioVa"
       >
         <span
           style={
@@ -7194,7 +7194,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
         </span>
       </div>
       <section
-        className="sc-ipZHIp sPQVI"
+        className="sc-ipZHIp iwCxRw"
       >
         <div
           className="sc-dEoRIm dWJfCV"
@@ -8040,7 +8040,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
         </ul>
       </section>
       <section
-        className="sc-ipZHIp sPQVI"
+        className="sc-ipZHIp iwCxRw"
       >
         <div
           className="sc-dEoRIm dWJfCV"
@@ -8886,7 +8886,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
         </ul>
       </section>
       <section
-        className="sc-ipZHIp sPQVI"
+        className="sc-ipZHIp iwCxRw"
       >
         <div
           className="sc-dEoRIm dWJfCV"

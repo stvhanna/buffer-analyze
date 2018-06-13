@@ -58,7 +58,7 @@ const CHARTS = {
 const Separator = styled.section`
   position: relative;
   background: #FFFFFF;
-  border: 1px solid #D9E5ED;
+  border: 1px solid #DBE8F1;
   border-radius: 3px;
   padding: 1.5rem 2rem 1rem;
   margin: 1.5rem 2rem;
@@ -66,6 +66,14 @@ const Separator = styled.section`
 
   &:last-of-type {
     margin-bottom: 2rem;
+  }
+
+  aside {
+    opacity: 0;
+  }
+
+  &:hover aside {
+    opacity: 1;
   }
 `;
 

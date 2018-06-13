@@ -14,6 +14,7 @@ const Wrapper = styled.aside`
   position: absolute;
   top: 2.5rem;
   right: 2rem;
+  transition: all 50ms linear;
 `;
 
 const Box = styled.span`
