@@ -1,4 +1,29 @@
-import { truncateNumber } from './chartConfig';
+import { truncateNumber, xAxisLabelFormatter } from './chartConfig';
+
+describe('Common Chart: chartConfig x-axis label formatter', () => {
+  it('should convert unix time 1527811200000 to Jun 1', () => {
+    const _this = {
+      value: 1527811200000,
+    };
+    expect(xAxisLabelFormatter.apply(_this))
+      .toBe('Jun 1');
+  });
+  it('should convert unix time 1527897600000 to 2', () => {
+    const _this = {
+      value: 1527897600000,
+    };
+    expect(xAxisLabelFormatter.apply(_this))
+      .toBe('2');
+  });
+  it('shouldn\'t convert invalid date', () => {
+    const _this = {
+      value: 'Wednesday',
+    };
+    expect(xAxisLabelFormatter.apply(_this))
+      .toBe('Wednesday');
+  });
+});
+
 
 describe('Common Chart: chartConfig truncate number', () => {
   it('should truncate 100500 into 100.5k', () => {
