@@ -36,7 +36,7 @@ const ContextualCompare = ({
       />
     </ChartHeader>
     <div className={className}>
-      {loading && <Loading active noBorder />}
+      {loading && <Loading active noBorder large />}
       {data.length === 0 && !loading && <NoData />}
       {data.length >= 1 && !loading && <div>
         <Header {...props} />

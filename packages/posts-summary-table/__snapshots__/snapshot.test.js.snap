@@ -10,13 +10,13 @@ exports[`Snapshots PostsSummaryTable should render a "no data" state 1`] = `
     }
   >
     <div
-      className="sc-kAzzGY djTmlN"
+      className="sc-kgoBCf eKtgtS"
     >
       <header
-        className="sc-chPdSV jjZuEt"
+        className="sc-kGXeez esQcyC"
       >
         <h2
-          className="sc-kgoBCf dgCWVb"
+          className="sc-kpOJdX hkatTF"
         >
           <span
             style={
@@ -34,20 +34,20 @@ exports[`Snapshots PostsSummaryTable should render a "no data" state 1`] = `
         </h2>
       </header>
       <div
-        className="sc-kEYyzF lgfOWu"
+        className="sc-iAyFgw ejxWZG"
         id="js-dom-to-png-posts-summary"
       >
         <div
-          className="sc-bdVaJa fWzNTu"
+          className="sc-htpNat klaPdF"
         >
           <div
-            className="sc-bwzfXH iNQYMr"
+            className="sc-bxivhb cRnhtv"
           >
             <div
-              className="sc-htpNat lmFxxx"
+              className="sc-ifAKCX kiQAin"
             />
             <h1
-              className="sc-bxivhb hlZJQM"
+              className="sc-EHOje dWbWPz"
             >
               <span
                 style={
@@ -80,13 +80,13 @@ exports[`Snapshots PostsSummaryTable should render a loading state 1`] = `
     }
   >
     <div
-      className="sc-kAzzGY djTmlN"
+      className="sc-kgoBCf eKtgtS"
     >
       <header
-        className="sc-chPdSV jjZuEt"
+        className="sc-kGXeez esQcyC"
       >
         <h2
-          className="sc-kgoBCf dgCWVb"
+          className="sc-kpOJdX hkatTF"
         >
           <span
             style={
@@ -104,34 +104,14 @@ exports[`Snapshots PostsSummaryTable should render a loading state 1`] = `
         </h2>
       </header>
       <div
-        className="sc-kEYyzF lgfOWu"
+        className="sc-iAyFgw ejxWZG"
         id="js-dom-to-png-posts-summary"
       >
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "background": "rgba(255,255,255,.95)",
-              "border": "none",
-              "display": "flex",
-              "justifyContent": "center",
-              "maxHeight": "none",
-              "minHeight": "8rem",
-              "textAlign": "center",
-              "transition": "opacity 350ms ease-in-out",
-              "zIndex": 2,
-            }
-          }
+          className="sc-bwzfXH dXsGsm"
         >
           <div
-            style={
-              Object {
-                "background": "none",
-                "borderRadius": "2px",
-                "flex": 1,
-                "flexDirection": "row",
-              }
-            }
+            className="sc-bdVaJa fsNrov"
           >
             <div
               style={
@@ -221,13 +201,13 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
     }
   >
     <div
-      className="sc-kAzzGY djTmlN"
+      className="sc-kgoBCf eKtgtS"
     >
       <header
-        className="sc-chPdSV jjZuEt"
+        className="sc-kGXeez esQcyC"
       >
         <h2
-          className="sc-kgoBCf dgCWVb"
+          className="sc-kpOJdX hkatTF"
         >
           <span
             style={
@@ -245,21 +225,21 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
         </h2>
       </header>
       <div
-        className="sc-kEYyzF lgfOWu"
+        className="sc-iAyFgw ejxWZG"
         id="js-dom-to-png-posts-summary"
       >
         <ul
-          className="sc-hMqMXs izTvPq"
+          className="sc-kkGfuU iljRqu"
         >
           <li
-            className="sc-dnqmqq gsjOpQ"
+            className="sc-gZMcBi eklOQy"
             width="33.33%"
           >
             <div
-              className="sc-iwsKbI btmaIR"
+              className="sc-gqjmRU gggsyL"
             >
               <span
-                className="sc-htoDjs rBkkQ"
+                className="sc-iwsKbI ghjVYo"
               >
                 <span
                   data-tip={null}
@@ -279,7 +259,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                 </span>
               </span>
               <div
-                className="sc-gZMcBi jCgfWF"
+                className="sc-VigVT eVESgP"
               >
                 <span
                   style={
@@ -296,13 +276,13 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                   </span>
                 </span>
                 <div
-                  className="sc-EHOje faGiPL"
+                  className="sc-gzVnrw jPCrAy"
                 >
                   <div
-                    className="sc-bZQynM hNHnok"
+                    className="sc-htoDjs gNzaNl"
                   >
                     <div
-                      className="sc-ifAKCX imANia"
+                      className="sc-bZQynM bhDWTq"
                     >
                       <svg
                         fill="none"
@@ -325,7 +305,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                     </div>
                   </div>
                   <div
-                    className="sc-gzVnrw fXIzxI"
+                    className="sc-dnqmqq fSJNbt"
                   >
                     <span
                       style={
@@ -348,14 +328,14 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
             </div>
           </li>
           <li
-            className="sc-dnqmqq gsjOpQ"
+            className="sc-gZMcBi eklOQy"
             width="33.33%"
           >
             <div
-              className="sc-iwsKbI btmaIR"
+              className="sc-gqjmRU gggsyL"
             >
               <span
-                className="sc-htoDjs rBkkQ"
+                className="sc-iwsKbI ghjVYo"
               >
                 <span
                   data-tip={null}
@@ -375,7 +355,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                 </span>
               </span>
               <div
-                className="sc-gZMcBi jCgfWF"
+                className="sc-VigVT eVESgP"
               >
                 <span
                   style={
@@ -392,13 +372,13 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                   </span>
                 </span>
                 <div
-                  className="sc-EHOje faGiPL"
+                  className="sc-gzVnrw jPCrAy"
                 >
                   <div
-                    className="sc-bZQynM hNHnok"
+                    className="sc-htoDjs gNzaNl"
                   >
                     <div
-                      className="sc-ifAKCX imANia"
+                      className="sc-bZQynM bhDWTq"
                     >
                       <svg
                         fill="none"
@@ -421,7 +401,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                     </div>
                   </div>
                   <div
-                    className="sc-gzVnrw fXIzxI"
+                    className="sc-dnqmqq fSJNbt"
                   >
                     <span
                       style={
@@ -444,14 +424,14 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
             </div>
           </li>
           <li
-            className="sc-dnqmqq gsjOpQ"
+            className="sc-gZMcBi eklOQy"
             width="33.33%"
           >
             <div
-              className="sc-iwsKbI btmaIR"
+              className="sc-gqjmRU gggsyL"
             >
               <span
-                className="sc-htoDjs rBkkQ"
+                className="sc-iwsKbI ghjVYo"
               >
                 <span
                   data-tip={null}
@@ -471,7 +451,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                 </span>
               </span>
               <div
-                className="sc-gZMcBi jCgfWF"
+                className="sc-VigVT eVESgP"
               >
                 <span
                   style={
@@ -488,13 +468,13 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                   </span>
                 </span>
                 <div
-                  className="sc-EHOje faGiPL"
+                  className="sc-gzVnrw jPCrAy"
                 >
                   <div
-                    className="sc-bZQynM hNHnok"
+                    className="sc-htoDjs gNzaNl"
                   >
                     <div
-                      className="sc-ifAKCX imANia"
+                      className="sc-bZQynM bhDWTq"
                     >
                       <svg
                         fill="none"
@@ -517,7 +497,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                     </div>
                   </div>
                   <div
-                    className="sc-gzVnrw fXIzxI"
+                    className="sc-dnqmqq fSJNbt"
                   >
                     <span
                       style={
@@ -540,14 +520,14 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
             </div>
           </li>
           <li
-            className="sc-dnqmqq gsjOpQ"
+            className="sc-gZMcBi eklOQy"
             width="33.33%"
           >
             <div
-              className="sc-iwsKbI btmaIR"
+              className="sc-gqjmRU gggsyL"
             >
               <span
-                className="sc-htoDjs rBkkQ"
+                className="sc-iwsKbI ghjVYo"
               >
                 <span
                   data-tip={null}
@@ -567,7 +547,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                 </span>
               </span>
               <div
-                className="sc-gZMcBi jCgfWF"
+                className="sc-VigVT eVESgP"
               >
                 <span
                   style={
@@ -584,13 +564,13 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                   </span>
                 </span>
                 <div
-                  className="sc-EHOje faGiPL"
+                  className="sc-gzVnrw jPCrAy"
                 >
                   <div
-                    className="sc-bZQynM hNHnok"
+                    className="sc-htoDjs gNzaNl"
                   >
                     <div
-                      className="sc-ifAKCX imANia"
+                      className="sc-bZQynM bhDWTq"
                     >
                       <svg
                         fill="none"
@@ -613,7 +593,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                     </div>
                   </div>
                   <div
-                    className="sc-gzVnrw fXIzxI"
+                    className="sc-dnqmqq fSJNbt"
                   >
                     <span
                       style={
@@ -636,14 +616,14 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
             </div>
           </li>
           <li
-            className="sc-dnqmqq gsjOpQ"
+            className="sc-gZMcBi eklOQy"
             width="33.33%"
           >
             <div
-              className="sc-iwsKbI btmaIR"
+              className="sc-gqjmRU gggsyL"
             >
               <span
-                className="sc-htoDjs rBkkQ"
+                className="sc-iwsKbI ghjVYo"
               >
                 <span
                   data-tip={null}
@@ -663,7 +643,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                 </span>
               </span>
               <div
-                className="sc-gZMcBi jCgfWF"
+                className="sc-VigVT eVESgP"
               >
                 <span
                   style={
@@ -683,14 +663,14 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
             </div>
           </li>
           <li
-            className="sc-dnqmqq gsjOpQ"
+            className="sc-gZMcBi eklOQy"
             width="33.33%"
           >
             <div
-              className="sc-iwsKbI btmaIR"
+              className="sc-gqjmRU gggsyL"
             >
               <span
-                className="sc-htoDjs rBkkQ"
+                className="sc-iwsKbI ghjVYo"
               >
                 <span
                   data-tip={null}
@@ -710,7 +690,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                 </span>
               </span>
               <div
-                className="sc-gZMcBi jCgfWF"
+                className="sc-VigVT eVESgP"
               >
                 <span
                   style={
@@ -727,13 +707,13 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                   </span>
                 </span>
                 <div
-                  className="sc-EHOje faGiPL"
+                  className="sc-gzVnrw jPCrAy"
                 >
                   <div
-                    className="sc-bZQynM hNHnok"
+                    className="sc-htoDjs gNzaNl"
                   >
                     <div
-                      className="sc-ifAKCX imANia"
+                      className="sc-bZQynM bhDWTq"
                     >
                       <svg
                         fill="none"
@@ -756,7 +736,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                     </div>
                   </div>
                   <div
-                    className="sc-gzVnrw fXIzxI"
+                    className="sc-dnqmqq fSJNbt"
                   >
                     <span
                       style={

@@ -16,7 +16,7 @@ const ChartAndFooter = ({
   profiles,
 }) => {
   if (loading) {
-    return <Loading active noBorder />;
+    return <Loading active noBorder large />;
   } else if (!metrics || !metrics[metricKey]) {
     return <NoData />;
   }

@@ -847,13 +847,13 @@ exports[`Snapshots LogoUpload renders uploading state 1`] = `
 exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
 <span>
   <div
-    className="sc-gipzik kOwuni"
+    className="sc-Rmtcm kLTtGy"
   >
     <span
-      className="sc-iRbamj iUBILw"
+      className="sc-gipzik kIRFxz"
     >
       <div
-        className="sc-kEYyzF bIBmwL"
+        className="sc-iAyFgw cCIrYd"
         size="16px"
       >
         <img
@@ -920,7 +920,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
         </div>
       </div>
       <div
-        className="sc-jlyJG cYETAt"
+        className="sc-csuQGl kjtdmC"
       >
         <span
           style={
@@ -933,7 +933,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
           }
         >
           <span
-            className="sc-gPEVay hclups"
+            className="sc-jlyJG gBkPre"
           >
             @moreofmorris
           </span>
@@ -941,10 +941,10 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
       </div>
     </span>
     <span
-      className="sc-iRbamj iUBILw"
+      className="sc-gipzik kIRFxz"
     >
       <div
-        className="sc-kEYyzF bIBmwL"
+        className="sc-iAyFgw cCIrYd"
         size="16px"
       >
         <img
@@ -1011,7 +1011,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
         </div>
       </div>
       <div
-        className="sc-jlyJG cYETAt"
+        className="sc-csuQGl kjtdmC"
       >
         <span
           style={
@@ -1024,7 +1024,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
           }
         >
           <span
-            className="sc-gPEVay hclups"
+            className="sc-jlyJG gBkPre"
           >
             @roughquest
           </span>
@@ -1032,10 +1032,10 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
       </div>
     </span>
     <span
-      className="sc-iRbamj iUBILw"
+      className="sc-gipzik kIRFxz"
     >
       <div
-        className="sc-kEYyzF bIBmwL"
+        className="sc-iAyFgw cCIrYd"
         size="16px"
       >
         <img
@@ -1102,7 +1102,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
         </div>
       </div>
       <div
-        className="sc-jlyJG cYETAt"
+        className="sc-csuQGl kjtdmC"
       >
         <span
           style={
@@ -1115,7 +1115,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
           }
         >
           <span
-            className="sc-gPEVay hclups"
+            className="sc-jlyJG gBkPre"
           >
             Roughquest
           </span>
@@ -1129,10 +1129,10 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
 exports[`Snapshots ProfileLegend renders the profile legend 1`] = `
 <span>
   <span
-    className="sc-iRbamj iUBILw"
+    className="sc-gipzik kIRFxz"
   >
     <div
-      className="sc-kEYyzF bIBmwL"
+      className="sc-iAyFgw cCIrYd"
       size="16px"
     >
       <img
@@ -1199,7 +1199,7 @@ exports[`Snapshots ProfileLegend renders the profile legend 1`] = `
       </div>
     </div>
     <div
-      className="sc-jlyJG cYETAt"
+      className="sc-csuQGl kjtdmC"
     >
       <span
         style={
@@ -1212,7 +1212,7 @@ exports[`Snapshots ProfileLegend renders the profile legend 1`] = `
         }
       >
         <span
-          className="sc-gPEVay hclups"
+          className="sc-jlyJG gBkPre"
         >
           @moreofmorris
         </span>
@@ -1225,14 +1225,14 @@ exports[`Snapshots ProfileLegend renders the profile legend 1`] = `
 exports[`Snapshots Report render only the multi-profile legend if that is available 1`] = `
 <span>
   <section
-    className="sc-hzNEM iiobtj"
+    className="sc-chbbiW exhHIw"
   >
     <div
-      className="sc-jtggT hKpupq"
+      className="sc-ebFjAB eESuIu"
       id="report-page"
     >
       <div
-        className="sc-ebFjAB jUioVa"
+        className="sc-jKVCRD kQKYWp"
       >
         <span
           style={
@@ -1245,7 +1245,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
           }
         >
           <div
-            className="sc-kaNhvL dfSHfD"
+            className="sc-LKuAh xmDfH"
           >
             <div
               className="sc-EHOje hKVWKI"
@@ -1312,13 +1312,13 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
               }
             >
               <h1
-                className="sc-jKVCRD hLWfLp"
+                className="sc-kaNhvL MiJkq"
               >
                 Weekly Sync Report
               </h1>
             </button>
             <div
-              className="sc-LKuAh jLaeaf"
+              className="sc-iBEsjs hoFCym"
             >
               <svg
                 height="100%"
@@ -1366,16 +1366,16 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
         </span>
       </div>
       <section
-        className="sc-ipZHIp iwCxRw"
+        className="sc-iGrrsa guMFhS"
       >
         <div
-          className="sc-dEoRIm dWJfCV"
+          className="sc-jtggT biDmVU"
         >
           <div
-            className="sc-iGrrsa erLuMd"
+            className="sc-bmyXtO gmtfLH"
           >
             <h2
-              className="sc-eHgmQL lisssw"
+              className="sc-jWBwVP kAqDQk"
             >
               <span
                 style={
@@ -1393,16 +1393,16 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
             </h2>
           </div>
           <div
-            className="sc-bmyXtO gBgSYC"
+            className="sc-dEoRIm cHLhdn"
           >
             <div
-              className="sc-gipzik kOwuni"
+              className="sc-Rmtcm kLTtGy"
             >
               <span
-                className="sc-iRbamj iUBILw"
+                className="sc-gipzik kIRFxz"
               >
                 <div
-                  className="sc-kEYyzF bIBmwL"
+                  className="sc-iAyFgw cCIrYd"
                   size="16px"
                 >
                   <img
@@ -1469,7 +1469,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                   </div>
                 </div>
                 <div
-                  className="sc-jlyJG cYETAt"
+                  className="sc-csuQGl kjtdmC"
                 >
                   <span
                     style={
@@ -1482,7 +1482,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                     }
                   >
                     <span
-                      className="sc-gPEVay hclups"
+                      className="sc-jlyJG gBkPre"
                     >
                       @buffer
                     </span>
@@ -1490,10 +1490,10 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                 </div>
               </span>
               <span
-                className="sc-iRbamj iUBILw"
+                className="sc-gipzik kIRFxz"
               >
                 <div
-                  className="sc-kEYyzF bIBmwL"
+                  className="sc-iAyFgw cCIrYd"
                   size="16px"
                 >
                   <img
@@ -1575,7 +1575,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                   </div>
                 </div>
                 <div
-                  className="sc-jlyJG cYETAt"
+                  className="sc-csuQGl kjtdmC"
                 >
                   <span
                     style={
@@ -1588,7 +1588,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                     }
                   >
                     <span
-                      className="sc-gPEVay hclups"
+                      className="sc-jlyJG gBkPre"
                     >
                       buffer
                     </span>
@@ -1599,16 +1599,16 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
           </div>
         </div>
         <div
-          className="sc-gqjmRU fPzBxt"
+          className="sc-jTzLTM hzuoIj"
         >
           <div
-            className="sc-VigVT fTnMbY"
+            className="sc-fjdhpX jKEbEC"
           >
             <div
-              className="sc-jTzLTM hNbVUD"
+              className="sc-jzJRlG eWaUDG"
             />
             <h1
-              className="sc-fjdhpX cKbKQK"
+              className="sc-cSHVUG iLBYtn"
             >
               <span
                 style={
@@ -1634,36 +1634,16 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
 exports[`Snapshots Report renders a loading report 1`] = `
 <span>
   <section
-    className="sc-hzNEM iiobtj"
+    className="sc-chbbiW exhHIw"
   >
     <div
-      className="sc-iBEsjs gtCACS"
+      className="sc-hzNEM bwMOQx"
     >
       <div
-        style={
-          Object {
-            "alignItems": "center",
-            "background": "transparent",
-            "border": "none",
-            "display": "flex",
-            "justifyContent": "center",
-            "maxHeight": "none",
-            "minHeight": "8rem",
-            "textAlign": "center",
-            "transition": "opacity 350ms ease-in-out",
-            "zIndex": 2,
-          }
-        }
+        className="sc-VigVT iLurmb"
       >
         <div
-          style={
-            Object {
-              "background": "none",
-              "borderRadius": "2px",
-              "flex": 1,
-              "flexDirection": "row",
-            }
-          }
+          className="sc-gqjmRU kZxquB"
         >
           <div
             style={
@@ -1745,14 +1725,14 @@ exports[`Snapshots Report renders a loading report 1`] = `
 exports[`Snapshots Report renders a report in edit mode 1`] = `
 <span>
   <section
-    className="sc-hzNEM iiobtj"
+    className="sc-chbbiW exhHIw"
   >
     <div
-      className="sc-jtggT hKpupq"
+      className="sc-ebFjAB eESuIu"
       id="report-page"
     >
       <div
-        className="sc-ebFjAB jUioVa"
+        className="sc-jKVCRD kQKYWp"
       >
         <span
           style={
@@ -1797,16 +1777,16 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         </span>
       </div>
       <section
-        className="sc-ipZHIp iwCxRw"
+        className="sc-iGrrsa guMFhS"
       >
         <div
-          className="sc-dEoRIm dWJfCV"
+          className="sc-jtggT biDmVU"
         >
           <div
-            className="sc-iGrrsa erLuMd"
+            className="sc-bmyXtO gmtfLH"
           >
             <h2
-              className="sc-eHgmQL lisssw"
+              className="sc-jWBwVP kAqDQk"
             >
               <span
                 style={
@@ -1823,13 +1803,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </h2>
           </div>
           <div
-            className="sc-bmyXtO gBgSYC"
+            className="sc-dEoRIm cHLhdn"
           >
             <span
-              className="sc-iRbamj iUBILw"
+              className="sc-gipzik kIRFxz"
             >
               <div
-                className="sc-kEYyzF bIBmwL"
+                className="sc-iAyFgw cCIrYd"
                 size="16px"
               >
                 <img
@@ -1896,7 +1876,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </div>
               </div>
               <div
-                className="sc-jlyJG cYETAt"
+                className="sc-csuQGl kjtdmC"
               >
                 <span
                   style={
@@ -1909,7 +1889,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   }
                 >
                   <span
-                    className="sc-gPEVay hclups"
+                    className="sc-jlyJG gBkPre"
                   >
                     Buffer
                   </span>
@@ -1919,17 +1899,17 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
           </div>
         </div>
         <ul
-          className="sc-btzYZH kmuVoK"
+          className="sc-bYSBpT dCBABV"
         >
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -1949,7 +1929,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -1966,13 +1946,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -1995,7 +1975,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -2018,14 +1998,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -2045,7 +2025,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -2062,13 +2042,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -2091,7 +2071,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -2114,14 +2094,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -2141,7 +2121,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -2158,13 +2138,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -2187,7 +2167,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -2210,14 +2190,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -2237,7 +2217,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -2254,13 +2234,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -2283,7 +2263,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -2306,14 +2286,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -2333,7 +2313,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -2353,14 +2333,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -2380,7 +2360,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -2397,13 +2377,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -2426,7 +2406,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -2449,14 +2429,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -2476,7 +2456,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -2493,13 +2473,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -2522,7 +2502,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -2545,14 +2525,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -2572,7 +2552,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -2589,13 +2569,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -2618,7 +2598,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -2643,16 +2623,16 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         </ul>
       </section>
       <section
-        className="sc-ipZHIp iwCxRw"
+        className="sc-iGrrsa guMFhS"
       >
         <div
-          className="sc-dEoRIm dWJfCV"
+          className="sc-jtggT biDmVU"
         >
           <div
-            className="sc-iGrrsa erLuMd"
+            className="sc-bmyXtO gmtfLH"
           >
             <h2
-              className="sc-eHgmQL lisssw"
+              className="sc-jWBwVP kAqDQk"
             >
               <span
                 style={
@@ -2669,13 +2649,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </h2>
           </div>
           <div
-            className="sc-bmyXtO gBgSYC"
+            className="sc-dEoRIm cHLhdn"
           >
             <span
-              className="sc-iRbamj iUBILw"
+              className="sc-gipzik kIRFxz"
             >
               <div
-                className="sc-kEYyzF bIBmwL"
+                className="sc-iAyFgw cCIrYd"
                 size="16px"
               >
                 <img
@@ -2742,7 +2722,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </div>
               </div>
               <div
-                className="sc-jlyJG cYETAt"
+                className="sc-csuQGl kjtdmC"
               >
                 <span
                   style={
@@ -2755,7 +2735,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   }
                 >
                   <span
-                    className="sc-gPEVay hclups"
+                    className="sc-jlyJG gBkPre"
                   >
                     Buffer
                   </span>
@@ -2765,17 +2745,17 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
           </div>
         </div>
         <ul
-          className="sc-btzYZH kmuVoK"
+          className="sc-bYSBpT dCBABV"
         >
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -2795,7 +2775,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -2812,13 +2792,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -2841,7 +2821,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -2864,14 +2844,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -2891,7 +2871,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -2908,13 +2888,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -2937,7 +2917,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -2960,14 +2940,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -2987,7 +2967,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -3004,13 +2984,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -3033,7 +3013,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -3056,14 +3036,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -3083,7 +3063,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -3100,13 +3080,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -3129,7 +3109,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -3152,14 +3132,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -3179,7 +3159,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -3199,14 +3179,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -3226,7 +3206,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -3243,13 +3223,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -3272,7 +3252,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -3295,14 +3275,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -3322,7 +3302,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -3339,13 +3319,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -3368,7 +3348,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -3391,14 +3371,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -3418,7 +3398,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -3435,13 +3415,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -3464,7 +3444,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -3489,16 +3469,16 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
         </ul>
       </section>
       <section
-        className="sc-ipZHIp iwCxRw"
+        className="sc-iGrrsa guMFhS"
       >
         <div
-          className="sc-dEoRIm dWJfCV"
+          className="sc-jtggT biDmVU"
         >
           <div
-            className="sc-iGrrsa erLuMd"
+            className="sc-bmyXtO gmtfLH"
           >
             <h2
-              className="sc-eHgmQL lisssw"
+              className="sc-jWBwVP kAqDQk"
             >
               <span
                 style={
@@ -3515,13 +3495,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </h2>
           </div>
           <div
-            className="sc-bmyXtO gBgSYC"
+            className="sc-dEoRIm cHLhdn"
           >
             <span
-              className="sc-iRbamj iUBILw"
+              className="sc-gipzik kIRFxz"
             >
               <div
-                className="sc-kEYyzF bIBmwL"
+                className="sc-iAyFgw cCIrYd"
                 size="16px"
               >
                 <img
@@ -3588,7 +3568,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </div>
               </div>
               <div
-                className="sc-jlyJG cYETAt"
+                className="sc-csuQGl kjtdmC"
               >
                 <span
                   style={
@@ -3601,7 +3581,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   }
                 >
                   <span
-                    className="sc-gPEVay hclups"
+                    className="sc-jlyJG gBkPre"
                   >
                     Buffer
                   </span>
@@ -3611,17 +3591,17 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
           </div>
         </div>
         <ul
-          className="sc-btzYZH kmuVoK"
+          className="sc-bYSBpT dCBABV"
         >
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -3641,7 +3621,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -3658,13 +3638,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -3687,7 +3667,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -3710,14 +3690,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -3737,7 +3717,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -3754,13 +3734,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -3783,7 +3763,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -3806,14 +3786,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -3833,7 +3813,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -3850,13 +3830,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -3879,7 +3859,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -3902,14 +3882,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -3929,7 +3909,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -3946,13 +3926,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -3975,7 +3955,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -3998,14 +3978,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -4025,7 +4005,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -4045,14 +4025,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -4072,7 +4052,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -4089,13 +4069,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -4118,7 +4098,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -4141,14 +4121,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -4168,7 +4148,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -4185,13 +4165,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -4214,7 +4194,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -4237,14 +4217,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -4264,7 +4244,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -4281,13 +4261,13 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -4310,7 +4290,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -4342,14 +4322,14 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
 exports[`Snapshots Report renders a report with summary table and logo 1`] = `
 <span>
   <section
-    className="sc-hzNEM iiobtj"
+    className="sc-chbbiW exhHIw"
   >
     <div
-      className="sc-jtggT hKpupq"
+      className="sc-ebFjAB eESuIu"
       id="report-page"
     >
       <div
-        className="sc-ebFjAB jUioVa"
+        className="sc-jKVCRD kQKYWp"
       >
         <span
           style={
@@ -4362,7 +4342,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
           }
         >
           <div
-            className="sc-kaNhvL dfSHfD"
+            className="sc-LKuAh xmDfH"
           >
             <div
               className="sc-EHOje hKVWKI"
@@ -4454,13 +4434,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
               }
             >
               <h1
-                className="sc-jKVCRD hLWfLp"
+                className="sc-kaNhvL MiJkq"
               >
                 Weekly Sync Report
               </h1>
             </button>
             <div
-              className="sc-LKuAh jLaeaf"
+              className="sc-iBEsjs hoFCym"
             >
               <svg
                 height="100%"
@@ -4508,16 +4488,16 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
         </span>
       </div>
       <section
-        className="sc-ipZHIp iwCxRw"
+        className="sc-iGrrsa guMFhS"
       >
         <div
-          className="sc-dEoRIm dWJfCV"
+          className="sc-jtggT biDmVU"
         >
           <div
-            className="sc-iGrrsa erLuMd"
+            className="sc-bmyXtO gmtfLH"
           >
             <h2
-              className="sc-eHgmQL lisssw"
+              className="sc-jWBwVP kAqDQk"
             >
               <span
                 style={
@@ -4534,13 +4514,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             </h2>
           </div>
           <div
-            className="sc-bmyXtO gBgSYC"
+            className="sc-dEoRIm cHLhdn"
           >
             <span
-              className="sc-iRbamj iUBILw"
+              className="sc-gipzik kIRFxz"
             >
               <div
-                className="sc-kEYyzF bIBmwL"
+                className="sc-iAyFgw cCIrYd"
                 size="16px"
               >
                 <img
@@ -4607,7 +4587,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                 </div>
               </div>
               <div
-                className="sc-jlyJG cYETAt"
+                className="sc-csuQGl kjtdmC"
               >
                 <span
                   style={
@@ -4620,7 +4600,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                   }
                 >
                   <span
-                    className="sc-gPEVay hclups"
+                    className="sc-jlyJG gBkPre"
                   >
                     Buffer
                   </span>
@@ -4630,17 +4610,17 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
           </div>
         </div>
         <ul
-          className="sc-btzYZH kmuVoK"
+          className="sc-bYSBpT dCBABV"
         >
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -4660,7 +4640,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -4677,13 +4657,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -4706,7 +4686,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -4729,14 +4709,14 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -4756,7 +4736,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -4773,13 +4753,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -4802,7 +4782,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -4825,14 +4805,14 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -4852,7 +4832,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -4869,13 +4849,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -4898,7 +4878,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -4921,14 +4901,14 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -4948,7 +4928,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -4965,13 +4945,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -4994,7 +4974,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -5017,14 +4997,14 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -5044,7 +5024,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -5064,14 +5044,14 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -5091,7 +5071,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -5108,13 +5088,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -5137,7 +5117,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -5160,14 +5140,14 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -5187,7 +5167,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -5204,13 +5184,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -5233,7 +5213,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -5256,14 +5236,14 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -5283,7 +5263,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -5300,13 +5280,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -5329,7 +5309,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -5354,16 +5334,16 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
         </ul>
       </section>
       <section
-        className="sc-ipZHIp iwCxRw"
+        className="sc-iGrrsa guMFhS"
       >
         <div
-          className="sc-dEoRIm dWJfCV"
+          className="sc-jtggT biDmVU"
         >
           <div
-            className="sc-iGrrsa erLuMd"
+            className="sc-bmyXtO gmtfLH"
           >
             <h2
-              className="sc-eHgmQL lisssw"
+              className="sc-jWBwVP kAqDQk"
             >
               <span
                 style={
@@ -5380,13 +5360,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             </h2>
           </div>
           <div
-            className="sc-bmyXtO gBgSYC"
+            className="sc-dEoRIm cHLhdn"
           >
             <span
-              className="sc-iRbamj iUBILw"
+              className="sc-gipzik kIRFxz"
             >
               <div
-                className="sc-kEYyzF bIBmwL"
+                className="sc-iAyFgw cCIrYd"
                 size="16px"
               >
                 <img
@@ -5453,7 +5433,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                 </div>
               </div>
               <div
-                className="sc-jlyJG cYETAt"
+                className="sc-csuQGl kjtdmC"
               >
                 <span
                   style={
@@ -5466,7 +5446,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                   }
                 >
                   <span
-                    className="sc-gPEVay hclups"
+                    className="sc-jlyJG gBkPre"
                   >
                     Buffer
                   </span>
@@ -5476,17 +5456,17 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
           </div>
         </div>
         <ul
-          className="sc-btzYZH kmuVoK"
+          className="sc-bYSBpT dCBABV"
         >
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -5506,7 +5486,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -5523,13 +5503,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -5552,7 +5532,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -5575,14 +5555,14 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -5602,7 +5582,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -5619,13 +5599,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -5648,7 +5628,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -5671,14 +5651,14 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -5698,7 +5678,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -5715,13 +5695,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -5744,7 +5724,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -5767,14 +5747,14 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -5794,7 +5774,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -5811,13 +5791,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -5840,7 +5820,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -5863,14 +5843,14 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -5890,7 +5870,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -5910,14 +5890,14 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -5937,7 +5917,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -5954,13 +5934,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -5983,7 +5963,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -6006,14 +5986,14 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -6033,7 +6013,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -6050,13 +6030,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -6079,7 +6059,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -6102,14 +6082,14 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -6129,7 +6109,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -6146,13 +6126,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -6175,7 +6155,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -6200,16 +6180,16 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
         </ul>
       </section>
       <section
-        className="sc-ipZHIp iwCxRw"
+        className="sc-iGrrsa guMFhS"
       >
         <div
-          className="sc-dEoRIm dWJfCV"
+          className="sc-jtggT biDmVU"
         >
           <div
-            className="sc-iGrrsa erLuMd"
+            className="sc-bmyXtO gmtfLH"
           >
             <h2
-              className="sc-eHgmQL lisssw"
+              className="sc-jWBwVP kAqDQk"
             >
               <span
                 style={
@@ -6226,13 +6206,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             </h2>
           </div>
           <div
-            className="sc-bmyXtO gBgSYC"
+            className="sc-dEoRIm cHLhdn"
           >
             <span
-              className="sc-iRbamj iUBILw"
+              className="sc-gipzik kIRFxz"
             >
               <div
-                className="sc-kEYyzF bIBmwL"
+                className="sc-iAyFgw cCIrYd"
                 size="16px"
               >
                 <img
@@ -6299,7 +6279,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                 </div>
               </div>
               <div
-                className="sc-jlyJG cYETAt"
+                className="sc-csuQGl kjtdmC"
               >
                 <span
                   style={
@@ -6312,7 +6292,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                   }
                 >
                   <span
-                    className="sc-gPEVay hclups"
+                    className="sc-jlyJG gBkPre"
                   >
                     Buffer
                   </span>
@@ -6322,17 +6302,17 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
           </div>
         </div>
         <ul
-          className="sc-btzYZH kmuVoK"
+          className="sc-bYSBpT dCBABV"
         >
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -6352,7 +6332,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -6369,13 +6349,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -6398,7 +6378,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -6421,14 +6401,14 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -6448,7 +6428,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -6465,13 +6445,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -6494,7 +6474,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -6517,14 +6497,14 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -6544,7 +6524,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -6561,13 +6541,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -6590,7 +6570,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -6613,14 +6593,14 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -6640,7 +6620,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -6657,13 +6637,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -6686,7 +6666,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -6709,14 +6689,14 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -6736,7 +6716,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -6756,14 +6736,14 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -6783,7 +6763,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -6800,13 +6780,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -6829,7 +6809,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -6852,14 +6832,14 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -6879,7 +6859,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -6896,13 +6876,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -6925,7 +6905,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -6948,14 +6928,14 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -6975,7 +6955,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -6992,13 +6972,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -7021,7 +7001,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -7053,14 +7033,14 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
 exports[`Snapshots Report renders a report with summary table and no logo 1`] = `
 <span>
   <section
-    className="sc-hzNEM iiobtj"
+    className="sc-chbbiW exhHIw"
   >
     <div
-      className="sc-jtggT hKpupq"
+      className="sc-ebFjAB eESuIu"
       id="report-page"
     >
       <div
-        className="sc-ebFjAB jUioVa"
+        className="sc-jKVCRD kQKYWp"
       >
         <span
           style={
@@ -7073,7 +7053,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
           }
         >
           <div
-            className="sc-kaNhvL dfSHfD"
+            className="sc-LKuAh xmDfH"
           >
             <div
               className="sc-EHOje hKVWKI"
@@ -7140,13 +7120,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
               }
             >
               <h1
-                className="sc-jKVCRD hLWfLp"
+                className="sc-kaNhvL MiJkq"
               >
                 Weekly Sync Report
               </h1>
             </button>
             <div
-              className="sc-LKuAh jLaeaf"
+              className="sc-iBEsjs hoFCym"
             >
               <svg
                 height="100%"
@@ -7194,16 +7174,16 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
         </span>
       </div>
       <section
-        className="sc-ipZHIp iwCxRw"
+        className="sc-iGrrsa guMFhS"
       >
         <div
-          className="sc-dEoRIm dWJfCV"
+          className="sc-jtggT biDmVU"
         >
           <div
-            className="sc-iGrrsa erLuMd"
+            className="sc-bmyXtO gmtfLH"
           >
             <h2
-              className="sc-eHgmQL lisssw"
+              className="sc-jWBwVP kAqDQk"
             >
               <span
                 style={
@@ -7220,13 +7200,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             </h2>
           </div>
           <div
-            className="sc-bmyXtO gBgSYC"
+            className="sc-dEoRIm cHLhdn"
           >
             <span
-              className="sc-iRbamj iUBILw"
+              className="sc-gipzik kIRFxz"
             >
               <div
-                className="sc-kEYyzF bIBmwL"
+                className="sc-iAyFgw cCIrYd"
                 size="16px"
               >
                 <img
@@ -7293,7 +7273,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                 </div>
               </div>
               <div
-                className="sc-jlyJG cYETAt"
+                className="sc-csuQGl kjtdmC"
               >
                 <span
                   style={
@@ -7306,7 +7286,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   }
                 >
                   <span
-                    className="sc-gPEVay hclups"
+                    className="sc-jlyJG gBkPre"
                   >
                     Buffer
                   </span>
@@ -7316,17 +7296,17 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
           </div>
         </div>
         <ul
-          className="sc-btzYZH kmuVoK"
+          className="sc-bYSBpT dCBABV"
         >
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -7346,7 +7326,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -7363,13 +7343,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -7392,7 +7372,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -7415,14 +7395,14 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -7442,7 +7422,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -7459,13 +7439,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -7488,7 +7468,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -7511,14 +7491,14 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -7538,7 +7518,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -7555,13 +7535,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -7584,7 +7564,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -7607,14 +7587,14 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -7634,7 +7614,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -7651,13 +7631,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -7680,7 +7660,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -7703,14 +7683,14 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -7730,7 +7710,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -7750,14 +7730,14 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -7777,7 +7757,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -7794,13 +7774,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -7823,7 +7803,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -7846,14 +7826,14 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -7873,7 +7853,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -7890,13 +7870,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -7919,7 +7899,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -7942,14 +7922,14 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -7969,7 +7949,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -7986,13 +7966,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -8015,7 +7995,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -8040,16 +8020,16 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
         </ul>
       </section>
       <section
-        className="sc-ipZHIp iwCxRw"
+        className="sc-iGrrsa guMFhS"
       >
         <div
-          className="sc-dEoRIm dWJfCV"
+          className="sc-jtggT biDmVU"
         >
           <div
-            className="sc-iGrrsa erLuMd"
+            className="sc-bmyXtO gmtfLH"
           >
             <h2
-              className="sc-eHgmQL lisssw"
+              className="sc-jWBwVP kAqDQk"
             >
               <span
                 style={
@@ -8066,13 +8046,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             </h2>
           </div>
           <div
-            className="sc-bmyXtO gBgSYC"
+            className="sc-dEoRIm cHLhdn"
           >
             <span
-              className="sc-iRbamj iUBILw"
+              className="sc-gipzik kIRFxz"
             >
               <div
-                className="sc-kEYyzF bIBmwL"
+                className="sc-iAyFgw cCIrYd"
                 size="16px"
               >
                 <img
@@ -8139,7 +8119,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                 </div>
               </div>
               <div
-                className="sc-jlyJG cYETAt"
+                className="sc-csuQGl kjtdmC"
               >
                 <span
                   style={
@@ -8152,7 +8132,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   }
                 >
                   <span
-                    className="sc-gPEVay hclups"
+                    className="sc-jlyJG gBkPre"
                   >
                     Buffer
                   </span>
@@ -8162,17 +8142,17 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
           </div>
         </div>
         <ul
-          className="sc-btzYZH kmuVoK"
+          className="sc-bYSBpT dCBABV"
         >
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -8192,7 +8172,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -8209,13 +8189,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -8238,7 +8218,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -8261,14 +8241,14 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -8288,7 +8268,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -8305,13 +8285,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -8334,7 +8314,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -8357,14 +8337,14 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -8384,7 +8364,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -8401,13 +8381,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -8430,7 +8410,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -8453,14 +8433,14 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -8480,7 +8460,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -8497,13 +8477,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -8526,7 +8506,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -8549,14 +8529,14 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -8576,7 +8556,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -8596,14 +8576,14 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -8623,7 +8603,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -8640,13 +8620,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -8669,7 +8649,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -8692,14 +8672,14 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -8719,7 +8699,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -8736,13 +8716,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -8765,7 +8745,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -8788,14 +8768,14 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -8815,7 +8795,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -8832,13 +8812,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -8861,7 +8841,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -8886,16 +8866,16 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
         </ul>
       </section>
       <section
-        className="sc-ipZHIp iwCxRw"
+        className="sc-iGrrsa guMFhS"
       >
         <div
-          className="sc-dEoRIm dWJfCV"
+          className="sc-jtggT biDmVU"
         >
           <div
-            className="sc-iGrrsa erLuMd"
+            className="sc-bmyXtO gmtfLH"
           >
             <h2
-              className="sc-eHgmQL lisssw"
+              className="sc-jWBwVP kAqDQk"
             >
               <span
                 style={
@@ -8912,13 +8892,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             </h2>
           </div>
           <div
-            className="sc-bmyXtO gBgSYC"
+            className="sc-dEoRIm cHLhdn"
           >
             <span
-              className="sc-iRbamj iUBILw"
+              className="sc-gipzik kIRFxz"
             >
               <div
-                className="sc-kEYyzF bIBmwL"
+                className="sc-iAyFgw cCIrYd"
                 size="16px"
               >
                 <img
@@ -8985,7 +8965,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                 </div>
               </div>
               <div
-                className="sc-jlyJG cYETAt"
+                className="sc-csuQGl kjtdmC"
               >
                 <span
                   style={
@@ -8998,7 +8978,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   }
                 >
                   <span
-                    className="sc-gPEVay hclups"
+                    className="sc-jlyJG gBkPre"
                   >
                     Buffer
                   </span>
@@ -9008,17 +8988,17 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
           </div>
         </div>
         <ul
-          className="sc-btzYZH kmuVoK"
+          className="sc-bYSBpT dCBABV"
         >
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -9038,7 +9018,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -9055,13 +9035,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -9084,7 +9064,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -9107,14 +9087,14 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -9134,7 +9114,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -9151,13 +9131,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -9180,7 +9160,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -9203,14 +9183,14 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -9230,7 +9210,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -9247,13 +9227,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -9276,7 +9256,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -9299,14 +9279,14 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -9326,7 +9306,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -9343,13 +9323,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -9372,7 +9352,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -9395,14 +9375,14 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -9422,7 +9402,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -9442,14 +9422,14 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -9469,7 +9449,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -9486,13 +9466,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -9515,7 +9495,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -9538,14 +9518,14 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -9565,7 +9545,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -9582,13 +9562,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -9611,7 +9591,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={
@@ -9634,14 +9614,14 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             </div>
           </li>
           <li
-            className="sc-kGXeez kJDUQc"
+            className="sc-dxgOiQ fKyTyB"
             width="25%"
           >
             <div
-              className="sc-kpOJdX LsipW"
+              className="sc-ckVGcZ kMhhDE"
             >
               <span
-                className="sc-kgoBCf NXKyp"
+                className="sc-kpOJdX jPtAKo"
               >
                 <span
                   data-tip={null}
@@ -9661,7 +9641,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                 </span>
               </span>
               <div
-                className="sc-dxgOiQ fApWfA"
+                className="sc-jKJlTe dCPwhQ"
               >
                 <span
                   style={
@@ -9678,13 +9658,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   </span>
                 </span>
                 <div
-                  className="sc-cSHVUG cBUnPO"
+                  className="sc-chPdSV jzMHaP"
                 >
                   <div
-                    className="sc-kAzzGY cOAhjP"
+                    className="sc-kgoBCf iujlmc"
                   >
                     <div
-                      className="sc-jzJRlG hInGBH"
+                      className="sc-kAzzGY cnJubn"
                     >
                       <svg
                         fill="none"
@@ -9707,7 +9687,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                     </div>
                   </div>
                   <div
-                    className="sc-chPdSV dYwWfS"
+                    className="sc-kGXeez cGxapO"
                   >
                     <span
                       style={

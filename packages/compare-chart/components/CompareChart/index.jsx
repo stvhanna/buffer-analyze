@@ -37,7 +37,6 @@ const ChartContainer = styled.div`
   padding: 0;
   margin: 0 auto;
   position: relative;
-  min-height: 474px;
 `;
 
 function getStartDate(dailyData) {
@@ -144,11 +143,7 @@ const CompareChart = ({
   let header = null;
   const dailyData = dailyMode === 1 ? totalPeriodDaily : daily;
   if (loading) {
-    content = (
-      <Container>
-        <Loading active noBorder />
-      </Container>
-    );
+    content = <Loading active noBorder large />;
   } else {
     content = (
       <ChartWithFooter

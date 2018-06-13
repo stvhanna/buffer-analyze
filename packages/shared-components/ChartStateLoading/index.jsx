@@ -1,40 +1,41 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import {
-  geyser,
-} from '@bufferapp/components/style/color';
+import styled from 'styled-components';
+import { geyser } from '@bufferapp/components/style/color';
 import Loader from '@bufferapp/components/Loader';
 
-const loaderContainer = {
-  background: 'none',
-  borderRadius: '2px',
-  flexDirection: 'row',
-  flex: 1,
-};
+const Container = styled.div`
+  background: none;
+  border-radius: 2px;
+  flex-direction: row;
+  flex: 1;
+`;
 
-const Loading = ({ text, maxHeight, noBorder, transparent }) => {
-  const style = {
-    zIndex: 2,
-    textAlign: 'center',
-    border: noBorder ? 'none' : `solid 1px ${geyser}`,
-    background: transparent ? 'transparent' : 'rgba(255,255,255,.95)',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    minHeight: '8rem',
-    transition: 'opacity 350ms ease-in-out',
-    maxHeight: maxHeight || 'none',
-  };
+const Wrapper = styled.div`
+  z-index: 2;
+  text-align: center;
+  border: ${props => (props.noBorder ? 'none' : `solid 1px ${geyser}`)};
+  background: ${props => (props.transparent ? 'transparent' : 'rgba(255,255,255,.95)')};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: ${props => (props.large ? '20rem' : '8rem')};
+  max-height: ${props => (props.maxHeight ? props.maxHeight : 'none')};
+  transition: opacity 350ms ease-in-out;
+`;
 
-  return (
-    <div style={style}>
-      <div style={loaderContainer}>
-        <Loader>{text}</Loader>
-      </div>
-    </div>
-  );
-};
+const Loading = ({ text, maxHeight, noBorder, transparent, large }) => (
+  <Wrapper
+    noBorder={noBorder}
+    transparent={transparent}
+    large={large}
+    maxHeight={maxHeight}
+  >
+    <Container>
+      <Loader>{text}</Loader>
+    </Container>
+  </Wrapper>
+);
 
 Loading.propTypes = {
   text: PropTypes.string,
@@ -44,6 +45,7 @@ Loading.propTypes = {
   ]),
   noBorder: PropTypes.bool,
   transparent: PropTypes.bool,
+  large: PropTypes.bool,
 };
 
 Loading.defaultProps = {
@@ -51,6 +53,7 @@ Loading.defaultProps = {
   maxHeight: false,
   noBorder: false,
   transparent: false,
+  large: false,
 };
 
 export default Loading;

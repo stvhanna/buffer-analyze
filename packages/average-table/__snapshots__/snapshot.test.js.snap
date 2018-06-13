@@ -10,13 +10,13 @@ exports[`Snapshots AverageTable should render a "no data" state 1`] = `
     }
   >
     <div
-      className="sc-kAzzGY djTmlN"
+      className="sc-kgoBCf eKtgtS"
     >
       <header
-        className="sc-chPdSV jjZuEt"
+        className="sc-kGXeez esQcyC"
       >
         <h2
-          className="sc-kgoBCf dgCWVb"
+          className="sc-kpOJdX hkatTF"
         >
           <span
             style={
@@ -33,20 +33,20 @@ exports[`Snapshots AverageTable should render a "no data" state 1`] = `
         </h2>
       </header>
       <div
-        className="sc-kEYyzF fbmPUH"
+        className="sc-iAyFgw fymstO"
         id="js-dom-to-png-average"
       >
         <div
-          className="sc-bdVaJa fWzNTu"
+          className="sc-htpNat klaPdF"
         >
           <div
-            className="sc-bwzfXH iNQYMr"
+            className="sc-bxivhb cRnhtv"
           >
             <div
-              className="sc-htpNat lmFxxx"
+              className="sc-ifAKCX kiQAin"
             />
             <h1
-              className="sc-bxivhb hlZJQM"
+              className="sc-EHOje dWbWPz"
             >
               <span
                 style={
@@ -79,13 +79,13 @@ exports[`Snapshots AverageTable should render a loading state 1`] = `
     }
   >
     <div
-      className="sc-kAzzGY djTmlN"
+      className="sc-kgoBCf eKtgtS"
     >
       <header
-        className="sc-chPdSV jjZuEt"
+        className="sc-kGXeez esQcyC"
       >
         <h2
-          className="sc-kgoBCf dgCWVb"
+          className="sc-kpOJdX hkatTF"
         >
           <span
             style={
@@ -102,34 +102,14 @@ exports[`Snapshots AverageTable should render a loading state 1`] = `
         </h2>
       </header>
       <div
-        className="sc-kEYyzF fbmPUH"
+        className="sc-iAyFgw fymstO"
         id="js-dom-to-png-average"
       >
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "background": "rgba(255,255,255,.95)",
-              "border": "none",
-              "display": "flex",
-              "justifyContent": "center",
-              "maxHeight": "none",
-              "minHeight": "8rem",
-              "textAlign": "center",
-              "transition": "opacity 350ms ease-in-out",
-              "zIndex": 2,
-            }
-          }
+          className="sc-bwzfXH dXsGsm"
         >
           <div
-            style={
-              Object {
-                "background": "none",
-                "borderRadius": "2px",
-                "flex": 1,
-                "flexDirection": "row",
-              }
-            }
+            className="sc-bdVaJa fsNrov"
           >
             <div
               style={
@@ -219,13 +199,13 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
     }
   >
     <div
-      className="sc-kAzzGY djTmlN"
+      className="sc-kgoBCf eKtgtS"
     >
       <header
-        className="sc-chPdSV jjZuEt"
+        className="sc-kGXeez esQcyC"
       >
         <h2
-          className="sc-kgoBCf dgCWVb"
+          className="sc-kpOJdX hkatTF"
         >
           <span
             style={
@@ -242,24 +222,24 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
         </h2>
       </header>
       <div
-        className="sc-kEYyzF fbmPUH"
+        className="sc-iAyFgw fymstO"
         id="js-dom-to-png-average"
       >
         <ul
-          className="sc-hMqMXs izTvPq"
+          className="sc-kkGfuU iljRqu"
         >
           <li
-            className="sc-dnqmqq emfIOs"
+            className="sc-gZMcBi dxiVBh"
             width="33.333333333333336%"
           >
             <div
-              className="sc-iwsKbI btmaIR"
+              className="sc-gqjmRU gggsyL"
             >
               <div
-                className="sc-gqjmRU gqMZxf"
+                className="sc-jTzLTM gUMRxz"
               />
               <span
-                className="sc-htoDjs rBkkQ"
+                className="sc-iwsKbI ghjVYo"
               >
                 <span
                   data-tip={null}
@@ -279,7 +259,7 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
                 </span>
               </span>
               <div
-                className="sc-gZMcBi jCgfWF"
+                className="sc-VigVT eVESgP"
               >
                 <span
                   style={
@@ -296,13 +276,13 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
                   </span>
                 </span>
                 <div
-                  className="sc-EHOje faGiPL"
+                  className="sc-gzVnrw jPCrAy"
                 >
                   <div
-                    className="sc-bZQynM hNHnok"
+                    className="sc-htoDjs gNzaNl"
                   >
                     <div
-                      className="sc-ifAKCX imANia"
+                      className="sc-bZQynM bhDWTq"
                     >
                       <svg
                         fill="none"
@@ -325,7 +305,7 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
                     </div>
                   </div>
                   <div
-                    className="sc-gzVnrw fXIzxI"
+                    className="sc-dnqmqq fSJNbt"
                   >
                     <span
                       style={
@@ -348,17 +328,17 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
             </div>
           </li>
           <li
-            className="sc-dnqmqq emfIOs"
+            className="sc-gZMcBi dxiVBh"
             width="33.333333333333336%"
           >
             <div
-              className="sc-iwsKbI btmaIR"
+              className="sc-gqjmRU gggsyL"
             >
               <div
-                className="sc-gqjmRU gqMZxf"
+                className="sc-jTzLTM gUMRxz"
               />
               <span
-                className="sc-htoDjs rBkkQ"
+                className="sc-iwsKbI ghjVYo"
               >
                 <span
                   data-tip={null}
@@ -378,7 +358,7 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
                 </span>
               </span>
               <div
-                className="sc-gZMcBi jCgfWF"
+                className="sc-VigVT eVESgP"
               >
                 <span
                   style={
@@ -395,13 +375,13 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
                   </span>
                 </span>
                 <div
-                  className="sc-EHOje faGiPL"
+                  className="sc-gzVnrw jPCrAy"
                 >
                   <div
-                    className="sc-bZQynM hNHnok"
+                    className="sc-htoDjs gNzaNl"
                   >
                     <div
-                      className="sc-ifAKCX imANia"
+                      className="sc-bZQynM bhDWTq"
                     >
                       <svg
                         fill="none"
@@ -424,7 +404,7 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
                     </div>
                   </div>
                   <div
-                    className="sc-gzVnrw fXIzxI"
+                    className="sc-dnqmqq fSJNbt"
                   >
                     <span
                       style={
@@ -447,17 +427,17 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
             </div>
           </li>
           <li
-            className="sc-dnqmqq emfIOs"
+            className="sc-gZMcBi dxiVBh"
             width="33.333333333333336%"
           >
             <div
-              className="sc-iwsKbI btmaIR"
+              className="sc-gqjmRU gggsyL"
             >
               <div
-                className="sc-gqjmRU gqMZxf"
+                className="sc-jTzLTM gUMRxz"
               />
               <span
-                className="sc-htoDjs rBkkQ"
+                className="sc-iwsKbI ghjVYo"
               >
                 <span
                   data-tip={null}
@@ -477,7 +457,7 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
                 </span>
               </span>
               <div
-                className="sc-gZMcBi jCgfWF"
+                className="sc-VigVT eVESgP"
               >
                 <span
                   style={
@@ -494,13 +474,13 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
                   </span>
                 </span>
                 <div
-                  className="sc-EHOje faGiPL"
+                  className="sc-gzVnrw jPCrAy"
                 >
                   <div
-                    className="sc-bZQynM hNHnok"
+                    className="sc-htoDjs gNzaNl"
                   >
                     <div
-                      className="sc-ifAKCX imANia"
+                      className="sc-bZQynM bhDWTq"
                     >
                       <svg
                         fill="none"
@@ -523,7 +503,7 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
                     </div>
                   </div>
                   <div
-                    className="sc-gzVnrw fXIzxI"
+                    className="sc-dnqmqq fSJNbt"
                   >
                     <span
                       style={
@@ -562,13 +542,13 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
     }
   >
     <div
-      className="sc-kAzzGY djTmlN"
+      className="sc-kgoBCf eKtgtS"
     >
       <header
-        className="sc-chPdSV jjZuEt"
+        className="sc-kGXeez esQcyC"
       >
         <h2
-          className="sc-kgoBCf dgCWVb"
+          className="sc-kpOJdX hkatTF"
         >
           <span
             style={
@@ -585,24 +565,24 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
         </h2>
       </header>
       <div
-        className="sc-kEYyzF fbmPUH"
+        className="sc-iAyFgw fymstO"
         id="js-dom-to-png-average"
       >
         <ul
-          className="sc-hMqMXs izTvPq"
+          className="sc-kkGfuU iljRqu"
         >
           <li
-            className="sc-dnqmqq emfIOs"
+            className="sc-gZMcBi dxiVBh"
             width="33.333333333333336%"
           >
             <div
-              className="sc-iwsKbI btmaIR"
+              className="sc-gqjmRU gggsyL"
             >
               <div
-                className="sc-gqjmRU gqMZxf"
+                className="sc-jTzLTM gUMRxz"
               />
               <span
-                className="sc-htoDjs rBkkQ"
+                className="sc-iwsKbI ghjVYo"
               >
                 <span
                   data-tip={null}
@@ -622,7 +602,7 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
                 </span>
               </span>
               <div
-                className="sc-gZMcBi jCgfWF"
+                className="sc-VigVT eVESgP"
               >
                 <span
                   style={
@@ -639,13 +619,13 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
                   </span>
                 </span>
                 <div
-                  className="sc-EHOje faGiPL"
+                  className="sc-gzVnrw jPCrAy"
                 >
                   <div
-                    className="sc-bZQynM hNHnok"
+                    className="sc-htoDjs gNzaNl"
                   >
                     <div
-                      className="sc-ifAKCX imANia"
+                      className="sc-bZQynM bhDWTq"
                     >
                       <svg
                         fill="none"
@@ -668,7 +648,7 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
                     </div>
                   </div>
                   <div
-                    className="sc-gzVnrw fXIzxI"
+                    className="sc-dnqmqq fSJNbt"
                   >
                     <span
                       style={
@@ -691,17 +671,17 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
             </div>
           </li>
           <li
-            className="sc-dnqmqq emfIOs"
+            className="sc-gZMcBi dxiVBh"
             width="33.333333333333336%"
           >
             <div
-              className="sc-iwsKbI btmaIR"
+              className="sc-gqjmRU gggsyL"
             >
               <div
-                className="sc-gqjmRU gqMZxf"
+                className="sc-jTzLTM gUMRxz"
               />
               <span
-                className="sc-htoDjs rBkkQ"
+                className="sc-iwsKbI ghjVYo"
               >
                 <span
                   data-tip={null}
@@ -721,7 +701,7 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
                 </span>
               </span>
               <div
-                className="sc-gZMcBi jCgfWF"
+                className="sc-VigVT eVESgP"
               >
                 <span
                   style={
@@ -738,13 +718,13 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
                   </span>
                 </span>
                 <div
-                  className="sc-EHOje faGiPL"
+                  className="sc-gzVnrw jPCrAy"
                 >
                   <div
-                    className="sc-bZQynM hNHnok"
+                    className="sc-htoDjs gNzaNl"
                   >
                     <div
-                      className="sc-ifAKCX imANia"
+                      className="sc-bZQynM bhDWTq"
                     >
                       <svg
                         fill="none"
@@ -767,7 +747,7 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
                     </div>
                   </div>
                   <div
-                    className="sc-gzVnrw fXIzxI"
+                    className="sc-dnqmqq fSJNbt"
                   >
                     <span
                       style={
@@ -790,17 +770,17 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
             </div>
           </li>
           <li
-            className="sc-dnqmqq emfIOs"
+            className="sc-gZMcBi dxiVBh"
             width="33.333333333333336%"
           >
             <div
-              className="sc-iwsKbI btmaIR"
+              className="sc-gqjmRU gggsyL"
             >
               <div
-                className="sc-gqjmRU gqMZxf"
+                className="sc-jTzLTM gUMRxz"
               />
               <span
-                className="sc-htoDjs rBkkQ"
+                className="sc-iwsKbI ghjVYo"
               >
                 <span
                   data-tip={null}
@@ -820,7 +800,7 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
                 </span>
               </span>
               <div
-                className="sc-gZMcBi jCgfWF"
+                className="sc-VigVT eVESgP"
               >
                 <span
                   style={
@@ -837,13 +817,13 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
                   </span>
                 </span>
                 <div
-                  className="sc-EHOje faGiPL"
+                  className="sc-gzVnrw jPCrAy"
                 >
                   <div
-                    className="sc-bZQynM hNHnok"
+                    className="sc-htoDjs gNzaNl"
                   >
                     <div
-                      className="sc-ifAKCX imANia"
+                      className="sc-bZQynM bhDWTq"
                     >
                       <svg
                         fill="none"
@@ -866,7 +846,7 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
                     </div>
                   </div>
                   <div
-                    className="sc-gzVnrw fXIzxI"
+                    className="sc-dnqmqq fSJNbt"
                   >
                     <span
                       style={
@@ -905,13 +885,13 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
     }
   >
     <div
-      className="sc-kAzzGY djTmlN"
+      className="sc-kgoBCf eKtgtS"
     >
       <header
-        className="sc-chPdSV jjZuEt"
+        className="sc-kGXeez esQcyC"
       >
         <h2
-          className="sc-kgoBCf dgCWVb"
+          className="sc-kpOJdX hkatTF"
         >
           <span
             style={
@@ -928,24 +908,24 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
         </h2>
       </header>
       <div
-        className="sc-kEYyzF fbmPUH"
+        className="sc-iAyFgw fymstO"
         id="js-dom-to-png-average"
       >
         <ul
-          className="sc-hMqMXs izTvPq"
+          className="sc-kkGfuU iljRqu"
         >
           <li
-            className="sc-dnqmqq emfIOs"
+            className="sc-gZMcBi dxiVBh"
             width="33.333333333333336%"
           >
             <div
-              className="sc-iwsKbI btmaIR"
+              className="sc-gqjmRU gggsyL"
             >
               <div
-                className="sc-gqjmRU gqMZxf"
+                className="sc-jTzLTM gUMRxz"
               />
               <span
-                className="sc-htoDjs rBkkQ"
+                className="sc-iwsKbI ghjVYo"
               >
                 <span
                   data-tip={null}
@@ -965,7 +945,7 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
                 </span>
               </span>
               <div
-                className="sc-gZMcBi jCgfWF"
+                className="sc-VigVT eVESgP"
               >
                 <span
                   style={
@@ -982,13 +962,13 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
                   </span>
                 </span>
                 <div
-                  className="sc-EHOje faGiPL"
+                  className="sc-gzVnrw jPCrAy"
                 >
                   <div
-                    className="sc-bZQynM hNHnok"
+                    className="sc-htoDjs gNzaNl"
                   >
                     <div
-                      className="sc-ifAKCX imANia"
+                      className="sc-bZQynM bhDWTq"
                     >
                       <svg
                         fill="none"
@@ -1011,7 +991,7 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
                     </div>
                   </div>
                   <div
-                    className="sc-gzVnrw fXIzxI"
+                    className="sc-dnqmqq fSJNbt"
                   >
                     <span
                       style={
@@ -1034,17 +1014,17 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
             </div>
           </li>
           <li
-            className="sc-dnqmqq emfIOs"
+            className="sc-gZMcBi dxiVBh"
             width="33.333333333333336%"
           >
             <div
-              className="sc-iwsKbI btmaIR"
+              className="sc-gqjmRU gggsyL"
             >
               <div
-                className="sc-gqjmRU gqMZxf"
+                className="sc-jTzLTM gUMRxz"
               />
               <span
-                className="sc-htoDjs rBkkQ"
+                className="sc-iwsKbI ghjVYo"
               >
                 <span
                   data-tip={null}
@@ -1064,7 +1044,7 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
                 </span>
               </span>
               <div
-                className="sc-gZMcBi jCgfWF"
+                className="sc-VigVT eVESgP"
               >
                 <span
                   style={
@@ -1081,13 +1061,13 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
                   </span>
                 </span>
                 <div
-                  className="sc-EHOje faGiPL"
+                  className="sc-gzVnrw jPCrAy"
                 >
                   <div
-                    className="sc-bZQynM hNHnok"
+                    className="sc-htoDjs gNzaNl"
                   >
                     <div
-                      className="sc-ifAKCX imANia"
+                      className="sc-bZQynM bhDWTq"
                     >
                       <svg
                         fill="none"
@@ -1110,7 +1090,7 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
                     </div>
                   </div>
                   <div
-                    className="sc-gzVnrw fXIzxI"
+                    className="sc-dnqmqq fSJNbt"
                   >
                     <span
                       style={
@@ -1133,17 +1113,17 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
             </div>
           </li>
           <li
-            className="sc-dnqmqq emfIOs"
+            className="sc-gZMcBi dxiVBh"
             width="33.333333333333336%"
           >
             <div
-              className="sc-iwsKbI btmaIR"
+              className="sc-gqjmRU gggsyL"
             >
               <div
-                className="sc-gqjmRU gqMZxf"
+                className="sc-jTzLTM gUMRxz"
               />
               <span
-                className="sc-htoDjs rBkkQ"
+                className="sc-iwsKbI ghjVYo"
               >
                 <span
                   data-tip={null}
@@ -1163,7 +1143,7 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
                 </span>
               </span>
               <div
-                className="sc-gZMcBi jCgfWF"
+                className="sc-VigVT eVESgP"
               >
                 <span
                   style={
@@ -1180,13 +1160,13 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
                   </span>
                 </span>
                 <div
-                  className="sc-EHOje faGiPL"
+                  className="sc-gzVnrw jPCrAy"
                 >
                   <div
-                    className="sc-bZQynM hNHnok"
+                    className="sc-htoDjs gNzaNl"
                   >
                     <div
-                      className="sc-ifAKCX imANia"
+                      className="sc-bZQynM bhDWTq"
                     >
                       <svg
                         fill="none"
@@ -1209,7 +1189,7 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
                     </div>
                   </div>
                   <div
-                    className="sc-gzVnrw fXIzxI"
+                    className="sc-dnqmqq fSJNbt"
                   >
                     <span
                       style={
@@ -1241,7 +1221,7 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
 exports[`Snapshots Title should render title as if for app 1`] = `
 <span>
   <h2
-    className="sc-kgoBCf dgCWVb"
+    className="sc-kpOJdX hkatTF"
   >
     <span
       style={
@@ -1262,7 +1242,7 @@ exports[`Snapshots Title should render title as if for app 1`] = `
 exports[`Snapshots Title should render title as if for report 1`] = `
 <span>
   <h2
-    className="sc-kgoBCf dgCWVb"
+    className="sc-kpOJdX hkatTF"
   >
     <span
       style={

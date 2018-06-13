@@ -4,13 +4,13 @@ exports[`Snapshots ProfileHeader should render facebook fans 1`] = `
 <span>
   <div>
     <div
-      className="sc-hMqMXs dtnVvW"
+      className="sc-kkGfuU nyOzf"
     >
       <div
-        className="sc-kEYyzF kgOSTo"
+        className="sc-iAyFgw jCDMO"
       >
         <div
-          className="sc-jzJRlG crAWdO"
+          className="sc-kAzzGY ghZuIv"
           size="32px"
         >
           <img
@@ -77,10 +77,10 @@ exports[`Snapshots ProfileHeader should render facebook fans 1`] = `
           </div>
         </div>
         <div
-          className="sc-kkGfuU cYUekI"
+          className="sc-hSdWYo jHBZOP"
         >
           <span
-            className="sc-iAyFgw bePbGE"
+            className="sc-eHgmQL lodIsJ"
           >
             <a
               href={undefined}
@@ -102,7 +102,7 @@ exports[`Snapshots ProfileHeader should render facebook fans 1`] = `
             </a>
           </span>
           <span
-            className="sc-hSdWYo bsskjT"
+            className="sc-cvbbAY kcrNsK"
           >
             <span
               style={
@@ -122,7 +122,7 @@ exports[`Snapshots ProfileHeader should render facebook fans 1`] = `
         </div>
       </div>
       <a
-        className="sc-eHgmQL eBllni"
+        className="sc-jWBwVP dbrkOU"
         href="https://buffer.com/facebook-overview-analytics-help#getting-your-data"
         rel="noopener noreferrer"
         target="_blank"
@@ -149,13 +149,13 @@ exports[`Snapshots ProfileHeader should render twitter followers 1`] = `
 <span>
   <div>
     <div
-      className="sc-hMqMXs dtnVvW"
+      className="sc-kkGfuU nyOzf"
     >
       <div
-        className="sc-kEYyzF kgOSTo"
+        className="sc-iAyFgw jCDMO"
       >
         <div
-          className="sc-jzJRlG crAWdO"
+          className="sc-kAzzGY ghZuIv"
           size="32px"
         >
           <img
@@ -222,10 +222,10 @@ exports[`Snapshots ProfileHeader should render twitter followers 1`] = `
           </div>
         </div>
         <div
-          className="sc-kkGfuU cYUekI"
+          className="sc-hSdWYo jHBZOP"
         >
           <span
-            className="sc-iAyFgw bePbGE"
+            className="sc-eHgmQL lodIsJ"
           >
             <a
               href={undefined}
@@ -247,7 +247,7 @@ exports[`Snapshots ProfileHeader should render twitter followers 1`] = `
             </a>
           </span>
           <span
-            className="sc-hSdWYo bsskjT"
+            className="sc-cvbbAY kcrNsK"
           >
             <span
               style={
@@ -267,7 +267,7 @@ exports[`Snapshots ProfileHeader should render twitter followers 1`] = `
         </div>
       </div>
       <a
-        className="sc-eHgmQL eBllni"
+        className="sc-jWBwVP dbrkOU"
         href="https://buffer.com/twitter-overview-analytics-help#getting-your-data"
         rel="noopener noreferrer"
         target="_blank"

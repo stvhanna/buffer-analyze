@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+
 import {
   ChartStateLoading as Loading,
   ChartCard,
   ChartHeader,
 } from '@bufferapp/analyze-shared-components';
+
 import AddReport from '@bufferapp/add-report';
 import PostCountByHour from '../PostCountByHour';
 import HourlyEngagementChart from '../HourlyEngagementChart';
@@ -13,21 +15,10 @@ import Legend from '../Legend';
 import Title from '../Title';
 import Header from '../ChartHeader';
 
-const Container = styled.div`
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-`;
-
 const ChartContainer = styled.div`
   padding: 0.5rem 0.75rem 0rem;
   margin: 0 auto;
   position: relative;
-  min-height: 474px;
 `;
 
 export class ChartContent extends React.PureComponent {
@@ -103,11 +94,7 @@ const HourlyChart = (props) => {
         />
       </ChartHeader>
       <ChartContainer id="js-dom-to-png-hourly-engagements">
-        {props.loading && (
-          <Container>
-            <Loading active noBorder />
-          </Container>
-        )}
+        {props.loading && <Loading active noBorder large />}
         {!props.loading &&
           <div>
             <Header {...props} />
