@@ -62,36 +62,11 @@ describe('HourlyChart', () => {
       );
       expect(hourlyChart.props().toggleDropdown()).toEqual(actions.toggleDropdown());
     });
-    it('toggle secondary dropdown dispatches toggleSecondaryDropdown', () => {
-      const hourlyChart = shallow(
-        <HourlyChart store={store} />,
-      );
-      expect(hourlyChart.props().toggleSecondaryDropdown())
-        .toEqual(actions.toggleSecondaryDropdown());
-    });
-    it('show secondary dropdown dispatches showSecondaryDropdown', () => {
-      const hourlyChart = shallow(
-        <HourlyChart store={store} />,
-      );
-      expect(hourlyChart.props().showSecondaryDropdown()).toEqual(actions.showSecondaryDropdown());
-    });
-    it('hide secondary dropdown dispatches hideSecondaryDropdown', () => {
-      const hourlyChart = shallow(
-        <HourlyChart store={store} />,
-      );
-      expect(hourlyChart.props().hideSecondaryDropdown()).toEqual(actions.hideSecondaryDropdown());
-    });
     it('select metric triggers selectMetric', () => {
       const hourlyChart = shallow(
         <HourlyChart store={store} />,
       );
       expect(hourlyChart.props().selectMetric('foo')).toEqual(actions.selectMetric('foo'));
-    });
-    it('select metric triggers selectSecondaryMetric if second parameter is true', () => {
-      const hourlyChart = shallow(
-        <HourlyChart store={store} />,
-      );
-      expect(hourlyChart.props().selectMetric('foo', true)).toEqual(actions.selectSecondaryMetric('foo'));
     });
   });
 });

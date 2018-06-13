@@ -48,25 +48,23 @@ const dropdownList = {
   margin: 0,
 };
 
-const List = ({ metrics, secondary, selectMetric }) => (
+const List = ({ metrics, selectMetric }) => (
   <ol style={dropdownList}>
     { metrics.map(metric =>
       <DropdownItem
         key={metric.label}
         metric={metric}
-        handleClick={() => selectMetric(metric.label, secondary)}
+        handleClick={() => selectMetric(metric.label)}
       />)}
   </ol>
 );
 
 List.defaultProps = {
-  metrics: [],
-  secondary: false,
+  metrics: []
 };
 
 List.propTypes = {
   selectMetric: PropTypes.func.isRequired,
-  secondary: PropTypes.bool,
   metrics: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string,
     color: PropTypes.string,

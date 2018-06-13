@@ -32,64 +32,11 @@ const openButton = {
   cursor: 'pointer',
 };
 
-const SecondaryMetricToggle = (props) => {
-  if (props.metric) {
-    return (<span style={toggleWrapper}>
-      <Dropdown
-        secondary
-        selectMetric={props.selectMetric}
-        open={props.secondaryDropdownOpen}
-        toggleDropdown={props.toggleSecondaryDropdown}
-        metrics={props.metrics}
-        selectedMetric={props.metric}
-      />
-      <span style={toggleWrapper}>
-        <Button
-          onClick={props.hideSecondaryDropdown}
-          noStyle
-        >
-          <CloseIcon size="small" />
-        </Button>
-      </span>
-    </span>);
-  }
-  return (<span style={toggleWrapper}>
-    <Button onClick={props.showSecondaryDropdown} noStyle>
-      <span style={openButton}><PlusIcon size="small" /></span>
-    </Button>
-  </span>);
-};
-
-SecondaryMetricToggle.defaultProps = {
-  metric: null,
-};
-
-SecondaryMetricToggle.propTypes = {
-  showSecondaryDropdown: PropTypes.func.isRequired,
-  toggleSecondaryDropdown: PropTypes.func.isRequired,
-  hideSecondaryDropdown: PropTypes.func.isRequired,
-  secondaryDropdownOpen: PropTypes.bool.isRequired,
-  selectMetric: PropTypes.func.isRequired,
-  metric: PropTypes.shape({
-    label: PropTypes.string,
-    hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
-  }),
-  metrics: PropTypes.arrayOf(PropTypes.shape({
-    label: PropTypes.string,
-    hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
-  })).isRequired,
-};
-
 const ChartHeader = (props) => {
-  const metrics = props.metrics.filter(metric => (
-    metric.label !== props.selectedMetric.label &&
-      (!props.secondaryMetric || metric.label !== props.secondaryMetric.label)
-  ));
-
   return (
     <section style={chartHeader}>
       <Dropdown
-        metrics={metrics}
+        metrics={props.metrics}
         selectMetric={props.selectMetric}
         open={props.dropdownOpen}
         toggleDropdown={props.toggleDropdown}
@@ -110,11 +57,6 @@ ChartHeader.propTypes = {
     color: PropTypes.string,
     hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
   }).isRequired,
-  secondaryMetric: PropTypes.shape({
-    label: PropTypes.string,
-    color: PropTypes.string,
-    hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
-  }),
   timezone: PropTypes.string.isRequired,
   showSecondaryDropdown: PropTypes.func.isRequired,
   toggleSecondaryDropdown: PropTypes.func.isRequired,

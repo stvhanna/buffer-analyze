@@ -875,6 +875,80 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
                             <i
                               style={
                                 Object {
+                                  "background": "#3A92D3",
+                                  "borderRadius": "50%",
+                                  "display": "inline-block",
+                                  "height": "10px",
+                                  "marginRight": "5px",
+                                  "verticalAlign": "baseline",
+                                  "width": "10px",
+                                }
+                              }
+                            />
+                            <span
+                              style={
+                                Object {
+                                  "color": "#59626a",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Engagements
+                            </span>
+                          </span>
+                        </button>
+                      </li>
+                      <li
+                        style={
+                          Object {
+                            "listStyle": "none",
+                            "padding": "10px",
+                          }
+                        }
+                      >
+                        <button
+                          aria-label={null}
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              Object {
+                                "display": "inline-block",
+                                "textAlign": "left",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <i
+                              style={
+                                Object {
                                   "background": "#D2C3AB",
                                   "borderRadius": "50%",
                                   "display": "inline-block",
@@ -1684,6 +1758,154 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                             <i
                               style={
                                 Object {
+                                  "background": "#FEC78B",
+                                  "borderRadius": "50%",
+                                  "display": "inline-block",
+                                  "height": "10px",
+                                  "marginRight": "5px",
+                                  "verticalAlign": "baseline",
+                                  "width": "10px",
+                                }
+                              }
+                            />
+                            <span
+                              style={
+                                Object {
+                                  "color": "#59626a",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Impressions
+                            </span>
+                          </span>
+                        </button>
+                      </li>
+                      <li
+                        style={
+                          Object {
+                            "listStyle": "none",
+                            "padding": "10px",
+                          }
+                        }
+                      >
+                        <button
+                          aria-label={null}
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              Object {
+                                "display": "inline-block",
+                                "textAlign": "left",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <i
+                              style={
+                                Object {
+                                  "background": "#3A92D3",
+                                  "borderRadius": "50%",
+                                  "display": "inline-block",
+                                  "height": "10px",
+                                  "marginRight": "5px",
+                                  "verticalAlign": "baseline",
+                                  "width": "10px",
+                                }
+                              }
+                            />
+                            <span
+                              style={
+                                Object {
+                                  "color": "#59626a",
+                                  "fontFamily": "\\"Roboto\\", sans-serif",
+                                  "fontSize": "0.75rem",
+                                  "fontWeight": 400,
+                                }
+                              }
+                            >
+                              Engagements
+                            </span>
+                          </span>
+                        </button>
+                      </li>
+                      <li
+                        style={
+                          Object {
+                            "listStyle": "none",
+                            "padding": "10px",
+                          }
+                        }
+                      >
+                        <button
+                          aria-label={null}
+                          disabled={undefined}
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          style={
+                            Object {
+                              "background": "none",
+                              "backgroundColor": "unset",
+                              "border": "none",
+                              "borderRadius": "unset",
+                              "color": "unset",
+                              "cursor": "pointer",
+                              "display": "unset",
+                              "fontFamily": "unset",
+                              "fontSize": "unset",
+                              "fontWeight": "unset",
+                              "lineHeight": "unset",
+                              "margin": "unset",
+                              "outline": "none",
+                              "padding": 0,
+                              "transition": "unset",
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          <span
+                            style={
+                              Object {
+                                "display": "inline-block",
+                                "textAlign": "left",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <i
+                              style={
+                                Object {
                                   "background": "#D2C3AB",
                                   "borderRadius": "50%",
                                   "display": "inline-block",
@@ -2036,41 +2258,6 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                   }
                 >
                   Engagements
-                </span>
-              </li>
-              <li
-                style={
-                  Object {
-                    "display": "inline-block",
-                    "margin": "0 .8rem",
-                    "padding": ".8rem",
-                  }
-                }
-              >
-                <i
-                  style={
-                    Object {
-                      "background": "#FEC78B",
-                      "borderRadius": "50%",
-                      "display": "inline-block",
-                      "height": "10px",
-                      "marginRight": "5px",
-                      "verticalAlign": "baseline",
-                      "width": "10px",
-                    }
-                  }
-                />
-                <span
-                  style={
-                    Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 400,
-                    }
-                  }
-                >
-                  Impressions
                 </span>
               </li>
             </ul>

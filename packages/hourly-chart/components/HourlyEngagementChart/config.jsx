@@ -160,18 +160,3 @@ export const primarySeriesConfig = {
   },
 };
 
-export const secondarySeriesConfig = {
-  ...seriesConfig,
-  type: 'spline',
-  zIndex: 2,
-  marker: {
-    lineWidth: 2,
-    radius: 4,
-    symbol: 'circle',
-    states: {
-      hover: {
-        radiusPlus: 1.5,
-      },
-    },
-  },
-};

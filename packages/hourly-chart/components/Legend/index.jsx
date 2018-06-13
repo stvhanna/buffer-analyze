@@ -17,7 +17,7 @@ const legendList = {
   textAlign: 'center',
 };
 
-const Legend = ({ metric, secondaryMetric }) =>
+const Legend = ({ metric }) =>
   <ul style={legendList}>
     <li style={legendItem}>
       <ColorIcon circle />
@@ -27,23 +27,12 @@ const Legend = ({ metric, secondaryMetric }) =>
       <ColorIcon metric={metric.label} circle />
       <Text size="small">{metric.label}</Text>
     </li>
-    { secondaryMetric && <li style={legendItem}>
-      <ColorIcon metric={secondaryMetric.label} circle />
-      <Text size="small">{secondaryMetric.label}</Text>
-    </li> }
   </ul>;
-
-Legend.defaultProps = {
-  secondaryMetric: null,
-};
 
 Legend.propTypes = {
   metric: PropTypes.shape({
     label: PropTypes.string,
-  }).isRequired,
-  secondaryMetric: PropTypes.shape({
-    label: PropTypes.string,
-  }),
+  }).isRequired
 };
 
 export default Legend;
