@@ -2,17 +2,17 @@ export default {
   totals: [
     {
       diff: 181,
-      label: 'Impression average',
+      label: 'Average impressions per post',
       value: 193830,
     },
     {
       diff: 169,
-      label: 'Engagement average',
+      label: 'Average likes per post',
       value: 1140,
     },
     {
       diff: 363,
-      label: 'Click average',
+      label: 'Average comments per post',
       value: 2305,
     },
   ],
@@ -22,17 +22,17 @@ export default {
       metrics: [
         {
           diff: -26,
-          label: 'Engagement average',
+          label: 'Average impressions per post',
           value: 230,
         },
         {
           diff: -25,
-          label: 'Impression average',
+          label: 'Average likes per post',
           value: 35620,
         },
         {
           diff: -17,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 290,
         },
       ],
@@ -42,17 +42,17 @@ export default {
       metrics: [
         {
           diff: -21,
-          label: 'Engagement average',
+          label: 'Average impressions per post',
           value: 161,
         },
         {
           diff: -16,
-          label: 'Impression average',
+          label: 'Average likes per post',
           value: 28260,
         },
         {
           diff: 8,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 308,
         },
       ],
@@ -62,17 +62,17 @@ export default {
       metrics: [
         {
           diff: -52,
-          label: 'Engagement average',
+          label: 'Average impressions per post',
           value: 157,
         },
         {
           diff: -52,
-          label: 'Impression average',
+          label: 'Average likes per post',
           value: 28314,
         },
         {
           diff: 10,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 324,
         },
       ],
@@ -82,17 +82,17 @@ export default {
       metrics: [
         {
           diff: -41,
-          label: 'Engagement average',
+          label: 'Average impressions per post',
           value: 167,
         },
         {
           diff: -47,
-          label: 'Impression average',
+          label: 'Average likes per post',
           value: 28595,
         },
         {
           diff: 2,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 350,
         },
       ],
@@ -102,17 +102,17 @@ export default {
       metrics: [
         {
           diff: -61,
-          label: 'Engagement average',
+          label: 'Average impressions per post',
           value: 138,
         },
         {
           diff: -46,
-          label: 'Impression average',
+          label: 'Average likes per post',
           value: 25506,
         },
         {
           diff: 33,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 380,
         },
       ],
@@ -122,17 +122,17 @@ export default {
       metrics: [
         {
           diff: -1,
-          label: 'Engagement average',
+          label: 'Average impressions per post',
           value: 154,
         },
         {
           diff: -8,
-          label: 'Impression average',
+          label: 'Average likes per post',
           value: 23968,
         },
         {
           diff: 17,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 309,
         },
       ],
@@ -142,17 +142,17 @@ export default {
       metrics: [
         {
           diff: -57,
-          label: 'Engagement average',
+          label: 'Average impressions per post',
           value: 133,
         },
         {
           diff: -53,
-          label: 'Impression average',
+          label: 'Average likes per post',
           value: 23567,
         },
         {
           diff: -13,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 344,
         },
       ],

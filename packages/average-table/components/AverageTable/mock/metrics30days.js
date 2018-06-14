@@ -2,17 +2,17 @@ export default {
   totals: [
     {
       diff: -21,
-      label: 'Impression average',
+      label: 'Average impressions per post',
       value: 85047,
     },
     {
       diff: -40,
-      label: 'Engagement average',
+      label: 'Average likes per post',
       value: 502,
     },
     {
       diff: -39,
-      label: 'Click average',
+      label: 'Average comments per post',
       value: 669,
     },
   ],
@@ -22,17 +22,17 @@ export default {
       metrics: [
         {
           diff: 86,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 477,
         },
         {
           diff: 67,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 67507,
         },
         {
           diff: 17,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 503,
         },
       ],
@@ -42,17 +42,17 @@ export default {
       metrics: [
         {
           diff: 36,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 466,
         },
         {
           diff: 19,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 68068,
         },
         {
           diff: 52,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 601,
         },
       ],
@@ -62,17 +62,17 @@ export default {
       metrics: [
         {
           diff: 0,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 367,
         },
         {
           diff: 15,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 50885,
         },
         {
           diff: -30,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 381,
         },
       ],
@@ -82,17 +82,17 @@ export default {
       metrics: [
         {
           diff: 24,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 476,
         },
         {
           diff: 43,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 58299,
         },
         {
           diff: 2,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 350,
         },
       ],
@@ -102,17 +102,17 @@ export default {
       metrics: [
         {
           diff: 1,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 306,
         },
         {
           diff: 60,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 54904,
         },
         {
           diff: 15,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 357,
         },
       ],
@@ -122,17 +122,17 @@ export default {
       metrics: [
         {
           diff: 88,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 341,
         },
         {
           diff: 137,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 66860,
         },
         {
           diff: 62,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 413,
         },
       ],
@@ -142,17 +142,17 @@ export default {
       metrics: [
         {
           diff: 160,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 400,
         },
         {
           diff: 166,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 66701,
         },
         {
           diff: 34,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 358,
         },
       ],
@@ -162,17 +162,17 @@ export default {
       metrics: [
         {
           diff: 24,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 288,
         },
         {
           diff: 61,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 53165,
         },
         {
           diff: 18,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 343,
         },
       ],
@@ -182,17 +182,17 @@ export default {
       metrics: [
         {
           diff: -40,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 252,
         },
         {
           diff: 16,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 50291,
         },
         {
           diff: -10,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 392,
         },
       ],
@@ -202,17 +202,17 @@ export default {
       metrics: [
         {
           diff: -78,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 298,
         },
         {
           diff: -5,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 48290,
         },
         {
           diff: -59,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 323,
         },
       ],
@@ -222,17 +222,17 @@ export default {
       metrics: [
         {
           diff: -78,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 184,
         },
         {
           diff: -1,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 44204,
         },
         {
           diff: -47,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 268,
         },
       ],
@@ -242,17 +242,17 @@ export default {
       metrics: [
         {
           diff: -63,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 213,
         },
         {
           diff: 20,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 47207,
         },
         {
           diff: -15,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 292,
         },
       ],
@@ -262,17 +262,17 @@ export default {
       metrics: [
         {
           diff: -59,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 196,
         },
         {
           diff: 27,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 43966,
         },
         {
           diff: 3,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 325,
         },
       ],
@@ -282,17 +282,17 @@ export default {
       metrics: [
         {
           diff: -32,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 154,
         },
         {
           diff: 2,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 33967,
         },
         {
           diff: 0,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 317,
         },
       ],
@@ -302,17 +302,17 @@ export default {
       metrics: [
         {
           diff: -5,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 173,
         },
         {
           diff: -2,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 34884,
         },
         {
           diff: -5,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 323,
         },
       ],
@@ -322,17 +322,17 @@ export default {
       metrics: [
         {
           diff: 5,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 178,
         },
         {
           diff: -30,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 31955,
         },
         {
           diff: 0,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 360,
         },
       ],
@@ -342,17 +342,17 @@ export default {
       metrics: [
         {
           diff: 38,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 311,
         },
         {
           diff: 15,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 47761,
         },
         {
           diff: -8,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 351,
         },
       ],
@@ -362,17 +362,17 @@ export default {
       metrics: [
         {
           diff: 12,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 206,
         },
         {
           diff: -8,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 33798,
         },
         {
           diff: -26,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 287,
         },
       ],
@@ -382,17 +382,17 @@ export default {
       metrics: [
         {
           diff: 66,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 332,
         },
         {
           diff: 80,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 59352,
         },
         {
           diff: -17,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 296,
         },
       ],
@@ -402,17 +402,17 @@ export default {
       metrics: [
         {
           diff: 46,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 286,
         },
         {
           diff: 85,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 54135,
         },
         {
           diff: 5,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 345,
         },
       ],
@@ -422,17 +422,17 @@ export default {
       metrics: [
         {
           diff: 122,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 355,
         },
         {
           diff: 65,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 47892,
         },
         {
           diff: -12,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 287,
         },
       ],
@@ -442,17 +442,17 @@ export default {
       metrics: [
         {
           diff: 13,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 157,
         },
         {
           diff: -27,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 26287,
         },
         {
           diff: -40,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 265,
         },
       ],
@@ -462,17 +462,17 @@ export default {
       metrics: [
         {
           diff: 92,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 316,
         },
         {
           diff: 22,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 50259,
         },
         {
           diff: -40,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 396,
         },
       ],
@@ -482,17 +482,17 @@ export default {
       metrics: [
         {
           diff: -13,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 230,
         },
         {
           diff: -31,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 35620,
         },
         {
           diff: -59,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 290,
         },
       ],
@@ -502,17 +502,17 @@ export default {
       metrics: [
         {
           diff: -44,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 161,
         },
         {
           diff: -49,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 28260,
         },
         {
           diff: -51,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 308,
         },
       ],
@@ -522,17 +522,17 @@ export default {
       metrics: [
         {
           diff: -53,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 157,
         },
         {
           diff: -54,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 28314,
         },
         {
           diff: -43,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 324,
         },
       ],
@@ -542,17 +542,17 @@ export default {
       metrics: [
         {
           diff: -37,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 167,
         },
         {
           diff: -46,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 28595,
         },
         {
           diff: -29,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 350,
         },
       ],
@@ -562,17 +562,17 @@ export default {
       metrics: [
         {
           diff: -54,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 138,
         },
         {
           diff: -56,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 25506,
         },
         {
           diff: -24,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 380,
         },
       ],
@@ -582,17 +582,17 @@ export default {
       metrics: [
         {
           diff: -59,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 154,
         },
         {
           diff: -64,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 23968,
         },
         {
           diff: -45,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 309,
         },
       ],
@@ -602,17 +602,17 @@ export default {
       metrics: [
         {
           diff: -68,
-          label: 'Engagement average',
+          label: 'Average likes per post',
           value: 133,
         },
         {
           diff: -64,
-          label: 'Impression average',
+          label: 'Average impressions per post',
           value: 23567,
         },
         {
           diff: -31,
-          label: 'Click average',
+          label: 'Average comments per post',
           value: 344,
         },
       ],
