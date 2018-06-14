@@ -75,11 +75,11 @@ const ComparisonsPage = ({ location, isCompareProfileClicked }) => (
           {
             isCompareProfileClicked ?
               <div style={comparisonsMaxWidth}>
-                <ComparisonChart metricKey="audience" />
-                <ComparisonChart metricKey="reach" />
-                <ComparisonChart metricKey="likes" />
                 <ComparisonChart metricKey="engagement" />
+                <ComparisonChart metricKey="likes" />
                 <ComparisonChart metricKey="comments" />
+                <ComparisonChart metricKey="reach" />
+                <ComparisonChart metricKey="audience" />
               </div>
               :
               <div style={centeredContainer}>

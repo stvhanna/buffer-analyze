@@ -5,7 +5,7 @@ import Text from '@bufferapp/components/Text';
 
 const Container = styled.span`
   display: block;
-  margin: 0 0 0.25rem;
+  margin: 0 0 0.2rem;
 `;
 
 const Label = ({ tooltip, children }) =>
