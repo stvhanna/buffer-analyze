@@ -80,6 +80,9 @@ function prepareSeries(
     };
   });
 
+  // this zIndex will place the "smaller" series on top
+  // of the "larger" series so things remain more visible
+  let zIndex = -1 * seriesData.reduce(function(sum, a) { return sum + a.y }, 0) / (seriesData.length || 1);
   const seriesConfig = Object.assign({}, highChartsSeriesPrimaryConfig, {
     marker: {
       fillColor: getMarkerFillColor(color),
@@ -88,12 +91,13 @@ function prepareSeries(
     fillColor: {
       linearGradient: [0, 0, 0, 300],
       stops: [
-        [0, fadeColor(color, 0.6)],
-        [1, fadeColor(color, 0.1)],
+        [0, fadeColor(color, 0.7)],
+        [1, fadeColor(color, 0.4)],
       ],
     },
     lineColor: color,
     data: seriesData,
+    zIndex: zIndex
   });
 
   return seriesConfig;

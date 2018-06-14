@@ -46,7 +46,7 @@ function getSeriesRange(series) {
   const reducedSeries = reduceSeriesToValues(series);
   let min = Math.min.apply(null, reducedSeries);
   let max = Math.max.apply(null, reducedSeries);
-  const maxPaddingPercentage = 5.25;
+  const maxPaddingPercentage = 4.25;
   const minPaddingPercentage = 0.1;
   let topPaddingPercentage = (maxPaddingPercentage - Math.log10(max));
   if (topPaddingPercentage < minPaddingPercentage) {
@@ -155,8 +155,8 @@ function prepareSeries(
       fillColor: {
         linearGradient: [0, 0, 0, 300],
         stops: [
-          [0, fadeColor(color, 0.6)],
-          [1, fadeColor(color, 0.1)],
+          [0, fadeColor(color, 0.7)],
+          [1, fadeColor(color, 0.4)],
         ],
       },
       lineColor: color,
@@ -167,8 +167,8 @@ function prepareSeries(
     const columnColors = [{
       linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
       stops: [
-        [0, fadeColor(color, 0.6)],
-        [1, fadeColor(color, 0.2)],
+        [0, fadeColor(color, 0.7)],
+        [1, fadeColor(color, 0.4)],
       ],
     }];
 
@@ -204,6 +204,7 @@ function prepareSeries(
     series.push(seriesConfig);
     metricIndex += 1;
   }
+
   return series;
 }
 
@@ -230,6 +231,7 @@ function prepareData(
 
   config.series = prepareSeries(dailyMetrics, timezone, profileService, isCustomMode, presetConfig);
   setYAxisScale(config.series, config.xAxis, config.yAxis);
+  
   return config;
 }
 

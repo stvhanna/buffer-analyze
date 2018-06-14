@@ -1,4 +1,4 @@
-import { connect } from 'react-redux';
+  import { connect } from 'react-redux';
 import CompareChart from './components/CompareChart';
 import { actions } from './reducer';
 
