@@ -4,6 +4,15 @@ export default [
     previousPeriodDay: '1503446400000',
     metrics: [
       {
+        "key": "followers",
+        "diff": 0,
+        "label": "Total Followers",
+        "color": "#FDA3F3",
+        "value": 1,
+        "previousValue": 0,
+        "previousPostsCount": 1
+      },
+      {
         diff: 179,
         label: 'Engagement',
         value: 1374,
@@ -45,6 +54,15 @@ export default [
     day: '1504224000000',
     previousPeriodDay: '1503446400000',
     metrics: [
+      {
+        "key": "followers",
+        "diff": 0,
+        "label": "Total Followers",
+        "color": "#FDA3F3",
+        "value": 2,
+        "previousValue": 1,
+        "previousPostsCount": 1
+      },
       {
         diff: -36,
         label: 'Engagement',
@@ -88,6 +106,15 @@ export default [
     previousPeriodDay: '1503446400000',
     metrics: [
       {
+        "key": "followers",
+        "diff": 0,
+        "label": "Total Followers",
+        "color": "#FDA3F3",
+        "value": 3,
+        "previousValue": 2,
+        "previousPostsCount": 1
+      },
+      {
         diff: -86,
         label: 'Engagement',
         value: 414,
@@ -129,6 +156,15 @@ export default [
     day: '1504396800000',
     previousPeriodDay: '1503446400000',
     metrics: [
+      {
+        "key": "followers",
+        "diff": 0,
+        "label": "Total Followers",
+        "color": "#FDA3F3",
+        "value": 100000,
+        "previousValue": 3,
+        "previousPostsCount": 1
+      },
       {
         diff: -59,
         label: 'Engagement',
@@ -172,6 +208,15 @@ export default [
     previousPeriodDay: '1503446400000',
     metrics: [
       {
+        "key": "followers",
+        "diff": 0,
+        "label": "Total Followers",
+        "color": "#FDA3F3",
+        "value": 1000000,
+        "previousValue": 100000,
+        "previousPostsCount": 1
+      },
+      {
         diff: -48,
         label: 'Engagement',
         value: 439,
@@ -214,6 +259,15 @@ export default [
     previousPeriodDay: '1503446400000',
     metrics: [
       {
+        "key": "followers",
+        "diff": 0,
+        "label": "Total Followers",
+        "color": "#FDA3F3",
+        "value": 1000001,
+        "previousValue": 3,
+        "previousPostsCount": 1
+      },
+      {
         diff: -89,
         label: 'Engagement',
         value: 299,
@@ -255,6 +309,15 @@ export default [
     day: '1504656000000',
     previousPeriodDay: '1503446400000',
     metrics: [
+      {
+        "key": "followers",
+        "diff": 0,
+        "label": "Total Followers",
+        "color": "#FDA3F3",
+        "value": 1000002,
+        "previousValue": 3,
+        "previousPostsCount": 1
+      },
       {
         diff: -41,
         label: 'Engagement',

@@ -31,6 +31,17 @@ export function xAxisLabelFormatter() {
   return date.format('D');
 }
 
+export function tooltipFormatter() {
+  const point = this.points[0].point;
+  return reactDOM.renderToStaticMarkup(
+    <ChartTooltip {...point.metricData} day={point.x} />,
+  );
+}
+
+export function pointFormatter() {
+  return `${this.series.name}: <b>${this.y}</b><br/>`;
+}
+
 export const getXAxis = () => ({
   gridLineColor: '#F3F5F7',
   gridLineWidth: 0,
@@ -103,8 +114,8 @@ export default () => ({
   xAxis: getXAxis(),
   yAxis: getYAxis(),
   chart: {
-    marginLeft: 75,
-    spacingRight:50,
+    spacingLeft: 25,
+    spacingRight:40,
     spacingTop:20
   },
   legend: {
@@ -134,16 +145,11 @@ export default () => ({
   tooltip: {
     shared: true,
     crosshairs: true,
-    formatter() {
-      const point = this.points[0].point;
-      return reactDOM.renderToStaticMarkup(
-        <ChartTooltip {...point.metricData} day={point.x} />,
-      );
-    },
+    formatter: tooltipFormatter,
     backgroundColor: '#343E46',
     borderRadius: 4,
     borderWidth: 0,
-    pointFormatter: () => `${this.series.name}: <b>${this.y}</b><br/>`,
+    pointFormatter: pointFormatter,
     shadow: false,
     useHTML: true,
   },
