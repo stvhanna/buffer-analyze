@@ -32,7 +32,7 @@ const MetricDropdown =
       <Dropdown toggleDropdown={toggleDropdown} isDropdownOpen={open}>
         <div style={triggerContainer}>
           <ColorIcon metric={selectedMetric.label} circle />
-          <Text size="extra-small">{selectedMetric.label}</Text>
+          <Text weight="medium" size="extra-small" color="outerSpace">{selectedMetric.label}</Text>
           <span style={{ marginLeft: 'auto' }} >
             { open && <ArrowUpIcon size="small" /> }
             { !open && <ArrowDownIcon size="small" /> }

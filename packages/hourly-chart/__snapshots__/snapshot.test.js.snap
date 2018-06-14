@@ -48,10 +48,10 @@ exports[`Snapshots Dropdown closed dropdown 1`] = `
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "0.75rem",
-                "fontWeight": 400,
+                "fontWeight": 500,
               }
             }
           >
@@ -305,10 +305,10 @@ exports[`Snapshots Dropdown open dropdown 1`] = `
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "0.75rem",
-                "fontWeight": 400,
+                "fontWeight": 500,
               }
             }
           >
@@ -600,10 +600,10 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
                     <span
                       style={
                         Object {
-                          "color": "#59626a",
+                          "color": "#323b43",
                           "fontFamily": "\\"Roboto\\", sans-serif",
                           "fontSize": "0.75rem",
-                          "fontWeight": 400,
+                          "fontWeight": 500,
                         }
                       }
                     >
@@ -1200,7 +1200,7 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
           </section>
           <div>
             <ul
-              className="sc-kkGfuU jBDGTQ"
+              className="sc-kkGfuU gieSId"
             >
               <li
                 className="sc-iAyFgw cbzqSt"
@@ -1475,10 +1475,10 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                     <span
                       style={
                         Object {
-                          "color": "#59626a",
+                          "color": "#323b43",
                           "fontFamily": "\\"Roboto\\", sans-serif",
                           "fontSize": "0.75rem",
-                          "fontWeight": 400,
+                          "fontWeight": 500,
                         }
                       }
                     >
@@ -2075,7 +2075,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
           </section>
           <div>
             <ul
-              className="sc-kkGfuU jBDGTQ"
+              className="sc-kkGfuU gieSId"
             >
               <li
                 className="sc-iAyFgw cbzqSt"

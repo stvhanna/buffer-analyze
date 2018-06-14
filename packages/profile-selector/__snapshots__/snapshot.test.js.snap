@@ -10,16 +10,7 @@ exports[`Snapshots ProfileSelectorDropdown should filter by profilesFilterString
     }
   >
     <div
-      className="dropdown "
-      style={
-        Object {
-          "display": "inline-block",
-          "height": "34px",
-          "position": "relative",
-          "width": "360px",
-          "zIndex": 1,
-        }
-      }
+      className="dropdown sc-kkGfuU hDHHjV"
     >
       <a
         className="dropdown__trigger "
@@ -382,16 +373,7 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
     }
   >
     <div
-      className="dropdown "
-      style={
-        Object {
-          "display": "inline-block",
-          "height": "34px",
-          "position": "relative",
-          "width": "360px",
-          "zIndex": 1,
-        }
-      }
+      className="dropdown sc-kkGfuU hDHHjV"
     >
       <a
         className="dropdown__trigger "
@@ -1203,16 +1185,7 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
     }
   >
     <div
-      className="dropdown "
-      style={
-        Object {
-          "display": "inline-block",
-          "height": "34px",
-          "position": "relative",
-          "width": "360px",
-          "zIndex": 1,
-        }
-      }
+      className="dropdown sc-kkGfuU hDHHjV"
     >
       <a
         className="dropdown__trigger "
@@ -2024,16 +1997,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
     }
   >
     <div
-      className="dropdown "
-      style={
-        Object {
-          "display": "inline-block",
-          "height": "34px",
-          "position": "relative",
-          "width": "360px",
-          "zIndex": 1,
-        }
-      }
+      className="dropdown sc-kkGfuU hDHHjV"
     >
       <a
         className="dropdown__trigger "
@@ -4227,16 +4191,7 @@ exports[`Snapshots ProfileSelectorDropdown should show no match message 1`] = `
     }
   >
     <div
-      className="dropdown "
-      style={
-        Object {
-          "display": "inline-block",
-          "height": "34px",
-          "position": "relative",
-          "width": "360px",
-          "zIndex": 1,
-        }
-      }
+      className="dropdown sc-kkGfuU hDHHjV"
     >
       <a
         className="dropdown__trigger "

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 import {
   ProfileBadge,
@@ -18,13 +19,17 @@ import {
   Text,
 } from '@bufferapp/components';
 
-const dropdownContainerStyle = {
-  position: 'relative',
-  display: 'inline-block',
-  zIndex: 1,
-  width: '360px',
-  height: '34px',
-};
+const DropdownContainer = styled(Dropdown)`
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  width: 360px;
+  height: 34px;
+
+  input {
+    font-size: 0.8rem !important;
+  }
+`;
 
 const dropdownContentStyle = {
   zIndex: 2,
@@ -126,8 +131,7 @@ const ProfileSelectorDropdown = ({
     );
 
     return (
-      <Dropdown
-        style={dropdownContainerStyle}
+      <DropdownContainer
         onShow={openDropdown}
         onHide={closeDropdown}
       >
@@ -167,7 +171,7 @@ const ProfileSelectorDropdown = ({
             </ul>
           }
         </DropdownContent>
-      </Dropdown>);
+      </DropdownContainer>);
   }
 
   return null;

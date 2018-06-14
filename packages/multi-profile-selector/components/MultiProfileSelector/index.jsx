@@ -1,11 +1,17 @@
 import classNames from 'classnames';
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ProfileBadge, DropdownItem } from '@bufferapp/analyze-shared-components';
+
+import {
+  ProfileBadge,
+  DropdownItem,
+} from '@bufferapp/analyze-shared-components';
+
 import Dropdown, {
   DropdownTrigger,
   DropdownContent,
 } from 'react-simple-dropdown';
+
 import {
   ArrowDownIcon,
   ArrowUpIcon,
