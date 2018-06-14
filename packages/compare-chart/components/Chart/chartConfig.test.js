@@ -1,4 +1,42 @@
-import { truncateNumber, xAxisLabelFormatter } from './chartConfig';
+import { truncateNumber, xAxisLabelFormatter, tooltipFormatter, pointFormatter } from './chartConfig';
+import React from 'react';
+import reactDOM from 'react-dom/server';
+import ChartTooltip from '../ChartTooltip';
+import mockDailyData from '../../mocks/dailyData';
+
+describe('ChartConfig point formatter', () => {
+  it('should format point HTML to \'Impressions: <b>50</b><br />\'', () => {
+    const _this = {
+      y: 50,
+      series: { 
+        name: 'Impressions'
+      }
+    };
+    expect(pointFormatter.apply(_this))
+      .toBe('Impressions: <b>50</b><br/>');
+  });
+});
+
+describe('ChartConfig tooltip formatter', () => {
+  it('should generate static tooltip markup', () => {
+    
+    const point = {
+      metricData: mockDailyData[0],
+      x: 1504137600000
+    };
+
+    const _this = {
+      points: [{ point: point }]
+    };
+    
+    const tooltip = reactDOM.renderToStaticMarkup(
+      <ChartTooltip {...point.metricData} day={point.x} />,
+    );
+
+    expect(tooltipFormatter.apply(_this))
+      .toBe(tooltip);
+  });
+});
 
 describe('ChartConfig x-axis label formatter', () => {
   it('should convert unix time 1527811200000 to Jun 1', () => {
@@ -25,6 +63,34 @@ describe('ChartConfig x-axis label formatter', () => {
 });
 
 describe('ChartConfig truncate number', () => {
+  it('should truncate 1000000 into 1m', () => {
+    const _this = {
+      value: 1000000,
+    };
+    expect(truncateNumber.apply(_this))
+      .toBe('1m');
+  });
+  it('should truncate 1500000 into 1.5m', () => {
+    const _this = {
+      value: 1500000,
+    };
+    expect(truncateNumber.apply(_this))
+      .toBe('1.5m');
+  });
+  it('should truncate 1570000 into 1.57m', () => {
+    const _this = {
+      value: 1570000,
+    };
+    expect(truncateNumber.apply(_this))
+      .toBe('1.57m');
+  });
+  it('should truncate 1751234 into 1.75m', () => {
+    const _this = {
+      value: 1751234,
+    };
+    expect(truncateNumber.apply(_this))
+      .toBe('1.75m');
+  });
   it('should truncate 100500 into 100.5k', () => {
     const _this = {
       value: 100500,

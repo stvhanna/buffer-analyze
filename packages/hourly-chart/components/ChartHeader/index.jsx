@@ -47,10 +47,6 @@ const ChartHeader = (props) => {
   );
 };
 
-ChartHeader.defaultProps = {
-  secondaryMetric: null,
-};
-
 ChartHeader.propTypes = {
   selectedMetric: PropTypes.shape({
     label: PropTypes.string,
@@ -58,12 +54,8 @@ ChartHeader.propTypes = {
     hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
   }).isRequired,
   timezone: PropTypes.string.isRequired,
-  showSecondaryDropdown: PropTypes.func.isRequired,
-  toggleSecondaryDropdown: PropTypes.func.isRequired,
   toggleDropdown: PropTypes.func.isRequired,
-  hideSecondaryDropdown: PropTypes.func.isRequired,
   dropdownOpen: PropTypes.bool.isRequired,
-  secondaryDropdownOpen: PropTypes.bool.isRequired,
   selectMetric: PropTypes.func.isRequired,
   metrics: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string,
