@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import {
   ArrowDownIcon,
   ArrowUpIcon,
@@ -21,7 +22,7 @@ const triggerContainer = {
 };
 
 const dropdown = {
-  width: '10rem',
+  width: '16rem',
   display: 'inline-block',
 };
 

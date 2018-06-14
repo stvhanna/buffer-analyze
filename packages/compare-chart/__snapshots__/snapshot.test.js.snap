@@ -1449,10 +1449,26 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "background": "#fda3f3",
+                    "borderColor": "#df85d5",
+                    "borderRadius": "10px",
+                    "borderStyle": "solid",
+                    "borderWidth": "1px",
+                    "display": "inline-block",
+                    "height": "7px",
+                    "marginRight": "5px",
+                    "verticalAlign": "baseline",
+                    "width": "7px",
+                  }
+                }
+              />
+              <span
+                style={
+                  Object {
+                    "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "0.75rem",
-                    "fontWeight": 700,
+                    "fontWeight": 500,
                   }
                 }
               >
@@ -1471,8 +1487,8 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                   style={
                     Object {
                       "fill": "#59626a",
-                      "height": "1rem",
-                      "width": "1rem",
+                      "height": "0.75rem",
+                      "width": "0.75rem",
                     }
                   }
                   version="1.1"
@@ -1537,7 +1553,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -1563,7 +1579,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -1611,7 +1627,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -1637,7 +1653,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -1717,7 +1733,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -1743,7 +1759,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -1791,7 +1807,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -1817,7 +1833,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -1865,7 +1881,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -1891,7 +1907,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -1939,7 +1955,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -1965,7 +1981,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -2018,10 +2034,10 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                 <span
                   style={
                     Object {
-                      "color": "#59626a",
+                      "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 500,
                     }
                   }
                 >
@@ -2330,10 +2346,26 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "background": "#fda3f3",
+                    "borderColor": "#df85d5",
+                    "borderRadius": "10px",
+                    "borderStyle": "solid",
+                    "borderWidth": "1px",
+                    "display": "inline-block",
+                    "height": "7px",
+                    "marginRight": "5px",
+                    "verticalAlign": "baseline",
+                    "width": "7px",
+                  }
+                }
+              />
+              <span
+                style={
+                  Object {
+                    "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "0.75rem",
-                    "fontWeight": 700,
+                    "fontWeight": 500,
                   }
                 }
               >
@@ -2352,8 +2384,8 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                   style={
                     Object {
                       "fill": "#59626a",
-                      "height": "1rem",
-                      "width": "1rem",
+                      "height": "0.75rem",
+                      "width": "0.75rem",
                     }
                   }
                   version="1.1"
@@ -2418,7 +2450,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -2444,7 +2476,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -2492,7 +2524,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -2518,7 +2550,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -2566,7 +2598,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -2592,7 +2624,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -2640,7 +2672,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -2666,7 +2698,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -2746,7 +2778,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -2772,7 +2804,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -2820,7 +2852,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -2846,7 +2878,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -2899,10 +2931,10 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                 <span
                   style={
                     Object {
-                      "color": "#59626a",
+                      "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 500,
                     }
                   }
                 >
@@ -3211,10 +3243,26 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "background": "#fda3f3",
+                    "borderColor": "#df85d5",
+                    "borderRadius": "10px",
+                    "borderStyle": "solid",
+                    "borderWidth": "1px",
+                    "display": "inline-block",
+                    "height": "7px",
+                    "marginRight": "5px",
+                    "verticalAlign": "baseline",
+                    "width": "7px",
+                  }
+                }
+              />
+              <span
+                style={
+                  Object {
+                    "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "0.75rem",
-                    "fontWeight": 700,
+                    "fontWeight": 500,
                   }
                 }
               >
@@ -3233,8 +3281,8 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                   style={
                     Object {
                       "fill": "#59626a",
-                      "height": "1rem",
-                      "width": "1rem",
+                      "height": "0.75rem",
+                      "width": "0.75rem",
                     }
                   }
                   version="1.1"
@@ -3299,7 +3347,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -3325,7 +3373,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -3373,7 +3421,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -3399,7 +3447,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -3447,7 +3495,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -3473,7 +3521,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -3521,7 +3569,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -3547,7 +3595,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -3627,7 +3675,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -3653,7 +3701,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -3701,7 +3749,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -3727,7 +3775,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -3780,10 +3828,10 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                 <span
                   style={
                     Object {
-                      "color": "#59626a",
+                      "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 500,
                     }
                   }
                 >
@@ -4092,10 +4140,26 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "background": "#fda3f3",
+                    "borderColor": "#df85d5",
+                    "borderRadius": "10px",
+                    "borderStyle": "solid",
+                    "borderWidth": "1px",
+                    "display": "inline-block",
+                    "height": "7px",
+                    "marginRight": "5px",
+                    "verticalAlign": "baseline",
+                    "width": "7px",
+                  }
+                }
+              />
+              <span
+                style={
+                  Object {
+                    "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "0.75rem",
-                    "fontWeight": 700,
+                    "fontWeight": 500,
                   }
                 }
               >
@@ -4114,8 +4178,8 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                   style={
                     Object {
                       "fill": "#59626a",
-                      "height": "1rem",
-                      "width": "1rem",
+                      "height": "0.75rem",
+                      "width": "0.75rem",
                     }
                   }
                   version="1.1"
@@ -4180,7 +4244,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -4206,7 +4270,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -4254,7 +4318,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -4280,7 +4344,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -4360,7 +4424,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -4386,7 +4450,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -4434,7 +4498,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -4460,7 +4524,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -4508,7 +4572,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -4534,7 +4598,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -4582,7 +4646,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -4608,7 +4672,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -4658,7 +4722,18 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
               <span
                 className="leftButton activeButton"
               >
-                Daily
+                <span
+                  style={
+                    Object {
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 500,
+                    }
+                  }
+                >
+                  Daily
+                </span>
               </span>
             </button>
             <button
@@ -4692,7 +4767,18 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
               <span
                 className="rightButton"
               >
-                Period Total
+                <span
+                  style={
+                    Object {
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 500,
+                    }
+                  }
+                >
+                  Period Total
+                </span>
               </span>
             </button>
           </span>
@@ -4737,10 +4823,10 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                 <span
                   style={
                     Object {
-                      "color": "#59626a",
+                      "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 500,
                     }
                   }
                 >
@@ -5049,10 +5135,26 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "background": "#fda3f3",
+                    "borderColor": "#df85d5",
+                    "borderRadius": "10px",
+                    "borderStyle": "solid",
+                    "borderWidth": "1px",
+                    "display": "inline-block",
+                    "height": "7px",
+                    "marginRight": "5px",
+                    "verticalAlign": "baseline",
+                    "width": "7px",
+                  }
+                }
+              />
+              <span
+                style={
+                  Object {
+                    "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "0.75rem",
-                    "fontWeight": 700,
+                    "fontWeight": 500,
                   }
                 }
               >
@@ -5071,8 +5173,8 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                   style={
                     Object {
                       "fill": "#59626a",
-                      "height": "1rem",
-                      "width": "1rem",
+                      "height": "0.75rem",
+                      "width": "0.75rem",
                     }
                   }
                   version="1.1"
@@ -5137,7 +5239,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -5163,7 +5265,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -5211,7 +5313,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -5237,7 +5339,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -5317,7 +5419,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -5343,7 +5445,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -5391,7 +5493,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -5417,7 +5519,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -5465,7 +5567,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -5491,7 +5593,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -5539,7 +5641,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -5565,7 +5667,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -5618,10 +5720,10 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                 <span
                   style={
                     Object {
-                      "color": "#59626a",
+                      "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 500,
                     }
                   }
                 >
@@ -6528,10 +6630,10 @@ exports[`Snapshots PeriodToggle should render an active toggle 1`] = `
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -6609,10 +6711,10 @@ exports[`Snapshots PeriodToggle should render an inactive toggle 1`] = `
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >

@@ -29,7 +29,7 @@ const PresetsDropdown =
     <div style={dropdown}>
       <Dropdown toggleDropdown={toggleDropdown} isDropdownOpen={open}>
         <div style={triggerContainer}>
-          <Text size="extra-small">{presets[selectedPreset].label}</Text>
+          <Text size="extra-small" color="outerSpace" weight="medium">{presets[selectedPreset].label}</Text>
           <span style={{ marginLeft: 'auto' }} >
             { open && <ArrowUpIcon size="small" /> }
             { !open && <ArrowDownIcon size="small" /> }

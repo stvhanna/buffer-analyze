@@ -27,7 +27,7 @@ const PeriodToggle = ({ active, handleClick }) => {
   return (<span style={{ marginLeft: 'auto' }} >
     <Button noStyle onClick={handleClick} >
       <span className={periodToggle} >
-        <Text weight="bold" size="extra-small">Previous Period</Text>
+        <Text weight="medium" size="extra-small" color="outerSpace">Previous Period</Text>
         <span style={{ marginLeft: 'auto' }} className={toggle}>
           <span className={toggleSwitchClass} />
           <span className={toggleSwitchKnobClass} />

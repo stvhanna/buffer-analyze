@@ -60,10 +60,26 @@ exports[`Snapshots ContextualCompare [TESTED] Should render Posts metrics as col
                   <span
                     style={
                       Object {
-                        "color": "#59626a",
+                        "background": "#98E8B2",
+                        "borderColor": "#7aca94",
+                        "borderRadius": "10px",
+                        "borderStyle": "solid",
+                        "borderWidth": "1px",
+                        "display": "inline-block",
+                        "height": "7px",
+                        "marginRight": "5px",
+                        "verticalAlign": "baseline",
+                        "width": "7px",
+                      }
+                    }
+                  />
+                  <span
+                    style={
+                      Object {
+                        "color": "#323b43",
                         "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "0.75rem",
-                        "fontWeight": 700,
+                        "fontWeight": 500,
                       }
                     }
                   >
@@ -82,8 +98,8 @@ exports[`Snapshots ContextualCompare [TESTED] Should render Posts metrics as col
                       style={
                         Object {
                           "fill": "#59626a",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "height": "0.75rem",
+                          "width": "0.75rem",
                         }
                       }
                       version="1.1"
@@ -148,7 +164,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render Posts metrics as col
                               "display": "flex",
                               "padding": "5px 10px",
                               "position": "relative",
-                              "width": "200px",
+                              "width": "15.5rem",
                             }
                           }
                         >
@@ -174,7 +190,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render Posts metrics as col
                                 "color": "#59626a",
                                 "fontFamily": "\\"Roboto\\", sans-serif",
                                 "fontSize": "0.75rem",
-                                "fontWeight": 700,
+                                "fontWeight": 400,
                               }
                             }
                           >
@@ -222,7 +238,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render Posts metrics as col
                               "display": "flex",
                               "padding": "5px 10px",
                               "position": "relative",
-                              "width": "200px",
+                              "width": "15.5rem",
                             }
                           }
                         >
@@ -248,7 +264,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render Posts metrics as col
                                 "color": "#59626a",
                                 "fontFamily": "\\"Roboto\\", sans-serif",
                                 "fontSize": "0.75rem",
-                                "fontWeight": 700,
+                                "fontWeight": 400,
                               }
                             }
                           >
@@ -312,10 +328,26 @@ exports[`Snapshots ContextualCompare [TESTED] Should render Posts metrics as col
                   <span
                     style={
                       Object {
-                        "color": "#59626a",
+                        "background": "#93C2E4",
+                        "borderColor": "#75a4c6",
+                        "borderRadius": "10px",
+                        "borderStyle": "solid",
+                        "borderWidth": "1px",
+                        "display": "inline-block",
+                        "height": "7px",
+                        "marginRight": "5px",
+                        "verticalAlign": "baseline",
+                        "width": "7px",
+                      }
+                    }
+                  />
+                  <span
+                    style={
+                      Object {
+                        "color": "#323b43",
                         "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "0.75rem",
-                        "fontWeight": 700,
+                        "fontWeight": 500,
                       }
                     }
                   >
@@ -334,8 +366,8 @@ exports[`Snapshots ContextualCompare [TESTED] Should render Posts metrics as col
                       style={
                         Object {
                           "fill": "#59626a",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "height": "0.75rem",
+                          "width": "0.75rem",
                         }
                       }
                       version="1.1"
@@ -400,7 +432,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render Posts metrics as col
                               "display": "flex",
                               "padding": "5px 10px",
                               "position": "relative",
-                              "width": "200px",
+                              "width": "15.5rem",
                             }
                           }
                         >
@@ -426,7 +458,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render Posts metrics as col
                                 "color": "#59626a",
                                 "fontFamily": "\\"Roboto\\", sans-serif",
                                 "fontSize": "0.75rem",
-                                "fontWeight": 700,
+                                "fontWeight": 400,
                               }
                             }
                           >
@@ -474,7 +506,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render Posts metrics as col
                               "display": "flex",
                               "padding": "5px 10px",
                               "position": "relative",
-                              "width": "200px",
+                              "width": "15.5rem",
                             }
                           }
                         >
@@ -500,7 +532,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render Posts metrics as col
                                 "color": "#59626a",
                                 "fontFamily": "\\"Roboto\\", sans-serif",
                                 "fontSize": "0.75rem",
-                                "fontWeight": 700,
+                                "fontWeight": 400,
                               }
                             }
                           >
@@ -582,7 +614,18 @@ exports[`Snapshots ContextualCompare [TESTED] Should render Posts metrics as col
                   <span
                     className="leftButton"
                   >
-                    Presets
+                    <span
+                      style={
+                        Object {
+                          "color": "#323b43",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 500,
+                        }
+                      }
+                    >
+                      Presets
+                    </span>
                   </span>
                 </button>
                 <button
@@ -616,7 +659,18 @@ exports[`Snapshots ContextualCompare [TESTED] Should render Posts metrics as col
                   <span
                     className="rightButton activeButton"
                   >
-                    Custom
+                    <span
+                      style={
+                        Object {
+                          "color": "#323b43",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 500,
+                        }
+                      }
+                    >
+                      Custom
+                    </span>
                   </span>
                 </button>
               </span>
@@ -784,10 +838,26 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                   <span
                     style={
                       Object {
-                        "color": "#59626a",
+                        "background": "#fda3f3",
+                        "borderColor": "#df85d5",
+                        "borderRadius": "0px",
+                        "borderStyle": "solid",
+                        "borderWidth": "1px",
+                        "display": "inline-block",
+                        "height": "7px",
+                        "marginRight": "5px",
+                        "verticalAlign": "baseline",
+                        "width": "7px",
+                      }
+                    }
+                  />
+                  <span
+                    style={
+                      Object {
+                        "color": "#323b43",
                         "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "0.75rem",
-                        "fontWeight": 700,
+                        "fontWeight": 500,
                       }
                     }
                   >
@@ -806,8 +876,8 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                       style={
                         Object {
                           "fill": "#59626a",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "height": "0.75rem",
+                          "width": "0.75rem",
                         }
                       }
                       version="1.1"
@@ -872,7 +942,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                               "display": "flex",
                               "padding": "5px 10px",
                               "position": "relative",
-                              "width": "200px",
+                              "width": "15.5rem",
                             }
                           }
                         >
@@ -898,7 +968,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                                 "color": "#59626a",
                                 "fontFamily": "\\"Roboto\\", sans-serif",
                                 "fontSize": "0.75rem",
-                                "fontWeight": 700,
+                                "fontWeight": 400,
                               }
                             }
                           >
@@ -978,7 +1048,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                               "display": "flex",
                               "padding": "5px 10px",
                               "position": "relative",
-                              "width": "200px",
+                              "width": "15.5rem",
                             }
                           }
                         >
@@ -1004,7 +1074,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                                 "color": "#59626a",
                                 "fontFamily": "\\"Roboto\\", sans-serif",
                                 "fontSize": "0.75rem",
-                                "fontWeight": 700,
+                                "fontWeight": 400,
                               }
                             }
                           >
@@ -1036,10 +1106,26 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                   <span
                     style={
                       Object {
-                        "color": "#59626a",
+                        "background": "#98E8B2",
+                        "borderColor": "#7aca94",
+                        "borderRadius": "10px",
+                        "borderStyle": "solid",
+                        "borderWidth": "1px",
+                        "display": "inline-block",
+                        "height": "7px",
+                        "marginRight": "5px",
+                        "verticalAlign": "baseline",
+                        "width": "7px",
+                      }
+                    }
+                  />
+                  <span
+                    style={
+                      Object {
+                        "color": "#323b43",
                         "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "0.75rem",
-                        "fontWeight": 700,
+                        "fontWeight": 500,
                       }
                     }
                   >
@@ -1058,8 +1144,8 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                       style={
                         Object {
                           "fill": "#59626a",
-                          "height": "1rem",
-                          "width": "1rem",
+                          "height": "0.75rem",
+                          "width": "0.75rem",
                         }
                       }
                       version="1.1"
@@ -1124,7 +1210,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                               "display": "flex",
                               "padding": "5px 10px",
                               "position": "relative",
-                              "width": "200px",
+                              "width": "15.5rem",
                             }
                           }
                         >
@@ -1150,7 +1236,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                                 "color": "#59626a",
                                 "fontFamily": "\\"Roboto\\", sans-serif",
                                 "fontSize": "0.75rem",
-                                "fontWeight": 700,
+                                "fontWeight": 400,
                               }
                             }
                           >
@@ -1230,7 +1316,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                               "display": "flex",
                               "padding": "5px 10px",
                               "position": "relative",
-                              "width": "200px",
+                              "width": "15.5rem",
                             }
                           }
                         >
@@ -1256,7 +1342,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                                 "color": "#59626a",
                                 "fontFamily": "\\"Roboto\\", sans-serif",
                                 "fontSize": "0.75rem",
-                                "fontWeight": 700,
+                                "fontWeight": 400,
                               }
                             }
                           >
@@ -1306,7 +1392,18 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                   <span
                     className="leftButton"
                   >
-                    Presets
+                    <span
+                      style={
+                        Object {
+                          "color": "#323b43",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 500,
+                        }
+                      }
+                    >
+                      Presets
+                    </span>
                   </span>
                 </button>
                 <button
@@ -1340,7 +1437,18 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                   <span
                     className="rightButton activeButton"
                   >
-                    Custom
+                    <span
+                      style={
+                        Object {
+                          "color": "#323b43",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 500,
+                        }
+                      }
+                    >
+                      Custom
+                    </span>
                   </span>
                 </button>
               </span>
@@ -1521,10 +1629,10 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                       <span
                         style={
                           Object {
-                            "color": "#59626a",
+                            "color": "#323b43",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 400,
+                            "fontWeight": 500,
                           }
                         }
                       >
@@ -1846,7 +1954,18 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                   <span
                     className="leftButton activeButton"
                   >
-                    Presets
+                    <span
+                      style={
+                        Object {
+                          "color": "#323b43",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 500,
+                        }
+                      }
+                    >
+                      Presets
+                    </span>
                   </span>
                 </button>
                 <button
@@ -1880,7 +1999,18 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                   <span
                     className="rightButton"
                   >
-                    Custom
+                    <span
+                      style={
+                        Object {
+                          "color": "#323b43",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 500,
+                        }
+                      }
+                    >
+                      Custom
+                    </span>
                   </span>
                 </button>
               </span>
@@ -2061,10 +2191,10 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                       <span
                         style={
                           Object {
-                            "color": "#59626a",
+                            "color": "#323b43",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 400,
+                            "fontWeight": 500,
                           }
                         }
                       >
@@ -2386,7 +2516,18 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                   <span
                     className="leftButton activeButton"
                   >
-                    Presets
+                    <span
+                      style={
+                        Object {
+                          "color": "#323b43",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 500,
+                        }
+                      }
+                    >
+                      Presets
+                    </span>
                   </span>
                 </button>
                 <button
@@ -2420,7 +2561,18 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
                   <span
                     className="rightButton"
                   >
-                    Custom
+                    <span
+                      style={
+                        Object {
+                          "color": "#323b43",
+                          "fontFamily": "\\"Roboto\\", sans-serif",
+                          "fontSize": "0.75rem",
+                          "fontWeight": 500,
+                        }
+                      }
+                    >
+                      Custom
+                    </span>
                   </span>
                 </button>
               </span>
@@ -2786,10 +2938,10 @@ exports[`Snapshots PresetsDropdown [TESTED] open dropdown 1`] = `
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "0.75rem",
-                "fontWeight": 400,
+                "fontWeight": 500,
               }
             }
           >

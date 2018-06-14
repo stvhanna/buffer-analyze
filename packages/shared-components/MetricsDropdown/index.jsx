@@ -1,15 +1,19 @@
 import classNames from 'classnames';
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import Dropdown, {
   DropdownTrigger,
   DropdownContent,
 } from 'react-simple-dropdown';
+
 import {
   ArrowDownIcon,
   ArrowUpIcon,
   Text,
 } from '@bufferapp/components';
+
+import { MetricIcon } from '@bufferapp/analyze-shared-components';
 
 import {
   dropdownContainer,
@@ -19,7 +23,6 @@ import {
   dropdownTrigger,
   dropdownTriggerActive,
 } from './style.less';
-
 
 import DropdownItem from './components/DropdownItem';
 
@@ -67,10 +70,11 @@ const MetricsDropdown = ({
         style={{ marginLeft: `${secondary ? '0.5rem' : ''}` }}
       >
         <DropdownTrigger className={triggerClasses} style={{ display: 'flex' }} >
-          <Text weight="bold" size="extra-small">{selectedMetric.label}</Text>
+          <MetricIcon metric={selectedMetric} />
+          <Text weight="medium" size="extra-small" color="outerSpace">{selectedMetric.label}</Text>
           <span style={{ pointerEvents: 'none', marginLeft: 'auto' }} >
-            { isDropdownOpen && <ArrowUpIcon /> }
-            { !isDropdownOpen && <ArrowDownIcon /> }
+            { isDropdownOpen && <ArrowUpIcon size="small" /> }
+            { !isDropdownOpen && <ArrowDownIcon size="small" /> }
           </span>
         </DropdownTrigger>
         <DropdownContent className={contentClasses} >

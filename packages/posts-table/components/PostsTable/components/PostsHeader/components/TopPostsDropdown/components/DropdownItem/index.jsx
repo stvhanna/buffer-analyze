@@ -37,7 +37,7 @@ const DropdownItem = ({ metric, handleClick, selected }) => (
       >
         <MetricIcon metric={metric} />
         <MetricText>
-          <Text weight="medium" size="extra-small" color="outerSpace">{metric.label}</Text>
+          <Text size="extra-small" color="outerSpace">{metric.label}</Text>
         </MetricText>
         <span>&nbsp;</span>
         { selected && <div style={{ marginLeft: 'auto' }}>

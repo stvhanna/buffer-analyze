@@ -1849,7 +1849,7 @@ exports[`Snapshots DropdownItem should render 1`] = `
               "display": "flex",
               "padding": "5px 10px",
               "position": "relative",
-              "width": "200px",
+              "width": "15.5rem",
             }
           }
         >
@@ -1875,7 +1875,7 @@ exports[`Snapshots DropdownItem should render 1`] = `
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontWeight": 400,
               }
             }
           >
@@ -1937,7 +1937,7 @@ exports[`Snapshots DropdownItem should selected 1`] = `
               "display": "flex",
               "padding": "5px 10px",
               "position": "relative",
-              "width": "200px",
+              "width": "15.5rem",
             }
           }
         >
@@ -1963,7 +1963,7 @@ exports[`Snapshots DropdownItem should selected 1`] = `
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontWeight": 400,
               }
             }
           >
@@ -3768,10 +3768,26 @@ exports[`Snapshots MetricsDropdown should open the dropdown 1`] = `
         <span
           style={
             Object {
-              "color": "#59626a",
+              "background": "#fda3f3",
+              "borderColor": "#df85d5",
+              "borderRadius": "0px",
+              "borderStyle": "solid",
+              "borderWidth": "1px",
+              "display": "inline-block",
+              "height": "7px",
+              "marginRight": "5px",
+              "verticalAlign": "baseline",
+              "width": "7px",
+            }
+          }
+        />
+        <span
+          style={
+            Object {
+              "color": "#323b43",
               "fontFamily": "\\"Roboto\\", sans-serif",
               "fontSize": "0.75rem",
-              "fontWeight": 700,
+              "fontWeight": 500,
             }
           }
         >
@@ -3790,8 +3806,8 @@ exports[`Snapshots MetricsDropdown should open the dropdown 1`] = `
             style={
               Object {
                 "fill": "#59626a",
-                "height": "1rem",
-                "width": "1rem",
+                "height": "0.75rem",
+                "width": "0.75rem",
               }
             }
             version="1.1"
@@ -3856,7 +3872,7 @@ exports[`Snapshots MetricsDropdown should open the dropdown 1`] = `
                     "display": "flex",
                     "padding": "5px 10px",
                     "position": "relative",
-                    "width": "200px",
+                    "width": "15.5rem",
                   }
                 }
               >
@@ -3882,7 +3898,7 @@ exports[`Snapshots MetricsDropdown should open the dropdown 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -3962,7 +3978,7 @@ exports[`Snapshots MetricsDropdown should open the dropdown 1`] = `
                     "display": "flex",
                     "padding": "5px 10px",
                     "position": "relative",
-                    "width": "200px",
+                    "width": "15.5rem",
                   }
                 }
               >
@@ -3988,7 +4004,7 @@ exports[`Snapshots MetricsDropdown should open the dropdown 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -4036,7 +4052,7 @@ exports[`Snapshots MetricsDropdown should open the dropdown 1`] = `
                     "display": "flex",
                     "padding": "5px 10px",
                     "position": "relative",
-                    "width": "200px",
+                    "width": "15.5rem",
                   }
                 }
               >
@@ -4062,7 +4078,7 @@ exports[`Snapshots MetricsDropdown should open the dropdown 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -4107,10 +4123,26 @@ exports[`Snapshots MetricsDropdown should render a secondary dropdown 1`] = `
         <span
           style={
             Object {
-              "color": "#59626a",
+              "background": "#fda3f3",
+              "borderColor": "#df85d5",
+              "borderRadius": "0px",
+              "borderStyle": "solid",
+              "borderWidth": "1px",
+              "display": "inline-block",
+              "height": "7px",
+              "marginRight": "5px",
+              "verticalAlign": "baseline",
+              "width": "7px",
+            }
+          }
+        />
+        <span
+          style={
+            Object {
+              "color": "#323b43",
               "fontFamily": "\\"Roboto\\", sans-serif",
               "fontSize": "0.75rem",
-              "fontWeight": 700,
+              "fontWeight": 500,
             }
           }
         >
@@ -4129,8 +4161,8 @@ exports[`Snapshots MetricsDropdown should render a secondary dropdown 1`] = `
             style={
               Object {
                 "fill": "#59626a",
-                "height": "1rem",
-                "width": "1rem",
+                "height": "0.75rem",
+                "width": "0.75rem",
               }
             }
             version="1.1"
@@ -4195,7 +4227,7 @@ exports[`Snapshots MetricsDropdown should render a secondary dropdown 1`] = `
                     "display": "flex",
                     "padding": "5px 10px",
                     "position": "relative",
-                    "width": "200px",
+                    "width": "15.5rem",
                   }
                 }
               >
@@ -4221,7 +4253,7 @@ exports[`Snapshots MetricsDropdown should render a secondary dropdown 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -4301,7 +4333,7 @@ exports[`Snapshots MetricsDropdown should render a secondary dropdown 1`] = `
                     "display": "flex",
                     "padding": "5px 10px",
                     "position": "relative",
-                    "width": "200px",
+                    "width": "15.5rem",
                   }
                 }
               >
@@ -4327,7 +4359,7 @@ exports[`Snapshots MetricsDropdown should render a secondary dropdown 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -4375,7 +4407,7 @@ exports[`Snapshots MetricsDropdown should render a secondary dropdown 1`] = `
                     "display": "flex",
                     "padding": "5px 10px",
                     "position": "relative",
-                    "width": "200px",
+                    "width": "15.5rem",
                   }
                 }
               >
@@ -4401,7 +4433,7 @@ exports[`Snapshots MetricsDropdown should render a secondary dropdown 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -4446,10 +4478,26 @@ exports[`Snapshots MetricsDropdown should render the dropdown 1`] = `
         <span
           style={
             Object {
-              "color": "#59626a",
+              "background": "#fda3f3",
+              "borderColor": "#df85d5",
+              "borderRadius": "0px",
+              "borderStyle": "solid",
+              "borderWidth": "1px",
+              "display": "inline-block",
+              "height": "7px",
+              "marginRight": "5px",
+              "verticalAlign": "baseline",
+              "width": "7px",
+            }
+          }
+        />
+        <span
+          style={
+            Object {
+              "color": "#323b43",
               "fontFamily": "\\"Roboto\\", sans-serif",
               "fontSize": "0.75rem",
-              "fontWeight": 700,
+              "fontWeight": 500,
             }
           }
         >
@@ -4468,8 +4516,8 @@ exports[`Snapshots MetricsDropdown should render the dropdown 1`] = `
             style={
               Object {
                 "fill": "#59626a",
-                "height": "1rem",
-                "width": "1rem",
+                "height": "0.75rem",
+                "width": "0.75rem",
               }
             }
             version="1.1"
@@ -4534,7 +4582,7 @@ exports[`Snapshots MetricsDropdown should render the dropdown 1`] = `
                     "display": "flex",
                     "padding": "5px 10px",
                     "position": "relative",
-                    "width": "200px",
+                    "width": "15.5rem",
                   }
                 }
               >
@@ -4560,7 +4608,7 @@ exports[`Snapshots MetricsDropdown should render the dropdown 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -4640,7 +4688,7 @@ exports[`Snapshots MetricsDropdown should render the dropdown 1`] = `
                     "display": "flex",
                     "padding": "5px 10px",
                     "position": "relative",
-                    "width": "200px",
+                    "width": "15.5rem",
                   }
                 }
               >
@@ -4666,7 +4714,7 @@ exports[`Snapshots MetricsDropdown should render the dropdown 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -4714,7 +4762,7 @@ exports[`Snapshots MetricsDropdown should render the dropdown 1`] = `
                     "display": "flex",
                     "padding": "5px 10px",
                     "position": "relative",
-                    "width": "200px",
+                    "width": "15.5rem",
                   }
                 }
               >
@@ -4740,7 +4788,7 @@ exports[`Snapshots MetricsDropdown should render the dropdown 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -4803,7 +4851,18 @@ exports[`Snapshots ModeToggle should render an active toggle 1`] = `
         <span
           className="leftButton"
         >
-          mode1
+          <span
+            style={
+              Object {
+                "color": "#323b43",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 500,
+              }
+            }
+          >
+            mode1
+          </span>
         </span>
       </button>
       <button
@@ -4837,7 +4896,18 @@ exports[`Snapshots ModeToggle should render an active toggle 1`] = `
         <span
           className="rightButton activeButton"
         >
-          mode2
+          <span
+            style={
+              Object {
+                "color": "#323b43",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 500,
+              }
+            }
+          >
+            mode2
+          </span>
         </span>
       </button>
     </span>
@@ -4892,7 +4962,18 @@ exports[`Snapshots ModeToggle should render an inactive toggle 1`] = `
         <span
           className="leftButton activeButton"
         >
-          mode1
+          <span
+            style={
+              Object {
+                "color": "#323b43",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 500,
+              }
+            }
+          >
+            mode1
+          </span>
         </span>
       </button>
       <button
@@ -4926,7 +5007,18 @@ exports[`Snapshots ModeToggle should render an inactive toggle 1`] = `
         <span
           className="rightButton"
         >
-          mode2
+          <span
+            style={
+              Object {
+                "color": "#323b43",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 500,
+              }
+            }
+          >
+            mode2
+          </span>
         </span>
       </button>
     </span>

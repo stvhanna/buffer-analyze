@@ -115,8 +115,8 @@ const MultiProfileSelector = ({
             <div style={{ margin: '4px 0' }}><Text color="outerSpace" size="extra-small" weight="medium">Please choose an account</Text></div>
           }
           <span style={{ pointerEvents: 'none', marginLeft: 'auto' }} >
-            { isDropdownOpen && <ArrowUpIcon /> }
-            { !isDropdownOpen && <ArrowDownIcon /> }
+            { isDropdownOpen && <ArrowUpIcon size="small" /> }
+            { !isDropdownOpen && <ArrowDownIcon size="small" /> }
           </span>
         </DropdownTrigger>
         <DropdownContent className={contentClasses} >

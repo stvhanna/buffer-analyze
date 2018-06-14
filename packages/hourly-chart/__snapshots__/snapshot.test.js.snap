@@ -6,7 +6,7 @@ exports[`Snapshots Dropdown closed dropdown 1`] = `
     style={
       Object {
         "display": "inline-block",
-        "width": "10rem",
+        "width": "16rem",
       }
     }
   >
@@ -263,7 +263,7 @@ exports[`Snapshots Dropdown open dropdown 1`] = `
     style={
       Object {
         "display": "inline-block",
-        "width": "10rem",
+        "width": "16rem",
       }
     }
   >
@@ -558,7 +558,7 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
               style={
                 Object {
                   "display": "inline-block",
-                  "width": "10rem",
+                  "width": "16rem",
                 }
               }
             >
@@ -1433,7 +1433,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
               style={
                 Object {
                   "display": "inline-block",
-                  "width": "10rem",
+                  "width": "16rem",
                 }
               }
             >
