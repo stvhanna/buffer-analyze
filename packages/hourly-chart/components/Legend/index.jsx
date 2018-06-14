@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import {
-  Text,
-} from '@bufferapp/components';
+import { Text } from '@bufferapp/components';
 import ColorIcon from '../ColorIcon';
 
 const LegendList = styled.ul`
@@ -15,10 +13,10 @@ const LegendList = styled.ul`
 const LegendItem = styled.li`
   display: inline-block;
   padding: 0.8rem;
-  margin: 0 .8rem;
+  margin: 0 0.8rem;
 `;
 
-const Legend = ({ metric, secondaryMetric }) =>
+const Legend = ({ metric }) =>
   <LegendList>
     <LegendItem>
       <ColorIcon circle />
@@ -28,23 +26,12 @@ const Legend = ({ metric, secondaryMetric }) =>
       <ColorIcon metric={metric.label} circle />
       <Text size="small">{metric.label}</Text>
     </LegendItem>
-    { secondaryMetric && <LegendItem>
-      <ColorIcon metric={secondaryMetric.label} circle />
-      <Text size="small">{secondaryMetric.label}</Text>
-    </LegendItem> }
   </LegendList>;
-
-Legend.defaultProps = {
-  secondaryMetric: null,
-};
 
 Legend.propTypes = {
   metric: PropTypes.shape({
     label: PropTypes.string,
   }).isRequired,
-  secondaryMetric: PropTypes.shape({
-    label: PropTypes.string,
-  }),
 };
 
 export default Legend;

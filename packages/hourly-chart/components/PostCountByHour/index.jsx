@@ -8,21 +8,24 @@ const highChartsTweetsConfigXAxis = {
     text: null,
   },
   type: 'datetime',
-  gridLineWidth: 1,
+  gridLineWidth: 0,
   gridLineColor: '#F3F5F7',
-  lineColor: '#E6EBEF',
+  lineColor: '#F3F5F7',
+  lineWidth: '2',
   min: moment().startOf('day').valueOf(),
   max: moment().endOf('day').valueOf(),
   minorTickWidth: 0,
-  minorGridLineWidth: 1,
+  minorGridLineWidth: 0,
   minorGridLineColor: '#F3F5F7',
   minorTickInterval: 3600 * 1000,
   maxPadding: 0.0,
   minPadding: 0.0,
   tickInterval: 6 * 3600 * 1000, // Show label every six hours
   tickPixelInterval: 3600 * 24 * 1000,
-  tickLength: 20,
-  showLastLabel: false,
+  tickLength: 25,
+  tickWidth: 2,
+  tickColor: '#F3F5F7',
+  showLastLabel: true,
   endOnTick: false,
   startOnTick: false,
   labels: {
@@ -32,10 +35,10 @@ const highChartsTweetsConfigXAxis = {
     },
     align: 'left',
     x: 10,
-    y: 25,
+    y: 20,
     style: {
-      'font-size': '11px',
-      'font-weight': 'normal',
+      'font-size': '0.875rem',
+      'font-weight': '400',
       'font-family': 'Roboto, sans serif',
     },
   },
@@ -47,13 +50,19 @@ const chartConfig = {
     spacingTop: 10,
     spacingBottom: 0,
     height: 100,
-    marginLeft: 25,
-    marginRight: 25,
+    marginLeft: 65,
+    spacingRight: 40,
   },
   xAxis: highChartsTweetsConfigXAxis,
   yAxis: {
     showLastLabel: false,
     showFirstLabel: false,
+    title: {
+      text: null,
+    },
+    lineWidth: '0',
+    gridLineColor: '#F3F5F7',
+    gridLineWidth: 2,
   },
   plotOptions: {
     column: {
@@ -88,7 +97,14 @@ const seriesConfig = {
   name: 'Tweets',
 };
 
-const mouseOut = chart => chart.getChart().tooltip.hide();
+const mouseOut = chart => {
+  chart.tooltip.hide();
+  //manually remove hover state from all points except this one
+  for (var i in chart.series[0].points) {
+    let point = chart.series[0].points[i];
+    point.setState('');
+  }
+};
 
 const PostCountByHour = ({ posts, hourlyChart }) => {
   const hour = moment().startOf('day');
@@ -109,7 +125,7 @@ const PostCountByHour = ({ posts, hourlyChart }) => {
 
           chart.tooltip.refresh(pointsToRefresh);
         },
-        mouseOut: (() => mouseOut(hourlyChart)),
+        mouseOut: (() => mouseOut(hourlyChart.getChart())),
       },
     };
     hour.add(1, 'hour');

@@ -43,18 +43,6 @@ describe('reducer', () => {
       });
       expect(state.dropdownOpen).toBeFalsy();
     });
-    it('secondary dropdown is hidden', () => {
-      const state = reducer(undefined, {
-        type: 'TEST_ACTION',
-      });
-      expect(state.secondaryDropdownShown).toBeFalsy();
-    });
-    it('secondary dropdown is closed', () => {
-      const state = reducer(undefined, {
-        type: 'TEST_ACTION',
-      });
-      expect(state.secondaryDropdownOpen).toBeFalsy();
-    });
   });
   describe('metrics fetched', () => {
     it('should not be loading', () => {
@@ -104,31 +92,6 @@ describe('reducer', () => {
       const openDropdownState = reducer(undefined, actions.toggleDropdown());
       const state = reducer(openDropdownState, actions.selectMetric('Impressions'));
       expect(state.selectedMetric).toBe('Impressions');
-    });
-  });
-  describe('secondary dropdown', () => {
-    it('show selects the first metric not selected on the primary dropdown', () => {
-      const loadedMetrics = reducer(undefined, {
-        type: `hourly_${asyncDataFetchActions.FETCH_SUCCESS}`,
-        result: {
-          metrics,
-        },
-      });
-      const state = reducer(loadedMetrics, actions.showSecondaryDropdown());
-      expect(state.selectedSecondaryMetric).toBe('Impressions');
-    });
-    it('open', () => {
-      const state = reducer(undefined, actions.toggleSecondaryDropdown());
-      expect(state.secondaryDropdownOpen).toBeTruthy();
-    });
-    it('select secondary metric', () => {
-      const openDropdownState = reducer(undefined, actions.toggleSecondaryDropdown());
-      const state = reducer(openDropdownState, actions.selectSecondaryMetric('Engagements'));
-      expect(state.selectedSecondaryMetric).toBe('Engagements');
-    });
-    it('hide removes selected metric from dropdown', () => {
-      const state = reducer(undefined, actions.hideSecondaryDropdown());
-      expect(state.selectedSecondaryMetric).toBe(null);
     });
   });
 });

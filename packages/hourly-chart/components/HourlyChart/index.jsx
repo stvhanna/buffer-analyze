@@ -34,7 +34,6 @@ export class ChartContent extends React.PureComponent {
         <HourlyEngagementChart
           posts={this.props.postsCount}
           metric={this.props.selectedMetric}
-          secondaryMetric={this.props.secondaryMetric}
           timezone={this.props.timezone}
           chartRef={(node) => {
             this._chart = node;
@@ -50,14 +49,13 @@ export class ChartContent extends React.PureComponent {
           hourlyChart={this._chart}
           timezone={this.props.timezone}
         />
-        <Legend metric={this.props.selectedMetric} secondaryMetric={this.props.secondaryMetric} />
+        <Legend metric={this.props.selectedMetric} />
       </div>
     );
   }
 }
 
 ChartContent.defaultProps = {
-  secondaryMetric: null,
   postsCount: [],
   timezone: 'America/Los_Angeles',
 };
@@ -67,17 +65,12 @@ ChartContent.propTypes = {
     label: PropTypes.string,
     hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
   }).isRequired,
-  secondaryMetric: PropTypes.shape({
-    label: PropTypes.string,
-    hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
-  }),
   postsCount: PropTypes.arrayOf(PropTypes.number),
   timezone: PropTypes.string,
 };
 
 const getStateForReport = props => ({
-  selectedMetric: props.loading ? null : props.selectedMetric.label,
-  secondaryMetric: props.secondaryMetric ? props.secondaryMetric.label : null,
+  selectedMetric: props.loading ? null : props.selectedMetric.label
 });
 
 const HourlyChart = (props) => {
@@ -102,7 +95,6 @@ const HourlyChart = (props) => {
               postsCount={props.postsCount}
               timezone={props.timezone}
               selectedMetric={props.selectedMetric}
-              secondaryMetric={props.secondaryMetric}
             />
           </div>
         }
@@ -113,7 +105,6 @@ const HourlyChart = (props) => {
 
 HourlyChart.defaultProps = {
   loading: false,
-  secondaryMetric: null,
   selectedMetric: null,
   postsCount: [],
   timezone: 'America/Los_Angeles',
@@ -124,10 +115,6 @@ HourlyChart.propTypes = {
   loading: PropTypes.bool,
   profileService: PropTypes.string,
   selectedMetric: PropTypes.shape({
-    label: PropTypes.string,
-    hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
-  }),
-  secondaryMetric: PropTypes.shape({
     label: PropTypes.string,
     hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
   }),

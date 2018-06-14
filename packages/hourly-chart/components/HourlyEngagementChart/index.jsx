@@ -7,13 +7,12 @@ import {
 } from '@bufferapp/analyze-shared-components/style';
 import {
   chartConfig,
-  primarySeriesConfig,
-  secondarySeriesConfig,
+  primarySeriesConfig
 } from './config';
 
 class HourlyEngagementChart extends PureComponent {
   render() {
-    const { metric, secondaryMetric, posts, chartRef } = this.props;
+    const { metric, posts, chartRef } = this.props;
     let hour = moment().startOf('day').subtract(1, 'hour');
     const metricByHour = metric.hourlyMetrics.map((hourlyMetric, index) => {
       hour.add(1, 'hour');
@@ -33,31 +32,6 @@ class HourlyEngagementChart extends PureComponent {
         data: metricByHour,
       }],
     };
-    if (secondaryMetric) {
-      hour = moment().startOf('day').subtract(1, 'hour');
-      const secondaryMetricByHour = secondaryMetric.hourlyMetrics.map((hourlyMetric, index) => {
-        hour.add(1, 'hour');
-        return {
-          x: hour.valueOf(),
-          y: hourlyMetric,
-          totalUpdates: posts[index],
-          color: color[secondaryMetric.label],
-        };
-      });
-      const baseColor = ReactHighcharts.Highcharts.Color(color[secondaryMetric.label]);
-      const fillColor = baseColor ? baseColor.brighten(0.1).get('rgba') : null;
-      config.series.push({
-        ...secondarySeriesConfig,
-        yAxis: (secondaryMetric.label === 'Impressions') ? 1 : 0,
-        marker: {
-          lineColor: color[secondaryMetric.label],
-          fillColor,
-        },
-        color: color[secondaryMetric.label],
-        name: secondaryMetric.label,
-        data: secondaryMetricByHour,
-      });
-    }
 
     return <ReactHighcharts ref={chartRef} isPureConfig config={config} />;
   }
@@ -65,19 +39,12 @@ class HourlyEngagementChart extends PureComponent {
 
 HourlyEngagementChart.defaultProps = {
   posts: [],
-  metric: {},
-  secondaryMetric: {
-    hourlyMetrics: [],
-  },
+  metric: {}
 };
 
 HourlyEngagementChart.propTypes = {
   posts: PropTypes.arrayOf(PropTypes.number),
   metric: PropTypes.shape({
-    label: PropTypes.string,
-    hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
-  }),
-  secondaryMetric: PropTypes.shape({
     label: PropTypes.string,
     hourlyMetrics: PropTypes.arrayOf(PropTypes.number),
   }),

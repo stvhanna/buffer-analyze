@@ -193,6 +193,7 @@ module.exports = {
   instagram: {
     config: instagramConfig,
     orderedKeys: [
+      'followers',
       'posts_count',
       'impressions',
       'reach',
@@ -201,7 +202,6 @@ module.exports = {
       'saved',
       'video_views',
       'new_followers',
-      'followers',
       'engagement_rate',
     ],
   },

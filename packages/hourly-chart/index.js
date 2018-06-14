@@ -9,18 +9,11 @@ export default connect(
   state => ({
     ...state.hourly,
     selectedMetric: findSelectedMetric(state.hourly.metrics, state.hourly.selectedMetric),
-    secondaryMetric: findSelectedMetric(state.hourly.metrics, state.hourly.selectedSecondaryMetric),
     profileService: state.profiles.selectedProfileService,
   }),
   dispatch => ({
     toggleDropdown: () => dispatch(actions.toggleDropdown()),
-    toggleSecondaryDropdown: () => dispatch(actions.toggleSecondaryDropdown()),
-    showSecondaryDropdown: () => dispatch(actions.showSecondaryDropdown()),
-    hideSecondaryDropdown: () => dispatch(actions.hideSecondaryDropdown()),
-    selectMetric: (metric, secondary) => (secondary ?
-      dispatch(actions.selectSecondaryMetric(metric)) :
-      dispatch(actions.selectMetric(metric))
-    ),
+    selectMetric: metric => dispatch(actions.selectMetric(metric)),
   }),
 )(HourlyChart);
 
