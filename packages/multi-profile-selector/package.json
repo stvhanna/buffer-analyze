@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/multi-profile-selector",
-  "version": "0.60.12",
+  "version": "0.60.13",
   "description": "The multi-profile selector for Bufer Analyze.",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,7 @@
   },
   "author": "Tigran Hakobyan <tik.hakobyan@gmail.com>",
   "dependencies": {
-    "@bufferapp/analyze-shared-components": "^0.60.12",
+    "@bufferapp/analyze-shared-components": "^0.60.13",
     "@bufferapp/components": "2.1.1-alpha.6",
     "react-simple-dropdown": "3.0.0"
   },

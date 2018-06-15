@@ -254,7 +254,7 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
                       }
                     }
                   >
-                    Impression average
+                    Average impressions per post
                   </span>
                 </span>
               </span>
@@ -353,7 +353,7 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
                       }
                     }
                   >
-                    Engagement average
+                    Average likes per post
                   </span>
                 </span>
               </span>
@@ -452,7 +452,7 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
                       }
                     }
                   >
-                    Click average
+                    Average comments per post
                   </span>
                 </span>
               </span>
@@ -597,7 +597,7 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
                       }
                     }
                   >
-                    Impression average
+                    Average impressions per post
                   </span>
                 </span>
               </span>
@@ -696,7 +696,7 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
                       }
                     }
                   >
-                    Engagement average
+                    Average likes per post
                   </span>
                 </span>
               </span>
@@ -795,7 +795,7 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
                       }
                     }
                   >
-                    Click average
+                    Average comments per post
                   </span>
                 </span>
               </span>
@@ -940,7 +940,7 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
                       }
                     }
                   >
-                    Impression average
+                    Average impressions per post
                   </span>
                 </span>
               </span>
@@ -1039,7 +1039,7 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
                       }
                     }
                   >
-                    Engagement average
+                    Average likes per post
                   </span>
                 </span>
               </span>
@@ -1138,7 +1138,7 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
                       }
                     }
                   >
-                    Click average
+                    Average comments per post
                   </span>
                 </span>
               </span>

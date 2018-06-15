@@ -23,10 +23,6 @@ const ChartHeader = props => (
   </Header>
 );
 
-ChartHeader.defaultProps = {
-  secondaryMetric: null,
-};
-
 ChartHeader.propTypes = {
   selectedMetric: PropTypes.shape({
     label: PropTypes.string,

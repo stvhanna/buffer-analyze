@@ -82,8 +82,6 @@ function prepareSeries(
 
   if (dailyMetric[0].metric.label === 'Posts' || dailyMetric[0].metric.label === 'Tweets') {
     seriesConfig.type = 'column';
-    seriesConfig.pointPadding = 0.1;
-    seriesConfig.pointPlacement = 0.4;
     seriesConfig.colors = [{
       linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
       stops: [
@@ -116,14 +114,17 @@ function setChartLimits({ series, yAxis }) {
   let max = Math.max.apply(null, values);
   const maxPaddingPercentage = 5.25;
   const minPaddingPercentage = 0.1;
+  
   let topPaddingPercentage = (maxPaddingPercentage - Math.log10(max));
   if (topPaddingPercentage < minPaddingPercentage) {
     topPaddingPercentage = minPaddingPercentage;
   }
+
   let bottomPaddingPercentage = (maxPaddingPercentage - Math.log10(min));
   if (bottomPaddingPercentage < minPaddingPercentage) {
     bottomPaddingPercentage = minPaddingPercentage;
   }
+
   min -= (min / 100) * bottomPaddingPercentage;
   max += (max / 100) * topPaddingPercentage;
 
