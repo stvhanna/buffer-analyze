@@ -30,6 +30,8 @@ let staticAssets = {
 let bugsnagScript = '';
 // Note: Temporary diable fullStory due GDPR.
 let fullStoryScript = '';
+// This is for the Headway widget
+const headwayScript = '<script src="//cdn.headwayapp.co/widget.js"></script>';
 
 const isProduction = process.env.NODE_ENV === 'production';
 app.set('isProduction', isProduction);
@@ -74,7 +76,8 @@ if (isProduction) {
 
 const html = fs.readFileSync(join(__dirname, 'index.html'), 'utf8')
   .replace('{{{bundle}}}', staticAssets['bundle.js'])
-  .replace('{{{bugsnagScript}}}', bugsnagScript);
+  .replace('{{{bugsnagScript}}}', bugsnagScript)
+  .replace('{{{headwayScript}}}', headwayScript);
 
 app.use(logMiddleware({ name: 'BufferAnalyze' }));
 app.use(cookieParser());
