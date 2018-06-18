@@ -13,6 +13,7 @@ const Container = styled.div`
   background: ${outerSpaceUltraLight};
   border-radius: 50%;
   box-shadow: rgba(0,0,0,0.25) 0 0 2px;
+  line-height: 0.75em;
 `;
 
 const ProfileBadge = ({ avatarUrl, service, avatarSize, socialIconSize }) => {
@@ -25,7 +26,12 @@ const ProfileBadge = ({ avatarUrl, service, avatarSize, socialIconSize }) => {
         height={avatarPixelSize}
         width={avatarPixelSize}
       />
-      <SocialIcon service={service} socialIconSize={socialIconSize} avatarSize={avatarSize} />
+      <SocialIcon
+        service={service}
+        socialIconSize={socialIconSize}
+        avatarSize={avatarSize}
+        withBorder
+      />
     </Container>
   );
 };

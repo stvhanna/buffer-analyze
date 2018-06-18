@@ -34,9 +34,9 @@ const SocialIcon = ({ service, socialIconSize, avatarSize, withBorder, inline })
         width: `${socialIconSize}px`,
         height: `${socialIconSize}px`,
         top: `${avatarSize - socialIconSize}px`,
-        left: `${avatarSize - socialIconSize}px`,
+        left: `${avatarSize - (socialIconSize - 1)}px`,
         borderRadius: '50%',
-        border: `#fff ${withBorder ? '1px' : '0'} solid`,
+        border: `rgba(255, 255, 255, 0.5) ${withBorder ? '1px' : '0'} solid`,
       }}
     >
       {icon}

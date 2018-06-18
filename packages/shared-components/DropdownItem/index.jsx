@@ -24,14 +24,14 @@ const DropdownItem = ({ profile, handleClick, selected, disabled }) => (
           display: 'flex',
           position: 'relative',
           width: '100%',
-          padding: '0.25rem 0',
+          padding: '0.3rem 0',
         }}
       >
         <ProfileBadge
           avatarUrl={profile.avatarUrl}
           service={profile.service}
           avatarSize={24}
-          socialIconSize={11}
+          socialIconSize={14}
         />
         <span
           style={{

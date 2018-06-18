@@ -988,7 +988,7 @@ exports[`Snapshots Dropdown Item should be disabled 1`] = `
               "alignItems": "center",
               "boxSizing": "border-box",
               "display": "flex",
-              "padding": "0.25rem 0",
+              "padding": "0.3rem 0",
               "position": "relative",
               "width": "100%",
             }
@@ -996,7 +996,7 @@ exports[`Snapshots Dropdown Item should be disabled 1`] = `
           title="Buffer"
         >
           <div
-            className="sc-kpOJdX cwCias"
+            className="sc-kpOJdX jELSeN"
             size="24px"
           >
             <img
@@ -1021,15 +1021,15 @@ exports[`Snapshots Dropdown Item should be disabled 1`] = `
               style={
                 Object {
                   "background": "#fff",
-                  "border": "#fff 0 solid",
+                  "border": "rgba(255, 255, 255, 0.5) 1px solid",
                   "borderRadius": "50%",
                   "display": "",
-                  "height": "11px",
-                  "left": "13px",
+                  "height": "14px",
+                  "left": "11px",
                   "marginRight": "",
                   "position": "absolute",
-                  "top": "13px",
-                  "width": "11px",
+                  "top": "10px",
+                  "width": "14px",
                 }
               }
             >
@@ -1140,7 +1140,7 @@ exports[`Snapshots Dropdown Item should render 1`] = `
               "alignItems": "center",
               "boxSizing": "border-box",
               "display": "flex",
-              "padding": "0.25rem 0",
+              "padding": "0.3rem 0",
               "position": "relative",
               "width": "100%",
             }
@@ -1148,7 +1148,7 @@ exports[`Snapshots Dropdown Item should render 1`] = `
           title="Buffer"
         >
           <div
-            className="sc-kpOJdX cwCias"
+            className="sc-kpOJdX jELSeN"
             size="24px"
           >
             <img
@@ -1173,15 +1173,15 @@ exports[`Snapshots Dropdown Item should render 1`] = `
               style={
                 Object {
                   "background": "#fff",
-                  "border": "#fff 0 solid",
+                  "border": "rgba(255, 255, 255, 0.5) 1px solid",
                   "borderRadius": "50%",
                   "display": "",
-                  "height": "11px",
-                  "left": "13px",
+                  "height": "14px",
+                  "left": "11px",
                   "marginRight": "",
                   "position": "absolute",
-                  "top": "13px",
-                  "width": "11px",
+                  "top": "10px",
+                  "width": "14px",
                 }
               }
             >
@@ -1292,7 +1292,7 @@ exports[`Snapshots Dropdown Item should render properly with an empty avatarUrl 
               "alignItems": "center",
               "boxSizing": "border-box",
               "display": "flex",
-              "padding": "0.25rem 0",
+              "padding": "0.3rem 0",
               "position": "relative",
               "width": "100%",
             }
@@ -1300,7 +1300,7 @@ exports[`Snapshots Dropdown Item should render properly with an empty avatarUrl 
           title="Buffer"
         >
           <div
-            className="sc-kpOJdX cwCias"
+            className="sc-kpOJdX jELSeN"
             size="24px"
           >
             <img
@@ -1325,15 +1325,15 @@ exports[`Snapshots Dropdown Item should render properly with an empty avatarUrl 
               style={
                 Object {
                   "background": "#fff",
-                  "border": "#fff 0 solid",
+                  "border": "rgba(255, 255, 255, 0.5) 1px solid",
                   "borderRadius": "50%",
                   "display": "",
-                  "height": "11px",
-                  "left": "13px",
+                  "height": "14px",
+                  "left": "11px",
                   "marginRight": "",
                   "position": "absolute",
-                  "top": "13px",
-                  "width": "11px",
+                  "top": "10px",
+                  "width": "14px",
                 }
               }
             >
@@ -1444,7 +1444,7 @@ exports[`Snapshots Dropdown Item should selected 1`] = `
               "alignItems": "center",
               "boxSizing": "border-box",
               "display": "flex",
-              "padding": "0.25rem 0",
+              "padding": "0.3rem 0",
               "position": "relative",
               "width": "100%",
             }
@@ -1452,7 +1452,7 @@ exports[`Snapshots Dropdown Item should selected 1`] = `
           title="Buffer"
         >
           <div
-            className="sc-kpOJdX cwCias"
+            className="sc-kpOJdX jELSeN"
             size="24px"
           >
             <img
@@ -1477,15 +1477,15 @@ exports[`Snapshots Dropdown Item should selected 1`] = `
               style={
                 Object {
                   "background": "#fff",
-                  "border": "#fff 0 solid",
+                  "border": "rgba(255, 255, 255, 0.5) 1px solid",
                   "borderRadius": "50%",
                   "display": "",
-                  "height": "11px",
-                  "left": "13px",
+                  "height": "14px",
+                  "left": "11px",
                   "marginRight": "",
                   "position": "absolute",
-                  "top": "13px",
-                  "width": "11px",
+                  "top": "10px",
+                  "width": "14px",
                 }
               }
             >
@@ -1628,7 +1628,7 @@ exports[`Snapshots Dropdown Item should truncate long names 1`] = `
               "alignItems": "center",
               "boxSizing": "border-box",
               "display": "flex",
-              "padding": "0.25rem 0",
+              "padding": "0.3rem 0",
               "position": "relative",
               "width": "100%",
             }
@@ -1636,7 +1636,7 @@ exports[`Snapshots Dropdown Item should truncate long names 1`] = `
           title="a very long and meaningful name"
         >
           <div
-            className="sc-kpOJdX cwCias"
+            className="sc-kpOJdX jELSeN"
             size="24px"
           >
             <img
@@ -1661,15 +1661,15 @@ exports[`Snapshots Dropdown Item should truncate long names 1`] = `
               style={
                 Object {
                   "background": "#fff",
-                  "border": "#fff 0 solid",
+                  "border": "rgba(255, 255, 255, 0.5) 1px solid",
                   "borderRadius": "50%",
                   "display": "",
-                  "height": "11px",
-                  "left": "13px",
+                  "height": "14px",
+                  "left": "11px",
                   "marginRight": "",
                   "position": "absolute",
-                  "top": "13px",
-                  "width": "11px",
+                  "top": "10px",
+                  "width": "14px",
                 }
               }
             >
@@ -5051,7 +5051,7 @@ exports[`Snapshots PeriodPhrase should render previous period phrase 1`] = `
 exports[`Snapshots ProfileBadge should render 1`] = `
 <span>
   <div
-    className="sc-jhAzac JsqsI"
+    className="sc-jhAzac jHaood"
     size="32px"
   >
     <img
@@ -5076,11 +5076,11 @@ exports[`Snapshots ProfileBadge should render 1`] = `
       style={
         Object {
           "background": "#fff",
-          "border": "#fff 0 solid",
+          "border": "rgba(255, 255, 255, 0.5) 1px solid",
           "borderRadius": "50%",
           "display": "",
           "height": "16px",
-          "left": "16px",
+          "left": "17px",
           "marginRight": "",
           "position": "absolute",
           "top": "16px",
@@ -5159,11 +5159,11 @@ exports[`Snapshots ProfileIcon should render 1`] = `
         style={
           Object {
             "background": "#fff",
-            "border": "#fff 1px solid",
+            "border": "rgba(255, 255, 255, 0.5) 1px solid",
             "borderRadius": "50%",
             "display": "",
             "height": "14px",
-            "left": "20px",
+            "left": "21px",
             "marginRight": "",
             "position": "absolute",
             "top": "20px",
@@ -5210,11 +5210,11 @@ exports[`Snapshots SocialIcon should render 1`] = `
     style={
       Object {
         "background": "#fff",
-        "border": "#fff 0 solid",
+        "border": "rgba(255, 255, 255, 0.5) 0 solid",
         "borderRadius": "50%",
         "display": "",
         "height": "16px",
-        "left": "16px",
+        "left": "17px",
         "marginRight": "",
         "position": "absolute",
         "top": "16px",
@@ -5260,11 +5260,11 @@ exports[`Snapshots SocialIcon should render inline 1`] = `
       style={
         Object {
           "background": "#fff",
-          "border": "#fff 0 solid",
+          "border": "rgba(255, 255, 255, 0.5) 0 solid",
           "borderRadius": "50%",
           "display": "inline-block",
           "height": "16px",
-          "left": "-16px",
+          "left": "-15px",
           "marginRight": "0.25rem",
           "position": "",
           "top": "-16px",
@@ -5326,11 +5326,11 @@ exports[`Snapshots SocialIcon should render with border 1`] = `
     style={
       Object {
         "background": "#fff",
-        "border": "#fff 1px solid",
+        "border": "rgba(255, 255, 255, 0.5) 1px solid",
         "borderRadius": "50%",
         "display": "",
         "height": "16px",
-        "left": "16px",
+        "left": "17px",
         "marginRight": "",
         "position": "absolute",
         "top": "16px",

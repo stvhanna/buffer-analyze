@@ -35,8 +35,8 @@ exports[`Snapshots ProfileSelectorDropdown should filter by profilesFilterString
         }
       >
         <div
-          className="sc-kAzzGY gCXRLh"
-          size="22px"
+          className="sc-kAzzGY fiRXVE"
+          size="24px"
         >
           <img
             alt=""
@@ -44,7 +44,7 @@ exports[`Snapshots ProfileSelectorDropdown should filter by profilesFilterString
             style={
               Object {
                 "borderRadius": "50%",
-                "height": "22px",
+                "height": "24px",
                 "marginBottom": undefined,
                 "marginTop": undefined,
                 "maxHeight": undefined,
@@ -52,7 +52,7 @@ exports[`Snapshots ProfileSelectorDropdown should filter by profilesFilterString
                 "minHeight": undefined,
                 "minWidth": undefined,
                 "objectFit": undefined,
-                "width": "22px",
+                "width": "24px",
               }
             }
           />
@@ -60,15 +60,15 @@ exports[`Snapshots ProfileSelectorDropdown should filter by profilesFilterString
             style={
               Object {
                 "background": "#fff",
-                "border": "#fff 0 solid",
+                "border": "rgba(255, 255, 255, 0.5) 1px solid",
                 "borderRadius": "50%",
                 "display": "",
-                "height": "13px",
-                "left": "9px",
+                "height": "14px",
+                "left": "11px",
                 "marginRight": "",
                 "position": "absolute",
-                "top": "9px",
-                "width": "13px",
+                "top": "10px",
+                "width": "14px",
               }
             }
           >
@@ -244,7 +244,7 @@ exports[`Snapshots ProfileSelectorDropdown should filter by profilesFilterString
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "0.25rem 0",
+                    "padding": "0.3rem 0",
                     "position": "relative",
                     "width": "100%",
                   }
@@ -252,7 +252,7 @@ exports[`Snapshots ProfileSelectorDropdown should filter by profilesFilterString
                 title="Joel Gascoigne"
               >
                 <div
-                  className="sc-kAzzGY jIYPMc"
+                  className="sc-kAzzGY fiRXVE"
                   size="24px"
                 >
                   <img
@@ -277,15 +277,15 @@ exports[`Snapshots ProfileSelectorDropdown should filter by profilesFilterString
                     style={
                       Object {
                         "background": "#fff",
-                        "border": "#fff 0 solid",
+                        "border": "rgba(255, 255, 255, 0.5) 1px solid",
                         "borderRadius": "50%",
                         "display": "",
-                        "height": "11px",
-                        "left": "13px",
+                        "height": "14px",
+                        "left": "11px",
                         "marginRight": "",
                         "position": "absolute",
-                        "top": "13px",
-                        "width": "11px",
+                        "top": "10px",
+                        "width": "14px",
                       }
                     }
                   >
@@ -398,8 +398,8 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
         }
       >
         <div
-          className="sc-kAzzGY gCXRLh"
-          size="22px"
+          className="sc-kAzzGY fiRXVE"
+          size="24px"
         >
           <img
             alt=""
@@ -407,7 +407,7 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
             style={
               Object {
                 "borderRadius": "50%",
-                "height": "22px",
+                "height": "24px",
                 "marginBottom": undefined,
                 "marginTop": undefined,
                 "maxHeight": undefined,
@@ -415,7 +415,7 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                 "minHeight": undefined,
                 "minWidth": undefined,
                 "objectFit": undefined,
-                "width": "22px",
+                "width": "24px",
               }
             }
           />
@@ -423,15 +423,15 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
             style={
               Object {
                 "background": "#fff",
-                "border": "#fff 0 solid",
+                "border": "rgba(255, 255, 255, 0.5) 1px solid",
                 "borderRadius": "50%",
                 "display": "",
-                "height": "13px",
-                "left": "9px",
+                "height": "14px",
+                "left": "11px",
                 "marginRight": "",
                 "position": "absolute",
-                "top": "9px",
-                "width": "13px",
+                "top": "10px",
+                "width": "14px",
               }
             }
           >
@@ -607,7 +607,7 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "0.25rem 0",
+                    "padding": "0.3rem 0",
                     "position": "relative",
                     "width": "100%",
                   }
@@ -615,7 +615,7 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                 title="Buffer"
               >
                 <div
-                  className="sc-kAzzGY jIYPMc"
+                  className="sc-kAzzGY fiRXVE"
                   size="24px"
                 >
                   <img
@@ -640,15 +640,15 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                     style={
                       Object {
                         "background": "#fff",
-                        "border": "#fff 0 solid",
+                        "border": "rgba(255, 255, 255, 0.5) 1px solid",
                         "borderRadius": "50%",
                         "display": "",
-                        "height": "11px",
-                        "left": "13px",
+                        "height": "14px",
+                        "left": "11px",
                         "marginRight": "",
                         "position": "absolute",
-                        "top": "13px",
-                        "width": "11px",
+                        "top": "10px",
+                        "width": "14px",
                       }
                     }
                   >
@@ -777,7 +777,7 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "0.25rem 0",
+                    "padding": "0.3rem 0",
                     "position": "relative",
                     "width": "100%",
                   }
@@ -785,7 +785,7 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                 title="Joel Gascoigne"
               >
                 <div
-                  className="sc-kAzzGY jIYPMc"
+                  className="sc-kAzzGY fiRXVE"
                   size="24px"
                 >
                   <img
@@ -810,15 +810,15 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                     style={
                       Object {
                         "background": "#fff",
-                        "border": "#fff 0 solid",
+                        "border": "rgba(255, 255, 255, 0.5) 1px solid",
                         "borderRadius": "50%",
                         "display": "",
-                        "height": "11px",
-                        "left": "13px",
+                        "height": "14px",
+                        "left": "11px",
                         "marginRight": "",
                         "position": "absolute",
-                        "top": "13px",
-                        "width": "11px",
+                        "top": "10px",
+                        "width": "14px",
                       }
                     }
                   >
@@ -915,7 +915,7 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "0.25rem 0",
+                    "padding": "0.3rem 0",
                     "position": "relative",
                     "width": "100%",
                   }
@@ -923,7 +923,7 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                 title="Buffer"
               >
                 <div
-                  className="sc-kAzzGY jIYPMc"
+                  className="sc-kAzzGY fiRXVE"
                   size="24px"
                 >
                   <img
@@ -948,15 +948,15 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                     style={
                       Object {
                         "background": "#fff",
-                        "border": "#fff 0 solid",
+                        "border": "rgba(255, 255, 255, 0.5) 1px solid",
                         "borderRadius": "50%",
                         "display": "",
-                        "height": "11px",
-                        "left": "13px",
+                        "height": "14px",
+                        "left": "11px",
                         "marginRight": "",
                         "position": "absolute",
-                        "top": "13px",
-                        "width": "11px",
+                        "top": "10px",
+                        "width": "14px",
                       }
                     }
                   >
@@ -1053,7 +1053,7 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "0.25rem 0",
+                    "padding": "0.3rem 0",
                     "position": "relative",
                     "width": "100%",
                   }
@@ -1061,7 +1061,7 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                 title="Buffer"
               >
                 <div
-                  className="sc-kAzzGY jIYPMc"
+                  className="sc-kAzzGY fiRXVE"
                   size="24px"
                 >
                   <img
@@ -1086,15 +1086,15 @@ exports[`Snapshots ProfileSelectorDropdown should open the dropdown 1`] = `
                     style={
                       Object {
                         "background": "#fff",
-                        "border": "#fff 0 solid",
+                        "border": "rgba(255, 255, 255, 0.5) 1px solid",
                         "borderRadius": "50%",
                         "display": "",
-                        "height": "11px",
-                        "left": "13px",
+                        "height": "14px",
+                        "left": "11px",
                         "marginRight": "",
                         "position": "absolute",
-                        "top": "13px",
-                        "width": "11px",
+                        "top": "10px",
+                        "width": "14px",
                       }
                     }
                   >
@@ -1210,8 +1210,8 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
         }
       >
         <div
-          className="sc-kAzzGY gCXRLh"
-          size="22px"
+          className="sc-kAzzGY fiRXVE"
+          size="24px"
         >
           <img
             alt=""
@@ -1219,7 +1219,7 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
             style={
               Object {
                 "borderRadius": "50%",
-                "height": "22px",
+                "height": "24px",
                 "marginBottom": undefined,
                 "marginTop": undefined,
                 "maxHeight": undefined,
@@ -1227,7 +1227,7 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                 "minHeight": undefined,
                 "minWidth": undefined,
                 "objectFit": undefined,
-                "width": "22px",
+                "width": "24px",
               }
             }
           />
@@ -1235,15 +1235,15 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
             style={
               Object {
                 "background": "#fff",
-                "border": "#fff 0 solid",
+                "border": "rgba(255, 255, 255, 0.5) 1px solid",
                 "borderRadius": "50%",
                 "display": "",
-                "height": "13px",
-                "left": "9px",
+                "height": "14px",
+                "left": "11px",
                 "marginRight": "",
                 "position": "absolute",
-                "top": "9px",
-                "width": "13px",
+                "top": "10px",
+                "width": "14px",
               }
             }
           >
@@ -1419,7 +1419,7 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "0.25rem 0",
+                    "padding": "0.3rem 0",
                     "position": "relative",
                     "width": "100%",
                   }
@@ -1427,7 +1427,7 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                 title="Buffer"
               >
                 <div
-                  className="sc-kAzzGY jIYPMc"
+                  className="sc-kAzzGY fiRXVE"
                   size="24px"
                 >
                   <img
@@ -1452,15 +1452,15 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                     style={
                       Object {
                         "background": "#fff",
-                        "border": "#fff 0 solid",
+                        "border": "rgba(255, 255, 255, 0.5) 1px solid",
                         "borderRadius": "50%",
                         "display": "",
-                        "height": "11px",
-                        "left": "13px",
+                        "height": "14px",
+                        "left": "11px",
                         "marginRight": "",
                         "position": "absolute",
-                        "top": "13px",
-                        "width": "11px",
+                        "top": "10px",
+                        "width": "14px",
                       }
                     }
                   >
@@ -1589,7 +1589,7 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "0.25rem 0",
+                    "padding": "0.3rem 0",
                     "position": "relative",
                     "width": "100%",
                   }
@@ -1597,7 +1597,7 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                 title="Joel Gascoigne"
               >
                 <div
-                  className="sc-kAzzGY jIYPMc"
+                  className="sc-kAzzGY fiRXVE"
                   size="24px"
                 >
                   <img
@@ -1622,15 +1622,15 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                     style={
                       Object {
                         "background": "#fff",
-                        "border": "#fff 0 solid",
+                        "border": "rgba(255, 255, 255, 0.5) 1px solid",
                         "borderRadius": "50%",
                         "display": "",
-                        "height": "11px",
-                        "left": "13px",
+                        "height": "14px",
+                        "left": "11px",
                         "marginRight": "",
                         "position": "absolute",
-                        "top": "13px",
-                        "width": "11px",
+                        "top": "10px",
+                        "width": "14px",
                       }
                     }
                   >
@@ -1727,7 +1727,7 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "0.25rem 0",
+                    "padding": "0.3rem 0",
                     "position": "relative",
                     "width": "100%",
                   }
@@ -1735,7 +1735,7 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                 title="Buffer"
               >
                 <div
-                  className="sc-kAzzGY jIYPMc"
+                  className="sc-kAzzGY fiRXVE"
                   size="24px"
                 >
                   <img
@@ -1760,15 +1760,15 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                     style={
                       Object {
                         "background": "#fff",
-                        "border": "#fff 0 solid",
+                        "border": "rgba(255, 255, 255, 0.5) 1px solid",
                         "borderRadius": "50%",
                         "display": "",
-                        "height": "11px",
-                        "left": "13px",
+                        "height": "14px",
+                        "left": "11px",
                         "marginRight": "",
                         "position": "absolute",
-                        "top": "13px",
-                        "width": "11px",
+                        "top": "10px",
+                        "width": "14px",
                       }
                     }
                   >
@@ -1865,7 +1865,7 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "0.25rem 0",
+                    "padding": "0.3rem 0",
                     "position": "relative",
                     "width": "100%",
                   }
@@ -1873,7 +1873,7 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                 title="Buffer"
               >
                 <div
-                  className="sc-kAzzGY jIYPMc"
+                  className="sc-kAzzGY fiRXVE"
                   size="24px"
                 >
                   <img
@@ -1898,15 +1898,15 @@ exports[`Snapshots ProfileSelectorDropdown should render the dropdown 1`] = `
                     style={
                       Object {
                         "background": "#fff",
-                        "border": "#fff 0 solid",
+                        "border": "rgba(255, 255, 255, 0.5) 1px solid",
                         "borderRadius": "50%",
                         "display": "",
-                        "height": "11px",
-                        "left": "13px",
+                        "height": "14px",
+                        "left": "11px",
                         "marginRight": "",
                         "position": "absolute",
-                        "top": "13px",
-                        "width": "11px",
+                        "top": "10px",
+                        "width": "14px",
                       }
                     }
                   >
@@ -2022,8 +2022,8 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
         }
       >
         <div
-          className="sc-kAzzGY gCXRLh"
-          size="22px"
+          className="sc-kAzzGY fiRXVE"
+          size="24px"
         >
           <img
             alt=""
@@ -2031,7 +2031,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
             style={
               Object {
                 "borderRadius": "50%",
-                "height": "22px",
+                "height": "24px",
                 "marginBottom": undefined,
                 "marginTop": undefined,
                 "maxHeight": undefined,
@@ -2039,7 +2039,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 "minHeight": undefined,
                 "minWidth": undefined,
                 "objectFit": undefined,
-                "width": "22px",
+                "width": "24px",
               }
             }
           />
@@ -2047,15 +2047,15 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
             style={
               Object {
                 "background": "#fff",
-                "border": "#fff 0 solid",
+                "border": "rgba(255, 255, 255, 0.5) 1px solid",
                 "borderRadius": "50%",
                 "display": "",
-                "height": "13px",
-                "left": "9px",
+                "height": "14px",
+                "left": "11px",
                 "marginRight": "",
                 "position": "absolute",
-                "top": "9px",
-                "width": "13px",
+                "top": "10px",
+                "width": "14px",
               }
             }
           >
@@ -2233,7 +2233,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "0.25rem 0",
+                    "padding": "0.3rem 0",
                     "position": "relative",
                     "width": "100%",
                   }
@@ -2241,7 +2241,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Buffer"
               >
                 <div
-                  className="sc-kAzzGY jIYPMc"
+                  className="sc-kAzzGY fiRXVE"
                   size="24px"
                 >
                   <img
@@ -2266,15 +2266,15 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     style={
                       Object {
                         "background": "#fff",
-                        "border": "#fff 0 solid",
+                        "border": "rgba(255, 255, 255, 0.5) 1px solid",
                         "borderRadius": "50%",
                         "display": "",
-                        "height": "11px",
-                        "left": "13px",
+                        "height": "14px",
+                        "left": "11px",
                         "marginRight": "",
                         "position": "absolute",
-                        "top": "13px",
-                        "width": "11px",
+                        "top": "10px",
+                        "width": "14px",
                       }
                     }
                   >
@@ -2403,7 +2403,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "0.25rem 0",
+                    "padding": "0.3rem 0",
                     "position": "relative",
                     "width": "100%",
                   }
@@ -2411,7 +2411,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Joel Gascoigne"
               >
                 <div
-                  className="sc-kAzzGY jIYPMc"
+                  className="sc-kAzzGY fiRXVE"
                   size="24px"
                 >
                   <img
@@ -2436,15 +2436,15 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     style={
                       Object {
                         "background": "#fff",
-                        "border": "#fff 0 solid",
+                        "border": "rgba(255, 255, 255, 0.5) 1px solid",
                         "borderRadius": "50%",
                         "display": "",
-                        "height": "11px",
-                        "left": "13px",
+                        "height": "14px",
+                        "left": "11px",
                         "marginRight": "",
                         "position": "absolute",
-                        "top": "13px",
-                        "width": "11px",
+                        "top": "10px",
+                        "width": "14px",
                       }
                     }
                   >
@@ -2541,7 +2541,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "0.25rem 0",
+                    "padding": "0.3rem 0",
                     "position": "relative",
                     "width": "100%",
                   }
@@ -2549,7 +2549,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Buffer"
               >
                 <div
-                  className="sc-kAzzGY jIYPMc"
+                  className="sc-kAzzGY fiRXVE"
                   size="24px"
                 >
                   <img
@@ -2574,15 +2574,15 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     style={
                       Object {
                         "background": "#fff",
-                        "border": "#fff 0 solid",
+                        "border": "rgba(255, 255, 255, 0.5) 1px solid",
                         "borderRadius": "50%",
                         "display": "",
-                        "height": "11px",
-                        "left": "13px",
+                        "height": "14px",
+                        "left": "11px",
                         "marginRight": "",
                         "position": "absolute",
-                        "top": "13px",
-                        "width": "11px",
+                        "top": "10px",
+                        "width": "14px",
                       }
                     }
                   >
@@ -2679,7 +2679,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "0.25rem 0",
+                    "padding": "0.3rem 0",
                     "position": "relative",
                     "width": "100%",
                   }
@@ -2687,7 +2687,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Buffer"
               >
                 <div
-                  className="sc-kAzzGY jIYPMc"
+                  className="sc-kAzzGY fiRXVE"
                   size="24px"
                 >
                   <img
@@ -2712,15 +2712,15 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     style={
                       Object {
                         "background": "#fff",
-                        "border": "#fff 0 solid",
+                        "border": "rgba(255, 255, 255, 0.5) 1px solid",
                         "borderRadius": "50%",
                         "display": "",
-                        "height": "11px",
-                        "left": "13px",
+                        "height": "14px",
+                        "left": "11px",
                         "marginRight": "",
                         "position": "absolute",
-                        "top": "13px",
-                        "width": "11px",
+                        "top": "10px",
+                        "width": "14px",
                       }
                     }
                   >
@@ -2832,7 +2832,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "0.25rem 0",
+                    "padding": "0.3rem 0",
                     "position": "relative",
                     "width": "100%",
                   }
@@ -2840,7 +2840,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Buffer 5"
               >
                 <div
-                  className="sc-kAzzGY jIYPMc"
+                  className="sc-kAzzGY fiRXVE"
                   size="24px"
                 >
                   <img
@@ -2865,15 +2865,15 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     style={
                       Object {
                         "background": "#fff",
-                        "border": "#fff 0 solid",
+                        "border": "rgba(255, 255, 255, 0.5) 1px solid",
                         "borderRadius": "50%",
                         "display": "",
-                        "height": "11px",
-                        "left": "13px",
+                        "height": "14px",
+                        "left": "11px",
                         "marginRight": "",
                         "position": "absolute",
-                        "top": "13px",
-                        "width": "11px",
+                        "top": "10px",
+                        "width": "14px",
                       }
                     }
                   >
@@ -2970,7 +2970,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "0.25rem 0",
+                    "padding": "0.3rem 0",
                     "position": "relative",
                     "width": "100%",
                   }
@@ -2978,7 +2978,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Buffer 6"
               >
                 <div
-                  className="sc-kAzzGY jIYPMc"
+                  className="sc-kAzzGY fiRXVE"
                   size="24px"
                 >
                   <img
@@ -3003,15 +3003,15 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     style={
                       Object {
                         "background": "#fff",
-                        "border": "#fff 0 solid",
+                        "border": "rgba(255, 255, 255, 0.5) 1px solid",
                         "borderRadius": "50%",
                         "display": "",
-                        "height": "11px",
-                        "left": "13px",
+                        "height": "14px",
+                        "left": "11px",
                         "marginRight": "",
                         "position": "absolute",
-                        "top": "13px",
-                        "width": "11px",
+                        "top": "10px",
+                        "width": "14px",
                       }
                     }
                   >
@@ -3108,7 +3108,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "0.25rem 0",
+                    "padding": "0.3rem 0",
                     "position": "relative",
                     "width": "100%",
                   }
@@ -3116,7 +3116,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Buffer 7"
               >
                 <div
-                  className="sc-kAzzGY jIYPMc"
+                  className="sc-kAzzGY fiRXVE"
                   size="24px"
                 >
                   <img
@@ -3141,15 +3141,15 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     style={
                       Object {
                         "background": "#fff",
-                        "border": "#fff 0 solid",
+                        "border": "rgba(255, 255, 255, 0.5) 1px solid",
                         "borderRadius": "50%",
                         "display": "",
-                        "height": "11px",
-                        "left": "13px",
+                        "height": "14px",
+                        "left": "11px",
                         "marginRight": "",
                         "position": "absolute",
-                        "top": "13px",
-                        "width": "11px",
+                        "top": "10px",
+                        "width": "14px",
                       }
                     }
                   >
@@ -3246,7 +3246,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "0.25rem 0",
+                    "padding": "0.3rem 0",
                     "position": "relative",
                     "width": "100%",
                   }
@@ -3254,7 +3254,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Buffer 8"
               >
                 <div
-                  className="sc-kAzzGY jIYPMc"
+                  className="sc-kAzzGY fiRXVE"
                   size="24px"
                 >
                   <img
@@ -3279,15 +3279,15 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     style={
                       Object {
                         "background": "#fff",
-                        "border": "#fff 0 solid",
+                        "border": "rgba(255, 255, 255, 0.5) 1px solid",
                         "borderRadius": "50%",
                         "display": "",
-                        "height": "11px",
-                        "left": "13px",
+                        "height": "14px",
+                        "left": "11px",
                         "marginRight": "",
                         "position": "absolute",
-                        "top": "13px",
-                        "width": "11px",
+                        "top": "10px",
+                        "width": "14px",
                       }
                     }
                   >
@@ -3384,7 +3384,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "0.25rem 0",
+                    "padding": "0.3rem 0",
                     "position": "relative",
                     "width": "100%",
                   }
@@ -3392,7 +3392,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Buffer 9"
               >
                 <div
-                  className="sc-kAzzGY jIYPMc"
+                  className="sc-kAzzGY fiRXVE"
                   size="24px"
                 >
                   <img
@@ -3417,15 +3417,15 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     style={
                       Object {
                         "background": "#fff",
-                        "border": "#fff 0 solid",
+                        "border": "rgba(255, 255, 255, 0.5) 1px solid",
                         "borderRadius": "50%",
                         "display": "",
-                        "height": "11px",
-                        "left": "13px",
+                        "height": "14px",
+                        "left": "11px",
                         "marginRight": "",
                         "position": "absolute",
-                        "top": "13px",
-                        "width": "11px",
+                        "top": "10px",
+                        "width": "14px",
                       }
                     }
                   >
@@ -3522,7 +3522,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "0.25rem 0",
+                    "padding": "0.3rem 0",
                     "position": "relative",
                     "width": "100%",
                   }
@@ -3530,7 +3530,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Buffer 10"
               >
                 <div
-                  className="sc-kAzzGY jIYPMc"
+                  className="sc-kAzzGY fiRXVE"
                   size="24px"
                 >
                   <img
@@ -3555,15 +3555,15 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     style={
                       Object {
                         "background": "#fff",
-                        "border": "#fff 0 solid",
+                        "border": "rgba(255, 255, 255, 0.5) 1px solid",
                         "borderRadius": "50%",
                         "display": "",
-                        "height": "11px",
-                        "left": "13px",
+                        "height": "14px",
+                        "left": "11px",
                         "marginRight": "",
                         "position": "absolute",
-                        "top": "13px",
-                        "width": "11px",
+                        "top": "10px",
+                        "width": "14px",
                       }
                     }
                   >
@@ -3660,7 +3660,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "0.25rem 0",
+                    "padding": "0.3rem 0",
                     "position": "relative",
                     "width": "100%",
                   }
@@ -3668,7 +3668,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Buffer 11"
               >
                 <div
-                  className="sc-kAzzGY jIYPMc"
+                  className="sc-kAzzGY fiRXVE"
                   size="24px"
                 >
                   <img
@@ -3693,15 +3693,15 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     style={
                       Object {
                         "background": "#fff",
-                        "border": "#fff 0 solid",
+                        "border": "rgba(255, 255, 255, 0.5) 1px solid",
                         "borderRadius": "50%",
                         "display": "",
-                        "height": "11px",
-                        "left": "13px",
+                        "height": "14px",
+                        "left": "11px",
                         "marginRight": "",
                         "position": "absolute",
-                        "top": "13px",
-                        "width": "11px",
+                        "top": "10px",
+                        "width": "14px",
                       }
                     }
                   >
@@ -3798,7 +3798,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "0.25rem 0",
+                    "padding": "0.3rem 0",
                     "position": "relative",
                     "width": "100%",
                   }
@@ -3806,7 +3806,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Buffer 12"
               >
                 <div
-                  className="sc-kAzzGY jIYPMc"
+                  className="sc-kAzzGY fiRXVE"
                   size="24px"
                 >
                   <img
@@ -3831,15 +3831,15 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     style={
                       Object {
                         "background": "#fff",
-                        "border": "#fff 0 solid",
+                        "border": "rgba(255, 255, 255, 0.5) 1px solid",
                         "borderRadius": "50%",
                         "display": "",
-                        "height": "11px",
-                        "left": "13px",
+                        "height": "14px",
+                        "left": "11px",
                         "marginRight": "",
                         "position": "absolute",
-                        "top": "13px",
-                        "width": "11px",
+                        "top": "10px",
+                        "width": "14px",
                       }
                     }
                   >
@@ -3936,7 +3936,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "0.25rem 0",
+                    "padding": "0.3rem 0",
                     "position": "relative",
                     "width": "100%",
                   }
@@ -3944,7 +3944,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Buffer 13"
               >
                 <div
-                  className="sc-kAzzGY jIYPMc"
+                  className="sc-kAzzGY fiRXVE"
                   size="24px"
                 >
                   <img
@@ -3969,15 +3969,15 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     style={
                       Object {
                         "background": "#fff",
-                        "border": "#fff 0 solid",
+                        "border": "rgba(255, 255, 255, 0.5) 1px solid",
                         "borderRadius": "50%",
                         "display": "",
-                        "height": "11px",
-                        "left": "13px",
+                        "height": "14px",
+                        "left": "11px",
                         "marginRight": "",
                         "position": "absolute",
-                        "top": "13px",
-                        "width": "11px",
+                        "top": "10px",
+                        "width": "14px",
                       }
                     }
                   >
@@ -4074,7 +4074,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     "alignItems": "center",
                     "boxSizing": "border-box",
                     "display": "flex",
-                    "padding": "0.25rem 0",
+                    "padding": "0.3rem 0",
                     "position": "relative",
                     "width": "100%",
                   }
@@ -4082,7 +4082,7 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                 title="Buffer 14"
               >
                 <div
-                  className="sc-kAzzGY jIYPMc"
+                  className="sc-kAzzGY fiRXVE"
                   size="24px"
                 >
                   <img
@@ -4107,15 +4107,15 @@ exports[`Snapshots ProfileSelectorDropdown should scroll profiles if > 7 1`] = `
                     style={
                       Object {
                         "background": "#fff",
-                        "border": "#fff 0 solid",
+                        "border": "rgba(255, 255, 255, 0.5) 1px solid",
                         "borderRadius": "50%",
                         "display": "",
-                        "height": "11px",
-                        "left": "13px",
+                        "height": "14px",
+                        "left": "11px",
                         "marginRight": "",
                         "position": "absolute",
-                        "top": "13px",
-                        "width": "11px",
+                        "top": "10px",
+                        "width": "14px",
                       }
                     }
                   >
@@ -4216,8 +4216,8 @@ exports[`Snapshots ProfileSelectorDropdown should show no match message 1`] = `
         }
       >
         <div
-          className="sc-kAzzGY gCXRLh"
-          size="22px"
+          className="sc-kAzzGY fiRXVE"
+          size="24px"
         >
           <img
             alt=""
@@ -4225,7 +4225,7 @@ exports[`Snapshots ProfileSelectorDropdown should show no match message 1`] = `
             style={
               Object {
                 "borderRadius": "50%",
-                "height": "22px",
+                "height": "24px",
                 "marginBottom": undefined,
                 "marginTop": undefined,
                 "maxHeight": undefined,
@@ -4233,7 +4233,7 @@ exports[`Snapshots ProfileSelectorDropdown should show no match message 1`] = `
                 "minHeight": undefined,
                 "minWidth": undefined,
                 "objectFit": undefined,
-                "width": "22px",
+                "width": "24px",
               }
             }
           />
@@ -4241,15 +4241,15 @@ exports[`Snapshots ProfileSelectorDropdown should show no match message 1`] = `
             style={
               Object {
                 "background": "#fff",
-                "border": "#fff 0 solid",
+                "border": "rgba(255, 255, 255, 0.5) 1px solid",
                 "borderRadius": "50%",
                 "display": "",
-                "height": "13px",
-                "left": "9px",
+                "height": "14px",
+                "left": "11px",
                 "marginRight": "",
                 "position": "absolute",
-                "top": "9px",
-                "width": "13px",
+                "top": "10px",
+                "width": "14px",
               }
             }
           >

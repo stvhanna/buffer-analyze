@@ -10,8 +10,8 @@ exports[`Snapshots ProfileHeader should render facebook fans 1`] = `
         className="sc-iAyFgw jCDMO"
       >
         <div
-          className="sc-kAzzGY ghZuIv"
-          size="32px"
+          className="sc-kAzzGY bOmkKI"
+          size="36px"
         >
           <img
             alt=""
@@ -19,7 +19,7 @@ exports[`Snapshots ProfileHeader should render facebook fans 1`] = `
             style={
               Object {
                 "borderRadius": "50%",
-                "height": "32px",
+                "height": "36px",
                 "marginBottom": undefined,
                 "marginTop": undefined,
                 "maxHeight": undefined,
@@ -27,7 +27,7 @@ exports[`Snapshots ProfileHeader should render facebook fans 1`] = `
                 "minHeight": undefined,
                 "minWidth": undefined,
                 "objectFit": undefined,
-                "width": "32px",
+                "width": "36px",
               }
             }
           />
@@ -35,14 +35,14 @@ exports[`Snapshots ProfileHeader should render facebook fans 1`] = `
             style={
               Object {
                 "background": "#fff",
-                "border": "#fff 0 solid",
+                "border": "rgba(255, 255, 255, 0.5) 1px solid",
                 "borderRadius": "50%",
                 "display": "",
                 "height": "16px",
-                "left": "16px",
+                "left": "21px",
                 "marginRight": "",
                 "position": "absolute",
-                "top": "16px",
+                "top": "20px",
                 "width": "16px",
               }
             }
@@ -155,8 +155,8 @@ exports[`Snapshots ProfileHeader should render twitter followers 1`] = `
         className="sc-iAyFgw jCDMO"
       >
         <div
-          className="sc-kAzzGY ghZuIv"
-          size="32px"
+          className="sc-kAzzGY bOmkKI"
+          size="36px"
         >
           <img
             alt=""
@@ -164,7 +164,7 @@ exports[`Snapshots ProfileHeader should render twitter followers 1`] = `
             style={
               Object {
                 "borderRadius": "50%",
-                "height": "32px",
+                "height": "36px",
                 "marginBottom": undefined,
                 "marginTop": undefined,
                 "maxHeight": undefined,
@@ -172,7 +172,7 @@ exports[`Snapshots ProfileHeader should render twitter followers 1`] = `
                 "minHeight": undefined,
                 "minWidth": undefined,
                 "objectFit": undefined,
-                "width": "32px",
+                "width": "36px",
               }
             }
           />
@@ -180,14 +180,14 @@ exports[`Snapshots ProfileHeader should render twitter followers 1`] = `
             style={
               Object {
                 "background": "#fff",
-                "border": "#fff 0 solid",
+                "border": "rgba(255, 255, 255, 0.5) 1px solid",
                 "borderRadius": "50%",
                 "display": "",
                 "height": "16px",
-                "left": "16px",
+                "left": "21px",
                 "marginRight": "",
                 "position": "absolute",
-                "top": "16px",
+                "top": "20px",
                 "width": "16px",
               }
             }

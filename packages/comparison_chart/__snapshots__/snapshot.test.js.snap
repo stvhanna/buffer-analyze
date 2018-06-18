@@ -86,11 +86,11 @@ exports[`Snapshots ComparisonChart [TESTED] should hide Instagram in the reach c
                       style={
                         Object {
                           "background": "#fff",
-                          "border": "#fff 1px solid",
+                          "border": "rgba(255, 255, 255, 0.5) 1px solid",
                           "borderRadius": "50%",
                           "display": "",
                           "height": "14px",
-                          "left": "20px",
+                          "left": "21px",
                           "marginRight": "",
                           "position": "absolute",
                           "top": "20px",
@@ -243,11 +243,11 @@ exports[`Snapshots ComparisonChart [TESTED] should hide Instagram in the reach c
                 style={
                   Object {
                     "background": "#fff",
-                    "border": "#fff 0 solid",
+                    "border": "rgba(255, 255, 255, 0.5) 0 solid",
                     "borderRadius": "50%",
                     "display": "inline-block",
                     "height": "18px",
-                    "left": "-6px",
+                    "left": "-5px",
                     "marginRight": "0.25rem",
                     "position": "",
                     "top": "-6px",
@@ -594,11 +594,11 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
                       style={
                         Object {
                           "background": "#fff",
-                          "border": "#fff 1px solid",
+                          "border": "rgba(255, 255, 255, 0.5) 1px solid",
                           "borderRadius": "50%",
                           "display": "",
                           "height": "14px",
-                          "left": "20px",
+                          "left": "21px",
                           "marginRight": "",
                           "position": "absolute",
                           "top": "20px",
@@ -779,11 +779,11 @@ exports[`Snapshots ComparisonChart [TESTED] should render the audience compariso
                       style={
                         Object {
                           "background": "#fff",
-                          "border": "#fff 1px solid",
+                          "border": "rgba(255, 255, 255, 0.5) 1px solid",
                           "borderRadius": "50%",
                           "display": "",
                           "height": "14px",
-                          "left": "20px",
+                          "left": "21px",
                           "marginRight": "",
                           "position": "absolute",
                           "top": "20px",

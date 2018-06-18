@@ -91,7 +91,7 @@ const ProfileHeader = ({ profile, followersCount }) => {
         <ProfileBadge
           avatarUrl={profile.avatarUrl}
           service={profile.service}
-          avatarSize={32}
+          avatarSize={36}
           socialIconSize={16}
         />
         <Details>

@@ -111,8 +111,8 @@ const MultiProfileSelector = ({
               <ProfileBadge
                 avatarUrl={p.avatarUrl}
                 service={p.service}
-                avatarSize={22}
-                socialIconSize={11}
+                avatarSize={24}
+                socialIconSize={14}
                 key={p.id}
               />,
             )

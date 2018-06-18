@@ -139,8 +139,8 @@ const ProfileSelectorDropdown = ({
           <ProfileBadge
             avatarUrl={selectedProfile.avatarUrl}
             service={selectedProfile.service}
-            avatarSize={22}
-            socialIconSize={13}
+            avatarSize={24}
+            socialIconSize={14}
           />
           <Text color="outerSpace" size="extra-small" weight="medium">{selectedProfile.username}</Text>
           <span style={arrowHolderStyle}>

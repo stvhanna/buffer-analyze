@@ -853,7 +853,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
       className="sc-gipzik kIRFxz"
     >
       <div
-        className="sc-iAyFgw cCIrYd"
+        className="sc-iAyFgw bABLIb"
         size="16px"
       >
         <img
@@ -878,11 +878,11 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
           style={
             Object {
               "background": "#fff",
-              "border": "#fff 0 solid",
+              "border": "rgba(255, 255, 255, 0.5) 1px solid",
               "borderRadius": "50%",
               "display": "",
               "height": "18px",
-              "left": "-2px",
+              "left": "-1px",
               "marginRight": "",
               "position": "absolute",
               "top": "-2px",
@@ -944,7 +944,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
       className="sc-gipzik kIRFxz"
     >
       <div
-        className="sc-iAyFgw cCIrYd"
+        className="sc-iAyFgw bABLIb"
         size="16px"
       >
         <img
@@ -969,11 +969,11 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
           style={
             Object {
               "background": "#fff",
-              "border": "#fff 0 solid",
+              "border": "rgba(255, 255, 255, 0.5) 1px solid",
               "borderRadius": "50%",
               "display": "",
               "height": "18px",
-              "left": "-2px",
+              "left": "-1px",
               "marginRight": "",
               "position": "absolute",
               "top": "-2px",
@@ -1035,7 +1035,7 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
       className="sc-gipzik kIRFxz"
     >
       <div
-        className="sc-iAyFgw cCIrYd"
+        className="sc-iAyFgw bABLIb"
         size="16px"
       >
         <img
@@ -1060,11 +1060,11 @@ exports[`Snapshots MultiProfileLegends renders the multi profile legends 1`] = `
           style={
             Object {
               "background": "#fff",
-              "border": "#fff 0 solid",
+              "border": "rgba(255, 255, 255, 0.5) 1px solid",
               "borderRadius": "50%",
               "display": "",
               "height": "18px",
-              "left": "-2px",
+              "left": "-1px",
               "marginRight": "",
               "position": "absolute",
               "top": "-2px",
@@ -1132,7 +1132,7 @@ exports[`Snapshots ProfileLegend renders the profile legend 1`] = `
     className="sc-gipzik kIRFxz"
   >
     <div
-      className="sc-iAyFgw cCIrYd"
+      className="sc-iAyFgw bABLIb"
       size="16px"
     >
       <img
@@ -1157,11 +1157,11 @@ exports[`Snapshots ProfileLegend renders the profile legend 1`] = `
         style={
           Object {
             "background": "#fff",
-            "border": "#fff 0 solid",
+            "border": "rgba(255, 255, 255, 0.5) 1px solid",
             "borderRadius": "50%",
             "display": "",
             "height": "18px",
-            "left": "-2px",
+            "left": "-1px",
             "marginRight": "",
             "position": "absolute",
             "top": "-2px",
@@ -1402,7 +1402,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                 className="sc-gipzik kIRFxz"
               >
                 <div
-                  className="sc-iAyFgw cCIrYd"
+                  className="sc-iAyFgw bABLIb"
                   size="16px"
                 >
                   <img
@@ -1427,11 +1427,11 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                     style={
                       Object {
                         "background": "#fff",
-                        "border": "#fff 0 solid",
+                        "border": "rgba(255, 255, 255, 0.5) 1px solid",
                         "borderRadius": "50%",
                         "display": "",
                         "height": "18px",
-                        "left": "-2px",
+                        "left": "-1px",
                         "marginRight": "",
                         "position": "absolute",
                         "top": "-2px",
@@ -1493,7 +1493,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                 className="sc-gipzik kIRFxz"
               >
                 <div
-                  className="sc-iAyFgw cCIrYd"
+                  className="sc-iAyFgw bABLIb"
                   size="16px"
                 >
                   <img
@@ -1518,11 +1518,11 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                     style={
                       Object {
                         "background": "#fff",
-                        "border": "#fff 0 solid",
+                        "border": "rgba(255, 255, 255, 0.5) 1px solid",
                         "borderRadius": "50%",
                         "display": "",
                         "height": "18px",
-                        "left": "-2px",
+                        "left": "-1px",
                         "marginRight": "",
                         "position": "absolute",
                         "top": "-2px",
@@ -1809,7 +1809,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               className="sc-gipzik kIRFxz"
             >
               <div
-                className="sc-iAyFgw cCIrYd"
+                className="sc-iAyFgw bABLIb"
                 size="16px"
               >
                 <img
@@ -1834,11 +1834,11 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   style={
                     Object {
                       "background": "#fff",
-                      "border": "#fff 0 solid",
+                      "border": "rgba(255, 255, 255, 0.5) 1px solid",
                       "borderRadius": "50%",
                       "display": "",
                       "height": "18px",
-                      "left": "-2px",
+                      "left": "-1px",
                       "marginRight": "",
                       "position": "absolute",
                       "top": "-2px",
@@ -2655,7 +2655,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               className="sc-gipzik kIRFxz"
             >
               <div
-                className="sc-iAyFgw cCIrYd"
+                className="sc-iAyFgw bABLIb"
                 size="16px"
               >
                 <img
@@ -2680,11 +2680,11 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   style={
                     Object {
                       "background": "#fff",
-                      "border": "#fff 0 solid",
+                      "border": "rgba(255, 255, 255, 0.5) 1px solid",
                       "borderRadius": "50%",
                       "display": "",
                       "height": "18px",
-                      "left": "-2px",
+                      "left": "-1px",
                       "marginRight": "",
                       "position": "absolute",
                       "top": "-2px",
@@ -3501,7 +3501,7 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
               className="sc-gipzik kIRFxz"
             >
               <div
-                className="sc-iAyFgw cCIrYd"
+                className="sc-iAyFgw bABLIb"
                 size="16px"
               >
                 <img
@@ -3526,11 +3526,11 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
                   style={
                     Object {
                       "background": "#fff",
-                      "border": "#fff 0 solid",
+                      "border": "rgba(255, 255, 255, 0.5) 1px solid",
                       "borderRadius": "50%",
                       "display": "",
                       "height": "18px",
-                      "left": "-2px",
+                      "left": "-1px",
                       "marginRight": "",
                       "position": "absolute",
                       "top": "-2px",
@@ -4520,7 +4520,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
               className="sc-gipzik kIRFxz"
             >
               <div
-                className="sc-iAyFgw cCIrYd"
+                className="sc-iAyFgw bABLIb"
                 size="16px"
               >
                 <img
@@ -4545,11 +4545,11 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                   style={
                     Object {
                       "background": "#fff",
-                      "border": "#fff 0 solid",
+                      "border": "rgba(255, 255, 255, 0.5) 1px solid",
                       "borderRadius": "50%",
                       "display": "",
                       "height": "18px",
-                      "left": "-2px",
+                      "left": "-1px",
                       "marginRight": "",
                       "position": "absolute",
                       "top": "-2px",
@@ -5366,7 +5366,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
               className="sc-gipzik kIRFxz"
             >
               <div
-                className="sc-iAyFgw cCIrYd"
+                className="sc-iAyFgw bABLIb"
                 size="16px"
               >
                 <img
@@ -5391,11 +5391,11 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                   style={
                     Object {
                       "background": "#fff",
-                      "border": "#fff 0 solid",
+                      "border": "rgba(255, 255, 255, 0.5) 1px solid",
                       "borderRadius": "50%",
                       "display": "",
                       "height": "18px",
-                      "left": "-2px",
+                      "left": "-1px",
                       "marginRight": "",
                       "position": "absolute",
                       "top": "-2px",
@@ -6212,7 +6212,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
               className="sc-gipzik kIRFxz"
             >
               <div
-                className="sc-iAyFgw cCIrYd"
+                className="sc-iAyFgw bABLIb"
                 size="16px"
               >
                 <img
@@ -6237,11 +6237,11 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
                   style={
                     Object {
                       "background": "#fff",
-                      "border": "#fff 0 solid",
+                      "border": "rgba(255, 255, 255, 0.5) 1px solid",
                       "borderRadius": "50%",
                       "display": "",
                       "height": "18px",
-                      "left": "-2px",
+                      "left": "-1px",
                       "marginRight": "",
                       "position": "absolute",
                       "top": "-2px",
@@ -7206,7 +7206,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
               className="sc-gipzik kIRFxz"
             >
               <div
-                className="sc-iAyFgw cCIrYd"
+                className="sc-iAyFgw bABLIb"
                 size="16px"
               >
                 <img
@@ -7231,11 +7231,11 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   style={
                     Object {
                       "background": "#fff",
-                      "border": "#fff 0 solid",
+                      "border": "rgba(255, 255, 255, 0.5) 1px solid",
                       "borderRadius": "50%",
                       "display": "",
                       "height": "18px",
-                      "left": "-2px",
+                      "left": "-1px",
                       "marginRight": "",
                       "position": "absolute",
                       "top": "-2px",
@@ -8052,7 +8052,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
               className="sc-gipzik kIRFxz"
             >
               <div
-                className="sc-iAyFgw cCIrYd"
+                className="sc-iAyFgw bABLIb"
                 size="16px"
               >
                 <img
@@ -8077,11 +8077,11 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   style={
                     Object {
                       "background": "#fff",
-                      "border": "#fff 0 solid",
+                      "border": "rgba(255, 255, 255, 0.5) 1px solid",
                       "borderRadius": "50%",
                       "display": "",
                       "height": "18px",
-                      "left": "-2px",
+                      "left": "-1px",
                       "marginRight": "",
                       "position": "absolute",
                       "top": "-2px",
@@ -8898,7 +8898,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
               className="sc-gipzik kIRFxz"
             >
               <div
-                className="sc-iAyFgw cCIrYd"
+                className="sc-iAyFgw bABLIb"
                 size="16px"
               >
                 <img
@@ -8923,11 +8923,11 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   style={
                     Object {
                       "background": "#fff",
-                      "border": "#fff 0 solid",
+                      "border": "rgba(255, 255, 255, 0.5) 1px solid",
                       "borderRadius": "50%",
                       "display": "",
                       "height": "18px",
-                      "left": "-2px",
+                      "left": "-1px",
                       "marginRight": "",
                       "position": "absolute",
                       "top": "-2px",
