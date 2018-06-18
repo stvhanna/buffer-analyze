@@ -23,7 +23,7 @@ const Button = styled.button`
 
   ${props => props.exporting && css`
     opacity: 0.2;
-    pointerEvents: none;
+    pointer-events: none;
   `}
 `;
 
@@ -37,7 +37,7 @@ const ExportPickerButton = ({ isOpen, exporting, handleClick }) => (
     disabled={exporting}
     onClick={handleClick}
   >
-    <Text size="small" weight="bold">{(exporting ? 'Exporting...' : 'Export as...')}</Text>
+    <Text color="outerSpace" size="extra-small" weight="medium">{(exporting ? 'Exporting...' : 'Export as...')}</Text>
     <Arrow>
       { isOpen ?
         <ArrowUpIcon size="small" /> :

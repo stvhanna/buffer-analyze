@@ -60,7 +60,7 @@ const AddReportModal = ({ open, addReport, toggle, selectReport, translations, r
             innerRef={(input) => { textInput = input; }}
           />
           <Button onClick={onClick}>
-            <Text color="sidebarBackgroundBlue" size="small" weight="medium">{translations.createReport}</Text>
+            <Text color="sidebarBackgroundBlue" size="extra-small" weight="medium">{translations.createReport}</Text>
           </Button>
         </InputWrapper>
         <div>

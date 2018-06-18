@@ -7,6 +7,12 @@ import {
   Button,
   Text,
 } from '@bufferapp/components';
+
+import {
+  geyser,
+  offWhite,
+} from '@bufferapp/components/style/color';
+
 import ArrowLeftIcon from '@bufferapp/components/Icon/Icons/ArrowLeftIcon';
 import ArrowRightIcon from '@bufferapp/components/Icon/Icons/ArrowRightIcon';
 import Month from './Month';
@@ -18,7 +24,7 @@ const DayHeaderListItem = styled.li`
   height: 1.5rem;
   line-height: 1.5rem;
   text-align: center;
-  border-bottom: solid 1px #CED7DF;
+  border-bottom: solid 1px ${geyser};
 `;
 
 const DayHeaderList = styled.ul`
@@ -34,9 +40,9 @@ const Header = styled.header`
   justify-content: space-between;
   align-items: center;
   height: 2rem;
-  border-bottom: solid 1px #CED7DF;
+  border-bottom: solid 1px ${geyser};
   text-align: center;
-  background: #FAFBFB;
+  background: ${offWhite};
 `;
 
 const ArrowLeft = styled.i`
@@ -52,7 +58,7 @@ const ArrowRight = styled.i`
 const Container = styled.aside`
   display: none;
   margin-top: 1rem;
-  border: solid 1px #CED7DF;
+  border: solid 1px ${geyser};
   border-radius: 3px;
 
   ${props => props.isOpen && css`
@@ -63,7 +69,7 @@ const Container = styled.aside`
 const MonthHeader = () => {
   const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'].map(day => (
     <DayHeaderListItem key={day}>
-      <Text size="small">{day.charAt(0)}</Text>
+      <Text size="extra-small">{day.charAt(0)}</Text>
     </DayHeaderListItem>
   ));
 
@@ -83,7 +89,7 @@ class Calendar extends Component {
         <Button noStyle onClick={() => this.previousMonth(unixTimestamp)}>
           <ArrowLeft><ArrowLeftIcon /></ArrowLeft>
         </Button>
-        <Text size="small">{currentMonth}</Text>
+        <Text size="extra-small">{currentMonth}</Text>
         <Button noStyle onClick={() => this.nextMonth(unixTimestamp)}>
           <ArrowRight><ArrowRightIcon /></ArrowRight>
         </Button>

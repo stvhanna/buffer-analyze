@@ -1,26 +1,46 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
 import {
   Text,
   Button,
 } from '@bufferapp/components';
+
 import {
   ChartStateLoading as Loading,
 } from '@bufferapp/analyze-shared-components';
+
 import {
   EditIcon,
 } from '@bufferapp/components/Icon/Icons';
-import styled from 'styled-components';
+
+import {
+  black,
+  offWhite,
+  white,
+} from '@bufferapp/components/style/color';
+
 import ChartFactory from '../ChartFactory';
 import DateRange from '../DateRange';
 import EditTitle from '../EditTitle';
 import LogoUpload from '../LogoUpload';
 
+const Page = styled.div`
+  background: ${offWhite};
+`;
+
+const Header = styled.div`
+  padding: 4.5rem 4rem;
+  background: ${white};
+  border-bottom: 1px solid #DBE8F1;
+`;
+
 const Title = styled.h1`
   display: inline-block;
-  color: #000000;
+  color: ${black};
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 700;
   margin: 0 0 .5rem 0;
 `;
 
@@ -35,6 +55,14 @@ const Icon = styled.div`
   margin: 0 0 0 0.75em;
   opacity: 0;
   transition: opacity 50ms linear;
+`;
+
+const Centered = styled.div`
+  display: flex;
+  height: 400px;
+  background: ${white};
+  justify-content: center;
+  align-items: center;
 `;
 
 class Report extends React.Component {
@@ -55,29 +83,37 @@ class Report extends React.Component {
     const { name, dateRange, charts, loading,
       edit, saveChanges, editName, moveUp, moveDown, deleteChart, exporting, uploadLogo,
         logoUrl, deleteLogo, isLogoUploading, isLogoDropzoneDisabled } = this.props;
-    if (loading) return <Loading active noBorder />;
+    if (loading) {
+      return (
+        <Centered>
+          <Loading active noBorder transparent />
+        </Centered>
+      );
+    }
     return (
-      <div id="report-page">
-        <Text>
-          { edit && <EditTitle name={name} saveChanges={saveChanges} />}
-          { !edit &&
-            <Container>
-              <LogoUpload
-                logoUrl={logoUrl}
-                uploadLogo={uploadLogo}
-                deleteLogo={deleteLogo}
-                isLogoUploading={isLogoUploading}
-                isLogoDropzoneDisabled={isLogoDropzoneDisabled}
-                exporting={exporting}
-              />
-              <Button noStyle onClick={editName}>
-                <Title>{name}</Title>
-              </Button>
-              <Icon><EditIcon /></Icon>
-            </Container>
-          }
-          <DateRange {...dateRange} />
-        </Text>
+      <Page id="report-page">
+        <Header>
+          <Text>
+            { edit && <EditTitle name={name} saveChanges={saveChanges} />}
+            { !edit &&
+              <Container>
+                <LogoUpload
+                  logoUrl={logoUrl}
+                  uploadLogo={uploadLogo}
+                  deleteLogo={deleteLogo}
+                  isLogoUploading={isLogoUploading}
+                  isLogoDropzoneDisabled={isLogoDropzoneDisabled}
+                  exporting={exporting}
+                />
+                <Button noStyle onClick={editName}>
+                  <Title>{name}</Title>
+                </Button>
+                <Icon><EditIcon /></Icon>
+              </Container>
+            }
+            <DateRange {...dateRange} />
+          </Text>
+        </Header>
         <ChartFactory
           charts={charts}
           moveUp={moveUp}
@@ -85,7 +121,7 @@ class Report extends React.Component {
           deleteChart={deleteChart}
           exporting={exporting}
         />
-      </div>
+      </Page>
     );
   }
 }

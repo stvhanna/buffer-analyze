@@ -29,6 +29,7 @@ const DropzonContainer = styled.div`
   border-style: solid;
   border-radius: 3px;
   border-color: #D5E3EF;
+  background: #FFFFFF;
 `;
 
 const LogoPlaceholder = styled.div`
@@ -100,9 +101,9 @@ class LogoUpload extends Component {
         {!logoUrl &&
           <DropzonContainer>
             <UploadLogoText>
-              {!isLogoUploading && <Text weight="bold">Upload logo</Text>}
+              {!isLogoUploading && <Text weight="medium" color="outerSpace">Upload logo</Text>}
             </UploadLogoText>
-            {!isLogoUploading && <Text size="small" color="shuttleGray">PNG or JPG</Text>}
+            {!isLogoUploading && <Text size="extra-small" color="shuttleGray">PNG or JPG</Text>}
             {isLogoUploading && <UploadingText>
               <Text weight="bold">Uploading...</Text>
             </UploadingText>}

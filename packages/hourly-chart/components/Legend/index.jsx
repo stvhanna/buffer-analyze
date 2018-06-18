@@ -1,38 +1,37 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  Text,
-} from '@bufferapp/components';
+import styled from 'styled-components';
+import { Text } from '@bufferapp/components';
 import ColorIcon from '../ColorIcon';
 
-const legendItem = {
-  display: 'inline-block',
-  padding: '.8rem',
-  margin: '0 .8rem',
-};
+const LegendList = styled.ul`
+  padding: 1rem 1.5rem 0.5rem;
+  margin: 0 0 1rem;
+  text-align: center;
+`;
 
-const legendList = {
-  padding: '0 1.5rem',
-  marginBottom: '1.5rem',
-  textAlign: 'center',
-};
+const LegendItem = styled.li`
+  display: inline-block;
+  padding: 0.8rem;
+  margin: 0 0.8rem;
+`;
 
 const Legend = ({ metric }) =>
-  <ul style={legendList}>
-    <li style={legendItem}>
+  <LegendList>
+    <LegendItem>
       <ColorIcon circle />
       <Text size="small">Tweets</Text>
-    </li>
-    <li style={legendItem}>
+    </LegendItem>
+    <LegendItem>
       <ColorIcon metric={metric.label} circle />
       <Text size="small">{metric.label}</Text>
-    </li>
-  </ul>;
+    </LegendItem>
+  </LegendList>;
 
 Legend.propTypes = {
   metric: PropTypes.shape({
     label: PropTypes.string,
-  }).isRequired
+  }).isRequired,
 };
 
 export default Legend;

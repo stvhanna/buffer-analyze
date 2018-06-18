@@ -56,30 +56,48 @@ const CHARTS = {
 };
 
 const Separator = styled.section`
-  padding-top: 1.25rem;
   position: relative;
+  background: #FFFFFF;
+  border: 1px solid #DBE8F1;
+  border-radius: 3px;
+  padding: 1.5rem 2rem 1rem;
+  margin: 1.5rem 2rem;
+  page-break-inside: avoid;
+
+  &:last-of-type {
+    margin-bottom: 2rem;
+  }
+
+  aside {
+    opacity: 0;
+  }
+
+  &:hover aside {
+    opacity: 1;
+  }
 `;
 
 const TitleWrapper = styled.div`
-  background: transparent;
   color: #333B43;
-  padding: 0.5rem 0.4rem 0.35rem 0;
-  border: 2px solid #333B43;
-  border-width: 0 0 2px;
+  padding: 0.5rem 0.4rem 0.1rem 0;
 `;
 
 const ProfileWrapper = styled.div`
   padding: 0.4rem 0.1rem 0.25rem;
 `;
 
+const Header = styled.div`
+  margin: 0 0 1rem;
+`;
+
 const ChartFactory = ({ charts, moveUp, moveDown, deleteChart, exporting }) =>
   charts.map((chart, index) => (
     <Separator key={chart._id}>
-      <div>
+      <Header>
         <TitleWrapper>
           {React.createElement(CHARTS[chart.chart_id].title, {
             ...chart,
-            forReport: true
+            forReport: true,
           })}
           {!exporting && <ChartEditButtons
             moveUp={moveUp}
@@ -103,7 +121,7 @@ const ChartFactory = ({ charts, moveUp, moveDown, deleteChart, exporting }) =>
             />
           }
         </ProfileWrapper>
-      </div>
+      </Header>
       {React.createElement(CHARTS[chart.chart_id].chart, {
         ...chart,
         timezone: chart.profile.timezone,

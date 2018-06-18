@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import styled from 'styled-components';
 import {
   ChartStateNoData as NoData,
   ChartStateLoading as Loading,
@@ -8,25 +8,23 @@ import {
   ChartHeader,
   GridItem,
 } from '@bufferapp/analyze-shared-components';
-
 import AddReport from '@bufferapp/add-report';
-
 import Title from '../Title';
 
-const gridStyle = {
-  display: 'flex',
-  flexWrap: 'wrap',
-  padding: '0',
-  margin: '0 auto',
-};
+const Grid = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 auto;
+`;
 
-const gridContainer = {
-  position: 'relative',
-  padding: '1.5rem',
-};
+const GridContainer = styled.div`
+  position: relative;
+  padding: 0.75rem 1.5rem 1rem;
+`;
 
 export const Table = ({ metrics }) =>
-  <ul style={gridStyle}>
+  <Grid>
     {metrics.map((metric) => {
       const itemProps = {
         key: metric.label,
@@ -36,7 +34,7 @@ export const Table = ({ metrics }) =>
       if (metrics.length === 6) itemProps.gridWidth = '33%';
       return (<GridItem {...itemProps} />);
     })}
-  </ul>;
+  </Grid>;
 
 Table.propTypes = {
   metrics: PropTypes.arrayOf(PropTypes.shape({
@@ -45,7 +43,6 @@ Table.propTypes = {
     diff: PropTypes.number,
   })).isRequired,
 };
-
 
 const SummaryTable = ({ metrics, loading }) => {
   let content = null;
@@ -63,9 +60,9 @@ const SummaryTable = ({ metrics, loading }) => {
         <Title />
         <AddReport chart="summary-table" />
       </ChartHeader>
-      <div id="js-dom-to-png-summary" style={gridContainer}>
+      <GridContainer id="js-dom-to-png-summary">
         {content}
-      </div>
+      </GridContainer>
     </ChartCard>
   );
 };

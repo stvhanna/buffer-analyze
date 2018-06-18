@@ -23,16 +23,16 @@ const Grid = styled.ul`
 
 const Wrapper = styled.section`
   position: relative;
-  padding: 0 1rem 1rem;
+  padding: 0.5rem 0 0;
 `;
 
 const ProfileAvatarWrapper = styled.div`
   display: inline-flex;
   align-items: center;
-  margin-right: 14px;
+  margin: 0 0.5rem 0 0;
 `;
 const ProfileUsernameWrapper = styled.div`
-  margin-right: 10px;
+  margin: 0 0.75rem 0 0;
 `;
 
 const ProfileCell = ({ profileTotal, profile, gridWidth }) => (
@@ -43,9 +43,10 @@ const ProfileCell = ({ profileTotal, profile, gridWidth }) => (
       value: profileTotal.currentPeriodTotal,
       diff: profileTotal.currentPeriodDiff,
     }}
+    smaller
     customLabel={
       <ProfileUsernameWrapper>
-        <Text weight="bold" color="shuttleGray">
+        <Text weight="medium" color="outerSpace" size="small">
           {profile.username}
         </Text>
       </ProfileUsernameWrapper>

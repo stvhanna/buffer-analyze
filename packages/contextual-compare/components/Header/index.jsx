@@ -108,6 +108,7 @@ Header.propTypes = {
 
 const HeaderStyled = styled(Header)`
   display: flex;
+  margin: 0 0 1rem;
 `;
 
 export default HeaderStyled;

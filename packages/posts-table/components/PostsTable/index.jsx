@@ -1,9 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import {
-  Text,
-} from '@bufferapp/components';
+import styled from 'styled-components';
 
 import {
   ChartStateNoData as NoData,
@@ -12,25 +9,27 @@ import {
   ChartHeader,
 } from '@bufferapp/analyze-shared-components';
 
-
 import Title from '../Title';
 import PostItem from './components/PostItem';
 import PostsHeader from './components/PostsHeader';
-
-import {
-  postsContainer,
-  chartColumnHeader,
-  metricColumn,
-  contentColumn,
-  chartContainer,
-} from './styles.less';
-
 import { metricsConfig } from './metrics';
 
-const gridContainer = {
-  position: 'relative',
-  padding: '1.5rem',
-};
+const ChartContainer = styled.div`
+  position: relative;
+  border-radius: 2px;
+  font-size: 12px;
+  min-height: 177px;
+`;
+
+const PostsTableWrapper = styled.table`
+  padding: 0;
+  margin: 0;
+`;
+
+const GridContainer = styled.div`
+  position: relative;
+  padding: 0.75rem 1.5rem 1rem;
+`;
 
 const defaultSortMetrics = {
   facebook: {
@@ -69,26 +68,12 @@ export const Table = ({ metrics, timezone, service }) => {
   const maxAudienceValue = getMaxMetricValue(topPosts, audienceMetrics);
 
   return (
-    <aside className={chartContainer}>
-      <header>
-        <ul className={chartColumnHeader}>
-          <li className={contentColumn}>
-            <Text size="small">Posts and Stories</Text>
-          </li>
-          <li className={metricColumn}>
-            <Text size="small">Engagements</Text>
-          </li>
-          {(service !== 'instagram') ?
-            <li className={metricColumn}>
-              <Text size="small">Audience</Text>
-            </li>
-          : null}
-        </ul>
-      </header>
-      <ul className={postsContainer}>
-        {topPosts.map(post =>
+    <ChartContainer>
+      <PostsTableWrapper>
+        {topPosts.map((post, index) =>
           <PostItem
             key={post.id}
+            index={index}
             timezone={timezone}
             post={post}
             maxEngagementValue={maxEngagementValue}
@@ -97,8 +82,8 @@ export const Table = ({ metrics, timezone, service }) => {
             audienceMetrics={audienceMetrics}
           />,
         )}
-      </ul>
-    </aside>
+      </PostsTableWrapper>
+    </ChartContainer>
   );
 };
 
@@ -151,7 +136,7 @@ const PostsTable = (props) => {
 
   let content = null;
   if (loading) {
-    content = <Loading active noBorder />;
+    content = <Loading active noBorder large />;
   } else if (topPosts.length === 0) {
     content = <NoData />;
   } else {
@@ -183,9 +168,9 @@ const PostsTable = (props) => {
         <Title {...props} />
         {addToReportButton}
       </ChartHeader>
-      <div style={gridContainer}>
+      <GridContainer>
         {content}
-      </div>
+      </GridContainer>
     </ChartCard>
   );
 };

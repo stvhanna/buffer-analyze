@@ -14,7 +14,7 @@ const avatarSize = 26;
 const AvatarWithAuraSize = 34;
 const socialIconSize = 14;
 
-const IconAura = ({ color, children, className }) => (
+const IconAura = ({ children, className }) => (
   <span className={className} >
     { children }
   </span>
@@ -23,7 +23,6 @@ const IconAura = ({ color, children, className }) => (
 IconAura.propTypes = {
   children: PropTypes.element.isRequired,
   className: PropTypes.string.isRequired,
-  color: PropTypes.string.isRequired,
 };
 
 const IconAuraStyled = styled(IconAura)`
@@ -46,7 +45,12 @@ const ProfileIcon = ({ className, profile, color }) => (
         width={`${avatarSize}px`}
       />
     </IconAuraStyled>
-    <SocialIcon service={profile.service} socialIconSize={socialIconSize} avatarSize={AvatarWithAuraSize} withBorder />
+    <SocialIcon
+      service={profile.service}
+      socialIconSize={socialIconSize}
+      avatarSize={AvatarWithAuraSize}
+      withBorder
+    />
   </span>
 );
 

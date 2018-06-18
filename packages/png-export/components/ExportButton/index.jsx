@@ -7,7 +7,7 @@ import {
 
 const ExportButton = ({ exporting, exportToPNG }) => (
   <Button noStyle disabled={exporting} onClick={exportToPNG}>
-    <Text size="small">{exporting ? 'Exporting...' : 'Export as Images' }</Text>
+    <Text size="extra-small">{exporting ? 'Exporting...' : 'Export as Images' }</Text>
   </Button>
 );
 

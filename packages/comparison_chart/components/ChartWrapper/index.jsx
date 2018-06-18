@@ -12,7 +12,7 @@ import Title from '../Title';
 
 const ContentContainer = styled.div`
   position: relative;
-  padding: 1.5rem;
+  padding: 1rem 1.5rem
 `;
 
 class ChartWrapper extends PureComponent {

@@ -23,9 +23,9 @@ export function truncateNumber() {
 }
 
 export function xAxisLabelFormatter() {
-  var date = moment(new Date(this.value)).utc();
+  const date = moment(new Date(this.value)).utc();
   if (!date.isValid()) return this.value;
-  var isFirstOfMonth = date.date() === 1;
+  const isFirstOfMonth = date.date() === 1;
   if (this.isFirst || isFirstOfMonth) {
     return date.format('MMM D');
   }
@@ -54,9 +54,9 @@ export const getXAxis = () => ({
       'font-size': '0.875rem',
       'font-weight': '400',
       'font-family': 'Roboto, sans serif',
-      'whiteSpace': 'nowrap'
+      'white-space': 'nowrap',
     },
-  }
+  },
 });
 
 export const getYAxis = () => ([
@@ -131,9 +131,9 @@ export default () => ({
   yAxis: getYAxis(),
   chart: {
     spacingLeft: 15,
-    spacingRight:40,
-    spacingTop:20,
-    spacingBottom:20,
+    spacingRight: 40,
+    spacingTop: 20,
+    spacingBottom: 20,
   },
   legend: {
     enabled: false,

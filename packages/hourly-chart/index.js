@@ -18,7 +18,8 @@ export default connect(
 )(HourlyChart);
 
 
-export { ChartContent, Title } from './components/HourlyChart';
+export { ChartContent } from './components/HourlyChart';
+export Title from './components/Title';
 // export reducer, actions and action types
 export reducer, { actions, actionTypes } from './reducer';
 export middleware from './middleware';

@@ -1,11 +1,17 @@
 import classNames from 'classnames';
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ProfileBadge, DropdownItem } from '@bufferapp/analyze-shared-components';
+
+import {
+  ProfileBadge,
+  DropdownItem,
+} from '@bufferapp/analyze-shared-components';
+
 import Dropdown, {
   DropdownTrigger,
   DropdownContent,
 } from 'react-simple-dropdown';
+
 import {
   ArrowDownIcon,
   ArrowUpIcon,
@@ -105,18 +111,18 @@ const MultiProfileSelector = ({
               <ProfileBadge
                 avatarUrl={p.avatarUrl}
                 service={p.service}
-                avatarSize={22}
-                socialIconSize={11}
+                avatarSize={24}
+                socialIconSize={14}
                 key={p.id}
               />,
             )
           }
           { selectedProfiles.length === 0 &&
-            <div style={{ margin: '4px 0' }}><Text weight="bold" size="small">Please choose an account</Text></div>
+            <div style={{ margin: '4px 0' }}><Text color="outerSpace" size="extra-small" weight="medium">Please choose an account</Text></div>
           }
           <span style={{ pointerEvents: 'none', marginLeft: 'auto' }} >
-            { isDropdownOpen && <ArrowUpIcon /> }
-            { !isDropdownOpen && <ArrowDownIcon /> }
+            { isDropdownOpen && <ArrowUpIcon size="small" /> }
+            { !isDropdownOpen && <ArrowDownIcon size="small" /> }
           </span>
         </DropdownTrigger>
         <DropdownContent className={contentClasses} >
@@ -129,7 +135,7 @@ const MultiProfileSelector = ({
             />
             { filteredProfiles.length === 0 &&
               <div style={{ marginTop: '10px' }}>
-                <Text weight="bold" size="small">No Results</Text>
+                <Text weight="bold" size="extra-small">No Results</Text>
               </div>
             }
           </div>

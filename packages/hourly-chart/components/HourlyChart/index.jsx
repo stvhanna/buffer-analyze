@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Text } from '@bufferapp/components';
+import styled from 'styled-components';
 
 import {
   ChartStateLoading as Loading,
@@ -9,28 +9,17 @@ import {
 } from '@bufferapp/analyze-shared-components';
 
 import AddReport from '@bufferapp/add-report';
-
 import PostCountByHour from '../PostCountByHour';
 import HourlyEngagementChart from '../HourlyEngagementChart';
 import Legend from '../Legend';
+import Title from '../Title';
 import Header from '../ChartHeader';
 
-const title = {
-  margin: '0',
-  padding: '0',
-};
-
-export const Title = () =>
-  <h2 style={title}>
-    <Text weight="bold" size="large">Hourly engagements</Text>
-  </h2>
-;
-
-const gridContainer = {
-  margin: '0 auto',
-  padding: '1.25rem',
-  position: 'relative',
-};
+const ChartContainer = styled.div`
+  padding: 0.5rem 0.75rem 0rem;
+  margin: 0 auto;
+  position: relative;
+`;
 
 export class ChartContent extends React.PureComponent {
   constructor(props) {
@@ -97,8 +86,8 @@ const HourlyChart = (props) => {
           state={getStateForReport(props)}
         />
       </ChartHeader>
-      <div id="js-dom-to-png-hourly-engagements" style={gridContainer}>
-        {props.loading && <Loading noBorder />}
+      <ChartContainer id="js-dom-to-png-hourly-engagements">
+        {props.loading && <Loading active noBorder large />}
         {!props.loading &&
           <div>
             <Header {...props} />
@@ -109,7 +98,7 @@ const HourlyChart = (props) => {
             />
           </div>
         }
-      </div>
+      </ChartContainer>
     </ChartCard>
   );
 };

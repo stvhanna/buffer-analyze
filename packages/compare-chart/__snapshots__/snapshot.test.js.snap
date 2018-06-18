@@ -1210,29 +1210,21 @@ exports[`Snapshots CompareChart should render a "no data" state 1`] = `
     }
   >
     <div
-      style={
-        Object {
-          "background": "#fff",
-          "border": "1px solid #E2E8ED",
-          "borderRadius": "5px",
-          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
-          "margin": "0 0 2rem",
-        }
-      }
+      className="sc-kgoBCf fymEWw"
     >
       <header
-        className="sc-VigVT kuCSoJ"
+        className="sc-kGXeez esQcyC"
       >
         <h2
-          className="sc-jTzLTM bckqaj"
+          className="sc-kpOJdX hkatTF"
         >
           <span
             style={
               Object {
-                "color": "#000",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 500,
+                "fontWeight": 700,
               }
             }
           >
@@ -1241,29 +1233,22 @@ exports[`Snapshots CompareChart should render a "no data" state 1`] = `
         </h2>
       </header>
       <div
-        style={
-          Object {
-            "margin": "0 auto",
-            "minHeight": "474px",
-            "padding": "0",
-            "position": "relative",
-          }
-        }
+        className="sc-eHgmQL lhcTZV"
       >
         <div
-          className="sc-kGXeez bcbCys"
+          className="sc-iAyFgw MooBN"
         >
           <div
-            className="sc-bdVaJa fWzNTu"
+            className="sc-htpNat klaPdF"
           >
             <div
-              className="sc-bwzfXH iNQYMr"
+              className="sc-bxivhb cRnhtv"
             >
               <div
-                className="sc-htpNat lmFxxx"
+                className="sc-ifAKCX kiQAin"
               />
               <h1
-                className="sc-bxivhb hlZJQM"
+                className="sc-EHOje dWbWPz"
               >
                 <span
                   style={
@@ -1297,29 +1282,21 @@ exports[`Snapshots CompareChart should render a loading state 1`] = `
     }
   >
     <div
-      style={
-        Object {
-          "background": "#fff",
-          "border": "1px solid #E2E8ED",
-          "borderRadius": "5px",
-          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
-          "margin": "0 0 2rem",
-        }
-      }
+      className="sc-kgoBCf fymEWw"
     >
       <header
-        className="sc-VigVT kuCSoJ"
+        className="sc-kGXeez esQcyC"
       >
         <h2
-          className="sc-jTzLTM bckqaj"
+          className="sc-kpOJdX hkatTF"
         >
           <span
             style={
               Object {
-                "color": "#000",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 500,
+                "fontWeight": 700,
               }
             }
           >
@@ -1328,114 +1305,83 @@ exports[`Snapshots CompareChart should render a loading state 1`] = `
         </h2>
       </header>
       <div
-        style={
-          Object {
-            "margin": "0 auto",
-            "minHeight": "474px",
-            "padding": "0",
-            "position": "relative",
-          }
-        }
+        className="sc-eHgmQL lhcTZV"
       >
         <div
-          className="sc-kGXeez bcbCys"
+          className="sc-bwzfXH cXJzrG"
         >
           <div
-            style={
-              Object {
-                "alignItems": "center",
-                "background": "rgba(255,255,255,.95)",
-                "border": "none",
-                "display": "flex",
-                "justifyContent": "center",
-                "maxHeight": "none",
-                "minHeight": "8rem",
-                "textAlign": "center",
-                "transition": "opacity 350ms ease-in-out",
-                "zIndex": 2,
-              }
-            }
+            className="sc-bdVaJa fsNrov"
           >
             <div
               style={
                 Object {
-                  "background": "none",
-                  "borderRadius": "2px",
-                  "flex": 1,
-                  "flexDirection": "row",
+                  "textAlign": "center",
                 }
               }
             >
               <div
                 style={
                   Object {
-                    "textAlign": "center",
+                    "height": "1rem",
+                    "margin": "0 auto 1rem auto",
+                    "position": "relative",
+                    "width": "1rem",
                   }
                 }
               >
-                <div
-                  style={
-                    Object {
-                      "height": "1rem",
-                      "margin": "0 auto 1rem auto",
-                      "position": "relative",
-                      "width": "1rem",
+                <span>
+                  <div
+                    style={
+                      Object {
+                        "height": "1rem",
+                        "left": 0,
+                        "opacity": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "transition": "all 1000ms ease-in-out",
+                        "width": "1rem",
+                      }
                     }
-                  }
-                >
-                  <span>
-                    <div
+                  >
+                    <svg
+                      height="100%"
                       style={
                         Object {
+                          "fill": "#59626a",
                           "height": "1rem",
-                          "left": 0,
-                          "opacity": 0,
-                          "position": "absolute",
-                          "top": 0,
-                          "transition": "all 1000ms ease-in-out",
                           "width": "1rem",
                         }
                       }
+                      version="1.1"
+                      viewBox="0 0 16 16"
+                      width="100%"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <svg
-                        height="100%"
-                        style={
-                          Object {
-                            "fill": "#59626a",
-                            "height": "1rem",
-                            "width": "1rem",
-                          }
-                        }
-                        version="1.1"
-                        viewBox="0 0 16 16"
-                        width="100%"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                      <g
+                        className="shuttleGray"
                       >
-                        <g
-                          className="shuttleGray"
-                        >
-                          <path
-                            d="M1.10241622,4.34038738 L7.75166358,7.40469806 C7.88821853,7.46764349 8.11178147,7.46764349 8.24833642,7.40469806 L14.8975838,4.34038738 C15.0341387,4.27744195 15.0341387,4.17446518 14.8975838,4.11151975 L8.24833642,1.04720908 C8.11178147,0.984263641 7.88821853,0.984263641 7.75166358,1.04720908 L1.10241622,4.11151975 C0.965861261,4.17446518 0.965861261,4.27744195 1.10241622,4.34038738"
-                          />
-                        </g>
-                      </svg>
-                    </div>
-                  </span>
-                </div>
-                <span
-                  style={
-                    Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "1rem",
-                      "fontWeight": 400,
-                    }
-                  }
-                >
-                  Loading...
+                        <path
+                          d="M1.10241622,4.34038738 L7.75166358,7.40469806 C7.88821853,7.46764349 8.11178147,7.46764349 8.24833642,7.40469806 L14.8975838,4.34038738 C15.0341387,4.27744195 15.0341387,4.17446518 14.8975838,4.11151975 L8.24833642,1.04720908 C8.11178147,0.984263641 7.88821853,0.984263641 7.75166358,1.04720908 L1.10241622,4.11151975 C0.965861261,4.17446518 0.965861261,4.27744195 1.10241622,4.34038738"
+                        />
+                      </g>
+                    </svg>
+                  </div>
                 </span>
               </div>
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "1rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                Loading...
+              </span>
             </div>
           </div>
         </div>
@@ -1455,29 +1401,21 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
     }
   >
     <div
-      style={
-        Object {
-          "background": "#fff",
-          "border": "1px solid #E2E8ED",
-          "borderRadius": "5px",
-          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
-          "margin": "0 0 2rem",
-        }
-      }
+      className="sc-kgoBCf fymEWw"
     >
       <header
-        className="sc-VigVT kuCSoJ"
+        className="sc-kGXeez esQcyC"
       >
         <h2
-          className="sc-jTzLTM bckqaj"
+          className="sc-kpOJdX hkatTF"
         >
           <span
             style={
               Object {
-                "color": "#000",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 500,
+                "fontWeight": 700,
               }
             }
           >
@@ -1486,22 +1424,10 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
         </h2>
       </header>
       <div
-        style={
-          Object {
-            "margin": "0 auto",
-            "minHeight": "474px",
-            "padding": "0",
-            "position": "relative",
-          }
-        }
+        className="sc-eHgmQL lhcTZV"
       >
         <div
-          style={
-            Object {
-              "display": "flex",
-              "padding": "20px",
-            }
-          }
+          className="sc-hSdWYo fBiwQ"
         >
           <div
             className="dropdown dropdownContainer"
@@ -1523,10 +1449,26 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "background": "#fda3f3",
+                    "borderColor": "#df85d5",
+                    "borderRadius": "10px",
+                    "borderStyle": "solid",
+                    "borderWidth": "1px",
+                    "display": "inline-block",
+                    "height": "7px",
+                    "marginRight": "5px",
+                    "verticalAlign": "baseline",
+                    "width": "7px",
+                  }
+                }
+              />
+              <span
+                style={
+                  Object {
+                    "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "0.75rem",
-                    "fontWeight": 700,
+                    "fontWeight": 500,
                   }
                 }
               >
@@ -1545,8 +1487,8 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                   style={
                     Object {
                       "fill": "#59626a",
-                      "height": "1rem",
-                      "width": "1rem",
+                      "height": "0.75rem",
+                      "width": "0.75rem",
                     }
                   }
                   version="1.1"
@@ -1611,7 +1553,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -1637,7 +1579,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -1685,7 +1627,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -1711,7 +1653,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -1791,7 +1733,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -1817,7 +1759,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -1865,7 +1807,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -1891,7 +1833,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -1939,7 +1881,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -1965,7 +1907,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -2013,7 +1955,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -2039,7 +1981,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -2092,10 +2034,10 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                 <span
                   style={
                     Object {
-                      "color": "#59626a",
+                      "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 500,
                     }
                   }
                 >
@@ -2124,6 +2066,9 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
           id="js-dom-to-png-compare"
         >
           <div
+            className="sc-kkGfuU fNKnnX"
+          />
+          <div
             style={
               Object {
                 "margin": "1.5rem 1.5rem 1rem",
@@ -2142,21 +2087,14 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
               }
             >
               <li
-                className="sc-ifAKCX dYwfOF"
+                className="sc-gZMcBi kiZsK"
                 width="25%"
               >
                 <div
-                  className="sc-EHOje YINzU"
+                  className="sc-gqjmRU gggsyL"
                 >
                   <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 600,
-                        "marginTop": "15px",
-                      }
-                    }
+                    className="sc-iwsKbI eveHfQ"
                   >
                     <span
                       data-tip={null}
@@ -2166,7 +2104,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                           Object {
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "0.75rem",
+                            "fontSize": "0.875rem",
                             "fontWeight": 400,
                           }
                         }
@@ -2201,14 +2139,14 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                     </span>
                   </span>
                   <div
-                    className="sc-bZQynM hCNVyQ"
+                    className="sc-VigVT eVESgP"
                   >
                     <span
                       style={
                         Object {
                           "color": "#323b43",
                           "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
+                          "fontSize": "1.5rem",
                           "fontWeight": 700,
                         }
                       }
@@ -2217,67 +2155,52 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                         1,010
                       </span>
                     </span>
-                    <div>
-                      <span
-                        style={
-                          Object {
-                            "display": "inline-block",
-                            "height": "1rem",
-                            "marginLeft": "10px",
-                          }
-                        }
+                    <div
+                      className="sc-gzVnrw jPCrAy"
+                    >
+                      <div
+                        className="sc-htoDjs gNzaNl"
                       >
-                        <svg
-                          height="100%"
+                        <div
+                          className="sc-bZQynM bhDWTq"
+                        >
+                          <svg
+                            fill="none"
+                            height="11"
+                            viewBox="0 0 11 11"
+                            width="11"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              fill="white"
+                              height="11"
+                              width="11"
+                            />
+                            <path
+                              d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                              fill="#FF4040"
+                              transform="translate(10 9) rotate(-180)"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div
+                        className="sc-dnqmqq fSJNbt"
+                      >
+                        <span
                           style={
                             Object {
-                              "fill": "#ff1e1e",
-                              "height": "1rem",
-                              "width": "1rem",
+                              "color": "#ff1e1e",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "1rem",
+                              "fontWeight": 700,
                             }
                           }
-                          version="1.1"
-                          viewBox="0 0 16 16"
-                          width="100%"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlnsXlink="http://www.w3.org/1999/xlink"
                         >
-                          <g
-                            className="torchRed"
-                          >
-                            <path
-                              d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                              transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                            />
-                          </g>
-                        </svg>
-                      </span>
-                      <div
-                        style={
-                          Object {
-                            "color": "#FF1E1E",
-                            "display": "inline-block",
-                            "fontSize": "18px",
-                            "fontWeight": 600,
-                            "marginLeft": "5px",
-                          }
-                        }
-                      >
-                        <span>
-                          <span
-                            style={
-                              Object {
-                                "color": "torchRed",
-                                "fontFamily": "\\"Roboto\\", sans-serif",
-                                "fontSize": "1.25rem",
-                              }
-                            }
-                          >
-                            <span>
-                              55
-                            </span>
-                            %
+                          <span>
+                            55
                           </span>
+                          %
                         </span>
                       </div>
                     </div>
@@ -2285,21 +2208,14 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                 </div>
               </li>
               <li
-                className="sc-ifAKCX dYwfOF"
+                className="sc-gZMcBi kiZsK"
                 width="25%"
               >
                 <div
-                  className="sc-EHOje YINzU"
+                  className="sc-gqjmRU gggsyL"
                 >
                   <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 600,
-                        "marginTop": "15px",
-                      }
-                    }
+                    className="sc-iwsKbI eveHfQ"
                   >
                     <span
                       data-tip={null}
@@ -2309,7 +2225,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                           Object {
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "0.75rem",
+                            "fontSize": "0.875rem",
                             "fontWeight": 400,
                           }
                         }
@@ -2344,14 +2260,14 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                     </span>
                   </span>
                   <div
-                    className="sc-bZQynM hCNVyQ"
+                    className="sc-VigVT eVESgP"
                   >
                     <span
                       style={
                         Object {
                           "color": "#323b43",
                           "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
+                          "fontSize": "1.5rem",
                           "fontWeight": 700,
                         }
                       }
@@ -2382,29 +2298,21 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
     }
   >
     <div
-      style={
-        Object {
-          "background": "#fff",
-          "border": "1px solid #E2E8ED",
-          "borderRadius": "5px",
-          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
-          "margin": "0 0 2rem",
-        }
-      }
+      className="sc-kgoBCf fymEWw"
     >
       <header
-        className="sc-VigVT kuCSoJ"
+        className="sc-kGXeez esQcyC"
       >
         <h2
-          className="sc-jTzLTM bckqaj"
+          className="sc-kpOJdX hkatTF"
         >
           <span
             style={
               Object {
-                "color": "#000",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 500,
+                "fontWeight": 700,
               }
             }
           >
@@ -2413,22 +2321,10 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
         </h2>
       </header>
       <div
-        style={
-          Object {
-            "margin": "0 auto",
-            "minHeight": "474px",
-            "padding": "0",
-            "position": "relative",
-          }
-        }
+        className="sc-eHgmQL lhcTZV"
       >
         <div
-          style={
-            Object {
-              "display": "flex",
-              "padding": "20px",
-            }
-          }
+          className="sc-hSdWYo fBiwQ"
         >
           <div
             className="dropdown dropdownContainer"
@@ -2450,10 +2346,26 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "background": "#fda3f3",
+                    "borderColor": "#df85d5",
+                    "borderRadius": "10px",
+                    "borderStyle": "solid",
+                    "borderWidth": "1px",
+                    "display": "inline-block",
+                    "height": "7px",
+                    "marginRight": "5px",
+                    "verticalAlign": "baseline",
+                    "width": "7px",
+                  }
+                }
+              />
+              <span
+                style={
+                  Object {
+                    "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "0.75rem",
-                    "fontWeight": 700,
+                    "fontWeight": 500,
                   }
                 }
               >
@@ -2472,8 +2384,8 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                   style={
                     Object {
                       "fill": "#59626a",
-                      "height": "1rem",
-                      "width": "1rem",
+                      "height": "0.75rem",
+                      "width": "0.75rem",
                     }
                   }
                   version="1.1"
@@ -2538,7 +2450,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -2564,7 +2476,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -2612,7 +2524,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -2638,7 +2550,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -2686,7 +2598,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -2712,7 +2624,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -2760,7 +2672,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -2786,7 +2698,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -2866,7 +2778,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -2892,7 +2804,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -2940,7 +2852,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -2966,7 +2878,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -3019,10 +2931,10 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                 <span
                   style={
                     Object {
-                      "color": "#59626a",
+                      "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 500,
                     }
                   }
                 >
@@ -3051,6 +2963,9 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
           id="js-dom-to-png-compare"
         >
           <div
+            className="sc-kkGfuU fNKnnX"
+          />
+          <div
             style={
               Object {
                 "margin": "1.5rem 1.5rem 1rem",
@@ -3069,21 +2984,14 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
               }
             >
               <li
-                className="sc-ifAKCX dYwfOF"
+                className="sc-gZMcBi kiZsK"
                 width="25%"
               >
                 <div
-                  className="sc-EHOje YINzU"
+                  className="sc-gqjmRU gggsyL"
                 >
                   <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 600,
-                        "marginTop": "15px",
-                      }
-                    }
+                    className="sc-iwsKbI eveHfQ"
                   >
                     <span
                       data-tip={null}
@@ -3093,7 +3001,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           Object {
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "0.75rem",
+                            "fontSize": "0.875rem",
                             "fontWeight": 400,
                           }
                         }
@@ -3128,14 +3036,14 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                     </span>
                   </span>
                   <div
-                    className="sc-bZQynM hCNVyQ"
+                    className="sc-VigVT eVESgP"
                   >
                     <span
                       style={
                         Object {
                           "color": "#323b43",
                           "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
+                          "fontSize": "1.5rem",
                           "fontWeight": 700,
                         }
                       }
@@ -3144,67 +3052,52 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                         100
                       </span>
                     </span>
-                    <div>
-                      <span
-                        style={
-                          Object {
-                            "display": "inline-block",
-                            "height": "1rem",
-                            "marginLeft": "10px",
-                          }
-                        }
+                    <div
+                      className="sc-gzVnrw jPCrAy"
+                    >
+                      <div
+                        className="sc-htoDjs gNzaNl"
                       >
-                        <svg
-                          height="100%"
+                        <div
+                          className="sc-bZQynM bhDWTq"
+                        >
+                          <svg
+                            fill="none"
+                            height="11"
+                            viewBox="0 0 11 11"
+                            width="11"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              fill="white"
+                              height="11"
+                              width="11"
+                            />
+                            <path
+                              d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                              fill="#FF4040"
+                              transform="translate(10 9) rotate(-180)"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div
+                        className="sc-dnqmqq fSJNbt"
+                      >
+                        <span
                           style={
                             Object {
-                              "fill": "#ff1e1e",
-                              "height": "1rem",
-                              "width": "1rem",
+                              "color": "#ff1e1e",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "1rem",
+                              "fontWeight": 700,
                             }
                           }
-                          version="1.1"
-                          viewBox="0 0 16 16"
-                          width="100%"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlnsXlink="http://www.w3.org/1999/xlink"
                         >
-                          <g
-                            className="torchRed"
-                          >
-                            <path
-                              d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                              transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                            />
-                          </g>
-                        </svg>
-                      </span>
-                      <div
-                        style={
-                          Object {
-                            "color": "#FF1E1E",
-                            "display": "inline-block",
-                            "fontSize": "18px",
-                            "fontWeight": 600,
-                            "marginLeft": "5px",
-                          }
-                        }
-                      >
-                        <span>
-                          <span
-                            style={
-                              Object {
-                                "color": "torchRed",
-                                "fontFamily": "\\"Roboto\\", sans-serif",
-                                "fontSize": "1.25rem",
-                              }
-                            }
-                          >
-                            <span>
-                              39
-                            </span>
-                            %
+                          <span>
+                            39
                           </span>
+                          %
                         </span>
                       </div>
                     </div>
@@ -3212,21 +3105,14 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                 </div>
               </li>
               <li
-                className="sc-ifAKCX dYwfOF"
+                className="sc-gZMcBi kiZsK"
                 width="25%"
               >
                 <div
-                  className="sc-EHOje YINzU"
+                  className="sc-gqjmRU gggsyL"
                 >
                   <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 600,
-                        "marginTop": "15px",
-                      }
-                    }
+                    className="sc-iwsKbI eveHfQ"
                   >
                     <span
                       data-tip={null}
@@ -3236,7 +3122,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           Object {
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "0.75rem",
+                            "fontSize": "0.875rem",
                             "fontWeight": 400,
                           }
                         }
@@ -3271,14 +3157,14 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                     </span>
                   </span>
                   <div
-                    className="sc-bZQynM hCNVyQ"
+                    className="sc-VigVT eVESgP"
                   >
                     <span
                       style={
                         Object {
                           "color": "#323b43",
                           "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
+                          "fontSize": "1.5rem",
                           "fontWeight": 700,
                         }
                       }
@@ -3309,29 +3195,21 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
     }
   >
     <div
-      style={
-        Object {
-          "background": "#fff",
-          "border": "1px solid #E2E8ED",
-          "borderRadius": "5px",
-          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
-          "margin": "0 0 2rem",
-        }
-      }
+      className="sc-kgoBCf fymEWw"
     >
       <header
-        className="sc-VigVT kuCSoJ"
+        className="sc-kGXeez esQcyC"
       >
         <h2
-          className="sc-jTzLTM bckqaj"
+          className="sc-kpOJdX hkatTF"
         >
           <span
             style={
               Object {
-                "color": "#000",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 500,
+                "fontWeight": 700,
               }
             }
           >
@@ -3340,22 +3218,10 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
         </h2>
       </header>
       <div
-        style={
-          Object {
-            "margin": "0 auto",
-            "minHeight": "474px",
-            "padding": "0",
-            "position": "relative",
-          }
-        }
+        className="sc-eHgmQL lhcTZV"
       >
         <div
-          style={
-            Object {
-              "display": "flex",
-              "padding": "20px",
-            }
-          }
+          className="sc-hSdWYo fBiwQ"
         >
           <div
             className="dropdown dropdownContainer"
@@ -3377,10 +3243,26 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "background": "#fda3f3",
+                    "borderColor": "#df85d5",
+                    "borderRadius": "10px",
+                    "borderStyle": "solid",
+                    "borderWidth": "1px",
+                    "display": "inline-block",
+                    "height": "7px",
+                    "marginRight": "5px",
+                    "verticalAlign": "baseline",
+                    "width": "7px",
+                  }
+                }
+              />
+              <span
+                style={
+                  Object {
+                    "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "0.75rem",
-                    "fontWeight": 700,
+                    "fontWeight": 500,
                   }
                 }
               >
@@ -3399,8 +3281,8 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                   style={
                     Object {
                       "fill": "#59626a",
-                      "height": "1rem",
-                      "width": "1rem",
+                      "height": "0.75rem",
+                      "width": "0.75rem",
                     }
                   }
                   version="1.1"
@@ -3465,7 +3347,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -3491,7 +3373,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -3539,7 +3421,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -3565,7 +3447,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -3613,7 +3495,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -3639,7 +3521,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -3687,7 +3569,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -3713,7 +3595,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -3793,7 +3675,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -3819,7 +3701,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -3867,7 +3749,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -3893,7 +3775,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -3946,10 +3828,10 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                 <span
                   style={
                     Object {
-                      "color": "#59626a",
+                      "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 500,
                     }
                   }
                 >
@@ -3978,6 +3860,9 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
           id="js-dom-to-png-compare"
         >
           <div
+            className="sc-kkGfuU fNKnnX"
+          />
+          <div
             style={
               Object {
                 "margin": "1.5rem 1.5rem 1rem",
@@ -3996,21 +3881,14 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
               }
             >
               <li
-                className="sc-ifAKCX dYwfOF"
+                className="sc-gZMcBi kiZsK"
                 width="25%"
               >
                 <div
-                  className="sc-EHOje YINzU"
+                  className="sc-gqjmRU gggsyL"
                 >
                   <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 600,
-                        "marginTop": "15px",
-                      }
-                    }
+                    className="sc-iwsKbI eveHfQ"
                   >
                     <span
                       data-tip={null}
@@ -4020,7 +3898,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           Object {
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "0.75rem",
+                            "fontSize": "0.875rem",
                             "fontWeight": 400,
                           }
                         }
@@ -4055,14 +3933,14 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                     </span>
                   </span>
                   <div
-                    className="sc-bZQynM hCNVyQ"
+                    className="sc-VigVT eVESgP"
                   >
                     <span
                       style={
                         Object {
                           "color": "#323b43",
                           "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
+                          "fontSize": "1.5rem",
                           "fontWeight": 700,
                         }
                       }
@@ -4071,67 +3949,52 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                         100
                       </span>
                     </span>
-                    <div>
-                      <span
-                        style={
-                          Object {
-                            "display": "inline-block",
-                            "height": "1rem",
-                            "marginLeft": "10px",
-                          }
-                        }
+                    <div
+                      className="sc-gzVnrw jPCrAy"
+                    >
+                      <div
+                        className="sc-htoDjs gNzaNl"
                       >
-                        <svg
-                          height="100%"
+                        <div
+                          className="sc-bZQynM bhDWTq"
+                        >
+                          <svg
+                            fill="none"
+                            height="11"
+                            viewBox="0 0 11 11"
+                            width="11"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              fill="white"
+                              height="11"
+                              width="11"
+                            />
+                            <path
+                              d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                              fill="#FF4040"
+                              transform="translate(10 9) rotate(-180)"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div
+                        className="sc-dnqmqq fSJNbt"
+                      >
+                        <span
                           style={
                             Object {
-                              "fill": "#ff1e1e",
-                              "height": "1rem",
-                              "width": "1rem",
+                              "color": "#ff1e1e",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "1rem",
+                              "fontWeight": 700,
                             }
                           }
-                          version="1.1"
-                          viewBox="0 0 16 16"
-                          width="100%"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlnsXlink="http://www.w3.org/1999/xlink"
                         >
-                          <g
-                            className="torchRed"
-                          >
-                            <path
-                              d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                              transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                            />
-                          </g>
-                        </svg>
-                      </span>
-                      <div
-                        style={
-                          Object {
-                            "color": "#FF1E1E",
-                            "display": "inline-block",
-                            "fontSize": "18px",
-                            "fontWeight": 600,
-                            "marginLeft": "5px",
-                          }
-                        }
-                      >
-                        <span>
-                          <span
-                            style={
-                              Object {
-                                "color": "torchRed",
-                                "fontFamily": "\\"Roboto\\", sans-serif",
-                                "fontSize": "1.25rem",
-                              }
-                            }
-                          >
-                            <span>
-                              39
-                            </span>
-                            %
+                          <span>
+                            39
                           </span>
+                          %
                         </span>
                       </div>
                     </div>
@@ -4139,21 +4002,14 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                 </div>
               </li>
               <li
-                className="sc-ifAKCX dYwfOF"
+                className="sc-gZMcBi kiZsK"
                 width="25%"
               >
                 <div
-                  className="sc-EHOje YINzU"
+                  className="sc-gqjmRU gggsyL"
                 >
                   <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 600,
-                        "marginTop": "15px",
-                      }
-                    }
+                    className="sc-iwsKbI eveHfQ"
                   >
                     <span
                       data-tip={null}
@@ -4163,7 +4019,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                           Object {
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "0.75rem",
+                            "fontSize": "0.875rem",
                             "fontWeight": 400,
                           }
                         }
@@ -4198,14 +4054,14 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                     </span>
                   </span>
                   <div
-                    className="sc-bZQynM hCNVyQ"
+                    className="sc-VigVT eVESgP"
                   >
                     <span
                       style={
                         Object {
                           "color": "#323b43",
                           "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
+                          "fontSize": "1.5rem",
                           "fontWeight": 700,
                         }
                       }
@@ -4236,29 +4092,21 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
     }
   >
     <div
-      style={
-        Object {
-          "background": "#fff",
-          "border": "1px solid #E2E8ED",
-          "borderRadius": "5px",
-          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
-          "margin": "0 0 2rem",
-        }
-      }
+      className="sc-kgoBCf fymEWw"
     >
       <header
-        className="sc-VigVT kuCSoJ"
+        className="sc-kGXeez esQcyC"
       >
         <h2
-          className="sc-jTzLTM bckqaj"
+          className="sc-kpOJdX hkatTF"
         >
           <span
             style={
               Object {
-                "color": "#000",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 500,
+                "fontWeight": 700,
               }
             }
           >
@@ -4267,22 +4115,10 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
         </h2>
       </header>
       <div
-        style={
-          Object {
-            "margin": "0 auto",
-            "minHeight": "474px",
-            "padding": "0",
-            "position": "relative",
-          }
-        }
+        className="sc-eHgmQL lhcTZV"
       >
         <div
-          style={
-            Object {
-              "display": "flex",
-              "padding": "20px",
-            }
-          }
+          className="sc-hSdWYo fBiwQ"
         >
           <div
             className="dropdown dropdownContainer"
@@ -4304,10 +4140,26 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "background": "#fda3f3",
+                    "borderColor": "#df85d5",
+                    "borderRadius": "10px",
+                    "borderStyle": "solid",
+                    "borderWidth": "1px",
+                    "display": "inline-block",
+                    "height": "7px",
+                    "marginRight": "5px",
+                    "verticalAlign": "baseline",
+                    "width": "7px",
+                  }
+                }
+              />
+              <span
+                style={
+                  Object {
+                    "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "0.75rem",
-                    "fontWeight": 700,
+                    "fontWeight": 500,
                   }
                 }
               >
@@ -4326,8 +4178,8 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                   style={
                     Object {
                       "fill": "#59626a",
-                      "height": "1rem",
-                      "width": "1rem",
+                      "height": "0.75rem",
+                      "width": "0.75rem",
                     }
                   }
                   version="1.1"
@@ -4392,7 +4244,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -4418,7 +4270,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -4466,7 +4318,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -4492,7 +4344,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -4572,7 +4424,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -4598,7 +4450,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -4646,7 +4498,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -4672,7 +4524,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -4720,7 +4572,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -4746,7 +4598,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -4794,7 +4646,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -4820,7 +4672,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -4870,7 +4722,18 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
               <span
                 className="leftButton activeButton"
               >
-                Daily
+                <span
+                  style={
+                    Object {
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 500,
+                    }
+                  }
+                >
+                  Daily
+                </span>
               </span>
             </button>
             <button
@@ -4904,7 +4767,18 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
               <span
                 className="rightButton"
               >
-                Period Total
+                <span
+                  style={
+                    Object {
+                      "color": "#323b43",
+                      "fontFamily": "\\"Roboto\\", sans-serif",
+                      "fontSize": "0.75rem",
+                      "fontWeight": 500,
+                    }
+                  }
+                >
+                  Period Total
+                </span>
               </span>
             </button>
           </span>
@@ -4949,10 +4823,10 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                 <span
                   style={
                     Object {
-                      "color": "#59626a",
+                      "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 500,
                     }
                   }
                 >
@@ -4981,6 +4855,9 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
           id="js-dom-to-png-compare"
         >
           <div
+            className="sc-kkGfuU fNKnnX"
+          />
+          <div
             style={
               Object {
                 "margin": "1.5rem 1.5rem 1rem",
@@ -4999,21 +4876,14 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
               }
             >
               <li
-                className="sc-ifAKCX dYwfOF"
+                className="sc-gZMcBi kiZsK"
                 width="25%"
               >
                 <div
-                  className="sc-EHOje YINzU"
+                  className="sc-gqjmRU gggsyL"
                 >
                   <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 600,
-                        "marginTop": "15px",
-                      }
-                    }
+                    className="sc-iwsKbI eveHfQ"
                   >
                     <span
                       data-tip={null}
@@ -5023,7 +4893,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                           Object {
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "0.75rem",
+                            "fontSize": "0.875rem",
                             "fontWeight": 400,
                           }
                         }
@@ -5058,14 +4928,14 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                     </span>
                   </span>
                   <div
-                    className="sc-bZQynM hCNVyQ"
+                    className="sc-VigVT eVESgP"
                   >
                     <span
                       style={
                         Object {
                           "color": "#323b43",
                           "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
+                          "fontSize": "1.5rem",
                           "fontWeight": 700,
                         }
                       }
@@ -5074,67 +4944,52 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                         1,010
                       </span>
                     </span>
-                    <div>
-                      <span
-                        style={
-                          Object {
-                            "display": "inline-block",
-                            "height": "1rem",
-                            "marginLeft": "10px",
-                          }
-                        }
+                    <div
+                      className="sc-gzVnrw jPCrAy"
+                    >
+                      <div
+                        className="sc-htoDjs gNzaNl"
                       >
-                        <svg
-                          height="100%"
+                        <div
+                          className="sc-bZQynM bhDWTq"
+                        >
+                          <svg
+                            fill="none"
+                            height="11"
+                            viewBox="0 0 11 11"
+                            width="11"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              fill="white"
+                              height="11"
+                              width="11"
+                            />
+                            <path
+                              d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                              fill="#FF4040"
+                              transform="translate(10 9) rotate(-180)"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div
+                        className="sc-dnqmqq fSJNbt"
+                      >
+                        <span
                           style={
                             Object {
-                              "fill": "#ff1e1e",
-                              "height": "1rem",
-                              "width": "1rem",
+                              "color": "#ff1e1e",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "1rem",
+                              "fontWeight": 700,
                             }
                           }
-                          version="1.1"
-                          viewBox="0 0 16 16"
-                          width="100%"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlnsXlink="http://www.w3.org/1999/xlink"
                         >
-                          <g
-                            className="torchRed"
-                          >
-                            <path
-                              d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                              transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                            />
-                          </g>
-                        </svg>
-                      </span>
-                      <div
-                        style={
-                          Object {
-                            "color": "#FF1E1E",
-                            "display": "inline-block",
-                            "fontSize": "18px",
-                            "fontWeight": 600,
-                            "marginLeft": "5px",
-                          }
-                        }
-                      >
-                        <span>
-                          <span
-                            style={
-                              Object {
-                                "color": "torchRed",
-                                "fontFamily": "\\"Roboto\\", sans-serif",
-                                "fontSize": "1.25rem",
-                              }
-                            }
-                          >
-                            <span>
-                              55
-                            </span>
-                            %
+                          <span>
+                            55
                           </span>
+                          %
                         </span>
                       </div>
                     </div>
@@ -5142,21 +4997,14 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                 </div>
               </li>
               <li
-                className="sc-ifAKCX dYwfOF"
+                className="sc-gZMcBi kiZsK"
                 width="25%"
               >
                 <div
-                  className="sc-EHOje YINzU"
+                  className="sc-gqjmRU gggsyL"
                 >
                   <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 600,
-                        "marginTop": "15px",
-                      }
-                    }
+                    className="sc-iwsKbI eveHfQ"
                   >
                     <span
                       data-tip={null}
@@ -5166,7 +5014,7 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                           Object {
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "0.75rem",
+                            "fontSize": "0.875rem",
                             "fontWeight": 400,
                           }
                         }
@@ -5201,14 +5049,14 @@ exports[`Snapshots CompareChart should render the compare chart with mode toggle
                     </span>
                   </span>
                   <div
-                    className="sc-bZQynM hCNVyQ"
+                    className="sc-VigVT eVESgP"
                   >
                     <span
                       style={
                         Object {
                           "color": "#323b43",
                           "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
+                          "fontSize": "1.5rem",
                           "fontWeight": 700,
                         }
                       }
@@ -5239,29 +5087,21 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
     }
   >
     <div
-      style={
-        Object {
-          "background": "#fff",
-          "border": "1px solid #E2E8ED",
-          "borderRadius": "5px",
-          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
-          "margin": "0 0 2rem",
-        }
-      }
+      className="sc-kgoBCf fymEWw"
     >
       <header
-        className="sc-VigVT kuCSoJ"
+        className="sc-kGXeez esQcyC"
       >
         <h2
-          className="sc-jTzLTM bckqaj"
+          className="sc-kpOJdX hkatTF"
         >
           <span
             style={
               Object {
-                "color": "#000",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 500,
+                "fontWeight": 700,
               }
             }
           >
@@ -5270,22 +5110,10 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
         </h2>
       </header>
       <div
-        style={
-          Object {
-            "margin": "0 auto",
-            "minHeight": "474px",
-            "padding": "0",
-            "position": "relative",
-          }
-        }
+        className="sc-eHgmQL lhcTZV"
       >
         <div
-          style={
-            Object {
-              "display": "flex",
-              "padding": "20px",
-            }
-          }
+          className="sc-hSdWYo fBiwQ"
         >
           <div
             className="dropdown dropdownContainer"
@@ -5307,10 +5135,26 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "background": "#fda3f3",
+                    "borderColor": "#df85d5",
+                    "borderRadius": "10px",
+                    "borderStyle": "solid",
+                    "borderWidth": "1px",
+                    "display": "inline-block",
+                    "height": "7px",
+                    "marginRight": "5px",
+                    "verticalAlign": "baseline",
+                    "width": "7px",
+                  }
+                }
+              />
+              <span
+                style={
+                  Object {
+                    "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "0.75rem",
-                    "fontWeight": 700,
+                    "fontWeight": 500,
                   }
                 }
               >
@@ -5329,8 +5173,8 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                   style={
                     Object {
                       "fill": "#59626a",
-                      "height": "1rem",
-                      "width": "1rem",
+                      "height": "0.75rem",
+                      "width": "0.75rem",
                     }
                   }
                   version="1.1"
@@ -5395,7 +5239,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -5421,7 +5265,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -5469,7 +5313,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -5495,7 +5339,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -5575,7 +5419,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -5601,7 +5445,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -5649,7 +5493,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -5675,7 +5519,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -5723,7 +5567,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -5749,7 +5593,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -5797,7 +5641,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "200px",
+                          "width": "15.5rem",
                         }
                       }
                     >
@@ -5823,7 +5667,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
                             "fontSize": "0.75rem",
-                            "fontWeight": 700,
+                            "fontWeight": 400,
                           }
                         }
                       >
@@ -5876,10 +5720,10 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                 <span
                   style={
                     Object {
-                      "color": "#59626a",
+                      "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 500,
                     }
                   }
                 >
@@ -5908,6 +5752,9 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
           id="js-dom-to-png-compare"
         >
           <div
+            className="sc-kkGfuU fNKnnX"
+          />
+          <div
             style={
               Object {
                 "margin": "1.5rem 1.5rem 1rem",
@@ -5926,21 +5773,14 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
               }
             >
               <li
-                className="sc-ifAKCX dYwfOF"
+                className="sc-gZMcBi kiZsK"
                 width="25%"
               >
                 <div
-                  className="sc-EHOje YINzU"
+                  className="sc-gqjmRU gggsyL"
                 >
                   <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 600,
-                        "marginTop": "15px",
-                      }
-                    }
+                    className="sc-iwsKbI eveHfQ"
                   >
                     <span
                       data-tip={null}
@@ -5950,7 +5790,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                           Object {
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "0.75rem",
+                            "fontSize": "0.875rem",
                             "fontWeight": 400,
                           }
                         }
@@ -5985,14 +5825,14 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                     </span>
                   </span>
                   <div
-                    className="sc-bZQynM hCNVyQ"
+                    className="sc-VigVT eVESgP"
                   >
                     <span
                       style={
                         Object {
                           "color": "#323b43",
                           "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
+                          "fontSize": "1.5rem",
                           "fontWeight": 700,
                         }
                       }
@@ -6001,67 +5841,52 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                         1,010
                       </span>
                     </span>
-                    <div>
-                      <span
-                        style={
-                          Object {
-                            "display": "inline-block",
-                            "height": "1rem",
-                            "marginLeft": "10px",
-                          }
-                        }
+                    <div
+                      className="sc-gzVnrw jPCrAy"
+                    >
+                      <div
+                        className="sc-htoDjs gNzaNl"
                       >
-                        <svg
-                          height="100%"
+                        <div
+                          className="sc-bZQynM bhDWTq"
+                        >
+                          <svg
+                            fill="none"
+                            height="11"
+                            viewBox="0 0 11 11"
+                            width="11"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              fill="white"
+                              height="11"
+                              width="11"
+                            />
+                            <path
+                              d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                              fill="#FF4040"
+                              transform="translate(10 9) rotate(-180)"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div
+                        className="sc-dnqmqq fSJNbt"
+                      >
+                        <span
                           style={
                             Object {
-                              "fill": "#ff1e1e",
-                              "height": "1rem",
-                              "width": "1rem",
+                              "color": "#ff1e1e",
+                              "fontFamily": "\\"Roboto\\", sans-serif",
+                              "fontSize": "1rem",
+                              "fontWeight": 700,
                             }
                           }
-                          version="1.1"
-                          viewBox="0 0 16 16"
-                          width="100%"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlnsXlink="http://www.w3.org/1999/xlink"
                         >
-                          <g
-                            className="torchRed"
-                          >
-                            <path
-                              d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                              transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                            />
-                          </g>
-                        </svg>
-                      </span>
-                      <div
-                        style={
-                          Object {
-                            "color": "#FF1E1E",
-                            "display": "inline-block",
-                            "fontSize": "18px",
-                            "fontWeight": 600,
-                            "marginLeft": "5px",
-                          }
-                        }
-                      >
-                        <span>
-                          <span
-                            style={
-                              Object {
-                                "color": "torchRed",
-                                "fontFamily": "\\"Roboto\\", sans-serif",
-                                "fontSize": "1.25rem",
-                              }
-                            }
-                          >
-                            <span>
-                              55
-                            </span>
-                            %
+                          <span>
+                            55
                           </span>
+                          %
                         </span>
                       </div>
                     </div>
@@ -6069,21 +5894,14 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                 </div>
               </li>
               <li
-                className="sc-ifAKCX dYwfOF"
+                className="sc-gZMcBi kiZsK"
                 width="25%"
               >
                 <div
-                  className="sc-EHOje YINzU"
+                  className="sc-gqjmRU gggsyL"
                 >
                   <span
-                    style={
-                      Object {
-                        "display": "block",
-                        "fontSize": "0.75rem",
-                        "fontWeight": 600,
-                        "marginTop": "15px",
-                      }
-                    }
+                    className="sc-iwsKbI eveHfQ"
                   >
                     <span
                       data-tip={null}
@@ -6093,7 +5911,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                           Object {
                             "color": "#59626a",
                             "fontFamily": "\\"Roboto\\", sans-serif",
-                            "fontSize": "0.75rem",
+                            "fontSize": "0.875rem",
                             "fontWeight": 400,
                           }
                         }
@@ -6128,14 +5946,14 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                     </span>
                   </span>
                   <div
-                    className="sc-bZQynM hCNVyQ"
+                    className="sc-VigVT eVESgP"
                   >
                     <span
                       style={
                         Object {
                           "color": "#323b43",
                           "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "2rem",
+                          "fontSize": "1.5rem",
                           "fontWeight": 700,
                         }
                       }
@@ -6184,21 +6002,14 @@ exports[`Snapshots Footer should not render percentage change number only the ar
         }
       >
         <li
-          className="sc-ifAKCX dYwfOF"
+          className="sc-gZMcBi kiZsK"
           width="25%"
         >
           <div
-            className="sc-EHOje YINzU"
+            className="sc-gqjmRU gggsyL"
           >
             <span
-              style={
-                Object {
-                  "display": "block",
-                  "fontSize": "0.75rem",
-                  "fontWeight": 600,
-                  "marginTop": "15px",
-                }
-              }
+              className="sc-iwsKbI eveHfQ"
             >
               <span
                 data-tip={null}
@@ -6208,7 +6019,7 @@ exports[`Snapshots Footer should not render percentage change number only the ar
                     Object {
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontSize": "0.875rem",
                       "fontWeight": 400,
                     }
                   }
@@ -6243,14 +6054,14 @@ exports[`Snapshots Footer should not render percentage change number only the ar
               </span>
             </span>
             <div
-              className="sc-bZQynM hCNVyQ"
+              className="sc-VigVT eVESgP"
             >
               <span
                 style={
                   Object {
                     "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "2rem",
+                    "fontSize": "1.5rem",
                     "fontWeight": 700,
                   }
                 }
@@ -6260,51 +6071,43 @@ exports[`Snapshots Footer should not render percentage change number only the ar
                 </span>
               </span>
               <span
-                className="sc-htoDjs jpUPzE"
+                className="sc-fjdhpX etBlbG"
               >
-                <svg
-                  height="100%"
-                  style={
-                    Object {
-                      "fill": "#2fd566",
-                      "height": "1rem",
-                      "width": "1rem",
-                    }
-                  }
-                  version="1.1"
-                  viewBox="0 0 16 16"
-                  width="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                <div
+                  className="sc-bZQynM bhDWTq"
                 >
-                  <g
-                    className="shamrock"
+                  <svg
+                    fill="none"
+                    height="11"
+                    viewBox="0 0 11 11"
+                    width="11"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path
-                      d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
+                    <rect
+                      fill="white"
+                      height="11"
+                      width="11"
                     />
-                  </g>
-                </svg>
+                    <path
+                      d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                      fill="#2FD566"
+                      transform="translate(1 2)"
+                    />
+                  </svg>
+                </div>
               </span>
             </div>
           </div>
         </li>
         <li
-          className="sc-ifAKCX dYwfOF"
+          className="sc-gZMcBi kiZsK"
           width="25%"
         >
           <div
-            className="sc-EHOje YINzU"
+            className="sc-gqjmRU gggsyL"
           >
             <span
-              style={
-                Object {
-                  "display": "block",
-                  "fontSize": "0.75rem",
-                  "fontWeight": 600,
-                  "marginTop": "15px",
-                }
-              }
+              className="sc-iwsKbI eveHfQ"
             >
               <span
                 data-tip={null}
@@ -6314,7 +6117,7 @@ exports[`Snapshots Footer should not render percentage change number only the ar
                     Object {
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontSize": "0.875rem",
                       "fontWeight": 400,
                     }
                   }
@@ -6349,14 +6152,14 @@ exports[`Snapshots Footer should not render percentage change number only the ar
               </span>
             </span>
             <div
-              className="sc-bZQynM hCNVyQ"
+              className="sc-VigVT eVESgP"
             >
               <span
                 style={
                   Object {
                     "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "2rem",
+                    "fontSize": "1.5rem",
                     "fontWeight": 700,
                   }
                 }
@@ -6402,21 +6205,14 @@ exports[`Snapshots Footer should not render percentage change number when previo
         }
       >
         <li
-          className="sc-ifAKCX dYwfOF"
+          className="sc-gZMcBi kiZsK"
           width="25%"
         >
           <div
-            className="sc-EHOje YINzU"
+            className="sc-gqjmRU gggsyL"
           >
             <span
-              style={
-                Object {
-                  "display": "block",
-                  "fontSize": "0.75rem",
-                  "fontWeight": 600,
-                  "marginTop": "15px",
-                }
-              }
+              className="sc-iwsKbI eveHfQ"
             >
               <span
                 data-tip={null}
@@ -6426,7 +6222,7 @@ exports[`Snapshots Footer should not render percentage change number when previo
                     Object {
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontSize": "0.875rem",
                       "fontWeight": 400,
                     }
                   }
@@ -6461,14 +6257,14 @@ exports[`Snapshots Footer should not render percentage change number when previo
               </span>
             </span>
             <div
-              className="sc-bZQynM hCNVyQ"
+              className="sc-VigVT eVESgP"
             >
               <span
                 style={
                   Object {
                     "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "2rem",
+                    "fontSize": "1.5rem",
                     "fontWeight": 700,
                   }
                 }
@@ -6481,21 +6277,14 @@ exports[`Snapshots Footer should not render percentage change number when previo
           </div>
         </li>
         <li
-          className="sc-ifAKCX dYwfOF"
+          className="sc-gZMcBi kiZsK"
           width="25%"
         >
           <div
-            className="sc-EHOje YINzU"
+            className="sc-gqjmRU gggsyL"
           >
             <span
-              style={
-                Object {
-                  "display": "block",
-                  "fontSize": "0.75rem",
-                  "fontWeight": 600,
-                  "marginTop": "15px",
-                }
-              }
+              className="sc-iwsKbI eveHfQ"
             >
               <span
                 data-tip={null}
@@ -6505,7 +6294,7 @@ exports[`Snapshots Footer should not render percentage change number when previo
                     Object {
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontSize": "0.875rem",
                       "fontWeight": 400,
                     }
                   }
@@ -6540,14 +6329,14 @@ exports[`Snapshots Footer should not render percentage change number when previo
               </span>
             </span>
             <div
-              className="sc-bZQynM hCNVyQ"
+              className="sc-VigVT eVESgP"
             >
               <span
                 style={
                   Object {
                     "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "2rem",
+                    "fontSize": "1.5rem",
                     "fontWeight": 700,
                   }
                 }
@@ -6593,21 +6382,14 @@ exports[`Snapshots Footer should render the table 1`] = `
         }
       >
         <li
-          className="sc-ifAKCX dYwfOF"
+          className="sc-gZMcBi kiZsK"
           width="25%"
         >
           <div
-            className="sc-EHOje YINzU"
+            className="sc-gqjmRU gggsyL"
           >
             <span
-              style={
-                Object {
-                  "display": "block",
-                  "fontSize": "0.75rem",
-                  "fontWeight": 600,
-                  "marginTop": "15px",
-                }
-              }
+              className="sc-iwsKbI eveHfQ"
             >
               <span
                 data-tip={null}
@@ -6617,7 +6399,7 @@ exports[`Snapshots Footer should render the table 1`] = `
                     Object {
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontSize": "0.875rem",
                       "fontWeight": 400,
                     }
                   }
@@ -6652,14 +6434,14 @@ exports[`Snapshots Footer should render the table 1`] = `
               </span>
             </span>
             <div
-              className="sc-bZQynM hCNVyQ"
+              className="sc-VigVT eVESgP"
             >
               <span
                 style={
                   Object {
                     "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "2rem",
+                    "fontSize": "1.5rem",
                     "fontWeight": 700,
                   }
                 }
@@ -6668,66 +6450,52 @@ exports[`Snapshots Footer should render the table 1`] = `
                   150
                 </span>
               </span>
-              <div>
-                <span
-                  style={
-                    Object {
-                      "display": "inline-block",
-                      "height": "1rem",
-                      "marginLeft": "10px",
-                    }
-                  }
+              <div
+                className="sc-gzVnrw jPCrAy"
+              >
+                <div
+                  className="sc-htoDjs gNzaNl"
                 >
-                  <svg
-                    height="100%"
+                  <div
+                    className="sc-bZQynM bhDWTq"
+                  >
+                    <svg
+                      fill="none"
+                      height="11"
+                      viewBox="0 0 11 11"
+                      width="11"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        fill="white"
+                        height="11"
+                        width="11"
+                      />
+                      <path
+                        d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                        fill="#2FD566"
+                        transform="translate(1 2)"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div
+                  className="sc-dnqmqq fSJNbt"
+                >
+                  <span
                     style={
                       Object {
-                        "fill": "#2fd566",
-                        "height": "1rem",
-                        "width": "1rem",
+                        "color": "#2fd566",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "1rem",
+                        "fontWeight": 700,
                       }
                     }
-                    version="1.1"
-                    viewBox="0 0 16 16"
-                    width="100%"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlnsXlink="http://www.w3.org/1999/xlink"
                   >
-                    <g
-                      className="shamrock"
-                    >
-                      <path
-                        d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                      />
-                    </g>
-                  </svg>
-                </span>
-                <div
-                  style={
-                    Object {
-                      "color": "#2FD566",
-                      "display": "inline-block",
-                      "fontSize": "18px",
-                      "fontWeight": 600,
-                      "marginLeft": "5px",
-                    }
-                  }
-                >
-                  <span>
-                    <span
-                      style={
-                        Object {
-                          "color": "shamrock",
-                          "fontFamily": "\\"Roboto\\", sans-serif",
-                          "fontSize": "1.25rem",
-                        }
-                      }
-                    >
-                      <span>
-                        25
-                      </span>
-                      %
+                    <span>
+                      25
                     </span>
+                    %
                   </span>
                 </div>
               </div>
@@ -6735,21 +6503,14 @@ exports[`Snapshots Footer should render the table 1`] = `
           </div>
         </li>
         <li
-          className="sc-ifAKCX dYwfOF"
+          className="sc-gZMcBi kiZsK"
           width="25%"
         >
           <div
-            className="sc-EHOje YINzU"
+            className="sc-gqjmRU gggsyL"
           >
             <span
-              style={
-                Object {
-                  "display": "block",
-                  "fontSize": "0.75rem",
-                  "fontWeight": 600,
-                  "marginTop": "15px",
-                }
-              }
+              className="sc-iwsKbI eveHfQ"
             >
               <span
                 data-tip={null}
@@ -6759,7 +6520,7 @@ exports[`Snapshots Footer should render the table 1`] = `
                     Object {
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontSize": "0.875rem",
                       "fontWeight": 400,
                     }
                   }
@@ -6794,14 +6555,14 @@ exports[`Snapshots Footer should render the table 1`] = `
               </span>
             </span>
             <div
-              className="sc-bZQynM hCNVyQ"
+              className="sc-VigVT eVESgP"
             >
               <span
                 style={
                   Object {
                     "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "2rem",
+                    "fontSize": "1.5rem",
                     "fontWeight": 700,
                   }
                 }
@@ -6869,10 +6630,10 @@ exports[`Snapshots PeriodToggle should render an active toggle 1`] = `
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -6950,10 +6711,10 @@ exports[`Snapshots PeriodToggle should render an inactive toggle 1`] = `
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -6984,15 +6745,15 @@ exports[`Snapshots PeriodToggle should render an inactive toggle 1`] = `
 exports[`Snapshots Title should render title as if for app 1`] = `
 <span>
   <h2
-    className="sc-jTzLTM bckqaj"
+    className="sc-kpOJdX hkatTF"
   >
     <span
       style={
         Object {
-          "color": "#000",
+          "color": "#323b43",
           "fontFamily": "\\"Roboto\\", sans-serif",
           "fontSize": "1.25rem",
-          "fontWeight": 500,
+          "fontWeight": 700,
         }
       }
     >
@@ -7005,15 +6766,15 @@ exports[`Snapshots Title should render title as if for app 1`] = `
 exports[`Snapshots Title should render title as if for report 1`] = `
 <span>
   <h2
-    className="sc-jTzLTM bckqaj"
+    className="sc-kpOJdX hkatTF"
   >
     <span
       style={
         Object {
           "color": "#000",
           "fontFamily": "\\"Roboto\\", sans-serif",
-          "fontSize": "1.25rem",
-          "fontWeight": 500,
+          "fontSize": "1.5rem",
+          "fontWeight": 700,
         }
       }
     >

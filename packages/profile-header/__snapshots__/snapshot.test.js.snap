@@ -4,14 +4,14 @@ exports[`Snapshots ProfileHeader should render facebook fans 1`] = `
 <span>
   <div>
     <div
-      className="sectionProfileAvatar"
+      className="sc-kkGfuU nyOzf"
     >
       <div
-        className="profileAvatarWrapper"
+        className="sc-iAyFgw jCDMO"
       >
         <div
-          className="sc-gZMcBi fnlFFL"
-          size="32px"
+          className="sc-kAzzGY bOmkKI"
+          size="36px"
         >
           <img
             alt=""
@@ -19,7 +19,7 @@ exports[`Snapshots ProfileHeader should render facebook fans 1`] = `
             style={
               Object {
                 "borderRadius": "50%",
-                "height": "32px",
+                "height": "36px",
                 "marginBottom": undefined,
                 "marginTop": undefined,
                 "maxHeight": undefined,
@@ -27,7 +27,7 @@ exports[`Snapshots ProfileHeader should render facebook fans 1`] = `
                 "minHeight": undefined,
                 "minWidth": undefined,
                 "objectFit": undefined,
-                "width": "32px",
+                "width": "36px",
               }
             }
           />
@@ -35,14 +35,14 @@ exports[`Snapshots ProfileHeader should render facebook fans 1`] = `
             style={
               Object {
                 "background": "#fff",
-                "border": "#fff 0 solid",
+                "border": "rgba(255, 255, 255, 0.5) 1px solid",
                 "borderRadius": "50%",
                 "display": "",
                 "height": "16px",
-                "left": "16px",
+                "left": "21px",
                 "marginRight": "",
                 "position": "absolute",
-                "top": "16px",
+                "top": "20px",
                 "width": "16px",
               }
             }
@@ -77,10 +77,10 @@ exports[`Snapshots ProfileHeader should render facebook fans 1`] = `
           </div>
         </div>
         <div
-          className="sectionProfileAvatarDetails"
+          className="sc-hSdWYo jHBZOP"
         >
           <span
-            className="profileAvatarDetailHeader"
+            className="sc-eHgmQL lodIsJ"
           >
             <a
               href={undefined}
@@ -90,9 +90,9 @@ exports[`Snapshots ProfileHeader should render facebook fans 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "0.75rem",
+                    "fontSize": "1rem",
                     "fontWeight": 700,
                   }
                 }
@@ -102,7 +102,7 @@ exports[`Snapshots ProfileHeader should render facebook fans 1`] = `
             </a>
           </span>
           <span
-            className="profileAvatarDetailSubHeader"
+            className="sc-cvbbAY kcrNsK"
           >
             <span
               style={
@@ -122,25 +122,22 @@ exports[`Snapshots ProfileHeader should render facebook fans 1`] = `
         </div>
       </div>
       <a
+        className="sc-jWBwVP dShexB"
         href="https://buffer.com/facebook-overview-analytics-help#getting-your-data"
         rel="noopener noreferrer"
         target="_blank"
       >
         <span
-          className="profileAvatarDetailNote"
-        >
-          <span
-            style={
-              Object {
-                "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 400,
-              }
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
+              "fontWeight": 400,
             }
-          >
-            Analytics updated daily
-          </span>
+          }
+        >
+          Analytics updated daily
         </span>
       </a>
     </div>
@@ -152,14 +149,14 @@ exports[`Snapshots ProfileHeader should render twitter followers 1`] = `
 <span>
   <div>
     <div
-      className="sectionProfileAvatar"
+      className="sc-kkGfuU nyOzf"
     >
       <div
-        className="profileAvatarWrapper"
+        className="sc-iAyFgw jCDMO"
       >
         <div
-          className="sc-gZMcBi fnlFFL"
-          size="32px"
+          className="sc-kAzzGY bOmkKI"
+          size="36px"
         >
           <img
             alt=""
@@ -167,7 +164,7 @@ exports[`Snapshots ProfileHeader should render twitter followers 1`] = `
             style={
               Object {
                 "borderRadius": "50%",
-                "height": "32px",
+                "height": "36px",
                 "marginBottom": undefined,
                 "marginTop": undefined,
                 "maxHeight": undefined,
@@ -175,7 +172,7 @@ exports[`Snapshots ProfileHeader should render twitter followers 1`] = `
                 "minHeight": undefined,
                 "minWidth": undefined,
                 "objectFit": undefined,
-                "width": "32px",
+                "width": "36px",
               }
             }
           />
@@ -183,14 +180,14 @@ exports[`Snapshots ProfileHeader should render twitter followers 1`] = `
             style={
               Object {
                 "background": "#fff",
-                "border": "#fff 0 solid",
+                "border": "rgba(255, 255, 255, 0.5) 1px solid",
                 "borderRadius": "50%",
                 "display": "",
                 "height": "16px",
-                "left": "16px",
+                "left": "21px",
                 "marginRight": "",
                 "position": "absolute",
-                "top": "16px",
+                "top": "20px",
                 "width": "16px",
               }
             }
@@ -225,10 +222,10 @@ exports[`Snapshots ProfileHeader should render twitter followers 1`] = `
           </div>
         </div>
         <div
-          className="sectionProfileAvatarDetails"
+          className="sc-hSdWYo jHBZOP"
         >
           <span
-            className="profileAvatarDetailHeader"
+            className="sc-eHgmQL lodIsJ"
           >
             <a
               href={undefined}
@@ -238,9 +235,9 @@ exports[`Snapshots ProfileHeader should render twitter followers 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#59626a",
+                    "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "0.75rem",
+                    "fontSize": "1rem",
                     "fontWeight": 700,
                   }
                 }
@@ -250,7 +247,7 @@ exports[`Snapshots ProfileHeader should render twitter followers 1`] = `
             </a>
           </span>
           <span
-            className="profileAvatarDetailSubHeader"
+            className="sc-cvbbAY kcrNsK"
           >
             <span
               style={
@@ -270,25 +267,22 @@ exports[`Snapshots ProfileHeader should render twitter followers 1`] = `
         </div>
       </div>
       <a
+        className="sc-jWBwVP dShexB"
         href="https://buffer.com/twitter-overview-analytics-help#getting-your-data"
         rel="noopener noreferrer"
         target="_blank"
       >
         <span
-          className="profileAvatarDetailNote"
-        >
-          <span
-            style={
-              Object {
-                "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 400,
-              }
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "0.75rem",
+              "fontWeight": 400,
             }
-          >
-            Analytics updated daily
-          </span>
+          }
+        >
+          Analytics updated daily
         </span>
       </a>
     </div>

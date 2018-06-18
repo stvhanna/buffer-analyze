@@ -17,19 +17,19 @@ import {
 const Page = styled.div`
   display: flex;
   flex-grow: 1;
-  height: 100%;
+  min-height: 100%;
   background: #FAFAFA;
 `;
 
 const Container = styled.div`
-  width: 52rem;
+  width: 920px;
   margin: 0 auto;
-  padding: 2.5rem 1rem 4rem;
+  padding: 1.5rem 1rem 4rem;
 `;
 
 const ChartContainer = styled.div`
   position: relative;
-  padding: 1.5rem;
+  padding: 0.5rem 1.5rem 1.75rem;
   line-height: 1.5rem;
 `;
 

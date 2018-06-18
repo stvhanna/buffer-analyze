@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import {
   Text,
 } from '@bufferapp/components';
+
 import classNames from 'classnames';
+
 import {
   container,
   buttonItem,
@@ -30,7 +33,7 @@ function getButtons (postsCounts, activePostsCount, handlePostsCountClick) {
 
 const PostsCountBar = ({ postsCounts, activePostsCount, handlePostsCountClick }) => (
   <div>
-    <Text size="small">Show</Text>
+    <Text size="extra-small">Show</Text>
     <ul className={container}>
       {getButtons(postsCounts, activePostsCount, handlePostsCountClick)}
     </ul>

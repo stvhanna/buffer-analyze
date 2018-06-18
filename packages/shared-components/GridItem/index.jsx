@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-
 import Diff from './components/Diff';
 import Label from './components/Label';
 import Value from './components/Value';
@@ -15,8 +14,9 @@ const Item = styled.li`
   flex-grow: 1;
   width: ${props => props.width};
   justify-content: center;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 0;
+  padding-right: 1rem;
+  margin: 0 0 1.25rem;
 
   &:first-child > div {
     padding-left: ${props => (props.withChart ? '0' : '')};
@@ -43,6 +43,7 @@ const ValueWrapper = styled.div`
 const GridItemChartContainer = styled.div`
   border: 1px solid #ECEEEF;
   border-width: 0 0 1px;
+  margin: 0 0 0.5rem;
 `;
 const ArrowIconContainer = styled.span`
   display: inline-block;
@@ -65,6 +66,7 @@ const GridItem = ({
   customLabel,
   prefix,
   hideDiff,
+  smaller,
   showPercentSign,
   showArrowIcon,
 }) => {
@@ -83,7 +85,7 @@ const GridItem = ({
           {customLabel && customLabel}
         </Label>
         <ValueWrapper>
-          <Value showPercentSign={showPercentSign}>{metric.value}</Value>
+          <Value smaller={smaller} showPercentSign={showPercentSign}>{metric.value}</Value>
           {!hideDiff && <Diff diff={metric.diff} />}
           {hideDiff && showArrowIcon &&
             <ArrowIconContainer>
@@ -103,6 +105,7 @@ GridItem.defaultProps = {
   customLabel: null,
   prefix: null,
   hideDiff: false,
+  smaller: false,
   showPercentSign: false,
   showArrowIcon: false,
 };
@@ -126,6 +129,7 @@ GridItem.propTypes = {
   tooltip: PropTypes.string,
   gridWidth: PropTypes.string,
   hideDiff: PropTypes.bool,
+  smaller: PropTypes.bool,
   showPercentSign: PropTypes.bool,
   showArrowIcon: PropTypes.bool,
 };

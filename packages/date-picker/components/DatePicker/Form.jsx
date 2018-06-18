@@ -141,7 +141,7 @@ class Form extends Component {
         <CustomDateRangeContainer calendarOpen={calendarOpen}>
           { calendarOpen &&
           <div>
-            <Header><Text size="small">Select a custom date range:</Text></Header>
+            <Header><Text size="extra-small">Select a custom date range:</Text></Header>
             <Inputs>
               <InputContainer>
                 <DateInput

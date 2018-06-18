@@ -490,8 +490,8 @@ exports[`Snapshots CommonChart [TESTED] Should render Posts metrics as columns i
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontSize": "0.875rem",
+                "fontWeight": 400,
               }
             }
           >
@@ -526,8 +526,8 @@ exports[`Snapshots CommonChart [TESTED] Should render Posts metrics as columns i
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontSize": "0.875rem",
+                "fontWeight": 400,
               }
             }
           >
@@ -638,8 +638,8 @@ exports[`Snapshots CommonChart [TESTED] Should render in Custom mode 1`] = `
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontSize": "0.875rem",
+                "fontWeight": 400,
               }
             }
           >
@@ -674,8 +674,8 @@ exports[`Snapshots CommonChart [TESTED] Should render in Custom mode 1`] = `
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontSize": "0.875rem",
+                "fontWeight": 400,
               }
             }
           >
@@ -746,8 +746,8 @@ exports[`Snapshots CommonChart [TESTED] Should render in Presets mode with days 
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontSize": "0.875rem",
+                "fontWeight": 400,
               }
             }
           >
@@ -782,8 +782,8 @@ exports[`Snapshots CommonChart [TESTED] Should render in Presets mode with days 
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontSize": "0.875rem",
+                "fontWeight": 400,
               }
             }
           >
@@ -854,8 +854,8 @@ exports[`Snapshots CommonChart [TESTED] Should render in Presets mode with multi
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontSize": "0.875rem",
+                "fontWeight": 400,
               }
             }
           >
@@ -890,8 +890,8 @@ exports[`Snapshots CommonChart [TESTED] Should render in Presets mode with multi
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontSize": "0.875rem",
+                "fontWeight": 400,
               }
             }
           >
@@ -926,8 +926,8 @@ exports[`Snapshots CommonChart [TESTED] Should render in Presets mode with multi
               Object {
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontSize": "0.875rem",
+                "fontWeight": 400,
               }
             }
           >
@@ -988,7 +988,7 @@ exports[`Snapshots Dropdown Item should be disabled 1`] = `
               "alignItems": "center",
               "boxSizing": "border-box",
               "display": "flex",
-              "padding": "0.25rem 0",
+              "padding": "0.3rem 0",
               "position": "relative",
               "width": "100%",
             }
@@ -996,7 +996,7 @@ exports[`Snapshots Dropdown Item should be disabled 1`] = `
           title="Buffer"
         >
           <div
-            className="sc-fjdhpX bkZhtx"
+            className="sc-kpOJdX jELSeN"
             size="24px"
           >
             <img
@@ -1021,15 +1021,15 @@ exports[`Snapshots Dropdown Item should be disabled 1`] = `
               style={
                 Object {
                   "background": "#fff",
-                  "border": "#fff 0 solid",
+                  "border": "rgba(255, 255, 255, 0.5) 1px solid",
                   "borderRadius": "50%",
                   "display": "",
-                  "height": "11px",
-                  "left": "13px",
+                  "height": "14px",
+                  "left": "11px",
                   "marginRight": "",
                   "position": "absolute",
-                  "top": "13px",
-                  "width": "11px",
+                  "top": "10px",
+                  "width": "14px",
                 }
               }
             >
@@ -1063,7 +1063,7 @@ exports[`Snapshots Dropdown Item should be disabled 1`] = `
             </div>
           </div>
           <span
-            size="small"
+            size="extra-small"
             style={
               Object {
                 "overflow": "hidden",
@@ -1140,7 +1140,7 @@ exports[`Snapshots Dropdown Item should render 1`] = `
               "alignItems": "center",
               "boxSizing": "border-box",
               "display": "flex",
-              "padding": "0.25rem 0",
+              "padding": "0.3rem 0",
               "position": "relative",
               "width": "100%",
             }
@@ -1148,7 +1148,7 @@ exports[`Snapshots Dropdown Item should render 1`] = `
           title="Buffer"
         >
           <div
-            className="sc-fjdhpX bkZhtx"
+            className="sc-kpOJdX jELSeN"
             size="24px"
           >
             <img
@@ -1173,15 +1173,15 @@ exports[`Snapshots Dropdown Item should render 1`] = `
               style={
                 Object {
                   "background": "#fff",
-                  "border": "#fff 0 solid",
+                  "border": "rgba(255, 255, 255, 0.5) 1px solid",
                   "borderRadius": "50%",
                   "display": "",
-                  "height": "11px",
-                  "left": "13px",
+                  "height": "14px",
+                  "left": "11px",
                   "marginRight": "",
                   "position": "absolute",
-                  "top": "13px",
-                  "width": "11px",
+                  "top": "10px",
+                  "width": "14px",
                 }
               }
             >
@@ -1215,7 +1215,7 @@ exports[`Snapshots Dropdown Item should render 1`] = `
             </div>
           </div>
           <span
-            size="small"
+            size="extra-small"
             style={
               Object {
                 "overflow": "hidden",
@@ -1292,7 +1292,7 @@ exports[`Snapshots Dropdown Item should render properly with an empty avatarUrl 
               "alignItems": "center",
               "boxSizing": "border-box",
               "display": "flex",
-              "padding": "0.25rem 0",
+              "padding": "0.3rem 0",
               "position": "relative",
               "width": "100%",
             }
@@ -1300,7 +1300,7 @@ exports[`Snapshots Dropdown Item should render properly with an empty avatarUrl 
           title="Buffer"
         >
           <div
-            className="sc-fjdhpX bkZhtx"
+            className="sc-kpOJdX jELSeN"
             size="24px"
           >
             <img
@@ -1325,15 +1325,15 @@ exports[`Snapshots Dropdown Item should render properly with an empty avatarUrl 
               style={
                 Object {
                   "background": "#fff",
-                  "border": "#fff 0 solid",
+                  "border": "rgba(255, 255, 255, 0.5) 1px solid",
                   "borderRadius": "50%",
                   "display": "",
-                  "height": "11px",
-                  "left": "13px",
+                  "height": "14px",
+                  "left": "11px",
                   "marginRight": "",
                   "position": "absolute",
-                  "top": "13px",
-                  "width": "11px",
+                  "top": "10px",
+                  "width": "14px",
                 }
               }
             >
@@ -1367,7 +1367,7 @@ exports[`Snapshots Dropdown Item should render properly with an empty avatarUrl 
             </div>
           </div>
           <span
-            size="small"
+            size="extra-small"
             style={
               Object {
                 "overflow": "hidden",
@@ -1444,7 +1444,7 @@ exports[`Snapshots Dropdown Item should selected 1`] = `
               "alignItems": "center",
               "boxSizing": "border-box",
               "display": "flex",
-              "padding": "0.25rem 0",
+              "padding": "0.3rem 0",
               "position": "relative",
               "width": "100%",
             }
@@ -1452,7 +1452,7 @@ exports[`Snapshots Dropdown Item should selected 1`] = `
           title="Buffer"
         >
           <div
-            className="sc-fjdhpX bkZhtx"
+            className="sc-kpOJdX jELSeN"
             size="24px"
           >
             <img
@@ -1477,15 +1477,15 @@ exports[`Snapshots Dropdown Item should selected 1`] = `
               style={
                 Object {
                   "background": "#fff",
-                  "border": "#fff 0 solid",
+                  "border": "rgba(255, 255, 255, 0.5) 1px solid",
                   "borderRadius": "50%",
                   "display": "",
-                  "height": "11px",
-                  "left": "13px",
+                  "height": "14px",
+                  "left": "11px",
                   "marginRight": "",
                   "position": "absolute",
-                  "top": "13px",
-                  "width": "11px",
+                  "top": "10px",
+                  "width": "14px",
                 }
               }
             >
@@ -1519,7 +1519,7 @@ exports[`Snapshots Dropdown Item should selected 1`] = `
             </div>
           </div>
           <span
-            size="small"
+            size="extra-small"
             style={
               Object {
                 "overflow": "hidden",
@@ -1628,7 +1628,7 @@ exports[`Snapshots Dropdown Item should truncate long names 1`] = `
               "alignItems": "center",
               "boxSizing": "border-box",
               "display": "flex",
-              "padding": "0.25rem 0",
+              "padding": "0.3rem 0",
               "position": "relative",
               "width": "100%",
             }
@@ -1636,7 +1636,7 @@ exports[`Snapshots Dropdown Item should truncate long names 1`] = `
           title="a very long and meaningful name"
         >
           <div
-            className="sc-fjdhpX bkZhtx"
+            className="sc-kpOJdX jELSeN"
             size="24px"
           >
             <img
@@ -1661,15 +1661,15 @@ exports[`Snapshots Dropdown Item should truncate long names 1`] = `
               style={
                 Object {
                   "background": "#fff",
-                  "border": "#fff 0 solid",
+                  "border": "rgba(255, 255, 255, 0.5) 1px solid",
                   "borderRadius": "50%",
                   "display": "",
-                  "height": "11px",
-                  "left": "13px",
+                  "height": "14px",
+                  "left": "11px",
                   "marginRight": "",
                   "position": "absolute",
-                  "top": "13px",
-                  "width": "11px",
+                  "top": "10px",
+                  "width": "14px",
                 }
               }
             >
@@ -1703,7 +1703,7 @@ exports[`Snapshots Dropdown Item should truncate long names 1`] = `
             </div>
           </div>
           <span
-            size="small"
+            size="extra-small"
             style={
               Object {
                 "overflow": "hidden",
@@ -1849,7 +1849,7 @@ exports[`Snapshots DropdownItem should render 1`] = `
               "display": "flex",
               "padding": "5px 10px",
               "position": "relative",
-              "width": "200px",
+              "width": "15.5rem",
             }
           }
         >
@@ -1875,7 +1875,7 @@ exports[`Snapshots DropdownItem should render 1`] = `
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontWeight": 400,
               }
             }
           >
@@ -1937,7 +1937,7 @@ exports[`Snapshots DropdownItem should selected 1`] = `
               "display": "flex",
               "padding": "5px 10px",
               "position": "relative",
-              "width": "200px",
+              "width": "15.5rem",
             }
           }
         >
@@ -1963,7 +1963,7 @@ exports[`Snapshots DropdownItem should selected 1`] = `
                 "color": "#59626a",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "0.75rem",
-                "fontWeight": 700,
+                "fontWeight": 400,
               }
             }
           >
@@ -2011,21 +2011,21 @@ exports[`Snapshots DropdownItem should selected 1`] = `
 exports[`Snapshots EmptyState render with a custom header and description 1`] = `
 <span>
   <div
-    className="sc-jKJlTe QAcUG"
+    className="sc-cvbbAY bNmtwk"
   >
     <div
-      className="sc-eNQAEJ kVJiCM"
+      className="sc-jWBwVP gWEyBo"
     />
     <h1
-      className="sc-hMqMXs hprcVs"
+      className="sc-brqgnP ctNcpT"
     >
       <span
         style={
           Object {
-            "color": "#59626a",
+            "color": "#323b43",
             "fontFamily": "\\"Roboto\\", sans-serif",
             "fontSize": "1rem",
-            "fontWeight": 400,
+            "fontWeight": 500,
           }
         }
       >
@@ -2033,7 +2033,7 @@ exports[`Snapshots EmptyState render with a custom header and description 1`] = 
       </span>
     </h1>
     <h2
-      className="sc-kEYyzF iBZInj"
+      className="sc-cMljjf cydZXb"
     >
       <span
         style={
@@ -2055,21 +2055,21 @@ exports[`Snapshots EmptyState render with a custom header and description 1`] = 
 exports[`Snapshots EmptyState render with a custom header but no description 1`] = `
 <span>
   <div
-    className="sc-jKJlTe QAcUG"
+    className="sc-cvbbAY bNmtwk"
   >
     <div
-      className="sc-eNQAEJ kVJiCM"
+      className="sc-jWBwVP gWEyBo"
     />
     <h1
-      className="sc-hMqMXs hprcVs"
+      className="sc-brqgnP ctNcpT"
     >
       <span
         style={
           Object {
-            "color": "#59626a",
+            "color": "#323b43",
             "fontFamily": "\\"Roboto\\", sans-serif",
             "fontSize": "1rem",
-            "fontWeight": 400,
+            "fontWeight": 500,
           }
         }
       >
@@ -2083,21 +2083,21 @@ exports[`Snapshots EmptyState render with a custom header but no description 1`]
 exports[`Snapshots EmptyState render with default text 1`] = `
 <span>
   <div
-    className="sc-jKJlTe QAcUG"
+    className="sc-cvbbAY bNmtwk"
   >
     <div
-      className="sc-eNQAEJ kVJiCM"
+      className="sc-jWBwVP gWEyBo"
     />
     <h1
-      className="sc-hMqMXs hprcVs"
+      className="sc-brqgnP ctNcpT"
     >
       <span
         style={
           Object {
-            "color": "#59626a",
+            "color": "#323b43",
             "fontFamily": "\\"Roboto\\", sans-serif",
             "fontSize": "1rem",
-            "fontWeight": 400,
+            "fontWeight": 500,
           }
         }
       >
@@ -2172,21 +2172,14 @@ exports[`Snapshots GridItem should not render arrow icon when diff is also visib
     }
   >
     <li
-      className="sc-kkGfuU hrAVtU"
+      className="sc-gipzik eRazVv"
       width="25%"
     >
       <div
-        className="sc-iAyFgw dYMYvE"
+        className="sc-csuQGl dBZpSr"
       >
         <span
-          style={
-            Object {
-              "display": "block",
-              "fontSize": "0.75rem",
-              "fontWeight": 600,
-              "marginTop": "15px",
-            }
-          }
+          className="sc-jlyJG iqKSFW"
         >
           <span
             data-tip={null}
@@ -2196,7 +2189,7 @@ exports[`Snapshots GridItem should not render arrow icon when diff is also visib
                 Object {
                   "color": "#59626a",
                   "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "0.75rem",
+                  "fontSize": "0.875rem",
                   "fontWeight": 400,
                 }
               }
@@ -2206,14 +2199,14 @@ exports[`Snapshots GridItem should not render arrow icon when diff is also visib
           </span>
         </span>
         <div
-          className="sc-hSdWYo jDBlKW"
+          className="sc-Rmtcm gtbxUW"
         >
           <span
             style={
               Object {
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "2rem",
+                "fontSize": "1.5rem",
                 "fontWeight": 700,
               }
             }
@@ -2222,66 +2215,52 @@ exports[`Snapshots GridItem should not render arrow icon when diff is also visib
               10
             </span>
           </span>
-          <div>
-            <span
-              style={
-                Object {
-                  "display": "inline-block",
-                  "height": "1rem",
-                  "marginLeft": "10px",
-                }
-              }
+          <div
+            className="sc-jDwBTQ fhLOEE"
+          >
+            <div
+              className="sc-gPEVay dysdYH"
             >
-              <svg
-                height="100%"
+              <div
+                className="sc-jAaTju gnojUY"
+              >
+                <svg
+                  fill="none"
+                  height="11"
+                  viewBox="0 0 11 11"
+                  width="11"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="white"
+                    height="11"
+                    width="11"
+                  />
+                  <path
+                    d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                    fill="#2FD566"
+                    transform="translate(1 2)"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              className="sc-iRbamj cKeiXE"
+            >
+              <span
                 style={
                   Object {
-                    "fill": "#2fd566",
-                    "height": "1rem",
-                    "width": "1rem",
+                    "color": "#2fd566",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "1rem",
+                    "fontWeight": 700,
                   }
                 }
-                version="1.1"
-                viewBox="0 0 16 16"
-                width="100%"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
               >
-                <g
-                  className="shamrock"
-                >
-                  <path
-                    d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                  />
-                </g>
-              </svg>
-            </span>
-            <div
-              style={
-                Object {
-                  "color": "#2FD566",
-                  "display": "inline-block",
-                  "fontSize": "18px",
-                  "fontWeight": 600,
-                  "marginLeft": "5px",
-                }
-              }
-            >
-              <span>
-                <span
-                  style={
-                    Object {
-                      "color": "shamrock",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "1.25rem",
-                    }
-                  }
-                >
-                  <span>
-                    60
-                  </span>
-                  %
+                <span>
+                  60
                 </span>
+                %
               </span>
             </div>
           </div>
@@ -2308,21 +2287,14 @@ exports[`Snapshots GridItem should not render the chart if we have only one day 
     }
   >
     <li
-      className="sc-kkGfuU FAhLR"
+      className="sc-gipzik gMvJWI"
       width="25%"
     >
       <div
-        className="sc-iAyFgw dYMYvE"
+        className="sc-csuQGl dBZpSr"
       >
         <span
-          style={
-            Object {
-              "display": "block",
-              "fontSize": "0.75rem",
-              "fontWeight": 600,
-              "marginTop": "15px",
-            }
-          }
+          className="sc-jlyJG iqKSFW"
         >
           <span
             data-tip={null}
@@ -2332,7 +2304,7 @@ exports[`Snapshots GridItem should not render the chart if we have only one day 
                 Object {
                   "color": "#59626a",
                   "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "0.75rem",
+                  "fontSize": "0.875rem",
                   "fontWeight": 400,
                 }
               }
@@ -2342,14 +2314,14 @@ exports[`Snapshots GridItem should not render the chart if we have only one day 
           </span>
         </span>
         <div
-          className="sc-hSdWYo jDBlKW"
+          className="sc-Rmtcm gtbxUW"
         >
           <span
             style={
               Object {
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "2rem",
+                "fontSize": "1.5rem",
                 "fontWeight": 700,
               }
             }
@@ -2358,66 +2330,52 @@ exports[`Snapshots GridItem should not render the chart if we have only one day 
               42
             </span>
           </span>
-          <div>
-            <span
-              style={
-                Object {
-                  "display": "inline-block",
-                  "height": "1rem",
-                  "marginLeft": "10px",
-                }
-              }
+          <div
+            className="sc-jDwBTQ fhLOEE"
+          >
+            <div
+              className="sc-gPEVay dysdYH"
             >
-              <svg
-                height="100%"
+              <div
+                className="sc-jAaTju gnojUY"
+              >
+                <svg
+                  fill="none"
+                  height="11"
+                  viewBox="0 0 11 11"
+                  width="11"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="white"
+                    height="11"
+                    width="11"
+                  />
+                  <path
+                    d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                    fill="#2FD566"
+                    transform="translate(1 2)"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              className="sc-iRbamj cKeiXE"
+            >
+              <span
                 style={
                   Object {
-                    "fill": "#2fd566",
-                    "height": "1rem",
-                    "width": "1rem",
+                    "color": "#2fd566",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "1rem",
+                    "fontWeight": 700,
                   }
                 }
-                version="1.1"
-                viewBox="0 0 16 16"
-                width="100%"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
               >
-                <g
-                  className="shamrock"
-                >
-                  <path
-                    d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                  />
-                </g>
-              </svg>
-            </span>
-            <div
-              style={
-                Object {
-                  "color": "#2FD566",
-                  "display": "inline-block",
-                  "fontSize": "18px",
-                  "fontWeight": 600,
-                  "marginLeft": "5px",
-                }
-              }
-            >
-              <span>
-                <span
-                  style={
-                    Object {
-                      "color": "shamrock",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "1.25rem",
-                    }
-                  }
-                >
-                  <span>
-                    60
-                  </span>
-                  %
+                <span>
+                  60
                 </span>
+                %
               </span>
             </div>
           </div>
@@ -2444,21 +2402,14 @@ exports[`Snapshots GridItem should not render the diff when the metric has a neu
     }
   >
     <li
-      className="sc-kkGfuU hrAVtU"
+      className="sc-gipzik eRazVv"
       width="25%"
     >
       <div
-        className="sc-iAyFgw dYMYvE"
+        className="sc-csuQGl dBZpSr"
       >
         <span
-          style={
-            Object {
-              "display": "block",
-              "fontSize": "0.75rem",
-              "fontWeight": 600,
-              "marginTop": "15px",
-            }
-          }
+          className="sc-jlyJG iqKSFW"
         >
           <span
             data-tip={null}
@@ -2468,7 +2419,7 @@ exports[`Snapshots GridItem should not render the diff when the metric has a neu
                 Object {
                   "color": "#59626a",
                   "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "0.75rem",
+                  "fontSize": "0.875rem",
                   "fontWeight": 400,
                 }
               }
@@ -2478,14 +2429,14 @@ exports[`Snapshots GridItem should not render the diff when the metric has a neu
           </span>
         </span>
         <div
-          className="sc-hSdWYo jDBlKW"
+          className="sc-Rmtcm gtbxUW"
         >
           <span
             style={
               Object {
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "2rem",
+                "fontSize": "1.5rem",
                 "fontWeight": 700,
               }
             }
@@ -2517,21 +2468,14 @@ exports[`Snapshots GridItem should render 2 digits in the grid item 1`] = `
     }
   >
     <li
-      className="sc-kkGfuU hrAVtU"
+      className="sc-gipzik eRazVv"
       width="25%"
     >
       <div
-        className="sc-iAyFgw dYMYvE"
+        className="sc-csuQGl dBZpSr"
       >
         <span
-          style={
-            Object {
-              "display": "block",
-              "fontSize": "0.75rem",
-              "fontWeight": 600,
-              "marginTop": "15px",
-            }
-          }
+          className="sc-jlyJG iqKSFW"
         >
           <span
             data-tip={null}
@@ -2541,7 +2485,7 @@ exports[`Snapshots GridItem should render 2 digits in the grid item 1`] = `
                 Object {
                   "color": "#59626a",
                   "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "0.75rem",
+                  "fontSize": "0.875rem",
                   "fontWeight": 400,
                 }
               }
@@ -2551,14 +2495,14 @@ exports[`Snapshots GridItem should render 2 digits in the grid item 1`] = `
           </span>
         </span>
         <div
-          className="sc-hSdWYo jDBlKW"
+          className="sc-Rmtcm gtbxUW"
         >
           <span
             style={
               Object {
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "2rem",
+                "fontSize": "1.5rem",
                 "fontWeight": 700,
               }
             }
@@ -2568,66 +2512,52 @@ exports[`Snapshots GridItem should render 2 digits in the grid item 1`] = `
               %
             </span>
           </span>
-          <div>
-            <span
-              style={
-                Object {
-                  "display": "inline-block",
-                  "height": "1rem",
-                  "marginLeft": "10px",
-                }
-              }
+          <div
+            className="sc-jDwBTQ fhLOEE"
+          >
+            <div
+              className="sc-gPEVay dysdYH"
             >
-              <svg
-                height="100%"
+              <div
+                className="sc-jAaTju gnojUY"
+              >
+                <svg
+                  fill="none"
+                  height="11"
+                  viewBox="0 0 11 11"
+                  width="11"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="white"
+                    height="11"
+                    width="11"
+                  />
+                  <path
+                    d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                    fill="#2FD566"
+                    transform="translate(1 2)"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              className="sc-iRbamj cKeiXE"
+            >
+              <span
                 style={
                   Object {
-                    "fill": "#2fd566",
-                    "height": "1rem",
-                    "width": "1rem",
+                    "color": "#2fd566",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "1rem",
+                    "fontWeight": 700,
                   }
                 }
-                version="1.1"
-                viewBox="0 0 16 16"
-                width="100%"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
               >
-                <g
-                  className="shamrock"
-                >
-                  <path
-                    d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                  />
-                </g>
-              </svg>
-            </span>
-            <div
-              style={
-                Object {
-                  "color": "#2FD566",
-                  "display": "inline-block",
-                  "fontSize": "18px",
-                  "fontWeight": 600,
-                  "marginLeft": "5px",
-                }
-              }
-            >
-              <span>
-                <span
-                  style={
-                    Object {
-                      "color": "shamrock",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "1.25rem",
-                    }
-                  }
-                >
-                  <span>
-                    10
-                  </span>
-                  %
+                <span>
+                  10
                 </span>
+                %
               </span>
             </div>
           </div>
@@ -2654,21 +2584,14 @@ exports[`Snapshots GridItem should render 2 digits in the grid item when the per
     }
   >
     <li
-      className="sc-kkGfuU hrAVtU"
+      className="sc-gipzik eRazVv"
       width="25%"
     >
       <div
-        className="sc-iAyFgw dYMYvE"
+        className="sc-csuQGl dBZpSr"
       >
         <span
-          style={
-            Object {
-              "display": "block",
-              "fontSize": "0.75rem",
-              "fontWeight": 600,
-              "marginTop": "15px",
-            }
-          }
+          className="sc-jlyJG iqKSFW"
         >
           <span
             data-tip={null}
@@ -2678,7 +2601,7 @@ exports[`Snapshots GridItem should render 2 digits in the grid item when the per
                 Object {
                   "color": "#59626a",
                   "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "0.75rem",
+                  "fontSize": "0.875rem",
                   "fontWeight": 400,
                 }
               }
@@ -2688,14 +2611,14 @@ exports[`Snapshots GridItem should render 2 digits in the grid item when the per
           </span>
         </span>
         <div
-          className="sc-hSdWYo jDBlKW"
+          className="sc-Rmtcm gtbxUW"
         >
           <span
             style={
               Object {
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "2rem",
+                "fontSize": "1.5rem",
                 "fontWeight": 700,
               }
             }
@@ -2705,66 +2628,52 @@ exports[`Snapshots GridItem should render 2 digits in the grid item when the per
               %
             </span>
           </span>
-          <div>
-            <span
-              style={
-                Object {
-                  "display": "inline-block",
-                  "height": "1rem",
-                  "marginLeft": "10px",
-                }
-              }
+          <div
+            className="sc-jDwBTQ fhLOEE"
+          >
+            <div
+              className="sc-gPEVay dysdYH"
             >
-              <svg
-                height="100%"
+              <div
+                className="sc-jAaTju gnojUY"
+              >
+                <svg
+                  fill="none"
+                  height="11"
+                  viewBox="0 0 11 11"
+                  width="11"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="white"
+                    height="11"
+                    width="11"
+                  />
+                  <path
+                    d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                    fill="#2FD566"
+                    transform="translate(1 2)"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              className="sc-iRbamj cKeiXE"
+            >
+              <span
                 style={
                   Object {
-                    "fill": "#2fd566",
-                    "height": "1rem",
-                    "width": "1rem",
+                    "color": "#2fd566",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "1rem",
+                    "fontWeight": 700,
                   }
                 }
-                version="1.1"
-                viewBox="0 0 16 16"
-                width="100%"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
               >
-                <g
-                  className="shamrock"
-                >
-                  <path
-                    d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                  />
-                </g>
-              </svg>
-            </span>
-            <div
-              style={
-                Object {
-                  "color": "#2FD566",
-                  "display": "inline-block",
-                  "fontSize": "18px",
-                  "fontWeight": 600,
-                  "marginLeft": "5px",
-                }
-              }
-            >
-              <span>
-                <span
-                  style={
-                    Object {
-                      "color": "shamrock",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "1.25rem",
-                    }
-                  }
-                >
-                  <span>
-                    10
-                  </span>
-                  %
+                <span>
+                  10
                 </span>
+                %
               </span>
             </div>
           </div>
@@ -2791,24 +2700,17 @@ exports[`Snapshots GridItem should render a grid item with a 7 day chart if 7 da
     }
   >
     <li
-      className="sc-kkGfuU FAhLR"
+      className="sc-gipzik gMvJWI"
       width="25%"
     >
       <div
-        className="sc-iAyFgw dYMYvE"
+        className="sc-csuQGl dBZpSr"
       >
         <div
-          className="sc-eHgmQL hzAJXG"
+          className="sc-bRBYWo gnqDGT"
         />
         <span
-          style={
-            Object {
-              "display": "block",
-              "fontSize": "0.75rem",
-              "fontWeight": 600,
-              "marginTop": "15px",
-            }
-          }
+          className="sc-jlyJG iqKSFW"
         >
           <span
             data-tip={null}
@@ -2818,7 +2720,7 @@ exports[`Snapshots GridItem should render a grid item with a 7 day chart if 7 da
                 Object {
                   "color": "#59626a",
                   "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "0.75rem",
+                  "fontSize": "0.875rem",
                   "fontWeight": 400,
                 }
               }
@@ -2828,14 +2730,14 @@ exports[`Snapshots GridItem should render a grid item with a 7 day chart if 7 da
           </span>
         </span>
         <div
-          className="sc-hSdWYo jDBlKW"
+          className="sc-Rmtcm gtbxUW"
         >
           <span
             style={
               Object {
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "2rem",
+                "fontSize": "1.5rem",
                 "fontWeight": 700,
               }
             }
@@ -2844,66 +2746,52 @@ exports[`Snapshots GridItem should render a grid item with a 7 day chart if 7 da
               42
             </span>
           </span>
-          <div>
-            <span
-              style={
-                Object {
-                  "display": "inline-block",
-                  "height": "1rem",
-                  "marginLeft": "10px",
-                }
-              }
+          <div
+            className="sc-jDwBTQ fhLOEE"
+          >
+            <div
+              className="sc-gPEVay dysdYH"
             >
-              <svg
-                height="100%"
+              <div
+                className="sc-jAaTju gnojUY"
+              >
+                <svg
+                  fill="none"
+                  height="11"
+                  viewBox="0 0 11 11"
+                  width="11"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="white"
+                    height="11"
+                    width="11"
+                  />
+                  <path
+                    d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                    fill="#2FD566"
+                    transform="translate(1 2)"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              className="sc-iRbamj cKeiXE"
+            >
+              <span
                 style={
                   Object {
-                    "fill": "#2fd566",
-                    "height": "1rem",
-                    "width": "1rem",
+                    "color": "#2fd566",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "1rem",
+                    "fontWeight": 700,
                   }
                 }
-                version="1.1"
-                viewBox="0 0 16 16"
-                width="100%"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
               >
-                <g
-                  className="shamrock"
-                >
-                  <path
-                    d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                  />
-                </g>
-              </svg>
-            </span>
-            <div
-              style={
-                Object {
-                  "color": "#2FD566",
-                  "display": "inline-block",
-                  "fontSize": "18px",
-                  "fontWeight": 600,
-                  "marginLeft": "5px",
-                }
-              }
-            >
-              <span>
-                <span
-                  style={
-                    Object {
-                      "color": "shamrock",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "1.25rem",
-                    }
-                  }
-                >
-                  <span>
-                    60
-                  </span>
-                  %
+                <span>
+                  60
                 </span>
+                %
               </span>
             </div>
           </div>
@@ -2930,24 +2818,17 @@ exports[`Snapshots GridItem should render a grid item with a 30 day chart if 30 
     }
   >
     <li
-      className="sc-kkGfuU FAhLR"
+      className="sc-gipzik gMvJWI"
       width="25%"
     >
       <div
-        className="sc-iAyFgw dYMYvE"
+        className="sc-csuQGl dBZpSr"
       >
         <div
-          className="sc-eHgmQL hzAJXG"
+          className="sc-bRBYWo gnqDGT"
         />
         <span
-          style={
-            Object {
-              "display": "block",
-              "fontSize": "0.75rem",
-              "fontWeight": 600,
-              "marginTop": "15px",
-            }
-          }
+          className="sc-jlyJG iqKSFW"
         >
           <span
             data-tip={null}
@@ -2957,7 +2838,7 @@ exports[`Snapshots GridItem should render a grid item with a 30 day chart if 30 
                 Object {
                   "color": "#59626a",
                   "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "0.75rem",
+                  "fontSize": "0.875rem",
                   "fontWeight": 400,
                 }
               }
@@ -2967,14 +2848,14 @@ exports[`Snapshots GridItem should render a grid item with a 30 day chart if 30 
           </span>
         </span>
         <div
-          className="sc-hSdWYo jDBlKW"
+          className="sc-Rmtcm gtbxUW"
         >
           <span
             style={
               Object {
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "2rem",
+                "fontSize": "1.5rem",
                 "fontWeight": 700,
               }
             }
@@ -2983,67 +2864,52 @@ exports[`Snapshots GridItem should render a grid item with a 30 day chart if 30 
               502
             </span>
           </span>
-          <div>
-            <span
-              style={
-                Object {
-                  "display": "inline-block",
-                  "height": "1rem",
-                  "marginLeft": "10px",
-                }
-              }
+          <div
+            className="sc-jDwBTQ fhLOEE"
+          >
+            <div
+              className="sc-gPEVay dysdYH"
             >
-              <svg
-                height="100%"
+              <div
+                className="sc-jAaTju gnojUY"
+              >
+                <svg
+                  fill="none"
+                  height="11"
+                  viewBox="0 0 11 11"
+                  width="11"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="white"
+                    height="11"
+                    width="11"
+                  />
+                  <path
+                    d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                    fill="#FF4040"
+                    transform="translate(10 9) rotate(-180)"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              className="sc-iRbamj cKeiXE"
+            >
+              <span
                 style={
                   Object {
-                    "fill": "#ff1e1e",
-                    "height": "1rem",
-                    "width": "1rem",
+                    "color": "#ff1e1e",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "1rem",
+                    "fontWeight": 700,
                   }
                 }
-                version="1.1"
-                viewBox="0 0 16 16"
-                width="100%"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
               >
-                <g
-                  className="torchRed"
-                >
-                  <path
-                    d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                    transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                  />
-                </g>
-              </svg>
-            </span>
-            <div
-              style={
-                Object {
-                  "color": "#FF1E1E",
-                  "display": "inline-block",
-                  "fontSize": "18px",
-                  "fontWeight": 600,
-                  "marginLeft": "5px",
-                }
-              }
-            >
-              <span>
-                <span
-                  style={
-                    Object {
-                      "color": "torchRed",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "1.25rem",
-                    }
-                  }
-                >
-                  <span>
-                    40
-                  </span>
-                  %
+                <span>
+                  40
                 </span>
+                %
               </span>
             </div>
           </div>
@@ -3070,24 +2936,17 @@ exports[`Snapshots GridItem should render a grid item with a 90 day chart if 90 
     }
   >
     <li
-      className="sc-kkGfuU FAhLR"
+      className="sc-gipzik gMvJWI"
       width="25%"
     >
       <div
-        className="sc-iAyFgw dYMYvE"
+        className="sc-csuQGl dBZpSr"
       >
         <div
-          className="sc-eHgmQL hzAJXG"
+          className="sc-bRBYWo gnqDGT"
         />
         <span
-          style={
-            Object {
-              "display": "block",
-              "fontSize": "0.75rem",
-              "fontWeight": 600,
-              "marginTop": "15px",
-            }
-          }
+          className="sc-jlyJG iqKSFW"
         >
           <span
             data-tip={null}
@@ -3097,7 +2956,7 @@ exports[`Snapshots GridItem should render a grid item with a 90 day chart if 90 
                 Object {
                   "color": "#59626a",
                   "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "0.75rem",
+                  "fontSize": "0.875rem",
                   "fontWeight": 400,
                 }
               }
@@ -3107,14 +2966,14 @@ exports[`Snapshots GridItem should render a grid item with a 90 day chart if 90 
           </span>
         </span>
         <div
-          className="sc-hSdWYo jDBlKW"
+          className="sc-Rmtcm gtbxUW"
         >
           <span
             style={
               Object {
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "2rem",
+                "fontSize": "1.5rem",
                 "fontWeight": 700,
               }
             }
@@ -3123,66 +2982,52 @@ exports[`Snapshots GridItem should render a grid item with a 90 day chart if 90 
               948
             </span>
           </span>
-          <div>
-            <span
-              style={
-                Object {
-                  "display": "inline-block",
-                  "height": "1rem",
-                  "marginLeft": "10px",
-                }
-              }
+          <div
+            className="sc-jDwBTQ fhLOEE"
+          >
+            <div
+              className="sc-gPEVay dysdYH"
             >
-              <svg
-                height="100%"
+              <div
+                className="sc-jAaTju gnojUY"
+              >
+                <svg
+                  fill="none"
+                  height="11"
+                  viewBox="0 0 11 11"
+                  width="11"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="white"
+                    height="11"
+                    width="11"
+                  />
+                  <path
+                    d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                    fill="#2FD566"
+                    transform="translate(1 2)"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              className="sc-iRbamj cKeiXE"
+            >
+              <span
                 style={
                   Object {
-                    "fill": "#2fd566",
-                    "height": "1rem",
-                    "width": "1rem",
+                    "color": "#2fd566",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "1rem",
+                    "fontWeight": 700,
                   }
                 }
-                version="1.1"
-                viewBox="0 0 16 16"
-                width="100%"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
               >
-                <g
-                  className="shamrock"
-                >
-                  <path
-                    d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                  />
-                </g>
-              </svg>
-            </span>
-            <div
-              style={
-                Object {
-                  "color": "#2FD566",
-                  "display": "inline-block",
-                  "fontSize": "18px",
-                  "fontWeight": 600,
-                  "marginLeft": "5px",
-                }
-              }
-            >
-              <span>
-                <span
-                  style={
-                    Object {
-                      "color": "shamrock",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "1.25rem",
-                    }
-                  }
-                >
-                  <span>
-                    12
-                  </span>
-                  %
+                <span>
+                  12
                 </span>
+                %
               </span>
             </div>
           </div>
@@ -3209,21 +3054,14 @@ exports[`Snapshots GridItem should render a grid item with a custom Label 1`] = 
     }
   >
     <li
-      className="sc-kkGfuU hrAVtU"
+      className="sc-gipzik eRazVv"
       width="25%"
     >
       <div
-        className="sc-iAyFgw dYMYvE"
+        className="sc-csuQGl dBZpSr"
       >
         <span
-          style={
-            Object {
-              "display": "block",
-              "fontSize": "0.75rem",
-              "fontWeight": 600,
-              "marginTop": "15px",
-            }
-          }
+          className="sc-jlyJG iqKSFW"
         >
           <span
             data-tip={null}
@@ -3233,7 +3071,7 @@ exports[`Snapshots GridItem should render a grid item with a custom Label 1`] = 
                 Object {
                   "color": "#59626a",
                   "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "0.75rem",
+                  "fontSize": "0.875rem",
                   "fontWeight": 400,
                 }
               }
@@ -3245,14 +3083,14 @@ exports[`Snapshots GridItem should render a grid item with a custom Label 1`] = 
           </span>
         </span>
         <div
-          className="sc-hSdWYo jDBlKW"
+          className="sc-Rmtcm gtbxUW"
         >
           <span
             style={
               Object {
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "2rem",
+                "fontSize": "1.5rem",
                 "fontWeight": 700,
               }
             }
@@ -3261,67 +3099,52 @@ exports[`Snapshots GridItem should render a grid item with a custom Label 1`] = 
               10
             </span>
           </span>
-          <div>
-            <span
-              style={
-                Object {
-                  "display": "inline-block",
-                  "height": "1rem",
-                  "marginLeft": "10px",
-                }
-              }
+          <div
+            className="sc-jDwBTQ fhLOEE"
+          >
+            <div
+              className="sc-gPEVay dysdYH"
             >
-              <svg
-                height="100%"
+              <div
+                className="sc-jAaTju gnojUY"
+              >
+                <svg
+                  fill="none"
+                  height="11"
+                  viewBox="0 0 11 11"
+                  width="11"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="white"
+                    height="11"
+                    width="11"
+                  />
+                  <path
+                    d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                    fill="#FF4040"
+                    transform="translate(10 9) rotate(-180)"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              className="sc-iRbamj cKeiXE"
+            >
+              <span
                 style={
                   Object {
-                    "fill": "#ff1e1e",
-                    "height": "1rem",
-                    "width": "1rem",
+                    "color": "#ff1e1e",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "1rem",
+                    "fontWeight": 700,
                   }
                 }
-                version="1.1"
-                viewBox="0 0 16 16"
-                width="100%"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
               >
-                <g
-                  className="torchRed"
-                >
-                  <path
-                    d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                    transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                  />
-                </g>
-              </svg>
-            </span>
-            <div
-              style={
-                Object {
-                  "color": "#FF1E1E",
-                  "display": "inline-block",
-                  "fontSize": "18px",
-                  "fontWeight": 600,
-                  "marginLeft": "5px",
-                }
-              }
-            >
-              <span>
-                <span
-                  style={
-                    Object {
-                      "color": "torchRed",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "1.25rem",
-                    }
-                  }
-                >
-                  <span>
-                    60
-                  </span>
-                  %
+                <span>
+                  60
                 </span>
+                %
               </span>
             </div>
           </div>
@@ -3368,21 +3191,14 @@ exports[`Snapshots GridItem should render a summary grid item with negative diff
     }
   >
     <li
-      className="sc-kkGfuU hrAVtU"
+      className="sc-gipzik eRazVv"
       width="25%"
     >
       <div
-        className="sc-iAyFgw dYMYvE"
+        className="sc-csuQGl dBZpSr"
       >
         <span
-          style={
-            Object {
-              "display": "block",
-              "fontSize": "0.75rem",
-              "fontWeight": 600,
-              "marginTop": "15px",
-            }
-          }
+          className="sc-jlyJG iqKSFW"
         >
           <span
             data-tip={null}
@@ -3392,7 +3208,7 @@ exports[`Snapshots GridItem should render a summary grid item with negative diff
                 Object {
                   "color": "#59626a",
                   "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "0.75rem",
+                  "fontSize": "0.875rem",
                   "fontWeight": 400,
                 }
               }
@@ -3402,14 +3218,14 @@ exports[`Snapshots GridItem should render a summary grid item with negative diff
           </span>
         </span>
         <div
-          className="sc-hSdWYo jDBlKW"
+          className="sc-Rmtcm gtbxUW"
         >
           <span
             style={
               Object {
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "2rem",
+                "fontSize": "1.5rem",
                 "fontWeight": 700,
               }
             }
@@ -3418,67 +3234,52 @@ exports[`Snapshots GridItem should render a summary grid item with negative diff
               10
             </span>
           </span>
-          <div>
-            <span
-              style={
-                Object {
-                  "display": "inline-block",
-                  "height": "1rem",
-                  "marginLeft": "10px",
-                }
-              }
+          <div
+            className="sc-jDwBTQ fhLOEE"
+          >
+            <div
+              className="sc-gPEVay dysdYH"
             >
-              <svg
-                height="100%"
+              <div
+                className="sc-jAaTju gnojUY"
+              >
+                <svg
+                  fill="none"
+                  height="11"
+                  viewBox="0 0 11 11"
+                  width="11"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="white"
+                    height="11"
+                    width="11"
+                  />
+                  <path
+                    d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                    fill="#FF4040"
+                    transform="translate(10 9) rotate(-180)"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              className="sc-iRbamj cKeiXE"
+            >
+              <span
                 style={
                   Object {
-                    "fill": "#ff1e1e",
-                    "height": "1rem",
-                    "width": "1rem",
+                    "color": "#ff1e1e",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "1rem",
+                    "fontWeight": 700,
                   }
                 }
-                version="1.1"
-                viewBox="0 0 16 16"
-                width="100%"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
               >
-                <g
-                  className="torchRed"
-                >
-                  <path
-                    d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                    transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
-                  />
-                </g>
-              </svg>
-            </span>
-            <div
-              style={
-                Object {
-                  "color": "#FF1E1E",
-                  "display": "inline-block",
-                  "fontSize": "18px",
-                  "fontWeight": 600,
-                  "marginLeft": "5px",
-                }
-              }
-            >
-              <span>
-                <span
-                  style={
-                    Object {
-                      "color": "torchRed",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "1.25rem",
-                    }
-                  }
-                >
-                  <span>
-                    60
-                  </span>
-                  %
+                <span>
+                  60
                 </span>
+                %
               </span>
             </div>
           </div>
@@ -3505,21 +3306,14 @@ exports[`Snapshots GridItem should render a summary grid item with no diff 1`] =
     }
   >
     <li
-      className="sc-kkGfuU hrAVtU"
+      className="sc-gipzik eRazVv"
       width="25%"
     >
       <div
-        className="sc-iAyFgw dYMYvE"
+        className="sc-csuQGl dBZpSr"
       >
         <span
-          style={
-            Object {
-              "display": "block",
-              "fontSize": "0.75rem",
-              "fontWeight": 600,
-              "marginTop": "15px",
-            }
-          }
+          className="sc-jlyJG iqKSFW"
         >
           <span
             data-tip={null}
@@ -3529,7 +3323,7 @@ exports[`Snapshots GridItem should render a summary grid item with no diff 1`] =
                 Object {
                   "color": "#59626a",
                   "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "0.75rem",
+                  "fontSize": "0.875rem",
                   "fontWeight": 400,
                 }
               }
@@ -3539,14 +3333,14 @@ exports[`Snapshots GridItem should render a summary grid item with no diff 1`] =
           </span>
         </span>
         <div
-          className="sc-hSdWYo jDBlKW"
+          className="sc-Rmtcm gtbxUW"
         >
           <span
             style={
               Object {
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "2rem",
+                "fontSize": "1.5rem",
                 "fontWeight": 700,
               }
             }
@@ -3578,21 +3372,14 @@ exports[`Snapshots GridItem should render a summary grid item with only arrow ic
     }
   >
     <li
-      className="sc-kkGfuU hrAVtU"
+      className="sc-gipzik eRazVv"
       width="25%"
     >
       <div
-        className="sc-iAyFgw dYMYvE"
+        className="sc-csuQGl dBZpSr"
       >
         <span
-          style={
-            Object {
-              "display": "block",
-              "fontSize": "0.75rem",
-              "fontWeight": 600,
-              "marginTop": "15px",
-            }
-          }
+          className="sc-jlyJG iqKSFW"
         >
           <span
             data-tip={null}
@@ -3602,7 +3389,7 @@ exports[`Snapshots GridItem should render a summary grid item with only arrow ic
                 Object {
                   "color": "#59626a",
                   "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "0.75rem",
+                  "fontSize": "0.875rem",
                   "fontWeight": 400,
                 }
               }
@@ -3612,14 +3399,14 @@ exports[`Snapshots GridItem should render a summary grid item with only arrow ic
           </span>
         </span>
         <div
-          className="sc-hSdWYo jDBlKW"
+          className="sc-Rmtcm gtbxUW"
         >
           <span
             style={
               Object {
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "2rem",
+                "fontSize": "1.5rem",
                 "fontWeight": 700,
               }
             }
@@ -3629,32 +3416,30 @@ exports[`Snapshots GridItem should render a summary grid item with only arrow ic
             </span>
           </span>
           <span
-            className="sc-cvbbAY hBROrE"
+            className="sc-hzDkRC bOlraf"
           >
-            <svg
-              height="100%"
-              style={
-                Object {
-                  "fill": "#ff1e1e",
-                  "height": "1rem",
-                  "width": "1rem",
-                }
-              }
-              version="1.1"
-              viewBox="0 0 16 16"
-              width="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
+            <div
+              className="sc-jAaTju gnojUY"
             >
-              <g
-                className="torchRed"
+              <svg
+                fill="none"
+                height="11"
+                viewBox="0 0 11 11"
+                width="11"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <path
-                  d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                  transform="translate(8.118778, 7.993958) scale(1, -1) translate(-8.118778, -7.993958) "
+                <rect
+                  fill="white"
+                  height="11"
+                  width="11"
                 />
-              </g>
-            </svg>
+                <path
+                  d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                  fill="#FF4040"
+                  transform="translate(10 9) rotate(-180)"
+                />
+              </svg>
+            </div>
           </span>
         </div>
       </div>
@@ -3679,21 +3464,14 @@ exports[`Snapshots GridItem should render a summary grid item with percent sign 
     }
   >
     <li
-      className="sc-kkGfuU hrAVtU"
+      className="sc-gipzik eRazVv"
       width="25%"
     >
       <div
-        className="sc-iAyFgw dYMYvE"
+        className="sc-csuQGl dBZpSr"
       >
         <span
-          style={
-            Object {
-              "display": "block",
-              "fontSize": "0.75rem",
-              "fontWeight": 600,
-              "marginTop": "15px",
-            }
-          }
+          className="sc-jlyJG iqKSFW"
         >
           <span
             data-tip={null}
@@ -3703,7 +3481,7 @@ exports[`Snapshots GridItem should render a summary grid item with percent sign 
                 Object {
                   "color": "#59626a",
                   "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "0.75rem",
+                  "fontSize": "0.875rem",
                   "fontWeight": 400,
                 }
               }
@@ -3713,14 +3491,14 @@ exports[`Snapshots GridItem should render a summary grid item with percent sign 
           </span>
         </span>
         <div
-          className="sc-hSdWYo jDBlKW"
+          className="sc-Rmtcm gtbxUW"
         >
           <span
             style={
               Object {
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "2rem",
+                "fontSize": "1.5rem",
                 "fontWeight": 700,
               }
             }
@@ -3730,66 +3508,52 @@ exports[`Snapshots GridItem should render a summary grid item with percent sign 
               %
             </span>
           </span>
-          <div>
-            <span
-              style={
-                Object {
-                  "display": "inline-block",
-                  "height": "1rem",
-                  "marginLeft": "10px",
-                }
-              }
+          <div
+            className="sc-jDwBTQ fhLOEE"
+          >
+            <div
+              className="sc-gPEVay dysdYH"
             >
-              <svg
-                height="100%"
+              <div
+                className="sc-jAaTju gnojUY"
+              >
+                <svg
+                  fill="none"
+                  height="11"
+                  viewBox="0 0 11 11"
+                  width="11"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="white"
+                    height="11"
+                    width="11"
+                  />
+                  <path
+                    d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                    fill="#2FD566"
+                    transform="translate(1 2)"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              className="sc-iRbamj cKeiXE"
+            >
+              <span
                 style={
                   Object {
-                    "fill": "#2fd566",
-                    "height": "1rem",
-                    "width": "1rem",
+                    "color": "#2fd566",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "1rem",
+                    "fontWeight": 700,
                   }
                 }
-                version="1.1"
-                viewBox="0 0 16 16"
-                width="100%"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
               >
-                <g
-                  className="shamrock"
-                >
-                  <path
-                    d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                  />
-                </g>
-              </svg>
-            </span>
-            <div
-              style={
-                Object {
-                  "color": "#2FD566",
-                  "display": "inline-block",
-                  "fontSize": "18px",
-                  "fontWeight": 600,
-                  "marginLeft": "5px",
-                }
-              }
-            >
-              <span>
-                <span
-                  style={
-                    Object {
-                      "color": "shamrock",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "1.25rem",
-                    }
-                  }
-                >
-                  <span>
-                    10
-                  </span>
-                  %
+                <span>
+                  10
                 </span>
+                %
               </span>
             </div>
           </div>
@@ -3816,21 +3580,14 @@ exports[`Snapshots GridItem should render a summary grid item with positive diff
     }
   >
     <li
-      className="sc-kkGfuU hrAVtU"
+      className="sc-gipzik eRazVv"
       width="25%"
     >
       <div
-        className="sc-iAyFgw dYMYvE"
+        className="sc-csuQGl dBZpSr"
       >
         <span
-          style={
-            Object {
-              "display": "block",
-              "fontSize": "0.75rem",
-              "fontWeight": 600,
-              "marginTop": "15px",
-            }
-          }
+          className="sc-jlyJG iqKSFW"
         >
           <span
             data-tip={null}
@@ -3840,7 +3597,7 @@ exports[`Snapshots GridItem should render a summary grid item with positive diff
                 Object {
                   "color": "#59626a",
                   "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "0.75rem",
+                  "fontSize": "0.875rem",
                   "fontWeight": 400,
                 }
               }
@@ -3850,14 +3607,14 @@ exports[`Snapshots GridItem should render a summary grid item with positive diff
           </span>
         </span>
         <div
-          className="sc-hSdWYo jDBlKW"
+          className="sc-Rmtcm gtbxUW"
         >
           <span
             style={
               Object {
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "2rem",
+                "fontSize": "1.5rem",
                 "fontWeight": 700,
               }
             }
@@ -3866,66 +3623,52 @@ exports[`Snapshots GridItem should render a summary grid item with positive diff
               150
             </span>
           </span>
-          <div>
-            <span
-              style={
-                Object {
-                  "display": "inline-block",
-                  "height": "1rem",
-                  "marginLeft": "10px",
-                }
-              }
+          <div
+            className="sc-jDwBTQ fhLOEE"
+          >
+            <div
+              className="sc-gPEVay dysdYH"
             >
-              <svg
-                height="100%"
+              <div
+                className="sc-jAaTju gnojUY"
+              >
+                <svg
+                  fill="none"
+                  height="11"
+                  viewBox="0 0 11 11"
+                  width="11"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="white"
+                    height="11"
+                    width="11"
+                  />
+                  <path
+                    d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                    fill="#2FD566"
+                    transform="translate(1 2)"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              className="sc-iRbamj cKeiXE"
+            >
+              <span
                 style={
                   Object {
-                    "fill": "#2fd566",
-                    "height": "1rem",
-                    "width": "1rem",
+                    "color": "#2fd566",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "1rem",
+                    "fontWeight": 700,
                   }
                 }
-                version="1.1"
-                viewBox="0 0 16 16"
-                width="100%"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
               >
-                <g
-                  className="shamrock"
-                >
-                  <path
-                    d="M9.14049638,4.2860102 L12.0353395,6.89310549 C12.4537988,7.26996987 13.0967448,7.23809282 13.4772842,6.81536904 C13.855189,6.39557201 13.8172589,5.74519856 13.4038537,5.37288597 L8.83967284,1.26238536 C8.63426816,1.07739793 8.37477499,0.990893877 8.11877778,1.0007568 C7.86278056,0.990893877 7.60328739,1.07739793 7.3978827,1.26238536 L2.83370181,5.37288597 C2.42029668,5.74519856 2.38236657,6.39557201 2.76027134,6.81536904 C3.14081078,7.23809282 3.78375672,7.26996987 4.20221602,6.89310549 L7.09528397,4.28760894 L7.09528397,13.9628717 C7.09528397,14.5341657 7.55312036,14.9879169 8.11789018,14.9879169 C8.68659746,14.9879169 9.14049638,14.5289885 9.14049638,13.9628717 L9.14049638,4.2860102 Z"
-                  />
-                </g>
-              </svg>
-            </span>
-            <div
-              style={
-                Object {
-                  "color": "#2FD566",
-                  "display": "inline-block",
-                  "fontSize": "18px",
-                  "fontWeight": 600,
-                  "marginLeft": "5px",
-                }
-              }
-            >
-              <span>
-                <span
-                  style={
-                    Object {
-                      "color": "shamrock",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "1.25rem",
-                    }
-                  }
-                >
-                  <span>
-                    50
-                  </span>
-                  %
+                <span>
+                  50
                 </span>
+                %
               </span>
             </div>
           </div>
@@ -4025,10 +3768,26 @@ exports[`Snapshots MetricsDropdown should open the dropdown 1`] = `
         <span
           style={
             Object {
-              "color": "#59626a",
+              "background": "#fda3f3",
+              "borderColor": "#df85d5",
+              "borderRadius": "0px",
+              "borderStyle": "solid",
+              "borderWidth": "1px",
+              "display": "inline-block",
+              "height": "7px",
+              "marginRight": "5px",
+              "verticalAlign": "baseline",
+              "width": "7px",
+            }
+          }
+        />
+        <span
+          style={
+            Object {
+              "color": "#323b43",
               "fontFamily": "\\"Roboto\\", sans-serif",
               "fontSize": "0.75rem",
-              "fontWeight": 700,
+              "fontWeight": 500,
             }
           }
         >
@@ -4047,8 +3806,8 @@ exports[`Snapshots MetricsDropdown should open the dropdown 1`] = `
             style={
               Object {
                 "fill": "#59626a",
-                "height": "1rem",
-                "width": "1rem",
+                "height": "0.75rem",
+                "width": "0.75rem",
               }
             }
             version="1.1"
@@ -4113,7 +3872,7 @@ exports[`Snapshots MetricsDropdown should open the dropdown 1`] = `
                     "display": "flex",
                     "padding": "5px 10px",
                     "position": "relative",
-                    "width": "200px",
+                    "width": "15.5rem",
                   }
                 }
               >
@@ -4139,7 +3898,7 @@ exports[`Snapshots MetricsDropdown should open the dropdown 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -4219,7 +3978,7 @@ exports[`Snapshots MetricsDropdown should open the dropdown 1`] = `
                     "display": "flex",
                     "padding": "5px 10px",
                     "position": "relative",
-                    "width": "200px",
+                    "width": "15.5rem",
                   }
                 }
               >
@@ -4245,7 +4004,7 @@ exports[`Snapshots MetricsDropdown should open the dropdown 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -4293,7 +4052,7 @@ exports[`Snapshots MetricsDropdown should open the dropdown 1`] = `
                     "display": "flex",
                     "padding": "5px 10px",
                     "position": "relative",
-                    "width": "200px",
+                    "width": "15.5rem",
                   }
                 }
               >
@@ -4319,7 +4078,7 @@ exports[`Snapshots MetricsDropdown should open the dropdown 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -4364,10 +4123,26 @@ exports[`Snapshots MetricsDropdown should render a secondary dropdown 1`] = `
         <span
           style={
             Object {
-              "color": "#59626a",
+              "background": "#fda3f3",
+              "borderColor": "#df85d5",
+              "borderRadius": "0px",
+              "borderStyle": "solid",
+              "borderWidth": "1px",
+              "display": "inline-block",
+              "height": "7px",
+              "marginRight": "5px",
+              "verticalAlign": "baseline",
+              "width": "7px",
+            }
+          }
+        />
+        <span
+          style={
+            Object {
+              "color": "#323b43",
               "fontFamily": "\\"Roboto\\", sans-serif",
               "fontSize": "0.75rem",
-              "fontWeight": 700,
+              "fontWeight": 500,
             }
           }
         >
@@ -4386,8 +4161,8 @@ exports[`Snapshots MetricsDropdown should render a secondary dropdown 1`] = `
             style={
               Object {
                 "fill": "#59626a",
-                "height": "1rem",
-                "width": "1rem",
+                "height": "0.75rem",
+                "width": "0.75rem",
               }
             }
             version="1.1"
@@ -4452,7 +4227,7 @@ exports[`Snapshots MetricsDropdown should render a secondary dropdown 1`] = `
                     "display": "flex",
                     "padding": "5px 10px",
                     "position": "relative",
-                    "width": "200px",
+                    "width": "15.5rem",
                   }
                 }
               >
@@ -4478,7 +4253,7 @@ exports[`Snapshots MetricsDropdown should render a secondary dropdown 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -4558,7 +4333,7 @@ exports[`Snapshots MetricsDropdown should render a secondary dropdown 1`] = `
                     "display": "flex",
                     "padding": "5px 10px",
                     "position": "relative",
-                    "width": "200px",
+                    "width": "15.5rem",
                   }
                 }
               >
@@ -4584,7 +4359,7 @@ exports[`Snapshots MetricsDropdown should render a secondary dropdown 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -4632,7 +4407,7 @@ exports[`Snapshots MetricsDropdown should render a secondary dropdown 1`] = `
                     "display": "flex",
                     "padding": "5px 10px",
                     "position": "relative",
-                    "width": "200px",
+                    "width": "15.5rem",
                   }
                 }
               >
@@ -4658,7 +4433,7 @@ exports[`Snapshots MetricsDropdown should render a secondary dropdown 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -4703,10 +4478,26 @@ exports[`Snapshots MetricsDropdown should render the dropdown 1`] = `
         <span
           style={
             Object {
-              "color": "#59626a",
+              "background": "#fda3f3",
+              "borderColor": "#df85d5",
+              "borderRadius": "0px",
+              "borderStyle": "solid",
+              "borderWidth": "1px",
+              "display": "inline-block",
+              "height": "7px",
+              "marginRight": "5px",
+              "verticalAlign": "baseline",
+              "width": "7px",
+            }
+          }
+        />
+        <span
+          style={
+            Object {
+              "color": "#323b43",
               "fontFamily": "\\"Roboto\\", sans-serif",
               "fontSize": "0.75rem",
-              "fontWeight": 700,
+              "fontWeight": 500,
             }
           }
         >
@@ -4725,8 +4516,8 @@ exports[`Snapshots MetricsDropdown should render the dropdown 1`] = `
             style={
               Object {
                 "fill": "#59626a",
-                "height": "1rem",
-                "width": "1rem",
+                "height": "0.75rem",
+                "width": "0.75rem",
               }
             }
             version="1.1"
@@ -4791,7 +4582,7 @@ exports[`Snapshots MetricsDropdown should render the dropdown 1`] = `
                     "display": "flex",
                     "padding": "5px 10px",
                     "position": "relative",
-                    "width": "200px",
+                    "width": "15.5rem",
                   }
                 }
               >
@@ -4817,7 +4608,7 @@ exports[`Snapshots MetricsDropdown should render the dropdown 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -4897,7 +4688,7 @@ exports[`Snapshots MetricsDropdown should render the dropdown 1`] = `
                     "display": "flex",
                     "padding": "5px 10px",
                     "position": "relative",
-                    "width": "200px",
+                    "width": "15.5rem",
                   }
                 }
               >
@@ -4923,7 +4714,7 @@ exports[`Snapshots MetricsDropdown should render the dropdown 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -4971,7 +4762,7 @@ exports[`Snapshots MetricsDropdown should render the dropdown 1`] = `
                     "display": "flex",
                     "padding": "5px 10px",
                     "position": "relative",
-                    "width": "200px",
+                    "width": "15.5rem",
                   }
                 }
               >
@@ -4997,7 +4788,7 @@ exports[`Snapshots MetricsDropdown should render the dropdown 1`] = `
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -5060,7 +4851,18 @@ exports[`Snapshots ModeToggle should render an active toggle 1`] = `
         <span
           className="leftButton"
         >
-          mode1
+          <span
+            style={
+              Object {
+                "color": "#323b43",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 500,
+              }
+            }
+          >
+            mode1
+          </span>
         </span>
       </button>
       <button
@@ -5094,7 +4896,18 @@ exports[`Snapshots ModeToggle should render an active toggle 1`] = `
         <span
           className="rightButton activeButton"
         >
-          mode2
+          <span
+            style={
+              Object {
+                "color": "#323b43",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 500,
+              }
+            }
+          >
+            mode2
+          </span>
         </span>
       </button>
     </span>
@@ -5149,7 +4962,18 @@ exports[`Snapshots ModeToggle should render an inactive toggle 1`] = `
         <span
           className="leftButton activeButton"
         >
-          mode1
+          <span
+            style={
+              Object {
+                "color": "#323b43",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 500,
+              }
+            }
+          >
+            mode1
+          </span>
         </span>
       </button>
       <button
@@ -5183,7 +5007,18 @@ exports[`Snapshots ModeToggle should render an inactive toggle 1`] = `
         <span
           className="rightButton"
         >
-          mode2
+          <span
+            style={
+              Object {
+                "color": "#323b43",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 500,
+              }
+            }
+          >
+            mode2
+          </span>
         </span>
       </button>
     </span>
@@ -5216,7 +5051,7 @@ exports[`Snapshots PeriodPhrase should render previous period phrase 1`] = `
 exports[`Snapshots ProfileBadge should render 1`] = `
 <span>
   <div
-    className="sc-jWBwVP fJaAzm"
+    className="sc-jhAzac jHaood"
     size="32px"
   >
     <img
@@ -5241,11 +5076,11 @@ exports[`Snapshots ProfileBadge should render 1`] = `
       style={
         Object {
           "background": "#fff",
-          "border": "#fff 0 solid",
+          "border": "rgba(255, 255, 255, 0.5) 1px solid",
           "borderRadius": "50%",
           "display": "",
           "height": "16px",
-          "left": "16px",
+          "left": "17px",
           "marginRight": "",
           "position": "absolute",
           "top": "16px",
@@ -5296,10 +5131,10 @@ exports[`Snapshots ProfileIcon should render 1`] = `
     }
   >
     <span
-      className="sc-cMljjf hwFcyK"
+      className="sc-fMiknA iTOzqQ"
     >
       <span
-        className="sc-brqgnP jWAfmL"
+        className="sc-fBuWsC fxfnwX"
       >
         <img
           alt=""
@@ -5324,11 +5159,11 @@ exports[`Snapshots ProfileIcon should render 1`] = `
         style={
           Object {
             "background": "#fff",
-            "border": "#fff 1px solid",
+            "border": "rgba(255, 255, 255, 0.5) 1px solid",
             "borderRadius": "50%",
             "display": "",
             "height": "14px",
-            "left": "20px",
+            "left": "21px",
             "marginRight": "",
             "position": "absolute",
             "top": "20px",
@@ -5375,11 +5210,11 @@ exports[`Snapshots SocialIcon should render 1`] = `
     style={
       Object {
         "background": "#fff",
-        "border": "#fff 0 solid",
+        "border": "rgba(255, 255, 255, 0.5) 0 solid",
         "borderRadius": "50%",
         "display": "",
         "height": "16px",
-        "left": "16px",
+        "left": "17px",
         "marginRight": "",
         "position": "absolute",
         "top": "16px",
@@ -5425,11 +5260,11 @@ exports[`Snapshots SocialIcon should render inline 1`] = `
       style={
         Object {
           "background": "#fff",
-          "border": "#fff 0 solid",
+          "border": "rgba(255, 255, 255, 0.5) 0 solid",
           "borderRadius": "50%",
           "display": "inline-block",
           "height": "16px",
-          "left": "-16px",
+          "left": "-15px",
           "marginRight": "0.25rem",
           "position": "",
           "top": "-16px",
@@ -5491,11 +5326,11 @@ exports[`Snapshots SocialIcon should render with border 1`] = `
     style={
       Object {
         "background": "#fff",
-        "border": "#fff 1px solid",
+        "border": "rgba(255, 255, 255, 0.5) 1px solid",
         "borderRadius": "50%",
         "display": "",
         "height": "16px",
-        "left": "16px",
+        "left": "17px",
         "marginRight": "",
         "position": "absolute",
         "top": "16px",

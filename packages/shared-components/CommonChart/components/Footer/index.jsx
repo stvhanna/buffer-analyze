@@ -14,7 +14,7 @@ const Metric = ({ metric }) => (
     }}
   >
     <MetricIcon metric={metric} />
-    <Text weight="bold" size="small">{metric.label}</Text>
+    <Text size="small">{metric.label}</Text>
   </li>
 );
 

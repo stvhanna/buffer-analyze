@@ -2,11 +2,9 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
 import ReactHighcharts from 'react-highcharts';
-
 import {
   color,
 } from '@bufferapp/analyze-shared-components/style';
-
 import {
   chartConfig,
   primarySeriesConfig

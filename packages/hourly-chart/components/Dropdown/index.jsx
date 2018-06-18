@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import {
   ArrowDownIcon,
   ArrowUpIcon,
@@ -21,7 +22,7 @@ const triggerContainer = {
 };
 
 const dropdown = {
-  width: '10rem',
+  width: '16rem',
   display: 'inline-block',
 };
 
@@ -31,7 +32,7 @@ const MetricDropdown =
       <Dropdown toggleDropdown={toggleDropdown} isDropdownOpen={open}>
         <div style={triggerContainer}>
           <ColorIcon metric={selectedMetric.label} circle />
-          <Text size="small">{selectedMetric.label}</Text>
+          <Text weight="medium" size="extra-small" color="outerSpace">{selectedMetric.label}</Text>
           <span style={{ marginLeft: 'auto' }} >
             { open && <ArrowUpIcon size="small" /> }
             { !open && <ArrowDownIcon size="small" /> }

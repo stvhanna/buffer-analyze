@@ -58,7 +58,7 @@ const chartConfig = {
     showLastLabel: false,
     showFirstLabel: false,
     title: {
-      text: null
+      text: null,
     },
     lineWidth: '0',
     gridLineColor: '#F3F5F7',
@@ -115,7 +115,6 @@ const PostCountByHour = ({ posts, hourlyChart }) => {
       color: '#ced7df',
       events: {
         mouseOver: function() { // eslint-disable-line object-shorthand
-
           const chart = hourlyChart.getChart();
           const index = this.series.data.indexOf(this);
           const pointsToRefresh = [chart.series[0].points[index]];

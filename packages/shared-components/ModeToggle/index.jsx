@@ -4,6 +4,7 @@ import classNames from 'classnames';
 
 import {
   Button,
+  Text,
 } from '@bufferapp/components';
 
 import {
@@ -24,12 +25,12 @@ const ModeToggle = ({ active, handleClick, baseModeLabel, secondaryModeLabel }) 
   return (<span style={{ marginLeft: 'auto' }} >
     <Button noStyle onClick={() => { handleClick(0); }} >
       <span className={leftButtonClasses} >
-        {baseModeLabel}
+        <Text weight="medium" size="extra-small" color="outerSpace">{baseModeLabel}</Text>
       </span>
     </Button>
     <Button noStyle onClick={() => { handleClick(1); }} >
       <span className={rightButtonClasses} >
-        {secondaryModeLabel}
+        <Text weight="medium" size="extra-small" color="outerSpace">{secondaryModeLabel}</Text>
       </span>
     </Button>
   </span>);

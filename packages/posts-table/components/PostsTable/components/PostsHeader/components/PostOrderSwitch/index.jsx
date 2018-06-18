@@ -1,11 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import {
   Text,
   ArrowLongDownIcon,
   ArrowLongUpIcon,
 } from '@bufferapp/components';
+
 import classNames from 'classnames';
+
 import {
   container,
   buttonItem,
@@ -32,7 +35,7 @@ class PostOrderSwitch extends React.Component {
     return (
       <div>
         <span style={{ top: '-4px', position: 'relative' }}>
-          <Text size="small">Order</Text>
+          <Text size="extra-small">Order</Text>
         </span>
         <ul className={container}>
           <li  // eslint-disable-line

@@ -8,6 +8,7 @@ import {
 } from '@bufferapp/components';
 
 import {
+  curiousBlue,
   curiousBlueUltraLight,
 } from '@bufferapp/components/style/color';
 
@@ -19,7 +20,7 @@ const InnerLink = styled.span`
 
   ${props => !props.selected && css`
     &:hover > span {
-      color: #168eea !important;
+      color: ${curiousBlue} !important;
     }
   `}
 
@@ -44,7 +45,7 @@ const Item = ({ href, route, children, onClick, selectedProfile }) => {
       }}
     >
       <InnerLink selected={selected}>
-        <Text color="shuttleGray" weight={selected ? 'bold' : null}>{children}</Text>
+        <Text color={selected ? 'outerSpace' : 'shuttleGray'} weight={selected ? 'bold' : null}>{children}</Text>
       </InnerLink>
     </Link>
   );

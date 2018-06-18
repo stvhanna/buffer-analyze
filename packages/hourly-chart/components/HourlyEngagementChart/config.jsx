@@ -32,7 +32,7 @@ const xAxis = {
       'font-size': '0.875rem',
       'font-weight': '400',
       'font-family': 'Roboto, sans serif',
-      },
+    },
   },
 };
 
@@ -48,10 +48,9 @@ const yAxisConfig = {
   beginOnTick: true,
   showLastLabel: true,
   gridLineColor: '#F3F5F7',
-  gridLineWidth: 2,
   minorTickWidth: 0,
   minorGridLineWidth: 0,
-  minorGridLineColor: '#F3F5F7'
+  minorGridLineColor: '#F3F5F7',
 };
 
 const yAxis = [{
@@ -68,7 +67,7 @@ const yAxis = [{
       'font-weight': '400',
       'font-family': 'Roboto, sans serif',
     },
-  }
+  },
 },
 {
   ...yAxisConfig,
@@ -85,7 +84,7 @@ const yAxis = [{
       'font-weight': '400',
       'font-family': 'Roboto, sans serif',
     },
-  }
+  },
 }];
 
 export const chartConfig = {
@@ -93,8 +92,8 @@ export const chartConfig = {
   chart: {
     spacingBottom: 15,
     marginLeft: 65,
-    spacingRight:40,
-    spacingTop:20,
+    spacingRight: 40,
+    spacingTop: 20,
   },
   xAxis,
   yAxis,
@@ -160,4 +159,3 @@ export const primarySeriesConfig = {
     },
   },
 };
-

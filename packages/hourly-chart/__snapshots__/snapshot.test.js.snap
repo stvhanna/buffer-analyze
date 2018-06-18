@@ -6,7 +6,7 @@ exports[`Snapshots Dropdown closed dropdown 1`] = `
     style={
       Object {
         "display": "inline-block",
-        "width": "10rem",
+        "width": "16rem",
       }
     }
   >
@@ -48,10 +48,10 @@ exports[`Snapshots Dropdown closed dropdown 1`] = `
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "0.75rem",
-                "fontWeight": 400,
+                "fontWeight": 500,
               }
             }
           >
@@ -263,7 +263,7 @@ exports[`Snapshots Dropdown open dropdown 1`] = `
     style={
       Object {
         "display": "inline-block",
-        "width": "10rem",
+        "width": "16rem",
       }
     }
   >
@@ -305,10 +305,10 @@ exports[`Snapshots Dropdown open dropdown 1`] = `
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "0.75rem",
-                "fontWeight": 400,
+                "fontWeight": 500,
               }
             }
           >
@@ -524,31 +524,18 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
     }
   >
     <div
-      style={
-        Object {
-          "background": "#fff",
-          "border": "1px solid #E2E8ED",
-          "borderRadius": "5px",
-          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
-          "margin": "0 0 2rem",
-        }
-      }
+      className="sc-kgoBCf fymEWw"
     >
       <header
-        className="sc-VigVT kuCSoJ"
+        className="sc-kGXeez esQcyC"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-kpOJdX hkatTF"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 700,
@@ -560,30 +547,18 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
         </h2>
       </header>
       <div
+        className="sc-eHgmQL kcwTLE"
         id="js-dom-to-png-hourly-engagements"
-        style={
-          Object {
-            "margin": "0 auto",
-            "padding": "1.25rem",
-            "position": "relative",
-          }
-        }
       >
         <div>
           <section
-            style={
-              Object {
-                "alignItems": "center",
-                "display": "flex",
-                "padding": "1.25rem",
-              }
-            }
+            className="sc-hSdWYo gvgKOA"
           >
             <div
               style={
                 Object {
                   "display": "inline-block",
-                  "width": "10rem",
+                  "width": "16rem",
                 }
               }
             >
@@ -625,10 +600,10 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
                     <span
                       style={
                         Object {
-                          "color": "#59626a",
+                          "color": "#323b43",
                           "fontFamily": "\\"Roboto\\", sans-serif",
                           "fontSize": "0.75rem",
-                          "fontWeight": 400,
+                          "fontWeight": 500,
                         }
                       }
                     >
@@ -1225,22 +1200,10 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
           </section>
           <div>
             <ul
-              style={
-                Object {
-                  "marginBottom": "1.5rem",
-                  "padding": "0 1.5rem",
-                  "textAlign": "center",
-                }
-              }
+              className="sc-kkGfuU gieSId"
             >
               <li
-                style={
-                  Object {
-                    "display": "inline-block",
-                    "margin": "0 .8rem",
-                    "padding": ".8rem",
-                  }
-                }
+                className="sc-iAyFgw cbzqSt"
               >
                 <i
                   style={
@@ -1260,7 +1223,7 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
                     Object {
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontSize": "0.875rem",
                       "fontWeight": 400,
                     }
                   }
@@ -1269,13 +1232,7 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
                 </span>
               </li>
               <li
-                style={
-                  Object {
-                    "display": "inline-block",
-                    "margin": "0 .8rem",
-                    "padding": ".8rem",
-                  }
-                }
+                className="sc-iAyFgw cbzqSt"
               >
                 <i
                   style={
@@ -1295,7 +1252,7 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
                     Object {
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontSize": "0.875rem",
                       "fontWeight": 400,
                     }
                   }
@@ -1322,31 +1279,18 @@ exports[`Snapshots HourlyChart [TESTED] loading state 1`] = `
     }
   >
     <div
-      style={
-        Object {
-          "background": "#fff",
-          "border": "1px solid #E2E8ED",
-          "borderRadius": "5px",
-          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
-          "margin": "0 0 2rem",
-        }
-      }
+      className="sc-kgoBCf fymEWw"
     >
       <header
-        className="sc-VigVT kuCSoJ"
+        className="sc-kGXeez esQcyC"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-kpOJdX hkatTF"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 700,
@@ -1358,40 +1302,14 @@ exports[`Snapshots HourlyChart [TESTED] loading state 1`] = `
         </h2>
       </header>
       <div
+        className="sc-eHgmQL kcwTLE"
         id="js-dom-to-png-hourly-engagements"
-        style={
-          Object {
-            "margin": "0 auto",
-            "padding": "1.25rem",
-            "position": "relative",
-          }
-        }
       >
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "background": "rgba(255,255,255,.95)",
-              "border": "none",
-              "display": "flex",
-              "justifyContent": "center",
-              "maxHeight": "none",
-              "minHeight": "8rem",
-              "textAlign": "center",
-              "transition": "opacity 350ms ease-in-out",
-              "zIndex": 2,
-            }
-          }
+          className="sc-bwzfXH cXJzrG"
         >
           <div
-            style={
-              Object {
-                "background": "none",
-                "borderRadius": "2px",
-                "flex": 1,
-                "flexDirection": "row",
-              }
-            }
+            className="sc-bdVaJa fsNrov"
           >
             <div
               style={
@@ -1481,31 +1399,18 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
     }
   >
     <div
-      style={
-        Object {
-          "background": "#fff",
-          "border": "1px solid #E2E8ED",
-          "borderRadius": "5px",
-          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
-          "margin": "0 0 2rem",
-        }
-      }
+      className="sc-kgoBCf fymEWw"
     >
       <header
-        className="sc-VigVT kuCSoJ"
+        className="sc-kGXeez esQcyC"
       >
         <h2
-          style={
-            Object {
-              "margin": "0",
-              "padding": "0",
-            }
-          }
+          className="sc-kpOJdX hkatTF"
         >
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
                 "fontWeight": 700,
@@ -1517,30 +1422,18 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
         </h2>
       </header>
       <div
+        className="sc-eHgmQL kcwTLE"
         id="js-dom-to-png-hourly-engagements"
-        style={
-          Object {
-            "margin": "0 auto",
-            "padding": "1.25rem",
-            "position": "relative",
-          }
-        }
       >
         <div>
           <section
-            style={
-              Object {
-                "alignItems": "center",
-                "display": "flex",
-                "padding": "1.25rem",
-              }
-            }
+            className="sc-hSdWYo gvgKOA"
           >
             <div
               style={
                 Object {
                   "display": "inline-block",
-                  "width": "10rem",
+                  "width": "16rem",
                 }
               }
             >
@@ -1582,10 +1475,10 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                     <span
                       style={
                         Object {
-                          "color": "#59626a",
+                          "color": "#323b43",
                           "fontFamily": "\\"Roboto\\", sans-serif",
                           "fontSize": "0.75rem",
-                          "fontWeight": 400,
+                          "fontWeight": 500,
                         }
                       }
                     >
@@ -2182,22 +2075,10 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
           </section>
           <div>
             <ul
-              style={
-                Object {
-                  "marginBottom": "1.5rem",
-                  "padding": "0 1.5rem",
-                  "textAlign": "center",
-                }
-              }
+              className="sc-kkGfuU gieSId"
             >
               <li
-                style={
-                  Object {
-                    "display": "inline-block",
-                    "margin": "0 .8rem",
-                    "padding": ".8rem",
-                  }
-                }
+                className="sc-iAyFgw cbzqSt"
               >
                 <i
                   style={
@@ -2217,7 +2098,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                     Object {
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontSize": "0.875rem",
                       "fontWeight": 400,
                     }
                   }
@@ -2226,13 +2107,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                 </span>
               </li>
               <li
-                style={
-                  Object {
-                    "display": "inline-block",
-                    "margin": "0 .8rem",
-                    "padding": ".8rem",
-                  }
-                }
+                className="sc-iAyFgw cbzqSt"
               >
                 <i
                   style={
@@ -2252,7 +2127,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                     Object {
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
+                      "fontSize": "0.875rem",
                       "fontWeight": 400,
                     }
                   }
@@ -2266,6 +2141,48 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
       </div>
     </div>
   </div>
+</span>
+`;
+
+exports[`Snapshots Title should render title as if for app 1`] = `
+<span>
+  <h2
+    className="sc-kpOJdX hkatTF"
+  >
+    <span
+      style={
+        Object {
+          "color": "#323b43",
+          "fontFamily": "\\"Roboto\\", sans-serif",
+          "fontSize": "1.25rem",
+          "fontWeight": 700,
+        }
+      }
+    >
+      Hourly engagements
+    </span>
+  </h2>
+</span>
+`;
+
+exports[`Snapshots Title should render title as if for report 1`] = `
+<span>
+  <h2
+    className="sc-kpOJdX hkatTF"
+  >
+    <span
+      style={
+        Object {
+          "color": "#000",
+          "fontFamily": "\\"Roboto\\", sans-serif",
+          "fontSize": "1.5rem",
+          "fontWeight": 700,
+        }
+      }
+    >
+      Hourly engagements
+    </span>
+  </h2>
 </span>
 `;
 

@@ -1,13 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
 import {
   ProfileBadge,
   DropdownItem,
 } from '@bufferapp/analyze-shared-components';
+
 import Dropdown, {
   DropdownTrigger,
   DropdownContent,
 } from 'react-simple-dropdown';
+
 import {
   ArrowDownIcon,
   ArrowUpIcon,
@@ -15,13 +19,17 @@ import {
   Text,
 } from '@bufferapp/components';
 
-const dropdownContainerStyle = {
-  position: 'relative',
-  display: 'inline-block',
-  zIndex: 1,
-  width: '360px',
-  height: '34px',
-};
+const DropdownContainer = styled(Dropdown)`
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  width: 360px;
+  height: 34px;
+
+  input {
+    font-size: 0.8rem !important;
+  }
+`;
 
 const dropdownContentStyle = {
   zIndex: 2,
@@ -45,6 +53,7 @@ const dropdownContentActiveStyle = {
 
 const dropdownSearchHolderStyle = {
   padding: '0 0 0.5rem',
+  fontSize: '0.75rem !important',
 };
 
 const dropdownListStyle = {
@@ -122,8 +131,7 @@ const ProfileSelectorDropdown = ({
     );
 
     return (
-      <Dropdown
-        style={dropdownContainerStyle}
+      <DropdownContainer
         onShow={openDropdown}
         onHide={closeDropdown}
       >
@@ -131,10 +139,10 @@ const ProfileSelectorDropdown = ({
           <ProfileBadge
             avatarUrl={selectedProfile.avatarUrl}
             service={selectedProfile.service}
-            avatarSize={22}
-            socialIconSize={13}
+            avatarSize={24}
+            socialIconSize={14}
           />
-          <Text weight="bold" size="small">{selectedProfile.username}</Text>
+          <Text color="outerSpace" size="extra-small" weight="medium">{selectedProfile.username}</Text>
           <span style={arrowHolderStyle}>
             { isDropdownOpen && <ArrowUpIcon size="small" /> }
             { !isDropdownOpen && <ArrowDownIcon size="small" /> }
@@ -150,7 +158,7 @@ const ProfileSelectorDropdown = ({
             />
             { filteredProfiles.length === 0 &&
               <div style={noResultsContainerStyle}>
-                <Text weight="bold" size="small">No Results</Text>
+                <Text weight="bold" size="extra-small">No Results</Text>
               </div>
             }
           </div>
@@ -163,7 +171,7 @@ const ProfileSelectorDropdown = ({
             </ul>
           }
         </DropdownContent>
-      </Dropdown>);
+      </DropdownContainer>);
   }
 
   return null;

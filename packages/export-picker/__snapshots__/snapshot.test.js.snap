@@ -13,10 +13,10 @@ exports[`Snapshots ExportPicker should be open 1`] = `
       <span
         style={
           Object {
-            "color": "#59626a",
+            "color": "#323b43",
             "fontFamily": "\\"Roboto\\", sans-serif",
             "fontSize": "0.75rem",
-            "fontWeight": 700,
+            "fontWeight": 500,
           }
         }
       >
@@ -174,10 +174,10 @@ exports[`Snapshots ExportPicker should not be open 1`] = `
       <span
         style={
           Object {
-            "color": "#59626a",
+            "color": "#323b43",
             "fontFamily": "\\"Roboto\\", sans-serif",
             "fontSize": "0.75rem",
-            "fontWeight": 700,
+            "fontWeight": 500,
           }
         }
       >
@@ -328,17 +328,17 @@ exports[`Snapshots ExportPicker should show exporting 1`] = `
     className="sc-EHOje WFHAx"
   >
     <button
-      className="sc-bdVaJa fMPpFU"
+      className="sc-bdVaJa eckcfy"
       disabled={true}
       onClick={[Function]}
     >
       <span
         style={
           Object {
-            "color": "#59626a",
+            "color": "#323b43",
             "fontFamily": "\\"Roboto\\", sans-serif",
             "fontSize": "0.75rem",
-            "fontWeight": 700,
+            "fontWeight": 500,
           }
         }
       >

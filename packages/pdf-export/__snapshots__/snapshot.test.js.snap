@@ -3,19 +3,19 @@
 exports[`Snapshots PDFExportButton a story 1`] = `
 <span>
   <span
-    className="sc-kGXeez fvubOj"
+    className="sc-kkGfuU rQsDC"
   >
     <button
-      className="sc-gqjmRU jAyeYb"
+      className="sc-chPdSV dWobCQ"
       onClick={[Function]}
     >
       <span
         style={
           Object {
-            "color": "#59626a",
+            "color": "#323b43",
             "fontFamily": "\\"Roboto\\", sans-serif",
             "fontSize": "0.75rem",
-            "fontWeight": 700,
+            "fontWeight": 500,
           }
         }
       >

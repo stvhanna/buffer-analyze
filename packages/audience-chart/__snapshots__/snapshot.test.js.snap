@@ -10,29 +10,21 @@ exports[`Snapshots AudienceChart [TESTED] Should render 1`] = `
     }
   >
     <div
-      style={
-        Object {
-          "background": "#fff",
-          "border": "1px solid #E2E8ED",
-          "borderRadius": "5px",
-          "boxShadow": "0px 0px 10px rgba(48, 71, 89, 0.05)",
-          "margin": "0 0 2rem",
-        }
-      }
+      className="sc-kgoBCf fymEWw"
     >
       <header
-        className="sc-VigVT kuCSoJ"
+        className="sc-kGXeez esQcyC"
       >
         <h2
-          className="sc-jTzLTM bckqaj"
+          className="sc-kpOJdX hkatTF"
         >
           <span
             style={
               Object {
-                "color": "#000",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 500,
+                "fontWeight": 700,
               }
             }
           >
@@ -41,11 +33,11 @@ exports[`Snapshots AudienceChart [TESTED] Should render 1`] = `
         </h2>
       </header>
       <div
-        className="sc-kpOJdX gywIsF"
+        className="sc-iAyFgw kzufOM"
       >
         <div>
           <div
-            className="sc-kGXeez kYntIi"
+            className="sc-kkGfuU fESlcU"
           >
             <div
               className="dropdown dropdownContainer"
@@ -67,10 +59,26 @@ exports[`Snapshots AudienceChart [TESTED] Should render 1`] = `
                 <span
                   style={
                     Object {
-                      "color": "#59626a",
+                      "background": "#fda3f3",
+                      "borderColor": "#df85d5",
+                      "borderRadius": "0px",
+                      "borderStyle": "solid",
+                      "borderWidth": "1px",
+                      "display": "inline-block",
+                      "height": "7px",
+                      "marginRight": "5px",
+                      "verticalAlign": "baseline",
+                      "width": "7px",
+                    }
+                  }
+                />
+                <span
+                  style={
+                    Object {
+                      "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 500,
                     }
                   }
                 >
@@ -89,8 +97,8 @@ exports[`Snapshots AudienceChart [TESTED] Should render 1`] = `
                     style={
                       Object {
                         "fill": "#59626a",
-                        "height": "1rem",
-                        "width": "1rem",
+                        "height": "0.75rem",
+                        "width": "0.75rem",
                       }
                     }
                     version="1.1"
@@ -155,7 +163,7 @@ exports[`Snapshots AudienceChart [TESTED] Should render 1`] = `
                             "display": "flex",
                             "padding": "5px 10px",
                             "position": "relative",
-                            "width": "200px",
+                            "width": "15.5rem",
                           }
                         }
                       >
@@ -181,7 +189,7 @@ exports[`Snapshots AudienceChart [TESTED] Should render 1`] = `
                               "color": "#59626a",
                               "fontFamily": "\\"Roboto\\", sans-serif",
                               "fontSize": "0.75rem",
-                              "fontWeight": 700,
+                              "fontWeight": 400,
                             }
                           }
                         >
@@ -245,10 +253,26 @@ exports[`Snapshots AudienceChart [TESTED] Should render 1`] = `
                 <span
                   style={
                     Object {
-                      "color": "#59626a",
+                      "background": "#98E8B2",
+                      "borderColor": "#7aca94",
+                      "borderRadius": "10px",
+                      "borderStyle": "solid",
+                      "borderWidth": "1px",
+                      "display": "inline-block",
+                      "height": "7px",
+                      "marginRight": "5px",
+                      "verticalAlign": "baseline",
+                      "width": "7px",
+                    }
+                  }
+                />
+                <span
+                  style={
+                    Object {
+                      "color": "#323b43",
                       "fontFamily": "\\"Roboto\\", sans-serif",
                       "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontWeight": 500,
                     }
                   }
                 >
@@ -267,8 +291,8 @@ exports[`Snapshots AudienceChart [TESTED] Should render 1`] = `
                     style={
                       Object {
                         "fill": "#59626a",
-                        "height": "1rem",
-                        "width": "1rem",
+                        "height": "0.75rem",
+                        "width": "0.75rem",
                       }
                     }
                     version="1.1"
@@ -333,7 +357,7 @@ exports[`Snapshots AudienceChart [TESTED] Should render 1`] = `
                             "display": "flex",
                             "padding": "5px 10px",
                             "position": "relative",
-                            "width": "200px",
+                            "width": "15.5rem",
                           }
                         }
                       >
@@ -359,7 +383,7 @@ exports[`Snapshots AudienceChart [TESTED] Should render 1`] = `
                               "color": "#59626a",
                               "fontFamily": "\\"Roboto\\", sans-serif",
                               "fontSize": "0.75rem",
-                              "fontWeight": 700,
+                              "fontWeight": 400,
                             }
                           }
                         >
@@ -453,8 +477,8 @@ exports[`Snapshots AudienceChart [TESTED] Should render 1`] = `
                     Object {
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontSize": "0.875rem",
+                      "fontWeight": 400,
                     }
                   }
                 >
@@ -489,8 +513,8 @@ exports[`Snapshots AudienceChart [TESTED] Should render 1`] = `
                     Object {
                       "color": "#59626a",
                       "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "0.75rem",
-                      "fontWeight": 700,
+                      "fontSize": "0.875rem",
+                      "fontWeight": 400,
                     }
                   }
                 >

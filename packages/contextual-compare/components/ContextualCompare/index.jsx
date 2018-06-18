@@ -21,41 +21,39 @@ const ContextualCompare = ({
   loading,
   profileService,
   ...props
-}) => {
-  return (
-    <ChartCard>
-      <ChartHeader>
-        <Title />
-        <AddReport
-          chart="contextual-compare"
-          state={{
-            mode: props.mode,
-            selectedMetrics: props.selectedMetrics,
-            selectedPreset: props.selectedPreset,
-            profileService,
-          }}
+}) => (
+  <ChartCard>
+    <ChartHeader>
+      <Title />
+      <AddReport
+        chart="contextual-compare"
+        state={{
+          mode: props.mode,
+          selectedMetrics: props.selectedMetrics,
+          selectedPreset: props.selectedPreset,
+          profileService,
+        }}
+      />
+    </ChartHeader>
+    <div className={className}>
+      {loading && <Loading active noBorder large />}
+      {data.length === 0 && !loading && <NoData />}
+      {data.length >= 1 && !loading && <div>
+        <Header {...props} />
+        <Chart
+          mode={props.mode}
+          presets={props.presets}
+          profileService={profileService}
+          selectedMetrics={props.selectedMetrics}
+          selectedPreset={props.selectedPreset}
+          timezone={props.timezone}
+          pngExportId="contextual"
+          data={data}
         />
-      </ChartHeader>
-      <div className={className}>
-        {loading && <Loading active noBorder />}
-        {data.length === 0 && !loading && <NoData />}
-        {data.length >= 1 && !loading && <div>
-          <Header {...props} />
-          <Chart
-            mode={props.mode}
-            presets={props.presets}
-            profileService={profileService}
-            selectedMetrics={props.selectedMetrics}
-            selectedPreset={props.selectedPreset}
-            timezone={props.timezone}
-            pngExportId="contextual"
-            data={data}
-          />
-        </div>}
-      </div>
-    </ChartCard>
-  );
-};
+      </div>}
+    </div>
+  </ChartCard>
+);
 
 ContextualCompare.defaultProps = {
   loading: false,
@@ -94,7 +92,7 @@ ContextualCompare.propTypes = {
 
 const ContextualCompareStyled = styled(ContextualCompare)`
   margin: 0 auto;
-  padding: 1.25rem;
+  padding: 0.75rem 1.25rem 1rem;
   position: relative;
 `;
 

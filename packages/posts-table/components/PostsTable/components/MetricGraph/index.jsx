@@ -1,38 +1,40 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { TruncatedNumber } from '@bufferapp/analyze-shared-components';
-import Text from '@bufferapp/components/Text';
+import styled from 'styled-components';
 
 import {
-  metricBarGraph,
-  metricBarLabel,
-  metricBarGraphContainer,
-} from '../../styles.less';
+  TruncatedNumber,
+  MetricIcon,
+} from '@bufferapp/analyze-shared-components';
 
+import Text from '@bufferapp/components/Text';
+
+const Container = styled.div`
+  display: inline-block;
+  width: 95%;
+  margin: 0 0 0.75rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+`;
+
+const MetricText = styled.span`
+  display: inline-block;
+  margin: 0 0 0 0.25rem;
+`;
 
 const MetricGraph = ({ metric }) => {
-  const { maxValue, value, color, key, label } = metric;
+  const { value, key, label } = metric;
 
-  let percentage = 0;
-  if (maxValue > 0) {
-    percentage = value / maxValue;
-    percentage *= 100;
-  }
-
-  const metricStyle = {
-    backgroundColor: color,
-    width: `${percentage}%`,
-  };
   return (
-    <div key={key}>
-      <div className={metricBarGraphContainer}>
-        <span className={metricBarLabel}>
-          <Text size="small" weight="bold"><TruncatedNumber>{value}</TruncatedNumber></Text>
-          <Text size="small"> {label.toLowerCase()}</Text>
-        </span>
-        <span data-tip={label} className={metricBarGraph} style={metricStyle} />
-      </div>
-    </div>
+    <Container key={key}>
+      <MetricIcon metric={metric} />
+      <MetricText>
+        <Text size="small" weight="bold" color="outerSpace"><TruncatedNumber>{value}</TruncatedNumber></Text>
+        <Text size="small"> {label.toLowerCase()}</Text>
+      </MetricText>
+    </Container>
   );
 };
 

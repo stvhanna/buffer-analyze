@@ -29,7 +29,7 @@ const comparisonsContainer = {
 };
 
 const comparisonsMaxWidth = {
-  width: '52rem',
+  width: '920px',
   margin: '0 auto',
   padding: '2.5rem',
 };
@@ -75,11 +75,11 @@ const ComparisonsPage = ({ location, isCompareProfileClicked }) => (
           {
             isCompareProfileClicked ?
               <div style={comparisonsMaxWidth}>
-                <ComparisonChart metricKey="audience" />
-                <ComparisonChart metricKey="reach" />
-                <ComparisonChart metricKey="likes" />
                 <ComparisonChart metricKey="engagement" />
+                <ComparisonChart metricKey="likes" />
                 <ComparisonChart metricKey="comments" />
+                <ComparisonChart metricKey="reach" />
+                <ComparisonChart metricKey="audience" />
               </div>
               :
               <div style={centeredContainer}>

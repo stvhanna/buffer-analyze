@@ -22,12 +22,12 @@ const DropdownItem = ({ metric, handleClick, selected }) => (
           boxSizing: 'border-box',
           display: 'flex',
           position: 'relative',
-          width: '200px',
+          width: '15.5rem',
           padding: '5px 10px',
         }}
       >
         <MetricIcon metric={metric} />
-        <Text weight="bold" size="small">{metric.label}</Text>
+        <Text size="extra-small">{metric.label}</Text>
         { selected && <div style={{ marginLeft: 'auto' }}>
           <CheckmarkIcon color={'curiousBlue'} />
         </div>}

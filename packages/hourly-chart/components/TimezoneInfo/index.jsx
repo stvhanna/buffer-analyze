@@ -11,7 +11,7 @@ const style = {
 
 const TimezoneInfo = ({ timezone }) =>
   <span style={style}>
-    <Text color="nevada" size="small">UTC {moment.tz(timezone).format('Z')}</Text>
+    <Text color="nevada" size="extra-small">UTC {moment.tz(timezone).format('Z')}</Text>
   </span>;
 
 TimezoneInfo.defaultProps = {
