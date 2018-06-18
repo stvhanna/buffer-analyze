@@ -21,6 +21,10 @@ const PostRow = styled.tr`
   &:first-child td {
     border-top: 1px dotted ${geyser};
   }
+
+  &:last-child td {
+    border-bottom: none;
+  }
 `;
 
 const MetricCellInner = styled.td`
