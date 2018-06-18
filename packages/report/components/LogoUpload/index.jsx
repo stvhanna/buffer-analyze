@@ -101,7 +101,7 @@ class LogoUpload extends Component {
         {!logoUrl &&
           <DropzonContainer>
             <UploadLogoText>
-              {!isLogoUploading && <Text weight="bold">Upload logo</Text>}
+              {!isLogoUploading && <Text weight="medium" color="outerSpace">Upload logo</Text>}
             </UploadLogoText>
             {!isLogoUploading && <Text size="extra-small" color="shuttleGray">PNG or JPG</Text>}
             {isLogoUploading && <UploadingText>

@@ -773,10 +773,10 @@ exports[`Snapshots LogoUpload renders no logo image upload box 1`] = `
           <span
             style={
               Object {
-                "color": "#59626a",
+                "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -1259,10 +1259,10 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                   <span
                     style={
                       Object {
-                        "color": "#59626a",
+                        "color": "#323b43",
                         "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "1rem",
-                        "fontWeight": 700,
+                        "fontWeight": 500,
                       }
                     }
                   >
@@ -7067,10 +7067,10 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
                   <span
                     style={
                       Object {
-                        "color": "#59626a",
+                        "color": "#323b43",
                         "fontFamily": "\\"Roboto\\", sans-serif",
                         "fontSize": "1rem",
-                        "fontWeight": 700,
+                        "fontWeight": 500,
                       }
                     }
                   >
