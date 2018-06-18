@@ -14,7 +14,7 @@ import PostItem from './components/PostItem';
 import PostsHeader from './components/PostsHeader';
 import { metricsConfig } from './metrics';
 
-const ChartContainer = styled.aside`
+const ChartContainer = styled.div`
   position: relative;
   border-radius: 2px;
   font-size: 12px;

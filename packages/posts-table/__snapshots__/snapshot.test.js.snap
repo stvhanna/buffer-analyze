@@ -3118,7 +3118,7 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
               </ul>
             </div>
           </div>
-          <aside
+          <div
             className="sc-bRBYWo jcNgcT"
           >
             <table
@@ -4513,7 +4513,7 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                 </td>
               </tr>
             </table>
-          </aside>
+          </div>
         </div>
       </div>
     </div>
@@ -5311,7 +5311,7 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
               </ul>
             </div>
           </div>
-          <aside
+          <div
             className="sc-bRBYWo jcNgcT"
           >
             <table
@@ -6400,7 +6400,7 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                 </td>
               </tr>
             </table>
-          </aside>
+          </div>
         </div>
       </div>
     </div>
@@ -7198,7 +7198,7 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
               </ul>
             </div>
           </div>
-          <aside
+          <div
             className="sc-bRBYWo jcNgcT"
           >
             <table
@@ -8287,7 +8287,7 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                 </td>
               </tr>
             </table>
-          </aside>
+          </div>
         </div>
       </div>
     </div>
@@ -9285,7 +9285,7 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
               </ul>
             </div>
           </div>
-          <aside
+          <div
             className="sc-bRBYWo jcNgcT"
           >
             <table
@@ -10680,7 +10680,7 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                 </td>
               </tr>
             </table>
-          </aside>
+          </div>
         </div>
       </div>
     </div>
