@@ -346,10 +346,10 @@ exports[`Snapshots PostItem should not render the top posts item when no metrics
     }
   >
     <tr
-      className="sc-hSdWYo iiALGm"
+      className="sc-hSdWYo begDiD"
     >
       <td
-        className="sc-cvbbAY efcDQd"
+        className="sc-cvbbAY ePXgRF"
       >
         <span
           style={
@@ -365,7 +365,7 @@ exports[`Snapshots PostItem should not render the top posts item when no metrics
         </span>
       </td>
       <td
-        className="sc-jWBwVP eTPYIO"
+        className="sc-jWBwVP dITmiV"
       >
         <div
           className="sc-gPEVay dafan"
@@ -461,10 +461,10 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
     }
   >
     <tr
-      className="sc-hSdWYo iiALGm"
+      className="sc-hSdWYo begDiD"
     >
       <td
-        className="sc-cvbbAY efcDQd"
+        className="sc-cvbbAY ePXgRF"
       >
         <span
           style={
@@ -480,7 +480,7 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
         </span>
       </td>
       <td
-        className="sc-jWBwVP eTPYIO"
+        className="sc-jWBwVP dITmiV"
       >
         <div
           className="sc-gPEVay dafan"
@@ -562,7 +562,7 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
         </div>
       </td>
       <td
-        className="sc-eHgmQL dqnzNj"
+        className="sc-eHgmQL IiGfj"
       >
         <div
           className="sc-kkGfuU bnbQcV"
@@ -1939,7 +1939,7 @@ exports[`Snapshots PostsTable should render a "no data" state 1`] = `
     }
   >
     <div
-      className="sc-kgoBCf eKtgtS"
+      className="sc-kgoBCf fymEWw"
     >
       <header
         className="sc-kGXeez esQcyC"
@@ -2007,7 +2007,7 @@ exports[`Snapshots PostsTable should render a loading state 1`] = `
     }
   >
     <div
-      className="sc-kgoBCf eKtgtS"
+      className="sc-kgoBCf fymEWw"
     >
       <header
         className="sc-kGXeez esQcyC"
@@ -2138,7 +2138,7 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
     }
   >
     <div
-      className="sc-kgoBCf eKtgtS"
+      className="sc-kgoBCf fymEWw"
     >
       <header
         className="sc-kGXeez esQcyC"
@@ -3125,10 +3125,10 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
               className="sc-hzDkRC ezXTvV"
             >
               <tr
-                className="sc-hSdWYo iiALGm"
+                className="sc-hSdWYo begDiD"
               >
                 <td
-                  className="sc-cvbbAY efcDQd"
+                  className="sc-cvbbAY ePXgRF"
                 >
                   <span
                     style={
@@ -3144,7 +3144,7 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                   </span>
                 </td>
                 <td
-                  className="sc-jWBwVP eTPYIO"
+                  className="sc-jWBwVP dITmiV"
                 >
                   <div
                     className="sc-gPEVay dafan"
@@ -3226,7 +3226,7 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                   </div>
                 </td>
                 <td
-                  className="sc-eHgmQL dqnzNj"
+                  className="sc-eHgmQL IiGfj"
                 >
                   <div
                     className="sc-kkGfuU bnbQcV"
@@ -3588,10 +3588,10 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                 </td>
               </tr>
               <tr
-                className="sc-hSdWYo iiALGm"
+                className="sc-hSdWYo begDiD"
               >
                 <td
-                  className="sc-cvbbAY efcDQd"
+                  className="sc-cvbbAY ePXgRF"
                 >
                   <span
                     style={
@@ -3607,7 +3607,7 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                   </span>
                 </td>
                 <td
-                  className="sc-jWBwVP eTPYIO"
+                  className="sc-jWBwVP dITmiV"
                 >
                   <div
                     className="sc-gPEVay dafan"
@@ -3692,7 +3692,7 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                   </div>
                 </td>
                 <td
-                  className="sc-eHgmQL dqnzNj"
+                  className="sc-eHgmQL IiGfj"
                 >
                   <div
                     className="sc-kkGfuU bnbQcV"
@@ -4054,10 +4054,10 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                 </td>
               </tr>
               <tr
-                className="sc-hSdWYo iiALGm"
+                className="sc-hSdWYo begDiD"
               >
                 <td
-                  className="sc-cvbbAY efcDQd"
+                  className="sc-cvbbAY ePXgRF"
                 >
                   <span
                     style={
@@ -4073,7 +4073,7 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                   </span>
                 </td>
                 <td
-                  className="sc-jWBwVP eTPYIO"
+                  className="sc-jWBwVP dITmiV"
                 >
                   <div
                     className="sc-gPEVay dafan"
@@ -4151,7 +4151,7 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                   </div>
                 </td>
                 <td
-                  className="sc-eHgmQL dqnzNj"
+                  className="sc-eHgmQL IiGfj"
                 >
                   <div
                     className="sc-kkGfuU bnbQcV"
@@ -4531,7 +4531,7 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
     }
   >
     <div
-      className="sc-kgoBCf eKtgtS"
+      className="sc-kgoBCf fymEWw"
     >
       <header
         className="sc-kGXeez esQcyC"
@@ -5318,10 +5318,10 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
               className="sc-hzDkRC ezXTvV"
             >
               <tr
-                className="sc-hSdWYo iiALGm"
+                className="sc-hSdWYo begDiD"
               >
                 <td
-                  className="sc-cvbbAY efcDQd"
+                  className="sc-cvbbAY ePXgRF"
                 >
                   <span
                     style={
@@ -5337,7 +5337,7 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                   </span>
                 </td>
                 <td
-                  className="sc-jWBwVP eTPYIO"
+                  className="sc-jWBwVP dITmiV"
                 >
                   <div
                     className="sc-gPEVay dafan"
@@ -5419,7 +5419,7 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                   </div>
                 </td>
                 <td
-                  className="sc-eHgmQL dqnzNj"
+                  className="sc-eHgmQL IiGfj"
                 >
                   <div
                     className="sc-kkGfuU bnbQcV"
@@ -5679,10 +5679,10 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                 </td>
               </tr>
               <tr
-                className="sc-hSdWYo iiALGm"
+                className="sc-hSdWYo begDiD"
               >
                 <td
-                  className="sc-cvbbAY efcDQd"
+                  className="sc-cvbbAY ePXgRF"
                 >
                   <span
                     style={
@@ -5698,7 +5698,7 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                   </span>
                 </td>
                 <td
-                  className="sc-jWBwVP eTPYIO"
+                  className="sc-jWBwVP dITmiV"
                 >
                   <div
                     className="sc-gPEVay dafan"
@@ -5783,7 +5783,7 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                   </div>
                 </td>
                 <td
-                  className="sc-eHgmQL dqnzNj"
+                  className="sc-eHgmQL IiGfj"
                 >
                   <div
                     className="sc-kkGfuU bnbQcV"
@@ -6043,10 +6043,10 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                 </td>
               </tr>
               <tr
-                className="sc-hSdWYo iiALGm"
+                className="sc-hSdWYo begDiD"
               >
                 <td
-                  className="sc-cvbbAY efcDQd"
+                  className="sc-cvbbAY ePXgRF"
                 >
                   <span
                     style={
@@ -6062,7 +6062,7 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                   </span>
                 </td>
                 <td
-                  className="sc-jWBwVP eTPYIO"
+                  className="sc-jWBwVP dITmiV"
                 >
                   <div
                     className="sc-gPEVay dafan"
@@ -6140,7 +6140,7 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                   </div>
                 </td>
                 <td
-                  className="sc-eHgmQL dqnzNj"
+                  className="sc-eHgmQL IiGfj"
                 >
                   <div
                     className="sc-kkGfuU bnbQcV"
@@ -6418,7 +6418,7 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
     }
   >
     <div
-      className="sc-kgoBCf eKtgtS"
+      className="sc-kgoBCf fymEWw"
     >
       <header
         className="sc-kGXeez esQcyC"
@@ -7205,10 +7205,10 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
               className="sc-hzDkRC ezXTvV"
             >
               <tr
-                className="sc-hSdWYo iiALGm"
+                className="sc-hSdWYo begDiD"
               >
                 <td
-                  className="sc-cvbbAY efcDQd"
+                  className="sc-cvbbAY ePXgRF"
                 >
                   <span
                     style={
@@ -7224,7 +7224,7 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                   </span>
                 </td>
                 <td
-                  className="sc-jWBwVP eTPYIO"
+                  className="sc-jWBwVP dITmiV"
                 >
                   <div
                     className="sc-gPEVay dafan"
@@ -7306,7 +7306,7 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                   </div>
                 </td>
                 <td
-                  className="sc-eHgmQL dqnzNj"
+                  className="sc-eHgmQL IiGfj"
                 >
                   <div
                     className="sc-kkGfuU bnbQcV"
@@ -7566,10 +7566,10 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                 </td>
               </tr>
               <tr
-                className="sc-hSdWYo iiALGm"
+                className="sc-hSdWYo begDiD"
               >
                 <td
-                  className="sc-cvbbAY efcDQd"
+                  className="sc-cvbbAY ePXgRF"
                 >
                   <span
                     style={
@@ -7585,7 +7585,7 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                   </span>
                 </td>
                 <td
-                  className="sc-jWBwVP eTPYIO"
+                  className="sc-jWBwVP dITmiV"
                 >
                   <div
                     className="sc-gPEVay dafan"
@@ -7670,7 +7670,7 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                   </div>
                 </td>
                 <td
-                  className="sc-eHgmQL dqnzNj"
+                  className="sc-eHgmQL IiGfj"
                 >
                   <div
                     className="sc-kkGfuU bnbQcV"
@@ -7930,10 +7930,10 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                 </td>
               </tr>
               <tr
-                className="sc-hSdWYo iiALGm"
+                className="sc-hSdWYo begDiD"
               >
                 <td
-                  className="sc-cvbbAY efcDQd"
+                  className="sc-cvbbAY ePXgRF"
                 >
                   <span
                     style={
@@ -7949,7 +7949,7 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                   </span>
                 </td>
                 <td
-                  className="sc-jWBwVP eTPYIO"
+                  className="sc-jWBwVP dITmiV"
                 >
                   <div
                     className="sc-gPEVay dafan"
@@ -8027,7 +8027,7 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                   </div>
                 </td>
                 <td
-                  className="sc-eHgmQL dqnzNj"
+                  className="sc-eHgmQL IiGfj"
                 >
                   <div
                     className="sc-kkGfuU bnbQcV"
@@ -8305,7 +8305,7 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
     }
   >
     <div
-      className="sc-kgoBCf eKtgtS"
+      className="sc-kgoBCf fymEWw"
     >
       <header
         className="sc-kGXeez esQcyC"
@@ -9292,10 +9292,10 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
               className="sc-hzDkRC ezXTvV"
             >
               <tr
-                className="sc-hSdWYo iiALGm"
+                className="sc-hSdWYo begDiD"
               >
                 <td
-                  className="sc-cvbbAY efcDQd"
+                  className="sc-cvbbAY ePXgRF"
                 >
                   <span
                     style={
@@ -9311,7 +9311,7 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                   </span>
                 </td>
                 <td
-                  className="sc-jWBwVP eTPYIO"
+                  className="sc-jWBwVP dITmiV"
                 >
                   <div
                     className="sc-gPEVay dafan"
@@ -9393,7 +9393,7 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                   </div>
                 </td>
                 <td
-                  className="sc-eHgmQL dqnzNj"
+                  className="sc-eHgmQL IiGfj"
                 >
                   <div
                     className="sc-kkGfuU bnbQcV"
@@ -9755,10 +9755,10 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                 </td>
               </tr>
               <tr
-                className="sc-hSdWYo iiALGm"
+                className="sc-hSdWYo begDiD"
               >
                 <td
-                  className="sc-cvbbAY efcDQd"
+                  className="sc-cvbbAY ePXgRF"
                 >
                   <span
                     style={
@@ -9774,7 +9774,7 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                   </span>
                 </td>
                 <td
-                  className="sc-jWBwVP eTPYIO"
+                  className="sc-jWBwVP dITmiV"
                 >
                   <div
                     className="sc-gPEVay dafan"
@@ -9859,7 +9859,7 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                   </div>
                 </td>
                 <td
-                  className="sc-eHgmQL dqnzNj"
+                  className="sc-eHgmQL IiGfj"
                 >
                   <div
                     className="sc-kkGfuU bnbQcV"
@@ -10221,10 +10221,10 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                 </td>
               </tr>
               <tr
-                className="sc-hSdWYo iiALGm"
+                className="sc-hSdWYo begDiD"
               >
                 <td
-                  className="sc-cvbbAY efcDQd"
+                  className="sc-cvbbAY ePXgRF"
                 >
                   <span
                     style={
@@ -10240,7 +10240,7 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                   </span>
                 </td>
                 <td
-                  className="sc-jWBwVP eTPYIO"
+                  className="sc-jWBwVP dITmiV"
                 >
                   <div
                     className="sc-gPEVay dafan"
@@ -10318,7 +10318,7 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                   </div>
                 </td>
                 <td
-                  className="sc-eHgmQL dqnzNj"
+                  className="sc-eHgmQL IiGfj"
                 >
                   <div
                     className="sc-kkGfuU bnbQcV"

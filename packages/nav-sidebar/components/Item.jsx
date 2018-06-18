@@ -8,6 +8,7 @@ import {
 } from '@bufferapp/components';
 
 import {
+  curiousBlue,
   curiousBlueUltraLight,
 } from '@bufferapp/components/style/color';
 
@@ -19,7 +20,7 @@ const InnerLink = styled.span`
 
   ${props => !props.selected && css`
     &:hover > span {
-      color: #168eea !important;
+      color: ${curiousBlue} !important;
     }
   `}
 

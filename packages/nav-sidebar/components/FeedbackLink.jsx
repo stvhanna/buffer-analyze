@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { curiousBlue } from '@bufferapp/components/style/color';
 
 import {
   Text,
@@ -14,7 +15,7 @@ const InnerLink = styled.span`
   border-radius: 4px;
 
   &:hover > span {
-    color: #168eea !important;
+    color: ${curiousBlue} !important;
   }
 `;
 

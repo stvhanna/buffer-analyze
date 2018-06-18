@@ -3,6 +3,15 @@ import PropTypes from 'prop-types';
 import moment from 'moment-timezone';
 import styled from 'styled-components';
 import { Text } from '@bufferapp/components';
+
+import {
+  curiousBlue,
+  geyser,
+  lightSlate,
+  nevada,
+  outerSpace,
+} from '@bufferapp/components/style/color';
+
 import MetricGraph from '../MetricGraph';
 
 const PostRow = styled.tr`
@@ -10,55 +19,55 @@ const PostRow = styled.tr`
   padding: 0;
 
   &:first-child td {
-    border-top: 1px dotted #CED7DF;
+    border-top: 1px dotted ${geyser};
   }
 `;
 
 const MetricCellInner = styled.td`
   text-decoration: none;
-  color: #323b43;
+  color: ${outerSpace};
   padding: 1rem 0;
   width: 25%;
   padding-left: 1rem;
   vertical-align: top;
-  border-left: 1px dotted #CED7DF;
-  border-bottom: 1px dotted #CED7DF;
+  border-left: 1px dotted ${geyser};
+  border-bottom: 1px dotted ${geyser};
   `;
 
 const NumberCell = styled.td`
   position: relative;
-  color: #323b43;
+  color: ${outerSpace};
   padding: 0.9rem 1rem 1.25rem 0;
   text-align: right;
   vertical-align: top;
-  border-right: 1px dotted #CED7DF;
-  border-bottom: 1px dotted #CED7DF;
+  border-right: 1px dotted ${geyser};
+  border-bottom: 1px dotted ${geyser};
 `;
 
 const ContentCell = styled.td`
   text-decoration: none;
-  color: #323b43;
+  color: ${outerSpace};
   padding: 1rem 1rem 1.25rem;
   padding-right: 1rem;
   vertical-align: top;
-  border-bottom: 1px dotted #CED7DF;
+  border-bottom: 1px dotted ${geyser};
 `;
 
 const ContentDate = styled.div`
-  color: #666c72;
+  color: ${nevada};
   margin-bottom: 0.5rem;
   text-decoration: none;
 `;
 
 const ContentContainer = styled.div`
   overflow: hidden;
-  color: #8A9097;
+  color: ${lightSlate};
   
   a,
   a:link,
   a:visited,
   a:hover {
-    color: #8A9097;
+    color: ${lightSlate};
     text-decoration: none;
   }
 `;
@@ -101,7 +110,7 @@ const PostContent = styled.div`
 const ViewPostLinkClass = styled.a`
   display: inline-block;
   padding: 0.2rem 0 0 0.75rem;
-  color: #168eea;
+  color: ${curiousBlue};
   text-decoration: none;
 
   &:hover {

@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { white } from '@bufferapp/components/style/color';
 
 const Container = styled.div`
-  background: #FFFFFF;
+  background: ${white};
   border: 1px solid #E2E8ED;
-  box-shadow: 0px 0px 10px rgba(48, 71, 89, 0.05);
   border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(48, 71, 89, 0.05);
   margin: 0 0 1rem;
 `;
 

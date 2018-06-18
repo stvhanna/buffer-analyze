@@ -8,6 +8,12 @@ import {
   Text,
 } from '@bufferapp/components';
 
+import {
+  curiousBlue,
+  geyser,
+  white,
+} from '@bufferapp/components/style/color';
+
 const Container = styled.div`
   display: inline-flex;
   width: 1.7rem;
@@ -32,12 +38,12 @@ const Marker = styled.span`
   border-radius: 1.7rem;
 
   ${props => props.today && css`
-    background: #CED7DF;
+    background: ${geyser};
   `}
 
   ${props => props.selected && css`
-    background: #168EEA;
-    color: #FFFFFF;
+    background: ${curiousBlue};
+    color: ${white};
   `}
 
   ${props => props.start && css`
@@ -56,7 +62,7 @@ const StartMarkerConnector = styled.span`
   flex-grow: 1;
 
   ${props => props.active && css`
-    background: #168EEA;
+    background: ${curiousBlue};
   `}
 
   ${props => props.round && css`
@@ -70,7 +76,7 @@ const EndMarkerConnector = styled.span`
   flex-grow: 1;
 
   ${props => props.active && css`
-    background: #168EEA;
+    background: ${curiousBlue};
   `}
 
   ${props => props.round && css`

@@ -10,7 +10,7 @@ exports[`Snapshots SummaryTable should render a "no data" state 1`] = `
     }
   >
     <div
-      className="sc-kgoBCf eKtgtS"
+      className="sc-kgoBCf fymEWw"
     >
       <header
         className="sc-kGXeez esQcyC"
@@ -79,7 +79,7 @@ exports[`Snapshots SummaryTable should render a loading state 1`] = `
     }
   >
     <div
-      className="sc-kgoBCf eKtgtS"
+      className="sc-kgoBCf fymEWw"
     >
       <header
         className="sc-kGXeez esQcyC"
@@ -199,7 +199,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
     }
   >
     <div
-      className="sc-kgoBCf eKtgtS"
+      className="sc-kgoBCf fymEWw"
     >
       <header
         className="sc-kGXeez esQcyC"
@@ -964,7 +964,7 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
     }
   >
     <div
-      className="sc-kgoBCf eKtgtS"
+      className="sc-kgoBCf fymEWw"
     >
       <header
         className="sc-kGXeez esQcyC"
@@ -1441,7 +1441,7 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
     }
   >
     <div
-      className="sc-kgoBCf eKtgtS"
+      className="sc-kgoBCf fymEWw"
     >
       <header
         className="sc-kGXeez esQcyC"

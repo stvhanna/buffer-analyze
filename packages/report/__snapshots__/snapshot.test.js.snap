@@ -1228,11 +1228,11 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
     className="sc-kxynE jPxQWj"
   >
     <div
-      className="sc-jKVCRD lkEhfb"
+      className="sc-jKVCRD gcvHXT"
       id="report-page"
     >
       <div
-        className="sc-kaNhvL lmPONa"
+        className="sc-kaNhvL cZRnAm"
       >
         <span
           style={
@@ -1312,7 +1312,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
               }
             >
               <h1
-                className="sc-LKuAh PHAQY"
+                className="sc-LKuAh elVZTo"
               >
                 Weekly Sync Report
               </h1>
@@ -1637,7 +1637,7 @@ exports[`Snapshots Report renders a loading report 1`] = `
     className="sc-kxynE jPxQWj"
   >
     <div
-      className="sc-chbbiW kwhVXj"
+      className="sc-chbbiW gxUVCJ"
     >
       <div
         className="sc-VigVT iLurmb"
@@ -1728,11 +1728,11 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
     className="sc-kxynE jPxQWj"
   >
     <div
-      className="sc-jKVCRD lkEhfb"
+      className="sc-jKVCRD gcvHXT"
       id="report-page"
     >
       <div
-        className="sc-kaNhvL lmPONa"
+        className="sc-kaNhvL cZRnAm"
       >
         <span
           style={
@@ -4325,11 +4325,11 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
     className="sc-kxynE jPxQWj"
   >
     <div
-      className="sc-jKVCRD lkEhfb"
+      className="sc-jKVCRD gcvHXT"
       id="report-page"
     >
       <div
-        className="sc-kaNhvL lmPONa"
+        className="sc-kaNhvL cZRnAm"
       >
         <span
           style={
@@ -4434,7 +4434,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
               }
             >
               <h1
-                className="sc-LKuAh PHAQY"
+                className="sc-LKuAh elVZTo"
               >
                 Weekly Sync Report
               </h1>
@@ -7036,11 +7036,11 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
     className="sc-kxynE jPxQWj"
   >
     <div
-      className="sc-jKVCRD lkEhfb"
+      className="sc-jKVCRD gcvHXT"
       id="report-page"
     >
       <div
-        className="sc-kaNhvL lmPONa"
+        className="sc-kaNhvL cZRnAm"
       >
         <span
           style={
@@ -7120,7 +7120,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
               }
             >
               <h1
-                className="sc-LKuAh PHAQY"
+                className="sc-LKuAh elVZTo"
               >
                 Weekly Sync Report
               </h1>

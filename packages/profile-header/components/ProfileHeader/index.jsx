@@ -5,6 +5,11 @@ import styled from 'styled-components';
 import { Text } from '@bufferapp/components';
 import { ProfileBadge } from '@bufferapp/analyze-shared-components';
 
+import {
+  nevada,
+  outerSpace,
+} from '@bufferapp/components/style/color';
+
 const Container = styled.div`
   display: flex;
   margin: 0 0 1.5rem;
@@ -28,7 +33,7 @@ const Header = styled.span`
   display: block;
   font-size: 0.875rem;
   font-weight: 400;
-  color: #323b43;
+  color: ${outerSpace};
   margin: 0 0 0.1rem;
 
   &:hover {
@@ -36,7 +41,7 @@ const Header = styled.span`
   }
 
   a {
-    color: #323b43;
+    color: ${outerSpace};
     text-decoration: none;
   }
 `;
@@ -45,7 +50,7 @@ const Subheader = styled.span`
   font-size: 12px;
   line-height: 12px;
   font-weight: 600;
-  color: #323b43;
+  color: ${outerSpace};
 `;
 
 const Note = styled.a`
@@ -54,8 +59,9 @@ const Note = styled.a`
   height: 100%;
   display: flex;
   align-items: center;
-  color: #666C72;
+  color: ${nevada};
   text-decoration: none;
+
   &:hover {
     text-decoration: underline;
   }

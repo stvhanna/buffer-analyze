@@ -1,34 +1,44 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
 import {
   Text,
   Button,
 } from '@bufferapp/components';
+
 import {
   ChartStateLoading as Loading,
 } from '@bufferapp/analyze-shared-components';
+
 import {
   EditIcon,
 } from '@bufferapp/components/Icon/Icons';
-import styled from 'styled-components';
+
+import {
+  black,
+  offWhite,
+  white,
+} from '@bufferapp/components/style/color';
+
 import ChartFactory from '../ChartFactory';
 import DateRange from '../DateRange';
 import EditTitle from '../EditTitle';
 import LogoUpload from '../LogoUpload';
 
 const Page = styled.div`
-  background: #FCFCFC;
+  background: ${offWhite};
 `;
 
 const Header = styled.div`
   padding: 4.5rem 4rem;
-  background: #FFFFFF;
+  background: ${white};
   border-bottom: 1px solid #DBE8F1;
 `;
 
 const Title = styled.h1`
   display: inline-block;
-  color: #000000;
+  color: ${black};
   font-size: 2rem;
   font-weight: 700;
   margin: 0 0 .5rem 0;
@@ -50,7 +60,7 @@ const Icon = styled.div`
 const Centered = styled.div`
   display: flex;
   height: 400px;
-  background: #FFFFFF;
+  background: ${white};
   justify-content: center;
   align-items: center;
 `;

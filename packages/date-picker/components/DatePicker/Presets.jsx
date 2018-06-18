@@ -1,12 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import moment from 'moment';
 import styled, { css } from 'styled-components';
 
 import {
   Button,
   Text,
 } from '@bufferapp/components';
+
+import {
+  curiousBlue,
+  geyser,
+} from '@bufferapp/components/style/color';
 
 const Header = styled.header`
   margin: 0 0 0.5rem;
@@ -40,7 +44,7 @@ const Item = styled.li`
   padding: 0;
   text-decoration: none;
   text-shadow: none;
-  border: 1px solid #CED7DF;
+  border: 1px solid ${geyser};
   border-radius: 3px;
   text-align: center;
   user-select: none;
@@ -64,8 +68,8 @@ const Item = styled.li`
   `}
 
   ${props => props.active && css`
-    background: #168EEA;
-    border-color: #168EEA;
+    background: ${curiousBlue};
+    border-color: ${curiousBlue};
   `}
 
   ${props => props.disabled && css`

@@ -2,14 +2,20 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Text from '@bufferapp/components/Text';
 import moment from 'moment-timezone';
-import { TruncatedNumber, MetricIcon } from '@bufferapp/analyze-shared-components';
+
+import {
+  MetricIcon,
+  TruncatedNumber,
+} from '@bufferapp/analyze-shared-components';
+
+import { white } from '@bufferapp/components/style/color';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
+  cursor: default;
   width: 240px;
   padding: 10px;
-  color: #fff;
-  cursor: default;
+  color: ${white};
   font-size: 1rem;
   pointer-events: none;
   white-space: normal;
