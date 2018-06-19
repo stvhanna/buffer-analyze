@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/analyze-store",
-  "version": "0.61.0",
+  "version": "0.62.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -32,7 +32,7 @@
     "@bufferapp/audience-chart": "^0.61.0",
     "@bufferapp/average-table": "^0.61.0",
     "@bufferapp/buffermetrics": "^0.5.2",
-    "@bufferapp/compare-chart": "^0.61.0",
+    "@bufferapp/compare-chart": "^0.62.0",
     "@bufferapp/comparison-chart": "^0.61.0",
     "@bufferapp/contextual-compare": "^0.61.0",
     "@bufferapp/environment": "1.2.3",
