@@ -19,7 +19,7 @@ storiesOf('CompareChart')
     >
       <CompareChart
         profileService="facebook"
-        totalPeriodDaily={mockDailyData}
+        daily={mockDailyData}
         selectedMetricLabel="Click"
         totals={mockTotals}
         timezone="America/Los_Angeles"
@@ -27,8 +27,6 @@ storiesOf('CompareChart')
         togglePreviousPeriod={() => {}}
         openDropdown={() => {}}
         closeDropdown={() => {}}
-        selectDailyMode={actionLogger('selectDailyMode')}
-        dailyMode={1}
       />
     </div>
   ))
@@ -40,7 +38,7 @@ storiesOf('CompareChart')
     >
       <CompareChart
         profileService="facebook"
-        totalPeriodDaily={mockDailyData}
+        daily={mockDailyData}
         selectedMetricLabel="Posts"
         totals={mockTotals}
         timezone="America/Los_Angeles"
@@ -48,8 +46,6 @@ storiesOf('CompareChart')
         togglePreviousPeriod={() => {}}
         openDropdown={() => {}}
         closeDropdown={() => {}}
-        selectDailyMode={actionLogger('selectDailyMode')}
-        dailyMode={1}
       />
     </div>
   ))
@@ -61,7 +57,7 @@ storiesOf('CompareChart')
     >
       <CompareChart
         profileService="facebook"
-        totalPeriodDaily={mockDailyData}
+        daily={mockDailyData}
         selectedMetricLabel="Posts"
         totals={mockTotals}
         timezone="America/Los_Angeles"
@@ -70,29 +66,7 @@ storiesOf('CompareChart')
         openDropdown={() => {}}
         closeDropdown={() => {}}
         selectDailyMode={actionLogger('selectDailyMode')}
-        dailyMode={1}
         visualizePreviousPeriod
-      />
-    </div>
-  ))
-  .add('should render the compare chart with mode toggle Twitter', () => (
-    <div
-      style={{
-        width: '750px',
-      }}
-    >
-      <CompareChart
-        profileService="twitter"
-        daily={mockDailyData}
-        selectedMetricLabel="Click"
-        totals={mockTotals}
-        timezone="America/Los_Angeles"
-        selectMetric={() => {}}
-        togglePreviousPeriod={() => {}}
-        openDropdown={() => {}}
-        closeDropdown={() => {}}
-        selectDailyMode={actionLogger('selectDailyMode')}
-        dailyMode={0}
       />
     </div>
   ))
@@ -104,7 +78,7 @@ storiesOf('CompareChart')
     >
       <CompareChart
         profileService="facebook"
-        totalPeriodDaily={mockDailyData}
+        daily={mockDailyData}
         selectedMetricLabel="Click"
         totals={mockTotals}
         timezone="America/Los_Angeles"
@@ -112,8 +86,6 @@ storiesOf('CompareChart')
         togglePreviousPeriod={() => {}}
         openDropdown={() => {}}
         closeDropdown={() => {}}
-        selectDailyMode={actionLogger('selectDailyMode')}
-        dailyMode={1}
         visualizePreviousPeriod
       />
     </div>
@@ -126,15 +98,13 @@ storiesOf('CompareChart')
     >
       <CompareChart
         profileService="facebook"
-        totalPeriodDaily={[]}
+        daily={[]}
         totals={[]}
         timezone="America/Los_Angeles"
         selectMetric={() => {}}
         togglePreviousPeriod={() => {}}
         openDropdown={() => {}}
         closeDropdown={() => {}}
-        selectDailyMode={actionLogger('selectDailyMode')}
-        dailyMode={1}
         loading
       />
     </div>
@@ -147,15 +117,13 @@ storiesOf('CompareChart')
     >
       <CompareChart
         profileService="twitter"
-        totalPeriodDaily={[]}
+        daily={[]}
         totals={[]}
         timezone="America/Los_Angeles"
         selectMetric={() => {}}
         togglePreviousPeriod={() => {}}
         openDropdown={() => {}}
         closeDropdown={() => {}}
-        selectDailyMode={actionLogger('selectDailyMode')}
-        dailyMode={1}
       />
     </div>
   ));

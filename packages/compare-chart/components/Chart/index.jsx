@@ -164,10 +164,9 @@ const Container = styled.div`
 
 class Chart extends PureComponent {
   render() {
-    const { daily, totalPeriodDaily, selectedMetricLabel,
-      dailyMode, timezone, visualizePreviousPeriod, profileService } = this.props;
-    const dailyData = dailyMode === 1 ? totalPeriodDaily : daily;
-    const filteredDailyData = filterDailyDataMetrics(dailyData, selectedMetricLabel);
+    const { daily, selectedMetricLabel,
+      timezone, visualizePreviousPeriod, profileService } = this.props;
+    const filteredDailyData = filterDailyDataMetrics(daily, selectedMetricLabel);
     const charOptions = prepareChartOptions(
       filteredDailyData,
       timezone,
@@ -183,18 +182,6 @@ class Chart extends PureComponent {
 }
 
 Chart.propTypes = {
-  totalPeriodDaily: PropTypes.arrayOf(PropTypes.shape({
-    day: PropTypes.string.isRequired,
-    previousPeriodDay: PropTypes.string.isRequired,
-    metric: PropTypes.shape({
-      color: PropTypes.string.isRequired,
-      diff: PropTypes.number.isRequired,
-      label: PropTypes.string.isRequired,
-      value: PropTypes.number.isRequired,
-      previousValue: PropTypes.number.isRequired,
-      postsCount: PropTypes.number.isRequired,
-    }),
-  })).isRequired,
   daily: PropTypes.arrayOf(PropTypes.shape({
     day: PropTypes.string.isRequired,
     previousPeriodDay: PropTypes.string.isRequired,
@@ -211,7 +198,6 @@ Chart.propTypes = {
   timezone: PropTypes.string.isRequired,
   visualizePreviousPeriod: PropTypes.bool,
   selectedMetricLabel: PropTypes.string,
-  dailyMode: PropTypes.number.isRequired,
 };
 
 Chart.defaultProps = {

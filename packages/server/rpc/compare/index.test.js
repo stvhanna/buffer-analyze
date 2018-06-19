@@ -214,43 +214,6 @@ describe('rpc/compare', () => {
 
     expect(data.daily.length).toBe(7);
 
-    expect(data.totalPeriodDaily.length).toBe(0);
-
-    expect(data.daily[0]).toMatchObject({
-      day: '1504051200000',
-      previousPeriodDay: '1503446400000',
-    });
-  });
-
-  it('should return Period Total data for Twitter', async() => {
-    rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
-    rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_DAILY_RESPONSE));
-
-    const data = await compare.fn({ profileId, profileService: 'twitter' }, mockedRequest);
-
-    const secondDayMetric = data.daily[1].metrics[0];
-    expect(data.totalPeriodDaily.length).toBe(7);
-
-    expect(data.totalPeriodDaily[1].metrics[0])
-      .not.toMatchObject(data.daily[1].metrics[0]);
-
-    expect(data.totalPeriodDaily[1].metrics[0]).toMatchObject({
-      label: 'Total Followers',
-      value: secondDayMetric.value,
-      previousValue: secondDayMetric.previousValue,
-    });
-  });
-
-  it('should return daily totals only for days that match with the previous period', async() => {
-    rp.mockReturnValueOnce(Promise.resolve(CURRENT_PERIOD_DAILY_RESPONSE));
-    rp.mockReturnValueOnce(Promise.resolve(PAST_PERIOD_DAILY_PARTIAL_RESPONSE));
-
-    const data = await compare.fn({ profileId, profileService }, mockedRequest);
-
-    expect(data.daily.length).toBe(2);
-
-    expect(data.totalPeriodDaily.length).toBe(0);
-
     expect(data.daily[0]).toMatchObject({
       day: '1504051200000',
       previousPeriodDay: '1503446400000',
