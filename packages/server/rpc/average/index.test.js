@@ -178,16 +178,19 @@ describe('rpc/average', () => {
         diff: 202,
         label: 'Daily average impressions',
         value: 168719,
+        metricKey: 'impressions',
       },
       {
         diff: 149,
         label: 'Daily average engagements',
         value: 1833,
+        metricKey: 'engagements',
       },
       {
         diff: 173,
         label: 'Daily average clicks',
         value: 8570,
+        metricKey: 'clicks',
       },
     ]);
   });
@@ -206,16 +209,19 @@ describe('rpc/average', () => {
         diff: 0,
         label: 'Average impressions per tweet',
         value: 100,
+        metricKey: 'impressions',
       },
       {
         diff: 900,
         label: 'Average engagements per tweet',
         value: 200,
+        metricKey: 'engagements',
       },
       {
         diff: 0,
         label: 'Average clicks per tweet',
         value: 20,
+        metricKey: 'clicks',
       },
     ]);
   });
@@ -235,16 +241,19 @@ describe('rpc/average', () => {
         diff: -50,
         label: 'Daily average impressions',
         value: 7,
+        metricKey: 'impressions',
       },
       {
         diff: 100,
         label: 'Average likes per post',
         value: 20,
+        metricKey: 'likes',
       },
       {
         diff: 100,
         label: 'Average comments per post',
         value: 10,
+        metricKey: 'comments',
       },
     ]);
   });
@@ -262,16 +271,19 @@ describe('rpc/average', () => {
         diff: 0,
         label: 'Daily average impressions',
         value: 0,
+        metricKey: 'impressions',
       },
       {
         diff: 0,
         label: 'Daily average engagements',
         value: 0,
+        metricKey: 'engagements',
       },
       {
         diff: 0,
         label: 'Daily average clicks',
         value: 0,
+        metricKey: 'clicks',
       },
     ]);
   });
@@ -289,16 +301,19 @@ describe('rpc/average', () => {
         diff: 16871900,
         label: 'Daily average impressions',
         value: 168719,
+        metricKey: 'impressions',
       },
       {
         diff: 183300,
         label: 'Daily average engagements',
         value: 1833,
+        metricKey: 'engagements',
       },
       {
         diff: 857000,
         label: 'Daily average clicks',
         value: 8570,
+        metricKey: 'clicks',
       },
     ]);
   });
@@ -315,9 +330,9 @@ describe('rpc/average', () => {
     expect(data.daily[0]).toEqual({
       day: '1504051200000',
       metrics: [
-        { diff: 869, label: 'Daily average engagements', value: 3119 },
-        { diff: 74, label: 'Daily average impressions', value: 78966 },
-        { diff: 47, label: 'Daily average clicks', value: 2656 },
+        { diff: 869, label: 'Daily average engagements', value: 3119, metricKey: 'engagements' },
+        { diff: 74, label: 'Daily average impressions', value: 78966, metricKey: 'impressions' },
+        { diff: 47, label: 'Daily average clicks', value: 2656, metricKey: 'clicks' },
       ],
     });
   });

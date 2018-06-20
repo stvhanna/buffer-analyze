@@ -12,6 +12,7 @@ function prepareSeries(dailyMetric) {
       x: dayStartTimestamp,
       y: day.metric ? day.metric.value : 0,
       label: day.metric ? day.metric.label : '',
+      metricKey: day.metric ? day.metric.metricKey : '',
       color: {
         linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
         stops: [

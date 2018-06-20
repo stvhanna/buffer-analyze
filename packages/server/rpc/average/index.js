@@ -24,6 +24,27 @@ const LABELS = {
   },
 };
 
+const METRIC_KEY_LABELS = {
+  // Facebook metrics
+  facebook: {
+    post_impressions: 'impressions',
+    page_engagements: 'engagements',
+    post_clicks: 'clicks',
+  },
+  // Twitter metrics
+  twitter: {
+    impressions: 'impressions',
+    engagements: 'engagements',
+    url_clicks: 'clicks',
+  },
+  // Instagram metrics
+  instagram: {
+    impressions: 'impressions',
+    likes: 'likes',
+    comments: 'comments',
+  },
+};
+
 function shouldUseAnalyzeApi (profileService) {
   return profileService === 'instagram';
 }
@@ -93,7 +114,7 @@ function averageValue(value, quantity) {
 }
 
 const summarize = (
-  metriKey,
+  metricKey,
   profileService,
   currentPeriod,
   currentPeriodPostCount,
@@ -105,18 +126,19 @@ const summarize = (
   let pastPeriodQuantity = pastPeriodPostCount;
   // for facebook & IG impressions we calculate the average by
   // sum (metric per day) / number_of_days
-  if (daysCount && shouldUseDaysAsAverageQuantity(profileService, metriKey)) {
+  if (daysCount && shouldUseDaysAsAverageQuantity(profileService, metricKey)) {
     currentPeriodQuantity = daysCount;
     pastPeriodQuantity = daysCount;
   }
-  const pastValue = averageValue(pastPeriod[metriKey], pastPeriodQuantity);
-  const value = averageValue(currentPeriod[metriKey], currentPeriodQuantity);
-  const label = LABELS[profileService][metriKey];
+  const pastValue = averageValue(pastPeriod[metricKey], pastPeriodQuantity);
+  const value = averageValue(currentPeriod[metricKey], currentPeriodQuantity);
+  const label = LABELS[profileService][metricKey];
   if (label) {
     return {
       diff: percentageDifference(value, pastValue),
-      label: LABELS[profileService][metriKey],
+      label: LABELS[profileService][metricKey],
       value,
+      metricKey: METRIC_KEY_LABELS[profileService][metricKey],
     };
   }
   return null;
@@ -132,9 +154,9 @@ function formatTotals(
 ) {
   return Object
     .keys(currentPeriodResult)
-    .map(metriKey =>
+    .map(metricKey =>
       summarize(
-        metriKey,
+        metricKey,
         profileService,
         currentPeriodResult,
         currentPeriodPostCount,
@@ -163,9 +185,9 @@ function formatDaily(
     const dailyMetrics = Object.keys(data.currentPeriodMetrics);
     return {
       day: data.day,
-      metrics: dailyMetrics.map(metriKey =>
+      metrics: dailyMetrics.map(metricKey =>
         summarize(
-          metriKey,
+          metricKey,
           profileService,
           data.currentPeriodMetrics,
           data.currentPeriodPostCount,
