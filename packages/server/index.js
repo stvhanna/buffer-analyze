@@ -31,7 +31,7 @@ let bugsnagScript = '';
 // Note: Temporary diable fullStory due GDPR.
 let fullStoryScript = '';
 // This is for the Headway widget
-const headwayScript = '<script src="//cdn.headwayapp.co/widget.js"></script>';
+// const headwayScript = '<script src="//cdn.headwayapp.co/widget.js"></script>';
 
 const isProduction = process.env.NODE_ENV === 'production';
 app.set('isProduction', isProduction);
@@ -47,7 +47,7 @@ if (isProduction) {
     bugsnag.register(process.env.BUGSNAG_KEY);
     app.set('bugsnag', bugsnag);
     // NOTE: Bugsnag will not notify in local setup with current weback configuration
-    // https://docs.bugsnag.com/platforms/browsers/faq/#4-code-generated-with-eval-e-g-from-webpack
+    // httpss://docs.bugsnag.com/platforms/browsers/faq/#4-code-generated-with-eval-e-g-from-webpack
     bugsnagScript = `<script src="//d2wy8f7a9ursnm.cloudfront.net/bugsnag-3.min.js"
                               data-apikey="${process.env.BUGSNAG_KEY}"></script>`;
   }
@@ -76,8 +76,8 @@ if (isProduction) {
 
 const html = fs.readFileSync(join(__dirname, 'index.html'), 'utf8')
   .replace('{{{bundle}}}', staticAssets['bundle.js'])
-  .replace('{{{bugsnagScript}}}', bugsnagScript)
-  .replace('{{{headwayScript}}}', headwayScript);
+  .replace('{{{bugsnagScript}}}', bugsnagScript);
+  // .replace('{{{headwayScript}}}', headwayScript);
 
 app.use(logMiddleware({ name: 'BufferAnalyze' }));
 app.use(cookieParser());
