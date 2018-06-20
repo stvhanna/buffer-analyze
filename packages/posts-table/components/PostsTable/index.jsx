@@ -59,7 +59,7 @@ function getMaxMetricValue(posts, metrics) {
   return max;
 }
 
-export const Table = ({ metrics, timezone, service }) => {
+export const Table = ({ metrics, timezone, service, exporting }) => {
   const topPosts = metrics;
   const engagementMetrics = metricsConfig[service].topPostsEngagementMetrics;
   const audienceMetrics = metricsConfig[service].topPostsAudienceMetrics;
@@ -80,6 +80,7 @@ export const Table = ({ metrics, timezone, service }) => {
             maxAudienceValue={maxAudienceValue}
             engagementMetrics={engagementMetrics}
             audienceMetrics={audienceMetrics}
+            exporting={exporting}
           />,
         )}
       </PostsTableWrapper>
@@ -105,6 +106,7 @@ Table.propTypes = {
     text: PropTypes.string,
     type: PropTypes.string,
   })).isRequired,
+  exporting: PropTypes.bool.isRequired,
 };
 
 const PostsTable = (props) => {
@@ -122,12 +124,12 @@ const PostsTable = (props) => {
     toggleDropdown,
     handlePostsCountClick,
     activePostsCount,
+    exporting,
   } = props;
   if (selectedProfileId === null) {
     return null;
   }
 
-  // TODO: Move this to RPC endpoint and pass it as a prop to PostTable components
   const topPosts = metrics;
   const allPostMetrics = metricsConfig[profileService].postMetrics;
 
@@ -157,6 +159,7 @@ const PostsTable = (props) => {
           metrics={metrics}
           timezone={timezone}
           service={profileService}
+          exporting={exporting}
         />
       </div>
     );
@@ -180,6 +183,7 @@ PostsTable.defaultProps = {
   loading: false,
   addToReportButton: null,
   selectedProfileId: null,
+  exporting: false,
 };
 
 PostsTable.propTypes = {
@@ -213,6 +217,7 @@ PostsTable.propTypes = {
   activePostsCount: PropTypes.number.isRequired,
   addToReportButton: PropTypes.element,
   selectedProfileId: PropTypes.string,
+  exporting: PropTypes.bool,
 };
 
 export default PostsTable;

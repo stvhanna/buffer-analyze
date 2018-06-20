@@ -181,6 +181,7 @@ const PostItem = ({
   maxAudienceValue,
   timezone,
   index,
+  exporting,
 }) => {
   const secondaryPostColumnMetrics = audienceMetrics.map(metric => ({
     ...metric,
@@ -206,7 +207,7 @@ const PostItem = ({
             <Text size="small" weight="bold" color="outerSpace">
               {moment(post.date).tz(timezone).format(dateFormat)}
             </Text>
-            <ViewPostLinkClass
+            {!exporting && <ViewPostLinkClass
               href={post.serviceLink}
               target="_blank"
               rel="noopener noreferrer"
@@ -215,7 +216,7 @@ const PostItem = ({
                 <i className="bi-click" />
                 View Post
               </Text>
-            </ViewPostLinkClass>
+            </ViewPostLinkClass>}
           </ContentDate>
         </PostMeta>
         <PostContent>
@@ -259,6 +260,7 @@ PostItem.propTypes = {
   maxAudienceValue: PropTypes.number.isRequired,
   timezone: PropTypes.string.isRequired,
   index: PropTypes.number.isRequired,
+  exporting: PropTypes.bool.isRequired,
 };
 
 export default PostItem;
