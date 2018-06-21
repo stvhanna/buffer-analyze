@@ -29,7 +29,7 @@ spec:
         track: stable
     spec:
       containers:
-      - image: "{{ .Values.image.repository }}:8a4ae5282ceca7ee84956f1cd823f7c5c00cb516"
+      - image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         name: {{ .Chart.Name }}
         ports:
