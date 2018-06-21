@@ -671,7 +671,7 @@ exports[`Snapshots App should render application 1`] = `
       }
     >
       <div
-        className="sc-hIVACf kvJwcg"
+        className="sc-hIVACf rHGDd"
       >
         <div
           style={
@@ -1051,6 +1051,23 @@ exports[`Snapshots App should render application 1`] = `
                   Welcome to Buffer Analyze
                 </span>
               </h2>
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "1rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                <div
+                  className="sc-eXNvrr jVRTyd"
+                  id="headway"
+                >
+                  What's New
+                </div>
+              </span>
             </header>
             <div
               className="sc-gVyKpa emdDbL"
@@ -1616,7 +1633,7 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
 exports[`Snapshots DefaultPage should render the dashboard page 1`] = `
 <span>
   <div
-    className="sc-hIVACf kvJwcg"
+    className="sc-hIVACf rHGDd"
   >
     <div
       style={
@@ -1996,6 +2013,23 @@ exports[`Snapshots DefaultPage should render the dashboard page 1`] = `
               Welcome to Buffer Analyze
             </span>
           </h2>
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            <div
+              className="sc-eXNvrr jVRTyd"
+              id="headway"
+            >
+              What's New
+            </div>
+          </span>
         </header>
         <div
           className="sc-gVyKpa emdDbL"
@@ -2559,7 +2593,7 @@ exports[`Snapshots InsightsPage should render Insights page 1`] = `
 exports[`Snapshots ReportsPage should render reports page 1`] = `
 <span>
   <div
-    className="sc-eXNvrr bVIEcI"
+    className="sc-cpmKsF jUThqo"
   >
     <div
       style={
@@ -2915,10 +2949,10 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
       </div>
     </div>
     <div
-      className="sc-cpmKsF kvxUmv"
+      className="sc-kQsIoO irbNkV"
     >
       <header
-        className="sc-gPzReC lnTwNi"
+        className="sc-jrIrqw iXwaaP"
       >
         <button
           className="sc-chPdSV dWobCQ"
@@ -2938,7 +2972,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
           </span>
         </button>
         <section
-          className="sc-hjRWVT dTjUKr"
+          className="sc-iybRtq bouxtm"
         >
           <div
             className="sc-gisBJw dbFHUv"
@@ -3301,10 +3335,10 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
         </section>
       </header>
       <div
-        className="sc-kQsIoO eQXRes"
+        className="sc-gPzReC ljbGKg"
       >
         <section
-          className="sc-jrIrqw gncPDK"
+          className="sc-hjRWVT ekFIJj"
         >
           <div
             className="sc-likbZx lhrdkz"
