@@ -16,11 +16,15 @@ const Container = styled.div`
   padding: 4.5rem 4rem;
   background: ${white};
   display: flex;
+  justify-content: center;
   align-items: center;
+  text-align: center;
 `;
 
+const Wrapper = styled.div``;
+
 const Inner = styled.div`
-  padding: 0 0 16rem;
+  padding: 0 8rem 24rem;
 `;
 
 const Title = styled.h1`
@@ -33,18 +37,22 @@ const Title = styled.h1`
 
 const Logo = styled.img`
   display: block;
-  margin: 0 0 2rem;
+  margin: 4rem auto 0;
+  max-width: 300px;
+  max-height: 300px;
 `;
 
 const Cover = ({ dateRange, logoUrl, name }) =>
   <Container>
-    <Inner>
-      <Text>
-        { logoUrl && <Logo src={logoUrl} alt={name} /> }
-        <Title>{name}</Title>
-        <DateRange {...dateRange} large />
-      </Text>
-    </Inner>
+    <Wrapper>
+      <Inner>
+        <Text>
+          <Title>{name}</Title>
+          <DateRange {...dateRange} large />
+        </Text>
+      </Inner>
+      {logoUrl && <Logo src={logoUrl} alt={name} />}
+    </Wrapper>
   </Container>;
 
 Cover.defaultProps = {

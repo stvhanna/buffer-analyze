@@ -11539,45 +11539,49 @@ exports[`Snapshots ReportExport renders the export report 1`] = `
       className="sc-kZmsYB dvZQII"
     >
       <div
-        className="sc-jKVCRD fQYauc"
+        className="sc-jKVCRD izNTaj"
       >
         <div
-          className="sc-kaNhvL gJzOJx"
+          className="sc-kaNhvL Ftjgs"
         >
-          <span
-            style={
-              Object {
-                "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1rem",
-                "fontWeight": 400,
-              }
-            }
+          <div
+            className="sc-LKuAh iqBaYv"
           >
-            <h1
-              className="sc-LKuAh gicmvd"
-            >
-              Sample report
-            </h1>
             <span
               style={
                 Object {
-                  "color": "#000",
+                  "color": "#59626a",
                   "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1.5rem",
-                  "fontWeight": 700,
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
                 }
               }
             >
-              <span
-                className="sc-htpNat KtFsv"
+              <h1
+                className="sc-iBEsjs ejcRlh"
               >
-                February 20, 2018
-                 to 
-                February 25, 2018
+                Sample report
+              </h1>
+              <span
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "1.5rem",
+                    "fontWeight": 700,
+                  }
+                }
+              >
+                <span
+                  className="sc-htpNat KtFsv"
+                >
+                  February 20, 2018
+                   to 
+                  February 25, 2018
+                </span>
               </span>
             </span>
-          </span>
+          </div>
         </div>
       </div>
     </article>
@@ -11588,45 +11592,49 @@ exports[`Snapshots ReportExport renders the export report 1`] = `
 exports[`Snapshots ReportExport renders the export report cover only 1`] = `
 <span>
   <div
-    className="sc-jKVCRD fQYauc"
+    className="sc-jKVCRD izNTaj"
   >
     <div
-      className="sc-kaNhvL gJzOJx"
+      className="sc-kaNhvL Ftjgs"
     >
-      <span
-        style={
-          Object {
-            "color": "#59626a",
-            "fontFamily": "\\"Roboto\\", sans-serif",
-            "fontSize": "1rem",
-            "fontWeight": 400,
-          }
-        }
+      <div
+        className="sc-LKuAh iqBaYv"
       >
-        <h1
-          className="sc-LKuAh gicmvd"
-        >
-          Sample report
-        </h1>
         <span
           style={
             Object {
-              "color": "#000",
+              "color": "#59626a",
               "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "1.5rem",
-              "fontWeight": 700,
+              "fontSize": "1rem",
+              "fontWeight": 400,
             }
           }
         >
-          <span
-            className="sc-htpNat KtFsv"
+          <h1
+            className="sc-iBEsjs ejcRlh"
           >
-            February 20, 2018
-             to 
-            February 25, 2018
+            Sample report
+          </h1>
+          <span
+            style={
+              Object {
+                "color": "#000",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1.5rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            <span
+              className="sc-htpNat KtFsv"
+            >
+              February 20, 2018
+               to 
+              February 25, 2018
+            </span>
           </span>
         </span>
-      </span>
+      </div>
     </div>
   </div>
 </span>
@@ -11656,7 +11664,7 @@ exports[`Snapshots ReportExport renders the export report footer only 1`] = `
 exports[`Snapshots ReportExport renders the export report header only 1`] = `
 <span>
   <header
-    className="sc-kxynE hEtBOP"
+    className="sc-cooIXK eXTcSH"
   >
     <span
       style={
@@ -11668,15 +11676,11 @@ exports[`Snapshots ReportExport renders the export report header only 1`] = `
         }
       }
     >
-      <div
-        className="sc-cooIXK fsehyO"
+      <h1
+        className="sc-chbbiW UtOMg"
       >
-        <h1
-          className="sc-hzNEM kDNCNv"
-        >
-          Sample report
-        </h1>
-      </div>
+        Sample report
+      </h1>
       <span
         style={
           Object {

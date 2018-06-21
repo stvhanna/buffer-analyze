@@ -20,30 +20,26 @@ const Title = styled.h1`
 `;
 
 const Logo = styled.img`
-  display: block;
-  margin: 0 0 2rem;
+  max-width: 160px;
+  max-height: 80px;
 `;
 
 const Container = styled.header`
   padding: 4.5rem 4rem;
   background: ${white};
   border-bottom: 1px solid ${geyser};
-`;
-
-const Inner = styled.div`
   display: flex;
   justify-content: space-between;
+  align-content: center;
 `;
 
 const Header = ({ dateRange, logoUrl, name }) =>
   <Container>
     <Text>
-      <Inner>
-        {logoUrl && <Logo src={logoUrl} />}
-        <Title>{name}</Title>
-      </Inner>
+      <Title>{name}</Title>
       <DateRange {...dateRange} />
     </Text>
+    {logoUrl && <Logo src={logoUrl} />}
   </Container>;
 
 Header.defaultProps = {

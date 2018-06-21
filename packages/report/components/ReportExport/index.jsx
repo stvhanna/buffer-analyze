@@ -3,16 +3,11 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import {
-  Text,
-} from '@bufferapp/components';
-
-import {
   ChartStateLoading as Loading,
 } from '@bufferapp/analyze-shared-components';
 
 import {
   offWhite,
-  white,
 } from '@bufferapp/components/style/color';
 
 import ChartFactory from '../ChartFactory';
