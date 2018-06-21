@@ -126,41 +126,6 @@ function formatDaily(
   return daily;
 }
 
-function formatTotalPeriodDaily(formattedDailyData) {
-  const totalPeriodDaily = [];
-  let dayClone = {};
-  let metricClone = {};
-  formattedDailyData.forEach((day, dayIndex) => {
-    dayClone = Object.assign({}, day, {
-      metrics: [],
-    });
-
-    day.metrics.forEach((metric, metricIndex) => {
-      if (metric.key === 'followers') {
-        metricClone = Object.assign({}, metric);
-      } else {
-        metricClone = Object.assign({}, metric, {
-          value: dayIndex === 0 ? metric.value :
-            metric.value + totalPeriodDaily[dayIndex - 1].metrics[metricIndex].value,
-          previousValue: dayIndex === 0 ? metric.previousValue :
-            metric.previousValue + totalPeriodDaily[dayIndex - 1].metrics[metricIndex].previousValue,
-        });
-      }
-      delete metricClone.diff;
-      dayClone.metrics.push(metricClone);
-    });
-
-    totalPeriodDaily.push(dayClone);
-  });
-
-  return totalPeriodDaily;
-}
-
-function shouldComputeTotalPeriodDaily (profileService) {
-  return profileService === 'twitter' ||
-  profileService === 'instagram';
-}
-
 function getTotalsFromDaily (dailyData) {
   const currentPeriodTotals = {};
   const previousPeriodTotals = {};
@@ -220,14 +185,9 @@ function formatData(
     profileService,
   );
 
-  const totalPeriodDaily = shouldComputeTotalPeriodDaily(profileService) ?
-    formatTotalPeriodDaily(daily) :
-    [];
-
   return {
     totals,
     daily,
-    totalPeriodDaily,
   };
 }
 

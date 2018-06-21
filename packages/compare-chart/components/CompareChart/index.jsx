@@ -7,7 +7,6 @@ import {
   ChartStateLoading as Loading,
   ChartCard,
   ChartHeader,
-  ModeToggle,
   MetricsDropdown,
 } from '@bufferapp/analyze-shared-components';
 
@@ -49,16 +48,13 @@ function getEndDate(dailyData) {
 
 export const ChartWithFooter = ({
   daily,
-  totalPeriodDaily,
   selectedMetricLabel,
   totals,
   timezone,
   visualizePreviousPeriod,
   profileService,
-  dailyMode,
 }) => {
-  const dailyData = dailyMode === 1 ? totalPeriodDaily : daily;
-  if (dailyData.length === 0) {
+  if (daily.length === 0) {
     return (
       <Container>
         <NoData />
@@ -69,16 +65,14 @@ export const ChartWithFooter = ({
     <div id="js-dom-to-png-compare">
       <Chart
         daily={daily}
-        totalPeriodDaily={totalPeriodDaily}
-        dailyMode={dailyMode}
         selectedMetricLabel={selectedMetricLabel}
         timezone={timezone}
         visualizePreviousPeriod={visualizePreviousPeriod}
         profileService={profileService}
       />
       <Footer
-        startDate={getStartDate(dailyData)}
-        endDate={getEndDate(dailyData)}
+        startDate={getStartDate(daily)}
+        endDate={getEndDate(daily)}
         selectedMetricLabel={selectedMetricLabel}
         totals={totals}
       />
@@ -87,17 +81,6 @@ export const ChartWithFooter = ({
 };
 
 ChartWithFooter.propTypes = {
-  totalPeriodDaily: PropTypes.arrayOf(PropTypes.shape({
-    day: PropTypes.string,
-    metrics: PropTypes.arrayOf(PropTypes.shape({
-      color: PropTypes.string,
-      diff: PropTypes.number,
-      label: PropTypes.string,
-      value: PropTypes.number,
-      previousValue: PropTypes.number,
-      postsCount: PropTypes.number,
-    })),
-  })).isRequired,
   daily: PropTypes.arrayOf(PropTypes.shape({
     day: PropTypes.string,
     metrics: PropTypes.arrayOf(PropTypes.shape({
@@ -117,14 +100,12 @@ ChartWithFooter.propTypes = {
   })).isRequired,
   timezone: PropTypes.string.isRequired,
   profileService: PropTypes.string.isRequired,
-  dailyMode: PropTypes.number.isRequired,
   visualizePreviousPeriod: PropTypes.bool.isRequired,
   selectedMetricLabel: PropTypes.string.isRequired,
 };
 
 const CompareChart = ({
   daily,
-  totalPeriodDaily,
   selectedMetricLabel,
   loading,
   totals,
@@ -136,29 +117,24 @@ const CompareChart = ({
   closeDropdown,
   isDropdownOpen,
   profileService,
-  selectDailyMode,
-  dailyMode,
 }) => {
   let content = null;
   let header = null;
-  const dailyData = dailyMode === 1 ? totalPeriodDaily : daily;
   if (loading) {
     content = <Loading active noBorder large />;
   } else {
     content = (
       <ChartWithFooter
         daily={daily}
-        totalPeriodDaily={totalPeriodDaily}
-        dailyMode={dailyMode}
         selectedMetricLabel={selectedMetricLabel}
         timezone={timezone}
         visualizePreviousPeriod={visualizePreviousPeriod}
         profileService={profileService}
-        dailyData={dailyData}
+        dailyData={daily}
         totals={totals}
       />
     );
-    if (dailyData.length > 0) {
+    if (daily.length > 0) {
       header = (
         <Header>
           <MetricsDropdown
@@ -169,14 +145,6 @@ const CompareChart = ({
             openDropdown={openDropdown}
             closeDropdown={closeDropdown}
           />
-          {profileService === 'twitter' &&
-            <ModeToggle
-              baseModeLabel="Daily"
-              secondaryModeLabel="Period Total"
-              active={dailyMode === 1}
-              handleClick={selectDailyMode}
-            />
-          }
           <PeriodToggle handleClick={togglePreviousPeriod} active={visualizePreviousPeriod} />
         </Header>
       );
@@ -187,8 +155,8 @@ const CompareChart = ({
     <ChartCard>
       <ChartHeader>
         <Title
-          startDate={getStartDate(dailyData)}
-          endDate={getEndDate(dailyData)}
+          startDate={getStartDate(daily)}
+          endDate={getEndDate(daily)}
         />
         <AddReport
           chart="compare"
@@ -196,7 +164,6 @@ const CompareChart = ({
             visualizePreviousPeriod,
             selectedMetricLabel,
             profileService,
-            dailyMode,
           }}
         />
       </ChartHeader>
@@ -213,23 +180,11 @@ CompareChart.defaultProps = {
   selectedMetricLabel: '',
   visualizePreviousPeriod: false,
   isDropdownOpen: false,
-  totalPeriodDaily: [],
   profileService: '',
 };
 
 CompareChart.propTypes = {
   loading: PropTypes.bool,
-  totalPeriodDaily: PropTypes.arrayOf(PropTypes.shape({
-    day: PropTypes.string,
-    metrics: PropTypes.arrayOf(PropTypes.shape({
-      color: PropTypes.string,
-      diff: PropTypes.number,
-      label: PropTypes.string,
-      value: PropTypes.number,
-      previousValue: PropTypes.number,
-      postsCount: PropTypes.number,
-    })),
-  })),
   daily: PropTypes.arrayOf(PropTypes.shape({
     day: PropTypes.string,
     metrics: PropTypes.arrayOf(PropTypes.shape({
@@ -257,8 +212,6 @@ CompareChart.propTypes = {
   togglePreviousPeriod: PropTypes.func.isRequired,
   openDropdown: PropTypes.func.isRequired,
   closeDropdown: PropTypes.func.isRequired,
-  selectDailyMode: PropTypes.func.isRequired,
-  dailyMode: PropTypes.number.isRequired,
 };
 
 export default CompareChart;
