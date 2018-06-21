@@ -86,7 +86,14 @@ class Report extends React.Component {
         logoUrl, deleteLogo, isLogoUploading, isLogoDropzoneDisabled } = this.props;
 
     if (exporting) {
-      return <ReportExport />;
+      return (
+        <ReportExport
+          dateRange={dateRange}
+          name={name}
+          loading={loading}
+          logoUrl={logoUrl}
+        />
+      );
     }
 
     if (loading) {
@@ -96,6 +103,7 @@ class Report extends React.Component {
         </Centered>
       );
     }
+
     return (
       <Page id="report-page">
         <Header>

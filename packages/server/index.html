@@ -11,20 +11,13 @@
         height: 100%;
         margin: 0;
       }
-
       @page {
         size: A4;
         margin: 0 0 0 0;
       }
-
       @media print {
         #root {
           counter-reset: page;
-        }
-
-        footer span:after {
-          counter-increment: page;
-          content:counter(page);
         }
       }
     </style>

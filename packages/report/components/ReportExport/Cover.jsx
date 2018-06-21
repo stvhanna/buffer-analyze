@@ -5,15 +5,22 @@ import { Text } from '@bufferapp/components';
 
 import {
   black,
+  white,
 } from '@bufferapp/components/style/color';
 
 import DateRange from '../DateRange';
 
-const Page = styled.div`
+const Container = styled.div`
   height: 100%;
   box-sizing: border-box;
-  padding: 32rem 4rem 12rem;
-  page-break-after: always;
+  padding: 4.5rem 4rem;
+  background: ${white};
+  display: flex;
+  align-items: center;
+`;
+
+const Inner = styled.div`
+  padding: 0 0 16rem;
 `;
 
 const Title = styled.h1`
@@ -30,13 +37,15 @@ const Logo = styled.img`
 `;
 
 const Cover = ({ dateRange, logoUrl, name }) =>
-  <Page id="report-cover">
-    <Text>
-      { logoUrl && <Logo src={logoUrl} alt={name} /> }
-      <Title>{name}</Title>
-      <DateRange {...dateRange} large />
-    </Text>
-  </Page>;
+  <Container>
+    <Inner>
+      <Text>
+        { logoUrl && <Logo src={logoUrl} alt={name} /> }
+        <Title>{name}</Title>
+        <DateRange {...dateRange} large />
+      </Text>
+    </Inner>
+  </Container>;
 
 Cover.defaultProps = {
   dateRange: {},

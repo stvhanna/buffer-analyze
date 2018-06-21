@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import {
@@ -6,9 +7,17 @@ import {
 } from '@bufferapp/components';
 
 import {
+  ChartStateLoading as Loading,
+} from '@bufferapp/analyze-shared-components';
+
+import {
   offWhite,
   white,
 } from '@bufferapp/components/style/color';
+
+import Cover from './Cover';
+import Header from './Header';
+import Footer from './Footer';
 
 const Wrapper = styled.div`
   background: ${offWhite};
@@ -17,12 +26,12 @@ const Wrapper = styled.div`
 
 const Page = styled.article`
   position: relative;
+  overflow-y: hidden;
+  height: 1447.74px;
+  margin: 0;
+  padding: 0;
 
   @media print {
-    overflow-y: hidden;
-    height: 1447.74px;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     border: initial;
     border-radius: initial;
@@ -32,33 +41,6 @@ const Page = styled.article`
     background: initial;
     page-break-after: always;
   }
-`;
-
-const Cover = styled.header`
-  height: 100%;
-  box-sizing: border-box;
-  padding: 4.5rem 4rem;
-  background: ${white};
-  display: flex;
-  align-items: center;
-`;
-
-const Header = styled.header`
-  padding: 4.5rem 4rem;
-  background: ${white};
-  border-bottom: 1px solid #DBE8F1;
-`;
-
-const Footer = styled.footer`
-  width: 100%;
-  box-sizing: border-box;
-  text-align: right;
-  padding: 2rem 4rem;
-  background: ${white};
-  border-top: 1px solid #DBE8F1;
-  position: absolute;
-  bottom: 0;
-  left: 0;
 `;
 
 const Graph = styled.section`
@@ -71,30 +53,6 @@ const Graph = styled.section`
 `;
 
 class ReportExport extends React.Component {
-  renderCover() {
-    return (
-      <Cover>
-        <Text>Cover page</Text>
-      </Cover>
-    );
-  }
-
-  renderHeader() {
-    return (
-      <Header>
-        <Text>Report title</Text>
-      </Header>
-    );
-  }
-
-  renderFooter() {
-    return (
-      <Footer>
-        <Text>Page </Text>
-      </Footer>
-    );
-  }
-
   renderGraph() {
     return (
       <Graph>
@@ -104,31 +62,81 @@ class ReportExport extends React.Component {
   }
 
   render() {
+    const {
+      dateRange,
+      loading,
+      logoUrl,
+      name,
+    } = this.props;
+
+    if (loading) {
+      return (
+        <Loading active noBorder large />
+      );
+    }
+
     return (
       <Wrapper id="report-page">
         <Page>
-          {this.renderCover()}
+          <Cover
+            dateRange={dateRange}
+            logoUrl={logoUrl}
+            name={name}
+          />
         </Page>
         <Page>
-          {this.renderHeader()}
+          <Header
+            dateRange={dateRange}
+            logoUrl={logoUrl}
+            name={name}
+          />
           {this.renderGraph()}
           {this.renderGraph()}
-          {this.renderFooter()}
+          <Footer />
         </Page>
         <Page>
-          {this.renderHeader()}
+          <Header
+            dateRange={dateRange}
+            logoUrl={logoUrl}
+            name={name}
+          />
           {this.renderGraph()}
           {this.renderGraph()}
-          {this.renderFooter()}
+          <Footer />
         </Page>
         <Page>
-          {this.renderHeader()}
+          <Header
+            dateRange={dateRange}
+            logoUrl={logoUrl}
+            name={name}
+          />
           {this.renderGraph()}
-          {this.renderFooter()}
+          <Footer />
         </Page>
       </Wrapper>
     );
   }
 }
+
+ReportExport.defaultProps = {
+  charts: [],
+  dateRange: {},
+  loading: false,
+  logoUrl: null,
+  name: '',
+};
+
+ReportExport.propTypes = {
+  charts: PropTypes.arrayOf(PropTypes.shape({
+    chart_id: PropTypes.string,
+  }).isRequired),
+  dateRange: PropTypes.shape({
+    startDate: PropTypes.string,
+    endDate: PropTypes.string,
+  }),
+  loading: PropTypes.bool,
+  logoUrl: PropTypes.string,
+  name: PropTypes.string,
+};
 
 export default ReportExport;
