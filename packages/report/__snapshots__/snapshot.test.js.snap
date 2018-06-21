@@ -11536,7 +11536,7 @@ exports[`Snapshots ReportExport renders the export report 1`] = `
     id="report-page"
   >
     <article
-      className="sc-kZmsYB dxzetm"
+      className="sc-kZmsYB dvZQII"
     >
       <div
         className="sc-jKVCRD fQYauc"
@@ -11582,10 +11582,10 @@ exports[`Snapshots ReportExport renders the export report 1`] = `
       </div>
     </article>
     <article
-      className="sc-kZmsYB dxzetm"
+      className="sc-kZmsYB dvZQII"
     >
       <header
-        className="sc-kxynE fOadXF"
+        className="sc-kxynE eXFDEr"
       >
         <span
           style={
@@ -11601,7 +11601,7 @@ exports[`Snapshots ReportExport renders the export report 1`] = `
             className="sc-cooIXK fsehyO"
           >
             <h1
-              className="sc-hzNEM gTAehq"
+              className="sc-hzNEM kDNCNv"
             >
               Sample report
             </h1>
@@ -11659,7 +11659,7 @@ exports[`Snapshots ReportExport renders the export report 1`] = `
         </span>
       </section>
       <footer
-        className="sc-fcdeBU XYrJq"
+        className="sc-fcdeBU LpXCs"
       >
         <span
           style={
@@ -11676,10 +11676,10 @@ exports[`Snapshots ReportExport renders the export report 1`] = `
       </footer>
     </article>
     <article
-      className="sc-kZmsYB dxzetm"
+      className="sc-kZmsYB dvZQII"
     >
       <header
-        className="sc-kxynE fOadXF"
+        className="sc-kxynE eXFDEr"
       >
         <span
           style={
@@ -11695,7 +11695,7 @@ exports[`Snapshots ReportExport renders the export report 1`] = `
             className="sc-cooIXK fsehyO"
           >
             <h1
-              className="sc-hzNEM gTAehq"
+              className="sc-hzNEM kDNCNv"
             >
               Sample report
             </h1>
@@ -11753,7 +11753,7 @@ exports[`Snapshots ReportExport renders the export report 1`] = `
         </span>
       </section>
       <footer
-        className="sc-fcdeBU XYrJq"
+        className="sc-fcdeBU LpXCs"
       >
         <span
           style={
@@ -11770,10 +11770,10 @@ exports[`Snapshots ReportExport renders the export report 1`] = `
       </footer>
     </article>
     <article
-      className="sc-kZmsYB dxzetm"
+      className="sc-kZmsYB dvZQII"
     >
       <header
-        className="sc-kxynE fOadXF"
+        className="sc-kxynE eXFDEr"
       >
         <span
           style={
@@ -11789,7 +11789,7 @@ exports[`Snapshots ReportExport renders the export report 1`] = `
             className="sc-cooIXK fsehyO"
           >
             <h1
-              className="sc-hzNEM gTAehq"
+              className="sc-hzNEM kDNCNv"
             >
               Sample report
             </h1>
@@ -11831,7 +11831,7 @@ exports[`Snapshots ReportExport renders the export report 1`] = `
         </span>
       </section>
       <footer
-        className="sc-fcdeBU XYrJq"
+        className="sc-fcdeBU LpXCs"
       >
         <span
           style={
@@ -11901,7 +11901,7 @@ exports[`Snapshots ReportExport renders the export report cover only 1`] = `
 exports[`Snapshots ReportExport renders the export report footer only 1`] = `
 <span>
   <footer
-    className="sc-fcdeBU XYrJq"
+    className="sc-fcdeBU LpXCs"
   >
     <span
       style={
@@ -11922,7 +11922,7 @@ exports[`Snapshots ReportExport renders the export report footer only 1`] = `
 exports[`Snapshots ReportExport renders the export report header only 1`] = `
 <span>
   <header
-    className="sc-kxynE fOadXF"
+    className="sc-kxynE eXFDEr"
   >
     <span
       style={
@@ -11938,7 +11938,7 @@ exports[`Snapshots ReportExport renders the export report header only 1`] = `
         className="sc-cooIXK fsehyO"
       >
         <h1
-          className="sc-hzNEM gTAehq"
+          className="sc-hzNEM kDNCNv"
         >
           Sample report
         </h1>

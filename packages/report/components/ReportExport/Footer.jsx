@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Text } from '@bufferapp/components';
 
 import {
+  geyser,
   white,
 } from '@bufferapp/components/style/color';
 
@@ -12,7 +13,7 @@ const Container = styled.footer`
   text-align: right;
   padding: 2rem 4rem;
   background: ${white};
-  border-top: 1px solid #DBE8F1;
+  border-top: 1px solid ${geyser};
   position: absolute;
   bottom: 0;
   left: 0;

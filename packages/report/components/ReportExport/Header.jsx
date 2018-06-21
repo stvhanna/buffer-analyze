@@ -5,6 +5,7 @@ import { Text } from '@bufferapp/components';
 
 import {
   black,
+  geyser,
   white,
 } from '@bufferapp/components/style/color';
 
@@ -13,7 +14,7 @@ import DateRange from '../DateRange';
 const Title = styled.h1`
   display: block;
   color: ${black};
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   font-weight: 700;
   margin: 0 0 0.5rem;
 `;
@@ -24,9 +25,9 @@ const Logo = styled.img`
 `;
 
 const Container = styled.header`
-  padding: 4.5rem 4rem;
+  padding: 2.5rem 4rem;
   background: ${white};
-  border-bottom: 1px solid #DBE8F1;
+  border-bottom: 1px solid ${geyser};
 `;
 
 const Inner = styled.div`

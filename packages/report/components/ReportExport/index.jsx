@@ -27,7 +27,7 @@ const Wrapper = styled.div`
 const Page = styled.article`
   position: relative;
   overflow-y: hidden;
-  height: 1447.74px;
+  height: 1447.74px; /* this seems to be the exact A4 portrait size */
   margin: 0;
   padding: 0;
 

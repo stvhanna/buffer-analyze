@@ -2,9 +2,9 @@ import React from 'react';
 import { Route, Switch } from 'react-router';
 import AppSidebar from '@bufferapp/app-sidebar';
 import DefaultPage from '../DefaultPage';
-import ReportsPage from '../ReportsPage';
+import ReportsExport from '../ReportsExport';
 import ReportsList from '../ReportsList';
-import ReportExport from '../ReportExport';
+import ReportsPage from '../ReportsPage';
 import InsightsPage from '../InsightsPage';
 import ComparisonsPage from '../ComparisonsPage';
 
@@ -49,7 +49,7 @@ export default () =>
   <Switch>
     <Route
       path="/export/reports/:id"
-      component={ReportExport}
+      component={ReportsExport}
     />
     <Route component={App} />
   </Switch>;
