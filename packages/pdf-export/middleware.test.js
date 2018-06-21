@@ -37,7 +37,7 @@ describe('middleware', () => {
       type: actionTypes.EXPORT_TO_PDF,
     };
     const exportURL = encodeURIComponent('https://analyze.buffer.com/export/report/1234?start_date=5678&end_date=9876');
-    const expectedURL = `https://analyze.buffer.com/report_to_pdf?name=A report&url=${exportURL}`;
+    const expectedURL = `https://analyze.buffer.com/report_to_pdf?name=A%20report&url=${exportURL}`;
     middleware(store)(next)(action);
     expect(global.open).toHaveBeenCalledWith(expectedURL, '_blank');
   });
