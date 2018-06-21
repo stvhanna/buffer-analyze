@@ -25,6 +25,7 @@ import ChartFactory from '../ChartFactory';
 import DateRange from '../DateRange';
 import EditTitle from '../EditTitle';
 import LogoUpload from '../LogoUpload';
+import ReportExport from '../ReportExport';
 
 const Page = styled.div`
   background: ${offWhite};
@@ -83,6 +84,11 @@ class Report extends React.Component {
     const { name, dateRange, charts, loading,
       edit, saveChanges, editName, moveUp, moveDown, deleteChart, exporting, uploadLogo,
         logoUrl, deleteLogo, isLogoUploading, isLogoDropzoneDisabled } = this.props;
+
+    if (exporting) {
+      return <ReportExport />;
+    }
+
     if (loading) {
       return (
         <Centered>

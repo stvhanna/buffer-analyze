@@ -2,20 +2,9 @@ import React from 'react';
 import timezoneMock from 'timezone-mock';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
-import styled from 'styled-components';
 import Report from './index';
 
 timezoneMock.register('US/Eastern');
-
-const Card = styled.section`
-  width: 880px;
-  margin: 20px auto;
-  background: #FFFFFF;
-  border: 1px solid #E2E8ED;
-  box-shadow: 0px 0px 10px rgba(48, 71, 89, 0.05);
-  border-radius: 5px;
-  padding: 4.5rem 4rem;
-`;
 
 const report = {
   name: 'Weekly Sync Report',
@@ -225,53 +214,39 @@ const dateRange = {
 storiesOf('Report')
   .addDecorator(checkA11y)
   .add('renders a report with summary table and no logo', () => (
-    <Card>
-      <Report
-        {...report}
-        dateRange={dateRange}
-        saveChanges={() => {}}
-        parsePageBreaks={() => {}}
-        exporting
-      />
-    </Card>
+    <Report
+      {...report}
+      dateRange={dateRange}
+      saveChanges={() => {}}
+      parsePageBreaks={() => {}}
+    />
   ))
   .add('renders a report with summary table and logo', () => (
-    <Card>
-      <Report
-        {...report}
-        dateRange={dateRange}
-        saveChanges={() => {}}
-        parsePageBreaks={() => {}}
-        logoUrl={'https://buffer-analyze.s3.amazonaws.com/report-logos/img_5afc8d8f209ec.jpg'}
-        exporting
-      />
-    </Card>
+    <Report
+      {...report}
+      dateRange={dateRange}
+      saveChanges={() => {}}
+      parsePageBreaks={() => {}}
+      logoUrl={'https://buffer-analyze.s3.amazonaws.com/report-logos/img_5afc8d8f209ec.jpg'}
+    />
   ))
   .add('render only the multi-profile legend if that is available', () => (
-    <Card>
-      <Report
-        {...comparisonReport}
-        dateRange={dateRange}
-        saveChanges={() => {}}
-        parsePageBreaks={() => {}}
-        exporting
-      />
-    </Card>
+    <Report
+      {...comparisonReport}
+      dateRange={dateRange}
+      saveChanges={() => {}}
+      parsePageBreaks={() => {}}
+    />
   ))
   .add('renders a report in edit mode', () => (
-    <Card>
-      <Report
-        {...report}
-        dateRange={dateRange}
-        saveChanges={() => {}}
-        parsePageBreaks={() => {}}
-        exporting
-        edit
-      />
-    </Card>
+    <Report
+      {...report}
+      dateRange={dateRange}
+      saveChanges={() => {}}
+      parsePageBreaks={() => {}}
+      edit
+    />
   ))
   .add('renders a loading report', () => (
-    <Card>
-      <Report loading />
-    </Card>
+    <Report loading />
   ));
