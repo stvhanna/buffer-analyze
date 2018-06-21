@@ -6,26 +6,52 @@ const DateRange = require('../utils/DateRange');
 const LABELS = {
   // Facebook metrics
   facebook: {
-    post_impressions: 'Average impressions per post',
-    page_engagements: 'Average engagements per post',
-    post_clicks: 'Average clicks per post',
+    post_impressions: 'Daily average impressions',
+    page_engagements: 'Daily average engagements',
+    post_clicks: 'Daily average clicks',
   },
   // Twitter metrics
   twitter: {
-    impressions: 'Average impressions per post',
-    engagements: 'Average engagements per post',
-    url_clicks: 'Average clicks per post',
+    impressions: 'Average impressions per tweet',
+    engagements: 'Average engagements per tweet',
+    url_clicks: 'Average clicks per tweet',
   },
   // Instagram metrics
   instagram: {
-    impressions: 'Average impressions per post',
+    impressions: 'Daily average impressions',
     likes: 'Average likes per post',
     comments: 'Average comments per post',
   },
 };
 
+const METRIC_KEY_LABELS = {
+  // Facebook metrics
+  facebook: {
+    post_impressions: 'impressions',
+    page_engagements: 'engagements',
+    post_clicks: 'clicks',
+  },
+  // Twitter metrics
+  twitter: {
+    impressions: 'impressions',
+    engagements: 'engagements',
+    url_clicks: 'clicks',
+  },
+  // Instagram metrics
+  instagram: {
+    impressions: 'impressions',
+    likes: 'likes',
+    comments: 'comments',
+  },
+};
+
 function shouldUseAnalyzeApi (profileService) {
   return profileService === 'instagram';
+}
+
+function shouldUseDaysAsAverageQuantity(profileService, metric) {
+  return profileService === 'facebook'
+    || (profileService === 'instagram' && metric === 'impressions');
 }
 
 const requestTotals = (profileId, profileService, dateRange, accessToken, analyzeApiAddr) =>
@@ -88,21 +114,31 @@ function averageValue(value, quantity) {
 }
 
 const summarize = (
-  metriKey,
+  metricKey,
   profileService,
   currentPeriod,
   currentPeriodPostCount,
   pastPeriod,
   pastPeriodPostCount,
+  daysCount,
 ) => {
-  const pastValue = averageValue(pastPeriod[metriKey], pastPeriodPostCount);
-  const value = averageValue(currentPeriod[metriKey], currentPeriodPostCount);
-  const label = LABELS[profileService][metriKey];
+  let currentPeriodQuantity = currentPeriodPostCount;
+  let pastPeriodQuantity = pastPeriodPostCount;
+  // for facebook & IG impressions we calculate the average by
+  // sum (metric per day) / number_of_days
+  if (daysCount && shouldUseDaysAsAverageQuantity(profileService, metricKey)) {
+    currentPeriodQuantity = daysCount;
+    pastPeriodQuantity = daysCount;
+  }
+  const pastValue = averageValue(pastPeriod[metricKey], pastPeriodQuantity);
+  const value = averageValue(currentPeriod[metricKey], currentPeriodQuantity);
+  const label = LABELS[profileService][metricKey];
   if (label) {
     return {
       diff: percentageDifference(value, pastValue),
-      label: LABELS[profileService][metriKey],
+      label: LABELS[profileService][metricKey],
       value,
+      metricKey: METRIC_KEY_LABELS[profileService][metricKey],
     };
   }
   return null;
@@ -114,17 +150,19 @@ function formatTotals(
   pastPeriodResult,
   pastPeriodPostCount,
   profileService,
+  daysCount,
 ) {
   return Object
     .keys(currentPeriodResult)
-    .map(metriKey =>
+    .map(metricKey =>
       summarize(
-        metriKey,
+        metricKey,
         profileService,
         currentPeriodResult,
         currentPeriodPostCount,
         pastPeriodResult,
         pastPeriodPostCount,
+        daysCount,
       ),
     )
     .filter(metric => metric !== null);
@@ -147,9 +185,9 @@ function formatDaily(
     const dailyMetrics = Object.keys(data.currentPeriodMetrics);
     return {
       day: data.day,
-      metrics: dailyMetrics.map(metriKey =>
+      metrics: dailyMetrics.map(metricKey =>
         summarize(
-          metriKey,
+          metricKey,
           profileService,
           data.currentPeriodMetrics,
           data.currentPeriodPostCount,
@@ -171,12 +209,14 @@ function formatData(
   pastPeriodDailyTotalsResult,
   profileService,
 ) {
+  const daysCount = Object.keys(currentPeriodDailyTotalsResult).length;
   const totals = formatTotals(
     currentPeriodResult,
     currentPeriodPostCount,
     pastPeriodResult,
     pastPeriodPostCount,
     profileService,
+    daysCount,
   );
 
   const daily = formatDaily(

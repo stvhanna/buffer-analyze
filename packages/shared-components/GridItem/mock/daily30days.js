@@ -6,11 +6,13 @@ export default [
         diff: 86,
         label: 'Engagement average',
         value: 477,
+        metricKey: 'engagements',
       },
       {
         diff: 67,
         label: 'Impression average',
         value: 67507,
+        metricKey: 'engagements',
       },
       {
         diff: 17,
@@ -26,16 +28,19 @@ export default [
         diff: 36,
         label: 'Engagement average',
         value: 466,
+        metricKey: 'engagements',
       },
       {
         diff: 19,
         label: 'Impression average',
         value: 68068,
+        metricKey: 'engagements',
       },
       {
         diff: 52,
         label: 'Click average',
         value: 601,
+        metricKey: 'engagements',
       },
     ],
   },
@@ -46,6 +51,7 @@ export default [
         diff: 0,
         label: 'Engagement average',
         value: 367,
+        metricKey: 'engagements',
       },
       {
         diff: 15,
@@ -66,6 +72,7 @@ export default [
         diff: 24,
         label: 'Engagement average',
         value: 476,
+        metricKey: 'engagements',
       },
       {
         diff: 43,
@@ -86,6 +93,7 @@ export default [
         diff: 1,
         label: 'Engagement average',
         value: 306,
+        metricKey: 'engagements',
       },
       {
         diff: 60,
