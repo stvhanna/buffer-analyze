@@ -3,7 +3,6 @@ import { LOCATION_CHANGE } from 'react-router-redux';
 import { actions, actionTypes as asyncDataFetchActionTypes } from '@bufferapp/async-data-fetch';
 import { actionTypes as dateActionTypes } from '@bufferapp/analyze-date-picker';
 import { actionTypes, actions as reportActions } from './reducer';
-import PDFFormatter from './PDFFormatter';
 
 export const DIRECTION_UP = 'up';
 export const DIRECTION_DOWN = 'down';
@@ -25,7 +24,6 @@ const dateRangesDoNotMatch = (reportDate, dateRange) => (
 
 export default store => next => (action) => { // eslint-disable-line no-unused-vars
   const state = store.getState();
-  let formatter;
   let logoFile;
   let fileReader;
   switch (action.type) {
@@ -109,11 +107,6 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
           reportId: state.report.id,
         },
       }));
-      break;
-    case actionTypes.PARSE_PAGE_BREAKS:
-      formatter = new PDFFormatter(document.getElementById('report-page'));
-      PDFFormatter.formatWrapper(document.getElementById('root'));
-      formatter.formatPage();
       break;
     case actionTypes.UPLOAD_LOGO:
       // get the logo file

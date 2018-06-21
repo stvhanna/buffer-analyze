@@ -67,19 +67,6 @@ const Centered = styled.div`
 `;
 
 class Report extends React.Component {
-  componentDidUpdate() {
-    if (this.shouldAddPageBreaks()) {
-      this.props.parsePageBreaks();
-    }
-  }
-
-  shouldAddPageBreaks() {
-    const hasStoppedLoading = !this.props.loading;
-    const isExportView = this.props.exporting;
-
-    return hasStoppedLoading && isExportView;
-  }
-
   render() {
     const { name, dateRange, charts, loading,
       edit, saveChanges, editName, moveUp, moveDown, deleteChart, exporting, uploadLogo,
@@ -88,10 +75,15 @@ class Report extends React.Component {
     if (exporting) {
       return (
         <ReportExport
+          charts={charts}
           dateRange={dateRange}
-          name={name}
+          deleteChart={deleteChart}
+          exporting={exporting}
           loading={loading}
           logoUrl={logoUrl}
+          moveUp={moveUp}
+          moveDown={moveDown}
+          name={name}
         />
       );
     }
@@ -169,7 +161,6 @@ Report.propTypes = {
   moveUp: PropTypes.func.isRequired,
   moveDown: PropTypes.func.isRequired,
   deleteChart: PropTypes.func.isRequired,
-  parsePageBreaks: PropTypes.func.isRequired,
   uploadLogo: PropTypes.func.isRequired,
   deleteLogo: PropTypes.func.isRequired,
   isLogoUploading: PropTypes.bool,

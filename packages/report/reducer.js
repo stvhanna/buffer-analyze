@@ -9,7 +9,6 @@ export const actionTypes = keyWrapper('REPORT', {
   MOVE_CHART_UP: 'MOVE_CHART_UP',
   MOVE_CHART_DOWN: 'MOVE_CHART_DOWN',
   DELETE_CHART: 'DELETE_CHART',
-  PARSE_PAGE_BREAKS: 'PARSE_PAGE_BREAKS',
   UPLOAD_LOGO: 'UPLOAD_LOGO',
   DELETE_LOGO: 'DELETE_LOGO',
 });
@@ -156,9 +155,6 @@ export const actions = {
   deleteChart: chartId => ({
     type: actionTypes.DELETE_CHART,
     chartId,
-  }),
-  parsePageBreaks: () => ({
-    type: actionTypes.PARSE_PAGE_BREAKS,
   }),
   uploadLogo: logo => ({
     type: actionTypes.UPLOAD_LOGO,

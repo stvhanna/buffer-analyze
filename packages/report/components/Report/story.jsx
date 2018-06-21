@@ -218,7 +218,6 @@ storiesOf('Report')
       {...report}
       dateRange={dateRange}
       saveChanges={() => {}}
-      parsePageBreaks={() => {}}
     />
   ))
   .add('renders a report with summary table and logo', () => (
@@ -226,7 +225,6 @@ storiesOf('Report')
       {...report}
       dateRange={dateRange}
       saveChanges={() => {}}
-      parsePageBreaks={() => {}}
       logoUrl={'https://buffer-analyze.s3.amazonaws.com/report-logos/img_5afc8d8f209ec.jpg'}
     />
   ))
@@ -235,7 +233,6 @@ storiesOf('Report')
       {...comparisonReport}
       dateRange={dateRange}
       saveChanges={() => {}}
-      parsePageBreaks={() => {}}
     />
   ))
   .add('renders a report in edit mode', () => (
@@ -243,7 +240,6 @@ storiesOf('Report')
       {...report}
       dateRange={dateRange}
       saveChanges={() => {}}
-      parsePageBreaks={() => {}}
       edit
     />
   ))

@@ -13,7 +13,6 @@ export default connect(
     moveUp: id => dispatch(actions.moveUp(id)),
     moveDown: id => dispatch(actions.moveDown(id)),
     deleteChart: id => dispatch(actions.deleteChart(id)),
-    parsePageBreaks: () => dispatch(actions.parsePageBreaks()),
     uploadLogo: logo => dispatch(actions.uploadLogo({ logo })),
     deleteLogo: () => dispatch(actions.deleteLogo()),
   }),

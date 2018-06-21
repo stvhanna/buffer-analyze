@@ -25,7 +25,7 @@ const Logo = styled.img`
 `;
 
 const Container = styled.header`
-  padding: 2.5rem 4rem;
+  padding: 4.5rem 4rem;
   background: ${white};
   border-bottom: 1px solid ${geyser};
 `;

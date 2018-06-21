@@ -1225,11 +1225,11 @@ exports[`Snapshots ProfileLegend renders the profile legend 1`] = `
 exports[`Snapshots Report render only the multi-profile legend if that is available 1`] = `
 <span>
   <div
-    className="sc-iSDuPN hNJqaC"
+    className="sc-RcBXQ jHNLzP"
     id="report-page"
   >
     <div
-      className="sc-fZwumE dTbAhH"
+      className="sc-iSDuPN cToSdI"
     >
       <span
         style={
@@ -1242,7 +1242,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
         }
       >
         <div
-          className="sc-clNaTc fkjCIp"
+          className="sc-fQejPQ jnGzvH"
         >
           <div
             className="sc-EHOje hKVWKI"
@@ -1309,13 +1309,13 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
             }
           >
             <h1
-              className="sc-fQejPQ iXTzHD"
+              className="sc-fZwumE gpUNMp"
             >
               Weekly Sync Report
             </h1>
           </button>
           <div
-            className="sc-etwtAo jqoLOQ"
+            className="sc-clNaTc kOxvui"
           >
             <svg
               height="100%"
@@ -1805,7 +1805,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
 exports[`Snapshots Report renders a loading report 1`] = `
 <span>
   <div
-    className="sc-jXQZqI fPoiYy"
+    className="sc-etwtAo gMFAKY"
   >
     <div
       className="sc-VigVT iLurmb"
@@ -1892,11 +1892,11 @@ exports[`Snapshots Report renders a loading report 1`] = `
 exports[`Snapshots Report renders a report in edit mode 1`] = `
 <span>
   <div
-    className="sc-iSDuPN hNJqaC"
+    className="sc-RcBXQ jHNLzP"
     id="report-page"
   >
     <div
-      className="sc-fZwumE dTbAhH"
+      className="sc-iSDuPN cToSdI"
     >
       <span
         style={
@@ -5010,11 +5010,11 @@ exports[`Snapshots Report renders a report in edit mode 1`] = `
 exports[`Snapshots Report renders a report with summary table and logo 1`] = `
 <span>
   <div
-    className="sc-iSDuPN hNJqaC"
+    className="sc-RcBXQ jHNLzP"
     id="report-page"
   >
     <div
-      className="sc-fZwumE dTbAhH"
+      className="sc-iSDuPN cToSdI"
     >
       <span
         style={
@@ -5027,7 +5027,7 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
         }
       >
         <div
-          className="sc-clNaTc fkjCIp"
+          className="sc-fQejPQ jnGzvH"
         >
           <div
             className="sc-EHOje hKVWKI"
@@ -5119,13 +5119,13 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
             }
           >
             <h1
-              className="sc-fQejPQ iXTzHD"
+              className="sc-fZwumE gpUNMp"
             >
               Weekly Sync Report
             </h1>
           </button>
           <div
-            className="sc-etwtAo jqoLOQ"
+            className="sc-clNaTc kOxvui"
           >
             <svg
               height="100%"
@@ -8242,11 +8242,11 @@ exports[`Snapshots Report renders a report with summary table and logo 1`] = `
 exports[`Snapshots Report renders a report with summary table and no logo 1`] = `
 <span>
   <div
-    className="sc-iSDuPN hNJqaC"
+    className="sc-RcBXQ jHNLzP"
     id="report-page"
   >
     <div
-      className="sc-fZwumE dTbAhH"
+      className="sc-iSDuPN cToSdI"
     >
       <span
         style={
@@ -8259,7 +8259,7 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
         }
       >
         <div
-          className="sc-clNaTc fkjCIp"
+          className="sc-fQejPQ jnGzvH"
         >
           <div
             className="sc-EHOje hKVWKI"
@@ -8326,13 +8326,13 @@ exports[`Snapshots Report renders a report with summary table and no logo 1`] = 
             }
           >
             <h1
-              className="sc-fQejPQ iXTzHD"
+              className="sc-fZwumE gpUNMp"
             >
               Weekly Sync Report
             </h1>
           </button>
           <div
-            className="sc-etwtAo jqoLOQ"
+            className="sc-clNaTc kOxvui"
           >
             <svg
               height="100%"
@@ -11581,272 +11581,6 @@ exports[`Snapshots ReportExport renders the export report 1`] = `
         </div>
       </div>
     </article>
-    <article
-      className="sc-kZmsYB dvZQII"
-    >
-      <header
-        className="sc-kxynE eXFDEr"
-      >
-        <span
-          style={
-            Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
-            }
-          }
-        >
-          <div
-            className="sc-cooIXK fsehyO"
-          >
-            <h1
-              className="sc-hzNEM kDNCNv"
-            >
-              Sample report
-            </h1>
-          </div>
-          <span
-            style={
-              Object {
-                "color": "#000",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1rem",
-                "fontWeight": 700,
-              }
-            }
-          >
-            <span
-              className="sc-htpNat KtFsv"
-            >
-              February 20, 2018
-               to 
-              February 25, 2018
-            </span>
-          </span>
-        </span>
-      </header>
-      <section
-        className="sc-RcBXQ cncxPn"
-      >
-        <span
-          style={
-            Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
-            }
-          }
-        >
-          Graph
-        </span>
-      </section>
-      <section
-        className="sc-RcBXQ cncxPn"
-      >
-        <span
-          style={
-            Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
-            }
-          }
-        >
-          Graph
-        </span>
-      </section>
-      <footer
-        className="sc-fcdeBU LpXCs"
-      >
-        <span
-          style={
-            Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
-            }
-          }
-        >
-          Page 
-        </span>
-      </footer>
-    </article>
-    <article
-      className="sc-kZmsYB dvZQII"
-    >
-      <header
-        className="sc-kxynE eXFDEr"
-      >
-        <span
-          style={
-            Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
-            }
-          }
-        >
-          <div
-            className="sc-cooIXK fsehyO"
-          >
-            <h1
-              className="sc-hzNEM kDNCNv"
-            >
-              Sample report
-            </h1>
-          </div>
-          <span
-            style={
-              Object {
-                "color": "#000",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1rem",
-                "fontWeight": 700,
-              }
-            }
-          >
-            <span
-              className="sc-htpNat KtFsv"
-            >
-              February 20, 2018
-               to 
-              February 25, 2018
-            </span>
-          </span>
-        </span>
-      </header>
-      <section
-        className="sc-RcBXQ cncxPn"
-      >
-        <span
-          style={
-            Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
-            }
-          }
-        >
-          Graph
-        </span>
-      </section>
-      <section
-        className="sc-RcBXQ cncxPn"
-      >
-        <span
-          style={
-            Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
-            }
-          }
-        >
-          Graph
-        </span>
-      </section>
-      <footer
-        className="sc-fcdeBU LpXCs"
-      >
-        <span
-          style={
-            Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
-            }
-          }
-        >
-          Page 
-        </span>
-      </footer>
-    </article>
-    <article
-      className="sc-kZmsYB dvZQII"
-    >
-      <header
-        className="sc-kxynE eXFDEr"
-      >
-        <span
-          style={
-            Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
-            }
-          }
-        >
-          <div
-            className="sc-cooIXK fsehyO"
-          >
-            <h1
-              className="sc-hzNEM kDNCNv"
-            >
-              Sample report
-            </h1>
-          </div>
-          <span
-            style={
-              Object {
-                "color": "#000",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1rem",
-                "fontWeight": 700,
-              }
-            }
-          >
-            <span
-              className="sc-htpNat KtFsv"
-            >
-              February 20, 2018
-               to 
-              February 25, 2018
-            </span>
-          </span>
-        </span>
-      </header>
-      <section
-        className="sc-RcBXQ cncxPn"
-      >
-        <span
-          style={
-            Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
-            }
-          }
-        >
-          Graph
-        </span>
-      </section>
-      <footer
-        className="sc-fcdeBU LpXCs"
-      >
-        <span
-          style={
-            Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
-            }
-          }
-        >
-          Page 
-        </span>
-      </footer>
-    </article>
   </div>
 </span>
 `;
@@ -11922,7 +11656,7 @@ exports[`Snapshots ReportExport renders the export report footer only 1`] = `
 exports[`Snapshots ReportExport renders the export report header only 1`] = `
 <span>
   <header
-    className="sc-kxynE eXFDEr"
+    className="sc-kxynE hEtBOP"
   >
     <span
       style={

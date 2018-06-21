@@ -15,6 +15,7 @@ import {
   white,
 } from '@bufferapp/components/style/color';
 
+import ChartFactory from '../ChartFactory';
 import Cover from './Cover';
 import Header from './Header';
 import Footer from './Footer';
@@ -43,31 +44,37 @@ const Page = styled.article`
   }
 `;
 
-const Graph = styled.section`
-  box-sizing: border-box;
-  padding: 4.5rem 3rem;
-  margin: 1rem;
-  height: 800px;
-  background: ${white};
-  border: 1px solid #DBE8F1;
-`;
+function groupChartsForPages(charts) {
+  const grouped = [];
+  let set = [];
+  for (let index = 0; index < charts.length; index += 1) {
+    if (index !== 0 && index % 2 !== 0) { // is not 0 or odd
+      set.push(charts[index]);
+      grouped.push(set);
+      set = [];
+    } else {
+      set.push(charts[index]);
+      if (index === charts.length - 1) grouped.push(set);
+    }
+  }
+  return grouped;
+}
 
 class ReportExport extends React.Component {
-  renderGraph() {
-    return (
-      <Graph>
-        <Text>Graph</Text>
-      </Graph>
-    );
-  }
-
   render() {
     const {
+      charts,
       dateRange,
+      deleteChart,
+      exporting,
       loading,
       logoUrl,
+      moveUp,
+      moveDown,
       name,
     } = this.props;
+
+    const chartGroups = groupChartsForPages(charts);
 
     if (loading) {
       return (
@@ -84,59 +91,53 @@ class ReportExport extends React.Component {
             name={name}
           />
         </Page>
-        <Page>
-          <Header
-            dateRange={dateRange}
-            logoUrl={logoUrl}
-            name={name}
-          />
-          {this.renderGraph()}
-          {this.renderGraph()}
-          <Footer />
-        </Page>
-        <Page>
-          <Header
-            dateRange={dateRange}
-            logoUrl={logoUrl}
-            name={name}
-          />
-          {this.renderGraph()}
-          {this.renderGraph()}
-          <Footer />
-        </Page>
-        <Page>
-          <Header
-            dateRange={dateRange}
-            logoUrl={logoUrl}
-            name={name}
-          />
-          {this.renderGraph()}
-          <Footer />
-        </Page>
+        {chartGroups.map(chartSet => (
+          <Page>
+            <Header
+              dateRange={dateRange}
+              logoUrl={logoUrl}
+              name={name}
+            />
+            <ChartFactory
+              charts={chartSet}
+              moveUp={moveUp}
+              moveDown={moveDown}
+              deleteChart={deleteChart}
+              exporting={exporting}
+            />
+            <Footer />
+          </Page>
+        ))}
       </Wrapper>
     );
   }
 }
 
 ReportExport.defaultProps = {
-  charts: [],
-  dateRange: {},
   loading: false,
-  logoUrl: null,
+  exporting: false,
+  edit: false,
+  dateRange: {},
+  charts: [],
+  logoUrl: false,
   name: '',
 };
 
 ReportExport.propTypes = {
-  charts: PropTypes.arrayOf(PropTypes.shape({
-    chart_id: PropTypes.string,
-  }).isRequired),
+  loading: PropTypes.bool,
+  exporting: PropTypes.bool,
   dateRange: PropTypes.shape({
     startDate: PropTypes.string,
     endDate: PropTypes.string,
   }),
-  loading: PropTypes.bool,
-  logoUrl: PropTypes.string,
   name: PropTypes.string,
+  charts: PropTypes.arrayOf(PropTypes.shape({
+    chart_id: PropTypes.string,
+  }).isRequired),
+  logoUrl: PropTypes.string.isRequired,
+  moveUp: PropTypes.func.isRequired,
+  moveDown: PropTypes.func.isRequired,
+  deleteChart: PropTypes.func.isRequired,
 };
 
 export default ReportExport;
