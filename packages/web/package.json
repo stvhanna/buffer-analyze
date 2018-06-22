@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/web-analyze",
-  "version": "0.62.2",
+  "version": "0.62.3",
   "description": "Analyze Web Dashboard",
   "main": "index.jsx",
   "scripts": {
@@ -37,7 +37,7 @@
     "@bufferapp/hourly-chart": "^0.62.2",
     "@bufferapp/multi-profile-selector": "^0.62.2",
     "@bufferapp/nav-sidebar": "^0.62.2",
-    "@bufferapp/pdf-export": "^0.61.0",
+    "@bufferapp/pdf-export": "^0.62.3",
     "@bufferapp/performance-tracking": "^0.43.5",
     "@bufferapp/posts-summary-table": "^0.62.2",
     "@bufferapp/posts-table": "^0.62.2",
