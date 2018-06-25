@@ -5,10 +5,14 @@ global.getComputedStyle = jest.fn(() => ({
   marginTop: 0,
 }));
 
+const elementHasPageBreak = element => (
+  false || element.style._values['page-break-before'] === 'always'
+);
+
 const hasPageBreak = (elements) => {
   let hasBreak = false;
   Array.prototype.forEach.call(elements, (element) => {
-    hasBreak = hasBreak || element.style._values['page-break-before'] === 'always';
+    hasBreak = elementHasPageBreak(element);
   });
   return hasBreak;
 };
@@ -40,6 +44,15 @@ describe('PDF formatter', () => {
       const formatter = new PDFFormatter(reportWithPageBreak);
       formatter.formatPage();
       expect(hasPageBreak(reportWithPageBreak.children)).toBeTruthy();
+    });
+
+    it('should add a page break on a table row', () => {
+      const reportWithPageBreak = require('./mocks/reportWithTable').default; // eslint-disable-line global-require
+      const formatter = new PDFFormatter(reportWithPageBreak);
+      formatter.formatPage();
+      const elementsWithPageBreak = reportWithPageBreak
+        .children[1].children[1].children[0].children[0];
+      expect(elementHasPageBreak(elementsWithPageBreak)).toBeTruthy();
     });
   });
 });

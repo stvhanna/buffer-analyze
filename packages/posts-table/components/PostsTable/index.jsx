@@ -70,19 +70,21 @@ export const Table = ({ metrics, timezone, service, exporting }) => {
   return (
     <ChartContainer>
       <PostsTableWrapper>
-        {topPosts.map((post, index) =>
-          <PostItem
-            key={post.id}
-            index={index}
-            timezone={timezone}
-            post={post}
-            maxEngagementValue={maxEngagementValue}
-            maxAudienceValue={maxAudienceValue}
-            engagementMetrics={engagementMetrics}
-            audienceMetrics={audienceMetrics}
-            exporting={exporting}
-          />,
-        )}
+        <tbody>
+          {topPosts.map((post, index) =>
+            <PostItem
+              key={post.id}
+              index={index}
+              timezone={timezone}
+              post={post}
+              maxEngagementValue={maxEngagementValue}
+              maxAudienceValue={maxAudienceValue}
+              engagementMetrics={engagementMetrics}
+              audienceMetrics={audienceMetrics}
+              exporting={exporting}
+            />,
+          )}
+        </tbody>
       </PostsTableWrapper>
     </ChartContainer>
   );

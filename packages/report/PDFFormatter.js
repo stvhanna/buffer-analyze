@@ -38,18 +38,26 @@ class PDFFormatter {
   }
 
   static canBeBrokenDownIntoMultiplePages (element) {
-    return element.getElementsByTagName('aside').length > 0;
+    return element.getElementsByTagName('aside').length > 0 || element.getElementsByTagName('table').length > 0;
   }
 
   addPageBreak(element) {
     if (PDFFormatter.canBeBrokenDownIntoMultiplePages(element)) {
-      const [title, aside] = element.children;
-      const [header, list] = aside.children;
       this.removeFromCurrentPage(element);
+
+      const [title, content] = element.children;
       this.addToCurrentPage(title);
-      this.addToCurrentPage(header);
-      const listItems = list.children;
-      this.breakIntoPages(listItems);
+
+      if (content.children.length > 1) {
+        const [header, list] = content.children;
+        this.addToCurrentPage(header);
+        const listItems = list.children;
+        this.breakIntoPages(listItems);
+      } else {
+        const [list] = content.children;
+        const listItems = list.getElementsByTagName('tr');
+        this.breakIntoPages(listItems);
+      }
     } else {
       this.addNewPage(element);
     }
