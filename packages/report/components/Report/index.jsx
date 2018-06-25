@@ -21,6 +21,7 @@ import {
   white,
 } from '@bufferapp/components/style/color';
 
+import Cover from '../Cover';
 import ChartFactory from '../ChartFactory';
 import DateRange from '../DateRange';
 import EditTitle from '../EditTitle';
@@ -65,6 +66,12 @@ const Centered = styled.div`
   align-items: center;
 `;
 
+const Gradient = styled.div`
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+  height: 2rem;
+`;
+
 class Report extends React.Component {
   componentDidUpdate() {
     if (this.shouldAddPageBreaks()) {
@@ -83,6 +90,7 @@ class Report extends React.Component {
     const { name, dateRange, charts, loading,
       edit, saveChanges, editName, moveUp, moveDown, deleteChart, exporting, uploadLogo,
         logoUrl, deleteLogo, isLogoUploading, isLogoDropzoneDisabled } = this.props;
+
     if (loading) {
       return (
         <Centered>
@@ -90,8 +98,10 @@ class Report extends React.Component {
         </Centered>
       );
     }
+
     return (
       <Page id="report-page">
+        {exporting && <Cover name={name} dateRange={dateRange} logoUrl={logoUrl} />}
         <Header>
           <Text>
             { edit && <EditTitle name={name} saveChanges={saveChanges} />}
@@ -121,6 +131,7 @@ class Report extends React.Component {
           deleteChart={deleteChart}
           exporting={exporting}
         />
+        {exporting && <Gradient />}
       </Page>
     );
   }

@@ -65,7 +65,7 @@ const Separator = styled.section`
   page-break-inside: avoid;
 
   &:last-of-type {
-    margin-bottom: 2rem;
+    margin-bottom: 0;
   }
 
   aside {
