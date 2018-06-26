@@ -49,6 +49,7 @@ describe('PDF formatter', () => {
     it('should add a page break on a table row', () => {
       const reportWithPageBreak = require('./mocks/reportWithTable').default; // eslint-disable-line global-require
       const formatter = new PDFFormatter(reportWithPageBreak);
+      console.log(reportWithPageBreak.innerHTML);
       formatter.formatPage();
       const elementsWithPageBreak = reportWithPageBreak
         .children[1].children[1].children[0].children[0];

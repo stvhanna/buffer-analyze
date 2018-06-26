@@ -21,9 +21,10 @@ const ChartContainer = styled.div`
   min-height: 177px;
 `;
 
-const PostsTableWrapper = styled.table`
+const PostsTableWrapper = styled.ol`
   padding: 0;
   margin: 0;
+  list-style: none;
 `;
 
 const GridContainer = styled.div`
@@ -70,7 +71,6 @@ export const Table = ({ metrics, timezone, service, exporting }) => {
   return (
     <ChartContainer>
       <PostsTableWrapper>
-        <tbody>
           {topPosts.map((post, index) =>
             <PostItem
               key={post.id}
@@ -84,7 +84,6 @@ export const Table = ({ metrics, timezone, service, exporting }) => {
               exporting={exporting}
             />,
           )}
-        </tbody>
       </PostsTableWrapper>
     </ChartContainer>
   );

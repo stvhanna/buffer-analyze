@@ -38,7 +38,7 @@ class PDFFormatter {
   }
 
   static canBeBrokenDownIntoMultiplePages (element) {
-    return element.getElementsByTagName('aside').length > 0 || element.getElementsByTagName('table').length > 0;
+    return element.getElementsByTagName('aside').length > 0 || element.getElementsByTagName('ol').length > 0;
   }
 
   addPageBreak(element) {
@@ -55,7 +55,7 @@ class PDFFormatter {
         this.breakIntoPages(listItems);
       } else {
         const [list] = content.children;
-        const listItems = list.getElementsByTagName('tr');
+        const listItems = list.getElementsByTagName('li');
         this.breakIntoPages(listItems);
       }
     } else {

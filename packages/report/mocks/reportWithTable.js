@@ -5,13 +5,13 @@ const { document } = (new JSDOM(`
     <div>Title</div>
     <div>
         <div>Title</div>
-        <table>
-          <tbody>
-            <tr>This should break</tr>
-            <tr></tr>
-            <tr></tr>
-          </tbody>
-        </table>
+        <div>
+          <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ol>
+        </div>
     </div>
   </div>
 `)).window;
