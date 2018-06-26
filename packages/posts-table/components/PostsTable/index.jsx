@@ -21,9 +21,10 @@ const ChartContainer = styled.div`
   min-height: 177px;
 `;
 
-const PostsTableWrapper = styled.table`
+const PostsTableWrapper = styled.ol`
   padding: 0;
   margin: 0;
+  list-style: none;
 `;
 
 const GridContainer = styled.div`
@@ -70,19 +71,19 @@ export const Table = ({ metrics, timezone, service, exporting }) => {
   return (
     <ChartContainer>
       <PostsTableWrapper>
-        {topPosts.map((post, index) =>
-          <PostItem
-            key={post.id}
-            index={index}
-            timezone={timezone}
-            post={post}
-            maxEngagementValue={maxEngagementValue}
-            maxAudienceValue={maxAudienceValue}
-            engagementMetrics={engagementMetrics}
-            audienceMetrics={audienceMetrics}
-            exporting={exporting}
-          />,
-        )}
+          {topPosts.map((post, index) =>
+            <PostItem
+              key={post.id}
+              index={index}
+              timezone={timezone}
+              post={post}
+              maxEngagementValue={maxEngagementValue}
+              maxAudienceValue={maxAudienceValue}
+              engagementMetrics={engagementMetrics}
+              audienceMetrics={audienceMetrics}
+              exporting={exporting}
+            />,
+          )}
       </PostsTableWrapper>
     </ChartContainer>
   );

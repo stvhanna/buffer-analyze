@@ -345,11 +345,11 @@ exports[`Snapshots PostItem should not render the top posts item when no metrics
       }
     }
   >
-    <tr
-      className="sc-hSdWYo kccNLr"
+    <li
+      className="sc-hSdWYo hxLMxr"
     >
-      <td
-        className="sc-cvbbAY ePXgRF"
+      <div
+        className="sc-cvbbAY brUDDv"
       >
         <span
           style={
@@ -363,9 +363,9 @@ exports[`Snapshots PostItem should not render the top posts item when no metrics
         >
           123
         </span>
-      </td>
-      <td
-        className="sc-jWBwVP dITmiV"
+      </div>
+      <div
+        className="sc-jWBwVP huTTSr"
       >
         <div
           className="sc-gPEVay dafan"
@@ -445,8 +445,8 @@ exports[`Snapshots PostItem should not render the top posts item when no metrics
             src="https://safeimage.buffer.com/https://buffer-media-uploads.s3.amazonaws.com/59a4711d7cbc83d309960116/5ed19955e0c4785b990ec752ff6df55c367f9808_dc779030b683e4f41ffa863f5c88795128de1d58_thumbnail"
           />
         </div>
-      </td>
-    </tr>
+      </div>
+    </li>
   </div>
 </span>
 `;
@@ -460,11 +460,11 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
       }
     }
   >
-    <tr
-      className="sc-hSdWYo kccNLr"
+    <li
+      className="sc-hSdWYo hxLMxr"
     >
-      <td
-        className="sc-cvbbAY ePXgRF"
+      <div
+        className="sc-cvbbAY brUDDv"
       >
         <span
           style={
@@ -478,9 +478,9 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
         >
           123
         </span>
-      </td>
-      <td
-        className="sc-jWBwVP dITmiV"
+      </div>
+      <div
+        className="sc-jWBwVP huTTSr"
       >
         <div
           className="sc-gPEVay dafan"
@@ -560,9 +560,9 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
             src="https://safeimage.buffer.com/https://buffer-media-uploads.s3.amazonaws.com/59a4711d7cbc83d309960116/5ed19955e0c4785b990ec752ff6df55c367f9808_dc779030b683e4f41ffa863f5c88795128de1d58_thumbnail"
           />
         </div>
-      </td>
-      <td
-        className="sc-eHgmQL IiGfj"
+      </div>
+      <div
+        className="sc-eHgmQL ifeYNG"
       >
         <div
           className="sc-kkGfuU bnbQcV"
@@ -870,8 +870,8 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
             </span>
           </span>
         </div>
-      </td>
-    </tr>
+      </div>
+    </li>
   </div>
 </span>
 `;
@@ -2722,14 +2722,14 @@ exports[`Snapshots PostsTable should hide posts link on export 1`] = `
           <div
             className="sc-bRBYWo jcNgcT"
           >
-            <table
-              className="sc-hzDkRC ezXTvV"
+            <ol
+              className="sc-hzDkRC dvTEeV"
             >
-              <tr
-                className="sc-hSdWYo kccNLr"
+              <li
+                className="sc-hSdWYo hxLMxr"
               >
-                <td
-                  className="sc-cvbbAY ePXgRF"
+                <div
+                  className="sc-cvbbAY brUDDv"
                 >
                   <span
                     style={
@@ -2743,9 +2743,9 @@ exports[`Snapshots PostsTable should hide posts link on export 1`] = `
                   >
                     1
                   </span>
-                </td>
-                <td
-                  className="sc-jWBwVP dITmiV"
+                </div>
+                <div
+                  className="sc-jWBwVP huTTSr"
                 >
                   <div
                     className="sc-gPEVay dafan"
@@ -2803,9 +2803,9 @@ exports[`Snapshots PostsTable should hide posts link on export 1`] = `
                       src="https://safeimage.buffer.com/https://buffer-media-uploads.s3.amazonaws.com/59a4711d7cbc83d309960116/5ed19955e0c4785b990ec752ff6df55c367f9808_dc779030b683e4f41ffa863f5c88795128de1d58_thumbnail"
                     />
                   </div>
-                </td>
-                <td
-                  className="sc-eHgmQL IiGfj"
+                </div>
+                <div
+                  className="sc-eHgmQL ifeYNG"
                 >
                   <div
                     className="sc-kkGfuU bnbQcV"
@@ -3062,13 +3062,13 @@ exports[`Snapshots PostsTable should hide posts link on export 1`] = `
                       </span>
                     </span>
                   </div>
-                </td>
-              </tr>
-              <tr
-                className="sc-hSdWYo kccNLr"
+                </div>
+              </li>
+              <li
+                className="sc-hSdWYo hxLMxr"
               >
-                <td
-                  className="sc-cvbbAY ePXgRF"
+                <div
+                  className="sc-cvbbAY brUDDv"
                 >
                   <span
                     style={
@@ -3082,9 +3082,9 @@ exports[`Snapshots PostsTable should hide posts link on export 1`] = `
                   >
                     2
                   </span>
-                </td>
-                <td
-                  className="sc-jWBwVP dITmiV"
+                </div>
+                <div
+                  className="sc-jWBwVP huTTSr"
                 >
                   <div
                     className="sc-gPEVay dafan"
@@ -3145,9 +3145,9 @@ exports[`Snapshots PostsTable should hide posts link on export 1`] = `
                       src="https://safeimage.buffer.com/https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/21314332_1678667648872342_5837561331042406631_n.jpg?oh=739aa8ab3fb7ca5dd00d11c369bde453&oe=5A153FC6"
                     />
                   </div>
-                </td>
-                <td
-                  className="sc-eHgmQL IiGfj"
+                </div>
+                <div
+                  className="sc-eHgmQL ifeYNG"
                 >
                   <div
                     className="sc-kkGfuU bnbQcV"
@@ -3404,13 +3404,13 @@ exports[`Snapshots PostsTable should hide posts link on export 1`] = `
                       </span>
                     </span>
                   </div>
-                </td>
-              </tr>
-              <tr
-                className="sc-hSdWYo kccNLr"
+                </div>
+              </li>
+              <li
+                className="sc-hSdWYo hxLMxr"
               >
-                <td
-                  className="sc-cvbbAY ePXgRF"
+                <div
+                  className="sc-cvbbAY brUDDv"
                 >
                   <span
                     style={
@@ -3424,9 +3424,9 @@ exports[`Snapshots PostsTable should hide posts link on export 1`] = `
                   >
                     3
                   </span>
-                </td>
-                <td
-                  className="sc-jWBwVP dITmiV"
+                </div>
+                <div
+                  className="sc-jWBwVP huTTSr"
                 >
                   <div
                     className="sc-gPEVay dafan"
@@ -3480,9 +3480,9 @@ exports[`Snapshots PostsTable should hide posts link on export 1`] = `
                       />
                     </div>
                   </div>
-                </td>
-                <td
-                  className="sc-eHgmQL IiGfj"
+                </div>
+                <div
+                  className="sc-eHgmQL ifeYNG"
                 >
                   <div
                     className="sc-kkGfuU bnbQcV"
@@ -3739,9 +3739,9 @@ exports[`Snapshots PostsTable should hide posts link on export 1`] = `
                       </span>
                     </span>
                   </div>
-                </td>
-              </tr>
-            </table>
+                </div>
+              </li>
+            </ol>
           </div>
         </div>
       </div>
@@ -4942,14 +4942,14 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
           <div
             className="sc-bRBYWo jcNgcT"
           >
-            <table
-              className="sc-hzDkRC ezXTvV"
+            <ol
+              className="sc-hzDkRC dvTEeV"
             >
-              <tr
-                className="sc-hSdWYo kccNLr"
+              <li
+                className="sc-hSdWYo hxLMxr"
               >
-                <td
-                  className="sc-cvbbAY ePXgRF"
+                <div
+                  className="sc-cvbbAY brUDDv"
                 >
                   <span
                     style={
@@ -4963,9 +4963,9 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                   >
                     1
                   </span>
-                </td>
-                <td
-                  className="sc-jWBwVP dITmiV"
+                </div>
+                <div
+                  className="sc-jWBwVP huTTSr"
                 >
                   <div
                     className="sc-gPEVay dafan"
@@ -5045,9 +5045,9 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                       src="https://safeimage.buffer.com/https://buffer-media-uploads.s3.amazonaws.com/59a4711d7cbc83d309960116/5ed19955e0c4785b990ec752ff6df55c367f9808_dc779030b683e4f41ffa863f5c88795128de1d58_thumbnail"
                     />
                   </div>
-                </td>
-                <td
-                  className="sc-eHgmQL IiGfj"
+                </div>
+                <div
+                  className="sc-eHgmQL ifeYNG"
                 >
                   <div
                     className="sc-kkGfuU bnbQcV"
@@ -5406,13 +5406,13 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                       </span>
                     </span>
                   </div>
-                </td>
-              </tr>
-              <tr
-                className="sc-hSdWYo kccNLr"
+                </div>
+              </li>
+              <li
+                className="sc-hSdWYo hxLMxr"
               >
-                <td
-                  className="sc-cvbbAY ePXgRF"
+                <div
+                  className="sc-cvbbAY brUDDv"
                 >
                   <span
                     style={
@@ -5426,9 +5426,9 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                   >
                     2
                   </span>
-                </td>
-                <td
-                  className="sc-jWBwVP dITmiV"
+                </div>
+                <div
+                  className="sc-jWBwVP huTTSr"
                 >
                   <div
                     className="sc-gPEVay dafan"
@@ -5511,9 +5511,9 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                       src="https://safeimage.buffer.com/https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/21314332_1678667648872342_5837561331042406631_n.jpg?oh=739aa8ab3fb7ca5dd00d11c369bde453&oe=5A153FC6"
                     />
                   </div>
-                </td>
-                <td
-                  className="sc-eHgmQL IiGfj"
+                </div>
+                <div
+                  className="sc-eHgmQL ifeYNG"
                 >
                   <div
                     className="sc-kkGfuU bnbQcV"
@@ -5872,13 +5872,13 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                       </span>
                     </span>
                   </div>
-                </td>
-              </tr>
-              <tr
-                className="sc-hSdWYo kccNLr"
+                </div>
+              </li>
+              <li
+                className="sc-hSdWYo hxLMxr"
               >
-                <td
-                  className="sc-cvbbAY ePXgRF"
+                <div
+                  className="sc-cvbbAY brUDDv"
                 >
                   <span
                     style={
@@ -5892,9 +5892,9 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                   >
                     3
                   </span>
-                </td>
-                <td
-                  className="sc-jWBwVP dITmiV"
+                </div>
+                <div
+                  className="sc-jWBwVP huTTSr"
                 >
                   <div
                     className="sc-gPEVay dafan"
@@ -5970,9 +5970,9 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                       />
                     </div>
                   </div>
-                </td>
-                <td
-                  className="sc-eHgmQL IiGfj"
+                </div>
+                <div
+                  className="sc-eHgmQL ifeYNG"
                 >
                   <div
                     className="sc-kkGfuU bnbQcV"
@@ -6331,9 +6331,9 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                       </span>
                     </span>
                   </div>
-                </td>
-              </tr>
-            </table>
+                </div>
+              </li>
+            </ol>
           </div>
         </div>
       </div>
@@ -7135,14 +7135,14 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
           <div
             className="sc-bRBYWo jcNgcT"
           >
-            <table
-              className="sc-hzDkRC ezXTvV"
+            <ol
+              className="sc-hzDkRC dvTEeV"
             >
-              <tr
-                className="sc-hSdWYo kccNLr"
+              <li
+                className="sc-hSdWYo hxLMxr"
               >
-                <td
-                  className="sc-cvbbAY ePXgRF"
+                <div
+                  className="sc-cvbbAY brUDDv"
                 >
                   <span
                     style={
@@ -7156,9 +7156,9 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                   >
                     1
                   </span>
-                </td>
-                <td
-                  className="sc-jWBwVP dITmiV"
+                </div>
+                <div
+                  className="sc-jWBwVP huTTSr"
                 >
                   <div
                     className="sc-gPEVay dafan"
@@ -7238,9 +7238,9 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                       src="https://safeimage.buffer.com/https://buffer-media-uploads.s3.amazonaws.com/59a4711d7cbc83d309960116/5ed19955e0c4785b990ec752ff6df55c367f9808_dc779030b683e4f41ffa863f5c88795128de1d58_thumbnail"
                     />
                   </div>
-                </td>
-                <td
-                  className="sc-eHgmQL IiGfj"
+                </div>
+                <div
+                  className="sc-eHgmQL ifeYNG"
                 >
                   <div
                     className="sc-kkGfuU bnbQcV"
@@ -7497,13 +7497,13 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                       </span>
                     </span>
                   </div>
-                </td>
-              </tr>
-              <tr
-                className="sc-hSdWYo kccNLr"
+                </div>
+              </li>
+              <li
+                className="sc-hSdWYo hxLMxr"
               >
-                <td
-                  className="sc-cvbbAY ePXgRF"
+                <div
+                  className="sc-cvbbAY brUDDv"
                 >
                   <span
                     style={
@@ -7517,9 +7517,9 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                   >
                     2
                   </span>
-                </td>
-                <td
-                  className="sc-jWBwVP dITmiV"
+                </div>
+                <div
+                  className="sc-jWBwVP huTTSr"
                 >
                   <div
                     className="sc-gPEVay dafan"
@@ -7602,9 +7602,9 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                       src="https://safeimage.buffer.com/https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/21314332_1678667648872342_5837561331042406631_n.jpg?oh=739aa8ab3fb7ca5dd00d11c369bde453&oe=5A153FC6"
                     />
                   </div>
-                </td>
-                <td
-                  className="sc-eHgmQL IiGfj"
+                </div>
+                <div
+                  className="sc-eHgmQL ifeYNG"
                 >
                   <div
                     className="sc-kkGfuU bnbQcV"
@@ -7861,13 +7861,13 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                       </span>
                     </span>
                   </div>
-                </td>
-              </tr>
-              <tr
-                className="sc-hSdWYo kccNLr"
+                </div>
+              </li>
+              <li
+                className="sc-hSdWYo hxLMxr"
               >
-                <td
-                  className="sc-cvbbAY ePXgRF"
+                <div
+                  className="sc-cvbbAY brUDDv"
                 >
                   <span
                     style={
@@ -7881,9 +7881,9 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                   >
                     3
                   </span>
-                </td>
-                <td
-                  className="sc-jWBwVP dITmiV"
+                </div>
+                <div
+                  className="sc-jWBwVP huTTSr"
                 >
                   <div
                     className="sc-gPEVay dafan"
@@ -7959,9 +7959,9 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                       />
                     </div>
                   </div>
-                </td>
-                <td
-                  className="sc-eHgmQL IiGfj"
+                </div>
+                <div
+                  className="sc-eHgmQL ifeYNG"
                 >
                   <div
                     className="sc-kkGfuU bnbQcV"
@@ -8218,9 +8218,9 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                       </span>
                     </span>
                   </div>
-                </td>
-              </tr>
-            </table>
+                </div>
+              </li>
+            </ol>
           </div>
         </div>
       </div>
@@ -9022,14 +9022,14 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
           <div
             className="sc-bRBYWo jcNgcT"
           >
-            <table
-              className="sc-hzDkRC ezXTvV"
+            <ol
+              className="sc-hzDkRC dvTEeV"
             >
-              <tr
-                className="sc-hSdWYo kccNLr"
+              <li
+                className="sc-hSdWYo hxLMxr"
               >
-                <td
-                  className="sc-cvbbAY ePXgRF"
+                <div
+                  className="sc-cvbbAY brUDDv"
                 >
                   <span
                     style={
@@ -9043,9 +9043,9 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                   >
                     1
                   </span>
-                </td>
-                <td
-                  className="sc-jWBwVP dITmiV"
+                </div>
+                <div
+                  className="sc-jWBwVP huTTSr"
                 >
                   <div
                     className="sc-gPEVay dafan"
@@ -9125,9 +9125,9 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                       src="https://safeimage.buffer.com/https://buffer-media-uploads.s3.amazonaws.com/59a4711d7cbc83d309960116/5ed19955e0c4785b990ec752ff6df55c367f9808_dc779030b683e4f41ffa863f5c88795128de1d58_thumbnail"
                     />
                   </div>
-                </td>
-                <td
-                  className="sc-eHgmQL IiGfj"
+                </div>
+                <div
+                  className="sc-eHgmQL ifeYNG"
                 >
                   <div
                     className="sc-kkGfuU bnbQcV"
@@ -9384,13 +9384,13 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                       </span>
                     </span>
                   </div>
-                </td>
-              </tr>
-              <tr
-                className="sc-hSdWYo kccNLr"
+                </div>
+              </li>
+              <li
+                className="sc-hSdWYo hxLMxr"
               >
-                <td
-                  className="sc-cvbbAY ePXgRF"
+                <div
+                  className="sc-cvbbAY brUDDv"
                 >
                   <span
                     style={
@@ -9404,9 +9404,9 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                   >
                     2
                   </span>
-                </td>
-                <td
-                  className="sc-jWBwVP dITmiV"
+                </div>
+                <div
+                  className="sc-jWBwVP huTTSr"
                 >
                   <div
                     className="sc-gPEVay dafan"
@@ -9489,9 +9489,9 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                       src="https://safeimage.buffer.com/https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/21314332_1678667648872342_5837561331042406631_n.jpg?oh=739aa8ab3fb7ca5dd00d11c369bde453&oe=5A153FC6"
                     />
                   </div>
-                </td>
-                <td
-                  className="sc-eHgmQL IiGfj"
+                </div>
+                <div
+                  className="sc-eHgmQL ifeYNG"
                 >
                   <div
                     className="sc-kkGfuU bnbQcV"
@@ -9748,13 +9748,13 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                       </span>
                     </span>
                   </div>
-                </td>
-              </tr>
-              <tr
-                className="sc-hSdWYo kccNLr"
+                </div>
+              </li>
+              <li
+                className="sc-hSdWYo hxLMxr"
               >
-                <td
-                  className="sc-cvbbAY ePXgRF"
+                <div
+                  className="sc-cvbbAY brUDDv"
                 >
                   <span
                     style={
@@ -9768,9 +9768,9 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                   >
                     3
                   </span>
-                </td>
-                <td
-                  className="sc-jWBwVP dITmiV"
+                </div>
+                <div
+                  className="sc-jWBwVP huTTSr"
                 >
                   <div
                     className="sc-gPEVay dafan"
@@ -9846,9 +9846,9 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                       />
                     </div>
                   </div>
-                </td>
-                <td
-                  className="sc-eHgmQL IiGfj"
+                </div>
+                <div
+                  className="sc-eHgmQL ifeYNG"
                 >
                   <div
                     className="sc-kkGfuU bnbQcV"
@@ -10105,9 +10105,9 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                       </span>
                     </span>
                   </div>
-                </td>
-              </tr>
-            </table>
+                </div>
+              </li>
+            </ol>
           </div>
         </div>
       </div>
@@ -11109,14 +11109,14 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
           <div
             className="sc-bRBYWo jcNgcT"
           >
-            <table
-              className="sc-hzDkRC ezXTvV"
+            <ol
+              className="sc-hzDkRC dvTEeV"
             >
-              <tr
-                className="sc-hSdWYo kccNLr"
+              <li
+                className="sc-hSdWYo hxLMxr"
               >
-                <td
-                  className="sc-cvbbAY ePXgRF"
+                <div
+                  className="sc-cvbbAY brUDDv"
                 >
                   <span
                     style={
@@ -11130,9 +11130,9 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                   >
                     1
                   </span>
-                </td>
-                <td
-                  className="sc-jWBwVP dITmiV"
+                </div>
+                <div
+                  className="sc-jWBwVP huTTSr"
                 >
                   <div
                     className="sc-gPEVay dafan"
@@ -11212,9 +11212,9 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                       src="https://safeimage.buffer.com/https://buffer-media-uploads.s3.amazonaws.com/59a4711d7cbc83d309960116/5ed19955e0c4785b990ec752ff6df55c367f9808_dc779030b683e4f41ffa863f5c88795128de1d58_thumbnail"
                     />
                   </div>
-                </td>
-                <td
-                  className="sc-eHgmQL IiGfj"
+                </div>
+                <div
+                  className="sc-eHgmQL ifeYNG"
                 >
                   <div
                     className="sc-kkGfuU bnbQcV"
@@ -11573,13 +11573,13 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                       </span>
                     </span>
                   </div>
-                </td>
-              </tr>
-              <tr
-                className="sc-hSdWYo kccNLr"
+                </div>
+              </li>
+              <li
+                className="sc-hSdWYo hxLMxr"
               >
-                <td
-                  className="sc-cvbbAY ePXgRF"
+                <div
+                  className="sc-cvbbAY brUDDv"
                 >
                   <span
                     style={
@@ -11593,9 +11593,9 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                   >
                     2
                   </span>
-                </td>
-                <td
-                  className="sc-jWBwVP dITmiV"
+                </div>
+                <div
+                  className="sc-jWBwVP huTTSr"
                 >
                   <div
                     className="sc-gPEVay dafan"
@@ -11678,9 +11678,9 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                       src="https://safeimage.buffer.com/https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/21314332_1678667648872342_5837561331042406631_n.jpg?oh=739aa8ab3fb7ca5dd00d11c369bde453&oe=5A153FC6"
                     />
                   </div>
-                </td>
-                <td
-                  className="sc-eHgmQL IiGfj"
+                </div>
+                <div
+                  className="sc-eHgmQL ifeYNG"
                 >
                   <div
                     className="sc-kkGfuU bnbQcV"
@@ -12039,13 +12039,13 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                       </span>
                     </span>
                   </div>
-                </td>
-              </tr>
-              <tr
-                className="sc-hSdWYo kccNLr"
+                </div>
+              </li>
+              <li
+                className="sc-hSdWYo hxLMxr"
               >
-                <td
-                  className="sc-cvbbAY ePXgRF"
+                <div
+                  className="sc-cvbbAY brUDDv"
                 >
                   <span
                     style={
@@ -12059,9 +12059,9 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                   >
                     3
                   </span>
-                </td>
-                <td
-                  className="sc-jWBwVP dITmiV"
+                </div>
+                <div
+                  className="sc-jWBwVP huTTSr"
                 >
                   <div
                     className="sc-gPEVay dafan"
@@ -12137,9 +12137,9 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                       />
                     </div>
                   </div>
-                </td>
-                <td
-                  className="sc-eHgmQL IiGfj"
+                </div>
+                <div
+                  className="sc-eHgmQL ifeYNG"
                 >
                   <div
                     className="sc-kkGfuU bnbQcV"
@@ -12498,9 +12498,9 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                       </span>
                     </span>
                   </div>
-                </td>
-              </tr>
-            </table>
+                </div>
+              </li>
+            </ol>
           </div>
         </div>
       </div>
