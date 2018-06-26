@@ -19,6 +19,7 @@ const PostRow = styled.li`
   align-content: stretch;
   margin: 0;
   padding: 0;
+  border-color: ${geyser};
 
   &:first-child > div {
     border-top: 1px dotted ${geyser};

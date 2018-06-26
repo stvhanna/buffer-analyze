@@ -82,7 +82,7 @@ class PDFFormatter {
     const color = getComputedStyle(element).getPropertyValue('border-bottom-color');
     element.style.setProperty('border-top-color', color);
     element.style.setProperty('border-top-width', '1px');
-    element.style.setProperty('border-top-style', 'solid');
+    element.style.setProperty('border-top-style', 'dotted');
     element.style.setProperty('margin-top', '2.8rem');
   }
 }
