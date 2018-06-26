@@ -28,15 +28,15 @@ const Container = styled.div`
   padding: 4.5rem 1.5rem;
   background: ${white};
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  text-align: left;
+  text-align: center;
 `;
 
 const Wrapper = styled.div``;
 
 const Inner = styled.div`
-  padding: 0 8rem 24rem;
+  padding: 0 0 28rem;
 `;
 
 const Title = styled.h1`
@@ -49,7 +49,7 @@ const Title = styled.h1`
 
 const Logo = styled.img`
   display: block;
-  margin: 4rem auto 0;
+  margin: 8rem auto 0;
   min-width: 100px;
   max-width: 300px;
   height: auto;

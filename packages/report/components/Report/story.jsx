@@ -14,7 +14,6 @@ const Card = styled.section`
   border: 1px solid #E2E8ED;
   box-shadow: 0px 0px 10px rgba(48, 71, 89, 0.05);
   border-radius: 5px;
-  padding: 0;
   overflow: hidden;
 `;
 
