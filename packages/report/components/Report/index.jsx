@@ -29,6 +29,7 @@ import LogoUpload from '../LogoUpload';
 
 const Page = styled.div`
   background: ${offWhite};
+  padding: 0 0 2rem;
 `;
 
 const Header = styled.div`
@@ -67,6 +68,7 @@ const Centered = styled.div`
 `;
 
 const Gradient = styled.div`
+  margin: 0 0 -2rem;
   background: rgb(255,255,255);
   background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
   height: 2rem;

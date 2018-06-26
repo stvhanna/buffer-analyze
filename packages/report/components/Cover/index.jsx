@@ -25,12 +25,12 @@ const Page = styled.article`
 const Container = styled.div`
   height: 100%;
   box-sizing: border-box;
-  padding: 4.5rem 3rem;
+  padding: 4.5rem 1.5rem;
   background: ${white};
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  text-align: center;
+  text-align: left;
 `;
 
 const Wrapper = styled.div``;

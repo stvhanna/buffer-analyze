@@ -549,7 +549,7 @@ exports[`Snapshots Cover renders a cover with a logo 1`] = `
       className="sc-bxivhb cEKEIA"
     >
       <div
-        className="sc-ifAKCX gxuirt"
+        className="sc-ifAKCX iUeysa"
       >
         <div
           className="sc-EHOje jvzENE"
@@ -613,7 +613,7 @@ exports[`Snapshots Cover renders a cover without a logo 1`] = `
       className="sc-bxivhb cEKEIA"
     >
       <div
-        className="sc-ifAKCX gxuirt"
+        className="sc-ifAKCX iUeysa"
       >
         <div
           className="sc-EHOje jvzENE"
@@ -1374,7 +1374,7 @@ exports[`Snapshots Report render in edit mode 1`] = `
     className="sc-fQejPQ cajZzW"
   >
     <div
-      className="sc-cooIXK cFMURY"
+      className="sc-cooIXK dwOZln"
       id="report-page"
     >
       <div
@@ -4587,7 +4587,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
     className="sc-fQejPQ cajZzW"
   >
     <div
-      className="sc-cooIXK cFMURY"
+      className="sc-cooIXK dwOZln"
       id="report-page"
     >
       <div
@@ -5168,14 +5168,14 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
 exports[`Snapshots Report render only the multi-profile legend if that is available whilst exporting 1`] = `
 <span>
   <div
-    className="sc-cooIXK cFMURY"
+    className="sc-cooIXK dwOZln"
     id="report-page"
   >
     <article
       className="sc-bxivhb cEKEIA"
     >
       <div
-        className="sc-ifAKCX gxuirt"
+        className="sc-ifAKCX iUeysa"
       >
         <div
           className="sc-EHOje jvzENE"
@@ -5617,7 +5617,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
       </div>
     </section>
     <div
-      className="sc-fZwumE bxgVaL"
+      className="sc-fZwumE cBOHsv"
     />
   </div>
 </span>
@@ -5629,7 +5629,7 @@ exports[`Snapshots Report render with summary table and logo 1`] = `
     className="sc-fQejPQ cajZzW"
   >
     <div
-      className="sc-cooIXK cFMURY"
+      className="sc-cooIXK dwOZln"
       id="report-page"
     >
       <div
@@ -8862,14 +8862,14 @@ exports[`Snapshots Report render with summary table and logo 1`] = `
 exports[`Snapshots Report render with summary table and logo whilst exporting 1`] = `
 <span>
   <div
-    className="sc-cooIXK cFMURY"
+    className="sc-cooIXK dwOZln"
     id="report-page"
   >
     <article
       className="sc-bxivhb cEKEIA"
     >
       <div
-        className="sc-ifAKCX gxuirt"
+        className="sc-ifAKCX iUeysa"
       >
         <div
           className="sc-EHOje jvzENE"
@@ -11618,7 +11618,7 @@ exports[`Snapshots Report render with summary table and logo whilst exporting 1`
       </ul>
     </section>
     <div
-      className="sc-fZwumE bxgVaL"
+      className="sc-fZwumE cBOHsv"
     />
   </div>
 </span>
@@ -11630,7 +11630,7 @@ exports[`Snapshots Report render with summary table and no logo 1`] = `
     className="sc-fQejPQ cajZzW"
   >
     <div
-      className="sc-cooIXK cFMURY"
+      className="sc-cooIXK dwOZln"
       id="report-page"
     >
       <div
@@ -14838,14 +14838,14 @@ exports[`Snapshots Report render with summary table and no logo 1`] = `
 exports[`Snapshots Report render with summary table and no logo whilst exporting 1`] = `
 <span>
   <div
-    className="sc-cooIXK cFMURY"
+    className="sc-cooIXK dwOZln"
     id="report-page"
   >
     <article
       className="sc-bxivhb cEKEIA"
     >
       <div
-        className="sc-ifAKCX gxuirt"
+        className="sc-ifAKCX iUeysa"
       >
         <div
           className="sc-EHOje jvzENE"
@@ -17564,7 +17564,7 @@ exports[`Snapshots Report render with summary table and no logo whilst exporting
       </ul>
     </section>
     <div
-      className="sc-fZwumE bxgVaL"
+      className="sc-fZwumE cBOHsv"
     />
   </div>
 </span>
