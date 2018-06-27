@@ -14,32 +14,35 @@ import {
 
 import MetricGraph from '../MetricGraph';
 
-const PostRow = styled.tr`
+const PostRow = styled.li`
+  display: flex;
+  align-content: stretch;
   margin: 0;
   padding: 0;
+  border-color: ${geyser};
 
-  &:first-child td {
+  &:first-child > div {
     border-top: 1px dotted ${geyser};
   }
 
-  &:last-child td {
+  &:last-child > div {
     border-bottom: none;
   }
 `;
 
-const MetricCellInner = styled.td`
-  text-decoration: none;
+const MetricCellInner = styled.div`
   color: ${outerSpace};
   padding: 1rem 0;
-  width: 25%;
+  width: 220px;
   padding-left: 1rem;
   vertical-align: top;
   border-left: 1px dotted ${geyser};
   border-bottom: 1px dotted ${geyser};
   `;
 
-const NumberCell = styled.td`
+const NumberCell = styled.div`
   position: relative;
+  width: 46px;
   color: ${outerSpace};
   padding: 0.9rem 1rem 1.25rem 0;
   text-align: right;
@@ -48,11 +51,11 @@ const NumberCell = styled.td`
   border-bottom: 1px dotted ${geyser};
 `;
 
-const ContentCell = styled.td`
-  text-decoration: none;
+const ContentCell = styled.div`
   color: ${outerSpace};
   padding: 1rem 1rem 1.25rem;
   padding-right: 1rem;
+  width: 620px;
   vertical-align: top;
   border-bottom: 1px dotted ${geyser};
 `;

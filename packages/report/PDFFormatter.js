@@ -38,18 +38,16 @@ class PDFFormatter {
   }
 
   static canBeBrokenDownIntoMultiplePages (element) {
-    return element.getElementsByTagName('aside').length > 0;
+    return element.getElementsByTagName('ol').length > 0;
   }
 
   addPageBreak(element) {
     if (PDFFormatter.canBeBrokenDownIntoMultiplePages(element)) {
-      const [title, aside] = element.children;
-      const [header, list] = aside.children;
       this.removeFromCurrentPage(element);
-      this.addToCurrentPage(title);
-      this.addToCurrentPage(header);
-      const listItems = list.children;
-      this.breakIntoPages(listItems);
+      const [title, content] = element.children;
+      const [list] = content.children;
+      const listItems = list.getElementsByTagName('li');
+      this.breakTableIntoPages(listItems, title);
     } else {
       this.addNewPage(element);
     }
@@ -60,10 +58,18 @@ class PDFFormatter {
     this.currentPageHeight = element.clientHeight;
   }
 
-  breakIntoPages(listItems) {
-    Array.prototype.forEach.call(listItems, (li) => {
+  breakTableIntoPages(listItems, title) {
+    this.addToCurrentPage(title);
+    Array.prototype.forEach.call(listItems, (li, index) => {
       this.addToCurrentPage(li);
-      if (this.needsPageBreak()) {
+      const needsPageBreak = this.needsPageBreak();
+
+      // We don't want to send the first element to a new page
+      // if that is needed we should break before the title.
+      if (needsPageBreak && index === 0) {
+        this.addNewPage(title);
+        this.addToCurrentPage(li);
+      } else if (needsPageBreak) {
         this.addNewPage(li);
         PDFFormatter.addBorder(li);
       }
@@ -74,7 +80,7 @@ class PDFFormatter {
     const color = getComputedStyle(element).getPropertyValue('border-bottom-color');
     element.style.setProperty('border-top-color', color);
     element.style.setProperty('border-top-width', '1px');
-    element.style.setProperty('border-top-style', 'solid');
+    element.style.setProperty('border-top-style', 'dotted');
     element.style.setProperty('margin-top', '2.8rem');
   }
 }
