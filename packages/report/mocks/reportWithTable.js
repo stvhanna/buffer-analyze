@@ -21,4 +21,10 @@ Object.defineProperty(Object.getPrototypeOf(page), 'clientHeight', {
   configurable: true,
 });
 
+const li = document.getElementsByTagName('li')[0];
+Object.defineProperty(Object.getPrototypeOf(li), 'clientHeight', {
+  get: () => 600,
+  configurable: true,
+});
+
 export default page;

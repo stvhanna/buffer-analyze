@@ -38,26 +38,16 @@ class PDFFormatter {
   }
 
   static canBeBrokenDownIntoMultiplePages (element) {
-    return element.getElementsByTagName('aside').length > 0 || element.getElementsByTagName('ol').length > 0;
+    return element.getElementsByTagName('ol').length > 0;
   }
 
   addPageBreak(element) {
     if (PDFFormatter.canBeBrokenDownIntoMultiplePages(element)) {
       this.removeFromCurrentPage(element);
-
       const [title, content] = element.children;
-      this.addToCurrentPage(title);
-
-      if (content.children.length > 1) {
-        const [header, list] = content.children;
-        this.addToCurrentPage(header);
-        const listItems = list.children;
-        this.breakIntoPages(listItems);
-      } else {
-        const [list] = content.children;
-        const listItems = list.getElementsByTagName('li');
-        this.breakIntoPages(listItems);
-      }
+      const [list] = content.children;
+      const listItems = list.getElementsByTagName('li');
+      this.breakTableIntoPages(listItems, title);
     } else {
       this.addNewPage(element);
     }
@@ -68,10 +58,18 @@ class PDFFormatter {
     this.currentPageHeight = element.clientHeight;
   }
 
-  breakIntoPages(listItems) {
-    Array.prototype.forEach.call(listItems, (li) => {
+  breakTableIntoPages(listItems, title) {
+    this.addToCurrentPage(title);
+    Array.prototype.forEach.call(listItems, (li, index) => {
       this.addToCurrentPage(li);
-      if (this.needsPageBreak()) {
+      const needsPageBreak = this.needsPageBreak();
+
+      // We don't want to send the first element to a new page
+      // if that is needed we should break before the title.
+      if (needsPageBreak && index === 0) {
+        this.addNewPage(title);
+        this.addToCurrentPage(li);
+      } else if (needsPageBreak) {
         this.addNewPage(li);
         PDFFormatter.addBorder(li);
       }
