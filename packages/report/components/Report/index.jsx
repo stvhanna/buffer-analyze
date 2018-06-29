@@ -104,28 +104,30 @@ class Report extends React.Component {
     return (
       <Page id="report-page">
         {exporting && <Cover name={name} dateRange={dateRange} logoUrl={logoUrl} />}
-        <Header>
-          <Text>
-            { edit && <EditTitle name={name} saveChanges={saveChanges} />}
-            { !edit &&
-              <Container>
-                <LogoUpload
-                  logoUrl={logoUrl}
-                  uploadLogo={uploadLogo}
-                  deleteLogo={deleteLogo}
-                  isLogoUploading={isLogoUploading}
-                  isLogoDropzoneDisabled={isLogoDropzoneDisabled}
-                  exporting={exporting}
-                />
-                <Button noStyle onClick={editName}>
-                  <Title>{name}</Title>
-                </Button>
-                <Icon><EditIcon /></Icon>
-              </Container>
-            }
-            <DateRange {...dateRange} />
-          </Text>
-        </Header>
+        {!exporting &&
+          <Header>
+            <Text>
+              { edit && <EditTitle name={name} saveChanges={saveChanges} />}
+              { !edit &&
+                <Container>
+                  <LogoUpload
+                    logoUrl={logoUrl}
+                    uploadLogo={uploadLogo}
+                    deleteLogo={deleteLogo}
+                    isLogoUploading={isLogoUploading}
+                    isLogoDropzoneDisabled={isLogoDropzoneDisabled}
+                    exporting={exporting}
+                  />
+                  <Button noStyle onClick={editName}>
+                    <Title>{name}</Title>
+                  </Button>
+                  <Icon><EditIcon /></Icon>
+                </Container>
+              }
+              <DateRange {...dateRange} />
+            </Text>
+          </Header>
+        }
         <ChartFactory
           charts={charts}
           moveUp={moveUp}
