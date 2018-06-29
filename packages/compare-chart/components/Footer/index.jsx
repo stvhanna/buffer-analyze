@@ -2,10 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import {
-  geyser,
-} from '@bufferapp/components/style/color';
-
-import {
   GridItem,
   PeriodPhrase,
   MetricIcon,
@@ -20,7 +16,7 @@ const gridStyle = {
 
 const gridContainer = {
   position: 'relative',
-  margin: '1.5rem 1.5rem 1rem',
+  margin: '1.5rem 1.5rem 0rem',
 };
 
 const Footer = ({ totals, selectedMetricLabel, startDate, endDate }) => {

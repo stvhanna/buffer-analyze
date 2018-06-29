@@ -7,13 +7,13 @@ import {
 } from '@bufferapp/analyze-shared-components/style';
 import {
   chartConfig,
-  primarySeriesConfig
+  primarySeriesConfig,
 } from './config';
 
 class HourlyEngagementChart extends PureComponent {
   render() {
     const { metric, posts, chartRef } = this.props;
-    let hour = moment().startOf('day').subtract(1, 'hour');
+    const hour = moment().startOf('day').subtract(1, 'hour');
     const metricByHour = metric.hourlyMetrics.map((hourlyMetric, index) => {
       hour.add(1, 'hour');
       return {
@@ -39,7 +39,7 @@ class HourlyEngagementChart extends PureComponent {
 
 HourlyEngagementChart.defaultProps = {
   posts: [],
-  metric: {}
+  metric: {},
 };
 
 HourlyEngagementChart.propTypes = {
