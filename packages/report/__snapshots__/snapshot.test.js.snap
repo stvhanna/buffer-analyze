@@ -1423,7 +1423,7 @@ exports[`Snapshots Report render in edit mode 1`] = `
         </span>
       </div>
       <section
-        className="sc-iBEsjs hYWDoZ"
+        className="sc-iBEsjs dyJpEa"
       >
         <div
           className="sc-kxynE kZABzl"
@@ -2444,7 +2444,7 @@ exports[`Snapshots Report render in edit mode 1`] = `
         </ul>
       </section>
       <section
-        className="sc-iBEsjs hYWDoZ"
+        className="sc-iBEsjs dyJpEa"
       >
         <div
           className="sc-kxynE kZABzl"
@@ -3465,7 +3465,7 @@ exports[`Snapshots Report render in edit mode 1`] = `
         </ul>
       </section>
       <section
-        className="sc-iBEsjs hYWDoZ"
+        className="sc-iBEsjs dyJpEa"
       >
         <div
           className="sc-kxynE kZABzl"
@@ -4725,7 +4725,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
         </span>
       </div>
       <section
-        className="sc-iBEsjs hYWDoZ"
+        className="sc-iBEsjs dyJpEa"
       >
         <div
           className="sc-kxynE kZABzl"
@@ -5221,142 +5221,8 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
         </div>
       </div>
     </article>
-    <div
-      className="sc-fcdeBU kIwvDy"
-    >
-      <span
-        style={
-          Object {
-            "color": "#59626a",
-            "fontFamily": "\\"Roboto\\", sans-serif",
-            "fontSize": "1rem",
-            "fontWeight": 400,
-          }
-        }
-      >
-        <div
-          className="sc-kZmsYB hsAkSd"
-        >
-          <div
-            className="sc-gqjmRU duSJDA"
-          >
-            <div
-              className="sc-VigVT beITMy"
-            >
-              <span
-                className="sc-jzJRlG iQUWtb"
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#323b43",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "1rem",
-                      "fontWeight": 500,
-                    }
-                  }
-                >
-                  Upload logo
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "color": "#59626a",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 400,
-                  }
-                }
-              >
-                PNG or JPG
-              </span>
-            </div>
-          </div>
-          <button
-            aria-label={null}
-            disabled={undefined}
-            onBlur={[Function]}
-            onClick={undefined}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "background": "none",
-                "backgroundColor": "unset",
-                "border": "none",
-                "borderRadius": "unset",
-                "color": "unset",
-                "cursor": "pointer",
-                "display": "unset",
-                "fontFamily": "unset",
-                "fontSize": "unset",
-                "fontWeight": "unset",
-                "lineHeight": "unset",
-                "margin": "unset",
-                "outline": "none",
-                "padding": 0,
-                "transition": "unset",
-              }
-            }
-          >
-            <h1
-              className="sc-gmeYpB hOfLfM"
-            >
-              Weekly Sync Report
-            </h1>
-          </button>
-          <div
-            className="sc-RcBXQ dEQxDt"
-          >
-            <svg
-              height="100%"
-              style={
-                Object {
-                  "fill": "#59626a",
-                  "height": "1rem",
-                  "width": "1rem",
-                }
-              }
-              version="1.1"
-              viewBox="0 0 16 16"
-              width="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-            >
-              <g
-                className="shuttleGray"
-              >
-                <path
-                  d="M0,12.8353339 L3.16356812,15.998902 L0,15.998902 L0,12.8353339 Z M1.05452271,11.7808112 L10.5452271,2.29010681 L13.7087952,5.45367493 L4.21809083,14.9443793 L1.05452271,11.7808112 Z M11.5997498,1.2355841 L12.2903301,0.545003751 C13.0737267,-0.238392873 14.3489904,-0.2332661 15.1240254,0.541768884 L15.4571331,0.874876608 C16.2387432,1.65648666 16.2395801,2.92288997 15.4538982,3.70857187 L14.7633179,4.39915222 L11.5997498,1.2355841 Z"
-                />
-              </g>
-            </svg>
-          </div>
-        </div>
-        <span
-          style={
-            Object {
-              "color": "#000",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 700,
-            }
-          }
-        >
-          <span
-            className="sc-htpNat KtFsv"
-          >
-            February 20, 2018
-             to 
-            February 25, 2018
-          </span>
-        </span>
-      </span>
-    </div>
     <section
-      className="sc-iBEsjs hYWDoZ"
+      className="sc-iBEsjs bBgAEl"
     >
       <div
         className="sc-kxynE kZABzl"
@@ -5792,7 +5658,7 @@ exports[`Snapshots Report render with summary table and logo 1`] = `
         </span>
       </div>
       <section
-        className="sc-iBEsjs hYWDoZ"
+        className="sc-iBEsjs dyJpEa"
       >
         <div
           className="sc-kxynE kZABzl"
@@ -6813,7 +6679,7 @@ exports[`Snapshots Report render with summary table and logo 1`] = `
         </ul>
       </section>
       <section
-        className="sc-iBEsjs hYWDoZ"
+        className="sc-iBEsjs dyJpEa"
       >
         <div
           className="sc-kxynE kZABzl"
@@ -7834,7 +7700,7 @@ exports[`Snapshots Report render with summary table and logo 1`] = `
         </ul>
       </section>
       <section
-        className="sc-iBEsjs hYWDoZ"
+        className="sc-iBEsjs dyJpEa"
       >
         <div
           className="sc-kxynE kZABzl"
@@ -8920,167 +8786,8 @@ exports[`Snapshots Report render with summary table and logo whilst exporting 1`
         </div>
       </div>
     </article>
-    <div
-      className="sc-fcdeBU kIwvDy"
-    >
-      <span
-        style={
-          Object {
-            "color": "#59626a",
-            "fontFamily": "\\"Roboto\\", sans-serif",
-            "fontSize": "1rem",
-            "fontWeight": 400,
-          }
-        }
-      >
-        <div
-          className="sc-kZmsYB hsAkSd"
-        >
-          <div
-            className="sc-gqjmRU duSJDA"
-          >
-            <button
-              aria-label={null}
-              disabled={undefined}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              style={
-                Object {
-                  "background": "none",
-                  "backgroundColor": "unset",
-                  "border": "none",
-                  "borderRadius": "unset",
-                  "color": "unset",
-                  "cursor": "pointer",
-                  "display": "unset",
-                  "fontFamily": "unset",
-                  "fontSize": "unset",
-                  "fontWeight": "unset",
-                  "lineHeight": "unset",
-                  "margin": "unset",
-                  "outline": "none",
-                  "padding": 0,
-                  "transition": "unset",
-                }
-              }
-            >
-              <span
-                className="sc-kAzzGY bMSYif"
-              >
-                <svg
-                  height="100%"
-                  style={
-                    Object {
-                      "fill": "#59626a",
-                      "height": "1rem",
-                      "width": "1rem",
-                    }
-                  }
-                  version="1.1"
-                  viewBox="0 0 16 16"
-                  width="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                >
-                  <g
-                    className="shuttleGray"
-                  >
-                    <path
-                      d="M7,9 L1.00292933,9 C0.449026756,9 -8.8817842e-16,8.55613518 -8.8817842e-16,8 L-8.8817842e-16,8 C-8.8817842e-16,7.44771525 0.437881351,7 1.00292933,7 L7,7 L7,1.00292933 C7,0.449026756 7.44386482,0 8,0 L8,0 C8.55228475,0 9,0.437881351 9,1.00292933 L9,7 L14.9970707,7 C15.5509732,7 16,7.44386482 16,8 L16,8 C16,8.55228475 15.5621186,9 14.9970707,9 L9,9 L9,14.9970707 C9,15.5509732 8.55613518,16 8,16 L8,16 C7.44771525,16 7,15.5621186 7,14.9970707 L7,9 Z"
-                      transform="translate(8.000000, 8.000000) rotate(-315.000000) translate(-8.000000, -8.000000)"
-                    />
-                  </g>
-                </svg>
-              </span>
-            </button>
-          </div>
-          <button
-            aria-label={null}
-            disabled={undefined}
-            onBlur={[Function]}
-            onClick={undefined}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "background": "none",
-                "backgroundColor": "unset",
-                "border": "none",
-                "borderRadius": "unset",
-                "color": "unset",
-                "cursor": "pointer",
-                "display": "unset",
-                "fontFamily": "unset",
-                "fontSize": "unset",
-                "fontWeight": "unset",
-                "lineHeight": "unset",
-                "margin": "unset",
-                "outline": "none",
-                "padding": 0,
-                "transition": "unset",
-              }
-            }
-          >
-            <h1
-              className="sc-gmeYpB hOfLfM"
-            >
-              Weekly Sync Report
-            </h1>
-          </button>
-          <div
-            className="sc-RcBXQ dEQxDt"
-          >
-            <svg
-              height="100%"
-              style={
-                Object {
-                  "fill": "#59626a",
-                  "height": "1rem",
-                  "width": "1rem",
-                }
-              }
-              version="1.1"
-              viewBox="0 0 16 16"
-              width="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-            >
-              <g
-                className="shuttleGray"
-              >
-                <path
-                  d="M0,12.8353339 L3.16356812,15.998902 L0,15.998902 L0,12.8353339 Z M1.05452271,11.7808112 L10.5452271,2.29010681 L13.7087952,5.45367493 L4.21809083,14.9443793 L1.05452271,11.7808112 Z M11.5997498,1.2355841 L12.2903301,0.545003751 C13.0737267,-0.238392873 14.3489904,-0.2332661 15.1240254,0.541768884 L15.4571331,0.874876608 C16.2387432,1.65648666 16.2395801,2.92288997 15.4538982,3.70857187 L14.7633179,4.39915222 L11.5997498,1.2355841 Z"
-                />
-              </g>
-            </svg>
-          </div>
-        </div>
-        <span
-          style={
-            Object {
-              "color": "#000",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 700,
-            }
-          }
-        >
-          <span
-            className="sc-htpNat KtFsv"
-          >
-            February 20, 2018
-             to 
-            February 25, 2018
-          </span>
-        </span>
-      </span>
-    </div>
     <section
-      className="sc-iBEsjs hYWDoZ"
+      className="sc-iBEsjs bBgAEl"
     >
       <div
         className="sc-kxynE kZABzl"
@@ -9926,7 +9633,7 @@ exports[`Snapshots Report render with summary table and logo whilst exporting 1`
       </ul>
     </section>
     <section
-      className="sc-iBEsjs hYWDoZ"
+      className="sc-iBEsjs bBgAEl"
     >
       <div
         className="sc-kxynE kZABzl"
@@ -10772,7 +10479,7 @@ exports[`Snapshots Report render with summary table and logo whilst exporting 1`
       </ul>
     </section>
     <section
-      className="sc-iBEsjs hYWDoZ"
+      className="sc-iBEsjs bBgAEl"
     >
       <div
         className="sc-kxynE kZABzl"
@@ -11768,7 +11475,7 @@ exports[`Snapshots Report render with summary table and no logo 1`] = `
         </span>
       </div>
       <section
-        className="sc-iBEsjs hYWDoZ"
+        className="sc-iBEsjs dyJpEa"
       >
         <div
           className="sc-kxynE kZABzl"
@@ -12789,7 +12496,7 @@ exports[`Snapshots Report render with summary table and no logo 1`] = `
         </ul>
       </section>
       <section
-        className="sc-iBEsjs hYWDoZ"
+        className="sc-iBEsjs dyJpEa"
       >
         <div
           className="sc-kxynE kZABzl"
@@ -13810,7 +13517,7 @@ exports[`Snapshots Report render with summary table and no logo 1`] = `
         </ul>
       </section>
       <section
-        className="sc-iBEsjs hYWDoZ"
+        className="sc-iBEsjs dyJpEa"
       >
         <div
           className="sc-kxynE kZABzl"
@@ -14891,142 +14598,8 @@ exports[`Snapshots Report render with summary table and no logo whilst exporting
         </div>
       </div>
     </article>
-    <div
-      className="sc-fcdeBU kIwvDy"
-    >
-      <span
-        style={
-          Object {
-            "color": "#59626a",
-            "fontFamily": "\\"Roboto\\", sans-serif",
-            "fontSize": "1rem",
-            "fontWeight": 400,
-          }
-        }
-      >
-        <div
-          className="sc-kZmsYB hsAkSd"
-        >
-          <div
-            className="sc-gqjmRU duSJDA"
-          >
-            <div
-              className="sc-VigVT beITMy"
-            >
-              <span
-                className="sc-jzJRlG iQUWtb"
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#323b43",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "1rem",
-                      "fontWeight": 500,
-                    }
-                  }
-                >
-                  Upload logo
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "color": "#59626a",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 400,
-                  }
-                }
-              >
-                PNG or JPG
-              </span>
-            </div>
-          </div>
-          <button
-            aria-label={null}
-            disabled={undefined}
-            onBlur={[Function]}
-            onClick={undefined}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            style={
-              Object {
-                "background": "none",
-                "backgroundColor": "unset",
-                "border": "none",
-                "borderRadius": "unset",
-                "color": "unset",
-                "cursor": "pointer",
-                "display": "unset",
-                "fontFamily": "unset",
-                "fontSize": "unset",
-                "fontWeight": "unset",
-                "lineHeight": "unset",
-                "margin": "unset",
-                "outline": "none",
-                "padding": 0,
-                "transition": "unset",
-              }
-            }
-          >
-            <h1
-              className="sc-gmeYpB hOfLfM"
-            >
-              Weekly Sync Report
-            </h1>
-          </button>
-          <div
-            className="sc-RcBXQ dEQxDt"
-          >
-            <svg
-              height="100%"
-              style={
-                Object {
-                  "fill": "#59626a",
-                  "height": "1rem",
-                  "width": "1rem",
-                }
-              }
-              version="1.1"
-              viewBox="0 0 16 16"
-              width="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-            >
-              <g
-                className="shuttleGray"
-              >
-                <path
-                  d="M0,12.8353339 L3.16356812,15.998902 L0,15.998902 L0,12.8353339 Z M1.05452271,11.7808112 L10.5452271,2.29010681 L13.7087952,5.45367493 L4.21809083,14.9443793 L1.05452271,11.7808112 Z M11.5997498,1.2355841 L12.2903301,0.545003751 C13.0737267,-0.238392873 14.3489904,-0.2332661 15.1240254,0.541768884 L15.4571331,0.874876608 C16.2387432,1.65648666 16.2395801,2.92288997 15.4538982,3.70857187 L14.7633179,4.39915222 L11.5997498,1.2355841 Z"
-                />
-              </g>
-            </svg>
-          </div>
-        </div>
-        <span
-          style={
-            Object {
-              "color": "#000",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 700,
-            }
-          }
-        >
-          <span
-            className="sc-htpNat KtFsv"
-          >
-            February 20, 2018
-             to 
-            February 25, 2018
-          </span>
-        </span>
-      </span>
-    </div>
     <section
-      className="sc-iBEsjs hYWDoZ"
+      className="sc-iBEsjs bBgAEl"
     >
       <div
         className="sc-kxynE kZABzl"
@@ -15872,7 +15445,7 @@ exports[`Snapshots Report render with summary table and no logo whilst exporting
       </ul>
     </section>
     <section
-      className="sc-iBEsjs hYWDoZ"
+      className="sc-iBEsjs bBgAEl"
     >
       <div
         className="sc-kxynE kZABzl"
@@ -16718,7 +16291,7 @@ exports[`Snapshots Report render with summary table and no logo whilst exporting
       </ul>
     </section>
     <section
-      className="sc-iBEsjs hYWDoZ"
+      className="sc-iBEsjs bBgAEl"
     >
       <div
         className="sc-kxynE kZABzl"

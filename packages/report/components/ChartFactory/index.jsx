@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Table as SummaryTable, Title as SummaryTitle } from '@bufferapp/summary-table';
 import { Table as PostsSummary, Title as PostsSummaryTitle } from '@bufferapp/posts-summary-table';
 import { Table as AverageTable, Title as AverageTitle } from '@bufferapp/average-table';
@@ -75,6 +75,11 @@ const Separator = styled.section`
   &:hover aside {
     opacity: 1;
   }
+
+  ${props => props.exporting && css`
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  `}
 `;
 
 const TitleWrapper = styled.div`
@@ -92,7 +97,7 @@ const Header = styled.div`
 
 const ChartFactory = ({ charts, moveUp, moveDown, deleteChart, exporting }) =>
   charts.map((chart, index) => (
-    <Separator key={chart._id}>
+    <Separator key={chart._id} exporting={exporting}>
       <Header>
         <TitleWrapper>
           {React.createElement(CHARTS[chart.chart_id].title, {

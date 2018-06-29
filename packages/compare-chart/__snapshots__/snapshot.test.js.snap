@@ -2071,7 +2071,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
           <div
             style={
               Object {
-                "margin": "1.5rem 1.5rem 1rem",
+                "margin": "1.5rem 1.5rem 0rem",
                 "position": "relative",
               }
             }
@@ -2968,7 +2968,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
           <div
             style={
               Object {
-                "margin": "1.5rem 1.5rem 1rem",
+                "margin": "1.5rem 1.5rem 0rem",
                 "position": "relative",
               }
             }
@@ -3865,7 +3865,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
           <div
             style={
               Object {
-                "margin": "1.5rem 1.5rem 1rem",
+                "margin": "1.5rem 1.5rem 0rem",
                 "position": "relative",
               }
             }
@@ -4762,7 +4762,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
           <div
             style={
               Object {
-                "margin": "1.5rem 1.5rem 1rem",
+                "margin": "1.5rem 1.5rem 0rem",
                 "position": "relative",
               }
             }
@@ -4991,7 +4991,7 @@ exports[`Snapshots Footer should not render percentage change number only the ar
     <div
       style={
         Object {
-          "margin": "1.5rem 1.5rem 1rem",
+          "margin": "1.5rem 1.5rem 0rem",
           "position": "relative",
         }
       }
@@ -5194,7 +5194,7 @@ exports[`Snapshots Footer should not render percentage change number when previo
     <div
       style={
         Object {
-          "margin": "1.5rem 1.5rem 1rem",
+          "margin": "1.5rem 1.5rem 0rem",
           "position": "relative",
         }
       }
@@ -5371,7 +5371,7 @@ exports[`Snapshots Footer should render the table 1`] = `
     <div
       style={
         Object {
-          "margin": "1.5rem 1.5rem 1rem",
+          "margin": "1.5rem 1.5rem 0rem",
           "position": "relative",
         }
       }
