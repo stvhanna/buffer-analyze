@@ -10,13 +10,13 @@ exports[`Snapshots PostsSummaryTable should render a "no data" state 1`] = `
     }
   >
     <div
-      className="sc-kgoBCf fymEWw"
+      className="sc-kGXeez ctOnEy"
     >
       <header
-        className="sc-kGXeez esQcyC"
+        className="sc-kpOJdX hlFKIM"
       >
         <h2
-          className="sc-kpOJdX hkatTF"
+          className="sc-dxgOiQ isvEAp"
         >
           <span
             style={
@@ -34,7 +34,7 @@ exports[`Snapshots PostsSummaryTable should render a "no data" state 1`] = `
         </h2>
       </header>
       <div
-        className="sc-iAyFgw ejxWZG"
+        className="sc-hSdWYo eaXZkb"
         id="js-dom-to-png-posts-summary"
       >
         <div
@@ -80,13 +80,13 @@ exports[`Snapshots PostsSummaryTable should render a loading state 1`] = `
     }
   >
     <div
-      className="sc-kgoBCf fymEWw"
+      className="sc-kGXeez ctOnEy"
     >
       <header
-        className="sc-kGXeez esQcyC"
+        className="sc-kpOJdX hlFKIM"
       >
         <h2
-          className="sc-kpOJdX hkatTF"
+          className="sc-dxgOiQ isvEAp"
         >
           <span
             style={
@@ -104,7 +104,7 @@ exports[`Snapshots PostsSummaryTable should render a loading state 1`] = `
         </h2>
       </header>
       <div
-        className="sc-iAyFgw ejxWZG"
+        className="sc-hSdWYo eaXZkb"
         id="js-dom-to-png-posts-summary"
       >
         <div
@@ -201,13 +201,13 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
     }
   >
     <div
-      className="sc-kgoBCf fymEWw"
+      className="sc-kGXeez ctOnEy"
     >
       <header
-        className="sc-kGXeez esQcyC"
+        className="sc-kpOJdX hlFKIM"
       >
         <h2
-          className="sc-kpOJdX hkatTF"
+          className="sc-dxgOiQ isvEAp"
         >
           <span
             style={
@@ -225,18 +225,18 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
         </h2>
       </header>
       <div
-        className="sc-iAyFgw ejxWZG"
+        className="sc-hSdWYo eaXZkb"
         id="js-dom-to-png-posts-summary"
       >
         <ul
-          className="sc-kkGfuU iljRqu"
+          className="sc-iAyFgw dtnEsI"
         >
           <li
             className="sc-gZMcBi eklOQy"
             width="33.33%"
           >
             <div
-              className="sc-gqjmRU gggsyL"
+              className="sc-VigVT kxLHnZ"
             >
               <span
                 className="sc-iwsKbI eveHfQ"
@@ -259,7 +259,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                 </span>
               </span>
               <div
-                className="sc-VigVT eVESgP"
+                className="sc-jTzLTM bCBUDo"
               >
                 <span
                   style={
@@ -332,7 +332,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
             width="33.33%"
           >
             <div
-              className="sc-gqjmRU gggsyL"
+              className="sc-VigVT kxLHnZ"
             >
               <span
                 className="sc-iwsKbI eveHfQ"
@@ -355,7 +355,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                 </span>
               </span>
               <div
-                className="sc-VigVT eVESgP"
+                className="sc-jTzLTM bCBUDo"
               >
                 <span
                   style={
@@ -428,7 +428,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
             width="33.33%"
           >
             <div
-              className="sc-gqjmRU gggsyL"
+              className="sc-VigVT kxLHnZ"
             >
               <span
                 className="sc-iwsKbI eveHfQ"
@@ -451,7 +451,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                 </span>
               </span>
               <div
-                className="sc-VigVT eVESgP"
+                className="sc-jTzLTM bCBUDo"
               >
                 <span
                   style={
@@ -524,7 +524,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
             width="33.33%"
           >
             <div
-              className="sc-gqjmRU gggsyL"
+              className="sc-VigVT kxLHnZ"
             >
               <span
                 className="sc-iwsKbI eveHfQ"
@@ -547,7 +547,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                 </span>
               </span>
               <div
-                className="sc-VigVT eVESgP"
+                className="sc-jTzLTM bCBUDo"
               >
                 <span
                   style={
@@ -620,7 +620,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
             width="33.33%"
           >
             <div
-              className="sc-gqjmRU gggsyL"
+              className="sc-VigVT kxLHnZ"
             >
               <span
                 className="sc-iwsKbI eveHfQ"
@@ -643,7 +643,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                 </span>
               </span>
               <div
-                className="sc-VigVT eVESgP"
+                className="sc-jTzLTM bCBUDo"
               >
                 <span
                   style={
@@ -667,7 +667,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
             width="33.33%"
           >
             <div
-              className="sc-gqjmRU gggsyL"
+              className="sc-VigVT kxLHnZ"
             >
               <span
                 className="sc-iwsKbI eveHfQ"
@@ -690,7 +690,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                 </span>
               </span>
               <div
-                className="sc-VigVT eVESgP"
+                className="sc-jTzLTM bCBUDo"
               >
                 <span
                   style={

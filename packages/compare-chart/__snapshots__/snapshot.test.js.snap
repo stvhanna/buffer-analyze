@@ -1210,13 +1210,13 @@ exports[`Snapshots CompareChart should render a "no data" state 1`] = `
     }
   >
     <div
-      className="sc-kgoBCf fymEWw"
+      className="sc-kGXeez ctOnEy"
     >
       <header
-        className="sc-kGXeez esQcyC"
+        className="sc-kpOJdX hlFKIM"
       >
         <h2
-          className="sc-kpOJdX hkatTF"
+          className="sc-dxgOiQ isvEAp"
         >
           <span
             style={
@@ -1233,10 +1233,10 @@ exports[`Snapshots CompareChart should render a "no data" state 1`] = `
         </h2>
       </header>
       <div
-        className="sc-eHgmQL lhcTZV"
+        className="sc-cvbbAY eSHTNV"
       >
         <div
-          className="sc-iAyFgw MooBN"
+          className="sc-hSdWYo dJlGWD"
         >
           <div
             className="sc-htpNat klaPdF"
@@ -1282,13 +1282,13 @@ exports[`Snapshots CompareChart should render a loading state 1`] = `
     }
   >
     <div
-      className="sc-kgoBCf fymEWw"
+      className="sc-kGXeez ctOnEy"
     >
       <header
-        className="sc-kGXeez esQcyC"
+        className="sc-kpOJdX hlFKIM"
       >
         <h2
-          className="sc-kpOJdX hkatTF"
+          className="sc-dxgOiQ isvEAp"
         >
           <span
             style={
@@ -1305,7 +1305,7 @@ exports[`Snapshots CompareChart should render a loading state 1`] = `
         </h2>
       </header>
       <div
-        className="sc-eHgmQL lhcTZV"
+        className="sc-cvbbAY eSHTNV"
       >
         <div
           className="sc-bwzfXH cXJzrG"
@@ -1401,13 +1401,13 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
     }
   >
     <div
-      className="sc-kgoBCf fymEWw"
+      className="sc-kGXeez ctOnEy"
     >
       <header
-        className="sc-kGXeez esQcyC"
+        className="sc-kpOJdX hlFKIM"
       >
         <h2
-          className="sc-kpOJdX hkatTF"
+          className="sc-dxgOiQ isvEAp"
         >
           <span
             style={
@@ -1424,10 +1424,10 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
         </h2>
       </header>
       <div
-        className="sc-eHgmQL lhcTZV"
+        className="sc-cvbbAY eSHTNV"
       >
         <div
-          className="sc-hSdWYo fBiwQ"
+          className="sc-eHgmQL fEuebi"
         >
           <div
             className="dropdown dropdownContainer"
@@ -2066,7 +2066,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
           id="js-dom-to-png-compare"
         >
           <div
-            className="sc-kkGfuU fNKnnX"
+            className="sc-iAyFgw keJbGl"
           />
           <div
             style={
@@ -2091,7 +2091,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                 width="25%"
               >
                 <div
-                  className="sc-gqjmRU gggsyL"
+                  className="sc-VigVT kxLHnZ"
                 >
                   <span
                     className="sc-iwsKbI eveHfQ"
@@ -2139,7 +2139,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                     </span>
                   </span>
                   <div
-                    className="sc-VigVT eVESgP"
+                    className="sc-jTzLTM bCBUDo"
                   >
                     <span
                       style={
@@ -2212,7 +2212,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                 width="25%"
               >
                 <div
-                  className="sc-gqjmRU gggsyL"
+                  className="sc-VigVT kxLHnZ"
                 >
                   <span
                     className="sc-iwsKbI eveHfQ"
@@ -2260,7 +2260,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                     </span>
                   </span>
                   <div
-                    className="sc-VigVT eVESgP"
+                    className="sc-jTzLTM bCBUDo"
                   >
                     <span
                       style={
@@ -2298,13 +2298,13 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
     }
   >
     <div
-      className="sc-kgoBCf fymEWw"
+      className="sc-kGXeez ctOnEy"
     >
       <header
-        className="sc-kGXeez esQcyC"
+        className="sc-kpOJdX hlFKIM"
       >
         <h2
-          className="sc-kpOJdX hkatTF"
+          className="sc-dxgOiQ isvEAp"
         >
           <span
             style={
@@ -2321,10 +2321,10 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
         </h2>
       </header>
       <div
-        className="sc-eHgmQL lhcTZV"
+        className="sc-cvbbAY eSHTNV"
       >
         <div
-          className="sc-hSdWYo fBiwQ"
+          className="sc-eHgmQL fEuebi"
         >
           <div
             className="dropdown dropdownContainer"
@@ -2963,7 +2963,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
           id="js-dom-to-png-compare"
         >
           <div
-            className="sc-kkGfuU fNKnnX"
+            className="sc-iAyFgw keJbGl"
           />
           <div
             style={
@@ -2988,7 +2988,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                 width="25%"
               >
                 <div
-                  className="sc-gqjmRU gggsyL"
+                  className="sc-VigVT kxLHnZ"
                 >
                   <span
                     className="sc-iwsKbI eveHfQ"
@@ -3036,7 +3036,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                     </span>
                   </span>
                   <div
-                    className="sc-VigVT eVESgP"
+                    className="sc-jTzLTM bCBUDo"
                   >
                     <span
                       style={
@@ -3109,7 +3109,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                 width="25%"
               >
                 <div
-                  className="sc-gqjmRU gggsyL"
+                  className="sc-VigVT kxLHnZ"
                 >
                   <span
                     className="sc-iwsKbI eveHfQ"
@@ -3157,7 +3157,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                     </span>
                   </span>
                   <div
-                    className="sc-VigVT eVESgP"
+                    className="sc-jTzLTM bCBUDo"
                   >
                     <span
                       style={
@@ -3195,13 +3195,13 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
     }
   >
     <div
-      className="sc-kgoBCf fymEWw"
+      className="sc-kGXeez ctOnEy"
     >
       <header
-        className="sc-kGXeez esQcyC"
+        className="sc-kpOJdX hlFKIM"
       >
         <h2
-          className="sc-kpOJdX hkatTF"
+          className="sc-dxgOiQ isvEAp"
         >
           <span
             style={
@@ -3218,10 +3218,10 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
         </h2>
       </header>
       <div
-        className="sc-eHgmQL lhcTZV"
+        className="sc-cvbbAY eSHTNV"
       >
         <div
-          className="sc-hSdWYo fBiwQ"
+          className="sc-eHgmQL fEuebi"
         >
           <div
             className="dropdown dropdownContainer"
@@ -3860,7 +3860,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
           id="js-dom-to-png-compare"
         >
           <div
-            className="sc-kkGfuU fNKnnX"
+            className="sc-iAyFgw keJbGl"
           />
           <div
             style={
@@ -3885,7 +3885,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                 width="25%"
               >
                 <div
-                  className="sc-gqjmRU gggsyL"
+                  className="sc-VigVT kxLHnZ"
                 >
                   <span
                     className="sc-iwsKbI eveHfQ"
@@ -3933,7 +3933,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                     </span>
                   </span>
                   <div
-                    className="sc-VigVT eVESgP"
+                    className="sc-jTzLTM bCBUDo"
                   >
                     <span
                       style={
@@ -4006,7 +4006,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                 width="25%"
               >
                 <div
-                  className="sc-gqjmRU gggsyL"
+                  className="sc-VigVT kxLHnZ"
                 >
                   <span
                     className="sc-iwsKbI eveHfQ"
@@ -4054,7 +4054,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                     </span>
                   </span>
                   <div
-                    className="sc-VigVT eVESgP"
+                    className="sc-jTzLTM bCBUDo"
                   >
                     <span
                       style={
@@ -4092,13 +4092,13 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
     }
   >
     <div
-      className="sc-kgoBCf fymEWw"
+      className="sc-kGXeez ctOnEy"
     >
       <header
-        className="sc-kGXeez esQcyC"
+        className="sc-kpOJdX hlFKIM"
       >
         <h2
-          className="sc-kpOJdX hkatTF"
+          className="sc-dxgOiQ isvEAp"
         >
           <span
             style={
@@ -4115,10 +4115,10 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
         </h2>
       </header>
       <div
-        className="sc-eHgmQL lhcTZV"
+        className="sc-cvbbAY eSHTNV"
       >
         <div
-          className="sc-hSdWYo fBiwQ"
+          className="sc-eHgmQL fEuebi"
         >
           <div
             className="dropdown dropdownContainer"
@@ -4757,7 +4757,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
           id="js-dom-to-png-compare"
         >
           <div
-            className="sc-kkGfuU fNKnnX"
+            className="sc-iAyFgw keJbGl"
           />
           <div
             style={
@@ -4782,7 +4782,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                 width="25%"
               >
                 <div
-                  className="sc-gqjmRU gggsyL"
+                  className="sc-VigVT kxLHnZ"
                 >
                   <span
                     className="sc-iwsKbI eveHfQ"
@@ -4830,7 +4830,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                     </span>
                   </span>
                   <div
-                    className="sc-VigVT eVESgP"
+                    className="sc-jTzLTM bCBUDo"
                   >
                     <span
                       style={
@@ -4903,7 +4903,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                 width="25%"
               >
                 <div
-                  className="sc-gqjmRU gggsyL"
+                  className="sc-VigVT kxLHnZ"
                 >
                   <span
                     className="sc-iwsKbI eveHfQ"
@@ -4951,7 +4951,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                     </span>
                   </span>
                   <div
-                    className="sc-VigVT eVESgP"
+                    className="sc-jTzLTM bCBUDo"
                   >
                     <span
                       style={
@@ -5011,7 +5011,7 @@ exports[`Snapshots Footer should not render percentage change number only the ar
           width="25%"
         >
           <div
-            className="sc-gqjmRU gggsyL"
+            className="sc-VigVT kxLHnZ"
           >
             <span
               className="sc-iwsKbI eveHfQ"
@@ -5059,7 +5059,7 @@ exports[`Snapshots Footer should not render percentage change number only the ar
               </span>
             </span>
             <div
-              className="sc-VigVT eVESgP"
+              className="sc-jTzLTM bCBUDo"
             >
               <span
                 style={
@@ -5076,7 +5076,7 @@ exports[`Snapshots Footer should not render percentage change number only the ar
                 </span>
               </span>
               <span
-                className="sc-fjdhpX etBlbG"
+                className="sc-jzJRlG cEuthU"
               >
                 <div
                   className="sc-bZQynM bhDWTq"
@@ -5109,7 +5109,7 @@ exports[`Snapshots Footer should not render percentage change number only the ar
           width="25%"
         >
           <div
-            className="sc-gqjmRU gggsyL"
+            className="sc-VigVT kxLHnZ"
           >
             <span
               className="sc-iwsKbI eveHfQ"
@@ -5157,7 +5157,7 @@ exports[`Snapshots Footer should not render percentage change number only the ar
               </span>
             </span>
             <div
-              className="sc-VigVT eVESgP"
+              className="sc-jTzLTM bCBUDo"
             >
               <span
                 style={
@@ -5214,7 +5214,7 @@ exports[`Snapshots Footer should not render percentage change number when previo
           width="25%"
         >
           <div
-            className="sc-gqjmRU gggsyL"
+            className="sc-VigVT kxLHnZ"
           >
             <span
               className="sc-iwsKbI eveHfQ"
@@ -5262,7 +5262,7 @@ exports[`Snapshots Footer should not render percentage change number when previo
               </span>
             </span>
             <div
-              className="sc-VigVT eVESgP"
+              className="sc-jTzLTM bCBUDo"
             >
               <span
                 style={
@@ -5286,7 +5286,7 @@ exports[`Snapshots Footer should not render percentage change number when previo
           width="25%"
         >
           <div
-            className="sc-gqjmRU gggsyL"
+            className="sc-VigVT kxLHnZ"
           >
             <span
               className="sc-iwsKbI eveHfQ"
@@ -5334,7 +5334,7 @@ exports[`Snapshots Footer should not render percentage change number when previo
               </span>
             </span>
             <div
-              className="sc-VigVT eVESgP"
+              className="sc-jTzLTM bCBUDo"
             >
               <span
                 style={
@@ -5391,7 +5391,7 @@ exports[`Snapshots Footer should render the table 1`] = `
           width="25%"
         >
           <div
-            className="sc-gqjmRU gggsyL"
+            className="sc-VigVT kxLHnZ"
           >
             <span
               className="sc-iwsKbI eveHfQ"
@@ -5439,7 +5439,7 @@ exports[`Snapshots Footer should render the table 1`] = `
               </span>
             </span>
             <div
-              className="sc-VigVT eVESgP"
+              className="sc-jTzLTM bCBUDo"
             >
               <span
                 style={
@@ -5512,7 +5512,7 @@ exports[`Snapshots Footer should render the table 1`] = `
           width="25%"
         >
           <div
-            className="sc-gqjmRU gggsyL"
+            className="sc-VigVT kxLHnZ"
           >
             <span
               className="sc-iwsKbI eveHfQ"
@@ -5560,7 +5560,7 @@ exports[`Snapshots Footer should render the table 1`] = `
               </span>
             </span>
             <div
-              className="sc-VigVT eVESgP"
+              className="sc-jTzLTM bCBUDo"
             >
               <span
                 style={
@@ -5750,7 +5750,7 @@ exports[`Snapshots PeriodToggle should render an inactive toggle 1`] = `
 exports[`Snapshots Title should render title as if for app 1`] = `
 <span>
   <h2
-    className="sc-kpOJdX hkatTF"
+    className="sc-dxgOiQ isvEAp"
   >
     <span
       style={
@@ -5771,7 +5771,7 @@ exports[`Snapshots Title should render title as if for app 1`] = `
 exports[`Snapshots Title should render title as if for report 1`] = `
 <span>
   <h2
-    className="sc-kpOJdX hkatTF"
+    className="sc-dxgOiQ isvEAp"
   >
     <span
       style={

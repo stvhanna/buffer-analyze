@@ -29,6 +29,16 @@ const Item = styled.li`
   }
 `;
 
+const TableItem = styled.div`
+  display: flex;
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: ${props => props.width};
+  justify-content: {standalone : 'left' ? 'center'};
+  padding-left: 0;
+  padding-right: 1rem;
+`;
+
 const Container = styled.div`
   width: 100%;
 `;
@@ -69,31 +79,45 @@ const GridItem = ({
   smaller,
   showPercentSign,
   showArrowIcon,
+  standalone,
 }) => {
   const dailyMetricData = filterDailyDataMetrics(dailyData, metric.label);
+  const content = (
+    <Container>
+      {dailyData.length > 1 &&
+        <GridItemChartContainer>
+          <GridItemChart dailyData={dailyMetricData} />
+        </GridItemChartContainer>
+      }
+      <Label tooltip={tooltip} >
+        {!customLabel && metric.label}
+        {customLabel && customLabel}
+      </Label>
+      <ValueWrapper>
+        <Value smaller={smaller} showPercentSign={showPercentSign}>{metric.value}</Value>
+        {!hideDiff && <Diff diff={metric.diff} />}
+        {hideDiff && showArrowIcon &&
+          <ArrowIconContainer>
+            <ArrowIcon diff={metric.diff} />
+          </ArrowIconContainer>
+        }
+      </ValueWrapper>
+    </Container>
+  );
+
+  if (standalone) {
+    return (
+      <TableItem key={metric.label} width={gridWidth} withChart={dailyData.length > 0}>
+        {prefix && prefix}
+        {content}
+      </TableItem>
+    );
+  }
+
   return (
     <Item key={metric.label} width={gridWidth} withChart={dailyData.length > 0}>
       {prefix && prefix}
-      <Container>
-        {dailyData.length > 1 &&
-          <GridItemChartContainer>
-            <GridItemChart dailyData={dailyMetricData} />
-          </GridItemChartContainer>
-        }
-        <Label tooltip={tooltip} >
-          {!customLabel && metric.label}
-          {customLabel && customLabel}
-        </Label>
-        <ValueWrapper>
-          <Value smaller={smaller} showPercentSign={showPercentSign}>{metric.value}</Value>
-          {!hideDiff && <Diff diff={metric.diff} />}
-          {hideDiff && showArrowIcon &&
-            <ArrowIconContainer>
-              <ArrowIcon diff={metric.diff} />
-            </ArrowIconContainer>
-          }
-        </ValueWrapper>
-      </Container>
+      {content}
     </Item>
   );
 };
@@ -108,6 +132,7 @@ GridItem.defaultProps = {
   smaller: false,
   showPercentSign: false,
   showArrowIcon: false,
+  standalone: false,
 };
 
 GridItem.propTypes = {
@@ -132,6 +157,7 @@ GridItem.propTypes = {
   smaller: PropTypes.bool,
   showPercentSign: PropTypes.bool,
   showArrowIcon: PropTypes.bool,
+  standalone: PropTypes.bool,
 };
 
 export default GridItem;

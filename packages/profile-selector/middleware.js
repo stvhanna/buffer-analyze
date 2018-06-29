@@ -68,6 +68,10 @@ export default ({ dispatch, getState }) => next => (action) => {
           }
         }
       }
+      if (action.payload.state && action.payload.state.profile) {
+        const profile = action.payload.state.profile;
+        dispatch(profilesActions.selectProfile(profile));
+      }
       break;
     default:
       break;
