@@ -37,6 +37,28 @@ storiesOf('GridItem')
       />
     </ul>
   ))
+  .add('should render a standalone item', () => (
+    <div
+      style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        padding: '0',
+        margin: '0 auto',
+        borderTop: `solid 1px ${geyser}`,
+        borderLeft: `solid 1px ${geyser}`,
+        borderRadius: '2px',
+      }}
+    >
+      <GridItem
+        metric={{
+          label: 'Tweets',
+          value: 150,
+          diff: 50,
+        }}
+        standalone
+      />
+    </div>
+  ))
   .add('should render a summary grid item with percent sign', () => (
     <ul
       style={{

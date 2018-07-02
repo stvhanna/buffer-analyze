@@ -26,6 +26,7 @@ const environment = require('./environment');
 const hourly = require('./hourly');
 const uploadReportLogo = require('./uploadReportLogo');
 const deleteReportLogo = require('./deleteReportLogo');
+const profilesOverview = require('./profilesOverview');
 
 module.exports = checkToken(rpc(
   profilesMethod,
@@ -54,4 +55,5 @@ module.exports = checkToken(rpc(
   hourly,
   uploadReportLogo,
   deleteReportLogo,
+  profilesOverview,
 ));

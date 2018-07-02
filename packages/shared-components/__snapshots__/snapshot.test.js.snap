@@ -996,7 +996,7 @@ exports[`Snapshots Dropdown Item should be disabled 1`] = `
           title="Buffer"
         >
           <div
-            className="sc-kpOJdX jELSeN"
+            className="sc-dxgOiQ iKVCYs"
             size="24px"
           >
             <img
@@ -1148,7 +1148,7 @@ exports[`Snapshots Dropdown Item should render 1`] = `
           title="Buffer"
         >
           <div
-            className="sc-kpOJdX jELSeN"
+            className="sc-dxgOiQ iKVCYs"
             size="24px"
           >
             <img
@@ -1300,7 +1300,7 @@ exports[`Snapshots Dropdown Item should render properly with an empty avatarUrl 
           title="Buffer"
         >
           <div
-            className="sc-kpOJdX jELSeN"
+            className="sc-dxgOiQ iKVCYs"
             size="24px"
           >
             <img
@@ -1452,7 +1452,7 @@ exports[`Snapshots Dropdown Item should selected 1`] = `
           title="Buffer"
         >
           <div
-            className="sc-kpOJdX jELSeN"
+            className="sc-dxgOiQ iKVCYs"
             size="24px"
           >
             <img
@@ -1636,7 +1636,7 @@ exports[`Snapshots Dropdown Item should truncate long names 1`] = `
           title="a very long and meaningful name"
         >
           <div
-            className="sc-kpOJdX jELSeN"
+            className="sc-dxgOiQ iKVCYs"
             size="24px"
           >
             <img
@@ -2011,13 +2011,13 @@ exports[`Snapshots DropdownItem should selected 1`] = `
 exports[`Snapshots EmptyState render with a custom header and description 1`] = `
 <span>
   <div
-    className="sc-cvbbAY bNmtwk"
+    className="sc-jWBwVP dYoGfQ"
   >
     <div
-      className="sc-jWBwVP gWEyBo"
+      className="sc-brqgnP dwHGkL"
     />
     <h1
-      className="sc-brqgnP ctNcpT"
+      className="sc-cMljjf dXrylI"
     >
       <span
         style={
@@ -2033,7 +2033,7 @@ exports[`Snapshots EmptyState render with a custom header and description 1`] = 
       </span>
     </h1>
     <h2
-      className="sc-cMljjf cydZXb"
+      className="sc-jAaTju izaqbV"
     >
       <span
         style={
@@ -2055,13 +2055,13 @@ exports[`Snapshots EmptyState render with a custom header and description 1`] = 
 exports[`Snapshots EmptyState render with a custom header but no description 1`] = `
 <span>
   <div
-    className="sc-cvbbAY bNmtwk"
+    className="sc-jWBwVP dYoGfQ"
   >
     <div
-      className="sc-jWBwVP gWEyBo"
+      className="sc-brqgnP dwHGkL"
     />
     <h1
-      className="sc-brqgnP ctNcpT"
+      className="sc-cMljjf dXrylI"
     >
       <span
         style={
@@ -2083,13 +2083,13 @@ exports[`Snapshots EmptyState render with a custom header but no description 1`]
 exports[`Snapshots EmptyState render with default text 1`] = `
 <span>
   <div
-    className="sc-cvbbAY bNmtwk"
+    className="sc-jWBwVP dYoGfQ"
   >
     <div
-      className="sc-jWBwVP gWEyBo"
+      className="sc-brqgnP dwHGkL"
     />
     <h1
-      className="sc-brqgnP ctNcpT"
+      className="sc-cMljjf dXrylI"
     >
       <span
         style={
@@ -2171,14 +2171,14 @@ exports[`Snapshots GridItem should not render arrow icon when diff is also visib
     }
   >
     <li
-      className="sc-gipzik eRazVv"
+      className="sc-csuQGl dhDIDz"
       width="25%"
     >
       <div
-        className="sc-csuQGl dBZpSr"
+        className="sc-bRBYWo joyODz"
       >
         <span
-          className="sc-jlyJG iqKSFW"
+          className="sc-gipzik cBJMjY"
         >
           <span
             data-tip={null}
@@ -2198,7 +2198,7 @@ exports[`Snapshots GridItem should not render arrow icon when diff is also visib
           </span>
         </span>
         <div
-          className="sc-Rmtcm gtbxUW"
+          className="sc-hzDkRC epEiYU"
         >
           <span
             style={
@@ -2215,13 +2215,13 @@ exports[`Snapshots GridItem should not render arrow icon when diff is also visib
             </span>
           </span>
           <div
-            className="sc-jDwBTQ fhLOEE"
+            className="sc-gPEVay dIshSc"
           >
             <div
-              className="sc-gPEVay dysdYH"
+              className="sc-iRbamj fFYkSk"
             >
               <div
-                className="sc-jAaTju gnojUY"
+                className="sc-jDwBTQ kDjnNT"
               >
                 <svg
                   fill="none"
@@ -2244,7 +2244,7 @@ exports[`Snapshots GridItem should not render arrow icon when diff is also visib
               </div>
             </div>
             <div
-              className="sc-iRbamj cKeiXE"
+              className="sc-jlyJG hzCAbQ"
             >
               <span
                 style={
@@ -2286,14 +2286,14 @@ exports[`Snapshots GridItem should not render the chart if we have only one day 
     }
   >
     <li
-      className="sc-gipzik gMvJWI"
+      className="sc-csuQGl eXWmOz"
       width="25%"
     >
       <div
-        className="sc-csuQGl dBZpSr"
+        className="sc-bRBYWo joyODz"
       >
         <span
-          className="sc-jlyJG iqKSFW"
+          className="sc-gipzik cBJMjY"
         >
           <span
             data-tip={null}
@@ -2313,7 +2313,7 @@ exports[`Snapshots GridItem should not render the chart if we have only one day 
           </span>
         </span>
         <div
-          className="sc-Rmtcm gtbxUW"
+          className="sc-hzDkRC epEiYU"
         >
           <span
             style={
@@ -2330,13 +2330,13 @@ exports[`Snapshots GridItem should not render the chart if we have only one day 
             </span>
           </span>
           <div
-            className="sc-jDwBTQ fhLOEE"
+            className="sc-gPEVay dIshSc"
           >
             <div
-              className="sc-gPEVay dysdYH"
+              className="sc-iRbamj fFYkSk"
             >
               <div
-                className="sc-jAaTju gnojUY"
+                className="sc-jDwBTQ kDjnNT"
               >
                 <svg
                   fill="none"
@@ -2359,7 +2359,7 @@ exports[`Snapshots GridItem should not render the chart if we have only one day 
               </div>
             </div>
             <div
-              className="sc-iRbamj cKeiXE"
+              className="sc-jlyJG hzCAbQ"
             >
               <span
                 style={
@@ -2401,14 +2401,14 @@ exports[`Snapshots GridItem should not render the diff when the metric has a neu
     }
   >
     <li
-      className="sc-gipzik eRazVv"
+      className="sc-csuQGl dhDIDz"
       width="25%"
     >
       <div
-        className="sc-csuQGl dBZpSr"
+        className="sc-bRBYWo joyODz"
       >
         <span
-          className="sc-jlyJG iqKSFW"
+          className="sc-gipzik cBJMjY"
         >
           <span
             data-tip={null}
@@ -2428,7 +2428,7 @@ exports[`Snapshots GridItem should not render the diff when the metric has a neu
           </span>
         </span>
         <div
-          className="sc-Rmtcm gtbxUW"
+          className="sc-hzDkRC epEiYU"
         >
           <span
             style={
@@ -2467,14 +2467,14 @@ exports[`Snapshots GridItem should render 2 digits in the grid item 1`] = `
     }
   >
     <li
-      className="sc-gipzik eRazVv"
+      className="sc-csuQGl dhDIDz"
       width="25%"
     >
       <div
-        className="sc-csuQGl dBZpSr"
+        className="sc-bRBYWo joyODz"
       >
         <span
-          className="sc-jlyJG iqKSFW"
+          className="sc-gipzik cBJMjY"
         >
           <span
             data-tip={null}
@@ -2494,7 +2494,7 @@ exports[`Snapshots GridItem should render 2 digits in the grid item 1`] = `
           </span>
         </span>
         <div
-          className="sc-Rmtcm gtbxUW"
+          className="sc-hzDkRC epEiYU"
         >
           <span
             style={
@@ -2512,13 +2512,13 @@ exports[`Snapshots GridItem should render 2 digits in the grid item 1`] = `
             </span>
           </span>
           <div
-            className="sc-jDwBTQ fhLOEE"
+            className="sc-gPEVay dIshSc"
           >
             <div
-              className="sc-gPEVay dysdYH"
+              className="sc-iRbamj fFYkSk"
             >
               <div
-                className="sc-jAaTju gnojUY"
+                className="sc-jDwBTQ kDjnNT"
               >
                 <svg
                   fill="none"
@@ -2541,7 +2541,7 @@ exports[`Snapshots GridItem should render 2 digits in the grid item 1`] = `
               </div>
             </div>
             <div
-              className="sc-iRbamj cKeiXE"
+              className="sc-jlyJG hzCAbQ"
             >
               <span
                 style={
@@ -2583,14 +2583,14 @@ exports[`Snapshots GridItem should render 2 digits in the grid item when the per
     }
   >
     <li
-      className="sc-gipzik eRazVv"
+      className="sc-csuQGl dhDIDz"
       width="25%"
     >
       <div
-        className="sc-csuQGl dBZpSr"
+        className="sc-bRBYWo joyODz"
       >
         <span
-          className="sc-jlyJG iqKSFW"
+          className="sc-gipzik cBJMjY"
         >
           <span
             data-tip={null}
@@ -2610,7 +2610,7 @@ exports[`Snapshots GridItem should render 2 digits in the grid item when the per
           </span>
         </span>
         <div
-          className="sc-Rmtcm gtbxUW"
+          className="sc-hzDkRC epEiYU"
         >
           <span
             style={
@@ -2628,13 +2628,13 @@ exports[`Snapshots GridItem should render 2 digits in the grid item when the per
             </span>
           </span>
           <div
-            className="sc-jDwBTQ fhLOEE"
+            className="sc-gPEVay dIshSc"
           >
             <div
-              className="sc-gPEVay dysdYH"
+              className="sc-iRbamj fFYkSk"
             >
               <div
-                className="sc-jAaTju gnojUY"
+                className="sc-jDwBTQ kDjnNT"
               >
                 <svg
                   fill="none"
@@ -2657,7 +2657,7 @@ exports[`Snapshots GridItem should render 2 digits in the grid item when the per
               </div>
             </div>
             <div
-              className="sc-iRbamj cKeiXE"
+              className="sc-jlyJG hzCAbQ"
             >
               <span
                 style={
@@ -2699,17 +2699,17 @@ exports[`Snapshots GridItem should render a grid item with a 7 day chart if 7 da
     }
   >
     <li
-      className="sc-gipzik gMvJWI"
+      className="sc-csuQGl eXWmOz"
       width="25%"
     >
       <div
-        className="sc-csuQGl dBZpSr"
+        className="sc-bRBYWo joyODz"
       >
         <div
-          className="sc-bRBYWo gnqDGT"
+          className="sc-jhAzac cJtIEv"
         />
         <span
-          className="sc-jlyJG iqKSFW"
+          className="sc-gipzik cBJMjY"
         >
           <span
             data-tip={null}
@@ -2729,7 +2729,7 @@ exports[`Snapshots GridItem should render a grid item with a 7 day chart if 7 da
           </span>
         </span>
         <div
-          className="sc-Rmtcm gtbxUW"
+          className="sc-hzDkRC epEiYU"
         >
           <span
             style={
@@ -2746,13 +2746,13 @@ exports[`Snapshots GridItem should render a grid item with a 7 day chart if 7 da
             </span>
           </span>
           <div
-            className="sc-jDwBTQ fhLOEE"
+            className="sc-gPEVay dIshSc"
           >
             <div
-              className="sc-gPEVay dysdYH"
+              className="sc-iRbamj fFYkSk"
             >
               <div
-                className="sc-jAaTju gnojUY"
+                className="sc-jDwBTQ kDjnNT"
               >
                 <svg
                   fill="none"
@@ -2775,7 +2775,7 @@ exports[`Snapshots GridItem should render a grid item with a 7 day chart if 7 da
               </div>
             </div>
             <div
-              className="sc-iRbamj cKeiXE"
+              className="sc-jlyJG hzCAbQ"
             >
               <span
                 style={
@@ -2817,17 +2817,17 @@ exports[`Snapshots GridItem should render a grid item with a 30 day chart if 30 
     }
   >
     <li
-      className="sc-gipzik gMvJWI"
+      className="sc-csuQGl eXWmOz"
       width="25%"
     >
       <div
-        className="sc-csuQGl dBZpSr"
+        className="sc-bRBYWo joyODz"
       >
         <div
-          className="sc-bRBYWo gnqDGT"
+          className="sc-jhAzac cJtIEv"
         />
         <span
-          className="sc-jlyJG iqKSFW"
+          className="sc-gipzik cBJMjY"
         >
           <span
             data-tip={null}
@@ -2847,7 +2847,7 @@ exports[`Snapshots GridItem should render a grid item with a 30 day chart if 30 
           </span>
         </span>
         <div
-          className="sc-Rmtcm gtbxUW"
+          className="sc-hzDkRC epEiYU"
         >
           <span
             style={
@@ -2864,13 +2864,13 @@ exports[`Snapshots GridItem should render a grid item with a 30 day chart if 30 
             </span>
           </span>
           <div
-            className="sc-jDwBTQ fhLOEE"
+            className="sc-gPEVay dIshSc"
           >
             <div
-              className="sc-gPEVay dysdYH"
+              className="sc-iRbamj fFYkSk"
             >
               <div
-                className="sc-jAaTju gnojUY"
+                className="sc-jDwBTQ kDjnNT"
               >
                 <svg
                   fill="none"
@@ -2893,7 +2893,7 @@ exports[`Snapshots GridItem should render a grid item with a 30 day chart if 30 
               </div>
             </div>
             <div
-              className="sc-iRbamj cKeiXE"
+              className="sc-jlyJG hzCAbQ"
             >
               <span
                 style={
@@ -2935,17 +2935,17 @@ exports[`Snapshots GridItem should render a grid item with a 90 day chart if 90 
     }
   >
     <li
-      className="sc-gipzik gMvJWI"
+      className="sc-csuQGl eXWmOz"
       width="25%"
     >
       <div
-        className="sc-csuQGl dBZpSr"
+        className="sc-bRBYWo joyODz"
       >
         <div
-          className="sc-bRBYWo gnqDGT"
+          className="sc-jhAzac cJtIEv"
         />
         <span
-          className="sc-jlyJG iqKSFW"
+          className="sc-gipzik cBJMjY"
         >
           <span
             data-tip={null}
@@ -2965,7 +2965,7 @@ exports[`Snapshots GridItem should render a grid item with a 90 day chart if 90 
           </span>
         </span>
         <div
-          className="sc-Rmtcm gtbxUW"
+          className="sc-hzDkRC epEiYU"
         >
           <span
             style={
@@ -2982,13 +2982,13 @@ exports[`Snapshots GridItem should render a grid item with a 90 day chart if 90 
             </span>
           </span>
           <div
-            className="sc-jDwBTQ fhLOEE"
+            className="sc-gPEVay dIshSc"
           >
             <div
-              className="sc-gPEVay dysdYH"
+              className="sc-iRbamj fFYkSk"
             >
               <div
-                className="sc-jAaTju gnojUY"
+                className="sc-jDwBTQ kDjnNT"
               >
                 <svg
                   fill="none"
@@ -3011,7 +3011,7 @@ exports[`Snapshots GridItem should render a grid item with a 90 day chart if 90 
               </div>
             </div>
             <div
-              className="sc-iRbamj cKeiXE"
+              className="sc-jlyJG hzCAbQ"
             >
               <span
                 style={
@@ -3053,14 +3053,14 @@ exports[`Snapshots GridItem should render a grid item with a custom Label 1`] = 
     }
   >
     <li
-      className="sc-gipzik eRazVv"
+      className="sc-csuQGl dhDIDz"
       width="25%"
     >
       <div
-        className="sc-csuQGl dBZpSr"
+        className="sc-bRBYWo joyODz"
       >
         <span
-          className="sc-jlyJG iqKSFW"
+          className="sc-gipzik cBJMjY"
         >
           <span
             data-tip={null}
@@ -3082,7 +3082,7 @@ exports[`Snapshots GridItem should render a grid item with a custom Label 1`] = 
           </span>
         </span>
         <div
-          className="sc-Rmtcm gtbxUW"
+          className="sc-hzDkRC epEiYU"
         >
           <span
             style={
@@ -3099,13 +3099,13 @@ exports[`Snapshots GridItem should render a grid item with a custom Label 1`] = 
             </span>
           </span>
           <div
-            className="sc-jDwBTQ fhLOEE"
+            className="sc-gPEVay dIshSc"
           >
             <div
-              className="sc-gPEVay dysdYH"
+              className="sc-iRbamj fFYkSk"
             >
               <div
-                className="sc-jAaTju gnojUY"
+                className="sc-jDwBTQ kDjnNT"
               >
                 <svg
                   fill="none"
@@ -3128,7 +3128,7 @@ exports[`Snapshots GridItem should render a grid item with a custom Label 1`] = 
               </div>
             </div>
             <div
-              className="sc-iRbamj cKeiXE"
+              className="sc-jlyJG hzCAbQ"
             >
               <span
                 style={
@@ -3174,9 +3174,9 @@ exports[`Snapshots GridItem should render a no data tolltip 1`] = `
 </span>
 `;
 
-exports[`Snapshots GridItem should render a summary grid item with negative diff 1`] = `
+exports[`Snapshots GridItem should render a standalone item 1`] = `
 <span>
-  <ul
+  <div
     style={
       Object {
         "borderLeft": "solid 1px #ced7df",
@@ -3189,15 +3189,15 @@ exports[`Snapshots GridItem should render a summary grid item with negative diff
       }
     }
   >
-    <li
-      className="sc-gipzik eRazVv"
+    <div
+      className="sc-Rmtcm dQRqNR"
       width="25%"
     >
       <div
-        className="sc-csuQGl dBZpSr"
+        className="sc-bRBYWo joyODz"
       >
         <span
-          className="sc-jlyJG iqKSFW"
+          className="sc-gipzik cBJMjY"
         >
           <span
             data-tip={null}
@@ -3217,7 +3217,122 @@ exports[`Snapshots GridItem should render a summary grid item with negative diff
           </span>
         </span>
         <div
-          className="sc-Rmtcm gtbxUW"
+          className="sc-hzDkRC epEiYU"
+        >
+          <span
+            style={
+              Object {
+                "color": "#323b43",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1.5rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            <span>
+              150
+            </span>
+          </span>
+          <div
+            className="sc-gPEVay dIshSc"
+          >
+            <div
+              className="sc-iRbamj fFYkSk"
+            >
+              <div
+                className="sc-jDwBTQ kDjnNT"
+              >
+                <svg
+                  fill="none"
+                  height="11"
+                  viewBox="0 0 11 11"
+                  width="11"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="white"
+                    height="11"
+                    width="11"
+                  />
+                  <path
+                    d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                    fill="#2FD566"
+                    transform="translate(1 2)"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              className="sc-jlyJG hzCAbQ"
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#2fd566",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "1rem",
+                    "fontWeight": 700,
+                  }
+                }
+              >
+                <span>
+                  50
+                </span>
+                %
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots GridItem should render a summary grid item with negative diff 1`] = `
+<span>
+  <ul
+    style={
+      Object {
+        "borderLeft": "solid 1px #ced7df",
+        "borderRadius": "2px",
+        "borderTop": "solid 1px #ced7df",
+        "display": "flex",
+        "flexWrap": "wrap",
+        "margin": "0 auto",
+        "padding": "0",
+      }
+    }
+  >
+    <li
+      className="sc-csuQGl dhDIDz"
+      width="25%"
+    >
+      <div
+        className="sc-bRBYWo joyODz"
+      >
+        <span
+          className="sc-gipzik cBJMjY"
+        >
+          <span
+            data-tip={null}
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "0.875rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Tweets
+            </span>
+          </span>
+        </span>
+        <div
+          className="sc-hzDkRC epEiYU"
         >
           <span
             style={
@@ -3234,13 +3349,13 @@ exports[`Snapshots GridItem should render a summary grid item with negative diff
             </span>
           </span>
           <div
-            className="sc-jDwBTQ fhLOEE"
+            className="sc-gPEVay dIshSc"
           >
             <div
-              className="sc-gPEVay dysdYH"
+              className="sc-iRbamj fFYkSk"
             >
               <div
-                className="sc-jAaTju gnojUY"
+                className="sc-jDwBTQ kDjnNT"
               >
                 <svg
                   fill="none"
@@ -3263,7 +3378,7 @@ exports[`Snapshots GridItem should render a summary grid item with negative diff
               </div>
             </div>
             <div
-              className="sc-iRbamj cKeiXE"
+              className="sc-jlyJG hzCAbQ"
             >
               <span
                 style={
@@ -3305,14 +3420,14 @@ exports[`Snapshots GridItem should render a summary grid item with no diff 1`] =
     }
   >
     <li
-      className="sc-gipzik eRazVv"
+      className="sc-csuQGl dhDIDz"
       width="25%"
     >
       <div
-        className="sc-csuQGl dBZpSr"
+        className="sc-bRBYWo joyODz"
       >
         <span
-          className="sc-jlyJG iqKSFW"
+          className="sc-gipzik cBJMjY"
         >
           <span
             data-tip={null}
@@ -3332,7 +3447,7 @@ exports[`Snapshots GridItem should render a summary grid item with no diff 1`] =
           </span>
         </span>
         <div
-          className="sc-Rmtcm gtbxUW"
+          className="sc-hzDkRC epEiYU"
         >
           <span
             style={
@@ -3371,14 +3486,14 @@ exports[`Snapshots GridItem should render a summary grid item with only arrow ic
     }
   >
     <li
-      className="sc-gipzik eRazVv"
+      className="sc-csuQGl dhDIDz"
       width="25%"
     >
       <div
-        className="sc-csuQGl dBZpSr"
+        className="sc-bRBYWo joyODz"
       >
         <span
-          className="sc-jlyJG iqKSFW"
+          className="sc-gipzik cBJMjY"
         >
           <span
             data-tip={null}
@@ -3398,7 +3513,7 @@ exports[`Snapshots GridItem should render a summary grid item with only arrow ic
           </span>
         </span>
         <div
-          className="sc-Rmtcm gtbxUW"
+          className="sc-hzDkRC epEiYU"
         >
           <span
             style={
@@ -3415,10 +3530,10 @@ exports[`Snapshots GridItem should render a summary grid item with only arrow ic
             </span>
           </span>
           <span
-            className="sc-hzDkRC bOlraf"
+            className="sc-fBuWsC hBvrEn"
           >
             <div
-              className="sc-jAaTju gnojUY"
+              className="sc-jDwBTQ kDjnNT"
             >
               <svg
                 fill="none"
@@ -3463,14 +3578,14 @@ exports[`Snapshots GridItem should render a summary grid item with percent sign 
     }
   >
     <li
-      className="sc-gipzik eRazVv"
+      className="sc-csuQGl dhDIDz"
       width="25%"
     >
       <div
-        className="sc-csuQGl dBZpSr"
+        className="sc-bRBYWo joyODz"
       >
         <span
-          className="sc-jlyJG iqKSFW"
+          className="sc-gipzik cBJMjY"
         >
           <span
             data-tip={null}
@@ -3490,7 +3605,7 @@ exports[`Snapshots GridItem should render a summary grid item with percent sign 
           </span>
         </span>
         <div
-          className="sc-Rmtcm gtbxUW"
+          className="sc-hzDkRC epEiYU"
         >
           <span
             style={
@@ -3508,13 +3623,13 @@ exports[`Snapshots GridItem should render a summary grid item with percent sign 
             </span>
           </span>
           <div
-            className="sc-jDwBTQ fhLOEE"
+            className="sc-gPEVay dIshSc"
           >
             <div
-              className="sc-gPEVay dysdYH"
+              className="sc-iRbamj fFYkSk"
             >
               <div
-                className="sc-jAaTju gnojUY"
+                className="sc-jDwBTQ kDjnNT"
               >
                 <svg
                   fill="none"
@@ -3537,7 +3652,7 @@ exports[`Snapshots GridItem should render a summary grid item with percent sign 
               </div>
             </div>
             <div
-              className="sc-iRbamj cKeiXE"
+              className="sc-jlyJG hzCAbQ"
             >
               <span
                 style={
@@ -3579,14 +3694,14 @@ exports[`Snapshots GridItem should render a summary grid item with positive diff
     }
   >
     <li
-      className="sc-gipzik eRazVv"
+      className="sc-csuQGl dhDIDz"
       width="25%"
     >
       <div
-        className="sc-csuQGl dBZpSr"
+        className="sc-bRBYWo joyODz"
       >
         <span
-          className="sc-jlyJG iqKSFW"
+          className="sc-gipzik cBJMjY"
         >
           <span
             data-tip={null}
@@ -3606,7 +3721,7 @@ exports[`Snapshots GridItem should render a summary grid item with positive diff
           </span>
         </span>
         <div
-          className="sc-Rmtcm gtbxUW"
+          className="sc-hzDkRC epEiYU"
         >
           <span
             style={
@@ -3623,13 +3738,13 @@ exports[`Snapshots GridItem should render a summary grid item with positive diff
             </span>
           </span>
           <div
-            className="sc-jDwBTQ fhLOEE"
+            className="sc-gPEVay dIshSc"
           >
             <div
-              className="sc-gPEVay dysdYH"
+              className="sc-iRbamj fFYkSk"
             >
               <div
-                className="sc-jAaTju gnojUY"
+                className="sc-jDwBTQ kDjnNT"
               >
                 <svg
                   fill="none"
@@ -3652,7 +3767,7 @@ exports[`Snapshots GridItem should render a summary grid item with positive diff
               </div>
             </div>
             <div
-              className="sc-iRbamj cKeiXE"
+              className="sc-jlyJG hzCAbQ"
             >
               <span
                 style={
@@ -5050,7 +5165,7 @@ exports[`Snapshots PeriodPhrase should render previous period phrase 1`] = `
 exports[`Snapshots ProfileBadge should render 1`] = `
 <span>
   <div
-    className="sc-jhAzac jHaood"
+    className="sc-fMiknA bmEYUU"
     size="32px"
   >
     <img
@@ -5130,10 +5245,10 @@ exports[`Snapshots ProfileIcon should render 1`] = `
     }
   >
     <span
-      className="sc-fMiknA iTOzqQ"
+      className="sc-eqIVtm ecxnvs"
     >
       <span
-        className="sc-fBuWsC fxfnwX"
+        className="sc-dVhcbM ilRSJc"
       >
         <img
           alt=""

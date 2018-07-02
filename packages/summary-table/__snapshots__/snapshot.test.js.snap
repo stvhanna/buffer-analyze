@@ -10,13 +10,13 @@ exports[`Snapshots SummaryTable should render a "no data" state 1`] = `
     }
   >
     <div
-      className="sc-kgoBCf fymEWw"
+      className="sc-kGXeez ctOnEy"
     >
       <header
-        className="sc-kGXeez esQcyC"
+        className="sc-kpOJdX hlFKIM"
       >
         <h2
-          className="sc-kpOJdX hkatTF"
+          className="sc-dxgOiQ isvEAp"
         >
           <span
             style={
@@ -33,7 +33,7 @@ exports[`Snapshots SummaryTable should render a "no data" state 1`] = `
         </h2>
       </header>
       <div
-        className="sc-iAyFgw ejxWZG"
+        className="sc-hSdWYo eaXZkb"
         id="js-dom-to-png-summary"
       >
         <div
@@ -79,13 +79,13 @@ exports[`Snapshots SummaryTable should render a loading state 1`] = `
     }
   >
     <div
-      className="sc-kgoBCf fymEWw"
+      className="sc-kGXeez ctOnEy"
     >
       <header
-        className="sc-kGXeez esQcyC"
+        className="sc-kpOJdX hlFKIM"
       >
         <h2
-          className="sc-kpOJdX hkatTF"
+          className="sc-dxgOiQ isvEAp"
         >
           <span
             style={
@@ -102,7 +102,7 @@ exports[`Snapshots SummaryTable should render a loading state 1`] = `
         </h2>
       </header>
       <div
-        className="sc-iAyFgw ejxWZG"
+        className="sc-hSdWYo eaXZkb"
         id="js-dom-to-png-summary"
       >
         <div
@@ -199,13 +199,13 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
     }
   >
     <div
-      className="sc-kgoBCf fymEWw"
+      className="sc-kGXeez ctOnEy"
     >
       <header
-        className="sc-kGXeez esQcyC"
+        className="sc-kpOJdX hlFKIM"
       >
         <h2
-          className="sc-kpOJdX hkatTF"
+          className="sc-dxgOiQ isvEAp"
         >
           <span
             style={
@@ -222,18 +222,18 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
         </h2>
       </header>
       <div
-        className="sc-iAyFgw ejxWZG"
+        className="sc-hSdWYo eaXZkb"
         id="js-dom-to-png-summary"
       >
         <ul
-          className="sc-kkGfuU iljRqu"
+          className="sc-iAyFgw dtnEsI"
         >
           <li
             className="sc-gZMcBi kiZsK"
             width="25%"
           >
             <div
-              className="sc-gqjmRU gggsyL"
+              className="sc-VigVT kxLHnZ"
             >
               <span
                 className="sc-iwsKbI eveHfQ"
@@ -256,7 +256,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                 </span>
               </span>
               <div
-                className="sc-VigVT eVESgP"
+                className="sc-jTzLTM bCBUDo"
               >
                 <span
                   style={
@@ -329,7 +329,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
             width="25%"
           >
             <div
-              className="sc-gqjmRU gggsyL"
+              className="sc-VigVT kxLHnZ"
             >
               <span
                 className="sc-iwsKbI eveHfQ"
@@ -352,7 +352,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                 </span>
               </span>
               <div
-                className="sc-VigVT eVESgP"
+                className="sc-jTzLTM bCBUDo"
               >
                 <span
                   style={
@@ -425,7 +425,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
             width="25%"
           >
             <div
-              className="sc-gqjmRU gggsyL"
+              className="sc-VigVT kxLHnZ"
             >
               <span
                 className="sc-iwsKbI eveHfQ"
@@ -448,7 +448,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                 </span>
               </span>
               <div
-                className="sc-VigVT eVESgP"
+                className="sc-jTzLTM bCBUDo"
               >
                 <span
                   style={
@@ -521,7 +521,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
             width="25%"
           >
             <div
-              className="sc-gqjmRU gggsyL"
+              className="sc-VigVT kxLHnZ"
             >
               <span
                 className="sc-iwsKbI eveHfQ"
@@ -544,7 +544,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                 </span>
               </span>
               <div
-                className="sc-VigVT eVESgP"
+                className="sc-jTzLTM bCBUDo"
               >
                 <span
                   style={
@@ -617,7 +617,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
             width="25%"
           >
             <div
-              className="sc-gqjmRU gggsyL"
+              className="sc-VigVT kxLHnZ"
             >
               <span
                 className="sc-iwsKbI eveHfQ"
@@ -640,7 +640,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                 </span>
               </span>
               <div
-                className="sc-VigVT eVESgP"
+                className="sc-jTzLTM bCBUDo"
               >
                 <span
                   style={
@@ -664,7 +664,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
             width="25%"
           >
             <div
-              className="sc-gqjmRU gggsyL"
+              className="sc-VigVT kxLHnZ"
             >
               <span
                 className="sc-iwsKbI eveHfQ"
@@ -687,7 +687,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                 </span>
               </span>
               <div
-                className="sc-VigVT eVESgP"
+                className="sc-jTzLTM bCBUDo"
               >
                 <span
                   style={
@@ -760,7 +760,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
             width="25%"
           >
             <div
-              className="sc-gqjmRU gggsyL"
+              className="sc-VigVT kxLHnZ"
             >
               <span
                 className="sc-iwsKbI eveHfQ"
@@ -783,7 +783,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                 </span>
               </span>
               <div
-                className="sc-VigVT eVESgP"
+                className="sc-jTzLTM bCBUDo"
               >
                 <span
                   style={
@@ -856,7 +856,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
             width="25%"
           >
             <div
-              className="sc-gqjmRU gggsyL"
+              className="sc-VigVT kxLHnZ"
             >
               <span
                 className="sc-iwsKbI eveHfQ"
@@ -879,7 +879,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                 </span>
               </span>
               <div
-                className="sc-VigVT eVESgP"
+                className="sc-jTzLTM bCBUDo"
               >
                 <span
                   style={
@@ -964,13 +964,13 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
     }
   >
     <div
-      className="sc-kgoBCf fymEWw"
+      className="sc-kGXeez ctOnEy"
     >
       <header
-        className="sc-kGXeez esQcyC"
+        className="sc-kpOJdX hlFKIM"
       >
         <h2
-          className="sc-kpOJdX hkatTF"
+          className="sc-dxgOiQ isvEAp"
         >
           <span
             style={
@@ -987,18 +987,18 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
         </h2>
       </header>
       <div
-        className="sc-iAyFgw ejxWZG"
+        className="sc-hSdWYo eaXZkb"
         id="js-dom-to-png-summary"
       >
         <ul
-          className="sc-kkGfuU iljRqu"
+          className="sc-iAyFgw dtnEsI"
         >
           <li
             className="sc-gZMcBi lmVtHy"
             width="20%"
           >
             <div
-              className="sc-gqjmRU gggsyL"
+              className="sc-VigVT kxLHnZ"
             >
               <span
                 className="sc-iwsKbI eveHfQ"
@@ -1021,7 +1021,7 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
                 </span>
               </span>
               <div
-                className="sc-VigVT eVESgP"
+                className="sc-jTzLTM bCBUDo"
               >
                 <span
                   style={
@@ -1094,7 +1094,7 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
             width="20%"
           >
             <div
-              className="sc-gqjmRU gggsyL"
+              className="sc-VigVT kxLHnZ"
             >
               <span
                 className="sc-iwsKbI eveHfQ"
@@ -1117,7 +1117,7 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
                 </span>
               </span>
               <div
-                className="sc-VigVT eVESgP"
+                className="sc-jTzLTM bCBUDo"
               >
                 <span
                   style={
@@ -1190,7 +1190,7 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
             width="20%"
           >
             <div
-              className="sc-gqjmRU gggsyL"
+              className="sc-VigVT kxLHnZ"
             >
               <span
                 className="sc-iwsKbI eveHfQ"
@@ -1213,7 +1213,7 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
                 </span>
               </span>
               <div
-                className="sc-VigVT eVESgP"
+                className="sc-jTzLTM bCBUDo"
               >
                 <span
                   style={
@@ -1286,7 +1286,7 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
             width="20%"
           >
             <div
-              className="sc-gqjmRU gggsyL"
+              className="sc-VigVT kxLHnZ"
             >
               <span
                 className="sc-iwsKbI eveHfQ"
@@ -1309,7 +1309,7 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
                 </span>
               </span>
               <div
-                className="sc-VigVT eVESgP"
+                className="sc-jTzLTM bCBUDo"
               >
                 <span
                   style={
@@ -1382,7 +1382,7 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
             width="20%"
           >
             <div
-              className="sc-gqjmRU gggsyL"
+              className="sc-VigVT kxLHnZ"
             >
               <span
                 className="sc-iwsKbI eveHfQ"
@@ -1405,7 +1405,7 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
                 </span>
               </span>
               <div
-                className="sc-VigVT eVESgP"
+                className="sc-jTzLTM bCBUDo"
               >
                 <span
                   style={
@@ -1441,13 +1441,13 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
     }
   >
     <div
-      className="sc-kgoBCf fymEWw"
+      className="sc-kGXeez ctOnEy"
     >
       <header
-        className="sc-kGXeez esQcyC"
+        className="sc-kpOJdX hlFKIM"
       >
         <h2
-          className="sc-kpOJdX hkatTF"
+          className="sc-dxgOiQ isvEAp"
         >
           <span
             style={
@@ -1464,18 +1464,18 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
         </h2>
       </header>
       <div
-        className="sc-iAyFgw ejxWZG"
+        className="sc-hSdWYo eaXZkb"
         id="js-dom-to-png-summary"
       >
         <ul
-          className="sc-kkGfuU iljRqu"
+          className="sc-iAyFgw dtnEsI"
         >
           <li
             className="sc-gZMcBi iMUkLj"
             width="33%"
           >
             <div
-              className="sc-gqjmRU gggsyL"
+              className="sc-VigVT kxLHnZ"
             >
               <span
                 className="sc-iwsKbI eveHfQ"
@@ -1498,7 +1498,7 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
                 </span>
               </span>
               <div
-                className="sc-VigVT eVESgP"
+                className="sc-jTzLTM bCBUDo"
               >
                 <span
                   style={
@@ -1571,7 +1571,7 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
             width="33%"
           >
             <div
-              className="sc-gqjmRU gggsyL"
+              className="sc-VigVT kxLHnZ"
             >
               <span
                 className="sc-iwsKbI eveHfQ"
@@ -1594,7 +1594,7 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
                 </span>
               </span>
               <div
-                className="sc-VigVT eVESgP"
+                className="sc-jTzLTM bCBUDo"
               >
                 <span
                   style={
@@ -1667,7 +1667,7 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
             width="33%"
           >
             <div
-              className="sc-gqjmRU gggsyL"
+              className="sc-VigVT kxLHnZ"
             >
               <span
                 className="sc-iwsKbI eveHfQ"
@@ -1690,7 +1690,7 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
                 </span>
               </span>
               <div
-                className="sc-VigVT eVESgP"
+                className="sc-jTzLTM bCBUDo"
               >
                 <span
                   style={
@@ -1763,7 +1763,7 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
             width="33%"
           >
             <div
-              className="sc-gqjmRU gggsyL"
+              className="sc-VigVT kxLHnZ"
             >
               <span
                 className="sc-iwsKbI eveHfQ"
@@ -1786,7 +1786,7 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
                 </span>
               </span>
               <div
-                className="sc-VigVT eVESgP"
+                className="sc-jTzLTM bCBUDo"
               >
                 <span
                   style={
@@ -1859,7 +1859,7 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
             width="33%"
           >
             <div
-              className="sc-gqjmRU gggsyL"
+              className="sc-VigVT kxLHnZ"
             >
               <span
                 className="sc-iwsKbI eveHfQ"
@@ -1882,7 +1882,7 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
                 </span>
               </span>
               <div
-                className="sc-VigVT eVESgP"
+                className="sc-jTzLTM bCBUDo"
               >
                 <span
                   style={
@@ -1955,7 +1955,7 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
             width="33%"
           >
             <div
-              className="sc-gqjmRU gggsyL"
+              className="sc-VigVT kxLHnZ"
             >
               <span
                 className="sc-iwsKbI eveHfQ"
@@ -1978,7 +1978,7 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
                 </span>
               </span>
               <div
-                className="sc-VigVT eVESgP"
+                className="sc-jTzLTM bCBUDo"
               >
                 <span
                   style={
@@ -2007,7 +2007,7 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
 exports[`Snapshots Title should render title as if for app 1`] = `
 <span>
   <h2
-    className="sc-kpOJdX hkatTF"
+    className="sc-dxgOiQ isvEAp"
   >
     <span
       style={
@@ -2028,7 +2028,7 @@ exports[`Snapshots Title should render title as if for app 1`] = `
 exports[`Snapshots Title should render title as if for report 1`] = `
 <span>
   <h2
-    className="sc-kpOJdX hkatTF"
+    className="sc-dxgOiQ isvEAp"
   >
     <span
       style={

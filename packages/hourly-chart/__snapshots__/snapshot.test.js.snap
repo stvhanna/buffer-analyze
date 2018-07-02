@@ -524,13 +524,13 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
     }
   >
     <div
-      className="sc-kgoBCf fymEWw"
+      className="sc-kGXeez ctOnEy"
     >
       <header
-        className="sc-kGXeez esQcyC"
+        className="sc-kpOJdX hlFKIM"
       >
         <h2
-          className="sc-kpOJdX hkatTF"
+          className="sc-dxgOiQ isvEAp"
         >
           <span
             style={
@@ -547,12 +547,12 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
         </h2>
       </header>
       <div
-        className="sc-eHgmQL kcwTLE"
+        className="sc-cvbbAY jtKfGt"
         id="js-dom-to-png-hourly-engagements"
       >
         <div>
           <section
-            className="sc-hSdWYo gvgKOA"
+            className="sc-eHgmQL iNOlDr"
           >
             <div
               style={
@@ -1200,10 +1200,10 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
           </section>
           <div>
             <ul
-              className="sc-kkGfuU MOjdh"
+              className="sc-iAyFgw eYrAAg"
             >
               <li
-                className="sc-iAyFgw cbzqSt"
+                className="sc-hSdWYo PWKvP"
               >
                 <i
                   style={
@@ -1232,7 +1232,7 @@ exports[`Snapshots HourlyChart [TESTED] loaded chart 1`] = `
                 </span>
               </li>
               <li
-                className="sc-iAyFgw cbzqSt"
+                className="sc-hSdWYo PWKvP"
               >
                 <i
                   style={
@@ -1279,13 +1279,13 @@ exports[`Snapshots HourlyChart [TESTED] loading state 1`] = `
     }
   >
     <div
-      className="sc-kgoBCf fymEWw"
+      className="sc-kGXeez ctOnEy"
     >
       <header
-        className="sc-kGXeez esQcyC"
+        className="sc-kpOJdX hlFKIM"
       >
         <h2
-          className="sc-kpOJdX hkatTF"
+          className="sc-dxgOiQ isvEAp"
         >
           <span
             style={
@@ -1302,7 +1302,7 @@ exports[`Snapshots HourlyChart [TESTED] loading state 1`] = `
         </h2>
       </header>
       <div
-        className="sc-eHgmQL kcwTLE"
+        className="sc-cvbbAY jtKfGt"
         id="js-dom-to-png-hourly-engagements"
       >
         <div
@@ -1399,13 +1399,13 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
     }
   >
     <div
-      className="sc-kgoBCf fymEWw"
+      className="sc-kGXeez ctOnEy"
     >
       <header
-        className="sc-kGXeez esQcyC"
+        className="sc-kpOJdX hlFKIM"
       >
         <h2
-          className="sc-kpOJdX hkatTF"
+          className="sc-dxgOiQ isvEAp"
         >
           <span
             style={
@@ -1422,12 +1422,12 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
         </h2>
       </header>
       <div
-        className="sc-eHgmQL kcwTLE"
+        className="sc-cvbbAY jtKfGt"
         id="js-dom-to-png-hourly-engagements"
       >
         <div>
           <section
-            className="sc-hSdWYo gvgKOA"
+            className="sc-eHgmQL iNOlDr"
           >
             <div
               style={
@@ -2075,10 +2075,10 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
           </section>
           <div>
             <ul
-              className="sc-kkGfuU MOjdh"
+              className="sc-iAyFgw eYrAAg"
             >
               <li
-                className="sc-iAyFgw cbzqSt"
+                className="sc-hSdWYo PWKvP"
               >
                 <i
                   style={
@@ -2107,7 +2107,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
                 </span>
               </li>
               <li
-                className="sc-iAyFgw cbzqSt"
+                className="sc-hSdWYo PWKvP"
               >
                 <i
                   style={
@@ -2147,7 +2147,7 @@ exports[`Snapshots HourlyChart [TESTED] second metric selected 1`] = `
 exports[`Snapshots Title should render title as if for app 1`] = `
 <span>
   <h2
-    className="sc-kpOJdX hkatTF"
+    className="sc-dxgOiQ isvEAp"
   >
     <span
       style={
@@ -2168,7 +2168,7 @@ exports[`Snapshots Title should render title as if for app 1`] = `
 exports[`Snapshots Title should render title as if for report 1`] = `
 <span>
   <h2
-    className="sc-kpOJdX hkatTF"
+    className="sc-dxgOiQ isvEAp"
   >
     <span
       style={

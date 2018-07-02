@@ -163,6 +163,7 @@ describe('middleware', () => {
         .toHaveBeenCalledWith(profileActions.selectProfile(profiles.profiles[0]));
       expect(next).toHaveBeenCalledWith(action);
     });
+
     it('should push a new route with (overview|posts)/profileId as format when visting overview or posts with a profile selected', () => {
       const { store, next, invoke } = getMiddlewareElements(stateWithProfileRouteAndSelectedProfile);
       const action = {
@@ -174,6 +175,23 @@ describe('middleware', () => {
       invoke(action);
       expect(store.dispatch)
         .toHaveBeenCalledWith(push(`/overview/${profiles.profiles[0].id}`));
+      expect(next).toHaveBeenCalledWith(action);
+    });
+
+    it('should select a profile when that is provided in the action payload', () => {
+      const { store, next, invoke } = getMiddlewareElements(stateWithProfileRouteAndSelectedProfile);
+      const action = {
+        type: LOCATION_CHANGE,
+        payload: {
+          pathname: '/overview',
+          state: {
+            profile: profiles.profiles[1],
+          },
+        },
+      };
+      invoke(action);
+      expect(store.dispatch)
+        .toHaveBeenCalledWith(profileActions.selectProfile(profiles.profiles[1]));
       expect(next).toHaveBeenCalledWith(action);
     });
   });

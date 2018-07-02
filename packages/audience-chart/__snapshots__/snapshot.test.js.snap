@@ -10,13 +10,13 @@ exports[`Snapshots AudienceChart [TESTED] Should render 1`] = `
     }
   >
     <div
-      className="sc-kgoBCf fymEWw"
+      className="sc-kGXeez ctOnEy"
     >
       <header
-        className="sc-kGXeez esQcyC"
+        className="sc-kpOJdX hlFKIM"
       >
         <h2
-          className="sc-kpOJdX hkatTF"
+          className="sc-dxgOiQ isvEAp"
         >
           <span
             style={
@@ -33,11 +33,11 @@ exports[`Snapshots AudienceChart [TESTED] Should render 1`] = `
         </h2>
       </header>
       <div
-        className="sc-iAyFgw kzufOM"
+        className="sc-hSdWYo geGhkG"
       >
         <div>
           <div
-            className="sc-kkGfuU fESlcU"
+            className="sc-iAyFgw jojIVQ"
           >
             <div
               className="dropdown dropdownContainer"
