@@ -97,7 +97,7 @@ function prepareSeries(
     },
     lineColor: color,
     data: seriesData,
-    zIndex: zIndex
+    zIndex: zIndex,
   });
 
   return seriesConfig;
@@ -107,9 +107,6 @@ function prepareChartOptions(profilesMetricData, profiles, metricKey) {
   const config = getChartConfig();
   const seriesData = profilesMetricData.map((profileData) => {
     const profile = profiles.find(p => p.id === profileData.profileId);
-    if (profile.service === 'instagram' && metricKey === 'reach') {
-      return null;
-    }
     return prepareSeries(
       profileData.dailyData,
       profile.timezone,

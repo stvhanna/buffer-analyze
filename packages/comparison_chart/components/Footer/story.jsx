@@ -84,17 +84,4 @@ storiesOf('ComparisonFooter')
         profiles={profiles}
       />
     </div>
-  ))
-  .add('should render a coming soon message for instagram on reach metric', () => (
-    <div
-      style={{
-        width: '750px',
-      }}
-    >
-      <ComparisonFooter
-        metricKey="reach"
-        profileTotals={profileTotals}
-        profiles={profiles}
-      />
-    </div>
   ));

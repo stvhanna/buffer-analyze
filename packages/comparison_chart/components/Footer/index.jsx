@@ -112,9 +112,6 @@ ComingSoon.propTypes = {
 
 function renderGridItem(profileTotal) {
   const profile = this.profiles.find(p => p.id === profileTotal.profileId);
-  if (profile.service === 'instagram' && this.metricKey === 'reach') {
-    return null;
-  }
   const gridWidth = this.profileTotals.length === 4 ? '50%' : '33%';
   return (<ProfileCell
     gridWidth={gridWidth}
@@ -124,24 +121,11 @@ function renderGridItem(profileTotal) {
   />);
 }
 
-function renderComingSoon(profileTotal) {
-  const profile = this.profiles.find(p => p.id === profileTotal.profileId);
-  if (profile.service === 'instagram' && this.metricKey === 'reach') {
-    return (<ComingSoon
-      key={profile.id}
-      metricKey={this.metricKey}
-      profile={profile}
-    />);
-  }
-  return null;
-}
-
 const ComparisonFooter = ({ profileTotals, profiles, metricKey }) => (
   <Wrapper>
     <Grid>
       {profileTotals.map(renderGridItem, { profiles, metricKey, profileTotals })}
     </Grid>
-    {profileTotals.map(renderComingSoon, { profiles, metricKey })}
   </Wrapper>
 );
 
