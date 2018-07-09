@@ -57,7 +57,7 @@ storiesOf('ComparisonChart')
       />
     </div>
   ))
-  .add('[TESTED] should hide Instagram in the reach chart', () => (
+  .add('[TESTED] should render Instagram in the reach chart', () => (
     <div
       style={{
         width: '750px',
