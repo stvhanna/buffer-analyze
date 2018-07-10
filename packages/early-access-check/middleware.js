@@ -8,7 +8,6 @@ const getRedirectURL = () => {
 };
 
 export default () => next => (action) => {
-  next(action);
   switch (action.type) {
     case `user_${dataFetchActionTypes.FETCH_SUCCESS}`: {
       const { result: { features = [] } } = action;
@@ -21,4 +20,5 @@ export default () => next => (action) => {
     default:
       break;
   }
+  return next(action);
 };
