@@ -77,6 +77,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
         args: {
           id: state.report.id,
           name: action.name ? action.name : state.report.name,
+          description: action.description ? action.description : state.report.description,
           dateRange: action.dateRange ? action.dateRange : state.report.dateRange,
         },
       }));

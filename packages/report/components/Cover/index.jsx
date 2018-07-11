@@ -47,6 +47,17 @@ const Title = styled.h1`
   margin: 0 0 1rem;
 `;
 
+const Description = styled.h2`
+  display: inline-block;
+  color: ${black};
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0 0 .5rem 0;
+  margin-top: 20px;
+  text-align: center;
+  max-width: 80%;
+`;
+
 const Logo = styled.img`
   display: block;
   margin: 8rem auto 0;
@@ -56,7 +67,7 @@ const Logo = styled.img`
   max-height: 300px;
 `;
 
-const Cover = ({ dateRange, logoUrl, name }) =>
+const Cover = ({ dateRange, logoUrl, name, description }) =>
   <Page>
     <Container>
       <Wrapper>
@@ -64,6 +75,7 @@ const Cover = ({ dateRange, logoUrl, name }) =>
           <Text>
             <Title>{name}</Title>
             <DateRange {...dateRange} large />
+            <Description>{description}</Description>
           </Text>
         </Inner>
         {logoUrl && <Logo src={logoUrl} alt={name} />}
@@ -74,6 +86,7 @@ const Cover = ({ dateRange, logoUrl, name }) =>
 Cover.defaultProps = {
   dateRange: {},
   name: '',
+  description: '',
   logoUrl: null,
 };
 
@@ -83,6 +96,7 @@ Cover.propTypes = {
     endDate: PropTypes.string,
   }),
   name: PropTypes.string,
+  description: PropTypes.string,
   logoUrl: PropTypes.string,
 };
 

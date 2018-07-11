@@ -24,6 +24,7 @@ describe('rpc/update_report', () => {
     await saveReportChanges.fn({
       id: reportId,
       name: 'A new name!',
+      description: 'This is a description.',
       dateRange: {
         startDate: 123461235,
         endDate: 1235132442,
@@ -38,6 +39,7 @@ describe('rpc/update_report', () => {
       body: {
         id: reportId,
         name: 'A new name!',
+        description: 'This is a description.',
         start_date: 123461235,
         end_date: 1235132442,
         range: 30,

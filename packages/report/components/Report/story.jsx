@@ -19,6 +19,7 @@ const Card = styled.section`
 
 const report = {
   name: 'Weekly Sync Report',
+  description: 'Our weekly report for all social accounts that we run across Facebook and Twitter. It is important to note that we only use organic posts.',
   charts: [
     {
       chart_id: 'summary-table',
@@ -122,6 +123,63 @@ const report = {
         },
       ],
     },
+    {
+      chart_id: 'summary-table',
+      profile: {
+        username: 'Buffer',
+        service: 'facebook',
+        avatarUrl: 'https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/10403026_1055367724535674_7855796462569708170_n.png?oh=7e504fbcb2addb0c18e47af9ee6ae454&oe=5AF1F381',
+      },
+      profile_id: '4e88a092512f7e1556000000',
+      metrics: [
+        {
+          label: 'Tweets',
+          value: 150,
+          diff: 25,
+        },
+        {
+          label: 'Retweets',
+          value: 901,
+          diff: -39,
+        },
+        {
+          label: 'Clicks',
+          value: 1010,
+          diff: -55,
+        },
+        {
+          label: 'Impressions',
+          value: 963400,
+          diff: -26,
+        },
+        {
+          label: 'New Followers',
+          value: 0,
+          diff: 0,
+        },
+        {
+          label: 'Engagements',
+          value: 28800,
+          diff: -33,
+        },
+        {
+          label: 'Likes',
+          value: 2313,
+          diff: -28,
+        },
+        {
+          label: 'Replies',
+          value: 658,
+          diff: -9,
+        },
+      ],
+    },
+  ],
+};
+
+const reportNoDescription = {
+  name: 'Weekly Sync Report New',
+  charts: [
     {
       chart_id: 'summary-table',
       profile: {
@@ -178,6 +236,7 @@ const report = {
 
 const comparisonReport = {
   name: 'Weekly Sync Report',
+  description: 'Our weekly report for all social accounts that we run across Facebook and Twitter. It is important to note that we only use organic posts.',
   charts: [
     {
       chart_id: 'comparison',
@@ -234,6 +293,16 @@ storiesOf('Report')
       />
     </Card>
   ))
+  .add('render with summary table, no logo and no description', () => (
+    <Card>
+      <Report
+        {...reportNoDescription}
+        dateRange={dateRange}
+        saveChanges={() => {}}
+        parsePageBreaks={() => {}}
+      />
+    </Card>
+  ))
   .add('render with summary table and no logo whilst exporting', () => (
     <Report
       {...report}
@@ -283,7 +352,7 @@ storiesOf('Report')
       exporting
     />
   ))
-  .add('render in edit mode', () => (
+  .add('render in title edit mode', () => (
     <Card>
       <Report
         {...report}
@@ -291,6 +360,17 @@ storiesOf('Report')
         saveChanges={() => {}}
         parsePageBreaks={() => {}}
         edit
+      />
+    </Card>
+  ))
+  .add('render in description edit mode', () => (
+    <Card>
+      <Report
+        {...report}
+        dateRange={dateRange}
+        saveChanges={() => {}}
+        parsePageBreaks={() => {}}
+        isDescriptionEditing
       />
     </Card>
   ))
