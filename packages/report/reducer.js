@@ -116,7 +116,7 @@ export default (state = initialState, action) => {
         edit: false,
         isDescriptionEditing: false,
         name: action.name ? action.name : state.name,
-        description: action.description ? action.description : state.description,
+        description: action.description || action.description === '' ? action.description : state.description,
       };
     case `update_report_${asyncDataFetchActionTypes.FETCH_START}`:
       return {

@@ -64,6 +64,13 @@ describe('reducer', () => {
     expect(state.edit).toBeTruthy();
   });
 
+  it('EDIT_DESCRIPTION sets isDescriptionEditing mode', () => {
+    const state = reducer(undefined, {
+      type: actionTypes.EDIT_DESCRIPTION,
+    });
+    expect(state.isDescriptionEditing).toBeTruthy();
+  });
+
   it('UPLOAD_LOGO sets uploading mode', () => {
     const state = reducer(undefined, {
       type: actionTypes.UPLOAD_LOGO,
@@ -106,6 +113,22 @@ describe('reducer', () => {
         name: 'a new name',
       });
       expect(state.name).toBe('a new name');
+    });
+    it('stores the new description', () => {
+      const initialState = reducer(undefined, {});
+      const state = reducer(initialState, {
+        type: actionTypes.SAVE_CHANGES,
+        description: 'a new description',
+      });
+      expect(state.description).toBe('a new description');
+    });
+    it('stores an empty description', () => {
+      const initialState = reducer(undefined, {});
+      const state = reducer(initialState, {
+        type: actionTypes.SAVE_CHANGES,
+        description: '',
+      });
+      expect(state.description).toBe('');
     });
   });
 
@@ -301,6 +324,11 @@ describe('reducer', () => {
         type: actionTypes.EDIT_NAME,
       });
     });
+    it('editDescription', () => {
+      expect(actions.editDescription()).toEqual({
+        type: actionTypes.EDIT_DESCRIPTION,
+      });
+    });
     it('saveChanges', () => {
       expect(actions.saveChanges({
         name: 'a new name',
@@ -337,6 +365,14 @@ describe('reducer', () => {
     it('deleteLogo', () => {
       expect(actions.deleteLogo()).toEqual({
         type: actionTypes.DELETE_LOGO,
+      });
+    });
+    it('saveDescription', () => {
+      expect(actions.saveDescription({
+        description: 'a new description',
+      })).toEqual({
+        type: actionTypes.SAVE_CHANGES,
+        description: 'a new description',
       });
     });
   });
