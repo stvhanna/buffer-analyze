@@ -48,14 +48,16 @@ const Title = styled.h1`
 `;
 
 const Description = styled.h2`
-  display: inline-block;
+  display: block;
   color: ${black};
-  font-size: 1.1rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 400;
   margin: 0 0 .5rem 0;
   margin-top: 20px;
   text-align: center;
   max-width: 80%;
+  line-height: 1.4;
+  padding-left: 10%;
 `;
 
 const Logo = styled.img`
