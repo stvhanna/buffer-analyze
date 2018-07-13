@@ -725,9 +725,9 @@ exports[`Snapshots EditDescription renders the edit description text box 1`] = `
     className="sc-gZMcBi kniurN"
     onSubmit={[Function]}
   >
-    <input
+    <textarea
       autoFocus={true}
-      className="sc-gqjmRU ikwMHR"
+      className="sc-gqjmRU gLjgwy"
       onBlur={[Function]}
       onChange={[Function]}
       value="Test report description"
@@ -1456,6 +1456,33 @@ exports[`Snapshots Report render in description edit mode 1`] = `
                 </span>
               </div>
             </div>
+            <div
+              className="sc-iGPElx ekHhUl"
+            >
+              <svg
+                height="100%"
+                style={
+                  Object {
+                    "fill": "#59626a",
+                    "height": "1rem",
+                    "width": "1rem",
+                  }
+                }
+                version="1.1"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              >
+                <g
+                  className="shuttleGray"
+                >
+                  <path
+                    d="M0,12.8353339 L3.16356812,15.998902 L0,15.998902 L0,12.8353339 Z M1.05452271,11.7808112 L10.5452271,2.29010681 L13.7087952,5.45367493 L4.21809083,14.9443793 L1.05452271,11.7808112 Z M11.5997498,1.2355841 L12.2903301,0.545003751 C13.0737267,-0.238392873 14.3489904,-0.2332661 15.1240254,0.541768884 L15.4571331,0.874876608 C16.2387432,1.65648666 16.2395801,2.92288997 15.4538982,3.70857187 L14.7633179,4.39915222 L11.5997498,1.2355841 Z"
+                  />
+                </g>
+              </svg>
+            </div>
             <button
               aria-label={null}
               disabled={undefined}
@@ -1490,33 +1517,6 @@ exports[`Snapshots Report render in description edit mode 1`] = `
                 Weekly Sync Report
               </h1>
             </button>
-            <div
-              className="sc-iGPElx fdWrTP"
-            >
-              <svg
-                height="100%"
-                style={
-                  Object {
-                    "fill": "#59626a",
-                    "height": "1rem",
-                    "width": "1rem",
-                  }
-                }
-                version="1.1"
-                viewBox="0 0 16 16"
-                width="100%"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-              >
-                <g
-                  className="shuttleGray"
-                >
-                  <path
-                    d="M0,12.8353339 L3.16356812,15.998902 L0,15.998902 L0,12.8353339 Z M1.05452271,11.7808112 L10.5452271,2.29010681 L13.7087952,5.45367493 L4.21809083,14.9443793 L1.05452271,11.7808112 Z M11.5997498,1.2355841 L12.2903301,0.545003751 C13.0737267,-0.238392873 14.3489904,-0.2332661 15.1240254,0.541768884 L15.4571331,0.874876608 C16.2387432,1.65648666 16.2395801,2.92288997 15.4538982,3.70857187 L14.7633179,4.39915222 L11.5997498,1.2355841 Z"
-                  />
-                </g>
-              </svg>
-            </div>
           </div>
           <span
             style={
@@ -1540,12 +1540,12 @@ exports[`Snapshots Report render in description edit mode 1`] = `
             className="sc-gZMcBi kniurN"
             onSubmit={[Function]}
           >
-            <input
+            <textarea
               autoFocus={true}
-              className="sc-gqjmRU ikwMHR"
+              className="sc-gqjmRU gLjgwy"
               onBlur={[Function]}
               onChange={[Function]}
-              value="Our weekly report for all social accounts that we run across Facebook and Twitter. It is important to note that we only use organic posts."
+              value="Our weekly report for all social accounts that we run across Facebook and Twitter. It is important to note that we only use organic posts. This report should be generated every week to show off our performance across all the social networks. Keep up the good work."
             />
           </form>
         </span>
@@ -4671,8 +4671,35 @@ exports[`Snapshots Report render in title edit mode 1`] = `
             </span>
           </span>
           <div
-            className="sc-etwtAo lfvIlF"
+            className="sc-etwtAo imoISm"
           >
+            <div
+              className="sc-iGPElx ekHhUl"
+            >
+              <svg
+                height="100%"
+                style={
+                  Object {
+                    "fill": "#59626a",
+                    "height": "1rem",
+                    "width": "1rem",
+                  }
+                }
+                version="1.1"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              >
+                <g
+                  className="shuttleGray"
+                >
+                  <path
+                    d="M0,12.8353339 L3.16356812,15.998902 L0,15.998902 L0,12.8353339 Z M1.05452271,11.7808112 L10.5452271,2.29010681 L13.7087952,5.45367493 L4.21809083,14.9443793 L1.05452271,11.7808112 Z M11.5997498,1.2355841 L12.2903301,0.545003751 C13.0737267,-0.238392873 14.3489904,-0.2332661 15.1240254,0.541768884 L15.4571331,0.874876608 C16.2387432,1.65648666 16.2395801,2.92288997 15.4538982,3.70857187 L14.7633179,4.39915222 L11.5997498,1.2355841 Z"
+                  />
+                </g>
+              </svg>
+            </div>
             <button
               aria-label={null}
               disabled={undefined}
@@ -4702,38 +4729,11 @@ exports[`Snapshots Report render in title edit mode 1`] = `
               }
             >
               <h2
-                className="sc-fQejPQ hCkMhv"
+                className="sc-fQejPQ dBmXUZ"
               >
-                Our weekly report for all social accounts that we run across Facebook and Twitter. It is important to note that we only use organic posts.
+                Our weekly report for all social accounts that we run across Facebook and Twitter. It is important to note that we only use organic posts. This report should be generated every week to show off our performance across all the social networks. Keep up the good work.
               </h2>
             </button>
-            <div
-              className="sc-iGPElx fdWrTP"
-            >
-              <svg
-                height="100%"
-                style={
-                  Object {
-                    "fill": "#59626a",
-                    "height": "1rem",
-                    "width": "1rem",
-                  }
-                }
-                version="1.1"
-                viewBox="0 0 16 16"
-                width="100%"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-              >
-                <g
-                  className="shuttleGray"
-                >
-                  <path
-                    d="M0,12.8353339 L3.16356812,15.998902 L0,15.998902 L0,12.8353339 Z M1.05452271,11.7808112 L10.5452271,2.29010681 L13.7087952,5.45367493 L4.21809083,14.9443793 L1.05452271,11.7808112 Z M11.5997498,1.2355841 L12.2903301,0.545003751 C13.0737267,-0.238392873 14.3489904,-0.2332661 15.1240254,0.541768884 L15.4571331,0.874876608 C16.2387432,1.65648666 16.2395801,2.92288997 15.4538982,3.70857187 L14.7633179,4.39915222 L11.5997498,1.2355841 Z"
-                  />
-                </g>
-              </svg>
-            </div>
           </div>
         </span>
       </div>
@@ -7957,6 +7957,33 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                 </span>
               </div>
             </div>
+            <div
+              className="sc-iGPElx ekHhUl"
+            >
+              <svg
+                height="100%"
+                style={
+                  Object {
+                    "fill": "#59626a",
+                    "height": "1rem",
+                    "width": "1rem",
+                  }
+                }
+                version="1.1"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              >
+                <g
+                  className="shuttleGray"
+                >
+                  <path
+                    d="M0,12.8353339 L3.16356812,15.998902 L0,15.998902 L0,12.8353339 Z M1.05452271,11.7808112 L10.5452271,2.29010681 L13.7087952,5.45367493 L4.21809083,14.9443793 L1.05452271,11.7808112 Z M11.5997498,1.2355841 L12.2903301,0.545003751 C13.0737267,-0.238392873 14.3489904,-0.2332661 15.1240254,0.541768884 L15.4571331,0.874876608 C16.2387432,1.65648666 16.2395801,2.92288997 15.4538982,3.70857187 L14.7633179,4.39915222 L11.5997498,1.2355841 Z"
+                  />
+                </g>
+              </svg>
+            </div>
             <button
               aria-label={null}
               disabled={undefined}
@@ -7991,8 +8018,30 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                 Weekly Sync Report
               </h1>
             </button>
+          </div>
+          <span
+            style={
+              Object {
+                "color": "#000",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            <span
+              className="sc-htpNat KtFsv"
+            >
+              February 20, 2018
+               to 
+              February 25, 2018
+            </span>
+          </span>
+          <div
+            className="sc-etwtAo imoISm"
+          >
             <div
-              className="sc-iGPElx fdWrTP"
+              className="sc-iGPElx ekHhUl"
             >
               <svg
                 height="100%"
@@ -8018,28 +8067,6 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                 </g>
               </svg>
             </div>
-          </div>
-          <span
-            style={
-              Object {
-                "color": "#000",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1rem",
-                "fontWeight": 700,
-              }
-            }
-          >
-            <span
-              className="sc-htpNat KtFsv"
-            >
-              February 20, 2018
-               to 
-              February 25, 2018
-            </span>
-          </span>
-          <div
-            className="sc-etwtAo lfvIlF"
-          >
             <button
               aria-label={null}
               disabled={undefined}
@@ -8069,38 +8096,11 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
               }
             >
               <h2
-                className="sc-fQejPQ hCkMhv"
+                className="sc-fQejPQ dBmXUZ"
               >
                 Our weekly report for all social accounts that we run across Facebook and Twitter. It is important to note that we only use organic posts.
               </h2>
             </button>
-            <div
-              className="sc-iGPElx fdWrTP"
-            >
-              <svg
-                height="100%"
-                style={
-                  Object {
-                    "fill": "#59626a",
-                    "height": "1rem",
-                    "width": "1rem",
-                  }
-                }
-                version="1.1"
-                viewBox="0 0 16 16"
-                width="100%"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-              >
-                <g
-                  className="shuttleGray"
-                >
-                  <path
-                    d="M0,12.8353339 L3.16356812,15.998902 L0,15.998902 L0,12.8353339 Z M1.05452271,11.7808112 L10.5452271,2.29010681 L13.7087952,5.45367493 L4.21809083,14.9443793 L1.05452271,11.7808112 Z M11.5997498,1.2355841 L12.2903301,0.545003751 C13.0737267,-0.238392873 14.3489904,-0.2332661 15.1240254,0.541768884 L15.4571331,0.874876608 C16.2387432,1.65648666 16.2395801,2.92288997 15.4538982,3.70857187 L14.7633179,4.39915222 L11.5997498,1.2355841 Z"
-                  />
-                </g>
-              </svg>
-            </div>
           </div>
         </span>
       </div>
@@ -8960,6 +8960,33 @@ exports[`Snapshots Report render with summary table and logo 1`] = `
                 </span>
               </button>
             </div>
+            <div
+              className="sc-iGPElx ekHhUl"
+            >
+              <svg
+                height="100%"
+                style={
+                  Object {
+                    "fill": "#59626a",
+                    "height": "1rem",
+                    "width": "1rem",
+                  }
+                }
+                version="1.1"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              >
+                <g
+                  className="shuttleGray"
+                >
+                  <path
+                    d="M0,12.8353339 L3.16356812,15.998902 L0,15.998902 L0,12.8353339 Z M1.05452271,11.7808112 L10.5452271,2.29010681 L13.7087952,5.45367493 L4.21809083,14.9443793 L1.05452271,11.7808112 Z M11.5997498,1.2355841 L12.2903301,0.545003751 C13.0737267,-0.238392873 14.3489904,-0.2332661 15.1240254,0.541768884 L15.4571331,0.874876608 C16.2387432,1.65648666 16.2395801,2.92288997 15.4538982,3.70857187 L14.7633179,4.39915222 L11.5997498,1.2355841 Z"
+                  />
+                </g>
+              </svg>
+            </div>
             <button
               aria-label={null}
               disabled={undefined}
@@ -8994,8 +9021,30 @@ exports[`Snapshots Report render with summary table and logo 1`] = `
                 Weekly Sync Report
               </h1>
             </button>
+          </div>
+          <span
+            style={
+              Object {
+                "color": "#000",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            <span
+              className="sc-htpNat KtFsv"
+            >
+              February 20, 2018
+               to 
+              February 25, 2018
+            </span>
+          </span>
+          <div
+            className="sc-etwtAo imoISm"
+          >
             <div
-              className="sc-iGPElx fdWrTP"
+              className="sc-iGPElx ekHhUl"
             >
               <svg
                 height="100%"
@@ -9021,28 +9070,6 @@ exports[`Snapshots Report render with summary table and logo 1`] = `
                 </g>
               </svg>
             </div>
-          </div>
-          <span
-            style={
-              Object {
-                "color": "#000",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1rem",
-                "fontWeight": 700,
-              }
-            }
-          >
-            <span
-              className="sc-htpNat KtFsv"
-            >
-              February 20, 2018
-               to 
-              February 25, 2018
-            </span>
-          </span>
-          <div
-            className="sc-etwtAo lfvIlF"
-          >
             <button
               aria-label={null}
               disabled={undefined}
@@ -9072,38 +9099,11 @@ exports[`Snapshots Report render with summary table and logo 1`] = `
               }
             >
               <h2
-                className="sc-fQejPQ hCkMhv"
+                className="sc-fQejPQ dBmXUZ"
               >
-                Our weekly report for all social accounts that we run across Facebook and Twitter. It is important to note that we only use organic posts.
+                Our weekly report for all social accounts that we run across Facebook and Twitter. It is important to note that we only use organic posts. This report should be generated every week to show off our performance across all the social networks. Keep up the good work.
               </h2>
             </button>
-            <div
-              className="sc-iGPElx fdWrTP"
-            >
-              <svg
-                height="100%"
-                style={
-                  Object {
-                    "fill": "#59626a",
-                    "height": "1rem",
-                    "width": "1rem",
-                  }
-                }
-                version="1.1"
-                viewBox="0 0 16 16"
-                width="100%"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-              >
-                <g
-                  className="shuttleGray"
-                >
-                  <path
-                    d="M0,12.8353339 L3.16356812,15.998902 L0,15.998902 L0,12.8353339 Z M1.05452271,11.7808112 L10.5452271,2.29010681 L13.7087952,5.45367493 L4.21809083,14.9443793 L1.05452271,11.7808112 Z M11.5997498,1.2355841 L12.2903301,0.545003751 C13.0737267,-0.238392873 14.3489904,-0.2332661 15.1240254,0.541768884 L15.4571331,0.874876608 C16.2387432,1.65648666 16.2395801,2.92288997 15.4538982,3.70857187 L14.7633179,4.39915222 L11.5997498,1.2355841 Z"
-                  />
-                </g>
-              </svg>
-            </div>
           </div>
         </span>
       </div>
@@ -12229,7 +12229,7 @@ exports[`Snapshots Report render with summary table and logo whilst exporting 1`
               <h2
                 className="sc-htoDjs erTBnA"
               >
-                Our weekly report for all social accounts that we run across Facebook and Twitter. It is important to note that we only use organic posts.
+                Our weekly report for all social accounts that we run across Facebook and Twitter. It is important to note that we only use organic posts. This report should be generated every week to show off our performance across all the social networks. Keep up the good work.
               </h2>
             </span>
           </div>
@@ -14847,6 +14847,33 @@ exports[`Snapshots Report render with summary table and no logo 1`] = `
                 </span>
               </div>
             </div>
+            <div
+              className="sc-iGPElx ekHhUl"
+            >
+              <svg
+                height="100%"
+                style={
+                  Object {
+                    "fill": "#59626a",
+                    "height": "1rem",
+                    "width": "1rem",
+                  }
+                }
+                version="1.1"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              >
+                <g
+                  className="shuttleGray"
+                >
+                  <path
+                    d="M0,12.8353339 L3.16356812,15.998902 L0,15.998902 L0,12.8353339 Z M1.05452271,11.7808112 L10.5452271,2.29010681 L13.7087952,5.45367493 L4.21809083,14.9443793 L1.05452271,11.7808112 Z M11.5997498,1.2355841 L12.2903301,0.545003751 C13.0737267,-0.238392873 14.3489904,-0.2332661 15.1240254,0.541768884 L15.4571331,0.874876608 C16.2387432,1.65648666 16.2395801,2.92288997 15.4538982,3.70857187 L14.7633179,4.39915222 L11.5997498,1.2355841 Z"
+                  />
+                </g>
+              </svg>
+            </div>
             <button
               aria-label={null}
               disabled={undefined}
@@ -14881,8 +14908,30 @@ exports[`Snapshots Report render with summary table and no logo 1`] = `
                 Weekly Sync Report
               </h1>
             </button>
+          </div>
+          <span
+            style={
+              Object {
+                "color": "#000",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            <span
+              className="sc-htpNat KtFsv"
+            >
+              February 20, 2018
+               to 
+              February 25, 2018
+            </span>
+          </span>
+          <div
+            className="sc-etwtAo imoISm"
+          >
             <div
-              className="sc-iGPElx fdWrTP"
+              className="sc-iGPElx ekHhUl"
             >
               <svg
                 height="100%"
@@ -14908,28 +14957,6 @@ exports[`Snapshots Report render with summary table and no logo 1`] = `
                 </g>
               </svg>
             </div>
-          </div>
-          <span
-            style={
-              Object {
-                "color": "#000",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1rem",
-                "fontWeight": 700,
-              }
-            }
-          >
-            <span
-              className="sc-htpNat KtFsv"
-            >
-              February 20, 2018
-               to 
-              February 25, 2018
-            </span>
-          </span>
-          <div
-            className="sc-etwtAo lfvIlF"
-          >
             <button
               aria-label={null}
               disabled={undefined}
@@ -14959,38 +14986,11 @@ exports[`Snapshots Report render with summary table and no logo 1`] = `
               }
             >
               <h2
-                className="sc-fQejPQ hCkMhv"
+                className="sc-fQejPQ dBmXUZ"
               >
-                Our weekly report for all social accounts that we run across Facebook and Twitter. It is important to note that we only use organic posts.
+                Our weekly report for all social accounts that we run across Facebook and Twitter. It is important to note that we only use organic posts. This report should be generated every week to show off our performance across all the social networks. Keep up the good work.
               </h2>
             </button>
-            <div
-              className="sc-iGPElx fdWrTP"
-            >
-              <svg
-                height="100%"
-                style={
-                  Object {
-                    "fill": "#59626a",
-                    "height": "1rem",
-                    "width": "1rem",
-                  }
-                }
-                version="1.1"
-                viewBox="0 0 16 16"
-                width="100%"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-              >
-                <g
-                  className="shuttleGray"
-                >
-                  <path
-                    d="M0,12.8353339 L3.16356812,15.998902 L0,15.998902 L0,12.8353339 Z M1.05452271,11.7808112 L10.5452271,2.29010681 L13.7087952,5.45367493 L4.21809083,14.9443793 L1.05452271,11.7808112 Z M11.5997498,1.2355841 L12.2903301,0.545003751 C13.0737267,-0.238392873 14.3489904,-0.2332661 15.1240254,0.541768884 L15.4571331,0.874876608 C16.2387432,1.65648666 16.2395801,2.92288997 15.4538982,3.70857187 L14.7633179,4.39915222 L11.5997498,1.2355841 Z"
-                  />
-                </g>
-              </svg>
-            </div>
           </div>
         </span>
       </div>
@@ -18116,7 +18116,7 @@ exports[`Snapshots Report render with summary table and no logo whilst exporting
               <h2
                 className="sc-htoDjs erTBnA"
               >
-                Our weekly report for all social accounts that we run across Facebook and Twitter. It is important to note that we only use organic posts.
+                Our weekly report for all social accounts that we run across Facebook and Twitter. It is important to note that we only use organic posts. This report should be generated every week to show off our performance across all the social networks. Keep up the good work.
               </h2>
             </span>
           </div>
@@ -20729,6 +20729,33 @@ exports[`Snapshots Report render with summary table, no logo and no description 
                 </span>
               </div>
             </div>
+            <div
+              className="sc-iGPElx ekHhUl"
+            >
+              <svg
+                height="100%"
+                style={
+                  Object {
+                    "fill": "#59626a",
+                    "height": "1rem",
+                    "width": "1rem",
+                  }
+                }
+                version="1.1"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              >
+                <g
+                  className="shuttleGray"
+                >
+                  <path
+                    d="M0,12.8353339 L3.16356812,15.998902 L0,15.998902 L0,12.8353339 Z M1.05452271,11.7808112 L10.5452271,2.29010681 L13.7087952,5.45367493 L4.21809083,14.9443793 L1.05452271,11.7808112 Z M11.5997498,1.2355841 L12.2903301,0.545003751 C13.0737267,-0.238392873 14.3489904,-0.2332661 15.1240254,0.541768884 L15.4571331,0.874876608 C16.2387432,1.65648666 16.2395801,2.92288997 15.4538982,3.70857187 L14.7633179,4.39915222 L11.5997498,1.2355841 Z"
+                  />
+                </g>
+              </svg>
+            </div>
             <button
               aria-label={null}
               disabled={undefined}
@@ -20763,8 +20790,30 @@ exports[`Snapshots Report render with summary table, no logo and no description 
                 Weekly Sync Report New
               </h1>
             </button>
+          </div>
+          <span
+            style={
+              Object {
+                "color": "#000",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            <span
+              className="sc-htpNat KtFsv"
+            >
+              February 20, 2018
+               to 
+              February 25, 2018
+            </span>
+          </span>
+          <div
+            className="sc-etwtAo imoISm"
+          >
             <div
-              className="sc-iGPElx fdWrTP"
+              className="sc-iGPElx ekHhUl"
             >
               <svg
                 height="100%"
@@ -20790,28 +20839,6 @@ exports[`Snapshots Report render with summary table, no logo and no description 
                 </g>
               </svg>
             </div>
-          </div>
-          <span
-            style={
-              Object {
-                "color": "#000",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1rem",
-                "fontWeight": 700,
-              }
-            }
-          >
-            <span
-              className="sc-htpNat KtFsv"
-            >
-              February 20, 2018
-               to 
-              February 25, 2018
-            </span>
-          </span>
-          <div
-            className="sc-etwtAo lfvIlF"
-          >
             <button
               aria-label={null}
               disabled={undefined}
@@ -20842,38 +20869,11 @@ exports[`Snapshots Report render with summary table, no logo and no description 
             >
               
               <h2
-                className="sc-clNaTc hcLlgp"
+                className="sc-clNaTc bOojmx"
               >
                 Add report description
               </h2>
             </button>
-            <div
-              className="sc-iGPElx fdWrTP"
-            >
-              <svg
-                height="100%"
-                style={
-                  Object {
-                    "fill": "#59626a",
-                    "height": "1rem",
-                    "width": "1rem",
-                  }
-                }
-                version="1.1"
-                viewBox="0 0 16 16"
-                width="100%"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-              >
-                <g
-                  className="shuttleGray"
-                >
-                  <path
-                    d="M0,12.8353339 L3.16356812,15.998902 L0,15.998902 L0,12.8353339 Z M1.05452271,11.7808112 L10.5452271,2.29010681 L13.7087952,5.45367493 L4.21809083,14.9443793 L1.05452271,11.7808112 Z M11.5997498,1.2355841 L12.2903301,0.545003751 C13.0737267,-0.238392873 14.3489904,-0.2332661 15.1240254,0.541768884 L15.4571331,0.874876608 C16.2387432,1.65648666 16.2395801,2.92288997 15.4538982,3.70857187 L14.7633179,4.39915222 L11.5997498,1.2355841 Z"
-                  />
-                </g>
-              </svg>
-            </div>
           </div>
         </span>
       </div>

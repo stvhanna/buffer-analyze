@@ -19,7 +19,7 @@ const Card = styled.section`
 
 const report = {
   name: 'Weekly Sync Report',
-  description: 'Our weekly report for all social accounts that we run across Facebook and Twitter. It is important to note that we only use organic posts.',
+  description: 'Our weekly report for all social accounts that we run across Facebook and Twitter. It is important to note that we only use organic posts. This report should be generated every week to show off our performance across all the social networks. Keep up the good work.',
   charts: [
     {
       chart_id: 'summary-table',

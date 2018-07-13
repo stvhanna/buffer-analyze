@@ -50,11 +50,11 @@ const Title = styled.h1`
 const Description = styled.h2`
   display: inline-block;
   color: #505050;
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin: 0 0 .5rem 0;
-  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4rem;
   text-align: left;
+  margin: .5rem 0 0 0;
 `;
 
 const EmptyDescription = Description.extend`
@@ -63,11 +63,11 @@ const EmptyDescription = Description.extend`
   font-weight: 400;
 `;
 
-
 const DescriptionContainer = styled.div`
   &:hover > div {
     opacity: 1;
   };
+  margin-top: 20px;
 `;
 
 const Container = styled.div`
@@ -81,6 +81,9 @@ const Icon = styled.div`
   margin: 0 0 0 0.75em;
   opacity: 0;
   transition: opacity 50ms linear;
+  position: absolute;
+  margin-left: -25px;
+  margin-top: 10px;
 `;
 
 const Centered = styled.div`
@@ -146,10 +149,10 @@ class Report extends React.Component {
                     isLogoDropzoneDisabled={isLogoDropzoneDisabled}
                     exporting={exporting}
                   />
+                  <Icon><EditIcon /></Icon>
                   <Button noStyle onClick={editName}>
                     <Title>{name}</Title>
                   </Button>
-                  <Icon><EditIcon /></Icon>
                 </Container>
               }
               <DateRange {...dateRange} />
@@ -157,11 +160,11 @@ class Report extends React.Component {
                 <EditDescription description={description} saveDescription={saveDescription} />
               }
               {!isDescriptionEditing && <DescriptionContainer>
+                <Icon><EditIcon /></Icon>
                 <Button noStyle onClick={editDescription}>
                   {description && <Description>{description}</Description>}
                   {!description && <EmptyDescription>Add report description</EmptyDescription>}
                 </Button>
-                <Icon><EditIcon /></Icon>
               </DescriptionContainer>}
             </Text>
           </Header>

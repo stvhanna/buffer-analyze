@@ -8,15 +8,15 @@ const Form = styled.form`
   padding: 0;
 `;
 
-const Input = styled.input`
+const Textarea = styled.textarea`
   color: #505050;
-  font-size: 1.1rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 400;
   font-family: ${fontFamily};
-  margin: 0 0 .5rem;
   border: none;
   padding: 0;
   display: block;
+  line-height: 1.4;
   width: 100%;
 `;
 
@@ -46,7 +46,7 @@ class EditDescription extends Component {
   render() {
     return (
       <Form onSubmit={this.handleSubmit}>
-        <Input
+        <Textarea
           innerRef={(input) => { this.input = input; }}
           value={this.state.description}
           onChange={this.handleChange}
