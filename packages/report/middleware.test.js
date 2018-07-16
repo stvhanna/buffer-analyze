@@ -133,7 +133,7 @@ describe('middleware', () => {
     });
   });
 
-  it('SAVE_CHANGES dispatches a update report request', () => {
+  it('SAVE_CHANGES dispatches an update report request', () => {
     const action = {
       type: actionTypes.SAVE_CHANGES,
       name: 'A new name!',
@@ -144,6 +144,51 @@ describe('middleware', () => {
       args: {
         ...state.report,
         name: action.name,
+      },
+    }));
+  });
+
+  it('SAVE_CHANGES dispatches an update report request with description', () => {
+    const action = {
+      type: actionTypes.SAVE_CHANGES,
+      description: 'A new description!',
+    };
+    middleware(store)(next)(action);
+    expect(store.dispatch).toHaveBeenCalledWith(dataFetchActions.fetch({
+      name: 'update_report',
+      args: {
+        ...state.report,
+        description: action.description,
+      },
+    }));
+  });
+
+  it('SAVE_CHANGES dispatches an update report request with empty description', () => {
+    const action = {
+      type: actionTypes.SAVE_CHANGES,
+      description: '',
+    };
+    middleware(store)(next)(action);
+    expect(store.dispatch).toHaveBeenCalledWith(dataFetchActions.fetch({
+      name: 'update_report',
+      args: {
+        ...state.report,
+        description: action.description,
+      },
+    }));
+  });
+
+  it('SAVE_CHANGES dispatches an update report request with dateRange', () => {
+    const action = {
+      type: actionTypes.SAVE_CHANGES,
+      dateRange: '11/11/2018',
+    };
+    middleware(store)(next)(action);
+    expect(store.dispatch).toHaveBeenCalledWith(dataFetchActions.fetch({
+      name: 'update_report',
+      args: {
+        ...state.report,
+        dateRange: action.dateRange,
       },
     }));
   });

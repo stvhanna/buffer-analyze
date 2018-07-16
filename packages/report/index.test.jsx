@@ -24,10 +24,11 @@ describe('Report', () => {
     date: {},
     report: {
       name: 'A report',
+      description: 'A description!',
       charts: [],
       logo: {
-        url: 'https://test-url/test-logo.png'
-      }
+        url: 'https://test-url/test-logo.png',
+      },
     },
   };
   it('should render', () => {
@@ -72,6 +73,17 @@ describe('Report', () => {
     expect(component.props().editName()).toEqual(actions.editName());
   });
 
+  it('edit description should dispatch the editDescription', () => {
+    const mockStore = configureMockStore();
+    const store = mockStore(state);
+
+    const component = shallow(<Report
+      store={store}
+    />);
+
+    expect(component.props().editDescription()).toEqual(actions.editDescription());
+  });
+
   it('save changes should dispatch saveChanges', () => {
     const mockStore = configureMockStore();
     const store = mockStore(state);
@@ -82,6 +94,19 @@ describe('Report', () => {
 
     expect(component.props().saveChanges('a new name!')).toEqual(actions.saveChanges({
       name: 'a new name!',
+    }));
+  });
+
+  it('save description should dispatch saveChanges', () => {
+    const mockStore = configureMockStore();
+    const store = mockStore(state);
+
+    const component = shallow(<Report
+      store={store}
+    />);
+
+    expect(component.props().saveDescription('a new description!')).toEqual(actions.saveChanges({
+      description: 'a new description!',
     }));
   });
 

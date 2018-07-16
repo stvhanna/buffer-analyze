@@ -12,6 +12,7 @@ export const actionTypes = keyWrapper('REPORT', {
   PARSE_PAGE_BREAKS: 'PARSE_PAGE_BREAKS',
   UPLOAD_LOGO: 'UPLOAD_LOGO',
   DELETE_LOGO: 'DELETE_LOGO',
+  EDIT_DESCRIPTION: 'EDIT_DESCRIPTION',
 });
 
 const initialState = {
@@ -22,6 +23,8 @@ const initialState = {
   edit: false,
   isLogoUploading: false,
   isLogoDropzoneDisabled: false,
+  isDescriptionEditing: false,
+  description: '',
 };
 
 const getOppositeDirection = direction =>
@@ -59,12 +62,14 @@ export default (state = initialState, action) => {
       return {
         ...initialState,
         name: action.args.name,
+        description: action.args.description,
         id: action.args._id,
       };
     case `get_report_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
       return {
         ...state,
         name: action.result.name,
+        description: action.result.description,
         charts: action.result.charts,
         dateRange: action.result.date_range,
         logoUrl: getLogoUrl(action.result),
@@ -109,7 +114,9 @@ export default (state = initialState, action) => {
       return {
         ...state,
         edit: false,
+        isDescriptionEditing: false,
         name: action.name ? action.name : state.name,
+        description: action.description || action.description === '' ? action.description : state.description,
       };
     case `update_report_${asyncDataFetchActionTypes.FETCH_START}`:
       return {
@@ -120,6 +127,11 @@ export default (state = initialState, action) => {
       return {
         ...state,
         edit: true,
+      };
+    case actionTypes.EDIT_DESCRIPTION:
+      return {
+        ...state,
+        isDescriptionEditing: true,
       };
     case actionTypes.UPLOAD_LOGO:
       return {
@@ -140,6 +152,9 @@ export default (state = initialState, action) => {
 export const actions = {
   editName: () => ({
     type: actionTypes.EDIT_NAME,
+  }),
+  editDescription: () => ({
+    type: actionTypes.EDIT_DESCRIPTION,
   }),
   saveChanges: report => ({
     type: actionTypes.SAVE_CHANGES,
@@ -166,5 +181,9 @@ export const actions = {
   }),
   deleteLogo: () => ({
     type: actionTypes.DELETE_LOGO,
+  }),
+  saveDescription: report => ({
+    type: actionTypes.SAVE_CHANGES,
+    ...report,
   }),
 };

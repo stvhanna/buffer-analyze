@@ -26,6 +26,7 @@ import ChartFactory from '../ChartFactory';
 import DateRange from '../DateRange';
 import EditTitle from '../EditTitle';
 import LogoUpload from '../LogoUpload';
+import EditDescription from '../EditDescription';
 
 const Page = styled.div`
   background: ${offWhite};
@@ -46,6 +47,29 @@ const Title = styled.h1`
   margin: 0 0 .5rem 0;
 `;
 
+const Description = styled.h2`
+  display: inline-block;
+  color: #505050;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  text-align: left;
+  margin: .5rem 0 0 0;
+`;
+
+const EmptyDescription = Description.extend`
+  color: #afafaf;
+  display: block;
+  font-weight: 400;
+`;
+
+const DescriptionContainer = styled.div`
+  &:hover > div {
+    opacity: 1;
+  };
+  margin-top: 20px;
+`;
+
 const Container = styled.div`
   &:hover > div {
     opacity: 1;
@@ -57,6 +81,9 @@ const Icon = styled.div`
   margin: 0 0 0 0.75em;
   opacity: 0;
   transition: opacity 50ms linear;
+  position: absolute;
+  margin-left: -25px;
+  margin-top: 10px;
 `;
 
 const Centered = styled.div`
@@ -91,7 +118,9 @@ class Report extends React.Component {
   render() {
     const { name, dateRange, charts, loading,
       edit, saveChanges, editName, moveUp, moveDown, deleteChart, exporting, uploadLogo,
-        logoUrl, deleteLogo, isLogoUploading, isLogoDropzoneDisabled } = this.props;
+        logoUrl, deleteLogo, isLogoUploading, isLogoDropzoneDisabled,
+        editDescription, isDescriptionEditing, description, saveDescription,
+    } = this.props;
 
     if (loading) {
       return (
@@ -103,7 +132,9 @@ class Report extends React.Component {
 
     return (
       <Page id="report-page">
-        {exporting && <Cover name={name} dateRange={dateRange} logoUrl={logoUrl} />}
+        {exporting &&
+          <Cover name={name} description={description} dateRange={dateRange} logoUrl={logoUrl} />
+        }
         {!exporting &&
           <Header>
             <Text>
@@ -118,13 +149,23 @@ class Report extends React.Component {
                     isLogoDropzoneDisabled={isLogoDropzoneDisabled}
                     exporting={exporting}
                   />
+                  <Icon><EditIcon /></Icon>
                   <Button noStyle onClick={editName}>
                     <Title>{name}</Title>
                   </Button>
-                  <Icon><EditIcon /></Icon>
                 </Container>
               }
               <DateRange {...dateRange} />
+              {isDescriptionEditing &&
+                <EditDescription description={description} saveDescription={saveDescription} />
+              }
+              {!isDescriptionEditing && <DescriptionContainer>
+                <Icon><EditIcon /></Icon>
+                <Button noStyle onClick={editDescription}>
+                  {description && <Description>{description}</Description>}
+                  {!description && <EmptyDescription>Add report description</EmptyDescription>}
+                </Button>
+              </DescriptionContainer>}
             </Text>
           </Header>
         }
@@ -150,6 +191,8 @@ Report.defaultProps = {
   isLogoUploading: false,
   isLogoDropzoneDisabled: false,
   name: '',
+  isDescriptionEditing: false,
+  description: '',
 };
 
 Report.propTypes = {
@@ -175,6 +218,10 @@ Report.propTypes = {
   deleteLogo: PropTypes.func.isRequired,
   isLogoUploading: PropTypes.bool,
   isLogoDropzoneDisabled: PropTypes.bool,
+  isDescriptionEditing: PropTypes.bool,
+  description: PropTypes.string,
+  editDescription: PropTypes.func.isRequired,
+  saveDescription: PropTypes.func.isRequired,
 };
 
 export default Report;

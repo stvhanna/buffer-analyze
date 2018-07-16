@@ -16,6 +16,8 @@ export default connect(
     parsePageBreaks: () => dispatch(actions.parsePageBreaks()),
     uploadLogo: logo => dispatch(actions.uploadLogo({ logo })),
     deleteLogo: () => dispatch(actions.deleteLogo()),
+    editDescription: () => dispatch(actions.editDescription()),
+    saveDescription: description => dispatch(actions.saveDescription({ description })),
   }),
 )(Report);
 

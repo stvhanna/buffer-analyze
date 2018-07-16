@@ -15,6 +15,7 @@ const Card = styled.section`
 `;
 
 const name = 'Weekly Sync Report';
+const description = 'Weekly report of all the social account of Buffer. We only use organic posts in this report. t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.';
 
 const dateRange = {
   startDate: '02/20/2018',
@@ -27,6 +28,7 @@ storiesOf('Cover')
     <Card>
       <Cover
         name={name}
+        description={description}
         dateRange={dateRange}
       />
     </Card>
