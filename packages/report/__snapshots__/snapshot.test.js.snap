@@ -725,7 +725,7 @@ exports[`Snapshots EditDescription renders the edit description text box 1`] = `
     className="sc-gZMcBi kniurN"
     onSubmit={[Function]}
   >
-    <textarea
+    <input
       autoFocus={true}
       className="sc-gqjmRU gLjgwy"
       onBlur={[Function]}
@@ -1540,7 +1540,7 @@ exports[`Snapshots Report render in description edit mode 1`] = `
             className="sc-gZMcBi kniurN"
             onSubmit={[Function]}
           >
-            <textarea
+            <input
               autoFocus={true}
               className="sc-gqjmRU gLjgwy"
               onBlur={[Function]}
