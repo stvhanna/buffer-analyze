@@ -6,12 +6,16 @@ import {
   Text,
 } from '@bufferapp/components';
 
+import {
+  outerSpace,
+} from '@bufferapp/components/style/color';
+
 const Date = ({ children }) => moment(children, 'MM/DD/YYYY').format('MMMM D, YYYY');
 
 const DateRange = ({ startDate, endDate }) =>
   <Text
     weight="semi-bold"
-    color="black"
+    color={outerSpace}
   >
     <Date>{startDate}</Date> to <Date>{endDate}</Date>
   </Text>;

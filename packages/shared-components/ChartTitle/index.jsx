@@ -8,9 +8,9 @@ const Header = styled.h2`
   padding: 0;
 `;
 
-const Title = ({ children, forReport }) => (
+const Title = ({ children }) => (
   <Header>
-    <Text color={forReport ? 'black' : 'outerSpace'} weight="semi-bold" size="large">
+    <Text color="outerSpace" weight="semi-bold" size="large">
       {children}
     </Text>
   </Header>
@@ -18,11 +18,6 @@ const Title = ({ children, forReport }) => (
 
 Title.propTypes = {
   children: PropTypes.node.isRequired,
-  forReport: PropTypes.bool,
-};
-
-Title.defaultProps = {
-  forReport: false,
 };
 
 export default Title;

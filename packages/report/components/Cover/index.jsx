@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { Text } from '@bufferapp/components';
 
 import {
-  black,
+  outerSpace,
   white,
 } from '@bufferapp/components/style/color';
 
@@ -40,7 +40,7 @@ const Inner = styled.div`
 
 const Title = styled.h1`
   display: block;
-  color: ${black};
+  color: ${outerSpace};
   font-size: 2.2rem;
   font-weight: 600;
   margin: 0 0 0.8rem;
@@ -48,7 +48,7 @@ const Title = styled.h1`
 
 const Description = styled.h2`
   display: block;
-  color: ${black};
+  color: ${outerSpace};
   font-size: 0.9rem;
   font-weight: 400;
   margin: 1rem auto 0;

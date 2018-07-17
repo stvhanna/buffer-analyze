@@ -566,14 +566,14 @@ exports[`Snapshots Cover renders a cover with logo, name and date 1`] = `
               }
             >
               <h1
-                className="sc-EHOje jrTCNW"
+                className="sc-EHOje igWyUE"
               >
                 Weekly Sync Report
               </h1>
               <span
                 style={
                   Object {
-                    "color": "#000",
+                    "color": undefined,
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 600,
@@ -629,14 +629,14 @@ exports[`Snapshots Cover renders a cover with logo, name, date and description 1
               }
             >
               <h1
-                className="sc-EHOje jrTCNW"
+                className="sc-EHOje igWyUE"
               >
                 Weekly Sync Report
               </h1>
               <span
                 style={
                   Object {
-                    "color": "#000",
+                    "color": undefined,
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 600,
@@ -648,7 +648,7 @@ exports[`Snapshots Cover renders a cover with logo, name, date and description 1
                 February 25, 2018
               </span>
               <h2
-                className="sc-bZQynM dTUqdE"
+                className="sc-bZQynM kgzbaK"
               >
                 This is our performance report for our weekly sync on Thursdays. It has a focus on the last 7-day period, showing upward trends from the content we have posted.
               </h2>
@@ -696,14 +696,14 @@ exports[`Snapshots Cover renders a cover with name and date 1`] = `
               }
             >
               <h1
-                className="sc-EHOje jrTCNW"
+                className="sc-EHOje igWyUE"
               >
                 Weekly Sync Report
               </h1>
               <span
                 style={
                   Object {
-                    "color": "#000",
+                    "color": undefined,
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 600,
@@ -750,14 +750,14 @@ exports[`Snapshots Cover renders a cover with name, date and description 1`] = `
               }
             >
               <h1
-                className="sc-EHOje jrTCNW"
+                className="sc-EHOje igWyUE"
               >
                 Weekly Sync Report
               </h1>
               <span
                 style={
                   Object {
-                    "color": "#000",
+                    "color": undefined,
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 600,
@@ -769,7 +769,7 @@ exports[`Snapshots Cover renders a cover with name, date and description 1`] = `
                 February 25, 2018
               </span>
               <h2
-                className="sc-bZQynM dTUqdE"
+                className="sc-bZQynM kgzbaK"
               >
                 This is our performance report for our weekly sync on Thursdays. It has a focus on the last 7-day period, showing upward trends from the content we have posted.
               </h2>
@@ -787,7 +787,7 @@ exports[`Snapshots DateRange renders the date range 1`] = `
   <span
     style={
       Object {
-        "color": "#000",
+        "color": undefined,
         "fontFamily": "\\"Roboto\\", sans-serif",
         "fontSize": "1rem",
         "fontWeight": 600,
@@ -806,7 +806,7 @@ exports[`Snapshots DateRange renders the date range larger 1`] = `
   <span
     style={
       Object {
-        "color": "#000",
+        "color": undefined,
         "fontFamily": "\\"Roboto\\", sans-serif",
         "fontSize": "1rem",
         "fontWeight": 600,
@@ -1613,7 +1613,7 @@ exports[`Snapshots Report render in description edit mode 1`] = `
               }
             >
               <h1
-                className="sc-iSDuPN hvxUgq"
+                className="sc-iSDuPN czKrYp"
               >
                 Weekly Sync Report
               </h1>
@@ -1622,7 +1622,7 @@ exports[`Snapshots Report render in description edit mode 1`] = `
           <span
             style={
               Object {
-                "color": "#000",
+                "color": undefined,
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1rem",
                 "fontWeight": 600,
@@ -1662,7 +1662,7 @@ exports[`Snapshots Report render in description edit mode 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
                     "fontWeight": 600,
@@ -2683,7 +2683,7 @@ exports[`Snapshots Report render in description edit mode 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
                     "fontWeight": 600,
@@ -3704,7 +3704,7 @@ exports[`Snapshots Report render in description edit mode 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
                     "fontWeight": 600,
@@ -4752,7 +4752,7 @@ exports[`Snapshots Report render in title edit mode 1`] = `
           <span
             style={
               Object {
-                "color": "#000",
+                "color": undefined,
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1rem",
                 "fontWeight": 600,
@@ -4845,7 +4845,7 @@ exports[`Snapshots Report render in title edit mode 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
                     "fontWeight": 600,
@@ -5866,7 +5866,7 @@ exports[`Snapshots Report render in title edit mode 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
                     "fontWeight": 600,
@@ -6887,7 +6887,7 @@ exports[`Snapshots Report render in title edit mode 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
                     "fontWeight": 600,
@@ -8106,7 +8106,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
               }
             >
               <h1
-                className="sc-iSDuPN hvxUgq"
+                className="sc-iSDuPN czKrYp"
               >
                 Weekly Sync Report
               </h1>
@@ -8115,7 +8115,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
           <span
             style={
               Object {
-                "color": "#000",
+                "color": undefined,
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1rem",
                 "fontWeight": 600,
@@ -8208,7 +8208,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
               <span
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
                     "fontWeight": 600,
@@ -8661,14 +8661,14 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
               }
             >
               <h1
-                className="sc-EHOje jrTCNW"
+                className="sc-EHOje igWyUE"
               >
                 Weekly Sync Report
               </h1>
               <span
                 style={
                   Object {
-                    "color": "#000",
+                    "color": undefined,
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 600,
@@ -8680,7 +8680,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                 February 25, 2018
               </span>
               <h2
-                className="sc-bZQynM dTUqdE"
+                className="sc-bZQynM kgzbaK"
               >
                 Our weekly report for all social accounts that we run across Facebook and Twitter. It is important to note that we only use organic posts.
               </h2>
@@ -8704,7 +8704,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
             <span
               style={
                 Object {
-                  "color": "#000",
+                  "color": "#323b43",
                   "fontFamily": "\\"Roboto\\", sans-serif",
                   "fontSize": "1.25rem",
                   "fontWeight": 600,
@@ -9099,7 +9099,7 @@ exports[`Snapshots Report render with summary table and logo 1`] = `
               }
             >
               <h1
-                className="sc-iSDuPN hvxUgq"
+                className="sc-iSDuPN czKrYp"
               >
                 Weekly Sync Report
               </h1>
@@ -9108,7 +9108,7 @@ exports[`Snapshots Report render with summary table and logo 1`] = `
           <span
             style={
               Object {
-                "color": "#000",
+                "color": undefined,
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1rem",
                 "fontWeight": 600,
@@ -9201,7 +9201,7 @@ exports[`Snapshots Report render with summary table and logo 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
                     "fontWeight": 600,
@@ -10222,7 +10222,7 @@ exports[`Snapshots Report render with summary table and logo 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
                     "fontWeight": 600,
@@ -11243,7 +11243,7 @@ exports[`Snapshots Report render with summary table and logo 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
                     "fontWeight": 600,
@@ -12281,14 +12281,14 @@ exports[`Snapshots Report render with summary table and logo whilst exporting 1`
               }
             >
               <h1
-                className="sc-EHOje jrTCNW"
+                className="sc-EHOje igWyUE"
               >
                 Weekly Sync Report
               </h1>
               <span
                 style={
                   Object {
-                    "color": "#000",
+                    "color": undefined,
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 600,
@@ -12300,7 +12300,7 @@ exports[`Snapshots Report render with summary table and logo whilst exporting 1`
                 February 25, 2018
               </span>
               <h2
-                className="sc-bZQynM dTUqdE"
+                className="sc-bZQynM kgzbaK"
               >
                 Our weekly report for all social accounts that we run across Facebook and Twitter. It is important to note that we only use organic posts. This report should be generated every week to show off our performance across all the social networks. Keep up the good work.
               </h2>
@@ -12333,7 +12333,7 @@ exports[`Snapshots Report render with summary table and logo whilst exporting 1`
             <span
               style={
                 Object {
-                  "color": "#000",
+                  "color": "#323b43",
                   "fontFamily": "\\"Roboto\\", sans-serif",
                   "fontSize": "1.25rem",
                   "fontWeight": 600,
@@ -13179,7 +13179,7 @@ exports[`Snapshots Report render with summary table and logo whilst exporting 1`
             <span
               style={
                 Object {
-                  "color": "#000",
+                  "color": "#323b43",
                   "fontFamily": "\\"Roboto\\", sans-serif",
                   "fontSize": "1.25rem",
                   "fontWeight": 600,
@@ -14025,7 +14025,7 @@ exports[`Snapshots Report render with summary table and logo whilst exporting 1`
             <span
               style={
                 Object {
-                  "color": "#000",
+                  "color": "#323b43",
                   "fontFamily": "\\"Roboto\\", sans-serif",
                   "fontSize": "1.25rem",
                   "fontWeight": 600,
@@ -14980,7 +14980,7 @@ exports[`Snapshots Report render with summary table and no logo 1`] = `
               }
             >
               <h1
-                className="sc-iSDuPN hvxUgq"
+                className="sc-iSDuPN czKrYp"
               >
                 Weekly Sync Report
               </h1>
@@ -14989,7 +14989,7 @@ exports[`Snapshots Report render with summary table and no logo 1`] = `
           <span
             style={
               Object {
-                "color": "#000",
+                "color": undefined,
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1rem",
                 "fontWeight": 600,
@@ -15082,7 +15082,7 @@ exports[`Snapshots Report render with summary table and no logo 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
                     "fontWeight": 600,
@@ -16103,7 +16103,7 @@ exports[`Snapshots Report render with summary table and no logo 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
                     "fontWeight": 600,
@@ -17124,7 +17124,7 @@ exports[`Snapshots Report render with summary table and no logo 1`] = `
               <span
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
                     "fontWeight": 600,
@@ -18162,14 +18162,14 @@ exports[`Snapshots Report render with summary table and no logo whilst exporting
               }
             >
               <h1
-                className="sc-EHOje jrTCNW"
+                className="sc-EHOje igWyUE"
               >
                 Weekly Sync Report
               </h1>
               <span
                 style={
                   Object {
-                    "color": "#000",
+                    "color": undefined,
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
                     "fontWeight": 600,
@@ -18181,7 +18181,7 @@ exports[`Snapshots Report render with summary table and no logo whilst exporting
                 February 25, 2018
               </span>
               <h2
-                className="sc-bZQynM dTUqdE"
+                className="sc-bZQynM kgzbaK"
               >
                 Our weekly report for all social accounts that we run across Facebook and Twitter. It is important to note that we only use organic posts. This report should be generated every week to show off our performance across all the social networks. Keep up the good work.
               </h2>
@@ -18205,7 +18205,7 @@ exports[`Snapshots Report render with summary table and no logo whilst exporting
             <span
               style={
                 Object {
-                  "color": "#000",
+                  "color": "#323b43",
                   "fontFamily": "\\"Roboto\\", sans-serif",
                   "fontSize": "1.25rem",
                   "fontWeight": 600,
@@ -19051,7 +19051,7 @@ exports[`Snapshots Report render with summary table and no logo whilst exporting
             <span
               style={
                 Object {
-                  "color": "#000",
+                  "color": "#323b43",
                   "fontFamily": "\\"Roboto\\", sans-serif",
                   "fontSize": "1.25rem",
                   "fontWeight": 600,
@@ -19897,7 +19897,7 @@ exports[`Snapshots Report render with summary table and no logo whilst exporting
             <span
               style={
                 Object {
-                  "color": "#000",
+                  "color": "#323b43",
                   "fontFamily": "\\"Roboto\\", sans-serif",
                   "fontSize": "1.25rem",
                   "fontWeight": 600,
@@ -20852,7 +20852,7 @@ exports[`Snapshots Report render with summary table, no logo and no description 
               }
             >
               <h1
-                className="sc-iSDuPN hvxUgq"
+                className="sc-iSDuPN czKrYp"
               >
                 Weekly Sync Report New
               </h1>
@@ -20861,7 +20861,7 @@ exports[`Snapshots Report render with summary table, no logo and no description 
           <span
             style={
               Object {
-                "color": "#000",
+                "color": undefined,
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1rem",
                 "fontWeight": 600,
@@ -20955,7 +20955,7 @@ exports[`Snapshots Report render with summary table, no logo and no description 
               <span
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#323b43",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1.25rem",
                     "fontWeight": 600,
