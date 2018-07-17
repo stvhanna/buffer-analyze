@@ -15,7 +15,7 @@ const Card = styled.section`
 `;
 
 const name = 'Weekly Sync Report';
-const description = 'Weekly report of all the social account of Buffer. We only use organic posts in this report. t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.';
+const description = 'Weekly report of all the social account of Buffer. We only use organic posts in this report. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.';
 
 const dateRange = {
   startDate: '02/20/2018',
@@ -24,7 +24,15 @@ const dateRange = {
 
 storiesOf('Cover')
   .addDecorator(checkA11y)
-  .add('renders a cover without a logo', () => (
+  .add('renders a cover with name and date', () => (
+    <Card>
+      <Cover
+        name={name}
+        dateRange={dateRange}
+      />
+    </Card>
+  ))
+  .add('renders a cover with name, date and description', () => (
     <Card>
       <Cover
         name={name}
@@ -33,10 +41,20 @@ storiesOf('Cover')
       />
     </Card>
   ))
-  .add('renders a cover with a logo', () => (
+  .add('renders a cover with logo, name and date', () => (
     <Card>
       <Cover
         name={name}
+        dateRange={dateRange}
+        logoUrl={'https://buffer-analyze.s3.amazonaws.com/report-logos/img_5afc8d8f209ec.jpg'}
+      />
+    </Card>
+  ))
+  .add('renders a cover with logo, name, date and description', () => (
+    <Card>
+      <Cover
+        name={name}
+        description={description}
         dateRange={dateRange}
         logoUrl={'https://buffer-analyze.s3.amazonaws.com/report-logos/img_5afc8d8f209ec.jpg'}
       />
