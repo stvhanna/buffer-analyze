@@ -30,7 +30,7 @@ const Container = styled.div`
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: top;
   text-align: center;
 `;
 
@@ -49,21 +49,33 @@ const Title = styled.h1`
 const Description = styled.h2`
   display: block;
   color: ${black};
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 400;
-  margin: 8rem auto 0;
+  margin: 1rem auto 0;
   text-align: center;
   line-height: 1.4;
+  padding: 0 2rem;
+`;
+
+const Bottom = styled.div`
+  position: absolute;
+  bottom: 12rem;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 `;
 
 const Logo = styled.img`
   display: block;
-  margin: 0 auto 1rem;
+  margin: 0 auto;
   width: auto;
   min-width: 100px;
-  max-width: 200px;
+  max-width: 150px;
   height: auto;
-  max-height: 200px;
+  max-height: 150px;
 `;
 
 const Cover = ({ dateRange, logoUrl, name, description }) =>
@@ -72,15 +84,15 @@ const Cover = ({ dateRange, logoUrl, name, description }) =>
       <div>
         <Inner>
           <Text>
-            {logoUrl && <Logo src={logoUrl} alt={name} />}
             <Title>{name}</Title>
             <DateRange {...dateRange} />
+            {description && <Description>{description}</Description>}
           </Text>
         </Inner>
-        {description && (
-          <Text>
-            <Description>{description}</Description>
-          </Text>
+        {logoUrl && (
+          <Bottom>
+            <Logo src={logoUrl} alt={name} />
+          </Bottom>
         )}
       </div>
     </Container>

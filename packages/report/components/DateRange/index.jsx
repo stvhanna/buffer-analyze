@@ -10,7 +10,7 @@ const Date = ({ children }) => moment(children, 'MM/DD/YYYY').format('MMMM D, YY
 
 const DateRange = ({ startDate, endDate }) =>
   <Text
-    weight="medium"
+    weight="semi-bold"
     color="black"
   >
     <Date>{startDate}</Date> to <Date>{endDate}</Date>
