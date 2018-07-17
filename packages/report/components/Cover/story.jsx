@@ -15,7 +15,8 @@ const Card = styled.section`
 `;
 
 const name = 'Weekly Sync Report';
-const description = 'Weekly report of all the social account of Buffer. We only use organic posts in this report. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.';
+const description = 'This is our performance report for our weekly sync on Thursdays. It has a focus on the last 7-day period, showing upward trends from the content we have posted.';
+const logoUrl = 'https://buffer-analyze.s3.amazonaws.com/report-logos/img_5b1330ff80d92.jpg';
 
 const dateRange = {
   startDate: '02/20/2018',
@@ -46,7 +47,7 @@ storiesOf('Cover')
       <Cover
         name={name}
         dateRange={dateRange}
-        logoUrl={'https://buffer-analyze.s3.amazonaws.com/report-logos/img_5afc8d8f209ec.jpg'}
+        logoUrl={logoUrl}
       />
     </Card>
   ))
@@ -56,7 +57,7 @@ storiesOf('Cover')
         name={name}
         description={description}
         dateRange={dateRange}
-        logoUrl={'https://buffer-analyze.s3.amazonaws.com/report-logos/img_5afc8d8f209ec.jpg'}
+        logoUrl={logoUrl}
       />
     </Card>
   ));
