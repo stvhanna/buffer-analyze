@@ -41,8 +41,8 @@ const Inner = styled.div`
 const Title = styled.h1`
   display: block;
   color: ${black};
-  font-size: 2.4rem;
-  font-weight: 500;
+  font-size: 2.2rem;
+  font-weight: 600;
   margin: 0 0 0.8rem;
 `;
 

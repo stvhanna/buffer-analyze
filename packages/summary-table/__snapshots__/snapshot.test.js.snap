@@ -24,7 +24,7 @@ exports[`Snapshots SummaryTable should render a "no data" state 1`] = `
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -93,7 +93,7 @@ exports[`Snapshots SummaryTable should render a loading state 1`] = `
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -213,7 +213,7 @@ exports[`Snapshots SummaryTable should render the summary table 1`] = `
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -978,7 +978,7 @@ exports[`Snapshots SummaryTable should render the summary table with 5 metrics o
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -1455,7 +1455,7 @@ exports[`Snapshots SummaryTable should render the summary table with 6 metrics o
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -2015,7 +2015,7 @@ exports[`Snapshots Title should render title as if for app 1`] = `
           "color": "#323b43",
           "fontFamily": "\\"Roboto\\", sans-serif",
           "fontSize": "1.25rem",
-          "fontWeight": 700,
+          "fontWeight": 600,
         }
       }
     >
@@ -2035,8 +2035,8 @@ exports[`Snapshots Title should render title as if for report 1`] = `
         Object {
           "color": "#000",
           "fontFamily": "\\"Roboto\\", sans-serif",
-          "fontSize": "1.5rem",
-          "fontWeight": 700,
+          "fontSize": "1.25rem",
+          "fontWeight": 600,
         }
       }
     >

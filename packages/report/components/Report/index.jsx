@@ -43,7 +43,7 @@ const Title = styled.h1`
   display: inline-block;
   color: ${black};
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   margin: 0 0 .5rem 0;
 `;
 

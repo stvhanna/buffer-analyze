@@ -1224,7 +1224,7 @@ exports[`Snapshots CompareChart should render a "no data" state 1`] = `
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -1296,7 +1296,7 @@ exports[`Snapshots CompareChart should render a loading state 1`] = `
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -1415,7 +1415,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -2312,7 +2312,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -3209,7 +3209,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -4106,7 +4106,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -5758,7 +5758,7 @@ exports[`Snapshots Title should render title as if for app 1`] = `
           "color": "#323b43",
           "fontFamily": "\\"Roboto\\", sans-serif",
           "fontSize": "1.25rem",
-          "fontWeight": 700,
+          "fontWeight": 600,
         }
       }
     >
@@ -5778,8 +5778,8 @@ exports[`Snapshots Title should render title as if for report 1`] = `
         Object {
           "color": "#000",
           "fontFamily": "\\"Roboto\\", sans-serif",
-          "fontSize": "1.5rem",
-          "fontWeight": 700,
+          "fontSize": "1.25rem",
+          "fontWeight": 600,
         }
       }
     >

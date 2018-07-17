@@ -571,7 +571,7 @@ exports[`Snapshots Cover renders a cover with logo, name and date 1`] = `
                 src="https://buffer-analyze.s3.amazonaws.com/report-logos/img_5b1330ff80d92.jpg"
               />
               <h1
-                className="sc-EHOje lfSVpT"
+                className="sc-EHOje jrTCNW"
               >
                 Weekly Sync Report
               </h1>
@@ -581,7 +581,7 @@ exports[`Snapshots Cover renders a cover with logo, name and date 1`] = `
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
-                    "fontWeight": 700,
+                    "fontWeight": 500,
                   }
                 }
               >
@@ -630,7 +630,7 @@ exports[`Snapshots Cover renders a cover with logo, name, date and description 1
                 src="https://buffer-analyze.s3.amazonaws.com/report-logos/img_5b1330ff80d92.jpg"
               />
               <h1
-                className="sc-EHOje lfSVpT"
+                className="sc-EHOje jrTCNW"
               >
                 Weekly Sync Report
               </h1>
@@ -640,7 +640,7 @@ exports[`Snapshots Cover renders a cover with logo, name, date and description 1
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
-                    "fontWeight": 700,
+                    "fontWeight": 500,
                   }
                 }
               >
@@ -699,7 +699,7 @@ exports[`Snapshots Cover renders a cover with name and date 1`] = `
               }
             >
               <h1
-                className="sc-EHOje lfSVpT"
+                className="sc-EHOje jrTCNW"
               >
                 Weekly Sync Report
               </h1>
@@ -709,7 +709,7 @@ exports[`Snapshots Cover renders a cover with name and date 1`] = `
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
-                    "fontWeight": 700,
+                    "fontWeight": 500,
                   }
                 }
               >
@@ -753,7 +753,7 @@ exports[`Snapshots Cover renders a cover with name, date and description 1`] = `
               }
             >
               <h1
-                className="sc-EHOje lfSVpT"
+                className="sc-EHOje jrTCNW"
               >
                 Weekly Sync Report
               </h1>
@@ -763,7 +763,7 @@ exports[`Snapshots Cover renders a cover with name, date and description 1`] = `
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
-                    "fontWeight": 700,
+                    "fontWeight": 500,
                   }
                 }
               >
@@ -804,7 +804,7 @@ exports[`Snapshots DateRange renders the date range 1`] = `
         "color": "#000",
         "fontFamily": "\\"Roboto\\", sans-serif",
         "fontSize": "1rem",
-        "fontWeight": 700,
+        "fontWeight": 500,
       }
     }
   >
@@ -823,7 +823,7 @@ exports[`Snapshots DateRange renders the date range larger 1`] = `
         "color": "#000",
         "fontFamily": "\\"Roboto\\", sans-serif",
         "fontSize": "1rem",
-        "fontWeight": 700,
+        "fontWeight": 500,
       }
     }
   >
@@ -859,7 +859,7 @@ exports[`Snapshots EditTitle renders the edit title text box 1`] = `
   >
     <input
       autoFocus={true}
-      className="sc-gqjmRU kZfPWj"
+      className="sc-gqjmRU hieDIv"
       onBlur={[Function]}
       onChange={[Function]}
       value="Test Report"
@@ -1627,7 +1627,7 @@ exports[`Snapshots Report render in description edit mode 1`] = `
               }
             >
               <h1
-                className="sc-RcBXQ cdxqGl"
+                className="sc-RcBXQ ljXeou"
               >
                 Weekly Sync Report
               </h1>
@@ -1639,7 +1639,7 @@ exports[`Snapshots Report render in description edit mode 1`] = `
                 "color": "#000",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -1678,8 +1678,8 @@ exports[`Snapshots Report render in description edit mode 1`] = `
                   Object {
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "1.5rem",
-                    "fontWeight": 700,
+                    "fontSize": "1.25rem",
+                    "fontWeight": 600,
                   }
                 }
               >
@@ -2699,8 +2699,8 @@ exports[`Snapshots Report render in description edit mode 1`] = `
                   Object {
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "1.5rem",
-                    "fontWeight": 700,
+                    "fontSize": "1.25rem",
+                    "fontWeight": 600,
                   }
                 }
               >
@@ -3720,8 +3720,8 @@ exports[`Snapshots Report render in description edit mode 1`] = `
                   Object {
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "1.5rem",
-                    "fontWeight": 700,
+                    "fontSize": "1.25rem",
+                    "fontWeight": 600,
                   }
                 }
               >
@@ -4757,7 +4757,7 @@ exports[`Snapshots Report render in title edit mode 1`] = `
           >
             <input
               autoFocus={true}
-              className="sc-gqjmRU kZfPWj"
+              className="sc-gqjmRU hieDIv"
               onBlur={[Function]}
               onChange={[Function]}
               value="Weekly Sync Report"
@@ -4769,7 +4769,7 @@ exports[`Snapshots Report render in title edit mode 1`] = `
                 "color": "#000",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -4861,8 +4861,8 @@ exports[`Snapshots Report render in title edit mode 1`] = `
                   Object {
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "1.5rem",
-                    "fontWeight": 700,
+                    "fontSize": "1.25rem",
+                    "fontWeight": 600,
                   }
                 }
               >
@@ -5882,8 +5882,8 @@ exports[`Snapshots Report render in title edit mode 1`] = `
                   Object {
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "1.5rem",
-                    "fontWeight": 700,
+                    "fontSize": "1.25rem",
+                    "fontWeight": 600,
                   }
                 }
               >
@@ -6903,8 +6903,8 @@ exports[`Snapshots Report render in title edit mode 1`] = `
                   Object {
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "1.5rem",
-                    "fontWeight": 700,
+                    "fontSize": "1.25rem",
+                    "fontWeight": 600,
                   }
                 }
               >
@@ -8120,7 +8120,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
               }
             >
               <h1
-                className="sc-RcBXQ cdxqGl"
+                className="sc-RcBXQ ljXeou"
               >
                 Weekly Sync Report
               </h1>
@@ -8132,7 +8132,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                 "color": "#000",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -8224,8 +8224,8 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                   Object {
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "1.5rem",
-                    "fontWeight": 700,
+                    "fontSize": "1.25rem",
+                    "fontWeight": 600,
                   }
                 }
               >
@@ -8675,7 +8675,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
               }
             >
               <h1
-                className="sc-EHOje lfSVpT"
+                className="sc-EHOje jrTCNW"
               >
                 Weekly Sync Report
               </h1>
@@ -8685,7 +8685,7 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
-                    "fontWeight": 700,
+                    "fontWeight": 500,
                   }
                 }
               >
@@ -8731,8 +8731,8 @@ exports[`Snapshots Report render only the multi-profile legend if that is availa
                 Object {
                   "color": "#000",
                   "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1.5rem",
-                  "fontWeight": 700,
+                  "fontSize": "1.25rem",
+                  "fontWeight": 600,
                 }
               }
             >
@@ -9124,7 +9124,7 @@ exports[`Snapshots Report render with summary table and logo 1`] = `
               }
             >
               <h1
-                className="sc-RcBXQ cdxqGl"
+                className="sc-RcBXQ ljXeou"
               >
                 Weekly Sync Report
               </h1>
@@ -9136,7 +9136,7 @@ exports[`Snapshots Report render with summary table and logo 1`] = `
                 "color": "#000",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -9228,8 +9228,8 @@ exports[`Snapshots Report render with summary table and logo 1`] = `
                   Object {
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "1.5rem",
-                    "fontWeight": 700,
+                    "fontSize": "1.25rem",
+                    "fontWeight": 600,
                   }
                 }
               >
@@ -10249,8 +10249,8 @@ exports[`Snapshots Report render with summary table and logo 1`] = `
                   Object {
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "1.5rem",
-                    "fontWeight": 700,
+                    "fontSize": "1.25rem",
+                    "fontWeight": 600,
                   }
                 }
               >
@@ -11270,8 +11270,8 @@ exports[`Snapshots Report render with summary table and logo 1`] = `
                   Object {
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "1.5rem",
-                    "fontWeight": 700,
+                    "fontSize": "1.25rem",
+                    "fontWeight": 600,
                   }
                 }
               >
@@ -12311,7 +12311,7 @@ exports[`Snapshots Report render with summary table and logo whilst exporting 1`
                 src="https://buffer-analyze.s3.amazonaws.com/report-logos/img_5afc8d8f209ec.jpg"
               />
               <h1
-                className="sc-EHOje lfSVpT"
+                className="sc-EHOje jrTCNW"
               >
                 Weekly Sync Report
               </h1>
@@ -12321,7 +12321,7 @@ exports[`Snapshots Report render with summary table and logo whilst exporting 1`
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
-                    "fontWeight": 700,
+                    "fontWeight": 500,
                   }
                 }
               >
@@ -12367,8 +12367,8 @@ exports[`Snapshots Report render with summary table and logo whilst exporting 1`
                 Object {
                   "color": "#000",
                   "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1.5rem",
-                  "fontWeight": 700,
+                  "fontSize": "1.25rem",
+                  "fontWeight": 600,
                 }
               }
             >
@@ -13213,8 +13213,8 @@ exports[`Snapshots Report render with summary table and logo whilst exporting 1`
                 Object {
                   "color": "#000",
                   "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1.5rem",
-                  "fontWeight": 700,
+                  "fontSize": "1.25rem",
+                  "fontWeight": 600,
                 }
               }
             >
@@ -14059,8 +14059,8 @@ exports[`Snapshots Report render with summary table and logo whilst exporting 1`
                 Object {
                   "color": "#000",
                   "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1.5rem",
-                  "fontWeight": 700,
+                  "fontSize": "1.25rem",
+                  "fontWeight": 600,
                 }
               }
             >
@@ -15012,7 +15012,7 @@ exports[`Snapshots Report render with summary table and no logo 1`] = `
               }
             >
               <h1
-                className="sc-RcBXQ cdxqGl"
+                className="sc-RcBXQ ljXeou"
               >
                 Weekly Sync Report
               </h1>
@@ -15024,7 +15024,7 @@ exports[`Snapshots Report render with summary table and no logo 1`] = `
                 "color": "#000",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -15116,8 +15116,8 @@ exports[`Snapshots Report render with summary table and no logo 1`] = `
                   Object {
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "1.5rem",
-                    "fontWeight": 700,
+                    "fontSize": "1.25rem",
+                    "fontWeight": 600,
                   }
                 }
               >
@@ -16137,8 +16137,8 @@ exports[`Snapshots Report render with summary table and no logo 1`] = `
                   Object {
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "1.5rem",
-                    "fontWeight": 700,
+                    "fontSize": "1.25rem",
+                    "fontWeight": 600,
                   }
                 }
               >
@@ -17158,8 +17158,8 @@ exports[`Snapshots Report render with summary table and no logo 1`] = `
                   Object {
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "1.5rem",
-                    "fontWeight": 700,
+                    "fontSize": "1.25rem",
+                    "fontWeight": 600,
                   }
                 }
               >
@@ -18194,7 +18194,7 @@ exports[`Snapshots Report render with summary table and no logo whilst exporting
               }
             >
               <h1
-                className="sc-EHOje lfSVpT"
+                className="sc-EHOje jrTCNW"
               >
                 Weekly Sync Report
               </h1>
@@ -18204,7 +18204,7 @@ exports[`Snapshots Report render with summary table and no logo whilst exporting
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
                     "fontSize": "1rem",
-                    "fontWeight": 700,
+                    "fontWeight": 500,
                   }
                 }
               >
@@ -18250,8 +18250,8 @@ exports[`Snapshots Report render with summary table and no logo whilst exporting
                 Object {
                   "color": "#000",
                   "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1.5rem",
-                  "fontWeight": 700,
+                  "fontSize": "1.25rem",
+                  "fontWeight": 600,
                 }
               }
             >
@@ -19096,8 +19096,8 @@ exports[`Snapshots Report render with summary table and no logo whilst exporting
                 Object {
                   "color": "#000",
                   "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1.5rem",
-                  "fontWeight": 700,
+                  "fontSize": "1.25rem",
+                  "fontWeight": 600,
                 }
               }
             >
@@ -19942,8 +19942,8 @@ exports[`Snapshots Report render with summary table and no logo whilst exporting
                 Object {
                   "color": "#000",
                   "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1.5rem",
-                  "fontWeight": 700,
+                  "fontSize": "1.25rem",
+                  "fontWeight": 600,
                 }
               }
             >
@@ -20895,7 +20895,7 @@ exports[`Snapshots Report render with summary table, no logo and no description 
               }
             >
               <h1
-                className="sc-RcBXQ cdxqGl"
+                className="sc-RcBXQ ljXeou"
               >
                 Weekly Sync Report New
               </h1>
@@ -20907,7 +20907,7 @@ exports[`Snapshots Report render with summary table, no logo and no description 
                 "color": "#000",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1rem",
-                "fontWeight": 700,
+                "fontWeight": 500,
               }
             }
           >
@@ -21000,8 +21000,8 @@ exports[`Snapshots Report render with summary table, no logo and no description 
                   Object {
                     "color": "#000",
                     "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "1.5rem",
-                    "fontWeight": 700,
+                    "fontSize": "1.25rem",
+                    "fontWeight": 600,
                   }
                 }
               >
