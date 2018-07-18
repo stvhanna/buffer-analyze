@@ -16,8 +16,8 @@ import {
 } from '@bufferapp/components/Icon/Icons';
 
 import {
-  black,
   offWhite,
+  outerSpace,
   white,
 } from '@bufferapp/components/style/color';
 
@@ -41,9 +41,9 @@ const Header = styled.div`
 
 const Title = styled.h1`
   display: inline-block;
-  color: ${black};
+  color: ${outerSpace};
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   margin: 0 0 .5rem 0;
 `;
 

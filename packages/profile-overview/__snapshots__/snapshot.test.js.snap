@@ -499,7 +499,7 @@ exports[`Snapshots ProfilesTable should render a loading state 1`] = `
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -630,7 +630,7 @@ exports[`Snapshots ProfilesTable should render the profiles overview 1`] = `
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -2288,7 +2288,7 @@ exports[`Snapshots ProfilesTable should render the profiles overview without met
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -3037,7 +3037,7 @@ exports[`Snapshots Title should render title 1`] = `
           "color": "#323b43",
           "fontFamily": "\\"Roboto\\", sans-serif",
           "fontSize": "1.25rem",
-          "fontWeight": 700,
+          "fontWeight": 600,
         }
       }
     >

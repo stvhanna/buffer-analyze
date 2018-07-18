@@ -1953,7 +1953,7 @@ exports[`Snapshots PostsTable should hide posts link on export 1`] = `
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -3774,7 +3774,7 @@ exports[`Snapshots PostsTable should render a "no data" state 1`] = `
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -3842,7 +3842,7 @@ exports[`Snapshots PostsTable should render a loading state 1`] = `
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -3973,7 +3973,7 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -6366,7 +6366,7 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -8253,7 +8253,7 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -10140,7 +10140,7 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -12520,7 +12520,7 @@ exports[`Snapshots Title should render title as if for app 1`] = `
           "color": "#323b43",
           "fontFamily": "\\"Roboto\\", sans-serif",
           "fontSize": "1.25rem",
-          "fontWeight": 700,
+          "fontWeight": 600,
         }
       }
     >
@@ -12538,10 +12538,10 @@ exports[`Snapshots Title should render title as if for report 1`] = `
     <span
       style={
         Object {
-          "color": "#000",
+          "color": "#323b43",
           "fontFamily": "\\"Roboto\\", sans-serif",
-          "fontSize": "1.5rem",
-          "fontWeight": 700,
+          "fontSize": "1.25rem",
+          "fontWeight": 600,
         }
       }
     >
@@ -12562,7 +12562,7 @@ exports[`Snapshots Title should render title for Twitter is if for app 1`] = `
           "color": "#323b43",
           "fontFamily": "\\"Roboto\\", sans-serif",
           "fontSize": "1.25rem",
-          "fontWeight": 700,
+          "fontWeight": 600,
         }
       }
     >
@@ -12580,10 +12580,10 @@ exports[`Snapshots Title should render title for Twitter is if for report 1`] = 
     <span
       style={
         Object {
-          "color": "#000",
+          "color": "#323b43",
           "fontFamily": "\\"Roboto\\", sans-serif",
-          "fontSize": "1.5rem",
-          "fontWeight": 700,
+          "fontSize": "1.25rem",
+          "fontWeight": 600,
         }
       }
     >
