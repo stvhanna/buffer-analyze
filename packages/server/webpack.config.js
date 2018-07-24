@@ -1,12 +1,15 @@
 module.exports = {
   context: __dirname,
-  entry: [
-    'babel-polyfill',
-    '../web/index.jsx',
-  ],
+  entry: {
+    bundle: [
+      'babel-polyfill',
+      '../web/index.jsx',
+    ],
+    rpcWorker: '../web/rpcWorker.js',
+  },
   output: {
     path: __dirname,
-    filename: 'bundle.js',
+    filename: '[name].js',
     publicPath: '//analyze.local.buffer.com:8080/static/',
   },
   plugins: [],

@@ -6,7 +6,7 @@ const config = require('./webpack.config');
 // https://docs.bugsnag.com/platforms/browsers/faq/#4-code-generated-with-eval-e-g-from-webpack
 config.devtool = 'cheap-module-eval-source-map';
 
-config.entry.unshift(
+config.entry.bundle.unshift(
   'react-hot-loader/patch',
 );
 
