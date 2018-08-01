@@ -27,7 +27,7 @@ const ChartContainer = styled.div`
 const METRIC_LABELS = {
   followers: 'Followers',
   reach: 'Impressions',
-  engagement: 'Engagement',
+  engagement_rate: 'Engagement rate',
 };
 
 const ProfilesTableWrapper = styled.table`
