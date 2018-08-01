@@ -93,8 +93,8 @@ const ContentGradient = styled.div`
 `;
 
 const MediaThumbnail = styled.img`
-  width: 7rem;
-  min-width: 7rem;
+  max-width: 7rem;
+  max-height: 145px;
   border-radius: 3px;
   margin: -32px 0 0 1rem;
   box-shadow: 0 0 1px rgba(0,0,0,0.1);
@@ -112,6 +112,7 @@ const PostContent = styled.div`
   justify-content: space-between;
   padding-top: 0px;
   height: 107px;
+  width: calc(620px - 2rem);
 `;
 
 const ViewPostLinkClass = styled.a`
