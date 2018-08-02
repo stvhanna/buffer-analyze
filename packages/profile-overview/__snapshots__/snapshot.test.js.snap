@@ -723,7 +723,7 @@ exports[`Snapshots ProfilesTable should render the profiles overview 1`] = `
                         }
                       }
                     >
-                      Engagement
+                      Engagement rate
                     </span>
                   </th>
                 </tr>
@@ -1048,7 +1048,8 @@ exports[`Snapshots ProfilesTable should render the profiles overview 1`] = `
                             }
                           >
                             <span>
-                              416
+                              4
+                              %
                             </span>
                           </span>
                           <div
@@ -1426,7 +1427,8 @@ exports[`Snapshots ProfilesTable should render the profiles overview 1`] = `
                             }
                           >
                             <span>
-                              416
+                              4
+                              %
                             </span>
                           </span>
                           <div
@@ -1804,7 +1806,8 @@ exports[`Snapshots ProfilesTable should render the profiles overview 1`] = `
                             }
                           >
                             <span>
-                              416
+                              4
+                              %
                             </span>
                           </span>
                           <div
@@ -2197,7 +2200,8 @@ exports[`Snapshots ProfilesTable should render the profiles overview 1`] = `
                             }
                           >
                             <span>
-                              416
+                              4
+                              %
                             </span>
                           </span>
                           <div
@@ -2381,7 +2385,7 @@ exports[`Snapshots ProfilesTable should render the profiles overview without met
                         }
                       }
                     >
-                      Engagement
+                      Engagement rate
                     </span>
                   </th>
                 </tr>
