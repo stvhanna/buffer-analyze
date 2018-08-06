@@ -20,6 +20,7 @@ describe('middleware', () => {
       },
       profiles: {
         selectedProfileId: '12359182129asd',
+        organizationId: 'organization1234',
       },
       date: {
         presets: [{
@@ -57,6 +58,7 @@ describe('middleware', () => {
       args: {
         userId: 'user1234',
         profileId: '12359182129asd',
+        organizationId: 'organization1234',
         chartId: 'summary-table',
         name: 'Weekly Sync Report',
         dateRange: {
@@ -99,6 +101,7 @@ describe('middleware', () => {
     expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
       name: 'create_report',
       args: {
+        organizationId: 'organization1234',
         userId: 'user1234',
         profileId: null,
         chartId: 'comparison',
