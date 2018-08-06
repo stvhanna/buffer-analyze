@@ -22,6 +22,7 @@ export default (state = initialState, action) => {
     case `profiles_${fetchActions.FETCH_SUCCESS}`:
       return Object.assign({}, state, {
         profiles: action.result,
+        organizationId: action.result[0].organizationId,
         loading: false,
         // selectedProfile: state.selectedProfile || action.result[0],
       });

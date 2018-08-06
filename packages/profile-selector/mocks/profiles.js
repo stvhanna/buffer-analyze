@@ -6,12 +6,14 @@ const twitterProfiles = [
     username: 'Buffer',
     id: '1',
     service: 'twitter',
+    organizationId: 'organization1234',
   },
   {
     avatarUrl,
     username: 'Joel Gascoigne',
     id: '2',
     service: 'twitter',
+    organizationId: 'organization1234',
   },
 ];
 
@@ -21,6 +23,7 @@ const facebookProfiles = [
     username: 'Buffer',
     id: '3',
     service: 'facebook',
+    organizationId: 'organization1234',
   },
 ];
 
@@ -30,6 +33,7 @@ const instagramProfiles = [
     username: 'Buffer',
     id: '4',
     service: 'instagram',
+    organizationId: 'organization1234',
   },
 ];
 
