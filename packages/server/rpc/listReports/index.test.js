@@ -6,7 +6,7 @@ import rp from 'request-promise';
 import listReports from './';
 
 describe('rpc/list_reports', () => {
-  const userId = 'user123';
+  const organizationId = 'organization123';
 
   it('should have the expected name', () => {
     expect(listReports.name)
@@ -15,14 +15,14 @@ describe('rpc/list_reports', () => {
 
   it('should have the expected docs', () => {
     expect(listReports.docs)
-      .toBe('get reports list for user');
+      .toBe('get reports list for organization');
   });
 
   it('should send a POST request to /list_reports with the provided parameters', async () => {
     const reports = ['a report', 'another_report'];
     rp.mockReturnValueOnce(Promise.resolve(reports));
 
-    const result = await listReports.fn({ userId });
+    const result = await listReports.fn({ organizationId });
 
     expect(result).toEqual(reports);
     expect(rp.mock.calls[0]).toEqual([{
@@ -30,7 +30,7 @@ describe('rpc/list_reports', () => {
       method: 'POST',
       strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
       body: {
-        user_id: userId,
+        organization_id: organizationId,
       },
       json: true,
     }]);
