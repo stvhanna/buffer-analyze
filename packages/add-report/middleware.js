@@ -21,6 +21,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
         name: 'create_report',
         args: {
           userId: store.getState().appSidebar.user.id,
+          organizationId: store.getState().profiles.organizationId,
           profileId: action.chart_id === 'comparison' ?
             null :
             store.getState().profiles.selectedProfileId,
