@@ -101,6 +101,7 @@ describe('middleware', () => {
     expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
       name: 'create_report',
       args: {
+        organizationId: 'organization1234',
         userId: 'user1234',
         profileId: null,
         chartId: 'comparison',
