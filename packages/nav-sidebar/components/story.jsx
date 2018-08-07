@@ -51,6 +51,45 @@ storiesOf('NavSidebar')
         onClick={action('click item')}
       />
     </div>
+  ))
+  .add('displays trial status if user is on trial', () => (
+    <div style={{ width: '260px', height: '100%', display: 'flex' }}>
+      <NavSidebar
+        route="/insights/twitter"
+        profileService="twitter"
+        facebookProfile={facebookProfile}
+        twitterProfile={twitterProfile}
+        onClick={action('click item')}
+        onTrial
+        daysRemaining={7}
+      />
+    </div>
+  ))
+  .add('trial status for 1 day remaining', () => (
+    <div style={{ width: '260px', height: '100%', display: 'flex' }}>
+      <NavSidebar
+        route="/insights/twitter"
+        profileService="twitter"
+        facebookProfile={facebookProfile}
+        twitterProfile={twitterProfile}
+        onClick={action('click item')}
+        onTrial
+        daysRemaining={1}
+      />
+    </div>
+  ))
+  .add('trial ends today', () => (
+    <div style={{ width: '260px', height: '100%', display: 'flex' }}>
+      <NavSidebar
+        route="/insights/twitter"
+        profileService="twitter"
+        facebookProfile={facebookProfile}
+        twitterProfile={twitterProfile}
+        onClick={action('click item')}
+        onTrial
+        daysRemaining={0}
+      />
+    </div>
   ));
 
 storiesOf('Item')

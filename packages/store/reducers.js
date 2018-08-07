@@ -25,6 +25,7 @@ import { reducer as comparisonReducer } from '@bufferapp/comparison-chart';
 import { reducer as hourlyReducer } from '@bufferapp/hourly-chart';
 import { reducer as environmentReducer } from '@bufferapp/environment';
 import { reducer as profilesOverviewReducer } from '@bufferapp/analyze-profiles-overview';
+import { reducer as accountReducer } from '@bufferapp/analyze-account';
 
 export default combineReducers({
   router: routerReducer,
@@ -53,4 +54,5 @@ export default combineReducers({
   comparison: comparisonReducer,
   hourly: hourlyReducer,
   environment: environmentReducer,
+  account: accountReducer,
 });
