@@ -8,8 +8,9 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
     case actionTypes.EXPORT_TO_CSV_START:
       return generateCSVsFromCharts(exportToCSV.charts, date)
         .then((csvs) => {
-          downloadAsZip(action.filename, csvs);
-          store.dispatch(actions.endExportToCSV());
+          downloadAsZip(action.filename, csvs).then(() => {
+            store.dispatch(actions.endExportToCSV());
+          });
           next(action);
         });
     default:
