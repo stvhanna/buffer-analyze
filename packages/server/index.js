@@ -131,7 +131,7 @@ app.use(validateSession({
 
 app.get('/report_to_pdf', (req, res) => {
   const params = {
-    FunctionName: 'reportToPDFDev',
+    FunctionName: 'reportToPDF',
     Payload: JSON.stringify({
       url: req.query.url,
       orientation: 'portrait',
