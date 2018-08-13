@@ -145,7 +145,7 @@ const ContentBox = styled.div`
 
 const Attachment = ({ type, media }) => {
   if (['picture', 'photo', 'video', 'image'].includes(type) && media) {
-    return <MediaThumbnail alt="" crossOrigin="Anonymous" src={`https://safeimage.buffer.com/${media.thumbnail}`} />;
+    return <MediaThumbnail alt="" crossOrigin="Anonymous" src={`https://safeimage.buffer.com/224x/${media.thumbnail}`} />;
   }
   return null;
 };
