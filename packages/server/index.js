@@ -15,6 +15,7 @@ const {
 } = require('@bufferapp/session-manager/middleware');
 const connectDatadog = require('@bufferapp/connect-datadog');
 const { apiError } = require('./middleware');
+const request = require('request');
 const controller = require('./lib/controller');
 const rpc = require('./rpc');
 
@@ -152,14 +153,9 @@ app.get('/report_to_pdf', (req, res) => {
       res.send(err);
     } else {
       const payload = JSON.parse(data.Payload);
-      if (payload.errorMessage) {
-        res.send(payload.errorMessage);
-      } else {
-        const pdf = Buffer.from(payload.contents, 'base64');
-        res.type('application/pdf');
-        res.header('Content-disposition', `inline; filename=${req.query.name}.pdf; filename*=utf-8''${encodedFilename}`);
-        res.end(pdf, 'binary');
-      }
+      res.type('application/pdf');
+      res.header('Content-disposition', `inline; filename=${req.query.name}.pdf; filename*=utf-8''${encodedFilename}`);
+      request(payload.url).pipe(res);
     }
   });
 });
