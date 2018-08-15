@@ -10,9 +10,9 @@ const { join } = require('path');
 const shutdownHelper = require('@bufferapp/shutdown-helper');
 const cookieParser = require('cookie-parser');
 const {
-  setRequestSession,
-  validateSession,
-} = require('@bufferapp/session-manager/middleware');
+  setRequestSessionMiddleware,
+  validateSessionMiddleware,
+} = require('@bufferapp/session-manager');
 const connectDatadog = require('@bufferapp/connect-datadog');
 const { apiError } = require('./middleware');
 const request = require('request');
@@ -96,7 +96,7 @@ app.get('/favicon.ico', (req, res) => res.send(favicon));
 
 // All routes after this have access to the user session
 // app.use(session.middleware);
-app.use(setRequestSession({
+app.use(setRequestSessionMiddleware({
   production: isProduction,
   sessionKeys: ['global', 'analyze'],
 }));
@@ -124,7 +124,7 @@ app.use(buffermetricsMiddleware({
 }));
 
 
-app.use(validateSession({
+app.use(validateSessionMiddleware({
   production: isProduction,
   requiredSessionKeys: ['analyze.accessToken'],
 }));
