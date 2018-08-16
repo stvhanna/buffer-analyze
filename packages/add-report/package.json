@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/add-report",
-  "version": "0.65.0",
+  "version": "0.67.0",
   "description": "Add Report button for Analyze chart components",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
   "dependencies": {
     "@bufferapp/analyze-shared-components": "^0.64.0",
     "@bufferapp/components": "2.1.1-alpha.6",
-    "@bufferapp/report-list": "^0.64.0",
+    "@bufferapp/report-list": "^0.67.0",
     "styled-components": "^2.2.1"
   },
   "devDependencies": {
