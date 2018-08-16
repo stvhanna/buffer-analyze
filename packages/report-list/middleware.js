@@ -4,11 +4,11 @@ import { actionTypes as reportListActionTypes } from './reducer';
 
 export default store => next => (action) => { // eslint-disable-line no-unused-vars
   switch (action.type) {
-    case `user_${actionTypes.FETCH_SUCCESS}`:
+    case `profiles_${actionTypes.FETCH_SUCCESS}`:
       store.dispatch(actions.fetch({
         name: 'list_reports',
         args: {
-          userId: action.result.id,
+          organizationId: action.result[0].organizationId,
         },
       }));
       break;
@@ -17,7 +17,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
         store.dispatch(actions.fetch({
           name: 'list_reports',
           args: {
-            userId: store.getState().appSidebar.user.id,
+            organizationId: store.getState().profiles.organizationId,
           },
         }));
       }

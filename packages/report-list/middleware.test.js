@@ -6,10 +6,8 @@ import middleware from './middleware';
 describe('middleware', () => {
   const next = jest.fn();
   const state = {
-    appSidebar: {
-      user: {
-        id: 'user1234',
-      },
+    profiles: {
+      organizationId: 'organization1234',
     },
   };
   const store = {
@@ -27,18 +25,18 @@ describe('middleware', () => {
     middleware(store)(next)(action);
   });
 
-  it('should fetch the reports list on user load', () => {
+  it('should fetch the reports list on profiles load', () => {
     const action = {
-      type: `user_${actionTypes.FETCH_SUCCESS}`,
-      result: {
-        id: 'user1234',
-      },
+      type: `profiles_${actionTypes.FETCH_SUCCESS}`,
+      result: [{
+        organizationId: 'organization1234',
+      }],
     };
     middleware(store)(next)(action);
     expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
       name: 'list_reports',
       args: {
-        userId: 'user1234',
+        organizationId: 'organization1234',
       },
     }));
     expect(next).toHaveBeenCalledWith(action);
@@ -55,7 +53,7 @@ describe('middleware', () => {
     expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
       name: 'list_reports',
       args: {
-        userId: 'user1234',
+        organizationId: 'organization1234',
       },
     }));
     expect(next).toHaveBeenCalledWith(action);
