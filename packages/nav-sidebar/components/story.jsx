@@ -90,6 +90,21 @@ storiesOf('NavSidebar')
         daysRemaining={0}
       />
     </div>
+  ))
+  .add('Trial status should have a link to org admin if viewed by the account owner', () => (
+    <div style={{ width: '260px', height: '100%', display: 'flex' }}>
+      <NavSidebar
+        route="/insights/twitter"
+        profileService="twitter"
+        facebookProfile={facebookProfile}
+        twitterProfile={twitterProfile}
+        onClick={action('click item')}
+        onTrial
+        isOwner
+        organizationId="organization123"
+        daysRemaining={0}
+      />
+    </div>
   ));
 
 storiesOf('Item')

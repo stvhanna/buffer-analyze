@@ -23,6 +23,10 @@ describe('NavSidebar', () => {
       account: {
         trialDaysRemaining: 6,
       },
+      profiles: {
+        organizationId: 'organization123',
+        isOwner: false,
+      },
       navSidebar: {
         instagramProfile: {
           id: '2',
@@ -53,6 +57,10 @@ describe('NavSidebar', () => {
 
     beforeEach(() => {
       store = storeFake({
+        profiles: {
+          organizationId: 'organization123',
+          isOwner: false,
+        },
         account: {
           trialDaysRemaining: 6,
         },
@@ -109,6 +117,10 @@ describe('NavSidebar', () => {
     const store = storeFake({
       account: {
         trialDaysRemaining: 6,
+      },
+      profiles: {
+        organizationId: 'organization123',
+        isOwner: false,
       },
       navSidebar: {
         profiles: [],

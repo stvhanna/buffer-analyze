@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { curiousBlue } from '@bufferapp/components/style/color';
-import { ClockIcon, Text } from '@bufferapp/components';
+import { Link, ClockIcon, Text } from '@bufferapp/components';
 
 const Wrapper = styled.span`
   display: flex;
@@ -30,14 +30,38 @@ const formatRemainingDays = (days) => {
   return `in ${days} ${days > 1 ? 'days' : 'day'}`;
 };
 
-const TrialStatus = ({ onTrial, daysRemaining }) => {
+const AccountManagementLink = ({ isOwner, organizationId, children }) => {
+  if (isOwner) {
+    return <Link unstyled href={`https://buffer.com/manage/${organizationId}/analyze`}>{ children }</Link>;
+  }
+  return (<span>
+    { children }
+  </span>);
+};
+
+AccountManagementLink.propTypes = {
+  isOwner: PropTypes.bool,
+  organizationId: PropTypes.string,
+  children: PropTypes.node.isRequired,
+};
+
+AccountManagementLink.defaultProps = {
+  isOwner: false,
+  organizationId: null,
+};
+
+const TrialStatus = ({ onTrial, daysRemaining, organizationId, isOwner }) => {
   if (!onTrial) {
     return null;
   }
   return (
     <Wrapper>
       <IconWrapper><ClockIcon size={{ width: '13px', height: '13px' }} color={curiousBlue} /></IconWrapper>
-      <TextWrapper><Text size="small" color="curiousBlue">Trial ends {formatRemainingDays(daysRemaining)}</Text></TextWrapper>
+      <TextWrapper>
+        <AccountManagementLink isOwner={isOwner} organizationId={organizationId}>
+          <Text size="small" color="curiousBlue">Trial ends {formatRemainingDays(daysRemaining)}</Text>
+        </AccountManagementLink>
+      </TextWrapper>
     </Wrapper>
   );
 };
@@ -45,11 +69,15 @@ const TrialStatus = ({ onTrial, daysRemaining }) => {
 TrialStatus.propTypes = {
   daysRemaining: PropTypes.number,
   onTrial: PropTypes.bool,
+  isOwner: PropTypes.bool,
+  organizationId: PropTypes.string,
 };
 
 TrialStatus.defaultProps = {
   daysRemaining: 0,
   onTrial: false,
+  isOwner: false,
+  organizationId: null,
 };
 
 export default TrialStatus;
