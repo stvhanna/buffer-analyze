@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/analyze-account",
-  "version": "0.0.1",
+  "version": "0.69.0",
   "description": "Account information for Analyze",
   "main": "index.js",
   "scripts": {
@@ -18,8 +18,6 @@
     }
   },
   "author": "mike@msanroman.io",
-  "dependencies": {
-  },
   "devDependencies": {
     "eslint": "3.19.0",
     "jest": "19.0.2"
