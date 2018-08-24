@@ -20,6 +20,7 @@
   "author": "hharnisc@gmail.com",
   "dependencies": {
     "@bufferapp/add-report": "^0.67.0",
+    "@bufferapp/analyze-account": "^0.0.1",
     "@bufferapp/analyze-csv-export": "^0.65.1",
     "@bufferapp/analyze-date-picker": "^0.65.0",
     "@bufferapp/analyze-early-access": "^0.68.0",

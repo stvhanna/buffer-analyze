@@ -13,8 +13,10 @@ const initialState = {
   profiles: [],
   isDropdownOpen: false,
   profilesFilterString: '',
+  organizationId: null,
   selectedProfile: null,
   loading: true,
+  isOwner: false,
 };
 
 export default (state = initialState, action) => {

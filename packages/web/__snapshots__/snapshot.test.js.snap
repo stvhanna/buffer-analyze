@@ -675,7 +675,7 @@ exports[`Snapshots App should render application 1`] = `
       }
     >
       <div
-        className="sc-iybRtq cgQDKR"
+        className="sc-kXeGPI bVfQcK"
       >
         <div
           style={
@@ -1012,19 +1012,48 @@ exports[`Snapshots App should render application 1`] = `
               target="_self"
             >
               <span
-                className="sc-hjRWVT bAshbN"
+                className="sc-hjRWVT hNhKmY"
               >
-                <span
+                <svg
+                  height="100%"
                   style={
                     Object {
-                      "color": "#59626a",
-                      "fontFamily": "\\"Roboto\\", sans-serif",
-                      "fontSize": "1rem",
-                      "fontWeight": 400,
+                      "fill": "#59626a",
+                      "height": "1rem",
+                      "width": "1rem",
                     }
                   }
+                  version="1.1"
+                  viewBox="0 0 16 16"
+                  width="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
                 >
-                  Send Feedback
+                  <g
+                    className="shuttleGray"
+                  >
+                    <path
+                      d="M6.5 1.5C9.48675 1.5 11.5 2.9965 11.5 5.34842C11.5 7.60283 9.81075 8.45779 7.5 9L6.5 11L5.5 9C3.16867 8.45238 1.64257 7.57142 1.64257 5.34842C1.64257 2.9965 3.51325 1.5 6.5 1.5ZM6.5 0C2.91038 0 0 2.39417 0 5.34842C0 7.79242 1.99225 9.85346 4.71304 10.4921L6.5 13L8.28696 10.4921C11.0078 9.85292 13 7.79187 13 5.34842C13 2.39417 10.0896 0 6.5 0Z"
+                      fill="#596269"
+                      transform="translate(0.5)"
+                    />
+                  </g>
+                </svg>
+                <span
+                  className="sc-iybRtq ePzWvU"
+                >
+                  <span
+                    style={
+                      Object {
+                        "color": "#59626a",
+                        "fontFamily": "\\"Roboto\\", sans-serif",
+                        "fontSize": "0.75rem",
+                        "fontWeight": 400,
+                      }
+                    }
+                  >
+                    Send Feedback
+                  </span>
                 </span>
               </span>
             </a>
@@ -1465,19 +1494,48 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
           target="_self"
         >
           <span
-            className="sc-hjRWVT bAshbN"
+            className="sc-hjRWVT hNhKmY"
           >
-            <span
+            <svg
+              height="100%"
               style={
                 Object {
-                  "color": "#59626a",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1rem",
-                  "fontWeight": 400,
+                  "fill": "#59626a",
+                  "height": "1rem",
+                  "width": "1rem",
                 }
               }
+              version="1.1"
+              viewBox="0 0 16 16"
+              width="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
             >
-              Send Feedback
+              <g
+                className="shuttleGray"
+              >
+                <path
+                  d="M6.5 1.5C9.48675 1.5 11.5 2.9965 11.5 5.34842C11.5 7.60283 9.81075 8.45779 7.5 9L6.5 11L5.5 9C3.16867 8.45238 1.64257 7.57142 1.64257 5.34842C1.64257 2.9965 3.51325 1.5 6.5 1.5ZM6.5 0C2.91038 0 0 2.39417 0 5.34842C0 7.79242 1.99225 9.85346 4.71304 10.4921L6.5 13L8.28696 10.4921C11.0078 9.85292 13 7.79187 13 5.34842C13 2.39417 10.0896 0 6.5 0Z"
+                  fill="#596269"
+                  transform="translate(0.5)"
+                />
+              </g>
+            </svg>
+            <span
+              className="sc-iybRtq ePzWvU"
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                Send Feedback
+              </span>
             </span>
           </span>
         </a>
@@ -1575,7 +1633,7 @@ exports[`Snapshots ComparisonsPage should render comparisons page 1`] = `
 exports[`Snapshots DefaultPage should render the dashboard page 1`] = `
 <span>
   <div
-    className="sc-iybRtq cgQDKR"
+    className="sc-kXeGPI bVfQcK"
   >
     <div
       style={
@@ -1912,19 +1970,48 @@ exports[`Snapshots DefaultPage should render the dashboard page 1`] = `
           target="_self"
         >
           <span
-            className="sc-hjRWVT bAshbN"
+            className="sc-hjRWVT hNhKmY"
           >
-            <span
+            <svg
+              height="100%"
               style={
                 Object {
-                  "color": "#59626a",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1rem",
-                  "fontWeight": 400,
+                  "fill": "#59626a",
+                  "height": "1rem",
+                  "width": "1rem",
                 }
               }
+              version="1.1"
+              viewBox="0 0 16 16"
+              width="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
             >
-              Send Feedback
+              <g
+                className="shuttleGray"
+              >
+                <path
+                  d="M6.5 1.5C9.48675 1.5 11.5 2.9965 11.5 5.34842C11.5 7.60283 9.81075 8.45779 7.5 9L6.5 11L5.5 9C3.16867 8.45238 1.64257 7.57142 1.64257 5.34842C1.64257 2.9965 3.51325 1.5 6.5 1.5ZM6.5 0C2.91038 0 0 2.39417 0 5.34842C0 7.79242 1.99225 9.85346 4.71304 10.4921L6.5 13L8.28696 10.4921C11.0078 9.85292 13 7.79187 13 5.34842C13 2.39417 10.0896 0 6.5 0Z"
+                  fill="#596269"
+                  transform="translate(0.5)"
+                />
+              </g>
+            </svg>
+            <span
+              className="sc-iybRtq ePzWvU"
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                Send Feedback
+              </span>
             </span>
           </span>
         </a>
@@ -2363,19 +2450,48 @@ exports[`Snapshots InsightsPage should render Insights page 1`] = `
           target="_self"
         >
           <span
-            className="sc-hjRWVT bAshbN"
+            className="sc-hjRWVT hNhKmY"
           >
-            <span
+            <svg
+              height="100%"
               style={
                 Object {
-                  "color": "#59626a",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1rem",
-                  "fontWeight": 400,
+                  "fill": "#59626a",
+                  "height": "1rem",
+                  "width": "1rem",
                 }
               }
+              version="1.1"
+              viewBox="0 0 16 16"
+              width="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
             >
-              Send Feedback
+              <g
+                className="shuttleGray"
+              >
+                <path
+                  d="M6.5 1.5C9.48675 1.5 11.5 2.9965 11.5 5.34842C11.5 7.60283 9.81075 8.45779 7.5 9L6.5 11L5.5 9C3.16867 8.45238 1.64257 7.57142 1.64257 5.34842C1.64257 2.9965 3.51325 1.5 6.5 1.5ZM6.5 0C2.91038 0 0 2.39417 0 5.34842C0 7.79242 1.99225 9.85346 4.71304 10.4921L6.5 13L8.28696 10.4921C11.0078 9.85292 13 7.79187 13 5.34842C13 2.39417 10.0896 0 6.5 0Z"
+                  fill="#596269"
+                  transform="translate(0.5)"
+                />
+              </g>
+            </svg>
+            <span
+              className="sc-iybRtq ePzWvU"
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                Send Feedback
+              </span>
             </span>
           </span>
         </a>
@@ -2473,7 +2589,7 @@ exports[`Snapshots InsightsPage should render Insights page 1`] = `
 exports[`Snapshots ReportsPage should render reports page 1`] = `
 <span>
   <div
-    className="sc-ugnQR dXiuzX"
+    className="sc-iomxrj ccVSH"
   >
     <div
       style={
@@ -2810,29 +2926,58 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
           target="_self"
         >
           <span
-            className="sc-hjRWVT bAshbN"
+            className="sc-hjRWVT hNhKmY"
           >
-            <span
+            <svg
+              height="100%"
               style={
                 Object {
-                  "color": "#59626a",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1rem",
-                  "fontWeight": 400,
+                  "fill": "#59626a",
+                  "height": "1rem",
+                  "width": "1rem",
                 }
               }
+              version="1.1"
+              viewBox="0 0 16 16"
+              width="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
             >
-              Send Feedback
+              <g
+                className="shuttleGray"
+              >
+                <path
+                  d="M6.5 1.5C9.48675 1.5 11.5 2.9965 11.5 5.34842C11.5 7.60283 9.81075 8.45779 7.5 9L6.5 11L5.5 9C3.16867 8.45238 1.64257 7.57142 1.64257 5.34842C1.64257 2.9965 3.51325 1.5 6.5 1.5ZM6.5 0C2.91038 0 0 2.39417 0 5.34842C0 7.79242 1.99225 9.85346 4.71304 10.4921L6.5 13L8.28696 10.4921C11.0078 9.85292 13 7.79187 13 5.34842C13 2.39417 10.0896 0 6.5 0Z"
+                  fill="#596269"
+                  transform="translate(0.5)"
+                />
+              </g>
+            </svg>
+            <span
+              className="sc-iybRtq ePzWvU"
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                Send Feedback
+              </span>
             </span>
           </span>
         </a>
       </div>
     </div>
     <div
-      className="sc-eIHaNI fXpSSI"
+      className="sc-dvCyap kJVUDl"
     >
       <header
-        className="sc-dxZgTM cgjjg"
+        className="sc-keVrkP cmyZvZ"
       >
         <button
           className="sc-kgoBCf cmMzae"
@@ -2852,7 +2997,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
           </span>
         </button>
         <section
-          className="sc-dvCyap dbxjpg"
+          className="sc-cBdUnI JozdO"
         >
           <div
             className="sc-kjoXOD bKsEHy"
@@ -3215,10 +3360,10 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
         </section>
       </header>
       <div
-        className="sc-eTpRJs fFYnHR"
+        className="sc-iFMziU jxpJdI"
       >
         <section
-          className="sc-iomxrj eJYqbR"
+          className="sc-gVLVqr cfukti"
         >
           <div
             className="sc-likbZx lhrdkz"

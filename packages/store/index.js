@@ -33,6 +33,7 @@ import { middleware as unauthorizedRedirectMiddleware } from '@bufferapp/unautho
 import { middleware as exportToPDFMiddleware } from '@bufferapp/pdf-export';
 import { middleware as earlyAccessMiddleware } from '@bufferapp/analyze-early-access';
 import { middleware as profilesOverviewMiddleware } from '@bufferapp/analyze-profiles-overview';
+import { middleware as accountMiddleware } from '@bufferapp/analyze-account';
 import { createMiddleware } from '@bufferapp/buffermetrics/redux';
 import initMiddleware from './initMiddleware';
 
@@ -90,6 +91,7 @@ const configureStore = (initialstate) => {
         hourlyMiddleware,
         environmentMiddleware,
         unauthorizedRedirectMiddleware,
+        accountMiddleware,
         exportToPDFMiddleware,
         buffermetricsMiddleware,
       ),

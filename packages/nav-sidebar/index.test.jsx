@@ -20,6 +20,13 @@ const storeFake = state => ({
 describe('NavSidebar', () => {
   it('should render with links to Insights', () => {
     const store = storeFake({
+      account: {
+        trialDaysRemaining: 6,
+      },
+      profiles: {
+        organizationId: 'organization123',
+        isOwner: false,
+      },
       navSidebar: {
         instagramProfile: {
           id: '2',
@@ -50,6 +57,13 @@ describe('NavSidebar', () => {
 
     beforeEach(() => {
       store = storeFake({
+        profiles: {
+          organizationId: 'organization123',
+          isOwner: false,
+        },
+        account: {
+          trialDaysRemaining: 6,
+        },
         navSidebar: {
           instagramProfile: {
             id: '2',
@@ -101,6 +115,13 @@ describe('NavSidebar', () => {
 
   it('it should export onClick', () => {
     const store = storeFake({
+      account: {
+        trialDaysRemaining: 6,
+      },
+      profiles: {
+        organizationId: 'organization123',
+        isOwner: false,
+      },
       navSidebar: {
         profiles: [],
       },

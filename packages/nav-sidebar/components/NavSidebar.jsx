@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import {
   Divider,
@@ -13,6 +14,7 @@ import Label from './Label';
 import Item from './Item';
 import Insights from './Insights';
 import FeedbackLink from './FeedbackLink';
+import TrialStatus from './TrialStatus';
 
 const sidebarStyle = {
   display: 'flex',
@@ -41,6 +43,7 @@ const NavSidebar = props => (
       <Item href="/reports/" {...props}>Reports</Item>
     </div>
     <div style={bottomSectionStyle}>
+      <TrialStatus {...props} />
       <FeedbackLink email="hello+analyze@buffer.com">Send Feedback</FeedbackLink>
     </div>
   </div>
