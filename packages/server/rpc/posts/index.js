@@ -43,23 +43,30 @@ const fetchTopPosts = (profileId, dateRange, sortBy, descending, limit, accessTo
 module.exports = method(
   'posts',
   'fetch analytics posts for profiles and pages',
-  ({ profileId, startDate, endDate, sortBy, descending, limit }, { session }) => {
+  async ({ profileId, startDate, endDate, sortBy, descending, limit, searchTerms }, { session }) => {
     const dateRange = new DateRange(startDate, endDate);
-    const posts = fetchTopPosts(
-      profileId,
-      dateRange,
-      sortBy,
-      descending,
-      limit,
-      session.analyze.accessToken,
-    );
+    try {
+      const posts = await fetchTopPosts(
+        profileId,
+        dateRange,
+        sortBy,
+        descending,
+        searchTerms ? limit : undefined,
+        session.analyze.accessToken,
+      );
 
-    return Promise
-      .all([posts])
-      .then((response) => {
-        const { updates, stats } = response[0];
-        return mergeStatsWithUpdates(stats, updates);
-      })
-      .catch(() => []);
+      const { updates, stats } = posts;
+
+      let result = mergeStatsWithUpdates(stats, updates);
+      if (searchTerms) {
+        result = result.filter(post => searchTerms.every(term => (new RegExp(term, 'gi')).test(post.text)));
+        if (limit) {
+          result = result.slice(0, limit);
+        }
+      }
+      return result;
+    } catch (e) {
+      return [];
+    }
   },
 );
