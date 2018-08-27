@@ -14,9 +14,16 @@ const getTrialInformation = (response) => {
   const today = moment();
   const endOfTrial = moment.unix(subscription.current_period_end);
 
+  let daysRemaining;
+  if (today.isBefore(endOfTrial)) {
+    daysRemaining = `in ${endOfTrial.fromNow(true)}`;
+  } else {
+    daysRemaining = 'today';
+  }
+
   return {
     onTrial: true,
-    daysRemaining: endOfTrial.diff(today, 'days'),
+    daysRemaining,
   };
 };
 

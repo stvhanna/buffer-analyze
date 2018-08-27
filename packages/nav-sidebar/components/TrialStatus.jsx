@@ -23,13 +23,6 @@ const IconWrapper = styled.span`
   height: 16px;
 `;
 
-const formatRemainingDays = (days) => {
-  if (days === 0) {
-    return 'today';
-  }
-  return `in ${days} ${days > 1 ? 'days' : 'day'}`;
-};
-
 const AccountManagementLink = ({ isOwner, organizationId, children }) => {
   if (isOwner) {
     return <Link unstyled href={`https://buffer.com/manage/${organizationId}/analyze`}>{ children }</Link>;
@@ -59,7 +52,7 @@ const TrialStatus = ({ onTrial, daysRemaining, organizationId, isOwner }) => {
       <IconWrapper><ClockIcon size={{ width: '13px', height: '13px' }} color={curiousBlue} /></IconWrapper>
       <TextWrapper>
         <AccountManagementLink isOwner={isOwner} organizationId={organizationId}>
-          <Text size="small" color="curiousBlue">Trial ends {formatRemainingDays(daysRemaining)}</Text>
+          <Text size="small" color="curiousBlue">Trial ends {daysRemaining}</Text>
         </AccountManagementLink>
       </TextWrapper>
     </Wrapper>
