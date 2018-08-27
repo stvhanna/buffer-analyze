@@ -2155,6 +2155,122 @@ exports[`Snapshots GridItem Should render the chart tolltip 1`] = `
 </span>
 `;
 
+exports[`Snapshots GridItem percentage sign show decimals if < 10 1`] = `
+<span>
+  <ul
+    style={
+      Object {
+        "borderLeft": "solid 1px #ced7df",
+        "borderRadius": "2px",
+        "borderTop": "solid 1px #ced7df",
+        "display": "flex",
+        "flexWrap": "wrap",
+        "margin": "0 auto",
+        "padding": "0",
+      }
+    }
+  >
+    <li
+      className="sc-csuQGl dhDIDz"
+      width="25%"
+    >
+      <div
+        className="sc-bRBYWo joyODz"
+      >
+        <span
+          className="sc-gipzik cBJMjY"
+        >
+          <span
+            data-tip={null}
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "0.875rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Engagement Rate
+            </span>
+          </span>
+        </span>
+        <div
+          className="sc-hzDkRC epEiYU"
+        >
+          <span
+            style={
+              Object {
+                "color": "#323b43",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1.5rem",
+                "fontWeight": 700,
+              }
+            }
+          >
+            <span>
+              9.65
+              %
+            </span>
+          </span>
+          <div
+            className="sc-gPEVay dIshSc"
+          >
+            <div
+              className="sc-iRbamj fFYkSk"
+            >
+              <div
+                className="sc-jDwBTQ kDjnNT"
+              >
+                <svg
+                  fill="none"
+                  height="11"
+                  viewBox="0 0 11 11"
+                  width="11"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="white"
+                    height="11"
+                    width="11"
+                  />
+                  <path
+                    d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+                    fill="#2FD566"
+                    transform="translate(1 2)"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              className="sc-jlyJG hzCAbQ"
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#2fd566",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "1rem",
+                    "fontWeight": 700,
+                  }
+                }
+              >
+                <span>
+                  10
+                </span>
+                %
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</span>
+`;
+
 exports[`Snapshots GridItem should not render arrow icon when diff is also visible 1`] = `
 <span>
   <ul
