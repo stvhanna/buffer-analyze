@@ -81,6 +81,28 @@ storiesOf('GridItem')
       />
     </ul>
   ))
+  .add('percentage sign show decimals if < 10', () => (
+    <ul
+      style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        padding: '0',
+        margin: '0 auto',
+        borderTop: `solid 1px ${geyser}`,
+        borderLeft: `solid 1px ${geyser}`,
+        borderRadius: '2px',
+      }}
+    >
+      <GridItem
+        metric={{
+          label: 'Engagement Rate',
+          value: 9.65,
+          diff: 10,
+        }}
+        showPercentSign
+      />
+    </ul>
+  ))
   .add('should render 2 digits in the grid item', () => (
     <ul
       style={{
