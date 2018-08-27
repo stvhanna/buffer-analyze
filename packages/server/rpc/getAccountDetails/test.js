@@ -5,8 +5,14 @@ import rp from 'request-promise';
 import moment from 'moment';
 import getAccountDetails from './';
 
+
 describe('rpc/get_account_details', () => {
   const organizationId = 'org-1';
+  const session = {
+    analyze: {
+      accessToken: 'access-token',
+    },
+  };
 
   it('should have the expected name', () => {
     expect(getAccountDetails.name)
@@ -28,17 +34,12 @@ describe('rpc/get_account_details', () => {
       },
     };
     rp.mockReturnValueOnce(Promise.resolve(response));
-    const session = {
-      analyze: {
-        accessToken: 'access-token',
-      },
-    };
 
     const result = await getAccountDetails.fn({ organizationId }, { session });
 
     expect(result).toEqual({
       onTrial: true,
-      daysRemaining: 1,
+      daysRemaining: 'in 2 days',
     });
     expect(rp.mock.calls[0]).toEqual([{
       uri: `${process.env.API_ADDR}/1/billing/retrieve-billing-data.json`,
@@ -51,6 +52,41 @@ describe('rpc/get_account_details', () => {
       },
       json: true,
     }]);
+  });
+
+  it('should return "today" when the date for the end of trial has come', async () => {
+    const response = {
+      data: {
+        subscriptions: [{
+          is_trial: true,
+          current_period_end: moment().add(0, 'days').unix(),
+        }],
+      },
+    };
+    rp.mockReturnValueOnce(Promise.resolve(response));
+
+    const result = await getAccountDetails.fn({ organizationId }, { session });
+
+    expect(result).toEqual({
+      onTrial: true,
+      daysRemaining: 'today',
+    });
+  });
+
+  it('should return it is not a trial if there is no subscription to be found', async () => {
+    const response = {
+      data: {
+        subscriptions: [],
+      },
+    };
+    rp.mockReturnValueOnce(Promise.resolve(response));
+
+    const result = await getAccountDetails.fn({ organizationId }, { session });
+
+    expect(result).toEqual({
+      onTrial: false,
+      daysRemaining: -1,
+    });
   });
 });
 

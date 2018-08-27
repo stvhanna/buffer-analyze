@@ -61,7 +61,7 @@ storiesOf('NavSidebar')
         twitterProfile={twitterProfile}
         onClick={action('click item')}
         onTrial
-        daysRemaining={7}
+        daysRemaining={'in 7 days'}
       />
     </div>
   ))
@@ -74,7 +74,7 @@ storiesOf('NavSidebar')
         twitterProfile={twitterProfile}
         onClick={action('click item')}
         onTrial
-        daysRemaining={1}
+        daysRemaining={'in a day'}
       />
     </div>
   ))
@@ -87,7 +87,7 @@ storiesOf('NavSidebar')
         twitterProfile={twitterProfile}
         onClick={action('click item')}
         onTrial
-        daysRemaining={0}
+        daysRemaining={'today'}
       />
     </div>
   ))
