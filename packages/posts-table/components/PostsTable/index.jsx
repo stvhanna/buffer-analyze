@@ -12,7 +12,9 @@ import {
 import Title from '../Title';
 import PostItem from './components/PostItem';
 import PostsHeader from './components/PostsHeader';
+import PostsCountBar from './components/PostsHeader/components/PostsCountBar';
 import { metricsConfig } from './metrics';
+import BreakdownLegend from './components/BreakdownLegend';
 
 const ChartContainer = styled.div`
   position: relative;
@@ -30,6 +32,11 @@ const PostsTableWrapper = styled.ol`
 const GridContainer = styled.div`
   position: relative;
   padding: 0.75rem 1.5rem 1rem;
+`;
+
+const Footer = styled.footer`
+  padding-top: 1rem;
+  text-align: center;
 `;
 
 const defaultSortMetrics = {
@@ -60,28 +67,40 @@ function getMaxMetricValue(posts, metrics) {
   return max;
 }
 
-export const Table = ({ metrics, timezone, service, exporting }) => {
-  const topPosts = metrics;
+export const Table = (props) => {
+  const { metrics: topPosts, service, selectedMetric } = props;
   const engagementMetrics = metricsConfig[service].topPostsEngagementMetrics;
   const audienceMetrics = metricsConfig[service].topPostsAudienceMetrics;
+
+  const allMetrics = [...engagementMetrics, ...audienceMetrics];
+
+  const [metricSorted] = allMetrics.filter(metric =>
+    metric.key === (selectedMetric ? selectedMetric.key : defaultSortMetrics[service].key)
+  );
 
   const maxEngagementValue = getMaxMetricValue(topPosts, engagementMetrics);
   const maxAudienceValue = getMaxMetricValue(topPosts, audienceMetrics);
 
   return (
     <ChartContainer>
+      {props.forReport && <BreakdownLegend
+        posts={topPosts.length}
+        searchTerms={props.searchTerms}
+        selectedMetric={metricSorted}
+        descending={props.isDescendingSelected}
+      />}
       <PostsTableWrapper>
           {topPosts.map((post, index) =>
             <PostItem
               key={post.id}
               index={index}
-              timezone={timezone}
+              timezone={props.timezone}
               post={post}
               maxEngagementValue={maxEngagementValue}
               maxAudienceValue={maxAudienceValue}
               engagementMetrics={engagementMetrics}
               audienceMetrics={audienceMetrics}
-              exporting={exporting}
+              exporting={props.exporting}
             />,
           )}
       </PostsTableWrapper>
@@ -89,7 +108,13 @@ export const Table = ({ metrics, timezone, service, exporting }) => {
   );
 };
 
+Table.defaultProps = {
+  forReport: false,
+  searchTerms: [],
+};
+
 Table.propTypes = {
+  forReport: PropTypes.bool,
   timezone: PropTypes.string.isRequired,
   service: PropTypes.string.isRequired,
   metrics: PropTypes.arrayOf(PropTypes.shape({
@@ -108,6 +133,12 @@ Table.propTypes = {
     type: PropTypes.string,
   })).isRequired,
   exporting: PropTypes.bool.isRequired,
+  searchTerms: PropTypes.arrayOf(PropTypes.string),
+  isDescendingSelected: PropTypes.bool.isRequired,
+  selectedMetric: PropTypes.shape({
+    key: PropTypes.string,
+    label: PropTypes.string,
+  }).isRequired,
 };
 
 const PostsTable = (props) => {
@@ -126,6 +157,7 @@ const PostsTable = (props) => {
     handlePostsCountClick,
     activePostsCount,
     exporting,
+    searchTerms,
   } = props;
   if (selectedProfileId === null) {
     return null;
@@ -145,23 +177,20 @@ const PostsTable = (props) => {
   } else {
     content = (
       <div>
-        <PostsHeader
-          {...props}
-          metrics={allPostMetrics}
-          selectedMetric={initialSelectedMetric}
-          isDescendingSelected={isDescendingSelected}
-          selectMetric={selectMetric}
-          toggleDropdown={toggleDropdown}
-          isDropdownOpen={isDropdownOpen}
-          handlePostsCountClick={handlePostsCountClick}
-          activePostsCount={activePostsCount}
-        />
         <Table
           metrics={metrics}
           timezone={timezone}
           service={profileService}
           exporting={exporting}
+          selectedMetric={initialSelectedMetric}
         />
+        <Footer>
+          <PostsCountBar
+            handlePostsCountClick={handlePostsCountClick}
+            activePostsCount={activePostsCount}
+            postsCounts={props.postsCounts}
+          />
+        </Footer>
       </div>
     );
   }
@@ -173,6 +202,17 @@ const PostsTable = (props) => {
         {addToReportButton}
       </ChartHeader>
       <GridContainer>
+        {(topPosts.length > 0 || searchTerms.length > 0) && <PostsHeader
+          {...props}
+          metrics={allPostMetrics}
+          selectedMetric={initialSelectedMetric}
+          isDescendingSelected={isDescendingSelected}
+          selectMetric={selectMetric}
+          toggleDropdown={toggleDropdown}
+          isDropdownOpen={isDropdownOpen}
+          handlePostsCountClick={handlePostsCountClick}
+          activePostsCount={activePostsCount}
+        />}
         {content}
       </GridContainer>
     </ChartCard>
@@ -184,7 +224,8 @@ PostsTable.defaultProps = {
   loading: false,
   addToReportButton: null,
   selectedProfileId: null,
-  exporting: false,
+  exporting: undefined,
+  searchTerms: [],
 };
 
 PostsTable.propTypes = {
@@ -219,6 +260,7 @@ PostsTable.propTypes = {
   addToReportButton: PropTypes.element,
   selectedProfileId: PropTypes.string,
   exporting: PropTypes.bool,
+  searchTerms: PropTypes.arrayOf(PropTypes.string)
 };
 
 export default PostsTable;

@@ -24,10 +24,6 @@ const PostRow = styled.li`
   &:first-child > div {
     border-top: 1px dotted ${geyser};
   }
-
-  &:last-child > div {
-    border-bottom: none;
-  }
 `;
 
 const MetricCellInner = styled.div`

@@ -21,6 +21,7 @@ export const PostsTableWrapper = props => (<div id="js-dom-to-png-posts"><PostsT
       descending: props.isDescendingSelected,
       sortBy: props.selectedMetric.apiKey,
       limit: props.activePostsCount,
+      searchTerms: props.searchTerms,
     }}
   />}
 /></div>);
@@ -38,6 +39,7 @@ PostsTableWrapper.propTypes = {
     label: PropTypes.string,
   }).isRequired,
   activePostsCount: PropTypes.number.isRequired,
+  searchTerms: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 // default export = container
@@ -54,6 +56,7 @@ export default connect(
     activePostsCount: state.posts.activePostsCount,
     profileService: state.profiles.selectedProfile ? state.profiles.selectedProfile.service : '',
     selectedProfileId: state.profiles.selectedProfile ? state.profiles.selectedProfile.id : null,
+    searchTerms: state.posts.searchTerms,
   }),
   dispatch => ({
     selectMetric: ({ metric, descending }) => dispatch(
@@ -65,6 +68,9 @@ export default connect(
     ),
     handlePostsSortClick: ({ isDescendingSelected }) => dispatch(
       actions.handlePostsSortClick(isDescendingSelected),
+    ),
+    search: (tags) => dispatch(
+      actions.search(tags),
     ),
   }),
 )(PostsTableWrapper);

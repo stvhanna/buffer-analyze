@@ -8,6 +8,7 @@ export const actionTypes = keyWrapper('POSTS_TABLE', {
   TOGGLE_TOP_POSTS_DROPDOWN: 'TOGGLE_TOP_POSTS_DROPDOWN',
   SELECT_TOP_POSTS_COUNT: 'SELECT_TOP_POSTS_COUNT',
   SELECT_TOP_POSTS_ORDER: 'SELECT_TOP_POSTS_ORDER',
+  SEARCH: 'SEARCH',
 });
 
 const initialState = {
@@ -18,6 +19,7 @@ const initialState = {
   isDescendingSelected: true,
   selectedMetric: {},
   activePostsCount: 10,
+  searchTerms: [],
 };
 
 export default (state = initialState, action) => {
@@ -28,6 +30,7 @@ export default (state = initialState, action) => {
         activePostsCount: parseInt(state.activePostsCount, 10),
         selectedMetric: state.selectedMetric,
         isDescendingSelected: state.isDescendingSelected,
+        searchTerms: state.searchTerms,
       };
     case `posts_${asyncDataFetchActionTypes.FETCH_SUCCESS}`:
       return {
@@ -60,6 +63,11 @@ export default (state = initialState, action) => {
         ...state,
         isDescendingSelected: action.isDescendingSelected,
       };
+    case actionTypes.SEARCH:
+      return {
+        ...state,
+        searchTerms: action.tags,
+      };
     default:
       return state;
   }
@@ -87,6 +95,12 @@ export const actions = {
     return {
       type: actionTypes.SELECT_TOP_POSTS_ORDER,
       isDescendingSelected,
+    };
+  },
+  search(tags) {
+    return {
+      type: actionTypes.SEARCH,
+      tags,
     };
   },
 };
