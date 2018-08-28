@@ -45,7 +45,7 @@ const Header = styled.header`
 `;
 
 const Card = styled.section`
-  width: 920px;
+  width: 982px;
   margin: 0 auto;
   box-shadow: 0px 0px 40px rgba(48, 71, 89, 0.125);
   border-radius: 5px;
