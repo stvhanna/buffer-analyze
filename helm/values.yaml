@@ -39,19 +39,19 @@ env:
     value: https://analyze-api.buffer.com
   - name: BUGSNAG_KEY
     valueFrom:
-    secretKeyRef:
-      key: bugsnag
-      name: buffer-analyze-keys
+      secretKeyRef:
+        key: bugsnag
+        name: buffer-analyze-keys
   - name: AWS_ACCESS_KEY_ID
     valueFrom:
-    secretKeyRef:
-      key: aws-access-key-id
-      name: buffer-analyze-keys
+      secretKeyRef:
+        key: aws-access-key-id
+        name: buffer-analyze-keys
   - name: AWS_SECRET_ACCESS_KEY
     valueFrom:
-    secretKeyRef:
-      key: aws-secret-access-key
-      name: buffer-analyze-keys
+      secretKeyRef:
+        key: aws-secret-access-key
+        name: buffer-analyze-keys
 healthcheck: # checkout https://github.com/bufferapp/EKG for complete docs
   enabled: false
   config:
