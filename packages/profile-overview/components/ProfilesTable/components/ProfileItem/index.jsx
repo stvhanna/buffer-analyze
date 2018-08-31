@@ -86,10 +86,11 @@ const LoadingMetric = styled.div`
   }
 `;
 
-const MetricItem = ({ metric, profile }) => (
+const MetricItem = ({ metric, metricKey, profile }) => (
   <ContentCell>
     {metric && <GridItem
-      key={`${metric.label}-${profile.id}`}
+      key={`${metricKey}-${profile.id}`}
+      showPercentSign={metricKey === 'engagement_rate'}
       metric={metric}
       gridWidth="100%"
       standalone
@@ -103,8 +104,8 @@ MetricItem.propTypes = {
   metric: PropTypes.shape({
     diff: PropTypes.number,
     value: PropTypes.number,
-    label: PropTypes.string,
   }),
+  metricKey: PropTypes.string.isRequired,
   profile: PropTypes.shape({
     id: PropTypes.string.isRequired,
   }).isRequired,
@@ -147,7 +148,7 @@ const ProfileItem = ({
         </span>
       </ProfileCell>
     </ContentCell>
-    {metricKeys.map(metricKey => (<MetricItem profile={profile} metric={metrics[metricKey]} key={metricKey} />))}
+    {metricKeys.map(metricKey => (<MetricItem metricKey={metricKey} profile={profile} metric={metrics[metricKey]} key={metricKey} />))}
   </ProfileRow>
 );
 

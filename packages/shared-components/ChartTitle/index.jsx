@@ -8,31 +8,16 @@ const Header = styled.h2`
   padding: 0;
 `;
 
-const renderForApp = children => (
-  <Text color="outerSpace" weight="bold" size="large">
-    {children}
-  </Text>
-);
-
-const renderForReport = children => (
-  <Text color="black" weight="bold" size="extra-large">
-    {children}
-  </Text>
-);
-
-const Title = ({ children, forReport }) => (
+const Title = ({ children }) => (
   <Header>
-    {forReport ? renderForReport(children) : renderForApp(children)}
+    <Text color="outerSpace" weight="semi-bold" size="large">
+      {children}
+    </Text>
   </Header>
 );
 
 Title.propTypes = {
   children: PropTypes.node.isRequired,
-  forReport: PropTypes.bool,
-};
-
-Title.defaultProps = {
-  forReport: false,
 };
 
 export default Title;

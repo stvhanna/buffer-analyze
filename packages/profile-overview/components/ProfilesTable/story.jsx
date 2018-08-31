@@ -5,9 +5,9 @@ import ProfilesTable from './index';
 import profiles from '../../mocks/profiles';
 
 const profileMetrics = {
-  engagement: {
+  engagement_rate: {
     diff: -42,
-    value: 416,
+    value: 3.6,
   },
   followers: {
     diff: 0,

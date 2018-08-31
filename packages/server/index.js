@@ -10,11 +10,12 @@ const { join } = require('path');
 const shutdownHelper = require('@bufferapp/shutdown-helper');
 const cookieParser = require('cookie-parser');
 const {
-  setRequestSession,
-  validateSession,
-} = require('@bufferapp/session-manager/middleware');
+  setRequestSessionMiddleware,
+  validateSessionMiddleware,
+} = require('@bufferapp/session-manager');
 const connectDatadog = require('@bufferapp/connect-datadog');
 const { apiError } = require('./middleware');
+const request = require('request');
 const controller = require('./lib/controller');
 const rpc = require('./rpc');
 
@@ -95,7 +96,7 @@ app.get('/favicon.ico', (req, res) => res.send(favicon));
 
 // All routes after this have access to the user session
 // app.use(session.middleware);
-app.use(setRequestSession({
+app.use(setRequestSessionMiddleware({
   production: isProduction,
   sessionKeys: ['global', 'analyze'],
 }));
@@ -123,7 +124,7 @@ app.use(buffermetricsMiddleware({
 }));
 
 
-app.use(validateSession({
+app.use(validateSessionMiddleware({
   production: isProduction,
   requiredSessionKeys: ['analyze.accessToken'],
 }));
@@ -152,14 +153,9 @@ app.get('/report_to_pdf', (req, res) => {
       res.send(err);
     } else {
       const payload = JSON.parse(data.Payload);
-      if (payload.errorMessage) {
-        res.send(payload.errorMessage);
-      } else {
-        const pdf = Buffer.from(payload.contents, 'base64');
-        res.type('application/pdf');
-        res.header('Content-disposition', `inline; filename=${req.query.name}.pdf; filename*=utf-8''${encodedFilename}`);
-        res.end(pdf, 'binary');
-      }
+      res.type('application/pdf');
+      res.header('Content-disposition', `inline; filename=${req.query.name}.pdf; filename*=utf-8''${encodedFilename}`);
+      request(payload.url).pipe(res);
     }
   });
 });

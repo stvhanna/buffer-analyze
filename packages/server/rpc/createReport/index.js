@@ -4,7 +4,7 @@ const rp = require('request-promise');
 module.exports = method(
   'create_report',
   'create a new report for Analyze',
-  ({ userId, profileId, chartId, name, state, dateRange }) =>
+  ({ userId, profileId, organizationId, chartId, name, state, dateRange }) =>
     rp({
       uri: `${process.env.ANALYZE_API_ADDR}/create_report`,
       method: 'POST',
@@ -13,6 +13,7 @@ module.exports = method(
         name,
         state,
         profile_id: profileId,
+        organization_id: organizationId,
         chart_id: chartId,
         user_id: userId,
         range: dateRange.range,

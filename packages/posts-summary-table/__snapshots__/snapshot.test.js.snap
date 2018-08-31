@@ -24,7 +24,7 @@ exports[`Snapshots PostsSummaryTable should render a "no data" state 1`] = `
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -94,7 +94,7 @@ exports[`Snapshots PostsSummaryTable should render a loading state 1`] = `
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >
@@ -215,7 +215,7 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
                 "color": "#323b43",
                 "fontFamily": "\\"Roboto\\", sans-serif",
                 "fontSize": "1.25rem",
-                "fontWeight": 700,
+                "fontWeight": 600,
               }
             }
           >

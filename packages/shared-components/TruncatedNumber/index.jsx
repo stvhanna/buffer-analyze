@@ -17,7 +17,7 @@ const TruncatedNumber = ({ children, absoluteValue, shorterOption, showPercentSi
     formattedNumber = numeral(number).format('0a');
   } else if (number >= 10000) {
     formattedNumber = numeral(number).format('0.0a');
-  } else if (number < 1 && number > 0 && showPercentSign) {
+  } else if (number < 10 && number > 0 && showPercentSign) {
     formattedNumber = numeral(number).format('0.00');
   } else if (number < 1 && number > 0) {
     formattedNumber = numeral(number).format('0,0.0');

@@ -4,7 +4,11 @@ import { connect } from 'react-redux';
 import NavSidebar from './components/NavSidebar';
 
 export default connect(
-  () => ({
+  state => ({
+    daysRemaining: state.account.trialDaysRemaining,
+    onTrial: state.account.onTrial,
+    isOwner: state.profiles.isOwner,
+    organizationId: state.profiles.organizationId,
   }),
   dispatch => ({
     onClick: path => dispatch(push(path)),

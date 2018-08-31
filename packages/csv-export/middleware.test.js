@@ -52,7 +52,7 @@ describe('middleware', () => {
         .toHaveBeenCalledWith(state.exportToCSV.charts, state.date);
     });
 
-    it('should create a zip with the CSVs once they have been generated', (done) => {
+    it('should create a zip with the CSVs once they have been generated', async () => {
       const action = {
         type: actionTypes.EXPORT_TO_CSV_START,
         filename: 'buffer-overview-analytics',
@@ -62,28 +62,28 @@ describe('middleware', () => {
       };
       const csvs = ['a csv', 'another csv'];
       generateCSVFromChart.mockReturnValue(Promise.resolve(csvs));
+      downloadAsZip.mockReturnValue(Promise.resolve());
 
       const promise = middleware({
         getState: () => state,
         dispatch: jest.fn(),
       })(next)(action);
-      promise.then(() => {
+      await promise.then(() => {
         expect(generateCSVFromChart).toHaveBeenCalled();
         expect(downloadAsZip).toHaveBeenCalledWith('buffer-overview-analytics', csvs);
-        done();
       });
     });
 
-    it('should trigger endExportToCSV when downloadAsZip is done', (done) => {
+    it('should trigger endExportToCSV when downloadAsZip is done', async () => {
       const action = {
         type: actionTypes.EXPORT_TO_CSV_START,
       };
       generateCSVFromChart.mockReturnValue(Promise.resolve());
+      downloadAsZip.mockReturnValue(Promise.resolve());
 
       const promise = middleware(store)(next)(action);
-      promise.then(() => {
+      await promise.then(() => {
         expect(store.dispatch).toHaveBeenCalledWith(actions.endExportToCSV());
-        done();
       });
     });
   });

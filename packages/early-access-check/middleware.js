@@ -9,10 +9,11 @@ const getRedirectURL = () => {
 
 export default () => next => (action) => {
   switch (action.type) {
-    case `user_${dataFetchActionTypes.FETCH_SUCCESS}`: {
-      const { result: { features = [] } } = action;
-      const hasEarlyAccess = features.includes('analyze_early_access');
-      if (!hasEarlyAccess) {
+    case `profiles_${dataFetchActionTypes.FETCH_SUCCESS}`: {
+      const profiles = action.result;
+      // if there aren't any active analyze profiles
+      // then redirect back to the home page
+      if (profiles.length < 1) {
         window.location.assign(getRedirectURL());
       }
       break;

@@ -11,8 +11,10 @@ describe('reducer', () => {
       profiles: [],
       isDropdownOpen: false,
       profilesFilterString: '',
+      organizationId: null,
       selectedProfile: null,
       loading: true,
+      isOwner: false,
     };
   });
 
@@ -28,14 +30,17 @@ describe('reducer', () => {
       result: mockProfiles,
     };
 
-    expect(reducer(initialState, action))
-      .toEqual({
-        profiles: mockProfiles,
-        isDropdownOpen: false,
-        profilesFilterString: '',
-        selectedProfile: null,
-        loading: false,
-      });
+    expect(reducer(initialState, action).profiles).toEqual(mockProfiles);
+  });
+
+  it('should grab the organization id from the first profile returned', () => {
+    const action = {
+      type: `profiles_${fetchActions.FETCH_SUCCESS}`,
+      result: mockProfiles,
+    };
+
+    expect(reducer(initialState, action).organizationId)
+      .toBe('organization1234');
   });
 
   it('should update the profilesFilterString', () => {
