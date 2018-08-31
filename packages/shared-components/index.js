@@ -21,3 +21,4 @@ export DropdownItem from './DropdownItem';
 export VerticalDivider from './VerticalDivider';
 export CommonChart from './CommonChart';
 export Toolbar from './Toolbar';
+export ArrowIcon from './ArrowIcon';

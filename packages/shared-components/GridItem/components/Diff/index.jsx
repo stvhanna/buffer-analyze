@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Text from '@bufferapp/components/Text';
-import ArrowIcon from '../ArrowIcon';
+import ArrowIcon from '../../../ArrowIcon';
 import TruncatedNumber from '../../../TruncatedNumber';
 
 const Container = styled.div`

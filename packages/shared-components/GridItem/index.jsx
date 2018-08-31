@@ -5,7 +5,7 @@ import Diff from './components/Diff';
 import Label from './components/Label';
 import Value from './components/Value';
 import GridItemChart from './components/GridItemChart';
-import ArrowIcon from './components/ArrowIcon';
+import ArrowIcon from '../ArrowIcon';
 
 const Item = styled.li`
   display: flex;

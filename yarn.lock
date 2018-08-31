@@ -6,6 +6,16 @@
   version "7.0.0-beta.53"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.0.0-beta.53.tgz#1f45eb617bf9463d482b2c04d349d9e4edbf4892"
 
+"@bufferapp/analyze-csv-export@^0.65.1":
+  version "0.65.1"
+  resolved "https://registry.yarnpkg.com/@bufferapp/analyze-csv-export/-/analyze-csv-export-0.65.1.tgz#4d35979736f804d70f2e8b6e251d2f9800576a21"
+  dependencies:
+    dataurl-to-blob "^0.0.1"
+    file-saver "^1.3.3"
+    html2canvas "^0.5.0-beta4"
+    jszip "^3.1.4"
+    moment "^2.18.1"
+
 "@bufferapp/analyze-date-picker@^0.43.13":
   version "0.43.13"
   resolved "https://registry.yarnpkg.com/@bufferapp/analyze-date-picker/-/analyze-date-picker-0.43.13.tgz#652967e168e509e1b8ba724bff14890f4b6ed5c8"
@@ -16,6 +26,20 @@
     moment "^2.18.1"
     react-tooltip "^3.3.0"
     styled-components "^2.2.1"
+
+"@bufferapp/analyze-decorators@^0.15.2":
+  version "0.15.2"
+  resolved "https://registry.yarnpkg.com/@bufferapp/analyze-decorators/-/analyze-decorators-0.15.2.tgz#f9c1b939fa367a90c167c7a229c960b6b4e37c20"
+
+"@bufferapp/analyze-png-export@^0.61.0":
+  version "0.61.0"
+  resolved "https://registry.yarnpkg.com/@bufferapp/analyze-png-export/-/analyze-png-export-0.61.0.tgz#c58f3a872c8d0416ecb55bb09cf1ed80ff193a9a"
+  dependencies:
+    dataurl-to-blob "^0.0.1"
+    file-saver "^1.3.3"
+    html2canvas "^1.0.0-alpha.9"
+    jszip "^3.1.4"
+    moment "^2.18.1"
 
 "@bufferapp/analyze-profile-selector@^0.43.13":
   version "0.43.13"
