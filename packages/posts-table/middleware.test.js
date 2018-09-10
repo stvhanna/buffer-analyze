@@ -110,6 +110,7 @@ describe('middleware', () => {
         profileId: '12359182129asd',
         startDate: state.date.startDate,
         endDate: state.date.endDate,
+        limit: state.posts.activePostsCount,
       },
     }));
     expect(next).toHaveBeenCalledWith(action);

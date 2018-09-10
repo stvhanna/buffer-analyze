@@ -126,6 +126,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
           profileId: action.profile.id,
           startDate: getState().date.startDate,
           endDate: getState().date.endDate,
+          limit: getState().posts.activePostsCount,
         },
       }));
       break;

@@ -63,12 +63,12 @@ const BreakdownLegend = ({ posts, searchTerms, selectedMetric, descending }) => 
   return (
     <Legend>
       <FilterLegend>
-        <Text color="outerSpace" size="small" weight="bold">Showing {posts} posts { searchTerms.length ? 'filtered by' : 'in total' }</Text>
-        {searchTerms.map(term => <Tag><Text color="white" size="small">{term}</Text></Tag>)}
+        <Text color="outerSpace" size="extra-small" weight="bold">Showing {posts} posts { searchTerms.length ? 'filtered by' : 'in total' }</Text>
+        {searchTerms.map(term => <Tag><Text color="white" size="extra-small">{term}</Text></Tag>)}
         <Fade />
       </FilterLegend>
       <SortByLegend>
-        <Text color="outerSpace" size="small" weight="bold">Sorted by {sortOrder} <MetricWrapper><MetricIcon metric={selectedMetric} /></MetricWrapper> {selectedMetric.label}</Text>
+        <Text color="outerSpace" size="extra-small" weight="bold">Sorted by {sortOrder} <MetricWrapper><MetricIcon metric={selectedMetric} /></MetricWrapper> {selectedMetric.label}</Text>
       </SortByLegend>
     </Legend>
   );
