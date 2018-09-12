@@ -231,5 +231,26 @@ describe('middleware', () => {
     expect(store.dispatch).toHaveBeenCalledWith(exportCSVActions.exportChart('posts', csvData));
   });
 
+  it('shoud dispatch a data fetch for posts once there are new search terms', () => {
+    const action = {
+      type: postsActionTypes.SEARCH,
+      tags: ['#buffercommunity'],
+    };
+    middleware(store)(next)(action);
+    expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
+      name: 'posts',
+      args: {
+        profileId: state.profiles.selectedProfileId,
+        startDate: state.date.startDate,
+        endDate: state.date.endDate,
+        sortBy: state.posts.selectedMetric.apiKey,
+        descending: state.posts.isDescendingSelected,
+        limit: state.posts.activePostsCount,
+        searchTerms: action.tags,
+      },
+    }));
+    expect(next).toHaveBeenCalledWith(action);
+  });
+
   afterEach(() => jest.clearAllMocks());
 });

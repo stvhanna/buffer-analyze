@@ -5,7 +5,7 @@ export default {
   },
   post_impressions: {
     ascending: 'most',
-    descending: 'fewest'
+    descending: 'fewest',
   },
   post_reach: {
     ascending: 'highest',

@@ -83,6 +83,12 @@ describe('reducer', () => {
       isDescendingSelected: false,
     });
   });
+  it('SEARCH stores the new search terms', () => {
+    const initialState = {};
+    const tags = ['#buffercommunity'];
+    const newState = reducer(initialState, postsActions.search(tags));
+    expect(newState.searchTerms).toEqual(tags);
+  });
   // testing actions
   it('returns the right action upon selectMetric', () => {
     const newAction = postsActions.selectMetric('reactions', false);

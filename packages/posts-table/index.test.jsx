@@ -139,4 +139,16 @@ describe('Top Post Table', () => {
     component.props().toggleDropdown();
     expect(validStore.dispatch).toHaveBeenCalledWith(actions.toggleDropdown());
   });
+
+  it('search should trigger the search action', () => {
+    const component = shallow(<TopPosts
+      isDescendingSelected
+      selectedMetric={selectedMetric}
+      store={validStore}
+    />);
+
+    const tags = ['#buffercommunity'];
+    component.props().search(tags);
+    expect(validStore.dispatch).toHaveBeenCalledWith(actions.search(tags));
+  });
 });

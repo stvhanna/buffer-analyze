@@ -8,17 +8,7 @@ import posts from './';
 
 const postsReponse = {
   total: 12,
-  stats: {
-    '108311429241313_1685419118197195': {
-      shares: 13,
-      post_impressions: 18406,
-      reactions: 57,
-      comments: 23,
-      post_clicks: 699,
-      post_reach: 8995,
-    },
-  },
-  updates: {
+  updates_with_stats: {
     '108311429241313_1685419118197195': {
       _id: '59b81c26883fce89588b4567',
       clicks_caveat: false,
@@ -55,6 +45,14 @@ const postsReponse = {
         shares: 15,
         clicks: 0,
       },
+      stats: {
+        shares: 13,
+        post_impressions: 18406,
+        reactions: 57,
+        comments: 23,
+        post_clicks: 699,
+        post_reach: 8995,
+      },
       status: 'service',
       text: 'Today is a good day',
       text_formatted: 'Today is a good day',
@@ -82,6 +80,7 @@ describe('rpc/posts', () => {
   });
 
   it('should request for the past week', () => {
+    rp.mockReturnValueOnce(Promise.resolve(postsReponse));
     const end = moment().subtract(1, 'days').format('MM/DD/YYYY');
     const start = moment().subtract(7, 'days').format('MM/DD/YYYY');
 
@@ -111,10 +110,16 @@ describe('rpc/posts', () => {
       }]);
   });
 
-  it('should merge stats with updates when posts are received', async () => {
-    rp.mockReturnValueOnce(Promise.resolve(postsReponse));
+  it('should return an empty collection if the request fails', async () => {
+    rp.mockReturnValueOnce(Promise.reject());
+    const end = moment().subtract(1, 'days').format('MM/DD/YYYY');
+    const start = moment().subtract(7, 'days').format('MM/DD/YYYY');
 
-    const postsData = await posts.fn({ profileId }, {
+    const result = await posts.fn({
+      startDate: start,
+      endDate: end,
+      profileId,
+    }, {
       session: {
         analyze: {
           accessToken: token,
@@ -122,34 +127,6 @@ describe('rpc/posts', () => {
       },
     });
 
-    expect(postsData).toEqual([{
-      date: 1505217660000,
-      id: '108311429241313_1685419118197195',
-      media: {
-        thumbnail: 'https://scontent.xx.fbcdn.net/v/t15.0-10/s720x720/21683895_1685422951530145_6935886671346925568_n.jpg?oh=97686e2171ace823c83f83ca1024ecc2&oe=5A50084F',
-        video: {
-          details: {
-            height: 405,
-            location: 'https://video.xx.fbcdn.net/v/t42.1790-2/21626650_117103448973483_1496062419162628096_n.mp4?efg=eyJybHIiOjMwMCwicmxhIjo5MTgsInZlbmNvZGVfdGFnIjoic3ZlX3NkIn0%3D&rl=300&vabr=143&oh=61aa9d0bb4bf5436d7f4399f406aa9c3&oe=59BAE50C',
-            transcoded_location: 'https://video.xx.fbcdn.net/v/t42.1790-2/21626650_117103448973483_1496062419162628096_n.mp4?efg=eyJybHIiOjMwMCwicmxhIjo5MTgsInZlbmNvZGVfdGFnIjoic3ZlX3NkIn0%3D&rl=300&vabr=143&oh=61aa9d0bb4bf5436d7f4399f406aa9c3&oe=59BAE50C',
-            width: 720,
-          },
-          thumbnails: [
-            'https://scontent.xx.fbcdn.net/v/t15.0-10/s720x720/21683895_1685422951530145_6935886671346925568_n.jpg?oh=97686e2171ace823c83f83ca1024ecc2&oe=5A50084F',
-          ],
-        },
-      },
-      serviceLink: 'https://facebook.com/108311429241313/posts/1685419118197195',
-      statistics: {
-        comments: 23,
-        post_clicks: 699,
-        post_impressions: 18406,
-        post_reach: 8995,
-        reactions: 57,
-        shares: 13,
-      },
-      text: 'Today is a good day',
-      type: 'video',
-    }]);
+    expect(result).toEqual([]);
   });
 });

@@ -154,7 +154,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
           startDate: getState().date.startDate,
           endDate: getState().date.endDate,
           sortBy: getState().posts.selectedMetric.apiKey,
-          descending: getState().isDescendingSelected,
+          descending: getState().posts.isDescendingSelected,
           limit: getState().posts.activePostsCount,
           searchTerms: action.tags,
         },

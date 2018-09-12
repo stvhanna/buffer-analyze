@@ -55,4 +55,19 @@ storiesOf('BreakdownLegend')
       />
     </div>
   ))
+  .add('mentions the search order for the selected metric and differentiates if it is ascending or descending', () => (
+    <div
+      style={{
+        width: '1080px',
+      }}
+    >
+      <BreakdownLegend
+        posts="4"
+        selectedMetric={{
+          label: 'Impressions',
+          key: 'impressions',
+        }}
+      />
+    </div>
+  ))
 ;
