@@ -16,7 +16,7 @@ const Tag = styled.span`
   color: white;
   font-weight: bold;
   background-color: ${curiousBlue};
-  margin-left: .5rem;
+  margin-left: .25rem;
 `;
 
 const Legend = styled.section`
