@@ -1,5 +1,4 @@
-const { rpc } = require('@bufferapp/micro-rpc');
-const checkToken = require('./checkToken');
+const { rpc } = require('@bufferapp/buffer-rpc');
 const profilesMethod = require('./profiles');
 const userMethod = require('./user');
 const performanceTrackingMethod = require('./performanceTracking');
@@ -29,7 +28,7 @@ const deleteReportLogo = require('./deleteReportLogo');
 const profilesOverview = require('./profilesOverview');
 const getAccountDetails = require('./getAccountDetails');
 
-module.exports = checkToken(rpc(
+module.exports = rpc(
   profilesMethod,
   userMethod,
   performanceTrackingMethod,
@@ -58,4 +57,4 @@ module.exports = checkToken(rpc(
   deleteReportLogo,
   profilesOverview,
   getAccountDetails,
-));
+);

@@ -17,7 +17,9 @@ const connectDatadog = require('@bufferapp/connect-datadog');
 const { apiError } = require('./middleware');
 const request = require('request');
 const controller = require('./lib/controller');
-const rpc = require('./rpc');
+const rpcHandler = require('./rpc');
+const checkToken = require('./rpc/checkToken');
+
 
 const app = express();
 const server = http.createServer(app);
@@ -101,22 +103,9 @@ app.use(setRequestSessionMiddleware({
   sessionKeys: ['global', 'analyze'],
 }));
 
-app.post('/rpc', (req, res, next) => {
-  rpc(req, res)
-    // catch any unexpected errors
-    .catch((err) => {
-      if (err.statusCode !== 500) {
-        next({
-          httpCode: err.statusCode,
-          error: err.message,
-        });
-      } else {
-        next(err);
-      }
-    });
-});
-
 app.use(bodyParser.json());
+app.post('/rpc', checkToken, rpcHandler);
+
 app.use(buffermetricsMiddleware({
   name: 'Buffer-Analyze',
   debug: !isProduction,

@@ -3,7 +3,7 @@
   "version": "0.69.4",
   "description": "",
   "scripts": {
-    "start": "micro",
+    "start": "node .",
     "lint": "eslint . --ignore-pattern coverage node_modules",
     "test": "sh ../../package_test.sh",
     "test-watch": "jest --watch"
@@ -22,7 +22,7 @@
     "@bufferapp/buffermetrics": "^0.5.2",
     "@bufferapp/connect-datadog": "^0.2.1",
     "@bufferapp/logger": "0.7.0",
-    "@bufferapp/micro-rpc": "0.1.7",
+    "@bufferapp/buffer-rpc": "0.0.2",
     "@bufferapp/session-manager": "0.7.1",
     "@bufferapp/shutdown-helper": "0.2.0",
     "aws-sdk": "2.4.7",
@@ -31,9 +31,7 @@
     "cookie-parser": "1.4.3",
     "express": "4.15.3",
     "jsonwebtoken": "7.4.1",
-    "micro": "7.3.3",
     "micro-rpc-client": "0.1.2",
-    "microrouter": "2.1.1",
     "moment": "^2.18.1",
     "moment-timezone": "0.5.16",
     "node-dogstatsd": "0.0.6",

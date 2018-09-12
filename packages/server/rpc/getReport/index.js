@@ -1,6 +1,6 @@
 const moment = require('moment-timezone');
 const rp = require('request-promise');
-const { method } = require('@bufferapp/micro-rpc');
+const { method } = require('@bufferapp/buffer-rpc');
 const profileParser = require('../utils/profileParser');
 
 const RPC_ENDPOINTS = {

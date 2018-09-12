@@ -1,4 +1,4 @@
-const { method } = require('@bufferapp/micro-rpc');
+const { method } = require('@bufferapp/buffer-rpc');
 const moment = require('moment');
 const rp = require('request-promise');
 

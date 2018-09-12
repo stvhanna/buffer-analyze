@@ -1,5 +1,5 @@
 
-const { method } = require('@bufferapp/micro-rpc');
+const { method } = require('@bufferapp/buffer-rpc');
 const rp = require('request-promise');
 const DateRange = require('../utils/DateRange');
 
