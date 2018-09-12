@@ -13,7 +13,7 @@ exports[`Snapshots BreakdownLegend for long tag lists it should fade the overflo
       className="sc-hSdWYo EDDdJ"
     >
       <section
-        className="sc-eHgmQL eNUkpl"
+        className="sc-eHgmQL hRxedP"
       >
         <span
           style={
@@ -83,7 +83,7 @@ exports[`Snapshots BreakdownLegend for long tag lists it should fade the overflo
         />
       </section>
       <section
-        className="sc-jWBwVP eBNQRi"
+        className="sc-jWBwVP iFeJse"
       >
         <span
           style={
@@ -140,7 +140,7 @@ exports[`Snapshots BreakdownLegend if there are no filters it displays "X posts 
       className="sc-hSdWYo EDDdJ"
     >
       <section
-        className="sc-eHgmQL eNUkpl"
+        className="sc-eHgmQL hRxedP"
       >
         <span
           style={
@@ -162,7 +162,7 @@ exports[`Snapshots BreakdownLegend if there are no filters it displays "X posts 
         />
       </section>
       <section
-        className="sc-jWBwVP eBNQRi"
+        className="sc-jWBwVP iFeJse"
       >
         <span
           style={
@@ -219,7 +219,7 @@ exports[`Snapshots BreakdownLegend mentions the search order for the selected me
       className="sc-hSdWYo EDDdJ"
     >
       <section
-        className="sc-eHgmQL eNUkpl"
+        className="sc-eHgmQL hRxedP"
       >
         <span
           style={
@@ -241,7 +241,7 @@ exports[`Snapshots BreakdownLegend mentions the search order for the selected me
         />
       </section>
       <section
-        className="sc-jWBwVP eBNQRi"
+        className="sc-jWBwVP iFeJse"
       >
         <span
           style={
@@ -298,7 +298,7 @@ exports[`Snapshots BreakdownLegend should show search terms used for filtering 1
       className="sc-hSdWYo EDDdJ"
     >
       <section
-        className="sc-eHgmQL eNUkpl"
+        className="sc-eHgmQL hRxedP"
       >
         <span
           style={
@@ -352,7 +352,7 @@ exports[`Snapshots BreakdownLegend should show search terms used for filtering 1
         />
       </section>
       <section
-        className="sc-jWBwVP eBNQRi"
+        className="sc-jWBwVP iFeJse"
       >
         <span
           style={
@@ -761,7 +761,7 @@ exports[`Snapshots PostItem should not render the top posts item when no metrics
         </span>
       </div>
       <div
-        className="sc-jlyJG bgYmyI"
+        className="sc-jlyJG jRHXbY"
       >
         <div
           className="sc-hzDkRC dpueNm"
@@ -806,7 +806,7 @@ exports[`Snapshots PostItem should not render the top posts item when no metrics
           </div>
         </div>
         <div
-          className="sc-jhAzac dbpEpo"
+          className="sc-jhAzac ighWHl"
         >
           <div
             className="sc-fMiknA hHUDtf"
@@ -876,7 +876,7 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
         </span>
       </div>
       <div
-        className="sc-jlyJG bgYmyI"
+        className="sc-jlyJG jRHXbY"
       >
         <div
           className="sc-hzDkRC dpueNm"
@@ -921,7 +921,7 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
           </div>
         </div>
         <div
-          className="sc-jhAzac dbpEpo"
+          className="sc-jhAzac ighWHl"
         >
           <div
             className="sc-fMiknA hHUDtf"
@@ -958,7 +958,7 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
         </div>
       </div>
       <div
-        className="sc-gPEVay eMgGuc"
+        className="sc-gPEVay fQwxMk"
       >
         <div
           className="sc-cMljjf kJTGaR"
@@ -3101,7 +3101,7 @@ exports[`Snapshots PostsTable should hide posts link on export 1`] = `
                   </span>
                 </div>
                 <div
-                  className="sc-jlyJG bgYmyI"
+                  className="sc-jlyJG jRHXbY"
                 >
                   <div
                     className="sc-hzDkRC dpueNm"
@@ -3124,7 +3124,7 @@ exports[`Snapshots PostsTable should hide posts link on export 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-jhAzac dbpEpo"
+                    className="sc-jhAzac ighWHl"
                   >
                     <div
                       className="sc-fMiknA hHUDtf"
@@ -3161,7 +3161,7 @@ exports[`Snapshots PostsTable should hide posts link on export 1`] = `
                   </div>
                 </div>
                 <div
-                  className="sc-gPEVay eMgGuc"
+                  className="sc-gPEVay fQwxMk"
                 >
                   <div
                     className="sc-cMljjf kJTGaR"
@@ -3440,7 +3440,7 @@ exports[`Snapshots PostsTable should hide posts link on export 1`] = `
                   </span>
                 </div>
                 <div
-                  className="sc-jlyJG bgYmyI"
+                  className="sc-jlyJG jRHXbY"
                 >
                   <div
                     className="sc-hzDkRC dpueNm"
@@ -3463,7 +3463,7 @@ exports[`Snapshots PostsTable should hide posts link on export 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-jhAzac dbpEpo"
+                    className="sc-jhAzac ighWHl"
                   >
                     <div
                       className="sc-fMiknA hHUDtf"
@@ -3503,7 +3503,7 @@ exports[`Snapshots PostsTable should hide posts link on export 1`] = `
                   </div>
                 </div>
                 <div
-                  className="sc-gPEVay eMgGuc"
+                  className="sc-gPEVay fQwxMk"
                 >
                   <div
                     className="sc-cMljjf kJTGaR"
@@ -3782,7 +3782,7 @@ exports[`Snapshots PostsTable should hide posts link on export 1`] = `
                   </span>
                 </div>
                 <div
-                  className="sc-jlyJG bgYmyI"
+                  className="sc-jlyJG jRHXbY"
                 >
                   <div
                     className="sc-hzDkRC dpueNm"
@@ -3805,7 +3805,7 @@ exports[`Snapshots PostsTable should hide posts link on export 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-jhAzac dbpEpo"
+                    className="sc-jhAzac ighWHl"
                   >
                     <div
                       className="sc-fMiknA hHUDtf"
@@ -3838,7 +3838,7 @@ exports[`Snapshots PostsTable should hide posts link on export 1`] = `
                   </div>
                 </div>
                 <div
-                  className="sc-gPEVay eMgGuc"
+                  className="sc-gPEVay fQwxMk"
                 >
                   <div
                     className="sc-cMljjf kJTGaR"
@@ -6497,7 +6497,7 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                   </span>
                 </div>
                 <div
-                  className="sc-jlyJG bgYmyI"
+                  className="sc-jlyJG jRHXbY"
                 >
                   <div
                     className="sc-hzDkRC dpueNm"
@@ -6542,7 +6542,7 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-jhAzac dbpEpo"
+                    className="sc-jhAzac ighWHl"
                   >
                     <div
                       className="sc-fMiknA hHUDtf"
@@ -6579,7 +6579,7 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                   </div>
                 </div>
                 <div
-                  className="sc-gPEVay eMgGuc"
+                  className="sc-gPEVay fQwxMk"
                 >
                   <div
                     className="sc-cMljjf kJTGaR"
@@ -6960,7 +6960,7 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                   </span>
                 </div>
                 <div
-                  className="sc-jlyJG bgYmyI"
+                  className="sc-jlyJG jRHXbY"
                 >
                   <div
                     className="sc-hzDkRC dpueNm"
@@ -7005,7 +7005,7 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-jhAzac dbpEpo"
+                    className="sc-jhAzac ighWHl"
                   >
                     <div
                       className="sc-fMiknA hHUDtf"
@@ -7045,7 +7045,7 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                   </div>
                 </div>
                 <div
-                  className="sc-gPEVay eMgGuc"
+                  className="sc-gPEVay fQwxMk"
                 >
                   <div
                     className="sc-cMljjf kJTGaR"
@@ -7426,7 +7426,7 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                   </span>
                 </div>
                 <div
-                  className="sc-jlyJG bgYmyI"
+                  className="sc-jlyJG jRHXbY"
                 >
                   <div
                     className="sc-hzDkRC dpueNm"
@@ -7471,7 +7471,7 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-jhAzac dbpEpo"
+                    className="sc-jhAzac ighWHl"
                   >
                     <div
                       className="sc-fMiknA hHUDtf"
@@ -7504,7 +7504,7 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                   </div>
                 </div>
                 <div
-                  className="sc-gPEVay eMgGuc"
+                  className="sc-gPEVay fQwxMk"
                 >
                   <div
                     className="sc-cMljjf kJTGaR"
@@ -8716,7 +8716,7 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                   </span>
                 </div>
                 <div
-                  className="sc-jlyJG bgYmyI"
+                  className="sc-jlyJG jRHXbY"
                 >
                   <div
                     className="sc-hzDkRC dpueNm"
@@ -8761,7 +8761,7 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                     </div>
                   </div>
                   <div
-                    className="sc-jhAzac dbpEpo"
+                    className="sc-jhAzac ighWHl"
                   >
                     <div
                       className="sc-fMiknA hHUDtf"
@@ -8798,7 +8798,7 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                   </div>
                 </div>
                 <div
-                  className="sc-gPEVay eMgGuc"
+                  className="sc-gPEVay fQwxMk"
                 >
                   <div
                     className="sc-cMljjf kJTGaR"
@@ -9077,7 +9077,7 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                   </span>
                 </div>
                 <div
-                  className="sc-jlyJG bgYmyI"
+                  className="sc-jlyJG jRHXbY"
                 >
                   <div
                     className="sc-hzDkRC dpueNm"
@@ -9122,7 +9122,7 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                     </div>
                   </div>
                   <div
-                    className="sc-jhAzac dbpEpo"
+                    className="sc-jhAzac ighWHl"
                   >
                     <div
                       className="sc-fMiknA hHUDtf"
@@ -9162,7 +9162,7 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                   </div>
                 </div>
                 <div
-                  className="sc-gPEVay eMgGuc"
+                  className="sc-gPEVay fQwxMk"
                 >
                   <div
                     className="sc-cMljjf kJTGaR"
@@ -9441,7 +9441,7 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                   </span>
                 </div>
                 <div
-                  className="sc-jlyJG bgYmyI"
+                  className="sc-jlyJG jRHXbY"
                 >
                   <div
                     className="sc-hzDkRC dpueNm"
@@ -9486,7 +9486,7 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                     </div>
                   </div>
                   <div
-                    className="sc-jhAzac dbpEpo"
+                    className="sc-jhAzac ighWHl"
                   >
                     <div
                       className="sc-fMiknA hHUDtf"
@@ -9519,7 +9519,7 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                   </div>
                 </div>
                 <div
-                  className="sc-gPEVay eMgGuc"
+                  className="sc-gPEVay fQwxMk"
                 >
                   <div
                     className="sc-cMljjf kJTGaR"
@@ -10629,7 +10629,7 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                   </span>
                 </div>
                 <div
-                  className="sc-jlyJG bgYmyI"
+                  className="sc-jlyJG jRHXbY"
                 >
                   <div
                     className="sc-hzDkRC dpueNm"
@@ -10674,7 +10674,7 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-jhAzac dbpEpo"
+                    className="sc-jhAzac ighWHl"
                   >
                     <div
                       className="sc-fMiknA hHUDtf"
@@ -10711,7 +10711,7 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                   </div>
                 </div>
                 <div
-                  className="sc-gPEVay eMgGuc"
+                  className="sc-gPEVay fQwxMk"
                 >
                   <div
                     className="sc-cMljjf kJTGaR"
@@ -10990,7 +10990,7 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                   </span>
                 </div>
                 <div
-                  className="sc-jlyJG bgYmyI"
+                  className="sc-jlyJG jRHXbY"
                 >
                   <div
                     className="sc-hzDkRC dpueNm"
@@ -11035,7 +11035,7 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-jhAzac dbpEpo"
+                    className="sc-jhAzac ighWHl"
                   >
                     <div
                       className="sc-fMiknA hHUDtf"
@@ -11075,7 +11075,7 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                   </div>
                 </div>
                 <div
-                  className="sc-gPEVay eMgGuc"
+                  className="sc-gPEVay fQwxMk"
                 >
                   <div
                     className="sc-cMljjf kJTGaR"
@@ -11354,7 +11354,7 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                   </span>
                 </div>
                 <div
-                  className="sc-jlyJG bgYmyI"
+                  className="sc-jlyJG jRHXbY"
                 >
                   <div
                     className="sc-hzDkRC dpueNm"
@@ -11399,7 +11399,7 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                     </div>
                   </div>
                   <div
-                    className="sc-jhAzac dbpEpo"
+                    className="sc-jhAzac ighWHl"
                   >
                     <div
                       className="sc-fMiknA hHUDtf"
@@ -11432,7 +11432,7 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                   </div>
                 </div>
                 <div
-                  className="sc-gPEVay eMgGuc"
+                  className="sc-gPEVay fQwxMk"
                 >
                   <div
                     className="sc-cMljjf kJTGaR"
@@ -12742,7 +12742,7 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                   </span>
                 </div>
                 <div
-                  className="sc-jlyJG bgYmyI"
+                  className="sc-jlyJG jRHXbY"
                 >
                   <div
                     className="sc-hzDkRC dpueNm"
@@ -12787,7 +12787,7 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                     </div>
                   </div>
                   <div
-                    className="sc-jhAzac dbpEpo"
+                    className="sc-jhAzac ighWHl"
                   >
                     <div
                       className="sc-fMiknA hHUDtf"
@@ -12824,7 +12824,7 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                   </div>
                 </div>
                 <div
-                  className="sc-gPEVay eMgGuc"
+                  className="sc-gPEVay fQwxMk"
                 >
                   <div
                     className="sc-cMljjf kJTGaR"
@@ -13205,7 +13205,7 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                   </span>
                 </div>
                 <div
-                  className="sc-jlyJG bgYmyI"
+                  className="sc-jlyJG jRHXbY"
                 >
                   <div
                     className="sc-hzDkRC dpueNm"
@@ -13250,7 +13250,7 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                     </div>
                   </div>
                   <div
-                    className="sc-jhAzac dbpEpo"
+                    className="sc-jhAzac ighWHl"
                   >
                     <div
                       className="sc-fMiknA hHUDtf"
@@ -13290,7 +13290,7 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                   </div>
                 </div>
                 <div
-                  className="sc-gPEVay eMgGuc"
+                  className="sc-gPEVay fQwxMk"
                 >
                   <div
                     className="sc-cMljjf kJTGaR"
@@ -13671,7 +13671,7 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                   </span>
                 </div>
                 <div
-                  className="sc-jlyJG bgYmyI"
+                  className="sc-jlyJG jRHXbY"
                 >
                   <div
                     className="sc-hzDkRC dpueNm"
@@ -13716,7 +13716,7 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                     </div>
                   </div>
                   <div
-                    className="sc-jhAzac dbpEpo"
+                    className="sc-jhAzac ighWHl"
                   >
                     <div
                       className="sc-fMiknA hHUDtf"
@@ -13749,7 +13749,7 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                   </div>
                 </div>
                 <div
-                  className="sc-gPEVay eMgGuc"
+                  className="sc-gPEVay fQwxMk"
                 >
                   <div
                     className="sc-cMljjf kJTGaR"
@@ -14182,7 +14182,7 @@ exports[`Snapshots PostsTable should show search terms on report 1`] = `
         className="sc-hSdWYo EDDdJ"
       >
         <section
-          className="sc-eHgmQL eNUkpl"
+          className="sc-eHgmQL hRxedP"
         >
           <span
             style={
@@ -14236,7 +14236,7 @@ exports[`Snapshots PostsTable should show search terms on report 1`] = `
           />
         </section>
         <section
-          className="sc-jWBwVP eBNQRi"
+          className="sc-jWBwVP iFeJse"
         >
           <span
             style={
@@ -14299,7 +14299,7 @@ exports[`Snapshots PostsTable should show search terms on report 1`] = `
             </span>
           </div>
           <div
-            className="sc-jlyJG bgYmyI"
+            className="sc-jlyJG jRHXbY"
           >
             <div
               className="sc-hzDkRC dpueNm"
@@ -14344,7 +14344,7 @@ exports[`Snapshots PostsTable should show search terms on report 1`] = `
               </div>
             </div>
             <div
-              className="sc-jhAzac dbpEpo"
+              className="sc-jhAzac ighWHl"
             >
               <div
                 className="sc-fMiknA hHUDtf"
@@ -14381,7 +14381,7 @@ exports[`Snapshots PostsTable should show search terms on report 1`] = `
             </div>
           </div>
           <div
-            className="sc-gPEVay eMgGuc"
+            className="sc-gPEVay fQwxMk"
           >
             <div
               className="sc-cMljjf kJTGaR"
@@ -14762,7 +14762,7 @@ exports[`Snapshots PostsTable should show search terms on report 1`] = `
             </span>
           </div>
           <div
-            className="sc-jlyJG bgYmyI"
+            className="sc-jlyJG jRHXbY"
           >
             <div
               className="sc-hzDkRC dpueNm"
@@ -14807,7 +14807,7 @@ exports[`Snapshots PostsTable should show search terms on report 1`] = `
               </div>
             </div>
             <div
-              className="sc-jhAzac dbpEpo"
+              className="sc-jhAzac ighWHl"
             >
               <div
                 className="sc-fMiknA hHUDtf"
@@ -14847,7 +14847,7 @@ exports[`Snapshots PostsTable should show search terms on report 1`] = `
             </div>
           </div>
           <div
-            className="sc-gPEVay eMgGuc"
+            className="sc-gPEVay fQwxMk"
           >
             <div
               className="sc-cMljjf kJTGaR"
@@ -15228,7 +15228,7 @@ exports[`Snapshots PostsTable should show search terms on report 1`] = `
             </span>
           </div>
           <div
-            className="sc-jlyJG bgYmyI"
+            className="sc-jlyJG jRHXbY"
           >
             <div
               className="sc-hzDkRC dpueNm"
@@ -15273,7 +15273,7 @@ exports[`Snapshots PostsTable should show search terms on report 1`] = `
               </div>
             </div>
             <div
-              className="sc-jhAzac dbpEpo"
+              className="sc-jhAzac ighWHl"
             >
               <div
                 className="sc-fMiknA hHUDtf"
@@ -15306,7 +15306,7 @@ exports[`Snapshots PostsTable should show search terms on report 1`] = `
             </div>
           </div>
           <div
-            className="sc-gPEVay eMgGuc"
+            className="sc-gPEVay fQwxMk"
           >
             <div
               className="sc-cMljjf kJTGaR"

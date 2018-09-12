@@ -26,7 +26,7 @@ const Legend = styled.section`
 `;
 
 const FilterLegend = styled.section`
-  width: 671px;
+  width: 40rem;
   overflow: hidden;
   white-space: nowrap;
   position: relative;
@@ -48,6 +48,8 @@ const Fade = styled.span`
 const SortByLegend = styled.section`
   border-left: 1px dotted #c1ccd5;
   padding: 0 0 0 1rem;
+  width: 220px;
+  box-sizing: border-box;
 `;
 
 const MetricWrapper = styled.span`
