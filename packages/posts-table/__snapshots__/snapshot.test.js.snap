@@ -10,7 +10,7 @@ exports[`Snapshots BreakdownLegend for long tag lists it should fade the overflo
     }
   >
     <section
-      className="sc-hSdWYo EDDdJ"
+      className="sc-hSdWYo VQMKf"
     >
       <section
         className="sc-eHgmQL hRxedP"
@@ -28,7 +28,7 @@ exports[`Snapshots BreakdownLegend for long tag lists it should fade the overflo
           Showing 
           4
            
-          post
+          posts
            
           filtered by
         </span>
@@ -85,7 +85,7 @@ exports[`Snapshots BreakdownLegend for long tag lists it should fade the overflo
         />
       </section>
       <section
-        className="sc-jWBwVP iFeJse"
+        className="sc-jWBwVP ciniVD"
       >
         <span
           style={
@@ -139,7 +139,7 @@ exports[`Snapshots BreakdownLegend if there are no filters it displays "X posts 
     }
   >
     <section
-      className="sc-hSdWYo EDDdJ"
+      className="sc-hSdWYo VQMKf"
     >
       <section
         className="sc-eHgmQL hRxedP"
@@ -157,7 +157,7 @@ exports[`Snapshots BreakdownLegend if there are no filters it displays "X posts 
           Showing 
           4
            
-          post
+          posts
            
           in total
         </span>
@@ -166,7 +166,7 @@ exports[`Snapshots BreakdownLegend if there are no filters it displays "X posts 
         />
       </section>
       <section
-        className="sc-jWBwVP iFeJse"
+        className="sc-jWBwVP ciniVD"
       >
         <span
           style={
@@ -220,7 +220,7 @@ exports[`Snapshots BreakdownLegend mentions the search order for the selected me
     }
   >
     <section
-      className="sc-hSdWYo EDDdJ"
+      className="sc-hSdWYo VQMKf"
     >
       <section
         className="sc-eHgmQL hRxedP"
@@ -238,7 +238,7 @@ exports[`Snapshots BreakdownLegend mentions the search order for the selected me
           Showing 
           4
            
-          post
+          posts
            
           in total
         </span>
@@ -247,7 +247,7 @@ exports[`Snapshots BreakdownLegend mentions the search order for the selected me
         />
       </section>
       <section
-        className="sc-jWBwVP iFeJse"
+        className="sc-jWBwVP ciniVD"
       >
         <span
           style={
@@ -301,7 +301,7 @@ exports[`Snapshots BreakdownLegend should show search terms used for filtering 1
     }
   >
     <section
-      className="sc-hSdWYo EDDdJ"
+      className="sc-hSdWYo VQMKf"
     >
       <section
         className="sc-eHgmQL hRxedP"
@@ -319,7 +319,7 @@ exports[`Snapshots BreakdownLegend should show search terms used for filtering 1
           Showing 
           4
            
-          post
+          posts
            
           filtered by
         </span>
@@ -360,7 +360,7 @@ exports[`Snapshots BreakdownLegend should show search terms used for filtering 1
         />
       </section>
       <section
-        className="sc-jWBwVP iFeJse"
+        className="sc-jWBwVP ciniVD"
       >
         <span
           style={
@@ -14187,7 +14187,7 @@ exports[`Snapshots PostsTable should show search terms on report 1`] = `
       className="sc-cHGsZl dBfwaH"
     >
       <section
-        className="sc-hSdWYo EDDdJ"
+        className="sc-hSdWYo VQMKf"
       >
         <section
           className="sc-eHgmQL hRxedP"
@@ -14205,7 +14205,7 @@ exports[`Snapshots PostsTable should show search terms on report 1`] = `
             Showing 
             3
              
-            post
+            posts
              
             filtered by
           </span>
@@ -14246,7 +14246,7 @@ exports[`Snapshots PostsTable should show search terms on report 1`] = `
           />
         </section>
         <section
-          className="sc-jWBwVP iFeJse"
+          className="sc-jWBwVP ciniVD"
         >
           <span
             style={
