@@ -46,6 +46,7 @@ PostsTableWrapper.propTypes = {
 export default connect(
   state => ({
     loading: state.posts.loading,
+    searching: state.posts.searching,
     timezone: state.profiles.selectedProfile ? state.profiles.selectedProfile.timezone : '',
     metrics: state.posts.posts,
     startDate: state.date.startDate,

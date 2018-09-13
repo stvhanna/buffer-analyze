@@ -21,6 +21,7 @@ const ChartContainer = styled.div`
   border-radius: 2px;
   font-size: 12px;
   min-height: 177px;
+  opacity: ${props => (props.searching ? '.3' : '1')};
 `;
 
 const PostsTableWrapper = styled.ol`
@@ -82,7 +83,7 @@ export const Table = (props) => {
   const maxAudienceValue = getMaxMetricValue(topPosts, audienceMetrics);
 
   return (
-    <ChartContainer>
+    <ChartContainer searching={props.searching}>
       {props.forReport && <BreakdownLegend
         posts={topPosts.length}
         searchTerms={props.searchTerms}
@@ -148,6 +149,7 @@ const PostsTable = (props) => {
     profileService,
     selectedProfileId,
     loading,
+    searching,
     timezone,
     isDropdownOpen,
     isDescendingSelected,
@@ -170,7 +172,7 @@ const PostsTable = (props) => {
     defaultSortMetrics[profileService] : selectedMetric;
 
   let content = null;
-  if (loading) {
+  if (loading && !searching) {
     content = <Loading active noBorder large />;
   } else if (topPosts.length === 0) {
     content = <NoData />;
@@ -178,6 +180,7 @@ const PostsTable = (props) => {
     content = (
       <div>
         <Table
+          searching={searching}
           metrics={metrics}
           timezone={timezone}
           service={profileService}

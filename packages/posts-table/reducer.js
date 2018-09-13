@@ -14,6 +14,7 @@ export const actionTypes = keyWrapper('POSTS_TABLE', {
 const initialState = {
   posts: [],
   loading: true,
+  searching: false,
   metrics: [],
   isDropdownOpen: false,
   isDescendingSelected: true,
@@ -27,6 +28,7 @@ export default (state = initialState, action) => {
     case `posts_${asyncDataFetchActionTypes.FETCH_START}`:
       return {
         ...initialState,
+        posts: state.posts,
         activePostsCount: parseInt(state.activePostsCount, 10),
         selectedMetric: state.selectedMetric,
         isDescendingSelected: state.isDescendingSelected,
@@ -36,6 +38,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         loading: false,
+        searching: false,
         posts: action.result,
       };
     case actionTypes.SELECT_TOP_POSTS_METRIC:
@@ -66,6 +69,7 @@ export default (state = initialState, action) => {
     case actionTypes.SEARCH:
       return {
         ...state,
+        searching: true,
         searchTerms: action.tags,
       };
     default:
