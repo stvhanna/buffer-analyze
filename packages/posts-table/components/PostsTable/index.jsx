@@ -8,6 +8,7 @@ import {
   ChartCard,
   ChartHeader,
 } from '@bufferapp/analyze-shared-components';
+import Text from '@bufferapp/components/Text';
 
 import Title from '../Title';
 import PostItem from './components/PostItem';
@@ -175,7 +176,11 @@ const PostsTable = (props) => {
   if (loading && !searching) {
     content = <Loading active noBorder large />;
   } else if (topPosts.length === 0) {
-    content = <NoData />;
+    if (searchTerms.length) {
+      content = (<NoData>
+        <Text>There are no posts in this date range that match your terms</Text>
+      </NoData>);
+    } else content = <NoData />;
   } else {
     content = (
       <div>
@@ -225,6 +230,7 @@ const PostsTable = (props) => {
 PostsTable.defaultProps = {
   isDropdownOpen: false,
   loading: false,
+  searching: false,
   addToReportButton: null,
   selectedProfileId: null,
   exporting: undefined,
@@ -233,6 +239,7 @@ PostsTable.defaultProps = {
 
 PostsTable.propTypes = {
   loading: PropTypes.bool,
+  searching: PropTypes.bool,
   timezone: PropTypes.string.isRequired,
   profileService: PropTypes.string.isRequired,
   metrics: PropTypes.arrayOf(PropTypes.shape({
@@ -263,7 +270,7 @@ PostsTable.propTypes = {
   addToReportButton: PropTypes.element,
   selectedProfileId: PropTypes.string,
   exporting: PropTypes.bool,
-  searchTerms: PropTypes.arrayOf(PropTypes.string)
+  searchTerms: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default PostsTable;

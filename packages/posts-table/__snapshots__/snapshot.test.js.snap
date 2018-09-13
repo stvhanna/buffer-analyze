@@ -5359,7 +5359,7 @@ exports[`Snapshots PostsTable should render a "no data" state with controls if t
                   }
                 }
               >
-                There are no analytics for this date range
+                There are no posts in this date range that match your terms
               </span>
             </h1>
           </div>
