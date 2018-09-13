@@ -20,9 +20,9 @@ const Tag = styled.span`
 `;
 
 const Legend = styled.section`
-  padding-bottom: 1rem;
   display: flex;
   align-items: center;
+  padding-bottom: 1rem;
 `;
 
 const FilterLegend = styled.section`
@@ -46,7 +46,6 @@ const Fade = styled.span`
 `;
 
 const SortByLegend = styled.section`
-  border-left: 1px dotted #c1ccd5;
   padding: 0 0 0 1rem;
   width: 220px;
   box-sizing: border-box;
@@ -65,7 +64,7 @@ const BreakdownLegend = ({ posts, searchTerms, selectedMetric, descending }) => 
   return (
     <Legend>
       <FilterLegend>
-        <Text color="outerSpace" size="extra-small" weight="bold">Showing {posts} posts { searchTerms.length ? 'filtered by' : 'in total' }</Text>
+        <Text color="outerSpace" size="extra-small" weight="bold">Showing {posts} {posts > 1 ? 'posts' : 'post' } { searchTerms.length ? 'filtered by' : 'in total' }</Text>
         {searchTerms.map(term => <Tag><Text color="white" size="extra-small">{term}</Text></Tag>)}
         <Fade />
       </FilterLegend>

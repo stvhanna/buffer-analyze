@@ -27,7 +27,9 @@ exports[`Snapshots BreakdownLegend for long tag lists it should fade the overflo
         >
           Showing 
           4
-           posts 
+           
+          post
+           
           filtered by
         </span>
         <span
@@ -154,7 +156,9 @@ exports[`Snapshots BreakdownLegend if there are no filters it displays "X posts 
         >
           Showing 
           4
-           posts 
+           
+          post
+           
           in total
         </span>
         <span
@@ -233,7 +237,9 @@ exports[`Snapshots BreakdownLegend mentions the search order for the selected me
         >
           Showing 
           4
-           posts 
+           
+          post
+           
           in total
         </span>
         <span
@@ -312,7 +318,9 @@ exports[`Snapshots BreakdownLegend should show search terms used for filtering 1
         >
           Showing 
           4
-           posts 
+           
+          post
+           
           filtered by
         </span>
         <span
@@ -14196,7 +14204,9 @@ exports[`Snapshots PostsTable should show search terms on report 1`] = `
           >
             Showing 
             3
-             posts 
+             
+            post
+             
             filtered by
           </span>
           <span
