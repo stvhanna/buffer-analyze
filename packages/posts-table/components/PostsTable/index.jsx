@@ -173,9 +173,9 @@ const PostsTable = (props) => {
     defaultSortMetrics[profileService] : selectedMetric;
 
   let content = null;
-  if (loading && !searching) {
+  if ((loading && !searching) || (searching && topPosts.length === 0)) {
     content = <Loading active noBorder large />;
-  } else if (topPosts.length === 0) {
+  } else if (topPosts.length === 0 && !loading) {
     if (searchTerms.length) {
       content = (<NoData>
         <Text>There are no posts in this date range that match your terms</Text>
