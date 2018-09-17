@@ -24,14 +24,11 @@ const PostRow = styled.li`
   &:first-child > div {
     border-top: 1px dotted ${geyser};
   }
-
-  &:last-child > div {
-    border-bottom: none;
-  }
 `;
 
 const MetricCellInner = styled.div`
   color: ${outerSpace};
+  box-sizing: border-box;
   padding: 1rem 0;
   width: 220px;
   padding-left: 1rem;
@@ -55,7 +52,6 @@ const ContentCell = styled.div`
   color: ${outerSpace};
   padding: 1rem 1rem 1.25rem;
   padding-right: 1rem;
-  width: 620px;
   vertical-align: top;
   border-bottom: 1px dotted ${geyser};
 `;
@@ -112,7 +108,7 @@ const PostContent = styled.div`
   justify-content: space-between;
   padding-top: 0px;
   height: 107px;
-  width: calc(620px - 2rem);
+  width: calc(620px - 5rem);
 `;
 
 const ViewPostLinkClass = styled.a`

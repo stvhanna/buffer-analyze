@@ -4,11 +4,13 @@ import PropTypes from 'prop-types';
 import PostOrderSwitch from './components/PostOrderSwitch';
 import TopPostsDropdown from './components/TopPostsDropdown';
 import PostsCountBar from './components/PostsCountBar';
+import Searchbox from '../Searchbox/index.jsx';
 
 const topPostsHeaderContainer = {
   padding: '0 0 1rem',
   display: 'flex',
   justifyContent: 'space-between',
+  alignItems: 'center',
 };
 
 const TopPostsHeader = ({
@@ -22,13 +24,11 @@ const TopPostsHeader = ({
   handlePostsSortClick,
   activePostsCount,
   postsCounts,
+  search,
+  searchTerms,
 }) =>
   <div style={topPostsHeaderContainer}>
-    <PostsCountBar
-      handlePostsCountClick={handlePostsCountClick}
-      activePostsCount={activePostsCount}
-      postsCounts={postsCounts}
-    />
+    <Searchbox search={search} searchTerms={searchTerms} />
     <TopPostsDropdown
       metrics={metrics}
       selectedMetric={selectedMetric}

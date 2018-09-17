@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Text from '@bufferapp/components/Text';
 
@@ -32,16 +33,24 @@ const Header = styled.h1`
   margin: 0 0 0.1rem;
 `;
 
-const NoData = () => (
+const NoData = ({ children }) => (
   <Container>
     <Message>
       <Image />
       <Header>
-        <Text>There are no analytics for this date range</Text>
+        {children || (<Text>There are no analytics for this date range</Text>) }
       </Header>
     </Message>
   </Container>
 );
+
+NoData.defaultProps = {
+  children: null,
+};
+
+NoData.propTypes = {
+  children: PropTypes.node,
+};
 
 export default NoData;
 

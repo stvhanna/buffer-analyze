@@ -90,7 +90,7 @@ module.exports = method(
                 }
                 return Object.assign(chart, {
                   metrics: chartMetrics[index],
-                });
+                }, chart.state);
               })
               .filter(chart => RPC_ENDPOINTS[chart.chart_id] !== undefined),
           }));

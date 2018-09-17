@@ -87,6 +87,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
           sortBy: action.metric.apiKey,
           descending: getState().posts.isDescendingSelected,
           limit: getState().posts.activePostsCount,
+          searchTerms: getState().posts.searchTerms,
         },
       }));
       break;
@@ -100,6 +101,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
           sortBy: getState().posts.selectedMetric.apiKey,
           descending: getState().posts.isDescendingSelected,
           limit: action.postsCount !== 'All' ? action.postsCount : undefined,
+          searchTerms: getState().posts.searchTerms,
         },
       }));
       break;
@@ -113,6 +115,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
           sortBy: getState().posts.selectedMetric.apiKey,
           descending: action.isDescendingSelected,
           limit: getState().posts.activePostsCount,
+          searchTerms: getState().posts.searchTerms,
         },
       }));
       break;
@@ -123,6 +126,7 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
           profileId: action.profile.id,
           startDate: getState().date.startDate,
           endDate: getState().date.endDate,
+          limit: getState().posts.activePostsCount,
         },
       }));
       break;
@@ -137,9 +141,24 @@ export default store => next => (action) => { // eslint-disable-line no-unused-v
             sortBy: getState().posts.selectedMetric.apiKey,
             descending: getState().posts.isDescendingSelected,
             limit: getState().posts.activePostsCount,
+            searchTerms: getState().posts.searchTerms,
           },
         }));
       }
+      break;
+    case postsActionTypes.SEARCH:
+      dispatch(actions.fetch({
+        name: 'posts',
+        args: {
+          profileId: getState().profiles.selectedProfileId,
+          startDate: getState().date.startDate,
+          endDate: getState().date.endDate,
+          sortBy: getState().posts.selectedMetric.apiKey,
+          descending: getState().posts.isDescendingSelected,
+          limit: getState().posts.activePostsCount,
+          searchTerms: action.tags,
+        },
+      }));
       break;
     default:
       break;

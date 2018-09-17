@@ -110,6 +110,7 @@ describe('middleware', () => {
         profileId: '12359182129asd',
         startDate: state.date.startDate,
         endDate: state.date.endDate,
+        limit: state.posts.activePostsCount,
       },
     }));
     expect(next).toHaveBeenCalledWith(action);
@@ -228,6 +229,27 @@ describe('middleware', () => {
       media: ['https://buffer-media-uploads.s3.amazonaws.com/59d7c0dcefda0ca07a6d3be1/c4e1cd9d92da1b945aeaad71f8154255628d9409_1b29af5b1f061c5cb5660ec649bc8932eb722c96_twitter', 'https://buffer-media-uploads.s3.amazonaws.com/56c20bd3bd3816f63c94c73f/597120f6a73330a8620f1e50/output/c5101f2498252c9d182ac27a4b4d8a84.original.mp4'],
     };
     expect(store.dispatch).toHaveBeenCalledWith(exportCSVActions.exportChart('posts', csvData));
+  });
+
+  it('shoud dispatch a data fetch for posts once there are new search terms', () => {
+    const action = {
+      type: postsActionTypes.SEARCH,
+      tags: ['#buffercommunity'],
+    };
+    middleware(store)(next)(action);
+    expect(store.dispatch).toHaveBeenCalledWith(actions.fetch({
+      name: 'posts',
+      args: {
+        profileId: state.profiles.selectedProfileId,
+        startDate: state.date.startDate,
+        endDate: state.date.endDate,
+        sortBy: state.posts.selectedMetric.apiKey,
+        descending: state.posts.isDescendingSelected,
+        limit: state.posts.activePostsCount,
+        searchTerms: action.tags,
+      },
+    }));
+    expect(next).toHaveBeenCalledWith(action);
   });
 
   afterEach(() => jest.clearAllMocks());

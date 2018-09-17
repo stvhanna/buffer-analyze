@@ -131,6 +131,7 @@ const ChartFactory = ({ charts, moveUp, moveDown, deleteChart, exporting }) =>
         ...chart,
         timezone: chart.profile.timezone,
         service: chart.profile.service,
+        forReport: true,
         exporting,
       })}
     </Separator>

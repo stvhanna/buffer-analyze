@@ -27,6 +27,12 @@ describe('reducer', () => {
     });
     expect(state.loading).toBeFalsy();
   });
+  it('on fetch_success stops searching', () => {
+    const state = reducer(undefined, {
+      type: `posts_${asyncDataFetchActions.FETCH_SUCCESS}`,
+    });
+    expect(state.searching).toBeFalsy();
+  });
   it('updates the state with the posts received on fetch_success', () => {
     const posts = ['one', 'two', 'three'];
     const state = reducer(undefined, {
@@ -81,6 +87,21 @@ describe('reducer', () => {
     });
     expect(newState).toEqual({
       isDescendingSelected: false,
+    });
+  });
+  describe('Search', () => {
+    it('stores the new search terms', () => {
+      const initialState = {};
+      const tags = ['#buffercommunity'];
+      const newState = reducer(initialState, postsActions.search(tags));
+      expect(newState.searchTerms).toEqual(tags);
+    });
+
+    it('sets searching state to true', () => {
+      const initialState = {};
+      const tags = ['#buffercommunity'];
+      const newState = reducer(initialState, postsActions.search(tags));
+      expect(newState.searching).toBe(true);
     });
   });
   // testing actions

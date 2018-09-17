@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
 import { action } from '@storybook/addon-actions';
-import PostsTable from './index';
+import PostsTable, { Table } from './index';
 
 const topPosts = [
   {
@@ -74,7 +74,7 @@ storiesOf('PostsTable')
   .add('should render the posts table', () => (
     <div
       style={{
-        width: '750px',
+        width: '1080px',
       }}
     >
       <PostsTable
@@ -97,7 +97,7 @@ storiesOf('PostsTable')
   .add('should render the posts table with default selected metric', () => (
     <div
       style={{
-        width: '750px',
+        width: '1080px',
       }}
     >
       <PostsTable
@@ -117,7 +117,7 @@ storiesOf('PostsTable')
   .add('should render a loading state', () => (
     <div
       style={{
-        width: '750px',
+        width: '1080px',
       }}
     >
       <PostsTable
@@ -141,7 +141,7 @@ storiesOf('PostsTable')
   .add('should render a "no data" state', () => (
     <div
       style={{
-        width: '750px',
+        width: '1080px',
       }}
     >
       <PostsTable
@@ -161,10 +161,34 @@ storiesOf('PostsTable')
       />
     </div>
   ))
+  .add('should render a "no data" state with controls if the user is searching by keywords', () => (
+    <div
+      style={{
+        width: '1080px',
+      }}
+    >
+      <PostsTable
+        selectedProfileId="foo"
+        timezone={'America/Los_Angeles'}
+        profileService={'facebook'}
+        metrics={[]}
+        selectMetric={action('selectMetric')}
+        selectedMetric={{
+          key: 'post_impressions',
+          label: 'Post Impressions',
+        }}
+        toggleDropdown={action('toggleDropdown')}
+        isDescendingSelected
+        handlePostsCountClick={action('handlePostsCountClick')}
+        activePostsCount={10}
+        searchTerms={['a search', 'with no results']}
+      />
+    </div>
+  ))
   .add('should render the posts table for twitter', () => (
     <div
       style={{
-        width: '750px',
+        width: '1080px',
       }}
     >
       <PostsTable
@@ -187,7 +211,7 @@ storiesOf('PostsTable')
   .add('should render the posts table for instagram', () => (
     <div
       style={{
-        width: '750px',
+        width: '1080px',
       }}
     >
       <PostsTable
@@ -210,7 +234,7 @@ storiesOf('PostsTable')
   .add('should render an empty component if when selected profile is missing', () => (
     <div
       style={{
-        width: '750px',
+        width: '1080px',
       }}
     >
       <PostsTable
@@ -233,7 +257,7 @@ storiesOf('PostsTable')
   .add('should hide posts link on export', () => (
     <div
       style={{
-        width: '750px',
+        width: '1080px',
       }}
     >
       <PostsTable
@@ -251,6 +275,31 @@ storiesOf('PostsTable')
         handlePostsCountClick={action('handlePostsCountClick')}
         activePostsCount={10}
         exporting
+      />
+    </div>
+  ))
+  .add('should show search terms on report', () => (
+    <div
+      style={{
+        width: '1080px',
+        padding: '2rem',
+      }}
+    >
+      <Table
+        selectedProfileId="foo"
+        timezone={'America/Los_Angeles'}
+        service={'facebook'}
+        metrics={topPosts}
+        selectMetric={action('selectMetric')}
+        selectedMetric={{
+          key: 'post_impressions',
+          label: 'Post Impressions',
+        }}
+        toggleDropdown={action('toggleDropdown')}
+        isDescendingSelected
+        handlePostsCountClick={action('handlePostsCountClick')}
+        forReport
+        searchTerms={['#CreativeDrive', 'work for people']}
       />
     </div>
   ));
