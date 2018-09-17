@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/analyze-export-picker",
-  "version": "0.65.1",
+  "version": "0.70.0",
   "description": "Export Dropdown",
   "main": "index.js",
   "scripts": {
@@ -21,8 +21,8 @@
   },
   "author": "me@jamesmorr.is",
   "dependencies": {
-    "@bufferapp/analyze-csv-export": "^0.65.1",
-    "@bufferapp/analyze-png-export": "^0.61.0",
+    "@bufferapp/analyze-csv-export": "^0.70.0",
+    "@bufferapp/analyze-png-export": "^0.70.0",
     "@bufferapp/components": "2.1.1-alpha.6",
     "styled-components": "^2.2.1"
   },
