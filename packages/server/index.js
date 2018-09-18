@@ -25,7 +25,10 @@ const app = express();
 const server = http.createServer(app);
 
 let staticAssets = {
-  'bundle.js': '/static/bundle.js',
+  'bundle.js': 'https://local.buffer.com:8080/static/bundle.js',
+  'bundle.css': 'https://local.buffer.com:8080/static/bundle.css',
+  'vendor.js': 'https://local.buffer.com:8080/static/vendor.js',
+  'vendor.css': 'https://local.buffer.com:8080/static/vendor.css',
 };
 
 // NOTE: Bugsnag will not notify in local setup with current weback configuration
@@ -71,14 +74,14 @@ if (isProduction) {
     ';path=/;expires='+new Date(0).toUTCString();i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}};
   })(window,document,window['_fs_namespace'],'script','user');
   </script>`;
-} else {
-  staticAssets = {
-    'bundle.js': '//analyze.local.buffer.com:8080/static/bundle.js',
-  };
 }
 
+
 const html = fs.readFileSync(join(__dirname, 'index.html'), 'utf8')
+  .replace('{{{vendor}}}', staticAssets['vendor.js'])
+  .replace('{{{vendor-css}}}', staticAssets['vendor.css'])
   .replace('{{{bundle}}}', staticAssets['bundle.js'])
+  .replace('{{{bundle-css}}}', staticAssets['bundle.css'])
   .replace('{{{bugsnagScript}}}', bugsnagScript)
   .replace('{{{headwayScript}}}', headwayScript);
 

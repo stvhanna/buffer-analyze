@@ -6,3 +6,9 @@ coverage
 package-lock.json
 .DS_Store
 packages/buffer-components
+bundle.js
+bundle.js.map
+bundle.css
+vendor*.js
+vendor*.js.map
+vendor*.css
