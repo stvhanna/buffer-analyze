@@ -46,6 +46,7 @@ const NumberCell = styled.div`
   vertical-align: top;
   border-right: 1px dotted ${geyser};
   border-bottom: 1px dotted ${geyser};
+  flex-shrink: 0;
 `;
 
 const ContentCell = styled.div`
@@ -199,7 +200,7 @@ const PostItem = ({
   return (
     <PostRow>
       <NumberCell>
-        <Text size="extra-large" weight="bold" color="outerSpace">{index + 1}</Text>
+        <Text size="large" weight="bold" color="outerSpace">{index + 1}</Text>
       </NumberCell>
       <ContentCell>
         <PostMeta>

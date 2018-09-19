@@ -31,7 +31,7 @@
     "cookie-parser": "1.4.3",
     "express": "4.15.3",
     "jsonwebtoken": "7.4.1",
-    "micro-rpc-client": "0.1.2",
+    "@bufferapp/buffer-rpc": "0.0.2",
     "moment": "^2.18.1",
     "moment-timezone": "0.5.16",
     "node-dogstatsd": "0.0.6",

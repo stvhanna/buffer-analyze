@@ -27,6 +27,7 @@ const uploadReportLogo = require('./uploadReportLogo');
 const deleteReportLogo = require('./deleteReportLogo');
 const profilesOverview = require('./profilesOverview');
 const getAccountDetails = require('./getAccountDetails');
+const hashtags = require('./hashtags');
 
 module.exports = rpc(
   profilesMethod,
@@ -57,4 +58,5 @@ module.exports = rpc(
   deleteReportLogo,
   profilesOverview,
   getAccountDetails,
+  hashtags,
 );

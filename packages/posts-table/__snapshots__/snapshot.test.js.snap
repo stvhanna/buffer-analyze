@@ -753,14 +753,14 @@ exports[`Snapshots PostItem should not render the top posts item when no metrics
       className="sc-jDwBTQ bkdqdM"
     >
       <div
-        className="sc-iRbamj FslKx"
+        className="sc-iRbamj dBPmut"
       >
         <span
           style={
             Object {
               "color": "#323b43",
               "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "1.5rem",
+              "fontSize": "1.25rem",
               "fontWeight": 700,
             }
           }
@@ -868,14 +868,14 @@ exports[`Snapshots PostItem should render the top posts item 1`] = `
       className="sc-jDwBTQ bkdqdM"
     >
       <div
-        className="sc-iRbamj FslKx"
+        className="sc-iRbamj dBPmut"
       >
         <span
           style={
             Object {
               "color": "#323b43",
               "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "1.5rem",
+              "fontSize": "1.25rem",
               "fontWeight": 700,
             }
           }
@@ -1549,7 +1549,7 @@ exports[`Snapshots PostsHeader should render top posts header 1`] = `
           "alignItems": "center",
           "display": "flex",
           "justifyContent": "space-between",
-          "padding": "0 0 1rem",
+          "padding": "0.75rem 1.5rem 2rem",
         }
       }
     >
@@ -2346,7 +2346,7 @@ exports[`Snapshots PostsTable should hide posts link on export 1`] = `
         </h2>
       </header>
       <div
-        className="sc-kgAjT bskhOf"
+        className="sc-kgAjT eSFdiU"
       >
         <div
           style={
@@ -2354,7 +2354,7 @@ exports[`Snapshots PostsTable should hide posts link on export 1`] = `
               "alignItems": "center",
               "display": "flex",
               "justifyContent": "space-between",
-              "padding": "0 0 1rem",
+              "padding": "0.75rem 1.5rem 2rem",
             }
           }
         >
@@ -3093,14 +3093,14 @@ exports[`Snapshots PostsTable should hide posts link on export 1`] = `
                 className="sc-jDwBTQ bkdqdM"
               >
                 <div
-                  className="sc-iRbamj FslKx"
+                  className="sc-iRbamj dBPmut"
                 >
                   <span
                     style={
                       Object {
                         "color": "#323b43",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "1.5rem",
+                        "fontSize": "1.25rem",
                         "fontWeight": 700,
                       }
                     }
@@ -3432,14 +3432,14 @@ exports[`Snapshots PostsTable should hide posts link on export 1`] = `
                 className="sc-jDwBTQ bkdqdM"
               >
                 <div
-                  className="sc-iRbamj FslKx"
+                  className="sc-iRbamj dBPmut"
                 >
                   <span
                     style={
                       Object {
                         "color": "#323b43",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "1.5rem",
+                        "fontSize": "1.25rem",
                         "fontWeight": 700,
                       }
                     }
@@ -3774,14 +3774,14 @@ exports[`Snapshots PostsTable should hide posts link on export 1`] = `
                 className="sc-jDwBTQ bkdqdM"
               >
                 <div
-                  className="sc-iRbamj FslKx"
+                  className="sc-iRbamj dBPmut"
                 >
                   <span
                     style={
                       Object {
                         "color": "#323b43",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "1.5rem",
+                        "fontSize": "1.25rem",
                         "fontWeight": 700,
                       }
                     }
@@ -4193,7 +4193,7 @@ exports[`Snapshots PostsTable should render a "no data" state 1`] = `
         </h2>
       </header>
       <div
-        className="sc-kgAjT bskhOf"
+        className="sc-kgAjT eSFdiU"
       >
         <div
           className="sc-htpNat klaPdF"
@@ -4261,7 +4261,7 @@ exports[`Snapshots PostsTable should render a "no data" state with controls if t
         </h2>
       </header>
       <div
-        className="sc-kgAjT bskhOf"
+        className="sc-kgAjT eSFdiU"
       >
         <div
           style={
@@ -4269,7 +4269,7 @@ exports[`Snapshots PostsTable should render a "no data" state with controls if t
               "alignItems": "center",
               "display": "flex",
               "justifyContent": "space-between",
-              "padding": "0 0 1rem",
+              "padding": "0.75rem 1.5rem 2rem",
             }
           }
         >
@@ -5411,7 +5411,7 @@ exports[`Snapshots PostsTable should render a loading state 1`] = `
         </h2>
       </header>
       <div
-        className="sc-kgAjT bskhOf"
+        className="sc-kgAjT eSFdiU"
       >
         <div
           className="sc-bwzfXH cXJzrG"
@@ -5542,7 +5542,7 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
         </h2>
       </header>
       <div
-        className="sc-kgAjT bskhOf"
+        className="sc-kgAjT eSFdiU"
       >
         <div
           style={
@@ -5550,7 +5550,7 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
               "alignItems": "center",
               "display": "flex",
               "justifyContent": "space-between",
-              "padding": "0 0 1rem",
+              "padding": "0.75rem 1.5rem 2rem",
             }
           }
         >
@@ -6489,14 +6489,14 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                 className="sc-jDwBTQ bkdqdM"
               >
                 <div
-                  className="sc-iRbamj FslKx"
+                  className="sc-iRbamj dBPmut"
                 >
                   <span
                     style={
                       Object {
                         "color": "#323b43",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "1.5rem",
+                        "fontSize": "1.25rem",
                         "fontWeight": 700,
                       }
                     }
@@ -6952,14 +6952,14 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                 className="sc-jDwBTQ bkdqdM"
               >
                 <div
-                  className="sc-iRbamj FslKx"
+                  className="sc-iRbamj dBPmut"
                 >
                   <span
                     style={
                       Object {
                         "color": "#323b43",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "1.5rem",
+                        "fontSize": "1.25rem",
                         "fontWeight": 700,
                       }
                     }
@@ -7418,14 +7418,14 @@ exports[`Snapshots PostsTable should render the posts table 1`] = `
                 className="sc-jDwBTQ bkdqdM"
               >
                 <div
-                  className="sc-iRbamj FslKx"
+                  className="sc-iRbamj dBPmut"
                 >
                   <span
                     style={
                       Object {
                         "color": "#323b43",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "1.5rem",
+                        "fontSize": "1.25rem",
                         "fontWeight": 700,
                       }
                     }
@@ -7961,7 +7961,7 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
         </h2>
       </header>
       <div
-        className="sc-kgAjT bskhOf"
+        className="sc-kgAjT eSFdiU"
       >
         <div
           style={
@@ -7969,7 +7969,7 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
               "alignItems": "center",
               "display": "flex",
               "justifyContent": "space-between",
-              "padding": "0 0 1rem",
+              "padding": "0.75rem 1.5rem 2rem",
             }
           }
         >
@@ -8708,14 +8708,14 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                 className="sc-jDwBTQ bkdqdM"
               >
                 <div
-                  className="sc-iRbamj FslKx"
+                  className="sc-iRbamj dBPmut"
                 >
                   <span
                     style={
                       Object {
                         "color": "#323b43",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "1.5rem",
+                        "fontSize": "1.25rem",
                         "fontWeight": 700,
                       }
                     }
@@ -9069,14 +9069,14 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                 className="sc-jDwBTQ bkdqdM"
               >
                 <div
-                  className="sc-iRbamj FslKx"
+                  className="sc-iRbamj dBPmut"
                 >
                   <span
                     style={
                       Object {
                         "color": "#323b43",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "1.5rem",
+                        "fontSize": "1.25rem",
                         "fontWeight": 700,
                       }
                     }
@@ -9433,14 +9433,14 @@ exports[`Snapshots PostsTable should render the posts table for instagram 1`] = 
                 className="sc-jDwBTQ bkdqdM"
               >
                 <div
-                  className="sc-iRbamj FslKx"
+                  className="sc-iRbamj dBPmut"
                 >
                   <span
                     style={
                       Object {
                         "color": "#323b43",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "1.5rem",
+                        "fontSize": "1.25rem",
                         "fontWeight": 700,
                       }
                     }
@@ -9874,7 +9874,7 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
         </h2>
       </header>
       <div
-        className="sc-kgAjT bskhOf"
+        className="sc-kgAjT eSFdiU"
       >
         <div
           style={
@@ -9882,7 +9882,7 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
               "alignItems": "center",
               "display": "flex",
               "justifyContent": "space-between",
-              "padding": "0 0 1rem",
+              "padding": "0.75rem 1.5rem 2rem",
             }
           }
         >
@@ -10621,14 +10621,14 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                 className="sc-jDwBTQ bkdqdM"
               >
                 <div
-                  className="sc-iRbamj FslKx"
+                  className="sc-iRbamj dBPmut"
                 >
                   <span
                     style={
                       Object {
                         "color": "#323b43",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "1.5rem",
+                        "fontSize": "1.25rem",
                         "fontWeight": 700,
                       }
                     }
@@ -10982,14 +10982,14 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                 className="sc-jDwBTQ bkdqdM"
               >
                 <div
-                  className="sc-iRbamj FslKx"
+                  className="sc-iRbamj dBPmut"
                 >
                   <span
                     style={
                       Object {
                         "color": "#323b43",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "1.5rem",
+                        "fontSize": "1.25rem",
                         "fontWeight": 700,
                       }
                     }
@@ -11346,14 +11346,14 @@ exports[`Snapshots PostsTable should render the posts table for twitter 1`] = `
                 className="sc-jDwBTQ bkdqdM"
               >
                 <div
-                  className="sc-iRbamj FslKx"
+                  className="sc-iRbamj dBPmut"
                 >
                   <span
                     style={
                       Object {
                         "color": "#323b43",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "1.5rem",
+                        "fontSize": "1.25rem",
                         "fontWeight": 700,
                       }
                     }
@@ -11787,7 +11787,7 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
         </h2>
       </header>
       <div
-        className="sc-kgAjT bskhOf"
+        className="sc-kgAjT eSFdiU"
       >
         <div
           style={
@@ -11795,7 +11795,7 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
               "alignItems": "center",
               "display": "flex",
               "justifyContent": "space-between",
-              "padding": "0 0 1rem",
+              "padding": "0.75rem 1.5rem 2rem",
             }
           }
         >
@@ -12734,14 +12734,14 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                 className="sc-jDwBTQ bkdqdM"
               >
                 <div
-                  className="sc-iRbamj FslKx"
+                  className="sc-iRbamj dBPmut"
                 >
                   <span
                     style={
                       Object {
                         "color": "#323b43",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "1.5rem",
+                        "fontSize": "1.25rem",
                         "fontWeight": 700,
                       }
                     }
@@ -13197,14 +13197,14 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                 className="sc-jDwBTQ bkdqdM"
               >
                 <div
-                  className="sc-iRbamj FslKx"
+                  className="sc-iRbamj dBPmut"
                 >
                   <span
                     style={
                       Object {
                         "color": "#323b43",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "1.5rem",
+                        "fontSize": "1.25rem",
                         "fontWeight": 700,
                       }
                     }
@@ -13663,14 +13663,14 @@ exports[`Snapshots PostsTable should render the posts table with default selecte
                 className="sc-jDwBTQ bkdqdM"
               >
                 <div
-                  className="sc-iRbamj FslKx"
+                  className="sc-iRbamj dBPmut"
                 >
                   <span
                     style={
                       Object {
                         "color": "#323b43",
                         "fontFamily": "\\"Roboto\\", sans-serif",
-                        "fontSize": "1.5rem",
+                        "fontSize": "1.25rem",
                         "fontWeight": 700,
                       }
                     }
@@ -14293,14 +14293,14 @@ exports[`Snapshots PostsTable should show search terms on report 1`] = `
           className="sc-jDwBTQ bkdqdM"
         >
           <div
-            className="sc-iRbamj FslKx"
+            className="sc-iRbamj dBPmut"
           >
             <span
               style={
                 Object {
                   "color": "#323b43",
                   "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1.5rem",
+                  "fontSize": "1.25rem",
                   "fontWeight": 700,
                 }
               }
@@ -14756,14 +14756,14 @@ exports[`Snapshots PostsTable should show search terms on report 1`] = `
           className="sc-jDwBTQ bkdqdM"
         >
           <div
-            className="sc-iRbamj FslKx"
+            className="sc-iRbamj dBPmut"
           >
             <span
               style={
                 Object {
                   "color": "#323b43",
                   "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1.5rem",
+                  "fontSize": "1.25rem",
                   "fontWeight": 700,
                 }
               }
@@ -15222,14 +15222,14 @@ exports[`Snapshots PostsTable should show search terms on report 1`] = `
           className="sc-jDwBTQ bkdqdM"
         >
           <div
-            className="sc-iRbamj FslKx"
+            className="sc-iRbamj dBPmut"
           >
             <span
               style={
                 Object {
                   "color": "#323b43",
                   "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1.5rem",
+                  "fontSize": "1.25rem",
                   "fontWeight": 700,
                 }
               }

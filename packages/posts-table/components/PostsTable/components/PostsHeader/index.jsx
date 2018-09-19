@@ -7,7 +7,7 @@ import PostsCountBar from './components/PostsCountBar';
 import Searchbox from '../Searchbox/index.jsx';
 
 const topPostsHeaderContainer = {
-  padding: '0 0 1rem',
+  padding: '0.75rem 1.5rem 2rem',
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',

@@ -34,6 +34,7 @@ import { middleware as exportToPDFMiddleware } from '@bufferapp/pdf-export';
 import { middleware as earlyAccessMiddleware } from '@bufferapp/analyze-early-access';
 import { middleware as profilesOverviewMiddleware } from '@bufferapp/analyze-profiles-overview';
 import { middleware as accountMiddleware } from '@bufferapp/analyze-account';
+import { middleware as hashtagsMiddleware } from '@bufferapp/hashtags-table';
 import { createMiddleware } from '@bufferapp/buffermetrics/redux';
 import initMiddleware from './initMiddleware';
 
@@ -77,22 +78,25 @@ const configureStore = (initialstate) => {
         postsSummaryMiddleware,
         averageMiddleware,
         postsMiddleware,
+        hashtagsMiddleware,
         compareChartMiddleware,
         audienceChartMiddleware,
         contextualCompareMiddleware,
-        exportToPNGMiddleware,
         addReportMiddleware,
         reportListMiddleware,
-        exportToCSVMiddleware,
         profileSelectorMiddleware,
         reportMiddleware,
-        exportPickerMiddleware,
         comparisonMiddleware,
         hourlyMiddleware,
         environmentMiddleware,
         unauthorizedRedirectMiddleware,
         accountMiddleware,
+
+        // This need to be the last middlewares in the chain
         exportToPDFMiddleware,
+        exportToPNGMiddleware,
+        exportToCSVMiddleware,
+        exportPickerMiddleware,
         buffermetricsMiddleware,
       ),
     ),

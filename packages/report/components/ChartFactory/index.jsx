@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { Table as SummaryTable, Title as SummaryTitle } from '@bufferapp/summary-table';
+import { Table as HashtagsTable, Title as HashtagsTitle } from '@bufferapp/hashtags-table';
 import { Table as PostsSummary, Title as PostsSummaryTitle } from '@bufferapp/posts-summary-table';
 import { Table as AverageTable, Title as AverageTitle } from '@bufferapp/average-table';
 import { Title as ContextualTitle } from '@bufferapp/contextual-compare';
@@ -20,6 +21,10 @@ const CHARTS = {
   'summary-table': {
     chart: SummaryTable,
     title: SummaryTitle,
+  },
+  'hashtags-table': {
+    chart: HashtagsTable,
+    title: HashtagsTitle,
   },
   'posts-summary': {
     chart: PostsSummary,
@@ -129,6 +134,8 @@ const ChartFactory = ({ charts, moveUp, moveDown, deleteChart, exporting }) =>
       </Header>
       {React.createElement(CHARTS[chart.chart_id].chart, {
         ...chart,
+        ...chart.state,
+        forReport: true,
         timezone: chart.profile.timezone,
         service: chart.profile.service,
         forReport: true,

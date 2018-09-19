@@ -1,5 +1,171 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Snapshots ArrowIcon should render downward arrows 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "borderRadius": "2px",
+        "display": "flex",
+        "flexWrap": "wrap",
+        "margin": "0 auto",
+        "padding": "0",
+      }
+    }
+  >
+    <div
+      className="sc-bdVaJa leBJMJ"
+    >
+      <svg
+        fill="none"
+        height="11"
+        viewBox="0 0 11 11"
+        width="11"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          fill="white"
+          height="11"
+          width="11"
+        />
+        <path
+          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+          fill="#FF4040"
+          transform="translate(10 9) rotate(-180)"
+        />
+      </svg>
+    </div>
+    <div
+      className="sc-bdVaJa leBJMJ"
+    >
+      <svg
+        fill="none"
+        height="11"
+        viewBox="0 0 11 11"
+        width="11"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          fill="white"
+          height="11"
+          width="11"
+        />
+        <path
+          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+          fill="#FF4040"
+          transform="translate(10 9) rotate(-180)"
+        />
+      </svg>
+    </div>
+    <div
+      className="sc-bdVaJa leBJMJ"
+    >
+      <svg
+        fill="none"
+        height="11"
+        viewBox="0 0 11 11"
+        width="11"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          fill="white"
+          height="11"
+          width="11"
+        />
+        <path
+          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+          fill="#168eea"
+          transform="translate(10 9) rotate(-180)"
+        />
+      </svg>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots ArrowIcon should render upward arrows 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "borderRadius": "2px",
+        "display": "flex",
+        "flexWrap": "wrap",
+        "margin": "0 auto",
+        "padding": "0",
+      }
+    }
+  >
+    <div
+      className="sc-bdVaJa leBJMJ"
+    >
+      <svg
+        fill="none"
+        height="11"
+        viewBox="0 0 11 11"
+        width="11"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          fill="white"
+          height="11"
+          width="11"
+        />
+        <path
+          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+          fill="#2FD566"
+          transform="translate(1 2)"
+        />
+      </svg>
+    </div>
+    <div
+      className="sc-bdVaJa leBJMJ"
+    >
+      <svg
+        fill="none"
+        height="11"
+        viewBox="0 0 11 11"
+        width="11"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          fill="white"
+          height="11"
+          width="11"
+        />
+        <path
+          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+          fill="#2FD566"
+          transform="translate(1 2)"
+        />
+      </svg>
+    </div>
+    <div
+      className="sc-bdVaJa leBJMJ"
+    >
+      <svg
+        fill="none"
+        height="11"
+        viewBox="0 0 11 11"
+        width="11"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          fill="white"
+          height="11"
+          width="11"
+        />
+        <path
+          d="M4.06699 0.75C4.25944 0.416667 4.74056 0.416667 4.93301 0.75L7.9641 6C8.15655 6.33333 7.91599 6.75 7.53109 6.75L1.46891 6.75C1.08401 6.75 0.843448 6.33333 1.0359 6L4.06699 0.75Z"
+          fill="#168eea"
+          transform="translate(1 2)"
+        />
+      </svg>
+    </div>
+  </div>
+</span>
+`;
+
 exports[`Snapshots AudienceChartTooltip [TESTED] should render a presets tooltip 1`] = `
 <span>
   <div
@@ -550,16 +716,16 @@ exports[`Snapshots CommonChart [TESTED] Should render a no data message if there
     }
   >
     <div
-      className="sc-bdVaJa fWzNTu"
+      className="sc-bwzfXH hQsvhP"
     >
       <div
-        className="sc-bwzfXH iNQYMr"
+        className="sc-htpNat kuRWQq"
       >
         <div
-          className="sc-htpNat lmFxxx"
+          className="sc-bxivhb eLxpUg"
         />
         <h1
-          className="sc-bxivhb hlZJQM"
+          className="sc-ifAKCX hrlfUj"
         >
           <span
             style={
@@ -996,7 +1162,7 @@ exports[`Snapshots Dropdown Item should be disabled 1`] = `
           title="Buffer"
         >
           <div
-            className="sc-dxgOiQ iKVCYs"
+            className="sc-ckVGcZ bduPTL"
             size="24px"
           >
             <img
@@ -1148,7 +1314,7 @@ exports[`Snapshots Dropdown Item should render 1`] = `
           title="Buffer"
         >
           <div
-            className="sc-dxgOiQ iKVCYs"
+            className="sc-ckVGcZ bduPTL"
             size="24px"
           >
             <img
@@ -1300,7 +1466,7 @@ exports[`Snapshots Dropdown Item should render properly with an empty avatarUrl 
           title="Buffer"
         >
           <div
-            className="sc-dxgOiQ iKVCYs"
+            className="sc-ckVGcZ bduPTL"
             size="24px"
           >
             <img
@@ -1452,7 +1618,7 @@ exports[`Snapshots Dropdown Item should selected 1`] = `
           title="Buffer"
         >
           <div
-            className="sc-dxgOiQ iKVCYs"
+            className="sc-ckVGcZ bduPTL"
             size="24px"
           >
             <img
@@ -1636,7 +1802,7 @@ exports[`Snapshots Dropdown Item should truncate long names 1`] = `
           title="a very long and meaningful name"
         >
           <div
-            className="sc-dxgOiQ iKVCYs"
+            className="sc-ckVGcZ bduPTL"
             size="24px"
           >
             <img
@@ -2011,13 +2177,13 @@ exports[`Snapshots DropdownItem should selected 1`] = `
 exports[`Snapshots EmptyState render with a custom header and description 1`] = `
 <span>
   <div
-    className="sc-jWBwVP dYoGfQ"
+    className="sc-brqgnP jRXAoX"
   >
     <div
-      className="sc-brqgnP dwHGkL"
+      className="sc-cMljjf iYDayb"
     />
     <h1
-      className="sc-cMljjf dXrylI"
+      className="sc-jAaTju eemQDM"
     >
       <span
         style={
@@ -2033,7 +2199,7 @@ exports[`Snapshots EmptyState render with a custom header and description 1`] = 
       </span>
     </h1>
     <h2
-      className="sc-jAaTju izaqbV"
+      className="sc-jDwBTQ eblAud"
     >
       <span
         style={
@@ -2055,13 +2221,13 @@ exports[`Snapshots EmptyState render with a custom header and description 1`] = 
 exports[`Snapshots EmptyState render with a custom header but no description 1`] = `
 <span>
   <div
-    className="sc-jWBwVP dYoGfQ"
+    className="sc-brqgnP jRXAoX"
   >
     <div
-      className="sc-brqgnP dwHGkL"
+      className="sc-cMljjf iYDayb"
     />
     <h1
-      className="sc-cMljjf dXrylI"
+      className="sc-jAaTju eemQDM"
     >
       <span
         style={
@@ -2083,13 +2249,13 @@ exports[`Snapshots EmptyState render with a custom header but no description 1`]
 exports[`Snapshots EmptyState render with default text 1`] = `
 <span>
   <div
-    className="sc-jWBwVP dYoGfQ"
+    className="sc-brqgnP jRXAoX"
   >
     <div
-      className="sc-brqgnP dwHGkL"
+      className="sc-cMljjf iYDayb"
     />
     <h1
-      className="sc-cMljjf dXrylI"
+      className="sc-jAaTju eemQDM"
     >
       <span
         style={
@@ -2222,7 +2388,7 @@ exports[`Snapshots GridItem percentage sign show decimals if < 10 1`] = `
               className="sc-iRbamj fFYkSk"
             >
               <div
-                className="sc-jDwBTQ kDjnNT"
+                className="sc-bdVaJa leBJMJ"
               >
                 <svg
                   fill="none"
@@ -2337,7 +2503,7 @@ exports[`Snapshots GridItem should not render arrow icon when diff is also visib
               className="sc-iRbamj fFYkSk"
             >
               <div
-                className="sc-jDwBTQ kDjnNT"
+                className="sc-bdVaJa leBJMJ"
               >
                 <svg
                   fill="none"
@@ -2452,7 +2618,7 @@ exports[`Snapshots GridItem should not render the chart if we have only one day 
               className="sc-iRbamj fFYkSk"
             >
               <div
-                className="sc-jDwBTQ kDjnNT"
+                className="sc-bdVaJa leBJMJ"
               >
                 <svg
                   fill="none"
@@ -2634,7 +2800,7 @@ exports[`Snapshots GridItem should render 2 digits in the grid item 1`] = `
               className="sc-iRbamj fFYkSk"
             >
               <div
-                className="sc-jDwBTQ kDjnNT"
+                className="sc-bdVaJa leBJMJ"
               >
                 <svg
                   fill="none"
@@ -2750,7 +2916,7 @@ exports[`Snapshots GridItem should render 2 digits in the grid item when the per
               className="sc-iRbamj fFYkSk"
             >
               <div
-                className="sc-jDwBTQ kDjnNT"
+                className="sc-bdVaJa leBJMJ"
               >
                 <svg
                   fill="none"
@@ -2868,7 +3034,7 @@ exports[`Snapshots GridItem should render a grid item with a 7 day chart if 7 da
               className="sc-iRbamj fFYkSk"
             >
               <div
-                className="sc-jDwBTQ kDjnNT"
+                className="sc-bdVaJa leBJMJ"
               >
                 <svg
                   fill="none"
@@ -2986,7 +3152,7 @@ exports[`Snapshots GridItem should render a grid item with a 30 day chart if 30 
               className="sc-iRbamj fFYkSk"
             >
               <div
-                className="sc-jDwBTQ kDjnNT"
+                className="sc-bdVaJa leBJMJ"
               >
                 <svg
                   fill="none"
@@ -3104,7 +3270,7 @@ exports[`Snapshots GridItem should render a grid item with a 90 day chart if 90 
               className="sc-iRbamj fFYkSk"
             >
               <div
-                className="sc-jDwBTQ kDjnNT"
+                className="sc-bdVaJa leBJMJ"
               >
                 <svg
                   fill="none"
@@ -3221,7 +3387,7 @@ exports[`Snapshots GridItem should render a grid item with a custom Label 1`] = 
               className="sc-iRbamj fFYkSk"
             >
               <div
-                className="sc-jDwBTQ kDjnNT"
+                className="sc-bdVaJa leBJMJ"
               >
                 <svg
                   fill="none"
@@ -3356,7 +3522,7 @@ exports[`Snapshots GridItem should render a standalone item 1`] = `
               className="sc-iRbamj fFYkSk"
             >
               <div
-                className="sc-jDwBTQ kDjnNT"
+                className="sc-bdVaJa leBJMJ"
               >
                 <svg
                   fill="none"
@@ -3471,7 +3637,7 @@ exports[`Snapshots GridItem should render a summary grid item with negative diff
               className="sc-iRbamj fFYkSk"
             >
               <div
-                className="sc-jDwBTQ kDjnNT"
+                className="sc-bdVaJa leBJMJ"
               >
                 <svg
                   fill="none"
@@ -3649,7 +3815,7 @@ exports[`Snapshots GridItem should render a summary grid item with only arrow ic
             className="sc-fBuWsC hBvrEn"
           >
             <div
-              className="sc-jDwBTQ kDjnNT"
+              className="sc-bdVaJa leBJMJ"
             >
               <svg
                 fill="none"
@@ -3745,7 +3911,7 @@ exports[`Snapshots GridItem should render a summary grid item with percent sign 
               className="sc-iRbamj fFYkSk"
             >
               <div
-                className="sc-jDwBTQ kDjnNT"
+                className="sc-bdVaJa leBJMJ"
               >
                 <svg
                   fill="none"
@@ -3860,7 +4026,7 @@ exports[`Snapshots GridItem should render a summary grid item with positive diff
               className="sc-iRbamj fFYkSk"
             >
               <div
-                className="sc-jDwBTQ kDjnNT"
+                className="sc-bdVaJa leBJMJ"
               >
                 <svg
                   fill="none"

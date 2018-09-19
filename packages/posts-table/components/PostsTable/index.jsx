@@ -33,7 +33,6 @@ const PostsTableWrapper = styled.ol`
 
 const GridContainer = styled.div`
   position: relative;
-  padding: 0.75rem 1.5rem 1rem;
 `;
 
 const Footer = styled.footer`
