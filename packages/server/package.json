@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/server-analyze",
-  "version": "0.70.0",
+  "version": "0.71.0",
   "description": "",
   "scripts": {
     "start": "node .",
@@ -31,7 +31,6 @@
     "cookie-parser": "1.4.3",
     "express": "4.15.3",
     "jsonwebtoken": "7.4.1",
-    "@bufferapp/buffer-rpc": "0.0.2",
     "moment": "^2.18.1",
     "moment-timezone": "0.5.16",
     "node-dogstatsd": "0.0.6",
