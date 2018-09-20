@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
 import PostsSummaryTable from './index';
 
-storiesOf('PostsSummaryTable')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .add('should render the posts summary table', () => (
     <div

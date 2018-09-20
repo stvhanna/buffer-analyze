@@ -5,7 +5,7 @@ import { action } from '@storybook/addon-actions';
 
 import EditTitle from './index';
 
-storiesOf('EditTitle')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .add('renders the edit title text box', () => (
     <EditTitle name="Test Report" saveChanges={action('saveChanges')} />

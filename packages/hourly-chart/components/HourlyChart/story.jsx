@@ -46,7 +46,7 @@ const mockMetrics = [
 const mockPostCount =
   [2, 0, 0, 0, 0, 5, 11, 4, 1, 0, 1, 0, 3, 1, 0, 5, 11, 0, 0, 2, 0, 1, 1, 0];
 
-storiesOf('HourlyChart')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .addDecorator(ReportsStore)
   .add('[TESTED] loading state', () => (

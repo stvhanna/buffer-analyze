@@ -34,7 +34,7 @@ const profileTotals = [
   },
 ];
 
-storiesOf('ComparisonFooter')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .add('should render the footer for a single profile', () => (
     <div

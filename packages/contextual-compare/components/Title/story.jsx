@@ -7,7 +7,7 @@ const presets = [{
   label: 'When is it most effective to post?',
 }];
 
-storiesOf('Title')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .add('[TESTED] should render title as if for app', () => (
     <Title />

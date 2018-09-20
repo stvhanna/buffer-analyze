@@ -4,7 +4,7 @@ import { checkA11y } from 'storybook-addon-a11y';
 
 import ComparisonTitle from './index';
 
-storiesOf('ComparisonTitle')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .add('should render the title for the comparison reach chart', () => (
     <div

@@ -5,7 +5,7 @@ import { action as actionLogger } from '@storybook/addon-actions';
 
 import ModeToggle from './index';
 
-storiesOf('ModeToggle')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .add('should render an inactive toggle', () => (
     <div

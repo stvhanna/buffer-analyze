@@ -4,7 +4,7 @@ import { checkA11y } from 'storybook-addon-a11y';
 import { action } from '@storybook/addon-actions';
 import Dropdown, { DropdownContent } from './index';
 
-storiesOf('Dropdown')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .add('closed dropdown', () => (
     <div>

@@ -40,7 +40,7 @@ const metrics = {
   },
 };
 
-storiesOf('ComparisonChart')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .addDecorator(ReportsStore)
   .add('[TESTED] should render the audience comparison chart for a multiple profiles', () => (

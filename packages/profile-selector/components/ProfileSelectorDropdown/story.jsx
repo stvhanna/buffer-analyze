@@ -7,7 +7,7 @@ import ProfileSelectorDropdown from './index';
 import mockProfiles from '../../mocks/profiles';
 
 
-storiesOf('ProfileSelectorDropdown')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .add('should render the dropdown', () => (
     <div style={{ display: 'flex' }}>

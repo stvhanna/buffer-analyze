@@ -4,7 +4,7 @@ import { checkA11y } from 'storybook-addon-a11y';
 import moment from 'moment';
 import Tooltip from './index';
 
-storiesOf('Tooltip')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .add('no updates', () => (
     <Tooltip

@@ -4,7 +4,7 @@ import { checkA11y } from 'storybook-addon-a11y';
 import Footer from './index';
 import mockTotals from '../../mocks/totals';
 
-storiesOf('Footer')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .add('should render the table', () => (
     <div

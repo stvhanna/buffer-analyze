@@ -10,7 +10,7 @@ import {
 import InsightsPage from './index';
 
 
-storiesOf('InsightsPage')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .addDecorator(getStory =>
     (<Provider store={createStore()}>

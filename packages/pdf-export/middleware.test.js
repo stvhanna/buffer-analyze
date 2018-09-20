@@ -2,11 +2,8 @@ import middleware from './middleware';
 import { actionTypes } from './actions';
 
 global.open = jest.fn();
-Object.defineProperty(window.location, 'origin', {
-  value: 'https://analyze.buffer.com',
-});
-Object.defineProperty(window.location, 'pathname', {
-  value: '/report/1234',
+jsdom.reconfigure({
+  url: 'https://analyze.buffer.com/report/1234',
 });
 
 describe('middleware', () => {

@@ -8,7 +8,7 @@ const report = {
   _id: '1293125asda',
 };
 
-storiesOf('RemoveButton')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .add('renders the remove button', () => (
     <RemoveButton

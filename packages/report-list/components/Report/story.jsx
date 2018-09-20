@@ -12,7 +12,7 @@ const report = {
   updated_at: 1507680000000,
 };
 
-storiesOf('Report')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .add('renders the report', () => (
     <Report

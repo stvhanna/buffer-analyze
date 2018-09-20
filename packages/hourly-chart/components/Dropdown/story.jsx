@@ -19,7 +19,7 @@ const mockMetrics = [
   impressions,
 ];
 
-storiesOf('Dropdown')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .add('closed dropdown', () => (
     <Dropdown

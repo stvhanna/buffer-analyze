@@ -4,28 +4,14 @@
   "description": "Report detail",
   "main": "index.js",
   "scripts": {
-    "start": "start-storybook -p 9001",
-    "lint": "eslint . --ignore-pattern coverage node_modules",
-    "test": "yarn run lint && sh ../../package_test.sh",
-    "test-watch": "jest --watch",
-    "test-update": "jest -u"
+    "lint": "eslint . --ignore-pattern coverage node_modules"
   },
   "author": "mike@msanroman.io",
-  "jest": {
-    "transformIgnorePatterns": [
-      "node_modules/(?!@bufferapp/*)"
-    ],
-    "verbose": true,
-    "moduleNameMapper": {
-      "\\.(css|less)$": "identity-obj-proxy"
-    }
-  },
   "dependencies": {
     "@bufferapp/analyze-date-picker": "^0.71.3",
     "@bufferapp/analyze-shared-components": "^0.71.3",
     "@bufferapp/audience-chart": "^0.71.3",
     "@bufferapp/average-table": "^0.71.3",
-    "@bufferapp/components": "2.1.1-alpha.6",
     "@bufferapp/contextual-compare": "^0.71.3",
     "@bufferapp/hourly-chart": "^0.71.3",
     "@bufferapp/posts-summary-table": "^0.71.3",
@@ -35,12 +21,8 @@
     "styled-components": "^2.2.1"
   },
   "devDependencies": {
-    "@storybook/addon-storyshots": "3.1.4",
-    "@storybook/react": "3.1.3",
     "eslint": "3.19.0",
-    "jest": "19.0.2",
-    "storybook-addon-a11y": "3.0.0",
-    "timezone-mock": "0.0.7"
+    "timezone-mock": "1.0.0"
   },
   "publishConfig": {
     "access": "public"

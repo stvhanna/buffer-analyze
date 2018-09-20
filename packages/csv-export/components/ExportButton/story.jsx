@@ -4,7 +4,7 @@ import { checkA11y } from 'storybook-addon-a11y';
 import { action } from '@storybook/addon-actions';
 import ExportButton from './index';
 
-storiesOf('ExportButton')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .add('default', () => (
     <ExportButton exportToCSV={action('click')} />

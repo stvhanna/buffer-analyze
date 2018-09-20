@@ -25,7 +25,7 @@ const post = {
   type: 'picture',
 };
 
-storiesOf('PostItem')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .add('should render the top posts item', () => (
     <div

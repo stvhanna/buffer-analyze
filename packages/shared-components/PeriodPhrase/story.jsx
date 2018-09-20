@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
 import PeriodPhrase from './index';
 
-storiesOf('PeriodPhrase')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .add('should render', () => (
     <PeriodPhrase startDate={1504308280} endDate={1504826680} />

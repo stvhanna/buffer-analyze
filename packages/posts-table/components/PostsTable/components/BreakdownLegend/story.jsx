@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
 import BreakdownLegend from '.';
 
-storiesOf('BreakdownLegend')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .add('should show search terms used for filtering', () => (
     <div

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
 import PeriodToggle from './index';
 
-storiesOf('PeriodToggle')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .add('should render an inactive toggle', () => (
     <div

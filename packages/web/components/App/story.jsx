@@ -8,7 +8,7 @@ import {
 import { checkA11y } from 'storybook-addon-a11y';
 import App from './index';
 
-storiesOf('App')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .addDecorator(getStory =>
     <Provider

@@ -1,6 +1,7 @@
 import { actionTypes as dataFetchActionTypes } from '@bufferapp/async-data-fetch';
 
 const getRedirectURL = () => {
+  console.log('redirect?', window.location.hostname);
   if (window.location.hostname === 'analyze.local.buffer.com') {
     return 'https://local.buffer.com/analyze';
   }

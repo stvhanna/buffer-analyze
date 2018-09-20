@@ -11,7 +11,7 @@ const profile = {
   username: '@moreofmorris',
 };
 
-storiesOf('ProfileLegend')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .add('renders the profile legend', () => (
     <ProfileLegend profile={profile} />

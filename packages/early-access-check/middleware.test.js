@@ -21,8 +21,8 @@ describe('middleware', () => {
       expect(window.location.assign).toHaveBeenCalledWith('https://buffer.com/analyze');
     });
     it('local redirect', () => {
-      Object.defineProperty(window.location, 'hostname', {
-        value: 'analyze.local.buffer.com',
+      jsdom.reconfigure({
+        url: 'https://analyze.local.buffer.com',
       });
       const action = {
         type: `profiles_${asyncDataFetchActions.FETCH_SUCCESS}`,

@@ -6,7 +6,7 @@ import ComparisonChartTooltip from './index';
 
 const dayTimestamp = moment.utc(1505174400000).startOf('day').valueOf();
 
-storiesOf('ComparisonChartTooltip')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .add('[TESTED] should render the tooltip', () => (
     <div

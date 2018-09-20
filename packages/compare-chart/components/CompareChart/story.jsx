@@ -8,7 +8,7 @@ import CompareChart from './index';
 import mockDailyData from '../../mocks/dailyData';
 import mockTotals from '../../mocks/totals';
 
-storiesOf('CompareChart')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .addDecorator(ReportsStore)
   .add('should render the compare chart', () => (

@@ -8,7 +8,7 @@ import mockProfiles from '../../mocks/profiles';
 import selectedProfiles from '../../mocks/selectedProfiles';
 
 
-storiesOf('MultiProfileSelector')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .add('should not render the dropdown if profiles are missing', () => (
     <div style={{ display: 'flex' }}>

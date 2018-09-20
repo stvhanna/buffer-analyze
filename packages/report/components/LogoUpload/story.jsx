@@ -5,7 +5,7 @@ import { action } from '@storybook/addon-actions';
 
 import LogoUpload from './index';
 
-storiesOf('LogoUpload')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .add('renders no logo image upload box', () => (
     <div style={{ width: '260px', height: '100%', display: 'flex', padding: '50px' }}>

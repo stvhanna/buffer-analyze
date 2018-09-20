@@ -9,7 +9,6 @@ import NavSidebar, {
 } from './index';
 import Insights from './components/Insights';
 
-configure({ adapter: new Adapter() });
 const storeFake = state => ({
   default: () => {},
   subscribe: () => {},

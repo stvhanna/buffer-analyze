@@ -4,15 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint . --ignore-pattern coverage node_modules",
-    "test": "sh ../../package_test.sh",
-    "test-watch": "jest --watch"
-  },
-  "jest": {
-    "verbose": true,
-    "transformIgnorePatterns": [
-      "node_modules/(?!@bufferapp/*)"
-    ]
+    "lint": "eslint . --ignore-pattern coverage node_modules"
   },
   "author": "federicoweber@gmail.com",
   "dependencies": {
@@ -20,7 +12,6 @@
     "@bufferapp/chronos": "0.6.1"
   },
   "devDependencies": {
-    "eslint": "3.19.0",
-    "jest": "19.0.2"
+    "eslint": "3.19.0"
   }
 }

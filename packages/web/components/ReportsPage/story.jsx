@@ -11,7 +11,7 @@ import {
 
 import ReportsPage from './index';
 
-storiesOf('ReportsPage')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .addDecorator((getStory) => {
     const store = createStore({

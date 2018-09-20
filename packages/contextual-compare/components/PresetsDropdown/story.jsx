@@ -6,7 +6,7 @@ import { action as actionLogger } from '@storybook/addon-actions';
 import PresetsDropdown from './index';
 import mockPresets from '../../mocks/presets';
 
-storiesOf('PresetsDropdown')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .add('closed dropdown', () => (
     <PresetsDropdown

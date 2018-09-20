@@ -11,7 +11,7 @@ import mockMetrics from '../../mocks/metrics';
 const selectedMetrics = [mockMetrics[0], mockMetrics[1]];
 selectedMetrics[0].squaredIcon = true;
 
-storiesOf('AudienceChart')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .addDecorator(ReportsStore)
   .add('[TESTED] Should render', () => (

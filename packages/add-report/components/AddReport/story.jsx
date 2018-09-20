@@ -14,7 +14,7 @@ const Spacer = styled.span`
   height: 60px;
 `;
 
-storiesOf('AddReport')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .add('unopened', () => (
     <div>

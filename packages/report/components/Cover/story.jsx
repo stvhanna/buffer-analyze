@@ -23,7 +23,7 @@ const dateRange = {
   endDate: '02/25/2018',
 };
 
-storiesOf('Cover')
+storiesOf(__dirname, module)
   .addDecorator(checkA11y)
   .add('renders a cover with name and date', () => (
     <Card>
