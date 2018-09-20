@@ -5,7 +5,7 @@
   "scripts": {
     "bootstrap": "yarn",
     "clean": "lerna clean",
-    "test": "yarn run lint && jest",
+    "test": "if [ -n \"$CI\" ]; then yarn && jest --runInBand; else jest; fi",
     "test-unit": "jest",
     "test-update": "jest -u snapshot.test.js",
     "snapshots": "jest snapshot.test.js",
