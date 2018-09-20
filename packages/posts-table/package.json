@@ -17,11 +17,10 @@
     "@bufferapp/analyze-shared-components": "^0.71.3",
     "@bufferapp/async-data-fetch": "0.5.36-beta01",
     "@bufferapp/nav-sidebar": "^0.71.3",
-    "@storybook/addon-storyshots": "3.4.8",
-    "@storybook/react": "3.4.8",
     "lodash.clonedeep": "4.5.0",
     "numeral": "2.0.6",
     "react-tagsinput": "^3.19.0",
+    "react-simple-dropdown": "3.0.0",
     "storybook-addon-a11y": "3.1.9",
     "striptags": "^3.1.0"
   },
