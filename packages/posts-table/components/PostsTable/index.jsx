@@ -69,14 +69,14 @@ function getMaxMetricValue(posts, metrics) {
 }
 
 export const Table = (props) => {
-  const { metrics: topPosts, service, selectedMetric } = props;
+  const { metrics: topPosts, service, sortBy } = props;
   const engagementMetrics = metricsConfig[service].topPostsEngagementMetrics;
   const audienceMetrics = metricsConfig[service].topPostsAudienceMetrics;
 
   const allMetrics = [...engagementMetrics, ...audienceMetrics];
 
   const [metricSorted] = allMetrics.filter(metric =>
-    metric.key === (selectedMetric ? selectedMetric.key : defaultSortMetrics[service].key)
+    metric.key === (sortBy ? sortBy : defaultSortMetrics[service].key)
   );
 
   const maxEngagementValue = getMaxMetricValue(topPosts, engagementMetrics);
@@ -136,10 +136,7 @@ Table.propTypes = {
   exporting: PropTypes.bool.isRequired,
   searchTerms: PropTypes.arrayOf(PropTypes.string),
   isDescendingSelected: PropTypes.bool.isRequired,
-  selectedMetric: PropTypes.shape({
-    key: PropTypes.string,
-    label: PropTypes.string,
-  }).isRequired,
+  sortBy: PropTypes.string.isRequired,
 };
 
 const PostsTable = (props) => {
@@ -189,7 +186,7 @@ const PostsTable = (props) => {
           timezone={timezone}
           service={profileService}
           exporting={exporting}
-          selectedMetric={initialSelectedMetric}
+          sortBy={initialSelectedMetric}
         />
         <Footer>
           <PostsCountBar
