@@ -98,8 +98,6 @@ exports[`Snapshots BreakdownLegend for long tag lists it should fade the overflo
           }
         >
           Sorted by 
-          fewest
-           
           <span
             className="sc-brqgnP iqmTSC"
           >
@@ -179,89 +177,6 @@ exports[`Snapshots BreakdownLegend if there are no filters it displays "X posts 
           }
         >
           Sorted by 
-          fewest
-           
-          <span
-            className="sc-brqgnP iqmTSC"
-          >
-            <span
-              style={
-                Object {
-                  "background": "#8AC6DE",
-                  "borderColor": "#6ca8c0",
-                  "borderRadius": "10px",
-                  "borderStyle": "solid",
-                  "borderWidth": "1px",
-                  "display": "inline-block",
-                  "height": "7px",
-                  "marginRight": "5px",
-                  "verticalAlign": "baseline",
-                  "width": "7px",
-                }
-              }
-            />
-          </span>
-           
-          Impressions
-        </span>
-      </section>
-    </section>
-  </div>
-</span>
-`;
-
-exports[`Snapshots BreakdownLegend mentions the search order for the selected metric and differentiates if it is ascending or descending 1`] = `
-<span>
-  <div
-    style={
-      Object {
-        "width": "1080px",
-      }
-    }
-  >
-    <section
-      className="sc-hSdWYo VQMKf"
-    >
-      <section
-        className="sc-eHgmQL hRxedP"
-      >
-        <span
-          style={
-            Object {
-              "color": "#323b43",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "0.75rem",
-              "fontWeight": 700,
-            }
-          }
-        >
-          Showing 
-          4
-           
-          posts
-           
-          in total
-        </span>
-        <span
-          className="sc-cvbbAY fkKeRM"
-        />
-      </section>
-      <section
-        className="sc-jWBwVP ciniVD"
-      >
-        <span
-          style={
-            Object {
-              "color": "#323b43",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "0.75rem",
-              "fontWeight": 700,
-            }
-          }
-        >
-          Sorted by 
-          most
-           
           <span
             className="sc-brqgnP iqmTSC"
           >
@@ -373,8 +288,6 @@ exports[`Snapshots BreakdownLegend should show search terms used for filtering 1
           }
         >
           Sorted by 
-          fewest
-           
           <span
             className="sc-brqgnP iqmTSC"
           >
@@ -14259,8 +14172,6 @@ exports[`Snapshots PostsTable should show search terms on report 1`] = `
             }
           >
             Sorted by 
-            fewest
-             
             <span
               className="sc-brqgnP iqmTSC"
             >
