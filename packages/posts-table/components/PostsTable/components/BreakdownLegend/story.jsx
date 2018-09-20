@@ -18,7 +18,6 @@ storiesOf('BreakdownLegend')
           label: 'Impressions',
           key: 'impressions',
         }}
-        descending
       />
     </div>
   ))
@@ -35,27 +34,10 @@ storiesOf('BreakdownLegend')
           label: 'Impressions',
           key: 'impressions',
         }}
-        descending
       />
     </div>
   ))
   .add('if there are no filters it displays "X posts in total"', () => (
-    <div
-      style={{
-        width: '1080px',
-      }}
-    >
-      <BreakdownLegend
-        posts="4"
-        selectedMetric={{
-          label: 'Impressions',
-          key: 'impressions',
-        }}
-        descending
-      />
-    </div>
-  ))
-  .add('mentions the search order for the selected metric and differentiates if it is ascending or descending', () => (
     <div
       style={{
         width: '1080px',

@@ -8,7 +8,6 @@ import {
 
 import { curiousBlue } from '@bufferapp/components/style/color';
 import { Text } from '@bufferapp/components';
-import sortingDictionary from './sortingDictionary';
 
 const Tag = styled.span`
   border-radius: 2px;
@@ -55,25 +54,18 @@ const MetricWrapper = styled.span`
   margin-left: .25rem;
 `;
 
-const BreakdownLegend = ({ posts, searchTerms, selectedMetric, descending }) => {
-  let sortOrder;
-  if (descending) {
-    sortOrder = sortingDictionary[selectedMetric.key].descending;
-  } else sortOrder = sortingDictionary[selectedMetric.key].ascending;
-
-  return (
-    <Legend>
-      <FilterLegend>
-        <Text color="outerSpace" size="extra-small" weight="bold">Showing {posts} {posts > 1 ? 'posts' : 'post' } { searchTerms.length ? 'filtered by' : 'in total' }</Text>
-        {searchTerms.map(term => <Tag><Text color="white" size="extra-small">{term}</Text></Tag>)}
-        <Fade />
-      </FilterLegend>
-      <SortByLegend>
-        <Text color="outerSpace" size="extra-small" weight="bold">Sorted by {sortOrder} <MetricWrapper><MetricIcon metric={selectedMetric} /></MetricWrapper> {selectedMetric.label}</Text>
-      </SortByLegend>
-    </Legend>
-  );
-};
+const BreakdownLegend = ({ posts, searchTerms, selectedMetric }) => (
+  <Legend>
+    <FilterLegend>
+      <Text color="outerSpace" size="extra-small" weight="bold">Showing {posts} {posts > 1 ? 'posts' : 'post' } { searchTerms.length ? 'filtered by' : 'in total' }</Text>
+      {searchTerms.map(term => <Tag><Text color="white" size="extra-small">{term}</Text></Tag>)}
+      <Fade />
+    </FilterLegend>
+    <SortByLegend>
+      <Text color="outerSpace" size="extra-small" weight="bold">Sorted by <MetricWrapper><MetricIcon metric={selectedMetric} /></MetricWrapper> {selectedMetric.label}</Text>
+    </SortByLegend>
+  </Legend>
+);
 
 BreakdownLegend.defaultProps = {
   searchTerms: [],
