@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/analyze-store",
-  "version": "0.71.1",
+  "version": "0.71.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -44,7 +44,7 @@
     "@bufferapp/nav-sidebar": "^0.71.0",
     "@bufferapp/performance-tracking": "^0.70.0",
     "@bufferapp/posts-summary-table": "^0.71.0",
-    "@bufferapp/posts-table": "^0.71.0",
+    "@bufferapp/posts-table": "^0.71.2",
     "@bufferapp/profile-header": "^0.71.0",
     "@bufferapp/profile-loader": "^0.70.0",
     "@bufferapp/report": "^0.71.1",

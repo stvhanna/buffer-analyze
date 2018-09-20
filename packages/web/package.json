@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/web-analyze",
-  "version": "0.71.1",
+  "version": "0.71.2",
   "description": "Analyze Web Dashboard",
   "main": "index.jsx",
   "scripts": {
@@ -25,7 +25,7 @@
     "@bufferapp/analyze-profile-selector": "^0.71.0",
     "@bufferapp/analyze-profiles-overview": "^0.71.0",
     "@bufferapp/analyze-shared-components": "^0.71.0",
-    "@bufferapp/analyze-store": "^0.71.1",
+    "@bufferapp/analyze-store": "^0.71.2",
     "@bufferapp/analyze-tabs": "^0.70.0",
     "@bufferapp/app-sidebar": "1.9.6",
     "@bufferapp/async-data-fetch": "0.5.36-beta01",
@@ -42,7 +42,7 @@
     "@bufferapp/pdf-export": "^0.70.0",
     "@bufferapp/performance-tracking": "^0.70.0",
     "@bufferapp/posts-summary-table": "^0.71.0",
-    "@bufferapp/posts-table": "^0.71.0",
+    "@bufferapp/posts-table": "^0.71.2",
     "@bufferapp/profile-header": "^0.71.0",
     "@bufferapp/profile-loader": "^0.70.0",
     "@bufferapp/report": "^0.71.1",
