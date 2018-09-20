@@ -134,7 +134,6 @@ const ChartFactory = ({ charts, moveUp, moveDown, deleteChart, exporting }) =>
       </Header>
       {React.createElement(CHARTS[chart.chart_id].chart, {
         ...chart,
-        ...chart.state,
         forReport: true,
         timezone: chart.profile.timezone,
         service: chart.profile.service,
