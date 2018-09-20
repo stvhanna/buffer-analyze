@@ -5,7 +5,7 @@ jest.mock('react-highcharts');
 jest.mock('@bufferapp/add-report');
 
 initStoryshots({
-  suite: 'Snapshots',
+  suit: 'Snapshots',
   configPath: '.storybookStoryshot/',
   storyNameRegex: /^\[TESTED\]/,
 });
