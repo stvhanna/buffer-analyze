@@ -8,6 +8,7 @@
   },
   "author": "tik.hakobyan@gmail.com",
   "dependencies": {
+    "@bufferapp/components": "2.1.1-alpha.6"
   },
   "devDependencies": {
     "eslint": "3.19.0"

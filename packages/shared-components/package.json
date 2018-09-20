@@ -8,6 +8,7 @@
   },
   "author": "mike@msanroman.io",
   "dependencies": {
+    "@bufferapp/components": "2.1.1-alpha.6",
     "moment": "^2.18.1",
     "styled-components": "^2.2.1"
   },

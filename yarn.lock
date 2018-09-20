@@ -197,6 +197,14 @@
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/@bufferapp/chronos/-/chronos-0.6.1.tgz#0213dff339459ca510103e5a72f558682a2675dd"
 
+"@bufferapp/components@2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@bufferapp/components/-/components-2.1.1.tgz#00f17249b87d2496e597a26d66fd35443ed1a3fd"
+  dependencies:
+    "@bufferapp/react-keyframes" "0.2.5"
+    react-autocomplete "1.7.2"
+    react-day-picker "6.2.1"
+
 "@bufferapp/components@2.1.1-alpha.6":
   version "2.1.1-alpha.6"
   resolved "https://registry.yarnpkg.com/@bufferapp/components/-/components-2.1.1-alpha.6.tgz#719f6f27496ad5ae63d82782fdb53662e3e95cfe"

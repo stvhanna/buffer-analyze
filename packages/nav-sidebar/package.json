@@ -10,6 +10,7 @@
   "dependencies": {
     "@bufferapp/analyze-profile-selector": "^0.71.3",
     "@bufferapp/async-data-fetch": "0.5.36-beta01",
+    "@bufferapp/components": "2.3.3",
     "@bufferapp/report-list": "^0.71.3"
   },
   "devDependencies": {
