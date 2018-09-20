@@ -21,7 +21,9 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
+              context: __dirname,
               modules: true,
+              localIdentName: '[path]___[name]__[local]___[hash:base64:5]',
             },
           },
           'less-loader',
