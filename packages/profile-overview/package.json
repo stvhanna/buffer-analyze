@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/analyze-profiles-overview",
-  "version": "0.71.0",
+  "version": "0.71.3",
   "description": "Overview table of connected profiles",
   "main": "index.jsx",
   "scripts": {
@@ -21,10 +21,10 @@
   },
   "author": "federicoweber@gmail.com",
   "dependencies": {
-    "@bufferapp/add-report": "^0.71.0",
+    "@bufferapp/add-report": "^0.71.3",
     "@bufferapp/analyze-csv-export": "^0.71.0",
     "@bufferapp/analyze-decorators": "^0.70.0",
-    "@bufferapp/analyze-shared-components": "^0.71.0",
+    "@bufferapp/analyze-shared-components": "^0.71.3",
     "@bufferapp/async-data-fetch": "0.5.36-beta01",
     "@bufferapp/components": "2.2.1",
     "@storybook/addon-storyshots": "3.1.4",
