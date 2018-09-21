@@ -22,3 +22,4 @@ export VerticalDivider from './VerticalDivider';
 export CommonChart from './CommonChart';
 export Toolbar from './Toolbar';
 export ArrowIcon from './ArrowIcon';
+export ErrorBoundary from './ErrorBoundary';

@@ -11,7 +11,7 @@ import { Chart as CompareChart, Title as CompareTitle } from '@bufferapp/compare
 import { Title as AudienceTitle } from '@bufferapp/audience-chart';
 import { Chart as ComparisonChart, Title as ComparisonTitle } from '@bufferapp/comparison-chart';
 import { ChartContent as HourlyChart, Title as HourlyTitle } from '@bufferapp/hourly-chart';
-import { CommonChart } from '@bufferapp/analyze-shared-components';
+import { ErrorBoundary, CommonChart } from '@bufferapp/analyze-shared-components';
 
 import ChartEditButtons from '../ChartEditButtons';
 import ProfileLegend from '../ProfileLegend';
@@ -102,45 +102,46 @@ const Header = styled.div`
 
 const ChartFactory = ({ charts, moveUp, moveDown, deleteChart, exporting }) =>
   charts.map((chart, index) => (
-    <Separator key={chart._id} exporting={exporting}>
-      <Header>
-        <TitleWrapper>
-          {React.createElement(CHARTS[chart.chart_id].title, {
-            ...chart,
-            forReport: true,
-          })}
-          {!exporting && <ChartEditButtons
-            moveUp={moveUp}
-            moveDown={moveDown}
-            deleteChart={deleteChart}
-            id={chart._id}
-            first={index === 0}
-            last={index === charts.length - 1}
-          />}
-        </TitleWrapper>
-        <ProfileWrapper>
-          {chart.profile_id && !chart.profileIds &&
-            <ProfileLegend
-              profile={chart.profile}
-            />
-          }
-          {chart.profileIds &&
-            <MultiProfileLegends
-              profiles={chart.profiles}
-              comparedProfileIds={chart.profileIds}
-            />
-          }
-        </ProfileWrapper>
-      </Header>
-      {React.createElement(CHARTS[chart.chart_id].chart, {
-        ...chart,
-        forReport: true,
-        timezone: chart.profile.timezone,
-        service: chart.profile.service,
-        forReport: true,
-        exporting,
-      })}
-    </Separator>
+    <ErrorBoundary>
+      <Separator key={chart._id} exporting={exporting}>
+        <Header>
+          <TitleWrapper>
+            {React.createElement(CHARTS[chart.chart_id].title, {
+              ...chart,
+              forReport: true,
+            })}
+            {!exporting && <ChartEditButtons
+              moveUp={moveUp}
+              moveDown={moveDown}
+              deleteChart={deleteChart}
+              id={chart._id}
+              first={index === 0}
+              last={index === charts.length - 1}
+            />}
+          </TitleWrapper>
+          <ProfileWrapper>
+            {chart.profile_id && !chart.profileIds &&
+              <ProfileLegend
+                profile={chart.profile}
+              />
+            }
+            {chart.profileIds &&
+              <MultiProfileLegends
+                profiles={chart.profiles}
+                comparedProfileIds={chart.profileIds}
+              />
+            }
+          </ProfileWrapper>
+        </Header>
+        {React.createElement(CHARTS[chart.chart_id].chart, {
+          ...chart,
+          forReport: true,
+          timezone: chart.profile.timezone,
+          service: chart.profile.service,
+          exporting,
+        })}
+      </Separator>
+    </ErrorBoundary>
   ));
 
 ChartFactory.propTypes = {

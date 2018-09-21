@@ -10,13 +10,13 @@ exports[`Snapshots PostsSummaryTable should render a "no data" state 1`] = `
     }
   >
     <div
-      className="sc-kGXeez ctOnEy"
+      className="sc-jKJlTe hrcOlX"
     >
       <header
-        className="sc-kpOJdX hlFKIM"
+        className="sc-eNQAEJ heJaNC"
       >
         <h2
-          className="sc-dxgOiQ isvEAp"
+          className="sc-hMqMXs klQmSI"
         >
           <span
             style={
@@ -80,13 +80,13 @@ exports[`Snapshots PostsSummaryTable should render a loading state 1`] = `
     }
   >
     <div
-      className="sc-kGXeez ctOnEy"
+      className="sc-jKJlTe hrcOlX"
     >
       <header
-        className="sc-kpOJdX hlFKIM"
+        className="sc-eNQAEJ heJaNC"
       >
         <h2
-          className="sc-dxgOiQ isvEAp"
+          className="sc-hMqMXs klQmSI"
         >
           <span
             style={
@@ -201,13 +201,13 @@ exports[`Snapshots PostsSummaryTable should render the posts summary table 1`] =
     }
   >
     <div
-      className="sc-kGXeez ctOnEy"
+      className="sc-jKJlTe hrcOlX"
     >
       <header
-        className="sc-kpOJdX hlFKIM"
+        className="sc-eNQAEJ heJaNC"
       >
         <h2
-          className="sc-dxgOiQ isvEAp"
+          className="sc-hMqMXs klQmSI"
         >
           <span
             style={

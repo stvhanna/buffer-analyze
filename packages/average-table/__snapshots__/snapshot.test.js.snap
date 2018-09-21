@@ -10,13 +10,13 @@ exports[`Snapshots AverageTable should render a "no data" state 1`] = `
     }
   >
     <div
-      className="sc-kGXeez ctOnEy"
+      className="sc-jKJlTe hrcOlX"
     >
       <header
-        className="sc-kpOJdX hlFKIM"
+        className="sc-eNQAEJ heJaNC"
       >
         <h2
-          className="sc-dxgOiQ isvEAp"
+          className="sc-hMqMXs klQmSI"
         >
           <span
             style={
@@ -79,13 +79,13 @@ exports[`Snapshots AverageTable should render a loading state 1`] = `
     }
   >
     <div
-      className="sc-kGXeez ctOnEy"
+      className="sc-jKJlTe hrcOlX"
     >
       <header
-        className="sc-kpOJdX hlFKIM"
+        className="sc-eNQAEJ heJaNC"
       >
         <h2
-          className="sc-dxgOiQ isvEAp"
+          className="sc-hMqMXs klQmSI"
         >
           <span
             style={
@@ -199,13 +199,13 @@ exports[`Snapshots AverageTable should render the average table for 7 days 1`] =
     }
   >
     <div
-      className="sc-kGXeez ctOnEy"
+      className="sc-jKJlTe hrcOlX"
     >
       <header
-        className="sc-kpOJdX hlFKIM"
+        className="sc-eNQAEJ heJaNC"
       >
         <h2
-          className="sc-dxgOiQ isvEAp"
+          className="sc-hMqMXs klQmSI"
         >
           <span
             style={
@@ -542,13 +542,13 @@ exports[`Snapshots AverageTable should render the average table for 30 days 1`] 
     }
   >
     <div
-      className="sc-kGXeez ctOnEy"
+      className="sc-jKJlTe hrcOlX"
     >
       <header
-        className="sc-kpOJdX hlFKIM"
+        className="sc-eNQAEJ heJaNC"
       >
         <h2
-          className="sc-dxgOiQ isvEAp"
+          className="sc-hMqMXs klQmSI"
         >
           <span
             style={
@@ -885,13 +885,13 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
     }
   >
     <div
-      className="sc-kGXeez ctOnEy"
+      className="sc-jKJlTe hrcOlX"
     >
       <header
-        className="sc-kpOJdX hlFKIM"
+        className="sc-eNQAEJ heJaNC"
       >
         <h2
-          className="sc-dxgOiQ isvEAp"
+          className="sc-hMqMXs klQmSI"
         >
           <span
             style={
@@ -1221,7 +1221,7 @@ exports[`Snapshots AverageTable should render the average table for 90 days 1`] 
 exports[`Snapshots Title should render title as if for app 1`] = `
 <span>
   <h2
-    className="sc-dxgOiQ isvEAp"
+    className="sc-hMqMXs klQmSI"
   >
     <span
       style={
@@ -1242,7 +1242,7 @@ exports[`Snapshots Title should render title as if for app 1`] = `
 exports[`Snapshots Title should render title as if for report 1`] = `
 <span>
   <h2
-    className="sc-dxgOiQ isvEAp"
+    className="sc-hMqMXs klQmSI"
   >
     <span
       style={
