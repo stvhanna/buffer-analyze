@@ -2274,6 +2274,51 @@ exports[`Snapshots EmptyState render with default text 1`] = `
 </span>
 `;
 
+exports[`Snapshots ErrorBoundary render a children 1`] = `
+<span>
+  <span
+    style={
+      Object {
+        "color": "#59626a",
+        "fontFamily": "\\"Roboto\\", sans-serif",
+        "fontSize": "1rem",
+        "fontWeight": 400,
+      }
+    }
+  >
+     A properly working component 
+  </span>
+</span>
+`;
+
+exports[`Snapshots ErrorBoundary render an empty state on error 1`] = `
+<span>
+  <div
+    className="sc-brqgnP jRXAoX"
+  >
+    <div
+      className="sc-cMljjf iYDayb"
+    />
+    <h1
+      className="sc-jAaTju eemQDM"
+    >
+      <span
+        style={
+          Object {
+            "color": "#323b43",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "fontSize": "1rem",
+            "fontWeight": 500,
+          }
+        }
+      >
+        There was an error rendering this chart
+      </span>
+    </h1>
+  </div>
+</span>
+`;
+
 exports[`Snapshots GridItem Should render the chart tolltip 1`] = `
 <span>
   <span>

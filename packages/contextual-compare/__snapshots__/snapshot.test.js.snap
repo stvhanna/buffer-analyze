@@ -10,13 +10,13 @@ exports[`Snapshots ContextualCompare [TESTED] Should render Posts metrics as col
     }
   >
     <div
-      className="sc-kGXeez ctOnEy"
+      className="sc-jKJlTe hrcOlX"
     >
       <header
-        className="sc-kpOJdX hlFKIM"
+        className="sc-eNQAEJ heJaNC"
       >
         <h2
-          className="sc-dxgOiQ isvEAp"
+          className="sc-hMqMXs klQmSI"
         >
           <span
             style={
@@ -788,13 +788,13 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
     }
   >
     <div
-      className="sc-kGXeez ctOnEy"
+      className="sc-jKJlTe hrcOlX"
     >
       <header
-        className="sc-kpOJdX hlFKIM"
+        className="sc-eNQAEJ heJaNC"
       >
         <h2
-          className="sc-dxgOiQ isvEAp"
+          className="sc-hMqMXs klQmSI"
         >
           <span
             style={
@@ -1566,13 +1566,13 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
     }
   >
     <div
-      className="sc-kGXeez ctOnEy"
+      className="sc-jKJlTe hrcOlX"
     >
       <header
-        className="sc-kpOJdX hlFKIM"
+        className="sc-eNQAEJ heJaNC"
       >
         <h2
-          className="sc-dxgOiQ isvEAp"
+          className="sc-hMqMXs klQmSI"
         >
           <span
             style={
@@ -2128,13 +2128,13 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Presets mode with
     }
   >
     <div
-      className="sc-kGXeez ctOnEy"
+      className="sc-jKJlTe hrcOlX"
     >
       <header
-        className="sc-kpOJdX hlFKIM"
+        className="sc-eNQAEJ heJaNC"
       >
         <h2
-          className="sc-dxgOiQ isvEAp"
+          className="sc-hMqMXs klQmSI"
         >
           <span
             style={
@@ -2726,13 +2726,13 @@ exports[`Snapshots ContextualCompare [TESTED] should render a "no data" state 1`
     }
   >
     <div
-      className="sc-kGXeez ctOnEy"
+      className="sc-jKJlTe hrcOlX"
     >
       <header
-        className="sc-kpOJdX hlFKIM"
+        className="sc-eNQAEJ heJaNC"
       >
         <h2
-          className="sc-dxgOiQ isvEAp"
+          className="sc-hMqMXs klQmSI"
         >
           <span
             style={
@@ -2794,13 +2794,13 @@ exports[`Snapshots ContextualCompare [TESTED] should render a loading state 1`] 
     }
   >
     <div
-      className="sc-kGXeez ctOnEy"
+      className="sc-jKJlTe hrcOlX"
     >
       <header
-        className="sc-kpOJdX hlFKIM"
+        className="sc-eNQAEJ heJaNC"
       >
         <h2
-          className="sc-dxgOiQ isvEAp"
+          className="sc-hMqMXs klQmSI"
         >
           <span
             style={
@@ -3231,7 +3231,7 @@ exports[`Snapshots PresetsDropdown [TESTED] open dropdown 1`] = `
 exports[`Snapshots Title [TESTED] should render regular title even if for report if no preset was selected 1`] = `
 <span>
   <h2
-    className="sc-dxgOiQ isvEAp"
+    className="sc-hMqMXs klQmSI"
   >
     <span
       style={
@@ -3252,7 +3252,7 @@ exports[`Snapshots Title [TESTED] should render regular title even if for report
 exports[`Snapshots Title [TESTED] should render title as if for app 1`] = `
 <span>
   <h2
-    className="sc-dxgOiQ isvEAp"
+    className="sc-hMqMXs klQmSI"
   >
     <span
       style={
@@ -3273,7 +3273,7 @@ exports[`Snapshots Title [TESTED] should render title as if for app 1`] = `
 exports[`Snapshots Title [TESTED] should render title as if for report 1`] = `
 <span>
   <h2
-    className="sc-dxgOiQ isvEAp"
+    className="sc-hMqMXs klQmSI"
   >
     <span
       style={
