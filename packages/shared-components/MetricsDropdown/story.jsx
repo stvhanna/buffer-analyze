@@ -18,6 +18,18 @@ storiesOf('MetricsDropdown')
       />
     </div>
   ))
+  .add('should render the dropdown without metrics icons', () => (
+    <div style={{ display: 'flex' }}>
+      <MetricsDropdown
+        metrics={mockMetrics}
+        selectedMetricLabel={mockMetrics[0].label}
+        selectMetric={() => {}}
+        openDropdown={() => {}}
+        closeDropdown={() => {}}
+        iconless
+      />
+    </div>
+  ))
   .add('should render a secondary dropdown', () => (
     <div style={{ display: 'flex' }}>
       <MetricsDropdown

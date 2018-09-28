@@ -41,6 +41,7 @@ const NavSidebar = props => (
       <Label>Tools</Label>
       <Item href="/comparisons/" {...props}>Comparisons</Item>
       <Item href="/reports/" {...props}>Reports</Item>
+      <Item href="/answers" {...props}>Answers</Item>
     </div>
     <div style={bottomSectionStyle}>
       <TrialStatus {...props} />

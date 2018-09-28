@@ -275,7 +275,7 @@ exports[`Snapshots NavSidebar Trial status should have a link to org admin if vi
           </span>
         </a>
         <a
-          href="/answers"
+          href="/audience"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
@@ -306,7 +306,7 @@ exports[`Snapshots NavSidebar Trial status should have a link to org admin if vi
                 }
               }
             >
-              Answers
+              Audience
             </span>
           </span>
         </a>
@@ -418,6 +418,42 @@ exports[`Snapshots NavSidebar Trial status should have a link to org admin if vi
               }
             >
               Reports
+            </span>
+          </span>
+        </a>
+        <a
+          href="/answers"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            className="sc-bdVaJa eZRxo"
+            selected={false}
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Answers
             </span>
           </span>
         </a>
@@ -754,7 +790,7 @@ exports[`Snapshots NavSidebar displays trial status if user is on trial 1`] = `
           </span>
         </a>
         <a
-          href="/answers"
+          href="/audience"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
@@ -785,7 +821,7 @@ exports[`Snapshots NavSidebar displays trial status if user is on trial 1`] = `
                 }
               }
             >
-              Answers
+              Audience
             </span>
           </span>
         </a>
@@ -897,6 +933,42 @@ exports[`Snapshots NavSidebar displays trial status if user is on trial 1`] = `
               }
             >
               Reports
+            </span>
+          </span>
+        </a>
+        <a
+          href="/answers"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            className="sc-bdVaJa eZRxo"
+            selected={false}
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Answers
             </span>
           </span>
         </a>
@@ -1216,7 +1288,7 @@ exports[`Snapshots NavSidebar if there are no profiles it should not show the In
           </span>
         </a>
         <a
-          href="/answers"
+          href="/audience"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
@@ -1247,7 +1319,7 @@ exports[`Snapshots NavSidebar if there are no profiles it should not show the In
                 }
               }
             >
-              Answers
+              Audience
             </span>
           </span>
         </a>
@@ -1359,6 +1431,42 @@ exports[`Snapshots NavSidebar if there are no profiles it should not show the In
               }
             >
               Reports
+            </span>
+          </span>
+        </a>
+        <a
+          href="/answers"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            className="sc-bdVaJa eZRxo"
+            selected={false}
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Answers
             </span>
           </span>
         </a>
@@ -1613,7 +1721,7 @@ exports[`Snapshots NavSidebar should show nav sidebar with Dashboard as active l
           </span>
         </a>
         <a
-          href="/answers"
+          href="/audience"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
@@ -1644,7 +1752,7 @@ exports[`Snapshots NavSidebar should show nav sidebar with Dashboard as active l
                 }
               }
             >
-              Answers
+              Audience
             </span>
           </span>
         </a>
@@ -1756,6 +1864,42 @@ exports[`Snapshots NavSidebar should show nav sidebar with Dashboard as active l
               }
             >
               Reports
+            </span>
+          </span>
+        </a>
+        <a
+          href="/answers"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            className="sc-bdVaJa eZRxo"
+            selected={false}
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Answers
             </span>
           </span>
         </a>
@@ -2010,7 +2154,7 @@ exports[`Snapshots NavSidebar should show only services for which the user has p
           </span>
         </a>
         <a
-          href="/answers"
+          href="/audience"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
@@ -2041,7 +2185,7 @@ exports[`Snapshots NavSidebar should show only services for which the user has p
                 }
               }
             >
-              Answers
+              Audience
             </span>
           </span>
         </a>
@@ -2153,6 +2297,42 @@ exports[`Snapshots NavSidebar should show only services for which the user has p
               }
             >
               Reports
+            </span>
+          </span>
+        </a>
+        <a
+          href="/answers"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            className="sc-bdVaJa eZRxo"
+            selected={false}
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Answers
             </span>
           </span>
         </a>
@@ -2407,7 +2587,7 @@ exports[`Snapshots NavSidebar trial ends today 1`] = `
           </span>
         </a>
         <a
-          href="/answers"
+          href="/audience"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
@@ -2438,7 +2618,7 @@ exports[`Snapshots NavSidebar trial ends today 1`] = `
                 }
               }
             >
-              Answers
+              Audience
             </span>
           </span>
         </a>
@@ -2550,6 +2730,42 @@ exports[`Snapshots NavSidebar trial ends today 1`] = `
               }
             >
               Reports
+            </span>
+          </span>
+        </a>
+        <a
+          href="/answers"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            className="sc-bdVaJa eZRxo"
+            selected={false}
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Answers
             </span>
           </span>
         </a>
@@ -2869,7 +3085,7 @@ exports[`Snapshots NavSidebar trial status for 1 day remaining 1`] = `
           </span>
         </a>
         <a
-          href="/answers"
+          href="/audience"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
@@ -2900,7 +3116,7 @@ exports[`Snapshots NavSidebar trial status for 1 day remaining 1`] = `
                 }
               }
             >
-              Answers
+              Audience
             </span>
           </span>
         </a>
@@ -3012,6 +3228,42 @@ exports[`Snapshots NavSidebar trial status for 1 day remaining 1`] = `
               }
             >
               Reports
+            </span>
+          </span>
+        </a>
+        <a
+          href="/answers"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            className="sc-bdVaJa eZRxo"
+            selected={false}
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Answers
             </span>
           </span>
         </a>

@@ -47,6 +47,7 @@ const MetricsDropdown = ({
   selectMetric,
   openDropdown,
   closeDropdown,
+  iconless,
 }) => {
   const selectedMetric = metrics.find(m => m.label === selectedMetricLabel);
   const contentClasses = classNames(dropdownContent, {
@@ -70,7 +71,7 @@ const MetricsDropdown = ({
         style={{ marginLeft: `${secondary ? '0.5rem' : ''}` }}
       >
         <DropdownTrigger className={triggerClasses} style={{ display: 'flex' }} >
-          <MetricIcon metric={selectedMetric} />
+          {!iconless && <MetricIcon metric={selectedMetric} />}
           <Text weight="medium" size="extra-small" color="outerSpace">{selectedMetric.label}</Text>
           <span style={{ pointerEvents: 'none', marginLeft: 'auto' }} >
             { isDropdownOpen && <ArrowUpIcon size="small" /> }
@@ -99,11 +100,13 @@ MetricsDropdown.propTypes = {
   selectMetric: PropTypes.func.isRequired,
   openDropdown: PropTypes.func.isRequired,
   closeDropdown: PropTypes.func.isRequired,
+  iconless: PropTypes.bool,
 };
 
 MetricsDropdown.defaultProps = {
   secondary: false,
   isDropdownOpen: false,
+  iconless: false,
 };
 
 export default MetricsDropdown;

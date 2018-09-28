@@ -12,6 +12,7 @@ import { Toolbar } from '@bufferapp/analyze-shared-components';
 import PostsTab from '../PostsTab';
 import OverviewTab from '../OverviewTab';
 import AnswersTab from '../AnswersTab';
+import AudienceTab from '../AudienceTab';
 
 const pageStyle = {
   display: 'flex',
@@ -106,6 +107,10 @@ const InsightsPage = ({
               <Route
                 path="/answers/:id?"
                 component={AnswersTab}
+              />
+              <Route
+                path="/audience/:id?"
+                component={AudienceTab}
               />
             </Switch>
           </div>

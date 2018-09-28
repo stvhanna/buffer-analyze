@@ -28,6 +28,7 @@ const deleteReportLogo = require('./deleteReportLogo');
 const profilesOverview = require('./profilesOverview');
 const getAccountDetails = require('./getAccountDetails');
 const hashtags = require('./hashtags');
+const demographic = require('./demographic');
 
 module.exports = rpc(
   profilesMethod,
@@ -59,4 +60,5 @@ module.exports = rpc(
   profilesOverview,
   getAccountDetails,
   hashtags,
+  demographic,
 );

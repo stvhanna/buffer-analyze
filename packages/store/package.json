@@ -50,7 +50,8 @@
     "@bufferapp/report": "^0.72.0",
     "@bufferapp/report-list": "^0.71.3",
     "@bufferapp/summary-table": "^0.72.0",
-    "@bufferapp/unauthorized-redirect": "1.9.6"
+    "@bufferapp/unauthorized-redirect": "2.9.6",
+    "@bufferapp/demographic-overview": "^0.1.0"
   },
   "devDependencies": {
     "eslint": "3.19.0",
