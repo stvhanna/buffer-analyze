@@ -8,7 +8,7 @@
     "test": "yarn lint && if [ -n \"$CI\" ]; then jest --runInBand; else jest; fi",
     "test-unit": "jest",
     "test-update": "jest -u snapshot.test.js",
-    "snapshots": "jest snapshot.test.js",
+    "snapshots": "jest snapshot.test.js --collectCoverage=false",
     "init": "yarn install",
     "lint-branch": "git diff --name-only master... |  grep .jsx*$ | xargs eslint -c .eslintrc.json --stdin --quiet -f table",
     "lint-head": "git diff --name-only |  grep .jsx*$ | xargs eslint -c .eslintrc.json --stdin --quiet -f table",
