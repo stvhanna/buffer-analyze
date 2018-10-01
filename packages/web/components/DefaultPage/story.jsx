@@ -10,7 +10,7 @@ import {
 import DefaultPage from './index';
 
 
-storiesOf(__dirname, module)
+storiesOf('DefaultPage', module)
   .addDecorator(checkA11y)
   .addDecorator(getStory =>
     (<Provider store={createStore()}>

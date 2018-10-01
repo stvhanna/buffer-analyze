@@ -5,7 +5,7 @@ import ProfileHeader from './index';
 
 import mockProfiles from '../../mocks/profiles';
 
-storiesOf(__dirname, module)
+storiesOf('ProfileHeader', module)
   .addDecorator(checkA11y)
   .add('should render twitter followers', () => (
     <div>

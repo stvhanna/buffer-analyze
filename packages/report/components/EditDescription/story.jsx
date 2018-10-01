@@ -5,7 +5,7 @@ import { action } from '@storybook/addon-actions';
 
 import EditDescription from './index';
 
-storiesOf(__dirname, module)
+storiesOf('EditDescription', module)
   .addDecorator(checkA11y)
   .add('renders the edit description text box', () => (
     <EditDescription description="Test report description" saveChanges={action('saveChanges')} />

@@ -12,7 +12,7 @@ class FaultyComponent extends React.Component {
   }
 }
 
-storiesOf('ErrorBoundary')
+storiesOf('ErrorBoundary', module)
   .addDecorator(checkA11y)
   .add('render a children', () => (
     <ErrorBoundary>

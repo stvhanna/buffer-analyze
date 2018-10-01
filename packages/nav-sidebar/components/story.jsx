@@ -20,7 +20,7 @@ const instagramProfile = {
   service: 'instagram',
 };
 
-storiesOf(__dirname, module)
+storiesOf('NavSidebar', module)
   .addDecorator(checkA11y)
   .add('should show nav sidebar with Dashboard as active link', () => (
     <div style={{ width: '260px', height: '100%', display: 'flex' }}>

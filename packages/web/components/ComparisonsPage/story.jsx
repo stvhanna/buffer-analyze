@@ -9,8 +9,7 @@ import {
 
 import ComparisonsPage from './index';
 
-
-storiesOf(__dirname, module)
+storiesOf('ComparisonsPage', module)
   .addDecorator(checkA11y)
   .addDecorator(getStory =>
     (<Provider store={createStore()}>

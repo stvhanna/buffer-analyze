@@ -4,7 +4,7 @@ import { checkA11y } from 'storybook-addon-a11y';
 
 import MetricGraph from './index';
 
-storiesOf(__dirname, module)
+storiesOf('MetricGraph', module)
   .addDecorator(checkA11y)
   .add('should render MetricGraph with maxValue greater than 0', () => (
     <div style={{ width: '260px', display: 'flex' }}>

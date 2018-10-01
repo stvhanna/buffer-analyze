@@ -5,7 +5,7 @@ import { action } from '@storybook/addon-actions';
 
 import ChartEditButtons from './index';
 
-storiesOf(__dirname, module)
+storiesOf('ChartEditButtons', module)
   .addDecorator(checkA11y)
   .add('they render', () => (
     <ChartEditButtons

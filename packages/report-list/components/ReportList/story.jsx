@@ -24,7 +24,7 @@ const mockReports = [{
   },
 }];
 
-storiesOf(__dirname, module)
+storiesOf('ReportList', module)
   .addDecorator(checkA11y)
   .add('loading state', () => (
     <ReportList loading selectReport={action('select report')} />

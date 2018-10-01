@@ -5,7 +5,7 @@ import PostsHeader from './index';
 
 import mockMetrics from './components/TopPostsDropdown/mocks/metrics';
 
-storiesOf(__dirname, module)
+storiesOf('PostsHeader', module)
   .addDecorator(checkA11y)
   .add('should render top posts header', () => (
     <div>

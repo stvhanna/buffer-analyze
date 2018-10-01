@@ -54,7 +54,7 @@ const comparedProfileIds = [
   '55ffe1bc7a94aed55791f309',
 ];
 
-storiesOf(__dirname, module)
+storiesOf('MultiProfileLegends', module)
   .addDecorator(checkA11y)
   .add('renders the multi profile legends', () => (
     <MultiProfileLegends

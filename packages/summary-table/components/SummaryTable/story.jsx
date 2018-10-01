@@ -4,7 +4,7 @@ import { ReportsStore } from '@bufferapp/analyze-decorators';
 import { checkA11y } from 'storybook-addon-a11y';
 import SummaryTable from './index';
 
-storiesOf(__dirname, module)
+storiesOf('SummaryTable', module)
   .addDecorator(checkA11y)
   .addDecorator(ReportsStore)
   .add('should render the summary table', () => (

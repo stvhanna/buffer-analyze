@@ -4,7 +4,7 @@ import { checkA11y } from 'storybook-addon-a11y';
 
 import MetricIcon from './index';
 
-storiesOf(__dirname, module)
+storiesOf('MetricIcon', module)
   .addDecorator(checkA11y)
   .add('should render', () => (
     <div style={{ width: '260px', display: 'flex' }}>

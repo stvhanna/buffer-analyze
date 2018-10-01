@@ -31,7 +31,7 @@ const metricKeys = [
   'reach',
 ];
 
-storiesOf(__dirname, module)
+storiesOf('ProfileItem', module)
   .addDecorator(checkA11y)
   .add('should render a profiles item', () => (
     <div

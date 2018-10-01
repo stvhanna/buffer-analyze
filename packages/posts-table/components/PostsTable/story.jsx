@@ -69,7 +69,7 @@ const topPosts = [
   },
 ];
 
-storiesOf(__dirname, module)
+storiesOf('PostsTable', module)
   .addDecorator(checkA11y)
   .add('should render the posts table', () => (
     <div

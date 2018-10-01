@@ -24,7 +24,7 @@ profiles.forEach((profile) => {
   metrics[profile.id] = profileMetrics;
 });
 
-storiesOf(__dirname, module)
+storiesOf('ProfilesTable', module)
   .addDecorator(checkA11y)
   .add('should render the profiles overview', () => (
     <div

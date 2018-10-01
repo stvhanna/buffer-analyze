@@ -10,7 +10,7 @@ const hashtag = {
   avg_engagement: 155.66666666667,
 };
 
-storiesOf('TableRow')
+storiesOf('TableRow', module)
   .addDecorator(checkA11y)
   .add('should render the hashtags', () => (
     <div
@@ -22,7 +22,7 @@ storiesOf('TableRow')
     </div>
   ));
 
-storiesOf('TableHeader')
+storiesOf('TableHeader', module)
   .addDecorator(checkA11y)
   .add('should render the header', () => (
     <div

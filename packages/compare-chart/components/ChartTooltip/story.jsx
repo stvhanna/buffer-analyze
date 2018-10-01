@@ -7,7 +7,7 @@ import ChartTooltip from './index';
 const dayTimestamp = moment.utc(1505174400000).startOf('day').valueOf();
 const previousDayTimestamp = moment.utc(1503446400000).startOf('day').valueOf();
 
-storiesOf(__dirname, module)
+storiesOf('ChartTooltip', module)
   .addDecorator(checkA11y)
   .add('should render the tooltip', () => (
     <div

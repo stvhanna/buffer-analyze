@@ -54,7 +54,7 @@ const labels = {
   secondary_metric: 'Engagement',
 };
 
-storiesOf('HashtagsTable')
+storiesOf('HashtagsTable', module)
   .addDecorator(checkA11y)
   .addDecorator(ReportsStore)
   .add('should render the hashtags table', () => (

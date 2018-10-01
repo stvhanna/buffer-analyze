@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
 import EmptyState from './index';
 
-storiesOf(__dirname, module)
+storiesOf('EmptyState', module)
   .addDecorator(checkA11y)
   .add('render with default text', () => (
     <EmptyState />

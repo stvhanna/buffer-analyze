@@ -22,7 +22,7 @@ const store = storeFake({
   },
 });
 
-storiesOf(__dirname, module)
+storiesOf('ExportPicker', module)
   .addDecorator(checkA11y)
   .add('should not be open', () => (
     <Provider store={store}>

@@ -7,7 +7,7 @@ import TopPostsDropdown from './index';
 import mockMetrics from './mocks/metrics';
 
 
-storiesOf(__dirname, module)
+storiesOf('TopPostsDropdown', module)
   .addDecorator(checkA11y)
   .add('should render the dropdown', () => (
     <div style={{ display: 'flex' }}>

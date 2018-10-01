@@ -10,7 +10,7 @@ import { presets } from '../../reducer';
 const mockTimestamp = moment('2017-08-31').valueOf();
 Date.now = () => mockTimestamp;
 
-storiesOf(__dirname, module)
+storiesOf('DatePicker', module)
   .addDecorator(checkA11y)
   .add('should not be open', () => (
     <DatePicker

@@ -9,7 +9,7 @@ import mockReports from '../../mock/reports';
 
 timezoneMock.register('US/Eastern');
 
-storiesOf(__dirname, module)
+storiesOf('Modal', module)
   .addDecorator(checkA11y)
   .add('unopened', () => (
     <Modal

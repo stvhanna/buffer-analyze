@@ -11,7 +11,7 @@ const noMetrics = {
   totals: [],
 };
 
-storiesOf(__dirname, module)
+storiesOf('AverageTable', module)
   .addDecorator(checkA11y)
   .addDecorator(ReportsStore)
   .add('should render the average table for 7 days', () => (

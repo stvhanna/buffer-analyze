@@ -5,7 +5,7 @@ import { checkA11y } from 'storybook-addon-a11y';
 import DropdownItem from './index';
 import mockProfiles from './mocks/profiles';
 
-storiesOf(__dirname, module)
+storiesOf('DropdownItem', module)
   .addDecorator(checkA11y)
   .add('should render', () => (
     <div style={{ width: '260px', display: 'flex' }}>

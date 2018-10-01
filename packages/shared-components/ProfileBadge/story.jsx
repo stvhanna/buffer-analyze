@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
 import ProfileBadge from './index';
 
-storiesOf(__dirname, module)
+storiesOf('ProfileBadge', module)
   .addDecorator(checkA11y)
   .add('should render', () => (
     <ProfileBadge

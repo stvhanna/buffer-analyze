@@ -6,7 +6,7 @@ import {
 import { checkA11y } from 'storybook-addon-a11y';
 import TabNavigation from './index';
 
-storiesOf(__dirname, module)
+storiesOf('TabNavigation', module)
   .addDecorator(checkA11y)
   .add('a story', () => (
     <TabNavigation

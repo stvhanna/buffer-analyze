@@ -14,7 +14,7 @@ import mockDaily90days from './mock/daily90days';
 
 const dayTimestamp = moment.utc(Number(mockDaily7days[0].day)).startOf('day').valueOf();
 
-storiesOf(__dirname, module)
+storiesOf('GridItem', module)
   .addDecorator(checkA11y)
   .add('should render a summary grid item with positive diff', () => (
     <ul

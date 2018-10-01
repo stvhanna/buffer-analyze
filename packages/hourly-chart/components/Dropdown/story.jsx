@@ -19,7 +19,7 @@ const mockMetrics = [
   impressions,
 ];
 
-storiesOf(__dirname, module)
+storiesOf('hourly-chart/Dropdown', module)
   .addDecorator(checkA11y)
   .add('closed dropdown', () => (
     <Dropdown

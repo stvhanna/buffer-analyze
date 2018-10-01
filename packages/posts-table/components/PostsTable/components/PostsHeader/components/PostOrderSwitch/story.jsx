@@ -5,7 +5,7 @@ import { action } from '@storybook/addon-actions';
 
 import PostOrderSwitch from './index';
 
-storiesOf(__dirname, module)
+storiesOf('PostOrderSwitch', module)
   .addDecorator(checkA11y)
   .add('should render with descending selected', () => (
     <div style={{ width: '260px', display: 'flex' }}>

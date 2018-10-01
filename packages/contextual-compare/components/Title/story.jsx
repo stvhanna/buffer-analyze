@@ -7,7 +7,7 @@ const presets = [{
   label: 'When is it most effective to post?',
 }];
 
-storiesOf(__dirname, module)
+storiesOf('contextual-compare/Title', module)
   .addDecorator(checkA11y)
   .add('[TESTED] should render title as if for app', () => (
     <Title />

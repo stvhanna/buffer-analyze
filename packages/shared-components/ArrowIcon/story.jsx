@@ -7,7 +7,7 @@ import {
 
 import ArrowIcon from './index';
 
-storiesOf('ArrowIcon')
+storiesOf('ArrowIcon', module)
   .addDecorator(checkA11y)
   .add('should render downward arrows', () => (
     <div

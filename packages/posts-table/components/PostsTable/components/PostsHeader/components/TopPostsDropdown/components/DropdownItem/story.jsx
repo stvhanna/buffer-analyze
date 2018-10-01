@@ -6,7 +6,7 @@ import { action } from '@storybook/addon-actions';
 import DropdownItem from './index';
 import mockMetrics from '../../mocks/metrics';
 
-storiesOf(__dirname, module)
+storiesOf('TopPostsDropdown/DropdownItem', module)
   .addDecorator(checkA11y)
   .add('should render item', () => (
     <DropdownItem

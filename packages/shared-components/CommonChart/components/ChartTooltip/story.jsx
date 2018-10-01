@@ -7,7 +7,7 @@ import mockPresets from '../../../mocks/presets';
 
 const dayTimestamp = moment.utc(1505174400000).startOf('day').valueOf();
 
-storiesOf(__dirname, module)
+storiesOf('ChartTooltip', module)
   .addDecorator(checkA11y)
   .add('[TESTED] should render the tooltip', () => (
     <div

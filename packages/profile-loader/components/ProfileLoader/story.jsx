@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { checkA11y } from 'storybook-addon-a11y';
 import ProfileLoader from './index';
 
-storiesOf(__dirname, module)
+storiesOf('ProfileLoader', module)
   .addDecorator(checkA11y)
   .add('does not render anything while loading', () => (
     <ProfileLoader loading>

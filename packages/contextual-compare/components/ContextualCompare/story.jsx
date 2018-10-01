@@ -12,7 +12,7 @@ import mockPresets from '../../mocks/presets';
 const selectedMetrics = [mockMetrics[0], mockMetrics[1]];
 selectedMetrics[0].squaredIcon = true;
 
-storiesOf(__dirname, module)
+storiesOf('ContextualCompare', module)
   .addDecorator(checkA11y)
   .addDecorator(ReportsStore)
   .add('[TESTED] Should render in Presets mode with multiple metrics for each category', () => (

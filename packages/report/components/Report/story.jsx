@@ -281,7 +281,7 @@ const dateRange = {
   endDate: '02/25/2018',
 };
 
-storiesOf(__dirname, module)
+storiesOf('Report', module)
   .addDecorator(checkA11y)
   .add('render with summary table and no logo', () => (
     <Card>
