@@ -7,10 +7,10 @@ import {
   ConnectedRouter as Router,
 } from 'react-router-redux';
 
-import InsightsPage from './index';
+import SingleProfilePage from './index';
 
 
-storiesOf('InsightsPage')
+storiesOf('SingleProfilePage')
   .addDecorator(checkA11y)
   .addDecorator(getStory =>
     (<Provider store={createStore()}>
@@ -20,7 +20,7 @@ storiesOf('InsightsPage')
     </Provider>),
   )
   .add('should render Insights page', () => (
-    <InsightsPage
+    <SingleProfilePage
       location={{
         pathname: '/insights/twitter',
       }}

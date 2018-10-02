@@ -65,7 +65,7 @@ const toolbarExport = {
   marginLeft: '0.5rem',
 };
 
-const InsightsPage = ({
+const SingleProfilePage = ({
   match: {
     params: {
       service,
@@ -120,7 +120,7 @@ const InsightsPage = ({
   </div>
 );
 
-InsightsPage.propTypes = {
+SingleProfilePage.propTypes = {
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired,
   }).isRequired,
@@ -133,4 +133,4 @@ InsightsPage.propTypes = {
   }).isRequired,
 };
 
-export default connect()(InsightsPage);
+export default connect()(SingleProfilePage);

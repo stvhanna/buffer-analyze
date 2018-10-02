@@ -5,7 +5,7 @@ import DefaultPage from '../DefaultPage';
 import ReportsPage from '../ReportsPage';
 import ReportsList from '../ReportsList';
 import ReportExport from '../ReportExport';
-import InsightsPage from '../InsightsPage';
+import SingleProfilePage from '../SingleProfilePage';
 import ComparisonsPage from '../ComparisonsPage';
 
 const appStyle = {
@@ -37,7 +37,7 @@ const App = () =>
         />
         <Route
           path="/:tabId/:id?"
-          component={InsightsPage}
+          component={SingleProfilePage}
         />
         <Route component={DefaultPage} />
       </Switch>

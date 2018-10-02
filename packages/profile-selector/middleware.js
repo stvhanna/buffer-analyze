@@ -1,13 +1,12 @@
-
 import { push, LOCATION_CHANGE } from 'react-router-redux';
 import { actions as reportActions } from '@bufferapp/report-list';
 import { actionTypes } from '@bufferapp/async-data-fetch';
 import { actions as performanceActions } from '@bufferapp/performance-tracking';
 import { actions as profilesActions, actionTypes as profileActionTypes } from './reducer';
 
-const INSIGHTS_PATH_REGEX = /(overview|posts|answers|audience)\/?(.*)$/;
+const PROFILE_PAGES_PATH_REGEX = /(overview|posts|answers|audience)\/?(.*)$/;
 
-const isInsightsRoute = route => route.match(INSIGHTS_PATH_REGEX);
+const isInsightsRoute = route => route.match(PROFILE_PAGES_PATH_REGEX);
 
 const getProfileIdFromRoute = (state) => {
   const currentRoute = state.router.location.pathname;
@@ -23,7 +22,7 @@ const getViewFromRoute = (path) => {
   const [
     route, // eslint-disable-line no-unused-vars
     view,
-  ] = path.match(INSIGHTS_PATH_REGEX);
+  ] = path.match(PROFILE_PAGES_PATH_REGEX);
   return view;
 };
 

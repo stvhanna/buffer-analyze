@@ -2214,7 +2214,7 @@ exports[`Snapshots DefaultPage should render the dashboard page 1`] = `
 </span>
 `;
 
-exports[`Snapshots InsightsPage should render Insights page 1`] = `
+exports[`Snapshots SingleProfilePage should render Insights page 1`] = `
 <span>
   <div
     style={
