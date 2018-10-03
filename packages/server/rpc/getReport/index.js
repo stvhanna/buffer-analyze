@@ -14,6 +14,7 @@ const RPC_ENDPOINTS = {
   audience: require('../audience'), // eslint-disable-line global-require
   comparison: require('../comparison'), // eslint-disable-line global-require
   'hourly-engagements': require('../hourly'), // eslint-disable-line global-require
+  'demographic-overview': require('../demographic'), // eslint-disable-line global-require
 };
 
 function calculateDateRange(range, timezone) {

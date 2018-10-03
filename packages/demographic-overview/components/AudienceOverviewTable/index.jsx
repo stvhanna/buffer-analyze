@@ -9,12 +9,13 @@ import {
   ChartHeader,
   MetricsDropdown,
 } from '@bufferapp/analyze-shared-components';
+import { geyser } from '@bufferapp/components/style/color';
 import AddReport from '@bufferapp/add-report';
 import Title from '../Title';
 import { PeopleIcon, LocationIcon } from './icons';
 
 function expandGenderAgeLabel(label) {
-  return label.replace(/^M\./, 'Male, ').replace(/^F\./, 'Female, ').replace(/^U./, 'Unknown, ')
+  return label.replace(/^M\./, 'Male, ').replace(/^F\./, 'Female, ').replace(/^U./, 'Unknown, ');
 }
 
 const HeadersActions = styled.div`
@@ -51,6 +52,14 @@ const GridContainer = styled.div`
 const GridContent = styled.div`
   display: flex;
   flex-direction: column;
+`;
+
+const HeaderSpacer = styled.div`
+  margin-right: 0.5rem;
+  width: 1px;
+  background: ${geyser};
+  height: 30px;
+}
 `;
 
 const Metric = ({ metric }) =>
@@ -138,9 +147,16 @@ const AudienceOverviewTable = ({
               openDropdown={openDropdown}
               closeDropdown={closeDropdown}
               iconless
+              inHeader
             />
           }
-          <AddReport chart="summary-table" />
+          {metrics.length > 1 && <HeaderSpacer />}
+          {metrics.length > 0 && <AddReport
+            chart="demographic-overview"
+            state={{
+              selectedGroup,
+            }}
+          />}
         </HeadersActions>
       </ChartHeader>
       <GridContainer id="js-dom-to-png-summary">

@@ -2214,522 +2214,6 @@ exports[`Snapshots DefaultPage should render the dashboard page 1`] = `
 </span>
 `;
 
-exports[`Snapshots SingleProfilePage should render Insights page 1`] = `
-<span>
-  <div
-    style={
-      Object {
-        "display": "flex",
-      }
-    }
-  >
-    <div
-      style={
-        Object {
-          "background": "#fff",
-          "borderRight": "1px solid #e6ebef",
-          "boxSizing": "border-box",
-          "display": "flex",
-          "flexDirection": "column",
-          "maxHeight": "100vh",
-          "minHeight": "100vh",
-          "padding": "0.75rem 0",
-          "width": "200px",
-        }
-      }
-    >
-      <a
-        href="/"
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        style={
-          Object {
-            "color": "#168eea",
-            "fontFamily": "\\"Roboto\\", sans-serif",
-            "outline": "none",
-            "padding": "0",
-            "textDecoration": "none",
-          }
-        }
-        target="_self"
-      >
-        <span
-          className="sc-cHSUfg jnBexa"
-          selected={false}
-        >
-          <span
-            style={
-              Object {
-                "color": "#59626a",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "1rem",
-                "fontWeight": 400,
-              }
-            }
-          >
-            Dashboard
-          </span>
-        </span>
-      </a>
-      <hr
-        style={
-          Object {
-            "background": "#e6ebef",
-            "border": "none",
-            "boxSizing": "border-box",
-            "height": "0.063rem",
-            "marginBottom": "1rem",
-            "marginTop": "0.75rem",
-            "width": "100%",
-          }
-        }
-      />
-      <div>
-        <span
-          style={
-            Object {
-              "display": "block",
-              "letterSpacing": ".075rem",
-              "margin": "0 1rem 0.75rem",
-              "padding": "0",
-              "textTransform": "uppercase",
-            }
-          }
-        >
-          <span
-            style={
-              Object {
-                "color": "#8A9097",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 500,
-              }
-            }
-          >
-            Insights
-          </span>
-        </span>
-        <a
-          href="/overview"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          style={
-            Object {
-              "color": "#168eea",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "outline": "none",
-              "padding": "0",
-              "textDecoration": "none",
-            }
-          }
-          target="_self"
-        >
-          <span
-            className="sc-cHSUfg jnBexa"
-            selected={false}
-          >
-            <span
-              style={
-                Object {
-                  "color": "#59626a",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1rem",
-                  "fontWeight": 400,
-                }
-              }
-            >
-              Overview
-            </span>
-          </span>
-        </a>
-        <a
-          href="/posts"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          style={
-            Object {
-              "color": "#168eea",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "outline": "none",
-              "padding": "0",
-              "textDecoration": "none",
-            }
-          }
-          target="_self"
-        >
-          <span
-            className="sc-cHSUfg jnBexa"
-            selected={false}
-          >
-            <span
-              style={
-                Object {
-                  "color": "#59626a",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1rem",
-                  "fontWeight": 400,
-                }
-              }
-            >
-              Posts
-            </span>
-          </span>
-        </a>
-        <a
-          href="/audience"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          style={
-            Object {
-              "color": "#168eea",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "outline": "none",
-              "padding": "0",
-              "textDecoration": "none",
-            }
-          }
-          target="_self"
-        >
-          <span
-            className="sc-cHSUfg jnBexa"
-            selected={false}
-          >
-            <span
-              style={
-                Object {
-                  "color": "#59626a",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1rem",
-                  "fontWeight": 400,
-                }
-              }
-            >
-              Audience
-            </span>
-          </span>
-        </a>
-        <hr
-          style={
-            Object {
-              "background": "#e6ebef",
-              "border": "none",
-              "boxSizing": "border-box",
-              "height": "0.063rem",
-              "marginBottom": "1rem",
-              "marginTop": "0.75rem",
-              "width": "100%",
-            }
-          }
-        />
-      </div>
-      <div>
-        <span
-          style={
-            Object {
-              "display": "block",
-              "letterSpacing": ".075rem",
-              "margin": "0 1rem 0.75rem",
-              "padding": "0",
-              "textTransform": "uppercase",
-            }
-          }
-        >
-          <span
-            style={
-              Object {
-                "color": "#8A9097",
-                "fontFamily": "\\"Roboto\\", sans-serif",
-                "fontSize": "0.75rem",
-                "fontWeight": 500,
-              }
-            }
-          >
-            Tools
-          </span>
-        </span>
-        <a
-          href="/comparisons/"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          style={
-            Object {
-              "color": "#168eea",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "outline": "none",
-              "padding": "0",
-              "textDecoration": "none",
-            }
-          }
-          target="_self"
-        >
-          <span
-            className="sc-cHSUfg jnBexa"
-            selected={false}
-          >
-            <span
-              style={
-                Object {
-                  "color": "#59626a",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1rem",
-                  "fontWeight": 400,
-                }
-              }
-            >
-              Comparisons
-            </span>
-          </span>
-        </a>
-        <a
-          href="/reports/"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          style={
-            Object {
-              "color": "#168eea",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "outline": "none",
-              "padding": "0",
-              "textDecoration": "none",
-            }
-          }
-          target="_self"
-        >
-          <span
-            className="sc-cHSUfg jnBexa"
-            selected={false}
-          >
-            <span
-              style={
-                Object {
-                  "color": "#59626a",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1rem",
-                  "fontWeight": 400,
-                }
-              }
-            >
-              Reports
-            </span>
-          </span>
-        </a>
-        <a
-          href="/answers"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          style={
-            Object {
-              "color": "#168eea",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "outline": "none",
-              "padding": "0",
-              "textDecoration": "none",
-            }
-          }
-          target="_self"
-        >
-          <span
-            className="sc-cHSUfg jnBexa"
-            selected={false}
-          >
-            <span
-              style={
-                Object {
-                  "color": "#59626a",
-                  "fontFamily": "\\"Roboto\\", sans-serif",
-                  "fontSize": "1rem",
-                  "fontWeight": 400,
-                }
-              }
-            >
-              Answers
-            </span>
-          </span>
-        </a>
-      </div>
-      <div
-        style={
-          Object {
-            "marginTop": "auto",
-          }
-        }
-      >
-        <a
-          href="mailto:hello+analyze@buffer.com?subject=Analyze feedback"
-          onBlur={[Function]}
-          onClick={undefined}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          style={
-            Object {
-              "color": "#168eea",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "outline": "none",
-              "padding": "0",
-              "textDecoration": "none",
-            }
-          }
-          target="_self"
-        >
-          <span
-            className="sc-cTjmhe ijbDQi"
-          >
-            <svg
-              height="100%"
-              style={
-                Object {
-                  "fill": "#59626a",
-                  "height": "1rem",
-                  "width": "1rem",
-                }
-              }
-              version="1.1"
-              viewBox="0 0 16 16"
-              width="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-            >
-              <g
-                className="shuttleGray"
-              >
-                <path
-                  d="M6.5 1.5C9.48675 1.5 11.5 2.9965 11.5 5.34842C11.5 7.60283 9.81075 8.45779 7.5 9L6.5 11L5.5 9C3.16867 8.45238 1.64257 7.57142 1.64257 5.34842C1.64257 2.9965 3.51325 1.5 6.5 1.5ZM6.5 0C2.91038 0 0 2.39417 0 5.34842C0 7.79242 1.99225 9.85346 4.71304 10.4921L6.5 13L8.28696 10.4921C11.0078 9.85292 13 7.79187 13 5.34842C13 2.39417 10.0896 0 6.5 0Z"
-                  fill="#596269"
-                  transform="translate(0.5)"
-                />
-              </g>
-            </svg>
-            <span
-              className="sc-cugefK cSPQWh"
-            >
-              <span
-                style={
-                  Object {
-                    "color": "#59626a",
-                    "fontFamily": "\\"Roboto\\", sans-serif",
-                    "fontSize": "0.75rem",
-                    "fontWeight": 400,
-                  }
-                }
-              >
-                Send Feedback
-              </span>
-            </span>
-          </span>
-        </a>
-      </div>
-    </div>
-    <div
-      style={
-        Object {
-          "alignItems": "center",
-          "background": "rgb(250, 250, 250)",
-          "display": "flex",
-          "flexDirection": "column",
-          "flexGrow": 1,
-          "height": "100vh",
-          "justifyContent": "center",
-          "maxWidth": "100%",
-        }
-      }
-    >
-      <div
-        style={
-          Object {
-            "textAlign": "center",
-          }
-        }
-      >
-        <div
-          style={
-            Object {
-              "height": "1rem",
-              "margin": "0 auto 1rem auto",
-              "position": "relative",
-              "width": "1rem",
-            }
-          }
-        >
-          <span>
-            <div
-              style={
-                Object {
-                  "height": "1rem",
-                  "left": 0,
-                  "opacity": 0,
-                  "position": "absolute",
-                  "top": 0,
-                  "transition": "all 1000ms ease-in-out",
-                  "width": "1rem",
-                }
-              }
-            >
-              <svg
-                height="100%"
-                style={
-                  Object {
-                    "fill": "#59626a",
-                    "height": "1rem",
-                    "width": "1rem",
-                  }
-                }
-                version="1.1"
-                viewBox="0 0 16 16"
-                width="100%"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-              >
-                <g
-                  className="shuttleGray"
-                >
-                  <path
-                    d="M1.10241622,4.34038738 L7.75166358,7.40469806 C7.88821853,7.46764349 8.11178147,7.46764349 8.24833642,7.40469806 L14.8975838,4.34038738 C15.0341387,4.27744195 15.0341387,4.17446518 14.8975838,4.11151975 L8.24833642,1.04720908 C8.11178147,0.984263641 7.88821853,0.984263641 7.75166358,1.04720908 L1.10241622,4.11151975 C0.965861261,4.17446518 0.965861261,4.27744195 1.10241622,4.34038738"
-                  />
-                </g>
-              </svg>
-            </div>
-          </span>
-        </div>
-        <span
-          style={
-            Object {
-              "color": "#59626a",
-              "fontFamily": "\\"Roboto\\", sans-serif",
-              "fontSize": "1rem",
-              "fontWeight": 400,
-            }
-          }
-        >
-          Loading...
-        </span>
-      </div>
-    </div>
-  </div>
-</span>
-`;
-
 exports[`Snapshots ReportsPage should render reports page 1`] = `
 <span>
   <div
@@ -3517,7 +3001,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
             />
           </div>
           <span
-            className="sc-iFMziU dbQsfd"
+            className="sc-bFADNz buXOkt"
           >
             <button
               className="sc-kgoBCf cmMzae"
@@ -3546,7 +3030,7 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
           className="sc-kcbnda gpkZmz"
         >
           <div
-            className="sc-iomxrj dAHPxs"
+            className="sc-kcDeIU GQJjY"
           >
             <div
               className="sc-bwzfXH eFBPoz"
@@ -3628,6 +3112,522 @@ exports[`Snapshots ReportsPage should render reports page 1`] = `
             </div>
           </div>
         </section>
+      </div>
+    </div>
+  </div>
+</span>
+`;
+
+exports[`Snapshots SingleProfilePage should render Insights page 1`] = `
+<span>
+  <div
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "background": "#fff",
+          "borderRight": "1px solid #e6ebef",
+          "boxSizing": "border-box",
+          "display": "flex",
+          "flexDirection": "column",
+          "maxHeight": "100vh",
+          "minHeight": "100vh",
+          "padding": "0.75rem 0",
+          "width": "200px",
+        }
+      }
+    >
+      <a
+        href="/"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "color": "#168eea",
+            "fontFamily": "\\"Roboto\\", sans-serif",
+            "outline": "none",
+            "padding": "0",
+            "textDecoration": "none",
+          }
+        }
+        target="_self"
+      >
+        <span
+          className="sc-cHSUfg jnBexa"
+          selected={false}
+        >
+          <span
+            style={
+              Object {
+                "color": "#59626a",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "1rem",
+                "fontWeight": 400,
+              }
+            }
+          >
+            Dashboard
+          </span>
+        </span>
+      </a>
+      <hr
+        style={
+          Object {
+            "background": "#e6ebef",
+            "border": "none",
+            "boxSizing": "border-box",
+            "height": "0.063rem",
+            "marginBottom": "1rem",
+            "marginTop": "0.75rem",
+            "width": "100%",
+          }
+        }
+      />
+      <div>
+        <span
+          style={
+            Object {
+              "display": "block",
+              "letterSpacing": ".075rem",
+              "margin": "0 1rem 0.75rem",
+              "padding": "0",
+              "textTransform": "uppercase",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#8A9097",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 500,
+              }
+            }
+          >
+            Insights
+          </span>
+        </span>
+        <a
+          href="/overview"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            className="sc-cHSUfg jnBexa"
+            selected={false}
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Overview
+            </span>
+          </span>
+        </a>
+        <a
+          href="/posts"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            className="sc-cHSUfg jnBexa"
+            selected={false}
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Posts
+            </span>
+          </span>
+        </a>
+        <a
+          href="/audience"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            className="sc-cHSUfg jnBexa"
+            selected={false}
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Audience
+            </span>
+          </span>
+        </a>
+        <hr
+          style={
+            Object {
+              "background": "#e6ebef",
+              "border": "none",
+              "boxSizing": "border-box",
+              "height": "0.063rem",
+              "marginBottom": "1rem",
+              "marginTop": "0.75rem",
+              "width": "100%",
+            }
+          }
+        />
+      </div>
+      <div>
+        <span
+          style={
+            Object {
+              "display": "block",
+              "letterSpacing": ".075rem",
+              "margin": "0 1rem 0.75rem",
+              "padding": "0",
+              "textTransform": "uppercase",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "color": "#8A9097",
+                "fontFamily": "\\"Roboto\\", sans-serif",
+                "fontSize": "0.75rem",
+                "fontWeight": 500,
+              }
+            }
+          >
+            Tools
+          </span>
+        </span>
+        <a
+          href="/comparisons/"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            className="sc-cHSUfg jnBexa"
+            selected={false}
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Comparisons
+            </span>
+          </span>
+        </a>
+        <a
+          href="/reports/"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            className="sc-cHSUfg jnBexa"
+            selected={false}
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Reports
+            </span>
+          </span>
+        </a>
+        <a
+          href="/answers"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            className="sc-cHSUfg jnBexa"
+            selected={false}
+          >
+            <span
+              style={
+                Object {
+                  "color": "#59626a",
+                  "fontFamily": "\\"Roboto\\", sans-serif",
+                  "fontSize": "1rem",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              Answers
+            </span>
+          </span>
+        </a>
+      </div>
+      <div
+        style={
+          Object {
+            "marginTop": "auto",
+          }
+        }
+      >
+        <a
+          href="mailto:hello+analyze@buffer.com?subject=Analyze feedback"
+          onBlur={[Function]}
+          onClick={undefined}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": "#168eea",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "outline": "none",
+              "padding": "0",
+              "textDecoration": "none",
+            }
+          }
+          target="_self"
+        >
+          <span
+            className="sc-cTjmhe ijbDQi"
+          >
+            <svg
+              height="100%"
+              style={
+                Object {
+                  "fill": "#59626a",
+                  "height": "1rem",
+                  "width": "1rem",
+                }
+              }
+              version="1.1"
+              viewBox="0 0 16 16"
+              width="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            >
+              <g
+                className="shuttleGray"
+              >
+                <path
+                  d="M6.5 1.5C9.48675 1.5 11.5 2.9965 11.5 5.34842C11.5 7.60283 9.81075 8.45779 7.5 9L6.5 11L5.5 9C3.16867 8.45238 1.64257 7.57142 1.64257 5.34842C1.64257 2.9965 3.51325 1.5 6.5 1.5ZM6.5 0C2.91038 0 0 2.39417 0 5.34842C0 7.79242 1.99225 9.85346 4.71304 10.4921L6.5 13L8.28696 10.4921C11.0078 9.85292 13 7.79187 13 5.34842C13 2.39417 10.0896 0 6.5 0Z"
+                  fill="#596269"
+                  transform="translate(0.5)"
+                />
+              </g>
+            </svg>
+            <span
+              className="sc-cugefK cSPQWh"
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#59626a",
+                    "fontFamily": "\\"Roboto\\", sans-serif",
+                    "fontSize": "0.75rem",
+                    "fontWeight": 400,
+                  }
+                }
+              >
+                Send Feedback
+              </span>
+            </span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "background": "rgb(250, 250, 250)",
+          "display": "flex",
+          "flexDirection": "column",
+          "flexGrow": 1,
+          "height": "100vh",
+          "justifyContent": "center",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "height": "1rem",
+              "margin": "0 auto 1rem auto",
+              "position": "relative",
+              "width": "1rem",
+            }
+          }
+        >
+          <span>
+            <div
+              style={
+                Object {
+                  "height": "1rem",
+                  "left": 0,
+                  "opacity": 0,
+                  "position": "absolute",
+                  "top": 0,
+                  "transition": "all 1000ms ease-in-out",
+                  "width": "1rem",
+                }
+              }
+            >
+              <svg
+                height="100%"
+                style={
+                  Object {
+                    "fill": "#59626a",
+                    "height": "1rem",
+                    "width": "1rem",
+                  }
+                }
+                version="1.1"
+                viewBox="0 0 16 16"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              >
+                <g
+                  className="shuttleGray"
+                >
+                  <path
+                    d="M1.10241622,4.34038738 L7.75166358,7.40469806 C7.88821853,7.46764349 8.11178147,7.46764349 8.24833642,7.40469806 L14.8975838,4.34038738 C15.0341387,4.27744195 15.0341387,4.17446518 14.8975838,4.11151975 L8.24833642,1.04720908 C8.11178147,0.984263641 7.88821853,0.984263641 7.75166358,1.04720908 L1.10241622,4.11151975 C0.965861261,4.17446518 0.965861261,4.27744195 1.10241622,4.34038738"
+                  />
+                </g>
+              </svg>
+            </div>
+          </span>
+        </div>
+        <span
+          style={
+            Object {
+              "color": "#59626a",
+              "fontFamily": "\\"Roboto\\", sans-serif",
+              "fontSize": "1rem",
+              "fontWeight": 400,
+            }
+          }
+        >
+          Loading...
+        </span>
       </div>
     </div>
   </div>

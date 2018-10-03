@@ -5,6 +5,7 @@ import { Table as SummaryTable, Title as SummaryTitle } from '@bufferapp/summary
 import { Table as HashtagsTable, Title as HashtagsTitle } from '@bufferapp/hashtags-table';
 import { Table as PostsSummary, Title as PostsSummaryTitle } from '@bufferapp/posts-summary-table';
 import { Table as AverageTable, Title as AverageTitle } from '@bufferapp/average-table';
+import { Table as DemographicOverview, Title as DemographicOverviewTitle } from '@bufferapp/demographic-overview';
 import { Title as ContextualTitle } from '@bufferapp/contextual-compare';
 import { Table as PostsTable, Title as PostsTitle } from '@bufferapp/posts-table';
 import { Chart as CompareChart, Title as CompareTitle } from '@bufferapp/compare-chart';
@@ -57,6 +58,10 @@ const CHARTS = {
   'hourly-engagements': {
     chart: HourlyChart,
     title: HourlyTitle,
+  },
+  'demographic-overview': {
+    chart: DemographicOverview,
+    title: DemographicOverviewTitle,
   },
 };
 
