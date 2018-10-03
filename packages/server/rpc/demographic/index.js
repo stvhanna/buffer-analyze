@@ -6,7 +6,7 @@ module.exports = method(
   'get demographic data for a profile',
   ({ profileId, startDate, endDate, state }, req) =>
     rp({
-      uri: `${process.env.ANALYZE_API_ADDR}/metrics/demographic`,
+      uri: `${req.app.get('analyzeApiAddr')}/metrics/demographic`,
       method: 'POST',
       strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
       body: {
@@ -18,7 +18,10 @@ module.exports = method(
       },
       json: true,
     })
-      .then(({ response }) => response)
+      .then(({ response }) => ({
+        metrics: response.metrics,
+        selectedGroup: response.metrics[0].key,
+      }))
       .catch(error => ({
         metrics: [],
         selectedGroup: '',

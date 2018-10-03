@@ -21,11 +21,11 @@ storiesOf('AudienceOverviewTable')
             metrics: [
               {
                 key: 'gender_age',
-                value: 'Female, 30-45',
+                values: [{ label: 'F.30-45' }],
               },
               {
-                key: 'location',
-                value: 'Arrakeen, Arrakis',
+                key: 'city',
+                values: [{ label: 'Arrakeen, Arrakis' }],
               },
             ],
           },
@@ -48,11 +48,11 @@ storiesOf('AudienceOverviewTable')
             metrics: [
               {
                 key: 'gender_age',
-                value: 'Female, 30-45',
+                values: [{ label: 'F.30-45' }],
               },
               {
-                key: 'location',
-                value: 'Arrakeen, Arrakis',
+                key: 'city',
+                values: [{ label: 'Arrakeen, Arrakis' }],
               },
             ],
           },
@@ -62,11 +62,11 @@ storiesOf('AudienceOverviewTable')
             metrics: [
               {
                 key: 'gender_age',
-                value: 'Female, 30-45',
+                values: [{ label: 'F.30-45' }],
               },
               {
-                key: 'location',
-                value: 'Arrakeen, Arrakis',
+                key: 'city',
+                values: [{ label: 'Arrakeen, Arrakis' }],
               },
             ],
           },

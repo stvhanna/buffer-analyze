@@ -13,6 +13,10 @@ import AddReport from '@bufferapp/add-report';
 import Title from '../Title';
 import { PeopleIcon, LocationIcon } from './icons';
 
+function expandGenderAgeLabel(label) {
+  return label.replace(/^M\./, 'Male, ').replace(/^F\./, 'Female, ').replace(/^U./, 'Unknown, ')
+}
+
 const HeadersActions = styled.div`
   margin-left: auto;
   display: flex;
@@ -56,16 +60,16 @@ const Metric = ({ metric }) =>
         <PeopleIcon />
         <GridContent>
           <Text weight="medium" >Top gender and age</Text>
-          <Text weight="medium" size="large" color="black" >{metric.value}</Text>
+          <Text weight="medium" size="large" color="black" >{expandGenderAgeLabel(metric.values[0].label)}</Text>
         </GridContent>
       </GridItem>
     }
-    {metric.key === 'location' &&
+    {metric.key === 'city' &&
       <GridItem>
         <LocationIcon />
         <GridContent>
           <Text weight="medium" >Top place</Text>
-          <Text weight="medium" size="large" color="black" >{metric.value}</Text>
+          <Text weight="medium" size="large" color="black" >{expandGenderAgeLabel(metric.values[0].label)}</Text>
         </GridContent>
       </GridItem>
     }
@@ -74,7 +78,7 @@ const Metric = ({ metric }) =>
 Metric.propTypes = {
   metric: PropTypes.shape({
     key: PropTypes.string.isRequired,
-    value: PropTypes.string.isRequired,
+    values: PropTypes.string.isRequired,
   }).isRequired,
 };
 
@@ -94,7 +98,9 @@ Table.propTypes = {
     key: PropTypes.string,
     metrics: PropTypes.arrayOf(PropTypes.shape({
       key: PropTypes.string,
-      value: PropTypes.number,
+      values: PropTypes.arrayOf(PropTypes.shape({
+        label: PropTypes.string,
+      })),
     })).isRequired,
   })).isRequired,
   selectedGroup: PropTypes.string.isRequired,

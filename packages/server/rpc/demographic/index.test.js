@@ -24,14 +24,57 @@ describe('rpc/create_report', () => {
 
   it('should send a POST request to /create_report with the provided parameters', async () => {
     rp.mockReturnValueOnce(Promise.resolve({
-      metrics: ['foo', 'bar'],
+      response: {
+        metrics: [
+          {
+            key: 'foo_bar',
+            label: 'foo bar',
+            metrics: [
+              {
+                key: 'foo',
+                values: [
+                  'Bar' : 50,
+                  'Foo' : 10,
+                ],
+              },
+            ],
+          },
+        ],
+      },
     }));
 
-    const result = await demographic.fn({ profileId, state: {}, startDate: '09/21/2018', endDate: '09/26/2018' });
+    const result = await demographic.fn({ profileId, state: {}, startDate: '09/21/2018', endDate: '09/26/2018' }, {
+      app: {
+        get() { return 'analyze-api'; },
+      },
+      session: {
+        analyze: {
+          accessToken: 'foo1',
+        },
+      },
+    });
 
-    expect(result).toEqual({ metrics: ['foo', 'bar'] });
+    expect(result).toEqual({
+      selectedGroup: 'foo_bar',
+      metrics: [
+        {
+          key: 'foo_bar',
+          label: 'foo bar',
+          metrics: [
+            {
+              key: 'foo',
+              values: [
+                'Bar' : 50,
+                'Foo' : 10,
+              ],
+            },
+          ],
+        },
+      ],
+    });
+
     expect(rp.mock.calls[0]).toEqual([{
-      uri: `${process.env.ANALYZE_API_ADDR}/demographic`,
+      uri: 'analyze-api/metrics/demographic',
       method: 'POST',
       strictSSL: !(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'),
       body: {
@@ -39,6 +82,7 @@ describe('rpc/create_report', () => {
         start_date: '09/21/2018',
         end_date: '09/26/2018',
         state: {},
+        access_token: 'foo1',
       },
       json: true,
     }]);

@@ -7,6 +7,7 @@ import AudienceOverview, {
   actions,
   actionTypes,
   middleware,
+  filterTopMetrics,
 } from './index';
 import AudienceOverviewTable from './components/AudienceOverviewTable';
 
