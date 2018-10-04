@@ -88,7 +88,7 @@ module.exports = method(
               .map((chart, index) => {
                 chart.profile = profileParser(chart.profile);
                 if (!Array.isArray(chartMetrics[index])) {
-                  return Object.assign(chart, chart.state, chartMetrics[index]);
+                  return Object.assign(chart, chartMetrics[index], chart.state);
                 }
                 return Object.assign(chart, {
                   metrics: chartMetrics[index],

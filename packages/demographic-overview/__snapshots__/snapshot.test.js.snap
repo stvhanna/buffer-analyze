@@ -28,7 +28,7 @@ exports[`Snapshots AudienceOverviewTable should render 1`] = `
               }
             }
           >
-            Audience overview
+            Audience overview 
           </span>
         </h2>
         <div
@@ -276,7 +276,7 @@ exports[`Snapshots AudienceOverviewTable should render a "no data" state 1`] = `
               }
             }
           >
-            Audience overview
+            Audience overview 
           </span>
         </h2>
         <div
@@ -348,7 +348,7 @@ exports[`Snapshots AudienceOverviewTable should render a loading state 1`] = `
               }
             }
           >
-            Audience overview
+            Audience overview 
           </span>
         </h2>
         <div
@@ -471,7 +471,7 @@ exports[`Snapshots AudienceOverviewTable should render with dropdown for multipl
               }
             }
           >
-            Audience overview
+            Audience overview 
           </span>
         </h2>
         <div

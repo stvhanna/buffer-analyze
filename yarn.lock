@@ -30,6 +30,18 @@
     react-tooltip "^3.3.0"
     styled-components "^2.2.1"
 
+"@bufferapp/analyze-date-picker@^0.71.3":
+  version "0.71.3"
+  resolved "https://registry.yarnpkg.com/@bufferapp/analyze-date-picker/-/analyze-date-picker-0.71.3.tgz#ee7e8d8f666143828de0b2bf663c9759a21df490"
+  integrity sha512-x19t2VpY7upY8Dm4xJAml5yk9MbmLi5I1H/H0j1CKw4x++5zuFXiz9SNGtpfzKeGZo4A9BEpddkSv6wUb6z3ow==
+  dependencies:
+    "@bufferapp/analyze-profile-selector" "^0.71.3"
+    "@bufferapp/async-data-fetch" "0.5.36-beta01"
+    "@bufferapp/components" "2.1.1-alpha.6"
+    moment "^2.18.1"
+    react-tooltip "^3.3.0"
+    styled-components "^2.2.1"
+
 "@bufferapp/analyze-decorators@^0.15.2":
   version "0.15.2"
   resolved "https://registry.yarnpkg.com/@bufferapp/analyze-decorators/-/analyze-decorators-0.15.2.tgz#f9c1b939fa367a90c167c7a229c960b6b4e37c20"
@@ -68,6 +80,7 @@
 "@bufferapp/app-sidebar@1.9.22":
   version "1.9.22"
   resolved "https://registry.yarnpkg.com/@bufferapp/app-sidebar/-/app-sidebar-1.9.22.tgz#3cf4ea23b82eca8cf09603d36d6579027be71705"
+  integrity sha512-0+t03usg/HyAcImRoTssJ7iEALSYOHafXwg39RqOOX24RVLCx1YwxWTS+RrbWD4fINrQ6mnGZyfpVj6jhpjBww==
   dependencies:
     "@bufferapp/async-data-fetch" "1.9.3"
     "@bufferapp/date-time-preferences" "1.9.3"
