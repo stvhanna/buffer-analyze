@@ -286,7 +286,7 @@ exports[`Snapshots App should render application 1`] = `
         </div>
       </button>
       <button
-        aria-label="Analyze (Coming Soon)"
+        aria-label="Analyze "
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
@@ -360,7 +360,7 @@ exports[`Snapshots App should render application 1`] = `
               }
             }
           >
-            Analyze (Coming Soon)
+            Analyze 
           </span>
         </div>
         <div
