@@ -1434,6 +1434,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
             style={
               Object {
                 "marginLeft": "",
+                "marginRight": "",
               }
             }
           >
@@ -1443,6 +1444,7 @@ exports[`Snapshots CompareChart should render the compare chart 1`] = `
               style={
                 Object {
                   "display": "flex",
+                  "height": "",
                 }
               }
             >
@@ -2331,6 +2333,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
             style={
               Object {
                 "marginLeft": "",
+                "marginRight": "",
               }
             }
           >
@@ -2340,6 +2343,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
               style={
                 Object {
                   "display": "flex",
+                  "height": "",
                 }
               }
             >
@@ -3228,6 +3232,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
             style={
               Object {
                 "marginLeft": "",
+                "marginRight": "",
               }
             }
           >
@@ -3237,6 +3242,7 @@ exports[`Snapshots CompareChart should render the compare chart for Posts metric
               style={
                 Object {
                   "display": "flex",
+                  "height": "",
                 }
               }
             >
@@ -4125,6 +4131,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
             style={
               Object {
                 "marginLeft": "",
+                "marginRight": "",
               }
             }
           >
@@ -4134,6 +4141,7 @@ exports[`Snapshots CompareChart should render the compare chart with previous pe
               style={
                 Object {
                   "display": "flex",
+                  "height": "",
                 }
               }
             >

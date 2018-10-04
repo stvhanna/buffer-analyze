@@ -30,6 +30,18 @@ storiesOf('MetricsDropdown')
       />
     </div>
   ))
+  .add('should render the dropdown for header', () => (
+    <div style={{ display: 'flex' }}>
+      <MetricsDropdown
+        metrics={mockMetrics}
+        selectedMetricLabel={mockMetrics[0].label}
+        selectMetric={() => {}}
+        openDropdown={() => {}}
+        closeDropdown={() => {}}
+        inHeader
+      />
+    </div>
+  ))
   .add('should render a secondary dropdown', () => (
     <div style={{ display: 'flex' }}>
       <MetricsDropdown

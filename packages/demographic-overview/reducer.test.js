@@ -43,9 +43,15 @@ describe('reducer', () => {
   });
 
   it('select the group and close dropdown', () => {
-    const state = reducer(undefined, {
+    const state = reducer({
+      isDropdownOpen: true,
+      metrics: [
+        { key: 'foo', label: 'Foo' },
+        { key: 'bar', label: 'Bar' },
+      ],
+    }, {
       type: `demographic_${actionTypes.SELECT_OVERVIEW_GROUP}`,
-      key: 'foo',
+      label: 'Foo',
     });
     expect(state.isDropdownOpen).toBeFalsy();
     expect(state.selectedGroup).toEqual('foo');
@@ -71,7 +77,7 @@ describe('actions', () => {
     expect(actions.selectMetricsGroup('foo'))
       .toEqual({
         type: `demographic_${actionTypes.SELECT_OVERVIEW_GROUP}`,
-        key: 'foo',
+        label: 'foo',
       });
   });
 });

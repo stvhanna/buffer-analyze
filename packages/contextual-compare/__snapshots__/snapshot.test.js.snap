@@ -45,6 +45,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render Posts metrics as col
                 style={
                   Object {
                     "marginLeft": "",
+                    "marginRight": "",
                   }
                 }
               >
@@ -54,6 +55,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render Posts metrics as col
                   style={
                     Object {
                       "display": "flex",
+                      "height": "",
                     }
                   }
                 >
@@ -313,6 +315,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render Posts metrics as col
                 style={
                   Object {
                     "marginLeft": "0.5rem",
+                    "marginRight": "",
                   }
                 }
               >
@@ -322,6 +325,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render Posts metrics as col
                   style={
                     Object {
                       "display": "flex",
+                      "height": "",
                     }
                   }
                 >
@@ -823,6 +827,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                 style={
                   Object {
                     "marginLeft": "",
+                    "marginRight": "",
                   }
                 }
               >
@@ -832,6 +837,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                   style={
                     Object {
                       "display": "flex",
+                      "height": "",
                     }
                   }
                 >
@@ -1091,6 +1097,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                 style={
                   Object {
                     "marginLeft": "0.5rem",
+                    "marginRight": "",
                   }
                 }
               >
@@ -1100,6 +1107,7 @@ exports[`Snapshots ContextualCompare [TESTED] Should render in Custom mode 1`] =
                   style={
                     Object {
                       "display": "flex",
+                      "height": "",
                     }
                   }
                 >

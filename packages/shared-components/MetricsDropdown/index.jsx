@@ -26,7 +26,7 @@ import {
 
 import DropdownItem from './components/DropdownItem';
 
-function renderDropdownItem(metric, selectedMetricLabel, selectMetric) {
+function renderDropdownItem(metric, selectedMetricLabel, selectMetric, iconless) {
   const onClick = () => {
     selectMetric(metric.label);
   };
@@ -36,6 +36,7 @@ function renderDropdownItem(metric, selectedMetricLabel, selectMetric) {
     metric={metric}
     handleClick={onClick}
     selected={metric.label === selectedMetricLabel}
+    iconless={iconless}
   />);
 }
 
@@ -48,6 +49,7 @@ const MetricsDropdown = ({
   openDropdown,
   closeDropdown,
   iconless,
+  inHeader,
 }) => {
   const selectedMetric = metrics.find(m => m.label === selectedMetricLabel);
   const contentClasses = classNames(dropdownContent, {
@@ -68,9 +70,18 @@ const MetricsDropdown = ({
         onShow={openDropdown}
         onHide={closeDropdown}
         active={isDropdownOpen}
-        style={{ marginLeft: `${secondary ? '0.5rem' : ''}` }}
+        style={{
+          marginLeft: `${secondary ? '0.5rem' : ''}`,
+          marginRight: `${inHeader ? '0.5rem' : ''}`,
+        }}
       >
-        <DropdownTrigger className={triggerClasses} style={{ display: 'flex' }} >
+        <DropdownTrigger
+          className={triggerClasses}
+          style={{
+            display: 'flex',
+            height: `${inHeader ? '24px' : ''}`,
+          }}
+        >
           {!iconless && <MetricIcon metric={selectedMetric} />}
           <Text weight="medium" size="extra-small" color="outerSpace">{selectedMetric.label}</Text>
           <span style={{ pointerEvents: 'none', marginLeft: 'auto' }} >
@@ -80,7 +91,7 @@ const MetricsDropdown = ({
         </DropdownTrigger>
         <DropdownContent className={contentClasses} >
           <ul className={dropdownListClasses} >
-            { metrics.map(m => renderDropdownItem(m, selectedMetricLabel, selectMetric)) }
+            { metrics.map(m => renderDropdownItem(m, selectedMetricLabel, selectMetric, iconless)) }
           </ul>
         </DropdownContent>
       </Dropdown>);
@@ -101,12 +112,14 @@ MetricsDropdown.propTypes = {
   openDropdown: PropTypes.func.isRequired,
   closeDropdown: PropTypes.func.isRequired,
   iconless: PropTypes.bool,
+  inHeader: PropTypes.bool,
 };
 
 MetricsDropdown.defaultProps = {
   secondary: false,
   isDropdownOpen: false,
   iconless: false,
+  inHeader: false,
 };
 
 export default MetricsDropdown;

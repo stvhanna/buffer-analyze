@@ -482,6 +482,7 @@ exports[`Snapshots AudienceOverviewTable should render with dropdown for multipl
             style={
               Object {
                 "marginLeft": "",
+                "marginRight": "0.5rem",
               }
             }
           >
@@ -491,6 +492,7 @@ exports[`Snapshots AudienceOverviewTable should render with dropdown for multipl
               style={
                 Object {
                   "display": "flex",
+                  "height": "24px",
                 }
               }
             >
@@ -585,26 +587,10 @@ exports[`Snapshots AudienceOverviewTable should render with dropdown for multipl
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "15.5rem",
+                          "width": "15.84rem",
                         }
                       }
                     >
-                      <span
-                        style={
-                          Object {
-                            "background": "#ced7df",
-                            "borderColor": "#b0b9c1",
-                            "borderRadius": "10px",
-                            "borderStyle": "solid",
-                            "borderWidth": "1px",
-                            "display": "inline-block",
-                            "height": "7px",
-                            "marginRight": "5px",
-                            "verticalAlign": "baseline",
-                            "width": "7px",
-                          }
-                        }
-                      />
                       <span
                         style={
                           Object {
@@ -691,26 +677,10 @@ exports[`Snapshots AudienceOverviewTable should render with dropdown for multipl
                           "display": "flex",
                           "padding": "5px 10px",
                           "position": "relative",
-                          "width": "15.5rem",
+                          "width": "15.84rem",
                         }
                       }
                     >
-                      <span
-                        style={
-                          Object {
-                            "background": "#8AC6DE",
-                            "borderColor": "#6ca8c0",
-                            "borderRadius": "10px",
-                            "borderStyle": "solid",
-                            "borderWidth": "1px",
-                            "display": "inline-block",
-                            "height": "7px",
-                            "marginRight": "5px",
-                            "verticalAlign": "baseline",
-                            "width": "7px",
-                          }
-                        }
-                      />
                       <span
                         style={
                           Object {

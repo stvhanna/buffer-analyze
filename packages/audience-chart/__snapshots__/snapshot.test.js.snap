@@ -44,6 +44,7 @@ exports[`Snapshots AudienceChart [TESTED] Should render 1`] = `
               style={
                 Object {
                   "marginLeft": "",
+                  "marginRight": "",
                 }
               }
             >
@@ -53,6 +54,7 @@ exports[`Snapshots AudienceChart [TESTED] Should render 1`] = `
                 style={
                   Object {
                     "display": "flex",
+                    "height": "",
                   }
                 }
               >
@@ -238,6 +240,7 @@ exports[`Snapshots AudienceChart [TESTED] Should render 1`] = `
               style={
                 Object {
                   "marginLeft": "0.5rem",
+                  "marginRight": "",
                 }
               }
             >
@@ -247,6 +250,7 @@ exports[`Snapshots AudienceChart [TESTED] Should render 1`] = `
                 style={
                   Object {
                     "display": "flex",
+                    "height": "",
                   }
                 }
               >

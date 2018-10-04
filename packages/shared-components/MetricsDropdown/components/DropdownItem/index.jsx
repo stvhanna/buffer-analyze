@@ -13,7 +13,7 @@ import {
   dropdownListItem,
 } from '../../style.less';
 
-const DropdownItem = ({ metric, handleClick, selected }) => (
+const DropdownItem = ({ metric, handleClick, selected, iconless }) => (
   <li className={dropdownListItem}>
     <Button noStyle onClick={handleClick} >
       <span
@@ -22,11 +22,11 @@ const DropdownItem = ({ metric, handleClick, selected }) => (
           boxSizing: 'border-box',
           display: 'flex',
           position: 'relative',
-          width: '15.5rem',
+          width: (iconless ? '15.84rem' : '15.5rem'),
           padding: '5px 10px',
         }}
       >
-        <MetricIcon metric={metric} />
+        {!iconless && <MetricIcon metric={metric} />}
         <Text size="extra-small">{metric.label}</Text>
         { selected && <div style={{ marginLeft: 'auto' }}>
           <CheckmarkIcon color={'curiousBlue'} />
@@ -43,10 +43,12 @@ DropdownItem.propTypes = {
   }).isRequired,
   handleClick: PropTypes.func.isRequired,
   selected: PropTypes.bool,
+  iconless: PropTypes.bool,
 };
 
 DropdownItem.defaultProps = {
   selected: false,
+  iconless: false,
 };
 
 export default DropdownItem;
