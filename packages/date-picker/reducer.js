@@ -14,7 +14,7 @@ export const actionTypes = keyWrapper('DATE_PICKER', {
   CLEAR_END_DATE: 'CLEAR_END_DATE',
   OPEN_CALENDAR: 'OPEN_CALENDAR',
   CLOSE_CALENDAR: 'CLOSE_CALENDAR',
-  SET_CURRET_TAB: 'SET_CURRET_TAB',
+  SET_CURRENT_TAB: 'SET_CURRENT_TAB',
 });
 
 function getDayFromTimestamp(timestamp) {
@@ -230,7 +230,7 @@ export default (state = initialState, action) => {
         startDate: null,
         endDate: null,
       };
-    case actionTypes.SET_CURRET_TAB:
+    case actionTypes.SET_CURRENT_TAB:
       return {
         ...state,
         ...ensureHistoryStore(state, action.tabId),
@@ -280,7 +280,7 @@ export const actions = {
     date,
   }),
   setCurrentTab: tabId => ({
-    type: actionTypes.SET_CURRET_TAB,
+    type: actionTypes.SET_CURRENT_TAB,
     tabId,
   }),
   setDateRangeAndPreset: ({ preset, startDate, endDate }) => ({

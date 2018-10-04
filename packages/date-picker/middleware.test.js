@@ -83,7 +83,7 @@ describe('middleware', () => {
     store.dispatch.mockReset();
   });
 
-  it('should dispatch SET_CURRET_TAB on LOCATION_CHANGE navigating to a new tab', () => {
+  it('should dispatch SET_CURRENT_TAB on LOCATION_CHANGE navigating to a new tab', () => {
     state.router = {
       location: {
         pathname: '/posts/4e88a092512f7e1556000000',
@@ -99,7 +99,7 @@ describe('middleware', () => {
     expect(store.dispatch).toHaveBeenCalledWith(dateActions.setCurrentTab('overview'));
   });
 
-  it('should not dispatch SET_CURRET_TAB on LOCATION_CHANGE navigating to the same tab', () => {
+  it('should not dispatch SET_CURRENT_TAB on LOCATION_CHANGE navigating to the same tab', () => {
     state.router = {
       location: {
         pathname: '/overview/4e88a092512f7e1556000000',
