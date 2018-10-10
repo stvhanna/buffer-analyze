@@ -35,7 +35,7 @@ import { middleware as earlyAccessMiddleware } from '@bufferapp/analyze-early-ac
 import { middleware as profilesOverviewMiddleware } from '@bufferapp/analyze-profiles-overview';
 import { middleware as accountMiddleware } from '@bufferapp/analyze-account';
 import { middleware as hashtagsMiddleware } from '@bufferapp/hashtags-table';
-import { middleware as demographicMiddleware } from '@bufferapp/demographic-overview';
+import { middleware as demographicMiddleware } from '@bufferapp/demographic-store';
 import { createMiddleware } from '@bufferapp/buffermetrics/redux';
 import initMiddleware from './initMiddleware';
 

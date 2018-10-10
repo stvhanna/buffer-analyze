@@ -6,8 +6,8 @@ export default connect(
   state => ({
     loading: state.demographic.loading,
     metrics: state.demographic.metrics,
-    selectedGroup: state.demographic.selectedGroup,
-    isDropdownOpen: state.demographic.isDropdownOpen,
+    selectedGroup: state.demographicOverview.selectedGroup,
+    isDropdownOpen: state.demographicOverview.isDropdownOpen,
   }),
   dispatch => ({
     selectMetricsGroup: key => dispatch(actions.selectMetricsGroup(key)),
@@ -16,8 +16,6 @@ export default connect(
   }),
 )(AudienceOverviewTable);
 
-
 export reducer, { actions, actionTypes } from './reducer';
-export middleware from './middleware';
 export { Table } from './components/AudienceOverviewTable';
 export Title from './components/Title';

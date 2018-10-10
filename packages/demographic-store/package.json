@@ -1,0 +1,40 @@
+{
+  "name": "@bufferapp/demographic-store",
+  "version": "0.1.0",
+  "description": "Analyze Demographic Data Store",
+  "main": "index.js",
+  "scripts": {
+    "start": "start-storybook -p 9001",
+    "lint": "eslint . --ignore-pattern coverage node_modules",
+    "test": "sh ../../package_test.sh",
+    "test-update": "jest -u",
+    "test-watch": "jest --watch"
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!@bufferapp/*)"
+    ],
+    "verbose": true,
+    "moduleNameMapper": {
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
+  },
+  "author": "federicoweber@gmail.com",
+  "dependencies": {
+    "@bufferapp/add-report": "^0.71.3",
+    "@bufferapp/analyze-date-picker": "^0.71.3",
+    "@bufferapp/analyze-decorators": "^0.70.0",
+    "@bufferapp/analyze-profile-selector": "^0.71.3",
+    "@bufferapp/analyze-shared-components": "^0.71.3",
+    "@bufferapp/async-data-fetch": "0.5.36-beta01",
+    "@bufferapp/components": "2.1.1-alpha.6",
+    "@bufferapp/nav-sidebar": "^0.71.3"
+  },
+  "devDependencies": {
+    "eslint": "3.19.0",
+    "jest": "19.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

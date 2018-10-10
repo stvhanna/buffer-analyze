@@ -6,8 +6,6 @@ import AudienceOverview, {
   reducer,
   actions,
   actionTypes,
-  middleware,
-  filterTopMetrics,
 } from './index';
 import AudienceOverviewTable from './components/AudienceOverviewTable';
 
@@ -27,6 +25,9 @@ describe('AudienceOverviewTable', () => {
       demographic: {
         loading: false,
         metrics: [],
+      },
+      demographicOverview: {
+        selectedGroup: 'foo',
       },
       i18n: {
         translations: {},
@@ -54,11 +55,6 @@ describe('AudienceOverviewTable', () => {
 
   it('should export actionTypes', () => {
     expect(actionTypes)
-      .toBeDefined();
-  });
-
-  it('should export middleware', () => {
-    expect(middleware)
       .toBeDefined();
   });
 });
