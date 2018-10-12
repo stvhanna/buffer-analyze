@@ -330,24 +330,24 @@ describe('persist dates on tabs', () => {
     },
   };
 
-  it('should dispatch SET_CURRET_TAB', () => {
+  it('should dispatch SET_CURRENT_TAB', () => {
     expect(actions.setCurrentTab('overview')).toEqual({
-      type: actionTypes.SET_CURRET_TAB,
+      type: actionTypes.SET_CURRENT_TAB,
       tabId: 'overview',
     });
   });
 
-  it('should set the current tab on SET_CURRET_TAB', () => {
+  it('should set the current tab on SET_CURRENT_TAB', () => {
     const state = reducer(undefined, {
-      type: actionTypes.SET_CURRET_TAB,
+      type: actionTypes.SET_CURRENT_TAB,
       tabId: 'foo',
     });
     expect(state.currentTab).toBe('foo');
   });
 
-  it('should create a historicData store on SET_CURRET_TAB', () => {
+  it('should create a historicData store on SET_CURRENT_TAB', () => {
     const state = reducer(undefined, {
-      type: actionTypes.SET_CURRET_TAB,
+      type: actionTypes.SET_CURRENT_TAB,
       tabId: 'foo',
     });
     expect(state.historicData.foo).toBeDefined();
@@ -356,9 +356,9 @@ describe('persist dates on tabs', () => {
     expect(typeof state.historicData.foo.startDate).toBe('string');
   });
 
-  it('should not override an existing history store on SET_CURRET_TAB', () => {
+  it('should not override an existing history store on SET_CURRENT_TAB', () => {
     const state = reducer({ historicData }, {
-      type: actionTypes.SET_CURRET_TAB,
+      type: actionTypes.SET_CURRENT_TAB,
       tabId: 'foo',
     });
     expect(state.historicData.foo).toBe(historicData.foo);

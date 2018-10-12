@@ -1,7 +1,7 @@
 import { LOCATION_CHANGE } from 'react-router-redux';
 import { actions, actionTypes } from '@bufferapp/async-data-fetch';
 import { actionTypes as profileActionTypes } from '@bufferapp/analyze-profile-selector';
-import { actions as dateActions, updatePresets } from './reducer';
+import { actions as dateActions, updatePresets, actionTypes as dateActionTypes } from './reducer';
 
 const getStartDate = (query) => {
   let startDate = query.match(/start_date=(.*)&/);
@@ -61,6 +61,18 @@ export default ({ dispatch, getState }) => next => (action) => {
   const state = getState();
   const result = action.result;
   switch (action.type) {
+    case dateActionTypes.SET_DATE_RANGE:
+      // we don't want to trigger the event if the date is unchanged
+      // this is useful to prevent fetching the same data muliple times
+      if (
+        action.startDate === state.date.startDate &&
+        action.endDate === state.date.endDate &&
+        // needed because we are changing start and end date with thi custom picker open
+        !state.date.calendarOpen
+      ) {
+        return null;
+      }
+      break;
     case `get_report_${actionTypes.FETCH_SUCCESS}`:
       if (result.date_range.range) {
         dispatch(dateActions.setDatePreset(result.date_range));

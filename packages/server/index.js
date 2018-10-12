@@ -20,12 +20,12 @@ const controller = require('./lib/controller');
 const rpcHandler = require('./rpc');
 const checkToken = require('./rpc/checkToken');
 
-
 const app = express();
 const server = http.createServer(app);
 
 let staticAssets = {
   'bundle.js': '/static/bundle.js',
+  'rpcWorker.js': '/rpcWorker.js',
 };
 
 // NOTE: Bugsnag will not notify in local setup with current weback configuration
@@ -46,6 +46,7 @@ if (isProduction) {
     tags: ['app:analyze', 'service:web'],
   }, 'dd-agent.default'));
   staticAssets = JSON.parse(fs.readFileSync(join(__dirname, 'staticAssets.json'), 'utf8'));
+
   if (process.env.BUGSNAG_KEY) {
     bugsnag.register(process.env.BUGSNAG_KEY);
     app.set('bugsnag', bugsnag);
@@ -74,11 +75,34 @@ if (isProduction) {
 } else {
   staticAssets = {
     'bundle.js': '//analyze.local.buffer.com:8080/static/bundle.js',
+    'rpcWorker.js': null,
   };
+}
+
+let rpcWorkerScript = '';
+// This service Worker is used to cache RPC requests
+if (staticAssets['rpcWorker.js']) {
+  // We need to serve service workers from the same domain to make it intercept fetch events
+  const rpcWorkerAssetUrl = staticAssets['rpcWorker.js'];
+  app.get('/rpcWorker.js', (req, res) => request.get(rpcWorkerAssetUrl).on('response', (file) => {
+    // We need to override cache control to make sure the worker get updated
+    file.headers['Cache-Control'] = 'max-age=0, no-cache';
+    return file;
+  }).pipe(res));
+  staticAssets['rpcWorker.js'] = '/rpcWorker.js';
+
+  rpcWorkerScript = `<script>
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('${staticAssets['rpcWorker.js']}').catch(function(error) {
+        console.log(error);
+      });
+    }
+  </script>`;
 }
 
 const html = fs.readFileSync(join(__dirname, 'index.html'), 'utf8')
   .replace('{{{bundle}}}', staticAssets['bundle.js'])
+  .replace('{{{rpcWorkerScript}}}', rpcWorkerScript)
   .replace('{{{bugsnagScript}}}', bugsnagScript)
   .replace('{{{headwayScript}}}', headwayScript);
 
@@ -95,6 +119,7 @@ app.use('*', (req, res, next) => {
 app.get('/health-check', controller.healthCheck);
 const favicon = fs.readFileSync(join(__dirname, 'favicon.ico'));
 app.get('/favicon.ico', (req, res) => res.send(favicon));
+
 
 // All routes after this have access to the user session
 // app.use(session.middleware);
