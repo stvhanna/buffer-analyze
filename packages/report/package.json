@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/report",
-  "version": "0.71.3",
+  "version": "0.72.0",
   "description": "Report detail",
   "main": "index.js",
   "scripts": {
@@ -21,16 +21,16 @@
     }
   },
   "dependencies": {
-    "@bufferapp/analyze-date-picker": "^0.71.3",
+    "@bufferapp/analyze-date-picker": "^0.72.0",
     "@bufferapp/analyze-shared-components": "^0.71.3",
-    "@bufferapp/audience-chart": "^0.71.3",
-    "@bufferapp/average-table": "^0.71.3",
+    "@bufferapp/audience-chart": "^0.72.0",
+    "@bufferapp/average-table": "^0.72.0",
     "@bufferapp/components": "2.1.1-alpha.6",
-    "@bufferapp/contextual-compare": "^0.71.3",
-    "@bufferapp/hourly-chart": "^0.71.3",
-    "@bufferapp/posts-summary-table": "^0.71.3",
+    "@bufferapp/contextual-compare": "^0.72.0",
+    "@bufferapp/hourly-chart": "^0.72.0",
+    "@bufferapp/posts-summary-table": "^0.72.0",
     "@bufferapp/report-list": "^0.71.3",
-    "@bufferapp/summary-table": "^0.71.3",
+    "@bufferapp/summary-table": "^0.72.0",
     "jsdom": "^11.5.1",
     "styled-components": "^2.2.1"
   },

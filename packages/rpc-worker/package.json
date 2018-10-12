@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/rpc-worker",
-  "version": "0.0.1",
+  "version": "0.72.0",
   "description": "A Service Worker to handle RPC requests cashing strategies",
   "main": "index.js",
   "scripts": {
@@ -16,8 +16,6 @@
     "testURL": "https://analyze.buffer.com/"
   },
   "author": "federicoweber@gmail.com",
-  "dependencies": {
-  },
   "devDependencies": {
     "eslint": "3.19.0",
     "jest": "19.0.2",
