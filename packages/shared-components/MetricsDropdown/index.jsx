@@ -79,7 +79,7 @@ const MetricsDropdown = ({
           className={triggerClasses}
           style={{
             display: 'flex',
-            height: `${inHeader ? '24px' : ''}`,
+            height: `${inHeader ? '23px' : ''}`,
           }}
         >
           {!iconless && <MetricIcon metric={selectedMetric} />}
